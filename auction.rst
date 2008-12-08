@@ -6,18 +6,23 @@ deposit border, exhibition organisation, printable catalogs, bids management, au
 management, invoicing, etc.
 
 Key Points:
+
 * Extremely complete, manage all auction houses operations
 * No double-encoding, fully integrated to all services
 * Powerful dashboards
 
 Integration Benefits:
+
 * Integrated with accouting for automatic invoicing
 * Integrated with accounting to manages cashiers
 * SMS integration for sellers and buyers
 * Enterprise calendars from the CRM
 
 Screenshot:
-. Dashboard
+
+* Dashboard
+
 Links:
-. Success Stories: Flagey
+
+* Success Stories: Flagey
 
