@@ -21,6 +21,7 @@ Why you should use the Open ERP integrated wiki than a separate wiki system ?
 * Linked to users processes for quality manuals.
 
 To get more information:
+
 * Basic Wiki Editing
 * Wiki Documentation
 * The Open ERP website

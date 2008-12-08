@@ -20,7 +20,10 @@ Integration Benefits:
 * Link bugs to others ressources like sales, claims, products, etc.
 
 Screenshot:
+
 * CRM Dashboard
+
 Links:
+
 * Online Documentation
 
