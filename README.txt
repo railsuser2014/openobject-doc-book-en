@@ -4,6 +4,8 @@ for each big Open ERP features. A feature may describe several Open ERP modules,
 they are just used to provide a quick overview of main Open ERP features to
 customers.
 
+The index.ods file lists all features to be described, ordered by categories.
+
 All features share the same description template:
 
 Title
