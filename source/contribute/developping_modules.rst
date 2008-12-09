@@ -8,7 +8,85 @@ Introduction
 Getting Sources
 +++++++++++++++
 
-.. (bzr_set.py)
+.. XXX (bzr_set.py)
+
+How to get the latest trunk source code
+"""""""""""""""""""""""""""""""""""""""
+
+Create a directory
+
+::
+
+  mkdir openerp
+  cd openerp
+
+Get Bazaar version control to pull the source from Launchpad
+
+To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list by
+
+::
+
+  sudo gedit /etc/apt/sources.list
+
+and put these lines in it:
+
+::
+
+  deb http://ppa.launchpad.net/bzr/ubuntu intrepid main
+  deb-src http://ppa.launchpad.net/bzr/ubuntu intrepid main
+
+Then, do the following
+
+::
+
+  sudo apt-get install bzr
+
+To work correctly, bzr version must be at least 1.3. Check it with the command:
+
+::
+
+  bzr --version
+
+If you don't have at least 1.3 version, you can check this url: http://bazaar-vcs.org/Download
+On debian, in any distribution, the 1.5 version is working, you can get it on this url: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
+
+Get a clone of each repository
+
+::
+
+  bzr clone lp:~openerp/openobject-server/trunk server
+  bzr clone lp:~openerp/openobject-client/trunk client
+  bzr clone lp:~openerp/openobject-client-web/trunk client-web
+  bzr clone lp:~openerp/openobject-addons/trunk addons
+
+If you want to get a clone of the extra-addons repository, you can execute this command
+
+::
+
+  bzr clone lp:~openerp-commiter/openobject-addons/trunk-extra-addons extra-addons
+
+run the setup scripts in the respective directories
+
+::
+
+  python2.4 setup.py build
+  python2.4 setup.py install
+
+Currently the initialisation procedure of the server parameter --init=all to
+populate the database seems to be broken in trunk.
+
+It is recommended to create a new database via the gtk-client. Before that the web-client will not work.
+
+Start OpenERP server like this:
+
+::
+
+  ./tinyerp-server.py --addons-path=/path/to/my/addons
+
+The ``bin/addons`` will be considered as default addons directory which can be
+overriden by the ``/path/to/my/addons/``. That is if an addon exists in
+``bin/addons`` as well as ``/path/to/my/addons`` (custom path) the later one will
+be given preference over the ``bin/addons`` (default path).
 
 Coding Guidelines
 +++++++++++++++++
