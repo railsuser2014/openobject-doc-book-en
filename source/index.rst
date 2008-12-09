@@ -9,6 +9,7 @@ Open Object Documentation contents
 Contents:
 
 .. toctree::
+    :maxdepth: 2
 
     book/index
     features/index
