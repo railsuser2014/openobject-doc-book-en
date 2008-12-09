@@ -2,14 +2,62 @@
 Working in teams
 ----------------
 
-Experts teams
-+++++++++++++
+People
+++++++
 
-Experts Teams
-"""""""""""""
+Who are the different actors in the community of OpenERP.
+
+Contributors
+""""""""""""
+
+Contributors are people who wants to help the project getting better, add
+functionnality and improve stability. Everyone can contribute on the project
+with his own knowledge by reporting bugs, purposing smart improvment and
+posting patch.
+
+The community team is available on launchpad: https://launchpad.net/~openerp-community
+
+Member of the quality and commiter team are automatically members of the community.
+
+Official Commiters
+""""""""""""""""""
+
+Official commiters are people allowed to commit in the community repository.
+Those people are approved as commiters by the community once they've done
+enought good patch and/or contributions in the project.
+
+Their allow to :
+
+  * Purpose and post their own patch on bugs report.
+  * Review patches from contributors, comments and / or improve them.
+  * Commit well done patch or contribution in the community repository.
+  * Write a news on the Planet TinyERP RSS
+
+The commiter team is available on launchpad: https://launchpad.net/~openerp-commiter
+
+Quality Team
+""""""""""""
+
+Quality team are people from Tiny sprl responsible for the quality of the
+Official repository. They assume the stability and coherence of the Official
+version by review the community patch and commit.
+
+They're in charge to merge the commit from Community repository to Official
+repository. "Extra_addons" and "Others" repository are not part of their
+responsability.
+
+If a commit isn't good enough, they must remove it from Community repository
+and report it in the bug tracker. In other case, they will apply the purposed
+commit in the Official version. Like this, everyone will stay aware about what
+is or isn't accepted.
+
+The quality team is available on launchpad: https://launchpad.net/~openerp
+
+Teams
++++++
 
 Introduction
-^^^^^^^^^^^^
+""""""""""""
 
 As to help developers and contributors to take the right decision when
 improving OpenERP, we set up experts teams for different management domains.
@@ -21,14 +69,14 @@ Developers can contact our experts mailing list when they need feedback on
 particular features to be developed. Please contact our experts only for new
 developments related questions. They don't provide help on current features of
 OpenERP. Most of our experts have very high positions in the company they work
-for, so they don't have time to spent providing help or support. 
+for, so they don't have time to spent providing help or support.
 
 Expert Teams
-^^^^^^^^^^^^
+""""""""""""
 
-* Accounting: https://launchpad.net/~openerp-expert-accounting/+members
-* Services Management: https://launchpad.net/~openerp-expert-service/+members
-* Manufacturing Industries: https://launchpad.net/~openerp-expert-production/+members
+  * Accounting: https://launchpad.net/~openerp-expert-accounting/+members
+  * Services Management: https://launchpad.net/~openerp-expert-service/+members
+  * Manufacturing Industries: https://launchpad.net/~openerp-expert-production/+members
 
 Requesting Advices to A Team
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -42,9 +90,9 @@ They will receive a notification email and will discuss about the requested
 feature. The team will improve your specifications directly in your blueprint.
 
 Translators team
-++++++++++++++++
+""""""""""""""""
 
 Community Team
-++++++++++++++
+""""""""""""""
 
 

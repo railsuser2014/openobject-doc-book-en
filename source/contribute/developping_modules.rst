@@ -8,19 +8,10 @@ Introduction
 Getting Sources
 +++++++++++++++
 
-.. XXX (bzr_set.py)
+Installing Bazaar version control system
+""""""""""""""""""""""""""""""""""""""""
 
-How to get the latest trunk source code
-"""""""""""""""""""""""""""""""""""""""
-
-Create a directory
-
-::
-
-  mkdir openerp
-  cd openerp
-
-Get Bazaar version control to pull the source from Launchpad
+Get Bazaar version control to pull the source from Launchpad.
 
 To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list by
 
@@ -49,6 +40,55 @@ To work correctly, bzr version must be at least 1.3. Check it with the command:
 
 If you don't have at least 1.3 version, you can check this url: http://bazaar-vcs.org/Download
 On debian, in any distribution, the 1.5 version is working, you can get it on this url: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
+
+Quick Summary
+"""""""""""""
+
+This is the official and proposed way to contribute on OpenERP and OpenObject.
+
+To download the latest sources and create your own local branches of OpenERP, do this::
+
+  bzr branch lp:openerp
+  cd openerp
+  ./bzr_set.py
+
+This will download all the component of openerp (server, client, addons) and create links of modules in addons in your server so that you can use it directly. You can change the bzr_set.py file to select what you want to download exactly. Now, you can edit the code and commit in your local branch.::
+
+  EDIT addons/account/account.py
+  cd addons
+  bzr ci -m "Testing Modifications"
+
+Once your code is good enough and follow the :ref:`coding-guidelines-link`, you
+can push your branch in launchpad. You may have to create an account on
+launchpad first, register your public key, and subscribe to the `openerp-community <https://launchpad.net/~openerp-community>`_ team. Then, you
+can push your branch. Suppose you want to push your addons::
+
+  cd addons
+  bzr push lp:~openerp-community/openobject-addons/YOURLOGIN_YOURBRANCHNAME
+  bzr bind lp:~openerp-community/openobject-addons/YOURLOGIN_YOURBRANCHNAME
+
+After having done that, your branch is public on Launchpad, in the `OpenObject
+project <https://code.launchpad.net/openobject>`_, and commiters can work on
+it, review it and propose for integration in the official branch. The last line
+allows you to rebind your branch to the one which is on launchpad, after having
+done this, your commit will be applied on launchpad directly (unless you use ``--local``)::
+
+  bzr pull    # Get modifications on your branch from others
+  EDIT STUFF
+  bzr ci    # commit your changes on your public branch
+
+
+
+If your changes fixe a public bug on launchpad, you can use this to mark the bug as fixed by your branch::
+
+  bzr ci --fixes=lp:453123   # Where 453123 is a bug ID
+
+Once your branch is mature, mark it as mature in the web interface of launchpad
+and request for merging in the official release. Your branch will be reviewed
+by a commiter and then the quality team to be merged in the official release.
+
+How to get the latest trunk source code
+"""""""""""""""""""""""""""""""""""""""
 
 Get a clone of each repository
 
@@ -88,10 +128,10 @@ overriden by the ``/path/to/my/addons/``. That is if an addon exists in
 ``bin/addons`` as well as ``/path/to/my/addons`` (custom path) the later one will
 be given preference over the ``bin/addons`` (default path).
 
+.. _coding-guidelines-link:
+
 Coding Guidelines
 +++++++++++++++++
-
-.. Development Guidelines
 
 Development Guidelines
 """"""""""""""""""""""
@@ -136,8 +176,8 @@ Security
 Each object defined in your module must have at least one security rule
 defined on it to make it accessible.
 
-Preventing SQL Injection
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. describe:: Preventing SQL Injection:
+
 
 Care must be taken not to introduce SQL injection vulnerabilities to SQL
 queries. SQL Injection is a kind of vulnerability in which the user is able to
@@ -210,8 +250,7 @@ General Style
       + *Helvetica-Bold* size *9* for cells names
       + *Helvetica* size *8* for content
 
-Headers and footers for internal reports
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. describe:: Headers and footers for internal reports:
 
   * Internal report = all accounting reports and other that have only internal use (not sent to customers)
   * height of headers should be shorter
@@ -227,20 +266,17 @@ Headers and footers for internal reports
 
     - to avoid wasting paper, we have taken off the footer
 
-table line separator
-~~~~~~~~~~~~~~~~~~~~
+.. describe:: table line separator:
 
 * it's prettier if each line in the table have a light grey line as separator
 * use a grey column separator only for array containing general information
 
-table breaking
-~~~~~~~~~~~~~~
+.. describe:: table breaking
 
   * a table header should at least have two data rows (no table header alone at the bottom of the page)
   * when a big table is broken, the table header is repeated on every page
 
-how to differentiate parents and children ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. describe:: how to differentiate parents and children ?
 
   * When you have more than one level, use these styles:
 
