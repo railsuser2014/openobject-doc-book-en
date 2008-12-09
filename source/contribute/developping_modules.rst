@@ -41,6 +41,8 @@ To work correctly, bzr version must be at least 1.3. Check it with the command:
 If you don't have at least 1.3 version, you can check this url: http://bazaar-vcs.org/Download
 On debian, in any distribution, the 1.5 version is working, you can get it on this url: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
 
+If you experience problems with Bazaar, please read the :ref:`bazaar-faq-link` before asking any questions.
+
 Quick Summary
 """""""""""""
 
