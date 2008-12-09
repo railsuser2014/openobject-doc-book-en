@@ -1,4 +1,5 @@
-il Gateway
+
+Mail Gateway
 ------------
 
 E-mail gateways can automatize and update cases in CRM via e-mails. Users can
@@ -8,16 +9,22 @@ to manage all of generic mails from the company (info, sales, support,...) and
 is dedicated to allow users to assign some cases.
 
 Key points
+++++++++++
 
 * Compatible with most of mail clients and servers.
 * Mails are automatically classified by the system
 * Multi Users
 
 Integration benefits
+++++++++++++++++++++
 
 * Totally integrated to CRM
 
 Screenshots:
+++++++++++++
 
+Link:
++++++
 
-Link: wiki
+wiki
+

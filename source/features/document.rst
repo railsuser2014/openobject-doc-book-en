@@ -1,3 +1,4 @@
+
 Document Management System
 --------------------------
 
@@ -8,12 +9,14 @@ is provided by others objects.  It is very usefull to track documents related
 to projects, products, sales, contracts, etc.
 
 Keypoints
++++++++++
 
 * FTP Access
 * Indexation of PDF, DOC, ODT.
 * Virtual files and folders
 
 Integration Benefits
+++++++++++++++++++++
 
 * Stores automatically ERP reports
 * Automatic classification of ressources

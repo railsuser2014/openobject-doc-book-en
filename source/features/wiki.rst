@@ -1,3 +1,4 @@
+
 Wiki Engine
 -----------
 
@@ -6,6 +7,7 @@ restructured texts. This module provides a collaborative way to manage internal
 FAQs, quality manuals, technical references, etc.
 
 Keypoints:
+++++++++++
 
 * Same formating style than MediaWiki,
 * Any number of wiki group for different purposes,
@@ -13,6 +15,7 @@ Keypoints:
 * Integrated with the document management system.
 
 Why you should use the Open ERP integrated wiki than a separate wiki system ?
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 * Allows links to any document of the system,
 * Uses the access controls of Open ERP for uniq access rights management,
@@ -21,6 +24,7 @@ Why you should use the Open ERP integrated wiki than a separate wiki system ?
 * Linked to users processes for quality manuals.
 
 To get more information:
+++++++++++++++++++++++++
 
 * Basic Wiki Editing
 * Wiki Documentation

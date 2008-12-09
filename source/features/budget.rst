@@ -1,3 +1,4 @@
+
 Budgets
 -------
 
@@ -10,6 +11,7 @@ to the user rôle:
 * Department manager: get a consolidated view on budget positions
 
 Key-Points:
++++++++++++
 
 * Workflows on budgets (ex: a budget must be validated before launching a project),
 * Three different points of view on the same budgets
@@ -17,10 +19,13 @@ Key-Points:
 * Mulitple axes
 
 Integration benefits:
++++++++++++++++++++++
 
 * Integrated to purchases, sales, timesheets and expenses notes
 * Analytic budgets are integrated to the project management module
 
 Screenshots:
+++++++++++++
 
 * print of a budget
+
