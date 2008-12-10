@@ -5,11 +5,89 @@ Developping modules
 Introduction
 ++++++++++++
 
+Here you will found informations about the organisation of the community in
+OpenERP project. It include a description of the different tools used, the role
+of the differents actors, and the different process for improvement management.
+
+The whole organisation is managed through our launchpad projects: http://launchpad.net
+Our projects on launchpad are currently organised like this:
+
+  * https://launchpad.net/openobject **openobject** : the main super-project (group) where all bugs, features and faq are managed.
+
+    - https://launchpad.net/openobject-bi **openobject-bi** : business intelligence project
+    - https://launchpad.net/openobject-server **openobject-server** : the openobject server
+    - https://launchpad.net/openobject-client **openobject-client** : the openobject application client (gtk)
+    - https://launchpad.net/openobject-client-web **openobject-client-web** : the openobject web client (previously called eTiny)
+    - https://launchpad.net/openobject-addons **openobject-addons** : the project for all modules about openobject
+    - https://launchpad.net/openerp **openerp** : packaging around openobject (a selection of modules to build applications)
+
 Getting Sources
 +++++++++++++++
 
-Installing Bazaar version control system
-""""""""""""""""""""""""""""""""""""""""
+Bazaar, the version control system
+""""""""""""""""""""""""""""""""""
+
+The new development process uses Bazaar via launchpad.net instead of Subversion.
+Bazaar offers a flexibility with this distributed model. You can see our
+branches on https://code.launchpad.net/~openerp.
+
+.. describe:: Explanation of directories:
+
+Two teams have been created on launchpad:
+
+  * OpenERP quality teams --> they can commit on:
+
+    - lp:~openerp/openobject-addons/4.2
+    - lp:~openerp/openobject-addons/trunk
+    - lp:~openerp/openobject-addons/4.2-extra-addons
+    - lp:~openerp/openobject-addons/trunk-extra-addons
+    - lp:~openerp/openobject-bi/trunk-addons
+    - lp:~openerp/openobject-bi/trunk-cli
+    - lp:~openerp/openobject-bi/trunk-client-web
+    - lp:~openerp/openobject-client/4.2
+    - lp:~openerp/openobject-client/trunk
+    - lp:~openerp/openobject-client-web/4.2
+    - lp:~openerp/openobject-client-web/trunk
+    - lp:~openerp/openobject-server/4.2
+    - lp:~openerp/openobject-server/trunk
+
+  * 0penERP-commiter --> they can commit on:
+
+    - lp:~openerp/openobject-addons/4.2-extra-addons
+    - lp:~openerp/openobject-addons/trunk-extra-addons
+
+In this group, we include some of our partners who will be selected on a meritocracy basis by the quality team.
+
+  * Contributors --> they can commit on:
+
+    - lp:~openerp-community
+
+.. describe:: How can I be included in OpenERP-commiter team ?
+
+Any contributor who is interested to become a commiter must show his interest
+on working for openerp project and his ability to do it in a proper way as the
+selection for this group is based on meritocracy. It can be by proposing bug
+fixes, features requested on our bug tracker system (see below: bug tracker).
+You can even suggest additional modules and/or functionalities on our bug
+tracker system (see below).
+
+.. describe:: How can I suggest some additionals modules or functionalities ?
+
+To create some additionals modules and/or functionnalities and include them in
+the project, this is the way to do:
+
+  #. open a branch in launchpad
+  #. report and suggest your work via your new branch to our bug tracker system
+     (see below on bug tracker, there are two way : bugs report for bug and
+     blueprint for idea / functionnality)
+  #. wait for approval by our quality team
+
+Or the quality team approved your work and merge it into the official branch
+(like explained below on bug tracker), or they refused it and ask you to
+improve your work before merging it in our official branch.
+
+Installing Bazaar
+"""""""""""""""""
 
 Get Bazaar version control to pull the source from Launchpad.
 
