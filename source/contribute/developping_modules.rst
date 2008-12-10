@@ -67,9 +67,9 @@ In this group, we include some of our partners who will be selected on a meritoc
 Any contributor who is interested to become a commiter must show his interest
 on working for openerp project and his ability to do it in a proper way as the
 selection for this group is based on meritocracy. It can be by proposing bug
-fixes, features requested on our bug tracker system (see below: bug tracker).
-You can even suggest additional modules and/or functionalities on our bug
-tracker system (see below).
+fixes, features requested on our :ref:`bug tracker <bug-tracker-link>` system.
+You can even suggest additional modules and/or functionalities on our :ref:`bug
+tracker <bug-tracker-link>` system.
 
 .. describe:: How can I suggest some additionals modules or functionalities ?
 
@@ -77,14 +77,15 @@ To create some additionals modules and/or functionnalities and include them in
 the project, this is the way to do:
 
   #. open a branch in launchpad
-  #. report and suggest your work via your new branch to our bug tracker system
-     (see below on bug tracker, there are two way : bugs report for bug and
+  #. report and suggest your work via your new branch to our :ref:`bug tracker
+     <bug-tracker-link>` system (there are two way : bugs report for bug and
      blueprint for idea / functionnality)
   #. wait for approval by our quality team
 
 Or the quality team approved your work and merge it into the official branch
-(like explained below on bug tracker), or they refused it and ask you to
-improve your work before merging it in our official branch.
+(like explained in the :ref:`bug tracker <bug-tracker-link>` section), or they
+refused it and ask you to improve your work before merging it in our official
+branch.
 
 Installing Bazaar
 """""""""""""""""

@@ -27,8 +27,8 @@ URL: http://openerp.com/forum/general-questions-f37.html
 
 This forum is used for comitters to ask for more help about a bug resolution.
 An automatic message is sent to the according mailing list when you click on a
-button featured in the bug tracker. It functions both ways, so every post on
-the mailing list will also appear in the forum.
+button featured in the :ref:`bug tracker <bug-tracker-link>`. It functions both
+ways, so every post on the mailing list will also appear in the forum.
 
 IRC
 +++
@@ -69,4 +69,20 @@ All documentations about OpenERP and OpenObject are maintained in the official w
 To keep you aware about what is improved on this wiki, use this RSS feed:
 
   * http://openerp.com/wiki/index.php?title=Special:Recentchanges&feed=rss
+
+Blog
+++++
+
+.. describe:: Where is Planet OpenERP located ?
+
+http://www.openerp.com/planet
+
+.. describe:: How to contribute to Planet OpenERP RSS ?
+
+Only commiters can write in the planet, others can announce on the forum.
+
+If you are a member of the commiter team:
+
+  * Create your personnal blog
+  * Send an email to nva AT tinyerp.com with your name, photo and address of your blog.
 

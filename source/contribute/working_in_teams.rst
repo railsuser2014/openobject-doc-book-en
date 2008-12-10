@@ -47,9 +47,9 @@ repository. "Extra_addons" and "Others" repository are not part of their
 responsability.
 
 If a commit isn't good enough, they must remove it from Community repository
-and report it in the bug tracker. In other case, they will apply the purposed
-commit in the Official version. Like this, everyone will stay aware about what
-is or isn't accepted.
+and report it in the :ref:`bug tracker <bug-tracker-link>`. In other case, they
+will apply the purposed commit in the Official version. Like this, everyone
+will stay aware about what is or isn't accepted.
 
 The quality team is available on launchpad: https://launchpad.net/~openerp
 

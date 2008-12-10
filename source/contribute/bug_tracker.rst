@@ -1,4 +1,6 @@
 
+.. _bug-tracker-link:
+
 Bug Tracker
 -----------
 
