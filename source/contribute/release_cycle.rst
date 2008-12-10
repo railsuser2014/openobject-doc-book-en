@@ -13,18 +13,13 @@ The development of OpenERP follows two distinct branches:
     functionalities and modules. It is intended for testing purpose only, until
     it is stabilized as the next stable version.
 
-You can get more information on how we manage each version in the xxx.
-
-.. [[ Community:How_To_Contribute | community process ]].
-
-
 Introduction
 ++++++++++++
 
 Timeline
 """"""""
 
-A new stable version is published every year:
+A new stable version is published every year. Example:
 
   * May: Community Meeting
 
