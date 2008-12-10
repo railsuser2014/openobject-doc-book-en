@@ -33,6 +33,8 @@ ways, so every post on the mailing list will also appear in the forum.
 IRC
 +++
 
+.. todo:: write the 'IRC' section
+
 Mailing Lists
 +++++++++++++
 

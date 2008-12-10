@@ -92,7 +92,10 @@ feature. The team will improve your specifications directly in your blueprint.
 Translators team
 """"""""""""""""
 
+.. todo:: extend the 'Translators team' section
+
 Community Team
 """"""""""""""
 
+.. todo:: extend the 'Community Team' section
 

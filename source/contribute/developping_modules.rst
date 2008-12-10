@@ -508,8 +508,10 @@ Search Criterions
 
 Search criterions: search available on all columns of the list view
 
-Actions Names
-^^^^^^^^^^^^^
+Action Names
+^^^^^^^^^^^^
+
+.. todo:: write 'Action Names' section
 
 Wizards
 ^^^^^^^
@@ -547,8 +549,10 @@ Some terms
 Module Recorder
 +++++++++++++++
 
+.. todo:: write 'Module Recorder' section
+
 Review quality
 ++++++++++++++
 
-
+.. todo:: write 'Review quality' section
 

@@ -27,7 +27,7 @@ Books are first published in a paper version. Three months after, we release it 
 Guidelines
 """"""""""
 
-.. todo:: write the guidelines
+.. todo:: write the 'guidelines' section
 
 Author Rights
 """""""""""""
@@ -93,7 +93,7 @@ Modules in Wiki
 
 Each module should have a small and minimal documentation in the wiki.
 
-To be completed...
+.. todo:: extending the 'Modules in Wiki' section
 
 FAQ
 +++

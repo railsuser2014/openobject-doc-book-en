@@ -2,6 +2,5 @@
 Summary of ressources
 ---------------------
 
-Work in progress...
-
+.. todo:: Work in progress...
 

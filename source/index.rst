@@ -23,14 +23,25 @@ Contents:
     history
     license
 
-search Index
-============
+Additional facilities
+=====================
 
 * :ref:`genindex`
+
+.. 
+
 * :ref:`search`
 
-Documentation todo list
-=======================
+.. toctree::
 
-.. todolist::
+    todo
+
+FAQs
+====
+
+.. toctree::
+    :maxdepth: 1
+
+    contribute/bazaar_faq
+
 

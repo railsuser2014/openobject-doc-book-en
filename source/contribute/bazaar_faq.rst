@@ -1,8 +1,8 @@
 
 .. _bazaar-faq-link:
 
-F.A.Q on bazaar
----------------
+F.A.Q on Bazaar version control system
+--------------------------------------
 
 .. contents::
 
