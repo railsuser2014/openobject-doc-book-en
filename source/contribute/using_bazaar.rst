@@ -4,6 +4,11 @@
 Bazaar, the version control system
 ----------------------------------
 
+.. index::
+   single: Bazaar
+   single: version control system
+.. 
+
 The new development process uses Bazaar via launchpad.net instead of Subversion.
 Bazaar offers a flexibility with this distributed model. You can see our
 branches on https://code.launchpad.net/~openerp.
@@ -67,6 +72,11 @@ branch.
 Installing Bazaar
 +++++++++++++++++
 
+.. index::
+   single: Bazaar; installation
+   single: Installation; Bazaar
+.. 
+
 Get Bazaar version control to pull the source from Launchpad.
 
 To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list by
@@ -101,6 +111,10 @@ If you experience problems with Bazaar, please read the :ref:`bazaar-faq-link` b
 
 Quick Summary
 +++++++++++++
+
+.. index::
+   single: Bazaar; summary
+.. 
 
 This is the official and proposed way to contribute on OpenERP and OpenObject.
 
@@ -217,6 +231,58 @@ your modules are integrated in one of the two branches:
 We invite all our partners and contributors to work in that way so that we can
 easily integrate and share the work done between the different projects.
 
+Use Case Developpers
+++++++++++++++++++++
 
+This page present the approach your should follow on how to contribute in
+OpenObject. Suppose you want to develop new features in the addons or simply
+correct some bugfixes.
+
+If you have the right to modify directly the branch you plan to change, you can
+do it directly. For example, a quality team member doing a bugfix can do it
+directly on the main branch. Or commiters can work directly on the
+extra-addons. If you don't have the right to modify the branch you plan to
+change or if you want to branch because you are starting big developments
+that may break the code, the first thing to do is to branch the repository
+you plan to modify::
+
+  bzr branch lp:openobject-addons lp:~openerp-commiter/openobject-addons/trunk-new-reporting
+
+In that case, the branch created will be for the openerp-commiter team. If you
+are not a commiter, you can create the branch for the community team
+openerp-community or just for youself, depending if you accept people to
+directly commit on your branch or not. For all Tiny employees, we propose to
+create all branches for the team openerp-commiter. An OpenERP service company
+may create a team for their company and create branches at the name of their
+team. This will allow them to avoid others people that will change their
+customer branch.
+
+Once the branch is created, you must checkout a local copy to work on::
+
+  bzr co lp:~openerp-commiter/openobject-addons/trunk-new-reporting
+
+This will download the branch on your local computer. You can then start
+developing on it. From time to time, you should commit the work done::
+
+  bzr ci
+
+This will send your modification to the branch:
+lp:~openerp-commiter/openobject-addons/trunk-new-reporting. Don't forget to
+change the status of the branch to show others contributors the status of your
+current work on
+https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-new-reporting
+
+For instance, you can switch the status to "In Development" to show you are
+working on it and put the status to "Mature" when you'd like to have your code
+integrated in the official release.
+
+During your development, if you want to receive the latests modifications from
+the parent branches, you can merge it::
+
+  bzr merge
+
+Once your development on this branch are ok, you can ask a commiter to review
+and merge it or fill in a bug in the bugtracker. A commiter will then review
+your work and merge it to the official branch if it's good enough.
 
 

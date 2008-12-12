@@ -1,6 +1,10 @@
 
-Developping modules
+Developing modules
 -------------------
+
+.. index::
+   single: modules development
+.. 
 
 Introduction
 ++++++++++++

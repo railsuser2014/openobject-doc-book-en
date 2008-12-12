@@ -2,6 +2,10 @@
 Our Open Source Vision
 ----------------------
 
+.. index::
+   single: Open Source Vision
+.. 
+
 As to build up the best enterprise management software ever developed, we need
 a perfect organisation between all Open ERP's actors. So that we can benefit and
 leverage the contributions and feedbacks from the community, the market
