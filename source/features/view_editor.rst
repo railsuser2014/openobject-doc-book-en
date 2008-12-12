@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+View Editor
+-----------
 
 Introduction two or three lines.
 

@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Bookstores
+----------
 
 Introduction two or three lines.
 

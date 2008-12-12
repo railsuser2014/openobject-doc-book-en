@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Product Pricelists
+------------------
 
 Introduction two or three lines.
 

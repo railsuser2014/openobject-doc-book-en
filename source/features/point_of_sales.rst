@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Point of Sales
+--------------
 
 Introduction two or three lines.
 

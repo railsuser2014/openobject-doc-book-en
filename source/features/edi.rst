@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+EDI
+---
 
 Introduction two or three lines.
 
