@@ -1,5 +1,5 @@
 
-Name of feature
+Gannt Calendars
 ---------------
 
 Introduction two or three lines.

@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Accounting
+----------
 
 Introduction two or three lines.
 

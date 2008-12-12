@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Events Organisation
+-------------------
 
 Introduction two or three lines.
 

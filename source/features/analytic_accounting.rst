@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Analytic Accounting
+-------------------
 
 Introduction two or three lines.
 

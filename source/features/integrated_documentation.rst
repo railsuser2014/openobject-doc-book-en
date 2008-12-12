@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Integrated Documentations
+-------------------------
 
 Introduction two or three lines.
 

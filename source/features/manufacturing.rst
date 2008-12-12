@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Manufacturing
+-------------
 
 Introduction two or three lines.
 

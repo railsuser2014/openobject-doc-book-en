@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Skills Management
+-----------------
 
 Introduction two or three lines.
 

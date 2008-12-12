@@ -1,6 +1,6 @@
 
-Name of feature
----------------
+Cube Designer
+-------------
 
 Introduction two or three lines.
 
