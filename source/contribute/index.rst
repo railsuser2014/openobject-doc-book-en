@@ -8,6 +8,7 @@ How To Contribute
     opensource_vision
     summary_of_ressources
     working_in_teams
+    using_bazaar
     developping_modules
     distribute_modules
     improving_translations

@@ -23,19 +23,6 @@ Contents:
     history
     license
 
-Additional facilities
-=====================
-
-* :ref:`genindex`
-
-.. 
-
-* :ref:`search`
-
-.. toctree::
-
-    todo
-
 FAQs
 ====
 
@@ -44,4 +31,22 @@ FAQs
 
     contribute/bazaar_faq
 
+Additional facilities
+=====================
+
+.. ifconfig:: builder in ('html')
+
+  * :ref:`genindex`
+
+.. 
+
+.. ifconfig:: builder in ('html')
+
+  * :ref:`search`
+
+.. 
+
+.. toctree::
+
+    todo
 
