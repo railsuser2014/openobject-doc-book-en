@@ -2,23 +2,30 @@
 Bookstores
 ----------
 
-Introduction two or three lines.
+A dedicated module to manage bookstores houses. It manages all operation of a bookstore:
+manage sales and purchases, record each operation in your own accounting database, manage authors, editors and suppliers, manage books.
 
 Key Points:
 +++++++++++
 
-* Key point 1
-* Key point 2
+* Extremely complete, manage all bookstores houses operations
+* No double-encoding, fully integrated to all services
+* Powerful dashboards
 
 Integration Benefits:
 +++++++++++++++++++++
 
-* Integration 1
-* INtegration 2
+* Integrated with accouting for automatic invoicing
+* Integrated with accounting to manages cashiers
+* SMS integration for sellers and buyers
+* Enterprise calendars from the CRM
 
 Screenshot:
 +++++++++++
 
-. Type of screenshot
-   -> Comment
+* Dashboard
 
+Links:
+++++++
+
+* Success Stories: Libeurop
