@@ -9,7 +9,7 @@ How To Contribute
     summary_of_ressources
     working_in_teams
     using_bazaar
-    developping_modules
+    developing_modules
     distribute_modules
     improving_translations
     documentation_process
