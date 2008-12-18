@@ -1,4 +1,6 @@
 
+.. _books-link:
+
 Books
 =====
 

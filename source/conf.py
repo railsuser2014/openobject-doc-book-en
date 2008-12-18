@@ -165,7 +165,7 @@ htmlhelp_basename = 'openobject-docdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', 'openobject-doc.tex', ur'openobject-doc Documentation',
+  ('index', 'openobject-doc.tex', ur'openobject Documentation',
    ur'OpenObject Community', 'manual'),
 ]
 

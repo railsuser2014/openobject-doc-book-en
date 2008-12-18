@@ -1,4 +1,6 @@
 
+.. _features-link:
+
 Features
 ========
 

@@ -1,4 +1,7 @@
 
+
+.. _license-link:
+
 License
 -------
 

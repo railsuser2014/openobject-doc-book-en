@@ -6,47 +6,66 @@
 Open Object Documentation contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Contents:
+Welcome! This is the documentation for OpenERP 5.0, last updated |today|
 
-.. toctree::
-    :maxdepth: 2
+**Parts of the documentation:**
 
-    book/index
-    features/index
-    contribute/index
-    install/index
-    customize/index
-    developer/index
+.. table::
+  :class: main-content-presentation
 
-    about
-    copyright
-    history
-    license
+  +---------------------------------------------------------+-----------------------------------------------+
+  |                                                         |                                               |
+  |  :ref:`Books <books-link>`                              |  :ref:`Features <features-link>`              |
+  |                                                         |                                               |
+  |  OpenERP Books                                          |  OpenERP feature list                         |
+  |                                                         |                                               |
+  +---------------------------------------------------------+-----------------------------------------------+
+  |                                                         |                                               |
+  |  :ref:`How to contribute ? <how-to-contribute-link>`    |  :ref:`Installation <installation-link>`      |
+  |                                                         |                                               |
+  |  How to contribute to OpenERP                           |  How to install OpenERP                       |
+  |                                                         |                                               |
+  +---------------------------------------------------------+-----------------------------------------------+
+  |                                                         |                                               |
+  |  :ref:`FAQs <faqs-link>`                                |                                               |
+  |                                                         |                                               |
+  |  Frequently Asked Questions                             |                                               |
+  |                                                         |                                               |
+  +---------------------------------------------------------+-----------------------------------------------+
 
-FAQs
-====
+**Indices and tables:**
 
-.. toctree::
-    :maxdepth: 1
+.. table::
+  :class: main-content-presentation
 
-    contribute/bazaar_faq
+  +---------------------------------------------------------+-----------------------------------------------+
+  |                                                         |                                               |
+  |  :ref:`Complete Table of Contents <contents-link>`      |  :ref:`search`                                |
+  |                                                         |                                               |
+  |  Lists all sections and subsections                     |  Search this documentation                    |
+  |                                                         |                                               |
+  +---------------------------------------------------------+-----------------------------------------------+
+  |                                                         |                                               |
+  |  :ref:`genindex`                                        |                                               |
+  |                                                         |                                               |
+  |  All terms from this documentation                      |                                               |
+  |                                                         |                                               |
+  +---------------------------------------------------------+-----------------------------------------------+
 
-Additional facilities
-=====================
+**Meta information:**
 
-.. ifconfig:: builder in ('html')
+.. table::
+  :class: main-content-presentation
 
-  * :ref:`genindex`
-
-.. 
-
-.. ifconfig:: builder in ('html')
-
-  * :ref:`search`
-
-.. 
-
-.. toctree::
-
-    todo
+  +-----------------------------------------+-------------------------------------+
+  |                                         |                                     |
+  |  :ref:`License <license-link>`          |  :ref:`History <history-link>`      |
+  |                                         |                                     |
+  +-----------------------------------------+-------------------------------------+
+  |                                         |                                     |
+  |                                         |                                     |
+  |                                         |                                     |
+  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`  |
+  |                                         |                                     |
+  +-----------------------------------------+-------------------------------------+
 
