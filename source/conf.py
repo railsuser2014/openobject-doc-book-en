@@ -150,7 +150,7 @@ html_last_updated_fmt = '%Y-%m-%d'
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'openobject-docdoc'
+htmlhelp_basename = 'openobject-doc'
 
 
 # Options for LaTeX output
