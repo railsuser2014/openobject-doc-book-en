@@ -384,6 +384,9 @@ entire system with inappropriate values.
 Congratulations, you have successfully installed the Open ERP Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For more information, please take a look at the [Additional Installation Information and
-Troubleshooting] page where you can find some troubleshooting examples.
+For more information, please take a look at the  :ref:`Additional Installation
+Information and Troubleshooting
+<troubleshooting-and-windows-complementary-install-information>` page where you
+can find some troubleshooting examples.
+
 

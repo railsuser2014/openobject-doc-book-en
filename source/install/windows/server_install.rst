@@ -1,4 +1,6 @@
 
+.. _installation-of-the-openerp-server-on-windows-link:
+
 Installation of the OpenERP Server on Windows
 """""""""""""""""""""""""""""""""""""""""""""
 
