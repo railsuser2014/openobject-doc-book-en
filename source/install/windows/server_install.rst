@@ -164,7 +164,7 @@ everything in the dialog window, click ok. If the client freezes, check the
 terminal. Might be you have to enter the postgres user password on command
 line, if it's asked for.
 
-===All of the following instructions are not out of date for tinyerp-server (09/09/2008), may be are out of date for openerp :===
+.. todo:: All of the following instructions are not out of date for tinyerp-server (09/09/2008), may be are out of date for openerp:
 
 In manual mode in a cmd window you can create a database directory, start/stop
 the postgresql, and create any number of database.  For initialization of a new
@@ -294,13 +294,15 @@ or::
 
 Two accounts are created by default:
 
-  # login: admin
+admin:
 
-    ##   password : admin
+  * login: admin
+  * password : admin
 
-  # login: demo
+demo:
 
-    ##   password : demo
+  * login: demo
+  * password : demo
 
 Connecting the OpenERP Client Locally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
