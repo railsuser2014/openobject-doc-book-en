@@ -1,4 +1,7 @@
 
+
+.. _history-link:
+
 History
 =======
 

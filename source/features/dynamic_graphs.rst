@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Dynamic Graphs
+--------------
 
 Introduction two or three lines.
 

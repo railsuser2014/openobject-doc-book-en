@@ -1,4 +1,6 @@
 
+.. _copyright-link:
+
 Copyright
 =========
 

@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Ideas
+-----
 
 Introduction two or three lines.
 

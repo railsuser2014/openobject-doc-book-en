@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Scrum Methodology
+-----------------
 
 Introduction two or three lines.
 

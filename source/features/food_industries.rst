@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Food Industries
+---------------
 
 Introduction two or three lines.
 

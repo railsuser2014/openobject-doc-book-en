@@ -1,4 +1,6 @@
 
+.. _about-link:
+
 About
 =====
 

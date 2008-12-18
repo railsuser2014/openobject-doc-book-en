@@ -2,8 +2,13 @@
 Communication
 -------------
 
-Forum
-+++++
+Forums
+++++++
+
+.. index::
+   single: forums (communication )
+   single: Communication; forums
+.. 
 
 .. _users-forum-link:
 

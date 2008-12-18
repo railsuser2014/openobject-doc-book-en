@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Lunch
+-----
 
 Introduction two or three lines.
 

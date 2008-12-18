@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Configurable Actions
+--------------------
 
 Introduction two or three lines.
 

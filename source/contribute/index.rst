@@ -1,4 +1,6 @@
 
+.. _how-to-contribute-link:
+
 How To Contribute
 =================
 
@@ -8,7 +10,8 @@ How To Contribute
     opensource_vision
     summary_of_ressources
     working_in_teams
-    developping_modules
+    using_bazaar
+    developing_modules
     distribute_modules
     improving_translations
     documentation_process

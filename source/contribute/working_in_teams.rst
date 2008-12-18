@@ -2,6 +2,10 @@
 Working in teams
 ----------------
 
+.. index::
+   single: teams
+.. 
+
 People
 ++++++
 
@@ -9,6 +13,11 @@ Who are the different actors in the community of OpenERP.
 
 Contributors
 """"""""""""
+
+.. index::
+   single: contributors (teams)
+   single: teams; contributors
+.. 
 
 Contributors are people who wants to help the project getting better, add
 functionnality and improve stability. Everyone can contribute on the project
@@ -21,6 +30,11 @@ Member of the quality and commiter team are automatically members of the communi
 
 Official Commiters
 """"""""""""""""""
+
+.. index::
+   single: official commiters (teams)
+   single: teams; official commiters
+.. 
 
 Official commiters are people allowed to commit in the community repository.
 Those people are approved as commiters by the community once they've done
@@ -37,6 +51,11 @@ The commiter team is available on launchpad: https://launchpad.net/~openerp-comm
 
 Quality Team
 """"""""""""
+
+.. index::
+   single: quality team (teams)
+   single: teams; quality team
+.. 
 
 Quality team are people from Tiny sprl responsible for the quality of the
 Official repository. They assume the stability and coherence of the Official
@@ -74,6 +93,11 @@ for, so they don't have time to spent providing help or support.
 Expert Teams
 """"""""""""
 
+.. index::
+   single: expert team (teams)
+   single: teams; expert team
+.. 
+
   * Accounting: https://launchpad.net/~openerp-expert-accounting/+members
   * Services Management: https://launchpad.net/~openerp-expert-service/+members
   * Manufacturing Industries: https://launchpad.net/~openerp-expert-production/+members
@@ -92,10 +116,20 @@ feature. The team will improve your specifications directly in your blueprint.
 Translators team
 """"""""""""""""
 
+.. index::
+   single: translators team (teams)
+   single: teams; translators team
+.. 
+
 .. todo:: extend the 'Translators team' section
 
 Community Team
 """"""""""""""
+
+.. index::
+   single: community team (teams)
+   single: teams; community team
+.. 
 
 .. todo:: extend the 'Community Team' section
 

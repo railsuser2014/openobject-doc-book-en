@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Data Browser
+------------
 
 Introduction two or three lines.
 

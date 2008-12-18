@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Integrated DMS
+--------------
 
 Introduction two or three lines.
 

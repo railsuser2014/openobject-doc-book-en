@@ -1,6 +1,6 @@
 
-Name of feature
-------
+Integrated E-commerce
+---------------------
 
 Introduction two or three lines.
 

@@ -23,7 +23,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo']
+extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig']
 todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
@@ -165,7 +165,7 @@ htmlhelp_basename = 'openobject-docdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', 'openobject-doc.tex', ur'openobject-doc Documentation',
+  ('index', 'openobject-doc.tex', ur'openobject Documentation',
    ur'OpenObject Community', 'manual'),
 ]
 
