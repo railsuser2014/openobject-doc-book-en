@@ -10,22 +10,19 @@ to the user rôle:
 * Project manager: work on analytic budgets on his projects
 * Department manager: get a consolidated view on budget positions
 
-Key-Points:
-+++++++++++
+*Key-Points:*
 
 * Workflows on budgets (ex: a budget must be validated before launching a project),
 * Three different points of view on the same budgets
 * Analytic and financial budget integration
 * Mulitple axes
 
-Integration benefits:
-+++++++++++++++++++++
+*Integration benefits:*
 
 * Integrated to purchases, sales, timesheets and expenses notes
 * Analytic budgets are integrated to the project management module
 
-Screenshots:
-++++++++++++
+*Screenshots:*
 
 * print of a budget
 

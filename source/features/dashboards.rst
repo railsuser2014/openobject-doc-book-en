@@ -10,13 +10,11 @@ Unlike most other ERP systems and classic statistically-based systems, Open ERP
 lets dashboards be provided to all of the system's users, and not just to
 directors and accountants.
 
-Key points:
-+++++++++++
+*Key points:*
 
 * Dashboards are dynamic, which enables you to easily navigate around the whole information base. 
 * Dashboards are adaptable to the needs of each user and each company.
 
-Integration benefits:
-+++++++++++++++++++++
+*Integration benefits:*
 
 * Users can each have their own dashboard to enable them to manage their own work effectively.

@@ -2,22 +2,21 @@
 Configurable Actions
 --------------------
 
-Introduction two or three lines.
+The Open Object engine allows you to customize all actions of the system
+in a few clicks. You can easily define new objects, modify workflows, change
+the result of actions, open new windows or reports, etc.
 
-Key Points:
-+++++++++++
+*Key Points:*
 
-* Key point 1
-* Key point 2
+* Full customization of every part of the software without development
+* Integrated with the module recorder to save your customization
 
-Integration Benefits:
-+++++++++++++++++++++
+*Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Triggers actions from anywhere: workflows, views, buttons, etc.
+* Use workflow and view designer to adapt screens according to your requirements
 
-Screenshot:
-+++++++++++
+*Screenshot:*
 
 . Type of screenshot
    -> Comment
