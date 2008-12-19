@@ -1,4 +1,6 @@
 
+.. _installation-on-windows-link:
+
 Server and Client OpenERP Installation on Windows
 -------------------------------------------------
 

@@ -6,7 +6,21 @@
 Open Object Documentation contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 Welcome! This is the documentation for OpenERP 5.0, last updated |today|
+
+.. raw:: html
+
+    <div class="all-toctree">
+
+.. toctree::
+    :glob:
+
+    *
+
+.. raw:: html
+
+    </div>
 
 **Parts of the documentation:**
 

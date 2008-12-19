@@ -16,6 +16,12 @@ div.related {
     font-size: 90%;
 }
 
+/* Main toctree should be hidden but present to have next/previous topic */
+
+div.all-toctree {
+  display: none;
+}
+
 /* Main presentation table */
 
 table.main-content-presentation {
