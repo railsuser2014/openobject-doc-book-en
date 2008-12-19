@@ -16,6 +16,12 @@ div.related {
     font-size: 90%;
 }
 
+/* Main toctree should be hidden but present to have next/previous topic */
+
+div.all-toctree {
+  display: none;
+}
+
 /* Main presentation table */
 
 table.main-content-presentation {
@@ -691,6 +697,15 @@ div.admonition p.admonition-title + p {
 div.seealso {
     background-color: #ffc;
     border: 1px solid #ff6;
+}
+
+div.tip{
+    background-color: #fff3f3;
+    margin-left: 35px;
+    border-top: 2px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
 }
 
 div.warning {

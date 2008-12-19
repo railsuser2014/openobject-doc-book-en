@@ -1,4 +1,0 @@
-
-OpenERP Client for Windows
-""""""""""""""""""""""""""
-

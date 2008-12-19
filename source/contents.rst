@@ -20,5 +20,6 @@ Contents:
     copyright
     history
     license
+    documentation_license
     todo
 
