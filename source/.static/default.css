@@ -699,6 +699,15 @@ div.seealso {
     border: 1px solid #ff6;
 }
 
+div.tip{
+    background-color: #fff3f3;
+    margin-left: 35px;
+    border-top: 2px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
 div.warning {
     background-color: #ffe4e4;
     border: 1px solid #f66;
