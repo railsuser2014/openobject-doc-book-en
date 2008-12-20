@@ -24,8 +24,3 @@ in the project management module, etc.
 
 * CRM Dashboard
 
-Links:
-++++++
-
-* Online Documentation
-

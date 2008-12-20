@@ -8,24 +8,13 @@ clicks, users can file Outlook/Thunderbird email, contacts and calendar
 information into various OpenERP modules, including Accounts, Opportunities,
 Leads, Cases, Contacts and more.
 
-Key points
-++++++++++
+*Key points:*
 
 * Link between e-mail and list of partners
 * Configure messages on partners, products, etc.
 
-Integration benefits
-++++++++++++++++++++
+*Integration benefits:*
 
 * Possibility of creating a partner directly from e-mail adress
 * 
-
-Screenshots:
-++++++++++++
-
-Plugin with thunderbird
-
-Link: 
-++++++
-
 

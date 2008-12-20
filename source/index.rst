@@ -53,9 +53,9 @@ Open Object Documentation
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
   |                                                         |                                                  |
-  |  :ref:`FAQs <faqs-link>`                                |                                                  |
+  |  :ref:`Verticalisations <verticalisations-link>`        |  :ref:`FAQs <faqs-link>`                         |
   |                                                         |                                                  |
-  |  Frequently Asked Questions                             |                                                  |
+  |  Samples of businesses using Open ERP                   |  Frequently Asked Questions                      |
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
 

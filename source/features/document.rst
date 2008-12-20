@@ -10,9 +10,9 @@ to projects, products, sales, contracts, etc.
 
 *Keypoints*
 
-* FTP Access
-* Indexation of PDF, DOC, ODT.
-* Virtual files and folders
+* FTP Access for autheticated users,
+* Automatic indexation of PDF, DOC, ODT, SXW, TXT.
+* Virtual files and folders to automate any kind of document generation
 
 *Integration Benefits*
 

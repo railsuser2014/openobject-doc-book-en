@@ -1,18 +1,19 @@
 
-End Users Processes
--------------------
+Business Process Management
+---------------------------
 
+Open ERP supports technical workflow and also end-users processes.
 Introduction two or three lines.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Integrated process designer to customize or integrate your methodology,
+* Help the user to understand the globality of the company,
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Integrated to the document management system to provide samples of documents at any step
+* Integrated with workflow to evolve in real time according to the reported document
 
 *Screenshot:*
 

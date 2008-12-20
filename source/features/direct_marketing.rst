@@ -27,8 +27,3 @@ you to create bulk documents.
 
 * Campaign flows
 
-Link:
-+++++
-
-* Documentation
-

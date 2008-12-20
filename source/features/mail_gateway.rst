@@ -20,8 +20,3 @@ is dedicated to allow users to assign some cases.
 
 *Screenshots:*
 
-Link:
-+++++
-
-wiki
-

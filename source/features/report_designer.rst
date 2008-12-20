@@ -9,26 +9,14 @@ from their favorite document application. It can be included into various
 OpenERP modules, including Accounts, Opportunities, Leads, Cases, Contacts and
 more.
 
-Key points
-++++++++++
+*Key points:*
 
 * Link between users and open office documents on mailings
 * Creation and designing of reports from Open Office
 * Easy to install and use
 
-Integration benefits
-++++++++++++++++++++
+*Integration benefits:*
 
 * 
 * 
-
-Screenshots:
-++++++++++++
-
-Plugin with open office
-
-Link:
-+++++
-
-Wiki to report designer 
 

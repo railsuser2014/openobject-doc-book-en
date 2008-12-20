@@ -19,8 +19,4 @@ This plugin is a better-organized TO-DO list which allows you to manage your tas
 
 List of hierarchical tasks
 
-Link:
-+++++
-
-???
 

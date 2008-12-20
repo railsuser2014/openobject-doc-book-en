@@ -2,7 +2,7 @@
 Data Browser
 ------------
 
-Introduction two or three lines.
+The Open Object cube browser helps to
 
 *Key Points:*
 
