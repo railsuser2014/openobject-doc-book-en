@@ -14,3 +14,13 @@ Open ERP's replenishment management rules enable the system to generate draft
 purchase orders automatically, or you can configure it to run a lean process
 driven entirely by current production needs.
 
+*Keypoints:*
+
+* Purchase tender management,
+* Integrates best practices: MTS / MTO, JIT, MPS, Kanban,
+* Invoices, delivered products and services control.
+
+*Integration Benefits:*
+
+* Automatic procurement propositions based on different logistics,
+* Perfectly integrated with accounting, stock, manufacturing and project management.
