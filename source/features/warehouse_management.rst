@@ -2,7 +2,9 @@
 Warehouse Management
 --------------------
 
-Introduction two or three lines.
+Open ERP provides the smartest warehouse management system ever done.
+
+
 
 *Key Points:*
 
