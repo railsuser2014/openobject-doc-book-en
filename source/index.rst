@@ -2,12 +2,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Open Object Documentation contents
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+Open Object Documentation
+%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-Welcome! This is the documentation for OpenERP 5.0, last updated |today|
 
 .. raw:: html
 
@@ -22,30 +20,44 @@ Welcome! This is the documentation for OpenERP 5.0, last updated |today|
 
     </div>
 
-**Parts of the documentation:**
+  <br/>
+  <div class="tip">
+  You will find in these pages a new integrated approach to enterprise management
+  and best development practices. The books provided here have been best-sellers
+  on Amazon for several months. You may also have a look at our <a href="">printed
+  books</a> and <a href="">translations</a>.
+  </div>
+  <br/>
+  <br/>
 
 .. table::
   :class: main-content-presentation
 
-  +---------------------------------------------------------+-----------------------------------------------+
-  |                                                         |                                               |
-  |  :ref:`Books <books-link>`                              |  :ref:`Features <features-link>`              |
-  |                                                         |                                               |
-  |  OpenERP Books                                          |  OpenERP feature list                         |
-  |                                                         |                                               |
-  +---------------------------------------------------------+-----------------------------------------------+
-  |                                                         |                                               |
-  |  :ref:`How to contribute ? <how-to-contribute-link>`    |  :ref:`Installation <installation-link>`      |
-  |                                                         |                                               |
-  |  How to contribute to OpenERP                           |  How to install OpenERP                       |
-  |                                                         |                                               |
-  +---------------------------------------------------------+-----------------------------------------------+
-  |                                                         |                                               |
-  |  :ref:`FAQs <faqs-link>`                                |                                               |
-  |                                                         |                                               |
-  |  Frequently Asked Questions                             |                                               |
-  |                                                         |                                               |
-  +---------------------------------------------------------+-----------------------------------------------+
+  +---------------------------------------------------------+--------------------------------------------------+
+  |                                                         |                                                  |
+  |  :ref:`Open ERP Book <books-link>`                      |  :ref:`Open ERP Features <features-link>`        |
+  |                                                         |                                                  |
+  |  A best-seller book about enterprise management         |  A summary of main Open ERP features             |
+  |                                                         |                                                  |
+  +---------------------------------------------------------+--------------------------------------------------+
+  |                                                         |                                                  |
+  |  :ref:`Integrator Book <book-customize-link>`           |  :ref:`Developer Book <book-develop-link>`       |
+  |                                                         |                                                  |
+  |  Customize your modules and applications                |  Develope your own modules on Open Object        |
+  |                                                         |                                                  |
+  +---------------------------------------------------------+--------------------------------------------------+
+  |                                                         |                                                  |
+  |  :ref:`Community Book <how-to-contribute-link>`         |  :ref:`Installation Manuals <installation-link>` |
+  |                                                         |                                                  |
+  |  The Open Object community organisation                 |  Manuals to install Open ERP and Open Object     |
+  |                                                         |                                                  |
+  +---------------------------------------------------------+--------------------------------------------------+
+  |                                                         |                                                  |
+  |  :ref:`FAQs <faqs-link>`                                |                                                  |
+  |                                                         |                                                  |
+  |  Frequently Asked Questions                             |                                                  |
+  |                                                         |                                                  |
+  +---------------------------------------------------------+--------------------------------------------------+
 
 **Indices and tables:**
 
@@ -73,15 +85,21 @@ Welcome! This is the documentation for OpenERP 5.0, last updated |today|
 
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
-  |  :ref:`About <about-link>`              |                                                    |
+  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
+  |                                         |                                                    |
+  |  About our company                      |  Software and documentation copyrights             |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
-  |  :ref:`OpenERP License <license-link>`  |  :ref:`Documentation License <doc-license-link>`   |
+  |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
+  |                                         |                                                    |
+  |  The GPL and OEPL                       |  Licence on this documentation                     |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
-  |                                         |                                                    |
-  |  :ref:`History <history-link>`          | :ref:`Copyright <copyright-link>`                  |
-  |                                         |                                                    |
-  +-----------------------------------------+----------------------------------------------------+
+
+
+
+
+This documentation is based on version 5.0 of Open Object and Open ERP, last updated |today|
+
 
