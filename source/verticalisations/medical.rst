@@ -2,20 +2,28 @@
 Medical
 -------
 
-Introduction two or three lines.
+Open ERP has a multi-user, highly scalable, centralized Electronic Medical
+Record (EMR) system. Our objective is to provide an universal Electronic
+Medical Record (EMR), so doctors and institutions all over the world,
+independently of their economic status, will benefit from a centralized, high
+quality, secure and scalable system.
 
-*Key Points:*
-
-* Key point 1
-* Key point 2
+*Keypoints:*
+* 100% paperless patient examination and history taking
+* Patient Administration (creation, evaluations / consultations, history ... )
+* Strong focus in family medicine and Primary Health Care
+* Doctor Administration
+* Lab Administration
+* Medicine / Drugs information (vademécum)
+* Demographics and other statistical reports
+* Designed with industry standards in mind
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Financial Administration (Invoicing, ...).
+* Medical stock and supply chain management
+* Integrated to document management system (attach X-rays, Biopsy results, ... to the Patient chart)
 
-*Screenshot:*
+*More Information:*
 
-. Type of screenshot
-   -> Comment
-
+* The medical project: http://medical.sf.net
