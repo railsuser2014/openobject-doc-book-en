@@ -1,6 +1,6 @@
 
-Trainings
----------
+Trainings Organisation
+----------------------
 
 Introduction two or three lines.
 
