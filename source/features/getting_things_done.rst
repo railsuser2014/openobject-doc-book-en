@@ -2,21 +2,22 @@
 Getting Things Done
 -------------------
 
-This plugin is a better-organized TO-DO list which allows you to manage your tasks in an hierarchical and structural way. You can order your tasks with several criterias and link them to your service management. 
+This module implement David Allen's methodology: "Getting Things Done". It
+provides tools to help each user organise their time and tasks efficiently.
+GTD rests on the principle that a person needs to move tasks out of the mind by
+recording them externally. That way, the mind is freed from the job of
+remembering everything that needs to be done, and can concentrate on actually
+performing those tasks.
 
 *Key points*
 
-* Defining your daily tasks every day
-* Defining better priorities to your tasks in a few clicks
-* Structurize your projects's tasks
+* Implements: contexts, timeboxes, inbox, etc.
+* Provide a tool to help you run all concept of the methodology in Open ERP
 
 *Integration benefits*
 
-* Completely inetgrated to service management
-* Integrated to your projects.
+* Completely integrated to service and project management
+* Integrated with timesheet to control the cost of the time
 
-*Screenshot:*
-
-List of hierarchical tasks
 
 

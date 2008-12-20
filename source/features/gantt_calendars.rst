@@ -1,6 +1,6 @@
 
-Gannt Calendars
----------------
+Gantt Charts
+------------
 
 Introduction two or three lines.
 

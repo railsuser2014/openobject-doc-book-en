@@ -2,20 +2,18 @@
 Fund Raising
 ------------
 
-Introduction two or three lines.
+The fund raising module allows you to manage your fund raising
+operations. From the search of investors/donators, to the tracking on how
+the money is used accross your different projects and ressources.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Independant or part of the association management module,
+* Pre-configured and easy to start with,
+* Lots of dashboards and reporting available.
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
-
-*Screenshot:*
-
-. Type of screenshot
-   -> Comment
+* Fully integrated with CRM tools: automatic segmentation, report designer, campaign management, email gateway, etc.
+* Integrated with analytic accounting to track how the money is used.
 
