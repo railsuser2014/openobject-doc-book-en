@@ -47,15 +47,15 @@ Open Object Documentation
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
   |                                                         |                                                  |
-  |  :ref:`Community Book <how-to-contribute-link>`         |  :ref:`Installation Manuals <installation-link>` |
+  |  :ref:`Business Intelligence <book-bi-link>`            |  :ref:`Community Book <how-to-contribute-link>`  |
   |                                                         |                                                  |
-  |  The Open Object community organisation                 |  Manuals to install Open ERP and Open Object     |
+  |  Business Intelligence with Open Object                 |  The Open Object community organisation          |
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
   |                                                         |                                                  |
-  |  :ref:`Verticalisations <verticalisations-link>`        |  :ref:`FAQs <faqs-link>`                         |
+  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`FAQs <faqs-link>`                         |
   |                                                         |                                                  |
-  |  Samples of businesses using Open ERP                   |  Frequently Asked Questions                      |
+  |  Manuals to install Open ERP and Open Object            |  Frequently Asked Questions                      |
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
 
