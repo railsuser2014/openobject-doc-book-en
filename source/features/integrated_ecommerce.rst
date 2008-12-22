@@ -2,17 +2,26 @@
 Integrated E-commerce
 ---------------------
 
-Introduction two or three lines.
+Open ERP has modules to synchronise automatically with all main open source
+eCommerce systems: OSCommerce, eZpublish, Magento, Joomla. It allows you to
+streamline and automate the sales process, from the online order to the
+delivery and the invoicing.
+
+As to benefit from all the power of Open ERP (pricelists management, complex
+taxes, warehouse integration, etc.), you can also use our own eCommerce system
+that automatically plugs in an existing website. Add a few lines of HTML in your
+website and Open ERP turns it as a full featured eCommerce platform.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Portal access for customers to manage their accounts and orders,
+* Integrated with most popular eCommerce or builtin existing module
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Streamline your sales process, from the website to the delivery
+* Effective stock visibility and customer special prices computations
+* Take benefit of marketing campaigns and CRM integration to increase your sales
 
 *Screenshot:*
 

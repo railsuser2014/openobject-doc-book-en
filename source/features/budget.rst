@@ -4,7 +4,7 @@ Budgets
 
 The Open ERP budgets modules allows you to manage financial and analytic budgets.
 You can manage the same budgets from three different points of views, according
-to the user rôle:
+to the user role:
 
 * Accountant: work on master and consolidated budget
 * Project manager: work on analytic budgets on his projects

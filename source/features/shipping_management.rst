@@ -11,8 +11,8 @@ Introduction two or three lines.
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* You can planifiy deliveries through the gantt or calendar views
+* Deliveries costs and orders are computed automatically from sales and purchases
 
 *Screenshot:*
 

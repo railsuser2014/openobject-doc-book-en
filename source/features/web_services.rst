@@ -14,3 +14,9 @@ Open ERP server for a maximum of productivity.
 * HTTPS support
 * By default on every object of the system
 
+*Integration benefits:*
+
+This flexible technology allwed us to propose you automatic synchronisation
+modules for most common open source software: ecommerces, mails, mobile
+phones, synchronisation of datas, etc.
+

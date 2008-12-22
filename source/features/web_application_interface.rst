@@ -6,13 +6,15 @@ Introduction two or three lines.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Support lots of different views: gantt, calendars, processes, etc.
+* Template engine to customize the look and feel and adapt to your corporate identity
+* Extremely user-friendly: drag & drop, ajax enabled, dynamic graphs,
+* Fast and Ajax enabled
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* All modules developped on Open ERP works directly on the web and application interface.
+* No need to restart the server to add new features
 
 *Screenshot:*
 

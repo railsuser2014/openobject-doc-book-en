@@ -2,20 +2,26 @@
 Timesheets
 ----------
 
-Introduction two or three lines.
+The timesheet system allows you to record time spent by employees on projects
+or activities. His integration with the analtic accounting allows you to manages
+bugdets, planning, costs and reinvoicing of human ressources.
+
+Different working methods are provided according to the need:
+* Sign in/out by projects
+* Simple timesheet encoding
+* Full timesheet integrated with attendances and validation process by manager
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Fast encoding of activities on tasks or globally
+* Easy and fast project selection, supporting alerts
+* Fully customizable workflow
+* Multi unit of measure: hours, days, weeks.
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
-
-*Screenshot:*
-
-. Type of screenshot
-   -> Comment
+* Integrated with analytic accounting for cost control of employee's time on projects
+* Accouting integration to reinvoice based on time spent automatically
+* Integrated with tasks from project management, calendar for meetings
+* Integrated with attendances tracking system to spread worked time on projects
 

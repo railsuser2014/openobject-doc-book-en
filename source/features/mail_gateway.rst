@@ -16,7 +16,7 @@ is dedicated to allow users to assign some cases.
 
 *Integration benefits*
 
-* Totally integrated to CRM
+* Totally integrated to the CRM modules
 
 *Screenshots:*
 

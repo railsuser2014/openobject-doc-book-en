@@ -10,13 +10,13 @@ among of criterias will bring you directly to what you are looking for.
 
 *Key-points:*
 
-* Multi-users
-* Important search-filtering
+* Multi-users, company, group
+* Powerfull search and filter options
 * Validation system included
 
 *Integration benefits:*
 
-* Completely integrated to most of modules
+* All management objects can be viewed as a calendar
 * Linked to all hierarchical company system (overall company, departement, users, ...)
 
 Screenshot: one calendar

@@ -2,17 +2,21 @@
 Lunch
 -----
 
-Introduction two or three lines.
+Open ERP has lots of modules to simply and automates your daily activities.
+The lunch module allows to track employee orders for the lunch time, their
+preferences, the cost of their lunch, etc. It prepares automatically orders
+for the suppliers and manages employee preferences, if they forget to order.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Cost control and amount due per employee in case of they pay their own lunch
+* Automatic orders to suppliers
+* Consolidation of the requests for the whole company
+* Cash management
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Single access for all your activities in the company
 
 *Screenshot:*
 

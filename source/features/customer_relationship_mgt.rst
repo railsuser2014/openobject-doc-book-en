@@ -1,6 +1,6 @@
 
-Customer Relationship
----------------------
+Customer Relationship Management
+--------------------------------
 
 The generic Open ERP Customer Relationship Management
 system enables a group of people to intelligently and efficiently manage

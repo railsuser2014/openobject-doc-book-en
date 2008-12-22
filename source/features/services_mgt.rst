@@ -2,8 +2,10 @@
 Services Mgt.
 -------------
 
-Service management allows you to manage your company's projects and tasks without any limitations. It provides tools to manage
-multi-level sub-projects, control tasks from project chief, alert customers by e-mails for project support, schedule and prioritize tasks assigned,  etc.
+Service management allows you to manage your company's projects and tasks
+without any limitations. It provides tools to manage multi-level sub-projects,
+control tasks from project chief, alert customers by e-mails for project
+support, schedule and prioritize tasks assigned,  etc.
 
 *Key points:*
 

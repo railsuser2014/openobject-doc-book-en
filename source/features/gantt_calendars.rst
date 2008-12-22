@@ -2,17 +2,22 @@
 Gantt Charts
 ------------
 
-Introduction two or three lines.
+Every object of the system can be turned as a dynamic gantt chart for an
+easy management of the resources and their planification. You can organise
+your resources using drag and drop in the timeline or between different
+consolidations.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Browse at the resource or at the consolidation level
+* Fully support drag & drop horizontal (time) or vertical (accross ressources)
+* Support filters and efficient zoom in or out
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Supply chains organisation and planification
+* Streamline manufacturing operations and work at the workcenter consolidation level
+* Plannify easily ressources on your projects and detect bottle necks
 
 *Screenshot:*
 

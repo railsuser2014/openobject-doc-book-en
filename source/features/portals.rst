@@ -2,9 +2,10 @@
 Portals
 -------
 
-The portal module allows you to show only a part of your OpenERP application
-without developing all modules of your system. It is a useful module to allow
-customers, partners, suppliers, ... to use your system for particular tasks. 
+The portal modules allows you to provide accesses on your system to customers
+or suppliers. Show only a part of your OpenERP application without developing
+all modules of your system. It is a useful module to allow customers, partners,
+suppliers, ... to use your system for particular tasks. 
 
 *Key points:*
 

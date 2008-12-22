@@ -9,6 +9,7 @@ independently of their economic status, will benefit from a centralized, high
 quality, secure and scalable system.
 
 *Keypoints:*
+
 * 100% paperless patient examination and history taking
 * Patient Administration (creation, evaluations / consultations, history ... )
 * Strong focus in family medicine and Primary Health Care

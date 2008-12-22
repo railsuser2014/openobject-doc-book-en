@@ -2,17 +2,24 @@
 Phone Calls
 -----------
 
-Introduction two or three lines.
+Open ERP provides tools to organise phone campaigns.  You can configure
+different workflows for the operator. It's fully integrated with the CRM so
+that you can use relationship management facilities: segmentations of
+customers, automated rules, escalation of cases, transform phone calls to
+opportunities, questionnaires, etc.
 
 *Key Points:*
 
-* Key point 1
-* Key point 2
+* Rules on: held, not held, multiple temptatives, questionaires,
+* Segmentation tools to help you select and filter on prospects,
+* Multiple phone operators allocation,
+* Statistics on results, efficiency of campaigns and productivity.
 
 *Integration Benefits:*
 
-* Integration 1
-* INtegration 2
+* Integrated with email marketing campaigns and segmentation tools
+* Integrated with direct marketing modules
+* Integrated with direct marketing modules
 
 *Screenshot:*
 

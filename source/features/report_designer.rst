@@ -17,6 +17,8 @@ more.
 
 *Integration benefits:*
 
-* 
-* 
+* Allows to easily customize all existing documents of Open ERP
+* Create new documents and save them as modules to easily deploy and distribute
+* Automates all your frequent document composition
+* Integrated to marketing campaigns
 

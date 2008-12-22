@@ -17,4 +17,4 @@ directors and accountants.
 
 *Integration benefits:*
 
-* Users can each have their own dashboard to enable them to manage their own work effectively.
+* Users can each have their own dashboard to enable them to manage their own work efficently.
