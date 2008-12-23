@@ -1,5 +1,5 @@
 
-
+###############################
 Installation and Configuration
 ###############################
 
@@ -160,7 +160,7 @@ The table below summarizes the various installation methods that will be describ
 
  .. csv-table:: Comparison of the different methods of installation on Windows or Linux.
    :header: "Method","Average Time","Level of Complexity","Notes"
-   :widths: 20, 15, 10,30
+   :widths: 20, 15, 15,30
 
    "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
    "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
@@ -208,7 +208,7 @@ To install Open ERP and its database you must be signed in as an Administrator 
 
 	#. Accept the GPL license by clicking  *I Agree* 
 
-	#. Install Open ERP in the location in \ ``Program Files ``\  hat is suggested by the installer.
+	#. Install Open ERP in the location in \ ``Program Files``\  hat is suggested by the installer.
 
 	#. Wait two or three minutes for the installation to complete, then click  *Next* 
 
@@ -387,7 +387,7 @@ Once all these dependencies and the database are installed, install the server i
 
 	#. Install the Open ERP server: \ ``sudo python setup.py install``\  
 
-Open a terminal window to start the server with the command \ ``sudo su postgres -c openerp-server``\  , which should result in a series of log messages as the server starts up. If the server is correctly installed, the message  *waiting for connections... * should show within 30 seconds or so, which indicates that the server is waiting for a client to connect to it.
+Open a terminal window to start the server with the command \ ``sudo su postgres -c openerp-server``\  , which should result in a series of log messages as the server starts up. If the server is correctly installed, the message  *waiting for connections...* should show within 30 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
 
 	.. image:: images/terps_startup_log.png
@@ -458,15 +458,13 @@ To install eTiny:
 
 	#. From Synaptic Package Manager install \ ``build-essential,``\  and then check that \ ``python-matplotlib``\  and \ ``python-imaging``\  are installed (which they should have been during the installation of the server).
 
-	#. Now download the web framework directly to your download directory by entering: \ ``wget ``\  
+	#. Now download the web framework directly to your download directory by entering: \ ``wget``\  
 
 	#. Run the installer using: \ ``python tgsetup.py``\  
 
 	#. Finally, install eTiny by entering the command: \ ``sudo easy_install eTiny.``\  
 
 .. tip::   **Tool**  *Ez* 
-
-
 
 	Ez is the packaging system used by Python. It enables the installation of programs as required just like the packages used by a Linux distribution. The software is downloaded across the network and installed on your computer by ez_install.
 
@@ -496,7 +494,7 @@ You've used default parameters so far during the installation of the various com
 
 	If you prefer a graphical utility to manipulate your database directly you can install pgAdmin III (it is commonly installed automatically with PostgreSQL on a windowing system, but can also be found at http://www.pgadmin.org/). 
 
-	#. The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check this by entering \ ``sudo netstat -anpt ``\  t a terminal to see if port 5432 is visible there.
+	#. The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
 
 	#. The database system has a default role of \ ``postgres``\   accessible by running under the Linux postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql startup message – then type \ ``\q``\  to quit the program.
 

@@ -1,7 +1,7 @@
 
-
+*********
 Foreword
-#########
+*********
 
 
 Information Systems have played an increasingly visible role over the past several years in improving the competitiveness of business. More than just tools for handling repetitive tasks, they're used to guide and advance all of a company's' daily activities. Integrated management software is today very often a key source of significant competitive advantage.

@@ -1,5 +1,5 @@
 
-
+#############
 Guided Tour
 #############
 
@@ -140,7 +140,7 @@ Each user of the system can work in his or her own language. More than twenty la
 
 As administrator you can install a new main working language into the system.
 
-	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language * n the main menu window.
+	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language* n the main menu window.
 
 	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation* 
 
@@ -205,7 +205,7 @@ Look at the request and its history, then close it.
 
 	#. Click on the  *History* tab in the  *Request* form to see the original request and all of the responses. By clicking on each line you could get more information on each element.
 
-	#. Return to the first tab,  *Request* and click End of * Request * o set it to \ ``closed``\   This then appears greyed out.
+	#. Return to the first tab,  *Request* and click End of * Request* o set it to \ ``closed``\   This then appears greyed out.
 
 The request is no longer active. It's not visible to searches and won't appear in your list of waiting requests.
 
@@ -276,7 +276,7 @@ You can list your partners by category using the menu  *Partners > Partners by c
 
 
 	.. image:: images/main_window_partner_menu_config.png
-	:align: center
+	   :align: center
 
 *Categories of partner in a hierarchical structure*  : *Customer,Prospect,Supplier...*
 
@@ -408,7 +408,7 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 
 	#. Start the upgrade to install both modules.
 
-When you return to the main menu you'll find the new customer relationship management menu  *CRM & SRM* . You'll also see all the accounting functions that are now available in the  *Financial Management * menu.
+When you return to the main menu you'll find the new customer relationship management menu  *CRM & SRM* . You'll also see all the accounting functions that are now available in the  *Financial Management* menu.
 
 There is no particular relationship between the modules installed and the menus added. Most of the core modules add complete menus but some also add submenus to menus already in the system. Other modules add menus and submenus as they need. Modules can also add additional fields to existing forms, or simply additional demonstration data or some settings specific to a given requirement.
 

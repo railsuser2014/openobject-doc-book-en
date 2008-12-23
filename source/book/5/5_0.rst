@@ -1,13 +1,11 @@
 
-*********************************
-Managing Customer Relationships
-*********************************
 
- *The Sales department is the engine of your whole company. Sales success drives staff motivation and your company's general dynamism, which in turn enables you to keep innovating and lay the foundations for future success.* 
+System Administration and Implementation
+#########################################
 
- *The key to continued Sales success is effective Customer Relationship Management (most often known as CRM). Open ERP's CRM capabilities are flexible and highly developed to assist you in managing all aspects of both supplier and customer relationships. Analytic tools help you understand your performance drivers, and the automation of data and processes drives new levels of efficiency.* 
+ *After you've tested and evaluated Open ERP, you'll need to configure it to match the software to your company's needs. Its flexibility enables you to configure the different modules, adapting them to your industry or sector of activity.* 
 
- *Open ERP can share information through its interfaces to the most common office applications, minimizing disruption to your operations when you first install it. Your staff can build on their previous productivity by continuing to use their email and office systems, now connected to Open ERP, transferring to the Open ERP interface only if they need to.* 
+ *Designed for ERP project managers, this section deals with the administration and configuration of the system, giving you powerful tools for integrating the software in a company and driving and tracking the project, taking account of different problems, a range of supplier types, implementation risks, and the options available to you.* 
 
 
 

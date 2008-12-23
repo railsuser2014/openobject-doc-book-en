@@ -184,10 +184,9 @@ From the  *Main Menu* , click  *Administration > Configuration > Base > Define M
 
 *  *Report Footer 2* : \ ``Ambitious – our Registered Company Details``\  .
 
-You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > *  *Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
+You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
 
 .. tip::   **Alternative**  *Currency* 
-
 
 
 	The examples in this book are in USD and EUR. You would use your main currency, perhaps CAD, CNY, GBP, or IDR, in their place.
