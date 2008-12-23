@@ -1,4 +1,5 @@
 
+.. _ch-4:
 
 Managing your company effectively
 ###################################
