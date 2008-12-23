@@ -25,3 +25,8 @@ Open ERP Book
     4_10_HR/4_10_HR
     4_11_Services/4_11_Services
     4_12_Projects/4_12_Projects
+    5/5_0
+    5_13_Personalization/5_13_Personalization
+    5_14_Implem/5_14_Implem
+    9_Concl/9_Concl
+    
