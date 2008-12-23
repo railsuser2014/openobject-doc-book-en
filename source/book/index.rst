@@ -22,7 +22,6 @@ Open ERP Book
          .. toctree::
             :maxdepth: 1
             
-            2/2_0
             2_4_CRM/2_4_CRM
             2_5_Comms_Tools/2_5_Comms_Tools
 
@@ -32,7 +31,6 @@ Open ERP Book
          .. toctree::
             :maxdepth: 1
             
-            3/3_0
             3_6_Inv_Pay/3_6_Inv_Pay
             3_7_Fin_Analysis/3_7_Fin_Analysis
             3_8_Charts_A_Z/3_8_Charts_a_z
@@ -42,7 +40,6 @@ Open ERP Book
          .. toctree::
             :maxdepth: 1
             
-            4/4_0
             4_09_Accounts/4_09_Accounts
             4_10_HR/4_10_HR
             4_11_Services/4_11_Services
@@ -53,7 +50,6 @@ Open ERP Book
          .. toctree::
             :maxdepth: 1
 
-            5/5_0
             5_13_Personalization/5_13_Personalization
             5_14_Implem/5_14_Implem
 
