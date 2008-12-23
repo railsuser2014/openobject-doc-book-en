@@ -71,7 +71,7 @@ The documentation of OpenERP is one of our biggest priorities. We currently
 have the best documentation amongst all open source ERP but it's not enough and
 I am sure we can do much more better.
 
-** Writing a Good Documentation is Complex **
+**Writing a Good Documentation is Complex**
 
 For Years, we have try to make a community based documentation on a wiki where
 everyone contribute. With OpenERP, we have a strong community but, after years,
@@ -87,7 +87,7 @@ the community documentation does not reached our expectations:
 As a result, we decided to review the way we will write and maintain futur
 documentations about OpenERP and OpenObject.
 
-** The New Process **
+**The Process**
 
 Most of the best open source documentations have been fully written in one try
 by only one or two people / author. After that, the community improved the
@@ -146,7 +146,7 @@ module". For our main knowledge management system, we use Launchpad Answers,
 where you can ask questions or reply answers.
 
 
-** The Role of The Community **
+**The Role of The Community**
 
 This documentation writing and maintaining process tends to emphatize
 individuals efforts from authors and translators. This does not means we think
