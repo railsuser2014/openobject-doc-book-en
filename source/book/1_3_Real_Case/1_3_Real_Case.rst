@@ -3,10 +3,6 @@
 Developing a real case from purchase to sale: a complete workflow
 ###################################################################
 
-
-
-
-
 Summary
 
 * Use case
@@ -188,10 +184,9 @@ From the  *Main Menu* , click  *Administration > Configuration > Base > Define M
 
 *  *Report Footer 2* : \ ``Ambitious – our Registered Company Details``\  .
 
-You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > *  *Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
+You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
 
 .. tip::   **Alternative**  *Currency* 
-
 
 
 	The examples in this book are in USD and EUR. You would use your main currency, perhaps CAD, CNY, GBP, or IDR, in their place.
@@ -600,4 +595,32 @@ Registering an invoice payment by a customer is essentially the same as the proc
 
 
 Check your Chart of Accounts as before to see that you now have a healthy bank balance in the \ ``Petty Cash``\   account.
+
+
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium
 

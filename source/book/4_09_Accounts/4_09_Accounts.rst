@@ -576,13 +576,13 @@ The report is frequently used to print the number of hours worked on a project, 
 
 To restrict the report to hours worked, without including sales and purchases, select only the services journal to print the report.
 
-.. tip::   **Note **  *M*  *ultiple printing* 
+.. tip::   **Note**  *Multiple printing* 
 
 	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. For that select account lines using the Ctrl-Click keyboard and mouse combination.
 
 	Then click on Print in the tree or list view to export the whole selection into a single PDF document.
 
-.. tip::   **Note**  **  *Multi-company* 
+.. tip::   **Note**  *Multi-company* 
 
 	In a multi-company environment each company can have its own general chart of accounts on the same database. The two general charts of accounts are then independent but can be linked in a third chart using a view account to do the consolidation.
 
@@ -643,11 +643,39 @@ In the following chapters you'll see how each project manager can use this infor
 
 	There's been no discussion of analytic budgets in this section because at the time this book was being prepared, the module that handles them was being completely rewritten.
 
-	Nevertheless, it's worth trying them because they offer the possibility of::
+	Nevertheless, it's worth trying them because they offer the possibility of:
 
 	* forecasting projects in the medium term,
 
 	* controlling project costs,
 
 	* comparing with the general accounts.
+
+
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium
 

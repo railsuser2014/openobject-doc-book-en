@@ -1,11 +1,7 @@
 
-
+#############
 Guided Tour
 #############
-
-
-
-
 
 Summary
 
@@ -75,8 +71,6 @@ Now you're signed in as an administrator you'll be able to add functionality and
 
 .. tip::   **Comment**  *Dashboard after connection* 
 
-
-
 	If you'd installed any of the other profiles from the installation wizard you'd find that your login screen shows a dashboard with information related to your user account rather than the main menu.
 
 	When that happens the main menu is still available, as you'll see later in this chapter. If you're using the web client you can reach the main menu by clicking the Main Menu link towards the top left of the window. If you're using the GTK client the main menu is in the first tab (which is hidden – it's the second tab containing the dashboard that's initially showing). 
@@ -117,8 +111,6 @@ You'll find a link to the  *Home*  page to its right. This takes you to either t
 
 .. tip::   **Note**  *Multi-nationals and time zones* 
 
-
-
 	If you have users in different countries, they can configure their own timezone. Timestamp displays are then adjusted by reference to the user's own localization setting.
 
 	So if you have a team in India and a team in England, the times will automatically be converted. If an Indian employee sets her working hours from 9 to 6 that will be converted and saved in the server's timezone. When the English users want to set up a meeting with an Indian user, the Indian user's available time will be converted to English time.
@@ -142,15 +134,13 @@ Each user of the system can work in his or her own language. More than twenty la
 
 .. tip::   **Key to reading**  *More information about languages* 
 
-
-
 	The base version of Open ERP is translated into the following languages: English, German, Chinese, Spanish, Italian, Hungarian, Dutch, Portuguese, Romanian, Swedish and Czech.
 
 	But other languages are also available in the Forge (http://tinyforge.org): Arabic, Afghan, Austrian, Bulgarian, Indonesian, Finnish, Thai, Turkish and Vietnamese..
 
 As administrator you can install a new main working language into the system.
 
-	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language * n the main menu window.
+	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language* n the main menu window.
 
 	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation* 
 
@@ -159,8 +149,6 @@ As administrator you can install a new main working language into the system.
 To see the effects of this installation change the preferences of your user to change the working language. The main menu is immediately translated in the selected language. If you're using the GTK client you'll first have to close the menu then open a new main menu to start seeing things in the new language.
 
 .. tip::   **More information**  *Navigating the menu* 
-
-
 
 	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll simply get “use menu Administration > Translations > Load New Language”.
 
@@ -211,21 +199,17 @@ To check your requests:
 
 .. tip::   **Advantage**  *Requests vs. email* 
 
-
-
 	The advantage of an Open ERP request compared with a set of emails about one thread of discussion is that a request contains all of the conversation in one place. You can easily monitor a whole discussion with the appropriate documents attached, and quickly review a list of incomplete discussions with the history within each request.
 
 Look at the request and its history, then close it.
 
 	#. Click on the  *History* tab in the  *Request* form to see the original request and all of the responses. By clicking on each line you could get more information on each element.
 
-	#. Return to the first tab,  *Request* and click End of * Request * o set it to \ ``closed``\   This then appears greyed out.
+	#. Return to the first tab,  *Request* and click End of * Request* o set it to \ ``closed``\   This then appears greyed out.
 
 The request is no longer active. It's not visible to searches and won't appear in your list of waiting requests.
 
 .. tip::   **Note**  *Trigger dates* 
-
-
 
 	You can send a request with a future date. This request won't appear in the recipient's waiting list until the indicated date. This mechanism is very useful for setting up alerts before an important event. 
 
@@ -240,8 +224,6 @@ Click the  *Security*  tab to see that the demo user is a member of no groups, h
 
 .. tip::   **Definition**  *Roles, Groups and Users* 
 
-
-
 	Users and groups provide the structure for specifying access right to different documents. Their setup answers the question “who has access to what?”
 
 	Roles are used in business processes for permitting or blocking certain steps in the workflow of a given document. For example you can assign the role of approving an invoice. Roles answer the question “Who should do what?”
@@ -253,8 +235,6 @@ Click the Security tab and it gives you details of the access rights for that gr
 You can create some new users to integrate them into the system. Assign them to predefined groups to grant them certain access rights. Then try their access rights when you login as these users. Management defines these access rights as described in Chapter 13.
 
 .. tip::   *Note* 
-
-
 
 	This is an area where future versions of Open ERP are changing: many groups are being predefined and access to many of the menus and objects will be keyed to these groups by default. This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
 
@@ -287,8 +267,6 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
 
 .. tip::   **Definition**  *Partner Categories* 
 
-
-
 	Partner Categories enable you to segment different partners according to their relation with you (client, prospect, supplier, and so on). A partner can belong to several categories – for example it may be both a customer and supplier at the same time.
 
 Partner Categories
@@ -298,7 +276,7 @@ You can list your partners by category using the menu  *Partners > Partners by c
 
 
 	.. image:: images/main_window_partner_menu_config.png
-	:align: center
+	   :align: center
 
 *Categories of partner in a hierarchical structure*  : *Customer,Prospect,Supplier...*
 
@@ -314,8 +292,6 @@ The administrator can define new categories. So you'll create a new category and
 	#. Then save your new category using the Save button.
 
 .. tip::   **Attention**  *Required Fields* 
-
-
 
 	Fields colored blue are required. If you try to save the form while any of these fields are empty the field turns red to indicate that there's a problem. It's impossible to save the form until you've completed every required field.
 
@@ -339,8 +315,6 @@ To create a new partner and link it to this new category open a new partner form
 	#. Monitor your modification in the menu  *Partners > Partners by category*  Select the category \ ``My Prospect``\   The list of partners opens and you'll find your new partner there in that list.
 
 .. tip::   **Note**  *Searching for documents* 
-
-
 
 	If you need to search through a long list of partners it's best to use the available search criteria rather than scroll through the whole partner list. It's a habit that'll save you a lot of time in the long run as you search for all kinds of documents.
 
@@ -376,8 +350,6 @@ Click  *Administration > Modules Management > Update Modules List*  to start the
 
 .. tip::   **Note**  *Remote module repositories* 
 
-
-
 	If the repository list doesn't reflect your needs then you can edit it from Administration > Modules Management > Repositories. There you can link to new repositories by adding their URLs and disable listed ones by unchecking their Active checkbox. If you're not connected to the Internet then you probably want to disable anything there. 
 
 	Your Open ERP installation must be configured with its addons directory as writable for you to be able to download anything at all. If it hasn't been, then you may need the assistance of a systems administrator to change your server's settings so that you can install new modules.
@@ -388,13 +360,9 @@ It won't matter in this chapter if you can't download anything, but some of the 
 
 .. tip::   **Technique**  *Modules* 
 
-
-
 	All the modules available on your computer can be found in the addons directory of your Open ERP server. Each module there is represented by a directory carrying the name of the module or by a file with the module name and .zip appended to it. The file is in ZIP archive format and replicates the directory structure of unzipped modules.
 
 .. tip::   **Attention**  *Searching through the whole list* 
-
-
 
 	The list of modules shows only the first available modules. In the web client you can search or follow the First / Previous / Next / Last links to get to any point in the whole list, and you can change the number of entries listed by clicking the row number indicators between Previous and Next and selecting a different number from the default of 20.
 
@@ -412,13 +380,10 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
 	   :align: center
 
 *Installation of the product module*
-
-       
+      
 
 
 .. tip::   **Technique**  *Technical Guide* 
-
-
 
 	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu Administration > Modules Management > Installed Modules produces the most fruitful list. 
 
@@ -427,8 +392,6 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
 Click  *Apply Upgrades*  then  *Start Upgrades*  on the  *System Upgrade*  form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu  *Products*  has become available.
 
 .. tip::   **GTK client**  *Refreshing the menu* 
-
-
 
 	After an update in the GTK client you'll have to open a new menu to refresh the content – otherwise you won't see the new menu item. To do that use the window menu Form > Refresh/Cancel.
 
@@ -445,13 +408,11 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 
 	#. Start the upgrade to install both modules.
 
-When you return to the main menu you'll find the new customer relationship management menu  *CRM & SRM* . You'll also see all the accounting functions that are now available in the  *Financial Management * menu.
+When you return to the main menu you'll find the new customer relationship management menu  *CRM & SRM* . You'll also see all the accounting functions that are now available in the  *Financial Management* menu.
 
 There is no particular relationship between the modules installed and the menus added. Most of the core modules add complete menus but some also add submenus to menus already in the system. Other modules add menus and submenus as they need. Modules can also add additional fields to existing forms, or simply additional demonstration data or some settings specific to a given requirement.
 
 .. tip::   **Technique**  *Dependencies between modules* 
-
-
 
 	The module form shows two tabs. The first tab gives basic information about the module and the second gives a list of modules that this module depends on. So when you install a module, Open ERP automatically selects all the necessary dependencies to install this module.
 
@@ -460,8 +421,6 @@ There is no particular relationship between the modules installed and the menus 
 Although you can install a module and all its dependencies at once, you can't remove them in one fell swoop – you'd have to uninstall module by module. Uninstalling is more complex than installing because you have to handle existing system data. 
 
 .. tip::   **Attention**  *Uninstalling modules* 
-
-
 
 	Although it works quite well, uninstalling modules isn't perfect in Open ERP. It's not guaranteed to return the system exactly to the state it was in before installation.
 
@@ -477,8 +436,6 @@ To discover the full range of Open ERP's possibilities you can install many add
 So click  *Administration > Modules Management > Update Modules List*  to upload and update to the latest versions of everything on the Open ERP site. If you don't have an internet connection, or if you're not permitted to modify your installation's \ ``addons``\   directory you can skip this step.
 
 .. tip::   **Attention**  *Importing new modules* 
-
-
 
 	You can only import new modules and update your existing ones if your system is configured to accept them. Your Open ERP addons directory must be writable by the system user that's running your Open ERP application for this, as described in the final section of Chapter 1.
 
@@ -502,8 +459,6 @@ Guided Tour of Open ERP
 You'll now explore the database \ ``openerp_ch02``\   with these profile modules installed to give you an insight into the coverage of the core Open ERP software.
 
 .. tip::   **Attention**  *Translating new modules* 
-
-
 
 	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use Administration > Translation > Load a New Language.
 
@@ -561,8 +516,6 @@ If you've applied no filter, the list shows every partner in the system. For spa
 
 .. tip::   **GTK client**  *List limit of 80* 
 
-
-
 	By default the list in the GTK client shows only the first 80 records, to avoid overloading the network and the server.
 
 	But you can change that limit by clicking the + icon to the left of the search criteria, and you can change the offset so that it starts further down the whole list than the first entry. 
@@ -611,15 +564,11 @@ Certain actions can be started by the following buttons in the  *Actions*  secti
 
 .. tip::   **GTK client**  *Reports, Actions and Links* 
 
-
-
 	When you're viewing a form in the GTK client, the buttons to the right of the form are shortcuts to the same Reports, Actions and Links as described in the text. When you're viewing a list (such as the partner list) those buttons aren't available to you. Instead, you can reach Reports and Actions through two of the buttons in the toolbar at the top of the list – Print and Action. 
 
 Partners are used throughout the Open ERP system in other documents. For example, the menu  *Sales Management > Sales Orders > All Sales Orders*  brings up all the Sales Orders in list view. Click the name of a partner rather than the order number on one of those lines and you'll get the Partner form rather than the Sales Order form.
 
 .. tip::   **Note**  *Right click and shortcuts* 
-
-
 
 	In the GTK client you don't get hyperlinks to other document types. Instead, you can right-click in a list view to show the linked fields (that is fields having a link to other forms) on that line. 
 
@@ -658,8 +607,6 @@ Dashboards give you an overview of all the information that's important to you o
 
 .. tip::   **Definition**  *Dashboards* 
 
-
-
 	Unlike most other ERP systems and classic statistically-based systems, Open ERP lets dashboards be provided to all of the system's users, and not just to directors and accountants.
 
 	Users can each have their own dashboard, adapted to their needs, to enable them to manage their own work effectively. For example a developer using the Project Dashboard can see such information as a list of the next tasks, task completion history and an analysis of the state of progress of the relevant projects.
@@ -669,8 +616,6 @@ Dashboards are dynamic, which enables you to easily navigate around the whole in
 Dashboards are adaptable to the needs of each user and each company.
 
 .. tip::   **Note**  *Construction of dashboards* 
-
-
 
 	Version 4.3 of Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
 
@@ -708,8 +653,6 @@ The value of this approach for some sectors is that you can just define a templa
 The  *Products*  menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
 
 .. tip::   **Terminology**  *Consumables* 
-
-
 
 	In Open ERP a consumable is a physical product which is treated like a stockable product except that stock management isn't taken into account by the system. You could buy it, deliver it or produce it but Open ERP will always assume that there's enough of it in stock. It never triggers a restocking exception.
 
@@ -788,8 +731,6 @@ Open ERP provides many tools for managing relationships with partners. These ar
 
 .. tip::   **Terminology**  *CRM and SRM* 
 
-
-
 	CRM stands for Customer Relationship Management, a standard term for systems that manage client and customer relations. SRM stands for Supplier Relationship Management, and is commonly used for functions that manage your communications with your suppliers.
 
 The concept of a “case” is used to handle arbitrary different types of relationship, each derived from a generic method. You can use it for all types of communication such as order enquiries, quality problems, management of a call center, record tracking, support requests and job offers. 
@@ -822,8 +763,6 @@ You can handle partial deliveries in Open ERP, so you can keep track of items t
 Open ERP's replenishment management rules enable the system to generate draft purchase orders automatically, or you can configure it to run a lean process driven entirely by current production needs.
 
 .. tip::   **Note**  *Workflow visualization* 
-
-
 
 	Open ERP can show you the workflow of any operating process and the current state of a document following the workflow, to help you understand your company processes. This operation is available in the GTK client, not (at the time of writing) the web client.
 
@@ -864,8 +803,6 @@ Open ERP's production management capabilities enable companies to plan, automat
 
 .. tip::   **Terminology**  *BoMs, routing, workcenters* 
 
-
-
 	These documents describe the materials that make up a larger assembly. They're commonly called Bills of Materials or BoMs.
 
 	They're linked to routings which list the operations needed to carry out the manufacture or assembly of the product.
@@ -895,4 +832,32 @@ You can use the menu  *Administration > Modules Management > Modules > Uninstall
 But there are now more than three hundred modules available. If you've connected to the Internet, and if your \ ``addons``\   directory is writable as described at the beginning of this chapter, you can download new modules using the menu  *Administration > Modules Management > Update Modules List* . 
 
 A brief description is available for each module, but the most thorough way of understanding their functionality is to install one and try it. So, pausing only to prepare another test database to try it out on, just download and install the modules that appear interesting.
+
+
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium
 
