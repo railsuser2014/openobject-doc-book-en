@@ -50,8 +50,8 @@ Open ERP Book
          .. toctree::
             :maxdepth: 1
 
-            5_13_Personalization/5_13_Personalization
-            5_14_Implem/5_14_Implem
+            8_13_Personalization/5_13_Personalization
+            8_14_Implem/5_14_Implem
 
 
 #. :ref:`Conclusion <ch-6>`
