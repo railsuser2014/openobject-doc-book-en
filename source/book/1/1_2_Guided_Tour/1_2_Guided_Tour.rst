@@ -1,5 +1,4 @@
 
-#############
 Guided Tour
 #############
 
@@ -88,8 +87,9 @@ Once you're displaying the main menu you're able to see the following screen ite
 * the main contents of the window flanked by the menu toolbar to the left and some links up and to the right.
 
 
-	.. image:: images/main_window_openerp_ch02.png
-	   :align: center
+.. image:: images/main_window_openerp_ch02.png
+   :align: center
+
 
 *The Main Menu of the openerp_ch02 database*
 
@@ -182,8 +182,8 @@ Send a request to get an understanding of its functionality:
 	#. Click  *Send* to send the request to the intended recipient – that's yourself in this case. Then click  *Main Menu* to return to the original screen.
 
 
-	.. image:: images/request_tab.png
-	   :align: center
+.. image:: images/request_tab.png
+   :align: center
 
 *Creating a new request*
 
@@ -257,9 +257,9 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
 * the  *Properties*  tab contains partner settings related to accounting, inventory and other areas: you can leave this alone for the moment.
 
 
-	.. image:: images/partner.png
-	   :align: center
-	   :scale: 80
+.. image:: images/partner.png
+   :align: center
+   :scale: 80
 
 *Partner form*
 
@@ -275,8 +275,8 @@ Partner Categories
 You can list your partners by category using the menu  *Partners > Partners by category* . This opens a hierarchical structure of categories where each category can be divided into sub-categories. Click a category to obtain a list of partners in that category. For example, click all of the partners in the category  *Supplier*  or  *Supplier > Components Supplier* . You'll see that if a company is in a subcategory (such as  *Components Supplier* ) then it will also show up when you click the parent category (such as  *Supplier* ). 
 
 
-	.. image:: images/main_window_partner_menu_config.png
-	   :align: center
+.. image:: images/main_window_partner_menu_config.png
+   :align: center
 
 *Categories of partner in a hierarchical structure*  : *Customer,Prospect,Supplier...*
 
@@ -298,8 +298,8 @@ The administrator can define new categories. So you'll create a new category and
 You can review your new category structure using  *Partners > Partners by category* . You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 
-	.. image:: images/main_window_partner_tab.png
-	   :align: center
+.. image:: images/main_window_partner_tab.png
+   :align: center
 
 *Creating a new partner category : My prospects*
 
@@ -339,7 +339,7 @@ To create a new partner and link it to this new category open a new partner form
 Installing new functionality
 =============================
 
-All of Open ERP's functionality is contained in its many and various modules. Many of these, the core modules, are automatically loaded during the initial installation of the system and can be updated online later. Although they're mostly not installed in your database at the outset, they're available on your computer for immediate installation. Additional modules can also be loaded online from the official Open ERP site . These modules are inactive when they're loaded into the system, and can then be installed in a separate step. 
+All of Open ERP's functionality is contained in its many and various modules. Many of these, the core modules, are automatically loaded during the initial installation of the system and can be updated online later. Although they're mostly not installed in your database at the outset, they're available on your computer for immediate installation. Additional modules can also be loaded online from the official Open ERP site http://openerp.com. These modules are inactive when they're loaded into the system, and can then be installed in a separate step. 
 
 You'll start by checking if there are any updates available online that apply to your initial installation. Then you'll install a CRM module to complete your existing database.
 
@@ -376,8 +376,8 @@ You'll now install a module named \ ``product``\  , which will enable you to man
 Open the list of uninstalled modules from  *Administration > Modules Management > Uninstalled Modules* . Search for the module by entering the name \ ``product``\   in the search screen then clicking it in the list that appears below it to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
 
 
-	.. image:: images/install_product_module.png
-	   :align: center
+.. image:: images/install_product_module.png
+   :align: center
 
 *Installation of the product module*
       
@@ -477,8 +477,8 @@ Depending on the user you're connected as the page appears differently from the 
 Each of the lists can be reordered by clicking on the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click  *Zoom*  above it. 
 
 
-	.. image:: images/admin_project_dashboard.png
-	   :scale: 95
+.. image:: images/admin_project_dashboard.png
+   :scale: 95
 
 *Project Dashboard*
 
@@ -508,8 +508,8 @@ Above the partner list you'll see a search form that enables you to quickly filt
 If you've applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners (the web client defaults to \ ``20``\  , but you can select a maximum of \ ``100``\   on a page). If you want to display other records you can search for them or navigate through the whole list using the  *First*  /  *Previous*  /  *Next*  /  *Last*  arrows.
 
 
-	.. image:: images/partner_search_tab.png
-	   :align: center
+.. image:: images/partner_search_tab.png
+   :align: center
 
 *Standard partner search*
 
@@ -558,7 +558,7 @@ Certain actions can be started by the following buttons in the  *Actions*  secti
 
 *  *Company Architecture* : opens a window showing the partners and their children in a hierarchical structure.
 
-*  *Send SMS* : enables you to send an SMS to selected partners. This system uses the bulk SMS facilities of the Clickatell® company .
+*  *Send SMS* : enables you to send an SMS to selected partners. This system uses the bulk SMS facilities of the Clickatell® company http://clickatell.com.
 
 *  *Mass Mailing* : enables you to send an email to a selection of partners.
 
@@ -579,8 +579,8 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 
 ---------
 	
-	.. image:: images/familiarization_sale_partner.png
-	   :align: center
+.. image:: images/familiarization_sale_partner.png
+   :align: center
 	   
 *Links for a partner appear in an order form*
 
@@ -772,8 +772,8 @@ Open ERP's replenishment management rules enable the system to generate draft p
 
 ---------
 
-	.. image:: images/purchase_workflow.png
-	   :align: center
+.. image:: images/purchase_workflow.png
+   :align: center
 
 *Purchase order workflow*
 
@@ -786,8 +786,8 @@ Open ERP's project management tools enable you to handle the definition of task
 All projects are hierarchically structured. You can review all of the projects from the menu  *Project Management > All Projects*  . To view a project's plans, select a project line and then click  *Print* . Then select  *Gantt diagram*  to obtain a graphical representation of the plan.
 
 
-	.. image:: images/familiarization_project_gantt.png
-	   :align: center
+.. image:: images/familiarization_project_gantt.png
+   :align: center
 
 *Project Planning*
 

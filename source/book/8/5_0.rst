@@ -1,6 +1,4 @@
 
-.. _ch-5:
-
 System Administration and Implementation
 #########################################
 
