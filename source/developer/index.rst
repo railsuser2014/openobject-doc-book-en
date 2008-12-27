@@ -10,5 +10,7 @@ Developer Book
    1_Introduction/index
    2_First_Module/1_intro
    2_First_Module/2_module
-   3_Model_View_Controler/index
+   3_Model_View_Controler/1_model
+   3_Model_View_Controler/2_view
+   3_Model_View_Controler/3_logic
    4_Reporting/index
