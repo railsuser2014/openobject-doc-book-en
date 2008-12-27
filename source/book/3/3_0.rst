@@ -1,5 +1,4 @@
 
-.. _ch-3:
 
 General Accounting
 ###################

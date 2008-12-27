@@ -1,154 +1,6 @@
 
-###############################
-Installation and Configuration
-###############################
-
-
-
-Summary
-
-* The architecture of Open ERP
-
-* Installing the software
-
-* Configuring a database
-
-Keywords
-
-* downloading
-
-* installation
-
-* SaaS
-
-* database server
-
-* application server
-
-* web server
-
-* GTK client
-
-* web client
-
-* backups
-
- *Installing Open ERP under Windows or Linux for familiarization use should take you only half an hour or so and needs only a couple of operations. The first operation is installation of the application and database server on a server PC (that's a Windows or Linux or Macintosh computer). You've a choice of approaches for the second operation: either install a web server (most probably on the original server PC) to use with standard web clients that can be found on anybody's PC, or install application clients on each intended user's PC. When you first install Open ERP you'll configure a database containing a little functionality and some demonstration data to test the installation.* 
-
-
-	.. image:: images/ch1_outline.png
-
-*Your options for reading this section of the book*
-
-This chapter focuses on the installation of Open ERP so that you can begin to familiarize yourselves with its use. If you're not a systems administrator, or if you've already installed Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and move straight to Chapter 2. If you've already used Open ERP (or Tiny ERP) a bit then you can move past that to Chapter 3 in this section of the book.
-
-.. tip::   **Reminder**  *Renaming from Tiny ERP to Open ERP* 
-
-
-	Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to all versions of Tiny ERP and Open ERP from 4.2.0 onwards, with references to specific later versions from time to time. 
-
-.. tip::   **Advice**  *The SaaS, or “on-demand”, offer* 
-
-
-	SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that includes hardware (servers), system maintenance, provision of hosting services, and support.
-
-	You can get a month's free trial on http://ondemand.openerp.com, which enables you to get started quickly without incurring costs for integration or for buying computer systems. Many of Tiny's partner companies will access this, and some may offer their own similar service.
-
-	This service should be particularly useful to small companies that just want to get going quickly and at low cost. It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture used in banks and other large organizations. Open ERP is that system, and is described in detail throughout this book.
-
-Whether you want to test Open ERP or to put it into full production, you have at least two starting points:
-
-* evaluate it on line at http://openerp.com and ask for an SaaS trial hosted at http://ondemand.openerp.com, or the equivalent service at any of Tiny's partner companies,
-
-* install it on your own computers to test it in your company's systems environment.
-
-There are some differences between installing Open ERP on Windows and on Linux systems, but once installed, it gives the same functions from both so you won't generally be able to tell which type of server you're using.
-
-.. tip::   **Alternative**  *Linux, Windows, Mac* 
-
-
-
-	Although this book deals only with installation on Windows and Linux systems, the same versions are also available for the Macintosh on the official website of Open ERP.
-
-.. tip::   **URL**  *Web sites for Open ERP* 
-
-
-
-	* Main Site: http://openerp.com 
-
-	* SaaS or “on-demand” Site: http://ondemand.openerp.com
-
-	* Community discussion forum where you can often receive informed assistance: http://openerp.com/forum/
-
-.. tip::   **Note**  *Current documentation* 
-
-
-
-	The procedure for installing Open ERP and its web server are sure to change and improve with each new version, so you should always check each release's documentation – both packaged with the release and on the website – for exact installation procedures.
-
-Once you've completed this installation, you'll create and configure a database to confirm that your Open ERP installation is working.
-
-The architecture of Open ERP
-=============================
-
-To access Open ERP you can:
-
-* use a web browser pointed at the eTiny web server, or
-
-* use an application client (the GTK client) installed on each computer.
-
-The two methods of access give very similar facilities, and you can use both on the same server at the same time. It's best to use the web browser if the Open ERP server is some distance away (such as on another continent) because it's more tolerant of time delays between the two than the GTK client is. The web client is also easier to maintain, because it's generally already installed on users' computers.
-
-Conversely you'd be better off with the application client (called the GTK client because of the technology it's built with) if you're using a local server (such as in the same building). In this case the GTK client will be more responsive, so more satisfying to use.
-
-.. tip::   **Usability**  *Web client and GTK client* 
-
-
-
-	The main functional difference between the two Open ERP clients is the presence of the calendar view in the web client, which doesn't exist in the GTK client at present (version 4.2.3). Apart from that you will find that there are small differences in their general usability.
-
-	The Tiny company will continue to support two clients for the foreseeable future, so you can use whichever client you prefer.
-
-An Open ERP system is formed by three main components:
-
-* the PostgreSQL database server, which contains all of the databases, each of which contains all data and most elements of the Open ERP system configuration,
-
-* the Open ERP application server, which contains all of the enterprise logic and ensures that Open ERP runs optimally,
-
-* the web server, a separate application called eTiny, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
-
-
-.. image:: images/terp_arch_1.png
-   :scale: 95
-
-.. tip::   **Terminology**  *eTiny – server or client?* 
-
-
-
-	The eTiny component can be thought of as a server or a client depending on your viewpoint.
-
-	It acts as a web server to an end user connecting from a web browser, but it also acts as a client to the Open ERP application server just as a GTK application client does.
-
-	So in this book its context will determine whether eTiny is referred to as a server or a client.
-
-.. tip::   **Attention**  *eTiny* 
-
-	At present, the web component is known as “eTiny”. Although it's possible that this application's name will change in the coming months to match the renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
-
-.. tip::   **Program**  *PostgreSQL* 
-
-
-
-	PostgreSQL is a relational and object database management system.
-
-	It's a free high-performance system that compares with other database management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2 and Microsoft SQL Server (all proprietary). It runs on all types of Operating System, from Unix/Linux to the various releases of Windows, via Mac OS X, Solaris, SunOS and BSD.
-
-These three components can be installed on the same server or can be distributed onto separate computer servers if performance considerations require it.
-
-If you choose to run only with GTK clients you won't need the third component – the eTiny server – at all. In this case Open ERP's GTK client must be installed on the workstation of each Open ERP user in the company.
-
 The installation of Open ERP
-=============================
+"""""""""""""""""""""""""""""
 
 Whether you're from a small company investigating how Open ERP works, or on the IT staff of a larger organization and have been asked to assess Open ERP's capabilities, your first requirement is to install it or to find a working installation.
 
@@ -218,7 +70,7 @@ The Open ERP client can then be opened, ready to use the Open ERP system. The 
 
 
 Independent installation on Windows
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 System administrators can have very good reasons for wanting to install the various components of a Windows installation separately. For example, your company may not support the version of PostgreSQL or Python that's installed automatically, or you may already have PostgreSQL installed on the server you're using, or you may want to install the database server, application server and web server on separate hardware units. 
 
@@ -229,7 +81,7 @@ You must install PostgreSQL before the Open ERP server, and you must also confi
 If you had previously tried to install the all-in-one version of Open ERP, you'd best uninstall that in case its embedded PostgreSQL installation interferes with your stand-alone installation.
 
 Connecting users on other PCs to the Open ERP server
------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To connect other computers to the Open ERP server you must configure the server so that it's visible to the other PCs, and install a GTK client on each of the those PCs:
 
@@ -262,7 +114,7 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 	In its default configuration, the Open ERP client connects to port 8069 on the server using the XML-RPC protocol. You can change this and connect to port 8070 using the NET-RPC protocol instead. NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 
 Resolving errors with a Windows installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#############################################
 
 If your system doesn't work after installing your Windows system you'll find some ideas for resolving this below:
 
@@ -298,7 +150,7 @@ If your system doesn't work after installing your Windows system you'll find som
 	#. Is there anything in the server's history that can help you identify the problem? Open the file \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP Server``\  and scan through the history for ideas. If something looks strange there, contributors to the Open ERP forums can often help identify the reason.
 
 Installation on Linux (Ubuntu)
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This section guides you through installing the Open ERP server and client on Ubuntu, one of the most popular Linux distributions. It assumes that you're using a recent release of Desktop Ubuntu with its graphical user interface on a desktop or laptop PC. 
 
@@ -309,7 +161,7 @@ This section guides you through installing the Open ERP server and client on Ub
 For information about installation on other distributions, visit the documentation section by following  *Product > Documentation*  on http://openerp.com. Detailed instructions are given there for different distributions and releases, and you should also check if there are more up to date instructions for the Ubuntu as well.
 
 Installation of Open ERP from packages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#######################################
 
 At the time of writing this book, Ubuntu hadn't yet published packages for Open ERP, so this section describes the installation of version 4.2 of Tiny ERP. This is very similar to Open ERP and so can be used to test the software.
 
@@ -336,7 +188,7 @@ Although this installation method is simple, and therefore attractive, it's bett
 	Maintaining packages is a process of development, testing and publication that takes time. The releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check the version number from the information on the website before installing a package. If only the third figure differs (for example 4.2.3 instead of 4.2.4) then you may choose to install it because the differences may be minor – fault fixes rather than functionality changes between the package and the latest version.
 
 Manual installation of the Open ERP server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+###########################################
 
 In this section you'll see how to install Open ERP by downloading it from the site http://openerp.com, and how to install the libraries and packages that Open ERP depends on, onto a desktop version of Ubuntu. Here's a summary of the procedure:
 
@@ -384,7 +236,7 @@ Open a terminal window to start the server with the command \ ``sudo su postgres
    :scale: 95
 
 Manual installation of Open ERP GTK clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#############################################
 
 To install an Open ERP GTK client, follow the steps below:
 
@@ -437,7 +289,7 @@ It's possible to connect the server to the client using a secure protocol to pre
 If your Linux server is protected by a firewall you'll have to provide access to port \ ``8069``\   for users on other computers with Open ERP GTK clients.
 
 Installation of an eTiny web server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#####################################
 
 Just as you installed a GTK client on a Linux server, you can also install the eTiny web server. It's possible to install eTiny from sources after installing its dependencies from packages as you did with the Open ERP server, but Tiny have provided a much simpler way to do this for eTiny – using a system known as ez_setup.
 
@@ -471,7 +323,7 @@ The eTiny web server connects to the Open ERP server in the same way as an Open
 You can verify the installation by opening a web browser on the server and navigating to http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from another computer connected to the same network if you know the name or IP address of the server over the network – your browser should be set to http://<server_address>:8080 for this.
 
 Verifying your Linux installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+###################################
 
 You've used default parameters so far during the installation of the various components. If you've had problems, or you just want to set this up differently, the following points provide some indicators about how you can configure your installation.
 
@@ -481,7 +333,7 @@ You've used default parameters so far during the installation of the various com
 
 	If you prefer a graphical utility to manipulate your database directly you can install pgAdmin III (it is commonly installed automatically with PostgreSQL on a windowing system, but can also be found at http://www.pgadmin.org/). 
 
-------------------
+""""""""""""""""""
 
 	#. The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
 
@@ -508,149 +360,6 @@ You've used default parameters so far during the installation of the various com
 
 
 	You can start several Open ERP application servers on one physical computer server by using different ports. If you have defined multiple database roles in PostgreSQL, each connected through an Open ERP instance to a different port, you can simultaneously serve many companies from one physical server at one time.
-
-Creating the database
-=======================
-
-Before walking through an Open ERP business process step by step in the next chapter you'll create a database to check that the installation is working correctly:
-
-* \ ``openerp_ch01``\  : a minimal database containing demonstration data.
-
-To create new databases you must know the super-administrator password which defaults to admin on a new installation.
-
-
-	
-
-        .. note :: The super-administrator password
-
-			Anyone who knows the super-administrator password has complete access to the data on the server – able to read, change and delete any of the data in any of the databases there.
-
-			After first installation, the password is admin. You can change it through the GTK client from the menu File > Database ... > Administrator Password, or through the web client by logging out (click the Logout link), clicking Manage on the login screen, and then clicking the Password button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
-
-
-	.. image:: images/change_superadmin_pwd.png
-
-                
-*Changing the super-administrator password through the web client*
-
---------------------------                
-                
-	.. image:: images/create_new_db_GTK.png
-	
-*Creating a new database through the GTK client*
-	        
-
-* If you're using the GTK client, choose  *Files > Database > New database*  in the menu at the top left. Enter the super-administrator password, then the name of the new database you're creating.
-
-* If you're using the web client, click  *Manage*  on the login screen, then  *Create*  on the database management page. Enter the super-administrator password, then the name of the new database you're creating.
-
-Database openerp_ch01
------------------------
-
-To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the  *New database*  field. Make sure that the  *Load Demonstration Data*  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
-
-Wait for the message showing that the database has been successfully created, along with the user accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed database you can extend it without knowing the super administrator password.
-
-.. tip::   **Technique**  *User Access* 
-
-
-
-	The combination of username/password is specific to a single database. If you have administrative rights to a database you can modify the predefined users. 
-
-	Alternatively you can install the users_ldap module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
-
-
---------------
-
-	.. image:: images/create_new_db_web.png
-	
-
-        .. note ::  Failure to create a database
-
-			How do you know if you've successfully created your new database? You're told if the database creation has been unsuccessful. If you have entered a database name using prohibited characters (or no name, or too short a name) you will be alerted by the dialog box Bad database name! explaining how to correct the error. If you've entered the wrong super-administrator password or a name already in use (some names can be taken without your knowledge), you'll be alerted by the dialog box Error during database creation!
-
-Connect to the database \ ``openerp_ch01``\   that you just created, using the default administrator account. 
-
-If this is the first time you've connected to this database you'll be asked a series of questions to define the database parameters:
-
-	#.  *Select a profile*  select \ ``Minimal Profile``\  and click  *Next* 
-
-	#.  *Company Details*  replace the proposed default of \ ``Tiny sprl``\  by your own company name, complete as much of your address as you like, and add some lines about your company, such as a slogan and any statutory requirements, to the header and footer fields. Click  *Next*  
-
-	#.  *Summary*  check the information and go back to make any modifications you need before installation. Then click  *Install* 
-
-	#.  *Installation Completed*  click  *Ok* 
-
-Once configuration is complete you're connected to your Open ERP system. Its functionality is very limited because you've selected a minimal installation, but this is sufficient to demonstrate that your installation is working.
-
-
-.. image:: images/define_main_co_dlg.png
-    :scale: 95
-	    
-*Defining your company during initial database configuration*
-	
-
-Managing databases
--------------------
-
-As a super-administrator you've not only got rights to create new databases, but also to:
-
-* delete databases,
-
-* backup databases,
-
-* restore databases.
-
-All of these operations can be carried out from the menu  *File > Databases... > Backup databases*  in the GTK client, or from  *Manage...*  in the web client's Login screen.
-
-.. tip::   **Note**  *Duplicating a database.* 
-
-	To duplicate a database you can:
-
-        #. make a backup file on your PC from this database.
-
-        #. restore this database from the backup file on your PC, giving it a new name as you do so.
-
-	This can be a useful way of making a test database from a production database. You can try out the operation of a new configuration, new modules, or just the import of new data.
-
-Future versions of Open ERP may only give you access to some of these database functions in a special development mode, so that your security is enhanced in normal production use.
-
-You are now ready to use databases from your installation to familiarize yourself with the administration and use of Open ERP.
-
-New Open ERP functionality
----------------------------
-
-The database you've created and managed so far is based on the core Open ERP functionality that you installed. The core system is installed in the file system of your Open ERP application server, but only installed into an Open ERP database as you require it, as is described in the next chapter.
-
-What if want to update what's there, or extend what's there with additional modules?
-
-* To update what you have, you'd install a new instance of Open ERP using the same techniques as described earlier in this chapter.
-
-* To extend what you have, you'd install new modules in the addons directory of your current Open ERP installation. There are several ways of doing that.
-
-In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your Open ERP application server.
-
-Extending Open ERP
-^^^^^^^^^^^^^^^^^^^
-
-To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's is in your server's \ ``tinyerp-server``\   directory (which differs between Windows, Mac and some of the various Linux distributions and not available at all in the Windows all-in-one installer). 
-
-If you look there you'll see existing modules such as \ ``product``\   and \ ``purchase``\  . A module can be provided in the form of files within a directory or a a zip-format file containing that same directory structure. 
-
-You can add modules in two main ways – through the server, or through the client. 
-
-To add new modules through the server is a conventional systems administration task. As \ ``root``\   user or other suitable user, you'd put the module in the \ ``addons``\   directory and change its permissions to match those of the other modules.
-
-To add new modules through the client you must first change the permissions of the \ ``addons``\   directory of the server, so that it is writable by the server. That will enable you to install Open ERP modules using the Open ERP client (a task ultimately carried out on the application server by the server software). 
-
-.. tip::   **Note**  *Changing permissions* 
-
-
-
-	A very simple way of changing permissions on the Linux system you're using to develop an Open ERP application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-server/addons). 
-
-Any user of Open ERP who has access to the relevant administration menus can then upload any new functionality, so you'd probably disable this capability for production use. You'll see examples of this uploading as you make your way through this book.
-
 
 
 .. Copyright © Open Object Press. All rights reserved.

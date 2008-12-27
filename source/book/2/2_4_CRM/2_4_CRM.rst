@@ -88,8 +88,8 @@ So a partner can be both your supplier and your customer at the same time. This 
 To get a list of partners using demonstration data, use the menu  *Partners > Partners*  (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has only the data that you've put into it - both can show the principles).
 
 
-	.. image::  images/crm_partner.png
-	   :align: center
+.. image::  images/crm_partner.png
+   :align: center
 
 *The partner form*
 
@@ -127,8 +127,8 @@ Partner Categories
 Open ERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu  *Partners > Partners by Category* .
 
 
-	.. image::  images/crm_partner_category_big.png
-	   :align: center
+.. image::  images/crm_partner_category_big.png
+   :align: center
 
 *Example partner category structure*
 
@@ -239,8 +239,8 @@ The procedure is to create the name of the new menu in  *Menu base name* , selec
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a menu structure like the following figure (here for the Business Opportunities menu).
 
 
-	.. image::  images/business_ops.png
-	   :align: center
+.. image::  images/business_ops.png
+   :align: center
 
 *Business Opportunities menu automatically generated*
 
@@ -273,8 +273,8 @@ Although you've created special menu trees for each of the types of case you def
 	You can also track items across the whole company.
 
 
-	.. image::  images/crm_case.png
-	   :align: center
+.. image::  images/crm_case.png
+   :align: center
 
 *An entry following a business opportunity*
 
@@ -335,9 +335,9 @@ So if you want to implement a shared calendar for your calendar in Open ERP all
 You'll get menus enabling you to manage calendars for each employee, and you'll also get a shared calendar for the company. This calendar view is totally dynamic. You can move an event or change its duration just using your mouse.
 
 
-	.. image::  images/crm_calendar1.png
-	   :align: center
-	   :scale: 90
+.. image::  images/crm_calendar1.png
+   :align: center
+   :scale: 90
 
 *Monthly view of the meeting calendar for cases*
 
@@ -345,9 +345,9 @@ You'll get menus enabling you to manage calendars for each employee, and you'll 
 You can change the view and return to the list view, forms or graphs by using the buttons at the top right. Open ERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time. 
 
 
-	.. image::  images/crm_calendar2.png
-	   :align: center
-	   :scale: 90
+.. image::  images/crm_calendar2.png
+   :align: center
+   :scale: 90
 	   
 *Weekly view of the meeting calendar for cases*
 
@@ -370,8 +370,8 @@ Open ERP has a module that helps handle this – \ ``report_crm``\  . It's not 
 Once you've installed it you can use menu  *CRM & SRM > Reporting*  on database \ ``openerp_04X``\   (which has plenty of data already in it) to create different reports. 
 
 
-	.. image::  images/crm_graph.png
-	   :align: center
+.. image::  images/crm_graph.png
+   :align: center
 
 *Analyzing the performance of your support team*
 
@@ -422,8 +422,8 @@ Using these rules you could:
 To define new rules use the menu  *CRM & SRM > Configuration > Cases > Rules* .
 
 
-	.. image::  images/crm_rule.png
-	   :align: center
+.. image::  images/crm_rule.png
+   :align: center
 
 *Screenshot of a rule*
 
@@ -551,8 +551,8 @@ To automate the creation of current cases you can install the email gateway.
 The email gateway enables you to use Open ERP's CRM without necessarily using the Open ERP interface. Users can create up-to-date cases just by sending and receiving emails. This system works with the major current email clients such as Microsoft Outlook and Outlook Express, Thunderbird and Evolution.
 
 
-	.. image::  images/crm_gateway.png
-	   :align: center
+.. image::  images/crm_gateway.png
+   :align: center
 
 *Schematic showing the use of the email gateway*
 
@@ -586,7 +586,7 @@ You'll also need to choose an Open ERP user that the gateway will use to access
 
 Then specify the case section in Open ERP that you'll use when this user is connected by email, for example, the \ ``Helpdesk and Support``\   section.
 
-Install Fetchmail on your Open ERP server. You can download it from the address .
+Install Fetchmail on your Open ERP server. You can download it from the address http://fetchmail.berlios.de/.
 
 .. tip::   **Program**  *Fetchmail* 
 
@@ -655,8 +655,8 @@ The products offered by Tiny at these exhibitions are:
 The Tiny company has therefore put a decision tree in place based on the answers to several questions posed to prospects. These are given in the following figure:
 
 
-	.. image::  images/crm_profile_tree.png
-	   :align: center
+.. image::  images/crm_profile_tree.png
+   :align: center
 
 *Example of profiling customer prospects by the Tiny company*
 

@@ -76,7 +76,7 @@ It's very helpful to be able to backup your specific configuration settings in a
 
 * simplify migrations, if you have modified some elements of the basic configuration, there's a risk in returning them to their original state after the migration, unless you've saved the modifications in a module.
 
-Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu  *Administration > Modules Management > Modules Recording > Start *  *Recording* . Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen personalization, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
+Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu  *Administration > Modules Management > Modules Recording > Start Recording* . Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen personalization, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
 
 Once you've done all this, go to the menu  *Administration > Modules Management > Modules Recording > Save Recorded Module* . 
 
@@ -117,8 +117,8 @@ You could now edit this form – change its  *Parent Menu* , which moves the ent
 Instead of editing this form, which is the original menu entry, duplicate it instead. With the web client you must first make the form read-only by clicking the  *Cancel*  button, then you click the  *Duplicate*  button that appears (in the GTK client, click  *Form > Duplicate*  from the top menu). The form that remains is now the duplicate entry, not the original.
 
 
-	.. image::  images/new_menu.png
-	   :align: center
+.. image::  images/new_menu.png
+   :align: center
 
 *Menu enabling you to change your own password, accessible to all users*
 
@@ -156,8 +156,8 @@ The administrator can change both the welcome page and the main menu page indivi
 To make modifications for a particular user, edit the user configuration again in  *Administration > Users > Users* . Open the form for a particular user, and select different menu entries for the two fields  *Home Action*  and  *Menu Action* . 
 
 
-	.. image::  images/new_home.png
-	   :align: center
+.. image::  images/new_home.png
+   :align: center
 
 *Selecting a new welcome page*
 
@@ -179,11 +179,11 @@ You can quite easily configure the system to put default values in various field
 
 * If you're using the GTK client, you just need to right-click the mouse while the pointer is in the field.
 
- *Set as default*  *Field Preferences*  *Value applicable for* \ ``For all ``\  \ ``Only for you``\  
+ *Set as default*  *Field Preferences*  *Value applicable for*  \ ``For all``\  or \ ``Only for you``\  
 
 
-	.. image::  images/set_default.png
-	   :align: center
+.. image::  images/set_default.png
+   :align: center
 
 *Inserting a new default value*
 
@@ -217,15 +217,13 @@ You can do this one of two ways:
 	        Schumacher, Helen, Cook Chain
 
 
-	represents the table:
-
-.. csv-table:: 
-    :header: "LastName","FirstName","Company"
-    :widths:  8,8,8
-       
-   "Robins","Gerald","SOS Plumbers"
-   "Lacoste","John","Extra-Textiles"
-   "Schumacher","Helen","Cook Chain"
+        .. csv-table:: represents the table
+            :header: "LastName","FirstName","Company"
+            :widths:  8,8,8
+               
+           "Robins","Gerald","SOS Plumbers"
+           "Lacoste","John","Extra-Textiles"
+           "Schumacher","Helen","Cook Chain"
 
 The same approach is used to translate terms that haven't been created yet. This can be useful, for example, with modules that haven't yet been translated into English or any other language that you want.
 
@@ -242,8 +240,8 @@ To translate or modify all of the system's phrases you first have to export a tr
 
 ---------------------
 
-	.. image::  images/csv_transl.png
-	   :align: center
+.. image::  images/csv_transl.png
+   :align: center
 
 *CSV translation file with the translation superimposed*
 
@@ -350,8 +348,8 @@ Then to create a new user linked to this, use Administration > Users > Users to 
 In the second tab of the user form,  *Security* , add the \ ``Stock1``\   group that you just created.
 
 
-	.. image::  images/menu_access.png
-	   :align: center
+.. image::  images/menu_access.png
+   :align: center
 
 *Groups that have access to the Inventory Control menu*
 
@@ -415,8 +413,8 @@ Modification history
 ---------------------
 
 
-	.. image::  images/view_log.png
-	   :align: center
+.. image::  images/view_log.png
+   :align: center
 
 *Partner Record history*
 
@@ -430,8 +428,8 @@ Workflows represent the company's different business processes. They're complete
 The figure below shows the standard workflow for an order. You can show it from the GTK client starting with  *Sales Management > Sales Order > All Sales Order* . Select an order, then go to the top menu  *Plugins > Execute a plugin > Print Workflow*  to show the menu below. They're designed really for administrators, so aren't available through the web client.
 
 
-	.. image::  images/sales_workflow.png
-	   :align: center
+.. image::  images/sales_workflow.png
+   :align: center
 
 *Workflow for order SO005*
 
@@ -443,8 +441,8 @@ Workflows can be created and modified in Open ERP's user interface.
 You can look at the specifications of the workflow for the sales order above using the menu Administration * > Configuration > Low level > Base > Workflow* . It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field  *Activities* , and all of the arrows are listed in the field  *Transitions* .
 
 
-	.. image::  images/sales_workflow_spec.png
-	   :align: center
+.. image::  images/sales_workflow_spec.png
+   :align: center
 
 *Definition of the workflow for a sales order*
 
@@ -533,14 +531,14 @@ In the fourth tab you must indicate which of the fields in the list you want to 
 You can now  *Save*  the report you defined. Click on the  *Open Report*  button to the right of the form to get the requested analysis.
 
 
-	.. image::  images/report_sale_tree.png
-	   :align: center
+.. image::  images/report_sale_tree.png
+   :align: center
 
 *Analyzing sales by partner and by product in list view*
 
 
-	.. image::  images/report_sale_graphe.png
-	   :align: center
+.. image::  images/report_sale_graphe.png
+   :align: center
 
 *Analyzing sales by partner and by product in graph view*
 
@@ -554,8 +552,9 @@ A dashboard is a selection of reports previously defined in Open ERP. You can c
 Just like fields on reports, the  *Sequence*  field determines the order in which views appear in the dashboard. 
 
 
-	.. image::  images/dashboard_config.png
-	   :align: center
+.. image::  images/dashboard_config.png
+   :align: center
+   :scale: 85
 
 *Definition of a new dashboard*
 
@@ -604,8 +603,8 @@ You start by installing the module \ ``base_report_designer``\   just like all t
 To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip``\   supplied with the  *Report Designer*  distribution. Check that OpenOffice.org is properly installed on your computer and that you have administration rights for installation.
 
 
-	.. image::  images/tinyreport.png
-	   :align: center
+.. image::  images/tinyreport.png
+   :align: center
 
 *Menu TinyReport in OpenOffice.org Writer*
 
@@ -628,8 +627,8 @@ The report editor lets you:
 To modify an existing report, select  *Tiny Report > Modify Existing Report* . Choose the report \ ``Request for Quotation``\   in the  *Modify Existing Report*  dialog box and then click  *Save to Temp Directory* .
 
 
-	.. image::  images/openoffice_quotation.png
-	   :align: center
+.. image::  images/openoffice_quotation.png
+   :align: center
 
 *Modifying a document template*
 
@@ -685,7 +684,7 @@ Creating common headers for reports
 
 When saving new reports and reports that you've modified, you're given the option to select a header. This header is a template that creates a standard page header and footer containing data that's defined in each database. 
 
-\ ``addons/custom``\  
+The header is available to all users of the Open ERP server. Its template can be found on the file system of the server in the directory  \ ``addons/custom``\   and is common to all the users of the server. Although reports attach information about the company that's printing them you can replace various names in the template with values from the database, but the layout of the page will stay common to all databases on the server.
 
 If your company has its own server, or a hosted server, you can customize this template. To add the company's logo you must login to the Open ERP server as a user who's allowed to edit server files. Then go to the \ ``addons/custom``\  directory, copy your logo across (in a standard graphical file format), then edit the file \ ``corporate_rml_header.rml``\   in a text editor. Text in the form \ ``<image file="corporate_logo.png" x="1cm" y="27.4cm" width="6cm"/>``\  should be put after the line \ ``<!--logo-->``\   to pick up and display your logo on each page that uses the corporate header.
 
@@ -714,8 +713,8 @@ To do this, two solutions are possible in Open ERP:
 Start by building the header of the CSV file. Open the import tool on the object that you're interested in and select the fields that you want to import into your Open ERP database. You must include every field that's colored in blue because those fields are required, and any other field that's important to you.
 
 
-	.. image::  images/csv_column_select.png
-	   :align: center
+.. image::  images/csv_column_select.png
+   :align: center
 
 *Selecting fields to import using a CSV file*
 
@@ -734,20 +733,20 @@ To import CSV data that matches your database structure, you need to distinguish
 View the screenshots below to note the differences.
 
 
-	.. image::  images/csv_many2one.png
-	   :align: center
+.. image::  images/csv_many2one.png
+   :align: center
 
 *A many-to-one field: a salesperson linked to a partner*
 
 
-	.. image::  images/csv_many2many.png
-	   :align: center
+.. image::  images/csv_many2many.png
+   :align: center
 
 *A many-to-many field: partner categories*
 
 
-	.. image::  images/csv_one2many.png
-	   :align: center
+.. image::  images/csv_one2many.png
+   :align: center
 
 *A one-to-many field: partner contacts*
 
@@ -787,16 +786,15 @@ To import such a field you don't have to link to an existing entry in another ta
 
 For example, to import partners with several contact for which you specify a name and a city, you would create the following CSV file:
 
- **Example of importing one-to-many fields**
 
-.. csv-table:: 
-    :header: "Name","Code","Address/Contact","Address/City",
+.. csv-table::  **Example of importing one-to-many fields**
+    :header: "Name","Code","Address/Contact","Address/City"
     :widths: 8,5,10,10
     
-   "Tiny sprl","Tiny","Fabien Pinckaers","Grand-Rosière",
-   "","","Cécile Debois","Namur",
-   "Axelor SARL","Axelor","Laith Jubair","Paris",
-   "Open-Net","OpenNet","","",
+    "Tiny sprl","Tiny","Fabien Pinckaers","Grand-Rosière"
+    "","","Cécile Debois","Namur"
+    "Axelor SARL","Axelor","Laith Jubair","Paris"
+    "Open-Net","OpenNet","",""
 
 In this example, the  *Name*  and  *Code*  fields belong to the  *Partner*  table, and the  *Contact*  and  *City*  fields belong to the  *Contact*  linked to this partner.
 
@@ -821,7 +819,8 @@ Importing this file will give you three partners:
 Examples of CSV import files
 -----------------------------
 
- *one-to-*  *many*  *many-to-many* 
+To illustrate data importing, you can find two examples below. The first one is to import partner categories, and then to import some partners and their contacts along with links to the categories just created. Although you can create new contacts at the same time as creating partners (because you can do this for *one-to-many* relations), you can't create new categories this way (because they use *many-to-many* relations).
+
 
 Partner categories
 ^^^^^^^^^^^^^^^^^^^
@@ -829,7 +828,6 @@ Partner categories
 Start by creating partner categories in a CSV file:
 
 	#. Create the following table in your spreadsheet program:
-
 
 
                         .. csv-table:: **Partner categories file: categories.csv**

@@ -28,7 +28,6 @@ Keywords
  *Now that you've discovered some of the many possibilities of Open ERP from a tour of the demonstration database, you'll develop a real case. An empty database provides the starting point for testing a classic workflow from product purchase to sale, completing your guided tour and your familiarization with Open ERP.* 
 
 
-
 A database loaded with demonstration data is very useful for understanding Open ERP's general capabilities. But to explore Open ERP through a lens of your own company's needs you should start with an empty database. You'll work in this chapter on a minimal database containing no demonstration data so that there is no confusion about what you created. And you'll keep the database you've created so that you can build on it throughout the rest of this book.
 
 You'll develop a real case through the following phases:
@@ -280,7 +279,6 @@ Now create a new product:
 	#. The  *Product Type* field should stay as \ ``Stockable Product``\   its default value. The fields  *Procure Method*   *Default UOM* and  *Purchase UOM* should also stay at their default values: in fact every other field remains untouched.
 
                 .. image::  images/product.png
-               	   :align: center
                	   :scale: 95
                 
 
@@ -337,8 +335,8 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 	#. Then click on one of the buttons  *Create Monthly Periods* or  *Create 3 Months Periods* to create an appropriate set of periods for the fiscal year, as shown in the figure below.  *Save* this.
 
 
-	.. image::  images/def_fiscal_year_tab.png
-	   :align: center
+.. image::  images/def_fiscal_year_tab.png
+   :align: center
 
 *Defining a fiscal year and the accounting periods within it*
 
@@ -446,8 +444,8 @@ To check actual stock levels, use the menu  *Inventory Control > Location Struct
 Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \ ``Locations``\   text itself), and then click the  *Print*  button to the top right of the form to test the available different reports (such as  *Lots by Location* ). You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \ ``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
 
 
-	.. image::  images/lots_by_location_pdf.png
-	   :align: center
+.. image::  images/lots_by_location_pdf.png
+   :align: center
 
 *List of products and their stock levels*
 
@@ -588,8 +586,8 @@ Registering an invoice payment by a customer is essentially the same as the proc
 	#. Select the  *Journal* \ ``Bank Journal``\  and click  *Pay Invoice*  The invoice is then marked as paid, and you're returned to the  *Main Menu* 
 
 
-	.. image::  images/familiarization_invoice.png
-	   :align: center
+.. image::  images/familiarization_invoice.png
+   :align: center
 
 *A screen showing the invoice to be paid*
 
