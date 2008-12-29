@@ -4,9 +4,7 @@ A School Management Application
 
 The School Management Module
 ============================================
-
-Explain the whole book follows a business case: school management module.
-
+In Previous chapters we have seen that, how its easy to setting up the development environment with windows, linux, and mac operating system. Now we start with first step to the development, for that School Management module is one of the easy and good example that we can take during this developer's book. we will cover objects, views and workflow in this chapter for the school management module. will mainly focus on the objects like Student, Subject, Schedule, etc..
 
 Describe the goal of the school management module
 Describe what will be done in which chapters to build to full application
