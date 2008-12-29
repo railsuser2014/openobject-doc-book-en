@@ -2,6 +2,9 @@
 First steps with Open ERP
 ---------------------------
 
+.. index::
+   single: First steps with Open ERP
+.. 
 
  *Open ERP is an impressive software system, being simple to use and yet providing great advantages in helping you manage your company. It's easy to install under Windows and under Linux compared with other enterprise-scale systems, and offers unmatched functionality.* 
 
