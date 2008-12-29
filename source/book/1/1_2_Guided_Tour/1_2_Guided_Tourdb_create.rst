@@ -1,13 +1,17 @@
+Database creation
+===================
 
+Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This database will contain the demonstration data provided with Open ERP and a large proportion of the core Open ERP functionality. You'll need to know your super administrator password for this – or you'll have to find somebody who does have it to create this seed database.
 
-General Accounting
-###################
+Start the database creation process from the  *Database Administration*  page by clicking  *Create*  and then completing the following fields on the  *Create Database*  form:
 
- *When it's well integrated with the management system, an accounting system offers a company special benefits in addition to the obvious abilities it should have to report on the financial position. This part deals with the practical aspects of accounting, and accounting's role throughout the whole company.* 
+*  *Super administrator password* , by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
 
- *Open ERP's accounting modules enable you not only to manage your operations clearly, following the workflow through from invoicing to payment, but also to use various tools for financial analysis based on both real-time data and recent history depending on the analysis.* 
+*  *New database name* : \ ``openerp_ch02``\  .
 
- *Your accounting structure can be completely configured, from A to Z, to match the needs of your company very closely.* 
+*  *Load Demonstration Data*  checkbox: \ ``checked``\  .
+
+*  *Default Language* : \ ``English``\  .
 
 
 
