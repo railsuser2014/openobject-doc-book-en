@@ -169,18 +169,15 @@ The first configuration step is to create a directory structure that will be use
 
 In addition to the usual access to documents through Open ERP, you will be able to connect to them directly through the filesystem using the FTP protocol. To connect to the FTP server, use the following address:
 
-Parameter
-Value
-Server
-Your Open ERP server, for example 127.0.0.1
-Port
-8021
-Path
-The '/' character, for the root
-User
-Your user account in Open ERP
-Password
-Your Open ERP password
+========= ===========================================
+Parameter Value
+========= ===========================================
+Server    Your Open ERP server, for example 127.0.0.1
+Port      8021
+Path      The '/' character, for the root
+User      Your user account in Open ERP
+Password  Your Open ERP password
+========= ===========================================
 
 .. tip::   **Note**  *FTP server* 
 
@@ -349,23 +346,23 @@ But if you don't know where a specific document can be found, Open ERP also has 
 
 You can search for a file using various different criteria:
 
-The filename,
+* The filename,
 
-The owner of a file,
+* The owner of a file,
 
-The title of the resource that the file is attached to,
+* The title of the resource that the file is attached to,
 
-The partner that the document is about,
+* The partner that the document is about,
 
-The directory that it's found in,
+* The directory that it's found in,
 
-Its creation and modification dates.
+* Its creation and modification dates.
 
 Notice here an important advantage for an integrated document management system. Information such as which partner is associated with a document is automatically detected by Open ERP when the document has been stored in a directory. This information is never input by the user – it's detected automatically using the information about the resource when it's being saved as a file.
 
 But your search isn't limited to these few fields. You can also search on the content in the files. Each file is automatically indexed by the system to give you a search engine rather like Google's on the whole set of company documents.
 
-.. tip::   **Notee**  *Supported file formats* 
+.. tip::   **Note**  *Supported file formats* 
 
     The Open ERP document management system can index the following file formats:
 
