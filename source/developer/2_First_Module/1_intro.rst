@@ -4,9 +4,10 @@ A School Management Application
 
 The School Management Module
 ============================================
-In Previous chapters we have seen that, how its easy to setting up the development environment with windows, linux, and mac operating system. Now we start with first step to the development, for that School Management module is one of the easy and good example that we can take during this developer's book. we will cover objects, views and workflow in this chapter for the school management module. will mainly focus on the objects like Student, Subject, Schedule, etc..
+In Previous chapters we have seen that, how its easy to setting up the development environment with windows, linux, and mac operating system. Now we start with first step to the development of OpenERP module, for that School Management module is one of the easy and good example that we will consider during developer's book. we will cover objects, views and workflow in this chapter for the school management module.
 
-Describe the goal of the school management module
+School Management module will helps Studens and Teachers to manage the Program Schedules,for that we will develope new Models like Class, Program, Student, Teacher, Events. We are going to manege Events of the Programs at school during the weeks that will help to Teacher to schedule the Programes easily. Sudents those who are belongs to the scheduled Program they will get information about the Scheduled program.
+
 Describe what will be done in which chapters to build to full application
 
 Development planning
