@@ -15,6 +15,10 @@ Open ERP Book
     1/index
     2/index
     3/index
+    4/index
+    5/index
+    8/index
+    9_Concl/9_Concl
 
 .. raw:: html
 
@@ -26,3 +30,8 @@ Open ERP Book
     1/index
     2/index
     3/index
+    4/index
+    5/index
+    8/index
+    9_Concl/9_Concl
+    
