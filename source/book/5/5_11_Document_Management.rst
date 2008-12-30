@@ -1,35 +1,29 @@
 
-The Management of Services
-###########################
-
+Integrated Document Management
+###############################
 
 Summary
 
-* Management of prices
+* Introduction to Document Management
 
-* Management of contracts
+* Installation and initial guide
 
-* Invoicing processes
+* FTP access
 
-* Enterprise planning
-
-* Expense reimbursements
+* Integration with Open ERP
 
 Keywords
 
-* pricelist
+* Attachments
 
-* contract
+* Documents
 
-* employee
+* Indexation
 
-* invoicing
+*Information management has become a major strategic factor in companies' development. It's important to get the right information circulated to the right people as efficiently as possible yet still keep it secure. Documentation management provides a way for companies to organize their information, in all its forms, in one place.*
 
-* planning
+The objectives of document management include easier archiving, access, and reference, intelligent classification, and distribution of documents and the information they contain. It concerns sets of all sorts of company documents such as work procedures, meeting reports, documents received from customers and suppliers, documents sent to customers, faxes, sales presentations, and product datasheets.
 
-* expense receipts
-
- *This chapter focuses on the management of contracts, and the services associated with that. The complete process of managing services is studied here: from defining prices and contracts to automatically invoicing the services, through planning and the treatment of additional costs such as expense receipts.* 
 
 
 .. Copyright © Open Object Press. All rights reserved.
