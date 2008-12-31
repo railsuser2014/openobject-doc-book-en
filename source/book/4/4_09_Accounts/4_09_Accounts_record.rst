@@ -51,7 +51,7 @@ To visualize the general entries following these different actions you can use o
 
 	#. To see all of the entries:  *Financial Management > Entries > Analytic Entries > Analytic Entries* 
 
-	#. To see the entries per account, click the  *Analytic Account * ield of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
+	#. To see the entries per account, click the  *Analytic Account* field of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
 
 	#. To see all of the entries by Journal:  *Financial Management > Entries > Analytic Entries > Entries by journal*  and then click on one of the journal names.
 

@@ -9,7 +9,7 @@ So it's possible to create templates for a number of needs, such as proposals, b
 Installing the Word plugin
 ---------------------------
 
-The module for connecting Microsoft Word is also found in the list of Open ERP modules at . Once it's been downloaded install the file \ ``tiny_word_plugin-X.exe``\  .
+The module for connecting Microsoft Word is also found in the list of Open ERP modules at http://openerp.com. Once it's been downloaded install the file \ ``tiny_word_plugin-X.exe``\  .
 
 When the program is installed, you must run Microsoft Word and configure the parameters that will enable you to access the Open ERP server from Word. Click the menu  *Tools > Tiny ERP options* .
 

@@ -49,7 +49,7 @@ It's then possible to indicate both an analytic journal and a linked product to 
 
 Then type in the following information about the employee's working contract:
 
-*  * per week* 
+*  *per week* 
 
 *  *Number of holidays* 
 

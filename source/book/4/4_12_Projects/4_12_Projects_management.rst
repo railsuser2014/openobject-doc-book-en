@@ -152,7 +152,7 @@ You can also change some of the order parameters, which affects the invoice:
 
 *  *Shipping Policy* : \ ``Payment before delivery``\   or \ ``Invoice automatically after delivery``\   (at the closure of the task),
 
-*  *Invoice On: * \ ``Ordered Quantities``\   or \ ``Delivered quantities``\   (effective hours in the task).
+*  *Invoice On:* \ ``Ordered Quantities``\   or \ ``Delivered quantities``\   (effective hours in the task).
 
 Planning and managing priorities
 ---------------------------------
@@ -206,16 +206,16 @@ To delegate a task to another user you can just change the person responsible fo
 
 *Form for delegating a task to another user*
 
-Instead, you can use the button  *Delegate*  on a task from version 4.3.x of Open ERP.
 
- *Delegate* \ ``Pending``\  
+Instead, you can use the button *Delegate* on a task from version 4.3.x of Open ERP.
 
-\ ``Pending``\  \ ``Open``\  
+Clicking *Delegate* creates a new task for the user you specify. Your own task moves into the \ ``Pending``\   state and is modified to reflect the changed requirement to approve the work when it's been completed.
+
+When the user who was assigned this new task closes it, your own task, which consists now of approving the work done, passes from the state \ ``Pending``\ to the state \ ``Open``\. This task (of approving the work you delegated) then appears in your task list along with all the other tasks you're working on.
 
 The system enables you to modify tasks at all levels in the chain of delegation, to add additional information. A task can therefore start as a global objective and become more detailed as it is delegated down in the hierarchy.
 
 The second tab on the task form gives you a complete history of the chain of delegation for each task. You can find a link to the parent task there, and the different tasks that have been delegated.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

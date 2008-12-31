@@ -50,7 +50,7 @@ The main account fields are:
 
 *  *Active* : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
-*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu:  *Financial Management > Configuration > *  *Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\ ,  \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu:  *Financial Management > Configuration >*  *Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
 .. tip::   **Comment**  *Type of account* 
 

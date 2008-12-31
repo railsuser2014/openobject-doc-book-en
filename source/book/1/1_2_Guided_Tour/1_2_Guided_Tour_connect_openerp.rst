@@ -150,7 +150,7 @@ Look at the request and its history, then close it.
 
 	#. Click on the  *History* tab in the  *Request* form to see the original request and all of the responses. By clicking on each line you could get more information on each element.
 
-	#. Return to the first tab,  *Request* and click End of * Request* o set it to \ ``closed``\   This then appears greyed out.
+	#. Return to the first tab,  *Request* and click End of *Request* to set it to \ ``closed``\   This then appears greyed out.
 
 The request is no longer active. It's not visible to searches and won't appear in your list of waiting requests.
 
