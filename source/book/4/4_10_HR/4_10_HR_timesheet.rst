@@ -39,7 +39,7 @@ Employee configuration
 
 To be able to use the timesheets at all, you must first define those employees who are system users. The employee definition forms contain the information necessary to use that sheet, such as the job title, and hourly costs.
 
-Two fields will be of particular interest to you for managing timesheets: the  *Analytic Journal * and the  *Product* .
+Two fields will be of particular interest to you for managing timesheets: the  *Analytic Journal* and the  *Product* .
 
 In the analytic journal will be stored all the analytic entries about the costs of service times. These enable you to isolate the cost of service from other company costs such as the purchase of raw materials, expenses receipts and subcontracting. You can use different journals for each employee to separate costs by department or by function.
 

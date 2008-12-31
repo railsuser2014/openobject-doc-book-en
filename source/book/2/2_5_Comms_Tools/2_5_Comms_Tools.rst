@@ -39,7 +39,7 @@ The three following modules are described:
 
 * Microsoft Word interface.
 
-These three modules were developed by the Axelor company (, located in Paris) and are available through the official Open ERP site in the modules section.
+These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris) and are available through the official Open ERP site in the modules section.
 
 The chapter is a mix of installation and configuration instructions, and basic interaction exercises.
 

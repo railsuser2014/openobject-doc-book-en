@@ -82,7 +82,7 @@ Then you must indicate the  *Preferred date*  for payment:
 
 The date is particularly important for the preparation of electronic transfers because banking interfaces enable you to select a future execution date for each operation. So to configure your Open ERP most simply you can choose to pay all invoices automatically by their deadline.
 
-You must then select the invoices to pay. They can be manually entered in the field  *Payment Line*  but it's easier to add them automatically. For that, click  *Add payment *  *lines*  and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
+You must then select the invoices to pay. They can be manually entered in the field  *Payment Line*  but it's easier to add them automatically. For that, click  *Add payment lines*  and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
 
 * the invoice  *Effective date* ,
 

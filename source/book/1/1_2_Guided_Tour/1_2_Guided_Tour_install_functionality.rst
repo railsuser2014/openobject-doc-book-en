@@ -16,7 +16,7 @@ Click  *Administration > Modules Management > Update Modules List*  to start the
 
 	Your Open ERP installation must be configured with its addons directory as writable for you to be able to download anything at all. If it hasn't been, then you may need the assistance of a systems administrator to change your server's settings so that you can install new modules.
 
-Click  *Check New Modules*  to start the download from the specified locations. When it's complete you'll see a  *New Modules * window indicating how many new modules were downloaded and how many existing modules were updated. Click  *OK*  to return to the updated list. 
+Click  *Check New Modules*  to start the download from the specified locations. When it's complete you'll see a  *New Modules* window indicating how many new modules were downloaded and how many existing modules were updated. Click  *OK*  to return to the updated list. 
 
 It won't matter in this chapter if you can't download anything, but some of the later chapters refer to modules that aren't part of the core installation and have to be obtained from a remote repository.
 

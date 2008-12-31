@@ -10,7 +10,7 @@ Open ERP Book
     <div class="all-toctree">
 
 .. toctree::
-
+    
     0_Foreword/0_Foreword
     1/index
     2/index
@@ -25,6 +25,7 @@ Open ERP Book
     </div>
 
 .. toctree::
+    :maxdepth: 2
 
     0_Foreword/0_Foreword
     1/index

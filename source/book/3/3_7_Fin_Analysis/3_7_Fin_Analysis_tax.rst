@@ -141,7 +141,7 @@ When you've created a tax structure consisting of Tax Cases and Tax objects, you
 
 	To do this in Open ERP just install the account_tax_include module. Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. Prices are then displayed appropriately.
 
-You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners * to open and edit a Partner form for the charity, then:
+You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners* to open and edit a Partner form for the charity, then:
 
 * select the  *Properties*  tab,
 
@@ -260,7 +260,7 @@ This data is updated in real time. That's very useful because it enables you at 
 
 Furthermore, for your tax declaration you can click on one of the tax accounts to investigate the detailed entries that make up the full amount. This helps you search for errors such as when you've coded an invoice at full tax rate where it should be zero-rated for an inter-community trade or for a charity.
 
-In some countries, tax can be calculated on the basis of payments received rather than invoices sent. In this instance choose  *Base on * \ ``Payments``\   instead of  *Base on * \ ``Invoices``\   in the  *Select *  *period*  form. Even if you make your declaration on the basis of invoices sent and received it can be interesting to compare the two reports to see the amount of tax that you pay but haven't yet received from your customers.
+In some countries, tax can be calculated on the basis of payments received rather than invoices sent. In this instance choose  *Base on* \ ``Payments``\   instead of  *Base on* \ ``Invoices``\   in the  *Select period*  form. Even if you make your declaration on the basis of invoices sent and received it can be interesting to compare the two reports to see the amount of tax that you pay but haven't yet received from your customers.
 
 
 

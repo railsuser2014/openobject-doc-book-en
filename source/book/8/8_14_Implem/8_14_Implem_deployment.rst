@@ -34,7 +34,7 @@ The SaaS (Software as a Service) offer
 
 SaaS is a complete package hosted at a supplier, that includes the following services: server hardware, hosting of the generic solution, installation and initial configuration, redundancy of the architecture, backups, system maintenance and support.
 
-It's provided in the form of a monthly subscription with a fixed price per user. You can find the detail of available SaaS packages at .
+It's provided in the form of a monthly subscription with a fixed price per user. You can find the detail of available SaaS packages at http://ondemand.openerp.com/.
 
 SaaS packages don't permit you to develop specific modules to your needs. On the contrary, they offer a service at a set price based on standard software modules that contain few migration risks. SaaS suppliers are limited generally to the modules certified and validated by the original author and project manager, Tiny.
 

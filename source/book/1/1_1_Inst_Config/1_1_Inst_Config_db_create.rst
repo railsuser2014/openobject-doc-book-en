@@ -9,8 +9,6 @@ Before walking through an Open ERP business process step by step in the next ch
 To create new databases you must know the super-administrator password which defaults to admin on a new installation.
 
 
-	
-
         .. note :: The super-administrator password
 
 			Anyone who knows the super-administrator password has complete access to the data on the server – able to read, change and delete any of the data in any of the databases there.
