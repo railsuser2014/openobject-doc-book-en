@@ -15,3 +15,10 @@ Business Intelligence
     introduction/terminologies
     architecture/architecture
     openobject_module/openobject_module
+    installation/installation
+    MDXOverview/MDXOverview
+    MDXOverview/independence
+    MDXOverview/examples
+    config_interface/config_interface
+    config_interface/client_intro
+
