@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Timesheets
 ===========
@@ -568,4 +567,3 @@ Contracts and their rates, planning, and methods of invoicing are the object of 
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Statutory taxes and accounts
 =============================
@@ -584,4 +583,3 @@ In some countries, tax can be calculated on the basis of payments received rathe
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

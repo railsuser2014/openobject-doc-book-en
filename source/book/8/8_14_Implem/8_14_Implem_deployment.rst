@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Deployment
 ===========
@@ -374,4 +373,3 @@ You could also use the PostgreSQL database directly to backup and restore data o
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

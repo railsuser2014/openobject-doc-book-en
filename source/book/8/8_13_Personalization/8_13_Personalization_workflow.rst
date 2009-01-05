@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Configuring workflows
 =======================
@@ -140,4 +139,3 @@ Once the roles have been defined, you can add them into the workflow transitions
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE
