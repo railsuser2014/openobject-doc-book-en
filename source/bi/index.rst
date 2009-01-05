@@ -12,4 +12,6 @@ Business Intelligence
     introduction/introduction
     introduction/goals
     introduction/olap
-
+    introduction/terminologies
+    architecture/architecture
+    openobject_module/openobject_module
