@@ -14,3 +14,5 @@ Developer Book
    3_Model_View_Controler/2_view
    3_Model_View_Controler/3_logic
    4_Reporting/index
+   5_Workflow/index
+   6_Wizard/index       

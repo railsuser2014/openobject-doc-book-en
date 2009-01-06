@@ -1,7 +1,6 @@
-
-===============================
+=================================
 Creation of Reports (The Reports)
-===============================
+=================================
 
 Introduction
 ============
@@ -49,8 +48,14 @@ Expressions
 Custom Parser
 -------------
 
+.. tip::   **Important**  *Print Multiple Copies of Report.*
+
 Tiny API in Reports - Functions
 -------------------------------
+
+XML-XSLT Report
+---------------
+
 
 Improvement of school management module
 =======================================
