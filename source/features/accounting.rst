@@ -9,7 +9,8 @@ automatic invoicing, analytic controls, financial indicators, statements
 management, etc.
 
 .. raw:: html
-    <a target="_blank" href="images/accouting_screenshot.png"><img src="images/accouting_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+    <a target="_blank" href="images/accounting_screenshot.png"><img src="images/accounting_screenshot.png" width="430" height="250" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -29,6 +30,8 @@ Integration Benefits:
 
 Links:
 
-* .. raw:: html
+* 
+.. raw:: html
+    
     <a target="_blank" href="http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=accounting_en">Demonstration</a>
 * Module: accounting
