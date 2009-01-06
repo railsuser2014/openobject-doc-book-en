@@ -1,3 +1,5 @@
+.. _terminologies-link:
+
 Terminologies
 =============
 

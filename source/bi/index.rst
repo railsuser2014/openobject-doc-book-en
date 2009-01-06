@@ -4,10 +4,48 @@
 Business Intelligence
 =====================
 
-... to be completed ...
+.. raw:: html
+
+    <div class="all-toctree">
+
+.. toctree::
+    
+    introduction/introduction
+    introduction/goals
+    introduction/olap
+    introduction/terminologies
+    architecture/architecture
+    openobject_module/openobject_module
+    installation/installation
+    MDXOverview/MDXOverview
+    MDXOverview/independence
+    MDXOverview/examples
+    config_interface/config_interface
+    config_interface/client_intro
+    config_interface/connect_db
+    config_interface/write_schema
+    CubeXML/CubeXML
+    CubeXML/CubeXMLIntro
+    CubeXML/CubeXMLExample
+    CubeCli/CubeCliIntro
+    CubeCli/CubeCliTests
+    CubeCli/CubeCliExample
+    CubeCli/CubeCliXMLRPC
+    CubeBrowser/CubeBrowser
+    CubeBrowser/CubeBrowserSelect
+    CubeBrowser/CubeBrowserDaD
+    CubeBrowser/CubeBrowserSwap
+    CubeBrowser/CubeBrowserSlicer
+    CubeBrowser/CubeBrowserDrill
+    CubeDesigner/CubeDesigner
+
+.. raw:: html
+
+    </div>
 
 
 .. toctree::
+    :maxdepth: 2
 
     introduction/introduction
     introduction/goals
@@ -21,4 +59,21 @@ Business Intelligence
     MDXOverview/examples
     config_interface/config_interface
     config_interface/client_intro
+    config_interface/connect_db
+    config_interface/write_schema
+    CubeXML/CubeXML
+    CubeXML/CubeXMLIntro
+    CubeXML/CubeXMLExample
+    CubeCli/CubeCliIntro
+    CubeCli/CubeCliTests
+    CubeCli/CubeCliExample
+    CubeCli/CubeCliXMLRPC
+    CubeBrowser/CubeBrowser
+    CubeBrowser/CubeBrowserSelect
+    CubeBrowser/CubeBrowserDaD
+    CubeBrowser/CubeBrowserSwap
+    CubeBrowser/CubeBrowserSlicer
+    CubeBrowser/CubeBrowserDrill
+    CubeDesigner/CubeDesigner
+    
 
