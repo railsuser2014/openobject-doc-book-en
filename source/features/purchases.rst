@@ -1,6 +1,5 @@
-
 Purchases
----------
+=========
 
 Purchase management enables you to track your suppliers' price quotations and
 convert them into Purchase Orders as you require. Open ERP has several methods
@@ -14,13 +13,24 @@ Open ERP's replenishment management rules enable the system to generate draft
 purchase orders automatically, or you can configure it to run a lean process
 driven entirely by current production needs.
 
-*Keypoints:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/purchase_screenshot.png"><img src="images/purchase_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Keypoints:
+----------
 
 * Purchase tender management,
 * Integrates best practices: MTS / MTO, JIT, MPS, Kanban,
 * Invoices, delivered products and services control.
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 * Automatic procurement propositions based on different logistics,
 * Perfectly integrated with accounting, stock, manufacturing and project management.
+
+Links:
+------
+
+* Module: purchase

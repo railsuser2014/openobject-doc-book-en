@@ -21,6 +21,7 @@ Integration Benefits:
 * Integration 2
 
 Links:
+------
 
 *
   .. raw:: html
