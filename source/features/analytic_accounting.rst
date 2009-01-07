@@ -26,6 +26,7 @@ Integration Benefits:
 ---------------------
 
 Fully integrated to all modules of Open ERP, here are the main onces:
+
 * Timesheets or tasks are analytic costs on projects,
 * Manufacturing operation reports costs on cost centers,
 * Sales, purchases and invoices are also costs on analytic accounts,

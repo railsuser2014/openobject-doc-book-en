@@ -1,6 +1,5 @@
-
 Dynamic Graphs
---------------
+==============
 
 Open ERP provides beautifull and graphic reports to provide the right
 information to the user according to the context.  All graphs and dashboards in
@@ -11,21 +10,26 @@ With Open ERP, powerfull reporting are not only dedicated to managers, but
 to any user of the system. Uses the 200+ reports to satisfy every employee
 need and improve their performance by providing them the right information.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/dynamic_graphs_screenshot.png"><img src="images/dynamic_graphs_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * 6 Views on all objects: list, form, graph, calendar, gantt, process
 * A good ergonomy, fully Ajax, clickable and drag and drop enabled,
 * All graphs are fully customizable using the view designer.
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 All Open ERP document may be seen as a graph, gantt, process or calendar view.
 Here are a few examples: manage manufacturing chains with gantt, calendar of
 consolidated CRM events, customized dashboard for managers, planning of
 deliveries, etc.
 
-*Screenshot:*
+Links
 
-. Type of screenshot
-   -> Comment
+* Modules: 
 

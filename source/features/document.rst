@@ -1,6 +1,5 @@
-
 Document Management System
---------------------------
+==========================
 
 The document management system allows you to store, classify, and search your
 enterprise's documents. This module provides an FTP access to all your ERP's
@@ -8,17 +7,27 @@ ressources.  For a dynamic and efficient classification, the folders structure
 is provided by others objects.  It is very usefull to track documents related
 to projects, products, sales, contracts, etc.
 
-*Keypoints*
+.. raw:: html
+ 
+ <a target="_blank" href="images/document_screenshot.png"><img src="images/document_screenshot.png" width="430" height="250" class="screenshot" /></a>
 
-* FTP Access for autheticated users,
+Keypoints:
+----------
+
+* FTP Access for authenticated users,
 * Automatic indexation of PDF, DOC, ODT, SXW, TXT.
 * Virtual files and folders to automate any kind of document generation
 
-*Integration Benefits*
+Integration Benefits:
+---------------------
 
 * Stores automatically ERP reports
 * Automatic classification of ressources
 * Shared access rights for DMS and ERP
 * Store emails with outlook Plugin
 
+Links:
+------
+
+* Module:
 

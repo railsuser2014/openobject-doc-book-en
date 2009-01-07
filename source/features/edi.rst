@@ -1,6 +1,5 @@
-
 EDI
----
+===
 
 The Open Object framework provides lots of tools to help you synchronise your
 databases or import new data in Open ERP. Tools dedicated to some software
@@ -10,18 +9,27 @@ orders and deliveries with you suppliers and customers.
 It is used to synchronise Open ERP with SAP in distributions and food industries
 comapnies.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/edi_screenshot.png"><img src="images/edi_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * Operationnal in a few clicks
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 On module to synchronise different documents:
 
 * Sales orders, purchases, deliveries, etc.
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://www.openobject.com">Open Object</a>
 
