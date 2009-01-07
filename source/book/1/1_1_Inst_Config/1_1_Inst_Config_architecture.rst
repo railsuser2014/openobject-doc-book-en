@@ -1,3 +1,6 @@
+.. index::
+   single: Open ERP architecture
+.. 
 
 The architecture of Open ERP
 """""""""""""""""""""""""""""
@@ -46,9 +49,12 @@ An Open ERP system is formed by three main components:
 
 	At present, the web component is known as “eTiny”. Although it's possible that this application's name will change in the coming months to match the renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
 
+
+.. index::
+   single: PostgreSQL
+.. 
+
 .. tip::   **Program**  *PostgreSQL* 
-
-
 
 	PostgreSQL is a relational and object database management system.
 
