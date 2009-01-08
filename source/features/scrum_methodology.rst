@@ -1,6 +1,5 @@
-
 Scrum Methodology
------------------
+=================
 
 This modules implements all concepts defined by the scrum project management
 methodology for IT companies: projects with sprints, product owner, scrum
@@ -12,18 +11,29 @@ evaluation of works, customers interaction, etc. It provides interresting
 reports like the burndown chart. The scrum methodology is used by Microsoft
 and Google to manages all their new products.
 
+.. raw:: html
+ 
+ <a target="_blank" href="images/scrum_methodology_screenshot.png"><img src="images/scrum_methodology_screenshot.png" width="430" height="250" class="screenshot" /></a>
 
-*Key Points:*
+
+Key Points:
+-----------
 
 * All scrum concepts implemented
 * Helps you to keep into control of your development project
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 * Integrated with project management to manage scrum and non-scrum projects at a central place
 * Integrated with gantt and calendars views
 
-*Screenshot:*
+Links:
+------
 
-* http://controlchaos.com
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://http://controlchaos.com">Website</a>
+* Module:
 

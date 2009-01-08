@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Managing Human Resources
 =========================
@@ -286,4 +285,3 @@ The last report, about managing changes, can show you whether an employee has en
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

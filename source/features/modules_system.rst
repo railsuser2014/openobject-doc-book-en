@@ -1,6 +1,5 @@
-
 Module System
--------------
+=============
 
 Open ERP (and the Open Object framework) is probably the most advanced and
 flexible framework in the world. All features of Open ERP are packaged as
@@ -14,14 +13,19 @@ report designer, BI reports, customizable actions, etc. All customisations
 made on the server can be saved as a module to easily deploy, redistribute and
 share.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/module_system_screenshot.png"><img src="images/module_system_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * Integrated ORM, Workflow Engine, BPM, BI, 
 * Model View Control with lots of available views
 * A very fast engine.
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
+* <a href="http://openobject.com">List of modules</a>
 

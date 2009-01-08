@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Analytic records
 =================
@@ -230,4 +229,3 @@ For example
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

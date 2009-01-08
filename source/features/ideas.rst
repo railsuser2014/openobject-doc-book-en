@@ -1,25 +1,29 @@
-
 Ideas Box
----------
+=========
 
 Sometimes the smallest modules are the most usefull ones. The "ideas" module
 has been developped in 3 hours. It allows employees to propose ideas, sorted in
 different boxes or subjects. Then, people can rate the proposed ideas and
 discuss on the different points.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/ideas_screenshot.png"><img src="images/ideas_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * Very simple module to track employees' ideas,
 * A workflow allows to track ideas efficiently,
 * A discussion system on ideas,
 * A rating system.
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 * Integrated with the wiki to easily describe ideas
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
-
+* Module: ideas

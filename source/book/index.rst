@@ -1,6 +1,11 @@
 
 .. _books-link:
 
+.. index::
+   single: Open ERP Book
+.. 
+
+
 
 Open ERP Book
 =============

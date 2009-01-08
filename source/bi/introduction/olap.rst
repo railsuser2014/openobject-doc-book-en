@@ -1,3 +1,5 @@
+.. _olap-link:
+
 What is OLAP ?
 ==============
 

@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 Chart of Accounts
 ===================
@@ -294,4 +293,3 @@ Finally you can also make virtual charts of accounts from other virtual charts. 
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE

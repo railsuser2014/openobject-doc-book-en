@@ -1,6 +1,6 @@
 
 Assets Management
------------------
+=================
 
 For businesses from foundries to pharmaceuticals, tracking a complex fixed
 asset inventory becomes really easy with Open ERP. Having a good fixed asset
@@ -10,18 +10,25 @@ overpayment, regulatory non-compliance, and inefficiency.
 Manages your assets easily with Open ERP. This module is fully integrated
 to the financial and analytic accounting modules for a maximum of power.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/asset_management_screenshot.png"><img src="images/asset_management_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+
+Key Points:
+-----------
 
 * Different methods of costing,
 * IFRS compliant,
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 * Fully integrated to the financial an analytic accouting modules
 * Track changes on asset from any document in Open ERP
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
+* Modules: asset_management
 

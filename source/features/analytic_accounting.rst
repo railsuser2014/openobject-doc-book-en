@@ -1,6 +1,5 @@
-
 Analytic Accounting
--------------------
+===================
 
 The analytic accounting is the core of all management modules of Open ERP.  It
 integrates perfectly with all operations that have a (direct or indirect) cost
@@ -12,22 +11,28 @@ your company:
 * Planning are integrated with budgets,
 * Project management is integrated to contract or affairs managmeent, etc.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/analytic_account_screenshot.png"><img src="images/analytic_account_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * Work with one or multiple analytic plans,
 * About 40+ modules available to integrate best management practices,
 * Nearly all transactions are automated to simplify encodings, etc.
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 Fully integrated to all modules of Open ERP, here are the main onces:
+
 * Timesheets or tasks are analytic costs on projects,
 * Manufacturing operation reports costs on cost centers,
 * Sales, purchases and invoices are also costs on analytic accounts,
 * Holidays, expenses tracking, etc.
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
-
+* Module: Analytic_account

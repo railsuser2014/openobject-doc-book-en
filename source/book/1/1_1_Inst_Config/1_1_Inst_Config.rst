@@ -1,4 +1,6 @@
-
+.. index::
+   single: Installing Open ERP
+.. 
 
 Installation and Configuration
 +++++++++++++++++++++++++++++++

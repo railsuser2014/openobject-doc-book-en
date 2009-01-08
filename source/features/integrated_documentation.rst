@@ -1,6 +1,5 @@
-
 Integrated Documentations
--------------------------
+=========================
 
 Open ERP is the most documented enterprise management software in the world.
 Our books are Amazon best-sellers for all computer software categories and
@@ -12,17 +11,22 @@ All these documentation are provided online and linked to any screen of the
 software so that it will help all your users to work efficiently with the
 software.
 
-*Key Points:*
+.. raw:: html
+ 
+ <a target="_blank" href="images/integrated_documentation_screenshot.png"><img src="images/integrated_documentation_screenshot.png" width="430" height="250" class="screenshot" /></a>
+
+Key Points:
+-----------
 
 * Books are integrated in Open ERP for contextual help
 * Documentations for users, integrator, developpers and the community
 
-*Integration Benefits:*
+Integration Benefits:
+---------------------
 
 * Covers main modules of Open ERP and how they fit together
 
-*Screenshot:*
+Links:
+------
 
-. Type of screenshot
-   -> Comment
-
+* Module
