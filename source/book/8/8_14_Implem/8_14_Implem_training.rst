@@ -1,4 +1,3 @@
-<<<<<<< TREE
 
 User training
 ===============
@@ -92,4 +91,4 @@ In summary, you should arrange both user training and self-paced training (perha
 
 .. Published by Open ERP Press, Grand Rosière, Belgium
 
->>>>>>> MERGE-SOURCE
+

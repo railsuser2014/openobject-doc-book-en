@@ -1,5 +1,5 @@
 .. index::
-   single: Installing Open ERP
+   single: Open ERP Configuration
 .. 
 
 Installation and Configuration
