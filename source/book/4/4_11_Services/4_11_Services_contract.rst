@@ -1,3 +1,6 @@
+.. index::
+   single: Service Contracts
+.. 
 
 Managing Service Contracts
 ===========================
@@ -83,6 +86,10 @@ An analytic account is created for each new contract. The following fields must 
 *  *Invoicing* 
 
 The selection of an invoicing rate is an indirect way of specifying that the project will be invoiced on the basis of analytic costs. This can take different forms, such as delivery of services, purchase of raw materials, and expense reimbursements.
+
+.. index::
+   single: Pricelists
+.. 
 
 .. tip::   **Advice**  *Pricelists and billing rates* 
 

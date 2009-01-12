@@ -1,4 +1,8 @@
 
+.. index::
+   single: Payments Order
+.. 
+
 Management of payments
 =======================
 

@@ -1,3 +1,6 @@
+.. index::
+  single: Financial Analysis
+..
 
 Company Financial Analysis
 ===========================
@@ -78,6 +81,10 @@ where:
 * \ ``IND``\   represents the code of another indicator.
 
 So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / balance('1')``\   – that's the balance in accounts 4 and 5 divided by the balance in account 1.
+
+.. index::
+  single: Budgeting
+..
 
 Good management budgeting
 ---------------------------

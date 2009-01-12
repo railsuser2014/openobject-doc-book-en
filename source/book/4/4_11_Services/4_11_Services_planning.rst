@@ -1,3 +1,6 @@
+.. index::
+   single: Planning
+.. 
 
 Planning that improves leadership
 ===================================
@@ -78,6 +81,10 @@ In this time-focused planning approach, clients' priorities don't figure in the 
 			* A delay in the delivery of several of the functions won't necessarily affect either monthly invoicing or project planning.
 
 			Being able to separate human resource planning from task prioritization simplifies your management of complex issues, such as adjusting for employee holidays or handling the constantly changing priorities within projects.
+			
+.. index::
+   single: Planning; Create Plan
+.. 
 
 Creating plans
 ---------------

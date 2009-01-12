@@ -1,3 +1,6 @@
+.. index::
+   single: Microsoft Outlook interface
+.. 
 
 Microsoft Outlook interface
 =============================

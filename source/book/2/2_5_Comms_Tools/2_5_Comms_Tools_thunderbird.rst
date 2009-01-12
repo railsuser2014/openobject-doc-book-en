@@ -1,3 +1,7 @@
+.. index::
+   single: Mozilla Thunderbird interface
+.. 
+
 Mozilla Thunderbird interface
 ===============================
 

@@ -1,5 +1,4 @@
-
-Database setup
+ setup
 ===============
 
 You'll create all the elements in the database that you need to carry out the use case. These are specified in the functional requirements.
@@ -12,8 +11,6 @@ Start to personalize your database by renaming the  *Main Company*  from its def
 To do this, click  *Partners > Partners*  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
 
 .. tip::   **Web client**  *Editable form* 
-
-
 
 	When toggling from the list view to the form view of an item, you can generally click its name in the list view to show a non-editable view or the pencil icon along the right-hand end of the line to open it in an editable view. You can toggle between editable and non-editable once you're in form view.
 
@@ -196,6 +193,10 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 
 
 Click  *Financial Management > Charts > Charts of Accounts*  and then click  *Open Charts*  on the  *Fiscal Year*  that you've just created to see a hierarchical structure of the accounts. You can click on the expand/collapse icon of the top tree node to show the detail of this minimal chart.
+
+.. index::
+   single: Database; Backup
+.. 
 
 Make a backup of the database
 -------------------------------

@@ -47,12 +47,22 @@ Three menus are available on the left:
 
 * Administration.
 
+
+.. index::
+   single: Preferences
+..
+
+
 Preferences toolbar
 ---------------------
 
 When you're connected to Open ERP the Preferences toolbar indicates which user you're connected as. So it should currently be showing  *Welcome Administrator*  (unless you logged in as another user and it's reflecting the name of that user instead).
 
 You'll find a link to the  *Home*  page to its right. This takes you to either the dashboard or the available menus, depending on the user configuration. In the case of the \ ``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the system is presented with a dashboard that's designed to show performance indicators and urgent documents that are most useful to someone of the user's position in the company. You'll see how to assign dashboards to different users in Chapter 13.
+
+.. index::
+   single: TimeZone
+..
 
 .. tip::   **Note**  *Multi-nationals and time zones* 
 
@@ -71,6 +81,11 @@ The  *About*  link gives information about the development of the Open ERP soft
 The  *Logout*  link enables you to logout and return to the original login page. You can then login to another database, or to the same database as another user. This page also gives you access to the super-administrator functions for managing databases on this server.
 
 The  *Requests*  link sits just below this toolbar. It is only visible if you're logged into a database. If your database is new it will say \ ``No request``\  . You can click on that link to look at requests that have been sent to you at any time.
+
+
+.. index::
+   single: Language Installation
+..
 
 Installing a new language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -96,6 +111,11 @@ To see the effects of this installation change the preferences of your user to c
 .. tip::   **More information**  *Navigating the menu* 
 
 	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll simply get “use menu Administration > Translations > Load New Language”.
+
+
+.. index::
+  single: Internal Requests
+..
 
 Requests as a mechanism for internal communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -158,6 +178,10 @@ The request is no longer active. It's not visible to searches and won't appear i
 
 	You can send a request with a future date. This request won't appear in the recipient's waiting list until the indicated date. This mechanism is very useful for setting up alerts before an important event. 
 
+.. index::
+  single: User Configuration
+..
+
 Configuring Users
 -------------------
 
@@ -182,6 +206,12 @@ You can create some new users to integrate them into the system. Assign them to 
 .. tip::   *Note* 
 
 	This is an area where future versions of Open ERP are changing: many groups are being predefined and access to many of the menus and objects will be keyed to these groups by default. This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
+
+
+.. index::
+  single: Partner; Managing Partners
+..
+
 
 Managing partners
 -------------------
@@ -208,6 +238,10 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
 
 *Partner form*
 
+
+.. index::
+  single: Partner; Categories
+..
 
 
 .. tip::   **Definition**  *Partner Categories* 

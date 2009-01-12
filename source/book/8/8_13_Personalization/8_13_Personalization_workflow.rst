@@ -1,3 +1,6 @@
+.. index::
+   single: Workflows
+.. 
 
 Configuring workflows
 =======================
@@ -30,6 +33,10 @@ You can also configure the workflows by adding new activities and transitions be
 .. tip::   **Technique**  *Defining workflows* 
 
 	Workflows are defined in files named MODULE_workflow.xml which can be found in the addons directory on the server. The definition just consists of a list of activities (nodes) and transitions (arrows).
+
+.. index::
+   single: Workflows; Roles
+.. 
 
 Assigning roles
 -----------------

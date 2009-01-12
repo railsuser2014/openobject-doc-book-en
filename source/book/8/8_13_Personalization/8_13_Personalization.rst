@@ -47,6 +47,10 @@ Users can each arrange their own welcome page and their own menu, and you can al
 
 And Open ERP's main menu can be entirely reorganized. The management of access rights lets you assign certain functions to specific system users. You can also assign roles, which define the part that each system user plays in the workflows that move system documents from state to state (such as the ability to approve employee expense requests).
 
+.. index::
+   single: Personalization
+.. 
+
 .. tip::   **Definition**  *Personalization* 
 
 	The word personalization is used in this book where you might expect to find customization. That's because customization refers to something that requires quite a bit of technical effort (such as creating specialized code modules) and creates a non-standard system. 

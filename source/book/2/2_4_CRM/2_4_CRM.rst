@@ -30,6 +30,10 @@ Keywords
 
  *It's often said that the customer is king. In the business world you'd ideally treat all your customers as royalty, at the center of attention. Open ERP's CRM module is designed to make this aim a reality, helping employees of the business understand their customers' needs better, and automating their communication efforts.* 
 
+.. index::
+   single: CRM & SRM
+.. 
+
 .. tip::   **Terminology**  *CRM & SRM* 
 
 	CRM is the abbreviation for Customer Relationship Management, and SRM is Supplier Relationship Management.

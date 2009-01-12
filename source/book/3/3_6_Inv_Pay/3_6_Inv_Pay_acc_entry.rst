@@ -1,3 +1,6 @@
+.. index::
+   single: Accounting; Entries
+.. 
 
 Accounting entries
 ===================
@@ -13,6 +16,10 @@ This section deals, in order, with
 * manual journal entries,
 
 You'll see here how to proceed with entering financial transactions. In Open ERP you use the same form for handling bank statements and for managing cash. The two types of transaction differ only in the journal that's used.
+
+.. index::
+   single: Bank statements
+.. 
 
 Managing bank statements
 -------------------------
@@ -80,6 +87,10 @@ The reconciliation operation is optional – you could very well do it later or 
 Finally, once you have entered the various lines of your bank statement you can validate it. Open ERP then automatically generates the corresponding accounting entries if the balance calculated equals the final balance indicated in the header. The reconciled invoices are marked as paid at that point.
 
 A user with advanced accounting skills can enter accounting entries directly into the bank journal. The resulting account is the same but the operation is more complex because you must know the accounts to use and must have mastered the ideas of credit and debit.
+
+.. index::
+   single: Cash Management
+.. 
 
 Cash Management
 -----------------

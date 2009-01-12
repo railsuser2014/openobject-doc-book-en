@@ -15,9 +15,11 @@ The two methods of access give very similar facilities, and you can use both on 
 
 Conversely you'd be better off with the application client (called the GTK client because of the technology it's built with) if you're using a local server (such as in the same building). In this case the GTK client will be more responsive, so more satisfying to use.
 
+..index::
+   single: Client
+..
+   
 .. tip::   **Usability**  *Web client and GTK client* 
-
-
 
 	The main functional difference between the two Open ERP clients is the presence of the calendar view in the web client, which doesn't exist in the GTK client at present (version 4.2.3). Apart from that you will find that there are small differences in their general usability.
 

@@ -1,3 +1,6 @@
+.. index::
+   single: Personalizing; Module
+.. 
 
 Creating a Configuration Module
 =================================

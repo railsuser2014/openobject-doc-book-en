@@ -1,4 +1,9 @@
 
+.. index::
+   single: Human Resources; Management
+   single: Employee
+.. 
+
 Managing Human Resources
 =========================
 
@@ -93,6 +98,11 @@ You can enter information about the employment contract for the employee there.
 *  *End Date* 
 
 *  *Wage*  *Wage Type*  *Monthly Gross*  *Weekly Net* 
+
+.. index::
+   single: Employee; Sign in and out
+.. 
+
 
 Sign in and out
 -----------------

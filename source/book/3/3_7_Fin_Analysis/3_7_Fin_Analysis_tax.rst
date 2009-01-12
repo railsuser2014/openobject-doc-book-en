@@ -20,6 +20,10 @@ This section deals with statutory taxes and accounts which are legally required 
 
 	You can, for example, install the report_intrastat module for intra-stat declarations about sending goods to and receiving goods from other countries.
 
+.. index::
+   single: Taxation
+.. 
+
 Taxation
 ---------
 
@@ -37,6 +41,10 @@ Since the detailed tax structure is a mechanism for carrying out governments' po
 
 The taxation mechanism can also be used to handle other tax-like financial transactions, such as royalties to authors based on the value of transactions through an account.
 
+.. index::
+   single: Taxes; Tax structure
+.. 
+
 Setting up a tax structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -48,11 +56,15 @@ Three main objects are involved in the tax system in Open ERP:
 
 * the  *General Accounts* , that record the taxes owing and paid. Since the general accounts are discussed elsewhere in this part of the book and are not tax-specific, they won't be detailed in this section.
 
-You can attach zero or more  *Supplier Tax* es and Customer taxes to products, so that you can account separately for purchase and sales taxes (or Input and Output VAT – where VAT is Value Added Tax). Because you can attach more than one tax, you can handle a VAT or Sales Tax separately from an Eco Tax on the same product.
+You can attach zero or more  *Supplier Taxes* and Customer taxes to products, so that you can account separately for purchase and sales taxes (or Input and Output VAT – where VAT is Value Added Tax). Because you can attach more than one tax, you can handle a VAT or Sales Tax separately from an Eco Tax on the same product.
 
 You can also attach a  *Default Tax*  to a partner, which replaces any taxes belonging to the same Tax Group that may have been defined in a Product. 
 
 So you can define a \ ``Tax Exempt``\   tax in the \ ``VAT``\   group and assign it to partners who declare themselves to be charities. All product sales to a charity would then be VAT free even if the products themselves carry various tax rates, but non-VAT taxes such as Eco-taxes can still be applied.
+
+.. index::
+   single: Taxes; Tax Cases
+.. 
 
 Tax Cases
 ^^^^^^^^^^^
@@ -82,6 +94,7 @@ You can also see two read-only fields:
 You will probably need to create two tax cases for each different tax rate that you have to define, one for the tax itself and one for the invoice amount that the tax is based on. And you'll create tax cases that you won't link to Tax objects (similar to General Account \ ``View``\   types) just to organize the tree structure.
 
 To view the structure that you've constructed you can use the menu  *Financial Management > Periodical Processing > Taxes* . This tree view reflects the structure of the Tax Cases and shows the current tax situation.
+
 
 Tax objects
 ^^^^^^^^^^^^^
@@ -186,6 +199,10 @@ Select the accounting period you're interested in and click  *Open Charts* , the
 
 At the moment of writing this book a new module is in the final stages of development for Open ERP – \ ``account_reporting``\  . It's being developed to enable the use of configurable reports for balance sheets or earnings statement in legally required formats.
 
+.. index::
+  single: Accounting; Journals
+..
+
 The accounting journals
 -------------------------
 
@@ -218,6 +235,10 @@ Then select one or several journals and click  *Print* . Open ERP then proposes
 	   :align: center
 
 *Printing a journal*
+
+.. index::
+  single: Taxes; Tax declaration
+..
 
 Tax declaration
 -----------------

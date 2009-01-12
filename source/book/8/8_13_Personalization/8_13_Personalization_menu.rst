@@ -1,9 +1,17 @@
+.. index::
+   single: Personalizing; Menu
+.. 
+
 Personalizing the menu
 =======================
 
 Open ERP's menu organization isn't subject to any restriction, so you can modify the whole structure, the terminology and all access rights to it to meet your specific needs in the best possible way. However, before you do all that and just as you would for any other customizable software, you should balance both the benefits you see in such changes and the costs, such as the need to train users, to maintain new documentation and to continue the alterations through subsequent versions of the software.
 
 This section describes how to proceed to change the structure of the menu and the welcome page, to personalize the terminology of the menus and forms in the user interface and for managing users' access rights to the menus and the various underlying business objects.
+
+.. index::
+   single: Change User Password
+.. 
 
 Letting users change their password themselves
 -----------------------------------------------
@@ -43,6 +51,11 @@ To move this duplicate entry, change the  *Parent Menu*  field by deleting what'
 	With the user_ldap module, user accounts can be managed through an LDAP directory common to various different company resources. 
 
 	Connection parameters for the LDAP directory are then registered with the company definition. You can provide a user profile template there from which new users are automatically created during their first connection to Open ERP.
+
+.. index::
+   single: LDAP
+.. 
+
 
 .. tip::   **Definition**  *LDAP* 
 
@@ -132,6 +145,11 @@ You can do this one of two ways:
            "Schumacher","Helen","Cook Chain"
 
 The same approach is used to translate terms that haven't been created yet. This can be useful, for example, with modules that haven't yet been translated into English or any other language that you want.
+
+.. index::
+   single: Translation
+.. 
+
 
 Translation through a CSV file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

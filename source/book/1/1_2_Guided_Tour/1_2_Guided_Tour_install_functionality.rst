@@ -1,9 +1,22 @@
+
+.. index::
+  single: Module; Install functionality
+..
+
+
 Installing new functionality
 =============================
 
 All of Open ERP's functionality is contained in its many and various modules. Many of these, the core modules, are automatically loaded during the initial installation of the system and can be updated online later. Although they're mostly not installed in your database at the outset, they're available on your computer for immediate installation. Additional modules can also be loaded online from the official Open ERP site http://openerp.com. These modules are inactive when they're loaded into the system, and can then be installed in a separate step. 
 
 You'll start by checking if there are any updates available online that apply to your initial installation. Then you'll install a CRM module to complete your existing database.
+
+
+.. index::
+  single: Module; Upgrade Modules list
+..
+
+
 
 Updating the Modules list
 ---------------------------
@@ -30,6 +43,11 @@ It won't matter in this chapter if you can't download anything, but some of the 
 
 	If you use the GTK client you can search, as you would with the web client, or use the + icon to the top left of the window to change the number of entries returned by the search from its default limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
 
+.. index::
+  single: Module; Install
+..
+
+
 Installing a module
 ---------------------
 
@@ -43,7 +61,6 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
 
 *Installation of the product module*
       
-
 
 .. tip::   **Technique**  *Technical Guide* 
 
@@ -74,6 +91,12 @@ When you return to the main menu you'll find the new customer relationship manag
 
 There is no particular relationship between the modules installed and the menus added. Most of the core modules add complete menus but some also add submenus to menus already in the system. Other modules add menus and submenus as they need. Modules can also add additional fields to existing forms, or simply additional demonstration data or some settings specific to a given requirement.
 
+
+.. index::
+  single: Module; Dependencies
+..
+
+
 .. tip::   **Technique**  *Dependencies between modules* 
 
 	The module form shows two tabs. The first tab gives basic information about the module and the second gives a list of modules that this module depends on. So when you install a module, Open ERP automatically selects all the necessary dependencies to install this module.
@@ -96,6 +119,10 @@ Installing additional functionality
 To discover the full range of Open ERP's possibilities you can install many additional modules. Installing them with their demonstration data provides a convenient way of exploring the whole core system. When you build on the \ ``openerp_ch02``\   database you'll automatically include demonstration data because you checked the  *Load Demonstration Data*  checkbox when you originally created the database.
 
 So click  *Administration > Modules Management > Update Modules List*  to upload and update to the latest versions of everything on the Open ERP site. If you don't have an internet connection, or if you're not permitted to modify your installation's \ ``addons``\   directory you can skip this step.
+
+.. index::
+  single: Module; Import 
+..
 
 .. tip::   **Attention**  *Importing new modules* 
 

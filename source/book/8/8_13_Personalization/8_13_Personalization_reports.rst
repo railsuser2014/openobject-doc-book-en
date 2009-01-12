@@ -1,3 +1,6 @@
+.. index::
+   single: Report
+.. 
 
 Configuring reports
 =====================
@@ -80,6 +83,10 @@ You can now  *Save*  the report you defined. Click on the  *Open Report*  button
 
 *Analyzing sales by partner and by product in graph view*
 
+.. index::
+   single: Personalizing; Dashboards
+.. 
+
 Personalizing the dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -148,10 +155,18 @@ To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip
 
 Start OpenOffice.org Writer, select  *Tools > Package Management...*  to open the Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it. Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny Report*  or  *Open ERP Report* .
 
+.. index::
+   single: Report; OpenOffice.org
+.. 
+
 Connecting OpenOffice.org to Open ERP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Select Tiny Report > Server parameters or Open ERP Report > Server parameters in the top menu of OpenOffice.org Writer. You can then enter your connection parameters to the Open ERP server. You must select a database \ ``demo_min``\   in which you've already installed the module \ ``sale``\  . A message appears if you've made a successful connection.
+
+.. index::
+   single: Report; Modify
+.. 
 
 Modifying a report
 ^^^^^^^^^^^^^^^^^^^
@@ -203,6 +218,10 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
  *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
 
 You can check the result in Open ERP using the menu  *Sales Management > Sales Orders > All Orders* .
+
+.. index::
+   single: Report; New
+.. 
 
 Creating a new report
 ^^^^^^^^^^^^^^^^^^^^^^^

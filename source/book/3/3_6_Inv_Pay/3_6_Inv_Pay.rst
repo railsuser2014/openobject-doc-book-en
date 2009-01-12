@@ -72,6 +72,10 @@ Open ERP's general accounting and analytic accounting handle these needs well b
 
 The accounting module in Open ERP covers general accounting, analytic accounting, and auxiliary and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
+.. index::
+   single: Accounting
+.. 
+
 .. tip::   **Terminology**  *Accounting* 
 
 	* General accounting (or financial accounting) is for identifying the assets and liabilities of the business. It's managed using double-entry accounting which ensures that each transaction is credited to one account and debited from another.
@@ -81,6 +85,10 @@ The accounting module in Open ERP covers general accounting, analytic accountin
 	* Auxiliary accounting reflects the accounts of customers and/or suppliers.
 
 	* Budgetary accounts predefine the expected allocation of resources, usually at the start of a financial year.
+
+.. index::
+   single: Accounting; Multi-company
+.. 
 
 .. tip::   **Method**  *Multi-company* 
 

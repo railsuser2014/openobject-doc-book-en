@@ -1,8 +1,15 @@
+.. index::
+   single: Case management
+.. 
 
 Case management
 =================
 
 The following sections describe the steps you might use to implement an effective customer relationship management policy. The policy is implemented by basing new types of case on the built-in Open ERP case handling system.
+
+.. index::
+   single: Case
+.. 
 
 .. tip::   **Definition**  *Case* 
 
@@ -22,6 +29,10 @@ Case management is a generic system that can be configured to your more precise 
 	#. A system for managing support contracts on two levels.
 
 	#. A system for managing supplier quality.
+
+.. index::
+   single: Case; Sections
+.. 
 
 Sections
 ^^^^^^^^^
@@ -49,6 +60,10 @@ Click the menu  *CRM & SRM > Cases > Cases by Section*  to get the sections in a
 .. tip::   **Note**  *Cases by Section – with data* 
 
 	Using database openerp_04X (which has a substantial amount of data in it), click the menu CRM & SRM > Cases > Cases by Section to get the sections in a hierarchical list, then click a section name, such as Helpdesk and Support, to list the cases that have been assigned to that section.
+	
+.. index::
+   single: Case; Categories
+.. 
 
 Categories
 ^^^^^^^^^^^
@@ -68,6 +83,9 @@ Once you've defined the different sections you can create Categories, which are 
    "Corrective Actions","Quality"
    "Preventative Actions","Quality"
 
+.. index::
+   single: Case; Menu
+.. 
 
 Menu
 ^^^^
@@ -113,6 +131,10 @@ Using cases
 -------------
 
 Although you've created special menu trees for each of the types of case you defined, you can continue using the generic case system reached through  *CRM & SRM > Cases* . The new case types are just versions of the generic case.
+
+.. index::
+   single: Case; transferability
+.. 
 
 .. tip::   **Advantage**  *transferability of cases* 
 
@@ -249,6 +271,10 @@ By default, the system provides a list containing the following information for 
 	In the GTK client you'd right-click over the text instead – this brings up a context menu with the same options as the web client would give you.
 
 In version 4.3.1 and beyond you'll be able to specify that the graph view, say, appears by default so that you can consistently present the information more visually.
+
+.. index::
+   single: Case; Rule
+.. 
 
 Automating actions using rules
 -------------------------------
@@ -460,6 +486,10 @@ Then start the fetchmail program, giving it a link to the configuration file tha
 .. tip::   **Technique**  *error detection* 
 
 	If you're executing fetchmail for the first time you should use the -v argument. This makes its output verbose so you can easily see what's happening as the program executes.
+
+.. index::
+   single: Case; Create and Maintain
+.. 
 
 Creating and maintaining cases
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

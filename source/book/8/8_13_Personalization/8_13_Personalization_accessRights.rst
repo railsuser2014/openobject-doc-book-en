@@ -1,4 +1,6 @@
-
+.. index::
+   single: Access rights
+.. 
 
 Managing access rights
 =======================
@@ -31,6 +33,10 @@ You should also create groups within a departmental areas that have different le
 .. tip::   **Advice**  *Flexibility in managing access* 
 
 	To give yourself flexibility, you can ensure that a trusted staff member (perhaps a director or someone in accounts, or even the system administrator) is given wide rights to use the system, and is authorized by the management to carry out specific tasks for people. 
+	
+.. index::
+   single: Access rights; Menus
+.. 
 
 Access rights for menus
 -------------------------
@@ -76,6 +82,10 @@ Save the user, then go into the menu  *Administration > Security > Define Access
 .. tip::   **Further Information**  *Initial access configuration* 
 
 	In the initial configuration, Open ERP's admin user, a member of the admin group, is given access to the Configuration menu in each section of the main menu. For example, Partners > Configuration is visible in the administrator's menu amongst other Partner menu items, but only the other menu entries are visible to other users. Similarly, the main menu entry Administration is visible only to users who are members of the admin group.
+
+.. index::
+   single: Access rights; Objects
+.. 
 
 Access Rights to Objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^
