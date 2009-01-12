@@ -35,9 +35,10 @@ An Open ERP system is formed by three main components:
 .. image:: images/terp_arch_1.png
    :scale: 95
 
+
+
+
 .. tip::   **Terminology**  *eTiny – server or client?* 
-
-
 
 	The eTiny component can be thought of as a server or a client depending on your viewpoint.
 
@@ -45,13 +46,17 @@ An Open ERP system is formed by three main components:
 
 	So in this book its context will determine whether eTiny is referred to as a server or a client.
 
+.. index::
+   single: eTiny
+.. 
+
 .. tip::   **Attention**  *eTiny* 
 
 	At present, the web component is known as “eTiny”. Although it's possible that this application's name will change in the coming months to match the renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
 
 
 .. index::
-   single: PostgreSQL
+   single: PostgreSQL; Definition
 .. 
 
 .. tip::   **Program**  *PostgreSQL* 

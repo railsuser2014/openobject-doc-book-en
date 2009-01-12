@@ -30,12 +30,16 @@ The first step is to download the Open ERP installer. At this stage you must ch
 .. tip::   **Attention**  *Stable versions and development versions* 
 
 
-
 	Open ERP development proceeds on two parallel tracks: stable versions and development versions.
 
 	New functionality is integrated into the development branch. This branch is more advanced than the stable branch, but it can contain undiscovered and unfixed faults. A new development release is made every month or so, and Tiny have made the code repository available so you can download the very latest revisions if you want.
 
 	The stable branch is designed for production environments. Releases of new functionality there are made only about once a year after a long period of testing and validation. Only fault fixes are released through the year on the stable branch.
+
+.. index::
+   single: Open ERP Installation; Windows (All-in-One)
+.. 
+
 
 To download the version of Open ERP for Windows, follow these steps:
 
@@ -67,6 +71,10 @@ To install Open ERP and its database you must be signed in as an Administrator 
 	#. Close the installation window using the middle button,  *Finish* 
 
 The Open ERP client can then be opened, ready to use the Open ERP system. The next step consists of configuring the database, and is covered in the final section of this chapter, *Creating the database.*
+
+.. index::
+   single: Open ERP Installation; Windows (Independent)
+.. 
 
 
 Independent installation on Windows
@@ -148,6 +156,11 @@ If your system doesn't work after installing your Windows system you'll find som
 	#. Have you changed any of the server's parameters? At this point in the installation the port number of the server must be 8069 using the protocol XML-RPC.
 
 	#. Is there anything in the server's history that can help you identify the problem? Open the file \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP Server``\  and scan through the history for ideas. If something looks strange there, contributors to the Open ERP forums can often help identify the reason.
+
+
+.. index::
+   single: Open ERP Installation; Linux (Ubuntu)
+.. 
 
 Installation on Linux (Ubuntu)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -324,6 +337,10 @@ You can verify the installation by opening a web browser on the server and navig
 
 Verifying your Linux installation
 ###################################
+
+.. index::
+   single: pgAdmin III
+.. 
 
 You've used default parameters so far during the installation of the various components. If you've had problems, or you just want to set this up differently, the following points provide some indicators about how you can configure your installation.
 

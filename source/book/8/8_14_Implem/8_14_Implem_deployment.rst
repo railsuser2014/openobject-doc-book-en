@@ -1,4 +1,8 @@
 
+.. index::
+   single: Deployment
+.. 
+
 Deployment
 ===========
 
@@ -11,6 +15,7 @@ As you've seen the complete architecture of Open ERP includes the following ele
 * an eTiny web server,
 
 * several clients that access the Open ERP server: they can either be web clients if the eTiny web server is installed, or GTK clients.
+
 
 .. tip::   **Definition**  *Deployment* 
 

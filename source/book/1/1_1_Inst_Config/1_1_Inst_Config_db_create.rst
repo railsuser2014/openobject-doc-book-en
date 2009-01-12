@@ -1,3 +1,7 @@
+.. index::
+   single: Database; Create
+.. 
+
 
 Creating the database
 """""""""""""""""""""""
@@ -77,6 +81,9 @@ Once configuration is complete you're connected to your Open ERP system. Its fu
 	    
 *Defining your company during initial database configuration*
 	
+.. index::
+   single: Database; Manage
+.. 
 
 Managing databases
 ^^^^^^^^^^^^^^^^^^^
