@@ -828,7 +828,7 @@ Time after production (TN): give the delay in hours after the end of a productio
 
 Effective time (ET): is a factor that is applied to the three times above to determine the real production time. This factor enables you to readjust the different times progressively and as a measure of machine utilization. You can't readjust the other times because generally they're taken from the machine's data sheet.
 
-The total time for carrying out X operations is then given by the following formula: ((C / CA) * TC + TS + TN_ * ET. In this formula the result of the division is rounded upwards. Then if the capacity per cycle is 6 it takes 3 cycles to realize 15 operations.
+The total time for carrying out X operations is then given by the following formula: ((C / CA) * TC + TS + TN\_ * ET. In this formula the result of the division is rounded upwards. Then if the capacity per cycle is 6 it takes 3 cycles to realize 15 operations.
 
 .. tip::   **Point** *Multi-level routing*
 
