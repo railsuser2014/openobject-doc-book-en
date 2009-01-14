@@ -248,6 +248,11 @@ Open a terminal window to start the server with the command \ ``sudo su postgres
 .. image:: images/terps_startup_log.png
    :scale: 95
 
+.. index::
+  single: Client; GTK
+  single: Installation; GTK clients
+..
+
 Manual installation of Open ERP GTK clients
 #############################################
 
@@ -300,6 +305,10 @@ To install an Open ERP client on a computer under Linux, repeat the procedure s
 It's possible to connect the server to the client using a secure protocol to prevent other network users from listening in, but the installation described here is for direct unencrypted connection.
 
 If your Linux server is protected by a firewall you'll have to provide access to port \ ``8069``\   for users on other computers with Open ERP GTK clients.
+
+.. index::
+  single: Installation; eTiny web server
+..
 
 Installation of an eTiny web server
 #####################################

@@ -1,3 +1,6 @@
+.. index::
+   single: Accounts payable
+.. 
 
 Managing accounts payable / creditors and accounts receivable / debtors
 =========================================================================
@@ -64,6 +67,10 @@ Finally you can look up individual account entries by searching for useful infor
 .. tip::   **Advantage**  *Exporting entries* 
 
 	It's helpful to remember that you can export all types of resource in Open ERP. From the web client you need to navigate to a search list for the resource then click the Export link at the bottom left of the list. From the GTK client you'd use the menu Form > Export. This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc, by exporting accounting entries.
+	
+.. index::
+  single: Follow-ups
+..
 
 Multi-step follow-ups
 -----------------------

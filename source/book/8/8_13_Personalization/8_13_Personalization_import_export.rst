@@ -1,3 +1,6 @@
+.. index::
+   single: Import-Export
+.. 
 
 Importing and exporting data
 =============================
@@ -9,6 +12,10 @@ Every form in Open ERP has a standard mechanism for importing data from a CSV f
 	You have access to the Import and Export functions in the web client on a single form view in read-only mode – you can't reach Import or Export in any other view or when the form is editable. If you're using the GTK client you can find the functions from the top menu Form > Import... and Form > Export...
 
 The CSV file format is text format compatible with most spreadsheet programs (such as OpenOffice Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of the field in the form. All the subsequent lines are data, aligned in their respective columns.
+
+.. index::
+   single: Import-Export; CSV
+.. 
 
 The CSV format for complex database structures
 -----------------------------------------------
@@ -126,6 +133,10 @@ Importing this file will give you three partners:
 	* import one partner with different contact in a single file (one-to-many),
 
 	* import the partners first, and then contacts with the field linking to the partner in a many-to-one form).
+
+.. index::
+   single: Import-Export; Example
+.. 
 
 Examples of CSV import files
 -----------------------------

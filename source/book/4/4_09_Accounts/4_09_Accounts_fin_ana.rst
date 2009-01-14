@@ -17,6 +17,10 @@ Analysis per account
 
 *  *Cost Ledger (quantities only)* .
 
+.. index::
+   single: Analytic Balance
+.. 
+
 Analytic Balance
 ^^^^^^^^^^^^^^^^^
 
@@ -42,6 +46,10 @@ The inverted analytic balance provides a similar report relating the general acc
 *The inverted analytic balance indicates the breakdown of operations by the nature of the different the analytic accounts (projects)*
 
 This enables you to analyze your costs by general account. For example, if you examine your general account for staff salaries you can obtain all your salary costs broken down by the different analytic (or project) accounts.
+
+.. index::
+   single: Cost ledger
+.. 
 
 The cost ledger
 ^^^^^^^^^^^^^^^^^

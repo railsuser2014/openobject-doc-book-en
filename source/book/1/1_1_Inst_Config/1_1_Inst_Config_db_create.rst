@@ -98,6 +98,10 @@ As a super-administrator you've not only got rights to create new databases, but
 
 All of these operations can be carried out from the menu  *File > Databases... > Backup databases*  in the GTK client, or from  *Manage...*  in the web client's Login screen.
 
+.. index::
+   single: Database; Duplicate
+.. 
+
 .. tip::   **Note**  *Duplicating a database.* 
 
 	To duplicate a database you can:

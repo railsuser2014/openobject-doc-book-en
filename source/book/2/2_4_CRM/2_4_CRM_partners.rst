@@ -1,3 +1,6 @@
+.. index::
+   single: Partner
+.. 
 
 Partners
 =========
@@ -55,6 +58,10 @@ You can search for a subset of Partners and Contacts using their company  *Name*
 .. tip::   **Note**  *Independent partners or physical people* 
 
 	If you want to represent a physical person rather than a company, in Open ERP, that person's name can be typed directly into the Name field on the Partner form. In this case don't put in any Contact Name.
+
+.. index::
+   single: Partner; Categories
+.. 
 
 Partner Categories
 -------------------

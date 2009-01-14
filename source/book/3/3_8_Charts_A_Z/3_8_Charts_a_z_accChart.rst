@@ -1,3 +1,6 @@
+.. index::
+   single: Chart of Accounts
+.. 
 
 Chart of Accounts
 ===================

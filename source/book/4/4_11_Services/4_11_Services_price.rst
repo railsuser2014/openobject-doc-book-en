@@ -1,3 +1,6 @@
+.. index::
+   single: Price management
+.. 
 
 Price management policies
 ===========================
@@ -43,6 +46,10 @@ Each pricelist is expressed in a single currency. If your company sells products
 
 The prices on a pricelist can depend on another list, which means that you don't have to repeat the definition of all conditions for each product. So a pricelist in USD can be based on a pricelist in EUR. If the currency conversion rates between EUR and USD change, or the EUR prices change, the USD rates can be automatically adjusted.
 
+.. index::
+   single: Pricelists; Create
+.. 
+
 Creating pricelists
 ---------------------
 
@@ -59,6 +66,10 @@ For each list you have to define:
 .. tip::   **Terminology**  *Consumer Price* 
 
 	If you install the module edi a third type of list appears – the Consumer Price, which defines the price displayed for the end user. This doesn't have to match your selling price to an intermediary or distributor.
+
+.. index::
+   single: Pricelists; versions
+.. 
 
 Pricelist versions
 ^^^^^^^^^^^^^^^^^^^
@@ -124,6 +135,10 @@ Price = Base Price x (1 – Field1) + Field2
 
 Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select its  *Properties*  tab. You can then change the  *Purchase Pricelist*  and the  *Sale Pricelist*  that's loaded by default for the partner.
 
+.. index::
+   single: Pricelists; Default pricelists
+.. 
+
 Default pricelists
 ^^^^^^^^^^^^^^^^^^^
 
@@ -180,6 +195,10 @@ TABLE
    "Toshibishi Portable","1 340 ","920 ","920 ",
    "Berrel Keyboard","100 ","50 ","50 ",
    "Office Computer","1 400 ","1 000 ","1 000 ",
+
+.. index::
+   single: List price
+.. 
 
 Defining the list price
 ^^^^^^^^^^^^^^^^^^^^^^^^^

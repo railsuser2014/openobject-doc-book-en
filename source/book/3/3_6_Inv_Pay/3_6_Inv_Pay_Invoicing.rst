@@ -16,6 +16,10 @@ Only the invoice type and the representation mode differ for each of the four do
 
 You get the correct form for each of the four types of invoice from the menu you use to open it. The name of the tab enables you to tell the invoice types apart when you're working on them.
 
+.. index::
+   single: Invoices; Types
+.. 
+
 .. tip::   **Technique**  *Types of invoice* 
 
 	There are many advantages in deriving the different types of invoice from the same object. The two most important are:
@@ -23,6 +27,11 @@ You get the correct form for each of the four types of invoice from the menu you
 	* In a multi-company environment with inter-company invoicing, a customer invoice in one company becomes a supplier invoice for the other.
 
 	* This enables you to work and search for all invoices from the same menu. If you're looking for an invoicing history, Open ERP provides both supplier and customer invoices in the same list, as well as credit notes.
+
+.. index::
+   single: Credit Note
+.. 
+
 
 .. tip::   **Terminology**  *Credit Note* 
 
@@ -181,6 +190,11 @@ When you've validated an invoice, Open ERP gives it a unique number from a defi
 
 Accounting entries corresponding to this invoice are automatically generated when you approve the invoice. You can verify the detail of this by clicking the  *Open*  icon for the  *Transactions*  field in the second tab of the invoice.
 
+
+..index::
+   single: Taxes; DEEE
+..
+   
 Managing taxes
 ^^^^^^^^^^^^^^^
 

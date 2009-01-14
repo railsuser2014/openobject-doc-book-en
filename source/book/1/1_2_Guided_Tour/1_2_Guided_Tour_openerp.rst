@@ -1,4 +1,3 @@
-
 Guided Tour of Open ERP
 =========================
 
@@ -31,6 +30,10 @@ Each of the lists can be reordered by clicking on the heading of a column – fi
 
 Users' home pages are automatically reassigned during the creation or upgrading of a database. It's usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the home page of any user.
 
+.. index::
+  single: Shortcuts
+..
+
 .. tip::   **Note**  *Creating shortcuts* 
 
 	Each user has access to many menu items throughout all of the available menu hierarchy. But in general an employee uses only a small part of the system's functions.
@@ -45,6 +48,10 @@ Partners
 ---------
 
 To familiarize yourself with Open ERP's interface, you'll start work with information about partners. Clicking  *Partners > Partners*  brings up a list of partners that were automatically loaded when you created the database with  *Load Demonstration Data*  checked.
+
+.. index::
+  single: Partner; Search Partners
+..
 
 Search for a partner
 ^^^^^^^^^^^^^^^^^^^^^
@@ -69,6 +76,10 @@ If you've applied no filter, the list shows every partner in the system. For spa
 If you click on the name of a partner the form view corresponding to that partner opens in Read-Only mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode. Once you have a form you can toggle between the two modes by clicking  *Save*  or  *Cancel*  when in Edit mode and  *Edit*  when in Read-Only mode.
 
 When you're in Read-Only mode you can navigate through the whole list you selected, as though you were in the List view. In Read-Only mode you can also click  *Search*  to see the form in List view again.
+
+.. index::
+  single: Partner; Form View
+..
 
 Partner form
 ^^^^^^^^^^^^^
@@ -108,6 +119,10 @@ Certain actions can be started by the following buttons in the  *Actions*  secti
 
 *  *Mass Mailing* : enables you to send an email to a selection of partners.
 
+.. index::
+  single: Right Actions
+..
+
 .. tip::   **GTK client**  *Reports, Actions and Links* 
 
 	When you're viewing a form in the GTK client, the buttons to the right of the form are shortcuts to the same Reports, Actions and Links as described in the text. When you're viewing a list (such as the partner list) those buttons aren't available to you. Instead, you can reach Reports and Actions through two of the buttons in the toolbar at the top of the list – Print and Action. 
@@ -133,6 +148,10 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 
 Before moving on to the next module, take a quick look into the  *Partners > Configuration*  menu, particularly  *Categories*  and  *Localisation* . They contain some of the demonstration data that you installed when you created the database.
 
+.. index::
+  single: Accounting and finance
+..
+
 Accounting and finance
 -----------------------
 
@@ -145,6 +164,11 @@ Accounting that's integrated throughout all of the company's processes greatly s
 So Open ERP's accounting isn't just for financial reporting – it's also the anchor point for many of a company's management processes. For example if one of your accountants puts a customer on credit hold then that will immediately block any other action related to that company's credit (such as a sale or a delivery).
 
 Open ERP also provides integrated analytical accounting, which enables management by business activity or project and provides very detailed levels of analysis. You can control your operations based on business management needs, rather than on the charts of accounts that generally meet only statutory requirements.
+
+.. index::
+   single: Dashboards
+.. 
+
 
 Dashboards
 -----------
@@ -164,6 +188,10 @@ Dashboards are adaptable to the needs of each user and each company.
 .. tip::   **Note**  *Construction of dashboards* 
 
 	Version 4.3 of Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
+
+.. index::
+   single: Products
+.. 
 
 Products
 ---------
@@ -198,6 +226,10 @@ The value of this approach for some sectors is that you can just define a templa
 
 The  *Products*  menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
 
+.. index::
+   single: Products; Consumables
+.. 
+
 .. tip::   **Terminology**  *Consumables* 
 
 	In Open ERP a consumable is a physical product which is treated like a stockable product except that stock management isn't taken into account by the system. You could buy it, deliver it or produce it but Open ERP will always assume that there's enough of it in stock. It never triggers a restocking exception.
@@ -219,6 +251,11 @@ You can find many optional modules to extend product functionality through the O
 * \ ``product_expiry``\  : for agro-food products where items must be retired after a certain period,
 
 * \ ``product_lot_foundry``\  : for managing forged metal products.
+
+
+.. index::
+   single: Human Resources
+.. 
 
 Human Resources
 -----------------
@@ -242,6 +279,11 @@ Open ERP's Human Resources Management modules provide such functionality as:
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\   rather than the core HR module, but they're all loaded into the main  *Human Resources*  menu.
 
 The different issues are handled in detail in the fourth section of this book, dedicated to internal organization and to the management of a services business.
+
+
+.. index::
+   single: Inventory Control
+.. 
 
 Inventory Control
 -------------------
@@ -269,6 +311,11 @@ Stock management is, like accounting, double-entry. So stocks don't appear and v
 Most stock management software is limited to generating lists of products in warehouses. Because of its double-entry system Open ERP automatically manages customer and suppliers stocks as well, which has many advantages: complete traceability from supplier to customer, management of consigned stock, and analysis of counterpart stock moves.
 
 Furthermore, just like accounts, stock locations are hierarchical, so you can carry out analyses at various levels of detail.
+
+
+.. index::
+   single: CRM
+.. 
 
 Customer and Supplier Relationship Management
 -----------------------------------------------
@@ -299,6 +346,11 @@ You can implement a continuous improvement policy for all of your services, by u
 
 The management of customer relationships is detailed in the second section of this book (see Chapters 4 and 5).
 
+
+.. index::
+   single: Purchase Management
+.. 
+
 Purchase Management
 ---------------------
 
@@ -323,6 +375,9 @@ Open ERP's replenishment management rules enable the system to generate draft p
 
 *Purchase order workflow*
 
+.. index::
+   single: Project Management
+.. 
 
 Project Management
 -------------------
@@ -342,6 +397,10 @@ You can run projects related to Services or Support, Production or Development �
 
 Project Management is described in Chapter 12.
 
+.. index::
+   single: Production Management
+.. 
+
 Production Management
 -----------------------
 
@@ -358,6 +417,10 @@ Open ERP's production management capabilities enable companies to plan, automat
 Production orders based on your company's requirements are scheduled automatically by the system, but you can also run the schedulers manually whenever you want. Orders are worked out by calculating the requirements from sales, through Bills of Materials, taking current inventory into account. The production schedule is also generated from the various lead times defined throughout, using the same route
 
 The demonstration data contains a list of products and raw materials with various classifications and ranges. You can test the system using this data.
+
+.. index::
+   single: Sales Management
+.. 
 
 Sales Management
 -----------------

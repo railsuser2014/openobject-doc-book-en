@@ -1,3 +1,6 @@
+.. index::
+   single: Microsoft Word interface
+.. 
 
 Microsoft Word interface
 =========================

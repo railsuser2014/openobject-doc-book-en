@@ -1,4 +1,8 @@
 
+.. index::
+   single: Analytic records
+.. 
+
 Analytic records
 =================
 
