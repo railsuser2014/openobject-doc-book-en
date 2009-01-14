@@ -19,7 +19,8 @@ Importing data through a module
 The best way to import data in Open ERP is to build a module that
 integrates all the data you want to import. So, when you want to
 import all the data, you just have to install the module and Open ERP
-manages the different creation operations.
+manages the different creation operations. When you have lots of different
+data to import, we sometimes create different modules.
 
 So, let's create a new module where we will store all our datas. To do
 this, from the addons directory, create a new module called data_yourcompany.
