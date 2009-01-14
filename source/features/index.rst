@@ -9,8 +9,7 @@ Open Object. More than 350 modules are available, so this is just a summary
 of some of them.
 
 .. toctree::
-
-    :blob:
+    :glob:
 
     *
 

@@ -6,5 +6,6 @@
     freebsd
     centos
     debian
+    gentoo
 
 
