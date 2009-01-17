@@ -13,7 +13,7 @@ Different working methods are provided according to the need:
 
 .. raw:: html
  
- <a target="_blank" href="images/timesheet_screenshot.png"><img src="images/timesheet_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/timesheet_screenshot.png"><img src="images_small/timesheet_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

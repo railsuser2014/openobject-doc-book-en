@@ -9,7 +9,7 @@ is dedicated to allow users to assign some cases.
 
 .. raw:: html
  
- <a target="_blank" href="images/mail_gateway_screenshot.png"><img src="images/mail_gateway_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/mail_gateway_screenshot.png"><img src="images_small/mail_gateway_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

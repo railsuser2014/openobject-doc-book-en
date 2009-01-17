@@ -15,7 +15,7 @@ driven entirely by current production needs.
 
 .. raw:: html
  
- <a target="_blank" href="images/purchase_screenshot.png"><img src="images/purchase_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/purchase_screenshot.png"><img src="images_small/purchase_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------

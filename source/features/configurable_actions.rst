@@ -7,7 +7,7 @@ the result of actions, open new windows or reports, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/configurable_actions_screenshot.png"><img src="images/configurable_actions_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/configurable_actions_screenshot.png"><img src="images_small/configurable_actions_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

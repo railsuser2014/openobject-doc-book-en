@@ -9,7 +9,7 @@ module is to follow working hours of current projects and costs implications.
 
 .. raw:: html
  
- <a target="_blank" href="images/attendance_screenshot.png"><img src="images/attendance_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/attendance_screenshot.png"><img src="images_small/attendance_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

@@ -8,7 +8,7 @@ consolidations.
 
 .. raw:: html
  
- <a target="_blank" href="images/gantt_calendar_screenshot.png"><img src="images/gantt_calendar_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/gantt_calendar_screenshot.png"><img src="images_small/gantt_calendar_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

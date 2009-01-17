@@ -8,7 +8,7 @@ suppliers, ... to use your system for particular tasks.
 
 .. raw:: html
  
- <a target="_blank" href="images/portal_screenshot.png"><img src="images/portal_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/portal_screenshot.png"><img src="images_small/portal_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

@@ -10,7 +10,7 @@ This is the very first extensible webmail system ever made. With the Open Object
 view designer, you can customize every interface to fullfill your specific needs
 and improve your productivity.
 
-<a target="_blank" href="images/webmail_screenshot.png"><img src="images/webmail_screenshot.png" width="430" height="250" class="screenshot" /></a>
+<a target="_blank" href="images/webmail_screenshot.png"><img src="images_small/webmail_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

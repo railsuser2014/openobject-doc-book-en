@@ -8,7 +8,7 @@ for the suppliers and manages employee preferences, if they forget to order.
 
 .. raw:: html
  
- <a target="_blank" href="images/lunch_screenshot.png"><img src="images/lunch_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/lunch_screenshot.png"><img src="images_small/lunch_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

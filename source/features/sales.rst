@@ -9,7 +9,7 @@ of an order triggers delivery of the goods, and invoicing timing is defined by
 a setting in each individual order.
 
 .. raw:: html
-      <a target="_blank" href="images/sales_screenshot.png"><img src="images/sales_screenshot.png" width="430" height="250" class="screenshot" /></a>
+      <a target="_blank" href="images/sales_screenshot.png"><img src="images_small/sales_screenshot.png" class="screenshot" /></a>
 
 
 Keypoints:

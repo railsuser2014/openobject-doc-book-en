@@ -5,7 +5,7 @@ Introduction two or three lines.
 
 .. raw:: html
  
- <a target="_blank" href="images/chamber_of_commerce_screenshot.png"><img src="images/chamber_of_commerce_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/chamber_of_commerce_screenshot.png"><img src="images_small/chamber_of_commerce_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

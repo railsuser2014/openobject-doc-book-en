@@ -8,7 +8,7 @@ by Open Object.
 
 .. raw:: html
  
- <a target="_blank" href="images/olap_database_screenshot.png"><img src="images/olap_databse_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/olap_database_screenshot.png"><img src="images_small/olap_databse_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

@@ -14,7 +14,7 @@ will be able to use our gantt views to organise the different ressources or orde
 
 .. raw:: html
  
- <a target="_blank" href="images/manufacturing_screenshot.png"><img src="images/manufacturing_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/manufacturing_screenshot.png"><img src="images_small/manufacturing_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

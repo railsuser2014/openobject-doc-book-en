@@ -7,7 +7,7 @@ in the project management module, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/bug_tracker_screenshot.png"><img src="images/bug_tracker_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/bug_tracker_screenshot.png"><img src="images_small/bug_tracker_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

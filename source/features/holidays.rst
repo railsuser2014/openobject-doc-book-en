@@ -7,7 +7,7 @@ holiday, and control the overall holiday's planning for the company or departeme
 
 .. raw:: html
  
- <a target="_blank" href="images/holidays_screenshot.png"><img src="images/holidays_screenshot.png" width="430" height="250" class="screenshot" /></a> 
+ <a target="_blank" href="images/holidays_screenshot.png"><img src="images_small/holidays_screenshot.png" class="screenshot" /></a> 
 
 Key points:
 -----------

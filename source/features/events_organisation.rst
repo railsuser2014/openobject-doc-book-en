@@ -9,7 +9,7 @@ registrations directly by email.
 
 .. raw:: html
  
- <a target="_blank" href="images/events_organisation_screenshot.png"><img src="images/events_organisation_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/events_organisation_screenshot.png"><img src="images_small/events_organisation_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

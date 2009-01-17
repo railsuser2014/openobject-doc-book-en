@@ -13,7 +13,7 @@ website and Open ERP turns it as a full featured eCommerce platform.
 
 .. raw:: html
  
- <a target="_blank" href="images/integrated_ecommerce_screenshot.png"><img src="images/integrated_ecommerce_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/integrated_ecommerce_screenshot.png"><img src="images_small/integrated_ecommerce_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

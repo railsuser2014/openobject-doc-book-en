@@ -10,7 +10,7 @@ a lot the communication between the different employee of a same company.
 
 .. raw:: html
  
- <a target="_blank" href="images/alerts_screenshot.png"><img src="images/alerts_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/alerts_screenshot.png"><img src="images_small/alerts_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

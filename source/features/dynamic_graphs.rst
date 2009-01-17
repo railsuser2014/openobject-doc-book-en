@@ -12,7 +12,7 @@ need and improve their performance by providing them the right information.
 
 .. raw:: html
  
- <a target="_blank" href="images/dynamic_graphs_screenshot.png"><img src="images/dynamic_graphs_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/dynamic_graphs_screenshot.png"><img src="images_small/dynamic_graphs_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

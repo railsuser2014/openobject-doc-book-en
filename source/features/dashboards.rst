@@ -11,7 +11,7 @@ directors and accountants.
 
 .. raw:: html
  
- <a target="_blank" href="images/dashboards_screenshot.png"><img src="images/dashboards_screenshot.png" width="430" height="250" class="screenshot" /></a>
+ <a target="_blank" href="images/dashboards_screenshot.png"><img src="images_small/dashboards_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
