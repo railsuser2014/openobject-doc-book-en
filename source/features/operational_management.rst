@@ -1,7 +1,9 @@
 Operational Management
 ======================
 
-Introduction two or three lines.
+Open ERP integrates a powerful multi-level project management system. It
+allows to manages tasks allocation, short and long term plannings, delegations,
+etc. It's fully integrated with sales or purchases.
 
 .. raw:: html
  
@@ -10,14 +12,16 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Dynamic Gantt view to organise projects and tasks
+* Retro-Planning computations
+* Integrates best practices: GTD, Scrum
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* Integration 2
+* Integrated with analytic accounting for financial part
+* Integrated with sales and invoicing to automates tasks
+* Integrated with HR modules for the organisation of the resources
 
 Links:
 ------

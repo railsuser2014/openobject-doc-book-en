@@ -1,7 +1,9 @@
 Invoicing
 =========
 
-Introduction two or three lines.
+Open ERP support lots of different logistics for the invoicing automation: from
+the sales orders, from costs (timesheets, purchases, etc.), from tasks, from
+recurring subscriptions, etc.
 
 .. raw:: html
  
@@ -10,14 +12,15 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* A powerful pricelist system
+* A very useful follow-up module
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* No double encoding at all
+* Automatic generation of invoices according to different workflows
+* Integrated with analytic accounting for profitability
 
 Links:
 ------

@@ -1,7 +1,10 @@
 Auction
 =======
 
-Introduction two or three lines.
+The auction house profile contains all you need to manage an auction house.
+It allows you to manages objects and seller, bids and buyers, to prepare exhibitions,
+to generate catalogs. It is integrated with the other modules of Open ERP proving
+automatic invoicing, cost control using timesheets, etc.
 
 .. raw:: html
  
@@ -11,14 +14,14 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Manages all operations of an auction house
+* Fully integrated and very complete
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* Integration 2
+* Integrated with accounting and invoicing
+* Integrated with human resources modules
 
 Links:
 ------

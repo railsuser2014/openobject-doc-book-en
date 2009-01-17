@@ -1,7 +1,9 @@
 VOIP
 ====
 
-Introduction two or three lines.
+The asterisk module allows to interface your Voice Over IP system with Open
+ERP. When a customer calls you, it can propose the automatically the partner
+form linked to this phone number.
 
 .. raw:: html
  
@@ -10,14 +12,13 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Asterisk interface
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Integrated with the phone tools of the CRM
+* Link on any document to call a partner
 
 Links:
 ------

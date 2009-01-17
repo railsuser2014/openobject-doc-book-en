@@ -1,7 +1,10 @@
 Skills Management
 =================
 
-Introduction two or three lines.
+Open ERP provides about 20 modules related to human resources management.
+Some modules will allow you to manage the skills of your employees, you
+can relate these to the periodical evaluation or the contract.
+
 
 .. raw:: html
  
@@ -10,14 +13,14 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Uniq skill referential
+* Ability to perform computations on skills
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Integrated with periodical evaluations
+* You can use the portal so that employee can consult their data
 
 Links:
 ------

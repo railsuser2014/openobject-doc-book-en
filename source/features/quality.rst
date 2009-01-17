@@ -1,7 +1,9 @@
 Quality Management
 ==================
 
-Introduction two or three lines.
+Open ERP provides a module to manage the quality of your products or
+your services. The 'repairs management' module allows to organise
+after-sales services.
 
 .. raw:: html
  
@@ -10,14 +12,14 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Complete after-sales services integrated
+* Traceability of all operations
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Integrated with cost accounting for cost control of the quality
+* Integrated with stocks to organise repairs and traceability
 
 Links:
 ------

@@ -1,7 +1,10 @@
 Chamber of commerce
 ===================
 
-Introduction two or three lines.
+Open ERP is used by 50% of the Chamber of Commerce of Belgium. More than 10
+modules are available for this specific business: advances CRM, contact
+management, membership management, training and conferences organisation,
+embassy folders, etc.
 
 .. raw:: html
  
@@ -11,14 +14,15 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Very complete
+* About 10 optionnal modules
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* Integration 2
+* Integration with accounting to provide invoicing automation
+* Integration with the CRM for a global overview
+* Integration with the document management system
 
 Links:
 ------

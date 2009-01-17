@@ -1,7 +1,8 @@
 Shipping Management
 ===================
 
-Introduction two or three lines.
+The Open ERP warehouse management system provides lots of facilities
+to organise efficiently your customer or suppliers shippings.
 
 .. raw:: html
  
@@ -10,14 +11,16 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Dynamic gantt or calendar views for planification
+* Allows to manage by journal or department
+* Good ergonomy for fast encoding
 
 Integration Benefits:
 ---------------------
 
-* You can planifiy deliveries through the gantt or calendar views
-* Deliveries costs and orders are computed automatically from sales and purchases
+* Deliveries costs and orders are computed automatically
+* Automatic invoices based on deliveries
+* Integrated with quality management system
 
 Links:
 ------

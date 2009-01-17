@@ -1,5 +1,5 @@
-Services Mgt.
-=============
+Services Management
+===================
 
 Service management allows you to manage your company's projects and tasks
 without any limitations. It provides tools to manage multi-level sub-projects,

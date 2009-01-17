@@ -1,7 +1,9 @@
 View Editor
 ===========
 
-Introduction two or three lines.
+The Open ERP view editor allows you to design and adapt all screens of
+the application to your specific need. You can modify the look or add/remove
+new fields in a few seconds.
 
 .. raw:: html
  
@@ -10,14 +12,14 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Modify views but also the object structure
+* Works with inheritancies of views to not change official version
+* Ability to save all modification in a reuseable module
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* This customization tool works on all modules
 
 Links:
 ------

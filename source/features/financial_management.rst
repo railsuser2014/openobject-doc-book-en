@@ -1,7 +1,9 @@
-Example
-=======
+Financial Project Management
+============================
 
-Introduction two or three lines.
+Open ERP intagrates financial project management to help you remain in
+control of your different activities. It keep track of costs, budgets,
+automatic invoicing based on tasks achieved, profitability reports, etc.
 
 .. raw:: html
  
@@ -11,14 +13,15 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Based on the analytic accounting
+* Fully integrated with human ressources for cost control
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* Integration 2
+* Planning automatically impacts budgets and treasury
+* Tasks and timesheets are fully integrated
+* Sales orders and tasks control are integrated
 
 Links:
 

@@ -1,7 +1,10 @@
 Trainings Organisation
 ======================
 
-Introduction two or three lines.
+Open ERP is used by one of the most prestigious training organisation in
+France: l'ENA (Ecole Nationale d'Administration). Open ERP provides different
+module to organise trainings: resources management (classes), teachers, planning,
+training material, etc.
 
 .. raw:: html
  
@@ -10,14 +13,16 @@ Introduction two or three lines.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Portal for teachers and students
+* A dynamic gantt view to planify resources
+* Fits all needs of a training organisation
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Integrated with document management system for training material
+* Based on analytic accounting to manages costs and revenues per course
+* Integrated with invoicing, sales, CRM, etc.
 
 Links:
 ------
