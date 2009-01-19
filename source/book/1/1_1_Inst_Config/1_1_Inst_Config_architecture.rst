@@ -15,7 +15,7 @@ The two methods of access give very similar facilities, and you can use both on 
 
 Conversely you'd be better off with the application client (called the GTK client because of the technology it's built with) if you're using a local server (such as in the same building). In this case the GTK client will be more responsive, so more satisfying to use.
 
-..index::
+.. index::
    single: Client
 ..
    
