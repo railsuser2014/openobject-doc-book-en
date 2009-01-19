@@ -198,7 +198,7 @@ Select a journal and complete the different fields. Write an expense as a negati
 
 	To enter a date in the editable list you can use the calendar widget in the web client or, in the GTK client, if you enter just the day of the month Open ERP automatically completes the month and year when you press the tab key (Tab).
 
-	.. note::  *Example Cost redistribution* 
+.. note::  *Example Cost redistribution* 
 
 For example 
 

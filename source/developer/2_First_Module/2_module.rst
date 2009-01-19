@@ -2,6 +2,12 @@
 Rapid Application Development
 =============================
 
+This chapter will give you a quick overview on how you can easily and quickly develop your own features within Open ERP. We will describe here the complete development of a small module for a travel agency company.
+
+We describe in this chapter what we do but not "how" we do it. Having a first look at the different component will help you to better understand the following chapters that will go deeper in details of each part of a module development.
+
+We suggest you to try to develop the proposed module while reading this chapter. This way, you will quickly see how simple it is to write a module in Open ERP. 
+
 Model-View-Controler Architecture
 =================================
 

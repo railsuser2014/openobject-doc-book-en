@@ -11,19 +11,31 @@ To access Open ERP you can:
 
 * use an application client (the GTK client) installed on each computer.
 
-The two methods of access give very similar facilities, and you can use both on the same server at the same time. It's best to use the web browser if the Open ERP server is some distance away (such as on another continent) because it's more tolerant of time delays between the two than the GTK client is. The web client is also easier to maintain, because it's generally already installed on users' computers.
+The two methods of access give very similar facilities, and you can use both on
+the same server at the same time. It's best to use the web browser if the
+Open ERP server is some distance away (such as on another continent) because
+it's more tolerant of time delays between the two than the GTK client is. The
+web client is also easier to maintain, because it's generally already installed
+on users' computers.
 
-Conversely you'd be better off with the application client (called the GTK client because of the technology it's built with) if you're using a local server (such as in the same building). In this case the GTK client will be more responsive, so more satisfying to use.
+Conversely you'd be better off with the application client (called the GTK
+client because of the technology it's built with) if you're using a local
+server (such as in the same building). In this case the GTK client will be more
+responsive, so more satisfying to use.
 
-..index::
+.. index::
    single: Client
 ..
    
 .. tip::   **Usability**  *Web client and GTK client* 
 
-	The main functional difference between the two Open ERP clients is the presence of the calendar view in the web client, which doesn't exist in the GTK client at present (version 4.2.3). Apart from that you will find that there are small differences in their general usability.
+    The main functional difference between the two Open ERP clients is the
+    presence of the calendar view in the web client, which doesn't exist in the
+    GTK client at present (version 4.2.3). Apart from that you will find that
+    there are small differences in their general usability.
 
-	The Tiny company will continue to support two clients for the foreseeable future, so you can use whichever client you prefer.
+    The Tiny company will continue to support two clients for the foreseeable
+    future, so you can use whichever client you prefer.
 
 An Open ERP system is formed by three main components:
 
@@ -42,11 +54,15 @@ An Open ERP system is formed by three main components:
 
 .. tip::   **Terminology**  *eTiny – server or client?* 
 
-	The eTiny component can be thought of as a server or a client depending on your viewpoint.
+    The eTiny component can be thought of as a server or a client depending on
+    your viewpoint.
 
-	It acts as a web server to an end user connecting from a web browser, but it also acts as a client to the Open ERP application server just as a GTK application client does.
+    It acts as a web server to an end user connecting from a web browser, but
+    it also acts as a client to the Open ERP application server just as a GTK
+    application client does.
 
-	So in this book its context will determine whether eTiny is referred to as a server or a client.
+    So in this book its context will determine whether eTiny is referred to as
+    a server or a client.
 
 .. index::
    single: eTiny
@@ -54,7 +70,9 @@ An Open ERP system is formed by three main components:
 
 .. tip::   **Attention**  *eTiny* 
 
-	At present, the web component is known as “eTiny”. Although it's possible that this application's name will change in the coming months to match the renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
+    At present, the web component is known as “eTiny”. Although it's possible
+    that this application's name will change in the coming months to match the
+    renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
 
 
 .. index::
@@ -65,11 +83,19 @@ An Open ERP system is formed by three main components:
 
 	PostgreSQL is a relational and object database management system.
 
-	It's a free high-performance system that compares with other database management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2 and Microsoft SQL Server (all proprietary). It runs on all types of Operating System, from Unix/Linux to the various releases of Windows, via Mac OS X, Solaris, SunOS and BSD.
+    It's a free high-performance system that compares with other database
+    management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2
+    and Microsoft SQL Server (all proprietary). It runs on all types of
+    Operating System, from Unix/Linux to the various releases of Windows, via
+    Mac OS X, Solaris, SunOS and BSD.
 
-These three components can be installed on the same server or can be distributed onto separate computer servers if performance considerations require it.
+These three components can be installed on the same server or can be
+distributed onto separate computer servers if performance considerations
+require it.
 
-If you choose to run only with GTK clients you won't need the third component – the eTiny server – at all. In this case Open ERP's GTK client must be installed on the workstation of each Open ERP user in the company.
+If you choose to run only with GTK clients you won't need the third component –
+the eTiny server – at all. In this case Open ERP's GTK client must be installed
+on the workstation of each Open ERP user in the company.
 
 
 .. Copyright © Open Object Press. All rights reserved.

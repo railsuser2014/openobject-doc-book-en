@@ -7,7 +7,7 @@ Various reports designed for financial analysis are based on the analytic accoun
 Analysis per account
 ---------------------
 
- *Print* 
+From an analytic form, click on the *Print* button to select a report. Open ERP proposes the following financial analyses:
 
 *  *Analytic Balance* ,
 
