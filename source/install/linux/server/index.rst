@@ -3,14 +3,16 @@
     :glob:
 
     intro
-    freebsd
     centos
     debian
+    freebsd
     gentoo
+    macosx
     mandrake
     mandriva
-    slackware
-    suse
     opensuse
-
+    slackware
+    solaris10
+    suse
+    ubuntu
 
