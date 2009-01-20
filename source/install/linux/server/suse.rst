@@ -80,8 +80,7 @@ Note: You may need the mxDateTime site-package. Download it from here. Make sure
 scroll down to find your distribution.
 
    * pyparsing-1.4.2.tar.gz http://sourceforge.net/projects/pyparsing/
-   *for SuSE10.3 RC1: Python Time Zone Library PyTZ http://sourceforge.net/project/
-   showfiles.php?group_id=79122&package_id=80455&release_id=469616
+   * for SuSE10.3 RC1: Python Time Zone Library PyTZ http://sourceforge.net/project/showfiles.php?group_id=79122&package_id=80455&release_id=469616
    * tinyerp-client-3.3.0.tar.gz
    * tinyerp-server-3.3.0.tar.gz
 
