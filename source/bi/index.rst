@@ -21,9 +21,6 @@ Business Intelligence
     MDXOverview/independence
     MDXOverview/examples
     config_interface/config_interface
-    config_interface/client_intro
-    config_interface/connect_db
-    config_interface/write_schema
     CubeXML/CubeXML
     CubeXML/CubeXMLIntro
     CubeXML/CubeXMLExample
@@ -58,9 +55,6 @@ Business Intelligence
     MDXOverview/independence
     MDXOverview/examples
     config_interface/config_interface
-    config_interface/client_intro
-    config_interface/connect_db
-    config_interface/write_schema
     CubeXML/CubeXML
     CubeXML/CubeXMLIntro
     CubeXML/CubeXMLExample
