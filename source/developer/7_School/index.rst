@@ -1,6 +1,6 @@
-=======================
-School Manaement Module
-=======================
+========================
+School Management Module
+========================
 
 Introduction
 ============

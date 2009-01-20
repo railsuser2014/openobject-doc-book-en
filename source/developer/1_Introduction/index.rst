@@ -133,7 +133,7 @@ Two teams have been created on launchpad:
     - lp:~openerp/openobject-server/4.2
     - lp:~openerp/openobject-server/trunk
 
-  * 0penERP-commiter --> they can commit on:
+  * OpenERP-commiter --> they can commit on:
 
     - lp:~openerp/openobject-addons/4.2-extra-addons
     - lp:~openerp/openobject-addons/trunk-extra-addons
