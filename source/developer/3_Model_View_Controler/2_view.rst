@@ -41,12 +41,11 @@ The field disposition in a form view always follows the same principle. Fields a
 
 .. image::  images/Sale_order.png
 
-Views also support more advanced placement options:
-""""""""""""""""""""""""""""""""""""""""""""""""""
+:Views also support more advanced placement options:
 
     * A view field can use several columns. For example, on the screen-shot below, the zone in the blue frame is, in fact, the only field of a "one to many". We will come back later on this note, but let's note that it uses the whole width of the screen and not only one column. 
 
-.. image::  images/Sale_order_sale_order_lines.png
+        .. image::  images/Sale_order_sale_order_lines.png
 
     * We can also make the opposite operation: take a columns group and divide it in as many columns as desired. The surrounded green zones of the screen above are good examples. Precisely, the green framework up and on the right side takes the place of two columns, but contains 4 columns. 
 
@@ -107,6 +106,7 @@ You can use these values in the position attribute:
 Second Example:
 
 .. code-block:: xml
+
 	<record model="ir.ui.view" id="view_partner_form">
 	    <field name="name">res.partner.form.inherit</field>
 	    <field name="model">res.partner</field>

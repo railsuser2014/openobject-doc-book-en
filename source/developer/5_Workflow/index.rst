@@ -4,12 +4,13 @@ Business Process (The Workflow)
 
 Introduction
 ============
+
 The workflow system in Open ERP is a very powerful mechanism that can describe the evolution of documents (model) in time.
 
 Workflows are entirely customizable, they can be adapted to the flows and trade logic of almost any company. The workflow system makes Tiny ERP very flexible and allows it to easily support changing needs without having to program new functionalities.
 
-The workflow system has multiple goals:
---------------------------------------
+Goals
+-----
 
     * description of document evolution in time
     * automatic trigger of actions if some conditions are met
@@ -28,9 +29,9 @@ The first diagram represent a very basic workflow of an order:
 The order starts in the 'draft' state, when it is in redaction and not approved. When the user press on the 'Confirm' button, the invoice is created and the order comes into the 'CONFIRMED' state.
 
 Then, two operations are possible:
-++++++++++++++++++++++++++++++++++
 
 #. the order is done (shipped)
+
 #. the order is canceled 
 
 Let's suppose a company has a need not implemented in `TinyERP. For example, suppose their sales staff can only offer discounts of 15% or less. Every order having a discount above 15% must be approved by the sales manager.
@@ -116,12 +117,13 @@ The fields
 split_mode
 ----------
 
-.. image:: images/Wkf_split.png
+.. image::  images/Wkf_split.png
 
-    * XOR: One necessary transition, takes the first one found (default).
-    * OR : Take only valid transitions (0 or more) in sequential order. 
 
-    * AND: All valid transitions are launched at the same time (fork). 
+* XOR: One necessary transition, takes the first one found (default).
+* OR : Take only valid transitions (0 or more) in sequential order. 
+* AND: All valid transitions are launched at the same time (fork). 
+
 
 In the OR and AND separation mode, certain workitems can be generated.
 
@@ -131,8 +133,9 @@ join_mode:
 
 .. image:: images/Wkf_join.png
 
-    * **XOR**: One transition necessary to continue to the destination activity (default).
-    * **AND**: Waits for all transition conditions to be valid to execute the destination activity. 
+
+* **XOR**: One transition necessary to continue to the destination activity (default).
+* **AND**: Waits for all transition conditions to be valid to execute the destination activity. 
 
 kind:
 -----
@@ -312,7 +315,7 @@ Example:
 
 Let's suppose we handle our own bug database and that the action of marking a bug as valid needs the Testers role. In the example tree above, marking a bug as valid could be done by all the users having the following roles: Testers, Lead developper, Technical manager, CEO. 
 
-Creating a Workflow:
+Creating a Workflow
 ===================
 
 Steps for creating a simple state-changing workflow for a custom module called **mymod**
