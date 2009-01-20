@@ -1,3 +1,4 @@
+
 .. _terminologies-link:
 
 Terminologies
@@ -12,14 +13,16 @@ This page define all terminolgies. Objects in the OLAP cube use this convention.
    A schema is a collection of N dimensions. It's the meta description
    of cubes..
 
-.. _hierarchy-link
+.. _hierarchy-link:
+
 .. topic:: Hierarchy
 
    A schema is divided in hierarchy, which are divided in dimensions.
    The main use of hierarchy is to check that different axis can not
    use dimensions of the same hierarchy.
 
-.. _dimension-link
+.. _dimension-link:
+
 .. topic:: Dimension
 
    A dimension is an attribute, or set of attributes, by which you can
@@ -28,12 +31,14 @@ This page define all terminolgies. Objects in the OLAP cube use this convention.
    partner_id.country_id.state_ids or recursive 'parent_id'.
    A dimension is divided in levels.
 
-.. _level-link
+.. _level-link:
+
 .. topic:: Level
 
    One level of sub-categories defined by dimensions.
 
-.. _measure-link
+.. _measure-link:
+
 .. topic:: Measure
 
    Meta data of the quantity your are measuring. (value)
