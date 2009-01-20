@@ -33,7 +33,7 @@ Installation
 
 Install PostgreSQL 8.2.x with yast2 softwaremanager.
 
-.. note: Now PostgreSQL 8.3 works with TinyERP 4.2 with 4.2.3.2 and later
+.. note:: Now PostgreSQL 8.3 works with TinyERP 4.2 with 4.2.3.2 and later
 
 Launch PostgreSQL
 #################
