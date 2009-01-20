@@ -1,3 +1,4 @@
+
 =================================
 Creation of Reports (The Reports)
 =================================
@@ -20,16 +21,16 @@ There are mainly ''three types'' of reports in Open ERP:
 
 #. OpenOffice.org reports
 #. RML reports
-#. Custom reports (based on `PostgreSQL views and displayed within the interface)
+#. Custom reports (based on PostgreSQL views and displayed within the interface)
 
 
 Open Office - Designer
-============================
+======================
+
 .. Explain to design Report without Plugins, and then translate using the tiny_sxw2rml translator
 
 
-
-`OpenOffice.org reports are the most commonly used report formats. `OpenOffice.org Writer is used to generate a RML template, which in turn is used to generate a pdf printable report.
+OpenOffice.org reports are the most commonly used report formats. OpenOffice.org Writer is used to generate a RML template, which in turn is used to generate a pdf printable report.
 
 .. image: images/ooo_report_overview.png
 
@@ -39,20 +40,20 @@ Open Office - Designer
 
 :The .SXW template file:
 
-    * We use a .SXW file for the template, which is the OpenOffice 1.0 format. The template includes expressions in brackets or OpenOffice fields to point where the data from the Open ERP server will be filled in. This document is only used for developers, as a help-tool to easily generate the .RML file. Open ERP does not need this .SXW file to print reports. 
+    * We use a .SXW file for the template, which is the OpenOffice 1.0 format. The template includes expressions in brackets or OpenOffice fields to point where the data from the Open ERP server will be filled in. This document is only used for developers, as a help-tool to easily generate the .RML file. Open ERP does not need this .SXW file to print reports.
 
 :The .RML template:
 
-    * We generate a .RML file from the .SXW file using Open SXW2RML. A .RML file is a XML format that represent a .PDF document. It can be converted to a .PDF after. We use RML for more easy processing: XML syntax seems to be more common than PDF syntax. 
+    * We generate a .RML file from the .SXW file using Open SXW2RML. A .RML file is a XML format that represent a .PDF document. It can be converted to a .PDF after. We use RML for more easy processing: XML syntax seems to be more common than PDF syntax.
 
 :The report engine:
 
-    * The Open Report Engine process the .RML file inserting data from the database at each expression. For example, something like [= o.partner_id.country_id.name =] 
+    * The Open Report Engine process the .RML file inserting data from the database at each expression. For example, something like [= o.partner_id.country_id.name =]
 
 in the .RML file will be replaced by the name of the country of the partner of the printed invoice. This report engine produce the same .RML file where all expressions have been replaced by real data.
 The final document
 
-    * Finaly the .RML file is converted to PDF or HTML according to the need, using OpenReport's scripts. 
+    * Finaly the .RML file is converted to PDF or HTML according to the need, using OpenReport's scripts.
 
 Introduction
 ------------
@@ -61,9 +62,9 @@ In order to create a report, the general idea is to
 
 * Declare a report in a XML file that must be added in the update_xml section of the __terp__.py file.
 * Create a report model with OpenOffice.org writer, convert it to RML using Open sxw2rml (which can be downloaded here).
-* Optionally declare a custom parser in order to be able to use more functions than the functions provided by the default parser. We won't detail this third step here and only use the automatic parser. 
+* Optionally declare a custom parser in order to be able to use more functions than the functions provided by the default parser. We won't detail this third step here and only use the automatic parser.
 
-* The XML file that declares the report will be named travel_report.xml in the folder travel and will contain 
+* The XML file that declares the report will be named travel_report.xml in the folder travel and will contain
 
 .. code-block:: xml
 
@@ -79,7 +80,7 @@ In order to create a report, the general idea is to
         </terp>
 
 * As travel_report.xml also needs to be loaded, we modify the file __terp__.py so that the information associated with update_xml is now ['travel_view.xml', 'travel_report.xml'].
-* We create a report subfolder in the travel folder. This folder must contain the file tickets.rml.Open Office writer will first be used to create tickets.sxw. 
+* We create a report subfolder in the travel folder. This folder must contain the file tickets.rml.Open Office writer will first be used to create tickets.sxw.
 
 ::
 
@@ -92,7 +93,7 @@ In order to create a report, the general idea is to
 Access Objects and Fields
 -------------------------
 
-* In **Open Office writer**, we insert a new section inside which we create a 2x2 table, and type the same Python code, inside double brackets, as shown in the screenshot below : 
+* In **Open Office writer**, we insert a new section inside which we create a 2x2 table, and type the same Python code, inside double brackets, as shown in the screenshot below :
 
 .. image:: images/OOoReportModel.png
 
@@ -113,11 +114,9 @@ To carry trhough the next steps you will need to download and to untar `Open Rep
 
         ~/tinyerp/server/bin$ ./tinyerp-server.py --database=terp --update=travel
 
-We should have a report installed. Here is an example with two rooms booked in two different hostels 
+We should have a report installed. Here is an example with two rooms booked in two different hostels
 
 .. image:: images/HostelOfTheBeach_report.png
-
-
 
 Registering Report
 ------------------
@@ -129,17 +128,17 @@ The parsers are generally put into the folder report of the module. Here is the 
 
 .. code-block:: python
 
-        import time
-        from report import report_sxw
-         
-        class order(report_sxw.rml_parse):
-         	def __init__(self, cr, uid, name, context):
-          		super(order, self).__init__(cr, uid, name, context)
-          			self.localcontext.update({
-          			'time': time,
-         		})
-	        report_sxw.report_sxw('report.sale.order', 'sale.order',
-		        'addons/sale/report/order.rml', parser=order, header=True)
+  import time
+  from report import report_sxw
+
+  class order(report_sxw.rml_parse):
+    def __init__(self, cr, uid, name, context):
+      super(order, self).__init__(cr, uid, name, context)
+      self.localcontext.update({
+      'time': time,
+      })
+
+  report_sxw.report_sxw('report.sale.order', 'sale.order', 'addons/sale/report/order.rml', parser=order, header=True)
 
 The parser inherit from the report_sxw.rml_parse object and it add to the localcontext, the function time so it will be possible to call it in the report.
 
@@ -149,7 +148,7 @@ After an instance of report_sxw.report_sxw is created with the parameters:
     * the object name on which the report is defined
     * the path to the rml file
     * the parser to use for the report (by default rml_parse)
-    * a boolean to add or not the company header on the report (default True) 
+    * a boolean to add or not the company header on the report (default True)
 
 :The xml definition:
 
@@ -159,19 +158,19 @@ Here is an example for the sale order report:
 
 .. code-block:: xml
 
-        <?xml version="1.0"?>
-        <terp>
-	        <data>
-		        <report
-           			id="report_sale_order"
-           			string="Print Order"
-           			model="sale.order"
-           			name="sale.order"
-           			rml="sale/report/order.rml"
-           			auto="False"/>
-           			header="False"/>
-         	</data>
-        </terp>
+  <?xml version="1.0"?>
+  <terp>
+    <data>
+      <report
+           id="report_sale_order"
+           string="Print Order"
+           model="sale.order"
+           name="sale.order"
+           rml="sale/report/order.rml"
+           auto="False"/>
+           header="False"/>
+     </data>
+  </terp>
 
 The arguments are:
 
@@ -181,9 +180,9 @@ The arguments are:
     * name: the name of the report without the first "report."
     * rml: the path to the rml file
     * auto: boolean to specify if the server must generate a default parser or not
-    * header: allows to enable or disable the report header located in "[server_dir]/bin/addons/custom" 
-    
-    
+    * header: allows to enable or disable the report header located in "[server_dir]/bin/addons/custom"
+
+
 Design Complex Report
 ======================
 
@@ -214,8 +213,10 @@ XML-XSLT Report
 
 RML reports don't require programming but require two simple XML files to be written:
 
-    * a file describing the data to export (*.xml)
-    * a file containing the presentation rules to apply to that data (*.xsl) 
+  * a file describing the data to export (\*.xml)
+  * a file containing the presentation rules to apply to that data (\*.xsl)
+
+.. *
 
 .. image:: images/automatic-reports.png
 
@@ -232,14 +233,14 @@ XML Template
 
         <?xml version="1.0"?>
 
-            <ids> 
+            <ids>
             <id type="fields" name="id">
 
-                <name type="field" name="name"/> 
-                <ref type="field" name="ref"/> 
+                <name type="field" name="name"/>
+                <ref type="field" name="ref"/>
 
-            </id> 
-            </ids> 
+            </id>
+            </ids>
 
 XML data file (generated)
 
@@ -247,69 +248,69 @@ XML data file (generated)
 
         <?xml version="1.0"?>
 
-            <ids> 
+            <ids>
             <id>
 
-                <name>Tiny sprl</name> 
-                <ref>pnk00</ref> 
+                <name>Tiny sprl</name>
+                <ref>pnk00</ref>
 
             </id><id>
 
-                <name>ASUS</name> 
-                <ref></ref> 
+                <name>ASUS</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Agrolait</name> 
-                <ref></ref> 
+                <name>Agrolait</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Banque Plein-Aux-As</name> 
-                <ref></ref> 
+                <name>Banque Plein-Aux-As</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>China Export</name> 
-                <ref></ref> 
+                <name>China Export</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Ditrib PC</name> 
-                <ref></ref> 
+                <name>Ditrib PC</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Ecole de Commerce de Liege</name> 
-                <ref></ref> 
+                <name>Ecole de Commerce de Liege</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Elec Import</name> 
-                <ref></ref> 
+                <name>Elec Import</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Maxtor</name> 
-                <ref></ref> 
+                <name>Maxtor</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Mediapole SPRL</name> 
-                <ref></ref> 
+                <name>Mediapole SPRL</name>
+                <ref></ref>
 
             </id><id>
 
-                <name>Opensides sprl</name> 
-                <ref>os</ref> 
+                <name>Opensides sprl</name>
+                <ref>os</ref>
 
             </id><id>
 
-                <name>Tecsas sarl</name> 
-                <ref></ref> 
+                <name>Tecsas sarl</name>
+                <ref></ref>
 
-            </id> 
-            </ids> 
+            </id>
+            </ids>
 
 XSL stylesheet
 
@@ -319,9 +320,9 @@ XSL stylesheet
 
             <xsl:template match="/">
 
-                <xsl:apply-templates select="ids"/> 
+                <xsl:apply-templates select="ids"/>
 
-            </xsl:template> 
+            </xsl:template>
 
             <xsl:template match="ids">
 
@@ -331,25 +332,25 @@ XSL stylesheet
 
                         <pageTemplate>
 
-                            <frame id="col1" x1="2cm" y1="2.4cm" width="8cm" height="26cm"/> 
-                            <frame id="col2" x1="11cm" y1="2.4cm" width="8cm" height="26cm"/> 
+                            <frame id="col1" x1="2cm" y1="2.4cm" width="8cm" height="26cm"/>
+                            <frame id="col2" x1="11cm" y1="2.4cm" width="8cm" height="26cm"/>
 
-                        </pageTemplate> 
+                        </pageTemplate>
 
-                    </template> 
+                    </template>
 
                 <stylesheet>
 
-                    <blockTableStyle id="ids"> 
+                    <blockTableStyle id="ids">
 
-                        <blockFont name="Helvetica-BoldOblique" size="12" start="0,0" stop="-1,0"/> 
-                        <lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,0"/> 
+                        <blockFont name="Helvetica-BoldOblique" size="12" start="0,0" stop="-1,0"/>
+                        <lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,0"/>
 
-                        <lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,-1"/> 
+                        <lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,-1"/>
 
-                    </blockTableStyle> 
+                    </blockTableStyle>
 
-                </stylesheet> 
+                </stylesheet>
 
                 <story>
 
@@ -357,30 +358,30 @@ XSL stylesheet
 
                         <tr>
 
-                            <td t="1">Ref.</td> 
-                            <td t="1">Name</td> 
+                            <td t="1">Ref.</td>
+                            <td t="1">Name</td>
 
-                        </tr> 
-                        <xsl:apply-templates select="id"/> 
+                        </tr>
+                        <xsl:apply-templates select="id"/>
 
-                    </blockTable> 
+                    </blockTable>
 
-                </story> 
-                </document> 
+                </story>
+                </document>
 
-            </xsl:template> 
+            </xsl:template>
 
             <xsl:template match="id">
 
                 <tr>
 
-                    <td><xsl:value-of select="ref"/></td> 
-                    <td><para><xsl:value-of select="name"/></para></td> 
+                    <td><xsl:value-of select="ref"/></td>
+                    <td><para><xsl:value-of select="name"/></para></td>
 
-                </tr> 
+                </tr>
 
-            </xsl:template> 
-            </xsl:stylesheet> 
+            </xsl:template>
+            </xsl:stylesheet>
 
 Resulting RML file (generated)
 
@@ -388,7 +389,7 @@ Resulting RML file (generated)
 
         <?xml version="1.0"?>
 
-            <document> 
+            <document>
             ...
 
                 <story>
@@ -397,98 +398,98 @@ Resulting RML file (generated)
 
                         <tr>
 
-                            <td t="1">Ref.</td> 
-                            <td t="1">Name</td> 
+                            <td t="1">Ref.</td>
+                            <td t="1">Name</td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td>pnk00</td> 
-                            <td><para>Tiny sprl</para></td> 
+                            <td>pnk00</td>
+                            <td><para>Tiny sprl</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>ASUS</para></td> 
+                            <td></td>
+                            <td><para>ASUS</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Agrolait</para></td> 
+                            <td></td>
+                            <td><para>Agrolait</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Banque Plein-Aux-As</para></td> 
+                            <td></td>
+                            <td><para>Banque Plein-Aux-As</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>China Export</para></td> 
+                            <td></td>
+                            <td><para>China Export</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Ditrib PC</para></td> 
+                            <td></td>
+                            <td><para>Ditrib PC</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Ecole de Commerce de Liege</para></td> 
+                            <td></td>
+                            <td><para>Ecole de Commerce de Liege</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Elec Import</para></td> 
+                            <td></td>
+                            <td><para>Elec Import</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Maxtor</para></td> 
+                            <td></td>
+                            <td><para>Maxtor</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td></td> 
-                            <td><para>Mediapole SPRL</para></td> 
+                            <td></td>
+                            <td><para>Mediapole SPRL</para></td>
 
-                        </tr> 
+                        </tr>
                         <tr>
 
-                            <td>os</td> 
-                            <td><para>Opensides sprl</para></td> 
+                            <td>os</td>
+                            <td><para>Opensides sprl</para></td>
 
-                        </tr> 
-                        <tr> 
+                        </tr>
+                        <tr>
                         <td></td>
 
-                            <td><para>Tecsas sarl</para></td> 
+                            <td><para>Tecsas sarl</para></td>
 
-                        </tr> 
+                        </tr>
 
-                    </blockTable> 
+                    </blockTable>
 
-                </story> 
+                </story>
 
-            </document> 
+            </document>
 
 Fore more information on the formats used:
 
     * RML : http://reportlab.com/docs/RML_UserGuide_1_0.pdf
     * XSL - Specification : http://www.w3.org/TR/xslt
-    * XSL - Tutorial : http://www.zvon.org/xxl/XSLTutorial/Books/Output/contents.html 
+    * XSL - Tutorial : http://www.zvon.org/xxl/XSLTutorial/Books/Output/contents.html
 
 All these formats use XML:
 
-    * http://www.w3.org/XML/ 
+    * http://www.w3.org/XML/
 
 ..        Improvement of school management module
         =======================================
@@ -506,7 +507,7 @@ Select Tiny Report > Server parameters or Open ERP Report > Server parameters in
 
 .. index::
    single: Report; Modify
-.. 
+..
 
 Modifying a report
 -------------------
@@ -529,11 +530,11 @@ OpenOffice.org then opens the report in edit mode for you. You can modify it usi
 
 The document is modified in its English version. It will be translated as usual by Open ERP's translation system when you use it through the client interface, if you've personalized your own setup to translate to another language for you. So you only need to modify the template once, even if your system uses other languages – but you'll need to add translations as described earlier in this chapter if you add fields or change the content of the existing ones.
 
-.. tip::   **Attention**  *Older reports* 
+.. tip::   **Attention**  *Older reports*
 
-	The older reports haven't all been converted into the new form supported by Open ERP. The data expressions in the old format are shown within double brackets and not in OpenOffice.org fields.
+The older reports haven't all been converted into the new form supported by Open ERP. The data expressions in the old format are shown within double brackets and not in OpenOffice.org fields.
 
-	You can transform an old report format to the new format from the OpenOffice.org menu Tiny Report > Convert Bracket–Fields.
+You can transform an old report format to the new format from the OpenOffice.org menu Tiny Report > Convert Bracket–Fields.
 
 From the Tiny toolbar in OpenOffice.org it's possible to:
 
@@ -545,34 +546,38 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
 
 * add an expression: enter an expression in the Python language to calculate values from any fields in the selected object.
 
-.. tip::   **Technique**  *Python Expressions* 
+.. tip::   **Technique**  *Python Expressions*
 
-	Using the Expression button you can enter expressions in the Python language. These expressions can use all of the object's fields for their calculations. 
+Using the Expression button you can enter expressions in the Python language. These expressions can use all of the object's fields for their calculations.
 
-	For example if you make a report on an order you can use the following expression: 
+For example if you make a report on an order you can use the following expression:
 
-	'%.2f' % (amount_total * 0.9,) 
+.. code-block:: python
 
-	In this example, amount_total is a field from the order object. The result will be 90% of the total of the order, formatted to two decimal places.
+  '%.2f' % (amount_total * 0.9,)
 
- *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
+.. *
+
+In this example, amount_total is a field from the order object. The result will be 90% of the total of the order, formatted to two decimal places.
+
+ *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server*
 
 You can check the result in Open ERP using the menu  *Sales Management > Sales Orders > All Orders* .
 
 .. index::
    single: Report; New
-.. 
+..
 
 Creating a new report
------------------------
+---------------------
 
- *Tiny Report > Open a new report* \ ``Sale Order``\   *Open New Report*  *Use Model in Report* 
+ *Tiny Report > Open a new report* \ ``Sale Order``\   *Open New Report*  *Use Model in Report*
 
 The general template is made up of loops (such as the list of selected orders) and fields from the object, which can also be looped. Format them to your requirements then save the template.
 
-The existing report templates make up a rich source of examples. You can start by adding the loops and several fields to create a minimal template. 
+The existing report templates make up a rich source of examples. You can start by adding the loops and several fields to create a minimal template.
 
 When the report has been created, send it to the server by clicking  *Tiny Report > Send to server* , which brings up the  *Send to server*  dialog box. Enter the  *Technical Name*  of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in  *Report Name* , check the checkbox  *Corporate Header*  and finally click  *Send Report to Server* .
 
-To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type* 
+To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type*
 

@@ -61,7 +61,7 @@ Prefined names
 
 :_auto:
 
-Determines whether a corresponding `PostgreSQL table must be generated automatically from the object. Setting _auto to False can be useful in case of Open ERP objects generated from `PostgreSQL views. See the "Reporting From PostgreSQL Views" section for more details.
+Determines whether a corresponding PostgreSQL table must be generated automatically from the object. Setting _auto to False can be useful in case of Open ERP objects generated from PostgreSQL views. See the "Reporting From PostgreSQL Views" section for more details.
 
 :_columns (required):
 

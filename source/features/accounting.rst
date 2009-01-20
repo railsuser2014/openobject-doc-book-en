@@ -30,8 +30,10 @@ Integration Benefits:
 
 Links:
 
-* 
+
 .. raw:: html
-    
+
     <a target="_blank" href="http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=accounting_en">Demonstration</a>
+
 * Module: accounting
+
