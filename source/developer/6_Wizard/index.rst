@@ -329,11 +329,6 @@ Here is, for example, the **__terp__.py** file for the account module.
 
 
 
-
-
-
-
-
 osv_memory Wizard System
 ========================
 To develop osv_memory wizard, just create a normal object, But instead of inheriting from osv.osv, Inherit from osv.osv_memory. Methods of "wizard" are in object and if the wizard is complex, You can define workflow on object. osv_memory object is managed in memory instead of storing in postgresql.
