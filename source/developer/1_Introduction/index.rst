@@ -57,9 +57,43 @@ This login is only needed if you intend to commit on bazaar on openerp-commiter 
 Pushing a new branch
 --------------------
 
-You may have to create an account on
-launchpad first, register your public key, and subscribe to the `openerp-community <https://launchpad.net/~openerp-community>`_ team. Then, you
-can push your branch. Suppose you want to push your addons::
+If you want to contribute on OpenERP or OpenObject, here is the proposed method:
+
+  * You create a branch on launchpad on the project that interest you. It's
+    important that you create your branch on launchpad and not on your local
+    system so that we can easily merge, share code between projects and
+    centralize futur developments.
+  * You develop your own features or bugfixes
+    in your own branch on launchpad. Don't forget to set the status of your
+    branch (new, experimental, development, mature, ...) so that contributors
+    knows what they can use or not.
+  * Once your code is good enough, you propose your branch for merging
+  * Your work will be evaluated by one responsible of the commiters team.
+
+    - If they accept your branch for integration in the official version, they
+      will submit to the quality team that will review and merge in the official
+      branch.
+    - If the commiter team refuses your branch, they will explain why
+      so that you can review your code to better fits guidelines (problem for
+      futur migrations, ...)
+
+The extra-addons branch, that stores all extra modules, is directly accessible
+to all commiters. If you are a commiter, you can work directly on this branch
+and commit your own work. This branch do not require a validation of the
+quality team. You should put there your special modules for your own customers.
+
+If you want to propose or develop new modules, we suggest you to create your
+own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
+and develop within your branch. You can fill in a bug to request that
+your modules are integrated in one of the two branches:
+
+  * extra-addons : if your module touches a few companies
+  * addons : if your module will be usefull for most of the companies
+
+We invite all our partners and contributors to work in that way so that we can
+easily integrate and share the work done between the different projects.
+
+Suppose you want to push your addons::
 
   cd addons
   bzr push lp:~openerp-community/openobject-addons/YOURLOGIN_YOURBRANCHNAME
@@ -74,20 +108,129 @@ done this, your commit will be applied on launchpad directly (unless you use ``-
 
 Development Environment
 =======================
-        **remaining** (Not any Exact idea about what to put)
+
+The new development process uses Bazaar via launchpad.net instead of Subversion.
+Bazaar offers a flexibility with this distributed model. You can see our
+branches on https://code.launchpad.net/~openerp.
+
+.. describe:: Explanation of directories:
+
+Two teams have been created on launchpad:
+
+  * OpenERP quality teams --> they can commit on:
+
+    - lp:~openerp/openobject-addons/4.2
+    - lp:~openerp/openobject-addons/trunk
+    - lp:~openerp/openobject-addons/4.2-extra-addons
+    - lp:~openerp/openobject-addons/trunk-extra-addons
+    - lp:~openerp/openobject-bi/trunk-addons
+    - lp:~openerp/openobject-bi/trunk-cli
+    - lp:~openerp/openobject-bi/trunk-client-web
+    - lp:~openerp/openobject-client/4.2
+    - lp:~openerp/openobject-client/trunk
+    - lp:~openerp/openobject-client-web/4.2
+    - lp:~openerp/openobject-client-web/trunk
+    - lp:~openerp/openobject-server/4.2
+    - lp:~openerp/openobject-server/trunk
+
+  * 0penERP-commiter --> they can commit on:
+
+    - lp:~openerp/openobject-addons/4.2-extra-addons
+    - lp:~openerp/openobject-addons/trunk-extra-addons
+
+In this group, we include some of our partners who will be selected on a meritocracy basis by the quality team.
+
+  * Contributors --> they can commit on:
+
+    - lp:~openerp-community
+
+[Read more about :ref:`Open ERP Team <openerp-team>`]
+        
+.. describe:: How can I be included in OpenERP-commiter team ?
+
+Any contributor who is interested to become a commiter must show his interest
+on working for openerp project and his ability to do it in a proper way as the
+selection for this group is based on meritocracy. It can be by proposing bug
+fixes, features requested on our :ref:`bug tracker <bug-tracker-link>` system.
+You can even suggest additional modules and/or functionalities on our :ref:`bug
+tracker <bug-tracker-link>` system.
+
+.. describe:: How can I suggest some additionals modules or functionalities ?
+
+To create some additionals modules and/or functionnalities and include them in
+the project, this is the way to do:
+
+  #. open a branch in launchpad
+  #. report and suggest your work via your new branch to our :ref:`bug tracker
+     <bug-tracker-link>` system (there are two way : bugs report for bug and
+     blueprint for idea / functionnality)
+  #. wait for approval by our quality team
+
+Or the quality team approved your work and merge it into the official branch
+(like explained in the :ref:`bug tracker <bug-tracker-link>` section), or they
+refused it and ask you to improve your work before merging it in our official
+branch.
         
 Configuration
 =============
 
-        **remaining** (Config for : bzr or tiny)
+        **remaining**
         
 Command Line Options
 ====================
 
-        **remaining** (Options for : bzr or tiny)
+Checkout method::
+
+  bzr co lp:~openerp/openobject-addons/trunk -- to make a checkout
+  bzr up                                     -- to make an update
+  bzr ci                                     -- to commit
+
+Creating a branch::
+
+  bzr branch lp:~<url> <local dir>             -- to create a branch locally
+  bzr pull                                     -- to update the branch
+  bzr push lp:~<url>                           -- to include your changes in the remote branch
+
+In any cases, when you experience some problems, you can do::
+
+  bzr help
+
+or ``bzr help <command>``. e.g.::
+
+  bzr help branch
 
 
 Open ERP Server & Web Client
 ============================
-        **remaining** (intro/installation/other???)
+
+Get a clone of each repository::
+
+  bzr clone lp:~openerp/openobject-server/trunk server
+  bzr clone lp:~openerp/openobject-client/trunk client
+  bzr clone lp:~openerp/openobject-client-web/trunk client-web
+  bzr clone lp:~openerp/openobject-addons/trunk addons
+
+If you want to get a clone of the extra-addons repository, you can execute this command::
+
+  bzr clone lp:~openerp-commiter/openobject-addons/trunk-extra-addons extra-addons
+
+run the setup scripts in the respective directories::
+
+  python2.4 setup.py build
+  python2.4 setup.py install
+
+Currently the initialisation procedure of the server parameter --init=all to
+populate the database seems to be broken in trunk.
+
+It is recommended to create a new database via the gtk-client. Before that the web-client will not work.
+
+Start OpenERP server like this: ::
+
+  ./tinyerp-server.py --addons-path=/path/to/my/addons
+
+The ``bin/addons`` will be considered as default addons directory which can be
+overriden by the ``/path/to/my/addons/``. That is if an addon exists in
+``bin/addons`` as well as ``/path/to/my/addons`` (custom path) the later one will
+be given preference over the ``bin/addons`` (default path).
+
 
