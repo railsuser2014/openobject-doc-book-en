@@ -10,5 +10,7 @@
     mandrake
     mandriva
     slackware
+    suse
+    opensuse
 
 
