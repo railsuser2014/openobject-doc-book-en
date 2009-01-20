@@ -7,5 +7,8 @@
     centos
     debian
     gentoo
+    mandrake
+    mandriva
+    slackware
 
 
