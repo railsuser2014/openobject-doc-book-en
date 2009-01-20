@@ -1,14 +1,8 @@
-Cube Browser - Web Client for BI
---------------------------------
+Loading the Cube
+================
 
-Selecting a Cube
-++++++++++++++++
-
-A Cube can be selected from the combo on top-left corner of the interface.
-
-.. image::  images/SelectingTheCube1.png
-
-Selecting from combo lead to browse the Cube to its components.
-
-.. image::  images/CubeSelected.png
+Make the steps 
+#. Selecting Schema
+#. Selecting Cube 
+#. Open the cube to show all
 

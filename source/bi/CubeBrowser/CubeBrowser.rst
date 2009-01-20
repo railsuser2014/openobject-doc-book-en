@@ -8,7 +8,7 @@ It provides user with a friendly layer to create MDX Query on his previously des
 And if they don't require the full power of query capabilities, users can simply explore information in existing reports—formatting and interacting with data to meet his reporting needs.
 
 Goal behind Cube Browser
-========================
+------------------------
 
 Provide user with a thin client to make reporting far more efficient. 
 Let user use full power of MDXAlchemy engine. 

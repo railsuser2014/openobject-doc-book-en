@@ -1,4 +1,6 @@
 
+.. _openerp-team:
+
 Working in teams
 ----------------
 

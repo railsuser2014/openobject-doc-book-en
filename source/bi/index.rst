@@ -89,6 +89,7 @@ Part 7 : Using Cube Browser
     CubeBrowser/CubeBrowserSwap
     CubeBrowser/CubeBrowserSlicer
     CubeBrowser/CubeBrowserDrill
+    CubeBrowser/CubeBrowserGraph
 
 Part 8 : Using Cube Designer
 ----------------------------

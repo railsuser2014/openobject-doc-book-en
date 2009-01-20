@@ -1,5 +1,5 @@
 Adding Slicer
--------------
+=============
 
 A Slicer is filtering on the data fetched by a MDX Query.
 
