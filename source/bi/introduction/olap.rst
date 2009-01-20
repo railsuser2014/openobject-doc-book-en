@@ -1,7 +1,7 @@
 .. _olap-link:
 
-What is OLAP ?
-==============
+OLAP
+====
 
 Online Analytical Processing (OLAP) means analysing large quantities of data in real-time. Unlike Online Transaction Processing (OLTP), where typical operations read and modify individual and small numbers of records, OLAP deals with data in bulk, and operations are generally read-only. The term 'online' implies that even though huge quantities of data are involved — typically many millions of records, occupying several gigabytes — the system must respond to queries fast enough to allow an interactive exploration of the data. As we shall see, that presents considerable technical challenges.
 

@@ -6,9 +6,6 @@ Terminologies
 This page define all terminolgies. Objects in the OLAP cube use this convention. 
 
 
-Definitions
------------
-
 .. topic:: Schema
 
    A schema is a collection of N dimensions. It's the meta description
