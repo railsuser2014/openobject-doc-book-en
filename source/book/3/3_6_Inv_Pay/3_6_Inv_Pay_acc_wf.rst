@@ -3,8 +3,10 @@
    single: Accounting workflow
 .. 
 
+.. 138
+
 Accounting workflow and the automatic generation of invoices
-=============================================================
+============================================================
 
 The chart below shows the financial workflow followed by each invoice.
 
@@ -20,7 +22,7 @@ In general, when you use all of Open ERP's functionality, invoices don't need t
 .. 
 
 Draft Invoices
----------------
+--------------
 
 The system generates invoice proposals which are initially set to the \ ``Draft``\   state. While these invoices remain unconfirmed they have no accounting impact within the system. There's nothing to stop users creating their own invoices if they want to.
 
@@ -35,7 +37,7 @@ The information that's needed for invoicing is automatically taken from the Part
 	* This enables you to create invoices in advance, without approving them at the same time. You're also able to list all of the invoices awaiting approval.
 
 Open or Pro-Forma Invoices
----------------------------
+--------------------------
 
 It's possible to approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state. A Pro Forma invoice doesn't yet have an invoice number, but the accounting entries on the invoice that's created correspond to the amounts that Open ERP will record as the customer's payables.
 
@@ -53,7 +55,7 @@ An open invoice has a unique invoice number. The invoice is sent to the customer
 .. 
 
 Reconciling invoice entries and payments
------------------------------------------
+----------------------------------------
 
 In Open ERP an invoice is considered to be paid when its accounting entries have been reconciled with the payment entries. If there hasn't been a reconciliation an invoice can remain in the open state until you have entered the payment.
 
@@ -106,7 +108,7 @@ You can create the accounting records directly, without using the invoice and ac
 You should really use the forms designed for invoices and bank statements rather than manual data entry records, however. These are simpler and are managed within an error-control system.
 
 A records-based system
------------------------
+----------------------
 
 All the accounting transactions in Open ERP are based on records, whether they're created by an invoice or created directly.
 

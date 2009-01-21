@@ -1,6 +1,8 @@
 
+.. 142
+
 Invoicing
-===========
+=========
 
 In Open ERP, the concept of “invoice” includes the following documents:
 
@@ -60,7 +62,7 @@ It's also possible to enter invoices manually. This is usually done for invoices
 For example, if you haven't noted that the customer is tax-exempt, the invoice you generate from an Order will contain tax at the normal rates. It's then possible to edit this out of the invoice before validating it.
 
 Entering a customer invoice
------------------------------
+---------------------------
 
 The principle of entering data for invoices in Open ERP is very simple, as it enables non-accountant users to create their own invoices. This means that your accounting information can be kept up to date all the time as orders are placed and received, and their taxes are calculated.
 
@@ -196,7 +198,7 @@ Accounting entries corresponding to this invoice are automatically generated whe
 ..
    
 Managing taxes
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 Details on the product form and the partner form determine the selection of applicable taxes for an invoice line. By default Open ERP takes account of all the taxes defined in the product form. If a tax is defined in the Properties tab of the Partner form then Open ERP will base its tax calculation on the Partner taxes instead, so a Partner that is defined as tax-exempt, for example, will take precedence over taxes defined in the Product.
 
@@ -240,7 +242,7 @@ If you haven't coded the parameters in the customer form correctly, Open ERP wi
 	* product description.
 
 Cancelling an invoice
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 By default Open ERP won't allow you to cancel an invoice once it has been approved. Since accounting entries have been created you theoretically can't go back and delete them. However in many cases it's more convenient to cancel an invoice when there's an error than to produce a credit note and reconcile the two entries. Your attitude to this will be influenced by current legislation in your accounting jurisdiction and your adherence to accounting purity.
 
@@ -303,7 +305,7 @@ Attention: canceling an invoice will cause a break in the number sequence of you
 			By making this information easily accessible while you're invoicing, Open ERP greatly simplifies your work in creating the invoice.
 
 Creating a supplier invoice
------------------------------
+---------------------------
 
 The form that manages supplier invoices is very similar to the one for customer invoices. However, it's been adapted to simplify rapid data entry and monitoring of the amounts recorded.
 
@@ -380,7 +382,7 @@ In this case you can modify a value in the lines that the total's based on, or t
 When the totals tally you can validate the invoice. Open ERP then generates the corresponding accounting entries. You can manage those entries using the  *Account*  fields on the invoice and on each of the invoice lines. 
 
 Credit Notes
--------------
+------------
 
 Entering a customer credit note is almost identical to entering a customer invoice. You just start from the menu  *Financial Accounting > Invoices > Customer Refunds* .
 
@@ -395,7 +397,7 @@ It's easy to generate a credit note quickly from an existing invoice. To do this
 	In the GTK client you'd make a multiple selection of invoices by Ctrl-clicking whichever lines you want to select. Then you'd execute the action by clicking the Action (gears) icon on the icon toolbar and selecting Refund invoice.
 
 Invoice payment
------------------
+---------------
 
 The invoice is automatically marked as paid by Open ERP once invoice entries have been reconciled with payment entries. You yourself don't have to mark the invoices as paid: Open ERP manages that when you reconcile your payments.
 

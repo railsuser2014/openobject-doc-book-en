@@ -2,8 +2,10 @@
   single: Financial Analysis
 ..
 
+.. 187
+
 Company Financial Analysis
-===========================
+==========================
 
 You'll see here the analysis tools for your company's financial situation, in particular:
 
@@ -14,7 +16,7 @@ You'll see here the analysis tools for your company's financial situation, in pa
 * the accounting dashboard.
 
 Management Indicators
------------------------
+---------------------
 
 .. tip::   **Terminology**  *Financial Indicators* 
 
@@ -39,7 +41,7 @@ Indicators defined by default in Open ERP are the following:
 	So it's best not to calculate all of the indicators at once, but just a small selection to keep calculation time within limits.
 
 Time analysis of indicators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can analyze the financial indicators along two axes. You must have a figure calculated at a particular instant of time when you compare accounts, balances and the ratios between them. But you can also calculate a time series to follow the change of a given indicator throughout the life of the company.
 
@@ -54,7 +56,7 @@ Once this module is installed, you can click on a financial indicator to get a g
 *History of an accounting indicator*
 
 Defining your own indicators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can define your own indicators in Open ERP using the menu  *Financial Management > Configuration > Custom Reporting > New Reporting Item Formula* .
 
@@ -87,7 +89,7 @@ So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / ba
 ..
 
 Good management budgeting
----------------------------
+-------------------------
 
 Open ERP manages its budgets using both General and Analytic Accounts. You'll see how to do this here for General Accounts and then in Chapter 9 for Analytical Accounts.
 
@@ -120,7 +122,7 @@ To do this, click  *Add*  and make multiple selections for the different account
 To print a budget and make calculations of expenditure to budget use the menu  *Financial Management > Reporting > Print Budgets* . Open ERP then gives you a list of available budgets. Select one or more budgets and then click  *Print*  to configure the report. The following figure gives an example of a budget produced by Open ERP.
 
 The Accounting Dashboard
--------------------------
+------------------------
 
 
 	.. image::  images/account_board.png

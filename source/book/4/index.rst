@@ -1,10 +1,10 @@
 
 
 Managing your company effectively
-===========================
+=================================
 
 .. toctree::
-    
+
     4_0
     4_09_Accounts/4_09_Accounts
     4_09_Accounts/4_09_Accounts_analytic_chart

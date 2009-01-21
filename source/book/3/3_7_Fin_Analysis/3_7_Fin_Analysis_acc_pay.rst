@@ -2,8 +2,10 @@
    single: Accounts payable
 .. 
 
+.. 170
+
 Managing accounts payable / creditors and accounts receivable / debtors
-=========================================================================
+=======================================================================
 
 Open ERP provides numerous tools for managing customer and supplier accounts. You'll see here:
 
@@ -14,7 +16,7 @@ Open ERP provides numerous tools for managing customer and supplier accounts. Y
 * detailed analysis of individual partners.
 
 Financial analysis of partners
--------------------------------
+------------------------------
 
 When members of your accounts department sign on to the Open ERP system, they're immediately presented with the  *Accounting Dashboard.*  By default it contains a useful graph for analyzing Receivables. To get access to it, install the module \ ``board_account``\  . Then look at it using the menu  *Dashboards > Accounting > Accounting Dashboard* .
 
@@ -73,7 +75,7 @@ Finally you can look up individual account entries by searching for useful infor
 ..
 
 Multi-step follow-ups
------------------------
+---------------------
 
 To automate the management of followups (reminders) you must install the module \ ``account_followup``\  . This is installed automatically as part of the accounting profile, but is not part of the other profiles.
 
@@ -124,7 +126,7 @@ The different reports are classic Open ERP screens, so you can filter them and 
 *Summary screen for follow-ups*
 
 Partner situation
--------------------
+-----------------
 
 In daily use of Open ERP a senior manager will often need to search quickly for financial information amongst partner data. For this she can use the buttons to the right of form when she opens a partner form, to go directly to:
 
