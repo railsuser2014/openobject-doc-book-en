@@ -198,7 +198,7 @@ Overriding default methods
 
 All Open ERP objects define a set of methods as we will see in the section "Predefined Methods". Of course, you can also add your own methods to a particular object.
 
-All methods defined on an object are accessible from the outside (other objects or RPC), but don't forget the Python convention that makes a method private, if it is prefixed with an underscore. 
+All methods defined on an object are accessible from the outside (other objects or RPC), but don't forget the Python convention that makes a method private, if it is prefixed with two underscores. 
 
 
 The predefined methods may be classified into 5 categories: the basic methods, methods to manipulate default values, methods to get the permissions, methods to return the fields and views, and finally those naming the resource.
