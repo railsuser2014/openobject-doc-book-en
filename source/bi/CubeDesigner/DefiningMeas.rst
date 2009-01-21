@@ -1,7 +1,7 @@
 Defining Measure
 ==============
 
-:ref:`Measure <measure-link> are the fact or quantitative values. It comes from the fact table configured in the cube.
+:ref:`Measure <measure-link>` are the fact or quantitative values. It comes from the fact table configured in the cube.
 
 We will make the measure for the same example. Measure type specifies whether it will be column base or sql expression based.
 

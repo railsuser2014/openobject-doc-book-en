@@ -1,21 +1,19 @@
 Graphs
 ======
 
-Write something on the graph 
+Graphs presnts the grid output on the graphs or graphical way by plotting on the axis. 
 
-Show different type of graphs 
+Lets take the case:
 
-Simple Bar Graph
-----------------
+.. image::  images/data_browser10.png
+   :scale: 65
 
-Bar Graph with more than one measure
--------------------------------------
+For the above grid when we will generate graph it will be:
 
+.. image::  images/data_browser12.png
+   :scale: 65
 
-Bar Graph with more than one element on both axis
---------------------------------------------------
+When we have childrens expanded for the one element on the axis and the other is not drilled. Their will be two graph to show the same
 
-
-Stacked Graph to show childrens
--------------------------------
-
+.. image::  images/data_browser17.png
+   :scale: 65
