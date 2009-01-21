@@ -3,8 +3,6 @@
    single: Payments Order
 .. 
 
-.. 162
-
 Management of payments
 ======================
 

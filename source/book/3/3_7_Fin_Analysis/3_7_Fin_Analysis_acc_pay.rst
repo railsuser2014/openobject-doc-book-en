@@ -2,8 +2,6 @@
    single: Accounts payable
 .. 
 
-.. 170
-
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================
 

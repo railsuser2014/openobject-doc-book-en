@@ -2,9 +2,6 @@
    single: Accounting; Entries
 .. 
 
-
-.. 153
-
 Accounting entries
 ==================
 

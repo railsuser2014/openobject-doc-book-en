@@ -2,8 +2,6 @@
   single: Financial Analysis
 ..
 
-.. 187
-
 Company Financial Analysis
 ==========================
 

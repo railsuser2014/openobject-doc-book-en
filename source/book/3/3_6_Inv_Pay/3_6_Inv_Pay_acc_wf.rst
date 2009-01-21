@@ -3,8 +3,6 @@
    single: Accounting workflow
 .. 
 
-.. 138
-
 Accounting workflow and the automatic generation of invoices
 ============================================================
 

@@ -1,6 +1,4 @@
 
-.. 135
-
 From invoice to payment
 #######################
 

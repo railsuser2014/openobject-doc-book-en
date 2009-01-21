@@ -1,6 +1,4 @@
 
-.. 178
-
 Statutory taxes and accounts
 ============================
 

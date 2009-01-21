@@ -2,8 +2,6 @@
    single: Chart of Accounts
 .. 
 
-.. 196
-
 Chart of Accounts
 =================
 
