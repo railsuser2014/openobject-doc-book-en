@@ -50,8 +50,8 @@ Python components::
 Database creation
 ^^^^^^^^^^^^^^^^^
 
-When the installations are done, you have to create a database, see Setup a PostgreSQL
-User and Database for details.
+When the installations are done, you have to create a database, see
+:ref:`setup-a-postgresql-user-and-database-link` for details.
 
 Server installation
 ^^^^^^^^^^^^^^^^^^^

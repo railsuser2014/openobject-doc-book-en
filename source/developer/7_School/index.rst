@@ -1,6 +1,6 @@
-=======================
-School Manaement Module
-=======================
+========================
+School Management Module
+========================
 
 Introduction
 ============
@@ -19,8 +19,8 @@ Controller
 Reports
 ========
 
-Workdflow
-==========
+Workflow
+=========
 
 Wizard
 =======

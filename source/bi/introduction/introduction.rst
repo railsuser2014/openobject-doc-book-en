@@ -1,6 +1,6 @@
 
-Introduction
-============
+What is for User?
+=================
 
 The Open Object Business Intelligence system aims to be a full featured open source Business Intelligence system written in Python. It implements a HOLAP (Hybride OLAP = ROLAP + MOLAP) cube and a MDX query engine based on SQLAlchemy.
 

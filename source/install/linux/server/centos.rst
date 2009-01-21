@@ -77,10 +77,10 @@ into /usr/lib/python2.3/site-packages.
 In the same directory (site-packages), write a reportlab.pth file containing the string
 reportlab.
 
-Postgres
-^^^^^^^^
+Postgresql
+^^^^^^^^^^
 
-You have to create a database, see Setup a Postgresql user and database for details.
+You have to create a database, see :ref:`setup-a-postgresql-user-and-database-link` for details.
 
 With this, TERP will have to be started by user Open ERP
 

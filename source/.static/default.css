@@ -64,6 +64,14 @@ body {
     padding: 0;
 }
 
+div.body li.toctree-l1 {
+  line-height: 100%;
+}
+
+li.toctree-l1 a {
+  font-size: 70%;
+}
+
 /* :::: LAYOUT :::: */
 
 /*
@@ -613,7 +621,7 @@ a.headerlink:hover {
 
 div.body p, div.body dd, div.body li {
     text-align: justify;
-    line-height: 130%;
+    /*line-height: 130%;*/
 }
 
 div.body p.caption {

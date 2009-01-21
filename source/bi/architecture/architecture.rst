@@ -1,37 +1,18 @@
-Architecture
-============
-
 Schema
-------
+======
 
 .. image::  images/Bi_arch.png
 
 
-Extra libraries
----------------
-
-Libraries we will use:
-
-* Turbogears for the web client to browse cube
-
-* Mathplotlib for rendering graphs
-
-* PyParsing to parse MDX Expressions
-
-* SQLAlchemy to construct SQL queries and RDBMS connections
-
-* XMLRPC lib for communication with the cube server
-
-* PÿUNO for the OOo integration
-
-We will use an object relationnal mapping system on all objects: dimensions, ...
 
 
 Components
-----------
+==========
+
+
 
 The Cube
-++++++++
+--------
 
 The cube is based of the following component:
 
@@ -55,14 +36,14 @@ The cube will use:
 * PyParser for MDX parsing
 
 The CLI interface
-+++++++++++++++++
+-----------------
 
 Allows user to test MDX queries in this CLI command line interface. Simple script in python
 that will send XML-RPC queries and print the result.
 
 
 The Cube Definition
-+++++++++++++++++++
+-------------------
 
 The meta data of the cube definition will be stored in the Tiny ERP database. The user interface
 to edit cubes is in Tiny ERP. We will use the same concept of the one defined in the ... XML standard. So that we will be able, in a futur phase, to import such files.
@@ -121,4 +102,24 @@ The Tiny ERP interface
 From Tiny ERP, you should be able to right click/drag and drop any field to trigger the cube definition wizard to create your own cube on demand. For this, we will use the web client of the bi system.
 
 We will intergate this on the gtk and web client of tiny erp. For the GTK one, it will open the browser to browse the cube.
+
+
+Extra libraries
+===============
+
+Libraries we will use:
+
+* Turbogears for the web client to browse cube
+
+* Mathplotlib for rendering graphs
+
+* PyParsing to parse MDX Expressions
+
+* SQLAlchemy to construct SQL queries and RDBMS connections
+
+* XMLRPC lib for communication with the cube server
+
+* PÿUNO for the OOo integration
+
+We will use an object relationnal mapping system on all objects: dimensions, ...
 

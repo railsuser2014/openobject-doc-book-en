@@ -4,6 +4,8 @@
 General Configuration Questions
 -------------------------------
 
+.. _setup-a-postgresql-user-and-database-link:
+
 Setup a Postgresql user and database
 ++++++++++++++++++++++++++++++++++++
 

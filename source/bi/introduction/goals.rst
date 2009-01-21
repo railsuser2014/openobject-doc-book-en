@@ -1,5 +1,5 @@
 Goal of the project
-===================
+-------------------
 
 In simple words Business Intelligence or BI is the act of capturing raw data, then transforming and combining that data into information that can be proactively used to improve business. So,the goal of BI is to empower decision-makers, allowing them to make better and faster decisions. After all **Better decisions make better business!**
 

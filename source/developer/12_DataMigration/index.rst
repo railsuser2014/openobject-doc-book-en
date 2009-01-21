@@ -32,6 +32,8 @@ this, from the addons directory, create a new module called data_yourcompany.
 You must also create a file called __terp__.py in this new module.
 Write the following content in this module file description.
 
+.. code-block:: python
+
   {
     'name': 'Module for Data Importation',
     'version': '1.0',
@@ -74,12 +76,13 @@ As to refer to this record from a many2one field, you can use 'FIELD_NAME:id'.
 Open ERP will re-create the relationship between the record using this uniq
 ID.
 
-So let's start to export the partners from our database using psql:
+So let's start to export the partners from our database using psql: ::
 
   psql trunk -c "select 'partner_'||id as id,name from res_partner" -A -F , --pset footer > res.partner.csv
 
-This creates a res.partner.csv file containing a structure that looks like
-this:
+This creates a res.partner.csv file containing a structure that looks like this:
+
+::
 
   id,name
   partner_2,ASUStek
@@ -94,6 +97,8 @@ ID.
 Now, we will export the table with addresses (or contacts) that are linked to
 partners through the relation field: partner_id. We will proceed in the same
 way to export the data and put them into our module:
+
+::
 
   psql trunk -c "select 'partner_address'||id as id,name,'partner_'||partner_id as \"partner_id:id\" from res_partner_address" -A -F , --pset footer > res.partner.address.csv
 
@@ -133,3 +138,4 @@ prototype at this location:
   bzr branch lp:~openerp-commiter/openobject-addons/trunk-extra-addons/etl
 
 ... to be continued ...
+
