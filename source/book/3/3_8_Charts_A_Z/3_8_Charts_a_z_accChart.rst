@@ -3,7 +3,7 @@
 .. 
 
 Chart of Accounts
-===================
+=================
 
 On installation, the software is given a default chart of accounts that's the same regardless of your country. To install the chart of accounts and tax definitions for your own country install the module \ ``l10n_XX``\   where XX represents your country code in two letters. For example to get the chart of accounts for France install the module \ ``l10n_fr``\  . 
 
@@ -32,7 +32,7 @@ To get the detail of the account entries that are important to you, all you need
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits, credits and balance for each account in real time. If you just want to work with a chart of accounts that has structure but shows no totals, use the function  *Financial Management > Charts > Charts of Accounts > Fast Charts of Accounts* .
 
 Creating a chart of accounts
------------------------------
+----------------------------
 
 	.. image::  images/account_form.png
 	   :align: center
@@ -84,7 +84,7 @@ The main account fields are:
 The tree structure of the accounts can be altered as often and as much as you wish without recalculating any of the individual entries. So you can easily restructure your account during the year to reflect the reality of the company better.
 
 Using virtual charts of accounts
----------------------------------
+--------------------------------
 
 The structure of a chart of accounts is imposed by the legislation in effect in the country of concern. Unfortunately that structure doesn't always correspond to the view that a company's CEO needs.
 
@@ -151,7 +151,7 @@ Finally you can also make virtual charts of accounts from other virtual charts. 
 =======
 
 Chart of Accounts
-===================
+=================
 
 On installation, the software is given a default chart of accounts that's the same regardless of your country. To install the chart of accounts and tax definitions for your own country install the module \ ``l10n_XX``\   where XX represents your country code in two letters. For example to get the chart of accounts for France install the module \ ``l10n_fr``\  . 
 
@@ -180,7 +180,7 @@ To get the detail of the account entries that are important to you, all you need
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits, credits and balance for each account in real time. If you just want to work with a chart of accounts that has structure but shows no totals, use the function  *Financial Management > Charts > Charts of Accounts > Fast Charts of Accounts* .
 
 Creating a chart of accounts
------------------------------
+----------------------------
 
 	.. image::  images/account_form.png
 	   :align: center
@@ -232,7 +232,7 @@ The main account fields are:
 The tree structure of the accounts can be altered as often and as much as you wish without recalculating any of the individual entries. So you can easily restructure your account during the year to reflect the reality of the company better.
 
 Using virtual charts of accounts
----------------------------------
+--------------------------------
 
 The structure of a chart of accounts is imposed by the legislation in effect in the country of concern. Unfortunately that structure doesn't always correspond to the view that a company's CEO needs.
 

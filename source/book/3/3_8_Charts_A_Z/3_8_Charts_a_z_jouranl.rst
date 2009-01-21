@@ -3,12 +3,12 @@
 .. 
 
 Journals
-=========
+========
 
 All your accounting entries must appear in an accounting journal. So you must, at a minimum, create a Sales Journal for customer invoices, a Purchase Journal for supplier invoices and a Cash Journal for cash and bank transactions.
 
 Configuring a Journal
------------------------
+---------------------
 
 To view, edit or create new journals use the menu  *Financial Management > Configuration > Journals > Definition of Journals* .
 
@@ -37,7 +37,7 @@ The credit and debit account by default permit the automatic generation of count
 A journal can be marked as being centralized. When you do this, the counterpart entries won't be owned by each entry but globally for the given journal and period. You'll then have a credit line and a debit line centralized for each entry in one of these journals, meaning that both credit and debit appear on the same line.
 
 Controls and aids for data entry
----------------------------------
+--------------------------------
 
 You can carry out two types of control on Journals in Open ERP – controls over the financial accounts and access controls for groups of users. In addition to these controls you can also apply all of the rights management detailed in Chapter 13.
 

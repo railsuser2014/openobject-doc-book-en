@@ -4,7 +4,7 @@
 .. 
 
 Management of payments
-=======================
+======================
 
 Open ERP gives you forms for preparing, validating and executing payment orders. This enables you to manage issues such as:
 
@@ -21,7 +21,7 @@ Open ERP gives you forms for preparing, validating and executing payment orders
 	#. Splitting payments dependent on the balances available in your various bank accounts.
 
 Process for managing payment orders
--------------------------------------
+-----------------------------------
 
 To use the tool for managing payments you must first install the module \ ``account_payment``\  . It's part of the core Open ERP system.
 
@@ -55,7 +55,7 @@ When the accounting manager validates the document, Open ERP generates a bankin
 In small businesses it's usually the same person who enters the payment orders and who validates them. In this case you should just click the two buttons, one after the other, to confirm the payment.
 
 Preparation and execution of orders.
--------------------------------------
+------------------------------------
 
 To enter a payment order, use the menu  *Financial Management > Payment > Payment Orders* .
 

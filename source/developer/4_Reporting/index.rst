@@ -32,11 +32,11 @@ Open Office - Designer
 
 OpenOffice.org reports are the most commonly used report formats. OpenOffice.org Writer is used to generate a RML template, which in turn is used to generate a pdf printable report.
 
-.. image: images/ooo_report_overview.png
+.. image:: images/ooo_report_overview.png
 
 :The internal process:
 
-.. image: images/process_ooo.png
+.. image:: images/process_ooo.png
 
 :The .SXW template file:
 
@@ -68,7 +68,7 @@ In order to create a report, the general idea is to
 
 .. code-block:: xml
 
-        <terp>
+        <openerp>
            <data>
                  <report id="travel_agency_room_booking_tickets"
                       string="Room Booking Tickets"
@@ -77,7 +77,7 @@ In order to create a report, the general idea is to
                       rml="travel/report/tickets.rml"
                       auto="True"/>
            </data>
-        </terp>
+        </openerp>
 
 * As travel_report.xml also needs to be loaded, we modify the file __terp__.py so that the information associated with update_xml is now ['travel_view.xml', 'travel_report.xml'].
 * We create a report subfolder in the travel folder. This folder must contain the file tickets.rml.Open Office writer will first be used to create tickets.sxw.
@@ -159,7 +159,7 @@ Here is an example for the sale order report:
 .. code-block:: xml
 
   <?xml version="1.0"?>
-  <terp>
+  <openerp>
     <data>
       <report
            id="report_sale_order"
@@ -170,7 +170,7 @@ Here is an example for the sale order report:
            auto="False"/>
            header="False"/>
      </data>
-  </terp>
+  </openerp>
 
 The arguments are:
 
@@ -580,4 +580,54 @@ The existing report templates make up a rich source of examples. You can start b
 When the report has been created, send it to the server by clicking  *Tiny Report > Send to server* , which brings up the  *Send to server*  dialog box. Enter the  *Technical Name*  of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in  *Report Name* , check the checkbox  *Corporate Header*  and finally click  *Send Report to Server* .
 
 To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type*
+
+Open ERP objects can be created from `PostgreSQL views. The technique is as follows :
+
+   1. Declare your _columns dictionary. All fields must have the flag readonly=True.
+   2. Specify the parameter _auto=False to the Open ERP object, so no table corresponding to the _columns dictionnary is created automatically.
+   3. Add a method init(self, cr) that creates a `PostgreSQL View matching the fields declared in _columns. 
+
+Example The object report_crm_case_user follows this model.
+
+.. code-block:: python
+
+        report_crm_case_user(osv.osv):
+             _name = "report.crm.case.user"
+             _description = "Cases by user and section"
+             _auto = False
+             _columns = {
+                'name': fields.date('Month', readonly=True),
+                'user_id':fields.many2one('res.users', 'User', readonly=True, relate=True),
+                'section_id':fields.many2one('crm.case.section', 'Section', readonly=True, relate=True),
+                'amount_revenue': fields.float('Est.Revenue', readonly=True),
+               'amount_costs': fields.float('Est.Cost', readonly=True),
+                'amount_revenue_prob': fields.float('Est. Rev*Prob.', readonly=True),
+                'nbr': fields.integer('# of Cases', readonly=True),
+               'probability': fields.float('Avg. Probability', readonly=True),
+                'state': fields.selection(AVAILABLE_STATES, 'State', size=16, readonly=True),
+                'delay_close': fields.integer('Delay to close', readonly=True),
+            }
+             _order = 'name desc, user_id, section_id'
+         
+            def init(self, cr):
+                cr.execute("""
+                     create or replace view report_crm_case_user as (
+                         select
+                             min(c.id) as id,
+                             substring(c.create_date for 7)||'-01' as name,
+                             c.state,
+                             c.user_id,
+                             c.section_id,
+                             count(*) as nbr,
+                             sum(planned_revenue) as amount_revenue,
+                             sum(planned_cost) as amount_costs,
+                             sum(planned_revenue*probability)::decimal(16,2) as amount_revenue_prob,
+                             avg(probability)::decimal(16,2) as probability,
+                             to_char(avg(date_closed-c.create_date), 'DD"d" `HH24:MI:SS') as delay_close
+                         from
+                             crm_case c
+                         group by substring(c.create_date for 7), c.state, c.user_id, c.section_id
+                )""")
+        report_crm_case_user()
+
 
