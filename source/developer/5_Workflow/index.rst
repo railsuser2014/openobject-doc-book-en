@@ -685,12 +685,12 @@ select the Sever Action. This will automatically call where the object come to t
 
 Here in this example I added the Action to print the Invoice, when the Invoice will be confirmed.
 
-Improvement of school management module
-=======================================
+..        Improvement of school management module
+        =======================================
 
-Adding Workflow
----------------
+        Adding Workflow
+        ---------------
 
-Adding Server Action
---------------------
+        Adding Server Action
+        --------------------
 

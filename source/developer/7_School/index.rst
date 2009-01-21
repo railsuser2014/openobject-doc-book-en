@@ -19,8 +19,8 @@ Controller
 Reports
 ========
 
-Workdflow
-==========
+Workflow
+=========
 
 Wizard
 =======

@@ -188,10 +188,9 @@ Examples The file server/bin/addons/stock/stock_view.xml declares context dictio
                       <field name="context">{'contact_display': 'partner'}</field>
                   </record>
 
-Server Actions
---------------
+..        Server Actions
+        --------------
 
-**Remaining**
 
 Overriding default methods
 --------------------------
@@ -542,7 +541,7 @@ name_search
 
     **Signature:** def name_search(self, cr, uid, name=, args=[], operator='ilike', context={}) 
     
-    **'Parameters': **
+    **'Parameters:**
     
     **Result:**
 
