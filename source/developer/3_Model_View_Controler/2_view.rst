@@ -137,19 +137,19 @@ To **delete a field from a form**, an empty element with position="replace" atri
 
 Take into account that only one position="replace" attribute can be used per inherited view so multiple inherited views must be created to make multiple replacements. 
 
-Improvement of school management module
-=======================================
+..        Improvement of school management module
+        =======================================
 
-Remaining As of no idea about it.
+        Remaining As of no idea about it.
 
-Improvement of screens
-----------------------
+        Improvement of screens
+        ----------------------
 
-Remaining As of no idea about it.
+        Remaining As of no idea about it.
 
-Adding some attrs
------------------
+        Adding some attrs
+        -----------------
 
-Remaining As of no idea about it.
+        Remaining As of no idea about it.
 
 

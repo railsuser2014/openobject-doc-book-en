@@ -1,61 +1,63 @@
-===============================
-A School Management Application
-===============================
+=============
+Business case
+=============
 
-The School Management Module
-============================================
-In Previous chapters we have seen that, how its easy to setting up the development environment with windows, linux, and mac operating system. Now we start with first step to the development of OpenERP module, for that School Management module is one of the easy and good example that we will consider during developer's book. we will cover objects, views and workflow in this chapter for the school management module.
+This chapter will give you a quick overview on how you can easily and quickly develop your own features within Open ERP. We will describe here the complete development of a small module for a travel agency company.
 
-School Management module will helps Studens and Teachers to manage the Program Schedules,for that we will develope new Models like Class, Program, Student, Teacher, Events. We are going to manege Events of the Programs at school during the weeks that will help to Teacher to schedule the Programes easily. Sudents those who are belongs to the scheduled Program they will get information about the Scheduled program.
+We describe in this chapter what we do but not "how" we do it. Having a first look at the different component will help you to better understand the following chapters that will go deeper in details of each part of a module development.
 
-Describe what will be done in which chapters to build to full application
+We suggest you to try to develop the proposed module while reading this chapter. This way, you will quickly see how simple it is to write a module in Open ERP. 
+
+In this simple example, we would like to manage a travel agency which is responsible for one simple task, which is booking rooms in hostels. We show how to write a simple module that performs such a task in Open ERP. 
+
 
 Development planning
 ====================
 
-Explain here the steps of the developments of the module, and what will be done
-in which chapter.
+All the modules are located in the server/addons directory.
 
-* This Chapter
+The following steps are necessary to create a new module:
 
-  * Creation of the basic module
-  * Definition of firsts objects
-  * Definition of firsts screens (views)
-  * Adding demonstration data
-
-* Next Chapter
-
-  * UML Schema with Dia
-  * Full definition of all objects
-  * Full definition of all views
-
-* Adding reports
-
-  * Statistics reports (base_report_creator)
-  * Layout reports (OpenOffice plugin)
-  * Manual report creation
-
-* Business Logic
-
-  * Workflows
-
-* etc...
-* Extending the application
-
-  * Adding Document Management System
-  * Inheriting from products to sell courses
-  * etc...
-
-* Defining the portal for students
-
-  * ...
+    * create a subdirectory in the server/addons directory
+    * create a module description file: __terp__.py
+    * create the Python file containing the objects
+    * create .xml files that download the data (views, menu entries, demo data, ...)
+    * optionally create reports, wizards or workflows. 
 
 
-Final result
-============
+The structure of a module should be like this::
 
-At the end of this book, the developped module will cover...
+ /module_name/
+ /module_name/__init__.py
+ /module_name/__terp__.py
+ /module_name/module.py
+ /module_name/module_view.xml
+ /module_name/module_wizard.xml
+ /module_name/module_report.xml
+ /module_name/module_data.xml
+ /module_name/module_demo.xml
+ /module_name/module_security.xml
+ /module_name/wizard/
+ /module_name/wizard/__init__.py
+ /module_name/wizard/wizard_name.py
+ /module_name/wizard/wizard_name_view.xml
+ /module_name/wizard/wizard_name_workflow.xml
+ /module_name/report/
+ /module_name/report/__init__.py
+ /module_name/report/report_name.sxw
+ /module_name/report/report_name.rml
+ /module_name/report/report_name.py
 
-Here are a few screenshots with explanations...
+
+..        Explain here the steps of the developments of the module, and what will be done
+        in which chapter.
+
+
+..        Final result
+        ============
+
+        At the end of this book, the developped module will cover...
+
+        Here are a few screenshots with explanations...
 
 
