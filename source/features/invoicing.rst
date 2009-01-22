@@ -4,10 +4,8 @@ Invoicing
 Open ERP support lots of different logistics for the invoicing automation: from
 the sales orders, from costs (timesheets, purchases, etc.), from tasks, from
 recurring subscriptions, etc.
-
-.. raw:: html
  
- <a target="_blank" href="images/invoicing_screenshot.png"><img src="images_small/invoicing_screenshot.png" class="screenshot" /></a>
+.. image:: images/invoicing_screenshot.png
 
 Key Points:
 -----------

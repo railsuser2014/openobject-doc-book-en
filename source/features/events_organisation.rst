@@ -6,10 +6,8 @@ planification, registration tracking, invoicing, attendances, getting the
 payments, etc.  It is completely integrated with the CRM and accounting
 modules. You can also use the mail gateway to get information requests or
 registrations directly by email.
-
-.. raw:: html
  
- <a target="_blank" href="images/events_organisation_screenshot.png"><img src="images_small/events_organisation_screenshot.png" class="screenshot" /></a>
+.. image:: images/events_organisation_screenshot.png
 
 Key Points:
 -----------

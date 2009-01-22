@@ -12,10 +12,8 @@ automatically.
 Open ERP's replenishment management rules enable the system to generate draft
 purchase orders automatically, or you can configure it to run a lean process
 driven entirely by current production needs.
-
-.. raw:: html
  
- <a target="_blank" href="images/purchase_screenshot.png"><img src="images_small/purchase_screenshot.png" class="screenshot" /></a>
+.. image:: images/purchase_screenshot.png
 
 Keypoints:
 ----------

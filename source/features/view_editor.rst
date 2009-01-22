@@ -4,10 +4,8 @@ View Editor
 The Open ERP view editor allows you to design and adapt all screens of
 the application to your specific need. You can modify the look or add/remove
 new fields in a few seconds.
-
-.. raw:: html
  
- <a target="_blank" href="images/view_editor_screenshot.png"><img src="images_small/view_editor_screenshot.png" class="screenshot" /></a>
+.. image:: images/view_editor_screenshot.png
 
 Key Points:
 -----------

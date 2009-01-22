@@ -10,10 +10,8 @@ As to benefit from all the power of Open ERP (pricelists management, complex
 taxes, warehouse integration, etc.), you can also use our own eCommerce system
 that automatically plugs in an existing website. Add a few lines of HTML in your
 website and Open ERP turns it as a full featured eCommerce platform.
-
-.. raw:: html
  
- <a target="_blank" href="images/integrated_ecommerce_screenshot.png"><img src="images_small/integrated_ecommerce_screenshot.png" class="screenshot" /></a>
+.. image:: images/integrated_ecommerce_screenshot.png
 
 Key Points:
 -----------

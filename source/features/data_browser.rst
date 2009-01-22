@@ -10,10 +10,8 @@ The power of Business Intelligence becomes available to all users of the
 system to extract the exact information needed from any screen. It is also
 able to analyse others databases, to allow you to consolidate data in one
 single user interface.
-
-.. raw:: html
  
- <a target="_blank" href="images/data_browser_screenshot.png"><img src="images_small/data_browser_screenshot.png" class="screenshot" /></a>
+.. image:: images/data_browser_screenshot.png
 
 Key Points:
 -----------
@@ -32,7 +30,5 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://openobject.com">Open Object</a>
+        Open Object: http://openobject.com
+

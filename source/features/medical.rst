@@ -4,10 +4,8 @@ Medical
 Medical provides an universal Electronic Medical Record (EMR), so doctors and
 institutions all over the world, independently of their economic status, will
 benefit from a centralized, high quality, secure and scalable system.
-
-.. raw:: html
  
- <a target="_blank" href="images/medical_screenshot.png"><img src="images_small/medical_screenshot.png" class="screenshot" /></a>
+.. image:: images/medical_screenshot.png
 
 
 Key Points:
@@ -27,9 +25,7 @@ Key Points:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://medical.sf.net/">Medical Website</a>
+        Medical Website: http://medical.sf.net
+
 * Module:
 

@@ -2,10 +2,8 @@ Web Application Interface
 =========================
 
 Introduction two or three lines.
-
-.. raw:: html
  
- <a target="_blank" href="images/web_application_screenshot.png"><img src="images_small/web_application_screenshot.png" class="screenshot" /></a>
+.. image:: images/web_application_screenshot.png
 
 Key Points:
 -----------
@@ -24,7 +22,4 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://demo.openerp.com:8080">Demonstration</a>
+        Demonstration: http://demo.openerp.com:8080

@@ -6,10 +6,8 @@ efficiently manages promotions, customers special prices, segmentations of
 customers contracts made with customers or suppliers, ... You can set fixed
 prices or works by rules to auto-compute prices according to the cost, the
 date, the currency, the category of product, etc.
-
-.. raw:: html
  
- <a target="_blank" href="images/product_pricelist_screenshot.png"><img src="images_small/product_pricelist_screenshot.png" class="screenshot" /></a>
+.. image:: images/product_pricelist_screenshot.png
 
 Key Points:
 -----------

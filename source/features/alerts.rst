@@ -7,10 +7,8 @@ step of any operation. The end-user will receive alerts on different events. We 
 trigger alerts on the screen or through the internal requests system. It allows
 to show the right information at the right time for each user. It also simplify
 a lot the communication between the different employee of a same company.
-
-.. raw:: html
  
- <a target="_blank" href="images/alerts_screenshot.png"><img src="images_small/alerts_screenshot.png" class="screenshot" /></a>
+.. image:: images/alerts_screenshot.png
 
 
 Key Points:
@@ -27,11 +25,8 @@ Integration Benefits:
 * The alert system is a generic concept that can be used in any module.
 
 Links:
-------
-
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://example.net">Example</a>
+        
+        Example : http://example.net
+    
 * Module: alerts
 

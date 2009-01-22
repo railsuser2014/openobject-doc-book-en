@@ -10,10 +10,8 @@ with the help of Open ERP.
 All these documentation are provided online and linked to any screen of the
 software so that it will help all your users to work efficiently with the
 software.
-
-.. raw:: html
  
- <a target="_blank" href="images/integrated_documentation_screenshot.png"><img src="images_small/integrated_documentation_screenshot.png" class="screenshot" /></a>
+.. image:: images/integrated_documentation_screenshot.png
 
 Key Points:
 -----------

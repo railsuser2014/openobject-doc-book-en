@@ -8,10 +8,8 @@ and receive bank statements automatically.
 
 It currently supports CODA (Belgium+Luxemburg), SEPA (New European Standard),
 BVR/V11/DTA (Switzerland), Check printing (US), EDI (with SAP).
-
-.. raw:: html
  
- <a target="_blank" href="images/bank_interface_screenshot.png"><img src="images_small/bank_interface_screenshot.png" class="screenshot" /></a>
+.. image:: images/bank_interface_screenshot.png
 
 Key Points:
 -----------
