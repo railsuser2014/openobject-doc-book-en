@@ -1,5 +1,5 @@
 Defining Measure
-==============
+================
 
 :ref:`Measure <measure-link>` are the fact or quantitative values. It comes from the fact table configured in the cube.
 

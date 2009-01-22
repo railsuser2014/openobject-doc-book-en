@@ -185,11 +185,12 @@ All products
 
 In addition, the products presented in the table below are defined in the currency of the installed chart of accounts.
 
- **Examples of products with their different prices**
+  **Examples of products with their different prices**
 
 TABLE
 
-.. csv-table:: 
+.. csv-table::
+
    "Product ","List Price","Standard Price","Default supplier price",
    "Acclo Portable","1 200 ","887 ","893 ",
    "Toshibishi Portable","1 340 ","920 ","920 ",
@@ -276,7 +277,7 @@ The list price for TinAtwo, called “TinAtwo contract”, contains two rules:
 
 	#. \ ``Other Products``\  
 
-                *  *Product: * 
+                *  *Product:*
 
                 *  *Based on* : \ ``Other pricelist``\  ,
 

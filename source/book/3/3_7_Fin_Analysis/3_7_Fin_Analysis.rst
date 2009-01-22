@@ -368,7 +368,10 @@ When you've created a tax structure consisting of Tax Cases and Tax objects, you
 
 	To do this in Open ERP just install the account_tax_include module. Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. Prices are then displayed appropriately.
 
-You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners * to open and edit a Partner form for the charity, then:
+You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a
+partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an
+appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners* to open
+and edit a Partner form for the charity, then:
 
 * select the  *Properties*  tab,
 

@@ -153,7 +153,7 @@ You can also change some of the order parameters, which affects the invoice:
 
 *  *Shipping Policy* : \ ``Payment before delivery``\   or \ ``Invoice automatically after delivery``\   (at the closure of the task),
 
-*  *Invoice On: * \ ``Ordered Quantities``\   or \ ``Delivered quantities``\   (effective hours in the task).
+*  *Invoice On:* \ ``Ordered Quantities``\   or \ ``Delivered quantities``\   (effective hours in the task).
 
 Planning and managing priorities
 ---------------------------------
