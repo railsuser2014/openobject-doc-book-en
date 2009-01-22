@@ -39,7 +39,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'openobject-doc'
+project = u'OpenObject'
 copyright = u'2008, OpenObject Community'
 
 # The version info for the project you're documenting, acts as replacement for

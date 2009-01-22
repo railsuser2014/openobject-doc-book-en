@@ -223,12 +223,14 @@ The travel agency module prototype can be installed in Tiny ERP client by doing 
 
 .. image:: images/SetupCustomModule.png
 
+.. 
 
     * When the dialog box is closed, double-click on Uninstalled Modules, which will lead you to a window looking like 
 
 
 .. image:: images/UninstalledModulesScaled.png
 
+.. 
 
     * If you double-click on travel (our new module), you will see the module form. Click on Install at the bottom.
     * Go back to the main menu and double-click on Apply Upgrades then Start Upgrade. 
