@@ -9,7 +9,7 @@ Leads, Cases, Contacts and more.
 
 .. raw:: html
  
- <a target="_blank" href="images/outlook_screenshot.png"><img src="images_small/outlook_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="images/outlook_screenshot.jpg"><img src="images_small/outlook_screenshot.jpg" class="screenshot" /></a>
 
 Key points:
 -----------
