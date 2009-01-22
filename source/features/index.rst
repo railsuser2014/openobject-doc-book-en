@@ -22,10 +22,11 @@ Enterprise management
    :maxdepth: 1
 
    sales   
-   invoicing   
-   point_of_sales
    purchases
-   services_mgt   
+   services_mgt
+   invoicing
+   point_of_sales
+      
 
 Logistic
 ++++++++
@@ -33,12 +34,12 @@ Logistic
 .. toctree::
    :maxdepth: 1
 
-   manufacturing   
+   warehouse_management
+   shipping_management
+   manufacturing
+   quality
    products_pricelists   
-   quality   
-   shipping_management   
-   warehouse_management   
-
+      
 Accounting and Finance
 ++++++++++++++++++++++
 
@@ -47,10 +48,12 @@ Accounting and Finance
 
    accounting   
    analytic_accounting   
-   assets_management   
+   budget
+   payments_management
+   assets_management
    bank_interfaces   
-   budget   
-   payments_management   
+      
+      
 
 Human Ressources
 ++++++++++++++++
@@ -58,11 +61,13 @@ Human Ressources
 .. toctree::
    :maxdepth: 1
 
+   payroll
    expenses   
-   holidays   
-   payroll   
-   point_of_sales   
-   skills_management   
+   skills_management
+   holidays
+   attendances
+      
+      
 
 CRM & SRM
 +++++++++
@@ -71,10 +76,11 @@ CRM & SRM
    :maxdepth: 1
 
    customer_relationship_mgt   
+   mail_gateway
+   portals
    direct_marketing   
-   mail_gateway   
    phone_calls   
-   portals   
+      
 
 Project Management
 ++++++++++++++++++
@@ -82,8 +88,8 @@ Project Management
 .. toctree::
    :maxdepth: 1
 
+   operational_management
    financial_management   
-   operational_management   
    timesheets   
 
 Daily Productivity
@@ -92,10 +98,11 @@ Daily Productivity
 .. toctree::
    :maxdepth: 1
 
+   document
+   outlook_thunderbird
+   getting_things_done
    calendar   
-   getting_things_done   
-   document   
-   outlook_thunderbird   
+      
 
 Efficient Communication
 +++++++++++++++++++++++
@@ -103,10 +110,11 @@ Efficient Communication
 .. toctree::
    :maxdepth: 1
 
-   alerts   
+   wiki
+   webmail
    dashboards   
-   webmail   
-   wiki   
+   alerts   
+      
 
 Business Process Management
 +++++++++++++++++++++++++++
@@ -123,9 +131,9 @@ Association Management
 .. toctree::
    :maxdepth: 1
 
+   membership
    events_organisation   
    fund_raising   
-   membership   
 
 IT Tools
 ++++++++
@@ -142,10 +150,10 @@ Fully customizable
 .. toctree::
    :maxdepth: 1
 
-   configurable_actions   
    report_designer   
    view_editor   
    workflow_editor   
+   configurable_actions
 
 Ergonomy
 ++++++++
