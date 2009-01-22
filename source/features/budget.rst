@@ -9,10 +9,8 @@ to the user role:
 * Accountant: work on master and consolidated budget
 * Project manager: work on analytic budgets on his projects
 * Department manager: get a consolidated view on budget positions
-
-.. raw:: html
  
- <a target="_blank" href="images/budget_screenshot.png"><img src="images_small/budget_screenshot.png" class="screenshot" /></a>
+.. image:: images/budget_screenshot.png
 
 Key-Points:
 -----------

@@ -9,10 +9,8 @@ to evolves with your company needs as a daily basis.
 You can triggers actions on any activity of the workflow: sending email/SMS, printing
 reports, computing values or modificating objects, triggers others workflows, call
 external services, etc.
-
-.. raw:: html
  
- <a target="_blank" href="images/workflow_editor_screenshot.png"><img src="images_small/workflow_editor_screenshot.png" class="screenshot" /></a>
+.. image:: images/workflow_editor_screenshot.png
 
 Key Points:
 -----------

@@ -5,10 +5,8 @@ The membership module allows associations to manage their members. From the
 search of new members to the periodical invoicing of current members. It's
 linked to the portal module to allow you to provide online access to members
 on your system: calendar of events, current projects, members lists, etc.
-
-.. raw:: html
  
- <a target="_blank" href="images/membership_screenshot.png"><img src="images_small/membership_screenshot.png" class="screenshot" /></a>
+.. image:: images/membership_screenshot.png
 
 Key Points:
 -----------

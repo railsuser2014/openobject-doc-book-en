@@ -10,10 +10,8 @@ The scrum module allows to easily manages long-term roadmaps, frequent
 evaluation of works, customers interaction, etc. It provides interresting
 reports like the burndown chart. The scrum methodology is used by Microsoft
 and Google to manages all their new products.
-
-.. raw:: html
  
- <a target="_blank" href="images/scrum_methodology_screenshot.png"><img src="images_small/scrum_methodology_screenshot.png" class="screenshot" /></a>
+.. image:: images/scrum_methodology_screenshot.png
 
 
 Key Points:
@@ -31,9 +29,7 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://http://controlchaos.com">Website</a>
+        Website: http://http://controlchaos.com
+        
 * Module:
 

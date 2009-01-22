@@ -11,10 +11,8 @@ Schedule, Minimum Stock Rules.
 The scheduler will compute the best proposed planning according to the different
 constraints on products, customers, orders or workcenters. The production manager
 will be able to use our gantt views to organise the different ressources or orders.
-
-.. raw:: html
  
- <a target="_blank" href="images/manufacturing_screenshot.png"><img src="images_small/manufacturing_screenshot.png" class="screenshot" /></a>
+.. image:: images/manufacturing_screenshot.png
 
 Key Points:
 -----------
@@ -34,9 +32,7 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=manufacturing_en">Demonstration</a>
+        Demonstration:http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=manufacturing_en
+        
 * Module: profile_manufacturing
 

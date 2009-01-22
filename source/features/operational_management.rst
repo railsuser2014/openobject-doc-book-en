@@ -4,10 +4,8 @@ Operational Management
 Open ERP integrates a powerful multi-level project management system. It
 allows to manages tasks allocation, short and long term plannings, delegations,
 etc. It's fully integrated with sales or purchases.
-
-.. raw:: html
  
- <a target="_blank" href="images/operational_management_screenshot.png"><img src="images_small/operational_management_screenshot.png" class="screenshot" /></a>
+.. image:: images/operational_management_screenshot.png
 
 Key Points:
 -----------

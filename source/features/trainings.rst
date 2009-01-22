@@ -5,10 +5,8 @@ Open ERP is used by one of the most prestigious training organisation in
 France: l'ENA (Ecole Nationale d'Administration). Open ERP provides different
 module to organise trainings: resources management (classes), teachers, planning,
 training material, etc.
-
-.. raw:: html
  
- <a target="_blank" href="images/training_screenshot.png"><img src="images_small/training_screenshot.png" class="screenshot" /></a>
+.. image:: images/training_screenshot.png
 
 Key Points:
 -----------

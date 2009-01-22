@@ -2,10 +2,8 @@ Example
 =======
 
 Introduction two or three lines.
-
-.. raw:: html
  
- <a target="_blank" href="images/example_screenshot.png"><img src="images_small/example_screenshot.png" class="screenshot" /></a>
+.. image:: images/example_screenshot.png
 
 
 Key Points:
@@ -22,9 +20,7 @@ Integration Benefits:
 
 Links:
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://example.net">Example</a>
+        Example: http://example.net
+
 * Module: example
 

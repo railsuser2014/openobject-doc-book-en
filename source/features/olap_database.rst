@@ -5,10 +5,8 @@ The Olap module of Open ERP support a full featured hybrid OLAP database that
 can connect on any kind of relational databases to perform multi-dimensional analysis.
 Open Object supports MDX queries performed through one of the web-services provided
 by Open Object.
-
-.. raw:: html
  
- <a target="_blank" href="images/olap_database_screenshot.png"><img src="images_small/olap_databse_screenshot.png" class="screenshot" /></a>
+.. image:: images/olap_database_screenshot.png
 
 Key Points:
 -----------
@@ -25,8 +23,5 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://openpobject.com">Open Object</a>
+        Open Object: http://openobject.com
 
