@@ -1,4 +1,8 @@
 
+.. index::
+   single: Accounting workflow
+.. 
+
 Accounting workflow and the automatic generation of invoices
 ============================================================
 

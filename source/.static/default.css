@@ -4,6 +4,10 @@
 
 /* Overrides: */
 
+div.sphinxsidebar a {
+  color:#000000;
+}
+
 div.document {
     background-color: #CC0000;
 }
@@ -204,9 +208,11 @@ div.sphinxsidebar ul ul {
     margin-bottom: 0;
 }
 
+/*
 div.sphinxsidebar a {
     color: #98dbcc;
 }
+/*
 
 div.sphinxsidebar form {
     margin-top: 10px;
