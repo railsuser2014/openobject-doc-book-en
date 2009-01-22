@@ -7,9 +7,9 @@ projects. It gives you access to your employees's schedule and give you the
 right to complete and validate their timesheets. The main objective of this
 module is to follow working hours of current projects and costs implications.
 
-.. raw:: html
+
  
- <a target="_blank" href="images/attendance_screenshot.png"><img src="images_small/attendance_screenshot.png" class="screenshot" /></a>
+.. image:: images/attendance_screenshot.png
 
 Key points:
 -----------

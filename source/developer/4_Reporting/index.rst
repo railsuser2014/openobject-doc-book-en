@@ -581,11 +581,11 @@ When the report has been created, send it to the server by clicking  *Tiny Repor
 
 To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type*
 
-Open ERP objects can be created from `PostgreSQL views. The technique is as follows :
+Open ERP objects can be created from PostgreSQL views. The technique is as follows :
 
    1. Declare your _columns dictionary. All fields must have the flag readonly=True.
    2. Specify the parameter _auto=False to the Open ERP object, so no table corresponding to the _columns dictionnary is created automatically.
-   3. Add a method init(self, cr) that creates a `PostgreSQL View matching the fields declared in _columns. 
+   3. Add a method init(self, cr) that creates a PostgreSQL View matching the fields declared in _columns. 
 
 Example The object report_crm_case_user follows this model.
 

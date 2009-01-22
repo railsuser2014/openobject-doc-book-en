@@ -223,15 +223,18 @@ The travel agency module prototype can be installed in Tiny ERP client by doing 
 
 .. image:: images/SetupCustomModule.png
 
+.. 
 
     * When the dialog box is closed, double-click on Uninstalled Modules, which will lead you to a window looking like 
 
 
 .. image:: images/UninstalledModulesScaled.png
 
+.. 
 
     * If you double-click on travel (our new module), you will see the module form. Click on Install at the bottom.
     * Go back to the main menu and double-click on Apply Upgrades then Start Upgrade. 
+
 Once the module travel is installed into Tiny, the menu looks like :
 
 .. image:: images/ModuleTravelInstalled.png
@@ -288,10 +291,12 @@ The first field is the X axis. The second one is the Y axis and the optionnal th
     * group: if set to true, the client will group all item of the same value for this field. For each other field, it will apply an operator
     * operator: the operator to apply is another field is grouped. By default it's '+'. Allowed values are:
           - +: addition
-          - *: multiply
-          - **: exponent
+          - \*: multiply
+          - \**: exponent
           - min: minimum of the list
           - max: maximum of the list 
+
+.. * END
 
 :Defining real statistics on objects:
 
@@ -300,7 +305,7 @@ The easiest method to compute real statistics on objects is:
    1. Define a statistic object wich is a postgresql view
    2. Create a tree view and a graph view on this object 
 
-You can get en example in all modules of the form: report_.... Example: report_crm. 
+You can get en example in all modules of the form: report\_.... Example: report_crm. 
 
 Defining the process
 ====================

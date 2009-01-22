@@ -14,7 +14,12 @@ Open Object Documentation
 .. toctree::
     :glob:
 
-    *
+    book/index
+    features/index
+    developer/index
+    bi/index
+    contribute/index
+    install/index
 
 .. raw:: html
 
@@ -41,9 +46,9 @@ Open Object Documentation
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
   |                                                         |                                                  |
-  |  :ref:`Integrator Book <book-customize-link>`           |  :ref:`Developer Book <book-develop-link>`       |
+  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`Developer Book <book-develop-link>`       |
   |                                                         |                                                  |
-  |  Customize your modules and applications                |  Develope your own modules on Open Object        |
+  |  Manuals to install Open ERP and Open Object            |  Develope your own modules on Open Object        |
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
   |                                                         |                                                  |
@@ -52,12 +57,17 @@ Open Object Documentation
   |  Business Intelligence with Open Object                 |  The Open Object community organisation          |
   |                                                         |                                                  |
   +---------------------------------------------------------+--------------------------------------------------+
-  |                                                         |                                                  |
-  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`FAQs <faqs-link>`                         |
-  |                                                         |                                                  |
-  |  Manuals to install Open ERP and Open Object            |  Frequently Asked Questions                      |
-  |                                                         |                                                  |
-  +---------------------------------------------------------+--------------------------------------------------+
+
+..  |                                                         |                                                  |
+..  |  :ref:`Integrator Book <book-customize-link>`           |  :ref:`Developer Book <book-develop-link>`       |
+..  |                                                         |                                                  |
+..  |  Customize your modules and applications                |  Develope your own modules on Open Object        |
+
+..  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`FAQs <faqs-link>`                         |
+..  |                                                         |                                                  |
+..  |  Manuals to install Open ERP and Open Object            |  Frequently Asked Questions                      |
+
+
 
 **Indices and tables:**
 
@@ -85,18 +95,21 @@ Open Object Documentation
 
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
-  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
-  |                                         |                                                    |
-  |  About our company                      |  Software and documentation copyrights             |
-  |                                         |                                                    |
-  +-----------------------------------------+----------------------------------------------------+
-  |                                         |                                                    |
   |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
   |                                         |                                                    |
   |  The GPL and OEPL                       |  Licence on this documentation                     |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
+  |                                         |                                                    |
+  |  :ref:`Copyright <copyright-link>`      |                                                    |
+  |                                         |                                                    |
+  |  Software and documentation copyrights  |                                                    |
+  |                                         |                                                    |
+  +-----------------------------------------+----------------------------------------------------+
 
+..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
+..  |                                         |                                                    |
+..  |  About our company                      |  Software and documentation copyrights             |
 
 
 

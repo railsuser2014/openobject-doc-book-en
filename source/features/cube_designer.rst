@@ -4,10 +4,8 @@ Cube Designer
 The business intelligence cube designer allows you to customize cubes on any
 kind of databases (Oracle, MySQL, PostgreSQL, etc.) The user friendly cube
 designer will help you to design full schema in a few minutes.
-
-.. raw:: html
  
- <a target="_blank" href="images/cube_designer_screenshot.png"><img src="images_small/cube_designer_screenshot.png" class="screenshot" /></a>
+.. image:: images/cube_designer_screenshot.png
 
 Key Points:
 -----------
@@ -28,7 +26,4 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
-  
-    <a target="_blank" href="http://www.openobject.com">Open Object</a>
+        Open Object: http://www.openobject.com

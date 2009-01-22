@@ -5,10 +5,8 @@ Open ERP has modules to help you to manages and maintain your IT infrastructure.
 You can manage your softwares, licences, hardwares, waranties and control interventions
 on the different components. Each components can be linked together to design your
 network infrastructure.
-
-.. raw:: html
  
- <a target="_blank" href="images/network_screenshot.png"><img src="images_small/network_screenshot.png" class="screenshot" /></a>
+.. image:: images/network_screenshot.png
 
 Key Points:
 -----------

@@ -1,5 +1,5 @@
 Defining Cube
-===========
+=============
 
 Cube as we discussed in :ref:`The Cube <cube-link>` 
 

@@ -9,10 +9,8 @@ drop in dasboards, switch to calendar or gantt views, etc.
 With Open ERP, powerfull reporting are not only dedicated to managers, but
 to any user of the system. Uses the 200+ reports to satisfy every employee
 need and improve their performance by providing them the right information.
-
-.. raw:: html
  
- <a target="_blank" href="images/dynamic_graphs_screenshot.png"><img src="images_small/dynamic_graphs_screenshot.png" class="screenshot" /></a>
+.. image:: images/dynamic_graphs_screenshot.png
 
 Key Points:
 -----------

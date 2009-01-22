@@ -5,10 +5,8 @@ The direct marketing modules manage and automate the development, execution and
 monitoring of campaigns across multiple channels. It provides tools to manage
 offers, campaigns, steps, workflows, etc. The report composition engine allows
 you to create bulk documents.
-
-.. raw:: html
  
- <a target="_blank" href="images/direct_marketing_screenshot.png"><img src="images_small/direct_marketing_screenshot.png" class="screenshot" /></a>
+.. image:: images/direct_marketing_screenshot.png
 
 Key Points:
 -----------

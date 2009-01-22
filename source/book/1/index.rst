@@ -1,10 +1,10 @@
 
-
+**************************
 First steps with Open ERP
-===========================
+**************************
 
 .. toctree::
-    
+
     1_0
     1_1_Inst_Config/1_1_Inst_Config
     1_1_Inst_Config/1_1_Inst_Config_architecture

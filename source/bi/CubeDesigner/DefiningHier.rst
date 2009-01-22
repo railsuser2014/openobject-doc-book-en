@@ -1,5 +1,5 @@
 Defining Hierarchy
-================
+==================
 
 :ref:`Hierarchy <hierarchy-link>` is the arrangements of objects, peoples etc .. in a ranked or some series. The hierarchy are the way of arranging the dimensions. 
 
