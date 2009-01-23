@@ -15,11 +15,11 @@ Explanation of the components
 
 :Web-Services:
 
-This is the layer provided by the base of Tiny ERP, protocols: NET-RPC (fast binary), XML-RPC, over HTTP or HTTPS
+This is the layer provided by the base of Open  ERP, protocols: NET-RPC (fast binary), XML-RPC, over HTTP or HTTPS
 
 :Services:
 
-Layer provided by Tiny ERP that provides: authentification (normal/ldap), users management, access rights, workflows, module management, ...
+Layer provided by Open  ERP that provides: authentification (normal/ldap), users management, access rights, workflows, module management, ...
 
 :MDX Parser:
 
@@ -28,7 +28,7 @@ It parses the MDX query and convert it in the form of python objects. It uses py
 
 :MDX Validator:
 
-It parse all the objects created and map it to the browse object ofTiny ERP resource. For example, the axis object will receive a link to the Tiny ERP browse record on the related olap.axis object.
+It parse all the objects created and map it to the browse object ofOpen  ERP resource. For example, the axis object will receive a link to the Open  ERP browse record on the related olap.axis object.
 
 :MDX Runner:
 
@@ -40,5 +40,5 @@ And it fills the cube by values using axis mapping
 
 The layer provided by SQL Alchemy, it supports: mysql, postgresql, oracle, ...
 
-The schema definition is in the Tiny ERP database.
+The schema definition is in the Open  ERP database.
 

@@ -45,15 +45,15 @@ that will send XML-RPC queries and print the result.
 The Cube Definition
 -------------------
 
-The meta data of the cube definition will be stored in the Tiny ERP database. The user interface
-to edit cubes is in Tiny ERP. We will use the same concept of the one defined in the ... XML standard. So that we will be able, in a futur phase, to import such files.
+The meta data of the cube definition will be stored in the Open ERP database. The user interface
+to edit cubes is in Open  ERP. We will use the same concept of the one defined in the ... XML standard. So that we will be able, in a futur phase, to import such files.
 
-This must not depend on any module of Tiny ERP so that if you want to use the BI library independently, you may not use Tiny ERP if cubes are defined. If cubes are not defined, you just install the minimal version of Tiny ERP that includes: the olap module, user management, workflow managements, access rights management, ... (the base module)
+This must not depend on any module of Open g ERP so that if you want to use the BI library independently, you may not use Open  ERP if cubes are defined. If cubes are not defined, you just install the minimal version of Open  ERP that includes: the olap module, user management, workflow managements, access rights management, ... (the base module)
 
 The goal is that the user never have to create the cubes himself. We will create a wizard that 
 will compute cubes based on introspection on the RDBM's. The steps of this wizard:
 
-* Selection of the database (type of db, then selection box like in the login of Tiny ERP)
+* Selection of the database (type of db, then selection box like in the login of Open  ERP)
 
 * Selection of the factable (selection box)
 
@@ -61,9 +61,9 @@ will compute cubes based on introspection on the RDBM's. The steps of this wizar
 
 * Selection of the dimensions (click on a tree structure)
 
-Then it's done, the cube is computed. The aggrgated table may be also auto-matically computed by Tiny ERP.
+Then it's done, the cube is computed. The aggrgated table may be also auto-matically computed by Open  ERP.
 
-The goal is to create new cube on the fly from the Tiny ERP client on every object, on user demand. This will also server the online demo server.
+The goal is to create new cube on the fly from the Open  ERP client on every object, on user demand. This will also server the online demo server.
 
 The cube creation can be stored in the server of kept in memory for one time usage.
 
@@ -88,7 +88,7 @@ The web client is a web-server that display cubes and provide tools to browse th
 The OpenOffice plugin
 ---------------------
 
-Similar to Palo but all operation of contruction and manipulation of cubes remains in Tiny ERP to limit development on OOo. The development on OOo just contains functions to:
+Similar to Palo but all operation of contruction and manipulation of cubes remains in Open  ERP to limit development on OOo. The development on OOo just contains functions to:
 
 * Insert new data (based on selection of dimensions and filters)
 
@@ -96,12 +96,12 @@ Similar to Palo but all operation of contruction and manipulation of cubes remai
 
 * Slice function
 
-The Tiny ERP interface
+The Open  ERP interface
 ----------------------
 
-From Tiny ERP, you should be able to right click/drag and drop any field to trigger the cube definition wizard to create your own cube on demand. For this, we will use the web client of the bi system.
+From Open  ERP, you should be able to right click/drag and drop any field to trigger the cube definition wizard to create your own cube on demand. For this, we will use the web client of the bi system.
 
-We will intergate this on the gtk and web client of tiny erp. For the GTK one, it will open the browser to browse the cube.
+We will intergate this on the gtk and web client of Open  erp. For the GTK one, it will open the browser to browse the cube.
 
 
 Extra libraries

@@ -11,12 +11,12 @@ For the end-user:
 
 * Is easy and fast to use: a simple web-interface that does not require any dependencies and can be integrated in proprietary softwares, and an OpenOffice interface for complex dashboards creation.
 * Is easy to install: auto-installation on Windows and Linux, a few dependencies
-* Integrated and independent from Tiny ERP. 
+* Integrated and independent from Open  ERP. 
 
 For the administrator user:
 ---------------------------
 
-* A cube designer within Tiny ERP (application and web-client)
+* A cube designer within Open  ERP (application and web-client)
 * Easy to configure: Automatic cube definition (5 clicks, using introspection on database),
 * Easy to maintain: the application must be smart enough that do not require any fine tuning in the cube definition: run well on bad indexes, no need to explicitly define aggregated table, no need to define axes.
 * No intervention at all from developers: everything through interfaces for end-user. 
@@ -24,7 +24,7 @@ For the administrator user:
 For the developer:
 ------------------
 
-* Everything (dimensions, ) must be object oriented with a module system to allow to add your own code to extend the software, like in Tiny ERP.
+* Everything (dimensions, ) must be object oriented with a module system to allow to add your own code to extend the software, like in Open  ERP.
 * It must support main database engine and aggregation of multiple database: PostgreSQL, MySQL, Oracle, MSSQL etc... to do reporting for any application.
 
 
@@ -40,7 +40,7 @@ For the developer:
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Open  SPRL (representing Open Object Presses) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
