@@ -1,48 +1,3 @@
-
-Developing a real case from purchase to sale: a complete workflow
-###################################################################
-
-Summary
-
-* Use case
-
-* Functional needs
-
-* Installing and configuring modules
-
-* Database setup
-
-* Test of a purchase – sale workflow
-
-Keywords
-
-* sale
-
-* purchase
-
-* stock
-
-* workflow
-
- *Now that you've discovered some of the many possibilities of Open ERP from a tour of the demonstration database, you'll develop a real case. An empty database provides the starting point for testing a classic workflow from product purchase to sale, completing your guided tour and your familiarization with Open ERP.* 
-
-
-A database loaded with demonstration data is very useful for understanding Open ERP's general capabilities. But to explore Open ERP through a lens of your own company's needs you should start with an empty database. You'll work in this chapter on a minimal database containing no demonstration data so that there is no confusion about what you created. And you'll keep the database you've created so that you can build on it throughout the rest of this book.
-
-You'll develop a real case through the following phases:
-
-	#. Specify a real case.
-
-	#. Describe the functional needs.
-
-	#. Configure the system with the essential modules.
-
-	#. Carry out the necessary data loading.
-
-	#. Test the system with your database.
-
-The case is deliberately extremely simple to provide you with a foundation for the more complex situations you'll handle in reality. Throughout this chapter it's assumed that you're accessing Open ERP through its web interface.
-
 Use case
 =========
 
@@ -142,7 +97,6 @@ Use the menu  *Administration > Modules Management > Modules > Uninstalled Modul
 	#. Click  *Start Upgrade*  wait for  *System Upgrade Done* to be displayed, then click  *Close* on that form.
 
 	#. The main menu now displays all of the menu items that were loaded by the modules you installed.
-
 
 
 .. Copyright © Open Object Press. All rights reserved.

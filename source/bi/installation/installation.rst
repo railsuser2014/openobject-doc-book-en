@@ -4,7 +4,7 @@ Installation of BI
 
 To make BI working on any system. We need a OpenERP Server and preferably OpenERP GTK client if needed running on the system.
 
-   1. :ref:`Installing TinyERP Server and OLAP module <install-olap>`
+   1. :ref:`Installing Open ERP Server and OLAP module <install-olap>`
    
    2. :ref:`Installing Web Interface <install-web-interface>`
 

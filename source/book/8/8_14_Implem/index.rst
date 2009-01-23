@@ -3,30 +3,6 @@
 Implementation Methodology
 ###########################
 
-Summary
-
-* Planning Open ERP's implementation
-
-* Deployment options
-
-* User training
-
-* Maintenance and support
-
-Keywords
-
-* implementation
-
-* integration
-
-* deployment
-
-* SaaS
-
-* training
-
-* migration
-
  *You may have mastered the technical aspects of administering and using your enterprise management system, but you still have a great deal of work to do integrating Open ERP into your company. This work is more business-related and social in nature than technical. The Open ERP implementation process encompasses several different phases: evaluation, planning, configuration, data migration, deployment, and user training, and impacts both support and maintenance* 
 
 
@@ -37,7 +13,20 @@ The management of ERP projects, and IT project management in general, are the su
 
 	Implementation encompasses the whole process of integrating and deploying Open ERP, including evaluating it, establishing specifications, planning the deployment, the configuration of the software, loading data, installation and training the users. It doesn't really extend to software customization, nor support and maintenance.
 
+.. raw:: html
 
+    <div class="all-toctree">
+
+.. toctree::
+
+    8_14_Implem_planning
+    8_14_Implem_deployment
+    8_14_Implem_training
+    8_14_Implem_support
+
+.. raw:: html
+
+    </div>
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

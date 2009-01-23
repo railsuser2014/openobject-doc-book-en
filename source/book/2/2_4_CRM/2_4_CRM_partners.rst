@@ -2,6 +2,25 @@
    single: Partner
 .. 
 
+
+Open ERP preparation
+=====================
+
+You'll need two databases for this chapter:
+
+* \ ``openerp_ch04X``\  , which should be a restored copy of\ `` openerp_ch02``\  , the database you created through Chapter 2. It's referenced throughout the main body of this chapter because it contains demonstration data that illustrates the points made in the chapter.
+
+* \ ``openerp_ch04``\  , which should be a restored copy of \ ``openerp_ch03,``\   the database you created through Chapter 3. If you follow the steps in this chapter you can extend this database.
+
+To be able to backup and restore these databases you'll need to know your super-administrator password.
+
+You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new modules into it later in the chapter – they're not available in the core 4.2.2 release of Open ERP.
+
+And you'll need access to a system administrator for your server system if you want to install the \ ``fetchmail``\   system software that's mentioned later in this chapter.
+
+Once you've created \ ``openerp_ch04``\  , add a new group – \ ``support``\  , and four new users – \ ``General``\  , \ ``Sales``\  , \ ``Support``\  , and \ ``Senior Support``\   (the former two should be put in group \ ``user``\  , and the latter two in \ ``support``\  ). Then also install the \ ``crm``\   module that exists in the Open ERP core installation (but has not yet been installed into this database). You'll need only to know your database's \ ``admin``\   user details to do this.
+
+
 Partners
 =========
 

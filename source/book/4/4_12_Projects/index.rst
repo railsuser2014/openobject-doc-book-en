@@ -1,14 +1,22 @@
 
 
-Managing your company effectively
-###################################
+Internal organization and project management
+#############################################
 
- *Your company is a closely interlinked medley of people and processes that form the whole system. If you want it to be efficient, and to be able manage it effectively, you have to organize it and make it systematic, and optimize its major operations. Spots of poor management can disturb the whole added value chain.* 
+ *If you have good systems for managing tasks, then your whole company will benefit. Open ERP's project management modules enable you to manage and track tasks efficiently, work on them effectively, delegate them quickly, and track the delegated tasks closely. Open ERP also helps handle staff's personal time in the organization, and this chapter proposes a methodology aimed at improving the productivity of executives.* 
 
- *This part presents an approach to greater efficiency, showing concrete solutions by applying Open ERP to different problems in a services company. For each enterprise function, Open ERP enables you to automate the recurring tasks, systematize complex processes, simplify the transmission of information, and control your whole set of operations.* 
+.. raw:: html
 
+    <div class="all-toctree">
 
+.. toctree::
 
+    4_12_Projects_management
+    4_12_Project_productivity
+
+.. raw:: html
+
+    </div>
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

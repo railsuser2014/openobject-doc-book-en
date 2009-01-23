@@ -165,7 +165,7 @@ The physical model is the source of the data which is presented through the logi
 Making Schema
 +++++++++++++
 
-In OpenObject BI schemas are represented in a XML file. It can be designed in the way TinyERP does. The details of XML file can be seen at *Creating XML*
+In OpenObject BI schemas are represented in a XML file. It can be designed in the way Open ERP does. The details of XML file can be seen at *Creating XML*
 
         
 

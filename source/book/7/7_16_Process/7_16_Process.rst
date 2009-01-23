@@ -1,22 +1,6 @@
 Process
 ###########################
 
-Summary
-
-* User processes
-
-* Using processes effectively
-
-* Adapting processes to your needs
-
-Keywords
-
-* Corporate Intelligence ( r )
-
-* Process
-
-* Workflow
-
 The organization and quality of a company is related to its maturity. A mature company is one where processes are well established, and where staff don't waste much time searching for documents or trying to find out how to do their different tasks.
 
 From this need for effective organization and explicit quality improvement, have appeared numerous tools:

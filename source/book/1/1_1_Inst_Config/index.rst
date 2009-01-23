@@ -3,36 +3,7 @@
 .. 
 
 Installation and Configuration
-+++++++++++++++++++++++++++++++
-
-
-Summary
-
-* The architecture of Open ERP
-
-* Installing the software
-
-* Configuring a database
-
-Keywords
-
-* downloading
-
-* installation
-
-* SaaS
-
-* database server
-
-* application server
-
-* web server
-
-* GTK client
-
-* web client
-
-* backups
+###############################
 
  *Installing Open ERP under Windows or Linux for familiarization use should take you only half an hour or so and needs only a couple of operations. The first operation is installation of the application and database server on a server PC (that's a Windows or Linux or Macintosh computer). You've a choice of approaches for the second operation: either install a web server (most probably on the original server PC) to use with standard web clients that can be found on anybody's PC, or install application clients on each intended user's PC. When you first install Open ERP you'll configure a database containing a little functionality and some demonstration data to test the installation.* 
 
@@ -94,6 +65,20 @@ There are some differences between installing Open ERP on Windows and on Linux 
 
 Once you've completed this installation, you'll create and configure a database to confirm that your Open ERP installation is working.
 
+
+.. raw:: html
+
+    <div class="all-toctree">
+
+.. toctree::
+
+   1_1_Inst_Config_architecture   
+   1_1_Inst_Config_install
+   1_1_Inst_Config_db_create   
+
+.. raw:: html
+
+    </div>
 
 .. Copyright © Open Object Press. All rights reserved.
 

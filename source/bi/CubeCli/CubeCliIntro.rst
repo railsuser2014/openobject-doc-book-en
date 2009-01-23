@@ -33,10 +33,14 @@ One can check all these options by typing
 Usage: tinybi.py [options]
 
 Options:
+
 ::
 
  --version             show program's version number and exit
  -h, --help            show this help message and exit
+
+.. 
+
 ::
 
  General options:
@@ -44,6 +48,9 @@ Options:
                        The query to execute
    -s SCHEMA, --schema=SCHEMA
                        The schema to use for the query
+
+.. 
+
 ::
 
  Connection options:
@@ -58,6 +65,8 @@ Options:
    -p PORT, --port=PORT
                        Server port
 
+.. 
+
 :Example:
 
 ./tinybi.py -d "terp" -H localhost -U admin -W admin -p 8069 -s "tinyerp" -c "select {[user].[all]} on rows, {[measures].[credit_limit],[measures].[count]} on columns from res_partner"
@@ -68,3 +77,4 @@ This will give output on CLI as :
    :header: " ","credit_limit","count"
 
    "All user","[66700.0]","[21.0]"
+

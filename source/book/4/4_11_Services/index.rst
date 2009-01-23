@@ -2,36 +2,22 @@
 The Management of Services
 ###########################
 
-
-Summary
-
-* Management of prices
-
-* Management of contracts
-
-* Invoicing processes
-
-* Enterprise planning
-
-* Expense reimbursements
-
-Keywords
-
-* pricelist
-
-* contract
-
-* employee
-
-* invoicing
-
-* planning
-
-* expense receipts
-
  *This chapter focuses on the management of contracts, and the services associated with that. The complete process of managing services is studied here: from defining prices and contracts to automatically invoicing the services, through planning and the treatment of additional costs such as expense receipts.* 
 
+.. raw:: html
 
+    <div class="all-toctree">
+
+.. toctree::
+
+    4_11_Services_contract
+    4_11_Services_planning
+    4_11_Services_price
+    4_11_Services_treatment
+
+.. raw:: html
+
+    </div>
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

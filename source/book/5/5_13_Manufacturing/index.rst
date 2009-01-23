@@ -1,28 +1,6 @@
 Production Management
 ######################
 
-Summary
-
-* Production Management
-
-* Production and Terminology
-
-* Routings and workcenters
-
-* Repairs
-
-Keywords
-
-* Bills of Materials
-
-* Routing
-
-* Production Orders
-
-* Scheduling
-
-* Repairs
-
 *The management of manufacturing described in this chapter will cover planning, ordering, inventory and the manufacturing or assembly of products from raw materials and components. It also covers consumption and production of products as well as the necessary operations on machinery, tools or human resources.*
 
 The management of manufacturing in Open ERP is based on its stock management and, like it, is very flexible in both its operations and its financial control. It particularly benefits from the use of double-entry inventory management for manufacturing orders.
