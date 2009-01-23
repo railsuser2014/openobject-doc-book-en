@@ -2,6 +2,19 @@
    single: Microsoft Outlook interface
 .. 
 
+Open ERP preparation
+=====================
+
+You'll need only one database for this chapter:
+
+* \ ``openerp_ch05X``\  , which should be a restored copy of\ `` openerp_ch04X``\   the database you created at the start of Chapter 4 and then extended – you'll refer to it from time to time because it contains demonstration data that you can use to exercise some of the functions you encounter in the chapter,
+
+To be able to backup and restore the database you'll need to know your super-administrator password.
+
+You'll probably also need your system's \ ``addons``\   directory to be writable, since some of the modules you'll need may have to be added separately – they weren't available as part of core the 4.2.2 release of Open ERP.
+
+You will need to have administrator access to your Windows PC to install the Outlook and Word interface adapters described in the chapter.
+
 Microsoft Outlook interface
 =============================
 

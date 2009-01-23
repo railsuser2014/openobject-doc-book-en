@@ -70,6 +70,20 @@ You'll discover many advantages of this independent representation below. For th
 Analytic accounts make up a powerful tool that can be used in different ways. The trick is to create your own analytic structure for a chart of accounts that closely matches your company's needs. 
 
 
+.. raw:: html
+
+    <div class="all-toctree">
+
+.. toctree::
+
+    4_09_Accounts_analytic_chart
+    4_09_Accounts_place
+    4_09_Accounts_record
+    4_09_Accounts_fin_ana
+
+.. raw:: html
+
+    </div>
 
 .. Copyright © Open Object Press. All rights reserved.
 

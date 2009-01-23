@@ -37,7 +37,20 @@ The management of ERP projects, and IT project management in general, are the su
 
 	Implementation encompasses the whole process of integrating and deploying Open ERP, including evaluating it, establishing specifications, planning the deployment, the configuration of the software, loading data, installation and training the users. It doesn't really extend to software customization, nor support and maintenance.
 
+.. raw:: html
 
+    <div class="all-toctree">
+
+.. toctree::
+
+    8_14_Implem_planning
+    8_14_Implem_deployment
+    8_14_Implem_training
+    8_14_Implem_support
+
+.. raw:: html
+
+    </div>
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

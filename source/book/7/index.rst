@@ -5,7 +5,7 @@ Process and Document Management
 
 .. toctree::
 
-    7_16_Process/7_16_Process
+    7_16_Process/index
     7_17_Document_Management/7_17_Document_Management
     7_17_Document_Management/7_17_Document_Management_access
     7_17_Document_Management/7_17_Document_Management_attachment

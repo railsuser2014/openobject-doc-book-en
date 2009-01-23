@@ -67,7 +67,22 @@ Using the module *OpenOffice.org Report Designer* you can change any part of any
 
 Finally, you'll see how to import your data into Open ERP automatically, to migrate all of your data in one single go.
 
+.. raw:: html
 
+    <div class="all-toctree">
+
+.. toctree::
+
+    8_13_Personalization_module
+    8_13_Personalization_menu
+    8_13_Personalization_accessRights
+    8_13_Personalization_workflow
+    8_13_Personalization_reports
+    8_13_Personalization_import_export
+
+.. raw:: html
+
+    </div>
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
