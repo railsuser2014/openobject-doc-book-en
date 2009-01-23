@@ -1,28 +1,6 @@
 Logistics and Stock Management
 ###############################
 
-Summary
-
-* Double-entry stock management
-
-* Logistics workflow
-
-* Configuring warehouses
-
-* Traceability
-
-* Advanced logistics
-
-Keywords
-
-* Logistics
-
-* Lots / batches
-
-* Traceability
-
-* Restocking / replenishment
-
 *Open ERP's stock management is perhaps the most intelligent stock management system that you can get in any of the integrated management software systems on the market at the time of writing. It's extremely simple, flexible and complete, all at the same time.*
 
 It's based on the concept of double entry that revolutionized accounting. What's unique to Open ERP is that this has now been applied to stock management. The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better, “everything moved”. Talk of disappearance, consumption or loss of products is not used in Open ERP. Instead you talk only of stock moves from one place to another.

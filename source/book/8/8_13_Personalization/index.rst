@@ -3,42 +3,6 @@
 Personalizing and Administering Open ERP
 #########################################
 
-Summary
-
-* Creating a configuration module
-
-* Reorganizing the menu
-
-* Changing passwords
-
-* Personalizing the welcome page
-
-* Defining the default behaviors
-
-* Configuring the language and adapting the terminology
-
-* Managing access rights
-
-* Configuring the workflows
-
-* Designing statistical reports
-
-* Importing your data
-
-Keywords
-
-* administration
-
-* rights management
-
-* OpenOffice.org
-
-* Report Designer
-
-* statistics
-
-* workflow
-
  *This chapter is for the administrators of an Open ERP system. You'll learn to configure and personalize Open ERP to match it to your company's needs and those of each individual user of the system.* 
 
 Open ERP gives you great flexibility in the ways of configuring and using it, which let you modify its appearance, the general way it functions and the different analysis tools chosen to match your company's needs most closely. These configuration changes are carried out through the user interface.

@@ -3,26 +3,6 @@
 Organization of Human Resources
 #################################
 
-Summary
-
-* Managing Human Resources
-
-* Controlling Services
-
-Keywords
-
-* employee
-
-* contract
-
-* sign-in/sign-out
-
-* timesheet
-
-* services
-
-* attendance
-
  *Functions used for directly managing a business. To start, this chapter deals with human resources and employee services. Most of the solutions discussed after this chapter concern management by business or by project: they depend mostly on analytic accounting, and each business or project is represented by an analytic account.* 
 
 A company is effective only as far as it can rely on its employees' good work. Open ERP's human resource modules enable you to manage important aspects of staff work efficiently, such as their skills, contracts, and working time.

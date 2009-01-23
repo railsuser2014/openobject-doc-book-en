@@ -2,32 +2,6 @@
 Customer Relationship Management
 #################################
 
-Summary
-
-* Partners
-
-* Case management
-
-* Email gateway
-
-* Profiling
-
-Keywords
-
-* SRM, CRM
-
-* quality
-
-* profiling 
-
-* segmentation
-
-* case
-
-* support
-
-* ISO 9001
-
  *It's often said that the customer is king. In the business world you'd ideally treat all your customers as royalty, at the center of attention. Open ERP's CRM module is designed to make this aim a reality, helping employees of the business understand their customers' needs better, and automating their communication efforts.* 
 
 .. index::

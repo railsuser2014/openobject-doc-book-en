@@ -1,26 +1,6 @@
 Purchase Management
 ####################
 
-Summary
-
-* Price Request
-
-* Purchase Order
-
-* Purchasing Process
-
-* Control of goods receipts and invoices
-
-Keywords
-
-* purchase
-
-* order
-
-* price
-
-* control
-
 *In the preceding chapters you saw how to use supplier invoices and delivery notes in Open ERP. This chapter is about the management of purchases, the process upstream of these two operations. You'll now see how Open ERP handles and simplifies this and the control of purchases at the suppliers.*
 
 A complete workflow

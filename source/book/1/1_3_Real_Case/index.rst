@@ -2,28 +2,6 @@
 Developing a real case from purchase to sale: a complete workflow
 ###################################################################
 
-Summary
-
-* Use case
-
-* Functional needs
-
-* Installing and configuring modules
-
-* Database setup
-
-* Test of a purchase – sale workflow
-
-Keywords
-
-* sale
-
-* purchase
-
-* stock
-
-* workflow
-
  *Now that you've discovered some of the many possibilities of Open ERP from a tour of the demonstration database, you'll develop a real case. An empty database provides the starting point for testing a classic workflow from product purchase to sale, completing your guided tour and your familiarization with Open ERP.* 
 
 

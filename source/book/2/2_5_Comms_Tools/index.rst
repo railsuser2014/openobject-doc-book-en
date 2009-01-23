@@ -6,25 +6,6 @@
 Communication Tools
 #####################
 
-Summary
-
-* Thunderbird interface
-
-* Microsoft Outlook interface
-
-* Microsoft Word interface
-
-Keywords
-
-* SRM, CRM
-
-* productivity
-
-* communication
-
-* email
-
-* Office
 
  *Open ERP provides all the information you need to pursue your company's business opportunities efficiently. But to stay productive with all the information you have to handle it's essential that you can keep using your normal communication tools by interfacing them with Open ERP, and not be restricted just to Open ERP's interface.* 
 

@@ -3,20 +3,6 @@
 Guided Tour
 ###########
 
-Summary
-     • The user interface
-     • Installing functional modules
-     • Familiarization with the system using the demonstration data
-     
-Keywords
-     • modules
-     • functions
-     • configuration
-     • familiarization
-     • interface
-     • business process
-     
-
 Starting to discover Open ERP, using demonstration data supplied with the system to familiarize yourself with the user interface. This guided tour provides you with an introduction to many of the available system features.
 
 

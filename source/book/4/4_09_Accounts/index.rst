@@ -3,32 +3,6 @@
 Analytic Accounts
 ###################
 
-Summary
-
-* Introduction
-
-* Configuration
-
-* Accounting Entries
-
-* Financial Analysis
-
-Keywords
-
-* analytic accounts
-
-* task
-
-* project
-
-* profitability
-
-* chart of accounts
-
-* journal
-
-* budget
-
  *Sitting at the heart of your company's processes, analytic accounts (or cost accounts) are indispensable tools for managing your operations well. Unlike your financial accounts they're for more than accountants, they're for general managers and project managers too.* 
 
 You need a common way of referring to each user, service, or document to integrate all your company's processes effectively. Such a common basis is provided by analytic accounts (or management accounts, or cost accounts, as they're also called) in Open ERP.

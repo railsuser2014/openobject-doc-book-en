@@ -3,30 +3,6 @@
 Internal organization and project management
 #############################################
 
-Summary
-
-* Project Management
-
-* The art of productivity without stress
-
-Keywords
-
-* project
-
-* task
-
-* role
-
-* plan
-
-* delegation
-
-* organization
-
-* productivity
-
-* GTD
-
  *If you have good systems for managing tasks, then your whole company will benefit. Open ERP's project management modules enable you to manage and track tasks efficiently, work on them effectively, delegate them quickly, and track the delegated tasks closely. Open ERP also helps handle staff's personal time in the organization, and this chapter proposes a methodology aimed at improving the productivity of executives.* 
 
 .. raw:: html
