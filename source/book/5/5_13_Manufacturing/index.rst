@@ -580,7 +580,7 @@ So find the product corresponding to the product or lot number. Once it's been f
 
 * Downstream traceability: follow the production chain to find the final customer of specified components.
 
-Examples of the two traceability types <TODO>
+Examples of the two traceability types are given in the by the following figures:
 
     .. image:: images/mrp_tracability_upstream.png
        :align: center
@@ -629,7 +629,7 @@ If you want to start production, click the button 'Confirm production', and Open
 
 For traceability you can take the lot numbers from the raw materials used or from the finished products. To do this click on one of the lines of the first or the third tab. Note the Lot Number.
 
-Once the order is confirmed, you should reserve the materials. This means that you're not reliant on the hope that your requirements will be in reserve and assigns the raw materials for your stock for this production. This guides the processes of restocking. If you don't want to change the priorities just let the production order in this state and c ...  <TODO>
+Once the order is confirmed, you should force the reservation of materials. This means that you're not waiting for the scheduler to assign and reserve the raw materials from your stock for this production. This shortcuts the procurement process. If you don't want to change the priorities, just leave the production order in this state and the scheduler will create a plan based on the priority and your planned date.
 
 To start the production of products, click 'Start Production'. The raw materials are then consumed automatically from stock, which means that the draft movements become 'Done'.
 
@@ -649,7 +649,7 @@ You can decide the starting time by modifying the corresponding action in the me
 
 .. tip::   **Technique** *Calculating requirements*
 
-    Scheduling only confirms procurement confirmed but not started. These procurement reservations will themselves start production, tasks or purchase depending on the configuration of the requested product. <TODO>
+    Scheduling only validates procurement confirmed but not started. These procurement reservations will themselves start production, tasks or purchases depending on the configuration of the requested product.
 
 You take account of the priority of operations in the start of the reservations and procurement. Then the urgent requests or those having a past date or a date sooner than the others will be started first so that if there are not enough products in stock to satisfy all the requests, the most urgent will be produced first.
 
@@ -777,7 +777,7 @@ Use the menu *Manufacturing > Configuration > Workcenters* to define a new workc
 
 *Definition of a workcenter.*
 
-A workcenter must have a name and a code. It's necessary to assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break from 01:00 to 12:00. <TODO>
+A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
 
     .. image:: images/mrp_workcenter_working_hour.png
        :align: center
@@ -853,9 +853,9 @@ The times and the cycles shown in the production order are in the same way as th
 
 So if you use routings, Open ERP automatically calculates the operations required for the production order. If the workcenters are linked to analytic accounts, at the end of production, Open Erp will generate the analytic accounts representing the costs of manufacture. This will allow you to work out profitability per workcenter or manufacturing unit through analytic accounting.
 
-But the routings also enable you to manage your production capacity. You will be able to ....  <TODO>
+But the routings also enable you to manage your production capacity. You will be able to leave the demand charts for the days / weeks / months ahead to validate that you don't forecast more than you are capable of producing.
 
-To see a chart of  <TODO>
+To see a demand chart, list the workcenters using the menu *Manufacturing > Configuration > Workcenters*. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
     .. image:: images/mrp_workcenter_load.png
        :align: center
