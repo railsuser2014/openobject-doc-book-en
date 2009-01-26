@@ -14,6 +14,7 @@ A two-phase approach provides a good guide for your first steps with Open ERP:
 
 #. Using a database containing demonstration data to get an overview of Open ERP's functionality (described in this chapter)
 #. Setting up a clean database to configure and populate a limited system for yourself (described in the next chapter).
+
 To read this chapter effectively, make sure that you have access to an Open ERP server. The description in this chapter assumes that you're using the Open ERP web client unless it states otherwise. The general functionality differs little from one client to the other.
 
 

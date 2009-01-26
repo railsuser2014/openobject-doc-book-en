@@ -6,6 +6,7 @@ We can check all the queries on :ref:`CLI <CLI-link>` by making a file with quer
 For example we can create *test_query* file with the content like 
 
 .. :ref:`test_query <test_query-link>`
+
 -------
 
 ::
