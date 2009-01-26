@@ -271,9 +271,9 @@ Sometimes, however, it is useful to define the intermediate product separately a
 
 In the example, the intermediate product ETA100 is used in the manufacture of several different cabinets. In this case you'd want to define a unique BoM for it even if you didn't want any instances of this product to be built, nor wanted to re-write these elements in a series of different multi-level BoMs.
 
-If you    <TODO>
+If you only want a single work order for the complete cabinet, and not one for the BoM itself, you can define the BoM line corresponding to product ETA100 in the cabinet's BoM as type *Phantom*. Then it will automatically put ETA100's BoM contents into the cabinet's work order regardless of whether it's been defined as multi-level.
 
-This representation is very useful because it allows you to define reusable elements of the assembly and keep them isolated.
+This way of representing the assembly is very useful because it allows you to define reusable elements of the assembly and keep them isolated.
 
 If you define the BoM for the ARM100 cabinet in the way shown by the table arm100_phantom below, you'll get production orders of the 
 
@@ -343,7 +343,7 @@ In Open ERP you can define several Bills of Materials for the same product. In f
 
 Once several Bill of Materials have been defined for a particular product it's necessary to have a system to enable Open ERP to select one of them for use. By default the Bill of Materials with the lowest sequence number is selected by the system.
 
-But to have more control over the procedure  <TODO>
+But to gain more control over the process during the sale or procurement, you can use *properties*. The menu *Production Management > Configuration > Properties* enables you to define properties, which are concept that can be defined arbitrarily to help in the selection of Bills of Materials when you have a choice of BoM.
 
 .. tip::  **Definition** *Properties*
 
@@ -383,7 +383,7 @@ You define two Bills of Materials for the same cabinet. To distinguish between t
 
     In some software, you use the term 'substitute' for this principle of configurable properties in a Bill of Materials.
 
-By putting a Bill of Materials on its own line, it is also possible to implement substitute products. You then put the Bill of Materials of type 'Assembly' for the substitution to be transparent and that Open ERP not to propose an intermediate production order.  <TODO>
+By putting a Bill of Materials on its own line, you can also implement substitute products. You set the Bill of Materials to type 'Assembly' to make the substitution transparent and for Open ERP not to propose an intermediate production order.
 
 Manufacturing
 =============
@@ -488,13 +488,13 @@ You'll see the production order for CPU_GEN but not that for PC2 because that on
 
 *The detail of a production order.*
 
-The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN, RAM. You can then confirm the production's two times:
+The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN, RAM. You can then confirm the production twice:
 
 Start of production: consumption of raw materials,
 
 End of production: manufacture of finished product.
 
-At this stage, you should click to edit the line for the product MB1 to encode a lot number for it. The lot number is usually shown on its card, so you should just copy that over. To do that put the cursor in the field Production Lot and press <F1> to create a new lot. Indicate a lot reference, for example: MB1345678. The system may then show you a warning because this lot is not in stock, but you can ignore this message. <TODO carte mer>
+At this stage, you should click to edit the line for the product MB1 to encode a lot number for it. The lot number is usually shown the parent chart, so you should just copy that over. To do that put the cursor in the field Production Lot and press <F1> to create a new lot. Set a lot reference, for example: MB1345678. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
 
 The production order must be in the closed state as shown in the figure below.
 
@@ -543,7 +543,7 @@ The packing orders are treated by priority of leaving so the storesperson must b
 
 .. tip::   **Point** *Packings and Delivery*
 
-    Depending on whether you work in the simplified or extended mode <TODO>
+    Depending on whether you work in the simplified or extended mode you may have to do a further operation to make a delivery to your customer and so carry out the two steps:
 
     * pick lists,
 
@@ -552,7 +552,7 @@ The packing orders are treated by priority of leaving so the storesperson must b
 Invoicing at delivery
 ----------------------
 
-Periodically the admininstrator or an accountant can send invoices based on the deliveries that have been carried out. To do that, you can use the menu Stock Management > Outgoing Products > Lists to Invoice. You then get a list of all the deliveries that have been carried out but which have not yet been invoiced. <TODO>
+Periodically the administrator or an accountant can send invoices based on the deliveries that have been carried out. To do that, you can use the menu *Stock Management > Outgoing Products > Items to Invoice*. You then get a list of all the deliveries that have been made but haven't yet been invoiced. 
 
 So select some or all of the deliveries. Click on the action “Invoice pickings”. Open ERP asks if you want to group the deliveries from the same partner into a single invoice or if you prefer to invoice for each delivery individually.
 
@@ -580,7 +580,7 @@ So find the product corresponding to the product or lot number. Once it's been f
 
 * Downstream traceability: follow the production chain to find the final customer of specified components.
 
-Examples of the two traceability types <TODO>
+Examples of the two traceability types are given in the by the following figures:
 
     .. image:: images/mrp_tracability_upstream.png
        :align: center
@@ -629,7 +629,7 @@ If you want to start production, click the button 'Confirm production', and Open
 
 For traceability you can take the lot numbers from the raw materials used or from the finished products. To do this click on one of the lines of the first or the third tab. Note the Lot Number.
 
-Once the order is confirmed, you should reserve the materials. This means that you're not reliant on the hope that your requirements will be in reserve and assigns the raw materials for your stock for this production. This guides the processes of restocking. If you don't want to change the priorities just let the production order in this state and c ...  <TODO>
+Once the order is confirmed, you should force the reservation of materials. This means that you're not waiting for the scheduler to assign and reserve the raw materials from your stock for this production. This shortcuts the procurement process. If you don't want to change the priorities, just leave the production order in this state and the scheduler will create a plan based on the priority and your planned date.
 
 To start the production of products, click 'Start Production'. The raw materials are then consumed automatically from stock, which means that the draft movements become 'Done'.
 
@@ -649,7 +649,7 @@ You can decide the starting time by modifying the corresponding action in the me
 
 .. tip::   **Technique** *Calculating requirements*
 
-    Scheduling only confirms procurement confirmed but not started. These procurement reservations will themselves start production, tasks or purchase depending on the configuration of the requested product. <TODO>
+    Scheduling only validates procurement confirmed but not started. These procurement reservations will themselves start production, tasks or purchases depending on the configuration of the requested product.
 
 You take account of the priority of operations in the start of the reservations and procurement. Then the urgent requests or those having a past date or a date sooner than the others will be started first so that if there are not enough products in stock to satisfy all the requests, the most urgent will be produced first.
 
@@ -777,7 +777,7 @@ Use the menu *Manufacturing > Configuration > Workcenters* to define a new workc
 
 *Definition of a workcenter.*
 
-A workcenter must have a name and a code. It's necessary to assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break from 01:00 to 12:00. <TODO>
+A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
 
     .. image:: images/mrp_workcenter_working_hour.png
        :align: center
@@ -853,9 +853,9 @@ The times and the cycles shown in the production order are in the same way as th
 
 So if you use routings, Open ERP automatically calculates the operations required for the production order. If the workcenters are linked to analytic accounts, at the end of production, Open Erp will generate the analytic accounts representing the costs of manufacture. This will allow you to work out profitability per workcenter or manufacturing unit through analytic accounting.
 
-But the routings also enable you to manage your production capacity. You will be able to ....  <TODO>
+But the routings also enable you to manage your production capacity. You will be able to leave the demand charts for the days / weeks / months ahead to validate that you don't forecast more than you are capable of producing.
 
-To see a chart of  <TODO>
+To see a demand chart, list the workcenters using the menu *Manufacturing > Configuration > Workcenters*. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
     .. image:: images/mrp_workcenter_load.png
        :align: center

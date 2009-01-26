@@ -20,6 +20,7 @@ Open Object Documentation
     bi/index
     contribute/index
     install/index
+    technical_guide/index
 
 .. raw:: html
 
@@ -38,25 +39,32 @@ Open Object Documentation
 .. table::
   :class: main-content-presentation
 
-  +---------------------------------------------------------+--------------------------------------------------+
-  |                                                         |                                                  |
-  |  :ref:`Open ERP Book <books-link>`                      |  :ref:`Open ERP Features <features-link>`        |
-  |                                                         |                                                  |
-  |  A best-seller book about enterprise management         |  A summary of main Open ERP features             |
-  |                                                         |                                                  |
-  +---------------------------------------------------------+--------------------------------------------------+
-  |                                                         |                                                  |
-  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`Developer Book <book-develop-link>`       |
-  |                                                         |                                                  |
-  |  Manuals to install Open ERP and Open Object            |  Develope your own modules on Open Object        |
-  |                                                         |                                                  |
-  +---------------------------------------------------------+--------------------------------------------------+
-  |                                                         |                                                  |
-  |  :ref:`Business Intelligence <book-bi-link>`            |  :ref:`Community Book <how-to-contribute-link>`  |
-  |                                                         |                                                  |
-  |  Business Intelligence with Open Object                 |  The Open Object community organisation          |
-  |                                                         |                                                  |
-  +---------------------------------------------------------+--------------------------------------------------+
+  +--------------------------------------------------------------+--------------------------------------------------+
+  |                                                              |                                                  |
+  |  :ref:`Open ERP Book <books-link>`                           |  :ref:`Open ERP Features <features-link>`        |
+  |                                                              |                                                  |
+  |  A best-seller book about enterprise management              |  A summary of main Open ERP features             |
+  |                                                              |                                                  |
+  +--------------------------------------------------------------+--------------------------------------------------+
+  |                                                              |                                                  |
+  |  :ref:`Installation Manuals <installation-link>`             |  :ref:`Developer Book <book-develop-link>`       |
+  |                                                              |                                                  |
+  |  Manuals to install Open ERP and Open Object                 |  Develop your own modules on Open Object         |
+  |                                                              |                                                  |
+  +--------------------------------------------------------------+--------------------------------------------------+
+  |                                                              |                                                  |
+  |  :ref:`Business Intelligence <book-bi-link>`                 |  :ref:`Community Book <how-to-contribute-link>`  |
+  |                                                              |                                                  |
+  |  Business Intelligence with Open Object                      |  The Open Object community organisation          |
+  |                                                              |                                                  |
+  +--------------------------------------------------------------+--------------------------------------------------+
+  |                                                              |                                                  |
+  |  :ref:`Module Technical Guide <module-technical-guide-link>` |                                                  |
+  |                                                              |                                                  |
+  |  A developer resource listing Module Objects Properties      |                                                  |
+  |  by introspection                                            |                                                  |
+  |                                                              |                                                  |
+  +--------------------------------------------------------------+--------------------------------------------------+
 
 ..  |                                                         |                                                  |
 ..  |  :ref:`Integrator Book <book-customize-link>`           |  :ref:`Developer Book <book-develop-link>`       |

@@ -97,7 +97,7 @@ Similar to Palo but all operation of contruction and manipulation of cubes remai
 * Slice function
 
 The Open  ERP interface
-----------------------
+-----------------------
 
 From Open  ERP, you should be able to right click/drag and drop any field to trigger the cube definition wizard to create your own cube on demand. For this, we will use the web client of the bi system.
 
