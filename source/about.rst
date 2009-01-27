@@ -1,6 +1,0 @@
-
-.. _about-link:
-
-About
-=====
-
