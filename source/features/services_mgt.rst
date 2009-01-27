@@ -5,8 +5,10 @@ Service management allows you to manage your company's projects and tasks
 without any limitations. It provides tools to manage multi-level sub-projects,
 control tasks from project chief, alert customers by e-mails for project
 support, schedule and prioritize tasks assigned,  etc.
+
+.. raw:: html
  
-.. image:: images/service_mgt_screenshot.png
+ <a target="_blank" href="images/service_mgt_screenshot.png"><img src="images_small/service_mgt_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
@@ -25,6 +27,8 @@ Integration benefits:
 Links:
 ------
 
-        Demonstration: http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=service_en
-        
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=service_en">Demonstration</a>
 * Module: profile_service

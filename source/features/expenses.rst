@@ -8,8 +8,10 @@ an invoice for the employee.
 
 Employee can encode their own expenses and the validation flow puts it
 automatically in the accounting after validation of managers.
+
+.. raw:: html
  
-.. image:: images/expense_screenshot.png
+ <a target="_blank" href="images/expense_screenshot.png"><img src="images_small/expense_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------

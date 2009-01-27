@@ -5,8 +5,10 @@ Every object or service of the application is accessible through different
 standard web-services: XML-RPC, XML-RPC over HTTPS or Python NET-RPC for faster
 accesses. It allows you to easily integrate any application or machine to the
 Open ERP server for a maximum of productivity.
+
+.. raw:: html
  
-.. image:: images/web_services_screenshot.png
+ <a target="_blank" href="images/web_services_screenshot.png"><img src="images_small/web_services_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

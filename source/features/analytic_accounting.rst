@@ -10,8 +10,10 @@ As all tools are integrated, it gives you a full control and automatisation of
 your company:
 * Planning are integrated with budgets,
 * Project management is integrated to contract or affairs managmeent, etc.
+
+.. raw:: html
  
-.. image:: images/analytic_account_screenshot.png
+ <a target="_blank" href="images/analytic_account_screenshot.png"><img src="images_small/analytic_account_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

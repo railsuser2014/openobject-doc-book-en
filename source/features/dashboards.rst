@@ -8,8 +8,10 @@ Accounting, Production and Project Management.
 Unlike most other ERP systems and classic statistically-based systems, Open ERP
 lets dashboards be provided to all of the system's users, and not just to
 directors and accountants.
+
+.. raw:: html
  
-.. image:: images/dashboards_screenshot.png
+ <a target="_blank" href="images/dashboards_screenshot.png"><img src="images_small/dashboards_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
@@ -25,4 +27,7 @@ Integration benefits:
 Links:
 ------
 
-        Demonstration: http://demo.openerp.com:8080
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://demo.openerp.com:8080">Demonstration</a>

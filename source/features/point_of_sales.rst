@@ -4,8 +4,10 @@ Point of Sales
 Manage your point of sales directly with Open ERP. It allows you to easily
 manages all point of sales operations: selling, stock, encashment, invoicing,
 etc.
+
+.. raw:: html
  
-.. image:: images/point_of_sales_screenshot.png
+ <a target="_blank" href="images/point_of_sales_screenshot.png"><img src="images_small/point_of_sales_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

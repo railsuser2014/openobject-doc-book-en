@@ -4,8 +4,10 @@ VOIP
 The asterisk module allows to interface your Voice Over IP system with Open
 ERP. When a customer calls you, it can propose the automatically the partner
 form linked to this phone number.
+
+.. raw:: html
  
-.. image:: images/voip_screenshot.png
+ <a target="_blank" href="images/voip_screenshot.png"><img src="images_small/voip_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
