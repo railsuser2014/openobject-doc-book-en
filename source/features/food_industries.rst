@@ -5,8 +5,10 @@ Open ERP provides different modules for food industries companies. It
 is able to manage a full traceability of the products, from the supplier
 to the customer, including specific datas on each lots. The master production
 schedule allows a fine tuning of your automatic procurements.
+
+.. raw:: html
  
-.. image:: images/food_industries_screenshot.png
+ <a target="_blank" href="images/food_industries_screenshot.png"><img src="images_small/food_industries_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -26,7 +28,9 @@ Integration Benefits:
 Links:
 ------
 
-        Demonstration: http://demo.openerp.com:8080
-
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>
 * Module:
 

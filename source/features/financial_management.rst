@@ -4,8 +4,10 @@ Financial Project Management
 Open ERP intagrates financial project management to help you remain in
 control of your different activities. It keep track of costs, budgets,
 automatic invoicing based on tasks achieved, profitability reports, etc.
+
+.. raw:: html
  
-.. image:: images/financial_management_screenshot.png
+ <a target="_blank" href="images/financial_management_screenshot.png"><img src="images_small/financial_management_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -23,7 +25,9 @@ Integration Benefits:
 
 Links:
 
-        Example: http://example.net
-
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://example.net">Example</a>
 * Module: example
 

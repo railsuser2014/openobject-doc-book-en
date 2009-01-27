@@ -5,8 +5,10 @@ Open ERP provides modules that configure automatically the system for
 a book store. It allow to manages books, authors, editors and suppliers.
 It manages barcodes and sales from the website, from a point of sale or
 by quotation or phone.
+
+.. raw:: html
  
-.. image:: images/bookstores_screenshot.png
+ <a target="_blank" href="images/bookstores_screenshot.png"><img src="images_small/bookstores_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -24,4 +26,7 @@ Integration Benefits:
 Links:
 ------
 
-        Demonstration: http://demo.openerp.com
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>

@@ -12,8 +12,10 @@ our customization tools: workflow editor, object editor, view designer,
 report designer, BI reports, customizable actions, etc. All customisations
 made on the server can be saved as a module to easily deploy, redistribute and
 share.
+
+.. raw:: html
  
-.. image:: images/module_system_screenshot.png
+ <a target="_blank" href="images/module_system_screenshot.png"><img src="images_small/module_system_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -25,6 +27,5 @@ Key Points:
 Links:
 ------
 
-        List of modules: http://openobject.com
-
+* <a href="http://openobject.com">List of modules</a>
 

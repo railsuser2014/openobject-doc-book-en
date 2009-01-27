@@ -7,8 +7,10 @@ clicks, users can file reports and lists to Open Office documents and modify it
 from their favorite document application. It can be included into various
 OpenERP modules, including Accounts, Opportunities, Leads, Cases, Contacts and
 more.
+
+.. raw:: html
  
-.. image:: images/report_designer_screenshot.png
+ <a target="_blank" href="images/report_designer_screenshot.png"><img src="images_small/report_designer_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

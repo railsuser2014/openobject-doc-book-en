@@ -4,8 +4,10 @@ Holidays Management
 This module's main task is to control the holiday's schedule of your company.
 It allow employee to requests holidays. Then, managers can review requests for
 holiday, and control the overall holiday's planning for the company or departement.
+
+.. raw:: html
  
-.. image:: images/holidays_screenshot.png 
+ <a target="_blank" href="images/holidays_screenshot.png"><img src="images_small/holidays_screenshot.png" class="screenshot" /></a> 
 
 Key points:
 -----------

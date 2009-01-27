@@ -6,8 +6,10 @@ create, assign or update cases to the CRM only by sending mails or receiving
 mails without going into OpenERP interface. This module is a very useful tool
 to manage all of generic mails from the company (info, sales, support,...) and
 is dedicated to allow users to assign some cases.
+
+.. raw:: html
  
-.. image:: images/mail_gateway_screenshot.png
+ <a target="_blank" href="images/mail_gateway_screenshot.png"><img src="images_small/mail_gateway_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

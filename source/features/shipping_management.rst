@@ -3,8 +3,10 @@ Shipping Management
 
 The Open ERP warehouse management system provides lots of facilities
 to organise efficiently your customer or suppliers shippings.
+
+.. raw:: html
  
-.. image:: images/shipping_mgt_screenshot.png
+ <a target="_blank" href="images/shipping_mgt_screenshot.png"><img src="images_small/shipping_mgt_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

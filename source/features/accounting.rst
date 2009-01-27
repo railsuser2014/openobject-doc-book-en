@@ -8,7 +8,9 @@ accounting features: electronic bank transfers, assets management,
 automatic invoicing, analytic controls, financial indicators, statements
 management, etc.
 
-.. image:: images/accounting_screenshot.png
+.. raw:: html
+
+    <a target="_blank" href="images/accounting_screenshot.png"><img src="images_small/accounting_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -28,7 +30,10 @@ Integration Benefits:
 
 Links:
 
-        Demonstration: http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=accounting_en
+
+.. raw:: html
+
+    <a target="_blank" href="http://demo.openerp.com:8080/login?user=admin&passwd=admin&db=accounting_en">Demonstration</a>
 
 * Module: accounting
 

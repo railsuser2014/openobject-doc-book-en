@@ -3,8 +3,10 @@ Business Process Management
 
 Open ERP supports technical workflow and also end-users processes.
 Introduction two or three lines.
+
+.. raw:: html
  
-.. image:: images/end_users_screenshot.png
+ <a target="_blank" href="images/end_users_screenshot.png"><img src="images_small/end_users_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

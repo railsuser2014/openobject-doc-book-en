@@ -4,8 +4,10 @@ Payements Management
 As to help you to manage your treasury and your payments to suppliers, Open ERP
 provides tools to help you on the preparation of payments. They support workflows
 so that you can assign different responsibilities in the process.
+
+.. raw:: html
  
-.. image:: images/payements_management_screenshot.png
+ <a target="_blank" href="images/payements_management_screenshot.png"><img src="images_small/payements_management_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

@@ -10,8 +10,10 @@ Different working methods are provided according to the need:
 * Sign in/out by projects
 * Simple timesheet encoding
 * Full timesheet integrated with attendances and validation process by manager
+
+.. raw:: html
  
-.. image:: images/timesheet_screenshot.png
+ <a target="_blank" href="images/timesheet_screenshot.png"><img src="images_small/timesheet_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

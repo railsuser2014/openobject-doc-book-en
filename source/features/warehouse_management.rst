@@ -2,8 +2,10 @@ Warehouse Management
 ====================
 
 Open ERP provides the smartest warehouse management system ever done.
+
+.. raw:: html
  
-.. image:: images/warehouse_mgt_screenshot.png
+ <a target="_blank" href="images/warehouse_mgt_screenshot.png"><img src="images_small/warehouse_mgt_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
