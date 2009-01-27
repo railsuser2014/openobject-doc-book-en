@@ -41,6 +41,7 @@ Manufacturing will have the following consequences:
 * Analytic costs: manufacturing operations,
 
 * Added accounting value of stock: by the creation of value following the transformation of products.
+
 .. raw:: html
 
     <div class="all-toctree">
