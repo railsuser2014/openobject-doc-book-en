@@ -22,16 +22,16 @@ as a constraint rather than a helpful daily management tool.
 
 .. tip:: **Don't confuse**   Workflow and User Processes
 
-Workflows give you a vertical representation of a document's lifecycle. They
-are technical processes, used by system implementers to adapt the behaviour of
-Open ERP to your company's needs.
-
-Conversely user processes represent the workflows across your whole company and
-its documents. They are useful for end users to locate an action in a complete
-horizontal workflow.
-
-The two systems are complementary and link together so that a modification to a
-workflow becomes visible in the user processes of the corresponding document.
+  Workflows give you a vertical representation of a document's lifecycle. They
+  are technical processes, used by system implementers to adapt the behaviour of
+  Open ERP to your company's needs.
+  
+  Conversely user processes represent the workflows across your whole company and
+  its documents. They are useful for end users to locate an action in a complete
+  horizontal workflow.
+  
+  The two systems are complementary and link together so that a modification to a
+  workflow becomes visible in the user processes of the corresponding document.
 
 To help the company meet its quality requirements and to form these processes
 into assistance integrated with everyday work, Open ERP supplies a 'Corporate
