@@ -8,11 +8,6 @@ You will find here a list of the most important features of Open ERP and
 Open Object. More than 350 modules are available, so this is just a summary
 of some of them.
 
-.. toctree::
-    :maxdepth: 1
-    :glob:
-
-    *
 
 Enterprise management
 +++++++++++++++++++++
