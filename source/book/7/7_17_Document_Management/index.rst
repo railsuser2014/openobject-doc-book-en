@@ -13,15 +13,15 @@ The objectives of document management include easier archiving, access, and refe
 
 .. toctree::
 
-   7_17_Document_Management_access
-   7_17_Document_Management_attachment
-   7_17_Document_Management_classic
    7_17_Document_Management_importance
-   7_17_Document_Management_mapping
+   7_17_Document_Management_classic
    7_17_Document_Management_OpenERP
-   7_17_Document_Management_searching
-   7_17_Document_Management_structures
+   7_17_Document_Management_access
+   7_17_Document_Management_mapping
+   7_17_Document_Management_attachment
    7_17_Document_Management_virtualFiles
+   7_17_Document_Management_structures
+   7_17_Document_Management_searching
 
 .. raw:: html
 
