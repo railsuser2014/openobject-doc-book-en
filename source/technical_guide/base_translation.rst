@@ -52,18 +52,10 @@ Objects
 Object: Translation Contribution
 ################################
 
-.. index::
-  single: Translation Contribution object
-.. 
 
 
 :lang: Language, selection
 
-
-
-.. index::
-  single: lang field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: Translation Contribution
 
 
 
-.. index::
-  single: src field
-.. 
-
-
 
 
 :name: Field Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -94,20 +76,10 @@ Object: Translation Contribution
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 
 :upload: upload, boolean
 
-
-
-.. index::
-  single: upload field
-.. 
 
 
 
@@ -116,20 +88,10 @@ Object: Translation Contribution
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :state: Translation State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -138,18 +100,8 @@ Object: Translation Contribution
 
 
 
-.. index::
-  single: contributor_email field
-.. 
-
-
 
 
 :type: Type, selection
 
-
-
-.. index::
-  single: type field
-.. 
 

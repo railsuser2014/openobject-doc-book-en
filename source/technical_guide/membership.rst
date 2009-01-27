@@ -80,18 +80,10 @@ Objects
 Object: Member line
 ###################
 
-.. index::
-  single: Member line object
-.. 
 
 
 :date_from: From, date
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -100,20 +92,10 @@ Object: Member line
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :account_invoice_line: Account Invoice line, many2one
 
-
-
-.. index::
-  single: account_invoice_line field
-.. 
 
 
 
@@ -122,20 +104,10 @@ Object: Member line
 
 
 
-.. index::
-  single: date_to field
-.. 
-
-
 
 
 :partner: Partner, many2one
 
-
-
-.. index::
-  single: partner field
-.. 
 
 
 
@@ -144,27 +116,14 @@ Object: Member line
 
 
 
-.. index::
-  single: date_cancel field
-.. 
-
-
 
 Object: Membership by Years
 ###########################
 
-.. index::
-  single: Membership by Years object
-.. 
 
 
 :waiting_number: Waiting, integer, readonly
 
-
-
-.. index::
-  single: waiting_number field
-.. 
 
 
 
@@ -173,20 +132,10 @@ Object: Membership by Years
 
 
 
-.. index::
-  single: paid_amount field
-.. 
-
-
 
 
 :invoiced_amount: Invoiced, float, readonly
 
-
-
-.. index::
-  single: invoiced_amount field
-.. 
 
 
 
@@ -195,20 +144,10 @@ Object: Membership by Years
 
 
 
-.. index::
-  single: paid_number field
-.. 
-
-
 
 
 :canceled_number: Canceled, integer, readonly
 
-
-
-.. index::
-  single: canceled_number field
-.. 
 
 
 
@@ -217,20 +156,10 @@ Object: Membership by Years
 
 
 
-.. index::
-  single: currency field
-.. 
-
-
 
 
 :invoiced_number: Invoiced, integer, readonly
 
-
-
-.. index::
-  single: invoiced_number field
-.. 
 
 
 
@@ -239,49 +168,26 @@ Object: Membership by Years
 
 
 
-.. index::
-  single: year field
-.. 
-
-
 
 
 :waiting_amount: Waiting, float, readonly
 
 
 
-.. index::
-  single: waiting_amount field
-.. 
-
-
 
 
 :canceled_amount: Canceled, float, readonly
 
-
-
-.. index::
-  single: canceled_amount field
-.. 
 
 
 
 Object: New Membership by Years
 ###############################
 
-.. index::
-  single: New Membership by Years object
-.. 
 
 
 :waiting_number: Waiting, integer, readonly
 
-
-
-.. index::
-  single: waiting_number field
-.. 
 
 
 
@@ -290,20 +196,10 @@ Object: New Membership by Years
 
 
 
-.. index::
-  single: paid_amount field
-.. 
-
-
 
 
 :invoiced_amount: Invoiced, float, readonly
 
-
-
-.. index::
-  single: invoiced_amount field
-.. 
 
 
 
@@ -312,20 +208,10 @@ Object: New Membership by Years
 
 
 
-.. index::
-  single: paid_number field
-.. 
-
-
 
 
 :canceled_number: Canceled, integer, readonly
 
-
-
-.. index::
-  single: canceled_number field
-.. 
 
 
 
@@ -334,20 +220,10 @@ Object: New Membership by Years
 
 
 
-.. index::
-  single: currency field
-.. 
-
-
 
 
 :invoiced_number: Invoiced, integer, readonly
 
-
-
-.. index::
-  single: invoiced_number field
-.. 
 
 
 
@@ -356,29 +232,14 @@ Object: New Membership by Years
 
 
 
-.. index::
-  single: year field
-.. 
-
-
 
 
 :waiting_amount: Waiting, float, readonly
 
 
 
-.. index::
-  single: waiting_amount field
-.. 
-
-
 
 
 :canceled_amount: Canceled, float, readonly
 
-
-
-.. index::
-  single: canceled_amount field
-.. 
 

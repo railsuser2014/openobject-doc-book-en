@@ -62,18 +62,10 @@ Objects
 Object: Follow-Ups
 ##################
 
-.. index::
-  single: Follow-Ups object
-.. 
 
 
 :followup_line: Follow-Up, one2many
 
-
-
-.. index::
-  single: followup_line field
-.. 
 
 
 
@@ -82,20 +74,10 @@ Object: Follow-Ups
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -104,27 +86,14 @@ Object: Follow-Ups
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 Object: Follow-Ups Criteria
 ###########################
 
-.. index::
-  single: Follow-Ups Criteria object
-.. 
 
 
 :description: Printed Message, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -133,20 +102,10 @@ Object: Follow-Ups Criteria
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :delay: Days of delay, integer
 
-
-
-.. index::
-  single: delay field
-.. 
 
 
 
@@ -155,20 +114,10 @@ Object: Follow-Ups Criteria
 
 
 
-.. index::
-  single: start field
-.. 
-
-
 
 
 :followup_id: Follow Ups, many2one, required
 
-
-
-.. index::
-  single: followup_id field
-.. 
 
 
 
@@ -177,27 +126,14 @@ Object: Follow-Ups Criteria
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Followup statistics
 ###########################
 
-.. index::
-  single: Followup statistics object
-.. 
 
 
 :balance: Balance, float, readonly
 
-
-
-.. index::
-  single: balance field
-.. 
 
 
 
@@ -206,20 +142,10 @@ Object: Followup statistics
 
 
 
-.. index::
-  single: account_type field
-.. 
-
-
 
 
 :name: Partner, many2one, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -228,20 +154,10 @@ Object: Followup statistics
 
 
 
-.. index::
-  single: date_move field
-.. 
-
-
 
 
 :credit: Credit, float, readonly
 
-
-
-.. index::
-  single: credit field
-.. 
 
 
 
@@ -250,20 +166,10 @@ Object: Followup statistics
 
 
 
-.. index::
-  single: date_move_last field
-.. 
-
-
 
 
 :date_followup: Latest followup, date, readonly
 
-
-
-.. index::
-  single: date_followup field
-.. 
 
 
 
@@ -272,18 +178,8 @@ Object: Followup statistics
 
 
 
-.. index::
-  single: debit field
-.. 
-
-
 
 
 :followup_id: Follow Ups, many2one, readonly
 
-
-
-.. index::
-  single: followup_id field
-.. 
 

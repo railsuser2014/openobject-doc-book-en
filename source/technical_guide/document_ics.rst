@@ -45,18 +45,10 @@ Objects
 Object: document.directory.ics.fields
 #####################################
 
-.. index::
-  single: document.directory.ics.fields object
-.. 
 
 
 :content_id: Content, many2one, required
 
-
-
-.. index::
-  single: content_id field
-.. 
 
 
 
@@ -65,18 +57,8 @@ Object: document.directory.ics.fields
 
 
 
-.. index::
-  single: field_id field
-.. 
-
-
 
 
 :name: ICS Value, selection, required
 
-
-
-.. index::
-  single: name field
-.. 
 

@@ -46,27 +46,14 @@ Objects
 Object: Simulation level
 ########################
 
-.. index::
-  single: Simulation level object
-.. 
 
 
 :code: Simulation code, char, required
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Simulation name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

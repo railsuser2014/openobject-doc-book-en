@@ -80,18 +80,10 @@ Objects
 Object: mrp_operations.operation.code
 #####################################
 
-.. index::
-  single: mrp_operations.operation.code object
-.. 
 
 
 :start_stop: Status, selection, required
 
-
-
-.. index::
-  single: start_stop field
-.. 
 
 
 
@@ -100,38 +92,20 @@ Object: mrp_operations.operation.code
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Operation Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: mrp_operations.operation
 ################################
 
-.. index::
-  single: mrp_operations.operation object
-.. 
 
 
 :code_id: Code, many2one, required
 
-
-
-.. index::
-  single: code_id field
-.. 
 
 
 
@@ -140,20 +114,10 @@ Object: mrp_operations.operation
 
 
 
-.. index::
-  single: date_finished field
-.. 
-
-
 
 
 :date_start: Start Date, datetime
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -162,29 +126,14 @@ Object: mrp_operations.operation
 
 
 
-.. index::
-  single: production_id field
-.. 
-
-
 
 
 :order_date: Order Date, date, readonly
 
 
 
-.. index::
-  single: order_date field
-.. 
-
-
 
 
 :workcenter_id: Workcenter, many2one, required
 
-
-
-.. index::
-  single: workcenter_id field
-.. 
 

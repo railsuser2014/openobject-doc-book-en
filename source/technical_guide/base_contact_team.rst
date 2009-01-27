@@ -45,27 +45,14 @@ Objects
 Object: res.partner.team
 ########################
 
-.. index::
-  single: res.partner.team object
-.. 
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

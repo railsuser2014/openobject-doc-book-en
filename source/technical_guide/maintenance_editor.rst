@@ -47,18 +47,10 @@ Objects
 Object: maintenance modules
 ###########################
 
-.. index::
-  single: maintenance modules object
-.. 
 
 
 :version: Version, char
 
-
-
-.. index::
-  single: version field
-.. 
 
 
 
@@ -67,27 +59,14 @@ Object: maintenance modules
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: maintenance
 ###################
 
-.. index::
-  single: maintenance object
-.. 
 
 
 :name: Contract ID, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -96,20 +75,10 @@ Object: maintenance
 
 
 
-.. index::
-  single: module_ids field
-.. 
-
-
 
 
 :date_from: Date From, date, required
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -118,20 +87,10 @@ Object: maintenance
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date_to: Date To, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -140,29 +99,14 @@ Object: maintenance
 
 
 
-.. index::
-  single: partner_invoice_id field
-.. 
-
-
 
 
 :password: Password, char, required
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 

@@ -86,29 +86,16 @@ Objects
 Object: radiotv.program
 #######################
 
-.. index::
-  single: radiotv.program object
-.. 
 
 
 :production_year: Production year, integer
 
 
 
-.. index::
-  single: production_year field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -117,20 +104,10 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: classification field
-.. 
-
-
 
 
 :introduction: Introduction, text, required
 
-
-
-.. index::
-  single: introduction field
-.. 
 
 
 
@@ -139,31 +116,16 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: channel_ids field
-.. 
-
-
 
 
 :approx_duration: Approx. duration, integer
 
     *Approximate duration in minutes*
 
-.. index::
-  single: approx_duration field
-.. 
-
-
 
 
 :production_country_id: Production country, many2one
 
-
-
-.. index::
-  single: production_country_id field
-.. 
 
 
 
@@ -172,20 +134,10 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: broadcast_language field
-.. 
-
-
 
 
 :original_language: Original language, char
 
-
-
-.. index::
-  single: original_language field
-.. 
 
 
 
@@ -194,20 +146,10 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :production_type: Production type, selection, required
 
-
-
-.. index::
-  single: production_type field
-.. 
 
 
 
@@ -216,20 +158,10 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: editor field
-.. 
-
-
 
 
 :team: Team, text
 
-
-
-.. index::
-  single: team field
-.. 
 
 
 
@@ -238,49 +170,26 @@ Object: radiotv.program
 
 
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :email: Email, char
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: radiotv.category
 ########################
 
-.. index::
-  single: radiotv.category object
-.. 
 
 
 :program_ids: Programs, one2many
 
-
-
-.. index::
-  single: program_ids field
-.. 
 
 
 
@@ -289,49 +198,26 @@ Object: radiotv.category
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
 Object: radiotv.broadcast
 #########################
 
-.. index::
-  single: radiotv.broadcast object
-.. 
 
 
 :dt_end: End, datetime
 
 
 
-.. index::
-  single: dt_end field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -340,20 +226,10 @@ Object: radiotv.broadcast
 
 
 
-.. index::
-  single: url field
-.. 
-
-
 
 
 :dt_start: Start, datetime, required
 
-
-
-.. index::
-  single: dt_start field
-.. 
 
 
 
@@ -362,38 +238,20 @@ Object: radiotv.broadcast
 
 
 
-.. index::
-  single: program_id field
-.. 
-
-
 
 
 :channel_id: Channel, many2one, required
 
 
 
-.. index::
-  single: channel_id field
-.. 
-
-
 
 Object: radiotv.channel
 #######################
 
-.. index::
-  single: radiotv.channel object
-.. 
 
 
 :program_ids: Programs, many2many
 
-
-
-.. index::
-  single: program_ids field
-.. 
 
 
 
@@ -402,38 +260,20 @@ Object: radiotv.channel
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: radiotv.podcast
 #######################
 
-.. index::
-  single: radiotv.podcast object
-.. 
 
 
 :category: Category, char
 
-
-
-.. index::
-  single: category field
-.. 
 
 
 
@@ -442,20 +282,10 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: subtitle field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -464,20 +294,10 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: author field
-.. 
-
-
 
 
 :file_name: File name, char, required
 
-
-
-.. index::
-  single: file_name field
-.. 
 
 
 
@@ -486,20 +306,10 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: explicit field
-.. 
-
-
 
 
 :keywords: Keywords, char
 
-
-
-.. index::
-  single: keywords field
-.. 
 
 
 
@@ -508,20 +318,10 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: broadcast_id field
-.. 
-
-
 
 
 :duration: Duration, char
 
-
-
-.. index::
-  single: duration field
-.. 
 
 
 
@@ -530,20 +330,10 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: pub_date field
-.. 
-
-
 
 
 :block: Block, boolean
 
-
-
-.. index::
-  single: block field
-.. 
 
 
 
@@ -552,27 +342,14 @@ Object: radiotv.podcast
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: RadioTV website configuration
 #####################################
 
-.. index::
-  single: RadioTV website configuration object
-.. 
 
 
 :url: URL, char, required
 
-
-
-.. index::
-  single: url field
-.. 
 
 
 
@@ -581,20 +358,10 @@ Object: RadioTV website configuration
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -602,8 +369,3 @@ Object: RadioTV website configuration
 :sync: Synchronize, boolean
 
     *The changes in channels, programs and broadcasts are synchronized automatically to the website*
-
-.. index::
-  single: sync field
-.. 
-

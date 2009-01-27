@@ -52,18 +52,10 @@ Objects
 Object: Report for l10n_fr
 ##########################
 
-.. index::
-  single: Report for l10n_fr object
-.. 
 
 
 :line_ids: Lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -72,38 +64,20 @@ Object: Report for l10n_fr
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Report Lines for l10n_fr
 ################################
 
-.. index::
-  single: Report Lines for l10n_fr object
-.. 
 
 
 :definition: Definition, char
 
-
-
-.. index::
-  single: definition field
-.. 
 
 
 
@@ -112,29 +86,14 @@ Object: Report Lines for l10n_fr
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :report_id: Report, many2one
 
-
-
-.. index::
-  single: report_id field
-.. 
 

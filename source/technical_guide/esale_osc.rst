@@ -59,29 +59,16 @@ Objects
 Object: OScommerce Website
 ##########################
 
-.. index::
-  single: OScommerce Website object
-.. 
 
 
 :partner_anonymous_id: Anonymous, many2one, required
 
 
 
-.. index::
-  single: partner_anonymous_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -90,20 +77,10 @@ Object: OScommerce Website
 
 
 
-.. index::
-  single: url field
-.. 
-
-
 
 
 :language_ids: Languages, one2many
 
-
-
-.. index::
-  single: language_ids field
-.. 
 
 
 
@@ -112,20 +89,10 @@ Object: OScommerce Website
 
 
 
-.. index::
-  single: category_ids field
-.. 
-
-
 
 
 :shop_id: Sale Shop, many2one, required
 
-
-
-.. index::
-  single: shop_id field
-.. 
 
 
 
@@ -134,20 +101,10 @@ Object: OScommerce Website
 
 
 
-.. index::
-  single: product_ids field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -156,27 +113,14 @@ Object: OScommerce Website
 
 
 
-.. index::
-  single: tax_ids field
-.. 
-
-
 
 Object: esale_osc Tax
 #####################
 
-.. index::
-  single: esale_osc Tax object
-.. 
 
 
 :web_id: Website, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -185,20 +129,10 @@ Object: esale_osc Tax
 
 
 
-.. index::
-  single: esale_osc_id field
-.. 
-
-
 
 
 :name: Tax name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -207,27 +141,14 @@ Object: esale_osc Tax
 
 
 
-.. index::
-  single: tax_id field
-.. 
-
-
 
 Object: esale_osc Category
 ##########################
 
-.. index::
-  single: esale_osc Category object
-.. 
 
 
 :web_id: Website, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -236,20 +157,10 @@ Object: esale_osc Category
 
 
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :esale_osc_id: esale_osc ID, integer, required
 
-
-
-.. index::
-  single: esale_osc_id field
-.. 
 
 
 
@@ -258,27 +169,14 @@ Object: esale_osc Category
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: esale_osc Product
 #########################
 
-.. index::
-  single: esale_osc Product object
-.. 
 
 
 :esale_osc_id: esale_osc product id, integer
 
-
-
-.. index::
-  single: esale_osc_id field
-.. 
 
 
 
@@ -287,20 +185,10 @@ Object: esale_osc Product
 
 
 
-.. index::
-  single: web_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -309,38 +197,20 @@ Object: esale_osc Product
 
 
 
-.. index::
-  single: esale_osc_tax_id field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: esale_osc Language
 ##########################
 
-.. index::
-  single: esale_osc Language object
-.. 
 
 
 :web_id: Website, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -349,29 +219,14 @@ Object: esale_osc Language
 
 
 
-.. index::
-  single: esale_osc_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :language_id: Language, many2one
 
-
-
-.. index::
-  single: language_id field
-.. 
 

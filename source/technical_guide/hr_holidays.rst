@@ -80,18 +80,10 @@ Objects
 Object: Holidays Status
 #######################
 
-.. index::
-  single: Holidays Status object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -100,20 +92,10 @@ Object: Holidays Status
 
 
 
-.. index::
-  single: color_name field
-.. 
-
-
 
 
 :limit: Allow to override Limit, boolean
 
-
-
-.. index::
-  single: limit field
-.. 
 
 
 
@@ -122,38 +104,20 @@ Object: Holidays Status
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :section_id: Section, many2one
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 Object: Holidays
 ################
 
-.. index::
-  single: Holidays object
-.. 
 
 
 :employee_id: Employee, many2one, required, readonly
 
-
-
-.. index::
-  single: employee_id field
-.. 
 
 
 
@@ -162,20 +126,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Description, char, required, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -184,20 +138,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: date_to1 field
-.. 
-
-
 
 
 :date_from: Vacation start day, datetime
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -206,20 +150,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :contactno: Contact no, char, required, readonly
 
-
-
-.. index::
-  single: contactno field
-.. 
 
 
 
@@ -228,20 +162,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: total_hour field
-.. 
-
-
 
 
 :date_from1: From, date, required, readonly
 
-
-
-.. index::
-  single: date_from1 field
-.. 
 
 
 
@@ -250,20 +174,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: case_id field
-.. 
-
-
 
 
 :total_full: Total Full Leave, integer, readonly
 
-
-
-.. index::
-  single: total_full field
-.. 
 
 
 
@@ -272,20 +186,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: manager_id field
-.. 
-
-
 
 
 :holiday_id: Holiday's days list, one2many, readonly
 
-
-
-.. index::
-  single: holiday_id field
-.. 
 
 
 
@@ -294,20 +198,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: date_to field
-.. 
-
-
 
 
 :number_of_days: Number of Days in this Holiday Request, float
 
-
-
-.. index::
-  single: number_of_days field
-.. 
 
 
 
@@ -316,20 +210,10 @@ Object: Holidays
 
 
 
-.. index::
-  single: total_half field
-.. 
-
-
 
 
 :notes: Notes, text, readonly
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -338,27 +222,14 @@ Object: Holidays
 
 
 
-.. index::
-  single: holiday_status field
-.. 
-
-
 
 Object: Holidays Per User
 #########################
 
-.. index::
-  single: Holidays Per User object
-.. 
 
 
 :employee_id: Employee, many2one, required
 
-
-
-.. index::
-  single: employee_id field
-.. 
 
 
 
@@ -367,20 +238,10 @@ Object: Holidays Per User
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :notes: Notes, text
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -389,20 +250,10 @@ Object: Holidays Per User
 
 
 
-.. index::
-  single: max_leaves field
-.. 
-
-
 
 
 :leaves_taken: Leaves Already Taken, float, readonly
 
-
-
-.. index::
-  single: leaves_taken field
-.. 
 
 
 
@@ -411,20 +262,10 @@ Object: Holidays Per User
 
 
 
-.. index::
-  single: history field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -433,38 +274,20 @@ Object: Holidays Per User
 
 
 
-.. index::
-  single: remaining_leaves field
-.. 
-
-
 
 
 :holiday_status: Holiday's Status, many2one, required
 
 
 
-.. index::
-  single: holiday_status field
-.. 
-
-
 
 Object: hr.holidays.log
 #######################
 
-.. index::
-  single: hr.holidays.log object
-.. 
 
 
 :holiday_req_id: Holiday Request ID, char
 
-
-
-.. index::
-  single: holiday_req_id field
-.. 
 
 
 
@@ -473,20 +296,10 @@ Object: hr.holidays.log
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :name: Action, char, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -495,20 +308,10 @@ Object: hr.holidays.log
 
 
 
-.. index::
-  single: nb_holidays field
-.. 
-
-
 
 
 :holiday_user_id: Holidays user, many2one
 
-
-
-.. index::
-  single: holiday_user_id field
-.. 
 
 
 
@@ -517,18 +320,8 @@ Object: hr.holidays.log
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :holiday_status: Holiday's Status, many2one, readonly
 
-
-
-.. index::
-  single: holiday_status field
-.. 
 

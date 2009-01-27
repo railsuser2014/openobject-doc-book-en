@@ -80,18 +80,10 @@ Objects
 Object: Project
 ###############
 
-.. index::
-  single: Project object
-.. 
 
 
 :tasks: Project tasks, one2many
 
-
-
-.. index::
-  single: tasks field
-.. 
 
 
 
@@ -100,20 +92,10 @@ Object: Project
 
 
 
-.. index::
-  single: date_end field
-.. 
-
-
 
 
 :contact_id: Contact, many2one
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -122,20 +104,10 @@ Object: Project
 
     *Sum of spent hours of all tasks related to this project.*
 
-.. index::
-  single: effective_hours field
-.. 
-
-
 
 
 :manager: Project Manager, many2one
 
-
-
-.. index::
-  single: manager field
-.. 
 
 
 
@@ -144,31 +116,16 @@ Object: Project
 
 
 
-.. index::
-  single: child_id field
-.. 
-
-
 
 
 :planned_hours: Planned Time, float, readonly
 
     *Sum of planned hours of all tasks related to this project.*
 
-.. index::
-  single: planned_hours field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -177,21 +134,11 @@ Object: Project
 
     *Footer added at the beginning of the email for the warning message sent to the customer when a task is closed.*
 
-.. index::
-  single: warn_footer field
-.. 
-
-
 
 
 :warn_manager: Warn Manager, boolean
 
     *If you check this field, the project manager will receive a request each time a task is completed by his team.*
-
-.. index::
-  single: warn_manager field
-.. 
-
 
 
 
@@ -199,31 +146,16 @@ Object: Project
 
     *If you check this, the user will have a popup when closing a task that propose a message to send by email to the customer.*
 
-.. index::
-  single: warn_customer field
-.. 
-
-
 
 
 :date_start: Starting Date, date
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -232,20 +164,10 @@ Object: Project
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :parent_id: Parent Project, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -254,20 +176,10 @@ Object: Project
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :contact_id2: Contact, many2one
 
-
-
-.. index::
-  single: contact_id2 field
-.. 
 
 
 
@@ -276,31 +188,16 @@ Object: Project
 
     *Timetable working hours to adjust the gantt diagram report*
 
-.. index::
-  single: timesheet_id field
-.. 
-
-
 
 
 :members: Project Members, many2many
 
     *Project's member. Not used in any computation, just for information purpose.*
 
-.. index::
-  single: members field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -309,21 +206,11 @@ Object: Project
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :notes: Notes, text
 
     *Internal description of the project.*
-
-.. index::
-  single: notes field
-.. 
-
 
 
 
@@ -331,21 +218,11 @@ Object: Project
 
     *Header added at the beginning of the email for the warning message sent to the customer when a task is closed.*
 
-.. index::
-  single: warn_header field
-.. 
-
-
 
 
 :total_hours: Total Time, float, readonly
 
     *Sum of total hours of all tasks related to this project.*
-
-.. index::
-  single: total_hours field
-.. 
-
 
 
 
@@ -353,38 +230,20 @@ Object: Project
 
     *Link this project to an analytic account if you need financial management on projects. It ables to connect projects with budgets, plannings, costs and revenues analysis, timesheet on projects, etc.*
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :progress_rate: Progress, float, readonly
 
     *Percent of tasks closed according to the total of tasks todo.*
 
-.. index::
-  single: progress_rate field
-.. 
-
-
 
 Object: Project task type
 #########################
 
-.. index::
-  single: Project task type object
-.. 
 
 
 :name: Type, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -393,27 +252,14 @@ Object: Project task type
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Task
 ############
 
-.. index::
-  single: Task object
-.. 
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -422,20 +268,10 @@ Object: Task
 
 
 
-.. index::
-  single: context_id field
-.. 
-
-
 
 
 :date_reviewed: Reviewed Date, datetime
 
-
-
-.. index::
-  single: date_reviewed field
-.. 
 
 
 
@@ -444,31 +280,16 @@ Object: Task
 
     *Computed using the sum of the task work done.*
 
-.. index::
-  single: effective_hours field
-.. 
-
-
 
 
 :planned_hours: Planned Hours, float, required, readonly
 
     *Estimated time to do the task, usually set by the project manager when the task is in draft state.*
 
-.. index::
-  single: planned_hours field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -477,20 +298,10 @@ Object: Task
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :timebox_id: Timebox, many2one
 
-
-
-.. index::
-  single: timebox_id field
-.. 
 
 
 
@@ -499,20 +310,10 @@ Object: Task
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -521,20 +322,10 @@ Object: Task
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :parent_id: Parent Task, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -543,31 +334,16 @@ Object: Task
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :progress: Progress (%), float, readonly
 
     *Computed as: Time Spent / Total Time.*
 
-.. index::
-  single: progress field
-.. 
-
-
 
 
 :project_id: Project, many2one
 
-
-
-.. index::
-  single: project_id field
-.. 
 
 
 
@@ -576,20 +352,10 @@ Object: Task
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :procurement_id: Procurement, many2one
 
-
-
-.. index::
-  single: procurement_id field
-.. 
 
 
 
@@ -598,20 +364,10 @@ Object: Task
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 
 :child_ids: Delegated Tasks, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -620,20 +376,10 @@ Object: Task
 
 
 
-.. index::
-  single: work_ids field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -642,20 +388,10 @@ Object: Task
 
     *Computed as: Total Time - Estimated Time. It gives the difference of the time estimated by the project manager and the real time to close the task.*
 
-.. index::
-  single: delay_hours field
-.. 
-
-
 
 
 :name: Task summary, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -664,20 +400,10 @@ Object: Task
 
 
 
-.. index::
-  single: date_deadline field
-.. 
-
-
 
 
 :date_planned: Planned Date, datetime
 
-
-
-.. index::
-  single: date_planned field
-.. 
 
 
 
@@ -686,20 +412,10 @@ Object: Task
 
 
 
-.. index::
-  single: notes field
-.. 
-
-
 
 
 :date_close: Date Closed, datetime, readonly
 
-
-
-.. index::
-  single: date_close field
-.. 
 
 
 
@@ -708,20 +424,10 @@ Object: Task
 
     *Computed as: Time Spent + Remaining Time.*
 
-.. index::
-  single: total_hours field
-.. 
-
-
 
 
 :history: Task Details, text, readonly
 
-
-
-.. index::
-  single: history field
-.. 
 
 
 
@@ -730,27 +436,14 @@ Object: Task
 
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
-.. index::
-  single: remaining_hours field
-.. 
-
-
 
 Object: Task Work
 #################
 
-.. index::
-  single: Task Work object
-.. 
 
 
 :timesheet_line_id: Timesheet Line, many2one
 
-
-
-.. index::
-  single: timesheet_line_id field
-.. 
 
 
 
@@ -759,20 +452,10 @@ Object: Task Work
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Work summary, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -781,20 +464,10 @@ Object: Task Work
 
 
 
-.. index::
-  single: task_id field
-.. 
-
-
 
 
 :zip_id: Zip, many2one
 
-
-
-.. index::
-  single: zip_id field
-.. 
 
 
 
@@ -803,20 +476,10 @@ Object: Task Work
 
 
 
-.. index::
-  single: grant_id field
-.. 
-
-
 
 
 :contact_id: Contact, many2one
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -825,20 +488,10 @@ Object: Task Work
 
 
 
-.. index::
-  single: hours field
-.. 
-
-
 
 
 :date: Date, datetime
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -847,36 +500,18 @@ Object: Task Work
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :hr_analytic_timesheet_id: Related Timeline Id, integer
 
 
 
-.. index::
-  single: hr_analytic_timesheet_id field
-.. 
-
-
 
 Object: config.compute.remaining
 ################################
 
-.. index::
-  single: config.compute.remaining object
-.. 
 
 
 :remaining_hours: Remaining Hours, float
 
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
-
-.. index::
-  single: remaining_hours field
-.. 
-

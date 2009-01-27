@@ -66,29 +66,16 @@ Objects
 Object: Timesheet per day
 #########################
 
-.. index::
-  single: Timesheet per day object
-.. 
 
 
 :cost: Cost, float, readonly
 
 
 
-.. index::
-  single: cost field
-.. 
-
-
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -97,49 +84,26 @@ Object: Timesheet per day
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :quantity: Quantity, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 
 
 
 Object: Timesheet per account
 #############################
 
-.. index::
-  single: Timesheet per account object
-.. 
 
 
 :quantity: Quantity, float, readonly
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -148,49 +112,26 @@ Object: Timesheet per account
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account_id: Analytic Account, many2one, readonly
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 Object: Daily timesheet per account
 ###################################
 
-.. index::
-  single: Daily timesheet per account object
-.. 
 
 
 :quantity: Quantity, float, readonly
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -199,38 +140,20 @@ Object: Daily timesheet per account
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account_id: Analytic Account, many2one, readonly
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 Object: Costs to invoice
 ########################
 
-.. index::
-  single: Costs to invoice object
-.. 
 
 
 :amount_invoice: To invoice, float, readonly
 
-
-
-.. index::
-  single: amount_invoice field
-.. 
 
 
 
@@ -239,20 +162,10 @@ Object: Costs to invoice
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -261,18 +174,8 @@ Object: Costs to invoice
 
 
 
-.. index::
-  single: manager_id field
-.. 
-
-
 
 
 :account_id: Project, many2one, readonly
 
-
-
-.. index::
-  single: account_id field
-.. 
 

@@ -65,18 +65,10 @@ Objects
 Object: Expense
 ###############
 
-.. index::
-  single: Expense object
-.. 
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -85,20 +77,10 @@ Object: Expense
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -107,20 +89,10 @@ Object: Expense
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account_move_id: Account Move, many2one
 
-
-
-.. index::
-  single: account_move_id field
-.. 
 
 
 
@@ -129,20 +101,10 @@ Object: Expense
 
 
 
-.. index::
-  single: invoice_id field
-.. 
-
-
 
 
 :journal_id: Force Journal, many2one
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -151,20 +113,10 @@ Object: Expense
 
 
 
-.. index::
-  single: id field
-.. 
-
-
 
 
 :currency_id: Currency, many2one, required
 
-
-
-.. index::
-  single: currency_id field
-.. 
 
 
 
@@ -173,20 +125,10 @@ Object: Expense
 
 
 
-.. index::
-  single: user_valid field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -195,20 +137,10 @@ Object: Expense
 
 
 
-.. index::
-  single: date_valid field
-.. 
-
-
 
 
 :date: Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -217,31 +149,16 @@ Object: Expense
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 
 :amount: Total Amount, float, readonly
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :ref: Reference, char
 
-
-
-.. index::
-  single: ref field
-.. 
 
 
 
@@ -250,27 +167,14 @@ Object: Expense
 
 
 
-.. index::
-  single: date_confirm field
-.. 
-
-
 
 Object: Expense Line
 ####################
 
-.. index::
-  single: Expense Line object
-.. 
 
 
 :total_amount: Total, float, readonly
 
-
-
-.. index::
-  single: total_amount field
-.. 
 
 
 
@@ -279,20 +183,10 @@ Object: Expense Line
 
 
 
-.. index::
-  single: analytic_account field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -301,20 +195,10 @@ Object: Expense Line
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :date_value: Date, date, required
 
-
-
-.. index::
-  single: date_value field
-.. 
 
 
 
@@ -323,20 +207,10 @@ Object: Expense Line
 
 
 
-.. index::
-  single: uom_id field
-.. 
-
-
 
 
 :product_id: Product, many2one, readonly
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -345,20 +219,10 @@ Object: Expense Line
 
 
 
-.. index::
-  single: expense_id field
-.. 
-
-
 
 
 :unit_amount: Unit Price, float, readonly
 
-
-
-.. index::
-  single: unit_amount field
-.. 
 
 
 
@@ -367,29 +231,14 @@ Object: Expense Line
 
 
 
-.. index::
-  single: unit_quantity field
-.. 
-
-
 
 
 :ref: Reference, char
 
 
 
-.. index::
-  single: ref field
-.. 
-
-
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

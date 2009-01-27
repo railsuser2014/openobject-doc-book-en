@@ -55,27 +55,14 @@ Objects
 Object: Notify By Messages
 ##########################
 
-.. index::
-  single: Notify By Messages object
-.. 
 
 
 :msg: Special Message, text, required
 
     *This notification will appear at the bottom of the Invoices when printed.*
 
-.. index::
-  single: msg field
-.. 
-
-
 
 
 :name: Title, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

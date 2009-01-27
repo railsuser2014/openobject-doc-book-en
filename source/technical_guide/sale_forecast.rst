@@ -58,18 +58,10 @@ Objects
 Object: Sales Forecast
 ######################
 
-.. index::
-  single: Sales Forecast object
-.. 
 
 
 :forecast_rate: Progress (%), float, readonly
 
-
-
-.. index::
-  single: forecast_rate field
-.. 
 
 
 
@@ -78,20 +70,10 @@ Object: Sales Forecast
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Sales Forecast, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -100,20 +82,10 @@ Object: Sales Forecast
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 
 :note: Notes, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -122,20 +94,10 @@ Object: Sales Forecast
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date_to: End Period, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -144,27 +106,14 @@ Object: Sales Forecast
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 Object: Forecast Line
 #####################
 
-.. index::
-  single: Forecast Line object
-.. 
 
 
 :state_cancel: Cancel, boolean
 
-
-
-.. index::
-  single: state_cancel field
-.. 
 
 
 
@@ -173,20 +122,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: computation_type field
-.. 
-
-
 
 
 :state_draft: Draft, boolean
 
-
-
-.. index::
-  single: state_draft field
-.. 
 
 
 
@@ -195,20 +134,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: feedback field
-.. 
-
-
 
 
 :user_id: Salesman, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -217,20 +146,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: state_confirmed field
-.. 
-
-
 
 
 :crm_case_categ: Case Category, many2many
 
-
-
-.. index::
-  single: crm_case_categ field
-.. 
 
 
 
@@ -239,20 +158,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :amount: Value Forecasted, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -261,20 +170,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: computed_amount field
-.. 
-
-
 
 
 :final_evolution: Performance, selection
 
-
-
-.. index::
-  single: final_evolution field
-.. 
 
 
 
@@ -283,20 +182,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: forecast_rate field
-.. 
-
-
 
 
 :state_done: Done, boolean
 
-
-
-.. index::
-  single: state_done field
-.. 
 
 
 
@@ -305,20 +194,10 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: product_categ field
-.. 
-
-
 
 
 :product_product: Products, many2many
 
-
-
-.. index::
-  single: product_product field
-.. 
 
 
 
@@ -327,18 +206,8 @@ Object: Forecast Line
 
 
 
-.. index::
-  single: crm_case_section field
-.. 
-
-
 
 
 :forecast_id: Forecast, many2one, required
 
-
-
-.. index::
-  single: forecast_id field
-.. 
 

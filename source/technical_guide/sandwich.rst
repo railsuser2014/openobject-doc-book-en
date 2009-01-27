@@ -59,18 +59,10 @@ Objects
 Object: sandwich.product.type
 #############################
 
-.. index::
-  single: sandwich.product.type object
-.. 
 
 
 :name: Name of the type, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -79,27 +71,14 @@ Object: sandwich.product.type
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: sandwich.product
 ########################
 
-.. index::
-  single: sandwich.product object
-.. 
 
 
 :price: Product price, float
 
-
-
-.. index::
-  single: price field
-.. 
 
 
 
@@ -108,38 +87,20 @@ Object: sandwich.product
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :product_type_id: Type of product, many2one
 
 
 
-.. index::
-  single: product_type_id field
-.. 
-
-
 
 Object: sandwich.order
 ######################
 
-.. index::
-  single: sandwich.order object
-.. 
 
 
 :date: Order date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -148,20 +109,10 @@ Object: sandwich.order
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :partner: Partner, many2one, required
 
-
-
-.. index::
-  single: partner field
-.. 
 
 
 
@@ -170,38 +121,20 @@ Object: sandwich.order
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :order_lines: Order lines, one2many
 
 
 
-.. index::
-  single: order_lines field
-.. 
-
-
 
 Object: sandwich.order.line
 ###########################
 
-.. index::
-  single: sandwich.order.line object
-.. 
 
 
 :user_id: User id, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -210,20 +143,10 @@ Object: sandwich.order.line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :order_id: Order, many2one
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -232,20 +155,10 @@ Object: sandwich.order.line
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :date: Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -254,18 +167,8 @@ Object: sandwich.order.line
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :product_type_id: Product type, many2one
 
-
-
-.. index::
-  single: product_type_id field
-.. 
 

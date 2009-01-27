@@ -58,18 +58,10 @@ Objects
 Object: Directory Content Type
 ##############################
 
-.. index::
-  single: Directory Content Type object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -78,36 +70,18 @@ Object: Directory Content Type
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Content Type, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: document.configuration.wizard
 #####################################
 
-.. index::
-  single: document.configuration.wizard object
-.. 
 
 
 :host: Server Address, char, required
 
     *Put here the server address or IP. Keep localhost if you don't know what to write.*
-
-.. index::
-  single: host field
-.. 
-

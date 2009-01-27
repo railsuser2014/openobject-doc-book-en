@@ -87,18 +87,10 @@ Objects
 Object: ecommerce partner
 #########################
 
-.. index::
-  single: ecommerce partner object
-.. 
 
 
 :lang: Language, selection
 
-
-
-.. index::
-  single: lang field
-.. 
 
 
 
@@ -107,20 +99,10 @@ Object: ecommerce partner
 
 
 
-.. index::
-  single: last_name field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -129,20 +111,10 @@ Object: ecommerce partner
 
 
 
-.. index::
-  single: category_ids field
-.. 
-
-
 
 
 :company_name: Company Name, char
 
-
-
-.. index::
-  single: company_name field
-.. 
 
 
 
@@ -151,49 +123,26 @@ Object: ecommerce partner
 
 
 
-.. index::
-  single: address field
-.. 
-
-
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 Object: ecommerce partner address
 #################################
 
-.. index::
-  single: ecommerce partner address object
-.. 
 
 
 :username: Contact Name, char, required
 
 
 
-.. index::
-  single: username field
-.. 
-
-
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -202,20 +151,10 @@ Object: ecommerce partner address
 
 
 
-.. index::
-  single: fax field
-.. 
-
-
 
 
 :zip: Zip, char
 
-
-
-.. index::
-  single: zip field
-.. 
 
 
 
@@ -224,20 +163,10 @@ Object: ecommerce partner address
 
 
 
-.. index::
-  single: mobile field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -246,20 +175,10 @@ Object: ecommerce partner address
 
 
 
-.. index::
-  single: street2 field
-.. 
-
-
 
 
 :country_id: Country, many2one
 
-
-
-.. index::
-  single: country_id field
-.. 
 
 
 
@@ -268,31 +187,16 @@ Object: ecommerce partner address
 
 
 
-.. index::
-  single: phone field
-.. 
-
-
 
 
 :street: Street, char
 
 
 
-.. index::
-  single: street field
-.. 
-
-
 
 
 :state_id: State, many2one
 
-
-
-.. index::
-  single: state_id field
-.. 
 
 
 
@@ -301,38 +205,20 @@ Object: ecommerce partner address
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :email: E-Mail, char
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 Object: search parameters
 #########################
 
-.. index::
-  single: search parameters object
-.. 
 
 
 :code: Search Parameter Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -341,27 +227,14 @@ Object: search parameters
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Reviews about product
 #############################
 
-.. index::
-  single: Reviews about product object
-.. 
 
 
 :rating: Rating, integer
 
-
-
-.. index::
-  single: rating field
-.. 
 
 
 
@@ -370,20 +243,10 @@ Object: Reviews about product
 
 
 
-.. index::
-  single: reviewdate field
-.. 
-
-
 
 
 :customer_id: Customer, many2one, required
 
-
-
-.. index::
-  single: customer_id field
-.. 
 
 
 
@@ -392,38 +255,20 @@ Object: Reviews about product
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :review: Review, text
 
 
 
-.. index::
-  single: review field
-.. 
-
-
 
 Object: Credit Cards
 ####################
 
-.. index::
-  single: Credit Cards object
-.. 
 
 
 :code: Credit Card Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -432,38 +277,20 @@ Object: Credit Cards
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ecommerce payment
 #########################
 
-.. index::
-  single: ecommerce payment object
-.. 
 
 
 :biz_account: Your Business E-mail Id, char
 
     *Paypal Business Account Id.*
 
-.. index::
-  single: biz_account field
-.. 
-
-
 
 
 :bank_name: Bank Name, char
 
-
-
-.. index::
-  single: bank_name field
-.. 
 
 
 
@@ -472,20 +299,10 @@ Object: ecommerce payment
 
 
 
-.. index::
-  single: chequepay_to field
-.. 
-
-
 
 
 :name: Method, selection, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -494,20 +311,10 @@ Object: ecommerce payment
 
 
 
-.. index::
-  single: zip field
-.. 
-
-
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -516,20 +323,10 @@ Object: ecommerce payment
 
 
 
-.. index::
-  single: street2 field
-.. 
-
-
 
 
 :country_id: Country, many2one
 
-
-
-.. index::
-  single: country_id field
-.. 
 
 
 
@@ -538,31 +335,16 @@ Object: ecommerce payment
 
 
 
-.. index::
-  single: bic field
-.. 
-
-
 
 
 :cancel_url: Cancel URL, char
 
     *Cancel url which is set at the paypal account.*
 
-.. index::
-  single: cancel_url field
-.. 
-
-
 
 
 :street: Street, char
 
-
-
-.. index::
-  single: street field
-.. 
 
 
 
@@ -571,31 +353,16 @@ Object: ecommerce payment
 
     *for international bank transfers*
 
-.. index::
-  single: iban field
-.. 
-
-
 
 
 :return_url: Return URL, char
 
     *Return url which is set at the paypal account.*
 
-.. index::
-  single: return_url field
-.. 
-
-
 
 
 :creditcards: Credit Cards, many2many
 
-
-
-.. index::
-  single: creditcards field
-.. 
 
 
 
@@ -604,21 +371,11 @@ Object: ecommerce payment
 
 
 
-.. index::
-  single: state_id field
-.. 
-
-
 
 
 :transaction_detail: Transaction History, one2many
 
     *Transaction detail with the uniq transaction id.*
-
-.. index::
-  single: transaction_detail field
-.. 
-
 
 
 
@@ -626,27 +383,14 @@ Object: ecommerce payment
 
     *Bank account number*
 
-.. index::
-  single: acc_number field
-.. 
-
-
 
 Object: ecommerce payment received
 ##################################
 
-.. index::
-  single: ecommerce payment received object
-.. 
 
 
 :paypal_acc: Paypal Account, many2one, required
 
-
-
-.. index::
-  single: paypal_acc field
-.. 
 
 
 
@@ -655,20 +399,10 @@ Object: ecommerce payment received
 
 
 
-.. index::
-  single: saleorder_id field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one, required
 
-
-
-.. index::
-  single: invoice_id field
-.. 
 
 
 
@@ -677,20 +411,10 @@ Object: ecommerce payment received
 
 
 
-.. index::
-  single: transaction_date field
-.. 
-
-
 
 
 :partner: Partner, many2one, required
 
-
-
-.. index::
-  single: partner field
-.. 
 
 
 
@@ -699,28 +423,15 @@ Object: ecommerce payment received
 
 
 
-.. index::
-  single: transaction_id field
-.. 
-
-
 
 Object: ecommerce shop
 ######################
 
-.. index::
-  single: ecommerce shop object
-.. 
 
 
 :column_configuration: No. of Columns, integer
 
     *Add No. of columns for products which u want to configure at website*
-
-.. index::
-  single: column_configuration field
-.. 
-
 
 
 
@@ -728,20 +439,10 @@ Object: ecommerce shop
 
     *Name of the Shop which u want to configure for website.*
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :payment_method: Payable method, many2many
 
-
-
-.. index::
-  single: payment_method field
-.. 
 
 
 
@@ -750,31 +451,16 @@ Object: ecommerce shop
 
     *Add product image width in pixels.*
 
-.. index::
-  single: image_width field
-.. 
-
-
 
 
 :currency_ids: Currency, many2many
 
     *Add the currency options for the online customers.*
 
-.. index::
-  single: currency_ids field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -783,21 +469,11 @@ Object: ecommerce shop
 
 
 
-.. index::
-  single: shop_id field
-.. 
-
-
 
 
 :language_ids: Language, many2many
 
     *Add the Launguage options for the online customers.*
-
-.. index::
-  single: language_ids field
-.. 
-
 
 
 
@@ -805,21 +481,11 @@ Object: ecommerce shop
 
     *Add No. of row for products which u want to configure at website*
 
-.. index::
-  single: row_configuration field
-.. 
-
-
 
 
 :search_ids: Search On, many2many
 
     *Add the Search Parameters which you are allow from the website.*
-
-.. index::
-  single: search_ids field
-.. 
-
 
 
 
@@ -827,21 +493,11 @@ Object: ecommerce shop
 
     *Add product image height in pixels.*
 
-.. index::
-  single: image_height field
-.. 
-
-
 
 
 :category_ids: Categories, one2many
 
     *Add the product categories which you want to displayed on the website.*
-
-.. index::
-  single: category_ids field
-.. 
-
 
 
 
@@ -849,27 +505,14 @@ Object: ecommerce shop
 
     *Add the carriers which we use for the shipping.*
 
-.. index::
-  single: delivery_ids field
-.. 
-
-
 
 Object: ecommerce category
 ##########################
 
-.. index::
-  single: ecommerce category object
-.. 
 
 
 :child_id: Child Categories, one2many
 
-
-
-.. index::
-  single: child_id field
-.. 
 
 
 
@@ -878,20 +521,10 @@ Object: ecommerce category
 
     *It display the product which are under the tiny category.*
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :web_id: Webshop, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -900,38 +533,20 @@ Object: ecommerce category
 
     *Add the Category name which you want to display on the website.*
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :parent_category_id: Parent Category, many2one
 
 
 
-.. index::
-  single: parent_category_id field
-.. 
-
-
 
 Object: ecommerce sale order
 ############################
 
-.. index::
-  single: ecommerce sale order object
-.. 
 
 
 :note: Notes, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -940,20 +555,10 @@ Object: ecommerce sale order
 
 
 
-.. index::
-  single: web_id field
-.. 
-
-
 
 
 :name: Order Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -962,20 +567,10 @@ Object: ecommerce sale order
 
 
 
-.. index::
-  single: epartner_shipping_id field
-.. 
-
-
 
 
 :order_id: Sale Order, many2one
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -984,20 +579,10 @@ Object: ecommerce sale order
 
 
 
-.. index::
-  single: epartner_add_id field
-.. 
-
-
 
 
 :epartner_id: Ecommerce Partner, many2one, required
 
-
-
-.. index::
-  single: epartner_id field
-.. 
 
 
 
@@ -1006,20 +591,10 @@ Object: ecommerce sale order
 
 
 
-.. index::
-  single: pricelist_id field
-.. 
-
-
 
 
 :date_order: Date Ordered, date, required
 
-
-
-.. index::
-  single: date_order field
-.. 
 
 
 
@@ -1028,38 +603,20 @@ Object: ecommerce sale order
 
 
 
-.. index::
-  single: epartner_invoice_id field
-.. 
-
-
 
 
 :order_lines: Order Lines, one2many
 
 
 
-.. index::
-  single: order_lines field
-.. 
-
-
 
 Object: ecommerce order line
 ############################
 
-.. index::
-  single: ecommerce order line object
-.. 
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -1068,20 +625,10 @@ Object: ecommerce order line
 
 
 
-.. index::
-  single: order_id field
-.. 
-
-
 
 
 :product_uom_id: Unit of Measure, many2one, required
 
-
-
-.. index::
-  single: product_uom_id field
-.. 
 
 
 
@@ -1090,29 +637,14 @@ Object: ecommerce order line
 
 
 
-.. index::
-  single: price_unit field
-.. 
-
-
 
 
 :product_qty: Quantity, float, required
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 
 :name: Order Line, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

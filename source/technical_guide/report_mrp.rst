@@ -50,18 +50,10 @@ Objects
 Object: Workcenter Load
 #######################
 
-.. index::
-  single: Workcenter Load object
-.. 
 
 
 :workcenter_id: Workcenter, many2one, required
 
-
-
-.. index::
-  single: workcenter_id field
-.. 
 
 
 
@@ -70,20 +62,10 @@ Object: Workcenter Load
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :hour: Nbr of hour, float
 
-
-
-.. index::
-  single: hour field
-.. 
 
 
 
@@ -92,36 +74,18 @@ Object: Workcenter Load
 
 
 
-.. index::
-  single: cycle field
-.. 
-
-
 
 Object: Stock value variation
 #############################
 
-.. index::
-  single: Stock value variation object
-.. 
 
 
 :date: Week, char, required
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :value: Stock value, float, required
 
-
-
-.. index::
-  single: value field
-.. 
 

@@ -45,18 +45,10 @@ Objects
 Object: Dimension Type
 ######################
 
-.. index::
-  single: Dimension Type object
-.. 
 
 
 :name: Dimension, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -65,38 +57,20 @@ Object: Dimension Type
 
 
 
-.. index::
-  single: value_ids field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 Object: Dimension Type
 ######################
 
-.. index::
-  single: Dimension Type object
-.. 
 
 
 :dimension_id: Dimension, many2one, required
 
-
-
-.. index::
-  single: dimension_id field
-.. 
 
 
 
@@ -105,20 +79,10 @@ Object: Dimension Type
 
 
 
-.. index::
-  single: price_extra field
-.. 
-
-
 
 
 :price_margin: Dimension Values, float
 
-
-
-.. index::
-  single: price_margin field
-.. 
 
 
 
@@ -127,18 +91,8 @@ Object: Dimension Type
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 

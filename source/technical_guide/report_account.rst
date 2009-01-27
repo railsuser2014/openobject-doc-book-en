@@ -44,18 +44,10 @@ Objects
 Object: Receivable accounts
 ###########################
 
-.. index::
-  single: Receivable accounts object
-.. 
 
 
 :credit: Credit, float, readonly
 
-
-
-.. index::
-  single: credit field
-.. 
 
 
 
@@ -64,20 +56,10 @@ Object: Receivable accounts
 
 
 
-.. index::
-  single: balance field
-.. 
-
-
 
 
 :type: Account Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -86,18 +68,8 @@ Object: Receivable accounts
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :debit: Debit, float, readonly
 
-
-
-.. index::
-  single: debit field
-.. 
 

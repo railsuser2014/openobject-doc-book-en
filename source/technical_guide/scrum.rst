@@ -88,18 +88,10 @@ Objects
 Object: Scrum Team
 ##################
 
-.. index::
-  single: Scrum Team object
-.. 
 
 
 :users_id: Users, many2many
 
-
-
-.. index::
-  single: users_id field
-.. 
 
 
 
@@ -108,27 +100,14 @@ Object: Scrum Team
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Scrum Project
 #####################
 
-.. index::
-  single: Scrum Project object
-.. 
 
 
 :tasks: Scrum Tasks, one2many
 
-
-
-.. index::
-  single: tasks field
-.. 
 
 
 
@@ -137,20 +116,10 @@ Object: Scrum Project
 
 
 
-.. index::
-  single: date_end field
-.. 
-
-
 
 
 :contact_id: Contact, many2one
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -159,20 +128,10 @@ Object: Scrum Project
 
     *Sum of spent hours of all tasks related to this project.*
 
-.. index::
-  single: effective_hours field
-.. 
-
-
 
 
 :manager: Project Manager, many2one
 
-
-
-.. index::
-  single: manager field
-.. 
 
 
 
@@ -181,31 +140,16 @@ Object: Scrum Project
 
 
 
-.. index::
-  single: child_id field
-.. 
-
-
 
 
 :planned_hours: Planned Time, float, readonly
 
     *Sum of planned hours of all tasks related to this project.*
 
-.. index::
-  single: planned_hours field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -214,21 +158,11 @@ Object: Scrum Project
 
     *Footer added at the beginning of the email for the warning message sent to the customer when a task is closed.*
 
-.. index::
-  single: warn_footer field
-.. 
-
-
 
 
 :warn_manager: Warn Manager, boolean
 
     *If you check this field, the project manager will receive a request each time a task is completed by his team.*
-
-.. index::
-  single: warn_manager field
-.. 
-
 
 
 
@@ -236,20 +170,10 @@ Object: Scrum Project
 
     *If you check this, the user will have a popup when closing a task that propose a message to send by email to the customer.*
 
-.. index::
-  single: warn_customer field
-.. 
-
-
 
 
 :date_start: Starting Date, date
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -258,20 +182,10 @@ Object: Scrum Project
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :parent_id: Parent project, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -280,31 +194,16 @@ Object: Scrum Project
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :timesheet_id: Working Time, many2one
 
     *Timetable working hours to adjust the gantt diagram report*
 
-.. index::
-  single: timesheet_id field
-.. 
-
-
 
 
 :scrum: Is Scrum, integer
 
-
-
-.. index::
-  single: scrum field
-.. 
 
 
 
@@ -313,20 +212,10 @@ Object: Scrum Project
 
     *Project's member. Not used in any computation, just for information purpose.*
 
-.. index::
-  single: members field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -335,20 +224,10 @@ Object: Scrum Project
 
 
 
-.. index::
-  single: sprint_size field
-.. 
-
-
 
 
 :name: Project Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -357,21 +236,11 @@ Object: Scrum Project
 
     *Internal description of the project.*
 
-.. index::
-  single: notes field
-.. 
-
-
 
 
 :warn_header: Mail Header, text
 
     *Header added at the beginning of the email for the warning message sent to the customer when a task is closed.*
-
-.. index::
-  single: warn_header field
-.. 
-
 
 
 
@@ -379,20 +248,10 @@ Object: Scrum Project
 
     *Sum of total hours of all tasks related to this project.*
 
-.. index::
-  single: total_hours field
-.. 
-
-
 
 
 :product_owner_id: Product Owner, many2one
 
-
-
-.. index::
-  single: product_owner_id field
-.. 
 
 
 
@@ -401,49 +260,26 @@ Object: Scrum Project
 
     *Link this project to an analytic account if you need financial management on projects. It ables to connect projects with budgets, plannings, costs and revenues analysis, timesheet on projects, etc.*
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :progress_rate: Progress, float, readonly
 
     *Percent of tasks closed according to the total of tasks todo.*
 
-.. index::
-  single: progress_rate field
-.. 
-
-
 
 Object: Scrum Sprint
 ####################
 
-.. index::
-  single: Scrum Sprint object
-.. 
 
 
 :date_stop: Ending Date, date, required
 
 
 
-.. index::
-  single: date_stop field
-.. 
-
-
 
 
 :planned_hours: Planned Hours, float, readonly
 
-
-
-.. index::
-  single: planned_hours field
-.. 
 
 
 
@@ -452,20 +288,10 @@ Object: Scrum Sprint
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :retrospective: Sprint Retrospective, text
 
-
-
-.. index::
-  single: retrospective field
-.. 
 
 
 
@@ -474,20 +300,10 @@ Object: Scrum Sprint
 
 
 
-.. index::
-  single: meetings_id field
-.. 
-
-
 
 
 :review: Sprint Review, text
 
-
-
-.. index::
-  single: review field
-.. 
 
 
 
@@ -496,31 +312,16 @@ Object: Scrum Sprint
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :scrum_master_id: Scrum Master, many2one, required
 
 
 
-.. index::
-  single: scrum_master_id field
-.. 
-
-
 
 
 :state: Status, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -529,31 +330,16 @@ Object: Scrum Sprint
 
 
 
-.. index::
-  single: backlog_ids field
-.. 
-
-
 
 
 :effective_hours: Effective hours, float, readonly
 
 
 
-.. index::
-  single: effective_hours field
-.. 
-
-
 
 
 :progress: Progress (0-100), float, readonly
 
-
-
-.. index::
-  single: progress field
-.. 
 
 
 
@@ -562,38 +348,20 @@ Object: Scrum Sprint
 
 
 
-.. index::
-  single: project_id field
-.. 
-
-
 
 
 :product_owner_id: Product Owner, many2one, required
 
 
 
-.. index::
-  single: product_owner_id field
-.. 
-
-
 
 Object: Product Backlog
 #######################
 
-.. index::
-  single: Product Backlog object
-.. 
 
 
 :priority: Priority, selection
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -602,20 +370,10 @@ Object: Product Backlog
 
 
 
-.. index::
-  single: planned_hours field
-.. 
-
-
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -624,31 +382,16 @@ Object: Product Backlog
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :tasks_id: Tasks Details, one2many
 
 
 
-.. index::
-  single: tasks_id field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -657,20 +400,10 @@ Object: Product Backlog
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :effective_hours: Effective hours, float, readonly
 
-
-
-.. index::
-  single: effective_hours field
-.. 
 
 
 
@@ -679,31 +412,16 @@ Object: Product Backlog
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :sprint_id: Sprint, many2one
 
 
 
-.. index::
-  single: sprint_id field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -712,38 +430,20 @@ Object: Product Backlog
 
 
 
-.. index::
-  single: progress field
-.. 
-
-
 
 
 :project_id: Scrum Project, many2one, required
 
 
 
-.. index::
-  single: project_id field
-.. 
-
-
 
 Object: Scrum Task
 ##################
 
-.. index::
-  single: Scrum Task object
-.. 
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -752,31 +452,16 @@ Object: Scrum Task
 
     *Computed using the sum of the task work done.*
 
-.. index::
-  single: effective_hours field
-.. 
-
-
 
 
 :planned_hours: Planned Hours, float, required, readonly
 
     *Estimated time to do the task, usually set by the project manager when the task is in draft state.*
 
-.. index::
-  single: planned_hours field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -785,20 +470,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :date_start: Starting Date, datetime
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -807,20 +482,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :parent_id: Parent Task, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -829,31 +494,16 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :progress: Progress (%), float, readonly
 
     *Computed as: Time Spent / Total Time.*
 
-.. index::
-  single: progress field
-.. 
-
-
 
 
 :project_id: Project, many2one
 
-
-
-.. index::
-  single: project_id field
-.. 
 
 
 
@@ -862,20 +512,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -884,20 +524,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: scrum field
-.. 
-
-
 
 
 :child_ids: Delegated Tasks, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -906,20 +536,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: work_ids field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -928,20 +548,10 @@ Object: Scrum Task
 
     *Computed as: Total Time - Estimated Time. It gives the difference of the time estimated by the project manager and the real time to close the task.*
 
-.. index::
-  single: delay_hours field
-.. 
-
-
 
 
 :name: Task summary, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -950,20 +560,10 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: date_deadline field
-.. 
-
-
 
 
 :notes: Notes, text
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -972,31 +572,16 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: date_close field
-.. 
-
-
 
 
 :total_hours: Total Hours, float, readonly
 
     *Computed as: Time Spent + Remaining Time.*
 
-.. index::
-  single: total_hours field
-.. 
-
-
 
 
 :product_backlog_id: Product Backlog, many2one
 
-
-
-.. index::
-  single: product_backlog_id field
-.. 
 
 
 
@@ -1005,38 +590,20 @@ Object: Scrum Task
 
 
 
-.. index::
-  single: history field
-.. 
-
-
 
 
 :remaining_hours: Remaining Hours, float
 
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
-.. index::
-  single: remaining_hours field
-.. 
-
-
 
 Object: Scrum Meeting
 #####################
 
-.. index::
-  single: Scrum Meeting object
-.. 
 
 
 :question_blocks: Blocks encountered, text
 
-
-
-.. index::
-  single: question_blocks field
-.. 
 
 
 
@@ -1045,20 +612,10 @@ Object: Scrum Meeting
 
 
 
-.. index::
-  single: question_yesterday field
-.. 
-
-
 
 
 :name: Meeting Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1067,20 +624,10 @@ Object: Scrum Meeting
 
 
 
-.. index::
-  single: question_today field
-.. 
-
-
 
 
 :question_backlog: Backlog Accurate, text
 
-
-
-.. index::
-  single: question_backlog field
-.. 
 
 
 
@@ -1089,18 +636,8 @@ Object: Scrum Meeting
 
 
 
-.. index::
-  single: sprint_id field
-.. 
-
-
 
 
 :date: Meeting Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 

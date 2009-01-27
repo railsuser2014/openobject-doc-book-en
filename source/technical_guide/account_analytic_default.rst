@@ -48,18 +48,10 @@ Objects
 Object: Analytic Distributions
 ##############################
 
-.. index::
-  single: Analytic Distributions object
-.. 
 
 
 :date_stop: End Date, date
 
-
-
-.. index::
-  single: date_stop field
-.. 
 
 
 
@@ -68,20 +60,10 @@ Object: Analytic Distributions
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -90,20 +72,10 @@ Object: Analytic Distributions
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :date_start: Start Date, date
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -112,20 +84,10 @@ Object: Analytic Distributions
 
 
 
-.. index::
-  single: analytics_id field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -134,18 +96,8 @@ Object: Analytic Distributions
 
 
 
-.. index::
-  single: analytic_id field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 

@@ -59,29 +59,16 @@ Objects
 Object: account.analytic.line.package
 #####################################
 
-.. index::
-  single: account.analytic.line.package object
-.. 
 
 
 :account_id: Account, many2one, readonly
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :product_id: Product, many2one, readonly
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -90,20 +77,10 @@ Object: account.analytic.line.package
 
 
 
-.. index::
-  single: unit_weight field
-.. 
-
-
 
 
 :total_weight: Total Weight, float, readonly
 
-
-
-.. index::
-  single: total_weight field
-.. 
 
 
 
@@ -112,31 +89,16 @@ Object: account.analytic.line.package
 
 
 
-.. index::
-  single: unit_amount field
-.. 
-
-
 
 
 :date: Date, date, readonly
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, readonly
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -145,27 +107,14 @@ Object: account.analytic.line.package
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: account.analytic.line.package.month
 ###########################################
 
-.. index::
-  single: account.analytic.line.package.month object
-.. 
 
 
 :product_id: Product, many2one, readonly
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -174,20 +123,10 @@ Object: account.analytic.line.package.month
 
 
 
-.. index::
-  single: total_service field
-.. 
-
-
 
 
 :total_activity: Total Activity, float, readonly
 
-
-
-.. index::
-  single: total_activity field
-.. 
 
 
 
@@ -196,29 +135,14 @@ Object: account.analytic.line.package.month
 
 
 
-.. index::
-  single: total_weight field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, readonly
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :name: Date, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 

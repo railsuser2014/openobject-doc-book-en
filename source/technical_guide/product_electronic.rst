@@ -49,18 +49,10 @@ Objects
 Object: Product attributes
 ##########################
 
-.. index::
-  single: Product attributes object
-.. 
 
 
 :name: Attribute, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -69,18 +61,8 @@ Object: Product attributes
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 

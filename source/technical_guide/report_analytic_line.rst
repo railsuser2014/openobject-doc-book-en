@@ -45,18 +45,10 @@ Objects
 Object: Analytic lines to invoice report
 ########################################
 
-.. index::
-  single: Analytic lines to invoice report object
-.. 
 
 
 :account_id: Analytic account, many2one, readonly
 
-
-
-.. index::
-  single: account_id field
-.. 
 
 
 
@@ -65,20 +57,10 @@ Object: Analytic lines to invoice report
 
 
 
-.. index::
-  single: product_uom_id field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -87,20 +69,10 @@ Object: Analytic lines to invoice report
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :unit_amount: Units, float, readonly
 
-
-
-.. index::
-  single: unit_amount field
-.. 
 
 
 
@@ -109,18 +81,8 @@ Object: Analytic lines to invoice report
 
 
 
-.. index::
-  single: sale_price field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 

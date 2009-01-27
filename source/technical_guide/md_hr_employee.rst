@@ -65,72 +65,40 @@ Objects
 Object: Street
 ##############
 
-.. index::
-  single: Street object
-.. 
 
 
 :name: Street, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Zip
 ###########
 
-.. index::
-  single: Zip object
-.. 
 
 
 :name: Zip, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Town
 ############
 
-.. index::
-  single: Town object
-.. 
 
 
 :name: Town, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Employee Address
 ########################
 
-.. index::
-  single: Employee Address object
-.. 
 
 
 :employee_id: Employee, many2one
 
-
-
-.. index::
-  single: employee_id field
-.. 
 
 
 
@@ -139,20 +107,10 @@ Object: Employee Address
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :house_nbr: # House No, char
 
-
-
-.. index::
-  single: house_nbr field
-.. 
 
 
 
@@ -161,20 +119,10 @@ Object: Employee Address
 
 
 
-.. index::
-  single: zip_id field
-.. 
-
-
 
 
 :country_id: Country, many2one
 
-
-
-.. index::
-  single: country_id field
-.. 
 
 
 
@@ -183,20 +131,10 @@ Object: Employee Address
 
 
 
-.. index::
-  single: town_id field
-.. 
-
-
 
 
 :street_id: Street, many2one
 
-
-
-.. index::
-  single: street_id field
-.. 
 
 
 
@@ -205,36 +143,18 @@ Object: Employee Address
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 Object: Maximun Travel allowance per year and per day
 #####################################################
 
-.. index::
-  single: Maximun Travel allowance per year and per day object
-.. 
 
 
 :amount_per_day: Maximun Amount Per Day, float, required
 
 
 
-.. index::
-  single: amount_per_day field
-.. 
-
-
 
 
 :amount_per_year: Maximum Amount Per Year, float, required
 
-
-
-.. index::
-  single: amount_per_year field
-.. 
 

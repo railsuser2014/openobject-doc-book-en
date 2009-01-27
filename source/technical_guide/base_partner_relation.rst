@@ -49,18 +49,10 @@ Objects
 Object: Partner Relation
 ########################
 
-.. index::
-  single: Partner Relation object
-.. 
 
 
 :percent: Ownership, float
 
-
-
-.. index::
-  single: percent field
-.. 
 
 
 
@@ -69,20 +61,10 @@ Object: Partner Relation
 
 
 
-.. index::
-  single: current_partner_id field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -91,18 +73,8 @@ Object: Partner Relation
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 
 :type_id: Type, many2one, required
 
-
-
-.. index::
-  single: type_id field
-.. 
 

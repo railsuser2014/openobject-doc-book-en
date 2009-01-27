@@ -51,18 +51,10 @@ Objects
 Object: Tasks by user and project
 #################################
 
-.. index::
-  single: Tasks by user and project object
-.. 
 
 
 :hours_effective: Effective Hours, float, readonly
 
-
-
-.. index::
-  single: hours_effective field
-.. 
 
 
 
@@ -71,20 +63,10 @@ Object: Tasks by user and project
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -93,20 +75,10 @@ Object: Tasks by user and project
 
 
 
-.. index::
-  single: closing_days field
-.. 
-
-
 
 
 :task_closed: Task Closed, integer, readonly
 
-
-
-.. index::
-  single: task_closed field
-.. 
 
 
 
@@ -115,49 +87,26 @@ Object: Tasks by user and project
 
 
 
-.. index::
-  single: project_id field
-.. 
-
-
 
 
 :hours_delay: Avg. Plan.-Eff., float, readonly
 
 
 
-.. index::
-  single: hours_delay field
-.. 
-
-
 
 
 :hours_planned: Planned Hours, float, readonly
 
-
-
-.. index::
-  single: hours_planned field
-.. 
 
 
 
 Object: Tasks by project
 ########################
 
-.. index::
-  single: Tasks by project object
-.. 
 
 
 :hours_effective: Effective Hours, float, readonly
 
-
-
-.. index::
-  single: hours_effective field
-.. 
 
 
 
@@ -166,20 +115,10 @@ Object: Tasks by project
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :closing_days: Avg Closing Delay, char, readonly
 
-
-
-.. index::
-  single: closing_days field
-.. 
 
 
 
@@ -188,20 +127,10 @@ Object: Tasks by project
 
 
 
-.. index::
-  single: task_closed field
-.. 
-
-
 
 
 :project_id: Project, many2one, readonly
 
-
-
-.. index::
-  single: project_id field
-.. 
 
 
 
@@ -210,18 +139,8 @@ Object: Tasks by project
 
 
 
-.. index::
-  single: hours_delay field
-.. 
-
-
 
 
 :hours_planned: Planned Hours, float, readonly
 
-
-
-.. index::
-  single: hours_planned field
-.. 
 

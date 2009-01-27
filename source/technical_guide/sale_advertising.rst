@@ -52,18 +52,10 @@ Objects
 Object: Sale Advertising Issue
 ##############################
 
-.. index::
-  single: Sale Advertising Issue object
-.. 
 
 
 :issue_date: Issue Date, date, required
 
-
-
-.. index::
-  single: issue_date field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: Sale Advertising Issue
 
 
 
-.. index::
-  single: medium field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -94,38 +76,20 @@ Object: Sale Advertising Issue
 
 
 
-.. index::
-  single: default_note field
-.. 
-
-
 
 
 :state: State, selection
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 Object: Sale Advertising Proof
 ##############################
 
-.. index::
-  single: Sale Advertising Proof object
-.. 
 
 
 :address_id: Delivery Address, many2one, required
 
-
-
-.. index::
-  single: address_id field
-.. 
 
 
 
@@ -134,29 +98,14 @@ Object: Sale Advertising Proof
 
 
 
-.. index::
-  single: target_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :number: Number of Copies, integer, required
 
-
-
-.. index::
-  single: number field
-.. 
 

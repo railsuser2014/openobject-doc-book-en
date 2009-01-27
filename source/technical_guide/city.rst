@@ -59,18 +59,10 @@ Objects
 Object: City
 ############
 
-.. index::
-  single: City object
-.. 
 
 
 :state_id: State, many2one, required
 
-
-
-.. index::
-  single: state_id field
-.. 
 
 
 
@@ -79,18 +71,8 @@ Object: City
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :zipcode: ZIP, char, required
 
-
-
-.. index::
-  single: zipcode field
-.. 
 

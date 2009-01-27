@@ -77,18 +77,10 @@ Objects
 Object: Event type
 ##################
 
-.. index::
-  single: Event type object
-.. 
 
 
 :name: Event type, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -97,27 +89,14 @@ Object: Event type
 
 
 
-.. index::
-  single: check_type field
-.. 
-
-
 
 Object: Event
 #############
 
-.. index::
-  single: Event object
-.. 
 
 
 :code: Section Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -126,20 +105,10 @@ Object: Event
 
 
 
-.. index::
-  single: check_type field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -148,20 +117,10 @@ Object: Event
 
 
 
-.. index::
-  single: date_end field
-.. 
-
-
 
 
 :register_max: Maximum Registrations, integer
 
-
-
-.. index::
-  single: register_max field
-.. 
 
 
 
@@ -170,20 +129,10 @@ Object: Event
 
 
 
-.. index::
-  single: task_ids field
-.. 
-
-
 
 
 :date_begin: Beginning date, datetime, required
 
-
-
-.. index::
-  single: date_begin field
-.. 
 
 
 
@@ -192,20 +141,10 @@ Object: Event
 
     *This email will be sent when someone subscribes to the event.*
 
-.. index::
-  single: mail_registr field
-.. 
-
-
 
 
 :analytic_account_id: Main Analytic Account, many2one
 
-
-
-.. index::
-  single: analytic_account_id field
-.. 
 
 
 
@@ -214,20 +153,10 @@ Object: Event
 
     *Check this box if you want ot use the automatic confirmation emailing or the reminder*
 
-.. index::
-  single: mail_auto_confirm field
-.. 
-
-
 
 
 :user_id: Responsible, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -236,31 +165,16 @@ Object: Event
 
     *Check this box if you want to use the automatic mailing for new registration*
 
-.. index::
-  single: mail_auto_registr field
-.. 
-
-
 
 
 :register_min: Minimum Registrations, integer
 
 
 
-.. index::
-  single: register_min field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -269,20 +183,10 @@ Object: Event
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :state: State, selection, required, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -291,20 +195,10 @@ Object: Event
 
     *This email will be sent when the event gets confimed or when someone subscribes to a confirmed event. This is also the email sent to remind someone about the event.*
 
-.. index::
-  single: mail_confirm field
-.. 
-
-
 
 
 :project_id: Project, many2one, readonly
 
-
-
-.. index::
-  single: project_id field
-.. 
 
 
 
@@ -313,20 +207,10 @@ Object: Event
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :agreement_nbr: Agreement Nbr, char
 
-
-
-.. index::
-  single: agreement_nbr field
-.. 
 
 
 
@@ -335,20 +219,10 @@ Object: Event
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :section_id: Case section, many2one, required
 
-
-
-.. index::
-  single: section_id field
-.. 
 
 
 
@@ -357,20 +231,10 @@ Object: Event
 
 
 
-.. index::
-  single: localisation field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -379,20 +243,10 @@ Object: Event
 
 
 
-.. index::
-  single: signet_type field
-.. 
-
-
 
 
 :fse_hours: FSE Hours, integer
 
-
-
-.. index::
-  single: fse_hours field
-.. 
 
 
 
@@ -401,20 +255,10 @@ Object: Event
 
 
 
-.. index::
-  single: register_prospect field
-.. 
-
-
 
 
 :name: Case Section, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -423,20 +267,10 @@ Object: Event
 
 
 
-.. index::
-  single: case_ids field
-.. 
-
-
 
 
 :analytic_journal_id: Analytic Journal, many2one
 
-
-
-.. index::
-  single: analytic_journal_id field
-.. 
 
 
 
@@ -445,20 +279,10 @@ Object: Event
 
 
 
-.. index::
-  single: fse_code field
-.. 
-
-
 
 
 :package_product_id: Package Product, many2one
 
-
-
-.. index::
-  single: package_product_id field
-.. 
 
 
 
@@ -467,20 +291,10 @@ Object: Event
 
 
 
-.. index::
-  single: register_current field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -489,27 +303,14 @@ Object: Event
 
     *The email address wich is the 'Reply-To' of all email sent by Open ERP for cases in this section*
 
-.. index::
-  single: reply_to field
-.. 
-
-
 
 Object: Event Registration
 ##########################
 
-.. index::
-  single: Event Registration object
-.. 
 
 
 :date_closed: Closed, datetime, readonly
 
-
-
-.. index::
-  single: date_closed field
-.. 
 
 
 
@@ -518,20 +319,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: history_line field
-.. 
-
-
 
 
 :code: Calendar Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -540,20 +331,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :probability: Probability (%), float
 
-
-
-.. index::
-  single: probability field
-.. 
 
 
 
@@ -562,20 +343,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: canal_id field
-.. 
-
-
 
 
 :parent_fleet_id: Fleet, many2one
 
-
-
-.. index::
-  single: parent_fleet_id field
-.. 
 
 
 
@@ -584,20 +355,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: zip_id field
-.. 
-
-
 
 
 :partner_address_id: Partner Contact, many2one
 
-
-
-.. index::
-  single: partner_address_id field
-.. 
 
 
 
@@ -606,20 +367,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: som field
-.. 
-
-
 
 
 :contact_id: Partner Contact, many2one
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -628,20 +379,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: check_amount field
-.. 
-
-
 
 
 :incoming_move_id: Incoming Move, many2one
 
-
-
-.. index::
-  single: incoming_move_id field
-.. 
 
 
 
@@ -650,20 +391,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: invoice_label field
-.. 
-
-
 
 
 :fleet_id: Fleet, many2one
 
-
-
-.. index::
-  single: fleet_id field
-.. 
 
 
 
@@ -672,20 +403,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: category2_id field
-.. 
-
-
 
 
 :in_supplier_move_id: Return To Supplier Move, many2one
 
-
-
-.. index::
-  single: in_supplier_move_id field
-.. 
 
 
 
@@ -694,20 +415,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: duration field
-.. 
-
-
 
 
 :event_ids: Events, many2many
 
-
-
-.. index::
-  single: event_ids field
-.. 
 
 
 
@@ -716,20 +427,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :id: ID, integer, readonly
 
-
-
-.. index::
-  single: id field
-.. 
 
 
 
@@ -738,20 +439,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: date_action_next field
-.. 
-
-
 
 
 :priority: Priority, selection
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -760,20 +451,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: timesheet_line_id field
-.. 
-
-
 
 
 :user_id: Responsible, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -782,20 +463,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: tobe_invoiced field
-.. 
-
-
 
 
 :partner_name: Employee Name, char
 
-
-
-.. index::
-  single: partner_name field
-.. 
 
 
 
@@ -804,20 +475,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: planned_revenue field
-.. 
-
-
 
 
 :meeting_id: Meeting confidential, many2one
 
-
-
-.. index::
-  single: meeting_id field
-.. 
 
 
 
@@ -826,20 +487,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: unit_price field
-.. 
-
-
 
 
 :badge_partner: Badge Partner, char
 
-
-
-.. index::
-  single: badge_partner field
-.. 
 
 
 
@@ -848,20 +499,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -870,20 +511,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: case_id field
-.. 
-
-
 
 
 :outgoing_move_id: Outgoing Move, many2one
 
-
-
-.. index::
-  single: outgoing_move_id field
-.. 
 
 
 
@@ -892,31 +523,16 @@ Object: Event Registration
 
 
 
-.. index::
-  single: email_cc field
-.. 
-
-
 
 
 :training_authorization: Training Auth., char, readonly
 
     *Formation Checks Authorization number*
 
-.. index::
-  single: training_authorization field
-.. 
-
-
 
 
 :external_ref: Ticket Code, char
 
-
-
-.. index::
-  single: external_ref field
-.. 
 
 
 
@@ -925,20 +541,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: ref field
-.. 
-
-
 
 
 :log_ids: Logs History, one2many, readonly
 
-
-
-.. index::
-  single: log_ids field
-.. 
 
 
 
@@ -947,31 +553,16 @@ Object: Event Registration
 
 
 
-.. index::
-  single: partner_invoice_id field
-.. 
-
-
 
 
 :cavalier: Cavalier, boolean
 
     *Check if we should print papers with participant name*
 
-.. index::
-  single: cavalier field
-.. 
-
-
 
 
 :description: Your action, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -980,20 +571,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: payment_ids field
-.. 
-
-
 
 
 :date_action_last: Last Action, datetime, readonly
 
-
-
-.. index::
-  single: date_action_last field
-.. 
 
 
 
@@ -1002,20 +583,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: planned_cost field
-.. 
-
-
 
 
 :ref2: Reference 2, reference
 
-
-
-.. index::
-  single: ref2 field
-.. 
 
 
 
@@ -1024,20 +595,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: badge_title field
-.. 
-
-
 
 
 :section_id: Section, many2one, required
 
-
-
-.. index::
-  single: section_id field
-.. 
 
 
 
@@ -1046,20 +607,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: check_mode field
-.. 
-
-
 
 
 :prodlot_id: Serial Number, many2one
 
-
-
-.. index::
-  single: prodlot_id field
-.. 
 
 
 
@@ -1068,20 +619,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: partner_name2 field
-.. 
-
-
 
 
 :partner_mobile: Mobile, char
 
-
-
-.. index::
-  single: partner_mobile field
-.. 
 
 
 
@@ -1090,20 +631,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :nb_register: Number of Registration, integer, readonly
 
-
-
-.. index::
-  single: nb_register field
-.. 
 
 
 
@@ -1112,20 +643,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :check_ids: Check ids, one2many
 
-
-
-.. index::
-  single: check_ids field
-.. 
 
 
 
@@ -1134,20 +655,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one
 
-
-
-.. index::
-  single: invoice_id field
-.. 
 
 
 
@@ -1156,20 +667,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: stage_id field
-.. 
-
-
 
 
 :contact_order_id: Contact Order, many2one
 
-
-
-.. index::
-  single: contact_order_id field
-.. 
 
 
 
@@ -1178,20 +679,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: incident_ref field
-.. 
-
-
 
 
 :product_id: Related Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -1200,20 +691,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: date_deadline field
-.. 
-
-
 
 
 :out_supplier_move_id: Return From Supplier Move, many2one
 
-
-
-.. index::
-  single: out_supplier_move_id field
-.. 
 
 
 
@@ -1222,20 +703,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: email_last field
-.. 
-
-
 
 
 :grant_id: Grant, many2one
 
-
-
-.. index::
-  single: grant_id field
-.. 
 
 
 
@@ -1244,20 +715,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: is_fleet_expired field
-.. 
-
-
 
 
 :categ_id: Category, many2one
 
-
-
-.. index::
-  single: categ_id field
-.. 
 
 
 
@@ -1266,20 +727,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: email_from field
-.. 
-
-
 
 
 :payment_mode: Payment Mode, many2one
 
-
-
-.. index::
-  single: payment_mode field
-.. 
 
 
 
@@ -1288,20 +739,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: event_id field
-.. 
-
-
 
 
 :partner_phone: Phone, char
 
-
-
-.. index::
-  single: partner_phone field
-.. 
 
 
 
@@ -1310,20 +751,10 @@ Object: Event Registration
 
 
 
-.. index::
-  single: badge_name field
-.. 
-
-
 
 
 :group_id: Event Group, many2one
 
-
-
-.. index::
-  single: group_id field
-.. 
 
 
 
@@ -1332,27 +763,14 @@ Object: Event Registration
 
 
 
-.. index::
-  single: picking_id field
-.. 
-
-
 
 Object: Events on registrations
 ###############################
 
-.. index::
-  single: Events on registrations object
-.. 
 
 
 :date_begin: Beginning date, datetime, required
 
-
-
-.. index::
-  single: date_begin field
-.. 
 
 
 
@@ -1361,20 +779,10 @@ Object: Events on registrations
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :confirm_state: Confirm Registration, integer
 
-
-
-.. index::
-  single: confirm_state field
-.. 
 
 
 
@@ -1383,20 +791,10 @@ Object: Events on registrations
 
 
 
-.. index::
-  single: draft_state field
-.. 
-
-
 
 
 :date_end: Ending date, datetime, required
 
-
-
-.. index::
-  single: date_end field
-.. 
 
 
 
@@ -1405,27 +803,14 @@ Object: Events on registrations
 
 
 
-.. index::
-  single: register_max field
-.. 
-
-
 
 Object: Event type on registration
 ##################################
 
-.. index::
-  single: Event type on registration object
-.. 
 
 
 :draft_state: Draft Registrations, integer
 
-
-
-.. index::
-  single: draft_state field
-.. 
 
 
 
@@ -1434,29 +819,14 @@ Object: Event type on registration
 
 
 
-.. index::
-  single: confirm_state field
-.. 
-
-
 
 
 :name: Event Type, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :nbevent: Number Of Events, integer
 
-
-
-.. index::
-  single: nbevent field
-.. 
 

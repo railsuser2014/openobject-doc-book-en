@@ -68,18 +68,10 @@ Objects
 Object: Hardware type
 #####################
 
-.. index::
-  single: Hardware type object
-.. 
 
 
 :name: Type of material, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -88,27 +80,14 @@ Object: Hardware type
 
 
 
-.. index::
-  single: networkable field
-.. 
-
-
 
 Object: Network
 ###############
 
-.. index::
-  single: Network object
-.. 
 
 
 :material_ids: Members, one2many
 
-
-
-.. index::
-  single: material_ids field
-.. 
 
 
 
@@ -117,20 +96,10 @@ Object: Network
 
 
 
-.. index::
-  single: range field
-.. 
-
-
 
 
 :user_id: Onsite Contact person, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -139,38 +108,20 @@ Object: Network
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :contact_id: Partner, many2one, required
 
 
 
-.. index::
-  single: contact_id field
-.. 
-
-
 
 Object: Material
 ################
 
-.. index::
-  single: Material object
-.. 
 
 
 :warranty: Warranty deadline, date
 
-
-
-.. index::
-  single: warranty field
-.. 
 
 
 
@@ -179,20 +130,10 @@ Object: Material
 
 
 
-.. index::
-  single: ip_addr field
-.. 
-
-
 
 
 :name: Device Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -201,31 +142,16 @@ Object: Material
 
 
 
-.. index::
-  single: network_id field
-.. 
-
-
 
 
 :change_id: Changes on this machine, one2many
 
 
 
-.. index::
-  single: change_id field
-.. 
-
-
 
 
 :note: Notes, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -234,20 +160,10 @@ Object: Material
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :date: Installation Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -256,20 +172,10 @@ Object: Material
 
 
 
-.. index::
-  single: child_id field
-.. 
-
-
 
 
 :supplier: Supplier, many2one
 
-
-
-.. index::
-  single: supplier field
-.. 
 
 
 
@@ -278,38 +184,20 @@ Object: Material
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :software_id: Installed Software, one2many
 
 
 
-.. index::
-  single: software_id field
-.. 
-
-
 
 Object: Network changes
 #######################
 
-.. index::
-  single: Network changes object
-.. 
 
 
 :date: Change date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -318,20 +206,10 @@ Object: Network changes
 
 
 
-.. index::
-  single: machine_id field
-.. 
-
-
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -340,56 +218,30 @@ Object: Network changes
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Software type
 #####################
 
-.. index::
-  single: Software type object
-.. 
 
 
 :note: Notes, text
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :name: Composant Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: Software
 ################
 
-.. index::
-  single: Software object
-.. 
 
 
 :name: Composant Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -398,20 +250,10 @@ Object: Software
 
 
 
-.. index::
-  single: logpass field
-.. 
-
-
 
 
 :material_id: Material, many2one
 
-
-
-.. index::
-  single: material_id field
-.. 
 
 
 
@@ -420,20 +262,10 @@ Object: Software
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :version: Software version, char
 
-
-
-.. index::
-  single: version field
-.. 
 
 
 
@@ -442,20 +274,10 @@ Object: Software
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :type: Software Type, many2one, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -464,27 +286,14 @@ Object: Software
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 Object: Software login
 ######################
 
-.. index::
-  single: Software login object
-.. 
 
 
 :login: Login, char, required
 
-
-
-.. index::
-  single: login field
-.. 
 
 
 
@@ -493,18 +302,8 @@ Object: Software login
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :software_id: Software, many2one, required
 
-
-
-.. index::
-  single: software_id field
-.. 
 

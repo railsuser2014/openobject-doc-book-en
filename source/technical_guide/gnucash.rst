@@ -47,18 +47,10 @@ Objects
 Object: gnucash.index
 #####################
 
-.. index::
-  single: gnucash.index object
-.. 
 
 
 :noupdate: Non Updatable, boolean
 
-
-
-.. index::
-  single: noupdate field
-.. 
 
 
 
@@ -67,20 +59,10 @@ Object: gnucash.index
 
 
 
-.. index::
-  single: parent_book field
-.. 
-
-
 
 
 :date_init: Init Date, datetime
 
-
-
-.. index::
-  single: date_init field
-.. 
 
 
 
@@ -89,20 +71,10 @@ Object: gnucash.index
 
 
 
-.. index::
-  single: date_update field
-.. 
-
-
 
 
 :module: Module, char, required
 
-
-
-.. index::
-  single: module field
-.. 
 
 
 
@@ -111,20 +83,10 @@ Object: gnucash.index
 
 
 
-.. index::
-  single: to_delete field
-.. 
-
-
 
 
 :model: Object, char, required
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -133,18 +95,8 @@ Object: gnucash.index
 
 
 
-.. index::
-  single: guid field
-.. 
-
-
 
 
 :res_id: Resource ID, integer
 
-
-
-.. index::
-  single: res_id field
-.. 
 

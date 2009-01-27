@@ -95,54 +95,30 @@ Objects
 Object: res.partner.state
 #########################
 
-.. index::
-  single: res.partner.state object
-.. 
 
 
 :name: Partner Status, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.state2
 ##########################
 
-.. index::
-  single: res.partner.state2 object
-.. 
 
 
 :name: Customer Status, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.article.review
 ##################################
 
-.. index::
-  single: res.partner.article.review object
-.. 
 
 
 :date: Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -151,38 +127,20 @@ Object: res.partner.article.review
 
 
 
-.. index::
-  single: article_ids field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.article
 ###########################
 
-.. index::
-  single: res.partner.article object
-.. 
 
 
 :picture: Picture, boolean
 
-
-
-.. index::
-  single: picture field
-.. 
 
 
 
@@ -191,20 +149,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: subtitle field
-.. 
-
-
 
 
 :review_id: Review, many2one
 
-
-
-.. index::
-  single: review_id field
-.. 
 
 
 
@@ -213,31 +161,16 @@ Object: res.partner.article
 
     *A text with or without a link incorporated*
 
-.. index::
-  single: canal_id field
-.. 
-
-
 
 
 :press_review: In the next press review, boolean
 
     *Must be inserted on the next press review*
 
-.. index::
-  single: press_review field
-.. 
-
-
 
 
 :data: Data, boolean
 
-
-
-.. index::
-  single: data field
-.. 
 
 
 
@@ -246,20 +179,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: title field
-.. 
-
-
 
 
 :summary: Summary, text
 
-
-
-.. index::
-  single: summary field
-.. 
 
 
 
@@ -268,20 +191,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: source_id field
-.. 
-
-
 
 
 :contact_ids: Contacts, many2many
 
-
-
-.. index::
-  single: contact_ids field
-.. 
 
 
 
@@ -290,20 +203,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: keywords_ids field
-.. 
-
-
 
 
 :graph: Graph, boolean
 
-
-
-.. index::
-  single: graph field
-.. 
 
 
 
@@ -312,20 +215,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :partner_ids: Partners, many2many
 
-
-
-.. index::
-  single: partner_ids field
-.. 
 
 
 
@@ -334,20 +227,10 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: article_length field
-.. 
-
-
 
 
 :article_id: Article, char
 
-
-
-.. index::
-  single: article_id field
-.. 
 
 
 
@@ -356,74 +239,40 @@ Object: res.partner.article
 
 
 
-.. index::
-  single: page field
-.. 
-
-
 
 Object: res.partner.article.keywords
 ####################################
 
-.. index::
-  single: res.partner.article.keywords object
-.. 
 
 
 :article_ids: Articles, many2many
 
 
 
-.. index::
-  single: article_ids field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: res.partner.zip.group.type
 ##################################
 
-.. index::
-  single: res.partner.zip.group.type object
-.. 
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: res.partner.zip.group
 #############################
 
-.. index::
-  single: res.partner.zip.group object
-.. 
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -432,27 +281,14 @@ Object: res.partner.zip.group
 
 
 
-.. index::
-  single: type_id field
-.. 
-
-
 
 Object: res.partner.zip
 #######################
 
-.. index::
-  single: res.partner.zip object
-.. 
 
 
 :post_center_id: Post Center, char
 
-
-
-.. index::
-  single: post_center_id field
-.. 
 
 
 
@@ -461,20 +297,10 @@ Object: res.partner.zip
 
 
 
-.. index::
-  single: city field
-.. 
-
-
 
 
 :user_id: Salesman Responsible, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -483,20 +309,10 @@ Object: res.partner.zip
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :groups_id: Areas, many2many
 
-
-
-.. index::
-  single: groups_id field
-.. 
 
 
 
@@ -505,20 +321,10 @@ Object: res.partner.zip
 
 
 
-.. index::
-  single: post_center_special field
-.. 
-
-
 
 
 :partner_id: Master Cci, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -527,27 +333,14 @@ Object: res.partner.zip
 
     *Distance (km) between zip location and the cci.*
 
-.. index::
-  single: distance field
-.. 
-
-
 
 Object: res.partner.activity.list
 #################################
 
-.. index::
-  single: res.partner.activity.list object
-.. 
 
 
 :abbreviation: Abbreviation, char
 
-
-
-.. index::
-  single: abbreviation field
-.. 
 
 
 
@@ -556,27 +349,14 @@ Object: res.partner.activity.list
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.activity
 ############################
 
-.. index::
-  single: res.partner.activity object
-.. 
 
 
 :code_relations: Related codes, many2many
 
-
-
-.. index::
-  single: code_relations field
-.. 
 
 
 
@@ -585,20 +365,10 @@ Object: res.partner.activity
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :list_id: List, many2one, required
 
-
-
-.. index::
-  single: list_id field
-.. 
 
 
 
@@ -607,38 +377,20 @@ Object: res.partner.activity
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 
 :label: Label, char, required
 
 
 
-.. index::
-  single: label field
-.. 
-
-
 
 Object: res.partner.activity.relation
 #####################################
 
-.. index::
-  single: res.partner.activity.relation object
-.. 
 
 
 :importance: Importance, selection, required
 
-
-
-.. index::
-  single: importance field
-.. 
 
 
 
@@ -647,56 +399,30 @@ Object: res.partner.activity.relation
 
 
 
-.. index::
-  single: activity_id field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 Object: res.partner.relation.type
 #################################
 
-.. index::
-  single: res.partner.relation.type object
-.. 
 
 
 :name: Contact, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.country.relation
 ####################################
 
-.. index::
-  single: res.partner.country.relation object
-.. 
 
 
 :country_id: Country, many2one
 
-
-
-.. index::
-  single: country_id field
-.. 
 
 
 
@@ -705,29 +431,14 @@ Object: res.partner.country.relation
 
 
 
-.. index::
-  single: frequency field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :type: Types, selection
 
-
-
-.. index::
-  single: type field
-.. 
 

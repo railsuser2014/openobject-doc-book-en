@@ -48,18 +48,10 @@ Objects
 Object: discount.campaign
 #########################
 
-.. index::
-  single: discount.campaign object
-.. 
 
 
 :line_ids: Discount Lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -68,31 +60,16 @@ Object: discount.campaign
 
 
 
-.. index::
-  single: date_stop field
-.. 
-
-
 
 
 :date_start: Start Date, date, required
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -101,27 +78,14 @@ Object: discount.campaign
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 Object: discount.campaign.line
 ##############################
 
-.. index::
-  single: discount.campaign.line object
-.. 
 
 
 :condition_sale: Sale Condition, char
 
-
-
-.. index::
-  single: condition_sale field
-.. 
 
 
 
@@ -130,20 +94,10 @@ Object: discount.campaign.line
 
 
 
-.. index::
-  single: condition_product_id field
-.. 
-
-
 
 
 :sequence: Sequence, integer, required
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -152,20 +106,10 @@ Object: discount.campaign.line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :discount_id: Discount Lines, many2one
 
-
-
-.. index::
-  single: discount_id field
-.. 
 
 
 
@@ -174,29 +118,14 @@ Object: discount.campaign.line
 
 
 
-.. index::
-  single: discount field
-.. 
-
-
 
 
 :condition_category_id: Category, many2one
 
 
 
-.. index::
-  single: condition_category_id field
-.. 
-
-
 
 
 :condition_quantity: Min. Quantity, float
 
-
-
-.. index::
-  single: condition_quantity field
-.. 
 

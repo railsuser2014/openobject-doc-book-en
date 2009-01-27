@@ -74,29 +74,16 @@ Objects
 Object: Point of Sale journal configuration.
 ############################################
 
-.. index::
-  single: Point of Sale journal configuration. object
-.. 
 
 
 :code: Code, char
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Description, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -105,27 +92,14 @@ Object: Point of Sale journal configuration.
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 Object: Point of Sale
 #####################
 
-.. index::
-  single: Point of Sale object
-.. 
 
 
 :sale_journal: Journal, many2one, required, readonly
 
-
-
-.. index::
-  single: sale_journal field
-.. 
 
 
 
@@ -134,20 +108,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: date_validity field
-.. 
-
-
 
 
 :account_move: Account Entry, many2one, readonly
 
-
-
-.. index::
-  single: account_move field
-.. 
 
 
 
@@ -156,20 +120,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: date_order field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, readonly
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -178,20 +132,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: last_out_picking field
-.. 
-
-
 
 
 :nb_print: Number of print, integer, readonly
 
-
-
-.. index::
-  single: nb_print field
-.. 
 
 
 
@@ -200,20 +144,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :user_id: Salesman, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -222,20 +156,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: pickings field
-.. 
-
-
 
 
 :invoice_wanted: Create invoice, boolean
 
-
-
-.. index::
-  single: invoice_wanted field
-.. 
 
 
 
@@ -244,20 +168,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: amount_tax field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -266,20 +180,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: pricelist_id field
-.. 
-
-
 
 
 :amount_return: unknown, float, readonly
 
-
-
-.. index::
-  single: amount_return field
-.. 
 
 
 
@@ -288,20 +192,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: account_receivable field
-.. 
-
-
 
 
 :amount_paid: unknown, float, readonly
 
-
-
-.. index::
-  single: amount_paid field
-.. 
 
 
 
@@ -310,31 +204,16 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: amount_total field
-.. 
-
-
 
 
 :name: Order Description, char, required, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one, readonly
 
-
-
-.. index::
-  single: invoice_id field
-.. 
 
 
 
@@ -343,20 +222,10 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: lines field
-.. 
-
-
 
 
 :shop_id: Shop, many2one, required, readonly
 
-
-
-.. index::
-  single: shop_id field
-.. 
 
 
 
@@ -365,27 +234,14 @@ Object: Point of Sale
 
 
 
-.. index::
-  single: payments field
-.. 
-
-
 
 Object: Lines of Point of Sale
 ##############################
 
-.. index::
-  single: Lines of Point of Sale object
-.. 
 
 
 :create_date: Creation date, datetime, readonly
 
-
-
-.. index::
-  single: create_date field
-.. 
 
 
 
@@ -394,20 +250,10 @@ Object: Lines of Point of Sale
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :order_id: Order Ref, many2one
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -416,20 +262,10 @@ Object: Lines of Point of Sale
 
 
 
-.. index::
-  single: price_unit field
-.. 
-
-
 
 
 :price_subtotal: Subtotal, float, readonly
 
-
-
-.. index::
-  single: price_subtotal field
-.. 
 
 
 
@@ -438,20 +274,10 @@ Object: Lines of Point of Sale
 
 
 
-.. index::
-  single: qty field
-.. 
-
-
 
 
 :discount: Discount (%), float
 
-
-
-.. index::
-  single: discount field
-.. 
 
 
 
@@ -460,27 +286,14 @@ Object: Lines of Point of Sale
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: Pos Payment
 ###################
 
-.. index::
-  single: Pos Payment object
-.. 
 
 
 :payment_id: Payment Term, many2one
 
-
-
-.. index::
-  single: payment_id field
-.. 
 
 
 
@@ -489,20 +302,10 @@ Object: Pos Payment
 
 
 
-.. index::
-  single: payment_date field
-.. 
-
-
 
 
 :payment_name: Payment name, char
 
-
-
-.. index::
-  single: payment_name field
-.. 
 
 
 
@@ -511,20 +314,10 @@ Object: Pos Payment
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :order_id: Order Ref, many2one, required
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -533,20 +326,10 @@ Object: Pos Payment
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :amount: Amount, float, required
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -555,27 +338,14 @@ Object: Pos Payment
 
 
 
-.. index::
-  single: payment_nb field
-.. 
-
-
 
 Object: transaction for the pos
 ###############################
 
-.. index::
-  single: transaction for the pos object
-.. 
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -584,20 +354,10 @@ Object: transaction for the pos
 
 
 
-.. index::
-  single: no_trans field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one, readonly
 
-
-
-.. index::
-  single: invoice_id field
-.. 
 
 
 
@@ -606,29 +366,14 @@ Object: transaction for the pos
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :date_create: Date, char, readonly
 
 
 
-.. index::
-  single: date_create field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 

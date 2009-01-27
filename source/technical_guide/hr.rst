@@ -69,18 +69,10 @@ Objects
 Object: Working Time
 ####################
 
-.. index::
-  single: Working Time object
-.. 
 
 
 :timesheet_id: Working Time, one2many
 
-
-
-.. index::
-  single: timesheet_id field
-.. 
 
 
 
@@ -89,38 +81,20 @@ Object: Working Time
 
 
 
-.. index::
-  single: manager field
-.. 
-
-
 
 
 :name: Group name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Employee Category
 #########################
 
-.. index::
-  single: Employee Category object
-.. 
 
 
 :parent_id: Parent category, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -129,38 +103,20 @@ Object: Employee Category
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :name: Category, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Employee
 ################
 
-.. index::
-  single: Employee object
-.. 
 
 
 :address_id: Working Address, many2one
 
-
-
-.. index::
-  single: address_id field
-.. 
 
 
 
@@ -169,20 +125,10 @@ Object: Employee
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :ssnid: SSN No, char
 
-
-
-.. index::
-  single: ssnid field
-.. 
 
 
 
@@ -191,20 +137,10 @@ Object: Employee
 
 
 
-.. index::
-  single: address_number field
-.. 
-
-
 
 
 :zip_id: Zip, many2one
 
-
-
-.. index::
-  single: zip_id field
-.. 
 
 
 
@@ -213,20 +149,10 @@ Object: Employee
 
 
 
-.. index::
-  single: holidays_id field
-.. 
-
-
 
 
 :audiens_num: AUDIENS Number, char
 
-
-
-.. index::
-  single: audiens_num field
-.. 
 
 
 
@@ -235,20 +161,10 @@ Object: Employee
 
 
 
-.. index::
-  single: partner_prefix field
-.. 
-
-
 
 
 :sinid: SIN No, char
 
-
-
-.. index::
-  single: sinid field
-.. 
 
 
 
@@ -257,20 +173,10 @@ Object: Employee
 
 
 
-.. index::
-  single: manager field
-.. 
-
-
 
 
 :partner_initials: Partner's initials, char
 
-
-
-.. index::
-  single: partner_initials field
-.. 
 
 
 
@@ -279,20 +185,10 @@ Object: Employee
 
 
 
-.. index::
-  single: waowiaww_dep_id field
-.. 
-
-
 
 
 :lang_id: Languages Known, one2many
 
-
-
-.. index::
-  single: lang_id field
-.. 
 
 
 
@@ -301,20 +197,10 @@ Object: Employee
 
 
 
-.. index::
-  single: partner_lastname field
-.. 
-
-
 
 
 :education: Education, char
 
-
-
-.. index::
-  single: education field
-.. 
 
 
 
@@ -323,20 +209,10 @@ Object: Employee
 
 
 
-.. index::
-  single: nationality_id field
-.. 
-
-
 
 
 :children: Number of children, integer
 
-
-
-.. index::
-  single: children field
-.. 
 
 
 
@@ -345,20 +221,10 @@ Object: Employee
 
 
 
-.. index::
-  single: place_of_birth field
-.. 
-
-
 
 
 :maiden_name: Maiden Name, char
 
-
-
-.. index::
-  single: maiden_name field
-.. 
 
 
 
@@ -367,20 +233,10 @@ Object: Employee
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :earings_order_beneficier: In name of, char
 
-
-
-.. index::
-  single: earings_order_beneficier field
-.. 
 
 
 
@@ -389,20 +245,10 @@ Object: Employee
 
 
 
-.. index::
-  single: work_phone field
-.. 
-
-
 
 
 :dist_home_work: Dist. between home and workplace (km), integer
 
-
-
-.. index::
-  single: dist_home_work field
-.. 
 
 
 
@@ -411,20 +257,10 @@ Object: Employee
 
 
 
-.. index::
-  single: country_id field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -433,20 +269,10 @@ Object: Employee
 
 
 
-.. index::
-  single: medic_exam field
-.. 
-
-
 
 
 :parent_id: Manager, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -455,20 +281,10 @@ Object: Employee
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :nbr_of_children: # of children, integer
 
-
-
-.. index::
-  single: nbr_of_children field
-.. 
 
 
 
@@ -477,20 +293,10 @@ Object: Employee
 
 
 
-.. index::
-  single: payscale field
-.. 
-
-
 
 
 :town_id: Town, many2one
 
-
-
-.. index::
-  single: town_id field
-.. 
 
 
 
@@ -499,20 +305,10 @@ Object: Employee
 
 
 
-.. index::
-  single: pension field
-.. 
-
-
 
 
 :evaluation_id: unknown, one2many
 
-
-
-.. index::
-  single: evaluation_id field
-.. 
 
 
 
@@ -521,20 +317,10 @@ Object: Employee
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 
 :contract_ids: Contracts, one2many
 
-
-
-.. index::
-  single: contract_ids field
-.. 
 
 
 
@@ -543,20 +329,10 @@ Object: Employee
 
 
 
-.. index::
-  single: status field
-.. 
-
-
 
 
 :earings_order_account: Account Number, char
 
-
-
-.. index::
-  single: earings_order_account field
-.. 
 
 
 
@@ -565,20 +341,10 @@ Object: Employee
 
 
 
-.. index::
-  single: otherid field
-.. 
-
-
 
 
 :nin: National Insurance Number, char
 
-
-
-.. index::
-  single: nin field
-.. 
 
 
 
@@ -587,20 +353,10 @@ Object: Employee
 
 
 
-.. index::
-  single: firstname field
-.. 
-
-
 
 
 :spaarloonregeling_account: A/C number spaarloonregeling, char
 
-
-
-.. index::
-  single: spaarloonregeling_account field
-.. 
 
 
 
@@ -609,20 +365,10 @@ Object: Employee
 
 
 
-.. index::
-  single: partner_firstname field
-.. 
-
-
 
 
 :child_ids: Subordinates, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -631,20 +377,10 @@ Object: Employee
 
 
 
-.. index::
-  single: waowiaww field
-.. 
-
-
 
 
 :phone: Phone Number, char
 
-
-
-.. index::
-  single: phone field
-.. 
 
 
 
@@ -653,20 +389,10 @@ Object: Employee
 
 
 
-.. index::
-  single: birthday field
-.. 
-
-
 
 
 :levensloopregeling_account: A/C number levensloonregeling, char
 
-
-
-.. index::
-  single: levensloopregeling_account field
-.. 
 
 
 
@@ -675,20 +401,10 @@ Object: Employee
 
 
 
-.. index::
-  single: birth_date field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -697,20 +413,10 @@ Object: Employee
 
 
 
-.. index::
-  single: field_of_education field
-.. 
-
-
 
 
 :nationality: Nationality, many2one
 
-
-
-.. index::
-  single: nationality field
-.. 
 
 
 
@@ -719,20 +425,10 @@ Object: Employee
 
 
 
-.. index::
-  single: marital field
-.. 
-
-
 
 
 :work_email: Work Email, char
 
-
-
-.. index::
-  single: work_email field
-.. 
 
 
 
@@ -741,20 +437,10 @@ Object: Employee
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :leavedate: Leaved on, date
 
-
-
-.. index::
-  single: leavedate field
-.. 
 
 
 
@@ -763,20 +449,10 @@ Object: Employee
 
 
 
-.. index::
-  single: work_location field
-.. 
-
-
 
 
 :partner_dob: Partner's DOB, date
 
-
-
-.. index::
-  single: partner_dob field
-.. 
 
 
 
@@ -785,20 +461,10 @@ Object: Employee
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :pension_waiver: Pension waiver, boolean
 
-
-
-.. index::
-  single: pension_waiver field
-.. 
 
 
 
@@ -807,20 +473,10 @@ Object: Employee
 
 
 
-.. index::
-  single: mobile field
-.. 
-
-
 
 
 :gender: Gender, selection
 
-
-
-.. index::
-  single: gender field
-.. 
 
 
 
@@ -829,20 +485,10 @@ Object: Employee
 
 
 
-.. index::
-  single: notes field
-.. 
-
-
 
 
 :amount_travel_allowance: Travel allowance(per year), float, readonly
 
-
-
-.. index::
-  single: amount_travel_allowance field
-.. 
 
 
 
@@ -851,20 +497,10 @@ Object: Employee
 
 
 
-.. index::
-  single: attachment_earings_order field
-.. 
-
-
 
 
 :prefix: Prefix, char
 
-
-
-.. index::
-  single: prefix field
-.. 
 
 
 
@@ -873,20 +509,10 @@ Object: Employee
 
 
 
-.. index::
-  single: birthdate field
-.. 
-
-
 
 
 :earings_order_amount: Amount, float
 
-
-
-.. index::
-  single: earings_order_amount field
-.. 
 
 
 
@@ -895,20 +521,10 @@ Object: Employee
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :travel_allowance: Travel Allowande, boolean
 
-
-
-.. index::
-  single: travel_allowance field
-.. 
 
 
 
@@ -917,20 +533,10 @@ Object: Employee
 
 
 
-.. index::
-  single: marital_status field
-.. 
-
-
 
 
 :spaarloonregeling: Spaarloonregeling, float
 
-
-
-.. index::
-  single: spaarloonregeling field
-.. 
 
 
 
@@ -939,20 +545,10 @@ Object: Employee
 
 
 
-.. index::
-  single: partner_gender field
-.. 
-
-
 
 
 :levensloopregeling: Levensloopregeling, float
 
-
-
-.. index::
-  single: levensloopregeling field
-.. 
 
 
 
@@ -961,20 +557,10 @@ Object: Employee
 
 
 
-.. index::
-  single: addres_id field
-.. 
-
-
 
 
 :category_id: Category, many2one
 
-
-
-.. index::
-  single: category_id field
-.. 
 
 
 
@@ -983,27 +569,14 @@ Object: Employee
 
 
 
-.. index::
-  single: soc_security field
-.. 
-
-
 
 Object: Timesheet Line
 ######################
 
-.. index::
-  single: Timesheet Line object
-.. 
 
 
 :dayofweek: Day of week, selection
 
-
-
-.. index::
-  single: dayofweek field
-.. 
 
 
 
@@ -1012,20 +585,10 @@ Object: Timesheet Line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :tgroup_id: Employee's timesheet group, many2one
 
-
-
-.. index::
-  single: tgroup_id field
-.. 
 
 
 
@@ -1034,20 +597,10 @@ Object: Timesheet Line
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 
 :hour_from: Work from, float, required
 
-
-
-.. index::
-  single: hour_from field
-.. 
 
 
 
@@ -1056,27 +609,14 @@ Object: Timesheet Line
 
 
 
-.. index::
-  single: hour_to field
-.. 
-
-
 
 Object: hr.department
 #####################
 
-.. index::
-  single: hr.department object
-.. 
 
 
 :member_ids: Members, many2many
 
-
-
-.. index::
-  single: member_ids field
-.. 
 
 
 
@@ -1085,20 +625,10 @@ Object: hr.department
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :child_ids: Childs Departments, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -1107,20 +637,10 @@ Object: hr.department
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -1129,29 +649,14 @@ Object: hr.department
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :max_temp_contract: Maximum temporary contracts, integer
 
 
 
-.. index::
-  single: max_temp_contract field
-.. 
-
-
 
 
 :manager_id: Manager, many2one, required
 
-
-
-.. index::
-  single: manager_id field
-.. 
 

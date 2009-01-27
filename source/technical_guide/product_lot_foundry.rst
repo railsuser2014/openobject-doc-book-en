@@ -53,18 +53,10 @@ Objects
 Object: Heat Code
 #################
 
-.. index::
-  single: Heat Code object
-.. 
 
 
 :name: Heat Code, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -73,20 +65,10 @@ Object: Heat Code
 
 
 
-.. index::
-  single: lot_ids field
-.. 
-
-
 
 
 :mecanical_ids: Mecanical Properties, one2many
 
-
-
-.. index::
-  single: mecanical_ids field
-.. 
 
 
 
@@ -95,20 +77,10 @@ Object: Heat Code
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date: Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -117,27 +89,14 @@ Object: Heat Code
 
 
 
-.. index::
-  single: chemical_ids field
-.. 
-
-
 
 Object: Mecanical Properties
 ############################
 
-.. index::
-  single: Mecanical Properties object
-.. 
 
 
 :heatcode_id: Heatcode, many2one
 
-
-
-.. index::
-  single: heatcode_id field
-.. 
 
 
 
@@ -146,38 +105,20 @@ Object: Mecanical Properties
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :value: Value, char, required
 
-
-
-.. index::
-  single: value field
-.. 
 
 
 
 Object: Chemical Properties
 ###########################
 
-.. index::
-  single: Chemical Properties object
-.. 
 
 
 :heatcode_id: Heatcode, many2one
 
-
-
-.. index::
-  single: heatcode_id field
-.. 
 
 
 
@@ -186,38 +127,20 @@ Object: Chemical Properties
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :value: Value, char, required
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 Object: stock.production.lot.reservation
 ########################################
 
-.. index::
-  single: stock.production.lot.reservation object
-.. 
 
 
 :name: Reservation, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -226,20 +149,10 @@ Object: stock.production.lot.reservation
 
 
 
-.. index::
-  single: size_x field
-.. 
-
-
 
 
 :size_y: Length, float
 
-
-
-.. index::
-  single: size_y field
-.. 
 
 
 
@@ -248,20 +161,10 @@ Object: stock.production.lot.reservation
 
 
 
-.. index::
-  single: size_z field
-.. 
-
-
 
 
 :date: Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -270,36 +173,18 @@ Object: stock.production.lot.reservation
 
 
 
-.. index::
-  single: lot_id field
-.. 
-
-
 
 Object: stock.production.lot.all
 ################################
 
-.. index::
-  single: stock.production.lot.all object
-.. 
 
 
 :lot_id: Lot, many2one
 
 
 
-.. index::
-  single: lot_id field
-.. 
-
-
 
 
 :name: Quantity, float
 
-
-
-.. index::
-  single: name field
-.. 
 

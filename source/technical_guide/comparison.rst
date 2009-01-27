@@ -67,18 +67,10 @@ Objects
 Object: comparison.user
 #######################
 
-.. index::
-  single: comparison.user object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -87,20 +79,10 @@ Object: comparison.user
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -109,27 +91,14 @@ Object: comparison.user
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 Object: comparison.item
 #######################
 
-.. index::
-  single: comparison.item object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -138,20 +107,10 @@ Object: comparison.item
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :result_ids: Results, one2many
 
-
-
-.. index::
-  single: result_ids field
-.. 
 
 
 
@@ -160,20 +119,10 @@ Object: comparison.item
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: Status, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -182,27 +131,14 @@ Object: comparison.item
 
 
 
-.. index::
-  single: version field
-.. 
-
-
 
 Object: comparison.factor
 #########################
 
-.. index::
-  single: comparison.factor object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -211,20 +147,10 @@ Object: comparison.factor
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :result_ids: Results, one2many
 
-
-
-.. index::
-  single: result_ids field
-.. 
 
 
 
@@ -233,31 +159,16 @@ Object: comparison.factor
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :child_ids: Child Factors, one2many
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -266,20 +177,10 @@ Object: comparison.factor
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :state: Status, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -288,20 +189,10 @@ Object: comparison.factor
 
 
 
-.. index::
-  single: ponderation field
-.. 
-
-
 
 
 :pond_computed: Computed Ponderation, float, readonly
 
-
-
-.. index::
-  single: pond_computed field
-.. 
 
 
 
@@ -310,27 +201,14 @@ Object: comparison.factor
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 Object: comparison.vote.values
 ##############################
 
-.. index::
-  single: comparison.vote.values object
-.. 
 
 
 :name: Vote Type, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -339,27 +217,14 @@ Object: comparison.vote.values
 
 
 
-.. index::
-  single: factor field
-.. 
-
-
 
 Object: comparison.vote
 #######################
 
-.. index::
-  single: comparison.vote object
-.. 
 
 
 :item_id: Item, many2one, required
 
-
-
-.. index::
-  single: item_id field
-.. 
 
 
 
@@ -368,31 +233,16 @@ Object: comparison.vote
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :factor_id: Factor, many2one, required
 
 
 
-.. index::
-  single: factor_id field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -401,27 +251,14 @@ Object: comparison.vote
 
 
 
-.. index::
-  single: score_id field
-.. 
-
-
 
 Object: comparison.factor.result
 ################################
 
-.. index::
-  single: comparison.factor.result object
-.. 
 
 
 :item_id: Item, many2one, required, readonly
 
-
-
-.. index::
-  single: item_id field
-.. 
 
 
 
@@ -430,20 +267,10 @@ Object: comparison.factor.result
 
 
 
-.. index::
-  single: factor_id field
-.. 
-
-
 
 
 :votes: Votes, float, readonly
 
-
-
-.. index::
-  single: votes field
-.. 
 
 
 
@@ -452,27 +279,14 @@ Object: comparison.factor.result
 
 
 
-.. index::
-  single: result field
-.. 
-
-
 
 Object: comparison.ponderation.suggestion
 #########################################
 
-.. index::
-  single: comparison.ponderation.suggestion object
-.. 
 
 
 :ponderation: Ponderation, float, required
 
-
-
-.. index::
-  single: ponderation field
-.. 
 
 
 
@@ -481,20 +295,10 @@ Object: comparison.ponderation.suggestion
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :factor_id: Factor, many2one, required
 
-
-
-.. index::
-  single: factor_id field
-.. 
 
 
 
@@ -503,18 +307,8 @@ Object: comparison.ponderation.suggestion
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 

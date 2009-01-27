@@ -53,18 +53,10 @@ Objects
 Object: Relation table between journals and billing rates
 #########################################################
 
-.. index::
-  single: Relation table between journals and billing rates object
-.. 
 
 
 :rate_id: Invoicing Rate, many2one
 
-
-
-.. index::
-  single: rate_id field
-.. 
 
 
 
@@ -73,18 +65,8 @@ Object: Relation table between journals and billing rates
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :account_id: Analytic Account, many2one, required
 
-
-
-.. index::
-  single: account_id field
-.. 
 

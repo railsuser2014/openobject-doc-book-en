@@ -51,29 +51,16 @@ Objects
 Object: report.pagesize
 #######################
 
-.. index::
-  single: report.pagesize object
-.. 
 
 
 :width: Width, char, required
 
     *Numeric width of the page ended with the unit (cm or in). For example, A4 is 21cm and letter is 8.5in*
 
-.. index::
-  single: width field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -82,56 +69,30 @@ Object: report.pagesize
 
     *Numeric height of the page ended with the unit (cm or in). For example, A4 is 29.7cm and letter is 11in*
 
-.. index::
-  single: height field
-.. 
-
-
 
 Object: report.label.manufacturer
 #################################
 
-.. index::
-  single: report.label.manufacturer object
-.. 
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: report.label
 ####################
 
-.. index::
-  single: report.label object
-.. 
 
 
 :rows: Number of Rows, integer, required
 
 
 
-.. index::
-  single: rows field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -140,31 +101,16 @@ Object: report.label
 
     *Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
 
-.. index::
-  single: label_height field
-.. 
-
-
 
 
 :label_width: Label Width, char, required
 
     *Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
 
-.. index::
-  single: label_width field
-.. 
-
-
 
 
 :cols: Number of Columns, integer, required
 
-
-
-.. index::
-  single: cols field
-.. 
 
 
 
@@ -173,21 +119,11 @@ Object: report.label
 
 
 
-.. index::
-  single: pagesize_id field
-.. 
-
-
 
 
 :width_incr: Width Increment, char, required
 
     *Width between start positions of 2 labels. Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
-
-.. index::
-  single: width_incr field
-.. 
-
 
 
 
@@ -195,21 +131,11 @@ Object: report.label
 
     *Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
 
-.. index::
-  single: margin_top field
-.. 
-
-
 
 
 :margin_left: Left Margin, char, required
 
     *Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
-
-.. index::
-  single: margin_left field
-.. 
-
 
 
 
@@ -217,20 +143,10 @@ Object: report.label
 
     *Height between start positions of 2 labels. Numeric value ended with the unit (cm or in). For example 29.7cm or 11in*
 
-.. index::
-  single: height_incr field
-.. 
-
-
 
 
 :manufacturer_id: Manufacturer, many2one
 
-
-
-.. index::
-  single: manufacturer_id field
-.. 
 
 
 
@@ -239,18 +155,8 @@ Object: report.label
 
     *No check -> Portrait. Check -> Landscape*
 
-.. index::
-  single: landscape field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

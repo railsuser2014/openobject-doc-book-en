@@ -48,18 +48,10 @@ Objects
 Object: board.board
 ###################
 
-.. index::
-  single: board.board object
-.. 
 
 
 :line_ids: Action Views, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -68,38 +60,20 @@ Object: board.board
 
 
 
-.. index::
-  single: view_id field
-.. 
-
-
 
 
 :name: Dashboard, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: board.board.line
 ########################
 
-.. index::
-  single: board.board.line object
-.. 
 
 
 :board_id: Dashboard, many2one, required
 
-
-
-.. index::
-  single: board_id field
-.. 
 
 
 
@@ -108,20 +82,10 @@ Object: board.board.line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -130,20 +94,10 @@ Object: board.board.line
 
 
 
-.. index::
-  single: height field
-.. 
-
-
 
 
 :width: Width, integer
 
-
-
-.. index::
-  single: width field
-.. 
 
 
 
@@ -152,56 +106,30 @@ Object: board.board.line
 
 
 
-.. index::
-  single: position field
-.. 
-
-
 
 
 :action_id: Action, many2one, required
 
 
 
-.. index::
-  single: action_id field
-.. 
-
-
 
 Object: board.note.type
 #######################
 
-.. index::
-  single: board.note.type object
-.. 
 
 
 :name: Note Type, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: board.note
 ##################
 
-.. index::
-  single: board.note object
-.. 
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -210,20 +138,10 @@ Object: board.note
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :user_id: Author, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -232,18 +150,8 @@ Object: board.note
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :type: Note type, selection
 
-
-
-.. index::
-  single: type field
-.. 
 

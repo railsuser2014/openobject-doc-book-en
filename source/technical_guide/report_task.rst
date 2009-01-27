@@ -47,18 +47,10 @@ Objects
 Object: Tasks by user and project
 #################################
 
-.. index::
-  single: Tasks by user and project object
-.. 
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -67,20 +59,10 @@ Object: Tasks by user and project
 
 
 
-.. index::
-  single: task_progress field
-.. 
-
-
 
 
 :task_hrs: Task Hours, float, readonly
 
-
-
-.. index::
-  single: task_hrs field
-.. 
 
 
 
@@ -89,29 +71,14 @@ Object: Tasks by user and project
 
 
 
-.. index::
-  single: task_nbr field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 
 :task_state: Status, selection, readonly
 
-
-
-.. index::
-  single: task_state field
-.. 
 

@@ -53,18 +53,10 @@ Objects
 Object: Subscription document
 #############################
 
-.. index::
-  single: Subscription document object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -73,20 +65,10 @@ Object: Subscription document
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -95,27 +77,14 @@ Object: Subscription document
 
 
 
-.. index::
-  single: field_ids field
-.. 
-
-
 
 Object: Subscription document fields
 ####################################
 
-.. index::
-  single: Subscription document fields object
-.. 
 
 
 :field: Field, many2one, required
 
-
-
-.. index::
-  single: field field
-.. 
 
 
 
@@ -124,38 +93,20 @@ Object: Subscription document fields
 
 
 
-.. index::
-  single: document_id field
-.. 
-
-
 
 
 :value: Default Value, selection
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 Object: Subscription
 ####################
 
-.. index::
-  single: Subscription object
-.. 
 
 
 :cron_id: Cron Job, many2one
 
-
-
-.. index::
-  single: cron_id field
-.. 
 
 
 
@@ -164,20 +115,10 @@ Object: Subscription
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -186,20 +127,10 @@ Object: Subscription
 
 
 
-.. index::
-  single: date_init field
-.. 
-
-
 
 
 :notes: Notes, text
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -208,20 +139,10 @@ Object: Subscription
 
 
 
-.. index::
-  single: interval_type field
-.. 
-
-
 
 
 :exec_init: Number of documents, integer
 
-
-
-.. index::
-  single: exec_init field
-.. 
 
 
 
@@ -230,20 +151,10 @@ Object: Subscription
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :doc_lines: Documents created, one2many, readonly
 
-
-
-.. index::
-  single: doc_lines field
-.. 
 
 
 
@@ -252,20 +163,10 @@ Object: Subscription
 
 
 
-.. index::
-  single: doc_source field
-.. 
-
-
 
 
 :interval_number: Interval Qty, integer
 
-
-
-.. index::
-  single: interval_number field
-.. 
 
 
 
@@ -274,38 +175,20 @@ Object: Subscription
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 Object: Subscription history
 ############################
 
-.. index::
-  single: Subscription history object
-.. 
 
 
 :date: Date, datetime
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -314,18 +197,8 @@ Object: Subscription history
 
 
 
-.. index::
-  single: subscription_id field
-.. 
-
-
 
 
 :document_id: Source Document, reference, required
 
-
-
-.. index::
-  single: document_id field
-.. 
 

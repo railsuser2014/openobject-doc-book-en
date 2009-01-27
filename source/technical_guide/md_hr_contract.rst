@@ -57,18 +57,10 @@ Objects
 Object: HR Contract Availability
 ################################
 
-.. index::
-  single: HR Contract Availability object
-.. 
 
 
 :to_hour: To, time
 
-
-
-.. index::
-  single: to_hour field
-.. 
 
 
 
@@ -77,29 +69,14 @@ Object: HR Contract Availability
 
 
 
-.. index::
-  single: from_hour field
-.. 
-
-
 
 
 :contract_id: Contract, many2one
 
 
 
-.. index::
-  single: contract_id field
-.. 
-
-
 
 
 :day: Day, selection
 
-
-
-.. index::
-  single: day field
-.. 
 

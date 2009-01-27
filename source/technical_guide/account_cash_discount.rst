@@ -50,18 +50,10 @@ Objects
 Object: Cash Discount
 #####################
 
-.. index::
-  single: Cash Discount object
-.. 
 
 
 :payment_id: Associated Payment Term, many2one
 
-
-
-.. index::
-  single: payment_id field
-.. 
 
 
 
@@ -70,20 +62,10 @@ Object: Cash Discount
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :credit_account_id: Credit Account, many2one
 
-
-
-.. index::
-  single: credit_account_id field
-.. 
 
 
 
@@ -92,29 +74,14 @@ Object: Cash Discount
 
 
 
-.. index::
-  single: delay field
-.. 
-
-
 
 
 :discount: Discount (%), float, required
 
 
 
-.. index::
-  single: discount field
-.. 
-
-
 
 
 :debit_account_id: Debit Account, many2one
 
-
-
-.. index::
-  single: debit_account_id field
-.. 
 

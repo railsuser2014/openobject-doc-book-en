@@ -59,18 +59,10 @@ Objects
 Object: Account reporting
 #########################
 
-.. index::
-  single: Account reporting object
-.. 
 
 
 :status: Status, selection, readonly
 
-
-
-.. index::
-  single: status field
-.. 
 
 
 
@@ -79,31 +71,16 @@ Object: Account reporting
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :disp_tree: Display Tree, boolean
 
     *When the indicators will be printed, if one indicator is set with this field to True, then it will display one more graph with all its children in tree*
 
-.. index::
-  single: disp_tree field
-.. 
-
-
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -112,20 +89,10 @@ Object: Account reporting
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -134,20 +101,10 @@ Object: Account reporting
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :child_ids: Childs, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -156,31 +113,16 @@ Object: Account reporting
 
     *This Value depicts the limit of badness.*
 
-.. index::
-  single: badness_limit field
-.. 
-
-
 
 
 :goodness_limit: Goodness Indicator Limit, float
 
     *This Value depicts the limit of goodness.*
 
-.. index::
-  single: goodness_limit field
-.. 
-
-
 
 
 :parent_id: Parent, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -189,31 +131,16 @@ Object: Account reporting
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :disp_graph: Display as a Graph, boolean
 
     *If the field is set to True,information will be printed as a Graph; as an array otherwise.*
 
-.. index::
-  single: disp_graph field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -222,27 +149,14 @@ Object: Account reporting
 
 
 
-.. index::
-  single: expression field
-.. 
-
-
 
 Object: Indicator
 #################
 
-.. index::
-  single: Indicator object
-.. 
 
 
 :tmp: temp, integer, readonly
 
-
-
-.. index::
-  single: tmp field
-.. 
 
 
 
@@ -251,20 +165,10 @@ Object: Indicator
 
 
 
-.. index::
-  single: fiscalyear_id field
-.. 
-
-
 
 
 :period_id: Period, many2one, readonly
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -273,18 +177,8 @@ Object: Indicator
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :val: Value, float, readonly
 
-
-
-.. index::
-  single: val field
-.. 
 

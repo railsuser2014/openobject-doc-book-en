@@ -48,13 +48,6 @@ Objects
 Object: game.scenario
 #####################
 
-.. index::
-  single: game.scenario object
-.. 
 
 Object: game.scenario.step
 ##########################
-
-.. index::
-  single: game.scenario.step object
-.. 

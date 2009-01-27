@@ -168,18 +168,10 @@ Objects
 Object: auction.artists
 #######################
 
-.. index::
-  single: auction.artists object
-.. 
 
 
 :birth_death_dates: Birth / Death dates, char
 
-
-
-.. index::
-  single: birth_death_dates field
-.. 
 
 
 
@@ -188,20 +180,10 @@ Object: auction.artists
 
 
 
-.. index::
-  single: pseudo field
-.. 
-
-
 
 
 :name: Artist/Author Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -210,27 +192,14 @@ Object: auction.artists
 
 
 
-.. index::
-  single: biography field
-.. 
-
-
 
 Object: auction.dates
 #####################
 
-.. index::
-  single: auction.dates object
-.. 
 
 
 :journal_seller_id: Seller Journal, many2one, required
 
-
-
-.. index::
-  single: journal_seller_id field
-.. 
 
 
 
@@ -239,20 +208,10 @@ Object: auction.dates
 
 
 
-.. index::
-  single: expo1 field
-.. 
-
-
 
 
 :name: Auction date, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -261,20 +220,10 @@ Object: auction.dates
 
 
 
-.. index::
-  single: expo2 field
-.. 
-
-
 
 
 :acc_income: Income Account, many2one, required
 
-
-
-.. index::
-  single: acc_income field
-.. 
 
 
 
@@ -283,31 +232,16 @@ Object: auction.dates
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :adj_total: Total Adjudication, float, readonly
 
 
 
-.. index::
-  single: adj_total field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -316,20 +250,10 @@ Object: auction.dates
 
 
 
-.. index::
-  single: auction1 field
-.. 
-
-
 
 
 :buyer_costs: Buyer Costs, many2many
 
-
-
-.. index::
-  single: buyer_costs field
-.. 
 
 
 
@@ -338,20 +262,10 @@ Object: auction.dates
 
 
 
-.. index::
-  single: auction2 field
-.. 
-
-
 
 
 :account_analytic_id: Analytic Account, many2one, required
 
-
-
-.. index::
-  single: account_analytic_id field
-.. 
 
 
 
@@ -360,49 +274,26 @@ Object: auction.dates
 
 
 
-.. index::
-  single: seller_costs field
-.. 
-
-
 
 
 :acc_expense: Expense Account, many2one, required
 
 
 
-.. index::
-  single: acc_expense field
-.. 
-
-
 
 Object: Deposit Border
 ######################
 
-.. index::
-  single: Deposit Border object
-.. 
 
 
 :info: Description, char
 
 
 
-.. index::
-  single: info field
-.. 
-
-
 
 
 :create_uid: Created by, many2one, readonly
 
-
-
-.. index::
-  single: create_uid field
-.. 
 
 
 
@@ -411,20 +302,10 @@ Object: Deposit Border
 
 
 
-.. index::
-  single: specific_cost_ids field
-.. 
-
-
 
 
 :name: Depositer Inventory, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -433,20 +314,10 @@ Object: Deposit Border
 
 
 
-.. index::
-  single: date_dep field
-.. 
-
-
 
 
 :transfer: Transfer, boolean
 
-
-
-.. index::
-  single: transfer field
-.. 
 
 
 
@@ -455,20 +326,10 @@ Object: Deposit Border
 
 
 
-.. index::
-  single: total_neg field
-.. 
-
-
 
 
 :lot_id: Objects, one2many
 
-
-
-.. index::
-  single: lot_id field
-.. 
 
 
 
@@ -477,20 +338,10 @@ Object: Deposit Border
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :method: Withdrawned method, selection, required
 
-
-
-.. index::
-  single: method field
-.. 
 
 
 
@@ -499,27 +350,14 @@ Object: Deposit Border
 
 
 
-.. index::
-  single: tax_id field
-.. 
-
-
 
 Object: auction.deposit.cost
 ############################
 
-.. index::
-  single: auction.deposit.cost object
-.. 
 
 
 :deposit_id: Deposit, many2one
 
-
-
-.. index::
-  single: deposit_id field
-.. 
 
 
 
@@ -528,20 +366,10 @@ Object: auction.deposit.cost
 
 
 
-.. index::
-  single: account field
-.. 
-
-
 
 
 :amount: Amount, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -550,27 +378,14 @@ Object: auction.deposit.cost
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: auction.lot.category
 ############################
 
-.. index::
-  single: auction.lot.category object
-.. 
 
 
 :priority: Priority, float
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -579,20 +394,10 @@ Object: auction.lot.category
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :name: Category Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -601,27 +406,14 @@ Object: auction.lot.category
 
 
 
-.. index::
-  single: aie_categ field
-.. 
-
-
 
 Object: Object
 ##############
 
-.. index::
-  single: Object object
-.. 
 
 
 :is_ok: Buyer's payment, boolean
 
-
-
-.. index::
-  single: is_ok field
-.. 
 
 
 
@@ -630,20 +422,10 @@ Object: Object
 
 
 
-.. index::
-  single: vnd_lim field
-.. 
-
-
 
 
 :statement_id: Payment, many2many
 
-
-
-.. index::
-  single: statement_id field
-.. 
 
 
 
@@ -652,31 +434,16 @@ Object: Object
 
 
 
-.. index::
-  single: image field
-.. 
-
-
 
 
 :obj_num: Catalog Number, integer
 
 
 
-.. index::
-  single: obj_num field
-.. 
-
-
 
 
 :lot_num: List Number, integer, required
 
-
-
-.. index::
-  single: lot_num field
-.. 
 
 
 
@@ -685,20 +452,10 @@ Object: Object
 
 
 
-.. index::
-  single: ach_uid field
-.. 
-
-
 
 
 :sel_inv_id: Seller Invoice, many2one, readonly
 
-
-
-.. index::
-  single: sel_inv_id field
-.. 
 
 
 
@@ -707,20 +464,10 @@ Object: Object
 
 
 
-.. index::
-  single: vnd_lim_net field
-.. 
-
-
 
 
 :bord_vnd_id: Depositer Inventory, many2one, required
 
-
-
-.. index::
-  single: bord_vnd_id field
-.. 
 
 
 
@@ -729,31 +476,16 @@ Object: Object
 
 
 
-.. index::
-  single: ach_emp field
-.. 
-
-
 
 
 :create_uid: Created by, many2one, readonly
 
 
 
-.. index::
-  single: create_uid field
-.. 
-
-
 
 
 :net_revenue: Net revenue, float, readonly
 
-
-
-.. index::
-  single: net_revenue field
-.. 
 
 
 
@@ -762,20 +494,10 @@ Object: Object
 
 
 
-.. index::
-  single: artist2_id field
-.. 
-
-
 
 
 :obj_comm: Commission, boolean
 
-
-
-.. index::
-  single: obj_comm field
-.. 
 
 
 
@@ -784,31 +506,16 @@ Object: Object
 
 
 
-.. index::
-  single: paid_ach field
-.. 
-
-
 
 
 :lot_local: Location, char
 
 
 
-.. index::
-  single: lot_local field
-.. 
-
-
 
 
 :state: Status, selection, required, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -817,20 +524,10 @@ Object: Object
 
 
 
-.. index::
-  single: costs field
-.. 
-
-
 
 
 :history_ids: Auction history, one2many
 
-
-
-.. index::
-  single: history_ids field
-.. 
 
 
 
@@ -839,20 +536,10 @@ Object: Object
 
 
 
-.. index::
-  single: artist_id field
-.. 
-
-
 
 
 :ach_login: Buyer Username, char
 
-
-
-.. index::
-  single: ach_login field
-.. 
 
 
 
@@ -861,20 +548,10 @@ Object: Object
 
 
 
-.. index::
-  single: gross_revenue field
-.. 
-
-
 
 
 :lot_type: Object category, selection
 
-
-
-.. index::
-  single: lot_type field
-.. 
 
 
 
@@ -883,20 +560,10 @@ Object: Object
 
 
 
-.. index::
-  single: author_right field
-.. 
-
-
 
 
 :ach_avance: Buyer Advance, float
 
-
-
-.. index::
-  single: ach_avance field
-.. 
 
 
 
@@ -905,20 +572,10 @@ Object: Object
 
 
 
-.. index::
-  single: gross_margin field
-.. 
-
-
 
 
 :important: To be Emphatized, boolean
 
-
-
-.. index::
-  single: important field
-.. 
 
 
 
@@ -927,20 +584,10 @@ Object: Object
 
 
 
-.. index::
-  single: name2 field
-.. 
-
-
 
 
 :lot_est1: Minimum Estimation, float
 
-
-
-.. index::
-  single: lot_est1 field
-.. 
 
 
 
@@ -949,20 +596,10 @@ Object: Object
 
 
 
-.. index::
-  single: lot_est2 field
-.. 
-
-
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -971,20 +608,10 @@ Object: Object
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :net_margin: Net Margin (%), float, readonly
 
-
-
-.. index::
-  single: net_margin field
-.. 
 
 
 
@@ -993,20 +620,10 @@ Object: Object
 
 
 
-.. index::
-  single: ach_inv_id field
-.. 
-
-
 
 
 :obj_price: Adjudication price, float
 
-
-
-.. index::
-  single: obj_price field
-.. 
 
 
 
@@ -1015,20 +632,10 @@ Object: Object
 
 
 
-.. index::
-  single: obj_ret field
-.. 
-
-
 
 
 :auction_id: Auction Date, many2one
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -1037,20 +644,10 @@ Object: Object
 
 
 
-.. index::
-  single: bid_lines field
-.. 
-
-
 
 
 :paid_vnd: Seller Paid, boolean
 
-
-
-.. index::
-  single: paid_vnd field
-.. 
 
 
 
@@ -1059,20 +656,10 @@ Object: Object
 
 
 
-.. index::
-  single: buyer_price field
-.. 
-
-
 
 
 :obj_desc: Object Description, text
 
-
-
-.. index::
-  single: obj_desc field
-.. 
 
 
 
@@ -1081,27 +668,14 @@ Object: Object
 
 
 
-.. index::
-  single: seller_price field
-.. 
-
-
 
 Object: Bid auctions
 ####################
 
-.. index::
-  single: Bid auctions object
-.. 
 
 
 :bid_lines: Bid, one2many
 
-
-
-.. index::
-  single: bid_lines field
-.. 
 
 
 
@@ -1110,20 +684,10 @@ Object: Bid auctions
 
 
 
-.. index::
-  single: contact_tel field
-.. 
-
-
 
 
 :auction_id: Auction Date, many2one, required
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -1132,38 +696,20 @@ Object: Bid auctions
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :name: Bid ID, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Lot history
 ###################
 
-.. index::
-  single: Lot history object
-.. 
 
 
 :lot_id: Object, many2one, required
 
-
-
-.. index::
-  single: lot_id field
-.. 
 
 
 
@@ -1172,20 +718,10 @@ Object: Lot history
 
 
 
-.. index::
-  single: price field
-.. 
-
-
 
 
 :auction_id: Auction date, many2one, required
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -1194,27 +730,14 @@ Object: Lot history
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Bid
 ###########
 
-.. index::
-  single: Bid object
-.. 
 
 
 :name: Bid date, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1223,20 +746,10 @@ Object: Bid
 
 
 
-.. index::
-  single: auction field
-.. 
-
-
 
 
 :price: Maximum Price, float
 
-
-
-.. index::
-  single: price field
-.. 
 
 
 
@@ -1245,20 +758,10 @@ Object: Bid
 
 
 
-.. index::
-  single: bid_id field
-.. 
-
-
 
 
 :call: To be Called, boolean
 
-
-
-.. index::
-  single: call field
-.. 
 
 
 
@@ -1267,38 +770,20 @@ Object: Bid
 
 
 
-.. index::
-  single: lot_id field
-.. 
-
-
 
 Object: Auction Reporting on buyer view
 #######################################
 
-.. index::
-  single: Auction Reporting on buyer view object
-.. 
 
 
 :total_price: Total Adj., float, readonly
 
 
 
-.. index::
-  single: total_price field
-.. 
-
-
 
 
 :auction: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction field
-.. 
 
 
 
@@ -1307,20 +792,10 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: object field
-.. 
-
-
 
 
 :buyer: Buyer, many2one, readonly
 
-
-
-.. index::
-  single: buyer field
-.. 
 
 
 
@@ -1329,20 +804,10 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: avg_price field
-.. 
-
-
 
 
 :date: Create Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1351,27 +816,14 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: buyer_login field
-.. 
-
-
 
 Object: Auction Reporting on buyer view
 #######################################
 
-.. index::
-  single: Auction Reporting on buyer view object
-.. 
 
 
 :gross_revenue: Gross Revenue, float, readonly
 
-
-
-.. index::
-  single: gross_revenue field
-.. 
 
 
 
@@ -1380,20 +832,10 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: net_revenue field
-.. 
-
-
 
 
 :auction: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction field
-.. 
 
 
 
@@ -1402,20 +844,10 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: net_margin field
-.. 
-
-
 
 
 :date: Create Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1424,20 +856,10 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: sumadj field
-.. 
-
-
 
 
 :buyer: Buyer, many2one, readonly
 
-
-
-.. index::
-  single: buyer field
-.. 
 
 
 
@@ -1446,38 +868,20 @@ Object: Auction Reporting on buyer view
 
 
 
-.. index::
-  single: buyer_login field
-.. 
-
-
 
 Object: Auction Reporting on seller view
 ########################################
 
-.. index::
-  single: Auction Reporting on seller view object
-.. 
 
 
 :total_price: Total adjudication, float, readonly
 
 
 
-.. index::
-  single: total_price field
-.. 
-
-
 
 
 :auction: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction field
-.. 
 
 
 
@@ -1486,20 +890,10 @@ Object: Auction Reporting on seller view
 
 
 
-.. index::
-  single: object_number field
-.. 
-
-
 
 
 :seller: Seller, many2one, readonly
 
-
-
-.. index::
-  single: seller field
-.. 
 
 
 
@@ -1508,20 +902,10 @@ Object: Auction Reporting on seller view
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :avg_estimation: Avg estimation, float, readonly
 
-
-
-.. index::
-  single: avg_estimation field
-.. 
 
 
 
@@ -1530,38 +914,20 @@ Object: Auction Reporting on seller view
 
 
 
-.. index::
-  single: avg_price field
-.. 
-
-
 
 
 :date: Create Date, date, required
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 Object: Auction Reporting on seller view2
 #########################################
 
-.. index::
-  single: Auction Reporting on seller view2 object
-.. 
 
 
 :gross_revenue: Gross revenue, float, readonly
 
-
-
-.. index::
-  single: gross_revenue field
-.. 
 
 
 
@@ -1570,31 +936,16 @@ Object: Auction Reporting on seller view2
 
 
 
-.. index::
-  single: sum_adj field
-.. 
-
-
 
 
 :net_revenue: Net revenue, float, readonly
 
 
 
-.. index::
-  single: net_revenue field
-.. 
-
-
 
 
 :auction: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction field
-.. 
 
 
 
@@ -1603,20 +954,10 @@ Object: Auction Reporting on seller view2
 
 
 
-.. index::
-  single: seller field
-.. 
-
-
 
 
 :date: Auction date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1625,27 +966,14 @@ Object: Auction Reporting on seller view2
 
 
 
-.. index::
-  single: net_margin field
-.. 
-
-
 
 Object: Auction Reporting on  view2
 ###################################
 
-.. index::
-  single: Auction Reporting on  view2 object
-.. 
 
 
 :gross_revenue: Gross revenue, float, readonly
 
-
-
-.. index::
-  single: gross_revenue field
-.. 
 
 
 
@@ -1654,20 +982,10 @@ Object: Auction Reporting on  view2
 
 
 
-.. index::
-  single: obj_number field
-.. 
-
-
 
 
 :sum_adj: Sum of adjudication, float, readonly
 
-
-
-.. index::
-  single: sum_adj field
-.. 
 
 
 
@@ -1676,20 +994,10 @@ Object: Auction Reporting on  view2
 
 
 
-.. index::
-  single: net_revenue field
-.. 
-
-
 
 
 :auction: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction field
-.. 
 
 
 
@@ -1698,20 +1006,10 @@ Object: Auction Reporting on  view2
 
 
 
-.. index::
-  single: obj_margin_procent field
-.. 
-
-
 
 
 :obj_margin: Avg margin, float, readonly
 
-
-
-.. index::
-  single: obj_margin field
-.. 
 
 
 
@@ -1720,27 +1018,14 @@ Object: Auction Reporting on  view2
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 Object: Auction Reporting on view1
 ##################################
 
-.. index::
-  single: Auction Reporting on view1 object
-.. 
 
 
 :obj_ret: # obj ret, integer, readonly
 
-
-
-.. index::
-  single: obj_ret field
-.. 
 
 
 
@@ -1749,20 +1034,10 @@ Object: Auction Reporting on view1
 
 
 
-.. index::
-  single: min_est field
-.. 
-
-
 
 
 :nseller: No of sellers, float, readonly
 
-
-
-.. index::
-  single: nseller field
-.. 
 
 
 
@@ -1771,20 +1046,10 @@ Object: Auction Reporting on view1
 
 
 
-.. index::
-  single: nbuyer field
-.. 
-
-
 
 
 :nobjects: No of objects, float, readonly
 
-
-
-.. index::
-  single: nobjects field
-.. 
 
 
 
@@ -1793,20 +1058,10 @@ Object: Auction Reporting on view1
 
 
 
-.. index::
-  single: max_est field
-.. 
-
-
 
 
 :auction_id: Auction date, many2one, readonly
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -1815,38 +1070,20 @@ Object: Auction Reporting on view1
 
 
 
-.. index::
-  single: adj_price field
-.. 
-
-
 
 Object: Objects per day
 #######################
 
-.. index::
-  single: Objects per day object
-.. 
 
 
 :month: Month, date
 
 
 
-.. index::
-  single: month field
-.. 
-
-
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -1855,49 +1092,26 @@ Object: Objects per day
 
 
 
-.. index::
-  single: obj_num field
-.. 
-
-
 
 
 :name: Created date, date
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: comparaison estimate/adjudication 
 ##########################################
 
-.. index::
-  single: comparaison estimate/adjudication  object
-.. 
 
 
 :user_id: User, many2one
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :obj_price: Adjudication price, float
 
-
-
-.. index::
-  single: obj_price field
-.. 
 
 
 
@@ -1906,31 +1120,16 @@ Object: comparaison estimate/adjudication
 
 
 
-.. index::
-  single: lot_type field
-.. 
-
-
 
 
 :adj_total: Total Adjudication, float
 
 
 
-.. index::
-  single: adj_total field
-.. 
-
-
 
 
 :date: Date, date, readonly
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1939,49 +1138,26 @@ Object: comparaison estimate/adjudication
 
 
 
-.. index::
-  single: lot_est1 field
-.. 
-
-
 
 
 :lot_est2: Maximum Estimation, float
 
 
 
-.. index::
-  single: lot_est2 field
-.. 
-
-
 
 Object: report_auction_adjudication
 ###################################
 
-.. index::
-  single: report_auction_adjudication object
-.. 
 
 
 :date: Date, date, readonly
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :adj_total: Total Adjudication, float
 
-
-
-.. index::
-  single: adj_total field
-.. 
 
 
 
@@ -1990,20 +1166,10 @@ Object: report_auction_adjudication
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -2012,27 +1178,14 @@ Object: report_auction_adjudication
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Report Sign In/Out
 ##########################
 
-.. index::
-  single: Report Sign In/Out object
-.. 
 
 
 :total_attendance: Total, float, readonly
 
-
-
-.. index::
-  single: total_attendance field
-.. 
 
 
 
@@ -2041,38 +1194,20 @@ Object: Report Sign In/Out
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :name: Date, date, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Report deposit border
 #############################
 
-.. index::
-  single: Report deposit border object
-.. 
 
 
 :total_marge: Total margin, float, readonly
 
-
-
-.. index::
-  single: total_marge field
-.. 
 
 
 
@@ -2081,20 +1216,10 @@ Object: Report deposit border
 
 
 
-.. index::
-  single: nb_obj field
-.. 
-
-
 
 
 :bord: Depositer Inventory, char, required
 
-
-
-.. index::
-  single: bord field
-.. 
 
 
 
@@ -2103,38 +1228,20 @@ Object: Report deposit border
 
 
 
-.. index::
-  single: moy_est field
-.. 
-
-
 
 
 :seller: Seller, many2one
 
 
 
-.. index::
-  single: seller field
-.. 
-
-
 
 Object: Object encoded
 ######################
 
-.. index::
-  single: Object encoded object
-.. 
 
 
 :gross_revenue: Gross revenue, float, readonly
 
-
-
-.. index::
-  single: gross_revenue field
-.. 
 
 
 
@@ -2143,20 +1250,10 @@ Object: Object encoded
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :obj_num: # of Encoded obj., integer, readonly
 
-
-
-.. index::
-  single: obj_num field
-.. 
 
 
 
@@ -2165,31 +1262,16 @@ Object: Object encoded
 
 
 
-.. index::
-  single: net_revenue field
-.. 
-
-
 
 
 :obj_margin: Net margin, float, readonly
 
 
 
-.. index::
-  single: obj_margin field
-.. 
-
-
 
 
 :obj_ret: # obj ret, integer, readonly
 
-
-
-.. index::
-  single: obj_ret field
-.. 
 
 
 
@@ -2198,20 +1280,10 @@ Object: Object encoded
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date: Create Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -2220,38 +1292,20 @@ Object: Object encoded
 
 
 
-.. index::
-  single: estimation field
-.. 
-
-
 
 
 :adj: Adj., integer, readonly
 
 
 
-.. index::
-  single: adj field
-.. 
-
-
 
 Object: Object encoded
 ######################
 
-.. index::
-  single: Object encoded object
-.. 
 
 
 :gross_revenue: Gross revenue, float, readonly
 
-
-
-.. index::
-  single: gross_revenue field
-.. 
 
 
 
@@ -2260,20 +1314,10 @@ Object: Object encoded
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :obj_num: # of Encoded obj., integer, readonly
 
-
-
-.. index::
-  single: obj_num field
-.. 
 
 
 
@@ -2282,20 +1326,10 @@ Object: Object encoded
 
 
 
-.. index::
-  single: net_revenue field
-.. 
-
-
 
 
 :obj_ret: # obj ret, integer, readonly
 
-
-
-.. index::
-  single: obj_ret field
-.. 
 
 
 
@@ -2304,20 +1338,10 @@ Object: Object encoded
 
 
 
-.. index::
-  single: obj_margin field
-.. 
-
-
 
 
 :date: Create Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -2326,38 +1350,20 @@ Object: Object encoded
 
 
 
-.. index::
-  single: estimation field
-.. 
-
-
 
 
 :adj: Adj., integer, readonly
 
 
 
-.. index::
-  single: adj field
-.. 
-
-
 
 Object: Unclassified objects 
 #############################
 
-.. index::
-  single: Unclassified objects  object
-.. 
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -2366,20 +1372,10 @@ Object: Unclassified objects
 
 
 
-.. index::
-  single: auction field
-.. 
-
-
 
 
 :obj_comm: Commission, boolean
 
-
-
-.. index::
-  single: obj_comm field
-.. 
 
 
 
@@ -2388,20 +1384,10 @@ Object: Unclassified objects
 
 
 
-.. index::
-  single: obj_price field
-.. 
-
-
 
 
 :lot_type: Object category, selection
 
-
-
-.. index::
-  single: lot_type field
-.. 
 
 
 
@@ -2410,20 +1396,10 @@ Object: Unclassified objects
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :lot_num: List Number, integer, required
 
-
-
-.. index::
-  single: lot_num field
-.. 
 
 
 
@@ -2432,20 +1408,10 @@ Object: Unclassified objects
 
 
 
-.. index::
-  single: lot_est1 field
-.. 
-
-
 
 
 :lot_est2: Maximum Estimation, float
 
-
-
-.. index::
-  single: lot_est2 field
-.. 
 
 
 
@@ -2454,29 +1420,14 @@ Object: Unclassified objects
 
 
 
-.. index::
-  single: ach_login field
-.. 
-
-
 
 
 :bord_vnd_id: Depositer Inventory, many2one, required
 
 
 
-.. index::
-  single: bord_vnd_id field
-.. 
-
-
 
 
 :obj_num: Catalog Number, integer
 
-
-
-.. index::
-  single: obj_num field
-.. 
 

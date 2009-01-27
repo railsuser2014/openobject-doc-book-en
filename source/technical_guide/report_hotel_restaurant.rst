@@ -49,18 +49,10 @@ Objects
 Object: Reservation By State
 ############################
 
-.. index::
-  single: Reservation By State object
-.. 
 
 
 :nbr: Reservation, integer, readonly
 
-
-
-.. index::
-  single: nbr field
-.. 
 
 
 
@@ -69,18 +61,8 @@ Object: Reservation By State
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :reservation_id: Reservation No, char, readonly
 
-
-
-.. index::
-  single: reservation_id field
-.. 
 

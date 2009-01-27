@@ -56,47 +56,26 @@ Objects
 Object: res.partner.contact.link.type
 #####################################
 
-.. index::
-  single: res.partner.contact.link.type object
-.. 
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: res.partner.contact.link
 ################################
 
-.. index::
-  single: res.partner.contact.link object
-.. 
 
 
 :current_contact_id: Current contact, many2one, required
 
 
 
-.. index::
-  single: current_contact_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -105,18 +84,8 @@ Object: res.partner.contact.link
 
 
 
-.. index::
-  single: contact_id field
-.. 
-
-
 
 
 :type_id: Type, many2one, required
 
-
-
-.. index::
-  single: type_id field
-.. 
 

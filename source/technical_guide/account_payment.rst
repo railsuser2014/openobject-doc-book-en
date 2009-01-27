@@ -59,29 +59,16 @@ Objects
 Object: Payment type
 ####################
 
-.. index::
-  single: Payment type object
-.. 
 
 
 :note: Description, text
 
     *Description of the payment type that will be shown in the invoices*
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -90,21 +77,11 @@ Object: Payment type
 
     *Specify the Code for Payment Type*
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
     *Payment Type*
-
-.. index::
-  single: name field
-.. 
-
 
 
 
@@ -112,28 +89,15 @@ Object: Payment type
 
 
 
-.. index::
-  single: suitable_bank_types field
-.. 
-
-
 
 Object: Payment mode
 ####################
 
-.. index::
-  single: Payment mode object
-.. 
 
 
 :journal: Journal, many2one, required
 
     *Cash Journal for the Payment Mode*
-
-.. index::
-  single: journal field
-.. 
-
 
 
 
@@ -141,21 +105,11 @@ Object: Payment mode
 
     *Select the Payment Type for the Payment Mode.*
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Name, char, required
 
     *Mode of Payment*
-
-.. index::
-  single: name field
-.. 
-
 
 
 
@@ -163,38 +117,20 @@ Object: Payment mode
 
     *Bank Account for the Payment Mode*
 
-.. index::
-  single: bank_id field
-.. 
-
-
 
 Object: Payment Order
 #####################
 
-.. index::
-  single: Payment Order object
-.. 
 
 
 :date_prefered: Preferred date, selection, required
 
     *Choose an option for the Payment Order:'Fixed' stands for a date specified by you.'Directly' stands for the direct execution.'Due date' stands for the scheduled date of execution.*
 
-.. index::
-  single: date_prefered field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -203,20 +139,10 @@ Object: Payment Order
 
 
 
-.. index::
-  single: reference field
-.. 
-
-
 
 
 :date_done: Execution date, date, readonly
 
-
-
-.. index::
-  single: date_done field
-.. 
 
 
 
@@ -225,20 +151,10 @@ Object: Payment Order
 
     *Select a date if you have chosen Preferred Date to be fixed.*
 
-.. index::
-  single: date_planned field
-.. 
-
-
 
 
 :payment_type_name: Payment type name, char, readonly
 
-
-
-.. index::
-  single: payment_type_name field
-.. 
 
 
 
@@ -247,31 +163,16 @@ Object: Payment Order
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :mode: Payment mode, many2one, required
 
     *Select the Payment Mode to be applied.*
 
-.. index::
-  single: mode field
-.. 
-
-
 
 
 :date_created: Creation date, date, readonly
 
-
-
-.. index::
-  single: date_created field
-.. 
 
 
 
@@ -280,20 +181,10 @@ Object: Payment Order
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 
 :total: Total, float, readonly
 
-
-
-.. index::
-  single: total field
-.. 
 
 
 
@@ -302,38 +193,20 @@ Object: Payment Order
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Name, char, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Payment Line
 ####################
 
-.. index::
-  single: Payment Line object
-.. 
 
 
 :company_currency: Company Currency, many2one, readonly
 
-
-
-.. index::
-  single: company_currency field
-.. 
 
 
 
@@ -342,20 +215,10 @@ Object: Payment Line
 
 
 
-.. index::
-  single: ml_inv_ref field
-.. 
-
-
 
 
 :create_date: Created, datetime, readonly
 
-
-
-.. index::
-  single: create_date field
-.. 
 
 
 
@@ -364,20 +227,10 @@ Object: Payment Line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :state: Communication Type, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -386,31 +239,16 @@ Object: Payment Line
 
 
 
-.. index::
-  single: order_id field
-.. 
-
-
 
 
 :communication: Communication, char, required
 
     *Used as the message between ordering customer and current company.Depicts 'What do you want to say to the receipent about this oder?'*
 
-.. index::
-  single: communication field
-.. 
-
-
 
 
 :bank_id: Destination Bank account, many2one
 
-
-
-.. index::
-  single: bank_id field
-.. 
 
 
 
@@ -419,20 +257,10 @@ Object: Payment Line
 
     *The successor message of Communication.*
 
-.. index::
-  single: communication2 field
-.. 
-
-
 
 
 :currency: Partner Currency, many2one, required
 
-
-
-.. index::
-  single: currency field
-.. 
 
 
 
@@ -441,21 +269,11 @@ Object: Payment Line
 
     *Payment amount in the company currency*
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :info_partner: Destination Account, text, readonly
 
     *Address of the Ordering Customer.*
-
-.. index::
-  single: info_partner field
-.. 
-
 
 
 
@@ -463,21 +281,11 @@ Object: Payment Line
 
     *If no payment date is specified, the bank will treat this payment line directly*
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :ml_date_created: Effective Date, date, readonly
 
     *Invoice Effective Date*
-
-.. index::
-  single: ml_date_created field
-.. 
-
 
 
 
@@ -485,21 +293,11 @@ Object: Payment Line
 
     *This Entry Line will be referred for the information of the ordering customer.*
 
-.. index::
-  single: move_line_id field
-.. 
-
-
 
 
 :info_owner: Owner Account, text, readonly
 
     *Address of the Main Partner*
-
-.. index::
-  single: info_owner field
-.. 
-
 
 
 
@@ -507,29 +305,14 @@ Object: Payment Line
 
     *Payment amount in the partner currency*
 
-.. index::
-  single: amount_currency field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
     *The Ordering Customer*
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :ml_maturity_date: Maturity Date, date, readonly
 
-
-
-.. index::
-  single: ml_maturity_date field
-.. 
 

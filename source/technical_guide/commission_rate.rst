@@ -61,18 +61,10 @@ Objects
 Object: Commission of month
 ###########################
 
-.. index::
-  single: Commission of month object
-.. 
 
 
 :inv_total: Invoice Amount, float, readonly
 
-
-
-.. index::
-  single: inv_total field
-.. 
 
 
 
@@ -81,20 +73,10 @@ Object: Commission of month
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :pdate: Invoice Paid Date, date, readonly
 
-
-
-.. index::
-  single: pdate field
-.. 
 
 
 
@@ -103,20 +85,10 @@ Object: Commission of month
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :productname: Product Name, char, readonly
 
-
-
-.. index::
-  single: productname field
-.. 
 
 
 
@@ -125,20 +97,10 @@ Object: Commission of month
 
 
 
-.. index::
-  single: commission field
-.. 
-
-
 
 
 :comrate: Commission Rate (%), float, readonly
 
-
-
-.. index::
-  single: comrate field
-.. 
 
 
 
@@ -147,20 +109,10 @@ Object: Commission of month
 
 
 
-.. index::
-  single: in_date field
-.. 
-
-
 
 
 :invno: Invoice Number, char, readonly
 
-
-
-.. index::
-  single: invno field
-.. 
 
 
 
@@ -169,18 +121,8 @@ Object: Commission of month
 
 
 
-.. index::
-  single: product_quantity field
-.. 
-
-
 
 
 :sono: Sales Order No, char, readonly
 
-
-
-.. index::
-  single: sono field
-.. 
 

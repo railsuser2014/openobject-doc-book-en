@@ -52,18 +52,10 @@ Objects
 Object: asterisk.server
 #######################
 
-.. index::
-  single: asterisk.server object
-.. 
 
 
 :host: Server Host, char, required
 
-
-
-.. index::
-  single: host field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: asterisk.server
 
 
 
-.. index::
-  single: login field
-.. 
-
-
 
 
 :password: Password, char
 
-
-
-.. index::
-  single: password field
-.. 
 
 
 
@@ -94,38 +76,20 @@ Object: asterisk.server
 
 
 
-.. index::
-  single: port field
-.. 
-
-
 
 
 :name: Asterisk Server, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: IP Phone
 ################
 
-.. index::
-  single: IP Phone object
-.. 
 
 
 :current_callerid: Current Caller, char
 
-
-
-.. index::
-  single: current_callerid field
-.. 
 
 
 
@@ -134,20 +98,10 @@ Object: IP Phone
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Phone Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -156,20 +110,10 @@ Object: IP Phone
 
 
 
-.. index::
-  single: ip field
-.. 
-
-
 
 
 :state: State, selection
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -178,18 +122,8 @@ Object: IP Phone
 
 
 
-.. index::
-  single: phoneid field
-.. 
-
-
 
 
 :asterisk_id: Asterisk Server, many2one, required
 
-
-
-.. index::
-  single: asterisk_id field
-.. 
 

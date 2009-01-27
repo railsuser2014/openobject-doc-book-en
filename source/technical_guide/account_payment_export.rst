@@ -55,18 +55,10 @@ Objects
 Object: Payment Export History
 ##############################
 
-.. index::
-  single: Payment Export History object
-.. 
 
 
 :create_uid: Creation User, many2one, required, readonly
 
-
-
-.. index::
-  single: create_uid field
-.. 
 
 
 
@@ -75,20 +67,10 @@ Object: Payment Export History
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :note: Creation Log, text, readonly
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -97,20 +79,10 @@ Object: Payment Export History
 
 
 
-.. index::
-  single: payment_order_id field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -119,27 +91,14 @@ Object: Payment Export History
 
 
 
-.. index::
-  single: file field
-.. 
-
-
 
 Object: Payment Method For Export
 #################################
 
-.. index::
-  single: Payment Method For Export object
-.. 
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -148,36 +107,18 @@ Object: Payment Method For Export
 
 
 
-.. index::
-  single: shortcut field
-.. 
-
-
 
 Object: Charges Codes For Export
 ################################
 
-.. index::
-  single: Charges Codes For Export object
-.. 
 
 
 :name: Code, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

@@ -52,18 +52,10 @@ Objects
 Object: Document directory
 ##########################
 
-.. index::
-  single: Document directory object
-.. 
 
 
 :create_uid: Creator, many2one, readonly
 
-
-
-.. index::
-  single: create_uid field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: Document directory
 
     *Use a domain if you want to apply an automatic filter on visible ressources.*
 
-.. index::
-  single: domain field
-.. 
-
-
 
 
 :group_ids: Groups, many2many
 
-
-
-.. index::
-  single: group_ids field
-.. 
 
 
 
@@ -94,21 +76,11 @@ Object: Document directory
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :ressource_type_id: Directories Mapped to Objects, many2one
 
     *Select an object here and Open ERP will create a mapping for each of these objects, using the given domain, when browsing through FTP.*
-
-.. index::
-  single: ressource_type_id field
-.. 
-
 
 
 
@@ -116,20 +88,10 @@ Object: Document directory
 
     *Check this if you want to use the same tree structure than the selected object in the system.*
 
-.. index::
-  single: ressource_tree field
-.. 
-
-
 
 
 :file_type: Content Type, char
 
-
-
-.. index::
-  single: file_type field
-.. 
 
 
 
@@ -138,20 +100,10 @@ Object: Document directory
 
 
 
-.. index::
-  single: version_regex field
-.. 
-
-
 
 
 :content_ids: Virtual Files, one2many
 
-
-
-.. index::
-  single: content_ids field
-.. 
 
 
 
@@ -160,20 +112,10 @@ Object: Document directory
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :file_ids: Files, one2many
 
-
-
-.. index::
-  single: file_ids field
-.. 
 
 
 
@@ -182,20 +124,10 @@ Object: Document directory
 
 
 
-.. index::
-  single: write_uid field
-.. 
-
-
 
 
 :parent_id: Parent Item, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -204,31 +136,16 @@ Object: Document directory
 
 
 
-.. index::
-  single: version_replace field
-.. 
-
-
 
 
 :ressource_parent_type_id: Parent Model, many2one
 
     *If you put an object here, this directory template will appear bellow all of these objects. Don't put a parent directory if you select a parent model.*
 
-.. index::
-  single: ressource_parent_type_id field
-.. 
-
-
 
 
 :write_date: Date Modified, datetime, readonly
 
-
-
-.. index::
-  single: write_date field
-.. 
 
 
 
@@ -237,20 +154,10 @@ Object: Document directory
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :ressource_id: Ressource ID, integer
 
-
-
-.. index::
-  single: ressource_id field
-.. 
 
 
 
@@ -259,20 +166,10 @@ Object: Document directory
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :versioning: Automatic Versioning, boolean
 
-
-
-.. index::
-  single: versioning field
-.. 
 
 
 
@@ -281,27 +178,14 @@ Object: Document directory
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Directory Content
 #########################
 
-.. index::
-  single: Directory Content object
-.. 
 
 
 :ics_object_id: Object, many2one
 
-
-
-.. index::
-  single: ics_object_id field
-.. 
 
 
 
@@ -310,20 +194,10 @@ Object: Directory Content
 
 
 
-.. index::
-  single: ics_field_ids field
-.. 
-
-
 
 
 :suffix: Suffix, char
 
-
-
-.. index::
-  single: suffix field
-.. 
 
 
 
@@ -332,20 +206,10 @@ Object: Directory Content
 
 
 
-.. index::
-  single: extension field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -354,20 +218,10 @@ Object: Directory Content
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :directory_id: Directory, many2one
 
-
-
-.. index::
-  single: directory_id field
-.. 
 
 
 
@@ -376,29 +230,14 @@ Object: Directory Content
 
 
 
-.. index::
-  single: ics_domain field
-.. 
-
-
 
 
 :include_name: Include Record Name, boolean
 
     *Check this field if you want that the name of the file start by the record name.*
 
-.. index::
-  single: include_name field
-.. 
-
-
 
 
 :report_id: Report, many2one
 
-
-
-.. index::
-  single: report_id field
-.. 
 

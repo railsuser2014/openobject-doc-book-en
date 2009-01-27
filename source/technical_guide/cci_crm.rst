@@ -52,18 +52,10 @@ Objects
 Object: Meeting Confidential Info
 #################################
 
-.. index::
-  single: Meeting Confidential Info object
-.. 
 
 
 :group: Group, selection, required
 
-
-
-.. index::
-  single: group field
-.. 
 
 
 
@@ -72,18 +64,8 @@ Object: Meeting Confidential Info
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text, required
 
-
-
-.. index::
-  single: description field
-.. 
 

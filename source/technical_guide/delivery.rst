@@ -57,18 +57,10 @@ Objects
 Object: Carrier and delivery grids
 ##################################
 
-.. index::
-  single: Carrier and delivery grids object
-.. 
 
 
 :product_id: Delivery Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -77,31 +69,16 @@ Object: Carrier and delivery grids
 
 
 
-.. index::
-  single: price field
-.. 
-
-
 
 
 :grids_id: Delivery Grids, one2many
 
 
 
-.. index::
-  single: grids_id field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -110,38 +87,20 @@ Object: Carrier and delivery grids
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :name: Carrier, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Delivery Grid
 #####################
 
-.. index::
-  single: Delivery Grid object
-.. 
 
 
 :name: Grid Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -150,20 +109,10 @@ Object: Delivery Grid
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :state_ids: States, many2many
 
-
-
-.. index::
-  single: state_ids field
-.. 
 
 
 
@@ -172,20 +121,10 @@ Object: Delivery Grid
 
 
 
-.. index::
-  single: country_ids field
-.. 
-
-
 
 
 :carrier_id: Carrier, many2one, required
 
-
-
-.. index::
-  single: carrier_id field
-.. 
 
 
 
@@ -194,20 +133,10 @@ Object: Delivery Grid
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :zip_from: Start Zip, char
 
-
-
-.. index::
-  single: zip_from field
-.. 
 
 
 
@@ -216,38 +145,20 @@ Object: Delivery Grid
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 
 :zip_to: To Zip, char
 
 
 
-.. index::
-  single: zip_to field
-.. 
-
-
 
 Object: Delivery line of grid
 #############################
 
-.. index::
-  single: Delivery line of grid object
-.. 
 
 
 :list_price: Sale Price, float, required
 
-
-
-.. index::
-  single: list_price field
-.. 
 
 
 
@@ -256,20 +167,10 @@ Object: Delivery line of grid
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :price_type: Price Type, selection, required
 
-
-
-.. index::
-  single: price_type field
-.. 
 
 
 
@@ -278,20 +179,10 @@ Object: Delivery line of grid
 
 
 
-.. index::
-  single: max_value field
-.. 
-
-
 
 
 :standard_price: Cost Price, float, required
 
-
-
-.. index::
-  single: standard_price field
-.. 
 
 
 
@@ -300,20 +191,10 @@ Object: Delivery line of grid
 
 
 
-.. index::
-  single: grid_id field
-.. 
-
-
 
 
 :variable_factor: Variable Factor, selection, required
 
-
-
-.. index::
-  single: variable_factor field
-.. 
 
 
 
@@ -322,18 +203,8 @@ Object: Delivery line of grid
 
 
 
-.. index::
-  single: operator field
-.. 
-
-
 
 
 :type: Variable, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 

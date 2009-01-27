@@ -45,18 +45,10 @@ Objects
 Object: Index
 #############
 
-.. index::
-  single: Index object
-.. 
 
 
 :rate_ids: Rates, one2many
 
-
-
-.. index::
-  single: rate_ids field
-.. 
 
 
 
@@ -65,20 +57,10 @@ Object: Index
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Index name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -87,20 +69,10 @@ Object: Index
 
 
 
-.. index::
-  single: rounding field
-.. 
-
-
 
 
 :rate: Current rate, float, readonly
 
-
-
-.. index::
-  single: rate field
-.. 
 
 
 
@@ -109,27 +81,14 @@ Object: Index
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 Object: Index Rate
 ##################
 
-.. index::
-  single: Index Rate object
-.. 
 
 
 :rate: Rate, float, required
 
-
-
-.. index::
-  single: rate field
-.. 
 
 
 
@@ -138,18 +97,8 @@ Object: Index Rate
 
 
 
-.. index::
-  single: index_id field
-.. 
-
-
 
 
 :name: Date, date, required
 
-
-
-.. index::
-  single: name field
-.. 
 

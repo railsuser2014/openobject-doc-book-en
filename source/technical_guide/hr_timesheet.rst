@@ -67,18 +67,10 @@ Objects
 Object: Timesheet line
 ######################
 
-.. index::
-  single: Timesheet line object
-.. 
 
 
 :code: Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -87,20 +79,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :general_account_id: General Account, many2one, required
 
-
-
-.. index::
-  single: general_account_id field
-.. 
 
 
 
@@ -109,20 +91,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: line_id field
-.. 
-
-
 
 
 :date: Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -131,20 +103,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: move_id field
-.. 
-
-
 
 
 :name: Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -153,20 +115,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -175,20 +127,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: product_uom_id field
-.. 
-
-
 
 
 :journal_id: Analytic Journal, many2one, required
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -197,20 +139,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: to_invoice field
-.. 
-
-
 
 
 :amount: Amount, float, required
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -219,20 +151,10 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: unit_amount field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one
 
-
-
-.. index::
-  single: invoice_id field
-.. 
 
 
 
@@ -241,29 +163,14 @@ Object: Timesheet line
 
 
 
-.. index::
-  single: sheet_id field
-.. 
-
-
 
 
 :ref: Ref., char
 
 
 
-.. index::
-  single: ref field
-.. 
-
-
 
 
 :invoice_line_id: Invoice Line, many2one
 
-
-
-.. index::
-  single: invoice_line_id field
-.. 
 

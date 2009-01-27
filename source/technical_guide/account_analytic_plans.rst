@@ -83,18 +83,10 @@ Objects
 Object: Analytic Plans
 ######################
 
-.. index::
-  single: Analytic Plans object
-.. 
 
 
 :plan_ids: Analytic Plans, one2many
 
-
-
-.. index::
-  single: plan_ids field
-.. 
 
 
 
@@ -103,38 +95,20 @@ Object: Analytic Plans
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :default_instance_id: Default Entries, many2one
 
 
 
-.. index::
-  single: default_instance_id field
-.. 
-
-
 
 Object: Analytic Plan Lines
 ###########################
 
-.. index::
-  single: Analytic Plan Lines object
-.. 
 
 
 :min_required: Minimum Allowed (%), float
 
-
-
-.. index::
-  single: min_required field
-.. 
 
 
 
@@ -143,20 +117,10 @@ Object: Analytic Plan Lines
 
 
 
-.. index::
-  single: plan_id field
-.. 
-
-
 
 
 :name: Plan Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -165,20 +129,10 @@ Object: Analytic Plan Lines
 
 
 
-.. index::
-  single: max_required field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -187,27 +141,14 @@ Object: Analytic Plan Lines
 
     *Root account of this plan.*
 
-.. index::
-  single: root_analytic_id field
-.. 
-
-
 
 Object: Analytic Plan Instance
 ##############################
 
-.. index::
-  single: Analytic Plan Instance object
-.. 
 
 
 :account5_ids: Account5 Id, one2many
 
-
-
-.. index::
-  single: account5_ids field
-.. 
 
 
 
@@ -216,20 +157,10 @@ Object: Analytic Plan Instance
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :plan_id: Model's Plan, many2one
 
-
-
-.. index::
-  single: plan_id field
-.. 
 
 
 
@@ -238,20 +169,10 @@ Object: Analytic Plan Instance
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account3_ids: Account3 Id, one2many
 
-
-
-.. index::
-  single: account3_ids field
-.. 
 
 
 
@@ -260,20 +181,10 @@ Object: Analytic Plan Instance
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :account6_ids: Account6 Id, one2many
 
-
-
-.. index::
-  single: account6_ids field
-.. 
 
 
 
@@ -282,20 +193,10 @@ Object: Analytic Plan Instance
 
 
 
-.. index::
-  single: account_ids field
-.. 
-
-
 
 
 :account4_ids: Account4 Id, one2many
 
-
-
-.. index::
-  single: account4_ids field
-.. 
 
 
 
@@ -304,38 +205,20 @@ Object: Analytic Plan Instance
 
 
 
-.. index::
-  single: account2_ids field
-.. 
-
-
 
 
 :account1_ids: Account1 Id, one2many
 
 
 
-.. index::
-  single: account1_ids field
-.. 
-
-
 
 Object: Analytic Instance Line
 ##############################
 
-.. index::
-  single: Analytic Instance Line object
-.. 
 
 
 :analytic_account_id: Analytic Account, many2one, required
 
-
-
-.. index::
-  single: analytic_account_id field
-.. 
 
 
 
@@ -344,18 +227,8 @@ Object: Analytic Instance Line
 
 
 
-.. index::
-  single: rate field
-.. 
-
-
 
 
 :plan_id: Plan Id, many2one
 
-
-
-.. index::
-  single: plan_id field
-.. 
 

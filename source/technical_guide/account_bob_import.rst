@@ -54,29 +54,16 @@ Objects
 Object: config.bob.import
 #########################
 
-.. index::
-  single: config.bob.import object
-.. 
 
 
 :path: Path for BOB Folder, char
 
     *Supply a path that is a Bob Installation Folder.*
 
-.. index::
-  single: path field
-.. 
-
-
 
 
 :company_id: Company, many2one, required
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -85,36 +72,18 @@ Object: config.bob.import
 
     *Upload a .zip file containing information of BOB Installation'*
 
-.. index::
-  single: zipped_file field
-.. 
-
-
 
 
 :location: Location, selection, required
 
     *If this machine is the server, select 'locally' as the location.If this is the client machine, create a zip of the 'Bob' folder placed in Root(Drive Letter)://Program Files/Bob.Upload it and follow the further instructions.*
 
-.. index::
-  single: location field
-.. 
-
-
 
 Object: config.path.folder
 ##########################
 
-.. index::
-  single: config.path.folder object
-.. 
 
 
 :folder: Folder, selection, required
 
-
-
-.. index::
-  single: folder field
-.. 
 

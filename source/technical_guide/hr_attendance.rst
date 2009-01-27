@@ -50,18 +50,10 @@ Objects
 Object: Action reason
 #####################
 
-.. index::
-  single: Action reason object
-.. 
 
 
 :name: Reason, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -70,27 +62,14 @@ Object: Action reason
 
 
 
-.. index::
-  single: action_type field
-.. 
-
-
 
 Object: Attendance
 ##################
 
-.. index::
-  single: Attendance object
-.. 
 
 
 :action: Action, selection, required
 
-
-
-.. index::
-  single: action field
-.. 
 
 
 
@@ -99,20 +78,10 @@ Object: Attendance
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :sheet_id: Sheet, many2one, readonly
 
-
-
-.. index::
-  single: sheet_id field
-.. 
 
 
 
@@ -121,18 +90,8 @@ Object: Attendance
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :action_desc: Action reason, many2one
 
-
-
-.. index::
-  single: action_desc field
-.. 
 
