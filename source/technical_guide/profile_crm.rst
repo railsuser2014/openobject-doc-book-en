@@ -11,24 +11,37 @@ Description
 -----------
 
 ::
-  
-    Profile for CRM
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for CRM
 
 Dependencies
 ------------
 
- * crm_vertical - uninstalled
+ * crm_vertical - installed
+ * board_crm_configuration - installed
 
- * board_crm_configuration - uninstalled
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

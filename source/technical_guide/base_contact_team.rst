@@ -1,0 +1,71 @@
+
+Module Base Contact Team (*base_contact_team*)
+==============================================
+:Module: base_contact_team
+:Name: Base Contact Team
+:Version: 5.0.0.1
+:Directory: base_contact_team
+:Web: http://www.openerp.com
+
+Description
+-----------
+
+::
+
+  With this module will help you to manages teams of contacts for different purposes.
+
+Dependencies
+------------
+
+ * base_contact - installed
+
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Partners/Teams
+ * Partners/Teams/New Team
+
+Views
+-----
+
+ * \* INHERIT view.partner.job.inherited (form)
+ * res.partner.team.form (form)
+ * res.partner.team.tree (tree)
+
+
+Objects
+-------
+
+Object: res.partner.team
+########################
+
+.. index::
+  single: res.partner.team object
+.. 
+
+
+:name: Name, char, required
+
+
+
+.. index::
+  single: name field
+.. 
+
+
+
+
+:description: Description, text
+
+
+
+.. index::
+  single: description field
+.. 
+

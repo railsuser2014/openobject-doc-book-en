@@ -11,24 +11,38 @@ Description
 -----------
 
 ::
-  
-    
-      * This module generate the Technical Guides of selected modules in Restructured Text format.
-      
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  * This module generate the Technical Guides of selected modules in Restructured Text format (RST)
+      * It uses the Sphinx (http://sphinx.pocoo.org) implementation of RST
+      * It creates a tarball (.tgz file suffix) containing an index file and one file per module
 
 Dependencies
 ------------
 
  * base - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
+
 Objects
 -------
+
+None

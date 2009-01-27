@@ -11,28 +11,39 @@ Description
 -----------
 
 ::
-  
-    Profile for Auction house
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for Auction house
 
 Dependencies
 ------------
 
- * auction - uninstalled
-
- * board_auction - uninstalled
-
+ * auction - installed
+ * board_auction - installed
  * account - installed
+ * hr_timesheet_sheet - installed
 
- * hr_timesheet_sheet - uninstalled
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

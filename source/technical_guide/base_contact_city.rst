@@ -1,0 +1,50 @@
+
+Module City for base_contat (*base_contact_city*)
+=================================================
+:Module: base_contact_city
+:Name: City for base_contat
+:Version: 5.0.1.0
+:Directory: base_contact_city
+:Web: 
+
+Description
+-----------
+
+::
+
+  Zip code, city, state and country fields are replaced with a location field in partner form when base_contact module is installed.
+  This module helps to keep homogenous address data in our database.
+
+Dependencies
+------------
+
+ * base - installed
+ * base_contact - installed
+ * city - installed
+
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+ * \* INHERIT partners_form_inherit_add_location (form)
+ * \* INHERIT partners_form_inherit_del_city (form)
+ * \* INHERIT partners_form_inherit_del_zip (form)
+ * \* INHERIT partners_form_inherit_del_state (form)
+
+
+Objects
+-------
+
+None

@@ -3,7 +3,7 @@ Module report_account_analytic (*account_analytic_analysis*)
 ============================================================
 :Module: account_analytic_analysis
 :Name: report_account_analytic
-:Version: False
+:Version: 5.0.1.1
 :Directory: account_analytic_analysis
 :Web: http://www.camptocamp.com/
 
@@ -11,30 +11,128 @@ Description
 -----------
 
 ::
-  
-    Modify account analytic view to show
+
+  Modify account analytic view to show
   important data for project manager of services companies.
   Add menu to show relevant information for each manager.
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
  * account - installed
+ * hr_timesheet - installed
+ * hr_timesheet_invoice - installed
+ * project - installed
 
- * hr_timesheet - uninstalled
+Reports
+-------
 
- * hr_timesheet_invoice - uninstalled
+None
 
- * project - uninstalled
+
+Menus
+-------
+
+ * Project Management/Financial Project Management
+ * Project Management/Financial Project Management/Analytic Accounts
+ * Project Management/Financial Project Management/Invoicing
+ * Project Management/Financial Project Management/Analytic Accounts/My Accounts
+ * Project Management/Financial Project Management/Invoicing/All Uninvoiced Entries
+ * Project Management/Financial Project Management/Invoicing/My Uninvoiced Entries
+ * Project Management/Financial Project Management/Analytic Accounts/My Accounts/My Current Accounts
+ * Project Management/Financial Project Management/Analytic Accounts/My Accounts/My Pending Accounts
+ * Project Management/Financial Project Management/Analytic Accounts/New Analytic Account
+ * Project Management/Financial Project Management/Analytic Accounts/All Analytic Accounts
+ * Project Management/Financial Project Management/Invoicing/Overpassed Accounts
+ * Project Management/Financial Project Management/Analytic Accounts/All Analytic Accounts/Current Analytic Accounts
+ * Project Management/Financial Project Management/Analytic Accounts/All Analytic Accounts/Pending Analytic Accounts
+
+Views
+-----
+
+ * \* INHERIT account.analytic.account.tree (tree)
+ * \* INHERIT account.analytic.account.tree (tree)
+ * account.analytic.account.simplified.tree (tree)
+
 
 Objects
 -------
+
+Object: Hours summary by user
+#############################
+
+.. index::
+  single: Hours summary by user object
+.. 
+
+
+:account_id: Analytic Account, many2one, readonly
+
+
+
+.. index::
+  single: account_id field
+.. 
+
+
+
+
+:unit_amount: Total Time, float, readonly
+
+
+
+.. index::
+  single: unit_amount field
+.. 
+
+
+
+
+:user: User, many2one
+
+
+
+.. index::
+  single: user field
+.. 
+
+
+
+Object: Hours summary by month
+##############################
+
+.. index::
+  single: Hours summary by month object
+.. 
+
+
+:account_id: Analytic Account, many2one, readonly
+
+
+
+.. index::
+  single: account_id field
+.. 
+
+
+
+
+:unit_amount: Total Time, float, readonly
+
+
+
+.. index::
+  single: unit_amount field
+.. 
+
+
+
+
+:month: Month, char, readonly
+
+
+
+.. index::
+  single: month field
+.. 
+

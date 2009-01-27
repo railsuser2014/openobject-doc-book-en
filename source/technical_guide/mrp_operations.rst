@@ -3,7 +3,7 @@ Module Workcenter Production start end workflow (*mrp_operations*)
 ==================================================================
 :Module: mrp_operations
 :Name: Workcenter Production start end workflow
-:Version: False
+:Version: 5.0.1.0
 :Directory: mrp_operations
 :Web: http://www.openerp.com
 
@@ -11,9 +11,8 @@ Description
 -----------
 
 ::
-  
-    
-       This module adds state, date_start,date_stop in production order operation lines
+
+  This module adds state, date_start,date_stop in production order operation lines
        (in the "Workcenters" tab)
        State: draft, confirm, done, cancel
        When finishing/confirming,cancelling production orders set all state lines to the according state
@@ -35,30 +34,157 @@ Description
   
       The field delay is the delay(stop date - start date).
       So that we can compare the theoretic delay and real delay.
-  
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
  * stock - installed
-
- * hr - uninstalled
-
- * purchase - uninstalled
-
+ * hr - installed
+ * purchase - installed
  * product - installed
+ * mrp - installed
 
- * mrp - uninstalled
+Reports
+-------
+
+ * Workcenters Barcode
+
+ * Start/Stop Barcode
+
+Menus
+-------
+
+ * Manufacturing/All Work Order
+ * Manufacturing/All Work Order/Work Orders to Do
+ * Manufacturing/All Work Order/Waiting Work Orders
+ * Manufacturing/Configuration/Start - Stop Codes
+ * Manufacturing/Work Order Events Using Bar Codes
+
+Views
+-----
+
+ * \* INHERIT mrp.production.workcenter.line.inherit.tree (tree)
+ * \* INHERIT mrp.production.workcenter.line.form.inherit (form)
+ * mrp.production.workcenter.line.calendar (calendar)
+ * mrp.production.workcenter.line.gantt (gantt)
+ * mrp.production.code.tree (tree)
+ * mrp.production.code.form (form)
+ * mrp.production.operation.tree (tree)
+ * graph.in.hrs.workcenter (graph)
+ * mrp.perations.calendar (calendar)
+
 
 Objects
 -------
+
+Object: mrp_operations.operation.code
+#####################################
+
+.. index::
+  single: mrp_operations.operation.code object
+.. 
+
+
+:start_stop: Status, selection, required
+
+
+
+.. index::
+  single: start_stop field
+.. 
+
+
+
+
+:code: Code, char, required
+
+
+
+.. index::
+  single: code field
+.. 
+
+
+
+
+:name: Operation Name, char, required
+
+
+
+.. index::
+  single: name field
+.. 
+
+
+
+Object: mrp_operations.operation
+################################
+
+.. index::
+  single: mrp_operations.operation object
+.. 
+
+
+:code_id: Code, many2one, required
+
+
+
+.. index::
+  single: code_id field
+.. 
+
+
+
+
+:date_finished: End Date, datetime
+
+
+
+.. index::
+  single: date_finished field
+.. 
+
+
+
+
+:date_start: Start Date, datetime
+
+
+
+.. index::
+  single: date_start field
+.. 
+
+
+
+
+:production_id: Production, many2one, required
+
+
+
+.. index::
+  single: production_id field
+.. 
+
+
+
+
+:order_date: Order Date, date, readonly
+
+
+
+.. index::
+  single: order_date field
+.. 
+
+
+
+
+:workcenter_id: Workcenter, many2one, required
+
+
+
+.. index::
+  single: workcenter_id field
+.. 
+

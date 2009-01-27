@@ -11,81 +11,72 @@ Description
 -----------
 
 ::
-  
-    This module allows your user to easily and efficiently participate in the innovation of the enterprise. It allows everybody to express ideas about different subjects. Then, others users can comment these ideas and vote for particular ideas. Each idea as a score based on the different votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check the menu 'Ideas' in the 'Tools' main menu.
 
-Reports
--------
-
-Menus
--------
-
- * Tools
-
- * Tools/Configuration
-
- * Tools/Configuration/Ideas
-
- * Tools/Configuration/Ideas/Categories
-
- * Tools/Ideas
-
- * Tools/Ideas/Ideas by Categories
-
- * Tools/Ideas/All Ideas
-
- * Tools/Ideas/All Ideas/Open Ideas
-
- * Tools/Ideas/My Ideas
-
- * Tools/Ideas/My Ideas/My Draft Ideas
-
- * Tools/Ideas/My Ideas/My Open Ideas
-
- * Tools/Ideas/Reporting
-
- * Tools/Ideas/Reporting/Vote Statistics
-
- * Tools/Configuration/Ideas/All Votes
-
-Views
------
-
- * idea.category.form (form)
-
- * idea.category.tree (tree)
-
- * idea.stat.form (form)
-
- * idea.vote.tree (tree)
-
- * idea.vote.form (form)
-
- * idea.idea.form (form)
-
- * idea.idea.tree (tree)
-
- * idea.comment.tree (tree)
-
- * idea.vote_stat.graph (graph)
-
- * idea.vote.stat.form (form)
-
- * idea.vote.stat.tree (tree)
+  This module allows your user to easily and efficiently participate in the innovation of the enterprise. It allows everybody to express ideas about different subjects. Then, others users can comment these ideas and vote for particular ideas. Each idea as a score based on the different votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check the menu 'Ideas' in the 'Tools' main menu.
 
 Dependencies
 ------------
 
  * base - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Tools
+ * Tools/Configuration
+ * Tools/Configuration/Ideas
+ * Tools/Configuration/Ideas/Categories
+ * Tools/Ideas
+ * Tools/Ideas/Ideas by Categories
+ * Tools/Ideas/All Ideas
+ * Tools/Ideas/All Ideas/Open Ideas
+ * Tools/Ideas/My Ideas
+ * Tools/Ideas/My Ideas/My Draft Ideas
+ * Tools/Ideas/My Ideas/My Open Ideas
+ * Tools/Ideas/Reporting
+ * Tools/Ideas/Reporting/Vote Statistics
+ * Tools/Configuration/Ideas/All Votes
+
+Views
+-----
+
+ * idea.category.form (form)
+ * idea.category.tree (tree)
+ * idea.stat.form (form)
+ * idea.vote.tree (tree)
+ * idea.vote.form (form)
+ * idea.idea.form (form)
+ * idea.idea.tree (tree)
+ * idea.comment.tree (tree)
+ * idea.vote_stat.graph (graph)
+ * idea.vote.stat.form (form)
+ * idea.vote.stat.tree (tree)
+
+
 Objects
 -------
 
-Category for an idea
-####################
+Object: Category for an idea
+############################
+
+.. index::
+  single: Category for an idea object
+.. 
 
 
 :parent_id: Parent Categories, many2one
+
+
+
+.. index::
+  single: parent_id field
+.. 
 
 
 
@@ -94,8 +85,20 @@ Category for an idea
 
 
 
+.. index::
+  single: child_ids field
+.. 
+
+
+
 
 :name: Category, char, required
+
+
+
+.. index::
+  single: name field
+.. 
 
 
 
@@ -104,17 +107,38 @@ Category for an idea
 
 
 
+.. index::
+  single: summary field
+.. 
 
-idea.idea
-#########
+
+
+Object: idea.idea
+#################
+
+.. index::
+  single: idea.idea object
+.. 
 
 
 :category_id: Category, many2one, required
 
 
 
+.. index::
+  single: category_id field
+.. 
+
+
+
 
 :create_date: Creation date, datetime, readonly
+
+
+
+.. index::
+  single: create_date field
+.. 
 
 
 
@@ -123,8 +147,20 @@ idea.idea
 
     *Content of the idea*
 
+.. index::
+  single: description field
+.. 
+
+
+
 
 :title: Idea Summary, char, required
+
+
+
+.. index::
+  single: title field
+.. 
 
 
 
@@ -133,8 +169,20 @@ idea.idea
 
 
 
+.. index::
+  single: my_vote field
+.. 
+
+
+
 
 :vote_avg: Average Score, float, readonly
+
+
+
+.. index::
+  single: vote_avg field
+.. 
 
 
 
@@ -143,8 +191,20 @@ idea.idea
 
 
 
+.. index::
+  single: vote_ids field
+.. 
+
+
+
 
 :state: Status, selection, readonly
+
+
+
+.. index::
+  single: state field
+.. 
 
 
 
@@ -153,8 +213,20 @@ idea.idea
 
 
 
+.. index::
+  single: stat_vote_ids field
+.. 
+
+
+
 
 :count_comments: Count of comments, integer, readonly
+
+
+
+.. index::
+  single: count_comments field
+.. 
 
 
 
@@ -163,8 +235,20 @@ idea.idea
 
 
 
+.. index::
+  single: user_id field
+.. 
+
+
+
 
 :comment_ids: Comments, one2many
+
+
+
+.. index::
+  single: comment_ids field
+.. 
 
 
 
@@ -173,17 +257,38 @@ idea.idea
 
 
 
+.. index::
+  single: count_votes field
+.. 
 
-Comments
-########
+
+
+Object: Comments
+################
+
+.. index::
+  single: Comments object
+.. 
 
 
 :content: Comment, text, required
 
 
 
+.. index::
+  single: content field
+.. 
+
+
+
 
 :idea_id: Idea, many2one, required
+
+
+
+.. index::
+  single: idea_id field
+.. 
 
 
 
@@ -192,17 +297,38 @@ Comments
 
 
 
+.. index::
+  single: create_date field
+.. 
+
+
+
 
 :user_id: User, many2one, required
 
 
 
+.. index::
+  single: user_id field
+.. 
 
-idea.vote
-#########
+
+
+Object: idea.vote
+#################
+
+.. index::
+  single: idea.vote object
+.. 
 
 
 :idea_id: Idea, many2one, required
+
+
+
+.. index::
+  single: idea_id field
+.. 
 
 
 
@@ -211,17 +337,38 @@ idea.vote
 
 
 
+.. index::
+  single: score field
+.. 
+
+
+
 
 :user_id: User, many2one
 
 
 
+.. index::
+  single: user_id field
+.. 
 
-Idea Votes Statistics
-#####################
+
+
+Object: Idea Votes Statistics
+#############################
+
+.. index::
+  single: Idea Votes Statistics object
+.. 
 
 
 :nbr: Number of Votes, integer, readonly
+
+
+
+.. index::
+  single: nbr field
+.. 
 
 
 
@@ -230,7 +377,18 @@ Idea Votes Statistics
 
 
 
+.. index::
+  single: score field
+.. 
+
+
+
 
 :idea_id: Idea, many2one, readonly
 
+
+
+.. index::
+  single: idea_id field
+.. 
 

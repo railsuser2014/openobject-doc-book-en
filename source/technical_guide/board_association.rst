@@ -3,7 +3,7 @@ Module Dashboard for Associations (*board_association*)
 =======================================================
 :Module: board_association
 :Name: Dashboard for Associations
-:Version: False
+:Version: 5.0.1.0
 :Directory: board_association
 :Web: 
 
@@ -11,30 +11,35 @@ Description
 -----------
 
 ::
-  
-    
+
   This module implements a dashboard for associations.
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
- * event - uninstalled
+ * event - installed
+ * membership - installed
+ * board - installed
+ * project - installed
 
- * membership - uninstalled
+Reports
+-------
 
- * board - uninstalled
+None
 
- * project - uninstalled
+
+Menus
+-------
+
+ * Dashboards/Associations
+
+Views
+-----
+
+ * board.associations.manager.form (form)
+
 
 Objects
 -------
+
+None

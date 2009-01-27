@@ -3,7 +3,7 @@ Module Report designer interface module (*base_report_designer*)
 ================================================================
 :Module: base_report_designer
 :Name: Report designer interface module
-:Version: False
+:Version: 5.0.0.1
 :Directory: base_report_designer
 :Web: http://www.openerp.com
 
@@ -11,25 +11,35 @@ Description
 -----------
 
 ::
-  
-    
+
   This module adds wizards to import/export documents to be edited in
   OpenOffice.
-  
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
  * base - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Administration/Customization/Report Designer
+
+Views
+-----
+
+
+None
+
+
+
 Objects
 -------
+
+None

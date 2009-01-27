@@ -3,7 +3,7 @@ Module Print Delivery Order (*sale_delivery_report*)
 ====================================================
 :Module: sale_delivery_report
 :Name: Print Delivery Order
-:Version: False
+:Version: 5.0.1.0
 :Directory: sale_delivery_report
 :Web: 
 
@@ -11,24 +11,36 @@ Description
 -----------
 
 ::
-  
-    Allows to print a delivery order.
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Allows to print a delivery order.
 
 Dependencies
 ------------
 
- * sale - uninstalled
+ * sale - installed
+ * delivery - installed
 
- * delivery - uninstalled
+Reports
+-------
+
+ * Delivery order
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

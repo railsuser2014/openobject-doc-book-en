@@ -5,6 +5,9 @@ Management of Sales
 
 *It doesn't look at customer relations and pre-sales. These functions are handled by the CRM (Customer Relationship Management) modules.*
 
+Estimation of the order
+-----------------------
+
 In Open ERP a quotation and an order are handled by the same object, but in different states. You can consider an order to be a quotation that has evolved because it has been confirmed by the customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled. All of the orders and quotations in the system can be reached using the menu *Sales Management > Orders*.
 
 Entering Quotation details
@@ -47,9 +50,9 @@ You can modify any of these fields on the order as you go.
 
 You can also indicate an analytic account for your order. This account will be used during invoicing to automatically generate accounting entries corresponding to the invoice. This is extremely useful for assigning revenues to the project or case specified by this order.
 
-  ..tip::   *Point*   Analytic Accounts
+  .. tip::   *Point*   Analytic Accounts
 
-If you're managing by task, the analytic account to be selected is the one that corresponds to the project for the order. The sale carried out by the order can be allotted to the project so that profitability calculations can be made.
+        If you're managing by task, the analytic account to be selected is the one that corresponds to the project for the order. The sale carried out by the order can be allotted to the project so that profitability calculations can be made.
 
 Once the information has been entered, you can enter data for the order lines. To do that, create a new order line as shown in the figure below:
 
@@ -77,7 +80,7 @@ First of all select the product that is to be sold to the customer. Open ERP giv
 
 When the product that's to be sold to the customer has been selected, Open ERP automatically completes all the other required fields: price, unit of measure, description, discount, lead times, applicable taxes, default packaging and the product description. All of this information comes from the product form.
 
-  ..tip::   *Point*   Visible Discount
+  .. tip::   *Point*   Visible Discount
 
     By default, the customer discount is directly included in the sale price to the customer. He'll then see a discount of 0% but a reduced unit procie. If you install the module *product_visible_discount* you can configure whether you want to make the discount explicitly visible on the order form, or just reduce the unit price.
 
@@ -88,7 +91,7 @@ In the form, the selected product is presented in the language of the user so th
 
 *Sale of a product in a partner language that differs from the user language.*
 
-  ..tip::   *Point*   Exceptional Sales
+  .. tip::   *Point*   Exceptional Sales
 
     If a product's only sold to a customer once, you don't have to enter data into a complete new product form just for that sale. You can manually complete all the information in the order without putting it into a product: description, price, quantity, lead time, taxes. In that case Open ERP won't generate a delivery note because the product isn't held in stock.
 
@@ -217,7 +220,7 @@ Depending on the configuration of the order, several different possible conseque
 
 * Shipping Policy: invoicing based on order items, delivery and manual invoice, automatic invoicing after delivery.
 
-  ..tip::   *Note*   Simplified view
+  .. tip::   *Note*   Simplified view
 
     If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
 
@@ -295,7 +298,7 @@ To define a new delivery grid, use the menu *Stock Management > Configuration > 
 
 You must then set the rules for calculating the price of transport in the first tab *Transprt Grid*. A rule must first of all have a name. Then set the condition for which this rule is applicable, for example Weight < 0.5kg.
 
-  ..tip::   *Note*   Weights
+  .. tip::   *Note*   Weights
 
     Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
 

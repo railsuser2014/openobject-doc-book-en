@@ -7,83 +7,269 @@ Module Technical Guide: Introspection report on objects
 .. toctree::
     :maxdepth: 1
 
+    Ampco
     account
+    account_4_2_l10n_ch
     account_analytic_analysis
     account_analytic_default
+    account_analytic_package
     account_analytic_plans
+    account_analytic_progress
+    account_asset
     account_balance
+    account_bob_import
     account_budget
+    account_cash_discount
     account_chart
+    account_coda
+    account_coda_2_1_d
     account_date_check
     account_followup
+    account_india_ledger
+    account_indian_report
+    account_invoice_analytic_required
     account_invoice_layout
+    account_invoice_number
+    account_invoice_payment_term
+    account_invoice_salesman
+    account_journal_visibility
+    account_l10nbe_domiciliation
     account_payment
+    account_payment_export
+    account_payment_extension
+    account_regularization
     account_report
     account_reporting
+    account_reverse
+    account_simulation
     account_tax_include
     account_voucher
+    airport
     analytic_journal_billing_rate
+    analytic_partners
     analytic_user_function
+    asterisk
     auction
     audittrail
+    auto_email_account
+    auto_email_sale
+    auto_email_stock
     base
     base_contact
+    base_contact_city
+    base_contact_team
+    base_create_menu
+    base_crypt
     base_iban
+    base_language
     base_module_doc_rst
     base_module_merge
     base_module_publish
+    base_module_quality
     base_module_record
+    base_partner_relation
+    base_partner_sequence
+    base_partner_surname
     base_report_creator
     base_report_designer
+    base_report_model
     base_setup
+    base_translation
+    base_url_menu
     base_vat
     board
     board_account
     board_association
     board_auction
     board_crm_configuration
+    board_dm
     board_document
     board_manufacturing
     board_project
     board_sale
+    bookstore
+    cci_account
+    cci_audittrail
+    cci_base_contact
+    cci_country
+    cci_crm
+    cci_crm_profile
+    cci_data_csv
+    cci_event
+    cci_membership
+    cci_mission
+    cci_partner
+    cci_purchase
+    cci_sales
+    cci_security
+    cci_timesheet
+    cci_translation
+    city
+    commission_pricelist
+    commission_rate
+    comparison
     crm
     crm_configuration
+    crm_livechat
     crm_profiling
+    crm_telemarketing
     crm_vertical
+    currency_rate
     custom
     delivery
+    demo_setup
+    discount_campaign
+    dm
     document
+    document_extension
     document_ics
+    document_webdav_old
+    ecommerce
+    edi
+    email_account
+    email_sale
+    esale_ez
+    esale_joomla
+    esale_osc
     event
     event_project
+    flagey
+    fleet_maintenance
+    game_scenario
+    gnucash
     google_map
+    hotel
+    hotel_housekeeping
+    hotel_restaurant
     hr
     hr_attendance
     hr_contract
+    hr_contract_available
+    hr_contract_timesheet
+    hr_evaluation
     hr_expense
     hr_holidays
+    hr_holidays_cci
+    hr_holidays_request
+    hr_performance
+    hr_skill
     hr_timesheet
+    hr_timesheet_ical
     hr_timesheet_invoice
     hr_timesheet_sheet
+    huissier
     idea
+    import_export
+    invoice_sequence
     l10n_be
+    l10n_ca-qc
+    l10n_ch_vat_brut
+    l10n_ch_vat_forfait
+    l10n_ch_vat_net
+    l10n_chart_at
+    l10n_chart_au
+    l10n_chart_be_frnl
+    l10n_chart_br
+    l10n_chart_ca_en
+    l10n_chart_ca_fr
+    l10n_chart_ch_german
+    l10n_chart_cn
+    l10n_chart_cn_traditional
+    l10n_chart_co
+    l10n_chart_cz
+    l10n_chart_da
+    l10n_chart_de_skr03
+    l10n_chart_hu
+    l10n_chart_in
+    l10n_chart_it
+    l10n_chart_it_cc2424
+    l10n_chart_lv
+    l10n_chart_nl
+    l10n_chart_nl_standard
+    l10n_chart_no
+    l10n_chart_pa
+    l10n_chart_pl
+    l10n_chart_se
+    l10n_chart_se_church
+    l10n_chart_se_food
+    l10n_chart_sp
+    l10n_chart_uk
     l10n_chart_uk_minimal
+    l10n_chart_us_general
+    l10n_chart_us_manufacturing
+    l10n_chart_us_service
+    l10n_chart_us_ucoa
+    l10n_chart_us_ucoa_ez
+    l10n_chart_ve
     l10n_fr
+    l10n_fr_pcg
+    l10n_fr_tva_franchise
+    l10n_fr_tva_reel
     l10n_lu
+    l10n_ma
+    l10n_simple
+    label
+    library
+    lunch
+    maintenance_editor
+    marketing
+    md_hr_contract
+    md_hr_course
+    md_hr_employee
     membership
+    membership_card
+    merge_picking
     mrp
     mrp_jit
     mrp_operations
+    mrp_prodlot_autosplit
+    mrp_production_report
     mrp_repair
     mrp_subproduct
+    multi_company
+    multi_company_account
+    multi_company_currency
+    multi_company_hr_timesheet_sheet
+    multi_company_project
+    network
+    partner_layout
+    partner_ldap
+    partner_spam
     point_of_sale
+    portal
+    portal_account
+    portal_analytic
+    portal_analytic_package
+    portal_sale
+    portal_service
     process
     product
+    product_catalog_report
+    product_electronic
+    product_expiry
+    product_extended
+    product_gtin
+    product_index
+    product_listprice_upgrade
+    product_lot_foundry
     product_margin
+    product_qt
+    product_search_reference
+    product_size
+    product_variant_multi
+    product_visible_discount
+    productivity_analysis
     profile_accounting
+    profile_ampco
     profile_association
     profile_auction
+    profile_bi
+    profile_bookstore
+    profile_business_game
+    profile_cci
     profile_crm
+    profile_dm
+    profile_indian_account
     profile_manufacturing
     profile_service
     project
@@ -93,12 +279,24 @@ Module Technical Guide: Introspection report on objects
     project_timesheet
     purchase
     purchase_analytic_plans
+    purchase_approve
+    purchase_confirm
+    purchase_delivery
+    purchase_discount
+    purchase_journal
+    purchase_tax_include
+    purchase_tender
+    radiotv
     report_account
     report_analytic
     report_analytic_line
     report_analytic_planning
+    report_analytic_planning_delegate
+    report_analytic_planning_long_term
+    report_auction
     report_crm
     report_document
+    report_hotel_restaurant
     report_intrastat
     report_mrp
     report_project
@@ -106,16 +304,43 @@ Module Technical Guide: Introspection report on objects
     report_sale
     report_task
     report_timesheet
+    report_timesheet_user
     sale
+    sale_advertising
     sale_analytic_plans
+    sale_category
     sale_crm
+    sale_delivery
     sale_delivery_report
+    sale_expected_invoice_date
+    sale_forecast
+    sale_intercompany
+    sale_intercompany_auto
     sale_journal
+    sale_layout
+    sale_margin
+    sale_margin_delivery
+    sale_payment
+    sale_rebate
+    sale_supplier_direct_delivery
+    sale_tax_include
+    sale_wo_production
+    sales_purchase_seq
+    sales_server_action
+    sandwich
     scrum
+    segmentation
+    smtpclient
     stock
     stock_invoice_directly
     stock_location
     stock_no_autopicking
+    stock_planning
     subscription
+    test_44
+    tiny_purchase
+    travel
+    users_ldap
     warning
+    webmail
     wiki
