@@ -11,22 +11,36 @@ Description
 -----------
 
 ::
-  
-    Remove minimal account chart
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Remove minimal account chart
 
 Dependencies
 ------------
 
  * account - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
+
 Objects
 -------
+
+None

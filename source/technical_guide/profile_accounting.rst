@@ -11,28 +11,39 @@ Description
 -----------
 
 ::
-  
-    Profile for Accounting
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for Accounting
 
 Dependencies
 ------------
 
  * account - installed
+ * report_analytic - installed
+ * board_account - installed
+ * account_followup - installed
 
- * report_analytic - uninstalled
+Reports
+-------
 
- * board_account - uninstalled
+None
 
- * account_followup - uninstalled
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

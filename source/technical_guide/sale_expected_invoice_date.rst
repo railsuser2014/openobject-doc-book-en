@@ -1,0 +1,46 @@
+
+Module Sale Expected Invoice Date (*sale_expected_invoice_date*)
+================================================================
+:Module: sale_expected_invoice_date
+:Name: Sale Expected Invoice Date
+:Version: 5.0.0.1
+:Directory: sale_expected_invoice_date
+:Web: http://tinyerp.com/
+
+Description
+-----------
+
+::
+
+  * add one field on sale order line
+
+Dependencies
+------------
+
+ * sale - installed
+
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+ * \* INHERIT sale.order.inherit.form (form)
+ * \* INHERIT sale.order.inherit.tree (form)
+ * \* INHERIT sale.order.form.inherit (form)
+
+
+Objects
+-------
+
+None

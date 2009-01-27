@@ -1,0 +1,48 @@
+
+Module Add an automatic sequence on partners (*base_partner_sequence*)
+======================================================================
+:Module: base_partner_sequence
+:Name: Add an automatic sequence on partners
+:Version: 5.0.1.0
+:Directory: base_partner_sequence
+:Web: http://www.tinyerp.com
+
+Description
+-----------
+
+::
+
+  This module adds the possibility to define a sequence for
+          the partner code. This code is then set as default when you
+          create a new partner, using the defined sequence.
+
+Dependencies
+------------
+
+ * base - installed
+
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
+
+Objects
+-------
+
+None

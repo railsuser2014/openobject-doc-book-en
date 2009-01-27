@@ -3,7 +3,7 @@ Module Module Recorder (*base_module_record*)
 =============================================
 :Module: base_module_record
 :Name: Module Recorder
-:Version: False
+:Version: 5.0.1.0
 :Directory: base_module_record
 :Web: http://www.openerp.com
 
@@ -11,8 +11,7 @@ Description
 -----------
 
 ::
-  
-    
+
   This module allows you to create a new module without any development.
   It records all operations on objects during the recording session and
   produce a .ZIP module. So you can create your own module directly from
@@ -30,21 +29,42 @@ Description
   2. Do stuff in your Open ERP client
   3. Stop the recording session
   4. Export to a reusable module
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
  * base - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Administration/Customization/Module Creation
+ * Administration/Customization/Module Creation/Module Recorder
+ * Administration/Customization/Module Creation/Module Recorder/Start Recording
+ * Administration/Customization/Module Creation/Module Recorder/Stop Recording
+ * Administration/Customization/Module Creation/Module Recorder/Save Recorded Module
+ * Administration/Customization/Module Creation/Export Customizations As a Module
+
+Views
+-----
+
+
+None
+
+
+
 Objects
 -------
+
+Object: ir.module.record
+########################
+
+.. index::
+  single: ir.module.record object
+.. 

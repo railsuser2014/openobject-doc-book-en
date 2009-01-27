@@ -11,9 +11,8 @@ Description
 -----------
 
 ::
-  
-    
-      This is the base module to manage the accounting chart for Belgium in Open ERP.
+
+  This is the base module to manage the accounting chart for Belgium in Open ERP.
   
       After Installing this module,The Configuration wizard for accounting is launched.
       * We have the account templates which can be helpful to generate Charts of Accounts.
@@ -24,34 +23,37 @@ Description
       Wizards provided by this module:
       * Enlist the partners with their related VAT  and invoiced amounts.Prepares an XML file format.Path to access : Financial Management/Reporting/Listing of VAT Customers.
       * Prepares an XML file for Vat Declaration of the Main company of the User currently Logged in.Path to access : Financial Management/Reporting/Listing of VAT Customers.
-  
-      
-
-Reports
--------
-
-Menus
--------
-
- * Financial Management/Legal Statements/Listing of VAT Customers
-
- * Financial Management/Legal Statements/Taxes Statement
-
-Views
------
 
 Dependencies
 ------------
 
  * account - installed
-
  * account_report - installed
-
  * base_vat - installed
-
  * base_iban - installed
-
  * account_chart - installed
+
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Financial Management/Legal Statements/Listing of VAT Customers
+ * Financial Management/Legal Statements/Taxes Statement
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

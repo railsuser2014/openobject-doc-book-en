@@ -11,24 +11,37 @@ Description
 -----------
 
 ::
-  
-    Profile for Associates
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for Associates
 
 Dependencies
 ------------
 
- * membership - uninstalled
+ * membership - installed
+ * board_association - installed
 
- * board_association - uninstalled
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

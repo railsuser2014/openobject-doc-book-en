@@ -3,7 +3,7 @@ Module Dashboard for CRM Configuration (*board_crm_configuration*)
 ==================================================================
 :Module: board_crm_configuration
 :Name: Dashboard for CRM Configuration
-:Version: False
+:Version: 5.0.1.0
 :Directory: board_crm_configuration
 :Web: 
 
@@ -11,8 +11,7 @@ Description
 -----------
 
 ::
-  
-    
+
   This module implements a dashboard for CRM that includes:
       * My Leads (list)
       * Leads by Stage (graph)
@@ -20,23 +19,37 @@ Description
       * Sales Pipeline by Stage (graph)
       * My Cases (list)
       * Jobs Tracking (graph)
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
- * board - uninstalled
+ * board - installed
+ * crm_configuration - installed
 
- * crm_configuration - uninstalled
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+ * Dashboards/CRM Configuration
+ * Dashboards/CRM Configuration/Statistics Dashboard
+ * Dashboards/CRM Configuration/Connecting Dashboard
+
+Views
+-----
+
+ * Leads By Stage - Graph (graph)
+ * report.crm.case.categ.graph (graph)
+ * CRM - Statistical Dashboard Form (form)
+ * crm.case.user.graph1 (graph)
+ * CRM - Dashboard Form (form)
+
 
 Objects
 -------
+
+None

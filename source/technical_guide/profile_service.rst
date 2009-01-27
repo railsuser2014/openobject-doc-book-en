@@ -11,28 +11,39 @@ Description
 -----------
 
 ::
-  
-    Profile for service companies
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for service companies
 
 Dependencies
 ------------
 
- * hr - uninstalled
+ * hr - installed
+ * project - installed
+ * board_project - installed
+ * account_analytic_analysis - installed
 
- * project - uninstalled
+Reports
+-------
 
- * board_project - uninstalled
+None
 
- * account_analytic_analysis - uninstalled
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

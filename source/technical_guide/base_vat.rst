@@ -11,26 +11,35 @@ Description
 -----------
 
 ::
-  
-    Enable the VAT Number for the partner. Check the validity of that VAT Number.
+
+  Enable the VAT Number for the partner. Check the validity of that VAT Number.
+
+Dependencies
+------------
+
+ * base - installed
+ * account - installed
 
 Reports
 -------
 
+None
+
+
 Menus
 -------
+
+
+None
+
 
 Views
 -----
 
  * \* INHERIT res.partner.vat.inherit (form)
 
-Dependencies
-------------
-
- * base - installed
-
- * account - installed
 
 Objects
 -------
+
+None

@@ -3,7 +3,7 @@ Module Dashboard for sales (*board_sale*)
 =========================================
 :Module: board_sale
 :Name: Dashboard for sales
-:Version: False
+:Version: 5.0.1.0
 :Directory: board_sale
 :Web: 
 
@@ -11,35 +11,41 @@ Description
 -----------
 
 ::
-  
-    
+
   This module implements a dashboard for salesman that includes:
       * You open quotations
       * Top 10 sales of the month
       * Cases statistics
       * Graph of sales by product
       * Graph of cases of the month
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
- * board - uninstalled
+ * board - installed
+ * sale - installed
+ * report_crm - installed
+ * report_sale - installed
 
- * sale - uninstalled
+Reports
+-------
 
- * report_crm - uninstalled
+None
 
- * report_sale - uninstalled
+
+Menus
+-------
+
+ * Dashboards/Sales
+ * Dashboards/Sales/Sale Dashboard
+
+Views
+-----
+
+ * board.sales.manager.form (form)
+
 
 Objects
 -------
+
+None

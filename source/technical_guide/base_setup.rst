@@ -11,9 +11,8 @@ Description
 -----------
 
 ::
-  
-    
-      This module implements a configuration system that helps user
+
+  This module implements a configuration system that helps user
       to configure the system at the installation of a new database.
   
       It allows you to select between a list of profiles to install:
@@ -24,21 +23,34 @@ Description
   
       It also asks screens to help easily configure your company, the header and
       footer, the account chart to install and the language.
-      
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
  * base - installed
 
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
+
 Objects
 -------
+
+None

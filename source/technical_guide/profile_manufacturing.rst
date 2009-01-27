@@ -11,30 +11,40 @@ Description
 -----------
 
 ::
-  
-    Profile for manufacturing industries
 
-Reports
--------
-
-Menus
--------
-
-Views
------
+  Profile for manufacturing industries
 
 Dependencies
 ------------
 
- * mrp - uninstalled
+ * mrp - installed
+ * sale - installed
+ * delivery - installed
+ * board_manufacturing - installed
+ * product_margin - installed
 
- * sale - uninstalled
+Reports
+-------
 
- * delivery - uninstalled
+None
 
- * board_manufacturing - uninstalled
 
- * product_margin - uninstalled
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+
+None
+
+
 
 Objects
 -------
+
+None

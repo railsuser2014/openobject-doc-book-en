@@ -3,7 +3,7 @@ Module Event - Project (*event_project*)
 ========================================
 :Module: event_project
 :Name: Event - Project
-:Version: False
+:Version: 5.0.0.1
 :Directory: event_project
 :Web: 
 
@@ -11,27 +11,38 @@ Description
 -----------
 
 ::
-  
-    Organization and management of events.
+
+  Organization and management of events.
   
       This module allow you to create retro planning for managing your events.
-  
-
-Reports
--------
-
-Menus
--------
-
-Views
------
 
 Dependencies
 ------------
 
- * project_retro_planning - uninstalled
+ * project_retro_planning - installed
+ * event - installed
 
- * event - uninstalled
+Reports
+-------
+
+None
+
+
+Menus
+-------
+
+
+None
+
+
+Views
+-----
+
+ * \* INHERIT Events (form)
+ * \* INHERIT Events (form)
+
 
 Objects
 -------
+
+None
