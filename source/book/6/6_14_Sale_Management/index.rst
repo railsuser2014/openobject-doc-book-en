@@ -1,28 +1,6 @@
 Management of Sales
 ^^^^^^^^^^^^^^^^^^^^
 
-Summary
-
-* Quotation
-
-* Sales Order
-
-* Sales Workflow
-
-* Advanced Management
-
-Keywords
-
-order
-
-quotation
-
-control
-
-delivery
-
-invoicing
-
 *This chapter is for sales management in Open ERP, handling the complete order process from quotation to customer order, including control of deliveries and invoicing.*
 
 *It doesn't look at customer relations and pre-sales. These functions are handled by the CRM (Customer Relationship Management) modules.*
