@@ -12,7 +12,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html web pickle htmlhelp latex changes linkcheck
+.PHONY: help clean html web pickle htmlhelp latex changes linkcheck html_image_original html_image_raw_html
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -30,6 +30,18 @@ clean:
 html:
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
+	@echo
+	@echo "Build finished. The HTML pages are in build/html."
+
+html_image_raw_html:
+	mkdir -p build/html build/doctrees
+	$(SPHINXBUILD) -b html -D image_raw_html=1 $(ALLSPHINXOPTS) build/html
+	@echo
+	@echo "Build finished. The HTML pages are in build/html."
+
+html_image_original:
+	mkdir -p build/html build/doctrees
+	$(SPHINXBUILD) -b html -D image_raw_html=0 $(ALLSPHINXOPTS) build/html
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 

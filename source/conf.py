@@ -139,7 +139,7 @@ html_last_updated_fmt = '%Y-%m-%d'
 #html_split_index = False
 
 # If true, the reST sources are included in the HTML build as _sources/<name>.
-#html_copy_source = True
+html_copy_source = False
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -185,3 +185,10 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_use_modindex = True
+
+image_raw_html = '0'
+
+def setup(app):
+    app.add_config_value('image_raw_html', '0', True)
+
+

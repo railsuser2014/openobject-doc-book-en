@@ -8,7 +8,18 @@ orders and to review the existing orders in their various states. Confirmation
 of an order triggers delivery of the goods, and invoicing timing is defined by
 a setting in each individual order.
 
-.. image:: images/sales_screenshot.png
+.. ifconfig:: image_raw_html in ('1', 1)
+
+    .. raw:: html
+
+        <a target="_blank" href="images/sales_screenshot.png"><img src="images_small/sales_screenshot.png" class="screenshot" /></a>
+
+.. ifconfig:: image_raw_html in ('0', 0, '')
+
+    .. image:: images/sales_screenshot.png
+
+.. _features-link:
+
 
 Keypoints:
 ----------
