@@ -138,7 +138,7 @@ The partner to be invoiced should be specified in the project definition. But if
 
 To be invoiced, the task must have been marked as such. Check the box  *To be invoiced*  in the tab  *Other info*  in the task definition form.
 
-.. tip::   **Note**  *Invoicing by project (TODO)* 
+.. tip::   **Note**  *Invoicing by project* 
 
 	If your invoicing is based on tasks at an agreed rate for each project, you can specify tasks at the start of a project or a phase. Then for each phase in a project that is to be invoiced you create a task receipt or delivery note.
 
