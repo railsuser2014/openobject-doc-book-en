@@ -1,6 +1,6 @@
 
-Module HR Holiday Request (*hr_holidays_request*)
-=================================================
+HR Holiday Request (*hr_holidays_request*)
+==========================================
 :Module: hr_holidays_request
 :Name: HR Holiday Request
 :Version: 5.0.1.0

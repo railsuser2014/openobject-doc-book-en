@@ -1,6 +1,6 @@
 
-Module Purchase Management (*purchase*)
-=======================================
+Purchase Management (*purchase*)
+================================
 :Module: purchase
 :Name: Purchase Management
 :Version: 5.0.1.1

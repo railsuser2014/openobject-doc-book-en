@@ -1,6 +1,6 @@
 
-Module Sale CRM Stuff (*sale_crm*)
-==================================
+Sale CRM Stuff (*sale_crm*)
+===========================
 :Module: sale_crm
 :Name: Sale CRM Stuff
 :Version: 5.0.1.0

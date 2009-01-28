@@ -1,6 +1,6 @@
 
-Module Multi Currency for Multi Company (*multi_company_currency*)
-==================================================================
+Multi Currency for Multi Company (*multi_company_currency*)
+===========================================================
 :Module: multi_company_currency
 :Name: Multi Currency for Multi Company
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Membership card (*membership_card*)
-==========================================
+Membership card (*membership_card*)
+===================================
 :Module: membership_card
 :Name: Membership card
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Margins in Sale Orders (*sale_margin*)
-=============================================
+Margins in Sale Orders (*sale_margin*)
+======================================
 :Module: sale_margin
 :Name: Margins in Sale Orders
 :Version: 5.0.1.0

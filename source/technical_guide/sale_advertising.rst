@@ -1,6 +1,6 @@
 
-Module Sales: Avertising Sales (*sale_advertising*)
-===================================================
+Sales: Avertising Sales (*sale_advertising*)
+============================================
 :Module: sale_advertising
 :Name: Sales: Avertising Sales
 :Version: 5.0.0.1

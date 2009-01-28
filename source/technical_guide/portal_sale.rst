@@ -1,6 +1,6 @@
 
-Module Portal Sale Management (*portal_sale*)
-=============================================
+Portal Sale Management (*portal_sale*)
+======================================
 :Module: portal_sale
 :Name: Portal Sale Management
 :Version: 5.0.0.1

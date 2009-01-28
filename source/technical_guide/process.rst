@@ -1,6 +1,6 @@
 
-Module Enterprise Process (*process*)
-=====================================
+Enterprise Process (*process*)
+==============================
 :Module: process
 :Name: Enterprise Process
 :Version: 5.0.1.0

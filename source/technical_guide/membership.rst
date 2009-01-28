@@ -1,6 +1,6 @@
 
-Module Membership (*membership*)
-================================
+Membership (*membership*)
+=========================
 :Module: membership
 :Name: Membership
 :Version: 5.0.0.1

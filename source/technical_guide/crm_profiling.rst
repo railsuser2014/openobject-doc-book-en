@@ -1,6 +1,6 @@
 
-Module crm_profiling management (*crm_profiling*)
-=================================================
+crm_profiling management (*crm_profiling*)
+==========================================
 :Module: crm_profiling
 :Name: crm_profiling management
 :Version: 5.0.1.3

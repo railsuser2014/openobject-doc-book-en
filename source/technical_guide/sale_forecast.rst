@@ -1,6 +1,6 @@
 
-Module Sales Forecasts, goals and statistics (*sale_forecast*)
-==============================================================
+Sales Forecasts, goals and statistics (*sale_forecast*)
+=======================================================
 :Module: sale_forecast
 :Name: Sales Forecasts, goals and statistics
 :Version: 5.0.1.0

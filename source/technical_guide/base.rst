@@ -1,6 +1,6 @@
 
-Module Base (*base*)
-====================
+Base (*base*)
+=============
 :Module: base
 :Name: Base
 :Version: 5.0.1.1

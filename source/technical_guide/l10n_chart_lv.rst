@@ -1,6 +1,6 @@
 
-Module Latvia - Chart of Accounts (*l10n_chart_lv*)
-===================================================
+Latvia - Chart of Accounts (*l10n_chart_lv*)
+============================================
 :Module: l10n_chart_lv
 :Name: Latvia - Chart of Accounts
 :Version: 5.0.1.0

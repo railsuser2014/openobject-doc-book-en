@@ -1,6 +1,6 @@
 
-Module Accounting journal visibility (*account_journal_visibility*)
-===================================================================
+Accounting journal visibility (*account_journal_visibility*)
+============================================================
 :Module: account_journal_visibility
 :Name: Accounting journal visibility
 :Version: 5.0.1.0

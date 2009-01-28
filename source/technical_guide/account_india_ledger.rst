@@ -1,6 +1,6 @@
 
-Module India Accounting - Ledger (*account_india_ledger*)
-=========================================================
+India Accounting - Ledger (*account_india_ledger*)
+==================================================
 :Module: account_india_ledger
 :Name: India Accounting - Ledger
 :Version: 5.0.1.0

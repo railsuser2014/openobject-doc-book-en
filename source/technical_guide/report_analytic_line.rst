@@ -1,6 +1,6 @@
 
-Module Analytic lines - Reporting (*report_analytic_line*)
-==========================================================
+Analytic lines - Reporting (*report_analytic_line*)
+===================================================
 :Module: report_analytic_line
 :Name: Analytic lines - Reporting
 :Version: 5.0.1.0

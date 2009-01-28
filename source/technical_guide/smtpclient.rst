@@ -1,6 +1,6 @@
 
-Module Email Client (*smtpclient*)
-==================================
+Email Client (*smtpclient*)
+===========================
 :Module: smtpclient
 :Name: Email Client
 :Version: 5.0.1.0

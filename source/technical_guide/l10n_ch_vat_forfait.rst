@@ -1,6 +1,6 @@
 
-Module Switzerland - VAT Forfait (*l10n_ch_vat_forfait*)
-========================================================
+Switzerland - VAT Forfait (*l10n_ch_vat_forfait*)
+=================================================
 :Module: l10n_ch_vat_forfait
 :Name: Switzerland - VAT Forfait
 :Version: False

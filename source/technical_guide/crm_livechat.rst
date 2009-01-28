@@ -1,6 +1,6 @@
 
-Module CRM - Livechat Jabber Client (*crm_livechat*)
-====================================================
+CRM - Livechat Jabber Client (*crm_livechat*)
+=============================================
 :Module: crm_livechat
 :Name: CRM - Livechat Jabber Client
 :Version: 5.0.1.3

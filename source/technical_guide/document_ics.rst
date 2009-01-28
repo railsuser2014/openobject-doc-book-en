@@ -1,6 +1,6 @@
 
-Module Support for iCal based on Document Management System (*document_ics*)
-============================================================================
+Support for iCal based on Document Management System (*document_ics*)
+=====================================================================
 :Module: document_ics
 :Name: Support for iCal based on Document Management System
 :Version: 5.0.1.0

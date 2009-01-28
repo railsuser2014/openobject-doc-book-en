@@ -1,6 +1,6 @@
 
-Module report_analytic_planning_long_term (*report_analytic_planning_long_term*)
-================================================================================
+report_analytic_planning_long_term (*report_analytic_planning_long_term*)
+=========================================================================
 :Module: report_analytic_planning_long_term
 :Name: report_analytic_planning_long_term
 :Version: 5.0.1.0

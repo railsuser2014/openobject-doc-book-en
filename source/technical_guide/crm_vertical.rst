@@ -1,6 +1,6 @@
 
-Module CRM Verticalisation (*crm_vertical*)
-===========================================
+CRM Verticalisation (*crm_vertical*)
+====================================
 :Module: crm_vertical
 :Name: CRM Verticalisation
 :Version: 5.0.1.0

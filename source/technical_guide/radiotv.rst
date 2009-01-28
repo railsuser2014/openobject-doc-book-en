@@ -1,6 +1,6 @@
 
-Module Tiny ERP TV & Radio Program Grid Module (*radiotv*)
-==========================================================
+Tiny ERP TV & Radio Program Grid Module (*radiotv*)
+===================================================
 :Module: radiotv
 :Name: Tiny ERP TV & Radio Program Grid Module
 :Version: 5.0.1.1

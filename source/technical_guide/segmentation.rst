@@ -1,6 +1,6 @@
 
-Module segmentation management (*segmentation*)
-===============================================
+segmentation management (*segmentation*)
+========================================
 :Module: segmentation
 :Name: segmentation management
 :Version: False

@@ -1,6 +1,6 @@
 
-Module Sales Without production (*sale_wo_production*)
-======================================================
+Sales Without production (*sale_wo_production*)
+===============================================
 :Module: sale_wo_production
 :Name: Sales Without production
 :Version: 5.0.0.1

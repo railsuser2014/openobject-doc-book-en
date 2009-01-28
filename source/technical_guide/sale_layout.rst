@@ -1,6 +1,6 @@
 
-Module sale_layout (*sale_layout*)
-==================================
+sale_layout (*sale_layout*)
+===========================
 :Module: sale_layout
 :Name: sale_layout
 :Version: 5.0.1.0

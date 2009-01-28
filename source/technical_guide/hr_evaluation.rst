@@ -1,6 +1,6 @@
 
-Module Human Resources Evaluation (*hr_evaluation*)
-===================================================
+Human Resources Evaluation (*hr_evaluation*)
+============================================
 :Module: hr_evaluation
 :Name: Human Resources Evaluation
 :Version: 5.0.0.1

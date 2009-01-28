@@ -1,6 +1,6 @@
 
-Module Switzerland - VAT Net (*l10n_ch_vat_net*)
-================================================
+Switzerland - VAT Net (*l10n_ch_vat_net*)
+=========================================
 :Module: l10n_ch_vat_net
 :Name: Switzerland - VAT Net
 :Version: False

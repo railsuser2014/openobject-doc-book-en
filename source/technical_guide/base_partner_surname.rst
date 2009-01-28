@@ -1,6 +1,6 @@
 
-Module Base Partner Surname (*base_partner_surname*)
-====================================================
+Base Partner Surname (*base_partner_surname*)
+=============================================
 :Module: base_partner_surname
 :Name: Base Partner Surname
 :Version: 5.0.1.0

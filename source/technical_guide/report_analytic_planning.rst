@@ -1,6 +1,6 @@
 
-Module Analytic planning - Reporting (*report_analytic_planning*)
-=================================================================
+Analytic planning - Reporting (*report_analytic_planning*)
+==========================================================
 :Module: report_analytic_planning
 :Name: Analytic planning - Reporting
 :Version: 5.0.1.0

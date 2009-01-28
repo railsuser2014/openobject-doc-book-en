@@ -1,6 +1,6 @@
 
-Module Products Lot Foundry (*product_lot_foundry*)
-===================================================
+Products Lot Foundry (*product_lot_foundry*)
+============================================
 :Module: product_lot_foundry
 :Name: Products Lot Foundry
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Dashboard for sales (*board_sale*)
-=========================================
+Dashboard for sales (*board_sale*)
+==================================
 :Module: board_sale
 :Name: Dashboard for sales
 :Version: 5.0.1.0

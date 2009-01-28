@@ -1,6 +1,6 @@
 
-Module Point Of Sale (*point_of_sale*)
-======================================
+Point Of Sale (*point_of_sale*)
+===============================
 :Module: point_of_sale
 :Name: Point Of Sale
 :Version: 5.0.1.0

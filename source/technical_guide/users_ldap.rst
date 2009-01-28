@@ -1,6 +1,6 @@
 
-Module Authenticate users with ldap server (*users_ldap*)
-=========================================================
+Authenticate users with ldap server (*users_ldap*)
+==================================================
 :Module: users_ldap
 :Name: Authenticate users with ldap server
 :Version: 5.0.0.1

@@ -1,6 +1,6 @@
 
-Module Salesman on invoices (*account_invoice_salesman*)
-========================================================
+Salesman on invoices (*account_invoice_salesman*)
+=================================================
 :Module: account_invoice_salesman
 :Name: Salesman on invoices
 :Version: 5.0.1.0

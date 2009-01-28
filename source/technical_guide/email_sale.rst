@@ -1,6 +1,6 @@
 
-Module Email Sale order (*email_sale*)
-======================================
+Email Sale order (*email_sale*)
+===============================
 :Module: email_sale
 :Name: Email Sale order
 :Version: 5.0.1.0

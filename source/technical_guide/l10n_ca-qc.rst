@@ -1,6 +1,6 @@
 
-Module Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
-=======================================================
+Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
+================================================
 :Module: l10n_ca-qc
 :Name: Canada - Quebec Chart of Accounts
 :Version: 5.0.1.0

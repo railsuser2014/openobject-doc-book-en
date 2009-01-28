@@ -1,6 +1,6 @@
 
-Module Sales Management - Reporting (*report_project*)
-======================================================
+Sales Management - Reporting (*report_project*)
+===============================================
 :Module: report_project
 :Name: Sales Management - Reporting
 :Version: 5.0.1.0

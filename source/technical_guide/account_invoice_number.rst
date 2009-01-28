@@ -1,6 +1,6 @@
 
-Module account_invoice_number (*account_invoice_number*)
-========================================================
+account_invoice_number (*account_invoice_number*)
+=================================================
 :Module: account_invoice_number
 :Name: account_invoice_number
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Auction house profile (*profile_auction*)
-================================================
+Auction house profile (*profile_auction*)
+=========================================
 :Module: profile_auction
 :Name: Auction house profile
 :Version: False

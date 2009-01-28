@@ -1,6 +1,6 @@
 
-Module Complete timesheet from an iCal server (*hr_timesheet_ical*)
-===================================================================
+Complete timesheet from an iCal server (*hr_timesheet_ical*)
+============================================================
 :Module: hr_timesheet_ical
 :Name: Complete timesheet from an iCal server
 :Version: 5.0.0.1

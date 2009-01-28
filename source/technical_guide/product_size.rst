@@ -1,6 +1,6 @@
 
-Module Sizes of lots (width, length, thickness) (*product_size*)
-================================================================
+Sizes of lots (width, length, thickness) (*product_size*)
+=========================================================
 :Module: product_size
 :Name: Sizes of lots (width, length, thickness)
 :Version: 5.0.1.0

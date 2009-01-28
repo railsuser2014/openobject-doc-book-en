@@ -1,6 +1,6 @@
 
-Module Poland - Chart of Accounts (*l10n_chart_pl*)
-===================================================
+Poland - Chart of Accounts (*l10n_chart_pl*)
+============================================
 :Module: l10n_chart_pl
 :Name: Poland - Chart of Accounts
 :Version: 5.0.1.0

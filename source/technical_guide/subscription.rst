@@ -1,6 +1,6 @@
 
-Module Subscription and recurring operations (*subscription*)
-=============================================================
+Subscription and recurring operations (*subscription*)
+======================================================
 :Module: subscription
 :Name: Subscription and recurring operations
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Product Catalog (*product_catalog_report*)
-=================================================
+Product Catalog (*product_catalog_report*)
+==========================================
 :Module: product_catalog_report
 :Name: Product Catalog
 :Version: 5.0.1.0

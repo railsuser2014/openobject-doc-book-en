@@ -1,6 +1,6 @@
 
-Module Purchase - Purchase Tender (*purchase_tender*)
-=====================================================
+Purchase - Purchase Tender (*purchase_tender*)
+==============================================
 :Module: purchase_tender
 :Name: Purchase - Purchase Tender
 :Version: 5.0.0.1

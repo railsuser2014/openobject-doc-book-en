@@ -1,6 +1,6 @@
 
-Module Discount on Marketing Campaigns (*discount_campaign*)
-============================================================
+Discount on Marketing Campaigns (*discount_campaign*)
+=====================================================
 :Module: discount_campaign
 :Name: Discount on Marketing Campaigns
 :Version: 5.0.1.0

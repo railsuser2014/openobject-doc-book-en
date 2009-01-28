@@ -1,6 +1,6 @@
 
-Module Test New Features (*test_44*)
-====================================
+Test New Features (*test_44*)
+=============================
 :Module: test_44
 :Name: Test New Features
 :Version: 5.0.1.0

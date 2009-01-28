@@ -1,6 +1,6 @@
 
-Module Hotel Restaurant (*hotel_restaurant*)
-============================================
+Hotel Restaurant (*hotel_restaurant*)
+=====================================
 :Module: hotel_restaurant
 :Name: Hotel Restaurant
 :Version: 5.0.1.0

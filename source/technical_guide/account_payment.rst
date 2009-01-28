@@ -1,6 +1,6 @@
 
-Module Payment Management (*account_payment*)
-=============================================
+Payment Management (*account_payment*)
+======================================
 :Module: account_payment
 :Name: Payment Management
 :Version: 5.0.1.1

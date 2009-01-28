@@ -1,6 +1,6 @@
 
-Module Sale Delivery Planning (*sale_delivery*)
-===============================================
+Sale Delivery Planning (*sale_delivery*)
+========================================
 :Module: sale_delivery
 :Name: Sale Delivery Planning
 :Version: 5.0.1.0

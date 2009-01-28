@@ -1,6 +1,6 @@
 
-Module Portal Management - Service (*portal_service*)
-=====================================================
+Portal Management - Service (*portal_service*)
+==============================================
 :Module: portal_service
 :Name: Portal Management - Service
 :Version: 5.0.0.1

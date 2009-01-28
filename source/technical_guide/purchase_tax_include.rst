@@ -1,6 +1,6 @@
 
-Module Purchases with taxes included (*purchase_tax_include*)
-=============================================================
+Purchases with taxes included (*purchase_tax_include*)
+======================================================
 :Module: purchase_tax_include
 :Name: Purchases with taxes included
 :Version: 5.0.1.0

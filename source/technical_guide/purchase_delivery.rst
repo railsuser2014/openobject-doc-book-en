@@ -1,6 +1,6 @@
 
-Module Carriers and deliveries For Purchase Order (*purchase_delivery*)
-=======================================================================
+Carriers and deliveries For Purchase Order (*purchase_delivery*)
+================================================================
 :Module: purchase_delivery
 :Name: Carriers and deliveries For Purchase Order
 :Version: 5.0.1.0

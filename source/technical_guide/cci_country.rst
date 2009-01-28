@@ -1,6 +1,6 @@
 
-Module CCI Country (*cci_country*)
-==================================
+CCI Country (*cci_country*)
+===========================
 :Module: cci_country
 :Name: CCI Country
 :Version: 5.0.1.0

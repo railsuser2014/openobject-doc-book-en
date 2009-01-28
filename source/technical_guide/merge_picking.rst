@@ -1,6 +1,6 @@
 
-Module Merge Picking (*merge_picking*)
-======================================
+Merge Picking (*merge_picking*)
+===============================
 :Module: merge_picking
 :Name: Merge Picking
 :Version: 5.0.1.0

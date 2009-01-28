@@ -1,6 +1,6 @@
 
-Module Account CODA Version 2.1 D (*account_coda_2_1_d*)
-========================================================
+Account CODA Version 2.1 D (*account_coda_2_1_d*)
+=================================================
 :Module: account_coda_2_1_d
 :Name: Account CODA Version 2.1 D
 :Version: 5.0.1.0.1

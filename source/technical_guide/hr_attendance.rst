@@ -1,6 +1,6 @@
 
-Module Attendances Of Employees (*hr_attendance*)
-=================================================
+Attendances Of Employees (*hr_attendance*)
+==========================================
 :Module: hr_attendance
 :Name: Attendances Of Employees
 :Version: 5.0.1.1

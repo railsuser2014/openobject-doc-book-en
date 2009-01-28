@@ -1,6 +1,6 @@
 
-Module CCI Purchase (*cci_purchase*)
-====================================
+CCI Purchase (*cci_purchase*)
+=============================
 :Module: cci_purchase
 :Name: CCI Purchase
 :Version: 5.0.1.0

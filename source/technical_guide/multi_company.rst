@@ -1,6 +1,6 @@
 
-Module Multi company base module (*multi_company*)
-==================================================
+Multi company base module (*multi_company*)
+===========================================
 :Module: multi_company
 :Name: Multi company base module
 :Version: 5.0.0.1

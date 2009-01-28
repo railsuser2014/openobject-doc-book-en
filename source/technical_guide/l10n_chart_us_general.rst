@@ -1,6 +1,6 @@
 
-Module United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
-======================================================================================
+United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
+===============================================================================
 :Module: l10n_chart_us_general
 :Name: United States - Chart of Accounts for General Profile
 :Version: 5.0.1.0

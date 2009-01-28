@@ -1,6 +1,6 @@
 
-Module Spain - Chart of Account (*l10n_chart_sp*)
-=================================================
+Spain - Chart of Account (*l10n_chart_sp*)
+==========================================
 :Module: l10n_chart_sp
 :Name: Spain - Chart of Account
 :Version: 5.0.1.0

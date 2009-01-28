@@ -1,6 +1,6 @@
 
-Module Manage indexes on products prices (*product_index*)
-==========================================================
+Manage indexes on products prices (*product_index*)
+===================================================
 :Module: product_index
 :Name: Manage indexes on products prices
 :Version: 5.0.1.0

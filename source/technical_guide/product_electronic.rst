@@ -1,6 +1,6 @@
 
-Module Products Attributes & Manufacturers (*product_electronic*)
-=================================================================
+Products Attributes & Manufacturers (*product_electronic*)
+==========================================================
 :Module: product_electronic
 :Name: Products Attributes & Manufacturers
 :Version: 5.0.1.0

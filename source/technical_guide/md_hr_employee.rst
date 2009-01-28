@@ -1,6 +1,6 @@
 
-Module Pilot Human Resources (*md_hr_employee*)
-===============================================
+Pilot Human Resources (*md_hr_employee*)
+========================================
 :Module: md_hr_employee
 :Name: Pilot Human Resources
 :Version: 5.0.1.0

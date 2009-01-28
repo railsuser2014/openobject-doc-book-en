@@ -1,6 +1,6 @@
 
-Module Sales Analytic Distribution Management (*sale_analytic_plans*)
-=====================================================================
+Sales Analytic Distribution Management (*sale_analytic_plans*)
+==============================================================
 :Module: sale_analytic_plans
 :Name: Sales Analytic Distribution Management
 :Version: 5.0.1.0

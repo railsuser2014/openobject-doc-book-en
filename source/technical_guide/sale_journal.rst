@@ -1,6 +1,6 @@
 
-Module Managing sales and deliveries by journal (*sale_journal*)
-================================================================
+Managing sales and deliveries by journal (*sale_journal*)
+=========================================================
 :Module: sale_journal
 :Name: Managing sales and deliveries by journal
 :Version: 5.0.1.0

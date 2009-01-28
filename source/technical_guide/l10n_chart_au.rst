@@ -1,6 +1,6 @@
 
-Module Australia - Chart of Accounts (*l10n_chart_au*)
-======================================================
+Australia - Chart of Accounts (*l10n_chart_au*)
+===============================================
 :Module: l10n_chart_au
 :Name: Australia - Chart of Accounts
 :Version: 5.0.1.0

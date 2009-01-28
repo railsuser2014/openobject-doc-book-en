@@ -1,6 +1,6 @@
 
-Module Performance Review (*hr_performance*)
-============================================
+Performance Review (*hr_performance*)
+=====================================
 :Module: hr_performance
 :Name: Performance Review
 :Version: 5.0.1.0

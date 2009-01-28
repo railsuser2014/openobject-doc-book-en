@@ -1,6 +1,6 @@
 
-Module Network Management (*network*)
-=====================================
+Network Management (*network*)
+==============================
 :Module: network
 :Name: Network Management
 :Version: 5.0.1.0

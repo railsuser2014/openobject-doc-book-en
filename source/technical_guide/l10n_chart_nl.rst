@@ -1,6 +1,6 @@
 
-Module Netherlands - Chart of Accounts (*l10n_chart_nl*)
-========================================================
+Netherlands - Chart of Accounts (*l10n_chart_nl*)
+=================================================
 :Module: l10n_chart_nl
 :Name: Netherlands - Chart of Accounts
 :Version: 5.0.1.0

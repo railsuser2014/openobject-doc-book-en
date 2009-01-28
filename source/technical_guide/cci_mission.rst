@@ -1,6 +1,6 @@
 
-Module CCI mission (*cci_mission*)
-==================================
+CCI mission (*cci_mission*)
+===========================
 :Module: cci_mission
 :Name: CCI mission
 :Version: 5.0.1.0

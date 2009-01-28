@@ -1,6 +1,6 @@
 
-Module Sandwich Module (*sandwich*)
-===================================
+Sandwich Module (*sandwich*)
+============================
 :Module: sandwich
 :Name: Sandwich Module
 :Version: 5.0.1.0

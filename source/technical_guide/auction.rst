@@ -1,6 +1,6 @@
 
-Module Auction module (*auction*)
-=================================
+Auction module (*auction*)
+==========================
 :Module: auction
 :Name: Auction module
 :Version: 5.0.1.0

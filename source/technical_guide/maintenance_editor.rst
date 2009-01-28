@@ -1,6 +1,6 @@
 
-Module Base (*maintenance_editor*)
-==================================
+Base (*maintenance_editor*)
+===========================
 :Module: maintenance_editor
 :Name: Base
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Online Demo Setup Module (*demo_setup*)
-==============================================
+Online Demo Setup Module (*demo_setup*)
+=======================================
 :Module: demo_setup
 :Name: Online Demo Setup Module
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Stock Management (*mrp_prodlot_autosplit*)
-=================================================
+Stock Management (*mrp_prodlot_autosplit*)
+==========================================
 :Module: mrp_prodlot_autosplit
 :Name: Stock Management
 :Version: 5.0.0.9.0

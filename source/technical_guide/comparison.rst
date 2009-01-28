@@ -1,6 +1,6 @@
 
-Module ERP Comparisons (*comparison*)
-=====================================
+ERP Comparisons (*comparison*)
+==============================
 :Module: comparison
 :Name: ERP Comparisons
 :Version: 5.0.0.1

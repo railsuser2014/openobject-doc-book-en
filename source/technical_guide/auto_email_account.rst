@@ -1,6 +1,6 @@
 
-Module Email Invoice (*auto_email_account*)
-===========================================
+Email Invoice (*auto_email_account*)
+====================================
 :Module: auto_email_account
 :Name: Email Invoice
 :Version: 5.0.1.0

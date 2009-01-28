@@ -1,6 +1,6 @@
 
-Module Product GTIN EAN UPC JPC Support (*product_gtin*)
-========================================================
+Product GTIN EAN UPC JPC Support (*product_gtin*)
+=================================================
 :Module: product_gtin
 :Name: Product GTIN EAN UPC JPC Support
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Intrastat Reporting - Reporting (*report_intrastat*)
-===========================================================
+Intrastat Reporting - Reporting (*report_intrastat*)
+====================================================
 :Module: report_intrastat
 :Name: Intrastat Reporting - Reporting
 :Version: 5.0.1.0

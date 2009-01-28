@@ -1,6 +1,6 @@
 
-Module Approve PO automatically when confirmed. (*purchase_approve*)
-====================================================================
+Approve PO automatically when confirmed. (*purchase_approve*)
+=============================================================
 :Module: purchase_approve
 :Name: Approve PO automatically when confirmed.
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Base Language (*base_language*)
-======================================
+Base Language (*base_language*)
+===============================
 :Module: base_language
 :Name: Base Language
 :Version: 5.0.1.0

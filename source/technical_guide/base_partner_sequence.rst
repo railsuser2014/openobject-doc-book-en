@@ -1,6 +1,6 @@
 
-Module Add an automatic sequence on partners (*base_partner_sequence*)
-======================================================================
+Add an automatic sequence on partners (*base_partner_sequence*)
+===============================================================
 :Module: base_partner_sequence
 :Name: Add an automatic sequence on partners
 :Version: 5.0.1.0

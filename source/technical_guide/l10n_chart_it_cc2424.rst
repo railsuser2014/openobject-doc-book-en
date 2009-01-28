@@ -1,6 +1,6 @@
 
-Module Italy - CC2424 - Chart of Accounts (*l10n_chart_it_cc2424*)
-==================================================================
+Italy - CC2424 - Chart of Accounts (*l10n_chart_it_cc2424*)
+===========================================================
 :Module: l10n_chart_it_cc2424
 :Name: Italy - CC2424 - Chart of Accounts
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Sale Order Line With Categories (*sale_category*)
-========================================================
+Sale Order Line With Categories (*sale_category*)
+=================================================
 :Module: sale_category
 :Name: Sale Order Line With Categories
 :Version: 5.0.1.0

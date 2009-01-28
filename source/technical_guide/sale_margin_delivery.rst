@@ -1,6 +1,6 @@
 
-Module Margins in Sale Delivery Lines (*sale_margin_delivery*)
-==============================================================
+Margins in Sale Delivery Lines (*sale_margin_delivery*)
+=======================================================
 :Module: sale_margin_delivery
 :Name: Margins in Sale Delivery Lines
 :Version: 5.0.1.0

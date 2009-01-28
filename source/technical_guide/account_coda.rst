@@ -1,6 +1,6 @@
 
-Module Account CODA (*account_coda*)
-====================================
+Account CODA (*account_coda*)
+=============================
 :Module: account_coda
 :Name: Account CODA
 :Version: 5.0.1.0

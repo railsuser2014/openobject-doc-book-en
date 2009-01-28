@@ -1,6 +1,6 @@
 
-Module CRM Management - Reporting (*report_crm*)
-================================================
+CRM Management - Reporting (*report_crm*)
+=========================================
 :Module: report_crm
 :Name: CRM Management - Reporting
 :Version: 5.0.1.0

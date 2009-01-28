@@ -1,6 +1,6 @@
 
-Module Accounting follow-ups management (*account_followup*)
-============================================================
+Accounting follow-ups management (*account_followup*)
+=====================================================
 :Module: account_followup
 :Name: Accounting follow-ups management
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Analytic accounts with multiple partners (*analytic_partners*)
-=====================================================================
+Analytic accounts with multiple partners (*analytic_partners*)
+==============================================================
 :Module: analytic_partners
 :Name: Analytic accounts with multiple partners
 :Version: 5.0.1.0

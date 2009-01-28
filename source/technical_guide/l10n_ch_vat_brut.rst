@@ -1,6 +1,6 @@
 
-Module Switzerland - VAT Brut (*l10n_ch_vat_brut*)
-==================================================
+Switzerland - VAT Brut (*l10n_ch_vat_brut*)
+===========================================
 :Module: l10n_ch_vat_brut
 :Name: Switzerland - VAT Brut
 :Version: False

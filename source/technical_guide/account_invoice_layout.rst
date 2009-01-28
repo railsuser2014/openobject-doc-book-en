@@ -1,6 +1,6 @@
 
-Module account_invoice_layout (*account_invoice_layout*)
-========================================================
+account_invoice_layout (*account_invoice_layout*)
+=================================================
 :Module: account_invoice_layout
 :Name: account_invoice_layout
 :Version: 5.0.1.0

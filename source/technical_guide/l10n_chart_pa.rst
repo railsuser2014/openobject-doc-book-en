@@ -1,6 +1,6 @@
 
-Module Panama - Chart of Account (*l10n_chart_pa*)
-==================================================
+Panama - Chart of Account (*l10n_chart_pa*)
+===========================================
 :Module: l10n_chart_pa
 :Name: Panama - Chart of Account
 :Version: 5.0.1.0

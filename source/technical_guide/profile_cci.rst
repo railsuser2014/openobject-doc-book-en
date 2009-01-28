@@ -1,6 +1,6 @@
 
-Module Profile Chamber of Commerce (*profile_cci*)
-==================================================
+Profile Chamber of Commerce (*profile_cci*)
+===========================================
 :Module: profile_cci
 :Name: Profile Chamber of Commerce
 :Version: False

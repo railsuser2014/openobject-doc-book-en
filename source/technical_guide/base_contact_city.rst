@@ -1,6 +1,6 @@
 
-Module City for base_contat (*base_contact_city*)
-=================================================
+City for base_contat (*base_contact_city*)
+==========================================
 :Module: base_contact_city
 :Name: City for base_contat
 :Version: 5.0.1.0

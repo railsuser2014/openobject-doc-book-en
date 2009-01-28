@@ -1,6 +1,6 @@
 
-Module Integrated Document Management System (*document*)
-=========================================================
+Integrated Document Management System (*document*)
+==================================================
 :Module: document
 :Name: Integrated Document Management System
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Auto Email Stock Picking (*auto_email_stock*)
-====================================================
+Auto Email Stock Picking (*auto_email_stock*)
+=============================================
 :Module: auto_email_stock
 :Name: Auto Email Stock Picking
 :Version: 5.0.1.0

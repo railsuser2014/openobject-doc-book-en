@@ -1,6 +1,6 @@
 
-Module Getting Things Done - Time Management Module (*project_gtd*)
-===================================================================
+Getting Things Done - Time Management Module (*project_gtd*)
+============================================================
 :Module: project_gtd
 :Name: Getting Things Done - Time Management Module
 :Version: 5.0.1.0

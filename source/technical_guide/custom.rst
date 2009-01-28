@@ -1,6 +1,6 @@
 
-Module Module for custom developments (*custom*)
-================================================
+Module for custom developments (*custom*)
+=========================================
 :Module: custom
 :Name: Module for custom developments
 :Version: 5.0.1.0

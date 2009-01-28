@@ -1,6 +1,6 @@
 
-Module Human Resources Contracts (*hr_contract*)
-================================================
+Human Resources Contracts (*hr_contract*)
+=========================================
 :Module: hr_contract
 :Name: Human Resources Contracts
 :Version: 5.0.1.0

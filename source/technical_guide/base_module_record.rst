@@ -1,6 +1,6 @@
 
-Module Module Recorder (*base_module_record*)
-=============================================
+Module Recorder (*base_module_record*)
+======================================
 :Module: base_module_record
 :Name: Module Recorder
 :Version: 5.0.1.0

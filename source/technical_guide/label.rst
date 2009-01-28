@@ -1,6 +1,6 @@
 
-Module Partner labels (*label*)
-===============================
+Partner labels (*label*)
+========================
 :Module: label
 :Name: Partner labels
 :Version: 5.0.1.0

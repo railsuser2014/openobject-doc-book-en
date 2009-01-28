@@ -1,6 +1,6 @@
 
-Module Margins in Product (*product_margin*)
-============================================
+Margins in Product (*product_margin*)
+=====================================
 :Module: product_margin
 :Name: Margins in Product
 :Version: 5.0.1.0

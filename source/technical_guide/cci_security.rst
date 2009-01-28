@@ -1,6 +1,6 @@
 
-Module CCI Security (*cci_security*)
-====================================
+CCI Security (*cci_security*)
+=============================
 :Module: cci_security
 :Name: CCI Security
 :Version: False

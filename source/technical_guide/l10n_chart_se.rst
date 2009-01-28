@@ -1,6 +1,6 @@
 
-Module Sweden - Chart of Accounts (*l10n_chart_se*)
-===================================================
+Sweden - Chart of Accounts (*l10n_chart_se*)
+============================================
 :Module: l10n_chart_se
 :Name: Sweden - Chart of Accounts
 :Version: 5.0.1.0

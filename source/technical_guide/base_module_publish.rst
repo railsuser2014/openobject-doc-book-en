@@ -1,6 +1,6 @@
 
-Module Module publisher (*base_module_publish*)
-===============================================
+Module publisher (*base_module_publish*)
+========================================
 :Module: base_module_publish
 :Name: Module publisher
 :Version: 5.0.1.0

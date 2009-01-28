@@ -1,6 +1,6 @@
 
-Module Colombia - Chart of Accounts (*l10n_chart_co*)
-=====================================================
+Colombia - Chart of Accounts (*l10n_chart_co*)
+==============================================
 :Module: l10n_chart_co
 :Name: Colombia - Chart of Accounts
 :Version: 5.0.1.0

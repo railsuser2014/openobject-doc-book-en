@@ -1,6 +1,6 @@
 
-Module CCI Partner (*cci_partner*)
-==================================
+CCI Partner (*cci_partner*)
+===========================
 :Module: cci_partner
 :Name: CCI Partner
 :Version: 5.0.1.0

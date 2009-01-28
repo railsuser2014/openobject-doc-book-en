@@ -1,6 +1,6 @@
 
-Module Analytic User Function (*analytic_user_function*)
-========================================================
+Analytic User Function (*analytic_user_function*)
+=================================================
 :Module: analytic_user_function
 :Name: Analytic User Function
 :Version: 5.0.1.0

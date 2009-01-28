@@ -1,6 +1,6 @@
 
-Module Ampco (*Ampco*)
-======================
+Ampco (*Ampco*)
+===============
 :Module: Ampco
 :Name: Ampco
 :Version: 5.0.1.0

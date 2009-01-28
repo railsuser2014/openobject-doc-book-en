@@ -1,6 +1,6 @@
 
-Module Bussiness Game (*profile_business_game*)
-===============================================
+Bussiness Game (*profile_business_game*)
+========================================
 :Module: profile_business_game
 :Name: Bussiness Game
 :Version: False

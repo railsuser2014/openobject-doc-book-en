@@ -1,6 +1,6 @@
 
-Module Invoice Picking Directly (*stock_invoice_directly*)
-==========================================================
+Invoice Picking Directly (*stock_invoice_directly*)
+===================================================
 :Module: stock_invoice_directly
 :Name: Invoice Picking Directly
 :Version: 5.0.1.0

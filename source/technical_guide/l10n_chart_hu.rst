@@ -1,6 +1,6 @@
 
-Module Hungary - Chart of Accounts (*l10n_chart_hu*)
-====================================================
+Hungary - Chart of Accounts (*l10n_chart_hu*)
+=============================================
 :Module: l10n_chart_hu
 :Name: Hungary - Chart of Accounts
 :Version: 5.0.1.0

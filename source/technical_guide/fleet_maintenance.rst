@@ -1,6 +1,6 @@
 
-Module Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
-================================================================================
+Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
+=========================================================================
 :Module: fleet_maintenance
 :Name: Manage the maintenance contracts of a product fleet
 :Version: 5.0.0.3

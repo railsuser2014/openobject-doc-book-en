@@ -1,6 +1,6 @@
 
-Module Multi company for accounting module (*multi_company_account*)
-====================================================================
+Multi company for accounting module (*multi_company_account*)
+=============================================================
 :Module: multi_company_account
 :Name: Multi company for accounting module
 :Version: 5.0.0.1

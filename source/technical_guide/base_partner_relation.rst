@@ -1,6 +1,6 @@
 
-Module Partners - relation extension (*base_partner_relation*)
-==============================================================
+Partners - relation extension (*base_partner_relation*)
+=======================================================
 :Module: base_partner_relation
 :Name: Partners - relation extension
 :Version: 5.0.1.0

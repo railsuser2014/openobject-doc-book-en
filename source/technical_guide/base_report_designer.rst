@@ -1,6 +1,6 @@
 
-Module Report designer interface module (*base_report_designer*)
-================================================================
+Report designer interface module (*base_report_designer*)
+=========================================================
 :Module: base_report_designer
 :Name: Report designer interface module
 :Version: 5.0.0.1

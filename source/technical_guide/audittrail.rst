@@ -1,6 +1,6 @@
 
-Module Audit Trail (*audittrail*)
-=================================
+Audit Trail (*audittrail*)
+==========================
 :Module: audittrail
 :Name: Audit Trail
 :Version: 5.0.1.0

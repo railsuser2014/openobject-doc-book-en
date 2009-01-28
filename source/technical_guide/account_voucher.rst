@@ -1,6 +1,6 @@
 
-Module Accounting - Voucher Management (*account_voucher*)
-==========================================================
+Accounting - Voucher Management (*account_voucher*)
+===================================================
 :Module: account_voucher
 :Name: Accounting - Voucher Management
 :Version: 5.0.1.0

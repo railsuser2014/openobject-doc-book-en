@@ -1,6 +1,6 @@
 
-Module Maroc Plan comptable général pour les sociétés (*l10n_ma*)
-=================================================================
+Maroc Plan comptable général pour les sociétés (*l10n_ma*)
+==========================================================
 :Module: l10n_ma
 :Name: Maroc Plan comptable général pour les sociétés
 :Version: 5.0.1.0

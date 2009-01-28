@@ -1,6 +1,6 @@
 
-Module Account Move Reverse (*account_reverse*)
-===============================================
+Account Move Reverse (*account_reverse*)
+========================================
 :Module: account_reverse
 :Name: Account Move Reverse
 :Version: 5.0.1.0

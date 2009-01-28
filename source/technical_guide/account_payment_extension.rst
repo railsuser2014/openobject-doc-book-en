@@ -1,6 +1,6 @@
 
-Module Account Payment Extension (*account_payment_extension*)
-==============================================================
+Account Payment Extension (*account_payment_extension*)
+=======================================================
 :Module: account_payment_extension
 :Name: Account Payment Extension
 :Version: 5.0.1.1

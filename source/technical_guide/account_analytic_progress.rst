@@ -1,6 +1,6 @@
 
-Module account_analytic_progress (*account_analytic_progress*)
-==============================================================
+account_analytic_progress (*account_analytic_progress*)
+=======================================================
 :Module: account_analytic_progress
 :Name: account_analytic_progress
 :Version: 5.0.1.0

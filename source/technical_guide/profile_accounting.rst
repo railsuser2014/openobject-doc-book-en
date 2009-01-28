@@ -1,6 +1,6 @@
 
-Module Accounting only profile (*profile_accounting*)
-=====================================================
+Accounting only profile (*profile_accounting*)
+==============================================
 :Module: profile_accounting
 :Name: Accounting only profile
 :Version: False

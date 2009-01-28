@@ -1,6 +1,6 @@
 
-Module Human Resources Timesheets on contracts (*hr_contract_timesheet*)
-========================================================================
+Human Resources Timesheets on contracts (*hr_contract_timesheet*)
+=================================================================
 :Module: hr_contract_timesheet
 :Name: Human Resources Timesheets on contracts
 :Version: 5.0.0.1

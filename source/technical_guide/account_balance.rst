@@ -1,6 +1,6 @@
 
-Module Accounting and financial management-Compare Accounts (*account_balance*)
-===============================================================================
+Accounting and financial management-Compare Accounts (*account_balance*)
+========================================================================
 :Module: account_balance
 :Name: Accounting and financial management-Compare Accounts
 :Version: 5.0.1.1

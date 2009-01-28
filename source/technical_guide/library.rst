@@ -1,6 +1,6 @@
 
-Module Library (*library*)
-==========================
+Library (*library*)
+===================
 :Module: library
 :Name: Library
 :Version: 5.0.1.0

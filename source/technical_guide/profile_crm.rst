@@ -1,6 +1,6 @@
 
-Module CRM profile (*profile_crm*)
-==================================
+CRM profile (*profile_crm*)
+===========================
 :Module: profile_crm
 :Name: CRM profile
 :Version: False

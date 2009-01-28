@@ -1,6 +1,6 @@
 
-Module City (*city*)
-====================
+City (*city*)
+=============
 :Module: city
 :Name: City
 :Version: 5.0.1.0

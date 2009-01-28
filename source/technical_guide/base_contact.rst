@@ -1,6 +1,6 @@
 
-Module Base Contact (*base_contact*)
-====================================
+Base Contact (*base_contact*)
+=============================
 :Module: base_contact
 :Name: Base Contact
 :Version: 5.0.1.0

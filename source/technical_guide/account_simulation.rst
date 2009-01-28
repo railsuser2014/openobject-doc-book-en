@@ -1,6 +1,6 @@
 
-Module Accounting simulation journal (*account_simulation*)
-===========================================================
+Accounting simulation journal (*account_simulation*)
+====================================================
 :Module: account_simulation
 :Name: Accounting simulation journal
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Sales Purchase Sequence Management (*sales_purchase_seq*)
-================================================================
+Sales Purchase Sequence Management (*sales_purchase_seq*)
+=========================================================
 :Module: sales_purchase_seq
 :Name: Sales Purchase Sequence Management
 :Version: 5.0.1.0

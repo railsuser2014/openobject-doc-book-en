@@ -1,6 +1,6 @@
 
-Module Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
-======================================================================
+Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
+===============================================================
 :Module: sale_intercompany_auto
 :Name: Sale Inter-Company - Fully Automatic
 :Version: 5.0.1.0

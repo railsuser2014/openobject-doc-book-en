@@ -1,6 +1,6 @@
 
-Module Accounting and financial management (*account*)
-======================================================
+Accounting and financial management (*account*)
+===============================================
 :Module: account
 :Name: Accounting and financial management
 :Version: 5.0.1.1

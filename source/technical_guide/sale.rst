@@ -1,6 +1,6 @@
 
-Module Sales Management (*sale*)
-================================
+Sales Management (*sale*)
+=========================
 :Module: sale
 :Name: Sales Management
 :Version: 5.0.1.0

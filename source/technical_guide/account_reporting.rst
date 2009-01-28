@@ -1,6 +1,6 @@
 
-Module Reporting of Balancesheet for accounting (*account_reporting*)
-=====================================================================
+Reporting of Balancesheet for accounting (*account_reporting*)
+==============================================================
 :Module: account_reporting
 :Name: Reporting of Balancesheet for accounting
 :Version: 5.0.1.0

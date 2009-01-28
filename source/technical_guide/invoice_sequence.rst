@@ -1,6 +1,6 @@
 
-Module Invoice lines with sequence number (*invoice_sequence*)
-==============================================================
+Invoice lines with sequence number (*invoice_sequence*)
+=======================================================
 :Module: invoice_sequence
 :Name: Invoice lines with sequence number
 :Version: 5.0.0.1

@@ -1,6 +1,6 @@
 
-Module Reporting for accounting (*account_report*)
-==================================================
+Reporting for accounting (*account_report*)
+===========================================
 :Module: account_report
 :Name: Reporting for accounting
 :Version: 5.0.1.0

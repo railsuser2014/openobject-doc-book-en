@@ -1,6 +1,6 @@
 
-Module Module for Warnings form onchange Event (*warning*)
-==========================================================
+Module for Warnings form onchange Event (*warning*)
+===================================================
 :Module: warning
 :Name: Module for Warnings form onchange Event
 :Version: 5.0.1.0

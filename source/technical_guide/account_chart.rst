@@ -1,6 +1,6 @@
 
-Module Charts of Accounts (*account_chart*)
-===========================================
+Charts of Accounts (*account_chart*)
+====================================
 :Module: account_chart
 :Name: Charts of Accounts
 :Version: 5.0.1.1

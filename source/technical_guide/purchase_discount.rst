@@ -1,6 +1,6 @@
 
-Module Purchase Order Lines With Discounts (*purchase_discount*)
-================================================================
+Purchase Order Lines With Discounts (*purchase_discount*)
+=========================================================
 :Module: purchase_discount
 :Name: Purchase Order Lines With Discounts
 :Version: 5.0.1.0

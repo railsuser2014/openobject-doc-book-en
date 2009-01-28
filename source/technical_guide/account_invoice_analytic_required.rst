@@ -1,6 +1,6 @@
 
-Module Account invoice analytic required (*account_invoice_analytic_required*)
-==============================================================================
+Account invoice analytic required (*account_invoice_analytic_required*)
+=======================================================================
 :Module: account_invoice_analytic_required
 :Name: Account invoice analytic required
 :Version: 5.0.1.0

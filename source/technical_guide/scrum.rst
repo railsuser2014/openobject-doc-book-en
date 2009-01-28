@@ -1,6 +1,6 @@
 
-Module Scrum, Agile Development Method (*scrum*)
-================================================
+Scrum, Agile Development Method (*scrum*)
+=========================================
 :Module: scrum
 :Name: Scrum, Agile Development Method
 :Version: 5.0.1.0

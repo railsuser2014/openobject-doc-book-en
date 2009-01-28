@@ -1,6 +1,6 @@
 
-Module Products & Pricelists (*product*)
-========================================
+Products & Pricelists (*product*)
+=================================
 :Module: product
 :Name: Products & Pricelists
 :Version: 5.0.1.1

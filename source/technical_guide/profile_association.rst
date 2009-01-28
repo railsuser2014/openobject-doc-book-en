@@ -1,6 +1,6 @@
 
-Module Association profile (*profile_association*)
-==================================================
+Association profile (*profile_association*)
+===========================================
 :Module: profile_association
 :Name: Association profile
 :Version: False

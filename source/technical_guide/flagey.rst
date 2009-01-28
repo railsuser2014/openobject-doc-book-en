@@ -1,6 +1,6 @@
 
-Module Auction module - Flagey Customs (*flagey*)
-=================================================
+Auction module - Flagey Customs (*flagey*)
+==========================================
 :Module: flagey
 :Name: Auction module - Flagey Customs
 :Version: 5.0.1.0

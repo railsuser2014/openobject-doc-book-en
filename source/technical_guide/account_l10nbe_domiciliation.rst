@@ -1,6 +1,6 @@
 
-Module Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
-====================================================================
+Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
+=============================================================
 :Module: account_l10nbe_domiciliation
 :Name: Account l10nbe Domiciliation
 :Version: 5.0.1.0

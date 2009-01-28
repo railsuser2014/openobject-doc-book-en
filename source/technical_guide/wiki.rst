@@ -1,6 +1,6 @@
 
-Module Document Management - Wiki (*wiki*)
-==========================================
+Document Management - Wiki (*wiki*)
+===================================
 :Module: wiki
 :Name: Document Management - Wiki
 :Version: 5.0.1.0

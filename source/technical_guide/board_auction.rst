@@ -1,6 +1,6 @@
 
-Module Board for Auction (*board_auction*)
-==========================================
+Board for Auction (*board_auction*)
+===================================
 :Module: board_auction
 :Name: Board for Auction
 :Version: 5.0.1.0

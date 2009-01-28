@@ -1,6 +1,6 @@
 
-Module AMPCO profile (*profile_ampco*)
-======================================
+AMPCO profile (*profile_ampco*)
+===============================
 :Module: profile_ampco
 :Name: AMPCO profile
 :Version: False

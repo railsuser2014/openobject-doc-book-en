@@ -1,6 +1,6 @@
 
-Module Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
-==================================================================================
+Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
+===========================================================================
 :Module: account_analytic_plans
 :Name: Multiple-plans management in Analytic Accounting
 :Version: 5.0.1.0

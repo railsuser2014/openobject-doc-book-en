@@ -1,6 +1,6 @@
 
-Module Extension Module of Document Management System (*document_extension*)
-============================================================================
+Extension Module of Document Management System (*document_extension*)
+=====================================================================
 :Module: document_extension
 :Name: Extension Module of Document Management System
 :Version: 5.0.1.0

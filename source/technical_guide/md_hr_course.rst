@@ -1,6 +1,6 @@
 
-Module Pilot Human Resources (*md_hr_course*)
-=============================================
+Pilot Human Resources (*md_hr_course*)
+======================================
 :Module: md_hr_course
 :Name: Pilot Human Resources
 :Version: 5.0.1.0

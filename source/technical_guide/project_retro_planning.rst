@@ -1,6 +1,6 @@
 
-Module Project Retro planning (*project_retro_planning*)
-========================================================
+Project Retro planning (*project_retro_planning*)
+=================================================
 :Module: project_retro_planning
 :Name: Project Retro planning
 :Version: 5.0.0.1

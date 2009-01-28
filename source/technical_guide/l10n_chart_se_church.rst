@@ -1,6 +1,6 @@
 
-Module Sweden - Church Chart of Account (*l10n_chart_se_church*)
-================================================================
+Sweden - Church Chart of Account (*l10n_chart_se_church*)
+=========================================================
 :Module: l10n_chart_se_church
 :Name: Sweden - Church Chart of Account
 :Version: 5.0.1.0

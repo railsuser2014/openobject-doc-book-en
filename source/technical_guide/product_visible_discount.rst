@@ -1,6 +1,6 @@
 
-Module Visible Discount Module (*product_visible_discount*)
-===========================================================
+Visible Discount Module (*product_visible_discount*)
+====================================================
 :Module: product_visible_discount
 :Name: Visible Discount Module
 :Version: 5.0.1.0

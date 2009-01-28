@@ -1,6 +1,6 @@
 
-Module Production Report (*mrp_production_report*)
-==================================================
+Production Report (*mrp_production_report*)
+===========================================
 :Module: mrp_production_report
 :Name: Production Report
 :Version: 5.0.1.0

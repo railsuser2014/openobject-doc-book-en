@@ -1,6 +1,6 @@
 
-Module Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
-================================================================
+Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
+=========================================================
 :Module: l10n_chart_ca_fr
 :Name: Canadian - French - Chart of Acounts
 :Version: 5.0.1.0

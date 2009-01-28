@@ -1,6 +1,6 @@
 
-Module Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
-====================================================================================================
+Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
+=============================================================================================
 :Module: sale_supplier_direct_delivery
 :Name: Automates direct delivery between a supplier and a customer
 :Version: 5.0.0.9

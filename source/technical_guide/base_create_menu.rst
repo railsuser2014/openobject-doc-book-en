@@ -1,6 +1,6 @@
 
-Module Menu Wizard  (*base_create_menu*)
-========================================
+Menu Wizard  (*base_create_menu*)
+=================================
 :Module: base_create_menu
 :Name: Menu Wizard 
 :Version: 5.0.1.0

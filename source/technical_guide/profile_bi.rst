@@ -1,6 +1,6 @@
 
-Module Business Intelligence profile (*profile_bi*)
-===================================================
+Business Intelligence profile (*profile_bi*)
+============================================
 :Module: profile_bi
 :Name: Business Intelligence profile
 :Version: False

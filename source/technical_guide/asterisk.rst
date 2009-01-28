@@ -1,6 +1,6 @@
 
-Module Asterisk (*asterisk*)
-============================
+Asterisk (*asterisk*)
+=====================
 :Module: asterisk
 :Name: Asterisk
 :Version: 5.0.0.1proto2

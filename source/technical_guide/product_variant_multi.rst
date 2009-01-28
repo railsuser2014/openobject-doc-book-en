@@ -1,6 +1,6 @@
 
-Module Products with multi-level variants (*product_variant_multi*)
-===================================================================
+Products with multi-level variants (*product_variant_multi*)
+============================================================
 :Module: product_variant_multi
 :Name: Products with multi-level variants
 :Version: 5.0.1.0

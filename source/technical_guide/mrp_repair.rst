@@ -1,6 +1,6 @@
 
-Module Products Repairs Module (*mrp_repair*)
-=============================================
+Products Repairs Module (*mrp_repair*)
+======================================
 :Module: mrp_repair
 :Name: Products Repairs Module
 :Version: 5.0.1.0

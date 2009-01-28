@@ -1,6 +1,6 @@
 
-Module Budget Management (*account_budget*)
-===========================================
+Budget Management (*account_budget*)
+====================================
 :Module: account_budget
 :Name: Budget Management
 :Version: 5.0.1.0
