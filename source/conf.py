@@ -66,6 +66,7 @@ today_fmt = '%Y-%m-%d'
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
+#exclude_trees = ['book', 'bi', 'book', 'contribute', 'customize', 'developer', 'features', 'technical_guide']
 exclude_trees = []
 
 # The reST default role (used for this markup: `text`) to use for all documents.
@@ -103,7 +104,7 @@ html_style = 'default.css'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 
-html_logo = '.static/openobject.jpg'
+html_logo = None
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
