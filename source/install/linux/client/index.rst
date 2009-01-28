@@ -17,7 +17,7 @@ You also need to install the following python libraries:
   * **xml**
   * **tz** (timezone library)
 
-Exemple on Ubuntu
+Example on Ubuntu
 +++++++++++++++++
 
 On Ubuntu, these libraries are available in the following packages:
