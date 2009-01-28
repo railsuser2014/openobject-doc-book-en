@@ -2,6 +2,17 @@
  * OpenERP Doc Design
  */
 
+div#openerp_page h1 {
+  color: #902D2D;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
 div.all-toctree { /* Main toctree should be hidden but present to have next/previous topic */
   display: none;
 }
@@ -64,6 +75,53 @@ ul.simple ul {
   list-style-image: none;
 }
 
+.headerlinkgrey {
+  background-image:url(http://test.openobject.com/templates/openerp/images/headergreybg.gif);
+}
+
+.redline {
+  background-image:url(http://test.openobject.com/templates/openerp/images/redline.gif);
+}
+
+.greyredcurve {
+  background-image:url(http://test.openobject.com/templates/openerp/images/greyredcurve.gif);
+}
+
+.redcurve {
+  background-image:url(http://test.openobject.com/templates/openerp/images/redcurve.gif);
+}
+
+.greycurveleft {
+  background-image:url(http://test.openobject.com/templates/openerp/images/greycurveleft.gif);
+}
+
+div.headerlink a {
+  color:#FFFFFF;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size:12px;
+  text-align:center;
+  text-decoration:none;
+  top: -6px;
+  margin-top:1px;
+  position:relative;
+}
+
+div.headerlink a:link {
+  color:#FFFFFF;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size:12px;
+  text-align:center;
+  text-decoration:none;
+}
+
+#menu_header_menu {
+  background: transparent url(http://test.openobject.com/templates/openerp/pict/images/mainmenu_button.png) repeat-x scroll 0 0;
+  font-weight: bold;
+  xxxpadding: 0 10px;
+  padding: 0px;
+  text-align: center;
+}
+
 /* :::: LAYOUT :::: */
 
 div.document {
@@ -77,12 +135,13 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-  margin: 0 0 0 276px;
+  margin: 0 0 0 230px;
 }
 
 div.body {
     background-color: white;
     padding: 0 20px 30px 20px;
+    border-left: 1px solid #CCCCCC;
 }
 
 div.sphinxsidebarwrapper {
@@ -92,10 +151,10 @@ div.sphinxsidebarwrapper {
 
 div.sphinxsidebar {
   float: left;
-  width: 276px;
+  width: 230px;
   margin-left: -100%;
   font-size: 90%;
-  border-right: 1px solid #CCCCCC;
+  /*border-right: 1px solid #CCCCCC;*/
 }
 
 div.clearer {
@@ -108,6 +167,7 @@ div.footer {
     padding: 9px 0 9px 0;
     text-align: center;
     font-size: 75%;
+    border-top: 1px solid #CCCCCC;
 }
 
 div.footer a {
@@ -116,6 +176,10 @@ div.footer a {
 }
 
 div.related {
+  display: none;
+}
+
+div.related-tiny {
   background-color: #f6f2f6;
   color:#414441;
   width: 100%;
@@ -125,26 +189,26 @@ div.related {
   border-bottom: 1px solid #CCCCCC;
 }
 
-div.related h3 {
+div.related-tiny h3 {
     display: none;
 }
 
-div.related ul {
+div.related-tiny ul {
     margin: 0;
     padding: 0 0 0 10px;
     list-style: none;
 }
 
-div.related li {
+div.related-tiny li {
     display: inline;
 }
 
-div.related li.right {
+div.related-tiny li.right {
     float: right;
     margin-right: 5px;
 }
 
-div.related a {
+div.related-tiny a {
   color:#414441;
 }
 
@@ -892,7 +956,7 @@ form.comment textarea {
 }
 
 form.comment input[type="text"] {
-    width: 276px;
+    width: 230px;
 }
 
 form.comment textarea {
@@ -933,7 +997,7 @@ img.logo {
     }
 
     div.sphinxsidebar,
-    div.related,
+    div.related-tiny,
     div.footer,
     div#comments div.new-comment-box,
     #top-link {
