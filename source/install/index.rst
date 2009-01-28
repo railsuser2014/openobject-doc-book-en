@@ -7,9 +7,8 @@ Installation
 .. toctree::
     :glob:
 
-    general/index
-    installation_manual
-    linux/index
-    windows/index
-    maintain_updates
+    linux/client/index
+    linux/server/index
+    windows/client/index
+    windows/server/index
 

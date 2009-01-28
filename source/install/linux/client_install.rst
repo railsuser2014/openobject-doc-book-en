@@ -1,4 +1,0 @@
-
-Client Installation on Linux
-++++++++++++++++++++++++++++
-
