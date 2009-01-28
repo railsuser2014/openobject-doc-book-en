@@ -56,6 +56,14 @@ li.toctree-l1 a {
   font-size: 70%;
 }
 
+ul.simple {
+  list-style-image: url(redarrow.png);
+}
+
+ul.simple ul {
+  list-style-image: none;
+}
+
 /* :::: LAYOUT :::: */
 
 div.document {
@@ -69,8 +77,7 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-  margin: 0 0 0 230px;
-  border-left: 1px solid #CCCCCC;
+  margin: 0 0 0 276px;
 }
 
 div.body {
@@ -84,10 +91,11 @@ div.sphinxsidebarwrapper {
 }
 
 div.sphinxsidebar {
-    float: left;
-    width: 230px;
-    margin-left: -100%;
-    font-size: 90%;
+  float: left;
+  width: 276px;
+  margin-left: -100%;
+  font-size: 90%;
+  border-right: 1px solid #CCCCCC;
 }
 
 div.clearer {
@@ -884,7 +892,7 @@ form.comment textarea {
 }
 
 form.comment input[type="text"] {
-    width: 240px;
+    width: 276px;
 }
 
 form.comment textarea {
