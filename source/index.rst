@@ -31,10 +31,7 @@ Open Object Documentation
   You will find in these pages a new integrated approach to enterprise management
   and best development practices. These books have been best-sellers
   on Amazon for several months. You may also have a look at our <a href="">printed
-  books</a>. The content is <a
-  href="/documentation_license.html#doc-license-link">licenced</a> by Open
-  Object press.
-  </div>
+  books</a>.  </div>
   <br/>
   <br/>
 
@@ -63,20 +60,9 @@ Open Object Documentation
   |                                                              |                                                  |
   |  :ref:`Module Technical Guide <module-technical-guide-link>` |                                                  |
   |                                                              |                                                  |
-  |  A developer resource listing Module Objects Properties      |                                                  |
-  |  by introspection                                            |                                                  |
+  |  A developer resource listing all modules and objects        |                                                  |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
-
-..  |                                                         |                                                  |
-..  |  :ref:`Integrator Book <book-customize-link>`           |  :ref:`Developer Book <book-develop-link>`       |
-..  |                                                         |                                                  |
-..  |  Customize your modules and applications                |  Develope your own modules on Open Object        |
-
-..  |  :ref:`Installation Manuals <installation-link>`        |  :ref:`FAQs <faqs-link>`                         |
-..  |                                                         |                                                  |
-..  |  Manuals to install Open ERP and Open Object            |  Frequently Asked Questions                      |
-
 
 
 **Indices and tables:**
@@ -120,6 +106,9 @@ Open Object Documentation
 ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
 ..  |                                         |                                                    |
 ..  |  About our company                      |  Software and documentation copyrights             |
+
+
+
 
 
 
