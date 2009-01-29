@@ -124,7 +124,7 @@ div.headerlink a:link {
 }
 
 td#menu-header {
-  background: transparent url(mainmenu_button.png) repeat-x scroll 0 0;
+  background: transparent url(mainmenu_button_h32px.png) repeat-x scroll 0 0;
   font-weight: bold;
   padding: 0px;
   text-align: center;
