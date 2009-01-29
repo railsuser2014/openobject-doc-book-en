@@ -1,6 +1,10 @@
 
-.. _installation-windows-server-link:
+.. index::
+   single: Installation; Open ERP Server (Windows)
+   single: Open ERP Server; Installation (Windows)
+.. 
 
+.. _installation-windows-server-link:
 
 Open ERP Server Installation on Windows
 =======================================

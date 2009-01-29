@@ -1,4 +1,9 @@
 
+.. index::
+   single: Installation; PostgreSQL
+   single: PostgreSQL; Installation
+.. 
+
 .. _postgresql-server-installation:
 
 PostgreSQL Server installation and configuration
@@ -29,6 +34,11 @@ the `PostgreSQL download page <http://www.postgresql.org/download/windows>`__
 
 Depending on your need, choose either the *One Click Installer* or the
 *pgInstaller* and click on the executable you've just downloaded.
+
+.. index::
+   single: PostgreSQL; setup a user
+   single: PostgreSQL; setup a database
+.. 
 
 Setup a PostgreSQL user and database
 ++++++++++++++++++++++++++++++++++++

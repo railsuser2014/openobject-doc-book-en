@@ -4,6 +4,10 @@
 Installation
 ============
 
+.. index:: Installation
+
+.. 
+
 .. toctree::
     :glob:
 
