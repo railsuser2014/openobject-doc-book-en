@@ -218,7 +218,7 @@ RML reports don't require programming but require two simple XML files to be wri
 
 .. *
 
-.. image:: images/automatic-reports.png
+.. image:: images/Automatic-reports.png
 
 The role of the XML template is to describe which fields of the resource have to be exported (by the server). The XSL:RML style sheet deals with the layout of the exported data as well as the "static text" of reports. Static text is referring to the text which is common to all reports of the same type (for example, the title of table columns).
 Example
