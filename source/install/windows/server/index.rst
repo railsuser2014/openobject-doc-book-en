@@ -260,8 +260,11 @@ configurations.
 Be extremely cautious when editing the server configuration directly, you can crash the
 entire system with inappropriate values.
 
-.. note::
+Congratulations, you have successfully installed the Open ERP Server
+--------------------------------------------------------------------
 
-    Congratulations, you have successfully installed the Open ERP Server
-
+For more information, please take a look at
+the :ref:`Additional Installation Information and
+Troubleshooting <troubleshooting-and-windows-complementary-install-information>` page 
+where you can find some troubleshooting examples.
 

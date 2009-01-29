@@ -12,4 +12,5 @@ Installation
     windows/client/index
     windows/server/index
     postgresql
+    windows/server/complementary_install_information
 
