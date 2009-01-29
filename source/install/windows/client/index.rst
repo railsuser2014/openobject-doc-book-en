@@ -1,8 +1,8 @@
 
 .. _installation-windows-client-link:
 
-OpenERP Client Installation on Windows
-======================================
+Open ERP Client Installation on Windows
+=======================================
 
 The Windows client installation is very simple. There are 6 stages :
 
@@ -18,28 +18,22 @@ Open ERP Client. The client needs the server to run. You can install the server
 application on your computer, or on an independent server accessible by
 network.
 
-Installation of the client
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Downloading the Open ERP client
+-------------------------------
 
-Get Open ERP Client
-###################
-
-Download:
-
-    Open ERP Client
-    File: tinyerp-client-X.X.X.exe
-    http://openerp.com/downloads.html
+The Open ERP client can be downloaded from
+the `Open ERP website's download page <http://www.openerp.com/index.php?option=com_content&view=article&id=18&Itemid=28>`_
 
 
-Install the Client
-##################
+Installing the Open ERP client
+------------------------------
 
-Select the installation path
+CLick on the executable installation file you've just downloaded and select the installation path.
 
 .. image:: ../../img/Client.01.install_path.png
 
-Launching the Client
-####################
+Starting the Open ERP client
+++++++++++++++++++++++++++++
 
 The installation program creates shortcuts in the main program menu and on the desktop.
 Be sure to have an Open ERP Server running somewhere (on your computer or on a

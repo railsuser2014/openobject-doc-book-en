@@ -21,7 +21,7 @@ You also need to install the following python libraries:
 
     You'll also need a pdf viewer (eg. xpdf, acroread, kpdf).
 
-    See the :ref:`Configuring a pdf viewer section <configure-pdf-viewer-link>`
+    See the :ref:`configure-pdf-viewer-link` Section.
 
 Example on Ubuntu
 +++++++++++++++++
@@ -96,7 +96,7 @@ for previewing PDF. The client will try to find one of these executables (in thi
 
 If you  want to use another pdf viewer or if you don't want to use the first
 one the client will find. You can edit the Open ERP configuration file normally
-located in ``~/.terprc``. Find the ``[printer`` section and edit the
+located in ``~/.terprc``. Find the ``[printer]`` section and edit the
 ``softpath`` parameter. For example: ::
 
     [printer]
