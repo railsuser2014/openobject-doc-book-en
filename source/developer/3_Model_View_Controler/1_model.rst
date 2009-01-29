@@ -234,7 +234,7 @@ Define a variable's value visible in the view's context (or an on-change functio
     *Example*: context={lang=’fr’} 
 
 
-:selection:
+:select:
 
 select the default search level on views. 1 search field always appears. 2: appears only in advanced search mode.
 
