@@ -1,8 +1,13 @@
 
+.. index::
+   single: Installation; Open ERP Server (Linux)
+   single: Open ERP Server; Installation (Linux)
+.. 
+
 .. _installation-linux-server-link:
 
-OpenERP Server Installation on Linux
-====================================
+Open ERP Server Installation on Linux
+=====================================
 
 Installing the required packages
 --------------------------------

@@ -1,10 +1,16 @@
 
+.. index::
+   single: Installation; Windows installation quirks
+   single: Installation; Windows Vista
+   single: Installation; Windows 2000/XP
+.. 
+
 .. _troubleshooting-and-windows-complementary-install-information:
 
 Troubleshooting and Windows Complementary Install Information
 =============================================================
 
-Windows VISTA
+Windows Vista
 -------------
 
 For Windows Vista installation please review this forum posts

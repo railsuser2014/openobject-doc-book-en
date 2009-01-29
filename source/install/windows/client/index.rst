@@ -1,4 +1,9 @@
 
+.. index::
+   single: Installation; Open ERP Client (Windows)
+   single: Open ERP Client; Installation (Windows)
+.. 
+
 .. _installation-windows-client-link:
 
 Open ERP Client Installation on Windows

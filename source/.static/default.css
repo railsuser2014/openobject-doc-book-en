@@ -129,7 +129,7 @@ div.openobject-header td.headerpic {
 }
 
 td#menu-header {
-  background: transparent url(mainmenu_button_h32px.png) repeat-x scroll 0 0;
+  background: transparent url(mainmenu_button_h29px.png) repeat-x scroll 0 0;
   font-weight: bold;
   padding: 0px;
   text-align: center;
@@ -143,9 +143,8 @@ td#menu-breadcrumb {
 }
 
 td#menu-breadcrumb div {
-  font-size: 80%;
+  font-size: 70%;
 }
-
 
 /* :::: LAYOUT :::: */
 
@@ -208,7 +207,7 @@ div.related-tiny {
   background-color: #666;
   color:#FFF;
   width: 100%;
-  line-height: 30px;
+  line-height: 28px;
   font-size: 90%;
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
@@ -228,16 +227,21 @@ div.related-tiny li {
     display: inline;
 }
 
+div.related-tiny a {
+  color:#FFF;
+}
+
 div.related-tiny li.right {
     float: right;
     margin-right: 5px;
-    xxxposition: relative;
-    xxxtop: -15px;
-    xxxz-index: 200;
+    position: relative;
+    top: 25px;
+    z-index: 99;
 }
 
-div.related-tiny a {
-  color:#FFF;
+div.related-tiny li.right a {
+    color: black;
+    background-color: white;
 }
 
 /* ::: TOC :::: */

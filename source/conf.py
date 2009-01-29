@@ -66,7 +66,7 @@ today_fmt = '%Y-%m-%d'
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
-#exclude_trees = ['book', 'bi', 'book', 'contribute', 'customize', 'developer', 'features', 'technical_guide']
+#exclude_trees = ['book', 'bi', 'customize', 'developer', 'features', 'technical_guide']
 exclude_trees = []
 
 # The reST default role (used for this markup: `text`) to use for all documents.

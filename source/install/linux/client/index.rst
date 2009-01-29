@@ -1,4 +1,9 @@
 
+.. index::
+   single: Installation; Open ERP Client (Linux)
+   single: Open ERP Client; Installation (Linux)
+.. 
+
 .. _installation-linux-client-link:
 
 OpenERP Client Installation on Linux
@@ -71,6 +76,11 @@ The client can be installed very easily using the *setup.py* file: ::
 You can now run the client using the following command: ::
 
   openerp-client
+
+.. index::
+   single: Open ERP Client; Configuring a pdf viewer
+   single: pdf viewer
+.. 
 
 .. _configure-pdf-viewer-link:
 
