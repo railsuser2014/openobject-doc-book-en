@@ -1,6 +1,6 @@
 
-Module United Kingdom - minimal (*l10n_chart_uk_minimal*)
-=========================================================
+United Kingdom - minimal (*l10n_chart_uk_minimal*)
+==================================================
 :Module: l10n_chart_uk_minimal
 :Name: United Kingdom - minimal
 :Version: 5.0.1.1

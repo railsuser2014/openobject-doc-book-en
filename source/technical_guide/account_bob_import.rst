@@ -1,6 +1,6 @@
 
-Module Import accounting entries from Bob (*account_bob_import*)
-================================================================
+Import accounting entries from Bob (*account_bob_import*)
+=========================================================
 :Module: account_bob_import
 :Name: Import accounting entries from Bob
 :Version: 5.0.1.0

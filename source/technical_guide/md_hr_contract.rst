@@ -1,6 +1,6 @@
 
-Module Pilot Human Resource Management (*md_hr_contract*)
-=========================================================
+Pilot Human Resource Management (*md_hr_contract*)
+==================================================
 :Module: md_hr_contract
 :Name: Pilot Human Resource Management
 :Version: 5.0.1.0

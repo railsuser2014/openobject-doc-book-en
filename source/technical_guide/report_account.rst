@@ -1,6 +1,6 @@
 
-Module Account Reporting - Reporting (*report_account*)
-=======================================================
+Account Reporting - Reporting (*report_account*)
+================================================
 :Module: report_account
 :Name: Account Reporting - Reporting
 :Version: 5.0.1.0

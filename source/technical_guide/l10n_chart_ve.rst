@@ -1,6 +1,6 @@
 
-Module Venezuela -Chart of Account (*l10n_chart_ve*)
-====================================================
+Venezuela -Chart of Account (*l10n_chart_ve*)
+=============================================
 :Module: l10n_chart_ve
 :Name: Venezuela -Chart of Account
 :Version: 5.0.1.0

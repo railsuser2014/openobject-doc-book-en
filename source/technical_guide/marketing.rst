@@ -1,6 +1,6 @@
 
-Module Marketing Campaigns (*marketing*)
-========================================
+Marketing Campaigns (*marketing*)
+=================================
 :Module: marketing
 :Name: Marketing Campaigns
 :Version: 5.0.1.0

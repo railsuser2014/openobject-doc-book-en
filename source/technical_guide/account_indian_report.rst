@@ -1,6 +1,6 @@
 
-Module Indian Account Reporting - Reporting (*account_indian_report*)
-=====================================================================
+Indian Account Reporting - Reporting (*account_indian_report*)
+==============================================================
 :Module: account_indian_report
 :Name: Indian Account Reporting - Reporting
 :Version: 5.0.1.0

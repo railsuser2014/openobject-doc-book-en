@@ -1,6 +1,6 @@
 
-Module Sales Server Action (*sales_server_action*)
-==================================================
+Sales Server Action (*sales_server_action*)
+===========================================
 :Module: sales_server_action
 :Name: Sales Server Action
 :Version: 5.0.5.0

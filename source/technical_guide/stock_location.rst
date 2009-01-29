@@ -1,6 +1,6 @@
 
-Module Stock Location Paths (*stock_location*)
-==============================================
+Stock Location Paths (*stock_location*)
+=======================================
 :Module: stock_location
 :Name: Stock Location Paths
 :Version: 5.0.1.0

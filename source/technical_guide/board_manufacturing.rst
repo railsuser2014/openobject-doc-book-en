@@ -1,6 +1,6 @@
 
-Module Board for manufacturing (*board_manufacturing*)
-======================================================
+Board for manufacturing (*board_manufacturing*)
+===============================================
 :Module: board_manufacturing
 :Name: Board for manufacturing
 :Version: 5.0.1.0

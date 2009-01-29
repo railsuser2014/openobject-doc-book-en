@@ -1,6 +1,6 @@
 
-Module OScommerce Interface / ZenCart (*esale_osc*)
-===================================================
+OScommerce Interface / ZenCart (*esale_osc*)
+============================================
 :Module: esale_osc
 :Name: OScommerce Interface / ZenCart
 :Version: 5.0.1.0

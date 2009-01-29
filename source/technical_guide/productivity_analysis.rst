@@ -1,6 +1,6 @@
 
-Module Productivity Analysis (*productivity_analysis*)
-======================================================
+Productivity Analysis (*productivity_analysis*)
+===============================================
 :Module: productivity_analysis
 :Name: Productivity Analysis
 :Version: 5.0.1.0

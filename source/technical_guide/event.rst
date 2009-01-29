@@ -1,6 +1,6 @@
 
-Module Event (*event*)
-======================
+Event (*event*)
+===============
 :Module: event
 :Name: Event
 :Version: 5.0.0.1

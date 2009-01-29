@@ -1,6 +1,6 @@
 
-Module CCI Account (*cci_account*)
-==================================
+CCI Account (*cci_account*)
+===========================
 :Module: cci_account
 :Name: CCI Account
 :Version: 5.0.1.0

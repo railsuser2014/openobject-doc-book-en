@@ -1,6 +1,6 @@
 
-Module Board for accountant (*board_account*)
-=============================================
+Board for accountant (*board_account*)
+======================================
 :Module: board_account
 :Name: Board for accountant
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Bookstore Profile (*profile_bookstore*)
-==============================================
+Bookstore Profile (*profile_bookstore*)
+=======================================
 :Module: profile_bookstore
 :Name: Bookstore Profile
 :Version: False

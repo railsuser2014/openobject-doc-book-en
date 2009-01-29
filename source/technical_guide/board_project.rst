@@ -1,6 +1,6 @@
 
-Module Board for project users (*board_project*)
-================================================
+Board for project users (*board_project*)
+=========================================
 :Module: board_project
 :Name: Board for project users
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Project Management (*project*)
-=====================================
+Project Management (*project*)
+==============================
 :Module: project
 :Name: Project Management
 :Version: 5.0.1.1

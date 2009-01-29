@@ -1,6 +1,6 @@
 
-Module Customer Relationship Management (*crm_configuration*)
-=============================================================
+Customer Relationship Management (*crm_configuration*)
+======================================================
 :Module: crm_configuration
 :Name: Customer Relationship Management
 :Version: 5.0.1.0

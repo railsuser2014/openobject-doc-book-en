@@ -27,37 +27,14 @@ You'll work in two areas: on products in the first part of this chapter, and on 
 
     * Building: Plan.
 
-Management of production
-------------------------
-
-Production Orders describe the operations that need to be carried out and the raw materials usage for each stage of production, You use the specifications to work out the raw material requirements and the manufacturing orders needed for the finished products.
-
-Manufacturing will have the following consequences:
-
-* Stock reduction: consumption of raw materials,
-
-* Stock increase: production of finished goods,
-
-* Analytic costs: manufacturing operations,
-
-* Added accounting value of stock: by the creation of value following the transformation of products.
-
 .. raw:: html
 
     <div class="all-toctree">
 
 .. toctree::
 
-   5_13_Manufacturing_bom   
-   5_13_Manufacturing_bom_multi   
-   5_13_Manufacturing_manufacturing   
-   5_13_Manufacturing_wf   
-   5_13_Manufacturing_order   
-   5_13_Manufacturing_scheduling   
-   5_13_Manufacturing_operations   
-   5_13_Manufacturing_scores   
-   5_13_Manufacturing_subcontracting   
-   5_13_Manufacturing_repairs   
+   5_13_Manufacturing_production   
+   5_13_Manufacturing_lead   
 
 .. raw:: html
 

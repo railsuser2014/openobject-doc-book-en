@@ -1,6 +1,6 @@
 
-Module Dashboard for CRM Configuration (*board_crm_configuration*)
-==================================================================
+Dashboard for CRM Configuration (*board_crm_configuration*)
+===========================================================
 :Module: board_crm_configuration
 :Name: Dashboard for CRM Configuration
 :Version: 5.0.1.0

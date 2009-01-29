@@ -1,6 +1,6 @@
 
-Module Direct Marketing (*dm*)
-==============================
+Direct Marketing (*dm*)
+=======================
 :Module: dm
 :Name: Direct Marketing
 :Version: 5.0.1.0

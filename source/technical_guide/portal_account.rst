@@ -1,6 +1,6 @@
 
-Module Portal Management - Account (*portal_account*)
-=====================================================
+Portal Management - Account (*portal_account*)
+==============================================
 :Module: portal_account
 :Name: Portal Management - Account
 :Version: 5.0.0.1

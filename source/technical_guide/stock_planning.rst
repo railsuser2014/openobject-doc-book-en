@@ -1,6 +1,6 @@
 
-Module Master Procurement Schedule (*stock_planning*)
-=====================================================
+Master Procurement Schedule (*stock_planning*)
+==============================================
 :Module: stock_planning
 :Name: Master Procurement Schedule
 :Version: 5.0.1.0

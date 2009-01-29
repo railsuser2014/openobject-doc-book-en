@@ -1,6 +1,6 @@
 
-Module eSale Interface - Joomla (*esale_joomla*)
-================================================
+eSale Interface - Joomla (*esale_joomla*)
+=========================================
 :Module: esale_joomla
 :Name: eSale Interface - Joomla
 :Version: 5.0.1.0

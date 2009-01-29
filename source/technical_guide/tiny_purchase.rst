@@ -1,6 +1,6 @@
 
-Module Tiny purchase (*tiny_purchase*)
-======================================
+Tiny purchase (*tiny_purchase*)
+===============================
 :Module: tiny_purchase
 :Name: Tiny purchase
 :Version: 5.0.0.1

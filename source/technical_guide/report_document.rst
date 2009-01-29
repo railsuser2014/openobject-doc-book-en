@@ -1,6 +1,6 @@
 
-Module Document Management - Reporting (*report_document*)
-==========================================================
+Document Management - Reporting (*report_document*)
+===================================================
 :Module: report_document
 :Name: Document Management - Reporting
 :Version: 5.0.1.0

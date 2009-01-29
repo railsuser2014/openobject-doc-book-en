@@ -1,6 +1,6 @@
 
-Module Module Merger (*base_module_merge*)
-==========================================
+Module Merger (*base_module_merge*)
+===================================
 :Module: base_module_merge
 :Name: Module Merger
 :Version: 5.0.1.0

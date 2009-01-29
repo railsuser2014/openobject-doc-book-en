@@ -1,6 +1,6 @@
 
-Module Event - Project (*event_project*)
-========================================
+Event - Project (*event_project*)
+=================================
 :Module: event_project
 :Name: Event - Project
 :Version: 5.0.0.1

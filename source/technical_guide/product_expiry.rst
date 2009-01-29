@@ -1,6 +1,6 @@
 
-Module Products date of expiry (*product_expiry*)
-=================================================
+Products date of expiry (*product_expiry*)
+==========================================
 :Module: product_expiry
 :Name: Products date of expiry
 :Version: 5.0.1.0

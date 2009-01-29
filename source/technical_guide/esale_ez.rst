@@ -1,6 +1,6 @@
 
-Module EZ Publish eCommerce Interface (*esale_ez*)
-==================================================
+EZ Publish eCommerce Interface (*esale_ez*)
+===========================================
 :Module: esale_ez
 :Name: EZ Publish eCommerce Interface
 :Version: False

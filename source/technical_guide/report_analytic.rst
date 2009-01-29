@@ -1,6 +1,6 @@
 
-Module Analytic Account Reporting (*report_analytic*)
-=====================================================
+Analytic Account Reporting (*report_analytic*)
+==============================================
 :Module: report_analytic
 :Name: Analytic Account Reporting
 :Version: 5.0.1.0

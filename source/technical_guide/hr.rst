@@ -1,6 +1,6 @@
 
-Module Human Resources (*hr*)
-=============================
+Human Resources (*hr*)
+======================
 :Module: hr
 :Name: Human Resources
 :Version: 5.0.1.1

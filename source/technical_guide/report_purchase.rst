@@ -1,6 +1,6 @@
 
-Module Purchase Management - Reporting (*report_purchase*)
-==========================================================
+Purchase Management - Reporting (*report_purchase*)
+===================================================
 :Module: report_purchase
 :Name: Purchase Management - Reporting
 :Version: 5.0.1.0

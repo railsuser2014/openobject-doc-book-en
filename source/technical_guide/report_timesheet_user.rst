@@ -1,6 +1,6 @@
 
-Module Report for timesheet (*report_timesheet_user*)
-=====================================================
+Report for timesheet (*report_timesheet_user*)
+==============================================
 :Module: report_timesheet_user
 :Name: Report for timesheet
 :Version: 5.0.1.0

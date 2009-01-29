@@ -1,6 +1,6 @@
 
-Module Board for DM users (*board_dm*)
-======================================
+Board for DM users (*board_dm*)
+===============================
 :Module: board_dm
 :Name: Board for DM users
 :Version: 5.0.1.0

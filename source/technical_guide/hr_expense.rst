@@ -1,6 +1,6 @@
 
-Module Human Resources Expenses Tracking (*hr_expense*)
-=======================================================
+Human Resources Expenses Tracking (*hr_expense*)
+================================================
 :Module: hr_expense
 :Name: Human Resources Expenses Tracking
 :Version: 5.0.1.0

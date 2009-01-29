@@ -1,6 +1,6 @@
 
-Module Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
-======================================================================
+Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
+===============================================================
 :Module: analytic_journal_billing_rate
 :Name: Analytic Journal Billing Rate
 :Version: 5.0.1.0

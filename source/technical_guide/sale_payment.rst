@@ -1,6 +1,6 @@
 
-Module Sale payment type (*sale_payment*)
-=========================================
+Sale payment type (*sale_payment*)
+==================================
 :Module: sale_payment
 :Name: Sale payment type
 :Version: 5.0.1.0

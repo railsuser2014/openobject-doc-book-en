@@ -1,6 +1,6 @@
 
-Module MRP Management - Reporting (*report_mrp*)
-================================================
+MRP Management - Reporting (*report_mrp*)
+=========================================
 :Module: report_mrp
 :Name: MRP Management - Reporting
 :Version: 5.0.1.0

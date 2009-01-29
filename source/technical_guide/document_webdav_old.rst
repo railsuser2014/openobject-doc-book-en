@@ -1,6 +1,6 @@
 
-Module Integrated Document Management System (*document_webdav_old*)
-====================================================================
+Integrated Document Management System (*document_webdav_old*)
+=============================================================
 :Module: document_webdav_old
 :Name: Integrated Document Management System
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Project Timesheet (*project_timesheet*)
-==============================================
+Project Timesheet (*project_timesheet*)
+=======================================
 :Module: project_timesheet
 :Name: Project Timesheet
 :Version: 5.0.1.0

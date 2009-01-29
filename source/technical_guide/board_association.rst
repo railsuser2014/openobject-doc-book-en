@@ -1,6 +1,6 @@
 
-Module Dashboard for Associations (*board_association*)
-=======================================================
+Dashboard for Associations (*board_association*)
+================================================
 :Module: board_association
 :Name: Dashboard for Associations
 :Version: 5.0.1.0

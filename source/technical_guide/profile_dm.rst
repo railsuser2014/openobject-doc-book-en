@@ -1,6 +1,6 @@
 
-Module Direct Marketing profile (*profile_dm*)
-==============================================
+Direct Marketing profile (*profile_dm*)
+=======================================
 :Module: profile_dm
 :Name: Direct Marketing profile
 :Version: False

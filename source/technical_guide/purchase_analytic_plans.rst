@@ -1,6 +1,6 @@
 
-Module Purchase Analytic Distribution Management (*purchase_analytic_plans*)
-============================================================================
+Purchase Analytic Distribution Management (*purchase_analytic_plans*)
+=====================================================================
 :Module: purchase_analytic_plans
 :Name: Purchase Analytic Distribution Management
 :Version: 5.0.1.0

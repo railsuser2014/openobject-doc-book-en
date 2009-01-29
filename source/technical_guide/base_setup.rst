@@ -1,6 +1,6 @@
 
-Module Base Setup (*base_setup*)
-================================
+Base Setup (*base_setup*)
+=========================
 :Module: base_setup
 :Name: Base Setup
 :Version: 5.0.1.0

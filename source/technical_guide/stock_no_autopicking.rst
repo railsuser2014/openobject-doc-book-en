@@ -1,6 +1,6 @@
 
-Module Stock No Auto-Picking (*stock_no_autopicking*)
-=====================================================
+Stock No Auto-Picking (*stock_no_autopicking*)
+==============================================
 :Module: stock_no_autopicking
 :Name: Stock No Auto-Picking
 :Version: 5.0.1.0

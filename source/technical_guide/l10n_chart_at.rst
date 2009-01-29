@@ -1,6 +1,6 @@
 
-Module Austria - Chart of Accounts (*l10n_chart_at*)
-====================================================
+Austria - Chart of Accounts (*l10n_chart_at*)
+=============================================
 :Module: l10n_chart_at
 :Name: Austria - Chart of Accounts
 :Version: 5.0.1.0

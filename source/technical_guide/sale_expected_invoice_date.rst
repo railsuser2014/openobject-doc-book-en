@@ -1,6 +1,6 @@
 
-Module Sale Expected Invoice Date (*sale_expected_invoice_date*)
-================================================================
+Sale Expected Invoice Date (*sale_expected_invoice_date*)
+=========================================================
 :Module: sale_expected_invoice_date
 :Name: Sale Expected Invoice Date
 :Version: 5.0.0.1

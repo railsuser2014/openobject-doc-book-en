@@ -1,6 +1,6 @@
 
-Module Human Resources (Timesheet encoding) (*hr_timesheet*)
-============================================================
+Human Resources (Timesheet encoding) (*hr_timesheet*)
+=====================================================
 :Module: hr_timesheet
 :Name: Human Resources (Timesheet encoding)
 :Version: 5.0.1.0

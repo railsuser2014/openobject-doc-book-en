@@ -1,6 +1,6 @@
 
-Module Products & Pricelists (*product_qt*)
-===========================================
+Products & Pricelists (*product_qt*)
+====================================
 :Module: product_qt
 :Name: Products & Pricelists
 :Version: 5.0.1.0

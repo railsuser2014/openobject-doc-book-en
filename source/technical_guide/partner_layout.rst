@@ -1,6 +1,6 @@
 
-Module Partner Layout (*partner_layout*)
-========================================
+Partner Layout (*partner_layout*)
+=================================
 :Module: partner_layout
 :Name: Partner Layout
 :Version: 5.0.1.0

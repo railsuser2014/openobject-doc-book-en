@@ -1,6 +1,6 @@
 
-Module Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
-================================================================
+Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
+=========================================================
 :Module: l10n_lu
 :Name: Luxembourg - Plan Comptable Minimum Normalise
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Bookstore Verticalisation (*bookstore*)
-==============================================
+Bookstore Verticalisation (*bookstore*)
+=======================================
 :Module: bookstore
 :Name: Bookstore Verticalisation
 :Version: 5.0.1.0

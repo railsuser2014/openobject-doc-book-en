@@ -1,6 +1,6 @@
 
-Module Telemarketing Management (*crm_telemarketing*)
-=====================================================
+Telemarketing Management (*crm_telemarketing*)
+==============================================
 :Module: crm_telemarketing
 :Name: Telemarketing Management
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module report_account_analytic (*account_analytic_analysis*)
-============================================================
+report_account_analytic (*account_analytic_analysis*)
+=====================================================
 :Module: account_analytic_analysis
 :Name: report_account_analytic
 :Version: 5.0.1.1

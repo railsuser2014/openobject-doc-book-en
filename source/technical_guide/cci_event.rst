@@ -1,6 +1,6 @@
 
-Module CCI EVENT (*cci_event*)
-==============================
+CCI EVENT (*cci_event*)
+=======================
 :Module: cci_event
 :Name: CCI EVENT
 :Version: 5.0.1.0

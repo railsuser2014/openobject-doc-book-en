@@ -1,6 +1,6 @@
 
-Module SMS and Email spam to partner (*partner_spam*)
-=====================================================
+SMS and Email spam to partner (*partner_spam*)
+==============================================
 :Module: partner_spam
 :Name: SMS and Email spam to partner
 :Version: 5.0.1.0

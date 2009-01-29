@@ -1,6 +1,6 @@
 
-Module Human Resources: Holidays management (*hr_holidays_cci*)
-===============================================================
+Human Resources: Holidays management (*hr_holidays_cci*)
+========================================================
 :Module: hr_holidays_cci
 :Name: Human Resources: Holidays management
 :Version: False

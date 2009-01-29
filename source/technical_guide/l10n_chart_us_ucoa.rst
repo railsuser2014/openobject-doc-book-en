@@ -1,6 +1,6 @@
 
-Module United States - Chart of Accounts for UCOA (*l10n_chart_us_ucoa*)
-========================================================================
+United States - Chart of Accounts for UCOA (*l10n_chart_us_ucoa*)
+=================================================================
 :Module: l10n_chart_us_ucoa
 :Name: United States - Chart of Accounts for UCOA
 :Version: 5.0.1.0

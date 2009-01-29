@@ -1,6 +1,6 @@
 
-Module EDI (*edi*)
-==================
+EDI (*edi*)
+===========
 :Module: edi
 :Name: EDI
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Base Contact Team (*base_contact_team*)
-==============================================
+Base Contact Team (*base_contact_team*)
+=======================================
 :Module: base_contact_team
 :Name: Base Contact Team
 :Version: 5.0.0.1

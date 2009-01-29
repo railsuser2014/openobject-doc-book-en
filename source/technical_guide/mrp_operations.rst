@@ -1,6 +1,6 @@
 
-Module Workcenter Production start end workflow (*mrp_operations*)
-==================================================================
+Workcenter Production start end workflow (*mrp_operations*)
+===========================================================
 :Module: mrp_operations
 :Name: Workcenter Production start end workflow
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Base Report Model (*base_report_model*)
-==============================================
+Base Report Model (*base_report_model*)
+=======================================
 :Module: base_report_model
 :Name: Base Report Model
 :Version: 5.0.0.1

@@ -1,6 +1,6 @@
 
-Module Asset management (*account_asset*)
-=========================================
+Asset management (*account_asset*)
+==================================
 :Module: account_asset
 :Name: Asset management
 :Version: 5.0.1.0

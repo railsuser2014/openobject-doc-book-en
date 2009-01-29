@@ -1,6 +1,6 @@
 
-Module Sale Agent Information (*commission_rate*)
-=================================================
+Sale Agent Information (*commission_rate*)
+==========================================
 :Module: commission_rate
 :Name: Sale Agent Information
 :Version: 5.0.0.1

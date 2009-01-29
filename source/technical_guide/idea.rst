@@ -1,6 +1,6 @@
 
-Module Idea Manager (*idea*)
-============================
+Idea Manager (*idea*)
+=====================
 :Module: idea
 :Name: Idea Manager
 :Version: 5.0.0.1

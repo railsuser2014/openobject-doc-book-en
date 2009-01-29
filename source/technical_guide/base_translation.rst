@@ -1,6 +1,6 @@
 
-Module Translation (*base_translation*)
-=======================================
+Translation (*base_translation*)
+================================
 :Module: base_translation
 :Name: Translation
 :Version: 5.0.1.0

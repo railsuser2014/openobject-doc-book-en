@@ -1,6 +1,6 @@
 
-Module Currency Rates (*currency_rate*)
-=======================================
+Currency Rates (*currency_rate*)
+================================
 :Module: currency_rate
 :Name: Currency Rates
 :Version: 5.0.1.0

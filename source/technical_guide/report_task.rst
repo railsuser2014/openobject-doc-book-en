@@ -1,6 +1,6 @@
 
-Module Report on tasks by user for projects (*report_task*)
-===========================================================
+Report on tasks by user for projects (*report_task*)
+====================================================
 :Module: report_task
 :Name: Report on tasks by user for projects
 :Version: 5.0.1.0

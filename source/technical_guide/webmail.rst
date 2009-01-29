@@ -1,6 +1,6 @@
 
-Module Webmail (*webmail*)
-==========================
+Webmail (*webmail*)
+===================
 :Module: webmail
 :Name: Webmail
 :Version: 5.0.1.0

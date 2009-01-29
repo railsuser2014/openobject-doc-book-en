@@ -1,6 +1,6 @@
 
-Module Google Map (*google_map*)
-================================
+Google Map (*google_map*)
+=========================
 :Module: google_map
 :Name: Google Map
 :Version: 5.0.1.0

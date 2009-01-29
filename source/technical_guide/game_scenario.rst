@@ -1,6 +1,6 @@
 
-Module Scenario of games (*game_scenario*)
-==========================================
+Scenario of games (*game_scenario*)
+===================================
 :Module: game_scenario
 :Name: Scenario of games
 :Version: 5.0.1.0

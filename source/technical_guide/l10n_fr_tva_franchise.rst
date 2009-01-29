@@ -1,6 +1,6 @@
 
-Module France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
-=======================================================================================
+France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
+================================================================================
 :Module: l10n_fr_tva_franchise
 :Name: France - Franchise de TVA (ex: Micro Entreprise, etc.)
 :Version: False

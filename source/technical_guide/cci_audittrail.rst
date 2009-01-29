@@ -1,6 +1,6 @@
 
-Module Audit Trail (*cci_audittrail*)
-=====================================
+Audit Trail (*cci_audittrail*)
+==============================
 :Module: cci_audittrail
 :Name: Audit Trail
 :Version: 5.0.1.0

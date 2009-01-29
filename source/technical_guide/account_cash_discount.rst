@@ -1,6 +1,6 @@
 
-Module Payement Term with Cash Discount (*account_cash_discount*)
-=================================================================
+Payement Term with Cash Discount (*account_cash_discount*)
+==========================================================
 :Module: account_cash_discount
 :Name: Payement Term with Cash Discount
 :Version: 5.0.1.0

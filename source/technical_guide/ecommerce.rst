@@ -1,6 +1,6 @@
 
-Module E-Commerce (*ecommerce*)
-===============================
+E-Commerce (*ecommerce*)
+========================
 :Module: ecommerce
 :Name: E-Commerce
 :Version: 5.0.1.0

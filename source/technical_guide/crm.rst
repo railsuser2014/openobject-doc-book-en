@@ -1,6 +1,6 @@
 
-Module Customer & Supplier Relationship Management (*crm*)
-==========================================================
+Customer & Supplier Relationship Management (*crm*)
+===================================================
 :Module: crm
 :Name: Customer & Supplier Relationship Management
 :Version: 5.0.1.0

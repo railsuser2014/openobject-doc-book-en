@@ -1,6 +1,6 @@
 
-Module CCI Sales (*cci_sales*)
-==============================
+CCI Sales (*cci_sales*)
+=======================
 :Module: cci_sales
 :Name: CCI Sales
 :Version: 5.0.1.0

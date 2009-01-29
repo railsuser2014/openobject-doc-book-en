@@ -1,6 +1,6 @@
 
-Module Hotel Housekeeping (*hotel_housekeeping*)
-================================================
+Hotel Housekeeping (*hotel_housekeeping*)
+=========================================
 :Module: hotel_housekeeping
 :Name: Hotel Housekeeping
 :Version: 5.0.1.0

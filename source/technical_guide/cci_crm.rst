@@ -1,6 +1,6 @@
 
-Module CCI CRM (*cci_crm*)
-==========================
+CCI CRM (*cci_crm*)
+===================
 :Module: cci_crm
 :Name: CCI CRM
 :Version: 5.0.1.0

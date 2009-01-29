@@ -1,6 +1,6 @@
 
-Module Auction Management - Reporting (*report_auction*)
-========================================================
+Auction Management - Reporting (*report_auction*)
+=================================================
 :Module: report_auction
 :Name: Auction Management - Reporting
 :Version: 5.0.1.0

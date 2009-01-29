@@ -1,6 +1,6 @@
 
-Module MRP Sub Product (*mrp_subproduct*)
-=========================================
+MRP Sub Product (*mrp_subproduct*)
+==================================
 :Module: mrp_subproduct
 :Name: MRP Sub Product
 :Version: 5.0.1.0

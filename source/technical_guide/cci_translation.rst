@@ -1,6 +1,6 @@
 
-Module CCI Translation (*cci_translation*)
-==========================================
+CCI Translation (*cci_translation*)
+===================================
 :Module: cci_translation
 :Name: CCI Translation
 :Version: 5.0.1.0

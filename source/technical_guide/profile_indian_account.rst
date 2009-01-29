@@ -1,6 +1,6 @@
 
-Module Indian Accounting (*profile_indian_account*)
-===================================================
+Indian Accounting (*profile_indian_account*)
+============================================
 :Module: profile_indian_account
 :Name: Indian Accounting
 :Version: False

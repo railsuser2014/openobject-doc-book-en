@@ -1,6 +1,6 @@
 
-Module United Kingdom Chart of Accounts (*l10n_chart_uk*)
-=========================================================
+United Kingdom Chart of Accounts (*l10n_chart_uk*)
+==================================================
 :Module: l10n_chart_uk
 :Name: United Kingdom Chart of Accounts
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Manufacturing industry profile (*profile_manufacturing*)
-===============================================================
+Manufacturing industry profile (*profile_manufacturing*)
+========================================================
 :Module: profile_manufacturing
 :Name: Manufacturing industry profile
 :Version: False

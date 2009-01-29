@@ -1,6 +1,6 @@
 
-Module Stock Management (*stock*)
-=================================
+Stock Management (*stock*)
+==========================
 :Module: stock
 :Name: Stock Management
 :Version: 5.0.1.1

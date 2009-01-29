@@ -1,6 +1,6 @@
 
-Module Base module quality (*base_module_quality*)
-==================================================
+Base module quality (*base_module_quality*)
+===========================================
 :Module: base_module_quality
 :Name: Base module quality
 :Version: 5.0.1.0

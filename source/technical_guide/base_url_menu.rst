@@ -1,6 +1,6 @@
 
-Module Url Menus (*base_url_menu*)
-==================================
+Url Menus (*base_url_menu*)
+===========================
 :Module: base_url_menu
 :Name: Url Menus
 :Version: 5.0.1.1

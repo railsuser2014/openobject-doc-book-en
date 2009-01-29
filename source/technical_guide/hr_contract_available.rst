@@ -1,6 +1,6 @@
 
-Module Human Resources Contracts (*hr_contract_available*)
-==========================================================
+Human Resources Contracts (*hr_contract_available*)
+===================================================
 :Module: hr_contract_available
 :Name: Human Resources Contracts
 :Version: False

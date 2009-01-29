@@ -1,6 +1,6 @@
 
-Module Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
-======================================================================
+Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
+===============================================================
 :Module: l10n_chart_ch_german
 :Name: Switzerland - German Chart of Accounts
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module France - Régime réel de TVA (*l10n_fr_tva_reel*)
-=======================================================
+France - Régime réel de TVA (*l10n_fr_tva_reel*)
+================================================
 :Module: l10n_fr_tva_reel
 :Name: France - Régime réel de TVA
 :Version: False

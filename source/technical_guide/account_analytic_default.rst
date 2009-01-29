@@ -1,6 +1,6 @@
 
-Module Account Analytic Default (*account_analytic_default*)
-============================================================
+Account Analytic Default (*account_analytic_default*)
+=====================================================
 :Module: account_analytic_default
 :Name: Account Analytic Default
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Timesheets (*hr_timesheet_sheet*)
-========================================
+Timesheets (*hr_timesheet_sheet*)
+=================================
 :Module: hr_timesheet_sheet
 :Name: Timesheets
 :Version: 5.0.1.0

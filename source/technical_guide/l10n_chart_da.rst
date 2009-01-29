@@ -1,6 +1,6 @@
 
-Module Denmark Chart of Accounts (*l10n_chart_da*)
-==================================================
+Denmark Chart of Accounts (*l10n_chart_da*)
+===========================================
 :Module: l10n_chart_da
 :Name: Denmark Chart of Accounts
 :Version: 5.0.1.0

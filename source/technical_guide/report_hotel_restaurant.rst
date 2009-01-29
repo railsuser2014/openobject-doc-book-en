@@ -1,6 +1,6 @@
 
-Module Restaurant Management - Reporting (*report_hotel_restaurant*)
-====================================================================
+Restaurant Management - Reporting (*report_hotel_restaurant*)
+=============================================================
 :Module: report_hotel_restaurant
 :Name: Restaurant Management - Reporting
 :Version: 5.0.1.0

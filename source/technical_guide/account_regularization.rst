@@ -1,6 +1,6 @@
 
-Module Account Regularizations (*account_regularization*)
-=========================================================
+Account Regularizations (*account_regularization*)
+==================================================
 :Module: account_regularization
 :Name: Account Regularizations
 :Version: 5.0.1.0

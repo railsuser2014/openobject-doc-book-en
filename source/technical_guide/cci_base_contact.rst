@@ -1,6 +1,6 @@
 
-Module CCI Base Contact (*cci_base_contact*)
-============================================
+CCI Base Contact (*cci_base_contact*)
+=====================================
 :Module: cci_base_contact
 :Name: CCI Base Contact
 :Version: 5.0.1.0

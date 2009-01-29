@@ -1,6 +1,6 @@
 
-Module Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)
-==========================================================================
+Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)
+===================================================================
 :Module: l10n_chart_se_food
 :Name: Sweden - Food industries - Chart of Accounts
 :Version: 5.0.1.0

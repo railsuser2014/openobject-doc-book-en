@@ -1,6 +1,6 @@
 
-Module Invoice with payment term lines (*account_invoice_payment_term*)
-=======================================================================
+Invoice with payment term lines (*account_invoice_payment_term*)
+================================================================
 :Module: account_invoice_payment_term
 :Name: Invoice with payment term lines
 :Version: 5.0.0.1

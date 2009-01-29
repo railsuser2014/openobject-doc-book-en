@@ -1,6 +1,6 @@
 
-Module Carriers and deliveries (*delivery*)
-===========================================
+Carriers and deliveries (*delivery*)
+====================================
 :Module: delivery
 :Name: Carriers and deliveries
 :Version: 5.0.1.0

@@ -18,7 +18,7 @@ a setting in each individual order.
 
     .. image:: images/sales_screenshot.png
 
-.. _features-link:
+
 
 
 Keypoints:

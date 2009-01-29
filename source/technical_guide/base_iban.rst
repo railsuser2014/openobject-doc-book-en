@@ -1,6 +1,6 @@
 
-Module IBAN (*base_iban*)
-=========================
+IBAN (*base_iban*)
+==================
 :Module: base_iban
 :Name: IBAN
 :Version: 5.0.1.0

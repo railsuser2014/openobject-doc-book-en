@@ -1,6 +1,6 @@
 
-Module Product extension to track sales and purchases (*product_extended*)
-==========================================================================
+Product extension to track sales and purchases (*product_extended*)
+===================================================================
 :Module: product_extended
 :Name: Product extension to track sales and purchases
 :Version: 5.0.1.0

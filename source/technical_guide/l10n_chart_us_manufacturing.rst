@@ -1,6 +1,6 @@
 
-Module United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manufacturing*)
-==================================================================================================
+United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manufacturing*)
+===========================================================================================
 :Module: l10n_chart_us_manufacturing
 :Name: United States - Chart of Accounts for Manufacturing Profile
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
-=============================================================
+Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
+======================================================
 :Module: l10n_be
 :Name: Belgium - Plan Comptable Minimum Normalise
 :Version: 5.0.1.1

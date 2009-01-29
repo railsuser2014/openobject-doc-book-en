@@ -1,6 +1,6 @@
 
-Module Tiny ERP Huissiers (*huissier*)
-======================================
+Tiny ERP Huissiers (*huissier*)
+===============================
 :Module: huissier
 :Name: Tiny ERP Huissiers
 :Version: False

@@ -1,6 +1,6 @@
 
-Module Invoice on analytic lines (*hr_timesheet_invoice*)
-=========================================================
+Invoice on analytic lines (*hr_timesheet_invoice*)
+==================================================
 :Module: hr_timesheet_invoice
 :Name: Invoice on analytic lines
 :Version: 5.0.1.0

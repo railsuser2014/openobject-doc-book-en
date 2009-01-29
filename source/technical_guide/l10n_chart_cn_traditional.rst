@@ -1,6 +1,6 @@
 
-Module China Traditional - Chart of Account (*l10n_chart_cn_traditional*)
-=========================================================================
+China Traditional - Chart of Account (*l10n_chart_cn_traditional*)
+==================================================================
 :Module: l10n_chart_cn_traditional
 :Name: China Traditional - Chart of Account
 :Version: 5.0.1.0

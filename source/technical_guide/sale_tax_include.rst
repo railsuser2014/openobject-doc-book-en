@@ -1,6 +1,6 @@
 
-Module Invoices and prices with taxes included (*sale_tax_include*)
-===================================================================
+Invoices and prices with taxes included (*sale_tax_include*)
+============================================================
 :Module: sale_tax_include
 :Name: Invoices and prices with taxes included
 :Version: 5.0.1.0

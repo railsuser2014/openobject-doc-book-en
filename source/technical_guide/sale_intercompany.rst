@@ -1,6 +1,6 @@
 
-Module Sale Inter-Company (*sale_intercompany*)
-===============================================
+Sale Inter-Company (*sale_intercompany*)
+========================================
 :Module: sale_intercompany
 :Name: Sale Inter-Company
 :Version: 5.0.1.0

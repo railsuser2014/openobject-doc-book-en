@@ -1,6 +1,6 @@
 
-Module Portal Management - Analytic Entries (*portal_analytic*)
-===============================================================
+Portal Management - Analytic Entries (*portal_analytic*)
+========================================================
 :Module: portal_analytic
 :Name: Portal Management - Analytic Entries
 :Version: 5.0.0.1

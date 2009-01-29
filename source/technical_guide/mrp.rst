@@ -1,6 +1,6 @@
 
-Module Manufacturing Resource Planning (*mrp*)
-==============================================
+Manufacturing Resource Planning (*mrp*)
+=======================================
 :Module: mrp
 :Name: Manufacturing Resource Planning
 :Version: 5.0.1.1

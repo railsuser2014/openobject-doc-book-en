@@ -1,6 +1,6 @@
 
-Module Hotel Management (*hotel*)
-=================================
+Hotel Management (*hotel*)
+==========================
 :Module: hotel
 :Name: Hotel Management
 :Version: 5.0.1.0

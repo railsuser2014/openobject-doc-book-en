@@ -1,6 +1,6 @@
 
-Module Timesheet - Reporting (*report_timesheet*)
-=================================================
+Timesheet - Reporting (*report_timesheet*)
+==========================================
 :Module: report_timesheet
 :Name: Timesheet - Reporting
 :Version: 5.0.1.0

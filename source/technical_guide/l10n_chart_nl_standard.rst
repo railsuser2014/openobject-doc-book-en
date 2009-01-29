@@ -1,6 +1,6 @@
 
-Module Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
-=========================================================================
+Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
+==================================================================
 :Module: l10n_chart_nl_standard
 :Name: Netherlands - Standard Chart of Account
 :Version: 5.0.1.0

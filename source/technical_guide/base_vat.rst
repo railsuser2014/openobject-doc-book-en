@@ -1,6 +1,6 @@
 
-Module VAT (*base_vat*)
-=======================
+VAT (*base_vat*)
+================
 :Module: base_vat
 :Name: VAT
 :Version: 5.0.1.0

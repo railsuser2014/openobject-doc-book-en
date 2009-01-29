@@ -1,6 +1,6 @@
 
-Module CCI Timesheet (*cci_timesheet*)
-======================================
+CCI Timesheet (*cci_timesheet*)
+===============================
 :Module: cci_timesheet
 :Name: CCI Timesheet
 :Version: 5.0.1.0

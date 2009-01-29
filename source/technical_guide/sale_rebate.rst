@@ -1,6 +1,6 @@
 
-Module Sales Management extented with rebates (*sale_rebate*)
-=============================================================
+Sales Management extented with rebates (*sale_rebate*)
+======================================================
 :Module: sale_rebate
 :Name: Sales Management extented with rebates
 :Version: False

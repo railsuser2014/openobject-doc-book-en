@@ -1,6 +1,6 @@
 
-Module Print Delivery Order (*sale_delivery_report*)
-====================================================
+Print Delivery Order (*sale_delivery_report*)
+=============================================
 :Module: sale_delivery_report
 :Name: Print Delivery Order
 :Version: 5.0.1.0

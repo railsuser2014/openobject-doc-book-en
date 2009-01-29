@@ -1,6 +1,6 @@
 
-Module Payment Order Export (*account_payment_export*)
-======================================================
+Payment Order Export (*account_payment_export*)
+===============================================
 :Module: account_payment_export
 :Name: Payment Order Export
 :Version: 5.0.1.0

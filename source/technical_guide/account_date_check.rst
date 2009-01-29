@@ -1,6 +1,6 @@
 
-Module Account Date check (*account_date_check*)
-================================================
+Account Date check (*account_date_check*)
+=========================================
 :Module: account_date_check
 :Name: Account Date check
 :Version: 5.0.1.0

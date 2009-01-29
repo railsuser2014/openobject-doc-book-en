@@ -1,6 +1,6 @@
 
-Module Sale agent Information (*commission_pricelist*)
-======================================================
+Sale agent Information (*commission_pricelist*)
+===============================================
 :Module: commission_pricelist
 :Name: Sale agent Information
 :Version: False

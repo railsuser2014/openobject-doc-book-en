@@ -1,6 +1,6 @@
 
-Module Service company profile (*profile_service*)
-==================================================
+Service company profile (*profile_service*)
+===========================================
 :Module: profile_service
 :Name: Service company profile
 :Version: False

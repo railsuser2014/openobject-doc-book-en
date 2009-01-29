@@ -1,6 +1,6 @@
 
-Module Belgium - French & Dutch (*l10n_chart_be_frnl*)
-======================================================
+Belgium - French & Dutch (*l10n_chart_be_frnl*)
+===============================================
 :Module: l10n_chart_be_frnl
 :Name: Belgium - French & Dutch
 :Version: 5.0.1.0

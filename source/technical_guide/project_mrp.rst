@@ -1,6 +1,6 @@
 
-Module Project Management - MRP and Sale Integration (*project_mrp*)
-====================================================================
+Project Management - MRP and Sale Integration (*project_mrp*)
+=============================================================
 :Module: project_mrp
 :Name: Project Management - MRP and Sale Integration
 :Version: 5.0.1.0

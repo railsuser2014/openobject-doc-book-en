@@ -1,6 +1,6 @@
 
-Module cci Data 1 (*cci_data_csv*)
-==================================
+cci Data 1 (*cci_data_csv*)
+===========================
 :Module: cci_data_csv
 :Name: cci Data 1
 :Version: 5.0.1.0

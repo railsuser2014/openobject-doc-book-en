@@ -1,6 +1,6 @@
 
-Module Lunch Module (*lunch*)
-=============================
+Lunch Module (*lunch*)
+======================
 :Module: lunch
 :Name: Lunch Module
 :Version: 5.0.0.1

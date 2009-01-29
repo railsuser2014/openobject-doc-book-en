@@ -1,6 +1,6 @@
 
-Module France - Plan Comptable Général (*l10n_fr_pcg*)
-======================================================
+France - Plan Comptable Général (*l10n_fr_pcg*)
+===============================================
 :Module: l10n_fr_pcg
 :Name: France - Plan Comptable Général
 :Version: 5.0.1.0

@@ -1,6 +1,6 @@
 
-Module gnucash (*gnucash*)
-==========================
+gnucash (*gnucash*)
+===================
 :Module: gnucash
 :Name: gnucash
 :Version: 5.0.0.1

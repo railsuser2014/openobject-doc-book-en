@@ -1,6 +1,6 @@
 
-Module Travel (*travel*)
-========================
+Travel (*travel*)
+=================
 :Module: travel
 :Name: Travel
 :Version: 5.0.1.0

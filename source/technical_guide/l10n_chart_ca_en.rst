@@ -1,6 +1,6 @@
 
-Module Canadian - English - Chart of Accounts (*l10n_chart_ca_en*)
-==================================================================
+Canadian - English - Chart of Accounts (*l10n_chart_ca_en*)
+===========================================================
 :Module: l10n_chart_ca_en
 :Name: Canadian - English - Chart of Accounts
 :Version: 5.0.1.0

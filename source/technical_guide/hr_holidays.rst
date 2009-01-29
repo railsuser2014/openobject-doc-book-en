@@ -1,6 +1,6 @@
 
-Module Human Resources: Holidays management (*hr_holidays*)
-===========================================================
+Human Resources: Holidays management (*hr_holidays*)
+====================================================
 :Module: hr_holidays
 :Name: Human Resources: Holidays management
 :Version: 5.0.1.1

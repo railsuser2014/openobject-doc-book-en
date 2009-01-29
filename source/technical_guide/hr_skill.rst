@@ -1,6 +1,6 @@
 
-Module Skill Management (*hr_skill*)
-====================================
+Skill Management (*hr_skill*)
+=============================
 :Module: hr_skill
 :Name: Skill Management
 :Version: 5.0.0.1

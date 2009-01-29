@@ -1,6 +1,6 @@
 
-Module CCI Membership (*cci_membership*)
-========================================
+CCI Membership (*cci_membership*)
+=================================
 :Module: cci_membership
 :Name: CCI Membership
 :Version: 5.0.1.0

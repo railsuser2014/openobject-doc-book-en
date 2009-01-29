@@ -1,6 +1,6 @@
 
-Module CCI CRM Profile (*cci_crm_profile*)
-==========================================
+CCI CRM Profile (*cci_crm_profile*)
+===================================
 :Module: cci_crm_profile
 :Name: CCI CRM Profile
 :Version: 5.0.1.0

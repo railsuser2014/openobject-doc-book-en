@@ -1,6 +1,6 @@
 
-Module Product listprice upgrade (*product_listprice_upgrade*)
-==============================================================
+Product listprice upgrade (*product_listprice_upgrade*)
+=======================================================
 :Module: product_listprice_upgrade
 :Name: Product listprice upgrade
 :Version: 5.0.1.0

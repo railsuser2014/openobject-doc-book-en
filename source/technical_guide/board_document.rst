@@ -1,6 +1,6 @@
 
-Module Dashboard for Document Management (*board_document*)
-===========================================================
+Dashboard for Document Management (*board_document*)
+====================================================
 :Module: board_document
 :Name: Dashboard for Document Management
 :Version: 5.0.1.0

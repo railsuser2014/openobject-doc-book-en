@@ -1,6 +1,6 @@
 
-Module Dashboard main module (*board*)
-======================================
+Dashboard main module (*board*)
+===============================
 :Module: board
 :Name: Dashboard main module
 :Version: 5.0.1.0

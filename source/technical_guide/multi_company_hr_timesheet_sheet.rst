@@ -1,6 +1,6 @@
 
-Module Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
-============================================================================================
+Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
+=====================================================================================
 :Module: multi_company_hr_timesheet_sheet
 :Name: Multi company Human Resources (Timesheet groups)
 :Version: 5.0.0.1

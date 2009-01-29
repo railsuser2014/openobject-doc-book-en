@@ -1,6 +1,6 @@
 
-Module Products Search Reference (*product_search_reference*)
-=============================================================
+Products Search Reference (*product_search_reference*)
+======================================================
 :Module: product_search_reference
 :Name: Products Search Reference
 :Version: 5.0.0.1

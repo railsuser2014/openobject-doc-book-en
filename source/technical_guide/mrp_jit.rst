@@ -1,6 +1,6 @@
 
-Module MRP JIT (*mrp_jit*)
-==========================
+MRP JIT (*mrp_jit*)
+===================
 :Module: mrp_jit
 :Name: MRP JIT
 :Version: 5.0.1.0
