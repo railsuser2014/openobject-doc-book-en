@@ -64,7 +64,3 @@ Objects
 
 Object: ir.module.record
 ########################
-
-.. index::
-  single: ir.module.record object
-.. 

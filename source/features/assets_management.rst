@@ -9,8 +9,10 @@ overpayment, regulatory non-compliance, and inefficiency.
 
 Manages your assets easily with Open ERP. This module is fully integrated
 to the financial and analytic accounting modules for a maximum of power.
+
+.. raw:: html
  
-.. image:: images/asset_management_screenshot.png
+ <a target="_blank" href="images/asset_management_screenshot.png"><img src="images_small/asset_management_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

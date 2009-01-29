@@ -4,8 +4,10 @@ Wiki Engine
 The Open ERP wiki allows you to manage your enterprise's contents using wiki
 restructured texts. This module provides a collaborative way to manage internal
 FAQs, quality manuals, technical references, etc.
+
+.. raw:: html
  
-.. image:: images/wiki_screenshot.png
+ <a target="_blank" href="images/wiki_screenshot.png"><img src="images_small/wiki_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------

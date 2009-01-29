@@ -16,9 +16,7 @@ Contents:
 
     faqs
 
-    about
     copyright
-    history
     license
     documentation_license
     todo

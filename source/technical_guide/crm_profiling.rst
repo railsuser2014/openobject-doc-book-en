@@ -60,18 +60,10 @@ Objects
 Object: Question
 ################
 
-.. index::
-  single: Question object
-.. 
 
 
 :answers_ids: Avalaible answers, one2many
 
-
-
-.. index::
-  single: answers_ids field
-.. 
 
 
 
@@ -80,20 +72,10 @@ Object: Question
 
 
 
-.. index::
-  single: open_question field
-.. 
-
-
 
 
 :name: Question, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -102,27 +84,14 @@ Object: Question
 
 
 
-.. index::
-  single: target field
-.. 
-
-
 
 Object: Questionnaire
 #####################
 
-.. index::
-  single: Questionnaire object
-.. 
 
 
 :questions_ids: Questions, many2many
 
-
-
-.. index::
-  single: questions_ids field
-.. 
 
 
 
@@ -131,38 +100,20 @@ Object: Questionnaire
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :description: Description, text, required
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Answer
 ##############
 
-.. index::
-  single: Answer object
-.. 
 
 
 :text: Open Answer, text
 
-
-
-.. index::
-  single: text field
-.. 
 
 
 
@@ -171,18 +122,8 @@ Object: Answer
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :question_id: Question, many2one
 
-
-
-.. index::
-  single: question_id field
-.. 
 

@@ -79,18 +79,10 @@ Objects
 Object: event.meeting.table
 ###########################
 
-.. index::
-  single: event.meeting.table object
-.. 
 
 
 :service: Service, integer, required
 
-
-
-.. index::
-  single: service field
-.. 
 
 
 
@@ -99,20 +91,10 @@ Object: event.meeting.table
 
 
 
-.. index::
-  single: event_id field
-.. 
-
-
 
 
 :contact_id2: Second Contact, many2one, required
 
-
-
-.. index::
-  single: contact_id2 field
-.. 
 
 
 
@@ -121,20 +103,10 @@ Object: event.meeting.table
 
 
 
-.. index::
-  single: contact_id1 field
-.. 
-
-
 
 
 :partner_id1: First Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id1 field
-.. 
 
 
 
@@ -143,56 +115,30 @@ Object: event.meeting.table
 
 
 
-.. index::
-  single: table field
-.. 
-
-
 
 
 :partner_id2: Second Partner, many2one, required
 
 
 
-.. index::
-  single: partner_id2 field
-.. 
-
-
 
 Object: event.check.type
 ########################
 
-.. index::
-  single: event.check.type object
-.. 
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: event.check
 ###################
 
-.. index::
-  single: event.check object
-.. 
 
 
 :date_reception: Reception Date, date
 
-
-
-.. index::
-  single: date_reception field
-.. 
 
 
 
@@ -201,20 +147,10 @@ Object: event.check
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -223,20 +159,10 @@ Object: event.check
 
 
 
-.. index::
-  single: type_id field
-.. 
-
-
 
 
 :date_submission: Submission Date, date
 
-
-
-.. index::
-  single: date_submission field
-.. 
 
 
 
@@ -245,20 +171,10 @@ Object: event.check
 
 
 
-.. index::
-  single: date_limit field
-.. 
-
-
 
 
 :reg_id: Inscriptions, many2one, required
 
-
-
-.. index::
-  single: reg_id field
-.. 
 
 
 
@@ -267,38 +183,20 @@ Object: event.check
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :unit_nbr: Value, float
 
 
 
-.. index::
-  single: unit_nbr field
-.. 
-
-
 
 Object: event.group
 ###################
 
-.. index::
-  single: event.group object
-.. 
 
 
 :picture: Picture, binary
 
-
-
-.. index::
-  single: picture field
-.. 
 
 
 
@@ -307,29 +205,14 @@ Object: event.group
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Group Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :bookmark_name: Value, char
 
-
-
-.. index::
-  single: bookmark_name field
-.. 
 

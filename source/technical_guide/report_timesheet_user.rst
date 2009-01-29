@@ -55,29 +55,16 @@ Objects
 Object: Tasks by user and company
 #################################
 
-.. index::
-  single: Tasks by user and company object
-.. 
 
 
 :user_id: User, many2one, readonly
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -86,20 +73,10 @@ Object: Tasks by user and company
 
 
 
-.. index::
-  single: total_cost field
-.. 
-
-
 
 
 :company_id: Company Name, many2one, readonly
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -108,38 +85,20 @@ Object: Tasks by user and company
 
 
 
-.. index::
-  single: total_hours field
-.. 
-
-
 
 
 :user_company_id: User's Company, many2one, readonly
 
-
-
-.. index::
-  single: user_company_id field
-.. 
 
 
 
 Object: Tasks by company
 ########################
 
-.. index::
-  single: Tasks by company object
-.. 
 
 
 :total_cost: Task Cost, float, readonly
 
-
-
-.. index::
-  single: total_cost field
-.. 
 
 
 
@@ -148,20 +107,10 @@ Object: Tasks by company
 
 
 
-.. index::
-  single: total_hours field
-.. 
-
-
 
 
 :user_company_id: User's Company, many2one, readonly
 
-
-
-.. index::
-  single: user_company_id field
-.. 
 
 
 
@@ -170,18 +119,8 @@ Object: Tasks by company
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :company_id: Company Name, many2one, readonly
 
-
-
-.. index::
-  single: company_id field
-.. 
 

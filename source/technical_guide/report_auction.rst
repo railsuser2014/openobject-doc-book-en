@@ -76,29 +76,16 @@ Objects
 Object: report_auction_adjudication
 ###################################
 
-.. index::
-  single: report_auction_adjudication object
-.. 
 
 
 :name: Auction date, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :adj_total: Total Adjudication, float
 
-
-
-.. index::
-  single: adj_total field
-.. 
 
 
 
@@ -107,20 +94,10 @@ Object: report_auction_adjudication
 
 
 
-.. index::
-  single: auction1 field
-.. 
-
-
 
 
 :buyer_costs: Buyer Costs, many2many
 
-
-
-.. index::
-  single: buyer_costs field
-.. 
 
 
 
@@ -129,38 +106,20 @@ Object: report_auction_adjudication
 
 
 
-.. index::
-  single: auction2 field
-.. 
-
-
 
 
 :seller_costs: Seller Costs, many2many
 
 
 
-.. index::
-  single: seller_costs field
-.. 
-
-
 
 Object: Customer per seller
 ###########################
 
-.. index::
-  single: Customer per seller object
-.. 
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -169,38 +128,20 @@ Object: Customer per seller
 
 
 
-.. index::
-  single: no_of_buyer field
-.. 
-
-
 
 
 :name: Seller, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Latest 10 Deposits
 ##########################
 
-.. index::
-  single: Latest 10 Deposits object
-.. 
 
 
 :info: Description, char
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -209,20 +150,10 @@ Object: Latest 10 Deposits
 
 
 
-.. index::
-  single: specific_cost_ids field
-.. 
-
-
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -231,20 +162,10 @@ Object: Latest 10 Deposits
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date_dep: Deposit date, date, required
 
-
-
-.. index::
-  single: date_dep field
-.. 
 
 
 
@@ -253,31 +174,16 @@ Object: Latest 10 Deposits
 
 
 
-.. index::
-  single: total_neg field
-.. 
-
-
 
 
 :lot_id: Objects, one2many
 
 
 
-.. index::
-  single: lot_id field
-.. 
-
-
 
 
 :partner_id: Seller, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -286,38 +192,20 @@ Object: Latest 10 Deposits
 
 
 
-.. index::
-  single: method field
-.. 
-
-
 
 
 :tax_id: Expenses, many2one
 
 
 
-.. index::
-  single: tax_id field
-.. 
-
-
 
 Object: Latest 10 Objects
 #########################
 
-.. index::
-  single: Latest 10 Objects object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -326,20 +214,10 @@ Object: Latest 10 Objects
 
 
 
-.. index::
-  single: obj_num field
-.. 
-
-
 
 
 :obj_comm: Commission, boolean
 
-
-
-.. index::
-  single: obj_comm field
-.. 
 
 
 
@@ -348,20 +226,10 @@ Object: Latest 10 Objects
 
 
 
-.. index::
-  single: obj_price field
-.. 
-
-
 
 
 :obj_desc: Object Description, text
 
-
-
-.. index::
-  single: obj_desc field
-.. 
 
 
 
@@ -370,20 +238,10 @@ Object: Latest 10 Objects
 
 
 
-.. index::
-  single: obj_ret field
-.. 
-
-
 
 
 :auction_id: Auction Date, many2one
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -392,38 +250,20 @@ Object: Latest 10 Objects
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :bord_vnd_id: Depositer Inventory, many2one, required
 
 
 
-.. index::
-  single: bord_vnd_id field
-.. 
-
-
 
 Object: Objects per day
 #######################
 
-.. index::
-  single: Objects per day object
-.. 
 
 
 :obj_ret: Price retired, float
 
-
-
-.. index::
-  single: obj_ret field
-.. 
 
 
 
@@ -432,31 +272,16 @@ Object: Objects per day
 
 
 
-.. index::
-  single: obj_num field
-.. 
-
-
 
 
 :obj_comm: Commission, boolean
 
 
 
-.. index::
-  single: obj_comm field
-.. 
-
-
 
 
 :obj_price: Adjudication price, float
 
-
-
-.. index::
-  single: obj_price field
-.. 
 
 
 
@@ -465,20 +290,10 @@ Object: Objects per day
 
 
 
-.. index::
-  single: bord_vnd_id field
-.. 
-
-
 
 
 :lot_type: Object Type, selection
 
-
-
-.. index::
-  single: lot_type field
-.. 
 
 
 
@@ -487,20 +302,10 @@ Object: Objects per day
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :auction_id: Auction Date, many2one
 
-
-
-.. index::
-  single: auction_id field
-.. 
 
 
 
@@ -509,20 +314,10 @@ Object: Objects per day
 
 
 
-.. index::
-  single: lot_num field
-.. 
-
-
 
 
 :date: Name, char, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -531,49 +326,26 @@ Object: Objects per day
 
 
 
-.. index::
-  single: obj_desc field
-.. 
-
-
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: comparison estimate/adjudication 
 #########################################
 
-.. index::
-  single: comparison estimate/adjudication  object
-.. 
 
 
 :obj_ret: Price retired, float
 
 
 
-.. index::
-  single: obj_ret field
-.. 
-
-
 
 
 :name: Short Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -582,20 +354,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: obj_comm field
-.. 
-
-
 
 
 :obj_price: Adjudication price, float
 
-
-
-.. index::
-  single: obj_price field
-.. 
 
 
 
@@ -604,20 +366,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: obj_desc field
-.. 
-
-
 
 
 :lot_type: Object Type, selection
 
-
-
-.. index::
-  single: lot_type field
-.. 
 
 
 
@@ -626,20 +378,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: adj_total field
-.. 
-
-
 
 
 :state: State, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -648,20 +390,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: auction_id field
-.. 
-
-
 
 
 :lot_num: Quantity, integer, required
 
-
-
-.. index::
-  single: lot_num field
-.. 
 
 
 
@@ -670,20 +402,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :lot_est1: Minimum Estimation, float
 
-
-
-.. index::
-  single: lot_est1 field
-.. 
 
 
 
@@ -692,20 +414,10 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: lot_est2 field
-.. 
-
-
 
 
 :bord_vnd_id: Depositer Inventory, many2one, required
 
-
-
-.. index::
-  single: bord_vnd_id field
-.. 
 
 
 
@@ -714,27 +426,14 @@ Object: comparison estimate/adjudication
 
 
 
-.. index::
-  single: obj_num field
-.. 
-
-
 
 Object: user pointing 
 ######################
 
-.. index::
-  single: user pointing  object
-.. 
 
 
 :total_timesheet: Project Timesheet, float
 
-
-
-.. index::
-  single: total_timesheet field
-.. 
 
 
 
@@ -743,29 +442,14 @@ Object: user pointing
 
 
 
-.. index::
-  single: sheet_id field
-.. 
-
-
 
 
 :user_id: User, char, required
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Date, date
 
-
-
-.. index::
-  single: name field
-.. 
 

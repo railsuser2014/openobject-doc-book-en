@@ -55,18 +55,10 @@ Objects
 Object: Employee Evaluation
 ###########################
 
-.. index::
-  single: Employee Evaluation object
-.. 
 
 
 :info_improve: To Improve, text
 
-
-
-.. index::
-  single: info_improve field
-.. 
 
 
 
@@ -75,20 +67,10 @@ Object: Employee Evaluation
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :user_id: Evaluation User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -97,20 +79,10 @@ Object: Employee Evaluation
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :info_employee: Employee Response, text
 
-
-
-.. index::
-  single: info_employee field
-.. 
 
 
 
@@ -119,20 +91,10 @@ Object: Employee Evaluation
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :score: Score, float
 
-
-
-.. index::
-  single: score field
-.. 
 
 
 
@@ -141,20 +103,10 @@ Object: Employee Evaluation
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :info_bad: Bad Points, text
 
-
-
-.. index::
-  single: info_bad field
-.. 
 
 
 
@@ -163,38 +115,20 @@ Object: Employee Evaluation
 
 
 
-.. index::
-  single: info_good field
-.. 
-
-
 
 
 :quote_ids: Quotes, one2many
 
 
 
-.. index::
-  single: quote_ids field
-.. 
-
-
 
 Object: Employee Evaluation Type
 ################################
 
-.. index::
-  single: Employee Evaluation Type object
-.. 
 
 
 :info: Information, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -203,20 +137,10 @@ Object: Employee Evaluation Type
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :value_ids: Values, one2many
 
-
-
-.. index::
-  single: value_ids field
-.. 
 
 
 
@@ -225,20 +149,10 @@ Object: Employee Evaluation Type
 
 
 
-.. index::
-  single: category_ids field
-.. 
-
-
 
 
 :score: Score, float
 
-
-
-.. index::
-  single: score field
-.. 
 
 
 
@@ -247,27 +161,14 @@ Object: Employee Evaluation Type
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 Object: Evaluation Type Value
 #############################
 
-.. index::
-  single: Evaluation Type Value object
-.. 
 
 
 :score: Score, float
 
-
-
-.. index::
-  single: score field
-.. 
 
 
 
@@ -276,38 +177,20 @@ Object: Evaluation Type Value
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :type_id: Evaluation Type, many2one, required
 
 
 
-.. index::
-  single: type_id field
-.. 
-
-
 
 Object: Employee Evaluation Quote
 #################################
 
-.. index::
-  single: Employee Evaluation Quote object
-.. 
 
 
 :evaluation_id: Evaluation, many2one, required
 
-
-
-.. index::
-  single: evaluation_id field
-.. 
 
 
 
@@ -316,20 +199,10 @@ Object: Employee Evaluation Quote
 
 
 
-.. index::
-  single: value_id field
-.. 
-
-
 
 
 :score: Score, float
 
-
-
-.. index::
-  single: score field
-.. 
 
 
 
@@ -338,18 +211,8 @@ Object: Employee Evaluation Quote
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :type_id: Type, many2one
 
-
-
-.. index::
-  single: type_id field
-.. 
 

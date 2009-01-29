@@ -54,18 +54,10 @@ Objects
 Object: Properties
 ##################
 
-.. index::
-  single: Properties object
-.. 
 
 
 :property_type: Property Type, selection
 
-
-
-.. index::
-  single: property_type field
-.. 
 
 
 
@@ -74,20 +66,10 @@ Object: Properties
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -96,27 +78,14 @@ Object: Properties
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Product HeatCode
 ########################
 
-.. index::
-  single: Product HeatCode object
-.. 
 
 
 :product_property: Property Values, one2many
 
-
-
-.. index::
-  single: product_property field
-.. 
 
 
 
@@ -125,38 +94,20 @@ Object: Product HeatCode
 
 
 
-.. index::
-  single: heatcode field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: Product's Properties
 ############################
 
-.. index::
-  single: Product's Properties object
-.. 
 
 
 :heatcode_id: HeatCode, many2one, required
 
-
-
-.. index::
-  single: heatcode_id field
-.. 
 
 
 
@@ -165,29 +116,14 @@ Object: Product's Properties
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :property_id: Property, many2one, required
 
 
 
-.. index::
-  single: property_id field
-.. 
-
-
 
 
 :comments: Comments, char
 
-
-
-.. index::
-  single: comments field
-.. 
 

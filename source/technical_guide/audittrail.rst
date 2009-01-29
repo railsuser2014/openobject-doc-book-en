@@ -53,18 +53,10 @@ Objects
 Object: audittrail.rule
 #######################
 
-.. index::
-  single: audittrail.rule object
-.. 
 
 
 :log_read: Log reads, boolean
 
-
-
-.. index::
-  single: log_read field
-.. 
 
 
 
@@ -73,20 +65,10 @@ Object: audittrail.rule
 
 
 
-.. index::
-  single: log_unlink field
-.. 
-
-
 
 
 :user_id: Users, many2many
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -95,20 +77,10 @@ Object: audittrail.rule
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :log_write: Log writes, boolean
 
-
-
-.. index::
-  single: log_write field
-.. 
 
 
 
@@ -117,20 +89,10 @@ Object: audittrail.rule
 
 
 
-.. index::
-  single: object_id field
-.. 
-
-
 
 
 :log_create: Log creates, boolean
 
-
-
-.. index::
-  single: log_create field
-.. 
 
 
 
@@ -139,38 +101,20 @@ Object: audittrail.rule
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :action_id: Action ID, many2one
 
 
 
-.. index::
-  single: action_id field
-.. 
-
-
 
 Object: audittrail.log
 ######################
 
-.. index::
-  single: audittrail.log object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -179,20 +123,10 @@ Object: audittrail.log
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :timestamp: Date, datetime
 
-
-
-.. index::
-  single: timestamp field
-.. 
 
 
 
@@ -201,20 +135,10 @@ Object: audittrail.log
 
 
 
-.. index::
-  single: object_id field
-.. 
-
-
 
 
 :line_ids: Log lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -223,38 +147,20 @@ Object: audittrail.log
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 
 :method: Method, selection
 
 
 
-.. index::
-  single: method field
-.. 
-
-
 
 Object: audittrail.log.line
 ###########################
 
-.. index::
-  single: audittrail.log.line object
-.. 
 
 
 :log: Log ID, integer
 
-
-
-.. index::
-  single: log field
-.. 
 
 
 
@@ -263,20 +169,10 @@ Object: audittrail.log.line
 
 
 
-.. index::
-  single: log_id field
-.. 
-
-
 
 
 :old_value: Old Value, text
 
-
-
-.. index::
-  single: old_value field
-.. 
 
 
 
@@ -285,20 +181,10 @@ Object: audittrail.log.line
 
 
 
-.. index::
-  single: field_id field
-.. 
-
-
 
 
 :old_value_text: Old value Text, text
 
-
-
-.. index::
-  single: old_value_text field
-.. 
 
 
 
@@ -307,29 +193,14 @@ Object: audittrail.log.line
 
 
 
-.. index::
-  single: field_description field
-.. 
-
-
 
 
 :new_value: New Value, text
 
 
 
-.. index::
-  single: new_value field
-.. 
-
-
 
 
 :new_value_text: New value Text, text
 
-
-
-.. index::
-  single: new_value_text field
-.. 
 

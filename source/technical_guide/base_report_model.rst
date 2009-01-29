@@ -44,27 +44,14 @@ Objects
 Object: Visible models for a tool
 #################################
 
-.. index::
-  single: Visible models for a tool object
-.. 
 
 
 :model_id: Model, many2one, required
 
 
 
-.. index::
-  single: model_id field
-.. 
-
-
 
 
 :name: Visible Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

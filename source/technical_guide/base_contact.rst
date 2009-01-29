@@ -70,29 +70,16 @@ Objects
 Object: res.partner.contact
 ###########################
 
-.. index::
-  single: res.partner.contact object
-.. 
 
 
 :origin: Origin, char
 
     *The DB from which the info is coming from*
 
-.. index::
-  single: origin field
-.. 
-
-
 
 
 :fse_work_status: FSE Work Status, char
 
-
-
-.. index::
-  single: fse_work_status field
-.. 
 
 
 
@@ -101,20 +88,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: canal_id field
-.. 
-
-
 
 
 :data_private: Private data, boolean
 
-
-
-.. index::
-  single: data_private field
-.. 
 
 
 
@@ -123,20 +100,10 @@ Object: res.partner.contact
 
     *This contact will not be removed even if all his addresses are deleted*
 
-.. index::
-  single: self_sufficent field
-.. 
-
-
 
 
 :partner_id: Main Employer, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -145,20 +112,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: first_name field
-.. 
-
-
 
 
 :title: Title, selection
 
-
-
-.. index::
-  single: title field
-.. 
 
 
 
@@ -167,20 +124,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: country_id field
-.. 
-
-
 
 
 :who_presence: In WsW, boolean
 
-
-
-.. index::
-  single: who_presence field
-.. 
 
 
 
@@ -189,20 +136,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: lang_id field
-.. 
-
-
 
 
 :who_date_publication: Publication, date
 
-
-
-.. index::
-  single: who_date_publication field
-.. 
 
 
 
@@ -211,20 +148,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: fse_work_experience field
-.. 
-
-
 
 
 :magazine_subscription: Magazine subscription, selection
 
-
-
-.. index::
-  single: magazine_subscription field
-.. 
 
 
 
@@ -233,20 +160,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: country_ids field
-.. 
-
-
 
 
 :website: Website, char
 
-
-
-.. index::
-  single: website field
-.. 
 
 
 
@@ -255,20 +172,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: old_id field
-.. 
-
-
 
 
 :fse_studies: FSE Studies, char
 
-
-
-.. index::
-  single: fse_studies field
-.. 
 
 
 
@@ -277,31 +184,16 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: who_description field
-.. 
-
-
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :answers_ids: Answers, many2many
 
-
-
-.. index::
-  single: answers_ids field
-.. 
 
 
 
@@ -310,20 +202,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: function_id field
-.. 
-
-
 
 
 :job_ids: Functions and Addresses, one2many
 
-
-
-.. index::
-  single: job_ids field
-.. 
 
 
 
@@ -332,20 +214,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: link_ids field
-.. 
-
-
 
 
 :name: Last Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -354,20 +226,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: magazine_subscription_source field
-.. 
-
-
 
 
 :mobile: Mobile, char
 
-
-
-.. index::
-  single: mobile field
-.. 
 
 
 
@@ -376,20 +238,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: who_date_accept field
-.. 
-
-
 
 
 :birthdate: Birth Date, date
 
-
-
-.. index::
-  single: birthdate field
-.. 
 
 
 
@@ -398,20 +250,10 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: who_date_last field
-.. 
-
-
 
 
 :national_number: National Number, char
 
-
-
-.. index::
-  single: national_number field
-.. 
 
 
 
@@ -420,27 +262,14 @@ Object: res.partner.contact
 
 
 
-.. index::
-  single: article_ids field
-.. 
-
-
 
 Object: Contact Partner Function
 ################################
 
-.. index::
-  single: Contact Partner Function object
-.. 
 
 
 :date_stop: Date Stop, date
 
-
-
-.. index::
-  single: date_stop field
-.. 
 
 
 
@@ -449,31 +278,16 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: dir_presence field
-.. 
-
-
 
 
 :canal_id: Canal, many2one
 
     *favorite chanel for communication*
 
-.. index::
-  single: canal_id field
-.. 
-
-
 
 
 :date_end: Date end, date
 
-
-
-.. index::
-  single: date_end field
-.. 
 
 
 
@@ -482,20 +296,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :contact_id: Contact, many2one, required
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -504,20 +308,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: function_label field
-.. 
-
-
 
 
 :team_id: Team, many2one
 
-
-
-.. index::
-  single: team_id field
-.. 
 
 
 
@@ -526,20 +320,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :date_start: Date start, date
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -548,20 +332,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: who_presence field
-.. 
-
-
 
 
 :state: State, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -570,20 +344,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: department field
-.. 
-
-
 
 
 :email: E-Mail, char
 
-
-
-.. index::
-  single: email field
-.. 
 
 
 
@@ -592,20 +356,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: phone field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -614,20 +368,10 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: answers_ids field
-.. 
-
-
 
 
 :function_id: Partner Function, many2one
 
-
-
-.. index::
-  single: function_id field
-.. 
 
 
 
@@ -636,31 +380,16 @@ Object: Contact Partner Function
 
     *Order of importance of this job title in the list of job title of the linked partner*
 
-.. index::
-  single: sequence_partner field
-.. 
-
-
 
 
 :sequence_contact: Contact Seq., integer
 
     *Order of importance of this address in the list of addresses of the linked contact*
 
-.. index::
-  single: sequence_contact field
-.. 
-
-
 
 
 :name: Partner, many2one
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -669,29 +398,14 @@ Object: Contact Partner Function
 
 
 
-.. index::
-  single: function_code_label field
-.. 
-
-
 
 
 :token: Token, char
 
 
 
-.. index::
-  single: token field
-.. 
-
-
 
 
 :login_name: Login Name, char
 
-
-
-.. index::
-  single: login_name field
-.. 
 

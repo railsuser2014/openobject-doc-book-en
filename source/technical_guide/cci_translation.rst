@@ -52,18 +52,10 @@ Objects
 Object: Credit line
 ###################
 
-.. index::
-  single: Credit line object
-.. 
 
 
 :from_date: From Date, date, required
 
-
-
-.. index::
-  single: from_date field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: Credit line
 
 
 
-.. index::
-  single: customer_credit field
-.. 
-
-
 
 
 :to_date: To Date, date, required
 
-
-
-.. index::
-  single: to_date field
-.. 
 
 
 
@@ -94,38 +76,20 @@ Object: Credit line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :global_credit: Global Credit, float, required
 
 
 
-.. index::
-  single: global_credit field
-.. 
-
-
 
 Object: Translation Folder
 ##########################
 
-.. index::
-  single: Translation Folder object
-.. 
 
 
 :awex_amount: AWEX Amount, float, readonly
 
-
-
-.. index::
-  single: awex_amount field
-.. 
 
 
 
@@ -134,20 +98,10 @@ Object: Translation Folder
 
 
 
-.. index::
-  single: credit_line_id field
-.. 
-
-
 
 
 :name: Name, text, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -156,20 +110,10 @@ Object: Translation Folder
 
 
 
-.. index::
-  single: invoice_id field
-.. 
-
-
 
 
 :order_desc: Description, char, required
 
-
-
-.. index::
-  single: order_desc field
-.. 
 
 
 
@@ -178,20 +122,10 @@ Object: Translation Folder
 
 
 
-.. index::
-  single: base_amount field
-.. 
-
-
 
 
 :purchase_order: Purchase Order, many2one
 
-
-
-.. index::
-  single: purchase_order field
-.. 
 
 
 
@@ -200,20 +134,10 @@ Object: Translation Folder
 
 
 
-.. index::
-  single: awex_eligible field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -222,47 +146,24 @@ Object: Translation Folder
 
 
 
-.. index::
-  single: order_date field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 Object: Letter of Credence
 ##########################
 
-.. index::
-  single: Letter of Credence object
-.. 
 
 
 :emission_date: Emission Date, date, required
 
 
 
-.. index::
-  single: emission_date field
-.. 
-
-
 
 
 :asked_amount: Asked Amount, float, required
 
-
-
-.. index::
-  single: asked_amount field
-.. 
 

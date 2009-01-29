@@ -48,18 +48,10 @@ Objects
 Object: Course
 ##############
 
-.. index::
-  single: Course object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -68,27 +60,14 @@ Object: Course
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Course Student
 ######################
 
-.. index::
-  single: Course Student object
-.. 
 
 
 :payback_clause_ends: Pay back clause ends, date
 
-
-
-.. index::
-  single: payback_clause_ends field
-.. 
 
 
 
@@ -97,20 +76,10 @@ Object: Course Student
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :amount: Amount, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -119,20 +88,10 @@ Object: Course Student
 
 
 
-.. index::
-  single: personal_contribution field
-.. 
-
-
 
 
 :state: State, selection
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -141,29 +100,14 @@ Object: Course Student
 
 
 
-.. index::
-  single: payback_clause field
-.. 
-
-
 
 
 :date: Date followed, date
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :course_id: Course, many2one
 
-
-
-.. index::
-  single: course_id field
-.. 
 

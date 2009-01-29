@@ -49,7 +49,3 @@ Objects
 
 Object: Allocations
 ###################
-
-.. index::
-  single: Allocations object
-.. 

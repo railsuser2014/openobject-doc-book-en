@@ -54,18 +54,10 @@ Objects
 Object: Intrastat code
 ######################
 
-.. index::
-  single: Intrastat code object
-.. 
 
 
 :name: Intrastat Code, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -74,27 +66,14 @@ Object: Intrastat code
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Intrastat report
 ########################
 
-.. index::
-  single: Intrastat report object
-.. 
 
 
 :code: Country code, char, readonly
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -103,20 +82,10 @@ Object: Intrastat report
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :weight: Weight, float, readonly
 
-
-
-.. index::
-  single: weight field
-.. 
 
 
 
@@ -125,20 +94,10 @@ Object: Intrastat report
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :currency_id: Currency, many2one, readonly
 
-
-
-.. index::
-  single: currency_id field
-.. 
 
 
 
@@ -147,18 +106,8 @@ Object: Intrastat report
 
 
 
-.. index::
-  single: intrastat_id field
-.. 
-
-
 
 
 :type: Type, selection
 
-
-
-.. index::
-  single: type field
-.. 
 

@@ -69,18 +69,10 @@ Objects
 Object: CCI Timesheet Grant
 ###########################
 
-.. index::
-  single: CCI Timesheet Grant object
-.. 
 
 
 :line_ids: Timesheet Lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -89,38 +81,20 @@ Object: CCI Timesheet Grant
 
 
 
-.. index::
-  single: affectation_ids field
-.. 
-
-
 
 
 :name: Grant Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: CCI Timesheet
 #####################
 
-.. index::
-  single: CCI Timesheet object
-.. 
 
 
 :name: Name, char, required, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -129,20 +103,10 @@ Object: CCI Timesheet
 
 
 
-.. index::
-  single: grant_id field
-.. 
-
-
 
 
 :sending_date: Sending Date, date
 
-
-
-.. index::
-  single: sending_date field
-.. 
 
 
 
@@ -151,31 +115,16 @@ Object: CCI Timesheet
 
 
 
-.. index::
-  single: asked_amount field
-.. 
-
-
 
 
 :state: State, selection, required, readonly
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date_to: To Date, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -184,20 +133,10 @@ Object: CCI Timesheet
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 
 :date_from: From Date, date, required
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -206,27 +145,14 @@ Object: CCI Timesheet
 
 
 
-.. index::
-  single: accepted_amount field
-.. 
-
-
 
 Object: CCI Timesheet Line
 ##########################
 
-.. index::
-  single: CCI Timesheet Line object
-.. 
 
 
 :suppl_cost: Supplementary Cost, float
 
-
-
-.. index::
-  single: suppl_cost field
-.. 
 
 
 
@@ -235,20 +161,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -257,20 +173,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: diff_hours field
-.. 
-
-
 
 
 :zip_id: Zip, many2one
 
-
-
-.. index::
-  single: zip_id field
-.. 
 
 
 
@@ -279,20 +185,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: grant_id field
-.. 
-
-
 
 
 :contact_id: Contact, many2one
 
-
-
-.. index::
-  single: contact_id field
-.. 
 
 
 
@@ -301,20 +197,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: day_date field
-.. 
-
-
 
 
 :hour_from: Hour From, float, required
 
-
-
-.. index::
-  single: hour_from field
-.. 
 
 
 
@@ -323,20 +209,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: hour_to field
-.. 
-
-
 
 
 :timesheet_id: Timesheet, many2one
 
-
-
-.. index::
-  single: timesheet_id field
-.. 
 
 
 
@@ -345,20 +221,10 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: kms field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -367,27 +233,14 @@ Object: CCI Timesheet Line
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Timesheet Affectation
 #############################
 
-.. index::
-  single: Timesheet Affectation object
-.. 
 
 
 :hours_per_week: Hours Per Week, float, required
 
-
-
-.. index::
-  single: hours_per_week field
-.. 
 
 
 
@@ -396,20 +249,10 @@ Object: Timesheet Affectation
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -418,20 +261,10 @@ Object: Timesheet Affectation
 
 
 
-.. index::
-  single: grant_id field
-.. 
-
-
 
 
 :rate: Rate, float, required
 
-
-
-.. index::
-  single: rate field
-.. 
 
 
 
@@ -440,20 +273,10 @@ Object: Timesheet Affectation
 
 
 
-.. index::
-  single: date_to field
-.. 
-
-
 
 
 :percentage: Percentage, float, required
 
-
-
-.. index::
-  single: percentage field
-.. 
 
 
 
@@ -462,27 +285,14 @@ Object: Timesheet Affectation
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 Object: Report on Timesheet and Affectation
 ###########################################
 
-.. index::
-  single: Report on Timesheet and Affectation object
-.. 
 
 
 :hours_per_week: Hours Per Week, float
 
-
-
-.. index::
-  single: hours_per_week field
-.. 
 
 
 
@@ -491,20 +301,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :diff_hours: Hours, float
 
-
-
-.. index::
-  single: diff_hours field
-.. 
 
 
 
@@ -513,20 +313,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 
 :th_percentage: Percentage, float
 
-
-
-.. index::
-  single: th_percentage field
-.. 
 
 
 
@@ -535,20 +325,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: affectation_name field
-.. 
-
-
 
 
 :day_date: Date of the Day, date
 
-
-
-.. index::
-  single: day_date field
-.. 
 
 
 
@@ -557,20 +337,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: rate field
-.. 
-
-
 
 
 :hour_from: Hour From, float
 
-
-
-.. index::
-  single: hour_from field
-.. 
 
 
 
@@ -579,20 +349,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: hour_to field
-.. 
-
-
 
 
 :date_to: To Date, date
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -601,20 +361,10 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: timesheet_id field
-.. 
-
-
 
 
 :grant_name: Grant, char
 
-
-
-.. index::
-  single: grant_name field
-.. 
 
 
 
@@ -623,18 +373,8 @@ Object: Report on Timesheet and Affectation
 
 
 
-.. index::
-  single: user_name field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

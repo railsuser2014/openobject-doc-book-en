@@ -45,18 +45,10 @@ Objects
 Object: Analytic account to close
 #################################
 
-.. index::
-  single: Analytic account to close object
-.. 
 
 
 :name: Analytic account, many2one, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -65,20 +57,10 @@ Object: Analytic account to close
 
 
 
-.. index::
-  single: date_deadline field
-.. 
-
-
 
 
 :quantity_max: Max. Quantity, float, readonly
 
-
-
-.. index::
-  single: quantity_max field
-.. 
 
 
 
@@ -87,20 +69,10 @@ Object: Analytic account to close
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :balance: Balance, float, readonly
 
-
-
-.. index::
-  single: balance field
-.. 
 
 
 
@@ -109,18 +81,8 @@ Object: Analytic account to close
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :quantity: Quantity, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 

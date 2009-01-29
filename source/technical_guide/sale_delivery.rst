@@ -46,18 +46,10 @@ Objects
 Object: sale.delivery.line
 ##########################
 
-.. index::
-  single: sale.delivery.line object
-.. 
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -66,20 +58,10 @@ Object: sale.delivery.line
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :product_uom: Product UoM, many2one, required
 
-
-
-.. index::
-  single: product_uom field
-.. 
 
 
 
@@ -88,20 +70,10 @@ Object: sale.delivery.line
 
 
 
-.. index::
-  single: date_planned field
-.. 
-
-
 
 
 :order_id: Order Ref, many2one, required
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -110,20 +82,10 @@ Object: sale.delivery.line
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 
 :priority: Priority, integer
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -132,18 +94,8 @@ Object: sale.delivery.line
 
 
 
-.. index::
-  single: packaging_id field
-.. 
-
-
 
 
 :margin: Margin, float, readonly
 
-
-
-.. index::
-  single: margin field
-.. 
 

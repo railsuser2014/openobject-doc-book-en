@@ -47,18 +47,10 @@ Objects
 Object: Sale agent sale info
 ############################
 
-.. index::
-  single: Sale agent sale info object
-.. 
 
 
 :customer: Customer, one2many, readonly
 
-
-
-.. index::
-  single: customer field
-.. 
 
 
 
@@ -67,20 +59,10 @@ Object: Sale agent sale info
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -89,18 +71,8 @@ Object: Sale agent sale info
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :commission_rate: Commission Rate, float, required
 
-
-
-.. index::
-  single: commission_rate field
-.. 
 

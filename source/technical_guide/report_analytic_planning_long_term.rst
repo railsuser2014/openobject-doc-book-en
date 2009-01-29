@@ -49,18 +49,10 @@ Objects
 Object: Planning product stat
 #############################
 
-.. index::
-  single: Planning product stat object
-.. 
 
 
 :sum_amount_real: Timesheet, float, readonly
 
-
-
-.. index::
-  single: sum_amount_real field
-.. 
 
 
 
@@ -69,29 +61,14 @@ Object: Planning product stat
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :planning_id: Planning, many2one, required
 
 
 
-.. index::
-  single: planning_id field
-.. 
-
-
 
 
 :quantity: Planned, float, required
 
-
-
-.. index::
-  single: quantity field
-.. 
 

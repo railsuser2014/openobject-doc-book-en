@@ -46,18 +46,10 @@ Objects
 Object: test.temporal
 #####################
 
-.. index::
-  single: test.temporal object
-.. 
 
 
 :line_ids: Lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -66,20 +58,10 @@ Object: test.temporal
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -88,38 +70,20 @@ Object: test.temporal
 
 
 
-.. index::
-  single: partner_ids field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: test.temporal.line
 ##########################
 
-.. index::
-  single: test.temporal.line object
-.. 
 
 
 :temporal_id: Temporal, many2one
 
-
-
-.. index::
-  single: temporal_id field
-.. 
 
 
 
@@ -128,18 +92,8 @@ Object: test.temporal.line
 
 
 
-.. index::
-  single: length field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

@@ -55,18 +55,10 @@ Objects
 Object: Repairs Order
 #####################
 
-.. index::
-  single: Repairs Order object
-.. 
 
 
 :operations: Operation Lines, one2many, readonly
 
-
-
-.. index::
-  single: operations field
-.. 
 
 
 
@@ -75,20 +67,10 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :internal_notes: Internal Notes, text
 
-
-
-.. index::
-  single: internal_notes field
-.. 
 
 
 
@@ -97,31 +79,16 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: quotation_notes field
-.. 
-
-
 
 
 :partner_id: Partner, many2one
 
     *This field allow you to choose the parner that will be invoiced and delivered*
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :invoiced: Invoiced, boolean, readonly
 
-
-
-.. index::
-  single: invoiced field
-.. 
 
 
 
@@ -130,20 +97,10 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: amount_untaxed field
-.. 
-
-
 
 
 :location_id: Current Location, many2one, required, readonly
 
-
-
-.. index::
-  single: location_id field
-.. 
 
 
 
@@ -152,21 +109,11 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: amount_tax field
-.. 
-
-
 
 
 :state: Repair State, selection, readonly
 
     *Gives the state of the Repair Order*
-
-.. index::
-  single: state field
-.. 
-
 
 
 
@@ -174,20 +121,10 @@ Object: Repairs Order
 
     *The pricelist comes from the selected partner, by default.*
 
-.. index::
-  single: pricelist_id field
-.. 
-
-
 
 
 :amount_total: Total, float, readonly
 
-
-
-.. index::
-  single: amount_total field
-.. 
 
 
 
@@ -196,20 +133,10 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: prodlot_id field
-.. 
-
-
 
 
 :partner_invoice_id: Invoicing Address, many2one
 
-
-
-.. index::
-  single: partner_invoice_id field
-.. 
 
 
 
@@ -218,20 +145,10 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: move_id field
-.. 
-
-
 
 
 :name: Repair Ref, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -240,21 +157,11 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :guarantee_limit: Guarantee limit, date
 
     *The garantee limit is computed as: last move date + warranty defined on selected product. If the current date is below the garantee limit, each operation and fee you will add will be set as 'not to invoiced' by default. Note that you can change manually afterwards.*
-
-.. index::
-  single: guarantee_limit field
-.. 
-
 
 
 
@@ -262,31 +169,16 @@ Object: Repairs Order
 
     *Check this box if you want to manage the delivery once the product is repaired. If cheked, it will create a packing with selected product. Note that you can select the locations in the Info tab, if you have the extended view.*
 
-.. index::
-  single: deliver_bool field
-.. 
-
-
 
 
 :invoice_method: Invoice Method, selection, required, readonly
 
     *This field allow you to change the workflow of the repair order. If value selected is different from 'No Invoice', it also allow you to select the pricelist and invoicing address.*
 
-.. index::
-  single: invoice_method field
-.. 
-
-
 
 
 :location_dest_id: Delivery Location, many2one, readonly
 
-
-
-.. index::
-  single: location_dest_id field
-.. 
 
 
 
@@ -295,20 +187,10 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: invoice_id field
-.. 
-
-
 
 
 :fees_lines: Fees Lines, one2many, readonly
 
-
-
-.. index::
-  single: fees_lines field
-.. 
 
 
 
@@ -317,49 +199,26 @@ Object: Repairs Order
 
 
 
-.. index::
-  single: repaired field
-.. 
-
-
 
 
 :picking_id: Packing, many2one, readonly
 
 
 
-.. index::
-  single: picking_id field
-.. 
-
-
 
 Object: Repair Operations Lines
 ###############################
 
-.. index::
-  single: Repair Operations Lines object
-.. 
 
 
 :product_id: Product, many2one, required
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :product_uom: Product UoM, many2one, required
 
-
-
-.. index::
-  single: product_uom field
-.. 
 
 
 
@@ -368,31 +227,16 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: repair_id field
-.. 
-
-
 
 
 :type: Type, selection, required
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :price_unit: Unit Price, float, required
 
-
-
-.. index::
-  single: price_unit field
-.. 
 
 
 
@@ -401,20 +245,10 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: product_uom_qty field
-.. 
-
-
 
 
 :price_subtotal: Subtotal, float, readonly
 
-
-
-.. index::
-  single: price_subtotal field
-.. 
 
 
 
@@ -423,20 +257,10 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :to_invoice: To Invoice, boolean
 
-
-
-.. index::
-  single: to_invoice field
-.. 
 
 
 
@@ -445,31 +269,16 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :location_dest_id: Dest. Location, many2one, required
 
 
 
-.. index::
-  single: location_dest_id field
-.. 
-
-
 
 
 :tax_id: Taxes, many2many
 
-
-
-.. index::
-  single: tax_id field
-.. 
 
 
 
@@ -478,20 +287,10 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: location_id field
-.. 
-
-
 
 
 :invoice_line_id: Invoice Line, many2one, readonly
 
-
-
-.. index::
-  single: invoice_line_id field
-.. 
 
 
 
@@ -500,38 +299,20 @@ Object: Repair Operations Lines
 
 
 
-.. index::
-  single: move_id field
-.. 
-
-
 
 
 :invoiced: Invoiced, boolean, readonly
 
 
 
-.. index::
-  single: invoiced field
-.. 
-
-
 
 Object: Repair Fees line
 ########################
 
-.. index::
-  single: Repair Fees line object
-.. 
 
 
 :name: Description, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -540,20 +321,10 @@ Object: Repair Fees line
 
 
 
-.. index::
-  single: product_uom field
-.. 
-
-
 
 
 :repair_id: Repair Order Ref, many2one, required
 
-
-
-.. index::
-  single: repair_id field
-.. 
 
 
 
@@ -562,20 +333,10 @@ Object: Repair Fees line
 
 
 
-.. index::
-  single: price_unit field
-.. 
-
-
 
 
 :product_uom_qty: Quantity, float, required
 
-
-
-.. index::
-  single: product_uom_qty field
-.. 
 
 
 
@@ -584,20 +345,10 @@ Object: Repair Fees line
 
 
 
-.. index::
-  single: price_subtotal field
-.. 
-
-
 
 
 :to_invoice: To Invoice, boolean
 
-
-
-.. index::
-  single: to_invoice field
-.. 
 
 
 
@@ -606,20 +357,10 @@ Object: Repair Fees line
 
 
 
-.. index::
-  single: invoiced field
-.. 
-
-
 
 
 :tax_id: Taxes, many2many
 
-
-
-.. index::
-  single: tax_id field
-.. 
 
 
 
@@ -628,18 +369,8 @@ Object: Repair Fees line
 
 
 
-.. index::
-  single: invoice_line_id field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 

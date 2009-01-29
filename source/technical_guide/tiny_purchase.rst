@@ -48,18 +48,10 @@ Objects
 Object: tiny_purchase.product
 #############################
 
-.. index::
-  single: tiny_purchase.product object
-.. 
 
 
 :price: Price, float
 
-
-
-.. index::
-  single: price field
-.. 
 
 
 
@@ -68,27 +60,14 @@ Object: tiny_purchase.product
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: tiny_purchase.order
 ###########################
 
-.. index::
-  single: tiny_purchase.order object
-.. 
 
 
 :line_ids: Lines, one2many
 
-
-
-.. index::
-  single: line_ids field
-.. 
 
 
 
@@ -97,20 +76,10 @@ Object: tiny_purchase.order
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -119,27 +88,14 @@ Object: tiny_purchase.order
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: tiny_purchase.line
 ##########################
 
-.. index::
-  single: tiny_purchase.line object
-.. 
 
 
 :order_id: Order, many2one, required
 
-
-
-.. index::
-  single: order_id field
-.. 
 
 
 
@@ -148,20 +104,10 @@ Object: tiny_purchase.line
 
 
 
-.. index::
-  single: price field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -170,18 +116,8 @@ Object: tiny_purchase.line
 
 
 
-.. index::
-  single: comments field
-.. 
-
-
 
 
 :quantity: Quantity, integer
 
-
-
-.. index::
-  single: quantity field
-.. 
 

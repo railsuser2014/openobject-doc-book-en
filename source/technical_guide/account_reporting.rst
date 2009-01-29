@@ -46,58 +46,32 @@ Objects
 Object: Rml Colors
 ##################
 
-.. index::
-  single: Rml Colors object
-.. 
 
 
 :code: code, char, required
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: Account reporting for Balance Sheet
 ###########################################
 
-.. index::
-  single: Account reporting for Balance Sheet object
-.. 
 
 
 :font_style: Font, selection
 
 
 
-.. index::
-  single: font_style field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -106,20 +80,10 @@ Object: Account reporting for Balance Sheet
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -128,20 +92,10 @@ Object: Account reporting for Balance Sheet
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -150,20 +104,10 @@ Object: Account reporting for Balance Sheet
 
 
 
-.. index::
-  single: report_type field
-.. 
-
-
 
 
 :child_id: Childs, one2many
 
-
-
-.. index::
-  single: child_id field
-.. 
 
 
 
@@ -172,29 +116,14 @@ Object: Account reporting for Balance Sheet
 
 
 
-.. index::
-  single: color_back field
-.. 
-
-
 
 
 :color_font: Font Color, many2one
 
 
 
-.. index::
-  single: color_font field
-.. 
-
-
 
 
 :account_id: Accounts, many2many
 
-
-
-.. index::
-  single: account_id field
-.. 
 

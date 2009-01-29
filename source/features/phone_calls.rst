@@ -6,8 +6,10 @@ different workflows for the operator. It's fully integrated with the CRM so
 that you can use relationship management facilities: segmentations of
 customers, automated rules, escalation of cases, transform phone calls to
 opportunities, questionnaires, etc.
+
+.. raw:: html
  
-.. image:: images/phone_call_screenshot.png
+ <a target="_blank" href="images/phone_call_screenshot.png"><img src="images_small/phone_call_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

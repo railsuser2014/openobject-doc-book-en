@@ -48,18 +48,10 @@ Objects
 Object: Employee Performance 
 #############################
 
-.. index::
-  single: Employee Performance  object
-.. 
 
 
 :name: Description, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -68,20 +60,10 @@ Object: Employee Performance
 
 
 
-.. index::
-  single: reviewer_id field
-.. 
-
-
 
 
 :date_from: Date From, date, required
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -90,20 +72,10 @@ Object: Employee Performance
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date_to: Date To, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -112,38 +84,20 @@ Object: Employee Performance
 
 
 
-.. index::
-  single: performance_id field
-.. 
-
-
 
 Object: Performance Review Points
 #################################
 
-.. index::
-  single: Performance Review Points object
-.. 
 
 
 :employee_id: Employee, many2one, required, readonly
 
 
 
-.. index::
-  single: employee_id field
-.. 
-
-
 
 
 :name: Description, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -152,20 +106,10 @@ Object: Performance Review Points
 
 
 
-.. index::
-  single: attribute_line field
-.. 
-
-
 
 
 :performance: Performance in (%), float, readonly
 
-
-
-.. index::
-  single: performance field
-.. 
 
 
 
@@ -174,38 +118,20 @@ Object: Performance Review Points
 
 
 
-.. index::
-  single: total field
-.. 
-
-
 
 
 :performance_id: Review Point, many2one
 
 
 
-.. index::
-  single: performance_id field
-.. 
-
-
 
 Object: Review Attributes
 #########################
 
-.. index::
-  single: Review Attributes object
-.. 
 
 
 :note: Description, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -214,38 +140,20 @@ Object: Review Attributes
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :total_point: Total Point, integer, required
 
 
 
-.. index::
-  single: total_point field
-.. 
-
-
 
 Object: Attributes Lines
 ########################
 
-.. index::
-  single: Attributes Lines object
-.. 
 
 
 :total_marks: Total Marks, float, readonly
 
-
-
-.. index::
-  single: total_marks field
-.. 
 
 
 
@@ -254,20 +162,10 @@ Object: Attributes Lines
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :obtained_marks: Obtained Marks, float, required
 
-
-
-.. index::
-  single: obtained_marks field
-.. 
 
 
 
@@ -276,29 +174,14 @@ Object: Attributes Lines
 
 
 
-.. index::
-  single: attribute_id field
-.. 
-
-
 
 
 :performance_line_id: Performance Line, many2one, readonly
 
 
 
-.. index::
-  single: performance_line_id field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

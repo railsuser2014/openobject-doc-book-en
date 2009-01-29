@@ -57,18 +57,10 @@ Objects
 Object: Planning
 ################
 
-.. index::
-  single: Planning object
-.. 
 
 
 :user_id: Responsible, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -77,20 +69,10 @@ Object: Planning
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date_from: Start Date, date, required
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -99,20 +81,10 @@ Object: Planning
 
 
 
-.. index::
-  single: stat_account_ids field
-.. 
-
-
 
 
 :stat_ids: Planning analysis, one2many, readonly
 
-
-
-.. index::
-  single: stat_ids field
-.. 
 
 
 
@@ -121,20 +93,10 @@ Object: Planning
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date_to: End Date, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -143,20 +105,10 @@ Object: Planning
 
 
 
-.. index::
-  single: line_ids field
-.. 
-
-
 
 
 :stat_user_ids: Planning by user, one2many, readonly
 
-
-
-.. index::
-  single: stat_user_ids field
-.. 
 
 
 
@@ -165,38 +117,20 @@ Object: Planning
 
 
 
-.. index::
-  single: delegate_ids field
-.. 
-
-
 
 
 :stat_product_ids: Planning by Post / Product, one2many, readonly
 
 
 
-.. index::
-  single: stat_product_ids field
-.. 
-
-
 
 Object: Planning Line
 #####################
 
-.. index::
-  single: Planning Line object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -205,20 +139,10 @@ Object: Planning Line
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :planning_id: Planning, many2one, required
 
-
-
-.. index::
-  single: planning_id field
-.. 
 
 
 
@@ -227,20 +151,10 @@ Object: Planning Line
 
 
 
-.. index::
-  single: amount_unit field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -249,20 +163,10 @@ Object: Planning Line
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :date_to: End date, date
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -271,20 +175,10 @@ Object: Planning Line
 
 
 
-.. index::
-  single: delegate_id field
-.. 
-
-
 
 
 :date_from: Start date, date
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -293,27 +187,14 @@ Object: Planning Line
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: Planning account stat
 #############################
 
-.. index::
-  single: Planning account stat object
-.. 
 
 
 :sum_amount_real: Timesheet, float, readonly
 
-
-
-.. index::
-  single: sum_amount_real field
-.. 
 
 
 
@@ -322,20 +203,10 @@ Object: Planning account stat
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :planning_id: Planning, many2one
 
-
-
-.. index::
-  single: planning_id field
-.. 
 
 
 
@@ -344,27 +215,14 @@ Object: Planning account stat
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 Object: Planning stat
 #####################
 
-.. index::
-  single: Planning stat object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -373,31 +231,16 @@ Object: Planning stat
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :planning_id: Planning, many2one
 
 
 
-.. index::
-  single: planning_id field
-.. 
-
-
 
 
 :sum_amount_real: Timesheet, float, readonly
 
-
-
-.. index::
-  single: sum_amount_real field
-.. 
 
 
 
@@ -406,20 +249,10 @@ Object: Planning stat
 
 
 
-.. index::
-  single: sum_amount field
-.. 
-
-
 
 
 :manager_id: Manager, many2one
 
-
-
-.. index::
-  single: manager_id field
-.. 
 
 
 
@@ -428,27 +261,14 @@ Object: Planning stat
 
 
 
-.. index::
-  single: sum_amount_tasks field
-.. 
-
-
 
 Object: Planning user stat
 ##########################
 
-.. index::
-  single: Planning user stat object
-.. 
 
 
 :sum_amount_real: Timesheet, float, readonly
 
-
-
-.. index::
-  single: sum_amount_real field
-.. 
 
 
 
@@ -457,29 +277,14 @@ Object: Planning user stat
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :planning_id: Planning, many2one, required
 
 
 
-.. index::
-  single: planning_id field
-.. 
-
-
 
 
 :quantity: Planned, float, required
 
-
-
-.. index::
-  single: quantity field
-.. 
 

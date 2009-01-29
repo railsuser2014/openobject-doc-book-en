@@ -53,18 +53,10 @@ Objects
 Object: Relation table between users and products on a analytic account
 #######################################################################
 
-.. index::
-  single: Relation table between users and products on a analytic account object
-.. 
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -73,18 +65,8 @@ Object: Relation table between users and products on a analytic account
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :account_id: Analytic Account, many2one, required
 
-
-
-.. index::
-  single: account_id field
-.. 
 

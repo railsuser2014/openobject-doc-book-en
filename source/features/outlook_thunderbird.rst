@@ -6,10 +6,10 @@ information is coordinated and shared across the company. With a few simple
 clicks, users can file Outlook/Thunderbird email, contacts and calendar
 information into various OpenERP modules, including Accounts, Opportunities,
 Leads, Cases, Contacts and more.
+
+.. raw:: html
  
-
-.. image:: images/outlook_screenshot.jpg
-
+ <a target="_blank" href="images/outlook_screenshot.png"><img src="images_small/outlook_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------

@@ -39,6 +39,16 @@ The following figure shows the initial configuration of the stores locations whe
 .. toctree::
 
     5_12_stock_management_illustration
+    5_12_stock_management_advantages
+    5_12_stock_management_wf
+    5_12_stock_management_stocks
+    5_12_stock_management_logistic
+    5_12_stock_management_import
+    5_12_stock_management_warehouses
+    5_12_stock_management_production.rst
+    5_12_stock_management_lots.rst
+    5_12_stock_management_journals.rst
+    5_12_stock_management_advanced.rst
 
 .. raw:: html
 

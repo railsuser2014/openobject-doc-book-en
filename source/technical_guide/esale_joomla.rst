@@ -57,29 +57,16 @@ Objects
 Object: eCommerce Website
 #########################
 
-.. index::
-  single: eCommerce Website object
-.. 
 
 
 :taxes_included_ids: Taxes included, many2many
 
 
 
-.. index::
-  single: taxes_included_ids field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -88,20 +75,10 @@ Object: eCommerce Website
 
 
 
-.. index::
-  single: url field
-.. 
-
-
 
 
 :language_id: Language, many2one
 
-
-
-.. index::
-  single: language_id field
-.. 
 
 
 
@@ -110,20 +87,10 @@ Object: eCommerce Website
 
 
 
-.. index::
-  single: category_ids field
-.. 
-
-
 
 
 :shop_id: Sale Shop, many2one, required
 
-
-
-.. index::
-  single: shop_id field
-.. 
 
 
 
@@ -132,20 +99,10 @@ Object: eCommerce Website
 
 
 
-.. index::
-  single: product_ids field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -154,27 +111,14 @@ Object: eCommerce Website
 
 
 
-.. index::
-  single: tax_ids field
-.. 
-
-
 
 Object: eSale Tax
 #################
 
-.. index::
-  single: eSale Tax object
-.. 
 
 
 :web_id: Website, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -183,20 +127,10 @@ Object: eSale Tax
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :esale_joomla_id: eSale id, integer
 
-
-
-.. index::
-  single: esale_joomla_id field
-.. 
 
 
 
@@ -205,38 +139,20 @@ Object: eSale Tax
 
 
 
-.. index::
-  single: tax_id field
-.. 
-
-
 
 Object: eSale Category
 ######################
 
-.. index::
-  single: eSale Category object
-.. 
 
 
 :include_childs: Include Childs, boolean
 
     *If checked, Tiny ERP will also export products from categories that are childs of this one.*
 
-.. index::
-  single: include_childs field
-.. 
-
-
 
 
 :category_id: Category, many2one
 
-
-
-.. index::
-  single: category_id field
-.. 
 
 
 
@@ -245,20 +161,10 @@ Object: eSale Category
 
 
 
-.. index::
-  single: web_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -267,27 +173,14 @@ Object: eSale Category
 
 
 
-.. index::
-  single: esale_joomla_id field
-.. 
-
-
 
 Object: eSale Product
 #####################
 
-.. index::
-  single: eSale Product object
-.. 
 
 
 :esale_joomla_tax_id: eSale tax, many2one
 
-
-
-.. index::
-  single: esale_joomla_tax_id field
-.. 
 
 
 
@@ -296,20 +189,10 @@ Object: eSale Product
 
 
 
-.. index::
-  single: web_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -318,49 +201,26 @@ Object: eSale Product
 
 
 
-.. index::
-  single: esale_joomla_id field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: eSale Language
 ######################
 
-.. index::
-  single: eSale Language object
-.. 
 
 
 :web_id: Website, many2one
 
 
 
-.. index::
-  single: web_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -369,38 +229,20 @@ Object: eSale Language
 
 
 
-.. index::
-  single: esale_joomla_id field
-.. 
-
-
 
 
 :language_id: Language, many2one
 
 
 
-.. index::
-  single: language_id field
-.. 
-
-
 
 Object: eShop Partner
 #####################
 
-.. index::
-  single: eShop Partner object
-.. 
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -409,20 +251,10 @@ Object: eShop Partner
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -431,20 +263,10 @@ Object: eShop Partner
 
 
 
-.. index::
-  single: zip field
-.. 
-
-
 
 
 :country: Country, char
 
-
-
-.. index::
-  single: country field
-.. 
 
 
 
@@ -453,20 +275,10 @@ Object: eShop Partner
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :esale_id: eSale ID, char
 
-
-
-.. index::
-  single: esale_id field
-.. 
 
 
 
@@ -475,38 +287,20 @@ Object: eShop Partner
 
 
 
-.. index::
-  single: address field
-.. 
-
-
 
 
 :email: Mail, char
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 Object: esale_joomla.order
 ##########################
 
-.. index::
-  single: esale_joomla.order object
-.. 
 
 
 :web_id: Web Shop, many2one, required
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -515,20 +309,10 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :epartner_shipping_id: Joomla Shipping Address, many2one, required
 
-
-
-.. index::
-  single: epartner_shipping_id field
-.. 
 
 
 
@@ -537,20 +321,10 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: order_id field
-.. 
-
-
 
 
 :epartner_invoice_id: Joomla Invoice Address, many2one, required
 
-
-
-.. index::
-  single: epartner_invoice_id field
-.. 
 
 
 
@@ -559,20 +333,10 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: web_ref field
-.. 
-
-
 
 
 :note: Notes, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -581,20 +345,10 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :partner_shipping_id: Shipping Address, many2one
 
-
-
-.. index::
-  single: partner_shipping_id field
-.. 
 
 
 
@@ -603,20 +357,10 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: partner_invoice_id field
-.. 
-
-
 
 
 :date_order: Date Ordered, date, required
 
-
-
-.. index::
-  single: date_order field
-.. 
 
 
 
@@ -625,38 +369,20 @@ Object: esale_joomla.order
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :order_lines: Order Lines, one2many
 
 
 
-.. index::
-  single: order_lines field
-.. 
-
-
 
 Object: eSale Order line
 ########################
 
-.. index::
-  single: eSale Order line object
-.. 
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -665,20 +391,10 @@ Object: eSale Order line
 
 
 
-.. index::
-  single: order_id field
-.. 
-
-
 
 
 :product_uom_id: Unit of Measure, many2one, required
 
-
-
-.. index::
-  single: product_uom_id field
-.. 
 
 
 
@@ -687,20 +403,10 @@ Object: eSale Order line
 
 
 
-.. index::
-  single: price_unit field
-.. 
-
-
 
 
 :product_qty: Quantity, float, required
 
-
-
-.. index::
-  single: product_qty field
-.. 
 
 
 
@@ -709,27 +415,14 @@ Object: eSale Order line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: eSale webshop Synchronisation log
 #########################################
 
-.. index::
-  single: eSale webshop Synchronisation log object
-.. 
 
 
 :log_date: Log date, datetime, required
 
-
-
-.. index::
-  single: log_date field
-.. 
 
 
 
@@ -738,20 +431,10 @@ Object: eSale webshop Synchronisation log
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :web_id: Web Ref, many2one
 
-
-
-.. index::
-  single: web_id field
-.. 
 
 
 
@@ -760,18 +443,8 @@ Object: eSale webshop Synchronisation log
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :log_type: Export type, selection, readonly
 
-
-
-.. index::
-  single: log_type field
-.. 
 

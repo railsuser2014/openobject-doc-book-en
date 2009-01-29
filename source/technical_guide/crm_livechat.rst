@@ -69,18 +69,10 @@ Objects
 Object: Livechat Account
 ########################
 
-.. index::
-  single: Livechat Account object
-.. 
 
 
 :name: Jabber Account, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -89,20 +81,10 @@ Object: Livechat Account
 
 
 
-.. index::
-  single: server field
-.. 
-
-
 
 
 :ssl: SSL Info, selection
 
-
-
-.. index::
-  single: ssl field
-.. 
 
 
 
@@ -111,20 +93,10 @@ Object: Livechat Account
 
 
 
-.. index::
-  single: login field
-.. 
-
-
 
 
 :password: Account Password, char, required
 
-
-
-.. index::
-  single: password field
-.. 
 
 
 
@@ -133,27 +105,14 @@ Object: Livechat Account
 
 
 
-.. index::
-  single: port field
-.. 
-
-
 
 Object: LiveChat Account
 ########################
 
-.. index::
-  single: LiveChat Account object
-.. 
 
 
 :max_per_user: Maximum Customer per User, integer
 
-
-
-.. index::
-  single: max_per_user field
-.. 
 
 
 
@@ -162,20 +121,10 @@ Object: LiveChat Account
 
     *Put here to number of minutes after which a session is considered as closed*
 
-.. index::
-  single: session_delay field
-.. 
-
-
 
 
 :state: State, selection
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -184,39 +133,21 @@ Object: LiveChat Account
 
 
 
-.. index::
-  single: user_ids field
-.. 
-
-
 
 
 :name: Livechat Account, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: LiveChat Visitors
 #########################
 
-.. index::
-  single: LiveChat Visitors object
-.. 
 
 
 :available: Available IP, char
 
     *If empty, the acount is available/not used*
-
-.. index::
-  single: available field
-.. 
-
 
 
 
@@ -224,20 +155,10 @@ Object: LiveChat Visitors
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :jabber_id: Jabber Account, many2one, required
 
-
-
-.. index::
-  single: jabber_id field
-.. 
 
 
 
@@ -246,38 +167,20 @@ Object: LiveChat Visitors
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :available_date: Available Date, datetime
 
 
 
-.. index::
-  single: available_date field
-.. 
-
-
 
 Object: LiveChat Users
 ######################
 
-.. index::
-  single: LiveChat Users object
-.. 
 
 
 :jabber_id: Jabber Account, many2one, required
 
-
-
-.. index::
-  single: jabber_id field
-.. 
 
 
 
@@ -286,31 +189,16 @@ Object: LiveChat Users
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: User Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :livechat_id: Livechat, many2one, required
 
-
-
-.. index::
-  single: livechat_id field
-.. 
 
 
 
@@ -319,38 +207,20 @@ Object: LiveChat Users
 
 
 
-.. index::
-  single: languages field
-.. 
-
-
 
 
 :state: State, selection, required
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 Object: LiveChat Log
 ####################
 
-.. index::
-  single: LiveChat Log object
-.. 
 
 
 :note: History, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -359,29 +229,14 @@ Object: LiveChat Log
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Date and Time, datetime, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :livechat_id: Livechat, many2one, required
 
-
-
-.. index::
-  single: livechat_id field
-.. 
 

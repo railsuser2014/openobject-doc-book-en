@@ -62,18 +62,10 @@ Objects
 Object: quality testings
 ########################
 
-.. index::
-  single: quality testings object
-.. 
 
 
 :name: Test Case, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -82,27 +74,14 @@ Object: quality testings
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: testing.result
 ######################
 
-.. index::
-  single: testing.result object
-.. 
 
 
 :product: Product, many2one, readonly
 
-
-
-.. index::
-  single: product field
-.. 
 
 
 
@@ -111,20 +90,10 @@ Object: testing.result
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :test_date: Testing Date, date
 
-
-
-.. index::
-  single: test_date field
-.. 
 
 
 
@@ -133,38 +102,20 @@ Object: testing.result
 
 
 
-.. index::
-  single: test_case field
-.. 
-
-
 
 
 :tester: Tested By, many2one
 
 
 
-.. index::
-  single: tester field
-.. 
-
-
 
 Object: quality test configuration
 ##################################
 
-.. index::
-  single: quality test configuration object
-.. 
 
 
 :product_idf: Product, many2one
 
-
-
-.. index::
-  single: product_idf field
-.. 
 
 
 
@@ -173,20 +124,10 @@ Object: quality test configuration
 
     *Maximum Limit of measure*
 
-.. index::
-  single: max_limit field
-.. 
-
-
 
 
 :actual_val: Actual Value, float
 
-
-
-.. index::
-  single: actual_val field
-.. 
 
 
 
@@ -195,31 +136,16 @@ Object: quality test configuration
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :min_limit: Min Limit, float
 
     *Minimum Limit of measure*
 
-.. index::
-  single: min_limit field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -228,20 +154,10 @@ Object: quality test configuration
 
 
 
-.. index::
-  single: product_idr field
-.. 
-
-
 
 
 :product_idp: Product, many2one
 
-
-
-.. index::
-  single: product_idp field
-.. 
 
 
 
@@ -250,18 +166,8 @@ Object: quality test configuration
 
 
 
-.. index::
-  single: test_id field
-.. 
-
-
 
 
 :uom: UOM, many2one
 
-
-
-.. index::
-  single: uom field
-.. 
 

@@ -64,29 +64,16 @@ Objects
 Object: Asset category
 ######################
 
-.. index::
-  single: Asset category object
-.. 
 
 
 :note: Note, text
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :code: Asset code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -95,38 +82,20 @@ Object: Asset category
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Asset
 #############
 
-.. index::
-  single: Asset object
-.. 
 
 
 :property_ids: Asset method name, one2many, readonly
 
 
 
-.. index::
-  single: property_ids field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -135,20 +104,10 @@ Object: Asset
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Asset, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -157,20 +116,10 @@ Object: Asset
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :child_ids: Childs asset, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -179,31 +128,16 @@ Object: Asset
 
 
 
-.. index::
-  single: entry_ids field
-.. 
-
-
 
 
 :localisation: Localisation, char
 
 
 
-.. index::
-  single: localisation field
-.. 
-
-
 
 
 :date: Date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -212,20 +146,10 @@ Object: Asset
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :period_id: Period, many2one, required, readonly
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -234,20 +158,10 @@ Object: Asset
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :value_total: Total value, float, readonly
 
-
-
-.. index::
-  single: value_total field
-.. 
 
 
 
@@ -256,20 +170,10 @@ Object: Asset
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :category_id: Asset category, many2one
 
-
-
-.. index::
-  single: category_id field
-.. 
 
 
 
@@ -278,27 +182,14 @@ Object: Asset
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 Object: Asset property
 ######################
 
-.. index::
-  single: Asset property object
-.. 
 
 
 :asset_id: Asset, many2one, required
 
-
-
-.. index::
-  single: asset_id field
-.. 
 
 
 
@@ -307,20 +198,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: board_ids field
-.. 
-
-
 
 
 :entry_asset_ids: Asset Entries, many2many
 
-
-
-.. index::
-  single: entry_asset_ids field
-.. 
 
 
 
@@ -329,31 +210,16 @@ Object: Asset property
 
 
 
-.. index::
-  single: history_ids field
-.. 
-
-
 
 
 :method_progress_factor: Progressif factor, float, readonly
 
 
 
-.. index::
-  single: method_progress_factor field
-.. 
-
-
 
 
 :method_end: Ending date, date
 
-
-
-.. index::
-  single: method_end field
-.. 
 
 
 
@@ -362,20 +228,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: account_asset_id field
-.. 
-
-
 
 
 :journal_id: Journal, many2one, required
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -384,20 +240,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: method field
-.. 
-
-
 
 
 :journal_analytic_id: Analytic journal, many2one
 
-
-
-.. index::
-  single: journal_analytic_id field
-.. 
 
 
 
@@ -406,20 +252,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :method_time: Time method, selection, required, readonly
 
-
-
-.. index::
-  single: method_time field
-.. 
 
 
 
@@ -428,20 +264,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :method_period: Period per interval, integer, readonly
 
-
-
-.. index::
-  single: method_period field
-.. 
 
 
 
@@ -450,20 +276,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: value_residual field
-.. 
-
-
 
 
 :value_total: Gross value, float, readonly
 
-
-
-.. index::
-  single: value_total field
-.. 
 
 
 
@@ -472,20 +288,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: account_analytic_id field
-.. 
-
-
 
 
 :account_actif_id: Depreciation account, many2one, required
 
-
-
-.. index::
-  single: account_actif_id field
-.. 
 
 
 
@@ -494,20 +300,10 @@ Object: Asset property
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :method_delay: Number of interval, integer, readonly
 
-
-
-.. index::
-  single: method_delay field
-.. 
 
 
 
@@ -516,27 +312,14 @@ Object: Asset property
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Asset history
 #####################
 
-.. index::
-  single: Asset history object
-.. 
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -545,20 +328,10 @@ Object: Asset history
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :method_end: Ending date, date
 
-
-
-.. index::
-  single: method_end field
-.. 
 
 
 
@@ -567,20 +340,10 @@ Object: Asset history
 
 
 
-.. index::
-  single: asset_property_id field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -589,20 +352,10 @@ Object: Asset history
 
 
 
-.. index::
-  single: method_delay field
-.. 
-
-
 
 
 :method_period: Period per interval, integer
 
-
-
-.. index::
-  single: method_period field
-.. 
 
 
 
@@ -611,27 +364,14 @@ Object: Asset history
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 Object: Asset board
 ###################
 
-.. index::
-  single: Asset board object
-.. 
 
 
 :asset_id: Asset, many2one, required
 
-
-
-.. index::
-  single: asset_id field
-.. 
 
 
 
@@ -640,20 +380,10 @@ Object: Asset board
 
 
 
-.. index::
-  single: value_gross field
-.. 
-
-
 
 
 :value_asset_cumul: Cumul. value, float, required
 
-
-
-.. index::
-  single: value_asset_cumul field
-.. 
 
 
 
@@ -662,29 +392,14 @@ Object: Asset board
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :value_asset: Asset Value, float, required
 
 
 
-.. index::
-  single: value_asset field
-.. 
-
-
 
 
 :value_net: Net value, float, required
 
-
-
-.. index::
-  single: value_net field
-.. 
 

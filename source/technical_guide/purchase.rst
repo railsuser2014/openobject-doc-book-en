@@ -59,29 +59,16 @@ Objects
 Object: Purchase order
 ######################
 
-.. index::
-  single: Purchase order object
-.. 
 
 
 :origin: Origin, char
 
     *Reference of the document that generated this purchase order request.*
 
-.. index::
-  single: origin field
-.. 
-
-
 
 
 :has_supplier_direct_delivery: Has Supplier Direct Delivery, boolean, readonly
 
-
-
-.. index::
-  single: has_supplier_direct_delivery field
-.. 
 
 
 
@@ -90,20 +77,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: order_line field
-.. 
-
-
 
 
 :invoiced_rate: Invoiced, float, readonly
 
-
-
-.. index::
-  single: invoiced_rate field
-.. 
 
 
 
@@ -112,31 +89,16 @@ Object: Purchase order
 
 
 
-.. index::
-  single: internal_notes field
-.. 
-
-
 
 
 :carrier_id: Delivery method, many2one
 
     *Complete this field if you plan to invoice the shipping based on packings made.*
 
-.. index::
-  single: carrier_id field
-.. 
-
-
 
 
 :date_order: Date Ordered, date, required
 
-
-
-.. index::
-  single: date_order field
-.. 
 
 
 
@@ -145,20 +107,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :invoiced: Invoiced & Paid, boolean, readonly
 
-
-
-.. index::
-  single: invoiced field
-.. 
 
 
 
@@ -167,20 +119,10 @@ Object: Purchase order
 
     *Put an address if you want to deliver directly from the supplier to the customer.In this case, it will remove the warehouse link and set the customer location.*
 
-.. index::
-  single: dest_address_id field
-.. 
-
-
 
 
 :fiscal_position: Fiscal Position, many2one
 
-
-
-.. index::
-  single: fiscal_position field
-.. 
 
 
 
@@ -189,20 +131,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: approvator field
-.. 
-
-
 
 
 :location_id: Destination, many2one, required
 
-
-
-.. index::
-  single: location_id field
-.. 
 
 
 
@@ -211,20 +143,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :amount_tax: Taxes, float, readonly
 
-
-
-.. index::
-  single: amount_tax field
-.. 
 
 
 
@@ -233,20 +155,10 @@ Object: Purchase order
 
     *The state of the purchase order or the quotation request. A quotation is a purchase order in a 'Draft' state. Then the order has to be confirmed by the user, the state switch to 'Confirmed'. Then the supplier must confirm the order to change the state to 'Approved'. When the purchase order is paid and received, the state becomes 'Done'. If a cancel action occurs in the invoice or in the reception of goods, the state becomes in exception.*
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :dm_campaign_purchase_line: DM Campaign Purchase Line, many2one
 
-
-
-.. index::
-  single: dm_campaign_purchase_line field
-.. 
 
 
 
@@ -255,20 +167,10 @@ Object: Purchase order
 
     *The pricelist sets the currency used for this purchase order. It also computes the supplier price for the selected products/quantities.*
 
-.. index::
-  single: pricelist_id field
-.. 
-
-
 
 
 :tender_id: Purchase Tender, many2one
 
-
-
-.. index::
-  single: tender_id field
-.. 
 
 
 
@@ -277,20 +179,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: partner_address_id field
-.. 
-
-
 
 
 :warehouse_id: Warehouse, many2one
 
-
-
-.. index::
-  single: warehouse_id field
-.. 
 
 
 
@@ -299,20 +191,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: amount_untaxed field
-.. 
-
-
 
 
 :shipped_rate: Received, float, readonly
 
-
-
-.. index::
-  single: shipped_rate field
-.. 
 
 
 
@@ -321,31 +203,16 @@ Object: Purchase order
 
 
 
-.. index::
-  single: partner_ref field
-.. 
-
-
 
 
 :picking_ids: Picking List, one2many, readonly
 
     *This is the list of picking list that have been generated for this purchase*
 
-.. index::
-  single: picking_ids field
-.. 
-
-
 
 
 :date_approve: Date Approved, date, readonly
 
-
-
-.. index::
-  single: date_approve field
-.. 
 
 
 
@@ -354,20 +221,10 @@ Object: Purchase order
 
 
 
-.. index::
-  single: amount_total field
-.. 
-
-
 
 
 :name: Order Reference, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -376,31 +233,16 @@ Object: Purchase order
 
 
 
-.. index::
-  single: price_type field
-.. 
-
-
 
 
 :invoice_id: Invoice, many2one, readonly
 
 
 
-.. index::
-  single: invoice_id field
-.. 
-
-
 
 
 :notes: Notes, text
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -411,20 +253,10 @@ Object: Purchase order
     From Picking: a draft invoice will be pre-genearted based on validated receptions.
     Manual: no invoice will be pre-generated. The accountant will have to encode manually.*
 
-.. index::
-  single: invoice_method field
-.. 
-
-
 
 
 :shipped: Received, boolean, readonly
 
-
-
-.. index::
-  single: shipped field
-.. 
 
 
 
@@ -433,38 +265,20 @@ Object: Purchase order
 
 
 
-.. index::
-  single: validator field
-.. 
-
-
 
 
 :minimum_planned_date: Planned Date, datetime
 
     *This is computed as the minimum scheduled date of all purchase order lines' products.*
 
-.. index::
-  single: minimum_planned_date field
-.. 
-
-
 
 Object: Purchase Order lines
 ############################
 
-.. index::
-  single: Purchase Order lines object
-.. 
 
 
 :origin: Origin, char
 
-
-
-.. index::
-  single: origin field
-.. 
 
 
 
@@ -473,20 +287,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: sale_order_line field
-.. 
-
-
 
 
 :price_unit: Unit Price, float, required
 
-
-
-.. index::
-  single: price_unit field
-.. 
 
 
 
@@ -495,20 +299,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: partner_address_id field
-.. 
-
-
 
 
 :price_subtotal: Subtotal, float, readonly
 
-
-
-.. index::
-  single: price_subtotal field
-.. 
 
 
 
@@ -517,20 +311,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 
 :production_lot_id: Production Lot, many2one
 
-
-
-.. index::
-  single: production_lot_id field
-.. 
 
 
 
@@ -539,20 +323,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: product_uom field
-.. 
-
-
 
 
 :analytics_id: Analytic Distribution, many2one
 
-
-
-.. index::
-  single: analytics_id field
-.. 
 
 
 
@@ -561,20 +335,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: move_ids field
-.. 
-
-
 
 
 :sale_order: Related Sale Order, many2one
 
-
-
-.. index::
-  single: sale_order field
-.. 
 
 
 
@@ -583,20 +347,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: is_supplier_direct_delivery field
-.. 
-
-
 
 
 :account_analytic_id: Analytic Account, many2one
 
-
-
-.. index::
-  single: account_analytic_id field
-.. 
 
 
 
@@ -605,20 +359,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: order_id field
-.. 
-
-
 
 
 :price_subtotal_incl: Subtotal, float, readonly
 
-
-
-.. index::
-  single: price_subtotal_incl field
-.. 
 
 
 
@@ -627,20 +371,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: discount field
-.. 
-
-
 
 
 :move_dest_id: Reservation Destination, many2one
 
-
-
-.. index::
-  single: move_dest_id field
-.. 
 
 
 
@@ -649,20 +383,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: move_id field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -671,20 +395,10 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date_planned: Scheduled date, datetime, required
 
-
-
-.. index::
-  single: date_planned field
-.. 
 
 
 
@@ -693,29 +407,14 @@ Object: Purchase Order lines
 
 
 
-.. index::
-  single: notes field
-.. 
-
-
 
 
 :taxes_id: Taxes, many2many
 
 
 
-.. index::
-  single: taxes_id field
-.. 
-
-
 
 
 :customer_ref: Customer reference, char
 
-
-
-.. index::
-  single: customer_ref field
-.. 
 

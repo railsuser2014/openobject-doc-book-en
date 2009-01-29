@@ -59,18 +59,10 @@ Objects
 Object: purchase Journal
 ########################
 
-.. index::
-  single: purchase Journal object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -79,20 +71,10 @@ Object: purchase Journal
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Journal, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -101,20 +83,10 @@ Object: purchase Journal
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: Creation date, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -123,20 +95,10 @@ Object: purchase Journal
 
 
 
-.. index::
-  single: purchase_stats_ids field
-.. 
-
-
 
 
 :date: Journal date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -145,38 +107,20 @@ Object: purchase Journal
 
 
 
-.. index::
-  single: date_created field
-.. 
-
-
 
 
 :date_validation: Validation date, date, readonly
 
 
 
-.. index::
-  single: date_validation field
-.. 
-
-
 
 Object: Purchases Orders by Journal
 ###################################
 
-.. index::
-  single: Purchases Orders by Journal object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -185,20 +129,10 @@ Object: Purchases Orders by Journal
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -207,20 +141,10 @@ Object: Purchases Orders by Journal
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :journal_id: Journal, many2one, readonly
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -229,18 +153,8 @@ Object: Purchases Orders by Journal
 
 
 
-.. index::
-  single: price_average field
-.. 
-
-
 
 
 :quantity: Quantities, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 

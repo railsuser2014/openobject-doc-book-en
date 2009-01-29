@@ -63,18 +63,10 @@ Objects
 Object: report.account.invoice.product
 ######################################
 
-.. index::
-  single: report.account.invoice.product object
-.. 
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -83,31 +75,16 @@ Object: report.account.invoice.product
 
 
 
-.. index::
-  single: margin field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -116,20 +93,10 @@ Object: report.account.invoice.product
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :cost_price: Cost Price, float, readonly
 
-
-
-.. index::
-  single: cost_price field
-.. 
 
 
 
@@ -138,38 +105,20 @@ Object: report.account.invoice.product
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :quantity: Quantity, float, readonly
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 Object: report.account.invoice.category
 #######################################
 
-.. index::
-  single: report.account.invoice.category object
-.. 
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -178,20 +127,10 @@ Object: report.account.invoice.category
 
 
 
-.. index::
-  single: margin field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -200,31 +139,16 @@ Object: report.account.invoice.category
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :type: Type, selection, readonly
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :quantity: Quantity, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 
 
 
@@ -233,38 +157,20 @@ Object: report.account.invoice.category
 
 
 
-.. index::
-  single: categ_id field
-.. 
-
-
 
 
 :cost_price: Cost Price, float, readonly
 
-
-
-.. index::
-  single: cost_price field
-.. 
 
 
 
 Object: report.account.invoice.partner
 ######################################
 
-.. index::
-  single: report.account.invoice.partner object
-.. 
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -273,20 +179,10 @@ Object: report.account.invoice.partner
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -295,20 +191,10 @@ Object: report.account.invoice.partner
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :type: Type, selection, readonly
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -317,49 +203,26 @@ Object: report.account.invoice.partner
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :margin: Margin, float, readonly
 
 
 
-.. index::
-  single: margin field
-.. 
-
-
 
 
 :cost_price: Cost Price, float, readonly
 
-
-
-.. index::
-  single: cost_price field
-.. 
 
 
 
 Object: report.account.invoice.partner.product
 ##############################################
 
-.. index::
-  single: report.account.invoice.partner.product object
-.. 
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -368,20 +231,10 @@ Object: report.account.invoice.partner.product
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, readonly
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -390,20 +243,10 @@ Object: report.account.invoice.partner.product
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -412,31 +255,16 @@ Object: report.account.invoice.partner.product
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :cost_price: Cost Price, float, readonly
 
 
 
-.. index::
-  single: cost_price field
-.. 
-
-
 
 
 :margin: Margin, float, readonly
 
-
-
-.. index::
-  single: margin field
-.. 
 
 
 
@@ -445,27 +273,14 @@ Object: report.account.invoice.partner.product
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: report.account.invoice
 ##############################
 
-.. index::
-  single: report.account.invoice object
-.. 
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -474,20 +289,10 @@ Object: report.account.invoice
 
 
 
-.. index::
-  single: margin field
-.. 
-
-
 
 
 :amount: Amount, float, readonly
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -496,20 +301,10 @@ Object: report.account.invoice
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :quantity: Quantity, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 
 
 
@@ -518,18 +313,8 @@ Object: report.account.invoice
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :cost_price: Cost Price, float, readonly
 
-
-
-.. index::
-  single: cost_price field
-.. 
 

@@ -72,18 +72,10 @@ Objects
 Object: Accounting Voucher
 ##########################
 
-.. index::
-  single: Accounting Voucher object
-.. 
 
 
 :move_ids: Real Entry, many2many
 
-
-
-.. index::
-  single: move_ids field
-.. 
 
 
 
@@ -92,31 +84,16 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :reference: Voucher Reference, char
 
 
 
-.. index::
-  single: reference field
-.. 
-
-
 
 
 :amount: Amount, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -125,20 +102,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: reference_type field
-.. 
-
-
 
 
 :company_id: Company, many2one, required
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -147,20 +114,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: number field
-.. 
-
-
 
 
 :currency_id: Currency, many2one, required, readonly
 
-
-
-.. index::
-  single: currency_id field
-.. 
 
 
 
@@ -169,20 +126,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -191,20 +138,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: payment_ids field
-.. 
-
-
 
 
 :narration: Narration, text, readonly
 
-
-
-.. index::
-  single: narration field
-.. 
 
 
 
@@ -213,20 +150,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :period_id: Period, many2one, required
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -235,20 +162,10 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :move_id: Account Entry, many2one
 
-
-
-.. index::
-  single: move_id field
-.. 
 
 
 
@@ -257,27 +174,14 @@ Object: Accounting Voucher
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Voucher Line
 ####################
 
-.. index::
-  single: Voucher Line object
-.. 
 
 
 :ref: Ref., char
 
-
-
-.. index::
-  single: ref field
-.. 
 
 
 
@@ -286,20 +190,10 @@ Object: Voucher Line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -308,20 +202,10 @@ Object: Voucher Line
 
 
 
-.. index::
-  single: account_analytic_id field
-.. 
-
-
 
 
 :amount: Amount, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -330,29 +214,14 @@ Object: Voucher Line
 
 
 
-.. index::
-  single: voucher_id field
-.. 
-
-
 
 
 :type: Type, selection
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :account_id: Account, many2one, required
 
-
-
-.. index::
-  single: account_id field
-.. 
 

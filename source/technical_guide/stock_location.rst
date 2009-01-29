@@ -55,29 +55,16 @@ Objects
 Object: stock.location.path
 ###########################
 
-.. index::
-  single: stock.location.path object
-.. 
 
 
 :location_from_id: Source Location, many2one
 
 
 
-.. index::
-  single: location_from_id field
-.. 
-
-
 
 
 :product_id: Products, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -87,21 +74,11 @@ Object: stock.location.path
     *This is used to define paths the product has to follow within the location tree.
     The 'Automatic Move' value will create a stock move after the current one that will be validated automatically. With 'Manual Operation', the stock move has to be validated by a worker. With 'Automatic No Step Added', the location is replaced in the original move.*
 
-.. index::
-  single: auto field
-.. 
-
-
 
 
 :delay: Delay (days), integer
 
     *Number of days to do this transition*
-
-.. index::
-  single: delay field
-.. 
-
 
 
 
@@ -109,18 +86,8 @@ Object: stock.location.path
 
 
 
-.. index::
-  single: location_dest_id field
-.. 
-
-
 
 
 :name: Operation, char
 
-
-
-.. index::
-  single: name field
-.. 
 

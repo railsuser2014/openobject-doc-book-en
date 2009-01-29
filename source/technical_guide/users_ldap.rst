@@ -44,18 +44,10 @@ Objects
 Object: res.company.ldap
 ########################
 
-.. index::
-  single: res.company.ldap object
-.. 
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -64,20 +56,10 @@ Object: res.company.ldap
 
 
 
-.. index::
-  single: ldap_password field
-.. 
-
-
 
 
 :ldap_server: LDAP Server address, char, required
 
-
-
-.. index::
-  single: ldap_server field
-.. 
 
 
 
@@ -86,20 +68,10 @@ Object: res.company.ldap
 
 
 
-.. index::
-  single: company field
-.. 
-
-
 
 
 :ldap_base: LDAP base, char, required
 
-
-
-.. index::
-  single: ldap_base field
-.. 
 
 
 
@@ -108,20 +80,10 @@ Object: res.company.ldap
 
     *Create the user if not in database*
 
-.. index::
-  single: create_user field
-.. 
-
-
 
 
 :ldap_server_port: LDAP Server port, integer, required
 
-
-
-.. index::
-  single: ldap_server_port field
-.. 
 
 
 
@@ -130,29 +92,14 @@ Object: res.company.ldap
 
     *Model used for user creation*
 
-.. index::
-  single: user field
-.. 
-
-
 
 
 :ldap_binddn: LDAP binddn, char, required
 
 
 
-.. index::
-  single: ldap_binddn field
-.. 
-
-
 
 
 :ldap_filter: LDAP filter, char, required
 
-
-
-.. index::
-  single: ldap_filter field
-.. 
 

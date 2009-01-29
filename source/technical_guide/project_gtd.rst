@@ -66,18 +66,10 @@ Objects
 Object: project.gtd.context
 ###########################
 
-.. index::
-  single: project.gtd.context object
-.. 
 
 
 :project_default_id: Default Project, many2one, required
 
-
-
-.. index::
-  single: project_default_id field
-.. 
 
 
 
@@ -86,38 +78,20 @@ Object: project.gtd.context
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 Object: project.gtd.timebox
 ###########################
 
-.. index::
-  single: project.gtd.timebox object
-.. 
 
 
 :context6_id: Context 6, many2one
 
-
-
-.. index::
-  single: context6_id field
-.. 
 
 
 
@@ -126,20 +100,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: task1_ids field
-.. 
-
-
 
 
 :col_effective_hours: Effective Hours, boolean
 
-
-
-.. index::
-  single: col_effective_hours field
-.. 
 
 
 
@@ -148,20 +112,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: task3_ids field
-.. 
-
-
 
 
 :task6_ids: Tasks, one2many
 
-
-
-.. index::
-  single: task6_ids field
-.. 
 
 
 
@@ -170,20 +124,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: task_ids field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -192,20 +136,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: context4_id field
-.. 
-
-
 
 
 :parent_id: Parent Timebox, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -214,20 +148,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: task2_ids field
-.. 
-
-
 
 
 :col_project: Project, boolean
 
-
-
-.. index::
-  single: col_project field
-.. 
 
 
 
@@ -236,20 +160,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :col_date_start: Date Start, boolean
 
-
-
-.. index::
-  single: col_date_start field
-.. 
 
 
 
@@ -258,20 +172,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: col_priority field
-.. 
-
-
 
 
 :task4_ids: Tasks, one2many
 
-
-
-.. index::
-  single: task4_ids field
-.. 
 
 
 
@@ -280,20 +184,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :context2_id: Context 2, many2one
 
-
-
-.. index::
-  single: context2_id field
-.. 
 
 
 
@@ -302,20 +196,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: task5_ids field
-.. 
-
-
 
 
 :context3_id: Context 3, many2one
 
-
-
-.. index::
-  single: context3_id field
-.. 
 
 
 
@@ -324,20 +208,10 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :context5_id: Context 5, many2one
 
-
-
-.. index::
-  single: context5_id field
-.. 
 
 
 
@@ -346,29 +220,14 @@ Object: project.gtd.timebox
 
 
 
-.. index::
-  single: context1_id field
-.. 
-
-
 
 
 :col_planned_hours: Planned Hours, boolean
 
 
 
-.. index::
-  single: col_planned_hours field
-.. 
-
-
 
 
 :col_deadline: Deadline, boolean
 
-
-
-.. index::
-  single: col_deadline field
-.. 
 

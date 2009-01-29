@@ -55,29 +55,16 @@ Objects
 Object: Cases by user and section
 #################################
 
-.. index::
-  single: Cases by user and section object
-.. 
 
 
 :amount_revenue_prob: Est. Rev*Prob., float, readonly
 
 
 
-.. index::
-  single: amount_revenue_prob field
-.. 
-
-
 
 
 :amount_costs: Est.Cost, float, readonly
 
-
-
-.. index::
-  single: amount_costs field
-.. 
 
 
 
@@ -86,20 +73,10 @@ Object: Cases by user and section
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -108,20 +85,10 @@ Object: Cases by user and section
 
 
 
-.. index::
-  single: probability field
-.. 
-
-
 
 
 :nbr: # of Cases, integer, readonly
 
-
-
-.. index::
-  single: nbr field
-.. 
 
 
 
@@ -130,31 +97,16 @@ Object: Cases by user and section
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :amount_revenue: Est.Revenue, float, readonly
 
-
-
-.. index::
-  single: amount_revenue field
-.. 
 
 
 
@@ -163,27 +115,14 @@ Object: Cases by user and section
 
 
 
-.. index::
-  single: delay_close field
-.. 
-
-
 
 Object: Cases by section and category
 #####################################
 
-.. index::
-  single: Cases by section and category object
-.. 
 
 
 :amount_revenue_prob: Est. Rev*Prob., float, readonly
 
-
-
-.. index::
-  single: amount_revenue_prob field
-.. 
 
 
 
@@ -192,20 +131,10 @@ Object: Cases by section and category
 
 
 
-.. index::
-  single: amount_costs field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -214,20 +143,10 @@ Object: Cases by section and category
 
 
 
-.. index::
-  single: probability field
-.. 
-
-
 
 
 :nbr: # of Cases, integer, readonly
 
-
-
-.. index::
-  single: nbr field
-.. 
 
 
 
@@ -236,20 +155,10 @@ Object: Cases by section and category
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -258,29 +167,14 @@ Object: Cases by section and category
 
 
 
-.. index::
-  single: amount_revenue field
-.. 
-
-
 
 
 :delay_close: Delay Close, char, readonly
 
 
 
-.. index::
-  single: delay_close field
-.. 
-
-
 
 
 :categ_id: Category, many2one, readonly
 
-
-
-.. index::
-  single: categ_id field
-.. 
 

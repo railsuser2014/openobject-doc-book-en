@@ -54,18 +54,10 @@ Objects
 Object: Purchases Orders by Products
 ####################################
 
-.. index::
-  single: Purchases Orders by Products object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -74,20 +66,10 @@ Object: Purchases Orders by Products
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -96,20 +78,10 @@ Object: Purchases Orders by Products
 
 
 
-.. index::
-  single: price_average field
-.. 
-
-
 
 
 :state: Order State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -118,38 +90,20 @@ Object: Purchases Orders by Products
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :quantity: # of Products, float, readonly
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 Object: Purchases Orders by Categories
 ######################################
 
-.. index::
-  single: Purchases Orders by Categories object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -158,20 +112,10 @@ Object: Purchases Orders by Categories
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -180,20 +124,10 @@ Object: Purchases Orders by Categories
 
 
 
-.. index::
-  single: price_average field
-.. 
-
-
 
 
 :state: Order State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -202,18 +136,8 @@ Object: Purchases Orders by Categories
 
 
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :quantity: # of Products, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 

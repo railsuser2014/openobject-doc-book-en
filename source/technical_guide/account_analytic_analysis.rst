@@ -61,29 +61,16 @@ Objects
 Object: Hours summary by user
 #############################
 
-.. index::
-  single: Hours summary by user object
-.. 
 
 
 :account_id: Analytic Account, many2one, readonly
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :unit_amount: Total Time, float, readonly
 
-
-
-.. index::
-  single: unit_amount field
-.. 
 
 
 
@@ -92,27 +79,14 @@ Object: Hours summary by user
 
 
 
-.. index::
-  single: user field
-.. 
-
-
 
 Object: Hours summary by month
 ##############################
 
-.. index::
-  single: Hours summary by month object
-.. 
 
 
 :account_id: Analytic Account, many2one, readonly
 
-
-
-.. index::
-  single: account_id field
-.. 
 
 
 
@@ -121,18 +95,8 @@ Object: Hours summary by month
 
 
 
-.. index::
-  single: unit_amount field
-.. 
-
-
 
 
 :month: Month, char, readonly
 
-
-
-.. index::
-  single: month field
-.. 
 

@@ -63,18 +63,10 @@ Objects
 Object: stock.planning.period
 #############################
 
-.. index::
-  single: stock.planning.period object
-.. 
 
 
 :date_stop: End Date, date, required
 
-
-
-.. index::
-  single: date_stop field
-.. 
 
 
 
@@ -83,20 +75,10 @@ Object: stock.planning.period
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :name: Period Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -105,27 +87,14 @@ Object: stock.planning.period
 
 
 
-.. index::
-  single: period_ids field
-.. 
-
-
 
 Object: stock.period
 ####################
 
-.. index::
-  single: stock.period object
-.. 
 
 
 :date_stop: End Date, datetime, required
 
-
-
-.. index::
-  single: date_stop field
-.. 
 
 
 
@@ -134,20 +103,10 @@ Object: stock.period
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :name: Period Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -156,38 +115,20 @@ Object: stock.period
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 Object: stock.planning.sale.prevision
 #####################################
 
-.. index::
-  single: stock.planning.sale.prevision object
-.. 
 
 
 :user_id: Salesman, many2one, readonly
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -196,20 +137,10 @@ Object: stock.planning.sale.prevision
 
 
 
-.. index::
-  single: product_uom field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -218,20 +149,10 @@ Object: stock.planning.sale.prevision
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :period_id: Period, many2one, required
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -240,20 +161,10 @@ Object: stock.planning.sale.prevision
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 
 :amt_sold: Real Amount Sold, float, readonly
 
-
-
-.. index::
-  single: amt_sold field
-.. 
 
 
 
@@ -262,27 +173,14 @@ Object: stock.planning.sale.prevision
 
 
 
-.. index::
-  single: product_amt field
-.. 
-
-
 
 Object: stock.planning
 ######################
 
-.. index::
-  single: stock.planning object
-.. 
 
 
 :outgoing: Confirmed Out, float, readonly
 
-
-
-.. index::
-  single: outgoing field
-.. 
 
 
 
@@ -291,20 +189,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: outgoing_left field
-.. 
-
-
 
 
 :incoming: Confirmed In, float, readonly
 
-
-
-.. index::
-  single: incoming field
-.. 
 
 
 
@@ -313,20 +201,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :product_uom: UoM, many2one, required
 
-
-
-.. index::
-  single: product_uom field
-.. 
 
 
 
@@ -335,20 +213,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: incoming_left field
-.. 
-
-
 
 
 :warehouse_id: Warehouse, many2one
 
-
-
-.. index::
-  single: warehouse_id field
-.. 
 
 
 
@@ -357,20 +225,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: stock_start field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -379,20 +237,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: line_time field
-.. 
-
-
 
 
 :period_id: Period, many2one, required
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -401,20 +249,10 @@ Object: stock.planning
 
 
 
-.. index::
-  single: planned_outgoing field
-.. 
-
-
 
 
 :to_procure: Planned In, float, required
 
-
-
-.. index::
-  single: to_procure field
-.. 
 
 
 
@@ -423,18 +261,8 @@ Object: stock.planning
 
 
 
-.. index::
-  single: planned_sale field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 

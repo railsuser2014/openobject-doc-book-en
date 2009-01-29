@@ -101,29 +101,16 @@ Objects
 Object: Invoice Types
 #####################
 
-.. index::
-  single: Invoice Types object
-.. 
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -132,38 +119,20 @@ Object: Invoice Types
 
 
 
-.. index::
-  single: invoicing_method field
-.. 
-
-
 
 
 :name: Invoice Type, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Sale Journal
 ####################
 
-.. index::
-  single: Sale Journal object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -172,31 +141,16 @@ Object: Sale Journal
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Journal, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :note: Note, text
 
-
-
-.. index::
-  single: note field
-.. 
 
 
 
@@ -205,20 +159,10 @@ Object: Sale Journal
 
 
 
-.. index::
-  single: sale_stats_ids field
-.. 
-
-
 
 
 :state: State, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -227,20 +171,10 @@ Object: Sale Journal
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :date_created: Creation date, date, required, readonly
 
-
-
-.. index::
-  single: date_created field
-.. 
 
 
 
@@ -249,27 +183,14 @@ Object: Sale Journal
 
 
 
-.. index::
-  single: date_validation field
-.. 
-
-
 
 Object: Packings Journal
 ########################
 
-.. index::
-  single: Packings Journal object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -278,20 +199,10 @@ Object: Packings Journal
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Journal, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -300,20 +211,10 @@ Object: Packings Journal
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: Creation date, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -322,20 +223,10 @@ Object: Packings Journal
 
 
 
-.. index::
-  single: picking_stats_ids field
-.. 
-
-
 
 
 :date: Journal date, date, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -344,38 +235,20 @@ Object: Packings Journal
 
 
 
-.. index::
-  single: date_created field
-.. 
-
-
 
 
 :date_validation: Validation date, date, readonly
 
 
 
-.. index::
-  single: date_validation field
-.. 
-
-
 
 Object: Sales Orders by Journal
 ###############################
 
-.. index::
-  single: Sales Orders by Journal object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -384,20 +257,10 @@ Object: Sales Orders by Journal
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -406,31 +269,16 @@ Object: Sales Orders by Journal
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :journal_id: Journal, many2one, readonly
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :price_average: Average Price, float, readonly
 
-
-
-.. index::
-  single: price_average field
-.. 
 
 
 
@@ -439,27 +287,14 @@ Object: Sales Orders by Journal
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 Object: Stats on packings by invoice method
 ###########################################
 
-.. index::
-  single: Stats on packings by invoice method object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -468,31 +303,16 @@ Object: Stats on packings by invoice method
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :price_average: Average Price, float, readonly
 
-
-
-.. index::
-  single: price_average field
-.. 
 
 
 
@@ -501,20 +321,10 @@ Object: Stats on packings by invoice method
 
 
 
-.. index::
-  single: invoice_state field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -523,38 +333,20 @@ Object: Stats on packings by invoice method
 
 
 
-.. index::
-  single: invoice_type_id field
-.. 
-
-
 
 
 :quantity: Quantities, float, readonly
 
 
 
-.. index::
-  single: quantity field
-.. 
-
-
 
 Object: Packing lists by Journal
 ################################
 
-.. index::
-  single: Packing lists by Journal object
-.. 
 
 
 :count: # of Lines, integer, readonly
 
-
-
-.. index::
-  single: count field
-.. 
 
 
 
@@ -563,20 +355,10 @@ Object: Packing lists by Journal
 
 
 
-.. index::
-  single: price_total field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -585,20 +367,10 @@ Object: Packing lists by Journal
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :journal_id: Journal, many2one, readonly
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -607,18 +379,8 @@ Object: Packing lists by Journal
 
 
 
-.. index::
-  single: price_average field
-.. 
-
-
 
 
 :quantity: Quantities, float, readonly
 
-
-
-.. index::
-  single: quantity field
-.. 
 

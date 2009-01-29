@@ -97,47 +97,26 @@ Objects
 Object: Category2 of case
 #########################
 
-.. index::
-  single: Category2 of case object
-.. 
 
 
 :name: Case Category2 Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :section_id: Case Section, many2one
 
-
-
-.. index::
-  single: section_id field
-.. 
 
 
 
 Object: Stage of case
 #####################
 
-.. index::
-  single: Stage of case object
-.. 
 
 
 :name: Stage Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -146,38 +125,20 @@ Object: Stage of case
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 Object: crm.menu.config_wizard
 ##############################
 
-.. index::
-  single: crm.menu.config_wizard object
-.. 
 
 
 :jobs: Jobs Hiring Process, boolean
 
     *Help you to organise the jobs hiring process: evaluation, meetings, email integration...*
 
-.. index::
-  single: jobs field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -186,21 +147,11 @@ Object: crm.menu.config_wizard
 
     *Allows you to track and manage leads which are pre-sales requests or contacts, the very first contact with a customer request.*
 
-.. index::
-  single: lead field
-.. 
-
-
 
 
 :document_ics: Shared Calendar, boolean
 
     *Will allow you to synchronise your Open ERP calendars with your phone, outlook, Sunbird, ical, ...*
-
-.. index::
-  single: document_ics field
-.. 
-
 
 
 
@@ -208,21 +159,11 @@ Object: crm.menu.config_wizard
 
     *Manages an Helpdesk service.*
 
-.. index::
-  single: helpdesk field
-.. 
-
-
 
 
 :bugs: Bug Tracking, boolean
 
     *Used by companies to track bugs and support requests on softwares*
-
-.. index::
-  single: bugs field
-.. 
-
 
 
 
@@ -230,21 +171,11 @@ Object: crm.menu.config_wizard
 
     *Help you to encode the result of a phone call or to planify a list of phone calls to process.*
 
-.. index::
-  single: phonecall field
-.. 
-
-
 
 
 :fund: Fund Raising Operations, boolean
 
     *This may help associations in their fund raising process and tracking.*
-
-.. index::
-  single: fund field
-.. 
-
 
 
 
@@ -252,21 +183,11 @@ Object: crm.menu.config_wizard
 
     *Manages the supplier and customers claims, including your corrective or preventive actions.*
 
-.. index::
-  single: claims field
-.. 
-
-
 
 
 :meeting: Calendar of Meetings, boolean
 
     *Manages the calendar of meetings of the users.*
-
-.. index::
-  single: meeting field
-.. 
-
 
 
 
@@ -274,27 +195,14 @@ Object: crm.menu.config_wizard
 
     *Tracks identified business opportunities for your sales pipeline.*
 
-.. index::
-  single: opportunity field
-.. 
-
-
 
 Object: Cases by section and category2
 ######################################
 
-.. index::
-  single: Cases by section and category2 object
-.. 
 
 
 :stage_id: Stage, many2one, readonly
 
-
-
-.. index::
-  single: stage_id field
-.. 
 
 
 
@@ -303,20 +211,10 @@ Object: Cases by section and category2
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -325,20 +223,10 @@ Object: Cases by section and category2
 
 
 
-.. index::
-  single: nbr field
-.. 
-
-
 
 
 :section_id: Section, many2one, readonly
 
-
-
-.. index::
-  single: section_id field
-.. 
 
 
 
@@ -347,20 +235,10 @@ Object: Cases by section and category2
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :amount_revenue: Est.Revenue, float, readonly
 
-
-
-.. index::
-  single: amount_revenue field
-.. 
 
 
 
@@ -369,38 +247,20 @@ Object: Cases by section and category2
 
 
 
-.. index::
-  single: category2_id field
-.. 
-
-
 
 
 :delay_close: Delay Close, char, readonly
 
-
-
-.. index::
-  single: delay_close field
-.. 
 
 
 
 Object: Cases by section and stage
 ##################################
 
-.. index::
-  single: Cases by section and stage object
-.. 
 
 
 :stage_id: Stage, many2one, readonly
 
-
-
-.. index::
-  single: stage_id field
-.. 
 
 
 
@@ -409,20 +269,10 @@ Object: Cases by section and stage
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -431,31 +281,16 @@ Object: Cases by section and stage
 
 
 
-.. index::
-  single: nbr field
-.. 
-
-
 
 
 :section_id: Section, many2one, readonly
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -464,49 +299,26 @@ Object: Cases by section and stage
 
 
 
-.. index::
-  single: amount_revenue field
-.. 
-
-
 
 
 :delay_close: Delay Close, char, readonly
 
 
 
-.. index::
-  single: delay_close field
-.. 
-
-
 
 
 :categ_id: Category, many2one, readonly
 
-
-
-.. index::
-  single: categ_id field
-.. 
 
 
 
 Object: Cases by section, Category and stage
 ############################################
 
-.. index::
-  single: Cases by section, Category and stage object
-.. 
 
 
 :stage_id: Stage, many2one, readonly
 
-
-
-.. index::
-  single: stage_id field
-.. 
 
 
 
@@ -515,20 +327,10 @@ Object: Cases by section, Category and stage
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -537,31 +339,16 @@ Object: Cases by section, Category and stage
 
 
 
-.. index::
-  single: nbr field
-.. 
-
-
 
 
 :section_id: Section, many2one, readonly
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -570,38 +357,20 @@ Object: Cases by section, Category and stage
 
 
 
-.. index::
-  single: delay_close field
-.. 
-
-
 
 
 :categ_id: Category, many2one, readonly
 
 
 
-.. index::
-  single: categ_id field
-.. 
-
-
 
 Object: Cases by section, Category and Category2
 ################################################
 
-.. index::
-  single: Cases by section, Category and Category2 object
-.. 
 
 
 :stage_id: Stage, many2one, readonly
 
-
-
-.. index::
-  single: stage_id field
-.. 
 
 
 
@@ -610,20 +379,10 @@ Object: Cases by section, Category and Category2
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Month, date, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -632,31 +391,16 @@ Object: Cases by section, Category and Category2
 
 
 
-.. index::
-  single: nbr field
-.. 
-
-
 
 
 :section_id: Section, many2one, readonly
 
 
 
-.. index::
-  single: section_id field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -665,29 +409,14 @@ Object: Cases by section, Category and Category2
 
 
 
-.. index::
-  single: category2_id field
-.. 
-
-
 
 
 :delay_close: Delay Close, char, readonly
 
 
 
-.. index::
-  single: delay_close field
-.. 
-
-
 
 
 :categ_id: Category, many2one, readonly
 
-
-
-.. index::
-  single: categ_id field
-.. 
 

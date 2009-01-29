@@ -50,18 +50,10 @@ Objects
 Object: Mrp Sub Product
 #######################
 
-.. index::
-  single: Mrp Sub Product object
-.. 
 
 
 :bom_id: BoM, many2one
 
-
-
-.. index::
-  single: bom_id field
-.. 
 
 
 
@@ -70,29 +62,14 @@ Object: Mrp Sub Product
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 
 :product_uom: Product UOM, many2one, required
 
 
 
-.. index::
-  single: product_uom field
-.. 
-
-
 
 
 :product_qty: Product Qty, float, required
 
-
-
-.. index::
-  single: product_qty field
-.. 
 

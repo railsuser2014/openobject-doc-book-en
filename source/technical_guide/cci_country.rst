@@ -47,18 +47,10 @@ Objects
 Object: Country or Area for CCI
 ###############################
 
-.. index::
-  single: Country or Area for CCI object
-.. 
 
 
 :cci_country_ids: Linked Countries-Areas, many2many
 
-
-
-.. index::
-  single: cci_country_ids field
-.. 
 
 
 
@@ -67,20 +59,10 @@ Object: Country or Area for CCI
 
 
 
-.. index::
-  single: phoneprefix field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -89,20 +71,10 @@ Object: Country or Area for CCI
 
     *Indicates if this code can be used for Embassies*
 
-.. index::
-  single: valid4embassy field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -111,20 +83,10 @@ Object: Country or Area for CCI
 
 
 
-.. index::
-  single: official_name field
-.. 
-
-
 
 
 :postalabbrev: Postal Abbreviation, char
 
-
-
-.. index::
-  single: postalabbrev field
-.. 
 
 
 
@@ -133,21 +95,11 @@ Object: Country or Area for CCI
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :valid4certificate: Certificates, boolean
 
     *Indicates if this code can be used for certificates*
-
-.. index::
-  single: valid4certificate field
-.. 
-
 
 
 
@@ -155,29 +107,14 @@ Object: Country or Area for CCI
 
     *Indicates if we can still use this country-area code*
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :valid4ata: ATA, boolean
 
     *Indicates if this code can be used for carnets ATA*
 
-.. index::
-  single: valid4ata field
-.. 
-
-
 
 
 :iscountry: Country, boolean
 
     *Indicates if this code designates a country; if False, designates an area*
-
-.. index::
-  single: iscountry field
-.. 
-

@@ -80,18 +80,10 @@ Objects
 Object: hr_timesheet_sheet.sheet
 ################################
 
-.. index::
-  single: hr_timesheet_sheet.sheet object
-.. 
 
 
 :total_attendance: Total Attendance, float, readonly
 
-
-
-.. index::
-  single: total_attendance field
-.. 
 
 
 
@@ -100,20 +92,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: timesheet_ids field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -122,20 +104,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :total_timesheet: Total Timesheet, float, readonly
 
-
-
-.. index::
-  single: total_timesheet field
-.. 
 
 
 
@@ -144,20 +116,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 
 :date_to: Date to, date, required, readonly
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -166,20 +128,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: attendances_ids field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -188,20 +140,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: period_ids field
-.. 
-
-
 
 
 :total_difference: Difference, float, readonly
 
-
-
-.. index::
-  single: total_difference field
-.. 
 
 
 
@@ -210,20 +152,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :total_timesheet_day: Total Timesheet, float, readonly
 
-
-
-.. index::
-  single: total_timesheet_day field
-.. 
 
 
 
@@ -232,20 +164,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: account_ids field
-.. 
-
-
 
 
 :date_current: Current date, date, required
 
-
-
-.. index::
-  single: date_current field
-.. 
 
 
 
@@ -254,20 +176,10 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: state_attendance field
-.. 
-
-
 
 
 :total_difference_day: Difference, float, readonly
 
-
-
-.. index::
-  single: total_difference_day field
-.. 
 
 
 
@@ -276,27 +188,14 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-.. index::
-  single: total_attendance_day field
-.. 
-
-
 
 Object: Timesheets by period
 ############################
 
-.. index::
-  single: Timesheets by period object
-.. 
 
 
 :total_attendance: Attendance, float, readonly
 
-
-
-.. index::
-  single: total_attendance field
-.. 
 
 
 
@@ -305,20 +204,10 @@ Object: Timesheets by period
 
 
 
-.. index::
-  single: total_difference field
-.. 
-
-
 
 
 :sheet_id: Sheet, many2one, readonly
 
-
-
-.. index::
-  single: sheet_id field
-.. 
 
 
 
@@ -327,38 +216,20 @@ Object: Timesheets by period
 
 
 
-.. index::
-  single: total_timesheet field
-.. 
-
-
 
 
 :name: Date, date, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Timesheets by period
 ############################
 
-.. index::
-  single: Timesheets by period object
-.. 
 
 
 :total: Total Time, float, readonly
 
-
-
-.. index::
-  single: total field
-.. 
 
 
 
@@ -367,29 +238,14 @@ Object: Timesheets by period
 
 
 
-.. index::
-  single: sheet_id field
-.. 
-
-
 
 
 :name: Analytic Account, many2one, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :invoice_rate: Invoice rate, many2one, readonly
 
-
-
-.. index::
-  single: invoice_rate field
-.. 
 

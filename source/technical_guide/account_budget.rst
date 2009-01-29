@@ -73,18 +73,10 @@ Objects
 Object: Budgetary Position
 ##########################
 
-.. index::
-  single: Budgetary Position object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -93,20 +85,10 @@ Object: Budgetary Position
 
 
 
-.. index::
-  single: dotation_ids field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -115,20 +97,10 @@ Object: Budgetary Position
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 
 :crossovered_budget_line: Budget Lines, one2many
 
-
-
-.. index::
-  single: crossovered_budget_line field
-.. 
 
 
 
@@ -137,27 +109,14 @@ Object: Budgetary Position
 
 
 
-.. index::
-  single: account_ids field
-.. 
-
-
 
 Object: Budget Dotation
 #######################
 
-.. index::
-  single: Budget Dotation object
-.. 
 
 
 :post_id: Item, many2one
 
-
-
-.. index::
-  single: post_id field
-.. 
 
 
 
@@ -166,20 +125,10 @@ Object: Budget Dotation
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :period_id: Period, many2one
 
-
-
-.. index::
-  single: period_id field
-.. 
 
 
 
@@ -188,38 +137,20 @@ Object: Budget Dotation
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :tot_planned: Total Planned Amount, float, readonly
 
 
 
-.. index::
-  single: tot_planned field
-.. 
-
-
 
 Object: Budget
 ##############
 
-.. index::
-  single: Budget object
-.. 
 
 
 :crossovered_budget_line: Budget Lines, one2many
 
-
-
-.. index::
-  single: crossovered_budget_line field
-.. 
 
 
 
@@ -228,20 +159,10 @@ Object: Budget
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date_from: Start Date, date, required
 
-
-
-.. index::
-  single: date_from field
-.. 
 
 
 
@@ -250,20 +171,10 @@ Object: Budget
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -272,20 +183,10 @@ Object: Budget
 
 
 
-.. index::
-  single: validating_user_id field
-.. 
-
-
 
 
 :date_to: End Date, date, required
 
-
-
-.. index::
-  single: date_to field
-.. 
 
 
 
@@ -294,27 +195,14 @@ Object: Budget
 
 
 
-.. index::
-  single: creating_user_id field
-.. 
-
-
 
 Object: Budget Lines
 ####################
 
-.. index::
-  single: Budget Lines object
-.. 
 
 
 :analytic_account_id: Analytic Account, many2one, required
 
-
-
-.. index::
-  single: analytic_account_id field
-.. 
 
 
 
@@ -323,20 +211,10 @@ Object: Budget Lines
 
 
 
-.. index::
-  single: general_budget_id field
-.. 
-
-
 
 
 :theoritical_amount: Theoritical Amount, float, readonly
 
-
-
-.. index::
-  single: theoritical_amount field
-.. 
 
 
 
@@ -345,20 +223,10 @@ Object: Budget Lines
 
 
 
-.. index::
-  single: date_from field
-.. 
-
-
 
 
 :planned_amount: Planned Amount, float, required
 
-
-
-.. index::
-  single: planned_amount field
-.. 
 
 
 
@@ -367,20 +235,10 @@ Object: Budget Lines
 
 
 
-.. index::
-  single: crossovered_budget_id field
-.. 
-
-
 
 
 :paid_date: Paid Date, date
 
-
-
-.. index::
-  single: paid_date field
-.. 
 
 
 
@@ -389,29 +247,14 @@ Object: Budget Lines
 
 
 
-.. index::
-  single: date_to field
-.. 
-
-
 
 
 :practical_amount: Practical Amount, float, readonly
 
 
 
-.. index::
-  single: practical_amount field
-.. 
-
-
 
 
 :percentage: Percentage, float, readonly
 
-
-
-.. index::
-  single: percentage field
-.. 
 

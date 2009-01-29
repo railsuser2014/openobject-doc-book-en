@@ -52,18 +52,10 @@ Objects
 Object: campaign.campaign
 #########################
 
-.. index::
-  single: campaign.campaign object
-.. 
 
 
 :info: Description, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -72,20 +64,10 @@ Object: campaign.campaign
 
 
 
-.. index::
-  single: date_stop field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -94,20 +76,10 @@ Object: campaign.campaign
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :planned_costs: Planned Costs, float
 
-
-
-.. index::
-  single: planned_costs field
-.. 
 
 
 
@@ -116,20 +88,10 @@ Object: campaign.campaign
 
 
 
-.. index::
-  single: costs field
-.. 
-
-
 
 
 :step_id: Campaign Steps, one2many
 
-
-
-.. index::
-  single: step_id field
-.. 
 
 
 
@@ -138,27 +100,14 @@ Object: campaign.campaign
 
 
 
-.. index::
-  single: planned_revenue field
-.. 
-
-
 
 Object: campaign.step
 #####################
 
-.. index::
-  single: campaign.step object
-.. 
 
 
 :info: Description, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -167,20 +116,10 @@ Object: campaign.step
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :procent: Success Rate (0<x<1), float
 
-
-
-.. index::
-  single: procent field
-.. 
 
 
 
@@ -189,20 +128,10 @@ Object: campaign.step
 
 
 
-.. index::
-  single: stop_date field
-.. 
-
-
 
 
 :campaign_id: Campaign, many2one
 
-
-
-.. index::
-  single: campaign_id field
-.. 
 
 
 
@@ -211,31 +140,16 @@ Object: campaign.step
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :costs: Step Costs, float
 
 
 
-.. index::
-  single: costs field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -244,49 +158,26 @@ Object: campaign.step
 
 
 
-.. index::
-  single: max_try field
-.. 
-
-
 
 
 :start_date: Start Date, date
 
 
 
-.. index::
-  single: start_date field
-.. 
-
-
 
 Object: campaign.partner
 ########################
 
-.. index::
-  single: campaign.partner object
-.. 
 
 
 :part_adr_id: Partner Address, many2one, required
 
 
 
-.. index::
-  single: part_adr_id field
-.. 
-
-
 
 
 :info: Comments, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -295,20 +186,10 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name / Reference, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -317,20 +198,10 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: date_recall field
-.. 
-
-
 
 
 :notes: Prospect Notes, text
 
-
-
-.. index::
-  single: notes field
-.. 
 
 
 
@@ -339,20 +210,10 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: campaign_id field
-.. 
-
-
 
 
 :contact: Partner Contact, char
 
-
-
-.. index::
-  single: contact field
-.. 
 
 
 
@@ -361,20 +222,10 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :history_ids: History, one2many
 
-
-
-.. index::
-  single: history_ids field
-.. 
 
 
 
@@ -383,20 +234,10 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: step field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -405,38 +246,20 @@ Object: campaign.partner
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 Object: campaign.partner.history
 ################################
 
-.. index::
-  single: campaign.partner.history object
-.. 
 
 
 :info: Comments, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -445,20 +268,10 @@ Object: campaign.partner.history
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :camp_partner_id: Prospect, many2one, readonly
 
-
-
-.. index::
-  single: camp_partner_id field
-.. 
 
 
 
@@ -467,29 +280,14 @@ Object: campaign.partner.history
 
 
 
-.. index::
-  single: step_attempt field
-.. 
-
-
 
 
 :date: Date, datetime, readonly
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :step_id: Step, many2one, readonly
 
-
-
-.. index::
-  single: step_id field
-.. 
 

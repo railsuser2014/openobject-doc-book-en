@@ -47,18 +47,10 @@ Objects
 Object: EDI log
 ###############
 
-.. index::
-  single: EDI log object
-.. 
 
 
 :name: Log name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -67,27 +59,14 @@ Object: EDI log
 
 
 
-.. index::
-  single: log_line field
-.. 
-
-
 
 Object: EDI Log Line
 ####################
 
-.. index::
-  single: EDI Log Line object
-.. 
 
 
 :sender: Partner, many2one, readonly
 
-
-
-.. index::
-  single: sender field
-.. 
 
 
 
@@ -96,20 +75,10 @@ Object: EDI Log Line
 
 
 
-.. index::
-  single: log_id field
-.. 
-
-
 
 
 :timestamp: Order date, char
 
-
-
-.. index::
-  single: timestamp field
-.. 
 
 
 
@@ -118,29 +87,14 @@ Object: EDI Log Line
 
 
 
-.. index::
-  single: logdesc field
-.. 
-
-
 
 
 :order_num: Edi Order Id, char
 
 
 
-.. index::
-  single: order_num field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

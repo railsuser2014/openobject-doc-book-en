@@ -55,29 +55,16 @@ Objects
 Object: Email Client
 ####################
 
-.. index::
-  single: Email Client object
-.. 
 
 
 :body: Message, text
 
     *The message text that will be send along with the email which is send through this server*
 
-.. index::
-  single: body field
-.. 
-
-
 
 
 :history_line: History, one2many
 
-
-
-.. index::
-  single: history_line field
-.. 
 
 
 
@@ -86,20 +73,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :from: Email From, char, required, readonly
 
-
-
-.. index::
-  single: from field
-.. 
 
 
 
@@ -108,20 +85,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :test_email: Test Message, text
 
-
-
-.. index::
-  single: test_email field
-.. 
 
 
 
@@ -130,20 +97,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: server field
-.. 
-
-
 
 
 :date_create: Date Create, date, required, readonly
 
-
-
-.. index::
-  single: date_create field
-.. 
 
 
 
@@ -152,20 +109,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: ssl field
-.. 
-
-
 
 
 :state: Server Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -174,20 +121,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 
 :server_statistics: Statistics, one2many
 
-
-
-.. index::
-  single: server_statistics field
-.. 
 
 
 
@@ -196,20 +133,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: user field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -218,20 +145,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: verify_email field
-.. 
-
-
 
 
 :password: Password, char, required, readonly
 
-
-
-.. index::
-  single: password field
-.. 
 
 
 
@@ -240,20 +157,10 @@ Object: Email Client
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :port: SMTP Port, char, required, readonly
 
-
-
-.. index::
-  single: port field
-.. 
 
 
 
@@ -262,27 +169,14 @@ Object: Email Client
 
 
 
-.. index::
-  single: users_id field
-.. 
-
-
 
 Object: Email Client History
 ############################
 
-.. index::
-  single: Email Client History object
-.. 
 
 
 :server_id: Smtp Server, many2one, required
 
-
-
-.. index::
-  single: server_id field
-.. 
 
 
 
@@ -291,20 +185,10 @@ Object: Email Client History
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Description, text, required, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -313,20 +197,10 @@ Object: Email Client History
 
 
 
-.. index::
-  single: resource_id field
-.. 
-
-
 
 
 :date_create: Date, datetime, readonly
 
-
-
-.. index::
-  single: date_create field
-.. 
 
 
 
@@ -335,38 +209,20 @@ Object: Email Client History
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :email: Email, char, readonly
 
 
 
-.. index::
-  single: email field
-.. 
-
-
 
 Object: Server Statistics
 #########################
 
-.. index::
-  single: Server Statistics object
-.. 
 
 
 :model: Model, char, readonly
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -375,20 +231,10 @@ Object: Server Statistics
 
 
 
-.. index::
-  single: no field
-.. 
-
-
 
 
 :server_id: Server ID, many2one, readonly
 
-
-
-.. index::
-  single: server_id field
-.. 
 
 
 
@@ -397,38 +243,20 @@ Object: Server Statistics
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :history: History, char, readonly
 
 
 
-.. index::
-  single: history field
-.. 
-
-
 
 Object: res.company.address
 ###########################
 
-.. index::
-  single: res.company.address object
-.. 
 
 
 :email: Email Address, many2one, required
 
-
-
-.. index::
-  single: email field
-.. 
 
 
 
@@ -437,18 +265,8 @@ Object: res.company.address
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :company_id: Company, many2one, required
 
-
-
-.. index::
-  single: company_id field
-.. 
 

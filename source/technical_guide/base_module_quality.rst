@@ -51,18 +51,10 @@ Objects
 Object: wizard.quality.check
 ############################
 
-.. index::
-  single: wizard.quality.check object
-.. 
 
 
 :final_score: Final Score (%), char
 
-
-
-.. index::
-  single: final_score field
-.. 
 
 
 
@@ -71,38 +63,20 @@ Object: wizard.quality.check
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :test_ids: Tests, one2many
 
 
 
-.. index::
-  single: test_ids field
-.. 
-
-
 
 Object: quality.check.detail
 ############################
 
-.. index::
-  single: quality.check.detail object
-.. 
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -111,20 +85,10 @@ Object: quality.check.detail
 
 
 
-.. index::
-  single: detail field
-.. 
-
-
 
 
 :summary: Summary, text
 
-
-
-.. index::
-  single: summary field
-.. 
 
 
 
@@ -133,31 +97,16 @@ Object: quality.check.detail
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: State, selection
 
     *The test will be completed only if the module is installed or if the test may be processed on uninstalled module.*
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :score: Score (%), float
 
-
-
-.. index::
-  single: score field
-.. 
 
 
 
@@ -166,18 +115,8 @@ Object: quality.check.detail
 
 
 
-.. index::
-  single: quality_check_id field
-.. 
-
-
 
 
 :ponderation: Ponderation, float
 
     *Some tests are more critical than others, so they have a bigger weight in the computation of final rating*
-
-.. index::
-  single: ponderation field
-.. 
-

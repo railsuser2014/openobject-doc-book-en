@@ -137,18 +137,10 @@ Objects
 Object: Incoterms
 #################
 
-.. index::
-  single: Incoterms object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -157,38 +149,20 @@ Object: Incoterms
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Location
 ################
 
-.. index::
-  single: Location object
-.. 
 
 
 :comment: Additional Information, text
 
-
-
-.. index::
-  single: comment field
-.. 
 
 
 
@@ -197,20 +171,10 @@ Object: Location
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :stock_virtual_value: Virtual Stock Value, float, readonly
 
-
-
-.. index::
-  single: stock_virtual_value field
-.. 
 
 
 
@@ -219,20 +183,10 @@ Object: Location
 
 
 
-.. index::
-  single: expire_time field
-.. 
-
-
 
 
 :allocation_method: Allocation Method, selection, required
 
-
-
-.. index::
-  single: allocation_method field
-.. 
 
 
 
@@ -241,20 +195,10 @@ Object: Location
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :fleet_account_invoice_lines: Invoice Lines, one2many
 
-
-
-.. index::
-  single: fleet_account_invoice_lines field
-.. 
 
 
 
@@ -263,20 +207,10 @@ Object: Location
 
 
 
-.. index::
-  single: location_id field
-.. 
-
-
 
 
 :parent_partner_id: Customer, many2one
 
-
-
-.. index::
-  single: parent_partner_id field
-.. 
 
 
 
@@ -285,20 +219,10 @@ Object: Location
 
 
 
-.. index::
-  single: time_to_expire field
-.. 
-
-
 
 
 :complete_name: Location Name, char, readonly
 
-
-
-.. index::
-  single: complete_name field
-.. 
 
 
 
@@ -307,20 +231,10 @@ Object: Location
 
 
 
-.. index::
-  single: usage field
-.. 
-
-
 
 
 :stock_real_value: Real Stock Value, float, readonly
 
-
-
-.. index::
-  single: stock_real_value field
-.. 
 
 
 
@@ -329,20 +243,10 @@ Object: Location
 
 
 
-.. index::
-  single: chained_location_type field
-.. 
-
-
 
 
 :fleet_sale_order_lines: Sale Order Lines, one2many
 
-
-
-.. index::
-  single: fleet_sale_order_lines field
-.. 
 
 
 
@@ -351,20 +255,10 @@ Object: Location
 
 
 
-.. index::
-  single: account_invoice_lines field
-.. 
-
-
 
 
 :anniversary_time: Anniversary Time, date, readonly
 
-
-
-.. index::
-  single: anniversary_time field
-.. 
 
 
 
@@ -373,20 +267,10 @@ Object: Location
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 
 :child_ids: Contains, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -395,20 +279,10 @@ Object: Location
 
 
 
-.. index::
-  single: chained_delay field
-.. 
-
-
 
 
 :stock_virtual: Virtual Stock, float, readonly
 
-
-
-.. index::
-  single: stock_virtual field
-.. 
 
 
 
@@ -417,20 +291,10 @@ Object: Location
 
 
 
-.. index::
-  single: sale_order_lines field
-.. 
-
-
 
 
 :posz: Height (Z), integer
 
-
-
-.. index::
-  single: posz field
-.. 
 
 
 
@@ -439,20 +303,10 @@ Object: Location
 
 
 
-.. index::
-  single: posx field
-.. 
-
-
 
 
 :posy: Shelves (Y), integer
 
-
-
-.. index::
-  single: posy field
-.. 
 
 
 
@@ -461,20 +315,10 @@ Object: Location
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :icon: Icon, selection
 
-
-
-.. index::
-  single: icon field
-.. 
 
 
 
@@ -483,20 +327,10 @@ Object: Location
 
 
 
-.. index::
-  single: parent_right field
-.. 
-
-
 
 
 :fleet_crm_cases: Events, one2many
 
-
-
-.. index::
-  single: fleet_crm_cases field
-.. 
 
 
 
@@ -505,31 +339,16 @@ Object: Location
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :intrinsic_anniversary_time: Intrinsic Time, date
 
 
 
-.. index::
-  single: intrinsic_anniversary_time field
-.. 
-
-
 
 
 :fleet_type: Fleet type, selection
 
-
-
-.. index::
-  single: fleet_type field
-.. 
 
 
 
@@ -539,20 +358,10 @@ Object: Location
     *This is used only if you selected a chained location type.
     The 'Automatic Move' value will create a stock move after the current one that will be validated automatically. With 'Manual Operation', the stock move has to be validated by a worker. With 'Automatic No Step Added', the location is replaced in the original move.*
 
-.. index::
-  single: chained_auto_packing field
-.. 
-
-
 
 
 :parent_left: Left Parent, integer
 
-
-
-.. index::
-  single: parent_left field
-.. 
 
 
 
@@ -561,20 +370,10 @@ Object: Location
 
 
 
-.. index::
-  single: chained_location_id field
-.. 
-
-
 
 
 :crm_cases: Events, one2many
 
-
-
-.. index::
-  single: crm_cases field
-.. 
 
 
 
@@ -583,38 +382,20 @@ Object: Location
 
 
 
-.. index::
-  single: is_expired field
-.. 
-
-
 
 
 :stock_real: Real Stock, float, readonly
 
 
 
-.. index::
-  single: stock_real field
-.. 
-
-
 
 Object: Stock Tracking Lots
 ###########################
 
-.. index::
-  single: Stock Tracking Lots object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -623,20 +404,10 @@ Object: Stock Tracking Lots
 
 
 
-.. index::
-  single: move_ids field
-.. 
-
-
 
 
 :serial: Reference, char
 
-
-
-.. index::
-  single: serial field
-.. 
 
 
 
@@ -645,38 +416,20 @@ Object: Stock Tracking Lots
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :name: Tracking, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Packing list
 ####################
 
-.. index::
-  single: Packing list object
-.. 
 
 
 :origin: Origin Reference, char
 
-
-
-.. index::
-  single: origin field
-.. 
 
 
 
@@ -685,20 +438,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :sale_journal_id: Sale Journal, many2one
 
-
-
-.. index::
-  single: sale_journal_id field
-.. 
 
 
 
@@ -707,20 +450,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: weight field
-.. 
-
-
 
 
 :carrier_id: Carrier, many2one
 
-
-
-.. index::
-  single: carrier_id field
-.. 
 
 
 
@@ -729,20 +462,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: invoice_ids field
-.. 
-
-
 
 
 :pos_order: Pos order, many2one
 
-
-
-.. index::
-  single: pos_order field
-.. 
 
 
 
@@ -751,20 +474,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: purchase_journal_id field
-.. 
-
-
 
 
 :location_id: Location, many2one
 
-
-
-.. index::
-  single: location_id field
-.. 
 
 
 
@@ -773,20 +486,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: backorder_id field
-.. 
-
-
 
 
 :purchase_id: Purchase Order, many2one, readonly
 
-
-
-.. index::
-  single: purchase_id field
-.. 
 
 
 
@@ -795,20 +498,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: date_done field
-.. 
-
-
 
 
 :auto_picking: Auto-Packing, boolean
 
-
-
-.. index::
-  single: auto_picking field
-.. 
 
 
 
@@ -817,20 +510,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: move_type field
-.. 
-
-
 
 
 :sale_id: Sale Order, many2one, readonly
 
-
-
-.. index::
-  single: sale_id field
-.. 
 
 
 
@@ -839,31 +522,16 @@ Object: Packing list
 
 
 
-.. index::
-  single: journal_id field
-.. 
-
-
 
 
 :note: Notes, text
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -872,20 +540,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: is_supplier_direct_delivery field
-.. 
-
-
 
 
 :type: Shipping Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -894,20 +552,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: move_lines field
-.. 
-
-
 
 
 :min_date: Planned Date, datetime
 
-
-
-.. index::
-  single: min_date field
-.. 
 
 
 
@@ -916,20 +564,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: volume field
-.. 
-
-
 
 
 :date: Date Order, datetime
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -938,20 +576,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: invoice_type_id field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -960,20 +588,10 @@ Object: Packing list
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :invoice_state: Invoice Status, selection, required, readonly
 
-
-
-.. index::
-  single: invoice_state field
-.. 
 
 
 
@@ -982,38 +600,20 @@ Object: Packing list
 
 
 
-.. index::
-  single: location_dest_id field
-.. 
-
-
 
 
 :max_date: Max. Planned Date, datetime
 
 
 
-.. index::
-  single: max_date field
-.. 
-
-
 
 Object: Production lot
 ######################
 
-.. index::
-  single: Production lot object
-.. 
 
 
 :status: Status, selection, required
 
-
-
-.. index::
-  single: status field
-.. 
 
 
 
@@ -1022,20 +622,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: heatcode_id field
-.. 
-
-
 
 
 :size_x: Width, float
 
-
-
-.. index::
-  single: size_x field
-.. 
 
 
 
@@ -1044,20 +634,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: size_y field
-.. 
-
-
 
 
 :size_z: Thickness, float
 
-
-
-.. index::
-  single: size_z field
-.. 
 
 
 
@@ -1066,20 +646,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: quality field
-.. 
-
-
 
 
 :revisions: Revisions, one2many
 
-
-
-.. index::
-  single: revisions field
-.. 
 
 
 
@@ -1088,20 +658,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: dlc field
-.. 
-
-
 
 
 :stock_available: Available, float, readonly
 
-
-
-.. index::
-  single: stock_available field
-.. 
 
 
 
@@ -1110,20 +670,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: thickness field
-.. 
-
-
 
 
 :width: Width, float
 
-
-
-.. index::
-  single: width field
-.. 
 
 
 
@@ -1132,20 +682,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: dluo field
-.. 
-
-
 
 
 :ref: Internal Ref., char
 
-
-
-.. index::
-  single: ref field
-.. 
 
 
 
@@ -1154,20 +694,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: available field
-.. 
-
-
 
 
 :reservation_ids: Reservations, one2many
 
-
-
-.. index::
-  single: reservation_ids field
-.. 
 
 
 
@@ -1176,20 +706,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: localisation field
-.. 
-
-
 
 
 :date: Created Date, datetime, required
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1198,20 +718,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: quality_info field
-.. 
-
-
 
 
 :product_id: Product, many2one
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -1220,20 +730,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :type: Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -1242,20 +742,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: removal_date field
-.. 
-
-
 
 
 :length: Length, float
 
-
-
-.. index::
-  single: length field
-.. 
 
 
 
@@ -1264,20 +754,10 @@ Object: Production lot
 
 
 
-.. index::
-  single: alert_date field
-.. 
-
-
 
 
 :y: Y of Product, float
 
-
-
-.. index::
-  single: y field
-.. 
 
 
 
@@ -1286,38 +766,20 @@ Object: Production lot
 
 
 
-.. index::
-  single: x field
-.. 
-
-
 
 
 :z: Z of Product, float
 
 
 
-.. index::
-  single: z field
-.. 
-
-
 
 Object: Production lot revisions
 ################################
 
-.. index::
-  single: Production lot revisions object
-.. 
 
 
 :indice: Revision, char
 
-
-
-.. index::
-  single: indice field
-.. 
 
 
 
@@ -1326,20 +788,10 @@ Object: Production lot revisions
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date: Revision date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1348,20 +800,10 @@ Object: Production lot revisions
 
 
 
-.. index::
-  single: lot_id field
-.. 
-
-
 
 
 :author_id: Author, many2one
 
-
-
-.. index::
-  single: author_id field
-.. 
 
 
 
@@ -1370,27 +812,14 @@ Object: Production lot revisions
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Stock Move
 ##################
 
-.. index::
-  single: Stock Move object
-.. 
 
 
 :product_uos_qty: Quantity (UOS), float
 
-
-
-.. index::
-  single: product_uos_qty field
-.. 
 
 
 
@@ -1399,20 +828,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :product_uom: Product UOM, many2one, required
 
-
-
-.. index::
-  single: product_uom field
-.. 
 
 
 
@@ -1421,20 +840,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: price_unit field
-.. 
-
-
 
 
 :procurements: Procurements, one2many
 
-
-
-.. index::
-  single: procurements field
-.. 
 
 
 
@@ -1443,20 +852,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 
 :product_uos: Product UOS, many2one
 
-
-
-.. index::
-  single: product_uos field
-.. 
 
 
 
@@ -1465,20 +864,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: location_id field
-.. 
-
-
 
 
 :priority: Priority, selection
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -1487,20 +876,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: procurement_ids field
-.. 
-
-
 
 
 :new_prodlot_code: Production Tracking Code To Create, char
 
-
-
-.. index::
-  single: new_prodlot_code field
-.. 
 
 
 
@@ -1509,20 +888,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: sale_line_id field
-.. 
-
-
 
 
 :auto_validate: Auto Validate, boolean
 
-
-
-.. index::
-  single: auto_validate field
-.. 
 
 
 
@@ -1531,31 +900,16 @@ Object: Stock Move
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :qlty_test_reject: Rejected, boolean, readonly
 
 
 
-.. index::
-  single: qlty_test_reject field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -1564,20 +918,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: product_packaging field
-.. 
-
-
 
 
 :purchase_line_id: Purchase Order Line, many2one, readonly
 
-
-
-.. index::
-  single: purchase_line_id field
-.. 
 
 
 
@@ -1586,20 +930,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: move_history_ids field
-.. 
-
-
 
 
 :production_id: Production, many2one
 
-
-
-.. index::
-  single: production_id field
-.. 
 
 
 
@@ -1608,20 +942,10 @@ Object: Stock Move
 
     *Production lot is used to put a serial number on the production*
 
-.. index::
-  single: prodlot_id field
-.. 
-
-
 
 
 :move_dest_id: Dest. Move, many2one
 
-
-
-.. index::
-  single: move_dest_id field
-.. 
 
 
 
@@ -1630,20 +954,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1652,20 +966,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: move_history_ids2 field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -1674,20 +978,10 @@ Object: Stock Move
 
 
 
-.. index::
-  single: date_planned field
-.. 
-
-
 
 
 :qlty_test_accept: Accepted, boolean, readonly
 
-
-
-.. index::
-  single: qlty_test_accept field
-.. 
 
 
 
@@ -1696,31 +990,16 @@ Object: Stock Move
 
 
 
-.. index::
-  single: location_dest_id field
-.. 
-
-
 
 
 :tracking_id: Tracking lot, many2one
 
     *Tracking lot is the code that will be put on the logistic unit/pallet*
 
-.. index::
-  single: tracking_id field
-.. 
-
-
 
 
 :customer_ref: Customer reference, char
 
-
-
-.. index::
-  single: customer_ref field
-.. 
 
 
 
@@ -1729,27 +1008,14 @@ Object: Stock Move
 
 
 
-.. index::
-  single: picking_id field
-.. 
-
-
 
 Object: Inventory
 #################
 
-.. index::
-  single: Inventory object
-.. 
 
 
 :name: Inventory, char, required, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1758,20 +1024,10 @@ Object: Inventory
 
 
 
-.. index::
-  single: date_done field
-.. 
-
-
 
 
 :move_ids: Created Moves, many2many
 
-
-
-.. index::
-  single: move_ids field
-.. 
 
 
 
@@ -1780,20 +1036,10 @@ Object: Inventory
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :date: Date create, datetime, required, readonly
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -1802,27 +1048,14 @@ Object: Inventory
 
 
 
-.. index::
-  single: inventory_line_id field
-.. 
-
-
 
 Object: Inventory line
 ######################
 
-.. index::
-  single: Inventory line object
-.. 
 
 
 :inventory_id: Inventory, many2one
 
-
-
-.. index::
-  single: inventory_id field
-.. 
 
 
 
@@ -1831,20 +1064,10 @@ Object: Inventory line
 
 
 
-.. index::
-  single: location_id field
-.. 
-
-
 
 
 :product_id: Product, many2one, required
 
-
-
-.. index::
-  single: product_id field
-.. 
 
 
 
@@ -1853,38 +1076,20 @@ Object: Inventory line
 
 
 
-.. index::
-  single: product_uom field
-.. 
-
-
 
 
 :product_qty: Quantity, float
 
 
 
-.. index::
-  single: product_qty field
-.. 
-
-
 
 Object: Warehouse
 #################
 
-.. index::
-  single: Warehouse object
-.. 
 
 
 :lot_input_id: Location Input, many2one, required
 
-
-
-.. index::
-  single: lot_input_id field
-.. 
 
 
 
@@ -1893,20 +1098,10 @@ Object: Warehouse
 
 
 
-.. index::
-  single: partner_address_id field
-.. 
-
-
 
 
 :lot_output_id: Location Output, many2one, required
 
-
-
-.. index::
-  single: lot_output_id field
-.. 
 
 
 
@@ -1915,38 +1110,20 @@ Object: Warehouse
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :lot_stock_id: Location Stock, many2one, required
 
 
 
-.. index::
-  single: lot_stock_id field
-.. 
-
-
 
 Object: stock.picking.move.wizard
 #################################
 
-.. index::
-  single: stock.picking.move.wizard object
-.. 
 
 
 :move_ids: Move lines, many2many, required
 
-
-
-.. index::
-  single: move_ids field
-.. 
 
 
 
@@ -1955,20 +1132,10 @@ Object: stock.picking.move.wizard
 
 
 
-.. index::
-  single: address_id field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1977,27 +1144,14 @@ Object: stock.picking.move.wizard
 
 
 
-.. index::
-  single: picking_id field
-.. 
-
-
 
 Object: Dates of Inventories
 ############################
 
-.. index::
-  single: Dates of Inventories object
-.. 
 
 
 :create_date: Latest Date of Inventory, datetime
 
-
-
-.. index::
-  single: create_date field
-.. 
 
 
 
@@ -2006,38 +1160,20 @@ Object: Dates of Inventories
 
 
 
-.. index::
-  single: id field
-.. 
-
-
 
 
 :product_id: Product Id, integer, readonly
 
 
 
-.. index::
-  single: product_id field
-.. 
-
-
 
 Object: Stock report by production lots
 #######################################
 
-.. index::
-  single: Stock report by production lots object
-.. 
 
 
 :prodlot_id: Production lot, many2one, readonly
 
-
-
-.. index::
-  single: prodlot_id field
-.. 
 
 
 
@@ -2046,29 +1182,14 @@ Object: Stock report by production lots
 
 
 
-.. index::
-  single: location_id field
-.. 
-
-
 
 
 :name: Quantity, float, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :product_id: Product, many2one, readonly
 
-
-
-.. index::
-  single: product_id field
-.. 
 

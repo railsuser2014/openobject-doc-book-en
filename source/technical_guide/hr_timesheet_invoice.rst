@@ -62,18 +62,10 @@ Objects
 Object: Invoice rate
 ####################
 
-.. index::
-  single: Invoice rate object
-.. 
 
 
 :factor: Discount (%), float, required
 
-
-
-.. index::
-  single: factor field
-.. 
 
 
 
@@ -82,18 +74,8 @@ Object: Invoice rate
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :customer_name: Visible name, char
 
-
-
-.. index::
-  single: customer_name field
-.. 
 

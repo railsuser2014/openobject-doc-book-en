@@ -47,27 +47,14 @@ Objects
 Object: huissier.dossier
 ########################
 
-.. index::
-  single: huissier.dossier object
-.. 
 
 Object: huissier.lots
 #####################
 
-.. index::
-  single: huissier.lots object
-.. 
 
 Object: huissier.vignettes
 ##########################
 
-.. index::
-  single: huissier.vignettes object
-.. 
 
 Object: huissier.deposit
 ########################
-
-.. index::
-  single: huissier.deposit object
-.. 

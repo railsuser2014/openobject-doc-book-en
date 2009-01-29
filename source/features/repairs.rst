@@ -4,8 +4,10 @@ Repairs Management
 Open ERP provides a module to manage the quality of your products or
 your services. The 'repairs management' module allows to organise
 after-sales services.
+
+.. raw:: html
  
-.. image:: images/quality_screenshot.png
+ <a target="_blank" href="images/quality_screenshot.png"><img src="images_small/quality_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

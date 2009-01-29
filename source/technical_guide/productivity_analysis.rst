@@ -45,18 +45,10 @@ Objects
 Object: Objects for Productivity Analysis
 #########################################
 
-.. index::
-  single: Objects for Productivity Analysis object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -65,18 +57,8 @@ Object: Objects for Productivity Analysis
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :name: Model Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

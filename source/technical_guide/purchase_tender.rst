@@ -50,18 +50,10 @@ Objects
 Object: Purchase Tender
 #######################
 
-.. index::
-  single: Purchase Tender object
-.. 
 
 
 :user_id: Responsible, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -70,20 +62,10 @@ Object: Purchase Tender
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :date_end: Date End, datetime
 
-
-
-.. index::
-  single: date_end field
-.. 
 
 
 
@@ -92,20 +74,10 @@ Object: Purchase Tender
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :state: State, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -114,18 +86,8 @@ Object: Purchase Tender
 
 
 
-.. index::
-  single: purchase_ids field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 

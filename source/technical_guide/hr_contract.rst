@@ -59,18 +59,10 @@ Objects
 Object: Employee Marital Status
 ###############################
 
-.. index::
-  single: Employee Marital Status object
-.. 
 
 
 :name: Marital Status, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -79,27 +71,14 @@ Object: Employee Marital Status
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Wage Period
 ###################
 
-.. index::
-  single: Wage Period object
-.. 
 
 
 :name: Period Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -108,27 +87,14 @@ Object: Wage Period
 
     *This field is used by the timesheet system to compute the price of an hour of work wased on the contract of the employee*
 
-.. index::
-  single: factor_days field
-.. 
-
-
 
 Object: Wage Type
 #################
 
-.. index::
-  single: Wage Type object
-.. 
 
 
 :type: Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -137,20 +103,10 @@ Object: Wage Type
 
 
 
-.. index::
-  single: period_id field
-.. 
-
-
 
 
 :name: Wage Type Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -159,27 +115,14 @@ Object: Wage Type
 
     *This field is used by the timesheet system to compute the price of an hour of work wased on the contract of the employee*
 
-.. index::
-  single: factor_type field
-.. 
-
-
 
 Object: Contract
 ################
 
-.. index::
-  single: Contract object
-.. 
 
 
 :function: Position, many2one
 
-
-
-.. index::
-  single: function field
-.. 
 
 
 
@@ -188,20 +131,10 @@ Object: Contract
 
 
 
-.. index::
-  single: wage_type_id field
-.. 
-
-
 
 
 :fulltime_salary: Full-time Salary, float, readonly
 
-
-
-.. index::
-  single: fulltime_salary field
-.. 
 
 
 
@@ -210,20 +143,10 @@ Object: Contract
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :availability_per_week: Availability per week, one2many
 
-
-
-.. index::
-  single: availability_per_week field
-.. 
 
 
 
@@ -232,20 +155,10 @@ Object: Contract
 
 
 
-.. index::
-  single: salary_level field
-.. 
-
-
 
 
 :form_of_employment: Form of employment, selection
 
-
-
-.. index::
-  single: form_of_employment field
-.. 
 
 
 
@@ -254,20 +167,10 @@ Object: Contract
 
 
 
-.. index::
-  single: date_end field
-.. 
-
-
 
 
 :date_start: Date of appointment, date, required
 
-
-
-.. index::
-  single: date_start field
-.. 
 
 
 
@@ -276,20 +179,10 @@ Object: Contract
 
 
 
-.. index::
-  single: trial_period_review field
-.. 
-
-
 
 
 :employee_id: Employee, many2one, required
 
-
-
-.. index::
-  single: employee_id field
-.. 
 
 
 
@@ -298,20 +191,10 @@ Object: Contract
 
 
 
-.. index::
-  single: fte_hrs field
-.. 
-
-
 
 
 :bank_account_nbr: Bank account number, char
 
-
-
-.. index::
-  single: bank_account_nbr field
-.. 
 
 
 
@@ -320,20 +203,10 @@ Object: Contract
 
 
 
-.. index::
-  single: extend_appointment_date field
-.. 
-
-
 
 
 :wage: Base salary, float, required
 
-
-
-.. index::
-  single: wage field
-.. 
 
 
 
@@ -342,20 +215,10 @@ Object: Contract
 
 
 
-.. index::
-  single: fte field
-.. 
-
-
 
 
 :salary_grade: Salary grade, integer
 
-
-
-.. index::
-  single: salary_grade field
-.. 
 
 
 
@@ -364,20 +227,10 @@ Object: Contract
 
 
 
-.. index::
-  single: working_hours_per_day field
-.. 
-
-
 
 
 :department_id: Department, many2one
 
-
-
-.. index::
-  single: department_id field
-.. 
 
 
 
@@ -386,18 +239,8 @@ Object: Contract
 
 
 
-.. index::
-  single: notes field
-.. 
-
-
 
 
 :name: Contract Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

@@ -65,18 +65,10 @@ Objects
 Object: Category for an idea
 ############################
 
-.. index::
-  single: Category for an idea object
-.. 
 
 
 :parent_id: Parent Categories, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -85,20 +77,10 @@ Object: Category for an idea
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :name: Category, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -107,38 +89,20 @@ Object: Category for an idea
 
 
 
-.. index::
-  single: summary field
-.. 
-
-
 
 Object: idea.idea
 #################
 
-.. index::
-  single: idea.idea object
-.. 
 
 
 :category_id: Category, many2one, required
 
 
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :create_date: Creation date, datetime, readonly
 
-
-
-.. index::
-  single: create_date field
-.. 
 
 
 
@@ -147,20 +111,10 @@ Object: idea.idea
 
     *Content of the idea*
 
-.. index::
-  single: description field
-.. 
-
-
 
 
 :title: Idea Summary, char, required
 
-
-
-.. index::
-  single: title field
-.. 
 
 
 
@@ -169,20 +123,10 @@ Object: idea.idea
 
 
 
-.. index::
-  single: my_vote field
-.. 
-
-
 
 
 :vote_avg: Average Score, float, readonly
 
-
-
-.. index::
-  single: vote_avg field
-.. 
 
 
 
@@ -191,20 +135,10 @@ Object: idea.idea
 
 
 
-.. index::
-  single: vote_ids field
-.. 
-
-
 
 
 :state: Status, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -213,20 +147,10 @@ Object: idea.idea
 
 
 
-.. index::
-  single: stat_vote_ids field
-.. 
-
-
 
 
 :count_comments: Count of comments, integer, readonly
 
-
-
-.. index::
-  single: count_comments field
-.. 
 
 
 
@@ -235,20 +159,10 @@ Object: idea.idea
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :comment_ids: Comments, one2many
 
-
-
-.. index::
-  single: comment_ids field
-.. 
 
 
 
@@ -257,38 +171,20 @@ Object: idea.idea
 
 
 
-.. index::
-  single: count_votes field
-.. 
-
-
 
 Object: Comments
 ################
 
-.. index::
-  single: Comments object
-.. 
 
 
 :content: Comment, text, required
 
 
 
-.. index::
-  single: content field
-.. 
-
-
 
 
 :idea_id: Idea, many2one, required
 
-
-
-.. index::
-  single: idea_id field
-.. 
 
 
 
@@ -297,38 +193,20 @@ Object: Comments
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 Object: idea.vote
 #################
 
-.. index::
-  single: idea.vote object
-.. 
 
 
 :idea_id: Idea, many2one, required
 
-
-
-.. index::
-  single: idea_id field
-.. 
 
 
 
@@ -337,38 +215,20 @@ Object: idea.vote
 
 
 
-.. index::
-  single: score field
-.. 
-
-
 
 
 :user_id: User, many2one
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 Object: Idea Votes Statistics
 #############################
 
-.. index::
-  single: Idea Votes Statistics object
-.. 
 
 
 :nbr: Number of Votes, integer, readonly
 
-
-
-.. index::
-  single: nbr field
-.. 
 
 
 
@@ -377,18 +237,8 @@ Object: Idea Votes Statistics
 
 
 
-.. index::
-  single: score field
-.. 
-
-
 
 
 :idea_id: Idea, many2one, readonly
 
-
-
-.. index::
-  single: idea_id field
-.. 
 

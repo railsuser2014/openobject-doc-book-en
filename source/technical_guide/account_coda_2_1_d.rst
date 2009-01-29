@@ -49,18 +49,10 @@ Objects
 Object: CODA Format For Account
 ###############################
 
-.. index::
-  single: CODA Format For Account object
-.. 
 
 
 :user_id: User, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -69,20 +61,10 @@ Object: CODA Format For Account
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :journal_id: Bank Journal, many2one, readonly
 
-
-
-.. index::
-  single: journal_id field
-.. 
 
 
 
@@ -91,29 +73,14 @@ Object: CODA Format For Account
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :date: Import Date, date, readonly
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :statement_id: Generated Bank Statement, many2one, readonly
 
-
-
-.. index::
-  single: statement_id field
-.. 
 

@@ -46,18 +46,10 @@ Objects
 Object: Account Regularization Model
 ####################################
 
-.. index::
-  single: Account Regularization Model object
-.. 
 
 
 :balance_calc: Regularization time calculation, selection, required
 
-
-
-.. index::
-  single: balance_calc field
-.. 
 
 
 
@@ -66,20 +58,10 @@ Object: Account Regularization Model
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :credit_account_id: Result account, credit, many2one, required
 
-
-
-.. index::
-  single: credit_account_id field
-.. 
 
 
 
@@ -88,29 +70,14 @@ Object: Account Regularization Model
 
 
 
-.. index::
-  single: move_ids field
-.. 
-
-
 
 
 :account_ids: Accounts to balance, many2many, required
 
 
 
-.. index::
-  single: account_ids field
-.. 
-
-
 
 
 :debit_account_id: Result account, debit, many2one, required
 
-
-
-.. index::
-  single: debit_account_id field
-.. 
 

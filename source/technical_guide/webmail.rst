@@ -52,18 +52,10 @@ Objects
 Object: User Configuration
 ##########################
 
-.. index::
-  single: User Configuration object
-.. 
 
 
 :server_conf_id: Configuration, one2many
 
-
-
-.. index::
-  single: server_conf_id field
-.. 
 
 
 
@@ -72,27 +64,14 @@ Object: User Configuration
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 Object: Mail Server Configuration
 #################################
 
-.. index::
-  single: Mail Server Configuration object
-.. 
 
 
 :iconn_port: Port, integer
 
-
-
-.. index::
-  single: iconn_port field
-.. 
 
 
 
@@ -101,31 +80,16 @@ Object: Mail Server Configuration
 
 
 
-.. index::
-  single: server_id field
-.. 
-
-
 
 
 :iserver_type: Server Type, selection
 
 
 
-.. index::
-  single: iserver_type field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -134,20 +98,10 @@ Object: Mail Server Configuration
 
 
 
-.. index::
-  single: oconn_type field
-.. 
-
-
 
 
 :oconn_port: Port, integer
 
-
-
-.. index::
-  single: oconn_port field
-.. 
 
 
 
@@ -156,20 +110,10 @@ Object: Mail Server Configuration
 
 
 
-.. index::
-  single: iserver_name field
-.. 
-
-
 
 
 :oserver_name: Server Name, char, required
 
-
-
-.. index::
-  single: oserver_name field
-.. 
 
 
 
@@ -178,20 +122,10 @@ Object: Mail Server Configuration
 
 
 
-.. index::
-  single: iconn_type field
-.. 
-
-
 
 
 :password: Password, char, required
 
-
-
-.. index::
-  single: password field
-.. 
 
 
 
@@ -200,27 +134,14 @@ Object: Mail Server Configuration
 
 
 
-.. index::
-  single: user_name field
-.. 
-
-
 
 Object: User Mailbox
 ####################
 
-.. index::
-  single: User Mailbox object
-.. 
 
 
 :parent_id: Parent Folder, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -229,20 +150,10 @@ Object: User Mailbox
 
 
 
-.. index::
-  single: child_id field
-.. 
-
-
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -251,38 +162,20 @@ Object: User Mailbox
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account_id: Server, many2one
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 Object: Email Tag
 #################
 
-.. index::
-  single: Email Tag object
-.. 
 
 
 :user_id: User, many2one
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -291,38 +184,20 @@ Object: Email Tag
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :account_id: Server, many2one
 
 
 
-.. index::
-  single: account_id field
-.. 
-
-
 
 Object: User Email
 ##################
 
-.. index::
-  single: User Email object
-.. 
 
 
 :body: Body, text
 
-
-
-.. index::
-  single: body field
-.. 
 
 
 
@@ -331,20 +206,10 @@ Object: User Email
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :account_id: Server, many2one
 
-
-
-.. index::
-  single: account_id field
-.. 
 
 
 
@@ -353,20 +218,10 @@ Object: User Email
 
 
 
-.. index::
-  single: cc field
-.. 
-
-
 
 
 :tag_id: Tags, many2one
 
-
-
-.. index::
-  single: tag_id field
-.. 
 
 
 
@@ -375,20 +230,10 @@ Object: User Email
 
 
 
-.. index::
-  single: bcc field
-.. 
-
-
 
 
 :to: To, char
 
-
-
-.. index::
-  single: to field
-.. 
 
 
 
@@ -397,20 +242,10 @@ Object: User Email
 
 
 
-.. index::
-  single: folder_id field
-.. 
-
-
 
 
 :from_user: From, char
 
-
-
-.. index::
-  single: from_user field
-.. 
 
 
 
@@ -419,20 +254,10 @@ Object: User Email
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -441,18 +266,8 @@ Object: User Email
 
 
 
-.. index::
-  single: message_id field
-.. 
-
-
 
 
 :subject: Subject, char
 
-
-
-.. index::
-  single: subject field
-.. 
 

@@ -266,18 +266,10 @@ Objects
 Object: Objects
 ###############
 
-.. index::
-  single: Objects object
-.. 
 
 
 :info: Information, text
 
-
-
-.. index::
-  single: info field
-.. 
 
 
 
@@ -286,20 +278,10 @@ Object: Objects
 
 
 
-.. index::
-  single: access_ids field
-.. 
-
-
 
 
 :name: Object Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -308,20 +290,10 @@ Object: Objects
 
 
 
-.. index::
-  single: field_id field
-.. 
-
-
 
 
 :state: Manualy Created, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -330,27 +302,14 @@ Object: Objects
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 Object: Objects Security Grid
 #############################
 
-.. index::
-  single: Objects Security Grid object
-.. 
 
 
 :group_15: Human Resources / Manager, char
 
-
-
-.. index::
-  single: group_15 field
-.. 
 
 
 
@@ -359,20 +318,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_71 field
-.. 
-
-
 
 
 :group_70: Configuration Missions Déléguées, char
 
-
-
-.. index::
-  single: group_70 field
-.. 
 
 
 
@@ -381,20 +330,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_73 field
-.. 
-
-
 
 
 :group_72: Superviseur Missions Déléguées, char
 
-
-
-.. index::
-  single: group_72 field
-.. 
 
 
 
@@ -403,20 +342,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_75 field
-.. 
-
-
 
 
 :group_74: Acces partenaire admin, char
 
-
-
-.. index::
-  single: group_74 field
-.. 
 
 
 
@@ -425,20 +354,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_77 field
-.. 
-
-
 
 
 :group_76: Acces compta admin, char
 
-
-
-.. index::
-  single: group_76 field
-.. 
 
 
 
@@ -447,20 +366,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_79 field
-.. 
-
-
 
 
 :group_78: Acces livre base, char
 
-
-
-.. index::
-  single: group_78 field
-.. 
 
 
 
@@ -469,20 +378,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_84 field
-.. 
-
-
 
 
 :group_80: Acces stock base, char
 
-
-
-.. index::
-  single: group_80 field
-.. 
 
 
 
@@ -491,20 +390,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_81 field
-.. 
-
-
 
 
 :group_82: Acces commandes fournisseur, char
 
-
-
-.. index::
-  single: group_82 field
-.. 
 
 
 
@@ -513,20 +402,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_83 field
-.. 
-
-
 
 
 :name: Object Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -535,20 +414,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_17 field
-.. 
-
-
 
 
 :group_16: Human Resources / User, char
 
-
-
-.. index::
-  single: group_16 field
-.. 
 
 
 
@@ -557,20 +426,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :group_14: Portal group, char
 
-
-
-.. index::
-  single: group_14 field
-.. 
 
 
 
@@ -579,20 +438,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_13 field
-.. 
-
-
 
 
 :group_12: RadioTV / Program, char
 
-
-
-.. index::
-  single: group_12 field
-.. 
 
 
 
@@ -601,20 +450,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_11 field
-.. 
-
-
 
 
 :group_10: CRM / User, char
 
-
-
-.. index::
-  single: group_10 field
-.. 
 
 
 
@@ -623,20 +462,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_19 field
-.. 
-
-
 
 
 :group_18: Useability / Product UoS View, char
 
-
-
-.. index::
-  single: group_18 field
-.. 
 
 
 
@@ -645,20 +474,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_28 field
-.. 
-
-
 
 
 :group_29: Stock / Manager, char
 
-
-
-.. index::
-  single: group_29 field
-.. 
 
 
 
@@ -667,20 +486,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_22 field
-.. 
-
-
 
 
 :group_23: Human Resources / Contracts, char
 
-
-
-.. index::
-  single: group_23 field
-.. 
 
 
 
@@ -689,20 +498,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_20 field
-.. 
-
-
 
 
 :group_21: Finance / Accountant, char
 
-
-
-.. index::
-  single: group_21 field
-.. 
 
 
 
@@ -711,20 +510,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_26 field
-.. 
-
-
 
 
 :group_27: Project / Manager, char
 
-
-
-.. index::
-  single: group_27 field
-.. 
 
 
 
@@ -733,20 +522,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_24 field
-.. 
-
-
 
 
 :group_25: Finance / Payments, char
 
-
-
-.. index::
-  single: group_25 field
-.. 
 
 
 
@@ -755,20 +534,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: access_ids field
-.. 
-
-
 
 
 :group_39: Direct Marketing / Offer Manager, char
 
-
-
-.. index::
-  single: group_39 field
-.. 
 
 
 
@@ -777,20 +546,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_38 field
-.. 
-
-
 
 
 :group_35: Manufacturing / Worker, char
 
-
-
-.. index::
-  single: group_35 field
-.. 
 
 
 
@@ -799,20 +558,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_34 field
-.. 
-
-
 
 
 :group_37: Direct Marketing / Admin, char
 
-
-
-.. index::
-  single: group_37 field
-.. 
 
 
 
@@ -821,20 +570,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_36 field
-.. 
-
-
 
 
 :group_31: Purchase / Manager, char
 
-
-
-.. index::
-  single: group_31 field
-.. 
 
 
 
@@ -843,20 +582,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_30 field
-.. 
-
-
 
 
 :group_32: Purchase / User, char
 
-
-
-.. index::
-  single: group_32 field
-.. 
 
 
 
@@ -865,20 +594,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: info field
-.. 
-
-
 
 
 :group_48: Direct Marketing / Customer File Admin, char
 
-
-
-.. index::
-  single: group_48 field
-.. 
 
 
 
@@ -887,20 +606,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_49 field
-.. 
-
-
 
 
 :group_40: Direct Marketing / Campaign Admin, char
 
-
-
-.. index::
-  single: group_40 field
-.. 
 
 
 
@@ -909,20 +618,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_41 field
-.. 
-
-
 
 
 :group_42: Direct Marketing / Item Admin, char
 
-
-
-.. index::
-  single: group_42 field
-.. 
 
 
 
@@ -931,20 +630,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_43 field
-.. 
-
-
 
 
 :group_44: Direct Marketing / Manufacturing Admin, char
 
-
-
-.. index::
-  single: group_44 field
-.. 
 
 
 
@@ -953,20 +642,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_45 field
-.. 
-
-
 
 
 :group_46: Direct Marketing / DTP Admin, char
 
-
-
-.. index::
-  single: group_46 field
-.. 
 
 
 
@@ -975,20 +654,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_47 field
-.. 
-
-
 
 
 :group_59: CCI Event Access Rights, char
 
-
-
-.. index::
-  single: group_59 field
-.. 
 
 
 
@@ -997,20 +666,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_58 field
-.. 
-
-
 
 
 :group_53: CCI TimeSheet Manager, char
 
-
-
-.. index::
-  single: group_53 field
-.. 
 
 
 
@@ -1019,20 +678,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_52 field
-.. 
-
-
 
 
 :group_51: Sale / Salesman, char
 
-
-
-.. index::
-  single: group_51 field
-.. 
 
 
 
@@ -1041,20 +690,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_50 field
-.. 
-
-
 
 
 :group_57: Point of Sale / User, char
 
-
-
-.. index::
-  single: group_57 field
-.. 
 
 
 
@@ -1063,20 +702,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_56 field
-.. 
-
-
 
 
 :group_55: OSCommerce / User, char
 
-
-
-.. index::
-  single: group_55 field
-.. 
 
 
 
@@ -1085,20 +714,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_54 field
-.. 
-
-
 
 
 :group_3: Employee, char
 
-
-
-.. index::
-  single: group_3 field
-.. 
 
 
 
@@ -1107,20 +726,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_2 field
-.. 
-
-
 
 
 :group_1: Administrator / Configuration, char
 
-
-
-.. index::
-  single: group_1 field
-.. 
 
 
 
@@ -1129,20 +738,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_0 field
-.. 
-
-
 
 
 :group_7: Maintenance Manager, char
 
-
-
-.. index::
-  single: group_7 field
-.. 
 
 
 
@@ -1151,20 +750,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_6 field
-.. 
-
-
 
 
 :group_5: Useability / No One, char
 
-
-
-.. index::
-  single: group_5 field
-.. 
 
 
 
@@ -1173,20 +762,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_4 field
-.. 
-
-
 
 
 :group_9: CRM / Manager, char
 
-
-
-.. index::
-  single: group_9 field
-.. 
 
 
 
@@ -1195,20 +774,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_8 field
-.. 
-
-
 
 
 :field_id: Fields, one2many, required
 
-
-
-.. index::
-  single: field_id field
-.. 
 
 
 
@@ -1217,20 +786,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_64 field
-.. 
-
-
 
 
 :group_68: CCI Missions Access Rights, char
 
-
-
-.. index::
-  single: group_68 field
-.. 
 
 
 
@@ -1239,20 +798,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_69 field
-.. 
-
-
 
 
 :group_66: CCI Membership Yearly operations, char
 
-
-
-.. index::
-  single: group_66 field
-.. 
 
 
 
@@ -1261,20 +810,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_67 field
-.. 
-
-
 
 
 :model: Object Name, char, required
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -1283,20 +822,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_65 field
-.. 
-
-
 
 
 :group_62: CCI Translation User, char
 
-
-
-.. index::
-  single: group_62 field
-.. 
 
 
 
@@ -1305,20 +834,10 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_63 field
-.. 
-
-
 
 
 :group_60: CCI Event Supervisor, char
 
-
-
-.. index::
-  single: group_60 field
-.. 
 
 
 
@@ -1327,27 +846,14 @@ Object: Objects Security Grid
 
 
 
-.. index::
-  single: group_61 field
-.. 
-
-
 
 Object: Fields
 ##############
 
-.. index::
-  single: Fields object
-.. 
 
 
 :model_id: Object id, many2one, required
 
-
-
-.. index::
-  single: model_id field
-.. 
 
 
 
@@ -1356,31 +862,16 @@ Object: Fields
 
 
 
-.. index::
-  single: domain field
-.. 
-
-
 
 
 :select_level: Searchable, selection, required
 
 
 
-.. index::
-  single: select_level field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1389,20 +880,10 @@ Object: Fields
 
     *On delete property for many2one fields*
 
-.. index::
-  single: on_delete field
-.. 
-
-
 
 
 :required: Required, boolean
 
-
-
-.. index::
-  single: required field
-.. 
 
 
 
@@ -1411,20 +892,10 @@ Object: Fields
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :view_load: View Auto-Load, boolean
 
-
-
-.. index::
-  single: view_load field
-.. 
 
 
 
@@ -1433,20 +904,10 @@ Object: Fields
 
 
 
-.. index::
-  single: readonly field
-.. 
-
-
 
 
 :selection: Field Selection, char
 
-
-
-.. index::
-  single: selection field
-.. 
 
 
 
@@ -1455,20 +916,10 @@ Object: Fields
 
 
 
-.. index::
-  single: relation field
-.. 
-
-
 
 
 :groups: Groups, many2many
 
-
-
-.. index::
-  single: groups field
-.. 
 
 
 
@@ -1477,20 +928,10 @@ Object: Fields
 
 
 
-.. index::
-  single: relation_field field
-.. 
-
-
 
 
 :complete_name: Complete Name, char
 
-
-
-.. index::
-  single: complete_name field
-.. 
 
 
 
@@ -1499,20 +940,10 @@ Object: Fields
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :translate: Translate, boolean
 
-
-
-.. index::
-  single: translate field
-.. 
 
 
 
@@ -1521,20 +952,10 @@ Object: Fields
 
 
 
-.. index::
-  single: ttype field
-.. 
-
-
 
 
 :field_description: Field Label, char, required
 
-
-
-.. index::
-  single: field_description field
-.. 
 
 
 
@@ -1543,27 +964,14 @@ Object: Fields
 
 
 
-.. index::
-  single: size field
-.. 
-
-
 
 Object: ir.model.access
 #######################
 
-.. index::
-  single: ir.model.access object
-.. 
 
 
 :model_id: Object, many2one, required
 
-
-
-.. index::
-  single: model_id field
-.. 
 
 
 
@@ -1572,20 +980,10 @@ Object: ir.model.access
 
 
 
-.. index::
-  single: perm_read field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1594,20 +992,10 @@ Object: ir.model.access
 
 
 
-.. index::
-  single: perm_unlink field
-.. 
-
-
 
 
 :perm_write: Write Access, boolean
 
-
-
-.. index::
-  single: perm_write field
-.. 
 
 
 
@@ -1616,38 +1004,20 @@ Object: ir.model.access
 
 
 
-.. index::
-  single: perm_create field
-.. 
-
-
 
 
 :group_id: Group, many2one
 
 
 
-.. index::
-  single: group_id field
-.. 
-
-
 
 Object: ir.model.data
 #####################
 
-.. index::
-  single: ir.model.data object
-.. 
 
 
 :noupdate: Non Updatable, boolean
 
-
-
-.. index::
-  single: noupdate field
-.. 
 
 
 
@@ -1656,20 +1026,10 @@ Object: ir.model.data
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :res_id: Resource ID, integer
 
-
-
-.. index::
-  single: res_id field
-.. 
 
 
 
@@ -1678,31 +1038,16 @@ Object: ir.model.data
 
 
 
-.. index::
-  single: date_update field
-.. 
-
-
 
 
 :module: Module, char, required
 
 
 
-.. index::
-  single: module field
-.. 
-
-
 
 
 :model: Object, char, required
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -1711,27 +1056,14 @@ Object: ir.model.data
 
 
 
-.. index::
-  single: date_init field
-.. 
-
-
 
 Object: ir.model.config
 #######################
 
-.. index::
-  single: ir.model.config object
-.. 
 
 
 :password_check: confirmation, char
 
-
-
-.. index::
-  single: password_check field
-.. 
 
 
 
@@ -1740,67 +1072,36 @@ Object: ir.model.config
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 Object: ir.sequence.type
 ########################
 
-.. index::
-  single: ir.sequence.type object
-.. 
 
 
 :code: Sequence Code, char, required
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Sequence Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
 Object: ir.sequence
 ###################
 
-.. index::
-  single: ir.sequence object
-.. 
 
 
 :code: Sequence Code, selection, required
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Sequence Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -1809,20 +1110,10 @@ Object: ir.sequence
 
 
 
-.. index::
-  single: number_next field
-.. 
-
-
 
 
 :padding: Number padding, integer, required
 
-
-
-.. index::
-  single: padding field
-.. 
 
 
 
@@ -1831,31 +1122,16 @@ Object: ir.sequence
 
 
 
-.. index::
-  single: number_increment field
-.. 
-
-
 
 
 :prefix: Prefix, char
 
 
 
-.. index::
-  single: prefix field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -1864,28 +1140,15 @@ Object: ir.sequence
 
 
 
-.. index::
-  single: suffix field
-.. 
-
-
 
 Object: ir.ui.menu
 ##################
 
-.. index::
-  single: ir.ui.menu object
-.. 
 
 
 :groups_id: Groups, many2many
 
     *If you put groups, the visibility of this menu will be based on these groups. If this field is empty, Open ERP will compute visibility based on the related object's read access.*
-
-.. index::
-  single: groups_id field
-.. 
-
 
 
 
@@ -1893,20 +1156,10 @@ Object: ir.ui.menu
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -1915,20 +1168,10 @@ Object: ir.ui.menu
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :complete_name: Complete Name, char, readonly
 
-
-
-.. index::
-  single: complete_name field
-.. 
 
 
 
@@ -1937,20 +1180,10 @@ Object: ir.ui.menu
 
 
 
-.. index::
-  single: action field
-.. 
-
-
 
 
 :child_id: Child ids, one2many
 
-
-
-.. index::
-  single: child_id field
-.. 
 
 
 
@@ -1959,38 +1192,20 @@ Object: ir.ui.menu
 
 
 
-.. index::
-  single: icon_pict field
-.. 
-
-
 
 
 :icon: Icon, selection
 
 
 
-.. index::
-  single: icon field
-.. 
-
-
 
 Object: ir.ui.view.custom
 #########################
 
-.. index::
-  single: ir.ui.view.custom object
-.. 
 
 
 :arch: View Architecture, text, required
 
-
-
-.. index::
-  single: arch field
-.. 
 
 
 
@@ -1999,38 +1214,20 @@ Object: ir.ui.view.custom
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :ref_id: Orignal View, many2one
 
 
 
-.. index::
-  single: ref_id field
-.. 
-
-
 
 Object: ir.ui.view
 ##################
 
-.. index::
-  single: ir.ui.view object
-.. 
 
 
 :inherit_id: Inherited View, many2one
 
-
-
-.. index::
-  single: inherit_id field
-.. 
 
 
 
@@ -2039,20 +1236,10 @@ Object: ir.ui.view
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :type: View Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -2061,20 +1248,10 @@ Object: ir.ui.view
 
 
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :model: Object, char, required
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -2083,38 +1260,20 @@ Object: ir.ui.view
 
 
 
-.. index::
-  single: arch field
-.. 
-
-
 
 
 :field_parent: Childs Field, char
 
 
 
-.. index::
-  single: field_parent field
-.. 
-
-
 
 Object: ir.ui.view_sc
 #####################
 
-.. index::
-  single: ir.ui.view_sc object
-.. 
 
 
 :resource: Resource Name, char, required
 
-
-
-.. index::
-  single: resource field
-.. 
 
 
 
@@ -2123,20 +1282,10 @@ Object: ir.ui.view_sc
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 
 :user_id: User Ref., many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -2145,38 +1294,20 @@ Object: ir.ui.view_sc
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 Object: ir.default
 ##################
 
-.. index::
-  single: ir.default object
-.. 
 
 
 :uid: Users, many2one
 
-
-
-.. index::
-  single: uid field
-.. 
 
 
 
@@ -2185,20 +1316,10 @@ Object: ir.default
 
 
 
-.. index::
-  single: ref_table field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -2207,20 +1328,10 @@ Object: ir.default
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :ref_id: ID Ref., integer
 
-
-
-.. index::
-  single: ref_id field
-.. 
 
 
 
@@ -2229,20 +1340,10 @@ Object: ir.default
 
 
 
-.. index::
-  single: field_tbl field
-.. 
-
-
 
 
 :field_name: Object field, char
 
-
-
-.. index::
-  single: field_name field
-.. 
 
 
 
@@ -2251,27 +1352,14 @@ Object: ir.default
 
 
 
-.. index::
-  single: page field
-.. 
-
-
 
 Object: ir.actions.actions
 ##########################
 
-.. index::
-  single: ir.actions.actions object
-.. 
 
 
 :usage: Action Usage, char
 
-
-
-.. index::
-  single: usage field
-.. 
 
 
 
@@ -2280,49 +1368,26 @@ Object: ir.actions.actions
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Action Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.actions.report.custom
 ################################
 
-.. index::
-  single: ir.actions.report.custom object
-.. 
 
 
 :multi: On multiple doc., boolean
 
     *If set to true, the action will not be displayed on the right toolbar of a form views.*
 
-.. index::
-  single: multi field
-.. 
-
-
 
 
 :name: Report Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -2331,20 +1396,10 @@ Object: ir.actions.report.custom
 
 
 
-.. index::
-  single: portal_visible field
-.. 
-
-
 
 
 :usage: Action Usage, char
 
-
-
-.. index::
-  single: usage field
-.. 
 
 
 
@@ -2353,20 +1408,10 @@ Object: ir.actions.report.custom
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :type: Report Type, char, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -2375,27 +1420,14 @@ Object: ir.actions.report.custom
 
 
 
-.. index::
-  single: report_id field
-.. 
-
-
 
 Object: ir.actions.report.xml
 #############################
 
-.. index::
-  single: ir.actions.report.xml object
-.. 
 
 
 :groups_id: Groups, many2many
 
-
-
-.. index::
-  single: groups_id field
-.. 
 
 
 
@@ -2404,20 +1436,10 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_rml_content field
-.. 
-
-
 
 
 :portal_visible: Visible in Portal, boolean
 
-
-
-.. index::
-  single: portal_visible field
-.. 
 
 
 
@@ -2426,20 +1448,10 @@ Object: ir.actions.report.xml
 
     *Add or not the coporate RML header*
 
-.. index::
-  single: header field
-.. 
-
-
 
 
 :report_type: Type, selection, required
 
-
-
-.. index::
-  single: report_type field
-.. 
 
 
 
@@ -2448,31 +1460,16 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_sxw_content field
-.. 
-
-
 
 
 :attachment: Save As Attachment Prefix, char
 
     *This is the filename of the attachment to store the printing result. Keep empty to not save the printed reports. You can use python expression using the object and time variables.*
 
-.. index::
-  single: attachment field
-.. 
-
-
 
 
 :usage: Action Usage, char
 
-
-
-.. index::
-  single: usage field
-.. 
 
 
 
@@ -2481,20 +1478,10 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_sxw_content_data field
-.. 
-
-
 
 
 :type: Report Type, char, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -2503,20 +1490,10 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_xml field
-.. 
-
-
 
 
 :model_id: Model Id, float, readonly
 
-
-
-.. index::
-  single: model_id field
-.. 
 
 
 
@@ -2525,20 +1502,10 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_rml_content_data field
-.. 
-
-
 
 
 :auto: Automatic XSL:RML, boolean, required
 
-
-
-.. index::
-  single: auto field
-.. 
 
 
 
@@ -2547,20 +1514,10 @@ Object: ir.actions.report.xml
 
 
 
-.. index::
-  single: report_sxw field
-.. 
-
-
 
 
 :document_id: Document, integer
 
-
-
-.. index::
-  single: document_id field
-.. 
 
 
 
@@ -2569,31 +1526,16 @@ Object: ir.actions.report.xml
 
     *If set to true, the action will not be displayed on the right toolbar of a form views.*
 
-.. index::
-  single: multi field
-.. 
-
-
 
 
 :report_xsl: XSL path, char
 
 
 
-.. index::
-  single: report_xsl field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -2602,20 +1544,10 @@ Object: ir.actions.report.xml
 
     *The .rml path of the file or NULL if the content is in report_rml_content*
 
-.. index::
-  single: report_rml field
-.. 
-
-
 
 
 :report_name: Internal Name, char, required
 
-
-
-.. index::
-  single: report_name field
-.. 
 
 
 
@@ -2624,38 +1556,20 @@ Object: ir.actions.report.xml
 
     *If you check this, the second time the user print with same attachment name, it returns the previour report.*
 
-.. index::
-  single: attachment_use field
-.. 
-
-
 
 
 :model: Object, char, required
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 Object: ir.actions.act_window
 #############################
 
-.. index::
-  single: ir.actions.act_window object
-.. 
 
 
 :groups_id: Groups, many2many
 
-
-
-.. index::
-  single: groups_id field
-.. 
 
 
 
@@ -2664,20 +1578,10 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: domain field
-.. 
-
-
 
 
 :target: Target Window, selection
 
-
-
-.. index::
-  single: target field
-.. 
 
 
 
@@ -2686,20 +1590,10 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: view_type field
-.. 
-
-
 
 
 :res_model: Object, char
 
-
-
-.. index::
-  single: res_model field
-.. 
 
 
 
@@ -2708,20 +1602,10 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: view_id field
-.. 
-
-
 
 
 :portal_visible: Visible in Portal, boolean
 
-
-
-.. index::
-  single: portal_visible field
-.. 
 
 
 
@@ -2730,20 +1614,10 @@ Object: ir.actions.act_window
 
     *Add an auto-refresh on the view*
 
-.. index::
-  single: auto_refresh field
-.. 
-
-
 
 
 :src_model: Source Object, char
 
-
-
-.. index::
-  single: src_model field
-.. 
 
 
 
@@ -2752,31 +1626,16 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: view_mode field
-.. 
-
-
 
 
 :limit: Limit, integer
 
     *Default limit for the list view*
 
-.. index::
-  single: limit field
-.. 
-
-
 
 
 :context: Context Value, char
 
-
-
-.. index::
-  single: context field
-.. 
 
 
 
@@ -2785,20 +1644,10 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :usage: Action Usage, char
 
-
-
-.. index::
-  single: usage field
-.. 
 
 
 
@@ -2807,20 +1656,10 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: view_ids field
-.. 
-
-
 
 
 :views: Views, binary, readonly
 
-
-
-.. index::
-  single: views field
-.. 
 
 
 
@@ -2829,27 +1668,14 @@ Object: ir.actions.act_window
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.actions.act_window.view
 ##################################
 
-.. index::
-  single: ir.actions.act_window.view object
-.. 
 
 
 :act_window_id: Action, many2one
 
-
-
-.. index::
-  single: act_window_id field
-.. 
 
 
 
@@ -2858,31 +1684,16 @@ Object: ir.actions.act_window.view
 
 
 
-.. index::
-  single: view_id field
-.. 
-
-
 
 
 :multi: On multiple doc., boolean
 
     *If set to true, the action will not be displayed on the right toolbar of a form views.*
 
-.. index::
-  single: multi field
-.. 
-
-
 
 
 :view_mode: Type of view, selection, required
 
-
-
-.. index::
-  single: view_mode field
-.. 
 
 
 
@@ -2891,27 +1702,14 @@ Object: ir.actions.act_window.view
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 Object: ir.actions.wizard
 #########################
 
-.. index::
-  single: ir.actions.wizard object
-.. 
 
 
 :groups_id: Groups, many2many
 
-
-
-.. index::
-  single: groups_id field
-.. 
 
 
 
@@ -2920,20 +1718,10 @@ Object: ir.actions.wizard
 
     *If set to true, the wizard will not be displayed on the right toolbar of a form views.*
 
-.. index::
-  single: multi field
-.. 
-
-
 
 
 :name: Wizard info, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -2942,20 +1730,10 @@ Object: ir.actions.wizard
 
 
 
-.. index::
-  single: portal_visible field
-.. 
-
-
 
 
 :wiz_name: Wizard name, char, required
 
-
-
-.. index::
-  single: wiz_name field
-.. 
 
 
 
@@ -2964,38 +1742,20 @@ Object: ir.actions.wizard
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 
 :type: Action type, char, required
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 Object: ir.actions.url
 ######################
 
-.. index::
-  single: ir.actions.url object
-.. 
 
 
 :url: Action Url, text, required
 
-
-
-.. index::
-  single: url field
-.. 
 
 
 
@@ -3004,20 +1764,10 @@ Object: ir.actions.url
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Action Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -3026,38 +1776,20 @@ Object: ir.actions.url
 
 
 
-.. index::
-  single: target field
-.. 
-
-
 
 Object: ir.server.object.lines
 ##############################
 
-.. index::
-  single: ir.server.object.lines object
-.. 
 
 
 :server_id: Object Mapping, many2one
 
 
 
-.. index::
-  single: server_id field
-.. 
-
-
 
 
 :type: Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -3066,39 +1798,21 @@ Object: ir.server.object.lines
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :col1: Destination, many2one, required
 
 
 
-.. index::
-  single: col1 field
-.. 
-
-
 
 Object: ir.actions.server
 #########################
 
-.. index::
-  single: ir.actions.server object
-.. 
 
 
 :code: Python Code, text
 
     *python code to be execute*
-
-.. index::
-  single: code field
-.. 
-
 
 
 
@@ -3106,21 +1820,11 @@ Object: ir.actions.server
 
     *Important when you deal with the multi action, the execution order will be decided based on this, low number higher priority*
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :write_id: Write Id, char
 
     *Provide the field name from where the record id refer for the write operation, if its empty it will refer to the active id of the object*
-
-.. index::
-  single: write_id field
-.. 
-
 
 
 
@@ -3128,21 +1832,11 @@ Object: ir.actions.server
 
     *Specify the Message, you can use the fields from the object. like `Dear [[ object.partner_id.name ]]`*
 
-.. index::
-  single: message field
-.. 
-
-
 
 
 :subject: Subject, char
 
     *Specify the subject, you can use the fields from the object. like `Hello [[ object.partner_id.name ]]`*
-
-.. index::
-  single: subject field
-.. 
-
 
 
 
@@ -3150,31 +1844,16 @@ Object: ir.actions.server
 
     *select the action, which will be executes. Loop action will not be avaliable inside loop*
 
-.. index::
-  single: loop_action field
-.. 
-
-
 
 
 :trigger_obj_id: Trigger On, many2one
 
     *select the object from the model on which the workflow will execute*
 
-.. index::
-  single: trigger_obj_id field
-.. 
-
-
 
 
 :sms: SMS, char
 
-
-
-.. index::
-  single: sms field
-.. 
 
 
 
@@ -3183,21 +1862,11 @@ Object: ir.actions.server
 
     *Workflow to be execute on which model*
 
-.. index::
-  single: wkf_model_id field
-.. 
-
-
 
 
 :state: Action Type, selection, required
 
     *Type of the Action that is to be execute*
-
-.. index::
-  single: state field
-.. 
-
 
 
 
@@ -3205,20 +1874,10 @@ Object: ir.actions.server
 
 
 
-.. index::
-  single: usage field
-.. 
-
-
 
 
 :type: Action Type, char, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -3227,21 +1886,11 @@ Object: ir.actions.server
 
     *provides the fiels that will refer to the tiny to fetch the email address, i.e. you select the invoice, then `object.invoice_address_id.email` is the field which give the correct address*
 
-.. index::
-  single: email field
-.. 
-
-
 
 
 :action_id: Client Action, many2one
 
     *Select the Ation Window, Report, Wizard to be execute*
-
-.. index::
-  single: action_id field
-.. 
-
 
 
 
@@ -3249,20 +1898,10 @@ Object: ir.actions.server
 
     *select the obect on which the action will work (read, write, create)*
 
-.. index::
-  single: model_id field
-.. 
-
-
 
 
 :child_ids: Others Actions, many2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -3271,21 +1910,11 @@ Object: ir.actions.server
 
     *Provide the field name from where the record id stores after the create operations, if its empty, you can not track the new record*
 
-.. index::
-  single: record_id field
-.. 
-
-
 
 
 :srcmodel_id: Model, many2one
 
     *In which object you want to create / write the object if its empty refer to the Object field*
-
-.. index::
-  single: srcmodel_id field
-.. 
-
 
 
 
@@ -3293,31 +1922,16 @@ Object: ir.actions.server
 
     *Select the Signal name that is to be*
 
-.. index::
-  single: trigger_name field
-.. 
-
-
 
 
 :condition: Condition, char, required
 
     *Condition that is to be test before execute action,  i.e : object.list_price > object.cost_price*
 
-.. index::
-  single: condition field
-.. 
-
-
 
 
 :fields_lines: Fields Mapping, one2many
 
-
-
-.. index::
-  single: fields_lines field
-.. 
 
 
 
@@ -3326,21 +1940,11 @@ Object: ir.actions.server
 
     *Easy to Refer action by name i.e. One Sales Order -> Many Invoice*
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :mobile: Mobile No, char
 
     *provides the fiels that will refer to the tiny to fetch the mobile number, i.e. you select the invoice, then `object.invoice_address_id.mobile` is the field which give the correct mobile number*
-
-.. index::
-  single: mobile field
-.. 
-
 
 
 
@@ -3348,27 +1952,14 @@ Object: ir.actions.server
 
     *enter the field/expression that will return the list, i.e. select the sale order in Object, and we can have loop on sales order line. Expression = `object.order_line`*
 
-.. index::
-  single: expression field
-.. 
-
-
 
 Object: ir.actions.act_window_close
 ###################################
 
-.. index::
-  single: ir.actions.act_window_close object
-.. 
 
 
 :type: Action Type, char, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -3377,38 +1968,20 @@ Object: ir.actions.act_window_close
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.actions.todo
 #######################
 
-.. index::
-  single: ir.actions.todo object
-.. 
 
 
 :groups_id: Groups, many2many
 
 
 
-.. index::
-  single: groups_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -3417,20 +1990,10 @@ Object: ir.actions.todo
 
 
 
-.. index::
-  single: end_date field
-.. 
-
-
 
 
 :sequence: Sequence, integer
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -3439,20 +2002,10 @@ Object: ir.actions.todo
 
 
 
-.. index::
-  single: note field
-.. 
-
-
 
 
 :state: State, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -3461,20 +2014,10 @@ Object: ir.actions.todo
 
 
 
-.. index::
-  single: users_id field
-.. 
-
-
 
 
 :start_on: Start On, selection
 
-
-
-.. index::
-  single: start_on field
-.. 
 
 
 
@@ -3483,20 +2026,10 @@ Object: ir.actions.todo
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :type: Type, selection, required
 
-
-
-.. index::
-  single: type field
-.. 
 
 
 
@@ -3505,38 +2038,20 @@ Object: ir.actions.todo
 
 
 
-.. index::
-  single: start_date field
-.. 
-
-
 
 
 :action_id: Action, many2one, required
 
 
 
-.. index::
-  single: action_id field
-.. 
-
-
 
 Object: ir.actions.configuration.wizard
 #######################################
 
-.. index::
-  single: ir.actions.configuration.wizard object
-.. 
 
 
 :item_id: Next Configuration Wizard, many2one, readonly
 
-
-
-.. index::
-  single: item_id field
-.. 
 
 
 
@@ -3545,38 +2060,20 @@ Object: ir.actions.configuration.wizard
 
 
 
-.. index::
-  single: progress field
-.. 
-
-
 
 
 :name: Next Wizard, text, readonly
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.report.custom
 ########################
 
-.. index::
-  single: ir.report.custom object
-.. 
 
 
 :menu_id: Menu, many2one
 
-
-
-.. index::
-  single: menu_id field
-.. 
 
 
 
@@ -3585,20 +2082,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: model_id field
-.. 
-
-
 
 
 :print_format: Print format, selection, required
 
-
-
-.. index::
-  single: print_format field
-.. 
 
 
 
@@ -3607,20 +2094,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: limitt field
-.. 
-
-
 
 
 :fields_child0: Fields, one2many, required
 
-
-
-.. index::
-  single: fields_child0 field
-.. 
 
 
 
@@ -3629,20 +2106,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: repeat_header field
-.. 
-
-
 
 
 :title: Report title, char, required
 
-
-
-.. index::
-  single: title field
-.. 
 
 
 
@@ -3651,20 +2118,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :frequency: Frequency, selection
 
-
-
-.. index::
-  single: frequency field
-.. 
 
 
 
@@ -3673,20 +2130,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: sortby field
-.. 
-
-
 
 
 :print_orientation: Print orientation, selection, required
 
-
-
-.. index::
-  single: print_orientation field
-.. 
 
 
 
@@ -3695,20 +2142,10 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: footer field
-.. 
-
-
 
 
 :field_parent: Child Field, many2one
 
-
-
-.. index::
-  single: field_parent field
-.. 
 
 
 
@@ -3717,38 +2154,20 @@ Object: ir.report.custom
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :name: Report Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.report.custom.fields
 ###############################
 
-.. index::
-  single: ir.report.custom.fields object
-.. 
 
 
 :fc2_op: Relation, selection
 
-
-
-.. index::
-  single: fc2_op field
-.. 
 
 
 
@@ -3757,20 +2176,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: groupby field
-.. 
-
-
 
 
 :fc1_op: Relation, selection
 
-
-
-.. index::
-  single: fc1_op field
-.. 
 
 
 
@@ -3779,20 +2188,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: operation field
-.. 
-
-
 
 
 :alignment: Alignment, selection, required
 
-
-
-.. index::
-  single: alignment field
-.. 
 
 
 
@@ -3801,20 +2200,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc2_operande field
-.. 
-
-
 
 
 :fc2_condition: condition, char
 
-
-
-.. index::
-  single: fc2_condition field
-.. 
 
 
 
@@ -3823,20 +2212,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc0_op field
-.. 
-
-
 
 
 :sequence: Sequence, integer, required
 
-
-
-.. index::
-  single: sequence field
-.. 
 
 
 
@@ -3845,20 +2224,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc3_operande field
-.. 
-
-
 
 
 :fc0_condition: Condition, char
 
-
-
-.. index::
-  single: fc0_condition field
-.. 
 
 
 
@@ -3867,20 +2236,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: bgcolor field
-.. 
-
-
 
 
 :fontcolor: Font color, char
 
-
-
-.. index::
-  single: fontcolor field
-.. 
 
 
 
@@ -3889,20 +2248,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc1_operande field
-.. 
-
-
 
 
 :field_child1: field child1, many2one
 
-
-
-.. index::
-  single: field_child1 field
-.. 
 
 
 
@@ -3911,20 +2260,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: field_child0 field
-.. 
-
-
 
 
 :field_child3: field child3, many2one
 
-
-
-.. index::
-  single: field_child3 field
-.. 
 
 
 
@@ -3933,20 +2272,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: field_child2 field
-.. 
-
-
 
 
 :fc1_condition: condition, char
 
-
-
-.. index::
-  single: fc1_condition field
-.. 
 
 
 
@@ -3955,20 +2284,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: cumulate field
-.. 
-
-
 
 
 :report_id: Report Ref, many2one
 
-
-
-.. index::
-  single: report_id field
-.. 
 
 
 
@@ -3977,20 +2296,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc3_op field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -3999,20 +2308,10 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: fc3_condition field
-.. 
-
-
 
 
 :fc0_operande: Constraint, many2one
 
-
-
-.. index::
-  single: fc0_operande field
-.. 
 
 
 
@@ -4021,27 +2320,14 @@ Object: ir.report.custom.fields
 
 
 
-.. index::
-  single: width field
-.. 
-
-
 
 Object: ir.attachment
 #####################
 
-.. index::
-  single: ir.attachment object
-.. 
 
 
 :create_date: Date Created, datetime, readonly
 
-
-
-.. index::
-  single: create_date field
-.. 
 
 
 
@@ -4050,20 +2336,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: file_type field
-.. 
-
-
 
 
 :res_model: Attached Model, char
 
-
-
-.. index::
-  single: res_model field
-.. 
 
 
 
@@ -4072,20 +2348,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: write_uid field
-.. 
-
-
 
 
 :file_size: File Size, integer, required
 
-
-
-.. index::
-  single: file_size field
-.. 
 
 
 
@@ -4094,20 +2360,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :create_uid: Creator, many2one, readonly
 
-
-
-.. index::
-  single: create_uid field
-.. 
 
 
 
@@ -4116,20 +2372,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :title: Resource Title, char
 
-
-
-.. index::
-  single: title field
-.. 
 
 
 
@@ -4138,20 +2384,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :index_content: Indexed Content, text
 
-
-
-.. index::
-  single: index_content field
-.. 
 
 
 
@@ -4160,20 +2396,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: preview field
-.. 
-
-
 
 
 :res_id: Attached ID, integer
 
-
-
-.. index::
-  single: res_id field
-.. 
 
 
 
@@ -4182,20 +2408,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: store_fname field
-.. 
-
-
 
 
 :description: Description, text
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -4204,20 +2420,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: store_method field
-.. 
-
-
 
 
 :link: Link, char
 
-
-
-.. index::
-  single: link field
-.. 
 
 
 
@@ -4226,20 +2432,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: write_date field
-.. 
-
-
 
 
 :group_ids: Groups, many2many
 
-
-
-.. index::
-  single: group_ids field
-.. 
 
 
 
@@ -4248,20 +2444,10 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :datas_fname: Filename, char
 
-
-
-.. index::
-  single: datas_fname field
-.. 
 
 
 
@@ -4270,27 +2456,14 @@ Object: ir.attachment
 
 
 
-.. index::
-  single: datas field
-.. 
-
-
 
 Object: ir.cron
 ###############
 
-.. index::
-  single: ir.cron object
-.. 
 
 
 :function: Function, char
 
-
-
-.. index::
-  single: function field
-.. 
 
 
 
@@ -4299,20 +2472,10 @@ Object: ir.cron
 
 
 
-.. index::
-  single: args field
-.. 
-
-
 
 
 :user_id: User, many2one, required
 
-
-
-.. index::
-  single: user_id field
-.. 
 
 
 
@@ -4321,20 +2484,10 @@ Object: ir.cron
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :interval_type: Interval Unit, selection
 
-
-
-.. index::
-  single: interval_type field
-.. 
 
 
 
@@ -4344,20 +2497,10 @@ Object: ir.cron
     *Number of time the function is called,
     a negative number indicates that the function will always be called*
 
-.. index::
-  single: numbercall field
-.. 
-
-
 
 
 :nextcall: Next call date, datetime, required
 
-
-
-.. index::
-  single: nextcall field
-.. 
 
 
 
@@ -4367,20 +2510,10 @@ Object: ir.cron
     *0=Very Urgent
     10=Not urgent*
 
-.. index::
-  single: priority field
-.. 
-
-
 
 
 :doall: Repeat missed, boolean
 
-
-
-.. index::
-  single: doall field
-.. 
 
 
 
@@ -4389,20 +2522,10 @@ Object: ir.cron
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :interval_number: Interval Number, integer
 
-
-
-.. index::
-  single: interval_number field
-.. 
 
 
 
@@ -4411,38 +2534,20 @@ Object: ir.cron
 
 
 
-.. index::
-  single: model field
-.. 
-
-
 
 Object: ir.values
 #################
 
-.. index::
-  single: ir.values object
-.. 
 
 
 :model_id: Object, many2one
 
     *This field is not used, it only helps you to select a good model.*
 
-.. index::
-  single: model_id field
-.. 
-
-
 
 
 :object: Is Object, boolean
 
-
-
-.. index::
-  single: object field
-.. 
 
 
 
@@ -4451,20 +2556,10 @@ Object: ir.values
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -4473,20 +2568,10 @@ Object: ir.values
 
     *The kind of action or button in the client side that will trigger the action.*
 
-.. index::
-  single: key2 field
-.. 
-
-
 
 
 :value_unpickle: Value, text
 
-
-
-.. index::
-  single: value_unpickle field
-.. 
 
 
 
@@ -4495,20 +2580,10 @@ Object: ir.values
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 
 :value: Value, text
 
-
-
-.. index::
-  single: value field
-.. 
 
 
 
@@ -4517,20 +2592,10 @@ Object: ir.values
 
 
 
-.. index::
-  single: meta field
-.. 
-
-
 
 
 :key: Type, selection
 
-
-
-.. index::
-  single: key field
-.. 
 
 
 
@@ -4539,20 +2604,10 @@ Object: ir.values
 
     *Keep 0 if the action must appear on all resources.*
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 
 :model: Object Name, char
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -4561,38 +2616,20 @@ Object: ir.values
 
 
 
-.. index::
-  single: meta_unpickle field
-.. 
-
-
 
 
 :action_id: Action, many2one
 
     *This field is not used, it only helps you to select the right action.*
 
-.. index::
-  single: action_id field
-.. 
-
-
 
 Object: ir.translation
 ######################
 
-.. index::
-  single: ir.translation object
-.. 
 
 
 :lang: Language, selection
 
-
-
-.. index::
-  single: lang field
-.. 
 
 
 
@@ -4601,20 +2638,10 @@ Object: ir.translation
 
 
 
-.. index::
-  single: src field
-.. 
-
-
 
 
 :name: Field Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -4623,20 +2650,10 @@ Object: ir.translation
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :value: Translation Value, text
 
-
-
-.. index::
-  single: value field
-.. 
 
 
 
@@ -4645,27 +2662,14 @@ Object: ir.translation
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 Object: ir.exports
 ##################
 
-.. index::
-  single: ir.exports object
-.. 
 
 
 :export_fields: Export Id, one2many
 
-
-
-.. index::
-  single: export_fields field
-.. 
 
 
 
@@ -4674,38 +2678,20 @@ Object: ir.exports
 
 
 
-.. index::
-  single: resource field
-.. 
-
-
 
 
 :name: Export name, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: ir.exports.line
 #######################
 
-.. index::
-  single: ir.exports.line object
-.. 
 
 
 :export_id: Exportation, many2one
 
-
-
-.. index::
-  single: export_id field
-.. 
 
 
 
@@ -4714,27 +2700,14 @@ Object: ir.exports.line
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: workflow
 ################
 
-.. index::
-  single: workflow object
-.. 
 
 
 :activities: Activities, one2many
 
-
-
-.. index::
-  single: activities field
-.. 
 
 
 
@@ -4743,20 +2716,10 @@ Object: workflow
 
 
 
-.. index::
-  single: on_create field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -4765,27 +2728,14 @@ Object: workflow
 
 
 
-.. index::
-  single: osv field
-.. 
-
-
 
 Object: workflow.activity
 #########################
 
-.. index::
-  single: workflow.activity object
-.. 
 
 
 :kind: Kind, selection, required
 
-
-
-.. index::
-  single: kind field
-.. 
 
 
 
@@ -4794,20 +2744,10 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :join_mode: Join Mode, selection, required
 
-
-
-.. index::
-  single: join_mode field
-.. 
 
 
 
@@ -4816,31 +2756,16 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: wkf_id field
-.. 
-
-
 
 
 :flow_stop: Flow Stop, boolean
 
 
 
-.. index::
-  single: flow_stop field
-.. 
-
-
 
 
 :subflow_id: Subflow, many2one
 
-
-
-.. index::
-  single: subflow_id field
-.. 
 
 
 
@@ -4849,20 +2774,10 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: split_mode field
-.. 
-
-
 
 
 :action: Python Action, text
 
-
-
-.. index::
-  single: action field
-.. 
 
 
 
@@ -4871,20 +2786,10 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: signal_send field
-.. 
-
-
 
 
 :flow_start: Flow Start, boolean
 
-
-
-.. index::
-  single: flow_start field
-.. 
 
 
 
@@ -4893,20 +2798,10 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: out_transitions field
-.. 
-
-
 
 
 :in_transitions: Incoming transitions, one2many
 
-
-
-.. index::
-  single: in_transitions field
-.. 
 
 
 
@@ -4915,27 +2810,14 @@ Object: workflow.activity
 
 
 
-.. index::
-  single: action_id field
-.. 
-
-
 
 Object: workflow.transition
 ###########################
 
-.. index::
-  single: workflow.transition object
-.. 
 
 
 :trigger_model: Trigger Object, char
 
-
-
-.. index::
-  single: trigger_model field
-.. 
 
 
 
@@ -4944,20 +2826,10 @@ Object: workflow.transition
 
 
 
-.. index::
-  single: signal field
-.. 
-
-
 
 
 :role_id: Role Required, many2one
 
-
-
-.. index::
-  single: role_id field
-.. 
 
 
 
@@ -4966,20 +2838,10 @@ Object: workflow.transition
 
 
 
-.. index::
-  single: act_from field
-.. 
-
-
 
 
 :condition: Condition, char, required
 
-
-
-.. index::
-  single: condition field
-.. 
 
 
 
@@ -4988,38 +2850,20 @@ Object: workflow.transition
 
 
 
-.. index::
-  single: trigger_expr_id field
-.. 
-
-
 
 
 :act_to: Destination Activity, many2one, required
 
 
 
-.. index::
-  single: act_to field
-.. 
-
-
 
 Object: workflow.instance
 #########################
 
-.. index::
-  single: workflow.instance object
-.. 
 
 
 :res_type: Resource Object, char
 
-
-
-.. index::
-  single: res_type field
-.. 
 
 
 
@@ -5028,20 +2872,10 @@ Object: workflow.instance
 
 
 
-.. index::
-  single: wkf_id field
-.. 
-
-
 
 
 :res_id: Resource ID, integer
 
-
-
-.. index::
-  single: res_id field
-.. 
 
 
 
@@ -5050,38 +2884,20 @@ Object: workflow.instance
 
 
 
-.. index::
-  single: uid field
-.. 
-
-
 
 
 :state: State, char
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 Object: workflow.workitem
 #########################
 
-.. index::
-  single: workflow.workitem object
-.. 
 
 
 :subflow_id: Subflow, many2one
 
-
-
-.. index::
-  single: subflow_id field
-.. 
 
 
 
@@ -5090,20 +2906,10 @@ Object: workflow.workitem
 
 
 
-.. index::
-  single: act_id field
-.. 
-
-
 
 
 :state: State, char
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -5112,27 +2918,14 @@ Object: workflow.workitem
 
 
 
-.. index::
-  single: inst_id field
-.. 
-
-
 
 Object: workflow.triggers
 #########################
 
-.. index::
-  single: workflow.triggers object
-.. 
 
 
 :instance_id: Destination Instance, many2one
 
-
-
-.. index::
-  single: instance_id field
-.. 
 
 
 
@@ -5141,20 +2934,10 @@ Object: workflow.triggers
 
 
 
-.. index::
-  single: workitem_id field
-.. 
-
-
 
 
 :model: Object, char
 
-
-
-.. index::
-  single: model field
-.. 
 
 
 
@@ -5163,27 +2946,14 @@ Object: workflow.triggers
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 Object: ir.rule.group
 #####################
 
-.. index::
-  single: ir.rule.group object
-.. 
 
 
 :model_id: Object, many2one, required
 
-
-
-.. index::
-  single: model_id field
-.. 
 
 
 
@@ -5192,21 +2962,11 @@ Object: ir.rule.group
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :rules: Tests, one2many
 
     *The rule is satisfied if at least one test is True*
-
-.. index::
-  single: rules field
-.. 
-
 
 
 
@@ -5214,20 +2974,10 @@ Object: ir.rule.group
 
     *Make the rule global or it needs to be put on a group or user*
 
-.. index::
-  single: global field
-.. 
-
-
 
 
 :groups: Groups, many2many
 
-
-
-.. index::
-  single: groups field
-.. 
 
 
 
@@ -5236,27 +2986,14 @@ Object: ir.rule.group
 
 
 
-.. index::
-  single: users field
-.. 
-
-
 
 Object: ir.rule
 ###############
 
-.. index::
-  single: ir.rule object
-.. 
 
 
 :domain: Domain, char, readonly
 
-
-
-.. index::
-  single: domain field
-.. 
 
 
 
@@ -5265,20 +3002,10 @@ Object: ir.rule
 
 
 
-.. index::
-  single: domain_force field
-.. 
-
-
 
 
 :field_id: Field, many2one, required
 
-
-
-.. index::
-  single: field_id field
-.. 
 
 
 
@@ -5287,20 +3014,10 @@ Object: ir.rule
 
 
 
-.. index::
-  single: operand field
-.. 
-
-
 
 
 :operator: Operator, selection, required
 
-
-
-.. index::
-  single: operator field
-.. 
 
 
 
@@ -5309,27 +3026,14 @@ Object: ir.rule
 
 
 
-.. index::
-  single: rule_group field
-.. 
-
-
 
 Object: wizard.ir.model.menu.create
 ###################################
 
-.. index::
-  single: wizard.ir.model.menu.create object
-.. 
 
 
 :menu_id: Parent Menu, many2one, required
 
-
-
-.. index::
-  single: menu_id field
-.. 
 
 
 
@@ -5338,20 +3042,10 @@ Object: wizard.ir.model.menu.create
 
 
 
-.. index::
-  single: model_id field
-.. 
-
-
 
 
 :view_ids: Views, one2many
 
-
-
-.. index::
-  single: view_ids field
-.. 
 
 
 
@@ -5360,27 +3054,14 @@ Object: wizard.ir.model.menu.create
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: wizard.ir.model.menu.create.line
 ########################################
 
-.. index::
-  single: wizard.ir.model.menu.create.line object
-.. 
 
 
 :view_id: View, many2one
 
-
-
-.. index::
-  single: view_id field
-.. 
 
 
 
@@ -5389,20 +3070,10 @@ Object: wizard.ir.model.menu.create.line
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :wizard_id: Wizard, many2one
 
-
-
-.. index::
-  single: wizard_id field
-.. 
 
 
 
@@ -5411,38 +3082,20 @@ Object: wizard.ir.model.menu.create.line
 
 
 
-.. index::
-  single: view_type field
-.. 
-
-
 
 Object: wizard.module.lang.export
 #################################
 
-.. index::
-  single: wizard.module.lang.export object
-.. 
 
 
 :lang: Language, selection
 
     *To export a new language, do not select a language.*
 
-.. index::
-  single: lang field
-.. 
-
-
 
 
 :name: Filename, char, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -5451,20 +3104,10 @@ Object: wizard.module.lang.export
 
 
 
-.. index::
-  single: format field
-.. 
-
-
 
 
 :advice: Advice, text, readonly
 
-
-
-.. index::
-  single: advice field
-.. 
 
 
 
@@ -5473,20 +3116,10 @@ Object: wizard.module.lang.export
 
 
 
-.. index::
-  single: modules field
-.. 
-
-
 
 
 :state: unknown, selection
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -5495,45 +3128,24 @@ Object: wizard.module.lang.export
 
 
 
-.. index::
-  single: data field
-.. 
-
-
 
 Object: wizard.module.update_translations
 #########################################
 
-.. index::
-  single: wizard.module.update_translations object
-.. 
 
 
 :lang: Language, selection, required
 
 
 
-.. index::
-  single: lang field
-.. 
-
-
 
 Object: Module Repository
 #########################
 
-.. index::
-  single: Module Repository object
-.. 
 
 
 :url: Url, char, required
 
-
-
-.. index::
-  single: url field
-.. 
 
 
 
@@ -5545,31 +3157,16 @@ Object: Module Repository
     - The second parenthesis must match all the version number.
     - The last parenthesis must match the extension of the module.*
 
-.. index::
-  single: filter field
-.. 
-
-
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -5578,27 +3175,14 @@ Object: Module Repository
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 Object: Module Category
 #######################
 
-.. index::
-  single: Module Category object
-.. 
 
 
 :parent_id: Parent Category, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -5607,20 +3191,10 @@ Object: Module Category
 
 
 
-.. index::
-  single: module_nr field
-.. 
-
-
 
 
 :child_ids: Parent Category, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -5629,27 +3203,14 @@ Object: Module Category
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Module
 ##############
 
-.. index::
-  single: Module object
-.. 
 
 
 :website: Website, char, readonly
 
-
-
-.. index::
-  single: website field
-.. 
 
 
 
@@ -5658,20 +3219,10 @@ Object: Module
 
 
 
-.. index::
-  single: menus_by_module field
-.. 
-
-
 
 
 :license: License, selection, readonly
 
-
-
-.. index::
-  single: license field
-.. 
 
 
 
@@ -5680,20 +3231,10 @@ Object: Module
 
 
 
-.. index::
-  single: reports_by_module field
-.. 
-
-
 
 
 :description: Description, text, readonly
 
-
-
-.. index::
-  single: description field
-.. 
 
 
 
@@ -5702,20 +3243,10 @@ Object: Module
 
 
 
-.. index::
-  single: certificate field
-.. 
-
-
 
 
 :author: Author, char, readonly
 
-
-
-.. index::
-  single: author field
-.. 
 
 
 
@@ -5724,20 +3255,10 @@ Object: Module
 
 
 
-.. index::
-  single: url field
-.. 
-
-
 
 
 :demo: Demo data, boolean
 
-
-
-.. index::
-  single: demo field
-.. 
 
 
 
@@ -5746,20 +3267,10 @@ Object: Module
 
 
 
-.. index::
-  single: published_version field
-.. 
-
-
 
 
 :installed_version: Latest version, char, readonly
 
-
-
-.. index::
-  single: installed_version field
-.. 
 
 
 
@@ -5768,20 +3279,10 @@ Object: Module
 
 
 
-.. index::
-  single: latest_version field
-.. 
-
-
 
 
 :dependencies_id: Dependencies, one2many, readonly
 
-
-
-.. index::
-  single: dependencies_id field
-.. 
 
 
 
@@ -5790,20 +3291,10 @@ Object: Module
 
 
 
-.. index::
-  single: views_by_module field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -5812,20 +3303,10 @@ Object: Module
 
 
 
-.. index::
-  single: shortdesc field
-.. 
-
-
 
 
 :category_id: Category, many2one, readonly
 
-
-
-.. index::
-  single: category_id field
-.. 
 
 
 
@@ -5834,27 +3315,14 @@ Object: Module
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Module dependency
 #########################
 
-.. index::
-  single: Module dependency object
-.. 
 
 
 :module_id: Module, many2one
 
-
-
-.. index::
-  single: module_id field
-.. 
 
 
 
@@ -5863,38 +3331,20 @@ Object: Module dependency
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :name: Name, char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Country
 ###############
 
-.. index::
-  single: Country object
-.. 
 
 
 :main_language: Main Language, many2one
 
-
-
-.. index::
-  single: main_language field
-.. 
 
 
 
@@ -5904,31 +3354,16 @@ Object: Country
     *The ISO country code in two chars.
     You can use this field for quick search.*
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Country Name, char, required
 
     *The full name of the country.*
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :payment_methods: Payment Methods, many2many
 
-
-
-.. index::
-  single: payment_methods field
-.. 
 
 
 
@@ -5937,20 +3372,10 @@ Object: Country
 
 
 
-.. index::
-  single: forwarding_charge field
-.. 
-
-
 
 
 :main_currency: Main Currency, many2one
 
-
-
-.. index::
-  single: main_currency field
-.. 
 
 
 
@@ -5959,27 +3384,14 @@ Object: Country
 
 
 
-.. index::
-  single: intrastat field
-.. 
-
-
 
 Object: Country state
 #####################
 
-.. index::
-  single: Country state object
-.. 
 
 
 :code: State Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -5988,20 +3400,10 @@ Object: Country state
 
 
 
-.. index::
-  single: country_id field
-.. 
-
-
 
 
 :name: State Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -6010,27 +3412,14 @@ Object: Country state
 
 
 
-.. index::
-  single: city_ids field
-.. 
-
-
 
 Object: Bank
 ############
 
-.. index::
-  single: Bank object
-.. 
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -6039,20 +3428,10 @@ Object: Bank
 
 
 
-.. index::
-  single: fax field
-.. 
-
-
 
 
 :code: Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -6061,20 +3440,10 @@ Object: Bank
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :zip: Zip, char
 
-
-
-.. index::
-  single: zip field
-.. 
 
 
 
@@ -6083,20 +3452,10 @@ Object: Bank
 
 
 
-.. index::
-  single: country field
-.. 
-
-
 
 
 :street2: Street2, char
 
-
-
-.. index::
-  single: street2 field
-.. 
 
 
 
@@ -6105,20 +3464,10 @@ Object: Bank
 
     *Bank Identifier Code*
 
-.. index::
-  single: bic field
-.. 
-
-
 
 
 :phone: Phone, char
 
-
-
-.. index::
-  single: phone field
-.. 
 
 
 
@@ -6127,20 +3476,10 @@ Object: Bank
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :street: Street, char
 
-
-
-.. index::
-  single: street field
-.. 
 
 
 
@@ -6149,20 +3488,10 @@ Object: Bank
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :email: E-Mail, char
 
-
-
-.. index::
-  single: email field
-.. 
 
 
 
@@ -6171,27 +3500,14 @@ Object: Bank
 
     *This field may contain indications on the processing to be applied, e.g. an indication concerning the globalisation of these payments.The content of this field must be laid down on a bilateral basis between the bank and its client.*
 
-.. index::
-  single: bilateral field
-.. 
-
-
 
 Object: Function of the contact
 ###############################
 
-.. index::
-  single: Function of the contact object
-.. 
 
 
 :code: Code, char
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -6200,45 +3516,24 @@ Object: Function of the contact
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Payment term
 ####################
 
-.. index::
-  single: Payment term object
-.. 
 
 
 :name: Payment term (short name), char
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Partner Categories
 ##########################
 
-.. index::
-  single: Partner Categories object
-.. 
 
 
 :name: Category Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -6247,20 +3542,10 @@ Object: Partner Categories
 
 
 
-.. index::
-  single: child_ids field
-.. 
-
-
 
 
 :parent_id: Parent Category, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -6269,21 +3554,11 @@ Object: Partner Categories
 
 
 
-.. index::
-  single: complete_name field
-.. 
-
-
 
 
 :active: Active, boolean
 
     *The active field allows you to hide the category, without removing it.*
-
-.. index::
-  single: active field
-.. 
-
 
 
 
@@ -6291,27 +3566,14 @@ Object: Partner Categories
 
 
 
-.. index::
-  single: export_enabled field
-.. 
-
-
 
 Object: res.partner.title
 #########################
 
-.. index::
-  single: res.partner.title object
-.. 
 
 
 :domain: Domain, selection, required
 
-
-
-.. index::
-  single: domain field
-.. 
 
 
 
@@ -6320,38 +3582,20 @@ Object: res.partner.title
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :shortcut: Shortcut, char, required
 
 
 
-.. index::
-  single: shortcut field
-.. 
-
-
 
 Object: Partner
 ###############
 
-.. index::
-  single: Partner object
-.. 
 
 
 :ean13: EAN13, char
 
-
-
-.. index::
-  single: ean13 field
-.. 
 
 
 
@@ -6360,20 +3604,10 @@ Object: Partner
 
     *The fiscal position will determine taxes and the accounts used for the the partner.*
 
-.. index::
-  single: property_account_position field
-.. 
-
-
 
 
 :ref_companies: Companies that refers to partner, one2many
 
-
-
-.. index::
-  single: ref_companies field
-.. 
 
 
 
@@ -6382,20 +3616,10 @@ Object: Partner
 
 
 
-.. index::
-  single: canal_id field
-.. 
-
-
 
 
 :sender_name: Sender Name, char
 
-
-
-.. index::
-  single: sender_name field
-.. 
 
 
 
@@ -6404,21 +3628,11 @@ Object: Partner
 
     *This stock location will be used, instead of the default one, as the destination location for goods you send to this partner*
 
-.. index::
-  single: property_stock_customer field
-.. 
-
-
 
 
 :property_product_pricelist: Sale Pricelist, many2one
 
     *This pricelist will be used, instead of the default one,                     for sales to the current partner*
-
-.. index::
-  single: property_product_pricelist field
-.. 
-
 
 
 
@@ -6426,20 +3640,10 @@ Object: Partner
 
 
 
-.. index::
-  single: name_official field
-.. 
-
-
 
 
 :title: Title, selection
 
-
-
-.. index::
-  single: title field
-.. 
 
 
 
@@ -6448,20 +3652,10 @@ Object: Partner
 
 
 
-.. index::
-  single: parent_id field
-.. 
-
-
 
 
 :membership_cancel: Cancel membership date, date, readonly
 
-
-
-.. index::
-  single: membership_cancel field
-.. 
 
 
 
@@ -6470,31 +3664,16 @@ Object: Partner
 
     *Partners description to be shown when inserting new ship sale*
 
-.. index::
-  single: alert_membership field
-.. 
-
-
 
 
 :alert_advertising: Adv.Alert, boolean
 
     *Partners description to be shown when inserting new advertising sale*
 
-.. index::
-  single: alert_advertising field
-.. 
-
-
 
 
 :asker_name: Asker Name, char
 
-
-
-.. index::
-  single: asker_name field
-.. 
 
 
 
@@ -6503,20 +3682,10 @@ Object: Partner
 
 
 
-.. index::
-  single: import_procent field
-.. 
-
-
 
 
 :child_ids: Partner Ref., one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -6525,21 +3694,11 @@ Object: Partner
 
     *This stock location will be used, instead of the default one, as the source location for goods you receive from the current partner*
 
-.. index::
-  single: property_stock_supplier field
-.. 
-
-
 
 
 :partner_ref: Partner Ref., char
 
     *The reference of my company for this partner*
-
-.. index::
-  single: partner_ref field
-.. 
-
 
 
 
@@ -6547,20 +3706,10 @@ Object: Partner
 
     *year of the export_procent value*
 
-.. index::
-  single: export_year field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -6569,21 +3718,11 @@ Object: Partner
 
 
 
-.. index::
-  single: debit_limit field
-.. 
-
-
 
 
 :property_delivery_carrier: Delivery Method, many2one
 
     *This delivery method will be used when invoicing from packings.*
-
-.. index::
-  single: property_delivery_carrier field
-.. 
-
 
 
 
@@ -6591,20 +3730,10 @@ Object: Partner
 
     *This account will be used, instead of the default one, as the receivable account for the current partner*
 
-.. index::
-  single: property_account_receivable field
-.. 
-
-
 
 
 :domiciliation_bool: Domiciliation, boolean
 
-
-
-.. index::
-  single: domiciliation_bool field
-.. 
 
 
 
@@ -6613,21 +3742,11 @@ Object: Partner
 
 
 
-.. index::
-  single: article_ids field
-.. 
-
-
 
 
 :dir_exclude: Dir. exclude, boolean
 
     *Exclusion from the Members directory*
-
-.. index::
-  single: dir_exclude field
-.. 
-
 
 
 
@@ -6635,20 +3754,10 @@ Object: Partner
 
     *Partners description to be shown when inserting new sale not treated by _advertising, _events, _legalisations, _Membership*
 
-.. index::
-  single: alert_others field
-.. 
-
-
 
 
 :asker_zip_id: Asker Zip Code, many2one
 
-
-
-.. index::
-  single: asker_zip_id field
-.. 
 
 
 
@@ -6657,20 +3766,10 @@ Object: Partner
 
 
 
-.. index::
-  single: sale_warn_msg field
-.. 
-
-
 
 
 :logo: Logo, binary
 
-
-
-.. index::
-  single: logo field
-.. 
 
 
 
@@ -6679,20 +3778,10 @@ Object: Partner
 
 
 
-.. index::
-  single: name_old field
-.. 
-
-
 
 
 :activity_description: Activity Description, text
 
-
-
-.. index::
-  single: activity_description field
-.. 
 
 
 
@@ -6701,20 +3790,10 @@ Object: Partner
 
     *Partners description to be shown when inserting new subscription to a meeting*
 
-.. index::
-  single: alert_events field
-.. 
-
-
 
 
 :invoice_special: Invoice Special, boolean
 
-
-
-.. index::
-  single: invoice_special field
-.. 
 
 
 
@@ -6723,21 +3802,11 @@ Object: Partner
 
     *status of the partner as a customer*
 
-.. index::
-  single: state_id2 field
-.. 
-
-
 
 
 :debit: Total Payable, float, readonly
 
     *Total amount you have to pay to this supplier.*
-
-.. index::
-  single: debit field
-.. 
-
 
 
 
@@ -6745,20 +3814,10 @@ Object: Partner
 
     *Check this box if the partner is a supplier. If it's not checked, purchase people will not see it when encoding a purchase order.*
 
-.. index::
-  single: supplier field
-.. 
-
-
 
 
 :ref: Acronym, char
 
-
-
-.. index::
-  single: ref field
-.. 
 
 
 
@@ -6767,31 +3826,16 @@ Object: Partner
 
 
 
-.. index::
-  single: picking_warn field
-.. 
-
-
 
 
 :import_year: Import Date, date
 
     *year of the import_procent value*
 
-.. index::
-  single: import_year field
-.. 
-
-
 
 
 :free_member: Free member, boolean
 
-
-
-.. index::
-  single: free_member field
-.. 
 
 
 
@@ -6800,20 +3844,10 @@ Object: Partner
 
     *The price negociated by the partner*
 
-.. index::
-  single: membership_amount field
-.. 
-
-
 
 
 :agent_id: Sale Agent, many2one
 
-
-
-.. index::
-  single: agent_id field
-.. 
 
 
 
@@ -6822,20 +3856,10 @@ Object: Partner
 
 
 
-.. index::
-  single: address field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -6844,21 +3868,11 @@ Object: Partner
 
 
 
-.. index::
-  single: dir_date_publication field
-.. 
-
-
 
 
 :wall_exclusion: Not in Walloon DB, boolean
 
     *exclusion of this partner from the walloon database*
-
-.. index::
-  single: wall_exclusion field
-.. 
-
 
 
 
@@ -6866,20 +3880,10 @@ Object: Partner
 
     *This pricelist will be used, instead of the default one, for purchases from the current partner*
 
-.. index::
-  single: property_product_pricelist_purchase field
-.. 
-
-
 
 
 :country: Country, many2one
 
-
-
-.. index::
-  single: country field
-.. 
 
 
 
@@ -6888,20 +3892,10 @@ Object: Partner
 
     *number of additive invoices to be printed for this customer*
 
-.. index::
-  single: invoice_nbr field
-.. 
-
-
 
 
 :invoice_paper: Bank Transfer Type, selection
 
-
-
-.. index::
-  single: invoice_paper field
-.. 
 
 
 
@@ -6910,31 +3904,16 @@ Object: Partner
 
 
 
-.. index::
-  single: awex_eligible field
-.. 
-
-
 
 
 :credit: Total Receivable, float, readonly
 
     *Total amount this customer owns you.*
 
-.. index::
-  single: credit field
-.. 
-
-
 
 
 :country_relation: Country Relation, one2many
 
-
-
-.. index::
-  single: country_relation field
-.. 
 
 
 
@@ -6943,20 +3922,10 @@ Object: Partner
 
 
 
-.. index::
-  single: signature field
-.. 
-
-
 
 
 :invoice_public: Invoice Public, boolean
 
-
-
-.. index::
-  single: invoice_public field
-.. 
 
 
 
@@ -6965,20 +3934,10 @@ Object: Partner
 
     *Nbr of Employee in the area of the CCI*
 
-.. index::
-  single: employee_nbr field
-.. 
-
-
 
 
 :comment: Notes, text
 
-
-
-.. index::
-  single: comment field
-.. 
 
 
 
@@ -6987,20 +3946,10 @@ Object: Partner
 
 
 
-.. index::
-  single: fleets field
-.. 
-
-
 
 
 :purchase_warn: Purchase Order, boolean
 
-
-
-.. index::
-  single: purchase_warn field
-.. 
 
 
 
@@ -7009,20 +3958,10 @@ Object: Partner
 
 
 
-.. index::
-  single: to_export field
-.. 
-
-
 
 
 :country_ids: Allowed Countries, many2many
 
-
-
-.. index::
-  single: country_ids field
-.. 
 
 
 
@@ -7031,20 +3970,10 @@ Object: Partner
 
 
 
-.. index::
-  single: number field
-.. 
-
-
 
 
 :header: Header (.odt), binary
 
-
-
-.. index::
-  single: header field
-.. 
 
 
 
@@ -7053,20 +3982,10 @@ Object: Partner
 
 
 
-.. index::
-  single: asker_address field
-.. 
-
-
 
 
 :member_lines: Membership, one2many
 
-
-
-.. index::
-  single: member_lines field
-.. 
 
 
 
@@ -7075,31 +3994,16 @@ Object: Partner
 
     *The type of journal used for sales and packings.*
 
-.. index::
-  single: property_invoice_type field
-.. 
-
-
 
 
 :alert_legalisations: Legal. Alert, boolean
 
     *Partners description to be shown when inserting new legalisation*
 
-.. index::
-  single: alert_legalisations field
-.. 
-
-
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -7108,31 +4012,16 @@ Object: Partner
 
     *Date of latest update of the partner data by itself (via paper or Internet)*
 
-.. index::
-  single: dir_date_last field
-.. 
-
-
 
 
 :user_id: Dedicated Salesman, many2one
 
     *The internal user that is in charge of communicating with this partner if any.*
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :sub_fleets: Sub Fleets, one2many
 
-
-
-.. index::
-  single: sub_fleets field
-.. 
 
 
 
@@ -7141,31 +4030,16 @@ Object: Partner
 
 
 
-.. index::
-  single: magazine_subscription field
-.. 
-
-
 
 
 :vat: VAT, char
 
     *Value Added Tax number. Check the box if the partner is subjected to the VAT. Used by the VAT legal statement.*
 
-.. index::
-  single: vat field
-.. 
-
-
 
 
 :website: Website, char
 
-
-
-.. index::
-  single: website field
-.. 
 
 
 
@@ -7174,20 +4048,10 @@ Object: Partner
 
 
 
-.. index::
-  single: picking_warn_msg field
-.. 
-
-
 
 
 :to_update: To update, boolean
 
-
-
-.. index::
-  single: to_update field
-.. 
 
 
 
@@ -7196,20 +4060,10 @@ Object: Partner
 
 
 
-.. index::
-  single: activity_code_ids field
-.. 
-
-
 
 
 :answers_ids: Answers, many2many
 
-
-
-.. index::
-  single: answers_ids field
-.. 
 
 
 
@@ -7218,21 +4072,11 @@ Object: Partner
 
 
 
-.. index::
-  single: alert_explanation field
-.. 
-
-
 
 
 :customer: Customer, boolean
 
     *Check this box if the partner is a customer.*
-
-.. index::
-  single: customer field
-.. 
-
 
 
 
@@ -7240,31 +4084,16 @@ Object: Partner
 
     *Date of foundation of this company*
 
-.. index::
-  single: date_founded field
-.. 
-
-
 
 
 :employee_nbr_total: Nbr of Employee (Tot), integer
 
     *Nbr of Employee all around the world*
 
-.. index::
-  single: employee_nbr_total field
-.. 
-
-
 
 
 :purchase_warn_msg: Message for Purchase Order, text
 
-
-
-.. index::
-  single: purchase_warn_msg field
-.. 
 
 
 
@@ -7273,20 +4102,10 @@ Object: Partner
 
     *Date of last acceptation of Bon a Tirer*
 
-.. index::
-  single: dir_date_accept field
-.. 
-
-
 
 
 :membership_start: Start membership date, date, readonly
 
-
-
-.. index::
-  single: membership_start field
-.. 
 
 
 
@@ -7295,20 +4114,10 @@ Object: Partner
 
 
 
-.. index::
-  single: state_ids field
-.. 
-
-
 
 
 :membership_stop: Stop membership date, date, readonly
 
-
-
-.. index::
-  single: membership_stop field
-.. 
 
 
 
@@ -7317,20 +4126,10 @@ Object: Partner
 
     *status of activity of the partner*
 
-.. index::
-  single: state_id field
-.. 
-
-
 
 
 :discount_campaign: Discount Campaign, many2one
 
-
-
-.. index::
-  single: discount_campaign field
-.. 
 
 
 
@@ -7339,20 +4138,10 @@ Object: Partner
 
 
 
-.. index::
-  single: invoice_warn_msg field
-.. 
-
-
 
 
 :relation_ids: Partner Relation, one2many
 
-
-
-.. index::
-  single: relation_ids field
-.. 
 
 
 
@@ -7361,31 +4150,16 @@ Object: Partner
 
 
 
-.. index::
-  single: domiciliation field
-.. 
-
-
 
 
 :dir_presence: Dir. Presence, boolean
 
     *Present in the directory of the members*
 
-.. index::
-  single: dir_presence field
-.. 
-
-
 
 
 :invoice_warn: Invoice, boolean
 
-
-
-.. index::
-  single: invoice_warn field
-.. 
 
 
 
@@ -7394,20 +4168,10 @@ Object: Partner
 
     *This account will be used, instead of the default one, as the payable account for the current partner*
 
-.. index::
-  single: property_account_payable field
-.. 
-
-
 
 
 :insurer_id: Insurer ID, char
 
-
-
-.. index::
-  single: insurer_id field
-.. 
 
 
 
@@ -7416,31 +4180,16 @@ Object: Partner
 
 
 
-.. index::
-  single: partner_location field
-.. 
-
-
 
 
 :training_authorization: Checks Auth., char
 
     *Formation and Language Checks Authorization number*
 
-.. index::
-  single: training_authorization field
-.. 
-
-
 
 
 :events: Events, one2many
 
-
-
-.. index::
-  single: events field
-.. 
 
 
 
@@ -7449,20 +4198,10 @@ Object: Partner
 
 
 
-.. index::
-  single: refuse_membership field
-.. 
-
-
 
 
 :associate_member: Associate member, many2one
 
-
-
-.. index::
-  single: associate_member field
-.. 
 
 
 
@@ -7471,31 +4210,16 @@ Object: Partner
 
     *First shortcut in the members directory, pointing to the dir_name field*
 
-.. index::
-  single: dir_name2 field
-.. 
-
-
 
 
 :dir_name3: 2nd Shortcut name , char
 
     *Second shortcut*
 
-.. index::
-  single: dir_name3 field
-.. 
-
-
 
 
 :bank_ids: Banks, one2many
 
-
-
-.. index::
-  single: bank_ids field
-.. 
 
 
 
@@ -7504,20 +4228,10 @@ Object: Partner
 
     *Check this box if the partner is subjected to the VAT. It will be used for the VAT legal statement.*
 
-.. index::
-  single: vat_subjected field
-.. 
-
-
 
 
 :export_procent: Export(%), integer
 
-
-
-.. index::
-  single: export_procent field
-.. 
 
 
 
@@ -7526,20 +4240,10 @@ Object: Partner
 
 
 
-.. index::
-  single: property_product_pricelist_customer field
-.. 
-
-
 
 
 :date: Date, date
 
-
-
-.. index::
-  single: date field
-.. 
 
 
 
@@ -7548,31 +4252,16 @@ Object: Partner
 
     *If the selected language is loaded in the system, all documents related to this partner will be printed in this language. If not, it will be english.*
 
-.. index::
-  single: lang field
-.. 
-
-
 
 
 :dir_name: Name in Member Dir., char
 
     *Name under wich the partner will be inserted in the members directory*
 
-.. index::
-  single: dir_name field
-.. 
-
-
 
 
 :membership_state: Current membership state, selection, readonly
 
-
-
-.. index::
-  single: membership_state field
-.. 
 
 
 
@@ -7581,31 +4270,16 @@ Object: Partner
 
 
 
-.. index::
-  single: credit_limit field
-.. 
-
-
 
 
 :payment_type_customer: Payment type, many2one
 
     *Payment type of the customer*
 
-.. index::
-  single: payment_type_customer field
-.. 
-
-
 
 
 :membership_vcs: VCS number for membership offer, char, readonly
 
-
-
-.. index::
-  single: membership_vcs field
-.. 
 
 
 
@@ -7614,21 +4288,11 @@ Object: Partner
 
 
 
-.. index::
-  single: magazine_subscription_source field
-.. 
-
-
 
 
 :property_payment_term: Payment Term, many2one
 
     *This payment term will be used, instead of the default one, for the current partner*
-
-.. index::
-  single: property_payment_term field
-.. 
-
 
 
 
@@ -7636,20 +4300,10 @@ Object: Partner
 
     *Payment type of the supplier*
 
-.. index::
-  single: payment_type_supplier field
-.. 
-
-
 
 
 :category_id: Categories, many2many
 
-
-
-.. index::
-  single: category_id field
-.. 
 
 
 
@@ -7658,27 +4312,14 @@ Object: Partner
 
 
 
-.. index::
-  single: sale_warn field
-.. 
-
-
 
 Object: Partner Addresses
 #########################
 
-.. index::
-  single: Partner Addresses object
-.. 
 
 
 :comment: Notes, text
 
-
-
-.. index::
-  single: comment field
-.. 
 
 
 
@@ -7687,20 +4328,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: dn field
-.. 
-
-
 
 
 :last_name: Last Name, char
 
-
-
-.. index::
-  single: last_name field
-.. 
 
 
 
@@ -7709,20 +4340,10 @@ Object: Partner Addresses
 
     *Photograph of the contact*
 
-.. index::
-  single: photo field
-.. 
-
-
 
 
 :street: Street, char
 
-
-
-.. index::
-  single: street field
-.. 
 
 
 
@@ -7731,20 +4352,10 @@ Object: Partner Addresses
 
     *Keep empty for a private address, not related to partner.*
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :city: City, char, readonly
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -7753,20 +4364,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: first_name field
-.. 
-
-
 
 
 :zip: Zip, char, readonly
 
-
-
-.. index::
-  single: zip field
-.. 
 
 
 
@@ -7775,20 +4376,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: title field
-.. 
-
-
 
 
 :country_id: Country, many2one, readonly
 
-
-
-.. index::
-  single: country_id field
-.. 
 
 
 
@@ -7797,20 +4388,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :location: Location, many2one
 
-
-
-.. index::
-  single: location field
-.. 
 
 
 
@@ -7819,31 +4400,16 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: zip_id field
-.. 
-
-
 
 
 :type: Address Type, selection
 
     *Used to select automatically the right address according to the context in sales and purchases documents.*
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :email: E-Mail, char
 
-
-
-.. index::
-  single: email field
-.. 
 
 
 
@@ -7852,20 +4418,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: function field
-.. 
-
-
 
 
 :fax: Fax, char
 
-
-
-.. index::
-  single: fax field
-.. 
 
 
 
@@ -7874,20 +4430,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: street2 field
-.. 
-
-
 
 
 :phone: Phone, char
 
-
-
-.. index::
-  single: phone field
-.. 
 
 
 
@@ -7896,20 +4442,10 @@ Object: Partner Addresses
 
     *Uncheck the active field to hide the contact.*
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :answers_ids: Answers, many2many
 
-
-
-.. index::
-  single: answers_ids field
-.. 
 
 
 
@@ -7918,31 +4454,16 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: job_ids field
-.. 
-
-
 
 
 :sequence_partner: Sequence (Partner), integer
 
     *order of importance of this address in the list of addresses of the linked partner*
 
-.. index::
-  single: sequence_partner field
-.. 
-
-
 
 
 :name: Name, char, readonly
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -7951,20 +4472,10 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: mobile field
-.. 
-
-
 
 
 :birthdate: Birthdate, char
 
-
-
-.. index::
-  single: birthdate field
-.. 
 
 
 
@@ -7973,38 +4484,20 @@ Object: Partner Addresses
 
 
 
-.. index::
-  single: complete_address field
-.. 
-
-
 
 
 :state_id: State, many2one, readonly
 
 
 
-.. index::
-  single: state_id field
-.. 
-
-
 
 Object: Bank Account Type
 #########################
 
-.. index::
-  single: Bank Account Type object
-.. 
 
 
 :code: Code, char, required
 
-
-
-.. index::
-  single: code field
-.. 
 
 
 
@@ -8013,38 +4506,20 @@ Object: Bank Account Type
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :field_ids: Type fields, one2many
 
 
 
-.. index::
-  single: field_ids field
-.. 
-
-
 
 Object: Bank type fields
 ########################
 
-.. index::
-  single: Bank type fields object
-.. 
 
 
 :size: Max. Size, integer
 
-
-
-.. index::
-  single: size field
-.. 
 
 
 
@@ -8053,20 +4528,10 @@ Object: Bank type fields
 
 
 
-.. index::
-  single: readonly field
-.. 
-
-
 
 
 :required: Required, boolean
 
-
-
-.. index::
-  single: required field
-.. 
 
 
 
@@ -8075,38 +4540,20 @@ Object: Bank type fields
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :bank_type_id: Bank type, many2one, required
 
 
 
-.. index::
-  single: bank_type_id field
-.. 
-
-
 
 Object: Bank Accounts
 #####################
 
-.. index::
-  single: Bank Accounts object
-.. 
 
 
 :city: City, char
 
-
-
-.. index::
-  single: city field
-.. 
 
 
 
@@ -8115,20 +4562,10 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: institution_code field
-.. 
-
-
 
 
 :owner_name: Account owner, char
 
-
-
-.. index::
-  single: owner_name field
-.. 
 
 
 
@@ -8137,20 +4574,10 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :zip: Zip, char
 
-
-
-.. index::
-  single: zip field
-.. 
 
 
 
@@ -8159,20 +4586,10 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: sequence field
-.. 
-
-
 
 
 :default_bank: Default, boolean
 
-
-
-.. index::
-  single: default_bank field
-.. 
 
 
 
@@ -8181,20 +4598,10 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: country_id field
-.. 
-
-
 
 
 :state: Bank type, selection, required
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -8203,21 +4610,11 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: street field
-.. 
-
-
 
 
 :iban: IBAN, char, readonly
 
     *International Bank Account Number*
-
-.. index::
-  single: iban field
-.. 
-
 
 
 
@@ -8225,20 +4622,10 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: state_id field
-.. 
-
-
 
 
 :partner_id: Partner, many2one, required
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -8247,38 +4634,20 @@ Object: Bank Accounts
 
 
 
-.. index::
-  single: bank field
-.. 
-
-
 
 
 :acc_number: Account number, char
 
 
 
-.. index::
-  single: acc_number field
-.. 
-
-
 
 Object: Channels
 ################
 
-.. index::
-  single: Channels object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -8287,27 +4656,14 @@ Object: Channels
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.partner.som
 #######################
 
-.. index::
-  single: res.partner.som object
-.. 
 
 
 :name: State of Mind, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -8316,27 +4672,14 @@ Object: res.partner.som
 
 
 
-.. index::
-  single: factor field
-.. 
-
-
 
 Object: res.partner.event
 #########################
 
-.. index::
-  single: res.partner.event object
-.. 
 
 
 :partner_id: Partner, many2one
 
-
-
-.. index::
-  single: partner_id field
-.. 
 
 
 
@@ -8345,20 +4688,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :name: Events, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -8367,20 +4700,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: probability field
-.. 
-
-
 
 
 :canal_id: Channel, many2one
 
-
-
-.. index::
-  single: canal_id field
-.. 
 
 
 
@@ -8389,20 +4712,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: planned_revenue field
-.. 
-
-
 
 
 :planned_cost: Planned Cost, float
 
-
-
-.. index::
-  single: planned_cost field
-.. 
 
 
 
@@ -8411,20 +4724,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: som field
-.. 
-
-
 
 
 :partner_type: Partner Relation, selection
 
-
-
-.. index::
-  single: partner_type field
-.. 
 
 
 
@@ -8433,20 +4736,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :document: Document, reference
 
-
-
-.. index::
-  single: document field
-.. 
 
 
 
@@ -8455,20 +4748,10 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: type field
-.. 
-
-
 
 
 :event_ical_id: iCal id, char
 
-
-
-.. index::
-  single: event_ical_id field
-.. 
 
 
 
@@ -8477,27 +4760,14 @@ Object: res.partner.event
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: Partner Events
 ######################
 
-.. index::
-  single: Partner Events object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -8506,38 +4776,20 @@ Object: Partner Events
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :key: Key, char, required
 
 
 
-.. index::
-  single: key field
-.. 
-
-
 
 Object: Currency
 ################
 
-.. index::
-  single: Currency object
-.. 
 
 
 :rate_ids: Rates, one2many
 
-
-
-.. index::
-  single: rate_ids field
-.. 
 
 
 
@@ -8546,20 +4798,10 @@ Object: Currency
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Currency, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -8568,20 +4810,10 @@ Object: Currency
 
 
 
-.. index::
-  single: rounding field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -8590,20 +4822,10 @@ Object: Currency
 
     *The rate of the currency to the currency of rate 1*
 
-.. index::
-  single: rate field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -8612,27 +4834,14 @@ Object: Currency
 
 
 
-.. index::
-  single: accuracy field
-.. 
-
-
 
 Object: Currency Rate
 #####################
 
-.. index::
-  single: Currency Rate object
-.. 
 
 
 :currency_id: Currency, many2one, readonly
 
-
-
-.. index::
-  single: currency_id field
-.. 
 
 
 
@@ -8641,38 +4850,20 @@ Object: Currency Rate
 
     *The rate of the currency to the currency of rate 1*
 
-.. index::
-  single: rate field
-.. 
-
-
 
 
 :name: Date, date, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.company
 ###################
 
-.. index::
-  single: res.company object
-.. 
 
 
 :addresses: Email Addresses, one2many
 
-
-
-.. index::
-  single: addresses field
-.. 
 
 
 
@@ -8681,31 +4872,16 @@ Object: res.company
 
     *This is the days added to what you promise to customers for security purpose*
 
-.. index::
-  single: security_lead field
-.. 
-
-
 
 
 :timesheet_max_difference: Timesheet allowed difference, float
 
     *Allowed difference between the sign in/out and the timesheet computation for one sheet. Set this to 0 if you do not want any control.*
 
-.. index::
-  single: timesheet_max_difference field
-.. 
-
-
 
 
 :currency_id: Currency, many2one, required
 
-
-
-.. index::
-  single: currency_id field
-.. 
 
 
 
@@ -8714,20 +4890,10 @@ Object: res.company
 
     *This is the leads/security time for each purchase order.*
 
-.. index::
-  single: po_lead field
-.. 
-
-
 
 
 :logo: Logo, binary
 
-
-
-.. index::
-  single: logo field
-.. 
 
 
 
@@ -8736,20 +4902,10 @@ Object: res.company
 
 
 
-.. index::
-  single: partner_id field
-.. 
-
-
 
 
 :rml_header: RML Header, text
 
-
-
-.. index::
-  single: rml_header field
-.. 
 
 
 
@@ -8758,20 +4914,10 @@ Object: res.company
 
     *Security days for each manufacturing operation.*
 
-.. index::
-  single: manufacturing_lead field
-.. 
-
-
 
 
 :timesheet_range: Timeshet range, selection
 
-
-
-.. index::
-  single: timesheet_range field
-.. 
 
 
 
@@ -8780,20 +4926,10 @@ Object: res.company
 
 
 
-.. index::
-  single: ldaps field
-.. 
-
-
 
 
 :parent_id: Parent Company, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -8802,20 +4938,10 @@ Object: res.company
 
     *ID key for the sending of data to the belgian CCI's Federation*
 
-.. index::
-  single: federation_key field
-.. 
-
-
 
 
 :child_ids: Childs Company, one2many
 
-
-
-.. index::
-  single: child_ids field
-.. 
 
 
 
@@ -8824,20 +4950,10 @@ Object: res.company
 
 
 
-.. index::
-  single: rml_header2 field
-.. 
-
-
 
 
 :rml_header1: Report Header, char
 
-
-
-.. index::
-  single: rml_header1 field
-.. 
 
 
 
@@ -8847,31 +4963,16 @@ Object: res.company
     *This will set the unit of measure used in projects and tasks.
     If you use the timesheet linked to projects (project_timesheet module), don't forget to setup the right unit of measure in your employees.*
 
-.. index::
-  single: project_time_mode field
-.. 
-
-
 
 
 :schedule_range: Scheduler Range, float, required
 
     *This is the time frame analysed by the scheduler when computing procurements. All procurement that are not between today and today+range are skipped for futur computation.*
 
-.. index::
-  single: schedule_range field
-.. 
-
-
 
 
 :rml_footer1: Report Footer 1, char
 
-
-
-.. index::
-  single: rml_footer1 field
-.. 
 
 
 
@@ -8880,20 +4981,10 @@ Object: res.company
 
 
 
-.. index::
-  single: rml_footer2 field
-.. 
-
-
 
 
 :name: Company Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -8902,38 +4993,20 @@ Object: res.company
 
 
 
-.. index::
-  single: currency_ids field
-.. 
-
-
 
 Object: res.groups
 ##################
 
-.. index::
-  single: res.groups object
-.. 
 
 
 :comment: Comment, text
 
 
 
-.. index::
-  single: comment field
-.. 
-
-
 
 
 :users: Users, many2many
 
-
-
-.. index::
-  single: users field
-.. 
 
 
 
@@ -8942,20 +5015,10 @@ Object: res.groups
 
 
 
-.. index::
-  single: rule_groups field
-.. 
-
-
 
 
 :menu_access: Access Menu, many2many
 
-
-
-.. index::
-  single: menu_access field
-.. 
 
 
 
@@ -8964,38 +5027,20 @@ Object: res.groups
 
 
 
-.. index::
-  single: model_access field
-.. 
-
-
 
 
 :name: Group Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.roles
 #################
 
-.. index::
-  single: res.roles object
-.. 
 
 
 :parent_id: Parent, many2one
 
-
-
-.. index::
-  single: parent_id field
-.. 
 
 
 
@@ -9004,20 +5049,10 @@ Object: res.roles
 
 
 
-.. index::
-  single: child_id field
-.. 
-
-
 
 
 :name: Role Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9026,27 +5061,14 @@ Object: res.roles
 
 
 
-.. index::
-  single: users field
-.. 
-
-
 
 Object: res.users
 #################
 
-.. index::
-  single: res.users object
-.. 
 
 
 :menu_id: Menu Action, many2one
 
-
-
-.. index::
-  single: menu_id field
-.. 
 
 
 
@@ -9055,20 +5077,10 @@ Object: res.users
 
 
 
-.. index::
-  single: groups_id field
-.. 
-
-
 
 
 :address_id: Address, many2one
 
-
-
-.. index::
-  single: address_id field
-.. 
 
 
 
@@ -9077,20 +5089,10 @@ Object: res.users
 
 
 
-.. index::
-  single: context_lang field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9099,31 +5101,16 @@ Object: res.users
 
 
 
-.. index::
-  single: input_pw field
-.. 
-
-
 
 
 :roles_id: Roles, many2many
 
 
 
-.. index::
-  single: roles_id field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
-
-
-.. index::
-  single: company_id field
-.. 
 
 
 
@@ -9132,20 +5119,10 @@ Object: res.users
 
 
 
-.. index::
-  single: user_code field
-.. 
-
-
 
 
 :context_tz: Timezone, selection
 
-
-
-.. index::
-  single: context_tz field
-.. 
 
 
 
@@ -9154,20 +5131,10 @@ Object: res.users
 
 
 
-.. index::
-  single: signature field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -9176,31 +5143,16 @@ Object: res.users
 
 
 
-.. index::
-  single: login field
-.. 
-
-
 
 
 :password: Password, char
 
     *Keep empty if you don't want the user to be able to connect on the system.*
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :action_id: Home Action, many2one
 
-
-
-.. index::
-  single: action_id field
-.. 
 
 
 
@@ -9209,27 +5161,14 @@ Object: res.users
 
 
 
-.. index::
-  single: rules_id field
-.. 
-
-
 
 Object: res.config.view
 #######################
 
-.. index::
-  single: res.config.view object
-.. 
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9238,27 +5177,14 @@ Object: res.config.view
 
 
 
-.. index::
-  single: view field
-.. 
-
-
 
 Object: Languages
 #################
 
-.. index::
-  single: Languages object
-.. 
 
 
 :date_format: Date Format, char, required
 
-
-
-.. index::
-  single: date_format field
-.. 
 
 
 
@@ -9267,31 +5193,16 @@ Object: Languages
 
 
 
-.. index::
-  single: direction field
-.. 
-
-
 
 
 :code: Code, char, required
 
 
 
-.. index::
-  single: code field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9300,20 +5211,10 @@ Object: Languages
 
 
 
-.. index::
-  single: thousands_sep field
-.. 
-
-
 
 
 :translatable: Translatable, boolean
 
-
-
-.. index::
-  single: translatable field
-.. 
 
 
 
@@ -9322,31 +5223,16 @@ Object: Languages
 
 
 
-.. index::
-  single: time_format field
-.. 
-
-
 
 
 :decimal_point: Decimal Separator, char, required
 
 
 
-.. index::
-  single: decimal_point field
-.. 
-
-
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -9355,27 +5241,14 @@ Object: Languages
 
     *The Separator Format should be like [,n] where 0 < n :starting from Unit digit.-1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500;[1,2,-1] will represent it to be 106,50,0;[3] will represent it as 106,500. Provided ',' as the thousand separator in each case.*
 
-.. index::
-  single: grouping field
-.. 
-
-
 
 Object: res.request
 ###################
 
-.. index::
-  single: res.request object
-.. 
 
 
 :body: Request, text
 
-
-
-.. index::
-  single: body field
-.. 
 
 
 
@@ -9384,20 +5257,10 @@ Object: res.request
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :name: Subject, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9406,20 +5269,10 @@ Object: res.request
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :priority: Priority, selection, required
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -9428,31 +5281,16 @@ Object: res.request
 
 
 
-.. index::
-  single: ref_doc1 field
-.. 
-
-
 
 
 :ref_doc2: Document Ref 2, reference
 
 
 
-.. index::
-  single: ref_doc2 field
-.. 
-
-
 
 
 :act_from: From, many2one, required, readonly
 
-
-
-.. index::
-  single: act_from field
-.. 
 
 
 
@@ -9461,20 +5299,10 @@ Object: res.request
 
 
 
-.. index::
-  single: ref_partner_id field
-.. 
-
-
 
 
 :date_sent: Date, datetime, readonly
 
-
-
-.. index::
-  single: date_sent field
-.. 
 
 
 
@@ -9483,31 +5311,16 @@ Object: res.request
 
 
 
-.. index::
-  single: trigger_date field
-.. 
-
-
 
 
 :active: Active, boolean
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 
 :act_to: To, many2one, required
 
-
-
-.. index::
-  single: act_to field
-.. 
 
 
 
@@ -9516,27 +5329,14 @@ Object: res.request
 
 
 
-.. index::
-  single: history field
-.. 
-
-
 
 Object: res.request.link
 ########################
 
-.. index::
-  single: res.request.link object
-.. 
 
 
 :priority: Priority, integer
 
-
-
-.. index::
-  single: priority field
-.. 
 
 
 
@@ -9545,38 +5345,20 @@ Object: res.request.link
 
 
 
-.. index::
-  single: object field
-.. 
-
-
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: res.request.history
 ###########################
 
-.. index::
-  single: res.request.history object
-.. 
 
 
 :body: Body, text
 
-
-
-.. index::
-  single: body field
-.. 
 
 
 
@@ -9585,20 +5367,10 @@ Object: res.request.history
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :act_from: From, many2one, required, readonly
 
-
-
-.. index::
-  single: act_from field
-.. 
 
 
 
@@ -9607,20 +5379,10 @@ Object: res.request.history
 
 
 
-.. index::
-  single: req_id field
-.. 
-
-
 
 
 :date_sent: Date sent, datetime, required
 
-
-
-.. index::
-  single: date_sent field
-.. 
 
 
 
@@ -9629,27 +5391,14 @@ Object: res.request.history
 
 
 
-.. index::
-  single: act_to field
-.. 
-
-
 
 Object: ir.property
 ###################
 
-.. index::
-  single: ir.property object
-.. 
 
 
 :fields_id: Fields, many2one, required
 
-
-
-.. index::
-  single: fields_id field
-.. 
 
 
 
@@ -9658,20 +5407,10 @@ Object: ir.property
 
 
 
-.. index::
-  single: res_id field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -9680,38 +5419,20 @@ Object: ir.property
 
 
 
-.. index::
-  single: value field
-.. 
-
-
 
 
 :company_id: Company, many2one
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 Object: maintenance contract modules
 ####################################
 
-.. index::
-  single: maintenance contract modules object
-.. 
 
 
 :version: Version, char
 
-
-
-.. index::
-  single: version field
-.. 
 
 
 
@@ -9720,27 +5441,14 @@ Object: maintenance contract modules
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: Maintenance Contract
 ############################
 
-.. index::
-  single: Maintenance Contract object
-.. 
 
 
 :date_stop: Ending Date, date, readonly
 
-
-
-.. index::
-  single: date_stop field
-.. 
 
 
 
@@ -9749,20 +5457,10 @@ Object: Maintenance Contract
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :module_ids: Covered Modules, many2many, readonly
 
-
-
-.. index::
-  single: module_ids field
-.. 
 
 
 
@@ -9771,20 +5469,10 @@ Object: Maintenance Contract
 
 
 
-.. index::
-  single: date_start field
-.. 
-
-
 
 
 :kind: Kind, selection, required, readonly
 
-
-
-.. index::
-  single: kind field
-.. 
 
 
 
@@ -9793,38 +5481,20 @@ Object: Maintenance Contract
 
 
 
-.. index::
-  single: state field
-.. 
-
-
 
 
 :password: Password, char, required, readonly
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 Object: maintenance.contract.wizard
 ###################################
 
-.. index::
-  single: maintenance.contract.wizard object
-.. 
 
 
 :state: States, selection
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -9833,18 +5503,8 @@ Object: maintenance.contract.wizard
 
 
 
-.. index::
-  single: password field
-.. 
-
-
 
 
 :name: Contract ID, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 

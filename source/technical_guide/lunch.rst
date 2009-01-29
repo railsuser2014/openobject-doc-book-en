@@ -61,36 +61,20 @@ Objects
 Object: Category
 ################
 
-.. index::
-  single: Category object
-.. 
 
 
 :name: Name, char, required
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: lunch.product
 #####################
 
-.. index::
-  single: lunch.product object
-.. 
 
 
 :active: Active, boolean
 
-
-
-.. index::
-  single: active field
-.. 
 
 
 
@@ -99,31 +83,16 @@ Object: lunch.product
 
 
 
-.. index::
-  single: price field
-.. 
-
-
 
 
 :category_id: Category, selection
 
 
 
-.. index::
-  single: category_id field
-.. 
-
-
 
 
 :name: Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -132,27 +101,14 @@ Object: lunch.product
 
 
 
-.. index::
-  single: description field
-.. 
-
-
 
 Object: lunch.cashbox
 #####################
 
-.. index::
-  single: lunch.cashbox object
-.. 
 
 
 :manager: Manager, many2one
 
-
-
-.. index::
-  single: manager field
-.. 
 
 
 
@@ -161,38 +117,20 @@ Object: lunch.cashbox
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 
 :sum_remain: Remained Total, float, readonly
 
 
 
-.. index::
-  single: sum_remain field
-.. 
-
-
 
 Object: lunch.cashmove
 ######################
 
-.. index::
-  single: lunch.cashmove object
-.. 
 
 
 :box: Box Name, many2one, required
 
-
-
-.. index::
-  single: box field
-.. 
 
 
 
@@ -201,20 +139,10 @@ Object: lunch.cashmove
 
 
 
-.. index::
-  single: create_date field
-.. 
-
-
 
 
 :name: Name, char
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -223,20 +151,10 @@ Object: lunch.cashmove
 
 
 
-.. index::
-  single: user_cashmove field
-.. 
-
-
 
 
 :amount: Amount, float
 
-
-
-.. index::
-  single: amount field
-.. 
 
 
 
@@ -245,27 +163,14 @@ Object: lunch.cashmove
 
 
 
-.. index::
-  single: active field
-.. 
-
-
 
 Object: lunch.order
 ###################
 
-.. index::
-  single: lunch.order object
-.. 
 
 
 :product: Product, many2one, required, readonly
 
-
-
-.. index::
-  single: product field
-.. 
 
 
 
@@ -274,20 +179,10 @@ Object: lunch.order
 
 
 
-.. index::
-  single: user_id field
-.. 
-
-
 
 
 :price: Price, float, readonly
 
-
-
-.. index::
-  single: price field
-.. 
 
 
 
@@ -296,20 +191,10 @@ Object: lunch.order
 
 
 
-.. index::
-  single: descript field
-.. 
-
-
 
 
 :state: State, selection, readonly
 
-
-
-.. index::
-  single: state field
-.. 
 
 
 
@@ -318,38 +203,20 @@ Object: lunch.order
 
 
 
-.. index::
-  single: date field
-.. 
-
-
 
 
 :cashmove: CashMove, many2one, readonly
 
 
 
-.. index::
-  single: cashmove field
-.. 
-
-
 
 Object: Amount available by user and box
 ########################################
 
-.. index::
-  single: Amount available by user and box object
-.. 
 
 
 :box: Box Name, many2one, readonly
 
-
-
-.. index::
-  single: box field
-.. 
 
 
 
@@ -358,18 +225,8 @@ Object: Amount available by user and box
 
 
 
-.. index::
-  single: amount field
-.. 
-
-
 
 
 :user_id: User Name, many2one, readonly
 
-
-
-.. index::
-  single: user_id field
-.. 
 

@@ -57,18 +57,10 @@ Objects
 Object: Portal
 ##############
 
-.. index::
-  single: Portal object
-.. 
 
 
 :menu_id: Main Menu, many2one, required
 
-
-
-.. index::
-  single: menu_id field
-.. 
 
 
 
@@ -77,20 +69,10 @@ Object: Portal
 
     *Default main menu for the users of the portal. This field is auto-completed at creation.*
 
-.. index::
-  single: menu_action_id field
-.. 
-
-
 
 
 :name: Portal Name, char, required
 
-
-
-.. index::
-  single: name field
-.. 
 
 
 
@@ -99,21 +81,11 @@ Object: Portal
 
 
 
-.. index::
-  single: company_id field
-.. 
-
-
 
 
 :home_action_id: User Home Action, many2one
 
     *Complete this field to provide a Home menu different from the Main menu.*
-
-.. index::
-  single: home_action_id field
-.. 
-
 
 
 
@@ -121,27 +93,14 @@ Object: Portal
 
 
 
-.. index::
-  single: group_id field
-.. 
-
-
 
 Object: Portal Model
 ####################
 
-.. index::
-  single: Portal Model object
-.. 
 
 
 :model_id: Model, many2one, required
 
-
-
-.. index::
-  single: model_id field
-.. 
 
 
 
@@ -150,20 +109,10 @@ Object: Portal Model
 
 
 
-.. index::
-  single: rule_group_id field
-.. 
-
-
 
 
 :view_ids: Views, many2many
 
-
-
-.. index::
-  single: view_ids field
-.. 
 
 
 
@@ -172,27 +121,14 @@ Object: Portal Model
 
 
 
-.. index::
-  single: name field
-.. 
-
-
 
 Object: portal.config.install_modules_wizard
 ############################################
 
-.. index::
-  single: portal.config.install_modules_wizard object
-.. 
 
 
 :portal_service: Portal for Service Module, boolean
 
-
-
-.. index::
-  single: portal_service field
-.. 
 
 
 
@@ -201,29 +137,14 @@ Object: portal.config.install_modules_wizard
 
 
 
-.. index::
-  single: portal_sale field
-.. 
-
-
 
 
 :portal_account: Portal for Account Module, boolean
 
 
 
-.. index::
-  single: portal_account field
-.. 
-
-
 
 
 :portal_analytic: Portal for Analytic Account Module, boolean
 
-
-
-.. index::
-  single: portal_analytic field
-.. 
 
