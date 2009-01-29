@@ -11,4 +11,5 @@ Installation
     linux/server/index
     windows/client/index
     windows/server/index
+    postgresql
 
