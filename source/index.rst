@@ -29,9 +29,11 @@ Open Object Documentation
   <br/>
   <div class="tip">
   You will find in these pages a new integrated approach to enterprise management
-  and best development practices. The books provided here have been best-sellers
+  and best development practices. These books have been best-sellers
   on Amazon for several months. You may also have a look at our <a href="">printed
-  books</a> and <a href="">translations</a>.
+  books</a>. The content is <a
+  href="/documentation_license.html#doc-license-link">licenced</a> by Open
+  Object press.
   </div>
   <br/>
   <br/>
@@ -41,21 +43,21 @@ Open Object Documentation
 
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
-  |  :ref:`Open ERP Book <books-link>`                           |  :ref:`Open ERP Features <features-link>`        |
+  |  :ref:`Open ERP Book <books-link>`                           |  :ref:`Developer Book <book-develop-link>`       |
   |                                                              |                                                  |
-  |  A best-seller book about enterprise management              |  A summary of main Open ERP features             |
-  |                                                              |                                                  |
-  +--------------------------------------------------------------+--------------------------------------------------+
-  |                                                              |                                                  |
-  |  :ref:`Installation Manuals <installation-link>`             |  :ref:`Developer Book <book-develop-link>`       |
-  |                                                              |                                                  |
-  |  Manuals to install Open ERP and Open Object                 |  Develop your own modules on Open Object         |
+  |  A best-seller book about enterprise management              |  Develop your own modules on Open Object         |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
-  |  :ref:`Business Intelligence <book-bi-link>`                 |  :ref:`Community Book <how-to-contribute-link>`  |
+  |  :ref:`Installation Manuals <installation-link>`             |  :ref:`Community Book <how-to-contribute-link>`  |
   |                                                              |                                                  |
-  |  Business Intelligence with Open Object                      |  The Open Object community organisation          |
+  |  Manuals to install Open ERP and Open Object                 |  The Open Object community organisation          |
+  |                                                              |                                                  |
+  +--------------------------------------------------------------+--------------------------------------------------+
+  |                                                              |                                                  |
+  |  :ref:`Business Intelligence <book-bi-link>`                 |  :ref:`Open ERP Features <features-link>`        |
+  |                                                              |                                                  |
+  |  Business Intelligence with Open Object                      |  A summary of main Open ERP features             |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
