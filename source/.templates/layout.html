@@ -30,12 +30,12 @@
         <tr>
           <td width="202">
             <a alt="Open Object - Free Management Solution Logo" href="http://openobject.com">
-              <img border="0" src="http://test.openobject.com/templates/openerp/pict/openobject.jpg"/>
+              <img border="0" src="{{ pathto('_static/openobject.jpg', 1) }}"/>
             </a>
           </td>
           <td width="335">
             <div align="right">
-              <img src="http://test.openobject.com/templates/openerp/pict/picture.jpg" width="242" height="68" />
+              <img src="{{ pathto('_static/picture.jpg', 1) }}" width="242" height="68" />
             </div>
           </td>
           <td width="440" valign="top" align="right">
@@ -53,19 +53,20 @@
                 <td width="139" height="37" class="redline">
                   <div class="headerlink" align="center"><a href="http://openobject.com"><strong>OpenObject</strong></a></div>
                 </td>
-                <td width="16" height="37" ><img src="http://test.openobject.com/templates/openerp/images/curve.gif"/></td>
+                <td width="16" height="37"><img src="{{ pathto('_static/curve.gif', 1) }}"/></td>
               </tr>
             </table>
+            <p class="fortune">Best sellers book on enterprise management</p>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
   <div class="openobject-navbar">
-    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu_header">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
       <tr>
-        <td width="230" id="menu_header_menu" nowrap="nowrap">&nbsp;</td>
-        <td nowrap="nowrap">
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
           {{ relbar_tiny() }}
         </td>
       </tr>
@@ -78,10 +79,8 @@
 {% block rootrellink %}
 {% endblock %}
 
-<!--
-  {%- set shorttitle = 'OpenObject Documentation' %}
-  {{ super() }}
+{#
   vi: ft=htmljinja
--->
+#}
 
 </center>

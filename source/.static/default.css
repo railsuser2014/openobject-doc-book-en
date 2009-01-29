@@ -62,6 +62,12 @@ p {
   font-size: 90%;
 }
 
+p.fortune {
+  font-weight: bold;
+  color: #666666;
+  font-style: italic;
+}
+
 div.body li.toctree-l1 {
   line-height: 100%;
 }
@@ -117,12 +123,24 @@ div.headerlink a:link {
   text-decoration:none;
 }
 
-#menu_header_menu {
+td#menu-header {
   background: transparent url(mainmenu_button.png) repeat-x scroll 0 0;
   font-weight: bold;
   padding: 0px;
   text-align: center;
+  height: 29px;
 }
+
+td#menu-breadcrumb {
+  padding: 0px;
+  /*border: 2px solid red;*/
+  height: 29px;
+}
+
+td#menu-breadcrumb div {
+  font-size: 80%;
+}
+
 
 /* :::: LAYOUT :::: */
 
