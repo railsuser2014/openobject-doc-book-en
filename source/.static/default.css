@@ -178,7 +178,6 @@ div.sphinxsidebar {
   width: 230px;
   margin-left: -100%;
   font-size: 90%;
-  /*border-right: 1px solid #CCCCCC;*/
 }
 
 div.clearer {
@@ -242,6 +241,9 @@ div.related-tiny li.right {
 div.related-tiny li.right a {
     color: black;
     background-color: white;
+    color: #902D2D;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 /* ::: TOC :::: */
