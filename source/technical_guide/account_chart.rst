@@ -11,6 +11,7 @@ Charts of Accounts (*account_chart*)
 :Version: 5.0.1.1
 :Directory: account_chart
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

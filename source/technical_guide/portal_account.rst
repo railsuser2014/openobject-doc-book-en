@@ -11,6 +11,7 @@ Portal Management - Account (*portal_account*)
 :Version: 5.0.0.1
 :Directory: portal_account
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

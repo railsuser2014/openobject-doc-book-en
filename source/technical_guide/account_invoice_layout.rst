@@ -11,6 +11,7 @@ account_invoice_layout (*account_invoice_layout*)
 :Version: 5.0.1.0
 :Directory: account_invoice_layout
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

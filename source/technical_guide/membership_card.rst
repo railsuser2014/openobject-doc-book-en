@@ -11,6 +11,7 @@ Membership card (*membership_card*)
 :Version: 5.0.1.0
 :Directory: membership_card
 :Web: http://www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------

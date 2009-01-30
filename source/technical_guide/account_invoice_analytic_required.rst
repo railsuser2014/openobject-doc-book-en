@@ -11,6 +11,7 @@ Account invoice analytic required (*account_invoice_analytic_required*)
 :Version: 5.0.1.0
 :Directory: account_invoice_analytic_required
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------

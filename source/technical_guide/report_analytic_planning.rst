@@ -11,6 +11,7 @@ Analytic planning - Reporting (*report_analytic_planning*)
 :Version: 5.0.1.0
 :Directory: report_analytic_planning
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

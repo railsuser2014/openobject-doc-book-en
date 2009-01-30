@@ -11,6 +11,7 @@ France - Plan Comptable Général (*l10n_fr_pcg*)
 :Version: 5.0.1.0
 :Directory: l10n_fr_pcg
 :Web: http://www.crysalead.com
+:Is certified: no
 
 Description
 -----------

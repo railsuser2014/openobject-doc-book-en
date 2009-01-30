@@ -11,6 +11,7 @@ Denmark Chart of Accounts (*l10n_chart_da*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_da
 :Web: 
+:Is certified: no
 
 Description
 -----------

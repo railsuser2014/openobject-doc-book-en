@@ -11,6 +11,7 @@ AMPCO profile (*profile_ampco*)
 :Version: False
 :Directory: profile_ampco
 :Web: 
+:Is certified: no
 
 Description
 -----------

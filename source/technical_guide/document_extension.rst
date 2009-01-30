@@ -11,6 +11,7 @@ Extension Module of Document Management System (*document_extension*)
 :Version: 5.0.1.0
 :Directory: document_extension
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

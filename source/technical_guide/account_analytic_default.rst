@@ -11,6 +11,7 @@ Account Analytic Default (*account_analytic_default*)
 :Version: 5.0.1.0
 :Directory: account_analytic_default
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

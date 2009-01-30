@@ -11,6 +11,7 @@ Travel (*travel*)
 :Version: 5.0.1.0
 :Directory: travel
 :Web: 
+:Is certified: no
 
 Description
 -----------

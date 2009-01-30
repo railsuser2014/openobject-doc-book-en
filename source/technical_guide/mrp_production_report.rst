@@ -11,6 +11,7 @@ Production Report (*mrp_production_report*)
 :Version: 5.0.1.0
 :Directory: mrp_production_report
 :Web: 
+:Is certified: no
 
 Description
 -----------

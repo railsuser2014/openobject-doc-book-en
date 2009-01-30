@@ -11,6 +11,7 @@ Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
 :Version: 5.0.1.0
 :Directory: l10n_lu
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------

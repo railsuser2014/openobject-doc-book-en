@@ -11,6 +11,7 @@ Test New Features (*test_44*)
 :Version: 5.0.1.0
 :Directory: test_44
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

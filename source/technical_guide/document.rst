@@ -11,6 +11,7 @@ Integrated Document Management System (*document*)
 :Version: 5.0.1.0
 :Directory: document
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

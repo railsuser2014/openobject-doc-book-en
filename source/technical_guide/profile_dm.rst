@@ -11,6 +11,7 @@ Direct Marketing profile (*profile_dm*)
 :Version: False
 :Directory: profile_dm
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Human Resources: Holidays management (*hr_holidays*)
 :Version: 5.0.1.1
 :Directory: hr_holidays
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Product listprice upgrade (*product_listprice_upgrade*)
 :Version: 5.0.1.0
 :Directory: product_listprice_upgrade
 :Web: 
+:Is certified: no
 
 Description
 -----------

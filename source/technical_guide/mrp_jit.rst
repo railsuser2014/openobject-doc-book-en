@@ -11,6 +11,7 @@ MRP JIT (*mrp_jit*)
 :Version: 5.0.1.0
 :Directory: mrp_jit
 :Web: 
+:Is certified: yes
 
 Description
 -----------

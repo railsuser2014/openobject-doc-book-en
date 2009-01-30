@@ -11,6 +11,7 @@ Sale Expected Invoice Date (*sale_expected_invoice_date*)
 :Version: 5.0.0.1
 :Directory: sale_expected_invoice_date
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

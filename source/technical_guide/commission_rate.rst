@@ -11,6 +11,7 @@ Sale Agent Information (*commission_rate*)
 :Version: 5.0.0.1
 :Directory: commission_rate
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Human Resources (*hr*)
 :Version: 5.0.1.1
 :Directory: hr
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

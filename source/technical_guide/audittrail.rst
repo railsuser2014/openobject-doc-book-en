@@ -11,6 +11,7 @@ Audit Trail (*audittrail*)
 :Version: 5.0.1.0
 :Directory: audittrail
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

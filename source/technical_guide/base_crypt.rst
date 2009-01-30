@@ -11,6 +11,7 @@ Base (*base_crypt*)
 :Version: 5.0.1.0
 :Directory: base_crypt
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

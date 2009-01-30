@@ -11,6 +11,7 @@ Profile Chamber of Commerce (*profile_cci*)
 :Version: False
 :Directory: profile_cci
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Account CODA Version 2.1 D (*account_coda_2_1_d*)
 :Version: 5.0.1.0.1
 :Directory: account_coda_2_1_d
 :Web: 
+:Is certified: no
 
 Description
 -----------

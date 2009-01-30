@@ -11,6 +11,7 @@ Hotel Housekeeping (*hotel_housekeeping*)
 :Version: 5.0.1.0
 :Directory: hotel_housekeeping
 :Web: 
+:Is certified: no
 
 Description
 -----------

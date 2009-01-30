@@ -11,6 +11,7 @@ EZ Publish eCommerce Interface (*esale_ez*)
 :Version: False
 :Directory: esale_ez
 :Web: http://tinyerp.com/demo02_6.html
+:Is certified: no
 
 Description
 -----------

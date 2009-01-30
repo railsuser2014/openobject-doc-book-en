@@ -11,6 +11,7 @@ CCI Country (*cci_country*)
 :Version: 5.0.1.0
 :Directory: cci_country
 :Web: http://www.ccilv.be
+:Is certified: no
 
 Description
 -----------

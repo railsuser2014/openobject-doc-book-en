@@ -11,6 +11,7 @@ Project Management - MRP and Sale Integration (*project_mrp*)
 :Version: 5.0.1.0
 :Directory: project_mrp
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

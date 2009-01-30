@@ -11,6 +11,7 @@ Base (*maintenance_editor*)
 :Version: 5.0.1.0
 :Directory: maintenance_editor
 :Web: 
+:Is certified: no
 
 Description
 -----------

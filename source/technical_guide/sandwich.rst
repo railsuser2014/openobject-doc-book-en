@@ -11,6 +11,7 @@ Sandwich Module (*sandwich*)
 :Version: 5.0.1.0
 :Directory: sandwich
 :Web: 
+:Is certified: no
 
 Description
 -----------

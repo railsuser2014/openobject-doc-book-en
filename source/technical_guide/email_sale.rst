@@ -11,6 +11,7 @@ Email Sale order (*email_sale*)
 :Version: 5.0.1.0
 :Directory: email_sale
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------

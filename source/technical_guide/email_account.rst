@@ -11,6 +11,7 @@ Email Invoice (*email_account*)
 :Version: 5.0.1.0
 :Directory: email_account
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------

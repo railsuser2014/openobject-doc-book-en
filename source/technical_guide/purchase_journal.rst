@@ -11,6 +11,7 @@ Managing sales and deliveries by journal (*purchase_journal*)
 :Version: 5.0.1.0
 :Directory: purchase_journal
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

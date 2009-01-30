@@ -11,6 +11,7 @@ Event - Project (*event_project*)
 :Version: 5.0.0.1
 :Directory: event_project
 :Web: 
+:Is certified: yes
 
 Description
 -----------

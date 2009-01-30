@@ -11,6 +11,7 @@ sale_layout (*sale_layout*)
 :Version: 5.0.1.0
 :Directory: sale_layout
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

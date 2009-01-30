@@ -11,6 +11,7 @@ Bookstore Verticalisation (*bookstore*)
 :Version: 5.0.1.0
 :Directory: bookstore
 :Web: 
+:Is certified: no
 
 Description
 -----------

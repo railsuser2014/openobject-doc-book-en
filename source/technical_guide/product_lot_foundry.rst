@@ -11,6 +11,7 @@ Products Lot Foundry (*product_lot_foundry*)
 :Version: 5.0.1.0
 :Directory: product_lot_foundry
 :Web: 
+:Is certified: no
 
 Description
 -----------

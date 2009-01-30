@@ -11,6 +11,7 @@ Switzerland - VAT Forfait (*l10n_ch_vat_forfait*)
 :Version: False
 :Directory: l10n_ch_vat_forfait
 :Web: 
+:Is certified: no
 
 Description
 -----------

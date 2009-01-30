@@ -11,6 +11,7 @@ Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
 :Version: 5.0.1.1
 :Directory: l10n_be
 :Web: 
+:Is certified: yes
 
 Description
 -----------

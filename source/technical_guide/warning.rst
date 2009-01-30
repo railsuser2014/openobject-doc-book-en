@@ -11,6 +11,7 @@ Module for Warnings form onchange Event (*warning*)
 :Version: 5.0.1.0
 :Directory: warning
 :Web: 
+:Is certified: yes
 
 Description
 -----------

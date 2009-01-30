@@ -11,6 +11,7 @@ Customer Relationship Management (*crm_configuration*)
 :Version: 5.0.1.0
 :Directory: crm_configuration
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

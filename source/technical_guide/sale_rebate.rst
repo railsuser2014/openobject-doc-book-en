@@ -11,6 +11,7 @@ Sales Management extented with rebates (*sale_rebate*)
 :Version: False
 :Directory: sale_rebate
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

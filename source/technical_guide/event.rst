@@ -11,6 +11,7 @@ Event (*event*)
 :Version: 5.0.0.1
 :Directory: event
 :Web: 
+:Is certified: yes
 
 Description
 -----------

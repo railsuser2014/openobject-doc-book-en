@@ -11,6 +11,7 @@ Product Catalog (*product_catalog_report*)
 :Version: 5.0.1.0
 :Directory: product_catalog_report
 :Web: 
+:Is certified: no
 
 Description
 -----------

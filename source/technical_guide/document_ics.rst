@@ -11,6 +11,7 @@ Support for iCal based on Document Management System (*document_ics*)
 :Version: 5.0.1.0
 :Directory: document_ics
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Analytic User Function (*analytic_user_function*)
 :Version: 5.0.1.0
 :Directory: analytic_user_function
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

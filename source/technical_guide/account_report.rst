@@ -11,6 +11,7 @@ Reporting for accounting (*account_report*)
 :Version: 5.0.1.0
 :Directory: account_report
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

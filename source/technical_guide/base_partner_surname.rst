@@ -11,6 +11,7 @@ Base Partner Surname (*base_partner_surname*)
 :Version: 5.0.1.0
 :Directory: base_partner_surname
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Portal Management (*portal*)
 :Version: 5.0.0.1
 :Directory: portal
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

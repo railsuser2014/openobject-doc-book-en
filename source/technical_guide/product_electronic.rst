@@ -11,6 +11,7 @@ Products Attributes & Manufacturers (*product_electronic*)
 :Version: 5.0.1.0
 :Directory: product_electronic
 :Web: 
+:Is certified: no
 
 Description
 -----------

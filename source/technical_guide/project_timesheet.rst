@@ -11,6 +11,7 @@ Project Timesheet (*project_timesheet*)
 :Version: 5.0.1.0
 :Directory: project_timesheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Discount on Marketing Campaigns (*discount_campaign*)
 :Version: 5.0.1.0
 :Directory: discount_campaign
 :Web: http://tinyerp.com/module_crm_marketing.html
+:Is certified: no
 
 Description
 -----------

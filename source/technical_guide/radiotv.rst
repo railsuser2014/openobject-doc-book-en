@@ -11,6 +11,7 @@ Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 :Version: 5.0.1.1
 :Directory: radiotv
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------

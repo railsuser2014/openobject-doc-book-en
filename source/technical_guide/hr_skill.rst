@@ -11,6 +11,7 @@ Skill Management (*hr_skill*)
 :Version: 5.0.0.1
 :Directory: hr_skill
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

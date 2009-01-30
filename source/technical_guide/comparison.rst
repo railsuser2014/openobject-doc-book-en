@@ -11,6 +11,7 @@ ERP Comparisons (*comparison*)
 :Version: 5.0.0.1
 :Directory: comparison
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

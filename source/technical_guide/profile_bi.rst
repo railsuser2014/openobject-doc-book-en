@@ -11,6 +11,7 @@ Business Intelligence profile (*profile_bi*)
 :Version: False
 :Directory: profile_bi
 :Web: 
+:Is certified: no
 
 Description
 -----------

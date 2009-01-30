@@ -11,6 +11,7 @@ Indian Account Reporting - Reporting (*account_indian_report*)
 :Version: 5.0.1.0
 :Directory: account_indian_report
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

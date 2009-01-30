@@ -11,6 +11,7 @@ Project Management (*project*)
 :Version: 5.0.1.1
 :Directory: project
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

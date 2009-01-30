@@ -11,6 +11,7 @@ Sale agent Information (*commission_pricelist*)
 :Version: False
 :Directory: commission_pricelist
 :Web: 
+:Is certified: no
 
 Description
 -----------

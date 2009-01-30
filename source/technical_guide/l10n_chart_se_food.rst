@@ -11,6 +11,7 @@ Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_se_food
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Intrastat Reporting - Reporting (*report_intrastat*)
 :Version: 5.0.1.0
 :Directory: report_intrastat
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

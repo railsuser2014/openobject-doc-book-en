@@ -11,6 +11,7 @@ Manufacturing industry profile (*profile_manufacturing*)
 :Version: False
 :Directory: profile_manufacturing
 :Web: 
+:Is certified: yes
 
 Description
 -----------

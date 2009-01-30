@@ -11,6 +11,7 @@ Currency Rates (*currency_rate*)
 :Version: 5.0.1.0
 :Directory: currency_rate
 :Web: http://www.axelor.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ CCI Base Contact (*cci_base_contact*)
 :Version: 5.0.1.0
 :Directory: cci_base_contact
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Analytic lines - Reporting (*report_analytic_line*)
 :Version: 5.0.1.0
 :Directory: report_analytic_line
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

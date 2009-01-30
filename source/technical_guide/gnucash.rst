@@ -11,6 +11,7 @@ gnucash (*gnucash*)
 :Version: 5.0.0.1
 :Directory: gnucash
 :Web: 
+:Is certified: no
 
 Description
 -----------

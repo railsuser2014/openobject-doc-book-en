@@ -11,6 +11,7 @@ Attendances Of Employees (*hr_attendance*)
 :Version: 5.0.1.1
 :Directory: hr_attendance
 :Web: 
+:Is certified: yes
 
 Description
 -----------

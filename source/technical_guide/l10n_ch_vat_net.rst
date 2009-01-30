@@ -11,6 +11,7 @@ Switzerland - VAT Net (*l10n_ch_vat_net*)
 :Version: False
 :Directory: l10n_ch_vat_net
 :Web: 
+:Is certified: no
 
 Description
 -----------

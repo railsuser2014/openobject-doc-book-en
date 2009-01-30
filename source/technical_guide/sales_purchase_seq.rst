@@ -11,6 +11,7 @@ Sales Purchase Sequence Management (*sales_purchase_seq*)
 :Version: 5.0.1.0
 :Directory: sales_purchase_seq
 :Web: http://tinyerp.com/module_sale.html
+:Is certified: no
 
 Description
 -----------

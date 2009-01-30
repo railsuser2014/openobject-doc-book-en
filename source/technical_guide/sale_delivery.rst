@@ -11,6 +11,7 @@ Sale Delivery Planning (*sale_delivery*)
 :Version: 5.0.1.0
 :Directory: sale_delivery
 :Web: 
+:Is certified: no
 
 Description
 -----------

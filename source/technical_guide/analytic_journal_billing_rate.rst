@@ -11,6 +11,7 @@ Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 :Version: 5.0.1.0
 :Directory: analytic_journal_billing_rate
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

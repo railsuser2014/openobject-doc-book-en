@@ -11,6 +11,7 @@ Membership (*membership*)
 :Version: 5.0.0.1
 :Directory: membership
 :Web: 
+:Is certified: yes
 
 Description
 -----------

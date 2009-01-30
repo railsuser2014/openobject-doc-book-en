@@ -11,6 +11,7 @@ Account Regularizations (*account_regularization*)
 :Version: 5.0.1.0
 :Directory: account_regularization
 :Web: 
+:Is certified: no
 
 Description
 -----------

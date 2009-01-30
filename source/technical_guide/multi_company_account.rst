@@ -11,6 +11,7 @@ Multi company for accounting module (*multi_company_account*)
 :Version: 5.0.0.1
 :Directory: multi_company_account
 :Web: 
+:Is certified: no
 
 Description
 -----------

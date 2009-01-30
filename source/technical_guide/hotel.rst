@@ -11,6 +11,7 @@ Hotel Management (*hotel*)
 :Version: 5.0.1.0
 :Directory: hotel
 :Web: 
+:Is certified: no
 
 Description
 -----------

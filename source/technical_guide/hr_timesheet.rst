@@ -11,6 +11,7 @@ Human Resources (Timesheet encoding) (*hr_timesheet*)
 :Version: 5.0.1.0
 :Directory: hr_timesheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

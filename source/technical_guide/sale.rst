@@ -11,6 +11,7 @@ Sales Management (*sale*)
 :Version: 5.0.1.0
 :Directory: sale
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

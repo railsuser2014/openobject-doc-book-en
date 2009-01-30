@@ -11,6 +11,7 @@ Stock Location Paths (*stock_location*)
 :Version: 5.0.1.0
 :Directory: stock_location
 :Web: 
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Confirm all selected purchase order at once (*purchase_confirm*)
 :Version: 5.0.1.0
 :Directory: purchase_confirm
 :Web: 
+:Is certified: no
 
 Description
 -----------

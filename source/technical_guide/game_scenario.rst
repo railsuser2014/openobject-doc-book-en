@@ -11,6 +11,7 @@ Scenario of games (*game_scenario*)
 :Version: 5.0.1.0
 :Directory: game_scenario
 :Web: 
+:Is certified: no
 
 Description
 -----------

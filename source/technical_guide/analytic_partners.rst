@@ -11,6 +11,7 @@ Analytic accounts with multiple partners (*analytic_partners*)
 :Version: 5.0.1.0
 :Directory: analytic_partners
 :Web: 
+:Is certified: no
 
 Description
 -----------

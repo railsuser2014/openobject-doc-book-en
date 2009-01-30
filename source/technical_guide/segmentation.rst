@@ -11,6 +11,7 @@ segmentation management (*segmentation*)
 :Version: False
 :Directory: segmentation
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

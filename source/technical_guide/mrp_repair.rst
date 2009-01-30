@@ -11,6 +11,7 @@ Products Repairs Module (*mrp_repair*)
 :Version: 5.0.1.0
 :Directory: mrp_repair
 :Web: 
+:Is certified: yes
 
 Description
 -----------

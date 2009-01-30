@@ -11,6 +11,7 @@ E-Commerce (*ecommerce*)
 :Version: 5.0.1.0
 :Directory: ecommerce
 :Web: http://www.etiny.com
+:Is certified: no
 
 Description
 -----------

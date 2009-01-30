@@ -11,6 +11,7 @@ CRM - Livechat Jabber Client (*crm_livechat*)
 :Version: 5.0.1.3
 :Directory: crm_livechat
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

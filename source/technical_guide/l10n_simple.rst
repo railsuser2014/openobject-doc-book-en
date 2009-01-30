@@ -11,6 +11,7 @@ Simple Account Chart (*l10n_simple*)
 :Version: 5.0.1.0
 :Directory: l10n_simple
 :Web: 
+:Is certified: no
 
 Description
 -----------

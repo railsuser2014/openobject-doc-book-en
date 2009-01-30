@@ -11,6 +11,7 @@ account_invoice_number (*account_invoice_number*)
 :Version: 5.0.1.0
 :Directory: account_invoice_number
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------

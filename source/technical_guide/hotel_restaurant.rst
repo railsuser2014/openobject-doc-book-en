@@ -11,6 +11,7 @@ Hotel Restaurant (*hotel_restaurant*)
 :Version: 5.0.1.0
 :Directory: hotel_restaurant
 :Web: 
+:Is certified: no
 
 Description
 -----------

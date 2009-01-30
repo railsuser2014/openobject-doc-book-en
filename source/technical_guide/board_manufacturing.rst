@@ -11,6 +11,7 @@ Board for manufacturing (*board_manufacturing*)
 :Version: 5.0.1.0
 :Directory: board_manufacturing
 :Web: 
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Payement Term with Cash Discount (*account_cash_discount*)
 :Version: 5.0.1.0
 :Directory: account_cash_discount
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

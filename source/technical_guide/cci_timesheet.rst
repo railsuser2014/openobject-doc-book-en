@@ -11,6 +11,7 @@ CCI Timesheet (*cci_timesheet*)
 :Version: 5.0.1.0
 :Directory: cci_timesheet
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

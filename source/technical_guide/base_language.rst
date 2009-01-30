@@ -11,6 +11,7 @@ Base Language (*base_language*)
 :Version: 5.0.1.0
 :Directory: base_language
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

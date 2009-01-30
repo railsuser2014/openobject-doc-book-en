@@ -11,6 +11,7 @@ Products Search Reference (*product_search_reference*)
 :Version: 5.0.0.1
 :Directory: product_search_reference
 :Web: 
+:Is certified: no
 
 Description
 -----------

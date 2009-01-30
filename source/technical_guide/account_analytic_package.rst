@@ -11,6 +11,7 @@ account_analytic_package (*account_analytic_package*)
 :Version: 5.0.1.0
 :Directory: account_analytic_package
 :Web: http://www.tinyerp.com/
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Project Retro planning (*project_retro_planning*)
 :Version: 5.0.0.1
 :Directory: project_retro_planning
 :Web: 
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Module Recorder (*base_module_record*)
 :Version: 5.0.1.0
 :Directory: base_module_record
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Asterisk (*asterisk*)
 :Version: 5.0.0.1proto2
 :Directory: asterisk
 :Web: 
+:Is certified: no
 
 Description
 -----------

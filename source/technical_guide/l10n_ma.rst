@@ -11,6 +11,7 @@ Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 :Version: 5.0.1.0
 :Directory: l10n_ma
 :Web: http://comptabilite.erp-libre.info
+:Is certified: no
 
 Description
 -----------

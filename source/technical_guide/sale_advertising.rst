@@ -11,6 +11,7 @@ Sales: Avertising Sales (*sale_advertising*)
 :Version: 5.0.0.1
 :Directory: sale_advertising
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

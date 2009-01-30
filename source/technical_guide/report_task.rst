@@ -11,6 +11,7 @@ Report on tasks by user for projects (*report_task*)
 :Version: 5.0.1.0
 :Directory: report_task
 :Web: 
+:Is certified: yes
 
 Description
 -----------

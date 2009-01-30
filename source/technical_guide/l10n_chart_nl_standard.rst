@@ -11,6 +11,7 @@ Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_nl_standard
 :Web: 
+:Is certified: no
 
 Description
 -----------

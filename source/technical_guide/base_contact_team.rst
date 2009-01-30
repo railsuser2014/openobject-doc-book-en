@@ -11,6 +11,7 @@ Base Contact Team (*base_contact_team*)
 :Version: 5.0.0.1
 :Directory: base_contact_team
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

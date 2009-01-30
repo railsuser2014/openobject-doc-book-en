@@ -11,6 +11,7 @@ Human Resources Contracts (*hr_contract*)
 :Version: 5.0.1.0
 :Directory: hr_contract
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

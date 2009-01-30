@@ -11,6 +11,7 @@ United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manu
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_manufacturing
 :Web: 
+:Is certified: no
 
 Description
 -----------

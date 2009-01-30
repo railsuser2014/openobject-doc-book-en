@@ -11,6 +11,7 @@ Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 :Version: 5.0.1.0
 :Directory: account_l10nbe_domiciliation
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

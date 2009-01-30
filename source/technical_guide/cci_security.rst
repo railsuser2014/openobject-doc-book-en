@@ -11,6 +11,7 @@ CCI Security (*cci_security*)
 :Version: False
 :Directory: cci_security
 :Web: http://www.openerp.com, http://www.ccilv.be
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Czech Republic - Chart of Accounts (*l10n_chart_cz*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_cz
 :Web: 
+:Is certified: no
 
 Description
 -----------

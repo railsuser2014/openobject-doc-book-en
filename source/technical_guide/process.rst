@@ -11,6 +11,7 @@ Enterprise Process (*process*)
 :Version: 5.0.1.0
 :Directory: process
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

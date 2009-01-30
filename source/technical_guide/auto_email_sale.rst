@@ -11,6 +11,7 @@ Email Sale order (*auto_email_sale*)
 :Version: 5.0.1.0
 :Directory: auto_email_sale
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Multi company base module (*multi_company*)
 :Version: 5.0.0.1
 :Directory: multi_company
 :Web: 
+:Is certified: no
 
 Description
 -----------

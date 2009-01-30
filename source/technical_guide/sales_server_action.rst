@@ -11,6 +11,7 @@ Sales Server Action (*sales_server_action*)
 :Version: 5.0.5.0
 :Directory: sales_server_action
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

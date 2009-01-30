@@ -11,6 +11,7 @@ CCI Purchase (*cci_purchase*)
 :Version: 5.0.1.0
 :Directory: cci_purchase
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Complete timesheet from an iCal server (*hr_timesheet_ical*)
 :Version: 5.0.0.1
 :Directory: hr_timesheet_ical
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------

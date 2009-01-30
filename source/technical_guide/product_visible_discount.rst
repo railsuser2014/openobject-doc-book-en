@@ -11,6 +11,7 @@ Visible Discount Module (*product_visible_discount*)
 :Version: 5.0.1.0
 :Directory: product_visible_discount
 :Web: 
+:Is certified: no
 
 Description
 -----------

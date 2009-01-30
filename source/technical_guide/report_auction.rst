@@ -11,6 +11,7 @@ Auction Management - Reporting (*report_auction*)
 :Version: 5.0.1.0
 :Directory: report_auction
 :Web: http://tinyerp.com/module_auction.html
+:Is certified: no
 
 Description
 -----------

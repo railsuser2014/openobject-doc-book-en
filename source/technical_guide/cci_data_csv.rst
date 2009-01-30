@@ -11,6 +11,7 @@ cci Data 1 (*cci_data_csv*)
 :Version: 5.0.1.0
 :Directory: cci_data_csv
 :Web: 
+:Is certified: no
 
 Description
 -----------

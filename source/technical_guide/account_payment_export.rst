@@ -11,6 +11,7 @@ Payment Order Export (*account_payment_export*)
 :Version: 5.0.1.0
 :Directory: account_payment_export
 :Web: 
+:Is certified: no
 
 Description
 -----------

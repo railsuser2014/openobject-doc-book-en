@@ -11,6 +11,7 @@ Marketing Campaigns (*marketing*)
 :Version: 5.0.1.0
 :Directory: marketing
 :Web: http://tinyerp.com/module_crm_marketing.html
+:Is certified: no
 
 Description
 -----------

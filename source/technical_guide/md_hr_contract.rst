@@ -11,6 +11,7 @@ Pilot Human Resource Management (*md_hr_contract*)
 :Version: 5.0.1.0
 :Directory: md_hr_contract
 :Web: 
+:Is certified: no
 
 Description
 -----------

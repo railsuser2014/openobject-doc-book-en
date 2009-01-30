@@ -11,6 +11,7 @@ Sale payment type (*sale_payment*)
 :Version: 5.0.1.0
 :Directory: sale_payment
 :Web: 
+:Is certified: no
 
 Description
 -----------

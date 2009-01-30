@@ -11,6 +11,7 @@ Timesheets (*hr_timesheet_sheet*)
 :Version: 5.0.1.0
 :Directory: hr_timesheet_sheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

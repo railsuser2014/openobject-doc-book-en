@@ -11,6 +11,7 @@ Margins in Sale Orders (*sale_margin*)
 :Version: 5.0.1.0
 :Directory: sale_margin
 :Web: 
+:Is certified: no
 
 Description
 -----------

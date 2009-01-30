@@ -11,6 +11,7 @@ Human Resources Expenses Tracking (*hr_expense*)
 :Version: 5.0.1.0
 :Directory: hr_expense
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

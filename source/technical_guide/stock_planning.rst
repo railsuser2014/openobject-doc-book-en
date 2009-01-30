@@ -11,6 +11,7 @@ Master Procurement Schedule (*stock_planning*)
 :Version: 5.0.1.0
 :Directory: stock_planning
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Stock No Auto-Picking (*stock_no_autopicking*)
 :Version: 5.0.1.0
 :Directory: stock_no_autopicking
 :Web: 
+:Is certified: yes
 
 Description
 -----------

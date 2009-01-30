@@ -11,6 +11,7 @@ Invoice with payment term lines (*account_invoice_payment_term*)
 :Version: 5.0.0.1
 :Directory: account_invoice_payment_term
 :Web: 
+:Is certified: no
 
 Description
 -----------

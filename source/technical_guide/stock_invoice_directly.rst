@@ -11,6 +11,7 @@ Invoice Picking Directly (*stock_invoice_directly*)
 :Version: 5.0.1.0
 :Directory: stock_invoice_directly
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

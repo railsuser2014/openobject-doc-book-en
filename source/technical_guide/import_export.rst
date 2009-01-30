@@ -11,6 +11,7 @@ Import Export (*import_export*)
 :Version: 5.0.1.0
 :Directory: import_export
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Belgium - French & Dutch (*l10n_chart_be_frnl*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_be_frnl
 :Web: 
+:Is certified: no
 
 Description
 -----------

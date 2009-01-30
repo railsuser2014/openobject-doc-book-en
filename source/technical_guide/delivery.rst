@@ -11,6 +11,7 @@ Carriers and deliveries (*delivery*)
 :Version: 5.0.1.0
 :Directory: delivery
 :Web: 
+:Is certified: yes
 
 Description
 -----------

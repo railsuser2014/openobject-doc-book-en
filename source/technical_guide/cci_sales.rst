@@ -11,6 +11,7 @@ CCI Sales (*cci_sales*)
 :Version: 5.0.1.0
 :Directory: cci_sales
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Analytic Account Reporting (*report_analytic*)
 :Version: 5.0.1.0
 :Directory: report_analytic
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

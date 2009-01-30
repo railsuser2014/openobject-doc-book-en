@@ -11,6 +11,7 @@ France - Plan Comptable Général (*l10n_fr*)
 :Version: 5.0.1.0
 :Directory: l10n_fr
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ch_german
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ account_analytic_progress (*account_analytic_progress*)
 :Version: 5.0.1.0
 :Directory: account_analytic_progress
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

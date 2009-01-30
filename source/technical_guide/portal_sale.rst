@@ -11,6 +11,7 @@ Portal Sale Management (*portal_sale*)
 :Version: 5.0.0.1
 :Directory: portal_sale
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

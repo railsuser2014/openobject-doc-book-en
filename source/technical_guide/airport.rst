@@ -11,6 +11,7 @@ Airport (*airport*)
 :Version: False
 :Directory: airport
 :Web: 
+:Is certified: no
 
 Description
 -----------

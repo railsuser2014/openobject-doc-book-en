@@ -11,6 +11,7 @@ United States - Chart of Accounts for UCOA (*l10n_chart_us_ucoa*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_ucoa
 :Web: 
+:Is certified: no
 
 Description
 -----------

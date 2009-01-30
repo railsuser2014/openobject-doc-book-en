@@ -11,6 +11,7 @@ Purchases with taxes included (*purchase_tax_include*)
 :Version: 5.0.1.0
 :Directory: purchase_tax_include
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------

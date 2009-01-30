@@ -11,6 +11,7 @@ Accounting and financial management (*account*)
 :Version: 5.0.1.1
 :Directory: account
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

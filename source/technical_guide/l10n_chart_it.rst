@@ -11,6 +11,7 @@ Italy - Chart of Accounts (*l10n_chart_it*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_it
 :Web: 
+:Is certified: no
 
 Description
 -----------

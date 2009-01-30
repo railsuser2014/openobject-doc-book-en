@@ -11,6 +11,7 @@ Translation (*base_translation*)
 :Version: 5.0.1.0
 :Directory: base_translation
 :Web: 
+:Is certified: no
 
 Description
 -----------

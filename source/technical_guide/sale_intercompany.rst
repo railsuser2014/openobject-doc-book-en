@@ -11,6 +11,7 @@ Sale Inter-Company (*sale_intercompany*)
 :Version: 5.0.1.0
 :Directory: sale_intercompany
 :Web: http://tinyerp.com/module_sale.html
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Sweden - Church Chart of Account (*l10n_chart_se_church*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_se_church
 :Web: 
+:Is certified: no
 
 Description
 -----------

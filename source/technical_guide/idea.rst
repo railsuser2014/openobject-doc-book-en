@@ -11,6 +11,7 @@ Idea Manager (*idea*)
 :Version: 5.0.0.1
 :Directory: idea
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------

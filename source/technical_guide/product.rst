@@ -11,6 +11,7 @@ Products & Pricelists (*product*)
 :Version: 5.0.1.1
 :Directory: product
 :Web: 
+:Is certified: yes
 
 Description
 -----------

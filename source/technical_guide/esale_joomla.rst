@@ -11,6 +11,7 @@ eSale Interface - Joomla (*esale_joomla*)
 :Version: 5.0.1.0
 :Directory: esale_joomla
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

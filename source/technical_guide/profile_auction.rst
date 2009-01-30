@@ -11,6 +11,7 @@ Auction house profile (*profile_auction*)
 :Version: False
 :Directory: profile_auction
 :Web: 
+:Is certified: yes
 
 Description
 -----------

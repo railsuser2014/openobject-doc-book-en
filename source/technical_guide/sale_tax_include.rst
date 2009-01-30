@@ -11,6 +11,7 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Version: 5.0.1.0
 :Directory: sale_tax_include
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------

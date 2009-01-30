@@ -11,6 +11,7 @@ EDI (*edi*)
 :Version: 5.0.1.0
 :Directory: edi
 :Web: 
+:Is certified: no
 
 Description
 -----------

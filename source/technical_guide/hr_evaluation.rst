@@ -11,6 +11,7 @@ Human Resources Evaluation (*hr_evaluation*)
 :Version: 5.0.0.1
 :Directory: hr_evaluation
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------

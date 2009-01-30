@@ -11,6 +11,7 @@ Payment Management (*account_payment*)
 :Version: 5.0.1.1
 :Directory: account_payment
 :Web: 
+:Is certified: yes
 
 Description
 -----------

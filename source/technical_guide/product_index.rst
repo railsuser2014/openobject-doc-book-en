@@ -11,6 +11,7 @@ Manage indexes on products prices (*product_index*)
 :Version: 5.0.1.0
 :Directory: product_index
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

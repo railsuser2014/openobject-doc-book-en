@@ -11,6 +11,7 @@ Report designer interface module (*base_report_designer*)
 :Version: 5.0.0.1
 :Directory: base_report_designer
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

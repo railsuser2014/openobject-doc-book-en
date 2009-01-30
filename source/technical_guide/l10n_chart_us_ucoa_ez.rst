@@ -11,6 +11,7 @@ United States -Chart of Accounts for UCOA EZ Profile (*l10n_chart_us_ucoa_ez*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_ucoa_ez
 :Web: 
+:Is certified: no
 
 Description
 -----------

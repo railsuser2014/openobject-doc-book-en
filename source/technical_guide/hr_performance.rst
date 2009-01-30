@@ -11,6 +11,7 @@ Performance Review (*hr_performance*)
 :Version: 5.0.1.0
 :Directory: hr_performance
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

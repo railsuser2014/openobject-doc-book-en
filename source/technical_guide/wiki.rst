@@ -11,6 +11,7 @@ Document Management - Wiki (*wiki*)
 :Version: 5.0.1.0
 :Directory: wiki
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------

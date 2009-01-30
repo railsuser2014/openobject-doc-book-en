@@ -11,6 +11,7 @@ Sales Management - Reporting (*report_sale*)
 :Version: 5.0.1.0
 :Directory: report_sale
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

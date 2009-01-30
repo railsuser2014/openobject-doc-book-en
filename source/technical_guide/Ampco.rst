@@ -11,6 +11,7 @@ Ampco (*Ampco*)
 :Version: 5.0.1.0
 :Directory: Ampco
 :Web: 
+:Is certified: no
 
 Description
 -----------

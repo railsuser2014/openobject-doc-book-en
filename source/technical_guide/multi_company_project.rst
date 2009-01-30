@@ -11,6 +11,7 @@ Multi company Project Management (*multi_company_project*)
 :Version: 5.0.0.1
 :Directory: multi_company_project
 :Web: 
+:Is certified: no
 
 Description
 -----------

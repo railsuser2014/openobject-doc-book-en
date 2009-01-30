@@ -11,6 +11,7 @@ Report Creator (*base_report_creator*)
 :Version: 5.0.1.0
 :Directory: base_report_creator
 :Web: 
+:Is certified: yes
 
 Description
 -----------

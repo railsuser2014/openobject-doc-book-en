@@ -11,6 +11,7 @@ France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 :Version: False
 :Directory: l10n_fr_tva_franchise
 :Web: http://www.crysalead.com
+:Is certified: no
 
 Description
 -----------

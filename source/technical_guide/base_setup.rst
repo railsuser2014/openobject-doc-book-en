@@ -11,6 +11,7 @@ Base Setup (*base_setup*)
 :Version: 5.0.1.0
 :Directory: base_setup
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

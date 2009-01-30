@@ -11,6 +11,7 @@ Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 :Version: 5.0.0.3
 :Directory: fleet_maintenance
 :Web: 
+:Is certified: no
 
 Description
 -----------

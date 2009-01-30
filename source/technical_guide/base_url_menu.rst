@@ -11,6 +11,7 @@ Url Menus (*base_url_menu*)
 :Version: 5.0.1.1
 :Directory: base_url_menu
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

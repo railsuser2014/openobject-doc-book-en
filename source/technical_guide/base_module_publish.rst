@@ -11,6 +11,7 @@ Module publisher (*base_module_publish*)
 :Version: 5.0.1.0
 :Directory: base_module_publish
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

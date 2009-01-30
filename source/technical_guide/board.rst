@@ -11,6 +11,7 @@ Dashboard main module (*board*)
 :Version: 5.0.1.0
 :Directory: board
 :Web: 
+:Is certified: yes
 
 Description
 -----------

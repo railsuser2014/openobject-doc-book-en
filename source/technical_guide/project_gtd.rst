@@ -11,6 +11,7 @@ Getting Things Done - Time Management Module (*project_gtd*)
 :Version: 5.0.1.0
 :Directory: project_gtd
 :Web: 
+:Is certified: yes
 
 Description
 -----------

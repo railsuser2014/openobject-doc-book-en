@@ -11,6 +11,7 @@ China Traditional - Chart of Account (*l10n_chart_cn_traditional*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_cn_traditional
 :Web: 
+:Is certified: no
 
 Description
 -----------

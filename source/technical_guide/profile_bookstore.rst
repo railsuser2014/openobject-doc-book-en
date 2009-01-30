@@ -11,6 +11,7 @@ Bookstore Profile (*profile_bookstore*)
 :Version: False
 :Directory: profile_bookstore
 :Web: 
+:Is certified: no
 
 Description
 -----------

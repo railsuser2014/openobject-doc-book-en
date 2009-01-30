@@ -11,6 +11,7 @@ OScommerce Interface / ZenCart (*esale_osc*)
 :Version: 5.0.1.0
 :Directory: esale_osc
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

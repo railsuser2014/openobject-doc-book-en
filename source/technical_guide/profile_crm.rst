@@ -11,6 +11,7 @@ CRM profile (*profile_crm*)
 :Version: False
 :Directory: profile_crm
 :Web: 
+:Is certified: yes
 
 Description
 -----------

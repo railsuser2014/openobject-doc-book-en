@@ -11,6 +11,7 @@ Account Move Reverse (*account_reverse*)
 :Version: 5.0.1.0
 :Directory: account_reverse
 :Web: 
+:Is certified: no
 
 Description
 -----------

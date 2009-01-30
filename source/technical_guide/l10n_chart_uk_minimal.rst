@@ -11,6 +11,7 @@ United Kingdom - minimal (*l10n_chart_uk_minimal*)
 :Version: 5.0.1.1
 :Directory: l10n_chart_uk_minimal
 :Web: http://www.seathsolutions.com
+:Is certified: yes
 
 Description
 -----------

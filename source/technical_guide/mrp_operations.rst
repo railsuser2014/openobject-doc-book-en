@@ -11,6 +11,7 @@ Workcenter Production start end workflow (*mrp_operations*)
 :Version: 5.0.1.0
 :Directory: mrp_operations
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Manufacturing Resource Planning (*mrp*)
 :Version: 5.0.1.1
 :Directory: mrp
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

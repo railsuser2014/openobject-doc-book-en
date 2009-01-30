@@ -11,6 +11,7 @@ Canadian - English - Chart of Accounts (*l10n_chart_ca_en*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ca_en
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Base (*base*)
 :Version: 5.0.1.1
 :Directory: base
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

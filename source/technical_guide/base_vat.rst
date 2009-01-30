@@ -11,6 +11,7 @@ VAT (*base_vat*)
 :Version: 5.0.1.0
 :Directory: base_vat
 :Web: 
+:Is certified: yes
 
 Description
 -----------

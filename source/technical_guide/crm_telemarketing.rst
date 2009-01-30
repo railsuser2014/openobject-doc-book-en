@@ -11,6 +11,7 @@ Telemarketing Management (*crm_telemarketing*)
 :Version: 5.0.1.0
 :Directory: crm_telemarketing
 :Web: http://www.syleam.fr
+:Is certified: no
 
 Description
 -----------

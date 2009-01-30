@@ -11,6 +11,7 @@ Accounting - Voucher Management (*account_voucher*)
 :Version: 5.0.1.0
 :Directory: account_voucher
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

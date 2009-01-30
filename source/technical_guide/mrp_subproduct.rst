@@ -11,6 +11,7 @@ MRP Sub Product (*mrp_subproduct*)
 :Version: 5.0.1.0
 :Directory: mrp_subproduct
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Products with multi-level variants (*product_variant_multi*)
 :Version: 5.0.1.0
 :Directory: product_variant_multi
 :Web: 
+:Is certified: no
 
 Description
 -----------

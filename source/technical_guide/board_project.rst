@@ -11,6 +11,7 @@ Board for project users (*board_project*)
 :Version: 5.0.1.0
 :Directory: board_project
 :Web: 
+:Is certified: yes
 
 Description
 -----------

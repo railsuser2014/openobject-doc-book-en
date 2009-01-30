@@ -11,6 +11,7 @@ Products & Pricelists (*product_qt*)
 :Version: 5.0.1.0
 :Directory: product_qt
 :Web: 
+:Is certified: no
 
 Description
 -----------

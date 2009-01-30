@@ -11,6 +11,7 @@ Board for DM users (*board_dm*)
 :Version: 5.0.1.0
 :Directory: board_dm
 :Web: 
+:Is certified: no
 
 Description
 -----------

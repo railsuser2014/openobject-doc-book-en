@@ -11,6 +11,7 @@ Dashboard for CRM Configuration (*board_crm_configuration*)
 :Version: 5.0.1.0
 :Directory: board_crm_configuration
 :Web: 
+:Is certified: yes
 
 Description
 -----------

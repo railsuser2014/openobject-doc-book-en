@@ -11,6 +11,7 @@ Salesman on invoices (*account_invoice_salesman*)
 :Version: 5.0.1.0
 :Directory: account_invoice_salesman
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Board for accountant (*board_account*)
 :Version: 5.0.1.0
 :Directory: board_account
 :Web: 
+:Is certified: yes
 
 Description
 -----------

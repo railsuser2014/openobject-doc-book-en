@@ -11,6 +11,7 @@ Accounting only profile (*profile_accounting*)
 :Version: False
 :Directory: profile_accounting
 :Web: 
+:Is certified: yes
 
 Description
 -----------

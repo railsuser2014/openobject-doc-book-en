@@ -11,6 +11,7 @@ Dashboard for Associations (*board_association*)
 :Version: 5.0.1.0
 :Directory: board_association
 :Web: 
+:Is certified: yes
 
 Description
 -----------

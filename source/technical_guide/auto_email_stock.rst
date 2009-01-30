@@ -11,6 +11,7 @@ Auto Email Stock Picking (*auto_email_stock*)
 :Version: 5.0.1.0
 :Directory: auto_email_stock
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

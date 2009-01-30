@@ -11,6 +11,7 @@ United States - Chart of Accounts for Services (*l10n_chart_us_service*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_service
 :Web: 
+:Is certified: no
 
 Description
 -----------

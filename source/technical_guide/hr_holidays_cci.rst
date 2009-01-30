@@ -11,6 +11,7 @@ Human Resources: Holidays management (*hr_holidays_cci*)
 :Version: False
 :Directory: hr_holidays_cci
 :Web: http://www.axelor.com/
+:Is certified: no
 
 Description
 -----------

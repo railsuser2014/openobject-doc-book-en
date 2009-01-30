@@ -11,6 +11,7 @@ Product GTIN EAN UPC JPC Support (*product_gtin*)
 :Version: 5.0.1.0
 :Directory: product_gtin
 :Web: http://www.chricar.at/ChriCar
+:Is certified: no
 
 Description
 -----------

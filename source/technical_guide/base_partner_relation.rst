@@ -11,6 +11,7 @@ Partners - relation extension (*base_partner_relation*)
 :Version: 5.0.1.0
 :Directory: base_partner_relation
 :Web: 
+:Is certified: no
 
 Description
 -----------

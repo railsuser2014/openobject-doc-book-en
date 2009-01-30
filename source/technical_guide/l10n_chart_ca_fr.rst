@@ -11,6 +11,7 @@ Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ca_fr
 :Web: 
+:Is certified: no
 
 Description
 -----------

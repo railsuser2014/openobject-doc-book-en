@@ -11,6 +11,7 @@ India Accounting - Ledger (*account_india_ledger*)
 :Version: 5.0.1.0
 :Directory: account_india_ledger
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

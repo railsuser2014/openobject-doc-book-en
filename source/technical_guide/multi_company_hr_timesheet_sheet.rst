@@ -11,6 +11,7 @@ Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sh
 :Version: 5.0.0.1
 :Directory: multi_company_hr_timesheet_sheet
 :Web: 
+:Is certified: no
 
 Description
 -----------

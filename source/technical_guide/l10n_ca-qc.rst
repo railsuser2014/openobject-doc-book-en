@@ -11,6 +11,7 @@ Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 :Version: 5.0.1.0
 :Directory: l10n_ca-qc
 :Web: 
+:Is certified: no
 
 Description
 -----------

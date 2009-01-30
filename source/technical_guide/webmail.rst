@@ -11,6 +11,7 @@ Webmail (*webmail*)
 :Version: 5.0.1.0
 :Directory: webmail
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

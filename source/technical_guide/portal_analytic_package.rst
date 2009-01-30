@@ -11,6 +11,7 @@ Portal Management - Analytic Entries (*portal_analytic_package*)
 :Version: 5.0.0.1
 :Directory: portal_analytic_package
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

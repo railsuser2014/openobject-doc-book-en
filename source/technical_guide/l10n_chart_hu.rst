@@ -11,6 +11,7 @@ Hungary - Chart of Accounts (*l10n_chart_hu*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_hu
 :Web: 
+:Is certified: no
 
 Description
 -----------

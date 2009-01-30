@@ -11,6 +11,7 @@ Menu Wizard  (*base_create_menu*)
 :Version: 5.0.1.0
 :Directory: base_create_menu
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Automates direct delivery between a supplier and a customer (*sale_supplier_dire
 :Version: 5.0.0.9
 :Directory: sale_supplier_direct_delivery
 :Web: 
+:Is certified: no
 
 Description
 -----------

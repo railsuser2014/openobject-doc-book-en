@@ -11,6 +11,7 @@ Stock Management (*mrp_prodlot_autosplit*)
 :Version: 5.0.0.9.0
 :Directory: mrp_prodlot_autosplit
 :Web: http://rvalyi.blogspot.com
+:Is certified: no
 
 Description
 -----------

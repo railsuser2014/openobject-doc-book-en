@@ -11,6 +11,7 @@ Base Report Model (*base_report_model*)
 :Version: 5.0.0.1
 :Directory: base_report_model
 :Web: http://openerp.com
+:Is certified: no
 
 Description
 -----------

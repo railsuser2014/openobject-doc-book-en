@@ -11,6 +11,7 @@ Integrated Document Management System (*document_webdav_old*)
 :Version: 5.0.1.0
 :Directory: document_webdav_old
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

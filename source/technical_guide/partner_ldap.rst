@@ -11,6 +11,7 @@ Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 :Version: 5.0.1.0
 :Directory: partner_ldap
 :Web: 
+:Is certified: no
 
 Description
 -----------

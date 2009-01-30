@@ -11,6 +11,7 @@ Accounting journal visibility (*account_journal_visibility*)
 :Version: 5.0.1.0
 :Directory: account_journal_visibility
 :Web: 
+:Is certified: no
 
 Description
 -----------

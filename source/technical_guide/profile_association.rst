@@ -11,6 +11,7 @@ Association profile (*profile_association*)
 :Version: False
 :Directory: profile_association
 :Web: 
+:Is certified: yes
 
 Description
 -----------

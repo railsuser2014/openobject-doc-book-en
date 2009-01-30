@@ -11,6 +11,7 @@ Reporting of Balancesheet for accounting (*account_reporting*)
 :Version: 5.0.1.0
 :Directory: account_reporting
 :Web: 
+:Is certified: yes
 
 Description
 -----------

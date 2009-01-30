@@ -11,6 +11,7 @@ Merge Picking (*merge_picking*)
 :Version: 5.0.1.0
 :Directory: merge_picking
 :Web: www.axelor.com
+:Is certified: no
 
 Description
 -----------

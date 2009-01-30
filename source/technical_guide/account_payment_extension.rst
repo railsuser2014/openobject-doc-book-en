@@ -11,6 +11,7 @@ Account Payment Extension (*account_payment_extension*)
 :Version: 5.0.1.1
 :Directory: account_payment_extension
 :Web: http://www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------

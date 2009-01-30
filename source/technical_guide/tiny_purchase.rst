@@ -11,6 +11,7 @@ Tiny purchase (*tiny_purchase*)
 :Version: 5.0.0.1
 :Directory: tiny_purchase
 :Web: 
+:Is certified: no
 
 Description
 -----------

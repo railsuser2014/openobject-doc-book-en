@@ -11,6 +11,7 @@ Accounting and financial management-Compare Accounts (*account_balance*)
 :Version: 5.0.1.1
 :Directory: account_balance
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

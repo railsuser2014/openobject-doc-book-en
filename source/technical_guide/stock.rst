@@ -11,6 +11,7 @@ Stock Management (*stock*)
 :Version: 5.0.1.1
 :Directory: stock
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

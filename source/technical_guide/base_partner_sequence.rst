@@ -11,6 +11,7 @@ Add an automatic sequence on partners (*base_partner_sequence*)
 :Version: 5.0.1.0
 :Directory: base_partner_sequence
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------

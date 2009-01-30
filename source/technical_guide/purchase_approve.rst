@@ -11,6 +11,7 @@ Approve PO automatically when confirmed. (*purchase_approve*)
 :Version: 5.0.1.0
 :Directory: purchase_approve
 :Web: 
+:Is certified: no
 
 Description
 -----------

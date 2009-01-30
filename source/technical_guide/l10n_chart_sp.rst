@@ -11,6 +11,7 @@ Spain - Chart of Account (*l10n_chart_sp*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_sp
 :Web: 
+:Is certified: no
 
 Description
 -----------

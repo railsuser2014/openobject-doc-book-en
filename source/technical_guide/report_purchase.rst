@@ -11,6 +11,7 @@ Purchase Management - Reporting (*report_purchase*)
 :Version: 5.0.1.0
 :Directory: report_purchase
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

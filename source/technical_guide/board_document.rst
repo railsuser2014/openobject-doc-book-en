@@ -11,6 +11,7 @@ Dashboard for Document Management (*board_document*)
 :Version: 5.0.1.0
 :Directory: board_document
 :Web: 
+:Is certified: yes
 
 Description
 -----------

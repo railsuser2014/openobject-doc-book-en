@@ -11,6 +11,7 @@ Scrum, Agile Development Method (*scrum*)
 :Version: 5.0.1.0
 :Directory: scrum
 :Web: 
+:Is certified: yes
 
 Description
 -----------

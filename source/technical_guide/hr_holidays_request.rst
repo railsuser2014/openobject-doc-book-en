@@ -11,6 +11,7 @@ HR Holiday Request (*hr_holidays_request*)
 :Version: 5.0.1.0
 :Directory: hr_holidays_request
 :Web: http://www.axelor.com
+:Is certified: no
 
 Description
 -----------

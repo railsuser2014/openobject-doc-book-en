@@ -11,6 +11,7 @@ Purchase Order Lines With Discounts (*purchase_discount*)
 :Version: 5.0.1.0
 :Directory: purchase_discount
 :Web: 
+:Is certified: no
 
 Description
 -----------

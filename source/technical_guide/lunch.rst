@@ -11,6 +11,7 @@ Lunch Module (*lunch*)
 :Version: 5.0.0.1
 :Directory: lunch
 :Web: 
+:Is certified: no
 
 Description
 -----------

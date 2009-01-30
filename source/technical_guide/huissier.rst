@@ -11,6 +11,7 @@ Tiny ERP Huissiers (*huissier*)
 :Version: False
 :Directory: huissier
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

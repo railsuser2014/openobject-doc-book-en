@@ -11,6 +11,7 @@ Auction module - Flagey Customs (*flagey*)
 :Version: 5.0.1.0
 :Directory: flagey
 :Web: 
+:Is certified: no
 
 Description
 -----------

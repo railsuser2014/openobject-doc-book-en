@@ -11,6 +11,7 @@ Invoice lines with sequence number (*invoice_sequence*)
 :Version: 5.0.0.1
 :Directory: invoice_sequence
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

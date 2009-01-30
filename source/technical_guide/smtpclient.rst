@@ -11,6 +11,7 @@ Email Client (*smtpclient*)
 :Version: 5.0.1.0
 :Directory: smtpclient
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

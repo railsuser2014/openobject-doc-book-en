@@ -11,6 +11,7 @@ Point Of Sale (*point_of_sale*)
 :Version: 5.0.1.0
 :Directory: point_of_sale
 :Web: 
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Indian Accounting (*profile_indian_account*)
 :Version: False
 :Directory: profile_indian_account
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ report_account_analytic (*account_analytic_analysis*)
 :Version: 5.0.1.1
 :Directory: account_analytic_analysis
 :Web: http://www.camptocamp.com/
+:Is certified: yes
 
 Description
 -----------

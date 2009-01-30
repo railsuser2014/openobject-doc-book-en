@@ -11,6 +11,7 @@ crm_profiling management (*crm_profiling*)
 :Version: 5.0.1.3
 :Directory: crm_profiling
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

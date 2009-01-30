@@ -11,6 +11,7 @@ Partner Layout (*partner_layout*)
 :Version: 5.0.1.0
 :Directory: partner_layout
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

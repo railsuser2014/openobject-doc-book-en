@@ -11,6 +11,7 @@ Sizes of lots (width, length, thickness) (*product_size*)
 :Version: 5.0.1.0
 :Directory: product_size
 :Web: 
+:Is certified: no
 
 Description
 -----------

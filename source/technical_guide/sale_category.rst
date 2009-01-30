@@ -11,6 +11,7 @@ Sale Order Line With Categories (*sale_category*)
 :Version: 5.0.1.0
 :Directory: sale_category
 :Web: 
+:Is certified: no
 
 Description
 -----------

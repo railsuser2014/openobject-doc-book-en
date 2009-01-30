@@ -11,6 +11,7 @@ Colombia - Chart of Accounts (*l10n_chart_co*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_co
 :Web: 
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Products date of expiry (*product_expiry*)
 :Version: 5.0.1.0
 :Directory: product_expiry
 :Web: 
+:Is certified: no
 
 Description
 -----------

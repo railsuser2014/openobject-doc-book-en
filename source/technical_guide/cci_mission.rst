@@ -11,6 +11,7 @@ CCI mission (*cci_mission*)
 :Version: 5.0.1.0
 :Directory: cci_mission
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Purchase Management (*purchase*)
 :Version: 5.0.1.1
 :Directory: purchase
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

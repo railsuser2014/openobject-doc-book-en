@@ -11,6 +11,7 @@ United Kingdom Chart of Accounts (*l10n_chart_uk*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_uk
 :Web: 
+:Is certified: no
 
 Description
 -----------

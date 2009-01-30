@@ -11,6 +11,7 @@ Restaurant Management - Reporting (*report_hotel_restaurant*)
 :Version: 5.0.1.0
 :Directory: report_hotel_restaurant
 :Web: 
+:Is certified: no
 
 Description
 -----------

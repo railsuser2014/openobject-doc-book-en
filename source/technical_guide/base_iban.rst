@@ -11,6 +11,7 @@ IBAN (*base_iban*)
 :Version: 5.0.1.0
 :Directory: base_iban
 :Web: 
+:Is certified: yes
 
 Description
 -----------

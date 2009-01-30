@@ -11,6 +11,7 @@ Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 :Version: False
 :Directory: account_4_2_l10n_ch
 :Web: 
+:Is certified: no
 
 Description
 -----------

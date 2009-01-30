@@ -11,6 +11,7 @@ Document Management - Reporting (*report_document*)
 :Version: 5.0.1.0
 :Directory: report_document
 :Web: 
+:Is certified: yes
 
 Description
 -----------

@@ -11,6 +11,7 @@ Invoices and prices with taxes included (*account_tax_include*)
 :Version: 5.0.1.0
 :Directory: account_tax_include
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

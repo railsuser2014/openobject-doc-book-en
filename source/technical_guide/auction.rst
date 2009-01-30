@@ -11,6 +11,7 @@ Auction module (*auction*)
 :Version: 5.0.1.0
 :Directory: auction
 :Web: 
+:Is certified: yes
 
 Description
 -----------

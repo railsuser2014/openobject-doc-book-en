@@ -11,6 +11,7 @@ Board for Auction (*board_auction*)
 :Version: 5.0.1.0
 :Directory: board_auction
 :Web: 
+:Is certified: yes
 
 Description
 -----------

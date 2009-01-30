@@ -11,6 +11,7 @@ Dashboard for sales (*board_sale*)
 :Version: 5.0.1.0
 :Directory: board_sale
 :Web: 
+:Is certified: yes
 
 Description
 -----------

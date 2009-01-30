@@ -11,6 +11,7 @@ Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 :Version: 5.0.1.0
 :Directory: purchase_analytic_plans
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

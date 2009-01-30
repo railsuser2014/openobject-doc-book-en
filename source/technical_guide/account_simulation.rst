@@ -11,6 +11,7 @@ Accounting simulation journal (*account_simulation*)
 :Version: 5.0.1.0
 :Directory: account_simulation
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------

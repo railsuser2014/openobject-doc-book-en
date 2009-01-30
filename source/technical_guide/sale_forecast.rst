@@ -11,6 +11,7 @@ Sales Forecasts, goals and statistics (*sale_forecast*)
 :Version: 5.0.1.0
 :Directory: sale_forecast
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

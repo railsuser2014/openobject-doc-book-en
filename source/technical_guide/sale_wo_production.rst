@@ -11,6 +11,7 @@ Sales Without production (*sale_wo_production*)
 :Version: 5.0.0.1
 :Directory: sale_wo_production
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

@@ -11,6 +11,7 @@ Accounting follow-ups management (*account_followup*)
 :Version: 5.0.1.0
 :Directory: account_followup
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------

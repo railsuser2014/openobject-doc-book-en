@@ -11,6 +11,7 @@ Online Demo Setup Module (*demo_setup*)
 :Version: 5.0.1.0
 :Directory: demo_setup
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------

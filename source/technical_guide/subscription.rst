@@ -11,6 +11,7 @@ Subscription and recurring operations (*subscription*)
 :Version: 5.0.1.0
 :Directory: subscription
 :Web: 
+:Is certified: yes
 
 Description
 -----------

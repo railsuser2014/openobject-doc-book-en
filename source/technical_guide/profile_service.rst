@@ -11,6 +11,7 @@ Service company profile (*profile_service*)
 :Version: False
 :Directory: profile_service
 :Web: 
+:Is certified: yes
 
 Description
 -----------

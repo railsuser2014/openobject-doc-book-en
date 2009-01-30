@@ -11,6 +11,7 @@ City for base_contat (*base_contact_city*)
 :Version: 5.0.1.0
 :Directory: base_contact_city
 :Web: 
+:Is certified: no
 
 Description
 -----------

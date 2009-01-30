@@ -11,6 +11,7 @@ United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_general
 :Web: 
+:Is certified: no
 
 Description
 -----------

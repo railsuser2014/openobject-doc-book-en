@@ -11,6 +11,7 @@ Authenticate users with ldap server (*users_ldap*)
 :Version: 5.0.0.1
 :Directory: users_ldap
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------

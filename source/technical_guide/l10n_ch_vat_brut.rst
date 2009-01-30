@@ -11,6 +11,7 @@ Switzerland - VAT Brut (*l10n_ch_vat_brut*)
 :Version: False
 :Directory: l10n_ch_vat_brut
 :Web: 
+:Is certified: no
 
 Description
 -----------

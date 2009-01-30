@@ -11,6 +11,7 @@ Product extension to track sales and purchases (*product_extended*)
 :Version: 5.0.1.0
 :Directory: product_extended
 :Web: 
+:Is certified: no
 
 Description
 -----------

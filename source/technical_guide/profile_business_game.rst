@@ -11,6 +11,7 @@ Bussiness Game (*profile_business_game*)
 :Version: False
 :Directory: profile_business_game
 :Web: 
+:Is certified: yes
 
 Description
 -----------

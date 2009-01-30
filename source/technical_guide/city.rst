@@ -11,6 +11,7 @@ City (*city*)
 :Version: 5.0.1.0
 :Directory: city
 :Web: 
+:Is certified: no
 
 Description
 -----------

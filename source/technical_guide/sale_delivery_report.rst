@@ -11,6 +11,7 @@ Print Delivery Order (*sale_delivery_report*)
 :Version: 5.0.1.0
 :Directory: sale_delivery_report
 :Web: 
+:Is certified: no
 
 Description
 -----------

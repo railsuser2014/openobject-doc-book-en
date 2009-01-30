@@ -11,6 +11,7 @@ Carriers and deliveries For Purchase Order (*purchase_delivery*)
 :Version: 5.0.1.0
 :Directory: purchase_delivery
 :Web: 
+:Is certified: no
 
 Description
 -----------

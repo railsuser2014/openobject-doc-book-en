@@ -11,6 +11,7 @@ Import accounting entries from Bob (*account_bob_import*)
 :Version: 5.0.1.0
 :Directory: account_bob_import
 :Web: 
+:Is certified: no
 
 Description
 -----------

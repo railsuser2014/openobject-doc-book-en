@@ -11,6 +11,7 @@ Base module quality (*base_module_quality*)
 :Version: 5.0.1.0
 :Directory: base_module_quality
 :Web: 
+:Is certified: yes
 
 Description
 -----------

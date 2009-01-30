@@ -11,6 +11,7 @@ Margins in Product (*product_margin*)
 :Version: 5.0.1.0
 :Directory: product_margin
 :Web: 
+:Is certified: yes
 
 Description
 -----------

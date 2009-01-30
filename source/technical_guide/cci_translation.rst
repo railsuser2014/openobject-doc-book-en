@@ -11,6 +11,7 @@ CCI Translation (*cci_translation*)
 :Version: 5.0.1.0
 :Directory: cci_translation
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
