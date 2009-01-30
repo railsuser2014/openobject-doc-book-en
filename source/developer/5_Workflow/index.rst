@@ -108,7 +108,7 @@ Activity
 ==========
 
 Introduction
-============
+------------
 
 The wkf_activity class represents the nodes of workflows. These nodes are the actions to be executed.
 
@@ -493,7 +493,7 @@ If your buttons do not seem to be doing anything, one of the following two thing
 Server Action
 =============
 Introduction
-============
+------------
 Server action is an new feature to the OpenERP available since the version 5.0 beta, This is the
 interesting features for the customizer, to full fill the customers requirements, This features enables
 to provides the quick and easy configuration some process which is day to day requirements. Like
@@ -640,7 +640,7 @@ Important fields are
 :Record Id: After creating the new record where the id of the new record if going to store. So in future we can refer the same for the other operations.
 
 Write Object
-============
+------------
 
 The same configuration as defined for the Create Object, here we take an example that it will write the
 'Additional Information' on the same object
@@ -652,7 +652,7 @@ Important Fields are
   **same as the Create Object**
 
 Multi Action
-============
+------------
 
 This is the most interesting action, which allows to execute the multiple server action on the same
 business operations. Like if you want to print and send the email on confirmation of the invoice. We
