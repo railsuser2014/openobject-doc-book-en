@@ -1,4 +1,9 @@
 
+.. module:: hr_timesheet_invoice
+    :synopsis: Invoice on analytic lines
+    :noindex:
+.. 
+
 Invoice on analytic lines (*hr_timesheet_invoice*)
 ==================================================
 :Module: hr_timesheet_invoice
@@ -59,8 +64,8 @@ Views
 Objects
 -------
 
-Object: Invoice rate
-####################
+Object: Invoice rate (hr_timesheet_invoice.factor)
+##################################################
 
 
 

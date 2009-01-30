@@ -1,4 +1,9 @@
 
+.. module:: product_catalog_report
+    :synopsis: Product Catalog
+    :noindex:
+.. 
+
 Product Catalog (*product_catalog_report*)
 ==========================================
 :Module: product_catalog_report

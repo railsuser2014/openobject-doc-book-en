@@ -1,4 +1,9 @@
 
+.. module:: mrp_repair
+    :synopsis: Products Repairs Module
+    :noindex:
+.. 
+
 Products Repairs Module (*mrp_repair*)
 ======================================
 :Module: mrp_repair
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Repairs Order
-#####################
+Object: Repairs Order (mrp.repair)
+##################################
 
 
 
@@ -206,8 +211,8 @@ Object: Repairs Order
 
 
 
-Object: Repair Operations Lines
-###############################
+Object: Repair Operations Lines (mrp.repair.line)
+#################################################
 
 
 
@@ -306,8 +311,8 @@ Object: Repair Operations Lines
 
 
 
-Object: Repair Fees line
-########################
+Object: Repair Fees line (mrp.repair.fee)
+#########################################
 
 
 

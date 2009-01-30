@@ -1,4 +1,9 @@
 
+.. module:: account_coda_2_1_d
+    :synopsis: Account CODA Version 2.1 D
+    :noindex:
+.. 
+
 Account CODA Version 2.1 D (*account_coda_2_1_d*)
 =================================================
 :Module: account_coda_2_1_d
@@ -46,8 +51,8 @@ Views
 Objects
 -------
 
-Object: CODA Format For Account
-###############################
+Object: CODA Format For Account (account.coda)
+##############################################
 
 
 

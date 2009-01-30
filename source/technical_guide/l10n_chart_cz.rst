@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_cz
+    :synopsis: Czech Republic - Chart of Accounts
+    :noindex:
+.. 
+
 Czech Republic - Chart of Accounts (*l10n_chart_cz*)
 ====================================================
 :Module: l10n_chart_cz

@@ -1,4 +1,9 @@
 
+.. module:: product_variant_multi
+    :synopsis: Products with multi-level variants
+    :noindex:
+.. 
+
 Products with multi-level variants (*product_variant_multi*)
 ============================================================
 :Module: product_variant_multi
@@ -28,8 +33,8 @@ None
 Menus
 -------
 
- * Products/Products/Product Templates
- * Products/Products/Product Variants
+ * Books/Products/Product Templates
+ * Books/Products/Product Variants
 
 Views
 -----
@@ -42,8 +47,8 @@ None
 Objects
 -------
 
-Object: Dimension Type
-######################
+Object: Dimension Type (product.variant.dimension.type)
+#######################################################
 
 
 
@@ -64,8 +69,8 @@ Object: Dimension Type
 
 
 
-Object: Dimension Type
-######################
+Object: Dimension Type (product.variant.dimension.value)
+########################################################
 
 
 

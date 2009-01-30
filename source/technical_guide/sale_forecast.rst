@@ -1,4 +1,9 @@
 
+.. module:: sale_forecast
+    :synopsis: Sales Forecasts, goals and statistics
+    :noindex:
+.. 
+
 Sales Forecasts, goals and statistics (*sale_forecast*)
 =======================================================
 :Module: sale_forecast
@@ -55,8 +60,8 @@ Views
 Objects
 -------
 
-Object: Sales Forecast
-######################
+Object: Sales Forecast (sale.forecast)
+######################################
 
 
 
@@ -107,8 +112,8 @@ Object: Sales Forecast
 
 
 
-Object: Forecast Line
-#####################
+Object: Forecast Line (sale.forecast.line)
+##########################################
 
 
 

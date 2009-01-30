@@ -1,4 +1,9 @@
 
+.. module:: document_extension
+    :synopsis: Extension Module of Document Management System
+    :noindex:
+.. 
+
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension

@@ -1,4 +1,9 @@
 
+.. module:: account_asset
+    :synopsis: Asset management
+    :noindex:
+.. 
+
 Asset management (*account_asset*)
 ==================================
 :Module: account_asset
@@ -61,8 +66,8 @@ Views
 Objects
 -------
 
-Object: Asset category
-######################
+Object: Asset category (account.asset.category)
+###############################################
 
 
 
@@ -83,8 +88,8 @@ Object: Asset category
 
 
 
-Object: Asset
-#############
+Object: Asset (account.asset.asset)
+###################################
 
 
 
@@ -183,8 +188,8 @@ Object: Asset
 
 
 
-Object: Asset property
-######################
+Object: Asset property (account.asset.property)
+###############################################
 
 
 
@@ -313,8 +318,8 @@ Object: Asset property
 
 
 
-Object: Asset history
-#####################
+Object: Asset history (account.asset.property.history)
+######################################################
 
 
 
@@ -365,8 +370,8 @@ Object: Asset history
 
 
 
-Object: Asset board
-###################
+Object: Asset board (account.asset.board)
+#########################################
 
 
 

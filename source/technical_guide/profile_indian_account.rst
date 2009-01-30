@@ -1,4 +1,9 @@
 
+.. module:: profile_indian_account
+    :synopsis: Indian Accounting
+    :noindex:
+.. 
+
 Indian Accounting (*profile_indian_account*)
 ============================================
 :Module: profile_indian_account

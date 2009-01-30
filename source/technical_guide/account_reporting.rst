@@ -1,4 +1,9 @@
 
+.. module:: account_reporting
+    :synopsis: Reporting of Balancesheet for accounting
+    :noindex:
+.. 
+
 Reporting of Balancesheet for accounting (*account_reporting*)
 ==============================================================
 :Module: account_reporting
@@ -43,8 +48,8 @@ Views
 Objects
 -------
 
-Object: Rml Colors
-##################
+Object: Rml Colors (color.rml)
+##############################
 
 
 
@@ -59,8 +64,8 @@ Object: Rml Colors
 
 
 
-Object: Account reporting for Balance Sheet
-###########################################
+Object: Account reporting for Balance Sheet (account.report.bs)
+###############################################################
 
 
 

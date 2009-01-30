@@ -1,4 +1,9 @@
 
+.. module:: sale_intercompany_auto
+    :synopsis: Sale Inter-Company - Fully Automatic
+    :noindex:
+.. 
+
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 ===============================================================
 :Module: sale_intercompany_auto

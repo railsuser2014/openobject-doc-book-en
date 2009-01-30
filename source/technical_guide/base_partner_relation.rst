@@ -1,4 +1,9 @@
 
+.. module:: base_partner_relation
+    :synopsis: Partners - relation extension
+    :noindex:
+.. 
+
 Partners - relation extension (*base_partner_relation*)
 =======================================================
 :Module: base_partner_relation
@@ -46,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Partner Relation
-########################
+Object: Partner Relation (res.partner.relation)
+###############################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: profile_auction
+    :synopsis: Auction house profile
+    :noindex:
+.. 
+
 Auction house profile (*profile_auction*)
 =========================================
 :Module: profile_auction

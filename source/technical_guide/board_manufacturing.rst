@@ -1,4 +1,9 @@
 
+.. module:: board_manufacturing
+    :synopsis: Board for manufacturing
+    :noindex:
+.. 
+
 Board for manufacturing (*board_manufacturing*)
 ===============================================
 :Module: board_manufacturing

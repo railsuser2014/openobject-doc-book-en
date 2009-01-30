@@ -1,4 +1,9 @@
 
+.. module:: account_simulation
+    :synopsis: Accounting simulation journal
+    :noindex:
+.. 
+
 Accounting simulation journal (*account_simulation*)
 ====================================================
 :Module: account_simulation
@@ -43,8 +48,8 @@ Views
 Objects
 -------
 
-Object: Simulation level
-########################
+Object: Simulation level (account.journal.simulation)
+#####################################################
 
 
 

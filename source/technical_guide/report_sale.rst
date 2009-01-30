@@ -1,4 +1,9 @@
 
+.. module:: report_sale
+    :synopsis: Sales Management - Reporting
+    :noindex:
+.. 
+
 Sales Management - Reporting (*report_sale*)
 ============================================
 :Module: report_sale
@@ -64,8 +69,8 @@ Views
 Objects
 -------
 
-Object: Sales Orders by Products
-################################
+Object: Sales Orders by Products (report.sale.order.product)
+############################################################
 
 
 
@@ -110,8 +115,8 @@ Object: Sales Orders by Products
 
 
 
-Object: Sales Orders by Categories
-##################################
+Object: Sales Orders by Categories (report.sale.order.category)
+###############################################################
 
 
 

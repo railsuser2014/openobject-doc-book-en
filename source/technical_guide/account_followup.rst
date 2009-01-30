@@ -1,4 +1,9 @@
 
+.. module:: account_followup
+    :synopsis: Accounting follow-ups management
+    :noindex:
+.. 
+
 Accounting follow-ups management (*account_followup*)
 =====================================================
 :Module: account_followup
@@ -59,8 +64,8 @@ Views
 Objects
 -------
 
-Object: Follow-Ups
-##################
+Object: Follow-Ups (account_followup.followup)
+##############################################
 
 
 
@@ -87,8 +92,8 @@ Object: Follow-Ups
 
 
 
-Object: Follow-Ups Criteria
-###########################
+Object: Follow-Ups Criteria (account_followup.followup.line)
+############################################################
 
 
 
@@ -127,8 +132,8 @@ Object: Follow-Ups Criteria
 
 
 
-Object: Followup statistics
-###########################
+Object: Followup statistics (account_followup.stat)
+###################################################
 
 
 

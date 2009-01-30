@@ -1,4 +1,9 @@
 
+.. module:: account_analytic_plans
+    :synopsis: Multiple-plans management in Analytic Accounting
+    :noindex:
+.. 
+
 Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 ===========================================================================
 :Module: account_analytic_plans
@@ -80,8 +85,8 @@ Views
 Objects
 -------
 
-Object: Analytic Plans
-######################
+Object: Analytic Plans (account.analytic.plan)
+##############################################
 
 
 
@@ -102,8 +107,8 @@ Object: Analytic Plans
 
 
 
-Object: Analytic Plan Lines
-###########################
+Object: Analytic Plan Lines (account.analytic.plan.line)
+########################################################
 
 
 
@@ -142,8 +147,8 @@ Object: Analytic Plan Lines
     *Root account of this plan.*
 
 
-Object: Analytic Plan Instance
-##############################
+Object: Analytic Plan Instance (account.analytic.plan.instance)
+###############################################################
 
 
 
@@ -212,8 +217,8 @@ Object: Analytic Plan Instance
 
 
 
-Object: Analytic Instance Line
-##############################
+Object: Analytic Instance Line (account.analytic.plan.instance.line)
+####################################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_be_frnl
+    :synopsis: Belgium - French & Dutch
+    :noindex:
+.. 
+
 Belgium - French & Dutch (*l10n_chart_be_frnl*)
 ===============================================
 :Module: l10n_chart_be_frnl

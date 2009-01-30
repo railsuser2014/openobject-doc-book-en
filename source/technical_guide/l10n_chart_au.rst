@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_au
+    :synopsis: Australia - Chart of Accounts
+    :noindex:
+.. 
+
 Australia - Chart of Accounts (*l10n_chart_au*)
 ===============================================
 :Module: l10n_chart_au

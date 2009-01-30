@@ -1,4 +1,9 @@
 
+.. module:: product_extended
+    :synopsis: Product extension to track sales and purchases
+    :noindex:
+.. 
+
 Product extension to track sales and purchases (*product_extended*)
 ===================================================================
 :Module: product_extended

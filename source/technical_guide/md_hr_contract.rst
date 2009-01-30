@@ -1,4 +1,9 @@
 
+.. module:: md_hr_contract
+    :synopsis: Pilot Human Resource Management
+    :noindex:
+.. 
+
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
@@ -54,8 +59,8 @@ Views
 Objects
 -------
 
-Object: HR Contract Availability
-################################
+Object: HR Contract Availability (md.hr.contract.availability)
+##############################################################
 
 
 

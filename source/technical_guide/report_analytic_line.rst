@@ -1,4 +1,9 @@
 
+.. module:: report_analytic_line
+    :synopsis: Analytic lines - Reporting
+    :noindex:
+.. 
+
 Analytic lines - Reporting (*report_analytic_line*)
 ===================================================
 :Module: report_analytic_line
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: Analytic lines to invoice report
-########################################
+Object: Analytic lines to invoice report (report.account.analytic.line.to.invoice)
+##################################################################################
 
 
 

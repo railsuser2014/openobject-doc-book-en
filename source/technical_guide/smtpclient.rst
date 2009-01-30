@@ -1,4 +1,9 @@
 
+.. module:: smtpclient
+    :synopsis: Email Client
+    :noindex:
+.. 
+
 Email Client (*smtpclient*)
 ===========================
 :Module: smtpclient
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Email Client
-####################
+Object: Email Client (email.smtpclient)
+#######################################
 
 
 
@@ -170,8 +175,8 @@ Object: Email Client
 
 
 
-Object: Email Client History
-############################
+Object: Email Client History (email.smtpclient.history)
+#######################################################
 
 
 
@@ -216,8 +221,8 @@ Object: Email Client History
 
 
 
-Object: Server Statistics
-#########################
+Object: Server Statistics (report.smtp.server)
+##############################################
 
 
 
@@ -250,8 +255,8 @@ Object: Server Statistics
 
 
 
-Object: res.company.address
-###########################
+Object: res.company.address (res.company.address)
+#################################################
 
 
 

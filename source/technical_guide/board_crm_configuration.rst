@@ -1,4 +1,9 @@
 
+.. module:: board_crm_configuration
+    :synopsis: Dashboard for CRM Configuration
+    :noindex:
+.. 
+
 Dashboard for CRM Configuration (*board_crm_configuration*)
 ===========================================================
 :Module: board_crm_configuration

@@ -1,4 +1,9 @@
 
+.. module:: l10n_fr_tva_reel
+    :synopsis: France - Régime réel de TVA
+    :noindex:
+.. 
+
 France - Régime réel de TVA (*l10n_fr_tva_reel*)
 ================================================
 :Module: l10n_fr_tva_reel

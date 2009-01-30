@@ -1,4 +1,9 @@
 
+.. module:: segmentation
+    :synopsis: segmentation management
+    :noindex:
+.. 
+
 segmentation management (*segmentation*)
 ========================================
 :Module: segmentation

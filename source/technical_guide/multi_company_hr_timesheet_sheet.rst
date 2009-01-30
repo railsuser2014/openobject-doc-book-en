@@ -1,4 +1,9 @@
 
+.. module:: multi_company_hr_timesheet_sheet
+    :synopsis: Multi company Human Resources (Timesheet groups)
+    :noindex:
+.. 
+
 Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
 =====================================================================================
 :Module: multi_company_hr_timesheet_sheet

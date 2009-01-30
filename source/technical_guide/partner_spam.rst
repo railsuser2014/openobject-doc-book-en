@@ -1,4 +1,9 @@
 
+.. module:: partner_spam
+    :synopsis: SMS and Email spam to partner
+    :noindex:
+.. 
+
 SMS and Email spam to partner (*partner_spam*)
 ==============================================
 :Module: partner_spam

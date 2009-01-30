@@ -1,4 +1,9 @@
 
+.. module:: sale_analytic_plans
+    :synopsis: Sales Analytic Distribution Management
+    :noindex:
+.. 
+
 Sales Analytic Distribution Management (*sale_analytic_plans*)
 ==============================================================
 :Module: sale_analytic_plans

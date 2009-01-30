@@ -1,4 +1,9 @@
 
+.. module:: base_module_doc_rst
+    :synopsis: Module Technical Guide in Restructured Text 
+    :noindex:
+.. 
+
 Module Technical Guide in Restructured Text  (*base_module_doc_rst*)
 ====================================================================
 :Module: base_module_doc_rst

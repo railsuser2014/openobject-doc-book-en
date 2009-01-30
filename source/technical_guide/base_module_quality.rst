@@ -1,4 +1,9 @@
 
+.. module:: base_module_quality
+    :synopsis: Base module quality
+    :noindex:
+.. 
+
 Base module quality (*base_module_quality*)
 ===========================================
 :Module: base_module_quality
@@ -48,8 +53,8 @@ Views
 Objects
 -------
 
-Object: wizard.quality.check
-############################
+Object: wizard.quality.check (wizard.quality.check)
+###################################################
 
 
 
@@ -70,8 +75,8 @@ Object: wizard.quality.check
 
 
 
-Object: quality.check.detail
-############################
+Object: quality.check.detail (quality.check.detail)
+###################################################
 
 
 

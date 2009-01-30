@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_uk_minimal
+    :synopsis: United Kingdom - minimal
+    :noindex:
+.. 
+
 United Kingdom - minimal (*l10n_chart_uk_minimal*)
 ==================================================
 :Module: l10n_chart_uk_minimal

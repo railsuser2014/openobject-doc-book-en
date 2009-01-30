@@ -1,4 +1,9 @@
 
+.. module:: network
+    :synopsis: Network Management
+    :noindex:
+.. 
+
 Network Management (*network*)
 ==============================
 :Module: network
@@ -65,8 +70,8 @@ Views
 Objects
 -------
 
-Object: Hardware type
-#####################
+Object: Hardware type (network.hardware.type)
+#############################################
 
 
 
@@ -81,8 +86,8 @@ Object: Hardware type
 
 
 
-Object: Network
-###############
+Object: Network (network.network)
+#################################
 
 
 
@@ -115,8 +120,8 @@ Object: Network
 
 
 
-Object: Material
-################
+Object: Material (network.material)
+###################################
 
 
 
@@ -191,8 +196,8 @@ Object: Material
 
 
 
-Object: Network changes
-#######################
+Object: Network changes (network.changes)
+#########################################
 
 
 
@@ -219,8 +224,8 @@ Object: Network changes
 
 
 
-Object: Software type
-#####################
+Object: Software type (network.software.type)
+#############################################
 
 
 
@@ -235,8 +240,8 @@ Object: Software type
 
 
 
-Object: Software
-################
+Object: Software (network.software)
+###################################
 
 
 
@@ -287,8 +292,8 @@ Object: Software
 
 
 
-Object: Software login
-######################
+Object: Software login (network.software.logpass)
+#################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_cn
+    :synopsis: China - Chart of Accounts
+    :noindex:
+.. 
+
 China - Chart of Accounts (*l10n_chart_cn*)
 ===========================================
 :Module: l10n_chart_cn

@@ -1,4 +1,9 @@
 
+.. module:: product_gtin
+    :synopsis: Product GTIN EAN UPC JPC Support
+    :noindex:
+.. 
+
 Product GTIN EAN UPC JPC Support (*product_gtin*)
 =================================================
 :Module: product_gtin

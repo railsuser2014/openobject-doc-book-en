@@ -1,4 +1,9 @@
 
+.. module:: l10n_ch_vat_brut
+    :synopsis: Switzerland - VAT Brut
+    :noindex:
+.. 
+
 Switzerland - VAT Brut (*l10n_ch_vat_brut*)
 ===========================================
 :Module: l10n_ch_vat_brut

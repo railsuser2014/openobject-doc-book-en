@@ -1,4 +1,9 @@
 
+.. module:: profile_business_game
+    :synopsis: Bussiness Game
+    :noindex:
+.. 
+
 Bussiness Game (*profile_business_game*)
 ========================================
 :Module: profile_business_game

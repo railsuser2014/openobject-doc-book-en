@@ -1,4 +1,9 @@
 
+.. module:: report_auction
+    :synopsis: Auction Management - Reporting
+    :noindex:
+.. 
+
 Auction Management - Reporting (*report_auction*)
 =================================================
 :Module: report_auction
@@ -73,8 +78,8 @@ Views
 Objects
 -------
 
-Object: report_auction_adjudication
-###################################
+Object: report_auction_adjudication (report.auction.adjudication1)
+##################################################################
 
 
 
@@ -113,8 +118,8 @@ Object: report_auction_adjudication
 
 
 
-Object: Customer per seller
-###########################
+Object: Customer per seller (report.per.seller.customer)
+########################################################
 
 
 
@@ -135,8 +140,8 @@ Object: Customer per seller
 
 
 
-Object: Latest 10 Deposits
-##########################
+Object: Latest 10 Deposits (report.latest.deposit)
+##################################################
 
 
 
@@ -199,8 +204,8 @@ Object: Latest 10 Deposits
 
 
 
-Object: Latest 10 Objects
-#########################
+Object: Latest 10 Objects (report.latest.objects)
+#################################################
 
 
 
@@ -257,8 +262,8 @@ Object: Latest 10 Objects
 
 
 
-Object: Objects per day
-#######################
+Object: Objects per day (report.auction.object.date1)
+#####################################################
 
 
 
@@ -333,8 +338,8 @@ Object: Objects per day
 
 
 
-Object: comparison estimate/adjudication 
-#########################################
+Object: comparison estimate/adjudication  (report.auction.estimation.adj.category1)
+###################################################################################
 
 
 
@@ -427,8 +432,8 @@ Object: comparison estimate/adjudication
 
 
 
-Object: user pointing 
-######################
+Object: user pointing  (report.auction.user.pointing1)
+######################################################
 
 
 

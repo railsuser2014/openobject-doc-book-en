@@ -1,4 +1,9 @@
 
+.. module:: esale_ez
+    :synopsis: EZ Publish eCommerce Interface
+    :noindex:
+.. 
+
 EZ Publish eCommerce Interface (*esale_ez*)
 ===========================================
 :Module: esale_ez

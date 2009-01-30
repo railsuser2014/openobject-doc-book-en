@@ -1,4 +1,9 @@
 
+.. module:: profile_crm
+    :synopsis: CRM profile
+    :noindex:
+.. 
+
 CRM profile (*profile_crm*)
 ===========================
 :Module: profile_crm

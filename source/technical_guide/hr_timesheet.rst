@@ -1,4 +1,9 @@
 
+.. module:: hr_timesheet
+    :synopsis: Human Resources (Timesheet encoding)
+    :noindex:
+.. 
+
 Human Resources (Timesheet encoding) (*hr_timesheet*)
 =====================================================
 :Module: hr_timesheet
@@ -64,8 +69,8 @@ Views
 Objects
 -------
 
-Object: Timesheet line
-######################
+Object: Timesheet line (hr.analytic.timesheet)
+##############################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: audittrail
+    :synopsis: Audit Trail
+    :noindex:
+.. 
+
 Audit Trail (*audittrail*)
 ==========================
 :Module: audittrail
@@ -50,8 +55,8 @@ Views
 Objects
 -------
 
-Object: audittrail.rule
-#######################
+Object: audittrail.rule (audittrail.rule)
+#########################################
 
 
 
@@ -108,8 +113,8 @@ Object: audittrail.rule
 
 
 
-Object: audittrail.log
-######################
+Object: audittrail.log (audittrail.log)
+#######################################
 
 
 
@@ -154,8 +159,8 @@ Object: audittrail.log
 
 
 
-Object: audittrail.log.line
-###########################
+Object: audittrail.log.line (audittrail.log.line)
+#################################################
 
 
 

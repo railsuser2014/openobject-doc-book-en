@@ -1,4 +1,9 @@
 
+.. module:: hr_timesheet_sheet
+    :synopsis: Timesheets
+    :noindex:
+.. 
+
 Timesheets (*hr_timesheet_sheet*)
 =================================
 :Module: hr_timesheet_sheet
@@ -77,8 +82,8 @@ Views
 Objects
 -------
 
-Object: hr_timesheet_sheet.sheet
-################################
+Object: hr_timesheet_sheet.sheet (hr_timesheet_sheet.sheet)
+###########################################################
 
 
 
@@ -189,8 +194,8 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-Object: Timesheets by period
-############################
+Object: Timesheets by period (hr_timesheet_sheet.sheet.day)
+###########################################################
 
 
 
@@ -223,8 +228,8 @@ Object: Timesheets by period
 
 
 
-Object: Timesheets by period
-############################
+Object: Timesheets by period (hr_timesheet_sheet.sheet.account)
+###############################################################
 
 
 

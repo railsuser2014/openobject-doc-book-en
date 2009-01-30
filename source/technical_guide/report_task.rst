@@ -1,4 +1,9 @@
 
+.. module:: report_task
+    :synopsis: Report on tasks by user for projects
+    :noindex:
+.. 
+
 Report on tasks by user for projects (*report_task*)
 ====================================================
 :Module: report_task
@@ -44,8 +49,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and project
-#################################
+Object: Tasks by user and project (report.task.user.pipeline.open)
+##################################################################
 
 
 

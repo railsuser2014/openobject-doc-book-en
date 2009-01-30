@@ -1,4 +1,9 @@
 
+.. module:: stock_no_autopicking
+    :synopsis: Stock No Auto-Picking
+    :noindex:
+.. 
+
 Stock No Auto-Picking (*stock_no_autopicking*)
 ==============================================
 :Module: stock_no_autopicking

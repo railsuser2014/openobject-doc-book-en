@@ -1,4 +1,9 @@
 
+.. module:: stock_location
+    :synopsis: Stock Location Paths
+    :noindex:
+.. 
+
 Stock Location Paths (*stock_location*)
 =======================================
 :Module: stock_location
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: stock.location.path
-###########################
+Object: stock.location.path (stock.location.path)
+#################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: account_report
+    :synopsis: Reporting for accounting
+    :noindex:
+.. 
+
 Reporting for accounting (*account_report*)
 ===========================================
 :Module: account_report
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Account reporting
-#########################
+Object: Account reporting (account.report.report)
+#################################################
 
 
 
@@ -150,8 +155,8 @@ Object: Account reporting
 
 
 
-Object: Indicator
-#################
+Object: Indicator (account.report.history)
+##########################################
 
 
 

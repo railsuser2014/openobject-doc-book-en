@@ -1,4 +1,9 @@
 
+.. module:: account_chart
+    :synopsis: Charts of Accounts
+    :noindex:
+.. 
+
 Charts of Accounts (*account_chart*)
 ====================================
 :Module: account_chart

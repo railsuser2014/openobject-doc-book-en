@@ -1,4 +1,9 @@
 
+.. module:: hr_attendance
+    :synopsis: Attendances Of Employees
+    :noindex:
+.. 
+
 Attendances Of Employees (*hr_attendance*)
 ==========================================
 :Module: hr_attendance
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Action reason
-#####################
+Object: Action reason (hr.action.reason)
+########################################
 
 
 
@@ -63,8 +68,8 @@ Object: Action reason
 
 
 
-Object: Attendance
-##################
+Object: Attendance (hr.attendance)
+##################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: hotel
+    :synopsis: Hotel Management
+    :noindex:
+.. 
+
 Hotel Management (*hotel*)
 ==========================
 :Module: hotel
@@ -78,8 +83,8 @@ Views
 Objects
 -------
 
-Object: Floor
-#############
+Object: Floor (hotel.floor)
+###########################
 
 
 
@@ -94,8 +99,8 @@ Object: Floor
 
 
 
-Object: Room Type
-#################
+Object: Room Type (hotel.room_type)
+###################################
 
 
 
@@ -218,8 +223,8 @@ Object: Room Type
     *This account will be used, instead of the default one, to value incoming stock for the current product*
 
 
-Object: amenities Type
-######################
+Object: amenities Type (hotel.room_amenities_type)
+##################################################
 
 
 
@@ -342,8 +347,8 @@ Object: amenities Type
     *This account will be used, instead of the default one, to value incoming stock for the current product*
 
 
-Object: Room amenities
-######################
+Object: Room amenities (hotel.room_amenities)
+#############################################
 
 
 
@@ -611,12 +616,6 @@ Object: Room amenities
 
 
 
-:removal_time: Product removal time, integer
-
-
-
-
-
 :virtual_available: Virtual Stock, float, readonly
 
     *Futur stock for this product according to the selected location or all internal if none have been selected. Computed as: Real Stock - Outgoing + Incoming.*
@@ -689,13 +688,13 @@ Object: Room amenities
 
 
 
-:purchase_avg_price: Avg. Unit Price, float, readonly
-
-    *Avg. Price in Supplier Invoices*
+:active: Active, boolean
 
 
 
-:index_purchase: Purchase indexes, many2many
+
+
+:loc_row: Row, char
 
 
 
@@ -722,6 +721,12 @@ Object: Room amenities
 :lst_price: List Price, float, readonly
 
 
+
+
+
+:purchase_ok: Can be Purchased, boolean
+
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -791,9 +796,9 @@ Object: Room amenities
 
 
 
-:active: Active, boolean
+:purchase_avg_price: Avg. Unit Price, float, readonly
 
-
+    *Avg. Price in Supplier Invoices*
 
 
 
@@ -846,9 +851,9 @@ Object: Room amenities
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:index_purchase: Purchase indexes, many2many
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
+
 
 
 
@@ -936,9 +941,9 @@ Object: Room amenities
 
 
 
-:volume: Volume, float
+:removal_time: Product removal time, integer
 
-    *The volume in m3.*
+
 
 
 
@@ -975,6 +980,12 @@ Object: Room amenities
 :cost_method: Costing Method, selection, required
 
     *Standard Price: the cost price is fixed and recomputed periodically (usually at the end of the year), Average Price: the cost price is recomputed at each reception of products.*
+
+
+
+:volume: Volume, float
+
+    *The volume in m3.*
 
 
 
@@ -1206,12 +1217,6 @@ Object: Room amenities
 
 
 
-:loc_row: Row, char
-
-
-
-
-
 :seller_delay: Supplier Lead Time, integer, readonly
 
     *This is the average delay in days between the purchase order confirmation and the reception of goods for this product and for the default supplier. It is used by the scheduler to order requests based on reordering delays.*
@@ -1219,6 +1224,12 @@ Object: Room amenities
 
 
 :manufacturer_pref: Manufacturer product code, char
+
+
+
+
+
+:categ_id: Category, many2one, required
 
 
 
@@ -1263,12 +1274,6 @@ Object: Room amenities
 :property_account_expense: Expense Account, many2one
 
     *This account will be used, instead of the default one, to value outgoing stock for the current product*
-
-
-
-:categ_id: Category, many2one, required
-
-
 
 
 
@@ -1337,8 +1342,8 @@ Object: Room amenities
 
 
 
-Object: Hotel Room
-##################
+Object: Hotel Room (hotel.room)
+###############################
 
 
 
@@ -1618,12 +1623,6 @@ Object: Hotel Room
 
 
 
-:removal_time: Product removal time, integer
-
-
-
-
-
 :virtual_available: Virtual Stock, float, readonly
 
     *Futur stock for this product according to the selected location or all internal if none have been selected. Computed as: Real Stock - Outgoing + Incoming.*
@@ -1696,13 +1695,13 @@ Object: Hotel Room
 
 
 
-:purchase_avg_price: Avg. Unit Price, float, readonly
-
-    *Avg. Price in Supplier Invoices*
+:active: Active, boolean
 
 
 
-:index_purchase: Purchase indexes, many2many
+
+
+:loc_row: Row, char
 
 
 
@@ -1729,6 +1728,12 @@ Object: Hotel Room
 :lst_price: List Price, float, readonly
 
 
+
+
+
+:purchase_ok: Can be Purchased, boolean
+
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -1792,9 +1797,9 @@ Object: Hotel Room
 
 
 
-:active: Active, boolean
+:purchase_avg_price: Avg. Unit Price, float, readonly
 
-
+    *Avg. Price in Supplier Invoices*
 
 
 
@@ -1853,9 +1858,9 @@ Object: Hotel Room
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:index_purchase: Purchase indexes, many2many
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
+
 
 
 
@@ -1943,9 +1948,9 @@ Object: Hotel Room
 
 
 
-:volume: Volume, float
+:removal_time: Product removal time, integer
 
-    *The volume in m3.*
+
 
 
 
@@ -1988,6 +1993,12 @@ Object: Hotel Room
 :product_id: Product_id, many2one
 
 
+
+
+
+:volume: Volume, float
+
+    *The volume in m3.*
 
 
 
@@ -2219,12 +2230,6 @@ Object: Hotel Room
 
 
 
-:loc_row: Row, char
-
-
-
-
-
 :seller_delay: Supplier Lead Time, integer, readonly
 
     *This is the average delay in days between the purchase order confirmation and the reception of goods for this product and for the default supplier. It is used by the scheduler to order requests based on reordering delays.*
@@ -2232,6 +2237,12 @@ Object: Hotel Room
 
 
 :manufacturer_pref: Manufacturer product code, char
+
+
+
+
+
+:categ_id: Category, many2one, required
 
 
 
@@ -2276,12 +2287,6 @@ Object: Hotel Room
 :property_account_expense: Expense Account, many2one
 
     *This account will be used, instead of the default one, to value outgoing stock for the current product*
-
-
-
-:categ_id: Category, many2one, required
-
-
 
 
 
@@ -2350,8 +2355,8 @@ Object: Hotel Room
 
 
 
-Object: hotel folio new
-#######################
+Object: hotel folio new (hotel.folio)
+#####################################
 
 
 
@@ -2361,7 +2366,7 @@ Object: hotel folio new
 
 
 
-:has_supplier_direct_delivery: Has Supplier Direct Delivery, boolean, readonly
+:topnotes: Top Notes, text
 
 
 
@@ -2557,6 +2562,12 @@ Object: hotel folio new
 
 
 
+:has_supplier_direct_delivery: Has Supplier Direct Delivery, boolean, readonly
+
+
+
+
+
 :child_so: Child Sales Order, one2many
 
 
@@ -2683,12 +2694,6 @@ Object: hotel folio new
 
 
 
-:topnotes: Top Notes, text
-
-
-
-
-
 :discount_campaign: Discount Campaign, many2one
 
 
@@ -2706,8 +2711,8 @@ Object: hotel folio new
 
 
 
-Object: hotel folio1 room line
-##############################
+Object: hotel folio1 room line (hotel_folio.line)
+#################################################
 
 
 
@@ -3106,8 +3111,8 @@ Object: hotel folio1 room line
 
 
 
-Object: hotel Service line
-##########################
+Object: hotel Service line (hotel_service.line)
+###############################################
 
 
 
@@ -3494,8 +3499,8 @@ Object: hotel Service line
 
 
 
-Object: Service Type
-####################
+Object: Service Type (hotel.service_type)
+#########################################
 
 
 
@@ -3618,8 +3623,8 @@ Object: Service Type
     *This account will be used, instead of the default one, to value incoming stock for the current product*
 
 
-Object: Hotel Services and its charges
-######################################
+Object: Hotel Services and its charges (hotel.services)
+#######################################################
 
 
 
@@ -3887,12 +3892,6 @@ Object: Hotel Services and its charges
 
 
 
-:removal_time: Product removal time, integer
-
-
-
-
-
 :virtual_available: Virtual Stock, float, readonly
 
     *Futur stock for this product according to the selected location or all internal if none have been selected. Computed as: Real Stock - Outgoing + Incoming.*
@@ -3959,13 +3958,13 @@ Object: Hotel Services and its charges
 
 
 
-:purchase_avg_price: Avg. Unit Price, float, readonly
-
-    *Avg. Price in Supplier Invoices*
+:active: Active, boolean
 
 
 
-:index_purchase: Purchase indexes, many2many
+
+
+:loc_row: Row, char
 
 
 
@@ -3992,6 +3991,12 @@ Object: Hotel Services and its charges
 :lst_price: List Price, float, readonly
 
 
+
+
+
+:purchase_ok: Can be Purchased, boolean
+
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -4055,9 +4060,9 @@ Object: Hotel Services and its charges
 
 
 
-:active: Active, boolean
+:purchase_avg_price: Avg. Unit Price, float, readonly
 
-
+    *Avg. Price in Supplier Invoices*
 
 
 
@@ -4110,9 +4115,9 @@ Object: Hotel Services and its charges
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:index_purchase: Purchase indexes, many2many
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
+
 
 
 
@@ -4200,9 +4205,9 @@ Object: Hotel Services and its charges
 
 
 
-:volume: Volume, float
+:removal_time: Product removal time, integer
 
-    *The volume in m3.*
+
 
 
 
@@ -4239,6 +4244,12 @@ Object: Hotel Services and its charges
 :cost_method: Costing Method, selection, required
 
     *Standard Price: the cost price is fixed and recomputed periodically (usually at the end of the year), Average Price: the cost price is recomputed at each reception of products.*
+
+
+
+:volume: Volume, float
+
+    *The volume in m3.*
 
 
 
@@ -4470,12 +4481,6 @@ Object: Hotel Services and its charges
 
 
 
-:loc_row: Row, char
-
-
-
-
-
 :seller_delay: Supplier Lead Time, integer, readonly
 
     *This is the average delay in days between the purchase order confirmation and the reception of goods for this product and for the default supplier. It is used by the scheduler to order requests based on reordering delays.*
@@ -4483,6 +4488,12 @@ Object: Hotel Services and its charges
 
 
 :manufacturer_pref: Manufacturer product code, char
+
+
+
+
+
+:categ_id: Category, many2one, required
 
 
 
@@ -4527,12 +4538,6 @@ Object: Hotel Services and its charges
 :property_account_expense: Expense Account, many2one
 
     *This account will be used, instead of the default one, to value outgoing stock for the current product*
-
-
-
-:categ_id: Category, many2one, required
-
-
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: account_cash_discount
+    :synopsis: Payement Term with Cash Discount
+    :noindex:
+.. 
+
 Payement Term with Cash Discount (*account_cash_discount*)
 ==========================================================
 :Module: account_cash_discount
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Cash Discount
-#####################
+Object: Cash Discount (account.cash.discount)
+#############################################
 
 
 

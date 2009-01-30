@@ -1,4 +1,9 @@
 
+.. module:: crm_vertical
+    :synopsis: CRM Verticalisation
+    :noindex:
+.. 
+
 CRM Verticalisation (*crm_vertical*)
 ====================================
 :Module: crm_vertical

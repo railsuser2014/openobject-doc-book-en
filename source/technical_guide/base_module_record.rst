@@ -1,4 +1,9 @@
 
+.. module:: base_module_record
+    :synopsis: Module Recorder
+    :noindex:
+.. 
+
 Module Recorder (*base_module_record*)
 ======================================
 :Module: base_module_record
@@ -62,5 +67,5 @@ None
 Objects
 -------
 
-Object: ir.module.record
-########################
+Object: ir.module.record (ir.module.record)
+###########################################

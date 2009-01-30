@@ -1,4 +1,9 @@
 
+.. module:: hr_contract_timesheet
+    :synopsis: Human Resources Timesheets on contracts
+    :noindex:
+.. 
+
 Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 =================================================================
 :Module: hr_contract_timesheet

@@ -1,4 +1,9 @@
 
+.. module:: hr_expense
+    :synopsis: Human Resources Expenses Tracking
+    :noindex:
+.. 
+
 Human Resources Expenses Tracking (*hr_expense*)
 ================================================
 :Module: hr_expense
@@ -62,8 +67,8 @@ Views
 Objects
 -------
 
-Object: Expense
-###############
+Object: Expense (hr.expense.expense)
+####################################
 
 
 
@@ -168,8 +173,8 @@ Object: Expense
 
 
 
-Object: Expense Line
-####################
+Object: Expense Line (hr.expense.line)
+######################################
 
 
 

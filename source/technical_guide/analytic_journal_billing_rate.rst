@@ -1,4 +1,9 @@
 
+.. module:: analytic_journal_billing_rate
+    :synopsis: Analytic Journal Billing Rate
+    :noindex:
+.. 
+
 Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 ===============================================================
 :Module: analytic_journal_billing_rate
@@ -50,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Relation table between journals and billing rates
-#########################################################
+Object: Relation table between journals and billing rates (analytic_journal_rate_grid)
+######################################################################################
 
 
 

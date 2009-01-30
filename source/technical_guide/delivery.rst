@@ -1,4 +1,9 @@
 
+.. module:: delivery
+    :synopsis: Carriers and deliveries
+    :noindex:
+.. 
+
 Carriers and deliveries (*delivery*)
 ====================================
 :Module: delivery
@@ -54,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Carrier and delivery grids
-##################################
+Object: Carrier and delivery grids (delivery.carrier)
+#####################################################
 
 
 
@@ -94,8 +99,8 @@ Object: Carrier and delivery grids
 
 
 
-Object: Delivery Grid
-#####################
+Object: Delivery Grid (delivery.grid)
+#####################################
 
 
 
@@ -152,8 +157,8 @@ Object: Delivery Grid
 
 
 
-Object: Delivery line of grid
-#############################
+Object: Delivery line of grid (delivery.grid.line)
+##################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_lu
+    :synopsis: Luxembourg - Plan Comptable Minimum Normalise
+    :noindex:
+.. 
+
 Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
 =========================================================
 :Module: l10n_lu

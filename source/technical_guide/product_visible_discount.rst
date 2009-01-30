@@ -1,4 +1,9 @@
 
+.. module:: product_visible_discount
+    :synopsis: Visible Discount Module
+    :noindex:
+.. 
+
 Visible Discount Module (*product_visible_discount*)
 ====================================================
 :Module: product_visible_discount

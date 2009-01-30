@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_no
+    :synopsis: Norway - Chart of Accounts
+    :noindex:
+.. 
+
 Norway - Chart of Accounts (*l10n_chart_no*)
 ============================================
 :Module: l10n_chart_no

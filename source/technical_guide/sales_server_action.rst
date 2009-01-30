@@ -1,4 +1,9 @@
 
+.. module:: sales_server_action
+    :synopsis: Sales Server Action
+    :noindex:
+.. 
+
 Sales Server Action (*sales_server_action*)
 ===========================================
 :Module: sales_server_action

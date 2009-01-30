@@ -1,4 +1,9 @@
 
+.. module:: purchase_approve
+    :synopsis: Approve PO automatically when confirmed.
+    :noindex:
+.. 
+
 Approve PO automatically when confirmed. (*purchase_approve*)
 =============================================================
 :Module: purchase_approve

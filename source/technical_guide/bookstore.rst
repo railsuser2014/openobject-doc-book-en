@@ -1,4 +1,9 @@
 
+.. module:: bookstore
+    :synopsis: Bookstore Verticalisation
+    :noindex:
+.. 
+
 Bookstore Verticalisation (*bookstore*)
 =======================================
 :Module: bookstore

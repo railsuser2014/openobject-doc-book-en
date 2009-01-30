@@ -1,4 +1,9 @@
 
+.. module:: mrp_jit
+    :synopsis: MRP JIT
+    :noindex:
+.. 
+
 MRP JIT (*mrp_jit*)
 ===================
 :Module: mrp_jit

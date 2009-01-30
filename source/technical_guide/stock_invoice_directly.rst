@@ -1,4 +1,9 @@
 
+.. module:: stock_invoice_directly
+    :synopsis: Invoice Picking Directly
+    :noindex:
+.. 
+
 Invoice Picking Directly (*stock_invoice_directly*)
 ===================================================
 :Module: stock_invoice_directly

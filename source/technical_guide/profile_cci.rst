@@ -1,4 +1,9 @@
 
+.. module:: profile_cci
+    :synopsis: Profile Chamber of Commerce
+    :noindex:
+.. 
+
 Profile Chamber of Commerce (*profile_cci*)
 ===========================================
 :Module: profile_cci

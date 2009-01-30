@@ -1,4 +1,9 @@
 
+.. module:: project_mrp
+    :synopsis: Project Management - MRP and Sale Integration
+    :noindex:
+.. 
+
 Project Management - MRP and Sale Integration (*project_mrp*)
 =============================================================
 :Module: project_mrp

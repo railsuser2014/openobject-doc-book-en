@@ -1,4 +1,9 @@
 
+.. module:: hr_contract_available
+    :synopsis: Human Resources Contracts
+    :noindex:
+.. 
+
 Human Resources Contracts (*hr_contract_available*)
 ===================================================
 :Module: hr_contract_available
@@ -47,5 +52,5 @@ None
 Objects
 -------
 
-Object: Allocations
-###################
+Object: Allocations (hr.allocation)
+###################################

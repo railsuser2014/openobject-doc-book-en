@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_it
+    :synopsis: Italy - Chart of Accounts
+    :noindex:
+.. 
+
 Italy - Chart of Accounts (*l10n_chart_it*)
 ===========================================
 :Module: l10n_chart_it

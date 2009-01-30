@@ -1,4 +1,9 @@
 
+.. module:: profile_manufacturing
+    :synopsis: Manufacturing industry profile
+    :noindex:
+.. 
+
 Manufacturing industry profile (*profile_manufacturing*)
 ========================================================
 :Module: profile_manufacturing

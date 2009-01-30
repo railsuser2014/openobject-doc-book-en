@@ -1,4 +1,9 @@
 
+.. module:: cci_purchase
+    :synopsis: CCI Purchase
+    :noindex:
+.. 
+
 CCI Purchase (*cci_purchase*)
 =============================
 :Module: cci_purchase

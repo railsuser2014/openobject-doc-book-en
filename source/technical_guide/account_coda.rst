@@ -1,4 +1,9 @@
 
+.. module:: account_coda
+    :synopsis: Account CODA
+    :noindex:
+.. 
+
 Account CODA (*account_coda*)
 =============================
 :Module: account_coda

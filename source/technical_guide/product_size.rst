@@ -1,4 +1,9 @@
 
+.. module:: product_size
+    :synopsis: Sizes of lots (width, length, thickness)
+    :noindex:
+.. 
+
 Sizes of lots (width, length, thickness) (*product_size*)
 =========================================================
 :Module: product_size

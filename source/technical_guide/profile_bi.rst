@@ -1,4 +1,9 @@
 
+.. module:: profile_bi
+    :synopsis: Business Intelligence profile
+    :noindex:
+.. 
+
 Business Intelligence profile (*profile_bi*)
 ============================================
 :Module: profile_bi

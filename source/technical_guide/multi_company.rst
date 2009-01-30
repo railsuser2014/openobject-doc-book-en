@@ -1,4 +1,9 @@
 
+.. module:: multi_company
+    :synopsis: Multi company base module
+    :noindex:
+.. 
+
 Multi company base module (*multi_company*)
 ===========================================
 :Module: multi_company

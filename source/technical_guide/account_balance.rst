@@ -1,4 +1,9 @@
 
+.. module:: account_balance
+    :synopsis: Accounting and financial management-Compare Accounts
+    :noindex:
+.. 
+
 Accounting and financial management-Compare Accounts (*account_balance*)
 ========================================================================
 :Module: account_balance

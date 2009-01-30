@@ -1,4 +1,9 @@
 
+.. module:: account_reverse
+    :synopsis: Account Move Reverse
+    :noindex:
+.. 
+
 Account Move Reverse (*account_reverse*)
 ========================================
 :Module: account_reverse

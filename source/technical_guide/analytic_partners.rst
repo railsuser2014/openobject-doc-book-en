@@ -1,4 +1,9 @@
 
+.. module:: analytic_partners
+    :synopsis: Analytic accounts with multiple partners
+    :noindex:
+.. 
+
 Analytic accounts with multiple partners (*analytic_partners*)
 ==============================================================
 :Module: analytic_partners

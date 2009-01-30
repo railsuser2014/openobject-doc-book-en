@@ -1,4 +1,9 @@
 
+.. module:: base_iban
+    :synopsis: IBAN
+    :noindex:
+.. 
+
 IBAN (*base_iban*)
 ==================
 :Module: base_iban

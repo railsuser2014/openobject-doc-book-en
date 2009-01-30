@@ -1,4 +1,9 @@
 
+.. module:: commission_rate
+    :synopsis: Sale Agent Information
+    :noindex:
+.. 
+
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
@@ -58,8 +63,8 @@ Views
 Objects
 -------
 
-Object: Commission of month
-###########################
+Object: Commission of month (report.commission.month)
+#####################################################
 
 
 

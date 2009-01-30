@@ -1,4 +1,9 @@
 
+.. module:: base_vat
+    :synopsis: VAT
+    :noindex:
+.. 
+
 VAT (*base_vat*)
 ================
 :Module: base_vat

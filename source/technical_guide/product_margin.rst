@@ -1,4 +1,9 @@
 
+.. module:: product_margin
+    :synopsis: Margins in Product
+    :noindex:
+.. 
+
 Margins in Product (*product_margin*)
 =====================================
 :Module: product_margin
@@ -32,8 +37,8 @@ None
 Menus
 -------
 
- * Products/Reporting
- * Products/Reporting/Product Margins
+ * Books/Reporting
+ * Books/Reporting/Product Margins
 
 Views
 -----

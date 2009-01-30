@@ -1,4 +1,9 @@
 
+.. module:: sale_payment
+    :synopsis: Sale payment type
+    :noindex:
+.. 
+
 Sale payment type (*sale_payment*)
 ==================================
 :Module: sale_payment

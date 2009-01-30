@@ -1,4 +1,9 @@
 
+.. module:: project_timesheet
+    :synopsis: Project Timesheet
+    :noindex:
+.. 
+
 Project Timesheet (*project_timesheet*)
 =======================================
 :Module: project_timesheet

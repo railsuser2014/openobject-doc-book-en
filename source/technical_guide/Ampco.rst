@@ -1,4 +1,9 @@
 
+.. module:: Ampco
+    :synopsis: Ampco
+    :noindex:
+.. 
+
 Ampco (*Ampco*)
 ===============
 :Module: Ampco
@@ -30,8 +35,8 @@ None
 Menus
 -------
 
- * Products/Configuration/Heatcode/Properties
- * Products/Configuration/Heatcode/Product Heatcode
+ * Books/Configuration/Heatcode/Properties
+ * Books/Configuration/Heatcode/Product Heatcode
 
 Views
 -----
@@ -51,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Properties
-##################
+Object: Properties (properties.details)
+#######################################
 
 
 
@@ -79,8 +84,8 @@ Object: Properties
 
 
 
-Object: Product HeatCode
-########################
+Object: Product HeatCode (product.heatcode)
+###########################################
 
 
 
@@ -101,8 +106,8 @@ Object: Product HeatCode
 
 
 
-Object: Product's Properties
-############################
+Object: Product's Properties (product.properties)
+#################################################
 
 
 

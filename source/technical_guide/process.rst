@@ -1,4 +1,9 @@
 
+.. module:: process
+    :synopsis: Enterprise Process
+    :noindex:
+.. 
+
 Enterprise Process (*process*)
 ==============================
 :Module: process
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Process
-###############
+Object: Process (process.process)
+#################################
 
 
 
@@ -81,8 +86,8 @@ Object: Process
 
 
 
-Object: Process Nodes
-#####################
+Object: Process Nodes (process.node)
+####################################
 
 
 
@@ -169,8 +174,8 @@ Object: Process Nodes
 
 
 
-Object: Condition
-#################
+Object: Condition (process.condition)
+#####################################
 
 
 
@@ -197,8 +202,8 @@ Object: Condition
 
 
 
-Object: Process Transitions
-###########################
+Object: Process Transitions (process.transition)
+################################################
 
 
 
@@ -243,8 +248,8 @@ Object: Process Transitions
 
 
 
-Object: Process Transitions Actions
-###################################
+Object: Process Transitions Actions (process.transition.action)
+###############################################################
 
 
 

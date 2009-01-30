@@ -1,4 +1,9 @@
 
+.. module:: multi_company_currency
+    :synopsis: Multi Currency for Multi Company
+    :noindex:
+.. 
+
 Multi Currency for Multi Company (*multi_company_currency*)
 ===========================================================
 :Module: multi_company_currency

@@ -1,4 +1,9 @@
 
+.. module:: report_intrastat
+    :synopsis: Intrastat Reporting - Reporting
+    :noindex:
+.. 
+
 Intrastat Reporting - Reporting (*report_intrastat*)
 ====================================================
 :Module: report_intrastat
@@ -31,7 +36,7 @@ Reports
 Menus
 -------
 
- * Products/Configuration/Intrastat Code
+ * Books/Configuration/Intrastat Code
  * Stock Management/Reporting/This Month
  * Stock Management/Reporting/This Month/Intrastat (this month)
  * Stock Management/Reporting/All Months
@@ -51,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Intrastat code
-######################
+Object: Intrastat code (report.intrastat.code)
+##############################################
 
 
 
@@ -67,8 +72,8 @@ Object: Intrastat code
 
 
 
-Object: Intrastat report
-########################
+Object: Intrastat report (report.intrastat)
+###########################################
 
 
 

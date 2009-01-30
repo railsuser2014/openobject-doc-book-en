@@ -1,4 +1,9 @@
 
+.. module:: base_report_designer
+    :synopsis: Report designer interface module
+    :noindex:
+.. 
+
 Report designer interface module (*base_report_designer*)
 =========================================================
 :Module: base_report_designer

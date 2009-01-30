@@ -1,4 +1,9 @@
 
+.. module:: product_lot_foundry
+    :synopsis: Products Lot Foundry
+    :noindex:
+.. 
+
 Products Lot Foundry (*product_lot_foundry*)
 ============================================
 :Module: product_lot_foundry
@@ -50,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Heat Code
-#################
+Object: Heat Code (product.lot.foundry.heatcode)
+################################################
 
 
 
@@ -90,8 +95,8 @@ Object: Heat Code
 
 
 
-Object: Mecanical Properties
-############################
+Object: Mecanical Properties (product.lot.foundry.heatcode.mecanical)
+#####################################################################
 
 
 
@@ -112,8 +117,8 @@ Object: Mecanical Properties
 
 
 
-Object: Chemical Properties
-###########################
+Object: Chemical Properties (product.lot.foundry.heatcode.chemical)
+###################################################################
 
 
 
@@ -134,8 +139,8 @@ Object: Chemical Properties
 
 
 
-Object: stock.production.lot.reservation
-########################################
+Object: stock.production.lot.reservation (stock.production.lot.reservation)
+###########################################################################
 
 
 
@@ -174,8 +179,8 @@ Object: stock.production.lot.reservation
 
 
 
-Object: stock.production.lot.all
-################################
+Object: stock.production.lot.all (stock.production.lot.all)
+###########################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: tiny_purchase
+    :synopsis: Tiny purchase
+    :noindex:
+.. 
+
 Tiny purchase (*tiny_purchase*)
 ===============================
 :Module: tiny_purchase
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: tiny_purchase.product
-#############################
+Object: tiny_purchase.product (tiny_purchase.product)
+#####################################################
 
 
 
@@ -61,8 +66,8 @@ Object: tiny_purchase.product
 
 
 
-Object: tiny_purchase.order
-###########################
+Object: tiny_purchase.order (tiny_purchase.order)
+#################################################
 
 
 
@@ -89,8 +94,8 @@ Object: tiny_purchase.order
 
 
 
-Object: tiny_purchase.line
-##########################
+Object: tiny_purchase.line (tiny_purchase.line)
+###############################################
 
 
 

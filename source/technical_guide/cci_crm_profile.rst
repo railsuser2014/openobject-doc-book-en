@@ -1,4 +1,9 @@
 
+.. module:: cci_crm_profile
+    :synopsis: CCI CRM Profile
+    :noindex:
+.. 
+
 CCI CRM Profile (*cci_crm_profile*)
 ===================================
 :Module: cci_crm_profile

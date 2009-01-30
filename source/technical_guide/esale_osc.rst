@@ -1,4 +1,9 @@
 
+.. module:: esale_osc
+    :synopsis: OScommerce Interface / ZenCart
+    :noindex:
+.. 
+
 OScommerce Interface / ZenCart (*esale_osc*)
 ============================================
 :Module: esale_osc
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: OScommerce Website
-##########################
+Object: OScommerce Website (esale_osc.web)
+##########################################
 
 
 
@@ -114,8 +119,8 @@ Object: OScommerce Website
 
 
 
-Object: esale_osc Tax
-#####################
+Object: esale_osc Tax (esale_osc.tax)
+#####################################
 
 
 
@@ -142,8 +147,8 @@ Object: esale_osc Tax
 
 
 
-Object: esale_osc Category
-##########################
+Object: esale_osc Category (esale_osc.category)
+###############################################
 
 
 
@@ -170,8 +175,8 @@ Object: esale_osc Category
 
 
 
-Object: esale_osc Product
-#########################
+Object: esale_osc Product (esale_osc.product)
+#############################################
 
 
 
@@ -204,8 +209,8 @@ Object: esale_osc Product
 
 
 
-Object: esale_osc Language
-##########################
+Object: esale_osc Language (esale_osc.lang)
+###########################################
 
 
 

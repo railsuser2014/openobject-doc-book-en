@@ -1,4 +1,9 @@
 
+.. module:: purchase_journal
+    :synopsis: Managing sales and deliveries by journal
+    :noindex:
+.. 
+
 Managing sales and deliveries by journal (*purchase_journal*)
 =============================================================
 :Module: purchase_journal
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: purchase Journal
-########################
+Object: purchase Journal (purchase_journal.purchase.journal)
+############################################################
 
 
 
@@ -114,8 +119,8 @@ Object: purchase Journal
 
 
 
-Object: Purchases Orders by Journal
-###################################
+Object: Purchases Orders by Journal (purchase_journal.purchase.stats)
+#####################################################################
 
 
 

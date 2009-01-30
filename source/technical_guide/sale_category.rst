@@ -1,4 +1,9 @@
 
+.. module:: sale_category
+    :synopsis: Sale Order Line With Categories
+    :noindex:
+.. 
+
 Sale Order Line With Categories (*sale_category*)
 =================================================
 :Module: sale_category

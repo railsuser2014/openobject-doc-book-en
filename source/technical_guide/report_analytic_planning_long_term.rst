@@ -1,4 +1,9 @@
 
+.. module:: report_analytic_planning_long_term
+    :synopsis: report_analytic_planning_long_term
+    :noindex:
+.. 
+
 report_analytic_planning_long_term (*report_analytic_planning_long_term*)
 =========================================================================
 :Module: report_analytic_planning_long_term
@@ -46,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Planning product stat
-#############################
+Object: Planning product stat (report_account_analytic.planning.stat.product)
+#############################################################################
 
 
 

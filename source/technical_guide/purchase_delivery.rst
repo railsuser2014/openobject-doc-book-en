@@ -1,4 +1,9 @@
 
+.. module:: purchase_delivery
+    :synopsis: Carriers and deliveries For Purchase Order
+    :noindex:
+.. 
+
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery

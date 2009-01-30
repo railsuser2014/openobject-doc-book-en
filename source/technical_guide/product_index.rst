@@ -1,4 +1,9 @@
 
+.. module:: product_index
+    :synopsis: Manage indexes on products prices
+    :noindex:
+.. 
+
 Manage indexes on products prices (*product_index*)
 ===================================================
 :Module: product_index
@@ -28,8 +33,8 @@ None
 Menus
 -------
 
- * Products/Configuration/Indexes
- * Products/Configuration/Indexes/New index
+ * Books/Configuration/Indexes
+ * Books/Configuration/Indexes/New index
 
 Views
 -----
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: Index
-#############
+Object: Index (product.index)
+#############################
 
 
 
@@ -82,8 +87,8 @@ Object: Index
 
 
 
-Object: Index Rate
-##################
+Object: Index Rate (product.index.rate)
+#######################################
 
 
 

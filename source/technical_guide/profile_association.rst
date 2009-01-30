@@ -1,4 +1,9 @@
 
+.. module:: profile_association
+    :synopsis: Association profile
+    :noindex:
+.. 
+
 Association profile (*profile_association*)
 ===========================================
 :Module: profile_association

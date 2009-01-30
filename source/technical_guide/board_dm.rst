@@ -1,4 +1,9 @@
 
+.. module:: board_dm
+    :synopsis: Board for DM users
+    :noindex:
+.. 
+
 Board for DM users (*board_dm*)
 ===============================
 :Module: board_dm

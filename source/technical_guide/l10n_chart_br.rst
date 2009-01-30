@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_br
+    :synopsis: Brazil - Chart of Accounts
+    :noindex:
+.. 
+
 Brazil - Chart of Accounts (*l10n_chart_br*)
 ============================================
 :Module: l10n_chart_br

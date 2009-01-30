@@ -1,4 +1,9 @@
 
+.. module:: document_ics
+    :synopsis: Support for iCal based on Document Management System
+    :noindex:
+.. 
+
 Support for iCal based on Document Management System (*document_ics*)
 =====================================================================
 :Module: document_ics
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: document.directory.ics.fields
-#####################################
+Object: document.directory.ics.fields (document.directory.ics.fields)
+#####################################################################
 
 
 

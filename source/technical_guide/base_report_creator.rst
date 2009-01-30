@@ -1,4 +1,9 @@
 
+.. module:: base_report_creator
+    :synopsis: Report Creator
+    :noindex:
+.. 
+
 Report Creator (*base_report_creator*)
 ======================================
 :Module: base_report_creator
@@ -48,8 +53,8 @@ Views
 Objects
 -------
 
-Object: Report
-##############
+Object: Report (base_report_creator.report)
+###########################################
 
 
 
@@ -136,8 +141,8 @@ Object: Report
 
 
 
-Object: Display Fields
-######################
+Object: Display Fields (base_report_creator.report.fields)
+##########################################################
 
 
 
@@ -176,8 +181,8 @@ Object: Display Fields
 
 
 
-Object: Report Filters
-######################
+Object: Report Filters (base_report_creator.report.filter)
+##########################################################
 
 
 

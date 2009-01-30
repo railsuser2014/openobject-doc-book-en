@@ -1,4 +1,9 @@
 
+.. module:: report_document
+    :synopsis: Document Management - Reporting
+    :noindex:
+.. 
+
 Document Management - Reporting (*report_document*)
 ===================================================
 :Module: report_document
@@ -60,8 +65,8 @@ Views
 Objects
 -------
 
-Object: Files details by Users
-##############################
+Object: Files details by Users (report.document.user)
+#####################################################
 
 
 
@@ -136,8 +141,8 @@ Object: Files details by Users
 
 
 
-Object: Files details by Partners
-#################################
+Object: Files details by Partners (report.files.partner)
+########################################################
 
 
 
@@ -194,8 +199,8 @@ Object: Files details by Partners
 
 
 
-Object: Files details by Directory
-##################################
+Object: Files details by Directory (report.document.file)
+#########################################################
 
 
 
@@ -216,8 +221,8 @@ Object: Files details by Directory
 
 
 
-Object: Users that did not inserted documents since one month
-#############################################################
+Object: Users that did not inserted documents since one month (report.document.wall)
+####################################################################################
 
 
 

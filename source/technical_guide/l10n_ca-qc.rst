@@ -1,4 +1,9 @@
 
+.. module:: l10n_ca-qc
+    :synopsis: Canada - Quebec Chart of Accounts
+    :noindex:
+.. 
+
 Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 ================================================
 :Module: l10n_ca-qc

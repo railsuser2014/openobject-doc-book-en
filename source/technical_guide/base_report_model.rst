@@ -1,4 +1,9 @@
 
+.. module:: base_report_model
+    :synopsis: Base Report Model
+    :noindex:
+.. 
+
 Base Report Model (*base_report_model*)
 =======================================
 :Module: base_report_model
@@ -41,8 +46,8 @@ Views
 Objects
 -------
 
-Object: Visible models for a tool
-#################################
+Object: Visible models for a tool (base.report.model)
+#####################################################
 
 
 

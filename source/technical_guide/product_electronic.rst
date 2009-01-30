@@ -1,4 +1,9 @@
 
+.. module:: product_electronic
+    :synopsis: Products Attributes & Manufacturers
+    :noindex:
+.. 
+
 Products Attributes & Manufacturers (*product_electronic*)
 ==========================================================
 :Module: product_electronic
@@ -46,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Product attributes
-##########################
+Object: Product attributes (product.electronic.attribute)
+#########################################################
 
 
 

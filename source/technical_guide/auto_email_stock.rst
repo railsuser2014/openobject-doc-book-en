@@ -1,4 +1,9 @@
 
+.. module:: auto_email_stock
+    :synopsis: Auto Email Stock Picking
+    :noindex:
+.. 
+
 Auto Email Stock Picking (*auto_email_stock*)
 =============================================
 :Module: auto_email_stock

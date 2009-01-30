@@ -1,4 +1,9 @@
 
+.. module:: partner_layout
+    :synopsis: Partner Layout
+    :noindex:
+.. 
+
 Partner Layout (*partner_layout*)
 =================================
 :Module: partner_layout

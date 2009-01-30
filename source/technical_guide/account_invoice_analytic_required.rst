@@ -1,4 +1,9 @@
 
+.. module:: account_invoice_analytic_required
+    :synopsis: Account invoice analytic required
+    :noindex:
+.. 
+
 Account invoice analytic required (*account_invoice_analytic_required*)
 =======================================================================
 :Module: account_invoice_analytic_required

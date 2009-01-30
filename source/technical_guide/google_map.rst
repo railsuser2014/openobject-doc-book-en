@@ -1,4 +1,9 @@
 
+.. module:: google_map
+    :synopsis: Google Map
+    :noindex:
+.. 
+
 Google Map (*google_map*)
 =========================
 :Module: google_map

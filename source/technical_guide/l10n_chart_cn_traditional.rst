@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_cn_traditional
+    :synopsis: China Traditional - Chart of Account
+    :noindex:
+.. 
+
 China Traditional - Chart of Account (*l10n_chart_cn_traditional*)
 ==================================================================
 :Module: l10n_chart_cn_traditional

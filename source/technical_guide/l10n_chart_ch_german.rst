@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_ch_german
+    :synopsis: Switzerland - German Chart of Accounts
+    :noindex:
+.. 
+
 Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
 ===============================================================
 :Module: l10n_chart_ch_german

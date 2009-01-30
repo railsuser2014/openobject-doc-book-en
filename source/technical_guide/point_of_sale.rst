@@ -1,4 +1,9 @@
 
+.. module:: point_of_sale
+    :synopsis: Point Of Sale
+    :noindex:
+.. 
+
 Point Of Sale (*point_of_sale*)
 ===============================
 :Module: point_of_sale
@@ -71,8 +76,8 @@ Views
 Objects
 -------
 
-Object: Point of Sale journal configuration.
-############################################
+Object: Point of Sale journal configuration. (pos.config.journal)
+#################################################################
 
 
 
@@ -93,8 +98,8 @@ Object: Point of Sale journal configuration.
 
 
 
-Object: Point of Sale
-#####################
+Object: Point of Sale (pos.order)
+#################################
 
 
 
@@ -235,8 +240,8 @@ Object: Point of Sale
 
 
 
-Object: Lines of Point of Sale
-##############################
+Object: Lines of Point of Sale (pos.order.line)
+###############################################
 
 
 
@@ -287,8 +292,8 @@ Object: Lines of Point of Sale
 
 
 
-Object: Pos Payment
-###################
+Object: Pos Payment (pos.payment)
+#################################
 
 
 
@@ -339,8 +344,8 @@ Object: Pos Payment
 
 
 
-Object: transaction for the pos
-###############################
+Object: transaction for the pos (report.transaction.pos)
+########################################################
 
 
 

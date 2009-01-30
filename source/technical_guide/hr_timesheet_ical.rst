@@ -1,4 +1,9 @@
 
+.. module:: hr_timesheet_ical
+    :synopsis: Complete timesheet from an iCal server
+    :noindex:
+.. 
+
 Complete timesheet from an iCal server (*hr_timesheet_ical*)
 ============================================================
 :Module: hr_timesheet_ical

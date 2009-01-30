@@ -1,4 +1,9 @@
 
+.. module:: idea
+    :synopsis: Idea Manager
+    :noindex:
+.. 
+
 Idea Manager (*idea*)
 =====================
 :Module: idea
@@ -62,8 +67,8 @@ Views
 Objects
 -------
 
-Object: Category for an idea
-############################
+Object: Category for an idea (idea.category)
+############################################
 
 
 
@@ -90,8 +95,8 @@ Object: Category for an idea
 
 
 
-Object: idea.idea
-#################
+Object: idea.idea (idea.idea)
+#############################
 
 
 
@@ -172,8 +177,8 @@ Object: idea.idea
 
 
 
-Object: Comments
-################
+Object: Comments (idea.comment)
+###############################
 
 
 
@@ -200,8 +205,8 @@ Object: Comments
 
 
 
-Object: idea.vote
-#################
+Object: idea.vote (idea.vote)
+#############################
 
 
 
@@ -222,8 +227,8 @@ Object: idea.vote
 
 
 
-Object: Idea Votes Statistics
-#############################
+Object: Idea Votes Statistics (idea.vote.stat)
+##############################################
 
 
 

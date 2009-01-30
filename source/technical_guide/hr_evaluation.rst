@@ -1,4 +1,9 @@
 
+.. module:: hr_evaluation
+    :synopsis: Human Resources Evaluation
+    :noindex:
+.. 
+
 Human Resources Evaluation (*hr_evaluation*)
 ============================================
 :Module: hr_evaluation
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Employee Evaluation
-###########################
+Object: Employee Evaluation (hr_evaluation.evaluation)
+######################################################
 
 
 
@@ -122,8 +127,8 @@ Object: Employee Evaluation
 
 
 
-Object: Employee Evaluation Type
-################################
+Object: Employee Evaluation Type (hr_evaluation.type)
+#####################################################
 
 
 
@@ -162,8 +167,8 @@ Object: Employee Evaluation Type
 
 
 
-Object: Evaluation Type Value
-#############################
+Object: Evaluation Type Value (hr_evaluation.type.value)
+########################################################
 
 
 
@@ -184,8 +189,8 @@ Object: Evaluation Type Value
 
 
 
-Object: Employee Evaluation Quote
-#################################
+Object: Employee Evaluation Quote (hr_evaluation.quote)
+#######################################################
 
 
 

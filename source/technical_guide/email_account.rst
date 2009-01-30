@@ -1,4 +1,9 @@
 
+.. module:: email_account
+    :synopsis: Email Invoice
+    :noindex:
+.. 
+
 Email Invoice (*email_account*)
 ===============================
 :Module: email_account

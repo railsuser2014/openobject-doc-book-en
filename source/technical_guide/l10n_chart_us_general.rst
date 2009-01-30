@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_us_general
+    :synopsis: United States - Chart of Accounts for General Profile
+    :noindex:
+.. 
+
 United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
 ===============================================================================
 :Module: l10n_chart_us_general

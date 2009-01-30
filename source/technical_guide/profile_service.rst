@@ -1,4 +1,9 @@
 
+.. module:: profile_service
+    :synopsis: Service company profile
+    :noindex:
+.. 
+
 Service company profile (*profile_service*)
 ===========================================
 :Module: profile_service

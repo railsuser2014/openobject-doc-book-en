@@ -1,4 +1,9 @@
 
+.. module:: project_gtd
+    :synopsis: Getting Things Done - Time Management Module
+    :noindex:
+.. 
+
 Getting Things Done - Time Management Module (*project_gtd*)
 ============================================================
 :Module: project_gtd
@@ -63,8 +68,8 @@ Views
 Objects
 -------
 
-Object: project.gtd.context
-###########################
+Object: project.gtd.context (project.gtd.context)
+#################################################
 
 
 
@@ -85,8 +90,8 @@ Object: project.gtd.context
 
 
 
-Object: project.gtd.timebox
-###########################
+Object: project.gtd.timebox (project.gtd.timebox)
+#################################################
 
 
 

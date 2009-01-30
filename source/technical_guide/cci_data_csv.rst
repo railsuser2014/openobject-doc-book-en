@@ -1,4 +1,9 @@
 
+.. module:: cci_data_csv
+    :synopsis: cci Data 1
+    :noindex:
+.. 
+
 cci Data 1 (*cci_data_csv*)
 ===========================
 :Module: cci_data_csv

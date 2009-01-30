@@ -1,4 +1,9 @@
 
+.. module:: account_invoice_number
+    :synopsis: account_invoice_number
+    :noindex:
+.. 
+
 account_invoice_number (*account_invoice_number*)
 =================================================
 :Module: account_invoice_number

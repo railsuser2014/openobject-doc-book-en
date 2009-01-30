@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_hu
+    :synopsis: Hungary - Chart of Accounts
+    :noindex:
+.. 
+
 Hungary - Chart of Accounts (*l10n_chart_hu*)
 =============================================
 :Module: l10n_chart_hu

@@ -1,4 +1,9 @@
 
+.. module:: purchase_analytic_plans
+    :synopsis: Purchase Analytic Distribution Management
+    :noindex:
+.. 
+
 Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 =====================================================================
 :Module: purchase_analytic_plans

@@ -1,4 +1,9 @@
 
+.. module:: purchase_tender
+    :synopsis: Purchase - Purchase Tender
+    :noindex:
+.. 
+
 Purchase - Purchase Tender (*purchase_tender*)
 ==============================================
 :Module: purchase_tender
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Purchase Tender
-#######################
+Object: Purchase Tender (purchase.tender)
+#########################################
 
 
 

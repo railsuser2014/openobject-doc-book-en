@@ -1,4 +1,9 @@
 
+.. module:: event
+    :synopsis: Event
+    :noindex:
+.. 
+
 Event (*event*)
 ===============
 :Module: event
@@ -74,8 +79,8 @@ Views
 Objects
 -------
 
-Object: Event type
-##################
+Object: Event type (event.type)
+###############################
 
 
 
@@ -90,8 +95,8 @@ Object: Event type
 
 
 
-Object: Event
-#############
+Object: Event (event.event)
+###########################
 
 
 
@@ -304,8 +309,8 @@ Object: Event
     *The email address wich is the 'Reply-To' of all email sent by Open ERP for cases in this section*
 
 
-Object: Event Registration
-##########################
+Object: Event Registration (event.registration)
+###############################################
 
 
 
@@ -764,8 +769,8 @@ Object: Event Registration
 
 
 
-Object: Events on registrations
-###############################
+Object: Events on registrations (report.event.registration)
+###########################################################
 
 
 
@@ -804,8 +809,8 @@ Object: Events on registrations
 
 
 
-Object: Event type on registration
-##################################
+Object: Event type on registration (report.event.type.registration)
+###################################################################
 
 
 

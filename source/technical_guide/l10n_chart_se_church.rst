@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_se_church
+    :synopsis: Sweden - Church Chart of Account
+    :noindex:
+.. 
+
 Sweden - Church Chart of Account (*l10n_chart_se_church*)
 =========================================================
 :Module: l10n_chart_se_church

@@ -1,4 +1,9 @@
 
+.. module:: l10n_fr_tva_franchise
+    :synopsis: France - Franchise de TVA (ex: Micro Entreprise, etc.)
+    :noindex:
+.. 
+
 France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 ================================================================================
 :Module: l10n_fr_tva_franchise

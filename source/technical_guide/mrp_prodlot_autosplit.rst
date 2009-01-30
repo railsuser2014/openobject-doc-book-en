@@ -1,4 +1,9 @@
 
+.. module:: mrp_prodlot_autosplit
+    :synopsis: Stock Management
+    :noindex:
+.. 
+
 Stock Management (*mrp_prodlot_autosplit*)
 ==========================================
 :Module: mrp_prodlot_autosplit

@@ -1,4 +1,9 @@
 
+.. module:: sales_purchase_seq
+    :synopsis: Sales Purchase Sequence Management
+    :noindex:
+.. 
+
 Sales Purchase Sequence Management (*sales_purchase_seq*)
 =========================================================
 :Module: sales_purchase_seq

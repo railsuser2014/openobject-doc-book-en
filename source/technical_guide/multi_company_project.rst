@@ -1,4 +1,9 @@
 
+.. module:: multi_company_project
+    :synopsis: Multi company Project Management
+    :noindex:
+.. 
+
 Multi company Project Management (*multi_company_project*)
 ==========================================================
 :Module: multi_company_project

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_us_service
+    :synopsis: United States - Chart of Accounts for Services
+    :noindex:
+.. 
+
 United States - Chart of Accounts for Services (*l10n_chart_us_service*)
 ========================================================================
 :Module: l10n_chart_us_service

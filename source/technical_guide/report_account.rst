@@ -1,4 +1,9 @@
 
+.. module:: report_account
+    :synopsis: Account Reporting - Reporting
+    :noindex:
+.. 
+
 Account Reporting - Reporting (*report_account*)
 ================================================
 :Module: report_account
@@ -41,8 +46,8 @@ Views
 Objects
 -------
 
-Object: Receivable accounts
-###########################
+Object: Receivable accounts (report.account.receivable)
+#######################################################
 
 
 

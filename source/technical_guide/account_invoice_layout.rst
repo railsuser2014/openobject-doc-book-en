@@ -1,4 +1,9 @@
 
+.. module:: account_invoice_layout
+    :synopsis: account_invoice_layout
+    :noindex:
+.. 
+
 account_invoice_layout (*account_invoice_layout*)
 =================================================
 :Module: account_invoice_layout
@@ -30,7 +35,7 @@ Dependencies
 Reports
 -------
 
- * Invoices with Layout
+ * Formatted Inv.
 
 Menus
 -------
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Notify By Messages
-##########################
+Object: Notify By Messages (notify.message)
+###########################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: product_expiry
+    :synopsis: Products date of expiry
+    :noindex:
+.. 
+
 Products date of expiry (*product_expiry*)
 ==========================================
 :Module: product_expiry

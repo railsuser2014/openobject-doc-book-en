@@ -1,4 +1,9 @@
 
+.. module:: ecommerce
+    :synopsis: E-Commerce
+    :noindex:
+.. 
+
 E-Commerce (*ecommerce*)
 ========================
 :Module: ecommerce
@@ -84,8 +89,8 @@ Views
 Objects
 -------
 
-Object: ecommerce partner
-#########################
+Object: ecommerce partner (ecommerce.partner)
+#############################################
 
 
 
@@ -130,8 +135,8 @@ Object: ecommerce partner
 
 
 
-Object: ecommerce partner address
-#################################
+Object: ecommerce partner address (ecommerce.partner.address)
+#############################################################
 
 
 
@@ -212,8 +217,8 @@ Object: ecommerce partner address
 
 
 
-Object: search parameters
-#########################
+Object: search parameters (ecommerce.search)
+############################################
 
 
 
@@ -228,8 +233,8 @@ Object: search parameters
 
 
 
-Object: Reviews about product
-#############################
+Object: Reviews about product (ecommerce.product.reviews)
+#########################################################
 
 
 
@@ -262,8 +267,8 @@ Object: Reviews about product
 
 
 
-Object: Credit Cards
-####################
+Object: Credit Cards (ecommerce.creditcard)
+###########################################
 
 
 
@@ -278,8 +283,8 @@ Object: Credit Cards
 
 
 
-Object: ecommerce payment
-#########################
+Object: ecommerce payment (ecommerce.payment)
+#############################################
 
 
 
@@ -384,8 +389,8 @@ Object: ecommerce payment
     *Bank account number*
 
 
-Object: ecommerce payment received
-##################################
+Object: ecommerce payment received (ecommerce.payment.received)
+###############################################################
 
 
 
@@ -424,8 +429,8 @@ Object: ecommerce payment received
 
 
 
-Object: ecommerce shop
-######################
+Object: ecommerce shop (ecommerce.shop)
+#######################################
 
 
 
@@ -506,8 +511,8 @@ Object: ecommerce shop
     *Add the carriers which we use for the shipping.*
 
 
-Object: ecommerce category
-##########################
+Object: ecommerce category (ecommerce.category)
+###############################################
 
 
 
@@ -540,8 +545,8 @@ Object: ecommerce category
 
 
 
-Object: ecommerce sale order
-############################
+Object: ecommerce sale order (ecommerce.saleorder)
+##################################################
 
 
 
@@ -610,8 +615,8 @@ Object: ecommerce sale order
 
 
 
-Object: ecommerce order line
-############################
+Object: ecommerce order line (ecommerce.order.line)
+###################################################
 
 
 

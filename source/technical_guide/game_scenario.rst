@@ -1,4 +1,9 @@
 
+.. module:: game_scenario
+    :synopsis: Scenario of games
+    :noindex:
+.. 
+
 Scenario of games (*game_scenario*)
 ===================================
 :Module: game_scenario
@@ -28,26 +33,24 @@ None
 Menus
 -------
 
- * Administration/Game Scenario
- * Administration/Game Scenario/Configuration
- * Administration/Game Scenario/Configuration/Scenario Steps
- * Administration/Game Scenario/Configuration/Scenario
+
+None
+
 
 Views
 -----
 
- * game.scenario.step.tree (tree)
- * game.scenario.step.form (form)
- * game.scenario.tree (tree)
- * game.scenario.form (form)
+
+None
+
 
 
 Objects
 -------
 
-Object: game.scenario
-#####################
+Object: game.scenario (game.scenario)
+#####################################
 
 
-Object: game.scenario.step
-##########################
+Object: game.scenario.step (game.scenario.step)
+###############################################

@@ -1,4 +1,9 @@
 
+.. module:: cci_partner
+    :synopsis: CCI Partner
+    :noindex:
+.. 
+
 CCI Partner (*cci_partner*)
 ===========================
 :Module: cci_partner
@@ -92,8 +97,8 @@ Views
 Objects
 -------
 
-Object: res.partner.state
-#########################
+Object: res.partner.state (res.partner.state)
+#############################################
 
 
 
@@ -102,8 +107,8 @@ Object: res.partner.state
 
 
 
-Object: res.partner.state2
-##########################
+Object: res.partner.state2 (res.partner.state2)
+###############################################
 
 
 
@@ -112,8 +117,8 @@ Object: res.partner.state2
 
 
 
-Object: res.partner.article.review
-##################################
+Object: res.partner.article.review (res.partner.article.review)
+###############################################################
 
 
 
@@ -134,8 +139,8 @@ Object: res.partner.article.review
 
 
 
-Object: res.partner.article
-###########################
+Object: res.partner.article (res.partner.article)
+#################################################
 
 
 
@@ -240,8 +245,8 @@ Object: res.partner.article
 
 
 
-Object: res.partner.article.keywords
-####################################
+Object: res.partner.article.keywords (res.partner.article.keywords)
+###################################################################
 
 
 
@@ -256,8 +261,8 @@ Object: res.partner.article.keywords
 
 
 
-Object: res.partner.zip.group.type
-##################################
+Object: res.partner.zip.group.type (res.partner.zip.group.type)
+###############################################################
 
 
 
@@ -266,8 +271,8 @@ Object: res.partner.zip.group.type
 
 
 
-Object: res.partner.zip.group
-#############################
+Object: res.partner.zip.group (res.partner.zip.group)
+#####################################################
 
 
 
@@ -282,8 +287,8 @@ Object: res.partner.zip.group
 
 
 
-Object: res.partner.zip
-#######################
+Object: res.partner.zip (res.partner.zip)
+#########################################
 
 
 
@@ -334,8 +339,8 @@ Object: res.partner.zip
     *Distance (km) between zip location and the cci.*
 
 
-Object: res.partner.activity.list
-#################################
+Object: res.partner.activity.list (res.partner.activity.list)
+#############################################################
 
 
 
@@ -350,8 +355,8 @@ Object: res.partner.activity.list
 
 
 
-Object: res.partner.activity
-############################
+Object: res.partner.activity (res.partner.activity)
+###################################################
 
 
 
@@ -384,8 +389,8 @@ Object: res.partner.activity
 
 
 
-Object: res.partner.activity.relation
-#####################################
+Object: res.partner.activity.relation (res.partner.activity.relation)
+#####################################################################
 
 
 
@@ -406,8 +411,8 @@ Object: res.partner.activity.relation
 
 
 
-Object: res.partner.relation.type
-#################################
+Object: res.partner.relation.type (res.partner.relation.type)
+#############################################################
 
 
 
@@ -416,8 +421,8 @@ Object: res.partner.relation.type
 
 
 
-Object: res.partner.country.relation
-####################################
+Object: res.partner.country.relation (res.partner.country.relation)
+###################################################################
 
 
 

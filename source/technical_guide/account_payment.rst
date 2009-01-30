@@ -1,4 +1,9 @@
 
+.. module:: account_payment
+    :synopsis: Payment Management
+    :noindex:
+.. 
+
 Payment Management (*account_payment*)
 ======================================
 :Module: account_payment
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Payment type
-####################
+Object: Payment type (payment.type)
+###################################
 
 
 
@@ -90,8 +95,8 @@ Object: Payment type
 
 
 
-Object: Payment mode
-####################
+Object: Payment mode (payment.mode)
+###################################
 
 
 
@@ -118,8 +123,8 @@ Object: Payment mode
     *Bank Account for the Payment Mode*
 
 
-Object: Payment Order
-#####################
+Object: Payment Order (payment.order)
+#####################################
 
 
 
@@ -200,8 +205,8 @@ Object: Payment Order
 
 
 
-Object: Payment Line
-####################
+Object: Payment Line (payment.line)
+###################################
 
 
 

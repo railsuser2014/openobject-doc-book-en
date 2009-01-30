@@ -1,4 +1,9 @@
 
+.. module:: board_association
+    :synopsis: Dashboard for Associations
+    :noindex:
+.. 
+
 Dashboard for Associations (*board_association*)
 ================================================
 :Module: board_association

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_sp
+    :synopsis: Spain - Chart of Account
+    :noindex:
+.. 
+
 Spain - Chart of Account (*l10n_chart_sp*)
 ==========================================
 :Module: l10n_chart_sp

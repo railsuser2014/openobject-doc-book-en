@@ -1,4 +1,9 @@
 
+.. module:: test_44
+    :synopsis: Test New Features
+    :noindex:
+.. 
+
 Test New Features (*test_44*)
 =============================
 :Module: test_44
@@ -43,8 +48,8 @@ Views
 Objects
 -------
 
-Object: test.temporal
-#####################
+Object: test.temporal (test.temporal)
+#####################################
 
 
 
@@ -77,8 +82,8 @@ Object: test.temporal
 
 
 
-Object: test.temporal.line
-##########################
+Object: test.temporal.line (test.temporal.line)
+###############################################
 
 
 

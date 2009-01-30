@@ -1,4 +1,9 @@
 
+.. module:: partner_ldap
+    :synopsis: Partner extension to synchronize TinyERP with ldap
+    :noindex:
+.. 
+
 Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 ===================================================================
 :Module: partner_ldap

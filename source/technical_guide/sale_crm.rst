@@ -1,4 +1,9 @@
 
+.. module:: sale_crm
+    :synopsis: Sale CRM Stuff
+    :noindex:
+.. 
+
 Sale CRM Stuff (*sale_crm*)
 ===========================
 :Module: sale_crm

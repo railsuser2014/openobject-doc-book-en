@@ -1,4 +1,9 @@
 
+.. module:: account_l10nbe_domiciliation
+    :synopsis: Account l10nbe Domiciliation
+    :noindex:
+.. 
+
 Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 =============================================================
 :Module: account_l10nbe_domiciliation

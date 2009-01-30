@@ -1,4 +1,9 @@
 
+.. module:: base_crypt
+    :synopsis: Base
+    :noindex:
+.. 
+
 Base (*base_crypt*)
 ===================
 :Module: base_crypt

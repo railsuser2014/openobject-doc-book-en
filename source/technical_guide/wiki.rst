@@ -1,4 +1,9 @@
 
+.. module:: wiki
+    :synopsis: Document Management - Wiki
+    :noindex:
+.. 
+
 Document Management - Wiki (*wiki*)
 ===================================
 :Module: wiki
@@ -53,8 +58,8 @@ Views
 Objects
 -------
 
-Object: wiki.wiki
-#################
+Object: wiki.wiki (wiki.wiki)
+#############################
 
 
 
@@ -141,8 +146,8 @@ Object: wiki.wiki
 
 
 
-Object: Wiki Groups
-###################
+Object: Wiki Groups (wiki.groups)
+#################################
 
 
 
@@ -199,8 +204,8 @@ Object: Wiki Groups
 
 
 
-Object: Wiki Groups Links
-#########################
+Object: Wiki Groups Links (wiki.groups.link)
+############################################
 
 
 
@@ -215,8 +220,8 @@ Object: Wiki Groups Links
 
 
 
-Object: Wiki History
-####################
+Object: Wiki History (wiki.wiki.history)
+########################################
 
 
 
@@ -255,8 +260,8 @@ Object: Wiki History
 
 
 
-Object: wizard.wiki.history.show_diff
-#####################################
+Object: wizard.wiki.history.show_diff (wizard.wiki.history.show_diff)
+#####################################################################
 
 
 

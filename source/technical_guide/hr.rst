@@ -1,4 +1,9 @@
 
+.. module:: hr
+    :synopsis: Human Resources
+    :noindex:
+.. 
+
 Human Resources (*hr*)
 ======================
 :Module: hr
@@ -66,8 +71,8 @@ Views
 Objects
 -------
 
-Object: Working Time
-####################
+Object: Working Time (hr.timesheet.group)
+#########################################
 
 
 
@@ -88,8 +93,8 @@ Object: Working Time
 
 
 
-Object: Employee Category
-#########################
+Object: Employee Category (hr.employee.category)
+################################################
 
 
 
@@ -110,8 +115,8 @@ Object: Employee Category
 
 
 
-Object: Employee
-################
+Object: Employee (hr.employee)
+##############################
 
 
 
@@ -570,8 +575,8 @@ Object: Employee
 
 
 
-Object: Timesheet Line
-######################
+Object: Timesheet Line (hr.timesheet)
+#####################################
 
 
 
@@ -610,8 +615,8 @@ Object: Timesheet Line
 
 
 
-Object: hr.department
-#####################
+Object: hr.department (hr.department)
+#####################################
 
 
 

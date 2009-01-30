@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_in
+    :synopsis: India - Chart of Accounts
+    :noindex:
+.. 
+
 India - Chart of Accounts (*l10n_chart_in*)
 ===========================================
 :Module: l10n_chart_in

@@ -1,4 +1,9 @@
 
+.. module:: base_url_menu
+    :synopsis: Url Menus
+    :noindex:
+.. 
+
 Url Menus (*base_url_menu*)
 ===========================
 :Module: base_url_menu

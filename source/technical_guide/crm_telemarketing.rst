@@ -1,4 +1,9 @@
 
+.. module:: crm_telemarketing
+    :synopsis: Telemarketing Management
+    :noindex:
+.. 
+
 Telemarketing Management (*crm_telemarketing*)
 ==============================================
 :Module: crm_telemarketing

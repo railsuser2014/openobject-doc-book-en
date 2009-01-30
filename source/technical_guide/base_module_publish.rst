@@ -1,4 +1,9 @@
 
+.. module:: base_module_publish
+    :synopsis: Module publisher
+    :noindex:
+.. 
+
 Module publisher (*base_module_publish*)
 ========================================
 :Module: base_module_publish

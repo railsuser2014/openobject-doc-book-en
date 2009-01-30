@@ -1,4 +1,9 @@
 
+.. module:: library
+    :synopsis: Library
+    :noindex:
+.. 
+
 Library (*library*)
 ===================
 :Module: library
@@ -33,13 +38,13 @@ None
 Menus
 -------
 
- * Products/Authors
- * Products/Books
- * Products/Books/Books to return before 30 days
+ * Books/Authors
+ * Books/Books
+ * Books/Books/Books to return before 30 days
  * Sales Management/Orders of the day
  * Sales Management/Orders of the day/My orders of the day
  * Partners/Editor - Suppliers Relations
- * Products/Authors/New Author
+ * Books/Authors/New Author
  * Books/Configuration/Price Categories
 
 Views
@@ -73,8 +78,8 @@ Views
 Objects
 -------
 
-Object: Book Price Category
-###########################
+Object: Book Price Category (library.price.category)
+####################################################
 
 
 
@@ -95,8 +100,8 @@ Object: Book Price Category
 
 
 
-Object: Library Rack
-####################
+Object: Library Rack (library.rack)
+###################################
 
 
 
@@ -117,8 +122,8 @@ Object: Library Rack
 
 
 
-Object: Library Collection
-##########################
+Object: Library Collection (library.collection)
+###############################################
 
 
 
@@ -133,8 +138,8 @@ Object: Library Collection
 
 
 
-Object: Author
-##############
+Object: Author (library.author)
+###############################
 
 
 
@@ -185,8 +190,8 @@ Object: Author
 
 
 
-Object: author.book.rel
-#######################
+Object: author.book.rel (author.book.rel)
+#########################################
 
 
 
@@ -201,8 +206,8 @@ Object: author.book.rel
 
 
 
-Object: many2many view for editor relations
-###########################################
+Object: many2many view for editor relations (library.editor.supplier)
+#####################################################################
 
 
 

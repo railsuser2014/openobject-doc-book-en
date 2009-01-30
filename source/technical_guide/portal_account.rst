@@ -1,4 +1,9 @@
 
+.. module:: portal_account
+    :synopsis: Portal Management - Account
+    :noindex:
+.. 
+
 Portal Management - Account (*portal_account*)
 ==============================================
 :Module: portal_account

@@ -1,4 +1,9 @@
 
+.. module:: base_contact_city
+    :synopsis: City for base_contat
+    :noindex:
+.. 
+
 City for base_contat (*base_contact_city*)
 ==========================================
 :Module: base_contact_city

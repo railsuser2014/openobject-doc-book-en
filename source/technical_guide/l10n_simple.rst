@@ -1,4 +1,9 @@
 
+.. module:: l10n_simple
+    :synopsis: Simple Account Chart
+    :noindex:
+.. 
+
 Simple Account Chart (*l10n_simple*)
 ====================================
 :Module: l10n_simple

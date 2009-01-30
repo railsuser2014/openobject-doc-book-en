@@ -1,4 +1,9 @@
 
+.. module:: md_hr_employee
+    :synopsis: Pilot Human Resources
+    :noindex:
+.. 
+
 Pilot Human Resources (*md_hr_employee*)
 ========================================
 :Module: md_hr_employee
@@ -62,8 +67,8 @@ Views
 Objects
 -------
 
-Object: Street
-##############
+Object: Street (md.hr.address.street)
+#####################################
 
 
 
@@ -72,8 +77,8 @@ Object: Street
 
 
 
-Object: Zip
-###########
+Object: Zip (md.hr.address.zip)
+###############################
 
 
 
@@ -82,8 +87,8 @@ Object: Zip
 
 
 
-Object: Town
-############
+Object: Town (md.hr.address.town)
+#################################
 
 
 
@@ -92,8 +97,8 @@ Object: Town
 
 
 
-Object: Employee Address
-########################
+Object: Employee Address (md.hr.address)
+########################################
 
 
 
@@ -144,8 +149,8 @@ Object: Employee Address
 
 
 
-Object: Maximun Travel allowance per year and per day
-#####################################################
+Object: Maximun Travel allowance per year and per day (hr.employee.max.travel.allow)
+####################################################################################
 
 
 

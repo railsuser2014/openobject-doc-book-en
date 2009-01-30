@@ -1,4 +1,9 @@
 
+.. module:: account_budget
+    :synopsis: Budget Management
+    :noindex:
+.. 
+
 Budget Management (*account_budget*)
 ====================================
 :Module: account_budget
@@ -70,8 +75,8 @@ Views
 Objects
 -------
 
-Object: Budgetary Position
-##########################
+Object: Budgetary Position (account.budget.post)
+################################################
 
 
 
@@ -110,8 +115,8 @@ Object: Budgetary Position
 
 
 
-Object: Budget Dotation
-#######################
+Object: Budget Dotation (account.budget.post.dotation)
+######################################################
 
 
 
@@ -144,8 +149,8 @@ Object: Budget Dotation
 
 
 
-Object: Budget
-##############
+Object: Budget (crossovered.budget)
+###################################
 
 
 
@@ -196,8 +201,8 @@ Object: Budget
 
 
 
-Object: Budget Lines
-####################
+Object: Budget Lines (crossovered.budget.lines)
+###############################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: scrum
+    :synopsis: Scrum, Agile Development Method
+    :noindex:
+.. 
+
 Scrum, Agile Development Method (*scrum*)
 =========================================
 :Module: scrum
@@ -85,8 +90,8 @@ Views
 Objects
 -------
 
-Object: Scrum Team
-##################
+Object: Scrum Team (scrum.team)
+###############################
 
 
 
@@ -101,8 +106,8 @@ Object: Scrum Team
 
 
 
-Object: Scrum Project
-#####################
+Object: Scrum Project (scrum.project)
+#####################################
 
 
 
@@ -267,8 +272,8 @@ Object: Scrum Project
     *Percent of tasks closed according to the total of tasks todo.*
 
 
-Object: Scrum Sprint
-####################
+Object: Scrum Sprint (scrum.sprint)
+###################################
 
 
 
@@ -355,8 +360,8 @@ Object: Scrum Sprint
 
 
 
-Object: Product Backlog
-#######################
+Object: Product Backlog (scrum.product.backlog)
+###############################################
 
 
 
@@ -437,8 +442,8 @@ Object: Product Backlog
 
 
 
-Object: Scrum Task
-##################
+Object: Scrum Task (scrum.task)
+###############################
 
 
 
@@ -597,8 +602,8 @@ Object: Scrum Task
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
 
-Object: Scrum Meeting
-#####################
+Object: Scrum Meeting (scrum.meeting)
+#####################################
 
 
 

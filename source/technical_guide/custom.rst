@@ -1,4 +1,9 @@
 
+.. module:: custom
+    :synopsis: Module for custom developments
+    :noindex:
+.. 
+
 Module for custom developments (*custom*)
 =========================================
 :Module: custom

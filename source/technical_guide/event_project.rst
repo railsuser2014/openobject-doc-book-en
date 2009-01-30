@@ -1,4 +1,9 @@
 
+.. module:: event_project
+    :synopsis: Event - Project
+    :noindex:
+.. 
+
 Event - Project (*event_project*)
 =================================
 :Module: event_project

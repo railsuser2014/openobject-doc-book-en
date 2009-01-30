@@ -1,4 +1,9 @@
 
+.. module:: sale_delivery
+    :synopsis: Sale Delivery Planning
+    :noindex:
+.. 
+
 Sale Delivery Planning (*sale_delivery*)
 ========================================
 :Module: sale_delivery
@@ -43,8 +48,8 @@ Views
 Objects
 -------
 
-Object: sale.delivery.line
-##########################
+Object: sale.delivery.line (sale.delivery.line)
+###############################################
 
 
 

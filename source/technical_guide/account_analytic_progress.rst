@@ -1,4 +1,9 @@
 
+.. module:: account_analytic_progress
+    :synopsis: account_analytic_progress
+    :noindex:
+.. 
+
 account_analytic_progress (*account_analytic_progress*)
 =======================================================
 :Module: account_analytic_progress

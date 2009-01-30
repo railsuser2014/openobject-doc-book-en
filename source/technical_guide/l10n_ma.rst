@@ -1,4 +1,9 @@
 
+.. module:: l10n_ma
+    :synopsis: Maroc Plan comptable général pour les sociétés
+    :noindex:
+.. 
+
 Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 ==========================================================
 :Module: l10n_ma

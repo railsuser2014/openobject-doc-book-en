@@ -1,4 +1,9 @@
 
+.. module:: board_auction
+    :synopsis: Board for Auction
+    :noindex:
+.. 
+
 Board for Auction (*board_auction*)
 ===================================
 :Module: board_auction

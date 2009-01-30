@@ -1,4 +1,9 @@
 
+.. module:: sandwich
+    :synopsis: Sandwich Module
+    :noindex:
+.. 
+
 Sandwich Module (*sandwich*)
 ============================
 :Module: sandwich
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: sandwich.product.type
-#############################
+Object: sandwich.product.type (sandwich.product.type)
+#####################################################
 
 
 
@@ -72,8 +77,8 @@ Object: sandwich.product.type
 
 
 
-Object: sandwich.product
-########################
+Object: sandwich.product (sandwich.product)
+###########################################
 
 
 
@@ -94,8 +99,8 @@ Object: sandwich.product
 
 
 
-Object: sandwich.order
-######################
+Object: sandwich.order (sandwich.order)
+#######################################
 
 
 
@@ -128,8 +133,8 @@ Object: sandwich.order
 
 
 
-Object: sandwich.order.line
-###########################
+Object: sandwich.order.line (sandwich.order.line)
+#################################################
 
 
 

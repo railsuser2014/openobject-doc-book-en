@@ -1,4 +1,9 @@
 
+.. module:: base_partner_surname
+    :synopsis: Base Partner Surname
+    :noindex:
+.. 
+
 Base Partner Surname (*base_partner_surname*)
 =============================================
 :Module: base_partner_surname

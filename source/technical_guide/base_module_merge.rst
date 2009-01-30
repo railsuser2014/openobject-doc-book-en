@@ -1,4 +1,9 @@
 
+.. module:: base_module_merge
+    :synopsis: Module Merger
+    :noindex:
+.. 
+
 Module Merger (*base_module_merge*)
 ===================================
 :Module: base_module_merge

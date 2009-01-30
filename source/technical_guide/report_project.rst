@@ -1,4 +1,9 @@
 
+.. module:: report_project
+    :synopsis: Sales Management - Reporting
+    :noindex:
+.. 
+
 Sales Management - Reporting (*report_project*)
 ===============================================
 :Module: report_project
@@ -48,8 +53,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and project
-#################################
+Object: Tasks by user and project (report.project.task.user)
+############################################################
 
 
 
@@ -100,8 +105,8 @@ Object: Tasks by user and project
 
 
 
-Object: Tasks by project
-########################
+Object: Tasks by project (report.project.task)
+##############################################
 
 
 

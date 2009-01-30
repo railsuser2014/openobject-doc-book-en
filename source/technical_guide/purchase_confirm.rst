@@ -1,4 +1,9 @@
 
+.. module:: purchase_confirm
+    :synopsis: Confirm all selected purchase order at once
+    :noindex:
+.. 
+
 Confirm all selected purchase order at once (*purchase_confirm*)
 ================================================================
 :Module: purchase_confirm

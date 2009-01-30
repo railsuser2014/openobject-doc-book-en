@@ -1,4 +1,9 @@
 
+.. module:: crm_configuration
+    :synopsis: Customer Relationship Management
+    :noindex:
+.. 
+
 Customer Relationship Management (*crm_configuration*)
 ======================================================
 :Module: crm_configuration
@@ -94,8 +99,8 @@ Views
 Objects
 -------
 
-Object: Category2 of case
-#########################
+Object: Category2 of case (crm.case.category2)
+##############################################
 
 
 
@@ -110,8 +115,8 @@ Object: Category2 of case
 
 
 
-Object: Stage of case
-#####################
+Object: Stage of case (crm.case.stage)
+######################################
 
 
 
@@ -126,8 +131,8 @@ Object: Stage of case
 
 
 
-Object: crm.menu.config_wizard
-##############################
+Object: crm.menu.config_wizard (crm.menu.config_wizard)
+#######################################################
 
 
 
@@ -196,8 +201,8 @@ Object: crm.menu.config_wizard
     *Tracks identified business opportunities for your sales pipeline.*
 
 
-Object: Cases by section and category2
-######################################
+Object: Cases by section and category2 (report.crm.case.section.categ2)
+#######################################################################
 
 
 
@@ -254,8 +259,8 @@ Object: Cases by section and category2
 
 
 
-Object: Cases by section and stage
-##################################
+Object: Cases by section and stage (report.crm.case.section.stage)
+##################################################################
 
 
 
@@ -312,8 +317,8 @@ Object: Cases by section and stage
 
 
 
-Object: Cases by section, Category and stage
-############################################
+Object: Cases by section, Category and stage (report.crm.case.section.categ.stage)
+##################################################################################
 
 
 
@@ -364,8 +369,8 @@ Object: Cases by section, Category and stage
 
 
 
-Object: Cases by section, Category and Category2
-################################################
+Object: Cases by section, Category and Category2 (report.crm.case.section.categ.categ2)
+#######################################################################################
 
 
 

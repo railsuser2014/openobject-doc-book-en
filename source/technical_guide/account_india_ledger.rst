@@ -1,4 +1,9 @@
 
+.. module:: account_india_ledger
+    :synopsis: India Accounting - Ledger
+    :noindex:
+.. 
+
 India Accounting - Ledger (*account_india_ledger*)
 ==================================================
 :Module: account_india_ledger

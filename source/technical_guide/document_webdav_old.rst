@@ -1,4 +1,9 @@
 
+.. module:: document_webdav_old
+    :synopsis: Integrated Document Management System
+    :noindex:
+.. 
+
 Integrated Document Management System (*document_webdav_old*)
 =============================================================
 :Module: document_webdav_old
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Document directory
-##########################
+Object: Document directory (document.directory)
+###############################################
 
 
 
@@ -179,8 +184,8 @@ Object: Document directory
 
 
 
-Object: Directory Content
-#########################
+Object: Directory Content (document.directory.content)
+######################################################
 
 
 

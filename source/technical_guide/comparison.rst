@@ -1,4 +1,9 @@
 
+.. module:: comparison
+    :synopsis: ERP Comparisons
+    :noindex:
+.. 
+
 ERP Comparisons (*comparison*)
 ==============================
 :Module: comparison
@@ -64,8 +69,8 @@ Views
 Objects
 -------
 
-Object: comparison.user
-#######################
+Object: comparison.user (comparison.user)
+#########################################
 
 
 
@@ -92,8 +97,8 @@ Object: comparison.user
 
 
 
-Object: comparison.item
-#######################
+Object: comparison.item (comparison.item)
+#########################################
 
 
 
@@ -132,8 +137,8 @@ Object: comparison.item
 
 
 
-Object: comparison.factor
-#########################
+Object: comparison.factor (comparison.factor)
+#############################################
 
 
 
@@ -202,8 +207,8 @@ Object: comparison.factor
 
 
 
-Object: comparison.vote.values
-##############################
+Object: comparison.vote.values (comparison.vote.values)
+#######################################################
 
 
 
@@ -218,8 +223,8 @@ Object: comparison.vote.values
 
 
 
-Object: comparison.vote
-#######################
+Object: comparison.vote (comparison.vote)
+#########################################
 
 
 
@@ -252,8 +257,8 @@ Object: comparison.vote
 
 
 
-Object: comparison.factor.result
-################################
+Object: comparison.factor.result (comparison.factor.result)
+###########################################################
 
 
 
@@ -280,8 +285,8 @@ Object: comparison.factor.result
 
 
 
-Object: comparison.ponderation.suggestion
-#########################################
+Object: comparison.ponderation.suggestion (comparison.ponderation.suggestion)
+#############################################################################
 
 
 

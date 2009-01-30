@@ -1,4 +1,9 @@
 
+.. module:: sale_rebate
+    :synopsis: Sales Management extented with rebates
+    :noindex:
+.. 
+
 Sales Management extented with rebates (*sale_rebate*)
 ======================================================
 :Module: sale_rebate

@@ -1,4 +1,9 @@
 
+.. module:: merge_picking
+    :synopsis: Merge Picking
+    :noindex:
+.. 
+
 Merge Picking (*merge_picking*)
 ===============================
 :Module: merge_picking

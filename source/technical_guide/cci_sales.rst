@@ -1,4 +1,9 @@
 
+.. module:: cci_sales
+    :synopsis: CCI Sales
+    :noindex:
+.. 
+
 CCI Sales (*cci_sales*)
 =======================
 :Module: cci_sales

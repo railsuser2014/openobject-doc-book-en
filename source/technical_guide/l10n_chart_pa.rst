@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_pa
+    :synopsis: Panama - Chart of Account
+    :noindex:
+.. 
+
 Panama - Chart of Account (*l10n_chart_pa*)
 ===========================================
 :Module: l10n_chart_pa

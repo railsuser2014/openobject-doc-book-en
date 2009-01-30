@@ -1,4 +1,9 @@
 
+.. module:: cci_account
+    :synopsis: CCI Account
+    :noindex:
+.. 
+
 CCI Account (*cci_account*)
 ===========================
 :Module: cci_account

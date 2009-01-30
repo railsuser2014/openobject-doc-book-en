@@ -1,4 +1,9 @@
 
+.. module:: currency_rate
+    :synopsis: Currency Rates
+    :noindex:
+.. 
+
 Currency Rates (*currency_rate*)
 ================================
 :Module: currency_rate

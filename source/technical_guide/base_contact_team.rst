@@ -1,4 +1,9 @@
 
+.. module:: base_contact_team
+    :synopsis: Base Contact Team
+    :noindex:
+.. 
+
 Base Contact Team (*base_contact_team*)
 =======================================
 :Module: base_contact_team
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: res.partner.team
-########################
+Object: res.partner.team (res.partner.team)
+###########################################
 
 
 

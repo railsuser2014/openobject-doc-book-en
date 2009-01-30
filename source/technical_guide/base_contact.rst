@@ -1,4 +1,9 @@
 
+.. module:: base_contact
+    :synopsis: Base Contact
+    :noindex:
+.. 
+
 Base Contact (*base_contact*)
 =============================
 :Module: base_contact
@@ -67,8 +72,8 @@ Views
 Objects
 -------
 
-Object: res.partner.contact
-###########################
+Object: res.partner.contact (res.partner.contact)
+#################################################
 
 
 
@@ -263,8 +268,8 @@ Object: res.partner.contact
 
 
 
-Object: Contact Partner Function
-################################
+Object: Contact Partner Function (res.partner.job)
+##################################################
 
 
 

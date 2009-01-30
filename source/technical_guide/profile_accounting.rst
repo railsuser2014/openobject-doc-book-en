@@ -1,4 +1,9 @@
 
+.. module:: profile_accounting
+    :synopsis: Accounting only profile
+    :noindex:
+.. 
+
 Accounting only profile (*profile_accounting*)
 ==============================================
 :Module: profile_accounting

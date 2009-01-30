@@ -1,4 +1,9 @@
 
+.. module:: airport
+    :synopsis: Airport
+    :noindex:
+.. 
+
 Airport (*airport*)
 ===================
 :Module: airport

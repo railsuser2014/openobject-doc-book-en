@@ -1,4 +1,9 @@
 
+.. module:: account_invoice_payment_term
+    :synopsis: Invoice with payment term lines
+    :noindex:
+.. 
+
 Invoice with payment term lines (*account_invoice_payment_term*)
 ================================================================
 :Module: account_invoice_payment_term

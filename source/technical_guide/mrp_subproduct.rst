@@ -1,4 +1,9 @@
 
+.. module:: mrp_subproduct
+    :synopsis: MRP Sub Product
+    :noindex:
+.. 
+
 MRP Sub Product (*mrp_subproduct*)
 ==================================
 :Module: mrp_subproduct
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Mrp Sub Product
-#######################
+Object: Mrp Sub Product (mrp.subproduct)
+########################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: report_mrp
+    :synopsis: MRP Management - Reporting
+    :noindex:
+.. 
+
 MRP Management - Reporting (*report_mrp*)
 =========================================
 :Module: report_mrp
@@ -47,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Workcenter Load
-#######################
+Object: Workcenter Load (report.workcenter.load)
+################################################
 
 
 
@@ -75,8 +80,8 @@ Object: Workcenter Load
 
 
 
-Object: Stock value variation
-#############################
+Object: Stock value variation (report.mrp.inout)
+################################################
 
 
 

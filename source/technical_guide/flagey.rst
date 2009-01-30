@@ -1,4 +1,9 @@
 
+.. module:: flagey
+    :synopsis: Auction module - Flagey Customs
+    :noindex:
+.. 
+
 Auction module - Flagey Customs (*flagey*)
 ==========================================
 :Module: flagey

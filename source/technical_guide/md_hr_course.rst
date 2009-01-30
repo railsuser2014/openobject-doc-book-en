@@ -1,4 +1,9 @@
 
+.. module:: md_hr_course
+    :synopsis: Pilot Human Resources
+    :noindex:
+.. 
+
 Pilot Human Resources (*md_hr_course*)
 ======================================
 :Module: md_hr_course
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: Course
-##############
+Object: Course (md.hr.course)
+#############################
 
 
 
@@ -61,8 +66,8 @@ Object: Course
 
 
 
-Object: Course Student
-######################
+Object: Course Student (md.hr.course.student)
+#############################################
 
 
 

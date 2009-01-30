@@ -1,4 +1,9 @@
 
+.. module:: report_analytic
+    :synopsis: Analytic Account Reporting
+    :noindex:
+.. 
+
 Analytic Account Reporting (*report_analytic*)
 ==============================================
 :Module: report_analytic
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: Analytic account to close
-#################################
+Object: Analytic account to close (report.analytic.account.close)
+#################################################################
 
 
 

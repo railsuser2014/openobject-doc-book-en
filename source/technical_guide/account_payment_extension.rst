@@ -1,4 +1,9 @@
 
+.. module:: account_payment_extension
+    :synopsis: Account Payment Extension
+    :noindex:
+.. 
+
 Account Payment Extension (*account_payment_extension*)
 =======================================================
 :Module: account_payment_extension

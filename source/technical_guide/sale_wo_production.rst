@@ -1,4 +1,9 @@
 
+.. module:: sale_wo_production
+    :synopsis: Sales Without production
+    :noindex:
+.. 
+
 Sales Without production (*sale_wo_production*)
 ===============================================
 :Module: sale_wo_production

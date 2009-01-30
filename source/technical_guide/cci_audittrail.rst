@@ -1,4 +1,9 @@
 
+.. module:: cci_audittrail
+    :synopsis: Audit Trail
+    :noindex:
+.. 
+
 Audit Trail (*cci_audittrail*)
 ==============================
 :Module: cci_audittrail

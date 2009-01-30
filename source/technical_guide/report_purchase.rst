@@ -1,4 +1,9 @@
 
+.. module:: report_purchase
+    :synopsis: Purchase Management - Reporting
+    :noindex:
+.. 
+
 Purchase Management - Reporting (*report_purchase*)
 ===================================================
 :Module: report_purchase
@@ -51,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Purchases Orders by Products
-####################################
+Object: Purchases Orders by Products (report.purchase.order.product)
+####################################################################
 
 
 
@@ -97,8 +102,8 @@ Object: Purchases Orders by Products
 
 
 
-Object: Purchases Orders by Categories
-######################################
+Object: Purchases Orders by Categories (report.purchase.order.category)
+#######################################################################
 
 
 

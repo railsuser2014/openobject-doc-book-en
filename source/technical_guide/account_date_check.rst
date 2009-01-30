@@ -1,4 +1,9 @@
 
+.. module:: account_date_check
+    :synopsis: Account Date check
+    :noindex:
+.. 
+
 Account Date check (*account_date_check*)
 =========================================
 :Module: account_date_check

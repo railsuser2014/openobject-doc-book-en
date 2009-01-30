@@ -1,4 +1,9 @@
 
+.. module:: analytic_user_function
+    :synopsis: Analytic User Function
+    :noindex:
+.. 
+
 Analytic User Function (*analytic_user_function*)
 =================================================
 :Module: analytic_user_function
@@ -50,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Relation table between users and products on a analytic account
-#######################################################################
+Object: Relation table between users and products on a analytic account (analytic_user_funct_grid)
+##################################################################################################
 
 
 

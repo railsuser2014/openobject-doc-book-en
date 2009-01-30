@@ -1,4 +1,9 @@
 
+.. module:: document
+    :synopsis: Integrated Document Management System
+    :noindex:
+.. 
+
 Integrated Document Management System (*document*)
 ==================================================
 :Module: document
@@ -55,8 +60,8 @@ Views
 Objects
 -------
 
-Object: Directory Content Type
-##############################
+Object: Directory Content Type (document.directory.content.type)
+################################################################
 
 
 
@@ -77,8 +82,8 @@ Object: Directory Content Type
 
 
 
-Object: document.configuration.wizard
-#####################################
+Object: document.configuration.wizard (document.configuration.wizard)
+#####################################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: product_listprice_upgrade
+    :synopsis: Product listprice upgrade
+    :noindex:
+.. 
+
 Product listprice upgrade (*product_listprice_upgrade*)
 =======================================================
 :Module: product_listprice_upgrade
@@ -32,8 +37,8 @@ None
 Menus
 -------
 
- * Products/Pricelists
- * Products/Pricelists/Upgrade Product List price
+ * Books/Pricelists
+ * Books/Pricelists/Upgrade Product List price
 
 Views
 -----

@@ -1,4 +1,9 @@
 
+.. module:: sale_margin_delivery
+    :synopsis: Margins in Sale Delivery Lines
+    :noindex:
+.. 
+
 Margins in Sale Delivery Lines (*sale_margin_delivery*)
 =======================================================
 :Module: sale_margin_delivery

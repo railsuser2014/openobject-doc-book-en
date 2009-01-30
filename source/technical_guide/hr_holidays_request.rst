@@ -1,4 +1,9 @@
 
+.. module:: hr_holidays_request
+    :synopsis: HR Holiday Request
+    :noindex:
+.. 
+
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request
@@ -63,8 +68,8 @@ Views
 Objects
 -------
 
-Object: Holidays history
-########################
+Object: Holidays history (hr.holidays.history)
+##############################################
 
 
 
@@ -151,8 +156,8 @@ Object: Holidays history
 
 
 
-Object: Holidays history
-########################
+Object: Holidays history (days.holidays.days)
+#############################################
 
 
 
@@ -215,8 +220,8 @@ Object: Holidays history
 
 
 
-Object: Public Holidays
-#######################
+Object: Public Holidays (public.holidays.days)
+##############################################
 
 
 
@@ -231,8 +236,8 @@ Object: Public Holidays
 
 
 
-Object: Holidays history
-########################
+Object: Holidays history (days.holidays.days.history)
+#####################################################
 
 
 

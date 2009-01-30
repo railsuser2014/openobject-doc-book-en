@@ -1,4 +1,9 @@
 
+.. module:: board_sale
+    :synopsis: Dashboard for sales
+    :noindex:
+.. 
+
 Dashboard for sales (*board_sale*)
 ==================================
 :Module: board_sale

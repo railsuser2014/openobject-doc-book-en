@@ -1,4 +1,9 @@
 
+.. module:: label
+    :synopsis: Partner labels
+    :noindex:
+.. 
+
 Partner labels (*label*)
 ========================
 :Module: label
@@ -48,8 +53,8 @@ Views
 Objects
 -------
 
-Object: report.pagesize
-#######################
+Object: report.pagesize (report.pagesize)
+#########################################
 
 
 
@@ -70,8 +75,8 @@ Object: report.pagesize
     *Numeric height of the page ended with the unit (cm or in). For example, A4 is 29.7cm and letter is 11in*
 
 
-Object: report.label.manufacturer
-#################################
+Object: report.label.manufacturer (report.label.manufacturer)
+#############################################################
 
 
 
@@ -80,8 +85,8 @@ Object: report.label.manufacturer
 
 
 
-Object: report.label
-####################
+Object: report.label (report.label)
+###################################
 
 
 

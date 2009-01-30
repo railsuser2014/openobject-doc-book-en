@@ -1,4 +1,9 @@
 
+.. module:: hr_performance
+    :synopsis: Performance Review
+    :noindex:
+.. 
+
 Performance Review (*hr_performance*)
 =====================================
 :Module: hr_performance
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: Employee Performance 
-#############################
+Object: Employee Performance  (hr.performance)
+##############################################
 
 
 
@@ -85,8 +90,8 @@ Object: Employee Performance
 
 
 
-Object: Performance Review Points
-#################################
+Object: Performance Review Points (hr.performance.line)
+#######################################################
 
 
 
@@ -125,8 +130,8 @@ Object: Performance Review Points
 
 
 
-Object: Review Attributes
-#########################
+Object: Review Attributes (hr.performance.line.attribute)
+#########################################################
 
 
 
@@ -147,8 +152,8 @@ Object: Review Attributes
 
 
 
-Object: Attributes Lines
-########################
+Object: Attributes Lines (attribute.line)
+#########################################
 
 
 

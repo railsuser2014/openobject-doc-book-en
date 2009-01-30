@@ -1,4 +1,9 @@
 
+.. module:: portal_analytic
+    :synopsis: Portal Management - Analytic Entries
+    :noindex:
+.. 
+
 Portal Management - Analytic Entries (*portal_analytic*)
 ========================================================
 :Module: portal_analytic

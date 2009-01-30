@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_ve
+    :synopsis: Venezuela -Chart of Account
+    :noindex:
+.. 
+
 Venezuela -Chart of Account (*l10n_chart_ve*)
 =============================================
 :Module: l10n_chart_ve

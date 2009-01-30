@@ -1,4 +1,9 @@
 
+.. module:: mrp_operations
+    :synopsis: Workcenter Production start end workflow
+    :noindex:
+.. 
+
 Workcenter Production start end workflow (*mrp_operations*)
 ===========================================================
 :Module: mrp_operations
@@ -77,8 +82,8 @@ Views
 Objects
 -------
 
-Object: mrp_operations.operation.code
-#####################################
+Object: mrp_operations.operation.code (mrp_operations.operation.code)
+#####################################################################
 
 
 
@@ -99,8 +104,8 @@ Object: mrp_operations.operation.code
 
 
 
-Object: mrp_operations.operation
-################################
+Object: mrp_operations.operation (mrp_operations.operation)
+###########################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: board
+    :synopsis: Dashboard main module
+    :noindex:
+.. 
+
 Dashboard main module (*board*)
 ===============================
 :Module: board
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: board.board
-###################
+Object: board.board (board.board)
+#################################
 
 
 
@@ -67,8 +72,8 @@ Object: board.board
 
 
 
-Object: board.board.line
-########################
+Object: board.board.line (board.board.line)
+###########################################
 
 
 
@@ -113,8 +118,8 @@ Object: board.board.line
 
 
 
-Object: board.note.type
-#######################
+Object: board.note.type (board.note.type)
+#########################################
 
 
 
@@ -123,8 +128,8 @@ Object: board.note.type
 
 
 
-Object: board.note
-##################
+Object: board.note (board.note)
+###############################
 
 
 

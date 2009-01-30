@@ -1,4 +1,9 @@
 
+.. module:: profile_bookstore
+    :synopsis: Bookstore Profile
+    :noindex:
+.. 
+
 Bookstore Profile (*profile_bookstore*)
 =======================================
 :Module: profile_bookstore

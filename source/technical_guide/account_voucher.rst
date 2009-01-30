@@ -1,4 +1,9 @@
 
+.. module:: account_voucher
+    :synopsis: Accounting - Voucher Management
+    :noindex:
+.. 
+
 Accounting - Voucher Management (*account_voucher*)
 ===================================================
 :Module: account_voucher
@@ -69,8 +74,8 @@ Views
 Objects
 -------
 
-Object: Accounting Voucher
-##########################
+Object: Accounting Voucher (account.voucher)
+############################################
 
 
 
@@ -175,8 +180,8 @@ Object: Accounting Voucher
 
 
 
-Object: Voucher Line
-####################
+Object: Voucher Line (account.voucher.line)
+###########################################
 
 
 

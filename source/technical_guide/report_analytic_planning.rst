@@ -1,4 +1,9 @@
 
+.. module:: report_analytic_planning
+    :synopsis: Analytic planning - Reporting
+    :noindex:
+.. 
+
 Analytic planning - Reporting (*report_analytic_planning*)
 ==========================================================
 :Module: report_analytic_planning
@@ -54,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Planning
-################
+Object: Planning (report_account_analytic.planning)
+###################################################
 
 
 
@@ -124,8 +129,8 @@ Object: Planning
 
 
 
-Object: Planning Line
-#####################
+Object: Planning Line (report_account_analytic.planning.line)
+#############################################################
 
 
 
@@ -188,8 +193,8 @@ Object: Planning Line
 
 
 
-Object: Planning account stat
-#############################
+Object: Planning account stat (report_account_analytic.planning.stat.account)
+#############################################################################
 
 
 
@@ -216,8 +221,8 @@ Object: Planning account stat
 
 
 
-Object: Planning stat
-#####################
+Object: Planning stat (report_account_analytic.planning.stat)
+#############################################################
 
 
 
@@ -262,8 +267,8 @@ Object: Planning stat
 
 
 
-Object: Planning user stat
-##########################
+Object: Planning user stat (report_account_analytic.planning.stat.user)
+#######################################################################
 
 
 

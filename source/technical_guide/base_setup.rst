@@ -1,4 +1,9 @@
 
+.. module:: base_setup
+    :synopsis: Base Setup
+    :noindex:
+.. 
+
 Base Setup (*base_setup*)
 =========================
 :Module: base_setup

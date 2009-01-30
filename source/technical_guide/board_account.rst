@@ -1,4 +1,9 @@
 
+.. module:: board_account
+    :synopsis: Board for accountant
+    :noindex:
+.. 
+
 Board for accountant (*board_account*)
 ======================================
 :Module: board_account

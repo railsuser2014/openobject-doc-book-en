@@ -1,4 +1,9 @@
 
+.. module:: account_tax_include
+    :synopsis: Invoices and prices with taxes included
+    :noindex:
+.. 
+
 Invoices and prices with taxes included (*account_tax_include*)
 ===============================================================
 :Module: account_tax_include

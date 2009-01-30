@@ -1,4 +1,9 @@
 
+.. module:: maintenance_editor
+    :synopsis: Base
+    :noindex:
+.. 
+
 Base (*maintenance_editor*)
 ===========================
 :Module: maintenance_editor
@@ -44,8 +49,8 @@ Views
 Objects
 -------
 
-Object: maintenance modules
-###########################
+Object: maintenance modules (maintenance.maintenance.module)
+############################################################
 
 
 
@@ -60,8 +65,8 @@ Object: maintenance modules
 
 
 
-Object: maintenance
-###################
+Object: maintenance (maintenance.maintenance)
+#############################################
 
 
 

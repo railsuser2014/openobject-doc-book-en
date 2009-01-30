@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_co
+    :synopsis: Colombia - Chart of Accounts
+    :noindex:
+.. 
+
 Colombia - Chart of Accounts (*l10n_chart_co*)
 ==============================================
 :Module: l10n_chart_co

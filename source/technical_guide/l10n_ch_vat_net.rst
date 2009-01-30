@@ -1,4 +1,9 @@
 
+.. module:: l10n_ch_vat_net
+    :synopsis: Switzerland - VAT Net
+    :noindex:
+.. 
+
 Switzerland - VAT Net (*l10n_ch_vat_net*)
 =========================================
 :Module: l10n_ch_vat_net

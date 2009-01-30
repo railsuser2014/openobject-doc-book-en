@@ -1,4 +1,9 @@
 
+.. module:: membership
+    :synopsis: Membership
+    :noindex:
+.. 
+
 Membership (*membership*)
 =========================
 :Module: membership
@@ -77,8 +82,8 @@ Views
 Objects
 -------
 
-Object: Member line
-###################
+Object: Member line (membership.membership_line)
+################################################
 
 
 
@@ -117,8 +122,8 @@ Object: Member line
 
 
 
-Object: Membership by Years
-###########################
+Object: Membership by Years (report.partner_member.year)
+########################################################
 
 
 
@@ -181,8 +186,8 @@ Object: Membership by Years
 
 
 
-Object: New Membership by Years
-###############################
+Object: New Membership by Years (report.partner_member.year_new)
+################################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_us_manufacturing
+    :synopsis: United States - Chart of Accounts for Manufacturing Profile
+    :noindex:
+.. 
+
 United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manufacturing*)
 ===========================================================================================
 :Module: l10n_chart_us_manufacturing

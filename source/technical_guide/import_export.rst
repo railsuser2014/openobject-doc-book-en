@@ -1,4 +1,9 @@
 
+.. module:: import_export
+    :synopsis: Import Export
+    :noindex:
+.. 
+
 Import Export (*import_export*)
 ===============================
 :Module: import_export

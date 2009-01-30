@@ -1,4 +1,9 @@
 
+.. module:: report_crm
+    :synopsis: CRM Management - Reporting
+    :noindex:
+.. 
+
 CRM Management - Reporting (*report_crm*)
 =========================================
 :Module: report_crm
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Cases by user and section
-#################################
+Object: Cases by user and section (report.crm.case.user)
+########################################################
 
 
 
@@ -116,8 +121,8 @@ Object: Cases by user and section
 
 
 
-Object: Cases by section and category
-#####################################
+Object: Cases by section and category (report.crm.case.categ)
+#############################################################
 
 
 

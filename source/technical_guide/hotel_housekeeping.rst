@@ -1,4 +1,9 @@
 
+.. module:: hotel_housekeeping
+    :synopsis: Hotel Housekeeping
+    :noindex:
+.. 
+
 Hotel Housekeeping (*hotel_housekeeping*)
 =========================================
 :Module: hotel_housekeeping
@@ -51,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Reservation
-###################
+Object: Reservation (hotel.housekeeping)
+########################################
 
 
 
@@ -103,8 +108,8 @@ Object: Reservation
 
 
 
-Object: Activity Type
-#####################
+Object: Activity Type (hotel.housekeeping.activity.type)
+########################################################
 
 
 
@@ -227,8 +232,8 @@ Object: Activity Type
     *This account will be used, instead of the default one, to value incoming stock for the current product*
 
 
-Object: Housekeeping Activity List
-##################################
+Object: Housekeeping Activity List (housekeeping.activity)
+##########################################################
 
 
 
@@ -243,8 +248,8 @@ Object: Housekeeping Activity List
 
 
 
-Object: Housekeeping Activities 
-################################
+Object: Housekeeping Activities  (hotel.housekeeping.activities)
+################################################################
 
 
 

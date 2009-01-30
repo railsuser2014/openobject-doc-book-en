@@ -1,4 +1,9 @@
 
+.. module:: discount_campaign
+    :synopsis: Discount on Marketing Campaigns
+    :noindex:
+.. 
+
 Discount on Marketing Campaigns (*discount_campaign*)
 =====================================================
 :Module: discount_campaign
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: discount.campaign
-#########################
+Object: discount.campaign (discount.campaign)
+#############################################
 
 
 
@@ -79,8 +84,8 @@ Object: discount.campaign
 
 
 
-Object: discount.campaign.line
-##############################
+Object: discount.campaign.line (discount.campaign.line)
+#######################################################
 
 
 

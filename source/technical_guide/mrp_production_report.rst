@@ -1,4 +1,9 @@
 
+.. module:: mrp_production_report
+    :synopsis: Production Report
+    :noindex:
+.. 
+
 Production Report (*mrp_production_report*)
 ===========================================
 :Module: mrp_production_report

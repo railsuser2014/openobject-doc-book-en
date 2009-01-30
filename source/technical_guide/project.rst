@@ -1,4 +1,9 @@
 
+.. module:: project
+    :synopsis: Project Management
+    :noindex:
+.. 
+
 Project Management (*project*)
 ==============================
 :Module: project
@@ -77,8 +82,8 @@ Views
 Objects
 -------
 
-Object: Project
-###############
+Object: Project (project.project)
+#################################
 
 
 
@@ -237,8 +242,8 @@ Object: Project
     *Percent of tasks closed according to the total of tasks todo.*
 
 
-Object: Project task type
-#########################
+Object: Project task type (project.task.type)
+#############################################
 
 
 
@@ -253,8 +258,8 @@ Object: Project task type
 
 
 
-Object: Task
-############
+Object: Task (project.task)
+###########################
 
 
 
@@ -437,8 +442,8 @@ Object: Task
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
 
-Object: Task Work
-#################
+Object: Task Work (project.task.work)
+#####################################
 
 
 
@@ -507,8 +512,8 @@ Object: Task Work
 
 
 
-Object: config.compute.remaining
-################################
+Object: config.compute.remaining (config.compute.remaining)
+###########################################################
 
 
 

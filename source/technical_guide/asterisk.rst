@@ -1,4 +1,9 @@
 
+.. module:: asterisk
+    :synopsis: Asterisk
+    :noindex:
+.. 
+
 Asterisk (*asterisk*)
 =====================
 :Module: asterisk
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: asterisk.server
-#######################
+Object: asterisk.server (asterisk.server)
+#########################################
 
 
 
@@ -83,8 +88,8 @@ Object: asterisk.server
 
 
 
-Object: IP Phone
-################
+Object: IP Phone (asterisk.phone)
+#################################
 
 
 

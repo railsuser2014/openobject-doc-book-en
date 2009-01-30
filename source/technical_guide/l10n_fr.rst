@@ -1,4 +1,9 @@
 
+.. module:: l10n_fr
+    :synopsis: France - Plan Comptable Général
+    :noindex:
+.. 
+
 France - Plan Comptable Général (*l10n_fr*)
 ===========================================
 :Module: l10n_fr

@@ -1,4 +1,9 @@
 
+.. module:: l10n_ch_vat_forfait
+    :synopsis: Switzerland - VAT Forfait
+    :noindex:
+.. 
+
 Switzerland - VAT Forfait (*l10n_ch_vat_forfait*)
 =================================================
 :Module: l10n_ch_vat_forfait

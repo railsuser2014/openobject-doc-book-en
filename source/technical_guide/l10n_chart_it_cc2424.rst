@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_it_cc2424
+    :synopsis: Italy - CC2424 - Chart of Accounts
+    :noindex:
+.. 
+
 Italy - CC2424 - Chart of Accounts (*l10n_chart_it_cc2424*)
 ===========================================================
 :Module: l10n_chart_it_cc2424

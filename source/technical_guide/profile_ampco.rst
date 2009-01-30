@@ -1,4 +1,9 @@
 
+.. module:: profile_ampco
+    :synopsis: AMPCO profile
+    :noindex:
+.. 
+
 AMPCO profile (*profile_ampco*)
 ===============================
 :Module: profile_ampco

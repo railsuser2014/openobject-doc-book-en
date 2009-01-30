@@ -1,4 +1,9 @@
 
+.. module:: base_language
+    :synopsis: Base Language
+    :noindex:
+.. 
+
 Base Language (*base_language*)
 ===============================
 :Module: base_language

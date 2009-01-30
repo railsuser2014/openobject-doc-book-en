@@ -1,4 +1,9 @@
 
+.. module:: crm_livechat
+    :synopsis: CRM - Livechat Jabber Client
+    :noindex:
+.. 
+
 CRM - Livechat Jabber Client (*crm_livechat*)
 =============================================
 :Module: crm_livechat
@@ -66,8 +71,8 @@ Views
 Objects
 -------
 
-Object: Livechat Account
-########################
+Object: Livechat Account (crm_livechat.jabber)
+##############################################
 
 
 
@@ -106,8 +111,8 @@ Object: Livechat Account
 
 
 
-Object: LiveChat Account
-########################
+Object: LiveChat Account (crm_livechat.livechat)
+################################################
 
 
 
@@ -140,8 +145,8 @@ Object: LiveChat Account
 
 
 
-Object: LiveChat Visitors
-#########################
+Object: LiveChat Visitors (crm_livechat.livechat.partner)
+#########################################################
 
 
 
@@ -174,8 +179,8 @@ Object: LiveChat Visitors
 
 
 
-Object: LiveChat Users
-######################
+Object: LiveChat Users (crm_livechat.livechat.user)
+###################################################
 
 
 
@@ -214,8 +219,8 @@ Object: LiveChat Users
 
 
 
-Object: LiveChat Log
-####################
+Object: LiveChat Log (crm_livechat.log)
+#######################################
 
 
 

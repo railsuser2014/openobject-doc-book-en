@@ -1,4 +1,9 @@
 
+.. module:: cci_translation
+    :synopsis: CCI Translation
+    :noindex:
+.. 
+
 CCI Translation (*cci_translation*)
 ===================================
 :Module: cci_translation
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Credit line
-###################
+Object: Credit line (credit.line)
+#################################
 
 
 
@@ -83,8 +88,8 @@ Object: Credit line
 
 
 
-Object: Translation Folder
-##########################
+Object: Translation Folder (translation.folder)
+###############################################
 
 
 
@@ -153,8 +158,8 @@ Object: Translation Folder
 
 
 
-Object: Letter of Credence
-##########################
+Object: Letter of Credence (letter.credence)
+############################################
 
 
 

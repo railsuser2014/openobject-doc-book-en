@@ -1,4 +1,9 @@
 
+.. module:: l10n_fr_pcg
+    :synopsis: France - Plan Comptable Général
+    :noindex:
+.. 
+
 France - Plan Comptable Général (*l10n_fr_pcg*)
 ===============================================
 :Module: l10n_fr_pcg
@@ -49,8 +54,8 @@ None
 Objects
 -------
 
-Object: Report for l10n_fr
-##########################
+Object: Report for l10n_fr (l10n.fr.report)
+###########################################
 
 
 
@@ -71,8 +76,8 @@ Object: Report for l10n_fr
 
 
 
-Object: Report Lines for l10n_fr
-################################
+Object: Report Lines for l10n_fr (l10n.fr.line)
+###############################################
 
 
 

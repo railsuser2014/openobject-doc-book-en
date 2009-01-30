@@ -1,4 +1,9 @@
 
+.. module:: sale_layout
+    :synopsis: sale_layout
+    :noindex:
+.. 
+
 sale_layout (*sale_layout*)
 ===========================
 :Module: sale_layout

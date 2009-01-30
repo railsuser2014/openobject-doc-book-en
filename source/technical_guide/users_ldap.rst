@@ -1,4 +1,9 @@
 
+.. module:: users_ldap
+    :synopsis: Authenticate users with ldap server
+    :noindex:
+.. 
+
 Authenticate users with ldap server (*users_ldap*)
 ==================================================
 :Module: users_ldap
@@ -41,8 +46,8 @@ Views
 Objects
 -------
 
-Object: res.company.ldap
-########################
+Object: res.company.ldap (res.company.ldap)
+###########################################
 
 
 

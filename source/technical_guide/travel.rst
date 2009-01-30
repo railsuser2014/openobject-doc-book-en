@@ -1,4 +1,9 @@
 
+.. module:: travel
+    :synopsis: Travel
+    :noindex:
+.. 
+
 Travel (*travel*)
 =================
 :Module: travel
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Partner
-###############
+Object: Partner (travel.hostel)
+###############################
 
 
 
@@ -281,8 +286,8 @@ Object: Partner
 
 
 
-Object: travel.airport
-######################
+Object: travel.airport (travel.airport)
+#######################################
 
 
 
@@ -303,8 +308,8 @@ Object: travel.airport
 
 
 
-Object: Product
-###############
+Object: Product (travel.room)
+#############################
 
 
 
@@ -794,8 +799,8 @@ Object: Product
 
 
 
-Object: Product
-###############
+Object: Product (travel.flight)
+###############################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: report_analytic_planning_delegate
+    :synopsis: Analytic planning - Delegation in the hierarchy
+    :noindex:
+.. 
+
 Analytic planning - Delegation in the hierarchy (*report_analytic_planning_delegate*)
 =====================================================================================
 :Module: report_analytic_planning_delegate

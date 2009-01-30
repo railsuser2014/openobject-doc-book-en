@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_pl
+    :synopsis: Poland - Chart of Accounts
+    :noindex:
+.. 
+
 Poland - Chart of Accounts (*l10n_chart_pl*)
 ============================================
 :Module: l10n_chart_pl

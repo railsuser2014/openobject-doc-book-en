@@ -1,4 +1,9 @@
 
+.. module:: account_payment_export
+    :synopsis: Payment Order Export
+    :noindex:
+.. 
+
 Payment Order Export (*account_payment_export*)
 ===============================================
 :Module: account_payment_export
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Payment Export History
-##############################
+Object: Payment Export History (account.pay)
+############################################
 
 
 
@@ -92,8 +97,8 @@ Object: Payment Export History
 
 
 
-Object: Payment Method For Export
-#################################
+Object: Payment Method For Export (payment.method)
+##################################################
 
 
 
@@ -108,8 +113,8 @@ Object: Payment Method For Export
 
 
 
-Object: Charges Codes For Export
-################################
+Object: Charges Codes For Export (charges.code)
+###############################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: warning
+    :synopsis: Module for Warnings form onchange Event
+    :noindex:
+.. 
+
 Module for Warnings form onchange Event (*warning*)
 ===================================================
 :Module: warning

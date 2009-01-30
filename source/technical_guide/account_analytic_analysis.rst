@@ -1,4 +1,9 @@
 
+.. module:: account_analytic_analysis
+    :synopsis: report_account_analytic
+    :noindex:
+.. 
+
 report_account_analytic (*account_analytic_analysis*)
 =====================================================
 :Module: account_analytic_analysis
@@ -58,8 +63,8 @@ Views
 Objects
 -------
 
-Object: Hours summary by user
-#############################
+Object: Hours summary by user (account_analytic_analysis.summary.user)
+######################################################################
 
 
 
@@ -80,8 +85,8 @@ Object: Hours summary by user
 
 
 
-Object: Hours summary by month
-##############################
+Object: Hours summary by month (account_analytic_analysis.summary.month)
+########################################################################
 
 
 

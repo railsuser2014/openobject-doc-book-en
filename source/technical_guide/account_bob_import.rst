@@ -1,4 +1,9 @@
 
+.. module:: account_bob_import
+    :synopsis: Import accounting entries from Bob
+    :noindex:
+.. 
+
 Import accounting entries from Bob (*account_bob_import*)
 =========================================================
 :Module: account_bob_import
@@ -51,8 +56,8 @@ Views
 Objects
 -------
 
-Object: config.bob.import
-#########################
+Object: config.bob.import (config.bob.import)
+#############################################
 
 
 
@@ -79,8 +84,8 @@ Object: config.bob.import
     *If this machine is the server, select 'locally' as the location.If this is the client machine, create a zip of the 'Bob' folder placed in Root(Drive Letter)://Program Files/Bob.Upload it and follow the further instructions.*
 
 
-Object: config.path.folder
-##########################
+Object: config.path.folder (config.path.folder)
+###############################################
 
 
 

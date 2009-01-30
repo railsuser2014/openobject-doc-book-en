@@ -1,4 +1,9 @@
 
+.. module:: portal_service
+    :synopsis: Portal Management - Service
+    :noindex:
+.. 
+
 Portal Management - Service (*portal_service*)
 ==============================================
 :Module: portal_service

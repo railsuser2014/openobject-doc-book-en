@@ -1,4 +1,9 @@
 
+.. module:: productivity_analysis
+    :synopsis: Productivity Analysis
+    :noindex:
+.. 
+
 Productivity Analysis (*productivity_analysis*)
 ===============================================
 :Module: productivity_analysis
@@ -42,8 +47,8 @@ Views
 Objects
 -------
 
-Object: Objects for Productivity Analysis
-#########################################
+Object: Objects for Productivity Analysis (productivity_analysis.models)
+########################################################################
 
 
 

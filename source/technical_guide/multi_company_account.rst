@@ -1,4 +1,9 @@
 
+.. module:: multi_company_account
+    :synopsis: Multi company for accounting module
+    :noindex:
+.. 
+
 Multi company for accounting module (*multi_company_account*)
 =============================================================
 :Module: multi_company_account

@@ -1,4 +1,9 @@
 
+.. module:: cci_security
+    :synopsis: CCI Security
+    :noindex:
+.. 
+
 CCI Security (*cci_security*)
 =============================
 :Module: cci_security

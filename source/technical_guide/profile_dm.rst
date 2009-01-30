@@ -1,4 +1,9 @@
 
+.. module:: profile_dm
+    :synopsis: Direct Marketing profile
+    :noindex:
+.. 
+
 Direct Marketing profile (*profile_dm*)
 =======================================
 :Module: profile_dm

@@ -1,4 +1,9 @@
 
+.. module:: project_retro_planning
+    :synopsis: Project Retro planning
+    :noindex:
+.. 
+
 Project Retro planning (*project_retro_planning*)
 =================================================
 :Module: project_retro_planning

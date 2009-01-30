@@ -1,4 +1,9 @@
 
+.. module:: product_search_reference
+    :synopsis: Products Search Reference
+    :noindex:
+.. 
+
 Products Search Reference (*product_search_reference*)
 ======================================================
 :Module: product_search_reference

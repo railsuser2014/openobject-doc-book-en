@@ -1,4 +1,9 @@
 
+.. module:: account_invoice_salesman
+    :synopsis: Salesman on invoices
+    :noindex:
+.. 
+
 Salesman on invoices (*account_invoice_salesman*)
 =================================================
 :Module: account_invoice_salesman

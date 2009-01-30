@@ -1,4 +1,9 @@
 
+.. module:: membership_card
+    :synopsis: Membership card
+    :noindex:
+.. 
+
 Membership card (*membership_card*)
 ===================================
 :Module: membership_card

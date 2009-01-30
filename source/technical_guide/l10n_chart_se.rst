@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_se
+    :synopsis: Sweden - Chart of Accounts
+    :noindex:
+.. 
+
 Sweden - Chart of Accounts (*l10n_chart_se*)
 ============================================
 :Module: l10n_chart_se

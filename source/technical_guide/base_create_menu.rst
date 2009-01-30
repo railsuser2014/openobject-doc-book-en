@@ -1,4 +1,9 @@
 
+.. module:: base_create_menu
+    :synopsis: Menu Wizard 
+    :noindex:
+.. 
+
 Menu Wizard  (*base_create_menu*)
 =================================
 :Module: base_create_menu

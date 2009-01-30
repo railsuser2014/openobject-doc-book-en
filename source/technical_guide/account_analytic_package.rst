@@ -1,4 +1,9 @@
 
+.. module:: account_analytic_package
+    :synopsis: account_analytic_package
+    :noindex:
+.. 
+
 account_analytic_package (*account_analytic_package*)
 =====================================================
 :Module: account_analytic_package
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: account.analytic.line.package
-#####################################
+Object: account.analytic.line.package (account.analytic.line.package)
+#####################################################################
 
 
 
@@ -108,8 +113,8 @@ Object: account.analytic.line.package
 
 
 
-Object: account.analytic.line.package.month
-###########################################
+Object: account.analytic.line.package.month (account.analytic.line.package.month)
+#################################################################################
 
 
 

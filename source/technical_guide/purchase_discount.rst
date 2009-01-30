@@ -1,4 +1,9 @@
 
+.. module:: purchase_discount
+    :synopsis: Purchase Order Lines With Discounts
+    :noindex:
+.. 
+
 Purchase Order Lines With Discounts (*purchase_discount*)
 =========================================================
 :Module: purchase_discount

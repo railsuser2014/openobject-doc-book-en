@@ -1,4 +1,9 @@
 
+.. module:: account_journal_visibility
+    :synopsis: Accounting journal visibility
+    :noindex:
+.. 
+
 Accounting journal visibility (*account_journal_visibility*)
 ============================================================
 :Module: account_journal_visibility

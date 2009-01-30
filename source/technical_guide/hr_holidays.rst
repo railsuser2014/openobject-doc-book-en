@@ -1,4 +1,9 @@
 
+.. module:: hr_holidays
+    :synopsis: Human Resources: Holidays management
+    :noindex:
+.. 
+
 Human Resources: Holidays management (*hr_holidays*)
 ====================================================
 :Module: hr_holidays
@@ -77,8 +82,8 @@ Views
 Objects
 -------
 
-Object: Holidays Status
-#######################
+Object: Holidays Status (hr.holidays.status)
+############################################
 
 
 
@@ -111,8 +116,8 @@ Object: Holidays Status
 
 
 
-Object: Holidays
-################
+Object: Holidays (hr.holidays)
+##############################
 
 
 
@@ -223,8 +228,8 @@ Object: Holidays
 
 
 
-Object: Holidays Per User
-#########################
+Object: Holidays Per User (hr.holidays.per.user)
+################################################
 
 
 
@@ -281,8 +286,8 @@ Object: Holidays Per User
 
 
 
-Object: hr.holidays.log
-#######################
+Object: hr.holidays.log (hr.holidays.log)
+#########################################
 
 
 

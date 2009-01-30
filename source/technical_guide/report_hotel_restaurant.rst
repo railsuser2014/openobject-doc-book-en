@@ -1,4 +1,9 @@
 
+.. module:: report_hotel_restaurant
+    :synopsis: Restaurant Management - Reporting
+    :noindex:
+.. 
+
 Restaurant Management - Reporting (*report_hotel_restaurant*)
 =============================================================
 :Module: report_hotel_restaurant
@@ -46,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Reservation By State
-############################
+Object: Reservation By State (report.hotel.restaurant.status)
+#############################################################
 
 
 

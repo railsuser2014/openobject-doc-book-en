@@ -1,4 +1,9 @@
 
+.. module:: portal
+    :synopsis: Portal Management
+    :noindex:
+.. 
+
 Portal Management (*portal*)
 ============================
 :Module: portal
@@ -54,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Portal
-##############
+Object: Portal (portal.portal)
+##############################
 
 
 
@@ -94,8 +99,8 @@ Object: Portal
 
 
 
-Object: Portal Model
-####################
+Object: Portal Model (portal.model)
+###################################
 
 
 
@@ -122,8 +127,8 @@ Object: Portal Model
 
 
 
-Object: portal.config.install_modules_wizard
-############################################
+Object: portal.config.install_modules_wizard (portal.config.install_modules_wizard)
+###################################################################################
 
 
 

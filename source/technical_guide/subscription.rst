@@ -1,4 +1,9 @@
 
+.. module:: subscription
+    :synopsis: Subscription and recurring operations
+    :noindex:
+.. 
+
 Subscription and recurring operations (*subscription*)
 ======================================================
 :Module: subscription
@@ -50,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Subscription document
-#############################
+Object: Subscription document (subscription.document)
+#####################################################
 
 
 
@@ -78,8 +83,8 @@ Object: Subscription document
 
 
 
-Object: Subscription document fields
-####################################
+Object: Subscription document fields (subscription.document.fields)
+###################################################################
 
 
 
@@ -100,8 +105,8 @@ Object: Subscription document fields
 
 
 
-Object: Subscription
-####################
+Object: Subscription (subscription.subscription)
+################################################
 
 
 
@@ -182,8 +187,8 @@ Object: Subscription
 
 
 
-Object: Subscription history
-############################
+Object: Subscription history (subscription.subscription.history)
+################################################################
 
 
 

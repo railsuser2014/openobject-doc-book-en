@@ -1,4 +1,9 @@
 
+.. module:: cci_crm
+    :synopsis: CCI CRM
+    :noindex:
+.. 
+
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Meeting Confidential Info
-#################################
+Object: Meeting Confidential Info (meeting.confidential.info)
+#############################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: fleet_maintenance
+    :synopsis: Manage the maintenance contracts of a product fleet
+    :noindex:
+.. 
+
 Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 =========================================================================
 :Module: fleet_maintenance

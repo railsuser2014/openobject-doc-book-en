@@ -1,4 +1,9 @@
 
+.. module:: auto_email_sale
+    :synopsis: Email Sale order
+    :noindex:
+.. 
+
 Email Sale order (*auto_email_sale*)
 ====================================
 :Module: auto_email_sale

@@ -1,4 +1,9 @@
 
+.. module:: stock_planning
+    :synopsis: Master Procurement Schedule
+    :noindex:
+.. 
+
 Master Procurement Schedule (*stock_planning*)
 ==============================================
 :Module: stock_planning
@@ -60,8 +65,8 @@ Views
 Objects
 -------
 
-Object: stock.planning.period
-#############################
+Object: stock.planning.period (stock.planning.period)
+#####################################################
 
 
 
@@ -88,8 +93,8 @@ Object: stock.planning.period
 
 
 
-Object: stock.period
-####################
+Object: stock.period (stock.period)
+###################################
 
 
 
@@ -116,8 +121,8 @@ Object: stock.period
 
 
 
-Object: stock.planning.sale.prevision
-#####################################
+Object: stock.planning.sale.prevision (stock.planning.sale.prevision)
+#####################################################################
 
 
 
@@ -174,8 +179,8 @@ Object: stock.planning.sale.prevision
 
 
 
-Object: stock.planning
-######################
+Object: stock.planning (stock.planning)
+#######################################
 
 
 

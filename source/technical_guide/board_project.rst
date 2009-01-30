@@ -1,4 +1,9 @@
 
+.. module:: board_project
+    :synopsis: Board for project users
+    :noindex:
+.. 
+
 Board for project users (*board_project*)
 =========================================
 :Module: board_project

@@ -1,4 +1,9 @@
 
+.. module:: city
+    :synopsis: City
+    :noindex:
+.. 
+
 City (*city*)
 =============
 :Module: city
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: City
-############
+Object: City (city.city)
+########################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: sale_expected_invoice_date
+    :synopsis: Sale Expected Invoice Date
+    :noindex:
+.. 
+
 Sale Expected Invoice Date (*sale_expected_invoice_date*)
 =========================================================
 :Module: sale_expected_invoice_date

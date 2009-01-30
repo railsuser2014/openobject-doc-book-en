@@ -1,4 +1,9 @@
 
+.. module:: sale_intercompany
+    :synopsis: Sale Inter-Company
+    :noindex:
+.. 
+
 Sale Inter-Company (*sale_intercompany*)
 ========================================
 :Module: sale_intercompany

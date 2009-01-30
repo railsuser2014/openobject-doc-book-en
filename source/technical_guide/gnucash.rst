@@ -1,4 +1,9 @@
 
+.. module:: gnucash
+    :synopsis: gnucash
+    :noindex:
+.. 
+
 gnucash (*gnucash*)
 ===================
 :Module: gnucash
@@ -44,8 +49,8 @@ Views
 Objects
 -------
 
-Object: gnucash.index
-#####################
+Object: gnucash.index (gnucash.index)
+#####################################
 
 
 

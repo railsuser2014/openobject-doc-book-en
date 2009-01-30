@@ -1,4 +1,9 @@
 
+.. module:: purchase_tax_include
+    :synopsis: Purchases with taxes included
+    :noindex:
+.. 
+
 Purchases with taxes included (*purchase_tax_include*)
 ======================================================
 :Module: purchase_tax_include

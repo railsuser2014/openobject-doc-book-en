@@ -1,4 +1,9 @@
 
+.. module:: account_regularization
+    :synopsis: Account Regularizations
+    :noindex:
+.. 
+
 Account Regularizations (*account_regularization*)
 ==================================================
 :Module: account_regularization
@@ -43,8 +48,8 @@ Views
 Objects
 -------
 
-Object: Account Regularization Model
-####################################
+Object: Account Regularization Model (account.regularization)
+#############################################################
 
 
 

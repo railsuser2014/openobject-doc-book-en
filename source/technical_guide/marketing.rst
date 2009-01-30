@@ -1,4 +1,9 @@
 
+.. module:: marketing
+    :synopsis: Marketing Campaigns
+    :noindex:
+.. 
+
 Marketing Campaigns (*marketing*)
 =================================
 :Module: marketing
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: campaign.campaign
-#########################
+Object: campaign.campaign (campaign.campaign)
+#############################################
 
 
 
@@ -101,8 +106,8 @@ Object: campaign.campaign
 
 
 
-Object: campaign.step
-#####################
+Object: campaign.step (campaign.step)
+#####################################
 
 
 
@@ -165,8 +170,8 @@ Object: campaign.step
 
 
 
-Object: campaign.partner
-########################
+Object: campaign.partner (campaign.partner)
+###########################################
 
 
 
@@ -253,8 +258,8 @@ Object: campaign.partner
 
 
 
-Object: campaign.partner.history
-################################
+Object: campaign.partner.history (campaign.partner.history)
+###########################################################
 
 
 

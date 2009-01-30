@@ -1,4 +1,9 @@
 
+.. module:: sale_supplier_direct_delivery
+    :synopsis: Automates direct delivery between a supplier and a customer
+    :noindex:
+.. 
+
 Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
 =============================================================================================
 :Module: sale_supplier_direct_delivery

@@ -1,4 +1,9 @@
 
+.. module:: mrp
+    :synopsis: Manufacturing Resource Planning
+    :noindex:
+.. 
+
 Manufacturing Resource Planning (*mrp*)
 =======================================
 :Module: mrp
@@ -57,7 +62,7 @@ Reports
 Menus
 -------
 
- * Manufacturing/Compute All Schedulers
+ * Stock Management/Compute All Schedulers
  * Manufacturing
  * Stock Management/Automatic Procurements
  * Manufacturing/Configuration
@@ -83,8 +88,8 @@ Menus
  * Stock Management/Automatic Procurements/Exceptions Procurements/Temporary Procurement Exceptions
  * Manufacturing/Procurement Orders/New Procurement
  * Stock Management/Automatic Procurements/Minimum Stock Rules
- * Manufacturing/Compute All Schedulers/Compute Procurements Only
- * Manufacturing/Compute All Schedulers/Compute Stock Minimum Rules Only
+ * Stock Management/Compute All Schedulers/Compute Procurements Only
+ * Stock Management/Compute All Schedulers/Compute Stock Minimum Rules Only
 
 Views
 -----
@@ -123,8 +128,8 @@ Views
 Objects
 -------
 
-Object: Workcenter
-##################
+Object: Workcenter (mrp.workcenter)
+###################################
 
 
 
@@ -229,8 +234,8 @@ Object: Workcenter
     *Time in hours for doing one cycle.*
 
 
-Object: Property Group
-######################
+Object: Property Group (mrp.property.group)
+###########################################
 
 
 
@@ -245,8 +250,8 @@ Object: Property Group
 
 
 
-Object: Property
-################
+Object: Property (mrp.property)
+###############################
 
 
 
@@ -273,8 +278,8 @@ Object: Property
 
 
 
-Object: Routing
-###############
+Object: Routing (mrp.routing)
+#############################
 
 
 
@@ -313,8 +318,8 @@ Object: Routing
     *Keep empty if you produce at the location where the finnished products are needed.Put a location if you produce at a fixed location. This can be a partner location if you subcontract the manufacturing operations.*
 
 
-Object: Routing workcenter usage
-################################
+Object: Routing workcenter usage (mrp.routing.workcenter)
+#########################################################
 
 
 
@@ -359,8 +364,8 @@ Object: Routing workcenter usage
 
 
 
-Object: Bill of Material
-########################
+Object: Bill of Material (mrp.bom)
+##################################
 
 
 
@@ -513,8 +518,8 @@ Object: Bill of Material
     *Reference to a position in an external plan.*
 
 
-Object: Bill of material revisions
-##################################
+Object: Bill of material revisions (mrp.bom.revision)
+#####################################################
 
 
 
@@ -559,8 +564,8 @@ Object: Bill of material revisions
 
 
 
-Object: Production
-##################
+Object: Production (mrp.production)
+###################################
 
 
 
@@ -743,8 +748,8 @@ Object: Production
     *This is the internal picking list take bring the raw materials to the production plan.*
 
 
-Object: Production workcenters used
-###################################
+Object: Production workcenters used (mrp.production.workcenter.line)
+####################################################################
 
 
 
@@ -843,8 +848,8 @@ Object: Production workcenters used
 
 
 
-Object: Production scheduled products
-#####################################
+Object: Production scheduled products (mrp.production.product.line)
+###################################################################
 
 
 
@@ -889,8 +894,8 @@ Object: Production scheduled products
 
 
 
-Object: Procurement
-###################
+Object: Procurement (mrp.procurement)
+#####################################
 
 
 
@@ -1038,8 +1043,8 @@ Object: Procurement
 
 
 
-Object: Orderpoint minimum rule
-###############################
+Object: Orderpoint minimum rule (stock.warehouse.orderpoint)
+############################################################
 
 
 

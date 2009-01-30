@@ -1,4 +1,9 @@
 
+.. module:: cci_base_contact
+    :synopsis: CCI Base Contact
+    :noindex:
+.. 
+
 CCI Base Contact (*cci_base_contact*)
 =====================================
 :Module: cci_base_contact
@@ -53,8 +58,8 @@ Views
 Objects
 -------
 
-Object: res.partner.contact.link.type
-#####################################
+Object: res.partner.contact.link.type (res.partner.contact.link.type)
+#####################################################################
 
 
 
@@ -63,8 +68,8 @@ Object: res.partner.contact.link.type
 
 
 
-Object: res.partner.contact.link
-################################
+Object: res.partner.contact.link (res.partner.contact.link)
+###########################################################
 
 
 

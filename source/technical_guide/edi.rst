@@ -1,4 +1,9 @@
 
+.. module:: edi
+    :synopsis: EDI
+    :noindex:
+.. 
+
 EDI (*edi*)
 ===========
 :Module: edi
@@ -44,8 +49,8 @@ Views
 Objects
 -------
 
-Object: EDI log
-###############
+Object: EDI log (edi.log)
+#########################
 
 
 
@@ -60,8 +65,8 @@ Object: EDI log
 
 
 
-Object: EDI Log Line
-####################
+Object: EDI Log Line (edi.log.line)
+###################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_lv
+    :synopsis: Latvia - Chart of Accounts
+    :noindex:
+.. 
+
 Latvia - Chart of Accounts (*l10n_chart_lv*)
 ============================================
 :Module: l10n_chart_lv

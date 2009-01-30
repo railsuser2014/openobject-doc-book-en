@@ -1,4 +1,9 @@
 
+.. module:: cci_mission
+    :synopsis: CCI mission
+    :noindex:
+.. 
+
 CCI mission (*cci_mission*)
 ===========================
 :Module: cci_mission
@@ -85,8 +90,8 @@ Views
 Objects
 -------
 
-Object: cci_missions.site
-#########################
+Object: cci_missions.site (cci_missions.site)
+#############################################
 
 
 
@@ -125,8 +130,8 @@ Object: cci_missions.site
 
 
 
-Object: cci_missions.embassy_folder
-###################################
+Object: cci_missions.embassy_folder (cci_missions.embassy_folder)
+#################################################################
 
 
 
@@ -531,8 +536,8 @@ Object: cci_missions.embassy_folder
 
 
 
-Object: cci_missions.embassy_folder_line 
-#########################################
+Object: cci_missions.embassy_folder_line  (cci_missions.embassy_folder_line)
+############################################################################
 
 
 
@@ -595,8 +600,8 @@ Object: cci_missions.embassy_folder_line
 
 
 
-Object: cci_missions.dossier_type
-#################################
+Object: cci_missions.dossier_type (cci_missions.dossier_type)
+#############################################################
 
 
 
@@ -659,8 +664,8 @@ Object: cci_missions.dossier_type
     *for the association with a pricelist*
 
 
-Object: cci_missions.dossier
-############################
+Object: cci_missions.dossier (cci_missions.dossier)
+###################################################
 
 
 
@@ -783,8 +788,8 @@ Object: cci_missions.dossier
 
 
 
-Object: cci_missions.custom_code
-################################
+Object: cci_missions.custom_code (cci_missions.custom_code)
+###########################################################
 
 
 
@@ -805,8 +810,8 @@ Object: cci_missions.custom_code
 
 
 
-Object: cci_missions.certificate
-################################
+Object: cci_missions.certificate (cci_missions.certificate)
+###########################################################
 
 
 
@@ -983,8 +988,8 @@ Object: cci_missions.certificate
 
 
 
-Object: cci_missions.legalization
-#################################
+Object: cci_missions.legalization (cci_missions.legalization)
+#############################################################
 
 
 
@@ -1137,8 +1142,8 @@ Object: cci_missions.legalization
 
 
 
-Object: cci_missions.courier_log
-################################
+Object: cci_missions.courier_log (cci_missions.courier_log)
+###########################################################
 
 
 
@@ -1273,8 +1278,8 @@ Object: cci_missions.courier_log
 
 
 
-Object: cci_missions.ata_usage
-##############################
+Object: cci_missions.ata_usage (cci_missions.ata_usage)
+#######################################################
 
 
 
@@ -1283,8 +1288,8 @@ Object: cci_missions.ata_usage
 
 
 
-Object: cci_missions.ata_carnet
-###############################
+Object: cci_missions.ata_carnet (cci_missions.ata_carnet)
+#########################################################
 
 
 
@@ -1491,8 +1496,8 @@ Object: cci_missions.ata_carnet
 
 
 
-Object: cci_missions.letters_log
-################################
+Object: cci_missions.letters_log (cci_missions.letters_log)
+###########################################################
 
 
 
@@ -1513,8 +1518,8 @@ Object: cci_missions.letters_log
 
 
 
-Object: Product Lines
-#####################
+Object: Product Lines (product.lines)
+#####################################
 
 
 

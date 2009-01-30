@@ -1,4 +1,9 @@
 
+.. module:: cci_timesheet
+    :synopsis: CCI Timesheet
+    :noindex:
+.. 
+
 CCI Timesheet (*cci_timesheet*)
 ===============================
 :Module: cci_timesheet
@@ -66,8 +71,8 @@ Views
 Objects
 -------
 
-Object: CCI Timesheet Grant
-###########################
+Object: CCI Timesheet Grant (cci_timesheet.grant)
+#################################################
 
 
 
@@ -88,8 +93,8 @@ Object: CCI Timesheet Grant
 
 
 
-Object: CCI Timesheet
-#####################
+Object: CCI Timesheet (cci.timesheet)
+#####################################
 
 
 
@@ -146,8 +151,8 @@ Object: CCI Timesheet
 
 
 
-Object: CCI Timesheet Line
-##########################
+Object: CCI Timesheet Line (cci_timesheet.line)
+###############################################
 
 
 
@@ -234,8 +239,8 @@ Object: CCI Timesheet Line
 
 
 
-Object: Timesheet Affectation
-#############################
+Object: Timesheet Affectation (cci_timesheet.affectation)
+#########################################################
 
 
 
@@ -286,8 +291,8 @@ Object: Timesheet Affectation
 
 
 
-Object: Report on Timesheet and Affectation
-###########################################
+Object: Report on Timesheet and Affectation (report.timesheet.affectation)
+##########################################################################
 
 
 

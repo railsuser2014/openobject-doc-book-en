@@ -1,4 +1,9 @@
 
+.. module:: l10n_be
+    :synopsis: Belgium - Plan Comptable Minimum Normalise
+    :noindex:
+.. 
+
 Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
 ======================================================
 :Module: l10n_be

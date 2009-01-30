@@ -1,4 +1,9 @@
 
+.. module:: lunch
+    :synopsis: Lunch Module
+    :noindex:
+.. 
+
 Lunch Module (*lunch*)
 ======================
 :Module: lunch
@@ -58,8 +63,8 @@ Views
 Objects
 -------
 
-Object: Category
-################
+Object: Category (lunch.category)
+#################################
 
 
 
@@ -68,8 +73,8 @@ Object: Category
 
 
 
-Object: lunch.product
-#####################
+Object: lunch.product (lunch.product)
+#####################################
 
 
 
@@ -102,8 +107,8 @@ Object: lunch.product
 
 
 
-Object: lunch.cashbox
-#####################
+Object: lunch.cashbox (lunch.cashbox)
+#####################################
 
 
 
@@ -124,8 +129,8 @@ Object: lunch.cashbox
 
 
 
-Object: lunch.cashmove
-######################
+Object: lunch.cashmove (lunch.cashmove)
+#######################################
 
 
 
@@ -164,8 +169,8 @@ Object: lunch.cashmove
 
 
 
-Object: lunch.order
-###################
+Object: lunch.order (lunch.order)
+#################################
 
 
 
@@ -210,8 +215,8 @@ Object: lunch.order
 
 
 
-Object: Amount available by user and box
-########################################
+Object: Amount available by user and box (report.lunch.amount)
+##############################################################
 
 
 

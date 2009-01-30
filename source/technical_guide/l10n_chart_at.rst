@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_at
+    :synopsis: Austria - Chart of Accounts
+    :noindex:
+.. 
+
 Austria - Chart of Accounts (*l10n_chart_at*)
 =============================================
 :Module: l10n_chart_at

@@ -1,4 +1,9 @@
 
+.. module:: sale_margin
+    :synopsis: Margins in Sale Orders
+    :noindex:
+.. 
+
 Margins in Sale Orders (*sale_margin*)
 ======================================
 :Module: sale_margin
@@ -60,8 +65,8 @@ Views
 Objects
 -------
 
-Object: report.account.invoice.product
-######################################
+Object: report.account.invoice.product (report.account.invoice.product)
+#######################################################################
 
 
 
@@ -112,8 +117,8 @@ Object: report.account.invoice.product
 
 
 
-Object: report.account.invoice.category
-#######################################
+Object: report.account.invoice.category (report.account.invoice.category)
+#########################################################################
 
 
 
@@ -164,8 +169,8 @@ Object: report.account.invoice.category
 
 
 
-Object: report.account.invoice.partner
-######################################
+Object: report.account.invoice.partner (report.account.invoice.partner)
+#######################################################################
 
 
 
@@ -216,8 +221,8 @@ Object: report.account.invoice.partner
 
 
 
-Object: report.account.invoice.partner.product
-##############################################
+Object: report.account.invoice.partner.product (report.account.invoice.partner.product)
+#######################################################################################
 
 
 
@@ -274,8 +279,8 @@ Object: report.account.invoice.partner.product
 
 
 
-Object: report.account.invoice
-##############################
+Object: report.account.invoice (report.account.invoice)
+#######################################################
 
 
 

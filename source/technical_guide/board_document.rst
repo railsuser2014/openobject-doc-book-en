@@ -1,4 +1,9 @@
 
+.. module:: board_document
+    :synopsis: Dashboard for Document Management
+    :noindex:
+.. 
+
 Dashboard for Document Management (*board_document*)
 ====================================================
 :Module: board_document

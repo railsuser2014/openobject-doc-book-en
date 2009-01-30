@@ -1,4 +1,9 @@
 
+.. module:: sale_delivery_report
+    :synopsis: Print Delivery Order
+    :noindex:
+.. 
+
 Print Delivery Order (*sale_delivery_report*)
 =============================================
 :Module: sale_delivery_report

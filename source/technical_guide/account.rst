@@ -1,4 +1,9 @@
 
+.. module:: account
+    :synopsis: Accounting and financial management
+    :noindex:
+.. 
+
 Accounting and financial management (*account*)
 ===============================================
 :Module: account
@@ -238,7 +243,7 @@ Views
  * account.fiscal.position.template.tree (tree)
  * account.invoice.calendar (calendar)
  * account.invoice.graph (graph)
- * account.invoice.line.tree (tree)
+ * Invoice lines (tree)
  * account.invoice.line.form (form)
  * account.invoice.tax.tree (tree)
  * account.invoice.tax.form (form)
@@ -269,8 +274,8 @@ Views
 Objects
 -------
 
-Object: Payment Term
-####################
+Object: Payment Term (account.payment.term)
+###########################################
 
 
 
@@ -303,8 +308,8 @@ Object: Payment Term
 
 
 
-Object: Payment Term Line
-#########################
+Object: Payment Term Line (account.payment.term.line)
+#####################################################
 
 
 
@@ -349,8 +354,8 @@ Object: Payment Term Line
 
 
 
-Object: Account Type
-####################
+Object: Account Type (account.account.type)
+###########################################
 
 
 
@@ -389,8 +394,8 @@ Object: Account Type
 
 
 
-Object: account.tax
-###################
+Object: account.tax (account.tax)
+#################################
 
 
 
@@ -567,8 +572,8 @@ Object: account.tax
     *Check this is the price you use on the product and invoices is including this tax.*
 
 
-Object: Account
-###############
+Object: Account (account.account)
+#################################
 
 
 
@@ -727,8 +732,8 @@ Object: Account
 
 
 
-Object: Journal View
-####################
+Object: Journal View (account.journal.view)
+###########################################
 
 
 
@@ -743,8 +748,8 @@ Object: Journal View
 
 
 
-Object: Journal Column
-######################
+Object: Journal Column (account.journal.column)
+###############################################
 
 
 
@@ -783,8 +788,8 @@ Object: Journal Column
 
 
 
-Object: Journal
-###############
+Object: Journal (account.journal)
+#################################
 
 
 
@@ -949,8 +954,8 @@ Object: Journal
     *Check this box if you don't want that new account moves pass through the 'draft' state and goes direclty to the 'posted state' without any manual validation.*
 
 
-Object: Fiscal Year
-###################
+Object: Fiscal Year (account.fiscalyear)
+########################################
 
 
 
@@ -1001,8 +1006,8 @@ Object: Fiscal Year
 
 
 
-Object: Account period
-######################
+Object: Account period (account.period)
+#######################################
 
 
 
@@ -1053,8 +1058,8 @@ Object: Account period
     *These periods can overlap.*
 
 
-Object: Journal - Period
-########################
+Object: Journal - Period (account.journal.period)
+#################################################
 
 
 
@@ -1093,8 +1098,8 @@ Object: Journal - Period
 
 
 
-Object: Account Entry
-#####################
+Object: Account Entry (account.move)
+####################################
 
 
 
@@ -1169,8 +1174,8 @@ Object: Account Entry
 
 
 
-Object: Account Reconciliation
-##############################
+Object: Account Reconciliation (account.move.reconcile)
+#######################################################
 
 
 
@@ -1203,8 +1208,8 @@ Object: Account Reconciliation
 
 
 
-Object: Tax Code
-################
+Object: Tax Code (account.tax.code)
+###################################
 
 
 
@@ -1273,8 +1278,8 @@ Object: Tax Code
 
 
 
-Object: Account Model
-#####################
+Object: Account Model (account.model)
+#####################################
 
 
 
@@ -1307,8 +1312,8 @@ Object: Account Model
 
 
 
-Object: Account Model Entries
-#############################
+Object: Account Model Entries (account.model.line)
+##################################################
 
 
 
@@ -1389,8 +1394,8 @@ Object: Account Model Entries
     *The optionnal quantity on entries*
 
 
-Object: Account Subscription
-############################
+Object: Account Subscription (account.subscription)
+###################################################
 
 
 
@@ -1447,8 +1452,8 @@ Object: Account Subscription
 
 
 
-Object: Account Subscription Line
-#################################
+Object: Account Subscription Line (account.subscription.line)
+#############################################################
 
 
 
@@ -1469,8 +1474,8 @@ Object: Account Subscription Line
 
 
 
-Object: account.config.wizard
-#############################
+Object: account.config.wizard (account.config.wizard)
+#####################################################
 
 
 
@@ -1509,8 +1514,8 @@ Object: account.config.wizard
     *Name of the fiscal year as displayed in reports.*
 
 
-Object: account.tax.template
-############################
+Object: account.tax.template (account.tax.template)
+###################################################
 
 
 
@@ -1669,8 +1674,8 @@ Object: account.tax.template
     *Usually 1 or -1.*
 
 
-Object: Templates for Accounts
-##############################
+Object: Templates for Accounts (account.account.template)
+#########################################################
 
 
 
@@ -1739,8 +1744,8 @@ Object: Templates for Accounts
     *Check this option if the user can make a reconciliation of the entries in this account.*
 
 
-Object: Tax Code Template
-#########################
+Object: Tax Code Template (account.tax.code.template)
+#####################################################
 
 
 
@@ -1785,8 +1790,8 @@ Object: Tax Code Template
 
 
 
-Object: Templates for Account Chart
-###################################
+Object: Templates for Account Chart (account.chart.template)
+############################################################
 
 
 
@@ -1855,8 +1860,8 @@ Object: Templates for Account Chart
 
 
 
-Object: Template for Fiscal Position
-####################################
+Object: Template for Fiscal Position (account.fiscal.position.template)
+#######################################################################
 
 
 
@@ -1883,8 +1888,8 @@ Object: Template for Fiscal Position
 
 
 
-Object: Fiscal Position Template Taxes Mapping
-##############################################
+Object: Fiscal Position Template Taxes Mapping (account.fiscal.position.tax.template)
+#####################################################################################
 
 
 
@@ -1905,8 +1910,8 @@ Object: Fiscal Position Template Taxes Mapping
 
 
 
-Object: Fiscal Position Template Accounts Mapping
-#################################################
+Object: Fiscal Position Template Accounts Mapping (account.fiscal.position.account.template)
+############################################################################################
 
 
 
@@ -1927,8 +1932,8 @@ Object: Fiscal Position Template Accounts Mapping
 
 
 
-Object: wizard.multi.charts.accounts
-####################################
+Object: wizard.multi.charts.accounts (wizard.multi.charts.accounts)
+###################################################################
 
 
 
@@ -1961,8 +1966,8 @@ Object: wizard.multi.charts.accounts
 
 
 
-Object: account.bank.accounts.wizard
-####################################
+Object: account.bank.accounts.wizard (account.bank.accounts.wizard)
+###################################################################
 
 
 
@@ -1983,8 +1988,8 @@ Object: account.bank.accounts.wizard
 
 
 
-Object: Analytic Accounts
-#########################
+Object: Analytic Accounts (account.analytic.account)
+####################################################
 
 
 
@@ -2281,8 +2286,8 @@ Object: Analytic Accounts
 
 
 
-Object: account.analytic.journal
-################################
+Object: account.analytic.journal (account.analytic.journal)
+###########################################################
 
 
 
@@ -2321,8 +2326,8 @@ Object: account.analytic.journal
     *Gives the type of the analytic journal. When a document (eg: an invoice) needs to create analytic entries, Open ERP will look for a matching journal of the same type.*
 
 
-Object: Fiscal Position
-#######################
+Object: Fiscal Position (account.fiscal.position)
+#################################################
 
 
 
@@ -2349,8 +2354,8 @@ Object: Fiscal Position
 
 
 
-Object: Fiscal Position Taxes Mapping
-#####################################
+Object: Fiscal Position Taxes Mapping (account.fiscal.position.tax)
+###################################################################
 
 
 
@@ -2371,8 +2376,8 @@ Object: Fiscal Position Taxes Mapping
 
 
 
-Object: Fiscal Position Accounts Mapping
-########################################
+Object: Fiscal Position Accounts Mapping (account.fiscal.position.account)
+##########################################################################
 
 
 
@@ -2393,8 +2398,8 @@ Object: Fiscal Position Accounts Mapping
 
 
 
-Object: Maintains Invoice sequences with Fiscal Year
-####################################################
+Object: Maintains Invoice sequences with Fiscal Year (fiscalyear.seq)
+#####################################################################
 
 
 
@@ -2415,8 +2420,8 @@ Object: Maintains Invoice sequences with Fiscal Year
 
 
 
-Object: Invoice
-###############
+Object: Invoice (account.invoice)
+#################################
 
 
 
@@ -2696,8 +2701,8 @@ Object: Invoice
 
 
 
-Object: Invoice line
-####################
+Object: Invoice line (account.invoice.line)
+###########################################
 
 
 
@@ -2886,8 +2891,8 @@ Object: Invoice line
 
 
 
-Object: Invoice Tax
-###################
+Object: Invoice Tax (account.invoice.tax)
+#########################################
 
 
 
@@ -2956,8 +2961,8 @@ Object: Invoice Tax
 
 
 
-Object: Bank Statement
-######################
+Object: Bank Statement (account.bank.statement)
+###############################################
 
 
 
@@ -3032,8 +3037,8 @@ Object: Bank Statement
 
 
 
-Object: Statement reconcile
-###########################
+Object: Statement reconcile (account.bank.statement.reconcile)
+##############################################################
 
 
 
@@ -3108,8 +3113,8 @@ Object: Statement reconcile
     *The amount in the currency of the journal*
 
 
-Object: Statement reconcile line
-################################
+Object: Statement reconcile line (account.bank.statement.reconcile.line)
+########################################################################
 
 
 
@@ -3136,8 +3141,8 @@ Object: Statement reconcile line
 
 
 
-Object: Bank Statement Line
-###########################
+Object: Bank Statement Line (account.bank.statement.line)
+#########################################################
 
 
 
@@ -3212,8 +3217,8 @@ Object: Bank Statement Line
 
 
 
-Object: Entry lines
-###################
+Object: Entry lines (account.move.line)
+#######################################
 
 
 
@@ -3456,8 +3461,8 @@ Object: Entry lines
     *The optional quantity expressed by this line, eg: number of product sold. The quantity is not a legal requirement but is very usefull for some reports.*
 
 
-Object: Analytic lines
-######################
+Object: Analytic lines (account.analytic.line)
+##############################################
 
 
 
@@ -3556,8 +3561,8 @@ Object: Analytic lines
 
 
 
-Object: Analytic account costs and revenues
-###########################################
+Object: Analytic account costs and revenues (report.hr.timesheet.invoice.journal)
+#################################################################################
 
 
 

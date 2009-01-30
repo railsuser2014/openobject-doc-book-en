@@ -1,4 +1,9 @@
 
+.. module:: report_timesheet
+    :synopsis: Timesheet - Reporting
+    :noindex:
+.. 
+
 Timesheet - Reporting (*report_timesheet*)
 ==========================================
 :Module: report_timesheet
@@ -63,8 +68,8 @@ Views
 Objects
 -------
 
-Object: Timesheet per day
-#########################
+Object: Timesheet per day (report_timesheet.user)
+#################################################
 
 
 
@@ -91,8 +96,8 @@ Object: Timesheet per day
 
 
 
-Object: Timesheet per account
-#############################
+Object: Timesheet per account (report_timesheet.account)
+########################################################
 
 
 
@@ -119,8 +124,8 @@ Object: Timesheet per account
 
 
 
-Object: Daily timesheet per account
-###################################
+Object: Daily timesheet per account (report_timesheet.account.date)
+###################################################################
 
 
 
@@ -147,8 +152,8 @@ Object: Daily timesheet per account
 
 
 
-Object: Costs to invoice
-########################
+Object: Costs to invoice (report_timesheet.invoice)
+###################################################
 
 
 

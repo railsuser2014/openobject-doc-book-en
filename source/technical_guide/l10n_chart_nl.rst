@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_nl
+    :synopsis: Netherlands - Chart of Accounts
+    :noindex:
+.. 
+
 Netherlands - Chart of Accounts (*l10n_chart_nl*)
 =================================================
 :Module: l10n_chart_nl

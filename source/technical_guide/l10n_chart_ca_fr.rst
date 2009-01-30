@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_ca_fr
+    :synopsis: Canadian - French - Chart of Acounts
+    :noindex:
+.. 
+
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 =========================================================
 :Module: l10n_chart_ca_fr

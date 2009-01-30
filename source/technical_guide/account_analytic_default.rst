@@ -1,4 +1,9 @@
 
+.. module:: account_analytic_default
+    :synopsis: Account Analytic Default
+    :noindex:
+.. 
+
 Account Analytic Default (*account_analytic_default*)
 =====================================================
 :Module: account_analytic_default
@@ -45,8 +50,8 @@ Views
 Objects
 -------
 
-Object: Analytic Distributions
-##############################
+Object: Analytic Distributions (account.analytic.default)
+#########################################################
 
 
 

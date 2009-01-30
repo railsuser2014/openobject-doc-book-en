@@ -1,4 +1,9 @@
 
+.. module:: demo_setup
+    :synopsis: Online Demo Setup Module
+    :noindex:
+.. 
+
 Online Demo Setup Module (*demo_setup*)
 =======================================
 :Module: demo_setup

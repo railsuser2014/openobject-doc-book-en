@@ -1,4 +1,9 @@
 
+.. module:: webmail
+    :synopsis: Webmail
+    :noindex:
+.. 
+
 Webmail (*webmail*)
 ===================
 :Module: webmail
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: User Configuration
-##########################
+Object: User Configuration (webmail.tiny.user)
+##############################################
 
 
 
@@ -65,8 +70,8 @@ Object: User Configuration
 
 
 
-Object: Mail Server Configuration
-#################################
+Object: Mail Server Configuration (webmail.server)
+##################################################
 
 
 
@@ -135,8 +140,8 @@ Object: Mail Server Configuration
 
 
 
-Object: User Mailbox
-####################
+Object: User Mailbox (webmail.mailbox)
+######################################
 
 
 
@@ -169,8 +174,8 @@ Object: User Mailbox
 
 
 
-Object: Email Tag
-#################
+Object: Email Tag (webmail.tags)
+################################
 
 
 
@@ -191,8 +196,8 @@ Object: Email Tag
 
 
 
-Object: User Email
-##################
+Object: User Email (webmail.email)
+##################################
 
 
 

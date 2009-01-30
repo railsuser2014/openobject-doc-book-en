@@ -1,4 +1,9 @@
 
+.. module:: cci_country
+    :synopsis: CCI Country
+    :noindex:
+.. 
+
 CCI Country (*cci_country*)
 ===========================
 :Module: cci_country
@@ -44,8 +49,8 @@ Views
 Objects
 -------
 
-Object: Country or Area for CCI
-###############################
+Object: Country or Area for CCI (cci.country)
+#############################################
 
 
 

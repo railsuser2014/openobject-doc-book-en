@@ -1,4 +1,9 @@
 
+.. module:: sale_advertising
+    :synopsis: Sales: Avertising Sales
+    :noindex:
+.. 
+
 Sales: Avertising Sales (*sale_advertising*)
 ============================================
 :Module: sale_advertising
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Sale Advertising Issue
-##############################
+Object: Sale Advertising Issue (sale.advertising.issue)
+#######################################################
 
 
 
@@ -83,8 +88,8 @@ Object: Sale Advertising Issue
 
 
 
-Object: Sale Advertising Proof
-##############################
+Object: Sale Advertising Proof (sale.advertising.proof)
+#######################################################
 
 
 

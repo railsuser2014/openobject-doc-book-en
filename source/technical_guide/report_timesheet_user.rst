@@ -1,4 +1,9 @@
 
+.. module:: report_timesheet_user
+    :synopsis: Report for timesheet
+    :noindex:
+.. 
+
 Report for timesheet (*report_timesheet_user*)
 ==============================================
 :Module: report_timesheet_user
@@ -52,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and company
-#################################
+Object: Tasks by user and company (report.timesheet.user.user)
+##############################################################
 
 
 
@@ -92,8 +97,8 @@ Object: Tasks by user and company
 
 
 
-Object: Tasks by company
-########################
+Object: Tasks by company (report.timesheet.user)
+################################################
 
 
 

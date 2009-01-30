@@ -1,4 +1,9 @@
 
+.. module:: product_qt
+    :synopsis: Products & Pricelists
+    :noindex:
+.. 
+
 Products & Pricelists (*product_qt*)
 ====================================
 :Module: product_qt
@@ -59,8 +64,8 @@ Views
 Objects
 -------
 
-Object: quality testings
-########################
+Object: quality testings (quality.test)
+#######################################
 
 
 
@@ -75,8 +80,8 @@ Object: quality testings
 
 
 
-Object: testing.result
-######################
+Object: testing.result (testing.result)
+#######################################
 
 
 
@@ -109,8 +114,8 @@ Object: testing.result
 
 
 
-Object: quality test configuration
-##################################
+Object: quality test configuration (quality.test.config)
+########################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_us_ucoa_ez
+    :synopsis: United States -Chart of Accounts for UCOA EZ Profile
+    :noindex:
+.. 
+
 United States -Chart of Accounts for UCOA EZ Profile (*l10n_chart_us_ucoa_ez*)
 ==============================================================================
 :Module: l10n_chart_us_ucoa_ez

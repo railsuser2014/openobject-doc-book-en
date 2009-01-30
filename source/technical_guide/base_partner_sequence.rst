@@ -1,4 +1,9 @@
 
+.. module:: base_partner_sequence
+    :synopsis: Add an automatic sequence on partners
+    :noindex:
+.. 
+
 Add an automatic sequence on partners (*base_partner_sequence*)
 ===============================================================
 :Module: base_partner_sequence

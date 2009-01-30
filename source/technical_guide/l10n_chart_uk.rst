@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_uk
+    :synopsis: United Kingdom Chart of Accounts
+    :noindex:
+.. 
+
 United Kingdom Chart of Accounts (*l10n_chart_uk*)
 ==================================================
 :Module: l10n_chart_uk

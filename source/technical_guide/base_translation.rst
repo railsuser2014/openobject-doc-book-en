@@ -1,4 +1,9 @@
 
+.. module:: base_translation
+    :synopsis: Translation
+    :noindex:
+.. 
+
 Translation (*base_translation*)
 ================================
 :Module: base_translation
@@ -49,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Translation Contribution
-################################
+Object: Translation Contribution (ir.translation.contribution)
+##############################################################
 
 
 

@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_ca_en
+    :synopsis: Canadian - English - Chart of Accounts
+    :noindex:
+.. 
+
 Canadian - English - Chart of Accounts (*l10n_chart_ca_en*)
 ===========================================================
 :Module: l10n_chart_ca_en

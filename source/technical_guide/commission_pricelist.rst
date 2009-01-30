@@ -1,4 +1,9 @@
 
+.. module:: commission_pricelist
+    :synopsis: Sale agent Information
+    :noindex:
+.. 
+
 Sale agent Information (*commission_pricelist*)
 ===============================================
 :Module: commission_pricelist
@@ -44,8 +49,8 @@ None
 Objects
 -------
 
-Object: Sale agent sale info
-############################
+Object: Sale agent sale info (sale.agent)
+#########################################
 
 
 

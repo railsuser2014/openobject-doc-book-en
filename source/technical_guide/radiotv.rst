@@ -1,4 +1,9 @@
 
+.. module:: radiotv
+    :synopsis: Tiny ERP TV & Radio Program Grid Module
+    :noindex:
+.. 
+
 Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 ===================================================
 :Module: radiotv
@@ -83,8 +88,8 @@ Views
 Objects
 -------
 
-Object: radiotv.program
-#######################
+Object: radiotv.program (radiotv.program)
+#########################################
 
 
 
@@ -183,8 +188,8 @@ Object: radiotv.program
 
 
 
-Object: radiotv.category
-########################
+Object: radiotv.category (radiotv.category)
+###########################################
 
 
 
@@ -205,8 +210,8 @@ Object: radiotv.category
 
 
 
-Object: radiotv.broadcast
-#########################
+Object: radiotv.broadcast (radiotv.broadcast)
+#############################################
 
 
 
@@ -245,8 +250,8 @@ Object: radiotv.broadcast
 
 
 
-Object: radiotv.channel
-#######################
+Object: radiotv.channel (radiotv.channel)
+#########################################
 
 
 
@@ -267,8 +272,8 @@ Object: radiotv.channel
 
 
 
-Object: radiotv.podcast
-#######################
+Object: radiotv.podcast (radiotv.podcast)
+#########################################
 
 
 
@@ -343,8 +348,8 @@ Object: radiotv.podcast
 
 
 
-Object: RadioTV website configuration
-#####################################
+Object: RadioTV website configuration (radiotv.web)
+###################################################
 
 
 

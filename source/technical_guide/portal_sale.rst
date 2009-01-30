@@ -1,4 +1,9 @@
 
+.. module:: portal_sale
+    :synopsis: Portal Sale Management
+    :noindex:
+.. 
+
 Portal Sale Management (*portal_sale*)
 ======================================
 :Module: portal_sale

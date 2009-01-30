@@ -1,4 +1,9 @@
 
+.. module:: invoice_sequence
+    :synopsis: Invoice lines with sequence number
+    :noindex:
+.. 
+
 Invoice lines with sequence number (*invoice_sequence*)
 =======================================================
 :Module: invoice_sequence

@@ -1,4 +1,9 @@
 
+.. module:: hr_contract
+    :synopsis: Human Resources Contracts
+    :noindex:
+.. 
+
 Human Resources Contracts (*hr_contract*)
 =========================================
 :Module: hr_contract
@@ -56,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Employee Marital Status
-###############################
+Object: Employee Marital Status (hr.employee.marital.status)
+############################################################
 
 
 
@@ -72,8 +77,8 @@ Object: Employee Marital Status
 
 
 
-Object: Wage Period
-###################
+Object: Wage Period (hr.contract.wage.type.period)
+##################################################
 
 
 
@@ -88,8 +93,8 @@ Object: Wage Period
     *This field is used by the timesheet system to compute the price of an hour of work wased on the contract of the employee*
 
 
-Object: Wage Type
-#################
+Object: Wage Type (hr.contract.wage.type)
+#########################################
 
 
 
@@ -116,8 +121,8 @@ Object: Wage Type
     *This field is used by the timesheet system to compute the price of an hour of work wased on the contract of the employee*
 
 
-Object: Contract
-################
+Object: Contract (hr.contract)
+##############################
 
 
 

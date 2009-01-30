@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_da
+    :synopsis: Denmark Chart of Accounts
+    :noindex:
+.. 
+
 Denmark Chart of Accounts (*l10n_chart_da*)
 ===========================================
 :Module: l10n_chart_da

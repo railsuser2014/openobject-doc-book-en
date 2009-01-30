@@ -1,4 +1,9 @@
 
+.. module:: huissier
+    :synopsis: Tiny ERP Huissiers
+    :noindex:
+.. 
+
 Tiny ERP Huissiers (*huissier*)
 ===============================
 :Module: huissier
@@ -44,17 +49,17 @@ None
 Objects
 -------
 
-Object: huissier.dossier
-########################
+Object: huissier.dossier (huissier.dossier)
+###########################################
 
 
-Object: huissier.lots
-#####################
+Object: huissier.lots (huissier.lots)
+#####################################
 
 
-Object: huissier.vignettes
-##########################
+Object: huissier.vignettes (huissier.vignettes)
+###############################################
 
 
-Object: huissier.deposit
-########################
+Object: huissier.deposit (huissier.deposit)
+###########################################

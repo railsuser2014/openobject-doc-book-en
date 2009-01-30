@@ -1,4 +1,9 @@
 
+.. module:: account_indian_report
+    :synopsis: Indian Account Reporting - Reporting
+    :noindex:
+.. 
+
 Indian Account Reporting - Reporting (*account_indian_report*)
 ==============================================================
 :Module: account_indian_report

@@ -1,4 +1,9 @@
 
+.. module:: crm_profiling
+    :synopsis: crm_profiling management
+    :noindex:
+.. 
+
 crm_profiling management (*crm_profiling*)
 ==========================================
 :Module: crm_profiling
@@ -57,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Question
-################
+Object: Question (crm_profiling.question)
+#########################################
 
 
 
@@ -85,8 +90,8 @@ Object: Question
 
 
 
-Object: Questionnaire
-#####################
+Object: Questionnaire (crm_profiling.questionnaire)
+###################################################
 
 
 
@@ -107,8 +112,8 @@ Object: Questionnaire
 
 
 
-Object: Answer
-##############
+Object: Answer (crm_profiling.answer)
+#####################################
 
 
 

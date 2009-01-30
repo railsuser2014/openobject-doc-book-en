@@ -1,4 +1,9 @@
 
+.. module:: l10n_chart_us_ucoa
+    :synopsis: United States - Chart of Accounts for UCOA
+    :noindex:
+.. 
+
 United States - Chart of Accounts for UCOA (*l10n_chart_us_ucoa*)
 =================================================================
 :Module: l10n_chart_us_ucoa

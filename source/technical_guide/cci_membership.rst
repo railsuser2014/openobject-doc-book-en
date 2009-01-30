@@ -1,4 +1,9 @@
 
+.. module:: cci_membership
+    :synopsis: CCI Membership
+    :noindex:
+.. 
+
 CCI Membership (*cci_membership*)
 =================================
 :Module: cci_membership

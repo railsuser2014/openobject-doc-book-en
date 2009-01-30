@@ -1,4 +1,9 @@
 
+.. module:: sale_journal
+    :synopsis: Managing sales and deliveries by journal
+    :noindex:
+.. 
+
 Managing sales and deliveries by journal (*sale_journal*)
 =========================================================
 :Module: sale_journal
@@ -98,8 +103,8 @@ Views
 Objects
 -------
 
-Object: Invoice Types
-#####################
+Object: Invoice Types (sale_journal.invoice.type)
+#################################################
 
 
 
@@ -126,8 +131,8 @@ Object: Invoice Types
 
 
 
-Object: Sale Journal
-####################
+Object: Sale Journal (sale_journal.sale.journal)
+################################################
 
 
 
@@ -184,8 +189,8 @@ Object: Sale Journal
 
 
 
-Object: Packings Journal
-########################
+Object: Packings Journal (sale_journal.picking.journal)
+#######################################################
 
 
 
@@ -242,8 +247,8 @@ Object: Packings Journal
 
 
 
-Object: Sales Orders by Journal
-###############################
+Object: Sales Orders by Journal (sale_journal.sale.stats)
+#########################################################
 
 
 
@@ -288,8 +293,8 @@ Object: Sales Orders by Journal
 
 
 
-Object: Stats on packings by invoice method
-###########################################
+Object: Stats on packings by invoice method (sale_journal.invoice.type.stats)
+#############################################################################
 
 
 
@@ -340,8 +345,8 @@ Object: Stats on packings by invoice method
 
 
 
-Object: Packing lists by Journal
-################################
+Object: Packing lists by Journal (sale_journal.picking.stats)
+#############################################################
 
 
 
