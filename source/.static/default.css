@@ -129,17 +129,17 @@ div.openobject-header td.headerpic {
 }
 
 td#menu-header {
-  background: transparent url(mainmenu_button_h29px.png) repeat-x scroll 0 0;
+  background: transparent url(mainmenu_button_h25px.png) repeat-x scroll 0 0;
   font-weight: bold;
   padding: 0px;
   text-align: center;
-  height: 29px;
+  height: 25px;
 }
 
 td#menu-breadcrumb {
   padding: 0px;
   /*border: 2px solid red;*/
-  height: 29px;
+  height: 25px;
 }
 
 td#menu-breadcrumb div {
@@ -207,7 +207,7 @@ div.related-tiny {
   background-color: #666;
   color:#FFF;
   width: 100%;
-  line-height: 28px;
+  line-height: 24px;
   font-size: 90%;
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
