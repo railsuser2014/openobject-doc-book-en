@@ -73,9 +73,9 @@ Where:
     * **self** is the pointer to the wizard object
     * **uid** is the user ID of the user which is executing the wizard
     * **data** is a dictionary containing the following data:
-          o ids: the list of ids of resources selected when the user executed the wizard
-          o id: the id highlighted when the user executed the wizard
-          o form: a dictionary containing all the values the user completed in the preceding forms. If you change values in this dictionary, the following forms will be pre-completed. 
+           * **ids**: the list of ids of resources selected when the user executed the wizard
+           * **id**: the id highlighted when the user executed the wizard
+           * **form**: a dictionary containing all the values the user completed in the preceding forms. If you change values in this dictionary, the following forms will be pre-completed. 
 
 The result
 
@@ -229,9 +229,16 @@ Specification
 
 Form
 ----
-::
 
-	TODO
+.. code-block:: xml
+
+
+	_form = '''<?xml version="1.0"?>
+	<form string="Your String">
+	    <field name="Field 1"/>
+	    <newline/>
+	    <field name="Field 2"/>
+	</form>'''
 
 Fields
 ------
