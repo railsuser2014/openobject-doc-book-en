@@ -1,5 +1,5 @@
 .. index::
-   single: Service Contracts
+   single: Contracts
 .. 
 
 Managing Service Contracts

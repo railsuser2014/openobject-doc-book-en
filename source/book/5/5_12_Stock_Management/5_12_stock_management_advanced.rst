@@ -14,6 +14,8 @@ Requirements calculation is the calculation engine that plans, prioritizes and ?
 
     It automatically starts once per day. You can also start it manually using the menu Manufacturing > Start All Schedulers. It then uses the parameters defined in the products, the suppliers, and the company to determine the priorities between the different product orders, deliveries and purchases from suppliers.
 
+.. index:: Just in Time
+
 Just in Time
 -------------
 
@@ -33,6 +35,9 @@ So the negative effects of working with the Just in Time module are:
 
 * Additional stocked products.
 
+.. index::
+   single: Planning; Stock Management
+
 Planning
 ----------
 
@@ -46,6 +51,9 @@ You've seen that most Open ERP documents can be changed in a planning view. It's
 The planned dates on a packing order are put on each stock move line. Then if you have a packing order containing several products you don't have to have all of the lines on the order delivered on the same day. The minimum and maximum dates on a packing order show the earliest and latest dates on the stock move lines for the packing.
 
 If you move a packing order in the calendar view, the planned date on the stock move lines will automatically be moved as a result.
+
+.. index::
+   single: Back Order
 
 Management of partial deliveries
 ---------------------------------
@@ -110,6 +118,9 @@ Confirmation by selecting products waiting
 The approach shown above is very useful if product receipt corresponds to the original orders. Only if your suppliers deliver items that don't necessarily coincide with the orders it is easier to work by products received rather than by orders.
 
 In this case you can manually create a new goods receipt using the menu *Stock Management > Incoming Products > New Reception Packing*. Instead of entering the product lines manually you can click the button at the lower right *Products not received*. Open ERP then opens all the products waiting from the selected supplier and you can then automatically add some or all of them on your form. This method of encoding is very useful when you're entering goods received at one time but from several orders.
+
+.. index::
+   single: Routing; Logistic
 
 Product routing
 ----------------

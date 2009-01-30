@@ -176,6 +176,8 @@ The invoices are then handled just like the controlled from On Order. Once the i
 
     To manage delivery charges, install the module *purchase_delivery*. This will automatically add delivery changes to the creation of the draft invoice  as a function of the products delivered or ordered.
 
+.. index:: Tender
+
 Tenders
 --------
 

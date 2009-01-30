@@ -113,9 +113,7 @@ To see the effects of this installation change the preferences of your user to c
 	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll simply get “use menu Administration > Translations > Load New Language”.
 
 
-.. index::
-  single: Internal Requests
-..
+.. index:: Requests
 
 Requests as a mechanism for internal communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

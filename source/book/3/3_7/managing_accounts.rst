@@ -1,7 +1,7 @@
 
 .. index::
-   single: Accounts payable
-.. 
+   single: Payable
+   single: Receivable
 
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================

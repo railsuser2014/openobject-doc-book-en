@@ -1,6 +1,5 @@
 .. index::
    single: Import-Export
-.. 
 
 Importing and exporting data
 =============================
@@ -16,6 +15,8 @@ The CSV file format is text format compatible with most spreadsheet programs (su
 .. index::
    single: Import-Export; CSV
 .. 
+
+.. index:: CSV
 
 The CSV format for complex database structures
 -----------------------------------------------
@@ -69,6 +70,8 @@ View the screenshots below to note the differences.
 *A one-to-many field: partner contacts*
 
 All of the other fields are coded in the CSV file as just one field in each column.
+
+.. index:: Relation Fields
 
 Many-to-one fields
 ^^^^^^^^^^^^^^^^^^^

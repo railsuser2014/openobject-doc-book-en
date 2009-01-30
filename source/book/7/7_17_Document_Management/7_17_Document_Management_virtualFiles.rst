@@ -1,4 +1,7 @@
 
+.. index::
+   single: Virtual; Files
+
 Virtual Files
 --------------
 

@@ -15,8 +15,8 @@ This section deals, in order, with
 You'll see here how to proceed with entering financial transactions. In Open ERP you use the same form for handling bank statements and for managing cash. The two types of transaction differ only in the journal that's used.
 
 .. index::
-   single: Bank statements
-.. 
+   single: Bank; Statements
+   single: Statement
 
 Managing bank statements
 ------------------------
@@ -160,6 +160,9 @@ Reconciliation in Open ERP can only be carried out in accounts that have been c
 
 There are different methods of reconciling entries. You've already seen the reconciliation of entries while doing data entry in an account. Automatic and manual reconciliations are described here.
 
+.. index::
+    single: Reconciliation; Automatic
+
 Automatic reconciliation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -201,6 +204,10 @@ The adjustment option enables you to reconcile entries even if their amounts are
 .. tip::   **Note**  *Default values* 
 
 	If you start the automatic reconciliation tool regularly you should set the default values for each field by pressing the Ctrl key and using the right-click mouse button (when the form is in edit mode using the web client, or just using the GTK client). This means that you won't have to re-type all the fields each time.
+
+
+.. index::
+    single: Reconciliation; Manual
 
 Manual reconciliation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -255,7 +262,7 @@ Open ERP generates the following account automatically:
 The two invoices and the payment will be reconciled in the first adjustment line. The two invoices will then be automatically marked as paid.
 
 .. index::
-   single: Payments Order
+   single: Payments
 .. 
 
 Management of payments

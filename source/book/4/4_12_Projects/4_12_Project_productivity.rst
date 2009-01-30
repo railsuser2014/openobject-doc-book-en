@@ -1,4 +1,6 @@
 
+.. index:: GTD
+
 The art of productivity without stress
 =======================================
 
@@ -79,6 +81,8 @@ A task can be put in one and only one timebox at a time.
 You should distinguish between a timebox and the deadline for completing a task because the deadline is usually fixed by the requirements of the project manager. A timebox, by contrast, is selected with reference to what an individual can do.
 
 To define timeboxes for your company, use the menu  *Project Management > Configuration > Time Management > Timeboxes > My timeboxes* .
+
+.. index:: Methodology; GTD
 
 Methodology and iterative process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

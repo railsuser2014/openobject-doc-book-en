@@ -20,6 +20,9 @@ For example, the group \ ``Stock``\ may only be given access to some of the menu
 
 Open ERP users can also belong to various roles. Just as group gives a user access rights, each role determines the user's duties. This is managed at the level of workflows, which form the company's business processes.
 
+.. index:: Groups
+.. index:: Users
+
 Groups and Users
 =================
 

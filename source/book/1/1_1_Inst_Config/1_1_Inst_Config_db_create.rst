@@ -2,6 +2,7 @@
    single: Database; Create
 .. 
 
+.. index:: Database
 
 Database creation
 =================

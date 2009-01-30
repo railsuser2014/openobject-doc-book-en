@@ -10,6 +10,9 @@ Periods and fiscal years
 
 Open ERP's management of the fiscal year is flexible enough to enable you to work on several years at the same time. This gives you several advantages, such as creating three-year budgets, and states straddling several calendar years.
 
+.. index:: Period
+.. index:: Fiscal Year
+
 Defining a period or a fiscal year
 ----------------------------------
 

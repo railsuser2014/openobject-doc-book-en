@@ -107,6 +107,9 @@ The person responsible for the technical tracking of the project is called the p
 
 If you don't make any such distinction in the roles then put the same person in both fields.
 
+.. index::
+   single: Invoicing; Tasks
+
 Invoicing tasks
 -----------------
 
@@ -119,30 +122,6 @@ Several methods of invoicing have already been reviewed:
 * invoicing on the basis of deliveries,
 
 * manual invoicing.
-
-Yet another method exists, however: invoicing the client from tasks as they're closed.
-
- *Pricelist*  *Price setting mode* 
-
-To do this, first configure the project with a Pricelist whose details will be printed out on the invoice. The different modes of invoicing in the field Price setting mode are
-
-*  *By project* 
-
-*  *By hour* 
-
-*  *By effective hour* : an hourly rate is established, and Open ERP uses the field  *Effective hours*  to create the invoice amount when the task is completed.
-
-The partner to be invoiced should be specified in the project definition. But if you have a multi-client project you can code a different client in each individual task. This means that you can set up generic Support projects and invoice each task to a different client.
-
- *Project Management > All Tasks > Billable Tasks*  *Bill tasks* 
-
-To be invoiced, the task must have been marked as such. Check the box  *To be invoiced*  in the tab  *Other info*  in the task definition form.
-
-.. tip::   **Note**  *Invoicing by project* 
-
-	If your invoicing is based on tasks at an agreed rate for each project, you can specify tasks at the start of a project or a phase. Then for each phase in a project that is to be invoiced you create a task receipt or delivery note.
-
-	When the task has been closed the account manager can automatically invoice all the projects or project phases showing on the list of tasks to invoice.
 
 Although invoicing tasks might appear useful in certain situations, it's best to invoice from the service or purchase orders instead. These methods of invoicing are more flexible, with various pricing levels set out in the pricelist, and different products that can be invoiced. And it's helpful to limit the number of invoicing methods in your company by extending the use of an invoicing method that you already have.
 
@@ -194,6 +173,8 @@ You can set an attendance grid (or the timesheets) in the project file. If you d
 	   :align: center
 
 *Calendar view of the system tasks*
+
+.. index:: Delegation
 
 Efficient delegation
 ---------------------

@@ -15,6 +15,8 @@ You'll probably also need your system's \ ``addons``\   directory to be writable
 
 You will need to have administrator access to your Windows PC to install the Outlook and Word interface adapters described in the chapter.
 
+.. index:: Outlook (Microsoft)
+
 Microsoft Outlook interface
 =============================
 

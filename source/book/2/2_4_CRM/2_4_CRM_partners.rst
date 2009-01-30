@@ -65,6 +65,8 @@ To send an SMS message to a partner or a selection of several partners, first se
 
 To create a company in Open ERP (that is – a new partner) you should at a minimum enter the company's  *Name*  in the partner form.
 
+.. index:: Contact
+
 Contacts
 ---------
 

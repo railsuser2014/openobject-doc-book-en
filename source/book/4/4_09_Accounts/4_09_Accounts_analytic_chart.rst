@@ -1,6 +1,5 @@
 .. index::
-   single: Analytic Chart of Accounts
-.. 
+   single: Chart of Accounts; Analytic
 
 To each enterprise its own analytic chart
 ===========================================

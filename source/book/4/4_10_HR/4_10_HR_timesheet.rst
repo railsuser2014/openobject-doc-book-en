@@ -212,6 +212,8 @@ The analyses of profitability by project and by employee are available from the 
 
  *Cost Ledger (only by quantity)* 
 
+.. index:: Department
+
 Managing by department
 -----------------------
 

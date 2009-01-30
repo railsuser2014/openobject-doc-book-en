@@ -1,4 +1,6 @@
 
+.. index:: Attachments
+
 Managing Attachments
 ---------------------
 

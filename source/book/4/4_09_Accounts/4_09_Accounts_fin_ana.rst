@@ -18,8 +18,7 @@ From an analytic form, click on the *Print* button to select a report. Open ERP
 *  *Cost Ledger (quantities only)* .
 
 .. index::
-   single: Analytic Balance
-.. 
+   single: Balance; Analytic
 
 Analytic Balance
 ^^^^^^^^^^^^^^^^^
@@ -48,8 +47,7 @@ The inverted analytic balance provides a similar report relating the general acc
 This enables you to analyze your costs by general account. For example, if you examine your general account for staff salaries you can obtain all your salary costs broken down by the different analytic (or project) accounts.
 
 .. index::
-   single: Cost ledger
-.. 
+   single: Cost ledger; Analytic
 
 The cost ledger
 ^^^^^^^^^^^^^^^^^

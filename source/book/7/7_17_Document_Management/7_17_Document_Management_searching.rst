@@ -1,4 +1,6 @@
 
+.. index:: Search
+
 Searching for documents
 ------------------------
 

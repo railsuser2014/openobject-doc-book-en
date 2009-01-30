@@ -1,6 +1,9 @@
 Stocks
 =======
 
+.. index::
+   single: Virtual; Stock
+
 In the product form you can find a report that will give you the stock levels of the various different products in any selected location. If you haven't selected any location, Open ERP calculates stocks for all of the physical locations.
 
 .. tip::   Availability of stock
@@ -10,10 +13,6 @@ In the product form you can find a report that will give you the stock levels of
 The different fields are:
 
 * Real stock: physical quantity present in your warehouse,
-
-* Incoming stock: forecast incoming quantity from sources such as supplier orders and current production,
-
-* Outgoing stock: forecast outgoing quantity to destinations such as customer deliveries and consumption by current production,
 
 * Virtual stock: calculated this way: real stock – outgoing + incoming.
 
@@ -56,6 +55,9 @@ The counterpart locations are automatically proposed by the system but the diffe
 * Procurement.
 
 A procurement location is a temporary location for stock moves that haven't yet been finalized by the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or production, Open ERP uses the counterpart location *Procurement*. You'll find there everything that hasn't yet been planned by the system. This location shows quantities of zero after each scheduling run.
+
+.. index:: Inventory
+
 
 Initial Inventory
 -----------------
