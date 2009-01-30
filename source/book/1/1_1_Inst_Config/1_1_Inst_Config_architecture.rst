@@ -2,6 +2,8 @@
    single: Open ERP architecture
 .. 
 
+.. index:: Architecture
+
 The architecture of Open ERP
 """""""""""""""""""""""""""""
 

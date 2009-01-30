@@ -1,6 +1,4 @@
-.. index::
-   single: Personalizing; Menu
-.. 
+.. index:: Menu
 
 Personalizing the menu
 =======================

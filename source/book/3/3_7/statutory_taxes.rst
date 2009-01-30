@@ -20,6 +20,9 @@ This section deals with statutory taxes and accounts which are legally required 
 
 	You can, for example, install the report_intrastat module for intra-stat declarations about sending goods to and receiving goods from other countries.
 
+
+.. index:: Tax
+
 Taxation
 --------
 
@@ -185,6 +188,8 @@ Select the accounting period you're interested in and click  *Open Charts* , the
 	More generally it enables you to make analyses using other simulation levels that you could expect..
 
 At the moment of writing this book a new module is in the final stages of development for Open ERP – \ ``account_reporting``\  . It's being developed to enable the use of configurable reports for balance sheets or earnings statement in legally required formats.
+
+.. index:: Journal
 
 The accounting journals
 -----------------------

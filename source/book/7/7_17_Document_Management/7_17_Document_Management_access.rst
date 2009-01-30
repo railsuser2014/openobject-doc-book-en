@@ -1,4 +1,6 @@
 
+.. index:: FTP
+
 Internal and external access using FTP
 ---------------------------------------
 

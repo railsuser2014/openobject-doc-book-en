@@ -1,6 +1,6 @@
 .. index::
-   single: Mozilla Thunderbird interface
-.. 
+   single: Thunderbird (Mozilla)
+
 
 Mozilla Thunderbird interface
 ===============================

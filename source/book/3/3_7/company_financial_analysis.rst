@@ -14,6 +14,8 @@ You'll see here the analysis tools for your company's financial situation, in pa
 
 * the accounting dashboard.
 
+.. index:: Indicators
+
 Management Indicators
 ---------------------
 

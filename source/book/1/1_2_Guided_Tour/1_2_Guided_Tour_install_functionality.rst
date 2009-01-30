@@ -13,9 +13,7 @@ You'll start by checking if there are any updates available online that apply to
 
 
 .. index::
-  single: Module; Upgrade Modules list
-..
-
+  single: Module; Upgrade Modules
 
 
 Updating the Modules list

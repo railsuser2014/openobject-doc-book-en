@@ -1,4 +1,7 @@
 
+.. index::
+   single: Scheduler; Lead Time
+
 Calculation of lead times
 =========================
 
@@ -89,6 +92,8 @@ The example above will then be given the following lead times:
 
 * Purchase BOIS02 (for PANLAT): 4 January (=12 January – 5 days – 3 days).
 
+.. index:: Work Orders
+
 Operations
 ===========
 
@@ -167,6 +172,9 @@ The second tab of the production order lets you define the links to analytical a
 
 *Data about analytic accounts for a workcenter.*
 
+.. index::
+   single: Routing; Manufacturing
+
 Routing
 --------
 
@@ -243,6 +251,8 @@ The following process is attached to each operation.
 Thanks to this use by operation, the real working time is recorded on the production order.
 
 The production order is automatically put into the state 'Running' once the first operation has been started. That consumes some raw materials. Similarly the production order is closed automatically once the last operation is completed. The finished products are then made.
+
+.. index:: Barcodes
 
 Scores, events and barcodes
 ============================
@@ -377,6 +387,8 @@ The calculation of requirements prioritises the procurements. If you encode a pu
 
     On the product form you have a shortcut to the left that lets you quickly create a new procurement order.
 
+.. index:: Waste Products
+
 Management of waste products and secondary products
 ====================================================
 
@@ -407,6 +419,8 @@ Secondary products enable you to generate several types of products from the sam
     Unlike most software for production management, Open ERP manages services as well as stockable products. So it's possible to put products of type *Service* in a Bill of Materials. These don't appear in the production order but their requirements will be taken into account.
 
     If they're defined as *Make to Order*. Open ERP will generate a task for the manufacture or a subcontract order for the operations. The behaviour will depend on the supply method configured on the product form *Buy* or *Produce*.
+
+.. index:: Repairs
 
 Management of repairs
 ======================
@@ -517,6 +531,9 @@ Once the customer approves the repair, use the menu *Manufacturing > Repairs > R
 * invoicing after repair.
 
 You can confirm the repair operation or create an invoice for the customer depending on this state.
+
+.. index::
+   single: Invoicing; Repair
 
 Invoicing the repair
 ---------------------

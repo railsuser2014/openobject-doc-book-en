@@ -14,6 +14,10 @@ Manufacturing will have the following consequences:
 
 * Added accounting value of stock: by the creation of value following the transformation of products.
 
+.. index:: BoM
+.. index:: Bill of Materials
+
+
 Bills of Materials
 ===================
 
@@ -234,6 +238,9 @@ TAQ000        12        Unit
 
 Table: Single manufacture from a tree-structured BoM
 
+.. index::
+   single: Phantom; Bill of Materials
+
 Phantom Bills of Materials
 ----------------------------
 
@@ -430,6 +437,9 @@ Once the quotation has been entered you can confirm it immediately by clicking t
 
 Start the requirements calculation using the menu *Manufacturing > Compute All Schedulers*.
 
+.. index::
+   Semi Finnished Product
+
 Producing an Intermediate Product
 -----------------------------------
 
@@ -521,6 +531,9 @@ The packing orders are treated by priority of leaving so the storesperson must b
 
     * delivery order.
 
+.. index::
+   single: Invoicing; At Delivery
+
 Invoicing at delivery
 ----------------------
 
@@ -564,6 +577,9 @@ Examples of the two traceability types are given in the by the following figures
 
 *Downstream traceability from supplier to customers.*
 
+.. index:: Manufacturing Order
+.. index:: Production Order
+
 Production order in detail
 ===========================
 
@@ -606,6 +622,8 @@ Once the order is confirmed, you should force the reservation of materials. This
 To start the production of products, click 'Start Production'. The raw materials are then consumed automatically from stock, which means that the draft movements become 'Done'.
 
 Once the production is complete, click 'Production Finished'. The finished product are then put into stock.
+
+.. index:: Scheduler
 
 Scheduling
 ===========

@@ -1,3 +1,5 @@
+.. index:: Warehouse
+
 Warehouses
 ===========
 
@@ -26,6 +28,8 @@ You can also set an address for the warehouse. This address should ideally be an
 
 * customer orders (using the definition of a point of sale).
 
+.. index:: Procurement
+
 Automatic procurement
 ------------------------
 
@@ -38,6 +42,9 @@ Several methods of automatically procuring products can be carried out by Open E
 * using the master production plan.
 
 The two last methods are described below.
+
+.. index:: Orderpoint
+.. index:: Minimum Stock Rule
 
 Minimum stock rules
 --------------------

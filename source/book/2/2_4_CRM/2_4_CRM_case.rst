@@ -301,6 +301,9 @@ To define new rules use the menu  *CRM & SRM > Configuration > Cases > Rules* .
 .. image::  images/crm_rule.png
    :align: center
 
+.. index:: 
+   single: Rule; Case
+
 *Screenshot of a rule*
 
 
@@ -418,6 +421,8 @@ You define the action that will be taken if the rule is met in the second tab of
 .. tip::   **Advantage**  *The CRM portal* 
 
 	Open ERP's portal_service module enables you to open parts of your CRM functionality to suppliers and customers. They can then connect to your system using their own login and follow their orders or requests online. For example the customer could make a support request directly in your system, perhaps avoiding a lengthy process of data entry.
+
+.. index:: Gateway
 
 Using the email gateway
 -------------------------

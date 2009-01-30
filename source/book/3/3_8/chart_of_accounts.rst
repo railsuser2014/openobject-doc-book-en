@@ -1,7 +1,6 @@
 
 .. index::
    single: Chart of Accounts
-.. 
 
 Chart of Accounts
 =================
@@ -83,6 +82,9 @@ The main account fields are:
 *  *Default Taxes* : this is the default tax applied to purchases or sales using this account. It enables the system to generate tax entries automatically when entering data in a journal manually.
 
 The tree structure of the accounts can be altered as often and as much as you wish without recalculating any of the individual entries. So you can easily restructure your account during the year to reflect the reality of the company better.
+
+.. index:: Consolidation (Accounting)
+.. index:: Virtual (Chart of Accounts)
 
 Using virtual charts of accounts
 --------------------------------

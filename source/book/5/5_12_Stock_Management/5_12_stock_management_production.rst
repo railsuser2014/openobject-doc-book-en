@@ -1,3 +1,6 @@
+.. index:: MPS
+.. index:: Master Production Schedule
+
 Master Production Schedule
 ===========================
 
@@ -8,6 +11,8 @@ The master production plan, sometimes called the MPS (Master Production Schedule
     Also called the Production Plan, this tools is also very useful for traded product which aren't manufactured. You can then use it for stock management with purchased and manufactured products.
 
 To be able to use the production plan, you must install the *stock_planning* module which can be found amongst Open ERP's extra_addons rather in the main set of addons.
+
+.. index:: Forecasts
 
 Sales Forecasts
 ----------------
@@ -32,6 +37,9 @@ Salespeople can then enter their sales forecasts by product and by period using 
        :align: center
 
 *Sales Forecast to help create a master production plan.*
+
+.. index::
+   single: Plan; Production
 
 Production Plan
 ----------------

@@ -1,6 +1,10 @@
 Import / Export
 ================
 
+.. index::
+   single: Export; Stock Management
+.. index:: Import; Stock Management
+
 Managing import / export with foreign companies can sometimes be very complex. Between a departure port and destination company, products can get stopped for several months at sea or somewhere in the numerous transportation stages and customs. If you have to manage numerous deliveries you must be able to handle this in the most efficient way you can. So it's important to:
 
 * know where your products are,
@@ -41,6 +45,8 @@ The transit location are linked between themselves with a manual confirmation st
 You can use the lead times between different locations to account for real delays.    Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of incoming products so that you can respond to a customer's needs as precisely as possible.
 
 You can also value the products in transit in your account depending on the chosen stock location configuration.
+
+.. index:: Rent
 
 Rental locations
 -----------------

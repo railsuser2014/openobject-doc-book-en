@@ -3,6 +3,8 @@ Logistics Configuration
 
 In this section you'll see how to configure stock management to match your company's needs. Open ERP can handle many different situations by configuring it to behave as needed. 
 
+.. index:: Location
+
 Stock locations
 ---------------
 
@@ -97,6 +99,8 @@ You use this system for managing consigned stocks:
 * supplier location that is valued in your own accounts or,
 
 * location in your own company that isn't valued in your accounts.
+
+.. index:: Chained Location
 
 Linked locations
 -----------------

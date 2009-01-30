@@ -1,6 +1,5 @@
 .. index::
    single: Workflows
-.. 
 
 Configuring workflows
 =======================

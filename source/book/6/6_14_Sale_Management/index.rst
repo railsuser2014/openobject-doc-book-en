@@ -1,3 +1,5 @@
+.. index:: Sales
+
 Management of Sales
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -173,6 +175,9 @@ Each of these three products has a different price. The products *Bottle of beer
 Management of Alerts
 =====================
 
+.. index:: Warning
+.. index:: Alerts
+
 To manage alerts on products or partners, you can install the *warning* module. Once that is installed, it will enable you to configure a series of alerts on the partners or products.
 
     .. image:: images/warning_partner.png
@@ -212,6 +217,8 @@ Control of deliveries and invoicing
 Configuration of orders
 ------------------------
 
+.. index:: Control
+
 Depending on the configuration of the order, several different possible consequences might follow. Three fields will determine the behaviour of the order:
 
 * Packing Policy : partial delivery, or complete delivery
@@ -236,6 +243,9 @@ If the packing mode is *Complete Delivery*, the packing list won't appear in the
 If the storesperson wants, the delivery mode can be modified on each packing list even after the order has been confirmed.
 
 In the case of invoicing on the basis of packing, the cost of delivering the products will be calculated on the basis of multiple deliveries. This risks a higher cost for the customer because of each delivery. If the invoicing is on the basis of the orders, the customer will only be invoiced once for the whole delivery, even if the delivery of several items has already been made.
+
+.. index:: Delivery Grid
+.. index:: Carriers
 
 Management of Carriers
 ========================

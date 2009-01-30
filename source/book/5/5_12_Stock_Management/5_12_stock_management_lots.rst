@@ -66,6 +66,8 @@ You'll sometimes want to assign a unique lot number to a set of several items. Y
 
 *Splitting a lot into uniquely identified parts.*
 
+.. index:: Traceability (Stock)
+
 Traceability
 -------------
 

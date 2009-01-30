@@ -7,6 +7,9 @@ For example, a large company may want to organize deliveries by department or wa
 
 A company that does a lot of transport can organize its journals by delivery vehicle. The different delivery orders will then be assigned to a journal representing a particular vehicle. Then if the vehicle has left the company you can confirm all the orders that are found in the journal all at the same time.
 
+.. index::
+   single: Journal; Stock Management
+
 The different journals
 -----------------------
 
