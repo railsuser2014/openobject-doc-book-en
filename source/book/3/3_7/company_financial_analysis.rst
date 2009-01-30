@@ -96,6 +96,9 @@ Open ERP manages its budgets using both General and Analytic Accounts. You'll s
 
 Use the menu  *Financial Management > Configuration > Budgets > General Budgets*  to define a new budget.
 
+.. index::
+   single: Budget Revisions
+
 .. tip::   **Advice**  *Budget Revisions* 
 
 	Even though you can modify a budget at any time to make a revision of it, it's best if you don't do that.

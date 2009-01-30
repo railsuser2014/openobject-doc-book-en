@@ -73,6 +73,8 @@ Finally you can look up individual account entries by searching for useful infor
   single: Follow-ups
 ..
 
+.. index:: Reminders
+
 Multi-step follow-ups
 ---------------------
 

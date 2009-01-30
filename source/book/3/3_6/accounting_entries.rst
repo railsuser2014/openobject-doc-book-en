@@ -1,4 +1,7 @@
 
+.. index::
+   single: Accounting Entry
+
 Accounting entries
 ==================
 

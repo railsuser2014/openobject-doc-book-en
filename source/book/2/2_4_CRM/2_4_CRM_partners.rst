@@ -51,6 +51,10 @@ To get a list of partners using demonstration data, use the menu  *Partners > Pa
 *The partner form*
 
 
+.. index::
+   single: Send SMS
+
+
 To the right of the partner form you'll find all of the actions, reports and shortcuts available to the selected partner. This enables you to quickly send an SMS message, for example, or review a partner's order history, or print a reminder letter.
 
 .. tip::   **Note**  *Send an SMS message* 

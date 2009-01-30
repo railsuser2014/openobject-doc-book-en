@@ -88,6 +88,9 @@ Open ERP supports three approaches to controlling data entry about products orde
 
 You'll see the configuration of the supplier order in detail in the chapter on purchases.
 
+.. index::
+   single: Goods receipt
+
 Manual data entry of goods receipt
 -----------------------------------
 

@@ -168,6 +168,9 @@ You can also assign multiple taxes to a Project, so that invoices from the Proje
 
 And you can assign multiple taxes to an account so that when you transfer money through the account you attract a tax amount. In such a case, this 'tax' may not be legally-required taxation but something tax-like, for example authors' royalties or sales commission.
 
+.. index::
+   single: Balance sheet
+
 The accounts ledgers and the balance sheet
 ------------------------------------------
 
@@ -236,6 +239,9 @@ Open ERP keeps a tax chart that you can reach from the menu  *Financial Managem
 
 	.. image::  images/account_tax_chart.png
 	   :align: center
+
+.. index::
+   single: TVA
 
 *Example of a Belgian TVA (VAT) declaration*
 

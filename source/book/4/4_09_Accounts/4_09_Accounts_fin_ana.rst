@@ -19,6 +19,7 @@ From an analytic form, click on the *Print* button to select a report. Open ERP
 
 .. index::
    single: Balance; Analytic
+   single: Analytic Balance
 
 Analytic Balance
 ^^^^^^^^^^^^^^^^^
@@ -80,6 +81,9 @@ To restrict the report to hours worked, without including sales and purchases, s
 	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. For that select account lines using the Ctrl-Click keyboard and mouse combination.
 
 	Then click on Print in the tree or list view to export the whole selection into a single PDF document.
+
+.. index::
+   single: Multi-company
 
 .. tip::   **Note**  *Multi-company* 
 

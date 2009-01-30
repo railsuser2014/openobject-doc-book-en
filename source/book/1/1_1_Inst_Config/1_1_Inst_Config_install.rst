@@ -27,8 +27,10 @@ This auto-installer enables you to install the whole system in just a few mouse-
 
 The first step is to download the Open ERP installer. At this stage you must choose which version to install – the stable version or the development version. If you're planning to put it straight into production you're strongly advised to choose the stable version.
 
-.. tip::   **Attention**  *Stable versions and development versions* 
+.. index::
+   single: Stable versions
 
+.. tip::   **Attention**  *Stable versions and development versions* 
 
 	Open ERP development proceeds on two parallel tracks: stable versions and development versions.
 
@@ -116,6 +118,9 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 	.. image:: images/new_login_dlg.png
 
 *Dialog box on connecting a GTK client to a new Open ERP server*
+
+.. index::
+   single: XML-RPC
 
 .. tip::   **Note**  *Connection modes* 
 
@@ -225,6 +230,9 @@ To download the PostgreSQL database and all of the other dependencies for Open 
 
 	#. Select \ ``python-xml``\   \ ``python-libxml2``\   \ ``python-libxslt1``\   \ ``python-psycopg``\  (not \ ``psycopg2``\   and its dependencies, \ ``python-tz``\   \ ``python-imaging``\   \ ``python-pyparsing``\   \ ``python-reportlab``\   \ ``graphviz``\  and its dependences, \ ``python-matplotlib``\  and its ependences (some of which might already be installed), then click  *Update Now* to install them.
 
+.. index::
+   single: Python
+
 .. tip::   **Language**  *Python* 
 
 	Python is the programming language that's been used to develop Tiny ERP and Open ERP. It's a dynamic, non-typed language that is at the same time object-oriented, procedural and functional. It comes with numerous libraries that provide interfaces to other languages and has the great advantage that it can be learnt in only a few days. It's the language of choice for large parts of NASA, Google and many other enterprises.
@@ -284,6 +292,9 @@ Open a terminal window to start the client using the command openerp-client. Whe
 Creating the database
 
 You can connect other GTK clients over the network to your Linux server. Before you leave your server, make sure you know its network address – either by its name (such as \ ``mycomputer.mycompany.net``\  ) or its IP address (such as \ ``192.168.0.123``\  ).
+
+.. index::
+   single: Port
 
 .. tip::   **Note**  *Different networks* 
 
@@ -382,8 +393,6 @@ You've used default parameters so far during the installation of the various com
 	#. The eTiny web server uses the NET-RPC protocol. If a GTK client works but eTiny doesn't then the problem is either with the NET-RPC port or with eTiny itself, and not with the Open ERP server.
 
 .. tip::   **A step further**  *One server for several companies* 
-
-
 
 	You can start several Open ERP application servers on one physical computer server by using different ports. If you have defined multiple database roles in PostgreSQL, each connected through an Open ERP instance to a different port, you can simultaneously serve many companies from one physical server at one time.
 
