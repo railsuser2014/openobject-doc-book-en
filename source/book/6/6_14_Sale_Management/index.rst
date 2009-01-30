@@ -363,34 +363,77 @@ If you want to calculate the exact delivery charges depending on the actual deli
 Delivery based on the packed items
 ----------------------------------
 
-To invoice the delivery on the basis of items packed you must indicate the delivery mode in the field 'carrier' on the <TODO>
+To invoice the delivery on the basis of items packed you must set the delivery mode in the field 'carrier' on *Other Information*, the second tab of the order. In this case you don't add this line at the level of the order but the delivery lines are added after the generation of invoices based on the items delivered.
+
+For this to work properly, your order must be set to the state 'Invoice on the basis of deliveries'. You can then confirm the order and validate the delivery.
+
+When the responsible manager has generated the invoices corresponding to the deliveries carried out, Open ERP automatically adds a line on each invoice corresponding to the delivery charge, calculated on the basis of the items actually sent.
 
 Margin Control
-----------------
+================
 
-<TODO>
+It's important to keep good control of margins in every company. Even if you have a good level of sales it won't guarantee company profitability if margins aren't high enough. Open ERP provides a number of systems for monitoring margins. You'll see the main ones are:
+
+* Margins on a sales order,
+
+* Margins by product,
+
+* Margins by project,
+
+* Using price lists.
 
 Margins on sales orders
 ------------------------------
 
-<TODO>
+If you want to check your margins on sales orders you can install the sale_margin module. This will add margins calculated on each order line and on the order total.
 
     .. image:: images/sale_margin.png
        :align: center
 
 *An order with the module sale_margin.*
 
-<TODO>
+The margin on each line is defined as the quantity sold multiplied by the sale price for the customer less the cost price of the products. By default, products are managed using standard price in Open ERP (cost price fixed manually and reviewed once per year). You can change that to “Average Weighted Price”, meaning that the product cost fluctuates with purchases from suppliers. After product receipt you can even add fixed costs such as delivery costs in the cost of each product.
 
-Margins by products
-====================
+Open ERP supports a third method of updating the cost price of products using the module *product_extended*. This will add a button on the product form which will permit you to automatically recalculate the cost price for the selected products. The cost price is then calculated as a function of the raw materials and the operations carried out (if the products have been manufactured internally so that you know their costs).
 
-<TODO>
+Margins by product
+--------------------
+
+To follow the margins by product, you should install the module *product_margin*. Once the module is installed you can look at the margins by product using the menu *Products > Reporting > Margins by Product*.
+
+When you've clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If no period is given, Open ERP will calculate margins on all of the operations without restriction. By default, however, Open ERP proposes a period of the last 12 months for analysis.
+
+You can also filter the analysis on certain types of invoice:
+
+* All invoices, including draft invoices not yet validated,
+
+* All open and/or paid invoices,
+
+* Paid invoices only.
 
     .. image:: images/product_margin_tree.png
        :align: center
 
 *Screen following product margins.*
+
+You then get a margin analysis table. The following fields are given by product for sales:
+
+* Average unit price: the average unit sale price,
+
+* List price: the list price based on this product,
+
+* # Invoices: the number of sold products that have been invoiced,
+
+* Product Turnover: the turnover for the product selected,
+
+* Sales Gap: the gap between the 
+
+* Sales Waiting: the number of products sold multiplied by the theoretical list price.
+
+    .. image:: images/product_margin_form.png
+       :align: center
+
+*Detail of margins for a given product.*
 
 <TODO>
 
