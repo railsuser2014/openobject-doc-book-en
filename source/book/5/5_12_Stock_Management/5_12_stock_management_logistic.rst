@@ -92,7 +92,11 @@ The same co-ordinates could also be used to structure the shelves, aisles and in
 Accounting valuation in real time
 ----------------------------------
 
-Open ERP can hold the value of your stock in real time in your accounts. Each stock move will then generate corresponding accounting entries in an accounting journal so that the two systems are permanently synchronized.
+If you have experience of managing with traditional software you'll know the problem of getting useful indicators. If you ask your accountant for a stock valuation or the value added by production he'll give you a figure. If you ask for the same figure from your stores manager you'll get an entirely different figure. It's terrible because you have no idea who's right.
+
+In Open ERP the management of stock is totally integrated with the accounts, to give strong coherence between the two systems. The double-entry structure of locations enables a very precise correspondance between stocks and accounts.
+
+Each stock movement also generates a corresponding accounting entry in an accounting journal to ensure that the two systems can stay in permanent synchronization.
 
 To do that, set up a general account for each location which must be valued in accounting. If a product goes to one location or another and the accounts are different in the two locations, Open ERP automatically generates the corresponding accounting entries in the accounts, in the stock journal.
 

@@ -47,6 +47,12 @@ So you can see that the sum of the stocks of a product in all the locations in O
 
 Partner locations (customers and suppliers) aren't located under your company in the hierarchical structure, so their contents are not considered as part of your own stock. So if you look just at the physical locations inside your own company those two bicycles are no longer in your company. They're not in your own physical stock but it's still very useful to see them in your customer's stock because that helps when you carry out detailed stock management analysis.
 
+.. tip:: **More information**  *Accounts*
+
+     In managing stock a gap between the data in the software and real quantities in stock is difficult to avoid. Double-entry stock management gives twice as many opportunities to find an error. If you forget two items of stock this error will automatically be reflected in the counterpart's location.
+
+You can make a comparison with accounting, where you'll easily find an error because you can look for an anomaly in an account or in the counterparts: if there's not enough in a bank account that's probably because someone's forgotten to enter a customer's invoice payment. You always know that the sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
+
 In accounting, all documents lead to accounting entries that form the basis of management accounting. If you create invoices or code in statements of account, for example, the results of the operations are accounting entries on accounts. And it's the same for stock management in Open ERP. All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture them, or carry out a stock inventory operation, stock moves are carried out every time.
 
 You've seen a fairly simple example of goods receipt and product delivery, but some operations are less obvious – a stock inventory operation, for example. An inventory operation is carried out when you compare the stock shown in software with real stock numbers counted in the stores. 
