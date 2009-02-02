@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Management - Account (*portal_account*)
 ==============================================
 :Module: portal_account
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * portal - installed
- * account - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`portal`
+ * :mod:`account`
+ * :mod:`mrp`
 
 Reports
 -------

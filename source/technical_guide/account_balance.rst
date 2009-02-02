@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting and financial management-Compare Accounts (*account_balance*)
 ========================================================================
 :Module: account_balance
@@ -35,7 +39,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Charts of Accounts (*account_chart*)
 ====================================
 :Module: account_chart
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

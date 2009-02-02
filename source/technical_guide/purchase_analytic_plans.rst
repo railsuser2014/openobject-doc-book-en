@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 =====================================================================
 :Module: purchase_analytic_plans
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
- * account_analytic_plans - installed
+ * :mod:`purchase`
+ * :mod:`account_analytic_plans`
 
 Reports
 -------

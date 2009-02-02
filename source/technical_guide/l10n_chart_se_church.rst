@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sweden - Church Chart of Account (*l10n_chart_se_church*)
 =========================================================
 :Module: l10n_chart_se_church
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_iban - installed
- * base_vat - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_iban`
+ * :mod:`base_vat`
+ * :mod:`account_chart`
 
 Reports
 -------

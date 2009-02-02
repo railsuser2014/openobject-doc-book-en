@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Email Invoice (*email_account*)
 ===============================
 :Module: email_account
@@ -31,8 +35,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * account - installed
+ * :mod:`smtpclient`
+ * :mod:`account`
 
 Reports
 -------

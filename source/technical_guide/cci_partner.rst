@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Partner (*cci_partner*)
 ===========================
 :Module: cci_partner
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * base_vat - installed
- * cci_base_contact - installed
- * account_l10nbe_domiciliation - installed
- * cci_country - installed
+ * :mod:`base`
+ * :mod:`base_vat`
+ * :mod:`cci_base_contact`
+ * :mod:`account_l10nbe_domiciliation`
+ * :mod:`cci_country`
 
 Reports
 -------

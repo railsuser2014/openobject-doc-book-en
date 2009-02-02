@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Indian Account Reporting - Reporting (*account_indian_report*)
 ==============================================================
 :Module: account_indian_report
@@ -26,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`account_chart`
 
 Reports
 -------

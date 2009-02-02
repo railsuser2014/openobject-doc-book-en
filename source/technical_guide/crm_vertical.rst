@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CRM Verticalisation (*crm_vertical*)
 ====================================
 :Module: crm_vertical
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * crm_configuration - installed
+ * :mod:`crm_configuration`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 eSale Interface - Joomla (*esale_joomla*)
 =========================================
 :Module: esale_joomla
@@ -30,11 +34,11 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * sale - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------

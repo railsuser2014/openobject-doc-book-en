@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Forecasts, goals and statistics (*sale_forecast*)
 =======================================================
 :Module: sale_forecast
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_invoice_salesman - installed
- * crm - installed
- * sale - installed
+ * :mod:`account`
+ * :mod:`account_invoice_salesman`
+ * :mod:`crm`
+ * :mod:`sale`
 
 Reports
 -------

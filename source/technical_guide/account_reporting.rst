@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Reporting of Balancesheet for accounting (*account_reporting*)
 ==============================================================
 :Module: account_reporting
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

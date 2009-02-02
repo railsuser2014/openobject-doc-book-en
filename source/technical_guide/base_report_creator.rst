@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report Creator (*base_report_creator*)
 ======================================
 :Module: base_report_creator
@@ -28,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * board - installed
+ * :mod:`base`
+ * :mod:`board`
 
 Reports
 -------

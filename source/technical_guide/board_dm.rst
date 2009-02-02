@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for DM users (*board_dm*)
 ===============================
 :Module: board_dm
@@ -30,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * dm - installed
+ * :mod:`board`
+ * :mod:`dm`
 
 Reports
 -------

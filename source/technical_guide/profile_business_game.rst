@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Bussiness Game (*profile_business_game*)
 ========================================
 :Module: profile_business_game
@@ -29,20 +33,20 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * base - installed
- * account - installed
- * game_scenario - uninstalled
- * purchase_approve - installed
- * sale - installed
- * sale_wo_production - installed
- * stock_planning - installed
- * crm_configuration - installed
- * mrp_jit - installed
- * l10n_fr - installed
- * account_budget - installed
- * sale_forecast - installed
- * product_margin - installed
+ * :mod:`board`
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`game_scenario`
+ * :mod:`purchase_approve`
+ * :mod:`sale`
+ * :mod:`sale_wo_production`
+ * :mod:`stock_planning`
+ * :mod:`crm_configuration`
+ * :mod:`mrp_jit`
+ * :mod:`l10n_fr`
+ * :mod:`account_budget`
+ * :mod:`sale_forecast`
+ * :mod:`product_margin`
 
 Reports
 -------

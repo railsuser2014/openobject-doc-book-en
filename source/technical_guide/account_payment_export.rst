@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Payment Order Export (*account_payment_export*)
 ===============================================
 :Module: account_payment_export
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base_vat - installed
- * base_iban - installed
- * account_payment - installed
+ * :mod:`base_vat`
+ * :mod:`base_iban`
+ * :mod:`account_payment`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Salesman on invoices (*account_invoice_salesman*)
 =================================================
 :Module: account_invoice_salesman
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

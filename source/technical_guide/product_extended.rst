@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product extension to track sales and purchases (*product_extended*)
 ===================================================================
 :Module: product_extended
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * purchase - installed
- * sale - installed
+ * :mod:`product`
+ * :mod:`purchase`
+ * :mod:`sale`
 
 Reports
 -------

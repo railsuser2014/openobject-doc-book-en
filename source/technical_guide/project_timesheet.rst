@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Timesheet (*project_timesheet*)
 =======================================
 :Module: project_timesheet
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
- * hr_timesheet - installed
+ * :mod:`base`
+ * :mod:`project`
+ * :mod:`hr_timesheet`
 
 Reports
 -------

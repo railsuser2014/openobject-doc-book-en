@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction module - Flagey Customs (*flagey*)
 ==========================================
 :Module: flagey
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * auction - installed
+ * :mod:`auction`
 
 Reports
 -------

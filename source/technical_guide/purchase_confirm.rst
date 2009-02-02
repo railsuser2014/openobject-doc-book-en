@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Confirm all selected purchase order at once (*purchase_confirm*)
 ================================================================
 :Module: purchase_confirm
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------

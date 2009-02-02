@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Security (*cci_security*)
 =============================
 :Module: cci_security
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * profile_cci - uninstalled
+ * :mod:`profile_cci`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources: Holidays management (*hr_holidays*)
 ====================================================
 :Module: hr_holidays
@@ -40,9 +44,9 @@ Description
 Dependencies
 ------------
 
- * hr - installed
- * crm_configuration - installed
- * process - installed
+ * :mod:`hr`
+ * :mod:`crm_configuration`
+ * :mod:`process`
 
 Reports
 -------

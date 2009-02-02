@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for project users (*board_project*)
 =========================================
 :Module: board_project
@@ -28,13 +32,13 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * report_timesheet - installed
- * board - installed
- * report_analytic_planning - installed
- * report_analytic_line - installed
- * report_task - installed
- * hr_timesheet_sheet - installed
+ * :mod:`project`
+ * :mod:`report_timesheet`
+ * :mod:`board`
+ * :mod:`report_analytic_planning`
+ * :mod:`report_analytic_line`
+ * :mod:`report_task`
+ * :mod:`hr_timesheet_sheet`
 
 Reports
 -------

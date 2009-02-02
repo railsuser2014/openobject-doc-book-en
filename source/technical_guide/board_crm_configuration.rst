@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for CRM Configuration (*board_crm_configuration*)
 ===========================================================
 :Module: board_crm_configuration
@@ -29,8 +33,8 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * crm_configuration - installed
+ * :mod:`board`
+ * :mod:`crm_configuration`
 
 Reports
 -------

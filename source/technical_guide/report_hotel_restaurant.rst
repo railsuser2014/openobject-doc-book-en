@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Restaurant Management - Reporting (*report_hotel_restaurant*)
 =============================================================
 :Module: report_hotel_restaurant
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hotel_restaurant - installed
+ * :mod:`hotel_restaurant`
 
 Reports
 -------

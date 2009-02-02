@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 =========================================================================
 :Module: fleet_maintenance
@@ -53,13 +57,13 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * stock - installed
- * sale - installed
- * crm_configuration - installed
- * account - installed
- * delivery - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`crm_configuration`
+ * :mod:`account`
+ * :mod:`delivery`
 
 Reports
 -------

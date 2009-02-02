@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
@@ -26,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
- * hr_contract - installed
+ * :mod:`base`
+ * :mod:`hr`
+ * :mod:`hr_contract`
 
 Reports
 -------

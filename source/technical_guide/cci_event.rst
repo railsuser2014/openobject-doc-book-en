@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI EVENT (*cci_event*)
 =======================
 :Module: cci_event
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * event_project - installed
- * account_payment - installed
- * membership - installed
- * cci_account - installed
- * cci_partner - installed
+ * :mod:`event_project`
+ * :mod:`account_payment`
+ * :mod:`membership`
+ * :mod:`cci_account`
+ * :mod:`cci_partner`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manufacturing*)
 ===========================================================================================
 :Module: l10n_chart_us_manufacturing
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

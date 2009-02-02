@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Google Map (*google_map*)
 =========================
 :Module: google_map
@@ -25,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Translation (*cci_translation*)
 ===================================
 :Module: cci_translation
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * cci_account - installed
+ * :mod:`base`
+ * :mod:`cci_account`
 
 Reports
 -------

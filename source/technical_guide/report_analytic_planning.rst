@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic planning - Reporting (*report_analytic_planning*)
 ==========================================================
 :Module: report_analytic_planning
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet_invoice - installed
- * project - installed
- * report_analytic_line - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`project`
+ * :mod:`report_analytic_line`
 
 Reports
 -------

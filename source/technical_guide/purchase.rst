@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Management (*purchase*)
 ================================
 :Module: purchase
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * stock - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`stock`
+ * :mod:`process`
 
 Reports
 -------

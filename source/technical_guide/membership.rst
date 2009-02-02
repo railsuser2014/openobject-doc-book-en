@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Membership (*membership*)
 =========================
 :Module: membership
@@ -32,10 +36,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`process`
 
 Reports
 -------

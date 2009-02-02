@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources (Timesheet encoding) (*hr_timesheet*)
 =====================================================
 :Module: hr_timesheet
@@ -31,11 +35,11 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr - installed
- * base - installed
- * hr_attendance - installed
- * process - installed
+ * :mod:`account`
+ * :mod:`hr`
+ * :mod:`base`
+ * :mod:`hr_attendance`
+ * :mod:`process`
 
 Reports
 -------

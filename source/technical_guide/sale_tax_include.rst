@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoices and prices with taxes included (*sale_tax_include*)
 ============================================================
 :Module: sale_tax_include
@@ -26,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * account_tax_include - installed
+ * :mod:`sale`
+ * :mod:`account_tax_include`
 
 Reports
 -------

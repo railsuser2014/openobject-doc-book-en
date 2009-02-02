@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Association profile (*profile_association*)
 ===========================================
 :Module: profile_association
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * membership - installed
- * board_association - installed
+ * :mod:`membership`
+ * :mod:`board_association`
 
 Reports
 -------

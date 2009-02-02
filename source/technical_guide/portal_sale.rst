@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Sale Management (*portal_sale*)
 ======================================
 :Module: portal_sale
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * portal - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`portal`
+ * :mod:`sale`
 
 Reports
 -------

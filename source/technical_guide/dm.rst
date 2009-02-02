@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Direct Marketing (*dm*)
 =======================
 :Module: dm
@@ -39,11 +43,11 @@ Description
 Dependencies
 ------------
 
- * project_retro_planning - installed
- * purchase - installed
- * purchase_tender - installed
- * base_language - installed
- * document - installed
+ * :mod:`project_retro_planning`
+ * :mod:`purchase`
+ * :mod:`purchase_tender`
+ * :mod:`base_language`
+ * :mod:`document`
 
 Reports
 -------

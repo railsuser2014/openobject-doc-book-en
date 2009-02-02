@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Production Report (*mrp_production_report*)
 ===========================================
 :Module: mrp_production_report
@@ -26,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * mrp - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`mrp`
+ * :mod:`sale`
 
 Reports
 -------

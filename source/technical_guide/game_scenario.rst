@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Scenario of games (*game_scenario*)
 ===================================
 :Module: game_scenario
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

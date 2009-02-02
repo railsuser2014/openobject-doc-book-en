@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 E-Commerce (*ecommerce*)
 ========================
 :Module: ecommerce
@@ -25,10 +29,10 @@ Description
 Dependencies
 ------------
 
- * delivery - installed
- * base - installed
- * product - installed
- * sale - installed
+ * :mod:`delivery`
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 China - Chart of Accounts (*l10n_chart_cn*)
 ===========================================
 :Module: l10n_chart_cn
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`account_chart`
 
 Reports
 -------

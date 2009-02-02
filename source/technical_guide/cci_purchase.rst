@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Purchase (*cci_purchase*)
 =============================
 :Module: cci_purchase
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * purchase - installed
+ * :mod:`base`
+ * :mod:`purchase`
 
 Reports
 -------

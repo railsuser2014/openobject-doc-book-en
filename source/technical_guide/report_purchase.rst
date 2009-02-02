@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Management - Reporting (*report_purchase*)
 ===================================================
 :Module: report_purchase
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------

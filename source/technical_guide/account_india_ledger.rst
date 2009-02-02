@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 India Accounting - Ledger (*account_india_ledger*)
 ==================================================
 :Module: account_india_ledger
@@ -24,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

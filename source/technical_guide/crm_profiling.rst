@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 crm_profiling management (*crm_profiling*)
 ==========================================
 :Module: crm_profiling
@@ -32,8 +36,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm - installed
+ * :mod:`base`
+ * :mod:`crm`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi company for accounting module (*multi_company_account*)
 =============================================================
 :Module: multi_company_account
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account_budget - installed
- * account - installed
- * multi_company - installed
+ * :mod:`base`
+ * :mod:`account_budget`
+ * :mod:`account`
+ * :mod:`multi_company`
 
 Reports
 -------

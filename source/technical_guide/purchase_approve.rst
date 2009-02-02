@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Approve PO automatically when confirmed. (*purchase_approve*)
 =============================================================
 :Module: purchase_approve
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------

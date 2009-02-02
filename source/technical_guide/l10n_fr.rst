@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 France - Plan Comptable Général (*l10n_fr*)
 ===========================================
 :Module: l10n_fr
@@ -25,11 +29,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_chart - installed
- * account_report - installed
- * base_vat - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_chart`
+ * :mod:`account_report`
+ * :mod:`base_vat`
 
 Reports
 -------

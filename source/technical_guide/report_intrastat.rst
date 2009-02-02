@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Intrastat Reporting - Reporting (*report_intrastat*)
 ====================================================
 :Module: report_intrastat
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * stock - installed
- * sale - installed
- * purchase - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

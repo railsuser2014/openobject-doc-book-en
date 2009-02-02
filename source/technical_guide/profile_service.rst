@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Service company profile (*profile_service*)
 ===========================================
 :Module: profile_service
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * hr - installed
- * project - installed
- * board_project - installed
- * account_analytic_analysis - installed
+ * :mod:`hr`
+ * :mod:`project`
+ * :mod:`board_project`
+ * :mod:`account_analytic_analysis`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auto Email Stock Picking (*auto_email_stock*)
 =============================================
 :Module: auto_email_stock
@@ -26,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * stock - installed
+ * :mod:`smtpclient`
+ * :mod:`stock`
 
 Reports
 -------

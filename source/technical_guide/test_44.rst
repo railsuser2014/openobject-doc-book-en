@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Test New Features (*test_44*)
 =============================
 :Module: test_44
@@ -25,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

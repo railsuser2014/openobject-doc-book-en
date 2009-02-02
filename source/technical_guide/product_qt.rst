@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products & Pricelists (*product_qt*)
 ====================================
 :Module: product_qt
@@ -27,11 +31,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
- * product - installed
- * stock - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`process`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`mrp`
 
 Reports
 -------

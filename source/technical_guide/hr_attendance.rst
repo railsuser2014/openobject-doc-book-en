@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Attendances Of Employees (*hr_attendance*)
 ==========================================
 :Module: hr_attendance
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
+ * :mod:`base`
+ * :mod:`hr`
 
 Reports
 -------

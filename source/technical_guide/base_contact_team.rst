@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Contact Team (*base_contact_team*)
 =======================================
 :Module: base_contact_team
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base_contact - installed
+ * :mod:`base_contact`
 
 Reports
 -------

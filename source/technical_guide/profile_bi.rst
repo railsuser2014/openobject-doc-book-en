@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Business Intelligence profile (*profile_bi*)
 ============================================
 :Module: profile_bi
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * olap - unknown
+ * :mod:`olap`
 
 Reports
 -------

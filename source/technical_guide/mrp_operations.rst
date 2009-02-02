@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Workcenter Production start end workflow (*mrp_operations*)
 ===========================================================
 :Module: mrp_operations
@@ -44,11 +48,11 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * hr - installed
- * purchase - installed
- * product - installed
- * mrp - installed
+ * :mod:`stock`
+ * :mod:`hr`
+ * :mod:`purchase`
+ * :mod:`product`
+ * :mod:`mrp`
 
 Reports
 -------

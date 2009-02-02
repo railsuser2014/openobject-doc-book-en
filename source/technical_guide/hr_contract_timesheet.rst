@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 =================================================================
 :Module: hr_contract_timesheet
@@ -25,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * hr_contract - installed
- * hr_timesheet - installed
+ * :mod:`hr_contract`
+ * :mod:`hr_timesheet`
 
 Reports
 -------

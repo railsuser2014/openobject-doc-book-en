@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Management - Service (*portal_service*)
 ==============================================
 :Module: portal_service
@@ -23,13 +27,13 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * portal - installed
- * project - installed
- * crm - installed
- * account_analytic_analysis - installed
- * hr_timesheet_invoice - installed
- * scrum - installed
+ * :mod:`base`
+ * :mod:`portal`
+ * :mod:`project`
+ * :mod:`crm`
+ * :mod:`account_analytic_analysis`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`scrum`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report designer interface module (*base_report_designer*)
 =========================================================
 :Module: base_report_designer
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

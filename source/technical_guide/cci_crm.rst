@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_configuration - installed
- * event - installed
- * cci_partner - installed
+ * :mod:`base`
+ * :mod:`crm_configuration`
+ * :mod:`event`
+ * :mod:`cci_partner`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report for timesheet (*report_timesheet_user*)
 ==============================================
 :Module: report_timesheet_user
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet_sheet - installed
- * multi_company - installed
+ * :mod:`hr_timesheet_sheet`
+ * :mod:`multi_company`
 
 Reports
 -------

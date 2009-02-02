@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Integrated Document Management System (*document_webdav_old*)
 =============================================================
 :Module: document_webdav_old
@@ -26,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

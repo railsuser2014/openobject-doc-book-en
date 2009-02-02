@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management (*sale*)
 =========================
 :Module: sale
@@ -36,10 +40,10 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * mrp - installed
- * process - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`mrp`
+ * :mod:`process`
 
 Reports
 -------

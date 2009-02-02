@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Scrum, Agile Development Method (*scrum*)
 =========================================
 :Module: scrum
@@ -42,8 +46,8 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * process - installed
+ * :mod:`project`
+ * :mod:`process`
 
 Reports
 -------

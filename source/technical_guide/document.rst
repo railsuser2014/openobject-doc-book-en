@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Integrated Document Management System (*document*)
 ==================================================
 :Module: document
@@ -26,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------

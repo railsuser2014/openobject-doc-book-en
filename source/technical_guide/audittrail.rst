@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Audit Trail (*audittrail*)
 ==========================
 :Module: audittrail
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * purchase - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`purchase`
+ * :mod:`mrp`
 
 Reports
 -------

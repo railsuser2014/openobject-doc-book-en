@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account invoice analytic required (*account_invoice_analytic_required*)
 =======================================================================
 :Module: account_invoice_analytic_required
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base - installed
+ * :mod:`account`
+ * :mod:`base`
 
 Reports
 -------

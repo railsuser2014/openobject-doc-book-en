@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_invoice_layout (*account_invoice_layout*)
 =================================================
 :Module: account_invoice_layout
@@ -30,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

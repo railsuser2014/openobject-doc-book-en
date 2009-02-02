@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Inter-Company (*sale_intercompany*)
 ========================================
 :Module: sale_intercompany
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * crm - installed
- * product - installed
- * account - installed
+ * :mod:`sale`
+ * :mod:`crm`
+ * :mod:`product`
+ * :mod:`account`
 
 Reports
 -------

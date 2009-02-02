@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report on tasks by user for projects (*report_task*)
 ====================================================
 :Module: report_task
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`project`
 
 Reports
 -------

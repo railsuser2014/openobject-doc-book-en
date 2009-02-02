@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic lines - Reporting (*report_analytic_line*)
 ===================================================
 :Module: report_analytic_line
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet_invoice - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
 
 Reports
 -------

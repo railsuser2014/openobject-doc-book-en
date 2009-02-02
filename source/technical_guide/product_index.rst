@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manage indexes on products prices (*product_index*)
 ===================================================
 :Module: product_index
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------

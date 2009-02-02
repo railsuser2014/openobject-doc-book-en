@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for sales (*board_sale*)
 ==================================
 :Module: board_sale
@@ -28,10 +32,10 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * sale - installed
- * report_crm - installed
- * report_sale - installed
+ * :mod:`board`
+ * :mod:`sale`
+ * :mod:`report_crm`
+ * :mod:`report_sale`
 
 Reports
 -------

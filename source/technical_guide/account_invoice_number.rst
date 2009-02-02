@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_invoice_number (*account_invoice_number*)
 =================================================
 :Module: account_invoice_number
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * sale - installed
- * purchase - installed
+ * :mod:`account`
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

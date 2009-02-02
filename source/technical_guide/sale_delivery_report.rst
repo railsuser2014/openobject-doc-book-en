@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Print Delivery Order (*sale_delivery_report*)
 =============================================
 :Module: sale_delivery_report
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * delivery - installed
+ * :mod:`sale`
+ * :mod:`delivery`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Profile Chamber of Commerce (*profile_cci*)
 ===========================================
 :Module: profile_cci
@@ -23,29 +27,29 @@ Description
 Dependencies
 ------------
 
- * project_retro_planning - installed
- * purchase_tender - installed
- * base_module_record - installed
- * base_report_creator - installed
- * account_analytic_package - installed
- * sale_expected_invoice_date - installed
- * account_payment - installed
- * l10n_be - installed
- * account_budget - installed
- * account_l10nbe_domiciliation - installed
- * hr_holidays - installed
- * cci_base_contact - installed
- * cci_partner - installed
- * cci_crm_profile - installed
- * cci_membership - installed
- * cci_event - installed
- * cci_mission - installed
- * cci_account - installed
- * cci_sales - installed
- * cci_purchase - installed
- * cci_translation - installed
- * cci_crm - installed
- * cci_timesheet - installed
+ * :mod:`project_retro_planning`
+ * :mod:`purchase_tender`
+ * :mod:`base_module_record`
+ * :mod:`base_report_creator`
+ * :mod:`account_analytic_package`
+ * :mod:`sale_expected_invoice_date`
+ * :mod:`account_payment`
+ * :mod:`l10n_be`
+ * :mod:`account_budget`
+ * :mod:`account_l10nbe_domiciliation`
+ * :mod:`hr_holidays`
+ * :mod:`cci_base_contact`
+ * :mod:`cci_partner`
+ * :mod:`cci_crm_profile`
+ * :mod:`cci_membership`
+ * :mod:`cci_event`
+ * :mod:`cci_mission`
+ * :mod:`cci_account`
+ * :mod:`cci_sales`
+ * :mod:`cci_purchase`
+ * :mod:`cci_translation`
+ * :mod:`cci_crm`
+ * :mod:`cci_timesheet`
 
 Reports
 -------

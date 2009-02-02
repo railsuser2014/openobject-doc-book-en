@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock Management (*mrp_prodlot_autosplit*)
 ==========================================
 :Module: mrp_prodlot_autosplit
@@ -33,8 +37,8 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
+ * :mod:`product`
+ * :mod:`stock`
 
 Reports
 -------
