@@ -102,8 +102,8 @@ The procedure is to create the name of the new menu in  *Menu base name* , selec
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a menu structure like the following figure (here for the Business Opportunities menu).
 
 
-.. image::  images/business_ops.png
-   :align: center
+	.. image::  images/business_ops.png
+   		:align: center
 
 *Business Opportunities menu automatically generated*
 
@@ -140,8 +140,8 @@ Although you've created special menu trees for each of the types of case you def
 	You can also track items across the whole company.
 
 
-.. image::  images/crm_case.png
-   :align: center
+	.. image::  images/crm_case.png
+   		:align: center
 
 *An entry following a business opportunity*
 

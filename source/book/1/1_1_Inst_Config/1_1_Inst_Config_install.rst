@@ -116,6 +116,7 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 
 
 	.. image:: images/new_login_dlg.png
+		:align: center
 
 *Dialog box on connecting a GTK client to a new Open ERP server*
 
@@ -134,7 +135,8 @@ If your system doesn't work after installing your Windows system you'll find som
 	#. Does your PostgreSQL server work? Signed in as administrator, select  *Stop Service* from the menu  *Start > Programs > PostgreSQL*  If, after a couple of seconds, you can read  *The service PostgreSQL4OpenERP has stopped* then you can be reasonably sure that the database server was working. Restart PostgreSQL then, still in the PostgreSQL menu, start the pgAdmin III application which you can use to explore the database. Double-click on the \ ``PostgreSQL4OpenERP``\  connection as in the figure below. If the database server is working you'll be able to see some information about the empty database. If it's not then an error message will appear.
 
                 .. image:: images/pgadmin_window.png
-                   :scale: 85
+                	:align: center
+                	:scale: 85
 
                 *Using pgAdmin III to verify that PostgreSQL is working*
                         
@@ -149,12 +151,14 @@ If your system doesn't work after installing your Windows system you'll find som
 
 
 	        .. image:: images/terp_server_conf.png
-                   :scale: 80
+	        	:align: center
+	        	:scale: 80
                    
 	#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then the swiftest approach is to reinstall them.
 
 
 	        .. image:: images/cmd_prompt_ping.png
+	        	:align: center
 
 	#. Can the client computers see the server computer at all? Check this by opening a command prompt window (enter \ ``cmd``\  in the window  *Start > Run...* ) and enter \ ``ping <address of server>``\  there (where \ ``<address of server>``\  represents he IP address of the server). The server should respond as shown in the following figure.
 
@@ -253,8 +257,9 @@ Once all these dependencies and the database are installed, install the server i
 
 Open a terminal window to start the server with the command \ ``sudo su postgres -c openerp-server``\  , which should result in a series of log messages as the server starts up. If the server is correctly installed, the message  *waiting for connections...* should show within 30 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
-.. image:: images/terps_startup_log.png
-   :scale: 95
+	.. image:: images/terps_startup_log.png
+		:align: center
+		:scale: 95
 
 .. index::
   single: Client; GTK
@@ -286,6 +291,7 @@ To install an Open ERP GTK client, follow the steps below:
 
 
 	.. image:: images/terp_client_startup.png
+		:align: center
 
 Open a terminal window to start the client using the command openerp-client. When you start the client on the same Linux PC as the server you'll find that the default connection parameters will just work without needing any change. The message  *No database found, you must create one!*  shows you that the connection to the server has been successful and you need to create a database on the server.
 
@@ -310,6 +316,7 @@ To install an Open ERP client on a computer under Linux, repeat the procedure s
 
 
 	.. image:: images/terp_client_server.png
+		:align: center
 	
 *Dialog box for defining connection parameters to the server*
 
@@ -352,6 +359,7 @@ The eTiny web server connects to the Open ERP server in the same way as an Open
 
 
 	.. image:: images/web_welcome.png
+		:align: center
 
 You can verify the installation by opening a web browser on the server and navigating to http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from another computer connected to the same network if you know the name or IP address of the server over the network – your browser should be set to http://<server_address>:8080 for this.
 

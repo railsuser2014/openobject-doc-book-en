@@ -32,9 +32,8 @@ Once you're displaying the main menu you're able to see the following screen ite
 * the main contents of the window flanked by the menu toolbar to the left and some links up and to the right.
 
 
-.. image:: images/main_window_openerp_ch02.png
-   :align: center
-
+	.. image:: images/main_window_openerp_ch02.png
+   		:align: center
 
 *The Main Menu of the openerp_ch02 database*
 
@@ -145,8 +144,8 @@ Send a request to get an understanding of its functionality:
 	#. Click  *Send* to send the request to the intended recipient – that's yourself in this case. Then click  *Main Menu* to return to the original screen.
 
 
-.. image:: images/request_tab.png
-   :align: center
+	.. image:: images/request_tab.png
+   		:align: center
 
 *Creating a new request*
 
@@ -230,9 +229,9 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
 * the  *Properties*  tab contains partner settings related to accounting, inventory and other areas: you can leave this alone for the moment.
 
 
-.. image:: images/partner.png
-   :align: center
-   :scale: 80
+	.. image:: images/partner.png
+   		:align: center
+   		:scale: 80
 
 *Partner form*
 
@@ -252,8 +251,8 @@ Partner Categories
 You can list your partners by category using the menu  *Partners > Partners by category* . This opens a hierarchical structure of categories where each category can be divided into sub-categories. Click a category to obtain a list of partners in that category. For example, click all of the partners in the category  *Supplier*  or  *Supplier > Components Supplier* . You'll see that if a company is in a subcategory (such as  *Components Supplier* ) then it will also show up when you click the parent category (such as  *Supplier* ). 
 
 
-.. image:: images/main_window_partner_menu_config.png
-   :align: center
+	.. image:: images/main_window_partner_menu_config.png
+   		:align: center
 
 *Categories of partner in a hierarchical structure*  : *Customer,Prospect,Supplier...*
 
@@ -275,8 +274,8 @@ The administrator can define new categories. So you'll create a new category and
 You can review your new category structure using  *Partners > Partners by category* . You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 
-.. image:: images/main_window_partner_tab.png
-   :align: center
+	.. image:: images/main_window_partner_tab.png
+   		:align: center
 
 *Creating a new partner category : My prospects*
 
