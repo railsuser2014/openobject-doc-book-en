@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction Management - Reporting (*report_auction*)
 =================================================
 :Module: report_auction
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * auction - installed
- * hr_timesheet_sheet - installed
+ * :mod:`auction`
+ * :mod:`hr_timesheet_sheet`
 
 Reports
 -------

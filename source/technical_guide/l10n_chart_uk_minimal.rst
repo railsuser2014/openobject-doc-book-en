@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 United Kingdom - minimal (*l10n_chart_uk_minimal*)
 ==================================================
 :Module: l10n_chart_uk_minimal
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * base_iban - installed
- * base_vat - installed
- * account_chart - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`base_iban`
+ * :mod:`base_vat`
+ * :mod:`account_chart`
 
 Reports
 -------

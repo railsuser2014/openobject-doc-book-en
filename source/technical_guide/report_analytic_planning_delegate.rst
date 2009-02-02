@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic planning - Delegation in the hierarchy (*report_analytic_planning_delegate*)
 =====================================================================================
 :Module: report_analytic_planning_delegate
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * report_analytic_planning - installed
+ * :mod:`report_analytic_planning`
 
 Reports
 -------

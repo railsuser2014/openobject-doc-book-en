@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Point Of Sale (*point_of_sale*)
 ===============================
 :Module: point_of_sale
@@ -29,10 +33,10 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------

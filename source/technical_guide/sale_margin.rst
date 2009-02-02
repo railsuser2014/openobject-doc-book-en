@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Margins in Sale Orders (*sale_margin*)
 ======================================
 :Module: sale_margin
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * account - installed
+ * :mod:`sale`
+ * :mod:`account`
 
 Reports
 -------

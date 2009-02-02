@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI mission (*cci_mission*)
 ===========================
 :Module: cci_mission
@@ -23,16 +27,16 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm - installed
- * cci_partner - installed
- * product - installed
- * membership - installed
- * sale - installed
- * cci_event - installed
- * cci_account - installed
- * cci_translation - installed
- * cci_country - installed
+ * :mod:`base`
+ * :mod:`crm`
+ * :mod:`cci_partner`
+ * :mod:`product`
+ * :mod:`membership`
+ * :mod:`sale`
+ * :mod:`cci_event`
+ * :mod:`cci_account`
+ * :mod:`cci_translation`
+ * :mod:`cci_country`
 
 Reports
 -------

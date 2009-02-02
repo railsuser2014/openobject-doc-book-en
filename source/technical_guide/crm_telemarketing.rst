@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Telemarketing Management (*crm_telemarketing*)
 ==============================================
 :Module: crm_telemarketing
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * crm - installed
- * crm_configuration - installed
+ * :mod:`crm`
+ * :mod:`crm_configuration`
 
 Reports
 -------

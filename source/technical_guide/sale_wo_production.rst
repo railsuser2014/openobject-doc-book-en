@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Without production (*sale_wo_production*)
 ===============================================
 :Module: sale_wo_production
@@ -24,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * mrp - installed
+ * :mod:`sale`
+ * :mod:`mrp`
 
 Reports
 -------

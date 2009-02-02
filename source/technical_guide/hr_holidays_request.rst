@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
- * hr_holidays - installed
+ * :mod:`base`
+ * :mod:`hr`
+ * :mod:`hr_holidays`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale agent Information (*commission_pricelist*)
 ===============================================
 :Module: commission_pricelist
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------

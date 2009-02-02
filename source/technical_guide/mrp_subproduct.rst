@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP Sub Product (*mrp_subproduct*)
 ==================================
 :Module: mrp_subproduct
@@ -28,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`mrp`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Master Procurement Schedule (*stock_planning*)
 ==============================================
 :Module: stock_planning
@@ -28,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * sale - installed
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------

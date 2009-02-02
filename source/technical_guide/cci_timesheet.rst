@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Timesheet (*cci_timesheet*)
 ===============================
 :Module: cci_timesheet
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * cci_partner - installed
- * cci_crm - installed
- * cci_base_contact - installed
+ * :mod:`base`
+ * :mod:`cci_partner`
+ * :mod:`cci_crm`
+ * :mod:`cci_base_contact`
 
 Reports
 -------

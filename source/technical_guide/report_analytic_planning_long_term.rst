@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 report_analytic_planning_long_term (*report_analytic_planning_long_term*)
 =========================================================================
 :Module: report_analytic_planning_long_term
@@ -25,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * report_analytic_planning - installed
+ * :mod:`report_analytic_planning`
 
 Reports
 -------

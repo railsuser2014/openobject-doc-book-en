@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Hotel Management (*hotel*)
 ==========================
 :Module: hotel
@@ -30,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------

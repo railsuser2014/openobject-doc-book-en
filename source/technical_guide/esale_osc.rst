@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 OScommerce Interface / ZenCart (*esale_osc*)
 ============================================
 :Module: esale_osc
@@ -30,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * sale - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------

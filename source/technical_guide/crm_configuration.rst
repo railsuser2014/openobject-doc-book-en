@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Customer Relationship Management (*crm_configuration*)
 ======================================================
 :Module: crm_configuration
@@ -30,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * crm - installed
- * report_crm - installed
- * process - installed
+ * :mod:`crm`
+ * :mod:`report_crm`
+ * :mod:`process`
 
 Reports
 -------

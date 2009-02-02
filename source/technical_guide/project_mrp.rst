@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Management - MRP and Sale Integration (*project_mrp*)
 =============================================================
 :Module: project_mrp
@@ -27,10 +31,10 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * mrp - installed
- * sale - installed
- * mrp_jit - installed
+ * :mod:`project`
+ * :mod:`mrp`
+ * :mod:`sale`
+ * :mod:`mrp_jit`
 
 Reports
 -------

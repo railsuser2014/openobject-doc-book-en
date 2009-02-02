@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Membership (*cci_membership*)
 =================================
 :Module: cci_membership
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * membership - installed
- * cci_event - installed
+ * :mod:`base`
+ * :mod:`membership`
+ * :mod:`cci_event`
 
 Reports
 -------

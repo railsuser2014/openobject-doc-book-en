@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 gnucash (*gnucash*)
 ===================
 :Module: gnucash
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
 
 Reports
 -------

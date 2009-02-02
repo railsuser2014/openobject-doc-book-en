@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manufacturing Resource Planning (*mrp*)
 =======================================
 :Module: mrp
@@ -47,11 +51,11 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * hr - installed
- * purchase - installed
- * product - installed
- * process - installed
+ * :mod:`stock`
+ * :mod:`hr`
+ * :mod:`purchase`
+ * :mod:`product`
+ * :mod:`process`
 
 Reports
 -------

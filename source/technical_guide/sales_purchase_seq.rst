@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Purchase Sequence Management (*sales_purchase_seq*)
 =========================================================
 :Module: sales_purchase_seq
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

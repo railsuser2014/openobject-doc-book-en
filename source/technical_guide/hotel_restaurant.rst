@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Hotel Restaurant (*hotel_restaurant*)
 =====================================
 :Module: hotel_restaurant
@@ -30,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hotel - installed
+ * :mod:`base`
+ * :mod:`hotel`
 
 Reports
 -------

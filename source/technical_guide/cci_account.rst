@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Account (*cci_account*)
 ===========================
 :Module: cci_account
@@ -23,13 +27,13 @@ Description
 Dependencies
 ------------
 
- * account_invoice_layout - installed
- * sale - installed
- * account_analytic_plans - installed
- * l10n_be - installed
- * base_vat - installed
- * cci_partner - installed
- * membership - installed
+ * :mod:`account_invoice_layout`
+ * :mod:`sale`
+ * :mod:`account_analytic_plans`
+ * :mod:`l10n_be`
+ * :mod:`base_vat`
+ * :mod:`cci_partner`
+ * :mod:`membership`
 
 Reports
 -------

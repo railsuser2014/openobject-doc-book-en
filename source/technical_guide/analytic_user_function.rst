@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic User Function (*analytic_user_function*)
 =================================================
 :Module: analytic_user_function
@@ -25,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet_sheet - installed
+ * :mod:`hr_timesheet_sheet`
 
 Reports
 -------

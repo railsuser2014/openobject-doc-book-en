@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Management (*project*)
 ==============================
 :Module: project
@@ -24,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * account - installed
- * hr - installed
- * process - installed
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`hr`
+ * :mod:`process`
 
 Reports
 -------

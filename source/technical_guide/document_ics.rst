@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Support for iCal based on Document Management System (*document_ics*)
 =====================================================================
 :Module: document_ics
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * document - installed
- * crm_configuration - installed
+ * :mod:`document`
+ * :mod:`crm_configuration`
 
 Reports
 -------

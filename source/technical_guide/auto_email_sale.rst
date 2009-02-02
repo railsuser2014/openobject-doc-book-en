@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Email Sale order (*auto_email_sale*)
 ====================================
 :Module: auto_email_sale
@@ -24,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * sale - installed
+ * :mod:`smtpclient`
+ * :mod:`sale`
 
 Reports
 -------

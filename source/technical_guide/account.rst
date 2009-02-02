@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting and financial management (*account*)
 ===============================================
 :Module: account
@@ -30,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * base - installed
- * process - installed
+ * :mod:`product`
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------

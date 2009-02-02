@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 VAT (*base_vat*)
 ================
 :Module: base_vat
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

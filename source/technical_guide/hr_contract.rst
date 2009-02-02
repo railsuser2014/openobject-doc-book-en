@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Contracts (*hr_contract*)
 =========================================
 :Module: hr_contract
@@ -28,7 +32,7 @@ Description
 Dependencies
 ------------
 
- * hr - installed
+ * :mod:`hr`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management extented with rebates (*sale_rebate*)
 ======================================================
 :Module: sale_rebate
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

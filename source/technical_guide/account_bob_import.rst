@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Import accounting entries from Bob (*account_bob_import*)
 =========================================================
 :Module: account_bob_import
@@ -30,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * base_contact - installed
- * account_l10nbe_domiciliation - installed
- * l10n_be - installed
+ * :mod:`base_contact`
+ * :mod:`account_l10nbe_domiciliation`
+ * :mod:`l10n_be`
 
 Reports
 -------

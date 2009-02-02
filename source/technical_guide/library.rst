@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Library (*library*)
 ===================
 :Module: library
@@ -26,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * point_of_sale - installed
- * report_intrastat - installed
- * purchase - installed
+ * :mod:`point_of_sale`
+ * :mod:`report_intrastat`
+ * :mod:`purchase`
 
 Reports
 -------

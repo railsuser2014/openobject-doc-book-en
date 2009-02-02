@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP Management - Reporting (*report_mrp*)
 =========================================
 :Module: report_mrp
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
+ * :mod:`mrp`
 
 Reports
 -------

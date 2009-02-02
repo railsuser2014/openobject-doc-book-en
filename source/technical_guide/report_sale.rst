@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management - Reporting (*report_sale*)
 ============================================
 :Module: report_sale
@@ -31,7 +35,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------

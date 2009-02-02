@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting only profile (*profile_accounting*)
 ==============================================
 :Module: profile_accounting
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * report_analytic - installed
- * board_account - installed
- * account_followup - installed
+ * :mod:`account`
+ * :mod:`report_analytic`
+ * :mod:`board_account`
+ * :mod:`account_followup`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Contact (*base_contact*)
 =============================
 :Module: base_contact
@@ -34,8 +38,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------

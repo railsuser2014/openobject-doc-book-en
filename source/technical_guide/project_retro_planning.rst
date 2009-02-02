@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Retro planning (*project_retro_planning*)
 =================================================
 :Module: project_retro_planning
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`project`
 
 Reports
 -------

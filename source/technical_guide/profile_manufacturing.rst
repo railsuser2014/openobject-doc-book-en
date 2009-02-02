@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manufacturing industry profile (*profile_manufacturing*)
 ========================================================
 :Module: profile_manufacturing
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
- * sale - installed
- * delivery - installed
- * board_manufacturing - installed
- * product_margin - installed
+ * :mod:`mrp`
+ * :mod:`sale`
+ * :mod:`delivery`
+ * :mod:`board_manufacturing`
+ * :mod:`product_margin`
 
 Reports
 -------

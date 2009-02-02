@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi company Project Management (*multi_company_project*)
 ==========================================================
 :Module: multi_company_project
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * base - installed
- * multi_company - installed
+ * :mod:`project`
+ * :mod:`base`
+ * :mod:`multi_company`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
 =============================================================================================
 :Module: sale_supplier_direct_delivery
@@ -32,10 +36,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * sale - installed
- * purchase - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

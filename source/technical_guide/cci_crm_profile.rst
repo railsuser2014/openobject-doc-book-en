@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI CRM Profile (*cci_crm_profile*)
 ===================================
 :Module: cci_crm_profile
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_profiling - installed
- * base_contact - installed
+ * :mod:`base`
+ * :mod:`crm_profiling`
+ * :mod:`base_contact`
 
 Reports
 -------

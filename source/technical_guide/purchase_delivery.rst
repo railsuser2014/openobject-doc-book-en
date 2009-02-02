@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * stock - installed
- * delivery - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`stock`
+ * :mod:`delivery`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchases with taxes included (*purchase_tax_include*)
 ======================================================
 :Module: purchase_tax_include
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
- * account_tax_include - installed
+ * :mod:`purchase`
+ * :mod:`account_tax_include`
 
 Reports
 -------

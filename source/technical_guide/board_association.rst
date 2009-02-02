@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for Associations (*board_association*)
 ================================================
 :Module: board_association
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * event - installed
- * membership - installed
- * board - installed
- * project - installed
+ * :mod:`event`
+ * :mod:`membership`
+ * :mod:`board`
+ * :mod:`project`
 
 Reports
 -------

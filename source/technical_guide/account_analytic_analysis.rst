@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 report_account_analytic (*account_analytic_analysis*)
 =====================================================
 :Module: account_analytic_analysis
@@ -25,10 +29,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet - installed
- * hr_timesheet_invoice - installed
- * project - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`project`
 
 Reports
 -------

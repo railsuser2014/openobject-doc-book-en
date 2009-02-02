@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Discount on Marketing Campaigns (*discount_campaign*)
 =====================================================
 :Module: discount_campaign
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

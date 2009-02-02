@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Expenses Tracking (*hr_expense*)
 ================================================
 :Module: hr_expense
@@ -34,9 +38,9 @@ Description
 Dependencies
 ------------
 
- * hr - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`hr`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_analytic_progress (*account_analytic_progress*)
 =======================================================
 :Module: account_analytic_progress
@@ -25,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * account_analytic_analysis - installed
+ * :mod:`account_analytic_analysis`
 
 Reports
 -------

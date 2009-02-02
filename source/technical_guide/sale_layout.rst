@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 sale_layout (*sale_layout*)
 ===========================
 :Module: sale_layout
@@ -28,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

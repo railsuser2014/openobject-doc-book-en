@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 City for base_contat (*base_contact_city*)
 ==========================================
 :Module: base_contact_city
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * base_contact - installed
- * city - installed
+ * :mod:`base`
+ * :mod:`base_contact`
+ * :mod:`city`
 
 Reports
 -------

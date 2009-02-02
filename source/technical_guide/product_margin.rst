@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Margins in Product (*product_margin*)
 =====================================
 :Module: product_margin
@@ -25,9 +29,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
 
 Reports
 -------

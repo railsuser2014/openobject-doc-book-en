@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for Auction (*board_auction*)
 ===================================
 :Module: board_auction
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * auction - installed
+ * :mod:`board`
+ * :mod:`auction`
 
 Reports
 -------

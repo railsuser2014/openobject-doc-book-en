@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Carriers and deliveries (*delivery*)
 ====================================
 :Module: delivery
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * stock - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`stock`
 
 Reports
 -------

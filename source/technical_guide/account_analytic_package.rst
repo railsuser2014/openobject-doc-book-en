@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_analytic_package (*account_analytic_package*)
 =====================================================
 :Module: account_analytic_package
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * product - installed
- * crm - installed
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`crm`
 
 Reports
 -------

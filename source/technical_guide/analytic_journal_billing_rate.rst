@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 ===============================================================
 :Module: analytic_journal_billing_rate
@@ -25,9 +29,9 @@ Description
 Dependencies
 ------------
 
- * analytic_user_function - installed
- * account - installed
- * hr_timesheet_invoice - installed
+ * :mod:`analytic_user_function`
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
 
 Reports
 -------

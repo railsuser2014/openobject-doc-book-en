@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock Location Paths (*stock_location*)
 =======================================
 :Module: stock_location
@@ -32,7 +36,7 @@ Description
 Dependencies
 ------------
 
- * stock - installed
+ * :mod:`stock`
 
 Reports
 -------

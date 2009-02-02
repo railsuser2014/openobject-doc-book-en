@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Italy - Chart of Accounts (*l10n_chart_it*)
 ===========================================
 :Module: l10n_chart_it
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_vat - installed
- * base_iban - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_vat`
+ * :mod:`base_iban`
+ * :mod:`account_chart`
 
 Reports
 -------

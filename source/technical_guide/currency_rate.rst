@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Currency Rates (*currency_rate*)
 ================================
 :Module: currency_rate
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * multi_company_currency - installed
+ * :mod:`base`
+ * :mod:`multi_company_currency`
 
 Reports
 -------

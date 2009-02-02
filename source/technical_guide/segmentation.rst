@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 segmentation management (*segmentation*)
 ========================================
 :Module: segmentation
@@ -28,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_profiling - installed
+ * :mod:`base`
+ * :mod:`crm_profiling`
 
 Reports
 -------

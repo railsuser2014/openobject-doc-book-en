@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Base Contact (*cci_base_contact*)
 =====================================
 :Module: cci_base_contact
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * base_contact - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`base_contact`
+ * :mod:`project`
 
 Reports
 -------

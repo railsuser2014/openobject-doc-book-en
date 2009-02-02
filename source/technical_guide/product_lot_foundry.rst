@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products Lot Foundry (*product_lot_foundry*)
 ============================================
 :Module: product_lot_foundry
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
- * stock - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------

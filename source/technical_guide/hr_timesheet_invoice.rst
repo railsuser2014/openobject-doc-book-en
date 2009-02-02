@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice on analytic lines (*hr_timesheet_invoice*)
 ==================================================
 :Module: hr_timesheet_invoice
@@ -25,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet`
 
 Reports
 -------

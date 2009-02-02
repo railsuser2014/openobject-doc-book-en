@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Order Lines With Discounts (*purchase_discount*)
 =========================================================
 :Module: purchase_discount
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * purchase - installed
+ * :mod:`stock`
+ * :mod:`purchase`
 
 Reports
 -------

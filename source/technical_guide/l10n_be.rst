@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
 ======================================================
 :Module: l10n_be
@@ -33,11 +37,11 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_report - installed
- * base_vat - installed
- * base_iban - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`account_report`
+ * :mod:`base_vat`
+ * :mod:`base_iban`
+ * :mod:`account_chart`
 
 Reports
 -------

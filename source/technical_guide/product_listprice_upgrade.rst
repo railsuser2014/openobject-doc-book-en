@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product listprice upgrade (*product_listprice_upgrade*)
 =======================================================
 :Module: product_listprice_upgrade
@@ -26,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------

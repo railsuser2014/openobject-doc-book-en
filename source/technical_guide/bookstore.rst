@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Bookstore Verticalisation (*bookstore*)
 =======================================
 :Module: bookstore
@@ -28,9 +32,9 @@ Description
 Dependencies
 ------------
 
- * library - installed
- * delivery - installed
- * sale - installed
+ * :mod:`library`
+ * :mod:`delivery`
+ * :mod:`sale`
 
 Reports
 -------

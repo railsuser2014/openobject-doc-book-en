@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 =============================================================
 :Module: account_l10nbe_domiciliation
@@ -25,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

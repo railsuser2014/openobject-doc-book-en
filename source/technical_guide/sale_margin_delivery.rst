@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Margins in Sale Delivery Lines (*sale_margin_delivery*)
 =======================================================
 :Module: sale_margin_delivery
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale_delivery - installed
+ * :mod:`sale_delivery`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Hotel Housekeeping (*hotel_housekeeping*)
 =========================================
 :Module: hotel_housekeeping
@@ -27,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * hotel - installed
+ * :mod:`hotel`
 
 Reports
 -------

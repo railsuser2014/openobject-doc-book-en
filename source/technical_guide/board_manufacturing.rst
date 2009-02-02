@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for manufacturing (*board_manufacturing*)
 ===============================================
 :Module: board_manufacturing
@@ -27,10 +31,10 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * mrp - installed
- * stock - installed
- * report_mrp - installed
+ * :mod:`board`
+ * :mod:`mrp`
+ * :mod:`stock`
+ * :mod:`report_mrp`
 
 Reports
 -------

@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale CRM Stuff (*sale_crm*)
 ===========================
 :Module: sale_crm
@@ -33,8 +37,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * crm_configuration - installed
+ * :mod:`sale`
+ * :mod:`crm_configuration`
 
 Reports
 -------

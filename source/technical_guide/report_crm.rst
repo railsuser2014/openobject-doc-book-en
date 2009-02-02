@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CRM Management - Reporting (*report_crm*)
 =========================================
 :Module: report_crm
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * crm - installed
+ * :mod:`crm`
 
 Reports
 -------

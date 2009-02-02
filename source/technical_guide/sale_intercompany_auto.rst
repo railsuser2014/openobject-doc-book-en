@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 ===============================================================
 :Module: sale_intercompany_auto
@@ -34,8 +38,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

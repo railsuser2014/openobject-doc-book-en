@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 ================================================================================
 :Module: l10n_fr_tva_franchise
@@ -23,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_chart - installed
- * l10n_fr - installed
- * l10n_fr_pcg - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_chart`
+ * :mod:`l10n_fr`
+ * :mod:`l10n_fr_pcg`
 
 Reports
 -------

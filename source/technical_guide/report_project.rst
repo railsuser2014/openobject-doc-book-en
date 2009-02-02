@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management - Reporting (*report_project*)
 ===============================================
 :Module: report_project
@@ -24,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * report_task - installed
+ * :mod:`project`
+ * :mod:`report_task`
 
 Reports
 -------

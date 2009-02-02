@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Complete timesheet from an iCal server (*hr_timesheet_ical*)
 ============================================================
 :Module: hr_timesheet_ical
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet - installed
+ * :mod:`hr_timesheet`
 
 Reports
 -------

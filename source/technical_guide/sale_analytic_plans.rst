@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Analytic Distribution Management (*sale_analytic_plans*)
 ==============================================================
 :Module: sale_analytic_plans
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * account_analytic_plans - installed
+ * :mod:`sale`
+ * :mod:`account_analytic_plans`
 
 Reports
 -------

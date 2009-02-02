@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 ===========================================================================
 :Module: account_analytic_plans
@@ -49,8 +53,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_analytic_default - installed
+ * :mod:`account`
+ * :mod:`account_analytic_default`
 
 Reports
 -------

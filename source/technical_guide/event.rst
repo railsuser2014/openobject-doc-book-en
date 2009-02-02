@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Event (*event*)
 ===============
 :Module: event
@@ -34,9 +38,9 @@ Description
 Dependencies
 ------------
 
- * crm - installed
- * base_contact - installed
- * account - installed
+ * :mod:`crm`
+ * :mod:`base_contact`
+ * :mod:`account`
 
 Reports
 -------

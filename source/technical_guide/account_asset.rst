@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Asset management (*account_asset*)
 ==================================
 :Module: account_asset
@@ -27,8 +31,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_simulation - installed
+ * :mod:`account`
+ * :mod:`account_simulation`
 
 Reports
 -------

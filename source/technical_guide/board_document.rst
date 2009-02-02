@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for Document Management (*board_document*)
 ====================================================
 :Module: board_document
@@ -23,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * document - installed
- * report_document - installed
+ * :mod:`board`
+ * :mod:`document`
+ * :mod:`report_document`
 
 Reports
 -------

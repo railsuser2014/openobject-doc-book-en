@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Event - Project (*event_project*)
 =================================
 :Module: event_project
@@ -25,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * project_retro_planning - installed
- * event - installed
+ * :mod:`project_retro_planning`
+ * :mod:`event`
 
 Reports
 -------

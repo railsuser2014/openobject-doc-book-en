@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale payment type (*sale_payment*)
 ==================================
 :Module: sale_payment
@@ -27,10 +31,10 @@ Description
 Dependencies
 ------------
 
- * account_payment - installed
- * account_payment_extension - installed
- * sale - installed
- * stock - installed
+ * :mod:`account_payment`
+ * :mod:`account_payment_extension`
+ * :mod:`sale`
+ * :mod:`stock`
 
 Reports
 -------

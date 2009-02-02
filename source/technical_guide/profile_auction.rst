@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction house profile (*profile_auction*)
 =========================================
 :Module: profile_auction
@@ -23,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * auction - installed
- * board_auction - installed
- * account - installed
- * hr_timesheet_sheet - installed
+ * :mod:`auction`
+ * :mod:`board_auction`
+ * :mod:`account`
+ * :mod:`hr_timesheet_sheet`
 
 Reports
 -------

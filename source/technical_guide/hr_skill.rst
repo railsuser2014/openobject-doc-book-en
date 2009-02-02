@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Skill Management (*hr_skill*)
 =============================
 :Module: hr_skill
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hr - installed
+ * :mod:`hr`
 
 Reports
 -------

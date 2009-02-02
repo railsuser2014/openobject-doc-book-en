@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Austria - Chart of Accounts (*l10n_chart_at*)
 =============================================
 :Module: l10n_chart_at
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
- * base_vat - installed
+ * :mod:`account_chart`
+ * :mod:`base_vat`
 
 Reports
 -------

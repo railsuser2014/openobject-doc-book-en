@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 EDI (*edi*)
 ===========
 :Module: edi
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------

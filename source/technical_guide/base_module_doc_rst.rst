@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module Technical Guide in Restructured Text  (*base_module_doc_rst*)
 ====================================================================
 :Module: base_module_doc_rst
@@ -25,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

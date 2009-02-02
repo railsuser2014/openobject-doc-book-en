@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 =========================================================
 :Module: l10n_chart_ca_fr
@@ -23,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

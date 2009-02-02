@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product GTIN EAN UPC JPC Support (*product_gtin*)
 =================================================
 :Module: product_gtin
@@ -24,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------

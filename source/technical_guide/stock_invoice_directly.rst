@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice Picking Directly (*stock_invoice_directly*)
 ===================================================
 :Module: stock_invoice_directly
@@ -24,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * delivery - installed
- * stock - installed
+ * :mod:`delivery`
+ * :mod:`stock`
 
 Reports
 -------

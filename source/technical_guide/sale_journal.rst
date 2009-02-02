@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Managing sales and deliveries by journal (*sale_journal*)
 =========================================================
 :Module: sale_journal
@@ -43,8 +47,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * sale - installed
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------

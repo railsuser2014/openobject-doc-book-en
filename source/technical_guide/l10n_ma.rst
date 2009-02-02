@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 ==========================================================
 :Module: l10n_ma
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

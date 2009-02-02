@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP JIT (*mrp_jit*)
 ===================
 :Module: mrp_jit
@@ -31,8 +35,8 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
- * sale - installed
+ * :mod:`mrp`
+ * :mod:`sale`
 
 Reports
 -------

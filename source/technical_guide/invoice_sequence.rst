@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice lines with sequence number (*invoice_sequence*)
 =======================================================
 :Module: invoice_sequence
@@ -23,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base - installed
+ * :mod:`account`
+ * :mod:`base`
 
 Reports
 -------

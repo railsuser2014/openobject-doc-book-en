@@ -4,6 +4,10 @@
     :noindex:
 .. 
 
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension
@@ -24,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
- * document - installed
+ * :mod:`base`
+ * :mod:`process`
+ * :mod:`document`
 
 Reports
 -------
