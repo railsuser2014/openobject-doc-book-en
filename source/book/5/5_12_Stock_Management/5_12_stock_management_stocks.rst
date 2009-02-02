@@ -8,21 +8,21 @@ In the product form you can find a report that will give you the stock levels of
 
 .. tip::   Availability of stock
 
-    Depending on whether you look at the product from a customer order or from the menu of a product form you can get different values for stock availability. If you use the product menu you get the stock in all of the physical stock locations. If you get to the product from an order you will only see the report of the warehouse selected in the order.
+    Depending on whether you look at the product from a customer order or from the menu of a product form you can get different values for stock availability. If you use the product menu you get the stock in all of the physical stock locations. Looking at the product from the order you will only see the report of the warehouse selected in the order.
 
-The different fields are:
+The two fields are:
 
-* Real stock: physical quantity present in your warehouse,
+* Real stock: quantity physical present in your warehouse,
 
 * Virtual stock: calculated this way: real stock – outgoing + incoming.
 
 .. tip::   **Point**  *Virtual Stock*
 
-    Virtual stock is very useful because it shows what the salespeople can sell. If it's more than real stock it's because products are coming in and if it's smaller than reasl stock then it's because products are reserved for other orders.
+    Virtual stock is very useful because it shows what the salespeople can sell. If it's more than real stock it's because products are coming in and if it's smaller than real stock then it's because certain products are reserved for other orders.
 
 .. tip::   **Point**  *Detail of future stock*
 
-    To seem more detail about future stock, you can use the report to the right of the product form 'Forecast of Future Stock'. Open ERP shows a graph of the change of stock in the days to come, varying as a function of confirmed orders.
+    To get more detail about future stock, you can use the report to the right of the product form 'Forecast of Future Stock'. Open ERP shows a graph of the change of stock in the days to come, varying as a function of purchase orders or confirmed production.
 
     .. image:: images/stock_forecast.png
        :align: center
@@ -54,7 +54,7 @@ The counterpart locations are automatically proposed by the system but the diffe
 
 * Procurement.
 
-A procurement location is a temporary location for stock moves that haven't yet been finalized by the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or production, Open ERP uses the counterpart location *Procurement*. You'll find there everything that hasn't yet been planned by the system. This location shows quantities of zero after each scheduling run.
+A procurement location is a temporary location for stock moves that haven't yet been finalized by the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or production, Open ERP uses the counterpart location *Procurement*. You'll find there everything that hasn't yet been planned by the system. The quantities of product in this location cancel each other out.
 
 .. index:: Inventory
 
@@ -69,7 +69,7 @@ Once a product has been defined, use an initial inventory operation to put actua
 
 *Defining a new inventory operation.*
 
-Give a name (for example 'Initial Inventory' or 'Lost Product XYZ') and a date for each inventory operation. You can then enter data about the quantities available for each product by location. Start by showing the location, for example 'Stock', and then select the product. Once the product has been selected, Open ERP automatically completes the actual quantity that it thinks is available for that product in the location shown. You can then change that value to correct the value in stock.
+Give a name (for example 'Initial Inventory' or 'Lost Product XYZ') and a date for each inventory operation. You can then enter data about the quantities available for each product by location. Start by showing the location, for example 'Stock', and then select the product. Open ERP automatically completes the actual quantity actually available for that product in the location shown. You can then change that value to correct the value in stock.
 
 Enter data for a single line in your inventory:
 
@@ -81,7 +81,9 @@ Enter data for a single line in your inventory:
 
 .. tip::   **Point**  *Inventory Turns*
 
-    You are usually legally required to do a stock check of all your products at least once a year. As well as doing a complete annual stock check, Open ERP also supports the method of periodical inventory. That means you can check the stock levels of a proportion of your products every so often. This system is accepted in France as long as you can guarantee that all of your products have been counted at least once per year. To do this, use the report *Stock Management > Reporting > Dates of Inventories*.
+    You are usually legally required to do a stock check of all your products at least once a year. As well as doing a complete annual stock check, Open ERP also supports the method of periodical inventory. 
+
+    That means you can check the stock levels of a proportion of your products every so often. This system is accepted in France as long as you can guarantee that all of your products have been counted at least once per year. To do this, use the report *Stock Management > Reporting > Dates of Inventories*.
 
     This gives you the last inventory date by product.
 
@@ -94,7 +96,7 @@ The correct levels of your product are now in your stock locations. A simple way
 Reception of a supplier order
 ------------------------------
 
-Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in.
+Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
 
     .. image:: images/stock_picking_in_tree.png
        :align: center
@@ -103,20 +105,20 @@ Supplier goods receipt forms are automatically prepared by Open ERP by the purch
 
 You can also do goods in data entry manually if there's no order, using the menu *Stock Management > Incoming Goods > Items to be Processed* followed by a click on *New*.
 
-A new goods-in data entry form then opens. Enter the supplier data in the partner field and in the field 'Origin' you can type in the reference number from your supplier. You should then enter data about the products received in lines.
+A new goods-in data entry form then opens. Enter the supplier data in the partner field and you can type in the reference number from your supplier in the field 'Origin'. You should then enter data about the products received in lines.
 
 The source location is already completed by default because of your supplier selection. You should then give the destination location where you will place the products. For example, enter 'Stock'. At this stage you can set a lot number for traceability (this function will be described later in this chapter, so leave this field empty for the moment).
 
-Then enter data for the receipt of 30 computers of type PC1. Once the first part of the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button *Process Later* .
+Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button *Process Later* .
 
     .. image:: images/stock_picking_in_form.png
        :align: center
 
 *Form for coding in reception of goods from a supplier order.*
 
-When products have finally arrived in your stock you can verify that using the quantities shown on the product form.
+The products then arrive in stock and reflect the quantities shown on the product form.
 
-In the goods receipt form, there is a field 'Invoicing Control'. If this is set to 'To be invoiced' a supplier invoice will now be generated automatically in the draft state, based on the goods received. Your accountant then has to confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that the invoiced quantities correspond to the quantities received.
+In the goods receipt form, the field 'Invoicing Control' lets you influence the way you send invoices to suppliers. If this is set to 'To be invoiced' a supplier invoice will now be generated automatically in the draft state, based on the goods received. Your accountant then has to confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that the invoiced quantities correspond to the quantities received.
 
 Customer delivery
 ------------------
@@ -146,13 +148,13 @@ You've seen already that Open ERP shows you the available product stock when you
 
 Then confirm the quotation to convert it to an order. If you return to the product form you'll see the virtual stock is now smaller than the real stock. That happens because three products have been reserved by the order that you created, so they can't be sold to another customer.
 
-Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. Its functionality will be detailed in the chapter about Manufacturing. All that needs to be said at this stage is that it will manage the reservation of products and place orders based on the dates promised to customers, and the various internal lead times and priorities.
+Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
 
 .. tip::  **Point** *Just in Time*
 
     You can install the module mrp_jit to plan each order in real time after it's been confirmed. This means that you don't have to start the scheduler or wait for its periodical start time.
 
-You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You should find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
+You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 
     .. image:: images/stock_picking_out_form.png
        :align: center
@@ -161,21 +163,24 @@ You can now look at the the list of deliveries waiting to be carried out using t
 
 .. tip::   **More information**  *States*
 
-    Open ERP distinguishes between the states *confirmed* and *assigned*. You say that an item is confirmed when it's known to be needed but not yet capable of being supplied, generally because the required products aren't available in stock.
+    Open ERP distinguishes between the states *confirmed* and *assigned*. You say that an item is confirmed when it's needed but the available stock is insufficient.
 
     You say that an item is assigned when the storesperson reserves it. The necessary products have been reserved for this specific operation.
 
-You can confirm a customer delivery using the 'Confirm' button. A window then opens where you can enter the quantities actually delivered. If you enter a value less than the forecast one, Open ERP automatically generates a partial delivery notes and a new order for the remaining items. For this exercise, just confirm the whole order.
+You can confirm a customer delivery using the 'Confirm' button. A window then opens where you can enter the quantities actually delivered. If you enter a value less than the forecast one, Open ERP automatically generates a partial delivery notes and a new order for the remaining items. For this exercise, just confirm all the products.
 
-If you return to the list of current orders you will see that your order has now been marked as delivered (done). A progress indicator from 0% to 100% is shown by each order so that the salesperson can follow the progress of their orders.
+If you return to the list of current orders you will see that your order has now been marked as delivered (done). A progress indicator from 0% to 100% is shown by each order so that the salesperson can follow the progress of their orders at a glance.
 
     .. image:: images/stock_sale_tree.png
        :align: center
 
 *List of orders with their delivery state.*
 
+   .. tip::  **More information** *Negative Stock*
 
-Stock analysis
+     Stock Management is very flexible so that it can be effective. For example if you forget to enter products at goods in, this won't prevent you from sending them to customers. In Open ERP you can force all operations manually using the button “Force assignment”. In this case, your stocks risk falling negative. You should monitor all stocks for negative levels and carry out an inventory correction when that happens.
+
+Analysing stock
 ---------------
 
 Now look at the effect of these operations on stock management. There are several ways of viewing stocks:
