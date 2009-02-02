@@ -73,6 +73,7 @@ Part Four handles all the functions of enterprise management: human resources fo
 
 Finally Part Five, structured in two chapters, explains first how to administer and configure Open ERP then provides a methodology for implementing Open ERP in the enterprise.
 
+
 	.. note::  *About the authors*
 	                
 	                **Fabien Pinckaers** 

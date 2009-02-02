@@ -62,8 +62,6 @@ Wait for the message showing that the database has been successfully created, al
 
 .. tip::   **Technique**  *User Access* 
 
-
-
 	The combination of username/password is specific to a single database. If you have administrative rights to a database you can modify the predefined users. 
 
 	Alternatively you can install the users_ldap module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
@@ -159,9 +157,10 @@ To add new modules through the server is a conventional systems administration t
 
 To add new modules through the client you must first change the permissions of the \ ``addons``\   directory of the server, so that it is writable by the server. That will enable you to install Open ERP modules using the Open ERP client (a task ultimately carried out on the application server by the server software). 
 
+.. index::
+   single:  Permissions
+
 .. tip::   **Note**  *Changing permissions* 
-
-
 
 	A very simple way of changing permissions on the Linux system you're using to develop an Open ERP application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-server/addons). 
 

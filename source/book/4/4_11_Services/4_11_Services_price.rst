@@ -2,6 +2,10 @@
    single: Price management
 .. 
 
+
+.. index::
+   single: Refund
+
 Price management policies
 ===========================
 

@@ -52,8 +52,6 @@ An Open ERP system is formed by three main components:
    :scale: 95
 
 
-
-
 .. tip::   **Terminology**  *eTiny – server or client?* 
 
     The eTiny component can be thought of as a server or a client depending on

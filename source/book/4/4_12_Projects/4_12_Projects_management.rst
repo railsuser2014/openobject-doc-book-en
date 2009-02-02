@@ -6,6 +6,9 @@ In the previous chapter you dealt with the financial management of projects, whi
 
 In this chapter you can use operational project management to organize tasks and plan the work you need to get the tasks completed. All of the necessary operations are carried out through the menu  *Project Management* 
 
+.. index::
+   single: Project
+
 .. tip::   **Terminology**  *Project* 
 
 	In Open ERP a project is represented by a set of tasks for completion. Projects have a tree structure that can be divided into phases and sub-phases. This structure is very useful for work organization

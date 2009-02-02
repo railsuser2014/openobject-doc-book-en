@@ -41,6 +41,9 @@ Creating a chart of accounts
 
 To add, modify or delete existing accounts, use the menu  *Financial Management > Configuration > General Accounts > Accounts Definitions* .
 
+.. index::
+   single: Multi-lingual
+
 .. tip::   **Advantage**  *Multi-lingual fields* 
 
 	In Open ERP multi-lingual fields are marked by a small flag to their right. Click on the flag to get a translation of the value of the field in the different installed languages. You can also edit the translation.
@@ -54,6 +57,10 @@ The main account fields are:
 *  *Active* : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
 *  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu:  *Financial Management > Configuration > *  *Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+
+.. index::
+   single: Type of account
+   single: Account Type
 
 .. tip::   **Comment**  *Type of account* 
 
@@ -96,6 +103,10 @@ In Open ERP you can use the concept of virtual charts of accounts to manage sev
 So your general chart of accounts can be the one imposed by the statutes of your country, and your CEO can then have other virtual charts as necessary, based on the accounts in the general chart. For example the CEO can create a view per department, a cash-flow and liquidity view, or consolidated accounts for different companies.
 
 The most interesting thing about virtual charts of accounts is that they can be used in the same way as the default chart of accounts for the whole organization. For example you can establish budgets from your consolidated accounts or from the accounts from one of your companies.
+
+
+.. index::
+   single: Virtual Accounts
 
 .. tip::   **Advantage**  *Virtual accounts* 
 

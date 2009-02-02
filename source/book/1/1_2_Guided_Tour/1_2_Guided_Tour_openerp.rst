@@ -375,10 +375,6 @@ Open ERP's replenishment management rules enable the system to generate draft p
 
 *Purchase order workflow*
 
-.. index::
-   single: Project Management
-.. 
-
 Project Management
 -------------------
 

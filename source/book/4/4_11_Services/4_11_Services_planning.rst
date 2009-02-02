@@ -41,6 +41,9 @@ The planning function covers several objectives which will be described in this 
 
 	So the social role of planning shouldn't be neglected. We have often experienced a background of stress in a company stemming from a lack of communication and planning.
 
+.. index::
+   single: Tasks
+
 Planning by time or by tasks?
 -------------------------------
 

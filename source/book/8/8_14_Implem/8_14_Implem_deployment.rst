@@ -154,6 +154,9 @@ You can use the Open ERP database backup procedure at different stages of confi
 
 Since your data describes much of your company's value, take particular care both when you need to transfer it (in backups and across your network) and when you're managing the super-administrator password. Make sure that the connection between a PC client and the two servers is correctly secured. You can configure Open ERP to use the HTTPS protocol, which provides security for data transfer
 
+.. index::
+   single: HTTPS
+
 .. tip::   **Definition**  *HTTPS* 
 
 	The HTTPS protocol (Secured Hyper Text Transfer Protocol) is the standard HTTP protocol secured by using the SSL (Secure Socket Layer) or TLS (Transport Layer Security) security protocols. It allows a user to verify her identify to the site to which she wants access, using a certificate of authentication. It also guarantees the integrity and confidentiality of the data sent between the user and the server. It can, optionally, provide highly secure client authentication by using a numbered certificate.
