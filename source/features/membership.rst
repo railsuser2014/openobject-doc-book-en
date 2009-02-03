@@ -8,7 +8,7 @@ on your system: calendar of events, current projects, members lists, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/membership_screenshot.png"><img src="images_small/membership_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/membership_screenshot.png"><img src="../images_small/membership_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

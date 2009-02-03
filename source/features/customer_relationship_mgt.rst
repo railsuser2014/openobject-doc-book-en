@@ -13,7 +13,7 @@ specific methods and lots of others actions based on your enterprise own rules.
 
 .. raw:: html
  
- <a target="_blank" href="images/customer_relationship_mgt_screenshot.png"><img src="images_small/customer_relationship_mgt_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/customer_relationship_mgt_screenshot.png"><img src="../images_small/customer_relationship_mgt_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

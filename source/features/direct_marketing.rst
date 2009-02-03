@@ -8,7 +8,7 @@ you to create bulk documents.
 
 .. raw:: html
  
- <a target="_blank" href="images/direct_marketing_screenshot.png"><img src="images_small/direct_marketing_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/direct_marketing_screenshot.png"><img src="../images_small/direct_marketing_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

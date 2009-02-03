@@ -225,6 +225,8 @@ company's processes. So if you click on the node to the left it will start the
 recruitment process of selecting and interviewing new employees if the
 necessary modules have been installed.
 
+.. index:: Process
+
 Workflows and User Processes
 =============================
 

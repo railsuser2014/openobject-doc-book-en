@@ -8,11 +8,13 @@ Now take a slight detour away from pure enterprise management by looking at some
 
 \ ``project_gtd``\  
 
-* Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often referred to by its initials GTD (trademark registered since 2005). This book is built around the principle that people should clearly write down all their outstanding tasks and store the details about these tasks in a trustworthy system. They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
+* Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often referred to by its initials GTD (trademark registered since 2005). This book is built around the principle that people should clearly write down all their outstanding tasks and store the details about these tasks in a trustworthy system.
+
+ They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
 
 .. tip::   **References**  *Efficiently managing time* 
 
-David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
+        David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
 
 	Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 

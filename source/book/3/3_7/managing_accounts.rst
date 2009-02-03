@@ -2,6 +2,8 @@
 .. index::
    single: Payable
    single: Receivable
+   single: Creditors
+   single: Debtors
 
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================
@@ -25,6 +27,8 @@ When members of your accounts department sign on to the Open ERP system, they'r
 
 *Accounting Dashboard*
 
+.. index:: Balance; Aged
+
 In the dashboard, the graph at the right entitled  *Aged Receivables*  represents your receivables week by week. That shows you at a glance the cumulative amount of your customer debtors by week.
 
 All of Open ERP's graphs are dynamic. So you can, for example, filter the data by clicking  *Zoom*  and then  *Filter*  on the Search form. Or just click on  *Zoom*  to open in a larger window for a graph, then click  *Search*  to display this in a list view.
@@ -44,6 +48,8 @@ For an analysis by partner you can use the partner balance that you get through 
 
 	.. image::  images/account_partner_balance.png
 	   :align: center
+
+.. index:: Ledger
 
 *Partner balances*
 
@@ -125,6 +131,9 @@ The different reports are classic Open ERP screens, so you can filter them and 
 	   :align: center
 
 *Summary screen for follow-ups*
+
+.. index::
+   single: Overdue payments
 
 Partner situation
 -----------------

@@ -12,7 +12,7 @@ external services, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/workflow_editor_screenshot.png"><img src="images_small/workflow_editor_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/workflow_editor_screenshot.png"><img src="../images_small/workflow_editor_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

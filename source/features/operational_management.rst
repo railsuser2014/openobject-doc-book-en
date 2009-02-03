@@ -7,7 +7,7 @@ etc. It's fully integrated with sales or purchases.
 
 .. raw:: html
  
- <a target="_blank" href="images/operational_management_screenshot.png"><img src="images_small/operational_management_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/operational_management_screenshot.png"><img src="../images_small/operational_management_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

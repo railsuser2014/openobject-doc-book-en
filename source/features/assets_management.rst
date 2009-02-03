@@ -12,7 +12,7 @@ to the financial and analytic accounting modules for a maximum of power.
 
 .. raw:: html
  
- <a target="_blank" href="images/asset_management_screenshot.png"><img src="images_small/asset_management_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/asset_management_screenshot.png"><img src="../images_small/asset_management_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

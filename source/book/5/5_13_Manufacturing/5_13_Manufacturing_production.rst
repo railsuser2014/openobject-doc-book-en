@@ -17,7 +17,6 @@ Manufacturing will have the following consequences:
 .. index:: BoM
 .. index:: Bill of Materials
 
-
 Bills of Materials
 ===================
 
@@ -139,6 +138,9 @@ The type of specification (BoM Type: Phantom or Normal) and the range field will
 
 After this you can select the raw materials that are used in the manufacture of the finished product. The quantities are expressed in a report based on the quantities of finished product and the quantities needed to produce them from the Bill of Materials.
 
+.. index::
+   single: BoM;Revisions
+
 The second tab, Revisions, is used to indicate all the changes made to the specification. After each change you can specify a revision number and some notes on the modifications you carried out.
 
 .. tip::  **More information**  *Simplified View*
@@ -155,6 +157,12 @@ In the third tab, Properties, you can put a free text reference to a plan, a seq
 Rounding is used to set the smallest Unit of Measure for expressing the quantities of the selected product. So if you set the rounding to 1.00 you're not able to manfuacture half a piece. The efficiency of the product lets you indicate the percentage you lose during manufacture. This loss can be set for the finished product or for each raw materials line. The impact of this efficiency figure is to reserve more raw materials for manufacture than you'd otherwise use just from the Bill of Materials calculations.
 
 The final part of the third tab enables you to set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in a section on configurable products.
+
+
+.. index::
+   single: BoM;Multi-level
+   
+.. index:: Multi-level BoM
 
 Multi-level Bills of Materials
 ===============================
@@ -412,6 +420,8 @@ This case, more advanced, of handling problems of procurement, will be sorted ou
 The customer order
 -------------------
 
+.. index:: Quotation
+
 Begin by encoding a customer order. To do this, use the menu *Sales Management > Orders > New Quotation*. Enter the following information:
 
 * Customer: Agrolait,
@@ -513,6 +523,10 @@ At this stage the product sold to the customer has been manufactured and the raw
 
 Delivery of product to the customer
 --------------------------------------
+
+.. index::
+   single: Picking
+   single: Packing
 
 When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu Stock Management > Outgoing Products > Available Packings. You'll find there the lists of packing to do, as shown in the figure below.
 

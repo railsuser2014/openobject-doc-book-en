@@ -243,7 +243,7 @@ Operations must then be carried out one by one. On each operation the operator c
 
 The following process is attached to each operation.
 
-    .. image:: images/mrp_operations_workflow,png
+    .. image:: images/mrp_operations_workflow.png
        :align: center
 
 *Process for handling an operation.*
