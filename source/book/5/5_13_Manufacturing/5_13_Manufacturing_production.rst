@@ -420,6 +420,8 @@ This case, more advanced, of handling problems of procurement, will be sorted ou
 The customer order
 -------------------
 
+.. index:: Quotation
+
 Begin by encoding a customer order. To do this, use the menu *Sales Management > Orders > New Quotation*. Enter the following information:
 
 * Customer: Agrolait,
@@ -521,6 +523,10 @@ At this stage the product sold to the customer has been manufactured and the raw
 
 Delivery of product to the customer
 --------------------------------------
+
+.. index::
+   single: Picking
+   single: Packing
 
 When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu Stock Management > Outgoing Products > Available Packings. You'll find there the lists of packing to do, as shown in the figure below.
 

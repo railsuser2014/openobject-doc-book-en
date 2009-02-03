@@ -49,6 +49,8 @@ For an analysis by partner you can use the partner balance that you get through 
 	.. image::  images/account_partner_balance.png
 	   :align: center
 
+.. index:: Ledger
+
 *Partner balances*
 
 If you want detailed information about a partner you can use the partner ledgers that you reach through the menu  *Financial Management > Reporting > Partner Accounts > Partner Ledger* .
@@ -129,6 +131,9 @@ The different reports are classic Open ERP screens, so you can filter them and 
 	   :align: center
 
 *Summary screen for follow-ups*
+
+.. index::
+   single: Overdue payments
 
 Partner situation
 -----------------
