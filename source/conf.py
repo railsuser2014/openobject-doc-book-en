@@ -197,9 +197,3 @@ latex_documents = [
 # If false, no module index is generated.
 #latex_use_modindex = True
 
-image_raw_html = '0'
-
-def setup(app):
-    app.add_config_value('image_raw_html', '0', True)
-
-
