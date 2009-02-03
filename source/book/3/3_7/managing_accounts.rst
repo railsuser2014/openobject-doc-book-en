@@ -2,6 +2,8 @@
 .. index::
    single: Payable
    single: Receivable
+   single: Creditors
+   single: Debtors
 
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================
@@ -24,6 +26,8 @@ When members of your accounts department sign on to the Open ERP system, they'r
 	   :align: center
 
 *Accounting Dashboard*
+
+.. index:: Balance; Aged
 
 In the dashboard, the graph at the right entitled  *Aged Receivables*  represents your receivables week by week. That shows you at a glance the cumulative amount of your customer debtors by week.
 

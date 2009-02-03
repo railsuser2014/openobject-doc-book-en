@@ -54,6 +54,7 @@ The accounting module in Open ERP covers general accounting, analytic accountin
 
 .. index::
    single: Accounting
+   single: Financial Accounting
 .. 
 
 .. tip::   **Terminology**  *Accounting* 
