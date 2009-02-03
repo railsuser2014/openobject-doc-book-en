@@ -465,7 +465,7 @@ You then get a margin analysis table. The following fields are given by product 
 
 <TODO>
 
-    .. image:: images/sale_delivery.png
+    .. image:: images/sale_delivery_form.png
        :align: center
 
 *Managing open orders, planning forecasts.*
