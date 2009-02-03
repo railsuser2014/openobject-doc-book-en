@@ -6,6 +6,7 @@ Installation and Configuration
 
 
 	.. image:: images/ch1_outline.png
+		:align: center
 
 *Your options for reading this section of the book*
 

@@ -1,10 +1,10 @@
 .. index:: MPS
 .. index:: Master Production Schedule
 
-Master Production Schedule
+Scheduling
 ===========================
 
-The master production plan, sometimes called the MPS (Master Production Schedule), will enable you to generate forecasts for incoming and outgoing material for a given product in the future. It's based on forecasts of inputs and outputs by the logistics manager. This could also be base on sales forecasts from the different salespeople.
+The master production plan, sometimes called the MPS (Master Production Schedule), enables you to generate forecasts for incoming and outgoing material. It's based on forecasts of inputs and outputs by the logistics manager.
 
 .. tip::   **Point**  *Product trading*
 
@@ -32,7 +32,8 @@ To do this use the menu *Sales Management > Configuration > Create Sales Periods
 
 *Defining periods for stock management.*
 
-Salespeople can then enter their sales forecasts by product and by period using the menu *Sales Management > Sales Forecasts > My Sales Forecasts*. The forecasts can be made by quantity or by value. If you enter a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amout. This can finally be modified manually ....
+Salespeople can then enter their sales forecasts by product and by period using the menu *Sales Management > Sales Forecasts > My Sales Forecasts*. The forecasts can be made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amount. This can be modified manually as needed before completion.
+
     .. image:: images/stock_sale_forecast.png
        :align: center
 
@@ -44,13 +45,13 @@ Salespeople can then enter their sales forecasts by product and by period using 
 Production Plan
 ----------------
 
-The logistics management can then plan incomings (manufacturing or purchases) and outgoings (consumption or customer deliveries) by period. To do this use the menu *Stock Management > Planning > Master Production Schedule*.
+The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings (consumption or customer deliveries) by period. To do this use the menu *Stock Management > Planning > Master Production Schedule*.
 
 For each period and product Open ERP gives you the following information:
 
 * stock estimated at the end of the period, calculated as stock in the following period less total estimated outgoings plus total estimated inputs,
 
-* closed entries, coming from planned production or purchases,
+* closed entries, coming from production or confirmed purchases,
 
 * forecast inputs for the period, calculated using the incoming entries less the closing amounts,
 
@@ -71,7 +72,7 @@ For each period and product Open ERP gives you the following information:
 
 The production plan then enables the logistics manager to play with the forecast income and outgoings and test the impact on the future stock for the product under consideration. It enables you for example to check that the stock doesn't fall below a certain level for the product under consideration.
 
-You can also open the production plan for past periods. In this case Open ERP shows you the real stock moves, by period for incoming and outgoings by forecast reports. This enables you to improve your estimates each time.
+You can also open the production plan for past periods. In this case Open ERP shows you the real stock moves, by period for forecast reports.
 
 If you don't have automated restocking rules for a product you can at any time start a restocking based on the estimates of the production plan. To do this press the button 'Start restocking'. Open ERP manages the forecast of restocking for an amount equal to the entries 'forecast'.
 

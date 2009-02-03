@@ -71,6 +71,7 @@ Start by manually entering a customer invoice. Use  *Financial Management > Invo
 A new invoice form opens for entering information.
 
 	.. image::  images/account_invoice_new.png
+		:align: center
 	
 *Entering a new invoice*
 
@@ -178,6 +179,7 @@ In the  *Taxes*  area at the bottom left of the invoice you'll find the details 
 
 
 	.. image::  images/account_invoice_tva.png
+		:align: center
 
 *Detail of tax charges on an invoice*
 

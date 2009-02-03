@@ -38,13 +38,14 @@ To create new databases you must know the super-administrator password which def
 
 
 	.. image:: images/change_superadmin_pwd.png
-
+	    :align: center
                 
 *Changing the super-administrator password through the web client*
 
 --------------------------                
                 
 	.. image:: images/create_new_db_GTK.png
+		:align: center
 	
 *Creating a new database through the GTK client*
 	        
@@ -70,7 +71,7 @@ Wait for the message showing that the database has been successfully created, al
 --------------
 
 	.. image:: images/create_new_db_web.png
-	
+		:align: center
 
         .. note ::  Failure to create a database
 
@@ -91,8 +92,9 @@ If this is the first time you've connected to this database you'll be asked a se
 Once configuration is complete you're connected to your Open ERP system. Its functionality is very limited because you've selected a minimal installation, but this is sufficient to demonstrate that your installation is working.
 
 
-.. image:: images/define_main_co_dlg.png
-    :scale: 95
+	.. image:: images/define_main_co_dlg.png
+		:align: center
+		:scale: 95
 	    
 *Defining your company during initial database configuration*
 	

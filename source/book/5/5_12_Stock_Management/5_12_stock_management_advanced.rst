@@ -6,7 +6,7 @@ In this section you'll enter the details of management and control of stocks.
 Requirements Calculation
 -------------------------
 
-Requirements calculation is the calculation engine that plans, prioritizes and ??? the automated restocking as a function of rules defined in the products.
+Requirements calculation is the calculation engine that plans, prioritizes and starts the automated restocking as a function of rules defined in the products.
 
 .. tip:: **Terminology** *Requirements Calculation*
 
@@ -19,13 +19,17 @@ Requirements calculation is the calculation engine that plans, prioritizes and ?
 Just in Time
 -------------
 
-By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts you can use the menu Administration > Configuration > Planning > Actions Planned. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
+By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts use the menu Administration > Configuration > Planning > Actions Planned. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module *mrp_jit* to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
 
-Then if you make a customer order with a product that's *Make To Order* the quotation request for a supplier will be generated from the confirmation of a customer order. This accelerates the visibility of the different operations.
+Then if you make a customer order with a product that's *Make To Order* the quotation request for a supplier will be generated. 
 
-This mode is not always advisable. Each order will be handled once it's been confirmed. Then if an order is to be delivered in three months the scheduler will reserve goods instock for each order once it's been confirmed. Outside, it would have been more efficient to leave these products available to other commands as it was ample time to replenish before delivery to the customer promise.
+ ..tip :: *Point** *Delivery from the supplier or to the customer*
+
+    The *sale_supplier_direct_delivery* module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
+
+This mode is not always advisable. Each order is handled once it's been confirmed. Then if an order is to be delivered in three months the scheduler will reserve goods in stock for each order once it's been confirmed. It would have been more efficient to leave these products available for other orders.
 
 If a customer order is configured 'From Order', the scheduler will directly create the corresponding supplier quotation request. Outside, it would have been preferable to wait for several weeks if the lead time enabled you to group the purchase with other future orders.
 
@@ -41,7 +45,7 @@ So the negative effects of working with the Just in Time module are:
 Planning
 ----------
 
-You've seen that most Open ERP documents can be changed in a planning view. It's the same for deliveries and goods receipts. You can put them into a calendar view at any time to plan your deliveries or goods receipts.
+You've seen that most Open ERP documents can be changed in a planning view. It's the same for deliveries and goods receipts. You can put them into a calendar view at all times to plan your deliveries or goods receipts.
 
     .. image:: images/stock_planning.png
        :align: center
@@ -68,12 +72,6 @@ If you leave the quantities alone, Open ERP confirms and closes the order for de
 *Confirmation screen for delivered quantities.*
 
 When you open the list of current deliveries, you find the field 'Partial delivery' which shows the reference number of the first delivery sent to the customer. That enable you to easily find the partial orders delivered so that you can treat them as a priority.
-
-Sometimes you'll want to send less product to the customer yet not generate a partial delivery but instead close the delivery note. You may want to do that despite not sending the whole order. To do that you have two possible solutions:
-
-* When confirming the delivery quantities you can reduce the value proposed by Open ERP. The system then generates a partial item that you can cancel immediately.
-
-* Before confirming the delivery, enter the line to modify and change the quantity to deliver.
 
 Receiving supplier products
 ----------------------------
@@ -113,7 +111,7 @@ In this case Open ERP generates a list of all products waiting to be received fr
 
 *List of items waiting for receipt.*
 
-Then you just look for the  corresponding entry using the supplier name or order reference. Click it and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP will automatically generate another receipt that will be put in waiting. You can let is open or cancel if you don't want to receive products missed by your supplier.
+Then you just look for the  corresponding entry using the supplier name or order reference. Click it and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP will automatically generate another receipt that will be put in waiting. You can let remain open or cancel it if products missed by your supplier will never be delivered.
 
 Confirmation by selecting products waiting
 ---------------------------------------------
@@ -128,7 +126,7 @@ In this case you can manually create a new goods receipt using the menu *Stock M
 Product routing
 ----------------
 
-You should install the *stock_location* module for advanced hierarchical stock management operations by product. 
+You should install the *stock_location* module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
 
     .. image:: images/product_location.png
        :align: center
@@ -157,7 +155,7 @@ You'll see some examples of using these locations and logistics by product:
 
 Example 1: A rentable product
 
-A rentable product is just a product delivered to a customer that is expected to be  returned in a few days time. When it has been delivered to the customer, Open ERP must generate a new goods receipt note with a forecast date at the end of the rental period. So you have a list of goods pending receipt for you to confirm when they are returned to your stores. To do this you should configure a product with the following rules:
+A rentable product is just a product delivered to a customer that is expected to be  returned in a few days time. When it has been delivered to the customer, Open ERP will generate a new goods receipt note with a forecast date at the end of the rental period. So you have a list of goods pending receipt for you to confirm when they are returned to your stores. To do this you should configure a product with the following rules:
 
 ==================== ==============
 Field                Value

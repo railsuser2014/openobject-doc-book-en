@@ -5,7 +5,7 @@ Import / Export
    single: Export; Stock Management
 .. index:: Import; Stock Management
 
-Managing import / export with foreign companies can sometimes be very complex. Between a departure port and destination company, products can get stopped for several months at sea or somewhere in the numerous transportation stages and customs. If you have to manage numerous deliveries you must be able to handle this in the most efficient way you can. So it's important to:
+Managing import / export with foreign companies can sometimes be very complex. Between a departure port and destination company, products can get stopped for several weeks at sea or somewhere in the numerous transportation stages and customs. To manage such deliveries efficiently it's important to:
 
 * know where your products are,
 
@@ -36,11 +36,11 @@ In transit
 Stock
 ------
 
-The transit location are linked between themselves with a manual confirmation step. When you receive notification that goods have been received at a port or in customs you just need to make the required internal stock move, entering data with the references you've been sent to confirm it all. Open ERP prepares all the linked moves automatically.
+The transit location are linked between themselves with a manual confirmation step. The internal stock move is validated at each port and customs arrival. Open ERP prepares all the linked moves automatically.
 
 .. tip::  **More information** *Intrastat*
 
-    If you do import / export you should install the module *report_intrastat*. This will enable you to prepare the reports needed to declare product exports.
+    Companies that do import / export should install the module *report_intrastat*. This will enable them to prepare the reports needed to declare product exports.
 
 You can use the lead times between different locations to account for real delays.    Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of incoming products so that you can respond to a customer's needs as precisely as possible.
 
@@ -62,8 +62,8 @@ The same principle is used for internal stock to generate the quality control fo
 Consigned Products
 -------------------
 
-You can also use the principle of linked locations to manage consigned products. You can indicate that certain products should be returned to you after a certain number of days when they have been delivered to customers.
+The principle of linked locations is used to manage consigned products. You can indicate that certain products should be returned to you after a certain number of days after they have been delivered to customers.
 
-When the products have been delivered Open ERP automatically creates goods receipts for the consigned product. The indicated date is obviously approximate but enables you to forecast returns fairly efficiently.
+When the products have been delivered Open ERP automatically creates goods receipts for the consigned product. The indicated date is obviously approximate but enables you to forecast returns.
 
 

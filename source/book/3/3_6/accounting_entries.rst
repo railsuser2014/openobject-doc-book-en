@@ -29,6 +29,7 @@ Open ERP provides a visual tool for managing bank statements that simplifies da
 Start by entering a statement line. To do that use the menu  *Financial Management > Entries > Statements* . A data entry form for statements then opens.
 
 	.. image::  images/account_statement.png
+		:align: center
 	
 *Data entry form for a bank statement*
 
@@ -51,6 +52,7 @@ When the payment entry has been made it's possible to reconcile this directly wi
 
 
 	.. image::  images/account_statement_reconcile.png
+		:align: center
 	
 *Reconciliation from data entry of the bank statement*
 
@@ -175,6 +177,7 @@ Depending on the level of complexity that you choose when you start running the 
 
 
 	.. image::  images/account_reconcile_auto.png
+		:align: center
 
 *Form for automatic reconciliation*
 
@@ -225,7 +228,8 @@ Select entries that you want to reconcile. From the selection, Open ERP indicat
 
 
 	                .. image::  images/account_sample2_entries.png
-	                    :scale: 80
+	                	:align: center
+	                	:scale: 80
 	                
 
 			You notice an invoice for 1900 and a payment two weeks later of 1900 with the same reference. You can select the two lines in that view. The total at the bottom of the page shows you that the credit amount equals the debit amount for the selected line. Click Reconcile Entries to reconcile the two lines.
@@ -294,6 +298,7 @@ The workflow for managing payment is as follows:
 
 
 	.. image::  images/account_payment_flow.png
+		:align: center
 	
 *Workflow for handling payments to suppliers*
 
@@ -312,6 +317,7 @@ Once the payment order is confirmed there's still a validation step for an accou
 	You can integrate more complex workflow rules to manage payment orders by adapting the workflow. For example, in some companies payments must be approved by a manager under certain cash flow or value limit conditions.
 
 	.. image::  images/account_payment_workflow.png
+		:align: center
 	
 *Payments workflow*
 
@@ -325,7 +331,8 @@ Preparation and execution of orders.
 To enter a payment order, use the menu  *Financial Management > Payment > Payment Orders* .
 
 	.. image::  images/account_payment_order.png
-	   :scale: 95
+		:align: center
+		:scale: 95
 	
 *Entering a payment order*
 

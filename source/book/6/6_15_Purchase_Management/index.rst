@@ -33,7 +33,7 @@ Price request from the supplier
 To enter data for a new supplier price request, use the menu *Purchase Management > New Purchase Order*. Open ERP opens a blank purchase form that you use for requesting prices from a supplier. This is shown in the figure below. If the price request came from an automatic procurement created by Open ERP you'll find in the *Origin* field a reference to the document that generated the request.
 
     .. image:: images/purchase_form.png
-       :align: center
+        :align: center
 
 *Data entry for a supplier order.*
 

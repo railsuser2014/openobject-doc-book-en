@@ -131,6 +131,7 @@ Now create a new product:
 	#. The  *Product Type* field should stay as \ ``Stockable Product``\   its default value. The fields  *Procure Method*   *Default UOM* and  *Purchase UOM* should also stay at their default values: in fact every other field remains untouched.
 
                 .. image::  images/product.png
+                	:align: center
                	   :scale: 95
                 
 
@@ -194,8 +195,8 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 	#. Then click on one of the buttons  *Create Monthly Periods* or  *Create 3 Months Periods* to create an appropriate set of periods for the fiscal year, as shown in the figure below.  *Save* this.
 
 
-.. image::  images/def_fiscal_year_tab.png
-   :align: center
+	.. image::  images/def_fiscal_year_tab.png
+   		:align: center
 
 *Defining a fiscal year and the accounting periods within it*
 

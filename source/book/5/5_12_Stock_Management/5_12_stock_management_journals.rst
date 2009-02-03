@@ -21,13 +21,13 @@ Install the module *sale_journal* to work with journals. This adds three new con
 
 * Delivery journals.
 
-Invoicing journals will help you assign purchase orders and/or delivery order to a given invoicing journal. It will then be possible to invoice everything in the journal in one go, and to control the different amounts by journal. For example you can create the following journals: daily invoicing, end-of-week invoicing, and end-of-month invoicing. It's also possible to show the invoicing journal by default in the partner form. That enables you to show for a given customer if he is to be invoiced daily or monthly.
+Invoicing journals are used to assign purchase orders and/or delivery order to a given invoicing journal. Everything in the journal can be invoiced in one go, and you can control the amounts by journal. For example you can create the following journals: daily invoicing, end-of-week invoicing, and end-of-month invoicing. It's also possible to show the invoicing journal by default in the partner form.
 
-Order journals are shown on the orders and are automatically transferred to orders for the corresponding items. These enable you to classify the orders in various ways, such as by department, by salesperson, or by type. Then if a salesperson looks at her own journals after an order she can easily see the work on current items compared with her own orders.
+Order journals look like orders and are automatically transferred to orders for the corresponding items. These enable you to classify the orders in various ways, such as by department, by salesperson, or by type. Then if a salesperson looks at her own journals after an order she can easily see the work on current items compared with her own orders.
 
 .. tip::  **Point**  *Default Values*
 
-If a salesperson wants to encode all orders in his own order journal he can use the default value in which the cal
+      To enter all the orders in their own order journal, a salesperson can use the default values that are entered in the fields when creating orders.
 
 Finally the delivery journals are used to post each item into a delivery journal. For example you can create journals dated according to customer delivery dates (such as Monday's deliveries, or afternoon deliveries) or these journals could represent the day's work for delivery vehicles (such as truck1, truck2).
 

@@ -1,17 +1,15 @@
 Logistics and Stock Management
 ###############################
 
-*Open ERP's stock management is perhaps the most intelligent stock management system that you can get in any of the integrated management software systems on the market at the time of writing. It's extremely simple, flexible and complete, all at the same time.*
+*Open ERP's stock management is at once very simple, flexible and complete. It's based on the concept of double entry that revolutionized accounting. The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better, “everything moved”. In Open ERP you don't talk of disappearance, consumption or loss of products: instead you talk only of stock moves from one place to another.*
 
-It's based on the concept of double entry that revolutionized accounting. What's unique to Open ERP is that this has now been applied to stock management. The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better, “everything moved”. Talk of disappearance, consumption or loss of products is not used in Open ERP. Instead you talk only of stock moves from one place to another.
-
-And just as in accounting, the system manages counterparts to each of its operations such as receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption of raw materials. Stock movements are always made from one location to another. To satisfy the need for a counterpart to each stock movement, the software supports different types of stock location:
+Just as in accounting, the Open ERP system manages counterparts to each of its operations such as receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption of raw materials. Stock movements are always made from one location to another. To satisfy the need for a counterpart to each stock movement, the software supports different types of stock location:
 
 * Physical stock locations,
 
 * Partner locations,
 
-* Virtual counterparts.
+* Virtual counterparts such as production and inventory.
 
 Physical locations represent warehouses and their hierarchical structure. These are generally the locations that are managed by traditional stock management systems.
 
@@ -30,7 +28,12 @@ The following figure shows the initial configuration of the stores locations whe
 
 .. tip::   **More information**  *Hierarchical stock locations*
 
-    As well as having several location types, locations are also structured hierarchically. Then it becomes possible for you to tree-structure your locations, dependent on a father-son relationship. This lets you have various levels of detail for your analysis of stock operations.
+    In Open ERP locations are structured hierarchically. You can structure your locations as a tree, dependent on a father-son relationship. This lets you have more detailed levels of analysis of your stock operations and the organization of your warehouses.
+
+.. tip:: **Terminology** *Locations and Warehouses*
+
+    In Open ERP warehouses represent your places of physical stock. A warehouse can be structured in several locations at multiple levels. Locations are used to manage all types of storage place, such as at the customer and the production counterparts.
+
 
 .. raw:: html
 
@@ -39,7 +42,6 @@ The following figure shows the initial configuration of the stores locations whe
 .. toctree::
 
     5_12_stock_management_illustration
-    5_12_stock_management_advantages
     5_12_stock_management_wf
     5_12_stock_management_stocks
     5_12_stock_management_logistic
