@@ -8,7 +8,7 @@ schedule allows a fine tuning of your automatic procurements.
 
 .. raw:: html
  
- <a target="_blank" href="../images/food_industries_screenshot.png"><img src="../images_small//food_industries_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/food_industries_screenshot.png"><img src="../images_small/food_industries_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

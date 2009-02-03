@@ -9,7 +9,7 @@ date, the currency, the category of product, etc.
 
 .. raw:: html
  
- <a target="_blank" href="../images/product_pricelist_screenshot.png"><img src="../images_small//product_pricelist_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/product_pricelist_screenshot.png"><img src="../images_small/product_pricelist_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

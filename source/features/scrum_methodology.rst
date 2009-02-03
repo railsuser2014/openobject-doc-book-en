@@ -13,7 +13,7 @@ and Google to manages all their new products.
 
 .. raw:: html
  
- <a target="_blank" href="../images/scrum_methodology_screenshot.png"><img src="../images_small//scrum_methodology_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/scrum_methodology_screenshot.png"><img src="../images_small/scrum_methodology_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

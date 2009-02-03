@@ -9,7 +9,7 @@ to projects, products, sales, contracts, etc.
 
 .. raw:: html
  
- <a target="_blank" href="../images/document_screenshot.png"><img src="../images_small//document_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/document_screenshot.png"><img src="../images_small/document_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------

@@ -8,7 +8,7 @@ network infrastructure.
 
 .. raw:: html
  
- <a target="_blank" href="../images/network_screenshot.png"><img src="../images_small//network_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/network_screenshot.png"><img src="../images_small/network_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

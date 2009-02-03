@@ -12,7 +12,7 @@ to the user role:
 
 .. raw:: html
  
- <a target="_blank" href="../images/budget_screenshot.png"><img src="../images_small//budget_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/budget_screenshot.png"><img src="../images_small/budget_screenshot.png" class="screenshot" /></a>
 
 Key-Points:
 -----------

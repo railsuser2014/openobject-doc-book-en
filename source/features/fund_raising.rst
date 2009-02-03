@@ -7,7 +7,7 @@ the money is used accross your different projects and ressources.
 
 .. raw:: html
  
- <a target="_blank" href="../images/fundraising_screenshot.png"><img src="../images_small//fundraising_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/fundraising_screenshot.png"><img src="../images_small/fundraising_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

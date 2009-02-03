@@ -7,7 +7,7 @@ benefit from a centralized, high quality, secure and scalable system.
 
 .. raw:: html
  
- <a target="_blank" href="../images/medical_screenshot.png"><img src="../images_small//medical_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/medical_screenshot.png"><img src="../images_small/medical_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:

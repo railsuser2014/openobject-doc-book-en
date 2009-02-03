@@ -15,7 +15,7 @@ share.
 
 .. raw:: html
  
- <a target="_blank" href="../images/module_system_screenshot.png"><img src="../images_small//module_system_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/module_system_screenshot.png"><img src="../images_small/module_system_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

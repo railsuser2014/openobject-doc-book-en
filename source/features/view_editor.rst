@@ -7,7 +7,7 @@ new fields in a few seconds.
 
 .. raw:: html
  
- <a target="_blank" href="../images/view_editor_screenshot.png"><img src="../images_small//view_editor_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/view_editor_screenshot.png"><img src="../images_small/view_editor_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
