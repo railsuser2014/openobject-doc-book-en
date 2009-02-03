@@ -7,7 +7,7 @@ recurring subscriptions, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/invoicing_screenshot.png"><img src="images_small/invoicing_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/invoicing_screenshot.png"><img src="../images_small//invoicing_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

@@ -7,7 +7,7 @@ designer will help you to design full schema in a few minutes.
 
 .. raw:: html
  
- <a target="_blank" href="images/cube_designer_screenshot.png"><img src="images_small/cube_designer_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/cube_designer_screenshot.png"><img src="../images_small//cube_designer_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

@@ -6,7 +6,7 @@ Introduction two or three lines.
 
 .. raw:: html
  
- <a target="_blank" href="images/end_users_screenshot.png"><img src="images_small/end_users_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/end_users_screenshot.png"><img src="../images_small//end_users_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

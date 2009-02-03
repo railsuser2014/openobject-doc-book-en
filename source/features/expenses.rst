@@ -11,7 +11,7 @@ automatically in the accounting after validation of managers.
 
 .. raw:: html
  
- <a target="_blank" href="images/expense_screenshot.png"><img src="images_small/expense_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/expense_screenshot.png"><img src="../images_small//expense_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------
