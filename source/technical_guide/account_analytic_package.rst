@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_package
-    :synopsis: account_analytic_package
+    :synopsis: account_analytic_package 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_analytic_package {
+        display: none;
+      }
+    </style>
+
 account_analytic_package (*account_analytic_package*)
 =====================================================
 :Module: account_analytic_package
 :Name: account_analytic_package
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_analytic_package
 :Web: http://www.tinyerp.com/
 :Is certified: no

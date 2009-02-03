@@ -1,6 +1,6 @@
 
 .. module:: purchase_delivery
-    :synopsis: Carriers and deliveries For Purchase Order
+    :synopsis: Carriers and deliveries For Purchase Order 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-purchase_delivery {
+        display: none;
+      }
+    </style>
+
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery
 :Name: Carriers and deliveries For Purchase Order
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_delivery
 :Web: 
 :Is certified: no

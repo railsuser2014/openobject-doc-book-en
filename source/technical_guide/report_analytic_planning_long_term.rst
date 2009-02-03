@@ -1,6 +1,6 @@
 
 .. module:: report_analytic_planning_long_term
-    :synopsis: report_analytic_planning_long_term
+    :synopsis: report_analytic_planning_long_term 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_analytic_planning_long_term {
+        display: none;
+      }
+    </style>
+
 report_analytic_planning_long_term (*report_analytic_planning_long_term*)
 =========================================================================
 :Module: report_analytic_planning_long_term
 :Name: report_analytic_planning_long_term
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic_planning_long_term
 :Web: http://tinyerp.com/
 :Is certified: no

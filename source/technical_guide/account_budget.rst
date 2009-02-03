@@ -1,6 +1,6 @@
 
 .. module:: account_budget
-    :synopsis: Budget Management
+    :synopsis: Budget Management (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_budget {
+        display: none;
+      }
+    </style>
+
 Budget Management (*account_budget*)
 ====================================
 :Module: account_budget
 :Name: Budget Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_budget
 :Web: http://www.openerp.com
 :Is certified: yes

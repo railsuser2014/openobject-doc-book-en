@@ -1,6 +1,6 @@
 
 .. module:: cci_crm
-    :synopsis: CCI CRM
+    :synopsis: CCI CRM 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_crm {
+        display: none;
+      }
+    </style>
+
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
 :Name: CCI CRM
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_crm
 :Web: http://www.openerp.com
 :Is certified: no

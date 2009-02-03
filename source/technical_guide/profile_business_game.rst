@@ -1,6 +1,6 @@
 
 .. module:: profile_business_game
-    :synopsis: Bussiness Game
+    :synopsis: Bussiness Game (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-profile_business_game {
+        display: none;
+      }
+    </style>
+
 Bussiness Game (*profile_business_game*)
 ========================================
 :Module: profile_business_game
 :Name: Bussiness Game
 :Version: False
+:Author: Tiny
 :Directory: profile_business_game
 :Web: 
 :Is certified: yes

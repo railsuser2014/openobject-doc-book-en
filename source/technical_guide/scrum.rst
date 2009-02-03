@@ -1,6 +1,6 @@
 
 .. module:: scrum
-    :synopsis: Scrum, Agile Development Method
+    :synopsis: Scrum, Agile Development Method (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-scrum {
+        display: none;
+      }
+    </style>
+
 Scrum, Agile Development Method (*scrum*)
 =========================================
 :Module: scrum
 :Name: Scrum, Agile Development Method
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: scrum
 :Web: 
 :Is certified: yes

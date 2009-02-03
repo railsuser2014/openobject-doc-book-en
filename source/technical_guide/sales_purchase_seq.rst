@@ -1,6 +1,6 @@
 
 .. module:: sales_purchase_seq
-    :synopsis: Sales Purchase Sequence Management
+    :synopsis: Sales Purchase Sequence Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sales_purchase_seq {
+        display: none;
+      }
+    </style>
+
 Sales Purchase Sequence Management (*sales_purchase_seq*)
 =========================================================
 :Module: sales_purchase_seq
 :Name: Sales Purchase Sequence Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sales_purchase_seq
 :Web: http://tinyerp.com/module_sale.html
 :Is certified: no

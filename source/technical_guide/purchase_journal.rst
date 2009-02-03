@@ -1,6 +1,6 @@
 
 .. module:: purchase_journal
-    :synopsis: Managing sales and deliveries by journal
+    :synopsis: Managing sales and deliveries by journal 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-purchase_journal {
+        display: none;
+      }
+    </style>
+
 Managing sales and deliveries by journal (*purchase_journal*)
 =============================================================
 :Module: purchase_journal
 :Name: Managing sales and deliveries by journal
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_journal
 :Web: http://www.tinyerp.com
 :Is certified: no

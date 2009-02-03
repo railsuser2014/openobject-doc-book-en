@@ -1,6 +1,6 @@
 
 .. module:: mrp_jit
-    :synopsis: MRP JIT
+    :synopsis: MRP JIT (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-mrp_jit {
+        display: none;
+      }
+    </style>
+
 MRP JIT (*mrp_jit*)
 ===================
 :Module: mrp_jit
 :Name: MRP JIT
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: mrp_jit
 :Web: 
 :Is certified: yes

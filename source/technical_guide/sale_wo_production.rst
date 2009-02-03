@@ -1,6 +1,6 @@
 
 .. module:: sale_wo_production
-    :synopsis: Sales Without production
+    :synopsis: Sales Without production 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_wo_production {
+        display: none;
+      }
+    </style>
+
 Sales Without production (*sale_wo_production*)
 ===============================================
 :Module: sale_wo_production
 :Name: Sales Without production
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: sale_wo_production
 :Web: http://tinyerp.com/
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: edi
-    :synopsis: EDI
+    :synopsis: EDI 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-edi {
+        display: none;
+      }
+    </style>
+
 EDI (*edi*)
 ===========
 :Module: edi
 :Name: EDI
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: edi
 :Web: 
 :Is certified: no

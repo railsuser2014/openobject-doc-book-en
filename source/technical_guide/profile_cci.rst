@@ -1,6 +1,6 @@
 
 .. module:: profile_cci
-    :synopsis: Profile Chamber of Commerce
+    :synopsis: Profile Chamber of Commerce 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-profile_cci {
+        display: none;
+      }
+    </style>
+
 Profile Chamber of Commerce (*profile_cci*)
 ===========================================
 :Module: profile_cci
 :Name: Profile Chamber of Commerce
 :Version: False
+:Author: Tiny
 :Directory: profile_cci
 :Web: 
 :Is certified: no

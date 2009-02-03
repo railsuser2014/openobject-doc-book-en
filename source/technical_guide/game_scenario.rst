@@ -1,6 +1,6 @@
 
 .. module:: game_scenario
-    :synopsis: Scenario of games
+    :synopsis: Scenario of games 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-game_scenario {
+        display: none;
+      }
+    </style>
+
 Scenario of games (*game_scenario*)
 ===================================
 :Module: game_scenario
 :Name: Scenario of games
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: game_scenario
 :Web: 
 :Is certified: no

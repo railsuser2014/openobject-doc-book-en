@@ -1,6 +1,6 @@
 
 .. module:: profile_indian_account
-    :synopsis: Indian Accounting
+    :synopsis: Indian Accounting 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-profile_indian_account {
+        display: none;
+      }
+    </style>
+
 Indian Accounting (*profile_indian_account*)
 ============================================
 :Module: profile_indian_account
 :Name: Indian Accounting
 :Version: False
+:Author: Tiny
 :Directory: profile_indian_account
 :Web: 
 :Is certified: no

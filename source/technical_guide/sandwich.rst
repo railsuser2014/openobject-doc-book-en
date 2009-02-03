@@ -1,6 +1,6 @@
 
 .. module:: sandwich
-    :synopsis: Sandwich Module
+    :synopsis: Sandwich Module 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sandwich {
+        display: none;
+      }
+    </style>
+
 Sandwich Module (*sandwich*)
 ============================
 :Module: sandwich
 :Name: Sandwich Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sandwich
 :Web: 
 :Is certified: no

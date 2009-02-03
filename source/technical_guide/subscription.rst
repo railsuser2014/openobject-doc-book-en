@@ -1,6 +1,6 @@
 
 .. module:: subscription
-    :synopsis: Subscription and recurring operations
+    :synopsis: Subscription and recurring operations (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-subscription {
+        display: none;
+      }
+    </style>
+
 Subscription and recurring operations (*subscription*)
 ======================================================
 :Module: subscription
 :Name: Subscription and recurring operations
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: subscription
 :Web: 
 :Is certified: yes

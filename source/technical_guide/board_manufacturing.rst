@@ -1,6 +1,6 @@
 
 .. module:: board_manufacturing
-    :synopsis: Board for manufacturing
+    :synopsis: Board for manufacturing (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_manufacturing {
+        display: none;
+      }
+    </style>
+
 Board for manufacturing (*board_manufacturing*)
 ===============================================
 :Module: board_manufacturing
 :Name: Board for manufacturing
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_manufacturing
 :Web: 
 :Is certified: yes

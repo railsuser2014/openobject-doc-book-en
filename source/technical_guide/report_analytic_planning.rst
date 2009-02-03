@@ -1,6 +1,6 @@
 
 .. module:: report_analytic_planning
-    :synopsis: Analytic planning - Reporting
+    :synopsis: Analytic planning - Reporting (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_analytic_planning {
+        display: none;
+      }
+    </style>
+
 Analytic planning - Reporting (*report_analytic_planning*)
 ==========================================================
 :Module: report_analytic_planning
 :Name: Analytic planning - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic_planning
 :Web: http://www.openerp.com
 :Is certified: yes

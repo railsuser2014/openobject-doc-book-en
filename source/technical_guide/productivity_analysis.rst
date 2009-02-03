@@ -1,6 +1,6 @@
 
 .. module:: productivity_analysis
-    :synopsis: Productivity Analysis
+    :synopsis: Productivity Analysis 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-productivity_analysis {
+        display: none;
+      }
+    </style>
+
 Productivity Analysis (*productivity_analysis*)
 ===============================================
 :Module: productivity_analysis
 :Name: Productivity Analysis
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: productivity_analysis
 :Web: 
 :Is certified: no

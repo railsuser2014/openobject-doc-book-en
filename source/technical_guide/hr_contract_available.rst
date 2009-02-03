@@ -1,6 +1,6 @@
 
 .. module:: hr_contract_available
-    :synopsis: Human Resources Contracts
+    :synopsis: Human Resources Contracts 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_contract_available {
+        display: none;
+      }
+    </style>
+
 Human Resources Contracts (*hr_contract_available*)
 ===================================================
 :Module: hr_contract_available
 :Name: Human Resources Contracts
 :Version: False
+:Author: Tiny
 :Directory: hr_contract_available
 :Web: http://tinyerp.com/module_hr.html
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: base_vat
-    :synopsis: VAT
+    :synopsis: VAT (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_vat {
+        display: none;
+      }
+    </style>
+
 VAT (*base_vat*)
 ================
 :Module: base_vat
 :Name: VAT
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_vat
 :Web: 
 :Is certified: yes

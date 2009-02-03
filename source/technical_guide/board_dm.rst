@@ -1,6 +1,6 @@
 
 .. module:: board_dm
-    :synopsis: Board for DM users
+    :synopsis: Board for DM users 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_dm {
+        display: none;
+      }
+    </style>
+
 Board for DM users (*board_dm*)
 ===============================
 :Module: board_dm
 :Name: Board for DM users
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_dm
 :Web: 
 :Is certified: no

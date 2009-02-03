@@ -1,6 +1,6 @@
 
 .. module:: md_hr_course
-    :synopsis: Pilot Human Resources
+    :synopsis: Pilot Human Resources 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-md_hr_course {
+        display: none;
+      }
+    </style>
+
 Pilot Human Resources (*md_hr_course*)
 ======================================
 :Module: md_hr_course
 :Name: Pilot Human Resources
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: md_hr_course
 :Web: http://tinyerp.com/module_hr.html
 :Is certified: no

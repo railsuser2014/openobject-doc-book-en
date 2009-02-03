@@ -1,6 +1,6 @@
 
 .. module:: product_lot_foundry
-    :synopsis: Products Lot Foundry
+    :synopsis: Products Lot Foundry 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_lot_foundry {
+        display: none;
+      }
+    </style>
+
 Products Lot Foundry (*product_lot_foundry*)
 ============================================
 :Module: product_lot_foundry
 :Name: Products Lot Foundry
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_lot_foundry
 :Web: 
 :Is certified: no

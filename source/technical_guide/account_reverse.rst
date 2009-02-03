@@ -1,6 +1,6 @@
 
 .. module:: account_reverse
-    :synopsis: Account Move Reverse
+    :synopsis: Account Move Reverse 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_reverse {
+        display: none;
+      }
+    </style>
+
 Account Move Reverse (*account_reverse*)
 ========================================
 :Module: account_reverse
 :Name: Account Move Reverse
 :Version: 5.0.1.0
+:Author: ACYSOS S.L.
 :Directory: account_reverse
 :Web: 
 :Is certified: no

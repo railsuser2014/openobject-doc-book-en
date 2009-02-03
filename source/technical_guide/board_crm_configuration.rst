@@ -1,6 +1,6 @@
 
 .. module:: board_crm_configuration
-    :synopsis: Dashboard for CRM Configuration
+    :synopsis: Dashboard for CRM Configuration (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_crm_configuration {
+        display: none;
+      }
+    </style>
+
 Dashboard for CRM Configuration (*board_crm_configuration*)
 ===========================================================
 :Module: board_crm_configuration
 :Name: Dashboard for CRM Configuration
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_crm_configuration
 :Web: 
 :Is certified: yes

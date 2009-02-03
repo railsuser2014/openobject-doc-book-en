@@ -1,6 +1,6 @@
 
 .. module:: account_payment_extension
-    :synopsis: Account Payment Extension
+    :synopsis: Account Payment Extension 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_payment_extension {
+        display: none;
+      }
+    </style>
+
 Account Payment Extension (*account_payment_extension*)
 =======================================================
 :Module: account_payment_extension
 :Name: Account Payment Extension
 :Version: 5.0.1.1
+:Author: Zikzakmedia SL
 :Directory: account_payment_extension
 :Web: http://www.zikzakmedia.com
 :Is certified: no

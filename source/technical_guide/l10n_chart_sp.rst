@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_sp
-    :synopsis: Spain - Chart of Account
+    :synopsis: Spain - Chart of Account 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-l10n_chart_sp {
+        display: none;
+      }
+    </style>
+
 Spain - Chart of Account (*l10n_chart_sp*)
 ==========================================
 :Module: l10n_chart_sp
 :Name: Spain - Chart of Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_sp
 :Web: 
 :Is certified: no

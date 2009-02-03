@@ -1,6 +1,6 @@
 
 .. module:: sale_margin_delivery
-    :synopsis: Margins in Sale Delivery Lines
+    :synopsis: Margins in Sale Delivery Lines 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_margin_delivery {
+        display: none;
+      }
+    </style>
+
 Margins in Sale Delivery Lines (*sale_margin_delivery*)
 =======================================================
 :Module: sale_margin_delivery
 :Name: Margins in Sale Delivery Lines
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_margin_delivery
 :Web: 
 :Is certified: no

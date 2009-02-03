@@ -1,6 +1,6 @@
 
 .. module:: l10n_fr
-    :synopsis: France - Plan Comptable Général
+    :synopsis: France - Plan Comptable Général 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-l10n_fr {
+        display: none;
+      }
+    </style>
+
 France - Plan Comptable Général (*l10n_fr*)
 ===========================================
 :Module: l10n_fr
 :Name: France - Plan Comptable Général
 :Version: 5.0.1.0
+:Author: OpenERP
 :Directory: l10n_fr
 :Web: http://www.openerp.com
 :Is certified: no

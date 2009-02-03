@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_ca_fr
-    :synopsis: Canadian - French - Chart of Acounts
+    :synopsis: Canadian - French - Chart of Acounts 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-l10n_chart_ca_fr {
+        display: none;
+      }
+    </style>
+
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 =========================================================
 :Module: l10n_chart_ca_fr
 :Name: Canadian - French - Chart of Acounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_ca_fr
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: lunch
-    :synopsis: Lunch Module
+    :synopsis: Lunch Module 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-lunch {
+        display: none;
+      }
+    </style>
+
 Lunch Module (*lunch*)
 ======================
 :Module: lunch
 :Name: Lunch Module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: lunch
 :Web: 
 :Is certified: no

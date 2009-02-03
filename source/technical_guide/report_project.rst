@@ -1,6 +1,6 @@
 
 .. module:: report_project
-    :synopsis: Sales Management - Reporting
+    :synopsis: Sales Management - Reporting (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_project {
+        display: none;
+      }
+    </style>
+
 Sales Management - Reporting (*report_project*)
 ===============================================
 :Module: report_project
 :Name: Sales Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_project
 :Web: http://www.openerp.com
 :Is certified: yes

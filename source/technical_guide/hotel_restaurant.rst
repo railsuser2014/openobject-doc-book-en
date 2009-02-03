@@ -1,6 +1,6 @@
 
 .. module:: hotel_restaurant
-    :synopsis: Hotel Restaurant
+    :synopsis: Hotel Restaurant 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hotel_restaurant {
+        display: none;
+      }
+    </style>
+
 Hotel Restaurant (*hotel_restaurant*)
 =====================================
 :Module: hotel_restaurant
 :Name: Hotel Restaurant
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel_restaurant
 :Web: 
 :Is certified: no

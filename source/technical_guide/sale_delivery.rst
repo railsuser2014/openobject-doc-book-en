@@ -1,6 +1,6 @@
 
 .. module:: sale_delivery
-    :synopsis: Sale Delivery Planning
+    :synopsis: Sale Delivery Planning 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_delivery {
+        display: none;
+      }
+    </style>
+
 Sale Delivery Planning (*sale_delivery*)
 ========================================
 :Module: sale_delivery
 :Name: Sale Delivery Planning
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_delivery
 :Web: 
 :Is certified: no

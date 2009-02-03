@@ -1,6 +1,6 @@
 
 .. module:: multi_company_currency
-    :synopsis: Multi Currency for Multi Company
+    :synopsis: Multi Currency for Multi Company 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-multi_company_currency {
+        display: none;
+      }
+    </style>
+
 Multi Currency for Multi Company (*multi_company_currency*)
 ===========================================================
 :Module: multi_company_currency
 :Name: Multi Currency for Multi Company
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: multi_company_currency
 :Web: http://tinyerp.com
 :Is certified: no

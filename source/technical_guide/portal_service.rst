@@ -1,6 +1,6 @@
 
 .. module:: portal_service
-    :synopsis: Portal Management - Service
+    :synopsis: Portal Management - Service 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-portal_service {
+        display: none;
+      }
+    </style>
+
 Portal Management - Service (*portal_service*)
 ==============================================
 :Module: portal_service
 :Name: Portal Management - Service
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: portal_service
 :Web: http://tinyerp.com/
 :Is certified: no

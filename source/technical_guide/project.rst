@@ -1,6 +1,6 @@
 
 .. module:: project
-    :synopsis: Project Management
+    :synopsis: Project Management (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-project {
+        display: none;
+      }
+    </style>
+
 Project Management (*project*)
 ==============================
 :Module: project
 :Name: Project Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: project
 :Web: http://www.openerp.com
 :Is certified: yes

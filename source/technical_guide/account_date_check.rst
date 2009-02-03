@@ -1,6 +1,6 @@
 
 .. module:: account_date_check
-    :synopsis: Account Date check
+    :synopsis: Account Date check (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_date_check {
+        display: none;
+      }
+    </style>
+
 Account Date check (*account_date_check*)
 =========================================
 :Module: account_date_check
 :Name: Account Date check
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_date_check
 :Web: http://www.openerp.com
 :Is certified: yes

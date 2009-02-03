@@ -1,6 +1,6 @@
 
 .. module:: hr_expense
-    :synopsis: Human Resources Expenses Tracking
+    :synopsis: Human Resources Expenses Tracking (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_expense {
+        display: none;
+      }
+    </style>
+
 Human Resources Expenses Tracking (*hr_expense*)
 ================================================
 :Module: hr_expense
 :Name: Human Resources Expenses Tracking
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_expense
 :Web: http://www.openerp.com
 :Is certified: yes

@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_default
-    :synopsis: Account Analytic Default
+    :synopsis: Account Analytic Default (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_analytic_default {
+        display: none;
+      }
+    </style>
+
 Account Analytic Default (*account_analytic_default*)
 =====================================================
 :Module: account_analytic_default
 :Name: Account Analytic Default
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_analytic_default
 :Web: http://www.openerp.com
 :Is certified: yes

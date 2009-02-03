@@ -1,6 +1,6 @@
 
 .. module:: discount_campaign
-    :synopsis: Discount on Marketing Campaigns
+    :synopsis: Discount on Marketing Campaigns 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-discount_campaign {
+        display: none;
+      }
+    </style>
+
 Discount on Marketing Campaigns (*discount_campaign*)
 =====================================================
 :Module: discount_campaign
 :Name: Discount on Marketing Campaigns
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: discount_campaign
 :Web: http://tinyerp.com/module_crm_marketing.html
 :Is certified: no

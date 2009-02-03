@@ -1,6 +1,6 @@
 
 .. module:: report_auction
-    :synopsis: Auction Management - Reporting
+    :synopsis: Auction Management - Reporting 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_auction {
+        display: none;
+      }
+    </style>
+
 Auction Management - Reporting (*report_auction*)
 =================================================
 :Module: report_auction
 :Name: Auction Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_auction
 :Web: http://tinyerp.com/module_auction.html
 :Is certified: no

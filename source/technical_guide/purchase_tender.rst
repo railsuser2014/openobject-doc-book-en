@@ -1,6 +1,6 @@
 
 .. module:: purchase_tender
-    :synopsis: Purchase - Purchase Tender
+    :synopsis: Purchase - Purchase Tender 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-purchase_tender {
+        display: none;
+      }
+    </style>
+
 Purchase - Purchase Tender (*purchase_tender*)
 ==============================================
 :Module: purchase_tender
 :Name: Purchase - Purchase Tender
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: purchase_tender
 :Web: http://tinyerp.com/
 :Is certified: no

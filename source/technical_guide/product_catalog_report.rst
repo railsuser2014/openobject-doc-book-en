@@ -1,6 +1,6 @@
 
 .. module:: product_catalog_report
-    :synopsis: Product Catalog
+    :synopsis: Product Catalog 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_catalog_report {
+        display: none;
+      }
+    </style>
+
 Product Catalog (*product_catalog_report*)
 ==========================================
 :Module: product_catalog_report
 :Name: Product Catalog
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_catalog_report
 :Web: 
 :Is certified: no

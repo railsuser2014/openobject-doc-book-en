@@ -1,6 +1,6 @@
 
 .. module:: sale_journal
-    :synopsis: Managing sales and deliveries by journal
+    :synopsis: Managing sales and deliveries by journal (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_journal {
+        display: none;
+      }
+    </style>
+
 Managing sales and deliveries by journal (*sale_journal*)
 =========================================================
 :Module: sale_journal
 :Name: Managing sales and deliveries by journal
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_journal
 :Web: http://www.openerp.com
 :Is certified: yes

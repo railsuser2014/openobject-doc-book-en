@@ -1,6 +1,6 @@
 
 .. module:: sale_margin
-    :synopsis: Margins in Sale Orders
+    :synopsis: Margins in Sale Orders 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_margin {
+        display: none;
+      }
+    </style>
+
 Margins in Sale Orders (*sale_margin*)
 ======================================
 :Module: sale_margin
 :Name: Margins in Sale Orders
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_margin
 :Web: 
 :Is certified: no

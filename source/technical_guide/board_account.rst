@@ -1,6 +1,6 @@
 
 .. module:: board_account
-    :synopsis: Board for accountant
+    :synopsis: Board for accountant (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_account {
+        display: none;
+      }
+    </style>
+
 Board for accountant (*board_account*)
 ======================================
 :Module: board_account
 :Name: Board for accountant
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_account
 :Web: 
 :Is certified: yes

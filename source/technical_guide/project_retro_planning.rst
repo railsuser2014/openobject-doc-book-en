@@ -1,6 +1,6 @@
 
 .. module:: project_retro_planning
-    :synopsis: Project Retro planning
+    :synopsis: Project Retro planning (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-project_retro_planning {
+        display: none;
+      }
+    </style>
+
 Project Retro planning (*project_retro_planning*)
 =================================================
 :Module: project_retro_planning
 :Name: Project Retro planning
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: project_retro_planning
 :Web: 
 :Is certified: yes

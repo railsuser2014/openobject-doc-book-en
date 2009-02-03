@@ -1,6 +1,6 @@
 
 .. module:: library
-    :synopsis: Library
+    :synopsis: Library 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-library {
+        display: none;
+      }
+    </style>
+
 Library (*library*)
 ===================
 :Module: library
 :Name: Library
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: library
 :Web: 
 :Is certified: no

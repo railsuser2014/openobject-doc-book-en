@@ -1,6 +1,6 @@
 
 .. module:: product_extended
-    :synopsis: Product extension to track sales and purchases
+    :synopsis: Product extension to track sales and purchases 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_extended {
+        display: none;
+      }
+    </style>
+
 Product extension to track sales and purchases (*product_extended*)
 ===================================================================
 :Module: product_extended
 :Name: Product extension to track sales and purchases
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_extended
 :Web: 
 :Is certified: no

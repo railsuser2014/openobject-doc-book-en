@@ -1,6 +1,6 @@
 
 .. module:: product_electronic
-    :synopsis: Products Attributes & Manufacturers
+    :synopsis: Products Attributes & Manufacturers 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_electronic {
+        display: none;
+      }
+    </style>
+
 Products Attributes & Manufacturers (*product_electronic*)
 ==========================================================
 :Module: product_electronic
 :Name: Products Attributes & Manufacturers
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_electronic
 :Web: 
 :Is certified: no

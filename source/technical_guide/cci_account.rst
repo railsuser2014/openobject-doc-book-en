@@ -1,6 +1,6 @@
 
 .. module:: cci_account
-    :synopsis: CCI Account
+    :synopsis: CCI Account 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_account {
+        display: none;
+      }
+    </style>
+
 CCI Account (*cci_account*)
 ===========================
 :Module: cci_account
 :Name: CCI Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_account
 :Web: http://www.openerp.com
 :Is certified: no

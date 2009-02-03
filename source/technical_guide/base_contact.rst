@@ -1,6 +1,6 @@
 
 .. module:: base_contact
-    :synopsis: Base Contact
+    :synopsis: Base Contact (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_contact {
+        display: none;
+      }
+    </style>
+
 Base Contact (*base_contact*)
 =============================
 :Module: base_contact
 :Name: Base Contact
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_contact
 :Web: http://www.openerp.com
 :Is certified: yes

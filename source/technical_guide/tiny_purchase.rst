@@ -1,6 +1,6 @@
 
 .. module:: tiny_purchase
-    :synopsis: Tiny purchase
+    :synopsis: Tiny purchase 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-tiny_purchase {
+        display: none;
+      }
+    </style>
+
 Tiny purchase (*tiny_purchase*)
 ===============================
 :Module: tiny_purchase
 :Name: Tiny purchase
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: tiny_purchase
 :Web: 
 :Is certified: no

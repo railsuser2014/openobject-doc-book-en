@@ -1,6 +1,6 @@
 
 .. module:: product_variant_multi
-    :synopsis: Products with multi-level variants
+    :synopsis: Products with multi-level variants 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_variant_multi {
+        display: none;
+      }
+    </style>
+
 Products with multi-level variants (*product_variant_multi*)
 ============================================================
 :Module: product_variant_multi
 :Name: Products with multi-level variants
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_variant_multi
 :Web: 
 :Is certified: no

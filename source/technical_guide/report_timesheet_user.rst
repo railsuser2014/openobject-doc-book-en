@@ -1,6 +1,6 @@
 
 .. module:: report_timesheet_user
-    :synopsis: Report for timesheet
+    :synopsis: Report for timesheet 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_timesheet_user {
+        display: none;
+      }
+    </style>
+
 Report for timesheet (*report_timesheet_user*)
 ==============================================
 :Module: report_timesheet_user
 :Name: Report for timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_timesheet_user
 :Web: 
 :Is certified: no

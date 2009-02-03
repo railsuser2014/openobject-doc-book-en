@@ -1,6 +1,6 @@
 
 .. module:: Ampco
-    :synopsis: Ampco
+    :synopsis: Ampco 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-Ampco {
+        display: none;
+      }
+    </style>
+
 Ampco (*Ampco*)
 ===============
 :Module: Ampco
 :Name: Ampco
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: Ampco
 :Web: 
 :Is certified: no

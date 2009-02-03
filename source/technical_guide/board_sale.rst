@@ -1,6 +1,6 @@
 
 .. module:: board_sale
-    :synopsis: Dashboard for sales
+    :synopsis: Dashboard for sales (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_sale {
+        display: none;
+      }
+    </style>
+
 Dashboard for sales (*board_sale*)
 ==================================
 :Module: board_sale
 :Name: Dashboard for sales
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_sale
 :Web: 
 :Is certified: yes

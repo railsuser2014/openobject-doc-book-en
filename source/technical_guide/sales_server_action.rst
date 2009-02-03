@@ -1,6 +1,6 @@
 
 .. module:: sales_server_action
-    :synopsis: Sales Server Action
+    :synopsis: Sales Server Action 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sales_server_action {
+        display: none;
+      }
+    </style>
+
 Sales Server Action (*sales_server_action*)
 ===========================================
 :Module: sales_server_action
 :Name: Sales Server Action
 :Version: 5.0.5.0
+:Author: Tiny
 :Directory: sales_server_action
 :Web: http://www.openerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: base_url_menu
-    :synopsis: Url Menus
+    :synopsis: Url Menus 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_url_menu {
+        display: none;
+      }
+    </style>
+
 Url Menus (*base_url_menu*)
 ===========================
 :Module: base_url_menu
 :Name: Url Menus
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: base_url_menu
 :Web: http://www.tinyerp.com
 :Is certified: no

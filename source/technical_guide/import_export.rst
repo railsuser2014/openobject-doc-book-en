@@ -1,6 +1,6 @@
 
 .. module:: import_export
-    :synopsis: Import Export
+    :synopsis: Import Export 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-import_export {
+        display: none;
+      }
+    </style>
+
 Import Export (*import_export*)
 ===============================
 :Module: import_export
 :Name: Import Export
 :Version: 5.0.1.0
+:Author: Axelor
 :Directory: import_export
 :Web: 
 :Is certified: no

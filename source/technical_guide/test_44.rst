@@ -1,6 +1,6 @@
 
 .. module:: test_44
-    :synopsis: Test New Features
+    :synopsis: Test New Features 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-test_44 {
+        display: none;
+      }
+    </style>
+
 Test New Features (*test_44*)
 =============================
 :Module: test_44
 :Name: Test New Features
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: test_44
 :Web: http://tinyerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: warning
-    :synopsis: Module for Warnings form onchange Event
+    :synopsis: Module for Warnings form onchange Event (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-warning {
+        display: none;
+      }
+    </style>
+
 Module for Warnings form onchange Event (*warning*)
 ===================================================
 :Module: warning
 :Name: Module for Warnings form onchange Event
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: warning
 :Web: 
 :Is certified: yes

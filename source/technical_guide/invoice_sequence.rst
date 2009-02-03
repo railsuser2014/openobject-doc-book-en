@@ -1,6 +1,6 @@
 
 .. module:: invoice_sequence
-    :synopsis: Invoice lines with sequence number
+    :synopsis: Invoice lines with sequence number 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-invoice_sequence {
+        display: none;
+      }
+    </style>
+
 Invoice lines with sequence number (*invoice_sequence*)
 =======================================================
 :Module: invoice_sequence
 :Name: Invoice lines with sequence number
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: invoice_sequence
 :Web: http://tinyerp.com/
 :Is certified: no

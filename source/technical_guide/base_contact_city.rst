@@ -1,6 +1,6 @@
 
 .. module:: base_contact_city
-    :synopsis: City for base_contat
+    :synopsis: City for base_contat 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_contact_city {
+        display: none;
+      }
+    </style>
+
 City for base_contat (*base_contact_city*)
 ==========================================
 :Module: base_contact_city
 :Name: City for base_contat
 :Version: 5.0.1.0
+:Author: Pablo Rocandio
 :Directory: base_contact_city
 :Web: 
 :Is certified: no

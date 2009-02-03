@@ -1,6 +1,6 @@
 
 .. module:: asterisk
-    :synopsis: Asterisk
+    :synopsis: Asterisk 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-asterisk {
+        display: none;
+      }
+    </style>
+
 Asterisk (*asterisk*)
 =====================
 :Module: asterisk
 :Name: Asterisk
 :Version: 5.0.0.1proto2
+:Author: Tiny
 :Directory: asterisk
 :Web: 
 :Is certified: no

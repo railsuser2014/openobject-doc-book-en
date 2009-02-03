@@ -1,6 +1,6 @@
 
 .. module:: hotel_housekeeping
-    :synopsis: Hotel Housekeeping
+    :synopsis: Hotel Housekeeping 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hotel_housekeeping {
+        display: none;
+      }
+    </style>
+
 Hotel Housekeeping (*hotel_housekeeping*)
 =========================================
 :Module: hotel_housekeeping
 :Name: Hotel Housekeeping
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel_housekeeping
 :Web: 
 :Is certified: no

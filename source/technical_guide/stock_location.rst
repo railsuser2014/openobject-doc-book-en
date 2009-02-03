@@ -1,6 +1,6 @@
 
 .. module:: stock_location
-    :synopsis: Stock Location Paths
+    :synopsis: Stock Location Paths (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-stock_location {
+        display: none;
+      }
+    </style>
+
 Stock Location Paths (*stock_location*)
 =======================================
 :Module: stock_location
 :Name: Stock Location Paths
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: stock_location
 :Web: 
 :Is certified: yes

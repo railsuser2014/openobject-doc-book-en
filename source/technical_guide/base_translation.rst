@@ -1,6 +1,6 @@
 
 .. module:: base_translation
-    :synopsis: Translation
+    :synopsis: Translation 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_translation {
+        display: none;
+      }
+    </style>
+
 Translation (*base_translation*)
 ================================
 :Module: base_translation
 :Name: Translation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_translation
 :Web: 
 :Is certified: no

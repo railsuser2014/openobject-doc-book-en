@@ -1,6 +1,6 @@
 
 .. module:: huissier
-    :synopsis: Tiny ERP Huissiers
+    :synopsis: Tiny ERP Huissiers 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-huissier {
+        display: none;
+      }
+    </style>
+
 Tiny ERP Huissiers (*huissier*)
 ===============================
 :Module: huissier
 :Name: Tiny ERP Huissiers
 :Version: False
+:Author: Tiny
 :Directory: huissier
 :Web: http://tinyerp.com
 :Is certified: no

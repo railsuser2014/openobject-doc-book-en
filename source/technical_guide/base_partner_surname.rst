@@ -1,6 +1,6 @@
 
 .. module:: base_partner_surname
-    :synopsis: Base Partner Surname
+    :synopsis: Base Partner Surname 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_partner_surname {
+        display: none;
+      }
+    </style>
+
 Base Partner Surname (*base_partner_surname*)
 =============================================
 :Module: base_partner_surname
 :Name: Base Partner Surname
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_partner_surname
 :Web: http://tinyerp.com
 :Is certified: no

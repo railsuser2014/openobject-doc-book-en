@@ -1,6 +1,6 @@
 
 .. module:: ecommerce
-    :synopsis: E-Commerce
+    :synopsis: E-Commerce 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-ecommerce {
+        display: none;
+      }
+    </style>
+
 E-Commerce (*ecommerce*)
 ========================
 :Module: ecommerce
 :Name: E-Commerce
 :Version: 5.0.1.0
+:Author: e-tiny
 :Directory: ecommerce
 :Web: http://www.etiny.com
 :Is certified: no

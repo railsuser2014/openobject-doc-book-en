@@ -1,6 +1,6 @@
 
 .. module:: base_report_creator
-    :synopsis: Report Creator
+    :synopsis: Report Creator (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_report_creator {
+        display: none;
+      }
+    </style>
+
 Report Creator (*base_report_creator*)
 ======================================
 :Module: base_report_creator
 :Name: Report Creator
 :Version: 5.0.1.0
+:Author: Tiny & Axelor
 :Directory: base_report_creator
 :Web: 
 :Is certified: yes

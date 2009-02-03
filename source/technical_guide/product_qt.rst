@@ -1,6 +1,6 @@
 
 .. module:: product_qt
-    :synopsis: Products & Pricelists
+    :synopsis: Products & Pricelists 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_qt {
+        display: none;
+      }
+    </style>
+
 Products & Pricelists (*product_qt*)
 ====================================
 :Module: product_qt
 :Name: Products & Pricelists
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_qt
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: product_margin
-    :synopsis: Margins in Product
+    :synopsis: Margins in Product (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_margin {
+        display: none;
+      }
+    </style>
+
 Margins in Product (*product_margin*)
 =====================================
 :Module: product_margin
 :Name: Margins in Product
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_margin
 :Web: 
 :Is certified: yes

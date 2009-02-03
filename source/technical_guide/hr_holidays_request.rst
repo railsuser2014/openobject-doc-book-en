@@ -1,6 +1,6 @@
 
 .. module:: hr_holidays_request
-    :synopsis: HR Holiday Request
+    :synopsis: HR Holiday Request 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_holidays_request {
+        display: none;
+      }
+    </style>
+
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request
 :Name: HR Holiday Request
 :Version: 5.0.1.0
+:Author: Tiny & Axelor
 :Directory: hr_holidays_request
 :Web: http://www.axelor.com
 :Is certified: no

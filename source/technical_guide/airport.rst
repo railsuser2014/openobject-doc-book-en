@@ -1,6 +1,6 @@
 
 .. module:: airport
-    :synopsis: Airport
+    :synopsis: Airport 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-airport {
+        display: none;
+      }
+    </style>
+
 Airport (*airport*)
 ===================
 :Module: airport
 :Name: Airport
 :Version: False
+:Author: Tiny
 :Directory: airport
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: account_coda_2_1_d
-    :synopsis: Account CODA Version 2.1 D
+    :synopsis: Account CODA Version 2.1 D 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_coda_2_1_d {
+        display: none;
+      }
+    </style>
+
 Account CODA Version 2.1 D (*account_coda_2_1_d*)
 =================================================
 :Module: account_coda_2_1_d
 :Name: Account CODA Version 2.1 D
 :Version: 5.0.1.0.1
+:Author: Open ERP
 :Directory: account_coda_2_1_d
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: sale_category
-    :synopsis: Sale Order Line With Categories
+    :synopsis: Sale Order Line With Categories 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_category {
+        display: none;
+      }
+    </style>
+
 Sale Order Line With Categories (*sale_category*)
 =================================================
 :Module: sale_category
 :Name: Sale Order Line With Categories
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_category
 :Web: 
 :Is certified: no

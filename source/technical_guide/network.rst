@@ -1,6 +1,6 @@
 
 .. module:: network
-    :synopsis: Network Management
+    :synopsis: Network Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-network {
+        display: none;
+      }
+    </style>
+
 Network Management (*network*)
 ==============================
 :Module: network
 :Name: Network Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: network
 :Web: 
 :Is certified: no

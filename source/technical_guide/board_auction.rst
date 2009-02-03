@@ -1,6 +1,6 @@
 
 .. module:: board_auction
-    :synopsis: Board for Auction
+    :synopsis: Board for Auction (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_auction {
+        display: none;
+      }
+    </style>
+
 Board for Auction (*board_auction*)
 ===================================
 :Module: board_auction
 :Name: Board for Auction
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_auction
 :Web: 
 :Is certified: yes

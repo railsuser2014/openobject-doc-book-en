@@ -1,6 +1,6 @@
 
 .. module:: report_document
-    :synopsis: Document Management - Reporting
+    :synopsis: Document Management - Reporting (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_document {
+        display: none;
+      }
+    </style>
+
 Document Management - Reporting (*report_document*)
 ===================================================
 :Module: report_document
 :Name: Document Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_document
 :Web: 
 :Is certified: yes

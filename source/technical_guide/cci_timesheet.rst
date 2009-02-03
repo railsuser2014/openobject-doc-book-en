@@ -1,6 +1,6 @@
 
 .. module:: cci_timesheet
-    :synopsis: CCI Timesheet
+    :synopsis: CCI Timesheet 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_timesheet {
+        display: none;
+      }
+    </style>
+
 CCI Timesheet (*cci_timesheet*)
 ===============================
 :Module: cci_timesheet
 :Name: CCI Timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_timesheet
 :Web: http://www.openerp.com
 :Is certified: no

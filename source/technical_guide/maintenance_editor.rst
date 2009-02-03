@@ -1,6 +1,6 @@
 
 .. module:: maintenance_editor
-    :synopsis: Base
+    :synopsis: Base 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-maintenance_editor {
+        display: none;
+      }
+    </style>
+
 Base (*maintenance_editor*)
 ===========================
 :Module: maintenance_editor
 :Name: Base
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: maintenance_editor
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: email_account
-    :synopsis: Email Invoice
+    :synopsis: Email Invoice 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-email_account {
+        display: none;
+      }
+    </style>
+
 Email Invoice (*email_account*)
 ===============================
 :Module: email_account
 :Name: Email Invoice
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: email_account
 :Web: www.zikzakmedia.com
 :Is certified: no

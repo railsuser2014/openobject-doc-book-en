@@ -1,6 +1,6 @@
 
 .. module:: multi_company_account
-    :synopsis: Multi company for accounting module
+    :synopsis: Multi company for accounting module 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-multi_company_account {
+        display: none;
+      }
+    </style>
+
 Multi company for accounting module (*multi_company_account*)
 =============================================================
 :Module: multi_company_account
 :Name: Multi company for accounting module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company_account
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: profile_bookstore
-    :synopsis: Bookstore Profile
+    :synopsis: Bookstore Profile 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-profile_bookstore {
+        display: none;
+      }
+    </style>
+
 Bookstore Profile (*profile_bookstore*)
 =======================================
 :Module: profile_bookstore
 :Name: Bookstore Profile
 :Version: False
+:Author: Tiny
 :Directory: profile_bookstore
 :Web: 
 :Is certified: no

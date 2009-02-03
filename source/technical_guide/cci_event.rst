@@ -1,6 +1,6 @@
 
 .. module:: cci_event
-    :synopsis: CCI EVENT
+    :synopsis: CCI EVENT 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_event {
+        display: none;
+      }
+    </style>
+
 CCI EVENT (*cci_event*)
 =======================
 :Module: cci_event
 :Name: CCI EVENT
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_event
 :Web: http://www.openerp.com
 :Is certified: no

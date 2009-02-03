@@ -1,6 +1,6 @@
 
 .. module:: crm_livechat
-    :synopsis: CRM - Livechat Jabber Client
+    :synopsis: CRM - Livechat Jabber Client 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-crm_livechat {
+        display: none;
+      }
+    </style>
+
 CRM - Livechat Jabber Client (*crm_livechat*)
 =============================================
 :Module: crm_livechat
 :Name: CRM - Livechat Jabber Client
 :Version: 5.0.1.3
+:Author: Tiny
 :Directory: crm_livechat
 :Web: http://tinyerp.com/
 :Is certified: no

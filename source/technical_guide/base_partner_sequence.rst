@@ -1,6 +1,6 @@
 
 .. module:: base_partner_sequence
-    :synopsis: Add an automatic sequence on partners
+    :synopsis: Add an automatic sequence on partners 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_partner_sequence {
+        display: none;
+      }
+    </style>
+
 Add an automatic sequence on partners (*base_partner_sequence*)
 ===============================================================
 :Module: base_partner_sequence
 :Name: Add an automatic sequence on partners
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_partner_sequence
 :Web: http://www.tinyerp.com
 :Is certified: no

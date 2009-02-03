@@ -1,6 +1,6 @@
 
 .. module:: base_module_record
-    :synopsis: Module Recorder
+    :synopsis: Module Recorder (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_module_record {
+        display: none;
+      }
+    </style>
+
 Module Recorder (*base_module_record*)
 ======================================
 :Module: base_module_record
 :Name: Module Recorder
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_module_record
 :Web: http://www.openerp.com
 :Is certified: yes

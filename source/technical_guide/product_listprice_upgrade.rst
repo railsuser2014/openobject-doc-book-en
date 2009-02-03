@@ -1,6 +1,6 @@
 
 .. module:: product_listprice_upgrade
-    :synopsis: Product listprice upgrade
+    :synopsis: Product listprice upgrade 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_listprice_upgrade {
+        display: none;
+      }
+    </style>
+
 Product listprice upgrade (*product_listprice_upgrade*)
 =======================================================
 :Module: product_listprice_upgrade
 :Name: Product listprice upgrade
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_listprice_upgrade
 :Web: 
 :Is certified: no

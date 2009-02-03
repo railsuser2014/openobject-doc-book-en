@@ -1,6 +1,6 @@
 
 .. module:: dm
-    :synopsis: Direct Marketing
+    :synopsis: Direct Marketing 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-dm {
+        display: none;
+      }
+    </style>
+
 Direct Marketing (*dm*)
 =======================
 :Module: dm
 :Name: Direct Marketing
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: dm
 :Web: http://tinyerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: mrp_prodlot_autosplit
-    :synopsis: Stock Management
+    :synopsis: Stock Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-mrp_prodlot_autosplit {
+        display: none;
+      }
+    </style>
+
 Stock Management (*mrp_prodlot_autosplit*)
 ==========================================
 :Module: mrp_prodlot_autosplit
 :Name: Stock Management
 :Version: 5.0.0.9.0
+:Author: Raphaël Valyi
 :Directory: mrp_prodlot_autosplit
 :Web: http://rvalyi.blogspot.com
 :Is certified: no

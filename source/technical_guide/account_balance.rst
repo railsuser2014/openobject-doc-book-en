@@ -1,6 +1,6 @@
 
 .. module:: account_balance
-    :synopsis: Accounting and financial management-Compare Accounts
+    :synopsis: Accounting and financial management-Compare Accounts (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_balance {
+        display: none;
+      }
+    </style>
+
 Accounting and financial management-Compare Accounts (*account_balance*)
 ========================================================================
 :Module: account_balance
 :Name: Accounting and financial management-Compare Accounts
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: account_balance
 :Web: http://www.openerp.com
 :Is certified: yes

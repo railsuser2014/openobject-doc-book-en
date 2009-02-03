@@ -1,6 +1,6 @@
 
 .. module:: md_hr_contract
-    :synopsis: Pilot Human Resource Management
+    :synopsis: Pilot Human Resource Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-md_hr_contract {
+        display: none;
+      }
+    </style>
+
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
 :Name: Pilot Human Resource Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: md_hr_contract
 :Web: 
 :Is certified: no

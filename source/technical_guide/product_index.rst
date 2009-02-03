@@ -1,6 +1,6 @@
 
 .. module:: product_index
-    :synopsis: Manage indexes on products prices
+    :synopsis: Manage indexes on products prices 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_index {
+        display: none;
+      }
+    </style>
+
 Manage indexes on products prices (*product_index*)
 ===================================================
 :Module: product_index
 :Name: Manage indexes on products prices
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_index
 :Web: http://www.tinyerp.com
 :Is certified: no

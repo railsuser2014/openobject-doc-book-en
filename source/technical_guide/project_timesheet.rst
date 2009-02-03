@@ -1,6 +1,6 @@
 
 .. module:: project_timesheet
-    :synopsis: Project Timesheet
+    :synopsis: Project Timesheet (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-project_timesheet {
+        display: none;
+      }
+    </style>
+
 Project Timesheet (*project_timesheet*)
 =======================================
 :Module: project_timesheet
 :Name: Project Timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: project_timesheet
 :Web: http://www.openerp.com
 :Is certified: yes

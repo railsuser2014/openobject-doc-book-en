@@ -1,6 +1,6 @@
 
 .. module:: base_iban
-    :synopsis: IBAN
+    :synopsis: IBAN (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_iban {
+        display: none;
+      }
+    </style>
+
 IBAN (*base_iban*)
 ==================
 :Module: base_iban
 :Name: IBAN
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_iban
 :Web: 
 :Is certified: yes

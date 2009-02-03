@@ -1,6 +1,6 @@
 
 .. module:: commission_rate
-    :synopsis: Sale Agent Information
+    :synopsis: Sale Agent Information 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-commission_rate {
+        display: none;
+      }
+    </style>
+
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
 :Name: Sale Agent Information
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: commission_rate
 :Web: 
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: auction
-    :synopsis: Auction module
+    :synopsis: Auction module (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-auction {
+        display: none;
+      }
+    </style>
+
 Auction module (*auction*)
 ==========================
 :Module: auction
 :Name: Auction module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: auction
 :Web: 
 :Is certified: yes

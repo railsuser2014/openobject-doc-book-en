@@ -1,6 +1,6 @@
 
 .. module:: audittrail
-    :synopsis: Audit Trail
+    :synopsis: Audit Trail (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-audittrail {
+        display: none;
+      }
+    </style>
+
 Audit Trail (*audittrail*)
 ==========================
 :Module: audittrail
 :Name: Audit Trail
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: audittrail
 :Web: http://www.openerp.com
 :Is certified: yes

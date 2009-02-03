@@ -1,6 +1,6 @@
 
 .. module:: hr_performance
-    :synopsis: Performance Review
+    :synopsis: Performance Review 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_performance {
+        display: none;
+      }
+    </style>
+
 Performance Review (*hr_performance*)
 =====================================
 :Module: hr_performance
 :Name: Performance Review
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_performance
 :Web: http://tinyerp.com
 :Is certified: no

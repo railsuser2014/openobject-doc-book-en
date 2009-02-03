@@ -1,6 +1,6 @@
 
 .. module:: board_document
-    :synopsis: Dashboard for Document Management
+    :synopsis: Dashboard for Document Management (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-board_document {
+        display: none;
+      }
+    </style>
+
 Dashboard for Document Management (*board_document*)
 ====================================================
 :Module: board_document
 :Name: Dashboard for Document Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_document
 :Web: 
 :Is certified: yes

@@ -1,6 +1,6 @@
 
 .. module:: label
-    :synopsis: Partner labels
+    :synopsis: Partner labels 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-label {
+        display: none;
+      }
+    </style>
+
 Partner labels (*label*)
 ========================
 :Module: label
 :Name: Partner labels
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: label
 :Web: www.zikzakmedia.com
 :Is certified: no

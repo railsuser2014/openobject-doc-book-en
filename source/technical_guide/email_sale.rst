@@ -1,6 +1,6 @@
 
 .. module:: email_sale
-    :synopsis: Email Sale order
+    :synopsis: Email Sale order 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-email_sale {
+        display: none;
+      }
+    </style>
+
 Email Sale order (*email_sale*)
 ===============================
 :Module: email_sale
 :Name: Email Sale order
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: email_sale
 :Web: www.zikzakmedia.com
 :Is certified: no

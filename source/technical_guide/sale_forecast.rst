@@ -1,6 +1,6 @@
 
 .. module:: sale_forecast
-    :synopsis: Sales Forecasts, goals and statistics
+    :synopsis: Sales Forecasts, goals and statistics 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_forecast {
+        display: none;
+      }
+    </style>
+
 Sales Forecasts, goals and statistics (*sale_forecast*)
 =======================================================
 :Module: sale_forecast
 :Name: Sales Forecasts, goals and statistics
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_forecast
 :Web: http://tinyerp.com
 :Is certified: no

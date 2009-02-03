@@ -1,6 +1,6 @@
 
 .. module:: sale_intercompany
-    :synopsis: Sale Inter-Company
+    :synopsis: Sale Inter-Company 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_intercompany {
+        display: none;
+      }
+    </style>
+
 Sale Inter-Company (*sale_intercompany*)
 ========================================
 :Module: sale_intercompany
 :Name: Sale Inter-Company
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_intercompany
 :Web: http://tinyerp.com/module_sale.html
 :Is certified: no

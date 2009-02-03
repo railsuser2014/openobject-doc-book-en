@@ -1,6 +1,6 @@
 
 .. module:: product_visible_discount
-    :synopsis: Visible Discount Module
+    :synopsis: Visible Discount Module 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_visible_discount {
+        display: none;
+      }
+    </style>
+
 Visible Discount Module (*product_visible_discount*)
 ====================================================
 :Module: product_visible_discount
 :Name: Visible Discount Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_visible_discount
 :Web: 
 :Is certified: no

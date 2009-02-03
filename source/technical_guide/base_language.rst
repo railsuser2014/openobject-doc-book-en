@@ -1,6 +1,6 @@
 
 .. module:: base_language
-    :synopsis: Base Language
+    :synopsis: Base Language 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_language {
+        display: none;
+      }
+    </style>
+
 Base Language (*base_language*)
 ===============================
 :Module: base_language
 :Name: Base Language
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_language
 :Web: http://tinyerp.com
 :Is certified: no

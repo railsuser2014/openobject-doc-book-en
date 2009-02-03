@@ -1,6 +1,6 @@
 
 .. module:: base_module_merge
-    :synopsis: Module Merger
+    :synopsis: Module Merger 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_module_merge {
+        display: none;
+      }
+    </style>
+
 Module Merger (*base_module_merge*)
 ===================================
 :Module: base_module_merge
 :Name: Module Merger
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_module_merge
 :Web: http://tinyerp.com
 :Is certified: no

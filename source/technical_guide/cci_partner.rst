@@ -1,6 +1,6 @@
 
 .. module:: cci_partner
-    :synopsis: CCI Partner
+    :synopsis: CCI Partner 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_partner {
+        display: none;
+      }
+    </style>
+
 CCI Partner (*cci_partner*)
 ===========================
 :Module: cci_partner
 :Name: CCI Partner
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_partner
 :Web: http://www.openerp.com
 :Is certified: no

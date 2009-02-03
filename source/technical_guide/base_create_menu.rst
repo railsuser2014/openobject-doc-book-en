@@ -1,6 +1,6 @@
 
 .. module:: base_create_menu
-    :synopsis: Menu Wizard 
+    :synopsis: Menu Wizard  
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-base_create_menu {
+        display: none;
+      }
+    </style>
+
 Menu Wizard  (*base_create_menu*)
 =================================
 :Module: base_create_menu
 :Name: Menu Wizard 
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_create_menu
 :Web: http://tinyerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: hr_skill
-    :synopsis: Skill Management
+    :synopsis: Skill Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_skill {
+        display: none;
+      }
+    </style>
+
 Skill Management (*hr_skill*)
 =============================
 :Module: hr_skill
 :Name: Skill Management
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: hr_skill
 :Web: http://www.tinyerp.com
 :Is certified: no

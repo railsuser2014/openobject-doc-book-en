@@ -1,6 +1,6 @@
 
 .. module:: multi_company_hr_timesheet_sheet
-    :synopsis: Multi company Human Resources (Timesheet groups)
+    :synopsis: Multi company Human Resources (Timesheet groups) 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-multi_company_hr_timesheet_sheet {
+        display: none;
+      }
+    </style>
+
 Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
 =====================================================================================
 :Module: multi_company_hr_timesheet_sheet
 :Name: Multi company Human Resources (Timesheet groups)
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company_hr_timesheet_sheet
 :Web: 
 :Is certified: no

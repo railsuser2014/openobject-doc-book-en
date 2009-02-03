@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_payment_term
-    :synopsis: Invoice with payment term lines
+    :synopsis: Invoice with payment term lines 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_invoice_payment_term {
+        display: none;
+      }
+    </style>
+
 Invoice with payment term lines (*account_invoice_payment_term*)
 ================================================================
 :Module: account_invoice_payment_term
 :Name: Invoice with payment term lines
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: account_invoice_payment_term
 :Web: 
 :Is certified: no

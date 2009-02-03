@@ -1,6 +1,6 @@
 
 .. module:: cci_data_csv
-    :synopsis: cci Data 1
+    :synopsis: cci Data 1 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_data_csv {
+        display: none;
+      }
+    </style>
+
 cci Data 1 (*cci_data_csv*)
 ===========================
 :Module: cci_data_csv
 :Name: cci Data 1
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_data_csv
 :Web: 
 :Is certified: no

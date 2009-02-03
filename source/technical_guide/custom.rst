@@ -1,6 +1,6 @@
 
 .. module:: custom
-    :synopsis: Module for custom developments
+    :synopsis: Module for custom developments 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-custom {
+        display: none;
+      }
+    </style>
+
 Module for custom developments (*custom*)
 =========================================
 :Module: custom
 :Name: Module for custom developments
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: custom
 :Web: http://www.openerp.com
 :Is certified: no

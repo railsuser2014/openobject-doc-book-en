@@ -1,6 +1,6 @@
 
 .. module:: segmentation
-    :synopsis: segmentation management
+    :synopsis: segmentation management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-segmentation {
+        display: none;
+      }
+    </style>
+
 segmentation management (*segmentation*)
 ========================================
 :Module: segmentation
 :Name: segmentation management
 :Version: False
+:Author: Tiny
 :Directory: segmentation
 :Web: http://tinyerp.com/
 :Is certified: no

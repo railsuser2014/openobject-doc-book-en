@@ -1,6 +1,6 @@
 
 .. module:: esale_joomla
-    :synopsis: eSale Interface - Joomla
+    :synopsis: eSale Interface - Joomla 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-esale_joomla {
+        display: none;
+      }
+    </style>
+
 eSale Interface - Joomla (*esale_joomla*)
 =========================================
 :Module: esale_joomla
 :Name: eSale Interface - Joomla
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: esale_joomla
 :Web: http://tinyerp.com
 :Is certified: no

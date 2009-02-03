@@ -1,6 +1,6 @@
 
 .. module:: purchase_tax_include
-    :synopsis: Purchases with taxes included
+    :synopsis: Purchases with taxes included 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-purchase_tax_include {
+        display: none;
+      }
+    </style>
+
 Purchases with taxes included (*purchase_tax_include*)
 ======================================================
 :Module: purchase_tax_include
 :Name: Purchases with taxes included
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_tax_include
 :Web: http://tinyerp.com/module_account.html
 :Is certified: no

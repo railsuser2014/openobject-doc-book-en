@@ -1,6 +1,6 @@
 
 .. module:: account_regularization
-    :synopsis: Account Regularizations
+    :synopsis: Account Regularizations 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_regularization {
+        display: none;
+      }
+    </style>
+
 Account Regularizations (*account_regularization*)
 ==================================================
 :Module: account_regularization
 :Name: Account Regularizations
 :Version: 5.0.1.0
+:Author: ACYSOS S.L.
 :Directory: account_regularization
 :Web: 
 :Is certified: no

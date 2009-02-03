@@ -1,6 +1,6 @@
 
 .. module:: product_size
-    :synopsis: Sizes of lots (width, length, thickness)
+    :synopsis: Sizes of lots (width, length, thickness) 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-product_size {
+        display: none;
+      }
+    </style>
+
 Sizes of lots (width, length, thickness) (*product_size*)
 =========================================================
 :Module: product_size
 :Name: Sizes of lots (width, length, thickness)
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_size
 :Web: 
 :Is certified: no

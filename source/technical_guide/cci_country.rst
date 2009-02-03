@@ -1,6 +1,6 @@
 
 .. module:: cci_country
-    :synopsis: CCI Country
+    :synopsis: CCI Country 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_country {
+        display: none;
+      }
+    </style>
+
 CCI Country (*cci_country*)
 ===========================
 :Module: cci_country
 :Name: CCI Country
 :Version: 5.0.1.0
+:Author: CCILV
 :Directory: cci_country
 :Web: http://www.ccilv.be
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_progress
-    :synopsis: account_analytic_progress
+    :synopsis: account_analytic_progress 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_analytic_progress {
+        display: none;
+      }
+    </style>
+
 account_analytic_progress (*account_analytic_progress*)
 =======================================================
 :Module: account_analytic_progress
 :Name: account_analytic_progress
 :Version: 5.0.1.0
+:Author: tiny
 :Directory: account_analytic_progress
 :Web: http://tinyerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: hr
-    :synopsis: Human Resources
+    :synopsis: Human Resources (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr {
+        display: none;
+      }
+    </style>
+
 Human Resources (*hr*)
 ======================
 :Module: hr
 :Name: Human Resources
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: hr
 :Web: http://www.openerp.com
 :Is certified: yes

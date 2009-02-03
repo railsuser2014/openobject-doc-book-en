@@ -1,6 +1,6 @@
 
 .. module:: cci_base_contact
-    :synopsis: CCI Base Contact
+    :synopsis: CCI Base Contact 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_base_contact {
+        display: none;
+      }
+    </style>
+
 CCI Base Contact (*cci_base_contact*)
 =====================================
 :Module: cci_base_contact
 :Name: CCI Base Contact
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_base_contact
 :Web: http://www.openerp.com
 :Is certified: no

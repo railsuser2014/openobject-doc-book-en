@@ -1,6 +1,6 @@
 
 .. module:: comparison
-    :synopsis: ERP Comparisons
+    :synopsis: ERP Comparisons 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-comparison {
+        display: none;
+      }
+    </style>
+
 ERP Comparisons (*comparison*)
 ==============================
 :Module: comparison
 :Name: ERP Comparisons
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: comparison
 :Web: http://www.openerp.com
 :Is certified: no

@@ -1,6 +1,6 @@
 
 .. module:: esale_ez
-    :synopsis: EZ Publish eCommerce Interface
+    :synopsis: EZ Publish eCommerce Interface 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-esale_ez {
+        display: none;
+      }
+    </style>
+
 EZ Publish eCommerce Interface (*esale_ez*)
 ===========================================
 :Module: esale_ez
 :Name: EZ Publish eCommerce Interface
 :Version: False
+:Author: Tiny
 :Directory: esale_ez
 :Web: http://tinyerp.com/demo02_6.html
 :Is certified: no

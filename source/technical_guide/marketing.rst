@@ -1,6 +1,6 @@
 
 .. module:: marketing
-    :synopsis: Marketing Campaigns
+    :synopsis: Marketing Campaigns 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-marketing {
+        display: none;
+      }
+    </style>
+
 Marketing Campaigns (*marketing*)
 =================================
 :Module: marketing
 :Name: Marketing Campaigns
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: marketing
 :Web: http://tinyerp.com/module_crm_marketing.html
 :Is certified: no

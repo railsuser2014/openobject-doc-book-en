@@ -1,6 +1,6 @@
 
 .. module:: hr_contract
-    :synopsis: Human Resources Contracts
+    :synopsis: Human Resources Contracts (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hr_contract {
+        display: none;
+      }
+    </style>
+
 Human Resources Contracts (*hr_contract*)
 =========================================
 :Module: hr_contract
 :Name: Human Resources Contracts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_contract
 :Web: http://www.openerp.com
 :Is certified: yes

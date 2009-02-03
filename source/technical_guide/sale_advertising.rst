@@ -1,6 +1,6 @@
 
 .. module:: sale_advertising
-    :synopsis: Sales: Avertising Sales
+    :synopsis: Sales: Avertising Sales 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_advertising {
+        display: none;
+      }
+    </style>
+
 Sales: Avertising Sales (*sale_advertising*)
 ============================================
 :Module: sale_advertising
 :Name: Sales: Avertising Sales
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: sale_advertising
 :Web: http://tinyerp.com/
 :Is certified: no

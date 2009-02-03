@@ -1,6 +1,6 @@
 
 .. module:: mrp
-    :synopsis: Manufacturing Resource Planning
+    :synopsis: Manufacturing Resource Planning (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-mrp {
+        display: none;
+      }
+    </style>
+
 Manufacturing Resource Planning (*mrp*)
 =======================================
 :Module: mrp
 :Name: Manufacturing Resource Planning
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: mrp
 :Web: http://www.openerp.com
 :Is certified: yes

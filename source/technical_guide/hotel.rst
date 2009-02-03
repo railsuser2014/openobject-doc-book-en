@@ -1,6 +1,6 @@
 
 .. module:: hotel
-    :synopsis: Hotel Management
+    :synopsis: Hotel Management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-hotel {
+        display: none;
+      }
+    </style>
+
 Hotel Management (*hotel*)
 ==========================
 :Module: hotel
 :Name: Hotel Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel
 :Web: 
 :Is certified: no

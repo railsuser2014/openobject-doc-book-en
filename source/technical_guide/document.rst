@@ -1,6 +1,6 @@
 
 .. module:: document
-    :synopsis: Integrated Document Management System
+    :synopsis: Integrated Document Management System (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-document {
+        display: none;
+      }
+    </style>
+
 Integrated Document Management System (*document*)
 ==================================================
 :Module: document
 :Name: Integrated Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document
 :Web: http://www.openerp.com
 :Is certified: yes

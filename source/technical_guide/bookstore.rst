@@ -1,6 +1,6 @@
 
 .. module:: bookstore
-    :synopsis: Bookstore Verticalisation
+    :synopsis: Bookstore Verticalisation 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-bookstore {
+        display: none;
+      }
+    </style>
+
 Bookstore Verticalisation (*bookstore*)
 =======================================
 :Module: bookstore
 :Name: Bookstore Verticalisation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: bookstore
 :Web: 
 :Is certified: no

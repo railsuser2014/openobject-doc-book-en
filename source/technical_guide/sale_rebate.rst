@@ -1,6 +1,6 @@
 
 .. module:: sale_rebate
-    :synopsis: Sales Management extented with rebates
+    :synopsis: Sales Management extented with rebates 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_rebate {
+        display: none;
+      }
+    </style>
+
 Sales Management extented with rebates (*sale_rebate*)
 ======================================================
 :Module: sale_rebate
 :Name: Sales Management extented with rebates
 :Version: False
+:Author: Tiny
 :Directory: sale_rebate
 :Web: http://www.tinyerp.com
 :Is certified: no

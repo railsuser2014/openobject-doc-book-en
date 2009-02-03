@@ -1,6 +1,6 @@
 
 .. module:: commission_pricelist
-    :synopsis: Sale agent Information
+    :synopsis: Sale agent Information 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-commission_pricelist {
+        display: none;
+      }
+    </style>
+
 Sale agent Information (*commission_pricelist*)
 ===============================================
 :Module: commission_pricelist
 :Name: Sale agent Information
 :Version: False
+:Author: Tiny
 :Directory: commission_pricelist
 :Web: 
 :Is certified: no

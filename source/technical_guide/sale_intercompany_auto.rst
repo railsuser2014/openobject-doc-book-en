@@ -1,6 +1,6 @@
 
 .. module:: sale_intercompany_auto
-    :synopsis: Sale Inter-Company - Fully Automatic
+    :synopsis: Sale Inter-Company - Fully Automatic 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-sale_intercompany_auto {
+        display: none;
+      }
+    </style>
+
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 ===============================================================
 :Module: sale_intercompany_auto
 :Name: Sale Inter-Company - Fully Automatic
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_intercompany_auto
 :Web: http://tinyerp.com/module_sale.html
 :Is certified: no

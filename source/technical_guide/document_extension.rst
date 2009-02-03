@@ -1,6 +1,6 @@
 
 .. module:: document_extension
-    :synopsis: Extension Module of Document Management System
+    :synopsis: Extension Module of Document Management System (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-document_extension {
+        display: none;
+      }
+    </style>
+
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension
 :Name: Extension Module of Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document_extension
 :Web: http://www.openerp.com
 :Is certified: yes

@@ -1,6 +1,6 @@
 
 .. module:: report_purchase
-    :synopsis: Purchase Management - Reporting
+    :synopsis: Purchase Management - Reporting (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-report_purchase {
+        display: none;
+      }
+    </style>
+
 Purchase Management - Reporting (*report_purchase*)
 ===================================================
 :Module: report_purchase
 :Name: Purchase Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_purchase
 :Web: http://www.openerp.com
 :Is certified: yes

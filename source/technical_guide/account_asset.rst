@@ -1,6 +1,6 @@
 
 .. module:: account_asset
-    :synopsis: Asset management
+    :synopsis: Asset management 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_asset {
+        display: none;
+      }
+    </style>
+
 Asset management (*account_asset*)
 ==================================
 :Module: account_asset
 :Name: Asset management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_asset
 :Web: http://tinyerp.com/module_account.html
 :Is certified: no

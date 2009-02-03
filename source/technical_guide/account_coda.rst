@@ -1,6 +1,6 @@
 
 .. module:: account_coda
-    :synopsis: Account CODA
+    :synopsis: Account CODA 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_coda {
+        display: none;
+      }
+    </style>
+
 Account CODA (*account_coda*)
 =============================
 :Module: account_coda
 :Name: Account CODA
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_coda
 :Web: 
 :Is certified: no

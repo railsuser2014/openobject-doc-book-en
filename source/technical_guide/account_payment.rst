@@ -1,6 +1,6 @@
 
 .. module:: account_payment
-    :synopsis: Payment Management
+    :synopsis: Payment Management (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_payment {
+        display: none;
+      }
+    </style>
+
 Payment Management (*account_payment*)
 ======================================
 :Module: account_payment
 :Name: Payment Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: account_payment
 :Web: 
 :Is certified: yes

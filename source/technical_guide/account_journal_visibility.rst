@@ -1,6 +1,6 @@
 
 .. module:: account_journal_visibility
-    :synopsis: Accounting journal visibility
+    :synopsis: Accounting journal visibility 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-account_journal_visibility {
+        display: none;
+      }
+    </style>
+
 Accounting journal visibility (*account_journal_visibility*)
 ============================================================
 :Module: account_journal_visibility
 :Name: Accounting journal visibility
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_journal_visibility
 :Web: 
 :Is certified: no

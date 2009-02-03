@@ -1,6 +1,6 @@
 
 .. module:: cci_membership
-    :synopsis: CCI Membership
+    :synopsis: CCI Membership 
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-cci_membership {
+        display: none;
+      }
+    </style>
+
 CCI Membership (*cci_membership*)
 =================================
 :Module: cci_membership
 :Name: CCI Membership
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_membership
 :Web: http://www.openerp.com
 :Is certified: no

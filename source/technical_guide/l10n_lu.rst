@@ -1,6 +1,6 @@
 
 .. module:: l10n_lu
-    :synopsis: Luxembourg - Plan Comptable Minimum Normalise
+    :synopsis: Luxembourg - Plan Comptable Minimum Normalise (Quality Certified)
     :noindex:
 .. 
 
@@ -8,11 +8,18 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
+    <style>
+      div.body p#module-l10n_lu {
+        display: none;
+      }
+    </style>
+
 Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
 =========================================================
 :Module: l10n_lu
 :Name: Luxembourg - Plan Comptable Minimum Normalise
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_lu
 :Web: http://openerp.com
 :Is certified: yes
