@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-bookstore {
-        display: none;
-      }
-    </style>
-
 Bookstore Verticalisation (*bookstore*)
 =======================================
 :Module: bookstore
@@ -22,7 +16,8 @@ Bookstore Verticalisation (*bookstore*)
 :Author: Tiny
 :Directory: bookstore
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

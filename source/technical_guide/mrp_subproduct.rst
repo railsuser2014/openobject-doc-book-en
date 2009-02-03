@@ -1,18 +1,12 @@
 
 .. module:: mrp_subproduct
-    :synopsis: MRP Sub Product (Quality Certified)
+    :synopsis: MRP Sub Product (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-mrp_subproduct {
-        display: none;
-      }
-    </style>
 
 MRP Sub Product (*mrp_subproduct*)
 ==================================
@@ -22,7 +16,8 @@ MRP Sub Product (*mrp_subproduct*)
 :Author: Tiny
 :Directory: mrp_subproduct
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

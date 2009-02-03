@@ -1,18 +1,12 @@
 
 .. module:: profile_auction
-    :synopsis: Auction house profile (Quality Certified)
+    :synopsis: Auction house profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_auction {
-        display: none;
-      }
-    </style>
 
 Auction house profile (*profile_auction*)
 =========================================
@@ -22,7 +16,8 @@ Auction house profile (*profile_auction*)
 :Author: Tiny
 :Directory: profile_auction
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

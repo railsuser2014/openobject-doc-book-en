@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_lot_foundry {
-        display: none;
-      }
-    </style>
-
 Products Lot Foundry (*product_lot_foundry*)
 ============================================
 :Module: product_lot_foundry
@@ -22,7 +16,8 @@ Products Lot Foundry (*product_lot_foundry*)
 :Author: Tiny
 :Directory: product_lot_foundry
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,18 +1,12 @@
 
 .. module:: process
-    :synopsis: Enterprise Process (Quality Certified)
+    :synopsis: Enterprise Process (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-process {
-        display: none;
-      }
-    </style>
 
 Enterprise Process (*process*)
 ==============================
@@ -22,7 +16,8 @@ Enterprise Process (*process*)
 :Author: Tiny
 :Directory: process
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

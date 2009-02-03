@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-comparison {
-        display: none;
-      }
-    </style>
-
 ERP Comparisons (*comparison*)
 ==============================
 :Module: comparison
@@ -22,7 +16,8 @@ ERP Comparisons (*comparison*)
 :Author: Tiny
 :Directory: comparison
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

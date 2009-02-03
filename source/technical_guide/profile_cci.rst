@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-profile_cci {
-        display: none;
-      }
-    </style>
-
 Profile Chamber of Commerce (*profile_cci*)
 ===========================================
 :Module: profile_cci
@@ -22,7 +16,8 @@ Profile Chamber of Commerce (*profile_cci*)
 :Author: Tiny
 :Directory: profile_cci
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

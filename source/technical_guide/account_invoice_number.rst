@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_invoice_number {
-        display: none;
-      }
-    </style>
-
 account_invoice_number (*account_invoice_number*)
 =================================================
 :Module: account_invoice_number
@@ -22,7 +16,8 @@ account_invoice_number (*account_invoice_number*)
 :Author: Tiny
 :Directory: account_invoice_number
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-flagey {
-        display: none;
-      }
-    </style>
-
 Auction module - Flagey Customs (*flagey*)
 ==========================================
 :Module: flagey
@@ -22,7 +16,8 @@ Auction module - Flagey Customs (*flagey*)
 :Author: Unknown
 :Directory: flagey
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

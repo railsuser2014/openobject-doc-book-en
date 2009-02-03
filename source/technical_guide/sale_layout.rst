@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_layout {
-        display: none;
-      }
-    </style>
-
 sale_layout (*sale_layout*)
 ===========================
 :Module: sale_layout
@@ -22,7 +16,8 @@ sale_layout (*sale_layout*)
 :Author: Tiny
 :Directory: sale_layout
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

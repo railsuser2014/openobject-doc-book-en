@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-custom {
-        display: none;
-      }
-    </style>
-
 Module for custom developments (*custom*)
 =========================================
 :Module: custom
@@ -22,7 +16,8 @@ Module for custom developments (*custom*)
 :Author: Tiny
 :Directory: custom
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

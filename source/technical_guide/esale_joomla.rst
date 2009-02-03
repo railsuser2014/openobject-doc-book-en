@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-esale_joomla {
-        display: none;
-      }
-    </style>
-
 eSale Interface - Joomla (*esale_joomla*)
 =========================================
 :Module: esale_joomla
@@ -22,7 +16,8 @@ eSale Interface - Joomla (*esale_joomla*)
 :Author: Tiny
 :Directory: esale_joomla
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

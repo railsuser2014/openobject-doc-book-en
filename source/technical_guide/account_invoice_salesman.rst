@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_invoice_salesman {
-        display: none;
-      }
-    </style>
-
 Salesman on invoices (*account_invoice_salesman*)
 =================================================
 :Module: account_invoice_salesman
@@ -22,7 +16,8 @@ Salesman on invoices (*account_invoice_salesman*)
 :Author: Tiny
 :Directory: account_invoice_salesman
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

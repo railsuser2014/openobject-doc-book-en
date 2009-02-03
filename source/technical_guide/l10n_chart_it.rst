@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_it {
-        display: none;
-      }
-    </style>
-
 Italy - Chart of Accounts (*l10n_chart_it*)
 ===========================================
 :Module: l10n_chart_it
@@ -22,7 +16,8 @@ Italy - Chart of Accounts (*l10n_chart_it*)
 :Author: Tiny
 :Directory: l10n_chart_it
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

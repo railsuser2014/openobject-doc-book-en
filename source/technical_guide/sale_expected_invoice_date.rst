@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_expected_invoice_date {
-        display: none;
-      }
-    </style>
-
 Sale Expected Invoice Date (*sale_expected_invoice_date*)
 =========================================================
 :Module: sale_expected_invoice_date
@@ -22,7 +16,8 @@ Sale Expected Invoice Date (*sale_expected_invoice_date*)
 :Author: Tiny
 :Directory: sale_expected_invoice_date
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-commission_rate {
-        display: none;
-      }
-    </style>
-
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
@@ -22,7 +16,8 @@ Sale Agent Information (*commission_rate*)
 :Author: Tiny
 :Directory: commission_rate
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-portal_analytic_package {
-        display: none;
-      }
-    </style>
-
 Portal Management - Analytic Entries (*portal_analytic_package*)
 ================================================================
 :Module: portal_analytic_package
@@ -22,7 +16,8 @@ Portal Management - Analytic Entries (*portal_analytic_package*)
 :Author: Tiny
 :Directory: portal_analytic_package
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

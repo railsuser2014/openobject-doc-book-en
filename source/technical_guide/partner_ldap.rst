@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-partner_ldap {
-        display: none;
-      }
-    </style>
-
 Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 ===================================================================
 :Module: partner_ldap
@@ -22,7 +16,8 @@ Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 :Author: Tiny
 :Directory: partner_ldap
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

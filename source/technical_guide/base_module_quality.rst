@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_module_quality {
-        display: none;
-      }
-    </style>
-
 Base module quality (*base_module_quality*)
 ===========================================
 :Module: base_module_quality
@@ -22,7 +16,8 @@ Base module quality (*base_module_quality*)
 :Author: Tiny
 :Directory: base_module_quality
 :Web: 
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

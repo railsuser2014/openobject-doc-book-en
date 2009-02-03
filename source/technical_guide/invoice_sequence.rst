@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-invoice_sequence {
-        display: none;
-      }
-    </style>
-
 Invoice lines with sequence number (*invoice_sequence*)
 =======================================================
 :Module: invoice_sequence
@@ -22,7 +16,8 @@ Invoice lines with sequence number (*invoice_sequence*)
 :Author: Tiny
 :Directory: invoice_sequence
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_visible_discount {
-        display: none;
-      }
-    </style>
-
 Visible Discount Module (*product_visible_discount*)
 ====================================================
 :Module: product_visible_discount
@@ -22,7 +16,8 @@ Visible Discount Module (*product_visible_discount*)
 :Author: Tiny
 :Directory: product_visible_discount
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

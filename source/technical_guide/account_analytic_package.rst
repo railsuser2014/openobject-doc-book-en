@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_analytic_package {
-        display: none;
-      }
-    </style>
-
 account_analytic_package (*account_analytic_package*)
 =====================================================
 :Module: account_analytic_package
@@ -22,7 +16,8 @@ account_analytic_package (*account_analytic_package*)
 :Author: Tiny
 :Directory: account_analytic_package
 :Web: http://www.tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

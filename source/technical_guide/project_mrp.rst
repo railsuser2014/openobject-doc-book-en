@@ -1,18 +1,12 @@
 
 .. module:: project_mrp
-    :synopsis: Project Management - MRP and Sale Integration (Quality Certified)
+    :synopsis: Project Management - MRP and Sale Integration (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-project_mrp {
-        display: none;
-      }
-    </style>
 
 Project Management - MRP and Sale Integration (*project_mrp*)
 =============================================================
@@ -22,7 +16,8 @@ Project Management - MRP and Sale Integration (*project_mrp*)
 :Author: Tiny
 :Directory: project_mrp
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

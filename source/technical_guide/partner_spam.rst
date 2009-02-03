@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-partner_spam {
-        display: none;
-      }
-    </style>
-
 SMS and Email spam to partner (*partner_spam*)
 ==============================================
 :Module: partner_spam
@@ -22,7 +16,8 @@ SMS and Email spam to partner (*partner_spam*)
 :Author: Zikzakmedia SL
 :Directory: partner_spam
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

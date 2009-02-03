@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-marketing {
-        display: none;
-      }
-    </style>
-
 Marketing Campaigns (*marketing*)
 =================================
 :Module: marketing
@@ -22,7 +16,8 @@ Marketing Campaigns (*marketing*)
 :Author: Tiny
 :Directory: marketing
 :Web: http://tinyerp.com/module_crm_marketing.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

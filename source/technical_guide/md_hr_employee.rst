@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-md_hr_employee {
-        display: none;
-      }
-    </style>
-
 Pilot Human Resources (*md_hr_employee*)
 ========================================
 :Module: md_hr_employee
@@ -22,7 +16,8 @@ Pilot Human Resources (*md_hr_employee*)
 :Author: Tiny
 :Directory: md_hr_employee
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-segmentation {
-        display: none;
-      }
-    </style>
-
 segmentation management (*segmentation*)
 ========================================
 :Module: segmentation
@@ -22,7 +16,8 @@ segmentation management (*segmentation*)
 :Author: Tiny
 :Directory: segmentation
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

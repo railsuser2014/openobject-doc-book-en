@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hotel {
-        display: none;
-      }
-    </style>
-
 Hotel Management (*hotel*)
 ==========================
 :Module: hotel
@@ -22,7 +16,8 @@ Hotel Management (*hotel*)
 :Author: Tiny
 :Directory: hotel
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

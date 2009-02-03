@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_url_menu {
-        display: none;
-      }
-    </style>
-
 Url Menus (*base_url_menu*)
 ===========================
 :Module: base_url_menu
@@ -22,7 +16,8 @@ Url Menus (*base_url_menu*)
 :Author: Tiny
 :Directory: base_url_menu
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

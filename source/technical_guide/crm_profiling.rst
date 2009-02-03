@@ -1,18 +1,12 @@
 
 .. module:: crm_profiling
-    :synopsis: crm_profiling management (Quality Certified)
+    :synopsis: crm_profiling management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-crm_profiling {
-        display: none;
-      }
-    </style>
 
 crm_profiling management (*crm_profiling*)
 ==========================================
@@ -22,7 +16,8 @@ crm_profiling management (*crm_profiling*)
 :Author: Tiny
 :Directory: crm_profiling
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

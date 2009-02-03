@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_ca-qc {
-        display: none;
-      }
-    </style>
-
 Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 ================================================
 :Module: l10n_ca-qc
@@ -22,7 +16,8 @@ Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 :Author: Tiny
 :Directory: l10n_ca-qc
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

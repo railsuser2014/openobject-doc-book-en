@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_ca_fr {
-        display: none;
-      }
-    </style>
-
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 =========================================================
 :Module: l10n_chart_ca_fr
@@ -22,7 +16,8 @@ Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 :Author: Tiny
 :Directory: l10n_chart_ca_fr
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

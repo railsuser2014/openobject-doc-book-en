@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_indian_report {
-        display: none;
-      }
-    </style>
-
 Indian Account Reporting - Reporting (*account_indian_report*)
 ==============================================================
 :Module: account_indian_report
@@ -22,7 +16,8 @@ Indian Account Reporting - Reporting (*account_indian_report*)
 :Author: Tiny
 :Directory: account_indian_report
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

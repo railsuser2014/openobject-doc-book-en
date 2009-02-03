@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_gtin {
-        display: none;
-      }
-    </style>
-
 Product GTIN EAN UPC JPC Support (*product_gtin*)
 =================================================
 :Module: product_gtin
@@ -22,7 +16,8 @@ Product GTIN EAN UPC JPC Support (*product_gtin*)
 :Author: ChriCar Beteiligungs- und Beratungs- GmbH
 :Directory: product_gtin
 :Web: http://www.chricar.at/ChriCar
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

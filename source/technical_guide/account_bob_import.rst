@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_bob_import {
-        display: none;
-      }
-    </style>
-
 Import accounting entries from Bob (*account_bob_import*)
 =========================================================
 :Module: account_bob_import
@@ -22,7 +16,8 @@ Import accounting entries from Bob (*account_bob_import*)
 :Author: Tiny
 :Directory: account_bob_import
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

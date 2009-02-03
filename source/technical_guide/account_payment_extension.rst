@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_payment_extension {
-        display: none;
-      }
-    </style>
-
 Account Payment Extension (*account_payment_extension*)
 =======================================================
 :Module: account_payment_extension
@@ -22,7 +16,8 @@ Account Payment Extension (*account_payment_extension*)
 :Author: Zikzakmedia SL
 :Directory: account_payment_extension
 :Web: http://www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

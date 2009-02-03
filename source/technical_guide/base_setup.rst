@@ -1,18 +1,12 @@
 
 .. module:: base_setup
-    :synopsis: Base Setup (Quality Certified)
+    :synopsis: Base Setup (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-base_setup {
-        display: none;
-      }
-    </style>
 
 Base Setup (*base_setup*)
 =========================
@@ -22,7 +16,8 @@ Base Setup (*base_setup*)
 :Author: Tiny
 :Directory: base_setup
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

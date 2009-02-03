@@ -1,18 +1,12 @@
 
 .. module:: subscription
-    :synopsis: Subscription and recurring operations (Quality Certified)
+    :synopsis: Subscription and recurring operations (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-subscription {
-        display: none;
-      }
-    </style>
 
 Subscription and recurring operations (*subscription*)
 ======================================================
@@ -22,7 +16,8 @@ Subscription and recurring operations (*subscription*)
 :Author: Tiny
 :Directory: subscription
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

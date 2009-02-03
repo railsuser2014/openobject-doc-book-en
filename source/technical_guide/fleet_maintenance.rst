@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-fleet_maintenance {
-        display: none;
-      }
-    </style>
-
 Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 =========================================================================
 :Module: fleet_maintenance
@@ -22,7 +16,8 @@ Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 :Author: Smile.fr for Anevia.com
 :Directory: fleet_maintenance
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_in {
-        display: none;
-      }
-    </style>
-
 India - Chart of Accounts (*l10n_chart_in*)
 ===========================================
 :Module: l10n_chart_in
@@ -22,7 +16,8 @@ India - Chart of Accounts (*l10n_chart_in*)
 :Author: Tiny
 :Directory: l10n_chart_in
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

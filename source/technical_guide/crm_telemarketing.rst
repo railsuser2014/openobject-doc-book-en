@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-crm_telemarketing {
-        display: none;
-      }
-    </style>
-
 Telemarketing Management (*crm_telemarketing*)
 ==============================================
 :Module: crm_telemarketing
@@ -22,7 +16,8 @@ Telemarketing Management (*crm_telemarketing*)
 :Author: Syleam
 :Directory: crm_telemarketing
 :Web: http://www.syleam.fr
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

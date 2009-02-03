@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_report_model {
-        display: none;
-      }
-    </style>
-
 Base Report Model (*base_report_model*)
 =======================================
 :Module: base_report_model
@@ -22,7 +16,8 @@ Base Report Model (*base_report_model*)
 :Author: Tiny
 :Directory: base_report_model
 :Web: http://openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

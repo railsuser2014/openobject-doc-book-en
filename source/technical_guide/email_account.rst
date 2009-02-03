@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-email_account {
-        display: none;
-      }
-    </style>
-
 Email Invoice (*email_account*)
 ===============================
 :Module: email_account
@@ -22,7 +16,8 @@ Email Invoice (*email_account*)
 :Author: Zikzakmedia SL
 :Directory: email_account
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

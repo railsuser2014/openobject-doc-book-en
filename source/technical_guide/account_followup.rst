@@ -1,18 +1,12 @@
 
 .. module:: account_followup
-    :synopsis: Accounting follow-ups management (Quality Certified)
+    :synopsis: Accounting follow-ups management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_followup {
-        display: none;
-      }
-    </style>
 
 Accounting follow-ups management (*account_followup*)
 =====================================================
@@ -22,7 +16,8 @@ Accounting follow-ups management (*account_followup*)
 :Author: Tiny
 :Directory: account_followup
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

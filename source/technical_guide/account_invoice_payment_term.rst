@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_invoice_payment_term {
-        display: none;
-      }
-    </style>
-
 Invoice with payment term lines (*account_invoice_payment_term*)
 ================================================================
 :Module: account_invoice_payment_term
@@ -22,7 +16,8 @@ Invoice with payment term lines (*account_invoice_payment_term*)
 :Author: Tiny
 :Directory: account_invoice_payment_term
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

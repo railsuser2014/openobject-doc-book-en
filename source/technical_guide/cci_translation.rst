@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_translation {
-        display: none;
-      }
-    </style>
-
 CCI Translation (*cci_translation*)
 ===================================
 :Module: cci_translation
@@ -22,7 +16,8 @@ CCI Translation (*cci_translation*)
 :Author: Tiny
 :Directory: cci_translation
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

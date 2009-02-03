@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-report_analytic_planning_delegate {
-        display: none;
-      }
-    </style>
-
 Analytic planning - Delegation in the hierarchy (*report_analytic_planning_delegate*)
 =====================================================================================
 :Module: report_analytic_planning_delegate
@@ -22,7 +16,8 @@ Analytic planning - Delegation in the hierarchy (*report_analytic_planning_deleg
 :Author: Tiny
 :Directory: report_analytic_planning_delegate
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

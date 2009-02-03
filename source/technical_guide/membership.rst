@@ -1,18 +1,12 @@
 
 .. module:: membership
-    :synopsis: Membership (Quality Certified)
+    :synopsis: Membership (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-membership {
-        display: none;
-      }
-    </style>
 
 Membership (*membership*)
 =========================
@@ -22,7 +16,8 @@ Membership (*membership*)
 :Author: Tiny
 :Directory: membership
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

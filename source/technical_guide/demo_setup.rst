@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-demo_setup {
-        display: none;
-      }
-    </style>
-
 Online Demo Setup Module (*demo_setup*)
 =======================================
 :Module: demo_setup
@@ -22,7 +16,8 @@ Online Demo Setup Module (*demo_setup*)
 :Author: Tiny
 :Directory: demo_setup
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

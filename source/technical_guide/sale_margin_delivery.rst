@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_margin_delivery {
-        display: none;
-      }
-    </style>
-
 Margins in Sale Delivery Lines (*sale_margin_delivery*)
 =======================================================
 :Module: sale_margin_delivery
@@ -22,7 +16,8 @@ Margins in Sale Delivery Lines (*sale_margin_delivery*)
 :Author: Tiny
 :Directory: sale_margin_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

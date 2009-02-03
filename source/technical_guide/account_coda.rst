@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_coda {
-        display: none;
-      }
-    </style>
-
 Account CODA (*account_coda*)
 =============================
 :Module: account_coda
@@ -22,7 +16,8 @@ Account CODA (*account_coda*)
 :Author: Tiny
 :Directory: account_coda
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

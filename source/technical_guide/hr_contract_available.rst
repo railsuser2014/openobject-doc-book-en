@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hr_contract_available {
-        display: none;
-      }
-    </style>
-
 Human Resources Contracts (*hr_contract_available*)
 ===================================================
 :Module: hr_contract_available
@@ -22,7 +16,8 @@ Human Resources Contracts (*hr_contract_available*)
 :Author: Tiny
 :Directory: hr_contract_available
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

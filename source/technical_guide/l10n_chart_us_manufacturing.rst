@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_us_manufacturing {
-        display: none;
-      }
-    </style>
-
 United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manufacturing*)
 ===========================================================================================
 :Module: l10n_chart_us_manufacturing
@@ -22,7 +16,8 @@ United States - Chart of Accounts for Manufacturing Profile (*l10n_chart_us_manu
 :Author: Tiny
 :Directory: l10n_chart_us_manufacturing
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,18 +1,12 @@
 
 .. module:: report_analytic
-    :synopsis: Analytic Account Reporting (Quality Certified)
+    :synopsis: Analytic Account Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_analytic {
-        display: none;
-      }
-    </style>
 
 Analytic Account Reporting (*report_analytic*)
 ==============================================
@@ -22,7 +16,8 @@ Analytic Account Reporting (*report_analytic*)
 :Author: Tiny
 :Directory: report_analytic
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_event {
-        display: none;
-      }
-    </style>
-
 CCI EVENT (*cci_event*)
 =======================
 :Module: cci_event
@@ -22,7 +16,8 @@ CCI EVENT (*cci_event*)
 :Author: Tiny
 :Directory: cci_event
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

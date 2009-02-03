@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_fr_pcg {
-        display: none;
-      }
-    </style>
-
 France - Plan Comptable Général (*l10n_fr_pcg*)
 ===============================================
 :Module: l10n_fr_pcg
@@ -22,7 +16,8 @@ France - Plan Comptable Général (*l10n_fr_pcg*)
 :Author: Simon JAILLET - CrysaLEAD
 :Directory: l10n_fr_pcg
 :Web: http://www.crysalead.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

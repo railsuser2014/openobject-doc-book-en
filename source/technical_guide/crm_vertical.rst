@@ -1,18 +1,12 @@
 
 .. module:: crm_vertical
-    :synopsis: CRM Verticalisation (Quality Certified)
+    :synopsis: CRM Verticalisation (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-crm_vertical {
-        display: none;
-      }
-    </style>
 
 CRM Verticalisation (*crm_vertical*)
 ====================================
@@ -22,7 +16,8 @@ CRM Verticalisation (*crm_vertical*)
 :Author: Tiny
 :Directory: crm_vertical
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

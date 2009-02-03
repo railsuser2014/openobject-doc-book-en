@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_module_doc_rst {
-        display: none;
-      }
-    </style>
-
 Module Technical Guide in Restructured Text  (*base_module_doc_rst*)
 ====================================================================
 :Module: base_module_doc_rst
@@ -22,7 +16,8 @@ Module Technical Guide in Restructured Text  (*base_module_doc_rst*)
 :Author: Tiny
 :Directory: base_module_doc_rst
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

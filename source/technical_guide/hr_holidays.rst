@@ -1,18 +1,12 @@
 
 .. module:: hr_holidays
-    :synopsis: Human Resources: Holidays management (Quality Certified)
+    :synopsis: Human Resources: Holidays management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-hr_holidays {
-        display: none;
-      }
-    </style>
 
 Human Resources: Holidays management (*hr_holidays*)
 ====================================================
@@ -22,7 +16,8 @@ Human Resources: Holidays management (*hr_holidays*)
 :Author: Tiny & Axelor
 :Directory: hr_holidays
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-Ampco {
-        display: none;
-      }
-    </style>
-
 Ampco (*Ampco*)
 ===============
 :Module: Ampco
@@ -22,7 +16,8 @@ Ampco (*Ampco*)
 :Author: Tiny
 :Directory: Ampco
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

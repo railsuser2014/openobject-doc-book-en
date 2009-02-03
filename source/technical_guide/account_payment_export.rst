@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_payment_export {
-        display: none;
-      }
-    </style>
-
 Payment Order Export (*account_payment_export*)
 ===============================================
 :Module: account_payment_export
@@ -22,7 +16,8 @@ Payment Order Export (*account_payment_export*)
 :Author: Tiny
 :Directory: account_payment_export
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

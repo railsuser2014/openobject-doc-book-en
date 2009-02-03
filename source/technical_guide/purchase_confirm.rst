@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_confirm {
-        display: none;
-      }
-    </style>
-
 Confirm all selected purchase order at once (*purchase_confirm*)
 ================================================================
 :Module: purchase_confirm
@@ -22,7 +16,8 @@ Confirm all selected purchase order at once (*purchase_confirm*)
 :Author: Tiny
 :Directory: purchase_confirm
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

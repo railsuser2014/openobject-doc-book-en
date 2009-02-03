@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-report_hotel_restaurant {
-        display: none;
-      }
-    </style>
-
 Restaurant Management - Reporting (*report_hotel_restaurant*)
 =============================================================
 :Module: report_hotel_restaurant
@@ -22,7 +16,8 @@ Restaurant Management - Reporting (*report_hotel_restaurant*)
 :Author: Tiny
 :Directory: report_hotel_restaurant
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

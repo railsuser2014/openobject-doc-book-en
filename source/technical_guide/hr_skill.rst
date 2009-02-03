@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hr_skill {
-        display: none;
-      }
-    </style>
-
 Skill Management (*hr_skill*)
 =============================
 :Module: hr_skill
@@ -22,7 +16,8 @@ Skill Management (*hr_skill*)
 :Author: Tiny
 :Directory: hr_skill
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

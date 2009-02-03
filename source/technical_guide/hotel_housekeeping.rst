@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hotel_housekeeping {
-        display: none;
-      }
-    </style>
-
 Hotel Housekeeping (*hotel_housekeeping*)
 =========================================
 :Module: hotel_housekeeping
@@ -22,7 +16,8 @@ Hotel Housekeeping (*hotel_housekeeping*)
 :Author: Tiny
 :Directory: hotel_housekeeping
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

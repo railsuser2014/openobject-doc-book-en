@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_nl_standard {
-        display: none;
-      }
-    </style>
-
 Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
 ==================================================================
 :Module: l10n_chart_nl_standard
@@ -22,7 +16,8 @@ Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
 :Author: Tiny
 :Directory: l10n_chart_nl_standard
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

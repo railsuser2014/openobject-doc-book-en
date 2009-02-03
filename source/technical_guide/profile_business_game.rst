@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-profile_business_game {
-        display: none;
-      }
-    </style>
-
 Bussiness Game (*profile_business_game*)
 ========================================
 :Module: profile_business_game
@@ -22,7 +16,8 @@ Bussiness Game (*profile_business_game*)
 :Author: Tiny
 :Directory: profile_business_game
 :Web: 
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

@@ -1,18 +1,12 @@
 
 .. module:: board_project
-    :synopsis: Board for project users (Quality Certified)
+    :synopsis: Board for project users (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-board_project {
-        display: none;
-      }
-    </style>
 
 Board for project users (*board_project*)
 =========================================
@@ -22,7 +16,8 @@ Board for project users (*board_project*)
 :Author: Tiny
 :Directory: board_project
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_category {
-        display: none;
-      }
-    </style>
-
 Sale Order Line With Categories (*sale_category*)
 =================================================
 :Module: sale_category
@@ -22,7 +16,8 @@ Sale Order Line With Categories (*sale_category*)
 :Author: Tiny
 :Directory: sale_category
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

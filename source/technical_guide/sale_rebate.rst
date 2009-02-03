@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_rebate {
-        display: none;
-      }
-    </style>
-
 Sales Management extented with rebates (*sale_rebate*)
 ======================================================
 :Module: sale_rebate
@@ -22,7 +16,8 @@ Sales Management extented with rebates (*sale_rebate*)
 :Author: Tiny
 :Directory: sale_rebate
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

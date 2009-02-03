@@ -1,18 +1,12 @@
 
 .. module:: hr_timesheet_sheet
-    :synopsis: Timesheets (Quality Certified)
+    :synopsis: Timesheets (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-hr_timesheet_sheet {
-        display: none;
-      }
-    </style>
 
 Timesheets (*hr_timesheet_sheet*)
 =================================
@@ -22,7 +16,8 @@ Timesheets (*hr_timesheet_sheet*)
 :Author: Tiny
 :Directory: hr_timesheet_sheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

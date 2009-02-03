@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-profile_indian_account {
-        display: none;
-      }
-    </style>
-
 Indian Accounting (*profile_indian_account*)
 ============================================
 :Module: profile_indian_account
@@ -22,7 +16,8 @@ Indian Accounting (*profile_indian_account*)
 :Author: Tiny
 :Directory: profile_indian_account
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

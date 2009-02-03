@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_advertising {
-        display: none;
-      }
-    </style>
-
 Sales: Avertising Sales (*sale_advertising*)
 ============================================
 :Module: sale_advertising
@@ -22,7 +16,8 @@ Sales: Avertising Sales (*sale_advertising*)
 :Author: Tiny
 :Directory: sale_advertising
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

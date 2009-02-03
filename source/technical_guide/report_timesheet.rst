@@ -1,18 +1,12 @@
 
 .. module:: report_timesheet
-    :synopsis: Timesheet - Reporting (Quality Certified)
+    :synopsis: Timesheet - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_timesheet {
-        display: none;
-      }
-    </style>
 
 Timesheet - Reporting (*report_timesheet*)
 ==========================================
@@ -22,7 +16,8 @@ Timesheet - Reporting (*report_timesheet*)
 :Author: Tiny
 :Directory: report_timesheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,18 +1,12 @@
 
 .. module:: board_account
-    :synopsis: Board for accountant (Quality Certified)
+    :synopsis: Board for accountant (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-board_account {
-        display: none;
-      }
-    </style>
 
 Board for accountant (*board_account*)
 ======================================
@@ -22,7 +16,8 @@ Board for accountant (*board_account*)
 :Author: Tiny
 :Directory: board_account
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

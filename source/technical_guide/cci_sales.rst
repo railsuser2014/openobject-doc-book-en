@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_sales {
-        display: none;
-      }
-    </style>
-
 CCI Sales (*cci_sales*)
 =======================
 :Module: cci_sales
@@ -22,7 +16,8 @@ CCI Sales (*cci_sales*)
 :Author: Tiny
 :Directory: cci_sales
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

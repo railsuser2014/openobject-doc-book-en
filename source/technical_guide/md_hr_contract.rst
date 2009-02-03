@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-md_hr_contract {
-        display: none;
-      }
-    </style>
-
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
@@ -22,7 +16,8 @@ Pilot Human Resource Management (*md_hr_contract*)
 :Author: Tiny
 :Directory: md_hr_contract
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

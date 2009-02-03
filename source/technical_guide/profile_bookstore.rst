@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-profile_bookstore {
-        display: none;
-      }
-    </style>
-
 Bookstore Profile (*profile_bookstore*)
 =======================================
 :Module: profile_bookstore
@@ -22,7 +16,8 @@ Bookstore Profile (*profile_bookstore*)
 :Author: Tiny
 :Directory: profile_bookstore
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

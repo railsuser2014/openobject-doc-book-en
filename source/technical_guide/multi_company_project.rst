@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-multi_company_project {
-        display: none;
-      }
-    </style>
-
 Multi company Project Management (*multi_company_project*)
 ==========================================================
 :Module: multi_company_project
@@ -22,7 +16,8 @@ Multi company Project Management (*multi_company_project*)
 :Author: Tiny
 :Directory: multi_company_project
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

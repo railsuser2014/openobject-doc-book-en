@@ -1,18 +1,12 @@
 
 .. module:: profile_crm
-    :synopsis: CRM profile (Quality Certified)
+    :synopsis: CRM profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_crm {
-        display: none;
-      }
-    </style>
 
 CRM profile (*profile_crm*)
 ===========================
@@ -22,7 +16,8 @@ CRM profile (*profile_crm*)
 :Author: Tiny
 :Directory: profile_crm
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-tiny_purchase {
-        display: none;
-      }
-    </style>
-
 Tiny purchase (*tiny_purchase*)
 ===============================
 :Module: tiny_purchase
@@ -22,7 +16,8 @@ Tiny purchase (*tiny_purchase*)
 :Author: Tiny
 :Directory: tiny_purchase
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

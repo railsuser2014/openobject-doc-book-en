@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_invoice_analytic_required {
-        display: none;
-      }
-    </style>
-
 Account invoice analytic required (*account_invoice_analytic_required*)
 =======================================================================
 :Module: account_invoice_analytic_required
@@ -22,7 +16,8 @@ Account invoice analytic required (*account_invoice_analytic_required*)
 :Author: Tiny
 :Directory: account_invoice_analytic_required
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-profile_ampco {
-        display: none;
-      }
-    </style>
-
 AMPCO profile (*profile_ampco*)
 ===============================
 :Module: profile_ampco
@@ -22,7 +16,8 @@ AMPCO profile (*profile_ampco*)
 :Author: Tiny
 :Directory: profile_ampco
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

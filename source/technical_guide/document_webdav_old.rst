@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-document_webdav_old {
-        display: none;
-      }
-    </style>
-
 Integrated Document Management System (*document_webdav_old*)
 =============================================================
 :Module: document_webdav_old
@@ -22,7 +16,8 @@ Integrated Document Management System (*document_webdav_old*)
 :Author: Tiny
 :Directory: document_webdav_old
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

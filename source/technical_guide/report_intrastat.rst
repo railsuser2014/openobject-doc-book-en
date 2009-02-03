@@ -1,18 +1,12 @@
 
 .. module:: report_intrastat
-    :synopsis: Intrastat Reporting - Reporting (Quality Certified)
+    :synopsis: Intrastat Reporting - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_intrastat {
-        display: none;
-      }
-    </style>
 
 Intrastat Reporting - Reporting (*report_intrastat*)
 ====================================================
@@ -22,7 +16,8 @@ Intrastat Reporting - Reporting (*report_intrastat*)
 :Author: Tiny
 :Directory: report_intrastat
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

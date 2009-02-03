@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_supplier_direct_delivery {
-        display: none;
-      }
-    </style>
-
 Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
 =============================================================================================
 :Module: sale_supplier_direct_delivery
@@ -22,7 +16,8 @@ Automates direct delivery between a supplier and a customer (*sale_supplier_dire
 :Author: Smile.fr for Loyalty Expert
 :Directory: sale_supplier_direct_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

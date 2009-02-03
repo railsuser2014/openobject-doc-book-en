@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-partner_layout {
-        display: none;
-      }
-    </style>
-
 Partner Layout (*partner_layout*)
 =================================
 :Module: partner_layout
@@ -22,7 +16,8 @@ Partner Layout (*partner_layout*)
 :Author: Tiny
 :Directory: partner_layout
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

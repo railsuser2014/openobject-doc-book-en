@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_margin {
-        display: none;
-      }
-    </style>
-
 Margins in Sale Orders (*sale_margin*)
 ======================================
 :Module: sale_margin
@@ -22,7 +16,8 @@ Margins in Sale Orders (*sale_margin*)
 :Author: Tiny
 :Directory: sale_margin
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

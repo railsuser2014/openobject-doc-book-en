@@ -1,18 +1,12 @@
 
 .. module:: google_map
-    :synopsis: Google Map (Quality Certified)
+    :synopsis: Google Map (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-google_map {
-        display: none;
-      }
-    </style>
 
 Google Map (*google_map*)
 =========================
@@ -22,7 +16,8 @@ Google Map (*google_map*)
 :Author: Tiny
 :Directory: google_map
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

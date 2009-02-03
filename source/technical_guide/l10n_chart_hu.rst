@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_hu {
-        display: none;
-      }
-    </style>
-
 Hungary - Chart of Accounts (*l10n_chart_hu*)
 =============================================
 :Module: l10n_chart_hu
@@ -22,7 +16,8 @@ Hungary - Chart of Accounts (*l10n_chart_hu*)
 :Author: Tiny
 :Directory: l10n_chart_hu
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

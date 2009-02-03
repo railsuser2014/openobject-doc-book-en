@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-auto_email_account {
-        display: none;
-      }
-    </style>
-
 Email Invoice (*auto_email_account*)
 ====================================
 :Module: auto_email_account
@@ -22,7 +16,8 @@ Email Invoice (*auto_email_account*)
 :Author: Tiny
 :Directory: auto_email_account
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,18 +1,12 @@
 
 .. module:: profile_service
-    :synopsis: Service company profile (Quality Certified)
+    :synopsis: Service company profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_service {
-        display: none;
-      }
-    </style>
 
 Service company profile (*profile_service*)
 ===========================================
@@ -22,7 +16,8 @@ Service company profile (*profile_service*)
 :Author: Tiny
 :Directory: profile_service
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

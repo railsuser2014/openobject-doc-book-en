@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_country {
-        display: none;
-      }
-    </style>
-
 CCI Country (*cci_country*)
 ===========================
 :Module: cci_country
@@ -22,7 +16,8 @@ CCI Country (*cci_country*)
 :Author: CCILV
 :Directory: cci_country
 :Web: http://www.ccilv.be
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

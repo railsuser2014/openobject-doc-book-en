@@ -1,18 +1,12 @@
 
 .. module:: report_account
-    :synopsis: Account Reporting - Reporting (Quality Certified)
+    :synopsis: Account Reporting - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_account {
-        display: none;
-      }
-    </style>
 
 Account Reporting - Reporting (*report_account*)
 ================================================
@@ -22,7 +16,8 @@ Account Reporting - Reporting (*report_account*)
 :Author: Tiny
 :Directory: report_account
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

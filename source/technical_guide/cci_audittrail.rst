@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_audittrail {
-        display: none;
-      }
-    </style>
-
 Audit Trail (*cci_audittrail*)
 ==============================
 :Module: cci_audittrail
@@ -22,7 +16,8 @@ Audit Trail (*cci_audittrail*)
 :Author: Tiny
 :Directory: cci_audittrail
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hotel_restaurant {
-        display: none;
-      }
-    </style>
-
 Hotel Restaurant (*hotel_restaurant*)
 =====================================
 :Module: hotel_restaurant
@@ -22,7 +16,8 @@ Hotel Restaurant (*hotel_restaurant*)
 :Author: Tiny
 :Directory: hotel_restaurant
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

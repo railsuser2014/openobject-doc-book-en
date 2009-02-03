@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_regularization {
-        display: none;
-      }
-    </style>
-
 Account Regularizations (*account_regularization*)
 ==================================================
 :Module: account_regularization
@@ -22,7 +16,8 @@ Account Regularizations (*account_regularization*)
 :Author: ACYSOS S.L.
 :Directory: account_regularization
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

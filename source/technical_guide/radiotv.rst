@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-radiotv {
-        display: none;
-      }
-    </style>
-
 Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 ===================================================
 :Module: radiotv
@@ -22,7 +16,8 @@ Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 :Author: Jordi Esteve. Zikzakmedia SL
 :Directory: radiotv
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

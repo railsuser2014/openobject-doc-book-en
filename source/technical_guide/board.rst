@@ -1,18 +1,12 @@
 
 .. module:: board
-    :synopsis: Dashboard main module (Quality Certified)
+    :synopsis: Dashboard main module (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-board {
-        display: none;
-      }
-    </style>
 
 Dashboard main module (*board*)
 ===============================
@@ -22,7 +16,8 @@ Dashboard main module (*board*)
 :Author: Tiny
 :Directory: board
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

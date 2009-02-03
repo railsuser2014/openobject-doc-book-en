@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-portal_service {
-        display: none;
-      }
-    </style>
-
 Portal Management - Service (*portal_service*)
 ==============================================
 :Module: portal_service
@@ -22,7 +16,8 @@ Portal Management - Service (*portal_service*)
 :Author: Tiny
 :Directory: portal_service
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

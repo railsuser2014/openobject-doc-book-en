@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hr_holidays_request {
-        display: none;
-      }
-    </style>
-
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request
@@ -22,7 +16,8 @@ HR Holiday Request (*hr_holidays_request*)
 :Author: Tiny & Axelor
 :Directory: hr_holidays_request
 :Web: http://www.axelor.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

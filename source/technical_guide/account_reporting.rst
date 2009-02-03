@@ -1,18 +1,12 @@
 
 .. module:: account_reporting
-    :synopsis: Reporting of Balancesheet for accounting (Quality Certified)
+    :synopsis: Reporting of Balancesheet for accounting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_reporting {
-        display: none;
-      }
-    </style>
 
 Reporting of Balancesheet for accounting (*account_reporting*)
 ==============================================================
@@ -22,7 +16,8 @@ Reporting of Balancesheet for accounting (*account_reporting*)
 :Author: Tiny
 :Directory: account_reporting
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

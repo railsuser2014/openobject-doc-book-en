@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_lv {
-        display: none;
-      }
-    </style>
-
 Latvia - Chart of Accounts (*l10n_chart_lv*)
 ============================================
 :Module: l10n_chart_lv
@@ -22,7 +16,8 @@ Latvia - Chart of Accounts (*l10n_chart_lv*)
 :Author: Tiny
 :Directory: l10n_chart_lv
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

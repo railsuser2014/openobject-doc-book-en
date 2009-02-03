@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_analytic_progress {
-        display: none;
-      }
-    </style>
-
 account_analytic_progress (*account_analytic_progress*)
 =======================================================
 :Module: account_analytic_progress
@@ -22,7 +16,8 @@ account_analytic_progress (*account_analytic_progress*)
 :Author: tiny
 :Directory: account_analytic_progress
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

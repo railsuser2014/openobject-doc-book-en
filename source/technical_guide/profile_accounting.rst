@@ -1,18 +1,12 @@
 
 .. module:: profile_accounting
-    :synopsis: Accounting only profile (Quality Certified)
+    :synopsis: Accounting only profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_accounting {
-        display: none;
-      }
-    </style>
 
 Accounting only profile (*profile_accounting*)
 ==============================================
@@ -22,7 +16,8 @@ Accounting only profile (*profile_accounting*)
 :Author: Tiny
 :Directory: profile_accounting
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

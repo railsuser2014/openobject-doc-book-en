@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-lunch {
-        display: none;
-      }
-    </style>
-
 Lunch Module (*lunch*)
 ======================
 :Module: lunch
@@ -22,7 +16,8 @@ Lunch Module (*lunch*)
 :Author: Tiny
 :Directory: lunch
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

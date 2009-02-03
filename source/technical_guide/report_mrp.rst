@@ -1,18 +1,12 @@
 
 .. module:: report_mrp
-    :synopsis: MRP Management - Reporting (Quality Certified)
+    :synopsis: MRP Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_mrp {
-        display: none;
-      }
-    </style>
 
 MRP Management - Reporting (*report_mrp*)
 =========================================
@@ -22,7 +16,8 @@ MRP Management - Reporting (*report_mrp*)
 :Author: Tiny
 :Directory: report_mrp
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

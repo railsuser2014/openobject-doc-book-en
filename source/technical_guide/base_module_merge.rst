@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_module_merge {
-        display: none;
-      }
-    </style>
-
 Module Merger (*base_module_merge*)
 ===================================
 :Module: base_module_merge
@@ -22,7 +16,8 @@ Module Merger (*base_module_merge*)
 :Author: Tiny
 :Directory: base_module_merge
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

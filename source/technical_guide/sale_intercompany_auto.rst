@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_intercompany_auto {
-        display: none;
-      }
-    </style>
-
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 ===============================================================
 :Module: sale_intercompany_auto
@@ -22,7 +16,8 @@ Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 :Author: Tiny
 :Directory: sale_intercompany_auto
 :Web: http://tinyerp.com/module_sale.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

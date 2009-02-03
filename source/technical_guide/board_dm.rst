@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-board_dm {
-        display: none;
-      }
-    </style>
-
 Board for DM users (*board_dm*)
 ===============================
 :Module: board_dm
@@ -22,7 +16,8 @@ Board for DM users (*board_dm*)
 :Author: Tiny
 :Directory: board_dm
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

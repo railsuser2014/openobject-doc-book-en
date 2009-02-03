@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_tender {
-        display: none;
-      }
-    </style>
-
 Purchase - Purchase Tender (*purchase_tender*)
 ==============================================
 :Module: purchase_tender
@@ -22,7 +16,8 @@ Purchase - Purchase Tender (*purchase_tender*)
 :Author: Tiny
 :Directory: purchase_tender
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

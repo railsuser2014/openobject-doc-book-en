@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-esale_ez {
-        display: none;
-      }
-    </style>
-
 EZ Publish eCommerce Interface (*esale_ez*)
 ===========================================
 :Module: esale_ez
@@ -22,7 +16,8 @@ EZ Publish eCommerce Interface (*esale_ez*)
 :Author: Tiny
 :Directory: esale_ez
 :Web: http://tinyerp.com/demo02_6.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

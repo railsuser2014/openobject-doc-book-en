@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_purchase {
-        display: none;
-      }
-    </style>
-
 CCI Purchase (*cci_purchase*)
 =============================
 :Module: cci_purchase
@@ -22,7 +16,8 @@ CCI Purchase (*cci_purchase*)
 :Author: Tiny
 :Directory: cci_purchase
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

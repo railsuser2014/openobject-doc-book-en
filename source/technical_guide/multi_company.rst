@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-multi_company {
-        display: none;
-      }
-    </style>
-
 Multi company base module (*multi_company*)
 ===========================================
 :Module: multi_company
@@ -22,7 +16,8 @@ Multi company base module (*multi_company*)
 :Author: Tiny
 :Directory: multi_company
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

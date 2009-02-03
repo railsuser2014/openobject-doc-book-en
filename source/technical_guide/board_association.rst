@@ -1,18 +1,12 @@
 
 .. module:: board_association
-    :synopsis: Dashboard for Associations (Quality Certified)
+    :synopsis: Dashboard for Associations (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-board_association {
-        display: none;
-      }
-    </style>
 
 Dashboard for Associations (*board_association*)
 ================================================
@@ -22,7 +16,8 @@ Dashboard for Associations (*board_association*)
 :Author: Tiny
 :Directory: board_association
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

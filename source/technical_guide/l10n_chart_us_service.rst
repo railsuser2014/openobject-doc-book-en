@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_us_service {
-        display: none;
-      }
-    </style>
-
 United States - Chart of Accounts for Services (*l10n_chart_us_service*)
 ========================================================================
 :Module: l10n_chart_us_service
@@ -22,7 +16,8 @@ United States - Chart of Accounts for Services (*l10n_chart_us_service*)
 :Author: Tiny
 :Directory: l10n_chart_us_service
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

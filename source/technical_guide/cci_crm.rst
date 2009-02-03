@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_crm {
-        display: none;
-      }
-    </style>
-
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
@@ -22,7 +16,8 @@ CCI CRM (*cci_crm*)
 :Author: Tiny
 :Directory: cci_crm
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

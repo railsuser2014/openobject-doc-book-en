@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hr_holidays_cci {
-        display: none;
-      }
-    </style>
-
 Human Resources: Holidays management (*hr_holidays_cci*)
 ========================================================
 :Module: hr_holidays_cci
@@ -22,7 +16,8 @@ Human Resources: Holidays management (*hr_holidays_cci*)
 :Author: Axelor
 :Directory: hr_holidays_cci
 :Web: http://www.axelor.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

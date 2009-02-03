@@ -1,18 +1,12 @@
 
 .. module:: wiki
-    :synopsis: Document Management - Wiki (Quality Certified)
+    :synopsis: Document Management - Wiki (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-wiki {
-        display: none;
-      }
-    </style>
 
 Document Management - Wiki (*wiki*)
 ===================================
@@ -22,7 +16,8 @@ Document Management - Wiki (*wiki*)
 :Author: Tiny & Axelor
 :Directory: wiki
 :Web: http://openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

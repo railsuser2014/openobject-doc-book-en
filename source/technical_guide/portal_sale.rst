@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-portal_sale {
-        display: none;
-      }
-    </style>
-
 Portal Sale Management (*portal_sale*)
 ======================================
 :Module: portal_sale
@@ -22,7 +16,8 @@ Portal Sale Management (*portal_sale*)
 :Author: Tiny
 :Directory: portal_sale
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

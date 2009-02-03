@@ -1,18 +1,12 @@
 
 .. module:: report_task
-    :synopsis: Report on tasks by user for projects (Quality Certified)
+    :synopsis: Report on tasks by user for projects (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_task {
-        display: none;
-      }
-    </style>
 
 Report on tasks by user for projects (*report_task*)
 ====================================================
@@ -22,7 +16,8 @@ Report on tasks by user for projects (*report_task*)
 :Author: Tiny
 :Directory: report_task
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

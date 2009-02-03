@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_delivery {
-        display: none;
-      }
-    </style>
-
 Sale Delivery Planning (*sale_delivery*)
 ========================================
 :Module: sale_delivery
@@ -22,7 +16,8 @@ Sale Delivery Planning (*sale_delivery*)
 :Author: Tiny
 :Directory: sale_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

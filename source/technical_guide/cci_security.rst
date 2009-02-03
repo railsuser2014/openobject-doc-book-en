@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_security {
-        display: none;
-      }
-    </style>
-
 CCI Security (*cci_security*)
 =============================
 :Module: cci_security
@@ -22,7 +16,8 @@ CCI Security (*cci_security*)
 :Author: Tiny, CCILV
 :Directory: cci_security
 :Web: http://www.openerp.com, http://www.ccilv.be
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_india_ledger {
-        display: none;
-      }
-    </style>
-
 India Accounting - Ledger (*account_india_ledger*)
 ==================================================
 :Module: account_india_ledger
@@ -22,7 +16,8 @@ India Accounting - Ledger (*account_india_ledger*)
 :Author: Tiny
 :Directory: account_india_ledger
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

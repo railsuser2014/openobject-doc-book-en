@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_catalog_report {
-        display: none;
-      }
-    </style>
-
 Product Catalog (*product_catalog_report*)
 ==========================================
 :Module: product_catalog_report
@@ -22,7 +16,8 @@ Product Catalog (*product_catalog_report*)
 :Author: Tiny
 :Directory: product_catalog_report
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

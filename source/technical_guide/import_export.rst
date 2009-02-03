@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-import_export {
-        display: none;
-      }
-    </style>
-
 Import Export (*import_export*)
 ===============================
 :Module: import_export
@@ -22,7 +16,8 @@ Import Export (*import_export*)
 :Author: Axelor
 :Directory: import_export
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

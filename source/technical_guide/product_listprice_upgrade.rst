@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_listprice_upgrade {
-        display: none;
-      }
-    </style>
-
 Product listprice upgrade (*product_listprice_upgrade*)
 =======================================================
 :Module: product_listprice_upgrade
@@ -22,7 +16,8 @@ Product listprice upgrade (*product_listprice_upgrade*)
 :Author: Tiny
 :Directory: product_listprice_upgrade
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

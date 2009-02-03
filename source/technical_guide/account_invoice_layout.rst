@@ -1,18 +1,12 @@
 
 .. module:: account_invoice_layout
-    :synopsis: account_invoice_layout (Quality Certified)
+    :synopsis: account_invoice_layout (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_invoice_layout {
-        display: none;
-      }
-    </style>
 
 account_invoice_layout (*account_invoice_layout*)
 =================================================
@@ -22,7 +16,8 @@ account_invoice_layout (*account_invoice_layout*)
 :Author: Tiny
 :Directory: account_invoice_layout
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

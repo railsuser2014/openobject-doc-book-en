@@ -1,18 +1,12 @@
 
 .. module:: base_report_designer
-    :synopsis: Report designer interface module (Quality Certified)
+    :synopsis: Report designer interface module (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-base_report_designer {
-        display: none;
-      }
-    </style>
 
 Report designer interface module (*base_report_designer*)
 =========================================================
@@ -22,7 +16,8 @@ Report designer interface module (*base_report_designer*)
 :Author: Tiny
 :Directory: base_report_designer
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

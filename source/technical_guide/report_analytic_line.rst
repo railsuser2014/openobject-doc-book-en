@@ -1,18 +1,12 @@
 
 .. module:: report_analytic_line
-    :synopsis: Analytic lines - Reporting (Quality Certified)
+    :synopsis: Analytic lines - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_analytic_line {
-        display: none;
-      }
-    </style>
 
 Analytic lines - Reporting (*report_analytic_line*)
 ===================================================
@@ -22,7 +16,8 @@ Analytic lines - Reporting (*report_analytic_line*)
 :Author: Tiny
 :Directory: report_analytic_line
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-esale_osc {
-        display: none;
-      }
-    </style>
-
 OScommerce Interface / ZenCart (*esale_osc*)
 ============================================
 :Module: esale_osc
@@ -22,7 +16,8 @@ OScommerce Interface / ZenCart (*esale_osc*)
 :Author: Tiny / modified by Lucien Moerkamp
 :Directory: esale_osc
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

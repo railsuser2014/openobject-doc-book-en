@@ -1,18 +1,12 @@
 
 .. module:: analytic_user_function
-    :synopsis: Analytic User Function (Quality Certified)
+    :synopsis: Analytic User Function (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-analytic_user_function {
-        display: none;
-      }
-    </style>
 
 Analytic User Function (*analytic_user_function*)
 =================================================
@@ -22,7 +16,8 @@ Analytic User Function (*analytic_user_function*)
 :Author: Tiny
 :Directory: analytic_user_function
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

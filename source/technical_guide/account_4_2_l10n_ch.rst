@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_4_2_l10n_ch {
-        display: none;
-      }
-    </style>
-
 Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 ==============================================================
 :Module: account_4_2_l10n_ch
@@ -22,7 +16,8 @@ Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 :Author: Tiny
 :Directory: account_4_2_l10n_ch
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

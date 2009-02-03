@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_uk {
-        display: none;
-      }
-    </style>
-
 United Kingdom Chart of Accounts (*l10n_chart_uk*)
 ==================================================
 :Module: l10n_chart_uk
@@ -22,7 +16,8 @@ United Kingdom Chart of Accounts (*l10n_chart_uk*)
 :Author: Tiny
 :Directory: l10n_chart_uk
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

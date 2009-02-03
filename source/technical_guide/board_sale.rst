@@ -1,18 +1,12 @@
 
 .. module:: board_sale
-    :synopsis: Dashboard for sales (Quality Certified)
+    :synopsis: Dashboard for sales (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-board_sale {
-        display: none;
-      }
-    </style>
 
 Dashboard for sales (*board_sale*)
 ==================================
@@ -22,7 +16,8 @@ Dashboard for sales (*board_sale*)
 :Author: Tiny
 :Directory: board_sale
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_asset {
-        display: none;
-      }
-    </style>
-
 Asset management (*account_asset*)
 ==================================
 :Module: account_asset
@@ -22,7 +16,8 @@ Asset management (*account_asset*)
 :Author: Tiny
 :Directory: account_asset
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

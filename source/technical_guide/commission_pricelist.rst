@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-commission_pricelist {
-        display: none;
-      }
-    </style>
-
 Sale agent Information (*commission_pricelist*)
 ===============================================
 :Module: commission_pricelist
@@ -22,7 +16,8 @@ Sale agent Information (*commission_pricelist*)
 :Author: Tiny
 :Directory: commission_pricelist
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

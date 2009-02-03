@@ -1,18 +1,12 @@
 
 .. module:: scrum
-    :synopsis: Scrum, Agile Development Method (Quality Certified)
+    :synopsis: Scrum, Agile Development Method (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-scrum {
-        display: none;
-      }
-    </style>
 
 Scrum, Agile Development Method (*scrum*)
 =========================================
@@ -22,7 +16,8 @@ Scrum, Agile Development Method (*scrum*)
 :Author: Tiny
 :Directory: scrum
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

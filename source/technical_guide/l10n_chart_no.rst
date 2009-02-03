@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_no {
-        display: none;
-      }
-    </style>
-
 Norway - Chart of Accounts (*l10n_chart_no*)
 ============================================
 :Module: l10n_chart_no
@@ -22,7 +16,8 @@ Norway - Chart of Accounts (*l10n_chart_no*)
 :Author: Tiny
 :Directory: l10n_chart_no
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

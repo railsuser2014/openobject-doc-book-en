@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-ecommerce {
-        display: none;
-      }
-    </style>
-
 E-Commerce (*ecommerce*)
 ========================
 :Module: ecommerce
@@ -22,7 +16,8 @@ E-Commerce (*ecommerce*)
 :Author: e-tiny
 :Directory: ecommerce
 :Web: http://www.etiny.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

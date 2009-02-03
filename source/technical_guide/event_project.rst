@@ -1,18 +1,12 @@
 
 .. module:: event_project
-    :synopsis: Event - Project (Quality Certified)
+    :synopsis: Event - Project (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-event_project {
-        display: none;
-      }
-    </style>
 
 Event - Project (*event_project*)
 =================================
@@ -22,7 +16,8 @@ Event - Project (*event_project*)
 :Author: Tiny
 :Directory: event_project
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

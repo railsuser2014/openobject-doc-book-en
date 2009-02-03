@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-dm {
-        display: none;
-      }
-    </style>
-
 Direct Marketing (*dm*)
 =======================
 :Module: dm
@@ -22,7 +16,8 @@ Direct Marketing (*dm*)
 :Author: Tiny
 :Directory: dm
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

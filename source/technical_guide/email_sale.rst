@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-email_sale {
-        display: none;
-      }
-    </style>
-
 Email Sale order (*email_sale*)
 ===============================
 :Module: email_sale
@@ -22,7 +16,8 @@ Email Sale order (*email_sale*)
 :Author: Zikzakmedia SL
 :Directory: email_sale
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

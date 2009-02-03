@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-label {
-        display: none;
-      }
-    </style>
-
 Partner labels (*label*)
 ========================
 :Module: label
@@ -22,7 +16,8 @@ Partner labels (*label*)
 :Author: Zikzakmedia SL
 :Directory: label
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

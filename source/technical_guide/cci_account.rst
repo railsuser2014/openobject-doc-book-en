@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_account {
-        display: none;
-      }
-    </style>
-
 CCI Account (*cci_account*)
 ===========================
 :Module: cci_account
@@ -22,7 +16,8 @@ CCI Account (*cci_account*)
 :Author: Tiny
 :Directory: cci_account
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-travel {
-        display: none;
-      }
-    </style>
-
 Travel (*travel*)
 =================
 :Module: travel
@@ -22,7 +16,8 @@ Travel (*travel*)
 :Author: Tiny
 :Directory: travel
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

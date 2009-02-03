@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_fr_tva_reel {
-        display: none;
-      }
-    </style>
-
 France - Régime réel de TVA (*l10n_fr_tva_reel*)
 ================================================
 :Module: l10n_fr_tva_reel
@@ -22,7 +16,8 @@ France - Régime réel de TVA (*l10n_fr_tva_reel*)
 :Author: Simon JAILLET - CrysaLEAD
 :Directory: l10n_fr_tva_reel
 :Web: http://www.crysalead.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

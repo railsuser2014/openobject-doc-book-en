@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_search_reference {
-        display: none;
-      }
-    </style>
-
 Products Search Reference (*product_search_reference*)
 ======================================================
 :Module: product_search_reference
@@ -22,7 +16,8 @@ Products Search Reference (*product_search_reference*)
 :Author: Tiny
 :Directory: product_search_reference
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

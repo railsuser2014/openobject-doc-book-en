@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-portal_account {
-        display: none;
-      }
-    </style>
-
 Portal Management - Account (*portal_account*)
 ==============================================
 :Module: portal_account
@@ -22,7 +16,8 @@ Portal Management - Account (*portal_account*)
 :Author: Tiny
 :Directory: portal_account
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

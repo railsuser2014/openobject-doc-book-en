@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-asterisk {
-        display: none;
-      }
-    </style>
-
 Asterisk (*asterisk*)
 =====================
 :Module: asterisk
@@ -22,7 +16,8 @@ Asterisk (*asterisk*)
 :Author: Tiny
 :Directory: asterisk
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

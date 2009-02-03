@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_us_general {
-        display: none;
-      }
-    </style>
-
 United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
 ===============================================================================
 :Module: l10n_chart_us_general
@@ -22,7 +16,8 @@ United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
 :Author: Tiny
 :Directory: l10n_chart_us_general
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

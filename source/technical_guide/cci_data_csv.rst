@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_data_csv {
-        display: none;
-      }
-    </style>
-
 cci Data 1 (*cci_data_csv*)
 ===========================
 :Module: cci_data_csv
@@ -22,7 +16,8 @@ cci Data 1 (*cci_data_csv*)
 :Author: Tiny
 :Directory: cci_data_csv
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

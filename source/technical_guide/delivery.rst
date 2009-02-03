@@ -1,18 +1,12 @@
 
 .. module:: delivery
-    :synopsis: Carriers and deliveries (Quality Certified)
+    :synopsis: Carriers and deliveries (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-delivery {
-        display: none;
-      }
-    </style>
 
 Carriers and deliveries (*delivery*)
 ====================================
@@ -22,7 +16,8 @@ Carriers and deliveries (*delivery*)
 :Author: Tiny
 :Directory: delivery
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

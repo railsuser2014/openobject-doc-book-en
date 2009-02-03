@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_approve {
-        display: none;
-      }
-    </style>
-
 Approve PO automatically when confirmed. (*purchase_approve*)
 =============================================================
 :Module: purchase_approve
@@ -22,7 +16,8 @@ Approve PO automatically when confirmed. (*purchase_approve*)
 :Author: Tiny
 :Directory: purchase_approve
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-hr_timesheet_ical {
-        display: none;
-      }
-    </style>
-
 Complete timesheet from an iCal server (*hr_timesheet_ical*)
 ============================================================
 :Module: hr_timesheet_ical
@@ -22,7 +16,8 @@ Complete timesheet from an iCal server (*hr_timesheet_ical*)
 :Author: Tiny
 :Directory: hr_timesheet_ical
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

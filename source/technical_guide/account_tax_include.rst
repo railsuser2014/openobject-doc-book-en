@@ -1,18 +1,12 @@
 
 .. module:: account_tax_include
-    :synopsis: Invoices and prices with taxes included (Quality Certified)
+    :synopsis: Invoices and prices with taxes included (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_tax_include {
-        display: none;
-      }
-    </style>
 
 Invoices and prices with taxes included (*account_tax_include*)
 ===============================================================
@@ -22,7 +16,8 @@ Invoices and prices with taxes included (*account_tax_include*)
 :Author: Tiny
 :Directory: account_tax_include
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

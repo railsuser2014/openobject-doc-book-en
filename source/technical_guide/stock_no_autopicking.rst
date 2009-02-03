@@ -1,18 +1,12 @@
 
 .. module:: stock_no_autopicking
-    :synopsis: Stock No Auto-Picking (Quality Certified)
+    :synopsis: Stock No Auto-Picking (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-stock_no_autopicking {
-        display: none;
-      }
-    </style>
 
 Stock No Auto-Picking (*stock_no_autopicking*)
 ==============================================
@@ -22,7 +16,8 @@ Stock No Auto-Picking (*stock_no_autopicking*)
 :Author: Tiny
 :Directory: stock_no_autopicking
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

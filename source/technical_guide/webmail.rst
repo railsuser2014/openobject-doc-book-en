@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-webmail {
-        display: none;
-      }
-    </style>
-
 Webmail (*webmail*)
 ===================
 :Module: webmail
@@ -22,7 +16,8 @@ Webmail (*webmail*)
 :Author: Tiny
 :Directory: webmail
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

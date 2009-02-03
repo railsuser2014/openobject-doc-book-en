@@ -1,18 +1,12 @@
 
 .. module:: event
-    :synopsis: Event (Quality Certified)
+    :synopsis: Event (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-event {
-        display: none;
-      }
-    </style>
 
 Event (*event*)
 ===============
@@ -22,7 +16,8 @@ Event (*event*)
 :Author: Tiny
 :Directory: event
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

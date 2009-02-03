@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_delivery_report {
-        display: none;
-      }
-    </style>
-
 Print Delivery Order (*sale_delivery_report*)
 =============================================
 :Module: sale_delivery_report
@@ -22,7 +16,8 @@ Print Delivery Order (*sale_delivery_report*)
 :Author: Tiny
 :Directory: sale_delivery_report
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

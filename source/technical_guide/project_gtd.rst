@@ -1,18 +1,12 @@
 
 .. module:: project_gtd
-    :synopsis: Getting Things Done - Time Management Module (Quality Certified)
+    :synopsis: Getting Things Done - Time Management Module (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-project_gtd {
-        display: none;
-      }
-    </style>
 
 Getting Things Done - Time Management Module (*project_gtd*)
 ============================================================
@@ -22,7 +16,8 @@ Getting Things Done - Time Management Module (*project_gtd*)
 :Author: Tiny
 :Directory: project_gtd
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

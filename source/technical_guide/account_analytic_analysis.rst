@@ -1,18 +1,12 @@
 
 .. module:: account_analytic_analysis
-    :synopsis: report_account_analytic (Quality Certified)
+    :synopsis: report_account_analytic (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_analytic_analysis {
-        display: none;
-      }
-    </style>
 
 report_account_analytic (*account_analytic_analysis*)
 =====================================================
@@ -22,7 +16,8 @@ report_account_analytic (*account_analytic_analysis*)
 :Author: Camptocamp
 :Directory: account_analytic_analysis
 :Web: http://www.camptocamp.com/
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

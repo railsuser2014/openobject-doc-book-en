@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_tax_include {
-        display: none;
-      }
-    </style>
-
 Purchases with taxes included (*purchase_tax_include*)
 ======================================================
 :Module: purchase_tax_include
@@ -22,7 +16,8 @@ Purchases with taxes included (*purchase_tax_include*)
 :Author: Tiny
 :Directory: purchase_tax_include
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

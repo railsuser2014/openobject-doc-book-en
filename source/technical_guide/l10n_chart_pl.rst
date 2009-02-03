@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_pl {
-        display: none;
-      }
-    </style>
-
 Poland - Chart of Accounts (*l10n_chart_pl*)
 ============================================
 :Module: l10n_chart_pl
@@ -22,7 +16,8 @@ Poland - Chart of Accounts (*l10n_chart_pl*)
 :Author: Tiny
 :Directory: l10n_chart_pl
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

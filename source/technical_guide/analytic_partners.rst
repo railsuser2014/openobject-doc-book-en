@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-analytic_partners {
-        display: none;
-      }
-    </style>
-
 Analytic accounts with multiple partners (*analytic_partners*)
 ==============================================================
 :Module: analytic_partners
@@ -22,7 +16,8 @@ Analytic accounts with multiple partners (*analytic_partners*)
 :Author: Tiny
 :Directory: analytic_partners
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

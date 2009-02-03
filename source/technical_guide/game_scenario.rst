@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-game_scenario {
-        display: none;
-      }
-    </style>
-
 Scenario of games (*game_scenario*)
 ===================================
 :Module: game_scenario
@@ -22,7 +16,8 @@ Scenario of games (*game_scenario*)
 :Author: Tiny
 :Directory: game_scenario
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

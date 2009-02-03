@@ -1,18 +1,12 @@
 
 .. module:: mrp_repair
-    :synopsis: Products Repairs Module (Quality Certified)
+    :synopsis: Products Repairs Module (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-mrp_repair {
-        display: none;
-      }
-    </style>
 
 Products Repairs Module (*mrp_repair*)
 ======================================
@@ -22,7 +16,8 @@ Products Repairs Module (*mrp_repair*)
 :Author: Tiny
 :Directory: mrp_repair
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

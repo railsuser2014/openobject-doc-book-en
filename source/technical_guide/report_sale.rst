@@ -1,18 +1,12 @@
 
 .. module:: report_sale
-    :synopsis: Sales Management - Reporting (Quality Certified)
+    :synopsis: Sales Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-report_sale {
-        display: none;
-      }
-    </style>
 
 Sales Management - Reporting (*report_sale*)
 ============================================
@@ -22,7 +16,8 @@ Sales Management - Reporting (*report_sale*)
 :Author: Tiny
 :Directory: report_sale
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

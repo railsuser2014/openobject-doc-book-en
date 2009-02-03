@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_electronic {
-        display: none;
-      }
-    </style>
-
 Products Attributes & Manufacturers (*product_electronic*)
 ==========================================================
 :Module: product_electronic
@@ -22,7 +16,8 @@ Products Attributes & Manufacturers (*product_electronic*)
 :Author: Tiny
 :Directory: product_electronic
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

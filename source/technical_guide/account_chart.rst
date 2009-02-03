@@ -1,18 +1,12 @@
 
 .. module:: account_chart
-    :synopsis: Charts of Accounts (Quality Certified)
+    :synopsis: Charts of Accounts (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account_chart {
-        display: none;
-      }
-    </style>
 
 Charts of Accounts (*account_chart*)
 ====================================
@@ -22,7 +16,8 @@ Charts of Accounts (*account_chart*)
 :Author: Tiny
 :Directory: account_chart
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

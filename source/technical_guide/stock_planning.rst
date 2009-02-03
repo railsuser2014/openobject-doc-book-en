@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-stock_planning {
-        display: none;
-      }
-    </style>
-
 Master Procurement Schedule (*stock_planning*)
 ==============================================
 :Module: stock_planning
@@ -22,7 +16,8 @@ Master Procurement Schedule (*stock_planning*)
 :Author: Tiny
 :Directory: stock_planning
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

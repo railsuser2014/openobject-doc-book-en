@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_create_menu {
-        display: none;
-      }
-    </style>
-
 Menu Wizard  (*base_create_menu*)
 =================================
 :Module: base_create_menu
@@ -22,7 +16,8 @@ Menu Wizard  (*base_create_menu*)
 :Author: Tiny
 :Directory: base_create_menu
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-membership_card {
-        display: none;
-      }
-    </style>
-
 Membership card (*membership_card*)
 ===================================
 :Module: membership_card
@@ -22,7 +16,8 @@ Membership card (*membership_card*)
 :Author: Zikzakmedia SL
 :Directory: membership_card
 :Web: http://www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

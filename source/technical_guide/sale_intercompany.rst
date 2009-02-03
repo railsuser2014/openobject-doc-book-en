@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_intercompany {
-        display: none;
-      }
-    </style>
-
 Sale Inter-Company (*sale_intercompany*)
 ========================================
 :Module: sale_intercompany
@@ -22,7 +16,8 @@ Sale Inter-Company (*sale_intercompany*)
 :Author: Tiny
 :Directory: sale_intercompany
 :Web: http://tinyerp.com/module_sale.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

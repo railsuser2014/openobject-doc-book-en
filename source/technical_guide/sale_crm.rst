@@ -1,18 +1,12 @@
 
 .. module:: sale_crm
-    :synopsis: Sale CRM Stuff (Quality Certified)
+    :synopsis: Sale CRM Stuff (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-sale_crm {
-        display: none;
-      }
-    </style>
 
 Sale CRM Stuff (*sale_crm*)
 ===========================
@@ -22,7 +16,8 @@ Sale CRM Stuff (*sale_crm*)
 :Author: Tiny
 :Directory: sale_crm
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

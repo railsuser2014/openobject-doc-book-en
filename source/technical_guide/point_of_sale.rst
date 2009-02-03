@@ -1,18 +1,12 @@
 
 .. module:: point_of_sale
-    :synopsis: Point Of Sale (Quality Certified)
+    :synopsis: Point Of Sale (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-point_of_sale {
-        display: none;
-      }
-    </style>
 
 Point Of Sale (*point_of_sale*)
 ===============================
@@ -22,7 +16,8 @@ Point Of Sale (*point_of_sale*)
 :Author: Tiny
 :Directory: point_of_sale
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

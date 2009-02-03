@@ -1,18 +1,12 @@
 
 .. module:: product
-    :synopsis: Products & Pricelists (Quality Certified)
+    :synopsis: Products & Pricelists (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-product {
-        display: none;
-      }
-    </style>
 
 Products & Pricelists (*product*)
 =================================
@@ -22,7 +16,8 @@ Products & Pricelists (*product*)
 :Author: Tiny
 :Directory: product
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

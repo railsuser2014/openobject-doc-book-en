@@ -1,18 +1,12 @@
 
 .. module:: sale
-    :synopsis: Sales Management (Quality Certified)
+    :synopsis: Sales Management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-sale {
-        display: none;
-      }
-    </style>
 
 Sales Management (*sale*)
 =========================
@@ -22,7 +16,8 @@ Sales Management (*sale*)
 :Author: Tiny
 :Directory: sale
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

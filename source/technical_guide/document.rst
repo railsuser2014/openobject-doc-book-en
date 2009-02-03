@@ -1,18 +1,12 @@
 
 .. module:: document
-    :synopsis: Integrated Document Management System (Quality Certified)
+    :synopsis: Integrated Document Management System (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-document {
-        display: none;
-      }
-    </style>
 
 Integrated Document Management System (*document*)
 ==================================================
@@ -22,7 +16,8 @@ Integrated Document Management System (*document*)
 :Author: Tiny
 :Directory: document
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

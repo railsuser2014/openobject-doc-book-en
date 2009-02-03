@@ -1,18 +1,12 @@
 
 .. module:: idea
-    :synopsis: Idea Manager (Quality Certified)
+    :synopsis: Idea Manager (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-idea {
-        display: none;
-      }
-    </style>
 
 Idea Manager (*idea*)
 =====================
@@ -22,7 +16,8 @@ Idea Manager (*idea*)
 :Author: Tiny
 :Directory: idea
 :Web: http://openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

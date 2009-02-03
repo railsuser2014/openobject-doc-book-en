@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-document_extension {
-        display: none;
-      }
-    </style>
-
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension
@@ -22,7 +16,8 @@ Extension Module of Document Management System (*document_extension*)
 :Author: Tiny
 :Directory: document_extension
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

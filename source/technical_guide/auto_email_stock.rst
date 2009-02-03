@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-auto_email_stock {
-        display: none;
-      }
-    </style>
-
 Auto Email Stock Picking (*auto_email_stock*)
 =============================================
 :Module: auto_email_stock
@@ -22,7 +16,8 @@ Auto Email Stock Picking (*auto_email_stock*)
 :Author: Tiny
 :Directory: auto_email_stock
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

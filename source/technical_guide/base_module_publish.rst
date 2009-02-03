@@ -1,18 +1,12 @@
 
 .. module:: base_module_publish
-    :synopsis: Module publisher (Quality Certified)
+    :synopsis: Module publisher (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-base_module_publish {
-        display: none;
-      }
-    </style>
 
 Module publisher (*base_module_publish*)
 ========================================
@@ -22,7 +16,8 @@ Module publisher (*base_module_publish*)
 :Author: Tiny
 :Directory: base_module_publish
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

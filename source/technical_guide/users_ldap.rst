@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-users_ldap {
-        display: none;
-      }
-    </style>
-
 Authenticate users with ldap server (*users_ldap*)
 ==================================================
 :Module: users_ldap
@@ -22,7 +16,8 @@ Authenticate users with ldap server (*users_ldap*)
 :Author: Tiny
 :Directory: users_ldap
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

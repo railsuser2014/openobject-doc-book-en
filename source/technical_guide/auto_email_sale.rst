@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-auto_email_sale {
-        display: none;
-      }
-    </style>
-
 Email Sale order (*auto_email_sale*)
 ====================================
 :Module: auto_email_sale
@@ -22,7 +16,8 @@ Email Sale order (*auto_email_sale*)
 :Author: Tiny
 :Directory: auto_email_sale
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_forecast {
-        display: none;
-      }
-    </style>
-
 Sales Forecasts, goals and statistics (*sale_forecast*)
 =======================================================
 :Module: sale_forecast
@@ -22,7 +16,8 @@ Sales Forecasts, goals and statistics (*sale_forecast*)
 :Author: Tiny
 :Directory: sale_forecast
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_crypt {
-        display: none;
-      }
-    </style>
-
 Base (*base_crypt*)
 ===================
 :Module: base_crypt
@@ -22,7 +16,8 @@ Base (*base_crypt*)
 :Author: FS3 , Review Tiny
 :Directory: base_crypt
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

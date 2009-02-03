@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_reverse {
-        display: none;
-      }
-    </style>
-
 Account Move Reverse (*account_reverse*)
 ========================================
 :Module: account_reverse
@@ -22,7 +16,8 @@ Account Move Reverse (*account_reverse*)
 :Author: ACYSOS S.L.
 :Directory: account_reverse
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

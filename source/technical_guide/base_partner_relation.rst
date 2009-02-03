@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_partner_relation {
-        display: none;
-      }
-    </style>
-
 Partners - relation extension (*base_partner_relation*)
 =======================================================
 :Module: base_partner_relation
@@ -22,7 +16,8 @@ Partners - relation extension (*base_partner_relation*)
 :Author: Tiny
 :Directory: base_partner_relation
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_tax_include {
-        display: none;
-      }
-    </style>
-
 Invoices and prices with taxes included (*sale_tax_include*)
 ============================================================
 :Module: sale_tax_include
@@ -22,7 +16,8 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Author: Tiny
 :Directory: sale_tax_include
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

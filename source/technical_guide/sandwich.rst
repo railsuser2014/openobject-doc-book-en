@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sandwich {
-        display: none;
-      }
-    </style>
-
 Sandwich Module (*sandwich*)
 ============================
 :Module: sandwich
@@ -22,7 +16,8 @@ Sandwich Module (*sandwich*)
 :Author: Tiny
 :Directory: sandwich
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

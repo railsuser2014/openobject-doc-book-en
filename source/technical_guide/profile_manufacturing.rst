@@ -1,18 +1,12 @@
 
 .. module:: profile_manufacturing
-    :synopsis: Manufacturing industry profile (Quality Certified)
+    :synopsis: Manufacturing industry profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_manufacturing {
-        display: none;
-      }
-    </style>
 
 Manufacturing industry profile (*profile_manufacturing*)
 ========================================================
@@ -22,7 +16,8 @@ Manufacturing industry profile (*profile_manufacturing*)
 :Author: Tiny
 :Directory: profile_manufacturing
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

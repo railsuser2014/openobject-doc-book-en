@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-gnucash {
-        display: none;
-      }
-    </style>
-
 gnucash (*gnucash*)
 ===================
 :Module: gnucash
@@ -22,7 +16,8 @@ gnucash (*gnucash*)
 :Author: P. Christeas
 :Directory: gnucash
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

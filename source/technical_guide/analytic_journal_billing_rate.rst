@@ -1,18 +1,12 @@
 
 .. module:: analytic_journal_billing_rate
-    :synopsis: Analytic Journal Billing Rate (Quality Certified)
+    :synopsis: Analytic Journal Billing Rate (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-analytic_journal_billing_rate {
-        display: none;
-      }
-    </style>
 
 Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 ===============================================================
@@ -22,7 +16,8 @@ Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 :Author: Tiny
 :Directory: analytic_journal_billing_rate
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

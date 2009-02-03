@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-base_contact_team {
-        display: none;
-      }
-    </style>
-
 Base Contact Team (*base_contact_team*)
 =======================================
 :Module: base_contact_team
@@ -22,7 +16,8 @@ Base Contact Team (*base_contact_team*)
 :Author: Tiny SPRL
 :Directory: base_contact_team
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

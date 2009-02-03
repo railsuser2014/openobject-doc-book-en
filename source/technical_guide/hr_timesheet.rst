@@ -1,18 +1,12 @@
 
 .. module:: hr_timesheet
-    :synopsis: Human Resources (Timesheet encoding) (Quality Certified)
+    :synopsis: Human Resources (Timesheet encoding) (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-hr_timesheet {
-        display: none;
-      }
-    </style>
 
 Human Resources (Timesheet encoding) (*hr_timesheet*)
 =====================================================
@@ -22,7 +16,8 @@ Human Resources (Timesheet encoding) (*hr_timesheet*)
 :Author: Tiny
 :Directory: hr_timesheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

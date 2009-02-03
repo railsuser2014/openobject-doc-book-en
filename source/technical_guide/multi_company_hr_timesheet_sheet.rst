@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-multi_company_hr_timesheet_sheet {
-        display: none;
-      }
-    </style>
-
 Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
 =====================================================================================
 :Module: multi_company_hr_timesheet_sheet
@@ -22,7 +16,8 @@ Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sh
 :Author: Tiny
 :Directory: multi_company_hr_timesheet_sheet
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

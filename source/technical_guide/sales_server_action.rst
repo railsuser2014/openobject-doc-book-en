@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sales_server_action {
-        display: none;
-      }
-    </style>
-
 Sales Server Action (*sales_server_action*)
 ===========================================
 :Module: sales_server_action
@@ -22,7 +16,8 @@ Sales Server Action (*sales_server_action*)
 :Author: Tiny
 :Directory: sales_server_action
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

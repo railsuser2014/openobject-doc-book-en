@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_da {
-        display: none;
-      }
-    </style>
-
 Denmark Chart of Accounts (*l10n_chart_da*)
 ===========================================
 :Module: l10n_chart_da
@@ -22,7 +16,8 @@ Denmark Chart of Accounts (*l10n_chart_da*)
 :Author: Tiny
 :Directory: l10n_chart_da
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

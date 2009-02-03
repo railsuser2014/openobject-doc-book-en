@@ -1,18 +1,12 @@
 
 .. module:: stock
-    :synopsis: Stock Management (Quality Certified)
+    :synopsis: Stock Management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-stock {
-        display: none;
-      }
-    </style>
 
 Stock Management (*stock*)
 ==========================
@@ -22,7 +16,8 @@ Stock Management (*stock*)
 :Author: Tiny
 :Directory: stock
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

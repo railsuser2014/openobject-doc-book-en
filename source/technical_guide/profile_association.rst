@@ -1,18 +1,12 @@
 
 .. module:: profile_association
-    :synopsis: Association profile (Quality Certified)
+    :synopsis: Association profile (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-profile_association {
-        display: none;
-      }
-    </style>
 
 Association profile (*profile_association*)
 ===========================================
@@ -22,7 +16,8 @@ Association profile (*profile_association*)
 :Author: Tiny
 :Directory: profile_association
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

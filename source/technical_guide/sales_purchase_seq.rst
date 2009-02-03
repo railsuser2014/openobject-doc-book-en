@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sales_purchase_seq {
-        display: none;
-      }
-    </style>
-
 Sales Purchase Sequence Management (*sales_purchase_seq*)
 =========================================================
 :Module: sales_purchase_seq
@@ -22,7 +16,8 @@ Sales Purchase Sequence Management (*sales_purchase_seq*)
 :Author: Tiny
 :Directory: sales_purchase_seq
 :Web: http://tinyerp.com/module_sale.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

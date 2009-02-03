@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-library {
-        display: none;
-      }
-    </style>
-
 Library (*library*)
 ===================
 :Module: library
@@ -22,7 +16,8 @@ Library (*library*)
 :Author: Tiny
 :Directory: library
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

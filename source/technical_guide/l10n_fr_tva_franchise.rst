@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_fr_tva_franchise {
-        display: none;
-      }
-    </style>
-
 France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 ================================================================================
 :Module: l10n_fr_tva_franchise
@@ -22,7 +16,8 @@ France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 :Author: Simon JAILLET - CrysaLEAD
 :Directory: l10n_fr_tva_franchise
 :Web: http://www.crysalead.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

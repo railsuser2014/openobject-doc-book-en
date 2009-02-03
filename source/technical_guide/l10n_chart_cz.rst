@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_cz {
-        display: none;
-      }
-    </style>
-
 Czech Republic - Chart of Accounts (*l10n_chart_cz*)
 ====================================================
 :Module: l10n_chart_cz
@@ -22,7 +16,8 @@ Czech Republic - Chart of Accounts (*l10n_chart_cz*)
 :Author: Tiny
 :Directory: l10n_chart_cz
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

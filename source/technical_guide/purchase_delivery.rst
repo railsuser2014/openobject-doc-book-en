@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_delivery {
-        display: none;
-      }
-    </style>
-
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery
@@ -22,7 +16,8 @@ Carriers and deliveries For Purchase Order (*purchase_delivery*)
 :Author: Tiny
 :Directory: purchase_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

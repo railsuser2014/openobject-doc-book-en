@@ -1,18 +1,12 @@
 
 .. module:: mrp_jit
-    :synopsis: MRP JIT (Quality Certified)
+    :synopsis: MRP JIT (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-mrp_jit {
-        display: none;
-      }
-    </style>
 
 MRP JIT (*mrp_jit*)
 ===================
@@ -22,7 +16,8 @@ MRP JIT (*mrp_jit*)
 :Author: Tiny
 :Directory: mrp_jit
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

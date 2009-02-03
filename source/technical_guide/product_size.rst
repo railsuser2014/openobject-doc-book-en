@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_size {
-        display: none;
-      }
-    </style>
-
 Sizes of lots (width, length, thickness) (*product_size*)
 =========================================================
 :Module: product_size
@@ -22,7 +16,8 @@ Sizes of lots (width, length, thickness) (*product_size*)
 :Author: Tiny
 :Directory: product_size
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

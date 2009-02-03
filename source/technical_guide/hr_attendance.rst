@@ -1,18 +1,12 @@
 
 .. module:: hr_attendance
-    :synopsis: Attendances Of Employees (Quality Certified)
+    :synopsis: Attendances Of Employees (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-hr_attendance {
-        display: none;
-      }
-    </style>
 
 Attendances Of Employees (*hr_attendance*)
 ==========================================
@@ -22,7 +16,8 @@ Attendances Of Employees (*hr_attendance*)
 :Author: Tiny
 :Directory: hr_attendance
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

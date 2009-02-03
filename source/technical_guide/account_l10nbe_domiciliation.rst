@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-account_l10nbe_domiciliation {
-        display: none;
-      }
-    </style>
-
 Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 =============================================================
 :Module: account_l10nbe_domiciliation
@@ -22,7 +16,8 @@ Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 :Author: Tiny
 :Directory: account_l10nbe_domiciliation
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

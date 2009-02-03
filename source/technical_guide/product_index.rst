@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_index {
-        display: none;
-      }
-    </style>
-
 Manage indexes on products prices (*product_index*)
 ===================================================
 :Module: product_index
@@ -22,7 +16,8 @@ Manage indexes on products prices (*product_index*)
 :Author: Tiny
 :Directory: product_index
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

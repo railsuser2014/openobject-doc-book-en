@@ -1,18 +1,12 @@
 
 .. module:: account
-    :synopsis: Accounting and financial management (Quality Certified)
+    :synopsis: Accounting and financial management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-account {
-        display: none;
-      }
-    </style>
 
 Accounting and financial management (*account*)
 ===============================================
@@ -22,7 +16,8 @@ Accounting and financial management (*account*)
 :Author: Tiny
 :Directory: account
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

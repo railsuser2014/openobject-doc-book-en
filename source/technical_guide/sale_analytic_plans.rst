@@ -1,18 +1,12 @@
 
 .. module:: sale_analytic_plans
-    :synopsis: Sales Analytic Distribution Management (Quality Certified)
+    :synopsis: Sales Analytic Distribution Management (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-sale_analytic_plans {
-        display: none;
-      }
-    </style>
 
 Sales Analytic Distribution Management (*sale_analytic_plans*)
 ==============================================================
@@ -22,7 +16,8 @@ Sales Analytic Distribution Management (*sale_analytic_plans*)
 :Author: Tiny
 :Directory: sale_analytic_plans
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

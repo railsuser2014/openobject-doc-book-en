@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-sale_payment {
-        display: none;
-      }
-    </style>
-
 Sale payment type (*sale_payment*)
 ==================================
 :Module: sale_payment
@@ -22,7 +16,8 @@ Sale payment type (*sale_payment*)
 :Author: Zikzakmedia SL
 :Directory: sale_payment
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

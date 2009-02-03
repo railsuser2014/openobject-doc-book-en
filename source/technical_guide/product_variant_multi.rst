@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_variant_multi {
-        display: none;
-      }
-    </style>
-
 Products with multi-level variants (*product_variant_multi*)
 ============================================================
 :Module: product_variant_multi
@@ -22,7 +16,8 @@ Products with multi-level variants (*product_variant_multi*)
 :Author: Tiny
 :Directory: product_variant_multi
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

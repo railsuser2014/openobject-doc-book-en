@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_journal {
-        display: none;
-      }
-    </style>
-
 Managing sales and deliveries by journal (*purchase_journal*)
 =============================================================
 :Module: purchase_journal
@@ -22,7 +16,8 @@ Managing sales and deliveries by journal (*purchase_journal*)
 :Author: Tiny
 :Directory: purchase_journal
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

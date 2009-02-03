@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-product_extended {
-        display: none;
-      }
-    </style>
-
 Product extension to track sales and purchases (*product_extended*)
 ===================================================================
 :Module: product_extended
@@ -22,7 +16,8 @@ Product extension to track sales and purchases (*product_extended*)
 :Author: Tiny
 :Directory: product_extended
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

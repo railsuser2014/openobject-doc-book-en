@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-city {
-        display: none;
-      }
-    </style>
-
 City (*city*)
 =============
 :Module: city
@@ -22,7 +16,8 @@ City (*city*)
 :Author: Pablo Rocandio
 :Directory: city
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

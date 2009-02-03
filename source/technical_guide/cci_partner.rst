@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-cci_partner {
-        display: none;
-      }
-    </style>
-
 CCI Partner (*cci_partner*)
 ===========================
 :Module: cci_partner
@@ -22,7 +16,8 @@ CCI Partner (*cci_partner*)
 :Author: Tiny
 :Directory: cci_partner
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

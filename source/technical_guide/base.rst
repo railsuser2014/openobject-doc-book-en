@@ -1,18 +1,12 @@
 
 .. module:: base
-    :synopsis: Base (Quality Certified)
+    :synopsis: Base (Official, Quality Certified)
     :noindex:
 .. 
 
 .. raw:: html
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
-
-    <style>
-      div.body p#module-base {
-        display: none;
-      }
-    </style>
 
 Base (*base*)
 =============
@@ -22,7 +16,8 @@ Base (*base*)
 :Author: Tiny
 :Directory: base
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_de_skr03 {
-        display: none;
-      }
-    </style>
-
 German - SKR03 Chart of Accounts (*l10n_chart_de_skr03*)
 ========================================================
 :Module: l10n_chart_de_skr03
@@ -22,7 +16,8 @@ German - SKR03 Chart of Accounts (*l10n_chart_de_skr03*)
 :Author: Tiny
 :Directory: l10n_chart_de_skr03
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

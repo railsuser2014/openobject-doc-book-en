@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-report_auction {
-        display: none;
-      }
-    </style>
-
 Auction Management - Reporting (*report_auction*)
 =================================================
 :Module: report_auction
@@ -22,7 +16,8 @@ Auction Management - Reporting (*report_auction*)
 :Author: Tiny
 :Directory: report_auction
 :Web: http://tinyerp.com/module_auction.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-test_44 {
-        display: none;
-      }
-    </style>
-
 Test New Features (*test_44*)
 =============================
 :Module: test_44
@@ -22,7 +16,8 @@ Test New Features (*test_44*)
 :Author: Tiny
 :Directory: test_44
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

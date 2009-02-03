@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-purchase_discount {
-        display: none;
-      }
-    </style>
-
 Purchase Order Lines With Discounts (*purchase_discount*)
 =========================================================
 :Module: purchase_discount
@@ -22,7 +16,8 @@ Purchase Order Lines With Discounts (*purchase_discount*)
 :Author: Tiny
 :Directory: purchase_discount
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

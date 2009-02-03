@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
-    <style>
-      div.body p#module-l10n_chart_ve {
-        display: none;
-      }
-    </style>
-
 Venezuela -Chart of Account (*l10n_chart_ve*)
 =============================================
 :Module: l10n_chart_ve
@@ -22,7 +16,8 @@ Venezuela -Chart of Account (*l10n_chart_ve*)
 :Author: Tiny
 :Directory: l10n_chart_ve
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------
