@@ -1,7 +1,7 @@
 Warehouse Management
 ====================
 
-This module provides functionality to create warehouses according to location. For each warehouses Input location ,Output location and stock location can be defined. 
+This module provides functionality to manage multi-warehouses, multi and structured stock locations. For each warehouses Input location, Output location and stock location can be defined.
 
 .. raw:: html
  
@@ -10,13 +10,13 @@ This module provides functionality to create warehouses according to location. F
 Key Points:
 -----------
 
-* Easily create warehouses by location.
-* Information of warehouses location of input, output and location of stock.
+* Easily create multi-warehouses with locations.
+* Thanks to the double entry management, the inventory controlling is powerful and flexible (moves history and planning, stock valuation, robustness faced with Inventory differences, automatic reordering rules, bar code supported, rapid detection of mistakes through double entry system, traceability, ...) 
 
 Integration Benefits:
 ---------------------
 
-* Keep track of warehouses from where goods are coming in and going out.
+* Keep track of stock moves bewteen warehouses (from where goods are coming in and going out).
 * Integrated with stock module.
 
 Links:
