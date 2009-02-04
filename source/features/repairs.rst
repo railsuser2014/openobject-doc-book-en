@@ -24,5 +24,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module: mrp_repair
 

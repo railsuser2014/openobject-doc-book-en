@@ -26,5 +26,5 @@ Integration Benefits:
 Links:
 ------
 
-* Modules:
+* Modules:  account_payment
 

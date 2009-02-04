@@ -28,7 +28,6 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
+*  .. raw:: html
   
     <a target="_blank" href="http://www.openobject.com">Open Object</a>

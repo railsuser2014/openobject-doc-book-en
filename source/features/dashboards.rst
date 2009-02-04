@@ -26,6 +26,7 @@ Integration benefits:
 
 Links:
 ------
+* Module : board
 
 *
   .. raw:: html

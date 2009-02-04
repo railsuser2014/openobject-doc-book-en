@@ -33,4 +33,7 @@ To get more information:
 * Wiki Documentation
 * The Open ERP website
 
+Links:
+------
 
+* Modules: wiki

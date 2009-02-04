@@ -25,7 +25,8 @@ Integration Benefits:
 
 Links:
 
-*
+* Module : profile_accounting
+
   .. raw:: html
   
     <a target="_blank" href="http://example.net">Example</a>

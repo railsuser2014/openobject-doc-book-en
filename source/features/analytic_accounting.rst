@@ -36,4 +36,4 @@ Fully integrated to all modules of Open ERP, here are the main onces:
 Links:
 ------
 
-* Module: Analytic_account
+* Module: account_analytic_default

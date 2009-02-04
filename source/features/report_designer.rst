@@ -30,5 +30,5 @@ Integration benefits:
 Links:
 ------
 
-* Module:
+* Module:  base_report_designer
 

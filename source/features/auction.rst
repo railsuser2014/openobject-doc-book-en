@@ -30,5 +30,6 @@ Links:
   .. raw:: html
   
     <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>
-* Module: profile_auction
+    
+* Module: profile_auction,auction
 

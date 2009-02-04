@@ -26,6 +26,7 @@ Integration benefits:
 
 Links:
 ------
+* Module:  profile_service
 
 *
   .. raw:: html

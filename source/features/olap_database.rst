@@ -24,6 +24,7 @@ Integration Benefits:
 
 Links:
 ------
+* Module : olap
 
 *
   .. raw:: html

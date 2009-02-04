@@ -27,7 +27,6 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
+*  .. raw:: html
   
     <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>

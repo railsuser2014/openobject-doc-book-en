@@ -11,4 +11,4 @@ This module is still under development...
 Links:
 ------
 
-* Module
+* Module: payroll

@@ -28,4 +28,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module:  point_of_sale

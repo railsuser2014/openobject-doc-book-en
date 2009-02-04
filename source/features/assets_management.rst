@@ -30,5 +30,5 @@ Integration Benefits:
 Links:
 ------
 
-* Modules: asset_management
+* Modules:  account_asset
 

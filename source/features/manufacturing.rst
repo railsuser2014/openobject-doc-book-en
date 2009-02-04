@@ -33,6 +33,7 @@ Integration Benefits:
 
 Links:
 ------
+* Module : mrp
 
 *
   .. raw:: html

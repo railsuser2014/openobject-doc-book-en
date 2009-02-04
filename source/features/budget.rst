@@ -31,5 +31,5 @@ Integration benefits:
 Links:
 ------
 
-* Module: 
+* Module: account_budget
 

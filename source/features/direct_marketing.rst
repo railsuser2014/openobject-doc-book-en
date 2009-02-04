@@ -31,5 +31,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module:  profile_dm, dm
 

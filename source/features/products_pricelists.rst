@@ -27,4 +27,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module:  product

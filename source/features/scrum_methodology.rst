@@ -30,6 +30,7 @@ Integration Benefits:
 
 Links:
 ------
+* Module: scrum
 
 *
   .. raw:: html

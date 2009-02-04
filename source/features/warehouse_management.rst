@@ -22,5 +22,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module: Stock Management
+* Module: stock
 

@@ -26,4 +26,5 @@ Links:
 ------
 
 * Success stories ?
-* Module: 
+
+* Module: crm_configuration

@@ -26,5 +26,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module: project
 

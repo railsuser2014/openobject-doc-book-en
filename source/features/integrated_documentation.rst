@@ -29,4 +29,7 @@ Integration Benefits:
 Links:
 ------
 
-* Module
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://doc.openerp.com">Documentation</a>

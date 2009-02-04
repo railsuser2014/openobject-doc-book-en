@@ -32,4 +32,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module: crm

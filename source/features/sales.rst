@@ -31,5 +31,4 @@ Integration benefits:
 Links:
 ------
 
-* Module: Sales Management
-
+* Module: sale

@@ -27,5 +27,5 @@ Integration benefits:
 Links:
 ------
 
-* Module: 
+* Module: project_gtd
 

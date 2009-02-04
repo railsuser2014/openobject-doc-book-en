@@ -28,5 +28,5 @@ Integration Benefits:
 Links:
 ------
 
-* Modules: events
+* Modules: event
 

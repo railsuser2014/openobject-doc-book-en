@@ -26,4 +26,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module: ideas
+* Module: idea

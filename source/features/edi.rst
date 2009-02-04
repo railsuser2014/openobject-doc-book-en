@@ -28,7 +28,8 @@ On module to synchronise different documents:
 Links:
 ------
 
-*
+* Module : edi
+
   .. raw:: html
   
     <a target="_blank" href="http://www.openobject.com">Open Object</a>

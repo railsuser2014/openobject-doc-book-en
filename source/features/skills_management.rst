@@ -25,5 +25,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module: 
+* Module:  hr_skill
 

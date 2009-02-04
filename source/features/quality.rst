@@ -24,5 +24,5 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module:  base_module_quality
 
