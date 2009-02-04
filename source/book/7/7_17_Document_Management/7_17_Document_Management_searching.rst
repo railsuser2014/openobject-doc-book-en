@@ -56,7 +56,7 @@ Integration with your emails
 Using Outlook and Thunderbird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. image::  images/document_shared_structure.png
+    .. image::  images/document_attachment_outlook.png
        :align: center
 
 *Sending an attachment that's in the document management system from Outlook.*

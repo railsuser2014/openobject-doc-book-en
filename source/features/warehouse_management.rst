@@ -1,7 +1,7 @@
 Warehouse Management
 ====================
 
-Open ERP provides the smartest warehouse management system ever done.
+This module provides functionality to create warehouses according to location. For each warehouses Input location ,Output location and stock location can be defined. 
 
 .. raw:: html
  
@@ -10,16 +10,17 @@ Open ERP provides the smartest warehouse management system ever done.
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Easily create warehouses by location.
+* Information of warehouses location of input, output and location of stock.
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Keep track of warehouses from where goods are coming in and going out.
+* Integrated with stock module.
 
 Links:
+------
 
-* Module:
+* Module: Stock Management
 
