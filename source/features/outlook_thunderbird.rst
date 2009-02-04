@@ -25,5 +25,9 @@ Integration benefits:
 Links:
 ------
 
-* Modules:
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://openerp.com/Demonstration.php?title=Outlook%20Plugin%20Demo&amp;demo=outlook_plugin_demo">Screencast</a>
+
 
