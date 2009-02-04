@@ -188,7 +188,7 @@ To manage tenders, you should use the module *purchase_tender*. This lets you cr
 
 *Defining a tender.*
 
-To enter data for a new tender, use the menu *Sales Management > Tenders > New Tender*. Open ERP then opens a new blank tender form. The reference number is set by default and you can enter information about you tender in the other fields.
+To enter data for a new tender, use the menu *Purchase Management > Purchase Tenders > New Purchase Tenders*. Open ERP then opens a new blank tender form. The reference number is set by default and you can enter information about you tender in the other fields.
 
 If you want to enter the respond of a supplier into your tender offer, complete the file *Tender* on the supplier order. If you want to enter a revised supplier price, enter an order that you've left in the draft state and link that to the tender. In the list of supplier orders, Open ERP indicates, in the second column, if the order about a tender or not.
 
