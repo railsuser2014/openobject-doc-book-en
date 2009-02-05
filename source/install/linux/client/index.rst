@@ -6,8 +6,8 @@
 
 .. _installation-linux-client-link:
 
-OpenERP Client Installation on Linux
-====================================
+OpenERP Client Installation
+===========================
 
 Installing the required packages
 --------------------------------

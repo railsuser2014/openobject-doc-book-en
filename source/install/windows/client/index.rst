@@ -6,8 +6,8 @@
 
 .. _installation-windows-client-link:
 
-Open ERP Client Installation on Windows
-=======================================
+Open ERP Client Installation
+============================
 
 The Windows client installation is very simple. There are 6 stages :
 

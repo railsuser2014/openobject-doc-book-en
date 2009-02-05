@@ -6,8 +6,8 @@
 
 .. _installation-windows-server-link:
 
-Open ERP Server Installation on Windows
-=======================================
+Open ERP Server Installation
+============================
 
 System Requirements
 -------------------
