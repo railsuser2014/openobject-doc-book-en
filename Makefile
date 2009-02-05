@@ -31,6 +31,7 @@ html:
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
 	./copy_images.sh
+	cp ./index.php build/html
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 
