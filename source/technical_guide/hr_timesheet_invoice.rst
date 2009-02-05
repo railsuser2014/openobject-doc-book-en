@@ -1,6 +1,6 @@
 
 .. module:: hr_timesheet_invoice
-    :synopsis: Invoice on analytic lines
+    :synopsis: Invoice on analytic lines (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Invoice on analytic lines (*hr_timesheet_invoice*)
 :Module: hr_timesheet_invoice
 :Name: Invoice on analytic lines
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_timesheet_invoice
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: base_url_menu
-    :synopsis: Url Menus
+    :synopsis: Url Menus 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Url Menus (*base_url_menu*)
 :Module: base_url_menu
 :Name: Url Menus
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: base_url_menu
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

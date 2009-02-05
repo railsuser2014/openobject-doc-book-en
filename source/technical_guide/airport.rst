@@ -1,6 +1,6 @@
 
 .. module:: airport
-    :synopsis: Airport
+    :synopsis: Airport 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Airport (*airport*)
 :Module: airport
 :Name: Airport
 :Version: False
+:Author: Tiny
 :Directory: airport
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

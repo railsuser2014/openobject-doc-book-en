@@ -1,6 +1,6 @@
 
 .. module:: auction
-    :synopsis: Auction module
+    :synopsis: Auction module (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Auction module (*auction*)
 :Module: auction
 :Name: Auction module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: auction
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

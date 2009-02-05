@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_pa
-    :synopsis: Panama - Chart of Account
+    :synopsis: Panama - Chart of Account 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Panama - Chart of Account (*l10n_chart_pa*)
 :Module: l10n_chart_pa
 :Name: Panama - Chart of Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_pa
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

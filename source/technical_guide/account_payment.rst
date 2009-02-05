@@ -1,6 +1,6 @@
 
 .. module:: account_payment
-    :synopsis: Payment Management
+    :synopsis: Payment Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Payment Management (*account_payment*)
 :Module: account_payment
 :Name: Payment Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: account_payment
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

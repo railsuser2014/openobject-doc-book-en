@@ -1,6 +1,6 @@
 
 .. module:: webmail
-    :synopsis: Webmail
+    :synopsis: Webmail 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Webmail (*webmail*)
 :Module: webmail
 :Name: Webmail
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: webmail
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

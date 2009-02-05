@@ -1,6 +1,6 @@
 
 .. module:: idea
-    :synopsis: Idea Manager
+    :synopsis: Idea Manager (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Idea Manager (*idea*)
 :Module: idea
 :Name: Idea Manager
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: idea
 :Web: http://openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

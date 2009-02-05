@@ -1,6 +1,6 @@
 
 .. module:: label
-    :synopsis: Partner labels
+    :synopsis: Partner labels 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Partner labels (*label*)
 :Module: label
 :Name: Partner labels
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: label
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: bookstore
-    :synopsis: Bookstore Verticalisation
+    :synopsis: Bookstore Verticalisation 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Bookstore Verticalisation (*bookstore*)
 :Module: bookstore
 :Name: Bookstore Verticalisation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: bookstore
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

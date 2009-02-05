@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_hu
-    :synopsis: Hungary - Chart of Accounts
+    :synopsis: Hungary - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Hungary - Chart of Accounts (*l10n_chart_hu*)
 :Module: l10n_chart_hu
 :Name: Hungary - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_hu
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_progress
-    :synopsis: account_analytic_progress
+    :synopsis: account_analytic_progress 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ account_analytic_progress (*account_analytic_progress*)
 :Module: account_analytic_progress
 :Name: account_analytic_progress
 :Version: 5.0.1.0
+:Author: tiny
 :Directory: account_analytic_progress
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

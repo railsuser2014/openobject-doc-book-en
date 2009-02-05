@@ -1,6 +1,6 @@
 
 .. module:: base_crypt
-    :synopsis: Base
+    :synopsis: Base 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base (*base_crypt*)
 :Module: base_crypt
 :Name: Base
 :Version: 5.0.1.0
+:Author: FS3 , Review Tiny
 :Directory: base_crypt
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

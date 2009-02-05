@@ -1,6 +1,6 @@
 
 .. module:: partner_spam
-    :synopsis: SMS and Email spam to partner
+    :synopsis: SMS and Email spam to partner 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ SMS and Email spam to partner (*partner_spam*)
 :Module: partner_spam
 :Name: SMS and Email spam to partner
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: partner_spam
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -10,7 +10,7 @@ more.
 
 .. raw:: html
  
- <a target="_blank" href="images/report_designer_screenshot.png"><img src="images_small/report_designer_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/report_designer_screenshot.png"><img src="../images_small/report_designer_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
@@ -30,5 +30,5 @@ Integration benefits:
 Links:
 ------
 
-* Module:
+* Module:  base_report_designer
 

@@ -1,6 +1,6 @@
 
 .. module:: account_date_check
-    :synopsis: Account Date check
+    :synopsis: Account Date check (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Date check (*account_date_check*)
 :Module: account_date_check
 :Name: Account Date check
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_date_check
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

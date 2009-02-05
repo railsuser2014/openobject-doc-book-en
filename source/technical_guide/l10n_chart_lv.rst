@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_lv
-    :synopsis: Latvia - Chart of Accounts
+    :synopsis: Latvia - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Latvia - Chart of Accounts (*l10n_chart_lv*)
 :Module: l10n_chart_lv
 :Name: Latvia - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_lv
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

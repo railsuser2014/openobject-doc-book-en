@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_cn_traditional
-    :synopsis: China Traditional - Chart of Account
+    :synopsis: China Traditional - Chart of Account 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ China Traditional - Chart of Account (*l10n_chart_cn_traditional*)
 :Module: l10n_chart_cn_traditional
 :Name: China Traditional - Chart of Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_cn_traditional
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

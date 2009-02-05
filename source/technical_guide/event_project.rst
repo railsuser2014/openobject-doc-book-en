@@ -1,6 +1,6 @@
 
 .. module:: event_project
-    :synopsis: Event - Project
+    :synopsis: Event - Project (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Event - Project (*event_project*)
 :Module: event_project
 :Name: Event - Project
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: event_project
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

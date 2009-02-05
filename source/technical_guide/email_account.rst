@@ -1,6 +1,6 @@
 
 .. module:: email_account
-    :synopsis: Email Invoice
+    :synopsis: Email Invoice 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Email Invoice (*email_account*)
 :Module: email_account
 :Name: Email Invoice
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: email_account
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: sale_layout
-    :synopsis: sale_layout
+    :synopsis: sale_layout 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ sale_layout (*sale_layout*)
 :Module: sale_layout
 :Name: sale_layout
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_layout
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

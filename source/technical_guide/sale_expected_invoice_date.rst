@@ -1,6 +1,6 @@
 
 .. module:: sale_expected_invoice_date
-    :synopsis: Sale Expected Invoice Date
+    :synopsis: Sale Expected Invoice Date 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale Expected Invoice Date (*sale_expected_invoice_date*)
 :Module: sale_expected_invoice_date
 :Name: Sale Expected Invoice Date
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: sale_expected_invoice_date
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: base
-    :synopsis: Base
+    :synopsis: Base (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base (*base*)
 :Module: base
 :Name: Base
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: base
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

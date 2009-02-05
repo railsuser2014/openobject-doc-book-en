@@ -1,6 +1,6 @@
 
 .. module:: google_map
-    :synopsis: Google Map
+    :synopsis: Google Map (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Google Map (*google_map*)
 :Module: google_map
 :Name: Google Map
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: google_map
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: sale_crm
-    :synopsis: Sale CRM Stuff
+    :synopsis: Sale CRM Stuff (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale CRM Stuff (*sale_crm*)
 :Module: sale_crm
 :Name: Sale CRM Stuff
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_crm
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

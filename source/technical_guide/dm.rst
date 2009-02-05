@@ -1,6 +1,6 @@
 
 .. module:: dm
-    :synopsis: Direct Marketing
+    :synopsis: Direct Marketing 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Direct Marketing (*dm*)
 :Module: dm
 :Name: Direct Marketing
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: dm
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: tiny_purchase
-    :synopsis: Tiny purchase
+    :synopsis: Tiny purchase 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Tiny purchase (*tiny_purchase*)
 :Module: tiny_purchase
 :Name: Tiny purchase
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: tiny_purchase
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

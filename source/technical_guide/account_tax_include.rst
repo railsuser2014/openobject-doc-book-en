@@ -1,6 +1,6 @@
 
 .. module:: account_tax_include
-    :synopsis: Invoices and prices with taxes included
+    :synopsis: Invoices and prices with taxes included (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Invoices and prices with taxes included (*account_tax_include*)
 :Module: account_tax_include
 :Name: Invoices and prices with taxes included
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_tax_include
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: crm_vertical
-    :synopsis: CRM Verticalisation
+    :synopsis: CRM Verticalisation (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CRM Verticalisation (*crm_vertical*)
 :Module: crm_vertical
 :Name: CRM Verticalisation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: crm_vertical
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

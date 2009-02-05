@@ -1,6 +1,6 @@
 
 .. module:: l10n_be
-    :synopsis: Belgium - Plan Comptable Minimum Normalise
+    :synopsis: Belgium - Plan Comptable Minimum Normalise (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Belgium - Plan Comptable Minimum Normalise (*l10n_be*)
 :Module: l10n_be
 :Name: Belgium - Plan Comptable Minimum Normalise
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: l10n_be
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

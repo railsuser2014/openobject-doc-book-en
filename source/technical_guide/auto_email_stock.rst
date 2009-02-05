@@ -1,6 +1,6 @@
 
 .. module:: auto_email_stock
-    :synopsis: Auto Email Stock Picking
+    :synopsis: Auto Email Stock Picking 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Auto Email Stock Picking (*auto_email_stock*)
 :Module: auto_email_stock
 :Name: Auto Email Stock Picking
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: auto_email_stock
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

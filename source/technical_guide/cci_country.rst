@@ -1,6 +1,6 @@
 
 .. module:: cci_country
-    :synopsis: CCI Country
+    :synopsis: CCI Country 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Country (*cci_country*)
 :Module: cci_country
 :Name: CCI Country
 :Version: 5.0.1.0
+:Author: CCILV
 :Directory: cci_country
 :Web: http://www.ccilv.be
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

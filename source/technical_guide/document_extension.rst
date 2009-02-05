@@ -1,6 +1,6 @@
 
 .. module:: document_extension
-    :synopsis: Extension Module of Document Management System
+    :synopsis: Extension Module of Document Management System (Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Extension Module of Document Management System (*document_extension*)
 :Module: document_extension
 :Name: Extension Module of Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document_extension
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

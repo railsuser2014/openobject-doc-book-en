@@ -1,6 +1,6 @@
 
 .. module:: account_coda
-    :synopsis: Account CODA
+    :synopsis: Account CODA 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account CODA (*account_coda*)
 :Module: account_coda
 :Name: Account CODA
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_coda
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

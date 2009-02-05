@@ -46,6 +46,8 @@ The invoice will be managed by the system depending on the setting of the field 
 
 *  *Invoice from the Packings* 
 
+.. index:: Delivery
+
 .. tip::   **Attention**  **  *Delivery of an order* 
 
 	The term 'delivery' should be taken in the broadest sense in Open ERP. The effect of a delivery depends on the configuration of the sold product.

@@ -1,6 +1,6 @@
 
 .. module:: profile_bi
-    :synopsis: Business Intelligence profile
+    :synopsis: Business Intelligence profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Business Intelligence profile (*profile_bi*)
 :Module: profile_bi
 :Name: Business Intelligence profile
 :Version: False
+:Author: Tiny
 :Directory: profile_bi
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: gnucash
-    :synopsis: gnucash
+    :synopsis: gnucash 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ gnucash (*gnucash*)
 :Module: gnucash
 :Name: gnucash
 :Version: 5.0.0.1
+:Author: P. Christeas
 :Directory: gnucash
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

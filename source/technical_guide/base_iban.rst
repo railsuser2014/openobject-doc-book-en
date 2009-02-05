@@ -1,6 +1,6 @@
 
 .. module:: base_iban
-    :synopsis: IBAN
+    :synopsis: IBAN (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ IBAN (*base_iban*)
 :Module: base_iban
 :Name: IBAN
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_iban
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

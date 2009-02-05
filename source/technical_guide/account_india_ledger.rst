@@ -1,6 +1,6 @@
 
 .. module:: account_india_ledger
-    :synopsis: India Accounting - Ledger
+    :synopsis: India Accounting - Ledger 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ India Accounting - Ledger (*account_india_ledger*)
 :Module: account_india_ledger
 :Name: India Accounting - Ledger
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_india_ledger
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

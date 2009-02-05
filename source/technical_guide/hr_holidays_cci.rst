@@ -1,6 +1,6 @@
 
 .. module:: hr_holidays_cci
-    :synopsis: Human Resources: Holidays management
+    :synopsis: Human Resources: Holidays management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Human Resources: Holidays management (*hr_holidays_cci*)
 :Module: hr_holidays_cci
 :Name: Human Resources: Holidays management
 :Version: False
+:Author: Axelor
 :Directory: hr_holidays_cci
 :Web: http://www.axelor.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

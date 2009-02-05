@@ -1,6 +1,6 @@
 
 .. module:: product_qt
-    :synopsis: Products & Pricelists
+    :synopsis: Products & Pricelists 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Products & Pricelists (*product_qt*)
 :Module: product_qt
 :Name: Products & Pricelists
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_qt
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

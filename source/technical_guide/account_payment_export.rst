@@ -1,6 +1,6 @@
 
 .. module:: account_payment_export
-    :synopsis: Payment Order Export
+    :synopsis: Payment Order Export 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Payment Order Export (*account_payment_export*)
 :Module: account_payment_export
 :Name: Payment Order Export
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_payment_export
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

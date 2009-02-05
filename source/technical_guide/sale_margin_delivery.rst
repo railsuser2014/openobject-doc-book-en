@@ -1,6 +1,6 @@
 
 .. module:: sale_margin_delivery
-    :synopsis: Margins in Sale Delivery Lines
+    :synopsis: Margins in Sale Delivery Lines 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Margins in Sale Delivery Lines (*sale_margin_delivery*)
 :Module: sale_margin_delivery
 :Name: Margins in Sale Delivery Lines
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_margin_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

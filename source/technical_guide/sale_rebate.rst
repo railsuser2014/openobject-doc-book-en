@@ -1,6 +1,6 @@
 
 .. module:: sale_rebate
-    :synopsis: Sales Management extented with rebates
+    :synopsis: Sales Management extented with rebates 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales Management extented with rebates (*sale_rebate*)
 :Module: sale_rebate
 :Name: Sales Management extented with rebates
 :Version: False
+:Author: Tiny
 :Directory: sale_rebate
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

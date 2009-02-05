@@ -1,6 +1,6 @@
 
 .. module:: base_vat
-    :synopsis: VAT
+    :synopsis: VAT (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ VAT (*base_vat*)
 :Module: base_vat
 :Name: VAT
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_vat
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

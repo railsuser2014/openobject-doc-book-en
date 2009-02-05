@@ -8,12 +8,13 @@ used as the financial part of project management.
 
 As all tools are integrated, it gives you a full control and automatisation of
 your company:
+
 * Planning are integrated with budgets,
 * Project management is integrated to contract or affairs managmeent, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/analytic_account_screenshot.png"><img src="images_small/analytic_account_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/analytic_account_screenshot.png"><img src="../images_small/analytic_account_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -35,4 +36,4 @@ Fully integrated to all modules of Open ERP, here are the main onces:
 Links:
 ------
 
-* Module: Analytic_account
+* Module: account_analytic_default

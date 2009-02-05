@@ -1,6 +1,6 @@
 
 .. module:: base_module_quality
-    :synopsis: Base module quality
+    :synopsis: Base module quality (Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base module quality (*base_module_quality*)
 :Module: base_module_quality
 :Name: Base module quality
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_module_quality
 :Web: 
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: network
-    :synopsis: Network Management
+    :synopsis: Network Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Network Management (*network*)
 :Module: network
 :Name: Network Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: network
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

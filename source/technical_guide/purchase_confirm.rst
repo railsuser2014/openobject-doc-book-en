@@ -1,6 +1,6 @@
 
 .. module:: purchase_confirm
-    :synopsis: Confirm all selected purchase order at once
+    :synopsis: Confirm all selected purchase order at once 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Confirm all selected purchase order at once (*purchase_confirm*)
 :Module: purchase_confirm
 :Name: Confirm all selected purchase order at once
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_confirm
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

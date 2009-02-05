@@ -8,7 +8,7 @@ discuss on the different points.
 
 .. raw:: html
  
- <a target="_blank" href="images/ideas_screenshot.png"><img src="images_small/ideas_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/ideas_screenshot.png"><img src="../images_small/ideas_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -26,4 +26,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module: ideas
+* Module: idea

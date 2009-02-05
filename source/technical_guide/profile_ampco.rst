@@ -1,6 +1,6 @@
 
 .. module:: profile_ampco
-    :synopsis: AMPCO profile
+    :synopsis: AMPCO profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ AMPCO profile (*profile_ampco*)
 :Module: profile_ampco
 :Name: AMPCO profile
 :Version: False
+:Author: Tiny
 :Directory: profile_ampco
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

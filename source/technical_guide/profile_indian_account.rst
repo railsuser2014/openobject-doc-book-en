@@ -1,6 +1,6 @@
 
 .. module:: profile_indian_account
-    :synopsis: Indian Accounting
+    :synopsis: Indian Accounting 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Indian Accounting (*profile_indian_account*)
 :Module: profile_indian_account
 :Name: Indian Accounting
 :Version: False
+:Author: Tiny
 :Directory: profile_indian_account
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

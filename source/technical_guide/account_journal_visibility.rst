@@ -1,6 +1,6 @@
 
 .. module:: account_journal_visibility
-    :synopsis: Accounting journal visibility
+    :synopsis: Accounting journal visibility 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting journal visibility (*account_journal_visibility*)
 :Module: account_journal_visibility
 :Name: Accounting journal visibility
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_journal_visibility
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

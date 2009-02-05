@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_salesman
-    :synopsis: Salesman on invoices
+    :synopsis: Salesman on invoices 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Salesman on invoices (*account_invoice_salesman*)
 :Module: account_invoice_salesman
 :Name: Salesman on invoices
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_invoice_salesman
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

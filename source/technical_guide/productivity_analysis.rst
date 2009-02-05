@@ -1,6 +1,6 @@
 
 .. module:: productivity_analysis
-    :synopsis: Productivity Analysis
+    :synopsis: Productivity Analysis 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Productivity Analysis (*productivity_analysis*)
 :Module: productivity_analysis
 :Name: Productivity Analysis
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: productivity_analysis
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

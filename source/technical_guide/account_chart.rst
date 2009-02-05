@@ -1,6 +1,6 @@
 
 .. module:: account_chart
-    :synopsis: Charts of Accounts
+    :synopsis: Charts of Accounts (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Charts of Accounts (*account_chart*)
 :Module: account_chart
 :Name: Charts of Accounts
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: account_chart
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

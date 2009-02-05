@@ -1,6 +1,6 @@
 
 .. module:: account_cash_discount
-    :synopsis: Payement Term with Cash Discount
+    :synopsis: Payement Term with Cash Discount 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Payement Term with Cash Discount (*account_cash_discount*)
 :Module: account_cash_discount
 :Name: Payement Term with Cash Discount
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_cash_discount
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

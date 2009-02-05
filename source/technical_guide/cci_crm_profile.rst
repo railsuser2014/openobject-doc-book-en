@@ -1,6 +1,6 @@
 
 .. module:: cci_crm_profile
-    :synopsis: CCI CRM Profile
+    :synopsis: CCI CRM Profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI CRM Profile (*cci_crm_profile*)
 :Module: cci_crm_profile
 :Name: CCI CRM Profile
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_crm_profile
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

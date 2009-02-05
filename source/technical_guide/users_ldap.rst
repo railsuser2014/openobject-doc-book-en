@@ -1,6 +1,6 @@
 
 .. module:: users_ldap
-    :synopsis: Authenticate users with ldap server
+    :synopsis: Authenticate users with ldap server 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Authenticate users with ldap server (*users_ldap*)
 :Module: users_ldap
 :Name: Authenticate users with ldap server
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: users_ldap
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

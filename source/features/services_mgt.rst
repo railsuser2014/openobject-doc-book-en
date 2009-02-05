@@ -8,7 +8,7 @@ support, schedule and prioritize tasks assigned,  etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/service_mgt_screenshot.png"><img src="images_small/service_mgt_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/service_mgt_screenshot.png"><img src="../images_small/service_mgt_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
@@ -26,6 +26,7 @@ Integration benefits:
 
 Links:
 ------
+* Module:  profile_service
 
 *
   .. raw:: html

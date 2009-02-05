@@ -1,6 +1,6 @@
 
 .. module:: account_followup
-    :synopsis: Accounting follow-ups management
+    :synopsis: Accounting follow-ups management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting follow-ups management (*account_followup*)
 :Module: account_followup
 :Name: Accounting follow-ups management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_followup
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

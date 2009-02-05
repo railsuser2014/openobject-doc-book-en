@@ -1,6 +1,6 @@
 
 .. module:: smtpclient
-    :synopsis: Email Client
+    :synopsis: Email Client 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Email Client (*smtpclient*)
 :Module: smtpclient
 :Name: Email Client
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: smtpclient
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

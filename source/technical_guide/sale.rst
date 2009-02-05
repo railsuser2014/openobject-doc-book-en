@@ -1,6 +1,6 @@
 
 .. module:: sale
-    :synopsis: Sales Management
+    :synopsis: Sales Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales Management (*sale*)
 :Module: sale
 :Name: Sales Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

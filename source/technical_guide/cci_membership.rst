@@ -1,6 +1,6 @@
 
 .. module:: cci_membership
-    :synopsis: CCI Membership
+    :synopsis: CCI Membership 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Membership (*cci_membership*)
 :Module: cci_membership
 :Name: CCI Membership
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_membership
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

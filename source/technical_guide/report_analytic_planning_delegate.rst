@@ -1,6 +1,6 @@
 
 .. module:: report_analytic_planning_delegate
-    :synopsis: Analytic planning - Delegation in the hierarchy
+    :synopsis: Analytic planning - Delegation in the hierarchy 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Analytic planning - Delegation in the hierarchy (*report_analytic_planning_deleg
 :Module: report_analytic_planning_delegate
 :Name: Analytic planning - Delegation in the hierarchy
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic_planning_delegate
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

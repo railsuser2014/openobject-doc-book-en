@@ -1,6 +1,6 @@
 
 .. module:: cci_audittrail
-    :synopsis: Audit Trail
+    :synopsis: Audit Trail 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Audit Trail (*cci_audittrail*)
 :Module: cci_audittrail
 :Name: Audit Trail
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_audittrail
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

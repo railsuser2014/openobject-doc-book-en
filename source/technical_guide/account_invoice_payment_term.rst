@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_payment_term
-    :synopsis: Invoice with payment term lines
+    :synopsis: Invoice with payment term lines 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Invoice with payment term lines (*account_invoice_payment_term*)
 :Module: account_invoice_payment_term
 :Name: Invoice with payment term lines
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: account_invoice_payment_term
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: product_index
-    :synopsis: Manage indexes on products prices
+    :synopsis: Manage indexes on products prices 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Manage indexes on products prices (*product_index*)
 :Module: product_index
 :Name: Manage indexes on products prices
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_index
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

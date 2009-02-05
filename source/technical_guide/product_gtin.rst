@@ -1,6 +1,6 @@
 
 .. module:: product_gtin
-    :synopsis: Product GTIN EAN UPC JPC Support
+    :synopsis: Product GTIN EAN UPC JPC Support 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Product GTIN EAN UPC JPC Support (*product_gtin*)
 :Module: product_gtin
 :Name: Product GTIN EAN UPC JPC Support
 :Version: 5.0.1.0
+:Author: ChriCar Beteiligungs- und Beratungs- GmbH
 :Directory: product_gtin
 :Web: http://www.chricar.at/ChriCar
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: multi_company_hr_timesheet_sheet
-    :synopsis: Multi company Human Resources (Timesheet groups)
+    :synopsis: Multi company Human Resources (Timesheet groups) 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sh
 :Module: multi_company_hr_timesheet_sheet
 :Name: Multi company Human Resources (Timesheet groups)
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company_hr_timesheet_sheet
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: commission_pricelist
-    :synopsis: Sale agent Information
+    :synopsis: Sale agent Information 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale agent Information (*commission_pricelist*)
 :Module: commission_pricelist
 :Name: Sale agent Information
 :Version: False
+:Author: Tiny
 :Directory: commission_pricelist
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

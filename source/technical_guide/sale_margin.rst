@@ -1,6 +1,6 @@
 
 .. module:: sale_margin
-    :synopsis: Margins in Sale Orders
+    :synopsis: Margins in Sale Orders 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Margins in Sale Orders (*sale_margin*)
 :Module: sale_margin
 :Name: Margins in Sale Orders
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_margin
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

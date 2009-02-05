@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_ve
-    :synopsis: Venezuela -Chart of Account
+    :synopsis: Venezuela -Chart of Account 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Venezuela -Chart of Account (*l10n_chart_ve*)
 :Module: l10n_chart_ve
 :Name: Venezuela -Chart of Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_ve
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

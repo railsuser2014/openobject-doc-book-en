@@ -1,6 +1,6 @@
 
 .. module:: account
-    :synopsis: Accounting and financial management
+    :synopsis: Accounting and financial management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting and financial management (*account*)
 :Module: account
 :Name: Accounting and financial management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: account
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

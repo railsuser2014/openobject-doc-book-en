@@ -1,6 +1,6 @@
 
 .. module:: base_contact
-    :synopsis: Base Contact
+    :synopsis: Base Contact (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base Contact (*base_contact*)
 :Module: base_contact
 :Name: Base Contact
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_contact
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

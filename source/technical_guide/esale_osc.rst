@@ -1,6 +1,6 @@
 
 .. module:: esale_osc
-    :synopsis: OScommerce Interface / ZenCart
+    :synopsis: OScommerce Interface / ZenCart 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ OScommerce Interface / ZenCart (*esale_osc*)
 :Module: esale_osc
 :Name: OScommerce Interface / ZenCart
 :Version: 5.0.1.0
+:Author: Tiny / modified by Lucien Moerkamp
 :Directory: esale_osc
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

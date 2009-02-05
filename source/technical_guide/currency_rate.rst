@@ -1,6 +1,6 @@
 
 .. module:: currency_rate
-    :synopsis: Currency Rates
+    :synopsis: Currency Rates 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Currency Rates (*currency_rate*)
 :Module: currency_rate
 :Name: Currency Rates
 :Version: 5.0.1.0
+:Author: Axelor
 :Directory: currency_rate
 :Web: http://www.axelor.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

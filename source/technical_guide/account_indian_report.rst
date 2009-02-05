@@ -1,6 +1,6 @@
 
 .. module:: account_indian_report
-    :synopsis: Indian Account Reporting - Reporting
+    :synopsis: Indian Account Reporting - Reporting 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Indian Account Reporting - Reporting (*account_indian_report*)
 :Module: account_indian_report
 :Name: Indian Account Reporting - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_indian_report
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: product_listprice_upgrade
-    :synopsis: Product listprice upgrade
+    :synopsis: Product listprice upgrade 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Product listprice upgrade (*product_listprice_upgrade*)
 :Module: product_listprice_upgrade
 :Name: Product listprice upgrade
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_listprice_upgrade
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

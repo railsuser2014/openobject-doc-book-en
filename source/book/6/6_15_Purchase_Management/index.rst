@@ -181,14 +181,14 @@ The invoices are then handled just like the controlled from On Order. Once the i
 Tenders
 --------
 
-To manage tenders, you should use the module *purchase_tender*. This lets you create several supplier price reqests for a single supply requirement. Once the moduel is installed, Open ERP adds a new menu in the sales management, Tenders. You will then be able to define the new tenders.
+To manage tenders, you should use the module *purchase_tender*. This lets you create several supplier price reqests for a single supply requirement. Once the moduel is installed, Open ERP adds a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
     .. image:: images/purchase_tender.png
        :align: center
 
 *Defining a tender.*
 
-To enter data for a new tender, use the menu *Sales Management > Tenders > New Tender*. Open ERP then opens a new blank tender form. The reference number is set by default and you can enter information about you tender in the other fields.
+To enter data for a new tender, use the menu *Purchase Management > Purchase Tenders > New Purchase Tenders*. Open ERP then opens a new blank tender form. The reference number is set by default and you can enter information about you tender in the other fields.
 
 If you want to enter the respond of a supplier into your tender offer, complete the file *Tender* on the supplier order. If you want to enter a revised supplier price, enter an order that you've left in the draft state and link that to the tender. In the list of supplier orders, Open ERP indicates, in the second column, if the order about a tender or not.
 
@@ -245,7 +245,7 @@ In this case you'd want Open ERP to automatically set the price in respond to ea
 
 .. tip:: **More information**   *Calculating the price*
 
-At each goods receipt the product price is recalculated using the following accounting formula: NC = (OC * QS + PC * QR) / (QS + QR), where the following notation is used:
+At each goods receipt the product price is recalculated using the following accounting formula: NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:
 
 * NP: New Price,
 
@@ -288,7 +288,7 @@ To analyze the received quantities, you can use the statistical moduels based on
 Supplier relationship management
 =================================
 
-To manage supplier relations, you should install the *CRM* module. You will then be able to manage supplier complaints and integrate them with your emails and document management.
+To manage supplier relations, you should install the *CRM_Configuration* module. You will then be able to manage supplier complaints and integrate them with your emails and document management.
 
 Once you've install the CRM module check the option *Complaints*. Open ERP then manages the configuration of menus for the management of supplier complaints.
 

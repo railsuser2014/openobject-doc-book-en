@@ -1,6 +1,6 @@
 
 .. module:: hr_skill
-    :synopsis: Skill Management
+    :synopsis: Skill Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Skill Management (*hr_skill*)
 :Module: hr_skill
 :Name: Skill Management
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: hr_skill
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

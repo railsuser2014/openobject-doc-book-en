@@ -1,6 +1,6 @@
 
 .. module:: document_webdav_old
-    :synopsis: Integrated Document Management System
+    :synopsis: Integrated Document Management System 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Integrated Document Management System (*document_webdav_old*)
 :Module: document_webdav_old
 :Name: Integrated Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document_webdav_old
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

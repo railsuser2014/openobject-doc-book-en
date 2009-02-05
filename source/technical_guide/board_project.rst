@@ -1,6 +1,6 @@
 
 .. module:: board_project
-    :synopsis: Board for project users
+    :synopsis: Board for project users (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Board for project users (*board_project*)
 :Module: board_project
 :Name: Board for project users
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_project
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

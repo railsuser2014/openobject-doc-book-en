@@ -1,6 +1,6 @@
 
 .. module:: process
-    :synopsis: Enterprise Process
+    :synopsis: Enterprise Process (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Enterprise Process (*process*)
 :Module: process
 :Name: Enterprise Process
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: process
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

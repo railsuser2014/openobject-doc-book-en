@@ -1,6 +1,6 @@
 
 .. module:: base_report_creator
-    :synopsis: Report Creator
+    :synopsis: Report Creator (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Report Creator (*base_report_creator*)
 :Module: base_report_creator
 :Name: Report Creator
 :Version: 5.0.1.0
+:Author: Tiny & Axelor
 :Directory: base_report_creator
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

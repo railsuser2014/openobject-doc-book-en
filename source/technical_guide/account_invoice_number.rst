@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_number
-    :synopsis: account_invoice_number
+    :synopsis: account_invoice_number 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ account_invoice_number (*account_invoice_number*)
 :Module: account_invoice_number
 :Name: account_invoice_number
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_invoice_number
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

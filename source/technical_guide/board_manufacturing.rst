@@ -1,6 +1,6 @@
 
 .. module:: board_manufacturing
-    :synopsis: Board for manufacturing
+    :synopsis: Board for manufacturing (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Board for manufacturing (*board_manufacturing*)
 :Module: board_manufacturing
 :Name: Board for manufacturing
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_manufacturing
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

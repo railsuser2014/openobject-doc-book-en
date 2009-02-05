@@ -1,6 +1,6 @@
 
 .. module:: account_reporting
-    :synopsis: Reporting of Balancesheet for accounting
+    :synopsis: Reporting of Balancesheet for accounting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Reporting of Balancesheet for accounting (*account_reporting*)
 :Module: account_reporting
 :Name: Reporting of Balancesheet for accounting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_reporting
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

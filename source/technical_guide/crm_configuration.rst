@@ -1,6 +1,6 @@
 
 .. module:: crm_configuration
-    :synopsis: Customer Relationship Management
+    :synopsis: Customer Relationship Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Customer Relationship Management (*crm_configuration*)
 :Module: crm_configuration
 :Name: Customer Relationship Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: crm_configuration
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -6,13 +6,16 @@ The art of productivity without stress
 
 Now take a slight detour away from pure enterprise management by looking at some tools offered by Open ERP to improve your own personal time management. It's not much of a detour because good organization is the key to better productivity in your daily work.
 
-\ ``project_gtd``\  
+Open ERP's \ ``project_gtd``\   module was inspired by the work of two books focusing on efficient time management:
 
-* Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often referred to by its initials GTD (trademark registered since 2005). This book is built around the principle that people should clearly write down all their outstanding tasks and store the details about these tasks in a trustworthy system. They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
+
+* Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often referred to by its initials GTD (trademark registered since 2005). This book is built around the principle that people should clearly write down all their outstanding tasks and store the details about these tasks in a trustworthy system.
+
+ They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
 
 .. tip::   **References**  *Efficiently managing time* 
 
-David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
+        David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
 
 	Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 
@@ -24,7 +27,7 @@ David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISB
 
 	At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably free of worries !
 
-* The 7 Habits of Highly Effective People
+* The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises organizations on the use of these practices, and reports on the productivity improvements in the organization that result.
 
 Our objective in this detour is not to detail the whole methodology but to describe the supporting tools provided by Open ERP's \ ``project_gtd``\   module.
 
@@ -108,7 +111,7 @@ To organize your tasks efficiently, Open ERP uses a method based on the followi
 .. index:: Agenda
 .. index:: Timebox
 
-.. tip::   **Don't confuse**  **  *Agenda*  *and timebox* 
+.. tip::   **Don't confuse** *Agenda*  *and timebox* 
 
 	The idea of timebox is independent from that of an agenda. Certain tasks, such as meetings, must be done on a precise date. So they can't be managed by the timebox system but by an agenda.
 

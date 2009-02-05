@@ -1,6 +1,6 @@
 
 .. module:: partner_layout
-    :synopsis: Partner Layout
+    :synopsis: Partner Layout 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Partner Layout (*partner_layout*)
 :Module: partner_layout
 :Name: Partner Layout
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: partner_layout
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: sale_category
-    :synopsis: Sale Order Line With Categories
+    :synopsis: Sale Order Line With Categories 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale Order Line With Categories (*sale_category*)
 :Module: sale_category
 :Name: Sale Order Line With Categories
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_category
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

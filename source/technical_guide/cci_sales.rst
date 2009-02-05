@@ -1,6 +1,6 @@
 
 .. module:: cci_sales
-    :synopsis: CCI Sales
+    :synopsis: CCI Sales 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Sales (*cci_sales*)
 :Module: cci_sales
 :Name: CCI Sales
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_sales
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

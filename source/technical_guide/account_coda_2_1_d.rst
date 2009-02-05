@@ -1,6 +1,6 @@
 
 .. module:: account_coda_2_1_d
-    :synopsis: Account CODA Version 2.1 D
+    :synopsis: Account CODA Version 2.1 D 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account CODA Version 2.1 D (*account_coda_2_1_d*)
 :Module: account_coda_2_1_d
 :Name: Account CODA Version 2.1 D
 :Version: 5.0.1.0.1
+:Author: Open ERP
 :Directory: account_coda_2_1_d
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

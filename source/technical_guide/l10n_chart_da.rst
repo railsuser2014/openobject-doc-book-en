@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_da
-    :synopsis: Denmark Chart of Accounts
+    :synopsis: Denmark Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Denmark Chart of Accounts (*l10n_chart_da*)
 :Module: l10n_chart_da
 :Name: Denmark Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_da
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

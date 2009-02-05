@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_default
-    :synopsis: Account Analytic Default
+    :synopsis: Account Analytic Default (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Analytic Default (*account_analytic_default*)
 :Module: account_analytic_default
 :Name: Account Analytic Default
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_analytic_default
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

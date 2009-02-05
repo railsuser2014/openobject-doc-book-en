@@ -1,6 +1,6 @@
 
 .. module:: sandwich
-    :synopsis: Sandwich Module
+    :synopsis: Sandwich Module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sandwich Module (*sandwich*)
 :Module: sandwich
 :Name: Sandwich Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sandwich
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

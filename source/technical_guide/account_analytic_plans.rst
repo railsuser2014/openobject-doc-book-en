@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_plans
-    :synopsis: Multiple-plans management in Analytic Accounting
+    :synopsis: Multiple-plans management in Analytic Accounting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 :Module: account_analytic_plans
 :Name: Multiple-plans management in Analytic Accounting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_analytic_plans
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

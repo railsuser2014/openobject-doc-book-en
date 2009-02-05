@@ -1,6 +1,6 @@
 
 .. module:: Ampco
-    :synopsis: Ampco
+    :synopsis: Ampco 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Ampco (*Ampco*)
 :Module: Ampco
 :Name: Ampco
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: Ampco
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

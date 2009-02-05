@@ -1,6 +1,6 @@
 
 .. module:: purchase_delivery
-    :synopsis: Carriers and deliveries For Purchase Order
+    :synopsis: Carriers and deliveries For Purchase Order 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Carriers and deliveries For Purchase Order (*purchase_delivery*)
 :Module: purchase_delivery
 :Name: Carriers and deliveries For Purchase Order
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

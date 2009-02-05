@@ -1,6 +1,6 @@
 
 .. module:: base_partner_relation
-    :synopsis: Partners - relation extension
+    :synopsis: Partners - relation extension 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Partners - relation extension (*base_partner_relation*)
 :Module: base_partner_relation
 :Name: Partners - relation extension
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_partner_relation
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

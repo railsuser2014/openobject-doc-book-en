@@ -1,6 +1,6 @@
 
 .. module:: fleet_maintenance
-    :synopsis: Manage the maintenance contracts of a product fleet
+    :synopsis: Manage the maintenance contracts of a product fleet 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 :Module: fleet_maintenance
 :Name: Manage the maintenance contracts of a product fleet
 :Version: 5.0.0.3
+:Author: Smile.fr for Anevia.com
 :Directory: fleet_maintenance
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

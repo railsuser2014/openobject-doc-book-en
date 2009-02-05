@@ -1,6 +1,6 @@
 
 .. module:: md_hr_course
-    :synopsis: Pilot Human Resources
+    :synopsis: Pilot Human Resources 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Pilot Human Resources (*md_hr_course*)
 :Module: md_hr_course
 :Name: Pilot Human Resources
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: md_hr_course
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

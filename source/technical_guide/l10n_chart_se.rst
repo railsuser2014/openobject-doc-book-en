@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_se
-    :synopsis: Sweden - Chart of Accounts
+    :synopsis: Sweden - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sweden - Chart of Accounts (*l10n_chart_se*)
 :Module: l10n_chart_se
 :Name: Sweden - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_se
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

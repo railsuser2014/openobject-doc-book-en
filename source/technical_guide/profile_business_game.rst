@@ -1,6 +1,6 @@
 
 .. module:: profile_business_game
-    :synopsis: Bussiness Game
+    :synopsis: Bussiness Game (Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Bussiness Game (*profile_business_game*)
 :Module: profile_business_game
 :Name: Bussiness Game
 :Version: False
+:Author: Tiny
 :Directory: profile_business_game
 :Web: 
-:Is certified: yes
+:Official module: no
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_us_ucoa
-    :synopsis: United States - Chart of Accounts for UCOA
+    :synopsis: United States - Chart of Accounts for UCOA 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ United States - Chart of Accounts for UCOA (*l10n_chart_us_ucoa*)
 :Module: l10n_chart_us_ucoa
 :Name: United States - Chart of Accounts for UCOA
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_us_ucoa
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

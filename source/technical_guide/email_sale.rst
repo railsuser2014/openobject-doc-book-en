@@ -1,6 +1,6 @@
 
 .. module:: email_sale
-    :synopsis: Email Sale order
+    :synopsis: Email Sale order 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Email Sale order (*email_sale*)
 :Module: email_sale
 :Name: Email Sale order
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: email_sale
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

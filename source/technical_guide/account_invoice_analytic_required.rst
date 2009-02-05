@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_analytic_required
-    :synopsis: Account invoice analytic required
+    :synopsis: Account invoice analytic required 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account invoice analytic required (*account_invoice_analytic_required*)
 :Module: account_invoice_analytic_required
 :Name: Account invoice analytic required
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_invoice_analytic_required
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

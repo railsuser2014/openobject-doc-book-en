@@ -1,6 +1,6 @@
 
 .. module:: point_of_sale
-    :synopsis: Point Of Sale
+    :synopsis: Point Of Sale (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Point Of Sale (*point_of_sale*)
 :Module: point_of_sale
 :Name: Point Of Sale
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: point_of_sale
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

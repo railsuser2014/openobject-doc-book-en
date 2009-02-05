@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_uk_minimal
-    :synopsis: United Kingdom - minimal
+    :synopsis: United Kingdom - minimal (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ United Kingdom - minimal (*l10n_chart_uk_minimal*)
 :Module: l10n_chart_uk_minimal
 :Name: United Kingdom - minimal
 :Version: 5.0.1.1
+:Author: Seath Solutions Ltd
 :Directory: l10n_chart_uk_minimal
 :Web: http://www.seathsolutions.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

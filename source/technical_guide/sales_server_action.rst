@@ -1,6 +1,6 @@
 
 .. module:: sales_server_action
-    :synopsis: Sales Server Action
+    :synopsis: Sales Server Action 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales Server Action (*sales_server_action*)
 :Module: sales_server_action
 :Name: Sales Server Action
 :Version: 5.0.5.0
+:Author: Tiny
 :Directory: sales_server_action
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

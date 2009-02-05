@@ -1,6 +1,6 @@
 
 .. module:: cci_security
-    :synopsis: CCI Security
+    :synopsis: CCI Security 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Security (*cci_security*)
 :Module: cci_security
 :Name: CCI Security
 :Version: False
+:Author: Tiny, CCILV
 :Directory: cci_security
 :Web: http://www.openerp.com, http://www.ccilv.be
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

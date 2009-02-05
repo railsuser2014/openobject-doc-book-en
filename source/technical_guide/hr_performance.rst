@@ -1,6 +1,6 @@
 
 .. module:: hr_performance
-    :synopsis: Performance Review
+    :synopsis: Performance Review 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Performance Review (*hr_performance*)
 :Module: hr_performance
 :Name: Performance Review
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_performance
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

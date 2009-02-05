@@ -1,6 +1,6 @@
 
 .. module:: product_catalog_report
-    :synopsis: Product Catalog
+    :synopsis: Product Catalog 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Product Catalog (*product_catalog_report*)
 :Module: product_catalog_report
 :Name: Product Catalog
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_catalog_report
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,7 +8,7 @@ among of criterias will bring you directly to what you are looking for.
 
 .. raw:: html
  
- <a target="_blank" href="images/calendar_screenshot.png"><img src="images_small/calendar_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/calendar_screenshot.png"><img src="../images_small/calendar_screenshot.png" class="screenshot" /></a>
 
 Key-points:
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: subscription
-    :synopsis: Subscription and recurring operations
+    :synopsis: Subscription and recurring operations (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Subscription and recurring operations (*subscription*)
 :Module: subscription
 :Name: Subscription and recurring operations
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: subscription
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: membership
-    :synopsis: Membership
+    :synopsis: Membership (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Membership (*membership*)
 :Module: membership
 :Name: Membership
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: membership
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

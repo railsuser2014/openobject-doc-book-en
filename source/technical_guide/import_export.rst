@@ -1,6 +1,6 @@
 
 .. module:: import_export
-    :synopsis: Import Export
+    :synopsis: Import Export 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Import Export (*import_export*)
 :Module: import_export
 :Name: Import Export
 :Version: 5.0.1.0
+:Author: Axelor
 :Directory: import_export
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

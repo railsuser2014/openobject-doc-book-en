@@ -1,6 +1,6 @@
 
 .. module:: analytic_partners
-    :synopsis: Analytic accounts with multiple partners
+    :synopsis: Analytic accounts with multiple partners 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Analytic accounts with multiple partners (*analytic_partners*)
 :Module: analytic_partners
 :Name: Analytic accounts with multiple partners
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: analytic_partners
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

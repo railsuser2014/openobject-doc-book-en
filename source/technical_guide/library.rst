@@ -1,6 +1,6 @@
 
 .. module:: library
-    :synopsis: Library
+    :synopsis: Library 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Library (*library*)
 :Module: library
 :Name: Library
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: library
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

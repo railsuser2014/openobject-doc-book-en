@@ -1,6 +1,6 @@
 
 .. module:: report_analytic_planning_long_term
-    :synopsis: report_analytic_planning_long_term
+    :synopsis: report_analytic_planning_long_term 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ report_analytic_planning_long_term (*report_analytic_planning_long_term*)
 :Module: report_analytic_planning_long_term
 :Name: report_analytic_planning_long_term
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic_planning_long_term
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

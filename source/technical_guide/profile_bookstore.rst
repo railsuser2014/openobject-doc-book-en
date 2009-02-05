@@ -1,6 +1,6 @@
 
 .. module:: profile_bookstore
-    :synopsis: Bookstore Profile
+    :synopsis: Bookstore Profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Bookstore Profile (*profile_bookstore*)
 :Module: profile_bookstore
 :Name: Bookstore Profile
 :Version: False
+:Author: Tiny
 :Directory: profile_bookstore
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

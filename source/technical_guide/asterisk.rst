@@ -1,6 +1,6 @@
 
 .. module:: asterisk
-    :synopsis: Asterisk
+    :synopsis: Asterisk 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Asterisk (*asterisk*)
 :Module: asterisk
 :Name: Asterisk
 :Version: 5.0.0.1proto2
+:Author: Tiny
 :Directory: asterisk
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

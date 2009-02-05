@@ -1,6 +1,6 @@
 
 .. module:: report_analytic_line
-    :synopsis: Analytic lines - Reporting
+    :synopsis: Analytic lines - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Analytic lines - Reporting (*report_analytic_line*)
 :Module: report_analytic_line
 :Name: Analytic lines - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic_line
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

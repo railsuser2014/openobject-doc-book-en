@@ -1,6 +1,6 @@
 
 .. module:: profile_auction
-    :synopsis: Auction house profile
+    :synopsis: Auction house profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Auction house profile (*profile_auction*)
 :Module: profile_auction
 :Name: Auction house profile
 :Version: False
+:Author: Tiny
 :Directory: profile_auction
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: sale_delivery
-    :synopsis: Sale Delivery Planning
+    :synopsis: Sale Delivery Planning 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale Delivery Planning (*sale_delivery*)
 :Module: sale_delivery
 :Name: Sale Delivery Planning
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

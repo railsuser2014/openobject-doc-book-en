@@ -1,6 +1,6 @@
 
 .. module:: marketing
-    :synopsis: Marketing Campaigns
+    :synopsis: Marketing Campaigns 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Marketing Campaigns (*marketing*)
 :Module: marketing
 :Name: Marketing Campaigns
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: marketing
 :Web: http://tinyerp.com/module_crm_marketing.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: report_timesheet_user
-    :synopsis: Report for timesheet
+    :synopsis: Report for timesheet 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Report for timesheet (*report_timesheet_user*)
 :Module: report_timesheet_user
 :Name: Report for timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_timesheet_user
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

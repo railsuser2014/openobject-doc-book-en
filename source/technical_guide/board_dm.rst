@@ -1,6 +1,6 @@
 
 .. module:: board_dm
-    :synopsis: Board for DM users
+    :synopsis: Board for DM users 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Board for DM users (*board_dm*)
 :Module: board_dm
 :Name: Board for DM users
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_dm
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

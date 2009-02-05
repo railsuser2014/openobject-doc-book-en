@@ -1,6 +1,6 @@
 
 .. module:: sale_tax_include
-    :synopsis: Invoices and prices with taxes included
+    :synopsis: Invoices and prices with taxes included 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Module: sale_tax_include
 :Name: Invoices and prices with taxes included
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_tax_include
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

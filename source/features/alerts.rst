@@ -10,7 +10,7 @@ a lot the communication between the different employee of a same company.
 
 .. raw:: html
  
- <a target="_blank" href="images/alerts_screenshot.png"><img src="images_small/alerts_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/alerts_screenshot.png"><img src="../images_small/alerts_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -33,5 +33,7 @@ Links:
   .. raw:: html
   
     <a target="_blank" href="http://example.net">Example</a>
-* Module: alerts
+    
+* Module: warning
+
 

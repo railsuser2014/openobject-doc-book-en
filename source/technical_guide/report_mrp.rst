@@ -1,6 +1,6 @@
 
 .. module:: report_mrp
-    :synopsis: MRP Management - Reporting
+    :synopsis: MRP Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ MRP Management - Reporting (*report_mrp*)
 :Module: report_mrp
 :Name: MRP Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_mrp
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

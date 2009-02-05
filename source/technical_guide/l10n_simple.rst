@@ -1,6 +1,6 @@
 
 .. module:: l10n_simple
-    :synopsis: Simple Account Chart
+    :synopsis: Simple Account Chart 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Simple Account Chart (*l10n_simple*)
 :Module: l10n_simple
 :Name: Simple Account Chart
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_simple
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

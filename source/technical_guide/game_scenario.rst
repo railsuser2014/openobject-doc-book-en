@@ -1,6 +1,6 @@
 
 .. module:: game_scenario
-    :synopsis: Scenario of games
+    :synopsis: Scenario of games 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Scenario of games (*game_scenario*)
 :Module: game_scenario
 :Name: Scenario of games
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: game_scenario
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

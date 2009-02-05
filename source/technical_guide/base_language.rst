@@ -1,6 +1,6 @@
 
 .. module:: base_language
-    :synopsis: Base Language
+    :synopsis: Base Language 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base Language (*base_language*)
 :Module: base_language
 :Name: Base Language
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_language
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

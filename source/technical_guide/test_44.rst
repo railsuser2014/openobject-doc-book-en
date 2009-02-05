@@ -1,6 +1,6 @@
 
 .. module:: test_44
-    :synopsis: Test New Features
+    :synopsis: Test New Features 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Test New Features (*test_44*)
 :Module: test_44
 :Name: Test New Features
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: test_44
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

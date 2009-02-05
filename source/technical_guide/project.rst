@@ -1,6 +1,6 @@
 
 .. module:: project
-    :synopsis: Project Management
+    :synopsis: Project Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Project Management (*project*)
 :Module: project
 :Name: Project Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: project
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

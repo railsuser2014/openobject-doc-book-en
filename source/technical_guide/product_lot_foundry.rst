@@ -1,6 +1,6 @@
 
 .. module:: product_lot_foundry
-    :synopsis: Products Lot Foundry
+    :synopsis: Products Lot Foundry 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Products Lot Foundry (*product_lot_foundry*)
 :Module: product_lot_foundry
 :Name: Products Lot Foundry
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_lot_foundry
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

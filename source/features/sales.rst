@@ -10,7 +10,7 @@ a setting in each individual order.
 
 .. raw:: html
 
-   <a target="_blank" href="images/sales_screenshot.png"><img src="images_small/sales_screenshot.png" class="screenshot" /></a>
+    <a target="_blank" href="../images/sales_screenshot.png"><img src="../images_small/sales_screenshot.png" class="screenshot" /></a>
 
 Keypoints:
 ----------
@@ -31,5 +31,4 @@ Integration benefits:
 Links:
 ------
 
-* Module: Sales Management
-
+* Module: sale

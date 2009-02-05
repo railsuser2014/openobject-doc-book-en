@@ -1,6 +1,6 @@
 
 .. module:: report_analytic
-    :synopsis: Analytic Account Reporting
+    :synopsis: Analytic Account Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Analytic Account Reporting (*report_analytic*)
 :Module: report_analytic
 :Name: Analytic Account Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_analytic
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

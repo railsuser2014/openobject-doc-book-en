@@ -1,6 +1,6 @@
 
 .. module:: warning
-    :synopsis: Module for Warnings form onchange Event
+    :synopsis: Module for Warnings form onchange Event (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Module for Warnings form onchange Event (*warning*)
 :Module: warning
 :Name: Module for Warnings form onchange Event
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: warning
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

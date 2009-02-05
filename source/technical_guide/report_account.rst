@@ -1,6 +1,6 @@
 
 .. module:: report_account
-    :synopsis: Account Reporting - Reporting
+    :synopsis: Account Reporting - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Reporting - Reporting (*report_account*)
 :Module: report_account
 :Name: Account Reporting - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_account
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: cci_account
-    :synopsis: CCI Account
+    :synopsis: CCI Account 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Account (*cci_account*)
 :Module: cci_account
 :Name: CCI Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_account
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

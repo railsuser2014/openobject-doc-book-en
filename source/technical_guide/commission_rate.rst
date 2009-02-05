@@ -1,6 +1,6 @@
 
 .. module:: commission_rate
-    :synopsis: Sale Agent Information
+    :synopsis: Sale Agent Information 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale Agent Information (*commission_rate*)
 :Module: commission_rate
 :Name: Sale Agent Information
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: commission_rate
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

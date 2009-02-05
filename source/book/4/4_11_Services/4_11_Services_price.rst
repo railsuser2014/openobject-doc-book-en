@@ -1,7 +1,3 @@
-.. index::
-   single: Price management
-.. 
-
 
 .. index::
    single: Refund
@@ -87,6 +83,9 @@ Then indicate the  *Start date*  and  *End date*  of this version. The fields ar
 .. tip::   **Note**  **  *Automatically updating the sale pricelist* 
 
 	It's possible to make any sale pricelist depend on one of the other pricelists. So you can decide to make your sale pricelist depend on your supplier's purchase pricelist, to which you add a margin. The prices are automatically calculated as a function of the purchase price and need no further manual adjustment.
+
+
+.. index:: Price
 
 Rules for calculating price
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -303,6 +302,9 @@ To do this, use the menu  *Products > Configuration > Price Types* . Then create
 Once you've done this you can make a dependency on the new type of price in the pricelist.
 
  *Weight*  *Volume* 
+
+.. index::
+   single: Multi-currency
 
 Managing the price in several currencies
 -----------------------------------------

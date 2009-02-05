@@ -1,6 +1,6 @@
 
 .. module:: l10n_fr_tva_reel
-    :synopsis: France - Régime réel de TVA
+    :synopsis: France - Régime réel de TVA 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ France - Régime réel de TVA (*l10n_fr_tva_reel*)
 :Module: l10n_fr_tva_reel
 :Name: France - Régime réel de TVA
 :Version: False
+:Author: Simon JAILLET - CrysaLEAD
 :Directory: l10n_fr_tva_reel
 :Web: http://www.crysalead.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

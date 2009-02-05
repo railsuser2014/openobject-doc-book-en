@@ -1,6 +1,6 @@
 
 .. module:: hr_holidays_request
-    :synopsis: HR Holiday Request
+    :synopsis: HR Holiday Request 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ HR Holiday Request (*hr_holidays_request*)
 :Module: hr_holidays_request
 :Name: HR Holiday Request
 :Version: 5.0.1.0
+:Author: Tiny & Axelor
 :Directory: hr_holidays_request
 :Web: http://www.axelor.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

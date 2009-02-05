@@ -1,6 +1,6 @@
 
 .. module:: project_retro_planning
-    :synopsis: Project Retro planning
+    :synopsis: Project Retro planning (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Project Retro planning (*project_retro_planning*)
 :Module: project_retro_planning
 :Name: Project Retro planning
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: project_retro_planning
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

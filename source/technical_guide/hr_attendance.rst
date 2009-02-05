@@ -1,6 +1,6 @@
 
 .. module:: hr_attendance
-    :synopsis: Attendances Of Employees
+    :synopsis: Attendances Of Employees (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Attendances Of Employees (*hr_attendance*)
 :Module: hr_attendance
 :Name: Attendances Of Employees
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: hr_attendance
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

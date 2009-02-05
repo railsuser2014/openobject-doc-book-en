@@ -1,6 +1,6 @@
 
 .. module:: report_crm
-    :synopsis: CRM Management - Reporting
+    :synopsis: CRM Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CRM Management - Reporting (*report_crm*)
 :Module: report_crm
 :Name: CRM Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_crm
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

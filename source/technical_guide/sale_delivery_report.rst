@@ -1,6 +1,6 @@
 
 .. module:: sale_delivery_report
-    :synopsis: Print Delivery Order
+    :synopsis: Print Delivery Order 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Print Delivery Order (*sale_delivery_report*)
 :Module: sale_delivery_report
 :Name: Print Delivery Order
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_delivery_report
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

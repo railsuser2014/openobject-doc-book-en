@@ -1,6 +1,6 @@
 
 .. module:: stock
-    :synopsis: Stock Management
+    :synopsis: Stock Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Stock Management (*stock*)
 :Module: stock
 :Name: Stock Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: stock
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

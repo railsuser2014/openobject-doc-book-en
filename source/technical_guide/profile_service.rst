@@ -1,6 +1,6 @@
 
 .. module:: profile_service
-    :synopsis: Service company profile
+    :synopsis: Service company profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Service company profile (*profile_service*)
 :Module: profile_service
 :Name: Service company profile
 :Version: False
+:Author: Tiny
 :Directory: profile_service
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

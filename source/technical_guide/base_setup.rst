@@ -1,6 +1,6 @@
 
 .. module:: base_setup
-    :synopsis: Base Setup
+    :synopsis: Base Setup (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base Setup (*base_setup*)
 :Module: base_setup
 :Name: Base Setup
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_setup
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: product_margin
-    :synopsis: Margins in Product
+    :synopsis: Margins in Product (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Margins in Product (*product_margin*)
 :Module: product_margin
 :Name: Margins in Product
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_margin
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

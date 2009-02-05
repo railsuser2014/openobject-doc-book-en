@@ -1,6 +1,6 @@
 
 .. module:: sale_payment
-    :synopsis: Sale payment type
+    :synopsis: Sale payment type 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sale payment type (*sale_payment*)
 :Module: sale_payment
 :Name: Sale payment type
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: sale_payment
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

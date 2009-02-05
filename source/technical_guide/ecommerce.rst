@@ -1,6 +1,6 @@
 
 .. module:: ecommerce
-    :synopsis: E-Commerce
+    :synopsis: E-Commerce 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ E-Commerce (*ecommerce*)
 :Module: ecommerce
 :Name: E-Commerce
 :Version: 5.0.1.0
+:Author: e-tiny
 :Directory: ecommerce
 :Web: http://www.etiny.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: account_voucher
-    :synopsis: Accounting - Voucher Management
+    :synopsis: Accounting - Voucher Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting - Voucher Management (*account_voucher*)
 :Module: account_voucher
 :Name: Accounting - Voucher Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_voucher
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: sale_advertising
-    :synopsis: Sales: Avertising Sales
+    :synopsis: Sales: Avertising Sales 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales: Avertising Sales (*sale_advertising*)
 :Module: sale_advertising
 :Name: Sales: Avertising Sales
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: sale_advertising
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

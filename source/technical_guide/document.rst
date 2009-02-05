@@ -1,6 +1,6 @@
 
 .. module:: document
-    :synopsis: Integrated Document Management System
+    :synopsis: Integrated Document Management System (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Integrated Document Management System (*document*)
 :Module: document
 :Name: Integrated Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

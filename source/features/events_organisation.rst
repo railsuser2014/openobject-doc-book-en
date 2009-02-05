@@ -9,7 +9,7 @@ registrations directly by email.
 
 .. raw:: html
  
- <a target="_blank" href="images/events_organisation_screenshot.png"><img src="images_small/events_organisation_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/events_organisation_screenshot.png"><img src="../images_small/events_organisation_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -28,5 +28,5 @@ Integration Benefits:
 Links:
 ------
 
-* Modules: events
+* Modules: event
 

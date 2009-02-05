@@ -1,6 +1,6 @@
 
 .. module:: crm
-    :synopsis: Customer & Supplier Relationship Management
+    :synopsis: Customer & Supplier Relationship Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Customer & Supplier Relationship Management (*crm*)
 :Module: crm
 :Name: Customer & Supplier Relationship Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: crm
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

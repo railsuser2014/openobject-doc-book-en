@@ -1,6 +1,6 @@
 
 .. module:: multi_company
-    :synopsis: Multi company base module
+    :synopsis: Multi company base module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multi company base module (*multi_company*)
 :Module: multi_company
 :Name: Multi company base module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

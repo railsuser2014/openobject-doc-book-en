@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_analysis
-    :synopsis: report_account_analytic
+    :synopsis: report_account_analytic (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ report_account_analytic (*account_analytic_analysis*)
 :Module: account_analytic_analysis
 :Name: report_account_analytic
 :Version: 5.0.1.1
+:Author: Camptocamp
 :Directory: account_analytic_analysis
 :Web: http://www.camptocamp.com/
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

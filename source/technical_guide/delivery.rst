@@ -1,6 +1,6 @@
 
 .. module:: delivery
-    :synopsis: Carriers and deliveries
+    :synopsis: Carriers and deliveries (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Carriers and deliveries (*delivery*)
 :Module: delivery
 :Name: Carriers and deliveries
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: delivery
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

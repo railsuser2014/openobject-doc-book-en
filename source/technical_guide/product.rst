@@ -1,6 +1,6 @@
 
 .. module:: product
-    :synopsis: Products & Pricelists
+    :synopsis: Products & Pricelists (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Products & Pricelists (*product*)
 :Module: product
 :Name: Products & Pricelists
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: product
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

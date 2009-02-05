@@ -7,7 +7,7 @@ automatic invoicing based on tasks achieved, profitability reports, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/financial_management_screenshot.png"><img src="images_small/financial_management_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/financial_management_screenshot.png"><img src="../images_small/financial_management_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -25,7 +25,8 @@ Integration Benefits:
 
 Links:
 
-*
+* Module : profile_accounting
+
   .. raw:: html
   
     <a target="_blank" href="http://example.net">Example</a>

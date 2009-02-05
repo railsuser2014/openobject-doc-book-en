@@ -1,6 +1,6 @@
 
 .. module:: mrp_jit
-    :synopsis: MRP JIT
+    :synopsis: MRP JIT (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ MRP JIT (*mrp_jit*)
 :Module: mrp_jit
 :Name: MRP JIT
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: mrp_jit
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: hotel_housekeeping
-    :synopsis: Hotel Housekeeping
+    :synopsis: Hotel Housekeeping 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Hotel Housekeeping (*hotel_housekeeping*)
 :Module: hotel_housekeeping
 :Name: Hotel Housekeeping
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel_housekeeping
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

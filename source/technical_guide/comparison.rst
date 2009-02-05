@@ -1,6 +1,6 @@
 
 .. module:: comparison
-    :synopsis: ERP Comparisons
+    :synopsis: ERP Comparisons 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ ERP Comparisons (*comparison*)
 :Module: comparison
 :Name: ERP Comparisons
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: comparison
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

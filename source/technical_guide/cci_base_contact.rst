@@ -1,6 +1,6 @@
 
 .. module:: cci_base_contact
-    :synopsis: CCI Base Contact
+    :synopsis: CCI Base Contact 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Base Contact (*cci_base_contact*)
 :Module: cci_base_contact
 :Name: CCI Base Contact
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_base_contact
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

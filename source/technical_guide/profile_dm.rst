@@ -1,6 +1,6 @@
 
 .. module:: profile_dm
-    :synopsis: Direct Marketing profile
+    :synopsis: Direct Marketing profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Direct Marketing profile (*profile_dm*)
 :Module: profile_dm
 :Name: Direct Marketing profile
 :Version: False
+:Author: Tiny
 :Directory: profile_dm
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

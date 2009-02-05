@@ -1,6 +1,6 @@
 
 .. module:: document_ics
-    :synopsis: Support for iCal based on Document Management System
+    :synopsis: Support for iCal based on Document Management System (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Support for iCal based on Document Management System (*document_ics*)
 :Module: document_ics
 :Name: Support for iCal based on Document Management System
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: document_ics
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

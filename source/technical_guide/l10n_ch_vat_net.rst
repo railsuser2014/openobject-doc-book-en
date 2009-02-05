@@ -1,6 +1,6 @@
 
 .. module:: l10n_ch_vat_net
-    :synopsis: Switzerland - VAT Net
+    :synopsis: Switzerland - VAT Net 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Switzerland - VAT Net (*l10n_ch_vat_net*)
 :Module: l10n_ch_vat_net
 :Name: Switzerland - VAT Net
 :Version: False
+:Author: Tiny
 :Directory: l10n_ch_vat_net
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

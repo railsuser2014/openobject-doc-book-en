@@ -1,6 +1,6 @@
 
 .. module:: product_size
-    :synopsis: Sizes of lots (width, length, thickness)
+    :synopsis: Sizes of lots (width, length, thickness) 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sizes of lots (width, length, thickness) (*product_size*)
 :Module: product_size
 :Name: Sizes of lots (width, length, thickness)
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_size
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

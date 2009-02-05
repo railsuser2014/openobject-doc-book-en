@@ -1,6 +1,6 @@
 
 .. module:: esale_joomla
-    :synopsis: eSale Interface - Joomla
+    :synopsis: eSale Interface - Joomla 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ eSale Interface - Joomla (*esale_joomla*)
 :Module: esale_joomla
 :Name: eSale Interface - Joomla
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: esale_joomla
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

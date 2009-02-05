@@ -1,6 +1,6 @@
 
 .. module:: sale_supplier_direct_delivery
-    :synopsis: Automates direct delivery between a supplier and a customer
+    :synopsis: Automates direct delivery between a supplier and a customer 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Automates direct delivery between a supplier and a customer (*sale_supplier_dire
 :Module: sale_supplier_direct_delivery
 :Name: Automates direct delivery between a supplier and a customer
 :Version: 5.0.0.9
+:Author: Smile.fr for Loyalty Expert
 :Directory: sale_supplier_direct_delivery
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: account_4_2_l10n_ch
-    :synopsis: Accounting for l10n_ch ion TinyERP 4.2
+    :synopsis: Accounting for l10n_ch ion TinyERP 4.2 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 :Module: account_4_2_l10n_ch
 :Name: Accounting for l10n_ch ion TinyERP 4.2
 :Version: False
+:Author: Tiny
 :Directory: account_4_2_l10n_ch
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

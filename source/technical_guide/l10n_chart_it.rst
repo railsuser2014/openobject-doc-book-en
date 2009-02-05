@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_it
-    :synopsis: Italy - Chart of Accounts
+    :synopsis: Italy - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Italy - Chart of Accounts (*l10n_chart_it*)
 :Module: l10n_chart_it
 :Name: Italy - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_it
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

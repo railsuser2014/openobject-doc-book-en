@@ -1,6 +1,6 @@
 
 .. module:: wiki
-    :synopsis: Document Management - Wiki
+    :synopsis: Document Management - Wiki (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Document Management - Wiki (*wiki*)
 :Module: wiki
 :Name: Document Management - Wiki
 :Version: 5.0.1.0
+:Author: Tiny & Axelor
 :Directory: wiki
 :Web: http://openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

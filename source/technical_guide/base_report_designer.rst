@@ -1,6 +1,6 @@
 
 .. module:: base_report_designer
-    :synopsis: Report designer interface module
+    :synopsis: Report designer interface module (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Report designer interface module (*base_report_designer*)
 :Module: base_report_designer
 :Name: Report designer interface module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: base_report_designer
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

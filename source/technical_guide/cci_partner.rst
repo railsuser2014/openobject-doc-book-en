@@ -1,6 +1,6 @@
 
 .. module:: cci_partner
-    :synopsis: CCI Partner
+    :synopsis: CCI Partner 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Partner (*cci_partner*)
 :Module: cci_partner
 :Name: CCI Partner
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_partner
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

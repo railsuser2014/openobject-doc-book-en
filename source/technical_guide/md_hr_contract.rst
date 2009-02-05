@@ -1,6 +1,6 @@
 
 .. module:: md_hr_contract
-    :synopsis: Pilot Human Resource Management
+    :synopsis: Pilot Human Resource Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Pilot Human Resource Management (*md_hr_contract*)
 :Module: md_hr_contract
 :Name: Pilot Human Resource Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: md_hr_contract
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,7 +8,7 @@ automatic invoicing, cost control using timesheets, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/auction_screenshot.png"><img src="images_small/auction_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/auction_screenshot.png"><img src="../images_small/auction_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -30,5 +30,6 @@ Links:
   .. raw:: html
   
     <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>
-* Module: profile_auction
+    
+* Module: profile_auction,auction
 

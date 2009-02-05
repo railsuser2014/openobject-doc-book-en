@@ -1,6 +1,6 @@
 
 .. module:: mrp_repair
-    :synopsis: Products Repairs Module
+    :synopsis: Products Repairs Module (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Products Repairs Module (*mrp_repair*)
 :Module: mrp_repair
 :Name: Products Repairs Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: mrp_repair
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

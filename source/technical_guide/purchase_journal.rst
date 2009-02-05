@@ -1,6 +1,6 @@
 
 .. module:: purchase_journal
-    :synopsis: Managing sales and deliveries by journal
+    :synopsis: Managing sales and deliveries by journal 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Managing sales and deliveries by journal (*purchase_journal*)
 :Module: purchase_journal
 :Name: Managing sales and deliveries by journal
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_journal
 :Web: http://www.tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

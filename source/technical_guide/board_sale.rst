@@ -1,6 +1,6 @@
 
 .. module:: board_sale
-    :synopsis: Dashboard for sales
+    :synopsis: Dashboard for sales (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Dashboard for sales (*board_sale*)
 :Module: board_sale
 :Name: Dashboard for sales
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_sale
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

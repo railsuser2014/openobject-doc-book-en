@@ -1,6 +1,6 @@
 
 .. module:: purchase
-    :synopsis: Purchase Management
+    :synopsis: Purchase Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Purchase Management (*purchase*)
 :Module: purchase
 :Name: Purchase Management
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: purchase
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

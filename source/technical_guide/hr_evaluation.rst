@@ -1,6 +1,6 @@
 
 .. module:: hr_evaluation
-    :synopsis: Human Resources Evaluation
+    :synopsis: Human Resources Evaluation 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Human Resources Evaluation (*hr_evaluation*)
 :Module: hr_evaluation
 :Name: Human Resources Evaluation
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: hr_evaluation
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

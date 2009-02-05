@@ -1,6 +1,6 @@
 
 .. module:: flagey
-    :synopsis: Auction module - Flagey Customs
+    :synopsis: Auction module - Flagey Customs 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Auction module - Flagey Customs (*flagey*)
 :Module: flagey
 :Name: Auction module - Flagey Customs
 :Version: 5.0.1.0
+:Author: Unknown
 :Directory: flagey
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

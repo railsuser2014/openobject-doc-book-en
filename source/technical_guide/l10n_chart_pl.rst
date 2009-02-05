@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_pl
-    :synopsis: Poland - Chart of Accounts
+    :synopsis: Poland - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Poland - Chart of Accounts (*l10n_chart_pl*)
 :Module: l10n_chart_pl
 :Name: Poland - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_pl
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

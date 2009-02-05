@@ -1,6 +1,6 @@
 
 .. module:: hr_contract_timesheet
-    :synopsis: Human Resources Timesheets on contracts
+    :synopsis: Human Resources Timesheets on contracts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 :Module: hr_contract_timesheet
 :Name: Human Resources Timesheets on contracts
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: hr_contract_timesheet
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

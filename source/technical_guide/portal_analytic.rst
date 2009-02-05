@@ -1,6 +1,6 @@
 
 .. module:: portal_analytic
-    :synopsis: Portal Management - Analytic Entries
+    :synopsis: Portal Management - Analytic Entries 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Portal Management - Analytic Entries (*portal_analytic*)
 :Module: portal_analytic
 :Name: Portal Management - Analytic Entries
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: portal_analytic
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

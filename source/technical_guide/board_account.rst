@@ -1,6 +1,6 @@
 
 .. module:: board_account
-    :synopsis: Board for accountant
+    :synopsis: Board for accountant (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Board for accountant (*board_account*)
 :Module: board_account
 :Name: Board for accountant
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_account
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

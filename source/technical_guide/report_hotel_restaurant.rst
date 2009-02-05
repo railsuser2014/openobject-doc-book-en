@@ -1,6 +1,6 @@
 
 .. module:: report_hotel_restaurant
-    :synopsis: Restaurant Management - Reporting
+    :synopsis: Restaurant Management - Reporting 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Restaurant Management - Reporting (*report_hotel_restaurant*)
 :Module: report_hotel_restaurant
 :Name: Restaurant Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_hotel_restaurant
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

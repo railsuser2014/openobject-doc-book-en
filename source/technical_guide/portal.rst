@@ -1,6 +1,6 @@
 
 .. module:: portal
-    :synopsis: Portal Management
+    :synopsis: Portal Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Portal Management (*portal*)
 :Module: portal
 :Name: Portal Management
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: portal
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

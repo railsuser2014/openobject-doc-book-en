@@ -1,6 +1,6 @@
 
 .. module:: account_l10nbe_domiciliation
-    :synopsis: Account l10nbe Domiciliation
+    :synopsis: Account l10nbe Domiciliation 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)
 :Module: account_l10nbe_domiciliation
 :Name: Account l10nbe Domiciliation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_l10nbe_domiciliation
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

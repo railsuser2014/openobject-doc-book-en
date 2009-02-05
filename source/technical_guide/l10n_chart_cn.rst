@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_cn
-    :synopsis: China - Chart of Accounts
+    :synopsis: China - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ China - Chart of Accounts (*l10n_chart_cn*)
 :Module: l10n_chart_cn
 :Name: China - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_cn
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: purchase_tax_include
-    :synopsis: Purchases with taxes included
+    :synopsis: Purchases with taxes included 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Purchases with taxes included (*purchase_tax_include*)
 :Module: purchase_tax_include
 :Name: Purchases with taxes included
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: purchase_tax_include
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

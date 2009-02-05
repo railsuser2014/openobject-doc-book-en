@@ -1,6 +1,6 @@
 
 .. module:: cci_crm
-    :synopsis: CCI CRM
+    :synopsis: CCI CRM 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI CRM (*cci_crm*)
 :Module: cci_crm
 :Name: CCI CRM
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_crm
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

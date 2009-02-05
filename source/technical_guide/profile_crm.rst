@@ -1,6 +1,6 @@
 
 .. module:: profile_crm
-    :synopsis: CRM profile
+    :synopsis: CRM profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CRM profile (*profile_crm*)
 :Module: profile_crm
 :Name: CRM profile
 :Version: False
+:Author: Tiny
 :Directory: profile_crm
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

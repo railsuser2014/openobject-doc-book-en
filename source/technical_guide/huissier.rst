@@ -1,6 +1,6 @@
 
 .. module:: huissier
-    :synopsis: Tiny ERP Huissiers
+    :synopsis: Tiny ERP Huissiers 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Tiny ERP Huissiers (*huissier*)
 :Module: huissier
 :Name: Tiny ERP Huissiers
 :Version: False
+:Author: Tiny
 :Directory: huissier
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: travel
-    :synopsis: Travel
+    :synopsis: Travel 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Travel (*travel*)
 :Module: travel
 :Name: Travel
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: travel
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: board
-    :synopsis: Dashboard main module
+    :synopsis: Dashboard main module (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Dashboard main module (*board*)
 :Module: board
 :Name: Dashboard main module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

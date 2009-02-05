@@ -1,6 +1,6 @@
 
 .. module:: account_asset
-    :synopsis: Asset management
+    :synopsis: Asset management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Asset management (*account_asset*)
 :Module: account_asset
 :Name: Asset management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_asset
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

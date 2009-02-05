@@ -1,6 +1,6 @@
 
 .. module:: account_invoice_layout
-    :synopsis: account_invoice_layout
+    :synopsis: account_invoice_layout (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ account_invoice_layout (*account_invoice_layout*)
 :Module: account_invoice_layout
 :Name: account_invoice_layout
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_invoice_layout
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

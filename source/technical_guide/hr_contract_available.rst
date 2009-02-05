@@ -1,6 +1,6 @@
 
 .. module:: hr_contract_available
-    :synopsis: Human Resources Contracts
+    :synopsis: Human Resources Contracts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Human Resources Contracts (*hr_contract_available*)
 :Module: hr_contract_available
 :Name: Human Resources Contracts
 :Version: False
+:Author: Tiny
 :Directory: hr_contract_available
 :Web: http://tinyerp.com/module_hr.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

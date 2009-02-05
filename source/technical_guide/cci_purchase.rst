@@ -1,6 +1,6 @@
 
 .. module:: cci_purchase
-    :synopsis: CCI Purchase
+    :synopsis: CCI Purchase 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Purchase (*cci_purchase*)
 :Module: cci_purchase
 :Name: CCI Purchase
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_purchase
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: report_sale
-    :synopsis: Sales Management - Reporting
+    :synopsis: Sales Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales Management - Reporting (*report_sale*)
 :Module: report_sale
 :Name: Sales Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_sale
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

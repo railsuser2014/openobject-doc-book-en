@@ -1,6 +1,6 @@
 
 .. module:: base_create_menu
-    :synopsis: Menu Wizard 
+    :synopsis: Menu Wizard  
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Menu Wizard  (*base_create_menu*)
 :Module: base_create_menu
 :Name: Menu Wizard 
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_create_menu
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

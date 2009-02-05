@@ -9,7 +9,7 @@ Leads, Cases, Contacts and more.
 
 .. raw:: html
  
- <a target="_blank" href="images/outlook_screenshot.png"><img src="images_small/outlook_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/outlook_screenshot.png"><img src="../images_small/outlook_screenshot.png" class="screenshot" /></a>
 
 Key points:
 -----------
@@ -25,5 +25,9 @@ Integration benefits:
 Links:
 ------
 
-* Modules:
+*
+  .. raw:: html
+  
+    <a target="_blank" href="http://openerp.com/Demonstration.php?title=Outlook%20Plugin%20Demo&amp;demo=outlook_plugin_demo">Screencast</a>
+
 

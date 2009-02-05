@@ -1,6 +1,6 @@
 
 .. module:: demo_setup
-    :synopsis: Online Demo Setup Module
+    :synopsis: Online Demo Setup Module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Online Demo Setup Module (*demo_setup*)
 :Module: demo_setup
 :Name: Online Demo Setup Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: demo_setup
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

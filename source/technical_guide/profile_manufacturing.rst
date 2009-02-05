@@ -1,6 +1,6 @@
 
 .. module:: profile_manufacturing
-    :synopsis: Manufacturing industry profile
+    :synopsis: Manufacturing industry profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Manufacturing industry profile (*profile_manufacturing*)
 :Module: profile_manufacturing
 :Name: Manufacturing industry profile
 :Version: False
+:Author: Tiny
 :Directory: profile_manufacturing
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

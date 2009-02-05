@@ -1,6 +1,6 @@
 
 .. module:: account_payment_extension
-    :synopsis: Account Payment Extension
+    :synopsis: Account Payment Extension 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Payment Extension (*account_payment_extension*)
 :Module: account_payment_extension
 :Name: Account Payment Extension
 :Version: 5.0.1.1
+:Author: Zikzakmedia SL
 :Directory: account_payment_extension
 :Web: http://www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

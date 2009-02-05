@@ -372,6 +372,9 @@ Open ERP automatically completes the  *Date Invoiced*  and the accounting perio
 
 	The dates are shown in the document you created in the accounting system. They're used for calculating due dates.
 
+.. index::
+   single: Due Date
+
 The two pieces of information don't have to have the same date. Suppose for example that you receive an invoice on the 5th January but it's dated 31st December in the previous year by your supplier. In this case you can code it into the January accounting period and put the invoice date as 31st December. The due date will be based on the 31st December data, but the invoice will be recognized in the current fiscal year for the tax declaration.
 
 You can find that the amounts don't correspond with what your supplier has given you on paper for reasons that can include:

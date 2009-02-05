@@ -1,6 +1,6 @@
 
 .. module:: account_analytic_package
-    :synopsis: account_analytic_package
+    :synopsis: account_analytic_package 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ account_analytic_package (*account_analytic_package*)
 :Module: account_analytic_package
 :Name: account_analytic_package
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_analytic_package
 :Web: http://www.tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

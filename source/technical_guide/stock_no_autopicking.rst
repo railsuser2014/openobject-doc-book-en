@@ -1,6 +1,6 @@
 
 .. module:: stock_no_autopicking
-    :synopsis: Stock No Auto-Picking
+    :synopsis: Stock No Auto-Picking (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Stock No Auto-Picking (*stock_no_autopicking*)
 :Module: stock_no_autopicking
 :Name: Stock No Auto-Picking
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: stock_no_autopicking
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_nl
-    :synopsis: Netherlands - Chart of Accounts
+    :synopsis: Netherlands - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Netherlands - Chart of Accounts (*l10n_chart_nl*)
 :Module: l10n_chart_nl
 :Name: Netherlands - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_nl
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

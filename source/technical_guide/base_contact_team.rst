@@ -1,6 +1,6 @@
 
 .. module:: base_contact_team
-    :synopsis: Base Contact Team
+    :synopsis: Base Contact Team 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base Contact Team (*base_contact_team*)
 :Module: base_contact_team
 :Name: Base Contact Team
 :Version: 5.0.0.1
+:Author: Tiny SPRL
 :Directory: base_contact_team
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

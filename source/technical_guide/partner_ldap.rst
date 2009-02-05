@@ -1,6 +1,6 @@
 
 .. module:: partner_ldap
-    :synopsis: Partner extension to synchronize TinyERP with ldap
+    :synopsis: Partner extension to synchronize TinyERP with ldap 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 :Module: partner_ldap
 :Name: Partner extension to synchronize TinyERP with ldap
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: partner_ldap
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

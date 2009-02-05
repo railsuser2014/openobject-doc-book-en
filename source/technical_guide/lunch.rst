@@ -1,6 +1,6 @@
 
 .. module:: lunch
-    :synopsis: Lunch Module
+    :synopsis: Lunch Module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Lunch Module (*lunch*)
 :Module: lunch
 :Name: Lunch Module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: lunch
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

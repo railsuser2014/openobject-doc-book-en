@@ -7,7 +7,7 @@ etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/point_of_sales_screenshot.png"><img src="images_small/point_of_sales_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/point_of_sales_screenshot.png"><img src="../images_small/point_of_sales_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -28,4 +28,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module:  point_of_sale

@@ -1,6 +1,6 @@
 
 .. module:: report_purchase
-    :synopsis: Purchase Management - Reporting
+    :synopsis: Purchase Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Purchase Management - Reporting (*report_purchase*)
 :Module: report_purchase
 :Name: Purchase Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_purchase
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

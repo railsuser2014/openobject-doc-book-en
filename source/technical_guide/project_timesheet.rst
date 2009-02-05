@@ -1,6 +1,6 @@
 
 .. module:: project_timesheet
-    :synopsis: Project Timesheet
+    :synopsis: Project Timesheet (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Project Timesheet (*project_timesheet*)
 :Module: project_timesheet
 :Name: Project Timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: project_timesheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

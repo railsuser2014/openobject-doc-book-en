@@ -8,7 +8,7 @@ embassy folders, etc.
 
 .. raw:: html
  
- <a target="_blank" href="images/chamber_of_commerce_screenshot.png"><img src="images_small/chamber_of_commerce_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/chamber_of_commerce_screenshot.png"><img src="../images_small/chamber_of_commerce_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -27,7 +27,6 @@ Integration Benefits:
 Links:
 ------
 
-*
-  .. raw:: html
+*  .. raw:: html
   
     <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>

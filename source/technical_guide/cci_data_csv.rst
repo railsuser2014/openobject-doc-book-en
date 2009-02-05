@@ -1,6 +1,6 @@
 
 .. module:: cci_data_csv
-    :synopsis: cci Data 1
+    :synopsis: cci Data 1 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ cci Data 1 (*cci_data_csv*)
 :Module: cci_data_csv
 :Name: cci Data 1
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_data_csv
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: edi
-    :synopsis: EDI
+    :synopsis: EDI 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ EDI (*edi*)
 :Module: edi
 :Name: EDI
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: edi
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: product_visible_discount
-    :synopsis: Visible Discount Module
+    :synopsis: Visible Discount Module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Visible Discount Module (*product_visible_discount*)
 :Module: product_visible_discount
 :Name: Visible Discount Module
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_visible_discount
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: discount_campaign
-    :synopsis: Discount on Marketing Campaigns
+    :synopsis: Discount on Marketing Campaigns 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Discount on Marketing Campaigns (*discount_campaign*)
 :Module: discount_campaign
 :Name: Discount on Marketing Campaigns
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: discount_campaign
 :Web: http://tinyerp.com/module_crm_marketing.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

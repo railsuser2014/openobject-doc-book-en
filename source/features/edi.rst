@@ -11,7 +11,7 @@ comapnies.
 
 .. raw:: html
  
- <a target="_blank" href="images/edi_screenshot.png"><img src="images_small/edi_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/edi_screenshot.png"><img src="../images_small/edi_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -28,7 +28,8 @@ On module to synchronise different documents:
 Links:
 ------
 
-*
+* Module : edi
+
   .. raw:: html
   
     <a target="_blank" href="http://www.openobject.com">Open Object</a>

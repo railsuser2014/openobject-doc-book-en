@@ -1,6 +1,6 @@
 
 .. module:: hr_timesheet_sheet
-    :synopsis: Timesheets
+    :synopsis: Timesheets (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Timesheets (*hr_timesheet_sheet*)
 :Module: hr_timesheet_sheet
 :Name: Timesheets
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hr_timesheet_sheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

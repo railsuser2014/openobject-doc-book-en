@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_at
-    :synopsis: Austria - Chart of Accounts
+    :synopsis: Austria - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Austria - Chart of Accounts (*l10n_chart_at*)
 :Module: l10n_chart_at
 :Name: Austria - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_at
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

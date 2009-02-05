@@ -30,18 +30,7 @@ clean:
 html:
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
-	@echo
-	@echo "Build finished. The HTML pages are in build/html."
-
-html_image_raw_html:
-	mkdir -p build/html build/doctrees
-	$(SPHINXBUILD) -b html -D image_raw_html=1 $(ALLSPHINXOPTS) build/html
-	@echo
-	@echo "Build finished. The HTML pages are in build/html."
-
-html_image_original:
-	mkdir -p build/html build/doctrees
-	$(SPHINXBUILD) -b html -D image_raw_html=0 $(ALLSPHINXOPTS) build/html
+	./copy_images.sh
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 

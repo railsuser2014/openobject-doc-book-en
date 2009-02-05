@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_us_ucoa_ez
-    :synopsis: United States -Chart of Accounts for UCOA EZ Profile
+    :synopsis: United States -Chart of Accounts for UCOA EZ Profile 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ United States -Chart of Accounts for UCOA EZ Profile (*l10n_chart_us_ucoa_ez*)
 :Module: l10n_chart_us_ucoa_ez
 :Name: United States -Chart of Accounts for UCOA EZ Profile
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_us_ucoa_ez
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

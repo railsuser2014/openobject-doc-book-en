@@ -1,6 +1,6 @@
 
 .. module:: hr
-    :synopsis: Human Resources
+    :synopsis: Human Resources (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Human Resources (*hr*)
 :Module: hr
 :Name: Human Resources
 :Version: 5.0.1.1
+:Author: Tiny
 :Directory: hr
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

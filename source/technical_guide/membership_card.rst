@@ -1,6 +1,6 @@
 
 .. module:: membership_card
-    :synopsis: Membership card
+    :synopsis: Membership card 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Membership card (*membership_card*)
 :Module: membership_card
 :Name: Membership card
 :Version: 5.0.1.0
+:Author: Zikzakmedia SL
 :Directory: membership_card
 :Web: http://www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

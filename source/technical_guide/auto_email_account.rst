@@ -1,6 +1,6 @@
 
 .. module:: auto_email_account
-    :synopsis: Email Invoice
+    :synopsis: Email Invoice 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Email Invoice (*auto_email_account*)
 :Module: auto_email_account
 :Name: Email Invoice
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: auto_email_account
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

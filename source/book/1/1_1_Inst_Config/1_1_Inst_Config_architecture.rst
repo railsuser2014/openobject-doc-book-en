@@ -76,7 +76,7 @@ An Open ERP system is formed by three main components:
 
 
 .. index::
-   single: PostgreSQL; Definition
+   single: PostgreSQL
 .. 
 
 .. tip::   **Program**  *PostgreSQL* 

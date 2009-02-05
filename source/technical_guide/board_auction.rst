@@ -1,6 +1,6 @@
 
 .. module:: board_auction
-    :synopsis: Board for Auction
+    :synopsis: Board for Auction (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Board for Auction (*board_auction*)
 :Module: board_auction
 :Name: Board for Auction
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_auction
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: board_document
-    :synopsis: Dashboard for Document Management
+    :synopsis: Dashboard for Document Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Dashboard for Document Management (*board_document*)
 :Module: board_document
 :Name: Dashboard for Document Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_document
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

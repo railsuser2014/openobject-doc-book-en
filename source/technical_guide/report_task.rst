@@ -1,6 +1,6 @@
 
 .. module:: report_task
-    :synopsis: Report on tasks by user for projects
+    :synopsis: Report on tasks by user for projects (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Report on tasks by user for projects (*report_task*)
 :Module: report_task
 :Name: Report on tasks by user for projects
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_task
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

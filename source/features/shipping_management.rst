@@ -6,7 +6,7 @@ to organise efficiently your customer or suppliers shippings.
 
 .. raw:: html
  
- <a target="_blank" href="images/shipping_mgt_screenshot.png"><img src="images_small/shipping_mgt_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/shipping_mgt_screenshot.png"><img src="../images_small/shipping_mgt_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------

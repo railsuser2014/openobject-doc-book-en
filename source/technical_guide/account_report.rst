@@ -1,6 +1,6 @@
 
 .. module:: account_report
-    :synopsis: Reporting for accounting
+    :synopsis: Reporting for accounting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Reporting for accounting (*account_report*)
 :Module: account_report
 :Name: Reporting for accounting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_report
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

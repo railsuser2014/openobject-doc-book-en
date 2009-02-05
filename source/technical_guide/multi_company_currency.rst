@@ -1,6 +1,6 @@
 
 .. module:: multi_company_currency
-    :synopsis: Multi Currency for Multi Company
+    :synopsis: Multi Currency for Multi Company 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multi Currency for Multi Company (*multi_company_currency*)
 :Module: multi_company_currency
 :Name: Multi Currency for Multi Company
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: multi_company_currency
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: segmentation
-    :synopsis: segmentation management
+    :synopsis: segmentation management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ segmentation management (*segmentation*)
 :Module: segmentation
 :Name: segmentation management
 :Version: False
+:Author: Tiny
 :Directory: segmentation
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -8,7 +8,7 @@ by quotation or phone.
 
 .. raw:: html
  
- <a target="_blank" href="images/bookstores_screenshot.png"><img src="images_small/bookstores_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/bookstores_screenshot.png"><img src="../images_small/bookstores_screenshot.png" class="screenshot" /></a>
 
 
 Key Points:
@@ -25,8 +25,8 @@ Integration Benefits:
 
 Links:
 ------
+* Module : bookstore
 
-*
-  .. raw:: html
+*  .. raw:: html
   
     <a target="_blank" href="http://demo.openerp.com/">Demonstration</a>

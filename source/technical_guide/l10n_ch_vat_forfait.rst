@@ -1,6 +1,6 @@
 
 .. module:: l10n_ch_vat_forfait
-    :synopsis: Switzerland - VAT Forfait
+    :synopsis: Switzerland - VAT Forfait 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Switzerland - VAT Forfait (*l10n_ch_vat_forfait*)
 :Module: l10n_ch_vat_forfait
 :Name: Switzerland - VAT Forfait
 :Version: False
+:Author: Tiny
 :Directory: l10n_ch_vat_forfait
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

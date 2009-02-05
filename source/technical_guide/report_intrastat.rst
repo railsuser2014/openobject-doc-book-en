@@ -1,6 +1,6 @@
 
 .. module:: report_intrastat
-    :synopsis: Intrastat Reporting - Reporting
+    :synopsis: Intrastat Reporting - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Intrastat Reporting - Reporting (*report_intrastat*)
 :Module: report_intrastat
 :Name: Intrastat Reporting - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_intrastat
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

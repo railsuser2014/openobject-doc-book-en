@@ -158,8 +158,8 @@ You can use one of these three ordering methods, or combine several of them, dep
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 
-	.. image::  images/service_project_gantt.png
-	   :align: center
+.. image::  images/service_project_gantt.png
+   :align: center
 
 *Gantt plan, calculated for earliest delivery*
 

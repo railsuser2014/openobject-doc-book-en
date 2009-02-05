@@ -1,6 +1,6 @@
 
 .. module:: multi_company_project
-    :synopsis: Multi company Project Management
+    :synopsis: Multi company Project Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multi company Project Management (*multi_company_project*)
 :Module: multi_company_project
 :Name: Multi company Project Management
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company_project
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: account_simulation
-    :synopsis: Accounting simulation journal
+    :synopsis: Accounting simulation journal 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting simulation journal (*account_simulation*)
 :Module: account_simulation
 :Name: Accounting simulation journal
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_simulation
 :Web: http://tinyerp.com/module_account.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: multi_company_account
-    :synopsis: Multi company for accounting module
+    :synopsis: Multi company for accounting module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Multi company for accounting module (*multi_company_account*)
 :Module: multi_company_account
 :Name: Multi company for accounting module
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: multi_company_account
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

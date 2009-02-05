@@ -1,6 +1,6 @@
 
 .. module:: stock_planning
-    :synopsis: Master Procurement Schedule
+    :synopsis: Master Procurement Schedule 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Master Procurement Schedule (*stock_planning*)
 :Module: stock_planning
 :Name: Master Procurement Schedule
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: stock_planning
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

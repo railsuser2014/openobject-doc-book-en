@@ -1,6 +1,6 @@
 
 .. module:: mrp_subproduct
-    :synopsis: MRP Sub Product
+    :synopsis: MRP Sub Product (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ MRP Sub Product (*mrp_subproduct*)
 :Module: mrp_subproduct
 :Name: MRP Sub Product
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: mrp_subproduct
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

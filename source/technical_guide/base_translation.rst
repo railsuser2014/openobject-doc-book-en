@@ -1,6 +1,6 @@
 
 .. module:: base_translation
-    :synopsis: Translation
+    :synopsis: Translation 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Translation (*base_translation*)
 :Module: base_translation
 :Name: Translation
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_translation
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

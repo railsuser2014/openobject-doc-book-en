@@ -1,6 +1,6 @@
 
 .. module:: crm_telemarketing
-    :synopsis: Telemarketing Management
+    :synopsis: Telemarketing Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Telemarketing Management (*crm_telemarketing*)
 :Module: crm_telemarketing
 :Name: Telemarketing Management
 :Version: 5.0.1.0
+:Author: Syleam
 :Directory: crm_telemarketing
 :Web: http://www.syleam.fr
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

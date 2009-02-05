@@ -1,6 +1,6 @@
 
 .. module:: base_module_record
-    :synopsis: Module Recorder
+    :synopsis: Module Recorder (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Module Recorder (*base_module_record*)
 :Module: base_module_record
 :Name: Module Recorder
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_module_record
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

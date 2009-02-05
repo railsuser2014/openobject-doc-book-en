@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_au
-    :synopsis: Australia - Chart of Accounts
+    :synopsis: Australia - Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Australia - Chart of Accounts (*l10n_chart_au*)
 :Module: l10n_chart_au
 :Name: Australia - Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_au
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

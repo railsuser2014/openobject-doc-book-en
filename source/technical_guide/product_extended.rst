@@ -1,6 +1,6 @@
 
 .. module:: product_extended
-    :synopsis: Product extension to track sales and purchases
+    :synopsis: Product extension to track sales and purchases 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Product extension to track sales and purchases (*product_extended*)
 :Module: product_extended
 :Name: Product extension to track sales and purchases
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_extended
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

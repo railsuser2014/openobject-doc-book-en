@@ -1,6 +1,6 @@
 
 .. module:: product_electronic
-    :synopsis: Products Attributes & Manufacturers
+    :synopsis: Products Attributes & Manufacturers 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Products Attributes & Manufacturers (*product_electronic*)
 :Module: product_electronic
 :Name: Products Attributes & Manufacturers
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: product_electronic
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

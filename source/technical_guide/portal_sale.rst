@@ -1,6 +1,6 @@
 
 .. module:: portal_sale
-    :synopsis: Portal Sale Management
+    :synopsis: Portal Sale Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Portal Sale Management (*portal_sale*)
 :Module: portal_sale
 :Name: Portal Sale Management
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: portal_sale
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

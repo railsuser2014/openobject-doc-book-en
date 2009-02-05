@@ -27,7 +27,7 @@ To see the effect of this configuration, connect to the FTP server and go into a
     .. image::  images/document_virtual_ftp.png
        :align: center
 
-*Virtual files about purchase orders through FTP.*
+*Virtual files about sale orders through FTP.*
 
 This system of virtual files is very useful in a lot of situations. For example if you must quickly re-send a quotation to a customer you don't have to open Open ERP, you can just attach the relevant virtual file to your email.
 

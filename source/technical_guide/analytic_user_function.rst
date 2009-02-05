@@ -1,6 +1,6 @@
 
 .. module:: analytic_user_function
-    :synopsis: Analytic User Function
+    :synopsis: Analytic User Function (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Analytic User Function (*analytic_user_function*)
 :Module: analytic_user_function
 :Name: Analytic User Function
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: analytic_user_function
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

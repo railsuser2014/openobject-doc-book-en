@@ -1,6 +1,6 @@
 
 .. module:: report_document
-    :synopsis: Document Management - Reporting
+    :synopsis: Document Management - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Document Management - Reporting (*report_document*)
 :Module: report_document
 :Name: Document Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_document
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

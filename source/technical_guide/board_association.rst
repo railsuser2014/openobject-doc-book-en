@@ -1,6 +1,6 @@
 
 .. module:: board_association
-    :synopsis: Dashboard for Associations
+    :synopsis: Dashboard for Associations (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Dashboard for Associations (*board_association*)
 :Module: board_association
 :Name: Dashboard for Associations
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_association
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

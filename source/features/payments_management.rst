@@ -7,7 +7,7 @@ so that you can assign different responsibilities in the process.
 
 .. raw:: html
  
- <a target="_blank" href="images/payements_management_screenshot.png"><img src="images_small/payements_management_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/payements_management_screenshot.png"><img src="../images_small/payements_management_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
@@ -26,5 +26,5 @@ Integration Benefits:
 Links:
 ------
 
-* Modules:
+* Modules:  account_payment
 

@@ -1,6 +1,6 @@
 
 .. module:: purchase_tender
-    :synopsis: Purchase - Purchase Tender
+    :synopsis: Purchase - Purchase Tender 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Purchase - Purchase Tender (*purchase_tender*)
 :Module: purchase_tender
 :Name: Purchase - Purchase Tender
 :Version: 5.0.0.1
+:Author: Tiny
 :Directory: purchase_tender
 :Web: http://tinyerp.com/
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

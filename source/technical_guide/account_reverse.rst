@@ -1,6 +1,6 @@
 
 .. module:: account_reverse
-    :synopsis: Account Move Reverse
+    :synopsis: Account Move Reverse 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Move Reverse (*account_reverse*)
 :Module: account_reverse
 :Name: Account Move Reverse
 :Version: 5.0.1.0
+:Author: ACYSOS S.L.
 :Directory: account_reverse
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

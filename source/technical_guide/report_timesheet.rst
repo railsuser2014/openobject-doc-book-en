@@ -1,6 +1,6 @@
 
 .. module:: report_timesheet
-    :synopsis: Timesheet - Reporting
+    :synopsis: Timesheet - Reporting (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Timesheet - Reporting (*report_timesheet*)
 :Module: report_timesheet
 :Name: Timesheet - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_timesheet
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

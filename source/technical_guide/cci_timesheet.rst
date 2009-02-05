@@ -1,6 +1,6 @@
 
 .. module:: cci_timesheet
-    :synopsis: CCI Timesheet
+    :synopsis: CCI Timesheet 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ CCI Timesheet (*cci_timesheet*)
 :Module: cci_timesheet
 :Name: CCI Timesheet
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: cci_timesheet
 :Web: http://www.openerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

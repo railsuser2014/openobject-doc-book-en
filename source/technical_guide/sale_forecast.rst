@@ -1,6 +1,6 @@
 
 .. module:: sale_forecast
-    :synopsis: Sales Forecasts, goals and statistics
+    :synopsis: Sales Forecasts, goals and statistics 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Sales Forecasts, goals and statistics (*sale_forecast*)
 :Module: sale_forecast
 :Name: Sales Forecasts, goals and statistics
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: sale_forecast
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

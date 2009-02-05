@@ -1,6 +1,6 @@
 
 .. module:: esale_ez
-    :synopsis: EZ Publish eCommerce Interface
+    :synopsis: EZ Publish eCommerce Interface 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ EZ Publish eCommerce Interface (*esale_ez*)
 :Module: esale_ez
 :Name: EZ Publish eCommerce Interface
 :Version: False
+:Author: Tiny
 :Directory: esale_ez
 :Web: http://tinyerp.com/demo02_6.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

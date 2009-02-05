@@ -1,6 +1,6 @@
 
 .. module:: board_crm_configuration
-    :synopsis: Dashboard for CRM Configuration
+    :synopsis: Dashboard for CRM Configuration (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Dashboard for CRM Configuration (*board_crm_configuration*)
 :Module: board_crm_configuration
 :Name: Dashboard for CRM Configuration
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: board_crm_configuration
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

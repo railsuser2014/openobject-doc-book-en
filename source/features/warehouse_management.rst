@@ -1,25 +1,26 @@
 Warehouse Management
 ====================
 
-Open ERP provides the smartest warehouse management system ever done.
+This module provides functionality to manage multi-warehouses, multi and structured stock locations. For each warehouses Input location, Output location and stock location can be defined.
 
 .. raw:: html
  
- <a target="_blank" href="images/warehouse_mgt_screenshot.png"><img src="images_small/warehouse_mgt_screenshot.png" class="screenshot" /></a>
+ <a target="_blank" href="../images/warehouse_mgt_screenshot.png"><img src="../images_small/warehouse_mgt_screenshot.png" class="screenshot" /></a>
 
 Key Points:
 -----------
 
-* Key point 1
-* Key point 2
+* Easily create multi-warehouses with locations.
+* Thanks to the double entry management, the inventory controlling is powerful and flexible (moves history and planning, stock valuation, robustness faced with Inventory differences, automatic reordering rules, bar code supported, rapid detection of mistakes through double entry system, traceability, ...) 
 
 Integration Benefits:
 ---------------------
 
-* Integration 1
-* INtegration 2
+* Keep track of stock moves bewteen warehouses (from where goods are coming in and going out).
+* Integrated with stock module.
 
 Links:
+------
 
-* Module:
+* Module: stock
 

@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_ch_german
-    :synopsis: Switzerland - German Chart of Accounts
+    :synopsis: Switzerland - German Chart of Accounts 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
 :Module: l10n_chart_ch_german
 :Name: Switzerland - German Chart of Accounts
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_ch_german
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: hotel_restaurant
-    :synopsis: Hotel Restaurant
+    :synopsis: Hotel Restaurant 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Hotel Restaurant (*hotel_restaurant*)
 :Module: hotel_restaurant
 :Name: Hotel Restaurant
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel_restaurant
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

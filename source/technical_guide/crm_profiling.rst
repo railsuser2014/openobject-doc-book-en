@@ -1,6 +1,6 @@
 
 .. module:: crm_profiling
-    :synopsis: crm_profiling management
+    :synopsis: crm_profiling management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ crm_profiling management (*crm_profiling*)
 :Module: crm_profiling
 :Name: crm_profiling management
 :Version: 5.0.1.3
+:Author: Tiny
 :Directory: crm_profiling
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

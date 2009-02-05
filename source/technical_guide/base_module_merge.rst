@@ -1,6 +1,6 @@
 
 .. module:: base_module_merge
-    :synopsis: Module Merger
+    :synopsis: Module Merger 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Module Merger (*base_module_merge*)
 :Module: base_module_merge
 :Name: Module Merger
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: base_module_merge
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

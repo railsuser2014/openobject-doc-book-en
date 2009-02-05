@@ -1,6 +1,6 @@
 
 .. module:: report_auction
-    :synopsis: Auction Management - Reporting
+    :synopsis: Auction Management - Reporting 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Auction Management - Reporting (*report_auction*)
 :Module: report_auction
 :Name: Auction Management - Reporting
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: report_auction
 :Web: http://tinyerp.com/module_auction.html
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: hotel
-    :synopsis: Hotel Management
+    :synopsis: Hotel Management 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Hotel Management (*hotel*)
 :Module: hotel
 :Name: Hotel Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: hotel
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

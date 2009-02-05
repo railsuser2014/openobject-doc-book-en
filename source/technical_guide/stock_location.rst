@@ -1,6 +1,6 @@
 
 .. module:: stock_location
-    :synopsis: Stock Location Paths
+    :synopsis: Stock Location Paths (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Stock Location Paths (*stock_location*)
 :Module: stock_location
 :Name: Stock Location Paths
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: stock_location
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

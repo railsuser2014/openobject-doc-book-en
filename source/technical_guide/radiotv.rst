@@ -1,6 +1,6 @@
 
 .. module:: radiotv
-    :synopsis: Tiny ERP TV & Radio Program Grid Module
+    :synopsis: Tiny ERP TV & Radio Program Grid Module 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 :Module: radiotv
 :Name: Tiny ERP TV & Radio Program Grid Module
 :Version: 5.0.1.1
+:Author: Jordi Esteve. Zikzakmedia SL
 :Directory: radiotv
 :Web: www.zikzakmedia.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

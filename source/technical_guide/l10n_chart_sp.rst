@@ -1,6 +1,6 @@
 
 .. module:: l10n_chart_sp
-    :synopsis: Spain - Chart of Account
+    :synopsis: Spain - Chart of Account 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Spain - Chart of Account (*l10n_chart_sp*)
 :Module: l10n_chart_sp
 :Name: Spain - Chart of Account
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: l10n_chart_sp
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

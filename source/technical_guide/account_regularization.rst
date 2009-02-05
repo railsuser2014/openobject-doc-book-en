@@ -1,6 +1,6 @@
 
 .. module:: account_regularization
-    :synopsis: Account Regularizations
+    :synopsis: Account Regularizations 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Account Regularizations (*account_regularization*)
 :Module: account_regularization
 :Name: Account Regularizations
 :Version: 5.0.1.0
+:Author: ACYSOS S.L.
 :Directory: account_regularization
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

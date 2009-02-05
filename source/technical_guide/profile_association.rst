@@ -1,6 +1,6 @@
 
 .. module:: profile_association
-    :synopsis: Association profile
+    :synopsis: Association profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Association profile (*profile_association*)
 :Module: profile_association
 :Name: Association profile
 :Version: False
+:Author: Tiny
 :Directory: profile_association
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

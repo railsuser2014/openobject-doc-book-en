@@ -115,7 +115,6 @@ Module Technical Guide: Introspection report on objects
     crm_telemarketing
     crm_vertical
     currency_rate
-    custom
     delivery
     demo_setup
     discount_campaign

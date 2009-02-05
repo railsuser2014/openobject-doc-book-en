@@ -1,6 +1,6 @@
 
 .. module:: scrum
-    :synopsis: Scrum, Agile Development Method
+    :synopsis: Scrum, Agile Development Method (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Scrum, Agile Development Method (*scrum*)
 :Module: scrum
 :Name: Scrum, Agile Development Method
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: scrum
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: maintenance_editor
-    :synopsis: Base
+    :synopsis: Base 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Base (*maintenance_editor*)
 :Module: maintenance_editor
 :Name: Base
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: maintenance_editor
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

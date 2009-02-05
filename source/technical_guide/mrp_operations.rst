@@ -1,6 +1,6 @@
 
 .. module:: mrp_operations
-    :synopsis: Workcenter Production start end workflow
+    :synopsis: Workcenter Production start end workflow (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Workcenter Production start end workflow (*mrp_operations*)
 :Module: mrp_operations
 :Name: Workcenter Production start end workflow
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: mrp_operations
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

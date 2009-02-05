@@ -1,6 +1,6 @@
 
 .. module:: audittrail
-    :synopsis: Audit Trail
+    :synopsis: Audit Trail (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Audit Trail (*audittrail*)
 :Module: audittrail
 :Name: Audit Trail
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: audittrail
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

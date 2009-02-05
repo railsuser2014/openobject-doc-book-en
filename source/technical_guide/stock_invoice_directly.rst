@@ -1,6 +1,6 @@
 
 .. module:: stock_invoice_directly
-    :synopsis: Invoice Picking Directly
+    :synopsis: Invoice Picking Directly (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Invoice Picking Directly (*stock_invoice_directly*)
 :Module: stock_invoice_directly
 :Name: Invoice Picking Directly
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: stock_invoice_directly
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

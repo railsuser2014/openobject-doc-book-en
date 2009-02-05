@@ -1,6 +1,6 @@
 
 .. module:: auto_email_sale
-    :synopsis: Email Sale order
+    :synopsis: Email Sale order 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Email Sale order (*auto_email_sale*)
 :Module: auto_email_sale
 :Name: Email Sale order
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: auto_email_sale
 :Web: http://tinyerp.com
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

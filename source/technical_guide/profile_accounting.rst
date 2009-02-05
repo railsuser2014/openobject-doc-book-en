@@ -1,6 +1,6 @@
 
 .. module:: profile_accounting
-    :synopsis: Accounting only profile
+    :synopsis: Accounting only profile (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Accounting only profile (*profile_accounting*)
 :Module: profile_accounting
 :Name: Accounting only profile
 :Version: False
+:Author: Tiny
 :Directory: profile_accounting
 :Web: 
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: city
-    :synopsis: City
+    :synopsis: City 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ City (*city*)
 :Module: city
 :Name: City
 :Version: 5.0.1.0
+:Author: Pablo Rocandio
 :Directory: city
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

@@ -1,6 +1,6 @@
 
 .. module:: account_bob_import
-    :synopsis: Import accounting entries from Bob
+    :synopsis: Import accounting entries from Bob 
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Import accounting entries from Bob (*account_bob_import*)
 :Module: account_bob_import
 :Name: Import accounting entries from Bob
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_bob_import
 :Web: 
-:Is certified: no
+:Official module: no
+:Quality certified: no
 
 Description
 -----------

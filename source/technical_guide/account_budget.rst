@@ -1,6 +1,6 @@
 
 .. module:: account_budget
-    :synopsis: Budget Management
+    :synopsis: Budget Management (Official, Quality Certified)
     :noindex:
 .. 
 
@@ -13,9 +13,11 @@ Budget Management (*account_budget*)
 :Module: account_budget
 :Name: Budget Management
 :Version: 5.0.1.0
+:Author: Tiny
 :Directory: account_budget
 :Web: http://www.openerp.com
-:Is certified: yes
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------
