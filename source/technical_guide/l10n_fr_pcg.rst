@@ -1,4 +1,13 @@
 
+.. module:: l10n_fr_pcg
+    :synopsis: France - Plan Comptable Général
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 France - Plan Comptable Général (*l10n_fr_pcg*)
 ===============================================
 :Module: l10n_fr_pcg
@@ -6,6 +15,7 @@ France - Plan Comptable Général (*l10n_fr_pcg*)
 :Version: 5.0.1.0
 :Directory: l10n_fr_pcg
 :Web: http://www.crysalead.com
+:Is certified: no
 
 Description
 -----------
@@ -19,10 +29,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_chart - installed
- * base_vat - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_chart`
+ * :mod:`base_vat`
 
 Reports
 -------
@@ -49,8 +59,8 @@ None
 Objects
 -------
 
-Object: Report for l10n_fr
-##########################
+Object: Report for l10n_fr (l10n.fr.report)
+###########################################
 
 
 
@@ -71,8 +81,8 @@ Object: Report for l10n_fr
 
 
 
-Object: Report Lines for l10n_fr
-################################
+Object: Report Lines for l10n_fr (l10n.fr.line)
+###############################################
 
 
 

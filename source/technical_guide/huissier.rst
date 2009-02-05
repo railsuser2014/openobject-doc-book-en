@@ -1,4 +1,13 @@
 
+.. module:: huissier
+    :synopsis: Tiny ERP Huissiers
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Tiny ERP Huissiers (*huissier*)
 ===============================
 :Module: huissier
@@ -6,6 +15,7 @@ Tiny ERP Huissiers (*huissier*)
 :Version: False
 :Directory: huissier
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------
@@ -44,17 +54,17 @@ None
 Objects
 -------
 
-Object: huissier.dossier
-########################
+Object: huissier.dossier (huissier.dossier)
+###########################################
 
 
-Object: huissier.lots
-#####################
+Object: huissier.lots (huissier.lots)
+#####################################
 
 
-Object: huissier.vignettes
-##########################
+Object: huissier.vignettes (huissier.vignettes)
+###############################################
 
 
-Object: huissier.deposit
-########################
+Object: huissier.deposit (huissier.deposit)
+###########################################

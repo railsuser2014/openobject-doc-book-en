@@ -1,4 +1,13 @@
 
+.. module:: crm
+    :synopsis: Customer & Supplier Relationship Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Customer & Supplier Relationship Management (*crm*)
 ===================================================
 :Module: crm
@@ -6,6 +15,7 @@ Customer & Supplier Relationship Management (*crm*)
 :Version: 5.0.1.0
 :Directory: crm
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -34,7 +44,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -48,17 +58,17 @@ Menus
  * CRM & SRM/Configuration
  * CRM & SRM/Configuration/Cases
  * CRM & SRM/Configuration/Cases/Sections
- * CRM & SRM/All Cases
- * CRM & SRM/All Cases/Cases by section
+ * CRM & SRM/Reporting/All Cases
+ * CRM & SRM/Reporting/All Cases/Cases by section
  * CRM & SRM/Configuration/Cases/Categories
  * CRM & SRM/Configuration/Cases/Rules
- * CRM & SRM/All Cases/All Cases
- * CRM & SRM/All Cases/All Cases/Open Cases
- * CRM & SRM/All Cases/My cases
- * CRM & SRM/All Cases/My cases/My Open Cases
- * CRM & SRM/All Cases/Cases Histories
- * CRM & SRM/All Cases/Cases Histories/All Histories
- * CRM & SRM/All Cases/Cases Histories/My Histories
+ * CRM & SRM/Reporting/All Cases/All Cases
+ * CRM & SRM/Reporting/All Cases/All Cases/Open Cases
+ * CRM & SRM/Reporting/All Cases/My cases
+ * CRM & SRM/Reporting/All Cases/My cases/My Open Cases
+ * CRM & SRM/Reporting/All Cases/Cases Histories
+ * CRM & SRM/Reporting/All Cases/Cases Histories/All Histories
+ * CRM & SRM/Reporting/All Cases/Cases Histories/My Histories
  * CRM & SRM/Configuration/Segmentations
  * CRM & SRM/Configuration/Segmentations/Segmentations
  * CRM & SRM/Configuration/Create menus for a case section
@@ -88,8 +98,8 @@ Views
 Objects
 -------
 
-Object: Case Section
-####################
+Object: Case Section (crm.case.section)
+#######################################
 
 
 
@@ -158,8 +168,8 @@ Object: Case Section
 
 
 
-Object: Category of case
-########################
+Object: Category of case (crm.case.categ)
+#########################################
 
 
 
@@ -180,8 +190,8 @@ Object: Category of case
 
 
 
-Object: Case Rule
-#################
+Object: Case Rule (crm.case.rule)
+#################################
 
 
 
@@ -358,8 +368,8 @@ Object: Case Rule
 
 
 
-Object: Case
-############
+Object: Case (crm.case)
+#######################
 
 
 
@@ -698,8 +708,8 @@ Object: Case
 
 
 
-Object: Case Communication History
-##################################
+Object: Case Communication History (crm.case.log)
+#################################################
 
 
 
@@ -744,8 +754,8 @@ Object: Case Communication History
 
 
 
-Object: Case history
-####################
+Object: Case history (crm.case.history)
+#######################################
 
 
 
@@ -814,8 +824,8 @@ Object: Case history
 
 
 
-Object: Partner Segmentation
-############################
+Object: Partner Segmentation (crm.segmentation)
+###############################################
 
 
 
@@ -920,8 +930,8 @@ Object: Partner Segmentation
 
 
 
-Object: Segmentation line
-#########################
+Object: Segmentation line (crm.segmentation.line)
+#################################################
 
 
 

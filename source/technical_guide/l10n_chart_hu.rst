@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_hu
+    :synopsis: Hungary - Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Hungary - Chart of Accounts (*l10n_chart_hu*)
 =============================================
 :Module: l10n_chart_hu
@@ -6,6 +15,7 @@ Hungary - Chart of Accounts (*l10n_chart_hu*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_hu
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base_iban - installed
- * account_chart - installed
- * base_vat - installed
+ * :mod:`base_iban`
+ * :mod:`account_chart`
+ * :mod:`base_vat`
 
 Reports
 -------

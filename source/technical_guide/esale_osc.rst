@@ -1,4 +1,13 @@
 
+.. module:: esale_osc
+    :synopsis: OScommerce Interface / ZenCart
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 OScommerce Interface / ZenCart (*esale_osc*)
 ============================================
 :Module: esale_osc
@@ -6,6 +15,7 @@ OScommerce Interface / ZenCart (*esale_osc*)
 :Version: 5.0.1.0
 :Directory: esale_osc
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -24,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * sale - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: OScommerce Website
-##########################
+Object: OScommerce Website (esale_osc.web)
+##########################################
 
 
 
@@ -114,8 +124,8 @@ Object: OScommerce Website
 
 
 
-Object: esale_osc Tax
-#####################
+Object: esale_osc Tax (esale_osc.tax)
+#####################################
 
 
 
@@ -142,8 +152,8 @@ Object: esale_osc Tax
 
 
 
-Object: esale_osc Category
-##########################
+Object: esale_osc Category (esale_osc.category)
+###############################################
 
 
 
@@ -170,8 +180,8 @@ Object: esale_osc Category
 
 
 
-Object: esale_osc Product
-#########################
+Object: esale_osc Product (esale_osc.product)
+#############################################
 
 
 
@@ -204,8 +214,8 @@ Object: esale_osc Product
 
 
 
-Object: esale_osc Language
-##########################
+Object: esale_osc Language (esale_osc.lang)
+###########################################
 
 
 

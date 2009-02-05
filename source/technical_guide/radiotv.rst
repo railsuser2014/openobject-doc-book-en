@@ -1,4 +1,13 @@
 
+.. module:: radiotv
+    :synopsis: Tiny ERP TV & Radio Program Grid Module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 ===================================================
 :Module: radiotv
@@ -6,6 +15,7 @@ Tiny ERP TV & Radio Program Grid Module (*radiotv*)
 :Version: 5.0.1.1
 :Directory: radiotv
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -28,7 +38,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -83,8 +93,8 @@ Views
 Objects
 -------
 
-Object: radiotv.program
-#######################
+Object: radiotv.program (radiotv.program)
+#########################################
 
 
 
@@ -183,8 +193,8 @@ Object: radiotv.program
 
 
 
-Object: radiotv.category
-########################
+Object: radiotv.category (radiotv.category)
+###########################################
 
 
 
@@ -205,8 +215,8 @@ Object: radiotv.category
 
 
 
-Object: radiotv.broadcast
-#########################
+Object: radiotv.broadcast (radiotv.broadcast)
+#############################################
 
 
 
@@ -245,8 +255,8 @@ Object: radiotv.broadcast
 
 
 
-Object: radiotv.channel
-#######################
+Object: radiotv.channel (radiotv.channel)
+#########################################
 
 
 
@@ -267,8 +277,8 @@ Object: radiotv.channel
 
 
 
-Object: radiotv.podcast
-#######################
+Object: radiotv.podcast (radiotv.podcast)
+#########################################
 
 
 
@@ -343,8 +353,8 @@ Object: radiotv.podcast
 
 
 
-Object: RadioTV website configuration
-#####################################
+Object: RadioTV website configuration (radiotv.web)
+###################################################
 
 
 

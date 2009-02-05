@@ -1,4 +1,13 @@
 
+.. module:: base_module_publish
+    :synopsis: Module publisher
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module publisher (*base_module_publish*)
 ========================================
 :Module: base_module_publish
@@ -6,6 +15,7 @@ Module publisher (*base_module_publish*)
 :Version: 5.0.1.0
 :Directory: base_module_publish
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -25,7 +35,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

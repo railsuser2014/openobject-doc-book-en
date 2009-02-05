@@ -1,4 +1,13 @@
 
+.. module:: event
+    :synopsis: Event
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Event (*event*)
 ===============
 :Module: event
@@ -6,6 +15,7 @@ Event (*event*)
 :Version: 5.0.0.1
 :Directory: event
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -28,9 +38,9 @@ Description
 Dependencies
 ------------
 
- * crm - installed
- * base_contact - installed
- * account - installed
+ * :mod:`crm`
+ * :mod:`base_contact`
+ * :mod:`account`
 
 Reports
 -------
@@ -74,8 +84,8 @@ Views
 Objects
 -------
 
-Object: Event type
-##################
+Object: Event type (event.type)
+###############################
 
 
 
@@ -90,8 +100,8 @@ Object: Event type
 
 
 
-Object: Event
-#############
+Object: Event (event.event)
+###########################
 
 
 
@@ -304,8 +314,8 @@ Object: Event
     *The email address wich is the 'Reply-To' of all email sent by Open ERP for cases in this section*
 
 
-Object: Event Registration
-##########################
+Object: Event Registration (event.registration)
+###############################################
 
 
 
@@ -764,8 +774,8 @@ Object: Event Registration
 
 
 
-Object: Events on registrations
-###############################
+Object: Events on registrations (report.event.registration)
+###########################################################
 
 
 
@@ -804,8 +814,8 @@ Object: Events on registrations
 
 
 
-Object: Event type on registration
-##################################
+Object: Event type on registration (report.event.type.registration)
+###################################################################
 
 
 

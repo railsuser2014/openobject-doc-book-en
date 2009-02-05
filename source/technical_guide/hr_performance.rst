@@ -1,4 +1,13 @@
 
+.. module:: hr_performance
+    :synopsis: Performance Review
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Performance Review (*hr_performance*)
 =====================================
 :Module: hr_performance
@@ -6,6 +15,7 @@ Performance Review (*hr_performance*)
 :Version: 5.0.1.0
 :Directory: hr_performance
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
+ * :mod:`base`
+ * :mod:`hr`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Employee Performance 
-#############################
+Object: Employee Performance  (hr.performance)
+##############################################
 
 
 
@@ -85,8 +95,8 @@ Object: Employee Performance
 
 
 
-Object: Performance Review Points
-#################################
+Object: Performance Review Points (hr.performance.line)
+#######################################################
 
 
 
@@ -125,8 +135,8 @@ Object: Performance Review Points
 
 
 
-Object: Review Attributes
-#########################
+Object: Review Attributes (hr.performance.line.attribute)
+#########################################################
 
 
 
@@ -147,8 +157,8 @@ Object: Review Attributes
 
 
 
-Object: Attributes Lines
-########################
+Object: Attributes Lines (attribute.line)
+#########################################
 
 
 

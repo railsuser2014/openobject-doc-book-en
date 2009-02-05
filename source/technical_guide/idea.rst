@@ -1,4 +1,13 @@
 
+.. module:: idea
+    :synopsis: Idea Manager
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Idea Manager (*idea*)
 =====================
 :Module: idea
@@ -6,6 +15,7 @@ Idea Manager (*idea*)
 :Version: 5.0.0.1
 :Directory: idea
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -62,8 +72,8 @@ Views
 Objects
 -------
 
-Object: Category for an idea
-############################
+Object: Category for an idea (idea.category)
+############################################
 
 
 
@@ -90,8 +100,8 @@ Object: Category for an idea
 
 
 
-Object: idea.idea
-#################
+Object: idea.idea (idea.idea)
+#############################
 
 
 
@@ -172,8 +182,8 @@ Object: idea.idea
 
 
 
-Object: Comments
-################
+Object: Comments (idea.comment)
+###############################
 
 
 
@@ -200,8 +210,8 @@ Object: Comments
 
 
 
-Object: idea.vote
-#################
+Object: idea.vote (idea.vote)
+#############################
 
 
 
@@ -222,8 +232,8 @@ Object: idea.vote
 
 
 
-Object: Idea Votes Statistics
-#############################
+Object: Idea Votes Statistics (idea.vote.stat)
+##############################################
 
 
 

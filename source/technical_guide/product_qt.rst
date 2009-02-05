@@ -1,4 +1,13 @@
 
+.. module:: product_qt
+    :synopsis: Products & Pricelists
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products & Pricelists (*product_qt*)
 ====================================
 :Module: product_qt
@@ -6,6 +15,7 @@ Products & Pricelists (*product_qt*)
 :Version: 5.0.1.0
 :Directory: product_qt
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -21,11 +31,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
- * product - installed
- * stock - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`process`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`mrp`
 
 Reports
 -------
@@ -59,8 +69,8 @@ Views
 Objects
 -------
 
-Object: quality testings
-########################
+Object: quality testings (quality.test)
+#######################################
 
 
 
@@ -75,8 +85,8 @@ Object: quality testings
 
 
 
-Object: testing.result
-######################
+Object: testing.result (testing.result)
+#######################################
 
 
 
@@ -109,8 +119,8 @@ Object: testing.result
 
 
 
-Object: quality test configuration
-##################################
+Object: quality test configuration (quality.test.config)
+########################################################
 
 
 

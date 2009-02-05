@@ -1,4 +1,13 @@
 
+.. module:: l10n_ch_vat_brut
+    :synopsis: Switzerland - VAT Brut
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Switzerland - VAT Brut (*l10n_ch_vat_brut*)
 ===========================================
 :Module: l10n_ch_vat_brut
@@ -6,6 +15,7 @@ Switzerland - VAT Brut (*l10n_ch_vat_brut*)
 :Version: False
 :Directory: l10n_ch_vat_brut
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * l10n_ch - unknown
+ * :mod:`l10n_ch`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: crm_livechat
+    :synopsis: CRM - Livechat Jabber Client
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CRM - Livechat Jabber Client (*crm_livechat*)
 =============================================
 :Module: crm_livechat
@@ -6,6 +15,7 @@ CRM - Livechat Jabber Client (*crm_livechat*)
 :Version: 5.0.1.3
 :Directory: crm_livechat
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -29,7 +39,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -66,8 +76,8 @@ Views
 Objects
 -------
 
-Object: Livechat Account
-########################
+Object: Livechat Account (crm_livechat.jabber)
+##############################################
 
 
 
@@ -106,8 +116,8 @@ Object: Livechat Account
 
 
 
-Object: LiveChat Account
-########################
+Object: LiveChat Account (crm_livechat.livechat)
+################################################
 
 
 
@@ -140,8 +150,8 @@ Object: LiveChat Account
 
 
 
-Object: LiveChat Visitors
-#########################
+Object: LiveChat Visitors (crm_livechat.livechat.partner)
+#########################################################
 
 
 
@@ -174,8 +184,8 @@ Object: LiveChat Visitors
 
 
 
-Object: LiveChat Users
-######################
+Object: LiveChat Users (crm_livechat.livechat.user)
+###################################################
 
 
 
@@ -214,8 +224,8 @@ Object: LiveChat Users
 
 
 
-Object: LiveChat Log
-####################
+Object: LiveChat Log (crm_livechat.log)
+#######################################
 
 
 

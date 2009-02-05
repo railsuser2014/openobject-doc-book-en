@@ -1,4 +1,13 @@
 
+.. module:: auction
+    :synopsis: Auction module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction module (*auction*)
 ==========================
 :Module: auction
@@ -6,6 +15,7 @@ Auction module (*auction*)
 :Version: 5.0.1.0
 :Directory: auction
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -20,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * hr_attendance - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`hr_attendance`
 
 Reports
 -------
@@ -165,8 +175,8 @@ Views
 Objects
 -------
 
-Object: auction.artists
-#######################
+Object: auction.artists (auction.artists)
+#########################################
 
 
 
@@ -193,8 +203,8 @@ Object: auction.artists
 
 
 
-Object: auction.dates
-#####################
+Object: auction.dates (auction.dates)
+#####################################
 
 
 
@@ -281,8 +291,8 @@ Object: auction.dates
 
 
 
-Object: Deposit Border
-######################
+Object: Deposit Border (auction.deposit)
+########################################
 
 
 
@@ -351,8 +361,8 @@ Object: Deposit Border
 
 
 
-Object: auction.deposit.cost
-############################
+Object: auction.deposit.cost (auction.deposit.cost)
+###################################################
 
 
 
@@ -379,8 +389,8 @@ Object: auction.deposit.cost
 
 
 
-Object: auction.lot.category
-############################
+Object: auction.lot.category (auction.lot.category)
+###################################################
 
 
 
@@ -407,8 +417,8 @@ Object: auction.lot.category
 
 
 
-Object: Object
-##############
+Object: Object (auction.lots)
+#############################
 
 
 
@@ -669,8 +679,8 @@ Object: Object
 
 
 
-Object: Bid auctions
-####################
+Object: Bid auctions (auction.bid)
+##################################
 
 
 
@@ -703,8 +713,8 @@ Object: Bid auctions
 
 
 
-Object: Lot history
-###################
+Object: Lot history (auction.lot.history)
+#########################################
 
 
 
@@ -731,8 +741,8 @@ Object: Lot history
 
 
 
-Object: Bid
-###########
+Object: Bid (auction.bid_line)
+##############################
 
 
 
@@ -771,8 +781,8 @@ Object: Bid
 
 
 
-Object: Auction Reporting on buyer view
-#######################################
+Object: Auction Reporting on buyer view (report.buyer.auction)
+##############################################################
 
 
 
@@ -817,8 +827,8 @@ Object: Auction Reporting on buyer view
 
 
 
-Object: Auction Reporting on buyer view
-#######################################
+Object: Auction Reporting on buyer view (report.buyer.auction2)
+###############################################################
 
 
 
@@ -869,8 +879,8 @@ Object: Auction Reporting on buyer view
 
 
 
-Object: Auction Reporting on seller view
-########################################
+Object: Auction Reporting on seller view (report.seller.auction)
+################################################################
 
 
 
@@ -921,8 +931,8 @@ Object: Auction Reporting on seller view
 
 
 
-Object: Auction Reporting on seller view2
-#########################################
+Object: Auction Reporting on seller view2 (report.seller.auction2)
+##################################################################
 
 
 
@@ -967,8 +977,8 @@ Object: Auction Reporting on seller view2
 
 
 
-Object: Auction Reporting on  view2
-###################################
+Object: Auction Reporting on  view2 (report.auction.view2)
+##########################################################
 
 
 
@@ -1019,8 +1029,8 @@ Object: Auction Reporting on  view2
 
 
 
-Object: Auction Reporting on view1
-##################################
+Object: Auction Reporting on view1 (report.auction.view)
+########################################################
 
 
 
@@ -1071,8 +1081,8 @@ Object: Auction Reporting on view1
 
 
 
-Object: Objects per day
-#######################
+Object: Objects per day (report.auction.object.date)
+####################################################
 
 
 
@@ -1099,8 +1109,8 @@ Object: Objects per day
 
 
 
-Object: comparaison estimate/adjudication 
-##########################################
+Object: comparaison estimate/adjudication  (report.auction.estimation.adj.category)
+###################################################################################
 
 
 
@@ -1145,8 +1155,8 @@ Object: comparaison estimate/adjudication
 
 
 
-Object: report_auction_adjudication
-###################################
+Object: report_auction_adjudication (report.auction.adjudication)
+#################################################################
 
 
 
@@ -1179,8 +1189,8 @@ Object: report_auction_adjudication
 
 
 
-Object: Report Sign In/Out
-##########################
+Object: Report Sign In/Out (report.attendance)
+##############################################
 
 
 
@@ -1201,8 +1211,8 @@ Object: Report Sign In/Out
 
 
 
-Object: Report deposit border
-#############################
+Object: Report deposit border (report.deposit.border)
+#####################################################
 
 
 
@@ -1235,8 +1245,8 @@ Object: Report deposit border
 
 
 
-Object: Object encoded
-######################
+Object: Object encoded (report.object.encoded)
+##############################################
 
 
 
@@ -1299,8 +1309,8 @@ Object: Object encoded
 
 
 
-Object: Object encoded
-######################
+Object: Object encoded (report.object.encoded.manager)
+######################################################
 
 
 
@@ -1357,8 +1367,8 @@ Object: Object encoded
 
 
 
-Object: Unclassified objects 
-#############################
+Object: Unclassified objects  (report.unclassified.objects)
+###########################################################
 
 
 

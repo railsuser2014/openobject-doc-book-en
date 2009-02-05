@@ -1,4 +1,13 @@
 
+.. module:: purchase_tender
+    :synopsis: Purchase - Purchase Tender
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase - Purchase Tender (*purchase_tender*)
 ==============================================
 :Module: purchase_tender
@@ -6,6 +15,7 @@ Purchase - Purchase Tender (*purchase_tender*)
 :Version: 5.0.0.1
 :Directory: purchase_tender
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Purchase Tender
-#######################
+Object: Purchase Tender (purchase.tender)
+#########################################
 
 
 

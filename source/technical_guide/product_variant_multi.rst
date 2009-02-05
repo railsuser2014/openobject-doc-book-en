@@ -1,4 +1,13 @@
 
+.. module:: product_variant_multi
+    :synopsis: Products with multi-level variants
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products with multi-level variants (*product_variant_multi*)
 ============================================================
 :Module: product_variant_multi
@@ -6,6 +15,7 @@ Products with multi-level variants (*product_variant_multi*)
 :Version: 5.0.1.0
 :Directory: product_variant_multi
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------
@@ -28,8 +38,8 @@ None
 Menus
 -------
 
- * Products/Products/Product Templates
- * Products/Products/Product Variants
+ * Books/Products/Product Templates
+ * Books/Products/Product Variants
 
 Views
 -----
@@ -42,8 +52,8 @@ None
 Objects
 -------
 
-Object: Dimension Type
-######################
+Object: Dimension Type (product.variant.dimension.type)
+#######################################################
 
 
 
@@ -64,8 +74,8 @@ Object: Dimension Type
 
 
 
-Object: Dimension Type
-######################
+Object: Dimension Type (product.variant.dimension.value)
+########################################################
 
 
 

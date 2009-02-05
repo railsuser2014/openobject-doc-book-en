@@ -1,4 +1,13 @@
 
+.. module:: currency_rate
+    :synopsis: Currency Rates
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Currency Rates (*currency_rate*)
 ================================
 :Module: currency_rate
@@ -6,6 +15,7 @@ Currency Rates (*currency_rate*)
 :Version: 5.0.1.0
 :Directory: currency_rate
 :Web: http://www.axelor.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * multi_company_currency - installed
+ * :mod:`base`
+ * :mod:`multi_company_currency`
 
 Reports
 -------

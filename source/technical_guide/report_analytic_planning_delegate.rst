@@ -1,4 +1,13 @@
 
+.. module:: report_analytic_planning_delegate
+    :synopsis: Analytic planning - Delegation in the hierarchy
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic planning - Delegation in the hierarchy (*report_analytic_planning_delegate*)
 =====================================================================================
 :Module: report_analytic_planning_delegate
@@ -6,6 +15,7 @@ Analytic planning - Delegation in the hierarchy (*report_analytic_planning_deleg
 :Version: 5.0.1.0
 :Directory: report_analytic_planning_delegate
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * report_analytic_planning - installed
+ * :mod:`report_analytic_planning`
 
 Reports
 -------

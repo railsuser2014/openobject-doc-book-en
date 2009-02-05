@@ -1,4 +1,13 @@
 
+.. module:: segmentation
+    :synopsis: segmentation management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 segmentation management (*segmentation*)
 ========================================
 :Module: segmentation
@@ -6,6 +15,7 @@ segmentation management (*segmentation*)
 :Version: False
 :Directory: segmentation
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -22,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_profiling - installed
+ * :mod:`base`
+ * :mod:`crm_profiling`
 
 Reports
 -------

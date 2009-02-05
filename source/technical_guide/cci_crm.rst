@@ -1,4 +1,13 @@
 
+.. module:: cci_crm
+    :synopsis: CCI CRM
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
@@ -6,6 +15,7 @@ CCI CRM (*cci_crm*)
 :Version: 5.0.1.0
 :Directory: cci_crm
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -18,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_configuration - installed
- * event - installed
- * cci_partner - installed
+ * :mod:`base`
+ * :mod:`crm_configuration`
+ * :mod:`event`
+ * :mod:`cci_partner`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Meeting Confidential Info
-#################################
+Object: Meeting Confidential Info (meeting.confidential.info)
+#############################################################
 
 
 

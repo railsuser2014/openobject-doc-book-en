@@ -1,4 +1,13 @@
 
+.. module:: purchase
+    :synopsis: Purchase Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Management (*purchase*)
 ================================
 :Module: purchase
@@ -6,6 +15,7 @@ Purchase Management (*purchase*)
 :Version: 5.0.1.1
 :Directory: purchase
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,17 +28,17 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * stock - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`stock`
+ * :mod:`process`
 
 Reports
 -------
 
  * Request for Quotation
 
- * Purchase Order
+ * Print Order
 
 Menus
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: Purchase order
-######################
+Object: Purchase order (purchase.order)
+#######################################
 
 
 
@@ -272,8 +282,8 @@ Object: Purchase order
     *This is computed as the minimum scheduled date of all purchase order lines' products.*
 
 
-Object: Purchase Order lines
-############################
+Object: Purchase Order lines (purchase.order.line)
+##################################################
 
 
 

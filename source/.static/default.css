@@ -686,7 +686,11 @@ div.body h6 {
     padding: 3px 0 3px 10px;
 }
 
-div.body h1 { margin-top: 0; font-size: 160%; }
+div.body h1 {
+  margin-top: 0;
+  font-size: 160%;
+  width: 550px;
+}
 div.body h2 { font-size: 140%; }
 div.body h3 { font-size: 120%; }
 div.body h4 { font-size: 110%; }
@@ -805,13 +809,17 @@ div.seealso {
     border: 1px solid #ff6;
 }
 
-div.tip{
-    background-color: #fff3f3;
-    margin-left: 35px;
-    border-top: 2px solid #000000;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+div.tip {
+  background-color: #fff583;
+  margin-left: 35px;
+  border: 1px dashed #ccc;
+  padding-left: 90px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-image:url(tip.png);
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
 }
 
 div.warning {

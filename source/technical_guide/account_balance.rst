@@ -1,4 +1,13 @@
 
+.. module:: account_balance
+    :synopsis: Accounting and financial management-Compare Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting and financial management-Compare Accounts (*account_balance*)
 ========================================================================
 :Module: account_balance
@@ -6,6 +15,7 @@ Accounting and financial management-Compare Accounts (*account_balance*)
 :Version: 5.0.1.1
 :Directory: account_balance
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -29,7 +39,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

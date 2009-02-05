@@ -1,4 +1,13 @@
 
+.. module:: l10n_ch_vat_net
+    :synopsis: Switzerland - VAT Net
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Switzerland - VAT Net (*l10n_ch_vat_net*)
 =========================================
 :Module: l10n_ch_vat_net
@@ -6,6 +15,7 @@ Switzerland - VAT Net (*l10n_ch_vat_net*)
 :Version: False
 :Directory: l10n_ch_vat_net
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * l10n_ch - unknown
+ * :mod:`l10n_ch`
 
 Reports
 -------

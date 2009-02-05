@@ -1,4 +1,13 @@
 
+.. module:: product_lot_foundry
+    :synopsis: Products Lot Foundry
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products Lot Foundry (*product_lot_foundry*)
 ============================================
 :Module: product_lot_foundry
@@ -6,6 +15,7 @@ Products Lot Foundry (*product_lot_foundry*)
 :Version: 5.0.1.0
 :Directory: product_lot_foundry
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
- * stock - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------
@@ -50,8 +60,8 @@ Views
 Objects
 -------
 
-Object: Heat Code
-#################
+Object: Heat Code (product.lot.foundry.heatcode)
+################################################
 
 
 
@@ -90,8 +100,8 @@ Object: Heat Code
 
 
 
-Object: Mecanical Properties
-############################
+Object: Mecanical Properties (product.lot.foundry.heatcode.mecanical)
+#####################################################################
 
 
 
@@ -112,8 +122,8 @@ Object: Mecanical Properties
 
 
 
-Object: Chemical Properties
-###########################
+Object: Chemical Properties (product.lot.foundry.heatcode.chemical)
+###################################################################
 
 
 
@@ -134,8 +144,8 @@ Object: Chemical Properties
 
 
 
-Object: stock.production.lot.reservation
-########################################
+Object: stock.production.lot.reservation (stock.production.lot.reservation)
+###########################################################################
 
 
 
@@ -174,8 +184,8 @@ Object: stock.production.lot.reservation
 
 
 
-Object: stock.production.lot.all
-################################
+Object: stock.production.lot.all (stock.production.lot.all)
+###########################################################
 
 
 

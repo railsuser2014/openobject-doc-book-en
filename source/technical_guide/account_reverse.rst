@@ -1,4 +1,13 @@
 
+.. module:: account_reverse
+    :synopsis: Account Move Reverse
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Move Reverse (*account_reverse*)
 ========================================
 :Module: account_reverse
@@ -6,6 +15,7 @@ Account Move Reverse (*account_reverse*)
 :Version: 5.0.1.0
 :Directory: account_reverse
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

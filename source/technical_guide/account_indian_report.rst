@@ -1,4 +1,13 @@
 
+.. module:: account_indian_report
+    :synopsis: Indian Account Reporting - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Indian Account Reporting - Reporting (*account_indian_report*)
 ==============================================================
 :Module: account_indian_report
@@ -6,6 +15,7 @@ Indian Account Reporting - Reporting (*account_indian_report*)
 :Version: 5.0.1.0
 :Directory: account_indian_report
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -20,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`account_chart`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: audittrail
+    :synopsis: Audit Trail
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Audit Trail (*audittrail*)
 ==========================
 :Module: audittrail
@@ -6,6 +15,7 @@ Audit Trail (*audittrail*)
 :Version: 5.0.1.0
 :Directory: audittrail
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * purchase - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`purchase`
+ * :mod:`mrp`
 
 Reports
 -------
@@ -50,8 +60,8 @@ Views
 Objects
 -------
 
-Object: audittrail.rule
-#######################
+Object: audittrail.rule (audittrail.rule)
+#########################################
 
 
 
@@ -108,8 +118,8 @@ Object: audittrail.rule
 
 
 
-Object: audittrail.log
-######################
+Object: audittrail.log (audittrail.log)
+#######################################
 
 
 
@@ -154,8 +164,8 @@ Object: audittrail.log
 
 
 
-Object: audittrail.log.line
-###########################
+Object: audittrail.log.line (audittrail.log.line)
+#################################################
 
 
 

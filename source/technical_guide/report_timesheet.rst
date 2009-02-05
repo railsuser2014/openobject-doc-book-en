@@ -1,4 +1,13 @@
 
+.. module:: report_timesheet
+    :synopsis: Timesheet - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Timesheet - Reporting (*report_timesheet*)
 ==========================================
 :Module: report_timesheet
@@ -6,6 +15,7 @@ Timesheet - Reporting (*report_timesheet*)
 :Version: 5.0.1.0
 :Directory: report_timesheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet - installed
- * hr_timesheet_invoice - installed
+ * :mod:`hr_timesheet`
+ * :mod:`hr_timesheet_invoice`
 
 Reports
 -------
@@ -63,8 +73,8 @@ Views
 Objects
 -------
 
-Object: Timesheet per day
-#########################
+Object: Timesheet per day (report_timesheet.user)
+#################################################
 
 
 
@@ -91,8 +101,8 @@ Object: Timesheet per day
 
 
 
-Object: Timesheet per account
-#############################
+Object: Timesheet per account (report_timesheet.account)
+########################################################
 
 
 
@@ -119,8 +129,8 @@ Object: Timesheet per account
 
 
 
-Object: Daily timesheet per account
-###################################
+Object: Daily timesheet per account (report_timesheet.account.date)
+###################################################################
 
 
 
@@ -147,8 +157,8 @@ Object: Daily timesheet per account
 
 
 
-Object: Costs to invoice
-########################
+Object: Costs to invoice (report_timesheet.invoice)
+###################################################
 
 
 

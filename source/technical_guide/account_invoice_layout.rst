@@ -1,4 +1,13 @@
 
+.. module:: account_invoice_layout
+    :synopsis: account_invoice_layout
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_invoice_layout (*account_invoice_layout*)
 =================================================
 :Module: account_invoice_layout
@@ -6,6 +15,7 @@ account_invoice_layout (*account_invoice_layout*)
 :Version: 5.0.1.0
 :Directory: account_invoice_layout
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -24,13 +34,13 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------
 
- * Invoices with Layout
+ * Formatted Inv.
 
 Menus
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Notify By Messages
-##########################
+Object: Notify By Messages (notify.message)
+###########################################
 
 
 

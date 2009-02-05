@@ -1,4 +1,13 @@
 
+.. module:: game_scenario
+    :synopsis: Scenario of games
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Scenario of games (*game_scenario*)
 ===================================
 :Module: game_scenario
@@ -6,6 +15,7 @@ Scenario of games (*game_scenario*)
 :Version: 5.0.1.0
 :Directory: game_scenario
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -28,26 +38,24 @@ None
 Menus
 -------
 
- * Administration/Game Scenario
- * Administration/Game Scenario/Configuration
- * Administration/Game Scenario/Configuration/Scenario Steps
- * Administration/Game Scenario/Configuration/Scenario
+
+None
+
 
 Views
 -----
 
- * game.scenario.step.tree (tree)
- * game.scenario.step.form (form)
- * game.scenario.tree (tree)
- * game.scenario.form (form)
+
+None
+
 
 
 Objects
 -------
 
-Object: game.scenario
-#####################
+Object: game.scenario (game.scenario)
+#####################################
 
 
-Object: game.scenario.step
-##########################
+Object: game.scenario.step (game.scenario.step)
+###############################################

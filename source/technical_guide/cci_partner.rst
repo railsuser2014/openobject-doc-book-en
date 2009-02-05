@@ -1,4 +1,13 @@
 
+.. module:: cci_partner
+    :synopsis: CCI Partner
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Partner (*cci_partner*)
 ===========================
 :Module: cci_partner
@@ -6,6 +15,7 @@ CCI Partner (*cci_partner*)
 :Version: 5.0.1.0
 :Directory: cci_partner
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * base_vat - installed
- * cci_base_contact - installed
- * account_l10nbe_domiciliation - installed
- * cci_country - installed
+ * :mod:`base`
+ * :mod:`base_vat`
+ * :mod:`cci_base_contact`
+ * :mod:`account_l10nbe_domiciliation`
+ * :mod:`cci_country`
 
 Reports
 -------
@@ -92,8 +102,8 @@ Views
 Objects
 -------
 
-Object: res.partner.state
-#########################
+Object: res.partner.state (res.partner.state)
+#############################################
 
 
 
@@ -102,8 +112,8 @@ Object: res.partner.state
 
 
 
-Object: res.partner.state2
-##########################
+Object: res.partner.state2 (res.partner.state2)
+###############################################
 
 
 
@@ -112,8 +122,8 @@ Object: res.partner.state2
 
 
 
-Object: res.partner.article.review
-##################################
+Object: res.partner.article.review (res.partner.article.review)
+###############################################################
 
 
 
@@ -134,8 +144,8 @@ Object: res.partner.article.review
 
 
 
-Object: res.partner.article
-###########################
+Object: res.partner.article (res.partner.article)
+#################################################
 
 
 
@@ -240,8 +250,8 @@ Object: res.partner.article
 
 
 
-Object: res.partner.article.keywords
-####################################
+Object: res.partner.article.keywords (res.partner.article.keywords)
+###################################################################
 
 
 
@@ -256,8 +266,8 @@ Object: res.partner.article.keywords
 
 
 
-Object: res.partner.zip.group.type
-##################################
+Object: res.partner.zip.group.type (res.partner.zip.group.type)
+###############################################################
 
 
 
@@ -266,8 +276,8 @@ Object: res.partner.zip.group.type
 
 
 
-Object: res.partner.zip.group
-#############################
+Object: res.partner.zip.group (res.partner.zip.group)
+#####################################################
 
 
 
@@ -282,8 +292,8 @@ Object: res.partner.zip.group
 
 
 
-Object: res.partner.zip
-#######################
+Object: res.partner.zip (res.partner.zip)
+#########################################
 
 
 
@@ -334,8 +344,8 @@ Object: res.partner.zip
     *Distance (km) between zip location and the cci.*
 
 
-Object: res.partner.activity.list
-#################################
+Object: res.partner.activity.list (res.partner.activity.list)
+#############################################################
 
 
 
@@ -350,8 +360,8 @@ Object: res.partner.activity.list
 
 
 
-Object: res.partner.activity
-############################
+Object: res.partner.activity (res.partner.activity)
+###################################################
 
 
 
@@ -384,8 +394,8 @@ Object: res.partner.activity
 
 
 
-Object: res.partner.activity.relation
-#####################################
+Object: res.partner.activity.relation (res.partner.activity.relation)
+#####################################################################
 
 
 
@@ -406,8 +416,8 @@ Object: res.partner.activity.relation
 
 
 
-Object: res.partner.relation.type
-#################################
+Object: res.partner.relation.type (res.partner.relation.type)
+#############################################################
 
 
 
@@ -416,8 +426,8 @@ Object: res.partner.relation.type
 
 
 
-Object: res.partner.country.relation
-####################################
+Object: res.partner.country.relation (res.partner.country.relation)
+###################################################################
 
 
 

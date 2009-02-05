@@ -20,7 +20,7 @@ The screen below shows the parameters of the virtual files in Orders. You define
     .. image::  images/document_virtual_form.png
        :align: center
 
-*Virtual files about purchase orders in Open ERP.*
+*Virtual files about sales orders in Open ERP.*
 
 To see the effect of this configuration, connect to the FTP server and go into a directory for an order, such as Main Repository > Sales Orders > All Sales Orders > SO003. You can then just double-click the file SO003_print.pdf to get a printout of Order SO003. You can attach it to an email or put it on your desktop.
 

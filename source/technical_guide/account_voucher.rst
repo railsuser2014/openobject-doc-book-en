@@ -1,4 +1,13 @@
 
+.. module:: account_voucher
+    :synopsis: Accounting - Voucher Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting - Voucher Management (*account_voucher*)
 ===================================================
 :Module: account_voucher
@@ -6,6 +15,7 @@ Accounting - Voucher Management (*account_voucher*)
 :Version: 5.0.1.0
 :Directory: account_voucher
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -24,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------
@@ -69,8 +79,8 @@ Views
 Objects
 -------
 
-Object: Accounting Voucher
-##########################
+Object: Accounting Voucher (account.voucher)
+############################################
 
 
 
@@ -175,8 +185,8 @@ Object: Accounting Voucher
 
 
 
-Object: Voucher Line
-####################
+Object: Voucher Line (account.voucher.line)
+###########################################
 
 
 

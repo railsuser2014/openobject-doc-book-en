@@ -1,4 +1,13 @@
 
+.. module:: sale_margin
+    :synopsis: Margins in Sale Orders
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Margins in Sale Orders (*sale_margin*)
 ======================================
 :Module: sale_margin
@@ -6,6 +15,7 @@ Margins in Sale Orders (*sale_margin*)
 :Version: 5.0.1.0
 :Directory: sale_margin
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * account - installed
+ * :mod:`sale`
+ * :mod:`account`
 
 Reports
 -------
@@ -60,8 +70,8 @@ Views
 Objects
 -------
 
-Object: report.account.invoice.product
-######################################
+Object: report.account.invoice.product (report.account.invoice.product)
+#######################################################################
 
 
 
@@ -112,8 +122,8 @@ Object: report.account.invoice.product
 
 
 
-Object: report.account.invoice.category
-#######################################
+Object: report.account.invoice.category (report.account.invoice.category)
+#########################################################################
 
 
 
@@ -164,8 +174,8 @@ Object: report.account.invoice.category
 
 
 
-Object: report.account.invoice.partner
-######################################
+Object: report.account.invoice.partner (report.account.invoice.partner)
+#######################################################################
 
 
 
@@ -216,8 +226,8 @@ Object: report.account.invoice.partner
 
 
 
-Object: report.account.invoice.partner.product
-##############################################
+Object: report.account.invoice.partner.product (report.account.invoice.partner.product)
+#######################################################################################
 
 
 
@@ -274,8 +284,8 @@ Object: report.account.invoice.partner.product
 
 
 
-Object: report.account.invoice
-##############################
+Object: report.account.invoice (report.account.invoice)
+#######################################################
 
 
 

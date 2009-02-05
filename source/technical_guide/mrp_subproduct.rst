@@ -1,4 +1,13 @@
 
+.. module:: mrp_subproduct
+    :synopsis: MRP Sub Product
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP Sub Product (*mrp_subproduct*)
 ==================================
 :Module: mrp_subproduct
@@ -6,6 +15,7 @@ MRP Sub Product (*mrp_subproduct*)
 :Version: 5.0.1.0
 :Directory: mrp_subproduct
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -22,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`mrp`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Mrp Sub Product
-#######################
+Object: Mrp Sub Product (mrp.subproduct)
+########################################
 
 
 

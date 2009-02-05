@@ -1,4 +1,13 @@
 
+.. module:: l10n_lu
+    :synopsis: Luxembourg - Plan Comptable Minimum Normalise
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
 =========================================================
 :Module: l10n_lu
@@ -6,6 +15,7 @@ Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)
 :Version: 5.0.1.0
 :Directory: l10n_lu
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -21,10 +31,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_report - installed
- * base_vat - installed
- * base_iban - installed
+ * :mod:`account`
+ * :mod:`account_report`
+ * :mod:`base_vat`
+ * :mod:`base_iban`
 
 Reports
 -------

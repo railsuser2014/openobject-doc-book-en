@@ -1,4 +1,13 @@
 
+.. module:: account_followup
+    :synopsis: Accounting follow-ups management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting follow-ups management (*account_followup*)
 =====================================================
 :Module: account_followup
@@ -6,6 +15,7 @@ Accounting follow-ups management (*account_followup*)
 :Version: 5.0.1.0
 :Directory: account_followup
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -28,7 +38,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -59,8 +69,8 @@ Views
 Objects
 -------
 
-Object: Follow-Ups
-##################
+Object: Follow-Ups (account_followup.followup)
+##############################################
 
 
 
@@ -87,8 +97,8 @@ Object: Follow-Ups
 
 
 
-Object: Follow-Ups Criteria
-###########################
+Object: Follow-Ups Criteria (account_followup.followup.line)
+############################################################
 
 
 
@@ -127,8 +137,8 @@ Object: Follow-Ups Criteria
 
 
 
-Object: Followup statistics
-###########################
+Object: Followup statistics (account_followup.stat)
+###################################################
 
 
 

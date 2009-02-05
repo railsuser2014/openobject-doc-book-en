@@ -1,4 +1,13 @@
 
+.. module:: account_tax_include
+    :synopsis: Invoices and prices with taxes included
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoices and prices with taxes included (*account_tax_include*)
 ===============================================================
 :Module: account_tax_include
@@ -6,6 +15,7 @@ Invoices and prices with taxes included (*account_tax_include*)
 :Version: 5.0.1.0
 :Directory: account_tax_include
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

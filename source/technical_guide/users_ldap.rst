@@ -1,4 +1,13 @@
 
+.. module:: users_ldap
+    :synopsis: Authenticate users with ldap server
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Authenticate users with ldap server (*users_ldap*)
 ==================================================
 :Module: users_ldap
@@ -6,6 +15,7 @@ Authenticate users with ldap server (*users_ldap*)
 :Version: 5.0.0.1
 :Directory: users_ldap
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -41,8 +51,8 @@ Views
 Objects
 -------
 
-Object: res.company.ldap
-########################
+Object: res.company.ldap (res.company.ldap)
+###########################################
 
 
 

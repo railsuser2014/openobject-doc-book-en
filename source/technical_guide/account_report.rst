@@ -1,4 +1,13 @@
 
+.. module:: account_report
+    :synopsis: Reporting for accounting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Reporting for accounting (*account_report*)
 ===========================================
 :Module: account_report
@@ -6,6 +15,7 @@ Reporting for accounting (*account_report*)
 :Version: 5.0.1.0
 :Directory: account_report
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: Account reporting
-#########################
+Object: Account reporting (account.report.report)
+#################################################
 
 
 
@@ -150,8 +160,8 @@ Object: Account reporting
 
 
 
-Object: Indicator
-#################
+Object: Indicator (account.report.history)
+##########################################
 
 
 

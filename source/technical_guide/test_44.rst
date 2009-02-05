@@ -1,4 +1,13 @@
 
+.. module:: test_44
+    :synopsis: Test New Features
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Test New Features (*test_44*)
 =============================
 :Module: test_44
@@ -6,6 +15,7 @@ Test New Features (*test_44*)
 :Version: 5.0.1.0
 :Directory: test_44
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -19,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------
@@ -43,8 +53,8 @@ Views
 Objects
 -------
 
-Object: test.temporal
-#####################
+Object: test.temporal (test.temporal)
+#####################################
 
 
 
@@ -77,8 +87,8 @@ Object: test.temporal
 
 
 
-Object: test.temporal.line
-##########################
+Object: test.temporal.line (test.temporal.line)
+###############################################
 
 
 

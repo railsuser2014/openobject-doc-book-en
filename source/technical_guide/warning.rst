@@ -1,4 +1,13 @@
 
+.. module:: warning
+    :synopsis: Module for Warnings form onchange Event
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module for Warnings form onchange Event (*warning*)
 ===================================================
 :Module: warning
@@ -6,6 +15,7 @@ Module for Warnings form onchange Event (*warning*)
 :Version: 5.0.1.0
 :Directory: warning
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

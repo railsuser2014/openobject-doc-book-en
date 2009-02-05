@@ -1,4 +1,13 @@
 
+.. module:: google_map
+    :synopsis: Google Map
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Google Map (*google_map*)
 =========================
 :Module: google_map
@@ -6,6 +15,7 @@ Google Map (*google_map*)
 :Version: 5.0.1.0
 :Directory: google_map
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

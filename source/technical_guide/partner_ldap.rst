@@ -1,4 +1,13 @@
 
+.. module:: partner_ldap
+    :synopsis: Partner extension to synchronize TinyERP with ldap
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 ===================================================================
 :Module: partner_ldap
@@ -6,6 +15,7 @@ Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 :Version: 5.0.1.0
 :Directory: partner_ldap
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

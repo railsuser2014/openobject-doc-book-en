@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_co
+    :synopsis: Colombia - Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Colombia - Chart of Accounts (*l10n_chart_co*)
 ==============================================
 :Module: l10n_chart_co
@@ -6,6 +15,7 @@ Colombia - Chart of Accounts (*l10n_chart_co*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_co
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`account_chart`
 
 Reports
 -------

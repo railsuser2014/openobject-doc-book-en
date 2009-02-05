@@ -1,4 +1,13 @@
 
+.. module:: project
+    :synopsis: Project Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Management (*project*)
 ==============================
 :Module: project
@@ -6,6 +15,7 @@ Project Management (*project*)
 :Version: 5.0.1.1
 :Directory: project
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * account - installed
- * hr - installed
- * process - installed
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`hr`
+ * :mod:`process`
 
 Reports
 -------
@@ -77,8 +87,8 @@ Views
 Objects
 -------
 
-Object: Project
-###############
+Object: Project (project.project)
+#################################
 
 
 
@@ -237,8 +247,8 @@ Object: Project
     *Percent of tasks closed according to the total of tasks todo.*
 
 
-Object: Project task type
-#########################
+Object: Project task type (project.task.type)
+#############################################
 
 
 
@@ -253,8 +263,8 @@ Object: Project task type
 
 
 
-Object: Task
-############
+Object: Task (project.task)
+###########################
 
 
 
@@ -437,8 +447,8 @@ Object: Task
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
 
-Object: Task Work
-#################
+Object: Task Work (project.task.work)
+#####################################
 
 
 
@@ -507,8 +517,8 @@ Object: Task Work
 
 
 
-Object: config.compute.remaining
-################################
+Object: config.compute.remaining (config.compute.remaining)
+###########################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: account_regularization
+    :synopsis: Account Regularizations
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Regularizations (*account_regularization*)
 ==================================================
 :Module: account_regularization
@@ -6,6 +15,7 @@ Account Regularizations (*account_regularization*)
 :Version: 5.0.1.0
 :Directory: account_regularization
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -43,8 +53,8 @@ Views
 Objects
 -------
 
-Object: Account Regularization Model
-####################################
+Object: Account Regularization Model (account.regularization)
+#############################################################
 
 
 

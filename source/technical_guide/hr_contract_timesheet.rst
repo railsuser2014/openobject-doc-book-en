@@ -1,4 +1,13 @@
 
+.. module:: hr_contract_timesheet
+    :synopsis: Human Resources Timesheets on contracts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 =================================================================
 :Module: hr_contract_timesheet
@@ -6,6 +15,7 @@ Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 :Version: 5.0.0.1
 :Directory: hr_contract_timesheet
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------
@@ -19,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * hr_contract - installed
- * hr_timesheet - installed
+ * :mod:`hr_contract`
+ * :mod:`hr_timesheet`
 
 Reports
 -------

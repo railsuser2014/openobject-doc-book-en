@@ -9,6 +9,7 @@ Accounting workflow and the automatic generation of invoices
 The chart below shows the financial workflow followed by each invoice.
 
 	.. image::  images/account_flow.png
+		:align: center
 
 *Accounting workflow for invoicing and payment*
 

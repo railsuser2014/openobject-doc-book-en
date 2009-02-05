@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_ve
+    :synopsis: Venezuela -Chart of Account
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Venezuela -Chart of Account (*l10n_chart_ve*)
 =============================================
 :Module: l10n_chart_ve
@@ -6,6 +15,7 @@ Venezuela -Chart of Account (*l10n_chart_ve*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ve
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_vat - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_vat`
+ * :mod:`account_chart`
 
 Reports
 -------

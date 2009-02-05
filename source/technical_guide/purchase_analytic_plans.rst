@@ -1,4 +1,13 @@
 
+.. module:: purchase_analytic_plans
+    :synopsis: Purchase Analytic Distribution Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 =====================================================================
 :Module: purchase_analytic_plans
@@ -6,6 +15,7 @@ Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 :Version: 5.0.1.0
 :Directory: purchase_analytic_plans
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
- * account_analytic_plans - installed
+ * :mod:`purchase`
+ * :mod:`account_analytic_plans`
 
 Reports
 -------

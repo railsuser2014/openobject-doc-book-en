@@ -1,4 +1,13 @@
 
+.. module:: marketing
+    :synopsis: Marketing Campaigns
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Marketing Campaigns (*marketing*)
 =================================
 :Module: marketing
@@ -6,6 +15,7 @@ Marketing Campaigns (*marketing*)
 :Version: 5.0.1.0
 :Directory: marketing
 :Web: http://tinyerp.com/module_crm_marketing.html
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: campaign.campaign
-#########################
+Object: campaign.campaign (campaign.campaign)
+#############################################
 
 
 
@@ -101,8 +111,8 @@ Object: campaign.campaign
 
 
 
-Object: campaign.step
-#####################
+Object: campaign.step (campaign.step)
+#####################################
 
 
 
@@ -165,8 +175,8 @@ Object: campaign.step
 
 
 
-Object: campaign.partner
-########################
+Object: campaign.partner (campaign.partner)
+###########################################
 
 
 
@@ -253,8 +263,8 @@ Object: campaign.partner
 
 
 
-Object: campaign.partner.history
-################################
+Object: campaign.partner.history (campaign.partner.history)
+###########################################################
 
 
 

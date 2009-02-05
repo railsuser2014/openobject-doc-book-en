@@ -1,4 +1,13 @@
 
+.. module:: airport
+    :synopsis: Airport
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Airport (*airport*)
 ===================
 :Module: airport
@@ -6,6 +15,7 @@ Airport (*airport*)
 :Version: False
 :Directory: airport
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------

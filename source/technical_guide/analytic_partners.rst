@@ -1,4 +1,13 @@
 
+.. module:: analytic_partners
+    :synopsis: Analytic accounts with multiple partners
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic accounts with multiple partners (*analytic_partners*)
 ==============================================================
 :Module: analytic_partners
@@ -6,6 +15,7 @@ Analytic accounts with multiple partners (*analytic_partners*)
 :Version: 5.0.1.0
 :Directory: analytic_partners
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -26,7 +36,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

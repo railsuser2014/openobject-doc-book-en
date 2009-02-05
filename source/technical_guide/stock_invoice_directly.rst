@@ -1,4 +1,13 @@
 
+.. module:: stock_invoice_directly
+    :synopsis: Invoice Picking Directly
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice Picking Directly (*stock_invoice_directly*)
 ===================================================
 :Module: stock_invoice_directly
@@ -6,6 +15,7 @@ Invoice Picking Directly (*stock_invoice_directly*)
 :Version: 5.0.1.0
 :Directory: stock_invoice_directly
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * delivery - installed
- * stock - installed
+ * :mod:`delivery`
+ * :mod:`stock`
 
 Reports
 -------

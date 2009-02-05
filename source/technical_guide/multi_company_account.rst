@@ -1,4 +1,13 @@
 
+.. module:: multi_company_account
+    :synopsis: Multi company for accounting module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi company for accounting module (*multi_company_account*)
 =============================================================
 :Module: multi_company_account
@@ -6,6 +15,7 @@ Multi company for accounting module (*multi_company_account*)
 :Version: 5.0.0.1
 :Directory: multi_company_account
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account_budget - installed
- * account - installed
- * multi_company - installed
+ * :mod:`base`
+ * :mod:`account_budget`
+ * :mod:`account`
+ * :mod:`multi_company`
 
 Reports
 -------

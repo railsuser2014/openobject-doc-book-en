@@ -1,4 +1,13 @@
 
+.. module:: base_url_menu
+    :synopsis: Url Menus
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Url Menus (*base_url_menu*)
 ===========================
 :Module: base_url_menu
@@ -6,6 +15,7 @@ Url Menus (*base_url_menu*)
 :Version: 5.0.1.1
 :Directory: base_url_menu
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

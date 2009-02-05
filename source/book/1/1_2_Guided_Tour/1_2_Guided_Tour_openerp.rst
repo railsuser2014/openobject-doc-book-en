@@ -22,7 +22,8 @@ Depending on the user you're connected as the page appears differently from the 
 Each of the lists can be reordered by clicking on the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click  *Zoom*  above it. 
 
 
-.. image:: images/admin_project_dashboard.png
+	.. image:: images/admin_project_dashboard.png
+		:align: center
    :scale: 95
 
 *Project Dashboard*
@@ -61,8 +62,8 @@ Above the partner list you'll see a search form that enables you to quickly filt
 If you've applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners (the web client defaults to \ ``20``\  , but you can select a maximum of \ ``100``\   on a page). If you want to display other records you can search for them or navigate through the whole list using the  *First*  /  *Previous*  /  *Next*  /  *Last*  arrows.
 
 
-.. image:: images/partner_search_tab.png
-   :align: center
+	.. image:: images/partner_search_tab.png
+		:align: center
 
 *Standard partner search*
 
@@ -140,8 +141,8 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 
 ---------
 	
-.. image:: images/familiarization_sale_partner.png
-   :align: center
+	.. image:: images/familiarization_sale_partner.png
+   		:align: center
 	   
 *Links for a partner appear in an order form*
 
@@ -370,14 +371,10 @@ Open ERP's replenishment management rules enable the system to generate draft p
 
 ---------
 
-.. image:: images/purchase_workflow.png
-   :align: center
+	.. image:: images/purchase_workflow.png
+   		:align: center
 
 *Purchase order workflow*
-
-.. index::
-   single: Project Management
-.. 
 
 Project Management
 -------------------
@@ -387,8 +384,8 @@ Open ERP's project management tools enable you to handle the definition of task
 All projects are hierarchically structured. You can review all of the projects from the menu  *Project Management > All Projects*  . To view a project's plans, select a project line and then click  *Print* . Then select  *Gantt diagram*  to obtain a graphical representation of the plan.
 
 
-.. image:: images/familiarization_project_gantt.png
-   :align: center
+	.. image:: images/familiarization_project_gantt.png
+   		:align: center
 
 *Project Planning*
 

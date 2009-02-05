@@ -1,4 +1,13 @@
 
+.. module:: sale_journal
+    :synopsis: Managing sales and deliveries by journal
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Managing sales and deliveries by journal (*sale_journal*)
 =========================================================
 :Module: sale_journal
@@ -6,6 +15,7 @@ Managing sales and deliveries by journal (*sale_journal*)
 :Version: 5.0.1.0
 :Directory: sale_journal
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -37,8 +47,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * sale - installed
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------
@@ -98,8 +108,8 @@ Views
 Objects
 -------
 
-Object: Invoice Types
-#####################
+Object: Invoice Types (sale_journal.invoice.type)
+#################################################
 
 
 
@@ -126,8 +136,8 @@ Object: Invoice Types
 
 
 
-Object: Sale Journal
-####################
+Object: Sale Journal (sale_journal.sale.journal)
+################################################
 
 
 
@@ -184,8 +194,8 @@ Object: Sale Journal
 
 
 
-Object: Packings Journal
-########################
+Object: Packings Journal (sale_journal.picking.journal)
+#######################################################
 
 
 
@@ -242,8 +252,8 @@ Object: Packings Journal
 
 
 
-Object: Sales Orders by Journal
-###############################
+Object: Sales Orders by Journal (sale_journal.sale.stats)
+#########################################################
 
 
 
@@ -288,8 +298,8 @@ Object: Sales Orders by Journal
 
 
 
-Object: Stats on packings by invoice method
-###########################################
+Object: Stats on packings by invoice method (sale_journal.invoice.type.stats)
+#############################################################################
 
 
 
@@ -340,8 +350,8 @@ Object: Stats on packings by invoice method
 
 
 
-Object: Packing lists by Journal
-################################
+Object: Packing lists by Journal (sale_journal.picking.stats)
+#############################################################
 
 
 

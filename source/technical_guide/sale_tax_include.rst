@@ -1,4 +1,13 @@
 
+.. module:: sale_tax_include
+    :synopsis: Invoices and prices with taxes included
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoices and prices with taxes included (*sale_tax_include*)
 ============================================================
 :Module: sale_tax_include
@@ -6,6 +15,7 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Version: 5.0.1.0
 :Directory: sale_tax_include
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------
@@ -20,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * account_tax_include - installed
+ * :mod:`sale`
+ * :mod:`account_tax_include`
 
 Reports
 -------

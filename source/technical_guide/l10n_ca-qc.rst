@@ -1,4 +1,13 @@
 
+.. module:: l10n_ca-qc
+    :synopsis: Canada - Quebec Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 ================================================
 :Module: l10n_ca-qc
@@ -6,6 +15,7 @@ Canada - Quebec Chart of Accounts (*l10n_ca-qc*)
 :Version: 5.0.1.0
 :Directory: l10n_ca-qc
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

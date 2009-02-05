@@ -1,4 +1,13 @@
 
+.. module:: l10n_fr_tva_reel
+    :synopsis: France - Régime réel de TVA
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 France - Régime réel de TVA (*l10n_fr_tva_reel*)
 ================================================
 :Module: l10n_fr_tva_reel
@@ -6,6 +15,7 @@ France - Régime réel de TVA (*l10n_fr_tva_reel*)
 :Version: False
 :Directory: l10n_fr_tva_reel
 :Web: http://www.crysalead.com
+:Is certified: no
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_chart - installed
- * l10n_fr - installed
- * l10n_fr_pcg - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_chart`
+ * :mod:`l10n_fr`
+ * :mod:`l10n_fr_pcg`
 
 Reports
 -------

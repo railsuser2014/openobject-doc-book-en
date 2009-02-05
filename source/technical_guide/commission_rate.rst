@@ -1,4 +1,13 @@
 
+.. module:: commission_rate
+    :synopsis: Sale Agent Information
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
@@ -6,6 +15,7 @@ Sale Agent Information (*commission_rate*)
 :Version: 5.0.0.1
 :Directory: commission_rate
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------
@@ -58,8 +68,8 @@ Views
 Objects
 -------
 
-Object: Commission of month
-###########################
+Object: Commission of month (report.commission.month)
+#####################################################
 
 
 

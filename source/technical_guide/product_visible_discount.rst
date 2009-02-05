@@ -1,4 +1,13 @@
 
+.. module:: product_visible_discount
+    :synopsis: Visible Discount Module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Visible Discount Module (*product_visible_discount*)
 ====================================================
 :Module: product_visible_discount
@@ -6,6 +15,7 @@ Visible Discount Module (*product_visible_discount*)
 :Version: 5.0.1.0
 :Directory: product_visible_discount
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -22,10 +32,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`sale`
 
 Reports
 -------

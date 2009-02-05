@@ -1,4 +1,13 @@
 
+.. module:: cci_security
+    :synopsis: CCI Security
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Security (*cci_security*)
 =============================
 :Module: cci_security
@@ -6,6 +15,7 @@ CCI Security (*cci_security*)
 :Version: False
 :Directory: cci_security
 :Web: http://www.openerp.com, http://www.ccilv.be
+:Is certified: no
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * profile_cci - uninstalled
+ * :mod:`profile_cci`
 
 Reports
 -------

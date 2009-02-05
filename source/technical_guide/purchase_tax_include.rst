@@ -1,4 +1,13 @@
 
+.. module:: purchase_tax_include
+    :synopsis: Purchases with taxes included
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchases with taxes included (*purchase_tax_include*)
 ======================================================
 :Module: purchase_tax_include
@@ -6,6 +15,7 @@ Purchases with taxes included (*purchase_tax_include*)
 :Version: 5.0.1.0
 :Directory: purchase_tax_include
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
- * account_tax_include - installed
+ * :mod:`purchase`
+ * :mod:`account_tax_include`
 
 Reports
 -------

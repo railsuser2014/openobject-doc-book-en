@@ -1,4 +1,13 @@
 
+.. module:: profile_bookstore
+    :synopsis: Bookstore Profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Bookstore Profile (*profile_bookstore*)
 =======================================
 :Module: profile_bookstore
@@ -6,6 +15,7 @@ Bookstore Profile (*profile_bookstore*)
 :Version: False
 :Directory: profile_bookstore
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,20 +27,20 @@ Description
 Dependencies
 ------------
 
- * library - installed
- * bookstore - installed
- * point_of_sale - installed
- * stock - installed
- * delivery - installed
- * sale - installed
- * purchase - installed
- * sale_wo_production - installed
- * mrp_jit - installed
- * account - installed
- * account_tax_include - installed
- * sale_tax_include - installed
- * mrp - installed
- * purchase_approve - installed
+ * :mod:`library`
+ * :mod:`bookstore`
+ * :mod:`point_of_sale`
+ * :mod:`stock`
+ * :mod:`delivery`
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`sale_wo_production`
+ * :mod:`mrp_jit`
+ * :mod:`account`
+ * :mod:`account_tax_include`
+ * :mod:`sale_tax_include`
+ * :mod:`mrp`
+ * :mod:`purchase_approve`
 
 Reports
 -------

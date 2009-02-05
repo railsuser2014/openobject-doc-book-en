@@ -1,4 +1,13 @@
 
+.. module:: product_index
+    :synopsis: Manage indexes on products prices
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manage indexes on products prices (*product_index*)
 ===================================================
 :Module: product_index
@@ -6,6 +15,7 @@ Manage indexes on products prices (*product_index*)
 :Version: 5.0.1.0
 :Directory: product_index
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------
@@ -28,8 +38,8 @@ None
 Menus
 -------
 
- * Products/Configuration/Indexes
- * Products/Configuration/Indexes/New index
+ * Books/Configuration/Indexes
+ * Books/Configuration/Indexes/New index
 
 Views
 -----
@@ -42,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Index
-#############
+Object: Index (product.index)
+#############################
 
 
 
@@ -82,8 +92,8 @@ Object: Index
 
 
 
-Object: Index Rate
-##################
+Object: Index Rate (product.index.rate)
+#######################################
 
 
 

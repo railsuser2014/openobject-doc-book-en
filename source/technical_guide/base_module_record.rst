@@ -1,4 +1,13 @@
 
+.. module:: base_module_record
+    :synopsis: Module Recorder
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module Recorder (*base_module_record*)
 ======================================
 :Module: base_module_record
@@ -6,6 +15,7 @@ Module Recorder (*base_module_record*)
 :Version: 5.0.1.0
 :Directory: base_module_record
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -33,7 +43,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -62,5 +72,5 @@ None
 Objects
 -------
 
-Object: ir.module.record
-########################
+Object: ir.module.record (ir.module.record)
+###########################################

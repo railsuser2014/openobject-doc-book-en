@@ -1,4 +1,13 @@
 
+.. module:: account_coda
+    :synopsis: Account CODA
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account CODA (*account_coda*)
 =============================
 :Module: account_coda
@@ -6,6 +15,7 @@ Account CODA (*account_coda*)
 :Version: 5.0.1.0
 :Directory: account_coda
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -19,10 +29,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_report - installed
- * base_iban - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_report`
+ * :mod:`base_iban`
 
 Reports
 -------

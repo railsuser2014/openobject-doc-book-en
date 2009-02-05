@@ -1,4 +1,13 @@
 
+.. module:: crm_configuration
+    :synopsis: Customer Relationship Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Customer Relationship Management (*crm_configuration*)
 ======================================================
 :Module: crm_configuration
@@ -6,6 +15,7 @@ Customer Relationship Management (*crm_configuration*)
 :Version: 5.0.1.0
 :Directory: crm_configuration
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -24,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * crm - installed
- * report_crm - installed
- * process - installed
+ * :mod:`crm`
+ * :mod:`report_crm`
+ * :mod:`process`
 
 Reports
 -------
@@ -94,8 +104,8 @@ Views
 Objects
 -------
 
-Object: Category2 of case
-#########################
+Object: Category2 of case (crm.case.category2)
+##############################################
 
 
 
@@ -110,8 +120,8 @@ Object: Category2 of case
 
 
 
-Object: Stage of case
-#####################
+Object: Stage of case (crm.case.stage)
+######################################
 
 
 
@@ -126,8 +136,8 @@ Object: Stage of case
 
 
 
-Object: crm.menu.config_wizard
-##############################
+Object: crm.menu.config_wizard (crm.menu.config_wizard)
+#######################################################
 
 
 
@@ -196,8 +206,8 @@ Object: crm.menu.config_wizard
     *Tracks identified business opportunities for your sales pipeline.*
 
 
-Object: Cases by section and category2
-######################################
+Object: Cases by section and category2 (report.crm.case.section.categ2)
+#######################################################################
 
 
 
@@ -254,8 +264,8 @@ Object: Cases by section and category2
 
 
 
-Object: Cases by section and stage
-##################################
+Object: Cases by section and stage (report.crm.case.section.stage)
+##################################################################
 
 
 
@@ -312,8 +322,8 @@ Object: Cases by section and stage
 
 
 
-Object: Cases by section, Category and stage
-############################################
+Object: Cases by section, Category and stage (report.crm.case.section.categ.stage)
+##################################################################################
 
 
 
@@ -364,8 +374,8 @@ Object: Cases by section, Category and stage
 
 
 
-Object: Cases by section, Category and Category2
-################################################
+Object: Cases by section, Category and Category2 (report.crm.case.section.categ.categ2)
+#######################################################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: product_search_reference
+    :synopsis: Products Search Reference
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products Search Reference (*product_search_reference*)
 ======================================================
 :Module: product_search_reference
@@ -6,6 +15,7 @@ Products Search Reference (*product_search_reference*)
 :Version: 5.0.0.1
 :Directory: product_search_reference
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------

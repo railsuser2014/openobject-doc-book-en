@@ -1,4 +1,13 @@
 
+.. module:: md_hr_employee
+    :synopsis: Pilot Human Resources
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Pilot Human Resources (*md_hr_employee*)
 ========================================
 :Module: md_hr_employee
@@ -6,6 +15,7 @@ Pilot Human Resources (*md_hr_employee*)
 :Version: 5.0.1.0
 :Directory: md_hr_employee
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
- * hr_holidays_request - installed
- * md_hr_contract - installed
- * hr_evaluation - installed
+ * :mod:`base`
+ * :mod:`hr`
+ * :mod:`hr_holidays_request`
+ * :mod:`md_hr_contract`
+ * :mod:`hr_evaluation`
 
 Reports
 -------
@@ -62,8 +72,8 @@ Views
 Objects
 -------
 
-Object: Street
-##############
+Object: Street (md.hr.address.street)
+#####################################
 
 
 
@@ -72,8 +82,8 @@ Object: Street
 
 
 
-Object: Zip
-###########
+Object: Zip (md.hr.address.zip)
+###############################
 
 
 
@@ -82,8 +92,8 @@ Object: Zip
 
 
 
-Object: Town
-############
+Object: Town (md.hr.address.town)
+#################################
 
 
 
@@ -92,8 +102,8 @@ Object: Town
 
 
 
-Object: Employee Address
-########################
+Object: Employee Address (md.hr.address)
+########################################
 
 
 
@@ -144,8 +154,8 @@ Object: Employee Address
 
 
 
-Object: Maximun Travel allowance per year and per day
-#####################################################
+Object: Maximun Travel allowance per year and per day (hr.employee.max.travel.allow)
+####################################################################################
 
 
 

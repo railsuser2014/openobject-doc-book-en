@@ -1,4 +1,13 @@
 
+.. module:: hr_skill
+    :synopsis: Skill Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Skill Management (*hr_skill*)
 =============================
 :Module: hr_skill
@@ -6,6 +15,7 @@ Skill Management (*hr_skill*)
 :Version: 5.0.0.1
 :Directory: hr_skill
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hr - installed
+ * :mod:`hr`
 
 Reports
 -------
@@ -68,8 +78,8 @@ Views
 Objects
 -------
 
-Object: hr_skill.weight.category
-################################
+Object: hr_skill.weight.category (hr_skill.weight.category)
+###########################################################
 
 
 
@@ -78,8 +88,8 @@ Object: hr_skill.weight.category
 
 
 
-Object: hr_skill.weight
-#######################
+Object: hr_skill.weight (hr_skill.weight)
+#########################################
 
 
 
@@ -100,8 +110,8 @@ Object: hr_skill.weight
 
 
 
-Object: hr_skill.skill
-######################
+Object: hr_skill.skill (hr_skill.skill)
+#######################################
 
 
 
@@ -146,8 +156,8 @@ Object: hr_skill.skill
 
 
 
-Object: hr_skill.experience.category
-####################################
+Object: hr_skill.experience.category (hr_skill.experience.category)
+###################################################################
 
 
 
@@ -156,8 +166,8 @@ Object: hr_skill.experience.category
 
 
 
-Object: hr_skill.experience
-###########################
+Object: hr_skill.experience (hr_skill.experience)
+#################################################
 
 
 
@@ -184,8 +194,8 @@ Object: hr_skill.experience
 
 
 
-Object: hr_skill.evaluation.category
-####################################
+Object: hr_skill.evaluation.category (hr_skill.evaluation.category)
+###################################################################
 
 
 
@@ -194,8 +204,8 @@ Object: hr_skill.evaluation.category
 
 
 
-Object: hr_skill.evaluation
-###########################
+Object: hr_skill.evaluation (hr_skill.evaluation)
+#################################################
 
 
 
@@ -258,8 +268,8 @@ Object: hr_skill.evaluation
 
 
 
-Object: hr_skill.profile
-########################
+Object: hr_skill.profile (hr_skill.profile)
+###########################################
 
 
 
@@ -274,8 +284,8 @@ Object: hr_skill.profile
 
 
 
-Object: hr_skill.position
-#########################
+Object: hr_skill.position (hr_skill.position)
+#############################################
 
 
 
@@ -302,8 +312,8 @@ Object: hr_skill.position
 
 
 
-Object: hr_skill.position.profile
-#################################
+Object: hr_skill.position.profile (hr_skill.position.profile)
+#############################################################
 
 
 
@@ -330,8 +340,8 @@ Object: hr_skill.position.profile
 
 
 
-Object: hr_skill.experience.skill
-#################################
+Object: hr_skill.experience.skill (hr_skill.experience.skill)
+#############################################################
 
 
 
@@ -358,8 +368,8 @@ Object: hr_skill.experience.skill
 
 
 
-Object: hr_skill.profile.skill
-##############################
+Object: hr_skill.profile.skill (hr_skill.profile.skill)
+#######################################################
 
 
 
@@ -386,8 +396,8 @@ Object: hr_skill.profile.skill
 
 
 
-Object: hr_skill.evaluation.experience
-######################################
+Object: hr_skill.evaluation.experience (hr_skill.evaluation.experience)
+#######################################################################
 
 
 
@@ -414,8 +424,8 @@ Object: hr_skill.evaluation.experience
 
 
 
-Object: hr_skill.evaluation.skill
-#################################
+Object: hr_skill.evaluation.skill (hr_skill.evaluation.skill)
+#############################################################
 
 
 
@@ -442,8 +452,8 @@ Object: hr_skill.evaluation.skill
 
 
 
-Object: Languages
-#################
+Object: Languages (hr.lang)
+###########################
 
 
 
@@ -452,8 +462,8 @@ Object: Languages
 
 
 
-Object: Languages
-#################
+Object: Languages (emp.lang)
+############################
 
 
 
@@ -486,8 +496,8 @@ Object: Languages
 
 
 
-Object: Pay Scales
-##################
+Object: Pay Scales (hr.scale)
+#############################
 
 
 
@@ -526,8 +536,8 @@ Object: Pay Scales
 
 
 
-Object: employee.status
-#######################
+Object: employee.status (employee.status)
+#########################################
 
 
 

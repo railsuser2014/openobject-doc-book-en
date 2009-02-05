@@ -1,4 +1,13 @@
 
+.. module:: account_analytic_default
+    :synopsis: Account Analytic Default
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Analytic Default (*account_analytic_default*)
 =====================================================
 :Module: account_analytic_default
@@ -6,6 +15,7 @@ Account Analytic Default (*account_analytic_default*)
 :Version: 5.0.1.0
 :Directory: account_analytic_default
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -22,7 +32,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Analytic Distributions
-##############################
+Object: Analytic Distributions (account.analytic.default)
+#########################################################
 
 
 

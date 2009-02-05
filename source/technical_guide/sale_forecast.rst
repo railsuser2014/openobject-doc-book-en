@@ -1,4 +1,13 @@
 
+.. module:: sale_forecast
+    :synopsis: Sales Forecasts, goals and statistics
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Forecasts, goals and statistics (*sale_forecast*)
 =======================================================
 :Module: sale_forecast
@@ -6,6 +15,7 @@ Sales Forecasts, goals and statistics (*sale_forecast*)
 :Version: 5.0.1.0
 :Directory: sale_forecast
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -18,10 +28,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_invoice_salesman - installed
- * crm - installed
- * sale - installed
+ * :mod:`account`
+ * :mod:`account_invoice_salesman`
+ * :mod:`crm`
+ * :mod:`sale`
 
 Reports
 -------
@@ -55,8 +65,8 @@ Views
 Objects
 -------
 
-Object: Sales Forecast
-######################
+Object: Sales Forecast (sale.forecast)
+######################################
 
 
 
@@ -107,8 +117,8 @@ Object: Sales Forecast
 
 
 
-Object: Forecast Line
-#####################
+Object: Forecast Line (sale.forecast.line)
+##########################################
 
 
 

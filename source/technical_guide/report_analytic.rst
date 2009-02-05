@@ -1,4 +1,13 @@
 
+.. module:: report_analytic
+    :synopsis: Analytic Account Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic Account Reporting (*report_analytic*)
 ==============================================
 :Module: report_analytic
@@ -6,6 +15,7 @@ Analytic Account Reporting (*report_analytic*)
 :Version: 5.0.1.0
 :Directory: report_analytic
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet_invoice - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
 
 Reports
 -------
@@ -42,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Analytic account to close
-#################################
+Object: Analytic account to close (report.analytic.account.close)
+#################################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: cci_event
+    :synopsis: CCI EVENT
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI EVENT (*cci_event*)
 =======================
 :Module: cci_event
@@ -6,6 +15,7 @@ CCI EVENT (*cci_event*)
 :Version: 5.0.1.0
 :Directory: cci_event
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * event_project - installed
- * account_payment - installed
- * membership - installed
- * cci_account - installed
- * cci_partner - installed
+ * :mod:`event_project`
+ * :mod:`account_payment`
+ * :mod:`membership`
+ * :mod:`cci_account`
+ * :mod:`cci_partner`
 
 Reports
 -------
@@ -76,8 +86,8 @@ Views
 Objects
 -------
 
-Object: event.meeting.table
-###########################
+Object: event.meeting.table (event.meeting.table)
+#################################################
 
 
 
@@ -122,8 +132,8 @@ Object: event.meeting.table
 
 
 
-Object: event.check.type
-########################
+Object: event.check.type (event.check.type)
+###########################################
 
 
 
@@ -132,8 +142,8 @@ Object: event.check.type
 
 
 
-Object: event.check
-###################
+Object: event.check (event.check)
+#################################
 
 
 
@@ -190,8 +200,8 @@ Object: event.check
 
 
 
-Object: event.group
-###################
+Object: event.group (event.group)
+#################################
 
 
 

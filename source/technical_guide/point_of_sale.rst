@@ -1,4 +1,13 @@
 
+.. module:: point_of_sale
+    :synopsis: Point Of Sale
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Point Of Sale (*point_of_sale*)
 ===============================
 :Module: point_of_sale
@@ -6,6 +15,7 @@ Point Of Sale (*point_of_sale*)
 :Version: 5.0.1.0
 :Directory: point_of_sale
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -23,10 +33,10 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------
@@ -71,8 +81,8 @@ Views
 Objects
 -------
 
-Object: Point of Sale journal configuration.
-############################################
+Object: Point of Sale journal configuration. (pos.config.journal)
+#################################################################
 
 
 
@@ -93,8 +103,8 @@ Object: Point of Sale journal configuration.
 
 
 
-Object: Point of Sale
-#####################
+Object: Point of Sale (pos.order)
+#################################
 
 
 
@@ -235,8 +245,8 @@ Object: Point of Sale
 
 
 
-Object: Lines of Point of Sale
-##############################
+Object: Lines of Point of Sale (pos.order.line)
+###############################################
 
 
 
@@ -287,8 +297,8 @@ Object: Lines of Point of Sale
 
 
 
-Object: Pos Payment
-###################
+Object: Pos Payment (pos.payment)
+#################################
 
 
 
@@ -339,8 +349,8 @@ Object: Pos Payment
 
 
 
-Object: transaction for the pos
-###############################
+Object: transaction for the pos (report.transaction.pos)
+########################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: cci_base_contact
+    :synopsis: CCI Base Contact
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Base Contact (*cci_base_contact*)
 =====================================
 :Module: cci_base_contact
@@ -6,6 +15,7 @@ CCI Base Contact (*cci_base_contact*)
 :Version: 5.0.1.0
 :Directory: cci_base_contact
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -18,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * base_contact - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`base_contact`
+ * :mod:`project`
 
 Reports
 -------
@@ -53,8 +63,8 @@ Views
 Objects
 -------
 
-Object: res.partner.contact.link.type
-#####################################
+Object: res.partner.contact.link.type (res.partner.contact.link.type)
+#####################################################################
 
 
 
@@ -63,8 +73,8 @@ Object: res.partner.contact.link.type
 
 
 
-Object: res.partner.contact.link
-################################
+Object: res.partner.contact.link (res.partner.contact.link)
+###########################################################
 
 
 

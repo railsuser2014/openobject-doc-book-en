@@ -1,4 +1,13 @@
 
+.. module:: account_bob_import
+    :synopsis: Import accounting entries from Bob
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Import accounting entries from Bob (*account_bob_import*)
 =========================================================
 :Module: account_bob_import
@@ -6,6 +15,7 @@ Import accounting entries from Bob (*account_bob_import*)
 :Version: 5.0.1.0
 :Directory: account_bob_import
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -24,9 +34,9 @@ Description
 Dependencies
 ------------
 
- * base_contact - installed
- * account_l10nbe_domiciliation - installed
- * l10n_be - installed
+ * :mod:`base_contact`
+ * :mod:`account_l10nbe_domiciliation`
+ * :mod:`l10n_be`
 
 Reports
 -------
@@ -51,8 +61,8 @@ Views
 Objects
 -------
 
-Object: config.bob.import
-#########################
+Object: config.bob.import (config.bob.import)
+#############################################
 
 
 
@@ -79,8 +89,8 @@ Object: config.bob.import
     *If this machine is the server, select 'locally' as the location.If this is the client machine, create a zip of the 'Bob' folder placed in Root(Drive Letter)://Program Files/Bob.Upload it and follow the further instructions.*
 
 
-Object: config.path.folder
-##########################
+Object: config.path.folder (config.path.folder)
+###############################################
 
 
 

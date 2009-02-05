@@ -1,4 +1,13 @@
 
+.. module:: report_hotel_restaurant
+    :synopsis: Restaurant Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Restaurant Management - Reporting (*report_hotel_restaurant*)
 =============================================================
 :Module: report_hotel_restaurant
@@ -6,6 +15,7 @@ Restaurant Management - Reporting (*report_hotel_restaurant*)
 :Version: 5.0.1.0
 :Directory: report_hotel_restaurant
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hotel_restaurant - installed
+ * :mod:`hotel_restaurant`
 
 Reports
 -------
@@ -46,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Reservation By State
-############################
+Object: Reservation By State (report.hotel.restaurant.status)
+#############################################################
 
 
 

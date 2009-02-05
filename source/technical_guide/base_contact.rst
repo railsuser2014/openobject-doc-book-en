@@ -1,4 +1,13 @@
 
+.. module:: base_contact
+    :synopsis: Base Contact
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Contact (*base_contact*)
 =============================
 :Module: base_contact
@@ -6,6 +15,7 @@ Base Contact (*base_contact*)
 :Version: 5.0.1.0
 :Directory: base_contact
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -28,8 +38,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------
@@ -67,8 +77,8 @@ Views
 Objects
 -------
 
-Object: res.partner.contact
-###########################
+Object: res.partner.contact (res.partner.contact)
+#################################################
 
 
 
@@ -263,8 +273,8 @@ Object: res.partner.contact
 
 
 
-Object: Contact Partner Function
-################################
+Object: Contact Partner Function (res.partner.job)
+##################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: profile_association
+    :synopsis: Association profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Association profile (*profile_association*)
 ===========================================
 :Module: profile_association
@@ -6,6 +15,7 @@ Association profile (*profile_association*)
 :Version: False
 :Directory: profile_association
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * membership - installed
- * board_association - installed
+ * :mod:`membership`
+ * :mod:`board_association`
 
 Reports
 -------

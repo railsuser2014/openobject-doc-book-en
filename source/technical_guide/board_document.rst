@@ -1,4 +1,13 @@
 
+.. module:: board_document
+    :synopsis: Dashboard for Document Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for Document Management (*board_document*)
 ====================================================
 :Module: board_document
@@ -6,6 +15,7 @@ Dashboard for Document Management (*board_document*)
 :Version: 5.0.1.0
 :Directory: board_document
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * document - installed
- * report_document - installed
+ * :mod:`board`
+ * :mod:`document`
+ * :mod:`report_document`
 
 Reports
 -------

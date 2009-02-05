@@ -1,4 +1,13 @@
 
+.. module:: sale_intercompany_auto
+    :synopsis: Sale Inter-Company - Fully Automatic
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 ===============================================================
 :Module: sale_intercompany_auto
@@ -6,6 +15,7 @@ Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 :Version: 5.0.1.0
 :Directory: sale_intercompany_auto
 :Web: http://tinyerp.com/module_sale.html
+:Is certified: no
 
 Description
 -----------
@@ -28,8 +38,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------

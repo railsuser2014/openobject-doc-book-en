@@ -1,4 +1,13 @@
 
+.. module:: hr_holidays
+    :synopsis: Human Resources: Holidays management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources: Holidays management (*hr_holidays*)
 ====================================================
 :Module: hr_holidays
@@ -6,6 +15,7 @@ Human Resources: Holidays management (*hr_holidays*)
 :Version: 5.0.1.1
 :Directory: hr_holidays
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -34,9 +44,9 @@ Description
 Dependencies
 ------------
 
- * hr - installed
- * crm_configuration - installed
- * process - installed
+ * :mod:`hr`
+ * :mod:`crm_configuration`
+ * :mod:`process`
 
 Reports
 -------
@@ -77,8 +87,8 @@ Views
 Objects
 -------
 
-Object: Holidays Status
-#######################
+Object: Holidays Status (hr.holidays.status)
+############################################
 
 
 
@@ -111,8 +121,8 @@ Object: Holidays Status
 
 
 
-Object: Holidays
-################
+Object: Holidays (hr.holidays)
+##############################
 
 
 
@@ -223,8 +233,8 @@ Object: Holidays
 
 
 
-Object: Holidays Per User
-#########################
+Object: Holidays Per User (hr.holidays.per.user)
+################################################
 
 
 
@@ -281,8 +291,8 @@ Object: Holidays Per User
 
 
 
-Object: hr.holidays.log
-#######################
+Object: hr.holidays.log (hr.holidays.log)
+#########################################
 
 
 

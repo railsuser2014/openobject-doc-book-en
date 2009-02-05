@@ -1,4 +1,13 @@
 
+.. module:: account_analytic_analysis
+    :synopsis: report_account_analytic
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 report_account_analytic (*account_analytic_analysis*)
 =====================================================
 :Module: account_analytic_analysis
@@ -6,6 +15,7 @@ report_account_analytic (*account_analytic_analysis*)
 :Version: 5.0.1.1
 :Directory: account_analytic_analysis
 :Web: http://www.camptocamp.com/
+:Is certified: yes
 
 Description
 -----------
@@ -19,10 +29,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet - installed
- * hr_timesheet_invoice - installed
- * project - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`project`
 
 Reports
 -------
@@ -58,8 +68,8 @@ Views
 Objects
 -------
 
-Object: Hours summary by user
-#############################
+Object: Hours summary by user (account_analytic_analysis.summary.user)
+######################################################################
 
 
 
@@ -80,8 +90,8 @@ Object: Hours summary by user
 
 
 
-Object: Hours summary by month
-##############################
+Object: Hours summary by month (account_analytic_analysis.summary.month)
+########################################################################
 
 
 

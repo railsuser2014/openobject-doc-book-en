@@ -1,4 +1,13 @@
 
+.. module:: cci_country
+    :synopsis: CCI Country
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Country (*cci_country*)
 ===========================
 :Module: cci_country
@@ -6,6 +15,7 @@ CCI Country (*cci_country*)
 :Version: 5.0.1.0
 :Directory: cci_country
 :Web: http://www.ccilv.be
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -44,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Country or Area for CCI
-###############################
+Object: Country or Area for CCI (cci.country)
+#############################################
 
 
 

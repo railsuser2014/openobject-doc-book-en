@@ -1,4 +1,13 @@
 
+.. module:: maintenance_editor
+    :synopsis: Base
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base (*maintenance_editor*)
 ===========================
 :Module: maintenance_editor
@@ -6,6 +15,7 @@ Base (*maintenance_editor*)
 :Version: 5.0.1.0
 :Directory: maintenance_editor
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -44,8 +54,8 @@ Views
 Objects
 -------
 
-Object: maintenance modules
-###########################
+Object: maintenance modules (maintenance.maintenance.module)
+############################################################
 
 
 
@@ -60,8 +70,8 @@ Object: maintenance modules
 
 
 
-Object: maintenance
-###################
+Object: maintenance (maintenance.maintenance)
+#############################################
 
 
 

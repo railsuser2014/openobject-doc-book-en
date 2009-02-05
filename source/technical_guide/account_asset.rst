@@ -1,4 +1,13 @@
 
+.. module:: account_asset
+    :synopsis: Asset management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Asset management (*account_asset*)
 ==================================
 :Module: account_asset
@@ -6,6 +15,7 @@ Asset management (*account_asset*)
 :Version: 5.0.1.0
 :Directory: account_asset
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------
@@ -21,8 +31,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_simulation - installed
+ * :mod:`account`
+ * :mod:`account_simulation`
 
 Reports
 -------
@@ -61,8 +71,8 @@ Views
 Objects
 -------
 
-Object: Asset category
-######################
+Object: Asset category (account.asset.category)
+###############################################
 
 
 
@@ -83,8 +93,8 @@ Object: Asset category
 
 
 
-Object: Asset
-#############
+Object: Asset (account.asset.asset)
+###################################
 
 
 
@@ -183,8 +193,8 @@ Object: Asset
 
 
 
-Object: Asset property
-######################
+Object: Asset property (account.asset.property)
+###############################################
 
 
 
@@ -313,8 +323,8 @@ Object: Asset property
 
 
 
-Object: Asset history
-#####################
+Object: Asset history (account.asset.property.history)
+######################################################
 
 
 
@@ -365,8 +375,8 @@ Object: Asset history
 
 
 
-Object: Asset board
-###################
+Object: Asset board (account.asset.board)
+#########################################
 
 
 

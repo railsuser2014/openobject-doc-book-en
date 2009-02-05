@@ -1,4 +1,13 @@
 
+.. module:: merge_picking
+    :synopsis: Merge Picking
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Merge Picking (*merge_picking*)
 ===============================
 :Module: merge_picking
@@ -6,6 +15,7 @@ Merge Picking (*merge_picking*)
 :Version: 5.0.1.0
 :Directory: merge_picking
 :Web: www.axelor.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * stock - installed
+ * :mod:`base`
+ * :mod:`stock`
 
 Reports
 -------

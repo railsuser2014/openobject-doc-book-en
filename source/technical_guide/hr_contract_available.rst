@@ -1,4 +1,13 @@
 
+.. module:: hr_contract_available
+    :synopsis: Human Resources Contracts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Contracts (*hr_contract_available*)
 ===================================================
 :Module: hr_contract_available
@@ -6,6 +15,7 @@ Human Resources Contracts (*hr_contract_available*)
 :Version: False
 :Directory: hr_contract_available
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * hr_contract - installed
+ * :mod:`hr_contract`
 
 Reports
 -------
@@ -47,5 +57,5 @@ None
 Objects
 -------
 
-Object: Allocations
-###################
+Object: Allocations (hr.allocation)
+###################################

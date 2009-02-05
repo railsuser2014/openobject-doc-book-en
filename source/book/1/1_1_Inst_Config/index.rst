@@ -1,6 +1,3 @@
-.. index::
-   single: Open ERP Configuration
-.. 
 
 Installation and Configuration
 ###############################
@@ -9,10 +6,14 @@ Installation and Configuration
 
 
 	.. image:: images/ch1_outline.png
+		:align: center
 
 *Your options for reading this section of the book*
 
 This chapter focuses on the installation of Open ERP so that you can begin to familiarize yourselves with its use. If you're not a systems administrator, or if you've already installed Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and move straight to Chapter 2. If you've already used Open ERP (or Tiny ERP) a bit then you can move past that to Chapter 3 in this section of the book.
+
+.. index::
+   single: Tiny ERP
 
 .. tip::   **Reminder**  *Renaming from Tiny ERP to Open ERP* 
 

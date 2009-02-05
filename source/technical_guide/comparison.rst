@@ -1,4 +1,13 @@
 
+.. module:: comparison
+    :synopsis: ERP Comparisons
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 ERP Comparisons (*comparison*)
 ==============================
 :Module: comparison
@@ -6,6 +15,7 @@ ERP Comparisons (*comparison*)
 :Version: 5.0.0.1
 :Directory: comparison
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -64,8 +74,8 @@ Views
 Objects
 -------
 
-Object: comparison.user
-#######################
+Object: comparison.user (comparison.user)
+#########################################
 
 
 
@@ -92,8 +102,8 @@ Object: comparison.user
 
 
 
-Object: comparison.item
-#######################
+Object: comparison.item (comparison.item)
+#########################################
 
 
 
@@ -132,8 +142,8 @@ Object: comparison.item
 
 
 
-Object: comparison.factor
-#########################
+Object: comparison.factor (comparison.factor)
+#############################################
 
 
 
@@ -202,8 +212,8 @@ Object: comparison.factor
 
 
 
-Object: comparison.vote.values
-##############################
+Object: comparison.vote.values (comparison.vote.values)
+#######################################################
 
 
 
@@ -218,8 +228,8 @@ Object: comparison.vote.values
 
 
 
-Object: comparison.vote
-#######################
+Object: comparison.vote (comparison.vote)
+#########################################
 
 
 
@@ -252,8 +262,8 @@ Object: comparison.vote
 
 
 
-Object: comparison.factor.result
-################################
+Object: comparison.factor.result (comparison.factor.result)
+###########################################################
 
 
 
@@ -280,8 +290,8 @@ Object: comparison.factor.result
 
 
 
-Object: comparison.ponderation.suggestion
-#########################################
+Object: comparison.ponderation.suggestion (comparison.ponderation.suggestion)
+#############################################################################
 
 
 

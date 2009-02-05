@@ -1,4 +1,13 @@
 
+.. module:: account_invoice_salesman
+    :synopsis: Salesman on invoices
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Salesman on invoices (*account_invoice_salesman*)
 =================================================
 :Module: account_invoice_salesman
@@ -6,6 +15,7 @@ Salesman on invoices (*account_invoice_salesman*)
 :Version: 5.0.1.0
 :Directory: account_invoice_salesman
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

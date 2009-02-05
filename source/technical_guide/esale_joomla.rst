@@ -1,4 +1,13 @@
 
+.. module:: esale_joomla
+    :synopsis: eSale Interface - Joomla
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 eSale Interface - Joomla (*esale_joomla*)
 =========================================
 :Module: esale_joomla
@@ -6,6 +15,7 @@ eSale Interface - Joomla (*esale_joomla*)
 :Version: 5.0.1.0
 :Directory: esale_joomla
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -24,11 +34,11 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * sale - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------
@@ -54,8 +64,8 @@ None
 Objects
 -------
 
-Object: eCommerce Website
-#########################
+Object: eCommerce Website (esale_joomla.web)
+############################################
 
 
 
@@ -112,8 +122,8 @@ Object: eCommerce Website
 
 
 
-Object: eSale Tax
-#################
+Object: eSale Tax (esale_joomla.tax)
+####################################
 
 
 
@@ -140,8 +150,8 @@ Object: eSale Tax
 
 
 
-Object: eSale Category
-######################
+Object: eSale Category (esale_joomla.category)
+##############################################
 
 
 
@@ -174,8 +184,8 @@ Object: eSale Category
 
 
 
-Object: eSale Product
-#####################
+Object: eSale Product (esale_joomla.product)
+############################################
 
 
 
@@ -208,8 +218,8 @@ Object: eSale Product
 
 
 
-Object: eSale Language
-######################
+Object: eSale Language (esale_joomla.lang)
+##########################################
 
 
 
@@ -236,8 +246,8 @@ Object: eSale Language
 
 
 
-Object: eShop Partner
-#####################
+Object: eShop Partner (esale_joomla.partner)
+############################################
 
 
 
@@ -294,8 +304,8 @@ Object: eShop Partner
 
 
 
-Object: esale_joomla.order
-##########################
+Object: esale_joomla.order (esale_joomla.order)
+###############################################
 
 
 
@@ -376,8 +386,8 @@ Object: esale_joomla.order
 
 
 
-Object: eSale Order line
-########################
+Object: eSale Order line (esale_joomla.order.line)
+##################################################
 
 
 
@@ -416,8 +426,8 @@ Object: eSale Order line
 
 
 
-Object: eSale webshop Synchronisation log
-#########################################
+Object: eSale webshop Synchronisation log (esale_joomla.web.exportlog)
+######################################################################
 
 
 

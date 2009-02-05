@@ -1,4 +1,13 @@
 
+.. module:: document_extension
+    :synopsis: Extension Module of Document Management System
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension
@@ -6,6 +15,7 @@ Extension Module of Document Management System (*document_extension*)
 :Version: 5.0.1.0
 :Directory: document_extension
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
- * document - installed
+ * :mod:`base`
+ * :mod:`process`
+ * :mod:`document`
 
 Reports
 -------

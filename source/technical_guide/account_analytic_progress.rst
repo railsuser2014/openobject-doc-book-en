@@ -1,4 +1,13 @@
 
+.. module:: account_analytic_progress
+    :synopsis: account_analytic_progress
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_analytic_progress (*account_analytic_progress*)
 =======================================================
 :Module: account_analytic_progress
@@ -6,6 +15,7 @@ account_analytic_progress (*account_analytic_progress*)
 :Version: 5.0.1.0
 :Directory: account_analytic_progress
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * account_analytic_analysis - installed
+ * :mod:`account_analytic_analysis`
 
 Reports
 -------

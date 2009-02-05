@@ -1,4 +1,13 @@
 
+.. module:: product_gtin
+    :synopsis: Product GTIN EAN UPC JPC Support
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product GTIN EAN UPC JPC Support (*product_gtin*)
 =================================================
 :Module: product_gtin
@@ -6,6 +15,7 @@ Product GTIN EAN UPC JPC Support (*product_gtin*)
 :Version: 5.0.1.0
 :Directory: product_gtin
 :Web: http://www.chricar.at/ChriCar
+:Is certified: no
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * product - installed
+ * :mod:`product`
 
 Reports
 -------

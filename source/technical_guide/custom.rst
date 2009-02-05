@@ -1,4 +1,13 @@
 
+.. module:: custom
+    :synopsis: Module for custom developments
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module for custom developments (*custom*)
 =========================================
 :Module: custom
@@ -6,6 +15,7 @@ Module for custom developments (*custom*)
 :Version: 5.0.1.0
 :Directory: custom
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

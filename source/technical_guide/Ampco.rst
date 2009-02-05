@@ -1,4 +1,13 @@
 
+.. module:: Ampco
+    :synopsis: Ampco
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Ampco (*Ampco*)
 ===============
 :Module: Ampco
@@ -6,6 +15,7 @@ Ampco (*Ampco*)
 :Version: 5.0.1.0
 :Directory: Ampco
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------
@@ -30,8 +40,8 @@ None
 Menus
 -------
 
- * Products/Configuration/Heatcode/Properties
- * Products/Configuration/Heatcode/Product Heatcode
+ * Books/Configuration/Heatcode/Properties
+ * Books/Configuration/Heatcode/Product Heatcode
 
 Views
 -----
@@ -51,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Properties
-##################
+Object: Properties (properties.details)
+#######################################
 
 
 
@@ -79,8 +89,8 @@ Object: Properties
 
 
 
-Object: Product HeatCode
-########################
+Object: Product HeatCode (product.heatcode)
+###########################################
 
 
 
@@ -101,8 +111,8 @@ Object: Product HeatCode
 
 
 
-Object: Product's Properties
-############################
+Object: Product's Properties (product.properties)
+#################################################
 
 
 

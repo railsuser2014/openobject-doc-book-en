@@ -1,4 +1,13 @@
 
+.. module:: board_account
+    :synopsis: Board for accountant
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for accountant (*board_account*)
 ======================================
 :Module: board_account
@@ -6,6 +15,7 @@ Board for accountant (*board_account*)
 :Version: 5.0.1.0
 :Directory: board_account
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -23,13 +33,13 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet_invoice - installed
- * board - installed
- * report_account - installed
- * report_analytic - installed
- * report_analytic_line - installed
- * account_report - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`board`
+ * :mod:`report_account`
+ * :mod:`report_analytic`
+ * :mod:`report_analytic_line`
+ * :mod:`account_report`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: delivery
+    :synopsis: Carriers and deliveries
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Carriers and deliveries (*delivery*)
 ====================================
 :Module: delivery
@@ -6,6 +15,7 @@ Carriers and deliveries (*delivery*)
 :Version: 5.0.1.0
 :Directory: delivery
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * stock - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`stock`
 
 Reports
 -------
@@ -54,8 +64,8 @@ Views
 Objects
 -------
 
-Object: Carrier and delivery grids
-##################################
+Object: Carrier and delivery grids (delivery.carrier)
+#####################################################
 
 
 
@@ -94,8 +104,8 @@ Object: Carrier and delivery grids
 
 
 
-Object: Delivery Grid
-#####################
+Object: Delivery Grid (delivery.grid)
+#####################################
 
 
 
@@ -152,8 +162,8 @@ Object: Delivery Grid
 
 
 
-Object: Delivery line of grid
-#############################
+Object: Delivery line of grid (delivery.grid.line)
+##################################################
 
 
 

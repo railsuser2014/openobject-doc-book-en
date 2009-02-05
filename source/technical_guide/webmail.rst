@@ -1,4 +1,13 @@
 
+.. module:: webmail
+    :synopsis: Webmail
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Webmail (*webmail*)
 ===================
 :Module: webmail
@@ -6,6 +15,7 @@ Webmail (*webmail*)
 :Version: 5.0.1.0
 :Directory: webmail
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: User Configuration
-##########################
+Object: User Configuration (webmail.tiny.user)
+##############################################
 
 
 
@@ -65,8 +75,8 @@ Object: User Configuration
 
 
 
-Object: Mail Server Configuration
-#################################
+Object: Mail Server Configuration (webmail.server)
+##################################################
 
 
 
@@ -135,8 +145,8 @@ Object: Mail Server Configuration
 
 
 
-Object: User Mailbox
-####################
+Object: User Mailbox (webmail.mailbox)
+######################################
 
 
 
@@ -169,8 +179,8 @@ Object: User Mailbox
 
 
 
-Object: Email Tag
-#################
+Object: Email Tag (webmail.tags)
+################################
 
 
 
@@ -191,8 +201,8 @@ Object: Email Tag
 
 
 
-Object: User Email
-##################
+Object: User Email (webmail.email)
+##################################
 
 
 

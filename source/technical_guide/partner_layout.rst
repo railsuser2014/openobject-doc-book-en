@@ -1,4 +1,13 @@
 
+.. module:: partner_layout
+    :synopsis: Partner Layout
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Partner Layout (*partner_layout*)
 =================================
 :Module: partner_layout
@@ -6,6 +15,7 @@ Partner Layout (*partner_layout*)
 :Version: 5.0.1.0
 :Directory: partner_layout
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

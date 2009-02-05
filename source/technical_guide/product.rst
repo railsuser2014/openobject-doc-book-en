@@ -1,4 +1,13 @@
 
+.. module:: product
+    :synopsis: Products & Pricelists
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products & Pricelists (*product*)
 =================================
 :Module: product
@@ -6,6 +15,7 @@ Products & Pricelists (*product*)
 :Version: 5.0.1.1
 :Directory: product
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -32,8 +42,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------
@@ -43,21 +53,21 @@ Reports
 Menus
 -------
 
- * Products
- * Products/Configuration
- * Products/Products
- * Products/Products by Category
- * Products/Configuration/Products Categories
- * Products/Configuration/Units of Measure
- * Products/Configuration/Units of Measure/Units of Measure
- * Products/Configuration/Units of Measure/Units of Measure Categories
- * Products/Configuration/Packagings
- * Products/Pricelists
- * Products/Pricelists/Pricelist Versions
- * Products/Pricelists/Pricelists
- * Products/Configuration/Prices Computations
- * Products/Configuration/Prices Computations/Prices Types
- * Products/Configuration/Prices Computations/Pricelists Types
+ * Books
+ * Books/Configuration
+ * Books/Products
+ * Books/Products by Category
+ * Books/Configuration/Products Categories
+ * Books/Configuration/Units of Measure
+ * Books/Configuration/Units of Measure/Units of Measure
+ * Books/Configuration/Units of Measure/Units of Measure Categories
+ * Books/Configuration/Packagings
+ * Books/Pricelists
+ * Books/Pricelists/Pricelist Versions
+ * Books/Pricelists/Pricelists
+ * Books/Configuration/Prices Computations
+ * Books/Configuration/Prices Computations/Prices Types
+ * Books/Configuration/Prices Computations/Pricelists Types
 
 Views
 -----
@@ -94,8 +104,8 @@ Views
 Objects
 -------
 
-Object: Product uom categ
-#########################
+Object: Product uom categ (product.uom.categ)
+#############################################
 
 
 
@@ -104,8 +114,8 @@ Object: Product uom categ
 
 
 
-Object: Product Unit of Measure
-###############################
+Object: Product Unit of Measure (product.uom)
+#############################################
 
 
 
@@ -152,8 +162,8 @@ Object: Product Unit of Measure
 
 
 
-Object: Shipping Unit
-#####################
+Object: Shipping Unit (product.ul)
+##################################
 
 
 
@@ -168,8 +178,8 @@ Object: Shipping Unit
 
 
 
-Object: Product Category
-########################
+Object: Product Category (product.category)
+###########################################
 
 
 
@@ -286,8 +296,8 @@ Object: Product Category
 
 
 
-Object: Product Template
-########################
+Object: Product Template (product.template)
+###########################################
 
 
 
@@ -609,8 +619,8 @@ Object: Product Template
 
 
 
-Object: Product
-###############
+Object: Product (product.product)
+#################################
 
 
 
@@ -956,13 +966,13 @@ Object: Product
 
 
 
-:purchase_avg_price: Avg. Unit Price, float, readonly
-
-    *Avg. Price in Supplier Invoices*
+:active: Active, boolean
 
 
 
-:index_purchase: Purchase indexes, many2many
+
+
+:loc_row: Row, char
 
 
 
@@ -977,6 +987,12 @@ Object: Product
 :seller_delay: Supplier Lead Time, integer, readonly
 
     *This is the average delay in days between the purchase order confirmation and the reception of goods for this product and for the default supplier. It is used by the scheduler to order requests based on reordering delays.*
+
+
+
+:index_purchase: Purchase indexes, many2many
+
+
 
 
 
@@ -1064,9 +1080,9 @@ Object: Product
 
 
 
-:active: Active, boolean
+:purchase_avg_price: Avg. Unit Price, float, readonly
 
-
+    *Avg. Price in Supplier Invoices*
 
 
 
@@ -1119,7 +1135,7 @@ Object: Product
 
 
 
-:loc_row: Row, char
+:categ_id: Category, many2one, required
 
 
 
@@ -1209,9 +1225,9 @@ Object: Product
 
 
 
-:volume: Volume, float
+:removal_time: Product removal time, integer
 
-    *The volume in m3.*
+
 
 
 
@@ -1473,21 +1489,15 @@ Object: Product
 
 
 
-:categ_id: Category, many2one, required
-
-
-
-
-
 :lang: Language, many2many
 
 
 
 
 
-:removal_time: Product removal time, integer
+:volume: Volume, float
 
-
+    *The volume in m3.*
 
 
 
@@ -1586,8 +1596,8 @@ Object: Product
     *Sum of Multification of Invoice price and quantity of Customer Invoices*
 
 
-Object: Packaging
-#################
+Object: Packaging (product.packaging)
+#####################################
 
 
 
@@ -1674,8 +1684,8 @@ Object: Packaging
 
 
 
-Object: Information about a product supplier
-############################################
+Object: Information about a product supplier (product.supplierinfo)
+###################################################################
 
 
 
@@ -1744,8 +1754,8 @@ Object: Information about a product supplier
     *Supplier of this product*
 
 
-Object: pricelist.partnerinfo
-#############################
+Object: pricelist.partnerinfo (pricelist.partnerinfo)
+#####################################################
 
 
 
@@ -1772,8 +1782,8 @@ Object: pricelist.partnerinfo
 
 
 
-Object: Price type
-##################
+Object: Price type (product.price.type)
+#######################################
 
 
 
@@ -1800,8 +1810,8 @@ Object: Price type
     *Name of this kind of price.*
 
 
-Object: Pricelist Type
-######################
+Object: Pricelist Type (product.pricelist.type)
+###############################################
 
 
 
@@ -1816,8 +1826,8 @@ Object: Pricelist Type
     *Used in the code to select specific prices based on the context. Keep unchanged.*
 
 
-Object: Pricelist
-#################
+Object: Pricelist (product.pricelist)
+#####################################
 
 
 
@@ -1856,8 +1866,8 @@ Object: Pricelist
 
 
 
-Object: Pricelist Version
-#########################
+Object: Pricelist Version (product.pricelist.version)
+#####################################################
 
 
 
@@ -1902,8 +1912,8 @@ Object: Pricelist Version
 
 
 
-Object: Pricelist item
-######################
+Object: Pricelist item (product.pricelist.item)
+###############################################
 
 
 

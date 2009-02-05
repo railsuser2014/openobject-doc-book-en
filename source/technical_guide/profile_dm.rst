@@ -1,4 +1,13 @@
 
+.. module:: profile_dm
+    :synopsis: Direct Marketing profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Direct Marketing profile (*profile_dm*)
 =======================================
 :Module: profile_dm
@@ -6,6 +15,7 @@ Direct Marketing profile (*profile_dm*)
 :Version: False
 :Directory: profile_dm
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * dm - installed
- * board_dm - installed
+ * :mod:`dm`
+ * :mod:`board_dm`
 
 Reports
 -------

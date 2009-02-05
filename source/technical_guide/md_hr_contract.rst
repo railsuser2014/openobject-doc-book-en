@@ -1,4 +1,13 @@
 
+.. module:: md_hr_contract
+    :synopsis: Pilot Human Resource Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
@@ -6,6 +15,7 @@ Pilot Human Resource Management (*md_hr_contract*)
 :Version: 5.0.1.0
 :Directory: md_hr_contract
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
- * hr_contract - installed
+ * :mod:`base`
+ * :mod:`hr`
+ * :mod:`hr_contract`
 
 Reports
 -------
@@ -54,8 +64,8 @@ Views
 Objects
 -------
 
-Object: HR Contract Availability
-################################
+Object: HR Contract Availability (md.hr.contract.availability)
+##############################################################
 
 
 

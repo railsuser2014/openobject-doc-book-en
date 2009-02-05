@@ -1,4 +1,13 @@
 
+.. module:: account_invoice_analytic_required
+    :synopsis: Account invoice analytic required
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account invoice analytic required (*account_invoice_analytic_required*)
 =======================================================================
 :Module: account_invoice_analytic_required
@@ -6,6 +15,7 @@ Account invoice analytic required (*account_invoice_analytic_required*)
 :Version: 5.0.1.0
 :Directory: account_invoice_analytic_required
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base - installed
+ * :mod:`account`
+ * :mod:`base`
 
 Reports
 -------

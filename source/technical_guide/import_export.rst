@@ -1,4 +1,13 @@
 
+.. module:: import_export
+    :synopsis: Import Export
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Import Export (*import_export*)
 ===============================
 :Module: import_export
@@ -6,6 +15,7 @@ Import Export (*import_export*)
 :Version: 5.0.1.0
 :Directory: import_export
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -22,10 +32,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`sale`
 
 Reports
 -------

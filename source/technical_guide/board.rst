@@ -1,4 +1,13 @@
 
+.. module:: board
+    :synopsis: Dashboard main module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard main module (*board*)
 ===============================
 :Module: board
@@ -6,6 +15,7 @@ Dashboard main module (*board*)
 :Version: 5.0.1.0
 :Directory: board
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: board.board
-###################
+Object: board.board (board.board)
+#################################
 
 
 
@@ -67,8 +77,8 @@ Object: board.board
 
 
 
-Object: board.board.line
-########################
+Object: board.board.line (board.board.line)
+###########################################
 
 
 
@@ -113,8 +123,8 @@ Object: board.board.line
 
 
 
-Object: board.note.type
-#######################
+Object: board.note.type (board.note.type)
+#########################################
 
 
 
@@ -123,8 +133,8 @@ Object: board.note.type
 
 
 
-Object: board.note
-##################
+Object: board.note (board.note)
+###############################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: hotel_restaurant
+    :synopsis: Hotel Restaurant
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Hotel Restaurant (*hotel_restaurant*)
 =====================================
 :Module: hotel_restaurant
@@ -6,6 +15,7 @@ Hotel Restaurant (*hotel_restaurant*)
 :Version: 5.0.1.0
 :Directory: hotel_restaurant
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -24,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hotel - installed
+ * :mod:`base`
+ * :mod:`hotel`
 
 Reports
 -------
@@ -73,8 +83,8 @@ Views
 Objects
 -------
 
-Object: amenities Type
-######################
+Object: amenities Type (hotel.menucard.type)
+############################################
 
 
 
@@ -197,8 +207,8 @@ Object: amenities Type
     *This account will be used, instead of the default one, to value incoming stock for the current product*
 
 
-Object: Hotel Menucard
-######################
+Object: Hotel Menucard (hotel.menucard)
+#######################################
 
 
 
@@ -466,12 +476,6 @@ Object: Hotel Menucard
 
 
 
-:removal_time: Product removal time, integer
-
-
-
-
-
 :virtual_available: Virtual Stock, float, readonly
 
     *Futur stock for this product according to the selected location or all internal if none have been selected. Computed as: Real Stock - Outgoing + Incoming.*
@@ -538,13 +542,13 @@ Object: Hotel Menucard
 
 
 
-:purchase_avg_price: Avg. Unit Price, float, readonly
-
-    *Avg. Price in Supplier Invoices*
+:active: Active, boolean
 
 
 
-:index_purchase: Purchase indexes, many2many
+
+
+:loc_row: Row, char
 
 
 
@@ -571,6 +575,12 @@ Object: Hotel Menucard
 :lst_price: List Price, float, readonly
 
 
+
+
+
+:purchase_ok: Can be Purchased, boolean
+
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -634,9 +644,9 @@ Object: Hotel Menucard
 
 
 
-:active: Active, boolean
+:purchase_avg_price: Avg. Unit Price, float, readonly
 
-
+    *Avg. Price in Supplier Invoices*
 
 
 
@@ -689,9 +699,9 @@ Object: Hotel Menucard
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:index_purchase: Purchase indexes, many2many
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
+
 
 
 
@@ -779,9 +789,9 @@ Object: Hotel Menucard
 
 
 
-:volume: Volume, float
+:removal_time: Product removal time, integer
 
-    *The volume in m3.*
+
 
 
 
@@ -824,6 +834,12 @@ Object: Hotel Menucard
 :product_id: Product_id, many2one
 
 
+
+
+
+:volume: Volume, float
+
+    *The volume in m3.*
 
 
 
@@ -1049,12 +1065,6 @@ Object: Hotel Menucard
 
 
 
-:loc_row: Row, char
-
-
-
-
-
 :seller_delay: Supplier Lead Time, integer, readonly
 
     *This is the average delay in days between the purchase order confirmation and the reception of goods for this product and for the default supplier. It is used by the scheduler to order requests based on reordering delays.*
@@ -1062,6 +1072,12 @@ Object: Hotel Menucard
 
 
 :manufacturer_pref: Manufacturer product code, char
+
+
+
+
+
+:categ_id: Category, many2one, required
 
 
 
@@ -1106,12 +1122,6 @@ Object: Hotel Menucard
 :property_account_expense: Expense Account, many2one
 
     *This account will be used, instead of the default one, to value outgoing stock for the current product*
-
-
-
-:categ_id: Category, many2one, required
-
-
 
 
 
@@ -1180,8 +1190,8 @@ Object: Hotel Menucard
 
 
 
-Object: Includes Hotel Restaurant Table
-#######################################
+Object: Includes Hotel Restaurant Table (hotel.restaurant.tables)
+#################################################################
 
 
 
@@ -1196,8 +1206,8 @@ Object: Includes Hotel Restaurant Table
 
 
 
-Object: Includes Hotel Restaurant Reservation
-#############################################
+Object: Includes Hotel Restaurant Reservation (hotel.restaurant.reservation)
+############################################################################
 
 
 
@@ -1248,8 +1258,8 @@ Object: Includes Hotel Restaurant Reservation
 
 
 
-Object: Includes Hotel Restaurant Order
-#######################################
+Object: Includes Hotel Restaurant Order (hotel.restaurant.kitchen.order.tickets)
+################################################################################
 
 
 
@@ -1294,8 +1304,8 @@ Object: Includes Hotel Restaurant Order
 
 
 
-Object: Includes Hotel Restaurant Order
-#######################################
+Object: Includes Hotel Restaurant Order (hotel.restaurant.order)
+################################################################
 
 
 
@@ -1352,8 +1362,8 @@ Object: Includes Hotel Restaurant Order
 
 
 
-Object: Reservation Order
-#########################
+Object: Reservation Order (hotel.reservation.order)
+###################################################
 
 
 
@@ -1410,8 +1420,8 @@ Object: Reservation Order
 
 
 
-Object: Includes Hotel Restaurant Order
-#######################################
+Object: Includes Hotel Restaurant Order (hotel.restaurant.order.list)
+#####################################################################
 
 
 

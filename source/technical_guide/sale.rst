@@ -1,4 +1,13 @@
 
+.. module:: sale
+    :synopsis: Sales Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management (*sale*)
 =========================
 :Module: sale
@@ -6,6 +15,7 @@ Sales Management (*sale*)
 :Version: 5.0.1.0
 :Directory: sale
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -30,15 +40,15 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * mrp - installed
- * process - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`mrp`
+ * :mod:`process`
 
 Reports
 -------
 
- * Quotation / Order
+ * Print Order
 
 Menus
 -------
@@ -72,7 +82,7 @@ Views
  * sale.order.tree (tree)
  * sale.order.form (form)
  * sale.order.line.graph (graph)
- * sale.order.line.tree (tree)
+ * Sale lines (tree)
  * sale.order.line.form2 (form)
  * Configure Picking Policy for Sale Order  (form)
  * \* INHERIT stock.picking.form (form)
@@ -81,8 +91,8 @@ Views
 Objects
 -------
 
-Object: Sale Shop
-#################
+Object: Sale Shop (sale.shop)
+#############################
 
 
 
@@ -121,8 +131,8 @@ Object: Sale Shop
 
 
 
-Object: Sale Order
-##################
+Object: Sale Order (sale.order)
+###############################
 
 
 
@@ -132,7 +142,7 @@ Object: Sale Order
 
 
 
-:has_supplier_direct_delivery: Has Supplier Direct Delivery, boolean, readonly
+:topnotes: Top Notes, text
 
 
 
@@ -316,6 +326,12 @@ Object: Sale Order
 
 
 
+:has_supplier_direct_delivery: Has Supplier Direct Delivery, boolean, readonly
+
+
+
+
+
 :child_so: Child Sales Order, one2many
 
 
@@ -430,12 +446,6 @@ Object: Sale Order
 
 
 
-:topnotes: Top Notes, text
-
-
-
-
-
 :discount_campaign: Discount Campaign, many2one
 
 
@@ -447,8 +457,8 @@ Object: Sale Order
 
 
 
-Object: Sale Order line
-#######################
+Object: Sale Order line (sale.order.line)
+#########################################
 
 
 
@@ -823,8 +833,8 @@ Object: Sale Order line
 
 
 
-Object: sale.config.picking_policy
-##################################
+Object: sale.config.picking_policy (sale.config.picking_policy)
+###############################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: base_vat
+    :synopsis: VAT
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 VAT (*base_vat*)
 ================
 :Module: base_vat
@@ -6,6 +15,7 @@ VAT (*base_vat*)
 :Version: 5.0.1.0
 :Directory: base_vat
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: travel
+    :synopsis: Travel
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Travel (*travel*)
 =================
 :Module: travel
@@ -6,6 +15,7 @@ Travel (*travel*)
 :Version: 5.0.1.0
 :Directory: travel
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Partner
-###############
+Object: Partner (travel.hostel)
+###############################
 
 
 
@@ -281,8 +291,8 @@ Object: Partner
 
 
 
-Object: travel.airport
-######################
+Object: travel.airport (travel.airport)
+#######################################
 
 
 
@@ -303,8 +313,8 @@ Object: travel.airport
 
 
 
-Object: Product
-###############
+Object: Product (travel.room)
+#############################
 
 
 
@@ -794,8 +804,8 @@ Object: Product
 
 
 
-Object: Product
-###############
+Object: Product (travel.flight)
+###############################
 
 
 

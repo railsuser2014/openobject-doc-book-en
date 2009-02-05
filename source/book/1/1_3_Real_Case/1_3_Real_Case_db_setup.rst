@@ -131,6 +131,7 @@ Now create a new product:
 	#. The  *Product Type* field should stay as \ ``Stockable Product``\   its default value. The fields  *Procure Method*   *Default UOM* and  *Purchase UOM* should also stay at their default values: in fact every other field remains untouched.
 
                 .. image::  images/product.png
+                	:align: center
                	   :scale: 95
                 
 
@@ -139,6 +140,9 @@ Now create a new product:
 	#. Click the  *Properties* tab, then click  *Save* and observe that  *Inventory Properties* have taken on new values (just as the Accounting Properties did in the product category) but  *Accounting Properties* here remain empty. When product transactions occur, the Income and Expense accounts that you've just defined in the Product Category are used by the Product nless an account is specified here, directly in the product, to override that. 
 
 	#. Once the product is saved it changes to a non-editable state. If you had entered data incorrectly or left a required field blank, the form would have stayed editable and you'd need to click from tab to tab to find a field colored red, with an error message below it, that would have to be correctly filled in.
+
+.. index::
+   single: Stock locations
 
 Stock locations
 -----------------
@@ -161,14 +165,18 @@ Click  *Inventory Control > Location Structure*  to see the hierarchy of stock l
 
 A Warehouse contains an input location, a stock location and an output location for sold products. You can associate a warehouse with a partner to give the warehouse an address. That doesn't have to be your own company (although it can be): you can easily specify another partner who may be holding stock on your behalf.
 
+.. index::
+   single: Location Structure
+
 .. tip::   **Attention**  *Location Structure* 
-
-
 
 	Each warehouse is composed of three locations: Input, Output and Stock. Your available stock is given by the contents of the Stock location.
 
 	The Input location can be placed as a child of the Stock location, which means that when Stock is interrogated for product quantities, it also takes account of the contents of the Input location. The Output location must never be placed as a child of Stock, since items in Output, which are packed ready for customer shipment, should not be considered as available for sale elsewhere.
 
+.. index::
+   single: Account Chart
+   
 Setting up a chart of accounts
 -------------------------------
 
@@ -187,8 +195,8 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 	#. Then click on one of the buttons  *Create Monthly Periods* or  *Create 3 Months Periods* to create an appropriate set of periods for the fiscal year, as shown in the figure below.  *Save* this.
 
 
-.. image::  images/def_fiscal_year_tab.png
-   :align: center
+	.. image::  images/def_fiscal_year_tab.png
+   		:align: center
 
 *Defining a fiscal year and the accounting periods within it*
 

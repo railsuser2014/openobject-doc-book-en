@@ -1,4 +1,13 @@
 
+.. module:: portal_account
+    :synopsis: Portal Management - Account
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Management - Account (*portal_account*)
 ==============================================
 :Module: portal_account
@@ -6,6 +15,7 @@ Portal Management - Account (*portal_account*)
 :Version: 5.0.0.1
 :Directory: portal_account
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * portal - installed
- * account - installed
- * mrp - installed
+ * :mod:`base`
+ * :mod:`portal`
+ * :mod:`account`
+ * :mod:`mrp`
 
 Reports
 -------

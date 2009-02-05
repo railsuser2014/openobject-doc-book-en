@@ -1,4 +1,13 @@
 
+.. module:: label
+    :synopsis: Partner labels
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Partner labels (*label*)
 ========================
 :Module: label
@@ -6,6 +15,7 @@ Partner labels (*label*)
 :Version: 5.0.1.0
 :Directory: label
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -48,8 +58,8 @@ Views
 Objects
 -------
 
-Object: report.pagesize
-#######################
+Object: report.pagesize (report.pagesize)
+#########################################
 
 
 
@@ -70,8 +80,8 @@ Object: report.pagesize
     *Numeric height of the page ended with the unit (cm or in). For example, A4 is 29.7cm and letter is 11in*
 
 
-Object: report.label.manufacturer
-#################################
+Object: report.label.manufacturer (report.label.manufacturer)
+#############################################################
 
 
 
@@ -80,8 +90,8 @@ Object: report.label.manufacturer
 
 
 
-Object: report.label
-####################
+Object: report.label (report.label)
+###################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: account_journal_visibility
+    :synopsis: Accounting journal visibility
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting journal visibility (*account_journal_visibility*)
 ============================================================
 :Module: account_journal_visibility
@@ -6,6 +15,7 @@ Accounting journal visibility (*account_journal_visibility*)
 :Version: 5.0.1.0
 :Directory: account_journal_visibility
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

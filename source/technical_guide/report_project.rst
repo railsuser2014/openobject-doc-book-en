@@ -1,4 +1,13 @@
 
+.. module:: report_project
+    :synopsis: Sales Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management - Reporting (*report_project*)
 ===============================================
 :Module: report_project
@@ -6,6 +15,7 @@ Sales Management - Reporting (*report_project*)
 :Version: 5.0.1.0
 :Directory: report_project
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,8 +28,8 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * report_task - installed
+ * :mod:`project`
+ * :mod:`report_task`
 
 Reports
 -------
@@ -48,8 +58,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and project
-#################################
+Object: Tasks by user and project (report.project.task.user)
+############################################################
 
 
 
@@ -100,8 +110,8 @@ Object: Tasks by user and project
 
 
 
-Object: Tasks by project
-########################
+Object: Tasks by project (report.project.task)
+##############################################
 
 
 

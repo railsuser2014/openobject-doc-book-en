@@ -1,4 +1,13 @@
 
+.. module:: profile_indian_account
+    :synopsis: Indian Accounting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Indian Accounting (*profile_indian_account*)
 ============================================
 :Module: profile_indian_account
@@ -6,6 +15,7 @@ Indian Accounting (*profile_indian_account*)
 :Version: False
 :Directory: profile_indian_account
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * l10n_chart_in - installed
- * account_india_ledger - installed
- * account_indian_reportaccount_voucher - unknown
+ * :mod:`l10n_chart_in`
+ * :mod:`account_india_ledger`
+ * :mod:`account_indian_reportaccount_voucher`
 
 Reports
 -------

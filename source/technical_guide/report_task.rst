@@ -1,4 +1,13 @@
 
+.. module:: report_task
+    :synopsis: Report on tasks by user for projects
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report on tasks by user for projects (*report_task*)
 ====================================================
 :Module: report_task
@@ -6,6 +15,7 @@ Report on tasks by user for projects (*report_task*)
 :Version: 5.0.1.0
 :Directory: report_task
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`project`
 
 Reports
 -------
@@ -44,8 +54,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and project
-#################################
+Object: Tasks by user and project (report.task.user.pipeline.open)
+##################################################################
 
 
 

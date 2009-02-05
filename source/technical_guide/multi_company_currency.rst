@@ -1,4 +1,13 @@
 
+.. module:: multi_company_currency
+    :synopsis: Multi Currency for Multi Company
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi Currency for Multi Company (*multi_company_currency*)
 ===========================================================
 :Module: multi_company_currency
@@ -6,6 +15,7 @@ Multi Currency for Multi Company (*multi_company_currency*)
 :Version: 5.0.1.0
 :Directory: multi_company_currency
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * multi_company - installed
+ * :mod:`base`
+ * :mod:`multi_company`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: sale_delivery
+    :synopsis: Sale Delivery Planning
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Delivery Planning (*sale_delivery*)
 ========================================
 :Module: sale_delivery
@@ -6,6 +15,7 @@ Sale Delivery Planning (*sale_delivery*)
 :Version: 5.0.1.0
 :Directory: sale_delivery
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------
@@ -43,8 +53,8 @@ Views
 Objects
 -------
 
-Object: sale.delivery.line
-##########################
+Object: sale.delivery.line (sale.delivery.line)
+###############################################
 
 
 

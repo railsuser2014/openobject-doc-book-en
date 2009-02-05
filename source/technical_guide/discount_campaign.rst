@@ -1,4 +1,13 @@
 
+.. module:: discount_campaign
+    :synopsis: Discount on Marketing Campaigns
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Discount on Marketing Campaigns (*discount_campaign*)
 =====================================================
 :Module: discount_campaign
@@ -6,6 +15,7 @@ Discount on Marketing Campaigns (*discount_campaign*)
 :Version: 5.0.1.0
 :Directory: discount_campaign
 :Web: http://tinyerp.com/module_crm_marketing.html
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: discount.campaign
-#########################
+Object: discount.campaign (discount.campaign)
+#############################################
 
 
 
@@ -79,8 +89,8 @@ Object: discount.campaign
 
 
 
-Object: discount.campaign.line
-##############################
+Object: discount.campaign.line (discount.campaign.line)
+#######################################################
 
 
 

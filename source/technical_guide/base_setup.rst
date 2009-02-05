@@ -1,4 +1,13 @@
 
+.. module:: base_setup
+    :synopsis: Base Setup
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Setup (*base_setup*)
 =========================
 :Module: base_setup
@@ -6,6 +15,7 @@ Base Setup (*base_setup*)
 :Version: 5.0.1.0
 :Directory: base_setup
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -27,7 +37,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

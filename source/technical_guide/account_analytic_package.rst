@@ -1,4 +1,13 @@
 
+.. module:: account_analytic_package
+    :synopsis: account_analytic_package
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 account_analytic_package (*account_analytic_package*)
 =====================================================
 :Module: account_analytic_package
@@ -6,6 +15,7 @@ account_analytic_package (*account_analytic_package*)
 :Version: 5.0.1.0
 :Directory: account_analytic_package
 :Web: http://www.tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -18,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * product - installed
- * crm - installed
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`crm`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: account.analytic.line.package
-#####################################
+Object: account.analytic.line.package (account.analytic.line.package)
+#####################################################################
 
 
 
@@ -108,8 +118,8 @@ Object: account.analytic.line.package
 
 
 
-Object: account.analytic.line.package.month
-###########################################
+Object: account.analytic.line.package.month (account.analytic.line.package.month)
+#################################################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: project_timesheet
+    :synopsis: Project Timesheet
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Timesheet (*project_timesheet*)
 =======================================
 :Module: project_timesheet
@@ -6,6 +15,7 @@ Project Timesheet (*project_timesheet*)
 :Version: 5.0.1.0
 :Directory: project_timesheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,9 +28,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
- * hr_timesheet - installed
+ * :mod:`base`
+ * :mod:`project`
+ * :mod:`hr_timesheet`
 
 Reports
 -------

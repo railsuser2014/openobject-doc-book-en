@@ -1,4 +1,13 @@
 
+.. module:: product_extended
+    :synopsis: Product extension to track sales and purchases
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product extension to track sales and purchases (*product_extended*)
 ===================================================================
 :Module: product_extended
@@ -6,6 +15,7 @@ Product extension to track sales and purchases (*product_extended*)
 :Version: 5.0.1.0
 :Directory: product_extended
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * purchase - installed
- * sale - installed
+ * :mod:`product`
+ * :mod:`purchase`
+ * :mod:`sale`
 
 Reports
 -------

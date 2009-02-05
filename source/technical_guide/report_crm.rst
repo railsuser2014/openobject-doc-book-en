@@ -1,4 +1,13 @@
 
+.. module:: report_crm
+    :synopsis: CRM Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CRM Management - Reporting (*report_crm*)
 =========================================
 :Module: report_crm
@@ -6,6 +15,7 @@ CRM Management - Reporting (*report_crm*)
 :Version: 5.0.1.0
 :Directory: report_crm
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * crm - installed
+ * :mod:`crm`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Cases by user and section
-#################################
+Object: Cases by user and section (report.crm.case.user)
+########################################################
 
 
 
@@ -116,8 +126,8 @@ Object: Cases by user and section
 
 
 
-Object: Cases by section and category
-#####################################
+Object: Cases by section and category (report.crm.case.categ)
+#############################################################
 
 
 

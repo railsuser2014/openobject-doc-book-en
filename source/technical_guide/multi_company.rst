@@ -1,4 +1,13 @@
 
+.. module:: multi_company
+    :synopsis: Multi company base module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi company base module (*multi_company*)
 ===========================================
 :Module: multi_company
@@ -6,6 +15,7 @@ Multi company base module (*multi_company*)
 :Version: 5.0.0.1
 :Directory: multi_company
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

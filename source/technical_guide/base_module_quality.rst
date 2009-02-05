@@ -1,4 +1,13 @@
 
+.. module:: base_module_quality
+    :synopsis: Base module quality
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base module quality (*base_module_quality*)
 ===========================================
 :Module: base_module_quality
@@ -6,6 +15,7 @@ Base module quality (*base_module_quality*)
 :Version: 5.0.1.0
 :Directory: base_module_quality
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -48,8 +58,8 @@ Views
 Objects
 -------
 
-Object: wizard.quality.check
-############################
+Object: wizard.quality.check (wizard.quality.check)
+###################################################
 
 
 
@@ -70,8 +80,8 @@ Object: wizard.quality.check
 
 
 
-Object: quality.check.detail
-############################
+Object: quality.check.detail (quality.check.detail)
+###################################################
 
 
 

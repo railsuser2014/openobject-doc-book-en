@@ -105,6 +105,9 @@ To organize your tasks efficiently, Open ERP uses a method based on the followi
 
 		#. Repeat the same process each week and each month for the respective timeboxes.
 
+.. index:: Agenda
+.. index:: Timebox
+
 .. tip::   **Don't confuse**  **  *Agenda*  *and timebox* 
 
 	The idea of timebox is independent from that of an agenda. Certain tasks, such as meetings, must be done on a precise date. So they can't be managed by the timebox system but by an agenda.

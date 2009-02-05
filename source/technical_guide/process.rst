@@ -1,4 +1,13 @@
 
+.. module:: process
+    :synopsis: Enterprise Process
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Enterprise Process (*process*)
 ==============================
 :Module: process
@@ -6,6 +15,7 @@ Enterprise Process (*process*)
 :Version: 5.0.1.0
 :Directory: process
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Process
-###############
+Object: Process (process.process)
+#################################
 
 
 
@@ -81,8 +91,8 @@ Object: Process
 
 
 
-Object: Process Nodes
-#####################
+Object: Process Nodes (process.node)
+####################################
 
 
 
@@ -169,8 +179,8 @@ Object: Process Nodes
 
 
 
-Object: Condition
-#################
+Object: Condition (process.condition)
+#####################################
 
 
 
@@ -197,8 +207,8 @@ Object: Condition
 
 
 
-Object: Process Transitions
-###########################
+Object: Process Transitions (process.transition)
+################################################
 
 
 
@@ -243,8 +253,8 @@ Object: Process Transitions
 
 
 
-Object: Process Transitions Actions
-###################################
+Object: Process Transitions Actions (process.transition.action)
+###############################################################
 
 
 

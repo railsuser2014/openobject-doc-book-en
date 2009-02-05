@@ -1,4 +1,13 @@
 
+.. module:: portal_sale
+    :synopsis: Portal Sale Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Sale Management (*portal_sale*)
 ======================================
 :Module: portal_sale
@@ -6,6 +15,7 @@ Portal Sale Management (*portal_sale*)
 :Version: 5.0.0.1
 :Directory: portal_sale
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * portal - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`portal`
+ * :mod:`sale`
 
 Reports
 -------

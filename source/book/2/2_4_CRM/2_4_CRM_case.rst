@@ -1,15 +1,10 @@
-.. index::
-   single: Case management
-.. 
 
 Case management
 =================
 
 The following sections describe the steps you might use to implement an effective customer relationship management policy. The policy is implemented by basing new types of case on the built-in Open ERP case handling system.
 
-.. index::
-   single: Case
-.. 
+.. index:: Case
 
 .. tip::   **Definition**  *Case* 
 
@@ -107,8 +102,8 @@ The procedure is to create the name of the new menu in  *Menu base name* , selec
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a menu structure like the following figure (here for the Business Opportunities menu).
 
 
-.. image::  images/business_ops.png
-   :align: center
+	.. image::  images/business_ops.png
+   		:align: center
 
 *Business Opportunities menu automatically generated*
 
@@ -145,8 +140,8 @@ Although you've created special menu trees for each of the types of case you def
 	You can also track items across the whole company.
 
 
-.. image::  images/crm_case.png
-   :align: center
+	.. image::  images/crm_case.png
+   		:align: center
 
 *An entry following a business opportunity*
 
@@ -168,6 +163,10 @@ Create a case in database \ ``openerp_ch04``\   from  *Sales Management > Busine
 * the  *Partner Email*  address (which will be completed from the Partner Contact's email address but can be overwritten),
 
 * the person in your own company who will be the  *User Responsible*  for the case.
+
+
+.. index::
+   single: Email gateway
 
 .. tip::   **Advantage**  *The email gateway* 
 
@@ -192,6 +191,8 @@ If you've organized the sections in a hierarchical structure you can click on  *
 You can look up the history of comments and actions on the request at any time by looking at the case  *History* , which is in its own tab.
 
 Users can create their own shortcuts from menus such as  *My Support Requests*  and  *My Business Opportunities*  to quickly list cases that they're personally responsible for.
+
+.. index:: Calendars
 
 Generating calendars
 ---------------------
@@ -231,6 +232,8 @@ You can change the view and return to the list view, forms or graphs by using th
 	So in addition to the cases handled here, you could obtain calendars of tasks, deliveries, manufacturing orders, sales or personal leave.
 
 	This view is very useful for planning or to get a global overview of a list of dated elements.
+
+.. index:: Performance
 
 Analyzing performance
 -----------------------
@@ -418,6 +421,8 @@ You define the action that will be taken if the rule is met in the second tab of
 			* select and qualify your suppliers on the basis of their quality of service
 
 
+.. index:: Portal
+
 .. tip::   **Advantage**  *The CRM portal* 
 
 	Open ERP's portal_service module enables you to open parts of your CRM functionality to suppliers and customers. They can then connect to your system using their own login and follow their orders or requests online. For example the customer could make a support request directly in your system, perhaps avoiding a lengthy process of data entry.
@@ -468,6 +473,8 @@ You'll also need to choose an Open ERP user that the gateway will use to access
 Then specify the case section in Open ERP that you'll use when this user is connected by email, for example, the \ ``Helpdesk and Support``\   section.
 
 Install Fetchmail on your Open ERP server. You can download it from the address http://fetchmail.berlios.de/.
+
+.. index:: Fetchmail
 
 .. tip::   **Program**  *Fetchmail* 
 

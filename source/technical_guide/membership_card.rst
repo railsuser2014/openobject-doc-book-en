@@ -1,4 +1,13 @@
 
+.. module:: membership_card
+    :synopsis: Membership card
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Membership card (*membership_card*)
 ===================================
 :Module: membership_card
@@ -6,6 +15,7 @@ Membership card (*membership_card*)
 :Version: 5.0.1.0
 :Directory: membership_card
 :Web: http://www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

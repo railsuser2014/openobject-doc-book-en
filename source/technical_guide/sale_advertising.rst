@@ -1,4 +1,13 @@
 
+.. module:: sale_advertising
+    :synopsis: Sales: Avertising Sales
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales: Avertising Sales (*sale_advertising*)
 ============================================
 :Module: sale_advertising
@@ -6,6 +15,7 @@ Sales: Avertising Sales (*sale_advertising*)
 :Version: 5.0.0.1
 :Directory: sale_advertising
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Sale Advertising Issue
-##############################
+Object: Sale Advertising Issue (sale.advertising.issue)
+#######################################################
 
 
 
@@ -83,8 +93,8 @@ Object: Sale Advertising Issue
 
 
 
-Object: Sale Advertising Proof
-##############################
+Object: Sale Advertising Proof (sale.advertising.proof)
+#######################################################
 
 
 

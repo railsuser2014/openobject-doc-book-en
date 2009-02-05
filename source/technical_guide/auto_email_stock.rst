@@ -1,4 +1,13 @@
 
+.. module:: auto_email_stock
+    :synopsis: Auto Email Stock Picking
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auto Email Stock Picking (*auto_email_stock*)
 =============================================
 :Module: auto_email_stock
@@ -6,6 +15,7 @@ Auto Email Stock Picking (*auto_email_stock*)
 :Version: 5.0.1.0
 :Directory: auto_email_stock
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -20,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * stock - installed
+ * :mod:`smtpclient`
+ * :mod:`stock`
 
 Reports
 -------

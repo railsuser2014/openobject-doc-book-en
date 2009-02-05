@@ -1,4 +1,13 @@
 
+.. module:: hr_attendance
+    :synopsis: Attendances Of Employees
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Attendances Of Employees (*hr_attendance*)
 ==========================================
 :Module: hr_attendance
@@ -6,6 +15,7 @@ Attendances Of Employees (*hr_attendance*)
 :Version: 5.0.1.1
 :Directory: hr_attendance
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
+ * :mod:`base`
+ * :mod:`hr`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Action reason
-#####################
+Object: Action reason (hr.action.reason)
+########################################
 
 
 
@@ -63,8 +73,8 @@ Object: Action reason
 
 
 
-Object: Attendance
-##################
+Object: Attendance (hr.attendance)
+##################################
 
 
 

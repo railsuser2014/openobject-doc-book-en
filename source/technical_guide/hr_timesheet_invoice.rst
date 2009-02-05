@@ -1,4 +1,13 @@
 
+.. module:: hr_timesheet_invoice
+    :synopsis: Invoice on analytic lines
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice on analytic lines (*hr_timesheet_invoice*)
 ==================================================
 :Module: hr_timesheet_invoice
@@ -6,6 +15,7 @@ Invoice on analytic lines (*hr_timesheet_invoice*)
 :Version: 5.0.1.0
 :Directory: hr_timesheet_invoice
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -19,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet`
 
 Reports
 -------
@@ -59,8 +69,8 @@ Views
 Objects
 -------
 
-Object: Invoice rate
-####################
+Object: Invoice rate (hr_timesheet_invoice.factor)
+##################################################
 
 
 

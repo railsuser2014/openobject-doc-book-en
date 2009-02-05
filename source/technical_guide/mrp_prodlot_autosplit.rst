@@ -1,4 +1,13 @@
 
+.. module:: mrp_prodlot_autosplit
+    :synopsis: Stock Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock Management (*mrp_prodlot_autosplit*)
 ==========================================
 :Module: mrp_prodlot_autosplit
@@ -6,6 +15,7 @@ Stock Management (*mrp_prodlot_autosplit*)
 :Version: 5.0.0.9.0
 :Directory: mrp_prodlot_autosplit
 :Web: http://rvalyi.blogspot.com
+:Is certified: no
 
 Description
 -----------
@@ -27,8 +37,8 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
+ * :mod:`product`
+ * :mod:`stock`
 
 Reports
 -------

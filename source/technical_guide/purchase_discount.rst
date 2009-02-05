@@ -1,4 +1,13 @@
 
+.. module:: purchase_discount
+    :synopsis: Purchase Order Lines With Discounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Order Lines With Discounts (*purchase_discount*)
 =========================================================
 :Module: purchase_discount
@@ -6,6 +15,7 @@ Purchase Order Lines With Discounts (*purchase_discount*)
 :Version: 5.0.1.0
 :Directory: purchase_discount
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * purchase - installed
+ * :mod:`stock`
+ * :mod:`purchase`
 
 Reports
 -------

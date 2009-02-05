@@ -1,4 +1,13 @@
 
+.. module:: base_language
+    :synopsis: Base Language
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Language (*base_language*)
 ===============================
 :Module: base_language
@@ -6,6 +15,7 @@ Base Language (*base_language*)
 :Version: 5.0.1.0
 :Directory: base_language
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

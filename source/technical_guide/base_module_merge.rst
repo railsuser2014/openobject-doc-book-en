@@ -1,4 +1,13 @@
 
+.. module:: base_module_merge
+    :synopsis: Module Merger
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Module Merger (*base_module_merge*)
 ===================================
 :Module: base_module_merge
@@ -6,6 +15,7 @@ Module Merger (*base_module_merge*)
 :Version: 5.0.1.0
 :Directory: base_module_merge
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -23,7 +33,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

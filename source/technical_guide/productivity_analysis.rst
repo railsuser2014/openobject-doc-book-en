@@ -1,4 +1,13 @@
 
+.. module:: productivity_analysis
+    :synopsis: Productivity Analysis
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Productivity Analysis (*productivity_analysis*)
 ===============================================
 :Module: productivity_analysis
@@ -6,6 +15,7 @@ Productivity Analysis (*productivity_analysis*)
 :Version: 5.0.1.0
 :Directory: productivity_analysis
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -42,8 +52,8 @@ Views
 Objects
 -------
 
-Object: Objects for Productivity Analysis
-#########################################
+Object: Objects for Productivity Analysis (productivity_analysis.models)
+########################################################################
 
 
 

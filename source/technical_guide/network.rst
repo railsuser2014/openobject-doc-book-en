@@ -1,4 +1,13 @@
 
+.. module:: network
+    :synopsis: Network Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Network Management (*network*)
 ==============================
 :Module: network
@@ -6,6 +15,7 @@ Network Management (*network*)
 :Version: 5.0.1.0
 :Directory: network
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -22,7 +32,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -65,8 +75,8 @@ Views
 Objects
 -------
 
-Object: Hardware type
-#####################
+Object: Hardware type (network.hardware.type)
+#############################################
 
 
 
@@ -81,8 +91,8 @@ Object: Hardware type
 
 
 
-Object: Network
-###############
+Object: Network (network.network)
+#################################
 
 
 
@@ -115,8 +125,8 @@ Object: Network
 
 
 
-Object: Material
-################
+Object: Material (network.material)
+###################################
 
 
 
@@ -191,8 +201,8 @@ Object: Material
 
 
 
-Object: Network changes
-#######################
+Object: Network changes (network.changes)
+#########################################
 
 
 
@@ -219,8 +229,8 @@ Object: Network changes
 
 
 
-Object: Software type
-#####################
+Object: Software type (network.software.type)
+#############################################
 
 
 
@@ -235,8 +245,8 @@ Object: Software type
 
 
 
-Object: Software
-################
+Object: Software (network.software)
+###################################
 
 
 
@@ -287,8 +297,8 @@ Object: Software
 
 
 
-Object: Software login
-######################
+Object: Software login (network.software.logpass)
+#################################################
 
 
 

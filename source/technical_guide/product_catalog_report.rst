@@ -1,4 +1,13 @@
 
+.. module:: product_catalog_report
+    :synopsis: Product Catalog
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product Catalog (*product_catalog_report*)
 ==========================================
 :Module: product_catalog_report
@@ -6,6 +15,7 @@ Product Catalog (*product_catalog_report*)
 :Version: 5.0.1.0
 :Directory: product_catalog_report
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------

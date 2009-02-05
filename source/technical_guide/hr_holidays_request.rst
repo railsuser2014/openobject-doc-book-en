@@ -1,4 +1,13 @@
 
+.. module:: hr_holidays_request
+    :synopsis: HR Holiday Request
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request
@@ -6,6 +15,7 @@ HR Holiday Request (*hr_holidays_request*)
 :Version: 5.0.1.0
 :Directory: hr_holidays_request
 :Web: http://www.axelor.com
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * hr - installed
- * hr_holidays - installed
+ * :mod:`base`
+ * :mod:`hr`
+ * :mod:`hr_holidays`
 
 Reports
 -------
@@ -63,8 +73,8 @@ Views
 Objects
 -------
 
-Object: Holidays history
-########################
+Object: Holidays history (hr.holidays.history)
+##############################################
 
 
 
@@ -151,8 +161,8 @@ Object: Holidays history
 
 
 
-Object: Holidays history
-########################
+Object: Holidays history (days.holidays.days)
+#############################################
 
 
 
@@ -215,8 +225,8 @@ Object: Holidays history
 
 
 
-Object: Public Holidays
-#######################
+Object: Public Holidays (public.holidays.days)
+##############################################
 
 
 
@@ -231,8 +241,8 @@ Object: Public Holidays
 
 
 
-Object: Holidays history
-########################
+Object: Holidays history (days.holidays.days.history)
+#####################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: analytic_journal_billing_rate
+    :synopsis: Analytic Journal Billing Rate
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 ===============================================================
 :Module: analytic_journal_billing_rate
@@ -6,6 +15,7 @@ Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
 :Version: 5.0.1.0
 :Directory: analytic_journal_billing_rate
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -19,9 +29,9 @@ Description
 Dependencies
 ------------
 
- * analytic_user_function - installed
- * account - installed
- * hr_timesheet_invoice - installed
+ * :mod:`analytic_user_function`
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
 
 Reports
 -------
@@ -50,8 +60,8 @@ Views
 Objects
 -------
 
-Object: Relation table between journals and billing rates
-#########################################################
+Object: Relation table between journals and billing rates (analytic_journal_rate_grid)
+######################################################################################
 
 
 

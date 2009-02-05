@@ -1,4 +1,13 @@
 
+.. module:: report_intrastat
+    :synopsis: Intrastat Reporting - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Intrastat Reporting - Reporting (*report_intrastat*)
 ====================================================
 :Module: report_intrastat
@@ -6,6 +15,7 @@ Intrastat Reporting - Reporting (*report_intrastat*)
 :Version: 5.0.1.0
 :Directory: report_intrastat
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,11 +27,11 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * stock - installed
- * sale - installed
- * purchase - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`purchase`
 
 Reports
 -------
@@ -31,7 +41,7 @@ Reports
 Menus
 -------
 
- * Products/Configuration/Intrastat Code
+ * Books/Configuration/Intrastat Code
  * Stock Management/Reporting/This Month
  * Stock Management/Reporting/This Month/Intrastat (this month)
  * Stock Management/Reporting/All Months
@@ -51,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Intrastat code
-######################
+Object: Intrastat code (report.intrastat.code)
+##############################################
 
 
 
@@ -67,8 +77,8 @@ Object: Intrastat code
 
 
 
-Object: Intrastat report
-########################
+Object: Intrastat report (report.intrastat)
+###########################################
 
 
 

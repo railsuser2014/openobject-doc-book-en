@@ -1,4 +1,13 @@
 
+.. module:: city
+    :synopsis: City
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 City (*city*)
 =============
 :Module: city
@@ -6,6 +15,7 @@ City (*city*)
 :Version: 5.0.1.0
 :Directory: city
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: City
-############
+Object: City (city.city)
+########################
 
 
 

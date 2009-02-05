@@ -1,4 +1,13 @@
 
+.. module:: mrp_operations
+    :synopsis: Workcenter Production start end workflow
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Workcenter Production start end workflow (*mrp_operations*)
 ===========================================================
 :Module: mrp_operations
@@ -6,6 +15,7 @@ Workcenter Production start end workflow (*mrp_operations*)
 :Version: 5.0.1.0
 :Directory: mrp_operations
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -38,11 +48,11 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * hr - installed
- * purchase - installed
- * product - installed
- * mrp - installed
+ * :mod:`stock`
+ * :mod:`hr`
+ * :mod:`purchase`
+ * :mod:`product`
+ * :mod:`mrp`
 
 Reports
 -------
@@ -77,8 +87,8 @@ Views
 Objects
 -------
 
-Object: mrp_operations.operation.code
-#####################################
+Object: mrp_operations.operation.code (mrp_operations.operation.code)
+#####################################################################
 
 
 
@@ -99,8 +109,8 @@ Object: mrp_operations.operation.code
 
 
 
-Object: mrp_operations.operation
-################################
+Object: mrp_operations.operation (mrp_operations.operation)
+###########################################################
 
 
 

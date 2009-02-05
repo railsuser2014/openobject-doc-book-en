@@ -1,4 +1,13 @@
 
+.. module:: base_partner_sequence
+    :synopsis: Add an automatic sequence on partners
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Add an automatic sequence on partners (*base_partner_sequence*)
 ===============================================================
 :Module: base_partner_sequence
@@ -6,6 +15,7 @@ Add an automatic sequence on partners (*base_partner_sequence*)
 :Version: 5.0.1.0
 :Directory: base_partner_sequence
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

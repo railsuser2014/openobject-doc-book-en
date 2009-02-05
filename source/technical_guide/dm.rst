@@ -1,4 +1,13 @@
 
+.. module:: dm
+    :synopsis: Direct Marketing
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Direct Marketing (*dm*)
 =======================
 :Module: dm
@@ -6,6 +15,7 @@ Direct Marketing (*dm*)
 :Version: 5.0.1.0
 :Directory: dm
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -33,11 +43,11 @@ Description
 Dependencies
 ------------
 
- * project_retro_planning - installed
- * purchase - installed
- * purchase_tender - installed
- * base_language - installed
- * document - installed
+ * :mod:`project_retro_planning`
+ * :mod:`purchase`
+ * :mod:`purchase_tender`
+ * :mod:`base_language`
+ * :mod:`document`
 
 Reports
 -------
@@ -204,8 +214,8 @@ Views
 Objects
 -------
 
-Object: dm.trademark
-####################
+Object: dm.trademark (dm.trademark)
+###################################
 
 
 
@@ -244,8 +254,8 @@ Object: dm.trademark
 
 
 
-Object: dm.media
-################
+Object: dm.media (dm.media)
+###########################
 
 
 
@@ -254,8 +264,8 @@ Object: dm.media
 
 
 
-Object: dm.offer.category
-#########################
+Object: dm.offer.category (dm.offer.category)
+#############################################
 
 
 
@@ -282,8 +292,8 @@ Object: dm.offer.category
 
 
 
-Object: dm.offer.production.cost
-################################
+Object: dm.offer.production.cost (dm.offer.production.cost)
+###########################################################
 
 
 
@@ -292,8 +302,8 @@ Object: dm.offer.production.cost
 
 
 
-Object: dm.offer
-################
+Object: dm.offer (dm.offer)
+###########################
 
 
 
@@ -500,8 +510,8 @@ Object: dm.offer
 
 
 
-Object: dm.offer.translation
-############################
+Object: dm.offer.translation (dm.offer.translation)
+###################################################
 
 
 
@@ -534,8 +544,8 @@ Object: dm.offer.translation
 
 
 
-Object: dm.offer.step.type
-##########################
+Object: dm.offer.step.type (dm.offer.step.type)
+###############################################
 
 
 
@@ -568,8 +578,8 @@ Object: dm.offer.step.type
 
 
 
-Object: dm.offer.step
-#####################
+Object: dm.offer.step (dm.offer.step)
+#####################################
 
 
 
@@ -758,8 +768,8 @@ Object: dm.offer.step
 
 
 
-Object: dm.offer.step.transition.trigger
-########################################
+Object: dm.offer.step.transition.trigger (dm.offer.step.transition.trigger)
+###########################################################################
 
 
 
@@ -774,8 +784,8 @@ Object: dm.offer.step.transition.trigger
 
 
 
-Object: dm.offer.step.transition
-################################
+Object: dm.offer.step.transition (dm.offer.step.transition)
+###########################################################
 
 
 
@@ -808,8 +818,8 @@ Object: dm.offer.step.transition
 
 
 
-Object: dm.offer.step.history
-#############################
+Object: dm.offer.step.history (dm.offer.step.history)
+#####################################################
 
 
 
@@ -836,8 +846,8 @@ Object: dm.offer.step.history
 
 
 
-Object: dm.offer.step.item
-##########################
+Object: dm.offer.step.item (dm.offer.step.item)
+###############################################
 
 
 
@@ -888,8 +898,8 @@ Object: dm.offer.step.item
 
 
 
-Object: dm.offer.step.manufacturing_constraint
-##############################################
+Object: dm.offer.step.manufacturing_constraint (dm.offer.step.manufacturing_constraint)
+#######################################################################################
 
 
 
@@ -916,8 +926,8 @@ Object: dm.offer.step.manufacturing_constraint
 
 
 
-Object: dm.campaign.group
-#########################
+Object: dm.campaign.group (dm.campaign.group)
+#############################################
 
 
 
@@ -974,8 +984,8 @@ Object: dm.campaign.group
 
 
 
-Object: dm.campaign.type
-########################
+Object: dm.campaign.type (dm.campaign.type)
+###########################################
 
 
 
@@ -996,8 +1006,8 @@ Object: dm.campaign.type
 
 
 
-Object: dm.overlay
-##################
+Object: dm.overlay (dm.overlay)
+###############################
 
 
 
@@ -1030,8 +1040,8 @@ Object: dm.overlay
 
 
 
-Object: dm.campaign
-###################
+Object: dm.campaign (dm.campaign)
+#################################
 
 
 
@@ -1598,8 +1608,8 @@ Object: dm.campaign
 
 
 
-Object: dm.campaign.proposition
-###############################
+Object: dm.campaign.proposition (dm.campaign.proposition)
+#########################################################
 
 
 
@@ -2043,8 +2053,8 @@ Object: dm.campaign.proposition
     *Computed using the formula: Maximum Quantity - Hours Tot.*
 
 
-Object: The origin of the adresses of a list
-############################################
+Object: The origin of the adresses of a list (dm.customers_list.recruit_origin)
+###############################################################################
 
 
 
@@ -2059,8 +2069,8 @@ Object: The origin of the adresses of a list
 
 
 
-Object: Type of the adress list
-###############################
+Object: Type of the adress list (dm.customers_list.type)
+########################################################
 
 
 
@@ -2075,8 +2085,8 @@ Object: Type of the adress list
 
 
 
-Object: A list of addresses proposed by an adresses broker
-##########################################################
+Object: A list of addresses proposed by an adresses broker (dm.customers_list)
+##############################################################################
 
 
 
@@ -2190,8 +2200,8 @@ Object: A list of addresses proposed by an adresses broker
 
 
 
-Object: A File of addresses delivered by an addresses broker
-############################################################
+Object: A File of addresses delivered by an addresses broker (dm.customers_file)
+################################################################################
 
 
 
@@ -2224,8 +2234,8 @@ Object: A File of addresses delivered by an addresses broker
 
 
 
-Object: A subset of addresses coming from a customers file
-##########################################################
+Object: A subset of addresses coming from a customers file (dm.campaign.proposition.segment)
+############################################################################################
 
 
 
@@ -2664,8 +2674,8 @@ Object: A subset of addresses coming from a customers file
     *Computed using the formula: Maximum Quantity - Hours Tot.*
 
 
-Object: dm.campaign.proposition.item
-####################################
+Object: dm.campaign.proposition.item (dm.campaign.proposition.item)
+###################################################################
 
 
 
@@ -2716,8 +2726,8 @@ Object: dm.campaign.proposition.item
 
 
 
-Object: dm.campaign.purchase_line
-#################################
+Object: dm.campaign.purchase_line (dm.campaign.purchase_line)
+#############################################################
 
 
 
@@ -2834,8 +2844,8 @@ Object: dm.campaign.purchase_line
 
 
 
-Object: dm.campaign.manufacturing_cost
-######################################
+Object: dm.campaign.manufacturing_cost (dm.campaign.manufacturing_cost)
+#######################################################################
 
 
 
@@ -2856,8 +2866,8 @@ Object: dm.campaign.manufacturing_cost
 
 
 
-Object: dm.campaign.proposition.prices_progression
-##################################################
+Object: dm.campaign.proposition.prices_progression (dm.campaign.proposition.prices_progression)
+###############################################################################################
 
 
 
@@ -2878,8 +2888,8 @@ Object: dm.campaign.proposition.prices_progression
 
 
 
-Object: dm.order
-################
+Object: dm.order (dm.order)
+###########################
 
 
 
@@ -2978,8 +2988,8 @@ Object: dm.order
 
 
 
-Object: res.partner
-###################
+Object: res.partner (dm.customer)
+#################################
 
 
 
@@ -3594,8 +3604,8 @@ Object: res.partner
 
 
 
-Object: dm.customer.order
-#########################
+Object: dm.customer.order (dm.customer.order)
+#############################################
 
 
 
@@ -3628,8 +3638,8 @@ Object: dm.customer.order
 
 
 
-Object: Segmentation
-####################
+Object: Segmentation (dm.customer.segmentation)
+###############################################
 
 
 
@@ -3704,8 +3714,8 @@ Object: Segmentation
 
 
 
-Object: Customer Segmentation Textual Criteria
-##############################################
+Object: Customer Segmentation Textual Criteria (dm.customer.text_criteria)
+##########################################################################
 
 
 
@@ -3732,8 +3742,8 @@ Object: Customer Segmentation Textual Criteria
 
 
 
-Object: Customer Segmentation Numeric Criteria
-##############################################
+Object: Customer Segmentation Numeric Criteria (dm.customer.numeric_criteria)
+#############################################################################
 
 
 
@@ -3760,8 +3770,8 @@ Object: Customer Segmentation Numeric Criteria
 
 
 
-Object: Customer Segmentation Boolean Criteria
-##############################################
+Object: Customer Segmentation Boolean Criteria (dm.customer.boolean_criteria)
+#############################################################################
 
 
 
@@ -3788,8 +3798,8 @@ Object: Customer Segmentation Boolean Criteria
 
 
 
-Object: Customer Segmentation Date Criteria
-###########################################
+Object: Customer Segmentation Date Criteria (dm.customer.date_criteria)
+#######################################################################
 
 
 
@@ -3822,8 +3832,8 @@ Object: Customer Segmentation Date Criteria
 
 
 
-Object: Customer Order Segmentation Textual Criteria
-####################################################
+Object: Customer Order Segmentation Textual Criteria (dm.customer.order.text_criteria)
+######################################################################################
 
 
 
@@ -3850,8 +3860,8 @@ Object: Customer Order Segmentation Textual Criteria
 
 
 
-Object: Customer Order Segmentation Numeric Criteria
-####################################################
+Object: Customer Order Segmentation Numeric Criteria (dm.customer.order.numeric_criteria)
+#########################################################################################
 
 
 
@@ -3878,8 +3888,8 @@ Object: Customer Order Segmentation Numeric Criteria
 
 
 
-Object: Customer Order Segmentation Date Criteria
-#################################################
+Object: Customer Order Segmentation Date Criteria (dm.customer.order.date_criteria)
+###################################################################################
 
 
 
@@ -3912,8 +3922,8 @@ Object: Customer Order Segmentation Date Criteria
 
 
 
-Object: dm.offer.history
-########################
+Object: dm.offer.history (dm.offer.history)
+###########################################
 
 
 
@@ -3946,8 +3956,8 @@ Object: dm.offer.history
 
 
 
-Object: dm.ddf.plugin
-#####################
+Object: dm.ddf.plugin (dm.ddf.plugin)
+#####################################
 
 
 
@@ -3968,8 +3978,8 @@ Object: dm.ddf.plugin
 
 
 
-Object: dm.document.template
-############################
+Object: dm.document.template (dm.document.template)
+###################################################
 
 
 
@@ -3990,8 +4000,8 @@ Object: dm.document.template
 
 
 
-Object: dm.customer.plugin
-##########################
+Object: dm.customer.plugin (dm.customer.plugin)
+###############################################
 
 
 
@@ -4018,8 +4028,8 @@ Object: dm.customer.plugin
 
 
 
-Object: dm.offer.document.category
-##################################
+Object: dm.offer.document.category (dm.offer.document.category)
+###############################################################
 
 
 
@@ -4040,8 +4050,8 @@ Object: dm.offer.document.category
 
 
 
-Object: dm.offer.document
-#########################
+Object: dm.offer.document (dm.offer.document)
+#############################################
 
 
 

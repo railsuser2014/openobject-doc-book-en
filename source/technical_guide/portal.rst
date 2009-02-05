@@ -1,4 +1,13 @@
 
+.. module:: portal
+    :synopsis: Portal Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Portal Management (*portal*)
 ============================
 :Module: portal
@@ -6,6 +15,7 @@ Portal Management (*portal*)
 :Version: 5.0.0.1
 :Directory: portal
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -54,8 +64,8 @@ Views
 Objects
 -------
 
-Object: Portal
-##############
+Object: Portal (portal.portal)
+##############################
 
 
 
@@ -94,8 +104,8 @@ Object: Portal
 
 
 
-Object: Portal Model
-####################
+Object: Portal Model (portal.model)
+###################################
 
 
 
@@ -122,8 +132,8 @@ Object: Portal Model
 
 
 
-Object: portal.config.install_modules_wizard
-############################################
+Object: portal.config.install_modules_wizard (portal.config.install_modules_wizard)
+###################################################################################
 
 
 

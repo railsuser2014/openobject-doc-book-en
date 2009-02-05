@@ -1,4 +1,13 @@
 
+.. module:: partner_spam
+    :synopsis: SMS and Email spam to partner
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 SMS and Email spam to partner (*partner_spam*)
 ==============================================
 :Module: partner_spam
@@ -6,6 +15,7 @@ SMS and Email spam to partner (*partner_spam*)
 :Version: 5.0.1.0
 :Directory: partner_spam
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -38,7 +48,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

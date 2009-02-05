@@ -1,4 +1,13 @@
 
+.. module:: crm_profiling
+    :synopsis: crm_profiling management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 crm_profiling management (*crm_profiling*)
 ==========================================
 :Module: crm_profiling
@@ -6,6 +15,7 @@ crm_profiling management (*crm_profiling*)
 :Version: 5.0.1.3
 :Directory: crm_profiling
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -26,8 +36,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm - installed
+ * :mod:`base`
+ * :mod:`crm`
 
 Reports
 -------
@@ -57,8 +67,8 @@ Views
 Objects
 -------
 
-Object: Question
-################
+Object: Question (crm_profiling.question)
+#########################################
 
 
 
@@ -85,8 +95,8 @@ Object: Question
 
 
 
-Object: Questionnaire
-#####################
+Object: Questionnaire (crm_profiling.questionnaire)
+###################################################
 
 
 
@@ -107,8 +117,8 @@ Object: Questionnaire
 
 
 
-Object: Answer
-##############
+Object: Answer (crm_profiling.answer)
+#####################################
 
 
 

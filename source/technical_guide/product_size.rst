@@ -1,4 +1,13 @@
 
+.. module:: product_size
+    :synopsis: Sizes of lots (width, length, thickness)
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sizes of lots (width, length, thickness) (*product_size*)
 =========================================================
 :Module: product_size
@@ -6,6 +15,7 @@ Sizes of lots (width, length, thickness) (*product_size*)
 :Version: 5.0.1.0
 :Directory: product_size
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -18,12 +28,12 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
- * stock - installed
- * mrp - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`mrp`
+ * :mod:`sale`
 
 Reports
 -------

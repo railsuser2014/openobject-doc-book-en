@@ -1,4 +1,13 @@
 
+.. module:: base_contact_team
+    :synopsis: Base Contact Team
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Contact Team (*base_contact_team*)
 =======================================
 :Module: base_contact_team
@@ -6,6 +15,7 @@ Base Contact Team (*base_contact_team*)
 :Version: 5.0.0.1
 :Directory: base_contact_team
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base_contact - installed
+ * :mod:`base_contact`
 
 Reports
 -------
@@ -42,8 +52,8 @@ Views
 Objects
 -------
 
-Object: res.partner.team
-########################
+Object: res.partner.team (res.partner.team)
+###########################################
 
 
 

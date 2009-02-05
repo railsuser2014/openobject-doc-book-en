@@ -1,4 +1,13 @@
 
+.. module:: stock
+    :synopsis: Stock Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock Management (*stock*)
 ==========================
 :Module: stock
@@ -6,6 +15,7 @@ Stock Management (*stock*)
 :Version: 5.0.1.1
 :Directory: stock
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -26,8 +36,8 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * account - installed
+ * :mod:`product`
+ * :mod:`account`
 
 Reports
 -------
@@ -134,8 +144,8 @@ Views
 Objects
 -------
 
-Object: Incoterms
-#################
+Object: Incoterms (stock.incoterms)
+###################################
 
 
 
@@ -156,8 +166,8 @@ Object: Incoterms
 
 
 
-Object: Location
-################
+Object: Location (stock.location)
+#################################
 
 
 
@@ -389,8 +399,8 @@ Object: Location
 
 
 
-Object: Stock Tracking Lots
-###########################
+Object: Stock Tracking Lots (stock.tracking)
+############################################
 
 
 
@@ -423,8 +433,8 @@ Object: Stock Tracking Lots
 
 
 
-Object: Packing list
-####################
+Object: Packing list (stock.picking)
+####################################
 
 
 
@@ -607,8 +617,8 @@ Object: Packing list
 
 
 
-Object: Production lot
-######################
+Object: Production lot (stock.production.lot)
+#############################################
 
 
 
@@ -773,8 +783,8 @@ Object: Production lot
 
 
 
-Object: Production lot revisions
-################################
+Object: Production lot revisions (stock.production.lot.revision)
+################################################################
 
 
 
@@ -813,8 +823,8 @@ Object: Production lot revisions
 
 
 
-Object: Stock Move
-##################
+Object: Stock Move (stock.move)
+###############################
 
 
 
@@ -1009,8 +1019,8 @@ Object: Stock Move
 
 
 
-Object: Inventory
-#################
+Object: Inventory (stock.inventory)
+###################################
 
 
 
@@ -1049,8 +1059,8 @@ Object: Inventory
 
 
 
-Object: Inventory line
-######################
+Object: Inventory line (stock.inventory.line)
+#############################################
 
 
 
@@ -1083,8 +1093,8 @@ Object: Inventory line
 
 
 
-Object: Warehouse
-#################
+Object: Warehouse (stock.warehouse)
+###################################
 
 
 
@@ -1117,8 +1127,8 @@ Object: Warehouse
 
 
 
-Object: stock.picking.move.wizard
-#################################
+Object: stock.picking.move.wizard (stock.picking.move.wizard)
+#############################################################
 
 
 
@@ -1145,8 +1155,8 @@ Object: stock.picking.move.wizard
 
 
 
-Object: Dates of Inventories
-############################
+Object: Dates of Inventories (report.stock.lines.date)
+######################################################
 
 
 
@@ -1167,8 +1177,8 @@ Object: Dates of Inventories
 
 
 
-Object: Stock report by production lots
-#######################################
+Object: Stock report by production lots (stock.report.prodlots)
+###############################################################
 
 
 

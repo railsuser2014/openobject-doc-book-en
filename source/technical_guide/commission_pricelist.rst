@@ -1,4 +1,13 @@
 
+.. module:: commission_pricelist
+    :synopsis: Sale agent Information
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale agent Information (*commission_pricelist*)
 ===============================================
 :Module: commission_pricelist
@@ -6,6 +15,7 @@ Sale agent Information (*commission_pricelist*)
 :Version: False
 :Directory: commission_pricelist
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------
@@ -44,8 +54,8 @@ None
 Objects
 -------
 
-Object: Sale agent sale info
-############################
+Object: Sale agent sale info (sale.agent)
+#########################################
 
 
 

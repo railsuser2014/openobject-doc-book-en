@@ -73,6 +73,8 @@ Word then generates the documents by inserting the Open ERP data. You get one p
 
 *Result of merging a Word document with data from Open ERP*
 
+.. index::
+   single: Word adapter
 
 .. tip::   **Note**  *Testing the Word adapter* 
 

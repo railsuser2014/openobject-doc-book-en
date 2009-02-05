@@ -1,4 +1,13 @@
 
+.. module:: wiki
+    :synopsis: Document Management - Wiki
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Document Management - Wiki (*wiki*)
 ===================================
 :Module: wiki
@@ -6,6 +15,7 @@ Document Management - Wiki (*wiki*)
 :Version: 5.0.1.0
 :Directory: wiki
 :Web: http://openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -53,8 +63,8 @@ Views
 Objects
 -------
 
-Object: wiki.wiki
-#################
+Object: wiki.wiki (wiki.wiki)
+#############################
 
 
 
@@ -141,8 +151,8 @@ Object: wiki.wiki
 
 
 
-Object: Wiki Groups
-###################
+Object: Wiki Groups (wiki.groups)
+#################################
 
 
 
@@ -199,8 +209,8 @@ Object: Wiki Groups
 
 
 
-Object: Wiki Groups Links
-#########################
+Object: Wiki Groups Links (wiki.groups.link)
+############################################
 
 
 
@@ -215,8 +225,8 @@ Object: Wiki Groups Links
 
 
 
-Object: Wiki History
-####################
+Object: Wiki History (wiki.wiki.history)
+########################################
 
 
 
@@ -255,8 +265,8 @@ Object: Wiki History
 
 
 
-Object: wizard.wiki.history.show_diff
-#####################################
+Object: wizard.wiki.history.show_diff (wizard.wiki.history.show_diff)
+#####################################################################
 
 
 

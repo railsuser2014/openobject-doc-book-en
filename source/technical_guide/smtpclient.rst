@@ -1,4 +1,13 @@
 
+.. module:: smtpclient
+    :synopsis: Email Client
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Email Client (*smtpclient*)
 ===========================
 :Module: smtpclient
@@ -6,6 +15,7 @@ Email Client (*smtpclient*)
 :Version: 5.0.1.0
 :Directory: smtpclient
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Email Client
-####################
+Object: Email Client (email.smtpclient)
+#######################################
 
 
 
@@ -170,8 +180,8 @@ Object: Email Client
 
 
 
-Object: Email Client History
-############################
+Object: Email Client History (email.smtpclient.history)
+#######################################################
 
 
 
@@ -216,8 +226,8 @@ Object: Email Client History
 
 
 
-Object: Server Statistics
-#########################
+Object: Server Statistics (report.smtp.server)
+##############################################
 
 
 
@@ -250,8 +260,8 @@ Object: Server Statistics
 
 
 
-Object: res.company.address
-###########################
+Object: res.company.address (res.company.address)
+#################################################
 
 
 

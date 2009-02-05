@@ -1,4 +1,13 @@
 
+.. module:: sale_expected_invoice_date
+    :synopsis: Sale Expected Invoice Date
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Expected Invoice Date (*sale_expected_invoice_date*)
 =========================================================
 :Module: sale_expected_invoice_date
@@ -6,6 +15,7 @@ Sale Expected Invoice Date (*sale_expected_invoice_date*)
 :Version: 5.0.0.1
 :Directory: sale_expected_invoice_date
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------

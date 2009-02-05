@@ -1,4 +1,13 @@
 
+.. module:: cci_translation
+    :synopsis: CCI Translation
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Translation (*cci_translation*)
 ===================================
 :Module: cci_translation
@@ -6,6 +15,7 @@ CCI Translation (*cci_translation*)
 :Version: 5.0.1.0
 :Directory: cci_translation
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * cci_account - installed
+ * :mod:`base`
+ * :mod:`cci_account`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Credit line
-###################
+Object: Credit line (credit.line)
+#################################
 
 
 
@@ -83,8 +93,8 @@ Object: Credit line
 
 
 
-Object: Translation Folder
-##########################
+Object: Translation Folder (translation.folder)
+###############################################
 
 
 
@@ -153,8 +163,8 @@ Object: Translation Folder
 
 
 
-Object: Letter of Credence
-##########################
+Object: Letter of Credence (letter.credence)
+############################################
 
 
 

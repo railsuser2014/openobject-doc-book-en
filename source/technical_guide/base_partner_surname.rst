@@ -1,4 +1,13 @@
 
+.. module:: base_partner_surname
+    :synopsis: Base Partner Surname
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Partner Surname (*base_partner_surname*)
 =============================================
 :Module: base_partner_surname
@@ -6,6 +15,7 @@ Base Partner Surname (*base_partner_surname*)
 :Version: 5.0.1.0
 :Directory: base_partner_surname
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

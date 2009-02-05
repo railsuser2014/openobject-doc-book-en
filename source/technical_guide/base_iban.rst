@@ -1,4 +1,13 @@
 
+.. module:: base_iban
+    :synopsis: IBAN
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 IBAN (*base_iban*)
 ==================
 :Module: base_iban
@@ -6,6 +15,7 @@ IBAN (*base_iban*)
 :Version: 5.0.1.0
 :Directory: base_iban
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

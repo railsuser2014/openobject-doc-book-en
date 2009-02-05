@@ -1,4 +1,13 @@
 
+.. module:: purchase_journal
+    :synopsis: Managing sales and deliveries by journal
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Managing sales and deliveries by journal (*purchase_journal*)
 =============================================================
 :Module: purchase_journal
@@ -6,6 +15,7 @@ Managing sales and deliveries by journal (*purchase_journal*)
 :Version: 5.0.1.0
 :Directory: purchase_journal
 :Web: http://www.tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * purchase - installed
+ * :mod:`stock`
+ * :mod:`purchase`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: purchase Journal
-########################
+Object: purchase Journal (purchase_journal.purchase.journal)
+############################################################
 
 
 
@@ -114,8 +124,8 @@ Object: purchase Journal
 
 
 
-Object: Purchases Orders by Journal
-###################################
+Object: Purchases Orders by Journal (purchase_journal.purchase.stats)
+#####################################################################
 
 
 

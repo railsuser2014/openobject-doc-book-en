@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_pa
+    :synopsis: Panama - Chart of Account
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Panama - Chart of Account (*l10n_chart_pa*)
 ===========================================
 :Module: l10n_chart_pa
@@ -6,6 +15,7 @@ Panama - Chart of Account (*l10n_chart_pa*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_pa
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

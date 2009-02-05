@@ -1,4 +1,13 @@
 
+.. module:: lunch
+    :synopsis: Lunch Module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Lunch Module (*lunch*)
 ======================
 :Module: lunch
@@ -6,6 +15,7 @@ Lunch Module (*lunch*)
 :Version: 5.0.0.1
 :Directory: lunch
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -58,8 +68,8 @@ Views
 Objects
 -------
 
-Object: Category
-################
+Object: Category (lunch.category)
+#################################
 
 
 
@@ -68,8 +78,8 @@ Object: Category
 
 
 
-Object: lunch.product
-#####################
+Object: lunch.product (lunch.product)
+#####################################
 
 
 
@@ -102,8 +112,8 @@ Object: lunch.product
 
 
 
-Object: lunch.cashbox
-#####################
+Object: lunch.cashbox (lunch.cashbox)
+#####################################
 
 
 
@@ -124,8 +134,8 @@ Object: lunch.cashbox
 
 
 
-Object: lunch.cashmove
-######################
+Object: lunch.cashmove (lunch.cashmove)
+#######################################
 
 
 
@@ -164,8 +174,8 @@ Object: lunch.cashmove
 
 
 
-Object: lunch.order
-###################
+Object: lunch.order (lunch.order)
+#################################
 
 
 
@@ -210,8 +220,8 @@ Object: lunch.order
 
 
 
-Object: Amount available by user and box
-########################################
+Object: Amount available by user and box (report.lunch.amount)
+##############################################################
 
 
 

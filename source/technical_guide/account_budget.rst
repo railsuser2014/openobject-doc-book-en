@@ -1,4 +1,13 @@
 
+.. module:: account_budget
+    :synopsis: Budget Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Budget Management (*account_budget*)
 ====================================
 :Module: account_budget
@@ -6,6 +15,7 @@ Budget Management (*account_budget*)
 :Version: 5.0.1.0
 :Directory: account_budget
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -33,7 +43,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -70,8 +80,8 @@ Views
 Objects
 -------
 
-Object: Budgetary Position
-##########################
+Object: Budgetary Position (account.budget.post)
+################################################
 
 
 
@@ -110,8 +120,8 @@ Object: Budgetary Position
 
 
 
-Object: Budget Dotation
-#######################
+Object: Budget Dotation (account.budget.post.dotation)
+######################################################
 
 
 
@@ -144,8 +154,8 @@ Object: Budget Dotation
 
 
 
-Object: Budget
-##############
+Object: Budget (crossovered.budget)
+###################################
 
 
 
@@ -196,8 +206,8 @@ Object: Budget
 
 
 
-Object: Budget Lines
-####################
+Object: Budget Lines (crossovered.budget.lines)
+###############################################
 
 
 

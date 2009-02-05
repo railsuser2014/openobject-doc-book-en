@@ -1,4 +1,13 @@
 
+.. module:: md_hr_course
+    :synopsis: Pilot Human Resources
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Pilot Human Resources (*md_hr_course*)
 ======================================
 :Module: md_hr_course
@@ -6,6 +15,7 @@ Pilot Human Resources (*md_hr_course*)
 :Version: 5.0.1.0
 :Directory: md_hr_course
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hr - installed
+ * :mod:`hr`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: Course
-##############
+Object: Course (md.hr.course)
+#############################
 
 
 
@@ -61,8 +71,8 @@ Object: Course
 
 
 
-Object: Course Student
-######################
+Object: Course Student (md.hr.course.student)
+#############################################
 
 
 

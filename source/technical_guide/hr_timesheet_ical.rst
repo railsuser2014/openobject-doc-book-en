@@ -1,4 +1,13 @@
 
+.. module:: hr_timesheet_ical
+    :synopsis: Complete timesheet from an iCal server
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Complete timesheet from an iCal server (*hr_timesheet_ical*)
 ============================================================
 :Module: hr_timesheet_ical
@@ -6,6 +15,7 @@ Complete timesheet from an iCal server (*hr_timesheet_ical*)
 :Version: 5.0.0.1
 :Directory: hr_timesheet_ical
 :Web: http://tinyerp.com/module_hr.html
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet - installed
+ * :mod:`hr_timesheet`
 
 Reports
 -------

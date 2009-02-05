@@ -1,4 +1,13 @@
 
+.. module:: account_cash_discount
+    :synopsis: Payement Term with Cash Discount
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Payement Term with Cash Discount (*account_cash_discount*)
 ==========================================================
 :Module: account_cash_discount
@@ -6,6 +15,7 @@ Payement Term with Cash Discount (*account_cash_discount*)
 :Version: 5.0.1.0
 :Directory: account_cash_discount
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -21,7 +31,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Cash Discount
-#####################
+Object: Cash Discount (account.cash.discount)
+#############################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: product_margin
+    :synopsis: Margins in Product
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Margins in Product (*product_margin*)
 =====================================
 :Module: product_margin
@@ -6,6 +15,7 @@ Margins in Product (*product_margin*)
 :Version: 5.0.1.0
 :Directory: product_margin
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -19,9 +29,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
 
 Reports
 -------
@@ -32,8 +42,8 @@ None
 Menus
 -------
 
- * Products/Reporting
- * Products/Reporting/Product Margins
+ * Books/Reporting
+ * Books/Reporting/Product Margins
 
 Views
 -----

@@ -1,4 +1,13 @@
 
+.. module:: report_purchase
+    :synopsis: Purchase Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Purchase Management - Reporting (*report_purchase*)
 ===================================================
 :Module: report_purchase
@@ -6,6 +15,7 @@ Purchase Management - Reporting (*report_purchase*)
 :Version: 5.0.1.0
 :Directory: report_purchase
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------
@@ -51,8 +61,8 @@ Views
 Objects
 -------
 
-Object: Purchases Orders by Products
-####################################
+Object: Purchases Orders by Products (report.purchase.order.product)
+####################################################################
 
 
 
@@ -97,8 +107,8 @@ Object: Purchases Orders by Products
 
 
 
-Object: Purchases Orders by Categories
-######################################
+Object: Purchases Orders by Categories (report.purchase.order.category)
+#######################################################################
 
 
 

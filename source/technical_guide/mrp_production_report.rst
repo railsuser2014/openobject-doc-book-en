@@ -1,4 +1,13 @@
 
+.. module:: mrp_production_report
+    :synopsis: Production Report
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Production Report (*mrp_production_report*)
 ===========================================
 :Module: mrp_production_report
@@ -6,6 +15,7 @@ Production Report (*mrp_production_report*)
 :Version: 5.0.1.0
 :Directory: mrp_production_report
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * mrp - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`mrp`
+ * :mod:`sale`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: hr
+    :synopsis: Human Resources
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources (*hr*)
 ======================
 :Module: hr
@@ -6,6 +15,7 @@ Human Resources (*hr*)
 :Version: 5.0.1.1
 :Directory: hr
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -22,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`process`
 
 Reports
 -------
@@ -66,8 +76,8 @@ Views
 Objects
 -------
 
-Object: Working Time
-####################
+Object: Working Time (hr.timesheet.group)
+#########################################
 
 
 
@@ -88,8 +98,8 @@ Object: Working Time
 
 
 
-Object: Employee Category
-#########################
+Object: Employee Category (hr.employee.category)
+################################################
 
 
 
@@ -110,8 +120,8 @@ Object: Employee Category
 
 
 
-Object: Employee
-################
+Object: Employee (hr.employee)
+##############################
 
 
 
@@ -570,8 +580,8 @@ Object: Employee
 
 
 
-Object: Timesheet Line
-######################
+Object: Timesheet Line (hr.timesheet)
+#####################################
 
 
 
@@ -610,8 +620,8 @@ Object: Timesheet Line
 
 
 
-Object: hr.department
-#####################
+Object: hr.department (hr.department)
+#####################################
 
 
 

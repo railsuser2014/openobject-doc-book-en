@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_in
+    :synopsis: India - Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 India - Chart of Accounts (*l10n_chart_in*)
 ===========================================
 :Module: l10n_chart_in
@@ -6,6 +15,7 @@ India - Chart of Accounts (*l10n_chart_in*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_in
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

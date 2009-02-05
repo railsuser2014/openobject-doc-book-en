@@ -1,4 +1,13 @@
 
+.. module:: report_document
+    :synopsis: Document Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Document Management - Reporting (*report_document*)
 ===================================================
 :Module: report_document
@@ -6,6 +15,7 @@ Document Management - Reporting (*report_document*)
 :Version: 5.0.1.0
 :Directory: report_document
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * document - installed
+ * :mod:`document`
 
 Reports
 -------
@@ -60,8 +70,8 @@ Views
 Objects
 -------
 
-Object: Files details by Users
-##############################
+Object: Files details by Users (report.document.user)
+#####################################################
 
 
 
@@ -136,8 +146,8 @@ Object: Files details by Users
 
 
 
-Object: Files details by Partners
-#################################
+Object: Files details by Partners (report.files.partner)
+########################################################
 
 
 
@@ -194,8 +204,8 @@ Object: Files details by Partners
 
 
 
-Object: Files details by Directory
-##################################
+Object: Files details by Directory (report.document.file)
+#########################################################
 
 
 
@@ -216,8 +226,8 @@ Object: Files details by Directory
 
 
 
-Object: Users that did not inserted documents since one month
-#############################################################
+Object: Users that did not inserted documents since one month (report.document.wall)
+####################################################################################
 
 
 

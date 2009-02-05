@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_ca_fr
+    :synopsis: Canadian - French - Chart of Acounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 =========================================================
 :Module: l10n_chart_ca_fr
@@ -6,6 +15,7 @@ Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ca_fr
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

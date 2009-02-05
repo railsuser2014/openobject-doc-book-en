@@ -1,4 +1,13 @@
 
+.. module:: hr_timesheet_sheet
+    :synopsis: Timesheets
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Timesheets (*hr_timesheet_sheet*)
 =================================
 :Module: hr_timesheet_sheet
@@ -6,6 +15,7 @@ Timesheets (*hr_timesheet_sheet*)
 :Version: 5.0.1.0
 :Directory: hr_timesheet_sheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -33,9 +43,9 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet - installed
- * hr_timesheet_invoice - installed
- * process - installed
+ * :mod:`hr_timesheet`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`process`
 
 Reports
 -------
@@ -77,8 +87,8 @@ Views
 Objects
 -------
 
-Object: hr_timesheet_sheet.sheet
-################################
+Object: hr_timesheet_sheet.sheet (hr_timesheet_sheet.sheet)
+###########################################################
 
 
 
@@ -189,8 +199,8 @@ Object: hr_timesheet_sheet.sheet
 
 
 
-Object: Timesheets by period
-############################
+Object: Timesheets by period (hr_timesheet_sheet.sheet.day)
+###########################################################
 
 
 
@@ -223,8 +233,8 @@ Object: Timesheets by period
 
 
 
-Object: Timesheets by period
-############################
+Object: Timesheets by period (hr_timesheet_sheet.sheet.account)
+###############################################################
 
 
 

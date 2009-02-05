@@ -1,4 +1,13 @@
 
+.. module:: report_sale
+    :synopsis: Sales Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Management - Reporting (*report_sale*)
 ============================================
 :Module: report_sale
@@ -6,6 +15,7 @@ Sales Management - Reporting (*report_sale*)
 :Version: 5.0.1.0
 :Directory: report_sale
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -25,7 +35,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------
@@ -64,8 +74,8 @@ Views
 Objects
 -------
 
-Object: Sales Orders by Products
-################################
+Object: Sales Orders by Products (report.sale.order.product)
+############################################################
 
 
 
@@ -110,8 +120,8 @@ Object: Sales Orders by Products
 
 
 
-Object: Sales Orders by Categories
-##################################
+Object: Sales Orders by Categories (report.sale.order.category)
+###############################################################
 
 
 

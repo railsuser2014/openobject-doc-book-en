@@ -1,4 +1,13 @@
 
+.. module:: board_manufacturing
+    :synopsis: Board for manufacturing
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for manufacturing (*board_manufacturing*)
 ===============================================
 :Module: board_manufacturing
@@ -6,6 +15,7 @@ Board for manufacturing (*board_manufacturing*)
 :Version: 5.0.1.0
 :Directory: board_manufacturing
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -21,10 +31,10 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * mrp - installed
- * stock - installed
- * report_mrp - installed
+ * :mod:`board`
+ * :mod:`mrp`
+ * :mod:`stock`
+ * :mod:`report_mrp`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: scrum
+    :synopsis: Scrum, Agile Development Method
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Scrum, Agile Development Method (*scrum*)
 =========================================
 :Module: scrum
@@ -6,6 +15,7 @@ Scrum, Agile Development Method (*scrum*)
 :Version: 5.0.1.0
 :Directory: scrum
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -36,8 +46,8 @@ Description
 Dependencies
 ------------
 
- * project - installed
- * process - installed
+ * :mod:`project`
+ * :mod:`process`
 
 Reports
 -------
@@ -85,8 +95,8 @@ Views
 Objects
 -------
 
-Object: Scrum Team
-##################
+Object: Scrum Team (scrum.team)
+###############################
 
 
 
@@ -101,8 +111,8 @@ Object: Scrum Team
 
 
 
-Object: Scrum Project
-#####################
+Object: Scrum Project (scrum.project)
+#####################################
 
 
 
@@ -267,8 +277,8 @@ Object: Scrum Project
     *Percent of tasks closed according to the total of tasks todo.*
 
 
-Object: Scrum Sprint
-####################
+Object: Scrum Sprint (scrum.sprint)
+###################################
 
 
 
@@ -355,8 +365,8 @@ Object: Scrum Sprint
 
 
 
-Object: Product Backlog
-#######################
+Object: Product Backlog (scrum.product.backlog)
+###############################################
 
 
 
@@ -437,8 +447,8 @@ Object: Product Backlog
 
 
 
-Object: Scrum Task
-##################
+Object: Scrum Task (scrum.task)
+###############################
 
 
 
@@ -597,8 +607,8 @@ Object: Scrum Task
     *Total remaining time, can be re-estimated periodically by the assignee of the task.*
 
 
-Object: Scrum Meeting
-#####################
+Object: Scrum Meeting (scrum.meeting)
+#####################################
 
 
 

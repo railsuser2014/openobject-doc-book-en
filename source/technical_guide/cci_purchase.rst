@@ -1,4 +1,13 @@
 
+.. module:: cci_purchase
+    :synopsis: CCI Purchase
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Purchase (*cci_purchase*)
 =============================
 :Module: cci_purchase
@@ -6,6 +15,7 @@ CCI Purchase (*cci_purchase*)
 :Version: 5.0.1.0
 :Directory: cci_purchase
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * purchase - installed
+ * :mod:`base`
+ * :mod:`purchase`
 
 Reports
 -------

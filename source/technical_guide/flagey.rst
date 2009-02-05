@@ -1,4 +1,13 @@
 
+.. module:: flagey
+    :synopsis: Auction module - Flagey Customs
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction module - Flagey Customs (*flagey*)
 ==========================================
 :Module: flagey
@@ -6,6 +15,7 @@ Auction module - Flagey Customs (*flagey*)
 :Version: 5.0.1.0
 :Directory: flagey
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * auction - installed
+ * :mod:`auction`
 
 Reports
 -------

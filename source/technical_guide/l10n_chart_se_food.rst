@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_se_food
+    :synopsis: Sweden - Food industries - Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)
 ===================================================================
 :Module: l10n_chart_se_food
@@ -6,6 +15,7 @@ Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_se_food
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_iban - installed
- * base_vat - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_iban`
+ * :mod:`base_vat`
+ * :mod:`account_chart`
 
 Reports
 -------

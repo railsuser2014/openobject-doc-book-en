@@ -1,4 +1,13 @@
 
+.. module:: base_translation
+    :synopsis: Translation
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Translation (*base_translation*)
 ================================
 :Module: base_translation
@@ -6,6 +15,7 @@ Translation (*base_translation*)
 :Version: 5.0.1.0
 :Directory: base_translation
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: Translation Contribution
-################################
+Object: Translation Contribution (ir.translation.contribution)
+##############################################################
 
 
 

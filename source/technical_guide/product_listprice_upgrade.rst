@@ -1,4 +1,13 @@
 
+.. module:: product_listprice_upgrade
+    :synopsis: Product listprice upgrade
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Product listprice upgrade (*product_listprice_upgrade*)
 =======================================================
 :Module: product_listprice_upgrade
@@ -6,6 +15,7 @@ Product listprice upgrade (*product_listprice_upgrade*)
 :Version: 5.0.1.0
 :Directory: product_listprice_upgrade
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,8 +30,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------
@@ -32,8 +42,8 @@ None
 Menus
 -------
 
- * Products/Pricelists
- * Products/Pricelists/Upgrade Product List price
+ * Books/Pricelists
+ * Books/Pricelists/Upgrade Product List price
 
 Views
 -----

@@ -1,4 +1,13 @@
 
+.. module:: cci_audittrail
+    :synopsis: Audit Trail
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Audit Trail (*cci_audittrail*)
 ==============================
 :Module: cci_audittrail
@@ -6,6 +15,7 @@ Audit Trail (*cci_audittrail*)
 :Version: 5.0.1.0
 :Directory: cci_audittrail
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * audittrail - installed
+ * :mod:`audittrail`
 
 Reports
 -------

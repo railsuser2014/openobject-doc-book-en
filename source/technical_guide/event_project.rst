@@ -1,4 +1,13 @@
 
+.. module:: event_project
+    :synopsis: Event - Project
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Event - Project (*event_project*)
 =================================
 :Module: event_project
@@ -6,6 +15,7 @@ Event - Project (*event_project*)
 :Version: 5.0.0.1
 :Directory: event_project
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -19,8 +29,8 @@ Description
 Dependencies
 ------------
 
- * project_retro_planning - installed
- * event - installed
+ * :mod:`project_retro_planning`
+ * :mod:`event`
 
 Reports
 -------

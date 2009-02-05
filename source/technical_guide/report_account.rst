@@ -1,4 +1,13 @@
 
+.. module:: report_account
+    :synopsis: Account Reporting - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Reporting - Reporting (*report_account*)
 ================================================
 :Module: report_account
@@ -6,6 +15,7 @@ Account Reporting - Reporting (*report_account*)
 :Version: 5.0.1.0
 :Directory: report_account
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -41,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Receivable accounts
-###########################
+Object: Receivable accounts (report.account.receivable)
+#######################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: account_analytic_plans
+    :synopsis: Multiple-plans management in Analytic Accounting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 ===========================================================================
 :Module: account_analytic_plans
@@ -6,6 +15,7 @@ Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 :Version: 5.0.1.0
 :Directory: account_analytic_plans
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -43,8 +53,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_analytic_default - installed
+ * :mod:`account`
+ * :mod:`account_analytic_default`
 
 Reports
 -------
@@ -80,8 +90,8 @@ Views
 Objects
 -------
 
-Object: Analytic Plans
-######################
+Object: Analytic Plans (account.analytic.plan)
+##############################################
 
 
 
@@ -102,8 +112,8 @@ Object: Analytic Plans
 
 
 
-Object: Analytic Plan Lines
-###########################
+Object: Analytic Plan Lines (account.analytic.plan.line)
+########################################################
 
 
 
@@ -142,8 +152,8 @@ Object: Analytic Plan Lines
     *Root account of this plan.*
 
 
-Object: Analytic Plan Instance
-##############################
+Object: Analytic Plan Instance (account.analytic.plan.instance)
+###############################################################
 
 
 
@@ -212,8 +222,8 @@ Object: Analytic Plan Instance
 
 
 
-Object: Analytic Instance Line
-##############################
+Object: Analytic Instance Line (account.analytic.plan.instance.line)
+####################################################################
 
 
 

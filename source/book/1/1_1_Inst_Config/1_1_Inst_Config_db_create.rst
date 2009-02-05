@@ -38,13 +38,14 @@ To create new databases you must know the super-administrator password which def
 
 
 	.. image:: images/change_superadmin_pwd.png
-
+	    :align: center
                 
 *Changing the super-administrator password through the web client*
 
 --------------------------                
                 
 	.. image:: images/create_new_db_GTK.png
+		:align: center
 	
 *Creating a new database through the GTK client*
 	        
@@ -62,8 +63,6 @@ Wait for the message showing that the database has been successfully created, al
 
 .. tip::   **Technique**  *User Access* 
 
-
-
 	The combination of username/password is specific to a single database. If you have administrative rights to a database you can modify the predefined users. 
 
 	Alternatively you can install the users_ldap module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
@@ -72,7 +71,7 @@ Wait for the message showing that the database has been successfully created, al
 --------------
 
 	.. image:: images/create_new_db_web.png
-	
+		:align: center
 
         .. note ::  Failure to create a database
 
@@ -93,8 +92,9 @@ If this is the first time you've connected to this database you'll be asked a se
 Once configuration is complete you're connected to your Open ERP system. Its functionality is very limited because you've selected a minimal installation, but this is sufficient to demonstrate that your installation is working.
 
 
-.. image:: images/define_main_co_dlg.png
-    :scale: 95
+	.. image:: images/define_main_co_dlg.png
+		:align: center
+		:scale: 95
 	    
 *Defining your company during initial database configuration*
 	
@@ -159,9 +159,10 @@ To add new modules through the server is a conventional systems administration t
 
 To add new modules through the client you must first change the permissions of the \ ``addons``\   directory of the server, so that it is writable by the server. That will enable you to install Open ERP modules using the Open ERP client (a task ultimately carried out on the application server by the server software). 
 
+.. index::
+   single:  Permissions
+
 .. tip::   **Note**  *Changing permissions* 
-
-
 
 	A very simple way of changing permissions on the Linux system you're using to develop an Open ERP application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-server/addons). 
 

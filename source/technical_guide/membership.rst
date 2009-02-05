@@ -1,4 +1,13 @@
 
+.. module:: membership
+    :synopsis: Membership
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Membership (*membership*)
 =========================
 :Module: membership
@@ -6,6 +15,7 @@ Membership (*membership*)
 :Version: 5.0.0.1
 :Directory: membership
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -26,10 +36,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * account - installed
- * process - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`account`
+ * :mod:`process`
 
 Reports
 -------
@@ -77,8 +87,8 @@ Views
 Objects
 -------
 
-Object: Member line
-###################
+Object: Member line (membership.membership_line)
+################################################
 
 
 
@@ -117,8 +127,8 @@ Object: Member line
 
 
 
-Object: Membership by Years
-###########################
+Object: Membership by Years (report.partner_member.year)
+########################################################
 
 
 
@@ -181,8 +191,8 @@ Object: Membership by Years
 
 
 
-Object: New Membership by Years
-###############################
+Object: New Membership by Years (report.partner_member.year_new)
+################################################################
 
 
 

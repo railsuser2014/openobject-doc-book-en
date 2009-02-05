@@ -72,6 +72,9 @@ Even though most analytic entries are produced automatically by the other Open 
 
 To make manual record entries, use the menu  *Financial Management > Entries > Analytic Entries > Entries by journal* .
 
+.. index::
+   single: Analytic entries
+
 .. tip::   **Comment**  *Analytic entries* 
 
 	To make an analytic entry, Open ERP asks you to specify a general account. This is given only for information in the different cross-reports. It won't create any new entries in the general accounts.
@@ -84,11 +87,11 @@ Select a journal and complete the different fields. Write an expense as a negati
 
 	.. note::  *Example Cost redistribution* 
 
-For example 
-
-			One of the uses of manual data entry for analytic operations is reallocation of costs. For example, if a development has been done for a given project but can be used again for another project you can reallocate part of the cost to the other project.
-
-			In this case, make a positive entry on the first account and a negative entry for the same amount on the account of the second project.
+		For example 
+		
+					One of the uses of manual data entry for analytic operations is reallocation of costs. For example, if a development has been done for a given project but can be used again for another project you can reallocate part of the cost to the other project.
+		
+					In this case, make a positive entry on the first account and a negative entry for the same amount on the account of the second project.
 
 
 .. Copyright © Open Object Press. All rights reserved.

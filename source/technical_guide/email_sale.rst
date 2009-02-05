@@ -1,4 +1,13 @@
 
+.. module:: email_sale
+    :synopsis: Email Sale order
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Email Sale order (*email_sale*)
 ===============================
 :Module: email_sale
@@ -6,6 +15,7 @@ Email Sale order (*email_sale*)
 :Version: 5.0.1.0
 :Directory: email_sale
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -25,8 +35,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * sale - installed
+ * :mod:`smtpclient`
+ * :mod:`sale`
 
 Reports
 -------

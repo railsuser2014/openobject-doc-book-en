@@ -1,4 +1,13 @@
 
+.. module:: base_crypt
+    :synopsis: Base
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base (*base_crypt*)
 ===================
 :Module: base_crypt
@@ -6,6 +15,7 @@ Base (*base_crypt*)
 :Version: 5.0.1.0
 :Directory: base_crypt
 :Web: http://tinyerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------

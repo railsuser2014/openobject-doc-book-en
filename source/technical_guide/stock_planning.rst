@@ -1,4 +1,13 @@
 
+.. module:: stock_planning
+    :synopsis: Master Procurement Schedule
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Master Procurement Schedule (*stock_planning*)
 ==============================================
 :Module: stock_planning
@@ -6,6 +15,7 @@ Master Procurement Schedule (*stock_planning*)
 :Version: 5.0.1.0
 :Directory: stock_planning
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -22,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * stock - installed
- * sale - installed
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------
@@ -60,8 +70,8 @@ Views
 Objects
 -------
 
-Object: stock.planning.period
-#############################
+Object: stock.planning.period (stock.planning.period)
+#####################################################
 
 
 
@@ -88,8 +98,8 @@ Object: stock.planning.period
 
 
 
-Object: stock.period
-####################
+Object: stock.period (stock.period)
+###################################
 
 
 
@@ -116,8 +126,8 @@ Object: stock.period
 
 
 
-Object: stock.planning.sale.prevision
-#####################################
+Object: stock.planning.sale.prevision (stock.planning.sale.prevision)
+#####################################################################
 
 
 
@@ -174,8 +184,8 @@ Object: stock.planning.sale.prevision
 
 
 
-Object: stock.planning
-######################
+Object: stock.planning (stock.planning)
+#######################################
 
 
 

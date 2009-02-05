@@ -1,4 +1,13 @@
 
+.. module:: account_reporting
+    :synopsis: Reporting of Balancesheet for accounting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Reporting of Balancesheet for accounting (*account_reporting*)
 ==============================================================
 :Module: account_reporting
@@ -6,6 +15,7 @@ Reporting of Balancesheet for accounting (*account_reporting*)
 :Version: 5.0.1.0
 :Directory: account_reporting
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -43,8 +53,8 @@ Views
 Objects
 -------
 
-Object: Rml Colors
-##################
+Object: Rml Colors (color.rml)
+##############################
 
 
 
@@ -59,8 +69,8 @@ Object: Rml Colors
 
 
 
-Object: Account reporting for Balance Sheet
-###########################################
+Object: Account reporting for Balance Sheet (account.report.bs)
+###############################################################
 
 
 

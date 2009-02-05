@@ -1,4 +1,13 @@
 
+.. module:: subscription
+    :synopsis: Subscription and recurring operations
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Subscription and recurring operations (*subscription*)
 ======================================================
 :Module: subscription
@@ -6,6 +15,7 @@ Subscription and recurring operations (*subscription*)
 :Version: 5.0.1.0
 :Directory: subscription
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -50,8 +60,8 @@ Views
 Objects
 -------
 
-Object: Subscription document
-#############################
+Object: Subscription document (subscription.document)
+#####################################################
 
 
 
@@ -78,8 +88,8 @@ Object: Subscription document
 
 
 
-Object: Subscription document fields
-####################################
+Object: Subscription document fields (subscription.document.fields)
+###################################################################
 
 
 
@@ -100,8 +110,8 @@ Object: Subscription document fields
 
 
 
-Object: Subscription
-####################
+Object: Subscription (subscription.subscription)
+################################################
 
 
 
@@ -182,8 +192,8 @@ Object: Subscription
 
 
 
-Object: Subscription history
-############################
+Object: Subscription history (subscription.subscription.history)
+################################################################
 
 
 

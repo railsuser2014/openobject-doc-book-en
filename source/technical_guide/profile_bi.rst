@@ -1,4 +1,13 @@
 
+.. module:: profile_bi
+    :synopsis: Business Intelligence profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Business Intelligence profile (*profile_bi*)
 ============================================
 :Module: profile_bi
@@ -6,6 +15,7 @@ Business Intelligence profile (*profile_bi*)
 :Version: False
 :Directory: profile_bi
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * olap - unknown
+ * :mod:`olap`
 
 Reports
 -------

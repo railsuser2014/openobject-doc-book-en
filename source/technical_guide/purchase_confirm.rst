@@ -1,4 +1,13 @@
 
+.. module:: purchase_confirm
+    :synopsis: Confirm all selected purchase order at once
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Confirm all selected purchase order at once (*purchase_confirm*)
 ================================================================
 :Module: purchase_confirm
@@ -6,6 +15,7 @@ Confirm all selected purchase order at once (*purchase_confirm*)
 :Version: 5.0.1.0
 :Directory: purchase_confirm
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * purchase - installed
+ * :mod:`purchase`
 
 Reports
 -------

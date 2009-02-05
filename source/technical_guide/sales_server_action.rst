@@ -1,4 +1,13 @@
 
+.. module:: sales_server_action
+    :synopsis: Sales Server Action
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sales Server Action (*sales_server_action*)
 ===========================================
 :Module: sales_server_action
@@ -6,6 +15,7 @@ Sales Server Action (*sales_server_action*)
 :Version: 5.0.5.0
 :Directory: sales_server_action
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -23,7 +33,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------

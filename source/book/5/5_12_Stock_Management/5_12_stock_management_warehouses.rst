@@ -9,11 +9,11 @@ Use the menu *Stock Management > Configuration > Warehouses* then click *New* to
 
 A warehouse is defined by a link between three locations:
 
-* The stock location shows the availability of products that you can deliver to a customer direct from this warehouse. Availability is given by all the products in that location and any child locations.
+* The stock location shows the place of products available for delivery to a customer direct from this warehouse. Availability is given by all the products in that location and any child locations.
 
 * The entry location shows where ordered products are received from a supplier to that warehouse. It can be the same as the stock location if, for example, you want to do a quality control operation on your incoming raw materials.
 
-* The outgoing location is designed as a buffer zone in which you store all the items that are to be delivered to a customer. You're strongly advised not to put this location within the stock hierarchy but instead at a level higher or the same. 
+* The outgoing location (called Output in the demonstration database) is designed as a buffer zone in which you store all the items that have been picked but not yet delivered to a customer. You're strongly advised not to put this location within the stock hierarchy but instead at a level higher or the same. 
 
     .. image:: images/stock_warehouse.png
        :align: center
@@ -26,7 +26,7 @@ You can also set an address for the warehouse. This address should ideally be an
 
 * Supplier orders,
 
-* customer orders (using the definition of a point of sale).
+* Customer orders (using the definition of a point of sale, which is linked to a warehouse).
 
 .. index:: Procurement
 
@@ -37,9 +37,9 @@ Several methods of automatically procuring products can be carried out by Open E
 
 * the workflow used by products that have the procurement mode *Make to Order*,
 
-* Using minimum stock rules,
+* using minimum stock rules for “Make to Stock” products,
 
-* using the master production plan.
+* using the master production schedule for “Make to Stock” products.
 
 The two last methods are described below.
 
@@ -49,7 +49,7 @@ The two last methods are described below.
 Minimum stock rules
 --------------------
 
-To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use the menu *Stock Management > Automatic Procurements > Minimum Stock Rules*. You can then enter rules for product restocking if the level falls below a minimum limit for a specific location.
+To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use the menu *Stock Management > Automatic Procurements > Minimum Stock Rules*. 
 
 The rule is the following: if the virtual stock for the given is lower than the minimum stock indicated in the rule, the system will automatically propose a replenishment to increase the level of virtual stock to the maximum level given in the rule.
 
@@ -60,7 +60,7 @@ The rule is the following: if the virtual stock for the given is lower than the 
 
 .. tip::   **Point**  *Conflict resolution*
 
-You may find that draft production or procurement orders are incorrect after the scheduler has been run. That can happen if the system is badly configured (for example if you've forgotten to set the supplier on a product).
+You may find that draft production or procurement orders don't happen correctly. That can happen if the system is badly configured (for example if you've forgotten to set the supplier on a product).
 
 To check this, look at the list of procurements in the exception state in the menu *Stock Management > Automatic Procurements > Procurement Exceptions*. More detail on handling these exceptions is given in the chapter on Manufacturing.
 
@@ -80,7 +80,7 @@ Minimum stock: 13
 
 Maximum stock: 25.
 
-Once the requirement are calculated, the rule will regenerate a restocking order (for 15 – 5 + 2 < 13) for a quantity of 13 pirce (= 25 – 15 – 2 + 5).
+Once the rules have been properly configured the purchasing manager only needs to look at the list of orders for confirmation with the supplier using the menu *Purchase Management > Purchase Orders > Requests for Quotation*.
 
 Note that the restocking doesn't require that you buy from a supplier. If the product has a restocking method of 'to manufacture' the scheduler will generate a production order and not a supplier order.
 

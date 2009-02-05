@@ -1,4 +1,13 @@
 
+.. module:: edi
+    :synopsis: EDI
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 EDI (*edi*)
 ===========
 :Module: edi
@@ -6,6 +15,7 @@ EDI (*edi*)
 :Version: 5.0.1.0
 :Directory: edi
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------
@@ -44,8 +54,8 @@ Views
 Objects
 -------
 
-Object: EDI log
-###############
+Object: EDI log (edi.log)
+#########################
 
 
 
@@ -60,8 +70,8 @@ Object: EDI log
 
 
 
-Object: EDI Log Line
-####################
+Object: EDI Log Line (edi.log.line)
+###################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: report_mrp
+    :synopsis: MRP Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP Management - Reporting (*report_mrp*)
 =========================================
 :Module: report_mrp
@@ -6,6 +15,7 @@ MRP Management - Reporting (*report_mrp*)
 :Version: 5.0.1.0
 :Directory: report_mrp
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -18,7 +28,7 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
+ * :mod:`mrp`
 
 Reports
 -------
@@ -47,8 +57,8 @@ Views
 Objects
 -------
 
-Object: Workcenter Load
-#######################
+Object: Workcenter Load (report.workcenter.load)
+################################################
 
 
 
@@ -75,8 +85,8 @@ Object: Workcenter Load
 
 
 
-Object: Stock value variation
-#############################
+Object: Stock value variation (report.mrp.inout)
+################################################
 
 
 

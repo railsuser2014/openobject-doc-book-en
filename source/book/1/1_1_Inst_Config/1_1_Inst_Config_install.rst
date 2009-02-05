@@ -27,8 +27,10 @@ This auto-installer enables you to install the whole system in just a few mouse-
 
 The first step is to download the Open ERP installer. At this stage you must choose which version to install – the stable version or the development version. If you're planning to put it straight into production you're strongly advised to choose the stable version.
 
-.. tip::   **Attention**  *Stable versions and development versions* 
+.. index::
+   single: Stable versions
 
+.. tip::   **Attention**  *Stable versions and development versions* 
 
 	Open ERP development proceeds on two parallel tracks: stable versions and development versions.
 
@@ -114,8 +116,12 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 
 
 	.. image:: images/new_login_dlg.png
+		:align: center
 
 *Dialog box on connecting a GTK client to a new Open ERP server*
+
+.. index::
+   single: XML-RPC
 
 .. tip::   **Note**  *Connection modes* 
 
@@ -129,7 +135,8 @@ If your system doesn't work after installing your Windows system you'll find som
 	#. Does your PostgreSQL server work? Signed in as administrator, select  *Stop Service* from the menu  *Start > Programs > PostgreSQL*  If, after a couple of seconds, you can read  *The service PostgreSQL4OpenERP has stopped* then you can be reasonably sure that the database server was working. Restart PostgreSQL then, still in the PostgreSQL menu, start the pgAdmin III application which you can use to explore the database. Double-click on the \ ``PostgreSQL4OpenERP``\  connection as in the figure below. If the database server is working you'll be able to see some information about the empty database. If it's not then an error message will appear.
 
                 .. image:: images/pgadmin_window.png
-                   :scale: 85
+                	:align: center
+                	:scale: 85
 
                 *Using pgAdmin III to verify that PostgreSQL is working*
                         
@@ -144,12 +151,14 @@ If your system doesn't work after installing your Windows system you'll find som
 
 
 	        .. image:: images/terp_server_conf.png
-                   :scale: 80
+	        	:align: center
+	        	:scale: 80
                    
 	#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then the swiftest approach is to reinstall them.
 
 
 	        .. image:: images/cmd_prompt_ping.png
+	        	:align: center
 
 	#. Can the client computers see the server computer at all? Check this by opening a command prompt window (enter \ ``cmd``\  in the window  *Start > Run...* ) and enter \ ``ping <address of server>``\  there (where \ ``<address of server>``\  represents he IP address of the server). The server should respond as shown in the following figure.
 
@@ -225,6 +234,9 @@ To download the PostgreSQL database and all of the other dependencies for Open 
 
 	#. Select \ ``python-xml``\   \ ``python-libxml2``\   \ ``python-libxslt1``\   \ ``python-psycopg``\  (not \ ``psycopg2``\   and its dependencies, \ ``python-tz``\   \ ``python-imaging``\   \ ``python-pyparsing``\   \ ``python-reportlab``\   \ ``graphviz``\  and its dependences, \ ``python-matplotlib``\  and its ependences (some of which might already be installed), then click  *Update Now* to install them.
 
+.. index::
+   single: Python
+
 .. tip::   **Language**  *Python* 
 
 	Python is the programming language that's been used to develop Tiny ERP and Open ERP. It's a dynamic, non-typed language that is at the same time object-oriented, procedural and functional. It comes with numerous libraries that provide interfaces to other languages and has the great advantage that it can be learnt in only a few days. It's the language of choice for large parts of NASA, Google and many other enterprises.
@@ -245,8 +257,9 @@ Once all these dependencies and the database are installed, install the server i
 
 Open a terminal window to start the server with the command \ ``sudo su postgres -c openerp-server``\  , which should result in a series of log messages as the server starts up. If the server is correctly installed, the message  *waiting for connections...* should show within 30 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
-.. image:: images/terps_startup_log.png
-   :scale: 95
+	.. image:: images/terps_startup_log.png
+		:align: center
+		:scale: 95
 
 .. index::
   single: Client; GTK
@@ -278,12 +291,16 @@ To install an Open ERP GTK client, follow the steps below:
 
 
 	.. image:: images/terp_client_startup.png
+		:align: center
 
 Open a terminal window to start the client using the command openerp-client. When you start the client on the same Linux PC as the server you'll find that the default connection parameters will just work without needing any change. The message  *No database found, you must create one!*  shows you that the connection to the server has been successful and you need to create a database on the server.
 
 Creating the database
 
 You can connect other GTK clients over the network to your Linux server. Before you leave your server, make sure you know its network address – either by its name (such as \ ``mycomputer.mycompany.net``\  ) or its IP address (such as \ ``192.168.0.123``\  ).
+
+.. index::
+   single: Port
 
 .. tip::   **Note**  *Different networks* 
 
@@ -299,6 +316,7 @@ To install an Open ERP client on a computer under Linux, repeat the procedure s
 
 
 	.. image:: images/terp_client_server.png
+		:align: center
 	
 *Dialog box for defining connection parameters to the server*
 
@@ -341,6 +359,7 @@ The eTiny web server connects to the Open ERP server in the same way as an Open
 
 
 	.. image:: images/web_welcome.png
+		:align: center
 
 You can verify the installation by opening a web browser on the server and navigating to http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from another computer connected to the same network if you know the name or IP address of the server over the network – your browser should be set to http://<server_address>:8080 for this.
 
@@ -382,8 +401,6 @@ You've used default parameters so far during the installation of the various com
 	#. The eTiny web server uses the NET-RPC protocol. If a GTK client works but eTiny doesn't then the problem is either with the NET-RPC port or with eTiny itself, and not with the Open ERP server.
 
 .. tip::   **A step further**  *One server for several companies* 
-
-
 
 	You can start several Open ERP application servers on one physical computer server by using different ports. If you have defined multiple database roles in PostgreSQL, each connected through an Open ERP instance to a different port, you can simultaneously serve many companies from one physical server at one time.
 

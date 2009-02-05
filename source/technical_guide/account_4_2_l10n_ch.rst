@@ -1,4 +1,13 @@
 
+.. module:: account_4_2_l10n_ch
+    :synopsis: Accounting for l10n_ch ion TinyERP 4.2
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 ==============================================================
 :Module: account_4_2_l10n_ch
@@ -6,6 +15,7 @@ Accounting for l10n_ch ion TinyERP 4.2 (*account_4_2_l10n_ch*)
 :Version: False
 :Directory: account_4_2_l10n_ch
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_payment - installed
+ * :mod:`account`
+ * :mod:`account_payment`
 
 Reports
 -------

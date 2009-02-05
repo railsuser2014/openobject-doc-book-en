@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_ch_german
+    :synopsis: Switzerland - German Chart of Accounts
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
 ===============================================================
 :Module: l10n_chart_ch_german
@@ -6,6 +15,7 @@ Switzerland - German Chart of Accounts (*l10n_chart_ch_german*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_ch_german
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * account_chart - installed
- * base_vat - installed
+ * :mod:`account`
+ * :mod:`account_chart`
+ * :mod:`base_vat`
 
 Reports
 -------

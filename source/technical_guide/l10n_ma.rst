@@ -1,4 +1,13 @@
 
+.. module:: l10n_ma
+    :synopsis: Maroc Plan comptable général pour les sociétés
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 ==========================================================
 :Module: l10n_ma
@@ -6,6 +15,7 @@ Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 :Version: 5.0.1.0
 :Directory: l10n_ma
 :Web: http://comptabilite.erp-libre.info
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`account`
 
 Reports
 -------

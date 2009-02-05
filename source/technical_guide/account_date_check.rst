@@ -1,4 +1,13 @@
 
+.. module:: account_date_check
+    :synopsis: Account Date check
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Date check (*account_date_check*)
 =========================================
 :Module: account_date_check
@@ -6,6 +15,7 @@ Account Date check (*account_date_check*)
 :Version: 5.0.1.0
 :Directory: account_date_check
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -23,7 +33,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------

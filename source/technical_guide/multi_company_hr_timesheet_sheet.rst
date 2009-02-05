@@ -1,4 +1,13 @@
 
+.. module:: multi_company_hr_timesheet_sheet
+    :synopsis: Multi company Human Resources (Timesheet groups)
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sheet*)
 =====================================================================================
 :Module: multi_company_hr_timesheet_sheet
@@ -6,6 +15,7 @@ Multi company Human Resources (Timesheet groups) (*multi_company_hr_timesheet_sh
 :Version: 5.0.0.1
 :Directory: multi_company_hr_timesheet_sheet
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet_sheet - installed
- * base - installed
- * multi_company - installed
+ * :mod:`hr_timesheet_sheet`
+ * :mod:`base`
+ * :mod:`multi_company`
 
 Reports
 -------

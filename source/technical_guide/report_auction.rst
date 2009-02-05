@@ -1,4 +1,13 @@
 
+.. module:: report_auction
+    :synopsis: Auction Management - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Auction Management - Reporting (*report_auction*)
 =================================================
 :Module: report_auction
@@ -6,6 +15,7 @@ Auction Management - Reporting (*report_auction*)
 :Version: 5.0.1.0
 :Directory: report_auction
 :Web: http://tinyerp.com/module_auction.html
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * auction - installed
- * hr_timesheet_sheet - installed
+ * :mod:`auction`
+ * :mod:`hr_timesheet_sheet`
 
 Reports
 -------
@@ -73,8 +83,8 @@ Views
 Objects
 -------
 
-Object: report_auction_adjudication
-###################################
+Object: report_auction_adjudication (report.auction.adjudication1)
+##################################################################
 
 
 
@@ -113,8 +123,8 @@ Object: report_auction_adjudication
 
 
 
-Object: Customer per seller
-###########################
+Object: Customer per seller (report.per.seller.customer)
+########################################################
 
 
 
@@ -135,8 +145,8 @@ Object: Customer per seller
 
 
 
-Object: Latest 10 Deposits
-##########################
+Object: Latest 10 Deposits (report.latest.deposit)
+##################################################
 
 
 
@@ -199,8 +209,8 @@ Object: Latest 10 Deposits
 
 
 
-Object: Latest 10 Objects
-#########################
+Object: Latest 10 Objects (report.latest.objects)
+#################################################
 
 
 
@@ -257,8 +267,8 @@ Object: Latest 10 Objects
 
 
 
-Object: Objects per day
-#######################
+Object: Objects per day (report.auction.object.date1)
+#####################################################
 
 
 
@@ -333,8 +343,8 @@ Object: Objects per day
 
 
 
-Object: comparison estimate/adjudication 
-#########################################
+Object: comparison estimate/adjudication  (report.auction.estimation.adj.category1)
+###################################################################################
 
 
 
@@ -427,8 +437,8 @@ Object: comparison estimate/adjudication
 
 
 
-Object: user pointing 
-######################
+Object: user pointing  (report.auction.user.pointing1)
+######################################################
 
 
 

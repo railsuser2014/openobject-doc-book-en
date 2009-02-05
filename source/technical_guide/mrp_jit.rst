@@ -1,4 +1,13 @@
 
+.. module:: mrp_jit
+    :synopsis: MRP JIT
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 MRP JIT (*mrp_jit*)
 ===================
 :Module: mrp_jit
@@ -6,6 +15,7 @@ MRP JIT (*mrp_jit*)
 :Version: 5.0.1.0
 :Directory: mrp_jit
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -25,8 +35,8 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
- * sale - installed
+ * :mod:`mrp`
+ * :mod:`sale`
 
 Reports
 -------

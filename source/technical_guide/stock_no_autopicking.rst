@@ -1,4 +1,13 @@
 
+.. module:: stock_no_autopicking
+    :synopsis: Stock No Auto-Picking
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock No Auto-Picking (*stock_no_autopicking*)
 ==============================================
 :Module: stock_no_autopicking
@@ -6,6 +15,7 @@ Stock No Auto-Picking (*stock_no_autopicking*)
 :Version: 5.0.1.0
 :Directory: stock_no_autopicking
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -23,7 +33,7 @@ Description
 Dependencies
 ------------
 
- * mrp - installed
+ * :mod:`mrp`
 
 Reports
 -------

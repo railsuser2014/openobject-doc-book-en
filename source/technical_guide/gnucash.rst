@@ -1,4 +1,13 @@
 
+.. module:: gnucash
+    :synopsis: gnucash
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 gnucash (*gnucash*)
 ===================
 :Module: gnucash
@@ -6,6 +15,7 @@ gnucash (*gnucash*)
 :Version: 5.0.0.1
 :Directory: gnucash
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
 
 Reports
 -------
@@ -44,8 +54,8 @@ Views
 Objects
 -------
 
-Object: gnucash.index
-#####################
+Object: gnucash.index (gnucash.index)
+#####################################
 
 
 

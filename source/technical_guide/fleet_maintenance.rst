@@ -1,4 +1,13 @@
 
+.. module:: fleet_maintenance
+    :synopsis: Manage the maintenance contracts of a product fleet
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 =========================================================================
 :Module: fleet_maintenance
@@ -6,6 +15,7 @@ Manage the maintenance contracts of a product fleet (*fleet_maintenance*)
 :Version: 5.0.0.3
 :Directory: fleet_maintenance
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -47,13 +57,13 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
- * stock - installed
- * sale - installed
- * crm_configuration - installed
- * account - installed
- * delivery - installed
+ * :mod:`base`
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
+ * :mod:`crm_configuration`
+ * :mod:`account`
+ * :mod:`delivery`
 
 Reports
 -------

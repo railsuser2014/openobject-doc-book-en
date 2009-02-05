@@ -1,4 +1,13 @@
 
+.. module:: sale_crm
+    :synopsis: Sale CRM Stuff
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale CRM Stuff (*sale_crm*)
 ===========================
 :Module: sale_crm
@@ -6,6 +15,7 @@ Sale CRM Stuff (*sale_crm*)
 :Version: 5.0.1.0
 :Directory: sale_crm
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -27,8 +37,8 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * crm_configuration - installed
+ * :mod:`sale`
+ * :mod:`crm_configuration`
 
 Reports
 -------

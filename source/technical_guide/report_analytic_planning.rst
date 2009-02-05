@@ -1,4 +1,13 @@
 
+.. module:: report_analytic_planning
+    :synopsis: Analytic planning - Reporting
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Analytic planning - Reporting (*report_analytic_planning*)
 ==========================================================
 :Module: report_analytic_planning
@@ -6,6 +15,7 @@ Analytic planning - Reporting (*report_analytic_planning*)
 :Version: 5.0.1.0
 :Directory: report_analytic_planning
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr_timesheet_invoice - installed
- * project - installed
- * report_analytic_line - installed
+ * :mod:`account`
+ * :mod:`hr_timesheet_invoice`
+ * :mod:`project`
+ * :mod:`report_analytic_line`
 
 Reports
 -------
@@ -54,8 +64,8 @@ Views
 Objects
 -------
 
-Object: Planning
-################
+Object: Planning (report_account_analytic.planning)
+###################################################
 
 
 
@@ -124,8 +134,8 @@ Object: Planning
 
 
 
-Object: Planning Line
-#####################
+Object: Planning Line (report_account_analytic.planning.line)
+#############################################################
 
 
 
@@ -188,8 +198,8 @@ Object: Planning Line
 
 
 
-Object: Planning account stat
-#############################
+Object: Planning account stat (report_account_analytic.planning.stat.account)
+#############################################################################
 
 
 
@@ -216,8 +226,8 @@ Object: Planning account stat
 
 
 
-Object: Planning stat
-#####################
+Object: Planning stat (report_account_analytic.planning.stat)
+#############################################################
 
 
 
@@ -262,8 +272,8 @@ Object: Planning stat
 
 
 
-Object: Planning user stat
-##########################
+Object: Planning user stat (report_account_analytic.planning.stat.user)
+#######################################################################
 
 
 

@@ -1,4 +1,13 @@
 
+.. module:: crm_vertical
+    :synopsis: CRM Verticalisation
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CRM Verticalisation (*crm_vertical*)
 ====================================
 :Module: crm_vertical
@@ -6,6 +15,7 @@ CRM Verticalisation (*crm_vertical*)
 :Version: 5.0.1.0
 :Directory: crm_vertical
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * crm_configuration - installed
+ * :mod:`crm_configuration`
 
 Reports
 -------

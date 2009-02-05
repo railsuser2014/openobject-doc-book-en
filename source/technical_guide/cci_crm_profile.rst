@@ -1,4 +1,13 @@
 
+.. module:: cci_crm_profile
+    :synopsis: CCI CRM Profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI CRM Profile (*cci_crm_profile*)
 ===================================
 :Module: cci_crm_profile
@@ -6,6 +15,7 @@ CCI CRM Profile (*cci_crm_profile*)
 :Version: 5.0.1.0
 :Directory: cci_crm_profile
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * crm_profiling - installed
- * base_contact - installed
+ * :mod:`base`
+ * :mod:`crm_profiling`
+ * :mod:`base_contact`
 
 Reports
 -------

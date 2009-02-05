@@ -1,4 +1,13 @@
 
+.. module:: cci_sales
+    :synopsis: CCI Sales
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 CCI Sales (*cci_sales*)
 =======================
 :Module: cci_sales
@@ -6,6 +15,7 @@ CCI Sales (*cci_sales*)
 :Version: 5.0.1.0
 :Directory: cci_sales
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * sale_advertising - installed
- * crm - installed
+ * :mod:`sale_advertising`
+ * :mod:`crm`
 
 Reports
 -------

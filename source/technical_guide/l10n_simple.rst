@@ -1,4 +1,13 @@
 
+.. module:: l10n_simple
+    :synopsis: Simple Account Chart
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Simple Account Chart (*l10n_simple*)
 ====================================
 :Module: l10n_simple
@@ -6,6 +15,7 @@ Simple Account Chart (*l10n_simple*)
 :Version: 5.0.1.0
 :Directory: l10n_simple
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

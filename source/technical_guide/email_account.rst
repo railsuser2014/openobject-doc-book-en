@@ -1,4 +1,13 @@
 
+.. module:: email_account
+    :synopsis: Email Invoice
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Email Invoice (*email_account*)
 ===============================
 :Module: email_account
@@ -6,6 +15,7 @@ Email Invoice (*email_account*)
 :Version: 5.0.1.0
 :Directory: email_account
 :Web: www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -25,8 +35,8 @@ Description
 Dependencies
 ------------
 
- * smtpclient - installed
- * account - installed
+ * :mod:`smtpclient`
+ * :mod:`account`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: base_partner_relation
+    :synopsis: Partners - relation extension
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Partners - relation extension (*base_partner_relation*)
 =======================================================
 :Module: base_partner_relation
@@ -6,6 +15,7 @@ Partners - relation extension (*base_partner_relation*)
 :Version: 5.0.1.0
 :Directory: base_partner_relation
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -46,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Partner Relation
-########################
+Object: Partner Relation (res.partner.relation)
+###############################################
 
 
 

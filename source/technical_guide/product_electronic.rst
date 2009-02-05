@@ -1,4 +1,13 @@
 
+.. module:: product_electronic
+    :synopsis: Products Attributes & Manufacturers
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products Attributes & Manufacturers (*product_electronic*)
 ==========================================================
 :Module: product_electronic
@@ -6,6 +15,7 @@ Products Attributes & Manufacturers (*product_electronic*)
 :Version: 5.0.1.0
 :Directory: product_electronic
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
- * stock - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`stock`
 
 Reports
 -------
@@ -46,8 +56,8 @@ Views
 Objects
 -------
 
-Object: Product attributes
-##########################
+Object: Product attributes (product.electronic.attribute)
+#########################################################
 
 
 

@@ -1,4 +1,7 @@
 
+.. index::
+   single: Analytic accounts
+
 Putting analytic accounts in place
 ===================================
 
@@ -43,6 +46,9 @@ Finally, if the analytic account is a client project you can complete the fields
 
 * an  *Invoicing*  field, which defines an invoicing rate and whether the project should be invoiced automatically from the services represented by the costs in the analytic account.
 
+.. index::
+   single: Invoicing
+
 .. tip::   **Methods**  *Invoicing* 
 
 	You have several methods available to you in Open ERP for automated invoicing:
@@ -81,6 +87,9 @@ Once the analytic chart has been created for your company you have to create the
 * sales,
 
 * situation entries (special situations, such as installation of the software).
+
+.. index::
+   single: Journal; Minimal journals
 
 .. tip::   **Attention**  *Minimal journals* 
 

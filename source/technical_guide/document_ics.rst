@@ -1,4 +1,13 @@
 
+.. module:: document_ics
+    :synopsis: Support for iCal based on Document Management System
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Support for iCal based on Document Management System (*document_ics*)
 =====================================================================
 :Module: document_ics
@@ -6,6 +15,7 @@ Support for iCal based on Document Management System (*document_ics*)
 :Version: 5.0.1.0
 :Directory: document_ics
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * document - installed
- * crm_configuration - installed
+ * :mod:`document`
+ * :mod:`crm_configuration`
 
 Reports
 -------
@@ -42,8 +52,8 @@ Views
 Objects
 -------
 
-Object: document.directory.ics.fields
-#####################################
+Object: document.directory.ics.fields (document.directory.ics.fields)
+#####################################################################
 
 
 

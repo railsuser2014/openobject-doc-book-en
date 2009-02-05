@@ -1,4 +1,13 @@
 
+.. module:: invoice_sequence
+    :synopsis: Invoice lines with sequence number
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Invoice lines with sequence number (*invoice_sequence*)
 =======================================================
 :Module: invoice_sequence
@@ -6,6 +15,7 @@ Invoice lines with sequence number (*invoice_sequence*)
 :Version: 5.0.0.1
 :Directory: invoice_sequence
 :Web: http://tinyerp.com/
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base - installed
+ * :mod:`account`
+ * :mod:`base`
 
 Reports
 -------

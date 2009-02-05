@@ -1,4 +1,13 @@
 
+.. module:: hr_holidays_cci
+    :synopsis: Human Resources: Holidays management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources: Holidays management (*hr_holidays_cci*)
 ========================================================
 :Module: hr_holidays_cci
@@ -6,6 +15,7 @@ Human Resources: Holidays management (*hr_holidays_cci*)
 :Version: False
 :Directory: hr_holidays_cci
 :Web: http://www.axelor.com/
+:Is certified: no
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * hr_holidays - installed
+ * :mod:`hr_holidays`
 
 Reports
 -------

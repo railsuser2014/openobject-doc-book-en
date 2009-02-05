@@ -1,4 +1,13 @@
 
+.. module:: esale_ez
+    :synopsis: EZ Publish eCommerce Interface
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 EZ Publish eCommerce Interface (*esale_ez*)
 ===========================================
 :Module: esale_ez
@@ -6,6 +15,7 @@ EZ Publish eCommerce Interface (*esale_ez*)
 :Version: False
 :Directory: esale_ez
 :Web: http://tinyerp.com/demo02_6.html
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * product - installed
- * stock - installed
- * sale - installed
+ * :mod:`product`
+ * :mod:`stock`
+ * :mod:`sale`
 
 Reports
 -------

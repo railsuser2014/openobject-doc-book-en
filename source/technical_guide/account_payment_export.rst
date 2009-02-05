@@ -1,4 +1,13 @@
 
+.. module:: account_payment_export
+    :synopsis: Payment Order Export
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Payment Order Export (*account_payment_export*)
 ===============================================
 :Module: account_payment_export
@@ -6,6 +15,7 @@ Payment Order Export (*account_payment_export*)
 :Version: 5.0.1.0
 :Directory: account_payment_export
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base_vat - installed
- * base_iban - installed
- * account_payment - installed
+ * :mod:`base_vat`
+ * :mod:`base_iban`
+ * :mod:`account_payment`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Payment Export History
-##############################
+Object: Payment Export History (account.pay)
+############################################
 
 
 
@@ -92,8 +102,8 @@ Object: Payment Export History
 
 
 
-Object: Payment Method For Export
-#################################
+Object: Payment Method For Export (payment.method)
+##################################################
 
 
 
@@ -108,8 +118,8 @@ Object: Payment Method For Export
 
 
 
-Object: Charges Codes For Export
-################################
+Object: Charges Codes For Export (charges.code)
+###############################################
 
 
 

@@ -58,7 +58,7 @@ Open Object Documentation
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
-  |  :ref:`Module Technical Guide <module-technical-guide-link>` |                                                  |
+  |  :ref:`modindex`                                             |                                                  |
   |                                                              |                                                  |
   |  A developer resource listing all modules and objects        |                                                  |
   |                                                              |                                                  |

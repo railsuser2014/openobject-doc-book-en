@@ -1,4 +1,13 @@
 
+.. module:: board_crm_configuration
+    :synopsis: Dashboard for CRM Configuration
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Dashboard for CRM Configuration (*board_crm_configuration*)
 ===========================================================
 :Module: board_crm_configuration
@@ -6,6 +15,7 @@ Dashboard for CRM Configuration (*board_crm_configuration*)
 :Version: 5.0.1.0
 :Directory: board_crm_configuration
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -23,8 +33,8 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * crm_configuration - installed
+ * :mod:`board`
+ * :mod:`crm_configuration`
 
 Reports
 -------

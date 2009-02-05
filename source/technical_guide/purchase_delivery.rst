@@ -1,4 +1,13 @@
 
+.. module:: purchase_delivery
+    :synopsis: Carriers and deliveries For Purchase Order
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery
@@ -6,6 +15,7 @@ Carriers and deliveries For Purchase Order (*purchase_delivery*)
 :Version: 5.0.1.0
 :Directory: purchase_delivery
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * sale - installed
- * purchase - installed
- * stock - installed
- * delivery - installed
+ * :mod:`sale`
+ * :mod:`purchase`
+ * :mod:`stock`
+ * :mod:`delivery`
 
 Reports
 -------

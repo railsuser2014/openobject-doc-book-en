@@ -1,4 +1,13 @@
 
+.. module:: sale_layout
+    :synopsis: sale_layout
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 sale_layout (*sale_layout*)
 ===========================
 :Module: sale_layout
@@ -6,6 +15,7 @@ sale_layout (*sale_layout*)
 :Version: 5.0.1.0
 :Directory: sale_layout
 :Web: http://www.openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -22,8 +32,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
+ * :mod:`base`
+ * :mod:`sale`
 
 Reports
 -------

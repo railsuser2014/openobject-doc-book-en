@@ -1,4 +1,13 @@
 
+.. module:: account_simulation
+    :synopsis: Accounting simulation journal
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Accounting simulation journal (*account_simulation*)
 ====================================================
 :Module: account_simulation
@@ -6,6 +15,7 @@ Accounting simulation journal (*account_simulation*)
 :Version: 5.0.1.0
 :Directory: account_simulation
 :Web: http://tinyerp.com/module_account.html
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -43,8 +53,8 @@ Views
 Objects
 -------
 
-Object: Simulation level
-########################
+Object: Simulation level (account.journal.simulation)
+#####################################################
 
 
 

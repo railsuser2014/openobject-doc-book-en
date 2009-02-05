@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_us_ucoa_ez
+    :synopsis: United States -Chart of Accounts for UCOA EZ Profile
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 United States -Chart of Accounts for UCOA EZ Profile (*l10n_chart_us_ucoa_ez*)
 ==============================================================================
 :Module: l10n_chart_us_ucoa_ez
@@ -6,6 +15,7 @@ United States -Chart of Accounts for UCOA EZ Profile (*l10n_chart_us_ucoa_ez*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_us_ucoa_ez
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * account_chart - installed
+ * :mod:`account_chart`
 
 Reports
 -------

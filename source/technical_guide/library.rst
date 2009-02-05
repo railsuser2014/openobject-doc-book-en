@@ -1,4 +1,13 @@
 
+.. module:: library
+    :synopsis: Library
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Library (*library*)
 ===================
 :Module: library
@@ -6,6 +15,7 @@ Library (*library*)
 :Version: 5.0.1.0
 :Directory: library
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,9 +30,9 @@ Description
 Dependencies
 ------------
 
- * point_of_sale - installed
- * report_intrastat - installed
- * purchase - installed
+ * :mod:`point_of_sale`
+ * :mod:`report_intrastat`
+ * :mod:`purchase`
 
 Reports
 -------
@@ -33,13 +43,13 @@ None
 Menus
 -------
 
- * Products/Authors
- * Products/Books
- * Products/Books/Books to return before 30 days
+ * Books/Authors
+ * Books/Books
+ * Books/Books/Books to return before 30 days
  * Sales Management/Orders of the day
  * Sales Management/Orders of the day/My orders of the day
  * Partners/Editor - Suppliers Relations
- * Products/Authors/New Author
+ * Books/Authors/New Author
  * Books/Configuration/Price Categories
 
 Views
@@ -73,8 +83,8 @@ Views
 Objects
 -------
 
-Object: Book Price Category
-###########################
+Object: Book Price Category (library.price.category)
+####################################################
 
 
 
@@ -95,8 +105,8 @@ Object: Book Price Category
 
 
 
-Object: Library Rack
-####################
+Object: Library Rack (library.rack)
+###################################
 
 
 
@@ -117,8 +127,8 @@ Object: Library Rack
 
 
 
-Object: Library Collection
-##########################
+Object: Library Collection (library.collection)
+###############################################
 
 
 
@@ -133,8 +143,8 @@ Object: Library Collection
 
 
 
-Object: Author
-##############
+Object: Author (library.author)
+###############################
 
 
 
@@ -185,8 +195,8 @@ Object: Author
 
 
 
-Object: author.book.rel
-#######################
+Object: author.book.rel (author.book.rel)
+#########################################
 
 
 
@@ -201,8 +211,8 @@ Object: author.book.rel
 
 
 
-Object: many2many view for editor relations
-###########################################
+Object: many2many view for editor relations (library.editor.supplier)
+#####################################################################
 
 
 

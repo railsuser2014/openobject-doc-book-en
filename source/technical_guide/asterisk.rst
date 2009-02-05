@@ -1,4 +1,13 @@
 
+.. module:: asterisk
+    :synopsis: Asterisk
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Asterisk (*asterisk*)
 =====================
 :Module: asterisk
@@ -6,6 +15,7 @@ Asterisk (*asterisk*)
 :Version: 5.0.0.1proto2
 :Directory: asterisk
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -20,7 +30,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -49,8 +59,8 @@ Views
 Objects
 -------
 
-Object: asterisk.server
-#######################
+Object: asterisk.server (asterisk.server)
+#########################################
 
 
 
@@ -83,8 +93,8 @@ Object: asterisk.server
 
 
 
-Object: IP Phone
-################
+Object: IP Phone (asterisk.phone)
+#################################
 
 
 

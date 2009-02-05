@@ -1,4 +1,13 @@
 
+.. module:: cci_data_csv
+    :synopsis: cci Data 1
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 cci Data 1 (*cci_data_csv*)
 ===========================
 :Module: cci_data_csv
@@ -6,6 +15,7 @@ cci Data 1 (*cci_data_csv*)
 :Version: 5.0.1.0
 :Directory: cci_data_csv
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,9 +27,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * l10n_be - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`l10n_be`
 
 Reports
 -------

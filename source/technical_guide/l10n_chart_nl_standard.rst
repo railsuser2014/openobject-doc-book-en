@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_nl_standard
+    :synopsis: Netherlands - Standard Chart of Account
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
 ==================================================================
 :Module: l10n_chart_nl_standard
@@ -6,6 +15,7 @@ Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_nl_standard
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_iban - installed
- * base_vat - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_iban`
+ * :mod:`base_vat`
+ * :mod:`account_chart`
 
 Reports
 -------

@@ -1,4 +1,13 @@
 
+.. module:: hr_timesheet
+    :synopsis: Human Resources (Timesheet encoding)
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources (Timesheet encoding) (*hr_timesheet*)
 =====================================================
 :Module: hr_timesheet
@@ -6,6 +15,7 @@ Human Resources (Timesheet encoding) (*hr_timesheet*)
 :Version: 5.0.1.0
 :Directory: hr_timesheet
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -25,11 +35,11 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * hr - installed
- * base - installed
- * hr_attendance - installed
- * process - installed
+ * :mod:`account`
+ * :mod:`hr`
+ * :mod:`base`
+ * :mod:`hr_attendance`
+ * :mod:`process`
 
 Reports
 -------
@@ -64,8 +74,8 @@ Views
 Objects
 -------
 
-Object: Timesheet line
-######################
+Object: Timesheet line (hr.analytic.timesheet)
+##############################################
 
 
 

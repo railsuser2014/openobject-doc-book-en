@@ -1,4 +1,13 @@
 
+.. module:: base
+    :synopsis: Base
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base (*base*)
 =============
 :Module: base
@@ -6,6 +15,7 @@ Base (*base*)
 :Version: 5.0.1.1
 :Directory: base
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -45,7 +55,7 @@ Menus
  * Administration/Users
  * Administration/Security
  * Administration/Modules Management
- * Partners/Configuration/Localisation/Currencies
+ * Financial Management/Configuration/Currencies
  * Partners/Configuration
  * Partners/Partners/New Partner
  * Administration/Maintenance/Your Maintenance Contracts
@@ -110,7 +120,7 @@ Menus
  * Administration/Translations/Application Terms/Languages
  * Partners
  * Partners/Configuration/Partner Functions
- * Partners/Partner Addresses
+ * Partners/Addresses
  * Partners/Configuration/Titles
  * Partners/Configuration/Titles/Partners Titles
  * Partners/Configuration/Titles/Contacts Titles
@@ -263,8 +273,8 @@ Views
 Objects
 -------
 
-Object: Objects
-###############
+Object: Objects (ir.model)
+##########################
 
 
 
@@ -303,8 +313,8 @@ Object: Objects
 
 
 
-Object: Objects Security Grid
-#############################
+Object: Objects Security Grid (ir.model.grid)
+#############################################
 
 
 
@@ -847,8 +857,8 @@ Object: Objects Security Grid
 
 
 
-Object: Fields
-##############
+Object: Fields (ir.model.fields)
+################################
 
 
 
@@ -965,8 +975,8 @@ Object: Fields
 
 
 
-Object: ir.model.access
-#######################
+Object: ir.model.access (ir.model.access)
+#########################################
 
 
 
@@ -1011,8 +1021,8 @@ Object: ir.model.access
 
 
 
-Object: ir.model.data
-#####################
+Object: ir.model.data (ir.model.data)
+#####################################
 
 
 
@@ -1057,8 +1067,8 @@ Object: ir.model.data
 
 
 
-Object: ir.model.config
-#######################
+Object: ir.model.config (ir.model.config)
+#########################################
 
 
 
@@ -1073,8 +1083,8 @@ Object: ir.model.config
 
 
 
-Object: ir.sequence.type
-########################
+Object: ir.sequence.type (ir.sequence.type)
+###########################################
 
 
 
@@ -1089,8 +1099,8 @@ Object: ir.sequence.type
 
 
 
-Object: ir.sequence
-###################
+Object: ir.sequence (ir.sequence)
+#################################
 
 
 
@@ -1141,8 +1151,8 @@ Object: ir.sequence
 
 
 
-Object: ir.ui.menu
-##################
+Object: ir.ui.menu (ir.ui.menu)
+###############################
 
 
 
@@ -1199,8 +1209,8 @@ Object: ir.ui.menu
 
 
 
-Object: ir.ui.view.custom
-#########################
+Object: ir.ui.view.custom (ir.ui.view.custom)
+#############################################
 
 
 
@@ -1221,8 +1231,8 @@ Object: ir.ui.view.custom
 
 
 
-Object: ir.ui.view
-##################
+Object: ir.ui.view (ir.ui.view)
+###############################
 
 
 
@@ -1267,8 +1277,8 @@ Object: ir.ui.view
 
 
 
-Object: ir.ui.view_sc
-#####################
+Object: ir.ui.view_sc (ir.ui.view_sc)
+#####################################
 
 
 
@@ -1301,8 +1311,8 @@ Object: ir.ui.view_sc
 
 
 
-Object: ir.default
-##################
+Object: ir.default (ir.default)
+###############################
 
 
 
@@ -1353,8 +1363,8 @@ Object: ir.default
 
 
 
-Object: ir.actions.actions
-##########################
+Object: ir.actions.actions (ir.actions.actions)
+###############################################
 
 
 
@@ -1375,8 +1385,8 @@ Object: ir.actions.actions
 
 
 
-Object: ir.actions.report.custom
-################################
+Object: ir.actions.report.custom (ir.actions.report.custom)
+###########################################################
 
 
 
@@ -1421,8 +1431,8 @@ Object: ir.actions.report.custom
 
 
 
-Object: ir.actions.report.xml
-#############################
+Object: ir.actions.report.xml (ir.actions.report.xml)
+#####################################################
 
 
 
@@ -1563,8 +1573,8 @@ Object: ir.actions.report.xml
 
 
 
-Object: ir.actions.act_window
-#############################
+Object: ir.actions.act_window (ir.actions.act_window)
+#####################################################
 
 
 
@@ -1669,8 +1679,8 @@ Object: ir.actions.act_window
 
 
 
-Object: ir.actions.act_window.view
-##################################
+Object: ir.actions.act_window.view (ir.actions.act_window.view)
+###############################################################
 
 
 
@@ -1703,8 +1713,8 @@ Object: ir.actions.act_window.view
 
 
 
-Object: ir.actions.wizard
-#########################
+Object: ir.actions.wizard (ir.actions.wizard)
+#############################################
 
 
 
@@ -1749,8 +1759,8 @@ Object: ir.actions.wizard
 
 
 
-Object: ir.actions.url
-######################
+Object: ir.actions.url (ir.actions.url)
+#######################################
 
 
 
@@ -1777,8 +1787,8 @@ Object: ir.actions.url
 
 
 
-Object: ir.server.object.lines
-##############################
+Object: ir.server.object.lines (ir.server.object.lines)
+#######################################################
 
 
 
@@ -1805,8 +1815,8 @@ Object: ir.server.object.lines
 
 
 
-Object: ir.actions.server
-#########################
+Object: ir.actions.server (ir.actions.server)
+#############################################
 
 
 
@@ -1953,8 +1963,8 @@ Object: ir.actions.server
     *enter the field/expression that will return the list, i.e. select the sale order in Object, and we can have loop on sales order line. Expression = `object.order_line`*
 
 
-Object: ir.actions.act_window_close
-###################################
+Object: ir.actions.act_window_close (ir.actions.act_window_close)
+#################################################################
 
 
 
@@ -1969,8 +1979,8 @@ Object: ir.actions.act_window_close
 
 
 
-Object: ir.actions.todo
-#######################
+Object: ir.actions.todo (ir.actions.todo)
+#########################################
 
 
 
@@ -2045,8 +2055,8 @@ Object: ir.actions.todo
 
 
 
-Object: ir.actions.configuration.wizard
-#######################################
+Object: ir.actions.configuration.wizard (ir.actions.configuration.wizard)
+#########################################################################
 
 
 
@@ -2067,8 +2077,8 @@ Object: ir.actions.configuration.wizard
 
 
 
-Object: ir.report.custom
-########################
+Object: ir.report.custom (ir.report.custom)
+###########################################
 
 
 
@@ -2161,8 +2171,8 @@ Object: ir.report.custom
 
 
 
-Object: ir.report.custom.fields
-###############################
+Object: ir.report.custom.fields (ir.report.custom.fields)
+#########################################################
 
 
 
@@ -2321,8 +2331,8 @@ Object: ir.report.custom.fields
 
 
 
-Object: ir.attachment
-#####################
+Object: ir.attachment (ir.attachment)
+#####################################
 
 
 
@@ -2457,8 +2467,8 @@ Object: ir.attachment
 
 
 
-Object: ir.cron
-###############
+Object: ir.cron (ir.cron)
+#########################
 
 
 
@@ -2535,8 +2545,8 @@ Object: ir.cron
 
 
 
-Object: ir.values
-#################
+Object: ir.values (ir.values)
+#############################
 
 
 
@@ -2623,8 +2633,8 @@ Object: ir.values
     *This field is not used, it only helps you to select the right action.*
 
 
-Object: ir.translation
-######################
+Object: ir.translation (ir.translation)
+#######################################
 
 
 
@@ -2663,8 +2673,8 @@ Object: ir.translation
 
 
 
-Object: ir.exports
-##################
+Object: ir.exports (ir.exports)
+###############################
 
 
 
@@ -2685,8 +2695,8 @@ Object: ir.exports
 
 
 
-Object: ir.exports.line
-#######################
+Object: ir.exports.line (ir.exports.line)
+#########################################
 
 
 
@@ -2701,8 +2711,8 @@ Object: ir.exports.line
 
 
 
-Object: workflow
-################
+Object: workflow (workflow)
+###########################
 
 
 
@@ -2729,8 +2739,8 @@ Object: workflow
 
 
 
-Object: workflow.activity
-#########################
+Object: workflow.activity (workflow.activity)
+#############################################
 
 
 
@@ -2811,8 +2821,8 @@ Object: workflow.activity
 
 
 
-Object: workflow.transition
-###########################
+Object: workflow.transition (workflow.transition)
+#################################################
 
 
 
@@ -2857,8 +2867,8 @@ Object: workflow.transition
 
 
 
-Object: workflow.instance
-#########################
+Object: workflow.instance (workflow.instance)
+#############################################
 
 
 
@@ -2891,8 +2901,8 @@ Object: workflow.instance
 
 
 
-Object: workflow.workitem
-#########################
+Object: workflow.workitem (workflow.workitem)
+#############################################
 
 
 
@@ -2919,8 +2929,8 @@ Object: workflow.workitem
 
 
 
-Object: workflow.triggers
-#########################
+Object: workflow.triggers (workflow.triggers)
+#############################################
 
 
 
@@ -2947,8 +2957,8 @@ Object: workflow.triggers
 
 
 
-Object: ir.rule.group
-#####################
+Object: ir.rule.group (ir.rule.group)
+#####################################
 
 
 
@@ -2987,8 +2997,8 @@ Object: ir.rule.group
 
 
 
-Object: ir.rule
-###############
+Object: ir.rule (ir.rule)
+#########################
 
 
 
@@ -3027,8 +3037,8 @@ Object: ir.rule
 
 
 
-Object: wizard.ir.model.menu.create
-###################################
+Object: wizard.ir.model.menu.create (wizard.ir.model.menu.create)
+#################################################################
 
 
 
@@ -3055,8 +3065,8 @@ Object: wizard.ir.model.menu.create
 
 
 
-Object: wizard.ir.model.menu.create.line
-########################################
+Object: wizard.ir.model.menu.create.line (wizard.ir.model.menu.create.line)
+###########################################################################
 
 
 
@@ -3083,8 +3093,8 @@ Object: wizard.ir.model.menu.create.line
 
 
 
-Object: wizard.module.lang.export
-#################################
+Object: wizard.module.lang.export (wizard.module.lang.export)
+#############################################################
 
 
 
@@ -3129,8 +3139,8 @@ Object: wizard.module.lang.export
 
 
 
-Object: wizard.module.update_translations
-#########################################
+Object: wizard.module.update_translations (wizard.module.update_translations)
+#############################################################################
 
 
 
@@ -3139,8 +3149,8 @@ Object: wizard.module.update_translations
 
 
 
-Object: Module Repository
-#########################
+Object: Module Repository (ir.module.repository)
+################################################
 
 
 
@@ -3176,8 +3186,8 @@ Object: Module Repository
 
 
 
-Object: Module Category
-#######################
+Object: Module Category (ir.module.category)
+############################################
 
 
 
@@ -3204,8 +3214,8 @@ Object: Module Category
 
 
 
-Object: Module
-##############
+Object: Module (ir.module.module)
+#################################
 
 
 
@@ -3316,8 +3326,8 @@ Object: Module
 
 
 
-Object: Module dependency
-#########################
+Object: Module dependency (ir.module.module.dependency)
+#######################################################
 
 
 
@@ -3338,8 +3348,8 @@ Object: Module dependency
 
 
 
-Object: Country
-###############
+Object: Country (res.country)
+#############################
 
 
 
@@ -3385,8 +3395,8 @@ Object: Country
 
 
 
-Object: Country state
-#####################
+Object: Country state (res.country.state)
+#########################################
 
 
 
@@ -3413,8 +3423,8 @@ Object: Country state
 
 
 
-Object: Bank
-############
+Object: Bank (res.bank)
+#######################
 
 
 
@@ -3501,8 +3511,8 @@ Object: Bank
     *This field may contain indications on the processing to be applied, e.g. an indication concerning the globalisation of these payments.The content of this field must be laid down on a bilateral basis between the bank and its client.*
 
 
-Object: Function of the contact
-###############################
+Object: Function of the contact (res.partner.function)
+######################################################
 
 
 
@@ -3517,8 +3527,8 @@ Object: Function of the contact
 
 
 
-Object: Payment term
-####################
+Object: Payment term (res.payterm)
+##################################
 
 
 
@@ -3527,8 +3537,8 @@ Object: Payment term
 
 
 
-Object: Partner Categories
-##########################
+Object: Partner Categories (res.partner.category)
+#################################################
 
 
 
@@ -3567,8 +3577,8 @@ Object: Partner Categories
 
 
 
-Object: res.partner.title
-#########################
+Object: res.partner.title (res.partner.title)
+#############################################
 
 
 
@@ -3589,8 +3599,8 @@ Object: res.partner.title
 
 
 
-Object: Partner
-###############
+Object: Partner (res.partner)
+#############################
 
 
 
@@ -4313,8 +4323,8 @@ Object: Partner
 
 
 
-Object: Partner Addresses
-#########################
+Object: Partner Addresses (res.partner.address)
+###############################################
 
 
 
@@ -4491,8 +4501,8 @@ Object: Partner Addresses
 
 
 
-Object: Bank Account Type
-#########################
+Object: Bank Account Type (res.partner.bank.type)
+#################################################
 
 
 
@@ -4513,8 +4523,8 @@ Object: Bank Account Type
 
 
 
-Object: Bank type fields
-########################
+Object: Bank type fields (res.partner.bank.type.field)
+######################################################
 
 
 
@@ -4547,8 +4557,8 @@ Object: Bank type fields
 
 
 
-Object: Bank Accounts
-#####################
+Object: Bank Accounts (res.partner.bank)
+########################################
 
 
 
@@ -4641,8 +4651,8 @@ Object: Bank Accounts
 
 
 
-Object: Channels
-################
+Object: Channels (res.partner.canal)
+####################################
 
 
 
@@ -4657,8 +4667,8 @@ Object: Channels
 
 
 
-Object: res.partner.som
-#######################
+Object: res.partner.som (res.partner.som)
+#########################################
 
 
 
@@ -4673,8 +4683,8 @@ Object: res.partner.som
 
 
 
-Object: res.partner.event
-#########################
+Object: res.partner.event (res.partner.event)
+#############################################
 
 
 
@@ -4761,8 +4771,8 @@ Object: res.partner.event
 
 
 
-Object: Partner Events
-######################
+Object: Partner Events (res.partner.event.type)
+###############################################
 
 
 
@@ -4783,8 +4793,8 @@ Object: Partner Events
 
 
 
-Object: Currency
-################
+Object: Currency (res.currency)
+###############################
 
 
 
@@ -4835,8 +4845,8 @@ Object: Currency
 
 
 
-Object: Currency Rate
-#####################
+Object: Currency Rate (res.currency.rate)
+#########################################
 
 
 
@@ -4857,8 +4867,8 @@ Object: Currency Rate
 
 
 
-Object: res.company
-###################
+Object: res.company (res.company)
+#################################
 
 
 
@@ -4994,8 +5004,8 @@ Object: res.company
 
 
 
-Object: res.groups
-##################
+Object: res.groups (res.groups)
+###############################
 
 
 
@@ -5034,8 +5044,8 @@ Object: res.groups
 
 
 
-Object: res.roles
-#################
+Object: res.roles (res.roles)
+#############################
 
 
 
@@ -5062,8 +5072,8 @@ Object: res.roles
 
 
 
-Object: res.users
-#################
+Object: res.users (res.users)
+#############################
 
 
 
@@ -5162,8 +5172,8 @@ Object: res.users
 
 
 
-Object: res.config.view
-#######################
+Object: res.config.view (res.config.view)
+#########################################
 
 
 
@@ -5178,8 +5188,8 @@ Object: res.config.view
 
 
 
-Object: Languages
-#################
+Object: Languages (res.lang)
+############################
 
 
 
@@ -5242,8 +5252,8 @@ Object: Languages
     *The Separator Format should be like [,n] where 0 < n :starting from Unit digit.-1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500;[1,2,-1] will represent it to be 106,50,0;[3] will represent it as 106,500. Provided ',' as the thousand separator in each case.*
 
 
-Object: res.request
-###################
+Object: res.request (res.request)
+#################################
 
 
 
@@ -5330,8 +5340,8 @@ Object: res.request
 
 
 
-Object: res.request.link
-########################
+Object: res.request.link (res.request.link)
+###########################################
 
 
 
@@ -5352,8 +5362,8 @@ Object: res.request.link
 
 
 
-Object: res.request.history
-###########################
+Object: res.request.history (res.request.history)
+#################################################
 
 
 
@@ -5392,8 +5402,8 @@ Object: res.request.history
 
 
 
-Object: ir.property
-###################
+Object: ir.property (ir.property)
+#################################
 
 
 
@@ -5426,8 +5436,8 @@ Object: ir.property
 
 
 
-Object: maintenance contract modules
-####################################
+Object: maintenance contract modules (maintenance.contract.module)
+##################################################################
 
 
 
@@ -5442,8 +5452,8 @@ Object: maintenance contract modules
 
 
 
-Object: Maintenance Contract
-############################
+Object: Maintenance Contract (maintenance.contract)
+###################################################
 
 
 
@@ -5488,8 +5498,8 @@ Object: Maintenance Contract
 
 
 
-Object: maintenance.contract.wizard
-###################################
+Object: maintenance.contract.wizard (maintenance.contract.wizard)
+#################################################################
 
 
 

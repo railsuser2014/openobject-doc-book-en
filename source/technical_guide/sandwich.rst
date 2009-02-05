@@ -1,4 +1,13 @@
 
+.. module:: sandwich
+    :synopsis: Sandwich Module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sandwich Module (*sandwich*)
 ============================
 :Module: sandwich
@@ -6,6 +15,7 @@ Sandwich Module (*sandwich*)
 :Version: 5.0.1.0
 :Directory: sandwich
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * product - installed
+ * :mod:`base`
+ * :mod:`product`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: sandwich.product.type
-#############################
+Object: sandwich.product.type (sandwich.product.type)
+#####################################################
 
 
 
@@ -72,8 +82,8 @@ Object: sandwich.product.type
 
 
 
-Object: sandwich.product
-########################
+Object: sandwich.product (sandwich.product)
+###########################################
 
 
 
@@ -94,8 +104,8 @@ Object: sandwich.product
 
 
 
-Object: sandwich.order
-######################
+Object: sandwich.order (sandwich.order)
+#######################################
 
 
 
@@ -128,8 +138,8 @@ Object: sandwich.order
 
 
 
-Object: sandwich.order.line
-###########################
+Object: sandwich.order.line (sandwich.order.line)
+#################################################
 
 
 

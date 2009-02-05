@@ -1,4 +1,13 @@
 
+.. module:: account_payment_extension
+    :synopsis: Account Payment Extension
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Account Payment Extension (*account_payment_extension*)
 =======================================================
 :Module: account_payment_extension
@@ -6,6 +15,7 @@ Account Payment Extension (*account_payment_extension*)
 :Version: 5.0.1.1
 :Directory: account_payment_extension
 :Web: http://www.zikzakmedia.com
+:Is certified: no
 
 Description
 -----------
@@ -29,9 +39,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * account_payment - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`account_payment`
 
 Reports
 -------

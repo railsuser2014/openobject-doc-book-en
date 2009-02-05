@@ -1,4 +1,13 @@
 
+.. module:: sale_category
+    :synopsis: Sale Order Line With Categories
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Sale Order Line With Categories (*sale_category*)
 =================================================
 :Module: sale_category
@@ -6,6 +15,7 @@ Sale Order Line With Categories (*sale_category*)
 :Version: 5.0.1.0
 :Directory: sale_category
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * sale - installed
+ * :mod:`sale`
 
 Reports
 -------

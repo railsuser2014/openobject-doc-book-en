@@ -1,4 +1,13 @@
 
+.. module:: stock_location
+    :synopsis: Stock Location Paths
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Stock Location Paths (*stock_location*)
 =======================================
 :Module: stock_location
@@ -6,6 +15,7 @@ Stock Location Paths (*stock_location*)
 :Version: 5.0.1.0
 :Directory: stock_location
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -26,7 +36,7 @@ Description
 Dependencies
 ------------
 
- * stock - installed
+ * :mod:`stock`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: stock.location.path
-###########################
+Object: stock.location.path (stock.location.path)
+#################################################
 
 
 

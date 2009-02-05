@@ -1,4 +1,13 @@
 
+.. module:: mrp_repair
+    :synopsis: Products Repairs Module
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products Repairs Module (*mrp_repair*)
 ======================================
 :Module: mrp_repair
@@ -6,6 +15,7 @@ Products Repairs Module (*mrp_repair*)
 :Version: 5.0.1.0
 :Directory: mrp_repair
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -23,9 +33,9 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * sale - installed
- * account - installed
+ * :mod:`base`
+ * :mod:`sale`
+ * :mod:`account`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Repairs Order
-#####################
+Object: Repairs Order (mrp.repair)
+##################################
 
 
 
@@ -206,8 +216,8 @@ Object: Repairs Order
 
 
 
-Object: Repair Operations Lines
-###############################
+Object: Repair Operations Lines (mrp.repair.line)
+#################################################
 
 
 
@@ -306,8 +316,8 @@ Object: Repair Operations Lines
 
 
 
-Object: Repair Fees line
-########################
+Object: Repair Fees line (mrp.repair.fee)
+#########################################
 
 
 

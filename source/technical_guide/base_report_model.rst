@@ -1,4 +1,13 @@
 
+.. module:: base_report_model
+    :synopsis: Base Report Model
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Base Report Model (*base_report_model*)
 =======================================
 :Module: base_report_model
@@ -6,6 +15,7 @@ Base Report Model (*base_report_model*)
 :Version: 5.0.0.1
 :Directory: base_report_model
 :Web: http://openerp.com
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -41,8 +51,8 @@ Views
 Objects
 -------
 
-Object: Visible models for a tool
-#################################
+Object: Visible models for a tool (base.report.model)
+#####################################################
 
 
 

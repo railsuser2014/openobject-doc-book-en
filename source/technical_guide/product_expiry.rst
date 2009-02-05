@@ -1,4 +1,13 @@
 
+.. module:: product_expiry
+    :synopsis: Products date of expiry
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Products date of expiry (*product_expiry*)
 ==========================================
 :Module: product_expiry
@@ -6,6 +15,7 @@ Products date of expiry (*product_expiry*)
 :Version: 5.0.1.0
 :Directory: product_expiry
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * account - installed
- * product - installed
- * stock - installed
+ * :mod:`base`
+ * :mod:`account`
+ * :mod:`product`
+ * :mod:`stock`
 
 Reports
 -------

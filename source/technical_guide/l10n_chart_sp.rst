@@ -1,4 +1,13 @@
 
+.. module:: l10n_chart_sp
+    :synopsis: Spain - Chart of Account
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Spain - Chart of Account (*l10n_chart_sp*)
 ==========================================
 :Module: l10n_chart_sp
@@ -6,6 +15,7 @@ Spain - Chart of Account (*l10n_chart_sp*)
 :Version: 5.0.1.0
 :Directory: l10n_chart_sp
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,10 +27,10 @@ Description
 Dependencies
 ------------
 
- * account - installed
- * base_vat - installed
- * base_iban - installed
- * account_chart - installed
+ * :mod:`account`
+ * :mod:`base_vat`
+ * :mod:`base_iban`
+ * :mod:`account_chart`
 
 Reports
 -------

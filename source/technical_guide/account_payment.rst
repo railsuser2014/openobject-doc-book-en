@@ -1,4 +1,13 @@
 
+.. module:: account_payment
+    :synopsis: Payment Management
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Payment Management (*account_payment*)
 ======================================
 :Module: account_payment
@@ -6,6 +15,7 @@ Payment Management (*account_payment*)
 :Version: 5.0.1.1
 :Directory: account_payment
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -19,7 +29,7 @@ Description
 Dependencies
 ------------
 
- * account - installed
+ * :mod:`account`
 
 Reports
 -------
@@ -56,8 +66,8 @@ Views
 Objects
 -------
 
-Object: Payment type
-####################
+Object: Payment type (payment.type)
+###################################
 
 
 
@@ -90,8 +100,8 @@ Object: Payment type
 
 
 
-Object: Payment mode
-####################
+Object: Payment mode (payment.mode)
+###################################
 
 
 
@@ -118,8 +128,8 @@ Object: Payment mode
     *Bank Account for the Payment Mode*
 
 
-Object: Payment Order
-#####################
+Object: Payment Order (payment.order)
+#####################################
 
 
 
@@ -200,8 +210,8 @@ Object: Payment Order
 
 
 
-Object: Payment Line
-####################
+Object: Payment Line (payment.line)
+###################################
 
 
 

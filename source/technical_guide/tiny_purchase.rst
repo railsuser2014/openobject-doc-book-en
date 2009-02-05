@@ -1,4 +1,13 @@
 
+.. module:: tiny_purchase
+    :synopsis: Tiny purchase
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Tiny purchase (*tiny_purchase*)
 ===============================
 :Module: tiny_purchase
@@ -6,6 +15,7 @@ Tiny purchase (*tiny_purchase*)
 :Version: 5.0.0.1
 :Directory: tiny_purchase
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,7 +27,7 @@ Description
 Dependencies
 ------------
 
- * base - installed
+ * :mod:`base`
 
 Reports
 -------
@@ -45,8 +55,8 @@ Views
 Objects
 -------
 
-Object: tiny_purchase.product
-#############################
+Object: tiny_purchase.product (tiny_purchase.product)
+#####################################################
 
 
 
@@ -61,8 +71,8 @@ Object: tiny_purchase.product
 
 
 
-Object: tiny_purchase.order
-###########################
+Object: tiny_purchase.order (tiny_purchase.order)
+#################################################
 
 
 
@@ -89,8 +99,8 @@ Object: tiny_purchase.order
 
 
 
-Object: tiny_purchase.line
-##########################
+Object: tiny_purchase.line (tiny_purchase.line)
+###############################################
 
 
 

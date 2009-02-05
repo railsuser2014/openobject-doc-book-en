@@ -1,4 +1,13 @@
 
+.. module:: report_timesheet_user
+    :synopsis: Report for timesheet
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Report for timesheet (*report_timesheet_user*)
 ==============================================
 :Module: report_timesheet_user
@@ -6,6 +15,7 @@ Report for timesheet (*report_timesheet_user*)
 :Version: 5.0.1.0
 :Directory: report_timesheet_user
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * hr_timesheet_sheet - installed
- * multi_company - installed
+ * :mod:`hr_timesheet_sheet`
+ * :mod:`multi_company`
 
 Reports
 -------
@@ -52,8 +62,8 @@ Views
 Objects
 -------
 
-Object: Tasks by user and company
-#################################
+Object: Tasks by user and company (report.timesheet.user.user)
+##############################################################
 
 
 
@@ -92,8 +102,8 @@ Object: Tasks by user and company
 
 
 
-Object: Tasks by company
-########################
+Object: Tasks by company (report.timesheet.user)
+################################################
 
 
 

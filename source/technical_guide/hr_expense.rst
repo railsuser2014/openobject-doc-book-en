@@ -1,4 +1,13 @@
 
+.. module:: hr_expense
+    :synopsis: Human Resources Expenses Tracking
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Human Resources Expenses Tracking (*hr_expense*)
 ================================================
 :Module: hr_expense
@@ -6,6 +15,7 @@ Human Resources Expenses Tracking (*hr_expense*)
 :Version: 5.0.1.0
 :Directory: hr_expense
 :Web: http://www.openerp.com
+:Is certified: yes
 
 Description
 -----------
@@ -28,9 +38,9 @@ Description
 Dependencies
 ------------
 
- * hr - installed
- * account - installed
- * account_tax_include - installed
+ * :mod:`hr`
+ * :mod:`account`
+ * :mod:`account_tax_include`
 
 Reports
 -------
@@ -62,8 +72,8 @@ Views
 Objects
 -------
 
-Object: Expense
-###############
+Object: Expense (hr.expense.expense)
+####################################
 
 
 
@@ -168,8 +178,8 @@ Object: Expense
 
 
 
-Object: Expense Line
-####################
+Object: Expense Line (hr.expense.line)
+######################################
 
 
 

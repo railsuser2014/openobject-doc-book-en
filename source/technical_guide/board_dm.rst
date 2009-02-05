@@ -1,4 +1,13 @@
 
+.. module:: board_dm
+    :synopsis: Board for DM users
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Board for DM users (*board_dm*)
 ===============================
 :Module: board_dm
@@ -6,6 +15,7 @@ Board for DM users (*board_dm*)
 :Version: 5.0.1.0
 :Directory: board_dm
 :Web: 
+:Is certified: no
 
 Description
 -----------
@@ -24,8 +34,8 @@ Description
 Dependencies
 ------------
 
- * board - installed
- * dm - installed
+ * :mod:`board`
+ * :mod:`dm`
 
 Reports
 -------

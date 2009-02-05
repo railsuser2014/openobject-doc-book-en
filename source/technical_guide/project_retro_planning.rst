@@ -1,4 +1,13 @@
 
+.. module:: project_retro_planning
+    :synopsis: Project Retro planning
+    :noindex:
+.. 
+
+.. raw:: html
+
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
 Project Retro planning (*project_retro_planning*)
 =================================================
 :Module: project_retro_planning
@@ -6,6 +15,7 @@ Project Retro planning (*project_retro_planning*)
 :Version: 5.0.0.1
 :Directory: project_retro_planning
 :Web: 
+:Is certified: yes
 
 Description
 -----------
@@ -17,8 +27,8 @@ Description
 Dependencies
 ------------
 
- * base - installed
- * project - installed
+ * :mod:`base`
+ * :mod:`project`
 
 Reports
 -------
