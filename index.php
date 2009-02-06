@@ -313,7 +313,7 @@ $mapping = Array(
 	"workflow.workitem" => "/developer/5_Workflow/index.html#id1",
 );
 if (array_key_exists('model', $_GET) && array_key_exists($_GET['model'], $mapping))
-	header('Location: /'.$mapping[$_GET['model']] ) ;
+	header('Location: http://doc.openerp.com/'.$mapping[$_GET['model']] ) ;
 else
 	header('Location: /index.html') ;
 ?>
