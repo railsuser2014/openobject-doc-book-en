@@ -1,7 +1,7 @@
 Accounting
 ==========
 
-Open ERP has a fully integrated accounting module than cover financial
+Open ERP porvides a fully integrated accounting module than cover financial
 accounting, analytic accounting, third party management, taxes management,
 budgets, assets, etc. Open ERP has more than 50 extra modules for specific
 accounting features: electronic bank transfers, assets management,

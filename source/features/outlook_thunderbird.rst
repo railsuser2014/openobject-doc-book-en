@@ -14,13 +14,13 @@ Leads, Cases, Contacts and more.
 Key points:
 -----------
 
-* Link between e-mail and list of partners
+* Link between e-mail and list of partners,
 * Configure messages on partners, products, etc.
 
 Integration benefits:
 ---------------------
 
-* Possibility of creating a partner directly from e-mail adress
+* Possibility of creating a partner directly from an e-mail adress
 
 Links:
 ------

@@ -3,8 +3,8 @@ Services Management
 
 Service management allows you to manage your company's projects and tasks
 without any limitations. It provides tools to manage multi-level sub-projects,
-control tasks from project chief, alert customers by e-mails for project
-support, schedule and prioritize tasks assigned,  etc.
+control tasks from project manager, alert customers by e-mail for project
+support, schedule and prioritize the tasks assigned,  etc.
 
 .. raw:: html
  

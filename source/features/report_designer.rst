@@ -1,11 +1,11 @@
 Report Designer
 ===============
 
-This plugin connects Open Office with OpenERP to ensure some useful
+This plugin connects Open Office with OpenERP to ensure that useful
 informations are coordinated and shared across the company. With a few simple
-clicks, users can file reports and lists to Open Office documents and modify it
+clicks, users can open reports and lists in an Open Office document and modify it
 from their favorite document application. It can be included into various
-OpenERP modules, including Accounts, Opportunities, Leads, Cases, Contacts and
+OpenERP modules, including :  Accounts, Opportunities, Leads, Cases, Contacts and
 more.
 
 .. raw:: html
@@ -25,7 +25,7 @@ Integration benefits:
 * Allows to easily customize all existing documents of Open ERP
 * Create new documents and save them as modules to easily deploy and distribute
 * Automates all your frequent document composition
-* Integrated to marketing campaigns
+* Integrated to marketing campaigns management
 
 Links:
 ------

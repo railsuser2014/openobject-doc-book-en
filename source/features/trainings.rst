@@ -21,7 +21,7 @@ Integration Benefits:
 ---------------------
 
 * Integrated with document management system for training material
-* Based on analytic accounting to manages costs and revenues per course
+* Based on analytic accounting to manage costs and revenues per course
 * Integrated with invoicing, sales, CRM, etc.
 
 Links:

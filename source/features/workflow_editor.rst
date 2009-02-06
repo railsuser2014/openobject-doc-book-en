@@ -26,7 +26,3 @@ Integration Benefits:
 * Allows you to adapt the logic of all processus of existing modules
 * Integrated with user friendly processes and documentations
 
-Links:
-------
-
-* Modules:

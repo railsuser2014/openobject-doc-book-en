@@ -2,8 +2,8 @@ Book Stores
 ===========
 
 Open ERP provides modules that configure automatically the system for
-a book store. It allow to manages books, authors, editors and suppliers.
-It manages barcodes and sales from the website, from a point of sale or
+a book store company. It allows to manages books, authors, editors and suppliers.
+It manages barcodes and sales from the website, from a point of sale,
 by quotation or phone.
 
 .. raw:: html
@@ -14,7 +14,7 @@ by quotation or phone.
 Key Points:
 -----------
 
-* Integrates all needs of a book store
+* Integrates all the needs of a book store
 * Ready to use, out-of-the-box.
 
 Integration Benefits:

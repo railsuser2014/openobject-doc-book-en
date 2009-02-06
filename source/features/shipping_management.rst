@@ -1,7 +1,7 @@
 Shipping Management
 ===================
 
-The Open ERP warehouse management system provides lots of facilities
+The Open ERP warehouse management system provides lots of tools
 to organise efficiently your customer or suppliers shippings.
 
 .. raw:: html
@@ -19,8 +19,8 @@ Integration Benefits:
 ---------------------
 
 * Deliveries costs and orders are computed automatically
-* Automatic invoices based on deliveries
-* Integrated with quality management system
+* Automatic invoicing based on deliveries
+* Integrated with the quality management system
 
 Links:
 ------

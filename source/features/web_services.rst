@@ -2,7 +2,7 @@ Web Services
 ============
 
 Every object or service of the application is accessible through different
-standard web-services: XML-RPC, XML-RPC over HTTPS or Python NET-RPC for faster
+web-services standard: XML-RPC, XML-RPC over HTTPS or Python NET-RPC for faster
 accesses. It allows you to easily integrate any application or machine to the
 Open ERP server for a maximum of productivity.
 
@@ -21,12 +21,8 @@ Key Points:
 Integration benefits:
 ---------------------
 
-This flexible technology allwed us to propose you automatic synchronisation
+This flexible technology allows us to propose you automatic synchronisation
 modules for most common open source software: ecommerces, mails, mobile
 phones, synchronisation of datas, etc... 
 
-Links:
-------
-
-* Module:
 

@@ -1,13 +1,13 @@
 Dynamic Graphs
 ==============
 
-Open ERP provides beautifull and graphic reports to provide the right
+Open ERP provides nice graphic reports to provide the right
 information to the user according to the context.  All graphs and dashboards in
 Open ERP are fully dynamic, you can click on any part of the graph, drag and
-drop in dasboards, switch to calendar or gantt views, etc.
+drop in dashboards, switch to calendar or gantt views, etc.
 
 With Open ERP, powerfull reporting are not only dedicated to managers, but
-to any user of the system. Uses the 200+ reports to satisfy every employee
+to any user of the system. Uses the 200+ reports to satisfy every employee's
 need and improve their performance by providing them the right information.
 
 .. raw:: html

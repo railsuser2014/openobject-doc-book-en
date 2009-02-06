@@ -1,7 +1,7 @@
 Financial Project Management
 ============================
 
-Open ERP intagrates financial project management to help you remain in
+Open ERP intagrates financial project management allowing you to stay in
 control of your different activities. It keep track of costs, budgets,
 automatic invoicing based on tasks achieved, profitability reports, etc.
 

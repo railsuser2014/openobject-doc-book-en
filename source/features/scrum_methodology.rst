@@ -4,9 +4,9 @@ Scrum Methodology
 This modules implements all concepts defined by the scrum project management
 methodology for IT companies: projects with sprints, product owner, scrum
 master, sprints reviews, daily meetings, feedbacks, product backlog, sprint
-backlog, ...
+backlog, etc.
 
-The scrum module allows to easily manages long-term roadmaps, frequent
+The scrum module allows to easily manage long-term roadmaps, frequent
 evaluation of works, customers interaction, etc. It provides interresting
 reports like the burndown chart. The scrum methodology is used by Microsoft
 and Google to manages all their new products.
@@ -26,7 +26,7 @@ Integration Benefits:
 ---------------------
 
 * Integrated with project management to manage scrum and non-scrum projects at a central place
-* Integrated with gantt and calendars views
+* Integrated with gantt and calendar views
 
 Links:
 ------

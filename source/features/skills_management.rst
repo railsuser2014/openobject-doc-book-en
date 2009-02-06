@@ -13,14 +13,14 @@ can relate these to the periodical evaluation or the contract.
 Key Points:
 -----------
 
-* Uniq skill referential
+* Unique skill referential
 * Ability to perform computations on skills
 
 Integration Benefits:
 ---------------------
 
 * Integrated with periodical evaluations
-* You can use the portal so that employee can consult their data
+* You can use the portal so that employees can consult their datas
 
 Links:
 ------

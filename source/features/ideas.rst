@@ -2,7 +2,7 @@ Ideas Box
 =========
 
 Sometimes the smallest modules are the most usefull ones. The "ideas" module
-has been developped in 3 hours. It allows employees to propose ideas, sorted in
+has been developped in 3 hours. It allows employees to suggest ideas, sorted in
 different boxes or subjects. Then, people can rate the proposed ideas and
 discuss on the different points.
 

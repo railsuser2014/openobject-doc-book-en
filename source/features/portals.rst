@@ -14,13 +14,13 @@ Key points:
 -----------
 
 * Rights management included to the portal
-* All applictions of OpenERP can be included into your portail
-* Allow your collaborators to manage your system directly and safely 
+* All functionalities of OpenERP can be included into your portail
+* Allow your collaborators to manage your system directly and safely
 
 Integration benefits:
 ---------------------
 
-* Every OpenERP applications can be included into your portail
+* Every OpenERP feature can be included into your portail
 * Integrated with analytic account management system
 
 Links:

@@ -3,7 +3,7 @@ Bank interfaces
 ===============
 
 Open ERP support electronic banking and invoicing through different modules.
-It allows you to communicate automatically with banks and send payment orders
+It allows you to communicate automatically with banks to send payment orders
 and receive bank statements automatically.
 
 It currently supports CODA (Belgium+Luxemburg), SEPA (New European Standard),
@@ -23,7 +23,7 @@ Integration Benefits:
 ---------------------
 
 * Fully integrated with accouting so that you never have to encode anything,
-* It prepares you propositions of payments according to purchases, sales, invoices, etc.
+* It prepares the propositions of payments according to purchases, sales, invoices, etc.
 * Visibility of payments from any module: CRM, sales management, etc.
 
 Links:

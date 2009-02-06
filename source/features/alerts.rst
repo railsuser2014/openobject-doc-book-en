@@ -2,11 +2,11 @@
 Alerts
 ======
 
-Open ERP has an integrated alerts/warning system. You can configure alerts on any
+Open ERP has an integrated alert/warning system. You can configure alerts on any
 step of any operation. The end-user will receive alerts on different events. We can
 trigger alerts on the screen or through the internal requests system. It allows
 to show the right information at the right time for each user. It also simplify
-a lot the communication between the different employee of a same company.
+a lot the communication between the different employees of a same company.
 
 .. raw:: html
  

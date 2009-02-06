@@ -1,8 +1,8 @@
 Purchases
 =========
 
-Purchase management enables you to track your suppliers' price quotations and
-convert them into Purchase Orders as you require. Open ERP has several methods
+Purchase management enables you to track your supplier's price quotations and
+convert them into Purchase Orders. Open ERP has several methods
 of monitoring invoices and tracking the receipt of ordered goods.
 
 You can handle partial deliveries in Open ERP, so you can keep track of items

@@ -4,7 +4,7 @@ Assets Management
 
 For businesses from foundries to pharmaceuticals, tracking a complex fixed
 asset inventory becomes really easy with Open ERP. Having a good fixed asset
-module will make you avoid costing millions of dollars each year in tax
+module will make you avoid loosing millions of dollars each year in tax
 overpayment, regulatory non-compliance, and inefficiency.
 
 Manages your assets easily with Open ERP. This module is fully integrated

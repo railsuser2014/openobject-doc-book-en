@@ -2,7 +2,7 @@ Fund Raising
 ============
 
 The fund raising module allows you to manage your fund raising
-operations. From the search of investors/donators, to the tracking on how
+operations. From the searching of investors/donators, to the tracking on how
 the money is used accross your different projects and ressources.
 
 .. raw:: html
@@ -24,7 +24,5 @@ Integration Benefits:
 
 Links:
 ------
-
-* Success stories ?
 
 * Module: crm_configuration
