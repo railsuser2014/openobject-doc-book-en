@@ -6,8 +6,8 @@
 
 .. _installation-windows-web-link:
 
-OpenERP Web Installation on Windows
-=======================================
+OpenERP Web Installation
+========================
 
 The installation is very simple. There are 5 stages :
 

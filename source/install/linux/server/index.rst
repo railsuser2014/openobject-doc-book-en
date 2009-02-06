@@ -6,8 +6,8 @@
 
 .. _installation-linux-server-link:
 
-Open ERP Server Installation on Linux
-=====================================
+Open ERP Server Installation
+============================
 
 Installing the required packages
 --------------------------------

@@ -7,7 +7,7 @@
 .. _installation-linux-web-link:
 
 ===============================================================================
-OpenERP Web Installation on Linux
+OpenERP Web Installation
 ===============================================================================
 
 Here is the installation instructions for Debian based Linux distributions.
