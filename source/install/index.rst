@@ -13,5 +13,4 @@ Installation
 
     linux/index
     windows/index
-    postgresql
 
