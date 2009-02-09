@@ -7,7 +7,7 @@ databases or import new data in Open ERP. Tools dedicated to some software
 orders and deliveries with you suppliers and customers.
 
 It is used to synchronise Open ERP with SAP in distributions and food industries
-comapnies.
+companies.
 
 .. raw:: html
  

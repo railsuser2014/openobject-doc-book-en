@@ -1,7 +1,7 @@
 Chamber of commerce
 ===================
 
-Open ERP is used by 50% of the Chamber of Commerce of Belgium. More than 10
+Open ERP is used by 50% of the Chambers of Commerce of Belgium. More than 10
 modules are available for this specific business: advances CRM, contact
 management, membership management, training and conferences organisation,
 embassy folders, etc.

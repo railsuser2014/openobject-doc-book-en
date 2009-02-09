@@ -1,7 +1,7 @@
 Phone Calls
 ===========
 
-Open ERP provides tools to organise phone campaigns.  You can configure
+Open ERP provides tools to organise phone campaigns. You can configure
 different workflows for the operator. It's fully integrated with the CRM so
 that you can use relationship management facilities: segmentations of
 customers, automated rules, escalation of cases, transform phone calls to
@@ -23,7 +23,6 @@ Integration Benefits:
 ---------------------
 
 * Integrated with email marketing campaigns and segmentation tools
-* Integrated with direct marketing modules
 * Integrated with direct marketing modules
 
 Links:

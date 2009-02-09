@@ -15,7 +15,7 @@ Key points:
 -----------
 
 * Validation system included
-* Menu personalized for each user
+* Personalized menu for each user
 * Follow up of profitability for each project
 
 Integration benefits:

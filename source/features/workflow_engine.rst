@@ -24,8 +24,4 @@ Integration Benefits:
 * Allows to modify the logic of all the modules without development
 * Server actions interface
 
-Links:
-------
-
-* Modules:
 

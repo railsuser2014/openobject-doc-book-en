@@ -16,14 +16,14 @@ automatically in the accounting after validation of managers.
 Keypoints:
 ----------
 
-* Customisable workflow 
+* Customisable workflow
 * Validation system included
 
 Integration benefits:
 ---------------------
 
 * Allows you to re-invoice expenses to your clients
-* Integrated with financial and analytic accouting for cost control
+* Integrated with financial and analytic accouting for costs control
 
 Links:
 ------

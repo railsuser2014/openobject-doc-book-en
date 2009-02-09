@@ -20,8 +20,8 @@ share.
 Key Points:
 -----------
 
-* Integrated ORM, Workflow Engine, BPM, BI, 
-* Model View Control with lots of available views
+* Integrated ORM, Workflow Engine, BPM, BI,
+* Model View Control with lots of available views,
 * A very fast engine.
 
 Links:

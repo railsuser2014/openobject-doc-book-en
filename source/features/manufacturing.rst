@@ -1,7 +1,7 @@
 Manufacturing
 =============
 
-The manufacturing modules of Open ERP manages all best practices for
+The manufacturing modules of Open ERP manage all the best-practices concerning
 manufacturing industries: multi-level BoM and routings, JIT, different
 costs methods available, phantom BoMs, configurable products, workcenter
 operations, integrates sales forecasts, etc.  It supports several methods to
@@ -22,14 +22,14 @@ Key Points:
 * Double-entry stock operations for a powerfull traceability,
 * Support all best-practices and standards,
 * Control costs and margins on orders, projects, products, partners,
-* Easy to run and setup.
+* Easy to setup and run.
 
 Integration Benefits:
 ---------------------
 
 * Schedule on products, services, sub-contractings
 * Integrated with accounting for automatic transactions
-* Integrated to HR management for availabilities of ressources
+* Integrated to HR management to get the availability of ressources
 
 Links:
 ------

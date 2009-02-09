@@ -2,15 +2,15 @@ Analytic Accounting
 ===================
 
 The analytic accounting is the core of all management modules of Open ERP.  It
-integrates perfectly with all operations that have a (direct or indirect) cost
-or a revenue. As an example, for services companies, the analytic accounting is
+is perfectly integrated with all operations that have a (direct or indirect) cost
+or revenue. As an example, for services companies, the analytic accounting is
 used as the financial part of project management.
 
 As all tools are integrated, it gives you a full control and automatisation of
 your company:
 
-* Planning are integrated with budgets,
-* Project management is integrated to contract or affairs managmeent, etc.
+* Plannings are integrated with budgets,
+* Project management is integrated with contracts and affairs managmeent, etc.
 
 .. raw:: html
  

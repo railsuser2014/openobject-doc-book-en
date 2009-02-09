@@ -1,7 +1,7 @@
 Gantt Charts
 ============
 
-Every object of the system can be turned as a dynamic gantt chart for an
+Every object of the system can be view as a dynamic gantt chart for an
 easy management of the resources and their planification. You can organise
 your resources using drag and drop in the timeline or between different
 consolidations.
@@ -22,7 +22,7 @@ Integration Benefits:
 
 * Supply chains organisation and planification
 * Streamline manufacturing operations and work at the workcenter consolidation level
-* Plannify easily ressources on your projects and detect bottle necks
+* Plannify easily ressources on your projects and detect bottlenecks
 
 Links:
 ------

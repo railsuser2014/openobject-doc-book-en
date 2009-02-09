@@ -2,12 +2,12 @@ Cube Browser
 ============
 
 The Business Intelligence cube browser allows end-users to easily navigate
-through the information and statistics of the company and design their customized
+through the informations and statistics of the company and design their customized
 reports in a few drag & drop. You can consolidate, drill up, drill down, slice,
-filter data to benefit from a very userfriendly report interface.
+filter data to benefit from a very user-friendly report interface.
 
 The power of Business Intelligence becomes available to all users of the
-system to extract the exact information needed from any screen. It is also
+system to extract the exact informations needed from any screen. It is also
 able to analyse others databases, to allow you to consolidate data in one
 single user interface.
 
@@ -18,7 +18,7 @@ single user interface.
 Key Points:
 -----------
 
-* User-friendly: drag & drop, easy to use, pre-configured
+* User-friendly: drag & drop, easy to use, pre-configured.
 * Complete: slice, filter, drill up, drill down, relate, etc.
 * Analysis in real time.
 

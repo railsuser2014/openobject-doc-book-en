@@ -2,8 +2,8 @@ Timesheets
 ==========
 
 The timesheet system allows you to record time spent by employees on projects
-or activities. His integration with the analtic accounting allows you to manages
-bugdets, planning, costs and reinvoicing of human ressources.
+or activities. Its integration with the analtic accounting allows you to manage
+bugdets, plannings, costs and reinvoicing of human ressources.
 
 Different working methods are provided according to the need:
 

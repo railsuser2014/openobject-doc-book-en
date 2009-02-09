@@ -2,7 +2,7 @@
 Budgets
 =======
 
-The Open ERP budgets modules allows you to manage financial and analytic budgets.
+The Open ERP budgets module allows you to manage financial and analytic budgets.
 You can manage the same budgets from three different points of views, according
 to the user role:
 
@@ -19,7 +19,7 @@ Key-Points:
 
 * Workflows on budgets (ex: a budget must be validated before launching a project),
 * Three different points of view on the same budgets
-* Analytic and financial budget integration
+* Analytic and financial budgets integration
 * Mulitple axes
 
 Integration benefits:

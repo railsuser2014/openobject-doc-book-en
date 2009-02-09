@@ -8,7 +8,7 @@ but also integrates best-practices and how to apply them in your enterprise
 with the help of Open ERP.
 
 All these documentation are provided online and linked to any screen of the
-software so that it will help all your users to work efficiently with the
+software so that it can efficiently help all your users to work efficiently with the
 software.
 
 .. raw:: html

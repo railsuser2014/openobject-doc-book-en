@@ -1,7 +1,7 @@
 Dashboards
 ==========
 
-Dashboards give you an overview of all the information that's important to you
+Dashboards give you an overview of all the informations that is important to you
 on a single page. The menu gives you access to predefined boards for
 Accounting, Production and Project Management.
 

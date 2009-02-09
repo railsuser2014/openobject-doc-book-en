@@ -13,6 +13,7 @@ Managing Customer Relationships
 .. toctree::
 
     2_4_CRM/index
+    2_4a_CRM/index
     2_5_Comms_Tools/index
 
 

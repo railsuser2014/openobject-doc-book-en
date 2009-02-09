@@ -1,8 +1,9 @@
 Business Process Management
 ===========================
 
-Open ERP supports technical workflow and also end-users processes.
-Introduction two or three lines.
+Open ERP supports technical workflow and also end-users processes. 
+It provides an easy and visual way to manage the different processes of your
+business and to improve your quality manual.
 
 .. raw:: html
  

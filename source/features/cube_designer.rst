@@ -14,7 +14,7 @@ Key Points:
 
 * Detect every structure automatically by introspection,
 * Support an application dictionary to auto-configure setups,
-* You can get a full Business Intelligence suite setup in 5 minutes,
+* You can get a full Business Intelligence suite up and running in 5 minutes,
 * Lots of pre-configured dimensions and measures supported,
 * Get reports on all applications from a central control center.
 

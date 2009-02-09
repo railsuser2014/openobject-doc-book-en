@@ -23,4 +23,4 @@ Integration Benefits:
 Links:
 ------
 
-* Module:
+* Module: asterisk

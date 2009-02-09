@@ -13,7 +13,7 @@ Key Points:
 -----------
 
 * Modify views but also the object structure
-* Works with inheritancies of views to not change official version
+* Works with inheritance of views to not change official version
 * Ability to save all modification in a reuseable module
 
 Integration Benefits:
@@ -21,7 +21,3 @@ Integration Benefits:
 
 * This customization tool works on all modules
 
-Links:
-------
-
-* Module:

@@ -1,7 +1,10 @@
 Web Application Interface
 =========================
 
-Introduction two or three lines.
+Open ERP provides a full Ajax, web 2.0 web client allowing amongst others,
+drag&drop, Gantt graph, editable processes, etc.
+The web interface allows remote access and an easy deployment of the client
+
 
 .. raw:: html
  

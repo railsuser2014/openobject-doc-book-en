@@ -1,7 +1,7 @@
 Webmail
 =======
 
-Open Object integrates a full featured webmail. It allows people to work, manages
+Open Object integrates a full featured webmail. It allows people to work, manage
 and read email through a single interface containing all services of the company.
 It's a fully integrated system, with a drag and drop ergonomy and full use of Ajax
 to faster the application.
