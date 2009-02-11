@@ -12,7 +12,6 @@ The Management of Services
 
     4_11_Services_contract
     4_11_Services_planning
-    4_11_Services_price
     4_11_Services_treatment
 
 .. raw:: html

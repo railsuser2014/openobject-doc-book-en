@@ -3,6 +3,28 @@
 Management of Sales
 ^^^^^^^^^^^^^^^^^^^^
 
+Summary
+
+* Quotation
+
+* Sales Order
+
+* Sales Workflow
+
+* Advanced Management
+
+Keywords
+
+order
+
+quotation
+
+control
+
+delivery
+
+invoicing
+
 *This chapter is for sales management in Open ERP, handling the complete order process from quotation to customer order, including control of deliveries and invoicing.*
 
 *It doesn't look at customer relations and pre-sales. These functions are handled by the CRM (Customer Relationship Management) modules.*
@@ -52,7 +74,7 @@ You can modify any of these fields on the order as you go.
 
 You can also indicate an analytic account for your order. This account will be used during invoicing to automatically generate accounting entries corresponding to the invoice. This is extremely useful for assigning revenues to the project or case specified by this order.
 
-  .. tip::   *Point*   Analytic Accounts
+    .. tip::   *Point*   Analytic Accounts
 
         If you're managing by task, the analytic account to be selected is the one that corresponds to the project for the order. The sale carried out by the order can be allotted to the project so that profitability calculations can be made.
 
@@ -227,9 +249,9 @@ Depending on the configuration of the order, several different possible conseque
 
 * Shipping Policy: invoicing based on order items, delivery and manual invoice, automatic invoicing after delivery.
 
-  .. tip::   *Note*   Simplified view
+     .. tip::   *Note*   Simplified view
 
-    If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
+         If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
 
 Packing mode
 --------------
@@ -308,9 +330,9 @@ To define a new delivery grid, use the menu *Stock Management > Configuration > 
 
 You must then set the rules for calculating the price of transport in the first tab *Transprt Grid*. A rule must first of all have a name. Then set the condition for which this rule is applicable, for example Weight < 0.5kg.
 
-  .. tip::   *Note*   Weights
+    .. tip::   *Note*   Weights
 
-    Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
+        Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
 
 Then give the sale price and the cost price. The price can be expressed in different ways:
 
@@ -435,42 +457,444 @@ You then get a margin analysis table. The following fields are given by product 
 
 *Detail of margins for a given product.*
 
-<TODO>
+The following fields are given by product for purchases:
+
+* Average unit price: the average unit purchase price,
+
+* # Invoices: the number of purchased products,
+
+* Total cost: the total amount of purchases for the product under consideration,
+
+* Standard price: the cost price of the product over the whole company,
+
+* Purchase gap: the total negotiated amount, the difference between the standard cost and the average unit price, weighted by the number of products bought,
+
+* Normal cost: the number of products sold multiplied by the supplier price.
+
+The following fields are given by product for margins:
+
+* Total real margins,
+
+* The theoretical margin,
+
+* The real margin in percent,
+
+* The theoretical margin in percent.
+
+Margins by Project
+-----------------
+
+To manage margins by project you must install the analytical accounts with management by task. Use of these accounts is described in the relevant chapter.
+
+You should install the module: account_analytic_analysis. This module will add a tab on the product form to handle the different margins in an analytic account representing a project or a case.
+
+    .. image:: images/account_analytic_analysis_form.png
+       :align: center
+
+*Detail of margins for a case.*
+
+In this screen you'll find the following information:
+
+* The total costs for the analytic account,
+
+* The total amount of invoiced sales,
+
+* The number of hours worked,
+
+* The number of hours remaining to be worked,
+
+* The remaining income,
+
+* The theoretical income (hours worked multipled by their sale price),
+
+* The number of hours invoiced,
+
+* The real income per hour,
+
+* The real margin,
+
+* The theoretical margin taking into account everything yet to be invoiced,
+
+* The real margin rate in percent,
+
+* The last invoicing date,
+
+* The last worked hours,
+
+* The number of hours remaining to be invoiced,
+
+* The amount remaining to be invoiced.
+
+For detailed information on the analytic account you can use any of the several reports available in the toolbar to the right.
+
+Price management policies
+==========================
+
+Some companies are notorious for their complicated pricelists. Many forms of price variation are used, such as end-of-year refunds, discounts, changes of terms and conditions with time, various prepayments, cascaded rebates, seasonal promotions, and progressive price reductions.
+
+    .. tip::   **Terminology**  *Rebate, Refund, Reduction*
+
+        In some accounting jurisdictions you have to differentiate between the three following terms:
+
+        * Rebate: reimbursement to the client, usually at the end of the year, that depends on the quantity of goods purchased over a period.
+
+        * Refund: reduction on the order line or invoice line if a certain quantity of goods is purchased at one time or is sold in a framework of a promotional activity.
+
+        * Reduction: A one-off reduction resulting from a quality defect or a variation in a product's conformance to a specification.
+
+Intelligent price management is difficult, because it requires you to integrate several conditions from clients and suppliers to create estimates quickly or to invoice automatically. But if you have an efficient price management mechanism you can often keep margins raised and respond quickly to changes in market conditions. A good price management system gives you scope for varying any and all of the relevant factors when you're negotiating a contract.
+
+To help you work most effectively, Open ERP's pricelist principles are extremely powerful yet are based on simple and generic rules. You can develop both sales pricelists and purchase pricelists for products capable of accommodating conditions such as the date period, the quantity requested and the type of product.
+
+    ..tip::   **Don't confuse**   *The Different Prices*
+
+        Don't confuse the sale price with the base price of the product. In Open ERP's basic configuration the sale price is the basic price set on the product form but a customer can be given a different sale price depending on the conditions.
+
+ It's the same for purchase price and standard cost. Purchase price is your suppliers' selling price, which changes in response to different criteria such as quantities, dates, and supplier. This is automatically set by the accounting system. You'll find that the two prices have been set to the same for all products by default with the demonstration data, which can be a source of confusion since you're free to set the standard cost to something different.
+
+Each pricelist is calculated from defined policies, so you'll have as many sales pricelists as active sales policies in the company. For example a company that sells products through three sales channels could create the following price lists:
+
+ #. Main distribution:
+
+"	- pricelist for Walbury,"
+
+"	- pricelist for TesMart,"
+
+ #. Postal Sales.
+
+ #. Walk-in customers.
+
+A single pricelist can exist in several versions, only one of which is permitted to be active at a given time. These versions let you set different prices at different points in time. So the pricelist for walk-in customers could have five different versions, for example: \ ``Autumn``\,  \ ``Summer``\, \ ``Summer Sales``\, \ ``Winter``\, \ ``Spring``\. Direct customers will see prices that change with the seasons.   
+
+Each pricelist is expressed in a single currency. If your company sells products in several currencies you'll have to create as many pricelists as you have currencies.
+
+The prices on a pricelist can depend on another list, which means that you don't have to repeat the definition of all conditions for each product. So a pricelist in USD can be based on a pricelist in EUR. If the currency conversion rates between EUR and USD change, or the EUR prices change, the USD rates can be automatically adjusted.
+
+.. index::
+   single: Pricelists; Create
+.. 
+
+Creating pricelists
+---------------------
+
+To define a pricelist use the menu  *Products > Pricelists > Pricelists* .
+
+For each list you should define:
+
+* a  *Name*  for the list,
+
+* a  *Type*  of list: \ ``Sale``\   for customers or \ ``Purchase``\   for suppliers,
+
+* the  *Currency*  in which the prices are expressed.
+
+.. tip::   **Terminology**  *Consumer Price* 
+
+"	If you install the module **edi** a third type of list appears – the *Consumer Price* - which defines the price displayed for the end user. This doesn't have to match your selling price to an intermediary or distributor."
+
+.. index::
+   single: Pricelists; versions
+.. 
+
+Pricelist versions
+^^^^^^^^^^^^^^^^^^^
+
+Once the list is defined you must provide it with at least one version. To do that use the menu  *Products > Pricelists > Pricelist Versions* . The version contains all of the rules that enable you to calculate a price for a product and a given quantity.
+
+So set the  *Name*  of this associated version. If the list only has a single version you can use the same name for the pricelist and the version. In the  *Pricelist*  field select the pricelist you created.
+
+Then set the *Start date* and *End date* of this version. The fields are both optional: if you don't set any dates the version will be permanently active. Use the  *Active*  field in the versions to activate or disable a pricelist version.
+
+    .. tip::   **Note**  *Automatically updating the sale pricelist* 
+
+"	  It's possible to make any sale pricelist depend on one of the other pricelists. So you can decide to make your sale pricelist depend on your supplier's purchase pricelist, to which you add a margin. The prices are automatically calculated as a function of the purchase price and need no further manual adjustment."
+
+.. index:: Price
+
+Rules for calculating price
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A pricelist version is made up of a set of rules that apply to the product base prices.
 
     .. image:: images/service_pricelist_line.png
        :align: center
 
-*Detail of a rule in a version of the pricelist.*
+*Detail of a rule in a pricelist version.*
 
-<TODO>
+You define the conditions for a rule in the first part of the definition screen labeled  *Rules Test Match* . The rule applies to the  *Product*  or  *Product Template*  and/or the named  *Product Category* . If a rule is applied to a category then it is automatically applied to all of its subcategories too (using the tree structure for product categories).
+
+If you set a minimum quantity in  *Min. Quantity*  the rule will only apply to a quantity the same as or larger than that indicated. This lets you set reduced rates in stages that depend on ordered quantities.
+
+Several rules can be applied to an order. Open ERP evaluates these rules in sequence to select which to apply to the specified price calculation. If several rules are valid only the first in sequence is used for the calculation. The  *Sequence*  field determines the order, starting with the lowest number.
+
+Once a rule has been selected, the system has to determine how to calculate the price from the rule. This operation is based on the criteria set out in the lower part of the form, labeled *Price Computation* .
+
+The first field you have to complete is labeled *Based on*. You must set the mode for partner price calculation. Choose between:
+
+* the \ ``List Price set``\   in the product file,
+
+* the \ ``Standard Cost set``\   in the product file,
+
+* an \ ``Other Pricelist``\   given in the field  *If Other Pricelist* ,
+
+* the price that varies as a function of a supplier defined in the \ ``Partner section of the product form``\  .
+
+Several other criteria can be considered and added to the list, as you'll see in the following section.
+
+Next, various operations can be applied to the base price to calculate the sales or purchase price for the partner at the specified quantities. To calculate it you apply the formula shown on the form: Price = Base Price x (1 – Field1) + Field2.
+
+The first field, *Field1*, defines a discount. Set it to 0.20 for a discount of 20% from the base price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift compared with the standard costs.
+
+*Field2* set a fixed supplement to the price expressed in the currency of the list price. This amount is just added (or subtracted, if negative) to the amount calculated with the *Field1* discount.
+
+Then you can specify a rounding method. The rounding calculation is carried out to the nearest number. For example if you set 0.05 in this example, a price of 45.66 will be rounded to 45.65, and 14,567 rounded to 100 will give a price of 14,600.
+
+    .. tip::   **Attention**  *Swiss special situation* 
+
+"	    In Switzerland, the smallest monetary unit is 5 cents. There aren't any 1 or 2 cent coins. So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist."
+
+The supplement from *Field2* is applied before the rounding calculation, which enables some interesting effects. For example if you want all your prices to end in 9.99, set your rounding to 10 and your supplement to -0.01 in *Field2* 
+
+Minimum and Maximum margins enable you to guarantee a given margin over the base price. A margin of 10 USD enables you to stop the discount from returning less than that margin. If you put 0 into this field, no effect is taken into account. 
+
+Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select its  *Properties*  tab. You can then change the  *Purchase Pricelist*  and the  *Sale Pricelist*  that's loaded by default for the partner.
+
+Case of using pricelists
+-------------------------
+
+Let's take the case of an IT systems trading company, for whom the following product categories have been configured:
+
+All products
+
+ #. Accessories
+
+                * Printers
+
+                * Scanners
+
+                * Keyboards and Mice
+
+ #. Computers
+
+                * Portables
+
+                 - Large-screen portables
+
+                * Computers
+
+                 - Office Computers
+
+                 - Professional Computers
+
+
+
+In addition, the products presented in the table below are defined in the currency of the installed chart of accounts.
+
+  **Examples of products with their different prices**
+
+TABLE
+
+.. csv-table::
+
+   "Product ","List Price","Standard Price","Default supplier price",
+   "Acclo Portable","1,200 ","887 ","893 ",
+   "Toshibishi Portable","1,340 ","920 ","920 ",
+   "Berrel Keyboard","100 ","50 ","50 ",
+   "Office Computer","1,400 ","1,000 ","1,000 ",
+
+
+.. index::
+   single: Pricelists; Default Pricelist
+.. 
+
+Default pricelists
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     .. image:: images/product_pricelist_default.png
        :align: center
 
 *Default pricelist after installing Open ERP.*
 
-<TODO>
+When you install the software two pricelists are created by default: one for sales and one for purchase. These each contain only one pricelists version and only one line in that version.
+
+The price for purchases that's defined in the Default Purchase Pricelist is set in the same way by the Standard Cost of the product in the product file.
+
+.. index::
+   single: Trading Company
+.. 
+
+Example of a trading company
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Take the case of a trading company, where the sale price for resellers can be defined like this:
+
+* For portable computers, the sale price is calculated from the list price of the supplier Acclo, with a supplement of 23% on the cost of purchase.
+
+* For all other products the sale price is given by the standard cost in the product file, on which 31% is added. The price must end in “.99”.
+
+* The sale price of Berrel keyboards is fixed at 60 for a minimum quantity of 5 keyboards purchased. Otherwise it uses the rule above.
+
+* Assume that the Acclo pricelist is defined in Open ERP. The pricelist for resellers and the pricelist version then contains three lines:
+
+"	#. \ ``Acclo``\  line:"
+
+                *  *Product Category* : \ ``Portables``\  ,
+
+               *  *Based on* : \ ``Other pricelist``\  ,
+
+               *  *Pricelist if other* : \ ``Acclo pricelist``\  ,
+
+                *  *Field1* : \ ``-0.23``\  ,
+
+                *  *Priority* : \ ``1``\  .
+
+"	#. \ ``Berrel Keyboard``\  line:"
+
+                *  *Product Template* : \ ``Berrel Keyboard``\  ,
+
+                *  *Min. Quantity* : \ ``5``\  ,
+
+                *  *Field1* : \ ``1.0``\  ,
+
+                *  *Field2* : \ ``60``\  ,
+
+                *  *Priority* : \ ``2``\  .
+
+ #. \ ``Other products``\  line:
+
+                *  *Based on:* \ ``Standard Price``\  ,
+
+                *  *Field1* : \ ``-0.31``\  ,
+
+                *  *Field2* : \ ``-0.01``\  ,
+
+                *  *Rounding* : \ ``1.0``\  .
+
+                *  *Priority* :  \ ``3``\ .
+
+It's important that the priority of the second rule is set below the priority of the third in this example. If it were the other way round the third rule would always be applied because a quantity of 5 is always greater than a quantity of 1 for all products.
+
+Also note that to fix a price of 60 for the 5 Berrel Keyboards, the formula \ ``Price = Base Price x (1 – 1.0) + 60``\   has been used.
+
+Establishing customer contract conditions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The trading company can now set specific conditions to a customer, such as the company TinAtwo, who might have signed a valid contract with the following conditions:
+
+* For Toshibishi portables, TinAtwo benefits from a discount of 5% of resale price.
+
+* For all other products, the resale conditions are unchanged.
+
+The list price for TinAtwo, called “TinAtwo contract”, contains two rules:
+
+"	#. \ ``Toshibishi portable``\  line:"
+
+                *  *Product* : \ ``Toshibishi Portable``\  ,
+
+                *  *Based on* : \ ``Other pricelist``\  ,
+
+                *  *Pricelist if other* : \ ``Reseller pricelist``\  ,
+
+                *  *Field1* : \ ``0.05``\  ,
+
+                *  *Priority* : \ ``1``\  .
+
+ #. \ ``Other Products``\  
+
+                *  *Product:*
+
+                *  *Based on* : \ ``Other pricelist``\  ,
+
+                *  *Pricelist if other* : \ ``Reseller pricelist``\  ,
+
+                *  *Priority* : \ ``2``\  .
+
+Once this list has been entered you should look for the partner form for TinAtwo again. Click the *Properties* tab to set the *Sale List Price* field to *TinAtwo Contract*. If the contract is only valid for one year, don't forget to set the *Start Date* and *End Date* fields in the *Price List Version*.
+
+Then when salespeople prepare an estimate for TinAtwo the prices proposed will automatically be calculated from the contract conditions.
+
+Different bases for price calculation
+-----------------------------------------
+
+Open ERP's flexibility enables you to make prices that depend not only on prices on the product form, but in addition to those two predefined ones – standard price and catalog price.
+
+To do this use the menu *Products > Definitions > Price Types*. Create a new entry for the new price type. Enter the field name, the field on the product form that this type of price corresponds to and the currency that will be expressed in this field. The operation works just as well on new fields added to the product form to meet specific developments.
+
+Once this operation has been carried out you can make pricelists depend on this new price type.
+
+Then, adding the weight and/or volume field, the price of a product by piece can vary by its weight and/or volume. This is different from defining a price by weight – in that case the default unit of measure is weight and not piece.
+
+Pricelists and managing currencies
+------------------------------------
+
+If your trading company wants to start a product catalog in a new currency you can handle this several ways:
+
+* Enter the prices in a new independent pricelist and maintain the lists in the two currencies separately,
+
+* Create a field in the product form for this new currency and make the new pricelist depend on this field: prices are then maintained separately but in the product file,
+
+* Create a new pricelist for the second currency and make it depend on another pricelist or on the product price: the conversion between the currencies will then be done automatically at the prevailing currency conversion rate.
+
+Rebates at the end of a campaign
+=====================================
+
+If you want to provide discounts on an order, use the pricelist system in Open ERP. But it's better to work with end of campaign rebates or year-end rebates. In this case the customer pays a certain price for the whole of the campaign or the year and a rebate is returned to him at the end of the campaign that depends on the sales he's made throughout the year.
+
+Example: Using returns for the end of a campaign
+---------------------------------------------
+
+Take the case of a contract negotiations with a wholesaler. To get the best selling price, the wholesaler will ask you for an advantageous deal and will sign up to a certain volume of orders over the year.
+
+You can then propose a price based on the volume that the wholesaler agrees to sell. But then you don't have any control over his orders. If at the end of the year the wholesaler hasn't taken the agreed volumes then you can't do anything. At most you can review his terms for the following year.
+
+Rebates at the end of a campaign can help you avoid this sort of problem. You can propose a contract where the price is dependent on the usual wholesaler's terms. You can propose a rebate grid which will be assigned at the end of the year as a function of the actual sales made.
+
+Install the *discount_campaign* module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu *Sales Management > Configuration > Rebates at the end of a campaign*.
+
+    .. tip:: *Terminology* Year-end rebate
+
+        Most companies use the term *year-end rebate*. Most of the time the rebates are applied at the end of the year. But if you're using rebates for the end of campaigns, this will only actually be the case if the campaign lasts exactly one year. 
 
     .. image:: images/discount_campaign_RFA.png
        :align: center
 
-*Configuring an end-of-year discount.*
+*Configuring a year-end rebate.*
 
-<TODO>
+A campaign must have a name, a start date, and an end date. After entering this information, you should describe the lines of the campaign. Each line can be applied to a product or a category of products. Then set the quantity of products sold from which the discount is applied, and the amount of the rebate as a percentage of the actual sales volume.
+
+When you've defined the campaign you can active it by clicking the *Open* button. The figure below shows a campaing with a rebate on computers which is between 10% and 20% depending on the sales volume.
 
     .. image:: images/discount_campaign.png
        :align: center
 
-*Configuring a campaign of discounting on computers.*
+*Configuring a rebate campaign for computers.*
 
-<TODO>
+Once the campaign has been defined you can assign a given campaign to various partners. To do that set a campaign in the second tab on the partner form *Sales and Purchases*.
 
-    .. image:: images/sale_delivery_form.png
+Finally at the end of the campaign you should close it and Open ERP will automatically generate invoices or credit notes for your partner associated with this campaign. Open ERP then opens credit notes in the draft state that you can modify before validating them. To calculate the amount on the credit note, Open ERP uses all of the invoices sent out during the period of the campaign as its basis.
+
+You can also reach all of the draft credit notes using the menu *Financial Management > Invoices > Customer Credit Notes*.
+
+Open orders
+-----------
+
+In certain trades, customers place orders for a certain volume of product and ask for regular deliveries off an order up to the total amount on it. This principle, called open orders, is managed by the *sale_delivery* module in Open ERP.
+
+Open ERP has a system that enables open orders to be handled easily. An open order is an order for a certain quantity of products but whose deliveries are planned on certain dates over a period of time.
+
+To do that you must install the *sale_delivery* module. The order is entered as a classic order but you also set the total quantity that will be delivered on each order line.
+
+Then you can use the new tab *Deliveries* on the order to plan the quantities sold and enter your delivery planning there.
+
+    .. image:: images/sale_delivery.png
        :align: center
 
 *Managing open orders, planning forecasts.*
 
-In the order lines, Open ERP indicates the quantity planned <TODO>
+In the order lines, Open ERP shows you the quantity planned in addition to the quantity sold so you can verify that the quantities sold equal the quantities to be delivered. When you confirm the order, Open ERP no longer generates a single delivery order but plans scheduled despatches.
+
+    .. tip::   **Note**  *Invoicing Mode* 
+
+        If you work with Open Orders, you should set the order into the mode *Invoicing on the basis of deliveries*. Then the storesperson will be able to replan and change the quantities of the forecast deliveries in the system.
 
 Order templates
 ===============
@@ -502,5 +926,3 @@ The two following figures show an invoice template in Open ERP and the resulting
        :align: center
 
 *The resulting printed invoice.*
-
-<incomplete chapter>
