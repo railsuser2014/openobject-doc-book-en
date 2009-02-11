@@ -1,33 +1,11 @@
 
-Advanced CRM
-#############
-
-Summary
-
-* Partners
-
-* Leads
-
-* Business Opportunities
-
-* The company calendar
-
-* Phone calls
-
-Keywords
-
-* CRM
-
-* profiling
-
-* segmentation
-
-* cases
+Leads, Business Opportunities and Campaigns
+###########################################
 
 *This chapter extends the discussion of customer relationships into sales activities such as the management of leads and opportunities. It introduces a more complex set of relationships between partners and contacts than offered by the base module. It shows how to use the company calendar, and discusses how a call center can use the system.*
 
-UML Diagramming Technique
-==========================
+Managing Contacts
+=================
 
 The two figures below show the UML classes with and without the *base_contact* module.
 
