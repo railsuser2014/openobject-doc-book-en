@@ -19,6 +19,7 @@ You also need to install the following python libraries:
   * **psycopg2**
   * **reportlab**
   * **pychart**
+  * **pydot**
   * **mxdatetime**
   * **xml**
   * **tz** (timezone library)
@@ -33,6 +34,7 @@ On Ubuntu, these libraries are available in the following packages:
   * python-psycopg2
   * python-reportlab
   * python-pychart
+  * python-pydot
   * python-egenix-mxdatetime
   * python-xml
   * python-tz
@@ -42,7 +44,7 @@ To install the required libraries, you can do the following in your favorite
 shell: ::
 
     sudo apt-get install python python-psycopg2 python-reportlab \
-         python-egenix-mxdatetime python-xml python-tz python-pychart
+         python-egenix-mxdatetime python-xml python-tz python-pychart python-pydot
 
 .. note::
 

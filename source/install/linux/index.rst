@@ -5,7 +5,8 @@ OpenERP Installation on Linux
 .. toctree::
     :glob:
 
-    client/index
     server/index
+    postgres/index
+    client/index
     web/index
 

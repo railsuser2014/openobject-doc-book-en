@@ -21,6 +21,7 @@ You also need to install the following python libraries:
   * **mxdatetime**
   * **xml**
   * **tz** (timezone library)
+  * **hippocanvas** (Python bindings to hippo-canvas. Hippocanvas is a canvas library based on GTK+2.0, Cairo and Pango)
 
 .. note::
 
@@ -40,11 +41,12 @@ On Ubuntu, these libraries are available in the following packages:
   * python-egenix-mxdatetime
   * python-xml
   * python-tz
+  * python-hippocanvas
 
 To install the required libraries, you can do the following in your favorite shell: ::
 
   sudo apt-get install python python-gtk2 python-glade2 \
-      python-matplotlib python-egenix-mxdatetime python-xml
+      python-matplotlib python-egenix-mxdatetime python-xml python-hippocanvas
 
 Downloading the Open ERP Client
 -------------------------------
