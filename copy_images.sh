@@ -4,22 +4,45 @@ SRC_IMAGE_DIR=source/features/images
 DEST_IMAGE_NORMAL_DIR=build/html/images
 DEST_IMAGE_SMALL_DIR=build/html/images_small
 
+VERBOSE=0
+
+echo 'copying images'
+
 # create directory if it does not exists:
 if [ ! -d $DEST_IMAGE_SMALL_DIR ]; then
-  echo creating directory: $DEST_IMAGE_SMALL_DIR
+  if [ $VERBOSE = 1 ]; then
+    echo creating directory: $DEST_IMAGE_SMALL_DIR
+  else
+    echo -n .''
+  fi
   mkdir -p $DEST_IMAGE_SMALL_DIR || exit
 fi
 
 if [ ! -d $DEST_IMAGE_NORMAL_DIR ]; then
-  echo creating directory: $DEST_IMAGE_NORMAL_DIR
+  if [ $VERBOSE = 1 ]; then
+    echo creating directory: $DEST_IMAGE_NORMAL_DIR
+  else
+    echo -n .''
+  fi
   mkdir -p $DEST_IMAGE_NORMAL_DIR || exit
 fi
 
 for f in ${SRC_IMAGE_DIR}/*.png; do
   baseimage=$(basename $f)
-  echo converting image $f in ${DEST_IMAGE_SMALL_DIR}/${baseimage}
+  if [ $VERBOSE = 1 ]; then
+    echo converting image $f in ${DEST_IMAGE_SMALL_DIR}/${baseimage}
+  else
+    echo -n .''
+  fi
   convert -geometry 350x350 $f ${DEST_IMAGE_SMALL_DIR}/${baseimage} || exit
-  echo copying image $f in ${DEST_IMAGE_NORMAL_DIR}
+  if [ $VERBOSE = 1 ]; then
+    echo copying image $f in ${DEST_IMAGE_NORMAL_DIR}
+  else
+    echo -n .''
+  fi
   cp $f $DEST_IMAGE_NORMAL_DIR || exit
 done;
+
+echo
+echo 'done'
 
