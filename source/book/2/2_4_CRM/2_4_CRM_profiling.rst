@@ -34,8 +34,8 @@ The products offered by Tiny at these exhibitions are:
 The Tiny company has therefore put a decision tree in place based on the answers to several questions posed to prospects. These are given in the following figure:
 
 
-	.. image::  images/crm_profile_tree.png
-   		:align: center
+.. image::  images/crm_profile_tree.png
+   	:align: center
 
 *Example of profiling customer prospects by the Tiny company*
 

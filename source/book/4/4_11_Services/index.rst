@@ -17,6 +17,7 @@ The Management of Services
 .. raw:: html
 
     </div>
+    
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

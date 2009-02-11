@@ -70,10 +70,10 @@ Start by manually entering a customer invoice. Use  *Financial Management > Invo
 
 A new invoice form opens for entering information.
 
-	.. image::  images/account_invoice_new.png
-		:align: center
+.. image::  images/account_invoice_new.png
+	:align: center
 	
-*Entering a new invoice*
+*Entering a new invoice.*
 
 
 The document is composed of three parts:
@@ -178,10 +178,10 @@ In the  *Taxes*  area at the bottom left of the invoice you'll find the details 
 	It shows you the total that will be computed in the different parts of the legal declaration. This enables you to manage the declaration in Open ERP automatically.
 
 
-	.. image::  images/account_invoice_tva.png
-		:align: center
+.. image::  images/account_invoice_tva.png
+	:align: center
 
-*Detail of tax charges on an invoice*
+*Detail of tax charges on an invoice.*
 
 Before approving the invoice you can modify the date and the accounting period, which are entered by default as today's date. These fields are found on the second tab  *Other Information* .
 
@@ -436,3 +436,28 @@ You probably shouldn't use this functionality if you have all of your accounting
 
 * management of adjustments if there are different amounts to those on the invoice.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

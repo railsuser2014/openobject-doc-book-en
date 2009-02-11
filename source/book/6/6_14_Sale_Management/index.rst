@@ -30,7 +30,7 @@ invoicing
 *It doesn't look at customer relations and pre-sales. These functions are handled by the CRM (Customer Relationship Management) modules.*
 
 Estimation of the order
------------------------
+------------------------
 
 In Open ERP a quotation and an order are handled by the same object, but in different states. You can consider an order to be a quotation that has evolved because it has been confirmed by the customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled. All of the orders and quotations in the system can be reached using the menu *Sales Management > Orders*.
 
@@ -39,8 +39,8 @@ Entering Quotation details
 
 To enter details of a new quotations you can use the menu *Sales Management > Orders > New Quotation*. Open ERP then opens a new window so that you can enter data into new blank quotation form.
 
-    .. image:: images/sale_quotation_new.png
-       :align: center
+.. image:: images/sale_quotation_new.png
+    :align: center
 
 *Data entry for a new quotation.*
 
@@ -80,8 +80,8 @@ You can also indicate an analytic account for your order. This account will be u
 
 Once the information has been entered, you can enter data for the order lines. To do that, create a new order line as shown in the figure below:
 
-    .. image:: images/sale_line_form.png
-       :align: center
+.. image:: images/sale_line_form.png
+    :align: center
 
 *Entering an new customer order line.*
 
@@ -97,8 +97,8 @@ First of all select the product that is to be sold to the customer. Open ERP giv
 
 * The Standard Cost: shows the cost price of the product. If the salesperson sells at less than this figure, then the company loses money.
 
-    .. image:: images/sale_product_list.png
-       :align: center
+.. image:: images/sale_product_list.png
+    :align: center
 
 *Selecting a product in a Sales Order.*
 
@@ -110,8 +110,8 @@ When the product that's to be sold to the customer has been selected, Open ERP a
 
 In the form, the selected product is presented in the language of the user so that he can understand what he's selling. The description of the product sold is presented in the customer's language. This language is used on the quotation or order when it's printed for the customer.
 
-    .. image:: images/sale_line_translation.png
-       :align: center
+.. image:: images/sale_line_translation.png
+    :align: center
 
 *Sale of a product in a partner language that differs from the user language.*
 
@@ -121,8 +121,8 @@ In the form, the selected product is presented in the language of the user so th
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do this, click on the report to the right *Quotation / Order*. Open ERP then opens the quotation in PDF to enable to you to see it before printing.
 
-    .. image:: images/sale_print.png
-       :align: center
+.. image:: images/sale_print.png
+    :align: center
 
 *Printing a customer quotation.*
 
@@ -130,8 +130,8 @@ You can then confirm the quotation to move it on to an order if the order is con
 
 To follow the process for your order, you can click on the process view from the order form. Open ERP then shows you an interactive process view of that order. For more information about its use, look at the chapter on Process.
 
-    .. image:: images/sale_process.png
-       :align: center
+.. image:: images/sale_process.png
+    :align: center
 
 *Process view from following a customer order.*
 
@@ -156,8 +156,8 @@ The available packages are defined in the product form, in the *Packaging* tab. 
 
 Once a package has been defined on the order, Open ERP will throw up an alert if the ordered quantities don't correspond to the proposed packages. The quantity must be a multiple of the field *Quantity of items* defined on the packaging form.
 
-    .. image:: images/sale_warning_packaging.png
-       :align: center
+.. image:: images/sale_warning_packaging.png
+    :align: center
 
 *Alert on the quantities sold compared with the packaging.*
 
@@ -202,13 +202,13 @@ Management of Alerts
 
 To manage alerts on products or partners, you can install the *warning* module. Once that is installed, it will enable you to configure a series of alerts on the partners or products.
 
-    .. image:: images/warning_partner.png
-       :align: center
+.. image:: images/warning_partner.png
+    :align: center
 
 *Management of alerts on partners.*
 
-    .. image:: images/warning_product.png
-       :align: center
+.. image:: images/warning_product.png
+    :align: center
 
 *Management of alerts on products.*
 
@@ -228,8 +228,8 @@ The alerts that can be configured on a product form are:
 
 For example, if you enter an alert for the invoicing of a customer, for an accountant entering an invoice for that customer, the alert message will be attached as shown in the figure below:
 
-    .. image:: images/warning_sample.png
-       :align: center
+.. image:: images/warning_sample.png
+    :align: center
 
 *Alert from invoicing a customer.*
 
@@ -373,8 +373,8 @@ Delivery based on the order
 
 To add the delivery charges on the quotation, use the action *Delivery Costs* available to the right of the form. A dialog box opens, asking you to select a delivery mode from one of the available ones.
 
-    .. image:: images/sale_delivery.png
-       :align: center
+.. image:: images/sale_delivery.png
+    :align: center
 
 *Adding a delivery charge to an order.*
 
@@ -409,8 +409,8 @@ Margins on sales orders
 
 If you want to check your margins on sales orders you can install the sale_margin module. This will add margins calculated on each order line and on the order total.
 
-    .. image:: images/sale_margin.png
-       :align: center
+.. image:: images/sale_margin.png
+    :align: center
 
 *An order with the module sale_margin.*
 
@@ -433,8 +433,8 @@ You can also filter the analysis on certain types of invoice:
 
 * Paid invoices only.
 
-    .. image:: images/product_margin_tree.png
-       :align: center
+.. image:: images/product_margin_tree.png
+    :align: center
 
 *Screen following product margins.*
 
@@ -452,8 +452,8 @@ You then get a margin analysis table. The following fields are given by product 
 
 * Sales Waiting: the number of products sold multiplied by the theoretical list price.
 
-    .. image:: images/product_margin_form.png
-       :align: center
+.. image:: images/product_margin_form.png
+    :align: center
 
 *Detail of margins for a given product.*
 
@@ -482,14 +482,14 @@ The following fields are given by product for margins:
 * The theoretical margin in percent.
 
 Margins by Project
------------------
+-------------------
 
 To manage margins by project you must install the analytical accounts with management by task. Use of these accounts is described in the relevant chapter.
 
 You should install the module: account_analytic_analysis. This module will add a tab on the product form to handle the different margins in an analytic account representing a project or a case.
 
-    .. image:: images/account_analytic_analysis_form.png
-       :align: center
+.. image:: images/account_analytic_analysis_form.png
+    :align: center
 
 *Detail of margins for a case.*
 
@@ -615,8 +615,8 @@ Rules for calculating price
 
 A pricelist version is made up of a set of rules that apply to the product base prices.
 
-    .. image:: images/service_pricelist_line.png
-       :align: center
+.. image:: images/service_pricelist_line.png
+    :align: center
 
 *Detail of a rule in a pricelist version.*
 
@@ -709,8 +709,8 @@ TABLE
 Default pricelists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. image:: images/product_pricelist_default.png
-       :align: center
+.. image:: images/product_pricelist_default.png
+    :align: center
 
 *Default pricelist after installing Open ERP.*
 
@@ -840,7 +840,7 @@ Rebates at the end of a campaign
 If you want to provide discounts on an order, use the pricelist system in Open ERP. But it's better to work with end of campaign rebates or year-end rebates. In this case the customer pays a certain price for the whole of the campaign or the year and a rebate is returned to him at the end of the campaign that depends on the sales he's made throughout the year.
 
 Example: Using returns for the end of a campaign
----------------------------------------------
+--------------------------------------------------
 
 Take the case of a contract negotiations with a wholesaler. To get the best selling price, the wholesaler will ask you for an advantageous deal and will sign up to a certain volume of orders over the year.
 
@@ -854,8 +854,8 @@ Install the *discount_campaign* module to generate the rebates at the end of the
 
         Most companies use the term *year-end rebate*. Most of the time the rebates are applied at the end of the year. But if you're using rebates for the end of campaigns, this will only actually be the case if the campaign lasts exactly one year. 
 
-    .. image:: images/discount_campaign_RFA.png
-       :align: center
+.. image:: images/discount_campaign_RFA.png
+    :align: center
 
 *Configuring a year-end rebate.*
 
@@ -863,10 +863,10 @@ A campaign must have a name, a start date, and an end date. After entering this 
 
 When you've defined the campaign you can active it by clicking the *Open* button. The figure below shows a campaing with a rebate on computers which is between 10% and 20% depending on the sales volume.
 
-    .. image:: images/discount_campaign.png
-       :align: center
+.. image:: images/discount_campaign.png
+    :align: center
 
-*Configuring a rebate campaign for computers.*
+*Configuring a discount campaign for computers.*
 
 Once the campaign has been defined you can assign a given campaign to various partners. To do that set a campaign in the second tab on the partner form *Sales and Purchases*.
 
@@ -875,7 +875,7 @@ Finally at the end of the campaign you should close it and Open ERP will automat
 You can also reach all of the draft credit notes using the menu *Financial Management > Invoices > Customer Credit Notes*.
 
 Open orders
------------
+------------
 
 In certain trades, customers place orders for a certain volume of product and ask for regular deliveries off an order up to the total amount on it. This principle, called open orders, is managed by the *sale_delivery* module in Open ERP.
 
@@ -885,8 +885,8 @@ To do that you must install the *sale_delivery* module. The order is entered as 
 
 Then you can use the new tab *Deliveries* on the order to plan the quantities sold and enter your delivery planning there.
 
-    .. image:: images/sale_delivery.png
-       :align: center
+.. image:: images/sale_delivery.png
+    :align: center
 
 *Managing open orders, planning forecasts.*
 
@@ -897,11 +897,11 @@ In the order lines, Open ERP shows you the quantity planned in addition to the q
         If you work with Open Orders, you should set the order into the mode *Invoicing on the basis of deliveries*. Then the storesperson will be able to replan and change the quantities of the forecast deliveries in the system.
 
 Order templates
-===============
+================
 
 At the time of writing, Tiny's development team was preparing a new module called *sale_layout*. This enables you to have a more elaborate template than the standard order forms.
 
-For example you could put the follwing in the order lines:
+For example you could put the following in the order lines:
 
 * a horizontal separator line,
 
@@ -917,12 +917,38 @@ This enables you to lay out a more elaborate professional-looking quotation page
 
 The two following figures show an invoice template in Open ERP and the resulting printed invoice.
 
-    .. image:: images/invoice_layout_form.png
-       :align: center
+.. image:: images/invoice_layout_form.png
+    :align: center
 
 *Template for an invoice in Open ERP using the account_invoice_layout module.*
 
-    .. image:: images/invoice_layout_print.png
-       :align: center
+.. image:: images/invoice_layout_print.png
+    :align: center
 
 *The resulting printed invoice.*
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

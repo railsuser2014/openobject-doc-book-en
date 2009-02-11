@@ -73,11 +73,10 @@ Each task contains one of the following statuses, depending on the state:
 
 A task can be assigned to a user, who then becomes responsible for closing it. But you could also leave it unassigned so that nobody specific will be responsible: various team members instead are made jointly responsible for taking on tasks that they have the skills for.
 
+.. image::  images/service_task.png
+	 :align: center
 
-	.. image::  images/service_task.png
-	   :align: center
-
-*Tasks in project management*
+*Tasks in project management.*
 
 Each user then manages his or her own task using the different available menus. To open the list of unclosed tasks that you have been assigned specifically use the menu  *Project Management > My Tasks > My Open Tasks* . Or to open the unassigned tasks, go to  *Project Management > All Tasks > Unassigned Tasks*  and then select \ ``Draft``\   and \ ``Open``\   tasks from that list.
 
@@ -159,9 +158,9 @@ You can use one of these three ordering methods, or combine several of them, dep
 
 
 .. image::  images/service_project_gantt.png
-   :align: center
+    :align: center
 
-*Gantt plan, calculated for earliest delivery*
+*Gantt plan, calculated for earliest delivery.*
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a grid is specified you can call up a project Gantt chart using the Print button. The system then calculates a project plan for earliest delivery using task ordering and the attendance grid.
 
@@ -171,11 +170,10 @@ You can set an attendance grid (or the timesheets) in the project file. If you d
 
 	This view isn't available in Open ERP's GTK client.
 
+    .. image::  images/service_task_calendar.png
+	    :align: center
 
-	.. image::  images/service_task_calendar.png
-	   :align: center
-
-*Calendar view of the system tasks*
+    *Calendar view of the system tasks.*
 
 .. index:: Delegation
 
@@ -184,11 +182,10 @@ Efficient delegation
 
 To delegate a task to another user you can just change the person responsible for that task. However the system doesn't help you track tasks that you've delegated, such as monitoring of work done, if you do it this way.
 
+.. image::  images/service_task_delegate.png
+	:align: center
 
-	.. image::  images/service_task_delegate.png
-	   :align: center
-
-*Form for delegating a task to another user*
+*Form for delegating a task to another user.*
 
 Instead, you can use the button  *Delegate*  on a task from version 4.3.x of Open ERP.
 

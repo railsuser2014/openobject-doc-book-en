@@ -123,15 +123,15 @@ Workcenters represent units of product, capable of doing material transformation
 
 Use the menu *Manufacturing > Configuration > Workcenters* to define a new workcenter. You get a form as shown in the figure below.
 
-    .. image:: images/mrp_workcenter.png
-       :align: center
+.. image:: images/mrp_workcenter.png
+    :align: center
 
 *Definition of a workcenter.*
 
 A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
 
-    .. image:: images/mrp_workcenter_working_hour.png
-       :align: center
+.. image:: images/mrp_workcenter_working_hour.png
+    :align: center
 
 *Working hours for a workcenter.*
 
@@ -167,8 +167,8 @@ Then on each level of a Bill of Materials you can indicate the range. The levels
 
 The second tab of the production order lets you define the links to analytical account to report the costs of the workcenter operations. If you leave the different fields empty Open ERP won't have any effect on the analytic accounts.
 
-    .. image:: images/mrp_workcenter_tab.png
-       :align: center
+.. image:: images/mrp_workcenter_tab.png
+    :align: center
 
 *Data about analytic accounts for a workcenter.*
 
@@ -182,8 +182,8 @@ Routings define the assembly operations to be done in workcenters for manufactur
 
 A routing can be defined directly in a Bill of Materials or through the menu Manufacturing > Configuration > Routings. A routing has a name, a code and a description. Later in this chapter you'll see that a routing can also be associated with a stock location. That enable you to indicate where assembly takes place.
 
-    .. image:: images/mrp_routing.png
-       :align: center
+.. image:: images/mrp_routing.png
+    :align: center
 
 *Definition of a routing with three operations.*
 
@@ -211,8 +211,8 @@ But the routings also enable you to manage your production capacity. You will be
 
 To see a demand chart, list the workcenters using the menu *Manufacturing > Configuration > Workcenters*. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
-    .. image:: images/mrp_workcenter_load.png
-       :align: center
+.. image:: images/mrp_workcenter_load.png
+    :align: center
 
 *Charge by workcenter.*
 
@@ -234,8 +234,8 @@ Management of operations
 
 To work using work orders you must install the optional module mrp_operations. Once the module is installed you'll find a new menu called Manufacturing > Operations > Operations to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
 
-    .. image:: images/mrp_operations_tree.png
-       :align: center
+.. image:: images/mrp_operations_tree.png
+    :align: center
 
 *List of operations to be carried out.*
 
@@ -243,8 +243,8 @@ Operations must then be carried out one by one. On each operation the operator c
 
 The following process is attached to each operation.
 
-    .. image:: images/mrp_operations_workflow.png
-       :align: center
+.. image:: images/mrp_operations_workflow.png
+    :align: center
 
 *Process for handling an operation.*
 
@@ -279,8 +279,8 @@ Using the system these operations don't need data to be entered on the keyboard.
 
 #. The event code.
 
-    .. image:: images/mrp_operation.png
-       :align: center
+.. image:: images/mrp_operation.png
+    :align: center
 
 *Capturing events for work orders.*
 
@@ -353,8 +353,8 @@ Some problems are just those of timing and can be automatically corrected by the
 
 If a product must be 'in stock' but is not available in your stores, Open ERP will make the exception in 'temporary' or 'to be corrected'. The exception is temporary if the system can procure it automatically, for example if a procurement rule is defined for minimum stock.
 
-    .. image:: images/mrp_exception.png
-       :align: center
+.. image:: images/mrp_exception.png
+    :align: center
 
 *Example of a procurement in exception.*
 
@@ -365,15 +365,15 @@ Manual procurement
 
 To procure internally, you can create a procurement order manually. Use the menu *Manufacturing > Procurement Orders > New Procurement* to do this.
 
-    .. image:: images/mrp_procurement.png
-       :align: center
+.. image:: images/mrp_procurement.png
+    :align: center
 
 *Encoding for a new procurement order.*
 
 The procurement order will then be responsible for calculating a  proposal for automatic procurement for the product concerned. This procurement wll start a task, a purchase order form the supplier or a production depending on the product configuration.
 
-    .. image:: images/mrp_procurement_flow.png
-       :align: center
+.. image:: images/mrp_procurement_flow.png
+    :align: center
 
 *Workflow for handling a procurement, a function of the product configuration.*
 
@@ -400,15 +400,15 @@ For the management of waste you must install the module *mrp_subproduct*. The no
 
 If the module mrp_subproduct has been installed you get a new field in the Bill of Material that lets you set secondary products resulting from the manufacture of the finished product.
 
-    .. image:: images/mrp_bom_subproduct.png
-       :align: center
+.. image:: images/mrp_bom_subproduct.png
+    :align: center
 
 *Definition of waste products in a Bill of Materials.*
 
 When Open ERP generates a production order based on a Bill of Materials that uses secondary product you pick up the list of all products in the the third tab of the production order 'Finished Products'.
 
-    .. image:: images/mrp_production.png
-       :align: center
+.. image:: images/mrp_production.png
+    :align: center
 
 *A production order producing several finished products.*
 
@@ -460,8 +460,8 @@ Entering data for a new repair
 
 Use the menu *Manufacturing > Repairs > New Repair* to enter a new repair into the system. You'll see a blank form for the repair data, as shown in the figure below.
 
-    .. image:: images/mrp_repair_new.png
-       :align: center
+.. image:: images/mrp_repair_new.png
+    :align: center
 
 *Entering data for a new repair.*
 
@@ -503,8 +503,8 @@ This information is automatically proposed by the system but you can modify it a
 
 You can also encode additional charges in the second tab of the repair: applicable list price, address and type of invoice, as well as additional line items that need to be added to the repair bill.
 
-    .. image:: images/mrp_repair_tab2.png
-       :align: center
+.. image:: images/mrp_repair_tab2.png
+    :align: center
 
 *Second tab.*
 
@@ -515,8 +515,8 @@ Repair workflow
 
 A defined process handles a repair order – both the repair itself and invoicing the client. The figure below shows this repair process.
 
-    .. image:: images/mrp_repair_workflow.png
-       :align: center
+.. image:: images/mrp_repair_workflow.png
+    :align: center
 
 *Process for handling a repair.*
 
@@ -553,8 +553,8 @@ The move operations are carried out using the locations shown on the first tab o
 
 For example, take the case of the cabinet that was produced at the start of this chapter. If you have to replace the shelf PANLAT, you must enter data for the repair as in the figure below.
 
-    .. image:: images/mrp_repair_panlat.png
-       :align: center
+.. image:: images/mrp_repair_panlat.png
+    :align: center
 
 *Repair of a shelf in a cabinet.*
 
@@ -572,3 +572,28 @@ When the repair is ready to be confirmed, Open ERP will generate the following s
 
 If you analyze the traceability of this lot number you'll see all the repair operations in the upstream and downstream traceability lists of the products concerned.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

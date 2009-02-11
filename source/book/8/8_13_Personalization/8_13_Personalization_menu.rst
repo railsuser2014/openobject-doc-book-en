@@ -32,7 +32,7 @@ Instead of editing this form, which is the original menu entry, duplicate it ins
 .. image::  images/new_menu.png
    :align: center
 
-*Menu enabling you to change your own password, accessible to all users*
+*Menu enabling you to change your own password, accessible to all users.*
 
 To move this duplicate entry, change the  *Parent Menu*  field by deleting what's there and replacing it with another menu that everyone can see, such as  *Tools*  or  *Human Resources* , and make sure that the entry moves to the end of the menu list by replacing the  *Sequence*  with \ ``99``\  . You can experiment with icons if you like. Save the form and then click  *Main Menu*  to see the results.
 
@@ -76,7 +76,7 @@ To make modifications for a particular user, edit the user configuration again i
 .. image::  images/new_home.png
    :align: center
 
-*Selecting a new welcome page*
+*Selecting a new welcome page.*
 
 
 The  *Home Action*  is the menu item that is automatically opened when you first sign on, and is also reached when you click the  *Home*  link in the top right toolbar of the web client. There you can choose any page that you'd reach through any menu – one of the dashboards could be most useful. The  *Menu Action*  is the one you reach through the  *Main Menu*  button in the web client (the  *Menu*  button in the GTK client). You can choose the main menu and the dashboards there.
@@ -102,7 +102,7 @@ You can quite easily configure the system to put default values in various field
 .. image::  images/set_default.png
    :align: center
 
-*Inserting a new default value*
+*Inserting a new default value.*
 
 To check this new configuration, open a new partner form: the field  *Country*  should now contain the entry \ ``New Zealand``\  .
 
@@ -165,7 +165,7 @@ To translate or modify all of the system's phrases you first have to export a tr
 .. image::  images/csv_transl.png
    :align: center
 
-*CSV translation file with the translation superimposed*
+*CSV translation file with the translation superimposed.*
 
 The file contains five columns:  *type* ,  *name* ,  *res_id* ,  *src* , and  *value* . You have to ensure that the first line, which specifies these column names, remains untouched. The  *src*  field contains the base text in English, and the  *value*  field contains a translation into another conventional language or into a specialist technical phrase. If there's nothing at all in the  *value*  field then the English translation will automatically be used on the the form you see.
 

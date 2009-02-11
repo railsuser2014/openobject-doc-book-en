@@ -129,11 +129,10 @@ A project or an objective over several days can be summarized in a single task. 
 
 You have to empty your Inbox periodically. To do that, use the menu  *Project Management > Time Management > My Inbox* . Assign a timebox and a context to each task. This operation shouldn't take more than a few minutes because you aren't dealing with the tasks themselves, just classifying them.
 
+.. image::  images/service_timebox_day.png
+	:align: center
 
-	.. image::  images/service_timebox_day.png
-	   :align: center
-
-*Timebox for tasks to be done today*
+*Timebox for tasks to be done today.*
 
  *Project Management > Time Management > My timebox for the day* 
 

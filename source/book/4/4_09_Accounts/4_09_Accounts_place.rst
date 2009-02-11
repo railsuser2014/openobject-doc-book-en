@@ -17,10 +17,10 @@ Setting up the chart of accounts
 Start by choosing the most suitable analytic representation for your company before entering it into Open ERP. To create the different analytic accounts, use the menu  *Financial Management > Configuration > Analytic Accounts > Analytic Accounts* .
 
 
-	.. image::  images/account_analytic_form.png
-	   :align: center
+.. image::  images/account_analytic_form.png
+	:align: center
 
-*Setting up an analytic account*
+*Setting up an analytic account.*
 
 To create an analytic account you have to complete the main fields:
 
@@ -58,10 +58,10 @@ Finally, if the analytic account is a client project you can complete the fields
 	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase orders.
 
 
-	.. image::  images/account_analytic_chart.png
-	   :align: center
+.. image::  images/account_analytic_chart.png
+	:align: center
 
-*Example of an analytic chart for projects*
+*Example of an analytic chart for projects.*
 
 Once you've defined the different analytic accounts you can view your chart through the menu  *Financial Management > Charts > Analytic Charts of Accounts* .
 
@@ -95,11 +95,10 @@ Once the analytic chart has been created for your company you have to create the
 
 	At a minimum you have to create one analytic journal for Sales and one for Purchases. If you don't create these two, Open ERP won't validate invoices linked to an analytic account because it wouldn't be able to create an analytic accounting entry automatically.
 
+.. image::  images/account_analytic_journal.png
+	:align: center
 
-	.. image::  images/account_analytic_journal.png
-	   :align: center
-
-*Creating an analytic journal*
+*Creating an analytic journal.*
 
 To define your analytic journals, use the menu  *Financial Management > Configuration > Journal > Analytic Journal Definition* .
 

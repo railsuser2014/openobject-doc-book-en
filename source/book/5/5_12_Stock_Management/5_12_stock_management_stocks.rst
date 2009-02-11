@@ -24,8 +24,8 @@ The two fields are:
 
     To get more detail about future stock, you can use the report to the right of the product form 'Forecast of Future Stock'. Open ERP shows a graph of the change of stock in the days to come, varying as a function of purchase orders or confirmed production.
 
-    .. image:: images/stock_forecast.png
-       :align: center
+.. image:: images/stock_forecast.png
+    :align: center
 
 *Printout of provisional stock.*
 
@@ -64,8 +64,8 @@ Initial Inventory
 
 Once a product has been defined, use an initial inventory operation to put actual current quantities into the system by location for the products in stock. Use the menu *Stock Management > Periodical Inventory > New Periodical Inventory* for this.
 
-    .. image:: images/stock_inventory_new.png
-       :align: center
+.. image:: images/stock_inventory_new.png
+    :align: center
 
 *Defining a new inventory operation.*
 
@@ -98,8 +98,8 @@ Reception of a supplier order
 
 Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
 
-    .. image:: images/stock_picking_in_tree.png
-       :align: center
+.. image:: images/stock_picking_in_tree.png
+    :align: center
 
 *List of items waiting.*
 
@@ -111,8 +111,8 @@ The source location is already completed by default because of your supplier sel
 
 Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button *Process Later* .
 
-    .. image:: images/stock_picking_in_form.png
-       :align: center
+.. image:: images/stock_picking_in_form.png
+    :align: center
 
 *Form for coding in reception of goods from a supplier order.*
 
@@ -141,7 +141,7 @@ Now create a new customer order from the menu *Sales Management > Sales Orders >
 
 You've seen already that Open ERP shows you the available product stock when you've selected list mode. The real stock is equal to the virtual stock because you've nothing to deliver to customers and you're not waiting for any of these products to be received into stock. The salesperson then has all the information needed to take orders efficiently.
 
-    .. image:: images/stock_sale_form.png
+.. image:: images/stock_sale_form.png
        :align: center
 
 *Encoding an order for three computers.*
@@ -156,8 +156,8 @@ Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. I
 
 You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 
-    .. image:: images/stock_picking_out_form.png
-       :align: center
+.. image:: images/stock_picking_out_form.png
+    :align: center
 
 *Items for a customer order.*
 
@@ -171,14 +171,14 @@ You can confirm a customer delivery using the 'Confirm' button. A window then op
 
 If you return to the list of current orders you will see that your order has now been marked as delivered (done). A progress indicator from 0% to 100% is shown by each order so that the salesperson can follow the progress of their orders at a glance.
 
-    .. image:: images/stock_sale_tree.png
-       :align: center
+.. image:: images/stock_sale_tree.png
+    :align: center
 
 *List of orders with their delivery state.*
 
-   .. tip::  **More information** *Negative Stock*
+.. tip::  **More information** *Negative Stock*
 
-     Stock Management is very flexible so that it can be effective. For example if you forget to enter products at goods in, this won't prevent you from sending them to customers. In Open ERP you can force all operations manually using the button “Force assignment”. In this case, your stocks risk falling negative. You should monitor all stocks for negative levels and carry out an inventory correction when that happens.
+    Stock Management is very flexible so that it can be effective. For example if you forget to enter products at goods in, this won't prevent you from sending them to customers. In Open ERP you can force all operations manually using the button “Force assignment”. In this case, your stocks risk falling negative. You should monitor all stocks for negative levels and carry out an inventory correction when that happens.
 
 Analysing stock
 ---------------
@@ -201,8 +201,8 @@ If you want more information you can use the actions to the right of the form. I
 
 To get the stock levels by location use the button *Stock by Location*.  Open ERP then gives you the stock of this product split out over all the possible locations. If you only want to see the physical locations in your company just filter this list using the Location Type *Internal Locations*. By default, physical locatiosn are already coloured red to distinguish them better. Consolidate locations (the sum of several locations, following the hierarchical structure) are coloured blue.
 
-    .. image:: images/stock_location_product_tree.png
-       :align: center
+.. image:: images/stock_location_product_tree.png
+    :align: center
 
 *Stock quantities by location for a given product.*
 
@@ -227,3 +227,28 @@ Also look at how the real and virtual stocks depend on the location selected. If
 * the virtual stock takes into account the quantities expected from these suppliers(+ real stock + quantities expected from these suppliers). It's the same scheme for customer locations and production locations.
 
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

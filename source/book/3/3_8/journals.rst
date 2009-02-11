@@ -16,10 +16,10 @@ To view, edit or create new journals use the menu  *Financial Management > Confi
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the  *Active*  checkbox for that.
 
 
-	.. image::  images/account_journal_form.png
-	   :align: center
+.. image::  images/account_journal_form.png
+	:align: center
 
-*Definition of an accounting journal*
+*Definition of an accounting journal.*
 
 You have to associate a view with each journal. The journal view indicates the fields that must be visible and required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example the field  *Account Number*  must appear when entering data in the bank journal but not in the other journals.
 
@@ -54,3 +54,28 @@ This functionality is useful for limiting possible data entry errors. Also, in a
 
 	If your accountant defines this control properly, non-accounting users are prevented from transferring payment from one bank to another, reducing your risks.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

@@ -102,10 +102,10 @@ The procedure is to create the name of the new menu in  *Menu base name* , selec
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a menu structure like the following figure (here for the Business Opportunities menu).
 
 
-	.. image::  images/business_ops.png
-   		:align: center
+.. image::  images/business_ops.png
+   	:align: center
 
-*Business Opportunities menu automatically generated*
+*Business Opportunities menu automatically generated.*
 
 
 .. tip::   **A step further**  *Case sections from version 4.3 onwards* 
@@ -140,10 +140,10 @@ Although you've created special menu trees for each of the types of case you def
 	You can also track items across the whole company.
 
 
-	.. image::  images/crm_case.png
-   		:align: center
+.. image::  images/crm_case.png
+   	:align: center
 
-*An entry following a business opportunity*
+*An entry following a business opportunity.*
 
 
 To enter a new business opportunity, you can use the menu that you've just created:  *Sales Management > Business Opportunities* . Or you could have used the generic menus  *CRM & SRM > Cases > Cases by section* , or  *CRM & SRM > Cases > All cases* .
@@ -212,7 +212,7 @@ You'll get menus enabling you to manage calendars for each employee, and you'll 
    :align: center
    :scale: 90
 
-*Monthly view of the meeting calendar for cases*
+*Monthly view of the meeting calendar for cases.*
 
 
 You can change the view and return to the list view, forms or graphs by using the buttons at the top right. Open ERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time. 
@@ -222,7 +222,7 @@ You can change the view and return to the list view, forms or graphs by using th
    :align: center
    :scale: 90
 	   
-*Weekly view of the meeting calendar for cases*
+*Weekly view of the meeting calendar for cases.*
 
 
 .. tip::   **Advantage**  *The generic calendar* 
@@ -248,7 +248,7 @@ Once you've installed it you can use menu  *CRM & SRM > Reporting*  on database 
 .. image::  images/crm_graph.png
    :align: center
 
-*Analyzing the performance of your support team*
+*Analyzing the performance of your support team.*
 
 
 If you want to analyze the performance of your service and support group, for example, use the graph from  *CRM & SRM > Reporting > All Months > Cases by User and Section* . Click the menu to obtain a list view, then click the  *Graph*  button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click  *Filter* , and see the graph change to reflect the new data.
@@ -307,7 +307,7 @@ To define new rules use the menu  *CRM & SRM > Configuration > Cases > Rules* .
 .. index:: 
    single: Rule; Case
 
-*Screenshot of a rule*
+*Screenshot of a rule.*
 
 
 The criteria for activating this rule are defined on the main part of the screen. These criteria are:
@@ -440,7 +440,7 @@ The email gateway enables you to use Open ERP's CRM without necessarily using t
 .. image::  images/crm_gateway.png
    :align: center
 
-*Schematic showing the use of the email gateway*
+*Schematic showing the use of the email gateway.*
 
 
 Installation and Configuration

@@ -32,8 +32,8 @@ Price request from the supplier
 
 To enter data for a new supplier price request, use the menu *Purchase Management > New Purchase Order*. Open ERP opens a blank purchase form that you use for requesting prices from a supplier. This is shown in the figure below. If the price request came from an automatic procurement created by Open ERP you'll find in the *Origin* field a reference to the document that generated the request.
 
-    .. image:: images/purchase_form.png
-        :align: center
+.. image:: images/purchase_form.png
+    :align: center
 
 *Data entry for a supplier order.*
 
@@ -49,8 +49,8 @@ The internal reference, the date, and the warehouse that the products should be 
 
 Once the main body of the purchase order has been completed you can enter the product lines.
 
-    .. image:: images/purchase_line_form.png
-       :align: center
+.. image:: images/purchase_line_form.png
+    :align: center
 
 *Order line on a  supplier order.*
 
@@ -82,8 +82,8 @@ In the second tab of the product line you can enter a note that will be attached
 
 Once the document is encoded, you can print it and Open ERP gives you the price quotation to send to the supplier. You can set a note for the attention of the supplier in the form's third tab.
 
-    .. image:: images/purchase_quotation.png
-       :align: center
+.. image:: images/purchase_quotation.png
+    :align: center
 
 *Printing the supplier price quotation.*
 
@@ -95,8 +95,8 @@ When you want to approve the order, use the button *Confirm ??? Supplier*. The p
 
 You can confirm the order but not validate it straightaway. Do this when you want to validate the order on receipt of order acknowledgement from the supplier. This gives you an intermediate state for all orders waiting validation from the supplier using the menu *Purchase Management > Supplier Orders > Orders awaiting validation*.
 
-    .. image:: images/purchase_process.png
-       :align: center
+.. image:: images/purchase_process.png
+    :align: center
 
 *Supplier order process.*
 
@@ -119,8 +119,8 @@ Just as you saw in the chapter on Stock Management, if you receive only part of 
 
 After receiving the goods, Open ERP will show you which orders are open and the state of their receipt and invoicing if you return to the list of orders.
 
-    .. image:: images/purchase_list.png
-       :align: center
+.. image:: images/purchase_list.png
+    :align: center
 
 *List of open orders, and their receipt and invoice status.*
 
@@ -137,8 +137,8 @@ To control supplier invoicing, Open ERP provides three systems as standard, whic
 
 The mode of invoicing control is set in the second tab of the purchase order in the field *Invoicing*. 
 
-    .. image:: images/purchase_form_tab2.png
-       :align: center
+.. image:: images/purchase_form_tab2.png
+    :align: center
 
 *Supplier order, invoice control.*
 
@@ -183,8 +183,8 @@ Tenders
 
 To manage tenders, you should use the module *purchase_tender*. This lets you create several supplier price reqests for a single supply requirement. Once the moduel is installed, Open ERP adds a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
-    .. image:: images/purchase_tender.png
-       :align: center
+.. image:: images/purchase_tender.png
+    :align: center
 
 *Defining a tender.*
 
@@ -259,8 +259,8 @@ At each goods receipt the product price is recalculated using the following acco
 
 If the product are managed as a weighted average, at each reception of product, Open ERP will open a window that enables you to specify the price of the product received. The purchase price is by default proposed from the purchase order. But you can change the price to, for example, add the cost of delivery to the different received products.
 
-    .. image:: images/purchase_pmp.png
-       :align: center
+.. image:: images/purchase_pmp.png
+    :align: center
 
 *Goods receipt of products managed in weighted average.*
 
@@ -276,8 +276,8 @@ To get statistics about your purchases you can install the modules *report_purch
 
 The first, report_purchase, will add two new reports in your purchase menu, analysis of purchases by month and by product, and analysing product by month and by product category. To use these reports use the menu *Purchase Management > Reporting > This month > Purchases by product*.
 
-    .. image:: images/purchase_report.png
-       :align: center
+.. image:: images/purchase_report.png
+    :align: center
 
 *Analysis of purchases over the month by product.*
 
@@ -292,15 +292,15 @@ To manage supplier relations, you should install the *CRM_Configuration* module.
 
 Once you've install the CRM module check the option *Complaints*. Open ERP then manages the configuration of menus for the management of supplier complaints.
 
-    .. image:: images/crm_config.png
-       :align: center
+.. image:: images/crm_config.png
+    :align: center
 
 *Selection of the management of complaints in the CRM installation.*
 
 Once the module is installed you can use the menu *CRM & SRM > After Sales Service > Complaints > New Supplier Complaint*.
 
-    .. image:: images/crm_complaints.png
-       :align: center
+.. image:: images/crm_complaints.png
+    :align: center
 
 *Data entry screen for a supplier complaint.*
 
@@ -343,3 +343,28 @@ Re-invoicing based on costs you'd get the following workflow:
 
     If you want several analysis plans you have to install the module *purchase_analytic_plans*. These enable you to split a line on a supplier purchase order into several accounts and analytic plans. Look back at the chapters on accounting for more information on the use of analytic accounts.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

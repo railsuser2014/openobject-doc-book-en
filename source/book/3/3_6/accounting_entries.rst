@@ -28,10 +28,10 @@ Open ERP provides a visual tool for managing bank statements that simplifies da
 
 Start by entering a statement line. To do that use the menu  *Financial Management > Entries > Statements* . A data entry form for statements then opens.
 
-	.. image::  images/account_statement.png
-		:align: center
+.. image::  images/account_statement.png
+	:align: center
 	
-*Data entry form for a bank statement*
+*Data entry form for a bank statement.*
 
 
 The statement reference ( *Name* ) and the  *Date*  are automatically suggested by Open ERP from the preceding statement line. You can configure your own reference by managing sequences in the Administration menu.
@@ -51,10 +51,10 @@ Enter the transaction line. When you type the Partner name, Open ERP automatica
 When the payment entry has been made it's possible to reconcile this directly with the accounting entry for the invoices. Press the  *Ctrl*  key on the keyboard (necessary for the web client, though not the GTK client) and then press the  *F1*  key while your cursor is in the  *Reconcile*  field on the payment line.
 
 
-	.. image::  images/account_statement_reconcile.png
-		:align: center
+.. image::  images/account_statement_reconcile.png
+    :align: center
 	
-*Reconciliation from data entry of the bank statement*
+*Reconciliation from data entry of the bank statement.*
 
 The reconciliation form then appears. To the right you'll find the amount for payment. You must then select the invoices paid by this transaction (Entries). To enable you to reconcile this the amount of payment must correspond exactly with one or several due dates of invoice.
 
@@ -176,10 +176,10 @@ For automatic reconciliation, you'll be asking Open ERP to make its own search 
 Depending on the level of complexity that you choose when you start running the tool, the software could reconcile from two to nine entries at the same time. For example, if you select level 5, Open ERP will reconcile three invoices and two payments if the total amounts correspond.
 
 
-	.. image::  images/account_reconcile_auto.png
-		:align: center
+.. image::  images/account_reconcile_auto.png
+	:align: center
 
-*Form for automatic reconciliation*
+*Form for automatic reconciliation.*
 
 To start the reconciliation tool, click  *Financial management > Periodical Processing > Reconciliation > Automatic Reconciliation* .
 
@@ -297,10 +297,10 @@ To use the tool for managing payments you must first install the module \ ``acco
 The workflow for managing payment is as follows:
 
 
-	.. image::  images/account_payment_flow.png
-		:align: center
+.. image::  images/account_payment_flow.png
+	:align: center
 	
-*Workflow for handling payments to suppliers*
+*Workflow for handling payments to suppliers.*
 
 The system enables you to enter a series of payments to be carried out from your various bank accounts. Once the different payments have been registered you can validate the payment orders. During validation you can modify and approve the the payment orders, sending the order to the bank for electronic funds transfer or just printing chequesas you wish.
 
@@ -316,10 +316,10 @@ Once the payment order is confirmed there's still a validation step for an accou
 
 	You can integrate more complex workflow rules to manage payment orders by adapting the workflow. For example, in some companies payments must be approved by a manager under certain cash flow or value limit conditions.
 
-	.. image::  images/account_payment_workflow.png
-		:align: center
+.. image::  images/account_payment_workflow.png
+	:align: center
 	
-*Payments workflow*
+*Payments workflow.*
 
 When the accounting manager validates the document, Open ERP generates a banking file with all the payment orders. You can then just send the file over your electronic connection with your bank to execute all your payments.
 
@@ -330,11 +330,11 @@ Preparation and execution of orders.
 
 To enter a payment order, use the menu  *Financial Management > Payment > Payment Orders* .
 
-	.. image::  images/account_payment_order.png
-		:align: center
-		:scale: 95
+.. image::  images/account_payment_order.png
+	:align: center
+	:scale: 95
 	
-*Entering a payment order*
+*Entering a payment order.*
 
 Open ERP then suggests a reference number for your payment order. As usual, you can change the start point for this sequence from the  *Administration*  menu.
 

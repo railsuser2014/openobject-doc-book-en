@@ -33,9 +33,9 @@ Start by building the header of the CSV file. Open the import tool on the object
 
 
 .. image::  images/csv_column_select.png
-   :align: center
+    :align: center
 
-*Selecting fields to import using a CSV file*
+*Selecting fields to import using a CSV file.*
 
 Use the field names as the column names in the first line of your CSV file, applying one field per column. If your CSV file has these names in the first line then when you import your CSV file, Open ERP will automatically match the column name to the field name of the table. When you've created your CSV file you'll do that by clicking the  *Nothing*  button to clear the  *Fields to Import* , then select your CSV file by browsing for a  *File to import* , and then clicking the  *Auto Detect*  button.
 
@@ -53,21 +53,21 @@ View the screenshots below to note the differences.
 
 
 .. image::  images/csv_many2one.png
-   :align: center
+    :align: center
 
-*A many-to-one field: a salesperson linked to a partner*
+*A many-to-one field: a salesperson linked to a partner.*
 
 
 .. image::  images/csv_many2many.png
-   :align: center
+    :align: center
 
-*A many-to-many field: partner categories*
+*A many-to-many field: partner categories.*
 
 
 .. image::  images/csv_one2many.png
-   :align: center
+    :align: center
 
-*A one-to-many field: partner contacts*
+*A one-to-many field: partner contacts.*
 
 All of the other fields are coded in the CSV file as just one field in each column.
 

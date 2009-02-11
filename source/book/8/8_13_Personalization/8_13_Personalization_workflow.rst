@@ -12,7 +12,7 @@ The figure below shows the standard workflow for an order. You can show it from 
 .. image::  images/sales_workflow.png
    :align: center
 
-*Workflow for order SO005*
+*Workflow for order SO005.*
 
 Defining workflows
 -------------------
@@ -25,7 +25,7 @@ You can look at the specifications of the workflow for the sales order above usi
 .. image::  images/sales_workflow_spec.png
    :align: center
 
-*Definition of the workflow for a sales order*
+*Definition of the workflow for a sales order.*
 
 You can also configure the workflows by adding new activities and transitions between activities or by modifying the conditions that control the existing transitions. 
 
