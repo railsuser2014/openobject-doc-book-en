@@ -16,7 +16,7 @@ The Mozilla Thunderbird plugin enables you to carry out a series of Open ERP op
 Installing the Thunderbird extension
 -------------------------------------
 
-To be able to use the Thunderbird plugin you first have to install the Open ERP module \ ``email_interface``\  . It's not loaded in the core of Open ERP Server 4.2.2 (so you'll have to load it using one of the methods described at the end of Chapter 1) but may be in a future version. Once you've got it into your server's filesystem it's installed the same way as all of the other modules you've handled so far.
+To be able to use the Thunderbird plugin you first have to install the Open ERP module \ ``email_interface``\  . It may not be loaded in the core of the Open ERP Server so you might have to load it using one of the methods described at the end of Chapter 1. Once you've got it into your server's filesystem it's installed the same way as all of the other modules you've handled so far.
 
 You'll then have to install the Thunderbird extension. To do that, use the file \ ``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the \ ``email_interface``\   module. Then take the following steps:
 

@@ -49,7 +49,7 @@ This enables your sales people to follow prospects up efficiently and adapt thei
 Using profiles effectively
 ---------------------------
 
-To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's not part of the core Open ERP system in version 4.2.2 so you have to download it separately.
+To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from ``addons-extra``.
 
 Once the module is installed you can create a list of questions and the possible responses through the menu  *CRM & SRM > Configuration > Segmentation > Questions* .
 
@@ -80,7 +80,7 @@ When entering the details of a specific prospect, the prospect's answers to vari
 
 .. tip::   **A step further**  *commercial objectives* 
 
-	The module report_invoice_salesman enables you to set up regular business targets. These can be based on sales turnover or sales margins.
+	The module ``report_invoice_salesman`` enables you to set up regular business targets. These can be based on sales turnover or sales margins.
 
 	With this module you can compare the performance of each sales person with their targets for the period. Sales people can view their own performance against target in real time through a dashboard.
 

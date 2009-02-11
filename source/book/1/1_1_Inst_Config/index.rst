@@ -18,7 +18,7 @@ This chapter focuses on the installation of Open ERP so that you can begin to f
 .. tip::   **Reminder**  *Renaming from Tiny ERP to Open ERP* 
 
 
-	Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to all versions of Tiny ERP and Open ERP from 4.2.0 onwards, with references to specific later versions from time to time. 
+	Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from time to time. 
 
 
 .. index::

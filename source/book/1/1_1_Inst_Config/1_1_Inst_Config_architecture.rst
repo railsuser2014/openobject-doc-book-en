@@ -33,7 +33,7 @@ responsive, so more satisfying to use.
 
     The main functional difference between the two Open ERP clients is the
     presence of the calendar view in the web client, which doesn't exist in the
-    GTK client at present (version 4.2.3). Apart from that you will find that
+    GTK client at present (versions 4.x and 5.0). Apart from that you will find that
     there are small differences in their general usability.
 
     The Tiny company will continue to support two clients for the foreseeable

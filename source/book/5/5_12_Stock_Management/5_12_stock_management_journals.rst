@@ -13,7 +13,7 @@ A company that does a lot of transport can organize its journals by delivery veh
 The different journals
 -----------------------
 
-Install the module *sale_journal* to work with journals. This adds three new concepts to Open ERP:
+Install the module ``sale_journal`` to work with journals. This adds three new concepts to Open ERP:
 
 * Invoicing journals,
 
@@ -34,7 +34,7 @@ Finally the delivery journals are used to post each item into a delivery journal
 Using the journals
 -------------------
 
-You'll now see how to use the journals to organize your stock management in practice. After installing the module sale_journal look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
+You'll now see how to use the journals to organize your stock management in practice. After installing the module ``sale_journal`` look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
 
 .. image:: images/partner_property_view.png
     :align: center

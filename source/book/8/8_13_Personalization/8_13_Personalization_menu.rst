@@ -46,7 +46,7 @@ To move this duplicate entry, change the  *Parent Menu*  field by deleting what'
 
 .. tip::   **Note**  *Managing users through LDAP* 
 
-	With the user_ldap module, user accounts can be managed through an LDAP directory common to various different company resources. 
+	With the ``user_ldap`` module, user accounts can be managed through an LDAP directory common to various different company resources. 
 
 	Connection parameters for the LDAP directory are then registered with the company definition. You can provide a user profile template there from which new users are automatically created during their first connection to Open ERP.
 

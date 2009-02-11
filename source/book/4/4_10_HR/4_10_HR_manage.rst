@@ -13,7 +13,7 @@ To establish a system that's integrated into a company's management you need to 
 
 	For Open ERP, “employee” represents all of the physical people who have an work contract with the company. This includes all types of contract: contracts with both fixed and indeterminate time periods, and also independent and freelance service contracts.
 
-	A “user” is a physical person who's given access to the company's systems. Most employees are users but some users aren't employees: external partners can have access to parts of the system. You can manage them through the portal modules.
+	A “user” is a physical person who's given access to the company's systems. Most employees are users but some users aren't employees: external partners can have access to parts of the system. You can manage them through the ``portal`` modules.
 
 Here are some examples of functions which depend on the list of employees:
 

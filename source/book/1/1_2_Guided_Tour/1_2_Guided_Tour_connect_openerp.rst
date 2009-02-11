@@ -202,13 +202,11 @@ You can create some new users to integrate them into the system. Assign them to 
 
 .. tip::   *Note* 
 
-	This is an area where future versions of Open ERP are changing: many groups are being predefined and access to many of the menus and objects will be keyed to these groups by default. This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
-
+	This is an area where new versions of Open ERP have changed: many groups have been predefined and access to many of the menus and objects are keyed to these groups by default. This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
 
 .. index::
   single: Partner; Managing Partners
 ..
-
 
 Managing partners
 -------------------

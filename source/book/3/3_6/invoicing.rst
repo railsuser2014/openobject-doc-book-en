@@ -141,7 +141,7 @@ So select the product \ ``Titanium Alloy Radiator``\   in the product field in a
 
 .. tip::   **Note**  *Managing the price with tax included* 
 
-	By default, Open ERP invoices and processes the price without taxes – they're managed as a separate figure. If you want to have invoices provided with tax included you can install the module account_tax_include.
+	By default, Open ERP invoices and processes the price without taxes – they're managed as a separate figure. If you want to have invoices provided with tax included you can install the module ``account_tax_include``.
 
 	The module adds a field on each invoice that enables you to indicate if the invoice is tax exclusive or tax inclusive.
 
@@ -190,7 +190,7 @@ Before approving the invoice you can modify the date and the accounting period, 
 
 .. tip::   **Note**  *Invoice layout* 
 
-	If you want to make your invoice layout more elaborate you can install the module account_invoice_layout. This enables you to add various elements between the lines such as subtotals, sections, separators and notes.
+	If you want to make your invoice layout more elaborate you can install the module ``account_invoice_layout``. This enables you to add various elements between the lines such as subtotals, sections, separators and notes.
 
 Click  *Validate*  when you want to approve the invoice. It moves from the \ ``Draft``\   state to the \ ``Open``\   state.
 

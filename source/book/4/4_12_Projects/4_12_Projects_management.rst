@@ -88,7 +88,7 @@ Each user then manages his or her own task using the different available menus. 
 
 .. tip::   **Note**  *Tasks and timesheet* 
 
-	The module hr_timesheet_project gives you a way of creating the day's timesheet automatically from the effective work done for each of the different tasks. This way you don't have to encode service times twice – once for the project task and once for the timesheet.
+	The module ``hr_timesheet_project`` gives you a way of creating the day's timesheet automatically from the effective work done for each of the different tasks. This way you don't have to encode service times twice – once for the project task and once for the timesheet.
 
 	When you want to complete your timesheet, use the menu Human Resources > Timesheets > My Timesheets > Import projects.
 
@@ -150,7 +150,7 @@ You can use one of these three ordering methods, or combine several of them, dep
 
 .. tip::   **A step further**  *Agile methods* 
 
-	Open ERP implements the agile methodology Scrum for IT development projects in the scrum module.
+	Open ERP implements the agile methodology Scrum for IT development projects in the ``scrum`` module.
 
 	Scrum completes the task system by adding the following concepts: long-term planning, sprints, iterative development, progress meetings, burndown chart, and product backlog.
 
@@ -187,7 +187,7 @@ To delegate a task to another user you can just change the person responsible fo
 
 *Form for delegating a task to another user.*
 
-Instead, you can use the button  *Delegate*  on a task from version 4.3.x of Open ERP.
+Instead, you can use the button  *Delegate*  on a task.
 
  *Delegate* \ ``Pending``\  
 

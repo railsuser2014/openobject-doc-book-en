@@ -49,12 +49,8 @@ To download the version of Open ERP for Windows, follow these steps:
 
 	#. Click Product on the menu at the left, then Download.
 
-	#. Click in the downloads page – either on development or stable, depending which you want to install.
-
-	#. Click win32 to open the download page for Windows files.
-
-	#. Download the file for the demonstration version 
-	        – for example openerp-allinone-setup-4.2.X.exe.
+	#. Download the demonstration version Windows installer 
+	        – currently Open ERP 5.0.0 Stable Version > Windows Installers > All In One
 
 	#. Save the file on your PC.
 
@@ -193,7 +189,7 @@ Here's a summary of the procedure:
 
 	#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
 
-	#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\  (postgresql-8.3 didn't work fully with Tiny ERP 4.2.2, although it does with 4.2.3.3) then select it for installation along with its dependencies.
+	#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\ then select it for installation along with its dependencies.
 
 	#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for installation along with their dependencies. Click  *Update Now* to install it all.
 
@@ -207,7 +203,7 @@ Although this installation method is simple, and therefore attractive, it's bett
 
 .. tip::   **Attention**  *Package versions* 
 
-	Maintaining packages is a process of development, testing and publication that takes time. The releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check the version number from the information on the website before installing a package. If only the third figure differs (for example 4.2.3 instead of 4.2.4) then you may choose to install it because the differences may be minor – fault fixes rather than functionality changes between the package and the latest version.
+	Maintaining packages is a process of development, testing and publication that takes time. The releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check the version number from the information on the website before installing a package. If only the third figure differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because the differences may be minor – fault fixes rather than functionality changes between the package and the latest version.
 
 Manual installation of the Open ERP server
 ###########################################

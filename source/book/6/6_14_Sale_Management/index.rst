@@ -106,7 +106,7 @@ When the product that's to be sold to the customer has been selected, Open ERP a
 
   .. tip::   *Point*   Visible Discount
 
-    By default, the customer discount is directly included in the sale price to the customer. He'll then see a discount of 0% but a reduced unit procie. If you install the module *product_visible_discount* you can configure whether you want to make the discount explicitly visible on the order form, or just reduce the unit price.
+    By default, the customer discount is directly included in the sale price to the customer. He'll then see a discount of 0% but a reduced unit procie. If you install the module ``product_visible_discount`` you can configure whether you want to make the discount explicitly visible on the order form, or just reduce the unit price.
 
 In the form, the selected product is presented in the language of the user so that he can understand what he's selling. The description of the product sold is presented in the customer's language. This language is used on the quotation or order when it's printed for the customer.
 
@@ -200,7 +200,7 @@ Management of Alerts
 .. index:: Warning
 .. index:: Alerts
 
-To manage alerts on products or partners, you can install the *warning* module. Once that is installed, it will enable you to configure a series of alerts on the partners or products.
+To manage alerts on products or partners, you can install the ``warning`` module. Once that is installed, it will enable you to configure a series of alerts on the partners or products.
 
 .. image:: images/warning_partner.png
     :align: center
@@ -272,7 +272,7 @@ In the case of invoicing on the basis of packing, the cost of delivering the pro
 Management of Carriers
 ========================
 
-To manage deliveries in Open ERP, install the *delivery* module. If you have installed the *industry* profile this is installed by default during configuration of the database. This module enables you to manage:
+To manage deliveries in Open ERP, install the ``delivery`` module. If you have installed the *industry* profile this is installed by default during configuration of the database. This module enables you to manage:
 
 * the different carriers with whom you work,
 
@@ -407,21 +407,21 @@ It's important to keep good control of margins in every company. Even if you hav
 Margins on sales orders
 ------------------------------
 
-If you want to check your margins on sales orders you can install the sale_margin module. This will add margins calculated on each order line and on the order total.
+If you want to check your margins on sales orders you can install the ``sale_margin`` module. This will add margins calculated on each order line and on the order total.
 
 .. image:: images/sale_margin.png
     :align: center
 
-*An order with the module sale_margin.*
+*An order with the module ``sale_margin``.*
 
 The margin on each line is defined as the quantity sold multiplied by the sale price for the customer less the cost price of the products. By default, products are managed using standard price in Open ERP (cost price fixed manually and reviewed once per year). You can change that to “Average Weighted Price”, meaning that the product cost fluctuates with purchases from suppliers. After product receipt you can even add fixed costs such as delivery costs in the cost of each product.
 
-Open ERP supports a third method of updating the cost price of products using the module *product_extended*. This will add a button on the product form which will permit you to automatically recalculate the cost price for the selected products. The cost price is then calculated as a function of the raw materials and the operations carried out (if the products have been manufactured internally so that you know their costs).
+Open ERP supports a third method of updating the cost price of products using the module ``product_extended``. This will add a button on the product form which will permit you to automatically recalculate the cost price for the selected products. The cost price is then calculated as a function of the raw materials and the operations carried out (if the products have been manufactured internally so that you know their costs).
 
 Margins by product
 --------------------
 
-To follow the margins by product, you should install the module *product_margin*. Once the module is installed you can look at the margins by product using the menu *Products > Reporting > Margins by Product*.
+To follow the margins by product, you should install the module ``product_margin``. Once the module is installed you can look at the margins by product using the menu *Products > Reporting > Margins by Product*.
 
 When you've clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If no period is given, Open ERP will calculate margins on all of the operations without restriction. By default, however, Open ERP proposes a period of the last 12 months for analysis.
 
@@ -486,7 +486,7 @@ Margins by Project
 
 To manage margins by project you must install the analytical accounts with management by task. Use of these accounts is described in the relevant chapter.
 
-You should install the module: account_analytic_analysis. This module will add a tab on the product form to handle the different margins in an analytic account representing a project or a case.
+You should install the module ``account_analytic_analysis``. This module will add a tab on the product form to handle the different margins in an analytic account representing a project or a case.
 
 .. image:: images/account_analytic_analysis_form.png
     :align: center
@@ -589,7 +589,7 @@ For each list you should define:
 
 .. tip::   **Terminology**  *Consumer Price* 
 
-"	If you install the module **edi** a third type of list appears – the *Consumer Price* - which defines the price displayed for the end user. This doesn't have to match your selling price to an intermediary or distributor."
+"	If you install the module ``edi`` a third type of list appears – the *Consumer Price* - which defines the price displayed for the end user. This doesn't have to be the same as your selling price to an intermediary or distributor."
 
 .. index::
    single: Pricelists; versions
@@ -848,7 +848,7 @@ You can then propose a price based on the volume that the wholesaler agrees to s
 
 Rebates at the end of a campaign can help you avoid this sort of problem. You can propose a contract where the price is dependent on the usual wholesaler's terms. You can propose a rebate grid which will be assigned at the end of the year as a function of the actual sales made.
 
-Install the *discount_campaign* module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu *Sales Management > Configuration > Rebates at the end of a campaign*.
+Install the ``discount_campaign`` module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu *Sales Management > Configuration > Rebates at the end of a campaign*.
 
     .. tip:: *Terminology* Year-end rebate
 
@@ -881,7 +881,7 @@ In certain trades, customers place orders for a certain volume of product and as
 
 Open ERP has a system that enables open orders to be handled easily. An open order is an order for a certain quantity of products but whose deliveries are planned on certain dates over a period of time.
 
-To do that you must install the *sale_delivery* module. The order is entered as a classic order but you also set the total quantity that will be delivered on each order line.
+To do that you must install the ``sale_delivery`` module. The order is entered as a classic order but you also set the total quantity that will be delivered on each order line.
 
 Then you can use the new tab *Deliveries* on the order to plan the quantities sold and enter your delivery planning there.
 
@@ -899,7 +899,7 @@ In the order lines, Open ERP shows you the quantity planned in addition to the q
 Order templates
 ================
 
-At the time of writing, Tiny's development team was preparing a new module called *sale_layout*. This enables you to have a more elaborate template than the standard order forms.
+The ``sale_layout`` module enables you to have a more elaborate template than the standard order forms.
 
 For example you could put the following in the order lines:
 
@@ -913,14 +913,14 @@ For example you could put the following in the order lines:
 
 * a page break.
 
-This enables you to lay out a more elaborate professional-looking quotation page. There's also the module *account_invoice_layout* which gives you the same functionality for invoice templates.
+This enables you to lay out a more elaborate professional-looking quotation page. There's also the module ``account_invoice_layout`` which gives you the same functionality for invoice templates.
 
 The two following figures show an invoice template in Open ERP and the resulting printed invoice.
 
 .. image:: images/invoice_layout_form.png
     :align: center
 
-*Template for an invoice in Open ERP using the account_invoice_layout module.*
+*Template for an invoice in Open ERP using the ``account_invoice_layout`` module.*
 
 .. image:: images/invoice_layout_print.png
     :align: center

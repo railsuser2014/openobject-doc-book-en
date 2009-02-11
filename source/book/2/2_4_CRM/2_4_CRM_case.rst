@@ -108,9 +108,9 @@ Each time you run this utility (that is, for each line in the table above), Open
 *Business Opportunities menu automatically generated.*
 
 
-.. tip::   **A step further**  *Case sections from version 4.3 onwards* 
+.. tip::   **A step further**  *Case sections* 
 
-	From version 4.3 of Open ERP you'll also be able to select the view mode you want when the menu is opened to display the cases for each section: commercial, helpdesk, support request, etc.
+	Open ERP enables you to select the view mode you want when the menu is opened to display the cases for each section: commercial, helpdesk, support request, etc.
 
 	Your selection of view determines the type of form that opens when showing a case in each section. So the form following a support request case could differ from the form for a business opportunity.
 
@@ -197,7 +197,7 @@ Users can create their own shortcuts from menus such as  *My Support Requests*  
 Generating calendars
 ---------------------
 
-The Open ERP web client can display any type of resource in the form of a timetable. From version 4.3.1 you can generate calendar views for each of your cases as you create menus for those cases.
+The Open ERP web client can display any type of resource in the form of a timetable. You can generate calendar views for each of your cases as you create menus for those cases.
 
 So if you want to implement a shared calendar for your calendar in Open ERP all you need to do is:
 
@@ -273,7 +273,7 @@ By default, the system provides a list containing the following information for 
 
 	In the GTK client you'd right-click over the text instead – this brings up a context menu with the same options as the web client would give you.
 
-In version 4.3.1 and beyond you'll be able to specify that the graph view, say, appears by default so that you can consistently present the information more visually.
+You can specify that the graph view, say, appears by default so that you can consistently present the information more visually.
 
 .. index::
    single: Case; Rule
@@ -425,7 +425,7 @@ You define the action that will be taken if the rule is met in the second tab of
 
 .. tip::   **Advantage**  *The CRM portal* 
 
-	Open ERP's portal_service module enables you to open parts of your CRM functionality to suppliers and customers. They can then connect to your system using their own login and follow their orders or requests online. For example the customer could make a support request directly in your system, perhaps avoiding a lengthy process of data entry.
+	Open ERP's ``portal_service`` module enables you to open parts of your CRM functionality to suppliers and customers. They can then connect to your system using their own login and follow their orders or requests online. For example the customer could make a support request directly in your system, perhaps avoiding a lengthy process of data entry.
 
 .. index:: Gateway
 
@@ -466,7 +466,7 @@ You'll also need to choose an Open ERP user that the gateway will use to access
 
 	Each resource on the Open ERP system has a unique identifier number. This corresponds to an identifier in the underlying PostgreSQL database table, in the ID column for that resource.
 
-	With the web client you can usually find this number by going to the form view of a resource and clicking the View Log button to the top right of the form. The ID is shown at the top of the Information dialog box. (This didn't work in some of the versions prior to 4.2.3.3.)
+	With the web client you can usually find this number by going to the form view of a resource and clicking the View Log button to the top right of the form. The ID is shown at the top of the Information dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
 
 	You can also use the GTK client for this. Viewing any resource, such as a User, you can directly see its ID at the bottom left of the form.
 

@@ -232,7 +232,7 @@ Management of operations
 
     Operations are often called work orders.
 
-To work using work orders you must install the optional module mrp_operations. Once the module is installed you'll find a new menu called Manufacturing > Operations > Operations to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
+To work using work orders you must install the optional module ``mrp_operations``. Once the module is installed you'll find a new menu called *Manufacturing > Operations > Operations* to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
 
 .. image:: images/mrp_operations_tree.png
     :align: center
@@ -392,13 +392,13 @@ The calculation of requirements prioritises the procurements. If you encode a pu
 Management of waste products and secondary products
 ====================================================
 
-For the management of waste you must install the module *mrp_subproduct*. The normal behaviour of manufacture in Open ERP enables you to manufacture several units of the same finished product from raw materials (A + B > C). With waste management, the result of a manufacture can be to have both finished products and secondary products (A + B > C + D).
+For the management of waste you must install the module ``mrp_subproduct``. The normal behaviour of manufacture in Open ERP enables you to manufacture several units of the same finished product from raw materials (A + B > C). With waste management, the result of a manufacture can be to have both finished products and secondary products (A + B > C + D).
 
 .. tip::   **Definition** *Waste material*
 
     In Open ERP waste material corresponds to secondary products that are a by-product of the main manufacturing process. For example, cutting planks of timber will produce other planks but these bits of timber are too small (or the offcuts may have value for the company if they can be used elsewhere).
 
-If the module mrp_subproduct has been installed you get a new field in the Bill of Material that lets you set secondary products resulting from the manufacture of the finished product.
+If the module ``mrp_subproduct`` has been installed you get a new field in the Bill of Material that lets you set secondary products resulting from the manufacture of the finished product.
 
 .. image:: images/mrp_bom_subproduct.png
     :align: center
@@ -425,7 +425,7 @@ Secondary products enable you to generate several types of products from the sam
 Management of repairs
 ======================
 
-The management of repairs is carried out using the module *mrp_repair*. Once it's installed this module adds new menus to the Manufacturing menu:
+The management of repairs is carried out using the module ``mrp_repair``. Once it's installed this module adds new menus to the Manufacturing menu:
 
 * *Manufacturing > Repairs*
 

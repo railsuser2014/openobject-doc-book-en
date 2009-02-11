@@ -87,7 +87,7 @@ Finally you can call the main project developers, Tiny, who can help you in your
 To keep up to date with all Open ERP's news you can subscribe to the mailing list using http://tiny.be/mailman/listinfo/tinyerp-announce.
 
 
-To conclude, never forget that Open ERP has more than two hundred modules available and that many of them haven't been covered in this book. So if you haven't found a solution to your problems here, look amongst those modules, talk to other Open ERP users on the forum, and don't hesitate to contact a partner.
+To conclude, don't forget that Open ERP has more than two hundred modules available and that many of them haven't been covered in this book. So if you haven't found a solution to your problems here, look amongst those modules, talk to other Open ERP users on the forum, and don't hesitate to contact a partner.
 
 
 

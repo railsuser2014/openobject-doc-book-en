@@ -66,7 +66,7 @@ The following information is important in the product form:
 
 .. tip::   *A step further* 
 
-	The module product_index lets you generate indexes connected to the change of purchase or sale price for individual products. 
+	The module ``product_index`` lets you generate indexes connected to the change of purchase or sale price for individual products. 
 
 	In human resources, this module can be used to change your prices or costs in step with a national index.
 
@@ -85,7 +85,7 @@ And each company job position corresponds to a *Product* .
 
 .. tip::   *Note* 
 
-	By default the hourly cost of an employee is given by the standard cost of the product linked to that employee. But if you install the hr_contract module it's possible to manage contracts differently. The hourly cost of the employee is then automatically calculated from their employment contract when they enter their timesheet data.
+	By default the hourly cost of an employee is given by the standard cost of the product linked to that employee. But if you install the ``hr_contract`` module it's possible to manage contracts differently. The hourly cost of the employee is then automatically calculated from their employment contract when they enter their timesheet data.
 
 	To do this, the software uses a factor defined in the contract type (for example, the gross monthly salary, calculated per day). Ideally this factor should take into account the salary costs, and the taxes, insurances and other overheads associated with pay.
 
@@ -160,7 +160,7 @@ The data making up these graphs can be varied using the filters available in the
 
 	It's possible to assign a dashboard to users so that it appears when they sign onto Open ERP. Then each employee will be able to notice if they've forgotten to complete their timesheet when they signed out of the system.
 
-	To use this dashboard, install the module board_project.
+	To use this dashboard, install the module ``board_project``.
 
 .. index::
    single: Timesheets; Evaluation
