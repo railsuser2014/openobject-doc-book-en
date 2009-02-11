@@ -7,8 +7,8 @@ Internal and external access using FTP
 
 The first configuration step is to create a directory structure that will be used to classify your document set. You can use the structure automatically propsoed by Open ERP from the menu *Document Management > Directory Structure*.
 
-    .. image::  images/document_structure.png
-       :align: center
+.. image::  images/document_structure.png
+    :align: center
 
 *Structure of directories when the document module has been installed.*
 
@@ -30,13 +30,13 @@ Password  Your Open ERP password
 
 Once you're connected using FTP you appear to get to the root of a directory for the document management system. Once you enter the directory you find a structure that matches the structure defined in Open ERP.
 
-    .. image::  images/document_ftp_structure_root.png
-       :align: center
+.. image::  images/document_ftp_structure_root.png
+    :align: center
 
 *Root of the database directory seen through FTP.*
 
-    .. image::  images/document_ftp_structure_tree.png
-       :align: center
+.. image::  images/document_ftp_structure_tree.png
+    :align: center
 
 *Structure of the directories in the document management system.*
 

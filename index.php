@@ -315,5 +315,5 @@ $mapping = Array(
 if (array_key_exists('model', $_GET) && array_key_exists($_GET['model'], $mapping))
 	header('Location: http://doc.openerp.com/'.$mapping[$_GET['model']] ) ;
 else
-	header('Location: /index.html') ;
+	header('Location: http://doc.openerp.com/index.html') ;
 ?>

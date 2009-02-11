@@ -222,10 +222,10 @@ Then select one or several journals and click  *Print* . Open ERP then proposes
 * journal grouped by account.
 
 
-	.. image::  images/account_journal_print.png
-	   :align: center
+.. image::  images/account_journal_print.png
+	:align: center
 
-*Printing a journal*
+*Printing a journal.*
 
 Tax declaration
 ---------------
@@ -236,14 +236,13 @@ You can also get the information from the accounting entries in the columns to t
 
 Open ERP keeps a tax chart that you can reach from the menu  *Financial Management > Periodical Processing > Taxes* . The structure of the chart is for calculating the tax declaration but also all the other taxes can be calculated (such as the French DEEE).
 
-
-	.. image::  images/account_tax_chart.png
-	   :align: center
+.. image::  images/account_tax_chart.png
+	:align: center
 
 .. index::
    single: TVA
 
-*Example of a Belgian TVA (VAT) declaration*
+*Example of a Belgian TVA (VAT) declaration.*
 
 The tax chart represents the amount of each area of the tax declaration for your country. It's presented in a hierarchical structure which lets you see the detail only of what interests you and hides the less interesting subtotals. This structure can be altered as you wish to fit your needs.
 
@@ -273,3 +272,28 @@ Furthermore, for your tax declaration you can click on one of the tax accounts t
 
 In some countries, tax can be calculated on the basis of payments received rather than invoices sent. In this instance choose  *Base on* \ ``Payments``\   instead of  *Base on* \ ``Invoices``\   in the  *Select period*  form. Even if you make your declaration on the basis of invoices sent and received it can be interesting to compare the two reports to see the amount of tax that you pay but haven't yet received from your customers.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

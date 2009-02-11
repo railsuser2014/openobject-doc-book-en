@@ -56,8 +56,8 @@ Integration with your emails
 Using Outlook and Thunderbird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. image::  images/document_attachment_outlook.png
-       :align: center
+.. image::  images/document_attachment_outlook.png
+    :align: center
 
 *Sending an attachment that's in the document management system from Outlook.*
 
@@ -70,15 +70,15 @@ So you'll find two dashboards in the menu *Dashboards > Document Management* : o
 
 The first lets you track the change of documents by month, by customer and by type of resource. You could also quickly assess the use that's made of the system by the various users.
 
-    .. image::  images/document_board1.png
-       :align: center
+.. image::  images/document_board1.png
+    :align: center
 
 *Dashboard for the document management system manager.*
 
 The second dashboard lets you track the user that's made of the system by different employees. You'll find the number of files sent by user and a classification of the users using document management system the least. That will enable you to know who has been well-trained and if it is necessary to do something about changing work methods.
 
-    .. image::  images/document_board2.png
-       :align: center
+.. image::  images/document_board2.png
+    :align: center
 
 *Dashboard for the document management system amalyzed by user.*
 
@@ -91,8 +91,8 @@ To do this, Open ERP can automatically store as attachments the different report
 
 But you can configure the system so that it doesn't matter which type of report is printed. To activate that functionality on another type of report, modify this in the menu: *Administration > Configuration > Low Level > Actions > XML Reports*.
 
-    .. image::  images/document_report_modif.png
-       :align: center
+.. image::  images/document_report_modif.png
+    :align: center
 
 *Modifying the definition of a report.*
 
@@ -105,8 +105,33 @@ Finally, the document management system is also completely linked to the main sy
 
 So you could also efficiently store the documents required for each phase of a process.
 
-    .. image::  images/document_process.png
-       :align: center
+.. image::  images/document_process.png
+    :align: center
 
 *Example of a document linked to process management.*
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

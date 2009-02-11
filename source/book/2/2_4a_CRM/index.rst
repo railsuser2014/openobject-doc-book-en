@@ -1,50 +1,28 @@
 
-Advanced CRM
-#############
-
-Summary
-
-* Partners
-
-* Leads
-
-* Business Opportunities
-
-* The company calendar
-
-* Phone calls
-
-Keywords
-
-* CRM
-
-* profiling
-
-* segmentation
-
-* cases
+Leads, Business Opportunities and Campaigns
+###########################################
 
 *This chapter extends the discussion of customer relationships into sales activities such as the management of leads and opportunities. It introduces a more complex set of relationships between partners and contacts than offered by the base module. It shows how to use the company calendar, and discusses how a call center can use the system.*
 
-UML Diagramming Technique
-==========================
+Managing Contacts
+=================
 
 The two figures below show the UML classes with and without the *base_contact* module.
 
-    .. image:: images/crm_contact_with.png
-       :align: center
+.. image:: images/crm_contact_with.png
+    :align: center
 
 *UML class diagram with base_contact.*
 
-    .. image:: images/crm_contact_without.png
-       :align: center
+.. image:: images/crm_contact_without.png
+    :align: center
 
 *UML class diagram without base_contact.*
 
 A concrete example will illustrate the concept of multiple relationships between contacts and partners (companies)  The figure below shows two companies each having several addresses (places of business) and several contacts attached to these addresses.
 
-    .. image:: images/crm_contact_exemple.png
-       :align: center
+.. image:: images/crm_contact_exemple.png
+    :align: center
 
 *Example of a structure with management of partners and contacts.*
 
@@ -72,20 +50,20 @@ The three menus above are only three different views on the same data. If you co
 
 The screen above represents a partner form. You can see several possible address there and a list of contacts above each address. For each contact you see a name, a function, a phone number and an email.
 
-    .. image:: images/crm_partner_contact.png
-       :align: center
+.. image:: images/crm_partner_contact.png
+    :align: center
 
 *A partner form with the base_contact module installed.*
 
 If you click on the line you can get more detail about the function (such as start date, end date, and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog).
 
-    .. image:: images/crm_partner_poste.png
-       :align: center
+.. image:: images/crm_partner_poste.png
+    :align: center
 
 *Detail of a post occupied by a contact at a partner.*
 
-    .. image:: images/crm_partner_contacts.png
-       :align: center
+.. image:: images/crm_partner_contacts.png
+    :align: center
 
 *Detail of a contact form for someone occupying several posts.*
 
@@ -93,8 +71,8 @@ Partner management is found in the Open ERP base modules. To manager partner rel
 
 For this chapter you should create a new database. After installing the database select *demonstration data* and select the *CRM profile*. Open ERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
 
-    .. image:: images/crm_db_init.png
-       :align: center
+.. image:: images/crm_db_init.png
+    :align: center
 
 *Creating a new database.*
 
@@ -106,14 +84,14 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 
 * Select the CRM functionality to install.
 
-    .. image:: images/ crm_db_select.png
-       :align: center
+.. image:: images/ crm_db_select.png
+    :align: center
 
 *Selecting the CRM functionality to install.*
 
-    .. tip:: *Point* The CRM configuration module
+.. tip:: *Point* The CRM configuration module
 
-        The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls isn't supplied by the *crm* module itself but by the *crm_configuration* module.
+    The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls isn't supplied by the *crm* module itself but by the *crm_configuration* module.
 
 If you install the modules separately don't forget to install the *crm_configuration* module. The CRM module just contains the generic case management system.
 
@@ -151,8 +129,8 @@ The following cases will be looked at for this chapter
 
 The figure below shows the CRM module configuration screen after selecting some functions to install.
 
-    .. image:: images/crm_configuration_wizard.png
-       :align: center
+.. image:: images/crm_configuration_wizard.png
+    :align: center
 
 *Selecting parameters for CRM modules for the reader of this chapter.*
 
@@ -161,8 +139,8 @@ Organizing Prospects
 
 If you have installed the management of prospects and opportunities, Open ERP implements the following workflow for the qualification of prospects and future opportunities.
 
-    .. image:: images/crm_flux.png
-       :align: center
+.. image:: images/crm_flux.png
+    :align: center
 
 *Process of converting a prospect into a customer or opportunity.*
 
@@ -194,8 +172,8 @@ New prospects are usually entered as a lead in the system. This means that you d
 
 To enter a lead manually use the menu *CRM & SRM > Sales > Leads > New Lead*. A form opens to let you enter data about this new contact.
 
-    .. image:: images/crm_lead_new.png
-       :align: center
+.. image:: images/crm_lead_new.png
+    :align: center
 
 *Creating a new lead.*
 
@@ -217,14 +195,14 @@ It's also possible to import a huget list of leads. That's useful if you've boug
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu *CRM & SRM > Presales > Leads > My Leads*. At the bottom of the list click on the *Import* link. Open ERP opens a form for importing the data.
 
-    .. image:: images/crm_lead_import.png
-       :align: center
+.. image:: images/crm_lead_import.png
+    :align: center
 
 *Importing leads into the system.*
 
 You then set which columns are present in your CSV file in the correct order. Then select your file and click on *Import*. Check in the chapter about system administration for more information on import and export.
 
-    .. tip:: *Point* Various Imports
+.. tip:: *Point* Various Imports
 
     Importing and Exporting data in Open ERP is a generic function available to all resource. So you can import and export such lists as partners, sales opportunities, accounting entries, products and pricelists.
 
@@ -234,7 +212,7 @@ There are other methods of importing leads automatically or semi-automatically:
 
 * Using the email gateway for each incoming email from a certain address (such as info@mycompany.com) creating a lead automatically from the contents of the email,
 
-* *Using Open ERP's XML-RPC web-servces to connect to a form on your website.
+* Using Open ERP's XML-RPC web-servces to connect to a form on your website.
 
 These different methods are described in the earlier CRM chapter.
 
@@ -253,8 +231,8 @@ To help the users organize and handle leads efficiently, Open ERP provides sever
 
 * *Leads > All Leads* is a list of all the leads assigned to different salespeople. This menu as those beneath it are used by managers to check on each person's work.
 
-    .. image:: images/crm_leads_list.png
-       :align: center
+.. image:: images/crm_leads_list.png
+    :align: center
 
 *List of leads to be handled.*
 
@@ -275,8 +253,8 @@ The created partner is automatically attached to the lead, which enables you to 
 
 If the salesperson thinks that there is a real opportunity with the lead, following the contact, he can convert it into a sales opportunity using the button *Convert to Opportunity*. Open ERP then opens a window asking the title of the opportunity, the estimate revenue and the percentage success of converting to a sale.
 
-    .. image:: images/crm_lead_convert.png
-       :align: center
+.. image:: images/crm_lead_convert.png
+    :align: center
 
 *Converting a lead into a sales opportunity.*
 
@@ -298,8 +276,8 @@ To quickly create a new opportunity, use the menu Opportunity > New Opportunity.
 
 The salesperson uses the menu *Opportunites > My Opportunities > My Open Opportunities* to track their opportunities. After the different customer contacts, the salesperson can enter the information into the form to describe the activity. The history tab provides a history of all the information about the activity throughout its life. The activities are automatically reported on the partner form of the associated customer. To see this, open the events tab when you open the partner form.
 
-    .. image:: images/crm_partner_event.png
-       :align: center
+.. image:: images/crm_partner_event.png
+    :align: center
 
 *History of events in a partner form.*
 
@@ -314,13 +292,13 @@ There are several methods for entering a new meeting with a partner. The first m
 
 You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and another use the buttons above and to the right of the calendar.
 
-    .. image:: images/crm_calendar_month.png
-       :align: center
+.. image:: images/crm_calendar_month.png
+    :align: center
 
 *Meetings calendar in monthly view.*
 
-    .. image:: images/crm_calendar_week.png
-       :align: center
+.. image:: images/crm_calendar_week.png
+    :align: center
 
 *Meetings calendar in weekly view.*
 
@@ -328,14 +306,14 @@ In the calendar you distinguish between multi-day events and events that last on
 
 To enter a new meeting into the system you can click the day and the hour for a new meeting. In the weekly and daily views you can also press the mouse left button on the calendar and slide the mouse along to create an event of several hours. Open ERP then opens an entry screen for a new meeting.
 
-    .. image:: images/crm_meeting_form.png
-       :align: center
+.. image:: images/crm_meeting_form.png
+    :align: center
 
 *Entering a new meeting.*
 
-    .. tip:: *Point* Consolidated Calendar
+.. tip:: *Point* Consolidated Calendar
 
-        The advantage of integrated management is that the enterprise calendar will group several system events. Then in the Open ERP calendar you will automatically find the meetings but also such information as business opportunites, technical interventions, and requests for staff meetings.
+    The advantage of integrated management is that the enterprise calendar will group several system events. Then in the Open ERP calendar you will automatically find the meetings but also such information as business opportunites, technical interventions, and requests for staff meetings.
 
 Tracking phone calls
 -----------------------
@@ -387,4 +365,31 @@ The rules for automating actions will enable you to send emails automatically ba
 The segmentation tools will enable you to create partner groups and act on each segment differently. For example you could create pricelists for each of the segments, or start phone marketing campaigns by segment. To enable the management of segmentation you should install the module *crm_profiling*.
 
 The *report_designer* module enables you to create letter templates in OpenOffice and automate letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of mass mailing.
+
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium
 

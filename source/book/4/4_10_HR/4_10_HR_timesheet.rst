@@ -10,11 +10,10 @@ In most service companies where Open ERP has been integrated, service sheets, o
 
 Throughout the day, when employees work on one project or another, they add a line to the timesheets with details of the time used on each project. At the end of the day, each employee must mark all the time worked on client or internal projects to make up the full number of hours worked in the day. If an account isn't in the system then the time is added to the hours that haven't been assigned for the day.
 
+.. image::  images/service_timesheet_list.png
+	:align: center
 
-	.. image::  images/service_timesheet_list.png
-	   :align: center
-
-*Timesheet for a working day*
+*Timesheet for a working day.*
 
 The figure gives an example of a timesheet for an employee.
 
@@ -133,11 +132,10 @@ The accuracy of the services entered is crucial for calculating the profitabilit
 
 Managers can draw on different reports for managing timesheets quite easily. You can print a summary in the form of a table per user and per day in the menu  *Human Resources > Reporting > Timesheet > Print Summary Timesheet* . This helps you spot when an employee has forgotten to encode her timesheet on a certain day.
 
+.. image::  images/service_timesheet_all.png
+	:align: center
 
-	.. image::  images/service_timesheet_all.png
-	   :align: center
-
-*Employee's monthly summary timesheet*
+*Employee's monthly summary timesheet.*
 
 Many graphs are available through the menus  *Human Resources > Reporting > This Month / All Months* , for example:
 
@@ -149,11 +147,10 @@ Many graphs are available through the menus  *Human Resources > Reporting > This
 
 *  *Daily Timesheet by Account* 
 
+.. image::  images/service_timesheet_graph.png
+	:align: center
 
-	.. image::  images/service_timesheet_graph.png
-	   :align: center
-
-*Chart of timesheet by account*
+*Chart of timesheet by account.*
 
 The data making up these graphs can be varied using the filters available in the upper part of the screen. If you want to get more exact figures, switch to the list view.
 
@@ -226,20 +223,19 @@ You'll see in the next chapter that it's possible to automatically invoice servi
 In such a situation, hours that aren't coded into the timesheets represent lost money for the company. So it's important to establish effective follow-up of the services timesheets and their encoding. To set up a structure for control using timesheets you should install the module \ ``hr_timesheet_sheet``\  .
 
 
-	.. image::  images/timesheet_flow.png
-	   :align: center
+.. image::  images/timesheet_flow.png
+	:align: center
 
-*Process of approving a timesheet*
+*Process of approving a timesheet.*
 
 This module supplies a new screen enabling you to manage timesheets by period. Timesheet entries are made by employees each day. At the end of the week, employees validate their week's sheet and it's then passed to the services manager, who must approve his team's entries. Periods are defined in the company forms, and you can set them to run monthly or weekly.
 
 To enter timesheet data each employee uses the menu  *Human Resources > Timesheets > My Timesheets > My Current Timesheet* .
 
+.. image::  images/service_timesheet_sheet_form.png
+	:align: center
 
-	.. image::  images/service_timesheet_sheet_form.png
-	   :align: center
-
-*Form for entering timesheet data*
+*Form for entering timesheet data.*
 
 In the upper part of the screen the user starts with the sign-in and sign-out times. The system enables the control of attendance day by day. The two buttons Sign in and Sign out enable the automatic completion of hours in the area to the left. These hours can be modified by employee, so it's not a true management control system.
 
@@ -247,11 +243,10 @@ The area to the bottom of the screen represents a sheet of the employee's time e
 
 The second tab of the timesheet  *by day*  gives the number of hours worked on the different projects. When there's a gap between the attendance and the timesheet entries, you can use the second tab to detect the days or the entries that haven't been correctly coded in.
 
+.. image::  images/timesheet_sheet_hours.png
+	:align: center
 
-	.. image::  images/timesheet_sheet_hours.png
-	   :align: center
-
-*Detail of hours worked by day for an employee*
+*Detail of hours worked by day for an employee.*
 
 The third tab,  *By account*  shows the time worked on all the different projects. That enables you to step back to see an overview of the time an employee has worked spread over different projects.
 

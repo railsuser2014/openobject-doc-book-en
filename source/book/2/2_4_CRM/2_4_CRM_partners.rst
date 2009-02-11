@@ -45,8 +45,8 @@ So a partner can be both your supplier and your customer at the same time. This 
 To get a list of partners using demonstration data, use the menu  *Partners > Partners*  (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has only the data that you've put into it - both can show the principles).
 
 
-	.. image::  images/crm_partner.png
-   		:align: center
+.. image::  images/crm_partner.png
+   	:align: center
 
 *The partner form*
 
@@ -94,8 +94,8 @@ Partner Categories
 Open ERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu  *Partners > Partners by Category* .
 
 
-	.. image::  images/crm_partner_category_big.png
-   		:align: center
+.. image::  images/crm_partner_category_big.png
+   	:align: center
 
 *Example partner category structure*
 

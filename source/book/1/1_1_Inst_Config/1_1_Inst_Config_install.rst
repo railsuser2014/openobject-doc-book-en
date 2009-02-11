@@ -115,10 +115,10 @@ To test your installation, start by connecting through the Open ERP client on t
 Start the GTK client on the server through the Windows Start menu there. The main client window appears, identifying the server you're connected to (which is \ ``localhost``\   – your own server PC – by default). If the message  *No database found, you must create one*  appears then you've successfully connected to an Open ERP server containing, as yet, no databases.
 
 
-	.. image:: images/new_login_dlg.png
-		:align: center
+.. image:: images/new_login_dlg.png
+	:align: center
 
-*Dialog box on connecting a GTK client to a new Open ERP server*
+*Dialog box on connecting a GTK client to a new Open ERP server.*
 
 .. index::
    single: XML-RPC
@@ -138,7 +138,7 @@ If your system doesn't work after installing your Windows system you'll find som
                 	:align: center
                 	:scale: 85
 
-                *Using pgAdmin III to verify that PostgreSQL is working*
+                *Using pgAdmin III to verify that PostgreSQL is working.*
                         
 
 	#. Is the Open ERP application working? Signed in to the server as an administrator, stop and restart the service using  *Stop Service* and  *Start Service* from the menu  *Start > Programs > OpenERP Server*  Open the log file \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP Server``\   At the end of the file you should see the line  *The server is running, waiting for connections...* 
@@ -257,9 +257,9 @@ Once all these dependencies and the database are installed, install the server i
 
 Open a terminal window to start the server with the command \ ``sudo su postgres -c openerp-server``\  , which should result in a series of log messages as the server starts up. If the server is correctly installed, the message  *waiting for connections...* should show within 30 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
-	.. image:: images/terps_startup_log.png
-		:align: center
-		:scale: 95
+.. image:: images/terps_startup_log.png
+	:align: center
+	:scale: 95
 
 .. index::
   single: Client; GTK
@@ -290,8 +290,8 @@ To install an Open ERP GTK client, follow the steps below:
 	If you click the Cancel button, the window goes away – but Open ERP will ask the same questions again next time you start the client. It's best to click OK, even if you choose to enter no data, to prevent that window reappearing next time.
 
 
-	.. image:: images/terp_client_startup.png
-		:align: center
+.. image:: images/terp_client_startup.png
+	:align: center
 
 Open a terminal window to start the client using the command openerp-client. When you start the client on the same Linux PC as the server you'll find that the default connection parameters will just work without needing any change. The message  *No database found, you must create one!*  shows you that the connection to the server has been successful and you need to create a database on the server.
 
@@ -315,10 +315,10 @@ To install an Open ERP client on a computer under Linux, repeat the procedure s
 *  *Connection protocol* : \ ``XML-RPC``\  .
 
 
-	.. image:: images/terp_client_server.png
-		:align: center
+.. image:: images/terp_client_server.png
+	:align: center
 	
-*Dialog box for defining connection parameters to the server*
+*Dialog box for defining connection parameters to the server.*
 
 It's possible to connect the server to the client using a secure protocol to prevent other network users from listening in, but the installation described here is for direct unencrypted connection.
 
@@ -358,8 +358,8 @@ The eTiny web server connects to the Open ERP server in the same way as an Open
 	#. At a terminal window type \ ``python start-openerp.py``\  to start the eTiny server.
 
 
-	.. image:: images/web_welcome.png
-		:align: center
+.. image:: images/web_welcome.png
+	:align: center
 
 You can verify the installation by opening a web browser on the server and navigating to http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from another computer connected to the same network if you know the name or IP address of the server over the network – your browser should be set to http://<server_address>:8080 for this.
 
