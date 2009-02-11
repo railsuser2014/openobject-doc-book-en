@@ -194,6 +194,9 @@ See Apache manual for more information.
 Web Browser Compatibilities
 -------------------------------------------------------------------------------
 
+Supported browsers
+++++++++++++++++++
+
 *OpenERP Web* is known to work best with *Mozilla* based web browsers. Here is 
 the list of supported browsers.
 
@@ -202,6 +205,16 @@ the list of supported browsers.
 #. Safari >= 3.0
 #. Google Chrome >= 1.0
 #. Opera >= 9.0
+
+Flash plugin
+++++++++++++
+
+Your browser should have the Flash plugin installed because *OpenERP Web* uses
+some Flash components.
+
+Here is how to install the Flash plugin on an Ubuntu system: ::
+
+    sudo apt-get install flashplugin-nonfree
 
 -------------------------------------------------------------------------------
 Support
