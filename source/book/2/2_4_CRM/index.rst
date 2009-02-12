@@ -16,7 +16,7 @@ If you want to focus on your customers, you need tools to make that focus easy. 
 
 A crucial advantage that Open ERP gives you over the more specialist CRM applications is that Open ERP knows more about your customers and your ability to supply them because it's handling all of your accounting, sales, purchases, manufacturing and fulfillment as well as linking to all of your internal staff. 
 
-Open ERP's CRM module uses that information and offers several significant features that enable you and your staff to monitor and control your supplier and customer relationships effectively, such as delegating issues to the most appropriate people, keeping a history of communications and events, qualifying prospects and detecting problems. 
+Open ERP's ``crm`` module uses that information and offers several significant features that enable you and your staff to monitor and control your supplier and customer relationships effectively, such as delegating issues to the most appropriate people, keeping a history of communications and events, qualifying prospects and detecting problems. 
 
 It also uses several statistical tools that can analyze relationships quantitatively – your customer service performance and the quality of your suppliers, for example. Using performance analysis, you can easily put a policy of real continuous improvement in place by developing an automatic rules-based system in Open ERP.
 

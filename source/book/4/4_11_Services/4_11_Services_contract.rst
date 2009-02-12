@@ -111,7 +111,7 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 
 .. tip::   **Point**  *Project Management and analytic accounts* 
 
-	The menu Project Management > Analytic Accounts is only available once you have installed the module account_analytic_analysis. It provides various global financial and operational views of a project manager's projects.
+	The menu *Project Management > Analytic Accounts* is only available once you have installed the module ``account_analytic_analysis``. It provides various global financial and operational views of a project manager's projects.
 
 Select a project and open its analytic entries using the  *Costs to invoice*  button. You'll find a list of costs that can be invoiced to the client:
 

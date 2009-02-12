@@ -62,7 +62,7 @@ To visualize the general entries following these different actions you can use o
 
 	In the chart of analytic accounts, if you click on an account Open ERP opens a window showing the corresponding analytic entries. 
 
-	It was intended that if you do that on a View-type account Open ERP opens all of the entries belonging to its child accounts. That can be very useful for opening entries belonging to several accounts, such as all project clients. (It didn't do that in version 4.2.2 – later versions may be fixed.) 
+	It was intended that if you do that on a View-type account Open ERP opens all of the entries belonging to its child accounts. That can be very useful for opening entries belonging to several accounts, such as all project clients.
 
 Manual record entry
 ---------------------

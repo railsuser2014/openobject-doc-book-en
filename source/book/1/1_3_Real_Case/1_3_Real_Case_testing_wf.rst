@@ -175,7 +175,7 @@ The stores manager selects the menu  *Inventory Control > Packing Lists > Sendin
 
 	At the moment your Sales Order is waiting for products to be reserved to fulfil it. A stock reservation activity takes place periodically to calculate the needs, which also takes customer priorities into account. The calculation can be started from the menu Production > Calculate Requirements. Running this automatically reserves products. 
 
-	If you don't want to have to work out your stock needs but have a lean workflow you can install the mrp_jit (Just In Time) module.
+	If you don't want to have to work out your stock needs but have a lean workflow you can install the ``mrp_jit`` (Just In Time) module.
 
 Although Open ERP has automatically been made aware that items on this order will need to be despatched, it has not yet assigned any specific items from any location to fulfil it. It's ready to move \ ``6.00``\  \ ``Titanium Alloy Radiators``\   from the  *Stock*  location to the  *Output*  location (which were defined by the Sale Shop in the Sales Order), so start this process by clicking  *Assign* . The  *Move*  line has now changed from the \ ``Confirmed``\   state to the \ ``Assigned``\   state.
 

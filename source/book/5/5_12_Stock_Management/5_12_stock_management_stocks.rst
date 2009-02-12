@@ -123,7 +123,7 @@ In the goods receipt form, the field 'Invoicing Control' lets you influence the 
 Customer delivery
 ------------------
 
-Everything about goods receipt is also possible to do manually for a customer delivery. But this time, use the automated product delivery processes based on customer orders. Install the *sale* module so that you can proceed further in this section of the chapter.
+Everything about goods receipt is also possible to do manually for a customer delivery. But this time, use the automated product delivery processes based on customer orders. Install the ``sale`` module so that you can proceed further in this section of the chapter.
 
 Now create a new customer order from the menu *Sales Management > Sales Orders > New Quotation*. Enter the following data in this order:
 
@@ -152,7 +152,7 @@ Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. I
 
 .. tip::  **Point** *Just in Time*
 
-    You can install the module mrp_jit to plan each order in real time after it's been confirmed. This means that you don't have to start the scheduler or wait for its periodical start time.
+    You can install the module ``mrp_jit`` to plan each order in real time after it's been confirmed. This means that you don't have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 

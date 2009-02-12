@@ -18,7 +18,7 @@ Managing statistical reports
 
 Many reports are configured in advance in Open ERP. You can find them in the  *Reporting*  submenus under each main menu entry.
 
-You can also install more new reports using various different modules whose name usually starts with  *report_* . 
+You can also install more new reports using various different modules whose name usually starts with  ``report_`` . 
 
 Modeling a new report
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,7 +105,7 @@ Once the dashboard has been defined you can use the  *Create Menu*  button to cr
 Managing document templates with OpenOffice.org
 -------------------------------------------------
 
-To personalize your printable documents in Open ERP, use the module \ ``base_report_designer``\  , which the Tiny company published a little after the release of Open ERP version 4.2.0.
+To personalize your printable documents in Open ERP, use the module \ ``base_report_designer``\.
 
 .. tip::   **Advantage**  *The OpenOffice.org Writer plug-in* 
 

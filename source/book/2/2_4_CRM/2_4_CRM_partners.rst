@@ -14,7 +14,7 @@ You'll need two databases for this chapter:
 
 To be able to backup and restore these databases you'll need to know your super-administrator password.
 
-You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new modules into it later in the chapter – they're not available in the core 4.2.2 release of Open ERP.
+You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new modules into it later in the chapter – they're not all available in the core 5.0.0 release of Open ERP.
 
 And you'll need access to a system administrator for your server system if you want to install the \ ``fetchmail``\   system software that's mentioned later in this chapter.
 
@@ -63,7 +63,7 @@ To the right of the partner form you'll find all of the actions, reports and sho
 
 	You'll then receive an API number, a login and a password which you can use in Open ERP to send SMS messages to your partners.
 
-	Or you can just create a new module based on the inbuilt SMS module, targeted at any of the other SMS service suppliers, and use that instead.
+	Or you can just create a new module based on the inbuilt SMS functions, targeted at any of the other SMS service suppliers, and use that instead.
 
 To send an SMS message to a partner or a selection of several partners, first select the partners then click the  *Send SMS*  Action icon.
 

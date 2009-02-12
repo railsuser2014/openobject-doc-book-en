@@ -7,7 +7,7 @@ You'll now explore the database \ ``openerp_ch02``\   with these profile modules
 
 	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use Administration > Translation > Load a New Language.
 
-Depending on the user you're connected as the page appears differently from the Main Menu that showed before. Using the installation sequence above, in version 4.2.2, the Project Dashboard for a project member is assigned as the Administrator's home page. It shows a summary of the information required to start the day effectively. The dashboard contains:
+Depending on the user you're connected as the page appears differently from the Main Menu that showed before. Using the installation sequence above, certain dashboards may be assigned as various users' home pages. They show a summary of the information required to start the day effectively. A project dashboard might contains:
 
 * a list of the next tasks to carry out,
 
@@ -20,7 +20,6 @@ Depending on the user you're connected as the page appears differently from the 
 * the timesheet.
 
 Each of the lists can be reordered by clicking on the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click  *Zoom*  above it. 
-
 
 .. image:: images/admin_project_dashboard.png
 	:align: center
@@ -185,7 +184,7 @@ Dashboards are adaptable to the needs of each user and each company.
 
 .. tip::   **Note**  *Construction of dashboards* 
 
-	Version 4.3 of Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
+	Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
 
 .. index::
    single: Products
@@ -214,13 +213,13 @@ The value of this approach for some sectors is that you can just define a templa
 
 			* Size (S, M, L, XL, XXL),
 
-			* Co lour (white, grey, black, red),
+			* Colour (white, grey, black, red),
 
 			* Quality of Cloth (125g/m2, 150g/m2, 160g/m2, 180g/m2),
 
 			* Collar (V, Round).
 
-			This separation of variant types requires the optional module fashion. Using it means that you can avoid an explosion in the number of products to manage in the database. If you take the example above it's easier to manage a template with 15 variants in four different types than 160 completely different products. This module is available in the extra_addons list (although it had not been updated, at the time of writing, to work in release 4.2.2 of Open ERP).
+			This separation of variant types requires the optional module ``product_variant_multi``. Using it means that you can avoid an explosion in the number of products to manage in the database. If you take the example above it's easier to manage a template with 15 variants in four different types than 160 completely different products. This module is available in the extra_addons list (it had not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The  *Products*  menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
 

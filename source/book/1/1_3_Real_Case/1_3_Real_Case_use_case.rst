@@ -54,15 +54,15 @@ Installing and configuring modules
 
 All of the functional needs are provided by core modules from Open ERP:
 
-* product management (the  *product*  module),
+* product management (the  ``product``  module),
 
-* inventory control (the  *stock*  module),
+* inventory control (the  ``stock``  module),
 
-* accounting and finance (the  *account*  module),
+* accounting and finance (the  ``account``  module),
 
-* purchase management (the  *purchase*  module),
+* purchase management (the  ``purchase``  module),
 
-* sales management (the  *sale*  module).
+* sales management (the  ``sale``  module).
 
 Connect to the new \ ``openerp_ch03``\   database as user \ ``admin``\   with its default password \ ``admin``\   (you might have to wait a few seconds before the system will allow you to connect if you've only just created it). Since this is the first time you've connected to it you'll have to go through the Setup wizard in steps:
 

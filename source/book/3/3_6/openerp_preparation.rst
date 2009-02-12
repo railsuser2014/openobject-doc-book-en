@@ -10,5 +10,5 @@ You'll need two databases for this chapter:
 
 To be able to backup and restore these databases you'll need to know your super-administrator password.
 
-You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new modules into it later in the chapter – they're not provided in the core 4.2 release of Open ERP.
+You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new modules into it later in the chapter – they're not provided in the core release of Open ERP.
 

@@ -127,7 +127,7 @@ The manual mode will create an internal move order to the linked location once p
 
 .. tip::   **Point**  *Logistic by Product*
 
-    The module *stock_location* enables you to generate paths to follow, not just a the level of locations but also at the level of products. It then enables you to manage default locations for a given product or to refer the products as a function of operations such as quality control, supplier receipt, and after-sales service.
+    The module ``stock_location`` enables you to generate paths to follow, not just a the level of locations but also at the level of products. It then enables you to manage default locations for a given product or to refer the products as a function of operations such as quality control, supplier receipt, and after-sales service.
 
     A more detailed explanation of this module, with examples, is given at the end of this chapter.
 
@@ -178,7 +178,7 @@ Some companies don't want to work in two steps, because it just seems like extra
 Linked Production
 ------------------
 
-The *stock_location* module enables you to manage the linkages by product in addition to doing that by location. You can then create a location structure that represents your production chain by product.
+The ``stock_location`` module enables you to manage the linkages by product in addition to doing that by location. You can then create a location structure that represents your production chain by product.
 
 The location structure looks like this:
 

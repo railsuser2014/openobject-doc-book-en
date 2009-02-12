@@ -50,7 +50,7 @@ So accounting is too often under-utilized. The information it brings makes it a 
 
 Open ERP's general accounting and analytic accounting handle these needs well because of the close integration between all of the application modules. Furthermore, the transactions, the actions and the financial analyses happen in real time, so that you can not only monitor the situation but also manage it effectively.
 
-The accounting module in Open ERP covers general accounting, analytic accounting, and auxiliary and budgetary accounting. It's double-entry, multi-currency and multi-company.
+The ``accounting`` module in Open ERP covers general accounting, analytic accounting, and auxiliary and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 .. index::
    single: Accounting
@@ -79,7 +79,7 @@ The accounting module in Open ERP covers general accounting, analytic accountin
 
 	* if the companies share many documents, you can register them in the same database and install Open ERP's multi-company documents to finely manage access rights,
 
-	* it's possible to synchronize specified document types in several databases using the synchro module.
+	* it's possible to synchronize specified document types in several databases using the ``synchro`` module.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the double entry of data into accounting documents. So in Open ERP an Order automatically generates an Invoice, and the Invoice automatically generates the accounting entries. These in turn generate tax submissions, customer reminders, and so on. Such strong integration enables you to:
 

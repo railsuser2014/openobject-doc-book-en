@@ -90,10 +90,10 @@ You'll be asked what View Mode you want during the Configuration stage.
 more cluttered than the *Simple Interface* because it shows you all the menu
 options. You don't need any additional users.
 
-Then install the *sale* module for the first example below, which installs
-several other modules as dependencies. Also install some of the hr modules for
-the second example below, such as *hr_attendence*, *hr_contract*,
-*hr_holidays*, and *hr_holidays_request*.
+Then install the ``sale`` module for the first example below, which installs
+several other modules as dependencies. Also install some of the ``hr`` modules for
+the second example below, such as ``hr_attendence``, ``hr_contract``,
+``hr_holidays``, and ``hr_holidays_request``.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.
 Selecting *None* is fine: you can also try one that matches your own

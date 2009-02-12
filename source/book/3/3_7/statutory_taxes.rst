@@ -18,7 +18,7 @@ This section deals with statutory taxes and accounts which are legally required 
 
 	In addition to the legal declarations available in the accounts modules, Open ERP supplies declarations based on the functionality in other modules.
 
-	You can, for example, install the report_intrastat module for intra-stat declarations about sending goods to and receiving goods from other countries.
+	You can, for example, install the ``report_intrastat`` module for intra-stat declarations about sending goods to and receiving goods from other countries.
 
 
 .. index:: Tax
@@ -142,7 +142,7 @@ When you've created a tax structure consisting of Tax Cases and Tax objects, you
 
 	When you're retailing to end users rather than selling to a business, you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather than a tax-exclusive price plus tax. 
 
-	To do this in Open ERP just install the account_tax_include module. Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. Prices are then displayed appropriately.
+	To do this in Open ERP just install the ``account_tax_include`` module. Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. Prices are then displayed appropriately.
 
 You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners* to open and edit a Partner form for the charity, then:
 
@@ -162,7 +162,7 @@ You can also assign multiple taxes to a Project, so that invoices from the Proje
 
 .. tip::   **A step further**  *Tax regions* 
 
-	The third-party module import_export can be used to extend Open ERP's tax system, so that you can assign taxes to different accounts depending on the location of the Partner. The Partner is given a new Partner Location field that can be set to Local, Europeor Outside, so that taxes and tax bases can be channeled to different accounts. 
+	The third-party module ``import_export`` can be used to extend Open ERP's tax system, so that you can assign taxes to different accounts depending on the location of the Partner. The Partner is given a new Partner Location field that can be set to Local, Europeor Outside, so that taxes and tax bases can be channeled to different accounts. 
 
 	This module could be the basis of more ambitious location-based tax accounting.
 
@@ -180,7 +180,7 @@ Select the accounting period you're interested in and click  *Open Charts* , the
 
 .. tip::   **Advantage**  *Simulated balance* 
 
-	While you're printing account balances, if you have installed the account_simulation module Open ERP asks you which level of simulation to execute.
+	While you're printing account balances, if you have installed the ``account_simulation`` module Open ERP asks you which level of simulation to execute.
 
 	Results will vary depending on the level selected. You can, for example, print the balance depending on various methods of amortization:
 
@@ -190,7 +190,7 @@ Select the accounting period you're interested in and click  *Open Charts* , the
 
 	More generally it enables you to make analyses using other simulation levels that you could expect..
 
-At the moment of writing this book a new module is in the final stages of development for Open ERP – \ ``account_reporting``\  . It's being developed to enable the use of configurable reports for balance sheets or earnings statement in legally required formats.
+The \ ``account_reporting``\ module was developed toprovide configurable reports for balance sheets or earnings statement in legally required formats.
 
 .. index:: Journal
 
@@ -211,7 +211,7 @@ To obtain the different journals use the menu  *Financial Management > Reporting
 
 	* the invoice journals (to classify sales by mode of invoicing: daily / weekly / monthly) and automating the tasks.
 
-	To obtain these different journals install the modules sale_journal and purchase_journal.
+	To obtain these different journals install the modules ``sale_journal`` (found at the time of writing in ``addons``, so available in a standard installation) and ``purchase_journal`` (found in ``addons-extra`` at the time of writing, so needing special installation).
 
 Then select one or several journals and click  *Print* . Open ERP then proposes the three following reports:
 

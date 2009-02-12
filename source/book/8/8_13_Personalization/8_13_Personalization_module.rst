@@ -21,7 +21,7 @@ Once you've done all this, go to the menu  *Administration > Modules Management 
 
 .. tip::   **A step further**  *Contributing to the development of Open ERP* 
 
-	Once your personal configuration has been saved into a module, install the module base_module_publish. This gives you a new possible action Publish Module in the menu Administration > Modules Manage > Modules. 
+	Once your personal configuration has been saved into a module, install the module ``base_module_publish``. This gives you a new possible action Publish Module in the menu Administration > Modules Manage > Modules. 
 
 	Use this function to publish your module on the official Open ERP site. It could then be reused by other companies that have the same needs as yours. You could then yourselves benefit from improvements made by these same companies in future. 
 

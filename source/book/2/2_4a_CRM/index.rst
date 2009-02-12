@@ -7,7 +7,7 @@ Leads, Business Opportunities and Campaigns
 Managing Contacts
 =================
 
-The two figures below show the UML classes with and without the *base_contact* module.
+The two figures below show the UML classes with and without the ``base_contact`` module.
 
 .. image:: images/crm_contact_with.png
     :align: center
@@ -53,7 +53,7 @@ The screen above represents a partner form. You can see several possible address
 .. image:: images/crm_partner_contact.png
     :align: center
 
-*A partner form with the base_contact module installed.*
+*A partner form with the ``base_contact`` module installed.*
 
 If you click on the line you can get more detail about the function (such as start date, end date, and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog).
 
@@ -67,7 +67,7 @@ If you click on the line you can get more detail about the function (such as sta
 
 *Detail of a contact form for someone occupying several posts.*
 
-Partner management is found in the Open ERP base modules. To manager partner relations you must install the CRM moduels. Then start by installing a CRM profile and configure the system to meet your needs.
+Partner management is found in the Open ERP base modules. To manager partner relations you must install the CRM modules. Then start by installing a CRM profile and configure the system to meet your needs.
 
 For this chapter you should create a new database. After installing the database select *demonstration data* and select the *CRM profile*. Open ERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
 
@@ -91,9 +91,9 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 
 .. tip:: *Point* The CRM configuration module
 
-    The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls isn't supplied by the *crm* module itself but by the *crm_configuration* module.
+    The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls isn't supplied by the ``crm`` module itself but by the ``crm_configuration`` module.
 
-If you install the modules separately don't forget to install the *crm_configuration* module. The CRM module just contains the generic case management system.
+If you install the modules separately don't forget to install the ``crm_configuration`` module. The ``crm`` module just contains the generic case management system.
 
 Open ERP suggests that you select from preconfigured functions for CRM:
 
@@ -354,17 +354,17 @@ Advanced Customer Relations
 
 Open ERP also supplies several tools to improve and automate relationships with partners. They won't be described extensively here, just introduced briefly.
 
-The supplier/customer portal gives you the ability to provide your suppliers and customers with constrained access to Open ERP. They will then be able to view or enter sets of information directly online to Open ERP. For example they could enter their orders, reprint their invoices, or work on communal projects. To activate the portal it's necessary to install the modules that start with the string *portal_...*.
+The supplier/customer portal gives you the ability to provide your suppliers and customers with constrained access to Open ERP. They will then be able to view or enter sets of information directly online to Open ERP. For example they could enter their orders, reprint their invoices, or work on communal projects. To activate the portal it's necessary to install the modules that start with the string ``portal_...``.
 
-The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for the email gateway are available in the *crm* module in the *scripts* subdirectory.
+The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for the email gateway are available in the ``crm`` module in the ``scripts`` subdirectory.
 
 The Outlook and Thunderbird plugins enable you to synchronize your contacts between your email client and your ERP. They both enable you to create sales opportunities based on exchanges you have with the customer.
 
 The rules for automating actions will enable you to send emails automatically based on the event, such as assigning opportunities to the most appropriate person. To access the CRM rules, use the menu *CRM & SRM > Configuration > Cases > Rules*.
 
-The segmentation tools will enable you to create partner groups and act on each segment differently. For example you could create pricelists for each of the segments, or start phone marketing campaigns by segment. To enable the management of segmentation you should install the module *crm_profiling*.
+The segmentation tools will enable you to create partner groups and act on each segment differently. For example you could create pricelists for each of the segments, or start phone marketing campaigns by segment. To enable the management of segmentation you should install the module ``crm_profiling``.
 
-The *report_designer* module enables you to create letter templates in OpenOffice and automate letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of mass mailing.
+The ``report_designer`` module enables you to create letter templates in OpenOffice and automate letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of mass mailing.
 
 
 .. Copyright © Open Object Press. All rights reserved.

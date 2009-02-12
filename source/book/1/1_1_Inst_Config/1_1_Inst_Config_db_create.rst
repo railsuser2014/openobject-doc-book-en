@@ -64,7 +64,7 @@ Wait for the message showing that the database has been successfully created, al
 
 	The combination of username/password is specific to a single database. If you have administrative rights to a database you can modify the predefined users. 
 
-	Alternatively you can install the users_ldap module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
+	Alternatively you can install the ``users_ldap`` module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
 
 .. image:: images/create_new_db_web.png
 	:align: center

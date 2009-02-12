@@ -11,7 +11,7 @@ To illustrate this concept of stock management, see how stock moves are generate
 
 * Manufacturing.
 
-For this chapter you should start by installing the *stock* module (which also installs a few dependencies with it) into a new minimal database populated with Tiny's demonstration data. You don't need to choose any particular chart of accounts during configuration of the database, but you can if you want to.
+For this chapter you should start by installing the ``stock`` module (which also installs a few dependencies with it) into a new minimal database populated with Tiny's demonstration data. You don't need to choose any particular chart of accounts during configuration of the database, but you can if you want to.
 
 The structure of stock locations is shown by the figure above. Stocks are assumed to be totally empty and no operation is in progress nor planned.
 

@@ -21,13 +21,13 @@ Just in Time
 
 By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts use the menu Administration > Configuration > Planning > Actions Planned. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
-Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module *mrp_jit* to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
+Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module ``mrp_jit`` to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
 
 Then if you make a customer order with a product that's *Make To Order* the quotation request for a supplier will be generated. 
 
  ..tip :: *Point** *Delivery from the supplier or to the customer*
 
-    The *sale_supplier_direct_delivery* module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
+    The ``sale_supplier_direct_delivery`` module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
 
 This mode is not always advisable. Each order is handled once it's been confirmed. Then if an order is to be delivered in three months the scheduler will reserve goods in stock for each order once it's been confirmed. It would have been more efficient to leave these products available for other orders.
 
@@ -126,7 +126,7 @@ In this case you can manually create a new goods receipt using the menu *Stock M
 Product routing
 ----------------
 
-You should install the *stock_location* module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
+You should install the ``stock_location`` module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
 
 .. image:: images/product_location.png
     :align: center
