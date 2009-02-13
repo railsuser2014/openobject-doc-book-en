@@ -44,25 +44,25 @@ The community, supported by Tiny, hosts a set of communication tools which can h
 
         *The forum*
 
-http://openerp.org/forum
+* http://openobject.com/forum
 
-the forum enables you to discuss issues with other Open ERP users. It's very active and you have a good chance of receiving some form of response to your questions within twenty-four hours or so.
+The forum enables you to discuss issues with other Open ERP users. It's very active and you have a good chance of receiving some form of response to your questions within twenty-four hours or so.
 
         *The wiki*
 
-http://openerp.org/wiki
+* http://openerp.org/wiki
 
 The wiki contains a large amount of information about the software, some current and some historical. You'll find the documentation necessary for installation there, as well as user documentation, and a technical manual for developing your own modules.
 
         *Database of Open ERP modules*
 
-http://openerp.org/component/option,com_mtree/Itemid,111/
+* http://openerp.org/component/option,com_mtree/Itemid,111/
 
 A database of all the modules available for use gives you free access to most of the known Open ERP extensions.
 
         *Tiny Forge*
 
-http://tinyforge.org
+* http://tinyforge.org
 
 You can investigate the collaborative development center Tiny Forge where Open ERP modules are developed.
 

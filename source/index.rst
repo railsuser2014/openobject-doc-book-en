@@ -28,9 +28,9 @@ Open Object Documentation
 
   <br/>
   <div class="tip">
-  You will find in these pages a new integrated approach to enterprise management
-  and best development practices. These books have been best-sellers
-  on Amazon for several months. You may also have a look at our <a href="">printed
+  You will find a new integrated approach to enterprise management
+  and best development practices in these pages. These books have been best-sellers
+  on Amazon for several months. You can also have a look at our <a href="">printed
   books</a>.  </div>
   <br/>
   <br/>

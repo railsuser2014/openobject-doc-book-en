@@ -36,13 +36,13 @@ So you'll find the modules for all types of needs, allowing your company to buil
 
 They range from specific modules like the EDI interface for agricultural products, which has been used to interface with Match and Leclerc stores, up to the generic demonstration automation module for ordering sandwiches, which can take care of the eating preference of your staff. 
 
-The results are quite impressive. Tiny ERP, now Open ERP, is management software that is downloaded more than any other in the world, with over 600 downloads per day. It's available today in 18 languages and has a world network of partners and contributors. More than 800 developers participate in the projects on the collaborative development system of Tiny Forge.
+The results are quite impressive. Open ERP (once called Tiny ERP when it started out) is management software that is downloaded more than any other in the world, with over 600 downloads per day. It's available today in 18 languages and has a world network of partners and contributors. More than 800 developers participate in the projects on the collaborative development system of Tiny Forge.
 
-To our knowledge, Tiny ERP is the only management system which is routinely used not only by big companies but also by very small companies and independent companies. This diversity is an illustration of the software's flexibility: a rather elegant coordination between people's functional expectations of the software and great simplicity in its use. 
+To our knowledge, Open ERP is the only management system which is routinely used not only by big companies but also by very small companies and independent companies. This diversity is an illustration of the software's flexibility: a rather elegant coordination between people's functional expectations of the software and great simplicity in its use. 
 
 And this diversity is also found in the various sectors and trades which use the software, including agricultural products, textiles, public auctions, IT, and trade associations. 
 
-Lastly, such software has arisen from the blend of high code quality, well-judged architecture and use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the size of Tiny ERP is less than 4 MB when you've installed the software. We've moved a long way from the days when the only people who could be expected to benefit from ERP were the owners of a widget factory on some remote industrial estate.
+Lastly, such software has arisen from the blend of high code quality, well-judged architecture and use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the size of Open ERP is less than 4 MB when you've installed the software. We've moved a long way from the days when the only people who could be expected to benefit from ERP were the owners of a widget factory on some remote industrial estate.
 
 Why this book?
 ===============
@@ -80,7 +80,7 @@ Finally Part Five, structured in two chapters, explains first how to administer 
 
 			Fabien Pinckaers was only eighteen years old when he started his first company. Today, over ten years later, he has founded and managed several new technology companies, all based on Free / Open Source software.
 
-			He originated Tiny ERP, now Open ERP, and is the director of two companies including Tiny sprl, the editor of Tiny ERP. In three years he has grown the Tiny group from one to sixty-five employees without loans or external fund-raising, and while making a profit.
+			He originated Tiny ERP, now Open ERP, and is the director of two companies including Tiny sprl, the editor of Open ERP. In three years he has grown the Tiny group from one to sixty-five employees without loans or external fund-raising, and while making a profit.
 
 			He has also developed several large scale projects, such as Auction-in-Europe.com, which become the leader in the art market in Belgium, Even today people sell more art works there than on ebay.be.
 
@@ -126,7 +126,7 @@ I address my thanks to all of the team at Tiny for their hard work in preparing,
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their

@@ -63,7 +63,7 @@ To the right of the partner form you'll find all of the actions, reports and sho
 
 	You'll then receive an API number, a login and a password which you can use in Open ERP to send SMS messages to your partners.
 
-	Or you can just create a new module based on the inbuilt SMS functions, targeted at any of the other SMS service suppliers, and use that instead.
+	Or you can just develop a new module based on the inbuilt SMS functions, targeted at any of the other SMS service suppliers, and use that instead.
 
 To send an SMS message to a partner or a selection of several partners, first select the partners then click the  *Send SMS*  Action icon.
 

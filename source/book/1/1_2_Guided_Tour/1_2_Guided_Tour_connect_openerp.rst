@@ -99,9 +99,9 @@ Each user of the system can work in his or her own language. More than twenty la
 
 As administrator you can install a new main working language into the system.
 
-	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language* n the main menu window.
+	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language* in the main menu window,
 
-	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation* 
+	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation*,
 
 	#. When the message  *Installation finished* appears, click  *OK* to return to the menu.
 
@@ -109,8 +109,7 @@ To see the effects of this installation change the preferences of your user to c
 
 .. tip::   **More information**  *Navigating the menu* 
 
-	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll simply get “use menu Administration > Translations > Load New Language”.
-
+	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu Administration > Translations > Load New Language”.
 
 .. index:: Requests
 
