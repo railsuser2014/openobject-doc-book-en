@@ -7,7 +7,7 @@ You'll now explore the database \ ``openerp_ch02``\   with these profile modules
 
 	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use Administration > Translation > Load a New Language.
 
-Depending on the user you're connected as the page appears differently from the Main Menu that showed before. Using the installation sequence above, in version 4.2.2, the Project Dashboard for a project member is assigned as the Administrator's home page. It shows a summary of the information required to start the day effectively. The dashboard contains:
+Depending on the user you're connected as the page appears differently from the Main Menu that showed before. Using the installation sequence above, certain dashboards may be assigned as various users' home pages. They show a summary of the information required to start the day effectively. A project dashboard might contains:
 
 * a list of the next tasks to carry out,
 
@@ -21,12 +21,11 @@ Depending on the user you're connected as the page appears differently from the 
 
 Each of the lists can be reordered by clicking on the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click  *Zoom*  above it. 
 
+.. image:: images/admin_project_dashboard.png
+	:align: center
+    :scale: 95
 
-	.. image:: images/admin_project_dashboard.png
-		:align: center
-   :scale: 95
-
-*Project Dashboard*
+*Project Dashboard.*
 
 
 Users' home pages are automatically reassigned during the creation or upgrading of a database. It's usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the home page of any user.
@@ -62,10 +61,10 @@ Above the partner list you'll see a search form that enables you to quickly filt
 If you've applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners (the web client defaults to \ ``20``\  , but you can select a maximum of \ ``100``\   on a page). If you want to display other records you can search for them or navigate through the whole list using the  *First*  /  *Previous*  /  *Next*  /  *Last*  arrows.
 
 
-	.. image:: images/partner_search_tab.png
-		:align: center
+.. image:: images/partner_search_tab.png
+	:align: center
 
-*Standard partner search*
+*Standard partner search.*
 
 
 .. tip::   **GTK client**  *List limit of 80* 
@@ -137,14 +136,11 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 	In the web client you'll see hyperlink shortcuts on several of the fields on a form that's in Read-Only mode, so that you can move onto the form for those entries. When the web form is in Edit mode, you can instead hold down the control button on the keyboard and right-click with the mouse button in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK client.
 
 	You can quickly try this out by going to any one of the sales orders in Sales Management > Sales Order > All Sales Orders and seeing what you can reach from the partner field on that sales order form using either the web client with the form in both read-only and in edit mode, or with the GTK client.
-
-
----------
 	
-	.. image:: images/familiarization_sale_partner.png
-   		:align: center
+.. image:: images/familiarization_sale_partner.png
+   	:align: center
 	   
-*Links for a partner appear in an order form*
+*Links for a partner appear in an order form.*
 
 
 Before moving on to the next module, take a quick look into the  *Partners > Configuration*  menu, particularly  *Categories*  and  *Localisation* . They contain some of the demonstration data that you installed when you created the database.
@@ -188,7 +184,7 @@ Dashboards are adaptable to the needs of each user and each company.
 
 .. tip::   **Note**  *Construction of dashboards* 
 
-	Version 4.3 of Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
+	Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
 
 .. index::
    single: Products
@@ -217,13 +213,13 @@ The value of this approach for some sectors is that you can just define a templa
 
 			* Size (S, M, L, XL, XXL),
 
-			* Co lour (white, grey, black, red),
+			* Colour (white, grey, black, red),
 
 			* Quality of Cloth (125g/m2, 150g/m2, 160g/m2, 180g/m2),
 
 			* Collar (V, Round).
 
-			This separation of variant types requires the optional module fashion. Using it means that you can avoid an explosion in the number of products to manage in the database. If you take the example above it's easier to manage a template with 15 variants in four different types than 160 completely different products. This module is available in the extra_addons list (although it had not been updated, at the time of writing, to work in release 4.2.2 of Open ERP).
+			This separation of variant types requires the optional module ``product_variant_multi``. Using it means that you can avoid an explosion in the number of products to manage in the database. If you take the example above it's easier to manage a template with 15 variants in four different types than 160 completely different products. This module is available in the extra_addons list (it had not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The  *Products*  menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
 
@@ -369,12 +365,10 @@ Open ERP's replenishment management rules enable the system to generate draft p
 
 	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state is marked by nodes colored red.
 
----------
+.. image:: images/purchase_workflow.png
+   	:align: center
 
-	.. image:: images/purchase_workflow.png
-   		:align: center
-
-*Purchase order workflow*
+*Purchase order workflow.*
 
 Project Management
 -------------------
@@ -384,10 +378,10 @@ Open ERP's project management tools enable you to handle the definition of task
 All projects are hierarchically structured. You can review all of the projects from the menu  *Project Management > All Projects*  . To view a project's plans, select a project line and then click  *Print* . Then select  *Gantt diagram*  to obtain a graphical representation of the plan.
 
 
-	.. image:: images/familiarization_project_gantt.png
-   		:align: center
+.. image:: images/familiarization_project_gantt.png
+   	:align: center
 
-*Project Planning*
+*Project Planning.*
 
 
 You can run projects related to Services or Support, Production or Development – it's a universal module for all enterprise needs.

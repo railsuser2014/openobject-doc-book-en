@@ -90,10 +90,10 @@ You'll be asked what View Mode you want during the Configuration stage.
 more cluttered than the *Simple Interface* because it shows you all the menu
 options. You don't need any additional users.
 
-Then install the *sale* module for the first example below, which installs
-several other modules as dependencies. Also install some of the hr modules for
-the second example below, such as *hr_attendence*, *hr_contract*,
-*hr_holidays*, and *hr_holidays_request*.
+Then install the ``sale`` module for the first example below, which installs
+several other modules as dependencies. Also install some of the ``hr`` modules for
+the second example below, such as ``hr_attendence``, ``hr_contract``,
+``hr_holidays``, and ``hr_holidays_request``.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.
 Selecting *None* is fine: you can also try one that matches your own
@@ -116,8 +116,8 @@ top right of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
 node whose left edge is coloured maroon rather than grey.
 
-    .. image:: images/process_quotation_flow.png
-       :align: center
+.. image:: images/process_quotation_flow.png
+    :align: center
 
 *Example of a process handling a customer order quotation.*
 
@@ -146,8 +146,8 @@ transition:
 * A list of the roles that can carry out the transition,
 * The actions available to you from the state. 
 
-    .. image:: images/process_transition_zoom.png
-       :align: center
+.. image:: images/process_transition_zoom.png
+    :align: center
 
 *Detail of a transition in the process.*
 
@@ -162,8 +162,8 @@ This dynamic response is extremely useful for learning about the software. It
 gives you a high-level veiw of the different actions carried out and their
 results.
 
-    .. image:: images/process_sale_flow.png
-       :align: center
+.. image:: images/process_sale_flow.png
+    :align: center
 
 *The process after confirming a process into an order.*
 
@@ -186,8 +186,8 @@ Open the employee form for Fabien Pinckaers from the menu *Human Resources >
 Employees > All Employees*. Click the *Process* button to open the detailed
 process of engagement.
 
-    .. image:: images/process_employee_flow.png
-       :align: center
+.. image:: images/process_employee_flow.png
+    :align: center
 
 *Example of a process engaging a new employee.*
 
@@ -215,8 +215,8 @@ documents to be completed and posted or faxed to the institutions:
 * Fax for insurance declarations,
 * Statutary forms for government departments.
 
-    .. image:: images/process_document.png
-       :align: center
+.. image:: images/process_document.png
+    :align: center
 
 *Example of a process required for the declarations for a new employee.*
 
@@ -240,8 +240,8 @@ a document). Changing a workflow will have a direct impact on the behaviour of
 the software in response to user actions. You handle all possible exceptions
 there so that the software is robust.
 
-    .. image:: images/process_sale_workflow.png
-       :align: center
+.. image:: images/process_sale_workflow.png
+    :align: center
 
 *Example of a workflow handling a customer order.*
 
@@ -250,8 +250,8 @@ and its documents. They are used by end users to locate an action for more
 complete handling. A change of user process won't have any effect on the
 software but will show the user another way of working on a given problem.
 
-    .. image:: images/process_sale_process.png
-       :align: center
+.. image:: images/process_sale_process.png
+    :align: center
 
 *Example of a process handling a customer order.*
 
@@ -262,10 +262,11 @@ reassure him'. As well as providing user help, processes provide functions such
 as:
 
 * integration with Open ERP help and the company's quality manual,
+
 * showing the user menu for finding a specific document.
 
-    .. image:: images/process_cross_worfklow_process.png
-       :align: center
+.. image:: images/process_cross_worfklow_process.png
+    :align: center
 
 *Relationship between workflow and user process.*
 
@@ -284,8 +285,8 @@ workflow editor click on the link to the bottom left of a document and select
 the menu *Customize > Manage Workflows*. Open ERP opens a graphical editor to
 modify the workflow for the selected document type.
 
-    .. image:: images/process_workflow_editor.png
-       :align: center
+.. image:: images/process_workflow_editor.png
+    :align: center
 
 *Workflow editor modifying the behaviour of invoices.*
 
@@ -308,8 +309,8 @@ the processes it knows about that involve such forms:
 * tracing customer orders in pre-sales,
 * processes for visiting customers and handling expenses.
 
-    .. image:: images/process_screen.png
-       :align: center
+.. image:: images/process_screen.png
+    :align: center
 
 *Button for entering a user process from a form.*
 
@@ -324,8 +325,8 @@ click on the title of the state. For example you can click on the invoice in
 the customer order management workflow to see in detail how that invoice is
 handled.
 
-    .. image:: images/process_subflow_icon.png
-       :align: center
+.. image:: images/process_subflow_icon.png
+    :align: center
 
 *A state that refers to another workflow.*
 
@@ -334,11 +335,13 @@ transition) to get a help balloon about this transition to appear. Open ERP
 then shows you:
 
 * A description of the transition,
+
 * The actions you can take at this step,
+
 * The roles you need to make anything happen from this step.
 
-    .. image:: images/process_transition.png
-       :align: center
+.. image:: images/process_transition.png
+    :align: center
 
 *Detail of a transition in a workflow.*
 
@@ -354,8 +357,8 @@ Use the menus under *Administration > Customization > Enterprise Processes* To
 define new processes or modify existing processes. When entering a process,
 Open ERP shows you the list of states available for that process.
 
-    .. image:: images/process_form.png
-       :align: center
+.. image:: images/process_form.png
+   :align: center
 
 *Form for defining a process.*
 
@@ -375,12 +378,40 @@ Once the node has been defined you should set the transitions leaving this
 object. For each transition you can:
 
 * Give the leaving and destination states,
+
 * Set up a list of buttons that start various transitions in the process,
+
 * Map between workflow transitions and the document that's selected,
+
 * Put an explanatory notice in different languages.
 
-    .. image:: images/process_transition_form.png
-       :align: center
+.. image:: images/process_transition_form.png
+    :align: center
 
 *Screen for defining a process transition.*
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

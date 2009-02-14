@@ -11,7 +11,7 @@ To illustrate this concept of stock management, see how stock moves are generate
 
 * Manufacturing.
 
-For this chapter you should start by installing the *stock* module (which also installs a few dependencies with it) into a new minimal database populated with Tiny's demonstration data. You don't need to choose any particular chart of accounts during configuration of the database, but you can if you want to.
+For this chapter you should start by installing the ``stock`` module (which also installs a few dependencies with it) into a new minimal database populated with Tiny's demonstration data. You don't need to choose any particular chart of accounts during configuration of the database, but you can if you want to.
 
 The structure of stock locations is shown by the figure above. Stocks are assumed to be totally empty and no operation is in progress nor planned.
 
@@ -101,3 +101,28 @@ So you've now got the outcome you need from the consumption of raw materials and
     You might already have noticed a useful effect of this approach: if you do a stock valuation in the “Default Production” location you get a statement of value created by your company (as a negative figure). Stock valuation in any given location is calculated by multiplying quantities of products in stock by their cost. In this case the raw material value is deducted from the finished product value.
 
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

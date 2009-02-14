@@ -25,21 +25,21 @@ To set a system up for these examples, create a new database with demonstration 
 
 You'll be asked what View Mode you want during the Configuration stage. *Extended Interface* is recommended at this stage. You don't need any additional users.
 
-Then install the *purchase* module, which installs several other modules as dependencies. Continue the remainder of this chapter logged in as the admin user.
+Then install the ``purchase`` module, which installs several other modules as dependencies. Continue the remainder of this chapter logged in as the admin user.
 
 Price request from the supplier
 -------------------------------
 
 To enter data for a new supplier price request, use the menu *Purchase Management > New Purchase Order*. Open ERP opens a blank purchase form that you use for requesting prices from a supplier. This is shown in the figure below. If the price request came from an automatic procurement created by Open ERP you'll find in the *Origin* field a reference to the document that generated the request.
 
-    .. image:: images/purchase_form.png
-        :align: center
+.. image:: images/purchase_form.png
+    :align: center
 
 *Data entry for a supplier order.*
 
 .. tip:: **Point**   *Managing Alerts*
 
-    If you install the *warning* module you will be able to define alerts that will appear when the purchaser enters a price request or order. You can set alerts on the product or on the supplier.
+    If you install the ``warning`` module you will be able to define alerts that will appear when the purchaser enters a price request or order. You can set alerts on the product or on the supplier.
 
 The internal reference, the date, and the warehouse that the products should be delivered to are completed automatically by Open ERP but you can change these values if you need. Select the supplier. Once the supplier has been selected, Open ERP then automatically completes the contact address for the supplier. The pricelist is also completed when you select the supplier. This should bring in all of the conditions that you've negotiated with the supplier for a given period.
 
@@ -49,8 +49,8 @@ The internal reference, the date, and the warehouse that the products should be 
 
 Once the main body of the purchase order has been completed you can enter the product lines.
 
-    .. image:: images/purchase_line_form.png
-       :align: center
+.. image:: images/purchase_line_form.png
+    :align: center
 
 *Order line on a  supplier order.*
 
@@ -74,16 +74,16 @@ If you work with management by case you can also set the analytic account that s
 
 .. tip:: **Point**   *Management by case*
 
-    The analytic accounts will be very useful for all companies that manage costs by case, by site, by project or by folder. To work with several analytic axes you can install the module *purchase_analytic_plans*.
+    The analytic accounts will be very useful for all companies that manage costs by case, by site, by project or by folder. To work with several analytic axes you can install the module ``purchase_analytic_plans``.
 
-For that the analytic account is automatically selected as a function of the partner, the date, the products or the user, you can install the module *account_analytic_default* (which is installed automatically by purchase_analytic_plans, since the latter depends on it).
+For that the analytic account is automatically selected as a function of the partner, the date, the products or the user, you can install the module ``account_analytic_default`` (which is installed automatically as a dependency of ``purchase_analytic_plans``, since the latter depends on it).
 
 In the second tab of the product line you can enter a note that will be attached when the order confirmation or price quotation is printed. This note can be predefined on the product form to automatically appear on each order for that product. For example you can put “Don't forget to send by express delivery as specified in our contract reference 1234.”
 
 Once the document is encoded, you can print it and Open ERP gives you the price quotation to send to the supplier. You can set a note for the attention of the supplier in the form's third tab.
 
-    .. image:: images/purchase_quotation.png
-       :align: center
+.. image:: images/purchase_quotation.png
+    :align: center
 
 *Printing the supplier price quotation.*
 
@@ -95,14 +95,14 @@ When you want to approve the order, use the button *Confirm ??? Supplier*. The p
 
 You can confirm the order but not validate it straightaway. Do this when you want to validate the order on receipt of order acknowledgement from the supplier. This gives you an intermediate state for all orders waiting validation from the supplier using the menu *Purchase Management > Supplier Orders > Orders awaiting validation*.
 
-    .. image:: images/purchase_process.png
-       :align: center
+.. image:: images/purchase_process.png
+    :align: center
 
 *Supplier order process.*
 
 .. tip:: **Point**   *Supplier validation*
 
-    If you want to automate the data entry stage at goods receipt, install the module *purchase_approve*. This will automatically validate all the orders that have been confirmed.
+    If you want to automate the data entry stage at goods receipt, install the module ``purchase_approve``. This will automatically validate all the orders that have been confirmed.
 
 Goods receipt
 --------------
@@ -119,8 +119,8 @@ Just as you saw in the chapter on Stock Management, if you receive only part of 
 
 After receiving the goods, Open ERP will show you which orders are open and the state of their receipt and invoicing if you return to the list of orders.
 
-    .. image:: images/purchase_list.png
-       :align: center
+.. image:: images/purchase_list.png
+    :align: center
 
 *List of open orders, and their receipt and invoice status.*
 
@@ -137,8 +137,8 @@ To control supplier invoicing, Open ERP provides three systems as standard, whic
 
 The mode of invoicing control is set in the second tab of the purchase order in the field *Invoicing*. 
 
-    .. image:: images/purchase_form_tab2.png
-       :align: center
+.. image:: images/purchase_form_tab2.png
+    :align: center
 
 *Supplier order, invoice control.*
 
@@ -174,17 +174,17 @@ The invoices are then handled just like the controlled from On Order. Once the i
 
 .. tip:: **Point**   *Delivery Charges*
 
-    To manage delivery charges, install the module *purchase_delivery*. This will automatically add delivery changes to the creation of the draft invoice  as a function of the products delivered or ordered.
+    To manage delivery charges, install the module ``purchase_delivery``. This will automatically add delivery changes to the creation of the draft invoice as a function of the products delivered or ordered.
 
 .. index:: Tender
 
 Tenders
 --------
 
-To manage tenders, you should use the module *purchase_tender*. This lets you create several supplier price reqests for a single supply requirement. Once the moduel is installed, Open ERP adds a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
+To manage tenders, you should use the module ``purchase_tender``. This lets you create several supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
-    .. image:: images/purchase_tender.png
-       :align: center
+.. image:: images/purchase_tender.png
+    :align: center
 
 *Defining a tender.*
 
@@ -234,7 +234,7 @@ Those costs that can be fixed for the whole year bring certain advantages:
 
 * accounting is simplified because there's a direct relationship between the value of stock and the number of items received.
 
-To automate periodic revaluation of the standard price you can use the module *product_extended*. This will add an action on the product form enabling you to set a date all the selected products. It will then recalculate the price of the products as a function of the cost of raw materials and the manufacturing operations given in the routing.
+To automate periodic revaluation of the standard price you can use the module ``product_extended``. This will add an action on the product form enabling you to set a date all the selected products. It will then recalculate the price of the products as a function of the cost of raw materials and the manufacturing operations given in the routing.
 
 Weighted average
 -----------------
@@ -259,8 +259,8 @@ At each goods receipt the product price is recalculated using the following acco
 
 If the product are managed as a weighted average, at each reception of product, Open ERP will open a window that enables you to specify the price of the product received. The purchase price is by default proposed from the purchase order. But you can change the price to, for example, add the cost of delivery to the different received products.
 
-    .. image:: images/purchase_pmp.png
-       :align: center
+.. image:: images/purchase_pmp.png
+    :align: center
 
 *Goods receipt of products managed in weighted average.*
 
@@ -272,41 +272,41 @@ Analyis of purchases
 Elementary statistics
 ----------------------
 
-To get statistics about your purchases you can install the modules *report_purchase* and *product_margin*.
+To get statistics about your purchases you can install the modules ``report_purchase`` and ``product_margin``.
 
 The first, report_purchase, will add two new reports in your purchase menu, analysis of purchases by month and by product, and analysing product by month and by product category. To use these reports use the menu *Purchase Management > Reporting > This month > Purchases by product*.
 
-    .. image:: images/purchase_report.png
-       :align: center
+.. image:: images/purchase_report.png
+    :align: center
 
 *Analysis of purchases over the month by product.*
 
-This analysis carries on the supplier orders and not on the invoices or the quantities effectively received. To get an analysis by product, use the module *product_margin*. The function of this module is described in detail in the chapter on Sales Management.
+This analysis carries on the supplier orders and not on the invoices or the quantities effectively received. To get an analysis by product, use the module ``product_margin``. The function of this module is described in detail in the chapter on Sales Management.
 
 To analyze the received quantities, you can use the statistical moduels based on the management of stock.
 
 Supplier relationship management
 =================================
 
-To manage supplier relations, you should install the *CRM_Configuration* module. You will then be able to manage supplier complaints and integrate them with your emails and document management.
+To manage supplier relations, you should install the ``crm_configuration`` module. You will then be able to manage supplier complaints and integrate them with your emails and document management.
 
-Once you've install the CRM module check the option *Complaints*. Open ERP then manages the configuration of menus for the management of supplier complaints.
+Once you've installed the CRM module, check the checkbox by the *Complaints* option. Open ERP will then create a menu configuration for managing supplier complaints.
 
-    .. image:: images/crm_config.png
-       :align: center
+.. image:: images/crm_config.png
+    :align: center
 
 *Selection of the management of complaints in the CRM installation.*
 
 Once the module is installed you can use the menu *CRM & SRM > After Sales Service > Complaints > New Supplier Complaint*.
 
-    .. image:: images/crm_complaints.png
-       :align: center
+.. image:: images/crm_complaints.png
+    :align: center
 
 *Data entry screen for a supplier complaint.*
 
-The CRM module has many reports predefined. You can then analyse:
+The CRM module has many reports predefined. You can analyse:
 
-* the number and the gravity of the complaints by supplier or user,
+* the number and the severity of the complaints by supplier or user,
 
 * the response time of your suppliers to your requests,
 
@@ -317,7 +317,7 @@ Analytic accounts
 
 To manage purchases by project you should use the analytic accounts. On each line of a supplier order you can note an analytic account. The analytic costs linked to this purchase will be managed by Open ERP to the receipt and confirmation of the supplier invoice.
 
-The *hr_timesheeet_invoice* module lets you reinvoice the analytic costs automatically by reference to the parameters in the analytic accounts: such as pricelist, end customer, maximum amount, employee ????
+The ``hr_timesheet_invoice`` module lets you reinvoice the analytic costs automatically by reference to the parameters in the analytic accounts: such as pricelist, end customer, maximum amount, employee ????
 
 So you can put an inverse order/invoice workflow in place based on the analytic accounts. If you're working 'Make to Order', the workflow will be:
 
@@ -341,5 +341,30 @@ Re-invoicing based on costs you'd get the following workflow:
 
 .. tip:: **Point**   *Analytic multiplans*
 
-    If you want several analysis plans you have to install the module *purchase_analytic_plans*. These enable you to split a line on a supplier purchase order into several accounts and analytic plans. Look back at the chapters on accounting for more information on the use of analytic accounts.
+    If you want several analysis plans you should install the module ``purchase_analytic_plans``. These enable you to split a line on a supplier purchase order into several accounts and analytic plans. Look back at the chapters on accounting for more information on the use of analytic accounts.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

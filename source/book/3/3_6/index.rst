@@ -50,7 +50,7 @@ So accounting is too often under-utilized. The information it brings makes it a 
 
 Open ERP's general accounting and analytic accounting handle these needs well because of the close integration between all of the application modules. Furthermore, the transactions, the actions and the financial analyses happen in real time, so that you can not only monitor the situation but also manage it effectively.
 
-The accounting module in Open ERP covers general accounting, analytic accounting, and auxiliary and budgetary accounting. It's double-entry, multi-currency and multi-company.
+The ``accounting`` module in Open ERP covers general accounting, analytic accounting, and auxiliary and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 .. index::
    single: Accounting
@@ -79,7 +79,7 @@ The accounting module in Open ERP covers general accounting, analytic accountin
 
 	* if the companies share many documents, you can register them in the same database and install Open ERP's multi-company documents to finely manage access rights,
 
-	* it's possible to synchronize specified document types in several databases using the synchro module.
+	* it's possible to synchronize specified document types in several databases using the ``synchro`` module.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the double entry of data into accounting documents. So in Open ERP an Order automatically generates an Invoice, and the Invoice automatically generates the accounting entries. These in turn generate tax submissions, customer reminders, and so on. Such strong integration enables you to:
 
@@ -101,3 +101,28 @@ One of the great advantages of integrating accounts with all of the other module
 
 All the accounts are held in the default currency (which is specified in the company definition), but each account and/or transaction can also have a secondary currency (which is defined in the account). The value of multi-currency transactions is then tracked in both currencies.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

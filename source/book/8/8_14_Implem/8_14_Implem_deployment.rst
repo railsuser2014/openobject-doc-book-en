@@ -144,9 +144,9 @@ When you've installed the server you should create at least two databases:
 
 .. tip::   **Note**  *Version numbering* 
 
-	Open ERP uses a version numbering model that comprises 3 numbers A.B.C (for example 4.2.2) where changes in the number A signify a major functional change, changes to number B signify an update that includes a batch of fault fixes and some new functionality, and the number C generally refers to some limited updates or fixes to the existing functionality.
+	Open ERP uses a version numbering model that comprises 3 numbers A.B.C (for example 4.2.2 or 5.0.0) where changes in the number A signify a major functional change, changes to number B signify an update that includes a batch of fault fixes and some new functionality, and the number C generally refers to some limited updates or fixes to the existing functionality.
 
-	The number B is notable: if it's an odd number, (for example 4.3.0) it's for a development version which isn't designed for a production environment. The even numbers are for stable versions.
+	The number B is notable: if it's an odd number, (for example 4.3.2 or 5.1.0) it's for a development version which isn't designed for a production environment. The even numbers are for stable versions.
 
 If you have prepared a data module for Open ERP (that is a module that consists just of data, not altered functionality), you should test it in your development version and check that it doesn't require any more manual adjustments. If the import runs correctly, it shows that you're ready to load your data in the production database.
 

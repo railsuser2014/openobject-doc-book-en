@@ -10,7 +10,7 @@ The master production plan, sometimes called the MPS (Master Production Schedule
 
     Also called the Production Plan, this tools is also very useful for traded product which aren't manufactured. You can then use it for stock management with purchased and manufactured products.
 
-To be able to use the production plan, you must install the *stock_planning* module which can be found amongst Open ERP's extra_addons rather in the main set of addons.
+To be able to use the production plan, you must install the ``stock_planning`` module which can be found amongst Open ERP's extra_addons rather in the main set of addons.
 
 .. index:: Forecasts
 
@@ -27,15 +27,15 @@ If your products take several days to assemble it's preferable to have a weekly 
 
 To do this use the menu *Sales Management > Configuration > Create Sales Periods*. A window appears enabling you to automatically define the next periods that will be provided for stock management.
 
-    .. image:: images/sale_period.png
-       :align: center
+.. image:: images/sale_period.png
+    :align: center
 
 *Defining periods for stock management.*
 
 Salespeople can then enter their sales forecasts by product and by period using the menu *Sales Management > Sales Forecasts > My Sales Forecasts*. The forecasts can be made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amount. This can be modified manually as needed before completion.
 
-    .. image:: images/stock_sale_forecast.png
-       :align: center
+.. image:: images/stock_sale_forecast.png
+    :align: center
 
 *Sales Forecast to help create a master production plan.*
 
@@ -65,8 +65,8 @@ For each period and product Open ERP gives you the following information:
 
 * sales forecasts, which represent the sum of forecasts made by the salespeople.
 
-    .. image:: images/stock_forecast.png
-       :align: center
+.. image:: images/stock_forecast.png
+    :align: center
 
 *The master production schedule (MPS).*
 
@@ -77,3 +77,28 @@ You can also open the production plan for past periods. In this case Open ERP sh
 If you don't have automated restocking rules for a product you can at any time start a restocking based on the estimates of the production plan. To do this press the button 'Start restocking'. Open ERP manages the forecast of restocking for an amount equal to the entries 'forecast'.
 
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

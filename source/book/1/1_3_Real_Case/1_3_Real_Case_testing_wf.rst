@@ -89,10 +89,10 @@ To check actual stock levels, use the menu  *Inventory Control > Location Struct
 Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \ ``Locations``\   text itself), and then click the  *Print*  button to the top right of the form to test the available different reports (such as  *Lots by Location* ). You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \ ``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
 
 
-	.. image::  images/lots_by_location_pdf.png
-   		:align: center
+.. image::  images/lots_by_location_pdf.png
+   	:align: center
 
-*List of products and their stock levels*
+*List of products and their stock levels.*
 
 
 .. tip::   **Web client**  *Returning to Open ERP after printing PDF reports* 
@@ -175,7 +175,7 @@ The stores manager selects the menu  *Inventory Control > Packing Lists > Sendin
 
 	At the moment your Sales Order is waiting for products to be reserved to fulfil it. A stock reservation activity takes place periodically to calculate the needs, which also takes customer priorities into account. The calculation can be started from the menu Production > Calculate Requirements. Running this automatically reserves products. 
 
-	If you don't want to have to work out your stock needs but have a lean workflow you can install the mrp_jit (Just In Time) module.
+	If you don't want to have to work out your stock needs but have a lean workflow you can install the ``mrp_jit`` (Just In Time) module.
 
 Although Open ERP has automatically been made aware that items on this order will need to be despatched, it has not yet assigned any specific items from any location to fulfil it. It's ready to move \ ``6.00``\  \ ``Titanium Alloy Radiators``\   from the  *Stock*  location to the  *Output*  location (which were defined by the Sale Shop in the Sales Order), so start this process by clicking  *Assign* . The  *Move*  line has now changed from the \ ``Confirmed``\   state to the \ ``Assigned``\   state.
 
@@ -231,10 +231,10 @@ Registering an invoice payment by a customer is essentially the same as the proc
 	#. Select the  *Journal* \ ``Bank Journal``\  and click  *Pay Invoice*  The invoice is then marked as paid, and you're returned to the  *Main Menu* 
 
 
-	.. image::  images/familiarization_invoice.png
-   		:align: center
+.. image::  images/familiarization_invoice.png
+   	:align: center
 
-*A screen showing the invoice to be paid*
+*Screen showing the invoice to be paid.*
 
 
 Check your Chart of Accounts as before to see that you now have a healthy bank balance in the \ ``Petty Cash``\   account.

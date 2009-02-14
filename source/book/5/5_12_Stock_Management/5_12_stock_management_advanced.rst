@@ -21,13 +21,13 @@ Just in Time
 
 By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts use the menu Administration > Configuration > Planning > Actions Planned. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
-Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module *mrp_jit* to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
+Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module ``mrp_jit`` to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
 
 Then if you make a customer order with a product that's *Make To Order* the quotation request for a supplier will be generated. 
 
  ..tip :: *Point** *Delivery from the supplier or to the customer*
 
-    The *sale_supplier_direct_delivery* module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
+    The ``sale_supplier_direct_delivery`` module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
 
 This mode is not always advisable. Each order is handled once it's been confirmed. Then if an order is to be delivered in three months the scheduler will reserve goods in stock for each order once it's been confirmed. It would have been more efficient to leave these products available for other orders.
 
@@ -47,8 +47,8 @@ Planning
 
 You've seen that most Open ERP documents can be changed in a planning view. It's the same for deliveries and goods receipts. You can put them into a calendar view at all times to plan your deliveries or goods receipts.
 
-    .. image:: images/stock_planning.png
-       :align: center
+.. image:: images/stock_planning.png
+    :align: center
 
 *Planning the deliveries of customer products.*
 
@@ -66,8 +66,8 @@ Partial deliveries, sometimes call Back Orders, are generated automatically by O
 
 If you leave the quantities alone, Open ERP confirms and closes the order for delivery or reception. If you modify a quantity, Open ERP will automatically generate a second delivery or reception order for the remaining quantities. The first will be confirmed and the second will remain on the list of deliveries (or receipts) waiting.
 
-    .. image:: images/stock_picking_wizard.png
-       :align: center
+.. image:: images/stock_picking_wizard.png
+    :align: center
 
 *Confirmation screen for delivered quantities.*
 
@@ -94,8 +94,8 @@ Manual data entry of goods receipt
 
 To enter data about goods receipt manually you must use the menu Stock Management > Goods Receipt > New items received. Then enter the necessary data manually in the goods receipt form.
 
-    .. image:: images/stock_getting.png
-       :align: center
+.. image:: images/stock_getting.png
+    :align: center
 
 *Manual data entry for product receipt.*
 
@@ -106,8 +106,8 @@ If you use supplier orders in Open ERP, product receipts are automatically gener
 
 In this case Open ERP generates a list of all products waiting to be received from the menu *Stock Management > Incoming Products > Packings to Process*.
 
-    .. image:: images/stock_packing_in.png
-       :align: center
+.. image:: images/stock_packing_in.png
+    :align: center
 
 *List of items waiting for receipt.*
 
@@ -126,10 +126,10 @@ In this case you can manually create a new goods receipt using the menu *Stock M
 Product routing
 ----------------
 
-You should install the *stock_location* module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
+You should install the ``stock_location`` module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
 
-    .. image:: images/product_location.png
-       :align: center
+.. image:: images/product_location.png
+    :align: center
 
 *Managing the paths from one location to another in a product form.*
 
@@ -265,3 +265,28 @@ Operation            Quality Control
 
 Once this product has been received, Open ERP will then automatically manage the request for an internal movement to send it to the “Quality Control” location.
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

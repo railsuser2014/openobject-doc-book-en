@@ -24,7 +24,7 @@ If the enterprise doesn't have its own IT group, you're probably better off opti
 
 	SaaS (Software as a Service) offers are hosted by a supplier in the form of a monthly subscription which includes all the IT material (servers), system maintenance, hosting and support.
 
-	You can obtain a month's free trial from http://ondemand.openerp.com/, which lets you start rapidly without any integration cost or material to buy, or you can ask one of Tiny's partners for access to this or their own services.
+	You can obtain a month's free trial from Tiny's http://ondemand.openerp.com/, which lets you start rapidly without any integration cost or material to buy, or you can ask one of Tiny's partners for access to this or their own services.
 
 	This service can be particularly useful to small companies who want to grow their integrated management system rapidly, at low cost, based on the same robust general system architecture as that used by large banks.
 

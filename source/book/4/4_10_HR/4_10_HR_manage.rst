@@ -13,7 +13,7 @@ To establish a system that's integrated into a company's management you need to 
 
 	For Open ERP, “employee” represents all of the physical people who have an work contract with the company. This includes all types of contract: contracts with both fixed and indeterminate time periods, and also independent and freelance service contracts.
 
-	A “user” is a physical person who's given access to the company's systems. Most employees are users but some users aren't employees: external partners can have access to parts of the system. You can manage them through the portal modules.
+	A “user” is a physical person who's given access to the company's systems. Most employees are users but some users aren't employees: external partners can have access to parts of the system. You can manage them through the ``portal`` modules.
 
 Here are some examples of functions which depend on the list of employees:
 
@@ -30,11 +30,10 @@ Management of staff
 
 To define a new employee in Open ERP, use the menu  *Human Resources > Employees > New Employee* .
 
+.. image::  images/service_employee_form.png
+	:align: center
 
-	.. image::  images/service_employee_form.png
-	   :align: center
-
-*Form describing an employee*
+*Form describing an employee.*
 
 Start by entering the employee's  *Name*  and the company that this employee works for ( *Company* ). You can then create a new user of the Open ERP system which is linked to this employee by filling in the  *Username*  field. Even if the employee isn't a user, it's best if you create a system access for most of your staff just so that you can control their access rights from the outset.
 
@@ -66,11 +65,10 @@ Then type in the following information about the employee's working contract:
 
 *  *Employee's work team* 
 
+.. image::  images/service_timesheet_def.png
+	:align: center
 
-	.. image::  images/service_timesheet_def.png
-	   :align: center
-
-*Timesheet category for full time 38 hours per week*
+*Timesheet category for full time 38 hours per week.*
 
 The different timesheet categories can be defined in the menu  *Human Resources > Configuration > Timesheet Categories* .
 
@@ -79,11 +77,10 @@ Management of employment contracts
 
 \ ``hr_contract``\   *Contracts* 
 
+.. image::  images/service_hr_contract.png
+	:align: center
 
-	.. image::  images/service_hr_contract.png
-	   :align: center
-
-*Definition of a working contract for a given employee*
+*Definition of a working contract for a given employee.*
 
 You can enter information about the employment contract for the employee there.
 

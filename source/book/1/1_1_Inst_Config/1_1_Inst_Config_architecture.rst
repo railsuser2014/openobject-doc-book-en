@@ -33,7 +33,7 @@ responsive, so more satisfying to use.
 
     The main functional difference between the two Open ERP clients is the
     presence of the calendar view in the web client, which doesn't exist in the
-    GTK client at present (version 4.2.3). Apart from that you will find that
+    GTK client at present (versions 4.x and 5.0). Apart from that you will find that
     there are small differences in their general usability.
 
     The Tiny company will continue to support two clients for the foreseeable
@@ -48,9 +48,9 @@ An Open ERP system is formed by three main components:
 * the web server, a separate application called eTiny, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
 
 
-    .. image:: images/terp_arch_1.png
-       	:align: center
-       	:scale: 95
+.. image:: images/terp_arch_1.png
+    :align: center
+    :scale: 95
 
 .. tip::   **Terminology**  *eTiny – server or client?* 
 

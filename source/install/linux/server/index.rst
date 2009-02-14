@@ -21,9 +21,10 @@ You also need to install the following python libraries:
   * **pychart**
   * **pydot**
   * **mxdatetime**
-  * **xml**
+  * **xml**, **lxml** and **libxslt1**
   * **tz** (timezone library)
   * **PIL**: Python Imaging Library (required for *reportlab*)
+  * **vobject**: iCalendar and VCards parsing
 
 Example on Ubuntu
 +++++++++++++++++
@@ -37,14 +38,18 @@ On Ubuntu, these libraries are available in the following packages:
   * python-pydot
   * python-egenix-mxdatetime
   * python-xml
+  * python-lxml
+  * python-libxslt1
   * python-tz
   * python-imaging
+  * python-vobject
 
 To install the required libraries, you can do the following in your favorite
 shell: ::
 
     sudo apt-get install python python-psycopg2 python-reportlab \
-         python-egenix-mxdatetime python-xml python-tz python-pychart python-pydot
+         python-egenix-mxdatetime python-xml python-tz python-pychart \
+         python-pydot python-lxml python-libxslt1 python-vobject
 
 .. note::
 

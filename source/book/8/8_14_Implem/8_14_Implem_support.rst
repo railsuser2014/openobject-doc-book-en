@@ -23,9 +23,9 @@ There are four sources of code change for Open ERP:
 
 * patches supplied by Tiny to correct faults: after validation these patches won't cause any secondary effects,
 
-* minor updates, which gather the fault corrections together in one package, and are generally announced with a modification of the version number, such as from 4.2.0 to 4.2.1,
+* minor updates, which gather the fault corrections together in one package, and are generally announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
 
-* upgrades, which bundle both the fault corrections and the improvements to the functionality in a major release such as from 4.0.3 to 4.2.0.
+* upgrades, which bundle both the fault corrections and the improvements to the functionality in a major release such as from 5.0.3 to 5.2.0.
 
 * new functions generally released in the form of new modules.
 

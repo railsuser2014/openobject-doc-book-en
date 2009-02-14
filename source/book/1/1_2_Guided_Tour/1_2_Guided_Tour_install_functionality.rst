@@ -54,15 +54,15 @@ You'll now install a module named \ ``product``\  , which will enable you to man
 Open the list of uninstalled modules from  *Administration > Modules Management > Uninstalled Modules* . Search for the module by entering the name \ ``product``\   in the search screen then clicking it in the list that appears below it to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
 
 
-	.. image:: images/install_product_module.png
-   		:align: center
+.. image:: images/install_product_module.png
+   	:align: center
 
-*Installation of the product module*
+*Installation of the ``product`` module.*
       
 
 .. tip::   **Technique**  *Technical Guide* 
 
-	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu Administration > Modules Management > Installed Modules produces the most fruitful list. 
+	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu *Administration > Modules Management > Installed Modules* produces the most fruitful list. 
 
 	This report comprises a list of all the objects and all the fields along with their descriptions. The report adapts to your system and reflects any modifications you've made and all the other modules you've installed. 
 
@@ -89,11 +89,9 @@ When you return to the main menu you'll find the new customer relationship manag
 
 There is no particular relationship between the modules installed and the menus added. Most of the core modules add complete menus but some also add submenus to menus already in the system. Other modules add menus and submenus as they need. Modules can also add additional fields to existing forms, or simply additional demonstration data or some settings specific to a given requirement.
 
-
 .. index::
   single: Module; Dependencies
 ..
-
 
 .. tip::   **Technique**  *Dependencies between modules* 
 

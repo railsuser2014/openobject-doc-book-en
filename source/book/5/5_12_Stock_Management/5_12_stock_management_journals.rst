@@ -13,7 +13,7 @@ A company that does a lot of transport can organize its journals by delivery veh
 The different journals
 -----------------------
 
-Install the module *sale_journal* to work with journals. This adds three new concepts to Open ERP:
+Install the module ``sale_journal`` to work with journals. This adds three new concepts to Open ERP:
 
 * Invoicing journals,
 
@@ -34,17 +34,17 @@ Finally the delivery journals are used to post each item into a delivery journal
 Using the journals
 -------------------
 
-You'll now see how to use the journals to organize your stock management in practice. After installing the module sale_journal look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
+You'll now see how to use the journals to organize your stock management in practice. After installing the module ``sale_journal`` look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
 
-    .. image:: images/partner_property_view.png
-       :align: center
+.. image:: images/partner_property_view.png
+    :align: center
 
 *Partner form in invoicing mode.*
 
 You can create a new *Invoicing Journal* on a partner on the fly. You can show if the invoices should be grouped or not after the generation in the journal. Create a second invoicing journal 'End-of-Month Invoicing' which you can assign to another partner.
 
-    .. image:: images/invoice_mode.png
-       :align: center
+.. image:: images/invoice_mode.png
+    :align: center
 
 *Defining an invoicing journal.*
 
@@ -62,9 +62,34 @@ At the end of the month the invoicing management does the same work but in the j
 
 You can also enter a journal to confirm / cancel all the orders in one go. Then you can do several quotations and assign them in a journal and confirm or cancel them en masse at once.
 
-    .. image:: images/stock_jounral_form.png
-       :align: center
+.. image:: images/stock_jounral_form.png
+    :align: center
 
 *View of an order journal.*
 
 
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open ERP Press, Grand Rosière, Belgium

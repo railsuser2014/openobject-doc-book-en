@@ -28,9 +28,8 @@ You can add new orders using the menu  *Sales Management > Sales Order* .
 
 The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no accounting impact on the system until it's confirmed. When you approve the document, your estimate moves into the state \ ``In Progress``\  .
 
-
-	.. image::  images/service_sale_workflow.png
-	   :align: center
+.. image::  images/service_sale_workflow.png
+	:align: center
 
 *Process for handling a Sales Order*
 
@@ -103,9 +102,8 @@ Services are then entered onto timesheets by the various people who work on the 
 
 Open ERP then displays all of the costs that haven't yet been invoiced. You can filter the proposed list and click the appropriate action button to generate the corresponding invoices. You can select the level of detail which is reported on the invoice, such as the date and details of the services.
 
-
-	.. image::  images/service_timesheet_invoice.png
-	   :align: center
+.. image::  images/service_timesheet_invoice.png
+	:align: center
 
 *Screen for invoicing services*
 
@@ -113,7 +111,7 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 
 .. tip::   **Point**  *Project Management and analytic accounts* 
 
-	The menu Project Management > Analytic Accounts is only available once you have installed the module account_analytic_analysis. It provides various global financial and operational views of a project manager's projects.
+	The menu *Project Management > Analytic Accounts* is only available once you have installed the module ``account_analytic_analysis``. It provides various global financial and operational views of a project manager's projects.
 
 Select a project and open its analytic entries using the  *Costs to invoice*  button. You'll find a list of costs that can be invoiced to the client:
 
