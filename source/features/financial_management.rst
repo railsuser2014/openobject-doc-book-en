@@ -14,7 +14,7 @@ Key Points:
 -----------
 
 * Based on the analytic accounting
-* Fully integrated with human ressources for cost control
+* Fully integrated with human resources for cost control
 
 Integration Benefits:
 ---------------------

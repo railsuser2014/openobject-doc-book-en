@@ -28,7 +28,7 @@ Description
   
       You can assign an employee to a poste or a department for a
       defined period. This module is used to track availability and
-      reservations on human ressources.
+      reservations on human resources.
 
 Dependencies
 ------------

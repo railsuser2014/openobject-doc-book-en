@@ -26,7 +26,7 @@ Description
 
   This modules is an improvement of the basic planning module and offers additional functionalities for long term planning, such as:
           - planning of the functions that will be needed
-          - additional data for planned ressources: the start and end dates
+          - additional data for planned resources: the start and end dates
 
 Dependencies
 ------------
