@@ -173,7 +173,7 @@ In the  *Taxes*  area at the bottom left of the invoice you'll find the details 
 
 	You can double-click on one of the lines in the tax summary areas in the invoice.
 
-	Open ERP then shows you the detail of the tax charges which will effectively be your tax declaration at the end of the month.
+	Open ERP then shows you the detail of the tax charges which will effectively be your tax declaration at the end of the period.
 
 	It shows you the total that will be computed in the different parts of the legal declaration. This enables you to manage the declaration in Open ERP automatically.
 
@@ -256,7 +256,7 @@ Cancelling an invoice
 
 By default Open ERP won't allow you to cancel an invoice once it has been approved. Since accounting entries have been created you theoretically can't go back and delete them. However in many cases it's more convenient to cancel an invoice when there's an error than to produce a credit note and reconcile the two entries. Your attitude to this will be influenced by current legislation in your accounting jurisdiction and your adherence to accounting purity.
 
-Open ERP accommodates either approach. Canceling an invoice can be permitted by checking the box  *Allow Cancelling Entries*  in the Journal corresponding to this invoice. You'll then be allowed to cancel the invoice if the following two conditions are met:
+Open ERP accommodates either approach. Cancelling an invoice can be permitted by checking the box  *Allow Cancelling Entries*  in the Journal corresponding to this invoice. You'll then be allowed to cancel the invoice if the following two conditions are met:
 
 	#. The accounting entries haven't been reconciled or paid: if they have then you'll have to cancel the reconciliation. 
 
@@ -264,15 +264,15 @@ Open ERP accommodates either approach. Canceling an invoice can be permitted by 
 
 Cancelling an invoice has the effect of automatically modifying the corresponding accounting entries.
 
-When the invoice has been canceled you then have the possibility of putting it back into the \ ``Draft``\   state. This means that you can modify it and approve it again later.
+When the invoice has been cancelled you then have the possibility of putting it back into the \ ``Draft``\   state. This means that you can modify it and approve it again later.
 
 .. tip::   **Advice**  *Numbering invoices* 
 
-	Some countries require you to have contiguously number invoices with no break in the sequence. If, after canceling an invoice that you're not regenerating, you find yourself with a break in the numbering you must go and modify the sequence, redo the invoice and replace the sequence number with its original value.
+	Some countries require you to have contiguously numbered invoices with no break in the sequence. If, after cancelling an invoice that you're not regenerating, you find yourself with a break in the numbering you must go and modify the sequence, redo the invoice and replace the sequence number with its original value.
 
 	You can control the sequences using the menu Administration > Custom > Sequences > Sequences.
 
-Attention: canceling an invoice will cause a break in the number sequence of your invoices. You're strongly advised to recreate this invoice and re-approve it to fill the hole in the numbering.
+Attention: cancelling an invoice will cause a break in the number sequence of your invoices. You're strongly advised to recreate this invoice and re-approve it to fill the hole in the numbering.
 
 .. tip::   **Advantage**  *Duplicating a document* 
 
@@ -375,7 +375,7 @@ Open ERP automatically completes the  *Date Invoiced*  and the accounting perio
 .. index::
    single: Due Date
 
-The two pieces of information don't have to have the same date. Suppose for example that you receive an invoice on the 5th January but it's dated 31st December in the previous year by your supplier. In this case you can code it into the January accounting period and put the invoice date as 31st December. The due date will be based on the 31st December data, but the invoice will be recognized in the current fiscal year for the tax declaration.
+The two pieces of information don't have to have the same date. If, for example, you receive an invoice dated 5th January which relates to goods or services supplied before 31st December, the invoice may be coded into the December accounting period and thus be recognized in that period for the tax declaration, whilst the invoice can remain 5th January which remains the basis of the due date for payment.
 
 You can find that the amounts don't correspond with what your supplier has given you on paper for reasons that can include:
 

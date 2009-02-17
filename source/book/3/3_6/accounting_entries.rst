@@ -302,7 +302,7 @@ The workflow for managing payment is as follows:
 	
 *Workflow for handling payments to suppliers.*
 
-The system enables you to enter a series of payments to be carried out from your various bank accounts. Once the different payments have been registered you can validate the payment orders. During validation you can modify and approve the the payment orders, sending the order to the bank for electronic funds transfer or just printing chequesas you wish.
+The system enables you to enter a series of payments to be carried out from your various bank accounts. Once the different payments have been registered you can validate the payment orders. During validation you can modify and approve the the payment orders, sending the order to the bank for electronic funds transfer or just printing cheques as you wish.
 
 For example if you have to pay a supplier's invoice for a large amount you can split the payments amongst several bank accounts according to their available balance. To do this you can prepare several Draft orders and validate them once you're satisfied that the split is correct.
 

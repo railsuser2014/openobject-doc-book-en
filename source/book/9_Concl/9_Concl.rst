@@ -60,12 +60,6 @@ The wiki contains a large amount of information about the software, some current
 
 A database of all the modules available for use gives you free access to most of the known Open ERP extensions.
 
-        *Tiny Forge*
-
-* http://tinyforge.org
-
-You can investigate the collaborative development center Tiny Forge where Open ERP modules are developed.
-
         *Launchpad*
 
 https://code.launchpad.net/~openerp/

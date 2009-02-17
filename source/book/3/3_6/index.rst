@@ -28,7 +28,7 @@ In most real companies, accounting is limited to producing statutory reports and
 
 	In many small companies, the accounting function is poorly used.
 
-	Not only do you see the data for documents being entered into the system twice, but also the results are often just used to produce legal documentation and periodic printouts, some weeks later, of the balance and income statements.
+	Not only do you see the data for documents being entered into the system twice, but also the results are often just used to produce legal documentation and periodic printouts, some weeks later, of the balance sheet and income statements.
 
 	By contrast, integrating your accounts with your management system means that you can:
 

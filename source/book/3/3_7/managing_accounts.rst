@@ -120,7 +120,7 @@ To analyze the due date of customers and/or suppliers before starting the remind
 
 *  *Payable entries* .
 
-So you obtain the list of unreconciled entries in Receivable and Payable type accounts. You can then modify the date and the last follow-up and the level of reminder for each entry.
+You get a list of unreconciled entries in Receivable and Payable type accounts. You can then modify the date and the last follow-up and the level of reminder for each entry.
 
 To obtain a detailed report per partner use the menu  *Financial Management > Reporting > Follow-Ups* .
 

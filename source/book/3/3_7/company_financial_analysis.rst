@@ -142,13 +142,13 @@ This gives a description of the different parts of the dashboard, from top to bo
 
 *  *Draft invoices* : gives the list of invoices waiting to be approved by an accountant.
 
-*  *Costs to invoice* : gives the weekly change which can be, but haven't yet been, invoiced.
+*  *Costs to invoice* : gives the weekly changes which can be, but haven't yet been, invoiced.
 
 *  *Aged receivables* : gives a weekly graph of the receivables that haven't yet been reconciled.
 
 *  *Aged revenues* : gives a weekly graph of the company's turnover.
 
-In each panel of the accountants' dashboard you can click the  *Zoom*  button at the top right to investigate the detail of your financial indicators
+In each panel of the accountants' dashboard you can click the  *Zoom*  button at the top right to investigate the detail of your financial indicators.
 
 The Accounting dashboard is dynamically integrated, which means that you can navigate easily through the data if you want more detail about certain factors, and edit the entries if necessary.
 

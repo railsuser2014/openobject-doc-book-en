@@ -119,7 +119,7 @@ To create a new Tax Case, use the menu  *Financial Management > Configuration > 
 
 .. tip::   **Note**  *Using Child Taxes* 
 
-	You can use child taxes when you have a complex tax situation that you want to hide your end users from. For example, you might define a motor mileage expenses product with a composite tax made up of two child taxes – a non-reclaimable private element and a reclaimable tax element (which is the case in some European countries). 
+	You can use child taxes when you have a complex tax situation that you want to hide your end users from. For example, you might define a motor mileage expenses product with a composite tax made up of two child taxes – a non-reclaimable private element and a reclaimable business element (which is the case in some European countries). 
 
 	When your staff come to claim motor mileage, they do not need to know about this taxation, but the accounting impact of their claim will be automatically managed in Open ERP.
 
@@ -190,7 +190,7 @@ Select the accounting period you're interested in and click  *Open Charts* , the
 
 	More generally it enables you to make analyses using other simulation levels that you could expect..
 
-The \ ``account_reporting``\ module was developed toprovide configurable reports for balance sheets or earnings statement in legally required formats.
+The \ ``account_reporting``\ module was developed to provide configurable reports for balance sheets or earnings statements in legally required formats.
 
 .. index:: Journal
 
