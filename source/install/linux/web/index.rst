@@ -96,6 +96,12 @@ database from the DBAdmin interface by clicking on Manage button that you can
 see besides the Database selection box. After creating a new database login 
 with the admin/admin or demo/demo to see OpenERP in action...
 
+.. warning::
+
+    Please make sure that the system time is properly set otherwise web browsers
+    might fail to establish sessions. We strongly recommend you to synchronize
+    system time with NTP...
+
 -------------------------------------------------------------------------------
 Run as service (daemon)
 -------------------------------------------------------------------------------
