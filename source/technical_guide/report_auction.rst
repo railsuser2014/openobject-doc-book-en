@@ -15,7 +15,7 @@ Auction Management - Reporting (*report_auction*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: report_auction
-:Web: http://tinyerp.com/module_auction.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

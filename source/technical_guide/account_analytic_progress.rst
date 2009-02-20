@@ -15,7 +15,7 @@ account_analytic_progress (*account_analytic_progress*)
 :Version: 5.0.1.0
 :Author: tiny
 :Directory: account_analytic_progress
-:Web: http://tinyerp.com
+:Web: http://openerp.com
 :Official module: no
 :Quality certified: no
 

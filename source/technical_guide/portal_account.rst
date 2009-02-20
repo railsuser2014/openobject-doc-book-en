@@ -15,7 +15,7 @@ Portal Management - Account (*portal_account*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: portal_account
-:Web: http://tinyerp.com/
+:Web: http://www.openerp.com//
 :Official module: no
 :Quality certified: no
 

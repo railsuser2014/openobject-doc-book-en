@@ -15,7 +15,7 @@ Authenticate users with ldap server (*users_ldap*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: users_ldap
-:Web: http://tinyerp.com/
+:Web: http://www.openerp.com//
 :Official module: no
 :Quality certified: no
 

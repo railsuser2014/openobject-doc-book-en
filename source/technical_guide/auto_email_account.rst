@@ -15,7 +15,7 @@ Email Invoice (*auto_email_account*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: auto_email_account
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

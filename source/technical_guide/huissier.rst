@@ -15,7 +15,7 @@ Tiny ERP Huissiers (*huissier*)
 :Version: False
 :Author: Tiny
 :Directory: huissier
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

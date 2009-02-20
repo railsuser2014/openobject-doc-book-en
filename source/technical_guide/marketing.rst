@@ -15,7 +15,7 @@ Marketing Campaigns (*marketing*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: marketing
-:Web: http://tinyerp.com/module_crm_marketing.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

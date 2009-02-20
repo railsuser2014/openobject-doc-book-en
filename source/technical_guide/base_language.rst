@@ -15,7 +15,7 @@ Base Language (*base_language*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: base_language
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

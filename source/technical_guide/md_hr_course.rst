@@ -15,7 +15,7 @@ Pilot Human Resources (*md_hr_course*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: md_hr_course
-:Web: http://tinyerp.com/module_hr.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

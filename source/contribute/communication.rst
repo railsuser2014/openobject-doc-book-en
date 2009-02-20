@@ -91,5 +91,5 @@ Only commiters can write in the planet, others can announce on the forum.
 If you are a member of the commiter team:
 
   * Create your personnal blog
-  * Send an email to nva AT tinyerp.com with your name, photo and address of your blog.
+  * Send an email to nva AT openerp.com with your name, photo and address of your blog.
 

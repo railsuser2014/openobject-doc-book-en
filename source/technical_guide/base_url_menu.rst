@@ -15,7 +15,7 @@ Url Menus (*base_url_menu*)
 :Version: 5.0.1.1
 :Author: Tiny
 :Directory: base_url_menu
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

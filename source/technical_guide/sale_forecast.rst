@@ -15,7 +15,7 @@ Sales Forecasts, goals and statistics (*sale_forecast*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sale_forecast
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

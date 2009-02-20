@@ -15,7 +15,7 @@ Manage indexes on products prices (*product_index*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: product_index
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

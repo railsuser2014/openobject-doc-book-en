@@ -15,7 +15,7 @@ Asset management (*account_asset*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: account_asset
-:Web: http://tinyerp.com/module_account.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

@@ -15,7 +15,7 @@ Managing sales and deliveries by journal (*purchase_journal*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: purchase_journal
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

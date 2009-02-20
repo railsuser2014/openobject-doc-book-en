@@ -15,7 +15,7 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sale_tax_include
-:Web: http://tinyerp.com/module_account.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 
