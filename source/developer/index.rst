@@ -46,6 +46,8 @@ Part 4 : Migration, Upgradation, Testing
    :maxdepth: 2
 
    12_DataMigration/index
+   12_DataMigration/unit_testing
+   12_DataMigration/automated_test
    13_Upgration/index
    14_Testing/index
 

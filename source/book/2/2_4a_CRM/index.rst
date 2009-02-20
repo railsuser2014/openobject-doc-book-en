@@ -53,7 +53,7 @@ The screen above represents a partner form. You can see several possible address
 .. figure:: images/crm_partner_contact.png
    :align: center
 
-   *A partner form with the ``base_contact`` module installed.*
+*A partner form with the \ ``base_contact``\ module installed.*
 
 If you click on the line you can get more detail about the function (such as start date, end date, and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog).
 
