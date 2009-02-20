@@ -15,7 +15,7 @@ Sales Purchase Sequence Management (*sales_purchase_seq*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sales_purchase_seq
-:Web: http://tinyerp.com/module_sale.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

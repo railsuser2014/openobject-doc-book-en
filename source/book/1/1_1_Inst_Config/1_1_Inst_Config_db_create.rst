@@ -143,7 +143,7 @@ In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrato
 Extending Open ERP
 ###################
 
-To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's is in your server's \ ``tinyerp-server``\   directory (which differs between Windows, Mac and some of the various Linux distributions and not available at all in the Windows all-in-one installer). 
+To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's is in your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the various Linux distributions and not available at all in the Windows all-in-one installer). 
 
 If you look there you'll see existing modules such as \ ``product``\   and \ ``purchase``\  . A module can be provided in the form of files within a directory or a a zip-format file containing that same directory structure. 
 

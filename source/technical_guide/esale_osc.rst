@@ -15,7 +15,7 @@ OScommerce Interface / ZenCart (*esale_osc*)
 :Version: 5.0.1.0
 :Author: Tiny / modified by Lucien Moerkamp
 :Directory: esale_osc
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

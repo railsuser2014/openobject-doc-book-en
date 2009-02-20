@@ -69,7 +69,7 @@ The most recent communication tool is the launchpad system, which now hosts all 
 Open ERP partners
 ^^^^^^^^^^^^^^^^^^^
 
-If you need contract-backed guarantees for implementing and maintaining Open ERP you can contact an official Open ERP partner. Open ERP partners offer various services such as user training, prototype installations, and change management services. The complete list of partners by country and by type can be found on the official Open ERP site: http://tinyerp.com/partner.html.
+If you need contract-backed guarantees for implementing and maintaining Open ERP you can contact an official Open ERP partner. Open ERP partners offer various services such as user training, prototype installations, and change management services. The complete list of partners by country and by type can be found on the official Open ERP site: http://openerp.com/partners.html.
 
 The main developer, Tiny
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -15,7 +15,7 @@ Human Resources Timesheets on contracts (*hr_contract_timesheet*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: hr_contract_timesheet
-:Web: http://tinyerp.com/module_hr.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

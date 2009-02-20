@@ -457,7 +457,7 @@ It is recommended to create a new database via the gtk-client. Before that the w
 
 Start OpenERP server like this: ::
 
-  ./tinyerp-server.py --addons-path=/path/to/my/addons
+  ./openerp-server.py --addons-path=/path/to/my/addons
 
 The ``bin/addons`` will be considered as default addons directory which can be
 overriden by the ``/path/to/my/addons/``. That is if an addon exists in

@@ -15,7 +15,7 @@ Base (*base_crypt*)
 :Version: 5.0.1.0
 :Author: FS3 , Review Tiny
 :Directory: base_crypt
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

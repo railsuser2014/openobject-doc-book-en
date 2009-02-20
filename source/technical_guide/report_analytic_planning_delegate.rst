@@ -15,7 +15,7 @@ Analytic planning - Delegation in the hierarchy (*report_analytic_planning_deleg
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: report_analytic_planning_delegate
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

@@ -15,7 +15,7 @@ Integrated Document Management System (*document_webdav_old*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: document_webdav_old
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

@@ -15,7 +15,7 @@ EZ Publish eCommerce Interface (*esale_ez*)
 :Version: False
 :Author: Tiny
 :Directory: esale_ez
-:Web: http://tinyerp.com/demo02_6.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

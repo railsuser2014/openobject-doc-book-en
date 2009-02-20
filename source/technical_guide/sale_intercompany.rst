@@ -15,7 +15,7 @@ Sale Inter-Company (*sale_intercompany*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sale_intercompany
-:Web: http://tinyerp.com/module_sale.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

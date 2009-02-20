@@ -15,7 +15,7 @@ Email Client (*smtpclient*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: smtpclient
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 
