@@ -29,7 +29,7 @@ responsive, so more satisfying to use.
    single: Client
 ..
    
-.. tip::   **Usability**  *Web client and GTK client* 
+.. note::   Web client and GTK client 
 
     The main functional difference between the two Open ERP clients is the
     presence of the calendar view in the web client, which doesn't exist in the
@@ -45,41 +45,40 @@ An Open ERP system is formed by three main components:
 
 * the Open ERP application server, which contains all of the enterprise logic and ensures that Open ERP runs optimally,
 
-* the web server, a separate application called eTiny, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
+* the web server, a separate application called the Open Object client-web, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
 
 
 .. figure:: images/terp_arch_1.png
    :align: center
    :scale: 95
 
-.. tip::   **Terminology**  *eTiny – server or client?* 
+.. note::   Terminology: client-web – server or client?
 
-    The eTiny component can be thought of as a server or a client depending on
+    The client-web component can be thought of as a server or a client depending on
     your viewpoint.
 
     It acts as a web server to an end user connecting from a web browser, but
     it also acts as a client to the Open ERP application server just as a GTK
     application client does.
 
-    So in this book its context will determine whether eTiny is referred to as
+    So in this book its context will determine whether the client-web component is referred to as
     a server or a client.
 
 .. index::
    single: eTiny
 .. 
 
-.. tip::   **Attention**  *eTiny* 
+.. note::   eTiny 
 
-    At present, the web component is known as “eTiny”. Although it's possible
-    that this application's name will change in the coming months to match the
-    renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
-
+    The web application used to be known as "eTiny". 
+    Its name changed to "client-web" as Tiny ERP was renamed to Open ERP,
+    but its characteristics have generally stayed the same.
 
 .. index::
    single: PostgreSQL
 .. 
 
-.. tip::   **Program**  *PostgreSQL* 
+.. note::   PostgreSQL 
 
 	PostgreSQL is a relational and object database management system.
 

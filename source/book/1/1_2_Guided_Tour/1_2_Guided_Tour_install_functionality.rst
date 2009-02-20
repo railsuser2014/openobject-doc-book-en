@@ -21,9 +21,9 @@ Updating the Modules list
 
 Click  *Administration > Modules Management > Update Modules List*  to start the updating tool. The  *Scan for new modules*  window opens showing the addresses that Open ERP will look in for downloading new modules (known as the repositories), and updating existing ones.
 
-.. tip::   **Note**  *Remote module repositories* 
+.. tip:: Remote module repositories 
 
-	If the repository list doesn't reflect your needs then you can edit it from Administration > Modules Management > Repositories. There you can link to new repositories by adding their URLs and disable listed ones by unchecking their Active checkbox. If you're not connected to the Internet then you probably want to disable anything there. 
+	If the repository list doesn't reflect your needs then you can edit it from *Administration > Modules Management > Repositories*. There you can link to new repositories by adding their URLs and disable listed ones by unchecking their *Active* checkbox. If you're not connected to the Internet then you probably want to disable anything there. 
 
 	Your Open ERP installation must be configured with its addons directory as writable for you to be able to download anything at all. If it hasn't been, then you may need the assistance of a systems administrator to change your server's settings so that you can install new modules.
 
@@ -31,11 +31,11 @@ Click  *Check New Modules*  to start the download from the specified locations. 
 
 It won't matter in this chapter if you can't download anything, but some of the later chapters refer to modules that aren't part of the core installation and have to be obtained from a remote repository.
 
-.. tip::   **Technique**  *Modules* 
+.. note:: Modules 
 
 	All the modules available on your computer can be found in the addons directory of your Open ERP server. Each module there is represented by a directory carrying the name of the module or by a file with the module name and .zip appended to it. The file is in ZIP archive format and replicates the directory structure of unzipped modules.
 
-.. tip::   **Attention**  *Searching through the whole list* 
+.. tip:: Searching through the whole list
 
 	The list of modules shows only the first available modules. In the web client you can search or follow the First / Previous / Next / Last links to get to any point in the whole list, and you can change the number of entries listed by clicking the row number indicators between Previous and Next and selecting a different number from the default of 20.
 
@@ -60,7 +60,7 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
    *Installation of the ``product`` module.*
       
 
-.. tip::   **Technique**  *Technical Guide* 
+.. tip::  Technical Guide 
 
 	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu *Administration > Modules Management > Installed Modules* produces the most fruitful list. 
 
@@ -68,9 +68,9 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
 
 Click  *Apply Upgrades*  then  *Start Upgrades*  on the  *System Upgrade*  form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu  *Products*  has become available.
 
-.. tip::   **GTK client**  *Refreshing the menu* 
+.. tip::  Refreshing the menu in the GTK client 
 
-	After an update in the GTK client you'll have to open a new menu to refresh the content – otherwise you won't see the new menu item. To do that use the window menu Form > Refresh/Cancel.
+	After an update in the GTK client you'll have to open a new menu to refresh the content – otherwise you won't see the new menu item. To do that use the window menu *Form > Refresh/Cancel*.
 
 Installing a module with its dependencies
 -------------------------------------------
@@ -93,7 +93,7 @@ There is no particular relationship between the modules installed and the menus 
   single: Module; Dependencies
 ..
 
-.. tip::   **Technique**  *Dependencies between modules* 
+.. note::  Dependencies between modules
 
 	The module form shows two tabs. The first tab gives basic information about the module and the second gives a list of modules that this module depends on. So when you install a module, Open ERP automatically selects all the necessary dependencies to install this module.
 
@@ -101,13 +101,13 @@ There is no particular relationship between the modules installed and the menus 
 
 Although you can install a module and all its dependencies at once, you can't remove them in one fell swoop – you'd have to uninstall module by module. Uninstalling is more complex than installing because you have to handle existing system data. 
 
-.. tip::   **Attention**  *Uninstalling modules* 
+.. note::  Uninstalling modules 
 
 	Although it works quite well, uninstalling modules isn't perfect in Open ERP. It's not guaranteed to return the system exactly to the state it was in before installation.
 
 	So it's recommended that you make a backup of the database before installing your new modules so that you can test the new modules and decide whether they're suitable or not. If they're not then you can return to your backup. If they are, then you'll probably still reinstall the modules on your backup so that you don't have to delete all your test data.
 
-	If you wanted to uninstall you would use the menu Administration > Modules Management > Installed Modules and then uninstall them in the inverse order of their dependencies: crm, account, product.
+	If you wanted to uninstall you would use the menu *Administration > Modules Management > Installed Modules* and then uninstall them in the inverse order of their dependencies: crm, account, product.
 
 Installing additional functionality
 -------------------------------------
@@ -120,9 +120,11 @@ So click  *Administration > Modules Management > Update Modules List*  to upload
   single: Module; Import 
 ..
 
-.. tip::   **Attention**  *Importing new modules* 
+.. tip:: Importing new modules 
 
-	You can only import new modules and update your existing ones if your system is configured to accept them. Your Open ERP addons directory must be writable by the system user that's running your Open ERP application for this, as described in the final section of Chapter 1.
+	You can only import new modules and update your existing ones if your system is configured to accept them. 
+	Your Open ERP addons directory must be writable by the system user that's running your Open ERP application for this, 
+	as described in the final section of Chapter 1.
 
 Click  *Administration > Modules Management > Uninstalled modules*  to give you an overview of all of the modules available for installation.
 

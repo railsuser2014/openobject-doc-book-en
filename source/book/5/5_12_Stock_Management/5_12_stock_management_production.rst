@@ -6,9 +6,10 @@ Scheduling
 
 The master production plan, sometimes called the MPS (Master Production Schedule), enables you to generate forecasts for incoming and outgoing material. It's based on forecasts of inputs and outputs by the logistics manager.
 
-.. tip::   **Point**  *Product trading*
+.. tip:: Product trading
 
-    Also called the Production Plan, this tools is also very useful for traded product which aren't manufactured. You can then use it for stock management with purchased and manufactured products.
+    Also called the Production Plan, this tool is also very useful for traded products which aren't manufactured. 
+    You can then use it for stock management with purchased and manufactured products.
 
 To be able to use the production plan, you must install the ``stock_planning`` module which can be found amongst Open ERP's extra_addons rather in the main set of addons.
 
@@ -17,13 +18,13 @@ To be able to use the production plan, you must install the ``stock_planning`` m
 Sales Forecasts
 ----------------
 
-The first things to do to work with a production plan is to define the periods for stock management. Some companies plan daily, others weekly or monthly.
+The first thing to do to work with a production plan is to define the periods for stock management. Some companies plan daily, others weekly or monthly.
 
-.. tip::   **Point**  *Stock Management interval*
+.. tip:: Stock Management interval
 
-The interval chosen for managing stock in the production plan will depend on the length of your production cycle. You generally work daily, weekly or monthly.
+   The interval chosen for managing stock in the production plan will depend on the length of your production cycle. You generally work daily, weekly or monthly.
 
-If your products take several days to assemble it's preferable to have a weekly plan. If your manufacturing cycles are several months you can work with a monthly plan.
+   If your products take several days to assemble it's preferable to have a weekly plan. If your manufacturing cycles are several months you can work with a monthly plan.
 
 To do this use the menu *Sales Management > Configuration > Create Sales Periods*. A window appears enabling you to automatically define the next periods that will be provided for stock management.
 

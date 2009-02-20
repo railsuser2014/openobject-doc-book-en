@@ -17,7 +17,7 @@ Throughout the day, when employees work on one project or another, they add a li
 
 The figure gives an example of a timesheet for an employee.
 
-.. tip::   *Don't confuse* 
+.. note:: Don't confuse timesheets and attendence compliance 
 
 	The timesheet system isn't intended to be a disguised attendance form. There's no control over the service times and the employee is free to encode 8 or 9 hours or more of services each day if they want.
 
@@ -64,7 +64,7 @@ The following information is important in the product form:
 
 *  *Standard Price* 
 
-.. tip::   *A step further* 
+.. tip:: Price Indexation
 
 	The module ``product_index`` lets you generate indexes connected to the change of purchase or sale price for individual products. 
 
@@ -83,11 +83,15 @@ In summary, each company employee corresponds, in most cases, to:
 And each company job position corresponds to a *Product* .
 
 
-.. tip::   *Note* 
+.. note:: Time charge rates 
 
-	By default the hourly cost of an employee is given by the standard cost of the product linked to that employee. But if you install the ``hr_contract`` module it's possible to manage contracts differently. The hourly cost of the employee is then automatically calculated from their employment contract when they enter their timesheet data.
+	By default the hourly cost of an employee is given by the standard cost of the product linked to that employee. 
+	But if you install the ``hr_contract`` module it's possible to manage contracts differently. 
+	The hourly cost of the employee is then automatically calculated from their employment contract when they enter their timesheet data.
 
-	To do this, the software uses a factor defined in the contract type (for example, the gross monthly salary, calculated per day). Ideally this factor should take into account the salary costs, and the taxes, insurances and other overheads associated with pay.
+	To do this, the software uses a factor defined in the contract type 
+	(for example, the gross monthly salary, calculated per day). 
+	Ideally this factor should take into account the salary costs, and the taxes, insurances and other overheads associated with pay.
 
 .. index::
    single: Timesheets; Entering data
@@ -98,9 +102,10 @@ Entering timesheet data
 
 To be able to use timesheets, you should install the module \ ``hr_timesheet``\  . Once this module has been installed and the employees configured, the different system users can enter their timesheet data in the menu  *Human Resources > Hours Encoding > For me > My Works of the Day* .
 
-.. tip::   *Advice* 
+.. tip:: Shortcut to timesheets 
 
-	It's a good idea if all employees who use timesheets place this menu in their shortcuts. That's because they'll need to return to them several times each day.
+	It's a good idea if all employees who use timesheets place this menu in their shortcuts. 
+	That's because they'll need to return to them several times each day.
 
  *New* 
 
@@ -124,9 +129,10 @@ The accuracy of the services entered is crucial for calculating the profitabilit
 
 * Reviewing all service entries using the menu  *Human Resources > Hours Encoding > For Me > All My Work* . You can then use the filters to analyze your services by project, by period or by product.
 
-.. tip::   *Technique* 
+.. tip:: Hiding service costs
 
-	By default, Open ERP is configured to show the cost of each service when an employee encodes the number of hours per project. You can modify this field by adding the attribute invisible=True in the timesheet view.
+	By default, Open ERP is configured to show the cost of each service when an employee encodes the number of hours per project. 
+	You can modify this field by adding the attribute invisible=True in the timesheet view.
 
 	The value in this field shows employees the cost of their time used in the company, so masking this field might not always be the best option.
 
@@ -154,11 +160,12 @@ Many graphs are available through the menus  *Human Resources > Reporting > This
 
 The data making up these graphs can be varied using the filters available in the upper part of the screen. If you want to get more exact figures, switch to the list view.
 
-.. tip::   *Note* 
+.. note:: Project dashboard when signing in
 
 	The dashboard for managing projects has a graphical view that summarizes the current user's timesheet for the last seven days.
 
-	It's possible to assign a dashboard to users so that it appears when they sign onto Open ERP. Then each employee will be able to notice if they've forgotten to complete their timesheet when they signed out of the system.
+	It's possible to assign a dashboard to users so that it appears when they sign into Open ERP. 
+	Then each employee will be able to see if they've forgotten to complete their timesheet when they signed out of the system.
 
 	To use this dashboard, install the module ``board_project``.
 
@@ -171,11 +178,13 @@ Evaluation of service costs
 
 You already know that timesheets are closely linked with analytic accounts. The different projects reported on the timesheets correspond to analytic accounts. The timesheet entries themselves are analytic entries. These entries comprise various analytic operations that don't correspond to any of the general accounts. Therefore all operations that modify and create timesheet lines automatically impact the corresponding analytic line and, conversely are automatically modified by changes in that line.
 
-.. tip::   *Technique* 
+.. note:: Timesheets and analytical data
 
-	The implementation of timesheets in Open ERP relating to analytic entries is managed by an inheritance mechanism: the timesheet object inherits the analytic entry object.
+	The implementation of timesheets in Open ERP relating to analytic entries is managed by an inheritance mechanism: 
+	the timesheet object inherits the analytic entry object.
 
-	The information is therefore not encoded into the database as two separate events, which avoids many synchronization problems. They are stored in two different tables, however, because a service is an analytical entry, but an analytical entry isn't necessarily a service.
+	The information is therefore not encoded into the database as two separate events, which avoids many synchronization problems. 
+	They are stored in two different tables, however, because a service is an analytical entry, but an analytical entry isn't necessarily a service.
 
 This isn't a classical approach but it's logical and pragmatic. Employee timesheets are a good indication of how the costs of a service enterprise are spread across different cases as reported in the analytic accounts.
 
@@ -199,11 +208,13 @@ Because you've got a system with integrated timesheets you can then:
 
 * regularly adjust hourly costs by comparing your rates with reality,
 
-.. tip::   *Important* 
+.. important:: Project Cost Control
 
 	Controlling the costs and the profitability of projects precisely is very important.
 
-	It enables you to make good estimates and to track budgets allocated to different services and their projects, such as sales and, R&D costs. You can also refine your arguments on the basis of clear facts rather than guesses if you have to renegotiate a contract with a customer following a project slippage.
+	It enables you to make good estimates and to track budgets allocated to different services and their projects, such as sales and, R&D costs. 
+	You can also refine your arguments on the basis of clear facts rather than guesses if you have 
+	to renegotiate a contract with a customer following a project slippage.
 
 The analyses of profitability by project and by employee are available from the analytic accounts. They take all of the invoices into account, and also take into account the cost of the time spent on each project.
 
@@ -255,11 +266,14 @@ Each manager can then look at a list of his department's timesheets waiting for 
 
 To define the departmental structure, use the menu  *Administration > Users > Department Structure > Define Departments.* 
 
-.. tip::   *Advice* 
+.. tip:: Timesheet approval
 
-	At first sight, the approval of timesheets by a department manager can seem a bureaucratic hindrance. This operation however is crucial for effective management. We have too frequently seen companies in the situation where managers are so overworked that they don't know what their employees are doing.
+	At first sight, the approval of timesheets by a department manager can seem a bureaucratic hindrance.
+	This operation is crucial for effective management, however. 
+	We have too frequently seen companies in the situation where managers are so overworked that they don't know what their employees are doing.
 
-	So this approval process supplies the manager with an outline of each employee's work at least once a week. And this is carried out for the hours worked on all the different projects.
+	So this approval process supplies the manager with an outline of each employee's work at least once a week. 
+	And this is carried out for the hours worked on all the different projects.
 
 Once the timesheets have been approved you can then use them for cost control and for invoicing hours to clients.
 

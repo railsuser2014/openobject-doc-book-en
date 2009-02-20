@@ -37,15 +37,18 @@ To enter data for a new supplier price request, use the menu *Purchase Managemen
 
    *Data entry for a supplier order.*
 
-.. tip:: **Point**   *Managing Alerts*
+.. note:: Managing Alerts
 
-    If you install the ``warning`` module you will be able to define alerts that will appear when the purchaser enters a price request or order. You can set alerts on the product or on the supplier.
+   If you install the ``warning`` module you will be able to define alerts that will appear when the purchaser enters a price request or order. 
+   You can set alerts on the product or on the supplier.
 
 The internal reference, the date, and the warehouse that the products should be delivered to are completed automatically by Open ERP but you can change these values if you need. Select the supplier. Once the supplier has been selected, Open ERP then automatically completes the contact address for the supplier. The pricelist is also completed when you select the supplier. This should bring in all of the conditions that you've negotiated with the supplier for a given period.
 
-.. tip:: **Point**   *Supplier Selection*
+.. tip:: Supplier Selection
 
-    Searching for a supplier is limited to all of the partners in the system that have the 'Supplier' checkbox checked. If you don't find your supplier it might be worth checking the whole list of all partners to make sure that the supplier has been only partially entered into the system. 
+   Searching for a supplier is limited to all of the partners in the system that have the 'Supplier' checkbox checked. 
+   If you don't find your supplier it might be worth checking the whole list of all partners to make sure that 
+   the supplier has been only partially entered into the system. 
 
 Once the main body of the purchase order has been completed you can enter the product lines.
 
@@ -66,15 +69,17 @@ When you've completed the product, Open ERP automatically completes the other fi
 
 * Applicable taxes, taken from the information on the product form and partner form, depending on the rules seen in the chapter on Accounting.
 
-.. tip:: **Point**   *Product wording and code*
+.. tip:: Product wording and code
 
-    When you enter supplier names on the product form, you can fix the name and a product code for each individual supplier. If you do that, Open ERP will then use those details in place of your own internal product names for the selected supplier.
+   When you enter supplier names on the product form, you can set a name and a product code for each individual supplier. 
+   If you do that, Open ERP will then use those details in place of your own internal product names for that selected supplier.
 
 If you work with management by case you can also set the analytic account that should be used to report all the purchase costs. The costs will then be reported at the receipt of the supplier invoice.
 
-.. tip:: **Point**   *Management by case*
+.. tip:: Management by case
 
-    The analytic accounts will be very useful for all companies that manage costs by case, by site, by project or by folder. To work with several analytic axes you can install the module ``purchase_analytic_plans``.
+   Analytic accounts can be very useful for all companies that manage costs by case, by site, by project or by folder. 
+   To work with several analytic axes you should install the module ``purchase_analytic_plans``.
 
 For that the analytic account is automatically selected as a function of the partner, the date, the products or the user, you can install the module ``account_analytic_default`` (which is installed automatically as a dependency of ``purchase_analytic_plans``, since the latter depends on it).
 
@@ -91,31 +96,40 @@ Then leave the document in that state. When you receive the response from the su
 
 When you want to approve the order, use the button *Confirm ??? Supplier*. The price request then passes into the confirmed state. Since this isn't confirmed by the supplier any more, it has no further impact on the system. To approve it click the button *Approved by Supplier*.
 
-.. tip:: **Point**   *??? receipt*
+.. TODO several ??? here, need to replace them.
 
-You can confirm the order but not validate it straightaway. Do this when you want to validate the order on receipt of order acknowledgement from the supplier. This gives you an intermediate state for all orders waiting validation from the supplier using the menu *Purchase Management > Supplier Orders > Orders awaiting validation*.
+.. tip:: ??? Receipt
+
+   You are able to confirm the order but not validate it straightaway. 
+   Do this when you want to validate the order on receipt of order acknowledgement from the supplier. 
+   This gives you an intermediate state for all orders waiting validation from the supplier using 
+   the menu *Purchase Management > Supplier Orders > Orders awaiting validation*.
 
 .. figure:: images/purchase_process.png
    :align: center
 
    *Supplier order process.*
 
-.. tip:: **Point**   *Supplier validation*
+.. note:: Supplier validation
 
-    If you want to automate the data entry stage at goods receipt, install the module ``purchase_approve``. This will automatically validate all the orders that have been confirmed.
+   If you want to automate the data entry stage at goods receipt, install the module ``purchase_approve``. 
+   This will automatically validate all the orders that have been confirmed.
 
 Goods receipt
 --------------
 
 Once the order has been validate, Open ERP automatically prepares the goods receipt order in the draft state for you. To get a list of the products you're waiting for from your suppliers, use the menu *Stock Management > Incoming Goods > Items to handle*.
 
-.. tip:: **More information**   *Purchasing Services*
+.. tip:: Purchasing Services
 
-    If you buy services from your supplier, Open ERP doesn't generate a goods receipt note. In this case there's no service receipt equivalent to goods receipt.
+    If you buy services from your supplier, Open ERP doesn't generate a goods receipt note. 
+    There's no service receipt equivalent to goods receipt.
 
 Select the document that corresponds to the item that you're receiving. Usually the goods receipt note is found by making a search on the order reference or the supplier name. You can then confirm the receipt of the products.
 
-Just as you saw in the chapter on Stock Management, if you receive only part of the order, Open ERP manages the remains of that order. A second receipt note is then automatically forecast with goods not received. You can cancel if you think that you will never receive the forgotten products.
+As you saw in the chapter on Stock Management, if you receive only part of the order, Open ERP manages the remains of that order. 
+A second receipt note is then automatically forecast with goods not received. 
+You can cancel if you think that you will never receive the forgotten products.
 
 After receiving the goods, Open ERP will show you which orders are open and the state of their receipt and invoicing if you return to the list of orders.
 
@@ -142,9 +156,10 @@ The mode of invoicing control is set in the second tab of the purchase order in 
 
    *Supplier order, invoice control.*
 
-.. tip:: **Point**   *Default value*
+.. tip:: Default value
 
-    A company generally uses a single invoicing control method for all of its invoices. So you're advised after installation to go and set a default value in the Invoicing Control field.
+   A company generally uses a single invoicing control method for all of its invoices. 
+   So you're advised to go and set a default value in the Invoicing Control field after installation.
 
 Control based on orders
 ------------------------
@@ -172,9 +187,10 @@ At that state, the user can decide if he wants to generate an invoice per item o
 
 The invoices are then handled just like the controlled from On Order. Once the invoice arrives at the accounting service he just compares it with the invoices waiting to control what the supplier invoices you.
 
-.. tip:: **Point**   *Delivery Charges*
+.. tip:: Delivery Charges
 
-    To manage delivery charges, install the module ``purchase_delivery``. This will automatically add delivery changes to the creation of the draft invoice as a function of the products delivered or ordered.
+   To manage delivery charges, install the module ``purchase_delivery``. 
+   This will automatically add delivery changes to the creation of the draft invoice as a function of the products delivered or ordered.
 
 .. index:: Tender
 
@@ -220,9 +236,10 @@ Standard Price
 
 The mode of price management for the product is shown in the third tab on the product form, *Price*. On each product you can select if you want to work in standard price or on weighted average.
 
-.. tip:: **Point**   *Simplified view*
+.. tip:: Simplified view
 
-    If you work in the Simplified View mode you won't see the field that enables you manage the price calculation mode for a product. In that case the default value is standard price.
+   If you work in the Simplified View mode you won't see the field that enables you manage the price calculation mode for a product. 
+   In that case the default value is standard price.
 
 The standard price shows that the product price is fixed manually by product in the field *Cost Price*. This is usually revalued once a year based on the average of purchase costs or manufacturing costs.
 
@@ -243,21 +260,21 @@ Working in standard price does not lend itself well to the management of the cos
 
 In this case you'd want Open ERP to automatically set the price in respond to each goods receipt into the warehouse. The deliveries (exit from stock) will have no impact on the product price.
 
-.. tip:: **More information**   *Calculating the price*
+.. tip:: Calculating the price
 
-At each goods receipt the product price is recalculated using the following accounting formula: NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:
+   At each goods receipt the product price is recalculated using the following accounting formula: NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:
 
-* NP: New Price,
+   * NP: New Price,
 
-* OP: Old Price,
+   * OP: Old Price,
 
-* QS: Quantity actually in stock,
+   * QS: Quantity actually in stock,
 
-* PP: Price Paid for the quantity received,
+   * PP: Price Paid for the quantity received,
 
-* QR: Quantity received.
+   * QR: Quantity received.
 
-If the product are managed as a weighted average, at each reception of product, Open ERP will open a window that enables you to specify the price of the product received. The purchase price is by default proposed from the purchase order. But you can change the price to, for example, add the cost of delivery to the different received products.
+If the products are managed as a weighted average, at each product receipt Open ERP will open a window that lets you specify the price of the product received. The purchase price is by default proposed from the purchase order. But you can change the price to, for example, add the cost of delivery to the different received products.
 
 .. figure:: images/purchase_pmp.png
    :align: center
@@ -341,7 +358,9 @@ Re-invoicing based on costs you'd get the following workflow:
 
 .. tip:: **Point**   *Analytic multiplans*
 
-    If you want several analysis plans you should install the module ``purchase_analytic_plans``. These enable you to split a line on a supplier purchase order into several accounts and analytic plans. Look back at the chapters on accounting for more information on the use of analytic accounts.
+   If you want several analysis plans you should install the module ``purchase_analytic_plans``. 
+   These enable you to split a line on a supplier purchase order into several accounts and analytic plans. 
+   Look back at the chapters on accounting for more information on the use of analytic accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 

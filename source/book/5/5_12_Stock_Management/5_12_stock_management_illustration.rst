@@ -47,9 +47,11 @@ So you can see that the sum of the stocks of a product in all the locations in O
 
 Partner locations (customers and suppliers) aren't located under your company in the hierarchical structure, so their contents are not considered as part of your own stock. So if you look just at the physical locations inside your own company those two bicycles are no longer in your company. They're not in your own physical stock but it's still very useful to see them in your customer's stock because that helps when you carry out detailed stock management analysis.
 
-.. tip:: **More information**  *Accounts*
+.. note:: Accounts
 
-     In managing stock a gap between the data in the software and real quantities in stock is difficult to avoid. Double-entry stock management gives twice as many opportunities to find an error. If you forget two items of stock this error will automatically be reflected in the counterpart's location.
+     In managing stock a gap between the data in the software and real quantities in stock is difficult to avoid. 
+     Double-entry stock management gives twice as many opportunities to find an error. 
+     If you forget two items of stock this error will automatically be reflected in the counterpart's location.
 
 You can make a comparison with accounting, where you'll easily find an error because you can look for an anomaly in an account or in the counterparts: if there's not enough in a bank account that's probably because someone's forgotten to enter a customer's invoice payment. You always know that the sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
 
@@ -96,9 +98,13 @@ Physical Locations > Tiny SPRL > Stock +1 Bicycle Manufacture of finished produc
 
 So you've now got the outcome you need from the consumption of raw materials and the manufacture of finished products.
 
-.. tip::   **Note**  *Creating value*
+.. note::  Valuing created value
 
-    You might already have noticed a useful effect of this approach: if you do a stock valuation in the “Default Production” location you get a statement of value created by your company (as a negative figure). Stock valuation in any given location is calculated by multiplying quantities of products in stock by their cost. In this case the raw material value is deducted from the finished product value.
+    You might already have noticed a useful effect of this approach: 
+    if you do a stock valuation in the “Default Production” location you get 
+    a statement of value created by your company (as a negative figure). 
+    Stock valuation in any given location is calculated by multiplying quantities of products in stock by their cost. 
+    In this case the raw material value is deducted from the finished product value.
 
 
 .. Copyright © Open Object Press. All rights reserved.

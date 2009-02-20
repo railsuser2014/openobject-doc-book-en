@@ -10,8 +10,11 @@ From this need for effective organization and explicit quality improvement,
 have appeared numerous tools:
 
 * The ISO9001 quality standard,
+
 * Business Process Management (BPM) tools,
+
 * Use Case workflows, and formalized standards such as UML,
+
 * The company Quality Manual.
 
 The problem is that these tools are usually quite separate from your management
@@ -20,18 +23,18 @@ company. They're treated separately rather than put at the heart of your
 management system. When you ask company staff about ISO9001 they usually see it
 as a constraint rather than a helpful daily management tool.
 
-.. tip:: **Don't confuse**   Workflow and User Processes
+.. note:: Don't confuse Technical Workflows with User Processes
 
-  Workflows give you a vertical representation of a document's lifecycle. They
-  are technical processes, used by system implementers to adapt the behaviour of
-  Open ERP to your company's needs.
+   Workflows give you a vertical representation of a document's lifecycle. They
+   are technical processes, used by system implementers to adapt the behaviour of
+   Open ERP to your company's needs.
   
-  Conversely user processes represent the workflows across your whole company and
-  its documents. They are useful for end users to locate an action in a complete
-  horizontal workflow.
+   Conversely user processes represent the workflows across your whole company and
+   its documents. They are useful for end users to locate an action in a complete
+   horizontal workflow.
   
-  The two systems are complementary and link together so that a modification to a
-  workflow becomes visible in the user processes of the corresponding document.
+   The two systems are complementary and link together so that a modification to a
+   workflow becomes visible in the user processes of the corresponding document.
 
 To help the company meet its quality requirements and to form these processes
 into assistance integrated with everyday work, Open ERP supplies a 'Corporate
@@ -41,10 +44,15 @@ of your management system.
 The system enables:
 
 * new employees to learn how to use the software by graphically and dynamically discovering how each document and action works,
+
 * easy access to the all the links to a document and everything that's attached to it,
+
 * people to see both a high-level map and the detail of all a company's processes,
+
 * access to a graphical model and integrated quality manual for rapid access that depends on the work context,
+
 * use of a knowledge base and capitalization of that knowledge for all of the company's actions in the form of interactive processes, 
+
 * an employee to become more aware of his role in the whole environment.
 
 The integration of processes into the management system
@@ -75,6 +83,7 @@ better, you'll now see an overview of the functions available in a the study of
 two processes:
 
 * A customer order quotation,
+
 * The engagement of a new employee.
 
 Setting up your database
@@ -132,10 +141,15 @@ Procurement, Draft Invoice, Outgoing Products) using one of the links or icons
 on it:
 
 * Obtaining the documentation and the corresponding process in the quality manual, using the Help (or Information) icon,
+
 * Opening the corresponding Open ERP document, using the Open icon,
+
 * Printing the document, using the Print icon,
+
 * Printing the technical workflow by using the Gears (or Print Workflow) icon.
+
 * Obtaining the documents that an employee needs to carry out the process by clicking the green arrow icon,
+
 * Seeing the menu that Open ERP uses to get the document by hovering over the green arrow icon.
 
 Returning to the process diagram, note that you can also get more information
@@ -143,7 +157,9 @@ about the transitions between nodes by hovering the mouse cursor over a
 transition:
 
 * A description of the transition,
+
 * A list of the roles that can carry out the transition,
+
 * The actions available to you from the state. 
 
 .. figure:: images/process_transition_zoom.png
@@ -170,7 +186,9 @@ results.
 During order processing, the salesperson can quickly:
 
 * Print the corresponding delivery note,
+
 * Zoom into the invoice to see payment details,
+
 * Get examples of the necessary documents (such as quotation types, exportation documents, and fax to confirm the order with the customer).
 
 Create a draft invoice by starting the next step on your own.
@@ -201,10 +219,15 @@ engaged an HR manager, or anyone else with suitable a role, can complete each
 node in the corresponding process, such as:
 
 * Entering his address,
+
 * Creating his user account in the system,
+
 * Sending any mandatory employment documents to the relevant government departments,
+
 * Declaring the required insurance documents,
+
 * Setting meal preferences, perhaps,
+
 * Entering statutory public holidays into the system.
 
 You can click on each node to open the corresponding form in Open ERP. Some
@@ -230,8 +253,6 @@ necessary modules have been installed.
 
 Workflows and User Processes
 =============================
-
-.. tip:: **Don't confuse**   Technical Workflows and User Processes
 
 Workflows are used to define the behaviour of a given document. They are used
 by developers and system implementers to determine which object should execute
@@ -307,7 +328,9 @@ For example if you are in a meeting form, Open ERP will ask you to choose from
 the processes it knows about that involve such forms:
 
 * processes for selecting and inducting new employees,
+
 * tracing customer orders in pre-sales,
+
 * processes for visiting customers and handling expenses.
 
 .. figure:: images/process_screen.png

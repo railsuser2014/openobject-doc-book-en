@@ -27,11 +27,13 @@ The planning function covers several objectives which will be described in this 
 
 * passing the high-level objectives to lower levels in the company's hierarchy.
 
-.. tip::   **Advice**  *Social role of planning* 
+.. tip:: The social role of planning 
 
-	Some project managers think that they can manage planning on their own. They're commonly overworked and think that meetings are a waste of time.
+	Some project managers think that they can manage planning on their own. 
+	They're commonly overworked and think that meetings are a waste of time.
 
-	Even if staff really can manage their work for themselves, note that this regular meeting is also aimed at reassurance. Without it you can get into unduly stressful situations from:
+	Even if staff really can manage their work for themselves, you should recognize that this regular meeting is also aimed at reassurance. 
+	Without it you can get into unduly stressful situations from:
 
 	* feelings of overwork because they have lost sight of their priorities,
 

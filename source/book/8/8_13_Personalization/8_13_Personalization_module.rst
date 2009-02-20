@@ -19,11 +19,14 @@ Start by installing the module \ ``base_module_record``\   in the usual way. The
 
 Once you've done all this, go to the menu  *Administration > Modules Management > Modules Recording > Save Recorded Module* . 
 
-.. tip::   **A step further**  *Contributing to the development of Open ERP* 
+.. note:: Contributing to the development of Open ERP 
 
-	Once your personal configuration has been saved into a module, install the module ``base_module_publish``. This gives you a new possible action Publish Module in the menu Administration > Modules Manage > Modules. 
+	Once your personal configuration has been saved into a module, install the module ``base_module_publish``. 
+	This gives you a new possible action Publish Module in the menu *Administration > Modules Manage > Modules*. 
 
-	Use this function to publish your module on the official Open ERP site. It could then be reused by other companies that have the same needs as yours. You could then yourselves benefit from improvements made by these same companies in future. 
+	Use this function to publish your module on the official Open ERP site. 
+	It could then be reused by other companies that have the same needs as yours. 
+	You could then yourselves benefit from improvements made by these same companies in future. 
 
 	Don't forget to create a user account beforehand on http://openerp.com.
 

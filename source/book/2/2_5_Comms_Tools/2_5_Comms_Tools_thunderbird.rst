@@ -34,7 +34,7 @@ Once the extension has been installed, you have only to create a shortcut in you
 
 	#. Place the icon  *Archive to Tiny* in your toolbar in the place of your choice.
 
-.. tip::   **Attention**  *Thunderbird version* 
+.. tip::  Thunderbird version 
 
 	The Tiny plugin for Thunderbird only works with Thunderbird version 2.0 and above.
 
@@ -63,7 +63,7 @@ This allows you to select an object that you'd like to add to your email and its
    *Selecting Open ERP objects from Thunderbird.*
 
 
-.. tip::   **A step further**  *Document Management* 
+.. tip:: Document Management 
 
 	The Thunderbird plugin is compatible with Open ERP's document management. So if you install the module document you could:
 
@@ -83,11 +83,10 @@ If you can't find a partner or contact to correspond with your email in Open ER
 
 To access archived data from different documents in Open ERP you can use the  *Email Thunderbird*  interface that appears over Open ERP documents.
 
-.. tip::   **Note**  *Testing the Thunderbird adapter* 
+.. note:: Testing the Thunderbird adapter 
 
-	If you install the Thunderbird adapter as described, use the openerp_ch05X database to explore its functionality as described in this section
-
-
+	If you install the Thunderbird adapter as described, 
+	use the openerp_ch05X database to explore its functionality as described in this section
 
 .. Copyright © Open Object Press. All rights reserved.
 

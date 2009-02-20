@@ -53,11 +53,13 @@ The employee keeps her expenses sheet in the \ ``Draft``\   state while completi
 
 At the end of the period the department manager can access the list of expense forms waiting for approval using the menu  *Human resources > Expenses > All expenses > Expenses waiting for validation* . 
 
-.. tip::   **Attention**  *Management of roles* 
+.. tip:: Role Management 
 
-	You must assign the role Human Resources – Expenses to a user to enable that user to approve these expenses. You'd generally assign this role only to those people responsible for projects or departments
+	You must assign the role *Human Resources – Expenses* to a user to enable that user to approve these expenses. 
+	You'd generally assign this role only to those people responsible for projects or departments
 
-	You can also assign the role Human Resources – Invoicing Expenses to users responsible for creating invoices. These roles may overlap (so the same person who approves your accounting group's expenses may also be responsible for creating invoices).
+	You can also assign the role *Human Resources – Invoicing Expenses* to users responsible for creating invoices. 
+	These roles may overlap (so the same person who approves your accounting group's expenses may also be responsible for creating invoices).
 
 	To find out more about the management of roles look at chapter 13.
 

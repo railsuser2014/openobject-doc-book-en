@@ -24,11 +24,13 @@ Accounting is at the heart of managing a company: all the company's operations h
 
 In most real companies, accounting is limited to producing statutory reports and satisfying the directors' curiosity about certain strategic decisions, and to printing the balance sheet and the income statement several times a year. Even then there's often several weeks of delay between reality and the report.
 
-.. tip::   **Advice**  *valuing your accounting function* 
+.. note:: Valuing your accounting function
 
-	In many small companies, the accounting function is poorly used.
+	In many small companies, the accounting function is poorly treated.
 
-	Not only do you see the data for documents being entered into the system twice, but also the results are often just used to produce legal documentation and periodic printouts, some weeks later, of the balance sheet and income statements.
+	Not only do you see the data for documents being entered into the system twice, 
+	but also the results are often just used to produce legal documentation and periodic printouts, 
+	some weeks later, of the balance sheet and income statements.
 
 	By contrast, integrating your accounts with your management system means that you can:
 
@@ -57,7 +59,7 @@ The ``accounting`` module in Open ERP covers general accounting, analytic accou
    single: Financial Accounting
 .. 
 
-.. tip::   **Terminology**  *Accounting* 
+.. note:: Accounting 
 
 	* General accounting (or financial accounting) is for identifying the assets and liabilities of the business. It's managed using double-entry accounting which ensures that each transaction is credited to one account and debited from another.
 
@@ -71,7 +73,7 @@ The ``accounting`` module in Open ERP covers general accounting, analytic accou
    single: Accounting; Multi-company
 .. 
 
-.. tip::   **Method**  *Multi-company* 
+.. tip:: Multi-company 
 
 	There is a choice of methods for integrating Open ERP in a multi-company environment:
 
@@ -91,7 +93,7 @@ One of the great advantages of integrating accounts with all of the other module
 
 * exert timely control over all areas of company management.
 
-.. tip::   **Advice**  *For accountants* 
+.. tip:: For accountants 
 
 	When you create a database you can elect to install only the accounting modules by choosing the Accounting Only profile.
 

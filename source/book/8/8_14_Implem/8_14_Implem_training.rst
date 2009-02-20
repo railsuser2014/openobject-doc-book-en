@@ -8,7 +8,7 @@ Two types of training are provided by the Tiny company and its partners:
 
 * User training: this enables you to be productive as rapidly as possible in the use of Open ERP. All of the modules there are detailed with concrete examples and different exercises. For the sake of realism the training uses data for a fictitious company. This training also lasts for five days. It is designed for those responsible for an ERP project, who will then be capable of training employees internally.
 
-Tiny's training calendar is available on the official Open ERP site  by clicking the menu  *Services > Trainin* g. The training is delivered in either French or English depending on the course.
+Tiny's training calendar is available on the official Open ERP site  by clicking the menu  *Services > Training*. The training is delivered in either French or English depending on the course.
 
 Both Tiny, the creators of Open ERP, and the Open ERP partners can also provide customized training. This, although more expensive, is focused on your own needs.
 

@@ -6,7 +6,7 @@ Stocks
 
 In the product form you can find a report that will give you the stock levels of the various different products in any selected location. If you haven't selected any location, Open ERP calculates stocks for all of the physical locations.
 
-.. tip::   Availability of stock
+.. note::  Availability of stock
 
     Depending on whether you look at the product from a customer order or from the menu of a product form you can get different values for stock availability. If you use the product menu you get the stock in all of the physical stock locations. Looking at the product from the order you will only see the report of the warehouse selected in the order.
 
@@ -16,13 +16,14 @@ The two fields are:
 
 * Virtual stock: calculated this way: real stock – outgoing + incoming.
 
-.. tip::   **Point**  *Virtual Stock*
+.. note::  Virtual Stock
 
     Virtual stock is very useful because it shows what the salespeople can sell. If it's more than real stock it's because products are coming in and if it's smaller than real stock then it's because certain products are reserved for other orders.
 
-.. tip::   **Point**  *Detail of future stock*
+.. tip:: Detail of future stock
 
-    To get more detail about future stock, you can use the report to the right of the product form 'Forecast of Future Stock'. Open ERP shows a graph of the change of stock in the days to come, varying as a function of purchase orders or confirmed production.
+    To get more detail about future stock, you can use the report to the right of the product form *Forecast of Future Stock*. 
+    Open ERP shows a graph of the change of stock in the days to come, varying as a function of purchase orders or confirmed production.
 
 .. figure:: images/stock_forecast.png
    :align: center
@@ -40,9 +41,10 @@ The tab *Procurement and Locations* contains information about different lead ti
 
 * Warranty: length of time in months for the warranty for the delivered products.
 
-.. tip::   **More information**  *Warranty*
+.. note:: Warranty
 
-    The warranty will be used in the management of reparis and after-sales service. You will find more information on this subject in the chapter about manufacturing.
+    The warranty period is used in the management of repairs and after-sales service. 
+    You can find more information on this subject in the chapter about manufacturing.
 
 Fields in the section *Storage localisation* are given for information – they don't have any impact on the management of stock.
 
@@ -79,21 +81,28 @@ Enter data for a single line in your inventory:
 
 * Quantity: 23 Units.
 
-.. tip::   **Point**  *Inventory Turns*
+.. tip:: Periodical Inventory
 
-    You are usually legally required to do a stock check of all your products at least once a year. As well as doing a complete annual stock check, Open ERP also supports the method of periodical inventory. 
+    You are usually legally required to do a stock check of all your products at least once a year. 
+    As well as doing a complete annual stock check, Open ERP also supports the method of periodical inventory. 
 
-    That means you can check the stock levels of a proportion of your products every so often. This system is accepted in France as long as you can guarantee that all of your products have been counted at least once per year. To do this, use the report *Stock Management > Reporting > Dates of Inventories*.
+    That means you can check the stock levels of a proportion of your products every so often. 
+    This system is accepted in France as long as you can guarantee that all of your products have been counted at least once per year. 
+    To do this, use the report *Stock Management > Reporting > Dates of Inventories*.
 
     This gives you the last inventory date by product.
 
-    You can do this the same way for all products and all locations, so you only carry out small inventory operations through the year rather than a single large stock check at one point in the year (which usually turns out to be at an inconvenient time).
+    You can do this the same way for all products and all locations, 
+    so you only carry out small inventory operations through the year rather than 
+    a single large stock check at one point in the year (which usually turns out to be at an inconvenient time).
 
-When your inventory operation is finished you can confirm it using the button to the bottom right of the form. Open ERP will then automatically create the stock moves to close the gaps, as mentioned at the start of this chapter. You can verify the moves generated using the second tab of the inventory operation form.
+When your inventory operation is finished you can confirm it using the button to the bottom right of the form. 
+Open ERP will then automatically create the stock moves to close the gaps, as mentioned at the start of this chapter. 
+You can verify the moves generated using the second tab of the inventory operation form.
 
 The correct levels of your product are now in your stock locations. A simple way of verifying this is to reopen the product form to see the quantities available in stock.
 
-Reception of a supplier order
+Receipt of a supplier order
 ------------------------------
 
 Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
@@ -150,9 +159,10 @@ Then confirm the quotation to convert it to an order. If you return to the produ
 
 Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
 
-.. tip::  **Point** *Just in Time*
+.. tip:: Just in Time
 
-    You can install the module ``mrp_jit`` to plan each order in real time after it's been confirmed. This means that you don't have to start the scheduler or wait for its periodical start time.
+    Install the module ``mrp_jit`` to schedule each order in real time after it's been confirmed. 
+    This means that you don't have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 
@@ -161,11 +171,13 @@ You can now look at the the list of deliveries waiting to be carried out using t
 
    *Items for a customer order.*
 
-.. tip::   **More information**  *States*
+.. tip::  States
 
-    Open ERP distinguishes between the states *confirmed* and *assigned*. You say that an item is confirmed when it's needed but the available stock is insufficient.
-
-    You say that an item is assigned when the storesperson reserves it. The necessary products have been reserved for this specific operation.
+    Open ERP distinguishes between the states *confirmed* and *assigned*. 
+    
+    You say that an item is **confirmed** when it's needed but the available stock is insufficient.
+    You say that an item is **assigned** when the storesperson reserves it: 
+    the necessary products have been reserved for this specific operation.
 
 You can confirm a customer delivery using the 'Confirm' button. A window then opens where you can enter the quantities actually delivered. If you enter a value less than the forecast one, Open ERP automatically generates a partial delivery notes and a new order for the remaining items. For this exercise, just confirm all the products.
 
@@ -176,9 +188,13 @@ If you return to the list of current orders you will see that your order has now
 
 *List of orders with their delivery state.*
 
-.. tip::  **More information** *Negative Stock*
+.. note:: Negative Stock
 
-    Stock Management is very flexible so that it can be effective. For example if you forget to enter products at goods in, this won't prevent you from sending them to customers. In Open ERP you can force all operations manually using the button “Force assignment”. In this case, your stocks risk falling negative. You should monitor all stocks for negative levels and carry out an inventory correction when that happens.
+    Stock Management is very flexible so that it can be more effective. 
+    For example if you forget to enter products at goods in, this won't prevent you from sending them to customers. 
+    In Open ERP you can force all operations manually using the button “Force assignment”. 
+    In this case, your stocks risk falling negative. You should monitor all stocks for negative levels and 
+    carry out an inventory correction when that happens.
 
 Analysing stock
 ---------------

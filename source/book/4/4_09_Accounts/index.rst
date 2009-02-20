@@ -15,11 +15,13 @@ There are several reasons for this:
 
 * unlike the general accounts, the structure of the analytic accounts isn't regulated by legal obligations, so each company can adapt it to its needs.
 
-.. tip::   **Advantage**  *Independence from general accounts* 
+.. note:: Independence from general accounts
 
-	In some software packages, analytic accounts are managed as an extension of general accounts – for example, by using the two last digits of the account code to represent analytic accounts.
+	In some software packages, analytic accounts are managed as an extension of general accounts – 
+	for example, by using the two last digits of the account code to represent analytic accounts.
 
-	In Open ERP, analytic accounts are linked to general accounts but are treated totally independently. So you can enter various different analytic operations that have no counterpart in the general financial accounts.
+	In Open ERP, analytic accounts are linked to general accounts but are treated totally independently. 
+	So you can enter various different analytic operations that have no counterpart in the general financial accounts.
 
 While the structure of the general chart of accounts is imposed by law, the analytic chart of accounts is built to fit a company's needs closely.
 
@@ -35,9 +37,10 @@ You'll discover many advantages of this independent representation below. For th
 
 * even those companies that don't use Open ERP's general accounts can use the analytic accounts for management.
 
-.. tip::   **Important**  *Who gains from analytic accounts?* 
+.. tip:: Who gains from analytic accounts? 
 
-	Unlike general accounts, analytic accounts in Open ERP aren't about accounting so much as a management tool for everyone in the company. That's why they're also called management accounts.
+	Unlike general accounts, analytic accounts in Open ERP aren't about accounting so much as a management tool for everyone in the company. 
+	That's why they're also called management accounts.
 
 	The main users of analytic accounts are the directors, general managers and project managers.
 

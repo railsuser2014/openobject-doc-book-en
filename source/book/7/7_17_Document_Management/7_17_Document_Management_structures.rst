@@ -27,11 +27,13 @@ Then in each project (represented by analytic accounts) you'll get this substruc
 
    *Substructure common to all projects.*
 
-.. tip::   **Technique**  *Mapping* 
+.. tip:: Mapping 
 
-    In practice, Open Erp doesn't create directories or files for every resource. It actually manages this by mapping between Open ERP resources and the FTP interface
+    In practice, Open Erp doesn't create directories or files for every resource. 
+    It actually manages this by mapping between Open ERP resources and the FTP interface
 
-    This approach gives a lot of flexibility because there's no synchronization to do, nor redundancy. Changes in either the document management system or in Open ERP will automatically be reflected over in the other side.
+    This approach gives a lot of flexibility because there's no synchronization to do, nor redundancy. 
+    Changes in either the document management system or in Open ERP will automatically be reflected over in the other side.
 
     And at the same time, resources are obviously not used up by storing things twice.
 

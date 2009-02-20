@@ -26,14 +26,17 @@ The following figure shows the initial configuration of the stores locations whe
 
    *Stores location structure when Open ERP has just been installed.*
 
-.. tip::   **More information**  *Hierarchical stock locations*
+.. note::  Hierarchical stock locations
 
-    In Open ERP locations are structured hierarchically. You can structure your locations as a tree, dependent on a father-son relationship. This lets you have more detailed levels of analysis of your stock operations and the organization of your warehouses.
+    In Open ERP locations are structured hierarchically. 
+    You can structure your locations as a tree, dependent on a parent-child relationship. 
+    This gives you more detailed levels of analysis of your stock operations and the organization of your warehouses.
 
-.. tip:: **Terminology** *Locations and Warehouses*
+.. tip:: Locations and Warehouses
 
-    In Open ERP warehouses represent your places of physical stock. A warehouse can be structured in several locations at multiple levels. Locations are used to manage all types of storage place, such as at the customer and the production counterparts.
-
+    In Open ERP **warehouses** represent your places of physical stock. 
+    A warehouse can be structured into several locations at multiple levels. 
+    Locations are used to manage all types of storage place, such as at the customer and production counterparts.
 
 .. raw:: html
 

@@ -4,9 +4,11 @@ Mapping between Open ERP resources and directories
 
 Each directory can have the type Static or be linked to another resource. A static directory, as with Operating Systems, is the classic directory that can contain a set of files. The directories linked to systems resources automatically possess sub-directores for each resource type defined in the parent directory.
 
-.. tip::   **Note**  *Directories in English* 
+.. tip:: Directories in English
 
-    To keep them synchronized to the working language, directory names are not translateable. But Open ERP's demonstration data automatically creates directories in English. You can rename them through the menu *Document Management > Configuration > Directories*.
+    To keep them synchronized to the working language, directory names are not translatable. 
+    But Open ERP's demonstration data automatically creates directories in English. 
+    You can rename them through the menu *Document Management > Configuration > Directories*.
 
 For example you can look at the directory shown in *Main Repository > Sales Orders > All Sales Orders*. You'll see the directory for all the orders present in Open ERP that was created automatically by the system.
 

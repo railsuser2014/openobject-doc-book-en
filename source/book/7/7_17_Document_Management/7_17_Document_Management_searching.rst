@@ -10,7 +10,7 @@ You've seen several methods of accessing documents quickly:
 
 * Through FTP access to Open ERP,
 
-* Using the menu Document Management > Structure of Directories.
+* Using the menu *Document Management > Structure of Directories*.
 
 But if you don't know where a specific document can be found, Open ERP also has a search tool integrated into its document management. To search for a file use the menu *Document Management > Search for a file*. You get to a document search screen that lets you search amongst all the attachments and all the documents in the FTP server.
 
@@ -32,7 +32,7 @@ Notice here an important advantage for an integrated document management system.
 
 But your search isn't limited to these few fields. You can also search on the content in the files. Each file is automatically indexed by the system to give you a search engine rather like Google's on the whole set of company documents.
 
-.. tip::   **Note**  *Supported file formats* 
+.. note:: Supported file formats 
 
     The Open ERP document management system can index the following file formats:
 

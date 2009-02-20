@@ -11,25 +11,28 @@ Open ERP's \ ``project_gtd``\   module was inspired by the work of two books fo
 
 * Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often referred to by its initials GTD (trademark registered since 2005). This book is built around the principle that people should clearly write down all their outstanding tasks and store the details about these tasks in a trustworthy system.
 
- They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
+  They then don't have to worry about holding all of this stuff in their head. Since they can be quite sure that it's recorded safely, they can allow themselves to relax and so have the energy and time to concentrate on handling the tasks themselves systematically. 
 
-.. tip::   **References**  *Efficiently managing time* 
+.. attention:: Managing time efficiently
 
-        David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
+     David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN : 978-0142000281). Also see the site: http://davidco.com
 
-	Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary Edition : 2004, 384 pages. (ISBN : 978-0743269513).
+	 Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 
-.. tip::   **Note**  *De-stress yourself !* 
+.. tip:: De-stress yourself ! 
 
-	Clear the tasks that clutter your thoughts by registering them in an organized system. This immediately helps you to de-stress yourself and organize your work in the best possible way.
+	Clear the tasks that clutter your thoughts by registering them in an organized system. 
+	This immediately helps you to de-stress yourself and organize your work in the best possible way.
 
-	If you feel stressed by too much work, do the following exercise to convince yourself about the benefits. Take some sheets of blank paper and write down everything that passes through your head about the things you need to do. For each task, note the next action to do on an adjacent line, and rank it by the date that you'll commit yourself to doing it.
+	If you feel stressed by too much work, do the following exercise to convince yourself about the benefits. 
+	Take some sheets of blank paper and write down everything that passes through your head about the things you need to do. 
+	For each task, note the next action to do on an adjacent line, and rank it by the date that you'll commit yourself to doing it.
 
 	At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably free of worries !
 
 * The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises organizations on the use of these practices, and reports on the productivity improvements in the organization that result.
 
-Our objective in this detour is not to detail the whole methodology but to describe the supporting tools provided by Open ERP's \ ``project_gtd``\   module.
+The objective in this detour is not to detail the whole methodology but to describe the supporting tools provided by Open ERP's \ ``project_gtd``\   module.
 
 Not everything that is urgent is necessarily important
 -------------------------------------------------------
@@ -94,7 +97,7 @@ To organize your tasks efficiently, Open ERP uses a method based on the followi
 
 	.. note::  *Method Iterative Process* 
 
-		#. Identify all the tasks that you have to deal with, including everything that keeps you awake at night, and enter them in your Inbox, which you'll find in the menu Project Management > Time Management > Inbox.
+		#. Identify all the tasks that you have to deal with, including everything that keeps you awake at night, and enter them in your Inbox, which you'll find in the menu *Project Management > Time Management > Inbox*.
 
 		#. Classify the tasks in your Inbox periodically, assigning them a context and a timebox. This indicates both when and where the task should be handled. If a task takes less than 10 minutes then maybe it could be handled immediately.
 
@@ -111,13 +114,18 @@ To organize your tasks efficiently, Open ERP uses a method based on the followi
 .. index:: Agenda
 .. index:: Timebox
 
-.. tip::   **Don't confuse** *Agenda*  *and timebox* 
+.. tip:: Don't confuse **Agenda** and **timebox** 
 
-	The idea of timebox is independent from that of an agenda. Certain tasks, such as meetings, must be done on a precise date. So they can't be managed by the timebox system but by an agenda.
+	The idea of timebox is independent from that of an agenda. 
+	Certain tasks, such as meetings, must be done on a precise date. 
+	So they can't be managed by the timebox system but by an agenda.
 
-	The ideal is to put the minimum of things on the agenda and to put only tasks there that have a fixed date. The timebox system is more flexible and more efficient for dealing with multiple tasks.
+	The ideal is to put the minimum of things on the agenda and to put there only tasks that have a fixed date. 
+	The timebox system is more flexible and more efficient for dealing with multiple tasks.
 
-So start by entering all the tasks required by project management. These could have been entered by another user and assigned to you. It's important to code in all of the tasks that are buzzing around in your head, just to get them off your mind. A task could be:
+So start by entering all the tasks required by project management. 
+These could have been entered by another user and assigned to you. 
+It's important to code in all of the tasks that are buzzing around in your head, just to get them off your mind. A task could be:
 
 * work to be done,
 

@@ -74,9 +74,10 @@ You can modify any of these fields on the order as you go.
 
 You can also indicate an analytic account for your order. This account will be used during invoicing to automatically generate accounting entries corresponding to the invoice. This is extremely useful for assigning revenues to the project or case specified by this order.
 
-    .. tip::   *Point*   Analytic Accounts
+.. tip::  Analytic Accounts
 
-        If you're managing by task, the analytic account to be selected is the one that corresponds to the project for the order. The sale carried out by the order can be allotted to the project so that profitability calculations can be made.
+   If you're managing by task, the analytic account to be selected is the one that corresponds to the project for the order. 
+   The sale carried out by the order can be allotted to the project so that profitability calculations can be made.
 
 Once the information has been entered, you can enter data for the order lines. To do that, create a new order line as shown in the figure below:
 
@@ -104,9 +105,12 @@ First of all select the product that is to be sold to the customer. Open ERP giv
 
 When the product that's to be sold to the customer has been selected, Open ERP automatically completes all the other required fields: price, unit of measure, description, discount, lead times, applicable taxes, default packaging and the product description. All of this information comes from the product form.
 
-  .. tip::   *Point*   Visible Discount
+.. tip:: Visible Discount
 
-    By default, the customer discount is directly included in the sale price to the customer. He'll then see a discount of 0% but a reduced unit procie. If you install the module ``product_visible_discount`` you can configure whether you want to make the discount explicitly visible on the order form, or just reduce the unit price.
+   By default, the customer discount is directly included in the sale price to the customer. 
+   He'll then see a discount of 0% but a reduced unit procie. 
+   If you install the module ``product_visible_discount`` you can configure whether you want to make the discount 
+   explicitly visible on the order form, or just reduce the unit price.
 
 In the form, the selected product is presented in the language of the user so that he can understand what he's selling. The description of the product sold is presented in the customer's language. This language is used on the quotation or order when it's printed for the customer.
 
@@ -115,9 +119,12 @@ In the form, the selected product is presented in the language of the user so th
 
    *Sale of a product in a partner language that differs from the user language.*
 
-  .. tip::   *Point*   Exceptional Sales
+.. note:: One-off Sales
 
-    If a product's only sold to a customer once, you don't have to enter data into a complete new product form just for that sale. You can manually complete all the information in the order without putting it into a product: description, price, quantity, lead time, taxes. In that case Open ERP won't generate a delivery note because the product isn't held in stock.
+   If a product's only sold to a customer once, you don't have to enter data into a complete new product form just for that sale. 
+   You can manually complete all the information in the order without putting it into a product: 
+   description, price, quantity, lead time, taxes. 
+   In that case Open ERP won't generate a delivery note because the product isn't held in stock.
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do this, click on the report to the right *Quotation / Order*. Open ERP then opens the quotation in PDF to enable to you to see it before printing.
 
@@ -243,15 +250,16 @@ Configuration of orders
 
 Depending on the configuration of the order, several different possible consequences might follow. Three fields will determine the behaviour of the order:
 
-* Packing Policy : partial delivery, or complete delivery
+* Packing Policy : partial delivery, or complete delivery,
 
-* Invoicing : based on the order, or based on delivery
+* Invoicing : based on the order, or based on delivery,
 
 * Shipping Policy: invoicing based on order items, delivery and manual invoice, automatic invoicing after delivery.
 
-     .. tip::   *Note*   Simplified view
+  .. tip::   *Note*   Simplified view
 
-         If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
+     If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. 
+     To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
 
 Packing mode
 --------------
@@ -330,9 +338,9 @@ To define a new delivery grid, use the menu *Stock Management > Configuration > 
 
 You must then set the rules for calculating the price of transport in the first tab *Transprt Grid*. A rule must first of all have a name. Then set the condition for which this rule is applicable, for example Weight < 0.5kg.
 
-    .. tip::   *Note*   Weights
+.. note:: Weights
 
-        Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
+   Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
 
 Then give the sale price and the cost price. The price can be expressed in different ways:
 
@@ -532,25 +540,27 @@ Price management policies
 
 Some companies are notorious for their complicated pricelists. Many forms of price variation are used, such as end-of-year refunds, discounts, changes of terms and conditions with time, various prepayments, cascaded rebates, seasonal promotions, and progressive price reductions.
 
-    .. tip::   **Terminology**  *Rebate, Refund, Reduction*
+.. note:: Rebate, Refund, Reduction
 
-        In some accounting jurisdictions you have to differentiate between the three following terms:
+   In some accounting jurisdictions you have to differentiate between the three following terms:
 
-        * Rebate: reimbursement to the client, usually at the end of the year, that depends on the quantity of goods purchased over a period.
+   * Rebate: reimbursement to the client, usually at the end of the year, that depends on the quantity of goods purchased over a period.
 
-        * Refund: reduction on the order line or invoice line if a certain quantity of goods is purchased at one time or is sold in a framework of a promotional activity.
+   * Refund: reduction on the order line or invoice line if a certain quantity of goods is purchased at one time or is sold in a framework of a promotional activity.
 
-        * Reduction: A one-off reduction resulting from a quality defect or a variation in a product's conformance to a specification.
+   * Reduction: A one-off reduction resulting from a quality defect or a variation in a product's conformance to a specification.
 
 Intelligent price management is difficult, because it requires you to integrate several conditions from clients and suppliers to create estimates quickly or to invoice automatically. But if you have an efficient price management mechanism you can often keep margins raised and respond quickly to changes in market conditions. A good price management system gives you scope for varying any and all of the relevant factors when you're negotiating a contract.
 
 To help you work most effectively, Open ERP's pricelist principles are extremely powerful yet are based on simple and generic rules. You can develop both sales pricelists and purchase pricelists for products capable of accommodating conditions such as the date period, the quantity requested and the type of product.
 
-    ..tip::   **Don't confuse**   *The Different Prices*
+.. tip:: Don't confuse the different price specifications
 
-        Don't confuse the sale price with the base price of the product. In Open ERP's basic configuration the sale price is the basic price set on the product form but a customer can be given a different sale price depending on the conditions.
+   Don't confuse the sale price with the base price of the product. 
+   In Open ERP's basic configuration the sale price is the basic price set on the product form 
+   but a customer can be given a different sale price depending on the conditions.
 
- It's the same for purchase price and standard cost. Purchase price is your suppliers' selling price, which changes in response to different criteria such as quantities, dates, and supplier. This is automatically set by the accounting system. You'll find that the two prices have been set to the same for all products by default with the demonstration data, which can be a source of confusion since you're free to set the standard cost to something different.
+It's the same for purchase price and standard cost. Purchase price is your suppliers' selling price, which changes in response to different criteria such as quantities, dates, and supplier. This is automatically set by the accounting system. You'll find that the two prices have been set to the same for all products by default with the demonstration data, which can be a source of confusion since you're free to set the standard cost to something different.
 
 Each pricelist is calculated from defined policies, so you'll have as many sales pricelists as active sales policies in the company. For example a company that sells products through three sales channels could create the following price lists:
 
@@ -587,9 +597,10 @@ For each list you should define:
 
 * the  *Currency*  in which the prices are expressed.
 
-.. tip::   **Terminology**  *Consumer Price* 
+.. tip:: Consumer Price
 
-"	If you install the module ``edi`` a third type of list appears – the *Consumer Price* - which defines the price displayed for the end user. This doesn't have to be the same as your selling price to an intermediary or distributor."
+   If you install the module ``edi`` a third type of list appears – the *Consumer Price* - which defines the price displayed for the end user. 
+   This doesn't have to be the same as your selling price to an intermediary or distributor.
 
 .. index::
    single: Pricelists; versions
@@ -604,9 +615,11 @@ So set the  *Name*  of this associated version. If the list only has a single ve
 
 Then set the *Start date* and *End date* of this version. The fields are both optional: if you don't set any dates the version will be permanently active. Use the  *Active*  field in the versions to activate or disable a pricelist version.
 
-    .. tip::   **Note**  *Automatically updating the sale pricelist* 
+.. note:: Automatically updating the sale pricelist
 
-"	  It's possible to make any sale pricelist depend on one of the other pricelists. So you can decide to make your sale pricelist depend on your supplier's purchase pricelist, to which you add a margin. The prices are automatically calculated as a function of the purchase price and need no further manual adjustment."
+   It's possible to make any sale pricelist depend on one of the other pricelists. 
+   So you can decide to make your sale pricelist depend on your supplier's purchase pricelist, to which you add a margin. 
+   The prices are automatically calculated as a function of the purchase price and need no further manual adjustment.
 
 .. index:: Price
 
@@ -648,9 +661,11 @@ The first field, *Field1*, defines a discount. Set it to 0.20 for a discount of 
 
 Then you can specify a rounding method. The rounding calculation is carried out to the nearest number. For example if you set 0.05 in this example, a price of 45.66 will be rounded to 45.65, and 14,567 rounded to 100 will give a price of 14,600.
 
-    .. tip::   **Attention**  *Swiss special situation* 
+.. note:: Swiss special situation
 
-"	    In Switzerland, the smallest monetary unit is 5 cents. There aren't any 1 or 2 cent coins. So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist."
+   In Switzerland, the smallest monetary unit is 5 cents. 
+   There aren't any 1 or 2 cent coins. 
+   So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist.
 
 The supplement from *Field2* is applied before the rounding calculation, which enables some interesting effects. For example if you want all your prices to end in 9.99, set your rounding to 10 and your supplement to -0.01 in *Field2* 
 
@@ -850,9 +865,12 @@ Rebates at the end of a campaign can help you avoid this sort of problem. You ca
 
 Install the ``discount_campaign`` module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu *Sales Management > Configuration > Rebates at the end of a campaign*.
 
-    .. tip:: *Terminology* Year-end rebate
+.. note:: Year-end rebate
 
-        Most companies use the term *year-end rebate*. Most of the time the rebates are applied at the end of the year. But if you're using rebates for the end of campaigns, this will only actually be the case if the campaign lasts exactly one year. 
+   Most companies use the term *year-end rebate*. 
+   Most of the time the rebates are applied at the end of the year. 
+   But if you're using rebates for the end of campaigns, 
+   this will only actually be the case if the campaign lasts exactly one year. 
 
 .. figure:: images/discount_campaign_RFA.png
    :align: center
@@ -892,9 +910,10 @@ Then you can use the new tab *Deliveries* on the order to plan the quantities so
 
 In the order lines, Open ERP shows you the quantity planned in addition to the quantity sold so you can verify that the quantities sold equal the quantities to be delivered. When you confirm the order, Open ERP no longer generates a single delivery order but plans scheduled despatches.
 
-    .. tip::   **Note**  *Invoicing Mode* 
+.. tip:: Invoicing Mode
 
-        If you work with Open Orders, you should set the order into the mode *Invoicing on the basis of deliveries*. Then the storesperson will be able to replan and change the quantities of the forecast deliveries in the system.
+   If you work with Open Orders, you should set the order into the mode *Invoicing on the basis of deliveries*. 
+   Then the storesperson will be able to replan and change the quantities of the forecast deliveries in the system.
 
 Order templates
 ================

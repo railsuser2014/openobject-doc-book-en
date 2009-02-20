@@ -17,9 +17,13 @@ As you've seen the complete architecture of Open ERP includes the following ele
 * several clients that access the Open ERP server: they can either be web clients if the eTiny web server is installed, or GTK clients.
 
 
-.. tip::   **Definition**  *Deployment* 
+.. note:: Deployment
 
-	Deployment is the process of putting a Open ERP database into a production-ready state, where it can be used by everyone in your business for their daily work. You'd usually configure Open ERP and load data into it on one development system, train staff on that or another training system and deploy it onto a production system that has better protection against failure, better security and more performance.
+	Deployment is the process of putting a Open ERP database into a production-ready state, 
+	where it can be used by everyone in your business for their daily work. 
+	You'd usually configure Open ERP and load data into it on one development system, 
+	train staff on that or another training system and 
+	deploy it onto a production system that has better protection against failure, better security and more performance.
 
 Deployment Options
 -------------------
@@ -142,11 +146,11 @@ When you've installed the server you should create at least two databases:
 
 * a production database which will be the one used by the company in daily use.
 
-.. tip::   **Note**  *Version numbering* 
+.. note::  Version numbering 
 
 	Open ERP uses a version numbering model that comprises 3 numbers A.B.C (for example 4.2.2 or 5.0.0) where changes in the number A signify a major functional change, changes to number B signify an update that includes a batch of fault fixes and some new functionality, and the number C generally refers to some limited updates or fixes to the existing functionality.
 
-	The number B is notable: if it's an odd number, (for example 4.3.2 or 5.1.0) it's for a development version which isn't designed for a production environment. The even numbers are for stable versions.
+	The number B is special: if it's an odd number, (for example 4.3.2 or 5.1.0) it's for a development version which isn't designed for a production environment. The even numbers are for stable versions.
 
 If you have prepared a data module for Open ERP (that is a module that consists just of data, not altered functionality), you should test it in your development version and check that it doesn't require any more manual adjustments. If the import runs correctly, it shows that you're ready to load your data in the production database.
 
@@ -157,9 +161,12 @@ Since your data describes much of your company's value, take particular care bot
 .. index::
    single: HTTPS
 
-.. tip::   **Definition**  *HTTPS* 
+.. note:: HTTPS 
 
-	The HTTPS protocol (Secured Hyper Text Transfer Protocol) is the standard HTTP protocol secured by using the SSL (Secure Socket Layer) or TLS (Transport Layer Security) security protocols. It allows a user to verify her identify to the site to which she wants access, using a certificate of authentication. It also guarantees the integrity and confidentiality of the data sent between the user and the server. It can, optionally, provide highly secure client authentication by using a numbered certificate.
+	The HTTPS protocol (Secured Hyper Text Transfer Protocol) is the standard HTTP protocol secured by using the SSL (Secure Socket Layer) or TLS (Transport Layer Security) security protocols. 
+	It allows a user to verify her identify to the site to which she wants access, using a certificate of authentication. 
+	It also guarantees the integrity and confidentiality of the data sent between the user and the server. 
+	It can, optionally, provide highly secure client authentication by using a numbered certificate.
 
 	The default HTTPS port is 443.
 

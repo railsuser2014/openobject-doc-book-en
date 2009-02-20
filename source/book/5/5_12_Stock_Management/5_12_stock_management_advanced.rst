@@ -8,26 +8,30 @@ Requirements Calculation
 
 Requirements calculation is the calculation engine that plans, prioritizes and starts the automated restocking as a function of rules defined in the products.
 
-.. tip:: **Terminology** *Requirements Calculation*
+.. note:: Requirements Calculation
 
     Requirements Calculation is often called the Scheduler.
 
-    It automatically starts once per day. You can also start it manually using the menu Manufacturing > Start All Schedulers. It then uses the parameters defined in the products, the suppliers, and the company to determine the priorities between the different product orders, deliveries and purchases from suppliers.
+    It automatically starts once per day. 
+    You can also start it manually using the menu *Manufacturing > Start All Schedulers*. 
+    It then uses the parameters defined in the products, the suppliers, and the company 
+    to determine the priorities between the different product orders, deliveries and purchases from suppliers.
 
 .. index:: Just in Time
 
 Just in Time
 -------------
 
-By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts use the menu Administration > Configuration > Planning > Actions Planned. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
+By default, requirements calculation starts automatically once a day. You're advised to make this run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when you're also trying to use it interactively yourselves. To specify the time it starts use the menu *Administration > Configuration > Planning > Actions Planned*. Select the rule called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 Some companies want to plan the orders progressively as they are entered so they don't wait until the procurement orders are planned the next day. Install the module ``mrp_jit`` to handle this. Once it's installed each requirement (production or procurement order) will be planned in real time as soon as it's been confirmed.
 
 Then if you make a customer order with a product that's *Make To Order* the quotation request for a supplier will be generated. 
 
- ..tip :: *Point** *Delivery from the supplier or to the customer*
+ ..tip :: Delivery from the supplier or to the customer
 
-    The ``sale_supplier_direct_delivery`` module enables you to deliver the product directly from the supplier to the customer. The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
+    The ``sale_supplier_direct_delivery`` module enables you to deliver the product directly from the supplier to the customer. 
+    The logic to follow is configured for each products and affects only the products whose lines are marked “Make to Order”.
 
 This mode is not always advisable. Each order is handled once it's been confirmed. Then if an order is to be delivered in three months the scheduler will reserve goods in stock for each order once it's been confirmed. It would have been more efficient to leave these products available for other orders.
 
@@ -92,7 +96,7 @@ You'll see the configuration of the supplier order in detail in the chapter on p
 Manual data entry of goods receipt
 -----------------------------------
 
-To enter data about goods receipt manually you must use the menu Stock Management > Goods Receipt > New items received. Then enter the necessary data manually in the goods receipt form.
+To enter data about goods receipt manually you must use the menu *Stock Management > Goods Receipt > New items received*. Then enter the necessary data manually in the goods receipt form.
 
 .. figure:: images/stock_getting.png
    :align: center

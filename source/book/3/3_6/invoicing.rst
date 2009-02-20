@@ -20,7 +20,7 @@ You get the correct form for each of the four types of invoice from the menu you
    single: Invoices; Types
 .. 
 
-.. tip::   **Technique**  *Types of invoice* 
+.. note::  Types of invoice 
 
 	There are many advantages in deriving the different types of invoice from the same object. The two most important are:
 
@@ -33,7 +33,7 @@ You get the correct form for each of the four types of invoice from the menu you
 .. 
 
 
-.. tip::   **Terminology**  *Credit Note* 
+.. note:: Credit Note 
 
 	A credit note is a document that enables you to cancel an invoice or part of an invoice.
 
@@ -94,13 +94,13 @@ To enter a document in Open ERP you should always fill in fields in the order t
 .. index::
    single: Properties fields
 
-.. tip::   **Definition**  *Properties fields* 
+.. note:: Properties fields 
 
 	The Properties fields on the Partner form or the Product form are multi-company fields. The value that the user sees in these fields depends on the company that the user works for.
 
 	If you work in a multi-company environment that's using one database, you have several charts of accounts. Asset and liability accounts for a partner depend on the company that the user works for.
 
-.. tip::   **Note**  *Seeing partner relationships* 
+.. tip:: Seeing partner relationships
 
 	You can always reach more information from a relation field in Open ERP. In the web client a relation is a hyperlink if the form is read-only – it takes you to the main form for that entity, with all of the actions and links. In the web client in edit mode, and in the GTK client, you can press the keyboard Ctrl button at the same time as right-clicking in the field to get a drop-down dialog with links and other options. So you could click on a partner field to rapidly get the partner's:
 
@@ -116,7 +116,7 @@ To enter a document in Open ERP you should always fill in fields in the order t
 
 You can then add a short Description to the invoice and select the currency that you want to invoice in.
 
-.. tip::   **Attention**  *Invoice Description* 
+.. tip:: Invoice Description 
 
 	The invoice description is more of a title than a comment. If you want to add more detailed comments you can use the Notes field at the bottom of the second tab Other Information.
 
@@ -138,15 +138,19 @@ So select the product \ ``Titanium Alloy Radiator``\   in the product field in a
 
 *  *Taxes* : provided by the product form and the partner form.
 
-.. tip::   **Note**  *Managing the price with tax included* 
+.. tip::  Managing the price with tax included 
 
-	By default, Open ERP invoices and processes the price without taxes – they're managed as a separate figure. If you want to have invoices provided with tax included you can install the module ``account_tax_include``.
+	By default, Open ERP invoices and processes the price without taxes – they're managed as a separate figure. 
+	If you want to have invoices provided with tax included you can install the module ``account_tax_include``.
 
 	The module adds a field on each invoice that enables you to indicate if the invoice is tax exclusive or tax inclusive.
 
-.. tip::   **Note**  *Information about the product* 
+.. note:: Information about the product
 
-	When you're entering invoice data it can sometimes be useful to get hold of more information about the product you're invoicing. Since you're already in edit mode, you'd press the Ctrl key and use a right mouse-click on the Product field (in both the web and the GTK clients). Then select the available reports. Open ERP provides three standard reports about the product
+	When you're entering invoice data it can sometimes be useful to get hold of more information about the product you're invoicing. 
+	Since you're already in edit mode, you'd press the Ctrl key and use a right mouse-click on the Product field 
+	(in both the web and the GTK clients). 
+	Then select the available reports. Open ERP provides three standard reports about the product:
 
 	* forecasts of future stock,
 
@@ -168,7 +172,7 @@ Once the invoice lines have been entered, you can click  *Calculate*  on the inv
 
 In the  *Taxes*  area at the bottom left of the invoice you'll find the details of the totals calculated for different tax rates used in the invoice.
 
-.. tip::   **Technique**  *Tax Calculations* 
+.. tip::  Tax Calculations 
 
 	You can double-click on one of the lines in the tax summary areas in the invoice.
 
@@ -187,7 +191,7 @@ Before approving the invoice you can modify the date and the accounting period, 
 .. index::
    single: Invoice layout
 
-.. tip::   **Note**  *Invoice layout* 
+.. note:: Invoice layout 
 
 	If you want to make your invoice layout more elaborate you can install the module ``account_invoice_layout``. This enables you to add various elements between the lines such as subtotals, sections, separators and notes.
 
@@ -220,7 +224,7 @@ Take the case of the following product
 .. index::
    single: DEEE tax
 
-.. tip::  **Definition**  *DEEE tax*
+.. note:: DEEE tax
 
 	The DEEE tax (disposal of electronic and electrical equipment) is an ecological tax that was imposed in France from 2007. It's applied to batteries to finance their recycling and is a fixed sum that's applied to the before-tax figure on the invoice
 
@@ -238,9 +242,10 @@ If you sell to a customer in another company in the community (intracommunity), 
 
 If you haven't coded the parameters in the customer form correctly, Open ERP will suggest incorrect taxes in the invoice. That's not an insuperable problem because you can always modify the information directly in the invoice before approving it.
 
-.. tip::   **Advice**  *Occasional invoices* 
+.. tip:: Occasional invoices 
 
-	When you create an invoice for a product that will only be bought or sold once you don't have to encode a new product. But you'll have to provide quite a bit of information manually on the invoice line:
+	When you create an invoice for a product that will only be bought or sold once you don't have to encode a new product. 
+	But you'll have to provide quite a bit of information manually on the invoice line:
 
 	* sale price,
 
@@ -265,15 +270,18 @@ Cancelling an invoice has the effect of automatically modifying the correspondin
 
 When the invoice has been cancelled you then have the possibility of putting it back into the \ ``Draft``\   state. This means that you can modify it and approve it again later.
 
-.. tip::   **Advice**  *Numbering invoices* 
+.. tip::  Numbering invoices 
 
-	Some countries require you to have contiguously numbered invoices with no break in the sequence. If, after cancelling an invoice that you're not regenerating, you find yourself with a break in the numbering you must go and modify the sequence, redo the invoice and replace the sequence number with its original value.
+	Some countries require you to have contiguously numbered invoices with no break in the sequence. 
+	If, after cancelling an invoice that you're not regenerating, 
+	you find yourself with a break in the numbering you must go and modify the sequence, 
+	redo the invoice and replace the sequence number with its original value.
 
-	You can control the sequences using the menu Administration > Custom > Sequences > Sequences.
+	You can control the sequences using the menu *Administration > Custom > Sequences > Sequences*.
 
 Attention: cancelling an invoice will cause a break in the number sequence of your invoices. You're strongly advised to recreate this invoice and re-approve it to fill the hole in the numbering.
 
-.. tip::   **Advantage**  *Duplicating a document* 
+.. tip:: Duplicating a document 
 
 	The duplication function can be applied to all the system documents: you can duplicate anything – a product, an order, or a delivery.
 
@@ -283,7 +291,7 @@ Attention: cancelling an invoice will cause a break in the number sequence of yo
 
 		#. Duplicating invoices
 
-			Instead of entering a new invoice each time, you can base an invoice on a similar preceding one and duplicate it. To do this, first search for a suitable existing one. In the web client, show the invoice in read-only (non-editable) form view, then click Duplicate. In the GTK client, select Form > Duplicate from the top menu.
+			Instead of entering a new invoice each time, you can base an invoice on a similar preceding one and duplicate it. To do this, first search for a suitable existing one. In the web client, show the invoice in read-only (non-editable) form view, then click *Duplicate*. In the GTK client, select *Form > Duplicate* from the top menu.
 
 			The duplication creates a new invoice in the Draft state. That enables you to modify it before approving it. Duplicating documents in Open ERP is an intelligent function, which enables the duplicated invoice to be given its own sequence number, today's date, and the draft state, even if the preceding invoice has been paid.
 
@@ -318,13 +326,15 @@ Creating a supplier invoice
 
 The form that manages supplier invoices is very similar to the one for customer invoices. However, it's been adapted to simplify rapid data entry and monitoring of the amounts recorded.
 
-.. tip::   **Method**  *Entering data* 
+.. tip::  Entering data 
 
 	Many companies don't code up supplier invoices but simply enter accounting data corresponding to the purchase journal.
 
-	This particularly applies to users that have focused on the accounting system rather than all the capabilities provided by an ERP system. The two approaches reach the same accounting result: some prefer one and others prefer the other depending on their skills.
+	This particularly applies to users that have focused on the accounting system rather than all the capabilities provided by an ERP system. 
+	The two approaches reach the same accounting result: some prefer one and others prefer the other depending on their skills.
 
-	However, when you use the Purchase Management functions in Open ERP you should work directly on invoices because they provide Purchase Orders or Goods Receipt documents.
+	However, when you use the Purchase Management functions in Open ERP you should work directly on invoices because they provide 
+	Purchase Orders or Goods Receipt documents.
 
 To encode a new supplier invoice, use the menu  *Financial Management > Invoices > Supplier Invoice* .
 
@@ -352,9 +362,10 @@ Just like the customer invoice you have the choice of entering all the informati
 
 Click  *Calculate*  to verify that the different amounts correspond to those indicated on the paper invoice from the supplier. When you approve the invoice, Open ERP verifies that the total amount indicated in the header correspond to the sum of the amounts without tax on the invoice lines and the different applicable taxes.
 
-.. tip::   **Note**  *The Calculate button* 
+.. tip:: The Calculate button
 
-	Even though you should calculate the invoice before approving it you don't have to push the Calculate button. If you approve the invoice directly the software calculates the different taxes itself and verifies the total.
+	Even though you should calculate the invoice before approving it you don't have to push the Calculate button. 
+	If you approve the invoice directly the software calculates the different taxes itself and verifies the total.
 
 	This button is only used for making a pre-check of the amount displayed before you confirm it finally.
 
@@ -363,7 +374,7 @@ Open ERP automatically completes the  *Date Invoiced*  and the accounting perio
 .. index::
    single: Declarations
 
-.. tip::   **Terminology**  *Dates and Accounting Periods* 
+.. note::  Dates and Accounting Periods
 
 	Accounting periods are treated as legal period declarations. For example a tax declaration for an invoice depends on the accounting period and not on the date of invoicing.
 
@@ -382,7 +393,7 @@ You can find that the amounts don't correspond with what your supplier has given
 
 * the amounts have been rounded differently.
 
-.. tip::   **Technique**  *Rounding Tax* 
+.. tip:: Rounding Tax
 
 	It often happens that a supplier adds 1 to the total because the tax calculation has been rounded upwards. Some tax amounts aren't valid because of this rounding.
 
@@ -408,20 +419,24 @@ Similarly, entering a supplier credit note is the same as that of the supplier i
 
 It's easy to generate a credit note quickly from an existing invoice. To do this, select a customer or supplier invoice and click  *Refund invoice*  on the toolbar to the right. Open ERP opens a new credit note form for you in the \ ``Draft``\   state so that you can modify it before approval.
 
-.. tip::   **Note**  *Crediting several invoices* 
+.. tip::  Crediting several invoices
 
-	You can refund several invoices in one operation. From the web client you'd display a list of invoices and then click the checkboxes alongside the ones you want to refund. Then click the Refund invoice action from the Right toolbar. 
+	You can refund several invoices in one operation. 
+	From the web client you'd display a list of invoices and then click the checkboxes alongside the ones you want to refund. 
+	Then click the *Refund invoice* action from the right toolbar. 
 
-	In the GTK client you'd make a multiple selection of invoices by Ctrl-clicking whichever lines you want to select. Then you'd execute the action by clicking the Action (gears) icon on the icon toolbar and selecting Refund invoice.
+	In the GTK client you'd make a multiple selection of invoices by Ctrl-clicking whichever lines you want to select. 
+	Then you'd execute the action by clicking the Action (gears) icon on the icon toolbar and selecting *Refund invoice*.
 
 Invoice payment
 ---------------
 
 The invoice is automatically marked as paid by Open ERP once invoice entries have been reconciled with payment entries. You yourself don't have to mark the invoices as paid: Open ERP manages that when you reconcile your payments.
 
-.. tip::   **Advice**  *Reconciling a credit note* 
+.. tip::  Reconciling a credit note
 
-	Generally you reconcile the invoice's accounting entries with their payment(s). But you can also reconcile an invoice with the entries from the corresponding credit note instead, to mutually cancel them.
+	Generally you reconcile the invoice's accounting entries with their payment(s). 
+	But you can also reconcile an invoice with the entries from the corresponding credit note instead, to mutually cancel them.
 
 You've probably noticed the  *Pay Invoice*  action button in the toolbar to the right of the invoice form. This lets you enter payments and get entries reconciled very quickly. This functionality is usually employed by companies that use Open ERP as a simple billing system and not for complete accounting. They encode their payment on different invoices manually.
 

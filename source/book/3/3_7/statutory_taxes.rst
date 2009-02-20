@@ -14,12 +14,13 @@ This section deals with statutory taxes and accounts which are legally required 
 
 * the tax declaration.
 
-.. tip::   **A step further**  *Other declarations* 
+.. tip:: Other declarations
 
-	In addition to the legal declarations available in the accounts modules, Open ERP supplies declarations based on the functionality in other modules.
+	In addition to the legal declarations available in the accounts modules, 
+	Open ERP supplies declarations based on the functionality in other modules.
 
-	You can, for example, install the ``report_intrastat`` module for intra-stat declarations about sending goods to and receiving goods from other countries.
-
+	You can, for example, install the ``report_intrastat`` module for intra-stat declarations 
+	about sending goods to and receiving goods from other countries.
 
 .. index:: Tax
 
@@ -117,11 +118,14 @@ To create a new Tax Case, use the menu  *Financial Management > Configuration > 
 
 *  *Childs Tax Account* : other tax accounts that can be used to supply the figure for taxation.
 
-.. tip::   **Note**  *Using Child Taxes* 
+.. tip:: Using Child Taxes 
 
-	You can use child taxes when you have a complex tax situation that you want to hide your end users from. For example, you might define a motor mileage expenses product with a composite tax made up of two child taxes – a non-reclaimable private element and a reclaimable business element (which is the case in some European countries). 
+	You can use child taxes when you have a complex tax situation that you want to hide your end users from. 
+	For example, you might define a motor mileage expenses product with a composite tax made up of two child taxes – 
+	a non-reclaimable private element and a reclaimable business element (which is the case in some European countries). 
 
-	When your staff come to claim motor mileage, they do not need to know about this taxation, but the accounting impact of their claim will be automatically managed in Open ERP.
+	When your staff come to claim motor mileage, they do not need to know about this taxation, 
+	but the accounting impact of their claim will be automatically managed in Open ERP.
 
 The fields above apply the taxes that you specify and record them in the general accounts but don't provide you with the documentation that your tax authorities might need. For this use the Tax Declaration tab to define which Tax Cases should be used for this tax:
 
@@ -138,15 +142,18 @@ Use of Taxes on Products, Partners, Projects and Accounts
 
 When you've created a tax structure consisting of Tax Cases and Tax objects, you can use the taxes in your various business objects so that financial transactions can be associated with taxes and tax-like charges. 
 
-.. tip::   **Advice**  *Retail Customers* 
+.. tip:: Retail Customers
 
-	When you're retailing to end users rather than selling to a business, you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather than a tax-exclusive price plus tax. 
+	When you're retailing to end users rather than selling to a business, 
+	you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather than a tax-exclusive price plus tax. 
 
-	To do this in Open ERP just install the ``account_tax_include`` module. Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. Prices are then displayed appropriately.
+	To do this in Open ERP just install the ``account_tax_include`` module. 
+	Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. 
+	Prices are then displayed appropriately.
 
 You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners* to open and edit a Partner form for the charity, then:
 
-* select the  *Properties*  tab,
+* select the *Properties*  tab,
 
 * set the  *Default Tax*  field to the \ ``Charities VAT``\   tax.
 
@@ -160,9 +167,12 @@ Generally, when you make a purchase or sale, the taxes assigned to the product a
 
 You can also assign multiple taxes to a Project, so that invoices from the Project carry an appropriate rate of tax (project invoicing is dealt with in detail in a later chapter).
 
-.. tip::   **A step further**  *Tax regions* 
+.. note:: Tax regions
 
-	The third-party module ``import_export`` can be used to extend Open ERP's tax system, so that you can assign taxes to different accounts depending on the location of the Partner. The Partner is given a new Partner Location field that can be set to Local, Europeor Outside, so that taxes and tax bases can be channeled to different accounts. 
+	The third-party module ``import_export`` can be used to extend Open ERP's tax system,
+	so that you can assign taxes to different accounts depending on the location of the Partner. 
+	The Partner is given a new Partner Location field that can be set to Local, Europe or Outside, 
+	so that taxes and tax bases can be channeled to different accounts. 
 
 	This module could be the basis of more ambitious location-based tax accounting.
 
@@ -178,11 +188,13 @@ To print the balance of accounts or the accounts ledgers you should turn to the 
 
 Select the accounting period you're interested in and click  *Open Charts* , then select one or several accounts for analysis by clicking and highlighting the appropriate line(s). Click the  *Print*  button and Open ERP asks you to select either the  *General Ledger* , the  *Account balance* , or an  *Analytic check* . If you select an account which has sub-accounts in the hierarchy you can automatically analyze that account and its child accounts.
 
-.. tip::   **Advantage**  *Simulated balance* 
+.. tip::  Simulated balance 
 
-	While you're printing account balances, if you have installed the ``account_simulation`` module Open ERP asks you which level of simulation to execute.
+	While you're printing account balances, 
+	if you have installed the ``account_simulation`` module Open ERP asks you which level of simulation to execute.
 
-	Results will vary depending on the level selected. You can, for example, print the balance depending on various methods of amortization:
+	Results will vary depending on the level selected. 
+	You could, for example, print the balance depending on various methods of amortization:
 
 	* the normal IFRS method,
 
@@ -199,7 +211,7 @@ The accounting journals
 
 To obtain the different journals use the menu  *Financial Management > Reporting > Printing Journals* .
 
-.. tip::   **Terminology**  *Journals* 
+.. note::  Journals
 
 	Note there are different types of journal in Open ERP
 
@@ -254,17 +266,19 @@ You can create several tax charts if your company is subject to different types 
 
 Each accounting entry can then be linked to one of the tax accounts. This association is done automatically by the taxes which had previously been configured in the invoice lines.
 
-.. tip::   **Advantage**  *Tax declaration* 
+.. tip:: Tax declaration
 
-	Some accounting software manages the tax declaration in a dedicated general account. The declaration is then limited to the balance in the specified period. In Open ERP you can create an independent chart of taxes, which has several advantages: 
+	Some accounting software manages the tax declaration in a dedicated general account. 
+	The declaration is then limited to the balance in the specified period. 
+	In Open ERP you can create an independent chart of taxes, which has several advantages: 
 
-	* it's possible to allocate only a part of the tax transaction
+	* it's possible to allocate only a part of the tax transaction,
 
-	* it's not necessary to manage several different general accounts depending on the type of sale and type of tax
+	* it's not necessary to manage several different general accounts depending on the type of sale and type of tax,
 
-	* you can restructure your chart of taxes as you need
+	* you can restructure your chart of taxes as you need.
 
-At any time you can check your chart of taxes for a given period using the report:  *Financial Management > Reporting > Taxes Report* .
+At any time you can check your chart of taxes for a given period using the report  *Financial Management > Reporting > Taxes Report*.
 
 This data is updated in real time. That's very useful because it enables you at any time to preview the tax that you owe at the start and end of the month or quarter.
 

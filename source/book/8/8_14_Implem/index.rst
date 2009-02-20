@@ -9,9 +9,12 @@ Implementation Methodology
 
 The management of ERP projects, and IT project management in general, are the subject of very many other books that you might want to investigate for yourself. The elements of the methodology presented here aren't intended to be an exhaustive review, just a brief overview of the different phases necessary to implement Open ERP in your company
 
-.. tip::   **Definition**  *Implementation* 
+.. tip:: Implementation
 
-	Implementation encompasses the whole process of integrating and deploying Open ERP, including evaluating it, establishing specifications, planning the deployment, the configuration of the software, loading data, installation and training the users. It doesn't really extend to software customization, nor support and maintenance.
+	Implementation encompasses the whole process of integrating and deploying Open ERP, 
+	including evaluating it, establishing specifications, planning the deployment, the configuration of the software, 
+	loading data, installation and training the users. 
+	It doesn't generally extend to software customization, nor support and maintenance.
 
 .. raw:: html
 

@@ -3,16 +3,18 @@ Management of lots and traceability
 
 The double-entry management in Open ERP enables you to run very advanced traceability. All operations are formalized in terms of stock moves, so it's very simple to search for the cause of a gap in the whole stock moves.
 
-.. tip::   **Definition** *Upstream and downstream traceability*
+.. note:: Upstream and downstream traceability
 
-    Upstream traceability runs from the raw materials received from the supplier and follows the chain to the finished products delivered to customers.
+.. TODO - I don't think that this is the right direction
 
-    Downstream traceability follows the product in the other direction, from customer to the different suppliers of raw material.
+    **Upstream** traceability runs from the raw materials received from the supplier and follows the chain to the finished products delivered to customers.
+
+    **Downstream** traceability follows the product in the other direction, from customer to the different suppliers of raw material.
 
 Stock Moves
 ------------
 
-To look at the history of transactions about a product or a given location, use the menu: Stock Management > Traceability > Low Level > Stock Moves. All the operations are then available. You can filter on the various field to retrieve the operations about an order, or a production, or a source location, or any given destination.
+To look at the history of transactions about a product or a given location, use the menu *Stock Management > Traceability > Low Level > Stock Moves*. All the operations are then available. You can filter on the various field to retrieve the operations about an order, or a production, or a source location, or any given destination.
 
 .. figure:: images/stock_move_tree.png
    :align: center
@@ -33,7 +35,7 @@ Each stock move is in a given state. The different possible states are:
 
 * Cancelled: the stock move wasn't carried out, so there's no account in either real stock or virtual stock.
 
-Delivery orders, goods receipts and internal picking lists are just documents that regroup a set of stock moves. You can also consult the history of these documents using the menu Stock Management > Traceability > Low level > Picking.
+Delivery orders, goods receipts and internal picking lists are just documents that regroup a set of stock moves. You can also consult the history of these documents using the menu *Stock Management > Traceability > Low level > Picking*.
 
 Lots
 -----
@@ -53,9 +55,10 @@ These lots can be encoded on all stock moves and, more precisely, on goods-in li
 
 To enter the lot number in an operation you can use an existing lot number or create a new lot. A manufacturing lot (batch number) must always be used for a single product. A tracking number can be used several times for different products so you can mix different products on a pallet or in a box.
 
-.. tip::   **Point**  *Simplified View*
+.. note:: Simplified View
 
-    In the simplified view the tracking numbers don't appear. The different fields are deliberately hidden while working in the simplified view.
+    In the simplified view the tracking numbers can't be seen. 
+    These fields are hidden when working in simplified view.
 
 On the product form it is also possible to indicate the operations in which a lot nubmer is required. You can then force the user to show the lot number for manufacturing operations, goods receipt, or customer packing.
 
@@ -73,9 +76,9 @@ Traceability
 
 If you encode the lot numbers for stock moves you can then enquire about the traceability for a given lot number. To do this use the menu *Stock Management > Traceability > Production Lots*, or *Stock Management > Traceability > Tracking Lots*.
 
-.. tip::   **Point**  *Product Shortcuts*
+.. tip:: Product Shortcuts
 
-    From the product form the toolbar to the right offers useful information:
+    From the product form, the toolbar to the right offers useful information:
 
     * Minimum stock rules,
 

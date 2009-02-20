@@ -25,9 +25,9 @@ Invoicing journals are used to assign purchase orders and/or delivery order to a
 
 Order journals look like orders and are automatically transferred to orders for the corresponding items. These enable you to classify the orders in various ways, such as by department, by salesperson, or by type. Then if a salesperson looks at her own journals after an order she can easily see the work on current items compared with her own orders.
 
-.. tip::  **Point**  *Default Values*
+.. tip:: Default Values
 
-      To enter all the orders in their own order journal, a salesperson can use the default values that are entered in the fields when creating orders.
+   To enter all the orders in their own order journal, a salesperson can use the default values that are entered in the fields when creating orders.
 
 Finally the delivery journals are used to post each item into a delivery journal. For example you can create journals dated according to customer delivery dates (such as Monday's deliveries, or afternoon deliveries) or these journals could represent the day's work for delivery vehicles (such as truck1, truck2).
 
@@ -52,11 +52,12 @@ Then enter the data for some orders for these two partners. After entering this 
 
 Then you'll look at the assembly notes about these orders in the field 'Invoicing Mode' is automatically shown there. Then confirm the different orders in the list.
 
-At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu Stock Management > Sorted List > List to invoice. Choose the invoicing journal and all the lists of orders to invoice then open lin list5 view. It's then possible to automatically carry out invoicing by clicking the action Invoice (the gears in the application client).
+At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu *Stock Management > Sorted List > List to invoice*. Choose the invoicing journal and all the lists of orders to invoice then open lin list5 view. It's then possible to automatically carry out invoicing by clicking the action *Invoice* (the gears symbol in the application client).
 
-.. tip::  **Point** *Confirming invoices*
+.. tip:: Confirming invoices
 
-    By default, invoices are generated in the draft state which enables you to modify them before sending them to the customer. But you can confirm all the invoices in one go by selecting them all from the list and doing the action 'Confirm draft invoices'.
+    By default, invoices are generated in the draft state which enables you to modify them before sending them to the customer. 
+    But you can confirm all the invoices in one go by selecting them all from the list and doing the action 'Confirm draft invoices'.
 
 At the end of the month the invoicing management does the same work but in the journal 'month-end invoicing'.
 

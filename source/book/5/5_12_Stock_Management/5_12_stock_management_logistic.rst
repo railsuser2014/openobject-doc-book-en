@@ -57,15 +57,18 @@ Localization
 
 Each location can be given an address. That enables you to create a location for a customer or a supplier, for example. You can then give it the address of that customer or supplier. You should indicate to Open ERP on the partner form that it should use this location rather than the default location given to partner deliveries.
 
-.. tip::   **Point**  *Subcontracting production*
+.. tip:: Subcontracting production
 
-    You'll see in the chapter about Manufacturing that it is possible to assign a location to a manufacturing workcenter. If this lcoation is at a supplier's you must give it an address so that Open ERP can prepare a delivery order for the supplier and a receive operation for the manufactured goods.
+    You'll see in the chapter about Manufacturing that it is possible to assign a location to a manufacturing workcenter. 
+    If this location is at a supplier's you must give it an address so that Open ERP can prepare a delivery order 
+    for the supplier and a receive operation for the manufactured goods.
 
     Creating a location specifically for a partner is also a simple solution for handled consigned stocks in Open ERP.
 
-.. tip:  **Definition** *Consigned Stock*
+.. note: Consigned Stock
 
-    Consigned stock is stock that is owned by you (valued in your accounts) but is physically stocked by your supplier. Or, conversely, it could be stock owned by your customer (not valued by you) but stocked in your company.
+    Consigned stock is stock that is owned by you (valued in your accounts) but is physically stocked by your supplier. 
+    Or, conversely, it could be stock owned by your customer (not valued by you) but stocked in your company.
 
 To enable you to consolidate easily at a higher level, the location definition is hierarchical. This structure is given by the field *Parent location*. That also enables you to manage complex cases of product localization. For example, you could imagine the following scenario.
 
@@ -125,9 +128,11 @@ Then when a product arrives in a location, Open ERP can automatically suggest th
 
 The manual mode will create an internal move order to the linked location once products arrive in the source locations. This order will wait for a confirmation of the move by a user. This enables you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
-.. tip::   **Point**  *Logistic by Product*
+.. tip:: Product Logistics
 
-    The module ``stock_location`` enables you to generate paths to follow, not just a the level of locations but also at the level of products. It then enables you to manage default locations for a given product or to refer the products as a function of operations such as quality control, supplier receipt, and after-sales service.
+    The module ``stock_location`` enables you to generate paths to follow, not just at the level of locations but also at the level of products. 
+    It then enables you to manage default locations for a given product or to refer to the products as a function of 
+    operations such as quality control, supplier receipt, and after-sales service.
 
     A more detailed explanation of this module, with examples, is given at the end of this chapter.
 

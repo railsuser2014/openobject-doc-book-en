@@ -13,11 +13,13 @@ Establishing the profiles of prospects
 
 During presales activities it's useful to qualify your prospects quickly. You can pose a series of questions to find out what product to offer to the customer, or how quickly you should handle the request. 
 
-.. tip::   **Method**  *Profiling* 
+.. tip:: Profiling
 
-	This method of rapidly qualifying prospects is often used by companies who carry out presales by phone. A prospect list is imported into the Open ERP system as a set of partners and the operators then pose a series of questions to each prospect by phone.
+	This method of rapidly qualifying prospects is often used by companies who carry out presales by phone. 
+	A prospect list is imported into the Open ERP system as a set of partners and the operators then pose a series of questions to each prospect by phone.
 
-	Responses to these questions enable each prospect to be qualified automatically which leads to a specific service being offered based on their responses
+	Responses to these questions enable each prospect to be qualified automatically which leads to
+	a specific service being offered based on their responses.
 
 As an illustration, take the case of the Tiny company which offers a service based on the Open ERP software. The company goes to several exhibitions and encounters dozens of prospects over a few days. It's important to handle each request quickly and efficiently.
 
@@ -78,7 +80,7 @@ For instance, a sales person specializing in large accounts for the service sect
 
 When entering the details of a specific prospect, the prospect's answers to various questions can be entered in the new fifth tab of the partner form. Open ERP will automatically assign prospects to the appropriate partner category based on these answers.
 
-.. tip::   **A step further**  *commercial objectives* 
+.. tip:: Sales targets 
 
 	The module ``report_invoice_salesman`` enables you to set up regular business targets. These can be based on sales turnover or sales margins.
 

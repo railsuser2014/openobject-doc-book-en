@@ -54,15 +54,18 @@ To visualize the general entries following these different actions you can use o
 
 	#. To see all of the entries:  *Financial Management > Entries > Analytic Entries > Analytic Entries* 
 
-	#. To see the entries per account, click the  *Analytic Account * ield of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
+	#. To see the entries per account, click the  *Analytic Account* field of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
 
 	#. To see all of the entries by Journal:  *Financial Management > Entries > Analytic Entries > Entries by journal*  and then click on one of the journal names.
 
-.. tip::   **Note**  *Reviewing a hierarchical account* 
+.. TODO - this did not work originally. Does it now?
+
+.. note:: Reviewing a hierarchical account
 
 	In the chart of analytic accounts, if you click on an account Open ERP opens a window showing the corresponding analytic entries. 
 
-	It was intended that if you do that on a View-type account Open ERP opens all of the entries belonging to its child accounts. That can be very useful for opening entries belonging to several accounts, such as all project clients.
+	It was intended that if you do that on a View-type account Open ERP opens all of the entries belonging to its child accounts. 
+	That can be very useful for opening entries belonging to several accounts, such as all project clients.
 
 Manual record entry
 ---------------------
@@ -74,13 +77,17 @@ To make manual record entries, use the menu  *Financial Management > Entries > A
 .. index::
    single: Analytic entries
 
-.. tip::   **Comment**  *Analytic entries* 
+.. note:: Analytic entries 
 
-	To make an analytic entry, Open ERP asks you to specify a general account. This is given only for information in the different cross-reports. It won't create any new entries in the general accounts.
+	To make an analytic entry, Open ERP asks you to specify a general account. 
+	This is given only for information in the different cross-reports. 
+	It won't create any new entries in the general accounts.
 
 Select a journal and complete the different fields. Write an expense as a negative figure and income as a positive figure.
 
-.. tip::   **Note**  *Entering a date* 
+.. TODO - check behaviour now
+
+.. tip::  Entering a date 
 
 	To enter a date in the editable list you can use the calendar widget in the web client or, in the GTK client, if you enter just the day of the month Open ERP automatically completes the month and year when you press the tab key (Tab).
 

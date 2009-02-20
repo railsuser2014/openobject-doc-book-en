@@ -65,11 +65,11 @@ Also enter:
 
 Finally click  *Approved by Supplier*  to indicate the supplier's acknowledgment of the order. The order becomes \ ``Approved``\  . If you click the  *Purchase Shippings*  tab you'll see the  *Picking List*  that has been created ready for your Goods In department to use.
 
-.. tip::   **Attention**  *Visibility of a window* 
+.. tip:: Visibility of a window 
 
-
-
-	Sometimes a child window, such as the Purchase Order Line window, loses focus and disappears behind the main window. If a window doesn't open as you expect, check that it's not hiding behind the main window: do this by minimizing the main window to your task bar.
+	Sometimes a child window in the GTK client, such as the Purchase Order Line window, loses focus and disappears behind the main window. 
+	If a window doesn't open as you expect, check that it's not hiding behind the main window: 
+	do this by minimizing the main window to your task bar.
 
 Receiving Goods
 -----------------
@@ -88,27 +88,30 @@ To check actual stock levels, use the menu  *Inventory Control > Location Struct
 
 Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \ ``Locations``\   text itself), and then click the  *Print*  button to the top right of the form to test the available different reports (such as  *Lots by Location* ). You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \ ``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
 
-
 .. figure::  images/lots_by_location_pdf.png
    :align: center
 
    *List of products and their stock levels.*
 
-.. tip::   **Web client**  *Returning to Open ERP after printing PDF reports* 
+.. note:: Returning to Open ERP after printing PDF reports 
 
+	When you're using the web client, documents such as this are not part of the standard web page but are generated in PDF format, 
+	which you can print or attach to email or save on disk. So you don't get the standard Open ERP navigation links on these pages.
 
+	Open ERP has not always been fully consistent in the display of these pages, 
+	so the PDF page is not always brought up in a new tab or window as it should be 
+	(and as it is in other areas of Open ERP), but may replace the standard Open ERP web-format pages.
 
-	When you're using the web client, documents such as this are not part of the standard web page but are generated in PDF format, which you can print or attach to email or save on disk. So you don't get the standard Open ERP navigation links on these pages.
+	In such as case you'll have a strong temptation to just close the window once you've finished looking at the PDF document, 
+	but that would completely close Open ERP for you! 
+	Instead, click the Back button in your web browser to return to Open ERP.
 
-	Open ERP is not fully consistent in the display of these pages in version 4.2.2, so the PDF page is not brought up in a new tab or window as it should be (and as it is in other areas of Open ERP), but replaces the standard Open ERP web-format pages.
+.. tip:: Traceability in double-entry 
 
-	Once you've finished looking at the PDF document you'll have a strong temptation to just close the window, but that'll completely close Open ERP for you! Instead, click the Back button in your web browser to return to Open ERP.
-
-.. tip::   **Advantage**  *Traceability in double-entry* 
-
-
-
-	Open ERP operates a double-entry stock transfer scheme similar to double-entry accounting. Because of this you can carry out various analyses of stock levels in your warehouse, along with the corresponding levels in virtual locations at your supplier. Supplier locations show negative levels once you've received goods in your company, as you can see in the Figure.
+	Open ERP operates a double-entry stock transfer scheme similar to double-entry accounting. 
+	Because of this you can carry out various analyses of stock levels in your warehouse, 
+	along with the corresponding levels in virtual locations at your supplier. 
+	Supplier locations show negative levels once you've received goods in your company, as you can see in the Figure.
 
 Control of purchase invoices
 -----------------------------
@@ -128,11 +131,11 @@ Select the menu  *Financial Management > Invoices > Supplier Invoices > Open Sup
 
 Click  *Pay Invoice*  in the toolbar to the right of the form, which opens a Window with a description of the payment. Select \ ``Bank Journal``\   in the  *Journal*  field. Then click  *Pay Invoice*  to the top left of the form, which carries out the payment action within Open ERP and returns you to the main menu.
 
-.. tip::   **Comment**  *Payment of an invoice* 
+.. note:: Payment of an invoice
 
-
-
-	The method described here is for companies that don't use their accounting system to pay bills – just to record them. If you're using the accounting module fully other, more efficient, methods let you manage payments, such as entering account statements, reconciling paperwork, using tools for preparing payments, interfacing with banks.
+	The method described here is for companies that don't use their accounting system to pay bills – just to record them. 
+	If you're using the accounting module fully other, more efficient, methods let you manage payments, 
+	such as entering account statements, reconciling paperwork, using tools for preparing payments, interfacing with banks.
 
 You can monitor the accounting impact of paying the invoice through the chart of accounts available from the menu  *Financial Management > Charts > Chart of Accounts* . Open ERP automatically creates accounting entries from the payment and can reconcile the payment to the invoice.
 
@@ -167,11 +170,13 @@ Preparing goods for despatch to customers
 
 The stores manager selects the menu  *Inventory Control > Packing Lists > Sending Goods > Confirmed Packings Awaiting Assignation*  to get a list of orders to despatch. In this example there's only one, \ ``OUT:1``\  , so click the text to open the  *Picking List* . 
 
-.. tip::   **Advice**  *Calculating Requirements* 
+.. tip::  Calculating Requirements
 
-
-
-	At the moment your Sales Order is waiting for products to be reserved to fulfil it. A stock reservation activity takes place periodically to calculate the needs, which also takes customer priorities into account. The calculation can be started from the menu Production > Calculate Requirements. Running this automatically reserves products. 
+	At the moment your Sales Order is waiting for products to be reserved to fulfil it. 
+	A stock reservation activity takes place periodically to calculate the needs, 
+	which also takes customer priorities into account. 
+	The calculation can be started from the menu *Production > Calculate Requirements*. 
+	Running this automatically reserves products. 
 
 	If you don't want to have to work out your stock needs but have a lean workflow you can install the ``mrp_jit`` (Just In Time) module.
 
@@ -200,11 +205,13 @@ To analyze stock movements that you've made during these operations use the foll
 	- 4 in your company's *Input* location.
 
 
-.. tip::   **Note**  *Location Hierarchy* 
+.. tip:: Location Hierarchy 
 
-	The 10 Titanium Alloy Radiators can be found in the Input location after they've been received, instead of the location Stock. But they're still considered as being part of stock because Input is a child location of Stock.
+	The 10 Titanium Alloy Radiators can be found in the Input location after they've been received, instead of the location Stock. 
+	But they're still considered as being part of stock because Input is a child location of Stock.
 
-	If you want to put a Quality Control station at Goods In, all you need to do is put Input up to the same level as Stock. Then you'd manually move items from Input to Stock when they pass your Goods In checks.
+	If you want to put a Quality Control station at Goods In, all you need to do is put Input up to the same level as Stock. 
+	Then you'd manually move items from Input to Stock when they pass your Goods In checks.
 
 Invoicing Goods
 -----------------

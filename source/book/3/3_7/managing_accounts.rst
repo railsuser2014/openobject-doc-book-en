@@ -69,9 +69,14 @@ Finally you can look up individual account entries by searching for useful infor
 
 * by partner, do it by right-clicking on the Partner field in any form that shows it, or by using the buttons to the right of the partner form.
 
-.. tip::   **Advantage**  *Exporting entries* 
+.. tip:: Exporting entries
 
-	It's helpful to remember that you can export all types of resource in Open ERP. From the web client you need to navigate to a search list for the resource then click the Export link at the bottom left of the list. From the GTK client you'd use the menu Form > Export. This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc, by exporting accounting entries.
+	It's helpful to remember that you can export all types of resource in Open ERP. 
+	From the web client you need to navigate to a search list for the resource then click 
+	the Export link at the bottom left of the list. 
+	From the GTK client you'd use the menu *Form > Export*. 
+	This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc, 
+	by exporting accounting entries.
 	
 .. index::
   single: Follow-ups
@@ -161,11 +166,12 @@ To the right of the partner form there's a shortcut to  *Open invoices* . This l
 
 * supplier credit notes.
 
-.. tip::   **Advice**  *Reminders from accounting entries* 
+.. tip::  Reminders from accounting entries 
 
-	Companies that do not have computerized records tend to keep track of payments from invoices and paperwork and not from a formal partner account
+	Companies that do not have computerized records tend to keep track of payments from invoices and paperwork and not from a formal partner account.
 
-	It's better to create reminder letters from a partner's account receivable than from unpaid bills, however. By using the Open ERP system you can easily take account of all advances, unreconciled payments, credit notes and credit payments.
+	It's better to create reminder letters from a partner's account receivable than from unpaid bills, however. 
+	By using the Open ERP system you can easily take account of all advances, unreconciled payments, credit notes and credit payments.
 
 	So it's better to send a letter based on the accounting entries of invoices and unreconciled payments than just on a list of unpaid invoices.
 

@@ -26,27 +26,31 @@ The system generates invoice proposals which are initially set to the \ ``Draft`
 
 The information that's needed for invoicing is automatically taken from the Partner form (such as payment conditions and the invoice address) or from the Product (such as the account to be used) or from a combination of the two (such as applicable Taxes and the Price of the product).
 
-.. tip::   **Advantage**  *Draft invoices* 
+.. tip:: Draft invoices
 
 	There are several advantages in working with Draft invoices:
 
-	* You've got an intermediate validation state before the invoice is approved. This is very useful when your accountants aren't the people creating the initial invoice, but are still required to approve it before the invoice is entered into the accounts.
+	* You've got an intermediate validation state before the invoice is approved. 
+	  This is very useful when your accountants aren't the people creating the initial invoice, 
+	  but are still required to approve it before the invoice is entered into the accounts.
 
-	* This enables you to create invoices in advance, without approving them at the same time. You're also able to list all of the invoices awaiting approval.
+	* This enables you to create invoices in advance, without approving them at the same time. 
+	  You're also able to list all of the invoices awaiting approval.
 
 Open or Pro-Forma Invoices
 --------------------------
 
 It's possible to approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state. A Pro Forma invoice doesn't yet have an invoice number, but the accounting entries on the invoice that's created correspond to the amounts that Open ERP will record as the customer's payables.
 
-.. tip::   **Comment**  *Pro Forma invoices* 
+.. tip:: Pro Forma invoices 
 
-	In some countries, you're not allowed to generate accounting entries from pro forma invoices. You create instead a report from the purchase order, which prints a pro forma invoice, which has no accounting consequences within the system. 
+	In some countries, you're not allowed to generate accounting entries from pro forma invoices. 
+	You create instead a report from the purchase order, which prints a pro forma invoice, 
+	which has no accounting consequences within the system. 
 
 	You can use the module described in Chapter 13 to create this report.
 
 An open invoice has a unique invoice number. The invoice is sent to the customer and is marked on the system as awaiting payment.
-
 
 .. index::
    single: Reconciliation
@@ -57,13 +61,15 @@ Reconciling invoice entries and payments
 
 In Open ERP an invoice is considered to be paid when its accounting entries have been reconciled with the payment entries. If there hasn't been a reconciliation an invoice can remain in the open state until you have entered the payment.
 
-.. tip::   **Attention**  *Payment and reconciliation* 
+.. tip::  Payment and reconciliation
 
 	To avoid surprises, it's important to understand the idea of reconciliation and its link with invoice payment.
 
-	You'll find both a Reconciled field and the Paid checkbox on an invoice. They differ from each other only if an invoice has been paid (using reconciliation of records) but has subsequently been marked as unreconciled
+	You'll find both a Reconciled field and the Paid checkbox on an invoice. 
+	They differ from each other only if an invoice has been paid (using reconciliation of records) 
+	but has subsequently been marked as unreconciled.
 
-.. tip::   **Terminology**  *Reconciliation* 
+.. note:: Reconciliation
 
 	Reconciliation links entries in a single account that cancel each other out – they're reconciled to each other (sum of credits = sum of debits).
 
@@ -81,11 +87,15 @@ If you receive a payment of 120, Open ERP will delay reconciliation because the
 
 You can cancel an invoice if the  *Allow Cancelling Entries*  function has been activated in the journal and the entries haven't yet been reconciled. You could then move it from \ ``Canceled``\  , through the \ ``Draft``\   state to modify it and regenerate it.
 
-.. tip::   **Note**  *Treatment in Lots* 
+.. tip:: Treatment in Lots 
 
-	Usually, different transactions are grouped together and handled at the same time rather than invoice by invoice. This is called batch work or lot handling.
+	Usually, different transactions are grouped together and handled at the same time rather than invoice by invoice. 
+	This is called batch work or lot handling.
 
-	You can select several documents in the list of invoices: check the checkboxes of the interesting lines using the web client and click the appropriate shortcut button at the right; or shift-click the lines using the mouse in the GTK client and use the action or print button at the top – these give you the option of one of a number of possible actions on the selected objects.
+	You can select several documents in the list of invoices: check the checkboxes of 
+	the interesting lines using the web client and click the appropriate shortcut button at the right; 
+	or shift-click the lines using the mouse in the GTK client and use the action or print button at the top – 
+	these give you the option of one of a number of possible actions on the selected objects.
 
 At regular intervals, and independently of the invoices, an automatic import procedure or a manual accounts procedure can be used to bring in bank statements. These comprise all of the payments of suppliers and customers and general transactions, such as between accounts.
 

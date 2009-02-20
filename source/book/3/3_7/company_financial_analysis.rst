@@ -19,9 +19,11 @@ You'll see here the analysis tools for your company's financial situation, in pa
 Management Indicators
 ---------------------
 
-.. tip::   **Terminology**  *Financial Indicators* 
+.. note:: Financial Indicators
 
-	Indicators, sometimes called financial ratios, are tools for analyzing a company's finances. They enable you to compare two accounts or sets of accounts from the balance sheet or the profit and loss account, in the form of a ratio. They also let you measure the financial health of a company and make comparisons from one year to the next or against those of other companies.
+	Indicators, sometimes called financial ratios, are tools for analyzing a company's finances. 
+	They enable you to compare two accounts or sets of accounts from the balance sheet or the profit and loss account, in the form of a ratio.
+	They also let you measure the financial health of a company and make comparisons from one year to the next or against those of other companies.
 
 To define accounting indicators in Open ERP you should install the module \ ``account_report``\  . When installing the module the usual financial indicators are registered in Open ERP.
 
@@ -35,9 +37,9 @@ Indicators defined by default in Open ERP are the following:
 
 *  *Fixed Assets* : in a going concern, the value of fixed assets are covered in the first place by owners' capital and in the second place by all of the long term liabilities. Ideally this indicator will be greater than 1.
 
-.. tip::   **Advice**  *Calculation of indicators* 
+.. tip:: Calculation of indicators
 
-	Calculating indicators can take quite a while in Open ERP because you have to analyze the whole company's accounting entries.
+	Calculating indicators can take quite a while in Open ERP because you have to analyse the whole company's accounting entries.
 
 	So it's best not to calculate all of the indicators at once, but just a small selection to keep calculation time within limits.
 
@@ -99,7 +101,7 @@ Use the menu  *Financial Management > Configuration > Budgets > General Budgets*
 .. index::
    single: Budget Revisions
 
-.. tip::   **Advice**  *Budget Revisions* 
+.. tip:: Budget Revisions 
 
 	Even though you can modify a budget at any time to make a revision of it, it's best if you don't do that.
 
@@ -113,9 +115,11 @@ Once the charges have been generated you can modify them manually to revise the 
 
 To do this, click  *Add*  and make multiple selections for the different accounts to be represented in the budget. Once the three tabs are completed you can save your budget.
 
-.. tip::   **Reminder**  *Multiple selection* 
+.. tip:: Multiple selection
 
-	You can select several elements (accounts, partners, etc) at the same time from a list. In the web client, click the checkbox alongside their name in the list view. In the GTK client, click on each element with the mouse, while holding the Ctrl button down.
+	You can select several elements (accounts, partners, etc) at the same time from a list. 
+	In the web client, click the checkbox alongside their name in the list view. 
+	In the GTK client, click on each element with the mouse, while holding the Ctrl button down.
 
 .. figure::  images/account_budget.png
    :align: center

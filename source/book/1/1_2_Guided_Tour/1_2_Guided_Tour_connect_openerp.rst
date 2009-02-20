@@ -13,11 +13,11 @@ Connect to the new \ ``openerp_ch02``\   database as user \ ``admin``\   with it
 
 Now you're signed in as an administrator you'll be able to add functionality and modify database settings.
 
-.. tip::   **Comment**  *Dashboard after connection* 
+.. note:: Dashboard after connection
 
 	If you'd installed any of the other profiles from the installation wizard you'd find that your login screen shows a dashboard with information related to your user account rather than the main menu.
 
-	When that happens the main menu is still available, as you'll see later in this chapter. If you're using the web client you can reach the main menu by clicking the Main Menu link towards the top left of the window. If you're using the GTK client the main menu is in the first tab (which is hidden – it's the second tab containing the dashboard that's initially showing). 
+	When that happens the main menu is still available, as you'll see later in this chapter. If you're using the web client you can reach the main menu by clicking the *Main Menu* link towards the top left of the window. If you're using the GTK client the main menu is in the first tab (which is hidden – it's the second tab containing the dashboard that's initially showing). 
 
 Once you're displaying the main menu you're able to see the following screen items:
 
@@ -62,7 +62,7 @@ You'll find a link to the  *Home*  page to its right. This takes you to either t
    single: TimeZone
 ..
 
-.. tip::   **Note**  *Multi-nationals and time zones* 
+.. tip::  Multi-nationals and time zones 
 
 	If you have users in different countries, they can configure their own timezone. Timestamp displays are then adjusted by reference to the user's own localization setting.
 
@@ -90,7 +90,7 @@ Installing a new language
 
 Each user of the system can work in his or her own language. More than twenty languages are currently available besides English. Users select their working language using the Preferences link. You can also assign a language to a partner (customer or supplier), in which case all the documents sent to that partner will be automatically translated into that language.
 
-.. tip::   **Key to reading**  *More information about languages* 
+.. attention:: More information about languages
 
 	The base version of Open ERP is translated into the following languages: English, German, Chinese, Spanish, Italian, Hungarian, Dutch, Portuguese, Romanian, Swedish and Czech.
 
@@ -106,9 +106,9 @@ As administrator you can install a new main working language into the system.
 
 To see the effects of this installation change the preferences of your user to change the working language. The main menu is immediately translated in the selected language. If you're using the GTK client you'll first have to close the menu then open a new main menu to start seeing things in the new language.
 
-.. tip::   **More information**  *Navigating the menu* 
+.. note:: Navigating the menu 
 
-	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu Administration > Translations > Load New Language”.
+	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu *Administration > Translations > Load New Language*”.
 
 .. index:: Requests
 
@@ -157,7 +157,7 @@ To check your requests:
 
 	#. Click  *Send* to save your response and send it to the original sender.
 
-.. tip::   **Advantage**  *Requests vs. email* 
+.. note:: Requests vs. email 
 
 	The advantage of an Open ERP request compared with a set of emails about one thread of discussion is that a request contains all of the conversation in one place. You can easily monitor a whole discussion with the appropriate documents attached, and quickly review a list of incomplete discussions with the history within each request.
 
@@ -169,7 +169,7 @@ Look at the request and its history, then close it.
 
 The request is no longer active. It's not visible to searches and won't appear in your list of waiting requests.
 
-.. tip::   **Note**  *Trigger dates* 
+.. tip:: Trigger dates 
 
 	You can send a request with a future date. This request won't appear in the recipient's waiting list until the indicated date. This mechanism is very useful for setting up alerts before an important event. 
 
@@ -186,9 +186,9 @@ Because you logged in as Administrator, you have all the access you need to conf
 
 Click the  *Security*  tab to see that the demo user is a member of no groups, has no roles and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group, which gives it more advanced rights to configure new users.
 
-.. tip::   **Definition**  *Roles, Groups and Users* 
+.. tip::  Roles, Groups and Users 
 
-	Users and groups provide the structure for specifying access right to different documents. Their setup answers the question “who has access to what?”
+	Users and groups provide the structure for specifying access rights to different documents. Their setup answers the question "who has access to what?"
 
 	Roles are used in business processes for permitting or blocking certain steps in the workflow of a given document. For example you can assign the role of approving an invoice. Roles answer the question “Who should do what?”
 
@@ -198,9 +198,11 @@ Click the Security tab and it gives you details of the access rights for that gr
 
 You can create some new users to integrate them into the system. Assign them to predefined groups to grant them certain access rights. Then try their access rights when you login as these users. Management defines these access rights as described in Chapter 13.
 
-.. tip::   *Note* 
+.. note::  Changes to default access rights
 
-	This is an area where new versions of Open ERP have changed: many groups have been predefined and access to many of the menus and objects are keyed to these groups by default. This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
+	New versions of Open ERP differ from earlier versions of Open ERP and Tiny ERP in this area: 
+	many groups have been predefined and access to many of the menus and objects are keyed to these groups by default. 
+	This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights could be defined but were not activated by default.
 
 .. index::
   single: Partner; Managing Partners
@@ -236,8 +238,7 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
   single: Partner; Categories
 ..
 
-
-.. tip::   **Definition**  *Partner Categories* 
+.. tip::  Partner Categories 
 
 	Partner Categories enable you to segment different partners according to their relation with you (client, prospect, supplier, and so on). A partner can belong to several categories – for example it may be both a customer and supplier at the same time.
 
@@ -263,9 +264,9 @@ The administrator can define new categories. So you'll create a new category and
 
 	#. Then save your new category using the Save button.
 
-.. tip::   **Attention**  *Required Fields* 
+.. tip:: Required Fields 
 
-	Fields colored blue are required. If you try to save the form while any of these fields are empty the field turns red to indicate that there's a problem. It's impossible to save the form until you've completed every required field.
+	Fields coloured blue are required. If you try to save the form while any of these fields are empty the field turns red to indicate that there's a problem. It's impossible to save the form until you've completed every required field.
 
 You can review your new category structure using  *Partners > Partners by category* . You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
@@ -286,7 +287,7 @@ To create a new partner and link it to this new category open a new partner form
 
 	#. Monitor your modification in the menu  *Partners > Partners by category*  Select the category \ ``My Prospect``\   The list of partners opens and you'll find your new partner there in that list.
 
-.. tip::   **Note**  *Searching for documents* 
+.. tip:: Searching for documents 
 
 	If you need to search through a long list of partners it's best to use the available search criteria rather than scroll through the whole partner list. It's a habit that'll save you a lot of time in the long run as you search for all kinds of documents.
 

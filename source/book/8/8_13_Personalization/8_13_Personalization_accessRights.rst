@@ -33,9 +33,11 @@ So if your finance director is also your sales director, you should create both 
 You should also create groups within a departmental areas that have different levels of access rights. For example, if you create a \ ``Sales Director``\ group and a \ ``Sales``\  group avoid assigning exactly the same rights to each group. The first could see all the of reports, while the second could be restricted to seeing quotations. You could either make the \ ``Sales Director``\ a member of both groups, and give the Sales Director group a limited set of extra rights, or give the \ ``Sales Director``\ group all the rights it needs for a Sales Director to belong only to this one group. You should choose the scheme that gives you most flexibility and then stick with it to maintain consistency.
 
 
-.. tip::   **Advice**  *Flexibility in managing access* 
+.. tip:: Flexibility in managing access
 
-	To give yourself flexibility, you can ensure that a trusted staff member (perhaps a director or someone in accounts, or even the system administrator) is given wide rights to use the system, and is authorized by the management to carry out specific tasks for people. 
+	To give yourself flexibility, you can ensure that a trusted staff member 
+	(perhaps a director or someone in accounts, or even the system administrator) is given wide rights to use the system, 
+	and is authorized by the management to carry out specific tasks for people. 
 	
 .. index::
    single: Access rights; Menus
@@ -46,9 +48,9 @@ Access rights for menus
 
 To get a feel for rights management in Tiny ERP you'll create a new \ ``Stock1``\  group, with access to the *Inventory Control* menu items. You'll then create a stores person user who's a member of the \ ``Stock1``\  group.  
 
-To create a new group, use the menu Administration > Users > Groups. Enter the group name Stock1. 
+To create a new group, use the menu *Administration > Users > Groups*. Enter the group name Stock1. 
 
-Then to create a new user linked to this, use Administration > Users > Users to enter the following:
+Then to create a new user linked to this, use *Administration > Users > Users* to enter the following:
 
 *  *Name* : \ ``Stores Person``\  ,
 
@@ -71,19 +73,25 @@ In the second tab of the user form,  *Security* , add the \ ``Stock1``\   group 
 
 Save the user, then go into the menu  *Administration > Security > Define Access to Menu-Items*  to get a list of menus. Filter this list using the search field  *Menu*  to get the  *Inventory Control*  menu item. In the form describing the menu, add \ ``Stock1``\   into the  *Groups*  field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
 
-.. tip::   **Info**  *Menu hierarchy* 
+.. tip:: Menu hierarchy
 
-	Since menus are hierarchical there is no need to hide access to lower menus: once you've configured Inventory Control this way, all lower-level menus become inaccessible to members of other groups.
+	Since menus are hierarchical there is no need to hide access to lower menus: 
+	once you've configured Inventory Control this way, all lower-level menus become invisible to members of other groups.
 
-.. tip::   **Important**  *Security* 
+.. tip:: Security
 
-	This method of managing access to menus doesn't guarantee that users are prevented from reaching hidden business objects in the system in other ways. For example, hiding the Invoices menu won't prevent people reaching invoices through purchase and sales orders, or by guessing the URL.
+	This method of managing access to menus doesn't guarantee that users are prevented from reaching hidden business objects in the system in other ways. 
+	For example, hiding the Invoices menu won't prevent people reaching invoices through purchase and sales orders, or by guessing the URL.
 
-	For effective security management you must use the the methods for managing access rights to objects presented in the following section.
+	For effective security management you must use the methods for managing access rights to objects presented in the following section.
 
-.. tip::   **Further Information**  *Initial access configuration* 
+.. note:: Initial access configuration
 
-	In the initial configuration, Open ERP's admin user, a member of the admin group, is given access to the Configuration menu in each section of the main menu. For example, Partners > Configuration is visible in the administrator's menu amongst other Partner menu items, but only the other menu entries are visible to other users. Similarly, the main menu entry Administration is visible only to users who are members of the admin group.
+	In the initial configuration, Open ERP's admin user, a member of the admin group, is given access to the Configuration menu 
+	in each section of the main menu. This is a general convention.
+	For example, *Partners > Configuration* is visible in the administrator's menu amongst the other Partner menu items, 
+	but only those other menu entries are visible to other users. 
+	Similarly, the main menu entry *Administration* is, by convention, visible only to users who are members of the admin group.
 
 .. index::
    single: Access rights; Objects
@@ -96,14 +104,15 @@ The menu access rights determine who can access which menu, but doesn't define w
 
 Access controls on the objects give you the possibility of defining what your users have the right to do with your data when they get access to it. Access control of objects is structured the same way as access to menus.
 
-.. tip::   **Definition**  *Object* 
+.. note:: Object 
 
-	An object represents a document in the system. Objects are linked to database tables and also have additional concepts, such as the functions of fields, inheritance from other objects, and class methods that give them behavior.
+   An object represents a document in the system. 
+   Objects are linked to database tables and also have additional concepts, 
+   such as the functions of fields, inheritance from other objects, and class methods that give them behavior.
 
 If no group is assigned to an object, all users can access it without any restriction of any sort. Conversely, when an access control is defined for an object, a user must be a member of a group owning appropriate access rights to have any sort of access to that object.
 
 You must always ensure that you don't lock the \ ``admin``\ group out of any objects that control administration and configuration options, such as the \ ``ir.model.access``\   model.
-
 
 You can manage four access modes on objects independently:
 

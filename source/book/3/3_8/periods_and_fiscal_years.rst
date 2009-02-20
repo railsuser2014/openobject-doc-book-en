@@ -2,9 +2,10 @@
 Periods and fiscal years
 ========================
 
-.. tip::   **Terminology**  *Periods and fiscal years* 
+.. note:: Periods and fiscal years 
 
-	A fiscal year corresponds to twelve months for a company. In many countries, the fiscal year corresponds to a calendar year but that's not the case in others.
+	A fiscal year corresponds to twelve months for a company. 
+	In many countries, the fiscal year corresponds to a calendar year but that's not the case in others.
 
 	The fiscal year is divided into monthly or three-monthly accounting periods.
 

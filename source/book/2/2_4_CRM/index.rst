@@ -8,7 +8,7 @@ Customer Relationship Management
    single: CRM & SRM
 .. 
 
-.. tip::   **Terminology**  *CRM & SRM* 
+.. tip:: CRM & SRM
 
 	CRM is the abbreviation for Customer Relationship Management, and SRM is Supplier Relationship Management.
 

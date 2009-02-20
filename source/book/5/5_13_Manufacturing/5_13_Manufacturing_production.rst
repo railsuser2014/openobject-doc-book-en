@@ -108,18 +108,18 @@ BOIS002       0.083 * 3          m2
 TAQ000        12                 Unit
 ============  =================  ===============
 
-.. tip:: **Definition**  *Bill of Materials*
+.. tip:: Bill of Materials
 
-    To see the Bill of Materials in tree view, use the menu *Manufacturing > Configuration > Bill of Materials > Bill of Materials Structure*.
+   To see the Bill of Materials in tree view, use the menu *Manufacturing > Configuration > Bill of Materials > Bill of Materials Structure*.
 
 .. figure:: images/mrp_bom_tree.png
    :align: center
 
    *Bill of Materials structure.*
 
-Use the menu Manufacturing > Configuration > Bill of Materials > New Bill of Materials to define a new Bill of Materials.
+Use the menu *Manufacturing > Configuration > Bill of Materials > New Bill of Materials* to define a new Bill of Materials.
 
-.. tip::  **Point**   *The different views*
+.. tip::The different views
 
     To change the view in the Bill of Materials you can:
 
@@ -143,9 +143,10 @@ After this you can select the raw materials that are used in the manufacture of 
 
 The second tab, Revisions, is used to indicate all the changes made to the specification. After each change you can specify a revision number and some notes on the modifications you carried out.
 
-.. tip::  **More information**  *Simplified View*
+.. note:: Simplified View
 
-The Revisions tab is only visible if the user works in the Extended View mode (which means that the user must belong to the group “Usability / Extended View“.
+   The Revisions tab is only visible if the user works in the Extended View mode 
+   (which means that the user must belong to the group “Usability / Extended View“.
 
 .. figure:: images/mrp_bom_revision.png
    :align: center
@@ -299,9 +300,11 @@ Table: arm100_phantom_of: generated production orders
 Assembly Bills of Materials
 -----------------------------
 
-.. tip::  **Point**   *Sales Bills of Materials*
+.. note:: Sales Bills of Materials
 
-    In some software this is all named Sales Bills of Materials. In Open ERP the term assembly is used because the effect of the Bill of Material is visible not only in sales but also, for example, in the intermediate manufactured products.
+    In some software this is all named Sales Bills of Materials. 
+    In Open ERP the term assembly is used because the effect of the Bill of Material is visible not only in sales but also, for example, 
+    in the intermediate manufactured products.
 
 Sales Bills of Materials enable you to define assemblies that will be sold immediately but these products could also be used in deliveries and stock management rather than just sold in isolation. For example if you deliver the cabinet in piecesfor self-assembly, set the ARM100 BoM to type 'Assembly'.
 
@@ -317,11 +320,11 @@ You can then define a Bill of Materials for sale which defines a pack as an asse
 
 In this case of an assembly, this isn't a production order to transform the product. The transformation is done directly between the order and the set.
 
-.. tip::   **Point** *Assemblies and Purchases*
+.. note:: Assemblies and Purchases
 
-    The use of assemblies for selling to customers has been presented here, but this functionality works just as well for purchases from suppliers.
+   The use of assemblies for selling to customers has been presented here, but this functionality works just as well for purchases from suppliers.
 
-    So in the example of a supermarket, you can buy cola in packs and the storesperson will see a number of bottles at goods in reception.
+   So in the example of a supermarket, you can buy cola in packs and the storesperson will see a number of bottles at goods in reception.
 
 Configurable Bills of Materials
 --------------------------------
@@ -332,9 +335,12 @@ Once several Bill of Materials have been defined for a particular product it's n
 
 But to gain more control over the process during the sale or procurement, you can use *properties*. The menu *Production Management > Configuration > Properties* enables you to define properties, which are concept that can be defined arbitrarily to help in the selection of Bills of Materials when you have a choice of BoM.
 
-.. tip::  **Definition** *Properties*
+.. note:: Properties
 
-    Properties are a concept that enables the selection of a method for manufacturing a product. They are a common language between the salespeople and the technical people, to enable the salespeople to have an impact on the manufacture of the products using non-technical language and the possibilities decided on by the technicians who define the Bills of Materials.
+   Properties are a concept that enables the selection of a method for manufacturing a product. 
+   They are a common language between the salespeople and the technical people, 
+   to enable the salespeople to have an impact on the manufacture of the products using 
+   non-technical language and the possibilities decided on by the technicians who define the Bills of Materials.
 
 For example you can define the properties and the following groups:
 
@@ -366,9 +372,9 @@ As an example, take the manufacture of the cabinet presented above. You can imag
 
 You define two Bills of Materials for the same cabinet. To distinguish between them, you will define to properties in the same group: manual assembly and production line assembly. On the quotation, the salesperson will have the possibility of indicating the method of manufacture he wants on each order line, depending on the quantities and the lead time requested by the customer.
 
-.. tip:: **Definition** *Bills of Materials and substitute products*
+.. note:: Bills of Materials and substitute products
 
-    In some software, you use the term 'substitute' for this principle of configurable properties in a Bill of Materials.
+    In some software, you use the term *substitute* for this principle of configurable properties in a Bill of Materials.
 
 By putting a Bill of Materials on its own line, you can also implement substitute products. You set the Bill of Materials to type 'Assembly' to make the substitution transparent and for Open ERP not to propose an intermediate production order.
 
@@ -411,9 +417,10 @@ To understand the usefulness and the functioning of the system you should test a
 
 * Traceability for after-sales service.
 
-.. tip:: **Attention**  *Demonstration data*
+.. tip:: Demonstration data
 
-    To follow the workflow shown below well, it's important to keep the same quantities as in the example and start from a new database so that you don't run into exceptions from a lack of stock.
+    To follow the workflow shown below well, it's important to keep the same quantities as in the example and 
+    start from a new database so that you don't run into exceptions from a lack of stock.
 
 This case, more advanced, of handling problems of procurement, will be sorted out later in the chapter.
 
@@ -466,7 +473,7 @@ You can see that manufacturing the PC2 computer must be done in two steps:
 
 2: Manufacture of the finished product using that intermediate product: PC2
 
-The manufacturing supervisor can then consult the product orders using the menu Manufacturing > Production Orders > Production Orders to start. You then get a list of orders to start and the estimated start date if the customer order date is not to be missed.
+The manufacturing supervisor can then consult the product orders using the menu *Manufacturing > Production Orders > Production Orders to start*. You then get a list of orders to start and the estimated start date if the customer order date is not to be missed.
 
 .. figure:: images/mrp_production_list.png
    :align: center
@@ -511,9 +518,10 @@ Just as for product CPU_GEN, confirm the production order on two dates: start of
 
 At this stage the product sold to the customer has been manufactured and the raw materials have been consumed and taken out of stock.
 
-.. tip:: **Point**  *Automatic Actions*
+.. tip:: Automatic Actions
 
-    As well as managing the use of materials and the production of stocks, manufacturing can have the following effects which are detailed further on in the chapter:
+    As well as managing the use of materials and the production of stocks, 
+    manufacturing can have the following automatic effects which are detailed further on in the chapter:
 
     * adding value to stock,
 
@@ -528,7 +536,7 @@ Delivery of product to the customer
    single: Picking
    single: Packing
 
-When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu Stock Management > Outgoing Products > Available Packings. You'll find there the lists of packing to do, as shown in the figure below.
+When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu *Stock Management > Outgoing Products > Available Packings*. You'll find there the lists of packing to do, as shown in the figure below.
 
 .. figure:: images/mrp_packing_out.png
    :align: center
@@ -537,11 +545,12 @@ When the products have been manufactured, the storesperson automaticallys finds 
 
 The packing orders are treated by priority of leaving so the storesperson must begin with the orders at the top of the list. Confirm that your packing list has been create by looking for the customer name (Agrolait) or by its reference (SO007). Click on it and then click the button “Approve”.
 
-.. tip::   **Point** *Packings and Delivery*
+.. tip:: Packing and Delivery
 
-    Depending on whether you work in the simplified or extended mode you may have to do a further operation to make a delivery to your customer and so carry out the two steps:
+    Depending on whether you work in the simplified or extended mode you may have to do a further operation to 
+    make a delivery to your customer and so carry out the two steps:
 
-    * pick lists,
+    * picking list,
 
     * delivery order.
 
@@ -597,7 +606,7 @@ Examples of the two traceability types are given in the by the following figures
 Production order in detail
 ===========================
 
-In this section production orders are detailed. To open a production order, use the menu Manufacturing > Production Orders > New Product Order. You get a blank for for encoding a new production order as shown in the figure below.
+In this section production orders are detailed. To open a production order, use the menu *Manufacturing > Production Orders > New Product Order*. You get a blank for for encoding a new production order as shown in the figure below.
 
 .. figure:: images/mrp_production_new.png
    :align: center
@@ -642,9 +651,9 @@ Once the production is complete, click 'Production Finished'. The finished produ
 Scheduling
 ===========
 
-Calculation requirements is the calculation engine which makes planning, prioritising and ?? automatically procurement as a function of the rules defined on these products. It's started once per day. You can also start it manually using the menu Manufacturing > Calculate requirements. This then uses the parameters defined in the products, the suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
+Calculation requirements is the calculation engine which makes planning, prioritising and ?? automatically procurement as a function of the rules defined on these products. It's started once per day. You can also start it manually using the menu *Manufacturing > Calculate requirements*. This then uses the parameters defined in the products, the suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
 
-You can decide the starting time by modifying the corresponding action in the menu Administration > Configuration > Planning > Planned Actions. Modify the resource called 'Run MRP Scheduler'.
+You can decide the starting time by modifying the corresponding action in the menu *Administration > Configuration > Planning > Planned Actions*. Modify the resource called 'Run MRP Scheduler'.
 
 .. figure:: images/stock_cron.png
    :align: center

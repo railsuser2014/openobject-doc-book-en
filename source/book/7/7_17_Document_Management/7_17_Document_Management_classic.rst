@@ -24,7 +24,7 @@ The primary reason for this is that a document management system that's not inte
 
 This is obviously a lot of operations just to handle a simple order confirmation. You can understand why many companies hardly use their document management system even if they've gone to the cost and effort of purchasing and installing one.
 
-.. tip::   **Going Further** *Free document management systems*
+.. tip::  Free document management systems
 
     A number of free document management applications exist. The most well known are:
 
@@ -32,7 +32,7 @@ This is obviously a lot of operations just to handle a simple order confirmation
 
     * Quotero: http://www.quotero.com
 
-It's very difficult to keep the information in the company's management system in sycnhronization with that in the document management system. For example when a customer changes his address, users will modify the details in the management software but usually not in the document management system.
+It's very difficult to keep the information in the company's management system in synchronization with that in the document management system. For example when a customer changes his address, users will modify the details in the management software but usually not in the document management system.
 
 Furthermore, since users should create the same storage structure in both systems, you quickly find after only a few months that the information in the document management system is quite disconnected from that in the company's management system if the two are separate. For example, how do you know where to store your least-frequently used documents such as (perhaps) employee car-leasing documents?
 

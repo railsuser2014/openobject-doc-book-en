@@ -28,7 +28,7 @@ Everything that you can do with the Thunderbird plugin you can also do with the 
 
 * send any file attached to an Open ERP document (such as proposals, projects, and tasks).
 
-.. tip::   **Attention**  *Outlook versions* 
+.. tip:: Outlook versions 
 
 	The Microsoft Outlook plugin works with Microsoft Outlook 2003 and 2007 but not with Outlook Express
 
@@ -93,7 +93,7 @@ It's possible to send attachments to all types of Open ERP objects. For example
 
 Once the email is sent into Open ERP it's marked with another color in Outlook to help remind you not to archive it again.
 
-.. tip::   **Note**  *Testing the Outlook adapter* 
+.. note:: Testing the Outlook adapter 
 
 	If you install the Outlook adapter as described, use the openerp_ch05X database to explore its functionality as described in this section
 

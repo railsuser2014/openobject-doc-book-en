@@ -13,11 +13,15 @@ Contracts can take different forms within Open ERP, depending on their nature. 
 
 * fixed-price contracts, invoiced monthly as services are carried out
 
-.. tip::   **Case**  *Contract quotations* 
+.. tip:: Contract quotations
 
-	Some companies commit to contracts on the basis of a requested volume at a certain price for a defined period. In this case the contract is represented by a pricelist for that specific customer.
+	Some companies commit to contracts on the basis of a requested volume at a certain price for a defined period. 
+	In such a case the contract is represented by a pricelist for that specific customer.
 
-	The pricelist is linked in the Properties tab of the customer's Partner form, so that it is brought up whenever anything is bought from or sold to this partner (depending on whether it's a purchase or sales agreement). Open ERP automatically selects a price based on this agreed pricelist.
+	The pricelist is linked in the Properties tab of the customer's Partner form, 
+	so that it is brought up whenever anything is bought from or sold to this partner 
+	(depending on whether it's a purchase or sales agreement). 
+	Open ERP automatically selects the price based on this agreed pricelist.
 
 Fixed Price contracts
 -----------------------
@@ -47,11 +51,14 @@ The invoice will be managed by the system depending on the setting of the field 
 
 .. index:: Delivery
 
-.. tip::   **Attention**  **  *Delivery of an order* 
+.. note:: Delivery of an order 
 
-	The term 'delivery' should be taken in the broadest sense in Open ERP. The effect of a delivery depends on the configuration of the sold product.
+	The term 'delivery' should be taken in the broadest sense in Open ERP.
+	The effect of a delivery depends on the configuration of the sold product.
 
-	If its type is either Stockable Product or Consumable, Open ERP will make a request for it to be sent for packing. If the product's type is Service Open ERP's scheduler will create a task in the project management system, or create a subcontract purchase order if the product's Procure Method is Make to Order.
+	If its type is either Stockable Product or Consumable, Open ERP will make a request for it to be sent for packing. 
+	If the product's type is Service Open ERP's scheduler will create a task in the project management system, 
+	or create a subcontract purchase order if the product's Procure Method is Make to Order.
 
 	Invoicing after delivery does as it says: invoicing for the services when the tasks have been closed.
 
@@ -92,11 +99,14 @@ The selection of an invoicing rate is an indirect way of specifying that the pro
    single: Pricelists
 .. 
 
-.. tip::   **Advice**  *Pricelists and billing rates* 
+.. note:: Pricelists and billing rates 
 
 	You can select a pricelist on the analytic account without having to use it to specify billing rates.
 
-	This case is for a client project that is to be invoiced, but not directly from the analytic costs. Putting the price list on the analytic account makes it possible to compare the actual sales with the best case where all the services would be invoiced. To get this comparison you have to print the analytic balance from the analytic account.
+	Such a case would be for a client project that is to be invoiced only indirectly from the analytic costs. 
+	Putting the price list on the analytic account makes it possible to compare the actual sales with 
+	the best case where all the services would be invoiced. 
+	To get this comparison you have to print the analytic balance from the analytic account.
 
 Services are then entered onto timesheets by the various people who work on the project. Periodically the project manager or account manager uses the following menu to prepare an invoice:  *Financial Management > Periodical Processing > Invoicing on a Time basis > Uninvoiced Hours* .
 
@@ -109,9 +119,10 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 
  *Project Management > Analytic Accounts* 
 
-.. tip::   **Point**  *Project Management and analytic accounts* 
+.. note:: Project Management and analytic accounts 
 
-	The menu *Project Management > Analytic Accounts* is only available once you have installed the module ``account_analytic_analysis``. It provides various global financial and operational views of a project manager's projects.
+	The menu *Project Management > Analytic Accounts* is only available once you have installed the module ``account_analytic_analysis``. 
+	It provides various global financial and operational views of a project manager's projects.
 
 Select a project and open its analytic entries using the  *Costs to invoice*  button. You'll find a list of costs that can be invoiced to the client:
 
@@ -164,9 +175,10 @@ This approach offers many advantages compared with the traditional methods of in
 
 * Invoicing of expenses follows the same workflow and is therefore very simple.
 
-.. tip::   **Advice**  *Negotiating contracts* 
+.. note:: Negotiating contracts 
 
-	In contract negotiation, invoicing conditions are often neglected by the client. So it can often be straightforward to apply this method of invoicing.
+	In contract negotiation, invoicing conditions are often neglected by the client. 
+	So it can often be straightforward to apply this method of invoicing.
 
 Contracts limited to a quantity
 ---------------------------------

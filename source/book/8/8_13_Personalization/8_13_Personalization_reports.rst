@@ -31,9 +31,11 @@ Give a  *Report Name*  to your new report and select the objects that you're goi
 
 Then turn to the second tab,  *View parameters* , to select the views that you want in your report. Select \ ``Tree``\   in the  *First View*  and \ ``Graph``\   in the  *Second View* . You can choose the type of graph displayed using the  *Graph View*  fields. You could also select \ ``Calendar``\   as a view if you were going to add the  *Date*  field in your report.
 
-.. tip::   **Advantage**  *The MS Excel plug-in* 
+.. tip:: The MS Excel plug-in 
 
-	The Microsoft Excel plug-in enables you to connect to Open ERP and automatically extract the selected data. You can then apply formulas and graphs to make your own dashboards of measures directly in Excel. The .xls file can be saved and, when it is reopened, it reconnects to Open ERP to refresh the different lists and graphs with live data.
+	The Microsoft Excel plug-in enables you to connect to Open ERP and automatically extract the selected data. 
+	You can then apply formulas and graphs to make your own dashboards of measures directly in Excel. 
+	The .xls file can be saved and, when it is reopened, it reconnects to Open ERP to refresh the different lists and graphs with live data.
 
 .. figure::  images/report_analysis_config.png
    :align: center
@@ -104,17 +106,21 @@ Managing document templates with OpenOffice.org
 
 To personalize your printable documents in Open ERP, use the module \ ``base_report_designer``\.
 
-.. tip::   **Advantage**  *The OpenOffice.org Writer plug-in* 
+.. tip:: The OpenOffice.org Writer plug-in
 
-	You can create your own reports in just a few minutes using the OpenOffice.org Writer plug-in. This tool can give your team a big productivity improvement. Using it, you can create templates for all of your company's documents, reducing the work of creating and laying out data and customer documents.
+	You can create your own reports in just a few minutes using the OpenOffice.org Writer plug-in. 
+	This tool can give your team a big productivity improvement. 
+	Using it, you can create templates for all of your company's documents, reducing the work of creating and laying out data and customer documents.
 
 The system is both simple and powerful, because it gives you the benefits of all of the layout facilities offered by OpenOffice.org Writer as well as all of the data and calculation provided by Open ERP. You could create or modify reports directly from OpenOffice.org and then use them in Open ERP.
 
-.. tip::   **Techniques**  *Independence from OpenOffice.org* 
+.. note:: Independence from OpenOffice.org
 
-	OpenOffice.org is only used to generate new document templates. The system administrator is the only person who has to install it.
+	OpenOffice.org is only used to generate new document templates. 
+	The system administrator is the only person who has to install it.
 
-	Once the document templates have been defined the users don't need it to carry out their normal work. They can use either Microsoft Office or OpenOffice.org as they choose.
+	Once the document templates have been defined the users don't need it to carry out their normal work. 
+	They can use either Microsoft Office or OpenOffice.org as they choose.
 
 The OpenOffice.org plug-in enables you to search for fields in Open ERP and integrate them into your document templates. You can use data loops in tables or sections, enabling you to attach several lines to an order, for example.
 
@@ -181,11 +187,12 @@ OpenOffice.org then opens the report in edit mode for you. You can modify it usi
 
 The document is modified in its English version. It will be translated as usual by Open ERP's translation system when you use it through the client interface, if you've personalized your own setup to translate to another language for you. So you only need to modify the template once, even if your system uses other languages – but you'll need to add translations as described earlier in this chapter if you add fields or change the content of the existing ones.
 
-.. tip::   **Attention**  *Older reports* 
+.. tip:: Older reports 
 
-	The older reports haven't all been converted into the new form supported by Open ERP. The data expressions in the old format are shown within double brackets and not in OpenOffice.org fields.
+	The older reports may not all have been converted into the new form supported by Open ERP. 
+	Data expressions in the old format are shown within double brackets and not in OpenOffice.org fields.
 
-	You can transform an old report format to the new format from the OpenOffice.org menu Tiny Report > Convert Bracket–Fields.
+	You can transform an old report format to the new format from the OpenOffice.org menu *Tiny Report > Convert Bracket–Fields*.
 
 From the Tiny toolbar in OpenOffice.org it's possible to:
 
@@ -197,15 +204,18 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
 
 * add an expression: enter an expression in the Python language to calculate values from any fields in the selected object.
 
-.. tip::   **Technique**  *Python Expressions* 
+.. tip:: Python Expressions 
 
-	Using the Expression button you can enter expressions in the Python language. These expressions can use all of the object's fields for their calculations. 
+	Using the Expression button you can enter expressions in the Python language. 
+	These expressions can use all of the object's fields for their calculations. 
 
 	For example if you make a report on an order you can use the following expression: 
 
 	'%.2f' % (amount_total * 0.9,) 
 
 	In this example, amount_total is a field from the order object. The result will be 90% of the total of the order, formatted to two decimal places.
+
+.. TODO - I don't quite know what to do with this below, yet. I suspect it's a spec for a bit of writing.
 
  *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
 

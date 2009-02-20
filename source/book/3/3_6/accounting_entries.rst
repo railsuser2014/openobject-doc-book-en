@@ -34,7 +34,7 @@ Start by entering a statement line. To do that use the menu  *Financial Manageme
    *Data entry form for a bank statement.*
 
 
-The statement reference ( *Name* ) and the  *Date*  are automatically suggested by Open ERP from the preceding statement line. You can configure your own reference by managing sequences in the Administration menu.
+The statement reference ( *Name* ) and the  *Date*  are automatically suggested by Open ERP from the preceding statement line. You can configure your own reference by managing sequences in the *Administration* menu.
 
 You must then select the  *Journal* . Ideally, when you're configuring your company you'd create at least one journal for each bank account and one journal for petty cash in your company. So select the journal corresponding to the bank account whose statement you're handling.
 
@@ -58,11 +58,11 @@ When the payment entry has been made it's possible to reconcile this directly wi
 
 The reconciliation form then appears. To the right you'll find the amount for payment. You must then select the invoices paid by this transaction (Entries). To enable you to reconcile this the amount of payment must correspond exactly with one or several due dates of invoice.
 
-.. tip::   **Method**  *Reconciliation* 
+.. note::  Reconciliation
 
 	Other methods of reconciliation are possible: from accounting entries, when saving the payment directly on an invoice, or using the automatic reconciliation tool. But if you can, you should do a reconciliation when you're encoding the payment because that's the time when you have all of the information you need to hand for reconciling the payment with the corresponding invoice
 
-.. tip::   **Attention**  *Partial reconciliation* 
+.. tip:: Partial reconciliation
 
 	In Open ERP, only total reconciliation is possible. To enter a partial payment for an invoice, several methods are given you:
 
@@ -70,7 +70,10 @@ The reconciliation form then appears. To the right you'll find the amount for pa
 
 	* Reconcile at once, but make an accounting adjustment in the partner's credit account. In this case the invoice will be marked as paid.
 
-If you see a difference between the payment and the invoices to reconcile, you can note the difference in the second part of the form –  *Write-off* . You must then indicate which account should be used for the adjustment. The main reasons explaining the difference are usually:
+If you see a difference between the payment and the invoices to reconcile, 
+you can enter the difference in the second part of the form –  *Write-off* . 
+You must then indicate which account should be used for the adjustment. 
+The main reasons explaining the difference are usually:
 
 * losses and profits,
 
@@ -101,9 +104,11 @@ To manage cash, you use the same form as before. At the start of the day you mus
 
 All the transactions throughout the day are then entered in this statement. When you close the cash till, generally at the end of the day, you must enter the amount found in the cash till in the field  *Final Balance* . Then confirm the statement to close the day's cash statement and automatically generate the corresponding accounting entries.
 
-.. tip::   **Attention**  *Validating the statement* 
+.. tip::  Validating the statement 
 
-	Accounting entries are only generated when the statement is confirmed. So if the total statement hasn't been approved (that's to say at the end of the day, in the case of petty cash) you shouldn't be surprised if partner payments haven't been deducted from their corresponding account.
+	Accounting entries are only generated when the statement is confirmed. 
+	So if the total statement hasn't been approved (that's to say during the day, in the case of petty cash) 
+	you shouldn't be surprised if partner payments haven't been deducted from their corresponding account.
 
 Manual entry in a journal
 -------------------------
@@ -138,11 +143,12 @@ Open ERP now proposes the balancing accounting line to be filled in. If the acc
 
 When you've entered all of the data from your lines, Open ERP automatically proposes counterpart entries to you, based on the credit entries. If you validate it, the accounting entries are all matched together and the lines move from the \ ``Draft``\   state (red) to the \ ``Open``\   state (black).
 
-.. tip::   **Note**  *Completing a balancing entry* 
+.. tip:: Completing a balancing entry 
 
 	When an accounting entry is matched, Open ERP moves it to the open state automatically and prepares to enter the next data.
 
-	If you want to add some other balancing lines you can enter the number of the entry on the new line that you're entering. In this case the whole line stays at Draft until the whole set balances to zero.
+	If you want to add some other balancing lines you can enter the number of the entry on the new line that you're entering. 
+	In such a case the whole line stays at Draft until the whole set balances to zero.
 
 Process of reconciliation
 -------------------------
@@ -159,9 +165,11 @@ A reconciliation must be carried out on a list of accounting entries by an accou
 
 Reconciliation in Open ERP can only be carried out in accounts that have been configured as reconcilable (the  *Reconcile*  field).
 
-.. tip::   **Don't confuse**  *Account reconciliation and bank statement reconciliation* 
+.. tip:: Don't confuse: **account** reconciliation and **bank statement** reconciliation
 
-	It's important not to confuse the reconciliation of accounting entries with bank statement reconciliation. The first consists of linking account entries with each other, while the second consists of verifying that your bank statement corresponds with the entries of that account in your accounting system.
+	It's important not to confuse the reconciliation of accounting entries with bank statement reconciliation. 
+	The first consists of linking account entries with each other, while the second consists of verifying 
+	that your bank statement corresponds with the entries of that account in your accounting system.
 
 There are different methods of reconciling entries. You've already seen the reconciliation of entries while doing data entry in an account. Automatic and manual reconciliations are described here.
 
@@ -193,7 +201,7 @@ A form opens, asking you for the following information:
 
 * information needed for the adjustment (details for the  *Write-Off Move* ).
 
-.. tip::  
+.. note:: Reconciling
 
 	You can reconcile:
 
@@ -203,14 +211,16 @@ A form opens, asking you for the following information:
 
 The adjustment option enables you to reconcile entries even if their amounts aren't exactly equivalent. For example, Open ERP permits foreign customers whose accounts are in different currencies to have a difference of up to 0.50 units of currency and put the difference in a write-off account.
 
-.. tip::   **Attention**  *Limit of write-off adjustments* 
+.. tip:: Limit write-off adjustments 
 
 	You shouldn't make the adjustment limits too large. Companies that introduced substantial automatic write-off adjustments have found that all employee expense reimbursements below the limit were written off automatically!
 
-.. tip::   **Note**  *Default values* 
+.. note:: Default values 
 
-	If you start the automatic reconciliation tool regularly you should set the default values for each field by pressing the Ctrl key and using the right-click mouse button (when the form is in edit mode using the web client, or just using the GTK client). This means that you won't have to re-type all the fields each time.
-
+	If you start the automatic reconciliation tool regularly you should set the default values for each field 
+	by pressing the Ctrl key and using the right-click mouse button 
+	(when the form is in edit mode using the web client, or just using the GTK client). 
+	This means that you won't have to re-type all the fields each time.
 
 .. index::
     single: Reconciliation; Manual
@@ -308,11 +318,16 @@ This process can also be regularly scheduled. In some companies, a payment order
 
 Once the payment order is confirmed there's still a validation step for an accountant to carry out. You could imagine that these orders would be prepared by an accounts clerk, and then approved by a manager to go ahead with payment.
 
-.. tip::   **A step further**  *Payment Workflow* 
+.. TODO - get the details corrected here - web client can now do this
 
-	An Open ERP workflow is associated with each payment order. To see a visualization of it you'll have to use the GTK client. Select a payment order and click Plugins > Print workflow from the top menu.
+.. tip:: Payment Workflow 
 
-	You can integrate more complex workflow rules to manage payment orders by adapting the workflow. For example, in some companies payments must be approved by a manager under certain cash flow or value limit conditions.
+	An Open ERP workflow is associated with each payment order. 
+	To see a visualization of it you'll have to use the GTK client. 
+	Select a payment order and click *Plugins > Print workflow* from the top menu.
+
+	You can integrate more complex workflow rules to manage payment orders by adapting the workflow. 
+	For example, in some companies payments must be approved by a manager under certain cash flow or value limit conditions.
 
 .. figure::  images/account_payment_workflow.png
    :align: center

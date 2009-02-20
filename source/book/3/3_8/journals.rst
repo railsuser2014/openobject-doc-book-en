@@ -25,9 +25,10 @@ You have to associate a view with each journal. The journal view indicates the f
 
 Before creating a new view for a journal check that there's nothing similar already defined for another journal. You should only create a new view for new types of journal.
 
-.. tip::   **Note**  *Customizing views* 
+.. note:: Customizing views 
 
-	You'll often have to edit a journal view. For example, for a journal in a foreign currency you add a field for the currency and this currency must be in the journal view.
+	You'll often have to edit a journal view. 
+	For example, for a journal in a foreign currency you add a field for the currency and this currency must be in the journal view.
 
 	Conversely, to simplify data entry the journal view for the bank is quite different from one of the invoicing journals.
 
@@ -46,13 +47,17 @@ To avoid mistakes while entering accounts data, you can place conditions in the 
 
 This functionality is useful for limiting possible data entry errors. Also, in a bank journal it's possible to restrict the accounts that can be linked to a bank to classes 1 to 5. Using this you'd help prevent the user from making any false entries in the journal.
 
-.. tip::   **Advice**  *Control of data entry* 
+.. tip:: Control of data entry
 
-	In accounting it's not a good idea to allow a data entry directly from bank account A to bank account B. If you enter a transaction from bank A to bank B the transaction will be accounted for twice.
+	In accounting it's not a good idea to allow a data entry directly from bank account A to bank account B. 
+	If you enter a transaction from bank A to bank B the transaction will be accounted for twice.
 
-	To prevent this problem, pass the transaction through intermediate account C. At the time of data entry the system checks the type of account that's accepted in the bank journal: only accounts that aren't of type Bank are accepted.
+	To prevent this problem, pass the transaction through intermediate account C. 
+	At the time of data entry the system checks the type of account that's accepted in the bank journal: 
+	only accounts that aren't of type Bank are accepted.
 
-	If your accountant defines this control properly, non-accounting users are prevented from transferring payment from one bank to another, reducing your risks.
+	If your accountant defines this control properly, non-accounting users are prevented from 
+	transferring payment from one bank to another, reducing your risks.
 
 .. Copyright © Open Object Press. All rights reserved.
 

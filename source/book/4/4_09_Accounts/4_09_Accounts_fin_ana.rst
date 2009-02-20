@@ -72,20 +72,24 @@ The report is frequently used to print the number of hours worked on a project, 
 
 To restrict the report to hours worked, without including sales and purchases, select only the services journal to print the report.
 
-.. tip::   **Note**  *Multiple printing* 
+.. tip:: Multiple printing 
 
-	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. For that select account lines using the Ctrl-Click keyboard and mouse combination.
+	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. 
+	For that select account lines using the Ctrl-Click keyboard and mouse combination.
 
 	Then click on Print in the tree or list view to export the whole selection into a single PDF document.
 
 .. index::
    single: Multi-company
 
-.. tip::   **Note**  *Multi-company* 
+.. tip::  Multi-company
 
-	In a multi-company environment each company can have its own general chart of accounts on the same database. The two general charts of accounts are then independent but can be linked in a third chart using a view account to do the consolidation.
+	In a multi-company environment each company can have its own general chart of accounts on the same database. 
+	The two general charts of accounts are then independent but can be linked in a third chart using a view account to do the consolidation.
 
-	If the different companies collaborate on joint projects they may all share the same analytic chart of accounts. In this environment, the cross-related reports like the balance and inverted balance are extremely useful because they enable you to make an analysis per company by linking up to the general accounts.
+	If the different companies collaborate on joint projects they may all share the same analytic chart of accounts. 
+	In this environment, the cross-related reports like the balance and inverted balance are extremely useful because 
+	they enable you to make an analysis per company by linking up to the general accounts.
 
 Key indicators
 ---------------
@@ -135,9 +139,12 @@ These different menus give quick views that are very useful for live projects. F
 
 In the following chapters you'll see how each project manager can use this information to carry out the different operations needed to manage the project, such as automatic invoicing, project planning, keeping customers up to date, and budgeting for resources.
 
-.. tip::   **A step further**  *Analytic Budgets* 
+.. TODO - What is the situation now?
 
-	There's been no discussion of analytic budgets in this section because at the time this book was being prepared, the module that handles them was being completely rewritten.
+.. note:: Analytic Budgets
+
+	There's been no discussion of analytic budgets in this section because at the time this book was originally being prepared, 
+	the module that handles them was being completely rewritten.
 
 	Nevertheless, it's worth trying them because they offer the possibility of:
 

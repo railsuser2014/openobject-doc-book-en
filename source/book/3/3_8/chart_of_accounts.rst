@@ -11,7 +11,7 @@ Some of these pre-built modules are comprehensive and accurate, others have rath
 
 You view active charts of accounts using the menu  *Financial Management > Charts > Charts of Accounts* .
 
-.. tip::   **Advantage**  *Hierarchical charts* 
+.. note:: Hierarchical charts 
 
 	Most accounting software packages represent their charts of accounts in the form of a list. You can do this in Open ERP as well if you want to, but its tree view offers several advantages:
 
@@ -44,11 +44,14 @@ To add, modify or delete existing accounts, use the menu  *Financial Management 
 .. index::
    single: Multi-lingual
 
-.. tip::   **Advantage**  *Multi-lingual fields* 
+.. tip:: Multi-lingual fields 
 
-	In Open ERP multi-lingual fields are marked by a small flag to their right. Click on the flag to get a translation of the value of the field in the different installed languages. You can also edit the translation.
+	In Open ERP multi-lingual fields are marked by a small flag to their right. 
+	Click on the flag to get a translation of the value of the field in the different installed languages. 
+	You can also edit the translation.
 
-	This enables you to efficiently manage other languages as you need them The field's value appears in the language of the logged-in user or, in the case of reports printed for a partner, that of the partner.
+	This enables you to efficiently manage other languages as you need them. 
+	The field's value appears in the language of the logged-in user or, in the case of reports printed for a partner, that of the partner.
 
 The main account fields are:
 
@@ -56,19 +59,21 @@ The main account fields are:
 
 *  *Active* : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
-*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu:  *Financial Management > Configuration > *  *Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu *Financial Management > Configuration > Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
 .. index::
    single: Type of account
    single: Account Type
 
-.. tip::   **Comment**  *Type of account* 
+.. note:: Type of account 
 
-	The account types are mainly used as an informative title, The only two types that have any particular effect are Receivables and Payables.
+	The account types are mainly used as an informative title. 
+	The only two types that have any particular effect are Receivables and Payables.
 
-	These two types are used by reports on partner credits and debits. They're calculated from the list of unreconciled entries in the accounts of one of these two types.
+	These two types are used by reports on partner credits and debits. 
+	They're calculated from the list of unreconciled entries in the accounts of one of these two types.
 
-*  *Account Number* : the code isn't limited in number of digits. Use code 0 for all root accounts.
+*  *Account Number* : the code length isn't limited to a specific number of digits. Use code 0 for all root accounts.
 
 *  *Currency* : the default currency for that account.
 
@@ -108,9 +113,11 @@ The most interesting thing about virtual charts of accounts is that they can be 
 .. index::
    single: Virtual Accounts
 
-.. tip::   **Advantage**  *Virtual accounts* 
+.. tip:: Virtual accounts 
 
-	Virtual accounts enable you to provide different representations of one or several existing charts of accounts. Creating and restructuring virtual accounts has no impact on the accounting entries. You can then use the virtual charts with no risk of altering the general chart of accounts or future accounting entries.
+	Virtual accounts enable you to provide different representations of one or several existing charts of accounts. 
+	Creating and restructuring virtual accounts has no impact on the accounting entries. 
+	You can then use the virtual charts with no risk of altering the general chart of accounts or future accounting entries.
 
 	Because they're used only to get different representation of the same entries they're very useful for:
 
@@ -124,7 +131,8 @@ The most interesting thing about virtual charts of accounts is that they can be 
 
 	* presenting summary charts to other users that are appropriate to their general system rights.
 
-	So there are good reasons for viewing the execution of financial transactions through virtual charts, such as budgets and financial indicators based on special views of the company.
+	So there are good reasons for viewing the execution of financial transactions through virtual charts, 
+	such as budgets and financial indicators based on special views of the company.
 
 To create a new chart of accounts you should create a root account using the menu  *Financial Management > Configuration > General Accounts > Accounts Definition* . Your top level account should have  *Code* \ ``0``\   and  *Type* \ ``View``\  . Then you can choose your structure by creating other accounts of  *Type* \ ``View``\   as necessary. Check your virtual structure using the menu  *Financial Management > Charts > Charts of Accounts* .
 

@@ -9,7 +9,7 @@ Managing Human Resources
 
 To establish a system that's integrated into a company's management you need to start with an up to date list of collaborators.
 
-.. tip::   *Don't confuse* 
+.. note:: Don't confuse employees and users 
 
 	For Open ERP, “employee” represents all of the physical people who have an work contract with the company. This includes all types of contract: contracts with both fixed and indeterminate time periods, and also independent and freelance service contracts.
 
@@ -37,7 +37,7 @@ To define a new employee in Open ERP, use the menu  *Human Resources > Employee
 
 Start by entering the employee's  *Name*  and the company that this employee works for ( *Company* ). You can then create a new user of the Open ERP system which is linked to this employee by filling in the  *Username*  field. Even if the employee isn't a user, it's best if you create a system access for most of your staff just so that you can control their access rights from the outset.
 
-.. tip::   *Advice* 
+.. tip:: Employee and User link. 
 
 	If the employee has a user account on the system you shouldn't forget to link his or her user account to the employee form.
 

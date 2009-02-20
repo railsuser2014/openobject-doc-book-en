@@ -47,9 +47,11 @@ Complete your document and insert Open ERP fields into the appropriate places.
    *Add Open ERP fields into a Word document.*
 
 
-.. tip::   **Attention**  *Fields in red* 
+.. note::  Fields in red 
 
-	When you've selected some fields and added them into your Word document, some of them appear in red. This color indicates that you can't use that particular field because it has a complex data relationships that can only be discovered when you start to use the field.
+	When you've selected some fields and added them into your Word document, some of them appear in red. 
+	This colour indicates that you can't use that particular field because it has a complex data 
+	relationships that can only be discovered when you start to use the field.
 
 Select the merge tool from by clicking  *Perform Mail Merge*  from the toolbar. This connects Microsoft Word to Open ERP, at which point it searches for data to insert into the document. This tool enables you to select which documents must be included in the report. Make your selection and click  *Start Merge*  to run the tool that produces your different documents.
 
@@ -69,7 +71,7 @@ Word then generates the documents by inserting the Open ERP data. You get one p
 .. index::
    single: Word adapter
 
-.. tip::   **Note**  *Testing the Word adapter* 
+.. note:: Testing the Word adapter 
 
 	If you install the Word adapter as described, use the openerp_ch05X database to explore its functionality as described in this section.
 

@@ -3,7 +3,7 @@ Guided Tour of Open ERP
 
 You'll now explore the database \ ``openerp_ch02``\   with these profile modules installed to give you an insight into the coverage of the core Open ERP software.
 
-.. tip::   **Attention**  *Translating new modules* 
+.. tip:: Translating new modules
 
 	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use Administration > Translation > Load a New Language.
 
@@ -34,7 +34,7 @@ Users' home pages are automatically reassigned during the creation or upgrading 
   single: Shortcuts
 ..
 
-.. tip::   **Note**  *Creating shortcuts* 
+.. tip:: Creating shortcuts
 
 	Each user has access to many menu items throughout all of the available menu hierarchy. But in general an employee uses only a small part of the system's functions.
 
@@ -66,11 +66,17 @@ If you've applied no filter, the list shows every partner in the system. For spa
 
    *Standard partner search.*
 
-.. tip::   **GTK client**  *List limit of 80* 
+.. note:: List limits
 
 	By default the list in the GTK client shows only the first 80 records, to avoid overloading the network and the server.
 
-	But you can change that limit by clicking the + icon to the left of the search criteria, and you can change the offset so that it starts further down the whole list than the first entry. 
+	But you can change that limit by clicking the + icon to the left of the search criteria, 
+	and you can change the offset so that it starts further down the whole list than the first entry. 
+	
+	Similarly the list in the web client shows only the first 20, 40, 60, 80 or 100 records. 
+	
+	The actual number can be switched by clicking on the number and selecting one of the other limits,
+	but you can't select any other limit (so, unlike the GTK client you can't select hundreds or thousands).
 
 If you click on the name of a partner the form view corresponding to that partner opens in Read-Only mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode. Once you have a form you can toggle between the two modes by clicking  *Save*  or  *Cancel*  when in Edit mode and  *Edit*  when in Read-Only mode.
 
@@ -122,13 +128,13 @@ Certain actions can be started by the following buttons in the  *Actions*  secti
   single: Right Actions
 ..
 
-.. tip::   **GTK client**  *Reports, Actions and Links* 
+.. tip:: Reports, Actions and Links in the GTK client 
 
 	When you're viewing a form in the GTK client, the buttons to the right of the form are shortcuts to the same Reports, Actions and Links as described in the text. When you're viewing a list (such as the partner list) those buttons aren't available to you. Instead, you can reach Reports and Actions through two of the buttons in the toolbar at the top of the list – Print and Action. 
 
 Partners are used throughout the Open ERP system in other documents. For example, the menu  *Sales Management > Sales Orders > All Sales Orders*  brings up all the Sales Orders in list view. Click the name of a partner rather than the order number on one of those lines and you'll get the Partner form rather than the Sales Order form.
 
-.. tip::   **Note**  *Right click and shortcuts* 
+.. tip:: Right clicks and shortcuts
 
 	In the GTK client you don't get hyperlinks to other document types. Instead, you can right-click in a list view to show the linked fields (that is fields having a link to other forms) on that line. 
 
@@ -170,19 +176,24 @@ Dashboards
 
 Dashboards give you an overview of all the information that's important to you on a single page. The  *Dashboards*  menu gives you access to predefined boards for  *Accounting* ,  *Production*  and  *Project Management* .
 
-.. tip::   **Definition**  *Dashboards* 
+.. note:: Dashboards 
 
-	Unlike most other ERP systems and classic statistically-based systems, Open ERP lets dashboards be provided to all of the system's users, and not just to directors and accountants.
+	Unlike most other ERP systems and classic statistically-based systems, 
+	Open ERP can provide dashboards to all of the system's users, and not just to a select few 
+	such as directors and accountants.
 
-	Users can each have their own dashboard, adapted to their needs, to enable them to manage their own work effectively. For example a developer using the Project Dashboard can see such information as a list of the next tasks, task completion history and an analysis of the state of progress of the relevant projects.
+	Users can each have their own dashboard, adapted to their needs, 
+	to enable them to manage their own work effectively. 
+	For example a developer using the Project Dashboard can see such information 
+	as a list of the next tasks, task completion history and an analysis of the state of progress of the relevant projects.
 
 Dashboards are dynamic, which enables you to easily navigate around the whole information base. Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can click on any element of the list to get detailed statistics on the selected element.
 
 Dashboards are adaptable to the needs of each user and each company.
 
-.. tip::   **Note**  *Construction of dashboards* 
+.. note:: Construction of dashboards 
 
-	Open ERP contains a dashboard editor. It enables you to construct your own dashboard to fit your specific needs using only a few clicks.
+	Open ERP contains a dashboard editor. It lets you construct your own dashboard to fit your specific needs using only a few clicks.
 
 .. index::
    single: Products
@@ -225,7 +236,7 @@ The  *Products*  menu gives you access to the definition of products and their c
    single: Products; Consumables
 .. 
 
-.. tip::   **Terminology**  *Consumables* 
+.. tip::  Consumables 
 
 	In Open ERP a consumable is a physical product which is treated like a stockable product except that stock management isn't taken into account by the system. You could buy it, deliver it or produce it but Open ERP will always assume that there's enough of it in stock. It never triggers a restocking exception.
 
@@ -317,7 +328,7 @@ Customer and Supplier Relationship Management
 
 Open ERP provides many tools for managing relationships with partners. These are available through the  *CRM & SRM*  menu.
 
-.. tip::   **Terminology**  *CRM and SRM* 
+.. tip::  **CRM** and **SRM** 
 
 	CRM stands for Customer Relationship Management, a standard term for systems that manage client and customer relations. SRM stands for Supplier Relationship Management, and is commonly used for functions that manage your communications with your suppliers.
 
@@ -355,13 +366,15 @@ You can handle partial deliveries in Open ERP, so you can keep track of items t
 
 Open ERP's replenishment management rules enable the system to generate draft purchase orders automatically, or you can configure it to run a lean process driven entirely by current production needs.
 
+.. TODO - change the details here
+
 .. tip::   **Note**  *Workflow visualization* 
 
-	Open ERP can show you the workflow of any operating process and the current state of a document following the workflow, to help you understand your company processes. This operation is available in the GTK client, not (at the time of writing) the web client.
+	Open ERP can show you the workflow of any operating process and the current state of a document following the workflow, to help you understand your company processes. 
 
-	For example, open a supplier Purchase Order form in the GTK client. Click Plugins > Execute a Plugin, then select Print Workflow (complex) and click OK.
+	For example, open a supplier Purchase Order form in the GTK client. Click *Plugins > Execute a Plugin*, then select *Print Workflow (complex)* and click *OK*.
 
-	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state is marked by nodes colored red.
+	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state is marked by nodes coloured red.
 
 .. figure:: images/purchase_workflow.png
    :align: center
@@ -393,7 +406,7 @@ Production Management
 
 Open ERP's production management capabilities enable companies to plan, automate, and track manufacturing and product assembly. Open ERP supports multi-level Bills of Materials and lets you substitute subassemblies dynamically, at the time of sales ordering. You can create virtual sub-assemblies for reuse on several products with Phantom Bills of Materials.
 
-.. tip::   **Terminology**  *BoMs, routing, workcenters* 
+.. note:: BoMs, routing, workcenters 
 
 	These documents describe the materials that make up a larger assembly. They're commonly called Bills of Materials or BoMs.
 

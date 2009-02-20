@@ -17,7 +17,7 @@ Manufacturing management is implemented by the ``mrp`` module. It is useful for 
 
 You'll work in two areas: on products in the first part of this chapter, and on operations in the second part. The management of products depends on the concept of classiciations while the management of operations depends on routing and workcenters.
 
-.. tip::   **Terminology**  *Bills of Materials*
+.. note:: Bills of Materials
 
     Bills of Materials, or manufacturing specifications, are named differently depending on their application area, for example:
 

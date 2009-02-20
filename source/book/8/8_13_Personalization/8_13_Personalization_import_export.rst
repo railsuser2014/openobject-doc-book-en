@@ -6,9 +6,11 @@ Importing and exporting data
 
 Every form in Open ERP has a standard mechanism for importing data from a CSV file. That's the same format as used in the language translations.
 
-.. tip::   **Note**  *Forms and Lists* 
+.. note:: Forms and Lists 
 
-	You have access to the Import and Export functions in the web client on a single form view in read-only mode – you can't reach Import or Export in any other view or when the form is editable. If you're using the GTK client you can find the functions from the top menu Form > Import... and Form > Export...
+	You have access to the Import and Export functions in the web client on a single form view in read-only mode – 
+	you can't reach Import or Export in any other view or when the form is editable. 
+	If you're using the GTK client you can find the functions from the top menu *Form > Import...* and *Form > Export...*.
 
 The CSV file format is text format compatible with most spreadsheet programs (such as OpenOffice Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
@@ -41,13 +43,18 @@ Use the field names as the column names in the first line of your CSV file, appl
 
 To import CSV data that matches your database structure, you need to distinguish the following types of field in the Open ERP interface:  *many-to-many*  fields (between multiple sources and destinations),  *many-to-one*  fields (from multiple sources to a single destination), and  *one-to-many*  fields (from a single origin to multiple destinations). 
 
-.. tip::   **Definition**  *Foreground table* 
+.. TODO - check that the next bit is still true
 
-	Each of these types is described in relation to a foreground table – the table whose entry form you're viewing and whose entries would be updated by a simple CSV file. 
+.. note:: Foreground table 
 
-	Just because one of these relation fields appears on the foreground table, does not mean that there is an inverse field on the related table – but there may be. 
+	Each of these types is described in relation to a foreground table –
+	the table whose entry form you're viewing and whose entries would be updated by a simple CSV file. 
 
-	So there is no one-to-many field in the User form to reflect the many-to-one Salesman field in the Partner form, but there is a many-to-one Partner field in the Partner contact form to reflect the one-to-many Partner contact field in the Partner form.
+	Just because one of these relation fields appears on the foreground table, does not mean that there is an inverse field on the related table – 
+	but there may be. 
+
+	So there is *no* one-to-many field in the User form to reflect the many-to-one Salesman field in the Partner form, 
+	but there *is* a many-to-one Partner field in the Partner contact form to reflect the one-to-many Partner contact field in the Partner form.
 
 Have a look at the screenshots below to see the differences.
 
@@ -85,11 +92,15 @@ When you import other files which link to the first table, you can use the ident
 
 To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \ ``Product:id``\  ).
 
-.. tip::   **Advantage**  *Importing with identifiers* 
+.. TODO - link to another document here?
 
-	The management of free text identifiers enables you to considerably simplify the conversion of another database to Open ERP. You can just create an id column that contains the identifier used in the original database for each table that you're importing.
+.. tip:: Importing with identifiers 
 
-	For the other tables linked to this one you can just use the identifier relationship to the entry in the original table. You don't need a complex conversion then to create links to the original table.
+	The management of free text identifiers enables you to considerably simplify the conversion of another database to Open ERP. 
+	You can just create an id column that contains the identifier used in the original database for each table that you're importing.
+
+	For the other tables linked to this one you can just use the identifier relationship to the entry in the original table. 
+	You don't need a complex conversion then to create links to the original table.
 
 Many-to-many fields
 ^^^^^^^^^^^^^^^^^^^^^
@@ -127,9 +138,10 @@ Importing this file will give you three partners:
 
 * Open-Net: with no contact..
 
-.. tip::   **Note**  *Symmetry in relation fields* 
+.. note::  Symmetry in relation fields 
 
-	Depending on the structure of your data it can be easier to use the one-to-many form or the many-to-one form in relating two tables, so long as the relevant fields exist on both ends of the relationship.
+	Depending on the structure of your data it can be easier to use the one-to-many form or the many-to-one form in relating two tables, 
+	so long as the relevant fields exist on both ends of the relationship.
 
 	For example, you can:
 
@@ -181,9 +193,10 @@ Start by creating partner categories in a CSV file:
 
 	#. Click  *Partners > Partners by category* to view the tree of categories, including the new \ ``Quality``\  branch that you loaded. 
 
-.. tip::   **GTK Client**  *GTK dialog box for importing CSV files* 
+.. tip:: GTK dialog box for importing CSV files 
 
-	The dialog box you use in the web client for importing a CSV file is slightly different from that of the GTK client. The GTK client shows you which fields are required and doesn't include those fields that can't be completed (such as calculated fields).
+   The dialog box you use in the web client for importing a CSV file is slightly different from that of the GTK client.
+   The GTK client shows you which fields are required and doesn't include those fields that can't be completed (such as calculated fields).
 
 New partners
 ^^^^^^^^^^^^^
@@ -216,7 +229,7 @@ Open ERP's generic export mechanism lets you easily export any of your data to 
 
 You can use this to export your data into spreadsheets or into other systems such as specialist accounts packages. The export format is usually in the CSV format but you can also connect directly to Microsoft Excel using Microsoft's COM mechanism.
 
-.. tip::   **Technique**  *Access to the database* 
+.. tip:: Access to the database 
 
 	Developers can also use other techniques to automatically access the Open ERP database. The two most useful are:
 
@@ -256,11 +269,13 @@ In the table above:
 
 *  *Column D*  contains text data for the Salesman, which is the  *Name*  field in the  *many-to-one*  related  *User*  table. It is listed only on the same line as the Partner itself.
 
-.. tip::   **Advice**  *Module Recorder* 
+.. tip:: Module Recorder
 
 	If you want to enter data into Open ERP manually, you should use the Module Recorder, described in the first section of this chapter.
 
-	By doing that you'll be generated a module that can easily be reused in different databases. Then if there are problems with a database you'll be able to reinstall the data module you generated with all of the entries and modifications you made for this system.
+	By doing that you'll be generated a module that can easily be reused in different databases. 
+	Then if there are problems with a database you'll be able to reinstall the data module you generated 
+	with all of the entries and modifications you made for this system.
 
 
 .. Copyright © Open Object Press. All rights reserved.

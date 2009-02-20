@@ -11,9 +11,9 @@ Start to personalize your database by renaming the  *Main Company*  from its def
 
 To do this, click  *Partners > Partners*  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
 
-.. tip::   **Web client**  *Editable form* 
+.. tip:: Editable form in the web client
 
-	When toggling from the list view to the form view of an item, you can generally click its name in the list view to show a non-editable view or the pencil icon along the right-hand end of the line to open it in an editable view. You can toggle between editable and non-editable once you're in form view.
+	When toggling from the list view to the form view of an item, you can generally click its name in the list view to show a non-editable view or the pencil icon by the left-hand edge of the line to open it in an editable view. You can toggle between editable and non-editable once you're in form view.
 
 Change the following:
 
@@ -37,10 +37,9 @@ From the  *Main Menu* , click  *Administration > Configuration > Base > Define M
 
 You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
 
-.. tip::   **Alternative**  *Currency* 
+.. note::  Currency 
 
-
-	The examples in this book are in USD and EUR. You would use your main currency, perhaps CAD, CNY, GBP, or IDR, in their place.
+	The examples in this book are in USD and EUR. You, the reader, could use your home currency (perhaps CAD, CNY, GBP, or IDR) in their place.
 
 Creating partner categories, partners and their contacts
 ---------------------------------------------------------
@@ -65,9 +64,7 @@ Then create two partners from the menu  *Partners > Partners* . Click on the  *N
 
 * then save the partner by clicking the  *Save*  button. 
 
-.. tip::   **Note**  *Contact Types* 
-
-
+.. note:: Contact Types 
 
 	If you've recorded several contacts for the same partner you can specify which contact is used for various documents by specifying the Address Type.
 
@@ -83,9 +80,7 @@ For the second partner, proceed just as you did for the first, with the followin
 
 Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To check your work you can go to the menu  *Partners > Partner Categories*  and click on each category in turn to see the companies in the category.
 
-.. tip::   **Note**  *Multiple Partner Categories* 
-
-
+.. note:: Multiple Partner Categories 
 
 	If this partner was also a supplier then you'd add Suppliers to the categories as well, but there's no need to do so in this example. You can assign a partner to multiple categories at all levels of the hierarchy.
 
@@ -96,25 +91,19 @@ Unlike partner categories and their assigned partners, product categories do hav
 
 Enter \ ``Radiators``\   in the  *Name*  field and, watching the  *Product Categories*  form closely, click  *Save* . You'll see that other fields, specifically those in the  *Accounting Properties*  section, have been automatically filled in with values of accounts and journals. These are the values that will affect products – equivalent fields in a product will take on these values if they, too, are blank when their form is saved. 
 
-.. tip::   **Definition**  *Properties fields* 
+.. note:: Properties fields
 
-
-
-	Properties have a rather unusual behavior. They're defined by parameters in the menu Administration > Custom > Properties, and they update fields only when a form is saved, and only when the fields are empty at the time the form is saved. You can manually override any of these properties as you need.
+	Properties have a rather unusual behavior. They're defined by parameters in the menu *Administration > Custom > Properties*, and they update fields only when a form is saved, and only when the fields are empty at the time the form is saved. You can manually override any of these properties as you need.
 
 	Properties fields are used all over the Open ERP system and particularly extensively in a multi-company environment. There, property fields in a partner form can be populated with different values depending on the user's company.
 
 	For example the payment conditions for a partner could differ depending on the company from which it's addressed.
 
-.. tip::   **Definition**  *UOM* 
-
-
+.. note:: UOM 
 
 	UOM is an abbreviation for Unit of Measure. Open ERP manages multiple units of measure for each product: you can buy in tons and sell in kgs, for example. The conversion between each category is made automatically (so long as you have set up the conversion rate in the product form first).
 
-.. tip::   **Advantage**  *Managing double units of measure* 
-
-
+.. tip::  Managing double units of measure 
 
 	The whole management of stock can be carried out with double units of measure (UOM and UOS – for Unit of Sale). For example an agro-food company can stock and sell ham by piece but buy and value it by weight. There's no direct relationship between these two units so a weighing operation has to be done.
 
@@ -154,9 +143,7 @@ Click  *Inventory Control > Location Structure*  to see the hierarchy of stock l
 
 	#. From the  *Main Menu*  click  *Inventory Control > Configuration > Warehouses* to view a list of warehouses.
 
-.. tip::   **Note**  *Valuation of stock* 
-
-
+.. tip:: Valuation of stock 
 
 	If you want real-time stock valuation that tracks stock movements you must assign an account to each stock location. As product items are added to and taken from each location Open ERP generates an account entry for that location defined by the configuration of the product being moved – and a stock valuation based (in the current versions of Open ERP) on either Standard Cost or Average Price.
 
@@ -167,7 +154,7 @@ A Warehouse contains an input location, a stock location and an output location 
 .. index::
    single: Location Structure
 
-.. tip::   **Attention**  *Location Structure* 
+.. note:: Location Structure
 
 	Each warehouse is composed of three locations: Input, Output and Stock. Your available stock is given by the contents of the Stock location.
 

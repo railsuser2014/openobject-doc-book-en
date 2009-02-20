@@ -35,37 +35,40 @@ Instead of editing this form, which is the original menu entry, duplicate it ins
 
 To move this duplicate entry, change the  *Parent Menu*  field by deleting what's there and replacing it with another menu that everyone can see, such as  *Tools*  or  *Human Resources* , and make sure that the entry moves to the end of the menu list by replacing the  *Sequence*  with \ ``99``\  . You can experiment with icons if you like. Save the form and then click  *Main Menu*  to see the results.
 
-.. tip::   **Advice**  *Duplicating the menu* 
+.. tip:: Duplicating the menu
 
-	You should duplicate a menu before modifying it. In this way you'll always keep a link to the original menu that works if you need it to.
+	If you're planning to modify a menu you should duplicate it first. 
+	In this way you'll always keep a link to the original menu that works if you need it to.
 
-.. tip::   **Attention**  *Managing Passwords* 
+.. tip:: Managing Passwords 
 
-	If you let users change their passwords for themselves you'll have no direct control over the password they choose. You should have a written policy about password strength to try to maintain a level of security in your system.
+	If you let users change their passwords for themselves you'll have no direct control over the password they choose. 
+	You should have a written policy about password strength to try to maintain a level of security in your system.
 
-.. tip::   **Note**  *Managing users through LDAP* 
+.. tip:: Managing users through LDAP
 
-	With the ``user_ldap`` module, user accounts can be managed through an LDAP directory common to various different company resources. 
+	With the ``user_ldap`` module, user accounts can be managed through an LDAP directory that can be made common to various different company resources. 
 
-	Connection parameters for the LDAP directory are then registered with the company definition. You can provide a user profile template there from which new users are automatically created during their first connection to Open ERP.
+	Connection parameters for the LDAP directory are then registered with the company definition. 
+	You can provide a user profile template there from which new users are automatically created during their first connection to Open ERP.
 
 .. index::
    single: LDAP
 .. 
 
 
-.. tip::   **Definition**  *LDAP* 
+.. note:: LDAP 
 
-	The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories for various different resources through your standard TCP/IP network. 
+	The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories 
+	for various different resources through your standard TCP/IP network. 
 
-	This enables users in the company to have the same username and password to access all their applications (such as email and their intranet).
+	This enables users in the company to have the same username and password to access all 
+	their applications (such as email and intranet).
 
 Personalizing the welcome page for each user
 ---------------------------------------------
 
 When you sign into Open ERP for the first time, a welcome page appears. In a minimal system, such as that created in the original \ ``openerp_ch02``\  database before it was expanded in that chapter, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you get by default when you click the *Main Menu* button. As you add functionality to your database you get more choices for the welcome page, with different dashboards automatically assigned to various company roles as they're created in the demonstration data.
-
-
 
 The administrator can change both the welcome page and the main menu page individually for each user of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
 
@@ -78,9 +81,10 @@ To make modifications for a particular user, edit the user configuration again i
 
 The  *Home Action*  is the menu item that is automatically opened when you first sign on, and is also reached when you click the  *Home*  link in the top right toolbar of the web client. There you can choose any page that you'd reach through any menu – one of the dashboards could be most useful. The  *Menu Action*  is the one you reach through the  *Main Menu*  button in the web client (the  *Menu*  button in the GTK client). You can choose the main menu and the dashboards there.
 
-.. tip::   **Attention**  *Actions on the administrator's menu* 
+.. tip:: Actions on the administrator's menu 
 
-	It's very easy to change the welcome page and the menu of the different users. However, you shouldn't change the main administrator's menu because you could make certain menus completely inaccessible by mistake.
+	It's very easy to change the welcome page and the menu of the different users. 
+	However, you shouldn't change the main administrator's menu because you could make certain menus completely inaccessible by mistake.
 
 Assigning default values to fields
 -----------------------------------
@@ -116,7 +120,9 @@ You can do this one of two ways:
 
 * translate the phrases directly in the client, which means that you can change them in their context, and that can be helpful to you while you're translating.
 
-.. tip::   **Definition**  *CSV* 
+.. TODO - check the details of representation below
+
+.. note:: CSV 
 
 	CSV (Comma-Separated Values) is an open text file format, representing tabular data where values are separated by commas. These files use a file extension of .csv, and the format is a very common one for exporting data from one software system to another.
 
@@ -153,9 +159,11 @@ To translate or modify all of the system's phrases you first have to export a tr
 
  *Administration > Translation > Export language*  *Français*  *New Language* \ ``.csv``\  
 
-.. tip::   **Attention**  *UTF-8 format* 
+.. note:: UTF-8 format 
 
-	The CSV file is encoded in the UTF-8 format. Make sure that you retain this format when you open the file in a spreadsheet program because if you don't you risk seeing strange character strings in place of accented characters.
+	The CSV file is encoded in the UTF-8 format. 
+	Make sure that you retain this format when you open the file in a spreadsheet program because 
+	if you **don't** retain it you risk seeing strange character strings in place of accented characters.
 
 .. figure::  images/csv_transl.png
    :align: center
@@ -164,9 +172,13 @@ To translate or modify all of the system's phrases you first have to export a tr
 
 The file contains five columns:  *type* ,  *name* ,  *res_id* ,  *src* , and  *value* . You have to ensure that the first line, which specifies these column names, remains untouched. The  *src*  field contains the base text in English, and the  *value*  field contains a translation into another conventional language or into a specialist technical phrase. If there's nothing at all in the  *value*  field then the English translation will automatically be used on the the form you see.
 
-.. tip::   **Note**  *When should you modify the text?* 
+.. tip:: When should you modify the text? 
 
-	Most of the time, you will find the text that you want to modify in several lines of the CSV file. Which line should you modify? Refer to the two columns type (column A) and name (column B). Some line have the nameir.ui.menu which shows that this is a menu entry. Others have a type of selection, which indicates you that you'd see this entry in a drop-down menu.
+   Most of the time, you will find the text that you want to modify in several lines of the CSV file. 
+   Which line should you modify? 
+   Refer to the two columns type (column A) and name (column B). 
+   Some lines have the name *ir.ui.menu* which shows that this is a menu entry. 
+   Others have a type of *selection*, which indicates you that you'd see this entry in a drop-down menu.
 
 You should then load the new file into your Open ERP system using the menu  *Administration > Translation > Import language* . You've then got two ways forward:
 
@@ -176,9 +188,9 @@ You should then load the new file into your Open ERP system using the menu  *Ad
 
 If you're not connected to the translated language, click  *Preferences* , select the language in  *Language*  and finally click  *OK*  to load the new language with its new terminology.
 
-.. tip::   **Note**  *Partial translations* 
+.. tip:: Partial translations 
 
-	You can load only some of the lines in a translation file by deleting most of the lines in the file and then loading back only the changed ones. Open ERP then changes only the uploaded lines and leaves the original ones alone. 
+   You can load only some of the lines in a translation file by deleting most of the lines in the file and then loading back only the changed ones. Open ERP then changes only the uploaded lines and leaves the original ones alone. 
 
 Changes through the client interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -205,9 +217,10 @@ This method is simple and quick when you only have a few entries to modify, but 
 
 In that case it would be better to use the translation method that employs a CSV file. 
 
-.. tip::   **GTK Client**  *Tacking account of translations* 
+.. tip:: Tacking account of translations 
 
-	In the GTK client the modified terms aren't updated immediately. To see the effects of the modifications you must close the current window and then reopen the form.
+   In the GTK client the modified terms aren't updated immediately. 
+   To see the effects of the modifications you must close the current window and then reopen the form.
 
 
 

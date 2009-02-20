@@ -30,7 +30,7 @@ The first step is to download the Open ERP installer. At this stage you must ch
 .. index::
    single: Stable versions
 
-.. tip::   **Attention**  *Stable versions and development versions* 
+.. note::  Stable versions and development versions 
 
 	Open ERP development proceeds on two parallel tracks: stable versions and development versions.
 
@@ -42,12 +42,13 @@ The first step is to download the Open ERP installer. At this stage you must ch
    single: Open ERP Installation; Windows (All-in-One)
 .. 
 
+.. TODO - update this below
 
 To download the version of Open ERP for Windows, follow these steps:
 
 	#. Navigate to the site http://openerp.com,
 
-	#. Click Product on the menu at the left, then Download,
+	#. Click *Product* on the menu at the left, then *Download*,
 
 	#. Download the demonstration version Windows installer 
 	        – currently Open ERP 5.0.0 Stable Version > Windows Installers > All In One,
@@ -95,7 +96,7 @@ To connect other computers to the Open ERP server you must configure the server
 
 	#. Install the Open ERP client (\ ``openerp-client-4.X.exe``\  , which you can download in the same way as you downloaded the other Open ERP software, onto the other PCs.
 
-.. tip::   **Attention**  *Version matching* 
+.. tip:: Version matching
 
 	You must make sure that the version of the client matches that of the server. The version number is given as part of the name of the downloaded file. Although it's possible that some different revisions of client and server will function together, there's no certainty about that.
 
@@ -103,8 +104,7 @@ To run the client installer on every other PC you'll need to have administrator 
 
 To test your installation, start by connecting through the Open ERP client on the server machine while you're still logged in as administrator. 
 
-.. tip::   **Note**  *Why signed in as a PC Administrator?* 
-
+.. note:: Why sign in as a PC Administrator? 
 
 	You'd not usually be signed on as a PC administrator when you're just running the Open ERP client, but if there have been problems in the installation it's easier to remain as an administrator after the installation so that you can make any necessary fixes than to switch user as you alternate between roles as a tester and a software installer.
 
@@ -119,7 +119,7 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 .. index::
    single: XML-RPC
 
-.. tip::   **Note**  *Connection modes* 
+.. note:: Connection modes
 
 	In its default configuration, the Open ERP client connects to port 8069 on the server using the XML-RPC protocol. You can change this and connect to port 8070 using the NET-RPC protocol instead. NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 
@@ -128,7 +128,7 @@ Resolving errors with a Windows installation
 
 If your system doesn't work after installing your Windows system you'll find some ideas for resolving this below:
 
-	#. Does your PostgreSQL server work? Signed in as administrator, select  *Stop Service* from the menu  *Start > Programs > PostgreSQL*  If, after a couple of seconds, you can read  *The service PostgreSQL4OpenERP has stopped* then you can be reasonably sure that the database server was working. Restart PostgreSQL then, still in the PostgreSQL menu, start the pgAdmin III application which you can use to explore the database. Double-click on the \ ``PostgreSQL4OpenERP``\  connection as in the figure below. If the database server is working you'll be able to see some information about the empty database. If it's not then an error message will appear.
+	#. Does your PostgreSQL server work? Signed in as administrator, select  *Stop Service* from the menu  *Start > Programs > PostgreSQL*.  If, after a couple of seconds, you can read  *The service PostgreSQL4OpenERP has stopped* then you can be reasonably sure that the database server was working. Restart PostgreSQL then, still in the PostgreSQL menu, start the pgAdmin III application which you can use to explore the database. Double-click on the \ ``PostgreSQL4OpenERP``\  connection as in the figure below. If the database server is working you'll be able to see some information about the empty database. If it's not then an error message will appear.
 
             .. figure:: images/pgadmin_window.png
                :align: center
@@ -139,7 +139,7 @@ If your system doesn't work after installing your Windows system you'll find som
 
 	#. Is the Open ERP application working? Signed in to the server as an administrator, stop and restart the service using  *Stop Service* and  *Start Service* from the menu  *Start > Programs > OpenERP Server*  Open the log file \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP Server``\   At the end of the file you should see the line  *The server is running, waiting for connections...* 
 
-                .. tip::   **Note**  *Automatically starting the server* 
+                .. tip:: Automatically starting the server 
 
 	                You might find that the server has not started automatically after installation. If this is the case you should restart your computer to ensure that the service is properly registered. You'll only have to do this once. Once registered the server should restart correctly every time.
 
@@ -171,7 +171,7 @@ Installation on Linux (Ubuntu)
 
 This section guides you through installing the Open ERP server and client on Ubuntu, one of the most popular Linux distributions. It assumes that you're using a recent release of Desktop Ubuntu with its graphical user interface on a desktop or laptop PC. 
 
-.. tip::   **Alternative**  *Other Linux distributions* 
+.. note:: Other Linux distributions 
 
 	Installation on other distributions of Linux is fairly similar to installation on Ubuntu. Read this section of the book so that you understand the principles, then use the online documentation and the forums for your specific needs on another distribution.
 
@@ -200,7 +200,7 @@ Start the Tiny ERP GTK client by clicking its icon in the  *Applications*  menu,
 
 Although this installation method is simple and therefore an attractive option, it's better to install Open ERP using a version downloaded from http://openerp.com. The downloaded revision is likely to be far more up to date than that available from a Linux distribution.
 
-.. tip::   **Attention**  *Package versions* 
+.. note:: Package versions
 
 	Maintaining packages is a process of development, testing and publication that takes time. The releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check the version number from the information on the website before installing a package. If only the third figure differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because the differences may be minor – fault fixes rather than functionality changes between the package and the latest version.
 
@@ -228,7 +228,7 @@ To download the PostgreSQL database and all of the other dependencies for Open 
 .. index::
    single: Python
 
-.. tip::   **Language**  *Python* 
+.. note::  Python programming language 
 
 	Python is the programming language that's been used to develop Open ERP. It's a dynamic, non-typed language that is object-oriented, procedural and functional. It comes with numerous libraries that provide interfaces to other languages and has the great advantage that it can be learnt in only a few days. It's the language of choice for large parts of NASA's, Google's and many other enterprises' code.
 
@@ -274,12 +274,11 @@ To install an Open ERP GTK client, follow the steps below:
 
 	#. Install the Open ERP client: \ ``sudo python setup.py install``\  
 
-.. tip::   **Note**  *Survey: Don't Cancel!* 
+.. tip:: Survey: Don't Cancel! 
 
 	When you start the GTK client for the first time, a dialog box appears asking for various details that are intended to help the Tiny company assess the prospective user base for its software.
 
 	If you click the Cancel button, the window goes away – but Open ERP will ask the same questions again next time you start the client. It's best to click OK, even if you choose to enter no data, to prevent that window reappearing next time.
-
 
 .. figure:: images/terp_client_startup.png
    :align: center
@@ -293,7 +292,7 @@ You can connect other GTK clients over the network to your Linux server. Before 
 .. index::
    single: Port
 
-.. tip::   **Note**  *Different networks* 
+.. note:: Different networks
 
 	Communications between an Open ERP client and server are based on standard protocols. You can connect Windows clients to a Linux server, or vice versa, without problems. It's the same for Mac versions of Open ERP – you can connect Windows and Linux clients and servers to them.
 
@@ -336,7 +335,7 @@ To install eTiny:
 
 	#. Finally, install eTiny by entering the command: \ ``sudo easy_install eTiny.``\  
 
-.. tip::   **Tool**  *Ez* 
+.. note:: Ez tool 
 
 	Ez is the packaging system used by Python. It enables the installation of programs as required just like the packages used by a Linux distribution. The software is downloaded across the network and installed on your computer by ez_install.
 
@@ -362,7 +361,7 @@ Verifying your Linux installation
 
 You've used default parameters so far during the installation of the various components. If you've had problems, or you just want to set this up differently, the following points provide some indicators about how you can configure your installation.
 
-.. tip::   **Tools**  *psql and pgAdmin* 
+.. tip:: **psql** and **pgAdmin** tools 
 
 	psql is a simple client, executed from the command line, that's delivered with PostgreSQL. It enables you to execute SQL commands on your Open ERP database.
 
@@ -390,10 +389,9 @@ You've used default parameters so far during the installation of the various com
 
 	#. The eTiny web server uses the NET-RPC protocol. If a GTK client works but eTiny doesn't then the problem is either with the NET-RPC port or with eTiny itself, and not with the Open ERP server.
 
-.. tip::   **A step further**  *One server for several companies* 
+.. hint:: One server for several companies 
 
 	You can start several Open ERP application servers on one physical computer server by using different ports. If you have defined multiple database roles in PostgreSQL, each connected through an Open ERP instance to a different port, you can simultaneously serve many companies from one physical server at one time.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

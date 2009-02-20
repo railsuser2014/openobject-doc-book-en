@@ -9,11 +9,16 @@ The most well-organized companies keep track of all the documents they've sent t
 
 That's not the case in Open ERP. To automatically make Open ERP reports available in the FTP server, Open ERP enably the definition of 'virtual files'. You can then put virtual files into directories that have the special type of 'linked resource' and link the virtual files to Open ERP's reports.
 
-.. tip::   **Technique**  *Virtual Files* 
+.. note:: Virtual Files
 
-    Virtual files don't actually existing in Open ERP but are made visible with a size of 0 in the FTP server. Once these files have been read by the client software, Open ERP prints the document related to this file and returns a PDF document linked to the resource.
+    Virtual files don't actually exist in Open ERP but are made visible with a size of 0 in the FTP server. 
+    Once these files have been read by the client software, Open ERP prints the document related to this file and 
+    returns a PDF document linked to the resource.
 
-    When you copy or open a virtual file you print the selected resource. You then don't have to go and print a document through Open ERP – you just open the file containing that document in the document management system. The PDF file is then created in real time by Open ERP by reading the relevant data.
+    When you copy or open a virtual file you print the selected resource. 
+    You then don't have to go and print a document through Open ERP – 
+    you just open the file containing that document in the document management system. 
+    The PDF file is then created in real time by Open ERP by reading the relevant data.
 
 The screen below shows the parameters of the virtual files in Orders. You define the virtual files using the name NUMCOMMAND_print.pdf, where NUMCOMMAND represents the reference to the order. To do this you must complete the section Descriptive Contents of the file for a directory. For each report associated with an order you can then find a virtual file.
 

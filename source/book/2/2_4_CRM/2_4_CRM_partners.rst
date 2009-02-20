@@ -57,7 +57,7 @@ To get a list of partners using demonstration data, use the menu  *Partners > Pa
 
 To the right of the partner form you'll find all of the actions, reports and shortcuts available to the selected partner. This enables you to quickly send an SMS message, for example, or review a partner's order history, or print a reminder letter.
 
-.. tip::   **Note**  *Send an SMS message* 
+.. tip::  Send an SMS message 
 
 	To send an SMS message from standard Open ERP you'll have to place an order with the bulk SMS gateway operator Clickatell™http://clickatell.com.
 
@@ -80,7 +80,7 @@ Contacts can be entered into the first ( *General* ) tab of the  *Partners*  for
 
 You can search for a subset of Partners and Contacts using their company  *Name*  or  *Contact*  name or part of the address, or any of the other search fields in either the  *Basic Search*  or the  *Advanced Search*  tab.
 
-.. tip::   **Note**  *Independent partners or physical people* 
+.. note:: Independent partners or physical people
 
 	If you want to represent a physical person rather than a company, in Open ERP, that person's name can be typed directly into the Name field on the Partner form. In this case don't put in any Contact Name.
 

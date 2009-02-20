@@ -76,9 +76,10 @@ The figures below show the change of stock levels for a product managed Make to 
 
    *Change in stock for a product managed as Make to Order.*
 
-.. tip::  *Information** *Logistical Methods*
+.. note:: Logistical Methods
 
-     The *Make to Stock* logistical approach is usually used for high volumes and when the demand is seasonal or otherwise easy to forecast. The *Make to Order* approach is used for products that are measured, or very costly to stock or have a short re-stocking time.
+   The **Make to Stock** logistical approach is usually used for high volumes and when the demand is seasonal or otherwise easy to forecast. 
+   The **Make to Order** approach is used for products that are measured, or very costly to stock or have a short re-stocking time.
 
 Supply Methods
 ---------------
@@ -129,9 +130,9 @@ Units of Measure
 
 Open ERP supports several units of measure. Quantities of the same product can be expressed in several units of measure at once. For example you can buy grain by the tonne and resell it by kg.  You just have to make sure that all the units of measure used for a product are in the same units of measure category.
 
-.. tip:: **Definition** *Categories of units of measure*
+.. note:: Categories of units of measure
 
-    All units of measure in a category are convertible from one unit to another.
+   All units of measure in the same category are convertible from one unit to another.
 
 The table below shows some examples of units of measure and their category. The factor is used to convert from one unit of measure to another as long as they are in the same category.
 
@@ -154,9 +155,13 @@ Use the menu *Products > Configuration > Units of Measure > Units of Measure* to
 
 In the definition of a Unit of Measure, you have a *Rounding precision* factor which shows how amounts are rounded after the conversion. A value of 1 gives rounding to the level of one unit. 0.01 gives rounding to one hundredth.
 
-.. tip::   **Advice**  *Secondary Units*
+.. note::  Secondary Units
 
-    Open ERP supports double units of measure. In this case, the whole of the stock management system is encoded in two units that don't have a real link between them. This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice by the Kg. A weighing operation is needed before invoicing the customer.
+   Open ERP supports double units of measure. 
+   When you use this, the whole of the stock management system is encoded in two units that don't have a real link between them. 
+
+   This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice by the Kg. 
+   A weighing operation is needed before invoicing the customer.
 
 To activate the management options for double units of measure, assign the group *Useability / Product UoS View* to your user.
 

@@ -89,13 +89,15 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 
    *Selecting the CRM functionality to install.*
 
-.. tip:: *Point* The CRM configuration module
+.. note:: The CRM configuration module
 
-    The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls isn't supplied by the ``crm`` module itself but by the ``crm_configuration`` module.
+    The pre-configuration of the management of customer relations to generate prospects, opportunities, and phone calls 
+    isn't supplied by the ``crm`` module itself but by the ``crm_configuration`` module.
 
-If you install the modules separately don't forget to install the ``crm_configuration`` module. The ``crm`` module just contains the generic case management system.
+If you install the modules separately don't forget to install the ``crm_configuration`` module. 
+The ``crm`` module just contains the generic case management system.
 
-Open ERP suggests that you select from preconfigured functions for CRM:
+Open ERP proposes that you select from preconfigured functions for CRM:
 
 * managing a prospects database,
 
@@ -159,9 +161,11 @@ For example, the following events could result in the creation of one or several
 
 * A form completed on your website directly integrated into Open ERP. Before converting the form into a sale proposition or opportunity, you should read and handle the person's request.
 
-    .. tip:: *Point* Separation of sales services
+    .. note:: Separation of sales services
 
-        In companies of a certain type, you often distinguish between the sales department and the presales department. The role of the presales department is to acquire and qualify new leads, and the role of the sales department is to crystallize the sales opportunities or work with existing customers.
+        In companies of a certain type, you often distinguish between the sales department and the presales department. 
+        The role of the presales department is to acquire and qualify new leads, 
+        and the role of the sales department is to crystallize the sales opportunities or work with existing customers.
 
 In Open ERP the users in the presales department will usually work on leads. Once these are converted into customers or sales opportunities the sales department pays individual attention to each opportunity.
 
@@ -202,9 +206,10 @@ To do that you should start with a list of leads in CSV format. If your prospect
 
 You then set which columns are present in your CSV file in the correct order. Then select your file and click on *Import*. Check in the chapter about system administration for more information on import and export.
 
-.. tip:: *Point* Various Imports
+.. tip:: Various Imports
 
-    Importing and Exporting data in Open ERP is a generic function available to all resource. So you can import and export such lists as partners, sales opportunities, accounting entries, products and pricelists.
+    Importing and Exporting data in Open ERP is a generic function available to all resource. 
+    So you can import and export such lists as partners, sales opportunities, accounting entries, products and pricelists.
 
 There are other methods of importing leads automatically or semi-automatically:
 
@@ -311,9 +316,11 @@ To enter a new meeting into the system you can click the day and the hour for a 
 
    *Entering a new meeting.*
 
-.. tip:: *Point* Consolidated Calendar
+.. tip:: Consolidated Calendar
 
-    The advantage of integrated management is that the enterprise calendar will group several system events. Then in the Open ERP calendar you will automatically find the meetings but also such information as business opportunites, technical interventions, and requests for staff meetings.
+    The advantage of integrated management is that the enterprise calendar will group several system events. 
+    Then in the Open ERP calendar you will automatically find the meetings but also such information as 
+    business opportunities, technical interventions, and requests for staff meetings.
 
 Tracking phone calls
 -----------------------

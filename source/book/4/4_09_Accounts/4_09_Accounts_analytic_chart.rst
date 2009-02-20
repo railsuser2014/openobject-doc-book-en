@@ -93,13 +93,15 @@ A report that relates both general accounts and analytic accounts enables you to
 
 The examples above are based on a breakdown of the costs of the company. Analytic allocations can be just as effective for sales. That gives you the profitability (sales - costs) of different departments.
 
-.. tip::   **Alternative**  *Representation by unique product range* 
+.. note::  Representation by unique product range
 
-	This analytic representation by department and by product range is usually used by trading companies and industry.
+	This analytic representation by department and by product range is usually used by trading companies and industries.
 
-	A variant of this is not to break it down by commercial and marketing departments but to assign each cost to its corresponding product range. This will give you an analysis of the profitability of each product range.
+	A variant of this is not to break it down by sales and marketing departments but to assign each cost to its corresponding product range. 
+	This will give you an analysis of the profitability of each product range.
 
-	Choosing one over the other depends on how you look at your marketing effort. Is it a global cost allocated in some general way or does each product range have responsibility for its own marketing costs?
+	Choosing one over the other depends on how you look at your marketing effort. 
+	Is it a global cost allocated in some general way or does each product range have responsibility for its own marketing costs?
 
 Case 2: a law firm
 -------------------
@@ -165,11 +167,14 @@ But an interest in analytical accounts isn't limited to a simple analysis of the
 
 This same data can be used for automatic recharging of the services to the client at the end of the month. To invoice clients just take the analytic costs in that month and apply a selling price factor to generate the invoice. Invoicing mechanisms for this are explained in greater detail in chapter 11. If the client requires details of the services used on the case, you can then print the service entries in the analytic account for this case.
 
-.. tip::   **Advantage**  *Invoicing analytic costs* 
+.. tip:: Invoicing analytic costs 
 
-	Most software that manages billing enables you to recharge for hours worked. In Open ERP these services are automatically represented by analytic costs. But many other Open ERP documents can also generate analytic costs, such as credit notes and purchases of goods.
+	Most software that manages billing enables you to recharge for hours worked. 
+	In Open ERP these services are automatically represented by analytic costs. 
+	But many other Open ERP documents can also generate analytic costs, such as credit notes and purchases of goods.
 
-	So when you invoice the client at the end of the month it's possible for you to include all the analytic costs, not just the hours worked. So, for example you can easily recharge the whole cost of your journeys to the client.
+	So when you invoice the client at the end of the month it's possible for you to include all the analytic costs, 
+	not just the hours worked. So, for example you can easily recharge the whole cost of your journeys to the client.
 
 Case 3 : An IT Services Company
 ---------------------------------
@@ -234,13 +239,16 @@ Finally, the analytic account can be used to forecast future needs. For example,
 
 So you can set up planning on the basis just of quantities. Analyzing the analytic budget enables you to compare the budget (that is, your plan) to the services actually carried out by month end.
 
-.. tip::   **Advice**  *Cash Budgets* 
+.. tip:: Cash Budgets
 
-	Problems of cash management are amongst the main difficulties encountered by small growing businesses. It's really difficult to predict the amount of cash that will be available when a company is young and rapidly growing. 
+	Problems of cash management are amongst the main difficulties encountered by small growing businesses. 
+	It's really difficult to predict the amount of cash that will be available when a company is young and rapidly growing. 
 
 	If the company adopts management by case, then staff planning can be represented on the analytic accounts report, as you have seen. 
 
-	But since you know your selling price for each of the different projects, you can see that it's easy to use the plan in the analytic accounts to precisely anticipate the amounts that you'll invoice in the coming months.
+	But since you know your selling price for each of the different projects, 
+	you can see that it's easy to use the plan in the analytic accounts
+	to more precisely forecast the amounts that you'll invoice in the coming months.
 
 
 .. Copyright © Open Object Press. All rights reserved.

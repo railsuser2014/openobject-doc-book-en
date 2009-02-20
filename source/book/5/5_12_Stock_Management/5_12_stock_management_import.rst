@@ -38,11 +38,14 @@ Stock
 
 The transit location are linked between themselves with a manual confirmation step. The internal stock move is validated at each port and customs arrival. Open ERP prepares all the linked moves automatically.
 
-.. tip::  **More information** *Intrastat*
+.. note:: Intrastat
 
-    Companies that do import / export should install the module ``report_intrastat``. This will enable them to prepare the reports needed to declare product exports.
+    Companies that do import / export should install the module ``report_intrastat``.
+    This will enable them to prepare the reports needed to declare product exports.
 
-You can use the lead times between different locations to account for real delays.    Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of incoming products so that you can respond to a customer's needs as precisely as possible.
+You can use the lead times between different locations to account for real delays. 
+Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of 
+incoming products so that you can respond to a customer's needs as precisely as possible.
 
 You can also value the products in transit in your account depending on the chosen stock location configuration.
 

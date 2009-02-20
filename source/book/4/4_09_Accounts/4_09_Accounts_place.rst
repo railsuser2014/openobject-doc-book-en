@@ -49,7 +49,7 @@ Finally, if the analytic account is a client project you can complete the fields
 .. index::
    single: Invoicing
 
-.. tip::   **Methods**  *Invoicing* 
+.. tip:: Invoicing 
 
 	You have several methods available to you in Open ERP for automated invoicing:
 
@@ -65,11 +65,14 @@ Finally, if the analytic account is a client project you can complete the fields
 
 Once you've defined the different analytic accounts you can view your chart through the menu  *Financial Management > Charts > Analytic Charts of Accounts* .
 
-.. tip::   **Technique**  *Setting up an analytic account* 
+.. tip:: Setting up an analytic account 
 
-	The setup screen for an analytic account can vary greatly depending on the modules installed in your database. For example, you'll only see information about recharging services if you have the module ``hr_timesheet_invoice`` installed.
+	The setup screen for an analytic account can vary greatly depending on the modules installed in your database. 
+	For example, you'll only see information about recharging services if you have the module ``hr_timesheet_invoice`` installed.
 
-	Some of these modules add helpful management statistics to the analytic account. The most useful is probably the module ``account_analytic_analysis``, which adds such information as indicators about your margins, invoicing amounts, and latest service dates and invoice dates.
+	Some of these modules add helpful management statistics to the analytic account. 
+	The most useful is probably the module ``account_analytic_analysis``, 
+	which adds such information as indicators about your margins, invoicing amounts, and latest service dates and invoice dates.
 
 Creating Journals
 -------------------
@@ -91,9 +94,11 @@ Once the analytic chart has been created for your company you have to create the
 .. index::
    single: Journal; Minimal journals
 
-.. tip::   **Attention**  *Minimal journals* 
+.. note::  Minimal journals
 
-	At a minimum you have to create one analytic journal for Sales and one for Purchases. If you don't create these two, Open ERP won't validate invoices linked to an analytic account because it wouldn't be able to create an analytic accounting entry automatically.
+	At a minimum you have to create one analytic journal for Sales and one for Purchases. 
+	If you don't create these two, Open ERP won't validate invoices linked to an analytic account 
+	because it wouldn't be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
    :align: center

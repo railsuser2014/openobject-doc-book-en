@@ -8,10 +8,12 @@ As you've seen, it's possible to connect any directory in the document managemen
 
 You can then copy the files in the directories that correspond to any of the resources. The files are automatically attached to Open ERP's documents through attachment management. Conversely, if you attach a document to one of Open ERP's resource then that document will automatically become visible over FTP in the document management system.
 
-.. tip::   **Technique**  *File storage* 
+.. note::  File storage
 
-    If you don't install the document management system then the files that are attached to an Open ERP resource are stored directly in the database. Once the document management system has been installed, the contents of the files are no longer stored in the database but are stored instead on the Open ERP server filesystem in a directory named 'filestore'.
+   If you don't install the document management system then the files that are attached to an Open ERP resource are stored directly in the database. 
+   Once the document management system has been installed, 
+   the contents of the files are no longer stored in the database but are stored instead on the Open ERP server filesystem in a directory named 'filestore'.
 
-    You can then read and add attachments to Open ERP resources quite independently of the Open ERP interface or the FTP server using simple drag and drop.
+   You can then read and add attachments to Open ERP resources quite independently of the Open ERP interface or the FTP server using simple drag and drop.
 
 

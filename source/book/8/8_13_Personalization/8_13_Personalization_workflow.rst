@@ -19,7 +19,7 @@ Defining workflows
 
 Workflows can be created and modified in Open ERP's user interface.
 
-You can look at the specifications of the workflow for the sales order above using the menu Administration * > Configuration > Low level > Base > Workflow* . It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field  *Activities* , and all of the arrows are listed in the field  *Transitions* .
+You can look at the specifications of the workflow for the sales order above using the menu *Administration > Configuration > Low level > Base > Workflow* . It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field  *Activities* , and all of the arrows are listed in the field  *Transitions* .
 
 .. figure::  images/sales_workflow_spec.png
    :align: center
@@ -28,9 +28,10 @@ You can look at the specifications of the workflow for the sales order above usi
 
 You can also configure the workflows by adding new activities and transitions between activities or by modifying the conditions that control the existing transitions. 
 
-.. tip::   **Technique**  *Defining workflows* 
+.. note:: Defining workflows 
 
-	Workflows are defined in files named MODULE_workflow.xml which can be found in the addons directory on the server. The definition just consists of a list of activities (nodes) and transitions (arrows).
+	Workflows are defined in files named MODULE_workflow.xml which can be found in the addons directory on the server. 
+	The definition just consists of a list of activities (nodes) and transitions (arrows).
 
 .. index::
    single: Workflows; Roles

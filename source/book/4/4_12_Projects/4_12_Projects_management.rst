@@ -9,11 +9,15 @@ In this chapter you can use operational project management to organize tasks and
 .. index::
    single: Project
 
-.. tip::   **Terminology**  *Project* 
+.. note:: Project
 
-	In Open ERP a project is represented by a set of tasks for completion. Projects have a tree structure that can be divided into phases and sub-phases. This structure is very useful for work organization
+	In Open ERP a project is represented by a set of tasks for completion. 
+	Projects have a tree structure that can be divided into phases and sub-phases. 
+	This structure is very useful for work organization
 
-	Whereas analytic accounts look at the past activities of the company, project management's role is to plan the future. Even when there's a close link between the two (such as where a project has been planned and then completed through Open ERP) they are still two different concepts, each making its own contribution to a flexible workflow.
+	Whereas analytic accounts look at the past activities of the company, project management's role is to plan the future. 
+	Even when there's a close link between the two (such as where a project has been planned and then completed through Open ERP) 
+	they are still two different concepts, each making its own contribution to a flexible workflow.
 
 Most client projects are represented by:
 
@@ -44,9 +48,10 @@ The status of a project can take the following values:
 
 If you check the box  *Warn customer* , you should define a page header and footer in that same tab for use in an email. Open ERP then prepares an email that the user can send to the client each time that a task is completed. The contents of this email are based on details of the project task, and can be modified by the user before the email is sent. 
 
-.. tip::   **Note**  *Study of client satisfaction* 
+.. note:: Study of client satisfaction
 
-	Some companies run a system where emails are automatically sent at the end of a task requesting the client to complete an online survey. This survey enables them to ask different questions about the work carried out, to gauge client satisfaction as the project progresses.
+	Some companies run a system where emails are automatically sent at the end of a task requesting the client to complete an online survey. 
+	This survey enables them to ask different questions about the work carried out, to gauge client satisfaction as the project progresses.
 
 	This function can be used by companies certified to ISO 9001, to rate client satisfaction.
 
@@ -80,17 +85,19 @@ A task can be assigned to a user, who then becomes responsible for closing it. B
 
 Each user then manages his or her own task using the different available menus. To open the list of unclosed tasks that you have been assigned specifically use the menu  *Project Management > My Tasks > My Open Tasks* . Or to open the unassigned tasks, go to  *Project Management > All Tasks > Unassigned Tasks*  and then select \ ``Draft``\   and \ ``Open``\   tasks from that list.
 
-.. tip::   **Advice**  *Shortcuts* 
+.. tip:: Shortcuts
 
-	Every user should create a link in their own shortcuts to the My Open Tasks menu because they'll have to consult this menu several times a day.
+	Every user should create a link in their own shortcuts to the *My Open Tasks* menu because they'll have to consult this menu several times a day.
 
  *Task Work*  *Effective hours* 
 
-.. tip::   **Note**  *Tasks and timesheet* 
+.. note:: Tasks and timesheet
 
-	The module ``hr_timesheet_project`` gives you a way of creating the day's timesheet automatically from the effective work done for each of the different tasks. This way you don't have to encode service times twice – once for the project task and once for the timesheet.
+	The module ``hr_timesheet_project`` gives you a way of creating the day's timesheet automatically from 
+	the effective work done for each of the different tasks. 
+	This way you don't have to encode service times twice – once for the project task and once for the timesheet.
 
-	When you want to complete your timesheet, use the menu Human Resources > Timesheets > My Timesheets > Import projects.
+	When you want to complete your timesheet, use the menu *Human Resources > Timesheets > My Timesheets > Import projects*.
 
 Assigning roles: account manager and project manager
 -----------------------------------------------------
@@ -148,14 +155,14 @@ Use the  *Sequence*  field on the second tab,  *Other Information* , to plan a p
 
 You can use one of these three ordering methods, or combine several of them, depending on the project.
 
-.. tip::   **A step further**  *Agile methods* 
+.. note:: Agile methods 
 
 	Open ERP implements the agile methodology Scrum for IT development projects in the ``scrum`` module.
 
-	Scrum completes the task system by adding the following concepts: long-term planning, sprints, iterative development, progress meetings, burndown chart, and product backlog.
+	Scrum completes the task system by adding the following concepts: 
+	long-term planning, sprints, iterative development, progress meetings, burndown chart, and product backlog.
 
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
-
 
 .. figure::  images/service_project_gantt.png
    :align: center
@@ -164,9 +171,15 @@ You can use one of these three ordering methods, or combine several of them, dep
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a grid is specified you can call up a project Gantt chart using the Print button. The system then calculates a project plan for earliest delivery using task ordering and the attendance grid.
 
-.. tip::   **Point**  *Calendar view* 
 
-	Open ERP's web client can give you a calendar view of the different tasks. This is all based on the deadline data and displays only tasks that have a deadline. You can then delete, create or modify tasks using simple drag and drop.
+
+.. tip:: Calendar view
+
+	Open ERP's web client can give you a calendar view of the different tasks. 
+	This is all based on the deadline data and displays only tasks that have a deadline. 
+	You can then delete, create or modify tasks using simple drag and drop.
+	
+	.. TODO - is this true any more?
 
 	This view isn't available in Open ERP's GTK client.
 

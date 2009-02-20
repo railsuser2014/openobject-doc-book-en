@@ -30,12 +30,13 @@ Before walking through an Open ERP business process step by step in the next ch
 To create new databases you must know the super-administrator password which defaults to admin on a new installation.
 
 
-        .. note :: The super-administrator password
+.. note :: The super-administrator password
 
-			Anyone who knows the super-administrator password has complete access to the data on the server – able to read, change and delete any of the data in any of the databases there.
+   Anyone who knows the super-administrator password has complete access to the data on the server – able to read, change and delete any of the data in any of the databases there.
 
-			After first installation, the password is admin. You can change it through the GTK client from the menu File > Database ... > Administrator Password, or through the web client by logging out (click the Logout link), clicking Manage on the login screen, and then clicking the Password button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
+   .. TODO this isn't right any more
 
+   After first installation, the password is admin. You can change it through the GTK client from the menu *File > Database ... > Administrator Password*, or through the web client by logging out (click the Logout link), clicking *Manage* on the login screen, and then clicking the *Password* button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
    :align: center
@@ -58,7 +59,7 @@ To create the \ ``openerp_ch01``\   database, enter the database name \ ``opener
 
 Wait for the message showing that the database has been successfully created, along with the user accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed database you can extend it without knowing the super administrator password.
 
-.. tip::   **Technique**  *User Access* 
+.. tip::   User Access
 
 	The combination of username/password is specific to a single database. If you have administrative rights to a database you can modify the predefined users. 
 
@@ -67,9 +68,14 @@ Wait for the message showing that the database has been successfully created, al
 .. figure:: images/create_new_db_web.png
    :align: center
 
-.. tip::  **Note** *Failure to create a database*
+.. note::  Failure to create a database
 
-	How do you know if you've successfully created your new database? You're told if the database creation has been unsuccessful. If you have entered a database name using prohibited characters (or no name, or too short a name) you will be alerted by the dialog box Bad database name! explaining how to correct the error. If you've entered the wrong super-administrator password or a name already in use (some names can be taken without your knowledge), you'll be alerted by the dialog box Error during database creation!
+	How do you know if you've successfully created your new database? 
+	You're told if the database creation has been unsuccessful. 
+	If you have entered a database name using prohibited characters (or no name, or too short a name) 
+	you will be alerted by the dialog box Bad database name! explaining how to correct the error. 
+	If you've entered the wrong super-administrator password or a name already in use 
+	(some names can be reserved without your knowledge), you'll be alerted by the dialog box **Error during database creation!**.
 
 Connect to the database \ ``openerp_ch01``\   that you just created, using the default administrator account. 
 
@@ -113,7 +119,7 @@ All of these operations can be carried out from the menu  *File > Databases... >
    single: Database; Duplicate
 .. 
 
-.. tip::   **Note**  *Duplicating a database.* 
+.. tip::   Duplicating a database 
 
 	To duplicate a database you can:
 
@@ -156,7 +162,7 @@ To add new modules through the client you must first change the permissions of t
 .. index::
    single:  Permissions
 
-.. tip::   **Note**  *Changing permissions* 
+.. tip:: Changing permissions
 
 	A very simple way of changing permissions on the Linux system you're using to develop an Open ERP application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-server/addons). 
 

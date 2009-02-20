@@ -58,11 +58,12 @@ The rule is the following: if the virtual stock for the given is lower than the 
 
    *List of minimum stock rules.*
 
-.. tip::   **Point**  *Conflict resolution*
+.. tip:: Conflict resolution
 
-You may find that draft production or procurement orders don't happen correctly. That can happen if the system is badly configured (for example if you've forgotten to set the supplier on a product).
+   You may find that draft production or procurement orders don't happen correctly. 
+   That can happen if the system is badly configured (for example if you've forgotten to set the supplier on a product).
 
-To check this, look at the list of procurements in the exception state in the menu *Stock Management > Automatic Procurements > Procurement Exceptions*. More detail on handling these exceptions is given in the chapter on Manufacturing.
+   To check this, look at the list of procurements in the exception state in the menu *Stock Management > Automatic Procurements > Procurement Exceptions*. More detail on handling these exceptions is given in the chapter on Manufacturing.
 
 It's important to underline that the rule is based on virtual quantities and not just on real quantities. It then takes account of the calculation of orders and receipts to come.
 
