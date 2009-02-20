@@ -48,9 +48,9 @@ An Open ERP system is formed by three main components:
 * the web server, a separate application called eTiny, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
 
 
-.. image:: images/terp_arch_1.png
-    :align: center
-    :scale: 95
+.. figure:: images/terp_arch_1.png
+   :align: center
+   :scale: 95
 
 .. tip::   **Terminology**  *eTiny – server or client?* 
 

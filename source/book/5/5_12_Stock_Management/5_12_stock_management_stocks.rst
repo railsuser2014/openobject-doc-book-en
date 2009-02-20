@@ -24,10 +24,10 @@ The two fields are:
 
     To get more detail about future stock, you can use the report to the right of the product form 'Forecast of Future Stock'. Open ERP shows a graph of the change of stock in the days to come, varying as a function of purchase orders or confirmed production.
 
-.. image:: images/stock_forecast.png
-    :align: center
+.. figure:: images/stock_forecast.png
+   :align: center
 
-*Printout of provisional stock.*
+   *Printout of provisional stock.*
 
 Lead times and locations
 -------------------------
@@ -64,10 +64,10 @@ Initial Inventory
 
 Once a product has been defined, use an initial inventory operation to put actual current quantities into the system by location for the products in stock. Use the menu *Stock Management > Periodical Inventory > New Periodical Inventory* for this.
 
-.. image:: images/stock_inventory_new.png
-    :align: center
+.. figure:: images/stock_inventory_new.png
+   :align: center
 
-*Defining a new inventory operation.*
+   *Defining a new inventory operation.*
 
 Give a name (for example 'Initial Inventory' or 'Lost Product XYZ') and a date for each inventory operation. You can then enter data about the quantities available for each product by location. Start by showing the location, for example 'Stock', and then select the product. Open ERP automatically completes the actual quantity actually available for that product in the location shown. You can then change that value to correct the value in stock.
 
@@ -98,10 +98,10 @@ Reception of a supplier order
 
 Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
 
-.. image:: images/stock_picking_in_tree.png
-    :align: center
+.. figure:: images/stock_picking_in_tree.png
+   :align: center
 
-*List of items waiting.*
+   *List of items waiting.*
 
 You can also do goods in data entry manually if there's no order, using the menu *Stock Management > Incoming Goods > Items to be Processed* followed by a click on *New*.
 
@@ -111,10 +111,10 @@ The source location is already completed by default because of your supplier sel
 
 Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button *Process Later* .
 
-.. image:: images/stock_picking_in_form.png
-    :align: center
+.. figure:: images/stock_picking_in_form.png
+   :align: center
 
-*Form for coding in reception of goods from a supplier order.*
+   *Form for coding in reception of goods from a supplier order.*
 
 The products then arrive in stock and reflect the quantities shown on the product form.
 
@@ -141,10 +141,10 @@ Now create a new customer order from the menu *Sales Management > Sales Orders >
 
 You've seen already that Open ERP shows you the available product stock when you've selected list mode. The real stock is equal to the virtual stock because you've nothing to deliver to customers and you're not waiting for any of these products to be received into stock. The salesperson then has all the information needed to take orders efficiently.
 
-.. image:: images/stock_sale_form.png
-       :align: center
+.. figure:: images/stock_sale_form.png
+   :align: center
 
-*Encoding an order for three computers.*
+   *Encoding an order for three computers.*
 
 Then confirm the quotation to convert it to an order. If you return to the product form you'll see the virtual stock is now smaller than the real stock. That happens because three products have been reserved by the order that you created, so they can't be sold to another customer.
 
@@ -156,10 +156,10 @@ Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. I
 
 You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 
-.. image:: images/stock_picking_out_form.png
-    :align: center
+.. figure:: images/stock_picking_out_form.png
+   :align: center
 
-*Items for a customer order.*
+   *Items for a customer order.*
 
 .. tip::   **More information**  *States*
 
@@ -171,8 +171,8 @@ You can confirm a customer delivery using the 'Confirm' button. A window then op
 
 If you return to the list of current orders you will see that your order has now been marked as delivered (done). A progress indicator from 0% to 100% is shown by each order so that the salesperson can follow the progress of their orders at a glance.
 
-.. image:: images/stock_sale_tree.png
-    :align: center
+.. figure:: images/stock_sale_tree.png
+   :align: center
 
 *List of orders with their delivery state.*
 
@@ -201,10 +201,10 @@ If you want more information you can use the actions to the right of the form. I
 
 To get the stock levels by location use the button *Stock by Location*.  Open ERP then gives you the stock of this product split out over all the possible locations. If you only want to see the physical locations in your company just filter this list using the Location Type *Internal Locations*. By default, physical locatiosn are already coloured red to distinguish them better. Consolidate locations (the sum of several locations, following the hierarchical structure) are coloured blue.
 
-.. image:: images/stock_location_product_tree.png
-    :align: center
+.. figure:: images/stock_location_product_tree.png
+   :align: center
 
-*Stock quantities by location for a given product.*
+   *Stock quantities by location for a given product.*
 
 You can get more detail about all the stock moves from the product form. You'll then see each move from a source location to a destination location. Everything that influences stock levels corresponds to a stock move.
 

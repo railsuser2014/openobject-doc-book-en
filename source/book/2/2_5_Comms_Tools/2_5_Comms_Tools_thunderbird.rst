@@ -47,22 +47,20 @@ When you've installed the module the first thing to do is connect it to Open ER
 
 A configuration window appears enabling you to enter configuration data about your Open ERP server.
 
+.. figure::  images/thunderbird_config.png
+   :align: center
 
-.. image::  images/thunderbird_config.png
-	:align: center
-
-*Configuration for accessing Open ERP from Thunderbird.*
+   *Configuration for accessing Open ERP from Thunderbird.*
 
 
 To archive an email in Open ERP from Thunderbird select the email and click on the icon  *Archive in Tiny* . Alternatively you could right-click the mouse: either opens a search dialog box.
 
 This allows you to select an object that you'd like to add to your email and its attachments. You can select a partner, a task, a project, an analytical account, or any other object.
 
+.. figure::  images/thunderbird_selection.png
+   :align: center
 
-.. image::  images/thunderbird_selection.png
-	:align: center
-
-*Selecting Open ERP objects from Thunderbird.*
+   *Selecting Open ERP objects from Thunderbird.*
 
 
 .. tip::   **A step further**  *Document Management* 
@@ -78,11 +76,10 @@ This allows you to select an object that you'd like to add to your email and its
 If you can't find a partner or contact to correspond with your email in Open ERP it's possible to create one on the fly simply by using the information contained in the email and clicking the  *Create*  button.
 
 
-.. image::  images/thunderbird_creation.png
-	:align: center
+.. figure::  images/thunderbird_creation.png
+   :align: center
 
-*Creating a contact on the fly from Thunderbird.*
-
+   *Creating a contact on the fly from Thunderbird.*
 
 To access archived data from different documents in Open ERP you can use the  *Email Thunderbird*  interface that appears over Open ERP documents.
 

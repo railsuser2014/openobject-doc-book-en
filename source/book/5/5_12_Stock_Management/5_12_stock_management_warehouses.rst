@@ -15,10 +15,10 @@ A warehouse is defined by a link between three locations:
 
 * The outgoing location (called Output in the demonstration database) is designed as a buffer zone in which you store all the items that have been picked but not yet delivered to a customer. You're strongly advised not to put this location within the stock hierarchy but instead at a level higher or the same. 
 
-    .. image:: images/stock_warehouse.png
+    .. figure:: images/stock_warehouse.png
        :align: center
 
-*Warehouse parameters.*
+    *Warehouse parameters.*
 
 You can also set an address for the warehouse. This address should ideally be an address for your company. Once the warehouse has been defined it can be used in:
 
@@ -53,10 +53,10 @@ To automatically make stock replenishment proposals, you can use minimum stock r
 
 The rule is the following: if the virtual stock for the given is lower than the minimum stock indicated in the rule, the system will automatically propose a replenishment to increase the level of virtual stock to the maximum level given in the rule.
 
-    .. image:: images/stock_min_rule.png
-       :align: center
+.. figure:: images/stock_min_rule.png
+   :align: center
 
-*List of minimum stock rules.*
+   *List of minimum stock rules.*
 
 .. tip::   **Point**  *Conflict resolution*
 

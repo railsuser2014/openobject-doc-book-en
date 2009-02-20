@@ -36,17 +36,17 @@ Using the journals
 
 You'll now see how to use the journals to organize your stock management in practice. After installing the module ``sale_journal`` look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
 
-.. image:: images/partner_property_view.png
-    :align: center
+.. figure:: images/partner_property_view.png
+   :align: center
 
-*Partner form in invoicing mode.*
+   *Partner form in invoicing mode.*
 
 You can create a new *Invoicing Journal* on a partner on the fly. You can show if the invoices should be grouped or not after the generation in the journal. Create a second invoicing journal 'End-of-Month Invoicing' which you can assign to another partner.
 
-.. image:: images/invoice_mode.png
-    :align: center
+.. figure:: images/invoice_mode.png
+   :align: center
 
-*Defining an invoicing journal.*
+   *Defining an invoicing journal.*
 
 Then enter the data for some orders for these two partners. After entering this order data, the field *Invoicing Mode* is completed automatically from the partner settings. Put these orders into the Invoicing Mode based on items in the second tab. 
 
@@ -62,10 +62,10 @@ At the end of the month the invoicing management does the same work but in the j
 
 You can also enter a journal to confirm / cancel all the orders in one go. Then you can do several quotations and assign them in a journal and confirm or cancel them en masse at once.
 
-.. image:: images/stock_jounral_form.png
-    :align: center
+.. figure:: images/stock_jounral_form.png
+   :align: center
 
-*View of an order journal.*
+   *View of an order journal.*
 
 
 .. Copyright © Open Object Press. All rights reserved.

@@ -14,10 +14,10 @@ Stock Moves
 
 To look at the history of transactions about a product or a given location, use the menu: Stock Management > Traceability > Low Level > Stock Moves. All the operations are then available. You can filter on the various field to retrieve the operations about an order, or a production, or a source location, or any given destination.
 
-.. image:: images/stock_move_tree.png
-    :align: center
+.. figure:: images/stock_move_tree.png
+   :align: center
 
-*History of stock movements.*
+   *History of stock movements.*
 
 Each stock move is in a given state. The different possible states are:
 
@@ -46,10 +46,10 @@ Open ERP is also capable of managing product lots. Two lot types can be distingu
 
 These lots can be encoded on all stock moves and, more precisely, on goods-in lines, internal moves and product deliveries.
 
-.. image:: images/picking_form_line.png
-    :align: center
+.. figure:: images/picking_form_line.png
+   :align: center
 
-*Encoding of a line for production reception.*
+   *Encoding of a line for production reception.*
 
 To enter the lot number in an operation you can use an existing lot number or create a new lot. A manufacturing lot (batch number) must always be used for a single product. A tracking number can be used several times for different products so you can mix different products on a pallet or in a box.
 
@@ -61,10 +61,10 @@ On the product form it is also possible to indicate the operations in which a lo
 
 To assign a unique lot number to a set of several items you don't have to encode the lot number one by one. You only need to take a stock move for several products line and click the button *Split move lines in two*. You can then give a lot number prefix and Open ERP will complete the prefix in the wizard with a continuing sequence number.
 
-.. image:: images/picking_split_lot.png
-    :align: center
+.. figure:: images/picking_split_lot.png
+   :align: center
 
-*Splitting a lot into uniquely identified parts.*
+   *Splitting a lot into uniquely identified parts.*
 
 .. index:: Traceability (Stock)
 
@@ -97,15 +97,15 @@ Search for the expected lot using the filters for the lot number, the date or th
 
 * Stock spread amongst all the physical and virtual locations.
 
-.. image:: images/stock_traceability_upstream.png
-    :align: center
+.. figure:: images/stock_traceability_upstream.png
+   :align: center
 
-*Tracing upstream in 'From Order'.*
+   *Tracing upstream in 'From Order'.*
 
-.. image:: images/stock_traceability_downstream.png
-    :align: center
+.. figure:: images/stock_traceability_downstream.png
+   :align: center
 
-*Tracing downstream in 'From Stock'.*
+   *Tracing downstream in 'From Stock'.*
 
 Finally, on a lot, you can enter data on all the operations that have been done on the product. That forms a useful history of the presales operations.
 

@@ -29,10 +29,10 @@ Method of restocking Purchase
 
 Use the menu *Products > Products*, then click *New* to define a new product. 
 
-    .. image:: images/stock_product.png
-       :align: center
+.. figure:: images/stock_product.png
+   :align: center
 
-*Definition of a new product.*
+   *Definition of a new product.*
 
 Three fields are important for stock management when you're configuring a new product:
 
@@ -66,15 +66,15 @@ You find a mix of these two modes used for the different final and intermediate 
 
 The figures below show the change of stock levels for a product managed Make to Order and one managed Make to Stock. The two figures are taken from Open ERP's *Future Stock Moves* report, available from the product form.
 
-    .. image:: images/stock_from_stock.png
-       :align: center
+.. figure:: images/stock_from_stock.png
+   :align: center
 
-*Change in stock for a product managed as Make to Stock.*
+   *Change in stock for a product managed as Make to Stock.*
 
-    .. image:: images/stock_from_order.png
-       :align: center
+.. figure:: images/stock_from_order.png
+   :align: center
 
-*Change in stock for a product managed as Make to Order.*
+   *Change in stock for a product managed as Make to Order.*
 
 .. tip::  *Information** *Logistical Methods*
 
@@ -97,10 +97,10 @@ Open ERP manages both stockable products and services. A service bought from a s
 
 The following illustrates the different cases for automatic restocking.
 
-    .. image:: images/stock_flow.png
-       :align: center
+.. figure:: images/stock_flow.png
+   :align: center
 
-*Workflow for automatic restocking, depending on the configuration of the product.*
+   *Workflow for automatic restocking, depending on the configuration of the product.*
 
 The table below shows all possible cases for the figure.
 

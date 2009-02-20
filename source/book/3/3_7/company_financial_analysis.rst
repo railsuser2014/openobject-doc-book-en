@@ -51,10 +51,10 @@ To do a temporal analysis of your indicators, you must install the module \ ``ac
 Once this module is installed, you can click on a financial indicator to get a graph of its evolution in time.
 
 
-.. image::  images/account_report_history.png
-	:align: center
+.. figure::  images/account_report_history.png
+   :align: center
 
-*History of an accounting indicator.*
+   *History of an accounting indicator.*
 
 Defining your own indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,10 +62,10 @@ Defining your own indicators
 You can define your own indicators in Open ERP using the menu  *Financial Management > Configuration > Custom Reporting > New Reporting Item Formula* .
 
 
-.. image::  images/account_indicator_new.png
-	:align: center
+.. figure::  images/account_indicator_new.png
+   :align: center
 
-*Defining a new indicator.*
+   *Defining a new indicator.*
 
 You should make sure that the accounts that you base indicators on are given unique account codes, because codes are used in the creation of formulae. Create a formula using the syntax indicated in the instructions at the bottom of the form:
 
@@ -117,20 +117,20 @@ To do this, click  *Add*  and make multiple selections for the different account
 
 	You can select several elements (accounts, partners, etc) at the same time from a list. In the web client, click the checkbox alongside their name in the list view. In the GTK client, click on each element with the mouse, while holding the Ctrl button down.
 
-.. image::  images/account_budget.png
-	:align: center
+.. figure::  images/account_budget.png
+   :align: center
 
-*Printing a budget.*
+   *Printing a budget.*
 
 To print a budget and make calculations of expenditure to budget use the menu  *Financial Management > Reporting > Print Budgets* . Open ERP then gives you a list of available budgets. Select one or more budgets and then click  *Print*  to configure the report. The following figure gives an example of a budget produced by Open ERP.
 
 The Accounting Dashboard
 ------------------------
 
-.. image::  images/account_board.png
-	:align: center
+.. figure::  images/account_board.png
+   :align: center
 
-*Accounting Dashboard*
+   *Accounting Dashboard*
 
 If you've installed the module \ ``board_account``\  , Open ERP gives you an accounting dashboard that can be presented to your accounting staff as they sign into the system (if you have set it as their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
 

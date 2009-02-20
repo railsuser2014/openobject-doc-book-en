@@ -102,10 +102,10 @@ The procedure is to create the name of the new menu in  *Menu base name* , selec
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a menu structure like the following figure (here for the Business Opportunities menu).
 
 
-.. image::  images/business_ops.png
-   	:align: center
+.. figure::  images/business_ops.png
+   :align: center
 
-*Business Opportunities menu automatically generated.*
+   *Business Opportunities menu automatically generated.*
 
 
 .. tip::   **A step further**  *Case sections* 
@@ -140,10 +140,10 @@ Although you've created special menu trees for each of the types of case you def
 	You can also track items across the whole company.
 
 
-.. image::  images/crm_case.png
-   	:align: center
+.. figure::  images/crm_case.png
+   :align: center
 
-*An entry following a business opportunity.*
+   *An entry following a business opportunity.*
 
 
 To enter a new business opportunity, you can use the menu that you've just created:  *Sales Management > Business Opportunities* . Or you could have used the generic menus  *CRM & SRM > Cases > Cases by section* , or  *CRM & SRM > Cases > All cases* .
@@ -208,21 +208,21 @@ So if you want to implement a shared calendar for your calendar in Open ERP all
 You'll get menus enabling you to manage calendars for each employee, and you'll also get a shared calendar for the company. This calendar view is totally dynamic. You can move an event or change its duration just using your mouse.
 
 
-.. image::  images/crm_calendar1.png
+.. figure::  images/crm_calendar1.png
    :align: center
    :scale: 90
 
-*Monthly view of the meeting calendar for cases.*
+   *Monthly view of the meeting calendar for cases.*
 
 
 You can change the view and return to the list view, forms or graphs by using the buttons at the top right. Open ERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time. 
 
 
-.. image::  images/crm_calendar2.png
+.. figure::  images/crm_calendar2.png
    :align: center
    :scale: 90
 	   
-*Weekly view of the meeting calendar for cases.*
+   *Weekly view of the meeting calendar for cases.*
 
 
 .. tip::   **Advantage**  *The generic calendar* 
@@ -245,10 +245,10 @@ Open ERP has a module that helps handle this – \ ``report_crm``\  . It's not 
 Once you've installed it you can use menu  *CRM & SRM > Reporting*  on database \ ``openerp_04X``\   (which has plenty of data already in it) to create different reports. 
 
 
-.. image::  images/crm_graph.png
+.. figure::  images/crm_graph.png
    :align: center
 
-*Analyzing the performance of your support team.*
+   *Analyzing the performance of your support team.*
 
 
 If you want to analyze the performance of your service and support group, for example, use the graph from  *CRM & SRM > Reporting > All Months > Cases by User and Section* . Click the menu to obtain a list view, then click the  *Graph*  button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click  *Filter* , and see the graph change to reflect the new data.
@@ -301,14 +301,13 @@ Using these rules you could:
 To define new rules use the menu  *CRM & SRM > Configuration > Cases > Rules* .
 
 
-.. image::  images/crm_rule.png
+.. figure::  images/crm_rule.png
    :align: center
+
+   *Screenshot of a rule.*
 
 .. index:: 
    single: Rule; Case
-
-*Screenshot of a rule.*
-
 
 The criteria for activating this rule are defined on the main part of the screen. These criteria are:
 
@@ -437,10 +436,10 @@ To automate the creation of current cases you can install the email gateway.
 The email gateway enables you to use Open ERP's CRM without necessarily using the Open ERP interface. Users can create up-to-date cases just by sending and receiving emails. This system works with the major current email clients such as Microsoft Outlook and Outlook Express, Thunderbird and Evolution.
 
 
-.. image::  images/crm_gateway.png
+.. figure::  images/crm_gateway.png
    :align: center
 
-*Schematic showing the use of the email gateway.*
+   *Schematic showing the use of the email gateway.*
 
 
 Installation and Configuration

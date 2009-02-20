@@ -32,10 +32,10 @@ To do this, two solutions are possible in Open ERP:
 Start by building the header of the CSV file. Open the import tool on the object that you're interested in and select the fields that you want to import into your Open ERP database. You must include every field that's colored in blue because those fields are required, and any other field that's important to you.
 
 
-.. image::  images/csv_column_select.png
-    :align: center
+.. figure::  images/csv_column_select.png
+   :align: center
 
-*Selecting fields to import using a CSV file.*
+   *Selecting fields to import using a CSV file.*
 
 Use the field names as the column names in the first line of your CSV file, applying one field per column. If your CSV file has these names in the first line then when you import your CSV file, Open ERP will automatically match the column name to the field name of the table. When you've created your CSV file you'll do that by clicking the  *Nothing*  button to clear the  *Fields to Import* , then select your CSV file by browsing for a  *File to import* , and then clicking the  *Auto Detect*  button.
 
@@ -49,25 +49,25 @@ To import CSV data that matches your database structure, you need to distinguish
 
 	So there is no one-to-many field in the User form to reflect the many-to-one Salesman field in the Partner form, but there is a many-to-one Partner field in the Partner contact form to reflect the one-to-many Partner contact field in the Partner form.
 
-View the screenshots below to note the differences.
+Have a look at the screenshots below to see the differences.
 
 
-.. image::  images/csv_many2one.png
-    :align: center
+.. figure::  images/csv_many2one.png
+   :align: center
 
-*A many-to-one field: a salesperson linked to a partner.*
-
-
-.. image::  images/csv_many2many.png
-    :align: center
-
-*A many-to-many field: partner categories.*
+   *A many-to-one field: a salesperson linked to a partner.*
 
 
-.. image::  images/csv_one2many.png
-    :align: center
+.. figure::  images/csv_many2many.png
+   :align: center
 
-*A one-to-many field: partner contacts.*
+   *A many-to-many field: partner categories.*
+
+
+.. figure::  images/csv_one2many.png
+   :align: center
+
+   *A one-to-many field: partner contacts.*
 
 All of the other fields are coded in the CSV file as just one field in each column.
 

@@ -37,17 +37,15 @@ To create new databases you must know the super-administrator password which def
 			After first installation, the password is admin. You can change it through the GTK client from the menu File > Database ... > Administrator Password, or through the web client by logging out (click the Logout link), clicking Manage on the login screen, and then clicking the Password button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
 
 
-.. image:: images/change_superadmin_pwd.png
-	:align: center
+.. figure:: images/change_superadmin_pwd.png
+   :align: center
                 
-*Changing the super-administrator password through the web client.*
-
---------------------------                
+   *Changing the super-administrator password through the web client.*
                 
-.. image:: images/create_new_db_GTK.png
-    :align: center
+.. figure:: images/create_new_db_GTK.png
+   :align: center
 	
-*Creating a new database through the GTK client.*      
+   *Creating a new database through the GTK client.*      
 
 * If you're using the GTK client, choose  *Files > Database > New database*  in the menu at the top left. Enter the super-administrator password, then the name of the new database you're creating.
 
@@ -66,8 +64,8 @@ Wait for the message showing that the database has been successfully created, al
 
 	Alternatively you can install the ``users_ldap`` module, which manages the authentication of users in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several Open ERP databases. Using this, many databases can share the same user account details.
 
-.. image:: images/create_new_db_web.png
-	:align: center
+.. figure:: images/create_new_db_web.png
+   :align: center
 
 .. tip::  **Note** *Failure to create a database*
 
@@ -88,11 +86,11 @@ If this is the first time you've connected to this database you'll be asked a se
 Once configuration is complete you're connected to your Open ERP system. Its functionality is very limited because you've selected a minimal installation, but this is sufficient to demonstrate that your installation is working.
 
 
-.. image:: images/define_main_co_dlg.png
-	:align: center
-	:scale: 95
+.. figure:: images/define_main_co_dlg.png
+   :align: center
+   :scale: 95
 	    
-*Defining your company during initial database configuration.*
+   *Defining your company during initial database configuration.*
 	
 .. index::
    single: Database; Manage

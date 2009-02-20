@@ -54,10 +54,10 @@ You'll now install a module named \ ``product``\  , which will enable you to man
 Open the list of uninstalled modules from  *Administration > Modules Management > Uninstalled Modules* . Search for the module by entering the name \ ``product``\   in the search screen then clicking it in the list that appears below it to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
 
 
-.. image:: images/install_product_module.png
-   	:align: center
+.. figure:: images/install_product_module.png
+   :align: center
 
-*Installation of the ``product`` module.*
+   *Installation of the ``product`` module.*
       
 
 .. tip::   **Technique**  *Technical Guide* 

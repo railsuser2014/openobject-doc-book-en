@@ -10,15 +10,15 @@ Each directory can have the type Static or be linked to another resource. A stat
 
 For example you can look at the directory shown in *Main Repository > Sales Orders > All Sales Orders*. You'll see the directory for all the orders present in Open ERP that was created automatically by the system.
 
-.. image::  images/document_sale.png
+.. figure::  images/document_sale.png
+   :align: center
+
+   *Orders in Open ERP.*
+
+.. figure::  images/document_ftp_sale.png
     :align: center
 
-*Orders in Open ERP.*
-
-.. image::  images/document_ftp_sale.png
-    :align: center
-
-*Directories representing all the orders in the document management system.*
+   *Directories representing all the orders in the document management system.*
 
 Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the directory *Main Repository > Projects* you'll see the structure of the analytic accounts.
 
@@ -32,10 +32,10 @@ To define a directory containing a specific type of resource you have to define 
 
 * **Tree structure** : to show the resources hierarchically
 
-.. image::  images/document_dir_form.png
-    :align: center
+.. figure::  images/document_dir_form.png
+   :align: center
 
-*Configuration of the directory containing quotations (draft orders).*
+   *Configuration of the directory containing quotations (draft orders).*
 
 This is a very flexible approach because any modification of the resource in Open ERP is automatically reflected in the document management system. So when the quotation gets confirmed in Open ERP the directory no longer appears as a quotation through FTP access.
 

@@ -18,10 +18,10 @@ Analytic records can be distinguished from general records by the following char
 
 * they don't generate both a debit and a credit entry, but a positive amount (income) or a negative amount (cost).
 
-.. image::  images/account_analytic_move.png
-	:align: center
+.. figure::  images/account_analytic_move.png
+   :align: center
 
-*Analytic account records for a customer project.*
+   *Analytic account records for a customer project.*
 
 The figure represents the entries on an analytic account for a customer project.
 

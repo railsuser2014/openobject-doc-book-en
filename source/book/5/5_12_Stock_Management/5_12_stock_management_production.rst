@@ -27,17 +27,17 @@ If your products take several days to assemble it's preferable to have a weekly 
 
 To do this use the menu *Sales Management > Configuration > Create Sales Periods*. A window appears enabling you to automatically define the next periods that will be provided for stock management.
 
-.. image:: images/sale_period.png
-    :align: center
+.. figure:: images/sale_period.png
+   :align: center
 
-*Defining periods for stock management.*
+   *Defining periods for stock management.*
 
 Salespeople can then enter their sales forecasts by product and by period using the menu *Sales Management > Sales Forecasts > My Sales Forecasts*. The forecasts can be made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amount. This can be modified manually as needed before completion.
 
-.. image:: images/stock_sale_forecast.png
-    :align: center
+.. figure:: images/stock_sale_forecast.png
+   :align: center
 
-*Sales Forecast to help create a master production plan.*
+   *Sales Forecast to help create a master production plan.*
 
 .. index::
    single: Plan; Production
@@ -65,10 +65,10 @@ For each period and product Open ERP gives you the following information:
 
 * sales forecasts, which represent the sum of forecasts made by the salespeople.
 
-.. image:: images/stock_forecast.png
-    :align: center
+.. figure:: images/stock_forecast.png
+   :align: center
 
-*The master production schedule (MPS).*
+   *The master production schedule (MPS).*
 
 The production plan then enables the logistics manager to play with the forecast income and outgoings and test the impact on the future stock for the product under consideration. It enables you for example to check that the stock doesn't fall below a certain level for the product under consideration.
 

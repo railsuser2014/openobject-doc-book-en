@@ -222,10 +222,10 @@ Then select one or several journals and click  *Print* . Open ERP then proposes
 * journal grouped by account.
 
 
-.. image::  images/account_journal_print.png
-	:align: center
+.. figure::  images/account_journal_print.png
+   :align: center
 
-*Printing a journal.*
+   *Printing a journal.*
 
 Tax declaration
 ---------------
@@ -236,13 +236,13 @@ You can also get the information from the accounting entries in the columns to t
 
 Open ERP keeps a tax chart that you can reach from the menu  *Financial Management > Periodical Processing > Taxes* . The structure of the chart is for calculating the tax declaration but also all the other taxes can be calculated (such as the French DEEE).
 
-.. image::  images/account_tax_chart.png
-	:align: center
+.. figure::  images/account_tax_chart.png
+   :align: center
+
+   *Example of a Belgian TVA (VAT) declaration.*
 
 .. index::
    single: TVA
-
-*Example of a Belgian TVA (VAT) declaration.*
 
 The tax chart represents the amount of each area of the tax declaration for your country. It's presented in a hierarchical structure which lets you see the detail only of what interests you and hides the less interesting subtotals. This structure can be altered as you wish to fit your needs.
 

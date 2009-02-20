@@ -22,10 +22,10 @@ So create the structure above for your project management system. To do that, cr
 
 Then in each project (represented by analytic accounts) you'll get this substructure for organization your documents efficiently.
 
-.. image::  images/document_shared_structure.png
-    :align: center
+.. figure::  images/document_shared_structure.png
+   :align: center
 
-*Substructure common to all projects.*
+   *Substructure common to all projects.*
 
 .. tip::   **Technique**  *Mapping* 
 

@@ -12,10 +12,10 @@ You've seen in the preceding sections that the whole of stock management is buil
 
 Use the menu *Stock Management > Configuration > Locations* then click *New* to define new locations.
 
-.. image:: images/stock_location_form.png
-    :align: center
+.. figure:: images/stock_location_form.png
+   :align: center
 
-*Definition of a stock location.*
+   *Definition of a stock location.*
 
 You should then give a name to your stock location. Now look at location types and localization.
 
@@ -42,15 +42,15 @@ You can have several locations of the same type. In that case your product, supp
 
 The counterparts for procurement, inventory and production operations are given by the locations shown on the product form. The counterparts of reception and delivery operations are given by the locations shown on the partner form. The choice of stock location is given by the configuration of the warehouse, linked to a Shop.
 
-.. image:: images/stock_product_location_form.png
-    :align: center
+.. figure:: images/stock_product_location_form.png
+   :align: center
 
-*Definition of stock locations on the product form.*
+   *Definition of stock locations on the product form.*
 
-.. image:: images/stock_partner_location_form.png
-    :align: center
+.. figure:: images/stock_partner_location_form.png
+   :align: center
 
-*Definition of stock locations on the partner form.*
+   *Definition of stock locations on the partner form.*
 
 Localization
 ------------
@@ -200,10 +200,10 @@ The location structure looks like this:
 
 You can then set the locations a product or a routing must go through on the relevant form. All products that enter the production chain will automatically follow the predetermined path.
 
-.. image:: images/stock_product_path.png
-    :align: center
+.. figure:: images/stock_product_path.png
+   :align: center
 
-*Logistics for a given product.*
+   *Logistics for a given product.*
 
 To improve your logistics, you'll see further on in this chapter how you can put minimum stock rules onto different locations to guarantee security stocks for assembly operators. Reports on the state of stocks in different locations will rapidly show you the bottlenecks in your production chain.
 

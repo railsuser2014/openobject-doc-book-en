@@ -123,17 +123,17 @@ Workcenters represent units of product, capable of doing material transformation
 
 Use the menu *Manufacturing > Configuration > Workcenters* to define a new workcenter. You get a form as shown in the figure below.
 
-.. image:: images/mrp_workcenter.png
-    :align: center
+.. figure:: images/mrp_workcenter.png
+   :align: center
 
-*Definition of a workcenter.*
+   *Definition of a workcenter.*
 
 A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and a description of operating hours or functionality. The figure below represents the hours from Monday to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
 
-.. image:: images/mrp_workcenter_working_hour.png
-    :align: center
+.. figure:: images/mrp_workcenter_working_hour.png
+   :align: center
 
-*Working hours for a workcenter.*
+   *Working hours for a workcenter.*
 
 You should show a description of the workcenter and its operations.
 
@@ -167,10 +167,10 @@ Then on each level of a Bill of Materials you can indicate the range. The levels
 
 The second tab of the production order lets you define the links to analytical account to report the costs of the workcenter operations. If you leave the different fields empty Open ERP won't have any effect on the analytic accounts.
 
-.. image:: images/mrp_workcenter_tab.png
-    :align: center
+.. figure:: images/mrp_workcenter_tab.png
+   :align: center
 
-*Data about analytic accounts for a workcenter.*
+   *Data about analytic accounts for a workcenter.*
 
 .. index::
    single: Routing; Manufacturing
@@ -182,10 +182,10 @@ Routings define the assembly operations to be done in workcenters for manufactur
 
 A routing can be defined directly in a Bill of Materials or through the menu Manufacturing > Configuration > Routings. A routing has a name, a code and a description. Later in this chapter you'll see that a routing can also be associated with a stock location. That enable you to indicate where assembly takes place.
 
-.. image:: images/mrp_routing.png
-    :align: center
+.. figure:: images/mrp_routing.png
+   :align: center
 
-*Definition of a routing with three operations.*
+   *Definition of a routing with three operations.*
 
 .. tip::  **Point**  *Subcontracting assembly*
 
@@ -211,10 +211,10 @@ But the routings also enable you to manage your production capacity. You will be
 
 To see a demand chart, list the workcenters using the menu *Manufacturing > Configuration > Workcenters*. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
-.. image:: images/mrp_workcenter_load.png
-    :align: center
+.. figure:: images/mrp_workcenter_load.png
+   :align: center
 
-*Charge by workcenter.*
+   *Charge by workcenter.*
 
 .. tip::  **Point** *Theoretical times*
 
@@ -234,19 +234,19 @@ Management of operations
 
 To work using work orders you must install the optional module ``mrp_operations``. Once the module is installed you'll find a new menu called *Manufacturing > Operations > Operations* to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
 
-.. image:: images/mrp_operations_tree.png
-    :align: center
+.. figure:: images/mrp_operations_tree.png
+   :align: center
 
-*List of operations to be carried out.*
+   *List of operations to be carried out.*
 
 Operations must then be carried out one by one. On each operation the operator can click on 'Start operation' and then 'Close Operation'. The time is then worked out automatically on the operation between the two changes of status. The operator can also put the operation on hold and start again later.
 
 The following process is attached to each operation.
 
-.. image:: images/mrp_operations_workflow.png
-    :align: center
+.. figure:: images/mrp_operations_workflow.png
+   :align: center
 
-*Process for handling an operation.*
+   *Process for handling an operation.*
 
 Thanks to this use by operation, the real working time is recorded on the production order.
 
@@ -279,11 +279,10 @@ Using the system these operations don't need data to be entered on the keyboard.
 
 #. The event code.
 
-.. image:: images/mrp_operation.png
-    :align: center
+.. figure:: images/mrp_operation.png
+   :align: center
 
-*Capturing events for work orders.*
-
+   *Capturing events for work orders.*
 
 Open ERP then applies the events to the relevant operation.
 
@@ -353,10 +352,10 @@ Some problems are just those of timing and can be automatically corrected by the
 
 If a product must be 'in stock' but is not available in your stores, Open ERP will make the exception in 'temporary' or 'to be corrected'. The exception is temporary if the system can procure it automatically, for example if a procurement rule is defined for minimum stock.
 
-.. image:: images/mrp_exception.png
-    :align: center
+.. figure:: images/mrp_exception.png
+   :align: center
 
-*Example of a procurement in exception.*
+   *Example of a procurement in exception.*
 
 If no procurement rule is defined the exception must be corrected manually by the user. Once the exception is corrected you can restart by clicking on 'Retry'. If you don't do that then Open ERP will automatically recalcualte on the next automated requirements calculation.
 
@@ -365,17 +364,17 @@ Manual procurement
 
 To procure internally, you can create a procurement order manually. Use the menu *Manufacturing > Procurement Orders > New Procurement* to do this.
 
-.. image:: images/mrp_procurement.png
-    :align: center
+.. figure:: images/mrp_procurement.png
+   :align: center
 
-*Encoding for a new procurement order.*
+   *Encoding for a new procurement order.*
 
 The procurement order will then be responsible for calculating a  proposal for automatic procurement for the product concerned. This procurement wll start a task, a purchase order form the supplier or a production depending on the product configuration.
 
-.. image:: images/mrp_procurement_flow.png
-    :align: center
+.. figure:: images/mrp_procurement_flow.png
+   :align: center
 
-*Workflow for handling a procurement, a function of the product configuration.*
+   *Workflow for handling a procurement, a function of the product configuration.*
 
 It is better to encode a procurement order rather than direct purchasing or production, That method has the following advantages:
 
@@ -400,17 +399,17 @@ For the management of waste you must install the module ``mrp_subproduct``. The 
 
 If the module ``mrp_subproduct`` has been installed you get a new field in the Bill of Material that lets you set secondary products resulting from the manufacture of the finished product.
 
-.. image:: images/mrp_bom_subproduct.png
-    :align: center
+.. figure:: images/mrp_bom_subproduct.png
+   :align: center
 
-*Definition of waste products in a Bill of Materials.*
+   *Definition of waste products in a Bill of Materials.*
 
 When Open ERP generates a production order based on a Bill of Materials that uses secondary product you pick up the list of all products in the the third tab of the production order 'Finished Products'.
 
-.. image:: images/mrp_production.png
-    :align: center
+.. figure:: images/mrp_production.png
+   :align: center
 
-*A production order producing several finished products.*
+   *A production order producing several finished products.*
 
 Secondary products enable you to generate several types of products from the same raw materials and manufacturing methods – only these aren't used in the calculation of requirements. Then if you need the secondary products Open ERP won't ask you to manufacture another product to use the waste products and secondary products of this manufacture. In this case you should enter another production order for the secondary product.
 
@@ -460,10 +459,10 @@ Entering data for a new repair
 
 Use the menu *Manufacturing > Repairs > New Repair* to enter a new repair into the system. You'll see a blank form for the repair data, as shown in the figure below.
 
-.. image:: images/mrp_repair_new.png
-    :align: center
+.. figure:: images/mrp_repair_new.png
+   :align: center
 
-*Entering data for a new repair.*
+   *Entering data for a new repair.*
 
 Start by identifying the product that will be repaired using the product lot number. Open ERP then automatically completes fields from the selected lot – the partner fields, address, delivery location, and stock move.
 
@@ -503,10 +502,10 @@ This information is automatically proposed by the system but you can modify it a
 
 You can also encode additional charges in the second tab of the repair: applicable list price, address and type of invoice, as well as additional line items that need to be added to the repair bill.
 
-.. image:: images/mrp_repair_tab2.png
-    :align: center
+.. figure:: images/mrp_repair_tab2.png
+   :align: center
 
-*Second tab.*
+   *Second tab.*
 
 The third tab, Quality, is for encoding information about the quality: internal notes, notes for the quotation, corrective actions and preventative actions for example.
 
@@ -515,10 +514,10 @@ Repair workflow
 
 A defined process handles a repair order – both the repair itself and invoicing the client. The figure below shows this repair process.
 
-.. image:: images/mrp_repair_workflow.png
-    :align: center
+.. figure:: images/mrp_repair_workflow.png
+   :align: center
 
-*Process for handling a repair.*
+   *Process for handling a repair.*
 
 Once a repair has been entered onto the system, it is in the 'draft' state. In this state it has no impact on the rest of the system. You can print a quotation from it using the action 'Print Quotation'. The repair quotation can then be sent to the customer.
 
@@ -553,10 +552,10 @@ The move operations are carried out using the locations shown on the first tab o
 
 For example, take the case of the cabinet that was produced at the start of this chapter. If you have to replace the shelf PANLAT, you must enter data for the repair as in the figure below.
 
-.. image:: images/mrp_repair_panlat.png
-    :align: center
+.. figure:: images/mrp_repair_panlat.png
+   :align: center
 
-*Repair of a shelf in a cabinet.*
+   *Repair of a shelf in a cabinet.*
 
 In this example, you'd carry out the following operations:
 

@@ -9,22 +9,22 @@ Managing Contacts
 
 The two figures below show the UML classes with and without the ``base_contact`` module.
 
-.. image:: images/crm_contact_with.png
-    :align: center
+.. figure:: images/crm_contact_with.png
+   :align: center
 
-*UML class diagram with base_contact.*
+   *UML class diagram with base_contact.*
 
-.. image:: images/crm_contact_without.png
-    :align: center
+.. figure:: images/crm_contact_without.png
+   :align: center
 
-*UML class diagram without base_contact.*
+   *UML class diagram without base_contact.*
 
 A concrete example will illustrate the concept of multiple relationships between contacts and partners (companies)  The figure below shows two companies each having several addresses (places of business) and several contacts attached to these addresses.
 
-.. image:: images/crm_contact_exemple.png
-    :align: center
+.. figure:: images/crm_contact_exemple.png
+   :align: center
 
-*Example of a structure with management of partners and contacts.*
+   *Example of a structure with management of partners and contacts.*
 
 In this example you'll find the following elements:
 
@@ -50,31 +50,31 @@ The three menus above are only three different views on the same data. If you co
 
 The screen above represents a partner form. You can see several possible address there and a list of contacts above each address. For each contact you see a name, a function, a phone number and an email.
 
-.. image:: images/crm_partner_contact.png
-    :align: center
+.. figure:: images/crm_partner_contact.png
+   :align: center
 
-*A partner form with the ``base_contact`` module installed.*
+   *A partner form with the ``base_contact`` module installed.*
 
 If you click on the line you can get more detail about the function (such as start date, end date, and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog).
 
-.. image:: images/crm_partner_poste.png
-    :align: center
+.. figure:: images/crm_partner_poste.png
+   :align: center
 
-*Detail of a post occupied by a contact at a partner.*
+   *Detail of a post occupied by a contact at a partner.*
 
-.. image:: images/crm_partner_contacts.png
-    :align: center
+.. figure:: images/crm_partner_contacts.png
+   :align: center
 
-*Detail of a contact form for someone occupying several posts.*
+   *Detail of a contact form for someone occupying several posts.*
 
 Partner management is found in the Open ERP base modules. To manager partner relations you must install the CRM modules. Then start by installing a CRM profile and configure the system to meet your needs.
 
 For this chapter you should create a new database. After installing the database select *demonstration data* and select the *CRM profile*. Open ERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
 
-.. image:: images/crm_db_init.png
-    :align: center
+.. figure:: images/crm_db_init.png
+   :align: center
 
-*Creating a new database.*
+   *Creating a new database.*
 
 Once the database is installed, Open ERP proposes that you configure it with a series of questions:
 
@@ -84,10 +84,10 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 
 * Select the CRM functionality to install.
 
-.. image:: images/ crm_db_select.png
-    :align: center
+.. figure:: images/ crm_db_select.png
+   :align: center
 
-*Selecting the CRM functionality to install.*
+   *Selecting the CRM functionality to install.*
 
 .. tip:: *Point* The CRM configuration module
 
@@ -129,20 +129,20 @@ The following cases will be looked at for this chapter
 
 The figure below shows the CRM module configuration screen after selecting some functions to install.
 
-.. image:: images/crm_configuration_wizard.png
-    :align: center
+.. figure:: images/crm_configuration_wizard.png
+   :align: center
 
-*Selecting parameters for CRM modules for the reader of this chapter.*
+   *Selecting parameters for CRM modules for the reader of this chapter.*
 
 Organizing Prospects
 ---------------------
 
 If you have installed the management of prospects and opportunities, Open ERP implements the following workflow for the qualification of prospects and future opportunities.
 
-.. image:: images/crm_flux.png
-    :align: center
+.. figure:: images/crm_flux.png
+   :align: center
 
-*Process of converting a prospect into a customer or opportunity.*
+   *Process of converting a prospect into a customer or opportunity.*
 
 Leads
 ========
@@ -172,10 +172,10 @@ New prospects are usually entered as a lead in the system. This means that you d
 
 To enter a lead manually use the menu *CRM & SRM > Sales > Leads > New Lead*. A form opens to let you enter data about this new contact.
 
-.. image:: images/crm_lead_new.png
-    :align: center
+.. figure:: images/crm_lead_new.png
+   :align: center
 
-*Creating a new lead.*
+   *Creating a new lead.*
 
 Leads have a status that depends on the qualification work that's been carried out:
 
@@ -195,10 +195,10 @@ It's also possible to import a huget list of leads. That's useful if you've boug
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu *CRM & SRM > Presales > Leads > My Leads*. At the bottom of the list click on the *Import* link. Open ERP opens a form for importing the data.
 
-.. image:: images/crm_lead_import.png
-    :align: center
+.. figure:: images/crm_lead_import.png
+   :align: center
 
-*Importing leads into the system.*
+   *Importing leads into the system.*
 
 You then set which columns are present in your CSV file in the correct order. Then select your file and click on *Import*. Check in the chapter about system administration for more information on import and export.
 
@@ -231,10 +231,10 @@ To help the users organize and handle leads efficiently, Open ERP provides sever
 
 * *Leads > All Leads* is a list of all the leads assigned to different salespeople. This menu as those beneath it are used by managers to check on each person's work.
 
-.. image:: images/crm_leads_list.png
-    :align: center
+.. figure:: images/crm_leads_list.png
+   :align: center
 
-*List of leads to be handled.*
+   *List of leads to be handled.*
 
 Leads are prioritized. The salespeople should ideally start at the top of the list. They then open a form to describe the lead. At this stage they contact the suspect by email or phone and enter the result of the contact on the lead form.
 
@@ -253,10 +253,10 @@ The created partner is automatically attached to the lead, which enables you to 
 
 If the salesperson thinks that there is a real opportunity with the lead, following the contact, he can convert it into a sales opportunity using the button *Convert to Opportunity*. Open ERP then opens a window asking the title of the opportunity, the estimate revenue and the percentage success of converting to a sale.
 
-.. image:: images/crm_lead_convert.png
-    :align: center
+.. figure:: images/crm_lead_convert.png
+   :align: center
 
-*Converting a lead into a sales opportunity.*
+   *Converting a lead into a sales opportunity.*
 
 Some companies have more advanced processes for the qualification of a lead. They pass through several steps, auch as first call, renewing contact, waiting for a verbal agreement. You can then use the field *Step* that is found up to the right of the lead definition. To move it automatically through the next step, you can use the button that looks like a right arrow.
 
@@ -276,10 +276,10 @@ To quickly create a new opportunity, use the menu Opportunity > New Opportunity.
 
 The salesperson uses the menu *Opportunites > My Opportunities > My Open Opportunities* to track their opportunities. After the different customer contacts, the salesperson can enter the information into the form to describe the activity. The history tab provides a history of all the information about the activity throughout its life. The activities are automatically reported on the partner form of the associated customer. To see this, open the events tab when you open the partner form.
 
-.. image:: images/crm_partner_event.png
-    :align: center
+.. figure:: images/crm_partner_event.png
+   :align: center
 
-*History of events in a partner form.*
+   *History of events in a partner form.*
 
 When the leads have been converted into opportunities, the opportunities can be assigned to any salesperson. In that case you designate a manager in the company who is responsible for assigned the new opportunities to the different salespeople, to suit their speciality, location or availability.
 
@@ -292,24 +292,24 @@ There are several methods for entering a new meeting with a partner. The first m
 
 You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and another use the buttons above and to the right of the calendar.
 
-.. image:: images/crm_calendar_month.png
-    :align: center
+.. figure:: images/crm_calendar_month.png
+   :align: center
 
-*Meetings calendar in monthly view.*
+   *Meetings calendar in monthly view.*
 
-.. image:: images/crm_calendar_week.png
-    :align: center
+.. figure:: images/crm_calendar_week.png
+   :align: center
 
-*Meetings calendar in weekly view.*
+   *Meetings calendar in weekly view.*
 
 In the calendar you distinguish between multi-day events and events that last only for a few hours. Multi-day events have a coloured background whereas single events have a coloured font. Each event has a colour that represent the user that created the meeting. You can filter the different users by selecting them from the list at the left of the screen. 
 
 To enter a new meeting into the system you can click the day and the hour for a new meeting. In the weekly and daily views you can also press the mouse left button on the calendar and slide the mouse along to create an event of several hours. Open ERP then opens an entry screen for a new meeting.
 
-.. image:: images/crm_meeting_form.png
-    :align: center
+.. figure:: images/crm_meeting_form.png
+   :align: center
 
-*Entering a new meeting.*
+   *Entering a new meeting.*
 
 .. tip:: *Point* Consolidated Calendar
 

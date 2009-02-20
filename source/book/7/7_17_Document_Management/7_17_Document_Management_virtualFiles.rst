@@ -17,17 +17,17 @@ That's not the case in Open ERP. To automatically make Open ERP reports availabl
 
 The screen below shows the parameters of the virtual files in Orders. You define the virtual files using the name NUMCOMMAND_print.pdf, where NUMCOMMAND represents the reference to the order. To do this you must complete the section Descriptive Contents of the file for a directory. For each report associated with an order you can then find a virtual file.
 
-.. image::  images/document_virtual_form.png
-    :align: center
+.. figure::  images/document_virtual_form.png
+   :align: center
 
-*Virtual files about sales orders in Open ERP.*
+   *Virtual files about sales orders in Open ERP.*
 
 To see the effect of this configuration, connect to the FTP server and go into a directory for an order, such as Main Repository > Sales Orders > All Sales Orders > SO003. You can then just double-click the file SO003_print.pdf to get a printout of Order SO003. You can attach it to an email or put it on your desktop.
 
-.. image::  images/document_virtual_ftp.png
-    :align: center
+.. figure::  images/document_virtual_ftp.png
+   :align: center
 
-*Virtual files about sale orders through FTP.*
+   *Virtual files about sale orders through FTP.*
 
 This system of virtual files is very useful in a lot of situations. For example if you must quickly re-send a quotation to a customer you don't have to open Open ERP, you can just attach the relevant virtual file to your email.
 

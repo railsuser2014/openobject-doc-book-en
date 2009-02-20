@@ -53,10 +53,10 @@ In planning by task, the project manager assigns tasks from the different projec
 
 Planning by time consists of allocating, for each employee, some time on each of the different projects for the period concerned. The tasks for each project are ordered by priority and can be directly assigned to a user or left unassigned. Each employee then chooses the task that he or she will do next, based on the plans and the relative priorities of the tasks.
 
-.. image::  images/service_planning_time.png
-	:align: center
+.. figure::  images/service_planning_time.png
+   :align: center
 
-*Monthly planning for work time of each employee.*
+   *Monthly planning for work time of each employee.*
 
 The figure shows a monthly planning session where plans are being made for each employee to spend a number of days' work on various different projects.
 
@@ -108,10 +108,10 @@ The employee then selects a task in the highest priority project. She ideally ch
 
 At the end of the period you can compare the duration of effective work on the different project to that of the initial estimate. Print the plan to obtain a comparison of the planned working time and the real time worked. 
 
-.. image::  images/planning_stat.png
-	:align: center
+.. figure::  images/planning_stat.png
+   :align: center
 
-*Comparison of planned hours, worked hours and the productivity of employees by project.*
+   *Comparison of planned hours, worked hours and the productivity of employees by project.*
 
 You can also study several of your project's figures from the menu  *Human Resources > Reporting > Planning* .
 

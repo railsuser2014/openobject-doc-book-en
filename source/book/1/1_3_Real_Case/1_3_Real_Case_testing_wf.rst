@@ -89,11 +89,10 @@ To check actual stock levels, use the menu  *Inventory Control > Location Struct
 Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \ ``Locations``\   text itself), and then click the  *Print*  button to the top right of the form to test the available different reports (such as  *Lots by Location* ). You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \ ``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
 
 
-.. image::  images/lots_by_location_pdf.png
-   	:align: center
+.. figure::  images/lots_by_location_pdf.png
+   :align: center
 
-*List of products and their stock levels.*
-
+   *List of products and their stock levels.*
 
 .. tip::   **Web client**  *Returning to Open ERP after printing PDF reports* 
 
@@ -146,8 +145,7 @@ In Open ERP, sales proposals and sales orders are managed using documents that 
 
 	#. Select the  *Partner* \ ``Smith and Sons``\   This has the effect of automatically completing several other fields:  *Ordering Contact*   *Invoice Address*   *Shipping Address* and the  *Pricelist* \ ``Default Sale Pricelist``\   They're all only defaults so these fields can be modified as you need.
 
-
-	        .. image::  images/order.png
+	        .. figure::  images/order.png
         	   :align: center
 
 	#. Click the  *Save Parent and Create new record* icon to the right of the  *Sales Order Lines* field. It saves the main order form and becomes a new  *Create new record* icon. Click that to open a  *Sales Order Lines* window.
@@ -231,11 +229,10 @@ Registering an invoice payment by a customer is essentially the same as the proc
 	#. Select the  *Journal* \ ``Bank Journal``\  and click  *Pay Invoice*  The invoice is then marked as paid, and you're returned to the  *Main Menu* 
 
 
-.. image::  images/familiarization_invoice.png
-   	:align: center
+.. figure::  images/familiarization_invoice.png
+   :align: center
 
-*Screen showing the invoice to be paid.*
-
+   *Screen showing the invoice to be paid.*
 
 Check your Chart of Accounts as before to see that you now have a healthy bank balance in the \ ``Petty Cash``\   account.
 

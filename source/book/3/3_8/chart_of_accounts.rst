@@ -34,10 +34,10 @@ Displaying the chart of accounts can take several seconds because Open ERP calc
 Creating a chart of accounts
 ----------------------------
 
-.. image::  images/account_form.png
-	:align: center
+.. figure::  images/account_form.png
+   :align: center
 
-*Definition of an account.*
+   *Definition of an account.*
 
 To add, modify or delete existing accounts, use the menu  *Financial Management > Configuration > General Accounts > Accounts Definitions* .
 

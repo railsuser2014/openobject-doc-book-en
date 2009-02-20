@@ -70,11 +70,10 @@ Start by manually entering a customer invoice. Use  *Financial Management > Invo
 
 A new invoice form opens for entering information.
 
-.. image::  images/account_invoice_new.png
-	:align: center
+.. figure::  images/account_invoice_new.png
+   :align: center
 	
-*Entering a new invoice.*
-
+   *Entering a new invoice.*
 
 The document is composed of three parts:
 
@@ -178,10 +177,10 @@ In the  *Taxes*  area at the bottom left of the invoice you'll find the details 
 	It shows you the total that will be computed in the different parts of the legal declaration. This enables you to manage the declaration in Open ERP automatically.
 
 
-.. image::  images/account_invoice_tva.png
-	:align: center
+.. figure::  images/account_invoice_tva.png
+   :align: center
 
-*Detail of tax charges on an invoice.*
+   *Detail of tax charges on an invoice.*
 
 Before approving the invoice you can modify the date and the accounting period, which are entered by default as today's date. These fields are found on the second tab  *Other Information* .
 

@@ -32,10 +32,10 @@ Price request from the supplier
 
 To enter data for a new supplier price request, use the menu *Purchase Management > New Purchase Order*. Open ERP opens a blank purchase form that you use for requesting prices from a supplier. This is shown in the figure below. If the price request came from an automatic procurement created by Open ERP you'll find in the *Origin* field a reference to the document that generated the request.
 
-.. image:: images/purchase_form.png
-    :align: center
+.. figure:: images/purchase_form.png
+   :align: center
 
-*Data entry for a supplier order.*
+   *Data entry for a supplier order.*
 
 .. tip:: **Point**   *Managing Alerts*
 
@@ -49,10 +49,10 @@ The internal reference, the date, and the warehouse that the products should be 
 
 Once the main body of the purchase order has been completed you can enter the product lines.
 
-.. image:: images/purchase_line_form.png
-    :align: center
+.. figure:: images/purchase_line_form.png
+   :align: center
 
-*Order line on a  supplier order.*
+   *Order line on a  supplier order.*
 
 When you've completed the product, Open ERP automatically completes the other fields on the form:
 
@@ -82,10 +82,10 @@ In the second tab of the product line you can enter a note that will be attached
 
 Once the document is encoded, you can print it and Open ERP gives you the price quotation to send to the supplier. You can set a note for the attention of the supplier in the form's third tab.
 
-.. image:: images/purchase_quotation.png
-    :align: center
+.. figure:: images/purchase_quotation.png
+   :align: center
 
-*Printing the supplier price quotation.*
+   *Printing the supplier price quotation.*
 
 Then leave the document in that state. When you receive the response from the supplier, use the menu *Purchase Management > Supplier Orders > My Price Requests*. Then select the order and complete it.
 
@@ -95,10 +95,10 @@ When you want to approve the order, use the button *Confirm ??? Supplier*. The p
 
 You can confirm the order but not validate it straightaway. Do this when you want to validate the order on receipt of order acknowledgement from the supplier. This gives you an intermediate state for all orders waiting validation from the supplier using the menu *Purchase Management > Supplier Orders > Orders awaiting validation*.
 
-.. image:: images/purchase_process.png
-    :align: center
+.. figure:: images/purchase_process.png
+   :align: center
 
-*Supplier order process.*
+   *Supplier order process.*
 
 .. tip:: **Point**   *Supplier validation*
 
@@ -119,10 +119,10 @@ Just as you saw in the chapter on Stock Management, if you receive only part of 
 
 After receiving the goods, Open ERP will show you which orders are open and the state of their receipt and invoicing if you return to the list of orders.
 
-.. image:: images/purchase_list.png
-    :align: center
+.. figure:: images/purchase_list.png
+   :align: center
 
-*List of open orders, and their receipt and invoice status.*
+   *List of open orders, and their receipt and invoice status.*
 
 Control of invoicing
 ---------------------
@@ -137,10 +137,10 @@ To control supplier invoicing, Open ERP provides three systems as standard, whic
 
 The mode of invoicing control is set in the second tab of the purchase order in the field *Invoicing*. 
 
-.. image:: images/purchase_form_tab2.png
-    :align: center
+.. figure:: images/purchase_form_tab2.png
+   :align: center
 
-*Supplier order, invoice control.*
+   *Supplier order, invoice control.*
 
 .. tip:: **Point**   *Default value*
 
@@ -183,10 +183,10 @@ Tenders
 
 To manage tenders, you should use the module ``purchase_tender``. This lets you create several supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
-.. image:: images/purchase_tender.png
-    :align: center
+.. figure:: images/purchase_tender.png
+   :align: center
 
-*Defining a tender.*
+   *Defining a tender.*
 
 To enter data for a new tender, use the menu *Purchase Management > Purchase Tenders > New Purchase Tenders*. Open ERP then opens a new blank tender form. The reference number is set by default and you can enter information about you tender in the other fields.
 
@@ -259,10 +259,10 @@ At each goods receipt the product price is recalculated using the following acco
 
 If the product are managed as a weighted average, at each reception of product, Open ERP will open a window that enables you to specify the price of the product received. The purchase price is by default proposed from the purchase order. But you can change the price to, for example, add the cost of delivery to the different received products.
 
-.. image:: images/purchase_pmp.png
-    :align: center
+.. figure:: images/purchase_pmp.png
+   :align: center
 
-*Goods receipt of products managed in weighted average.*
+   *Goods receipt of products managed in weighted average.*
 
 Once the receipt has been confirmed, the price is automatically recalculated and entered on the product form.
 
@@ -276,10 +276,10 @@ To get statistics about your purchases you can install the modules ``report_purc
 
 The first, report_purchase, will add two new reports in your purchase menu, analysis of purchases by month and by product, and analysing product by month and by product category. To use these reports use the menu *Purchase Management > Reporting > This month > Purchases by product*.
 
-.. image:: images/purchase_report.png
-    :align: center
+.. figure:: images/purchase_report.png
+   :align: center
 
-*Analysis of purchases over the month by product.*
+   *Analysis of purchases over the month by product.*
 
 This analysis carries on the supplier orders and not on the invoices or the quantities effectively received. To get an analysis by product, use the module ``product_margin``. The function of this module is described in detail in the chapter on Sales Management.
 
@@ -292,17 +292,17 @@ To manage supplier relations, you should install the ``crm_configuration`` modul
 
 Once you've installed the CRM module, check the checkbox by the *Complaints* option. Open ERP will then create a menu configuration for managing supplier complaints.
 
-.. image:: images/crm_config.png
-    :align: center
+.. figure:: images/crm_config.png
+   :align: center
 
-*Selection of the management of complaints in the CRM installation.*
+   *Selection of the management of complaints in the CRM installation.*
 
 Once the module is installed you can use the menu *CRM & SRM > After Sales Service > Complaints > New Supplier Complaint*.
 
-.. image:: images/crm_complaints.png
-    :align: center
+.. figure:: images/crm_complaints.png
+   :align: center
 
-*Data entry screen for a supplier complaint.*
+   *Data entry screen for a supplier complaint.*
 
 The CRM module has many reports predefined. You can analyse:
 

@@ -9,10 +9,10 @@ Workflows represent the company's different business processes. They're complete
 The figure below shows the standard workflow for an order. You can show it from the GTK client starting with  *Sales Management > Sales Order > All Sales Order* . Select an order, then go to the top menu  *Plugins > Execute a plugin > Print Workflow*  to show the menu below. They're designed really for administrators, so aren't available through the web client.
 
 
-.. image::  images/sales_workflow.png
+.. figure::  images/sales_workflow.png
    :align: center
 
-*Workflow for order SO005.*
+   *Workflow for order SO005.*
 
 Defining workflows
 -------------------
@@ -21,11 +21,10 @@ Workflows can be created and modified in Open ERP's user interface.
 
 You can look at the specifications of the workflow for the sales order above using the menu Administration * > Configuration > Low level > Base > Workflow* . It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field  *Activities* , and all of the arrows are listed in the field  *Transitions* .
 
-
-.. image::  images/sales_workflow_spec.png
+.. figure::  images/sales_workflow_spec.png
    :align: center
 
-*Definition of the workflow for a sales order.*
+   *Definition of the workflow for a sales order.*
 
 You can also configure the workflows by adding new activities and transitions between activities or by modifying the conditions that control the existing transitions. 
 

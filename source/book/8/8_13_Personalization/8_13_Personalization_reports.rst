@@ -35,10 +35,10 @@ Then turn to the second tab,  *View parameters* , to select the views that you w
 
 	The Microsoft Excel plug-in enables you to connect to Open ERP and automatically extract the selected data. You can then apply formulas and graphs to make your own dashboards of measures directly in Excel. The .xls file can be saved and, when it is reopened, it reconnects to Open ERP to refresh the different lists and graphs with live data.
 
-.. image::  images/report_analysis_config.png
-	:align: center
+.. figure::  images/report_analysis_config.png
+   :align: center
 
-*Fields selected for the analysis of sales by customer and by product (plugin_excel.png).*
+   *Fields selected for the analysis of sales by customer and by product (plugin_excel.png).*
 
 In the third tab,  *Fields to Display* , you can add filters on all the fields of the selected objects ( *Filters on Fields* ). To do that, use the button  *Add Filter*  at the top of the form. For the moment, don't add a filter.
 
@@ -68,17 +68,15 @@ In the fourth tab you must indicate which of the fields in the list you want to 
 
 You can now  *Save*  the report you defined. Click on the  *Open Report*  button to the right of the form to get the requested analysis.
 
+.. figure::  images/report_sale_tree.png
+   :align: center
 
-.. image::  images/report_sale_tree.png
-    :align: center
+   *Analyzing sales by partner and by product in list view.*
 
-*Analyzing sales by partner and by product in list view.*
+.. figure::  images/report_sale_graphe.png
+   :align: center
 
-
-.. image::  images/report_sale_graphe.png
-    :align: center
-
-*Analyzing sales by partner and by product in graph view.*
+   *Analyzing sales by partner and by product in graph view.*
 
 .. index::
    single: Personalizing; Dashboards
@@ -93,12 +91,11 @@ A dashboard is a selection of reports previously defined in Open ERP. You can c
 
 Just like fields on reports, the  *Sequence*  field determines the order in which views appear in the dashboard. 
 
+.. figure::  images/dashboard_config.png
+   :align: center
+   :scale: 85
 
-.. image::  images/dashboard_config.png
-    :align: center
-    :scale: 85
-
-*Definition of a new dashboard.*
+   *Definition of a new dashboard.*
 
 Once the dashboard has been defined you can use the  *Create Menu*  button to create a menu entry for your dashboard anywhere in the menu system.
 
@@ -144,11 +141,10 @@ You start by installing the module \ ``base_report_designer``\   just like all t
 
 To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip``\   supplied with the  *Report Designer*  distribution. Check that OpenOffice.org is properly installed on your computer and that you have administration rights for installation.
 
-
-.. image::  images/tinyreport.png
+.. figure::  images/tinyreport.png
    :align: center
 
-*Menu TinyReport in OpenOffice.org Writer.*
+   *Menu TinyReport in OpenOffice.org Writer.*
 
 Start OpenOffice.org Writer, select  *Tools > Package Management...*  to open the Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it. Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny Report*  or  *Open ERP Report* .
 
@@ -176,11 +172,10 @@ The report editor lets you:
 
 To modify an existing report, select  *Tiny Report > Modify Existing Report* . Choose the report \ ``Request for Quotation``\   in the  *Modify Existing Report*  dialog box and then click  *Save to Temp Directory* .
 
-
-.. image::  images/openoffice_quotation.png
+.. figure::  images/openoffice_quotation.png
    :align: center
 
-*Modifying a document template.*
+   *Modifying a document template.*
 
 OpenOffice.org then opens the report in edit mode for you. You can modify it using the standard word processing functions of OpenOffice.org Writer.
 

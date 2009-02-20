@@ -116,10 +116,10 @@ top right of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
 node whose left edge is coloured maroon rather than grey.
 
-.. image:: images/process_quotation_flow.png
-    :align: center
+.. figure:: images/process_quotation_flow.png
+   :align: center
 
-*Example of a process handling a customer order quotation.*
+   *Example of a process handling a customer order quotation.*
 
 This order is in the Quotation state. The whole of some nodes is greyed out
 because the selected document will never enter into that state, such as
@@ -146,10 +146,10 @@ transition:
 * A list of the roles that can carry out the transition,
 * The actions available to you from the state. 
 
-.. image:: images/process_transition_zoom.png
-    :align: center
+.. figure:: images/process_transition_zoom.png
+   :align: center
 
-*Detail of a transition in the process.*
+   *Detail of a transition in the process.*
 
 Confirm quotation SO001 by clicking on the icon of a person beside the
 maroon-coloured transition that takes the document from quotation to order.
@@ -162,10 +162,10 @@ This dynamic response is extremely useful for learning about the software. It
 gives you a high-level veiw of the different actions carried out and their
 results.
 
-.. image:: images/process_sale_flow.png
-    :align: center
+.. figure:: images/process_sale_flow.png
+   :align: center
 
-*The process after confirming a process into an order.*
+   *The process after confirming a process into an order.*
 
 During order processing, the salesperson can quickly:
 
@@ -186,10 +186,10 @@ Open the employee form for Fabien Pinckaers from the menu *Human Resources >
 Employees > All Employees*. Click the *Process* button to open the detailed
 process of engagement.
 
-.. image:: images/process_employee_flow.png
-    :align: center
+.. figure:: images/process_employee_flow.png
+   :align: center
 
-*Example of a process engaging a new employee.*
+   *Example of a process engaging a new employee.*
 
 You can immediately see things that might interest the HR manager. On a single
 screen she has all of the documents about the selected employee. She can then
@@ -213,12 +213,13 @@ insurance companies. In this case click on the document icon to get the
 documents to be completed and posted or faxed to the institutions:
 
 * Fax for insurance declarations,
+
 * Statutary forms for government departments.
 
-.. image:: images/process_document.png
-    :align: center
+.. figure:: images/process_document.png
+   :align: center
 
-*Example of a process required for the declarations for a new employee.*
+   *Example of a process required for the declarations for a new employee.*
 
 The system of 'Corporate Intelligence' gives you a complete overview of all the
 company's processes. So if you click on the node to the left it will start the
@@ -240,20 +241,20 @@ a document). Changing a workflow will have a direct impact on the behaviour of
 the software in response to user actions. You handle all possible exceptions
 there so that the software is robust.
 
-.. image:: images/process_sale_workflow.png
-    :align: center
+.. figure:: images/process_sale_workflow.png
+   :align: center
 
-*Example of a workflow handling a customer order.*
+   *Example of a workflow handling a customer order.*
 
 Unlike workflows, user processes represent workflows across all of a company
 and its documents. They are used by end users to locate an action for more
 complete handling. A change of user process won't have any effect on the
 software but will show the user another way of working on a given problem.
 
-.. image:: images/process_sale_process.png
-    :align: center
+.. figure:: images/process_sale_process.png
+   :align: center
 
-*Example of a process handling a customer order.*
+   *Example of a process handling a customer order.*
 
 Processes are used by end users to help them understand the problems which
 haven't been handled in Open ERP. You can find actions that have no influence
@@ -265,10 +266,10 @@ as:
 
 * showing the user menu for finding a specific document.
 
-.. image:: images/process_cross_worfklow_process.png
-    :align: center
+.. figure:: images/process_cross_worfklow_process.png
+   :align: center
 
-*Relationship between workflow and user process.*
+   *Relationship between workflow and user process.*
 
 User processes are thus connected to technical workflows. If you modify the
 software's behaviour with a workflow, the changes will be directly visible in
@@ -285,10 +286,10 @@ workflow editor click on the link to the bottom left of a document and select
 the menu *Customize > Manage Workflows*. Open ERP opens a graphical editor to
 modify the workflow for the selected document type.
 
-.. image:: images/process_workflow_editor.png
-    :align: center
+.. figure:: images/process_workflow_editor.png
+   :align: center
 
-*Workflow editor modifying the behaviour of invoices.*
+   *Workflow editor modifying the behaviour of invoices.*
 
 The workflow editor is only available in Open ERP's web client. If you use the
 GTK client you can use the menus in *Administration > Low Level Objects >
@@ -309,10 +310,10 @@ the processes it knows about that involve such forms:
 * tracing customer orders in pre-sales,
 * processes for visiting customers and handling expenses.
 
-.. image:: images/process_screen.png
-    :align: center
+.. figure:: images/process_screen.png
+   :align: center
 
-*Button for entering a user process from a form.*
+   *Button for entering a user process from a form.*
 
 The element coloured red shows the active process for the selected document.
 Elements in grey are the states that the selected document won't go through
@@ -325,10 +326,10 @@ click on the title of the state. For example you can click on the invoice in
 the customer order management workflow to see in detail how that invoice is
 handled.
 
-.. image:: images/process_subflow_icon.png
-    :align: center
+.. figure:: images/process_subflow_icon.png
+   :align: center
 
-*A state that refers to another workflow.*
+   *A state that refers to another workflow.*
 
 Finally, you can place your mouse for a second over a transition (hover over a
 transition) to get a help balloon about this transition to appear. Open ERP
@@ -340,10 +341,10 @@ then shows you:
 
 * The roles you need to make anything happen from this step.
 
-.. image:: images/process_transition.png
-    :align: center
+.. figure:: images/process_transition.png
+   :align: center
 
-*Detail of a transition in a workflow.*
+   *Detail of a transition in a workflow.*
 
 If you click on the transition, Open ERP opens a dialog box with buttons that
 enable you to change the document state. These are the same buttons that you
@@ -357,10 +358,10 @@ Use the menus under *Administration > Customization > Enterprise Processes* To
 define new processes or modify existing processes. When entering a process,
 Open ERP shows you the list of states available for that process.
 
-.. image:: images/process_form.png
+.. figure:: images/process_form.png
    :align: center
 
-*Form for defining a process.*
+   *Form for defining a process.*
 
 You can add a new state or modify an existing state. A state can be associated
 with an object (whose instances are represented by documents). If that is the
@@ -385,10 +386,10 @@ object. For each transition you can:
 
 * Put an explanatory notice in different languages.
 
-.. image:: images/process_transition_form.png
-    :align: center
+.. figure:: images/process_transition_form.png
+   :align: center
 
-*Screen for defining a process transition.*
+   *Screen for defining a process transition.*
 
 .. Copyright © Open Object Press. All rights reserved.
 

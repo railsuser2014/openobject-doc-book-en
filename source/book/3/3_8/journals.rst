@@ -16,10 +16,10 @@ To view, edit or create new journals use the menu  *Financial Management > Confi
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the  *Active*  checkbox for that.
 
 
-.. image::  images/account_journal_form.png
-	:align: center
+.. figure::  images/account_journal_form.png
+   :align: center
 
-*Definition of an accounting journal.*
+   *Definition of an accounting journal.*
 
 You have to associate a view with each journal. The journal view indicates the fields that must be visible and required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example the field  *Account Number*  must appear when entering data in the bank journal but not in the other journals.
 

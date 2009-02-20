@@ -10,10 +10,10 @@ To define new payment terms, use the menu  *Financial Management > Configuration
 
 The figure below represents the following payment term: 35% on delivery, the balance 15 days after the end of the month.
 
-.. image::  images/account_payment_term.png
-	:align: center
+.. figure::  images/account_payment_term.png
+   :align: center
 
-*Configuring payment terms.*
+   *Configuring payment terms.*
 
 To configure new conditions start by giving a name to the  *Payment Term*  field. Text that you put in the field  *Description*  is used on invoices, so enter a clear description of the payment terms there.
 

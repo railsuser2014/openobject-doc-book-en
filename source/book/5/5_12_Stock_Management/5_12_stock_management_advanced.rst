@@ -47,10 +47,10 @@ Planning
 
 You've seen that most Open ERP documents can be changed in a planning view. It's the same for deliveries and goods receipts. You can put them into a calendar view at all times to plan your deliveries or goods receipts.
 
-.. image:: images/stock_planning.png
-    :align: center
+.. figure:: images/stock_planning.png
+   :align: center
 
-*Planning the deliveries of customer products.*
+   *Planning the deliveries of customer products.*
 
 The planned dates on a packing order are put on each stock move line. Then if you have a packing order containing several products you don't have to have all of the lines on the order delivered on the same day. The minimum and maximum dates on a packing order show the earliest and latest dates on the stock move lines for the packing.
 
@@ -66,10 +66,10 @@ Partial deliveries, sometimes call Back Orders, are generated automatically by O
 
 If you leave the quantities alone, Open ERP confirms and closes the order for delivery or reception. If you modify a quantity, Open ERP will automatically generate a second delivery or reception order for the remaining quantities. The first will be confirmed and the second will remain on the list of deliveries (or receipts) waiting.
 
-.. image:: images/stock_picking_wizard.png
-    :align: center
+.. figure:: images/stock_picking_wizard.png
+   :align: center
 
-*Confirmation screen for delivered quantities.*
+   *Confirmation screen for delivered quantities.*
 
 When you open the list of current deliveries, you find the field 'Partial delivery' which shows the reference number of the first delivery sent to the customer. That enable you to easily find the partial orders delivered so that you can treat them as a priority.
 
@@ -94,10 +94,10 @@ Manual data entry of goods receipt
 
 To enter data about goods receipt manually you must use the menu Stock Management > Goods Receipt > New items received. Then enter the necessary data manually in the goods receipt form.
 
-.. image:: images/stock_getting.png
-    :align: center
+.. figure:: images/stock_getting.png
+   :align: center
 
-*Manual data entry for product receipt.*
+   *Manual data entry for product receipt.*
 
 Confirming pre-generated goods received
 ----------------------------------------
@@ -106,10 +106,10 @@ If you use supplier orders in Open ERP, product receipts are automatically gener
 
 In this case Open ERP generates a list of all products waiting to be received from the menu *Stock Management > Incoming Products > Packings to Process*.
 
-.. image:: images/stock_packing_in.png
-    :align: center
+.. figure:: images/stock_packing_in.png
+   :align: center
 
-*List of items waiting for receipt.*
+   *List of items waiting for receipt.*
 
 Then you just look for the  corresponding entry using the supplier name or order reference. Click it and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP will automatically generate another receipt that will be put in waiting. You can let remain open or cancel it if products missed by your supplier will never be delivered.
 
@@ -128,10 +128,10 @@ Product routing
 
 You should install the ``stock_location`` module if routing products to customers, from suppliers or in your warehouse is a function of the product itself. 
 
-.. image:: images/product_location.png
-    :align: center
+.. figure:: images/product_location.png
+   :align: center
 
-*Managing the paths from one location to another in a product form.*
+   *Managing the paths from one location to another in a product form.*
 
 This will enable you to configure logistic rules individually for each product. For example, when a specific product arrives in stores it can automatically be sent to quality control. In this case it must be configured with rules on the product form. The fields that make up those rules are:
 

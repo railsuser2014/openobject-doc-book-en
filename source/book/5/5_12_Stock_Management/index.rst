@@ -21,10 +21,10 @@ Inventory locations are counterparts of the stock operations that represent your
 
 The following figure shows the initial configuration of the stores locations when the software is installed.
 
-.. image:: images/stock_location_tree.png
-    :align: center
+.. figure:: images/stock_location_tree.png
+   :align: center
 
-*Stores location structure when Open ERP has just been installed.*
+   *Stores location structure when Open ERP has just been installed.*
 
 .. tip::   **More information**  *Hierarchical stock locations*
 

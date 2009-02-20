@@ -64,10 +64,10 @@ Then to create a new user linked to this, use Administration > Users > Users to 
 
 In the second tab of the user form,  *Security* , add the \ ``Stock1``\   group that you just created.
 
-.. image::  images/menu_access.png
+.. figure::  images/menu_access.png
    :align: center
 
-*Groups that have access to the Inventory Control menu.*
+   *Groups that have access to the Inventory Control menu.*
 
 Save the user, then go into the menu  *Administration > Security > Define Access to Menu-Items*  to get a list of menus. Filter this list using the search field  *Menu*  to get the  *Inventory Control*  menu item. In the form describing the menu, add \ ``Stock1``\   into the  *Groups*  field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
 
@@ -133,10 +133,10 @@ Modification history
 ---------------------
 
 
-.. image::  images/view_log.png
+.. figure::  images/view_log.png
    :align: center
 
-*Partner Record history.*
+   *Partner Record history.*
 
 Each record in a Tiny ERP database carries a note of its history. You can then find out who it was created by and when that occurred, and who last modified it and when that occurred. Click the *View Log* icon at the top right of any form in the web client (but only when it's read-only, not when it's editable) to display a dialog box showing this information, as shown in the figure below. It can help you identify who to contact if there are any problems with the data in the records.
 
