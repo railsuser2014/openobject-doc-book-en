@@ -120,7 +120,7 @@ You can do this one of two ways:
 
 * translate the phrases directly in the client, which means that you can change them in their context, and that can be helpful to you while you're translating.
 
-.. TODO - check the details of representation below
+.. todo:: - check the details of representation below
 
 .. note:: CSV 
 

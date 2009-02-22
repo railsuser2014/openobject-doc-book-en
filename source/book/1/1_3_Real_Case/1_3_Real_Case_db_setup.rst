@@ -9,7 +9,7 @@ Personalizing the Main Company
 
 Start to personalize your database by renaming the  *Main Company*  from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this personalization information used in the document headers and footers. 
 
-To do this, click  *Partners > Partners*  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
+To do this, click :menuselection:`Partners --> Partners`  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
 
 .. tip:: Editable form in the web client
 
@@ -23,7 +23,7 @@ Change the following:
 
 and any other fields you like, such as the address and phone numbers, then  *Save* . This adds one Contact to the Partner, which is sufficient for the example.
 
-From the  *Main Menu* , click  *Administration > Configuration > Base > Define Main Company*  and edit the entry there:
+From the :guilabel:`Main Menu`, click :menuselection:`Administration --> Configuration --> Base --> Define Main Company`  and edit the entry there:
 
 *  *Company Name* : \ ``AmbiPlum``\  ,
 
@@ -35,7 +35,7 @@ From the  *Main Menu* , click  *Administration > Configuration > Base > Define M
 
 *  *Report Footer 2* : \ ``Ambitious – our Registered Company Details``\  .
 
-You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company ( *Administration > Configuration > Base > Main Company* ) and the two default Pricelists ( *Product > Pricelists > Pricelists* ) if you feel compelled to do that. 
+You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company (:menuselection:`Administration --> Configuration --> Base --> Main Company`) and the two default Pricelists (:menuselection:`Product --> Pricelists --> Pricelists`) if you feel compelled to do that. 
 
 .. note::  Currency 
 
@@ -46,13 +46,13 @@ Creating partner categories, partners and their contacts
 
 You'll now create a suppliers category and a customers category. Partner categories are useful for organizing groups of partners but have no special behavior that affects partners, so you can assign them as you like. Then you'll define one supplier and one customer, with a contact for each. 
 
-To do this use the menu  *Partners > Configuration > Categories > Edit Categories* . Click  *New*  to open a new form for defining  *Partner Categories* . Define the two categories that follow by just entering their  *Category Name*  and saving them: 
+To do this use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit Categories`. Click :guilabel:`New`  to open a new form for defining :guilabel:`Partner Categories`. Define the two categories that follow by just entering their :guilabel:`Category Name` and saving them: 
 
 * \ ``Suppliers``\  ,
 
 * \ ``Customers``\  .
 
-Then create two partners from the menu  *Partners > Partners* . Click on the  *New*  button to open a blank form and then add the following data for the first partner first:
+Then create two partners from the menu :menuselection:`Partners --> Partners`. Click on the :guilabel:`New` button to open a blank form and then add the following data for the first partner first:
 
 *  *Name* : \ ``Plumbing Component Suppliers``\  ,
 
@@ -78,7 +78,7 @@ For the second partner, proceed just as you did for the first, with the followin
 
 *  *Address Type* : \ ``Default``\  .
 
-Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To check your work you can go to the menu  *Partners > Partner Categories*  and click on each category in turn to see the companies in the category.
+Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To check your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each category in turn to see the companies in the category.
 
 .. note:: Multiple Partner Categories 
 
@@ -87,13 +87,13 @@ Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To c
 Creating products and their categories
 ---------------------------------------
 
-Unlike partner categories and their assigned partners, product categories do have an effect on the products assigned to them – and a product may belong to only one category. Select the menu  *Products > Configuration > Product Categories*  and click  *New*  to get an empty form for defining a product category. 
+Unlike partner categories and their assigned partners, product categories do have an effect on the products assigned to them – and a product may belong to only one category. Select the menu :menuselection:`Products --> Configuration --> Product Categories` and click :guilabel:`New` to get an empty form for defining a product category. 
 
-Enter \ ``Radiators``\   in the  *Name*  field and, watching the  *Product Categories*  form closely, click  *Save* . You'll see that other fields, specifically those in the  *Accounting Properties*  section, have been automatically filled in with values of accounts and journals. These are the values that will affect products – equivalent fields in a product will take on these values if they, too, are blank when their form is saved. 
+Enter \ ``Radiators``\   in the :guilabel:`Name`  field and, watching the :guilabel:`Product Categories` form closely, click :guilabel:`Save`. You'll see that other fields, specifically those in the  *Accounting Properties*  section, have been automatically filled in with values of accounts and journals. These are the values that will affect products – equivalent fields in a product will take on these values if they, too, are blank when their form is saved. 
 
 .. note:: Properties fields
 
-	Properties have a rather unusual behavior. They're defined by parameters in the menu *Administration > Custom > Properties*, and they update fields only when a form is saved, and only when the fields are empty at the time the form is saved. You can manually override any of these properties as you need.
+	Properties have a rather unusual behavior. They're defined by parameters in the menu :menuselection:`Administration --> Custom --> Properties`, and they update fields only when a form is saved, and only when the fields are empty at the time the form is saved. You can manually override any of these properties as you need.
 
 	Properties fields are used all over the Open ERP system and particularly extensively in a multi-company environment. There, property fields in a partner form can be populated with different values depending on the user's company.
 
@@ -111,11 +111,11 @@ Enter \ ``Radiators``\   in the  *Name*  field and, watching the  *Product Categ
 
 Now create a new product:
 
-	#. Go to the  *Products > Products* menu and click  *New* 
+	#. Go to the :menuselection:`Products --> Products` menu and click :guilabel:`New`, 
 
-	#. Create a product – type \ ``Titanium Alloy Radiator``\  in the  *Name* field,
+	#. Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field,
 
-	#. Click the Search icon to the right of the  *Category* field to select the  *Radiators* category,
+	#. Click the Search icon to the right of the :guilabel:`Category` field to select the :guilabel:`Radiators` category,
 
 	#. The  *Product Type* field should stay as \ ``Stockable Product``\   its default value. The fields  *Procure Method*   *Default UOM* and  *Purchase UOM* should also stay at their default values: in fact every other field remains untouched.
 
@@ -135,13 +135,13 @@ Now create a new product:
 Stock locations
 -----------------
 
-Click  *Inventory Control > Location Structure*  to see the hierarchy of stock locations. These locations have been defined by the minimal default data loaded when the database was created. You'll use this default structure in this example.
+Click :menuselection:`Inventory Control --> Location Structure` to see the hierarchy of stock locations. These locations have been defined by the minimal default data loaded when the database was created. You'll use this default structure in this example.
 
-	#. From the  *Main Menu*  click on  *Inventory Control > Configuration > Locations* to reach a list view of the locations (not the tree view)
+	#. From the :guilabel:`Main Menu` click on :menuselection:`Inventory Control --> Configuration --> Locations` to reach a list view of the locations (not the tree view)
 
 	#. Click on the name of a location, such as \ ``Company``\   to open a descriptive form view. Each location has a  *Location type*  and a  *Parent Location* that defines he hierarchical structure. An  *Inventory Account* can also be assigned to a location.
 
-	#. From the  *Main Menu*  click  *Inventory Control > Configuration > Warehouses* to view a list of warehouses.
+	#. From the :menuselection:`Main Menu` click :menuselection:`Inventory Control --> Configuration --> Warehouses` to view a list of warehouses.
 
 .. tip:: Valuation of stock 
 
@@ -174,11 +174,11 @@ You can also run multiple charts of accounts in parallel – so you can put all 
 
 Before you can use any chart of accounts for anything you need to specify a Fiscal Year. This defines the different time periods available for accounting transactions. To do so:
 
-	#. Select  *Financial Management > Configuration > Periods > Fiscal Years* and click  *New* to open a blank  *Fiscal Year* definition form.
+	#. Select :menuselection:`Financial Management --> Configuration --> Periods --> Fiscal Years` and click  *New* to open a blank  *Fiscal Year* definition form.
 
-	#. Give a name to that  *Fiscal Year* (such as inancial Year 2008 and a  *Code* (Y2008, then select the  *Start date* and  *End date*  which should be a year apart and (for this example) straddle today's date.
+	#. Give a name to that :guilabel:`Fiscal Year` (such as Financial Year 2009 and a  *Code* (Y2009, then select the  *Start date* and  *End date*  which should be a year apart and (for this example) straddle today's date.
 
-	#. Then click on one of the buttons  *Create Monthly Periods* or  *Create 3 Months Periods* to create an appropriate set of periods for the fiscal year, as shown in the figure below.  *Save* this.
+	#. Then click on one of the buttons :guilabel:`Create Monthly Periods` or :menuselection:`Create 3 Months Periods` to create an appropriate set of periods for the fiscal year, as shown in the figure below.  *Save* this.
 
 
 .. figure::  images/def_fiscal_year_tab.png
@@ -186,7 +186,7 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 
    *Defining a fiscal year and the accounting periods within it.*
 
-Click  *Financial Management > Charts > Charts of Accounts*  and then click  *Open Charts*  on the  *Fiscal Year*  that you've just created to see a hierarchical structure of the accounts. You can click on the expand/collapse icon of the top tree node to show the detail of this minimal chart.
+Click :menuselection:`Financial Management --> Charts --> Charts of Accounts` and then click :guilabel:`Open Charts` on the :menuselection:`Fiscal Year` that you've just created to see a hierarchical structure of the accounts. You can click on the expand/collapse icon of the top tree node to show the detail of this minimal chart.
 
 .. index::
    single: Database; Backup

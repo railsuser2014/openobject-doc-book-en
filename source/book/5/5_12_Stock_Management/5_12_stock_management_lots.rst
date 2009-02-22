@@ -5,7 +5,7 @@ The double-entry management in Open ERP enables you to run very advanced traceab
 
 .. note:: Upstream and downstream traceability
 
-.. TODO - I don't think that this is the right direction
+.. todo:: - I don't think that this is the right direction
 
     **Upstream** traceability runs from the raw materials received from the supplier and follows the chain to the finished products delivered to customers.
 

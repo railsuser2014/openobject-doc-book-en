@@ -392,7 +392,7 @@ The calculation of requirements prioritises the procurements. If you encode a pu
 
 .. tip:: Shortcuts
 
-   .. TODO - left ... or right?
+   .. todo:: - left ... or right?
 
    On the product form you have a shortcut to the left that lets you quickly create a new procurement order.
 

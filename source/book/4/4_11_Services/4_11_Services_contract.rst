@@ -115,9 +115,7 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 .. figure::  images/service_timesheet_invoice.png
    :align: center
 
-   *Screen for invoicing services*
-
- *Project Management > Analytic Accounts* 
+   *Screen for invoicing services.*
 
 .. note:: Project Management and analytic accounts 
 

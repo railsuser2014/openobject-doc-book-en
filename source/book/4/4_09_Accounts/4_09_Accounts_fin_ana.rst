@@ -139,7 +139,7 @@ These different menus give quick views that are very useful for live projects. F
 
 In the following chapters you'll see how each project manager can use this information to carry out the different operations needed to manage the project, such as automatic invoicing, project planning, keeping customers up to date, and budgeting for resources.
 
-.. TODO - What is the situation now?
+.. todo:: - What is the situation now?
 
 .. note:: Analytic Budgets
 

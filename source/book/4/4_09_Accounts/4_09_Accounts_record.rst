@@ -58,7 +58,7 @@ To visualize the general entries following these different actions you can use o
 
 	#. To see all of the entries by Journal:  *Financial Management > Entries > Analytic Entries > Entries by journal*  and then click on one of the journal names.
 
-.. TODO - this did not work originally. Does it now?
+.. todo:: - this did not work originally. Does it now?
 
 .. note:: Reviewing a hierarchical account
 
@@ -85,7 +85,7 @@ To make manual record entries, use the menu  *Financial Management > Entries > A
 
 Select a journal and complete the different fields. Write an expense as a negative figure and income as a positive figure.
 
-.. TODO - check behaviour now
+.. todo:: - check behaviour now
 
 .. tip::  Entering a date 
 

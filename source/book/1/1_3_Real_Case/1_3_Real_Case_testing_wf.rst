@@ -27,7 +27,7 @@ Following this, you'll sell some of these products, using this sequence:
 Purchase Order
 ---------------
 
-To place a Purchase Order with your supplier, use the menu  *Purchase Management > Purchase Order*  for a new Purchase Order form.
+To place a Purchase Order with your supplier, use the menu :menuselection:`Purchase Management --> Purchase Order` for a new Purchase Order form.
 
 Complete the following fields:
 
@@ -76,7 +76,7 @@ Receiving Goods
 
 After confirming the order you'd wait for the delivery of the products from your supplier. Typically this would be somebody in Stores rather than Purchasing, who would:
 
-	#. Open the menu  *Inventory Control > Packing Lists > Getting Goods > Packings to be Received*  using the expand/collapse icon rather than clicking directly on  *Packing Lists* 
+	#. Open the menu :menuselection:`Inventory Control --> Packing Lists --> Getting Goods --> Packings to be Received` using the expand/collapse icon rather than clicking directly on  *Packing Lists* 
 
 	#. When the  *Packing list* window appears, select the name of the entry in the list (\ ``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name or order number in a list that was larger than this – then click  *Validate* to load the  *Make Packing* form.
 
@@ -84,7 +84,7 @@ After confirming the order you'd wait for the delivery of the products from your
 
 At this point you've accepted 10 units into your company, in a location defined by the Warehouse that you specified near the top of your Purchase Order.
 
-To check actual stock levels, use the menu  *Inventory Control > Location Structure* , find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through the tree and click it. That will show everything in the \ ``Stock``\   location and below it – including  *Real stock*  (the actual quantity recorded in that location and below it) and  *Virtual stock*  (the quantities expected in future when all receipts and despatches have been made) – both \ ``10``\   in this case.
+To check actual stock levels, use the menu :menuselection:`Inventory Control --> Location Structure` , find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through the tree and click it. That will show everything in the \ ``Stock``\   location and below it – including  *Real stock*  (the actual quantity recorded in that location and below it) and  *Virtual stock*  (the quantities expected in future when all receipts and despatches have been made) – both \ ``10``\   in this case.
 
 Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \ ``Locations``\   text itself), and then click the  *Print*  button to the top right of the form to test the available different reports (such as  *Lots by Location* ). You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \ ``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
 
@@ -116,20 +116,20 @@ Alternatively you could click the top-level \ ``Locations``\   line to highlight
 Control of purchase invoices
 -----------------------------
 
-When you've received an invoice from your supplier (which would usually be your Accounts department) go to the menu  *Financial Management > Invoices > Supplier Invoice > Draft Supplier Invoices*  to open a list of supplier invoices waiting for receipt (you'll have to use the expand/collapse icon on  *Supplier Invoice*  rather than click the text, which would create a new Invoice). These invoices enable your Accounts Department to match the the price and quantities ordered against the price and quantities on the supplier's invoice – it's not uncommon to receive an invoice showing details more favourable to the supplier than those agreed at the time of purchase.
+When you've received an invoice from your supplier (which would usually be your Accounts department) go to the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoice --> Draft Supplier Invoices`  to open a list of supplier invoices waiting for receipt (you'll have to use the expand/collapse icon on  *Supplier Invoice*  rather than click the text, which would create a new Invoice). These invoices enable your Accounts Department to match the the price and quantities ordered against the price and quantities on the supplier's invoice – it's not uncommon to receive an invoice showing details more favourable to the supplier than those agreed at the time of purchase.
 
 In this example, you created an invoice automatically when you confirmed the supplier's Purchase Order. That's because the  *Invoicing Control*  field on the order was set to \ ``On Order``\   (the default option). Other options enable you to create invoices at the time of receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 
 Now click the invoice for your order \ ``PO/001``\   to display its contents. You can compare the goods that you've recorded there with the invoice received from your supplier. If there's a difference it's possible to change the order lines to, for example, add a delivery charge. Click  *Validate*  to confirm the invoice and put it into the \ ``Open``\   state.
 
-Accounting entries are generated automatically once the invoice is validated. To see the effects on your chart of accounts, use the menu  *Financial Management > Charts > Chart of Accounts* .
+Accounting entries are generated automatically once the invoice is validated. To see the effects on your chart of accounts, use the menu :menuselection:`Financial Management --> Charts --> Chart of Accounts` .
 
 Paying the supplier
 ---------------------
 
-Select the menu  *Financial Management > Invoices > Supplier Invoices > Open Supplier Invoices*  to obtain a list of supplier invoices that haven't yet been paid. Click the  *Edit*  (pencil) icon to the right end of the line for the invoice derived from \ ``PO/001``\   to open the invoice form in editable mode. In practice you'd search for the invoice by order number or, more generally, for invoices nearing their payment date.
+Select the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices --> Open Supplier Invoices`  to obtain a list of supplier invoices that haven't yet been paid. Click the  *Edit*  (pencil) icon to the right end of the line for the invoice derived from \ ``PO/001``\   to open the invoice form in editable mode. In practice you'd search for the invoice by order number or, more generally, for invoices nearing their payment date.
 
-Click  *Pay Invoice*  in the toolbar to the right of the form, which opens a Window with a description of the payment. Select \ ``Bank Journal``\   in the  *Journal*  field. Then click  *Pay Invoice*  to the top left of the form, which carries out the payment action within Open ERP and returns you to the main menu.
+Click  *Pay Invoice*  in the toolbar to the right of the form, which opens a Window with a description of the payment. Select \ ``Bank Journal``\   in the  *Journal*  field. Then click :guilabel:`Pay Invoice` to the top left of the form, which carries out the payment action within Open ERP and returns you to the main menu.
 
 .. note:: Payment of an invoice
 
@@ -137,12 +137,12 @@ Click  *Pay Invoice*  in the toolbar to the right of the form, which opens a Win
 	If you're using the accounting module fully other, more efficient, methods let you manage payments, 
 	such as entering account statements, reconciling paperwork, using tools for preparing payments, interfacing with banks.
 
-You can monitor the accounting impact of paying the invoice through the chart of accounts available from the menu  *Financial Management > Charts > Chart of Accounts* . Open ERP automatically creates accounting entries from the payment and can reconcile the payment to the invoice.
+You can monitor the accounting impact of paying the invoice through the chart of accounts available from the menu :menuselection:`Financial Management --> Charts --> Chart of Accounts`. Open ERP automatically creates accounting entries from the payment and can reconcile the payment to the invoice.
 
 From Sales Proposal to Sales Order
 -----------------------------------
 
-In Open ERP, sales proposals and sales orders are managed using documents that are based on the same common functionality as purchase orders, so you'll recognize the following documents in general but notice changes to their detail and to their workflows. To create a new sales proposal, use the menu  *Sales Management > Sales Order*  which creates a new order in a state of \ ``Quotation``\  , then:
+In Open ERP, sales proposals and sales orders are managed using documents that are based on the same common functionality as purchase orders, so you'll recognize the following documents in general but notice changes to their detail and to their workflows. To create a new sales proposal, use the menu :menuselection:`Sales Management --> Sales Order` which creates a new order in a state of \ ``Quotation``\  , then:
 
 	#. Select \ ``Default Shop``\  in the  *Shop* field. The shop is linked to a warehouse, which defines the location that you'll use to despatch goods from.
 
@@ -163,19 +163,19 @@ In Open ERP, sales proposals and sales orders are managed using documents that 
 
 	#. In the last tab of the order,  *History*  you can see the  *Picking List* that's been created and you'll be able to see any invoices that relate to this order when they're generated.
 
-From the  *Main Menu*  click  *Products > Products*  to display a list of products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its  *Real Stock*  still shows \ ``10.00``\   but its  *Virtual Stock*  now shows \ ``4.00``\   to reflect the new future requirement of 6 units for despatch.
+From the :guilabel:`Main Menu` click :menuselection:`Products --> Products` to display a list of products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its  *Real Stock*  still shows \ ``10.00``\   but its  *Virtual Stock*  now shows \ ``4.00``\   to reflect the new future requirement of 6 units for despatch.
 
 Preparing goods for despatch to customers
 -------------------------------------------
 
-The stores manager selects the menu  *Inventory Control > Packing Lists > Sending Goods > Confirmed Packings Awaiting Assignation*  to get a list of orders to despatch. In this example there's only one, \ ``OUT:1``\  , so click the text to open the  *Picking List* . 
+The stores manager selects the menu :menuselection:`Inventory Control --> Packing Lists --> Sending Goods --> Confirmed Packings Awaiting Assignation` to get a list of orders to despatch. In this example there's only one, \ ``OUT:1``\  , so click the text to open the  *Picking List* . 
 
 .. tip::  Calculating Requirements
 
 	At the moment your Sales Order is waiting for products to be reserved to fulfil it. 
 	A stock reservation activity takes place periodically to calculate the needs, 
 	which also takes customer priorities into account. 
-	The calculation can be started from the menu *Production > Calculate Requirements*. 
+	The calculation can be started from the menu :menuselection:`Production --> Calculate Requirements`. 
 	Running this automatically reserves products. 
 
 	If you don't want to have to work out your stock needs but have a lean workflow you can install the ``mrp_jit`` (Just In Time) module.
@@ -188,11 +188,11 @@ Now click  *Validate*  on the  *Packing List*  to mark the move that you'd be ma
 
 The goods are now in your Output Bay, which had been defined by default in Open ERP as  *Output* , as a single package with a  *Lot Number*  of \ ``OUT:1``\  . 
 
-To register when a carrier picks up the package, use the menu  *Inventory Control > Delivery Order > Delivery Orders to Process* . Select the appropriate line \ ``OUT:1``\   to open the  *Stock Move*  form, then click  *Move Lot* . Its state changes to \ ``Moved``\  . Packing is defined by Sales Orders so if you pack fewer packages than are on order Open ERP automatically manages the remainder for future delivery. 
+To register when a carrier picks up the package, use the menu :menuselection:`Inventory Control --> Delivery Order --> Delivery Orders to Process`. Select the appropriate line \ ``OUT:1``\   to open the  *Stock Move*  form, then click  *Move Lot* . Its state changes to \ ``Moved``\  . Packing is defined by Sales Orders so if you pack fewer packages than are on order Open ERP automatically manages the remainder for future delivery. 
 
 To analyze stock movements that you've made during these operations use the following steps:
 
-	#. Select menu  *Inventory Control > Locations Structure* 
+	#. Select menu :menuselection:`Inventory Control --> Locations Structure`, 
 
 	#. Select the first line by clicking somewhere along it (but don't click on the \ ``Locations``\  text itself) then click on the  *Print* icon above the list further over to the right.
 
@@ -216,7 +216,7 @@ To analyze stock movements that you've made during these operations use the foll
 Invoicing Goods
 -----------------
 
-Use the menu  *Financial Management > Invoices > Customer Invoice > Draft Customer Invoices*  to open a list of invoices generated by Open ERP. These are in the \ ``Draft``\   state, which means that they don't yet have any presence in the accounting system. You'll find a draft invoice has been created for the order \ ``SO/001``\   once you have despatched the goods because you'd selected \ ``Automatic Invoice after Delivery``\  .
+Use the menu :menuselection:`Financial Management --> Invoices --> Customer Invoice --> Draft Customer Invoices` to open a list of invoices generated by Open ERP. These are in the \ ``Draft``\   state, which means that they don't yet have any presence in the accounting system. You'll find a draft invoice has been created for the order \ ``SO/001``\   once you have despatched the goods because you'd selected \ ``Automatic Invoice after Delivery``\  .
 
 Once you confirm an invoice, Open ERP assigns it a unique number, and all of the corresponding accounting entries are generated. So open the invoice and click  *Create*  to do that and move the invoice into an \ ``Open``\   state.
 
@@ -229,7 +229,7 @@ Review your chart of accounts to check the impact of these activities on your ac
 Customer Payment
 -----------------
 
-Registering an invoice payment by a customer is essentially the same as the process of paying a supplier. From the menu  *Financial Management > Invoices > Customer Invoice > Open Customer Invoices* , click the name of the invoice that you want to mark as paid:
+Registering an invoice payment by a customer is essentially the same as the process of paying a supplier. From the menu :menuselection:`Financial Management --> Invoices --> Customer Invoice --> Open Customer Invoices`, click the name of the invoice that you want to mark as paid:
 
 	#. Use the  *Pay Invoice* button in the  *Action* section of the toolbar at the right to open a window that enables you to register the payment.
 

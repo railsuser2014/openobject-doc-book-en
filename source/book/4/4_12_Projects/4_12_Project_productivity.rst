@@ -142,8 +142,6 @@ You have to empty your Inbox periodically. To do that, use the menu  *Project Ma
 
    *Timebox for tasks to be done today.*
 
- *Project Management > Time Management > My timebox for the day* 
-
 Then click on the button at the top right:  *Plan the timebox* . This procedure lets you select the tasks for the day from those in the timebox for the week. This operation gives you an overview of the medium term tasks and objectives and makes you review them there at least once a day. It's then that you'd decide to allocate a part of your time that day to certain tasks based on your priorities.
 
 Since the tasks are sorted by priority, it's sufficient to take the first from the list, up to the number of hours in your day. That'll only take a minute, because the selection isn't taken from every task you know about in the future, but just from those selected for the current week. 

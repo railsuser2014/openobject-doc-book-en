@@ -3,7 +3,6 @@
 Foreword
 ********
 
-
 Information Systems have played an increasingly visible role over the past several years in improving the competitiveness of business. More than just tools for handling repetitive tasks, they're used to guide and advance all of a company's' daily activities. Integrated management software is today very often a key source of significant competitive advantage.
 
 The standard response to a need for responsiveness, reliability, and rapidly increasing expectations is to create an organization based on departments with a clear linear structure, integrated around your operating processes. To increase efficiency amongst salespeople, accountants, logistics staff and everyone else you should have a common understanding of your problems.

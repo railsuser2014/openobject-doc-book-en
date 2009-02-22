@@ -74,7 +74,7 @@ Connect to the new \ ``openerp_ch03``\   database as user \ ``admin``\   with it
 
 	#.  *Installation done*  click  *Ok* 
 
-Use the menu  *Administration > Modules Management > Modules > Uninstalled Modules*  to show the list of all modules that are registered within Open ERP but as yet uninstalled. Then:
+Use the menu :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled Modules` to show the list of all modules that are registered within Open ERP but as yet uninstalled. Then:
 
 	#. Enter \ ``product``\  into the  *Name* field and click  *Filter* to list the product module.
 

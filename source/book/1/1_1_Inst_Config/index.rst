@@ -14,24 +14,21 @@ This chapter focuses on the installation of Open ERP so that you can begin to f
 .. index::
    single: Tiny ERP
 
-.. tip::   **Reminder**  *Renaming from Tiny ERP to Open ERP* 
+.. note:: Renaming from Tiny ERP to Open ERP 
 
-
-	Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from time to time. 
-
+   Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from time to time. 
 
 .. index::
    single:SaaS
 ..
 
-.. tip::   **Advice**  *The SaaS, or “on-demand”, offer* 
+.. note:: The SaaS, or “on-demand”, offer
 
+   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that includes hardware (servers), system maintenance, provision of hosting services, and support.
 
-	SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that includes hardware (servers), system maintenance, provision of hosting services, and support.
+   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get started quickly without incurring costs for integration or for buying computer systems. Many of Tiny's partner companies will access this, and some may offer their own similar service.
 
-	You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get started quickly without incurring costs for integration or for buying computer systems. Many of Tiny's partner companies will access this, and some may offer their own similar service.
-
-	This service should be particularly useful to small companies that just want to get going quickly and at low cost. It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture used in banks and other large organizations. Open ERP is that system, and is described in detail throughout this book.
+   This service should be particularly useful to small companies that just want to get going quickly and at low cost. It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture used in banks and other large organizations. Open ERP is that system, and is described in detail throughout this book.
 
 Whether you want to test Open ERP or to put it into full production, you have at least two starting points:
 
@@ -41,21 +38,21 @@ Whether you want to test Open ERP or to put it into full production, you have a
 
 There are some differences between installing Open ERP on Windows and on Linux systems, but once installed, it gives the same functions from both so you won't generally be able to tell which type of server you're using.
 
-.. tip::   **Alternative**  *Linux, Windows, Mac* 
+.. note:: Linux, Windows, Mac 
 
-	Although this book deals only with installation on Windows and Linux systems, the same versions are also available for the Macintosh on the official website of Open ERP.
+   Although this book deals only with installation on Windows and Linux systems, the same versions are also available for the Macintosh on the official website of Open ERP.
 
-.. tip::   **URL**  *Web sites for Open ERP* 
+.. note:: Web sites for Open ERP 
 
-	* Main Site: http://openerp.com,
+   * Main Site: http://openerp.com,
 
-	* SaaS or “on-demand” Site: http://ondemand.openerp.com,
+   * SaaS or “on-demand” Site: http://ondemand.openerp.com,
 
-	* Community discussion forum where you can often receive informed assistance: http://openobject.com/forum.
+   * Community discussion forum where you can often receive informed assistance: http://openobject.com/forum.
 
-.. tip::   **Note**  *Current documentation* 
+.. tip:: Current documentation 
 
-	The procedure for installing Open ERP and its web server are sure to change and improve with each new version, so you should always check each release's documentation – both packaged with the release and on the website – for exact installation procedures.
+   The procedure for installing Open ERP and its web server are sure to change and improve with each new version, so you should always check each release's documentation – both packaged with the release and on the website – for exact installation procedures.
 
 Once you've completed this installation, you'll create and configure a database to confirm that your Open ERP installation is working.
 

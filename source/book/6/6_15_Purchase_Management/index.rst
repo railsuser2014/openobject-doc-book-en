@@ -96,7 +96,7 @@ Then leave the document in that state. When you receive the response from the su
 
 When you want to approve the order, use the button *Confirm ??? Supplier*. The price request then passes into the confirmed state. Since this isn't confirmed by the supplier any more, it has no further impact on the system. To approve it click the button *Approved by Supplier*.
 
-.. TODO several ??? here, need to replace them.
+.. todo:: several ??? here, need to replace them.
 
 .. tip:: ??? Receipt
 

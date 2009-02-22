@@ -179,7 +179,7 @@ You can set an attendance grid (or the timesheets) in the project file. If you d
 	This is all based on the deadline data and displays only tasks that have a deadline. 
 	You can then delete, create or modify tasks using simple drag and drop.
 	
-	.. TODO - is this true any more?
+	.. todo:: - is this true any more?
 
 	This view isn't available in Open ERP's GTK client.
 

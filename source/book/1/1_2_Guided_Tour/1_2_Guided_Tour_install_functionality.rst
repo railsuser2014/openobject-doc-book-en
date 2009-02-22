@@ -19,11 +19,11 @@ You'll start by checking if there are any updates available online that apply to
 Updating the Modules list
 ---------------------------
 
-Click  *Administration > Modules Management > Update Modules List*  to start the updating tool. The  *Scan for new modules*  window opens showing the addresses that Open ERP will look in for downloading new modules (known as the repositories), and updating existing ones.
+Click :menuselection:`Administration --> Modules Management --> Update Modules List` to start the updating tool. The :guilabel:`Scan for new modules` window opens showing the addresses that Open ERP will look in for downloading new modules (known as the repositories), and updating existing ones.
 
 .. tip:: Remote module repositories 
 
-	If the repository list doesn't reflect your needs then you can edit it from *Administration > Modules Management > Repositories*. There you can link to new repositories by adding their URLs and disable listed ones by unchecking their *Active* checkbox. If you're not connected to the Internet then you probably want to disable anything there. 
+	If the repository list doesn't reflect your needs then you can edit it from :menuselection:`Administration --> Modules Management --> Repositories`. There you can link to new repositories by adding their URLs and disable listed ones by unchecking their *Active* checkbox. If you're not connected to the Internet then you probably want to disable anything there. 
 
 	Your Open ERP installation must be configured with its addons directory as writable for you to be able to download anything at all. If it hasn't been, then you may need the assistance of a systems administrator to change your server's settings so that you can install new modules.
 
@@ -51,7 +51,7 @@ Installing a module
 
 You'll now install a module named \ ``product``\  , which will enable you to manage the company's products. This is part of the core installation, so you don't need to load anything to make this work, but isn't installed in the Minimal Profile. 
 
-Open the list of uninstalled modules from  *Administration > Modules Management > Uninstalled Modules* . Search for the module by entering the name \ ``product``\   in the search screen then clicking it in the list that appears below it to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
+Open the list of uninstalled modules from :menuselection:`Administration --> Modules Management --> Uninstalled Modules`. Search for the module by entering the name \ ``product``\   in the search screen then clicking it in the list that appears below it to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
 
 
 .. figure:: images/install_product_module.png
@@ -62,22 +62,22 @@ Open the list of uninstalled modules from  *Administration > Modules Management 
 
 .. tip::  Technical Guide 
 
-	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu *Administration > Modules Management > Installed Modules* produces the most fruitful list. 
+	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu :menuselection:`Administration --> Modules Management --> Installed Modules` produces the most fruitful list. 
 
 	This report comprises a list of all the objects and all the fields along with their descriptions. The report adapts to your system and reflects any modifications you've made and all the other modules you've installed. 
 
-Click  *Apply Upgrades*  then  *Start Upgrades*  on the  *System Upgrade*  form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu  *Products*  has become available.
+Click :guilabel:`Apply Upgrades`  then :guilabel:`Start Upgrades`  on the :guilabel:`System Upgrade` form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu :menuselection:`Products` has become available.
 
 .. tip::  Refreshing the menu in the GTK client 
 
-	After an update in the GTK client you'll have to open a new menu to refresh the content – otherwise you won't see the new menu item. To do that use the window menu *Form > Refresh/Cancel*.
+	After an update in the GTK client you'll have to open a new menu to refresh the content – otherwise you won't see the new menu item. To do that use the window menu :menuselection:`Form --> Refresh/Cancel`.
 
 Installing a module with its dependencies
 -------------------------------------------
 
 You'll now install the CRM module (Customer Relationship Management) using the same process as before.
 
-	#. Use  *Administration > Modules Management > Uninstalled Modules* to get a list of modules to install. Search for the \ ``crm``\  module in that list.
+	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list of modules to install. Search for the \ ``crm``\  module in that list.
 
 	#. Install the module by clicking  *Install* and then  *Apply Upgrades* on the resulting module form, followed by  *Start Upgrade* on the toolbar to the right.
 
@@ -85,7 +85,7 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 
 	#. Start the upgrade to install both modules.
 
-When you return to the main menu you'll find the new customer relationship management menu  *CRM & SRM* . You'll also see all the accounting functions that are now available in the  *Financial Management* menu.
+When you return to the main menu you'll find the new customer relationship management menu :menuselection:`CRM & SRM`. You'll also see all the accounting functions that are now available in the :menuselection:`Financial Management` menu.
 
 There is no particular relationship between the modules installed and the menus added. Most of the core modules add complete menus but some also add submenus to menus already in the system. Other modules add menus and submenus as they need. Modules can also add additional fields to existing forms, or simply additional demonstration data or some settings specific to a given requirement.
 
@@ -107,14 +107,14 @@ Although you can install a module and all its dependencies at once, you can't re
 
 	So it's recommended that you make a backup of the database before installing your new modules so that you can test the new modules and decide whether they're suitable or not. If they're not then you can return to your backup. If they are, then you'll probably still reinstall the modules on your backup so that you don't have to delete all your test data.
 
-	If you wanted to uninstall you would use the menu *Administration > Modules Management > Installed Modules* and then uninstall them in the inverse order of their dependencies: crm, account, product.
+	If you wanted to uninstall you would use the menu :menuselection:`Administration --> Modules Management --> Installed Modules` and then uninstall them in the inverse order of their dependencies: ``crm``, ``account``, ``product``.
 
 Installing additional functionality
 -------------------------------------
 
 To discover the full range of Open ERP's possibilities you can install many additional modules. Installing them with their demonstration data provides a convenient way of exploring the whole core system. When you build on the \ ``openerp_ch02``\   database you'll automatically include demonstration data because you checked the  *Load Demonstration Data*  checkbox when you originally created the database.
 
-So click  *Administration > Modules Management > Update Modules List*  to upload and update to the latest versions of everything on the Open ERP site. If you don't have an internet connection, or if you're not permitted to modify your installation's \ ``addons``\   directory you can skip this step.
+So click :menuselection:`Administration --> Modules Management --> Update Modules List` to upload and update to the latest versions of everything on the Open ERP site. If you don't have an internet connection, or if you're not permitted to modify your installation's \ ``addons``\   directory you can skip this step.
 
 .. index::
   single: Module; Import 
@@ -126,7 +126,7 @@ So click  *Administration > Modules Management > Update Modules List*  to upload
 	Your Open ERP addons directory must be writable by the system user that's running your Open ERP application for this, 
 	as described in the final section of Chapter 1.
 
-Click  *Administration > Modules Management > Uninstalled modules*  to give you an overview of all of the modules available for installation.
+Click :menuselection:`Administration --> Modules Management --> Uninstalled modules` to give you an overview of all of the modules available for installation.
 
 To test several modules you won't have to install them all one by one. You can use the dependencies between modules to load several at once. For example, try loading the following modules:
 
@@ -138,7 +138,7 @@ To test several modules you won't have to install them all one by one. You can u
 
 To find these quickly, enter the word \ ``profile``\   in the  *Name*  field of the search form and click  *Filter*  to search for the relevant modules. Then install them one by one or all at once.
 
-As you update you'll see thirty or so modules to be installed. When you close the  *System Upgrade Done*  form you'll be returned to a dashboard, not the main menu you had before. To get to the main menu, use the  *Main Menu*  link.
+As you update you'll see thirty or so modules to be installed. When you close the :guilabel:`System Upgrade Done` form you'll be returned to a dashboard, not the main menu you had before. To get to the main menu, use the :guilabel:`Main Menu` link.
 
 
 

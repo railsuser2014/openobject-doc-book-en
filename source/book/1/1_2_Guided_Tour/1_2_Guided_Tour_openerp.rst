@@ -5,7 +5,7 @@ You'll now explore the database \ ``openerp_ch02``\   with these profile modules
 
 .. tip:: Translating new modules
 
-	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use Administration > Translation > Load a New Language.
+	When you've installed a new module and are using additional languages to English you have to reload the translation file. New terms introduced in these modules aren't translated by default. To do this use :menuselection:`Administration --> Translation --> Load a New Language`.
 
 Depending on the user you're connected as the page appears differently from the Main Menu that showed before. Using the installation sequence above, certain dashboards may be assigned as various users' home pages. They show a summary of the information required to start the day effectively. A project dashboard might contains:
 
@@ -38,16 +38,16 @@ Users' home pages are automatically reassigned during the creation or upgrading 
 
 	Each user has access to many menu items throughout all of the available menu hierarchy. But in general an employee uses only a small part of the system's functions.
 
-	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To create a new shortcut open the select menu and click on the Add link to the right of shortcuts.
+	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To create a new shortcut open the select menu and click on the :guilabel:`Add` link to the right of :guilabel:`Shortcuts`.
 
-	To change or replace a link click on the Shortcuts link. Open ERP then opens a list of editable shortcuts.
+	To change or replace a link click on the :guilabel:`Shortcuts` link. Open ERP then opens a list of editable shortcuts.
 
 The following sections present an overview of the main functions of Open ERP. Some areas are covered in more detail in the following chapters of this book and you'll find many other functions available in the optional modules. Functions are presented in the order that they appear on the main menu.
 
 Partners
 ---------
 
-To familiarize yourself with Open ERP's interface, you'll start work with information about partners. Clicking  *Partners > Partners*  brings up a list of partners that were automatically loaded when you created the database with  *Load Demonstration Data*  checked.
+To familiarize yourself with Open ERP's interface, you'll start work with information about partners. Clicking :menuselection:`Partners --> Partners` brings up a list of partners that were automatically loaded when you created the database with :guilabel:`Load Demonstration Data` checked.
 
 .. index::
   single: Partner; Search Partners
@@ -132,7 +132,7 @@ Certain actions can be started by the following buttons in the  *Actions*  secti
 
 	When you're viewing a form in the GTK client, the buttons to the right of the form are shortcuts to the same Reports, Actions and Links as described in the text. When you're viewing a list (such as the partner list) those buttons aren't available to you. Instead, you can reach Reports and Actions through two of the buttons in the toolbar at the top of the list – Print and Action. 
 
-Partners are used throughout the Open ERP system in other documents. For example, the menu  *Sales Management > Sales Orders > All Sales Orders*  brings up all the Sales Orders in list view. Click the name of a partner rather than the order number on one of those lines and you'll get the Partner form rather than the Sales Order form.
+Partners are used throughout the Open ERP system in other documents. For example, the menu :menuselection:`Sales Management --> Sales Orders --> All Sales Orders` brings up all the Sales Orders in list view. Click the name of a partner rather than the order number on one of those lines and you'll get the Partner form rather than the Sales Order form.
 
 .. tip:: Right clicks and shortcuts
 
@@ -140,14 +140,14 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 
 	In the web client you'll see hyperlink shortcuts on several of the fields on a form that's in Read-Only mode, so that you can move onto the form for those entries. When the web form is in Edit mode, you can instead hold down the control button on the keyboard and right-click with the mouse button in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK client.
 
-	You can quickly try this out by going to any one of the sales orders in Sales Management > Sales Order > All Sales Orders and seeing what you can reach from the partner field on that sales order form using either the web client with the form in both read-only and in edit mode, or with the GTK client.
+	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales Management --> Sales Order --> All Sales Orders` and seeing what you can reach from the partner field on that sales order form using either the web client with the form in both read-only and in edit mode, or with the GTK client.
 	
 .. figure:: images/familiarization_sale_partner.png
    :align: center
    
    *Links for a partner appear in an order form.*
 
-Before moving on to the next module, take a quick look into the  *Partners > Configuration*  menu, particularly  *Categories*  and  *Localisation* . They contain some of the demonstration data that you installed when you created the database.
+Before moving on to the next module, take a quick look into the :menuselection:`Partners --> Configuration`  menu, particularly :menuselection:`Categories`  and  :menuselection:`Localisation`. They contain some of the demonstration data that you installed when you created the database.
 
 .. index::
   single: Accounting and finance
@@ -174,7 +174,7 @@ Open ERP also provides integrated analytical accounting, which enables manageme
 Dashboards
 -----------
 
-Dashboards give you an overview of all the information that's important to you on a single page. The  *Dashboards*  menu gives you access to predefined boards for  *Accounting* ,  *Production*  and  *Project Management* .
+Dashboards give you an overview of all the information that's important to you on a single page. The :menuselection:`Dashboards` menu gives you access to predefined boards for :menuselection:`Accounting`, :menuselection:`Production` and :menuselection:`Project Management`.
 
 .. note:: Dashboards 
 
@@ -230,7 +230,7 @@ The value of this approach for some sectors is that you can just define a templa
 
 			This separation of variant types requires the optional module ``product_variant_multi``. Using it means that you can avoid an explosion in the number of products to manage in the database. If you take the example above it's easier to manage a template with 15 variants in four different types than 160 completely different products. This module is available in the extra_addons list (it had not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
-The  *Products*  menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
+The :menuselection:`Products` menu gives you access to the definition of products and their constituent templates and variants, and to price lists.
 
 .. index::
    single: Products; Consumables
@@ -242,7 +242,7 @@ The  *Products*  menu gives you access to the definition of products and their c
 
 Open a product form to see the information that describes it. Several different types of product can be found in the demonstration data, giving quite a good overview of the possible options.
 
-Price lists ( *Products > Pricelists* ) determine the purchase and selling prices and adjustments derived from the use of different currencies. The  *Default Purchase Pricelist*  uses the product's  *Cost*  field to base a Purchase price on. The  *Default Sale Pricelist*  uses the product's  *List Price*  field to base a Sales price on when issuing a quote.
+Price lists (:menuselection:`Products --> Pricelists`) determine the purchase and selling prices and adjustments derived from the use of different currencies. The  *Default Purchase Pricelist*  uses the product's  *Cost*  field to base a Purchase price on. The  *Default Sale Pricelist*  uses the product's  *List Price*  field to base a Sales price on when issuing a quote.
 
 Price lists are extremely flexible and enable you to put a whole price management policy in place. They're composed of simple rules that enable you to build up a rule set for most complex situations: multiple discounts, selling prices based on purchase prices, price reductions, promotions on whole product ranges and so on.
 
@@ -282,7 +282,7 @@ Open ERP's Human Resources Management modules provide such functionality as:
 
 * management of skills and competencies.
 
-Most of these functions are provided from optional modules whose name starts with \ ``hr_``\   rather than the core HR module, but they're all loaded into the main  *Human Resources*  menu.
+Most of these functions are provided from optional modules whose name starts with \ ``hr_``\   rather than the core HR module, but they're all loaded into the main :menuselection:`Human Resources` menu.
 
 The different issues are handled in detail in the fourth section of this book, dedicated to internal organization and to the management of a services business.
 
@@ -326,7 +326,7 @@ Furthermore, just like accounts, stock locations are hierarchical, so you can ca
 Customer and Supplier Relationship Management
 -----------------------------------------------
 
-Open ERP provides many tools for managing relationships with partners. These are available through the  *CRM & SRM*  menu.
+Open ERP provides many tools for managing relationships with partners. These are available through the :menuselection:`CRM & SRM` menu.
 
 .. tip::  **CRM** and **SRM** 
 
@@ -366,13 +366,13 @@ You can handle partial deliveries in Open ERP, so you can keep track of items t
 
 Open ERP's replenishment management rules enable the system to generate draft purchase orders automatically, or you can configure it to run a lean process driven entirely by current production needs.
 
-.. TODO - change the details here
+.. todo:: - change the details here
 
 .. tip::   **Note**  *Workflow visualization* 
 
 	Open ERP can show you the workflow of any operating process and the current state of a document following the workflow, to help you understand your company processes. 
 
-	For example, open a supplier Purchase Order form in the GTK client. Click *Plugins > Execute a Plugin*, then select *Print Workflow (complex)* and click *OK*.
+	For example, open a supplier Purchase Order form in the GTK client. Click :menuselection:`Plugins --> Execute a Plugin`, then select :guilabel:`Print Workflow (complex)` and click :guilabel:`OK`.
 
 	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state is marked by nodes coloured red.
 
@@ -386,7 +386,7 @@ Project Management
 
 Open ERP's project management tools enable you to handle the definition of tasks and the specification of requirements for those tasks, efficient allocation of resources to the requirements, project planning, scheduling and automatic communication with partners.
 
-All projects are hierarchically structured. You can review all of the projects from the menu  *Project Management > All Projects*  . To view a project's plans, select a project line and then click  *Print* . Then select  *Gantt diagram*  to obtain a graphical representation of the plan.
+All projects are hierarchically structured. You can review all of the projects from the menu :menuselection:`Project Management --> All Projects`. To view a project's plans, select a project line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical representation of the plan.
 
 .. figure:: images/familiarization_project_gantt.png
    :align: center
@@ -425,7 +425,7 @@ The demonstration data contains a list of products and raw materials with variou
 Sales Management
 -----------------
 
-The Sales Management menu gives you roughly the same functionality as the Purchase Management menu – the ability to create new orders and to review the existing orders in their various states – but there are important differences in the workflows. 
+The :menuselection:`Sales Management` menu gives you roughly the same functionality as the :menuselection:`Purchase Management` menu – the ability to create new orders and to review the existing orders in their various states – but there are important differences in the workflows. 
 
 Confirmation of an order triggers delivery of the goods, and invoicing timing is defined by a setting in each individual order. 
 
@@ -436,9 +436,9 @@ Other functions
 
 You've been through a brisk, brief overview of the main functional areas of Open ERP. Some of these – a large proportion of the core modules – are treated in more detail in the following chapters. 
 
-You can use the menu  *Administration > Modules Management > Modules > Uninstalled Modules*  to find the remaining modules that have been loaded into your installation but not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as \ ``base_iban``\  ), some have quite extensive effects (such as the various charts of accounts), and some make fundamental additions (such as \ ``multi_company``\  ).
+You can use the menu :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled Modules` to find the remaining modules that have been loaded into your installation but not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as \ ``base_iban``\  ), some have quite extensive effects (such as the various charts of accounts), and some make fundamental additions (such as \ ``multi_company``\  ).
 
-But there are now more than three hundred modules available. If you've connected to the Internet, and if your \ ``addons``\   directory is writable as described at the beginning of this chapter, you can download new modules using the menu  *Administration > Modules Management > Update Modules List* . 
+But there are now more than three hundred modules available. If you've connected to the Internet, and if your \ ``addons``\   directory is writable as described at the beginning of this chapter, you can download new modules using the menu :menuselection:`Administration --> Modules Management --> Update Modules List`. 
 
 A brief description is available for each module, but the most thorough way of understanding their functionality is to install one and try it. So, pausing only to prepare another test database to try it out on, just download and install the modules that appear interesting.
 

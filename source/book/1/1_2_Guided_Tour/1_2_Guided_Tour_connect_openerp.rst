@@ -3,13 +3,13 @@ To connect to Open ERP
 
 Connect to the new \ ``openerp_ch02``\   database as user \ ``admin``\   with its default password \ ``admin``\   (you might have to wait a couple of seconds before the system will allow you to connect if you've only just created it). Since this is the first time you've connected to it you'll have to go through the Setup wizard in steps:
 
-	#.  *Select a profile*  select  *Profile* \ ``Minimal Profile``\   since you'll be adding more modules in just a moment.
+	#.  :guilabel:`Select a profile` : select :guilabel:`Profile` \ ``Minimal Profile``\   since you'll be adding more modules in just a moment.
 
-	#.  *Define Main Company* and  *Report Header*  change anything you like on this page to match your own situation. Only the  *Company Name* and  *Currency* are required but you should aim to put something relevant in all fields. If you alter the currency you'll need to click the  *Search / Open a resource* icon to the right of the field to register the name of the currency you type in.
+	#.  :guilabel:`Define Main Company` and :guilabel:`Report Header` : change anything you like on this page to match your own situation. Only the :guilabel:`Company Name` and :guilabel:`Currency` are required but you should aim to put something relevant in all fields. If you alter the currency you'll need to click the :guilabel:`Search / Open a resource` icon to the right of the field to register the name of the currency you type in.
 
-	#.  *Summary*  just click the  *Install* button.
+	#.  :guilabel:`Summary` : just click the :guilabel:`Install` button.
 
-	#.  *Installation done*  click  *Ok* 
+	#.  :guilabel:`Installation done` : click :guilabel:`Ok`.
 
 Now you're signed in as an administrator you'll be able to add functionality and modify database settings.
 
@@ -17,7 +17,7 @@ Now you're signed in as an administrator you'll be able to add functionality and
 
 	If you'd installed any of the other profiles from the installation wizard you'd find that your login screen shows a dashboard with information related to your user account rather than the main menu.
 
-	When that happens the main menu is still available, as you'll see later in this chapter. If you're using the web client you can reach the main menu by clicking the *Main Menu* link towards the top left of the window. If you're using the GTK client the main menu is in the first tab (which is hidden – it's the second tab containing the dashboard that's initially showing). 
+	When that happens the main menu is still available, as you'll see later in this chapter. If you're using the web client you can reach the main menu by clicking the :guilabel:`Main Menu` link towards the top left of the window. If you're using the GTK client the main menu is in the first tab (which is hidden – it's the second tab containing the dashboard that's initially showing). 
 
 Once you're displaying the main menu you're able to see the following screen items:
 
@@ -39,11 +39,11 @@ Once you're displaying the main menu you're able to see the following screen ite
 
 Three menus are available on the left:
 
-* Partners,
+* :guilabel:`Partners`,
 
-* Financial Management,
+* :guilabel:`Financial Management`,
 
-* Administration.
+* :menuselection:`Administration`.
 
 
 .. index::
@@ -54,9 +54,9 @@ Three menus are available on the left:
 Preferences toolbar
 ---------------------
 
-When you're connected to Open ERP the Preferences toolbar indicates which user you're connected as. So it should currently be showing  *Welcome Administrator*  (unless you logged in as another user and it's reflecting the name of that user instead).
+When you're connected to Open ERP the Preferences toolbar indicates which user you're connected as. So it should currently be showing :guilabel:`Welcome Administrator` (unless you logged in as another user and it's reflecting the name of that user instead).
 
-You'll find a link to the  *Home*  page to its right. This takes you to either the dashboard or the available menus, depending on the user configuration. In the case of the \ ``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the system is presented with a dashboard that's designed to show performance indicators and urgent documents that are most useful to someone of the user's position in the company. You'll see how to assign dashboards to different users in Chapter 13.
+You'll find a link to the :guilabel:`Home`  page to its right. This takes you to either the dashboard or the available menus, depending on the user configuration. In the case of the \ ``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the system is presented with a dashboard that's designed to show performance indicators and urgent documents that are most useful to someone of the user's position in the company. You'll see how to assign dashboards to different users in Chapter 13.
 
 .. index::
    single: TimeZone
@@ -68,17 +68,17 @@ You'll find a link to the  *Home*  page to its right. This takes you to either t
 
 	So if you have a team in India and a team in England, the times will automatically be converted. If an Indian employee sets her working hours from 9 to 6 that will be converted and saved in the server's timezone. When the English users want to set up a meeting with an Indian user, the Indian user's available time will be converted to English time.
 
-The next element in the Toolbar is a link to  *Preferences* . By clicking that link you reach a page where the current user can set a timezone and a working language:
+The next element in the Toolbar is a link to :guilabel:`Preferences`. By clicking that link you reach a page where the current user can set a timezone and a working language:
 
-* The  *Language*  field enables the user's working language to be changed. But first the system must be loaded with other languages for the user to be able to choose an alternative, which is described in the next subsection of this chapter.
+* The :guilabel:`Language` field enables the user's working language to be changed. But first the system must be loaded with other languages for the user to be able to choose an alternative, which is described in the next subsection of this chapter.
 
-* The  *Timezone*  setting indicates the user's location to Open ERP. This can be different from that of the server. All of the dates in the system are converted to the user's timezone automatically.
+* The :guilabel:`Timezone` setting indicates the user's location to Open ERP. This can be different from that of the server. All of the dates in the system are converted to the user's timezone automatically.
 
-The  *About*  link gives information about the development of the Open ERP software.
+The :guilabel:`About` link gives information about the development of the Open ERP software.
 
-The  *Logout*  link enables you to logout and return to the original login page. You can then login to another database, or to the same database as another user. This page also gives you access to the super-administrator functions for managing databases on this server.
+The :guilabel:`Logout` link enables you to logout and return to the original login page. You can then login to another database, or to the same database as another user. This page also gives you access to the super-administrator functions for managing databases on this server.
 
-The  *Requests*  link sits just below this toolbar. It is only visible if you're logged into a database. If your database is new it will say \ ``No request``\  . You can click on that link to look at requests that have been sent to you at any time.
+The :guilabel:`Requests` link sits just below this toolbar. It is only visible if you're logged into a database. If your database is new it will say :guilabel:`No request`. You can click on that link to look at requests that have been sent to you at any time.
 
 
 .. index::
@@ -98,17 +98,17 @@ Each user of the system can work in his or her own language. More than twenty la
 
 As administrator you can install a new main working language into the system.
 
-	#. Select  *Administration* in the Menu Toolbar and click  *Translations > Load New Language* in the main menu window,
+	#. Select :menuselection:`Administration` in the Menu Toolbar and click :menuselection:`Translations --> Load New Language` in the main menu window,
 
 	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation*,
 
-	#. When the message  *Installation finished* appears, click  *OK* to return to the menu.
+	#. When the message :guilabel:`Installation finished` appears, click :guilabel:`OK` to return to the menu.
 
 To see the effects of this installation change the preferences of your user to change the working language. The main menu is immediately translated in the selected language. If you're using the GTK client you'll first have to close the menu then open a new main menu to start seeing things in the new language.
 
 .. note:: Navigating the menu 
 
-	From this point in the book navigation from the main menu is written as a series of menu entries connected by the > character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu *Administration > Translations > Load New Language*”.
+	From this point in the book navigation from the main menu is written as a series of menu entries connected by the :menuselection:`-->` character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu :menuselection:`Administration --> Translations --> Load New Language`”.
 
 .. index:: Requests
 
@@ -129,17 +129,17 @@ Open ERP uses this mechanism to inform users about certain system events. For e
 
 Send a request to get an understanding of its functionality:
 
-	#. Click on the  *Requests* link that should currently be showing  *No Requests*  This opens a window that lists all of your waiting requests.
+	#. Click on the :guilabel:`Requests` link that should currently be showing :guilabel:`No Requests`. This opens a window that lists all of your waiting requests.
 
-	#. Click  *New* to create and send a new request.
+	#. Click :guilabel:`New` to create and send a new request.
 
 	#. Complete the subject of the request, such as \ ``How are you?``\  then give a description of the enquiry in the field.
 
-	#. Click the  *Search* button to the right of the  *Send to* field and select  *Administrator* in the window that opens (that's the user that you're already connected as).
+	#. Click the :guilabel:`Search` button to the right of the :guilabel:`Send to` field and select :guilabel:`Administrator` in the window that opens (that's the user that you're already connected as).
 
-	#. You can then link this request to other system documents using the  *References* field, which could, for example, be a partner or a quotation or a disputed invoice.
+	#. You can then link this request to other system documents using the :guilabel:`References` field, which could, for example, be a partner or a quotation or a disputed invoice.
 
-	#. Click  *Send* to send the request to the intended recipient – that's yourself in this case. Then click  *Main Menu* to return to the original screen.
+	#. Click :guilabel:`Send` to send the request to the intended recipient – that's yourself in this case. Then click :guilabel:`Main Menu` to return to the original screen.
 
 
 .. figure:: images/request_tab.png
@@ -149,11 +149,11 @@ Send a request to get an understanding of its functionality:
 
 To check your requests:
 
-	#. Click on the link to the right of the  *Requests* label to open a list of your requests. (It's possible that you'll still see the statement  *No Requests* because this information is updated periodically ather than instantly.) The list of requests then opens and you can see the requests you've been sent there.
+	#. Click on the link to the right of the :guilabel:`Requests` label to open a list of your requests. (It's possible that you'll still see the statement :guilabel:`No Requests` because this information is updated periodically ather than instantly.) The list of requests then opens and you can see the requests you've been sent there.
 
-	#. Click the  *Edit* icon, represented by a pencil, at the right hand end of the request line. That opens the request in edit mode.
+	#. Click the :guilabel:`Edit` icon, represented by a pencil, at the right hand end of the request line. That opens the request in edit mode.
 
-	#. You can then click the  *Reply* button and make your response in the  *Request* field that appears in place of the original message.
+	#. You can then click the :guilabel:`Reply` button and make your response in the :guilabel:`Request` field that appears in place of the original message.
 
 	#. Click  *Send* to save your response and send it to the original sender.
 
@@ -163,9 +163,9 @@ To check your requests:
 
 Look at the request and its history, then close it.
 
-	#. Click on the  *History* tab in the  *Request* form to see the original request and all of the responses. By clicking on each line you could get more information on each element.
+	#. Click on the :guilabel:`History:guilabel:` tab in the :guilabel:`Request` form to see the original request and all of the responses. By clicking on each line you could get more information on each element.
 
-	#. Return to the first tab,  *Request* and click End of *Request* to set it to \ ``closed``\   This then appears greyed out.
+	#. Return to the first tab, :guilabel:`Request` and click :guilabel:`End of Request` to set it to \ ``closed``\.   This then appears greyed out.
 
 The request is no longer active. It's not visible to searches and won't appear in your list of waiting requests.
 
@@ -182,9 +182,9 @@ Configuring Users
 
 The database you created contains minimal functionality but can be extended to include all of the potential functionality available to Open ERP. About the only functions actually available in this minimal database are Partners and Currencies – and these only because the definition of your main company required this. And because you chose to include demonstration data, both Partners and Currencies were installed with some samples.
 
-Because you logged in as Administrator, you have all the access you need to configure users. Click  *Administration > Users > Users*  to display the list of users defined in the system. A second user, \ ``Demo User``\  , is also present in the system as part of the demonstration data. Click the \ ``Demo User``\   name to open a non-editable form on that user.
+Because you logged in as Administrator, you have all the access you need to configure users. Click :menuselection:`Administration --> Users --> Users` to display the list of users defined in the system. A second user, \ ``Demo User``\  , is also present in the system as part of the demonstration data. Click the \ ``Demo User``\   name to open a non-editable form on that user.
 
-Click the  *Security*  tab to see that the demo user is a member of no groups, has no roles and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group, which gives it more advanced rights to configure new users.
+Click the :guilabel:`Security`  tab to see that the demo user is a member of no groups, has no roles and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group, which gives it more advanced rights to configure new users.
 
 .. tip::  Roles, Groups and Users 
 
@@ -192,9 +192,9 @@ Click the  *Security*  tab to see that the demo user is a member of no groups, h
 
 	Roles are used in business processes for permitting or blocking certain steps in the workflow of a given document. For example you can assign the role of approving an invoice. Roles answer the question “Who should do what?”
 
-Click  *Administration > Users > Groups*  below the main menu to open the list of groups defined in the system. If you open the form view of the \ ``admin``\   group by clicking its name in the list, the first tab give you the list of all the users who belong to this group.
+Click :menuselection:`Administration --> Users --> Groups`  below the main menu to open the list of groups defined in the system. If you open the form view of the \ ``admin``\   group by clicking its name in the list, the first tab give you the list of all the users who belong to this group.
 
-Click the Security tab and it gives you details of the access rights for that group. These are detailed in Chapter 13, but you can already see there further up in the window, the list of menus reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to the  *Configuration*  menu in each section. So \ ``Partners / Configuration``\   is found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible to all users.
+Click the Security tab and it gives you details of the access rights for that group. These are detailed in Chapter 13, but you can already see there further up in the window, the list of menus reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to the :menuitem:`Configuration`  menu in each section. So \ ``Partners / Configuration``\   is found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible to all users.
 
 You can create some new users to integrate them into the system. Assign them to predefined groups to grant them certain access rights. Then try their access rights when you login as these users. Management defines these access rights as described in Chapter 13.
 
@@ -216,15 +216,15 @@ In Open ERP, a partner represents an entity that you do business with. That can
 List of partners
 ^^^^^^^^^^^^^^^^^
 
-Click  *Partners > Partners*  in the main menu to open the list of partners. Then click the name of the first partner to get hold of the details – a form appears with several tabs on it:
+Click :menuselection:`Partners --> Partners`  in the main menu to open the list of partners. Then click the name of the first partner to get hold of the details – a form appears with several tabs on it:
 
-* the  *General*  tab contains the main information about the company, such as its corporate name, its primary language, your different contacts at that partner and the categories it belongs to.
+* the :guilabel:`General` tab contains the main information about the company, such as its corporate name, its primary language, your different contacts at that partner and the categories it belongs to.
 
-* the  *Extra Info*  tab contains information that's slightly less immediate.
+* the :guilabel:`Extra Info` tab contains information that's slightly less immediate.
 
-* the  *Event History*  tab contains the history of all the events that the partner has been involved in. These events are created automatically by different system documents: invoices, orders, support requests and so on. These give you a rapid view of the partner's history on a single screen.
+* the :menuselection:`Event History` tab contains the history of all the events that the partner has been involved in. These events are created automatically by different system documents: invoices, orders, support requests and so on. These give you a rapid view of the partner's history on a single screen.
 
-* the  *Properties*  tab contains partner settings related to accounting, inventory and other areas: you can leave this alone for the moment.
+* the :menuselection:`Properties` tab contains partner settings related to accounting, inventory and other areas: you can leave this alone for the moment.
 
 
 .. figure:: images/partner.png
@@ -245,7 +245,7 @@ Click  *Partners > Partners*  in the main menu to open the list of partners. The
 Partner Categories
 ^^^^^^^^^^^^^^^^^^^
 
-You can list your partners by category using the menu  *Partners > Partners by category* . This opens a hierarchical structure of categories where each category can be divided into sub-categories. Click a category to obtain a list of partners in that category. For example, click all of the partners in the category  *Supplier*  or  *Supplier > Components Supplier* . You'll see that if a company is in a subcategory (such as  *Components Supplier* ) then it will also show up when you click the parent category (such as  *Supplier* ). 
+You can list your partners by category using the menu :menuselection:`Partners --> Partners by category` . This opens a hierarchical structure of categories where each category can be divided into sub-categories. Click a category to obtain a list of partners in that category. For example, click all of the partners in the category :menuselection:`Supplier`  or :menuselection:`Supplier --> Components Supplier`. You'll see that if a company is in a subcategory (such as :guilabel:`Components Supplier` ) then it will also show up when you click the parent category (such as :guilabel:`Supplier`). 
 
 
 .. figure:: images/main_window_partner_menu_config.png
@@ -256,11 +256,11 @@ You can list your partners by category using the menu  *Partners > Partners by c
 
 The administrator can define new categories. So you'll create a new category and link it to a partner:
 
-	#. Use  *Partners > Configuration > Categories > Edit Category* to reach a list of the same categories as above but in a list view rather than a hierarchical tree structure.
+	#. Use :menuselection:`Partners --> Configuration --> Categories --> Edit Category` to reach a list of the same categories as above but in a list view rather than a hierarchical tree structure.
 
-	#. Click  *New* to open an empty form for creating a new category
+	#. Click :guilabel:`New` to open an empty form for creating a new category
 
-	#. Enter \ ``My Prospects``\  in the field  *Name of Category*  Then click on the  *Search* icon to the right of the  *Parent Category* field and select \ ``Prospect``\  in the list that appears.
+	#. Enter \ ``My Prospects``\  in the field :guilabel:`Name of Category`. Then click on the :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select \ ``Prospect``\  in the list that appears.
 
 	#. Then save your new category using the Save button.
 
@@ -268,7 +268,7 @@ The administrator can define new categories. So you'll create a new category and
 
 	Fields coloured blue are required. If you try to save the form while any of these fields are empty the field turns red to indicate that there's a problem. It's impossible to save the form until you've completed every required field.
 
-You can review your new category structure using  *Partners > Partners by category* . You should see the new structure of \ ``Prospects / My Prospects``\   there.
+You can review your new category structure using :menuselection:`Partners --> Partners by category` . You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 
 .. figure:: images/main_window_partner_tab.png
@@ -279,13 +279,13 @@ You can review your new category structure using  *Partners > Partners by catego
 
 To create a new partner and link it to this new category open a new partner form to modify it.
 
-	#. In the  *General* tab, type \ ``New Partner``\  into the  *Name* field.
+	#. In the :guilabel:`General` tab, type \ ``New Partner``\  into the  *Name* field.
 
-	#. Then click on the search icon to the right of the  *Categories* field and select your new category from the list that appears: \ ``Prospect / My Prospects``\  
+	#. Then click on the search icon to the right of the :guilabel:`Categories` field and select your new category from the list that appears: \ ``Prospect / My Prospects``\  
 
-	#. Then save your partner by clicking  *Save*  The partner now belongs in the category \ ``Prospect / My prospects.``\  
+	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category \ ``Prospect / My prospects.``\  
 
-	#. Monitor your modification in the menu  *Partners > Partners by category*  Select the category \ ``My Prospect``\   The list of partners opens and you'll find your new partner there in that list.
+	#. Monitor your modification in the menu :menuselection:`Partners --> Partners by category`  Select the category :guilabel:`My Prospect`. The list of partners opens and you'll find your new partner there in that list.
 
 .. tip:: Searching for documents 
 

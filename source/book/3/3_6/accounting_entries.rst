@@ -318,7 +318,7 @@ This process can also be regularly scheduled. In some companies, a payment order
 
 Once the payment order is confirmed there's still a validation step for an accountant to carry out. You could imagine that these orders would be prepared by an accounts clerk, and then approved by a manager to go ahead with payment.
 
-.. TODO - get the details corrected here - web client can now do this
+.. todo:: - get the details corrected here - web client can now do this
 
 .. tip:: Payment Workflow 
 

@@ -215,7 +215,7 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
 
 	In this example, amount_total is a field from the order object. The result will be 90% of the total of the order, formatted to two decimal places.
 
-.. TODO - I don't quite know what to do with this below, yet. I suspect it's a spec for a bit of writing.
+.. todo:: - I don't quite know what to do with this below, yet. I suspect it's a spec for a bit of writing.
 
  *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
 

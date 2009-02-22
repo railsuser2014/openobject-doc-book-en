@@ -43,7 +43,7 @@ Use the field names as the column names in the first line of your CSV file, appl
 
 To import CSV data that matches your database structure, you need to distinguish the following types of field in the Open ERP interface:  *many-to-many*  fields (between multiple sources and destinations),  *many-to-one*  fields (from multiple sources to a single destination), and  *one-to-many*  fields (from a single origin to multiple destinations). 
 
-.. TODO - check that the next bit is still true
+.. todo:: - check that the next bit is still true
 
 .. note:: Foreground table 
 
@@ -92,7 +92,7 @@ When you import other files which link to the first table, you can use the ident
 
 To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \ ``Product:id``\  ).
 
-.. TODO - link to another document here?
+.. todo:: - link to another document here?
 
 .. tip:: Importing with identifiers 
 

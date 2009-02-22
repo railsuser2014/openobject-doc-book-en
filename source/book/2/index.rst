@@ -3,12 +3,18 @@
 Managing Customer Relationships
 *******************************
 
- *The Sales department is the engine of your whole company. Sales success drives staff motivation and your company's general dynamism, which in turn enables you to keep innovating and lay the foundations for future success.* 
+ *The Sales department is the engine of your whole company. 
+ Sales success drives staff motivation and your company's general dynamism, 
+ which in turn enables you to keep innovating and lay the foundations for future success.* 
 
- *The key to continued Sales success is effective Customer Relationship Management (most often known as CRM). Open ERP's CRM capabilities are flexible and highly developed to assist you in managing all aspects of both supplier and customer relationships. Analytic tools help you understand your performance drivers, and the automation of data and processes drives new levels of efficiency.* 
+ *The key to continued Sales success is effective Customer Relationship Management (most often known as CRM). 
+ Open ERP's CRM capabilities are flexible and highly developed to assist you in managing all aspects of both supplier and customer relationships. 
+ Analytic tools help you understand your performance drivers, and the automation of data and processes drives new levels of efficiency.* 
 
- *Open ERP can share information through its interfaces to the most common office applications, minimizing disruption to your operations when you first install it. Your staff can build on their previous productivity by continuing to use their email and office systems, now connected to Open ERP, transferring to the Open ERP interface only if they need to.* 
-
+ *Open ERP can share information through its interfaces to the most common office applications, 
+ minimizing disruption to your operations when you first install it. 
+ Your staff can build on their previous productivity by continuing to use their email and office systems, 
+ now connected to Open ERP, transferring to the Open ERP interface only if they need to.* 
 
 .. toctree::
 

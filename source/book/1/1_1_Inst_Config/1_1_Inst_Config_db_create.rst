@@ -9,15 +9,15 @@ Database creation
 
 Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This database will contain the demonstration data provided with Open ERP and a large proportion of the core Open ERP functionality. You'll need to know your super administrator password for this – or you'll have to find somebody who does have it to create this seed database.
 
-Start the database creation process from the  *Database Administration*  page by clicking  *Create*  and then completing the following fields on the  *Create Database*  form:
+Start the database creation process from the :guilabel:`Database Administration`  page by clicking :guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database` form:
 
-*  *Super administrator password* , by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
+*  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
 
-*  *New database name* : \ ``openerp_ch02``\  .
+*  :guilabel:`New database name` : \ ``openerp_ch02``\  .
 
-*  *Load Demonstration Data*  checkbox: \ ``checked``\  .
+*  :guilabel:`Load Demonstration Data`  checkbox : \ ``checked``\ 
 
-*  *Default Language* : \ ``English``\  .
+*  :guilabel:`Default Language` : \ ``English``\  .
 
 
 Creating the database
@@ -27,16 +27,16 @@ Before walking through an Open ERP business process step by step in the next ch
 
 * \ ``openerp_ch01``\  : a minimal database containing demonstration data.
 
-To create new databases you must know the super-administrator password which defaults to admin on a new installation.
+To create new databases you must know the super-administrator password which defaults to ``admin`` on a new installation.
 
 
 .. note :: The super-administrator password
 
    Anyone who knows the super-administrator password has complete access to the data on the server – able to read, change and delete any of the data in any of the databases there.
 
-   .. TODO this isn't right any more
+   .. todo:: this isn't right any more
 
-   After first installation, the password is admin. You can change it through the GTK client from the menu *File > Database ... > Administrator Password*, or through the web client by logging out (click the Logout link), clicking *Manage* on the login screen, and then clicking the *Password* button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
+   After first installation, the password is ``admin``. You can change it through the GTK client from the menu :menuselection:`File --> Database ... --> Administrator Password`, or through the web client by logging out (click the Logout link), clicking *Manage* on the login screen, and then clicking the *Password* button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
    :align: center
@@ -48,14 +48,14 @@ To create new databases you must know the super-administrator password which def
 	
    *Creating a new database through the GTK client.*      
 
-* If you're using the GTK client, choose  *Files > Database > New database*  in the menu at the top left. Enter the super-administrator password, then the name of the new database you're creating.
+* If you're using the GTK client, choose :menuselection:`Files --> Database --> New database`  in the menu at the top left. Enter the super-administrator password, then the name of the new database you're creating.
 
-* If you're using the web client, click  *Manage*  on the login screen, then  *Create*  on the database management page. Enter the super-administrator password, then the name of the new database you're creating.
+* If you're using the web client, click :guilabel:`Manage`  on the login screen, then :guilabel:`Create` on the database management page. Enter the super-administrator password, then the name of the new database you're creating.
 
 Database openerp_ch01
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the  *New database*  field. Make sure that the  *Load Demonstration Data*  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
+To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database`  field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
 
 Wait for the message showing that the database has been successfully created, along with the user accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed database you can extend it without knowing the super administrator password.
 
@@ -75,19 +75,19 @@ Wait for the message showing that the database has been successfully created, al
 	If you have entered a database name using prohibited characters (or no name, or too short a name) 
 	you will be alerted by the dialog box Bad database name! explaining how to correct the error. 
 	If you've entered the wrong super-administrator password or a name already in use 
-	(some names can be reserved without your knowledge), you'll be alerted by the dialog box **Error during database creation!**.
+	(some names can be reserved without your knowledge), you'll be alerted by the dialog box :guilabel:`Error during database creation!`.
 
 Connect to the database \ ``openerp_ch01``\   that you just created, using the default administrator account. 
 
 If this is the first time you've connected to this database you'll be asked a series of questions to define the database parameters:
 
-	#.  *Select a profile*  select \ ``Minimal Profile``\  and click  *Next* 
+	#.  :guilabel:`Select a profile` : select \ ``Minimal Profile``\  and click :guilabel:`Next`.
 
-	#.  *Company Details*  replace the proposed default of \ ``Tiny sprl``\  by your own company name, complete as much of your address as you like, and add some lines about your company, such as a slogan and any statutory requirements, to the header and footer fields. Click  *Next*  
+	#.  :guilabel:`Company Details` : replace the proposed default of \ ``Tiny sprl``\  by your own company name, complete as much of your address as you like, and add some lines about your company, such as a slogan and any statutory requirements, to the header and footer fields. Click :guilabel:`Next`.  
 
-	#.  *Summary*  check the information and go back to make any modifications you need before installation. Then click  *Install* 
+	#.  :guilabel:`Summary` : check the information and go back to make any modifications you need before installation. Then click :guilabel:`Install`. 
 
-	#.  *Installation Completed*  click  *Ok* 
+	#.  :guilabel:`Installation Completed` : click :guilabel:`Ok`. 
 
 Once configuration is complete you're connected to your Open ERP system. Its functionality is very limited because you've selected a minimal installation, but this is sufficient to demonstrate that your installation is working.
 
@@ -113,7 +113,7 @@ As a super-administrator you've not only got rights to create new databases, but
 
 * restore databases.
 
-All of these operations can be carried out from the menu  *File > Databases... > Backup databases*  in the GTK client, or from  *Manage...*  in the web client's Login screen.
+All of these operations can be carried out from the menu :menuselection:`File --> Databases... --> Backup databases` in the GTK client, or from :menuselection:`Manage...`  in the web client's Login screen.
 
 .. index::
    single: Database; Duplicate
