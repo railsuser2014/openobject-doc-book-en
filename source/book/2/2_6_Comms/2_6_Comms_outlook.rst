@@ -44,7 +44,7 @@ Installation is then automatic.
 Using the Outlook plugin
 ------------------------
 
-Using the Microsoft Outlook plugin is quite similar to using the Thunderbird extension. In Outlook find the menu  *Tools > Tiny ERP Options* .
+Using the Microsoft Outlook plugin is quite similar to using the Thunderbird extension. In Outlook find the menu :menuselection:`Tools --> Tiny ERP Options`.
 
 .. figure::  images/outlook_menu.png
    :align: center

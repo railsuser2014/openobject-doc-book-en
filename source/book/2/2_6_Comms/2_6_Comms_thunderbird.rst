@@ -19,11 +19,11 @@ To be able to use the Thunderbird plugin you first have to install the Open ERP
 
 You'll then have to install the Thunderbird extension. To do that, use the file \ ``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the \ ``email_interface``\   module. Then take the following steps:
 
-	#. From Thunderbird, open the menu  *Tools > Complementary Modules* 
+	#. From Thunderbird, open the menu :menuselection:`Tools --> Complementary Modules`.
 
 	#. Click the  *Install* button.
 
-	#. Select the file \ ``tiny_plugin-2.0.xpi``\  
+	#. Select the file \ ``tiny_plugin-2.0.xpi``\.  
 
 	#. Click  *Install Now* then restart Thunderbird.
 
@@ -42,7 +42,7 @@ Once the extension has been installed, you have only to create a shortcut in you
 Thunderbird user interface
 --------------------------
 
-When you've installed the module the first thing to do is connect it to Open ERP from Thunderbird. To do this use the menu  *Tools > Tiny Plugin* .
+When you've installed the module the first thing to do is connect it to Open ERP from Thunderbird. To do this use the menu :menuselection:`Tools --> Tiny Plugin`.
 
 A configuration window appears enabling you to enter configuration data about your Open ERP server.
 

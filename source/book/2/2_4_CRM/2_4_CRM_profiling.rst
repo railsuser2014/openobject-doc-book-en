@@ -53,7 +53,7 @@ Using profiles effectively
 
 To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from ``addons-extra``.
 
-Once the module is installed you can create a list of questions and the possible responses through the menu  *CRM & SRM > Configuration > Segmentation > Questions* .
+Once the module is installed you can create a list of questions and the possible responses through the menu :menuselection:`CRM & SRM --> Configuration --> Segmentation --> Questions`.
 
 To obtain the scheme presented earlier you can create the following questions and responses:
 
@@ -88,7 +88,7 @@ When entering the details of a specific prospect, the prospect's answers to vari
 
 	This module is totally integrated with the rest of accounting so there's no need to extract any data from another system to get the sales figures against objectives by sales person or sector – it's just available all the time in real time.
 
-Customers corresponding to a specific search profile can be treated as a priority. The sales person can access the profile of the large active accounts from the menu  *Partners > Partners by category* .
+Customers corresponding to a specific search profile can be treated as a priority. The sales person can access the profile of the large active accounts from the menu :menuselection:`Partners --> Partners by category`.
 
 
 .. Copyright © Open Object Press. All rights reserved.

@@ -32,7 +32,7 @@ Case management is a generic system that can be configured to your more precise 
 Sections
 ^^^^^^^^
 
-To handle each of these case types in a different way, you must create different sections in Open ERP using the menu  *CRM & SRM > Configuration > Case > Sections* . Do this as user \ ``admin``\   in database \ ``openerp_ch04``\   to try it for yourself.
+To handle each of these case types in a different way, you must create different sections in Open ERP using the menu :menuselection:`CRM & SRM --> Configuration --> Case --> Sections` . Do this as user \ ``admin``\   in database \ ``openerp_ch04``\   to try it for yourself.
 
 You'll define the following four sections:
 
@@ -50,12 +50,12 @@ Put the name in the field  *Case Section* . You construct a tree structure for s
 
 A manager can then be assigned to each section (from the list of Open ERP system users), and an email address can optionally be added. Cases in this section are then automatically connected to this email address – case messages are emailed out automatically from this address and emails to this address are automatically logged in this section of the CRM system. This functionality is based on the email gateway referred to in detail further on in this chapter.
 
-Click the menu  *CRM & SRM > Cases > Cases by Section*  to get the sections in a hierarchical list, then click a section name to list the cases that have been assigned to that section.
+Click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a hierarchical list, then click a section name to list the cases that have been assigned to that section.
 
 .. note:: Cases by Section – with data
 
 	Using database openerp_04X (which has a substantial amount of data in it), 
-	click the menu *CRM & SRM > Cases > Cases by Section* to get the sections in a hierarchical list, 
+	click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a hierarchical list, 
 	then click a section name, such as *Helpdesk* or *Support*, to list the cases that have been assigned to that section.
 	
 .. index::
@@ -65,7 +65,7 @@ Click the menu  *CRM & SRM > Cases > Cases by Section*  to get the sections in a
 Categories
 ^^^^^^^^^^
 
-Once you've defined the different sections you can create Categories, which are used to differentiate the cases in a section. You create categories using the menu  *CRM & SRM > Configuration > Cases > Categories* . Create the following in \ ``database openerp_ch04``\  .
+Once you've defined the different sections you can create Categories, which are used to differentiate the cases in a section. You create categories using the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Categories` . Create the following in \ ``database openerp_ch04``\  .
 
  .. csv-table:: **Categories assigned to the different sections**
    :header: "Category","Section"
@@ -86,7 +86,7 @@ Once you've defined the different sections you can create Categories, which are 
 Menu
 ^^^^
 
-Once the sections and the categories are defined you can generate some menus to make it easier to use these cases. In database \ ``openerp_ch04``\  , select the menu  *CRM & SRM > Configuration > Create Menus for a New Section* .
+Once the sections and the categories are defined you can generate some menus to make it easier to use these cases. In database \ ``openerp_ch04``\  , select the menu :menuselection:`CRM & SRM --> Configuration --> Create Menus` for a New Section* .
 
 The procedure is to create the name of the new menu in  *Menu base name* , select the name of a suitable  *Parent menu*  for the menu and the  *Case Section*  name, then click  *Create menu Entries* . Following this procedure, create the following menus:
 
@@ -136,7 +136,7 @@ Each time you run this utility (that is, for each line in the table above), Open
 Using cases
 -----------
 
-Although you've created special menu trees for each of the types of case you defined, you can continue using the generic case system reached through  *CRM & SRM > Cases* . The new case types are just versions of the generic case.
+Although you've created special menu trees for each of the types of case you defined, you can continue using the generic case system reached through :menuselection:`CRM & SRM --> Cases`. The new case types are just versions of the generic case.
 
 .. index::
    single: Case; transferability
@@ -159,10 +159,10 @@ Although you've created special menu trees for each of the types of case you def
    *An entry following a business opportunity.*
 
 To enter a new business opportunity, you can use the menu that you've just created:  
-*Sales Management > Business Opportunities* . Or you could have used the generic menus 
-*CRM & SRM > Cases > Cases by section* , or  *CRM & SRM > Cases > All cases*.
+:menuselection:`Sales Management --> Business Opportunities`. Or you could have used the generic menus 
+:menuselection:`CRM & SRM --> Cases --> Cases by section`, or :menuselection:`CRM & SRM --> Cases --> All cases`.
 
-Create a case in database \ ``openerp_ch04``\   from  *Sales Management > Business Opportunities* by entering information about the request, namely: 
+Create a case in database \ ``openerp_ch04``\   from :menuselection:`Sales Management --> Business Opportunities` by entering information about the request, namely: 
 
 * a  *Description*  of the case,
 
@@ -221,7 +221,7 @@ So if you want to implement a shared calendar for your calendar in Open ERP all
 
 	#. Create a section \ ``Meeting Calendar``\  
 
-	#. Create menus for this section while specifying that you want a calendar view from  *CRM & SRM > Configuration > Create Menus for a New Section* 
+	#. Create menus for this section while specifying that you want a calendar view from :menuselection:`CRM & SRM --> Configuration --> Create Menus for a New Section`.
 
 You'll get menus enabling you to manage calendars for each employee, and you'll also get a shared calendar for the company. This calendar view is totally dynamic. You can move an event or change its duration just using your mouse.
 
@@ -258,9 +258,9 @@ Analyzing performance
 
 Since all of your customer communications are integrated into the Open ERP system, you can analyses the performance of your teams in many ways. 
 
-Open ERP has a module that helps handle this – \ ``report_crm``\  . It's not part of the core Open ERP so you must first download it to your desktop from Open ERP's modules repository, then into your server using  *Administration > Modules Management > Import New Module* . Then, for both databases \ ``openerp_04X``\   and \ ``openerp_ch04``\  , install it into the database.
+Open ERP has a module that helps handle this – \ ``report_crm``\  . It's not part of the core Open ERP so you must first download it to your desktop from Open ERP's modules repository, then into your server using :menuselection:`Administration --> Modules Management --> Import New Module`. Then, for both databases \ ``openerp_04X``\   and \ ``openerp_ch04``\  , install it into the database.
 
-Once you've installed it you can use menu  *CRM & SRM > Reporting*  on database \ ``openerp_04X``\   (which has plenty of data already in it) to create different reports. 
+Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting` on database \ ``openerp_04X``\   (which has plenty of data already in it) to create different reports. 
 
 
 .. figure::  images/crm_graph.png
@@ -269,7 +269,7 @@ Once you've installed it you can use menu  *CRM & SRM > Reporting*  on database 
    *Analyzing the performance of your support team.*
 
 
-If you want to analyze the performance of your service and support group, for example, use the graph from  *CRM & SRM > Reporting > All Months > Cases by User and Section* . Click the menu to obtain a list view, then click the  *Graph*  button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click  *Filter* , and see the graph change to reflect the new data.
+If you want to analyze the performance of your service and support group, for example, use the graph from :menuselection:`CRM & SRM --> Reporting --> All Months --> Cases by User and Section`. Click the menu to obtain a list view, then click the :guilabel:`Graph` button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click  *Filter* , and see the graph change to reflect the new data.
 
 By default, the system provides a list containing the following information for each month, user and section, and an indication of the state of each set of information:
 
@@ -316,7 +316,7 @@ Using these rules you could:
 
 * transfer the case to technical services if the request is about a technical fault.
 
-To define new rules use the menu  *CRM & SRM > Configuration > Cases > Rules* .
+To define new rules use the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
 
 .. figure::  images/crm_rule.png

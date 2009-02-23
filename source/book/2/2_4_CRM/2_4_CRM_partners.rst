@@ -42,7 +42,7 @@ The concept of a partner here is much more flexible than in many other managemen
 
 So a partner can be both your supplier and your customer at the same time. This feature is particularly important when you have subsidiaries or franchises since transactions between the parent and its subsidiaries in these cases will generally be two-way.
 
-To get a list of partners using demonstration data, use the menu  *Partners > Partners*  (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has only the data that you've put into it - both can show the principles).
+To get a list of partners using demonstration data, use the menu :menuselection:`Partners --> Partners` (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has only the data that you've put into it - both can show the principles).
 
 
 .. figure::  images/crm_partner.png
@@ -76,7 +76,7 @@ Contacts
 
 You can have several contacts for one partner. Contacts represent company employees that you're in contact with, along with their address details. For each address you can indicate their type (\ ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on this, Open ERP can supply an address that matches the contact's function when generating documents at various stages through an Order process.
 
-Contacts can be entered into the first ( *General* ) tab of the  *Partners*  form, or you can get direct access to the list of addresses through the  *Partners > Partner Contacts* menu.
+Contacts can be entered into the first ( *General* ) tab of the  *Partners*  form, or you can get direct access to the list of addresses through the :menuselection:`Partners --> Partner Contacts` menu.
 
 You can search for a subset of Partners and Contacts using their company  *Name*  or  *Contact*  name or part of the address, or any of the other search fields in either the  *Basic Search*  or the  *Advanced Search*  tab.
 
@@ -91,7 +91,7 @@ You can search for a subset of Partners and Contacts using their company  *Name*
 Partner Categories
 ------------------
 
-Open ERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu  *Partners > Partners by Category* .
+Open ERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu :menuselection:`Partners --> Partners by Category`.
 
 
 .. figure::  images/crm_partner_category_big.png
@@ -108,13 +108,13 @@ The tree structure is also very useful when you're running the various statistic
 
 In the following sections you'll see how to assign partners to categories manually (perhaps for a newsletter subscription or as a hot prospect), or automatically using segmentation rules.
 
-Use the menu  *Partners > Configuration > Categories > Edit Categories*  to define a new category.
+Use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit Categories` to define a new category.
 
-To try Open ERP's partner capabilities described here for yourself, log into the \ ``openerp_ch04``\   database as \ ``admin/admin``\   then click  *Partners > Configuration > Categories > Edit Categories*  and create a new category of \ ``Small Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new  *Partner*  whose  *Name*  is \ ``Susan Trent ``\  and category is \ ``Small Suppliers``\  . 
+To try Open ERP's partner capabilities described here for yourself, log into the \ ``openerp_ch04``\   database as \ ``admin/admin``\   then click :menuselection:`Partners --> Configuration --> Categories > Edit Categories` and create a new category of \ ``Small Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new  *Partner*  whose  *Name*  is \ ``Susan Trent ``\  and category is \ ``Small Suppliers``\  . 
 
-Click  *Partners > Partners by Category*  and then click  *Suppliers > Small Suppliers*  to find just \ ``Susan Trent``\  . Do this again but now click the  *Suppliers*  category in  *Partners by Category*  and you'll find that both \ ``Plumbing Component Suppliers``\  and \ ``Susan Trent``\   are in the higher-level category: \ ``Susan Trent``\  is there because she's in a child category.
+Click :menuselection:`Partners --> Partners by Category` and then click :menuselection:`Suppliers --> Small Suppliers` to find just \ ``Susan Trent``\  . Do this again but now click the  *Suppliers*  category in  *Partners by Category*  and you'll find that both \ ``Plumbing Component Suppliers``\  and \ ``Susan Trent``\   are in the higher-level category: \ ``Susan Trent``\  is there because she's in a child category.
 
-Add new contact \ ``Graham Strong``\   to \ ``Plumbing Component Suppliers``\  . Graham's  *Address Type*  is \ ``Invoice``\  . Click  *Partners > Partner Contacts*  and see that both Susan and Graham appear on that list.
+Add new contact \ ``Graham Strong``\   to \ ``Plumbing Component Suppliers``\  . Graham's  *Address Type*  is \ ``Invoice``\  . Click :menuselection:`Partners --> Partner Contacts` and see that both Susan and Graham appear on that list.
 
 
 .. Copyright © Open Object Press. All rights reserved.

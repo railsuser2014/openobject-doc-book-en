@@ -44,11 +44,11 @@ In this example you'll find the following elements:
 
 Depending on your needs, Open ERP provides three menus to access the same information:
 
-* List of partners: *Partners > Partners*,
+* List of partners: :menuselection:`Partners --> Partners`,
 
-* List of contacts: *Partners > Contacts*,
+* List of contacts: :menuselection:`Partners --> Contacts`,
 
-* List of posts held by contacts at partners: *Partners > Contact Posts*.
+* List of posts held by contacts at partners: :menuselection:`Partners --> Contact Posts`.
 
 The three menus above are only three different views on the same data. If you correct a contact name on the contact form, this will be modified on all the posts occupied in the different companies.
 
@@ -178,7 +178,7 @@ Entering prospects into the system
 
 New prospects are usually entered as a lead in the system. This means that you don't create a partner form or sales opportunity until you have qualified whether the lead is interesting or not. If the new contact is indeed interesting you then enter the data on into a partner form and, eventually, a sales opportunity.
 
-To enter a lead manually use the menu *CRM & SRM > Sales > Leads > New Lead*. A form opens to let you enter data about this new contact.
+To enter a lead manually use the menu :menuselection:`CRM & SRM --> Sales --> Leads --> New Lead`. A form opens to let you enter data about this new contact.
 
 .. figure:: images/crm_lead_new.png
    :align: center
@@ -201,7 +201,7 @@ When a new lead has been created it's automatically put into the open state.
 
 It's also possible to import a huget list of leads. That's useful if you've bought a database of potential prospects and you want to insert them all into the system to handle them all at once. 
 
-To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu *CRM & SRM > Presales > Leads > My Leads*. At the bottom of the list click on the *Import* link. Open ERP opens a form for importing the data.
+To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu :menuselection:`CRM & SRM --> Presales -> Leads -> My Leads`. At the bottom of the list click on the *Import* link. Open ERP opens a form for importing the data.
 
 .. figure:: images/crm_lead_import.png
    :align: center
@@ -230,15 +230,15 @@ Organizing leads
 
 To help the users organize and handle leads efficiently, Open ERP provides several menus in the CRM system that can be used depending on the needs of each:
 
-* *Leads > New Lead* opens an entry form directly onto a new lead. This menu can usefully be put into your shortcuts,
+* :menuselection:`Leads --> New Lead` opens an entry form directly onto a new lead. This menu can usefully be put into your shortcuts,
 
-* *Leads > My Leads* gives a list of all the leads (both open and not) which you're linked to,
+* :menuselection:`Leads --> My Leads` gives a list of all the leads (both open and not) which you're linked to,
 
-* *Leads > My Leads > My Current Leads* gives a list of all your leads that you still need to handle (your open, draft and waiting leads),
+* :menuselection:`Leads --> My Leads --> My Current Leads` gives a list of all your leads that you still need to handle (your open, draft and waiting leads),
 
-* *Leads > My Leads > My Open Leads > Leads Waiting* gives a list of all your leads that that are still waiting for a customer response. This enables you to check periodically on your work to do,
+* :menuselection:`Leads --> My Leads --> My Open Leads --> Leads Waiting` gives a list of all your leads that that are still waiting for a customer response. This enables you to check periodically on your work to do,
 
-* *Leads > All Leads* is a list of all the leads assigned to different salespeople. This menu as those beneath it are used by managers to check on each person's work.
+* :menuselection:`Leads --> All Leads` is a list of all the leads assigned to different salespeople. This menu as those beneath it are used by managers to check on each person's work.
 
 .. figure:: images/crm_leads_list.png
    :align: center
@@ -279,11 +279,11 @@ Leads are generally handled en masse, with the automation of certain responses o
 Ensuring that you track opportunities
 -------------------------------------
 
-Just like the leads, Open ERP provides several menus to handle sales opportunities efficiently. All the menus for opportunities are under the menu *CRM & SRM > Presales > Opportunties*.
+Just like the leads, Open ERP provides several menus to handle sales opportunities efficiently. All the menus for opportunities are under the menu :menuselection:`CRM & SRM --> Presales --> Opportunities`.
 
-To quickly create a new opportunity, use the menu Opportunity > New Opportunity. You usually use this menu in the case where the opportunity is direct and doesn't come first from a lead. It can also be useful to create a shortcut to this menu so that you can quickly open a new opportunity form when you need to – after a phone call, or an email, that needs followup.
+To quickly create a new opportunity, use the menu :menuselection:`Opportunity --> New Opportunity`. You usually use this menu in the case where the opportunity is direct and doesn't come first from a lead. It can also be useful to create a shortcut to this menu so that you can quickly open a new opportunity form when you need to – after a phone call, or an email, that needs followup.
 
-The salesperson uses the menu *Opportunites > My Opportunities > My Open Opportunities* to track their opportunities. After the different customer contacts, the salesperson can enter the information into the form to describe the activity. The history tab provides a history of all the information about the activity throughout its life. The activities are automatically reported on the partner form of the associated customer. To see this, open the events tab when you open the partner form.
+The salesperson uses the menu :menuselection:`Opportunites --> My Opportunities --> My Open Opportunities` to track their opportunities. After the different customer contacts, the salesperson can enter the information into the form to describe the activity. The history tab provides a history of all the information about the activity throughout its life. The activities are automatically reported on the partner form of the associated customer. To see this, open the events tab when you open the partner form.
 
 .. figure:: images/crm_partner_event.png
    :align: center
@@ -292,12 +292,12 @@ The salesperson uses the menu *Opportunites > My Opportunities > My Open Opportu
 
 When the leads have been converted into opportunities, the opportunities can be assigned to any salesperson. In that case you designate a manager in the company who is responsible for assigned the new opportunities to the different salespeople, to suit their speciality, location or availability.
 
-To do this, the manager can use the menu Opportunity > All Opportunities > Unassigned Opportunities. This gives you a list of all opportunities that haven't yet been assigned to a salesperosn. The manager can the enter the salesperson responsible for the opportunity into the field *Responsible*.
+To do this, the manager can use the menu :menuselection:`Opportunity --> All Opportunities --> Unassigned Opportunities`. This gives you a list of all opportunities that haven't yet been assigned to a salesperosn. The manager can the enter the salesperson responsible for the opportunity into the field *Responsible*.
 
 The company calendar
 --------------------
 
-There are several methods for entering a new meeting with a partner. The first method is to enter the meeting directly in the company calendar. To do that, use the menu *CRM & SRM > Calendar > All Meetings*.
+There are several methods for entering a new meeting with a partner. The first method is to enter the meeting directly in the company calendar. To do that, use the menu :menuselection:`CRM & SRM --> Calendar --> All Meetings`.
 
 You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and another use the buttons above and to the right of the calendar.
 
@@ -339,18 +339,18 @@ Call management can be used for two needs:
 
 To enter details of a phone call, use one of the two following menus:
 
-* *CRM & SRM > Sales > Phone Calls > Incoming*
+* :menuselection:`CRM & SRM --> Sales --> Phone Calls --> Incoming`,
 
-* *CRM & SRM > Sales > Phone Calls > Outgoing*
+* :menuselection:`CRM & SRM --> Sales --> Phone Calls --> Outgoing`.
 
 The phone call will then be visible on the partner form to give you complete visibility of the events about that customer or supplier.
 
 Managing a Call Center
 ----------------------
 
-You can manually encode calls that happen or you can pass them into Open ERP. But for mass campaigns, you can import a list of phone calls to make. To do this, click on the import link at the bottom of the list of phone calls. On the GTK client use the toolbar button *Form > Import* at the top.
+You can manually encode calls that happen or you can pass them into Open ERP. But for mass campaigns, you can import a list of phone calls to make. To do this, click on the import link at the bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form --> Import` at the top.
 
-Phone calls that have occurred in the open state. The different operators can be assigned calls and handle them one by one using the menu *CRM & SRM > Phone Calls > Outgoing Calls > Calls To Make*.
+Phone calls that have occurred in the open state. The different operators can be assigned calls and handle them one by one using the menu :menuselection:`CRM & SRM --> Phone Calls --> Outgoing Calls --> Calls To Make`.
 
 The operator can open the calls one by one. For each call, after having contacted the customer, the operator can click on one of the following buttons:
 
@@ -371,7 +371,7 @@ The email gateway lets you interface the CRM with incoming and outgoing emails. 
 
 The Outlook and Thunderbird plugins enable you to synchronize your contacts between your email client and your ERP. They both enable you to create sales opportunities based on exchanges you have with the customer.
 
-The rules for automating actions will enable you to send emails automatically based on the event, such as assigning opportunities to the most appropriate person. To access the CRM rules, use the menu *CRM & SRM > Configuration > Cases > Rules*.
+The rules for automating actions will enable you to send emails automatically based on the event, such as assigning opportunities to the most appropriate person. To access the CRM rules, use the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
 The segmentation tools will enable you to create partner groups and act on each segment differently. For example you could create pricelists for each of the segments, or start phone marketing campaigns by segment. To enable the management of segmentation you should install the module ``crm_profiling``.
 
