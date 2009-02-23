@@ -36,31 +36,31 @@ Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` 
 
 Three fields are important for stock management when you're configuring a new product:
 
-* Product Type,
+* :guilabel:`Product Type`,
 
-* Procure Method,
+* :guilabel:`Procure Method`,
 
-* Supply Method.
+* :guilabel:`Supply Method`.
 
 Product Types
 --------------
 
 The product type indicates if the product is handled in stock management and if Open ERP manages its procurement. The three distinct product types are:
 
-* Stockable Product: this product is used in stock management and its replenishment is more or less automated as defined by the rules established in the system. Examples, a bicycle, a computer or a central heating system.
+* :guilabel:`Stockable Product` : this product is used in stock management and its replenishment is more or less automated as defined by the rules established in the system. Examples, a bicycle, a computer or a central heating system.
 
-* Consumable: handled in stock management, you can receive it, deliver it and make it. But its stock level isn't managed by the system. Open ERP assumes that you've got sufficient levels in stock at all time, so it doesn't restock it automatically. Example, nails.
+* :guilabel:`Consumable` : handled in stock management, you can receive it, deliver it and make it. But its stock level isn't managed by the system. Open ERP assumes that you've got sufficient levels in stock at all time, so it doesn't restock it automatically. Example, nails.
 
-* Services: don't appear in the various stock operations. Example, a consulting service.
+* :guilabel:`Services` : don't appear in the various stock operations. Example, a consulting service.
 
 Procurement Methods – Make to Stock and Make to Order
 -----------------------------------------------------
 
 The procurement method shows how the product will be replenished:
 
-* Make to Stock: your customers are supplied from available stock. You procure a significant quantity of each product when its stock is too low. Example, a classic distributor.
+* :guilabel:`Make to Stock` : your customers are supplied from available stock. You procure a significant quantity of each product when its stock is too low. Example, a classic distributor.
 
-* Make to Order: when a customer order is confirmed, you then procure or manufacture the products for this order. A customer order 'Make to Order' won't modify stock in the medium term because you restock with the exact amount that was ordered. Example, computers from a large supplier assembled on demand.
+* :guilabel:`Make to Order` : when a customer order is confirmed, you then procure or manufacture the products for this order. A customer order 'Make to Order' won't modify stock in the medium term because you restock with the exact amount that was ordered. Example, computers from a large supplier assembled on demand.
 
 You find a mix of these two modes used for the different final and intermediate products in most industries. The procurement method shown on the product form is a default value for the order, enabling the salesperson to choose the best mode for fulfilling a particular order.
 
@@ -69,17 +69,17 @@ The figures below show the change of stock levels for a product managed Make to 
 .. figure:: images/stock_from_stock.png
    :align: center
 
-   *Change in stock for a product managed as Make to Stock.*
+   *Change in stock for a product managed as :guilabel:`Make to Stock`.*
 
 .. figure:: images/stock_from_order.png
    :align: center
 
-   *Change in stock for a product managed as Make to Order.*
+   *Change in stock for a product managed as :guilabel:`Make to Order`.*
 
 .. note:: Logistical Methods
 
-   The **Make to Stock** logistical approach is usually used for high volumes and when the demand is seasonal or otherwise easy to forecast. 
-   The **Make to Order** approach is used for products that are measured, or very costly to stock or have a short re-stocking time.
+   The :guilabel:`Make to Stock` logistical approach is usually used for high volumes and when the demand is seasonal or otherwise easy to forecast. 
+   The :guilabel:`Make to Order` approach is used for products that are measured, or very costly to stock or have a short re-stocking time.
 
 Supply Methods
 ---------------
@@ -92,9 +92,9 @@ Open ERP supports two methods of procurement:
 
 These are just the default settings used by the system during automated replenishment. The same product can be either manufactured internally or bought from a supplier.
 
-The three fields (Supply Method, Procurement Method, Product Type) determine the system's behaviour when a product is required. The system will generate different documents depending on the configuration of these three fields when satisfying an order, a price quotation to a supplier or a manufacturing order.
+The three fields (:guilabel:`Supply Method`, :guilabel:`Procurement Method`, :guilabel:`Product Type`) determine the system's behaviour when a product is required. The system will generate different documents depending on the configuration of these three fields when satisfying an order, a price quotation to a supplier or a manufacturing order.
 
-Open ERP manages both stockable products and services. A service bought from a supplier in *Make to Order* mode, will generate a subcontract order from the supplier in question.
+Open ERP manages both stockable products and services. A service bought from a supplier in :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
 The following illustrates the different cases for automatic restocking.
 

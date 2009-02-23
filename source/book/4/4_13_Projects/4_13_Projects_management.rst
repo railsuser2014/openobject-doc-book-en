@@ -114,7 +114,7 @@ The person responsible for the client, the client account manager, approves clie
 
 The person responsible for the technical tracking of the project is called the project manager. She makes the project happen, organizing and sub-contracting the different project tasks. The project manager would often be responsible for a development team to carry the project out, and generally has a technical profile.
 
- *Account Manager*  *Project manager*  *Partner Info* 
+.. todo: What are these doing here? *Account Manager*  *Project manager*  *Partner Info* 
 
 If you don't make any such distinction in the roles then put the same person in both fields.
 
@@ -147,13 +147,13 @@ You can also change some of the order parameters, which affects the invoice:
 Planning and managing priorities
 --------------------------------
 
-Several methods can be used for ordering tasks by their respective priorities. Open ERP orders tasks based on a function of the following fields:  *Sequence* ,  *Priority*  and  *Deadline* .
+Several methods can be used for ordering tasks by their respective priorities. Open ERP orders tasks based on a function of the following fields: :guilabel:`Sequence`, :guilabel:`Priority`, and :guilabel:`Deadline`.
 
-Use the  *Sequence*  field on the second tab,  *Other Information* , to plan a project made up of several tasks. In the case of an IT project, for example, where development tasks are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and so on. When you first open the list of project tasks, they're listed in their sequence order.
+Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Information`, to plan a project made up of several tasks. In the case of an IT project, for example, where development tasks are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and so on. When you first open the list of project tasks, they're listed in their sequence order.
 
- *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent* 
+.. todo:: More of these labels - why? *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent* 
 
- *Deadline* 
+.. todo:: More of these labels - why? *Deadline* 
 
 You can use one of these three ordering methods, or combine several of them, depending on the project.
 
@@ -172,8 +172,6 @@ You can use one of these three ordering methods, or combine several of them, dep
    *Gantt plan, calculated for earliest delivery.*
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a grid is specified you can call up a project Gantt chart using the Print button. The system then calculates a project plan for earliest delivery using task ordering and the attendance grid.
-
-
 
 .. tip:: Calendar view
 

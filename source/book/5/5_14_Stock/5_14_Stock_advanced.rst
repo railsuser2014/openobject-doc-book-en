@@ -75,7 +75,7 @@ If you leave the quantities alone, Open ERP confirms and closes the order for de
 
    *Confirmation screen for delivered quantities.*
 
-When you open the list of current deliveries, you find the field 'Partial delivery' which shows the reference number of the first delivery sent to the customer. That enable you to easily find the partial orders delivered so that you can treat them as a priority.
+When you open the list of current deliveries, you find the field :guilabel:`Partial delivery` which shows the reference number of the first delivery sent to the customer. That enables you to easily find the partial orders delivered so that you can treat them as a priority.
 
 Receiving supplier products
 ---------------------------
@@ -137,17 +137,17 @@ You should install the ``stock_location`` module if routing products to customer
 
    *Managing the paths from one location to another in a product form.*
 
-This will enable you to configure logistic rules individually for each product. For example, when a specific product arrives in stores it can automatically be sent to quality control. In this case it must be configured with rules on the product form. The fields that make up those rules are:
+This will enable you to configure logistics rules individually for each product. For example, when a specific product arrives in stores it can automatically be sent to quality control. In this case it must be configured with rules on the product form. The fields that make up those rules are:
 
-* Source location: the rule only applies if a product comes from this location,
+* :guilabel:`Source location` : the rule only applies if a product comes from this location,
 
-* Destination location: the rule only applies if a product ends up in this location,
+* :guilabel:`Destination location` : the rule only applies if a product ends up in this location,
 
-* Type of move: automatic, manual, automatic with no steps,
+* :guilabel:`Type of move`: automatic, manual, automatic with no steps,
 
-* Lead time for move,
+* :guilabel:`Lead time for move`,
 
-* Name of operations: a free text field which will be included in the automatic stock move proposed by Open ERP.
+* :guilabel:`Name of operations` : a free text field which will be included in the automatic stock move proposed by Open ERP.
 
 You'll see some examples of using these locations and logistics by product:
 

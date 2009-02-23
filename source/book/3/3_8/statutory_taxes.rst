@@ -54,7 +54,7 @@ Three main objects are involved in the tax system in Open ERP:
 
 You can attach zero or more  *Supplier Tax* es and Customer taxes to products, so that you can account separately for purchase and sales taxes (or Input and Output VAT – where VAT is Value Added Tax). Because you can attach more than one tax, you can handle a VAT or Sales Tax separately from an Eco Tax on the same product.
 
-You can also attach a  *Default Tax*  to a partner, which replaces any taxes belonging to the same Tax Group that may have been defined in a Product. 
+You can also attach a :guilabel:`Default Tax` to a partner, which replaces any taxes belonging to the same Tax Group that may have been defined in a Product. 
 
 So you can define a \ ``Tax Exempt``\   tax in the \ ``VAT``\   group and assign it to partners who declare themselves to be charities. All product sales to a charity would then be VAT free even if the products themselves carry various tax rates, but non-VAT taxes such as Eco-taxes can still be applied.
 
@@ -65,23 +65,23 @@ Tax Cases are also known in Open ERP as Tax Codes. They're used for tax reporti
 
 To create a new Tax Case, use the menu :menuselection:`Financial Management --> Configuration --> Taxes --> Tax Codes`. You define the following fields:
 
-*  *Tax Case Name* : a unique name required to identify the Case,
+*  :guilabel:`Tax Case Name` : a unique name required to identify the Case,
 
-*  *Company* : a required link that attaches the Case to a specific company, such as the Main Company,
+*  :guilabel:`Company` : a required link that attaches the Case to a specific company, such as the Main Company,
 
-*  *Case Code* : a short code for the case,
+*  :guilabel:`Case Code` : a short code for the case,
 
-*  *Parent Code* : a link to a parent Tax Case that forms the basis of the tree structure like a Chart of Accounts,
+*  :guilabel:`Parent Code` : a link to a parent Tax Case that forms the basis of the tree structure like a Chart of Accounts,
 
-*  *Sign for Parent* : choose 1.00 to add the total to the parent account or -1.00 to subtract it,
+*  :guilabel:`Sign for Parent` : choose 1.00 to add the total to the parent account or -1.00 to subtract it,
 
-*  *Description* : a free text field for documentation purposes.
+*  :guilabel:`Description` : a free text field for documentation purposes.
 
 You can also see two read-only fields:
 
-*  *Year Sum* : a single figure showing the total accumulated on this case for the financial year.
+*  :guilabel:`Year Sum` : a single figure showing the total accumulated on this case for the financial year.
 
-*  *Period Sum* : a single figure showing the total accumulated on this case for the current financial period (perhaps 1 month or 3 months).
+*  :guilabel:`Period Sum` : a single figure showing the total accumulated on this case for the current financial period (perhaps 1 month or 3 months).
 
 You will probably need to create two tax cases for each different tax rate that you have to define, one for the tax itself and one for the invoice amount that the tax is based on. And you'll create tax cases that you won't link to Tax objects (similar to General Account \ ``View``\   types) just to organize the tree structure.
 
@@ -94,29 +94,29 @@ Tax objects calculate tax on the financial transactions that they're attached to
 
 To create a new Tax Case, use the menu :menuselection:`Financial Management --> Configuration --> Taxes --> Taxes`. You define the following fields:
 
-*  *Tax Name* : a unique name required for this tax (such as \ ``12% Sales VAT``\  ),
+*  :guilabel:`Tax Name` : a unique name required for this tax (such as \ ``12% Sales VAT``\  ),
 
-*  *Company* : a required link to a company associated with the tax, such as the Main Company,
+*  :guilabel:`Company` : a required link to a company associated with the tax, such as the Main Company,
 
-*  *Tax Group* : \ ``VAT``\   or \ ``Other``\  , used to determine which taxes on products can be substituted by taxes on partners,
+*  :guilabel:`Tax Group` : \ ``VAT``\   or \ ``Other``\  , used to determine which taxes on products can be substituted by taxes on partners,
 
-*  *Tax Type* : a required field directing how to calculate the tax: \ ``Percent``\  , \ ``Fixed``\  , \ ``None``\   or \ ``Python Code``\  , (the latter is found in the  *Compute Code*  field in the  *Special Computation*  tab),
+*  :guilabel:`Tax Type` : a required field directing how to calculate the tax: \ ``Percent``\  , \ ``Fixed``\  , \ ``None``\   or \ ``Python Code``\  , (the latter is found in the  *Compute Code*  field in the  *Special Computation*  tab),
 
-*  *Applicable Type* : a required field that indicates whether the base amount should be used unchanged (when the value is \ ``True``\  ) or whether it should be processed by Python Code in the  *Applicable Code*  field in the  *Special Computation*  tab when the value is \ ``Code``\  ),
+*  :guilabel:`Applicable Type` : a required field that indicates whether the base amount should be used unchanged (when the value is \ ``True``\  ) or whether it should be processed by Python Code in the  *Applicable Code*  field in the  *Special Computation*  tab when the value is \ ``Code``\  ),
 
-*  *Amount* : a required field whose meaning depends on the Tax Type, being a multiplier on the base amount when the  *Tax Type*  is \ ``Percent``\  , and a fixed amount added to the base amount when the  *Tax Type*  is \ ``Fixed``\  ,
+*  :guilabel:`Amount` : a required field whose meaning depends on the Tax Type, being a multiplier on the base amount when the  *Tax Type*  is \ ``Percent``\  , and a fixed amount added to the base amount when the  *Tax Type*  is \ ``Fixed``\  ,
 
-*  *Include in base amount* : when checked, the tax is added to the base amount and not shown separately,
+*  :guilabel:`Include in base amount` : when checked, the tax is added to the base amount and not shown separately,
 
-*  *Domain* : is only used in special developments, not in the core Open ERP system,
+*  :guilabel:`Domain` : is only used in special developments, not in the core Open ERP system,
 
-*  *Invoice Tax Account* :a General Account used to record invoiced tax amounts, which may be the same for several taxes or split so that one tax is allocated to one account,
+*  :guilabel:`Invoice Tax Account` :a General Account used to record invoiced tax amounts, which may be the same for several taxes or split so that one tax is allocated to one account,
 
-*  *Refund Tax Account* : a General Account used to record invoiced tax refunds, which may be the same as the Invoice Tax Account or, in some tax jurisdictions, must be separated,
+*  :guilabel:`Refund Tax Account` : a General Account used to record invoiced tax refunds, which may be the same as the Invoice Tax Account or, in some tax jurisdictions, must be separated,
 
-*  *Tax on childs* : when checked, the tax calculation is applied to the output from other tax calculations specified in the  *Childs Tax Account* field (so you can have taxes on taxes), otherwise the calculation is applied to the base amount on the transaction,
+*  :guilabel:`Tax on childs` : when checked, the tax calculation is applied to the output from other tax calculations specified in the :guilabel:`Childs Tax Account` field (so you can have taxes on taxes), otherwise the calculation is applied to the base amount on the transaction,
 
-*  *Childs Tax Account* : other tax accounts that can be used to supply the figure for taxation.
+*  :guilabel:`Childs Tax Account` : other tax accounts that can be used to supply the figure for taxation.
 
 .. tip:: Using Child Taxes 
 
@@ -129,13 +129,13 @@ To create a new Tax Case, use the menu :menuselection:`Financial Management --> 
 
 The fields above apply the taxes that you specify and record them in the general accounts but don't provide you with the documentation that your tax authorities might need. For this use the Tax Declaration tab to define which Tax Cases should be used for this tax:
 
-*  *Invoices/Base Code* : tax case to record the invoiced amount that the tax is based on,
+*  :guilabel:`Invoices/Base Code` : tax case to record the invoiced amount that the tax is based on,
 
-*  *Invoices/Tax Code* : tax case to record the invoiced tax amount
+*  :guilabel:`Invoices/Tax Code` : tax case to record the invoiced tax amount
 
-*  *Refund Invoices/Base Code* : tax case to record the refund invoice amount that the tax is based on,
+*  :guilabel:`Refund Invoices/Base Code` : tax case to record the refund invoice amount that the tax is based on,
 
-*  *Refund Invoices/Tax Code* : tax case to record the refund invoice tax amount.
+*  :guilabel:`Refund Invoices/Tax Code` : tax case to record the refund invoice tax amount.
 
 Use of Taxes on Products, Partners, Projects and Accounts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -148,20 +148,20 @@ When you've created a tax structure consisting of Tax Cases and Tax objects, you
 	you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather than a tax-exclusive price plus tax. 
 
 	To do this in Open ERP just install the ``account_tax_include`` module. 
-	Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. 
+	Each invoice is given a new :guilabel:`Price method` field, in which you choose Tax included or Tax excluded. 
 	Prices are then displayed appropriately.
 
 You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu :menuselection:`Partners --> Partners` to open and edit a Partner form for the charity, then:
 
-* select the *Properties*  tab,
+* select the :guilabel:`Properties` tab,
 
-* set the  *Default Tax*  field to the \ ``Charities VAT``\   tax.
+* set the :guilabel:`Default Tax` field to the \ ``Charities VAT``\   tax.
 
 You can assign multiple taxes to a Product. Assuming you have set up the appropriate taxes, you would use the menu :menuselection:`Products --> Products` to open and edit a Product definition, then:
 
-* select one or more  *Customer Taxes*  for any products that you might sell, which may include a \ ``Sales Tax``\   or \ ``Output VAT``\  , and a \ ``Sales Eco Tax``\  ,
+* select one or more :guilabel:`Customer Taxes`  for any products that you might sell, which may include a \ ``Sales Tax``\   or \ ``Output VAT``\  , and a \ ``Sales Eco Tax``\  ,
 
-* select one or more  *Supplier Taxes*  for any products that you might purchase, which may include a \ ``Purchase Tax``\   or \ ``Input VAT``\  , and a \ ``Purchase Eco Tax``\  .
+* select one or more :guilabel:`Supplier Taxes` for any products that you might purchase, which may include a \ ``Purchase Tax``\   or \ ``Input VAT``\  , and a \ ``Purchase Eco Tax``\  .
 
 Generally, when you make a purchase or sale, the taxes assigned to the product are used to calculate the taxes owing or owed. But when you make a transaction with a partner that has a  *Default Tax*  defined, for example a sale to a charity with \ ``Charities ``\  \ ``Tax``\  , that tax will be used in place of other Product taxes in the same group – in this case replacing the standard \ ``Sales Tax``\   or \ ``Output VAT``\  .
 
@@ -171,7 +171,7 @@ You can also assign multiple taxes to a Project, so that invoices from the Proje
 
 	The third-party module ``import_export`` can be used to extend Open ERP's tax system,
 	so that you can assign taxes to different accounts depending on the location of the Partner. 
-	The Partner is given a new Partner Location field that can be set to Local, Europe or Outside, 
+	The :guilabel:`Partner` is given a new :guilabel:`Partner Location` field that can be set to Local, Europe or Outside, 
 	so that taxes and tax bases can be channeled to different accounts. 
 
 	This module could be the basis of more ambitious location-based tax accounting.
@@ -186,7 +186,7 @@ The accounts ledgers and the balance sheet
 
 To print the balance of accounts or the accounts ledgers you should turn to the Chart of Accounts. To do that go to the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts`.
 
-Select the accounting period you're interested in and click  *Open Charts* , then select one or several accounts for analysis by clicking and highlighting the appropriate line(s). Click the  *Print*  button and Open ERP asks you to select either the  *General Ledger* , the  *Account balance* , or an  *Analytic check* . If you select an account which has sub-accounts in the hierarchy you can automatically analyze that account and its child accounts.
+Select the accounting period you're interested in and click :guilabel:`Open Charts`, then select one or several accounts for analysis by clicking and highlighting the appropriate line(s). Click the  *Print*  button and Open ERP asks you to select either the  *General Ledger* , the  *Account balance* , or an  *Analytic check* . If you select an account which has sub-accounts in the hierarchy you can automatically analyze that account and its child accounts.
 
 .. tip::  Simulated balance 
 

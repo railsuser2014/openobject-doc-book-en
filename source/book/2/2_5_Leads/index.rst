@@ -267,7 +267,7 @@ If the salesperson thinks that there is a real opportunity with the lead, follow
 
    *Converting a lead into a sales opportunity.*
 
-Some companies have more advanced processes for the qualification of a lead. They pass through several steps, auch as first call, renewing contact, waiting for a verbal agreement. You can then use the field *Step* that is found up to the right of the lead definition. To move it automatically through the next step, you can use the button that looks like a right arrow.
+Some companies have more advanced processes for the qualification of a lead. They pass through several steps, auch as first call, renewing contact, waiting for a verbal agreement. You can then use the field :guilabel:`Step` that is found up to the right of the lead definition. To move it automatically through the next step, you can use the button that looks like a right arrow.
 
 Sales Opportunities
 -------------------
@@ -292,7 +292,7 @@ The salesperson uses the menu :menuselection:`Opportunites --> My Opportunities 
 
 When the leads have been converted into opportunities, the opportunities can be assigned to any salesperson. In that case you designate a manager in the company who is responsible for assigned the new opportunities to the different salespeople, to suit their speciality, location or availability.
 
-To do this, the manager can use the menu :menuselection:`Opportunity --> All Opportunities --> Unassigned Opportunities`. This gives you a list of all opportunities that haven't yet been assigned to a salesperosn. The manager can the enter the salesperson responsible for the opportunity into the field *Responsible*.
+To do this, the manager can use the menu :menuselection:`Opportunity --> All Opportunities --> Unassigned Opportunities`. This gives you a list of all opportunities that haven't yet been assigned to a salesperosn. The manager can the enter the salesperson responsible for the opportunity into the field :guilabel:`Responsible`.
 
 The company calendar
 --------------------

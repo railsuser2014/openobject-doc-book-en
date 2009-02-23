@@ -35,7 +35,7 @@ Finally the delivery journals are used to post each item into a delivery journal
 Using the journals
 ------------------
 
-You'll now see how to use the journals to organize your stock management in practice. After installing the module ``sale_journal`` look at the list of partners. In the tab 'Sales and Purchases' on any of them you'll now see the field 'Invoicing Journal'.
+You'll now see how to use the journals to organize your stock management in practice. After installing the module ``sale_journal`` look at the list of partners. In the tab :guilabel:`Sales and Purchases` on any of them you'll now see the field :guilabel:`Invoicing Journal`.
 
 .. figure:: images/partner_property_view.png
    :align: center
@@ -49,11 +49,11 @@ You can create a new *Invoicing Journal* on a partner on the fly. You can show i
 
    *Defining an invoicing journal.*
 
-Then enter the data for some orders for these two partners. After entering this order data, the field *Invoicing Mode* is completed automatically from the partner settings. Put these orders into the Invoicing Mode based on items in the second tab. 
+Then enter the data for some orders for these two partners. After entering this order data, the field :guilabel:`Invoicing Mode` is completed automatically from the partner settings. Put these orders into the Invoicing Mode based on items in the second tab. 
 
-Then you'll look at the assembly notes about these orders in the field 'Invoicing Mode' is automatically shown there. Then confirm the different orders in the list.
+Then you'll look at the assembly notes about these orders in the field :guilabel:`Invoicing Mode` is automatically shown there. Then confirm the different orders in the list.
 
-At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu :menuselection:`Stock Management --> Sorted List --> List to invoice`. Choose the invoicing journal and all the lists of orders to invoice then open in list5 view. It's then possible to automatically carry out invoicing by clicking the action *Invoice* (the gears symbol in the application client).
+At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu :menuselection:`Stock Management --> Sorted List --> List to invoice`. Choose the invoicing journal and all the lists of orders to invoice then open in list view. It's then possible to automatically carry out invoicing by clicking the action :guilabel:`Invoice` (the gears symbol in the application client).
 
 .. tip:: Confirming invoices
 

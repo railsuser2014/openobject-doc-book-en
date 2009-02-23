@@ -7,7 +7,7 @@ You'll create all the elements in the database that you need to carry out the us
 Configuring the Main Company
 ----------------------------
 
-Start to personalize your database by renaming the  *Main Company*  from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this personalization information used in the document headers and footers. 
+Start to personalize your database by renaming the :guilabel:`Main Company` from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this personalization information used in the document headers and footers. 
 
 To do this, click :menuselection:`Partners --> Partners`  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
 
@@ -21,19 +21,19 @@ Change the following:
 
 *  *Contact Name* : \ ``George Turnbull``\  .
 
-and any other fields you like, such as the address and phone numbers, then  *Save* . This adds one Contact to the Partner, which is sufficient for the example.
+and any other fields you like, such as the address and phone numbers, then :guilabel:`Save`. This adds one Contact to the Partner, which is sufficient for the example.
 
 From the :guilabel:`Main Menu`, click :menuselection:`Administration --> Configuration --> Base --> Define Main Company`  and edit the entry there:
 
-*  *Company Name* : \ ``AmbiPlum``\  ,
+*  :guilabel:`Company Name` : \ ``AmbiPlum``\  ,
 
-*  *Partner* : should already show \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Partner` : should already show \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  *Report Header* : \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Report Header` : \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  *Report Footer 1* : \ ``Best Plumbing Services, Great Prices``\  ,
+*  :guilabel:`Report Footer 1` : \ ``Best Plumbing Services, Great Prices``\  ,
 
-*  *Report Footer 2* : \ ``Ambitious – our Registered Company Details``\  .
+*  :guilabel:`Report Footer 2` : \ ``Ambitious – our Registered Company Details``\  .
 
 You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can change it in the Main Company (:menuselection:`Administration --> Configuration --> Base --> Main Company`) and the two default Pricelists (:menuselection:`Product --> Pricelists --> Pricelists`) if you feel compelled to do that. 
 
@@ -60,7 +60,7 @@ Then create two partners from the menu :menuselection:`Partners --> Partners`. C
 
 *  *Address Type* : \ ``Default``\  ,
 
-* add \ ``Suppliers``\   to the  *Categories*  field by selecting it from the Search List,
+* add \ ``Suppliers``\   to the :guilabel:`Categories` field by selecting it from the Search List,
 
 * then save the partner by clicking the  *Save*  button. 
 
@@ -78,7 +78,7 @@ For the second partner, proceed just as you did for the first, with the followin
 
 *  *Address Type* : \ ``Default``\  .
 
-Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To check your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each category in turn to see the companies in the category.
+Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each category in turn to see the companies in the category.
 
 .. note:: Multiple Partner Categories 
 
@@ -89,7 +89,7 @@ Creating products and their categories
 
 Unlike partner categories and their assigned partners, product categories do have an effect on the products assigned to them – and a product may belong to only one category. Select the menu :menuselection:`Products --> Configuration --> Product Categories` and click :guilabel:`New` to get an empty form for defining a product category. 
 
-Enter \ ``Radiators``\   in the :guilabel:`Name`  field and, watching the :guilabel:`Product Categories` form closely, click :guilabel:`Save`. You'll see that other fields, specifically those in the  *Accounting Properties*  section, have been automatically filled in with values of accounts and journals. These are the values that will affect products – equivalent fields in a product will take on these values if they, too, are blank when their form is saved. 
+Enter \ ``Radiators``\   in the :guilabel:`Name` field and, watching the :guilabel:`Product Categories` form closely, click :guilabel:`Save`. You'll see that other fields, specifically those in the :guilabel:`Accounting Properties` section, have been automatically filled in with values of accounts and journals. These are the values that will affect products – equivalent fields in a product will take on these values if they, too, are blank when their form is saved. 
 
 .. note:: Properties fields
 
@@ -117,15 +117,15 @@ Now create a new product:
 
 	#. Click the Search icon to the right of the :guilabel:`Category` field to select the :guilabel:`Radiators` category,
 
-	#. The  *Product Type* field should stay as \ ``Stockable Product``\   its default value. The fields  *Procure Method*   *Default UOM* and  *Purchase UOM* should also stay at their default values: in fact every other field remains untouched.
+	#. The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value. The fields :guilabel:`Procure Method` :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should also stay at their default values: in fact every other field remains untouched.
 
            .. figure::  images/product.png
               :align: center
               :scale: 95  
 
-	#. Click on the  *Procurement* tab and enter \ ``57.50``\  into the  *Cost Price* field and \ ``132.50``\  into the  *List Price* field,
+	#. Click on the :guilabel:`Procurement` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price` field and \ ``132.50``\  into the :guilabel:`List Price` field,
 
-	#. Click the  *Properties* tab, then click  *Save* and observe that  *Inventory Properties* have taken on new values (just as the Accounting Properties did in the product category) but  *Accounting Properties* here remain empty. When product transactions occur, the Income and Expense accounts that you've just defined in the Product Category are used by the Product nless an account is specified here, directly in the product, to override that. 
+	#. Click the :guilabel:`Properties` tab, then click :guilabel:`Save` and observe that :guilabel:`Inventory Properties` have taken on new values (just as the Accounting Properties did in the product category) but :guilabel:`Accounting Properties` here remain empty. When product transactions occur, the Income and Expense accounts that you've just defined in the Product Category are used by the Product unless an account is specified here, directly in the product, to override that. 
 
 	#. Once the product is saved it changes to a non-editable state. If you had entered data incorrectly or left a required field blank, the form would have stayed editable and you'd need to click from tab to tab to find a field colored red, with an error message below it, that would have to be correctly filled in.
 

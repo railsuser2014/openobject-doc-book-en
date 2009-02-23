@@ -81,21 +81,23 @@ If you encode the lot numbers for stock moves you can then enquire about the tra
 
     From the product form, the toolbar to the right offers useful information:
 
-    * Minimum stock rules,
+    * :guilabel:`Minimum stock rules`,
 
-    * Stocks by location,
+    * :guilabel:`Stocks by location`,
 
-    * Sales detail,
+    * :guilabel:`Sales detail`,
 
-    * Stocks by lot,
+    * :guilabel:`Stocks by lot`,
 
-    * Bills of Materials.
+    * :guilabel:`Bills of Materials`.
 
 Search for the expected lot using the filters for the lot number, the date or the product. Once you can see the form about this lot several actions are possible:
 
-* Traceability upstream: from supplier to customers,
+.. todo:: Check Direction
 
-* Traceability downstream: from customer to suppliers,
+* :guilabel:`Traceability upstream` : from supplier to customers,
+
+* :guilabel:`Traceability downstream` : from customer to suppliers,
 
 * Stock spread amongst all the physical and virtual locations.
 

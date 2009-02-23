@@ -55,11 +55,11 @@ To add, modify or delete existing accounts, use the menu :menuselection:`Financi
 
 The main account fields are:
 
-*  *Name* : the name of the account is a multi-lingual field, which is why there's a little flag to the right. Give the field a name.
+*  :guilabel:`Name` : the name of the account is a multi-lingual field, which is why there's a little flag to the right. Give the field a name.
 
-*  *Active* : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
+*  :guilabel:`Active` : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
-*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of Accounts`. Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+*  :guilabel:`Account Type` : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of Accounts`. Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
 .. index::
    single: Type of account

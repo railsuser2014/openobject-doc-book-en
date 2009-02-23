@@ -39,15 +39,15 @@ The new Sales Order document starts in the \ ``Quotation``\   state, so the esti
 
 Once the order has been approved, Open ERP will automatically generate an invoice and/or a delivery document proposal based on the parameters you set in the order. 
 
-The invoice will be managed by the system depending on the setting of the field  *Shipping Policy*  on the order's second tab,  *Other data* :
+The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping Policy` on the order's second tab,  *Other data* :
 
-*  *Payment before delivery* : Open ERP creates an invoice in the \ ``Draft``\   state. Once this is confirmed and paid the delivery is activated.
+*  :guilabel:`Payment before delivery` : Open ERP creates an invoice in the \ ``Draft``\   state. Once this is confirmed and paid the delivery is activated.
 
-*  *Automatic Invoice after delivery* : the delivery order is produced when the order is validated. A draft invoice is then created when the delivery has been completed.
+*  :guilabel:`Automatic Invoice after delivery` : the delivery order is produced when the order is validated. A draft invoice is then created when the delivery has been completed.
 
-*  *Shipping & Manual Invoice* : Open ERP starts the delivery from the confirmation of the order, and adds a button which you manually click when you're ready to create an invoice.
+*  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of the order, and adds a button which you manually click when you're ready to create an invoice.
 
-*  *Invoice from the Packings* 
+*  :guilabel:`Invoice from the Packings` 
 
 .. index:: Delivery
 
@@ -87,11 +87,11 @@ The approach you use for this is totally different because instead of using the 
 
 An analytic account is created for each new contract. The following fields must be completed in this analytic account:
 
-*  *Partner* : partner associated with the contract,
+*  :guilabel:`Partner` : partner associated with the contract,
 
-*  *Sale Pricelist* 
+*  :guilabel:`Sale Pricelist`,
 
-*  *Invoicing* 
+*  :guilabel:`Invoicing`. 
 
 The selection of an invoicing rate is an indirect way of specifying that the project will be invoiced on the basis of analytic costs. This can take different forms, such as delivery of services, purchase of raw materials, and expense reimbursements.
 

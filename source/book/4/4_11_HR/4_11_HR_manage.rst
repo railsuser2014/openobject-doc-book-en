@@ -35,35 +35,37 @@ To define a new employee in Open ERP, use the menu :menuselection:`Human Resour
 
    *Form describing an employee.*
 
-Start by entering the employee's  *Name*  and the company that this employee works for ( *Company* ). You can then create a new user of the Open ERP system which is linked to this employee by filling in the  *Username*  field. Even if the employee isn't a user, it's best if you create a system access for most of your staff just so that you can control their access rights from the outset.
+Start by entering the employee's :guilabel:Name`  and the company that this employee works for (:guilabel:Company`). You can then create a new user of the Open ERP system which is linked to this employee by filling in the  *Username*  field. Even if the employee isn't a user, it's best if you create a system access for most of your staff just so that you can control their access rights from the outset.
 
 .. tip:: Employee and User link. 
 
 	If the employee has a user account on the system you shouldn't forget to link his or her user account to the employee form.
 
-	Creating this link enables automatic completion to be done on the Employee field in the relevant forms, such as services and expense records.
+	Creating this link enables automatic completion to be done on the :guilabel:`Employee` field in the relevant forms, such as services and expense records.
 
 Then enter the employee's address. This appears in the partner contact form in Open ERP. Since employees are people that your company has contacts with, it's logical that they have entries just like any other partner in your database. So enter the name of the employee as a new partner Name and the address in the Contact form. Then all of the functions that apply to a partner can also be applied to an employee. This becomes particularly useful because you can track debits and credits in the accounts – so you can track salary payments, for example.
 
 It's then possible to indicate both an analytic journal and a linked product to this employee. If you do it that way, then this information can be used to track services. For now, just complete the form with the following information:
 
-*  *Analytic Journal* 
+*  :guilabel:`Analytic Journal`, 
 
-*  *Product* 
+*  :guilabel:`Product`. 
 
 Then type in the following information about the employee's working contract:
 
-*  * per week* 
+.. todo:: Check label
 
-*  *Number of holidays* 
+*  :guilabel:`Hours per week` 
 
-*  *Started on* 
+*  :guilabel:`Number of holidays` 
 
-*  *Boss* 
+*  :guilabel:`Started on` 
 
-*  *Category* 
+*  :guilabel:`Boss` 
 
-*  *Employee's work team* 
+*  :guilabel:`Category` 
+
+*  :guilabel:`Employee's work team` 
 
 .. figure::  images/service_timesheet_def.png
    :align: center

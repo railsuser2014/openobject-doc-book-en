@@ -9,7 +9,7 @@ Database creation
 
 Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This database will contain the demonstration data provided with Open ERP and a large proportion of the core Open ERP functionality. You'll need to know your super administrator password for this – or you'll have to find somebody who does have it to create this seed database.
 
-Start the database creation process from the :guilabel:`Database Administration`  page by clicking :guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database` form:
+Start the database creation process from the :guilabel:`Database Administration` page by clicking :guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database` form:
 
 *  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
 
@@ -55,7 +55,7 @@ To create new databases you must know the super-administrator password which def
 Database openerp_ch01
 ---------------------
 
-To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database`  field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
+To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database` field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
 
 Wait for the message showing that the database has been successfully created, along with the user accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed database you can extend it without knowing the super administrator password.
 

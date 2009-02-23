@@ -16,24 +16,24 @@ Letting users change their password themselves
 
 When you signed onto the \ ``openerp_ch02``\   database as the administrator, two menus gave you access to forms for changing your password:
 
-*  :menuselection:`Administration --> Users --> Users` gives a list of all users: click on your own name in that list and a form appears containing a field that with your password (don't click the  *Edit*  button above the form for the moment, and don't click the  *Edit*  icon to the right of the list of users either)
+*  :menuselection:`Administration --> Users --> Users` gives a list of all users: click on your own name in that list and a form appears containing a field that with your password (don't click the :guilabel:`Edit` button above the form for the moment, and don't click the :guilabel:`Edit`  icon to the right of the list of users either)
 
 *  :menuselection:`Administration --> Users --> Users --> Change My Password` shows another list, this time with only you in that list: click on your own name and you'll see a form where only the password and signature can be edited (again, don't edit this at the moment).
 
-These two paints mentioned above are found in the :menuselection:`Administration` branch of your menu, which is only visible to users who are members of the \ ``admin``\   group (login again as \ ``demo``\   if you want to check this). You can easily make a menu item accessible to everyone by moving it or duplicating it, so you can make the  *Change My Password*  menu accessible to everybody.
+These two paints mentioned above are found in the :menuselection:`Administration` branch of your menu, which is only visible to users who are members of the \ ``admin``\   group (login again as \ ``demo``\   if you want to check this). You can easily make a menu item accessible to everyone by moving it or duplicating it, so you can make the :guilabel:`Change My Password` menu accessible to everybody.
 
-To do this, select the menu item :menuselection:`Administration --> Users --> Users --> Change My Password`. Then click on the line containing the word Administrator (but not on the name \ ``Administrator``\   itself) and click the  *Switch*  button to bring up the menu item as an editable form (you can do the same using the GTK client – there you select the line and click the  *View*  button instead).
+To do this, select the menu item :menuselection:`Administration --> Users --> Users --> Change My Password`. Then click on the line containing the word Administrator (but not on the name \ ``Administrator``\   itself) and click the :guilabel:`Switch` button to bring up the menu item as an editable form (you can do the same using the GTK client – there you select the line and click the :guilabel:`View` button instead).
 
-You could now edit this form – change its  *Parent Menu* , which moves the entry to a different part of the menu system; edit its  *Menu*  name to change how it appears in the menu tree, or give it a new  *Icon* . Or you could give it a new  *Action*  entirely (but this would lose the point of this particular exercise).
+You could now edit this form – change its :guilabel:`Parent Menu`, which moves the entry to a different part of the menu system; edit its :guilabel:`Menu` name to change how it appears in the menu tree, or give it a new :guilabel:`Icon`. Or you could give it a new :guilabel:`Action` entirely (but this would lose the point of this particular exercise).
 
-Instead of editing this form, which is the original menu entry, duplicate it instead. With the web client you must first make the form read-only by clicking the  *Cancel*  button, then you click the  *Duplicate*  button that appears (in the GTK client, click :menuselection:`Form --> Duplicate`  from the top menu). The form that remains is now the duplicate entry, not the original.
+Instead of editing this form, which is the original menu entry, duplicate it instead. With the web client you must first make the form read-only by clicking the :guilabel:`Cancel` button, then you click the :guilabel:`Duplicate` button that appears (in the GTK client, click :menuselection:`Form --> Duplicate`  from the top menu). The form that remains is now the duplicate entry, not the original.
 
 .. figure::  images/new_menu.png
    :align: center
 
    *Menu enabling you to change your own password, accessible to all users.*
 
-To move this duplicate entry, change the  *Parent Menu*  field by deleting what's there and replacing it with another menu that everyone can see, such as  *Tools*  or  *Human Resources* , and make sure that the entry moves to the end of the menu list by replacing the  *Sequence*  with \ ``99``\  . You can experiment with icons if you like. Save the form and then click  *Main Menu*  to see the results.
+To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleting what's there and replacing it with another menu that everyone can see, such as :guilabel:`Tools` or :guilabel:`Human Resources`, and make sure that the entry moves to the end of the menu list by replacing the :guilabel:`Sequence` with \ ``99``\  . You can experiment with icons if you like. Save the form and then click :guilabel:`Main Menu` to see the results.
 
 .. tip:: Duplicating the menu
 
@@ -72,14 +72,14 @@ When you sign into Open ERP for the first time, a welcome page appears. In a mi
 
 The administrator can change both the welcome page and the main menu page individually for each user of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
 
-To make modifications for a particular user, edit the user configuration again in  :menuselection:`Administration --> Users --> Users`. Open the form for a particular user, and select different menu entries for the two fields  *Home Action*  and  *Menu Action* . 
+To make modifications for a particular user, edit the user configuration again in  :menuselection:`Administration --> Users --> Users`. Open the form for a particular user, and select different menu entries for the two fields :guilabel:`Home Action` and :guilabel:`Menu Action`. 
 
 .. figure::  images/new_home.png
    :align: center
 
    *Selecting a new welcome page.*
 
-The  *Home Action*  is the menu item that is automatically opened when you first sign on, and is also reached when you click the  *Home*  link in the top right toolbar of the web client. There you can choose any page that you'd reach through any menu – one of the dashboards could be most useful. The  *Menu Action*  is the one you reach through the  *Main Menu*  button in the web client (the  *Menu*  button in the GTK client). You can choose the main menu and the dashboards there.
+The :guilabel:`Home Action` is the menu item that is automatically opened when you first sign on, and is also reached when you click the :guilabel:`Home` link in the top right toolbar of the web client. There you can choose any page that you'd reach through any menu – one of the dashboards could be most useful. The :guilabel:`Menu Action` is the one you reach through the :guilabel:`Main Menu` button in the web client (the :guilabel:`Menu` button in the GTK client). You can choose the main menu and the dashboards there.
 
 .. tip:: Actions on the administrator's menu 
 
@@ -99,7 +99,9 @@ You can quite easily configure the system to put default values in various field
 
 * If you're using the GTK client, you just need to right-click the mouse while the pointer is in the field.
 
- *Set as default*  *Field Preferences*  *Value applicable for*  \ ``For all``\  or \ ``Only for you``\  
+.. todo:: What's this?
+
+.. *Set as default*  *Field Preferences*  *Value applicable for*  \ ``For all``\  or \ ``Only for you``\  
 
 
 .. figure::  images/set_default.png
@@ -107,9 +109,9 @@ You can quite easily configure the system to put default values in various field
 
    *Inserting a new default value.*
 
-To check this new configuration, open a new partner form: the field  *Country*  should now contain the entry \ ``New Zealand``\  .
+To check this new configuration, open a new partner form: the field :guilabel:`Country` should now contain the entry \ ``New Zealand``\  .
 
-This is a very powerful feature! An administrator can use this functionality to redefine the behavior of your whole system. You can test that in database \ ``openerp_ch13``\   by opening up a new  *Purchase Order*  form, clicking the second tab,  *Purchase Shipping* s, selecting \ ``From Picking``\   in the  *Invoicing Control*  field and then making that the default. From that moment on, you'd automatically create draft purchase invoices only when goods are received, so you could very easily restrict your accountants from paying any invoices that turn up until you were sure you had received the goods. It wouldn't stop anyone from selecting another method of invoice control, but they'd start with the default definition.
+This is a very powerful feature! An administrator can use this functionality to redefine the behavior of your whole system. You can test that in database \ ``openerp_ch13``\   by opening up a new :guilabel:`Purchase Order` form, clicking the second tab :guilabel:`Purchase Shippings`, selecting \ ``From Picking``\   in the :guilabel:`Invoicing Control` field and then making that the default. From that moment on, you'd automatically create draft purchase invoices only when goods are received, so you could very easily restrict your accountants from paying any invoices that turn up until you were sure you had received the goods. It wouldn't stop anyone from selecting another method of invoice control, but they'd start with the default definition.
 
 Changing the terminology
 ------------------------
@@ -174,7 +176,7 @@ To translate or modify all of the system's phrases you first have to export a tr
 
    *CSV translation file with the translation superimposed.*
 
-The file contains five columns:  *type* ,  *name* ,  *res_id* ,  *src* , and  *value* . You have to ensure that the first line, which specifies these column names, remains untouched. The  *src*  field contains the base text in English, and the  *value*  field contains a translation into another conventional language or into a specialist technical phrase. If there's nothing at all in the  *value*  field then the English translation will automatically be used on the the form you see.
+The file contains five columns: :guilabel:`type` , :guilabel:`name`, :guilabel:`res_id`, :guilabel:`src`, and :guilabel:`value`. You have to ensure that the first line, which specifies these column names, remains untouched. The :guilabel:`src`  field contains the base text in English, and the  *value*  field contains a translation into another conventional language or into a specialist technical phrase. If there's nothing at all in the :guilabel:`value` field then the English translation will automatically be used on the the form you see.
 
 .. tip:: When should you modify the text? 
 
@@ -186,11 +188,11 @@ The file contains five columns:  *type* ,  *name* ,  *res_id* ,  *src* , and  *v
 
 You should then load the new file into your Open ERP system using the menu :menuselection:`Administration --> Translation --> Import language`. You've then got two ways forward:
 
-* you can overwrite the previous translation by using the same name as before (so you could have a special 'standard French' translation by reusing the  *Name* \ ``Français``\   and  *Code* \ ``fr_FR``\  ),
+* you can overwrite the previous translation by using the same name as before (so you could have a special 'standard French' translation by reusing the :guilabel:`Name` \ ``Français``\   and :guilabel:`Code` \ ``fr_FR``\  ),
 
-* you could create a new translation file which users can select in their  *Preferences* .
+* you could create a new translation file which users can select in their :guilabel:`Preferences`.
 
-If you're not connected to the translated language, click  *Preferences* , select the language in  *Language*  and finally click  *OK*  to load the new language with its new terminology.
+If you're not connected to the translated language, click :guilabel:`Preferences`, select the language in :guilabel:`Language` and finally click :guilabel:`OK` to load the new language with its new terminology.
 
 .. tip:: Partial translations 
 
@@ -199,19 +201,21 @@ If you're not connected to the translated language, click  *Preferences* , selec
 Changes through the client interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- *New Language* 
+.. *New Language* 
 
 Then you should open the form that you want to translate. 
 
- *Translate this resource*  *Search* 
+.. todo:: As usual I don't know where these came from or why
 
-* the data in the system (contained in the  *Fields* ),
+.. *Translate this resource*  *Search* 
 
-* the field titles (the  *Labels* ),
+* the data in the system (contained in the :guilabel:`Fields`),
 
-* all of the  *Action*  buttons to the right of the form,
+* the field titles (the  :guilabel:`Labels`),
 
-* the terms used in the form  *View* .
+* all of the :guilabel:`Action` buttons to the right of the form,
+
+* the terms used in the form :guilabel:`View`.
 
 You can modify any of these.
 

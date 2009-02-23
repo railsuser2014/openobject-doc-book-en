@@ -9,7 +9,7 @@ Each request for products will then
 
 All the operations are automatically calculated by the requirements calculator. But more than creating each production order and procurements, Open ERP plans each action, You will find on each document a plan date calculated by the system.
 
-To organize a whole chain of manufacturing and restocking, Open ERP bases everythin on the delivery date promised to the customer. This is given by the date of the confirmation in the order and the lead times shown in each product line of the order. This lead time is itself suggested automatically in the field 'Customer Lead Time' shown in the product form. It shows the time promised to the customer between the order and that of the delivery.
+To organize a whole chain of manufacturing and restocking, Open ERP bases everythin on the delivery date promised to the customer. This is given by the date of the confirmation in the order and the lead times shown in each product line of the order. This lead time is itself suggested automatically in the field :guilabel:`Customer Lead Time` shown in the product form. It shows the time promised to the customer between the order and that of the delivery.
 
 To show the calculation of the lead times, take the example of the cabinet above. Suppose that the cabinet is assembled in two time, use the two following Bills of Materials.
 
@@ -481,7 +481,7 @@ Use the menu :menuselection:`Manufacturing --> Repairs --> New Repair` to enter 
 
 Start by identifying the product that will be repaired using the product lot number. Open ERP then automatically completes fields from the selected lot – the partner fields, address, delivery location, and stock move.
 
-If a warranty period has been defined in the product description, in months, Open ERP then completes the field 'Warranty limit' with the correct warranty date.
+If a warranty period has been defined in the product description, in months, Open ERP then completes the field :guilabel:`Warranty limit` with the correct warranty date.
 
 You must then specify the components that you'll be adding, replacing or removing in the operations part. On each line you must specify the following:
 
@@ -503,15 +503,15 @@ Add or remove a component of the finished product:
 
 Once the component has been selected, Open ERP automatically completes most of the fields:
 
-* Quantity: 1,
+* :guilabel:`Quantity` : 1,
 
-* Unit of Measure: unit for managing stock defined in the product form,
+* :guilabel:`Unit of Measure` : unit for managing stock defined in the product form,
 
-* Component Price: calculated from the customer list price,
+* :guilabel:`Component Price` : calculated from the customer list price,
 
-* Source location: given by the stock management,
+* :guilabel:`Source location` : given by the stock management,
 
-* To invoice or not: depends on the actual date and the quarantee period.
+* :guilabel:`To invoice or not` : depends on the actual date and the quarantee period.
 
 This information is automatically proposed by the system but you can modify it all yourself.
 

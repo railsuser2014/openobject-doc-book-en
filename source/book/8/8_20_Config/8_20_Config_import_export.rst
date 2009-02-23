@@ -39,7 +39,7 @@ Start by building the header of the CSV file. Open the import tool on the object
 
    *Selecting fields to import using a CSV file.*
 
-Use the field names as the column names in the first line of your CSV file, applying one field per column. If your CSV file has these names in the first line then when you import your CSV file, Open ERP will automatically match the column name to the field name of the table. When you've created your CSV file you'll do that by clicking the  *Nothing*  button to clear the  *Fields to Import* , then select your CSV file by browsing for a  *File to import* , and then clicking the  *Auto Detect*  button.
+Use the field names as the column names in the first line of your CSV file, applying one field per column. If your CSV file has these names in the first line then when you import your CSV file, Open ERP will automatically match the column name to the field name of the table. When you've created your CSV file you'll do that by clicking the :guilabel:`Nothing` button to clear the :guilabel:`Fields to Import`, then select your CSV file by browsing for a :guilabel:`File to import`, and then clicking the :guilabel:`Auto Detect` button.
 
 To import CSV data that matches your database structure, you need to distinguish the following types of field in the Open ERP interface:  *many-to-many*  fields (between multiple sources and destinations),  *many-to-one*  fields (from multiple sources to a single destination), and  *one-to-many*  fields (from a single origin to multiple destinations). 
 
@@ -112,7 +112,7 @@ There are several possible values in a single many-to-many field. Therefore a pa
 One-to-many fields
 ^^^^^^^^^^^^^^^^^^
 
-One-to-many fields are a bit different. Take as an example the Partner Contacts field in the Partner form, which contains all of the linked contacts.
+One-to-many fields are a bit different. Take as an example the :guilabel:`Partner Contacts` field in the Partner form, which contains all of the linked contacts.
 
 To import such a field you don't have to link to an existing entry in another table, but can instead create and link to several partner contacts using the same file. You can then specify several values for different fields linked to that object by the one-to-many field. Each field must be put in a column of the table, and the title of that column must be expressed in the form \ ``field_one-to-many/field_linked-object``\  .
 
@@ -128,7 +128,7 @@ For example, to import partners with several contact for which you specify a nam
     "Axelor SARL","Axelor","Laith Jubair","Paris"
     "Open-Net","OpenNet","",""
 
-In this example, the  *Name*  and  *Code*  fields belong to the  *Partner*  table, and the  *Contact*  and  *City*  fields belong to the  *Contact*  linked to this partner.
+In this example, the :guilabel:`Name` and :guilabel:`Code`  fields belong to the :guilabel:`Partner` table, and the :guilabel:`Contact` and :guilabel:`City` fields belong to the :guilabel:`Contact` linked to this partner.
 
 Importing this file will give you three partners:
 
@@ -177,19 +177,19 @@ Start by creating partner categories in a CSV file:
                            "Line 4","Silver","Quality"
                            "Line 5","Bronze","Quality"
                    
-                   On the first line,  *Category Name* and  *Parent Category* are the column titles that correspond to field names in the  *Partner category* form.
+                  On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are the column titles that correspond to field names in the :guilabel:`Partner category` form.
                    
-                  *Column A* is for the different partner categories and *Column B* indicates if that category has a parent category. If  *Column B* is blank then the category sits at the top level.
+                  :guilabel:`Column A` is for the different partner categories and :guilabel:`Column B` indicates if that category has a parent category. If :guilabel:`Column B` is blank then the category sits at the top level.
 
 	#. Save spreadsheet file in CSV format – separated by commas – and name the file \ ``categories.csv``\.  
 
 	#. In Open ERP, select :menuselection:`Partners --> Configuration --> Categories --> Edit Categories`. 
 
-	#. Click  *Import* (to the bottom left of the list) to bring up the  *Import Data* dialog box, in which you'll find the ist of fields that can be imported.
+	#. Click :guilabel:`Import` (to the bottom left of the list) to bring up the  *Import Data* dialog box, in which you'll find the ist of fields that can be imported.
 
-	#. Click  *Browse...* on the  *File to import* field and select the CSV file you just created, \ ``categories.csv``\   Then click  *Auto Detect* to atch the column names in the CSV file with the field names available in  *Partner Categories*  
+	#. Click :guilabel:`Browse...` on the :guilabel:`File to import` field and select the CSV file you just created, \ ``categories.csv``\   Then click :guilabel:`Auto Detect` to atch the column names in the CSV file with the field names available in:guilabel:`Partner Categories`.  
 
-	#. Click Import at the bottom-right of the dialog box to load your data. You should get the message \ ``4 objects imported``\  in a new dialog box. Close both this and the  *Import Data* dialog box to return to the original page.
+	#. Click :guilabel:`Import` at the bottom-right of the dialog box to load your data. You should get the message \ ``4 objects imported``\  in a new dialog box. Close both this and the :guilabel:`Import Data` dialog box to return to the original page.
 
 	#. Click :menuselection:`Partners --> Partners by category` to view the tree of categories, including the new \ ``Quality``\  branch that you loaded. 
 

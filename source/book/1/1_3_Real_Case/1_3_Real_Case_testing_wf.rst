@@ -31,39 +31,39 @@ To place a Purchase Order with your supplier, use the menu :menuselection:`Purch
 
 Complete the following fields:
 
-*  *Warehouse* : \ ``Warehouse``\  . Although this is not a required field, the selection here automatically fills in the required field  *Delivery Destination*  on the  *Purchase Shippings*  tab.
+*  :guilabel:`Warehouse` : \ ``Warehouse``\  . Although this is not a required field, the selection here automatically fills in the required field  *Delivery Destination*  on the  *Purchase Shippings*  tab.
 
-*  *Partner* : \ ``Plumbing Component Suppliers``\  .
+*  :guilabel:`Partner` : \ ``Plumbing Component Suppliers``\  .
 
-As you complete the  *Partner*  field, Open ERP automatically completes the  *Address*  field and the  *Price List*  field from information it takes out of the Partner record. Then click on the  *Save Parent and Create New Record*  icon to the right of the  *Order Line*  field. This automatically saves the body of the  *Purchase Order* , and changes to a  *Create New Record*  icon. Click that to open the  *Purchase Order Line*  window.
+As you complete the :guilabel:`Partner` field, Open ERP automatically completes the :guilabel:`Address` field and the :guilabel:`Price List` field from information it takes out of the Partner record. Then click on the :guilabel:`Save Parent and Create New Record` icon to the right of the :guilabel:`Order Line` field. This automatically saves the body of the :guilabel:`Purchase Order`, and changes to a :guilabel:`Create New Record` icon. Click that to open the :guilabel:`Purchase Order Line` window.
 
 Enter the following information
 
-*  *Product* : \ ``Titanium Alloy Radiator``\   - type in part of this name then click the  *Search / Open a resource*  icon at the end of the line to complete it,
+*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then click the :guilabel:`Search / Open a resource:guilabel:` icon at the end of the line to complete it,
 
 When you've selected a product on the product line, Open ERP automatically completes the following fields from information it finds in the Product record:
 
-*  *Product UOM* : the unit of measure for this product,
+*  :guilabel:`Product UOM` : the unit of measure for this product,
 
-*  *Description* : the detailed description of the product,
+*  :guilabel:`Description` : the detailed description of the product,
 
-*  *Scheduled date* : based on the product lead time,
+*  :guilabel:`Scheduled date` : based on the product lead time,
 
-*  *Unit price* : the unit price of the product,
+*  :guilabel:`Unit price` : the unit price of the product,
 
-*  *Analytic account* : if any account is specified then it will appear on the order line,
+*  :guilabel:`Analytic account` : if any account is specified then it will appear on the order line,
 
-*  *Taxes* : applicable taxes defined in the partner, if specified, otherwise in the product, if specified.
+*  :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the product, if specified.
 
-You can edit any of these fields to suit the requirements of the purchase order at the time of entry. Change the  *Unit Price*  to \ ``56.00``\  .
+You can edit any of these fields to suit the requirements of the purchase order at the time of entry. Change the :guilabel:`Unit Price` to \ ``56.00``\  .
 
 Also enter:
 
-*  *Quantity* : \ ``10``\  .
+*  :guilabel:`Quantity` : \ ``10``\  .
 
- *Save*  the order line and close the  *Purchase Order Line*  window by clicking the  *Close*  button. You can then confirm the whole one-line order by clicking  *Save* , which makes the form non-editable. It's now in a state of \ ``Request for Quotation``\  , so click  *Confirm Purchase Order* , which corresponds to an approval from a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\   state.
+ Save the order line and close the :guilabel:`Purchase Order Line` window by clicking the :guilabel:`Close` button. You can then confirm the whole one-line order by clicking :guilabel:`Save`, which makes the form non-editable. It's now in a state of \ ``Request for Quotation``\  , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\   state.
 
-Finally click  *Approved by Supplier*  to indicate the supplier's acknowledgment of the order. The order becomes \ ``Approved``\  . If you click the  *Purchase Shippings*  tab you'll see the  *Picking List*  that has been created ready for your Goods In department to use.
+Finally click :guilabel:`Approved by Supplier` to indicate the supplier's acknowledgment of the order. The order becomes \ ``Approved``\  . If you click the :guilabel:`Purchase Shippings` tab you'll see the :guilabel:`Picking List` that has been created ready for your Goods In department to use.
 
 .. tip:: Visibility of a window 
 
@@ -118,7 +118,7 @@ Control of purchase invoices
 
 When you've received an invoice from your supplier (which would usually be your Accounts department) go to the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoice --> Draft Supplier Invoices`  to open a list of supplier invoices waiting for receipt (you'll have to use the expand/collapse icon on  *Supplier Invoice*  rather than click the text, which would create a new Invoice). These invoices enable your Accounts Department to match the the price and quantities ordered against the price and quantities on the supplier's invoice – it's not uncommon to receive an invoice showing details more favourable to the supplier than those agreed at the time of purchase.
 
-In this example, you created an invoice automatically when you confirmed the supplier's Purchase Order. That's because the  *Invoicing Control*  field on the order was set to \ ``On Order``\   (the default option). Other options enable you to create invoices at the time of receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
+In this example, you created an invoice automatically when you confirmed the supplier's Purchase Order. That's because the :guilabel:`Invoicing Control`  field on the order was set to \ ``On Order``\   (the default option). Other options enable you to create invoices at the time of receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 
 Now click the invoice for your order \ ``PO/001``\   to display its contents. You can compare the goods that you've recorded there with the invoice received from your supplier. If there's a difference it's possible to change the order lines to, for example, add a delivery charge. Click  *Validate*  to confirm the invoice and put it into the \ ``Open``\   state.
 
@@ -129,7 +129,7 @@ Paying the supplier
 
 Select the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices --> Open Supplier Invoices`  to obtain a list of supplier invoices that haven't yet been paid. Click the  *Edit*  (pencil) icon to the right end of the line for the invoice derived from \ ``PO/001``\   to open the invoice form in editable mode. In practice you'd search for the invoice by order number or, more generally, for invoices nearing their payment date.
 
-Click  *Pay Invoice*  in the toolbar to the right of the form, which opens a Window with a description of the payment. Select \ ``Bank Journal``\   in the  *Journal*  field. Then click :guilabel:`Pay Invoice` to the top left of the form, which carries out the payment action within Open ERP and returns you to the main menu.
+Click :guilabel:`Pay Invoice` in the toolbar to the right of the form, which opens a Window with a description of the payment. Select \ ``Bank Journal``\   in the :guilabel:`Journal` field. Then click :guilabel:`Pay Invoice` to the top left of the form, which carries out the payment action within Open ERP and returns you to the main menu.
 
 .. note:: Payment of an invoice
 
@@ -144,26 +144,26 @@ From Sales Proposal to Sales Order
 
 In Open ERP, sales proposals and sales orders are managed using documents that are based on the same common functionality as purchase orders, so you'll recognize the following documents in general but notice changes to their detail and to their workflows. To create a new sales proposal, use the menu :menuselection:`Sales Management --> Sales Order` which creates a new order in a state of \ ``Quotation``\  , then:
 
-	#. Select \ ``Default Shop``\  in the  *Shop* field. The shop is linked to a warehouse, which defines the location that you'll use to despatch goods from.
+	#. Select \ ``Default Shop``\  in the :guilabel:`Shop` field. The shop is linked to a warehouse, which defines the location that you'll use to despatch goods from.
 
-	#. Select the  *Partner* \ ``Smith and Sons``\   This has the effect of automatically completing several other fields:  *Ordering Contact*   *Invoice Address*   *Shipping Address* and the  *Pricelist* \ ``Default Sale Pricelist``\   They're all only defaults so these fields can be modified as you need.
+	#. Select the :guilabel:`Partner` \ ``Smith and Sons``\   This has the effect of automatically completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`, :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Default Sale Pricelist``\.  They're all only defaults so these fields can be modified as you need.
 
 	        .. figure::  images/order.png
         	   :align: center
 
-	#. Click the  *Save Parent and Create new record* icon to the right of the  *Sales Order Lines* field. It saves the main order form and becomes a new  *Create new record* icon. Click that to open a  *Sales Order Lines* window.
+	#. Click the :guilabel:`Save Parent and Create new record` icon to the right of the :guilabel:`Sales Order Lines` field. It saves the main order form and becomes a new :guilabel:`Create new record` icon. Click that to open a :guilabel:`Sales Order Lines` window.
 
-	#. Select the product \ ``Titanium Alloy Radiator``\   Although the  *Product* field isn't itself required, it's used by Open ERP to select the specific product so that several other fields can be automatically completed on the order line of the proposal, such s:  *Description*   *Product UOM*   *Unit Price*   *Delivery Delay* and  *Taxes* 
+	#. Select the product \ ``Titanium Alloy Radiator``\   Although the :guilabel:`Product` field isn't itself required, it's used by Open ERP to select the specific product so that several other fields can be automatically completed on the order line of the proposal, such as :guilabel:`Description`, :guilabel:`Product UOM`, :guilabel:`Unit Price`, :guilabel:`Delivery Delay`, and :guilabel:`Taxes`. 
 
-	#. Change the  *Quantity* to \ ``6``\  and the  *Unit Price* to \ ``130.00``\   Then click  *Save* and the line appears on the quotation form. A blank order line form reappears so that you can enter another line, but it's enough now just to click  *Close* to return to the order form.
+	#. Change the :guilabel:`Quantity` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\   Then click :guilabel:`Save` and the line appears on the quotation form. A blank order line form reappears so that you can enter another line, but it's enough now just to click :guilabel:`Close` to return to the order form.
 
-	#. On the  *Other data* tab of this Sales Order select a  *Shipping Policy* of \ ``Automatic Invoice after Delivery``\  from the dropdown menu list.
+	#. On the :guilabel:`Other data` tab of this Sales Order select a :guilabel:`Shipping Policy` of \ ``Automatic Invoice after Delivery``\  from the dropdown menu list.
 
-	#. Return to the first tab  *Sale Order* and validate the document by clicking  *Confirm Order*  which calculates prices and the changes the order's state from \ ``Quotation``\  to \ ``In Progress``\   If you were in negotiation with the prospective customer you'd keep clicking  *Compute* and  *Save*  keeping the document in \ ``Quotation``\  state for as long as necessary.
+	#. Return to the first tab :guilabel:`Sale Order` and validate the document by clicking :guilabel:`Confirm Order` which calculates prices and the changes the order's state from \ ``Quotation``\  to \ ``In Progress``\   If you were in negotiation with the prospective customer you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \ ``Quotation``\  state for as long as necessary.
 
-	#. In the last tab of the order,  *History*  you can see the  *Picking List* that's been created and you'll be able to see any invoices that relate to this order when they're generated.
+	#. In the last tab of the order, :guilabel:`History` you can see the :guilabel:`Picking List` that's been created and you'll be able to see any invoices that relate to this order when they're generated.
 
-From the :guilabel:`Main Menu` click :menuselection:`Products --> Products` to display a list of products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its  *Real Stock*  still shows \ ``10.00``\   but its  *Virtual Stock*  now shows \ ``4.00``\   to reflect the new future requirement of 6 units for despatch.
+From the :guilabel:`Main Menu` click :menuselection:`Products --> Products` to display a list of products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its :guilabel:`Real Stock` still shows \ ``10.00``\   but its :guilabel:`Virtual Stock` now shows \ ``4.00``\   to reflect the new future requirement of 6 units for despatch.
 
 Preparing goods for despatch to customers
 -----------------------------------------

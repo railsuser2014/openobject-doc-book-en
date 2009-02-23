@@ -21,7 +21,7 @@ Just like General accounts, the journals can be deactivated to make them invisib
 
    *Definition of an accounting journal.*
 
-You have to associate a view with each journal. The journal view indicates the fields that must be visible and required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example the field  *Account Number*  must appear when entering data in the bank journal but not in the other journals.
+You have to associate a view with each journal. The journal view indicates the fields that must be visible and required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example the field :guilabel:`Account Number` must appear when entering data in the bank journal but not in the other journals.
 
 Before creating a new view for a journal check that there's nothing similar already defined for another journal. You should only create a new view for new types of journal.
 

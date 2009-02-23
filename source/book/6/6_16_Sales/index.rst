@@ -66,21 +66,21 @@ Some information is automatically completed by the system:
 
 You can modify any of that information before validating the quotation. You can see the customer reference in the header of the order. This optional field represent's the customer's own reference number – if the customer doesn't supply one then just leave it empty.
 
-You then enter all the data about the order in the tab 'Customer Order'. Start by entering the customer name, selecting the correct customer from the list of customers in the system. You can create a new customer on the fly at this stage if necessary – press <F1> in the corresponding field.
+You then enter all the data about the order in the tab :guilabel:`Customer Order`. Start by entering the customer name, selecting the correct customer from the list of customers in the system. You can create a new customer on the fly at this stage if necessary – press :guilabel:`<F1>` in the corresponding field.
 
 Once the customer name has been selected, different fields of the order become completed automatically, based on the configuration of the partner form for the selected customer:
 
-* Order Address: person handling the order at the customer. By default, Open ERP proposes the Contact Address at the selected partner.
+* :guilabel:`Order Address` : person handling the order at the customer. By default, Open ERP proposes the Contact Address at the selected partner.
 
-* Delivery Address: address used on the delivery order. By default, Open ERP proposes the Delivery address from the partner form. If nothing is defined in that slot, it uses the default address instead.
+* :guilabel:`Delivery Address` : address used on the delivery order. By default, Open ERP proposes the Delivery address from the partner form. If nothing is defined in that slot, it uses the default address instead.
 
-* Invoice Address: address used to send the invoice to the customer. By default, Open ERP proposes the address labelled “Invoice” from the partner form. If nothing is defined there, it uses the default address instead.
+* :guilabel:`Invoice Address` : address used to send the invoice to the customer. By default, Open ERP proposes the address labelled “Invoice” from the partner form. If nothing is defined there, it uses the default address instead.
 
-* Price List: will determine both the currency of the quotation and the price that will be used for each product
+* :guilabel:`Price List` : will determine both the currency of the quotation and the price that will be used for each product
 
-* Payment Conditions: shows the payment mode that the customer will follow, for example “50% on order, 50% on delivery”
+* :guilabel:`Payment Conditions` : shows the payment mode that the customer will follow, for example “50% on order, 50% on delivery”
 
-* Delivery Method: for example “Post – Express Mail”
+* :guilabel:`Delivery Method` : for example “Post – Express Mail”
 
 You can modify any of these fields on the order as you go.
 
@@ -100,15 +100,15 @@ Once the information has been entered, you can enter data for the order lines. T
 
 First of all select the product that is to be sold to the customer. Open ERP gives you all the useful information for your sale in the list of products it provides:
 
-* Real stock: physically present in your warehouses. This value depends on the sale point selected in the order header. Different sale points can be linked to different warehouses, giving different stock levels, or can use the same warehouse.
+* :guilabel:`Real stock` : physically present in your warehouses. This value depends on the sale point selected in the order header. Different sale points can be linked to different warehouses, giving different stock levels, or can use the same warehouse.
 
-* Virtual stock: shows a salesperson the quantity that can be sold, taking into account both stock reserved for other orders and quantities that could arrive in the short term.
+* :guilabel:`Virtual stock` : shows a salesperson the quantity that can be sold, taking into account both stock reserved for other orders and quantities that could arrive in the short term.
 
-* The Customer Price: depends on the conditions attached to the customer, calculated on the list price. This is the price that's proposed by default in the customer quotation, unless it's been modified by the salesperson.
+* :guilabel:`Customer Price` : depends on the conditions attached to the customer, calculated on the list price. This is the price that's proposed by default in the customer quotation, unless it's been modified by the salesperson.
 
-* The List Price: the base sale price for the given product. It provides a base for the salesperson to be able to judge whether to offer a discount to the customer, and how much any discount should be.
+* :guilabel:`List Price` : the base sale price for the given product. It provides a base for the salesperson to be able to judge whether to offer a discount to the customer, and how much any discount should be.
 
-* The Standard Cost: shows the cost price of the product. If the salesperson sells at less than this figure, then the company loses money.
+* :guilabel:`Standard Cost` : shows the cost price of the product. If the salesperson sells at less than this figure, then the company loses money.
 
 .. figure:: images/sale_product_list.png
    :align: center
@@ -173,7 +173,7 @@ For example, if the customer wants to buy 30,000 batteries, the salesperson will
 
 The available packages are defined in the product form, in the *Packaging* tab. The first one on the list is the one that will be used by default.
 
-Once a package has been defined on the order, Open ERP will throw up an alert if the ordered quantities don't correspond to the proposed packages. The quantity must be a multiple of the field *Quantity of items* defined on the packaging form.
+Once a package has been defined on the order, Open ERP will throw up an alert if the ordered quantities don't correspond to the proposed packages. The quantity must be a multiple of the field :guilabel:`Quantity of items` defined on the packaging form.
 
 .. figure:: images/sale_warning_packaging.png
    :align: center
@@ -262,25 +262,25 @@ Configuration of orders
 
 Depending on the configuration of the order, several different possible consequences might follow. Three fields will determine the behaviour of the order:
 
-* Packing Policy : partial delivery, or complete delivery,
+* :guilabel:`Packing Policy` : partial delivery, or complete delivery,
 
-* Invoicing : based on the order, or based on delivery,
+* :guilabel:`Invoicing` : based on the order, or based on delivery,
 
-* Shipping Policy: invoicing based on order items, delivery and manual invoice, automatic invoicing after delivery.
+* :guilabel:`Shipping Policy` : invoicing based on order items, delivery and manual invoice, automatic invoicing after delivery.
 
   .. tip::   *Note*   Simplified view
 
-     If you work in the simplified view mode, only the *Shipping Policy* field is visible in the second tab on the order. 
+     If you work in the simplified view mode, only the :guilabel:`Shipping Policy` field is visible in the second tab on the order. 
      To get to the Extended View mode, assign the group *Usability – Extended View* to the current user.
 
 Packing mode
 ------------
 
-The packing mode determines the way that the storesperson will do the packing. If the order is put into *Partial Delivery* mode, the packing order will appear in the list of things for the storesperson to do as soon as one of the products on the order is available. To get the list of items to be done you can use the menu :menuselection:`Stock Management --> Outgoing Products --> Available Packings`.
+The packing mode determines the way that the storesperson will do the packing. If the order is put into :guilabel:`Partial Delivery` mode, the packing order will appear in the list of things for the storesperson to do as soon as one of the products on the order is available. To get the list of items to be done you can use the menu :menuselection:`Stock Management --> Outgoing Products --> Available Packings`.
 
 The storesperson will then be able to make a partial delivery of the quantities actually available and do a second packing later when the remaining products are available in stock.
 
-If the packing mode is *Complete Delivery*, the packing list won't appear in the list of packings to do until all of the products are available in stock. In this case there will only be a single delivery for a given order.
+If the packing mode is :guilabel:`Complete Delivery`, the packing list won't appear in the list of packings to do until all of the products are available in stock. In this case there will only be a single delivery for a given order.
 
 If the storesperson wants, the delivery mode can be modified on each packing list even after the order has been confirmed.
 
@@ -292,7 +292,7 @@ In the case of invoicing on the basis of packing, the cost of delivering the pro
 Management of Carriers
 ======================
 
-To manage deliveries in Open ERP, install the ``delivery`` module. If you have installed the *industry* profile this is installed by default during configuration of the database. This module enables you to manage:
+To manage deliveries in Open ERP, install the ``delivery`` module. If you have installed the ``industry`` profile this is installed by default during configuration of the database. This module enables you to manage:
 
 * the different carriers with whom you work,
 
@@ -354,7 +354,7 @@ You must then set the rules for calculating the price of transport in the first 
 
    Weights are expressed in kilograms. You can define a number with a decimal point or comma, so that to set 500g you'd put 0.5 in the weight rule.
 
-Then give the sale price and the cost price. The price can be expressed in different ways:
+Then set the sale price and the cost price. The price can be expressed in different ways:
 
 * a fixed price,
 
@@ -405,9 +405,9 @@ If you want to calculate the exact delivery charges depending on the actual deli
 Delivery based on the packed items
 ----------------------------------
 
-To invoice the delivery on the basis of items packed you must set the delivery mode in the field 'carrier' on *Other Information*, the second tab of the order. In this case you don't add this line at the level of the order but the delivery lines are added after the generation of invoices based on the items delivered.
+To invoice the delivery on the basis of items packed you must set the delivery mode in the field :guilabel:`carrier` on :guilabel:`Other Information`, the second tab of the order. In this case you don't add this line at the level of the order but the delivery lines are added after the generation of invoices based on the items delivered.
 
-For this to work properly, your order must be set to the state 'Invoice on the basis of deliveries'. You can then confirm the order and validate the delivery.
+For this to work properly, your order must be set to the state *Invoice on the basis of deliveries*. You can then confirm the order and validate the delivery.
 
 When the responsible manager has generated the invoices corresponding to the deliveries carried out, Open ERP automatically adds a line on each invoice corresponding to the delivery charge, calculated on the basis of the items actually sent.
 
@@ -460,17 +460,17 @@ You can also filter the analysis on certain types of invoice:
 
 You then get a margin analysis table. The following fields are given by product for sales:
 
-* Average unit price: the average unit sale price,
+* :guilabel:`Average unit price` : the average unit sale price,
 
-* List price: the list price based on this product,
+* :guilabel:`List price` : the list price based on this product,
 
-* # Invoices: the number of sold products that have been invoiced,
+* :guilabel:`# Invoices` : the number of sold products that have been invoiced,
 
-* Product Turnover: the turnover for the product selected,
+* :guilabel:`Product Turnover` : the turnover for the product selected,
 
-* Sales Gap: the gap between the 
+* :guilabel:`Sales Gap` : the gap between the 
 
-* Sales Waiting: the number of products sold multiplied by the theoretical list price.
+* :guilabel:`Sales Waiting` : the number of products sold multiplied by the theoretical list price.
 
 .. figure:: images/product_margin_form.png
    :align: center
@@ -479,27 +479,27 @@ You then get a margin analysis table. The following fields are given by product 
 
 The following fields are given by product for purchases:
 
-* Average unit price: the average unit purchase price,
+* :guilabel:`Average unit price` : the average unit purchase price,
 
-* # Invoices: the number of purchased products,
+* :guilabel:`# Invoices` : the number of purchased products,
 
-* Total cost: the total amount of purchases for the product under consideration,
+* :guilabel:`Total cost` : the total amount of purchases for the product under consideration,
 
-* Standard price: the cost price of the product over the whole company,
+* :guilabel:`Standard price` : the cost price of the product over the whole company,
 
-* Purchase gap: the total negotiated amount, the difference between the standard cost and the average unit price, weighted by the number of products bought,
+* :guilabel:`Purchase gap` : the total negotiated amount, the difference between the standard cost and the average unit price, weighted by the number of products bought,
 
-* Normal cost: the number of products sold multiplied by the supplier price.
+* :guilabel:`Normal cost` : the number of products sold multiplied by the supplier price.
 
 The following fields are given by product for margins:
 
-* Total real margins,
+* :guilabel:`Total real margins`,
 
-* The theoretical margin,
+* :guilabel:`Theoretical margin`,
 
-* The real margin in percent,
+* :guilabel:`Real margin in percent`,
 
-* The theoretical margin in percent.
+* :guilabel:`Theoretical margin in percent`.
 
 Margins by Project
 ------------------
@@ -603,11 +603,11 @@ To define a pricelist use the menu :menuselection:`Products --> Pricelists --> P
 
 For each list you should define:
 
-* a  *Name*  for the list,
+* a :guilabel:`Name` for the list,
 
-* a  *Type*  of list: \ ``Sale``\   for customers or \ ``Purchase``\   for suppliers,
+* a :guilabel:`Type` of list: \ ``Sale``\   for customers or \ ``Purchase``\   for suppliers,
 
-* the  *Currency*  in which the prices are expressed.
+* the :guilabel:`Currency` in which the prices are expressed.
 
 .. tip:: Consumer Price
 
@@ -623,9 +623,9 @@ Pricelist versions
 
 Once the list is defined you must provide it with at least one version. To do that use the menu :menuselection:`Products --> Pricelists --> Pricelist Versions`. The version contains all of the rules that enable you to calculate a price for a product and a given quantity.
 
-So set the  *Name*  of this associated version. If the list only has a single version you can use the same name for the pricelist and the version. In the  *Pricelist*  field select the pricelist you created.
+So set the :guilabel:`Name` of this associated version. If the list only has a single version you can use the same name for the pricelist and the version. In the :guilabel:`Pricelist` field select the pricelist you created.
 
-Then set the *Start date* and *End date* of this version. The fields are both optional: if you don't set any dates the version will be permanently active. Use the  *Active*  field in the versions to activate or disable a pricelist version.
+Then set the :guilabel:`Start date` and :guilabel:`End date` of this version. The fields are both optional: if you don't set any dates the version will be permanently active. Use the :guilabel:`Active` field in the versions to activate or disable a pricelist version.
 
 .. note:: Automatically updating the sale pricelist
 
@@ -653,23 +653,23 @@ Several rules can be applied to an order. Open ERP evaluates these rules in seq
 
 Once a rule has been selected, the system has to determine how to calculate the price from the rule. This operation is based on the criteria set out in the lower part of the form, labeled *Price Computation* .
 
-The first field you have to complete is labeled *Based on*. You must set the mode for partner price calculation. Choose between:
+The first field you have to complete is labeled :guilabel:`Based on`. You must set the mode for partner price calculation. Choose between:
 
-* the \ ``List Price set``\   in the product file,
+* the :guilabel:`List Price` set in the product file,
 
-* the \ ``Standard Cost set``\   in the product file,
+* the :guilabel:`Standard Cost` set in the product file,
 
-* an \ ``Other Pricelist``\   given in the field  *If Other Pricelist* ,
+* an :guilabel:`Other Pricelist` given in the field :guilabel:`If Other Pricelist`,
 
-* the price that varies as a function of a supplier defined in the \ ``Partner section of the product form``\  .
+* the price that varies as a function of a supplier defined in the :guilabel:`Partner section of the product form`.
 
 Several other criteria can be considered and added to the list, as you'll see in the following section.
 
 Next, various operations can be applied to the base price to calculate the sales or purchase price for the partner at the specified quantities. To calculate it you apply the formula shown on the form: Price = Base Price x (1 – Field1) + Field2.
 
-The first field, *Field1*, defines a discount. Set it to 0.20 for a discount of 20% from the base price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift compared with the standard costs.
+The first field, :guilabel:`Field1`, defines a discount. Set it to 0.20 for a discount of 20% from the base price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift compared with the standard costs.
 
-*Field2* set a fixed supplement to the price expressed in the currency of the list price. This amount is just added (or subtracted, if negative) to the amount calculated with the *Field1* discount.
+:guilabel:`Field2` set a fixed supplement to the price expressed in the currency of the list price. This amount is just added (or subtracted, if negative) to the amount calculated with the :guilabel:`Field1` discount.
 
 Then you can specify a rounding method. The rounding calculation is carried out to the nearest number. For example if you set 0.05 in this example, a price of 45.66 will be rounded to 45.65, and 14,567 rounded to 100 will give a price of 14,600.
 
@@ -679,11 +679,11 @@ Then you can specify a rounding method. The rounding calculation is carried out 
    There aren't any 1 or 2 cent coins. 
    So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist.
 
-The supplement from *Field2* is applied before the rounding calculation, which enables some interesting effects. For example if you want all your prices to end in 9.99, set your rounding to 10 and your supplement to -0.01 in *Field2* 
+The supplement from :guilabel:`Field2` is applied before the rounding calculation, which enables some interesting effects. For example if you want all your prices to end in 9.99, set your rounding to 10 and your supplement to -0.01 in :guilabel:`Field2` 
 
 Minimum and Maximum margins enable you to guarantee a given margin over the base price. A margin of 10 USD enables you to stop the discount from returning less than that margin. If you put 0 into this field, no effect is taken into account. 
 
-Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select its  *Properties*  tab. You can then change the  *Purchase Pricelist*  and the  *Sale Pricelist*  that's loaded by default for the partner.
+Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select its :guilabel:`Properties` tab. You can then change the :guilabel:`Purchase Pricelist` and the :guilabel:`Sale Pricelist` that's loaded by default for the partner.
 
 Case of using pricelists
 ------------------------
@@ -764,39 +764,39 @@ Take the case of a trading company, where the sale price for resellers can be de
 
 "	#. \ ``Acclo``\  line:"
 
-                *  *Product Category* : \ ``Portables``\  ,
+                *  :guilabel:`Product Category` : \ ``Portables``\  ,
 
-               *  *Based on* : \ ``Other pricelist``\  ,
+                *  :guilabel:`Based on` : \ ``Other pricelist``\  ,
 
-               *  *Pricelist if other* : \ ``Acclo pricelist``\  ,
+                *  :guilabel:`Pricelist if other` : \ ``Acclo pricelist``\  ,
 
-                *  *Field1* : \ ``-0.23``\  ,
+                *  :guilabel:`Field1` : \ ``-0.23``\  ,
 
-                *  *Priority* : \ ``1``\  .
+                *  :guilabel:`Priority` : \ ``1``\  .
 
 "	#. \ ``Berrel Keyboard``\  line:"
 
-                *  *Product Template* : \ ``Berrel Keyboard``\  ,
+                *  :guilabel:`Product Template` : \ ``Berrel Keyboard``\  ,
 
-                *  *Min. Quantity* : \ ``5``\  ,
+                *  :guilabel:`Min. Quantity` : \ ``5``\  ,
 
-                *  *Field1* : \ ``1.0``\  ,
+                *  :guilabel:`Field1` : \ ``1.0``\  ,
 
-                *  *Field2* : \ ``60``\  ,
+                *  :guilabel:`Field2` : \ ``60``\  ,
 
-                *  *Priority* : \ ``2``\  .
+                *  :guilabel:`Priority` : \ ``2``\  .
 
  #. \ ``Other products``\  line:
 
-                *  *Based on:* \ ``Standard Price``\  ,
+                *  :guilabel:`Based on:` \ ``Standard Price``\  ,
 
-                *  *Field1* : \ ``-0.31``\  ,
+                *  :guilabel:`Field1* : \ ``-0.31``\  ,
 
-                *  *Field2* : \ ``-0.01``\  ,
+                *  :guilabel:`Field2* : \ ``-0.01``\  ,
 
-                *  *Rounding* : \ ``1.0``\  .
+                *  :guilabel:`Rounding* : \ ``1.0``\  .
 
-                *  *Priority* :  \ ``3``\ .
+                *  :guilabel:`Priority* :  \ ``3``\ .
 
 It's important that the priority of the second rule is set below the priority of the third in this example. If it were the other way round the third rule would always be applied because a quantity of 5 is always greater than a quantity of 1 for all products.
 
@@ -815,27 +815,27 @@ The list price for TinAtwo, called “TinAtwo contract”, contains two rules:
 
 "	#. \ ``Toshibishi portable``\  line:"
 
-                *  *Product* : \ ``Toshibishi Portable``\  ,
+                *  :guilabel:`Product` : \ ``Toshibishi Portable``\  ,
 
-                *  *Based on* : \ ``Other pricelist``\  ,
+                *  :guilabel:`Based on* : \ ``Other pricelist``\  ,
 
-                *  *Pricelist if other* : \ ``Reseller pricelist``\  ,
+                *  :guilabel:`Pricelist if other` : \ ``Reseller pricelist``\  ,
 
-                *  *Field1* : \ ``0.05``\  ,
+                *  :guilabel:`Field1` : \ ``0.05``\  ,
 
-                *  *Priority* : \ ``1``\  .
+                *  :guilabel:`Priority` : \ ``1``\  .
 
  #. \ ``Other Products``\  
 
-                *  *Product:*
+                *  :guilabel:`Product` :
 
-                *  *Based on* : \ ``Other pricelist``\  ,
+                *  :guilabel:`Based on` : \ ``Other pricelist``\  ,
 
-                *  *Pricelist if other* : \ ``Reseller pricelist``\  ,
+                *  :guilabel:`Pricelist if other` : \ ``Reseller pricelist``\  ,
 
-                *  *Priority* : \ ``2``\  .
+                *  :guilabel:`Priority` : \ ``2``\  .
 
-Once this list has been entered you should look for the partner form for TinAtwo again. Click the *Properties* tab to set the *Sale List Price* field to *TinAtwo Contract*. If the contract is only valid for one year, don't forget to set the *Start Date* and *End Date* fields in the *Price List Version*.
+Once this list has been entered you should look for the partner form for TinAtwo again. Click the :guilabel:`Properties` tab to set the :guilabel:`Sale List Price` field to *TinAtwo Contract*. If the contract is only valid for one year, don't forget to set the :guilabel:`Start Date` and :guilabel:`End Date` fields in the :guilabel:`Price List Version`.
 
 Then when salespeople prepare an estimate for TinAtwo the prices proposed will automatically be calculated from the contract conditions.
 

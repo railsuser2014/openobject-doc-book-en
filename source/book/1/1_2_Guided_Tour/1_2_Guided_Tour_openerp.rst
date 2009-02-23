@@ -57,7 +57,7 @@ To familiarize yourself with Open ERP's interface, you'll start work with infor
 Search for a partner
 ^^^^^^^^^^^^^^^^^^^^
 
-Above the partner list you'll see a search form that enables you to quickly filter the partners. Two tabs are available for searching –  *Basic Search*  and  *Advanced Search* . The latter simply shows more fields to narrow your selection.
+Above the partner list you'll see a search form that enables you to quickly filter the partners. Two tabs are available for searching – :guilabel:`Basic Search` and :guilabel:`Advanced Search`. The latter simply shows more fields to narrow your selection.
 
 If you've applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners (the web client defaults to \ ``20``\  , but you can select a maximum of \ ``100``\   on a page). If you want to display other records you can search for them or navigate through the whole list using the  *First*  /  *Previous*  /  *Next*  /  *Last*  arrows.
 
@@ -100,11 +100,11 @@ The partner form contains several tabs, all referring to the current record:
 
 *  *Properties* .
 
-The fields in a tab aren't all of the same type – some (such as  *Name* ) contain free text, some (such as the  *Language* ) enable you to select a value from a list of options, others give you a view of another object (such as  *Partner Contacts*  – because a partner can have several contacts) or a list of link to another object (such as  *Categories* ). There are checkboxes (such as the  *Active*  field in the  *Extra Info*  tab), numeric fields (such as  *Credit Limit* ) and date fields (such as  *Date* ).
+The fields in a tab aren't all of the same type – some (such as :guilabel:`Name`) contain free text, some (such as the :guilabel:`Language`) enable you to select a value from a list of options, others give you a view of another object (such as :guilabel:`Partner Contacts` – because a partner can have several contacts) or a list of link to another object (such as :guilabel:`Categories`). There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Extra Info` tab), numeric fields (such as :guilabel:`Credit Limit`) and date fields (such as :guilabel:`Date`).
 
 The  *Events History*  tab gives a quick overview of things that have happened to the partner – an overview of useful information such as orders, open invoices and support requests. Events are generated automatically by Open ERP from changes in other documents that refer to this partner.
 
-It's possible to add events manually, such as a note recording a phone call. To add a new event click  *Create new record*  to the right of the  *Partner Events*  field. That opens a new  *Partner Events*  dialog box enabling an event to be created and added to the current partner.
+It's possible to add events manually, such as a note recording a phone call. To add a new event click :guilabel:`Create new record` to the right of the :guilabel:`Partner Events`  field. That opens a new :guilabel:`Partner Events` dialog box enabling an event to be created and added to the current partner.
 
 Actions possible on a partner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -141,7 +141,7 @@ Partners are used throughout the Open ERP system in other documents. For exampl
 
 	In the web client you'll see hyperlink shortcuts on several of the fields on a form that's in Read-Only mode, so that you can move onto the form for those entries. When the web form is in Edit mode, you can instead hold down the control button on the keyboard and right-click with the mouse button in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK client.
 
-	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales Management --> Sales Order --> All Sales Orders` and seeing what you can reach from the partner field on that sales order form using either the web client with the form in both read-only and in edit mode, or with the GTK client.
+	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales Management --> Sales Order --> All Sales Orders` and seeing what you can reach from the :guilabel:`Partner` field on that sales order form using either the web client with the form in both read-only and in edit mode, or with the GTK client.
 	
 .. figure:: images/familiarization_sale_partner.png
    :align: center
@@ -243,7 +243,7 @@ The :menuselection:`Products` menu gives you access to the definition of product
 
 Open a product form to see the information that describes it. Several different types of product can be found in the demonstration data, giving quite a good overview of the possible options.
 
-Price lists (:menuselection:`Products --> Pricelists`) determine the purchase and selling prices and adjustments derived from the use of different currencies. The  *Default Purchase Pricelist*  uses the product's  *Cost*  field to base a Purchase price on. The  *Default Sale Pricelist*  uses the product's  *List Price*  field to base a Sales price on when issuing a quote.
+Price lists (:menuselection:`Products --> Pricelists`) determine the purchase and selling prices and adjustments derived from the use of different currencies. The :menuselection:`Default Purchase Pricelist` uses the product's :guilabel:`Cost`  field to base a Purchase price on. The :menuselection:`Default Sale Pricelist` uses the product's :guilabel:`List Price` field to base a Sales price on when issuing a quote.
 
 Price lists are extremely flexible and enable you to put a whole price management policy in place. They're composed of simple rules that enable you to build up a rule set for most complex situations: multiple discounts, selling prices based on purchase prices, price reductions, promotions on whole product ranges and so on.
 

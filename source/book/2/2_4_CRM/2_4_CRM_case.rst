@@ -46,7 +46,7 @@ You'll define the following four sections:
 
 * Quality. 
 
-Put the name in the field  *Case Section* . You construct a tree structure for sections is constructed using the  *Parent Section*  field in the Section form. So here you'd say that \ ``Support Level 2``\   is the parent of \ ``Support Level 1``\  . Open ERP doesn't restrict the order you use to define these two – you can save the parent while defining the child (try it by starting with \ ``Support Level 1``\  ).
+Put the name in the field :guilabel:`Case Section`. You construct a tree structure for sections is constructed using the :guilabel:`Parent Section`  field in the Section form. So here you'd say that \ ``Support Level 2``\   is the parent of \ ``Support Level 1``\  . Open ERP doesn't restrict the order you use to define these two – you can save the parent while defining the child (try it by starting with \ ``Support Level 1``\  ).
 
 A manager can then be assigned to each section (from the list of Open ERP system users), and an email address can optionally be added. Cases in this section are then automatically connected to this email address – case messages are emailed out automatically from this address and emails to this address are automatically logged in this section of the CRM system. This functionality is based on the email gateway referred to in detail further on in this chapter.
 
@@ -525,7 +525,7 @@ Each time you start fetchmail it downloads all the emails and creates or updates
 
 fetchmail -d 300
 
-If you want to receive customer requests by email you must first create a rule that automatically assigns new cases to a specified user. You must then verify that this user possesses a suitable email address in the  *Address*  field within Open ERP.
+If you want to receive customer requests by email you must first create a rule that automatically assigns new cases to a specified user. You must then verify that this user possesses a suitable email address in the :guilabel:`Address` field within Open ERP.
 
 To find out if the new email should create a new case or update an existing case, Open ERP analyzes the subject line of the email. Existing cases are identified by the case number in the subject line, for example 
 

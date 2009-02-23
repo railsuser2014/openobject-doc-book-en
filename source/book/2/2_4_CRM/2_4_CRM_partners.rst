@@ -78,11 +78,11 @@ You can have several contacts for one partner. Contacts represent company employ
 
 Contacts can be entered into the first ( *General* ) tab of the  *Partners*  form, or you can get direct access to the list of addresses through the :menuselection:`Partners --> Partner Contacts` menu.
 
-You can search for a subset of Partners and Contacts using their company  *Name*  or  *Contact*  name or part of the address, or any of the other search fields in either the  *Basic Search*  or the  *Advanced Search*  tab.
+You can search for a subset of Partners and Contacts using their company :guilabel:`Name` or :guilabel:`Contact name` or part of the address, or any of the other search fields in either the :guilabel:`Basic Search` or the :guilabel:`Advanced Search` tab.
 
 .. note:: Independent partners or physical people
 
-	If you want to represent a physical person rather than a company, in Open ERP, that person's name can be typed directly into the Name field on the Partner form. In this case don't put in any Contact Name.
+	If you want to represent a physical person rather than a company, in Open ERP, that person's name can be typed directly into the :guilabel:`Name` field on the Partner form. In this case don't put in any Contact Name.
 
 .. index::
    single: Partner; Categories

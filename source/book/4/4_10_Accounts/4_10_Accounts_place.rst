@@ -23,27 +23,27 @@ Start by choosing the most suitable analytic representation for your company bef
 
 To create an analytic account you have to complete the main fields:
 
-* the  *Account Name* ,
+* the :guilabel:`Account Name`,
 
-* the  *Account Code* , which is used as a shortcut for selecting the account,
+* the :guilabel:`Account Code`, which is used as a shortcut for selecting the account,
 
-* the  *Account type* , just like general accounts the \ ``View``\   type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries,
+* the :guilabel:`Account type`, just like general accounts the \ ``View``\   type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries,
 
-* the  *Parent analytic account* , which defines the hierarchy between the accounts.
+* the :guilabel:`Parent analytic account`, which defines the hierarchy between the accounts.
 
-If the project is for a limited time you can define a start and end date here. The  *State*  field is used to indicate whether the project is running (\ ``Open``\  ), waiting for information from the client (Pending), \ ``Draft``\   or \ ``Closed``\  .
+If the project is for a limited time you can define a start and end date here. The :guilabel:`State` field is used to indicate whether the project is running (\ ``Open``\  ), waiting for information from the client (Pending), \ ``Draft``\   or \ ``Closed``\  .
 
 Finally, if the analytic account is a client project you can complete the fields about the partner, which you'd need so that you can invoice the partner:
 
-* the  *Associated partner* ,
+* the :guilabel:`Associated partner`,
 
-* a  *Sale Pricelist* , which shows how services linked to the project should be charged,
+* a :guilabel:`Sale Pricelist`, which shows how services linked to the project should be charged,
 
-* a  *Max. Invoice Price* , showing the maximum invoice price regardless of actual overspend,
+* a :guilabel:`Max. Invoice Price`, showing the maximum invoice price regardless of actual overspend,
 
-* a  *Max. Quantity* , for contracts with a fixed limit of hours to use,
+* a :guilabel:`Max. Quantity`, for contracts with a fixed limit of hours to use,
 
-* an  *Invoicing*  field, which defines an invoicing rate and whether the project should be invoiced automatically from the services represented by the costs in the analytic account.
+* an :guilabel:`Invoicing:guilabel:` field, which defines an invoicing rate and whether the project should be invoiced automatically from the services represented by the costs in the analytic account.
 
 .. index::
    single: Invoicing

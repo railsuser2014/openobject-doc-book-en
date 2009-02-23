@@ -279,7 +279,7 @@ You can review your new category structure using :menuselection:`Partners --> Pa
 
 To create a new partner and link it to this new category open a new partner form to modify it.
 
-	#. In the :guilabel:`General` tab, type \ ``New Partner``\  into the  *Name* field.
+	#. In the :guilabel:`General` tab, type \ ``New Partner``\  into the :guilabel:`Name` field.
 
 	#. Then click on the search icon to the right of the :guilabel:`Categories` field and select your new category from the list that appears: \ ``Prospect / My Prospects``\  
 

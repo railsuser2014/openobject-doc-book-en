@@ -67,7 +67,7 @@ Finally you can look up individual account entries by searching for useful infor
 
 * by making a global search, go through the menu :menuselection:`Financial Management --> Entries --> Search Entries`, 
 
-* by partner, do it by right-clicking on the Partner field in any form that shows it, or by using the buttons to the right of the partner form.
+* by partner, do it by right-clicking on the :guilabel:`Partner` field in any form that shows it, or by using the buttons to the right of the partner form.
 
 .. tip:: Exporting entries
 
@@ -140,23 +140,23 @@ Partner situation
 
 In daily use of Open ERP a senior manager will often need to search quickly for financial information amongst partner data. For this she can use the buttons to the right of form when she opens a partner form, to go directly to:
 
-* a follow-up letter from the  *Overdue payments*  Report button,
+* a follow-up letter from the :guilabel:`Overdue payments` Report button,
 
-* the list of  *Open Invoices* ,
+* the list of :guilabel:`Open Invoices`,
 
-* a shortcut to  *All account entries* ,
+* a shortcut to :guilabel:`All account entries`,
 
-* the unclosed CRM requests from  *Open cases* ,
+* the unclosed CRM requests from :guilabel:`Open cases`,
 
-* a shortcut to the unreconciled  *Receivables and Payables* .
+* a shortcut to the unreconciled :guilabel:`Receivables and Payables`.
 
 These links are also available to her when she right-clicks the mouse on a partner field on any form.
 
-The  *Overdue payments*  report produces a PDF document which is used for follow-up but it doesn't modify any of the partner's accounting entries. It's use doesn't increase the follow-up level so you can use this report repeatedly without any problem.
+The :guilabel:`Overdue payments` report produces a PDF document which is used for follow-up but it doesn't modify any of the partner's accounting entries. It's use doesn't increase the follow-up level so you can use this report repeatedly without any problem.
 
 In Open ERP you can search for a partner on the basis of the value of its trade receivables. So search for partners with a credit amount between 1 and 99999999 and you'll get a list of partners that owe you payment. You can then select the whole list and print follow-up letters for them all.
 
-To the right of the partner form there's a shortcut to  *Open invoices* . This link includes all of the invoices defined in the systems, namely:
+To the right of the partner form there's a shortcut to :guilabel:`Open invoices`. This link includes all of the invoices defined in the systems, namely:
 
 * customer invoices,
 
@@ -177,13 +177,13 @@ To the right of the partner form there's a shortcut to  *Open invoices* . This l
 
 In the links appearing on the partner form, two buttons enable the opening of partner accounting entries:
 
-*  *All account entries* ,
+*  :guilabel:`All account entries`,
 
-*  *Receivables & Payables* .
+*  :guilabel:`Receivables & Payables`.
 
 The first button is useful for obtaining a historical analysis of the customer or supplier. You can get information about such significant items as sales volume and payment delays. The second button is a filter which shows only the open trade credits and debits for the partner.
 
-Finally, keep in mind that all of the functions on the partner form are accessible from any Open ERP document by right-clicking with the mouse on a Partner field. This is extremely useful for gaining rapid access to information from any screen.
+Finally, keep in mind that all of the functions on the partner form are accessible from any Open ERP document by right-clicking with the mouse on a :guilabel:`Partner` field. This is extremely useful for gaining rapid access to information from any screen.
 
 .. Copyright © Open Object Press. All rights reserved.
 

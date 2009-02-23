@@ -18,7 +18,7 @@ Defining workflows
 
 Workflows can be created and modified in Open ERP's user interface.
 
-You can look at the specifications of the workflow for the sales order above using the menu *Administration > Configuration > Low level > Base > Workflow* . It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field  *Activities* , and all of the arrows are listed in the field  *Transitions* .
+You can look at the specifications of the workflow for the sales order above using the menu :menuselection:`Administration --> Configuration --> Low level --> Base --> Workflow`. It's the process named sale.order.basic. All of the nodes appearing in the graph are listed in the field :guilabel:`Activities`, and all of the arrows are listed in the field :guilabel:`Transitions`.
 
 .. figure::  images/sales_workflow_spec.png
    :align: center
@@ -43,7 +43,7 @@ Users can be linked to several roles specifying their duties in certain phases o
 
 Role definition is done in :menuselection:`Administration --> Users --> Roles Structure --> Define Roles`, the same way you define groups, except that roles can be hierarchical: a parent role has the same influence as all of its child roles (for example, the sales director would be able to do all of the things that have been defined for a sales person, as well as anything defined specifically for the sales director group, if the sales director has been made a parent of the sales group).
 
-Once the roles have been defined, you can add them into the workflow transitions using the Role field. This means that users who have the required role can make the transitions in the workflow, which enable them to pass from one activity to another (for example confirming an order or an invoice).
+Once the roles have been defined, you can add them into the workflow transitions using the :guilabel:`Role` field. This means that users who have the required role can make the transitions in the workflow, which enable them to pass from one activity to another (for example confirming an order or an invoice).
 
 
 

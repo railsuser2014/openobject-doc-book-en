@@ -136,7 +136,7 @@ To test several modules you won't have to install them all one by one. You can u
 
 * \ ``profile_service``\  .
 
-To find these quickly, enter the word \ ``profile``\   in the  *Name*  field of the search form and click  *Filter*  to search for the relevant modules. Then install them one by one or all at once.
+To find these quickly, enter the word \ ``profile``\   in the :guilabel:`Name` field of the search form and click :guilabel:`Filter` to search for the relevant modules. Then install them one by one or all at once.
 
 As you update you'll see thirty or so modules to be installed. When you close the :guilabel:`System Upgrade Done` form you'll be returned to a dashboard, not the main menu you had before. To get to the main menu, use the :guilabel:`Main Menu` link.
 

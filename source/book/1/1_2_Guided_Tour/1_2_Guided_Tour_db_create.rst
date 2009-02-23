@@ -5,12 +5,12 @@ Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch
 
 Start the database creation process from the :guilabel:`Database Administration`  page by clicking :guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database` form:
 
-*  *Super administrator password* , by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
+*  :guilabel:`Super administrator password`, by default it's \ ``admin``\  , if you or your system administrator haven't changed it.
 
-*  *New database name* : \ ``openerp_ch02``\  .
+*  :guilabel:`New database name`: \ ``openerp_ch02``\  .
 
-*  *Load Demonstration Data*  checkbox: \ ``checked``\  .
+*  :guilabel:`Load Demonstration Data` checkbox: \ ``checked``\  .
 
-*  *Default Language* : \ ``English``\  .
+*  :guilabel:`Default Language`: \ ``English``\  .
 
 

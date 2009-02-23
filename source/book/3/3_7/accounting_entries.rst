@@ -46,9 +46,9 @@ So, complete the final balance, which corresponds to the last value on the accou
 
 Then you must enter all the lines on the statement. Each line corresponds to a banking transaction.
 
-Enter the transaction line. When you type the Partner name, Open ERP automatically proposes the corresponding account. The total amount due for the customer or supplier is pre-completed by Open ERP ( *Amount* ). This gives you a simple indication of the effective payment. You must the enter the amount that appears on your statement line: a negative sign for a withdrawal and a positive sign for a cash payment or deposit.
+Enter the transaction line. When you type the Partner name, Open ERP automatically proposes the corresponding account. The total amount due for the customer or supplier is pre-completed by Open ERP (:guilabel:`Amount`). This gives you a simple indication of the effective payment. You must the enter the amount that appears on your statement line: a negative sign for a withdrawal and a positive sign for a cash payment or deposit.
 
-When the payment entry has been made it's possible to reconcile this directly with the accounting entry for the invoices. Press the  *Ctrl*  key on the keyboard (necessary for the web client, though not the GTK client) and then press the  *F1*  key while your cursor is in the  *Reconcile*  field on the payment line.
+When the payment entry has been made it's possible to reconcile this directly with the accounting entry for the invoices. Press the  *Ctrl*  key on the keyboard (necessary for the web client, though not the GTK client) and then press the :guilabel:`F1` key while your cursor is in the :guilabel:`Reconcile`  field on the payment line.
 
 
 .. figure::  images/account_statement_reconcile.png
@@ -157,13 +157,13 @@ The reconciliation operation consists of matching entries in different accounts 
 
 * matching invoice entries to payments so that invoices are marked as paid and customers don't get payment reminder letters (reconciliation in a customer account),
 
-* matching deposits and chequewithdrawals with their respective payments,
+* matching deposits and cheque withdrawals with their respective payments,
 
 * matching invoices and credit notes to cancel them out.
 
 A reconciliation must be carried out on a list of accounting entries by an accountant, so that the sum of credits equals the sum of the debits for the matched entries.
 
-Reconciliation in Open ERP can only be carried out in accounts that have been configured as reconcilable (the  *Reconcile*  field).
+Reconciliation in Open ERP can only be carried out in accounts that have been configured as reconcilable (the :guilabel:`Reconcile`  field).
 
 .. tip:: Don't confuse: **account** reconciliation and **bank statement** reconciliation
 
@@ -218,7 +218,7 @@ The adjustment option enables you to reconcile entries even if their amounts are
 .. note:: Default values 
 
 	If you start the automatic reconciliation tool regularly you should set the default values for each field 
-	by pressing the Ctrl key and using the right-click mouse button 
+	by pressing the :guilabel:`Ctrl` key and using the right-click mouse button 
 	(when the form is in edit mode using the web client, or just using the GTK client). 
 	This means that you won't have to re-type all the fields each time.
 
@@ -234,7 +234,7 @@ Select entries that you want to reconcile. From the selection, Open ERP indicat
 
 	.. note::  *Example Real case of using reconciliation* 
 
-			Suppose that you're entering customer order details. You ask “what's outstanding on the customer account ?” (that is the list of unpaid invoices and unreconciled payments). To review it from the order form, right-click the mouse button on the Partner field and select the view Receivables and Payables. Open ERP opens a history of unreconciled accounting entries on screen.
+			Suppose that you're entering customer order details. You ask “what's outstanding on the customer account ?” (that is the list of unpaid invoices and unreconciled payments). To review it from the order form, right-click the mouse button on the :guilabel:`Partner` field and select the view Receivables and Payables. Open ERP opens a history of unreconciled accounting entries on screen.
 
 	            .. figure::  images/account_sample2_entries.png
 	               :align: center
@@ -367,15 +367,15 @@ Then you must indicate the  *Preferred date*  for payment:
 
 * \ ``Directly``\  : the operations will be effected when the orders are validated,
 
-* \ ``Fixed date``\  : you must specify an effective payment date in the  *Scheduled date if fixed*  field that follows.
+* \ ``Fixed date``\  : you must specify an effective payment date in the :guilabel:`Scheduled date if fixed` field that follows.
 
 The date is particularly important for the preparation of electronic transfers because banking interfaces enable you to select a future execution date for each operation. So to configure your Open ERP most simply you can choose to pay all invoices automatically by their deadline.
 
-You must then select the invoices to pay. They can be manually entered in the field  *Payment Line*  but it's easier to add them automatically. For that, click  *Add payment lines*  and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
+You must then select the invoices to pay. They can be manually entered in the field :guilabel:`Payment Line` but it's easier to add them automatically. For that, click  *Add payment lines*  and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
 
-* the invoice  *Effective date* ,
+* the invoice :guilabel:`Effective date`,
 
-* the reference  *Ref.*  and description of the invoice,  *Name* ,
+* the reference :guilabel:`Ref.` and description of the invoice, :guilabel:`Name`,
 
 * the deadline for the invoice,
 

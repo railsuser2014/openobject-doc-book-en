@@ -12,9 +12,9 @@ In the product form you can find a report that will give you the stock levels of
 
 The two fields are:
 
-* Real stock: quantity physical present in your warehouse,
+* :guilabel:`Real stock` : quantity physical present in your warehouse,
 
-* Virtual stock: calculated this way: real stock – outgoing + incoming.
+* :guilabel:`Virtual stock` : calculated this way: real stock – outgoing + incoming.
 
 .. note::  Virtual Stock
 
@@ -33,30 +33,30 @@ The two fields are:
 Lead times and locations
 ------------------------
 
-The tab *Procurement and Locations* contains information about different lead times and locations. Three lead time figures are available:
+The tab :guilabel:`Procurement and Locations` contains information about different lead times and locations. Three lead time figures are available:
 
-* Customer Lead Time: lead time promised to the customer, expressed in number of days between the order and the deliver to the customer,
+* :guilabel:`Customer Lead Time` : lead time promised to the customer, expressed in number of days between the order and the deliver to the customer,
 
-* Manufacturing Lead Time: lead time, in days, between a production order and the end of production of the finished product,
+* :guilabel:`Manufacturing Lead Time` : lead time, in days, between a production order and the end of production of the finished product,
 
-* Warranty: length of time in months for the warranty for the delivered products.
+* :guilabel:`Warranty` : length of time in months for the warranty for the delivered products.
 
 .. note:: Warranty
 
     The warranty period is used in the management of repairs and after-sales service. 
     You can find more information on this subject in the chapter about manufacturing.
 
-Fields in the section *Storage localisation* are given for information – they don't have any impact on the management of stock.
+Fields in the section :guilabel:`Storage localisation` are given for information – they don't have any impact on the management of stock.
 
 The counterpart locations are automatically proposed by the system but the different values can be modified. You'll find counterpart locations for:
 
-* Production,
+* :guilabel:`Production`,
 
-* Inventory,
+* :guilabel:`Inventory`,
 
-* Procurement.
+* :guilabel:`Procurement`.
 
-A procurement location is a temporary location for stock moves that haven't yet been finalized by the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or production, Open ERP uses the counterpart location *Procurement*. You'll find there everything that hasn't yet been planned by the system. The quantities of product in this location cancel each other out.
+A procurement location is a temporary location for stock moves that haven't yet been finalized by the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'll find there everything that hasn't yet been planned by the system. The quantities of product in this location cancel each other out.
 
 .. index:: Inventory
 
@@ -74,11 +74,11 @@ Give a name (for example 'Initial Inventory' or 'Lost Product XYZ') and a date f
 
 Enter data for a single line in your inventory:
 
-* Location: Stock,
+* :guilabel:`Location` : Stock,
 
-* Product: PC1 Computers,
+* :guilabel:`Product` : PC1 Computers,
 
-* Quantity: 23 Units.
+* :guilabel:`Quantity` : 23 Units.
 
 .. tip:: Periodical Inventory
 
@@ -113,11 +113,11 @@ Supplier goods receipt forms are automatically prepared by Open ERP by the purch
 
 You can also do goods in data entry manually if there's no order, using the menu :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed` followed by a click on :guilabel:`*New`.
 
-A new goods-in data entry form then opens. Enter the supplier data in the partner field and you can type in the reference number from your supplier in the field 'Origin'. You should then enter data about the products received in lines.
+A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Partner field` and you can type in the reference number from your supplier in the field :guilabel:`Origin`. You should then enter data about the products received in lines.
 
-The source location is already completed by default because of your supplier selection. You should then give the destination location where you will place the products. For example, enter 'Stock'. At this stage you can set a lot number for traceability (this function will be described later in this chapter, so leave this field empty for the moment).
+The source location is already completed by default because of your supplier selection. You should then give the destination location where you will place the products. For example, enter ``Stock``. At this stage you can set a lot number for traceability (this function will be described later in this chapter, so leave this field empty for the moment).
 
-Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button *Process Later* .
+Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button :guilabel:`Process Later`.
 
 .. figure:: images/stock_picking_in_form.png
    :align: center
@@ -126,26 +126,26 @@ Once the form has been completed you can confirm the receipt of all the products
 
 The products then arrive in stock and reflect the quantities shown on the product form.
 
-In the goods receipt form, the field 'Invoicing Control' lets you influence the way you send invoices to suppliers. If this is set to 'To be invoiced' a supplier invoice will now be generated automatically in the draft state, based on the goods received. Your accountant then has to confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that the invoiced quantities correspond to the quantities received.
+In the goods receipt form, the field :guilabel:`Invoicing Control` lets you influence the way you send invoices to suppliers. If this is set to 'To be invoiced' a supplier invoice will now be generated automatically in the draft state, based on the goods received. Your accountant then has to confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that the invoiced quantities correspond to the quantities received.
 
 Customer delivery
 -----------------
 
-Everything about goods receipt is also possible to do manually for a customer delivery. But this time, use the automated product delivery processes based on customer orders. Install the ``sale`` module so that you can proceed further in this section of the chapter.
+Everything about goods receipt can also be done manually for a customer delivery. But this time, use the automated product delivery processes based on customer orders. Install the ``sale`` module so that you can proceed further in this section of the chapter.
 
 Now create a new customer order from the menu :menuselection:`Sales Management --> Sales Orders --> New Quotation`. Enter the following data in this order:
 
-* Shop: Tiny SPRL
+* :guilabel:`Shop` : Tiny SPRL
 
-* Customer: Agrolait
+* :guilabel:`Customer` : Agrolait
 
-* Order Line:
+* :guilabel:`Order Line` :
 
-  * Product: PC1 Computer,
+  * :guilabel:`Product` : PC1 Computer,
 
-  * Quantity: 3 PCE
+  * :guilabel:`Quantity` : 3 PCE
 
-  * Procurement Method: from stock.
+  * :guilabel:`Procurement Method` : from stock.
 
 You've seen already that Open ERP shows you the available product stock when you've selected list mode. The real stock is equal to the virtual stock because you've nothing to deliver to customers and you're not waiting for any of these products to be received into stock. The salesperson then has all the information needed to take orders efficiently.
 
@@ -208,9 +208,9 @@ Now look at the effect of these operations on stock management. There are severa
 
 Start by opening the product form from the menu :menuselection:`Products --> Products` and looking at the list of items. You'll immediately see the following information about the products:
 
-* Real Stock,
+* :guilabel:`Real Stock` ,
 
-* Virtual Stock.
+* :guilabel:`Virtual Stock` .
 
 If you want more information you can use the actions to the right of the form. If you click the report *Future Stock Forecast*, Open ERP opens a graphical view of the stock levels for the selected products changing with time over the days and weeks to come. The value at the left of the graph is the real stock (today) and the value at the right is the virtual stock (stock in the short term future).
 

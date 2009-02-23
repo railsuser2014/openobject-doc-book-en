@@ -65,7 +65,7 @@ In Open ERP an invoice is considered to be paid when its accounting entries hav
 
 	To avoid surprises, it's important to understand the idea of reconciliation and its link with invoice payment.
 
-	You'll find both a Reconciled field and the Paid checkbox on an invoice. 
+	You'll find both a :guilabel:`Reconciled` field and the :guilabel:`Paid` checkbox on an invoice. 
 	They differ from each other only if an invoice has been paid (using reconciliation of records) 
 	but has subsequently been marked as unreconciled.
 

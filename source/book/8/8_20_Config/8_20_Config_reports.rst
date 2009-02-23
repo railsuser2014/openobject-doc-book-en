@@ -27,9 +27,9 @@ Open ERP gives you the possibility of developing your own analyses to meet your
 
 Once the module is installed, create a new report using the menu :menuselection:`Dashboards --> Configuration --> Custom Reports`.
 
-Give a  *Report Name*  to your new report and select the objects that you're going to analyze. For example, select the three following objects:  *Partner* ,  *Sale Order* ,  *Sale Order line* .
+Give a :guilabel:`Report Name` to your new report and select the objects that you're going to analyze. For example, select the three following objects:  *Partner* ,  *Sale Order* ,  *Sale Order line* .
 
-Then turn to the second tab,  *View parameters* , to select the views that you want in your report. Select \ ``Tree``\   in the  *First View*  and \ ``Graph``\   in the  *Second View* . You can choose the type of graph displayed using the  *Graph View*  fields. You could also select \ ``Calendar``\   as a view if you were going to add the  *Date*  field in your report.
+Then turn to the second tab :guilabel:`View parameters` to select the views that you want in your report. Select \ ``Tree``\   in the  *First View*  and \ ``Graph``\   in the :guilabel:`Second View`. You can choose the type of graph displayed using the :guilabel:`Graph View` fields. You could also select \ ``Calendar``\   as a view if you were going to add the :guilabel:`Date` field in your report.
 
 .. tip:: The MS Excel plug-in 
 
@@ -42,33 +42,31 @@ Then turn to the second tab,  *View parameters* , to select the views that you w
 
    *Fields selected for the analysis of sales by customer and by product (plugin_excel.png).*
 
-In the third tab,  *Fields to Display* , you can add filters on all the fields of the selected objects ( *Filters on Fields* ). To do that, use the button  *Add Filter*  at the top of the form. For the moment, don't add a filter.
+In the third tab :guilabel:`Fields to Display` you can add filters on all the fields of the selected objects (:guilabel:`Filters on Fields`). To do that, use the button :guilabel:`Add Filter` at the top of the form. For the moment, don't add a filter.
 
-In the fourth tab you must indicate which of the fields in the list you want to be shown in your report ( *Fields to Display* ). Complete the screen along the lines of the figure below.
+In the fourth tab you must indicate which of the fields in the list you want to be shown in your report (:guilabel:`Fields to Display`). Complete the screen along the lines of the figure below.
 
-	#. The  *Sequence* field gives the order of the fields displayed.
+	#. The :guilabel:`Sequence` field gives the order of the fields displayed.
 
-	#.  *Field*  the second column enables you to select a field from any of the three objects you selected in the first tab.
+	#. :guilabel:`Field` the second column enables you to select a field from any of the three objects you selected in the first tab.
 
-	#.  *Grouping Method*  the third column lets you to determine the grouping operation that is to be applied to this field:
+	#.  :guilabel:`Grouping Method` the third column lets you to determine the grouping operation that is to be applied to this field:
 
-	        - Grouped: enables you to group document entries with the same value in this field.
+	        - :guilabel:`Grouped` : enables you to group document entries with the same value in this field.
 
-	        - Sum: gives the sum of values in this field.
+	        - :guilabel:`Sum` : gives the sum of values in this field.
 
-	        - Minimum: gives the minimum of all the values that appear in this field.
+	        - :guilabel:`Minimum` : gives the minimum of all the values that appear in this field.
 
-	        - Maximum: gives the maximum of all the values that appear in this field.
+	        - :guilabel:`Maximum` : gives the maximum of all the values that appear in this field.
 
-	        - Average: gives the arithmetic average of all the values in this field.
+	        - :guilabel:`Average` : gives the arithmetic average of all the values in this field.
 
+	#.  :guilabel:`Graph Mode` the fourth column, determines if the field will appear in the graph view and, if so, on which axis (X or Y).
 
+	#.  :guilabel:`Calendar Mode` the fifth column, enables you to specify if the field can be the basis of a calendar view.
 
-	#.  *Graph Mode*  the fourth column, determines if the field will appear in the graph view and, if so, on which axis (X or Y).
-
-	#.  *Calendar Mode*  the fifth column, enables you to specify if the field can be the basis of a calendar view.
-
-You can now  *Save*  the report you defined. Click on the  *Open Report*  button to the right of the form to get the requested analysis.
+You can now :guilabel:`Save` the report you defined. Click on the :guilabel:`Open Report` button to the right of the form to get the requested analysis.
 
 .. figure::  images/report_sale_tree.png
    :align: center
@@ -93,7 +91,7 @@ Configuring the dashboards
 
 A dashboard is a selection of reports previously defined in Open ERP. You can choose from hundreds of predefined reports and, for each report, indicate its position on the dashboard.
 
-Just like fields on reports, the  *Sequence*  field determines the order in which views appear in the dashboard. 
+Just like fields on reports, the :guilabel:`Sequence` field determines the order in which views appear in the dashboard. 
 
 .. figure::  images/dashboard_config.png
    :align: center
@@ -101,12 +99,12 @@ Just like fields on reports, the  *Sequence*  field determines the order in whic
 
    *Definition of a new dashboard.*
 
-Once the dashboard has been defined you can use the  *Create Menu*  button to create a menu entry for your dashboard anywhere in the menu system.
+Once the dashboard has been defined you can use the :guilabel:`Create Menu` button to create a menu entry for your dashboard anywhere in the menu system.
 
 Managing document templates with OpenOffice.org
 -----------------------------------------------
 
-To personalize your printable documents in Open ERP, use the module \ ``base_report_designer``\.
+To configure your printable documents in Open ERP, use the module \ ``base_report_designer``\.
 
 .. tip:: The OpenOffice.org Writer plug-in
 
@@ -178,7 +176,7 @@ The report editor lets you:
 
 * create new reports for the selected object.
 
-To modify an existing report, select  *OpenERP Report --> Modify Existing Report`. Choose the report:menuselection:`Request for Quotation` in the  *Modify Existing Report*  dialog box and then click  *Save to Temp Directory* .
+To modify an existing report, select :menuselection:`OpenERP Report --> Modify Existing Report`. Choose the report:menuselection:`Request for Quotation` in the :guilabel:`Modify Existing Report` dialog box and then click :guilabel:`Save to Temp Directory`.
 
 .. figure::  images/openoffice_quotation.png
    :align: center
@@ -219,7 +217,7 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
 
 .. todo:: - I don't quite know what to do with this below, yet. I suspect it's a spec for a bit of writing.
 
- :menuselection:`OpenERP Report --> Send to server`  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
+.. :menuselection:`OpenERP Report --> Send to server`  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
 
 You can check the result in Open ERP using the menu :menuselection:`Sales Management --> Sales Orders --> All Orders`.
 
@@ -232,15 +230,15 @@ Creating a new report
 
 .. todo:: Another loose spec
 
- :menuselection:`OpenERP Report --> Open a new report` \ ``Sale Order``\   *Open New Report*  *Use Model in Report* 
+.. :menuselection:`OpenERP Report --> Open a new report` \ ``Sale Order``\  :guilabel:`Open New Report` :guilabel:`Use Model in Report` 
 
 The general template is made up of loops (such as the list of selected orders) and fields from the object, which can also be looped. Format them to your requirements then save the template.
 
 The existing report templates make up a rich source of examples. You can start by adding the loops and several fields to create a minimal template. 
 
-When the report has been created, send it to the server by clicking :menuselection:`OpenERP Report --> Send to server`, which brings up the  *Send to server*  dialog box. Enter the  *Technical Name*  of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in  *Report Name* , check the checkbox  *Corporate Header*  and finally click  *Send Report to Server* .
+When the report has been created, send it to the server by clicking :menuselection:`OpenERP Report --> Send to server`, which brings up the  *Send to server*  dialog box. Enter the :guilabel:`Technical Name` of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in :guilabel:`Report Name`, check the checkbox :guilabel:`Corporate Header` and finally click :guilabel:`Send Report to Server`.
 
-To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type* .
+To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field :guilabel:`Select Report Type`.
 
 Creating common headers for reports
 -----------------------------------

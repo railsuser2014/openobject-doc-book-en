@@ -52,26 +52,26 @@ To create a new group, use the menu :menuselection:`Administration --> Users -->
 
 Then to create a new user linked to this, use :menuselection:`Administration --> Users --> Users` to enter the following:
 
-*  *Name* : \ ``Stores Person``\  ,
+*  :guilabel:`Name` : \ ``Stores Person``\  ,
 
-*  *Username* : \ ``stores``\  ,
+*  :guilabel:`Username` : \ ``stores``\  ,
 
-*  *Password* : \ ``stores``\  ,
+*  :guilabel:`Password` : \ ``stores``\  ,
 
-*  *Company* : \ ``<your company>``\  ,
+*  :guilabel:`Company` : \ ``<your company>``\  ,
 
-*  *Action* : \ ``Menu``\  ,
+*  :guilabel:`Action` : \ ``Menu``\  ,
 
-*  *Menu Action* : \ ``Menu``\  .
+*  :guilabel:`Menu Action` : \ ``Menu``\  .
 
-In the second tab of the user form,  *Security* , add the \ ``Stock1``\   group that you just created.
+In the second tab of the user form, :guilabel:`Security` , add the \ ``Stock1``\   group that you just created.
 
 .. figure::  images/menu_access.png
    :align: center
 
    *Groups that have access to the Inventory Control menu.*
 
-Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access to Menu-Items` to get a list of menus. Filter this list using the search field  *Menu*  to get the  *Inventory Control*  menu item. In the form describing the menu, add \ ``Stock1``\   into the  *Groups*  field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
+Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access to Menu-Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to get the :guilabel:`Inventory Control` menu item. In the form describing the menu, add \ ``Stock1``\   into the :guilabel:`Groups` field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
 
 .. tip:: Menu hierarchy
 
@@ -116,13 +116,13 @@ You must always ensure that you don't lock the \ ``admin``\ group out of any obj
 
 You can manage four access modes on objects independently:
 
-*  *Read access* : members of the group can read the data in the object,
+*  :guilabel:`Read access` : members of the group can read the data in the object,
 
-*  *Create access* : members of the group can create a new record in the object, 
+*  :guilabel:`Create access` : members of the group can create a new record in the object, 
 
-*  *Write access* : members of the group can modify the contents of records in the object, 
+*  :guilabel:`Write access` : members of the group can modify the contents of records in the object, 
 
-*  *Delete access* : members of the group can delete records from the object.
+*  :guilabel:`Delete access` : members of the group can delete records from the object.
 
 (access_control.png)Access control to invoices for the admin group
 

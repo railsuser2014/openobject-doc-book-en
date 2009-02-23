@@ -71,7 +71,7 @@ Each location can be given an address. That enables you to create a location for
     Consigned stock is stock that is owned by you (valued in your accounts) but is physically stocked by your supplier. 
     Or, conversely, it could be stock owned by your customer (not valued by you) but stocked in your company.
 
-To enable you to consolidate easily at a higher level, the location definition is hierarchical. This structure is given by the field *Parent location*. That also enables you to manage complex cases of product localization. For example, you could imagine the following scenario.
+To enable you to consolidate easily at a higher level, the location definition is hierarchical. This structure is given by the field :guilabel:`Parent location`. That also enables you to manage complex cases of product localization. For example, you could imagine the following scenario.
 
 Example Structure for two warehouses
 
@@ -141,9 +141,9 @@ The automatic mode will do the same but won't wait for a confirmation from the u
 
 The *automatic without steps* mode won't include the additional stock move but will change the destination move transparently to assign the linked the location. You could then assign a destination location to which you send all the products that arrive in your warehouse. The storesperson will modify the goods receipt note.
 
-If there is a linkage to do, the field 'Type of linked location' lets the destination location be determined. If the field is set to 'customer', the location is given by the properties of the partner form. If the field is set to 'fixed', the destination location is given by the field 'location if link is fixed'.
+If there is a linkage to do, the field :guilabel:`Type of linked location` lets the destination location be determined. If the field is set to 'customer', the location is given by the properties of the partner form. If the field is set to 'fixed', the destination location is given by the field :guilabel:`Location if link is fixed`.
 
-Some operations take a certain time between order and execution. To account for this lead time, you can set a figure in days in the field 'link lead time'. Then the extra move (automatic or not) will be carried out several days after the original move. If you use the mode 'automatic without step', the lead time is inserted directly into the initial order. In this way you can add security lead times at certain control points in the warehouse.
+Some operations take a certain time between order and execution. To account for this lead time, you can set a figure in days in the field :guilabel:`Link lead time`. Then the extra move (automatic or not) will be carried out several days after the original move. If you use the mode 'automatic without step', the lead time is inserted directly into the initial order. In this way you can add security lead times at certain control points in the warehouse.
 
 Case of structuring locations
 -----------------------------

@@ -46,7 +46,7 @@ Employee configuration
 
 To be able to use the timesheets at all, you must first define those employees who are system users. The employee definition forms contain the information necessary to use that sheet, such as the job title, and hourly costs.
 
-Two fields will be of particular interest to you for managing timesheets: the  *Analytic Journal * and the  *Product* .
+Two fields will be of particular interest to you for managing timesheets: the :guilabel:`Analytic Journal` and the :guilabel:`Product`.
 
 In the analytic journal will be stored all the analytic entries about the costs of service times. These enable you to isolate the cost of service from other company costs such as the purchase of raw materials, expenses receipts and subcontracting. You can use different journals for each employee to separate costs by department or by function.
 
@@ -120,7 +120,7 @@ To be able to use timesheets, you should install the module \ ``hr_timesheet``\ 
 
  *Description* 
 
-The other fields are automatically completed but can be modified: the  *Product* , the  *Unit of Measure* , the  *Cost*  of the service, and the associated  *General Account* .
+The other fields are automatically completed but can be modified: the :guilabel:`Product`, the :guilabel:`Unit of Measure`, the :guilabel:`Cost` of the service, and the associated :guilabel:`General Account`.
 
 The hours are then encoded throughout the day by each employee. It helps to revisit the list at the end of the day to verify that the number of hours of attendance in the company has been properly accounted for. The total entered is shown at the bottom right of the list of service hours.
 
