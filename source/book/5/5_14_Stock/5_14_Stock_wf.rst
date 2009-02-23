@@ -27,7 +27,7 @@ Product Type         Stockable
 Method of restocking Purchase
 ==================== ======================
 
-Use the menu *Products > Products*, then click *New* to define a new product. 
+Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` to define a new product. 
 
 .. figure:: images/stock_product.png
    :align: center
@@ -151,7 +151,7 @@ Item      Unit              1
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the “Weight” category could be expressed in Kg, Tonnes or Grammes. You can't express them in hours or pieces.
 
-Use the menu *Products > Configuration > Units of Measure > Units of Measure* to define a new unit of measure. 
+Use the menu :menuselection:`Products --> Configuration --> Units of Measure --> Units of Measure` to define a new unit of measure. 
 
 In the definition of a Unit of Measure, you have a *Rounding precision* factor which shows how amounts are rounded after the conversion. A value of 1 gives rounding to the level of one unit. 0.01 gives rounding to one hundredth.
 

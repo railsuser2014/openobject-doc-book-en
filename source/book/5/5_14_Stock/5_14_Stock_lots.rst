@@ -15,7 +15,7 @@ The double-entry management in Open ERP enables you to run very advanced traceab
 Stock Moves
 -----------
 
-To look at the history of transactions about a product or a given location, use the menu *Stock Management > Traceability > Low Level > Stock Moves*. All the operations are then available. You can filter on the various field to retrieve the operations about an order, or a production, or a source location, or any given destination.
+To look at the history of transactions about a product or a given location, use the menu :menuselection:`Stock Management --> Traceability --> Low Level --> Stock Moves`. All the operations are then available. You can filter on the various field to retrieve the operations about an order, or a production, or a source location, or any given destination.
 
 .. figure:: images/stock_move_tree.png
    :align: center
@@ -36,7 +36,7 @@ Each stock move is in a given state. The different possible states are:
 
 * Cancelled: the stock move wasn't carried out, so there's no account in either real stock or virtual stock.
 
-Delivery orders, goods receipts and internal picking lists are just documents that regroup a set of stock moves. You can also consult the history of these documents using the menu *Stock Management > Traceability > Low level > Picking*.
+Delivery orders, goods receipts and internal picking lists are just documents that regroup a set of stock moves. You can also consult the history of these documents using the menu :menuselection:`Stock Management --> Traceability --> Low level --> Picking`.
 
 Lots
 ----
@@ -75,7 +75,7 @@ To assign a unique lot number to a set of several items you don't have to encode
 Traceability
 ------------
 
-If you encode the lot numbers for stock moves you can then enquire about the traceability for a given lot number. To do this use the menu *Stock Management > Traceability > Production Lots*, or *Stock Management > Traceability > Tracking Lots*.
+If you encode the lot numbers for stock moves you can then enquire about the traceability for a given lot number. To do this use the menu :menuselection:`Stock Management --> Traceability --> Production Lots`, or :menuselection:`Stock Management --> Traceability --> Tracking Lots`.
 
 .. tip:: Product Shortcuts
 

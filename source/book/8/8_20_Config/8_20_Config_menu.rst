@@ -16,17 +16,17 @@ Letting users change their password themselves
 
 When you signed onto the \ ``openerp_ch02``\   database as the administrator, two menus gave you access to forms for changing your password:
 
-*  *Administration > Users > Users*  gives a list of all users: click on your own name in that list and a form appears containing a field that with your password (don't click the  *Edit*  button above the form for the moment, and don't click the  *Edit*  icon to the right of the list of users either)
+*  :menuselection:`Administration --> Users --> Users` gives a list of all users: click on your own name in that list and a form appears containing a field that with your password (don't click the  *Edit*  button above the form for the moment, and don't click the  *Edit*  icon to the right of the list of users either)
 
-*  *Administration > Users > Users > Change My Password*  shows another list, this time with only you in that list: click on your own name and you'll see a form where only the password and signature can be edited (again, don't edit this at the moment).
+*  :menuselection:`Administration --> Users --> Users --> Change My Password` shows another list, this time with only you in that list: click on your own name and you'll see a form where only the password and signature can be edited (again, don't edit this at the moment).
 
-These two paints mentioned above are found in the  *Administration*  branch of your menu, which is only visible to users who are members of the \ ``admin``\   group (login again as \ ``demo``\   if you want to check this). You can easily make a menu item accessible to everyone by moving it or duplicating it, so you can make the  *Change My Password*  menu accessible to everybody.
+These two paints mentioned above are found in the :menuselection:`Administration` branch of your menu, which is only visible to users who are members of the \ ``admin``\   group (login again as \ ``demo``\   if you want to check this). You can easily make a menu item accessible to everyone by moving it or duplicating it, so you can make the  *Change My Password*  menu accessible to everybody.
 
-To do this, select the menu item  *Administration > Users > Users > Change My Password* . Then click on the line containing the word Administrator (but not on the name \ ``Administrator``\   itself) and click the  *Switch*  button to bring up the menu item as an editable form (you can do the same using the GTK client – there you select the line and click the  *View*  button instead).
+To do this, select the menu item :menuselection:`Administration --> Users --> Users --> Change My Password`. Then click on the line containing the word Administrator (but not on the name \ ``Administrator``\   itself) and click the  *Switch*  button to bring up the menu item as an editable form (you can do the same using the GTK client – there you select the line and click the  *View*  button instead).
 
 You could now edit this form – change its  *Parent Menu* , which moves the entry to a different part of the menu system; edit its  *Menu*  name to change how it appears in the menu tree, or give it a new  *Icon* . Or you could give it a new  *Action*  entirely (but this would lose the point of this particular exercise).
 
-Instead of editing this form, which is the original menu entry, duplicate it instead. With the web client you must first make the form read-only by clicking the  *Cancel*  button, then you click the  *Duplicate*  button that appears (in the GTK client, click  *Form > Duplicate*  from the top menu). The form that remains is now the duplicate entry, not the original.
+Instead of editing this form, which is the original menu entry, duplicate it instead. With the web client you must first make the form read-only by clicking the  *Cancel*  button, then you click the  *Duplicate*  button that appears (in the GTK client, click :menuselection:`Form --> Duplicate`  from the top menu). The form that remains is now the duplicate entry, not the original.
 
 .. figure::  images/new_menu.png
    :align: center
@@ -72,7 +72,7 @@ When you sign into Open ERP for the first time, a welcome page appears. In a mi
 
 The administrator can change both the welcome page and the main menu page individually for each user of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
 
-To make modifications for a particular user, edit the user configuration again in  *Administration > Users > Users* . Open the form for a particular user, and select different menu entries for the two fields  *Home Action*  and  *Menu Action* . 
+To make modifications for a particular user, edit the user configuration again in  :menuselection:`Administration --> Users --> Users`. Open the form for a particular user, and select different menu entries for the two fields  *Home Action*  and  *Menu Action* . 
 
 .. figure::  images/new_home.png
    :align: center
@@ -91,7 +91,9 @@ Assigning default values to fields
 
 You can quite easily configure the system to put default values in various fields as you open new forms. This enables you to pre-complete the fields with default data to simplify your users' work in entering new documents.
 
- *New*  *Partners > Partners* \ ``New Zealand``\   *Country*  *Partner Contact* 
+.. todo:: What's this?
+
+.. *New*  *Partners > Partners* \ ``New Zealand``\   *Country*  *Partner Contact* 
 
 * If you're using the web client do a Ctrl-Right-Click (that's a mouse right-click while the mouse pointer is in the field and the Control key is held down on the keyboard).
 
@@ -157,7 +159,9 @@ Translation through a CSV file
 
 To translate or modify all of the system's phrases you first have to export a translation file in CSV form.
 
- *Administration > Translation > Export language*  *Français*  *New Language* \ ``.csv``\  
+.. todo:: what's this?
+
+.. *Administration > Translation > Export language*  *Français*  *New Language* \ ``.csv``\  
 
 .. note:: UTF-8 format 
 
@@ -180,7 +184,7 @@ The file contains five columns:  *type* ,  *name* ,  *res_id* ,  *src* , and  *v
    Some lines have the name *ir.ui.menu* which shows that this is a menu entry. 
    Others have a type of *selection*, which indicates you that you'd see this entry in a drop-down menu.
 
-You should then load the new file into your Open ERP system using the menu  *Administration > Translation > Import language* . You've then got two ways forward:
+You should then load the new file into your Open ERP system using the menu :menuselection:`Administration --> Translation --> Import language`. You've then got two ways forward:
 
 * you can overwrite the previous translation by using the same name as before (so you could have a special 'standard French' translation by reusing the  *Name* \ ``Français``\   and  *Code* \ ``fr_FR``\  ),
 

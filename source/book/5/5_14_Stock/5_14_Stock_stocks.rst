@@ -63,7 +63,7 @@ A procurement location is a temporary location for stock moves that haven't yet 
 Initial Inventory
 -----------------
 
-Once a product has been defined, use an initial inventory operation to put actual current quantities into the system by location for the products in stock. Use the menu *Stock Management > Periodical Inventory > New Periodical Inventory* for this.
+Once a product has been defined, use an initial inventory operation to put actual current quantities into the system by location for the products in stock. Use the menu :menuselection:`Stock Management --> Periodical Inventory --> New Periodical Inventory` for this.
 
 .. figure:: images/stock_inventory_new.png
    :align: center
@@ -87,7 +87,7 @@ Enter data for a single line in your inventory:
 
     That means you can check the stock levels of a proportion of your products every so often. 
     This system is accepted in France as long as you can guarantee that all of your products have been counted at least once per year. 
-    To do this, use the report *Stock Management > Reporting > Dates of Inventories*.
+    To do this, use the report :menuselection:`Stock Management --> Reporting --> Dates of Inventories`.
 
     This gives you the last inventory date by product.
 
@@ -111,7 +111,7 @@ Supplier goods receipt forms are automatically prepared by Open ERP by the purch
 
    *List of items waiting.*
 
-You can also do goods in data entry manually if there's no order, using the menu *Stock Management > Incoming Goods > Items to be Processed* followed by a click on *New*.
+You can also do goods in data entry manually if there's no order, using the menu :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed` followed by a click on :guilabel:`*New`.
 
 A new goods-in data entry form then opens. Enter the supplier data in the partner field and you can type in the reference number from your supplier in the field 'Origin'. You should then enter data about the products received in lines.
 
@@ -133,7 +133,7 @@ Customer delivery
 
 Everything about goods receipt is also possible to do manually for a customer delivery. But this time, use the automated product delivery processes based on customer orders. Install the ``sale`` module so that you can proceed further in this section of the chapter.
 
-Now create a new customer order from the menu *Sales Management > Sales Orders > New Quotation*. Enter the following data in this order:
+Now create a new customer order from the menu :menuselection:`Sales Management --> Sales Orders --> New Quotation`. Enter the following data in this order:
 
 * Shop: Tiny SPRL
 
@@ -156,14 +156,14 @@ You've seen already that Open ERP shows you the available product stock when you
 
 Then confirm the quotation to convert it to an order. If you return to the product form you'll see the virtual stock is now smaller than the real stock. That happens because three products have been reserved by the order that you created, so they can't be sold to another customer.
 
-Start the scheduler through the menu *Manufacturing > Compute All Schedulers*. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
+Start the scheduler through the menu :menuselection:`Manufacturing > Compute All Schedulers`. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
 
 .. tip:: Just in Time
 
     Install the module ``mrp_jit`` to schedule each order in real time after it's been confirmed. 
     This means that you don't have to start the scheduler or wait for its periodical start time.
 
-You can now look at the the list of deliveries waiting to be carried out using the menu *Stock Management > Outgoing Products > Available Packings*. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
+You can now look at the the list of deliveries waiting to be carried out using the menu :menuselection:`Stock Management --> Outgoing Products --> Available Packings`. You find a line there for your order representing the items to be sent. Double-click the line to see the detail of the items proposed by Open ERP.
 
 .. figure:: images/stock_picking_out_form.png
    :align: center
@@ -206,7 +206,7 @@ Now look at the effect of these operations on stock management. There are severa
 
 * from the orders.
 
-Start by opening the product form from the menu *Products > Products* and looking at the list of items. You'll immediately see the following information about the products:
+Start by opening the product form from the menu :menuselection:`Products --> Products` and looking at the list of items. You'll immediately see the following information about the products:
 
 * Real Stock,
 
@@ -223,7 +223,7 @@ To get the stock levels by location use the button *Stock by Location*.  Open ER
 
 You can get more detail about all the stock moves from the product form. You'll then see each move from a source location to a destination location. Everything that influences stock levels corresponds to a stock move.
 
-You could also look at the stocks available in a location using the menu *Stock Management > Stock Locations Structure*. You can then use the structure shortcuts at the and the location tree in the main window. Click a location to look at the stocks by product. A location containing child locations shows the consolidated contents for all of its child locations.
+You could also look at the stocks available in a location using the menu :menuselection:`Stock Management --> Stock Locations Structure`. You can then use the structure shortcuts at the and the location tree in the main window. Click a location to look at the stocks by product. A location containing child locations shows the consolidated contents for all of its child locations.
 
 You should now check the product quantities for various locations to familiarize yourself with this double-entry stock management system. You should look at:
 

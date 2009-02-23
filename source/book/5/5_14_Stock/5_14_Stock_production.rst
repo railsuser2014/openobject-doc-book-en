@@ -26,14 +26,14 @@ The first thing to do to work with a production plan is to define the periods fo
 
    If your products take several days to assemble it's preferable to have a weekly plan. If your manufacturing cycles are several months you can work with a monthly plan.
 
-To do this use the menu *Sales Management > Configuration > Create Sales Periods*. A window appears enabling you to automatically define the next periods that will be provided for stock management.
+To do this use the menu :menuselection:`Sales Management --> Configuration --> Create Sales Periods`. A window appears enabling you to automatically define the next periods that will be provided for stock management.
 
 .. figure:: images/sale_period.png
    :align: center
 
    *Defining periods for stock management.*
 
-Salespeople can then enter their sales forecasts by product and by period using the menu *Sales Management > Sales Forecasts > My Sales Forecasts*. The forecasts can be made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amount. This can be modified manually as needed before completion.
+Salespeople can then enter their sales forecasts by product and by period using the menu :menuselection:`Sales Management --> Sales Forecasts --> My Sales Forecasts`. The forecasts can be made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the quantity equivalent to the estimated amount. This can be modified manually as needed before completion.
 
 .. figure:: images/stock_sale_forecast.png
    :align: center
@@ -46,7 +46,7 @@ Salespeople can then enter their sales forecasts by product and by period using 
 Production Plan
 ---------------
 
-The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings (consumption or customer deliveries) by period. To do this use the menu *Stock Management > Planning > Master Production Schedule*.
+The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings (consumption or customer deliveries) by period. To do this use the menu :menuselection:`Stock Management --> Planning --> Master Production Schedule`.
 
 For each period and product Open ERP gives you the following information:
 

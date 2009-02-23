@@ -5,7 +5,7 @@ Internal and external access using FTP
 ---------------------------------------
 .. index:: Directory
 
-The first configuration step is to create a directory structure that will be used to classify your document set. You can use the structure automatically proposed by Open ERP from the menu *Document Management > Directory Structure*.
+The first configuration step is to create a directory structure that will be used to classify your document set. You can use the structure automatically proposed by Open ERP from the menu :menuselection:`Document Management --> Directory Structure`.
 
 .. figure::  images/document_structure.png
    :align: center

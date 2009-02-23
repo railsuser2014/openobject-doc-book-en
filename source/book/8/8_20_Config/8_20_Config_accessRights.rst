@@ -48,9 +48,9 @@ Access rights for menus
 
 To get a feel for rights management in Tiny ERP you'll create a new \ ``Stock1``\  group, with access to the *Inventory Control* menu items. You'll then create a stores person user who's a member of the \ ``Stock1``\  group.  
 
-To create a new group, use the menu *Administration > Users > Groups*. Enter the group name Stock1. 
+To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the group name Stock1. 
 
-Then to create a new user linked to this, use *Administration > Users > Users* to enter the following:
+Then to create a new user linked to this, use :menuselection:`Administration --> Users --> Users` to enter the following:
 
 *  *Name* : \ ``Stores Person``\  ,
 
@@ -71,7 +71,7 @@ In the second tab of the user form,  *Security* , add the \ ``Stock1``\   group 
 
    *Groups that have access to the Inventory Control menu.*
 
-Save the user, then go into the menu  *Administration > Security > Define Access to Menu-Items*  to get a list of menus. Filter this list using the search field  *Menu*  to get the  *Inventory Control*  menu item. In the form describing the menu, add \ ``Stock1``\   into the  *Groups*  field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
+Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access to Menu-Items` to get a list of menus. Filter this list using the search field  *Menu*  to get the  *Inventory Control*  menu item. In the form describing the menu, add \ ``Stock1``\   into the  *Groups*  field. While you're at it, also add the \ ``admin``\   group there. From now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see this menu item in their main menu list.
 
 .. tip:: Menu hierarchy
 
@@ -89,7 +89,7 @@ Save the user, then go into the menu  *Administration > Security > Define Access
 
 	In the initial configuration, Open ERP's admin user, a member of the admin group, is given access to the Configuration menu 
 	in each section of the main menu. This is a general convention.
-	For example, *Partners > Configuration* is visible in the administrator's menu amongst the other Partner menu items, 
+	For example, :menuselection:`Partners --> Configuration` is visible in the administrator's menu amongst the other Partner menu items, 
 	but only those other menu entries are visible to other users. 
 	Similarly, the main menu entry *Administration* is, by convention, visible only to users who are members of the admin group.
 
@@ -126,7 +126,7 @@ You can manage four access modes on objects independently:
 
 (access_control.png)Access control to invoices for the admin group
 
-To configure access rights on a Open ERP objects, use the menu  *Administration > Security > Access Controls* . You give a  *Name*  to the access control, select a  *Group* , and the object ( *Model* ), then check the checkbox corresponding to each of the four  *Access*  modes. 
+To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration --> Security --> Access Controls` . You give a  *Name*  to the access control, select a  *Group* , and the object ( *Model* ), then check the checkbox corresponding to each of the four  *Access*  modes. 
 
 If you don't specify any group in the access rules, the rule is applied to all groups. So to remove access to an object for all users you could create a rule:
 

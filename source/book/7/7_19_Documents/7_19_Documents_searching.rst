@@ -10,9 +10,9 @@ You've seen several methods of accessing documents quickly:
 
 * Through FTP access to Open ERP,
 
-* Using the menu *Document Management > Structure of Directories*.
+* Using the menu :menuselection:`Document Management --> Structure of Directories`.
 
-But if you don't know where a specific document can be found, Open ERP also has a search tool integrated into its document management. To search for a file use the menu *Document Management > Search for a file*. You get to a document search screen that lets you search amongst all the attachments and all the documents in the FTP server.
+But if you don't know where a specific document can be found, Open ERP also has a search tool integrated into its document management. To search for a file use the menu :menuselection:`Document Management --> Search for a file`. You get to a document search screen that lets you search amongst all the attachments and all the documents in the FTP server.
 
 You can search for a file using various different criteria:
 
@@ -66,7 +66,7 @@ Working with users' changes
 
 To make the document management system's use as unobtrusive as possible the system's users should easily be able to store all the documents that they produce or receive from their customers and suppliers. So Open ERP supplies dashboards to help system users approve their acceptance of such documents.
 
-So you'll find two dashboards in the menu *Dashboards > Document Management* : one dashboard for the document management system manager and one dashboard for follwing use by different users.
+So you'll find two dashboards in the menu :menuselection:`Dashboards --> Document Management` : one dashboard for the document management system manager and one dashboard for follwing use by different users.
 
 The first lets you track the change of documents by month, by customer and by type of resource. You could also quickly assess the use that's made of the system by the various users.
 
@@ -89,7 +89,7 @@ There's usually a need to keep track of all the important documents that you hav
 
 To do this, Open ERP can automatically store as attachments the different reports printed by users. By default, only invoices are saved as attachments, and they're saved when they are printed.
 
-But you can configure the system so that it doesn't matter which type of report is printed. To activate that functionality on another type of report, modify this in the menu: *Administration > Configuration > Low Level > Actions > XML Reports*.
+But you can configure the system so that it doesn't matter which type of report is printed. To activate that functionality on another type of report, modify this in the menu :menuselection:`Administration --> Configuration --> Low Level --> Actions --> XML Reports`.
 
 .. figure::  images/document_report_modif.png
    :align: center

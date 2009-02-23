@@ -44,12 +44,12 @@ invoicing
 Estimation of the order
 =======================
 
-In Open ERP a quotation and an order are handled by the same object, but in different states. You can consider an order to be a quotation that has evolved because it has been confirmed by the customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled. All of the orders and quotations in the system can be reached using the menu *Sales Management > Orders*.
+In Open ERP a quotation and an order are handled by the same object, but in different states. You can consider an order to be a quotation that has evolved because it has been confirmed by the customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled. All of the orders and quotations in the system can be reached using the menu :menuselection:`Sales Management --> Orders`.
 
 Entering Quotation details
 --------------------------
 
-To enter details of a new quotations you can use the menu *Sales Management > Orders > New Quotation*. Open ERP then opens a new window so that you can enter data into new blank quotation form.
+To enter details of a new quotations you can use the menu :menuselection:`Sales Management --> Orders --> New Quotation`. Open ERP then opens a new window so that you can enter data into new blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
    :align: center
@@ -145,7 +145,7 @@ When all of the products are entered, you can print the quotation and send it to
 
    *Printing a customer quotation.*
 
-You can then confirm the quotation to move it on to an order if the order is confirmed by the customer, or just cancel the window without confirming the order to leave it in quotation state. To find all of the current quotations, you can use the menu *Sales Management > Orders > My Orders > My Quotations*.
+You can then confirm the quotation to move it on to an order if the order is confirmed by the customer, or just cancel the window without confirming the order to leave it in quotation state. To find all of the current quotations, you can use the menu :menuselection:`Sales Management --> Orders --> My Orders --> My Quotations`.
 
 To follow the process for your order, you can click on the process view from the order form. Open ERP then shows you an interactive process view of that order. For more information about its use, look at the chapter on Process.
 
@@ -276,7 +276,7 @@ Depending on the configuration of the order, several different possible conseque
 Packing mode
 ------------
 
-The packing mode determines the way that the storesperson will do the packing. If the order is put into *Partial Delivery* mode, the packing order will appear in the list of things for the storesperson to do as soon as one of the products on the order is available. To get the list of items to be done you can use the menu *Stock Management > Outgoing Products > Available Packings*.
+The packing mode determines the way that the storesperson will do the packing. If the order is put into *Partial Delivery* mode, the packing order will appear in the list of things for the storesperson to do as soon as one of the products on the order is available. To get the list of items to be done you can use the menu :menuselection:`Stock Management --> Outgoing Products --> Available Packings`.
 
 The storesperson will then be able to make a partial delivery of the quantities actually available and do a second packing later when the remaining products are available in stock.
 
@@ -302,7 +302,7 @@ To manage deliveries in Open ERP, install the ``delivery`` module. If you have i
 
 * the modes of transport and their tariffs.
 
-Once the delivery module has been installed, the first thing to do is to configure the different modes of delivery accepted by your company. To do that use the menu *Stock Management > Configuration > Deliveries > Methods of Delivery*.
+Once the delivery module has been installed, the first thing to do is to configure the different modes of delivery accepted by your company. To do that use the menu :menuselection:`Stock Management --> Configuration --> Deliveries --> Methods of Delivery`.
 
 For each delivery mode, you should define the following elements:
 
@@ -340,7 +340,7 @@ For example, for the postal tariffs for Priority Courier, you generally define t
 
 * Courier Outside Europe.
 
-To define a new delivery grid, use the menu *Stock Management > Configuration > Deliveries > Delivery List Price*. You must then give a name to your delivery grid and define the region for which the tariffs in the grid will be applicable. To do this, use the second tab *Destination*. There you can set:
+To define a new delivery grid, use the menu :menuselection:`Stock Management --> Configuration --> Deliveries --> Delivery List Price`. You must then give a name to your delivery grid and define the region for which the tariffs in the grid will be applicable. To do this, use the second tab *Destination*. There you can set:
 
 * A list of countries (for UK or Europe, for example),
 
@@ -441,7 +441,7 @@ Open ERP supports a third method of updating the cost price of products using th
 Margins by product
 ------------------
 
-To follow the margins by product, you should install the module ``product_margin``. Once the module is installed you can look at the margins by product using the menu *Products > Reporting > Margins by Product*.
+To follow the margins by product, you should install the module ``product_margin``. Once the module is installed you can look at the margins by product using the menu :menuselection:`Products --> Reporting --> Margins by Product`.
 
 When you've clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If no period is given, Open ERP will calculate margins on all of the operations without restriction. By default, however, Open ERP proposes a period of the last 12 months for analysis.
 
@@ -599,7 +599,7 @@ The prices on a pricelist can depend on another list, which means that you don't
 Creating pricelists
 -------------------
 
-To define a pricelist use the menu  *Products > Pricelists > Pricelists* .
+To define a pricelist use the menu :menuselection:`Products --> Pricelists --> Pricelists` .
 
 For each list you should define:
 
@@ -621,7 +621,7 @@ For each list you should define:
 Pricelist versions
 ^^^^^^^^^^^^^^^^^^
 
-Once the list is defined you must provide it with at least one version. To do that use the menu  *Products > Pricelists > Pricelist Versions* . The version contains all of the rules that enable you to calculate a price for a product and a given quantity.
+Once the list is defined you must provide it with at least one version. To do that use the menu :menuselection:`Products --> Pricelists --> Pricelist Versions`. The version contains all of the rules that enable you to calculate a price for a product and a given quantity.
 
 So set the  *Name*  of this associated version. If the list only has a single version you can use the same name for the pricelist and the version. In the  *Pricelist*  field select the pricelist you created.
 
@@ -844,7 +844,7 @@ Different bases for price calculation
 
 Open ERP's flexibility enables you to make prices that depend not only on prices on the product form, but in addition to those two predefined ones – standard price and catalog price.
 
-To do this use the menu *Products > Definitions > Price Types*. Create a new entry for the new price type. Enter the field name, the field on the product form that this type of price corresponds to and the currency that will be expressed in this field. The operation works just as well on new fields added to the product form to meet specific developments.
+To do this use the menu :menuselection:`Products --> Definitions --> Price Types`. Create a new entry for the new price type. Enter the field name, the field on the product form that this type of price corresponds to and the currency that will be expressed in this field. The operation works just as well on new fields added to the product form to meet specific developments.
 
 Once this operation has been carried out you can make pricelists depend on this new price type.
 
@@ -875,7 +875,7 @@ You can then propose a price based on the volume that the wholesaler agrees to s
 
 Rebates at the end of a campaign can help you avoid this sort of problem. You can propose a contract where the price is dependent on the usual wholesaler's terms. You can propose a rebate grid which will be assigned at the end of the year as a function of the actual sales made.
 
-Install the ``discount_campaign`` module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu *Sales Management > Configuration > Rebates at the end of a campaign*.
+Install the ``discount_campaign`` module to generate the rebates at the end of the campaign. Once the modules have been installed you can configure your campaign using the menu :menuselection:`Sales Management --> Configuration --> Rebates at the end of a campaign`.
 
 .. note:: Year-end rebate
 
@@ -902,7 +902,7 @@ Once the campaign has been defined you can assign a given campaign to various pa
 
 Finally at the end of the campaign you should close it and Open ERP will automatically generate invoices or credit notes for your partner associated with this campaign. Open ERP then opens credit notes in the draft state that you can modify before validating them. To calculate the amount on the credit note, Open ERP uses all of the invoices sent out during the period of the campaign as its basis.
 
-You can also reach all of the draft credit notes using the menu *Financial Management > Invoices > Customer Credit Notes*.
+You can also reach all of the draft credit notes using the menu :menuselection:`Financial Management --> Invoices --> Customer Credit Notes`.
 
 Open orders
 -----------

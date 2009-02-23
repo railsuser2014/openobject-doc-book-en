@@ -53,7 +53,7 @@ Then enter the data for some orders for these two partners. After entering this 
 
 Then you'll look at the assembly notes about these orders in the field 'Invoicing Mode' is automatically shown there. Then confirm the different orders in the list.
 
-At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu *Stock Management > Sorted List > List to invoice*. Choose the invoicing journal and all the lists of orders to invoice then open lin list5 view. It's then possible to automatically carry out invoicing by clicking the action *Invoice* (the gears symbol in the application client).
+At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the menu :menuselection:`Stock Management --> Sorted List --> List to invoice`. Choose the invoicing journal and all the lists of orders to invoice then open in list5 view. It's then possible to automatically carry out invoicing by clicking the action *Invoice* (the gears symbol in the application client).
 
 .. tip:: Confirming invoices
 

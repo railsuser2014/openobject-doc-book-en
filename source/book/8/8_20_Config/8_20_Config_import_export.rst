@@ -10,7 +10,7 @@ Every form in Open ERP has a standard mechanism for importing data from a CSV f
 
 	You have access to the Import and Export functions in the web client on a single form view in read-only mode – 
 	you can't reach Import or Export in any other view or when the form is editable. 
-	If you're using the GTK client you can find the functions from the top menu *Form > Import...* and *Form > Export...*.
+	If you're using the GTK client you can find the functions from the top menu :menuselection:`Form --> Import...` and :menuselection:`Form --> Export...`.
 
 The CSV file format is text format compatible with most spreadsheet programs (such as OpenOffice Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
@@ -181,9 +181,9 @@ Start by creating partner categories in a CSV file:
                    
                   *Column A* is for the different partner categories and *Column B* indicates if that category has a parent category. If  *Column B* is blank then the category sits at the top level.
 
-	#. Save spreadsheet file in CSV format – separated by commas – and name the file \ ``categories.csv``\  
+	#. Save spreadsheet file in CSV format – separated by commas – and name the file \ ``categories.csv``\.  
 
-	#. In Open ERP, select  *Partners > Configuration > Categories > Edit Categories* 
+	#. In Open ERP, select :menuselection:`Partners --> Configuration --> Categories --> Edit Categories`. 
 
 	#. Click  *Import* (to the bottom left of the list) to bring up the  *Import Data* dialog box, in which you'll find the ist of fields that can be imported.
 
@@ -191,7 +191,7 @@ Start by creating partner categories in a CSV file:
 
 	#. Click Import at the bottom-right of the dialog box to load your data. You should get the message \ ``4 objects imported``\  in a new dialog box. Close both this and the  *Import Data* dialog box to return to the original page.
 
-	#. Click  *Partners > Partners by category* to view the tree of categories, including the new \ ``Quality``\  branch that you loaded. 
+	#. Click :menuselection:`Partners --> Partners by category` to view the tree of categories, including the new \ ``Quality``\  branch that you loaded. 
 
 .. tip:: GTK dialog box for importing CSV files 
 
@@ -218,7 +218,7 @@ Here's how to create new partners with several contacts, and how to link them to
 
 	#. Save the file using the name \ ``partners.csv``\  
 
-	#. In penERP, select  *Partners > Partners* then import the file that you've just saved. You'll get a message confirming that you've imported and saved the data.
+	#. In penERP, select :menuselection:`Partners --> Partners` then import the file that you've just saved. You'll get a message confirming that you've imported and saved the data.
 
 	#. Verify that you've imported the data. A new partner should have appeared (\ ``NoirAdvertising), with a salesman (Administrator), two contacts (George Black and Jean Green) and two categories (Silver and Gold).``\  
 
@@ -239,7 +239,7 @@ You can use this to export your data into spreadsheets or into other systems suc
 
 To illustrate the export of data, you can follow the steps below to export information on a specific partner using the web client:
 
-	#. In Open ERP, select  *Partners > Partners* to show a list of partners. Search for a specific  *Name* (here, \ ``Black``\   to display only the one line.
+	#. In Open ERP, select :menuselection:`Partners --> Partners` to show a list of partners. Search for a specific  *Name* (here, \ ``Black``\   to display only the one line.
 
 	#. Click  *Export* to bring up the  *Export Data* dialog box.
 

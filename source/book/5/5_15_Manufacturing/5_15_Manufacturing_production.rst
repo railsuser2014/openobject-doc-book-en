@@ -110,14 +110,14 @@ TAQ000        12                 Unit
 
 .. tip:: Bill of Materials
 
-   To see the Bill of Materials in tree view, use the menu *Manufacturing > Configuration > Bill of Materials > Bill of Materials Structure*.
+   To see the Bill of Materials in tree view, use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materials --> Bill of Materials Structure`.
 
 .. figure:: images/mrp_bom_tree.png
    :align: center
 
    *Bill of Materials structure.*
 
-Use the menu *Manufacturing > Configuration > Bill of Materials > New Bill of Materials* to define a new Bill of Materials.
+Use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materials --> New Bill of Materials` to define a new Bill of Materials.
 
 .. tip::The different views
 
@@ -333,7 +333,7 @@ In Open ERP you can define several Bills of Materials for the same product. In f
 
 Once several Bill of Materials have been defined for a particular product it's necessary to have a system to enable Open ERP to select one of them for use. By default the Bill of Materials with the lowest sequence number is selected by the system.
 
-But to gain more control over the process during the sale or procurement, you can use *properties*. The menu *Production Management > Configuration > Properties* enables you to define properties, which are concept that can be defined arbitrarily to help in the selection of Bills of Materials when you have a choice of BoM.
+But to gain more control over the process during the sale or procurement, you can use *properties*. The menu :menuselection:`Production Management --> Configuration --> Properties` enables you to define properties, which are concept that can be defined arbitrarily to help in the selection of Bills of Materials when you have a choice of BoM.
 
 .. note:: Properties
 
@@ -396,9 +396,9 @@ Production orders can be suggested automatically by the system depending on seve
 
    *Automatically suggesting the production orders.*
 
-Clearly it's also possible to start production manually. To do this you can use the menu *Manufacturing > Production Orders > New Production Order*.
+Clearly it's also possible to start production manually. To do this you can use the menu :menuselection:`Manufacturing --> Production Orders --> New Production Order`.
 
-If you haven't installed the 'Just-In-Time' planning module ``mrp_jit``, you should start the calculation of requirements for Open ERP managed automatically the production order using the different system rules. To do this use the menu *Manufacturing > Calculate all requirements*.
+If you haven't installed the 'Just-In-Time' planning module ``mrp_jit``, you should start the calculation of requirements for Open ERP managed automatically the production order using the different system rules. To do this use the menu :menuselection:`Manufacturing --> Calculate all requirements`.
 
 Workflow for complete production
 =================================
@@ -429,7 +429,7 @@ The customer order
 
 .. index:: Quotation
 
-Begin by encoding a customer order. To do this, use the menu *Sales Management > Orders > New Quotation*. Enter the following information:
+Begin by encoding a customer order. To do this, use the menu :menuselection:`Sales Management --> Orders -> New Quotation`. Enter the following information:
 
 * Customer: Agrolait,
 
@@ -452,7 +452,7 @@ Once the quotation has been entered you can confirm it immediately by clicking t
 
    *Process for handling Sales Order SO007.*
 
-Start the requirements calculation using the menu *Manufacturing > Compute All Schedulers*.
+Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All Schedulers`.
 
 .. index::
    Semi Finished Product
@@ -473,7 +473,7 @@ You can see that manufacturing the PC2 computer must be done in two steps:
 
 2: Manufacture of the finished product using that intermediate product: PC2
 
-The manufacturing supervisor can then consult the product orders using the menu *Manufacturing > Production Orders > Production Orders to start*. You then get a list of orders to start and the estimated start date if the customer order date is not to be missed.
+The manufacturing supervisor can then consult the product orders using the menu :menuselection:`Manufacturing --> Production Orders --> Production Orders to start`. You then get a list of orders to start and the estimated start date if the customer order date is not to be missed.
 
 .. figure:: images/mrp_production_list.png
    :align: center
@@ -505,7 +505,7 @@ The production order must be in the closed state as shown in the figure below.
 Manufacture of finished product
 --------------------------------
 
-Having manufactured the intermediate product CPU_GEN, Open ERP then automatically suggests the manufacture of the computer PC2 using the order created earlier. So return to the menu for production orders to start *Manufacturing > Production Orders > Production Orders to start*.
+Having manufactured the intermediate product CPU_GEN, Open ERP then automatically suggests the manufacture of the computer PC2 using the order created earlier. So return to the menu for production orders to start :menuselection:`Manufacturing --> Production Orders --> Production Orders to start`.
 
 You'll now find the computer PC2 which has been sold to the customer, as shown in the figure below.
 
@@ -536,7 +536,7 @@ Delivery of product to the customer
    single: Picking
    single: Packing
 
-When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu *Stock Management > Outgoing Products > Available Packings*. You'll find there the lists of packing to do, as shown in the figure below.
+When the products have been manufactured, the storesperson automaticallys finds the order in his list of items to do. To see the items waiting for delivery, use the menu :menuselection:`Stock Management --> Outgoing Products --> Available Packings`. You'll find there the lists of packing to do, as shown in the figure below.
 
 .. figure:: images/mrp_packing_out.png
    :align: center
@@ -560,7 +560,7 @@ The packing orders are treated by priority of leaving so the storesperson must b
 Invoicing at delivery
 ----------------------
 
-Periodically the administrator or an accountant can send invoices based on the deliveries that have been carried out. To do that, you can use the menu *Stock Management > Outgoing Products > Items to Invoice*. You then get a list of all the deliveries that have been made but haven't yet been invoiced. 
+Periodically the administrator or an accountant can send invoices based on the deliveries that have been carried out. To do that, you can use the menu :menuselection:`Stock Management --> Outgoing Products --> Items to Invoice`. You then get a list of all the deliveries that have been made but haven't yet been invoiced. 
 
 So select some or all of the deliveries. Click on the action “Invoice pickings”. Open ERP asks if you want to group the deliveries from the same partner into a single invoice or if you prefer to invoice for each delivery individually.
 
@@ -581,7 +581,7 @@ Once you have reviewed the different invoices that were generated, you can confi
 Traceability
 -------------
 
-Now suppose that the customer phones you to tell you about a production fault in a delivered product. You can then consult the traceability through the whole manufacturing chain using the serial number indicate on the product MB1. To consult the detailed history, use the menu *Stock Management > Traceability > Production Lots*.
+Now suppose that the customer phones you to tell you about a production fault in a delivered product. You can then consult the traceability through the whole manufacturing chain using the serial number indicate on the product MB1. To consult the detailed history, use the menu :menuselection:`Stock Management --> Traceability --> Production Lots`.
 
 So find the product corresponding to the product or lot number. Once it's been found you can use the following actions:
 * Upstream traceability: go back through the entire production chain to various suppliers of the final customer.
@@ -606,7 +606,7 @@ Examples of the two traceability types are given in the by the following figures
 Production order in detail
 ===========================
 
-In this section production orders are detailed. To open a production order, use the menu *Manufacturing > Production Orders > New Product Order*. You get a blank for for encoding a new production order as shown in the figure below.
+In this section production orders are detailed. To open a production order, use the menu :menuselection:`Manufacturing --> Production Orders --> New Product Order`. You get a blank for for encoding a new production order as shown in the figure below.
 
 .. figure:: images/mrp_production_new.png
    :align: center
@@ -651,9 +651,9 @@ Once the production is complete, click 'Production Finished'. The finished produ
 Scheduling
 ===========
 
-Calculation requirements is the calculation engine which makes planning, prioritising and ?? automatically procurement as a function of the rules defined on these products. It's started once per day. You can also start it manually using the menu *Manufacturing > Calculate requirements*. This then uses the parameters defined in the products, the suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
+Calculation requirements is the calculation engine which makes planning, prioritising and ?? automatically procurement as a function of the rules defined on these products. It's started once per day. You can also start it manually using the menu :menuselection:`Manufacturing --> Calculate requirements`. This then uses the parameters defined in the products, the suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
 
-You can decide the starting time by modifying the corresponding action in the menu *Administration > Configuration > Planning > Planned Actions*. Modify the resource called 'Run MRP Scheduler'.
+You can decide the starting time by modifying the corresponding action in the menu :menuselection:`Administration --> Configuration --> Planning --> Planned Actions`. Modify the resource called 'Run MRP Scheduler'.
 
 .. figure:: images/stock_cron.png
    :align: center

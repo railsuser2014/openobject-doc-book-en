@@ -127,7 +127,7 @@ Following a customer sales order
 ----------------------------------
 
 The example below shows the process for handling a customer sales order. Use
-the menu *Sales Management > Sales Orders* to list all orders, then choose
+the menu :menuselection:`Sales Management --> Sales Orders` to list all orders, then choose
 Order SO001 – you can either check the checkbox to its left, or you can open
 the order itself by clicking the order date to the left of its name in the
 list.
@@ -212,8 +212,9 @@ reflects the specific situation of the company and its documents.
 New employee induction
 -----------------------
 
-Open the employee form for Fabien Pinckaers from the menu *Human Resources >
-Employees > All Employees*. Click the *Process* button to open the detailed
+Open the employee form for Fabien Pinckaers from the menu 
+:menuselection:`Human Resources --> Employees --> All Employees`. 
+Click the *Process* button to open the detailed
 process of engagement.
 
 .. figure:: images/process_employee_flow.png
@@ -316,7 +317,7 @@ editor. This enable you to modify them through the client interface.
 
 You'll only handle the process editor in this chapter. If you want to test the
 workflow editor click on the link to the bottom left of a document and select
-the menu *Customize > Manage Workflows*. Open ERP opens a graphical editor to
+the menu :menuselection:`Customize --> Manage Workflows`. Open ERP opens a graphical editor to
 modify the workflow for the selected document type.
 
 .. figure:: images/process_workflow_editor.png
@@ -325,8 +326,9 @@ modify the workflow for the selected document type.
    *Workflow editor modifying the behaviour of invoices.*
 
 The workflow editor is only available in Open ERP's web client. If you use the
-GTK client you can use the menus in *Administration > Low Level Objects >
-Workflow Items*. These are text-based not graphical.
+GTK client you can use the menus in 
+:menuselection:`Administration --> Low Level Objects --> Workflow Items`. 
+These are text-based not graphical.
 
 Using processes effectively
 ----------------------------
@@ -389,7 +391,7 @@ from the process and then see the consequences in real time at a macro level.
 Defining your own user processes
 ---------------------------------
 
-Use the menus under *Administration > Customization > Enterprise Processes* To
+Use the menus under :menuselection:`Administration --> Customization --> Enterprise Processes` to
 define new processes or modify existing processes. When entering a process,
 Open ERP shows you the list of states available for that process.
 

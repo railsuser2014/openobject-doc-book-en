@@ -124,7 +124,7 @@ Workcenters represent units of product, capable of doing material transformation
     Workcenters are units of manufacture consisting of one or several people and/or machines 
     that can be considered as a unit for the purposes of forecasting capacity and planning.
 
-Use the menu *Manufacturing > Configuration > Workcenters* to define a new workcenter. You get a form as shown in the figure below.
+Use the menu :menuselection:`Manufacturing --> Configuration --> Workcenters` to define a new workcenter. You get a form as shown in the figure below.
 
 .. figure:: images/mrp_workcenter.png
    :align: center
@@ -185,7 +185,7 @@ Routing
 
 Routings define the assembly operations to be done in workcenters for manufacturing a certain product. They are usually attached to Bills of Materials which will define the assembly of products required for manufacture or for finished products.
 
-A routing can be defined directly in a Bill of Materials or through the menu *Manufacturing > Configuration > Routings*. A routing has a name, a code and a description. Later in this chapter you'll see that a routing can also be associated with a stock location. That enable you to indicate where assembly takes place.
+A routing can be defined directly in a Bill of Materials or through the menu :menuselection:`Manufacturing --> Configuration --> Routings`. A routing has a name, a code and a description. Later in this chapter you'll see that a routing can also be associated with a stock location. That enable you to indicate where assembly takes place.
 
 .. figure:: images/mrp_routing.png
    :align: center
@@ -215,7 +215,7 @@ So if you use routings, Open ERP automatically calculates the operations require
 
 But the routings also enable you to manage your production capacity. You will be able to leave the demand charts for the days / weeks / months ahead to validate that you don't forecast more than you are capable of producing.
 
-To see a demand chart, list the workcenters using the menu *Manufacturing > Configuration > Workcenters*. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
+To see a demand chart, list the workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Workcenters`. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
 .. figure:: images/mrp_workcenter_load.png
    :align: center
@@ -240,7 +240,7 @@ Management of operations
 
    Operations are often called work orders.
 
-To work using work orders you must install the optional module ``mrp_operations``. Once the module is installed you'll find a new menu called *Manufacturing > Operations > Operations* to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
+To work using work orders you must install the optional module ``mrp_operations``. Once the module is installed you'll find a new menu called :menuselection:`Manufacturing --> Operations --> Operations` to be carried out. The assembly workers must then encode each step operation by operation and, for each step, the real working time for it.
 
 .. figure:: images/mrp_operations_tree.png
    :align: center
@@ -277,9 +277,9 @@ If the company wants to work with barcodes in manufacturing you can work on each
 
 * Cancelling an operation.
 
-You place barcodes on the production orders on the machines or operators and a form of barcodes representing the events. To print barcodes select the events using the menu *Manufacturing > Configuration > Codes from start to finish*. Then click for printing the barcodes for the selected events. You can do the same for printing barcodes for the workcenters using the menu *Manufacturing > Configuration > Workcenters*.
+You place barcodes on the production orders on the machines or operators and a form of barcodes representing the events. To print barcodes select the events using the menu :menuselection:`Manufacturing --> Configuration --> Codes from start to finish`. Then click for printing the barcodes for the selected events. You can do the same for printing barcodes for the workcenters using the menu *Manufacturing > Configuration > Workcenters*.
 
-Using the system these operations don't need data to be entered on the keyboard. To use these barcodes, open the menu *Manufacturing > Barcode events*. You must then scan, in order:
+Using the system these operations don't need data to be entered on the keyboard. To use these barcodes, open the menu :menuselection:`Manufacturing --> Barcode events`. You must then scan, in order:
 
 #. The barcode of the production order,
 
@@ -317,7 +317,7 @@ Delivery of raw materials to the stores for the supplier,
 
 Production order for the products at the suppliers and receipt of the finished products in the stores.
 
-Once the production order has been confirmed, Open ERP automatically generates a delivery order to send to the raw materials supplier. The storesperson can access this delivery order using the menu *Stock Management > Incoming Products*. The raw materials will then be placed in stock at the supplier's stores.
+Once the production order has been confirmed, Open ERP automatically generates a delivery order to send to the raw materials supplier. The storesperson can access this delivery order using the menu :menuselection:`Stock Management --> Incoming Products`. The raw materials will then be placed in stock at the supplier's stores.
 
 Once the delivery of raw materials has been confirmed, Open ERP activates the production order. The supplier uses the raw materials sent to produce the finished goods which will automatically be put in your own stores. The confirmation of this manufacture is made when you receive the products from your supplier. It's then that you indicate the quantities consumed by your supplier
 
@@ -325,7 +325,7 @@ Once the delivery of raw materials has been confirmed, Open ERP activates the pr
 
    If you don't use routing you can always subcontract work orders by creating an empty routing in the subcontract bill of materials.
 
-Production orders are found in the menu *Manufacture > Production Orders > Production Orders to start*. A production order is always carried out in two stages:
+Production orders are found in the menu :menuselection:`Manufacture --> Production Orders --> Production Orders to start`. A production order is always carried out in two stages:
 
 #. Consumption of raw materials
 
@@ -336,7 +336,7 @@ Depending on the company's needs, you can specify that the first step is confirm
 Treatment of exceptions
 =======================
 
-The set of stock requirements is generated by procurement orders. Then for each customer order line or raw materials in a manufacturing order, you will find a restocking form. To review all the procurement orders use the menu *Manufacturing > Procurement orders*.
+The set of stock requirements is generated by procurement orders. Then for each customer order line or raw materials in a manufacturing order, you will find a restocking form. To review all the procurement orders use the menu :menuselection:`Manufacturing --> Procurement orders`.
 
 In normal system use, you don't need to worry about procurement orders because they're automatically generated by Open ERP and the user will usually work on the results of a procurement: a production order, a task or a supplier order.
 
@@ -354,9 +354,9 @@ Possible problems include:
 
 Some problems are just those of timing and can be automatically corrected by the system. That's why Open ERP has the two following menus:
 
-* *Manufacturing > Automatic Procurement > Procurement Exceptions > Exceptions to correct*,
+* :menuselection:`Manufacturing --> Automatic Procurement --> Procurement Exceptions --> Exceptions to correct`,
 
-* *Manufacturing > Automatic Procurement > Procurement Exceptions > Temporary exceptions*.
+* :menuselection:`Manufacturing --> Automatic Procurement --> Procurement Exceptions --> Temporary exceptions`.
 
 If a product must be 'in stock' but is not available in your stores, Open ERP will make the exception in 'temporary' or 'to be corrected'. The exception is temporary if the system can procure it automatically, for example if a procurement rule is defined for minimum stock.
 
@@ -370,7 +370,7 @@ If no procurement rule is defined the exception must be corrected manually by th
 Manual procurement
 ==================
 
-To procure internally, you can create a procurement order manually. Use the menu *Manufacturing > Procurement Orders > New Procurement* to do this.
+To procure internally, you can create a procurement order manually. Use the menu :menuselection:`Manufacturing --> Procurement Orders --> New Procurement` to do this.
 
 .. figure:: images/mrp_procurement.png
    :align: center
@@ -441,17 +441,17 @@ Management of repairs
 
 The management of repairs is carried out using the module ``mrp_repair``. Once it's installed this module adds new menus to the Manufacturing menu:
 
-* *Manufacturing > Repairs*
+* :menuselection:`Manufacturing --> Repairs`
 
-* *Manufacturing > Repairs > Repairs in quotation*
+* :menuselection:`Manufacturing --> Repairs --> Repairs in quotation`
 
-* *Manufacturing > Repairs > Repairs in progress*
+* :menuselection:`Manufacturing --> Repairs --> Repairs in progress`
 
-* *Manufacturing > Repairs > Repairs Ready to Start*
+* :menuselection:`Manufacturing --> Repairs --> Repairs Ready to Start`
 
-* *Manufacturing > Repairs > Repairs to be invoiced*
+* :menuselection:`Manufacturing --> Repairs --> Repairs to be invoiced`
 
-* *Manufacturing > Repairs > New Repair*
+* :menuselection:`Manufacturing --> Repairs --> New Repair`
 
 In Open ERP a repair will have the following effects:
 
@@ -472,7 +472,7 @@ In Open ERP a repair will have the following effects:
 Entering data for a new repair
 ------------------------------
 
-Use the menu *Manufacturing > Repairs > New Repair* to enter a new repair into the system. You'll see a blank form for the repair data, as shown in the figure below.
+Use the menu :menuselection:`Manufacturing --> Repairs --> New Repair` to enter a new repair into the system. You'll see a blank form for the repair data, as shown in the figure below.
 
 .. figure:: images/mrp_repair_new.png
    :align: center
@@ -536,7 +536,7 @@ A defined process handles a repair order – both the repair itself and invoicin
 
 Once a repair has been entered onto the system, it is in the 'draft' state. In this state it has no impact on the rest of the system. You can print a quotation from it using the action 'Print Quotation'. The repair quotation can then be sent to the customer.
 
-Once the customer approves the repair, use the menu *Manufacturing > Repairs > Repairs in quotation* to find the draft repair. Click to confirm the draft repair and put it into the running state. You can specify the invoicing mode in the second tab:
+Once the customer approves the repair, use the menu :menuselection:`Manufacturing --> Repairs --> Repairs in quotation` to find the draft repair. Click to confirm the draft repair and put it into the running state. You can specify the invoicing mode in the second tab:
 
 * no invoicing,
 
