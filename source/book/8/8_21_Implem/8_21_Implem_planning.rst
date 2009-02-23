@@ -39,7 +39,7 @@ Planning methods vary in their degree of complexity, formality and level of auto
 
 Open ERP's menus are organized to lead you through an implementation in a sensible order, so that information that has to be entered first is encountered first in the menu system. Forms are also organized so that if you enter data in the natural order you'll get later fields completed automatically by the earlier ones where possible. And demonstration data illustrates how Open ERP's functional areas are linked from one to the other
 
-The menus themselves hint at several helpful implementation suggestions, for example the submenus of *Administration > Configuration* are useful for the configuration of the software. New functions such as the Module Recorder enable you to significantly accelerate the configuration of data.
+The menus themselves hint at several helpful implementation suggestions, for example the submenus of :menuselection:`Administration --> Configuration` are useful for the configuration of the software. New functions such as the Module Recorder enable you to significantly accelerate the configuration of data.
 
 External modules, such as the Implementation Planner module \ ``implem``\   which helps you develop high level implementation plans are also being produced by third-party developers. These plans, designed for managing or investigating Open ERP, detail the software structure and the different steps required by your implementation.
 

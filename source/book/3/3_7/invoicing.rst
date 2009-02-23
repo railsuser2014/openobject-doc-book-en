@@ -65,7 +65,7 @@ The principle of entering data for invoices in Open ERP is very simple, as it e
 
 At the same time it allows people who have more accounting knowledge to keep full control over the accounting entries that are being generated. Each value proposed by Open ERP can be modified later if needed. 
 
-Start by manually entering a customer invoice. Use  *Financial Management > Invoices > Customer Invoices*  for this.
+Start by manually entering a customer invoice. Use :menuselection:`Financial Management --> Invoices --> Customer Invoices` for this.
 
 A new invoice form opens for entering information.
 

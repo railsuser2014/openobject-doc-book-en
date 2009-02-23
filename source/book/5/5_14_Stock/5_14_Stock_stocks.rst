@@ -104,7 +104,7 @@ The correct levels of your product are now in your stock locations. A simple way
 Receipt of a supplier order
 ---------------------------
 
-Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu *Stock Management > Incoming Goods > Items to be Processed*. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
+Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management process. You'll find a list of all the awaited receipts in the menu :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed`. Use the order number or the supplier name to find the right goods receipt form for confirmation of a goods in. This approach enables you to control quantities received by referring to the quantities ordered.
 
 .. figure:: images/stock_picking_in_tree.png
    :align: center
@@ -156,7 +156,7 @@ You've seen already that Open ERP shows you the available product stock when you
 
 Then confirm the quotation to convert it to an order. If you return to the product form you'll see the virtual stock is now smaller than the real stock. That happens because three products have been reserved by the order that you created, so they can't be sold to another customer.
 
-Start the scheduler through the menu :menuselection:`Manufacturing > Compute All Schedulers`. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
+Start the scheduler through the menu :menuselection:`Manufacturing --> Compute All Schedulers`. Its functionality will be detailed in the chapter about Manufacturing. This manages the reservation of products and places orders based on the dates promised to customers, and the various internal lead times and priorities.
 
 .. tip:: Just in Time
 

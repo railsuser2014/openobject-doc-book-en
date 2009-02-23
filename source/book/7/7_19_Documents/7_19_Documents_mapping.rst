@@ -22,7 +22,7 @@ For example you can look at the directory shown in :menuselection:`Main Reposito
 
    *Directories representing all the orders in the document management system.*
 
-Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the directory :menuselection:`Main Repository > Projects` you'll see the structure of the analytic accounts.
+Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the directory :menuselection:`Main Repository --> Projects` you'll see the structure of the analytic accounts.
 
 To define a directory containing a specific type of resource you have to define parameters when you define the directory itself:
 

@@ -110,7 +110,7 @@ In the following sections you'll see how to assign partners to categories manual
 
 Use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit Categories` to define a new category.
 
-To try Open ERP's partner capabilities described here for yourself, log into the \ ``openerp_ch04``\   database as \ ``admin/admin``\   then click :menuselection:`Partners --> Configuration --> Categories > Edit Categories` and create a new category of \ ``Small Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new  *Partner*  whose  *Name*  is \ ``Susan Trent ``\  and category is \ ``Small Suppliers``\  . 
+To try Open ERP's partner capabilities described here for yourself, log into the \ ``openerp_ch04``\   database as \ ``admin/admin``\   then click :menuselection:`Partners --> Configuration --> Categories --> Edit Categories` and create a new category of \ ``Small Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new  *Partner*  whose  *Name*  is \ ``Susan Trent ``\  and category is \ ``Small Suppliers``\  . 
 
 Click :menuselection:`Partners --> Partners by Category` and then click :menuselection:`Suppliers --> Small Suppliers` to find just \ ``Susan Trent``\  . Do this again but now click the  *Suppliers*  category in  *Partners by Category*  and you'll find that both \ ``Plumbing Component Suppliers``\  and \ ``Susan Trent``\   are in the higher-level category: \ ``Susan Trent``\  is there because she's in a child category.
 

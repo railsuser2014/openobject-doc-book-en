@@ -25,7 +25,7 @@ Modeling a new report
 
 Open ERP gives you the possibility of developing your own analyses to meet your specific needs. To define a new analysis of the system's data you should install the module \ ``base_report_creator``\  . This enables you to create complex queries on the database, in a simple and visual way. 
 
-Once the module is installed, create a new report using the menu  *Dashboards > Configuration > Custom Reports* .
+Once the module is installed, create a new report using the menu :menuselection:`Dashboards --> Configuration --> Custom Reports`.
 
 Give a  *Report Name*  to your new report and select the objects that you're going to analyze. For example, select the three following objects:  *Partner* ,  *Sale Order* ,  *Sale Order line* .
 
@@ -81,11 +81,13 @@ You can now  *Save*  the report you defined. Click on the  *Open Report*  button
    *Analyzing sales by partner and by product in graph view.*
 
 .. index::
-   single: Personalizing; Dashboards
+   single: Configuring; Dashboards
 .. 
 
-Personalizing the dashboards
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configuring the dashboards
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo: What is this for?
 
  *Dashboards > Configuration > Dashboard definition* 
 
@@ -152,7 +154,7 @@ To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip
 
    *Menu TinyReport in OpenOffice.org Writer.*
 
-Start OpenOffice.org Writer, select  *Tools > Package Management...*  to open the Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it. Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny Report*  or  *Open ERP Report* .
+Start OpenOffice.org Writer, select :menuselection:`Tools --> Package Management...`  to open the Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it. Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny Report*  or  *Open ERP Report* .
 
 .. index::
    single: Report; OpenOffice.org
@@ -161,7 +163,7 @@ Start OpenOffice.org Writer, select  *Tools > Package Management...*  to open th
 Connecting OpenOffice.org to Open ERP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Select Tiny Report > Server parameters or Open ERP Report > Server parameters in the top menu of OpenOffice.org Writer. You can then enter your connection parameters to the Open ERP server. You must select a database \ ``demo_min``\   in which you've already installed the module \ ``sale``\  . A message appears if you've made a successful connection.
+Select :menuselection:`OpenERP Report --> Server parameters` in the top menu of OpenOffice.org Writer. You can then enter your connection parameters to the Open ERP server. You must select a database \ ``demo_min``\   in which you've already installed the module \ ``sale``\  . A message appears if you've made a successful connection.
 
 .. index::
    single: Report; Modify
@@ -176,7 +178,7 @@ The report editor lets you:
 
 * create new reports for the selected object.
 
-To modify an existing report, select  *Tiny Report > Modify Existing Report* . Choose the report \ ``Request for Quotation``\   in the  *Modify Existing Report*  dialog box and then click  *Save to Temp Directory* .
+To modify an existing report, select  *OpenERP Report --> Modify Existing Report`. Choose the report:menuselection:`Request for Quotation` in the  *Modify Existing Report*  dialog box and then click  *Save to Temp Directory* .
 
 .. figure::  images/openoffice_quotation.png
    :align: center
@@ -192,7 +194,7 @@ The document is modified in its English version. It will be translated as usual 
 	The older reports may not all have been converted into the new form supported by Open ERP. 
 	Data expressions in the old format are shown within double brackets and not in OpenOffice.org fields.
 
-	You can transform an old report format to the new format from the OpenOffice.org menu *Tiny Report > Convert Bracket–Fields*.
+	You can transform an old report format to the new format from the OpenOffice.org menu :menuselection:`OpenERP Report --> Convert Bracket–Fields`.
 
 From the Tiny toolbar in OpenOffice.org it's possible to:
 
@@ -217,9 +219,9 @@ From the Tiny toolbar in OpenOffice.org it's possible to:
 
 .. todo:: - I don't quite know what to do with this below, yet. I suspect it's a spec for a bit of writing.
 
- *Tiny Report > Send to server*  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
+ :menuselection:`OpenERP Report --> Send to server`  *Technical Name*  *Report Name* \ ``Sale Order Mod``\   *Corporate Header*  *Send Report to Server* 
 
-You can check the result in Open ERP using the menu  *Sales Management > Sales Orders > All Orders* .
+You can check the result in Open ERP using the menu :menuselection:`Sales Management --> Sales Orders --> All Orders`.
 
 .. index::
    single: Report; New
@@ -228,13 +230,15 @@ You can check the result in Open ERP using the menu  *Sales Management > Sales 
 Creating a new report
 ^^^^^^^^^^^^^^^^^^^^^
 
- *Tiny Report > Open a new report* \ ``Sale Order``\   *Open New Report*  *Use Model in Report* 
+.. todo:: Another loose spec
+
+ :menuselection:`OpenERP Report --> Open a new report` \ ``Sale Order``\   *Open New Report*  *Use Model in Report* 
 
 The general template is made up of loops (such as the list of selected orders) and fields from the object, which can also be looped. Format them to your requirements then save the template.
 
 The existing report templates make up a rich source of examples. You can start by adding the loops and several fields to create a minimal template. 
 
-When the report has been created, send it to the server by clicking  *Tiny Report > Send to server* , which brings up the  *Send to server*  dialog box. Enter the  *Technical Name*  of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in  *Report Name* , check the checkbox  *Corporate Header*  and finally click  *Send Report to Server* .
+When the report has been created, send it to the server by clicking :menuselection:`OpenERP Report --> Send to server`, which brings up the  *Send to server*  dialog box. Enter the  *Technical Name*  of \ ``sale.order``\  , to make it appear beside the other sales order reports. Rename the template as \ ``Sale Order New``\   in  *Report Name* , check the checkbox  *Corporate Header*  and finally click  *Send Report to Server* .
 
 To send it to the server, you can specify if you prefer Open ERP to produce a PDF when the user prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org documents) in the field  *Select Report Type* .
 

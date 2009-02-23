@@ -16,14 +16,14 @@ dedicated just to that. That enables you to:
 
 * simplify migrations, if you have modified some elements of the basic configuration, there's a risk in returning them to their original state after the migration, unless you've saved the modifications in a module.
 
-Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu  *Administration > Modules Management > Modules Recording > Start Recording* . Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen personalization, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
+Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu :menuselection:`Administration --> Modules Management --> Modules Recording --> Start Recording`. Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen personalization, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
 
-Once you've done all this, go to the menu  *Administration > Modules Management > Modules Recording > Save Recorded Module* . 
+Once you've done all this, go to the menu :menuselection:`Administration --> Modules Management --> Modules Recording --> Save Recorded Module`. 
 
 .. note:: Contributing to the development of Open ERP 
 
 	Once your personal configuration has been saved into a module, install the module ``base_module_publish``. 
-	This gives you a new possible action Publish Module in the menu *Administration > Modules Manage > Modules*. 
+	This gives you a new possible action Publish Module in the menu :menuselection:`Administration --> Modules Manage --> Modules`. 
 
 	Use this function to publish your module on the official Open ERP site. 
 	It could then be reused by other companies that have the same needs as yours. 
@@ -33,7 +33,7 @@ Once you've done all this, go to the menu  *Administration > Modules Management 
 
 Open ERP then creates a ZIP file for you containing all of the modifications you made while you were carrying out your configuration work. You could reinstall this module on other databases and/or publish it online to help other companies. This could turn out to be useful if you want to install a test server for your company's users and give them the same configuration as the production server.
 
-To install a new module saved in ZIP file form, use the menu  *Administration > Modules Management > Import a new module* .
+To install a new module saved in ZIP file form, use the menu :menuselection:`Administration --> Modules Management --> Import a new module`.
 
 
 .. Copyright © Open Object Press. All rights reserved.

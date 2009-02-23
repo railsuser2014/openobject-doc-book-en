@@ -137,7 +137,7 @@ The accuracy of the services entered is crucial for calculating the profitabilit
 
 	The value in this field shows employees the cost of their time used in the company, so masking this field might not always be the best option.
 
-Managers can draw on different reports for managing timesheets quite easily. You can print a summary in the form of a table per user and per day in the menu  *Human Resources > Reporting > Timesheet > Print Summary Timesheet* . This helps you spot when an employee has forgotten to encode her timesheet on a certain day.
+Managers can draw on different reports for managing timesheets quite easily. You can print a summary in the form of a table per user and per day in the menu :menuselection:`Human Resources --> Reporting --> Timesheet --> Print Summary Timesheet`. This helps you spot when an employee has forgotten to encode her timesheet on a certain day.
 
 .. figure::  images/service_timesheet_all.png
    :align: center

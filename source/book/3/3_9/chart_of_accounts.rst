@@ -134,7 +134,7 @@ The most interesting thing about virtual charts of accounts is that they can be 
 	So there are good reasons for viewing the execution of financial transactions through virtual charts, 
 	such as budgets and financial indicators based on special views of the company.
 
-To create a new chart of accounts you should create a root account using the menu :menuselection:`Financial Management --> Configuration --> General Accounts --> Accounts Definition`. Your top level account should have  *Code* \ ``0``\   and  *Type* \ ``View``\  . Then you can choose your structure by creating other accounts of  *Type* \ ``View``\   as necessary. Check your virtual structure using the menu  *Financial Management > Charts > Charts of Accounts* .
+To create a new chart of accounts you should create a root account using the menu :menuselection:`Financial Management --> Configuration --> General Accounts --> Accounts Definition`. Your top level account should have  *Code* \ ``0``\   and  *Type* \ ``View``\  . Then you can choose your structure by creating other accounts of  *Type* \ ``View``\   as necessary. Check your virtual structure using the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts`.
 
 Finally, when you've got your structure, you must make the general accounts and virtual accounts match. For that search the general accounts and ensure that each non-\ ``View``\   account there also has a virtual account in the field  *Parents* .
 

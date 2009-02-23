@@ -228,7 +228,7 @@ The adjustment option enables you to reconcile entries even if their amounts are
 Manual reconciliation
 ^^^^^^^^^^^^^^^^^^^^^
 
-For manual reconciliation, open the entries for reconciling an account through the menu :menuselection:`Financial Management --> Periodical Processing --> Reconciliation > Manual Reconciliation`. You can also call up manual reconciliation from any screen that shows accounting entries.
+For manual reconciliation, open the entries for reconciling an account through the menu :menuselection:`Financial Management --> Periodical Processing --> Reconciliation --> Manual Reconciliation`. You can also call up manual reconciliation from any screen that shows accounting entries.
 
 Select entries that you want to reconcile. From the selection, Open ERP indicates the sum of debits and credits for the selected entries. When these are equal you can click the  *Reconcile Entries*  button to reconcile the entries.
 

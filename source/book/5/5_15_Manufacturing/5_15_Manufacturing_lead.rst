@@ -277,7 +277,7 @@ If the company wants to work with barcodes in manufacturing you can work on each
 
 * Cancelling an operation.
 
-You place barcodes on the production orders on the machines or operators and a form of barcodes representing the events. To print barcodes select the events using the menu :menuselection:`Manufacturing --> Configuration --> Codes from start to finish`. Then click for printing the barcodes for the selected events. You can do the same for printing barcodes for the workcenters using the menu *Manufacturing > Configuration > Workcenters*.
+You place barcodes on the production orders on the machines or operators and a form of barcodes representing the events. To print barcodes select the events using the menu :menuselection:`Manufacturing --> Configuration --> Codes from start to finish`. Then click for printing the barcodes for the selected events. You can do the same for printing barcodes for the workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Workcenters`.
 
 Using the system these operations don't need data to be entered on the keyboard. To use these barcodes, open the menu :menuselection:`Manufacturing --> Barcode events`. You must then scan, in order:
 
@@ -582,7 +582,7 @@ When the repair is ready to be confirmed, Open ERP will generate the following s
 
 * Put faulty PANLAT into suitable stock location: *Default Production > Defective Products*,
 
-* Consume PANLAT:*Stock > Default production*.
+* Consume PANLAT: *Stock > Default production*.
 
 If you analyze the traceability of this lot number you'll see all the repair operations in the upstream and downstream traceability lists of the products concerned.
 
