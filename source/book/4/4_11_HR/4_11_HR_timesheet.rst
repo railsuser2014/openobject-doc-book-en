@@ -99,12 +99,14 @@ And each company job position corresponds to a *Product* .
 Entering timesheet data
 ------------------------
 
-To be able to use timesheets, you should install the module \ ``hr_timesheet``\  . Once this module has been installed and the employees configured, the different system users can enter their timesheet data in the menu  *Human Resources > Hours Encoding > For me > My Works of the Day* .
+To be able to use timesheets, you should install the module \ ``hr_timesheet``\  . Once this module has been installed and the employees configured, the different system users can enter their timesheet data in the menu :menuselection:`Human Resources --> Hours Encoding --> For me --> My Works of the Day`.
 
 .. tip:: Shortcut to timesheets 
 
 	It's a good idea if all employees who use timesheets place this menu in their shortcuts. 
 	That's because they'll need to return to them several times each day.
+
+.. todo:: What's this about 'New' and 'Description' ?
 
  *New* 
 
@@ -124,9 +126,9 @@ The hours are then encoded throughout the day by each employee. It helps to revi
 
 The accuracy of the services entered is crucial for calculating the profitability of the different jobs and the recharging of services. Different reports are therefore available for verifying employees' data entry. Employees can verify their own timesheet using the following reports:
 
-* Printing the timesheets per month, using the menu  *Human Resources > Reporting > Timesheet > Print My Timesheet* .
+* Printing the timesheets per month, using the menu :menuselection:`Human Resources --> Reporting --> Timesheet --> Print My Timesheet`.
 
-* Reviewing all service entries using the menu  *Human Resources > Hours Encoding > For Me > All My Work* . You can then use the filters to analyze your services by project, by period or by product.
+* Reviewing all service entries using the menu :menuselection:`Human Resources --> Hours Encoding --> For Me --> All My Work`. You can then use the filters to analyze your services by project, by period or by product.
 
 .. tip:: Hiding service costs
 
@@ -142,7 +144,7 @@ Managers can draw on different reports for managing timesheets quite easily. You
 
    *Employee's monthly summary timesheet.*
 
-Many graphs are available through the menus  *Human Resources > Reporting > This Month / All Months* , for example:
+Many graphs are available through the menus :menuselection:`Human Resources --> Reporting --> This Month / All Months`, for example:
 
 *  *Timesheet by User* 
 
@@ -239,7 +241,7 @@ In such a situation, hours that aren't coded into the timesheets represent lost 
 
 This module supplies a new screen enabling you to manage timesheets by period. Timesheet entries are made by employees each day. At the end of the week, employees validate their week's sheet and it's then passed to the services manager, who must approve his team's entries. Periods are defined in the company forms, and you can set them to run monthly or weekly.
 
-To enter timesheet data each employee uses the menu  *Human Resources > Timesheets > My Timesheets > My Current Timesheet* .
+To enter timesheet data each employee uses the menu :menuselection:`Human Resources --> Timesheets --> My Timesheets --> My Current Timesheet`.
 
 .. figure::  images/service_timesheet_sheet_form.png
    :align: center
@@ -261,9 +263,9 @@ The third tab,  *By account*  shows the time worked on all the different project
 
 At the end of the week or the month, the employee confirms his timesheet. If the attendance time in the company corresponds to the encoded entries, the whole timesheet is then confirmed and sent to his department manager, who is then responsible for approving it or asking for corrections.
 
-Each manager can then look at a list of his department's timesheets waiting for approval using the menu  *Human Resource > Timesheets > My Department's Timesheets > Timesheets to validate* . He then has to approve them or return them to their initial state.
+Each manager can then look at a list of his department's timesheets waiting for approval using the menu :menuselection:`Human Resource --> Timesheets --> My Department's Timesheets --> Timesheets` to validate* . He then has to approve them or return them to their initial state.
 
-To define the departmental structure, use the menu  *Administration > Users > Department Structure > Define Departments.* 
+To define the departmental structure, use the menu :menuselection:`Administration --> Users --> Department Structure --> Define Departments`. 
 
 .. tip:: Timesheet approval
 

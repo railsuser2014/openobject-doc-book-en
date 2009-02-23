@@ -28,7 +28,7 @@ Here are some examples of functions which depend on the list of employees:
 Management of staff
 -------------------
 
-To define a new employee in Open ERP, use the menu  *Human Resources > Employees > New Employee* .
+To define a new employee in Open ERP, use the menu :menuselection:`Human Resources --> Employees --> New Employee`.
 
 .. figure::  images/service_employee_form.png
    :align: center
@@ -70,7 +70,7 @@ Then type in the following information about the employee's working contract:
 
    *Timesheet category for full time 38 hours per week.*
 
-The different timesheet categories can be defined in the menu  *Human Resources > Configuration > Timesheet Categories* .
+The different timesheet categories can be defined in the menu :menuselection:`Human Resources --> Configuration --> Timesheet Categories`.
 
 Management of employment contracts
 ----------------------------------
@@ -103,11 +103,9 @@ You can enter information about the employment contract for the employee there.
 Sign in and out
 ---------------
 
-In some companies, staff have to sign in when they arrive at work and sign out again at the end of the day. If each employee has been linked to a system user, then they can sign in on Open ERP by using the menu  *Human Resources > Attendances > Sign in / Out* .
+In some companies, staff have to sign in when they arrive at work and sign out again at the end of the day. If each employee has been linked to a system user, then they can sign in on Open ERP by using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Out`.
 
-If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually and type in the time that they left when they come in again the next day. The gives you a simple way of managing forgotten sign-outs.
-
- *Human Resources > Employees* 
+If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually and type in the time that they left when they come in again the next day. The gives you a simple way of managing forgotten sign-outs, :menuselection:`Human Resources --> Employees`.
 
 To get the detail of attendances from an employee's form in Open ERP you can use the three available reports:
 

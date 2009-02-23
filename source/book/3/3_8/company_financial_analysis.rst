@@ -27,7 +27,7 @@ Management Indicators
 
 To define accounting indicators in Open ERP you should install the module \ ``account_report``\  . When installing the module the usual financial indicators are registered in Open ERP.
 
-You can consult your indicators, calculated in real time, from the menu  *Financial Management > Reporting > Custom Reports* .
+You can consult your indicators, calculated in real time, from the menu :menuselection:`Financial Management --> Reporting --> Custom Reports`.
 
 Indicators defined by default in Open ERP are the following:
 
@@ -61,7 +61,7 @@ Once this module is installed, you can click on a financial indicator to get a g
 Defining your own indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can define your own indicators in Open ERP using the menu  *Financial Management > Configuration > Custom Reporting > New Reporting Item Formula* .
+You can define your own indicators in Open ERP using the menu :menuselection:`Financial Management --> Configuration --> Custom Reporting --> New Reporting Item Formula`.
 
 
 .. figure::  images/account_indicator_new.png
@@ -96,7 +96,7 @@ Good management budgeting
 
 Open ERP manages its budgets using both General and Analytic Accounts. You'll see how to do this here for General Accounts and then in Chapter 9 for Analytical Accounts.
 
-Use the menu  *Financial Management > Configuration > Budgets > General Budgets*  to define a new budget.
+Use the menu :menuselection:`Financial Management --> Configuration --> Budgets --> General Budgets` to define a new budget.
 
 .. index::
    single: Budget Revisions
@@ -126,7 +126,7 @@ To do this, click  *Add*  and make multiple selections for the different account
 
    *Printing a budget.*
 
-To print a budget and make calculations of expenditure to budget use the menu  *Financial Management > Reporting > Print Budgets* . Open ERP then gives you a list of available budgets. Select one or more budgets and then click  *Print*  to configure the report. The following figure gives an example of a budget produced by Open ERP.
+To print a budget and make calculations of expenditure to budget use the menu :menuselection:`Financial Management --> Reporting --> Print Budgets`. Open ERP then gives you a list of available budgets. Select one or more budgets and then click  *Print*  to configure the report. The following figure gives an example of a budget produced by Open ERP.
 
 The Accounting Dashboard
 ------------------------

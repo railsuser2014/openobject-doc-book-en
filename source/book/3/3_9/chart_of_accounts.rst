@@ -9,7 +9,7 @@ On installation, the software is given a default chart of accounts that's the sa
 
 Some of these pre-built modules are comprehensive and accurate, others have rather more tentative status and are simply indicators of the possibilities. You can modify these, or build your own accounts onto the default chart, or replace it entirely with a custom chart.
 
-You view active charts of accounts using the menu  *Financial Management > Charts > Charts of Accounts* .
+You view active charts of accounts using the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts`.
 
 .. note:: Hierarchical charts 
 
@@ -29,7 +29,7 @@ The structure of the chart of accounts is hierarchical, with account subtotals c
 
 To get the detail of the account entries that are important to you, all you need to do is click the account. You can also click the  *Print*  icon after selecting one or several accounts (do a  *Ctrl-click*  on each line you want to select). The software gives you a choice of at least two reports: print the ledger or the balance of the selected accounts.
 
-Displaying the chart of accounts can take several seconds because Open ERP calculates the debits, credits and balance for each account in real time. If you just want to work with a chart of accounts that has structure but shows no totals, use the function  *Financial Management > Charts > Charts of Accounts > Fast Charts of Accounts* .
+Displaying the chart of accounts can take several seconds because Open ERP calculates the debits, credits and balance for each account in real time. If you just want to work with a chart of accounts that has structure but shows no totals, use the function :menuselection:`Financial Management --> Charts --> Charts of Accounts --> Fast Charts of Accounts`.
 
 Creating a chart of accounts
 ----------------------------
@@ -39,7 +39,7 @@ Creating a chart of accounts
 
    *Definition of an account.*
 
-To add, modify or delete existing accounts, use the menu  *Financial Management > Configuration > General Accounts > Accounts Definitions* .
+To add, modify or delete existing accounts, use the menu :menuselection:`Financial Management --> Configuration --> General Accounts --> Accounts Definitions`.
 
 .. index::
    single: Multi-lingual
@@ -59,7 +59,7 @@ The main account fields are:
 
 *  *Active* : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
-*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu *Financial Management > Configuration > Charts of Accounts > Type of Accounts* . Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+*  *Account Type* : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of Accounts`. Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
 .. index::
    single: Type of account
@@ -134,7 +134,7 @@ The most interesting thing about virtual charts of accounts is that they can be 
 	So there are good reasons for viewing the execution of financial transactions through virtual charts, 
 	such as budgets and financial indicators based on special views of the company.
 
-To create a new chart of accounts you should create a root account using the menu  *Financial Management > Configuration > General Accounts > Accounts Definition* . Your top level account should have  *Code* \ ``0``\   and  *Type* \ ``View``\  . Then you can choose your structure by creating other accounts of  *Type* \ ``View``\   as necessary. Check your virtual structure using the menu  *Financial Management > Charts > Charts of Accounts* .
+To create a new chart of accounts you should create a root account using the menu :menuselection:`Financial Management --> Configuration --> General Accounts --> Accounts Definition`. Your top level account should have  *Code* \ ``0``\   and  *Type* \ ``View``\  . Then you can choose your structure by creating other accounts of  *Type* \ ``View``\   as necessary. Check your virtual structure using the menu  *Financial Management > Charts > Charts of Accounts* .
 
 Finally, when you've got your structure, you must make the general accounts and virtual accounts match. For that search the general accounts and ensure that each non-\ ``View``\   account there also has a virtual account in the field  *Parents* .
 

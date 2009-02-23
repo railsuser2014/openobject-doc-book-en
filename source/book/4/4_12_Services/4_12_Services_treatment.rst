@@ -33,7 +33,7 @@ If your systems handle expenses well then you can avoid significant losses by se
 Claiming expenses
 -----------------
 
-Install the module \ ``hr_expenses``\   to automate the management of expense claims. Users can then enter their expenses using the menu  *Human Resources > Expenses > My Expenses* .
+Install the module \ ``hr_expenses``\   to automate the management of expense claims. Users can then enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> My Expenses`.
 
 \ ``Draft``\  
 
@@ -51,7 +51,7 @@ The various expenses accepted by the company must previously have been created u
 
 The employee keeps her expenses sheet in the \ ``Draft``\   state while completing it throughout the period. At the end of the period (week or month) she can confirm her expense form using the  *Confirm*  button on the form. This puts it into the state \ ``Waiting for validation``\  . 
 
-At the end of the period the department manager can access the list of expense forms waiting for approval using the menu  *Human resources > Expenses > All expenses > Expenses waiting for validation* . 
+At the end of the period the department manager can access the list of expense forms waiting for approval using the menu :menuselection:`Human resources --> Expenses --> All expenses --> Expenses waiting for validation`. 
 
 .. tip:: Role Management 
 

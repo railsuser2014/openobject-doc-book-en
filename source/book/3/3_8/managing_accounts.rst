@@ -19,7 +19,7 @@ Open ERP provides numerous tools for managing customer and supplier accounts. Y
 Financial analysis of partners
 ------------------------------
 
-When members of your accounts department sign on to the Open ERP system, they're immediately presented with the  *Accounting Dashboard.*  By default it contains a useful graph for analyzing Receivables. To get access to it, install the module \ ``board_account``\  . Then look at it using the menu  *Dashboards > Accounting > Accounting Dashboard* .
+When members of your accounts department sign on to the Open ERP system, they're immediately presented with the  *Accounting Dashboard.*  By default it contains a useful graph for analyzing Receivables. To get access to it, install the module \ ``board_account``\  . Then look at it using the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
 
 .. figure::  images/account _board.png
    :align: center
@@ -32,7 +32,7 @@ In the dashboard, the graph at the right entitled  *Aged Receivables*  represent
 
 All of Open ERP's graphs are dynamic. So you can, for example, filter the data by clicking  *Zoom*  and then  *Filter*  on the Search form. Or just click on  *Zoom*  to open in a larger window for a graph, then click  *Search*  to display this in a list view.
 
-To obtain a more detailed report of the aged balance (or order by past date) use the menu  *Finance > Accounting > Reporting > Partner Accounts > Aged Partner balance* . 
+To obtain a more detailed report of the aged balance (or order by past date) use the menu :menuselection:`Finance --> Accounting --> Reporting --> Partner Accounts --> Aged Partner balance`. 
 
 
 .. figure::  images/account_balance.png
@@ -42,7 +42,7 @@ To obtain a more detailed report of the aged balance (or order by past date) use
 
 When opening that report, Open ERP asks for the name of the company, the fiscal period and the size of the interval to be analyzed (in days). Open ERP then calculates a table of credit balance by period. So if you request an interval of 30 days Open ERP generates an analysis of creditors for the past month, past two months, and so on.
 
-For an analysis by partner you can use the partner balance that you get through the menu  *Financial Management > Reporting > Partner Accounts > Partner balance* . The system then supplies you with a PDF report containing one line per partner representing the cumulative credit balance. 
+For an analysis by partner you can use the partner balance that you get through the menu :menuselection:`Financial Management --> Reporting --> Partner Accounts --> Partner balance`. The system then supplies you with a PDF report containing one line per partner representing the cumulative credit balance. 
 
 
 .. figure::  images/account_partner_balance.png
@@ -52,7 +52,7 @@ For an analysis by partner you can use the partner balance that you get through 
 
 .. index:: Ledger
 
-If you want detailed information about a partner you can use the partner ledgers that you reach through the menu  *Financial Management > Reporting > Partner Accounts > Partner Ledger* .
+If you want detailed information about a partner you can use the partner ledgers that you reach through the menu :menuselection:`Financial Management --> Reporting --> Partner Accounts --> Partner Ledger`.
 
 .. figure::  images/account_partner_ledger.png
    :align: center
@@ -61,11 +61,11 @@ If you want detailed information about a partner you can use the partner ledgers
 
 Finally you can look up individual account entries by searching for useful information. To search for account entries:
 
-* by journal, go through the menu  *Financial Management > Entries > Entries by journal* ,
+* by journal, go through the menu :menuselection:`Financial Management --> Entries --> Entries by journal`,
 
-* by account, go through the menu  *Financial Management > Charts > Chart of Accounts*  and double-click the appropriate account,
+* by account, go through the menu :menuselection:`Financial Management --> Charts --> Chart of Accounts` and double-click the appropriate account,
 
-* by making a global search, go through the menu  *Financial Management > Entries > Search Entries* 
+* by making a global search, go through the menu :menuselection:`Financial Management --> Entries --> Search Entries`, 
 
 * by partner, do it by right-clicking on the Partner field in any form that shows it, or by using the buttons to the right of the partner form.
 
@@ -74,7 +74,7 @@ Finally you can look up individual account entries by searching for useful infor
 	It's helpful to remember that you can export all types of resource in Open ERP. 
 	From the web client you need to navigate to a search list for the resource then click 
 	the Export link at the bottom left of the list. 
-	From the GTK client you'd use the menu *Form > Export*. 
+	From the GTK client you'd use the menu :menuselection:`Form --> Export`. 
 	This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc, 
 	by exporting accounting entries.
 	
@@ -89,7 +89,7 @@ Multi-step follow-ups
 
 To automate the management of followups (reminders) you must install the module \ ``account_followup``\  . This is installed automatically as part of the accounting profile, but is not part of the other profiles.
 
-Once the module is installed configure your levels of followup using the menu  *Financial Management > Configuration > Payment Terms > Follow-Ups* .
+Once the module is installed configure your levels of followup using the menu :menuselection:`Financial Management --> Configuration --> Payment Terms --> Follow-Ups`.
 
 The levels of follow-up are relative to the date of creation of an invoice and not the due date. This enables you to put payment conditions such as 'payable in 21 days' and send a reminder in 30 days, or the converse.
 
@@ -104,7 +104,7 @@ For each level you should define the number of days and create a note which will
    "2","Level 2","45 days net","Second reminder"
    "3","Level 3","60 days from end of month","Put on notice"
 
-You can send your reminders by mail and/or email with the menu  *Financial Management > Periodic Handling > Send Follow-Ups* .
+You can send your reminders by mail and/or email with the menu :menuselection:`Financial Management --> Periodic Handling --> Send Follow-Ups`.
 
 .. figure::  images/account_followup_wizard.png
    :align: center
@@ -115,7 +115,7 @@ Open ERP presents you with a list of partners who are due reminders, which you 
 
 The system then gives you a PDF report with all of the reminder letters for each partner. Each letter is produced in the language of the partner (if that's available) and you can therefore get letters in several languages in the same PDF on several pages.
 
-To analyze the due date of customers and/or suppliers before starting the reminder procedure, use the submenus of  *Financial Management > Periodical Processing > Send Follow-Ups* :
+To analyze the due date of customers and/or suppliers before starting the reminder procedure, use the submenus of :menuselection:`Financial Management --> Periodical Processing --> Send Follow-Ups`:
 
 *  *Receivable entries* ,
 
@@ -123,7 +123,7 @@ To analyze the due date of customers and/or suppliers before starting the remind
 
 You get a list of unreconciled entries in Receivable and Payable type accounts. You can then modify the date and the last follow-up and the level of reminder for each entry.
 
-To obtain a detailed report per partner use the menu  *Financial Management > Reporting > Follow-Ups* .
+To obtain a detailed report per partner use the menu :menuselection:`Financial Management --> Reporting --> Follow-Ups`.
 
 The different reports are classic Open ERP screens, so you can filter them and explore the elements in detail. 
 

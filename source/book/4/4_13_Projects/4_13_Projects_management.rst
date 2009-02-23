@@ -28,9 +28,11 @@ Most client projects are represented by:
 Defining a project and its tasks
 --------------------------------
 
-To define a new project, go to the menu  *Project Management > Configuration > Projects*  and click  *New* .
+To define a new project, go to the menu :menuselection:`Project Management --> Configuration --> Projects` and click :guilabel:`New`.
 
- *Project Management > All projects* 
+.. todo:: What?
+
+ :menuselection:`Project Management --> All projects` 
 
 By checking the box  *Warn manager* , you configure the system to send the project manager an Open ERP request every time that a task is closed.
 
@@ -59,7 +61,7 @@ Once a project has been defined you can code in the tasks to be done. You've two
 
 *  *Tasks* 
 
-* from the menu  *Project Management > All Tasks* , create a new task and assign it to an existing project.
+* from the menu :menuselection:`Project Management --> All Tasks`, create a new task and assign it to an existing project.
 
 Managing tasks
 --------------
@@ -83,7 +85,7 @@ A task can be assigned to a user, who then becomes responsible for closing it. B
 
    *Tasks in project management.*
 
-Each user then manages his or her own task using the different available menus. To open the list of unclosed tasks that you have been assigned specifically use the menu  *Project Management > My Tasks > My Open Tasks* . Or to open the unassigned tasks, go to  *Project Management > All Tasks > Unassigned Tasks*  and then select \ ``Draft``\   and \ ``Open``\   tasks from that list.
+Each user then manages his or her own task using the different available menus. To open the list of unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project Management --> My Tasks --> My Open Tasks`. Or to open the unassigned tasks, go to :menuselection:`Project Management --> All Tasks --> Unassigned Tasks` and then select \ ``Draft``\   and \ ``Open``\   tasks from that list.
 
 .. tip:: Shortcuts
 
@@ -97,7 +99,7 @@ Each user then manages his or her own task using the different available menus. 
 	the effective work done for each of the different tasks. 
 	This way you don't have to encode service times twice – once for the project task and once for the timesheet.
 
-	When you want to complete your timesheet, use the menu *Human Resources > Timesheets > My Timesheets > Import projects*.
+	When you want to complete your timesheet, use the menu :menuselection:`Human Resources --> Timesheets --> My Timesheets --> Import projects`.
 
 Assigning roles: account manager and project manager
 ----------------------------------------------------

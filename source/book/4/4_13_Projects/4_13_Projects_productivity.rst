@@ -67,7 +67,7 @@ The context is determined by the work environment you must be in to deal with ce
 
 *  *Traveling* : for tasks that you can handle on the plane or in the train while you're doing traveling on business (tasks such as writing an article, or analyzing a new product). 
 
-An employee / system user can create his or her own contexts using the menu  *Project Management > Configuration > Time Management > Contexts* .
+An employee / system user can create his or her own contexts using the menu :menuselection:`Project Management --> Configuration --> Time Management --> Contexts`.
 
 Timebox
 ^^^^^^^
@@ -86,7 +86,7 @@ A task can be put in one and only one timebox at a time.
 
 You should distinguish between a timebox and the deadline for completing a task because the deadline is usually fixed by the requirements of the project manager. A timebox, by contrast, is selected with reference to what an individual can do.
 
-To define timeboxes for your company, use the menu  *Project Management > Configuration > Time Management > Timeboxes > My timeboxes* .
+To define timeboxes for your company, use the menu :menuselection:`Project Management --> Configuration --> Time Management --> Timeboxes --> My timeboxes`.
 
 .. index:: Methodology; GTD
 
@@ -95,21 +95,19 @@ Methodology and iterative process
 
 To organize your tasks efficiently, Open ERP uses a method based on the following systematic and iterative process:
 
-	.. note::  *Method Iterative Process* 
+	#. Identify all the tasks that you have to deal with, including everything that keeps you awake at night, and enter them in your Inbox, which you'll find in the menu :menuselection:`Project Management --> Time Management --> Inbox`.
 
-		#. Identify all the tasks that you have to deal with, including everything that keeps you awake at night, and enter them in your Inbox, which you'll find in the menu *Project Management > Time Management > Inbox*.
+	#. Classify the tasks in your Inbox periodically, assigning them a context and a timebox. This indicates both when and where the task should be handled. If a task takes less than 10 minutes then maybe it could be handled immediately.
 
-		#. Classify the tasks in your Inbox periodically, assigning them a context and a timebox. This indicates both when and where the task should be handled. If a task takes less than 10 minutes then maybe it could be handled immediately.
+	#. Every day, carry out the following process:
 
-		#. Every day, carry out the following process:
+		* First thing in the morning, select those tasks contained in the current week's timebox that you want to deal with today. These are presented in order of importance and urgency, so you should select the tasks closest to the top of the list.
 
-			* First thing in the morning, select those tasks contained in the current week's timebox that you want to deal with today. These are presented in order of importance and urgency, so you should select the tasks closest to the top of the list.
+		* Carry out each task, that's to say either work on the task yourself or delegate it to another user,
 
-			* Carry out each task, that's to say either work on the task yourself or delegate it to another user,
+		* Last thing at the end of the day's work, empty that day's timebox and return all unclosed tasks into the week's timebox.
 
-			* Last thing at the end of the day's work, empty that day's timebox and return all unclosed tasks into the week's timebox.
-
-		#. Repeat the same process each week and each month for the respective timeboxes.
+	#. Repeat the same process each week and each month for the respective timeboxes.
 
 .. index:: Agenda
 .. index:: Timebox
@@ -135,7 +133,7 @@ It's important to code in all of the tasks that are buzzing around in your head,
 
 A project or an objective over several days can be summarized in a single task. You don't have to detail each operation if the actions to be done are sufficiently clear to you.
 
-You have to empty your Inbox periodically. To do that, use the menu  *Project Management > Time Management > My Inbox* . Assign a timebox and a context to each task. This operation shouldn't take more than a few minutes because you aren't dealing with the tasks themselves, just classifying them.
+You have to empty your Inbox periodically. To do that, use the menu :menuselection:`Project Management --> Time Management --> My Inbox`. Assign a timebox and a context to each task. This operation shouldn't take more than a few minutes because you aren't dealing with the tasks themselves, just classifying them.
 
 .. figure::  images/service_timebox_day.png
    :align: center

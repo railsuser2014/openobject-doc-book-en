@@ -11,7 +11,7 @@ All your accounting entries must appear in an accounting journal. So you must, a
 Configuring a Journal
 ---------------------
 
-To view, edit or create new journals use the menu  *Financial Management > Configuration > Journals > Definition of Journals* .
+To view, edit or create new journals use the menu :menuselection:`Financial Management --> Configuration --> Journals --> Definition of Journals`.
 
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the  *Active*  checkbox for that.
 

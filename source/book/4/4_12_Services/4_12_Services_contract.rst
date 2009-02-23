@@ -28,7 +28,7 @@ Fixed Price contracts
 
 Fixed price contracts for the sale of services are represented in Open ERP by a Sales Order. In this case, the supply of services is managed just like all other stockable or consumable products. 
 
-You can add new orders using the menu  *Sales Management > Sales Order* .
+You can add new orders using the menu :menuselection:`Sales Management --> Sales Order`.
 
 The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no accounting impact on the system until it's confirmed. When you approve the document, your estimate moves into the state \ ``In Progress``\  .
 
@@ -108,7 +108,7 @@ The selection of an invoicing rate is an indirect way of specifying that the pro
 	the best case where all the services would be invoiced. 
 	To get this comparison you have to print the analytic balance from the analytic account.
 
-Services are then entered onto timesheets by the various people who work on the project. Periodically the project manager or account manager uses the following menu to prepare an invoice:  *Financial Management > Periodical Processing > Invoicing on a Time basis > Uninvoiced Hours* .
+Services are then entered onto timesheets by the various people who work on the project. Periodically the project manager or account manager uses the following menu to prepare an invoice :menuselection:`Financial Management --> Periodical Processing --> Invoicing on a Time basis --> Uninvoiced Hours`.
 
 Open ERP then displays all of the costs that haven't yet been invoiced. You can filter the proposed list and click the appropriate action button to generate the corresponding invoices. You can select the level of detail which is reported on the invoice, such as the date and details of the services.
 
@@ -119,7 +119,7 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 
 .. note:: Project Management and analytic accounts 
 
-	The menu *Project Management > Analytic Accounts* is only available once you have installed the module ``account_analytic_analysis``. 
+	The menu :menuselection:`Project Management --> Analytic Accounts` is only available once you have installed the module ``account_analytic_analysis``. 
 	It provides various global financial and operational views of a project manager's projects.
 
 Select a project and open its analytic entries using the  *Costs to invoice*  button. You'll find a list of costs that can be invoiced to the client:

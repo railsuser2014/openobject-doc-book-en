@@ -128,7 +128,7 @@ The real revenue is given by the amount invoiced to the client. The theoretical 
 
 For example, in the case of a fixed price project contract, the real sale price at the end of the project will be equal to the contract negotiated with the client. The theoretical price gives the amount that would have been invoiced if you had charged for all the time worked.
 
-To give project managers a direct view of their different projects, the \ ``account_analytic_analysis``\   module creates new menus in the Project management module in  *Project Management > Analytic Accounts* .
+To give project managers a direct view of their different projects, the \ ``account_analytic_analysis``\   module creates new menus in the Project management module in :menuselection:`Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
    :align: center

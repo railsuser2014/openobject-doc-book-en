@@ -93,7 +93,9 @@ In this time-focused planning approach, clients' priorities don't figure in the 
 Creating plans
 --------------
 
-\ ``report_analytic_planning``\   *Human Resources > Planning > Planning* 
+.. todo:: What's this line for?
+
+\ ``report_analytic_planning``\ :menuselection:`Human Resources --> Planning --> Planning`. 
 
 On each planning line you should enter the user, the analytic account concerned, and the quantity of time allocated. The quantity will be expressed in hours or in days depending on the unit of measure used. For each line you can add a brief note about the work to be done.
 
@@ -115,7 +117,7 @@ At the end of the period you can compare the duration of effective work on the d
 
    *Comparison of planned hours, worked hours and the productivity of employees by project.*
 
-You can also study several of your project's figures from the menu  *Human Resources > Reporting > Planning* .
+You can also study several of your project's figures from the menu :menuselection:`Human Resources --> Reporting --> Planning`.
 
 Planning at all levels of the hierarchy
 ---------------------------------------

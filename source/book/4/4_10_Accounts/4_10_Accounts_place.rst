@@ -14,8 +14,7 @@ For the initial setup of good analytic accounts you should:
 Setting up the chart of accounts
 --------------------------------
 
-Start by choosing the most suitable analytic representation for your company before entering it into Open ERP. To create the different analytic accounts, use the menu  *Financial Management > Configuration > Analytic Accounts > Analytic Accounts* .
-
+Start by choosing the most suitable analytic representation for your company before entering it into Open ERP. To create the different analytic accounts, use the menu :menuselection:`Financial Management --> Configuration --> Analytic Accounts --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_form.png
    :align: center
@@ -63,7 +62,7 @@ Finally, if the analytic account is a client project you can complete the fields
 
    *Example of an analytic chart for projects.*
 
-Once you've defined the different analytic accounts you can view your chart through the menu  *Financial Management > Charts > Analytic Charts of Accounts* .
+Once you've defined the different analytic accounts you can view your chart through the menu :menuselection:`Financial Management --> Charts --> Analytic Charts of Accounts`.
 
 .. tip:: Setting up an analytic account 
 
@@ -105,7 +104,7 @@ Once the analytic chart has been created for your company you have to create the
 
    *Creating an analytic journal.*
 
-To define your analytic journals, use the menu  *Financial Management > Configuration > Journal > Analytic Journal Definition* .
+To define your analytic journals, use the menu :menuselection:`Financial Management --> Configuration --> Journal --> Analytic Journal Definition`.
 
 It's easy to create an analytic journal. Just give it a  *Name* , a  *Code*  and a  *Type* . The types available are:
 

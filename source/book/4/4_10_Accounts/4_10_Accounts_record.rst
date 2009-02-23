@@ -52,11 +52,11 @@ Expense receipts from an employee can be linked to an analytic account for reimb
 
 To visualize the general entries following these different actions you can use one of the following menus:
 
-	#. To see all of the entries:  *Financial Management > Entries > Analytic Entries > Analytic Entries* 
+	#. To see all of the entries, :menuselection:`Financial Management --> Entries --> Analytic Entries --> Analytic Entries`, 
 
-	#. To see the entries per account, click the  *Analytic Account* field of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
+	#. To see the entries per account, click the :guilabel:`Analytic Account` field of any of the lines of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to start a search of all entries with that name (just click the Date hyperlink on a line in the web client, or double-click the line in the GTK client).
 
-	#. To see all of the entries by Journal:  *Financial Management > Entries > Analytic Entries > Entries by journal*  and then click on one of the journal names.
+	#. To see all of the entries by Journal, :menuselection:`Financial Management --> Entries --> Analytic Entries --> Entries by journal` and then click on one of the journal names.
 
 .. todo:: - this did not work originally. Does it now?
 
@@ -72,7 +72,7 @@ Manual record entry
 
 Even though most analytic entries are produced automatically by the other Open ERP documents it's sometimes necessary to make manual record entries. It's usually needed for certain analytic operations that have no counterpart in the general accounts.
 
-To make manual record entries, use the menu  *Financial Management > Entries > Analytic Entries > Entries by journal* .
+To make manual record entries, use the menu :menuselection:`Financial Management --> Entries --> Analytic Entries --> Entries by journal`.
 
 .. index::
    single: Analytic entries

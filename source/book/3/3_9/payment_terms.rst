@@ -6,7 +6,7 @@ Payment Terms
 
 You can define whatever payment terms you need in Open ERP. Payment terms determine the due dates for paying an invoice.
 
-To define new payment terms, use the menu  *Financial Management > Configuration > Payment Terms > Payment Terms* .
+To define new payment terms, use the menu :menuselection:`Financial Management --> Configuration --> Payment Terms --> Payment Terms`.
 
 The figure below represents the following payment term: 35% on delivery, the balance 15 days after the end of the month.
 

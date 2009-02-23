@@ -63,7 +63,7 @@ Tax Cases
 
 Tax Cases are also known in Open ERP as Tax Codes. They're used for tax reporting, and can be set up in a hierarchical structure to form trees in the same way as a Chart of Accounts.
 
-To create a new Tax Case, use the menu  *Financial Management > Configuration > Taxes > Tax Codes* . You define the following fields:
+To create a new Tax Case, use the menu :menuselection:`Financial Management --> Configuration --> Taxes --> Tax Codes`. You define the following fields:
 
 *  *Tax Case Name* : a unique name required to identify the Case,
 
@@ -85,14 +85,14 @@ You can also see two read-only fields:
 
 You will probably need to create two tax cases for each different tax rate that you have to define, one for the tax itself and one for the invoice amount that the tax is based on. And you'll create tax cases that you won't link to Tax objects (similar to General Account \ ``View``\   types) just to organize the tree structure.
 
-To view the structure that you've constructed you can use the menu  *Financial Management > Periodical Processing > Taxes* . This tree view reflects the structure of the Tax Cases and shows the current tax situation.
+To view the structure that you've constructed you can use the menu :menuselection:`Financial Management --> Periodical Processing --> Taxes`. This tree view reflects the structure of the Tax Cases and shows the current tax situation.
 
 Tax objects
 ^^^^^^^^^^^
 
 Tax objects calculate tax on the financial transactions that they're attached to, and are linked to the General Accounts and to the Tax Cases. 
 
-To create a new Tax Case, use the menu  *Financial Management > Configuration > Taxes > Taxes* . You define the following fields:
+To create a new Tax Case, use the menu :menuselection:`Financial Management --> Configuration --> Taxes --> Taxes`. You define the following fields:
 
 *  *Tax Name* : a unique name required for this tax (such as \ ``12% Sales VAT``\  ),
 
@@ -151,13 +151,13 @@ When you've created a tax structure consisting of Tax Cases and Tax objects, you
 	Each invoice is given a new Price method field, in which you choose Tax included or Tax excluded. 
 	Prices are then displayed appropriately.
 
-You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu  *Partners > Partners* to open and edit a Partner form for the charity, then:
+You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this, for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the \ ``VAT``\   *Tax Group* , use the menu :menuselection:`Partners --> Partners` to open and edit a Partner form for the charity, then:
 
 * select the *Properties*  tab,
 
 * set the  *Default Tax*  field to the \ ``Charities VAT``\   tax.
 
-You can assign multiple taxes to a Product. Assuming you have set up the appropriate taxes, you would use the menu  *Products > Products*  to open and edit a Product definition, then:
+You can assign multiple taxes to a Product. Assuming you have set up the appropriate taxes, you would use the menu :menuselection:`Products --> Products` to open and edit a Product definition, then:
 
 * select one or more  *Customer Taxes*  for any products that you might sell, which may include a \ ``Sales Tax``\   or \ ``Output VAT``\  , and a \ ``Sales Eco Tax``\  ,
 
@@ -184,7 +184,7 @@ And you can assign multiple taxes to an account so that when you transfer money 
 The accounts ledgers and the balance sheet
 ------------------------------------------
 
-To print the balance of accounts or the accounts ledgers you should turn to the Chart of Accounts. To do that go to the menu  *Financial Management > Charts > Charts of Accounts* .
+To print the balance of accounts or the accounts ledgers you should turn to the Chart of Accounts. To do that go to the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts`.
 
 Select the accounting period you're interested in and click  *Open Charts* , then select one or several accounts for analysis by clicking and highlighting the appropriate line(s). Click the  *Print*  button and Open ERP asks you to select either the  *General Ledger* , the  *Account balance* , or an  *Analytic check* . If you select an account which has sub-accounts in the hierarchy you can automatically analyze that account and its child accounts.
 
@@ -209,7 +209,7 @@ The \ ``account_reporting``\ module was developed to provide configurable report
 The accounting journals
 -----------------------
 
-To obtain the different journals use the menu  *Financial Management > Reporting > Printing Journals* .
+To obtain the different journals use the menu :menuselection:`Financial Management --> Reporting --> Printing Journals`.
 
 .. note::  Journals
 
@@ -246,7 +246,7 @@ Information required for a tax declaration is automatically generated by Open E
 
 You can also get the information from the accounting entries in the columns to the right.
 
-Open ERP keeps a tax chart that you can reach from the menu  *Financial Management > Periodical Processing > Taxes* . The structure of the chart is for calculating the tax declaration but also all the other taxes can be calculated (such as the French DEEE).
+Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Financial Management --> Periodical Processing --> Taxes`. The structure of the chart is for calculating the tax declaration but also all the other taxes can be calculated (such as the French DEEE).
 
 .. figure::  images/account_tax_chart.png
    :align: center
@@ -278,7 +278,7 @@ Each accounting entry can then be linked to one of the tax accounts. This associ
 
 	* you can restructure your chart of taxes as you need.
 
-At any time you can check your chart of taxes for a given period using the report  *Financial Management > Reporting > Taxes Report*.
+At any time you can check your chart of taxes for a given period using the report :menuselection:`Financial Management --> Reporting --> Taxes Report`.
 
 This data is updated in real time. That's very useful because it enables you at any time to preview the tax that you owe at the start and end of the month or quarter.
 
