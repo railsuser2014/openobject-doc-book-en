@@ -1,6 +1,6 @@
 
 The installation of Open ERP
-"""""""""""""""""""""""""""""
+============================
 
 Whether you're from a small company investigating how Open ERP works, or on the IT staff of a larger organization and have been asked to assess Open ERP's capabilities, your first requirement is to install it or to find a working installation.
 
@@ -69,9 +69,8 @@ The Open ERP client can then be opened, ready to use the Open ERP system. The 
    single: Open ERP Installation; Windows (Independent)
 .. 
 
-
 Independent installation on Windows
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------------
 
 System administrators can have very good reasons for wanting to install the various components of a Windows installation separately. For example, your company may not support the version of PostgreSQL or Python that's installed automatically, or you may already have PostgreSQL installed on the server you're using, or you may want to install the database server, application server and web server on separate hardware units. 
 
@@ -82,7 +81,7 @@ You must install PostgreSQL before the Open ERP server, and you must also confi
 If you had previously tried to install the all-in-one version of Open ERP, you'd best uninstall that in case its embedded PostgreSQL installation interferes with your stand-alone installation.
 
 Connecting users on other PCs to the Open ERP server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To connect other computers to the Open ERP server you must configure the server so that it's visible to the other PCs, and install a GTK client on each of the those PCs:
 
@@ -118,7 +117,7 @@ Start the GTK client on the server through the Windows Start menu there. The mai
 	In its default configuration, the Open ERP client connects to port 8069 on the server using the XML-RPC protocol. You can change this and connect to port 8070 using the NET-RPC protocol instead. NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 
 Resolving errors with a Windows installation
-#############################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If your system doesn't work after installing your Windows system you'll find some ideas for resolving this below:
 
@@ -161,7 +160,7 @@ If your system doesn't work after installing your Windows system you'll find som
 .. 
 
 Installation on Linux (Ubuntu)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------
 
 This section guides you through installing the Open ERP server and client on Ubuntu, one of the most popular Linux distributions. It assumes that you're using a recent release of Desktop Ubuntu with its graphical user interface on a desktop or laptop PC. 
 
@@ -172,7 +171,7 @@ This section guides you through installing the Open ERP server and client on Ub
 For information about installation on other distributions, visit the documentation section by following :menuselection:`Product --> Documentation`  on http://openerp.com. Detailed instructions are given there for different distributions and releases, and you should also check if there are more up to date instructions for the Ubuntu distribution as well.
 
 Installation of Open ERP from packages
-#######################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At the time of writing this book, Ubuntu hadn't yet published packages for Open ERP, so this section describes the installation of version 4.2 of Tiny ERP. This is very similar to Open ERP and so can be used to test the software.
 
@@ -199,7 +198,7 @@ Although this installation method is simple and therefore an attractive option, 
 	Maintaining packages is a process of development, testing and publication that takes time. The releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check the version number from the information on the website before installing a package. If only the third figure differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because the differences may be minor – fault fixes rather than functionality changes between the package and the latest version.
 
 Manual installation of the Open ERP server
-###########################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this section you'll see how to install Open ERP by downloading it from the site http://openerp.com, and how to install the libraries and packages that Open ERP depends on, onto a desktop version of Ubuntu. Here's a summary of the procedure:
 
@@ -252,7 +251,7 @@ Open a terminal window to start the server with the command \ ``sudo -i -u postg
 ..
 
 Manual installation of Open ERP GTK clients
-#############################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install an Open ERP GTK client, follow the steps below:
 
@@ -313,7 +312,7 @@ If your Linux server is protected by a firewall you'll have to provide access to
 ..
 
 Installation of an Open ERP web server
-#######################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just as you installed a GTK client on a Linux server, you can also install the Open ERP web server. It's possible to install it from sources after installing its dependencies from packages as you did with the Open ERP server, but Tiny have provided a much simpler way to do this for eTiny – using a system known as ez_setup.
 
@@ -347,13 +346,15 @@ The Open ERP Web server connects to the Open ERP server in the same way as an O
 You can verify the installation by opening a web browser on the server and navigating to http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from another computer connected to the same network if you know the name or IP address of the server over the network – your browser should be set to http://<server_address>:8080 for this.
 
 Verifying your Linux installation
-###################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index::
    single: pgAdmin III
 .. 
 
-You've used default parameters so far during the installation of the various components. If you've had problems, or you just want to set this up differently, the following points provide some indicators about how you can configure your installation.
+You've used default parameters so far during the installation of the various components. 
+If you've had problems, or you just want to set this up differently, 
+the following points provide some indicators about how you can configure your installation.
 
 .. tip:: **psql** and **pgAdmin** tools 
 
@@ -361,27 +362,25 @@ You've used default parameters so far during the installation of the various com
 
 	If you prefer a graphical utility to manipulate your database directly you can install pgAdmin III (it is commonly installed automatically with PostgreSQL on a windowing system, but can also be found at \ ``http://www.pgadmin.org/`` \ ). 
 
-""""""""""""""""""
+#. The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
 
-	#. The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
+#. The database system has a default role of \ ``postgres``\   accessible by running under the Linux postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql startup message – then type \ ``\q``\  to quit the program.
 
-	#. The database system has a default role of \ ``postgres``\   accessible by running under the Linux postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql startup message – then type \ ``\q``\  to quit the program.
+#. Start the Open ERP server from the postgres user (which enables it to access the PostgreSQL database) by typing \ ``sudo su postgres -c tinyerp-server.``\  
 
-	#. Start the Open ERP server from the postgres user (which enables it to access the PostgreSQL database) by typing \ ``sudo su postgres -c tinyerp-server.``\  
+#. If you try to start the Open ERP server from a terminal but get the message ``socket.error: (98, 'Address already in use')`` then you might be trying to start Open ERP hile an instance of Open ERP is already running and using the sockets that you've defined (by default 8069 and 8070). If that's a surprise to you then you may be coming up against a previous installation of Open ERP or Tiny ERP, or something else sing one or both of those ports. Type \ ``sudo netstat -anpt``\  to discover what is running there, and record the PID. You can check that the PID orresponds to a program you can dispense with by typing \ ``ps aux | grep <PID>``\   and you can then stop the program from running by typing \ ``sudo kill <PID>``\   You need additional measures to stop it from restarting when you restart the server.
 
-	#. If you try to start the Open ERP server from a terminal but get the message ``socket.error: (98, 'Address already in use')`` then you might be trying to start Open ERP hile an instance of Open ERP is already running and using the sockets that you've defined (by default 8069 and 8070). If that's a surprise to you then you may be coming up against a previous installation of Open ERP or Tiny ERP, or something else sing one or both of those ports. Type \ ``sudo netstat -anpt``\  to discover what is running there, and record the PID. You can check that the PID orresponds to a program you can dispense with by typing \ ``ps aux | grep <PID>``\   and you can then stop the program from running by typing \ ``sudo kill <PID>``\   You need additional measures to stop it from restarting when you restart the server.
+#. The Open ERP server has a large number of configuration options. You can see what they are by starting the server with the argument \ ``–help``\   By efault the server configuration is stored in the file \ ``.terp_serverrc``\  in the user's home directory (and for the postgres user that directory is \ ``/var/lib/postgresql``\  .
 
-	#. The Open ERP server has a large number of configuration options. You can see what they are by starting the server with the argument \ ``–help``\   By efault the server configuration is stored in the file \ ``.terp_serverrc``\  in the user's home directory (and for the postgres user that directory is \ ``/var/lib/postgresql``\  .
+#. You can delete the configuration file to be quite sure that the Open ERP server is starting with just the default options. It is quite common for an upgraded system to behave badly because a new version server cannot work with options from a previous version. When the server starts without a configuration file it will write a new one once there is something non-default to write to it – it will operate using defaults until then.
 
-	#. You can delete the configuration file to be quite sure that the Open ERP server is starting with just the default options. It is quite common for an upgraded system to behave badly because a new version server cannot work with options from a previous version. When the server starts without a configuration file it will write a new one once there is something non-default to write to it – it will operate using defaults until then.
+#. To verify that the system works, without becoming entangled in firewall problems, you can start the Open ERP client from a second terminal window on the server computer (which doesn't pass through the firewall). Connect using the XML-RPC protocol on port 8069 or NET-RPC on port 8070. The server can use both ports simultaneously. The window displays the log file when the client is started this way.
 
-	#. To verify that the system works, without becoming entangled in firewall problems, you can start the Open ERP client from a second terminal window on the server computer (which doesn't pass through the firewall). Connect using the XML-RPC protocol on port 8069 or NET-RPC on port 8070. The server can use both ports simultaneously. The window displays the log file when the client is started this way.
+#. The client configuration is stored in the file \ ``.terprc``\  in the user's home directory. Since a GTK client can be started by any user, each user would have their setup defined in a configuration file in their own home directory.
 
-	#. The client configuration is stored in the file \ ``.terprc``\  in the user's home directory. Since a GTK client can be started by any user, each user would have their setup defined in a configuration file in their own home directory.
+#. You can delete the configuration file to be quite sure that the Open ERP client is starting with just the default options. When the client starts without a configuration file it will write a new one for itself.
 
-	#. You can delete the configuration file to be quite sure that the Open ERP client is starting with just the default options. When the client starts without a configuration file it will write a new one for itself.
-
-	#. The eTiny web server uses the NET-RPC protocol. If a GTK client works but eTiny doesn't then the problem is either with the NET-RPC port or with eTiny itself, and not with the Open ERP server.
+#. The eTiny web server uses the NET-RPC protocol. If a GTK client works but eTiny doesn't then the problem is either with the NET-RPC port or with eTiny itself, and not with the Open ERP server.
 
 .. hint:: One server for several companies 
 

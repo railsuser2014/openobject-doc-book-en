@@ -1,13 +1,12 @@
 
-*******************************
+###############################
 Process and Document Management
-*******************************
+###############################
 
 .. toctree::
 
-    7_16_Process/index
-    7_17_Document_Management/index
-
+    7_18_Process/index
+    7_19_Documents/index
 
 .. Copyright © Open Object Press. All rights reserved.
 

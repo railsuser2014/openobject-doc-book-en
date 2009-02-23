@@ -16,7 +16,7 @@ Open ERP Book
 
 .. toctree::
 
-    0_Foreword/index
+    0/index
     1/index
     2/index
     3/index
@@ -25,16 +25,17 @@ Open ERP Book
     6/index
     7/index
     8/index
-    9_Concl/index
+    9/index
 
 .. raw:: html
 
     </div>
 
 .. toctree::
+
     :maxdepth: 3
 
-    0_Foreword/index
+    0/index
     1/index
     2/index
     3/index
@@ -43,7 +44,7 @@ Open ERP Book
     6/index
     7/index
     8/index
-    9_Concl/index
+    9/index
 
 
 .. Copyright © Open Object Press. All rights reserved.

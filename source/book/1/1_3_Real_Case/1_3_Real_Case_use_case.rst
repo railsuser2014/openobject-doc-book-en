@@ -1,5 +1,5 @@
 Use case
-=========
+========
 
 Configure a system that enables you to:
 
@@ -12,7 +12,7 @@ Configure a system that enables you to:
 The system should support all aspects of invoicing, payments to suppliers and receipts from customers.
 
 Functional requirements
-=========================
+=======================
 
 For working out the business case you'll have to model:
 
@@ -35,7 +35,7 @@ For working out the business case you'll have to model:
 To test the system you'll need at least one supplier, one customer, one product, a warehouse, a minimal chart of accounts and a bank account.
 
 Database creation
-===================
+=================
 
 Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch03``\  . This database will be free of data and contain the least possible amount of functionality as a starting point. You'll need to know your super administrator password for this – or you'll have to find somebody who does have it to create this seed database. You won't be able to use the \ ``openerp_ch1``\   or \ ``openerp_ch2``\   databases that you might have created so far in this book because they both contain demonstration data.
 
@@ -50,7 +50,7 @@ Start the database creation process from the  *Database Administration*  page by
 *  *Default Language* : \ ``English``\  .
 
 Installing and configuring modules
-===================================
+==================================
 
 All of the functional needs are provided by core modules from Open ERP:
 

@@ -1,14 +1,13 @@
 
-********************
+####################
 Sales and Purchasing
-********************
+####################
 
 .. toctree::
     
-    6_14_Sale_Management/index
-    6_15_Purchase_Management/index
+    6_16_Sales/index
+    6_17_Purchases/index
 
-    
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

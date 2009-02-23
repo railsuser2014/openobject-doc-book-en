@@ -4,8 +4,8 @@ Database setup
 
 You'll create all the elements in the database that you need to carry out the use case. These are specified in the functional requirements.
 
-Personalizing the Main Company
--------------------------------
+Configuring the Main Company
+----------------------------
 
 Start to personalize your database by renaming the  *Main Company*  from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this personalization information used in the document headers and footers. 
 
@@ -42,7 +42,7 @@ You can leave the currency at its default setting of \ ``EUR``\   for this examp
 	The examples in this book are in USD and EUR. You, the reader, could use your home currency (perhaps CAD, CNY, GBP, or IDR) in their place.
 
 Creating partner categories, partners and their contacts
----------------------------------------------------------
+--------------------------------------------------------
 
 You'll now create a suppliers category and a customers category. Partner categories are useful for organizing groups of partners but have no special behavior that affects partners, so you can assign them as you like. Then you'll define one supplier and one customer, with a contact for each. 
 
@@ -85,7 +85,7 @@ Then add \ ``Customers``\   in the  *Categories*  field.  *Save*  the form. To c
 	If this partner was also a supplier then you'd add Suppliers to the categories as well, but there's no need to do so in this example. You can assign a partner to multiple categories at all levels of the hierarchy.
 
 Creating products and their categories
----------------------------------------
+--------------------------------------
 
 Unlike partner categories and their assigned partners, product categories do have an effect on the products assigned to them – and a product may belong to only one category. Select the menu :menuselection:`Products --> Configuration --> Product Categories` and click :guilabel:`New` to get an empty form for defining a product category. 
 
@@ -133,7 +133,7 @@ Now create a new product:
    single: Stock locations
 
 Stock locations
------------------
+---------------
 
 Click :menuselection:`Inventory Control --> Location Structure` to see the hierarchy of stock locations. These locations have been defined by the minimal default data loaded when the database was created. You'll use this default structure in this example.
 
@@ -164,7 +164,7 @@ A Warehouse contains an input location, a stock location and an output location 
    single: Account Chart
    
 Setting up a chart of accounts
--------------------------------
+------------------------------
 
 You can set up a chart of accounts during the creation of a database, but for this exercise you'll start with the minimal chart that's built into the core of Tiny ERP (just a handful of required accounts without hierarchy, tax or subtotals). 
 
@@ -193,7 +193,7 @@ Click :menuselection:`Financial Management --> Charts --> Charts of Accounts` an
 .. 
 
 Make a backup of the database
--------------------------------
+-----------------------------
 
 If you know the super-administrator password, make a backup of your database using the procedure described at the very end of Chapter 1. Then restore it to a new database: \ ``testing``\  .
 

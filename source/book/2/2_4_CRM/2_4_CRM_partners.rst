@@ -4,7 +4,7 @@
 
 
 Open ERP preparation
-=====================
+====================
 
 You'll need two databases for this chapter:
 
@@ -22,7 +22,7 @@ Once you've created \ ``openerp_ch04``\  , add a new group – \ ``support``\  ,
 
 
 Partners
-=========
+========
 
 In Open ERP, a partner represents all the entities that you can do business with. Some possible different types of partners are:
 
@@ -72,7 +72,7 @@ To create a company in Open ERP (that is – a new partner) you should at a min
 .. index:: Contact
 
 Contacts
----------
+--------
 
 You can have several contacts for one partner. Contacts represent company employees that you're in contact with, along with their address details. For each address you can indicate their type (\ ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on this, Open ERP can supply an address that matches the contact's function when generating documents at various stages through an Order process.
 
@@ -89,7 +89,7 @@ You can search for a subset of Partners and Contacts using their company  *Name*
 .. 
 
 Partner Categories
--------------------
+------------------
 
 Open ERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu  *Partners > Partners by Category* .
 

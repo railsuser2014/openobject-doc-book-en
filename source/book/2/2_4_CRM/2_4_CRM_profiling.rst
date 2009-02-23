@@ -3,13 +3,13 @@
 .. 
 
 Profiling
-===========
+=========
 
 .. index:: Prospect
 .. index:: Profiling
 
 Establishing the profiles of prospects
----------------------------------------
+--------------------------------------
 
 During presales activities it's useful to qualify your prospects quickly. You can pose a series of questions to find out what product to offer to the customer, or how quickly you should handle the request. 
 
@@ -49,7 +49,7 @@ At the end of the exhibition prospects' details and their responses to the quest
 This enables your sales people to follow prospects up efficiently and adapt their approach based on each prospect's profile. For example, they can send a letter based on a template developed for a specific partner category. They'd use Open ERP's report editor and generator for their sales proposition, such as an invitation to a training session a week after the show.
 
 Using profiles effectively
----------------------------
+--------------------------
 
 To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from ``addons-extra``.
 

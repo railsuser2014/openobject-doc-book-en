@@ -21,7 +21,7 @@ Start the database creation process from the :guilabel:`Database Administration`
 
 
 Creating the database
-"""""""""""""""""""""""
+---------------------
 
 Before walking through an Open ERP business process step by step in the next chapter you'll create a database to check that the installation is working correctly:
 
@@ -53,7 +53,7 @@ To create new databases you must know the super-administrator password which def
 * If you're using the web client, click :guilabel:`Manage`  on the login screen, then :guilabel:`Create` on the database management page. Enter the super-administrator password, then the name of the new database you're creating.
 
 Database openerp_ch01
-^^^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database`  field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
 
@@ -103,7 +103,7 @@ Once configuration is complete you're connected to your Open ERP system. Its fu
 .. 
 
 Managing databases
-^^^^^^^^^^^^^^^^^^^
+------------------
 
 As a super-administrator you've not only got rights to create new databases, but also to:
 
@@ -134,7 +134,7 @@ Future versions of Open ERP may only give you access to some of these database 
 You are now ready to use databases from your installation to familiarize yourself with the administration and use of Open ERP.
 
 New Open ERP functionality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 
 The database you've created and managed so far is based on the core Open ERP functionality that you installed. The core system is installed in the file system of your Open ERP application server, but only installed into an Open ERP database as you require it, as is described in the next chapter.
 
@@ -147,7 +147,7 @@ What if want to update what's there, or extend what's there with additional modu
 In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your Open ERP application server.
 
 Extending Open ERP
-###################
+------------------
 
 To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's is in your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the various Linux distributions and not available at all in the Windows all-in-one installer). 
 

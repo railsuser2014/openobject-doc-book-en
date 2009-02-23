@@ -5,7 +5,7 @@
 .. index:: Architecture
 
 The architecture of Open ERP
-"""""""""""""""""""""""""""""
+============================
 
 To access Open ERP you can:
 

@@ -1,14 +1,13 @@
 
-***********************
+#######################
 Stock and Manufacturing
-***********************
+#######################
 
 .. toctree::
     
-    5_12_Stock_Management/index
-    5_13_Manufacturing/index
+    5_14_Stock/index
+    5_15_Manufacturing/index
 
-    
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

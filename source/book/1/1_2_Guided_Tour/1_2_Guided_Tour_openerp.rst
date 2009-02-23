@@ -1,5 +1,6 @@
+
 Guided Tour of Open ERP
-=========================
+=======================
 
 You'll now explore the database \ ``openerp_ch02``\   with these profile modules installed to give you an insight into the coverage of the core Open ERP software.
 
@@ -45,7 +46,7 @@ Users' home pages are automatically reassigned during the creation or upgrading 
 The following sections present an overview of the main functions of Open ERP. Some areas are covered in more detail in the following chapters of this book and you'll find many other functions available in the optional modules. Functions are presented in the order that they appear on the main menu.
 
 Partners
----------
+--------
 
 To familiarize yourself with Open ERP's interface, you'll start work with information about partners. Clicking :menuselection:`Partners --> Partners` brings up a list of partners that were automatically loaded when you created the database with :guilabel:`Load Demonstration Data` checked.
 
@@ -54,7 +55,7 @@ To familiarize yourself with Open ERP's interface, you'll start work with infor
 ..
 
 Search for a partner
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 Above the partner list you'll see a search form that enables you to quickly filter the partners. Two tabs are available for searching –  *Basic Search*  and  *Advanced Search* . The latter simply shows more fields to narrow your selection.
 
@@ -87,7 +88,7 @@ When you're in Read-Only mode you can navigate through the whole list you select
 ..
 
 Partner form
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 The partner form contains several tabs, all referring to the current record:
 
@@ -106,7 +107,7 @@ The  *Events History*  tab gives a quick overview of things that have happened t
 It's possible to add events manually, such as a note recording a phone call. To add a new event click  *Create new record*  to the right of the  *Partner Events*  field. That opens a new  *Partner Events*  dialog box enabling an event to be created and added to the current partner.
 
 Actions possible on a partner
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To the right of the partner form is a toolbar containing a list of possible  *Reports* ,  *Actions* , and quick  *Links*  about the partner displayed in the form.
 
@@ -154,7 +155,7 @@ Before moving on to the next module, take a quick look into the :menuselection:`
 ..
 
 Accounting and finance
------------------------
+----------------------
 
 Chapters 6 to 9 in this book are dedicated to general and analytic accounting. A brief overview of the functions provided by these modules is given here as an introduction.
 
@@ -172,7 +173,7 @@ Open ERP also provides integrated analytical accounting, which enables manageme
 
 
 Dashboards
------------
+----------
 
 Dashboards give you an overview of all the information that's important to you on a single page. The :menuselection:`Dashboards` menu gives you access to predefined boards for :menuselection:`Accounting`, :menuselection:`Production` and :menuselection:`Project Management`.
 
@@ -200,7 +201,7 @@ Dashboards are adaptable to the needs of each user and each company.
 .. 
 
 Products
----------
+--------
 
 In Open ERP, product means a raw material, a stockable product, a consumable or a service. You can work with whole products or with templates that separate the definition of products and variants.
 
@@ -264,7 +265,7 @@ You can find many optional modules to extend product functionality through the O
 .. 
 
 Human Resources
------------------
+---------------
 
 Open ERP's Human Resources Management modules provide such functionality as:
 
@@ -324,7 +325,7 @@ Furthermore, just like accounts, stock locations are hierarchical, so you can ca
 .. 
 
 Customer and Supplier Relationship Management
------------------------------------------------
+---------------------------------------------
 
 Open ERP provides many tools for managing relationships with partners. These are available through the :menuselection:`CRM & SRM` menu.
 
@@ -358,7 +359,7 @@ The management of customer relationships is detailed in the second section of th
 .. 
 
 Purchase Management
----------------------
+-------------------
 
 Purchase management enables you to track your suppliers' price quotations and convert them into Purchase Orders as you require. Open ERP has several methods of monitoring invoices and tracking the receipt of ordered goods.
 
@@ -382,7 +383,7 @@ Open ERP's replenishment management rules enable the system to generate draft p
    *Purchase order workflow.*
 
 Project Management
--------------------
+------------------
 
 Open ERP's project management tools enable you to handle the definition of tasks and the specification of requirements for those tasks, efficient allocation of resources to the requirements, project planning, scheduling and automatic communication with partners.
 
@@ -402,7 +403,7 @@ Project Management is described in Chapter 12.
 .. 
 
 Production Management
------------------------
+---------------------
 
 Open ERP's production management capabilities enable companies to plan, automate, and track manufacturing and product assembly. Open ERP supports multi-level Bills of Materials and lets you substitute subassemblies dynamically, at the time of sales ordering. You can create virtual sub-assemblies for reuse on several products with Phantom Bills of Materials.
 
@@ -423,7 +424,7 @@ The demonstration data contains a list of products and raw materials with variou
 .. 
 
 Sales Management
------------------
+----------------
 
 The :menuselection:`Sales Management` menu gives you roughly the same functionality as the :menuselection:`Purchase Management` menu – the ability to create new orders and to review the existing orders in their various states – but there are important differences in the workflows. 
 
@@ -432,7 +433,7 @@ Confirmation of an order triggers delivery of the goods, and invoicing timing is
 Delivery charges can be managed using a grid of tariffs for different carriers.
 
 Other functions
------------------
+---------------
 
 You've been through a brisk, brief overview of the main functional areas of Open ERP. Some of these – a large proportion of the core modules – are treated in more detail in the following chapters. 
 

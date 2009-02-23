@@ -1,8 +1,14 @@
 
+******************************
 Installation and Configuration
-###############################
+******************************
 
- *Installing Open ERP under Windows or Linux for familiarization use should take you only half an hour or so and needs only a couple of operations. The first operation is installation of the application and database server on a server PC (that's a Windows or Linux or Macintosh computer). You've a choice of approaches for the second operation: either install a web server (most probably on the original server PC) to use with standard web clients that can be found on anybody's PC, or install application clients on each intended user's PC. When you first install Open ERP you'll configure a database containing a little functionality and some demonstration data to test the installation.* 
+ *Installing Open ERP under Windows or Linux for familiarization use should take you only half an hour or so and needs only a couple of operations. 
+  The first operation is installation of the application and database server on a server PC (that's a Windows or Linux or Macintosh computer). 
+  You've a choice of approaches for the second operation: 
+  either install a web server (most probably on the original server PC) to use with standard web clients that can be found on anybody's PC, 
+  or install application clients on each intended user's PC. 
+  When you first install Open ERP you'll configure a database containing a little functionality and some demonstration data to test the installation.* 
 
 .. figure:: images/ch1_outline.png
    :align: center
@@ -24,11 +30,17 @@ This chapter focuses on the installation of Open ERP so that you can begin to f
 
 .. note:: The SaaS, or “on-demand”, offer
 
-   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that includes hardware (servers), system maintenance, provision of hosting services, and support.
+   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that 
+   includes hardware (servers), system maintenance, provision of hosting services, and support.
 
-   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get started quickly without incurring costs for integration or for buying computer systems. Many of Tiny's partner companies will access this, and some may offer their own similar service.
+   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get started quickly 
+   without incurring costs for integration or for buying computer systems. 
+   Many of Tiny's partner companies will access this, and some may offer their own similar service.
 
-   This service should be particularly useful to small companies that just want to get going quickly and at low cost. It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture used in banks and other large organizations. Open ERP is that system, and is described in detail throughout this book.
+   This service should be particularly useful to small companies that just want to get going quickly and at low cost. 
+   It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture 
+   used in banks and other large organizations. 
+   Open ERP is that system, and is described in detail throughout this book.
 
 Whether you want to test Open ERP or to put it into full production, you have at least two starting points:
 
