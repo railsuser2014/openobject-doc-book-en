@@ -122,7 +122,7 @@ Confirmation by selecting products waiting
 
 The approach shown above is very useful if product receipt corresponds to the original orders. Only if your suppliers deliver items that don't necessarily coincide with the orders it is easier to work by products received rather than by orders.
 
-In this case you can manually create a new goods receipt using the menu :menuselection:`Stock Management --> Incoming Products --> New Reception Packing`. Instead of entering the product lines manually you can click the button at the lower right *Products not received*. Open ERP then opens all the products waiting from the selected supplier and you can then automatically add some or all of them on your form. This method of encoding is very useful when you're entering goods received at one time but from several orders.
+In this case you can manually create a new goods receipt using the menu :menuselection:`Stock Management --> Incoming Products --> New Reception Packing`. Instead of entering the product lines manually you can click the button at the lower right :guilabel:`Products not received`. Open ERP then opens all the products waiting from the selected supplier and you can then automatically add some or all of them on your form. This method of encoding is very useful when you're entering goods received at one time but from several orders.
 
 .. index::
    single: Routing; Logistic

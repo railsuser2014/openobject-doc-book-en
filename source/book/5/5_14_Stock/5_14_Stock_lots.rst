@@ -63,7 +63,7 @@ To enter the lot number in an operation you can use an existing lot number or cr
 
 On the product form it is also possible to indicate the operations in which a lot nubmer is required. You can then force the user to show the lot number for manufacturing operations, goods receipt, or customer packing.
 
-To assign a unique lot number to a set of several items you don't have to encode the lot number one by one. You only need to take a stock move for several products line and click the button *Split move lines in two*. You can then give a lot number prefix and Open ERP will complete the prefix in the wizard with a continuing sequence number.
+To assign a unique lot number to a set of several items you don't have to encode the lot number one by one. You only need to take a stock move for several products line and click the button :guilabel:`Split move lines in two`. You can then give a lot number prefix and Open ERP will complete the prefix in the wizard with a continuing sequence number.
 
 .. figure:: images/picking_split_lot.png
    :align: center

@@ -27,7 +27,7 @@ You view active charts of accounts using the menu :menuselection:`Financial Mana
 
 The structure of the chart of accounts is hierarchical, with account subtotals called account views. You can develop a set of account views to contain only those elements that interest you.
 
-To get the detail of the account entries that are important to you, all you need to do is click the account. You can also click the  *Print*  icon after selecting one or several accounts (do a  *Ctrl-click*  on each line you want to select). The software gives you a choice of at least two reports: print the ledger or the balance of the selected accounts.
+To get the detail of the account entries that are important to you, all you need to do is click the account. You can also click the :guilabel:`Print` icon after selecting one or several accounts (do a :guilabel:`Ctrl-click` on each line you want to select). The software gives you a choice of at least two reports: print the ledger or the balance of the selected accounts.
 
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits, credits and balance for each account in real time. If you just want to work with a chart of accounts that has structure but shows no totals, use the function :menuselection:`Financial Management --> Charts --> Charts of Accounts --> Fast Charts of Accounts`.
 
@@ -59,7 +59,13 @@ The main account fields are:
 
 *  :guilabel:`Active` : if you deactivate an account (by unchecking the box) it will no longer be visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for account entries can be deactivated.
 
-*  :guilabel:`Account Type` : account types determine an account's use in each journal. By default the following types are available: \ ``View``\  , \ ``Receivable``\  , \ ``Payable``\  , \ ``Income``\  , \ ``Expense``\  , \ ``Tax``\  , \ ``Cash``\   *, * \ ``Asset``\  , \ ``Equity``\  . You can add new types through the menu :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of Accounts`. Use the \ ``View``\   type for accounts that make up the structure of the charts and have no account data inputs of their own.
+*  :guilabel:`Account Type` : account types determine an account's use in each journal. 
+   By default the following types are available: 
+   :guilabel:`View`,:guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`, 
+   :guilabel:`Expense`, :guilabel:`Tax`, :guilabel:`Cash`, :guilabel:`Asset`, :guilabel:`Equity`. 
+   You can add new types through the menu 
+   :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of Accounts`. 
+   Use the :guilabel:`View` type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
 .. index::
    single: Type of account

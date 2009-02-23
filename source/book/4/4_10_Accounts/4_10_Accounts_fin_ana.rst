@@ -7,15 +7,15 @@ Various reports designed for financial analysis are based on the analytic accoun
 Analysis per account
 --------------------
 
-From an analytic form, click on the *Print* button to select a report. Open ERP proposes the following financial analyses:
+From an analytic form, click on the :guilabel:`Print` button to select a report. Open ERP proposes the following financial analyses:
 
-*  *Analytic Balance* ,
+*  :guilabel:`Analytic Balance`,
 
-*  *Inverted Analytic Balance* ,
+*  :guilabel:`Inverted Analytic Balance`,
 
-*  *Cost Ledger* , 
+*  :guilabel:`Cost Ledger`, 
 
-*  *Cost Ledger (quantities only)* .
+*  :guilabel:`Cost Ledger (quantities only)`.
 
 .. index::
    single: Balance; Analytic
@@ -75,9 +75,9 @@ To restrict the report to hours worked, without including sales and purchases, s
 .. tip:: Multiple printing 
 
 	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. 
-	For that select account lines using the Ctrl-Click keyboard and mouse combination.
+	For that select account lines using the :guilabel:`Ctrl-Click` keyboard and mouse combination.
 
-	Then click on Print in the tree or list view to export the whole selection into a single PDF document.
+	Then click on :guilabel:`Print` in the tree or list view to export the whole selection into a single PDF document.
 
 .. index::
    single: Multi-company
@@ -96,11 +96,11 @@ Key indicators
 
 If you use analytic accounts with a structure of accounts by project client you should install the \ ``account_analytic_analysis``\   module. This module adds three new tabs to the analytic account form:
 
-* management indicators in the  *Analysis summary*  tab,
+* management indicators in the :guilabel:`Analysis summary` tab,
 
-* monthly statistics in the  *Stats by month*  tab,
+* monthly statistics in the :guilabel:`Stats by month` tab,
 
-* statistics on each user in the  *Stats by user*  tab.
+* statistics on each user in the :guilabel:`Stats by user` tab.
 
 .. figure::  images/account_analytic_analysis.png
    :align: center

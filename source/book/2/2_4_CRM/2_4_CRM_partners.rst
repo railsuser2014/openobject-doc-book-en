@@ -65,9 +65,9 @@ To the right of the partner form you'll find all of the actions, reports and sho
 
 	Or you can just develop a new module based on the inbuilt SMS functions, targeted at any of the other SMS service suppliers, and use that instead.
 
-To send an SMS message to a partner or a selection of several partners, first select the partners then click the  *Send SMS*  Action icon.
+To send an SMS message to a partner or a selection of several partners, first select the partners then click the :guilabel:`Send SMS` Action icon.
 
-To create a company in Open ERP (that is – a new partner) you should at a minimum enter the company's  *Name*  in the partner form.
+To create a company in Open ERP (that is – a new partner) you should at a minimum enter the company's :guilabel:`Name` in the partner form.
 
 .. index:: Contact
 
@@ -76,7 +76,7 @@ Contacts
 
 You can have several contacts for one partner. Contacts represent company employees that you're in contact with, along with their address details. For each address you can indicate their type (\ ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on this, Open ERP can supply an address that matches the contact's function when generating documents at various stages through an Order process.
 
-Contacts can be entered into the first ( *General* ) tab of the  *Partners*  form, or you can get direct access to the list of addresses through the :menuselection:`Partners --> Partner Contacts` menu.
+Contacts can be entered into the first (:guilabel:`General`) tab of the :guilabel:`Partners` form, or you can get direct access to the list of addresses through the :menuselection:`Partners --> Partner Contacts` menu.
 
 You can search for a subset of Partners and Contacts using their company :guilabel:`Name` or :guilabel:`Contact name` or part of the address, or any of the other search fields in either the :guilabel:`Basic Search` or the :guilabel:`Advanced Search` tab.
 
@@ -114,7 +114,7 @@ To try Open ERP's partner capabilities described here for yourself, log into th
 
 Click :menuselection:`Partners --> Partners by Category` and then click :menuselection:`Suppliers --> Small Suppliers` to find just \ ``Susan Trent``\  . Do this again but now click the  *Suppliers*  category in  *Partners by Category*  and you'll find that both \ ``Plumbing Component Suppliers``\  and \ ``Susan Trent``\   are in the higher-level category: \ ``Susan Trent``\  is there because she's in a child category.
 
-Add new contact \ ``Graham Strong``\   to \ ``Plumbing Component Suppliers``\  . Graham's  *Address Type*  is \ ``Invoice``\  . Click :menuselection:`Partners --> Partner Contacts` and see that both Susan and Graham appear on that list.
+Add new contact \ ``Graham Strong``\   to \ ``Plumbing Component Suppliers``\  . Graham's :guilabel:`Address Type` is \ ``Invoice``\  . Click :menuselection:`Partners --> Partner Contacts` and see that both Susan and Graham appear on that list.
 
 
 .. Copyright © Open Object Press. All rights reserved.

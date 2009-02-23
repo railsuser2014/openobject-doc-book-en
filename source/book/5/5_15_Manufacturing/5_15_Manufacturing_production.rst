@@ -123,9 +123,9 @@ Use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materia
 
     To change the view in the Bill of Materials you can:
 
-    * From the list, select a Bill of Materials name and then click *Other View*,
+    * From the list, select a Bill of Materials name and then click :guilabel:`Other View`,
 
-    * From a product form use the menu to the right *Structure of Bill of Materials*. 
+    * From a product form use the menu :guilabel:`Structure of Bill of Materials` to the right. 
 
 .. figure:: images/mrp_bom.png
    :align: center
@@ -445,7 +445,7 @@ Begin by encoding a customer order. To do this, use the menu :menuselection:`Sal
 
   * Procure method: Make To Order.
 
-Once the quotation has been entered you can confirm it immediately by clicking the button at the bottom to the right *Confirm Order*. Keep note of the order reference because this follows all through the process. Usually, in a new database, this will be “SO007”. At this stage you can look at the process linked to your order using the 'Process' button above and to the right of the form.
+Once the quotation has been entered you can confirm it immediately by clicking the button :guilabel:`Confirm Order` at the bottom to the right. Keep note of the order reference because this follows all through the process. Usually, in a new database, this will be “SO007”. At this stage you can look at the process linked to your order using the 'Process' button above and to the right of the form.
 
 .. figure:: images/mrp_sale_process.png
    :align: center
@@ -460,7 +460,7 @@ Start the requirements calculation using the menu :menuselection:`Manufacturing 
 Producing an Intermediate Product
 -----------------------------------
 
-To understand the implications of requirements calculation, you must know the configuration of the sold product. To do this, go to the form for product PC2 and click on the link to the right: Bill of Materials. You get the scheme show below which is the composition of the selected product.
+To understand the implications of requirements calculation, you must know the configuration of the sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of Materials` to the right. You get the scheme show below which is the composition of the selected product.
 
 .. figure:: images/mrp_product_bom_tree.png
    :align: center
@@ -493,7 +493,7 @@ Start of production: consumption of raw materials,
 
 End of production: manufacture of finished product.
 
-At this stage, you should click to edit the line for the product MB1 to encode a lot number for it. The lot number is usually shown the parent chart, so you should just copy that over. To do that put the cursor in the field Production Lot and press <F1> to create a new lot. Set a lot reference, for example: MB1345678. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
+At this stage, you should click to edit the line for the product MB1 to encode a lot number for it. The lot number is usually shown the parent chart, so you should just copy that over. To do that put the cursor in the field Production Lot and press :guilabel:`<F1>` to create a new lot. Set a lot reference, for example: MB1345678. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
 
 The production order must be in the closed state as shown in the figure below.
 
@@ -543,7 +543,7 @@ When the products have been manufactured, the storesperson automaticallys finds 
 
    *List of packings to do.*
 
-The packing orders are treated by priority of leaving so the storesperson must begin with the orders at the top of the list. Confirm that your packing list has been create by looking for the customer name (Agrolait) or by its reference (SO007). Click on it and then click the button “Approve”.
+The packing orders are treated by priority of leaving so the storesperson must begin with the orders at the top of the list. Confirm that your packing list has been create by looking for the customer name (Agrolait) or by its reference (SO007). Click on it and then click the button  :guilabel:`Approve`.
 
 .. tip:: Packing and Delivery
 
@@ -630,9 +630,9 @@ The location for depositing the finished products.
 
 You can put the Stock location in both places for simplicilty. The field Bill of Materials will automatically be completed by Open ERP when you click the button 'Calculate the Requirements'. You can then overwrite it with another BoM to specify something else to use for this specific manufacture.
 
-The tabs 'Planned Products' and 'Works Orders' are also completed automatically when you click 'Calculate the requirements'. You'll find the raw materials there that are required for the production and the operations needed by the assembly staff.
+The tabs 'Planned Products' and 'Works Orders' are also completed automatically when you click :guilabel:`Calculate the requirements`. You'll find the raw materials there that are required for the production and the operations needed by the assembly staff.
 
-If you want to start production, click the button 'Confirm production', and Open ERP then automatically completes the field 'Products planned'. The information in the first tab can be changed for example if:
+If you want to start production, click the button :guilabel:`Confirm production`, and Open ERP then automatically completes the field 'Products planned'. The information in the first tab can be changed for example if:
 
 * you want to encode a serial number for raw materials,
 
@@ -642,9 +642,9 @@ For traceability you can take the lot numbers from the raw materials used or fro
 
 Once the order is confirmed, you should force the reservation of materials. This means that you're not waiting for the scheduler to assign and reserve the raw materials from your stock for this production. This shortcuts the procurement process. If you don't want to change the priorities, just leave the production order in this state and the scheduler will create a plan based on the priority and your planned date.
 
-To start the production of products, click 'Start Production'. The raw materials are then consumed automatically from stock, which means that the draft movements become 'Done'.
+To start the production of products, click :guilabel:`Start Production`. The raw materials are then consumed automatically from stock, which means that the draft movements become 'Done'.
 
-Once the production is complete, click 'Production Finished'. The finished product are then put into stock.
+Once the production is complete, click :guilabel:`Production Finished`. The finished product are then put into stock.
 
 .. index:: Scheduler
 

@@ -54,15 +54,15 @@ To do this use the menu :menuselection:`Partners --> Configuration --> Categorie
 
 Then create two partners from the menu :menuselection:`Partners --> Partners`. Click on the :guilabel:`New` button to open a blank form and then add the following data for the first partner first:
 
-*  *Name* : \ ``Plumbing Component Suppliers``\  ,
+*  :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
 
-*  *Contact Name* : \ ``Jean Poolley``\  ,
+*  :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
 
-*  *Address Type* : \ ``Default``\  ,
+*  :guilabel:`Address Type` : \ ``Default``\  ,
 
 * add \ ``Suppliers``\   to the :guilabel:`Categories` field by selecting it from the Search List,
 
-* then save the partner by clicking the  *Save*  button. 
+* then save the partner by clicking the :guilabel:`Save` button. 
 
 .. note:: Contact Types 
 
@@ -72,11 +72,11 @@ Then create two partners from the menu :menuselection:`Partners --> Partners`. C
 
 For the second partner, proceed just as you did for the first, with the following data:
 
-*  *Name* : \ ``Smith and Offspring``\  ,
+*  :guilabel:`Name` : \ ``Smith and Offspring``\  ,
 
-*  *Contact Name* : \ ``Stephen Smith``\  ,
+*  :guilabel:`Contact Name` : \ ``Stephen Smith``\  ,
 
-*  *Address Type* : \ ``Default``\  .
+*  :guilabel:`Address Type` : \ ``Default``\  .
 
 Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each category in turn to see the companies in the category.
 
@@ -115,7 +115,7 @@ Now create a new product:
 
 	#. Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field,
 
-	#. Click the Search icon to the right of the :guilabel:`Category` field to select the :guilabel:`Radiators` category,
+	#. Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the :guilabel:`Radiators` category,
 
 	#. The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value. The fields :guilabel:`Procure Method` :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should also stay at their default values: in fact every other field remains untouched.
 
@@ -174,7 +174,7 @@ You can also run multiple charts of accounts in parallel – so you can put all 
 
 Before you can use any chart of accounts for anything you need to specify a Fiscal Year. This defines the different time periods available for accounting transactions. To do so:
 
-	#. Select :menuselection:`Financial Management --> Configuration --> Periods --> Fiscal Years` and click  *New* to open a blank  *Fiscal Year* definition form.
+	#. Select :menuselection:`Financial Management --> Configuration --> Periods --> Fiscal Years` and click :guilabel:`New` to open a blank  *Fiscal Year* definition form.
 
 	#. Give a name to that :guilabel:`Fiscal Year` (such as Financial Year 2009 and a  *Code* (Y2009, then select the  *Start date* and  *End date*  which should be a year apart and (for this example) straddle today's date.
 

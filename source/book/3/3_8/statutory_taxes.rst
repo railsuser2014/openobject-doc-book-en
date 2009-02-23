@@ -225,7 +225,7 @@ To obtain the different journals use the menu :menuselection:`Financial Manageme
 
 	To obtain these different journals install the modules ``sale_journal`` (found at the time of writing in ``addons``, so available in a standard installation) and ``purchase_journal`` (found in ``addons-extra`` at the time of writing, so needing special installation).
 
-Then select one or several journals and click  *Print* . Open ERP then proposes the three following reports:
+Then select one or several journals and click :guilabel:`Print`. Open ERP then proposes the three following reports:
 
 * detailed accounting entries,
 
@@ -284,7 +284,7 @@ This data is updated in real time. That's very useful because it enables you at 
 
 Furthermore, for your tax declaration you can click on one of the tax accounts to investigate the detailed entries that make up the full amount. This helps you search for errors such as when you've coded an invoice at full tax rate where it should be zero-rated for an inter-community trade or for a charity.
 
-In some countries, tax can be calculated on the basis of payments received rather than invoices sent. In this instance choose  *Base on* \ ``Payments``\   instead of  *Base on* \ ``Invoices``\   in the  *Select period*  form. Even if you make your declaration on the basis of invoices sent and received it can be interesting to compare the two reports to see the amount of tax that you pay but haven't yet received from your customers.
+In some countries, tax can be calculated on the basis of payments received rather than invoices sent. In this instance choose :guilabel:`Base on` \ ``Payments``\   instead of :guilabel:`Base on` \ ``Invoices``\   in the :guilabel:`Select period` form. Even if you make your declaration on the basis of invoices sent and received it can be interesting to compare the two reports to see the amount of tax that you pay but haven't yet received from your customers.
 
 .. Copyright © Open Object Press. All rights reserved.
 

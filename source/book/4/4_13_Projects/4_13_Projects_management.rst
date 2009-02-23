@@ -34,7 +34,7 @@ To define a new project, go to the menu :menuselection:`Project Management --> C
 
  :menuselection:`Project Management --> All projects` 
 
-By checking the box  *Warn manager* , you configure the system to send the project manager an Open ERP request every time that a task is closed.
+By checking the box :guilabel:`Warn manager`, you configure the system to send the project manager an Open ERP request every time that a task is closed.
 
 The status of a project can take the following values:
 
@@ -48,7 +48,7 @@ The status of a project can take the following values:
 
  *Partner Info* 
 
-If you check the box  *Warn customer* , you should define a page header and footer in that same tab for use in an email. Open ERP then prepares an email that the user can send to the client each time that a task is completed. The contents of this email are based on details of the project task, and can be modified by the user before the email is sent. 
+If you check the box :guilabel:`Warn customer`, you should define a page header and footer in that same tab for use in an email. Open ERP then prepares an email that the user can send to the client each time that a task is completed. The contents of this email are based on details of the project task, and can be modified by the user before the email is sent. 
 
 .. note:: Study of client satisfaction
 

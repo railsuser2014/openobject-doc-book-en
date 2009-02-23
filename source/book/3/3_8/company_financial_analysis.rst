@@ -107,13 +107,13 @@ Use the menu :menuselection:`Financial Management --> Configuration --> Budgets 
 
 	Rather than edit an existing budget document, make a new version so that you can keep your original estimates safe for comparison. This enables you to analyze your changing perspectives of the company from revision to revision.
 
-Begin data entry by entering a  *Code*  and a  *Name*  in the first tab of your new budget. The budget  *Direction*  can be for \ ``Products``\   or \ ``Charges``\   – choose one. Then, in the second tab,  *Dotations/Expenses* , you can define the charges per period. For each period you can define a quantity and/or an amount spent in the default currency of the chart of accounts.
+Begin data entry by entering a  *Code*  and a  *Name*  in the first tab of your new budget. The budget  *Direction*  can be for \ ``Products``\   or \ ``Charges``\   – choose one. Then, in the second tab :guilabel:`Dotations/Expenses` you can define the charges per period. For each period you can define a quantity and/or an amount spent in the default currency of the chart of accounts.
 
-It's also possible to automatically create the different income and expenses over the periods of a single fiscal year. To do that, click  *Spread*  on the second tab. A window then opens requesting the fiscal year over which you want to budget, and the total quantities and amounts for that year. If you want your budget to cover several years, repeat this operation several times.
+It's also possible to automatically create the different income and expenses over the periods of a single fiscal year. To do that, click :guilabel:`Spread` on the second tab. A window then opens requesting the fiscal year over which you want to budget, and the total quantities and amounts for that year. If you want your budget to cover several years, repeat this operation several times.
 
-Once the charges have been generated you can modify them manually to revise the charges period by period. Once the amounts have been assigned over the period, you must specify the accounts for creating this budget on the third tab,  *Accounts* . 
+Once the charges have been generated you can modify them manually to revise the charges period by period. Once the amounts have been assigned over the period, you must specify the accounts for creating this budget on the third tab :guilabel:`Accounts`. 
 
-To do this, click  *Add*  and make multiple selections for the different accounts to be represented in the budget. Once the three tabs are completed you can save your budget.
+To do this, click :guilabel:`Add` and make multiple selections for the different accounts to be represented in the budget. Once the three tabs are completed you can save your budget.
 
 .. tip:: Multiple selection
 
@@ -126,7 +126,7 @@ To do this, click  *Add*  and make multiple selections for the different account
 
    *Printing a budget.*
 
-To print a budget and make calculations of expenditure to budget use the menu :menuselection:`Financial Management --> Reporting --> Print Budgets`. Open ERP then gives you a list of available budgets. Select one or more budgets and then click  *Print*  to configure the report. The following figure gives an example of a budget produced by Open ERP.
+To print a budget and make calculations of expenditure to budget use the menu :menuselection:`Financial Management --> Reporting --> Print Budgets`. Open ERP then gives you a list of available budgets. Select one or more budgets and then click :guilabel:`Print` to configure the report. The following figure gives an example of a budget produced by Open ERP.
 
 The Accounting Dashboard
 ------------------------
@@ -140,19 +140,19 @@ If you've installed the module \ ``board_account``\  , Open ERP gives you an ac
 
 This gives a description of the different parts of the dashboard, from top to bottom then from left to right:
 
-*  *Analytic accounts to close* : when you're managing cases each analytical account is a project or a contract. This area gives the accounts that must be closed (for example, contracts expired, support hours exceeded).
+*  :guilabel:`Analytic accounts to close` : when you're managing cases each analytical account is a project or a contract. This area gives the accounts that must be closed (for example, contracts expired, support hours exceeded).
 
-*  *Accounts to invoice* : shows analytical accounts where there are charges to be invoiced.
+*  :guilabel:`Accounts to invoice` : shows analytical accounts where there are charges to be invoiced.
 
-*  *Draft invoices* : gives the list of invoices waiting to be approved by an accountant.
+*  :guilabel:`Draft invoices` : gives the list of invoices waiting to be approved by an accountant.
 
-*  *Costs to invoice* : gives the weekly changes which can be, but haven't yet been, invoiced.
+*  :guilabel:`Costs to invoice` : gives the weekly changes which can be, but haven't yet been, invoiced.
 
-*  *Aged receivables* : gives a weekly graph of the receivables that haven't yet been reconciled.
+*  :guilabel:`Aged receivables` : gives a weekly graph of the receivables that haven't yet been reconciled.
 
-*  *Aged revenues* : gives a weekly graph of the company's turnover.
+*  :guilabel:`Aged revenues` : gives a weekly graph of the company's turnover.
 
-In each panel of the accountants' dashboard you can click the  *Zoom*  button at the top right to investigate the detail of your financial indicators.
+In each panel of the accountants' dashboard you can click the :guilabel:`Zoom` button at the top right to investigate the detail of your financial indicators.
 
 The Accounting dashboard is dynamically integrated, which means that you can navigate easily through the data if you want more detail about certain factors, and edit the entries if necessary.
 

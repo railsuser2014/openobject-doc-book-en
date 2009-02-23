@@ -109,7 +109,7 @@ Once the document is encoded, you can print it and Open ERP gives you the price 
 
 Then leave the document in that state. When you receive the response from the supplier, use the menu :menuselection:`Purchase Management --> Supplier Orders --> My Price Requests`. Then select the order and complete it.
 
-When you want to approve the order, use the button *Confirm ??? Supplier*. The price request then passes into the confirmed state. Since this isn't confirmed by the supplier any more, it has no further impact on the system. To approve it click the button *Approved by Supplier*.
+When you want to approve the order, use the button :guilabel:`Confirm ??? Supplier`. The price request then passes into the confirmed state. Since this isn't confirmed by the supplier any more, it has no further impact on the system. To approve it click the button :guilabel:`Approved by Supplier`.
 
 .. todo:: several ??? here, need to replace them.
 

@@ -138,7 +138,7 @@ In the form, the selected product is presented in the language of the user so th
    description, price, quantity, lead time, taxes. 
    In that case Open ERP won't generate a delivery note because the product isn't held in stock.
 
-When all of the products are entered, you can print the quotation and send it to the customer. To do this, click on the report to the right *Quotation / Order*. Open ERP then opens the quotation in PDF to enable to you to see it before printing.
+When all of the products are entered, you can print the quotation and send it to the customer. To do this, click on the report :guilabel:`Quotation / Order` to the right. Open ERP then opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
    :align: center
@@ -891,7 +891,7 @@ Install the ``discount_campaign`` module to generate the rebates at the end of t
 
 A campaign must have a name, a start date, and an end date. After entering this information, you should describe the lines of the campaign. Each line can be applied to a product or a category of products. Then set the quantity of products sold from which the discount is applied, and the amount of the rebate as a percentage of the actual sales volume.
 
-When you've defined the campaign you can active it by clicking the *Open* button. The figure below shows a campaing with a rebate on computers which is between 10% and 20% depending on the sales volume.
+When you've defined the campaign you can active it by clicking the :guilabel:`Open` button. The figure below shows a campaing with a rebate on computers which is between 10% and 20% depending on the sales volume.
 
 .. figure:: images/discount_campaign.png
    :align: center

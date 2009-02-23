@@ -27,7 +27,7 @@ Click :menuselection:`Administration --> Modules Management --> Update Modules L
 
 	Your Open ERP installation must be configured with its addons directory as writable for you to be able to download anything at all. If it hasn't been, then you may need the assistance of a systems administrator to change your server's settings so that you can install new modules.
 
-Click  *Check New Modules*  to start the download from the specified locations. When it's complete you'll see a  *New Modules* window indicating how many new modules were downloaded and how many existing modules were updated. Click  *OK*  to return to the updated list. 
+Click :guilabel:`Check New Modules` to start the download from the specified locations. When it's complete you'll see a :guilabel:`New Modules` window indicating how many new modules were downloaded and how many existing modules were updated. Click :guilabel:`OK` to return to the updated list. 
 
 It won't matter in this chapter if you can't download anything, but some of the later chapters refer to modules that aren't part of the core installation and have to be obtained from a remote repository.
 
@@ -62,11 +62,11 @@ Open the list of uninstalled modules from :menuselection:`Administration --> Mod
 
 .. tip::  Technical Guide 
 
-	If you select a module in any of the module lists by clicking on a module line and then on Technical Guide at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu :menuselection:`Administration --> Modules Management --> Installed Modules` produces the most fruitful list. 
+	If you select a module in any of the module lists by clicking on a module line and then on :guilabel:`Technical Guide` at the top right of the window, Open ERP produces a technical report on that module. It's helpful only if the module is installed, so the menu :menuselection:`Administration --> Modules Management --> Installed Modules` produces the most fruitful list. 
 
 	This report comprises a list of all the objects and all the fields along with their descriptions. The report adapts to your system and reflects any modifications you've made and all the other modules you've installed. 
 
-Click :guilabel:`Apply Upgrades`  then :guilabel:`Start Upgrades`  on the :guilabel:`System Upgrade` form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu :menuselection:`Products` has become available.
+Click :guilabel:`Apply Upgrades` then :guilabel:`Start Upgrades`  on the :guilabel:`System Upgrade` form that appears. Close the window when the operation has completed. Return to the main menu you'll see the new menu :menuselection:`Products` has become available.
 
 .. tip::  Refreshing the menu in the GTK client 
 
@@ -79,7 +79,7 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 
 	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list of modules to install. Search for the \ ``crm``\  module in that list.
 
-	#. Install the module by clicking  *Install* and then  *Apply Upgrades* on the resulting module form, followed by  *Start Upgrade* on the toolbar to the right.
+	#. Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
 
 	#. When the update screen appears, Open ERP gives you the list of modules that it will install and update. You'll find two modules there – \ ``crm``\  (which you selected) and \ ``account``\   What's happened is that the \ ``crm``\  module lists the \ ``account``\  module as a dependency, and \ ``account``\  is not yet installed. So Open ERP automatically installs \ ``account``\  
 

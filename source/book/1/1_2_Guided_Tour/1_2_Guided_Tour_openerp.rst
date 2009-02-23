@@ -81,7 +81,7 @@ If you've applied no filter, the list shows every partner in the system. For spa
 
 If you click on the name of a partner the form view corresponding to that partner opens in Read-Only mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode. Once you have a form you can toggle between the two modes by clicking  *Save*  or  *Cancel*  when in Edit mode and  *Edit*  when in Read-Only mode.
 
-When you're in Read-Only mode you can navigate through the whole list you selected, as though you were in the List view. In Read-Only mode you can also click  *Search*  to see the form in List view again.
+When you're in Read-Only mode you can navigate through the whole list you selected, as though you were in the List view. In Read-Only mode you can also click :guilabel:`Search` to see the form in List view again.
 
 .. index::
   single: Partner; Form View
@@ -117,13 +117,13 @@ You can generate PDF documents about the selected object (or, in list view, abou
 
 *  *Overdue payments* : generate followup letters for overdue payments from partners. Each letter is printed in the language of the partner or, by default, in English.
 
-Certain actions can be started by the following buttons in the  *Actions*  section of the toolbar:
+Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the toolbar:
 
-*  *Company Architecture* : opens a window showing the partners and their children in a hierarchical structure.
+*  :guilabel:`Company Architecture` : opens a window showing the partners and their children in a hierarchical structure.
 
-*  *Send SMS* : enables you to send an SMS to selected partners. This system uses the bulk SMS facilities of the Clickatell® company http://clickatell.com.
+*  :guilabel:`Send SMS` : enables you to send an SMS to selected partners. This system uses the bulk SMS facilities of the Clickatell® company http://clickatell.com.
 
-*  *Mass Mailing* : enables you to send an email to a selection of partners.
+*  :guilabel:`Mass Mailing` : enables you to send an email to a selection of partners.
 
 .. index::
   single: Right Actions

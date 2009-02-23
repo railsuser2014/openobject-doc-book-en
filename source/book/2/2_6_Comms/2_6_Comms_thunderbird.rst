@@ -21,17 +21,17 @@ You'll then have to install the Thunderbird extension. To do that, use the file 
 
 	#. From Thunderbird, open the menu :menuselection:`Tools --> Complementary Modules`.
 
-	#. Click the  *Install* button.
+	#. Click the :guilabel:`Install` button.
 
 	#. Select the file \ ``tiny_plugin-2.0.xpi``\.  
 
-	#. Click  *Install Now* then restart Thunderbird.
+	#. Click :guilabel:`Install Now` then restart Thunderbird.
 
-Once the extension has been installed, you have only to create a shortcut in your Thunderbird toolbar for the function  *Archive to Tiny* . Do it like this:
+Once the extension has been installed, you have only to create a shortcut in your Thunderbird toolbar for the function :guilabel:`Archive to Tiny`. Do it like this:
 
-	#. Click the right mouse button on the toolbar and select  *Personalize* 
+	#. Click the right mouse button on the toolbar and select :guilabel:`Personalize`, 
 
-	#. Place the icon  *Archive to Tiny* in your toolbar in the place of your choice.
+	#. Place the icon :guilabel:`Archive to Tiny` in your toolbar in the place of your choice.
 
 .. tip::  Thunderbird version 
 
@@ -51,7 +51,7 @@ A configuration window appears enabling you to enter configuration data about yo
 
    *Configuration for accessing Open ERP from Thunderbird.*
 
-To archive an email in Open ERP from Thunderbird select the email and click on the icon  *Archive in Tiny* . Alternatively you could right-click the mouse: either opens a search dialog box.
+To archive an email in Open ERP from Thunderbird select the email and click on the icon :guilabel:`Archive in Tiny`. Alternatively you could right-click the mouse: either opens a search dialog box.
 
 This allows you to select an object that you'd like to add to your email and its attachments. You can select a partner, a task, a project, an analytical account, or any other object.
 
@@ -70,14 +70,14 @@ This allows you to select an object that you'd like to add to your email and its
 
 	* organize and structure your documents (such as projects, partners and users) in Open ERP's system.
 
-If you can't find a partner or contact to correspond with your email in Open ERP it's possible to create one on the fly simply by using the information contained in the email and clicking the  *Create*  button.
+If you can't find a partner or contact to correspond with your email in Open ERP it's possible to create one on the fly simply by using the information contained in the email and clicking the :guilabel:`Create` button.
 
 .. figure::  images/thunderbird_creation.png
    :align: center
 
    *Creating a contact on the fly from Thunderbird.*
 
-To access archived data from different documents in Open ERP you can use the  *Email Thunderbird*  interface that appears over Open ERP documents.
+To access archived data from different documents in Open ERP you can use the :guilabel:`Email Thunderbird` interface that appears over Open ERP documents.
 
 .. note:: Testing the Thunderbird adapter 
 

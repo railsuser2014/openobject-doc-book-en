@@ -57,7 +57,7 @@ In the window that you use for configuring the Outlook plugin you can enter para
 
 * which color to give emails transferred to Open ERP.
 
-Once the server data entry is completed, click  *Test the Connection*  to check that your parameters make it function correctly.
+Once the server data entry is completed, click :guilabel:`Test the Connection` to check that your parameters make it function correctly.
 
 .. figure::  images/outlook_config.png
    :align: center

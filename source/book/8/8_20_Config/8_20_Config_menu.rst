@@ -68,7 +68,7 @@ To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleti
 Personalizing the welcome page for each user
 --------------------------------------------
 
-When you sign into Open ERP for the first time, a welcome page appears. In a minimal system, such as that created in the original \ ``openerp_ch02``\  database before it was expanded in that chapter, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you get by default when you click the *Main Menu* button. As you add functionality to your database you get more choices for the welcome page, with different dashboards automatically assigned to various company roles as they're created in the demonstration data.
+When you sign into Open ERP for the first time, a welcome page appears. In a minimal system, such as that created in the original \ ``openerp_ch02``\  database before it was expanded in that chapter, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you get by default when you click the :menuselection:`Main Menu` button. As you add functionality to your database you get more choices for the welcome page, with different dashboards automatically assigned to various company roles as they're created in the demonstration data.
 
 The administrator can change both the welcome page and the main menu page individually for each user of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
 

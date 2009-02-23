@@ -132,7 +132,7 @@ Order SO001 – you can either check the checkbox to its left, or you can open
 the order itself by clicking the order date to the left of its name in the
 list.
 
-To view the process for that specific order, click the *Process* button at the
+To view the process for that specific order, click the :guilabel:`Process` button at the
 top right of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
 node whose left edge is coloured maroon rather than grey.
@@ -148,17 +148,17 @@ invoicing based on deliveries (the order is in an invoicing mode that's based
 on orders, not deliveries).
 
 The process is completely dynamic and based on that specific sale order
-document. You can click each of the process nodes (Quotation, Sale Order,
-Procurement, Draft Invoice, Outgoing Products) using one of the links or icons
+document. You can click each of the process nodes (:guilabel:`Quotation`, :guilabel:`Sale Order`,
+:guilabel:`Procurement`, :guilabel:`Draft Invoice`, :guilabel:`Outgoing Products`) using one of the links or icons
 on it:
 
-* Obtaining the documentation and the corresponding process in the quality manual, using the Help (or Information) icon,
+* Obtaining the documentation and the corresponding process in the quality manual, using the :guilabel:`Help` (or :guilabel:`Information`) icon,
 
-* Opening the corresponding Open ERP document, using the Open icon,
+* Opening the corresponding Open ERP document, using the :guilabel:`Open` icon,
 
-* Printing the document, using the Print icon,
+* Printing the document, using the :guilabel:`Print` icon,
 
-* Printing the technical workflow by using the Gears (or Print Workflow) icon.
+* Printing the technical workflow by using the Gears (or :guilabel:`Print Workflow`) icon.
 
 * Obtaining the documents that an employee needs to carry out the process by clicking the green arrow icon,
 
@@ -181,7 +181,7 @@ transition:
 
 Confirm quotation SO001 by clicking on the icon of a person beside the
 maroon-coloured transition that takes the document from quotation to order.
-Then click the *Confirm* button. The process automatically moves on to the next
+Then click the :guilabel:`Confirm` button. The process automatically moves on to the next
 state and updates its references to some new delivery reservations that you've
 just created (see the third tab, *History*, for a reference to the Packing List
 PACK13).
@@ -214,7 +214,7 @@ New employee induction
 
 Open the employee form for Fabien Pinckaers from the menu 
 :menuselection:`Human Resources --> Employees --> All Employees`. 
-Click the *Process* button to open the detailed
+Click the :guilabel:`Process` button to open the detailed
 process of engagement.
 
 .. figure:: images/process_employee_flow.png
@@ -334,7 +334,7 @@ Using processes effectively
 ----------------------------
 
 Regardless of which Open ERP screen you're in you can call up a process on the
-current document by clicking the 'Process' icon. Depending on the document you
+current document by clicking the :guilabel:`Process` icon. Depending on the document you
 can have several processes defined using it, Open ERP then asks you to choose
 which one of them you want.
 

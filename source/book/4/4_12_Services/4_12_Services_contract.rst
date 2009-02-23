@@ -39,7 +39,7 @@ The new Sales Order document starts in the \ ``Quotation``\   state, so the esti
 
 Once the order has been approved, Open ERP will automatically generate an invoice and/or a delivery document proposal based on the parameters you set in the order. 
 
-The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping Policy` on the order's second tab,  *Other data* :
+The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping Policy` on the order's second tab :guilabel:`Other data` :
 
 *  :guilabel:`Payment before delivery` : Open ERP creates an invoice in the \ ``Draft``\   state. Once this is confirmed and paid the delivery is activated.
 
@@ -122,7 +122,7 @@ Open ERP then displays all of the costs that haven't yet been invoiced. You can
 	The menu :menuselection:`Project Management --> Analytic Accounts` is only available once you have installed the module ``account_analytic_analysis``. 
 	It provides various global financial and operational views of a project manager's projects.
 
-Select a project and open its analytic entries using the  *Costs to invoice*  button. You'll find a list of costs that can be invoiced to the client:
+Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You'll find a list of costs that can be invoiced to the client:
 
 * time worked,
 
@@ -130,7 +130,7 @@ Select a project and open its analytic entries using the  *Costs to invoice*  bu
 
 * purchase of raw materials.
 
-You can then invoice the selected lines using the action  *Invoice costs* .
+You can then invoice the selected lines using the action :guilabel:`Invoice costs`.
 
 Fixed-price contracts invoiced as services are worked
 -----------------------------------------------------

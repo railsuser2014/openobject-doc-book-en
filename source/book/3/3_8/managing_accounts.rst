@@ -28,9 +28,9 @@ When members of your accounts department sign on to the Open ERP system, they'r
 
 .. index:: Balance; Aged
 
-In the dashboard, the graph at the right entitled  *Aged Receivables*  represents your receivables week by week. That shows you at a glance the cumulative amount of your customer debtors by week.
+In the dashboard, the graph at the right entitled :guilabel:`Aged Receivables` represents your receivables week by week. That shows you at a glance the cumulative amount of your customer debtors by week.
 
-All of Open ERP's graphs are dynamic. So you can, for example, filter the data by clicking  *Zoom*  and then  *Filter*  on the Search form. Or just click on  *Zoom*  to open in a larger window for a graph, then click  *Search*  to display this in a list view.
+All of Open ERP's graphs are dynamic. So you can, for example, filter the data by clicking :guilabel:`Zoom`  and then :guilabel:`Filter` on the Search form. Or just click on :guilabel:`Zoom` to open in a larger window for a graph, then click :guilabel:`Search` to display this in a list view.
 
 To obtain a more detailed report of the aged balance (or order by past date) use the menu :menuselection:`Finance --> Accounting --> Reporting --> Partner Accounts --> Aged Partner balance`. 
 
@@ -73,7 +73,7 @@ Finally you can look up individual account entries by searching for useful infor
 
 	It's helpful to remember that you can export all types of resource in Open ERP. 
 	From the web client you need to navigate to a search list for the resource then click 
-	the Export link at the bottom left of the list. 
+	the :guilabel:`Export` link at the bottom left of the list. 
 	From the GTK client you'd use the menu :menuselection:`Form --> Export`. 
 	This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc, 
 	by exporting accounting entries.

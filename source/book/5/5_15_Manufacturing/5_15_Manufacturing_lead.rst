@@ -215,7 +215,7 @@ So if you use routings, Open ERP automatically calculates the operations require
 
 But the routings also enable you to manage your production capacity. You will be able to leave the demand charts for the days / weeks / months ahead to validate that you don't forecast more than you are capable of producing.
 
-To see a demand chart, list the workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Workcenters`. Then select one or several workcenters and click on the action *Workcenter load*. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
+To see a demand chart, list the workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Workcenters`. Then select one or several workcenters and click on the action :guilabel:`Workcenter load`. Open ERP then asks you if you work in cycles or in hours and your interval is calculated (by day, week or month).
 
 .. figure:: images/mrp_workcenter_load.png
    :align: center
@@ -247,7 +247,7 @@ To work using work orders you must install the optional module ``mrp_operations`
 
    *List of operations to be carried out.*
 
-Operations must then be carried out one by one. On each operation the operator can click on 'Start operation' and then 'Close Operation'. The time is then worked out automatically on the operation between the two changes of status. The operator can also put the operation on hold and start again later.
+Operations must then be carried out one by one. On each operation the operator can click on :guilabel:`Start operation` and then :guilabel:`Close Operation`. The time is then worked out automatically on the operation between the two changes of status. The operator can also put the operation on hold and start again later.
 
 The following process is attached to each operation.
 
@@ -365,7 +365,7 @@ If a product must be 'in stock' but is not available in your stores, Open ERP wi
 
    *Example of a procurement in exception.*
 
-If no procurement rule is defined the exception must be corrected manually by the user. Once the exception is corrected you can restart by clicking on 'Retry'. If you don't do that then Open ERP will automatically recalcualte on the next automated requirements calculation.
+If no procurement rule is defined the exception must be corrected manually by the user. Once the exception is corrected you can restart by clicking on :guilabel:`Retry`. If you don't do that then Open ERP will automatically recalculate on the next automated requirements calculation.
 
 Manual procurement
 ==================

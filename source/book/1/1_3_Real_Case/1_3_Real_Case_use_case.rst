@@ -88,7 +88,7 @@ Use the menu :menuselection:`Administration --> Modules Management --> Modules -
 
 	#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \ ``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
 
-	#. Return to the :guilabel:`Module` tab and then click its  *Install* button.
+	#. Return to the :guilabel:`Module` tab and then click its :guilabel:`Install` button.
 
 	#. Click :guilabel:`Apply Upgrades` in the toolbar to the right.
 

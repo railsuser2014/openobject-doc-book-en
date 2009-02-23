@@ -238,9 +238,11 @@ Select entries that you want to reconcile. From the selection, Open ERP indicat
 
 	            .. figure::  images/account_sample2_entries.png
 	               :align: center
-	               :scale: 80   
+	               :scale: 80
+	               
+	               ..
 
-			You see an invoice for 1900 and a payment two weeks later of 1900 with the same reference. You can select the two lines in that view. The total at the bottom of the page shows you that the credit amount equals the debit amount for the selected line. Click Reconcile Entries to reconcile the two lines.
+			You see an invoice for 1900 and a payment two weeks later of 1900 with the same reference. You can select the two lines in that view. The total at the bottom of the page shows you that the credit amount equals the debit amount for the selected line. Click :guilabel:`Reconcile Entries` to reconcile the two lines.
 
 			After this these lines can't be selected and won't appear when the entries are listed again. If there's a difference between the two entries, Open ERP suggests that you make an adjustment. This adjustment is a compensating entry that enables a complete reconciliation. You must therefore specify the journal and the account to be used for the adjustment.
 
@@ -371,7 +373,7 @@ Then you must indicate the  *Preferred date*  for payment:
 
 The date is particularly important for the preparation of electronic transfers because banking interfaces enable you to select a future execution date for each operation. So to configure your Open ERP most simply you can choose to pay all invoices automatically by their deadline.
 
-You must then select the invoices to pay. They can be manually entered in the field :guilabel:`Payment Line` but it's easier to add them automatically. For that, click  *Add payment lines*  and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
+You must then select the invoices to pay. They can be manually entered in the field :guilabel:`Payment Line` but it's easier to add them automatically. For that, click :guilabel:`Add payment lines` and Open ERP will then propose lines with payment deadlines. For each deadline you can see:
 
 * the invoice :guilabel:`Effective date`,
 
@@ -403,7 +405,7 @@ You can then accept the payment proposed by Open ERP or select the entries that
 
 You can modify the first three fields on each line: the account, the supplier's bank account and the amount that will be paid. This arrangement is very practical because it gives you complete visibility of all the company's trade payables. You can pay only a part of an invoice, for example, and in preparing your next payment order Open ERP automatically suggests payment of the remainder owed.
 
-When the payment has been prepared correctly, click  *Confirm* . The payment then changes to the \ ``Open``\   state and a new button appears that can be used to start the payment process. Depending on the chosen payment method, Open ERP provides a file containing all of the payment orders. You can send this to the bank to make the payment transfers.
+When the payment has been prepared correctly, click :guilabel:`Confirm`. The payment then changes to the \ ``Open``\   state and a new button appears that can be used to start the payment process. Depending on the chosen payment method, Open ERP provides a file containing all of the payment orders. You can send this to the bank to make the payment transfers.
 
 In future versions of Open ERP it's expected that the system will be able to prepare and print cheques.
 

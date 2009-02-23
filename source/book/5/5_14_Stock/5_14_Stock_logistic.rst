@@ -11,7 +11,7 @@ Stock locations
 
 You've seen in the preceding sections that the whole of stock management is built on a concept of stock locations. Locations are structured hierarchically to account for the subdivision of a warehouse into sections, aisles, and/or cupboards. The hierarchical view also enables you to structure virtual locations such as production counterparts. That gives you a finer level of analysis. 
 
-Use the menu :menuselection:`Stock Management --> Configuration --> Locations` then click *New* to define new locations.
+Use the menu :menuselection:`Stock Management --> Configuration --> Locations` then click :guilabel:`New` to define new locations.
 
 .. figure:: images/stock_location_form.png
    :align: center

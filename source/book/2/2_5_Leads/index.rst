@@ -82,9 +82,9 @@ For this chapter you should create a new database. After installing the database
 
 Once the database is installed, Open ERP proposes that you configure it with a series of questions:
 
-* Creating users: click *Skip*,
+* Creating users: click :guilabel:`Skip`,
 
-* Simplified or Extended mode: select simplified and click *Ok*,
+* Simplified or Extended mode: select simplified and click :guilabel:`Ok`,
 
 * Select the CRM functionality to install.
 
@@ -201,14 +201,14 @@ When a new lead has been created it's automatically put into the open state.
 
 It's also possible to import a huget list of leads. That's useful if you've bought a database of potential prospects and you want to insert them all into the system to handle them all at once. 
 
-To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu :menuselection:`CRM & SRM --> Presales -> Leads -> My Leads`. At the bottom of the list click on the *Import* link. Open ERP opens a form for importing the data.
+To do that you should start with a list of leads in CSV format. If your prospects are provided in another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc. Open the leads list using the menu :menuselection:`CRM & SRM --> Presales -> Leads -> My Leads`. At the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a form for importing the data.
 
 .. figure:: images/crm_lead_import.png
    :align: center
 
    *Importing leads into the system.*
 
-You then set which columns are present in your CSV file in the correct order. Then select your file and click on *Import*. Check in the chapter about system administration for more information on import and export.
+You then set which columns are present in your CSV file in the correct order. Then select your file and click on :guilabel:`Import`. Check in the chapter about system administration for more information on import and export.
 
 .. tip:: Various Imports
 

@@ -183,13 +183,13 @@ Here's a summary of the procedure:
 
 	#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\ then select it for installation along with its dependencies.
 
-	#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for installation along with their dependencies. Click  *Update Now* to install it all.
+	#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for installation along with their dependencies. Click :guilabel:`Update Now` to install it all.
 
 	#. Close Synaptic Package Manager.
 
 Installing PostgreSQL results in a database server that runs and restarts automatically when the PC is turned on. If all goes well with the tinyerp-server package then tinyerp-server will also install, and restart automatically when the PC is switched on.
 
-Start the Tiny ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu, or by opening a terminal window and typing \ ``tinyerp-client``\  . The Tiny ERP login dialog box should open and show the message  *No database found you must create one!*.
+Start the Tiny ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu, or by opening a terminal window and typing \ ``tinyerp-client``\  . The Open ERP login dialog box should open and show the message :guilabel:`No database found you must create one!`.
 
 Although this installation method is simple and therefore an attractive option, it's better to install Open ERP using a version downloaded from http://openerp.com. The downloaded revision is likely to be far more up to date than that available from a Linux distribution.
 
@@ -216,7 +216,7 @@ To download the PostgreSQL database and all of the other dependencies for Open 
 
 	#. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.3``\   then select it for installation along with its dependencies.
 
-	#. Select \ ``python-xml``\   \ ``python-libxml2``\   \ ``python-libxslt1``\   \ ``python-psycopg2``\  ``python-tz``\   \ ``python-imaging``\   \ ``python-pyparsing``\   \ ``python-reportlab``\   \ ``graphviz``\  and its dependences, \ ``python-matplotlib``\  and its ependences (some of which might already be installed), then click  *Update Now* to install them.
+	#. Select \ ``python-xml``\   \ ``python-libxml2``\   \ ``python-libxslt1``\   \ ``python-psycopg2``\  ``python-tz``\   \ ``python-imaging``\   \ ``python-pyparsing``\   \ ``python-reportlab``\   \ ``graphviz``\  and its dependences, \ ``python-matplotlib``\  and its dependencies (some of which might already be installed), then click :guilabel:`Update Now` to install them.
 
 .. index::
    single: Python
@@ -271,14 +271,15 @@ To install an Open ERP GTK client, follow the steps below:
 
 	When you start the GTK client for the first time, a dialog box appears asking for various details that are intended to help the Tiny company assess the prospective user base for its software.
 
-	If you click the Cancel button, the window goes away – but Open ERP will ask the same questions again next time you start the client. It's best to click OK, even if you choose to enter no data, to prevent that window reappearing next time.
+	If you click the :guilabel:`Cancel` button, the window goes away – but Open ERP will ask the same questions again next time you start the client. It's best to click :guilabel:`OK`, even if you choose to enter no data, to prevent that window reappearing next time.
 
 .. figure:: images/terp_client_startup.png
    :align: center
 
-Open a terminal window to start the client using the command openerp-client. When you start the client on the same Linux PC as the server you'll find that the default connection parameters will just work without needing any change. The message  *No database found, you must create one!*  shows you that the connection to the server has been successful and you need to create a database on the server.
+Open a terminal window to start the client using the command openerp-client. When you start the client on the same Linux PC as the server you'll find that the default connection parameters will just work without needing any change. The message :guilabel:`No database found, you must create one!`  shows you that the connection to the server has been successful and you need to create a database on the server.
 
 Creating the database
+^^^^^^^^^^^^^^^^^^^^^
 
 You can connect other GTK clients over the network to your Linux server. Before you leave your server, make sure you know its network address – either by its name (such as \ ``mycomputer.mycompany.net``\  ) or its IP address (such as \ ``192.168.0.123``\  ).
 
@@ -289,7 +290,7 @@ You can connect other GTK clients over the network to your Linux server. Before 
 
 	Communications between an Open ERP client and server are based on standard protocols. You can connect Windows clients to a Linux server, or vice versa, without problems. It's the same for Mac versions of Open ERP – you can connect Windows and Linux clients and servers to them.
 
-To install an Open ERP client on a computer under Linux, repeat the procedure shown earlier in this section. You can connect different clients to the Open ERP server by modifying the connection parameters on each client. To do that, click the Change button on the connection dialog and set the following field as needed:
+To install an Open ERP client on a computer under Linux, repeat the procedure shown earlier in this section. You can connect different clients to the Open ERP server by modifying the connection parameters on each client. To do that, click the :guilabel:`Change` button on the connection dialog and set the following field as needed:
 
 *  :guilabel:`Server` : \ ``name``\   or \ ``IP address``\   of the server over the network,
 
@@ -301,7 +302,7 @@ To install an Open ERP client on a computer under Linux, repeat the procedure s
 .. figure:: images/terp_client_server.png
    :align: center
 	
-*Dialog box for defining connection parameters to the server.*
+   *Dialog box for defining connection parameters to the server.*
 
 It's possible to connect the server to the client using a secure protocol to prevent other network users from listening in, but the installation described here is for direct unencrypted connection.
 

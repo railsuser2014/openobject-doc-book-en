@@ -241,13 +241,13 @@ To illustrate the export of data, you can follow the steps below to export infor
 
 	#. In Open ERP, select :menuselection:`Partners --> Partners` to show a list of partners. Search for a specific  *Name* (here, \ ``Black``\   to display only the one line.
 
-	#. Click  *Export* to bring up the  *Export Data* dialog box.
+	#. Click :guilabel:`Export` to bring up the :guilabel:`Export Data` dialog box.
 
 	#. All of the fields available are shown in the All fields section to the left – that corresponds to all of the fields visible on the form, including all of the fields that come from links to other tables in the underlying database.
 
-	#. Select the fields that interest you by adding them to the  *Fields to Export* section using the  *Add* button.
+	#. Select the fields that interest you by adding them to the :guilabel:`Fields to Export` section using the :guilabel:`Add` button.
 
-	#. Click Export to export a CSV file or, if your client is on a Windows PC, you have an option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table similar to the one below.
+	#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have an option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table similar to the one below.
 
 
 .. csv-table::  **Partner data in the exported file**
@@ -261,13 +261,13 @@ To illustrate the export of data, you can follow the steps below to export infor
 
 In the table above:
 
-*  *Column A*  contains text data for the  *Name*  field in the  *Partners table* .
+*  :guilabel:`Column A` contains text data for the :guilabel:`Name` field in the :guilabel:`Partners` table.
 
-*  *Column B*  contains text data for the  *Category name*  field in the  *many-to-many*  related  *Partner Category* table: if there are several categories they're listed in that column with all other lines remaining blank except for any other fields in the Partner Category table that may also have been selected.
+*  :guilabel:`Column B`  contains text data for the :guilabel:`Category name` field in the  *many-to-many*  related :guilabel:`Partner Category` table: if there are several categories they're listed in that column with all other lines remaining blank except for any other fields in the :guilabel:`Partner Category` table that may also have been selected.
 
-*  *Column C*  contains text data for the  *Name*  field in the  *one-to-many*  related  *Partner contact*  table: if there are several partner contacts then they're listed in that column with all other lines remaining blank except for any other fields in the partner contact tables that may also have been selected.
+*  :guilabel:`Column C` contains text data for the :guilabel:`Name` field in the  *one-to-many*  related :guilabel:`Partner contact` table: if there are several partner contacts then they're listed in that column with all other lines remaining blank except for any other fields in the partner contact tables that may also have been selected.
 
-*  *Column D*  contains text data for the Salesman, which is the  *Name*  field in the  *many-to-one*  related  *User*  table. It is listed only on the same line as the Partner itself.
+*  :guilabel:`Column D` contains text data for the Salesman, which is the :guilabel:`Name` field in the  *many-to-one*  related :guilabel:`User` table. It is listed only on the same line as the Partner itself.
 
 .. tip:: Module Recorder
 

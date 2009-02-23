@@ -56,7 +56,7 @@ Click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get 
 
 	Using database openerp_04X (which has a substantial amount of data in it), 
 	click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a hierarchical list, 
-	then click a section name, such as *Helpdesk* or *Support*, to list the cases that have been assigned to that section.
+	then click a section name, such as :guilabel:`Helpdesk` or :guilabel:`Support`, to list the cases that have been assigned to that section.
 	
 .. index::
    single: Case; Categories
@@ -88,7 +88,7 @@ Menu
 
 Once the sections and the categories are defined you can generate some menus to make it easier to use these cases. In database \ ``openerp_ch04``\  , select the menu :menuselection:`CRM & SRM --> Configuration --> Create Menus` for a New Section* .
 
-The procedure is to create the name of the new menu in  *Menu base name* , select the name of a suitable  *Parent menu*  for the menu and the  *Case Section*  name, then click  *Create menu Entries* . Following this procedure, create the following menus:
+The procedure is to create the name of the new menu in :guilabel:`Menu base name`, select the name of a suitable :guilabel:`Parent menu` for the menu and the :guilabel:`Case Section` name, then click :guilabel:`Create menu Entries`. Following this procedure, create the following menus:
 
 
 .. csv-table:: **Example of creating menus that make it easier to use cases**    
@@ -188,15 +188,15 @@ Create a case in database \ ``openerp_ch04``\   from :menuselection:`Sales Manag
 	If the email gateway is configured properly you'll no longer have to enter cases manually 
 	through the menu system – they'll just be created from incoming emails.
 
-A case starts in the \ ``Draft``\   state once it's been created. You can then open it to indicate that you're working on it by clicking the  *Open*  button. 
+A case starts in the \ ``Draft``\   state once it's been created. You can then open it to indicate that you're working on it by clicking the :guilabel:`Open`  button. 
 
-To enter text about the request or about actions taken to satisfy it, type an entry in free text. To save the history of your comments, click  *Historize* . If you click  *Send Partner and Historize*  the partner will also receive a copy of your comment as you save it.
+To enter text about the request or about actions taken to satisfy it, type an entry in free text. To save the history of your comments, click :guilabel:`Historize`. If you click :guilabel:`Send Partner and Historize` the partner will also receive a copy of your comment as you save it.
 
-While the case is open you can click  *Close*  if it's been completed or  *Cancel*  if it's to go no further. If you want the case to wait for a response from a partner click  *Pending* .
+While the case is open you can click :guilabel:`Close`  if it's been completed or :guilabel:`Cancel` if it's to go no further. If you want the case to wait for a response from a partner click :guilabel:`Pending`.
 
 Add some text for this example case in \ ``openerp_ch04``\  , then close it. 
 
-If you've organized the sections in a hierarchical structure you can click on  *Escalate* . The case then escalates into the parent section. You can't do that with the Business Opportunity that you just defined, which is single-level but you could with a Support L1 case. For example if a developer on level 1 can't handle a customer problem then she can escalate the request to level 2 where it can be handled by a more experienced user.
+If you've organized the sections in a hierarchical structure you can click on :guilabel:`Escalate`. The case then escalates into the parent section. You can't do that with the Business Opportunity that you just defined, which is single-level but you could with a Support L1 case. For example if a developer on level 1 can't handle a customer problem then she can escalate the request to level 2 where it can be handled by a more experienced user.
 
 .. tip:: Assigning a case
 
@@ -269,7 +269,7 @@ Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reportin
    *Analyzing the performance of your support team.*
 
 
-If you want to analyze the performance of your service and support group, for example, use the graph from :menuselection:`CRM & SRM --> Reporting --> All Months --> Cases by User and Section`. Click the menu to obtain a list view, then click the :guilabel:`Graph` button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click  *Filter* , and see the graph change to reflect the new data.
+If you want to analyze the performance of your service and support group, for example, use the graph from :menuselection:`CRM & SRM --> Reporting --> All Months --> Cases by User and Section`. Click the menu to obtain a list view, then click the :guilabel:`Graph` button to the top right of the list. The system shows you statistics per user and it's possible to filter on each section and use other criteria for searching. For example, you can type in a date range, click :guilabel:`Filter`, and see the graph change to reflect the new data.
 
 By default, the system provides a list containing the following information for each month, user and section, and an indication of the state of each set of information:
 
@@ -287,7 +287,7 @@ By default, the system provides a list containing the following information for 
 
 	You can obtain more information about a user or a case section from these reports, drilling down into the data displayed. 
 
-	In the web client you click the appropriate text string on one of the lines (such as Demo User or Helpdesk and Support) to open a form for it, and then click one of the buttons in the Action toolbar to the right of the User or Section form that is displayed.
+	In the web client you click the appropriate text string on one of the lines (such as :guilabel:`Demo User` or :guilabel:`Helpdesk and Support`) to open a form for it, and then click one of the buttons in the :guilabel:`Action` toolbar to the right of the User or Section form that is displayed.
 
 	In the GTK client you'd right-click over the text instead – this brings up a context menu with the same options as the web client would give you.
 
@@ -465,27 +465,27 @@ To use the email gateway you must install it on your server. You can use a varie
 
 To start with you have to create an email account (POP3 or IMAP) for each Section that you'll want to connect an email to. If you have the support email address \ ``support@pop.mycompany.com``\   you'd use the following entries:
 
-*  *POP server* : \ ``pop.mycompany.com``\  ,
+*  :guilabel:`POP server` : \ ``pop.mycompany.com``\  ,
 
-*  *User* : \ ``support``\  ,
+*  :guilabel:`User` : \ ``support``\  ,
 
-*  *Password* : \ ``<mypass>``\  .
+*  :guilabel:`Password` : \ ``<mypass>``\  .
 
 You'll also need to choose an Open ERP user that the gateway will use to access your database, such as:
 
-*  *User Id* : \ ``3``\  ,
+*  :guilabel:`User Id` : \ ``3``\  ,
 
-*  *Password* : \ ``support``\  .
+*  :guilabel:`Password` : \ ``support``\  .
 
 .. tip:: Identifying a resource
 
 	Each resource on the Open ERP system has a unique identifier number. This corresponds to an identifier in the underlying PostgreSQL database table, in the ID column for that resource.
 
-	With the web client you can usually find this number by going to the form view of a resource and clicking the View Log button to the top right of the form. The ID is shown at the top of the Information dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
+	With the web client you can usually find this number by going to the form view of a resource and clicking the :guilabel:`View Log` button to the top right of the form. The ID is shown at the top of the Information dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
 
 	You can also use the GTK client for this. Viewing any resource, such as a User, you can directly see its ID at the bottom left of the form.
 
-Then specify the case section in Open ERP that you'll use when this user is connected by email, for example, the \ ``Helpdesk and Support``\   section.
+Then specify the case section in Open ERP that you'll use when this user is connected by email, for example, the :guilabel:`Helpdesk and Support`  section.
 
 Install Fetchmail on your Open ERP server. You can download it from the address http://fetchmail.berlios.de/.
 

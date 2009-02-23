@@ -91,7 +91,7 @@ Save the user, then go into the menu :menuselection:`Administration --> Security
 	in each section of the main menu. This is a general convention.
 	For example, :menuselection:`Partners --> Configuration` is visible in the administrator's menu amongst the other Partner menu items, 
 	but only those other menu entries are visible to other users. 
-	Similarly, the main menu entry *Administration* is, by convention, visible only to users who are members of the admin group.
+	Similarly, the main menu entry :menuselection:`Administration` is, by convention, visible only to users who are members of the admin group.
 
 .. index::
    single: Access rights; Objects
@@ -147,7 +147,7 @@ Modification history
 
    *Partner Record history.*
 
-Each record in a Tiny ERP database carries a note of its history. You can then find out who it was created by and when that occurred, and who last modified it and when that occurred. Click the *View Log* icon at the top right of any form in the web client (but only when it's read-only, not when it's editable) to display a dialog box showing this information, as shown in the figure below. It can help you identify who to contact if there are any problems with the data in the records.
+Each record in a Tiny ERP database carries a note of its history. You can then find out who it was created by and when that occurred, and who last modified it and when that occurred. Click the :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-only, not when it's editable) to display a dialog box showing this information, as shown in the figure below. It can help you identify who to contact if there are any problems with the data in the records.
 
 
 .. Copyright © Open Object Press. All rights reserved.

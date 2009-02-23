@@ -51,7 +51,7 @@ Complete your document and insert Open ERP fields into the appropriate places.
 	This colour indicates that you can't use that particular field because it has a complex data 
 	relationships that can only be discovered when you start to use the field.
 
-Select the merge tool from by clicking  *Perform Mail Merge*  from the toolbar. This connects Microsoft Word to Open ERP, at which point it searches for data to insert into the document. This tool enables you to select which documents must be included in the report. Make your selection and click  *Start Merge*  to run the tool that produces your different documents.
+Select the merge tool from by clicking :guilabel:`Perform Mail Merge` from the toolbar. This connects Microsoft Word to Open ERP, at which point it searches for data to insert into the document. This tool enables you to select which documents must be included in the report. Make your selection and click :guilabel:`Start Merge` to run the tool that produces your different documents.
 
 .. figure::  images/word_select.png
    :align: center

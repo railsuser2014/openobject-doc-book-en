@@ -36,7 +36,7 @@ To create new databases you must know the super-administrator password which def
 
    .. todo:: this isn't right any more
 
-   After first installation, the password is ``admin``. You can change it through the GTK client from the menu :menuselection:`File --> Database ... --> Administrator Password`, or through the web client by logging out (click the Logout link), clicking *Manage* on the login screen, and then clicking the *Password* button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
+   After first installation, the password is ``admin``. You can change it through the GTK client from the menu :menuselection:`File --> Database ... --> Administrator Password`, or through the web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Manage` on the login screen, and then clicking the :guilabel:`Password` button on the Management screen. This password is stored in a configuration file outside the database, so your server systems administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
    :align: center
@@ -55,7 +55,7 @@ To create new databases you must know the super-administrator password which def
 Database openerp_ch01
 ---------------------
 
-To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database` field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click  *Ok* . 
+To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the :guilabel:`New database` field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as it's installed. Choose the default language for this database (English for many readers of this book), then click :guilabel:`Ok`. 
 
 Wait for the message showing that the database has been successfully created, along with the user accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed database you can extend it without knowing the super administrator password.
 

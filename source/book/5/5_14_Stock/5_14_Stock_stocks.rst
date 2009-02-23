@@ -111,13 +111,13 @@ Supplier goods receipt forms are automatically prepared by Open ERP by the purch
 
    *List of items waiting.*
 
-You can also do goods in data entry manually if there's no order, using the menu :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed` followed by a click on :guilabel:`*New`.
+You can also do goods in data entry manually if there's no order, using the menu :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed` followed by a click on :guilabel:`New`.
 
 A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Partner field` and you can type in the reference number from your supplier in the field :guilabel:`Origin`. You should then enter data about the products received in lines.
 
 The source location is already completed by default because of your supplier selection. You should then give the destination location where you will place the products. For example, enter ``Stock``. At this stage you can set a lot number for traceability (this function will be described later in this chapter, so leave this field empty for the moment).
 
-Once the form has been completed you can confirm the receipt of all the products at the same time using the *Process Now* button. If you want to enter data for a receipt that you're still waiting for click the button :guilabel:`Process Later`.
+Once the form has been completed you can confirm the receipt of all the products at the same time using the :guilabel:`Process Now` button. If you want to enter data for a receipt that you're still waiting for click the button :guilabel:`Process Later`.
 
 .. figure:: images/stock_picking_in_form.png
    :align: center
@@ -212,9 +212,9 @@ Start by opening the product form from the menu :menuselection:`Products --> Pro
 
 * :guilabel:`Virtual Stock` .
 
-If you want more information you can use the actions to the right of the form. If you click the report *Future Stock Forecast*, Open ERP opens a graphical view of the stock levels for the selected products changing with time over the days and weeks to come. The value at the left of the graph is the real stock (today) and the value at the right is the virtual stock (stock in the short term future).
+If you want more information you can use the actions to the right of the form. If you click the report :guilabel:`Future Stock Forecast`, Open ERP opens a graphical view of the stock levels for the selected products changing with time over the days and weeks to come. The value at the left of the graph is the real stock (today) and the value at the right is the virtual stock (stock in the short term future).
 
-To get the stock levels by location use the button *Stock by Location*.  Open ERP then gives you the stock of this product split out over all the possible locations. If you only want to see the physical locations in your company just filter this list using the Location Type *Internal Locations*. By default, physical locatiosn are already coloured red to distinguish them better. Consolidate locations (the sum of several locations, following the hierarchical structure) are coloured blue.
+To get the stock levels by location use the button :guilabel:`Stock by Location`.  Open ERP then gives you the stock of this product split out over all the possible locations. If you only want to see the physical locations in your company just filter this list using the Location Type *Internal Locations*. By default, physical locatiosn are already coloured red to distinguish them better. Consolidate locations (the sum of several locations, following the hierarchical structure) are coloured blue.
 
 .. figure:: images/stock_location_product_tree.png
    :align: center

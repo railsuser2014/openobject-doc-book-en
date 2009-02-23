@@ -100,7 +100,7 @@ As administrator you can install a new main working language into the system.
 
 	#. Select :menuselection:`Administration` in the Menu Toolbar and click :menuselection:`Translations --> Load New Language` in the main menu window,
 
-	#. Select the language to install, \ ``French``\  for example, and click on  *Start Installation*,
+	#. Select the language to install, \ ``French``\  for example, and click on :guilabel:`Start Installation`,
 
 	#. When the message :guilabel:`Installation finished` appears, click :guilabel:`OK` to return to the menu.
 
@@ -108,7 +108,7 @@ To see the effects of this installation change the preferences of your user to c
 
 .. note:: Navigating the menu 
 
-	From this point in the book navigation from the main menu is written as a series of menu entries connected by the :menuselection:`-->` character. Instead of seeing “Select Administration in the Menu toolbar then click Translations > Load New Language” you'll just get “use menu :menuselection:`Administration --> Translations --> Load New Language`”.
+   From this point in the book navigation from the main menu is written as a series of menu entries connected by the :menuselection:`-->` character. Instead of seeing “ Select Administration in the Menu toolbar then click Translations > Load New Language ” you'll just get “ use menu :menuselection:`Administration --> Translations --> Load New Language` ”.
 
 .. index:: Requests
 
@@ -155,7 +155,7 @@ To check your requests:
 
 	#. You can then click the :guilabel:`Reply` button and make your response in the :guilabel:`Request` field that appears in place of the original message.
 
-	#. Click  *Send* to save your response and send it to the original sender.
+	#. Click :guilabel:`Send` to save your response and send it to the original sender.
 
 .. note:: Requests vs. email 
 
@@ -194,7 +194,7 @@ Click the :guilabel:`Security`  tab to see that the demo user is a member of no 
 
 Click :menuselection:`Administration --> Users --> Groups`  below the main menu to open the list of groups defined in the system. If you open the form view of the \ ``admin``\   group by clicking its name in the list, the first tab give you the list of all the users who belong to this group.
 
-Click the Security tab and it gives you details of the access rights for that group. These are detailed in Chapter 13, but you can already see there further up in the window, the list of menus reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to the :menuitem:`Configuration`  menu in each section. So \ ``Partners / Configuration``\   is found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible to all users.
+Click the Security tab and it gives you details of the access rights for that group. These are detailed in Chapter 13, but you can already see there further up in the window, the list of menus reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to the :menuselection:`Configuration`  menu in each section. So \ ``Partners / Configuration``\   is found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible to all users.
 
 You can create some new users to integrate them into the system. Assign them to predefined groups to grant them certain access rights. Then try their access rights when you login as these users. Management defines these access rights as described in Chapter 13.
 
