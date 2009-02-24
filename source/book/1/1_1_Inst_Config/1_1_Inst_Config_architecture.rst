@@ -9,7 +9,7 @@ The architecture of Open ERP
 
 To access Open ERP you can:
 
-* use a web browser pointed at the eTiny web server, or
+* use a web browser pointed at the Open ERP client-web server, or
 
 * use an application client (the GTK client) installed on each computer.
 
@@ -65,7 +65,7 @@ An Open ERP system is formed by three main components:
     a server or a client.
 
 .. index::
-   single: eTiny
+   single: eTiny; client-web
 .. 
 
 .. note::   eTiny 
@@ -93,7 +93,7 @@ distributed onto separate computer servers if performance considerations
 require it.
 
 If you choose to run only with GTK clients you won't need the third component –
-the eTiny server – at all. In this case Open ERP's GTK client must be installed
+the client-web server – at all. In this case Open ERP's GTK client must be installed
 on the workstation of each Open ERP user in the company.
 
 
@@ -109,17 +109,17 @@ on the workstation of each Open ERP user in the company.
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

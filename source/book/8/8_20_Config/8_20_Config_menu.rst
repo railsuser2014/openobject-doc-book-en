@@ -1,11 +1,11 @@
 .. index:: Menu
 
-Personalizing the menu
-======================
+Configuring the menu
+====================
 
 Open ERP's menu organization isn't subject to any restriction, so you can modify the whole structure, the terminology and all access rights to it to meet your specific needs in the best possible way. However, before you do all that and just as you would for any other customizable software, you should balance both the benefits you see in such changes and the costs, such as the need to train users, to maintain new documentation and to continue the alterations through subsequent versions of the software.
 
-This section describes how to proceed to change the structure of the menu and the welcome page, to personalize the terminology of the menus and forms in the user interface and for managing users' access rights to the menus and the various underlying business objects.
+This section describes how to proceed to change the structure of the menu and the welcome page, to configure the terminology of the menus and forms in the user interface and for managing users' access rights to the menus and the various underlying business objects.
 
 .. index::
    single: Change User Password
@@ -244,17 +244,17 @@ In that case it would be better to use the translation method that employs a CSV
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

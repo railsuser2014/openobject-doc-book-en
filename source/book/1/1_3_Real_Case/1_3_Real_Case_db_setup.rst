@@ -7,7 +7,7 @@ You'll create all the elements in the database that you need to carry out the us
 Configuring the Main Company
 ----------------------------
 
-Start to personalize your database by renaming the :guilabel:`Main Company` from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this personalization information used in the document headers and footers. 
+Start to personalize your database by renaming the :guilabel:`Main Company` from its default of \ ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you print standard documents such as quotations, orders and invoices you'll find this configuration information used in the document headers and footers. 
 
 To do this, click :menuselection:`Partners --> Partners`  and click the name of the only company there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so make it editable by clicking the  *Edit*  button to the upper left of the form. 
 
@@ -166,7 +166,7 @@ A Warehouse contains an input location, a stock location and an output location 
 Setting up a chart of accounts
 ------------------------------
 
-You can set up a chart of accounts during the creation of a database, but for this exercise you'll start with the minimal chart that's built into the core of Tiny ERP (just a handful of required accounts without hierarchy, tax or subtotals). 
+You can set up a chart of accounts during the creation of a database, but for this exercise you'll start with the minimal chart that's built into the core of Open ERP (just a handful of required accounts without hierarchy, tax or subtotals). 
 
 A number of account charts have been predefined for Open ERP, some of which meet the needs of national authorities (the number of those created for Open ERP is growing as various contributors create and freely publish them). You can take one of those without changing it if it's suitable, or you can take anything as your starting point and design a complete chart of accounts to meet your exact needs, including accounts for inventory, asset depreciation, equity and taxation.
 
@@ -216,17 +216,17 @@ Or you can just continue working with the \ ``openerp_ch03``\   database to get 
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

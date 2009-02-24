@@ -102,12 +102,12 @@ Setting up your database
 ------------------------
 
 To set a system up for these examples, create a new database with demonstration
-data in it, and select the *Minimal Profile* when you log in as the *admin*
+data in it, and select the :guilabel:`Minimal Profile` when you log in as the *admin*
 user. You can enter your own company details when asked, or just select the
 default of *Tiny SPRL* if you want. 
 
 You'll be asked what View Mode you want during the Configuration stage.
-*Extended Interface* is recommended at this stage, although it's quite a lot
+:guilabel:`Extended Interface` is recommended at this stage, although it's quite a lot
 more cluttered than the *Simple Interface* because it shows you all the menu
 options. You don't need any additional users.
 
@@ -117,7 +117,7 @@ the second example below, such as ``hr_attendence``, ``hr_contract``,
 ``hr_holidays``, and ``hr_holidays_request``.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.
-Selecting *None* is fine: you can also try one that matches your own
+Selecting :guilabel:`None` is fine: you can also try one that matches your own
 jurisdiction, if a suitable working one is available.
 
 You'll also be asked to define a default picking policy. Select the default
@@ -440,16 +440,16 @@ object. For each transition you can:
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium

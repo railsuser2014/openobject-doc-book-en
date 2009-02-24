@@ -16,7 +16,7 @@ dedicated just to that. That enables you to:
 
 * simplify migrations, if you have modified some elements of the basic configuration, there's a risk in returning them to their original state after the migration, unless you've saved the modifications in a module.
 
-Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu :menuselection:`Administration --> Modules Management --> Modules Recording --> Start Recording`. Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen personalization, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
+Start by installing the module \ ``base_module_record``\   in the usual way. Then start recording your actions using the menu :menuselection:`Administration --> Modules Management --> Modules Recording --> Start Recording`. Manually make all your configuration changes through the user interface as you would normally (such as menu management, dashboard assignments, screen configuration, new reports, and access rights management – details of some of these possibilities are described later in this chapter).
 
 Once you've done all this, go to the menu :menuselection:`Administration --> Modules Management --> Modules Recording --> Save Recorded Module`. 
 
@@ -48,17 +48,17 @@ To install a new module saved in ZIP file form, use the menu :menuselection:`Adm
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

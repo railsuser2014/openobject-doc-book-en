@@ -12,9 +12,9 @@ As you've seen the complete architecture of Open ERP includes the following ele
 
 * an Open ERP application server,
 
-* an eTiny web server,
+* an Open ERP client-web server,
 
-* several clients that access the Open ERP server: they can either be web clients if the eTiny web server is installed, or GTK clients.
+* several clients that access the Open ERP server: they can either be web clients if the client-web server is installed, or GTK clients.
 
 
 .. note:: Deployment
@@ -186,18 +186,18 @@ You could also use the PostgreSQL database directly to backup and restore data o
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 
 

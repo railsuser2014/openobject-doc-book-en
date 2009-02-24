@@ -9,7 +9,7 @@ One of the most important areas in configuring Open ERP is how to manage access
 
 You're planning to put everything significant to your business into the system, but most of your staff need see only part of it, and may need to change even less of it. Who should have rights to what, and how do you manage that?
 
-Tiny ERP's approach to rights management is highly flexible. Each user can belong to one or more groups, and the group(s) you belong to determine(s):
+Open ERP's approach to rights management is highly flexible. Each user can belong to one or more groups, and the group(s) you belong to determine(s):
 
 * the visibility of each menu item and
 
@@ -46,7 +46,7 @@ You should also create groups within a departmental areas that have different le
 Access rights for menus
 -----------------------
 
-To get a feel for rights management in Tiny ERP you'll create a new \ ``Stock1``\  group, with access to the *Inventory Control* menu items. You'll then create a stores person user who's a member of the \ ``Stock1``\  group.  
+To get a feel for rights management in Open ERP you'll create a new \ ``Stock1``\  group, with access to the *Inventory Control* menu items. You'll then create a stores person user who's a member of the \ ``Stock1``\  group.  
 
 To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the group name Stock1. 
 
@@ -147,7 +147,7 @@ Modification history
 
    *Partner Record history.*
 
-Each record in a Tiny ERP database carries a note of its history. You can then find out who it was created by and when that occurred, and who last modified it and when that occurred. Click the :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-only, not when it's editable) to display a dialog box showing this information, as shown in the figure below. It can help you identify who to contact if there are any problems with the data in the records.
+Each record in a Open ERP database carries a note of its history. You can then find out who it was created by and when that occurred, and who last modified it and when that occurred. Click the :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-only, not when it's editable) to display a dialog box showing this information, as shown in the figure below. It can help you identify who to contact if there are any problems with the data in the records.
 
 
 .. Copyright © Open Object Press. All rights reserved.
@@ -162,17 +162,17 @@ Each record in a Tiny ERP database carries a note of its history. You can then f
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

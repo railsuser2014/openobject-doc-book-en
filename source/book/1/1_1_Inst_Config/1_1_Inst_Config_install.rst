@@ -187,9 +187,9 @@ Here's a summary of the procedure:
 
 	#. Close Synaptic Package Manager.
 
-Installing PostgreSQL results in a database server that runs and restarts automatically when the PC is turned on. If all goes well with the tinyerp-server package then tinyerp-server will also install, and restart automatically when the PC is switched on.
+Installing PostgreSQL results in a database server that runs and restarts automatically when the PC is turned on. If all goes as it should with the tinyerp-server package then tinyerp-server will also install, and restart automatically when the PC is switched on.
 
-Start the Tiny ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu, or by opening a terminal window and typing \ ``tinyerp-client``\  . The Open ERP login dialog box should open and show the message :guilabel:`No database found you must create one!`.
+Start the Tiny/Open ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu, or by opening a terminal window and typing \ ``tinyerp-client``\  . The Open ERP login dialog box should open and show the message :guilabel:`No database found you must create one!`.
 
 Although this installation method is simple and therefore an attractive option, it's better to install Open ERP using a version downloaded from http://openerp.com. The downloaded revision is likely to be far more up to date than that available from a Linux distribution.
 
@@ -310,16 +310,20 @@ If your Linux server is protected by a firewall you'll have to provide access to
 
 .. index::
   single: Installation; eTiny web server
+  single: Installation; Open ERP client-web server
 ..
 
 Installation of an Open ERP web server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Just as you installed a GTK client on a Linux server, you can also install the Open ERP web server. It's possible to install it from sources after installing its dependencies from packages as you did with the Open ERP server, but Tiny have provided a much simpler way to do this for eTiny – using a system known as ez_setup.
+Just as you installed a GTK client on a Linux server, you can also install the Open ERP client-web server. 
+It's possible to install it from sources after installing its dependencies from packages as you did with the Open ERP server, 
+but Tiny have provided a simpler way to do this for eTiny – using a system known as ez_setup.
 
-Before proceeding, confirm that your Open ERP installation is functioning correctly with a GTK client. If it's not you'll need to go back now and fix it, because you need to be able to use it fully for the next stages. 
+Before proceeding, confirm that your Open ERP installation is functioning correctly with a GTK client. 
+If it's not you'll need to go back now and fix it, because you need to be able to use it fully for the next stages. 
 
-To install eTiny:
+To install client-web:
 
 	#. From Synaptic Package Manager install \ ``build-essential,``\  and then check that \ ``python-matplotlib``\  and \ ``python-imaging``\  are installed (which they should have been during the installation of the server).
 
@@ -399,17 +403,17 @@ the following points provide some indicators about how you can configure your in
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

@@ -150,7 +150,7 @@ To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip
 .. figure::  images/tinyreport.png
    :align: center
 
-   *Menu TinyReport in OpenOffice.org Writer.*
+   *Menu Open ERP Report in OpenOffice.org Writer.*
 
 Start OpenOffice.org Writer, select :menuselection:`Tools --> Package Management...`  to open the Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it. Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny Report*  or  *Open ERP Report* .
 
@@ -185,7 +185,7 @@ To modify an existing report, select :menuselection:`OpenERP Report --> Modify E
 
 OpenOffice.org then opens the report in edit mode for you. You can modify it using the standard word processing functions of OpenOffice.org Writer.
 
-The document is modified in its English version. It will be translated as usual by Open ERP's translation system when you use it through the client interface, if you've personalized your own setup to translate to another language for you. So you only need to modify the template once, even if your system uses other languages – but you'll need to add translations as described earlier in this chapter if you add fields or change the content of the existing ones.
+The document is modified in its English version. It will be translated as usual by Open ERP's translation system when you use it through the client interface, if you've configured your own setup to translate to another language for you. So you only need to modify the template once, even if your system uses other languages – but you'll need to add translations as described earlier in this chapter if you add fields or change the content of the existing ones.
 
 .. tip:: Older reports 
 
@@ -194,7 +194,7 @@ The document is modified in its English version. It will be translated as usual 
 
 	You can transform an old report format to the new format from the OpenOffice.org menu :menuselection:`OpenERP Report --> Convert Bracket–Fields`.
 
-From the Tiny toolbar in OpenOffice.org it's possible to:
+From the Open ERP toolbar in OpenOffice.org it's possible to:
 
 * connect to the Open ERP server: by supplying the connection parameters.
 
@@ -262,17 +262,17 @@ If your company has its own server, or a hosted server, you can customize this t
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

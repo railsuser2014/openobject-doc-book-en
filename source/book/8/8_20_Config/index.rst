@@ -4,7 +4,7 @@ Configuring and Administering Open ERP
 **************************************
 
  *This chapter is for the administrators of an Open ERP system. 
- You'll learn to configure and personalize Open ERP to match it to your company's needs and 
+ You'll learn to configure Open ERP to match it to your company's needs and 
  those of each individual user of the system.* 
 
 Open ERP gives you great flexibility in the ways of configuring and using it, which let you modify its appearance, the general way it functions and the different analysis tools chosen to match your company's needs most closely. These configuration changes are carried out through the user interface.
@@ -14,18 +14,26 @@ Users can each arrange their own welcome page and their own menu, and you can al
 And Open ERP's main menu can be entirely reorganized. The management of access rights lets you assign certain functions to specific system users. You can also assign roles, which define the part that each system user plays in the workflows that move system documents from state to state (such as the ability to approve employee expense requests).
 
 .. index::
-   single: Personalization
+   single: Configuration
+   single: Configuration; Parameterization
+   single: Configuration; Personalization
+   single: Configuration; Customization
 .. 
 
-.. note:: Personalization 
+.. note:: Configuration, Parameterization, Personalization, Customization 
 
-	The word *personalization* is used in this book where you might expect to find customization. 
-	That's because customization refers to something that requires a bit of technical effort 
+	The word *personalization* is sometimes used in this book where you might expect to find *configuration* or *customization*.
+	 
+	*Customization* generally refers to something that requires a bit of technical effort 
 	(such as creating specialized code modules) and creates a non-standard system. 
 
-	The word configuration is more closely related – it's the general process of setting all 
-	the parameters of the software to fit the needs of your system. 
-	Personalization is just that subset of configuration options that shapes the system to the operational needs of a certain company.
+	*Configuration* is more closely related – it's the general process of setting all 
+	the parameters of the software to fit the needs of your system (often called *parameterization*).
+	Configuration is also, by convention, the submenu below each of Open ERP's top-level menus that
+	is accessible only to the administrative user for that section.
+	
+	*Personalization* is just that subset of configuration options that shapes the system to the 
+	operational needs of a certain person or company.
 
 Using the module *OpenOffice.org Report Designer* you can change any part of any of the reports produced by the system. The system administrator can configure each report to modify its layout and style, or even the data that's provided there.
 
@@ -67,17 +75,17 @@ Finally, you'll see how to import your data into Open ERP automatically, to mig
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 
