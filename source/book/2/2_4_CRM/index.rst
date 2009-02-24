@@ -3,12 +3,10 @@
 Customer Relationship Management
 ********************************
 
- *It's often said that the customer is king.
- In the business world you'd ideally treat all your customers as royalty, at the center of
- attention.
+ *It's often said that the customer is king. You'd ideally treat all your customers as royalty, 
+ at the center of your attention if you had a method of keeping your attention on them at all times.
  Open ERP's CRM module is designed to make this aim a reality, helping employees of the business
- understand their customers' needs better,
- and automating their communication efforts.*
+ understand their customers' needs better, and automating their communication efforts.*
 
 .. index::
    single: CRM & SRM

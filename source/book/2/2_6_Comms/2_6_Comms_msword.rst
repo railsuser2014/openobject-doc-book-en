@@ -58,7 +58,7 @@ Complete your document and insert Open ERP fields into the appropriate places.
 
 	When you've selected some fields and added them into your Word document, some of them appear in
 	red.
-	This colour indicates that you can't use that particular field because it has a complex data
+	This color indicates that you can't use that particular field because it has a complex data
 	relationships that can only be discovered when you start to use the field.
 
 Select the merge tool from by clicking :guilabel:`Perform Mail Merge` from the toolbar. This

@@ -7,11 +7,9 @@ Communication Tools
 *******************
 
  *Open ERP provides all the information you need to pursue your company's business opportunities
- efficiently.
- But to stay productive with all the information you have to handle it's essential that you can keep
- using
- your normal communication tools by interfacing them with Open ERP, and not be restricted just to
- Open ERP's interface.*
+ efficiently. But to stay productive with all the information you have to handle it's essential 
+ that you can keep using your normal communication tools by interfacing them with Open ERP, 
+ and not be restricted just to Open ERP's interface.*
 
 Open ERP can do most things you need to pursue your business opportunities effectively. But there
 can be quite a quite a bit to learn, which reduces your efficiency while you're learning. And if
@@ -35,8 +33,7 @@ The three following modules are described:
 These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris) and
 are available through the official Open ERP site in the modules section.
 
-The chapter is a mix of installation and configuration instructions, and basic interaction
-exercises.
+The chapter is a mix of installation and configuration instructions, and basic interaction exercises.
 
 
 .. raw:: html

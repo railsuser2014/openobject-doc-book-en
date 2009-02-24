@@ -120,31 +120,27 @@ The procedure is to create the name of the new menu in :guilabel:`Menu base name
 of a suitable :guilabel:`Parent menu` for the menu and the :guilabel:`Case Section` name, then click
 :guilabel:`Create menu Entries`. Following this procedure, create the following menus:
 
-
 .. csv-table:: **Example of creating menus that make it easier to use cases**
    :header: "Menu base name","Case Section","Parent menu"
    :widths: 25,20,25
 
    "Business Opportunities","Sales","Sales Management"
-   "Support L1","Support Levelÿ1","CRM & SRM"
-   "Support L2","Support Levelÿ2","CRM & SRM"
+   "Support L1","Support Level 1","CRM & SRM"
+   "Support L2","Support Level 2","CRM & SRM"
    "Quality Problems","Quality","Purchase Management"
 
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a
 menu structure like the following figure (here for the Business Opportunities menu).
-
 
 .. figure::  images/business_ops.png
    :align: center
 
    *Business Opportunities menu automatically generated.*
 
-
 .. note:: Case sections
 
 	Open ERP enables you to select the view mode you want when the menu is opened to display the cases
-	for each section:
-	commercial, helpdesk, support request, etc.
+	for each section such as Sales, Helpdesk, and Support Request.
 
 	Your selection of view determines the type of form that opens when showing a case in each section.
 	So the form following a support request case could differ from the form for a business opportunity.

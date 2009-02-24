@@ -138,7 +138,7 @@ list.
 To view the process for that specific order, click the :guilabel:`Process` button at the
 top right of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
-node whose left edge is coloured maroon rather than grey.
+node whose left edge is colored maroon rather than grey.
 
 .. figure:: images/process_quotation_flow.png
    :align: center
@@ -186,7 +186,7 @@ transition:
    *Detail of a transition in the process.*
 
 Confirm quotation SO001 by clicking on the icon of a person beside the
-maroon-coloured transition that takes the document from quotation to order.
+maroon-colored transition that takes the document from quotation to order.
 Then click the :guilabel:`Confirm` button. The process automatically moves on to the next
 state and updates its references to some new delivery reservations that you've
 just created (see the third tab :guilabel:`History` for a reference to the Packing List
@@ -359,7 +359,7 @@ the processes it knows about that involve such forms:
 
    *Button for entering a user process from a form.*
 
-The element coloured red shows the active process for the selected document.
+The element colored red shows the active process for the selected document.
 Elements in grey are the states that the selected document won't go through
 because of its configuration. You can use the different icons to open the
 document, print it, or get its documentation.

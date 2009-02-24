@@ -292,9 +292,9 @@ short term future).
 To get the stock levels by location use the button :guilabel:`Stock by Location`.  Open ERP then
 gives you the stock of this product split out over all the possible locations. If you only want to
 see the physical locations in your company just filter this list using the Location Type :guilabel:`Internal
-Locations`. By default, physical locatiosn are already coloured red to distinguish them better.
+Locations`. By default, physical locations are already colored red to distinguish them better.
 Consolidate locations (the sum of several locations, following the hierarchical structure) are
-coloured blue.
+colored blue.
 
 .. figure:: images/stock_location_product_tree.png
    :align: center

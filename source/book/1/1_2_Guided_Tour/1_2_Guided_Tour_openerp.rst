@@ -517,7 +517,7 @@ needs.
 	--> Execute a Plugin`, then select :guilabel:`Print Workflow (complex)` and click :guilabel:`OK`.
 
 	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state
-	is marked by nodes coloured red.
+	is marked by nodes colored red.
 
 .. figure:: images/purchase_workflow.png
    :align: center

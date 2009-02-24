@@ -23,7 +23,7 @@ From invoice to payment
  registering payment. The various operations are described, from the entry of accounting receipts and
  the treatment of the reconciliation process, including payment orders.*
 
-Accounting is at the heart of managing a company: all the company's operations have an impact there.
+Accounting is at the heart of managing a company: all the company's operations have an impact here.
 It has an informational role (how much cash is there? what debts need to be repaid? what's the stock
 valuation?) and, because of the information it provides, a reliable and detailed accounting system
 can and should have a major decision-making role.

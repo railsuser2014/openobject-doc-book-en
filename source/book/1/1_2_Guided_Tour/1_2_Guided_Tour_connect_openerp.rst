@@ -383,7 +383,7 @@ partner:
 
 .. tip:: Required Fields
 
-	Fields coloured blue are required. If you try to save the form while any of these fields are empty
+	Fields colored blue are required. If you try to save the form while any of these fields are empty
 	the field turns red to indicate that there's a problem. It's impossible to save the form until
 	you've completed every required field.
 

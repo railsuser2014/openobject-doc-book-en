@@ -10,11 +10,9 @@ Effective Management of Operations
  chain.
 
  This part presents an approach to greater efficiency, showing concrete solutions by applying
- Open ERP to
- different problems in a services company.
+ Open ERP to different problems in a services company.
  For each enterprise function, Open ERP enables you to automate the recurring tasks, systematize
- complex processes,
- simplify the transmission of information, and control your whole set of operations.
+ complex processes, simplify the transmission of information, and control your whole set of operations.
 
 .. toctree::
 
