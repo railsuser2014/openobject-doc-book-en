@@ -15,7 +15,7 @@ segmentation management (*segmentation*)
 :Version: False
 :Author: Tiny
 :Directory: segmentation
-:Web: http://tinyerp.com/
+:Web: http://www.openerp.com//
 :Official module: no
 :Quality certified: no
 

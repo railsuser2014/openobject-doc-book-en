@@ -15,7 +15,7 @@ Invoice lines with sequence number (*invoice_sequence*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: invoice_sequence
-:Web: http://tinyerp.com/
+:Web: http://www.openerp.com//
 :Official module: no
 :Quality certified: no
 

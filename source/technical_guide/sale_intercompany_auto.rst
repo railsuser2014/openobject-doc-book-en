@@ -15,7 +15,7 @@ Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sale_intercompany_auto
-:Web: http://tinyerp.com/module_sale.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

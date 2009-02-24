@@ -15,7 +15,7 @@ Auto Email Stock Picking (*auto_email_stock*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: auto_email_stock
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

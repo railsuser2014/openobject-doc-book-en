@@ -1,15 +1,15 @@
 .. index::
    single: Open ERP architecture
-.. 
+..
 
 .. index:: Architecture
 
 The architecture of Open ERP
-"""""""""""""""""""""""""""""
+============================
 
 To access Open ERP you can:
 
-* use a web browser pointed at the eTiny web server, or
+* use a web browser pointed at the Open ERP client-web server, or
 
 * use an application client (the GTK client) installed on each computer.
 
@@ -28,8 +28,8 @@ responsive, so more satisfying to use.
 .. index::
    single: Client
 ..
-   
-.. tip::   **Usability**  *Web client and GTK client* 
+
+.. note::   Web client and GTK client
 
     The main functional difference between the two Open ERP clients is the
     presence of the calendar view in the web client, which doesn't exist in the
@@ -41,45 +41,48 @@ responsive, so more satisfying to use.
 
 An Open ERP system is formed by three main components:
 
-* the PostgreSQL database server, which contains all of the databases, each of which contains all data and most elements of the Open ERP system configuration,
+* the PostgreSQL database server, which contains all of the databases, each of which contains all
+  data and most elements of the Open ERP system configuration,
 
-* the Open ERP application server, which contains all of the enterprise logic and ensures that Open ERP runs optimally,
+* the Open ERP application server, which contains all of the enterprise logic and ensures that
+  Open ERP runs optimally,
 
-* the web server, a separate application called eTiny, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
+* the web server, a separate application called the Open Object client-web, which enables you to
+  connect to Open ERP from standard web browsers and is not needed when you connect using a GTK
+  client.
 
 
-.. image:: images/terp_arch_1.png
-    :align: center
-    :scale: 95
+.. figure:: images/terp_arch_1.png
+   :align: center
+   :scale: 95
 
-.. tip::   **Terminology**  *eTiny – server or client?* 
+.. note::   Terminology: client-web – server or client?
 
-    The eTiny component can be thought of as a server or a client depending on
+    The client-web component can be thought of as a server or a client depending on
     your viewpoint.
 
     It acts as a web server to an end user connecting from a web browser, but
     it also acts as a client to the Open ERP application server just as a GTK
     application client does.
 
-    So in this book its context will determine whether eTiny is referred to as
+    So in this book its context will determine whether the client-web component is referred to as
     a server or a client.
 
 .. index::
-   single: eTiny
-.. 
+   single: eTiny; client-web
+..
 
-.. tip::   **Attention**  *eTiny* 
+.. note::   eTiny
 
-    At present, the web component is known as “eTiny”. Although it's possible
-    that this application's name will change in the coming months to match the
-    renaming of Tiny ERP to Open ERP, its characteristics will stay the same.
-
+    The web application used to be known as "eTiny".
+    Its name changed to "client-web" as Tiny ERP was renamed to Open ERP,
+    but its characteristics have generally stayed the same.
 
 .. index::
    single: PostgreSQL
-.. 
+..
 
-.. tip::   **Program**  *PostgreSQL* 
+.. note::   PostgreSQL
 
 	PostgreSQL is a relational and object database management system.
 
@@ -94,7 +97,7 @@ distributed onto separate computer servers if performance considerations
 require it.
 
 If you choose to run only with GTK clients you won't need the third component –
-the eTiny server – at all. In this case Open ERP's GTK client must be installed
+the client-web server – at all. In this case Open ERP's GTK client must be installed
 on the workstation of each Open ERP user in the company.
 
 
@@ -110,17 +113,17 @@ on the workstation of each Open ERP user in the company.
 .. rights of these sales.
 
 .. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Presses) gives you a
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
 .. written authorisation for this.
 
 .. Many of the designations used by manufacturers and suppliers to distinguish their
 .. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open ERP Press was aware of a trademark claim, the designations have been
+.. and Open Object Press was aware of a trademark claim, the designations have been
 .. printed in initial capitals.
 
 .. While every precaution has been taken in the preparation of this book, the publisher
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open ERP Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand Rosière, Belgium
 

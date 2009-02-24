@@ -35,7 +35,7 @@ Then, two operations are possible:
 
 #. the order is canceled
 
-Let's suppose a company has a need not implemented in TinyERP. For example, suppose their sales staff can only offer discounts of 15% or less. Every order having a discount above 15% must be approved by the sales manager.
+Let's suppose a company has a need not implemented in OpenERP. For example, suppose their sales staff can only offer discounts of 15% or less. Every order having a discount above 15% must be approved by the sales manager.
 
 This modification in the sale logic doesn't need any line of python code! A simple modification of the workflow allows us to take this new need into account and add the extra validation step.
 

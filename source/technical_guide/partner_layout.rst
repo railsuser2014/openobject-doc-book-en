@@ -15,7 +15,7 @@ Partner Layout (*partner_layout*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: partner_layout
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

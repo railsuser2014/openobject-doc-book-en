@@ -15,7 +15,7 @@ Accounting simulation journal (*account_simulation*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: account_simulation
-:Web: http://tinyerp.com/module_account.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

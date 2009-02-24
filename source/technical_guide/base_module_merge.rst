@@ -15,7 +15,7 @@ Module Merger (*base_module_merge*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: base_module_merge
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

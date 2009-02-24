@@ -15,7 +15,7 @@ Human Resources Contracts (*hr_contract_available*)
 :Version: False
 :Author: Tiny
 :Directory: hr_contract_available
-:Web: http://tinyerp.com/module_hr.html
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

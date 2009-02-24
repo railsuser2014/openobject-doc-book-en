@@ -15,7 +15,7 @@ Sales Management extented with rebates (*sale_rebate*)
 :Version: False
 :Author: Tiny
 :Directory: sale_rebate
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

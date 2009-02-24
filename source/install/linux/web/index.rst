@@ -39,19 +39,21 @@ or
     $ sudo python ez_setup.py
     $ sudo easy_install TurboGears==1.0.8
 
+Check whether TurboGears is properly installed or not...
+
+.. code-block:: bash
+
+    $ tg-admin info
+
+You should see version information of TurboGears and related packages.
+
 -------------------------------------------------------------------------------
 OpenERP Web
 -------------------------------------------------------------------------------
 
 .. code-block:: bash
 
-    $ sudo easy_install openerp-web
-    
-or 
-
-.. code-block:: bash
-
-    $ sudo easy_install http://openerp.com/download/stable/source/openerp-web-5.0.tar.gz
+    $ sudo easy_install -U openerp-web
 
 -------------------------------------------------------------------------------
 Configuration
@@ -79,20 +81,26 @@ Now start the web server with ``start-openerp-web`` command:
 
     $ start-openerp-web
 
-If you see message showing ``cherrypy._cperror.NotReady: Port not free.`` make 
-sure no other application is running on the specified port (8080 is default).
+If you see message showing ``cherrypy._cperror.NotReady: Port not free.`` then 
+make sure no other application is running on the specified port (8080 is default).
 
 You can change port for by changing ``server.socket_port`` value in *config/default.cfg*.
 
 If everything is fine, open your favourite web browser and type http://localhost:8080, 
 and your can see welcome page with login screen.
 
-Don't forget to enable cookies !
+Please make sure cookies are enabled in your browser.
 
 Of course, OpenERP Server must be running at that time. You should create a 
 database from the DBAdmin interface by clicking on Manage button that you can 
 see besides the Database selection box. After creating a new database login 
 with the admin/admin or demo/demo to see OpenERP in action...
+
+.. warning::
+
+    Please make sure that the system time is properly set otherwise web browsers
+    might fail to establish sessions. We strongly recommend you to synchronize
+    system time with NTP...
 
 -------------------------------------------------------------------------------
 Run as service (daemon)
@@ -117,17 +125,30 @@ and */etc/openerp-web.cfg*:
 
     args="('server.log',)" ==> args="('/var/log/openerp-web.log',)"
 
-Now run following command to start the OpenERP Web automatically on system startup.
+Create ``/var/log/openerp-web.log`` with proper ownership
 
 .. code-block:: bash
 
-    $ sudo update-rc.d openerp-web
+    $ sudo touch /var/log/openerp-web.log
+    $ sudo chown terp /var/log/openerp-web.log
+
+Now run following command to start the OpenERP Web automatically on system 
+startup (Debian/Ubuntu).
+
+.. code-block:: bash
+
+    $ sudo update-rc.d openerp-web defaults
 
 Start the deamon:
 
 .. code-block:: bash
 
     $ sudo /etc/init.d/openerp-web start
+
+.. note::
+
+     The init script is compatible with all major Linux distributions. Please 
+     check docs of your distribution on how to enable services.
 
 -------------------------------------------------------------------------------
 Configure HTTPS
@@ -138,7 +159,7 @@ environment over HTTPS with Apache2.
 
 **mod_proxy + mod_ssl (Apache2)**
 
-See Apache manual for more information.
+See `Apache manual <http://httpd.apache.org/docs/>`_ for more information. 
 
 **Apache configuration**
 
@@ -156,8 +177,8 @@ See Apache manual for more information.
 
         ProxyRequests Off
 
-        ProxyPass        /   http://127.0.0.1:8080
-        ProxyPassReverse /   http://127.0.0.1:8080
+        ProxyPass        /   http://127.0.0.1:8080/
+        ProxyPassReverse /   http://127.0.0.1:8080/
 
     </VirtualHost>
 
@@ -212,9 +233,11 @@ Flash plugin
 Your browser should have the Flash plugin installed because *OpenERP Web* uses
 some Flash components.
 
-Here is how to install the Flash plugin on an Ubuntu system: ::
+Here is how to install the Flash plugin on an Ubuntu system:
 
-    sudo apt-get install flashplugin-nonfree
+.. code-block:: bash
+
+    $ sudo apt-get install flashplugin-nonfree
 
 -------------------------------------------------------------------------------
 Support

@@ -14,7 +14,7 @@ In Tiny ERP, we can apply this model-view-controller semantic with
 
     * model : The PostgreSQL tables.
     * view : views are defined in XML files in Tiny ERP.
-    * controller : The objects of TinyERP. 
+    * controller : The objects of OpenERP. 
     
 Creating a module
 =================
@@ -29,7 +29,7 @@ Creating a new module is quickly done by copying the module called "simple" or "
 
 As an example on Ubuntu::
 
-        $ cd /usr/lib/tinyerp-server/addons/
+        $ cd /usr/lib/openerp-server/addons/
         $ sudo cp -r custom travel
 
 You will need to give yourself permissions over that new directory if you want to be able to modify it::
@@ -59,7 +59,7 @@ The file looks like this:
                 "version" : "1.0",
                 "author" : "Tiny",
                 "category" : "Generic Modules/Others",
-                "website": "http://www.tinyerp.com",
+                "website": "http://www.openerp.com",
                 "description": "Sample custom module where you can put your customer specific developments.",
                 "depends" : ["base"],
                 "init_xml" : [],
@@ -77,7 +77,7 @@ You will want to change whichever settings you feel right and get something like
                 "version" : "1.0",
                 "author" : "Tiny",
                 "category" : "Generic Modules/Others",
-                "website": "http://www.tinyerp.com",
+                "website": "http://www.openerp.com",
                 "description": "A module to manage hotel bookings and a few other useful features.",
                 "depends" : ["base"],
                 "init_xml" : [],

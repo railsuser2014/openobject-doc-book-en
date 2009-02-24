@@ -15,7 +15,7 @@ Add an automatic sequence on partners (*base_partner_sequence*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: base_partner_sequence
-:Web: http://www.tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

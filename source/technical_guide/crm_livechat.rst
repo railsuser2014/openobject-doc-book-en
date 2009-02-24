@@ -15,7 +15,7 @@ CRM - Livechat Jabber Client (*crm_livechat*)
 :Version: 5.0.1.3
 :Author: Tiny
 :Directory: crm_livechat
-:Web: http://tinyerp.com/
+:Web: http://www.openerp.com//
 :Official module: no
 :Quality certified: no
 

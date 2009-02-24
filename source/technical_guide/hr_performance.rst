@@ -15,7 +15,7 @@ Performance Review (*hr_performance*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: hr_performance
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

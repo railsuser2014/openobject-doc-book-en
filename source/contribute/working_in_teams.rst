@@ -47,7 +47,7 @@ Their allow to :
   * Purpose and post their own patch on bugs report.
   * Review patches from contributors, comments and / or improve them.
   * Commit well done patch or contribution in the community repository.
-  * Write a news on the Planet TinyERP RSS
+  * Write a news on the Planet OpenERP RSS
 
 The commiter team is available on launchpad: https://launchpad.net/~openerp-commiter
 

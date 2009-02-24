@@ -15,7 +15,7 @@ Webmail (*webmail*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: webmail
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

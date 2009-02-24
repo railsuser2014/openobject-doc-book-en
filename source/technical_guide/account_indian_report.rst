@@ -15,7 +15,7 @@ Indian Account Reporting - Reporting (*account_indian_report*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: account_indian_report
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

@@ -1,18 +1,26 @@
 
-The A to Z of Configuring Accounts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+******************
+Financial Analysis
+******************
 
-*Accounts must be configured to meet your company's needs. This chapter explains how to modify your chart of accounts, journals, access rights, initial account balances, and default values for the initial configuration of your Open ERP accounts.* 
+ *This chapter is devoted to statutory taxation and financial reporting from Open ERP.
+ Whether you need reports about customers and suppliers, or statements for various statutory purposes,
+ Open ERP enables you to carry out a whole range of parametric analyses of the financial health of
+ your company.*
 
-Assuming, always, that it calculates accurately, the best accounting software would be marked out by its usability and simplicity of data entry, and flexibility in configuring its different components. These would let you modify the accounting module easily to meet your own needs so that you can optimize it for the way you want to use it.
+Whether you want to analyze the general health of your company or review the status of an Account
+Receivable in detail, your company's accounts are the place to define your various business
+indicators.
 
-Open ERP lets you adapt and reconfigure many functions to ease the task of data entry:
+To bring you the most accurate picture of your business, Open ERP's different accounting reports
+are flexible, and the results are calculated in real time. This enables you to automate recurring
+actions and to change your operations quickly when a company-wide problem (such cash reserves
+dropping too low, or receivables climbing too high) or a local problem (a client that hasn't paid,
+or a project budget overspend) occurs.
 
-* adding controls for data entry,
-
-* customizing the screens,
-
-* filling fields automatically during data entry with data that's already known to the system. 
+So this chapter describes the various reports and financial statements supplied by Open ERP's
+accounting modules. It also describes how Open ERP handles purchase and sales taxation, and the
+reporting of taxation.
 
 .. raw:: html
 
@@ -20,13 +28,39 @@ Open ERP lets you adapt and reconfigure many functions to ease the task of data
 
 .. toctree::
 
-    chart_of_accounts
-    journals
-    periods_and_fiscal_years
-    payment_terms
-    entries_at_the_start_of_a_year
+    managing_accounts
+    statutory_taxes
+    company_financial_analysis
 
 .. raw:: html
 
     </div>
+
+    .. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open Object Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open Object Press, Grand Rosière, Belgium
+
+
 

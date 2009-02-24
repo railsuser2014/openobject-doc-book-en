@@ -15,7 +15,7 @@ Base Partner Surname (*base_partner_surname*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: base_partner_surname
-:Web: http://tinyerp.com
+:Web: http://www.openerp.com/
 :Official module: no
 :Quality certified: no
 

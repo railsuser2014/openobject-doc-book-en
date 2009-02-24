@@ -84,7 +84,7 @@ In order to create a report, the general idea is to
 
 ::
 
-        $ cd ~/tinyerp/server/bin/addons/travel
+        $ cd ~/openerp/server/bin/addons/travel
         $ mkdir report
         $ cd report
         $ oowriter &
@@ -105,14 +105,14 @@ To carry trhough the next steps you will need to download and to untar `Open Rep
 
 * In tiny_sxw2rml script folder, we do the following::
 
-        ~/tiny_sxw2rml$ ./tiny_sxw2rml.py ~/tinyerp/server/bin/addons/travel/report/tickets.sxw > ~/tinyerp/server/bin/addons/travel/report/tickets.rml
+        ~/tiny_sxw2rml$ ./tiny_sxw2rml.py ~/openerp/server/bin/addons/travel/report/tickets.sxw > ~/openerp/server/bin/addons/travel/report/tickets.rml
 
         .. note::
                 sxw2rml always outputs rml data on the screen or an error message. So it could be wise to check that the path to your sxw is correct and that sxw2rml can read it correctly before redirecting stdout (and possibly overwriting an old working rml).
 
 * We restart the server and ask to update the travel module::
 
-        ~/tinyerp/server/bin$ ./tinyerp-server.py --database=terp --update=travel
+        ~/openerp/server/bin$ ./openerp-server.py --database=terp --update=travel
 
 We should have a report installed. Here is an example with two rooms booked in two different hostels
 
