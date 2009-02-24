@@ -177,8 +177,8 @@ See `Apache manual <http://httpd.apache.org/docs/>`_ for more information.
 
         ProxyRequests Off
 
-        ProxyPass        /   http://127.0.0.1:8080
-        ProxyPassReverse /   http://127.0.0.1:8080
+        ProxyPass        /   http://127.0.0.1:8080/
+        ProxyPassReverse /   http://127.0.0.1:8080/
 
     </VirtualHost>
 
