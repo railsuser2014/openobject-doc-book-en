@@ -93,7 +93,8 @@ You can quite easily configure the system to put default values in various field
 
 .. todo:: What's this?
 
-.. *New*  :menuselection:`Partners --> Partners` \ ``New Zealand``\   *Country*  *Partner Contact* 
+.. *New*  :menuselection:`Partners --> Partners` \ ``New Zealand``\   
+.. *Country*  *Partner Contact* 
 
 * If you're using the web client do a Ctrl-Right-Click (that's a mouse right-click while the mouse pointer is in the field and the Control key is held down on the keyboard).
 
@@ -101,7 +102,8 @@ You can quite easily configure the system to put default values in various field
 
 .. todo:: What's this?
 
-.. *Set as default*  *Field Preferences*  *Value applicable for*  \ ``For all``\  or \ ``Only for you``\  
+.. *Set as default*  *Field Preferences*  *Value applicable for*  
+.. \ ``For all``\  or \ ``Only for you``\  
 
 
 .. figure::  images/set_default.png
@@ -163,7 +165,8 @@ To translate or modify all of the system's phrases you first have to export a tr
 
 .. todo:: what's this?
 
-.. :menuselection:`Administration --> Translation --> Export language`  *Français*  *New Language* \ ``.csv``\  
+.. :menuselection:`Administration --> Translation --> Export language`  
+.. *Français*  *New Language* \ ``.csv``\  
 
 .. note:: UTF-8 format 
 

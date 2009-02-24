@@ -19,7 +19,7 @@ In industry, you'll often find analytic charts of accounts structured into the d
 
 So the objective is to examine the costs, sales and margins by department and by product. The first level of the structure comprises the different departments and the lower levels represent the product ranges that the company makes and sells. 
 
-	.. note::  *Example Analytic representation of the chart of accounts for an industrial manufacturing company* 
+	.. note::  *Example Analytic chart of accounts for an industrial manufacturing company* 
 
 		#. Marketing Department
 

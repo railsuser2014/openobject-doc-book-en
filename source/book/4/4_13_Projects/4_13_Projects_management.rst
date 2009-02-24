@@ -151,7 +151,9 @@ Several methods can be used for ordering tasks by their respective priorities. O
 
 Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Information`, to plan a project made up of several tasks. In the case of an IT project, for example, where development tasks are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and so on. When you first open the list of project tasks, they're listed in their sequence order.
 
-.. todo:: More of these labels - why? *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent* 
+.. todo:: More of these labels - why? 
+
+.. *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent* 
 
 .. todo:: More of these labels - why? *Deadline* 
 
