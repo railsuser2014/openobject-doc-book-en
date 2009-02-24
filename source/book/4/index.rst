@@ -3,13 +3,17 @@
 Effective Management of Operations
 ##################################
 
- Your company is a closely interlinked medley of people and processes that form the whole system. 
- If you want it to be efficient, and to be able manage it effectively, you have to organize it and make it systematic, 
- and optimize its major operations. Spots of poor management can disturb the whole added value chain.
+ Your company is a closely interlinked medley of people and processes that form the whole system.
+ If you want it to be efficient, and to be able manage it effectively, you have to organize it and
+ make it systematic,
+ and optimize its major operations. Spots of poor management can disturb the whole added value
+ chain.
 
- This part presents an approach to greater efficiency, showing concrete solutions by applying Open ERP to 
- different problems in a services company. 
- For each enterprise function, Open ERP enables you to automate the recurring tasks, systematize complex processes, 
+ This part presents an approach to greater efficiency, showing concrete solutions by applying
+ Open ERP to
+ different problems in a services company.
+ For each enterprise function, Open ERP enables you to automate the recurring tasks, systematize
+ complex processes,
  simplify the transmission of information, and control your whole set of operations.
 
 .. toctree::
@@ -18,7 +22,7 @@ Effective Management of Operations
     4_11_HR/index
     4_12_Services/index
     4_13_Projects/index
-    
+
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
@@ -45,4 +49,4 @@ Effective Management of Operations
 
 .. Published by Open Object Press, Grand Rosière, Belgium
 
-    
+

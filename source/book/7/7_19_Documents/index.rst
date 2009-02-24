@@ -3,12 +3,17 @@
 Integrated Document Management
 ******************************
 
- *Information management has become a major strategic factor in companies' development. 
- It's important to get the right information circulated to the right people as efficiently 
- as possible yet still keep it secure. 
- Documentation management provides a way for companies to organize their information, in all its forms, in one place.*
+ *Information management has become a major strategic factor in companies' development.
+ It's important to get the right information circulated to the right people as efficiently
+ as possible yet still keep it secure.
+ Documentation management provides a way for companies to organize their information, in all its
+ forms, in one place.*
 
-The objectives of document management include easier archiving, access, and reference, intelligent classification, and distribution of documents and the information they contain. It concerns sets of all sorts of company documents such as work procedures, meeting reports, documents received from customers and suppliers, documents sent to customers, faxes, sales presentations, and product datasheets.
+The objectives of document management include easier archiving, access, and reference, intelligent
+classification, and distribution of documents and the information they contain. It concerns sets of
+all sorts of company documents such as work procedures, meeting reports, documents received from
+customers and suppliers, documents sent to customers, faxes, sales presentations, and product
+datasheets.
 
 
 .. raw:: html

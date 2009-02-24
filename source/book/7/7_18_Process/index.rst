@@ -40,11 +40,11 @@ as a constraint rather than a helpful daily management tool.
    Workflows give you a vertical representation of a document's lifecycle. They
    are technical processes, used by system implementers to adapt the behaviour of
    Open ERP to your company's needs.
-  
+
    Conversely user processes represent the workflows across your whole company and
    its documents. They are useful for end users to locate an action in a complete
    horizontal workflow.
-  
+
    The two systems are complementary and link together so that a modification to a
    workflow becomes visible in the user processes of the corresponding document.
 
@@ -55,15 +55,18 @@ of your management system.
 
 The system enables:
 
-* new employees to learn how to use the software by graphically and dynamically discovering how each document and action works,
+* new employees to learn how to use the software by graphically and dynamically discovering how each
+  document and action works,
 
 * easy access to the all the links to a document and everything that's attached to it,
 
 * people to see both a high-level map and the detail of all a company's processes,
 
-* access to a graphical model and integrated quality manual for rapid access that depends on the work context,
+* access to a graphical model and integrated quality manual for rapid access that depends on the
+  work context,
 
-* use of a knowledge base and capitalization of that knowledge for all of the company's actions in the form of interactive processes, 
+* use of a knowledge base and capitalization of that knowledge for all of the company's actions in
+  the form of interactive processes,
 
 * an employee to become more aware of his role in the whole environment.
 
@@ -104,11 +107,11 @@ Setting up your database
 To set a system up for these examples, create a new database with demonstration
 data in it, and select the :guilabel:`Minimal Profile` when you log in as the *admin*
 user. You can enter your own company details when asked, or just select the
-default of *Tiny SPRL* if you want. 
+default of *Tiny SPRL* if you want.
 
 You'll be asked what View Mode you want during the Configuration stage.
 :guilabel:`Extended Interface` is recommended at this stage, although it's quite a lot
-more cluttered than the *Simple Interface* because it shows you all the menu
+more cluttered than the :guilabel:`Simple Interface` because it shows you all the menu
 options. You don't need any additional users.
 
 Then install the ``sale`` module for the first example below, which installs
@@ -149,10 +152,12 @@ on orders, not deliveries).
 
 The process is completely dynamic and based on that specific sale order
 document. You can click each of the process nodes (:guilabel:`Quotation`, :guilabel:`Sale Order`,
-:guilabel:`Procurement`, :guilabel:`Draft Invoice`, :guilabel:`Outgoing Products`) using one of the links or icons
+:guilabel:`Procurement`, :guilabel:`Draft Invoice`, :guilabel:`Outgoing Products`) using one of the
+links or icons
 on it:
 
-* Obtaining the documentation and the corresponding process in the quality manual, using the :guilabel:`Help` (or :guilabel:`Information`) icon,
+* Obtaining the documentation and the corresponding process in the quality manual, using the
+  :guilabel:`Help` (or :guilabel:`Information`) icon,
 
 * Opening the corresponding Open ERP document, using the :guilabel:`Open` icon,
 
@@ -160,7 +165,8 @@ on it:
 
 * Printing the technical workflow by using the Gears (or :guilabel:`Print Workflow`) icon.
 
-* Obtaining the documents that an employee needs to carry out the process by clicking the green arrow icon,
+* Obtaining the documents that an employee needs to carry out the process by clicking the green
+  arrow icon,
 
 * Seeing the menu that Open ERP uses to get the document by hovering over the green arrow icon.
 
@@ -172,7 +178,7 @@ transition:
 
 * A list of the roles that can carry out the transition,
 
-* The actions available to you from the state. 
+* The actions available to you from the state.
 
 .. figure:: images/process_transition_zoom.png
    :align: center
@@ -183,7 +189,7 @@ Confirm quotation SO001 by clicking on the icon of a person beside the
 maroon-coloured transition that takes the document from quotation to order.
 Then click the :guilabel:`Confirm` button. The process automatically moves on to the next
 state and updates its references to some new delivery reservations that you've
-just created (see the third tab, *History*, for a reference to the Packing List
+just created (see the third tab :guilabel:`History` for a reference to the Packing List
 PACK13).
 
 This dynamic response is extremely useful for learning about the software. It
@@ -201,7 +207,8 @@ During order processing, the salesperson can quickly:
 
 * Zoom into the invoice to see payment details,
 
-* Get examples of the necessary documents (such as quotation types, exportation documents, and fax to confirm the order with the customer).
+* Get examples of the necessary documents (such as quotation types, exportation documents, and fax
+  to confirm the order with the customer).
 
 Create a draft invoice by starting the next step on your own.
 
@@ -212,8 +219,8 @@ reflects the specific situation of the company and its documents.
 New employee induction
 -----------------------
 
-Open the employee form for Fabien Pinckaers from the menu 
-:menuselection:`Human Resources --> Employees --> All Employees`. 
+Open the employee form for Fabien Pinckaers from the menu
+:menuselection:`Human Resources --> Employees --> All Employees`.
 Click the :guilabel:`Process` button to open the detailed
 process of engagement.
 
@@ -326,8 +333,8 @@ modify the workflow for the selected document type.
    *Workflow editor modifying the behaviour of invoices.*
 
 The workflow editor is only available in Open ERP's web client. If you use the
-GTK client you can use the menus in 
-:menuselection:`Administration --> Low Level Objects --> Workflow Items`. 
+GTK client you can use the menus in
+:menuselection:`Administration --> Low Level Objects --> Workflow Items`.
 These are text-based not graphical.
 
 Using processes effectively
@@ -409,7 +416,7 @@ following expression *object.state == 'draft'*.
 
 You can also link to a menu so that users can learn which menu to use to access
 objects in a state. You can set the conditions in which this object is in a
-greyed-out state in the second tab *Conditions*. These expressions, too, are
+greyed-out state in the second tab :guilabel:`Conditions`. These expressions, too, are
 encoded in Python format.
 
 Once the node has been defined you should set the transitions leaving this

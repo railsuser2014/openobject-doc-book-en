@@ -3,7 +3,7 @@
 
 .. index::
    single: Open ERP Book
-.. 
+..
 
 
 :::::::::::::

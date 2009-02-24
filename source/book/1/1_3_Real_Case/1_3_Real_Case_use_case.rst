@@ -9,7 +9,8 @@ Configure a system that enables you to:
 
 * sell these products to a customer.
 
-The system should support all aspects of invoicing, payments to suppliers and receipts from customers.
+The system should support all aspects of invoicing, payments to suppliers and receipts from
+customers.
 
 Functional requirements
 =======================
@@ -32,16 +33,24 @@ For working out the business case you'll have to model:
 
 * payments.
 
-To test the system you'll need at least one supplier, one customer, one product, a warehouse, a minimal chart of accounts and a bank account.
+To test the system you'll need at least one supplier, one customer, one product, a warehouse, a
+minimal chart of accounts and a bank account.
 
 Database creation
 =================
 
-Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch03``\  . This database will be free of data and contain the least possible amount of functionality as a starting point. You'll need to know your super administrator password for this – or you'll have to find somebody who does have it to create this seed database. You won't be able to use the \ ``openerp_ch1``\   or \ ``openerp_ch2``\   databases that you might have created so far in this book because they both contain demonstration data.
+Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch03``\  . This
+database will be free of data and contain the least possible amount of functionality as a starting
+point. You'll need to know your super administrator password for this – or you'll have to find
+somebody who does have it to create this seed database. You won't be able to use the \
+``openerp_ch1``\   or \ ``openerp_ch2``\   databases that you might have created so far in this book
+because they both contain demonstration data.
 
-Start the database creation process from the :guilabel:`Database Administration` page by clicking :guilabel:`Create` and then completing the following fields on the :guilabel:`Create Database` form:
+Start the database creation process from the :guilabel:`Database Administration` page by clicking
+:guilabel:`Create` and then completing the following fields on the :guilabel:`Create Database` form:
 
-*  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system administrator haven't changed it,
+*  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system
+   administrator haven't changed it,
 
 *  :guilabel:`New database name` : \ ``openerp_ch03``\  ,
 
@@ -64,37 +73,51 @@ All of the functional needs are provided by core modules from Open ERP:
 
 * sales management (the  ``sale``  module).
 
-Connect to the new \ ``openerp_ch03``\   database as user \ ``admin``\   with its default password \ ``admin``\   (you might have to wait a few seconds before the system will allow you to connect if you've only just created it). Since this is the first time you've connected to it you'll have to go through the Setup wizard in steps:
+Connect to the new \ ``openerp_ch03``\   database as user \ ``admin``\   with its default password \
+``admin``\   (you might have to wait a few seconds before the system will allow you to connect if
+you've only just created it). Since this is the first time you've connected to it you'll have to go
+through the Setup wizard in steps:
 
-	#.  :guilabel:`Select a profile` : select ``Minimal Profile``  
+	#.  :guilabel:`Select a profile` : select ``Minimal Profile``
 
-	#.  :guilabel:`Define Main Company` and  :guilabel:`Report Header` : leave everything untouched on this page.
+	#.  :guilabel:`Define Main Company` and  :guilabel:`Report Header` : leave everything untouched on
+	this page.
 
 	#.  :guilabel:`Summary` : just click the :guilabel:`Install` button.
 
-	#.  :guilabel:`Installation done` : click :guilabel:`Ok`. 
+	#.  :guilabel:`Installation done` : click :guilabel:`Ok`.
 
-Use the menu :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled Modules` to show the list of all modules that are registered within Open ERP but as yet uninstalled. Then:
+Use the menu :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled
+Modules` to show the list of all modules that are registered within Open ERP but as yet
+uninstalled. Then:
 
-	#. Enter \ ``product``\  into the :guilabel:`Name` field and click :guilabel:`Filter` to list the product module.
+	#. Enter \ ``product``\  into the :guilabel:`Name` field and click :guilabel:`Filter` to list the
+	product module.
 
-	#. Click the name \ ``product``\  in the list to display the product module in form view, rather than the list view that a search displays.
+	#. Click the name \ ``product``\  in the list to display the product module in form view, rather
+	than the list view that a search displays.
 
 	#. Click the :guilabel:`Install` button on the product module form.
 
-	#. Click the :guilabel:`Search` button at the top of the form to toggle back to the list view with search selection fields on it.
+	#. Click the :guilabel:`Search` button at the top of the form to toggle back to the list view with
+	search selection fields on it.
 
-	#. Search for the ``sale`` module then select it, too, as you did with product, to show it in form view.
+	#. Search for the ``sale`` module then select it, too, as you did with product, to show it in form
+	view.
 
-	#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \ ``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
+	#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \
+	``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
 
 	#. Return to the :guilabel:`Module` tab and then click its :guilabel:`Install` button.
 
 	#. Click :guilabel:`Apply Upgrades` in the toolbar to the right.
 
-	#. When the :guilabel:`System Upgrade` form appears, review the list of Modules to update – it may be longer than you had expected, and now includes all the modules you need, because the dependencies themselves had their own dependencies.
+	#. When the :guilabel:`System Upgrade` form appears, review the list of Modules to update – it
+	may be longer than you had expected, and now includes all the modules you need, because the
+	dependencies themselves had their own dependencies.
 
-	#. Click :guilabel:`Start Upgrade` wait for :guilabel:`System Upgrade Done` to be displayed, then click :guilabel:`Close` on that form.
+	#. Click :guilabel:`Start Upgrade` wait for :guilabel:`System Upgrade Done` to be displayed, then
+	click :guilabel:`Close` on that form.
 
 	#. The main menu now displays all of the menu items that were loaded by the modules you installed.
 

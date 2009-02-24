@@ -1,6 +1,6 @@
 .. index::
    single: Open ERP architecture
-.. 
+..
 
 .. index:: Architecture
 
@@ -28,8 +28,8 @@ responsive, so more satisfying to use.
 .. index::
    single: Client
 ..
-   
-.. note::   Web client and GTK client 
+
+.. note::   Web client and GTK client
 
     The main functional difference between the two Open ERP clients is the
     presence of the calendar view in the web client, which doesn't exist in the
@@ -41,11 +41,15 @@ responsive, so more satisfying to use.
 
 An Open ERP system is formed by three main components:
 
-* the PostgreSQL database server, which contains all of the databases, each of which contains all data and most elements of the Open ERP system configuration,
+* the PostgreSQL database server, which contains all of the databases, each of which contains all
+  data and most elements of the Open ERP system configuration,
 
-* the Open ERP application server, which contains all of the enterprise logic and ensures that Open ERP runs optimally,
+* the Open ERP application server, which contains all of the enterprise logic and ensures that
+  Open ERP runs optimally,
 
-* the web server, a separate application called the Open Object client-web, which enables you to connect to Open ERP from standard web browsers and is not needed when you connect using a GTK client.
+* the web server, a separate application called the Open Object client-web, which enables you to
+  connect to Open ERP from standard web browsers and is not needed when you connect using a GTK
+  client.
 
 
 .. figure:: images/terp_arch_1.png
@@ -66,19 +70,19 @@ An Open ERP system is formed by three main components:
 
 .. index::
    single: eTiny; client-web
-.. 
+..
 
-.. note::   eTiny 
+.. note::   eTiny
 
-    The web application used to be known as "eTiny". 
+    The web application used to be known as "eTiny".
     Its name changed to "client-web" as Tiny ERP was renamed to Open ERP,
     but its characteristics have generally stayed the same.
 
 .. index::
    single: PostgreSQL
-.. 
+..
 
-.. note::   PostgreSQL 
+.. note::   PostgreSQL
 
 	PostgreSQL is a relational and object database management system.
 

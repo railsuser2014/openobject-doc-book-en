@@ -4,7 +4,7 @@ Sales and Purchasing
 ####################
 
 .. toctree::
-    
+
     6_16_Sales/index
     6_17_Purchases/index
 
@@ -34,4 +34,4 @@ Sales and Purchasing
 
 .. Published by Open Object Press, Grand Rosière, Belgium
 
-    
+

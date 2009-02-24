@@ -3,26 +3,38 @@
 Installation and Configuration
 ******************************
 
- *Installing Open ERP under Windows or Linux for familiarization use should take you only half an hour or so and needs only a couple of operations. 
-  The first operation is installation of the application and database server on a server PC (that's a Windows or Linux or Macintosh computer). 
-  You've a choice of approaches for the second operation: 
-  either install a web server (most probably on the original server PC) to use with standard web clients that can be found on anybody's PC, 
-  or install application clients on each intended user's PC. 
-  When you first install Open ERP you'll configure a database containing a little functionality and some demonstration data to test the installation.* 
+ *Installing Open ERP under Windows or Linux for familiarization use should take you only half an
+ hour or so and needs only a couple of operations.
+ The first operation is installation of the application and database server on a server PC (that's
+ a Windows or Linux or Macintosh computer).
+ You've a choice of approaches for the second operation:
+ either install a web server (most probably on the original server PC) to use with standard web
+ clients that can be found on anybody's PC,
+ or install application clients on each intended user's PC.
+ When you first install Open ERP you'll configure a database containing a little functionality and
+ some demonstration data to test the installation.*
 
 .. figure:: images/ch1_outline.png
    :align: center
 
    *Your options for reading this section of the book.*
 
-This chapter focuses on the installation of Open ERP so that you can begin to familiarize yourselves with its use. If you're not a systems administrator, or if you've already installed Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and move straight to Chapter 2. If you've already used Open ERP (or Tiny ERP) a bit then you can move past that to Chapter 3 in this section of the book.
+This chapter focuses on the installation of Open ERP so that you can begin to familiarize
+yourselves with its use. If you're not a systems administrator, or if you've already installed
+Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and
+move straight to Chapter 2. If you've already used Open ERP (or Tiny ERP) a bit then you can move
+past that to Chapter 3 in this section of the book.
 
 .. index::
    single: Tiny ERP
 
-.. note:: Renaming from Tiny ERP to Open ERP 
+.. note:: Renaming from Tiny ERP to Open ERP
 
-   Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be equally at home with Open ERP. The two names refer to the same software, so there's no functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from time to time. 
+   Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be
+   equally at home with Open ERP. The two names refer to the same software, so there's no
+   functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book
+   applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from
+   time to time.
 
 .. index::
    single:SaaS
@@ -30,43 +42,56 @@ This chapter focuses on the installation of Open ERP so that you can begin to f
 
 .. note:: The SaaS, or “on-demand”, offer
 
-   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly subscription that 
+   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly
+   subscription that
    includes hardware (servers), system maintenance, provision of hosting services, and support.
 
-   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get started quickly 
-   without incurring costs for integration or for buying computer systems. 
+   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get
+   started quickly
+   without incurring costs for integration or for buying computer systems.
    Many of Tiny's partner companies will access this, and some may offer their own similar service.
 
-   This service should be particularly useful to small companies that just want to get going quickly and at low cost. 
-   It gives them immediate access to an integrated management system that's been built on the type of enterprise architecture 
-   used in banks and other large organizations. 
+   This service should be particularly useful to small companies that just want to get going quickly
+   and at low cost.
+   It gives them immediate access to an integrated management system that's been built on the type
+   of enterprise architecture
+   used in banks and other large organizations.
    Open ERP is that system, and is described in detail throughout this book.
 
-Whether you want to test Open ERP or to put it into full production, you have at least two starting points:
+Whether you want to test Open ERP or to put it into full production, you have at least two starting
+points:
 
-* evaluate it on line at http://openerp.com and ask Tiny for an SaaS trial hosted at http://ondemand.openerp.com, or the equivalent service at any of Tiny's partner companies,
+* evaluate it on line at http://openerp.com and ask Tiny for an SaaS trial hosted at
+  http://ondemand.openerp.com, or the equivalent service at any of Tiny's partner companies,
 
 * install it on your own computers to test it in your company's systems environment.
 
-There are some differences between installing Open ERP on Windows and on Linux systems, but once installed, it gives the same functions from both so you won't generally be able to tell which type of server you're using.
+There are some differences between installing Open ERP on Windows and on Linux systems, but once
+installed, it gives the same functions from both so you won't generally be able to tell which type
+of server you're using.
 
-.. note:: Linux, Windows, Mac 
+.. note:: Linux, Windows, Mac
 
-   Although this book deals only with installation on Windows and Linux systems, the same versions are also available for the Macintosh on the official website of Open ERP.
+   Although this book deals only with installation on Windows and Linux systems, the same versions
+   are also available for the Macintosh on the official website of Open ERP.
 
-.. note:: Web sites for Open ERP 
+.. note:: Web sites for Open ERP
 
    * Main Site: http://openerp.com,
 
    * SaaS or “on-demand” Site: http://ondemand.openerp.com,
 
-   * Community discussion forum where you can often receive informed assistance: http://openobject.com/forum.
+   * Community discussion forum where you can often receive informed assistance:
+     http://openobject.com/forum.
 
-.. tip:: Current documentation 
+.. tip:: Current documentation
 
-   The procedure for installing Open ERP and its web server are sure to change and improve with each new version, so you should always check each release's documentation – both packaged with the release and on the website – for exact installation procedures.
+   The procedure for installing Open ERP and its web server are sure to change and improve with
+   each new version, so you should always check each release's documentation – both packaged with
+   the release and on the website – for exact installation procedures.
 
-Once you've completed this installation, you'll create and configure a database to confirm that your Open ERP installation is working.
+Once you've completed this installation, you'll create and configure a database to confirm that your
+Open ERP installation is working.
 
 
 .. raw:: html
@@ -75,9 +100,9 @@ Once you've completed this installation, you'll create and configure a database 
 
 .. toctree::
 
-   1_1_Inst_Config_architecture   
+   1_1_Inst_Config_architecture
    1_1_Inst_Config_install
-   1_1_Inst_Config_db_create   
+   1_1_Inst_Config_db_create
 
 .. raw:: html
 

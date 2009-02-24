@@ -1,18 +1,28 @@
 .. index::
    single: Communication Tools
-.. 
+..
 
 *******************
 Communication Tools
 *******************
 
- *Open ERP provides all the information you need to pursue your company's business opportunities efficiently. 
- But to stay productive with all the information you have to handle it's essential that you can keep using 
- your normal communication tools by interfacing them with Open ERP, and not be restricted just to Open ERP's interface.* 
+ *Open ERP provides all the information you need to pursue your company's business opportunities
+ efficiently.
+ But to stay productive with all the information you have to handle it's essential that you can keep
+ using
+ your normal communication tools by interfacing them with Open ERP, and not be restricted just to
+ Open ERP's interface.*
 
-Open ERP can do most things you need to pursue your business opportunities effectively. But there can be quite a quite a bit to learn, which reduces your efficiency while you're learning. And if that's true for a heavy user of the system, it's doubly true for an occasional user or someone who already makes heavy use of standard Office applications and can't easily change.
+Open ERP can do most things you need to pursue your business opportunities effectively. But there
+can be quite a quite a bit to learn, which reduces your efficiency while you're learning. And if
+that's true for a heavy user of the system, it's doubly true for an occasional user or someone who
+already makes heavy use of standard Office applications and can't easily change.
 
-So for those who need to continue using their traditional Office applications to maintain their efficiency, Open ERP can be fitted out with interface adapters to some of the most common. Your users can participate in many Open ERP-maintained processes without ever leaving their familiar Office-based environment, and can avoid double data-entry yet link into Open ERP's database automatically.
+So for those who need to continue using their traditional Office applications to maintain their
+efficiency, Open ERP can be fitted out with interface adapters to some of the most common. Your
+users can participate in many Open ERP-maintained processes without ever leaving their familiar
+Office-based environment, and can avoid double data-entry yet link into Open ERP's database
+automatically.
 
 The three following modules are described:
 
@@ -22,9 +32,11 @@ The three following modules are described:
 
 * Microsoft Word interface.
 
-These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris) and are available through the official Open ERP site in the modules section.
+These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris) and
+are available through the official Open ERP site in the modules section.
 
-The chapter is a mix of installation and configuration instructions, and basic interaction exercises.
+The chapter is a mix of installation and configuration instructions, and basic interaction
+exercises.
 
 
 .. raw:: html
@@ -40,7 +52,7 @@ The chapter is a mix of installation and configuration instructions, and basic i
 .. raw:: html
 
     </div>
-    
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

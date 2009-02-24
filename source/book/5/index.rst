@@ -4,7 +4,7 @@ Stock and Manufacturing
 #######################
 
 .. toctree::
-    
+
     5_14_Stock/index
     5_15_Manufacturing/index
 
@@ -34,4 +34,4 @@ Stock and Manufacturing
 
 .. Published by Open Object Press, Grand Rosière, Belgium
 
-    
+

@@ -2,18 +2,20 @@
 Financial Analysis
 ==================
 
-Various reports designed for financial analysis are based on the analytic accounts. Most of those are available directly from the tree of accounts or from the form view of the account.
+Various reports designed for financial analysis are based on the analytic accounts. Most of those
+are available directly from the tree of accounts or from the form view of the account.
 
 Analysis per account
 --------------------
 
-From an analytic form, click on the :guilabel:`Print` button to select a report. Open ERP proposes the following financial analyses:
+From an analytic form, click on the :guilabel:`Print` button to select a report. Open ERP proposes
+the following financial analyses:
 
 *  :guilabel:`Analytic Balance`,
 
 *  :guilabel:`Inverted Analytic Balance`,
 
-*  :guilabel:`Cost Ledger`, 
+*  :guilabel:`Cost Ledger`,
 
 *  :guilabel:`Cost Ledger (quantities only)`.
 
@@ -27,23 +29,31 @@ Analytic Balance
 .. figure::  images/analytic_balance.png
    :align: center
 
-   *The analytic balance presents the breakdown of each project by the nature of the operations given by the financial accounts.*
+   *The analytic balance presents the breakdown of each project by the nature of the operations
+   given by the financial accounts.*
 
-The analytic balance is a report that relates the analytic accounts to the general accounts. It gives, for a given period, the balances of the analytic accounts broken down by general account.
+The analytic balance is a report that relates the analytic accounts to the general accounts. It
+gives, for a given period, the balances of the analytic accounts broken down by general account.
 
-This report is useful for analyzing the profitability of projects. It gives you the profitability of a project for the different operations that you used to carry out the project.
+This report is useful for analyzing the profitability of projects. It gives you the profitability of
+a project for the different operations that you used to carry out the project.
 
 Inverted Analytic Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The inverted analytic balance provides a similar report relating the general accounts and the analytic accounts. This report shows, for a given period, the balances of the general accounts broken down by the selected analytic accounts.
+The inverted analytic balance provides a similar report relating the general accounts and the
+analytic accounts. This report shows, for a given period, the balances of the general accounts
+broken down by the selected analytic accounts.
 
 .. figure::  images/analytic_balance_inverse.png
    :align: center
 
-   *The inverted analytic balance indicates the breakdown of operations by the nature of the different the analytic accounts (projects).*
+   *The inverted analytic balance indicates the breakdown of operations by the nature of the
+   different the analytic accounts (projects).*
 
-This enables you to analyze your costs by general account. For example, if you examine your general account for staff salaries you can obtain all your salary costs broken down by the different analytic (or project) accounts.
+This enables you to analyze your costs by general account. For example, if you examine your general
+account for staff salaries you can obtain all your salary costs broken down by the different
+analytic (or project) accounts.
 
 .. index::
    single: Cost ledger; Analytic
@@ -51,7 +61,9 @@ This enables you to analyze your costs by general account. For example, if you e
 The cost ledger
 ^^^^^^^^^^^^^^^
 
-While the two reports above provide results summed by account, the cost ledger provides all of the detailed entries for the selected accounts. It enables a detailed analysis of each operation carried out on one or several projects.
+While the two reports above provide results summed by account, the cost ledger provides all of the
+detailed entries for the selected accounts. It enables a detailed analysis of each operation carried
+out on one or several projects.
 
 .. figure::  images/analytic_cost_ledger.png
    :align: center
@@ -61,40 +73,52 @@ While the two reports above provide results summed by account, the cost ledger p
 The cost ledger (quantities only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The last report gives the detail of entries for an analytic account and a list of selected journals. Only quantities are reported for this analysis, not costs and revenues. 
+The last report gives the detail of entries for an analytic account and a list of selected journals.
+Only quantities are reported for this analysis, not costs and revenues.
 
 .. figure::  images/analytic_cost_ledger_quantity.png
    :align: center
 
    *The cost ledger (quantities only) gives a history of an analytic account.*
 
-The report is frequently used to print the number of hours worked on a project, without showing the costs and revenues. So you can show it to a client as a record of the hours worked on a particular project.
+The report is frequently used to print the number of hours worked on a project, without showing the
+costs and revenues. So you can show it to a client as a record of the hours worked on a particular
+project.
 
-To restrict the report to hours worked, without including sales and purchases, select only the services journal to print the report.
+To restrict the report to hours worked, without including sales and purchases, select only the
+services journal to print the report.
 
-.. tip:: Multiple printing 
+.. tip:: Multiple printing
 
-	To print several analytic accounts at once you can make a multiple selection on the different account in the tree of accounts. 
+	To print several analytic accounts at once you can make a multiple selection on the different
+	account in the tree of accounts.
 	For that select account lines using the :guilabel:`Ctrl-Click` keyboard and mouse combination.
 
-	Then click on :guilabel:`Print` in the tree or list view to export the whole selection into a single PDF document.
+	Then click on :guilabel:`Print` in the tree or list view to export the whole selection into a
+	single PDF document.
 
 .. index::
    single: Multi-company
 
 .. tip::  Multi-company
 
-	In a multi-company environment each company can have its own general chart of accounts on the same database. 
-	The two general charts of accounts are then independent but can be linked in a third chart using a view account to do the consolidation.
+	In a multi-company environment each company can have its own general chart of accounts on the same
+	database.
+	The two general charts of accounts are then independent but can be linked in a third chart using a
+	view account to do the consolidation.
 
-	If the different companies collaborate on joint projects they may all share the same analytic chart of accounts. 
-	In this environment, the cross-related reports like the balance and inverted balance are extremely useful because 
+	If the different companies collaborate on joint projects they may all share the same analytic chart
+	of accounts.
+	In this environment, the cross-related reports like the balance and inverted balance are extremely
+	useful because
 	they enable you to make an analysis per company by linking up to the general accounts.
 
 Key indicators
 --------------
 
-If you use analytic accounts with a structure of accounts by project client you should install the \ ``account_analytic_analysis``\   module. This module adds three new tabs to the analytic account form:
+If you use analytic accounts with a structure of accounts by project client you should install the \
+``account_analytic_analysis``\   module. This module adds three new tabs to the analytic account
+form:
 
 * management indicators in the :guilabel:`Analysis summary` tab,
 
@@ -124,26 +148,38 @@ These indicators enable you to quickly see the following elements:
 
    *Breakdown of monthly costs for an analytic account.*
 
-The real revenue is given by the amount invoiced to the client. The theoretical revenue is given by the sale price of different project costs which could be invoiced to the client. These give different margin figures.
+The real revenue is given by the amount invoiced to the client. The theoretical revenue is given by
+the sale price of different project costs which could be invoiced to the client. These give
+different margin figures.
 
-For example, in the case of a fixed price project contract, the real sale price at the end of the project will be equal to the contract negotiated with the client. The theoretical price gives the amount that would have been invoiced if you had charged for all the time worked.
+For example, in the case of a fixed price project contract, the real sale price at the end of the
+project will be equal to the contract negotiated with the client. The theoretical price gives the
+amount that would have been invoiced if you had charged for all the time worked.
 
-To give project managers a direct view of their different projects, the \ ``account_analytic_analysis``\   module creates new menus in the Project management module in :menuselection:`Project Management --> Analytic Accounts`.
+To give project managers a direct view of their different projects, the \
+``account_analytic_analysis``\   module creates new menus in the Project management module in
+:menuselection:`Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
    :align: center
 
    *Analytic accounts in Project Management.*
 
-These different menus give quick views that are very useful for live projects. For each project you can check if there are uninvoiced services, and see the last invoice date and the last uninvoiced service date, and reports on the amounts received and those planned. Project managers have therefore all the information necessary to manage their project well, shown in a single page.
+These different menus give quick views that are very useful for live projects. For each project you
+can check if there are uninvoiced services, and see the last invoice date and the last uninvoiced
+service date, and reports on the amounts received and those planned. Project managers have therefore
+all the information necessary to manage their project well, shown in a single page.
 
-In the following chapters you'll see how each project manager can use this information to carry out the different operations needed to manage the project, such as automatic invoicing, project planning, keeping customers up to date, and budgeting for resources.
+In the following chapters you'll see how each project manager can use this information to carry out
+the different operations needed to manage the project, such as automatic invoicing, project
+planning, keeping customers up to date, and budgeting for resources.
 
 .. todo:: - What is the situation now?
 
 .. note:: Analytic Budgets
 
-	There's been no discussion of analytic budgets in this section because at the time this book was originally being prepared, 
+	There's been no discussion of analytic budgets in this section because at the time this book was
+	originally being prepared,
 	the module that handles them was being completely rewritten.
 
 	Nevertheless, it's worth trying them because they offer the possibility of:

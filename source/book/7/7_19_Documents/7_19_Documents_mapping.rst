@@ -2,15 +2,21 @@
 Mapping between Open ERP resources and directories
 ---------------------------------------------------
 
-Each directory can have the type Static or be linked to another resource. A static directory, as with Operating Systems, is the classic directory that can contain a set of files. The directories linked to systems resources automatically possess sub-directores for each resource type defined in the parent directory.
+Each directory can have the type Static or be linked to another resource. A static directory, as
+with Operating Systems, is the classic directory that can contain a set of files. The directories
+linked to systems resources automatically possess sub-directores for each resource type defined in
+the parent directory.
 
 .. tip:: Directories in English
 
-    To keep them synchronized to the working language, directory names are not translatable. 
-    But Open ERP's demonstration data automatically creates directories in English. 
-    You can rename them through the menu :menuselection:`Document Management --> Configuration --> Directories`.
+    To keep them synchronized to the working language, directory names are not translatable.
+    But Open ERP's demonstration data automatically creates directories in English.
+    You can rename them through the menu :menuselection:`Document Management --> Configuration -->
+    Directories`.
 
-For example you can look at the directory shown in :menuselection:`Main Repository --> Sales Orders --> All Sales Orders`. You'll see the directory for all the orders present in Open ERP that was created automatically by the system.
+For example you can look at the directory shown in :menuselection:`Main Repository --> Sales Orders
+--> All Sales Orders`. You'll see the directory for all the orders present in Open ERP that was
+created automatically by the system.
 
 .. figure::  images/document_sale.png
    :align: center
@@ -22,9 +28,12 @@ For example you can look at the directory shown in :menuselection:`Main Reposito
 
    *Directories representing all the orders in the document management system.*
 
-Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the directory :menuselection:`Main Repository --> Projects` you'll see the structure of the analytic accounts.
+Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the
+directory :menuselection:`Main Repository --> Projects` you'll see the structure of the analytic
+accounts.
 
-To define a directory containing a specific type of resource you have to define parameters when you define the directory itself:
+To define a directory containing a specific type of resource you have to define parameters when you
+define the directory itself:
 
 * **Type** : Other Resources
 
@@ -39,9 +48,12 @@ To define a directory containing a specific type of resource you have to define 
 
    *Configuration of the directory containing quotations (draft orders).*
 
-This is a very flexible approach because any modification of the resource in Open ERP is automatically reflected in the document management system. So when the quotation gets confirmed in Open ERP the directory no longer appears as a quotation through FTP access.
+This is a very flexible approach because any modification of the resource in Open ERP is
+automatically reflected in the document management system. So when the quotation gets confirmed in
+Open ERP the directory no longer appears as a quotation through FTP access.
 
-Here are some examples of directories linked to Open ERP resources that could be helpful if configured in the document management system:
+Here are some examples of directories linked to Open ERP resources that could be helpful if
+configured in the document management system:
 
 * Quotations and Order: storing documents that relate to orders,
 
@@ -49,7 +61,8 @@ Here are some examples of directories linked to Open ERP resources that could be
 
 * Users: to automatically define a directory owned by each user of the system,
 
-* Employees: to store documents about employees, such as their CVs, your interview notes, contract details, and their annual assessments,
+* Employees: to store documents about employees, such as their CVs, your interview notes, contract
+  details, and their annual assessments,
 
 * Support Requests: storing items about requests or about technical support responses,
 
