@@ -121,15 +121,15 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 before.
 
 	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
-	of modules to install. Search for the \ ``crm``\  module in that list.
+		of modules to install. Search for the \ ``crm``\  module in that list.
 
 	#. Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
-	resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
+		resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
 
 	#. When the update screen appears, Open ERP gives you the list of modules that it will install and
-	update. You'll find two modules there – \ ``crm``\  (which you selected) and \ ``account``\
-	What's happened is that the \ ``crm``\  module lists the \ ``account``\  module as a dependency,
-	and \ ``account``\  is not yet installed. So Open ERP automatically installs \ ``account``\
+		update. You'll find two modules there – \ ``crm``\  (which you selected) and \ ``account``\
+		What's happened is that the \ ``crm``\  module lists the \ ``account``\  module as a dependency,
+		and \ ``account``\  is not yet installed. So Open ERP automatically installs \ ``account``\
 
 	#. Start the upgrade to install both modules.
 

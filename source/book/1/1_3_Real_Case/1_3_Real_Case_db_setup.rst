@@ -165,30 +165,30 @@ Now create a new product:
 	#. Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field,
 
 	#. Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
-	:guilabel:`Radiators` category,
+		:guilabel:`Radiators` category,
 
 	#. The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
-	The fields :guilabel:`Procure Method` :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should
-	also stay at their default values: in fact every other field remains untouched.
+		The fields :guilabel:`Procure Method` :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should
+		also stay at their default values: in fact every other field remains untouched.
 
            .. figure::  images/product.png
               :align: center
               :scale: 95
 
 	#. Click on the :guilabel:`Procurement` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
-	field and \ ``132.50``\  into the :guilabel:`List Price` field,
+		field and \ ``132.50``\  into the :guilabel:`List Price` field,
 
 	#. Click the :guilabel:`Properties` tab, then click :guilabel:`Save` and observe that
-	:guilabel:`Inventory Properties` have taken on new values (just as the Accounting Properties did in
-	the product category) but :guilabel:`Accounting Properties` here remain empty. When product
-	transactions occur, the Income and Expense accounts that you've just defined in the Product
-	Category are used by the Product unless an account is specified here, directly in the product, to
-	override that.
+		:guilabel:`Inventory Properties` have taken on new values (just as the Accounting Properties did in
+		the product category) but :guilabel:`Accounting Properties` here remain empty. When product
+		transactions occur, the Income and Expense accounts that you've just defined in the Product
+		Category are used by the Product unless an account is specified here, directly in the product, to
+		override that.
 
 	#. Once the product is saved it changes to a non-editable state. If you had entered data
-	incorrectly or left a required field blank, the form would have stayed editable and you'd need to
-	click from tab to tab to find a field colored red, with an error message below it, that would have
-	to be correctly filled in.
+		incorrectly or left a required field blank, the form would have stayed editable and you'd need to
+		click from tab to tab to find a field colored red, with an error message below it, that would have
+		to be correctly filled in.
 
 .. index::
    single: Stock locations
@@ -201,14 +201,14 @@ locations. These locations have been defined by the minimal default data loaded 
 was created. You'll use this default structure in this example.
 
 	#. From the :guilabel:`Main Menu` click on :menuselection:`Inventory Control --> Configuration -->
-	Locations` to reach a list view of the locations (not the tree view)
+		Locations` to reach a list view of the locations (not the tree view)
 
 	#. Click on the name of a location, such as \ ``Company``\   to open a descriptive form view. Each
-	location has a  *Location type*  and a  *Parent Location* that defines he hierarchical structure.
-	An  *Inventory Account* can also be assigned to a location.
+		location has a  *Location type*  and a  *Parent Location* that defines he hierarchical structure.
+		An  *Inventory Account* can also be assigned to a location.
 
 	#. From the :menuselection:`Main Menu` click :menuselection:`Inventory Control --> Configuration
-	--> Warehouses` to view a list of warehouses.
+		--> Warehouses` to view a list of warehouses.
 
 .. tip:: Valuation of stock
 
@@ -264,15 +264,15 @@ Before you can use any chart of accounts for anything you need to specify a Fisc
 defines the different time periods available for accounting transactions. To do so:
 
 	#. Select :menuselection:`Financial Management --> Configuration --> Periods --> Fiscal Years` and
-	click :guilabel:`New` to open a blank  *Fiscal Year* definition form.
+		click :guilabel:`New` to open a blank  *Fiscal Year* definition form.
 
 	#. Give a name to that :guilabel:`Fiscal Year` (such as Financial Year 2009 and a  *Code* (Y2009,
-	then select the  *Start date* and  *End date*  which should be a year apart and (for this example)
-	straddle today's date.
+		then select the  *Start date* and  *End date*  which should be a year apart and (for this example)
+		straddle today's date.
 
 	#. Then click on one of the buttons :guilabel:`Create Monthly Periods` or :menuselection:`Create 3
-	Months Periods` to create an appropriate set of periods for the fiscal year, as shown in the figure
-	below.  *Save* this.
+		Months Periods` to create an appropriate set of periods for the fiscal year, as shown in the figure
+		below.  *Save* this.
 
 
 .. figure::  images/def_fiscal_year_tab.png

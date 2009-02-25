@@ -737,9 +737,9 @@ channels could create the following price lists:
 
  #. Main distribution:
 
-"       - pricelist for Walbury,"
+	"       - pricelist for Walbury,"
 
-"       - pricelist for TesMart,"
+	"       - pricelist for TesMart,"
 
  #. Postal Sales.
 

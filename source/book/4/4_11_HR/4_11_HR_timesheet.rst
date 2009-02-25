@@ -139,10 +139,10 @@ Works of the Day`.
  *New*
 
 	#. The :guilabel:`User` is proposed by default, but you can change it if you're encoding the first timesheet
-	for another company employee.
+		for another company employee.
 
 	#. The :guilabel:`Date` is automatically proposed as today's date, but it's possible to change it if you're
-	encoding the timesheet for a prior day.
+		encoding the timesheet for a prior day.
 
 	#. :guilabel:`Analytic Account`
 

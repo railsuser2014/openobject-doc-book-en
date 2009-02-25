@@ -81,7 +81,7 @@ through the Setup wizard in steps:
 	#.  :guilabel:`Select a profile` : select ``Minimal Profile``
 
 	#.  :guilabel:`Define Main Company` and  :guilabel:`Report Header` : leave everything untouched on
-	this page.
+		this page.
 
 	#.  :guilabel:`Summary` : just click the :guilabel:`Install` button.
 
@@ -92,32 +92,32 @@ Modules` to show the list of all modules that are registered within Open ERP bu
 uninstalled. Then:
 
 	#. Enter \ ``product``\  into the :guilabel:`Name` field and click :guilabel:`Filter` to list the
-	product module.
+		product module.
 
 	#. Click the name \ ``product``\  in the list to display the product module in form view, rather
-	than the list view that a search displays.
+		than the list view that a search displays.
 
 	#. Click the :guilabel:`Install` button on the product module form.
 
 	#. Click the :guilabel:`Search` button at the top of the form to toggle back to the list view with
-	search selection fields on it.
+		search selection fields on it.
 
 	#. Search for the ``sale`` module then select it, too, as you did with product, to show it in form
-	view.
+		view.
 
 	#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \
-	``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
+		``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
 
 	#. Return to the :guilabel:`Module` tab and then click its :guilabel:`Install` button.
 
 	#. Click :guilabel:`Apply Upgrades` in the toolbar to the right.
 
 	#. When the :guilabel:`System Upgrade` form appears, review the list of Modules to update – it
-	may be longer than you had expected, and now includes all the modules you need, because the
-	dependencies themselves had their own dependencies.
+		may be longer than you had expected, and now includes all the modules you need, because the
+		dependencies themselves had their own dependencies.
 
 	#. Click :guilabel:`Start Upgrade` wait for :guilabel:`System Upgrade Done` to be displayed, then
-	click :guilabel:`Close` on that form.
+		click :guilabel:`Close` on that form.
 
 	#. The main menu now displays all of the menu items that were loaded by the modules you installed.
 

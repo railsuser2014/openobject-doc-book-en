@@ -101,13 +101,13 @@ After confirming the order you'd wait for the delivery of the products from your
 this would be somebody in Stores rather than Purchasing, who would:
 
 	#. Open the menu :menuselection:`Inventory Control --> Packing Lists --> Getting Goods --> Packings
-	to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
-	Lists`
+		to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
+		Lists`
 
 	#. When the :guilabel:`Packing list` window appears, select the name of the entry in the list (\
-	``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name
-	or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
-	:guilabel:`Make Packing` form.
+		``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name
+		or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
+		:guilabel:`Make Packing` form.
 
 	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
 
@@ -220,42 +220,42 @@ menu :menuselection:`Sales Management --> Sales Order` which creates a new order
 ``Quotation``\  , then:
 
 	#. Select \ ``Default Shop``\  in the :guilabel:`Shop` field. The shop is linked to a warehouse,
-	which defines the location that you'll use to despatch goods from.
+		which defines the location that you'll use to despatch goods from.
 
 	#. Select the :guilabel:`Partner` \ ``Smith and Sons``\   This has the effect of automatically
-	completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
-	:guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Default Sale Pricelist``\.  They're
-	all only defaults so these fields can be modified as you need.
+		completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
+		:guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Default Sale Pricelist``\.  They're
+		all only defaults so these fields can be modified as you need.
 
 	        .. figure::  images/order.png
         	   :align: center
 
 	#. Click the :guilabel:`Save Parent and Create new record` icon to the right of the
-	:guilabel:`Sales Order Lines` field. It saves the main order form and becomes a new
-	:guilabel:`Create new record` icon. Click that to open a :guilabel:`Sales Order Lines` window.
+		:guilabel:`Sales Order Lines` field. It saves the main order form and becomes a new
+		:guilabel:`Create new record` icon. Click that to open a :guilabel:`Sales Order Lines` window.
 
 	#. Select the product \ ``Titanium Alloy Radiator``\   Although the :guilabel:`Product` field isn't
-	itself required, it's used by Open ERP to select the specific product so that several other fields
-	can be automatically completed on the order line of the proposal, such as :guilabel:`Description`,
-	:guilabel:`Product UOM`, :guilabel:`Unit Price`, :guilabel:`Delivery Delay`, and :guilabel:`Taxes`.
+		itself required, it's used by Open ERP to select the specific product so that several other fields
+		can be automatically completed on the order line of the proposal, such as :guilabel:`Description`,
+		:guilabel:`Product UOM`, :guilabel:`Unit Price`, :guilabel:`Delivery Delay`, and :guilabel:`Taxes`.
 
 	#. Change the :guilabel:`Quantity` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\
-	Then click :guilabel:`Save` and the line appears on the quotation form. A blank order line form
-	reappears so that you can enter another line, but it's enough now just to click :guilabel:`Close`
-	to return to the order form.
+		Then click :guilabel:`Save` and the line appears on the quotation form. A blank order line form
+		reappears so that you can enter another line, but it's enough now just to click :guilabel:`Close`
+		to return to the order form.
 
 	#. On the :guilabel:`Other data` tab of this Sales Order select a :guilabel:`Shipping Policy` of \
-	``Automatic Invoice after Delivery``\  from the dropdown menu list.
+		``Automatic Invoice after Delivery``\  from the dropdown menu list.
 
 	#. Return to the first tab :guilabel:`Sale Order` and validate the document by clicking
-	:guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
-	``Quotation``\  to \ ``In Progress``\   If you were in negotiation with the prospective customer
-	you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
-	``Quotation``\  state for as long as necessary.
+		:guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
+		``Quotation``\  to \ ``In Progress``\   If you were in negotiation with the prospective customer
+		you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
+		``Quotation``\  state for as long as necessary.
 
 	#. In the last tab of the order, :guilabel:`History` you can see the :guilabel:`Picking List`
-	that's been created and you'll be able to see any invoices that relate to this order when they're
-	generated.
+		that's been created and you'll be able to see any invoices that relate to this order when they're
+		generated.
 
 From the :guilabel:`Main Menu` click :menuselection:`Products --> Products` to display a list of
 products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its
@@ -313,10 +313,10 @@ To analyze stock movements that you've made during these operations use the foll
 	#. Select menu :menuselection:`Inventory Control --> Locations Structure`,
 
 	#. Select the first line by clicking somewhere along it (but don't click on the \ ``Locations``\
-	text itself) then click on the :guilabel:`Print` icon above the list further over to the right.
+		text itself) then click on the :guilabel:`Print` icon above the list further over to the right.
 
 	#. Select the report :guilabel:`Lots by location`and click the :guilabel:`OK` button to get a detailed report of
-	Stocks for each location. You should see the following data:
+		Stocks for each location. You should see the following data:
 
 	- -10 in the :guilabel:`Suppliers` location,
 
@@ -370,10 +370,10 @@ supplier. From the menu :menuselection:`Financial Management --> Invoices --> Cu
 Open Customer Invoices`, click the name of the invoice that you want to mark as paid:
 
 	#. Use the :guilabel:`Pay Invoice` button in the :guilabel:`Action` section of the toolbar at the
-	right to open a window that enables you to register the payment.
+		right to open a window that enables you to register the payment.
 
 	#. Select the :guilabel:`Journal` \ ``Bank Journal``\  and click :guilabel:`Pay Invoice`. The
-	invoice is then marked as paid, and you're returned to the :guilabel:`Main Menu`.
+		invoice is then marked as paid, and you're returned to the :guilabel:`Main Menu`.
 
 
 .. figure::  images/familiarization_invoice.png

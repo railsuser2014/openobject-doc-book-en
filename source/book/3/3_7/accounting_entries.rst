@@ -398,7 +398,7 @@ to manage issues such as:
 	#. Separating payment preparation and payment approval in your company.
 
 	#. Preparing an order during the week containing several payments, then creating a payment file at
-	the end of the week.
+		the end of the week.
 
 	#. Creating a file for electronic payment which can be sent to a bank for execution.
 
