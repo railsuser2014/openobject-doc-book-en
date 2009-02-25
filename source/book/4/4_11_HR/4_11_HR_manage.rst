@@ -42,8 +42,8 @@ To define a new employee in Open ERP, use the menu :menuselection:`Human Resour
 
    *Form describing an employee.*
 
-Start by entering the employee's :guilabel:Name`  and the company that this employee works for
-(:guilabel:Company`). You can then create a new user of the Open ERP system which is linked to this
+Start by entering the employee's :guilabel:`Name`  and the company that this employee works for
+(:guilabel:`Company`). You can then create a new user of the Open ERP system which is linked to this
 employee by filling in the :guilabel:`Username` field. Even if the employee isn't a user, it's best if you
 create a system access for most of your staff just so that you can control their access rights from
 the outset.
