@@ -1,9 +1,9 @@
 
+.. _part-phys:
+
 #######################
 Stock and Manufacturing
 #######################
-
-
 
 .. toctree::
 

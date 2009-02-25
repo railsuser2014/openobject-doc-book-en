@@ -1,4 +1,6 @@
 
+.. _ch-developing:
+
 *****************************************************************
 Developing a real case from purchase to sale: a complete workflow
 *****************************************************************

@@ -135,23 +135,31 @@ Structure of this book
 ======================
 
 The first part starts with the installation of Open ERP. If you have already installed Open ERP you
-can directly take your first steps on a guided tour in Chapter 2. If you're already familiar
-with Open ERP or Tiny ERP you can use Chapter 3 to find out how to create a new workflow from
-scratch in an empty database with nothing to distract you. Or you can skip directly to Chapter 4 in
-Part Two, to start with details of Open ERP's functional modules.
+can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
+with Open ERP or Tiny ERP you can usethe :ref:`ch-developing` chapter to find out how to create a new workflow from
+scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
+the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
 
-Part Two deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
+Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
 elements necessary for managing an efficient sales department there, and automating tasks to monitor
 performance.
 
-Part Three is devoted to general accounting and its key role in the management of the whole
+Part Three, :ref:`part-genacct`,  is devoted to general accounting and its key role in the management of the whole
 enterprise.
 
-Part Four handles all the functions of enterprise management: human resources for managing projects,
+Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
+human resources for managing projects,
 through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
 can help you to optimize your leadership of an enterprise.
 
-Finally Part Five, structured in two chapters, explains first how to administer and configure Open
+Part Five, :ref:`part-phys`, describes the physical movement of stocks and their manufacture.
+
+Part Six, :ref:`part-trade`, deals with purchasing and selling goods and services.
+
+Part Seven, :ref:`part-qual`, is focused on the process description and documentation handling that Open ERP
+manages.
+
+Finally Part Nine, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
 ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 

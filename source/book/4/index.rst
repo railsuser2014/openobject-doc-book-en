@@ -1,4 +1,6 @@
 
+.. _part-ops:
+
 ##################################
 Effective Management of Operations
 ##################################

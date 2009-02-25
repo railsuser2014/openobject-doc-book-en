@@ -1,4 +1,6 @@
 
+.. _part-trade:
+
 ####################
 Sales and Purchasing
 ####################

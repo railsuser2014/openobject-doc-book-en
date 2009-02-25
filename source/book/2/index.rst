@@ -1,4 +1,6 @@
 
+.. _part2-crm:
+
 ###############################
 Managing Customer Relationships
 ###############################

@@ -1,4 +1,6 @@
 
+.. _part-genacct:
+
 ##################
 General Accounting
 ##################

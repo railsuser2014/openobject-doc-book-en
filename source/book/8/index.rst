@@ -1,4 +1,6 @@
 
+.. _part-config:
+
 ########################################
 System Administration and Implementation
 ########################################
