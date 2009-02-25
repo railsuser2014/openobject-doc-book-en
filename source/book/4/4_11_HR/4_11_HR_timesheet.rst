@@ -303,7 +303,7 @@ When employee teams are important, a control system must be implemented. All emp
 complete their timesheets correctly because this forms the basis of planning control, and the
 financial management and invoicing of projects
 
-You'll see in the next chapter that it's possible to automatically invoice services at the end of
+You'll see in :ref:`ch-services` that you can automatically invoice services at the end of
 the month based on the timesheet. But at the same time some contracts are limited to prepaid hours.
 These hours and their deduction from the original limit are also managed by these timesheets.
 
@@ -378,7 +378,7 @@ Once the timesheets have been approved you can then use them for cost control an
 hours to clients.
 
 Contracts and their rates, planning, and methods of invoicing are the object of the following
-chapter.
+chapter, :ref:`ch-services`.
 
 
 .. Copyright © Open Object Press. All rights reserved.

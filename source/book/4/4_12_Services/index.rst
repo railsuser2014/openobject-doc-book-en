@@ -1,4 +1,6 @@
 
+.. _ch-services:
+
 **************************
 The Management of Services
 **************************

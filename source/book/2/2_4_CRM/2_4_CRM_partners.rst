@@ -9,14 +9,16 @@ Open ERP preparation
 You'll need two databases for this chapter:
 
 * \ ``openerp_ch04X``\  , which should be a restored copy of\ `` openerp_ch02``\  , the database you
-  created through Chapter 2. It's referenced throughout the main body of this chapter because it
+  created through :ref:`ch-guided`. It's referenced throughout the main body of this chapter because it
   contains demonstration data that illustrates the points made in the chapter.
 
 * \ ``openerp_ch04``\  , which should be a restored copy of \ ``openerp_ch03,``\   the database you
-  created through Chapter 3. If you follow the steps in this chapter you can extend this database.
+  created through :ref:`ch-real`. If you follow the steps in this chapter you can extend this database.
 
 To be able to backup and restore these databases you'll need to know your super-administrator
 password.
+
+.. todo:: is this now correct?
 
 You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new
 modules into it later in the chapter – they're not all available in the core 5.0.0 release of

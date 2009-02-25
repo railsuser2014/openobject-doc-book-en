@@ -1,4 +1,6 @@
 
+.. _ch-purchase:
+
 *********************
 Purchasing Management
 *********************
@@ -100,7 +102,7 @@ When you've completed the product, Open ERP automatically completes the other fi
 * :guilabel:`Purchase Price`, provided by the supplier pricelist,
 
 * :guilabel:`Applicable taxes`, taken from the information on the product form and partner form,
-  depending on the rules seen in the chapter on Accounting.
+  depending on the rules seen in :ref:`ch-financial`.
 
 .. tip:: Product wording and code
 
@@ -182,7 +184,7 @@ Select the document that corresponds to the item that you're receiving. Usually 
 note is found by making a search on the order reference or the supplier name. You can then confirm
 the receipt of the products.
 
-As you saw in the chapter on Stock Management, if you receive only part of the order, Open ERP
+As you saw in :ref:`ch-stocks`, if you receive only part of the order, Open ERP
 manages the remains of that order.
 A second receipt note is then automatically forecast with goods not received.
 You can cancel if you think that you will never receive the forgotten products.
@@ -415,7 +417,7 @@ Purchases by product`.
 
 This analysis carries on the supplier orders and not on the invoices or the quantities effectively
 received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
-module is described in detail in the chapter on Sales Management.
+module is described in detail in :ref:`ch-sales`.
 
 To analyze the received quantities, you can use the statistical modules based on the management of
 stock.
@@ -487,7 +489,7 @@ Re-invoicing based on costs you'd get the following workflow:
    If you want several analysis plans you should install the module :mod:`purchase_analytic_plans`.
    These enable you to split a line on a supplier purchase order into several accounts and analytic
    plans.
-   Look back at the chapters on accounting for more information on the use of analytic accounts.
+   Look back at :ref:`ch-accts` for more information on the use of analytic accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 

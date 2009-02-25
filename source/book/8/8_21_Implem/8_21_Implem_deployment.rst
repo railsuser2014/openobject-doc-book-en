@@ -195,7 +195,7 @@ require any more manual adjustments. If the import runs correctly, it shows that
 load your data in the production database.
 
 You can use the Open ERP database backup procedure at different stages of configuration (see
-Chapter 1). Then if you've made a false step that you can't recover from you can always return to a
+:ref:`ch-inst`). Then if you've made a false step that you can't recover from you can always return to a
 prior state.
 
 Since your data describes much of your company's value, take particular care both when you need to

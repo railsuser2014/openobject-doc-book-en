@@ -1,4 +1,6 @@
 
+.. _ch-projects:
+
 ********************************************
 Internal organization and project management
 ********************************************

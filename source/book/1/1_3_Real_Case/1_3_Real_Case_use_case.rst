@@ -39,7 +39,7 @@ minimal chart of accounts and a bank account.
 Database creation
 =================
 
-Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch03``\  . This
+Use the technique outlined in :ref:`ch-inst` to create a new database, \ ``openerp_ch03``\  . This
 database will be free of data and contain the least possible amount of functionality as a starting
 point. You'll need to know your super administrator password for this – or you'll have to find
 somebody who does have it to create this seed database. You won't be able to use the \

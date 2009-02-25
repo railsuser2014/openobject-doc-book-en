@@ -7,13 +7,13 @@
 Database creation
 =================
 
-Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This
+Use the technique outlined in this chapter, :ref:`ch-inst` to create a new database, \ ``openerp_ch01``\  . This
 database will contain the demonstration data provided with Open ERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.
 
 Start the database creation process from the :guilabel:`Database Administration` page by clicking
-:guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database`
+:guilabel:`Create` and then completing the following fields on the :guilabel:`Create Database`
 form:
 
 *  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system
@@ -25,18 +25,18 @@ form:
 
 *  :guilabel:`Default Language` : \ ``English``\  .
 
+.. _sect-creatingdb:
 
 Creating the database
 ---------------------
 
-Before walking through an Open ERP business process step by step in the next chapter you'll create
+Before walking through an Open ERP business process step by step in the next chapter, :ref:`ch-guided`, you'll create
 a database to check that the installation is working correctly:
 
 * \ ``openerp_ch01``\  : a minimal database containing demonstration data.
 
 To create new databases you must know the super-administrator password which defaults to ``admin``
 on a new installation.
-
 
 .. note :: The super-administrator password
 
@@ -179,14 +179,14 @@ New Open ERP functionality
 
 The database you've created and managed so far is based on the core Open ERP functionality that you
 installed. The core system is installed in the file system of your Open ERP application server, but
-only installed into an Open ERP database as you require it, as is described in the next chapter.
+only installed into an Open ERP database as you require it, as is described in the next chapter, :ref:`ch-guided`.
 
 What if want to update what's there, or extend what's there with additional modules?
 
 * To update what you have, you'd install a new instance of Open ERP using the same techniques as
-  described earlier in this chapter.
+  described earlier in this chapter, :ref:`ch-inst`.
 
-* To extend what you have, you'd install new modules in the addons directory of your current
+* To extend what you have, you'd install new modules in the ``addons`` directory of your current
   Open ERP installation. There are several ways of doing that.
 
 In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your

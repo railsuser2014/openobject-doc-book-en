@@ -235,7 +235,7 @@ in place of other Product taxes in the same group – in this case replacing the
 Tax``\   or \ ``Output VAT``\  .
 
 You can also assign multiple taxes to a Project, so that invoices from the Project carry an
-appropriate rate of tax (project invoicing is dealt with in detail in a later chapter).
+appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-projects`).
 
 .. note:: Tax regions
 

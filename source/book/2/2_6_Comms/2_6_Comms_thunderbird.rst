@@ -18,7 +18,7 @@ Installing the Thunderbird extension
 
 To be able to use the Thunderbird plugin you first have to install the Open ERP module \
 ``email_interface``\  . It may not be loaded in the core of the Open ERP Server so you might have
-to load it using one of the methods described at the end of Chapter 1. Once you've got it into your
+to load it using one of the methods described at the end of :ref:`ch-inst`. Once you've got it into your
 server's filesystem it's installed the same way as all of the other modules you've handled so far.
 
 You'll then have to install the Thunderbird extension. To do that, use the file \

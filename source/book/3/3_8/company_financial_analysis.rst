@@ -115,7 +115,7 @@ Good management budgeting
 -------------------------
 
 Open ERP manages its budgets using both General and Analytic Accounts. You'll see how to do this
-here for General Accounts and then in Chapter 9 for Analytical Accounts.
+here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts.
 
 Use the menu :menuselection:`Financial Management --> Configuration --> Budgets --> General Budgets`
 to define a new budget.

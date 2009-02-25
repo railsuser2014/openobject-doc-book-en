@@ -196,7 +196,7 @@ find all of the current quotations, you can use the menu :menuselection:`Sales M
 
 To follow the process for your order, you can click on the process view from the order form. Open
 ERP then shows you an interactive process view of that order. For more information about its use,
-look at the chapter on Process.
+look at :ref:`ch-process`.
 
 .. figure:: images/sale_process.png
    :align: center
@@ -282,7 +282,7 @@ Each of these three products has a different price. The products *Bottle of beer
 beer* have a stock to be managed. The *Case of 24 bottles of beer* has no stock because, if you sell
 the product, Open ERP automatically moves the stock in two lines, one for the empty case and the
 other for the 24 individual bottles of beer. For more information on bills of material for sale,
-look at the chapter on manufacturing management.
+look at :ref:`ch-mnf`.
 
 Management of Alerts
 ====================
@@ -642,7 +642,7 @@ Margins by Project
 ------------------
 
 To manage margins by project you must install the analytical accounts with management by task. Use
-of these accounts is described in the relevant chapter.
+of these accounts is described in :ref:`ch-accts`.
 
 You should install the module :mod:`account_analytic_analysis`. This module will add a tab on the
 product form to handle the different margins in an analytic account representing a project or a

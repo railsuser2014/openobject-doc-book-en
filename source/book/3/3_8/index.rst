@@ -1,4 +1,6 @@
 
+.. ch_financial:
+
 ******************
 Financial Analysis
 ******************

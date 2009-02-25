@@ -105,8 +105,8 @@ Personalizing the welcome page for each user
 --------------------------------------------
 
 When you sign into Open ERP for the first time, a welcome page appears. In a minimal system, such
-as that created in the original \ ``openerp_ch02``\  database before it was expanded in that
-chapter, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you
+as that created in the original \ ``openerp_ch02``\  database before it was expanded in 
+:ref:`ch-guided`, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you
 get by default when you click the :menuselection:`Main Menu` button. As you add functionality to
 your database you get more choices for the welcome page, with different dashboards automatically
 assigned to various company roles as they're created in the demonstration data.

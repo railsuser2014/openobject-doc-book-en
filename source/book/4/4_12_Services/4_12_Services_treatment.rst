@@ -89,7 +89,7 @@ waiting for validation`.
 	These roles may overlap (so the same person who approves your accounting group's expenses may also
 	be responsible for creating invoices).
 
-	To find out more about the management of roles look at chapter 13.
+	To find out more about the management of roles look at :ref:`ch-config`.
 
 The department manager can then approve the expenses, which automatically creates a supplier invoice
 in the employee's name so that the employee can be reimbursed. An analytic account is coded onto

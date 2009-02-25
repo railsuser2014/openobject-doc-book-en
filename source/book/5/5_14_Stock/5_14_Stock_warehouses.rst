@@ -80,7 +80,7 @@ of virtual stock to the maximum level given in the rule.
 
    To check this, look at the list of procurements in the exception state in the menu
    :menuselection:`Stock Management --> Automatic Procurements --> Procurement Exceptions`. More
-   detail on handling these exceptions is given in the chapter on Manufacturing.
+   detail on handling these exceptions is given in :ref:`ch-mnf`.
 
 It's important to underline that the rule is based on virtual quantities and not just on real
 quantities. It then takes account of the calculation of orders and receipts to come.

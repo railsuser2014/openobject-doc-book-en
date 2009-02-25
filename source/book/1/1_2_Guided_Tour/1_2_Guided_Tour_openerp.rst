@@ -221,7 +221,7 @@ They contain some of the demonstration data that you installed when you created 
 Accounting and finance
 ----------------------
 
-Chapters 6 to 9 in this book are dedicated to general and analytic accounting. A brief overview of
+The chapters in :ref:`part-gen-acct` in this book are dedicated to general and analytic accounting. A brief overview of
 the functions provided by these modules is given here as an introduction.
 
 Accounting is totally integrated into all of the company's functions, whether it's general,
@@ -484,7 +484,7 @@ statistical tools in Open ERP to analyze the different communications with your
 these, you can execute a real improvement policy to manage your service quality.
 
 The management of customer relationships is detailed in the second section of this book (see
-Chapters 4 and 5).
+:ref:`part2-crm`).
 
 
 .. index::
@@ -543,7 +543,7 @@ representation of the plan.
 You can run projects related to Services or Support, Production or Development – it's a universal
 module for all enterprise needs.
 
-Project Management is described in Chapter 12.
+Project Management is described in :ref:`ch-projects`.
 
 .. index::
    single: Production Management

@@ -197,7 +197,7 @@ can skip this step.
 	accept them.
 	Your Open ERP addons directory must be writable by the system user that's running your Open ERP
 	application for this,
-	as described in the final section of Chapter 1.
+	as described in the final section of :ref:`ch-inst`.
 
 Click :menuselection:`Administration --> Modules Management --> Uninstalled modules` to give you an
 overview of all of the modules available for installation.

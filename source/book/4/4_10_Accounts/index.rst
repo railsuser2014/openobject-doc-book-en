@@ -1,4 +1,6 @@
 
+.. _ch-accts:
+
 *****************
 Analytic Accounts
 *****************
@@ -17,10 +19,10 @@ management tool, at the center of most system processes
 
 There are several reasons for this:
 
-*  reflect your entire management activity,
+* reflect your entire management activity,
 
 * unlike the general accounts, the structure of the analytic accounts isn't regulated by legal
-obligations, so each company can adapt it to its needs.
+  obligations, so each company can adapt it to its needs.
 
 .. note:: Independence from general accounts
 
@@ -45,12 +47,12 @@ here are some of those advantages:
 * you can manage many different analytic operations,
 
 * you can modify an analytic plan on the fly, during the course of an activity, because of its
-independence,
+  independence,
 
 * you can avoid an explosion in the number of general accounts,
 
 * even those companies that don't use Open ERP's general accounts can use the analytic accounts for
-management.
+  management.
 
 .. tip:: Who gains from analytic accounts?
 

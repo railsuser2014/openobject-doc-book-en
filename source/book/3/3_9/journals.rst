@@ -61,7 +61,7 @@ Controls and aids for data entry
 
 You can carry out two types of control on Journals in Open ERP – controls over the financial
 accounts and access controls for groups of users. In addition to these controls you can also apply
-all of the rights management detailed in Chapter 13.
+all of the rights management detailed in :ref:`ch-config`.
 
 To avoid mistakes while entering accounts data, you can place conditions in the general accounts
 about who can use a given account. To do this, you must list all the accounts or valid account types

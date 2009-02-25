@@ -136,7 +136,7 @@ Structure of this book
 
 The first part starts with the installation of Open ERP. If you have already installed Open ERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
-with Open ERP or Tiny ERP you can usethe :ref:`ch-developing` chapter to find out how to create a new workflow from
+with Open ERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
 scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
 the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
 

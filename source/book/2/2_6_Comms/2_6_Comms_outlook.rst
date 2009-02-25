@@ -8,7 +8,7 @@ Open ERP preparation
 You'll need only one database for this chapter:
 
 * \ ``openerp_ch05X``\  , which should be a restored copy of\ `` openerp_ch04X``\   the database you
-  created at the start of Chapter 4 and then extended – you'll refer to it from time to time because
+  created at the start of :ref:`ch-crm` and then extended – you'll refer to it from time to time because
   it contains demonstration data that you can use to exercise some of the functions you encounter in
   the chapter.
 

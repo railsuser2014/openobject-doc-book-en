@@ -55,7 +55,7 @@ that's created correspond to the amounts that Open ERP will record as the custo
 	You create instead a report from the purchase order, which prints a pro forma invoice,
 	which has no accounting consequences within the system.
 
-	You can use the module described in Chapter 13 to create this report.
+	You can use the module described in :ref:`ch-config` to create this report.
 
 An open invoice has a unique invoice number. The invoice is sent to the customer and is marked on
 the system as awaiting payment.

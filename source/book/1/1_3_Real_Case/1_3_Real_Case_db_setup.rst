@@ -292,7 +292,7 @@ Make a backup of the database
 -----------------------------
 
 If you know the super-administrator password, make a backup of your database using the procedure
-described at the very end of Chapter 1. Then restore it to a new database: \ ``testing``\  .
+described at the very end of :ref:`ch-inst`. Then restore it to a new database: \ ``testing``\  .
 
 This operation enables you to test the new configuration on \ ``testing``\   so that you can be sure
 everything works as designed. Then if the tests are successful you can make a new database from \

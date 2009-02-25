@@ -53,11 +53,11 @@ or validate them. Open ERP uses the following different ways of generating invo
 
 * from reception or despatch of goods,
 
-* from work carried out (timesheets, see chapter 10),
+* from work carried out (timesheets, see :ref:`ch_hr`),
 
-* from closed tasks (see chapter 12),
+* from closed tasks (see :ref:`projects`),
 
-* from fee charges or other rechargeable expenses (see chapter 11).
+* from fee charges or other rechargeable expenses (see :ref:`ch_services`).
 
 The different processes generate \ ``Draft``\   invoices. These must then be approved by a suitable
 system user and sent to the customer. The different invoicing methods are detailed in the following

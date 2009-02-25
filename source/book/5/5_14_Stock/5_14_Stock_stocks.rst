@@ -56,7 +56,7 @@ locations. Three lead time figures are available:
 .. note:: Warranty
 
     The warranty period is used in the management of repairs and after-sales service.
-    You can find more information on this subject in the chapter about manufacturing.
+    You can find more information on this subject in :ref:`ch-mnf`.
 
 Fields in the section :guilabel:`Storage localisation` are given for information – they don't have
 any impact on the management of stock.
@@ -213,7 +213,7 @@ the virtual stock is now smaller than the real stock. That happens because three
 reserved by the order that you created, so they can't be sold to another customer.
 
 Start the scheduler through the menu :menuselection:`Manufacturing --> Compute All Schedulers`. Its
-functionality will be detailed in the chapter about Manufacturing. This manages the reservation of
+functionality will be detailed in :ref:`ch-mnf`. This manages the reservation of
 products and places orders based on the dates promised to customers, and the various internal lead
 times and priorities.
 

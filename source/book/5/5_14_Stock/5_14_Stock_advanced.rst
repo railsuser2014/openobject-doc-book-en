@@ -119,7 +119,7 @@ Open ERP supports three approaches to controlling data entry about products orde
 
 * Work by selecting the products waiting from the supplier, independent of good receipt documents.
 
-You'll see the configuration of the supplier order in detail in the chapter on purchases.
+You'll see the configuration of the supplier order in detail in :ref:`ch-purchase`.
 
 .. index::
    single: Goods receipt

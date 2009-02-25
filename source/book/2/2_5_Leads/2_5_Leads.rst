@@ -80,7 +80,7 @@ data.
    *Importing leads into the system.*
 
 You then set which columns are present in your CSV file in the correct order. Then select your file
-and click on :guilabel:`Import`. Check in the chapter about system administration for more
+and click on :guilabel:`Import`. Check in the chapter about system administration, :ref:`ch-config`, for more
 information on import and export.
 
 .. tip:: Various Imports
@@ -99,7 +99,7 @@ There are other methods of importing leads automatically or semi-automatically:
 
 * Using Open ERP's XML-RPC web-servces to connect to a form on your website.
 
-These different methods are described in the earlier CRM chapter.
+These different methods are described in the earlier CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
 ----------------

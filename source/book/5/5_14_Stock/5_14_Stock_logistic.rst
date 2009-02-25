@@ -78,7 +78,7 @@ location given to partner deliveries.
 
 .. tip:: Subcontracting production
 
-    You'll see in the chapter about Manufacturing that it is possible to assign a location to a
+    You'll see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
     manufacturing workcenter.
     If this location is at a supplier's you must give it an address so that Open ERP can prepare a
     delivery order
@@ -237,7 +237,7 @@ Customer orders are usually handled in one of two ways:
 * item note (or preparation order), confirmed when the item is ready to send,
 
 * delivery order (or freight note), confirmed when the transporter has delivered the item to a
-customer.
+  customer.
 
 You use the following stock move in Open ERP to simulate these operations:
 

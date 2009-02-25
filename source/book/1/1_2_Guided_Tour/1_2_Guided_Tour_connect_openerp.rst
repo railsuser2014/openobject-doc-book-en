@@ -79,7 +79,7 @@ dashboard or the available menus, depending on the user configuration. In the ca
 ``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the
 system is presented with a dashboard that's designed to show performance indicators and urgent
 documents that are most useful to someone of the user's position in the company. You'll see how to
-assign dashboards to different users in Chapter 13.
+assign dashboards to different users in a much later chapter, :ref:`ch-config`.
 
 .. index::
    single: TimeZone
@@ -282,7 +282,7 @@ groups defined in the system. If you open the form view of the \ ``admin``\   gr
 name in the list, the first tab give you the list of all the users who belong to this group.
 
 Click the Security tab and it gives you details of the access rights for that group. These are
-detailed in Chapter 13, but you can already see there further up in the window, the list of menus
+detailed later in :ref:`ch-config`, but you can already see there further up in the window, the list of menus
 reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to
 the :menuselection:`Configuration`  menu in each section. So \ ``Partners / Configuration``\   is
 found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible
@@ -290,7 +290,7 @@ to all users.
 
 You can create some new users to integrate them into the system. Assign them to predefined groups to
 grant them certain access rights. Then try their access rights when you login as these users.
-Management defines these access rights as described in Chapter 13.
+Management defines these access rights as described in :ref:`ch-config`.
 
 .. note::  Changes to default access rights
 

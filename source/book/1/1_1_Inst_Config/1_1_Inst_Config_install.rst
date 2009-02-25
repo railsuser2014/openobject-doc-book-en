@@ -88,8 +88,7 @@ click the installer file and accept the default parameters on each dialog box th
 	#. Close the installation window using the middle button :guilabel:`Finish`.
 
 The Open ERP client can then be opened, ready to use the Open ERP system. The next step consists
-of configuring the database, and is covered in the final section of this chapter, *Creating the
-database.*
+of configuring the database, and is covered in the final section of this chapter :ref:`sect-creatingdb`.
 
 .. index::
    single: Open ERP Installation; Windows (Independent)
