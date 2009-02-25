@@ -174,23 +174,18 @@ In the following chapters you'll see how each project manager can use this infor
 the different operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
 
-.. todo:: - What is the situation now?
+.. todo:: Write more now.
 
 .. note:: Analytic Budgets
 
-	There's been no discussion of analytic budgets in this section because at the time this book was
-	originally being prepared,
-	the module that handles them was being completely rewritten.
-
-	Nevertheless, it's worth trying them because they offer the possibility of:
+	Analytic budgets are now handled in the :mod:`account_budget` module, 
+	having been developed for version 5 of Open ERP. They offer:
 
 	* forecasting projects in the medium term,
 
 	* controlling project costs,
 
 	* comparing with the general accounts.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

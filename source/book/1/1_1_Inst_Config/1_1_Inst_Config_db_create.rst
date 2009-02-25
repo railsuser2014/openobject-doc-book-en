@@ -199,7 +199,7 @@ To extend Open ERP you'll need to copy modules into the \ ``addons``\   directo
 your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the
 various Linux distributions and not available at all in the Windows all-in-one installer).
 
-If you look there you'll see existing modules such as :mod:`product and :mod:`purchase`. A
+If you look there you'll see existing modules such as :mod:`product` and :mod:`purchase`. A
 module can be provided in the form of files within a directory or a a zip-format file containing
 that same directory structure.
 
