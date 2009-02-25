@@ -279,16 +279,16 @@ Here's how to create new partners with several contacts, and how to link them to
                    "Line 4","Tiny sprl","","Fabien Pinckaers","Administrator"
 
 	#. The second line corresponds to the creation of a new partner, with two existing categories, that
-		has two contacts and is linked to a salesman.
+	   has two contacts and is linked to a salesman.
 
 	#. Save the file using the name \ ``partners.csv``\
 
 	#. In penERP, select :menuselection:`Partners --> Partners` then import the file that you've just
-		saved. You'll get a message confirming that you've imported and saved the data.
+	   saved. You'll get a message confirming that you've imported and saved the data.
 
-	#. Verify that you've imported the data. A new partner should have appeared (\ ``NoirAdvertising),
-		with a salesman (Administrator), two contacts (George Black and Jean Green) and two categories
-		(Silver and Gold).``\
+	#. Verify that you've imported the data. A new partner should have appeared (``NoirAdvertising``),
+	   with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
+	   (``Silver`` and ``Gold``).
 
 Exporting data
 --------------

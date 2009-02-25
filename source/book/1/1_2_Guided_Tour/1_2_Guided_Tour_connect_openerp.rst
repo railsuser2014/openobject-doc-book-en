@@ -376,10 +376,10 @@ partner:
 	#. Click :guilabel:`New` to open an empty form for creating a new category
 
 	#. Enter \ ``My Prospects``\  in the field :guilabel:`Name of Category`. Then click on the
-	   :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select \
-	   ``Prospect``\  in the list that appears.
+	   :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select 
+	   \ ``Prospect``\  in the list that appears.
 
-	#. Then save your new category using the Save button.
+	#. Then save your new category using the :guilabel:`Save` button.
 
 .. tip:: Required Fields
 
@@ -404,10 +404,10 @@ To create a new partner and link it to this new category open a new partner form
 	#. Then click on the search icon to the right of the :guilabel:`Categories` field and select your
 	   new category from the list that appears: \ ``Prospect / My Prospects``\
 
-	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category \
-	   ``Prospect / My prospects.``\
+	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category 
+	   \ ``Prospect / My prospects.``\
 
-	#. Monitor your modification in the menu :menuselection:`Partners --> Partners by category`  Select
+	#. Monitor your modification in the menu :menuselection:`Partners --> Partners by category`. Select
 	   the category :guilabel:`My Prospect`. The list of partners opens and you'll find your new partner
 	   there in that list.
 
@@ -416,10 +416,6 @@ To create a new partner and link it to this new category open a new partner form
 	If you need to search through a long list of partners it's best to use the available search
 	criteria rather than scroll through the whole partner list. It's a habit that'll save you a lot of
 	time in the long run as you search for all kinds of documents.
-
-
----------------------
-
 
 	.. note::  *Example Categories of partners*
 

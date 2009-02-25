@@ -391,18 +391,18 @@ Management of payments
 Open ERP gives you forms for preparing, validating and executing payment orders. This enables you
 to manage issues such as:
 
-	#. Payment provided on several due dates.
+	#.	Payment provided on several due dates.
 
-	#. Automatic payment dates.
+	#.	Automatic payment dates.
 
-	#. Separating payment preparation and payment approval in your company.
+	#.	Separating payment preparation and payment approval in your company.
 
-	#. Preparing an order during the week containing several payments, then creating a payment file at
+	#.	Preparing an order during the week containing several payments, then creating a payment file at
 		the end of the week.
 
-	#. Creating a file for electronic payment which can be sent to a bank for execution.
+	#.	Creating a file for electronic payment which can be sent to a bank for execution.
 
-	#. Splitting payments dependent on the balances available in your various bank accounts.
+	#.	Splitting payments dependent on the balances available in your various bank accounts.
 
 Process for managing payment orders
 -----------------------------------

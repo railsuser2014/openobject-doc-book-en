@@ -120,18 +120,18 @@ Installing a module with its dependencies
 You'll now install the CRM module (Customer Relationship Management) using the same process as
 before.
 
-	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
+	#. 	Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
 		of modules to install. Search for the :mod:`crm` module in that list.
 
-	#. Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
+	#.	Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
 		resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
 
-	#. When the update screen appears, Open ERP gives you the list of modules that it will install and
+	#.	When the update screen appears, Open ERP gives you the list of modules that it will install and
 		update. You'll find two modules there :mod:`crm` (which you selected) and :mod:`account`
 		What's happened is that the :mod:`crm` module lists the :mod:`account` module as a dependency,
 		and :mod:`account` is not yet installed. So Open ERP automatically installs :mod:`account`.
 
-	#. Start the upgrade to install both modules.
+	#.	Start the upgrade to install both modules.
 
 When you return to the main menu you'll find the new customer relationship management menu
 :menuselection:`CRM & SRM`. You'll also see all the accounting functions that are now available in

@@ -737,9 +737,9 @@ channels could create the following price lists:
 
  #. Main distribution:
 
-	"       - pricelist for Walbury,"
+	- pricelist for Walbury,
 
-	"       - pricelist for TesMart,"
+	- pricelist for TesMart,
 
  #. Postal Sales.
 
@@ -973,7 +973,7 @@ Take the case of a trading company, where the sale price for resellers can be de
 * Assume that the Acclo pricelist is defined in Open ERP. The pricelist for resellers and the
   pricelist version then contains three lines:
 
-       #. \ ``Acclo``\  line:"
+       #. \ ``Acclo``\  line:
 
                 *  :guilabel:`Product Category` : \ ``Portables``\  ,
 
@@ -985,7 +985,7 @@ Take the case of a trading company, where the sale price for resellers can be de
 
                 *  :guilabel:`Priority` : \ ``1``\  .
 
-       #. \ ``Berrel Keyboard``\  line:"
+       #. \ ``Berrel Keyboard``\  line:
 
                 *  :guilabel:`Product Template` : \ ``Berrel Keyboard``\  ,
 

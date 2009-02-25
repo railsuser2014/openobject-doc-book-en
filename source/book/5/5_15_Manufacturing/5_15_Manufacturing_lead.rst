@@ -420,7 +420,7 @@ your supplier. It's then that you indicate the quantities consumed by your suppl
 Production orders are found in the menu :menuselection:`Manufacture --> Production Orders -->
 Production Orders to start`. A production order is always carried out in two stages:
 
-#. Consumption of raw materials
+#. Consumption of raw materials.
 
 #. Production of finished products.
 

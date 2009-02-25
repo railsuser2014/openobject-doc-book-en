@@ -135,7 +135,7 @@ Structure of this book
 ======================
 
 The first part starts with the installation of Open ERP. If you have already installed Open ERP you
-can go directly to Chapter 2 to take your first steps on a guided tour. If you're already familiar
+can directly take your first steps on a guided tour in Chapter 2. If you're already familiar
 with Open ERP or Tiny ERP you can use Chapter 3 to find out how to create a new workflow from
 scratch in an empty database with nothing to distract you. Or you can skip directly to Chapter 4 in
 Part Two, to start with details of Open ERP's functional modules.
