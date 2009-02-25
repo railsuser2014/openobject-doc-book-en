@@ -486,7 +486,7 @@ described in the preceding chapter:
 Clearly it's also possible to start production manually. To do this you can use the menu
 :menuselection:`Manufacturing --> Production Orders --> New Production Order`.
 
-If you haven't installed the 'Just-In-Time' planning module ``mrp_jit``, you should start the
+If you haven't installed the *Just-In-Time* planning module :mod:`mrp_jit`, you should start the
 calculation of requirements for Open ERP managed automatically the production order using the
 different system rules. To do this use the menu :menuselection:`Manufacturing --> Calculate all
 requirements`.

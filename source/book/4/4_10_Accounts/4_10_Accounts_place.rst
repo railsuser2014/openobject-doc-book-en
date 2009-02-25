@@ -81,10 +81,10 @@ Once you've defined the different analytic accounts you can view your chart thro
 	The setup screen for an analytic account can vary greatly depending on the modules installed in
 	your database.
 	For example, you'll only see information about recharging services if you have the module
-	``hr_timesheet_invoice`` installed.
+	:mod:`hr_timesheet_invoice` installed.
 
 	Some of these modules add helpful management statistics to the analytic account.
-	The most useful is probably the module ``account_analytic_analysis``,
+	The most useful is probably the module :mod:`account_analytic_analysis`,
 	which adds such information as indicators about your margins, invoicing amounts, and latest service
 	dates and invoice dates.
 

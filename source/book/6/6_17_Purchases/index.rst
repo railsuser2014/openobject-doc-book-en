@@ -45,7 +45,7 @@ company details when asked, or just select the default of :guilabel:`Tiny SPRL` 
 You'll be asked what View Mode you want during the Configuration stage. :guilabel:`Extended Interface` is
 recommended at this stage. You don't need any additional users.
 
-Then install the ``purchase`` module, which installs several other modules as dependencies. Continue
+Then install the :mod:`purchase` module, which installs several other modules as dependencies. Continue
 the remainder of this chapter logged in as the admin user.
 
 Price request from the supplier
@@ -64,7 +64,7 @@ generated the request.
 
 .. note:: Managing Alerts
 
-   If you install the ``warning`` module you will be able to define alerts that will appear when the
+   If you install the :mod:`warning` module you will be able to define alerts that will appear when the
    purchaser enters a price request or order.
    You can set alerts on the product or on the supplier.
 
@@ -117,11 +117,11 @@ invoice.
 
    Analytic accounts can be very useful for all companies that manage costs by case, by site, by
    project or by folder.
-   To work with several analytic axes you should install the module ``purchase_analytic_plans``.
+   To work with several analytic axes you should install the module :mod:`purchase_analytic_plans`.
 
 For that the analytic account is automatically selected as a function of the partner, the date, the
-products or the user, you can install the module ``account_analytic_default`` (which is installed
-automatically as a dependency of ``purchase_analytic_plans``, since the latter depends on it).
+products or the user, you can install the module :mod:`account_analytic_default` (which is installed
+automatically as a dependency of :mod:`purchase_analytic_plans`, since the latter depends on it).
 
 In the second tab of the product line you can enter a note that will be attached when the order
 confirmation or price quotation is printed. This note can be predefined on the product form to
@@ -163,7 +163,7 @@ Supplier`.
 .. note:: Supplier validation
 
    If you want to automate the data entry stage at goods receipt, install the module
-   ``purchase_approve``.
+   :mod:`purchase_approve`.
    This will automatically validate all the orders that have been confirmed.
 
 Goods receipt
@@ -272,7 +272,7 @@ invoices you.
 
 .. tip:: Delivery Charges
 
-   To manage delivery charges, install the module ``purchase_delivery``.
+   To manage delivery charges, install the module :mod:`purchase_delivery`.
    This will automatically add delivery changes to the creation of the draft invoice as a function
    of the products delivered or ordered.
 
@@ -281,7 +281,7 @@ invoices you.
 Tenders
 -------
 
-To manage tenders, you should use the module ``purchase_tender``. This lets you create several
+To manage tenders, you should use the module :mod:`purchase_tender`. This lets you create several
 supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds
 a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
@@ -351,7 +351,7 @@ Those costs that can be fixed for the whole year bring certain advantages:
 * accounting is simplified because there's a direct relationship between the value of stock and the
   number of items received.
 
-To automate periodic revaluation of the standard price you can use the module ``product_extended``.
+To automate periodic revaluation of the standard price you can use the module :mod:`product_extended`.
 This will add an action on the product form enabling you to set a date all the selected products. It
 will then recalculate the price of the products as a function of the cost of raw materials and the
 manufacturing operations given in the routing.
@@ -400,10 +400,10 @@ Analyis of purchases
 Elementary statistics
 ---------------------
 
-To get statistics about your purchases you can install the modules ``report_purchase`` and
-``product_margin``.
+To get statistics about your purchases you can install the modules :mod:`report_purchase` and
+:mod:`product_margin`.
 
-The first, ``report_purchase``, will add two new reports in your purchase menu, analysis of
+The first, :mod:`report_purchase`, will add two new reports in your purchase menu, analysis of
 purchases by month and by product, and analysing product by month and by product category. To use
 these reports use the menu :menuselection:`Purchase Management --> Reporting --> This month -->
 Purchases by product`.
@@ -414,7 +414,7 @@ Purchases by product`.
    *Analysis of purchases over the month by product.*
 
 This analysis carries on the supplier orders and not on the invoices or the quantities effectively
-received. To get an analysis by product, use the module ``product_margin``. The function of this
+received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
 module is described in detail in the chapter on Sales Management.
 
 To analyze the received quantities, you can use the statistical modules based on the management of
@@ -423,10 +423,10 @@ stock.
 Supplier relationship management
 ================================
 
-To manage supplier relations, you should install the ``crm_configuration`` module. You will then be
+To manage supplier relations, you should install the :mod:`crm_configuration` module. You will then be
 able to manage supplier complaints and integrate them with your emails and document management.
 
-Once you've installed the CRM module, check the checkbox by the :guilabel:`Complaints` option. Open ERP will
+Once you've installed the :mod:`crm` module, check the checkbox by the :guilabel:`Complaints` option. Open ERP will
 then create a menu configuration for managing supplier complaints.
 
 .. figure:: images/crm_config.png
@@ -457,7 +457,7 @@ To manage purchases by project you should use the analytic accounts. On each lin
 order you can note an analytic account. The analytic costs linked to this purchase will be managed
 by Open ERP to the receipt and confirmation of the supplier invoice.
 
-The ``hr_timesheet_invoice`` module lets you reinvoice the analytic costs automatically by reference
+The :mod:`hr_timesheet_invoice` module lets you reinvoice the analytic costs automatically by reference
 to the parameters in the analytic accounts: such as pricelist, end customer, maximum amount,
 employee ????
 
@@ -484,7 +484,7 @@ Re-invoicing based on costs you'd get the following workflow:
 
 .. tip:: Analytic multiplans
 
-   If you want several analysis plans you should install the module ``purchase_analytic_plans``.
+   If you want several analysis plans you should install the module :mod:`purchase_analytic_plans`.
    These enable you to split a line on a supplier purchase order into several accounts and analytic
    plans.
    Look back at the chapters on accounting for more information on the use of analytic accounts.

@@ -50,8 +50,8 @@ least one journal for each bank account and one journal for petty cash in your c
 the journal corresponding to the bank account whose statement you're handling.
 
 The currency that you're using for the statement line is that of the selected journal. If you're
-entering statement lines for an account in American dollars (USD) the amounts must be entered in \
-``USD``\  . The currency is automatically converted to the company's main currency when you confirm
+entering statement lines for an account in American dollars (USD) the amounts must be entered in 
+\ ``USD``\ . The currency is automatically converted to the company's main currency when you confirm
 the entry, using the rates in effect at the date of entry (which means that you'd need valid
 currency conversion rates to be created first).
 
@@ -101,7 +101,7 @@ of payment must correspond exactly with one or several due dates of invoice.
 	* Don't reconcile that payment amount, just reconcile the entire balance.
 
 	* Reconcile at once, but make an accounting adjustment in the partner's credit account. In this
-	case the invoice will be marked as paid.
+	  case the invoice will be marked as paid.
 
 If you see a difference between the payment and the invoices to reconcile,
 you can enter the difference in the second part of the form –  *Write-off* .
@@ -123,8 +123,8 @@ It's got two significant effects, however:
 * marking that the invoices have been paid,
 
 * preventing the payment and invoice amounts from appearing on customer reminder letters. Unless
-you've reconciled them the customer will see the invoice and payment amounts on her reminder letter
-(which won't alter the balance due since they'll just cancel each other out).
+  you've reconciled them the customer will see the invoice and payment amounts on her reminder letter
+  (which won't alter the balance due since they'll just cancel each other out).
 
 Finally, once you have entered the various lines of your bank statement you can validate it.
 Open ERP then automatically generates the corresponding accounting entries if the balance
@@ -178,22 +178,22 @@ created an invoice you'll have to enter values manually.
 
 Fill these fields manually in this order:
 
-*  *Effective Date* : invoice date,
+*  :guilabel:`Effective Date` : invoice date,
 
-*  *Move* : leave this empty so that Open ERP can fill it in automatically from the next number in
-sequence for line validations,
+*  :guilabel:`Move` : leave this empty so that Open ERP can fill it in automatically from the next number in
+   sequence for line validations,
 
-*  *Ref.* : reference from the supplier invoice,
+*  :guilabel:`Ref.` : reference from the supplier invoice,
 
-*  *Partner Ref.* : partner concerned,
+*  :guilabel:`Partner Ref.` : partner concerned,
 
-*  *Account* : account for the purchase line (\ ``Products Purchase``\  ),
+*  :guilabel:`Account` : account for the purchase line (\ ``Products Purchase``\  ),
 
-*  *Name* : description of the invoice line (Titanium Alloy Radiator),
+*  :guilabel:`Name` : description of the invoice line (Titanium Alloy Radiator),
 
-*  *Credit* : \ ``1196``\  .
+*  :guilabel:`Credit` : \ ``1196``\  .
 
-Press the Enter key on your keyboard to validate this first line. The next sequence number is
+Press the :guilabel:`Enter` key on your keyboard to validate this first line. The next sequence number is
 assigned to your accounting entry. Your line is then colored red and takes the \ ``Draft``\   state.
 When a line is in the draft state then it's not yet reflected in the accounts. Open ERP won't
 validate that line until the balancing entry is made (so the credit amounts must balance the debit
@@ -225,7 +225,7 @@ The reconciliation operation consists of matching entries in different accounts 
 they are related. Generally reconciliation is used for:
 
 * matching invoice entries to payments so that invoices are marked as paid and customers don't get
-payment reminder letters (reconciliation in a customer account),
+  payment reminder letters (reconciliation in a customer account),
 
 * matching deposits and cheque withdrawals with their respective payments,
 
@@ -407,7 +407,7 @@ to manage issues such as:
 Process for managing payment orders
 -----------------------------------
 
-To use the tool for managing payments you must first install the module \ ``account_payment``\  .
+To use the tool for managing payments you must first install the module :mod:`account_payment`.
 It's part of the core Open ERP system.
 
 The workflow for managing payment is as follows:
@@ -488,14 +488,14 @@ Configuration --> Payment Mode`. Some examples are:
 
 * Petty cash.
 
-Then you must indicate the  *Preferred date*  for payment:
+Then you must indicate the :guilabel:`Preferred date` for payment:
 
-* \ ``Due date``\  : each operation will be effected at the invoice deadline date,
+* :guilabel:`Due date` : each operation will be effected at the invoice deadline date,
 
-* \ ``Directly``\  : the operations will be effected when the orders are validated,
+* :guilabel:`Directly` : the operations will be effected when the orders are validated,
 
-* \ ``Fixed date``\  : you must specify an effective payment date in the :guilabel:`Scheduled date
-if fixed` field that follows.
+* :guilabel:`Fixed date` : you must specify an effective payment date in the :guilabel:`Scheduled date
+  if fixed` field that follows.
 
 The date is particularly important for the preparation of electronic transfers because banking
 interfaces enable you to select a future execution date for each operation. So to configure your

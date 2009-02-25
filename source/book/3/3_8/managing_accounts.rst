@@ -23,7 +23,7 @@ Financial analysis of partners
 
 When members of your accounts department sign on to the Open ERP system, they're immediately
 presented with the :guilabel:`Accounting Dashboard`. By default it contains a useful graph for analyzing
-Receivables. To get access to it, install the module \ ``board_account``\  . Then look at it using
+Receivables. To get access to it, install the module :mod:`board_account`. Then look at it using
 the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
 
 .. figure::  images/account _board.png
@@ -111,8 +111,8 @@ for account entries:
 Multi-step follow-ups
 ---------------------
 
-To automate the management of followups (reminders) you must install the module \
-``account_followup``\  . This is installed automatically as part of the accounting profile, but is
+To automate the management of followups (reminders) you must install the module 
+:mod:`account_followup`. This is installed automatically as part of the accounting profile, but is
 not part of the other profiles.
 
 Once the module is installed configure your levels of followup using the menu

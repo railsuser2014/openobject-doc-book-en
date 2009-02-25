@@ -21,7 +21,7 @@ same time.
 The different journals
 ----------------------
 
-Install the module ``sale_journal`` to work with journals. This adds three new concepts to Open ERP:
+Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
 
 * Invoicing journals,
 
@@ -54,7 +54,7 @@ Using the journals
 ------------------
 
 You'll now see how to use the journals to organize your stock management in practice. After
-installing the module ``sale_journal`` look at the list of partners. In the tab :guilabel:`Sales and
+installing the module :mod:`sale_journal` look at the list of partners. In the tab :guilabel:`Sales and
 Purchases` on any of them you'll now see the field :guilabel:`Invoicing Journal`.
 
 .. figure:: images/partner_property_view.png

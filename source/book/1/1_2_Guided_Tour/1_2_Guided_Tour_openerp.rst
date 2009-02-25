@@ -317,7 +317,7 @@ of its available variants briefly rather than every item as an entire product.
 
 			* Collar (V, Round).
 
-			This separation of variant types requires the optional module ``product_variant_multi``. Using it
+			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
 			than 160 completely different products. This module is available in the extra_addons list (it had
@@ -390,12 +390,11 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of skills and competencies.
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
-rather than the core HR module, but they're all loaded into the main :menuselection:`Human
+rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
 Resources` menu.
 
 The different issues are handled in detail in the fourth section of this book, dedicated to internal
 organization and to the management of a services business.
-
 
 .. index::
    single: Inventory Control
@@ -404,7 +403,7 @@ organization and to the management of a services business.
 Inventory Control
 -------------------
 
-The various sub-menus under Inventory Control together provide operations you need to manage stock.
+The various sub-menus under :menuselection:`Inventory Control` together provide operations you need to manage stock.
 You can:
 
 * define your warehouses and structure them around locations and layouts of your choosing,
@@ -602,8 +601,8 @@ You've been through a brisk, brief overview of the main functional areas of Open
 You can use the menu :menuselection:`Administration --> Modules Management --> Modules -->
 Uninstalled Modules` to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as
-\ ``base_iban``\  ), some have quite extensive effects (such as the various charts of accounts), and
-some make fundamental additions (such as \ ``multi_company``\  ).
+:mod:`base_iban`), some have quite extensive effects (such as the various charts of accounts), and
+some make fundamental additions (such as :mod:`multi_company`).
 
 But there are now more than three hundred modules available. If you've connected to the Internet,
 and if your \ ``addons``\   directory is writable as described at the beginning of this chapter, you

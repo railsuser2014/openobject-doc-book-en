@@ -51,7 +51,7 @@ to the maximum, to recharge as much as you are contractually able.
 Claiming expenses
 -----------------
 
-Install the module \ ``hr_expenses``\   to automate the management of expense claims. Users can then
+Install the module :mod:`hr_expenses` to automate the management of expense claims. Users can then
 enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> My Expenses`.
 
 \ ``Draft``\

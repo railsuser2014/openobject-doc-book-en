@@ -81,7 +81,7 @@ then click :guilabel:`Main Menu` to see the results.
 
 .. tip:: Managing users through LDAP
 
-	With the ``user_ldap`` module, user accounts can be managed through an LDAP directory that can be
+	With the :mod:`user_ldap` module, user accounts can be managed through an LDAP directory that can be
 	made common to various different company resources.
 
 	Connection parameters for the LDAP directory are then registered with the company definition.

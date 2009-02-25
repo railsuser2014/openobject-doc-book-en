@@ -88,7 +88,7 @@ database you can extend it without knowing the super administrator password.
 	The combination of username/password is specific to a single database. If you have administrative
 	rights to a database you can modify the predefined users.
 
-	Alternatively you can install the ``users_ldap`` module, which manages the authentication of users
+	Alternatively you can install the :mod:`users_ldap` module, which manages the authentication of users
 	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
 	Open ERP databases. Using this, many databases can share the same user account details.
 
@@ -199,7 +199,7 @@ To extend Open ERP you'll need to copy modules into the \ ``addons``\   directo
 your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the
 various Linux distributions and not available at all in the Windows all-in-one installer).
 
-If you look there you'll see existing modules such as \ ``product``\   and \ ``purchase``\  . A
+If you look there you'll see existing modules such as :mod:`product and :mod:`purchase`. A
 module can be provided in the form of files within a directory or a a zip-format file containing
 that same directory structure.
 

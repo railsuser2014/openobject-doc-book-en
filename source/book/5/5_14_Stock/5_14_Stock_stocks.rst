@@ -180,7 +180,7 @@ Customer delivery
 -----------------
 
 Everything about goods receipt can also be done manually for a customer delivery. But this time, use
-the automated product delivery processes based on customer orders. Install the ``sale`` module so
+the automated product delivery processes based on customer orders. Install the :mod:`sale` module so
 that you can proceed further in this section of the chapter.
 
 Now create a new customer order from the menu :menuselection:`Sales Management --> Sales Orders -->
@@ -219,7 +219,7 @@ times and priorities.
 
 .. tip:: Just in Time
 
-    Install the module ``mrp_jit`` to schedule each order in real time after it's been confirmed.
+    Install the module :mod:`mrp_jit` to schedule each order in real time after it's been confirmed.
     This means that you don't have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu

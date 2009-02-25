@@ -63,15 +63,15 @@ Installing and configuring modules
 
 All of the functional needs are provided by core modules from Open ERP:
 
-* product management (the  ``product``  module),
+* product management (the :mod:`product` module),
 
-* inventory control (the  ``stock``  module),
+* inventory control (the :mod:`stock` module),
 
-* accounting and finance (the  ``account``  module),
+* accounting and finance (the :mod:`account` module),
 
-* purchase management (the  ``purchase``  module),
+* purchase management (the :mod:`purchase` module),
 
-* sales management (the  ``sale``  module).
+* sales management (the :mod:`sale` module).
 
 Connect to the new \ ``openerp_ch03``\   database as user \ ``admin``\   with its default password \
 ``admin``\   (you might have to wait a few seconds before the system will allow you to connect if
@@ -92,21 +92,21 @@ Modules` to show the list of all modules that are registered within Open ERP bu
 uninstalled. Then:
 
 	#. Enter \ ``product``\  into the :guilabel:`Name` field and click :guilabel:`Filter` to list the
-		product module.
+	   :mod:`product` module.
 
 	#. Click the name \ ``product``\  in the list to display the product module in form view, rather
-		than the list view that a search displays.
+	   than the list view that a search displays.
 
 	#. Click the :guilabel:`Install` button on the product module form.
 
 	#. Click the :guilabel:`Search` button at the top of the form to toggle back to the list view with
-		search selection fields on it.
+	   search selection fields on it.
 
-	#. Search for the ``sale`` module then select it, too, as you did with product, to show it in form
-		view.
+	#. Search for the :mod:`sale` module then select it, too, as you did with product, to show it in form
+	   view.
 
 	#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \
-		``product``\   \ ``stock``\  and \ ``mrp``\  modules along with the \ ``sale``\  module.
+	   :mod:`product`, :mod:`stock`, and :mod:`mrp` modules along with the :mod:`sale` module.
 
 	#. Return to the :guilabel:`Module` tab and then click its :guilabel:`Install` button.
 

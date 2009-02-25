@@ -144,7 +144,7 @@ communal projects. To activate the portal it's necessary to install the modules 
 string ``portal_...``.
 
 The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for
-the email gateway are available in the ``crm`` module in the ``scripts`` subdirectory.
+the email gateway are available in the :mod:`crm` module in the ``scripts`` subdirectory.
 
 The Outlook and Thunderbird plugins enable you to synchronize your contacts between your email
 client and your ERP. They both enable you to create sales opportunities based on exchanges you have
@@ -157,9 +157,9 @@ menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 The segmentation tools will enable you to create partner groups and act on each segment differently.
 For example you could create pricelists for each of the segments, or start phone marketing campaigns
 by segment. To enable the management of segmentation you should install the module
-``crm_profiling``.
+:mod:`crm_profiling`.
 
-The ``report_designer`` module enables you to create letter templates in OpenOffice and automate
+The :mod:`report_designer` module enables you to create letter templates in OpenOffice and automate
 letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
 mass mailing.
 

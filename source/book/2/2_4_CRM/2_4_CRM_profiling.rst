@@ -65,7 +65,7 @@ proposition, such as an invitation to a training session a week after the show.
 Using profiles effectively
 --------------------------
 
-To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's
+To use the profiling system you'll need to install Open ERP's :mod:`crm_profiling` module. It's
 part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from
 ``addons-extra``.
 
@@ -102,7 +102,7 @@ the appropriate partner category based on these answers.
 
 .. tip:: Sales targets
 
-	The module ``report_invoice_salesman`` enables you to set up regular business targets. These can be
+	The module :mod:`report_invoice_salesman` enables you to set up regular business targets. These can be
 	based on sales turnover or sales margins.
 
 	With this module you can compare the performance of each sales person with their targets for the

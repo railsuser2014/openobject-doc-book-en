@@ -32,7 +32,7 @@ you're also trying to use it interactively yourselves. To specify the time it st
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 Some companies want to plan the orders progressively as they are entered so they don't wait until
-the procurement orders are planned the next day. Install the module ``mrp_jit`` to handle this. Once
+the procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
 it's installed each requirement (production or procurement order) will be planned in real time as
 soon as it's been confirmed.
 
@@ -41,7 +41,7 @@ supplier will be generated.
 
  ..tip :: Delivery from the supplier or to the customer
 
-    The ``sale_supplier_direct_delivery`` module enables you to deliver the product directly from
+    The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
     the supplier to the customer.
     The logic to follow is configured for each products and affects only the products whose lines
     are marked “Make to Order”.
@@ -57,7 +57,7 @@ lead time enabled you to group the purchase with other future orders.
 
 So the negative effects of working with the Just in Time module are:
 
-* Bad management of priorities amongst orders,
+* Poor priority management between orders,
 
 * Additional stocked products.
 
@@ -176,7 +176,7 @@ received at one time but from several orders.
 Product routing
 ---------------
 
-You should install the ``stock_location`` module if routing products to customers, from suppliers or
+You should install the :mod:`stock_location` module if routing products to customers, from suppliers or
 in your warehouse is a function of the product itself.
 
 .. figure:: images/product_location.png

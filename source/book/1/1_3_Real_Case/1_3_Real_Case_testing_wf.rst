@@ -101,21 +101,21 @@ After confirming the order you'd wait for the delivery of the products from your
 this would be somebody in Stores rather than Purchasing, who would:
 
 	#. Open the menu :menuselection:`Inventory Control --> Packing Lists --> Getting Goods --> Packings
-		to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
-		Lists`
+	   to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
+	   Lists`.
 
-	#. When the :guilabel:`Packing list` window appears, select the name of the entry in the list (\
-		``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name
-		or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
-		:guilabel:`Make Packing` form.
+	#. When the :guilabel:`Packing list` window appears, select the name of the entry in the list 
+	   (\ ``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name
+	   or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
+	   :guilabel:`Make Packing` form.
 
 	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
 
 At this point you've accepted 10 units into your company, in a location defined by the Warehouse
 that you specified near the top of your Purchase Order.
 
-To check actual stock levels, use the menu :menuselection:`Inventory Control --> Location Structure`
-, find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through
+To check actual stock levels, use the menu :menuselection:`Inventory Control --> Location Structure`,
+find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through
 the tree and click it. That will show everything in the \ ``Stock``\   location and below it –
 including :guilabel:`Real stock` (the actual quantity recorded in that location and below it) and
 :guilabel:`Virtual stock` (the quantities expected in future when all receipts and despatches have
@@ -201,7 +201,7 @@ within Open ERP and returns you to the main menu.
 
 	The method described here is for companies that don't use their accounting system to pay bills –
 	just to record them.
-	If you're using the accounting module fully other, more efficient, methods let you manage payments,
+	If you're using the :mod:`accounting` module fully other, more efficient, methods let you manage payments,
 	such as entering account statements, reconciling paperwork, using tools for preparing payments,
 	interfacing with banks.
 
@@ -279,7 +279,7 @@ example there's only one, \ ``OUT:1``\  , so click the text to open the :guilabe
 	Running this automatically reserves products.
 
 	If you don't want to have to work out your stock needs but have a lean workflow you can install the
-	``mrp_jit`` (Just In Time) module.
+	:mod:`mrp_jit` (Just In Time) module.
 
 Although Open ERP has automatically been made aware that items on this order will need to be
 despatched, it has not yet assigned any specific items from any location to fulfil it. It's ready to

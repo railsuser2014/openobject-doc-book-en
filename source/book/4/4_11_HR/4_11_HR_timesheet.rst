@@ -86,7 +86,7 @@ The following information is important in the product form:
 
 .. tip:: Price Indexation
 
-	The module ``product_index`` lets you generate indexes connected to the change of purchase or sale
+	The module :mod:`product_index` lets you generate indexes connected to the change of purchase or sale
 	price for individual products.
 
 	In human resources, this module can be used to change your prices or costs in step with a national
@@ -108,7 +108,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 
 	By default the hourly cost of an employee is given by the standard cost of the product linked to
 	that employee.
-	But if you install the ``hr_contract`` module it's possible to manage contracts differently.
+	But if you install the :mod:`hr_contract` module it's possible to manage contracts differently.
 	The hourly cost of the employee is then automatically calculated from their employment contract
 	when they enter their timesheet data.
 
@@ -124,7 +124,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 Entering timesheet data
 ------------------------
 
-To be able to use timesheets, you should install the module \ ``hr_timesheet``\  . Once this module
+To be able to use timesheets, you should install the module :mod:`hr_timesheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu :menuselection:`Human Resources --> Hours Encoding --> For me --> My
 Works of the Day`.
@@ -216,7 +216,7 @@ screen. If you want to get more exact figures, switch to the list view.
 	Then each employee will be able to see if they've forgotten to complete their timesheet when they
 	signed out of the system.
 
-	To use this dashboard, install the module ``board_project``.
+	To use this dashboard, install the module :mod:`board_project`.
 
 .. index::
    single: Timesheets; Evaluation
@@ -309,8 +309,8 @@ These hours and their deduction from the original limit are also managed by thes
 
 In such a situation, hours that aren't coded into the timesheets represent lost money for the
 company. So it's important to establish effective follow-up of the services timesheets and their
-encoding. To set up a structure for control using timesheets you should install the module \
-``hr_timesheet_sheet``\  .
+encoding. To set up a structure for control using timesheets you should install the module 
+:mod:`hr_timesheet_sheet`.
 
 .. figure::  images/timesheet_flow.png
    :align: center

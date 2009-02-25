@@ -322,7 +322,7 @@ Analyzing performance
 Since all of your customer communications are integrated into the Open ERP system, you can analyses
 the performance of your teams in many ways.
 
-Open ERP has a module that helps handle this – \ ``report_crm``\  . It's not part of the core
+Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
 Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
 into your server using :menuselection:`Administration --> Modules Management --> Import New Module`.
 Then, for both databases \ ``openerp_04X``\   and \ ``openerp_ch04``\  , install it into the
@@ -566,7 +566,7 @@ the setup window. The following actions are included:
 
 .. tip::  The CRM portal
 
-	Open ERP's ``portal_service`` module enables you to open parts of your CRM functionality to
+	Open ERP's :mod:`portal_service` module enables you to open parts of your CRM functionality to
 	suppliers and customers. They can then connect to your system using their own login and follow
 	their orders or requests online. For example the customer could make a support request directly in
 	your system, perhaps avoiding a lengthy process of data entry.

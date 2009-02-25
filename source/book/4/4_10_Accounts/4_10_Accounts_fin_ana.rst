@@ -116,8 +116,8 @@ services journal to print the report.
 Key indicators
 --------------
 
-If you use analytic accounts with a structure of accounts by project client you should install the \
-``account_analytic_analysis``\   module. This module adds three new tabs to the analytic account
+If you use analytic accounts with a structure of accounts by project client you should install the 
+:mod:`account_analytic_analysis` module. This module adds three new tabs to the analytic account
 form:
 
 * management indicators in the :guilabel:`Analysis summary` tab,
@@ -156,8 +156,8 @@ For example, in the case of a fixed price project contract, the real sale price 
 project will be equal to the contract negotiated with the client. The theoretical price gives the
 amount that would have been invoiced if you had charged for all the time worked.
 
-To give project managers a direct view of their different projects, the \
-``account_analytic_analysis``\   module creates new menus in the Project management module in
+To give project managers a direct view of their different projects, the 
+:mod:`account_analytic_analysis` module creates new menus in the Project management module in
 :menuselection:`Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png

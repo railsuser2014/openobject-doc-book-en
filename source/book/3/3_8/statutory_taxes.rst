@@ -19,7 +19,7 @@ This section deals with statutory taxes and accounts which are legally required 
 	In addition to the legal declarations available in the accounts modules,
 	Open ERP supplies declarations based on the functionality in other modules.
 
-	You can, for example, install the ``report_intrastat`` module for intra-stat declarations
+	You can, for example, install the :mod:`report_intrastat` module for intra-stat declarations
 	about sending goods to and receiving goods from other countries.
 
 .. index:: Tax
@@ -203,7 +203,7 @@ tax-like charges.
 	you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather
 	than a tax-exclusive price plus tax.
 
-	To do this in Open ERP just install the ``account_tax_include`` module.
+	To do this in Open ERP just install the :mod:`account_tax_include` module.
 	Each invoice is given a new :guilabel:`Price method` field, in which you choose Tax included or Tax
 	excluded.
 	Prices are then displayed appropriately.
@@ -239,7 +239,7 @@ appropriate rate of tax (project invoicing is dealt with in detail in a later ch
 
 .. note:: Tax regions
 
-	The third-party module ``import_export`` can be used to extend Open ERP's tax system,
+	The third-party module :mod:`import_export` can be used to extend Open ERP's tax system,
 	so that you can assign taxes to different accounts depending on the location of the Partner.
 	The :guilabel:`Partner` is given a new :guilabel:`Partner Location` field that can be set to Local,
 	Europe or Outside,
@@ -269,7 +269,7 @@ hierarchy you can automatically analyze that account and its child accounts.
 .. tip::  Simulated balance
 
 	While you're printing account balances,
-	if you have installed the ``account_simulation`` module Open ERP asks you which level of
+	if you have installed the :mod:`account_simulation` module Open ERP asks you which level of
 	simulation to execute.
 
 	Results will vary depending on the level selected.
@@ -282,7 +282,7 @@ hierarchy you can automatically analyze that account and its child accounts.
 	More generally it enables you to make analyses using other simulation levels that you could
 	expect..
 
-The \ ``account_reporting``\ module was developed to provide configurable reports for balance sheets
+The :mod:`account_reporting` module was developed to provide configurable reports for balance sheets
 or earnings statements in legally required formats.
 
 .. index:: Journal
@@ -306,8 +306,8 @@ Printing Journals`.
 	* the invoice journals (to classify sales by mode of invoicing: daily / weekly / monthly) and
 	  automating the tasks.
 
-	To obtain these different journals install the modules ``sale_journal`` (found at the time of
-	writing in ``addons``, so available in a standard installation) and ``purchase_journal`` (found in
+	To obtain these different journals install the modules :mod:`sale_journal` (found at the time of
+	writing in ``addons``, so available in a standard installation) and :mod:`purchase_journal`(found in
 	``addons-extra`` at the time of writing, so needing special installation).
 
 Then select one or several journals and click :guilabel:`Print`. Open ERP then proposes the three

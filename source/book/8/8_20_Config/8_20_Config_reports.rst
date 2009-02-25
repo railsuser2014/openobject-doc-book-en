@@ -32,7 +32,7 @@ Modeling a new report
 ^^^^^^^^^^^^^^^^^^^^^
 
 Open ERP gives you the possibility of developing your own analyses to meet your specific needs. To
-define a new analysis of the system's data you should install the module \ ``base_report_creator``\
+define a new analysis of the system's data you should install the module :mod:`base_report_creator`
 . This enables you to create complex queries on the database, in a simple and visual way.
 
 Once the module is installed, create a new report using the menu :menuselection:`Dashboards -->
@@ -135,7 +135,7 @@ entry for your dashboard anywhere in the menu system.
 Managing document templates with OpenOffice.org
 -----------------------------------------------
 
-To configure your printable documents in Open ERP, use the module \ ``base_report_designer``\.
+To configure your printable documents in Open ERP, use the module :mod:`base_report_designer`.
 
 .. tip:: The OpenOffice.org Writer plug-in
 
@@ -183,13 +183,13 @@ Installing the OpenOffice.org module
 
 You should install two components before using the report editor:
 
-* the module \ ``base_report_designer``\   – first in your Open ERP installation if it's not
+* the module :mod:`base_report_designer` – first in your Open ERP installation if it's not
   already there, and then in the Open ERP database, you want to use it in.
 
 * the OpenOffice.org Report Designer in the OpenOffice.org installation on your system
   administrator's computer.
 
-You start by installing the module \ ``base_report_designer``\   just like all the other Open ERP
+You start by installing the module :mod:`base_report_designer` just like all the other Open ERP
 modules.
 
 To install the OpenOffice.org extension, look for the file \ ``openerpreport.zip``\   supplied with
@@ -215,7 +215,7 @@ Connecting OpenOffice.org to Open ERP
 
 Select :menuselection:`OpenERP Report --> Server parameters` in the top menu of OpenOffice.org
 Writer. You can then enter your connection parameters to the Open ERP server. You must select a
-database \ ``demo_min``\   in which you've already installed the module \ ``sale``\  . A message
+database \ ``demo_min``\   in which you've already installed the module :mod:`sale`. A message
 appears if you've made a successful connection.
 
 .. index::

@@ -181,7 +181,7 @@ you to have a list of moves to do, proposed by the system and confirmed by the s
 
 .. tip:: Product Logistics
 
-    The module ``stock_location`` enables you to generate paths to follow, not just at the level of
+    The module :mod:`stock_location` enables you to generate paths to follow, not just at the level of
     locations but also at the level of products.
     It then enables you to manage default locations for a given product or to refer to the products
     as a function of
@@ -258,7 +258,7 @@ been delivered to the customer.
 Linked Production
 -----------------
 
-The ``stock_location`` module enables you to manage the linkages by product in addition to doing
+The :mod:`stock_location` module enables you to manage the linkages by product in addition to doing
 that by location. You can then create a location structure that represents your production chain by
 product.
 

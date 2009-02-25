@@ -114,10 +114,10 @@ You'll be asked what View Mode you want during the Configuration stage.
 more cluttered than the :guilabel:`Simple Interface` because it shows you all the menu
 options. You don't need any additional users.
 
-Then install the ``sale`` module for the first example below, which installs
-several other modules as dependencies. Also install some of the ``hr`` modules for
-the second example below, such as ``hr_attendence``, ``hr_contract``,
-``hr_holidays``, and ``hr_holidays_request``.
+Then install the :mod:`sale` module for the first example below, which installs
+several other modules as dependencies. Also install some of the :mod:`hr` modules for
+the second example below, such as :mod:`hr_attendence`, :mod:`hr_contract`,
+:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.
 Selecting :guilabel:`None` is fine: you can also try one that matches your own
@@ -264,7 +264,7 @@ documents to be completed and posted or faxed to the institutions:
 
    *Example of a process required for the declarations for a new employee.*
 
-The system of 'Corporate Intelligence' gives you a complete overview of all the
+The system of *Corporate Intelligence* gives you a complete overview of all the
 company's processes. So if you click on the node to the left it will start the
 recruitment process of selecting and interviewing new employees if the
 necessary modules have been installed.

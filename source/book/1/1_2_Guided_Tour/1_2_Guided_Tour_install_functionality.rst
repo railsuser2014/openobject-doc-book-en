@@ -75,21 +75,21 @@ repository.
 Installing a module
 ---------------------
 
-You'll now install a module named \ ``product``\  , which will enable you to manage the company's
+You'll now install a module named :mod:`product`, which will enable you to manage the company's
 products. This is part of the core installation, so you don't need to load anything to make this
 work, but isn't installed in the Minimal Profile.
 
 Open the list of uninstalled modules from :menuselection:`Administration --> Modules Management -->
-Uninstalled Modules`. Search for the module by entering the name \ ``product``\   in the search
+Uninstalled Modules`. Search for the module by entering the name :mod:`product` in the search
 screen then clicking it in the list that appears below it to open it. The form that describes the
 module gives you useful information such as its version number, its status and a review of its
-functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
+functionality. Click :guilabel:`Install` and the status of the module changes to :guilabel:`To be installed`.
 
 
 .. figure:: images/install_product_module.png
    :align: center
 
-   *Installation of the ``product`` module.*
+   *Installation of the :mod:`product` module.*
 
 
 .. tip::  Technical Guide
@@ -121,15 +121,15 @@ You'll now install the CRM module (Customer Relationship Management) using the s
 before.
 
 	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
-		of modules to install. Search for the \ ``crm``\  module in that list.
+		of modules to install. Search for the :mod:`crm` module in that list.
 
 	#. Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
 		resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
 
 	#. When the update screen appears, Open ERP gives you the list of modules that it will install and
-		update. You'll find two modules there – \ ``crm``\  (which you selected) and \ ``account``\
-		What's happened is that the \ ``crm``\  module lists the \ ``account``\  module as a dependency,
-		and \ ``account``\  is not yet installed. So Open ERP automatically installs \ ``account``\
+		update. You'll find two modules there :mod:`crm` (which you selected) and :mod:`account`
+		What's happened is that the :mod:`crm` module lists the :mod:`account` module as a dependency,
+		and :mod:`account` is not yet installed. So Open ERP automatically installs :mod:`account`.
 
 	#. Start the upgrade to install both modules.
 
@@ -205,11 +205,11 @@ overview of all of the modules available for installation.
 To test several modules you won't have to install them all one by one. You can use the dependencies
 between modules to load several at once. For example, try loading the following modules:
 
-* \ ``profile_accounting``\  ,
+* :mod:`profile_accounting`,
 
-* \ ``profile_manufacturing``\  ,
+* :mod:`profile_manufacturing`,
 
-* \ ``profile_service``\  .
+* :mod:`profile_service`.
 
 To find these quickly, enter the word \ ``profile``\   in the :guilabel:`Name` field of the search
 form and click :guilabel:`Filter` to search for the relevant modules. Then install them one by one
@@ -218,8 +218,6 @@ or all at once.
 As you update you'll see thirty or so modules to be installed. When you close the :guilabel:`System
 Upgrade Done` form you'll be returned to a dashboard, not the main menu you had before. To get to
 the main menu, use the :guilabel:`Main Menu` link.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

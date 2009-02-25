@@ -18,7 +18,7 @@ date list of collaborators.
 
 	A “user” is a physical person who's given access to the company's systems. Most employees are
 	users but some users aren't employees: external partners can have access to parts of the system.
-	You can manage them through the ``portal`` modules.
+	You can manage them through the :mod:`portal` modules.
 
 Here are some examples of functions which depend on the list of employees:
 

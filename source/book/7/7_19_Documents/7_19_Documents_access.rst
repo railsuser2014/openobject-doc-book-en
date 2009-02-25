@@ -12,7 +12,7 @@ document set. You can use the structure automatically proposed by Open ERP from 
 .. figure::  images/document_structure.png
    :align: center
 
-   *Structure of directories when the ``document`` module has been installed.*
+   *Structure of directories when the :mod:`document` module has been installed.*
 
 In addition to the usual access to documents through Open ERP, you will be able to connect to them
 directly through the filesystem using the FTP protocol. To connect to the FTP server, use the

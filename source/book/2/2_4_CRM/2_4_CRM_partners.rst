@@ -28,7 +28,7 @@ And you'll need access to a system administrator for your server system if you w
 Once you've created \ ``openerp_ch04``\  , add a new group – \ ``support``\  , and four new users
 – \ ``General``\  , \ ``Sales``\  , \ ``Support``\  , and \ ``Senior Support``\   (the former two
 should be put in group \ ``user``\  , and the latter two in \ ``support``\  ). Then also install the
-\ ``crm``\   module that exists in the Open ERP core installation (but has not yet been installed
+:mod:`crm` module that exists in the Open ERP core installation (but has not yet been installed
 into this database). You'll need only to know your database's \ ``admin``\   user details to do
 this.
 
