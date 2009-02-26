@@ -13,15 +13,10 @@ sections.
    :header: "Method","Average Time","Level of Complexity","Notes"
    :widths: 20, 15, 15,30
 
-   "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations
-   because it installs all of the components pre-configured on one computer (using the GTK client)."
-   "Independent installation on Windows","Half an hour","Medium","Enables you to install the
-   components on different computers. Can be put into production use."
-   "Ubuntu Linux packages","A few minutes","Simple","Simple and quick but the Ubuntu packages
-   aren't always up to date."
-   "From source, for all Linux systems","More than half an hour","Medium to slightly
-   difficult","This is the method recommended for production environments because it's easy to keep
-   it up to date."
+   "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
+   "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
+   "Ubuntu Linux packages","A few minutes","Simple","Simple and quick but the Ubuntu packages aren't always up to date."
+   "From source, for all Linux systems","More than half an hour","Medium to slightly difficult","This is the method recommended for production environments because it's easy to keep it up to date."
 
 Each time a new release of Open ERP is made, Tiny supplies a complete Windows auto-installer for
 it. This contains all of the components you need – the PostgreSQL database server, the Open ERP
