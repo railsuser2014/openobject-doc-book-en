@@ -248,7 +248,7 @@ calculates a project plan for earliest delivery using task ordering and the atte
 
 	This view isn't available in Open ERP's GTK client.
 
-    .. figure::  images/service_task_calendar.png
+	.. figure::  images/service_task_calendar.png
 	   :align: center
 
        *Calendar view of the system tasks.*

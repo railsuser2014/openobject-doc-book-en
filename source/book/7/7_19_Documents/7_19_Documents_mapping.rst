@@ -24,7 +24,7 @@ created automatically by the system.
    *Orders in Open ERP.*
 
 .. figure::  images/document_ftp_sale.png
-    :align: center
+   :align: center
 
    *Directories representing all the orders in the document management system.*
 
