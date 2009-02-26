@@ -379,8 +379,8 @@ For menus and fields, use uppercase for all first letters, excluding conjections
 
   * Chart of Accounts
 
-Naming Conventions
-^^^^^^^^^^^^^^^^^^
+Field Naming Conventions
+^^^^^^^^^^^^^^^^^^^^^^^^
 
   * Avoid generic terms in fields and use if possible explicit terms, some example:
 
@@ -388,6 +388,28 @@ Naming Conventions
     - Parent -> Bill of Material Parent
     - Rate -> Currency Rate Conversion
     - Amount -> Quantity Sold
+
+Here are some rules to respect:
+
+* many2one fields should respect this regex: '.*_id'
+* one2many fields should respect this regex: '.*_ids'
+* one2many relation table should respect this regex: '.*_rel'
+* many2many fields should respect this regex: '.*_ids'
+* use underscore to separate words
+* avoid using uppercases
+* if a field should be composed of several words, start by the most important words
+
+   * This is good: sale_price, partner_address_id
+   * This is bad: is_sellable
+
+Object Naming Conventions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* All objects must start by the name of the module they are defined in.
+* If an object is composed of several words, use points to separate words
+
+
+
 
 Some terms
 ^^^^^^^^^^

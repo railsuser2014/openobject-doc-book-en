@@ -33,7 +33,7 @@ Open ERP Book
 
 .. toctree::
 
-    :maxdepth: 3
+    :maxdepth: 2
 
     0/index
     1/index
