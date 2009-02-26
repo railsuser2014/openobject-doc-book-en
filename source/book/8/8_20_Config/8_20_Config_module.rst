@@ -19,6 +19,9 @@ dedicated just to that. That enables you to:
   in returning them to their original state after the migration, unless you've saved the modifications
   in a module.
 
+.. index::
+   pair: module; base_module_record
+
 Start by installing the module :mod:`base_module_record`` in the usual way. Then start recording
 your actions using the menu :menuselection:`Administration --> Modules Management --> Modules
 Recording --> Start Recording`. Manually make all your configuration changes through the user
@@ -28,6 +31,9 @@ are described later in this chapter).
 
 Once you've done all this, go to the menu :menuselection:`Administration --> Modules Management -->
 Modules Recording --> Save Recorded Module`.
+
+.. index::
+   pair: module; base_module_publish
 
 .. note:: Contributing to the development of Open ERP
 

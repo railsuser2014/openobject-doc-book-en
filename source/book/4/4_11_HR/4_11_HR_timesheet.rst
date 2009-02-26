@@ -84,6 +84,9 @@ The following information is important in the product form:
 
 *  :guilabel:`Standard Price`
 
+.. index::
+   pair: module; product_index
+
 .. tip:: Price Indexation
 
 	The module :mod:`product_index` lets you generate indexes connected to the change of purchase or sale
@@ -104,6 +107,9 @@ In summary, each company employee corresponds, in most cases, to:
 
 And each company job position corresponds to a :guilabel:`Product`.
 
+.. index::
+   pair: module; hr_contract
+
 .. note:: Time charge rates
 
 	By default the hourly cost of an employee is given by the standard cost of the product linked to
@@ -123,6 +129,9 @@ And each company job position corresponds to a :guilabel:`Product`.
 
 Entering timesheet data
 ------------------------
+
+.. index::
+   pair: module; hr_timesheet
 
 To be able to use timesheets, you should install the module :mod:`hr_timesheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
@@ -215,6 +224,9 @@ screen. If you want to get more exact figures, switch to the list view.
 	It's possible to assign a dashboard to users so that it appears when they sign into Open ERP.
 	Then each employee will be able to see if they've forgotten to complete their timesheet when they
 	signed out of the system.
+	
+	.. index::
+	   pair: module; board_project	
 
 	To use this dashboard, install the module :mod:`board_project`.
 
@@ -306,6 +318,9 @@ financial management and invoicing of projects
 You'll see in :ref:`ch-services` that you can automatically invoice services at the end of
 the month based on the timesheet. But at the same time some contracts are limited to prepaid hours.
 These hours and their deduction from the original limit are also managed by these timesheets.
+
+.. index::
+   pair: module; hr_timesheet_sheet
 
 In such a situation, hours that aren't coded into the timesheets represent lost money for the
 company. So it's important to establish effective follow-up of the services timesheets and their

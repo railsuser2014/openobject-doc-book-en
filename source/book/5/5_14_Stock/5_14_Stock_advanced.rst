@@ -31,6 +31,9 @@ you're also trying to use it interactively yourselves. To specify the time it st
 :menuselection:`Administration --> Configuration --> Planning --> Actions Planned`. Select the rule
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
+.. index::
+   pair: module; mrp_jit
+
 Some companies want to plan the orders progressively as they are entered so they don't wait until
 the procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
 it's installed each requirement (production or procurement order) will be planned in real time as
@@ -39,7 +42,10 @@ soon as it's been confirmed.
 Then if you make a customer order with a product that's *Make To Order* the quotation request for a
 supplier will be generated.
 
- ..tip :: Delivery from the supplier or to the customer
+.. index::
+   pair: module; sale_supplier_direct_delivery
+
+..tip :: Delivery from the supplier or to the customer
 
     The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
     the supplier to the customer.
@@ -175,6 +181,9 @@ received at one time but from several orders.
 
 Product routing
 ---------------
+
+.. index::
+   pair: module; stock_location
 
 You should install the :mod:`stock_location` module if routing products to customers, from suppliers or
 in your warehouse is a function of the product itself.

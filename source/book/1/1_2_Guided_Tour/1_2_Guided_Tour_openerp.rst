@@ -316,6 +316,9 @@ of its available variants briefly rather than every item as an entire product.
 			* Quality of Cloth (125g/m2, 150g/m2, 160g/m2, 180g/m2),
 
 			* Collar (V, Round).
+			
+			.. index::
+			   pair: module; product_variant_multi
 
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
@@ -388,6 +391,10 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of staff performance,
 
 * management of skills and competencies.
+
+.. index::
+   pair: modules; hr_
+   pair: module; hr
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
 rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human

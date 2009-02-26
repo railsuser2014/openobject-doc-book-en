@@ -21,6 +21,9 @@ Open ERP provides numerous tools for managing customer and supplier accounts. Y
 Financial analysis of partners
 ------------------------------
 
+.. index::
+   pair: module; board_account
+
 When members of your accounts department sign on to the Open ERP system, they're immediately
 presented with the :guilabel:`Accounting Dashboard`. By default it contains a useful graph for analyzing
 Receivables. To get access to it, install the module :mod:`board_account`. Then look at it using
@@ -110,6 +113,9 @@ for account entries:
 
 Multi-step follow-ups
 ---------------------
+
+.. index::
+   pair: module; account_followup
 
 To automate the management of followups (reminders) you must install the module 
 :mod:`account_followup`. This is installed automatically as part of the accounting profile, but is

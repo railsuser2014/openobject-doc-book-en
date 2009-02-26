@@ -21,6 +21,9 @@ same time.
 The different journals
 ----------------------
 
+.. index::
+   pair: module; sale_journal
+
 Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
 
 * Invoicing journals,

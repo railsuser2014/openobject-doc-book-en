@@ -28,6 +28,9 @@ Open ERP knows more about your customers and your ability to supply them becaus
 of your accounting, sales, purchases, manufacturing and fulfillment as well as linking to all of
 your internal staff.
 
+.. index::
+   pair: module; crm
+
 Open ERP's :mod:`crm` module uses that information and offers several significant features that enable
 you and your staff to monitor and control your supplier and customer relationships effectively, such
 as delegating issues to the most appropriate people, keeping a history of communications and events,

@@ -14,6 +14,9 @@ by the logistics manager.
     manufactured.
     You can then use it for stock management with purchased and manufactured products.
 
+.. index::
+   pair: module; stock_planning
+
 To be able to use the production plan, you must install the :mod:`stock_planning` module which can be
 found amongst Open ERP's extra_addons rather in the main set of addons.
 

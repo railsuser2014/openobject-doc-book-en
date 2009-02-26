@@ -179,6 +179,9 @@ The manual mode will create an internal move order to the linked location once p
 the source locations. This order will wait for a confirmation of the move by a user. This enables
 you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
+.. index::
+   pair: module; stock_location
+
 .. tip:: Product Logistics
 
     The module :mod:`stock_location` enables you to generate paths to follow, not just at the level of

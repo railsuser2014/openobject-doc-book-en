@@ -1,5 +1,5 @@
 
-.. _ch_hr:
+.. _ch-hr:
 
 *******************************
 Organization of Human Resources

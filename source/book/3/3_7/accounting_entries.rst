@@ -407,6 +407,9 @@ to manage issues such as:
 Process for managing payment orders
 -----------------------------------
 
+.. index::
+   pair: module; account_payment
+
 To use the tool for managing payments you must first install the module :mod:`account_payment`.
 It's part of the core Open ERP system.
 

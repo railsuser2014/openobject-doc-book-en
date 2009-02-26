@@ -47,6 +47,9 @@ company details when asked, or just select the default of :guilabel:`Tiny SPRL` 
 You'll be asked what View Mode you want during the Configuration stage. :guilabel:`Extended Interface` is
 recommended at this stage. You don't need any additional users.
 
+.. index::
+   pair: module; purchase
+
 Then install the :mod:`purchase` module, which installs several other modules as dependencies. Continue
 the remainder of this chapter logged in as the admin user.
 
@@ -63,6 +66,9 @@ generated the request.
    :align: center
 
    *Data entry for a supplier order.*
+
+.. index::
+   pair: module; warning
 
 .. note:: Managing Alerts
 
@@ -115,11 +121,18 @@ If you work with management by case you can also set the analytic account that s
 report all the purchase costs. The costs will then be reported at the receipt of the supplier
 invoice.
 
+.. index::
+   pair: module; purchase_analytic_analysis
+
 .. tip:: Management by case
 
    Analytic accounts can be very useful for all companies that manage costs by case, by site, by
    project or by folder.
    To work with several analytic axes you should install the module :mod:`purchase_analytic_plans`.
+
+.. index::
+   pair: module; account_analytic_default
+   pair: module; purchase_analyitc_plans
 
 For that the analytic account is automatically selected as a function of the partner, the date, the
 products or the user, you can install the module :mod:`account_analytic_default` (which is installed
@@ -161,6 +174,9 @@ Supplier`.
    :align: center
 
    *Supplier order process.*
+
+.. index::
+   pair: module; purchase_approve
 
 .. note:: Supplier validation
 
@@ -272,6 +288,9 @@ The invoices are then handled just like the controlled from On Order. Once the i
 the accounting service he just compares it with the invoices waiting to control what the supplier
 invoices you.
 
+.. index::
+   pair: module; purchase_delivery
+
 .. tip:: Delivery Charges
 
    To manage delivery charges, install the module :mod:`purchase_delivery`.
@@ -282,6 +301,9 @@ invoices you.
 
 Tenders
 -------
+
+.. index::
+   pair: module; purchase_tender
 
 To manage tenders, you should use the module :mod:`purchase_tender`. This lets you create several
 supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds
@@ -353,6 +375,9 @@ Those costs that can be fixed for the whole year bring certain advantages:
 * accounting is simplified because there's a direct relationship between the value of stock and the
   number of items received.
 
+.. index::
+   pair: module; product_extended
+
 To automate periodic revaluation of the standard price you can use the module :mod:`product_extended`.
 This will add an action on the product form enabling you to set a date all the selected products. It
 will then recalculate the price of the products as a function of the cost of raw materials and the
@@ -402,6 +427,10 @@ Analyis of purchases
 Elementary statistics
 ---------------------
 
+.. index::
+   pair: module; report_purchase
+   pair: module; product_margin
+
 To get statistics about your purchases you can install the modules :mod:`report_purchase` and
 :mod:`product_margin`.
 
@@ -424,6 +453,10 @@ stock.
 
 Supplier relationship management
 ================================
+
+.. index::
+   pair: module; crm_configuration
+   pair: module; crm
 
 To manage supplier relations, you should install the :mod:`crm_configuration` module. You will then be
 able to manage supplier complaints and integrate them with your emails and document management.
@@ -459,6 +492,9 @@ To manage purchases by project you should use the analytic accounts. On each lin
 order you can note an analytic account. The analytic costs linked to this purchase will be managed
 by Open ERP to the receipt and confirmation of the supplier invoice.
 
+.. index::
+   pair: module; hr_timesheet_invoice
+
 The :mod:`hr_timesheet_invoice` module lets you reinvoice the analytic costs automatically by reference
 to the parameters in the analytic accounts: such as pricelist, end customer, maximum amount,
 employee ????
@@ -483,6 +519,9 @@ Re-invoicing based on costs you'd get the following workflow:
 #. Receive the supplier invoice and the products,
 
 #. Invoice these costs to the customer.
+
+.. index::
+   pair: module; purchase_analytic_plans
 
 .. tip:: Analytic multiplans
 

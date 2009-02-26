@@ -33,7 +33,11 @@ to advanced use with FTP access.
 Installation
 -------------
 
-To install Open ERP's document management system you just need is to install the \ ``document``\
+.. index::
+   pair: module; document
+   pair: module; board_document
+
+To install Open ERP's document management system you just need is to install the :mod:`document`
 and :mod:`board_document` modules through the menu :menuselection:`Administration --> Modules
 Management --> Modules`. After installing the module the system automatically proposes that you
 configure the document management system.

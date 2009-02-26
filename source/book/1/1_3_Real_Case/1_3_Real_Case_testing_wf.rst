@@ -197,11 +197,14 @@ description of the payment. Select \ ``Bank Journal``\   in the :guilabel:`Journ
 click :guilabel:`Pay Invoice` to the top left of the form, which carries out the payment action
 within Open ERP and returns you to the main menu.
 
+.. index::
+   pair: module; account
+
 .. note:: Payment of an invoice
 
 	The method described here is for companies that don't use their accounting system to pay bills –
 	just to record them.
-	If you're using the :mod:`accounting` module fully other, more efficient, methods let you manage payments,
+	If you're using the :mod:`account` module fully other, more efficient, methods let you manage payments,
 	such as entering account statements, reconciling paperwork, using tools for preparing payments,
 	interfacing with banks.
 
@@ -268,6 +271,9 @@ Preparing goods for despatch to customers
 The stores manager selects the menu :menuselection:`Inventory Control --> Packing Lists --> Sending
 Goods --> Confirmed Packings Awaiting Assignation` to get a list of orders to despatch. In this
 example there's only one, \ ``OUT:1``\  , so click the text to open the :guilabel:`Picking List`.
+
+.. index::
+   pair: module; mrp_jit
 
 .. tip::  Calculating Requirements
 

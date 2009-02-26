@@ -75,6 +75,9 @@ repository.
 Installing a module
 ---------------------
 
+.. index::
+   pair: module; product
+
 You'll now install a module named :mod:`product`, which will enable you to manage the company's
 products. This is part of the core installation, so you don't need to load anything to make this
 work, but isn't installed in the Minimal Profile.
@@ -116,6 +119,9 @@ see the new menu :menuselection:`Products` has become available.
 
 Installing a module with its dependencies
 -------------------------------------------
+
+.. index::
+   pair: module; crm
 
 You'll now install the CRM module (Customer Relationship Management) using the same process as
 before.
@@ -204,6 +210,9 @@ overview of all of the modules available for installation.
 
 To test several modules you won't have to install them all one by one. You can use the dependencies
 between modules to load several at once. For example, try loading the following modules:
+
+.. index::
+   pair: modules; profile_
 
 * :mod:`profile_accounting`,
 

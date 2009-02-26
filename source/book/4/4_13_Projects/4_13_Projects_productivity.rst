@@ -8,6 +8,9 @@ Now take a slight detour away from pure enterprise management by looking at some
 Open ERP to improve your own personal time management. It's not much of a detour because good
 organization is the key to better productivity in your daily work.
 
+.. index::
+   pair: module; project_gtd
+
 Open ERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
 time management:
 

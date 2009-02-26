@@ -155,6 +155,9 @@ completes all the other required fields: price, unit of measure, description, di
 applicable taxes, default packaging and the product description. All of this information comes from
 the product form.
 
+.. index::
+   pair: module; product_visible_discount
+
 .. tip:: Visible Discount
 
    By default, the customer discount is directly included in the sale price to the customer.
@@ -289,6 +292,8 @@ Management of Alerts
 
 .. index:: Warning
 .. index:: Alerts
+.. index::
+   pair: module; warning
 
 To manage alerts on products or partners, you can install the :mod:`warning` module. Once that is
 installed, it will enable you to configure a series of alerts on the partners or products.
@@ -381,6 +386,10 @@ once for the whole delivery, even if the delivery of several items has already b
 
 Management of Carriers
 ======================
+
+.. index::
+   pair: module; delivery
+   pair: module; industry
 
 To manage deliveries in Open ERP, install the :mod:`delivery` module. If you have installed the
 :mod:`industry` profile this is installed by default during configuration of the database. This module
@@ -549,6 +558,9 @@ number of systems for monitoring margins. You'll see the main ones are:
 Margins on sales orders
 -----------------------
 
+.. index::
+   pair: module; sale_margin
+
 If you want to check your margins on sales orders you can install the :mod:`sale_margin` module. This
 will add margins calculated on each order line and on the order total.
 
@@ -564,6 +576,9 @@ in Open ERP (cost price fixed manually and reviewed once per year). You can chan
 suppliers. After product receipt you can even add fixed costs such as delivery costs in the cost of
 each product.
 
+.. index::
+   pair: module; product_extended
+
 Open ERP supports a third method of updating the cost price of products using the module
 :mod:`product_extended`. This will add a button on the product form which will permit you to
 automatically recalculate the cost price for the selected products. The cost price is then
@@ -572,6 +587,9 @@ been manufactured internally so that you know their costs).
 
 Margins by product
 ------------------
+
+.. index::
+   pair: module; product_margin
 
 To follow the margins by product, you should install the module :mod:`product_margin`. Once the module
 is installed you can look at the margins by product using the menu :menuselection:`Products -->
@@ -643,6 +661,9 @@ Margins by Project
 
 To manage margins by project you must install the analytical accounts with management by task. Use
 of these accounts is described in :ref:`ch-accts`.
+
+.. index::
+   pair: module; account_analytic_analysis
 
 You should install the module :mod:`account_analytic_analysis`. This module will add a tab on the
 product form to handle the different margins in an analytic account representing a project or a
@@ -775,6 +796,9 @@ For each list you should define:
 * a :guilabel:`Type` of list: \ ``Sale``\   for customers or \ ``Purchase``\   for suppliers,
 
 * the :guilabel:`Currency` in which the prices are expressed.
+
+.. index::
+   pair: module; edi
 
 .. tip:: Consumer Price
 
@@ -1114,6 +1138,9 @@ Rebates at the end of a campaign can help you avoid this sort of problem. You ca
 where the price is dependent on the usual wholesaler's terms. You can propose a rebate grid which
 will be assigned at the end of the year as a function of the actual sales made.
 
+.. index::
+   pair: module; discount_campaign
+
 Install the :mod:`discount_campaign` module to generate the rebates at the end of the campaign. Once
 the modules have been installed you can configure your campaign using the menu :menuselection:`Sales
 Management --> Configuration --> Rebates at the end of a campaign`.
@@ -1159,6 +1186,9 @@ You can also reach all of the draft credit notes using the menu :menuselection:`
 Open orders
 -----------
 
+.. index::
+   pair: module; sale_delivery
+
 In certain trades, customers place orders for a certain volume of product and ask for regular
 deliveries off an order up to the total amount on it. This principle, called open orders, is managed
 by the :mod:`sale_delivery` module in Open ERP.
@@ -1192,6 +1222,9 @@ order, Open ERP no longer generates a single delivery order but plans scheduled 
 Order templates
 ===============
 
+.. index::
+   pair: module; sale_layout
+
 The :mod:`sale_layout` module enables you to have a more elaborate template than the standard order
 forms.
 
@@ -1206,6 +1239,9 @@ For example you could put the following in the order lines:
 * comments,
 
 * a page break.
+
+.. index::
+   pair: module; account_invoice_layout
 
 This enables you to lay out a more elaborate professional-looking quotation page. There's also the
 module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.

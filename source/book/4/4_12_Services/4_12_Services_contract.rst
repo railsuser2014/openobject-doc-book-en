@@ -101,6 +101,9 @@ Cost-reimbursement contracts
 Some contracts aren't invoiced from a price fixed on the order but from the cost of the services
 carried out. That's usually what happens in the building sector or in large projects.
 
+.. index::
+   pair: module; hr_timesheet_invoice
+
 The approach you use for this is totally different because instead of using the sales order as the
 basis of the invoice you must use the analytic accounts. For this you have to install the module 
 :mod:`hr_timesheet_invoice`.
@@ -146,6 +149,9 @@ the level of detail which is reported on the invoice, such as the date and detai
    :align: center
 
    *Screen for invoicing services.*
+
+.. index::
+   pair: module; account_analytic_analysis
 
 .. note:: Project Management and analytic accounts
 
@@ -237,6 +243,9 @@ for fixed-price contracts:
 
 Contracts limited to a quantity
 -------------------------------
+
+.. index::
+   pair: module; account_analytic_analysis
 
 Finally certain contracts are expressed in terms of a quantity rather than a fixed amount. Support
 contracts comprising a number of prepaid hours are a case in point. To generate such contracts in

@@ -44,6 +44,9 @@ The transit location are linked between themselves with a manual confirmation st
 stock move is validated at each port and customs arrival. Open ERP prepares all the linked moves
 automatically.
 
+.. index::
+   pair: module; report_instrastat
+
 .. note:: Intrastat
 
     Companies that do import / export should install the module :mod:`report_intrastat`.
@@ -60,6 +63,9 @@ configuration.
 
 Rental locations
 ----------------
+
+.. index::
+   pair: module; stock_location
 
 You can manage rental locations in Open ERP very simply using the same system of linked locations.
 Using the module :mod:`stock_location` you can set a return date for rental items sent to customer

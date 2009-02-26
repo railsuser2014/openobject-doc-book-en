@@ -179,6 +179,9 @@ the invoiced quantities correspond to the quantities received.
 Customer delivery
 -----------------
 
+.. index::
+   pair: module; sale
+
 Everything about goods receipt can also be done manually for a customer delivery. But this time, use
 the automated product delivery processes based on customer orders. Install the :mod:`sale` module so
 that you can proceed further in this section of the chapter.
@@ -216,6 +219,9 @@ Start the scheduler through the menu :menuselection:`Manufacturing --> Compute A
 functionality will be detailed in :ref:`ch-mnf`. This manages the reservation of
 products and places orders based on the dates promised to customers, and the various internal lead
 times and priorities.
+
+.. index::
+   pair: module; mrp_jit
 
 .. tip:: Just in Time
 

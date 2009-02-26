@@ -13,6 +13,9 @@ operations:
 
 * Manufacturing.
 
+.. index::
+   pair: module; stock
+
 For this chapter you should start by installing the :mod:`stock` module (which also installs a few
 dependencies with it) into a new minimal database populated with Tiny's demonstration data. You
 don't need to choose any particular chart of accounts during configuration of the database, but you

@@ -5,6 +5,10 @@
 Chart of Accounts
 =================
 
+.. index::
+   pair: modules; l10n_
+   pair: module; l10n_fr
+
 On installation, the software is given a default chart of accounts that's the same regardless of
 your country. To install the chart of accounts and tax definitions for your own country install the
 module :mod:`l10n_XX` where XX represents your country code in two letters. For example to get the

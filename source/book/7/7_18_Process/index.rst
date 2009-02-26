@@ -116,6 +116,14 @@ You'll be asked what View Mode you want during the Configuration stage.
 more cluttered than the :guilabel:`Simple Interface` because it shows you all the menu
 options. You don't need any additional users.
 
+.. index::
+   pair: module; sale
+   pair: modules; hr_
+   pair: module; hr_attendence
+   pair: module; hr_contract
+   pair: module; hr_holidays
+   pair: module; hr_holidays_request
+
 Then install the :mod:`sale` module for the first example below, which installs
 several other modules as dependencies. Also install some of the :mod:`hr` modules for
 the second example below, such as :mod:`hr_attendence`, :mod:`hr_contract`,

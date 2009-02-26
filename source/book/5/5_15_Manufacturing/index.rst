@@ -15,6 +15,9 @@ The management of manufacturing in Open ERP is based on its stock management and
 flexible in both its operations and its financial control. It particularly benefits from the use of
 double-entry inventory management for manufacturing orders.
 
+.. index::
+   pair: module; mrp
+
 Manufacturing management is implemented by the :mod:`mrp` module. It is useful for transforming all
 types of products:
 

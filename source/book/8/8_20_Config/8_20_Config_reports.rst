@@ -31,6 +31,9 @@ You can also install more new reports using various different modules whose name
 Modeling a new report
 ^^^^^^^^^^^^^^^^^^^^^
 
+.. index::
+   pair: module; base_report_creator
+
 Open ERP gives you the possibility of developing your own analyses to meet your specific needs. To
 define a new analysis of the system's data you should install the module :mod:`base_report_creator`
 . This enables you to create complex queries on the database, in a simple and visual way.
@@ -134,6 +137,9 @@ entry for your dashboard anywhere in the menu system.
 
 Managing document templates with OpenOffice.org
 -----------------------------------------------
+
+.. index::
+   pair: module; base_report_designer
 
 To configure your printable documents in Open ERP, use the module :mod:`base_report_designer`.
 

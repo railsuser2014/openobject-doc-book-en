@@ -116,7 +116,12 @@ and \ ``Open``\   tasks from that list.
 	Every user should create a link in their own shortcuts to the :menuselection:`My Open Tasks` menu because they'll
 	have to consult this menu several times a day.
 
+.. todo:: what is this?
+
  *Task Work*  *Effective hours*
+
+.. index::
+   pair: module; hr_timesheet_project
 
 .. note:: Tasks and timesheet
 
@@ -208,6 +213,9 @@ so on. When you first open the list of project tasks, they're listed in their se
 
 You can use one of these three ordering methods, or combine several of them, depending on the
 project.
+
+.. index::
+   pair: module; scrum
 
 .. note:: Agile methods
 

@@ -150,6 +150,9 @@ the months ahead.
 Using planning well
 -------------------
 
+.. index::
+   pair: module; board_project
+
 Plans can be printed and/or sent to employees by email. If you install the module 
 :mod:`board_project`, each employee can be given access to a dashboard that graphically shows the
 time allocated to him or her on a project and the time that's been worked so far. So each employee
@@ -173,6 +176,9 @@ You can also study several of your project's figures from the menu :menuselectio
 
 Planning at all levels of the hierarchy
 ---------------------------------------
+
+.. index::
+   pair: module; report_analytic_planning_delegate
 
 To put planning in place across the whole company you can use a system of planning delegation. For
 this, install the module :mod:`report_analytic_planning_delegate`.

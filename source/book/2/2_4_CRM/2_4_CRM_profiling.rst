@@ -65,6 +65,9 @@ proposition, such as an invitation to a training session a week after the show.
 Using profiles effectively
 --------------------------
 
+.. index::
+   pair: module; crm_profiling
+
 To use the profiling system you'll need to install Open ERP's :mod:`crm_profiling` module. It's
 part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from
 ``addons-extra``.
@@ -99,6 +102,9 @@ profile defined like this:
 When entering the details of a specific prospect, the prospect's answers to various questions can be
 entered in the new fifth tab of the partner form. Open ERP will automatically assign prospects to
 the appropriate partner category based on these answers.
+
+.. index::
+   pair: module; report_invoice_salesman
 
 .. tip:: Sales targets
 

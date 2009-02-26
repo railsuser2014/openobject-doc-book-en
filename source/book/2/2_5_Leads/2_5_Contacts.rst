@@ -2,6 +2,9 @@
 Managing Contacts
 =================
 
+.. index::
+   pair: module; base_contact
+
 The two figures below show the UML classes with and without the :mod:`base_contact` module.
 
 .. figure:: images/crm_contact_with.png
@@ -98,11 +101,14 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 
    *Selecting the CRM functionality to install.*
 
+.. index::
+   pair: module; crm_configuration
+
 .. note:: The CRM configuration module
 
-    The pre-configuration of the management of customer relations to generate prospects,
-    opportunities, and phone calls
-    isn't supplied by the :mod:`crm` module itself but by the :mod:`crm_configuration` module.
+   The pre-configuration of the management of customer relations to generate prospects,
+   opportunities, and phone calls
+   isn't supplied by the :mod:`crm` module itself but by the :mod:`crm_configuration` module.
 
 If you install the modules separately don't forget to install the ``crm_configuration`` module.
 The :mod:`crm` module just contains the generic case management system.

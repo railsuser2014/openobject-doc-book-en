@@ -154,10 +154,16 @@ The rules for automating actions will enable you to send emails automatically ba
 such as assigning opportunities to the most appropriate person. To access the CRM rules, use the
 menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
+.. index::
+   pair: module; crm_profiling
+
 The segmentation tools will enable you to create partner groups and act on each segment differently.
 For example you could create pricelists for each of the segments, or start phone marketing campaigns
 by segment. To enable the management of segmentation you should install the module
 :mod:`crm_profiling`.
+
+.. index::
+   pair: module; report_designer
 
 The :mod:`report_designer` module enables you to create letter templates in OpenOffice and automate
 letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of

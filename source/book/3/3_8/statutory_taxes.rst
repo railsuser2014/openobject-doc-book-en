@@ -18,6 +18,9 @@ This section deals with statutory taxes and accounts which are legally required 
 
 	In addition to the legal declarations available in the accounts modules,
 	Open ERP supplies declarations based on the functionality in other modules.
+	
+	.. index::
+	   pair: module; report_instrastat
 
 	You can, for example, install the :mod:`report_intrastat` module for intra-stat declarations
 	about sending goods to and receiving goods from other countries.
@@ -202,7 +205,10 @@ tax-like charges.
 	When you're retailing to end users rather than selling to a business,
 	you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather
 	than a tax-exclusive price plus tax.
-
+	
+	.. index::
+	   pair: module; account_tax_include
+	
 	To do this in Open ERP just install the :mod:`account_tax_include` module.
 	Each invoice is given a new :guilabel:`Price method` field, in which you choose Tax included or Tax
 	excluded.
@@ -237,6 +243,9 @@ Tax``\   or \ ``Output VAT``\  .
 You can also assign multiple taxes to a Project, so that invoices from the Project carry an
 appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-projects`).
 
+.. index::
+   pair: module; import_export
+
 .. note:: Tax regions
 
 	The third-party module :mod:`import_export` can be used to extend Open ERP's tax system,
@@ -266,6 +275,9 @@ or several accounts for analysis by clicking and highlighting the appropriate li
 balance`, or an :guilabel:`Analytic check`. If you select an account which has sub-accounts in the
 hierarchy you can automatically analyze that account and its child accounts.
 
+.. index::
+   pair: module; account_simulation
+
 .. tip::  Simulated balance
 
 	While you're printing account balances,
@@ -282,6 +294,9 @@ hierarchy you can automatically analyze that account and its child accounts.
 	More generally it enables you to make analyses using other simulation levels that you could
 	expect..
 
+.. index::
+   pair: module; account_reporting
+
 The :mod:`account_reporting` module was developed to provide configurable reports for balance sheets
 or earnings statements in legally required formats.
 
@@ -292,6 +307,10 @@ The accounting journals
 
 To obtain the different journals use the menu :menuselection:`Financial Management --> Reporting -->
 Printing Journals`.
+
+.. index::
+   pair: module; sale_journal
+   pair: module; purchase_journal
 
 .. note::  Journals
 
