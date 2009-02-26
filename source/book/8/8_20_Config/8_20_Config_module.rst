@@ -22,7 +22,7 @@ dedicated just to that. That enables you to:
 .. index::
    pair: module; base_module_record
 
-Start by installing the module :mod:`base_module_record`` in the usual way. Then start recording
+Start by installing the module :mod:`base_module_record` in the usual way. Then start recording
 your actions using the menu :menuselection:`Administration --> Modules Management --> Modules
 Recording --> Start Recording`. Manually make all your configuration changes through the user
 interface as you would normally (such as menu management, dashboard assignments, screen

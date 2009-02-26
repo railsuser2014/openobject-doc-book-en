@@ -326,7 +326,7 @@ Printing Journals`.
 	  automating the tasks.
 
 	To obtain these different journals install the modules :mod:`sale_journal` (found at the time of
-	writing in ``addons``, so available in a standard installation) and :mod:`purchase_journal`(found in
+	writing in ``addons``, so available in a standard installation) and :mod:`purchase_journal` (found in
 	``addons-extra`` at the time of writing, so needing special installation).
 
 Then select one or several journals and click :guilabel:`Print`. Open ERP then proposes the three

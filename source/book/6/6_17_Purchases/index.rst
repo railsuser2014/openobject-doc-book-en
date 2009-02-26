@@ -132,7 +132,7 @@ invoice.
 
 .. index::
    pair: module; account_analytic_default
-   pair: module; purchase_analyitc_plans
+   pair: module; purchase_analytic_plans
 
 For that the analytic account is automatically selected as a function of the partner, the date, the
 products or the user, you can install the module :mod:`account_analytic_default` (which is installed

@@ -117,7 +117,7 @@ Key indicators
 --------------
 
 .. index::
-   pair: module; account_analyitc_analysis
+   pair: module; account_analytic_analysis
 
 If you use analytic accounts with a structure of accounts by project client you should install the 
 :mod:`account_analytic_analysis` module. This module adds three new tabs to the analytic account

@@ -119,14 +119,14 @@ options. You don't need any additional users.
 .. index::
    pair: module; sale
    pair: modules; hr_
-   pair: module; hr_attendence
+   pair: module; hr_attendance
    pair: module; hr_contract
    pair: module; hr_holidays
    pair: module; hr_holidays_request
 
 Then install the :mod:`sale` module for the first example below, which installs
 several other modules as dependencies. Also install some of the :mod:`hr` modules for
-the second example below, such as :mod:`hr_attendence`, :mod:`hr_contract`,
+the second example below, such as :mod:`hr_attendance`, :mod:`hr_contract`,
 :mod:`hr_holidays`, and :mod:`hr_holidays_request`.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.

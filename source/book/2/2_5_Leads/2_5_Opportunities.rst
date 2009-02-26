@@ -163,9 +163,9 @@ by segment. To enable the management of segmentation you should install the modu
 :mod:`crm_profiling`.
 
 .. index::
-   pair: module; report_designer
+   pair: module; base_report_designer
 
-The :mod:`report_designer` module enables you to create letter templates in OpenOffice and automate
+The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
 letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
 mass mailing.
 

@@ -52,9 +52,9 @@ Claiming expenses
 -----------------
 
 .. index::
-   pair: module; hr_expenses
+   pair: module; hr_expense
 
-Install the module :mod:`hr_expenses` to automate the management of expense claims. Users can then
+Install the module :mod:`hr_expense` to automate the management of expense claims. Users can then
 enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> My Expenses`.
 
 \ ``Draft``\
