@@ -1,4 +1,6 @@
 
+.. _ch-stocks:
+
 ******************************
 Logistics and Stock Management
 ******************************

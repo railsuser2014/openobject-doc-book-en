@@ -1,6 +1,8 @@
 
 .. index:: Sales
 
+.. _ch-sales:
+
 *******************
 Management of Sales
 *******************

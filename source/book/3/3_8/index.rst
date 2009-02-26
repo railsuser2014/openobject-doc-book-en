@@ -1,5 +1,5 @@
 
-.. ch_financial:
+.. ch-financial:
 
 ******************
 Financial Analysis
