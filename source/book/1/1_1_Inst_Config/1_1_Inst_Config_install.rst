@@ -174,10 +174,12 @@ resolving this below:
 	   you can read :guilabel:`The service PostgreSQL4OpenERP has stopped` then you can be reasonably sure
 	   that the database server was working. Restart PostgreSQL then, still in the PostgreSQL menu, start
 	   the pgAdmin III application which you can use to explore the database. Double-click on the \
-	   ``PostgreSQL4OpenERP``\  connection as in the figure below. If the database server is working
+	   ``PostgreSQL4OpenERP``\  connection as shown in :ref:`fig-pgad`. If the database server is working
 	   you'll be able to see some information about the empty database. If it's not then an error message
 	   will appear.
 
+           .. _fig-pgad:
+           
            .. figure:: images/pgadmin_window.png
               :align: center
               :scale: 85
@@ -214,15 +216,17 @@ resolving this below:
 	#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then
 	   the swiftest approach is to reinstall them.
 
+           .. _fig-cmdp:
+           
            .. figure:: images/cmd_prompt_ping.png
               :align: center
               
-              ..
+              *Sending a ping from the command prompt.*
 
 	#. Can the client computers see the server computer at all? Check this by opening a command prompt
 	   window (enter \ ``cmd``\  in the window :menuselection:`Start --> Run...` ) and enter \ ``ping
 	   <address of server>``\  there (where \ ``<address of server>``\  represents he IP address of the
-	   server). The server should respond as shown in the following figure.
+	   server). The server should respond as shown in the figure :ref:`fig-cmdp`.
 
 	#. Have you changed any of the server's parameters? At this point in the installation the port
 	   number of the server must be 8069 using the protocol XML-RPC.
