@@ -51,3 +51,21 @@ Downloads for each DBAPI to connect to supported Databases are as follows:
 * Firebird:  kinterbasdb_
 
 * Informix:  informixdb_
+
+
+
+.. _psycopg2: http://www.initd.org/tracker/psycopg/wiki/PsycopgTwo
+
+.. _pysqlite: http://initd.org/tracker/pysqlite
+
+.. _MySQLDB: http://sourceforge.net/projects/mysql-python
+
+.. _cx_Oracle: http://www.cxtools.net/default.aspx?nav=home
+
+.. _pyodbc: http://pyodbc.sourceforge.net
+
+.. _kinterbasdb: http://kinterbasdb.sourceforge.net/
+
+.. _informixdb: http://informixdb.sourceforge.net/
+
+

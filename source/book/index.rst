@@ -32,7 +32,6 @@ Open ERP Book
     </div>
 
 .. toctree::
-
     :maxdepth: 3
 
     0/index

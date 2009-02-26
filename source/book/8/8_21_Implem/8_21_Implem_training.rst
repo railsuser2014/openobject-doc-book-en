@@ -5,15 +5,15 @@ User training
 Two types of training are provided by the Tiny company and its partners:
 
 * Technical training in Open ERP: the objective of this intensive training is to enable you to
-develop your own modules by modifying and adapting the existing ones. It covers the creation of new
-objects, menus, reports and workflows, and also of interfaces with external software. It lasts for
-five days and is designed for IT people
+	develop your own modules by modifying and adapting the existing ones. It covers the creation of new
+	objects, menus, reports and workflows, and also of interfaces with external software. It lasts for
+	five days and is designed for IT people
 
 * User training: this enables you to be productive as rapidly as possible in the use of Open ERP.
-All of the modules there are detailed with concrete examples and different exercises. For the sake
-of realism the training uses data for a fictitious company. This training also lasts for five days.
-It is designed for those responsible for an ERP project, who will then be capable of training
-employees internally.
+	All of the modules there are detailed with concrete examples and different exercises. For the sake
+	of realism the training uses data for a fictitious company. This training also lasts for five days.
+	It is designed for those responsible for an ERP project, who will then be capable of training
+	employees internally.
 
 Tiny's training calendar is available on the official Open ERP site  by clicking the menu
 :menuselection:`Services --> Training`. The training is delivered in either French or English

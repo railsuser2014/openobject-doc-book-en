@@ -80,7 +80,7 @@ report (:guilabel:`Fields to Display`). Complete the screen along the lines of t
 	   is to be applied to this field:
 
 	        - :guilabel:`Grouped` : enables you to group document entries with the same value in this
-	        field.
+		        field.
 
 	        - :guilabel:`Sum` : gives the sum of values in this field.
 

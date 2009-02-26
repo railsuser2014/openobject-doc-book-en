@@ -13,7 +13,7 @@ particularly in installing the software nor in configuring it, but rather more a
 * knowing what to configure,
 
 * deciding if you should adapt the software or perhaps change your method of working, for some of
-your specialized processes,
+	your specialized processes,
 
 * forming teams that can specify and work on some of the changes,
 
