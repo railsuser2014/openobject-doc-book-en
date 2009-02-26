@@ -215,18 +215,19 @@ If you want to contribute on OpenERP or OpenObject, here is the proposed method:
       so that you can review your code to better fits guidelines (problem for
       futur migrations, ...)
 
-The extra-addons branch, that stores all extra modules, is directly accessible
-to all commiters. If you are a commiter, you can work directly on this branch
-and commit your own work. This branch do not require a validation of the
-quality team. You should put there your special modules for your own customers.
+The `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_,
+that stores all extra modules, is directly accessible to all commiters. If you
+are a commiter, you can work directly on this branch and commit your own work.
+This branch do not require a validation of the quality team. You should put
+there your special modules for your own customers.
 
 If you want to propose or develop new modules, we suggest you to create your
 own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
 and develop within your branch. You can fill in a bug to request that
 your modules are integrated in one of the two branches:
 
-  * extra-addons : if your module touches a few companies
-  * addons : if your module will be usefull for most of the companies
+  * `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_ : if your module touches a few companies
+  * `addons <https://code.launchpad.net/~openerp/openobject-addons/trunk>`_ : if your module will be usefull for most of the companies
 
 We invite all our partners and contributors to work in that way so that we can
 easily integrate and share the work done between the different projects.

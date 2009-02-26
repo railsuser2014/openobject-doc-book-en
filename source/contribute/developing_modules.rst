@@ -34,7 +34,7 @@ Our projects on launchpad are currently organised like this:
 |                            |                                              |                                            |
 +----------------------------+----------------------------------------------+--------------------------------------------+
 |                            |                                              |                                            |
-| **openobject)client**      | https://launchpad.net/openobject-client      | the openobject application client (gtk)    |
+| **openobject-client**      | https://launchpad.net/openobject-client      | the openobject application client (gtk)    |
 |                            |                                              |                                            |
 +----------------------------+----------------------------------------------+--------------------------------------------+
 |                            |                                              |                                            |
