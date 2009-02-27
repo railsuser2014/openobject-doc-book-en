@@ -65,12 +65,10 @@ To get a list of partners using demonstration data, use the menu :menuselection:
 Partners` (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has
 only the data that you've put into it - both can show the principles).
 
-
 .. figure::  images/crm_partner.png
    :align: center
 
-   *The partner form.*
-
+   *A partner form*
 
 .. index::
    single: Send SMS
@@ -132,12 +130,10 @@ Partner Categories
 Open ERP uses hierarchical categories to organize all of its partners. To reach the list of
 available partner categories, use the menu :menuselection:`Partners --> Partners by Category`.
 
-
 .. figure::  images/crm_partner_category_big.png
    :align: center
 
-   *Example partner category structure.*
-
+   *Example Partner Category structure*
 
 Double-click one of the categories in the partner category structure to get a list of the partners
 in that category. If you click on a category that has sub-categories you'll get a list of all of the

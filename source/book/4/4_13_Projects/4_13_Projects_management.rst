@@ -103,7 +103,7 @@ made jointly responsible for taking on tasks that they have the skills for.
 .. figure::  images/service_task.png
    :align: center
 
-   *Tasks in project management.*
+   *Tasks in project management*
 
 Each user then manages his or her own task using the different available menus. To open the list of
 unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project
@@ -231,7 +231,7 @@ project.
 .. figure::  images/service_project_gantt.png
    :align: center
 
-   *Gantt plan, calculated for earliest delivery.*
+   *Gantt plan, calculated for earliest delivery*
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify
 anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a
@@ -251,7 +251,7 @@ calculates a project plan for earliest delivery using task ordering and the atte
 	.. figure::  images/service_task_calendar.png
 	   :align: center
 
-       *Calendar view of the system tasks.*
+       *Calendar view of the system tasks*
 
 .. index:: Delegation
 
@@ -265,7 +265,7 @@ you do it this way.
 .. figure::  images/service_task_delegate.png
    :align: center
 
-   *Form for delegating a task to another user.*
+   *Form for delegating a task to another user*
 
 Instead, you can use the button :guilabel:`Delegate` on a task.
 

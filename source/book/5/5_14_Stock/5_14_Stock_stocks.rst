@@ -29,15 +29,17 @@ The two fields are:
 
 .. tip:: Detail of future stock
 
-    To get more detail about future stock, you can use the report to the right of the product form
-    :guilabel:`Forecast of Future Stock`.
-    Open ERP shows a graph of the change of stock in the days to come, varying as a function of
-    purchase orders or confirmed production.
+   To get more detail about future stock, you can use the report :ref:`fig-stfore` to the right of the product form
+   :guilabel:`Forecast of Future Stock`.
+   Open ERP shows a graph of the change of stock in the days to come, varying as a function of
+   purchase orders or confirmed production.
 
-.. figure:: images/stock_forecast.png
-   :align: center
+   .. _fig-stfore:
+   
+   .. figure:: images/stock_forecast.png
+      :align: center
 
-   *Printout of provisional stock.*
+      *Printout of provisional stock*
 
 Lead times and locations
 ------------------------
@@ -88,7 +90,7 @@ into the system by location for the products in stock. Use the menu :menuselecti
 .. figure:: images/stock_inventory_new.png
    :align: center
 
-   *Defining a new inventory operation.*
+   *Defining a new inventory operation*
 
 Give a name (for example 'Initial Inventory' or 'Lost Product XYZ') and a date for each inventory
 operation. You can then enter data about the quantities available for each product by location.
@@ -144,7 +146,7 @@ quantities received by referring to the quantities ordered.
 .. figure:: images/stock_picking_in_tree.png
    :align: center
 
-   *List of items waiting.*
+   *List of items waiting*
 
 You can also do goods in data entry manually if there's no order, using the menu
 :menuselection:`Stock Management --> Incoming Goods --> Items to be Processed` followed by a click
@@ -166,7 +168,7 @@ waiting for click the button :guilabel:`Process Later`.
 .. figure:: images/stock_picking_in_form.png
    :align: center
 
-   *Form for coding in reception of goods from a supplier order.*
+   *Form for coding in reception of goods from a supplier order*
 
 The products then arrive in stock and reflect the quantities shown on the product form.
 
@@ -209,7 +211,7 @@ all the information needed to take orders efficiently.
 .. figure:: images/stock_sale_form.png
    :align: center
 
-   *Encoding an order for three computers.*
+   *Encoding an order for three computers*
 
 Then confirm the quotation to convert it to an order. If you return to the product form you'll see
 the virtual stock is now smaller than the real stock. That happens because three products have been
@@ -236,7 +238,7 @@ the items proposed by Open ERP.
 .. figure:: images/stock_picking_out_form.png
    :align: center
 
-   *Items for a customer order.*
+   *Items for a customer order*
 
 .. tip::  States
 
@@ -258,7 +260,7 @@ salesperson can follow the progress of their orders at a glance.
 .. figure:: images/stock_sale_tree.png
    :align: center
 
-*List of orders with their delivery state.*
+*List of orders with their delivery state*
 
 .. note:: Negative Stock
 
@@ -305,7 +307,7 @@ colored blue.
 .. figure:: images/stock_location_product_tree.png
    :align: center
 
-   *Stock quantities by location for a given product.*
+   *Stock quantities by location for a given product*
 
 You can get more detail about all the stock moves from the product form. You'll then see each move
 from a source location to a destination location. Everything that influences stock levels
@@ -325,7 +327,7 @@ double-entry stock management system. You should look at:
 
 * inventory locations to see the accumulated losses and profits,
 
-* production locatiosn to see the value created for the company.
+* production locations to see the value created for the company.
 
 Also look at how the real and virtual stocks depend on the location selected. If you enter a
 supplier location:

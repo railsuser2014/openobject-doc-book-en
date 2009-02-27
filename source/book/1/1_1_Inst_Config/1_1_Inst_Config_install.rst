@@ -152,7 +152,7 @@ you've successfully connected to an Open ERP server containing, as yet, no data
 .. figure:: images/new_login_dlg.png
    :align: center
 
-   *Dialog box on connecting a GTK client to a new Open ERP server.*
+   *Dialog box on connecting a GTK client to a new Open ERP server*
 
 .. index::
    single: XML-RPC
@@ -184,7 +184,7 @@ resolving this below:
               :align: center
               :scale: 85
 
-              *Using pgAdmin III to verify that PostgreSQL is working.*
+              *Using pgAdmin III to verify that PostgreSQL is working*
 
 
 	#. Is the Open ERP application working? Signed in to the server as an administrator, stop and
@@ -211,7 +211,7 @@ resolving this below:
 	          :align: center
 	          :scale: 80
 	          
-	          ..
+	          *Sample Open ERP configuration file*
 
 	#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then
 	   the swiftest approach is to reinstall them.
@@ -221,7 +221,7 @@ resolving this below:
            .. figure:: images/cmd_prompt_ping.png
               :align: center
               
-              *Sending a ping from the command prompt.*
+              *Sending a ping from the command prompt*
 
 	#. Can the client computers see the server computer at all? Check this by opening a command prompt
 	   window (enter \ ``cmd``\  in the window :menuselection:`Start --> Run...` ) and enter \ ``ping
@@ -297,7 +297,7 @@ likely to be far more up to date than that available from a Linux distribution.
 	Maintaining packages is a process of development, testing and publication that takes time. The
 	releases in Open ERP (or Tiny ERP) packages are therefore not always the latest available. Check
 	the version number from the information on the website before installing a package. If only the
-	third figure differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because
+	third digit group differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because
 	the differences may be minor – fault fixes rather than functionality changes between the package
 	and the latest version.
 
@@ -357,12 +357,14 @@ the steps below:
 
 Open a terminal window to start the server with the command \ ``sudo -i -u postgres openerp-
 server``\  , which should result in a series of log messages as the server starts up. If the server
-is correctly installed, the message  *[...] waiting for connections...* should show within 30
+is correctly installed, the message :guilabel:`[...] waiting for connections...` should show within 30
 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
 .. figure:: images/terps_startup_log.png
    :align: center
    :scale: 95
+   
+   *Open ERP startup log in the console*
 
 .. index::
   single: Client; GTK
@@ -397,6 +399,8 @@ To install an Open ERP GTK client, follow the steps below:
 
 .. figure:: images/terp_client_startup.png
    :align: center
+   
+   *Open ERP client at startup*
 
 Open a terminal window to start the client using the command openerp-client. When you start the
 client on the same Linux PC as the server you'll find that the default connection parameters will
@@ -435,7 +439,7 @@ and set the following field as needed:
 .. figure:: images/terp_client_server.png
    :align: center
 
-   *Dialog box for defining connection parameters to the server.*
+   *Dialog box for defining connection parameters to the server*
 
 It's possible to connect the server to the client using a secure protocol to prevent other network
 users from listening in, but the installation described here is for direct unencrypted connection.
@@ -494,11 +498,15 @@ you've just installed, so should connect directly at startup.
 
 	#. At a terminal window type :command:`start-openerp-web` to start the Open ERP Web server.
 
+.. _fig-webwel:
+
 .. figure:: images/web_welcome.png
    :align: center
 
+   *Open ERP web client at startup*
+   
 You can verify the installation by opening a web browser on the server and navigating to
-http://localhost:8080 to connect to eTiny as shown in the figure below. You can also test this from
+http://localhost:8080 to connect to eTiny as shown in the figure :ref:`fig-webwel`. You can also test this from
 another computer connected to the same network if you know the name or IP address of the server over
 the network – your browser should be set to http://<server_address>:8080 for this.
 

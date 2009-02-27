@@ -28,12 +28,14 @@ Use of Bills of Materials
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
 product. To illustrate the concept of specification you're going to work on a cabinet where the
-manufacturing plan is given by the figure below.
+manufacturing plan is given by the figure :ref:`fig-mrparm`.
+
+.. _fig-mrparm:
 
 .. figure:: images/mrp_armoire.png
    :align: center
 
-   *Plan of construction of a cabinet.*
+   *Plan of construction of a cabinet*
 
 The cabinet is assembled from raw materials and intermediate assemblies:
 
@@ -124,7 +126,7 @@ TAQ000        12                 Unit
 .. figure:: images/mrp_bom_tree.png
    :align: center
 
-   *Bill of Materials structure.*
+   *Bill of Materials structure*
 
 Use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materials --> New Bill of
 Materials` to define a new Bill of Materials.
@@ -140,7 +142,7 @@ Materials` to define a new Bill of Materials.
 .. figure:: images/mrp_bom.png
    :align: center
 
-   *Screen defining a Bill of Materials.*
+   *Screen defining a Bill of Materials*
 
 In the area below the Bill of Materials you should set the finished product, which will be
 manufactured or assembled. Once the product has been selected, Open ERP automatically completes the
@@ -167,7 +169,7 @@ change you can specify a revision number and some notes on the modifications you
 .. figure:: images/mrp_bom_revision.png
    :align: center
 
-   *Revisions of a Bill of Materials.*
+   *Revisions of a Bill of Materials*
 
 In the third tab, Properties, you can put a free text reference to a plan, a sequence number that is
 used to determine the priorities between specifications, dates between which the bill of materials
@@ -194,7 +196,7 @@ Multi-level Bills of Materials
 
 In Open ERP each line of a Bill of Materials may itself be a Bill of Materials. So it's possible to
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
-mrp_chest.png you could define the single Bill of Materials below:
+:ref:`fig-mrparm` you could define the single Bill of Materials below:
 
 ARM100 ; 1 ; Unit
 PANLAT ; 2 ; m2
@@ -306,7 +308,7 @@ it's been defined as multi-level.
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ARM100 cabinet in the way shown by the table arm100_phantom below,
+If you define the BoM for the ARM100 cabinet in the way shown by the table below,
 you'll get production orders of the
 
 ============  ========  ===============  ===========
@@ -434,7 +436,7 @@ Extended View to your user.
 .. figure:: images/sale_line_property.png
    :align: center
 
-   *Properties on a customer order line.*
+   *Properties on a customer order line*
 
 Example: Manufacturing in a batch or on a production line
 
@@ -481,7 +483,7 @@ described in the preceding chapter:
 .. figure:: images/mrp_auto.png
    :align: center
 
-   *Automatically suggesting the production orders.*
+   *Automatically suggesting the production orders*
 
 Clearly it's also possible to start production manually. To do this you can use the menu
 :menuselection:`Manufacturing --> Production Orders --> New Production Order`.
@@ -514,9 +516,9 @@ on the new database installed with the demonstration data. In the order you can 
 
 .. tip:: Demonstration data
 
-    To follow the workflow shown below well, it's important to keep the same quantities as in the
-    example and
-    start from a new database so that you don't run into exceptions from a lack of stock.
+    To closely follow the workflow shown below, you should keep the same quantities as in the
+    example and start from a new database so that you don't run into exceptions that would result
+    from a lack of stock.
 
 This case, more advanced, of handling problems of procurement, will be sorted out later in the
 chapter.
@@ -552,7 +554,7 @@ of the form.
 .. figure:: images/mrp_sale_process.png
    :align: center
 
-   *Process for handling Sales Order SO007.*
+   *Process for handling Sales Order SO007*
 
 Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All
 Schedulers`.
@@ -565,13 +567,15 @@ Producing an Intermediate Product
 
 To understand the implications of requirements calculation, you must know the configuration of the
 sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of
-Materials` to the right. You get the scheme show below which is the composition of the selected
-product.
+Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition 
+of the selected product.
+
+.. _fig-mrpbomtree:
 
 .. figure:: images/mrp_product_bom_tree.png
    :align: center
 
-   *Composition of product PC2 in the demonstration data.*
+   *Composition of product PC2 in the demonstration data*
 
 You can see that manufacturing the PC2 computer must be done in two steps:
 
@@ -586,7 +590,7 @@ list of orders to start and the estimated start date if the customer order date 
 .. figure:: images/mrp_production_list.png
    :align: center
 
-   *List of production orders.*
+   *List of production orders*
 
 You'll see the production order for CPU_GEN but not that for PC2 because that one depends on an
 intermediate product. Return to the production order for CPU_GEN and click below it. If there are
@@ -596,7 +600,7 @@ order number (in this example SO007).
 .. figure:: images/mrp_production_form.png
    :align: center
 
-   *The detail of a production order.*
+   *The detail of a production order*
 
 The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN,
 RAM. You can then confirm the production twice:
@@ -611,12 +615,14 @@ the cursor in the field Production Lot and press :guilabel:`<F1>` to create a ne
 reference, for example: MB1345678. The system may then show you a warning because this lot is not in
 stock, but you can ignore this message.
 
-The production order must be in the closed state as shown in the figure below.
+The production order must be in the closed state as shown in the figure :ref:`mrpprdfrm`.
+
+.. _fig-mrpprdfrm:
 
 .. figure:: images/mrp_production_form_end.png
    :align: center
 
-   *Production order at the end of the different steps.*
+   *Production order at the end of the different steps*
 
 Manufacture of finished product
 --------------------------------
@@ -626,12 +632,14 @@ manufacture of the computer PC2 using the order created earlier. So return to th
 production orders to start :menuselection:`Manufacturing --> Production Orders --> Production Orders
 to start`.
 
-You'll now find the computer PC2 which has been sold to the customer, as shown in the figure below.
+You'll now find the computer PC2 which has been sold to the customer, as shown in the figure :ref:`fig-mrpprdlis`.
+
+.. _fig-mrpprdlis:
 
 .. figure:: images/mrp_production_list_end.png
    :align: center
 
-   *List of production orders.*
+   *List of production orders*
 
 Just as for product CPU_GEN, confirm the production order on two dates: start of production and end
 of production.
@@ -661,12 +669,14 @@ Delivery of product to the customer
 When the products have been manufactured, the storesperson automaticallys finds the order in his
 list of items to do. To see the items waiting for delivery, use the menu :menuselection:`Stock
 Management --> Outgoing Products --> Available Packings`. You'll find there the lists of packing to
-do, as shown in the figure below.
+do, as shown in the figure :ref:`fig-mrppacko`.
+
+.. _fig-mrppacko:
 
 .. figure:: images/mrp_packing_out.png
    :align: center
 
-   *List of packings to do.*
+   *List of packings to do*
 
 The packing orders are treated by priority of leaving so the storesperson must begin with the orders
 at the top of the list. Confirm that your packing list has been create by looking for the customer
@@ -701,7 +711,7 @@ invoice for each delivery individually.
 .. figure:: images/mrp_picking_invoice_form.png
    :align: center
 
-   *Invoicing of deliveries.*
+   *Invoicing of deliveries*
 
 Invoices are then produced automatically in the draft state by Open ERP and the orders of deliveries
 are eventually added if they were configured on the order. You can also modify the invoice before
@@ -710,7 +720,7 @@ approving them finally.
 .. figure:: images/mrp_invoice_list.png
    :align: center
 
-   *List of invoices generated by the system based on deliveries.*
+   *List of invoices generated by the system based on deliveries*
 
 Once you have reviewed the different invoices that were generated, you can confirm them one by one
 or all at once from the actions available to you. Then print the invoices using the multiple print
@@ -733,17 +743,21 @@ following actions:
 * Downstream traceability: follow the production chain to find the final customer of specified
   components.
 
-Examples of the two traceability types are given in the by the following figures:
+Examples of the two traceability types are given in the by the figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
+
+.. _fig-mrptracu:
 
 .. figure:: images/mrp_tracability_upstream.png
    :align: center
 
-   *Upstream traceability from customer to suppliers.*
+   *Upstream traceability from customer to suppliers*
+
+.. _fig-mrptracd:
 
 .. figure:: images/mrp_tracability_downstream.png
    :align: center
 
-   *Downstream traceability from supplier to customers.*
+   *Downstream traceability from supplier to customers*
 
 .. index:: Manufacturing Order
 .. index:: Production Order
@@ -753,19 +767,23 @@ Production order in detail
 
 In this section production orders are detailed. To open a production order, use the menu
 :menuselection:`Manufacturing --> Production Orders --> New Product Order`. You get a blank for for
-encoding a new production order as shown in the figure below.
+encoding a new production order as shown in the figure :ref:`fig-mrpprdnew`.
+
+.. _fig-mrpprdnew:
 
 .. figure:: images/mrp_production_new.png
    :align: center
 
-   *New production order.*
+   *New production order*
 
-The production order follows the process given by the figure below.
+The production order follows the process given by the figure :ref:`fig-mrpprdproc`.
+
+.. fig-mrpprdproc:
 
 .. figure:: images/mrp_production_processus.png
    :align: center
 
-   *Process for handling a production order.*
+   *Process for handling a production order*
 
 The date fields, priority and reference, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The Unit of Measure by
@@ -828,7 +846,7 @@ resource called 'Run MRP Scheduler'.
 .. figure:: images/stock_cron.png
    :align: center
 
-   *Configuring the start time for calculating requirements.*
+   *Configuring the start time for calculating requirements*
 
 .. tip::  Calculating requirements / scheduling
 

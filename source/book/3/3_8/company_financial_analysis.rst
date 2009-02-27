@@ -74,11 +74,10 @@ To do a temporal analysis of your indicators, you must install the module
 Once this module is installed, you can click on a financial indicator to get a graph of its
 evolution in time.
 
-
 .. figure::  images/account_report_history.png
    :align: center
 
-   *History of an accounting indicator.*
+   *History of an accounting indicator*
 
 Defining your own indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -86,11 +85,10 @@ Defining your own indicators
 You can define your own indicators in Open ERP using the menu :menuselection:`Financial Management
 --> Configuration --> Custom Reporting --> New Reporting Item Formula`.
 
-
 .. figure::  images/account_indicator_new.png
    :align: center
 
-   *Defining a new indicator.*
+   *Defining a new indicator*
 
 You should make sure that the accounts that you base indicators on are given unique account codes,
 because codes are used in the creation of formulae. Create a formula using the syntax indicated in
@@ -161,15 +159,17 @@ represented in the budget. Once the three tabs are completed you can save your b
 	In the web client, click the checkbox alongside their name in the list view.
 	In the GTK client, click on each element with the mouse, while holding the Ctrl button down.
 
+.. _fig-accbudg:
+
 .. figure::  images/account_budget.png
    :align: center
 
-   *Printing a budget.*
+   *Printing a budget*
 
 To print a budget and make calculations of expenditure to budget use the menu
 :menuselection:`Financial Management --> Reporting --> Print Budgets`. Open ERP then gives you a
 list of available budgets. Select one or more budgets and then click :guilabel:`Print` to configure
-the report. The following figure gives an example of a budget produced by Open ERP.
+the report. The figure :ref:`fig-accbudg` gives an example of a budget produced by Open ERP.
 
 The Accounting Dashboard
 ------------------------
@@ -177,7 +177,7 @@ The Accounting Dashboard
 .. figure::  images/account_board.png
    :align: center
 
-   *Accounting Dashboard.*
+   *Accounting Dashboard*
 
 .. index::
    pair: module; board_account

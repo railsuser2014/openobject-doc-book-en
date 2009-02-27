@@ -49,7 +49,7 @@ that's important to you.
 .. figure::  images/csv_column_select.png
    :align: center
 
-   *Selecting fields to import using a CSV file.*
+   *Selecting fields to import using a CSV file*
 
 Use the field names as the column names in the first line of your CSV file, applying one field per
 column. If your CSV file has these names in the first line then when you import your CSV file,
@@ -85,19 +85,19 @@ Have a look at the screenshots below to see the differences.
 .. figure::  images/csv_many2one.png
    :align: center
 
-   *A many-to-one field: a salesperson linked to a partner.*
+   *A many-to-one field: a salesperson linked to a partner*
 
 
 .. figure::  images/csv_many2many.png
    :align: center
 
-   *A many-to-many field: partner categories.*
+   *A many-to-many field: partner categories*
 
 
 .. figure::  images/csv_one2many.png
    :align: center
 
-   *A one-to-many field: partner contacts.*
+   *A one-to-many field: partner contacts*
 
 All of the other fields are coded in the CSV file as just one field in each column.
 
@@ -318,17 +318,16 @@ partner using the web client:
 
 	#. Click :guilabel:`Export` to bring up the :guilabel:`Export Data` dialog box.
 
-	#. All of the fields available are shown in the All fields section to the left – that corresponds
+	#. All of the fields available are shown in the :guilabel:`All fields` section to the left – that corresponds
 	   to all of the fields visible on the form, including all of the fields that come from links to other
 	   tables in the underlying database.
 
 	#. Select the fields that interest you by adding them to the :guilabel:`Fields to Export` section
 	   using the :guilabel:`Add` button.
 
-	#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have an
+	#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have the
 	   option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
 	   similar to the one below.
-
 
 .. csv-table::  **Partner data in the exported file**
    :header: "","Column A","Column B","Column C","Column D"

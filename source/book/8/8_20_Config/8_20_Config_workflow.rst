@@ -9,16 +9,18 @@ define the path that any Open ERP object (such as an order) must follow dependi
 (for example an order over a certain value must be approved by a sales director, otherwise by any
 sales person, before the delivery can be triggered).
 
-The figure below shows the standard workflow for an order. You can show it from the GTK client
+The figure :ref:`fig-sflow` shows the standard workflow for an order. You can show it from the GTK client
 starting with :menuselection:`Sales Management --> Sales Order --> All Sales Order`. Select an
 order, then go to the top menu :menuselection:`Plugins --> Execute a plugin --> Print Workflow` to
 show the menu below. They're designed really for administrators, so aren't available through the web
 client.
 
+.. _fig-sflow:
+
 .. figure::  images/sales_workflow.png
    :align: center
 
-   *Workflow for order SO005.*
+   *Workflow for order SO005*
 
 Defining workflows
 ------------------
@@ -33,7 +35,7 @@ process named sale.order.basic. All of the nodes appearing in the graph are list
 .. figure::  images/sales_workflow_spec.png
    :align: center
 
-   *Definition of the workflow for a sales order.*
+   *Definition of the workflow for a sales order*
 
 You can also configure the workflows by adding new activities and transitions between activities or
 by modifying the conditions that control the existing transitions.

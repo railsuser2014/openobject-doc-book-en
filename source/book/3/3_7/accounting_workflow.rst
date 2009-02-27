@@ -6,12 +6,14 @@
 Accounting workflow and the automatic generation of invoices
 ============================================================
 
-The chart below shows the financial workflow followed by each invoice.
+The chart :ref:`fig-accfl` shows the financial workflow followed by each invoice.
+
+.. _fig-accfl:
 
 .. figure::  images/account_flow.png
    :align: center
 
-   *Accounting workflow for invoicing and payment.*
+   *Accounting workflow for invoicing and payment*
 
 In general, when you use all of Open ERP's functionality, invoices don't need to be entered
 manually. Draft invoices are generated automatically from other documents such as Purchase Orders.

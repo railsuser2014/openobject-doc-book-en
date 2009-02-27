@@ -33,7 +33,7 @@ product.
 .. figure:: images/stock_product.png
    :align: center
 
-   *Definition of a new product.*
+   *Definition of a new product*
 
 Three fields are important for stock management when you're configuring a new product:
 
@@ -77,19 +77,23 @@ You find a mix of these two modes used for the different final and intermediate 
 industries. The procurement method shown on the product form is a default value for the order,
 enabling the salesperson to choose the best mode for fulfilling a particular order.
 
-The figures below show the change of stock levels for a product managed Make to Order and one
+The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for a product managed Make to Order and one
 managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Moves` report,
 available from the product form.
+
+.. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
    :align: center
 
-   *Change in stock for a product managed as :guilabel:`Make to Stock`.*
+   *Change in stock for a product managed as :guilabel:`Make to Stock`*
+
+.. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
    :align: center
 
-   *Change in stock for a product managed as :guilabel:`Make to Order`.*
+   *Change in stock for a product managed as :guilabel:`Make to Order`*
 
 .. note:: Logistical Methods
 
@@ -120,12 +124,14 @@ Open ERP manages both stockable products and services. A service bought from a s
 
 The following illustrates the different cases for automatic restocking.
 
+.. _fig-stflow:
+
 .. figure:: images/stock_flow.png
    :align: center
 
-   *Workflow for automatic restocking, depending on the configuration of the product.*
+   *Workflow for automatic restocking, depending on the configuration of the product*
 
-The table below shows all possible cases for the figure.
+The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
 ================== ===================== =====================
 Mode of restocking Make                  Buy

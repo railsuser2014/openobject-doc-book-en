@@ -19,7 +19,7 @@ Installation and Configuration
 .. figure:: images/ch1_outline.png
    :align: center
 
-   *Your options for reading this section of the book.*
+   *Options for reading this part of the book*
 
 This chapter, :ref:`ch-inst`, focuses on the installation of Open ERP so that you can begin to familiarize
 yourselves with its use. If you're not a systems administrator, or if you've already installed

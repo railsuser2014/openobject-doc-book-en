@@ -51,10 +51,11 @@ An Open ERP system is formed by three main components:
   connect to Open ERP from standard web browsers and is not needed when you connect using a GTK
   client.
 
-
 .. figure:: images/terp_arch_1.png
    :align: center
    :scale: 95
+   
+   *The architecture of Open ERP*
 
 .. note::   Terminology: client-web – server or client?
 

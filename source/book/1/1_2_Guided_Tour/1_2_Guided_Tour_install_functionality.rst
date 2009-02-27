@@ -92,7 +92,7 @@ functionality. Click :guilabel:`Install` and the status of the module changes to
 .. figure:: images/install_product_module.png
    :align: center
 
-   *Installation of the :mod:`product` module.*
+   *Installation of the :mod:`product` module*
 
 
 .. tip::  Technical Guide

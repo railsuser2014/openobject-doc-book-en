@@ -32,7 +32,7 @@ organization your documents efficiently.
 .. figure::  images/document_shared_structure.png
    :align: center
 
-   *Substructure common to all projects.*
+   *Substructure common to all projects*
 
 .. tip:: Mapping
 

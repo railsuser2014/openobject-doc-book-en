@@ -26,9 +26,9 @@ make it editable by clicking the  *Edit*  button to the upper left of the form.
 
 Change the following:
 
-*  *Name* : \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Name` : \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  *Contact Name* : \ ``George Turnbull``\  .
+*  :guilabel:`Contact Name` : \ ``George Turnbull``\  .
 
 and any other fields you like, such as the address and phone numbers, then :guilabel:`Save`. This
 adds one Contact to the Partner, which is sufficient for the example.
@@ -174,6 +174,8 @@ Now create a new product:
         .. figure::  images/product.png
            :align: center
            :scale: 95
+           
+           *Product Form*
 
 	#.	Click on the :guilabel:`Procurement` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
 		field and \ ``132.50``\  into the :guilabel:`List Price` field,
@@ -272,12 +274,14 @@ defines the different time periods available for accounting transactions. To do 
 
 	#.	Then click on one of the buttons :guilabel:`Create Monthly Periods` or :menuselection:`Create 3
 		Months Periods` to create an appropriate set of periods for the fiscal year, as shown in the figure
-		below. :guilabel:`Save` this.
+		:ref:`fig-deffisc`. :guilabel:`Save` this.
+
+.. _fig-deffisc:
 
 .. figure::  images/def_fiscal_year_tab.png
    :align: center
 
-   *Defining a fiscal year and the accounting periods within it.*
+   *Defining a fiscal year and the accounting periods within it*
 
 Click :menuselection:`Financial Management --> Charts --> Charts of Accounts` and then click
 :guilabel:`Open Charts` on the :menuselection:`Fiscal Year` that you've just created to see a

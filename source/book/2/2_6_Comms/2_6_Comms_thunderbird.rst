@@ -58,7 +58,7 @@ A configuration window appears enabling you to enter configuration data about yo
 .. figure::  images/thunderbird_config.png
    :align: center
 
-   *Configuration for accessing Open ERP from Thunderbird.*
+   *Configuration for accessing Open ERP from Thunderbird*
 
 To archive an email in Open ERP from Thunderbird select the email and click on the icon
 :guilabel:`Archive in Tiny`. Alternatively you could right-click the mouse: either opens a search
@@ -70,7 +70,7 @@ can select a partner, a task, a project, an analytical account, or any other obj
 .. figure::  images/thunderbird_selection.png
    :align: center
 
-   *Selecting Open ERP objects from Thunderbird.*
+   *Selecting Open ERP objects from Thunderbird*
 
 .. tip:: Document Management
 
@@ -93,7 +93,7 @@ create one on the fly simply by using the information contained in the email and
 .. figure::  images/thunderbird_creation.png
    :align: center
 
-   *Creating a contact on the fly from Thunderbird.*
+   *Creating a contact on the fly from Thunderbird*
 
 To access archived data from different documents in Open ERP you can use the :guilabel:`Email
 Thunderbird` interface that appears over Open ERP documents.

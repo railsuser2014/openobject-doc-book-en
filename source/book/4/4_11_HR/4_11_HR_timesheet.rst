@@ -17,12 +17,14 @@ the time worked on client or internal projects to make up the full number of hou
 day. If an account isn't in the system then the time is added to the hours that haven't been
 assigned for the day.
 
+.. _fig-servtimlis:
+
 .. figure::  images/service_timesheet_list.png
    :align: center
 
-   *Timesheet for a working day.*
+   *Timesheet for a working day*
 
-The figure gives an example of a timesheet for an employee.
+The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee.
 
 .. note:: Don't confuse timesheets and attendence compliance
 
@@ -195,7 +197,7 @@ forgotten to encode her timesheet on a certain day.
 .. figure::  images/service_timesheet_all.png
    :align: center
 
-   *Employee's monthly summary timesheet.*
+   *Employee's monthly summary timesheet*
 
 Many graphs are available through the menus :menuselection:`Human Resources --> Reporting --> This
 Month / All Months`, for example:
@@ -211,7 +213,7 @@ Month / All Months`, for example:
 .. figure::  images/service_timesheet_graph.png
    :align: center
 
-   *Chart of timesheet by account.*
+   *Chart of timesheet by account*
 
 The data making up these graphs can be varied using the filters available in the upper part of the
 screen. If you want to get more exact figures, switch to the list view.
@@ -330,7 +332,7 @@ encoding. To set up a structure for control using timesheets you should install 
 .. figure::  images/timesheet_flow.png
    :align: center
 
-   *Process of approving a timesheet.*
+   *Process of approving a timesheet*
 
 This module supplies a new screen enabling you to manage timesheets by period. Timesheet entries are
 made by employees each day. At the end of the week, employees validate their week's sheet and it's
@@ -343,7 +345,7 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 .. figure::  images/service_timesheet_sheet_form.png
    :align: center
 
-   *Form for entering timesheet data.*
+   *Form for entering timesheet data*
 
 In the upper part of the screen the user starts with the sign-in and sign-out times. The system
 enables the control of attendance day by day. The two buttons Sign in and Sign out enable the
@@ -361,7 +363,7 @@ second tab to detect the days or the entries that haven't been correctly coded i
 .. figure::  images/timesheet_sheet_hours.png
    :align: center
 
-   *Detail of hours worked by day for an employee.*
+   *Detail of hours worked by day for an employee*
 
 The third tab :guilabel:`By account` shows the time worked on all the different projects. That enables you
 to step back to see an overview of the time an employee has worked spread over different projects.

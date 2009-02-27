@@ -58,14 +58,16 @@ Price request from the supplier
 
 To enter data for a new supplier price request, use the menu :menuselection:`Purchase Management -->
 New Purchase Order`. Open ERP opens a blank purchase form that you use for requesting prices from a
-supplier. This is shown in the figure below. If the price request came from an automatic procurement
+supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement
 created by Open ERP you'll find in the :guilabel:`Origin` field a reference to the document that
 generated the request.
+
+.. _fig-pfrm:
 
 .. figure:: images/purchase_form.png
    :align: center
 
-   *Data entry for a supplier order.*
+   *Data entry for a supplier order*
 
 .. index::
    pair: module; warning
@@ -95,7 +97,7 @@ Once the main body of the purchase order has been completed you can enter the pr
 .. figure:: images/purchase_line_form.png
    :align: center
 
-   *Order line on a  supplier order.*
+   *Order line on a  supplier order*
 
 When you've completed the product, Open ERP automatically completes the other fields on the form:
 
@@ -149,7 +151,7 @@ the supplier. You can set a note for the attention of the supplier in the form's
 .. figure:: images/purchase_quotation.png
    :align: center
 
-   *Printing the supplier price quotation.*
+   *Printing the supplier price quotation*
 
 Then leave the document in that state. When you receive the response from the supplier, use the menu
 :menuselection:`Purchase Management --> Supplier Orders --> My Price Requests`. Then select the
@@ -173,7 +175,7 @@ Supplier`.
 .. figure:: images/purchase_process.png
    :align: center
 
-   *Supplier order process.*
+   *Supplier order process*
 
 .. index::
    pair: module; purchase_approve
@@ -211,7 +213,7 @@ receipt and invoicing if you return to the list of orders.
 .. figure:: images/purchase_list.png
    :align: center
 
-   *List of open orders, and their receipt and invoice status.*
+   *List of open orders, and their receipt and invoice status*
 
 Control of invoicing
 --------------------
@@ -231,7 +233,7 @@ The mode of invoicing control is set in the second tab of the purchase order in 
 .. figure:: images/purchase_form_tab2.png
    :align: center
 
-   *Supplier order, invoice control.*
+   *Supplier order, invoice control*
 
 .. tip:: Default value
 
@@ -312,7 +314,7 @@ a new menu in the Purchase management, Tenders. You will then be able to define 
 .. figure:: images/purchase_tender.png
    :align: center
 
-   *Defining a tender.*
+   *Defining a tender*
 
 To enter data for a new tender, use the menu :menuselection:`Purchase Management --> Purchase
 Tenders --> New Purchase Tenders`. Open ERP then opens a new blank tender form. The reference number
@@ -351,7 +353,7 @@ everything directly related to the received price. You could include such elemen
 Standard Price
 --------------
 
-The mode of price management for the product is shown in the third tab on the product form :guilabel:`Price`.
+The mode of price management for the product is shown in the third tab :guilabel:`Price` on the product form.
 On each product you can select if you want to work in standard price or on weighted average.
 
 .. tip:: Simplified view
@@ -416,7 +418,7 @@ delivery to the different received products.
 .. figure:: images/purchase_pmp.png
    :align: center
 
-   *Goods receipt of products managed in weighted average.*
+   *Goods receipt of products managed in weighted average*
 
 Once the receipt has been confirmed, the price is automatically recalculated and entered on the
 product form.
@@ -442,7 +444,7 @@ Purchases by product`.
 .. figure:: images/purchase_report.png
    :align: center
 
-   *Analysis of purchases over the month by product.*
+   *Analysis of purchases over the month by product*
 
 This analysis carries on the supplier orders and not on the invoices or the quantities effectively
 received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
@@ -467,7 +469,7 @@ then create a menu configuration for managing supplier complaints.
 .. figure:: images/crm_config.png
    :align: center
 
-   *Selection of the management of complaints in the CRM installation.*
+   *Selection of the management of complaints in the CRM installation*
 
 Once the module is installed you can use the menu :menuselection:`CRM & SRM --> After Sales Service
 --> Complaints --> New Supplier Complaint`.
@@ -475,7 +477,7 @@ Once the module is installed you can use the menu :menuselection:`CRM & SRM --> 
 .. figure:: images/crm_complaints.png
    :align: center
 
-   *Data entry screen for a supplier complaint.*
+   *Data entry screen for a supplier complaint*
 
 The CRM module has many reports predefined. You can analyse:
 

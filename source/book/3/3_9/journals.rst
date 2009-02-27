@@ -17,13 +17,12 @@ To view, edit or create new journals use the menu :menuselection:`Financial Mana
 Configuration --> Journals --> Definition of Journals`.
 
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the
-*Active*  checkbox for that.
-
+:guilabel:`Active` checkbox for that.
 
 .. figure::  images/account_journal_form.png
    :align: center
 
-   *Definition of an accounting journal.*
+   *Definition of an accounting journal*
 
 You have to associate a view with each journal. The journal view indicates the fields that must be
 visible and required to enter accounting data in that journal. The view determines both the order of

@@ -55,7 +55,7 @@ Creating a chart of accounts
 .. figure::  images/account_form.png
    :align: center
 
-   *Definition of an account.*
+   *Definition of an account*
 
 To add, modify or delete existing accounts, use the menu :menuselection:`Financial Management -->
 Configuration --> General Accounts --> Accounts Definitions`.

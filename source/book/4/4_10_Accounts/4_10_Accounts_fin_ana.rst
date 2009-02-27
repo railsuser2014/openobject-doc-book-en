@@ -30,7 +30,7 @@ Analytic Balance
    :align: center
 
    *The analytic balance presents the breakdown of each project by the nature of the operations
-   given by the financial accounts.*
+   given by the financial accounts*
 
 The analytic balance is a report that relates the analytic accounts to the general accounts. It
 gives, for a given period, the balances of the analytic accounts broken down by general account.
@@ -49,7 +49,7 @@ broken down by the selected analytic accounts.
    :align: center
 
    *The inverted analytic balance indicates the breakdown of operations by the nature of the
-   different the analytic accounts (projects).*
+   different the analytic accounts (projects)*
 
 This enables you to analyze your costs by general account. For example, if you examine your general
 account for staff salaries you can obtain all your salary costs broken down by the different
@@ -68,7 +68,7 @@ out on one or several projects.
 .. figure::  images/analytic_cost_ledger.png
    :align: center
 
-   *The analytic cost ledger gives a detailed history of the entries in an analytic account.*
+   *The analytic cost ledger gives a detailed history of the entries in an analytic account*
 
 The cost ledger (quantities only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,7 +79,7 @@ Only quantities are reported for this analysis, not costs and revenues.
 .. figure::  images/analytic_cost_ledger_quantity.png
    :align: center
 
-   *The cost ledger (quantities only) gives a history of an analytic account.*
+   *The cost ledger (quantities only) gives a history of an analytic account*
 
 The report is frequently used to print the number of hours worked on a project, without showing the
 costs and revenues. So you can show it to a client as a record of the hours worked on a particular
@@ -129,12 +129,14 @@ form:
 
 * statistics on each user in the :guilabel:`Stats by user` tab.
 
+.. _fig-mgtindic:
+
 .. figure::  images/account_analytic_analysis.png
    :align: center
 
-   *Management indicators for an analytic account.*
+   *Management indicators for an analytic account*
 
-The figure shows all of the management indicators.
+The figure :ref:`fig-mgtindic` shows all of the management indicators.
 
 These indicators enable you to quickly see the following elements:
 
@@ -149,7 +151,7 @@ These indicators enable you to quickly see the following elements:
 .. figure::  images/account_analytic_analysis_month.png
    :align: center
 
-   *Breakdown of monthly costs for an analytic account.*
+   *Breakdown of monthly costs for an analytic account*
 
 The real revenue is given by the amount invoiced to the client. The theoretical revenue is given by
 the sale price of different project costs which could be invoiced to the client. These give
@@ -166,7 +168,7 @@ To give project managers a direct view of their different projects, the
 .. figure::  images/account_analytic_project_menu.png
    :align: center
 
-   *Analytic accounts in Project Management.*
+   *Analytic accounts in Project Management*
 
 These different menus give quick views that are very useful for live projects. For each project you
 can check if there are uninvoiced services, and see the last invoice date and the last uninvoiced

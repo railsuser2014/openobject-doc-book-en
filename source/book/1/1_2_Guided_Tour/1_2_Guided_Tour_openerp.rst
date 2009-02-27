@@ -35,8 +35,7 @@ above it.
    :align: center
    :scale: 95
 
-   *Project Dashboard.*
-
+   *Project Dashboard*
 
 Users' home pages are automatically reassigned during the creation or upgrading of a database. It's
 usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the
@@ -86,11 +85,10 @@ shows only the first few partners (the web client defaults to \ ``20``\  , but y
 maximum of \ ``100``\   on a page). If you want to display other records you can search for them or
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
-
 .. figure:: images/partner_search_tab.png
    :align: center
 
-   *Standard partner search.*
+   *Standard partner search*
 
 .. note:: List limits
 
@@ -208,7 +206,7 @@ and you'll get the Partner form rather than the Sales Order form.
 .. figure:: images/familiarization_sale_partner.png
    :align: center
 
-   *Links for a partner appear in an order form.*
+   *Links for a partner appear in an order form*
 
 Before moving on to the next module, take a quick look into the :menuselection:`Partners -->
 Configuration`  menu, particularly :menuselection:`Categories`  and  :menuselection:`Localisation`.
@@ -528,7 +526,7 @@ needs.
 .. figure:: images/purchase_workflow.png
    :align: center
 
-   *Purchase order workflow.*
+   *Purchase order workflow*
 
 Project Management
 ------------------
@@ -545,7 +543,7 @@ representation of the plan.
 .. figure:: images/familiarization_project_gantt.png
    :align: center
 
-   *Project Planning.*
+   *Project Planning*
 
 You can run projects related to Services or Support, Production or Development – it's a universal
 module for all enterprise needs.

@@ -96,7 +96,7 @@ A new invoice form opens for entering information.
 .. figure::  images/account_invoice_new.png
    :align: center
 
-   *Entering a new invoice.*
+   *Entering a new invoice*
 
 The document is composed of three parts:
 
@@ -189,7 +189,7 @@ following fields are then completed automatically:
 .. tip::  Managing the price with tax included
 
 	By default, Open ERP invoices and processes the price without taxes – they're managed as a
-	separate figure.
+	separate amount.
 	If you want to have invoices provided with tax included you can install the module
 	:mod:`account_tax_include`.
 
@@ -242,7 +242,7 @@ calculated for different tax rates used in the invoice.
 .. figure::  images/account_invoice_tva.png
    :align: center
 
-   *Detail of tax charges on an invoice.*
+   *Detail of tax charges on an invoice*
 
 Before approving the invoice you can modify the date and the accounting period, which are entered by
 default as today's date. These fields are found on the second tab :guilabel:`Other Information`.
@@ -300,7 +300,7 @@ Take the case of the following product
 
 	The DEEE tax (disposal of electronic and electrical equipment) is an ecological tax that was
 	imposed in France from 2007. It's applied to batteries to finance their recycling and is a fixed
-	sum that's applied to the before-tax figure on the invoice
+	sum that's applied to the before-tax amount on the invoice
 
 If you trade with a company in your own country, and your country has a DEEE-type tax, the
 applicable taxes for this invoice will be:

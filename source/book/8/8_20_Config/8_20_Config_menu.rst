@@ -59,7 +59,7 @@ original.
 .. figure::  images/new_menu.png
    :align: center
 
-   *Menu enabling you to change your own password, accessible to all users.*
+   *Menu enabling you to change your own password, accessible to all users*
 
 To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleting what's there and
 replacing it with another menu that everyone can see, such as :guilabel:`Tools` or :guilabel:`Human
@@ -124,7 +124,7 @@ different menu entries for the two fields :guilabel:`Home Action` and :guilabel:
 .. figure::  images/new_home.png
    :align: center
 
-   *Selecting a new welcome page.*
+   *Selecting a new welcome page*
 
 The :guilabel:`Home Action` is the menu item that is automatically opened when you first sign on,
 and is also reached when you click the :guilabel:`Home` link in the top right toolbar of the web
@@ -166,7 +166,7 @@ entering new documents.
 .. figure::  images/set_default.png
    :align: center
 
-   *Inserting a new default value.*
+   *Inserting a new default value*
 
 To check this new configuration, open a new partner form: the field :guilabel:`Country` should now
 contain the entry \ ``New Zealand``\  .
@@ -254,7 +254,7 @@ CSV form.
 .. figure::  images/csv_transl.png
    :align: center
 
-   *CSV translation file with the translation superimposed.*
+   *CSV translation file with the translation superimposed*
 
 The file contains five columns: :guilabel:`type` , :guilabel:`name`, :guilabel:`res_id`,
 :guilabel:`src`, and :guilabel:`value`. You have to ensure that the first line, which specifies
@@ -269,8 +269,8 @@ English translation will automatically be used on the the form you see.
    file.
    Which line should you modify?
    Refer to the two columns type (column A) and name (column B).
-   Some lines have the name *ir.ui.menu* which shows that this is a menu entry.
-   Others have a type of *selection*, which indicates you that you'd see this entry in a drop-down
+   Some lines have the name :guilabel:`ir.ui.menu` which shows that this is a menu entry.
+   Others have a type of :guilabel:`selection`, which indicates you that you'd see this entry in a drop-down
    menu.
 
 You should then load the new file into your Open ERP system using the menu

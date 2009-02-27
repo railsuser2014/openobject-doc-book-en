@@ -28,7 +28,7 @@ A warehouse is defined by a link between three locations:
     .. figure:: images/stock_warehouse.png
        :align: center
 
-    *Warehouse parameters.*
+    *Warehouse parameters*
 
 You can also set an address for the warehouse. This address should ideally be an address for your
 company. Once the warehouse has been defined it can be used in:
@@ -70,7 +70,7 @@ of virtual stock to the maximum level given in the rule.
 .. figure:: images/stock_min_rule.png
    :align: center
 
-   *List of minimum stock rules.*
+   *List of minimum stock rules*
 
 .. tip:: Conflict resolution
 

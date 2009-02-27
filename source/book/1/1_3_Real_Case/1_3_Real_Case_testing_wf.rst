@@ -125,12 +125,14 @@ Alternatively you could click the top-level \ ``Locations``\   line to highlight
 ``Locations``\   text itself), and then click the :guilabel:`Print` button to the top right of the
 form to test the available different reports (such as :guilabel:`Lots by Location`). You'll see that you've
 now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \
-``-10``\   pieces in the location \ ``Suppliers``\   as shown in the next Figure.
+``-10``\   pieces in the location \ ``Suppliers``\   as shown in the figure :ref:`fig-lotsbyloc`.
+
+.. _fig-lotsbyloc:
 
 .. figure::  images/lots_by_location_pdf.png
    :align: center
 
-   *List of products and their stock levels.*
+   *List of products and their stock levels*
 
 .. note:: Returning to Open ERP after printing PDF reports
 
@@ -155,7 +157,7 @@ now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \
 	Because of this you can carry out various analyses of stock levels in your warehouse,
 	along with the corresponding levels in virtual locations at your supplier.
 	Supplier locations show negative levels once you've received goods in your company, as you can see
-	in the Figure.
+	in the figure :ref:`lotsbyloc`.
 
 Control of purchase invoices
 ----------------------------
@@ -232,6 +234,8 @@ menu :menuselection:`Sales Management --> Sales Order` which creates a new order
 
 	        .. figure::  images/order.png
         	   :align: center
+        	   
+        	   *Sales Order Form*
 
 	#. Click the :guilabel:`Save Parent and Create new record` icon to the right of the
 		:guilabel:`Sales Order Lines` field. It saves the main order form and becomes a new
@@ -385,12 +389,10 @@ Open Customer Invoices`, click the name of the invoice that you want to mark as 
 .. figure::  images/familiarization_invoice.png
    :align: center
 
-   *Screen showing the invoice to be paid.*
+   *Invoice Form*
 
 Check your Chart of Accounts as before to see that you now have a healthy bank balance in the \
 ``Petty Cash``\   account.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

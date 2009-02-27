@@ -148,7 +148,7 @@ the level of detail which is reported on the invoice, such as the date and detai
 .. figure::  images/service_timesheet_invoice.png
    :align: center
 
-   *Screen for invoicing services.*
+   *Screen for invoicing services*
 
 .. index::
    pair: module; account_analytic_analysis

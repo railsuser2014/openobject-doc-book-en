@@ -118,8 +118,8 @@ tax cases that you won't link to Tax objects (similar to General Account \ ``Vie
 to organize the tree structure.
 
 To view the structure that you've constructed you can use the menu :menuselection:`Financial
-Management --> Periodical Processing --> Taxes`. This tree view reflects the structure of the Tax
-Cases and shows the current tax situation.
+Management --> Periodical Processing --> Taxes`. This tree view reflects the structure of the 
+:guilabel:`Tax Cases` and shows the current tax situation.
 
 Tax objects
 ^^^^^^^^^^^
@@ -338,11 +338,10 @@ following reports:
 
 * journal grouped by account.
 
-
 .. figure::  images/account_journal_print.png
    :align: center
 
-   *Printing a journal.*
+   *Printing a journal*
 
 Tax declaration
 ---------------
@@ -360,7 +359,7 @@ declaration but also all the other taxes can be calculated (such as the French D
 .. figure::  images/account_tax_chart.png
    :align: center
 
-   *Example of a Belgian TVA (VAT) declaration.*
+   *Example of a Belgian TVA (VAT) declaration*
 
 .. index::
    single: TVA

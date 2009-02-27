@@ -5,26 +5,32 @@ Managing Contacts
 .. index::
    pair: module; base_contact
 
-The two figures below show the UML classes with and without the :mod:`base_contact` module.
+The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show the UML classes with and without the :mod:`base_contact` module.
+
+.. _fig-crmconw:
 
 .. figure:: images/crm_contact_with.png
    :align: center
 
-   *UML class diagram with base_contact.*
+   *UML class diagram with :mod:`base_contact`*
+
+.. _fig-crmcono:
 
 .. figure:: images/crm_contact_without.png
    :align: center
 
-   *UML class diagram without base_contact.*
+   *UML class diagram without :mod:`base_contact`*
 
 A concrete example will illustrate the concept of multiple relationships between contacts and
-partners (companies)  The figure below shows two companies each having several addresses (places of
+partners (companies)  The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
 business) and several contacts attached to these addresses.
+
+.. _fig-crmcont:
 
 .. figure:: images/crm_contact_exemple.png
    :align: center
 
-   *Example of a structure with management of partners and contacts.*
+   *Example of a structure with management of partners and contacts*
 
 In this example you'll find the following elements:
 
@@ -59,7 +65,7 @@ email.
 .. figure:: images/crm_partner_contact.png
    :align: center
 
-   *A partner form with the :mod:`base_contact` module installed.*
+   *A partner form with the :mod:`base_contact` module installed*
 
 If you click on the line you can get more detail about the function (such as start date, end date,
 and fax) or enter into the contact form (such as personal phone, different posts occupied, and
@@ -68,12 +74,12 @@ personal blog).
 .. figure:: images/crm_partner_poste.png
    :align: center
 
-   *Detail of a post occupied by a contact at a partner.*
+   *Detail of a post occupied by a contact at a partner*
 
 .. figure:: images/crm_partner_contacts.png
    :align: center
 
-   *Detail of a contact form for someone occupying several posts.*
+   *Detail of a contact form for someone occupying several posts*
 
 Partner management is found in the Open ERP base modules. To manager partner relations you must
 install the CRM modules. Then start by installing a CRM profile and configure the system to meet
@@ -86,7 +92,7 @@ the CRM module if your requirements are limited to customer relationships.
 .. figure:: images/crm_db_init.png
    :align: center
 
-   *Creating a new database.*
+   *Creating a new database*
 
 Once the database is installed, Open ERP proposes that you configure it with a series of questions:
 
@@ -99,7 +105,7 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 .. figure:: images/ crm_db_select.png
    :align: center
 
-   *Selecting the CRM functionality to install.*
+   *Selecting the CRM functionality to install*
 
 .. index::
    pair: module; crm_configuration
@@ -148,13 +154,15 @@ The following cases will be looked at for this chapter
 
 * Management of phone calls.
 
-The figure below shows the CRM module configuration screen after selecting some functions to
+The figure :ref:`fig-crmconwiz` shows the CRM module configuration screen after selecting some functions to
 install.
+
+.. _fig-crmconwiz:
 
 .. figure:: images/crm_configuration_wizard.png
    :align: center
 
-   *Selecting parameters for CRM modules for the reader of this chapter.*
+   *Selecting parameters for CRM modules for the reader of this chapter*
 
 Organizing Prospects
 --------------------
@@ -165,7 +173,7 @@ following workflow for the qualification of prospects and future opportunities.
 .. figure:: images/crm_flux.png
    :align: center
 
-   *Process of converting a prospect into a customer or opportunity.*
+   *Process of converting a prospect into a customer or opportunity*
 
 .. Copyright © Open Object Press. All rights reserved.
 

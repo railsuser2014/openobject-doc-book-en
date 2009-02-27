@@ -32,7 +32,7 @@ the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
 .. figure::  images/account _board.png
    :align: center
 
-   *Accounting Dashboard.*
+   *Accounting Dashboard*
 
 .. index:: Balance; Aged
 
@@ -48,11 +48,10 @@ view.
 To obtain a more detailed report of the aged balance (or order by past date) use the menu
 :menuselection:`Finance --> Accounting --> Reporting --> Partner Accounts --> Aged Partner balance`.
 
-
 .. figure::  images/account_balance.png
    :align: center
 
-   *Aged balance using a 30 day period.*
+   *Aged balance using a 30 day period*
 
 When opening that report, Open ERP asks for the name of the company, the fiscal period and the size
 of the interval to be analyzed (in days). Open ERP then calculates a table of credit balance by
@@ -64,11 +63,10 @@ For an analysis by partner you can use the partner balance that you get through 
 system then supplies you with a PDF report containing one line per partner representing the
 cumulative credit balance.
 
-
 .. figure::  images/account_partner_balance.png
    :align: center
 
-   *Partner balances.*
+   *Partner balances*
 
 .. index:: Ledger
 
@@ -146,7 +144,7 @@ You can send your reminders by mail and/or email with the menu :menuselection:`F
 .. figure::  images/account_followup_wizard.png
    :align: center
 
-   *Form for preparing follow-up letters.*
+   *Form for preparing follow-up letters*
 
 Open ERP presents you with a list of partners who are due reminders, which you can modify before
 starting the procedure. On the second tab of the form you can supply the information you'll send in
@@ -175,7 +173,7 @@ in detail.
 .. figure::  images/account_followup.png
    :align: center
 
-   *Summary screen for follow-ups.*
+   *Summary screen for follow-ups*
 
 .. index::
    single: Overdue payments

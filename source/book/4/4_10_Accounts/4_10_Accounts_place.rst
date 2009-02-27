@@ -21,7 +21,7 @@ Management --> Configuration --> Analytic Accounts --> Analytic Accounts`.
 .. figure::  images/account_analytic_form.png
    :align: center
 
-   *Setting up an analytic account.*
+   *Setting up an analytic account*
 
 To create an analytic account you have to complete the main fields:
 
@@ -67,11 +67,10 @@ which you'd need so that you can invoice the partner:
 	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
 	  orders.
 
-
 .. figure::  images/account_analytic_chart.png
    :align: center
 
-   *Example of an analytic chart for projects.*
+   *Example of an analytic chart for projects*
 
 Once you've defined the different analytic accounts you can view your chart through the menu
 :menuselection:`Financial Management --> Charts --> Analytic Charts of Accounts`.
@@ -122,7 +121,7 @@ These enable you to categorize the different accounting entries by their type:
 .. figure::  images/account_analytic_journal.png
    :align: center
 
-   *Creating an analytic journal.*
+   *Creating an analytic journal*
 
 To define your analytic journals, use the menu :menuselection:`Financial Management -->
 Configuration --> Journal --> Analytic Journal Definition`.

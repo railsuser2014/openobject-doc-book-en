@@ -45,7 +45,7 @@ configure the document management system.
 .. figure::  images/document_config.png
    :align: center
 
-   *Screen for configuring document management.*
+   *Screen for configuring document management*
 
 Once the module has been installed you'll see a new entry in the main menu called :menuselection:`Document
 Management`.
@@ -53,7 +53,7 @@ Management`.
 .. figure::  images/document_menu.png
    :align: center
 
-   *The document management menu.*
+   *The document management menu*
 
 
 .. Copyright © Open Object Press. All rights reserved.

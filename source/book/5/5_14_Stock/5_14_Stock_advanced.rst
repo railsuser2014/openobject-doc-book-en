@@ -80,7 +80,7 @@ deliveries or goods receipts.
 .. figure:: images/stock_planning.png
    :align: center
 
-   *Planning the deliveries of customer products.*
+   *Planning the deliveries of customer products*
 
 The planned dates on a packing order are put on each stock move line. Then if you have a packing
 order containing several products you don't have to have all of the lines on the order delivered on
@@ -108,7 +108,7 @@ deliveries (or receipts) waiting.
 .. figure:: images/stock_picking_wizard.png
    :align: center
 
-   *Confirmation screen for delivered quantities.*
+   *Confirmation screen for delivered quantities*
 
 When you open the list of current deliveries, you find the field :guilabel:`Partial delivery` which
 shows the reference number of the first delivery sent to the customer. That enables you to easily
@@ -140,7 +140,7 @@ receipt form.
 .. figure:: images/stock_getting.png
    :align: center
 
-   *Manual data entry for product receipt.*
+   *Manual data entry for product receipt*
 
 Confirming pre-generated goods received
 ---------------------------------------
@@ -155,7 +155,7 @@ In this case Open ERP generates a list of all products waiting to be received fr
 .. figure:: images/stock_packing_in.png
    :align: center
 
-   *List of items waiting for receipt.*
+   *List of items waiting for receipt*
 
 Then you just look for the  corresponding entry using the supplier name or order reference. Click it
 and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP
@@ -191,7 +191,7 @@ in your warehouse is a function of the product itself.
 .. figure:: images/product_location.png
    :align: center
 
-   *Managing the paths from one location to another in a product form.*
+   *Managing the paths from one location to another in a product form*
 
 This will enable you to configure logistics rules individually for each product. For example, when a
 specific product arrives in stores it can automatically be sent to quality control. In this case it

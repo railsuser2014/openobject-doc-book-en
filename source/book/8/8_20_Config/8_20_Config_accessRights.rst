@@ -94,7 +94,7 @@ just created.
 .. figure::  images/menu_access.png
    :align: center
 
-   *Groups that have access to the Inventory Control menu.*
+   *Groups that have access to the Inventory Control menu*
 
 Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access
 to Menu-Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to
@@ -192,14 +192,14 @@ Modification history
 .. figure::  images/view_log.png
    :align: center
 
-   *Partner Record history.*
+   *Partner Record history*
 
 Each record in a Open ERP database carries a note of its history. You can then find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
 :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-
 only, not when it's editable) to display a dialog box showing this information, as shown in the
-figure below. It can help you identify who to contact if there are any problems with the data in the
-records.
+figure :ref:`fig-sflow`. It can help you identify who to contact if there are any problems with the 
+data in the records.
 
 
 .. Copyright © Open Object Press. All rights reserved.

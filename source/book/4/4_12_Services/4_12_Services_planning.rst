@@ -66,15 +66,17 @@ projects for the period concerned. The tasks for each project are ordered by pri
 directly assigned to a user or left unassigned. Each employee then chooses the task that he or she
 will do next, based on the plans and the relative priorities of the tasks.
 
+.. _fig-srvplantime:
+
 .. figure::  images/service_planning_time.png
    :align: center
 
-   *Monthly planning for work time of each employee.*
+   *Monthly planning for work time of each employee*
 
-The figure shows a monthly planning session where plans are being made for each employee to spend a
+The figure :ref:`fig-srvplantime` shows a monthly planning session where plans are being made for each employee to spend a
 number of days' work on various different projects.
 
-In this time-focused planning approach, clients' priorities don't figure in the planning any more,
+In this time-focused planning approach, clients' priorities don't feature in the planning any more,
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
@@ -169,7 +171,7 @@ the real time worked.
 .. figure::  images/planning_stat.png
    :align: center
 
-   *Comparison of planned hours, worked hours and the productivity of employees by project.*
+   *Comparison of planned hours, worked hours and the productivity of employees by project*
 
 You can also study several of your project's figures from the menu :menuselection:`Human Resources
 --> Reporting --> Planning`.

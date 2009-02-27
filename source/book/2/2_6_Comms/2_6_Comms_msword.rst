@@ -23,16 +23,15 @@ When the program is installed, you must run Microsoft Word and configure the par
 enable you to access the Open ERP server from Word. Click the menu :menuselection:`Tools --> Tiny
 ERP options`.
 
-
 .. figure::  images/word_menu.png
    :align: center
 
-   *Menu for accessing the configuration of the plugin.*
+   *Menu for accessing the configuration of the plugin*
 
 .. figure::  images/word_config.png
    :align: center
 
-   *Configuration of the Word plugin for accessing Open ERP.*
+   *Configuration of the Word plugin for accessing Open ERP*
 
 Using the Word interface
 ------------------------
@@ -44,7 +43,7 @@ such as from Order Lines, and from Products in those Order Lines.
 .. figure::  images/word_module.png
    :align: center
 
-   *Select the module that will generate the report.*
+   *Select the module that will generate the report*
 
 Complete your document and insert Open ERP fields into the appropriate places.
 
@@ -52,7 +51,7 @@ Complete your document and insert Open ERP fields into the appropriate places.
    :align: center
    :scale: 90
 
-   *Add Open ERP fields into a Word document.*
+   *Add Open ERP fields into a Word document*
 
 .. note::  Fields in red
 
@@ -69,7 +68,7 @@ selection and click :guilabel:`Start Merge` to run the tool that produces your d
 .. figure::  images/word_select.png
    :align: center
 
-   *Selecting the Open ERP documents to use in the merge.*
+   *Selecting the Open ERP documents to use in the merge*
 
 Word then generates the documents by inserting the Open ERP data. You get one page for each
 selected document.
@@ -77,7 +76,7 @@ selected document.
 .. figure::  images/word_finnish.png
    :align: center
 
-   *Result of merging a Word document with data from Open ERP.*
+   *Result of merging a Word document with data from Open ERP*
 
 .. index::
    single: Word adapter

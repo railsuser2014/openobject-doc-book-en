@@ -21,12 +21,12 @@ created automatically by the system.
 .. figure::  images/document_sale.png
    :align: center
 
-   *Orders in Open ERP.*
+   *Orders in Open ERP*
 
 .. figure::  images/document_ftp_sale.png
    :align: center
 
-   *Directories representing all the orders in the document management system.*
+   *Directories representing all the orders in the document management system*
 
 Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the
 directory :menuselection:`Main Repository --> Projects` you'll see the structure of the analytic
@@ -35,18 +35,18 @@ accounts.
 To define a directory containing a specific type of resource you have to define parameters when you
 define the directory itself:
 
-* **Type** : Other Resources
+* :guilabel:`Type` : Other Resources
 
-* **Child Models** : Choose one of the system objects
+* :guilabel:`Child Models` : Choose one of the system objects
 
-* **Domain** :  an event filtered so that it sees only a subset of the resources
+* :guilabel:`Domain` :  an event filtered so that it sees only a subset of the resources
 
-* **Tree structure** : to show the resources hierarchically
+* :guilabel:`Tree structure` : to show the resources hierarchically
 
 .. figure::  images/document_dir_form.png
    :align: center
 
-   *Configuration of the directory containing quotations (draft orders).*
+   *Configuration of the directory containing quotations (draft orders)*
 
 This is a very flexible approach because any modification of the resource in Open ERP is
 automatically reflected in the document management system. So when the quotation gets confirmed in

@@ -130,12 +130,14 @@ of a suitable :guilabel:`Parent menu` for the menu and the :guilabel:`Case Secti
    "Quality Problems","Quality","Purchase Management"
 
 Each time you run this utility (that is, for each line in the table above), Open ERP generates a
-menu structure like the following figure (here for the Business Opportunities menu).
+menu structure like :ref:`fig-busopp`.
+
+.. _fig-busopp:
 
 .. figure::  images/business_ops.png
    :align: center
 
-   *Business Opportunities menu automatically generated.*
+   *Business Opportunities menu automatically generated*
 
 .. note:: Case sections
 
@@ -191,7 +193,7 @@ case types are just versions of the generic case.
 .. figure::  images/crm_case.png
    :align: center
 
-   *An entry following a business opportunity.*
+   *An entry following a business opportunity*
 
 To enter a new business opportunity, you can use the menu that you've just created:
 :menuselection:`Sales Management --> Business Opportunities`. Or you could have used the generic
@@ -284,25 +286,21 @@ You'll get menus enabling you to manage calendars for each employee, and you'll 
 calendar for the company. This calendar view is totally dynamic. You can move an event or change its
 duration just using your mouse.
 
-
 .. figure::  images/crm_calendar1.png
    :align: center
    :scale: 90
 
-   *Monthly view of the meeting calendar for cases.*
-
+   *Monthly view of the meeting calendar for cases*
 
 You can change the view and return to the list view, forms or graphs by using the buttons at the top
 right. Open ERP's usual search tools and filters enable you to filter the events displayed in the
 calendar or, for example, to display the calendar for only some employees at a time.
 
-
 .. figure::  images/crm_calendar2.png
    :align: center
    :scale: 90
 
-   *Weekly view of the meeting calendar for cases.*
-
+   *Weekly view of the meeting calendar for cases*
 
 .. note:: The generic calendar
 
@@ -334,12 +332,10 @@ database.
 Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting` on database \
 ``openerp_04X``\   (which has plenty of data already in it) to create different reports.
 
-
 .. figure::  images/crm_graph.png
    :align: center
 
-   *Analyzing the performance of your support team.*
-
+   *Analyzing the performance of your support team*
 
 If you want to analyze the performance of your service and support group, for example, use the graph
 from :menuselection:`CRM & SRM --> Reporting --> All Months --> Cases by User and Section`. Click
@@ -410,11 +406,10 @@ Using these rules you could:
 
 To define new rules use the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
-
 .. figure::  images/crm_rule.png
    :align: center
 
-   *Screenshot of a rule.*
+   *Screenshot of a rule*
 
 .. index::
    single: Rule; Case
@@ -471,6 +466,8 @@ the setup window. The following actions are included:
 * send copies of the case discussion to specified email addresses,
 
 * send a predefined email.
+
+.. todo:: figure reference must be removed or found
 
 	.. note::  *Example 1 Improvement in the quality of support*
 
@@ -589,12 +586,10 @@ interface. Users can create up-to-date cases just by sending and receiving email
 with the major current email clients such as Microsoft Outlook and Outlook Express, Thunderbird and
 Evolution.
 
-
 .. figure::  images/crm_gateway.png
    :align: center
 
-   *Schematic showing the use of the email gateway.*
-
+   *Schematic showing the use of the email gateway*
 
 Installation and Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -627,7 +622,7 @@ as:
 
 	With the web client you can usually find this number by going to the form view of a resource and
 	clicking the :guilabel:`View Log` button to the top right of the form. The ID is shown at the top
-	of the Information dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
+	of the :guilabel:`Information` dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
 
 	You can also use the GTK client for this. Viewing any resource, such as a User, you can directly
 	see its ID at the bottom left of the form.

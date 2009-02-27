@@ -196,7 +196,7 @@ themselves, just classifying them.
 .. figure::  images/service_timebox_day.png
    :align: center
 
-   *Timebox for tasks to be done today.*
+   *Timebox for tasks to be done today*
 
 Then click on the button at the top right :guilabel:`Plan the timebox`. This procedure lets you
 select the tasks for the day from those in the timebox for the week. This operation gives you an

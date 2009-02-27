@@ -92,8 +92,6 @@ A report that relates both general accounts and analytic accounts enables you to
 costs within a given department. An analysis of the Production / Product Range 1 department is shown
 in this table:
 
-
-
 .. csv-table:: **Report merging both general and analytic accounts for a department (Case 1)**
    :header: "Production / Product Range 1",""
    :widths: 10,5
@@ -103,8 +101,6 @@ in this table:
    "613 – Transport charges","- 450"
    "6201 – Staff costs","-2 000"
    "Total","-3 750"
-
-
 
 The examples above are based on a breakdown of the costs of the company. Analytic allocations can be
 just as effective for sales. That gives you the profitability (sales - costs) of different

@@ -43,7 +43,7 @@ To define a new employee in Open ERP, use the menu :menuselection:`Human Resour
 .. figure::  images/service_employee_form.png
    :align: center
 
-   *Form describing an employee.*
+   *Form describing an employee*
 
 Start by entering the employee's :guilabel:`Name`  and the company that this employee works for
 (:guilabel:`Company`). You can then create a new user of the Open ERP system which is linked to this
@@ -93,7 +93,7 @@ Then type in the following information about the employee's working contract:
 .. figure::  images/service_timesheet_def.png
    :align: center
 
-   *Timesheet category for full time 38 hours per week.*
+   *Timesheet category for full time 38 hours per week*
 
 The different timesheet categories can be defined in the menu :menuselection:`Human Resources -->
 Configuration --> Timesheet Categories`.
@@ -106,7 +106,7 @@ Management of employment contracts
 .. figure::  images/service_hr_contract.png
    :align: center
 
-   *Definition of a working contract for a given employee.*
+   *Definition of a working contract for a given employee*
 
 You can enter information about the employment contract for the employee there.
 

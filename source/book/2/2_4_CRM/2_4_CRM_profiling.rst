@@ -41,14 +41,14 @@ The products offered by Tiny at these exhibitions are:
   integration – for companies that are slightly larger.
 
 The Tiny company has therefore put a decision tree in place based on the answers to several
-questions posed to prospects. These are given in the following figure:
+questions posed to prospects. These are given in the following figure :ref:`fig-crmprof`:
 
+.. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree.png
    :align: center
 
-   *Example of profiling customer prospects by the Tiny company.*
-
+   *Example of profiling customer prospects by the Tiny company*
 
 The sales person starts by asking the questions mentioned above and then with a couple of minutes of
 work can decide what to propose to the prospective customer.

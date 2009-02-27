@@ -32,7 +32,7 @@ open the partner form.
 .. figure:: images/crm_partner_event.png
    :align: center
 
-   *History of events in a partner form.*
+   *History of events in a partner form*
 
 When the leads have been converted into opportunities, the opportunities can be assigned to any
 salesperson. In that case you designate a manager in the company who is responsible for assigned the
@@ -56,12 +56,12 @@ another use the buttons above and to the right of the calendar.
 .. figure:: images/crm_calendar_month.png
    :align: center
 
-   *Meetings calendar in monthly view.*
+   *Meetings calendar in monthly view*
 
 .. figure:: images/crm_calendar_week.png
    :align: center
 
-   *Meetings calendar in weekly view.*
+   *Meetings calendar in weekly view*
 
 In the calendar you distinguish between multi-day events and events that last only for a few hours.
 Multi-day events have a colored background whereas single events have a colored font. Each event
@@ -75,7 +75,7 @@ along to create an event of several hours. Open ERP then opens an entry screen f
 .. figure:: images/crm_meeting_form.png
    :align: center
 
-   *Entering a new meeting.*
+   *Entering a new meeting*
 
 .. tip:: Consolidated Calendar
 

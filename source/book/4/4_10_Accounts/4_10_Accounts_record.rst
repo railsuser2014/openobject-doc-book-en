@@ -19,12 +19,14 @@ Analytic records can be distinguished from general records by the following char
 * they don't generate both a debit and a credit entry, but a positive amount (income) or a negative
   amount (cost).
 
+.. _fig-accanmv:
+
 .. figure::  images/account_analytic_move.png
    :align: center
 
-   *Analytic account records for a customer project.*
+   *Analytic account records for a customer project*
 
-The figure represents the entries on an analytic account for a customer project.
+The figure :ref:`fig-accanmv` represents the entries on an analytic account for a customer project.
 
 You can see there:
 
@@ -109,8 +111,8 @@ Analytic Entries --> Entries by journal`.
 	This is given only for information in the different cross-reports.
 	It won't create any new entries in the general accounts.
 
-Select a journal and complete the different fields. Write an expense as a negative figure and income
-as a positive figure.
+Select a journal and complete the different fields. Write an expense as a negative amount and income
+as a positive amount.
 
 .. todo:: - check behaviour now
 
