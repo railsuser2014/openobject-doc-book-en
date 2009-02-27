@@ -260,7 +260,7 @@ The routings are then attached to the Bills of Materials which are then also use
 product order. On a production order you'll find assembly operations for manufacture on the 
 :guilabel:`Operations` tab.
 
-.. figure:: ./images/mrp_production_workorder.png
+.. figure:: images/mrp_production_workorder.png
    :align: center
 
    *Operations on a production order*

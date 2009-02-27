@@ -1,8 +1,8 @@
-========
+============
 Unit testing
-========
+============
 
-Since version 4.2 of `OpenERP, the XML api provides several features to test your modules. They allow to
+Since version 4.2 of OpenERP, the XML api provides several features to test your modules. They allow to
 
     * test the properties of your records, your class invariants etc.
     * test your methods
@@ -11,7 +11,7 @@ Since version 4.2 of `OpenERP, the XML api provides several features to test you
 This thus allows you to simulate user interaction and automatically test your modules.
 
 Generalities
-===========
+============
  
 As you will see in the next pages, unit testing through Open ERP's XML can be done using three main tags: <assert>, <workflow> and <function>. All these tags share some common optional attributes:
 

@@ -110,7 +110,7 @@ When you've completed the product, Open ERP automatically completes the other fi
 * :guilabel:`Purchase Price`, provided by the supplier pricelist,
 
 * :guilabel:`Applicable taxes`, taken from the information on the product form and partner form,
-  depending on the rules seen in :ref:`ch-financial`.
+   depending on the rules seen in :ref:`Financial Analysis <ch-financial>`.
 
 .. tip:: Product wording and code
 

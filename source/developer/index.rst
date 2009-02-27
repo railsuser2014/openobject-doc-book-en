@@ -36,9 +36,6 @@ Part 3 : Advance Customization / Configuration
    :maxdepth: 2
 
    8_I18n/index
-   9_Process/index
-   10_BaseReport/index
-   11_Dashboard/index
 
 Part 4 : Migration, Upgradation, Testing
 -----------------------------------------
@@ -48,14 +45,7 @@ Part 4 : Migration, Upgradation, Testing
    12_DataMigration/index
    12_DataMigration/unit_testing
    12_DataMigration/automated_test
-   13_Upgration/index
-   14_Testing/index
 
 Part 5: Service base Integration
 --------------------------------
-.. toctree::
-   :maxdepth: 2
-
-   15_XML-RPC/index
-   16_Performance/index
    
