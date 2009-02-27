@@ -100,7 +100,7 @@ with the admin/admin or demo/demo to see OpenERP in action...
 
     Please make sure that the system time is properly set otherwise web browsers
     might fail to establish sessions. We strongly recommend you to synchronize
-    system time with NTP...
+    system clock with NTP...
 
 -------------------------------------------------------------------------------
 Run as service (daemon)
@@ -110,8 +110,9 @@ This has been tested on *ubuntu* only.
 
 .. code-block:: bash
 
-    $ cp /path/to/openerp_web-5.0-py2.5.egg/scripts/openerp-web /etc/init.d
-    $ cp /path/to/openerp_web-5.0-py2.5.egg/config/default.cfg /etc/openerp-web.cfg
+    $ sudo cp /path/to/openerp_web-5.0-py2.5.egg/scripts/openerp-web /etc/init.d
+    $ sudo cp /path/to/openerp_web-5.0-py2.5.egg/config/default.cfg /etc/openerp-web.cfg
+    $ sudo chmod +x /etc/init.d/openerp-web
 
 edit */etc/init.d/openerp-web*:
 
