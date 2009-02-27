@@ -14,9 +14,9 @@ Key Points:
 
 * Easily create multi-warehouses with locations.
 * Thanks to the double entry management, the inventory controlling is powerful and flexible
-(moves history and planning, stock valuation, robustness faced with Inventory differences,
-automatic reordering rules, bar code supported, rapid detection of mistakes through double
-entry system, traceability, ...) 
+	(moves history and planning, stock valuation, robustness faced with Inventory differences,
+	automatic reordering rules, bar code supported, rapid detection of mistakes through double
+	entry system, traceability, ...) 
 
 Integration Benefits:
 ---------------------

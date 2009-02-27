@@ -4,7 +4,7 @@
    single: PostgreSQL; Installation (windows)
 .. 
 
-.. _postgresql-server-installation:
+.. _windows_postgresql-server-installation:
 
 PostgreSQL Server installation and configuration
 ================================================
@@ -41,13 +41,13 @@ your *PATH* environment variable.
 The default superuser for PostgreSQL is called *postgres*. His password was
 chosen during the PostgreSQL installation.
 
-In your windows console, type: ::
+In your windows console, type::
 
     C:\Program Files\PostgreSQL\8.3\bin>createuser.exe --createdb --username postgres --no-createrole --pwprompt openuser
     Enter password for new role: XXXXXXXXXX
     Enter it again:XXXXXXXXXX
     Password: YYYYYYYYYY
-.. 
+
 
   * line 1 is the command itself
   * line 2 asks you the new user's password
