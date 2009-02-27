@@ -30,10 +30,12 @@ Expense        expense  5         Positive        Unreconciled    unchecked
 Cash           cash     5         Positive        Balance         unchecked
 ============== ======== ========  =============== =============== ===============
 
+
 .. _fig-oech03accty:
 
 .. figure::  images/openerp_ch03_acctype.png
    :align: center
+   :scale: 80
 
    *New Account Type*
    
@@ -61,10 +63,12 @@ Purchases     P    Others        0 Minimal Chart Expense
 Sales         S    Others        0 Minimal Chart Income
 ============= ==== ============= =============== ============
 
+
 .. _fig-oech03accts:
 
 .. figure::  images/openerp_ch03_accts.png
    :align: center
+   :scale: 80
 
    *New Account*
 
@@ -149,6 +153,7 @@ and you can upload a company logo of a specific size for the reports.
 
 .. figure::  images/openerp_ch03_co.png
    :align: center
+   :scale: 60
 
    *Changing company details*
 
@@ -187,6 +192,10 @@ first:
 
 * :guilabel:`Address Type` : \ ``Default``\  ,
 
+* :guilabel:`Customer` checkbox : \ ``unchecked``\  ,
+
+* :guilabel:`Supplier` checkbox : \ ``checked``\  ,
+
 * add \ ``Suppliers``\   to the :guilabel:`Categories` field by selecting it from the Search List,
 
 * then save the partner by clicking the :guilabel:`Save` button. 
@@ -197,6 +206,7 @@ Figure :ref:`fig-oech03part` shows the result.
 
 .. figure::  images/openerp_03_part.png
    :align: center
+   :scale: 80
 
    *New Partner Form*
 
@@ -212,11 +222,15 @@ Figure :ref:`fig-oech03part` shows the result.
 
 For the second partner, proceed just as you did for the first, with the following data:
 
-*  :guilabel:`Name` : \ ``Smith and Offspring``\  ,
+* :guilabel:`Name` : \ ``Smith and Offspring``\ ,
 
-*  :guilabel:`Contact Name` : \ ``Stephen Smith``\  ,
+* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
 
-*  :guilabel:`Address Type` : \ ``Default``\  .
+* :guilabel:`Address Type` : \ ``Default``\ ,
+
+* :guilabel:`Customer` checkbox : \ ``checked``\ ,
+
+* :guilabel:`Supplier` checkbox : \ ``unchecked``\ .
 
 Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check
 your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each
@@ -287,7 +301,7 @@ Now create a new product:
 
         .. figure::  images/product.png
            :align: center
-           :scale: 95
+           :scale: 60
            
            *Product Form*
 

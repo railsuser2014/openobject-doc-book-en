@@ -1,6 +1,4 @@
 
-.. todo:: Got HERE
-
 Testing a Purchase-Sale workflow
 ================================
 
@@ -32,57 +30,55 @@ Purchase Order
 --------------
 
 To place a Purchase Order with your supplier, use the menu :menuselection:`Purchase Management -->
-Purchase Order` for a new Purchase Order form.
+New Purchase Order` for a new Purchase Order form.
 
-Complete the following fields:
-
-*  :guilabel:`Warehouse` : \ ``Warehouse``\  . Although this is not a required field, the selection
-   here automatically fills in the required field :guilabel:`Delivery Destination` on the :guilabel:`Purchase Shippings`
-   tab.
+Complete the following field:
 
 *  :guilabel:`Partner` : \ ``Plumbing Component Suppliers``\  .
 
 As you complete the :guilabel:`Partner` field, Open ERP automatically completes the
 :guilabel:`Address` field and the :guilabel:`Price List` field from information it takes out of the
-Partner record. Then click on the :guilabel:`Save Parent and Create New Record` icon to the right of
+Partner record. Then click on the :guilabel:`Save Parent Record.` icon to the right of
 the :guilabel:`Order Line` field. This automatically saves the body of the :guilabel:`Purchase
-Order`, and changes to a :guilabel:`Create New Record` icon. Click that to open the
+Order`, and changes to a :guilabel:`Create New Record.` icon. Click that to open the
 :guilabel:`Purchase Order Line` window.
 
 Enter the following information
 
 *  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then click the
-   :guilabel:`Search / Open a resource:guilabel:` icon at the end of the line to complete it,
+   :guilabel:`Search` icon at the end of the line to complete it,
 
 When you've selected a product on the product line, Open ERP automatically completes the following
 fields from information it finds in the Product record:
 
-*  :guilabel:`Product UOM` : the unit of measure for this product,
+* :guilabel:`Product UOM` : the unit of measure for this product,
 
-*  :guilabel:`Description` : the detailed description of the product,
+* :guilabel:`Description` : the detailed description of the product,
 
-*  :guilabel:`Scheduled date` : based on the product lead time,
+* :guilabel:`Scheduled date` : based on the product lead time,
 
-*  :guilabel:`Unit price` : the unit price of the product,
+* :guilabel:`Unit price` : the unit price of the product,
 
-*  :guilabel:`Analytic account` : if any account is specified then it will appear on the order line,
+* :guilabel:`Analytic account` : if any account is specified then it will appear on the order line (it's not in this example),
 
-*  :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the
-   product, if specified.
+* :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the
+  product, if specified (there aren't any in this example).
 
 You can edit any of these fields to suit the requirements of the purchase order at the time of
-entry. Change the :guilabel:`Unit Price` to \ ``56.00``\  .
+entry. Change the:
 
-Also enter:
+* :guilabel:`Quantity` : \ ``10``\ ,
 
-*  :guilabel:`Quantity` : \ ``10``\  .
+* :guilabel:`Unit Price` to \ ``56.00``\ .
 
  Save the order line and close the :guilabel:`Purchase Order Line` window by clicking the
  :guilabel:`Close` button. You can then confirm the whole one-line order by clicking
  :guilabel:`Save`, which makes the form non-editable. It's now in a state of \ ``Request for
- Quotation``\  , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from
+ Quotation``\ , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from
  a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\
  state.
+ 
+.. todo:: Got HERE with non-null journal entry. Needs fixing by changing the procedure.
 
 Finally click :guilabel:`Approved by Supplier` to indicate the supplier's acknowledgment of the
 order. The order becomes \ ``Approved``\  . If you click the :guilabel:`Purchase Shippings` tab
