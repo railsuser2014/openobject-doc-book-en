@@ -1254,7 +1254,7 @@ For example you could put the following in the order lines:
 This enables you to lay out a more elaborate professional-looking quotation page. There's also the
 module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.
 
-The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprn` show an invoice template in Open ERP 
+The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in Open ERP 
 and the resulting printed invoice.
 
 .. _fig-invlayfrm:
@@ -1264,7 +1264,7 @@ and the resulting printed invoice.
 
    *Template for an invoice in Open ERP using the :mod:`account_invoice_layout` module*
 
-.. _fin-invlayprn:
+.. _fig-invlayprin:
 
 .. figure:: images/invoice_layout_print.png
    :align: center

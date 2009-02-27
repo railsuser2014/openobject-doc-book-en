@@ -157,7 +157,7 @@ now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \
 	Because of this you can carry out various analyses of stock levels in your warehouse,
 	along with the corresponding levels in virtual locations at your supplier.
 	Supplier locations show negative levels once you've received goods in your company, as you can see
-	in the figure :ref:`lotsbyloc`.
+	in the figure :ref:`fig-lotsbyloc`.
 
 Control of purchase invoices
 ----------------------------

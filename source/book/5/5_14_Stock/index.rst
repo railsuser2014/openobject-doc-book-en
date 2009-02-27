@@ -39,7 +39,7 @@ locations are used for the counterparts of these two operations.
 Inventory locations are counterparts of the stock operations that represent your company's profits
 and losses in terms of your stocks.
 
-The figure :ref:`stloctree` shows the initial configuration of the stores locations when the software is
+The figure :ref:`fig-stloctree` shows the initial configuration of the stores locations when the software is
 installed.
 
 .. _fig-stloctree:

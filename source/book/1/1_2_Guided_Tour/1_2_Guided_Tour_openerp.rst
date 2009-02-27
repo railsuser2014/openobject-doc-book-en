@@ -219,7 +219,7 @@ They contain some of the demonstration data that you installed when you created 
 Accounting and finance
 ----------------------
 
-The chapters in :ref:`part-gen-acct` in this book are dedicated to general and analytic accounting. A brief overview of
+The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. A brief overview of
 the functions provided by these modules is given here as an introduction.
 
 Accounting is totally integrated into all of the company's functions, whether it's general,

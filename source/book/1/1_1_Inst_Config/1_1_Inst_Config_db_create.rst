@@ -4,6 +4,8 @@
 
 .. index:: Database
 
+.. _sect-dbcreate:
+
 Database creation
 =================
 

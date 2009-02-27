@@ -615,7 +615,7 @@ the cursor in the field Production Lot and press :guilabel:`<F1>` to create a ne
 reference, for example: MB1345678. The system may then show you a warning because this lot is not in
 stock, but you can ignore this message.
 
-The production order must be in the closed state as shown in the figure :ref:`mrpprdfrm`.
+The production order must be in the closed state as shown in the figure :ref:`fig-mrpprdfrm`.
 
 .. _fig-mrpprdfrm:
 
@@ -778,7 +778,7 @@ encoding a new production order as shown in the figure :ref:`fig-mrpprdnew`.
 
 The production order follows the process given by the figure :ref:`fig-mrpprdproc`.
 
-.. fig-mrpprdproc:
+.. _fig-mrpprdproc:
 
 .. figure:: images/mrp_production_processus.png
    :align: center
