@@ -121,11 +121,11 @@ and \ ``Open``\   tasks from that list.
  *Task Work*  *Effective hours*
 
 .. index::
-   pair: module; hr_timesheet_project
+   pair: module; project_timesheet
 
 .. note:: Tasks and timesheet
 
-	The module :mod:`hr_timesheet_project` gives you a way of creating the day's timesheet automatically
+	The module :mod:`project_timesheet` gives you a way of creating the day's timesheet automatically
 	from
 	the effective work done for each of the different tasks.
 	This way you don't have to encode service times twice – once for the project task and once for

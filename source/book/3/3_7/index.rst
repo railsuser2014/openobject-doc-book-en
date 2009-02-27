@@ -113,10 +113,10 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	  Open ERP's multi-company documents to finely manage access rights,
 	  
 	.. index::
-	   pair: module; synchro	
+	   pair: module; base_synchro	
 
-	* it's possible to synchronize specified document types in several databases using the :mod:`synchro`
-	  module.
+	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
+	  module, which is a shared-funding module rather than in the standard open repositories.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in Open ERP an Order automatically generates an

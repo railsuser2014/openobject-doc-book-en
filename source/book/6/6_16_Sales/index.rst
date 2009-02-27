@@ -395,10 +395,10 @@ Management of Carriers
 
 .. index::
    pair: module; delivery
-   pair: module; industry
+   pair: module; profile_manfuacturing
 
 To manage deliveries in Open ERP, install the :mod:`delivery` module. If you have installed the
-:mod:`industry` profile this is installed by default during configuration of the database. This module
+:mod:`profile_manufacturing` profile this is installed by default during configuration of the database. This module
 enables you to manage:
 
 * the different carriers with whom you work,
