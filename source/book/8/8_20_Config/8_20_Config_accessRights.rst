@@ -19,11 +19,10 @@ groups, and the group(s) you belong to determine(s):
 
 * the accessibility of each table in the database.
 
-For example, the group \ ``Stock``\ may only be given access to some of the menus in *Inventory
-Control*, and may have no access to any of the accounting information. Each system user who works in
-Stores is given membership of the *Stock* group. If some users also work elsewhere, they'd also be
+For example, the group \ ``Stock``\ may only be given access to some of the menus in 
+:menuselection:`Stock Management`, and may have no access to any of the accounting information. Each system user who works in
+Stores is given membership of the ``Stock`` group. If some users also work elsewhere, they'd also be
 given membership of other groups.
-
 
 Open ERP users can also belong to various roles. Just as group gives a user access rights, each
 role determines the user's duties. This is managed at the level of workflows, which form the
@@ -94,11 +93,11 @@ just created.
 .. figure::  images/menu_access.png
    :align: center
 
-   *Groups that have access to the Inventory Control menu*
+   *Groups that have access to the :menuselection:`Stock Management` menu*
 
 Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access
 to Menu-Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to
-get the :guilabel:`Inventory Control` menu item. In the form describing the menu, add \ ``Stock1``\
+get the :menuselection:`Stock Management` menu item. In the form describing the menu, add \ ``Stock1``\
 into the :guilabel:`Groups` field. While you're at it, also add the \ ``admin``\   group there. From
 now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see
 this menu item in their main menu list.
@@ -106,7 +105,7 @@ this menu item in their main menu list.
 .. tip:: Menu hierarchy
 
 	Since menus are hierarchical there is no need to hide access to lower menus:
-	once you've configured Inventory Control this way, all lower-level menus become invisible to
+	once you've configured :menuselection:`Stock Management` this way, all lower-level menus become invisible to
 	members of other groups.
 
 .. tip:: Security

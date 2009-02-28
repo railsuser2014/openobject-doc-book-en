@@ -403,12 +403,13 @@ organization and to the management of a services business.
 
 .. index::
    single: Inventory Control
+   single: Stock Management
 ..
 
-Inventory Control
--------------------
+Stock Management
+----------------
 
-The various sub-menus under :menuselection:`Inventory Control` together provide operations you need to manage stock.
+The various sub-menus under :menuselection:`Stock Management` together provide operations you need to manage stock.
 You can:
 
 * define your warehouses and structure them around locations and layouts of your choosing,

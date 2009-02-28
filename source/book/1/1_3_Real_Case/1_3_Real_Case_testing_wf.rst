@@ -98,7 +98,7 @@ Receiving Goods
 After confirming the order you'd wait for the delivery of the products from your supplier. Typically
 this would be somebody in Stores rather than Purchasing, who would:
 
-	#. Open the menu :menuselection:`Inventory Control --> Packing Lists --> Getting Goods --> Packings
+	#. Open the menu :menuselection:`Stock Management --> Packing Lists --> Getting Goods --> Packings
 	   to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
 	   Lists`.
 
@@ -112,7 +112,7 @@ this would be somebody in Stores rather than Purchasing, who would:
 At this point you've accepted 10 units into your company, in a location defined by the Warehouse
 that you specified near the top of your Purchase Order.
 
-To check actual stock levels, use the menu :menuselection:`Inventory Control --> Location Structure`,
+To check actual stock levels, use the menu :menuselection:`Stock Management --> Location Structure`,
 find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through
 the tree and click it. That will show everything in the \ ``Stock``\   location and below it –
 including :guilabel:`Real stock` (the actual quantity recorded in that location and below it) and
@@ -310,7 +310,7 @@ has now changed state to \ ``Done``\  .
 The goods are now in your Output Bay, which had been defined by default in Open ERP as :guilabel:`Output`,
 as a single package with a :guilabel:`Lot Number` of \ ``OUT:1``\  .
 
-To register when a carrier picks up the package, use the menu :menuselection:`Inventory Control -->
+To register when a carrier picks up the package, use the menu :menuselection:`Stock Management -->
 Delivery Order --> Delivery Orders to Process`. Select the appropriate line \ ``OUT:1``\   to open
 the :guilabel:`Stock Move` form, then click :guilabel:`Move Lot`. Its state changes to \ ``Moved``\
 . Packing is defined by Sales Orders so if you pack fewer packages than are on order Open ERP
@@ -318,7 +318,7 @@ automatically manages the remainder for future delivery.
 
 To analyze stock movements that you've made during these operations use the following steps:
 
-	#. Select menu :menuselection:`Inventory Control --> Locations Structure`,
+	#. Select menu :menuselection:`Stock Management --> Locations Structure`,
 
 	#. Select the first line by clicking somewhere along it (but don't click on the \ ``Locations``\
 		text itself) then click on the :guilabel:`Print` icon above the list further over to the right.
