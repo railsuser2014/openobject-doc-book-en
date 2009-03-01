@@ -8,7 +8,7 @@ Guided Tour
  *Starting to discover Open ERP, using demonstration data supplied with the system to
  familiarize yourself with the user interface.
  This guided tour provides you with an introduction to many of the available system features.*
-
+ 
 You'd be forgiven a flicker of apprehension when you first sit at your computer to connect to
 Open ERP, since ERP systems are renowned for their complexity and for the time it takes to learn
 how to use them. These are, after all, Enterprise Resource Planning systems, capable of managing

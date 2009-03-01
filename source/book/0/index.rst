@@ -210,8 +210,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 			he has many thoughts to share on the successful adoption of an effective management automation
 			tool.
 
-Thanks
-======
+Dedication
+==========
 
         *From Geoff Gardiner*
 

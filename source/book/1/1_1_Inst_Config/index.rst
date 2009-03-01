@@ -15,7 +15,7 @@ Installation and Configuration
  or install application clients on each intended user's PC.
  When you first install Open ERP you'll configure a database containing a little functionality and
  some demonstration data to test the installation.*
-
+ 
 .. figure:: images/ch1_outline.png
    :align: center
 

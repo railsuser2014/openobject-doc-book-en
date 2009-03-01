@@ -17,6 +17,8 @@ First steps with Open ERP
  by developing a complete business workflow that runs from purchase to sale of goods.
 
 .. toctree::
+    :maxdepth: 1
+
 
     1_1_Inst_Config/index
     1_2_Guided_Tour/index

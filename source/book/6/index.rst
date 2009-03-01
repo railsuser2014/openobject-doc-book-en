@@ -6,6 +6,7 @@ Sales and Purchasing
 ####################
 
 .. toctree::
+    :maxdepth: 1
 
     6_16_Sales/index
     6_17_Purchases/index

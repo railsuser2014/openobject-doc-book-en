@@ -6,6 +6,7 @@ Process and Document Management
 ###############################
 
 .. toctree::
+    :maxdepth: 1
 
     7_18_Process/index
     7_19_Documents/index
