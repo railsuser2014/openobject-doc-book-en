@@ -10,7 +10,7 @@ Configuring Accounts
 
 You need to start off with a minimal set of accounts, and to do that you will need a couple of
 account types. You can structure your accounts into a chart at any time (and, in fact, you can
-structure them into more several additional charts at the same time as you'll see in chapter
+structure them into several additional charts at the same time as you'll see in the chapter
 :ref:`ch-configacct`), so you don't need to be concerned unduly about structure.
 
 Account Types
@@ -19,7 +19,7 @@ Account Types
 Create account types using :menuselection:`Financial Management --> Configuration --> 
 Financial Accounting --> Financial Accounts --> Account Types` and then clicking the
 :guilabel:`New` button. You'll need the following four types, the first of which is shown
-in :ref:`fig-oech03accty`.
+in figure :ref:`fig-oech03accty`.
 
 ============== ======== ========  =============== =============== ===============
 Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
@@ -52,17 +52,16 @@ And one 'organizing' account that's just a view of the other five. So
 you'll need the following six accounts, one of which is shown
 in :ref:`fig-oech03accts`.
 
-============= ==== ============= =============== ============
-Name          Code Internal Type Parent          Account Type
-============= ==== ============= =============== ============
-Minimal Chart 0    View                          View
-Payable       AP   Payable       0 Minimal Chart Expense
-Receivable    AR   Receivable    0 Minimal Chart Income
-Cash          C    Others        0 Minimal Chart Cash
-Purchases     P    Others        0 Minimal Chart Expense
-Sales         S    Others        0 Minimal Chart Income
-============= ==== ============= =============== ============
-
+============= ==== ============= =============== ============ =========
+Name          Code Internal Type Parent          Account Type Reconcile
+============= ==== ============= =============== ============ =========
+Minimal Chart 0    View                          View         unchecked
+Payable       AP   Payable       0 Minimal Chart Expense      checked
+Receivable    AR   Receivable    0 Minimal Chart Income       checked
+Cash          C    Others        0 Minimal Chart Cash         unchecked
+Purchases     P    Others        0 Minimal Chart Expense      unchecked
+Sales         S    Others        0 Minimal Chart Income       unchecked
+============= ==== ============= =============== ============ =========
 
 .. _fig-oech03accts:
 
@@ -86,17 +85,63 @@ which account is used for which transaction every time you do something.
 The main new properties are the four that associate accounts payable and receivable
 to partners, and expenses and income to product categories.
 
-Create properties using :menuselection:`Financial Management --> Configuration --> 
+Create properties using :menuselection:`Administration --> Configuration --> 
 Properties --> Default Properties` and then clicking the :guilabel:`New` button. 
 
 ============================== ========= ================== =============================== ===============
 Name                           Company   Fields             Value                           Parent Resource
 ============================== ========= ================== =============================== ===============
-property_account_payable       Tiny sprl Account Payable    (account.account) AR Payable    (None) 
-property_account_receivable    Tiny sprl Account Receivable (account.account) AP Receivable (None) 
+property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
+property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
 property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
 property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
 ============================== ========= ================== =============================== ===============
+
+.. tip:: Mistakes in configuring accounts and properties
+
+   It's easy to make mistakes in configuring the accounts and their properties, but the consequences
+   are not immediately obvious. You'll mostly discover mistakes when trying to make a Purchase or
+   Sale Order (see later, for example, :ref:`sect-PO`), where the accounts are required fields or,
+   if you're diligent, when you set up Partners (see :ref:`sect-ConfiCo`). 
+   
+   If you configure them correctly at this stage then fields will be completed automatically and you'll
+   never know a thing. If you don't configure all this correctly then you won't be able to save the
+   order form until you have corrected the problem or until you manually set the accounts. 
+   
+   Since this configuration is quite tedious you'd be best finding a certified Chart of Accounts that
+   that has already been set up to meet your needs, if you can find one.
+
+Configuring Journals
+--------------------
+
+You'll also need to configure some journals, which are used to record the transactions from one account
+to another when invoices are raised and then paid. Create journals from the menu
+:menuselection:`Financial Management --> Configuration --> 
+Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
+
+===================== ==== ============= ================= ================ ===================== ======================
+Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
+===================== ==== ============= ================= ================ ===================== ======================
+Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
+Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
+Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
+===================== ==== ============= ================= ================ ===================== ======================
+
+.. tip:: Mistakes in configuring journals
+
+   It's easy to make mistakes in configuring the journals, too, and the consequences
+   are also not immediately obvious. You'll mostly discover mistakes when creating an invoice
+   (which happens at different points in the process depending on your configuration).
+   In this example, validating a Purchase Order creates a draft invoice 
+   (see later, again for example, :ref:`sect-PO`), where a journal is required. 
+   
+   As with accounts and properties, if you configure them correctly at this stage then 
+   the fields will be completed automatically and you'll never know a thing. 
+   If you don't configure all this correctly then there will be errors with the
+   order form or corresponding draft invoice
+   until you have corrected the problem or until you manually set the journal. 
+
+.. _sect-ConfiCo:
 
 Configuring the Main Company
 ----------------------------
@@ -126,7 +171,7 @@ Before you save this, look at the partner's accounting setup by clicking the fif
 :guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
 have account values in them that were taken from the account properties you just created.
 You don't have to accept those values: you can enter any suitable account you like at this stage, 
-although Open ERP constrains the selection to one that makes accounting sense.
+although Open ERP constrains the selection to ones that make accounting sense.
 
 Back at the first tab, :guilabel:`General`change  any other fields you like, 
 such as the address and phone numbers, then :guilabel:`Save`. This
@@ -147,7 +192,7 @@ Companies` and edit the only entry there:
 
 Figure :ref:`fig-oech03co` shows the effect of this.
 You can also change various other company-wide parameters for reports and scheduling in the other tabs,
-and you can upload a company logo of a specific size for the reports.
+and you can upload a company logo of a specific size for the reports. Click :guilabel:`Save` to store this.
 
 .. _fig-oech03co:
 
@@ -188,13 +233,13 @@ first:
 
 * :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
 
-* :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
-
-* :guilabel:`Address Type` : \ ``Default``\  ,
-
 * :guilabel:`Customer` checkbox : \ ``unchecked``\  ,
 
 * :guilabel:`Supplier` checkbox : \ ``checked``\  ,
+
+* :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
+
+* :guilabel:`Address Type` : \ ``Default``\  ,
 
 * add \ ``Suppliers``\   to the :guilabel:`Categories` field by selecting it from the Search List,
 
@@ -224,13 +269,13 @@ For the second partner, proceed just as you did for the first, with the followin
 
 * :guilabel:`Name` : \ ``Smith and Offspring``\ ,
 
-* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
-
-* :guilabel:`Address Type` : \ ``Default``\ ,
-
 * :guilabel:`Customer` checkbox : \ ``checked``\ ,
 
-* :guilabel:`Supplier` checkbox : \ ``unchecked``\ .
+* :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
+
+* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
+
+* :guilabel:`Address Type` : \ ``Default``\ .
 
 Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check
 your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each
@@ -296,8 +341,9 @@ Now create a new product:
 		:guilabel:`Radiators` category.
 
 	#.	The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
-		The fields :guilabel:`Procure Method`, :guilabel:`Supply Method`, :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should
-		also stay at their default values: in fact every other field remains untouched.
+		The fields :guilabel:`Procure Method`, :guilabel:`Supply Method`, :guilabel:`Default UOM`, 
+		and :guilabel:`Purchase UOM` should
+		also stay at their default values: in fact every other field in this tab remains untouched.
 
         .. figure::  images/product.png
            :align: center
@@ -345,7 +391,7 @@ that act as their names suggest, and ``Virtual Locations`` that are used by Open
 		--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
 		should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
 
-.. todo:: Get this right!
+.. todo:: Get this, below, right!
 
 .. tip:: Valuation of stock
 
@@ -381,7 +427,7 @@ stock on your behalf.
 	packed ready for customer shipment, should not be thought of as available for sale elsewhere.
 	
 	In the default configuration, Open ERP uses the same ``Stock`` location for both Input and Output because it
-	is fairly simple to comprehend.
+	is easier to understand when you're starting out.
 
 .. index::
    single: Account Chart

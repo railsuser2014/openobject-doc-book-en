@@ -26,6 +26,8 @@ Following this, you'll sell some of these products, using this sequence:
 
 	#. Receive the payment.
 
+.. _sect-PO:
+
 Purchase Order
 --------------
 
@@ -71,59 +73,65 @@ entry. Change the:
 
 * :guilabel:`Unit Price` to \ ``56.00``\ .
 
- Save the order line and close the :guilabel:`Purchase Order Line` window by clicking the
- :guilabel:`Close` button. You can then confirm the whole one-line order by clicking
- :guilabel:`Save`, which makes the form non-editable. It's now in a state of \ ``Request for
- Quotation``\ , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from
- a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\
- state.
- 
-.. todo:: Got HERE with non-null journal entry. Needs fixing by changing the procedure.
+Save the order line and close the :guilabel:`Purchase Order Line` window by clicking the
+:guilabel:`Close` button. You can then confirm the whole one-line order by clicking
+:guilabel:`Save`, which makes the form non-editable. 
 
-Finally click :guilabel:`Approved by Supplier` to indicate the supplier's acknowledgment of the
-order. The order becomes \ ``Approved``\  . If you click the :guilabel:`Purchase Shippings` tab
-you'll see the :guilabel:`Picking List` that has been created ready for your Goods In department to
-use.
+It's now in a state of \ ``Request for
+Quotation``\ , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from
+a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\
+state. Finally click :guilabel:`Approved by Supplier` to indicate the supplier's acknowledgment of the
+order. The order becomes \ ``Approved``\  . 
 
-.. tip:: Visibility of a window
-
-	Sometimes a child window in the GTK client, such as the Purchase Order Line window, loses focus and
-	disappears behind the main window.
-	If a window doesn't open as you expect, check that it's not hiding behind the main window:
-	do this by minimizing the main window to your task bar.
+If you click the :guilabel:`Delivery & Invoices` tab
+you'll see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and that
+the invoice was created from the order and is ``SI: PO001``.
+It's not entirely obvious at this stage, but the invoice is in a draft state so it can be 
+edited and, crucially, has no accounting impact yet: it's just ready for your accounting 
+group to activate it.
 
 Receiving Goods
 ---------------
 
 After confirming the order you'd wait for the delivery of the products from your supplier. Typically
-this would be somebody in Stores rather than Purchasing, who would:
+this would be somebody in Stores, who would:
 
-	#. Open the menu :menuselection:`Stock Management --> Packing Lists --> Getting Goods --> Packings
-	   to be Received` using the expand/collapse icon rather than clicking directly on :guilabel:`Packing
-	   Lists`.
+	#. Open the menu :menuselection:`Stock Management --> Incoming Products --> Packings
+	   to Process` using the expand/collapse icon. 
+	   
+	   .. note:: From the Purchase Order
+	   
+	      You could have clicked the :guilabel:`Packing` link to the right of the Purchase Order
+	      to reach the same screen, but this would confuse the purchasing role with the 
+	      stores role. That link is very useful during testing and training, however.
 
-	#. When the :guilabel:`Packing list` window appears, select the name of the entry in the list 
-	   (\ ``IN:1``\   to display the Packing List itself – you'd usually do a search for the supplier name
+	#. When the :guilabel:`Packing` window appears, select the name of the entry in the list 
+	   (\ ``PACK1``\   to display the Packing List itself – you'd usually do a search for the supplier name
 	   or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
 	   :guilabel:`Make Packing` form.
 
 	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
 
-At this point you've accepted 10 units into your company, in a location defined by the Warehouse
-that you specified near the top of your Purchase Order.
+At this point you've accepted 10 units into your company, in a location that you've already seen.
 
 To check actual stock levels, use the menu :menuselection:`Stock Management --> Location Structure`,
-find \ ``Stock``\   in the hierarchy using the expand/collapse controls to make your way through
-the tree and click it. That will show everything in the \ ``Stock``\   location and below it –
-including :guilabel:`Real stock` (the actual quantity recorded in that location and below it) and
-:guilabel:`Virtual stock` (the quantities expected in future when all receipts and despatches have
+find \ ``Stock``\ in the hierarchy under :guilabel:`Physical Locations`,
+using the expand/collapse controls to make your way through
+the tree and click it. You'll next get a :guilabel:`View Stock of Products` screen, where you just
+click :guilabel:`Open Products` to select everything that the system knows.
+
+You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock``\ location (and below it) with
+:guilabel:`Real stock` (the actual quantity recorded) and
+:guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
 been made) – both \ ``10``\   in this case.
 
-Alternatively you could click the top-level \ ``Locations``\   line to highlight it (not the \
-``Locations``\   text itself), and then click the :guilabel:`Print` button to the top right of the
-form to test the available different reports (such as :guilabel:`Lots by Location`). You'll see that you've
-now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \ ``Input``\   and \
-``-10``\   pieces in the location \ ``Suppliers``\   as shown in the figure :ref:`fig-lotsbyloc`.
+Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises``\ line to highlight it
+(the line, not the \ ``Ambitious Plumbing Enterprises``\ text itself), and then click the 
+:guilabel:`Lots by Location` button in the :guilabel:`Reports` to the top right of the form. 
+You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\ in the location
+\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises``\ , its parent
+as shown in the figure :ref:`fig-lotsbyloc`.
+If you explore further you'll also see you have ``-10``\   pieces in the Partner Location \ ``Suppliers``\ .
 
 .. _fig-lotsbyloc:
 
@@ -132,30 +140,13 @@ now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\   in the location \
 
    *List of products and their stock levels*
 
-.. note:: Returning to Open ERP after printing PDF reports
-
-	When you're using the web client, documents such as this are not part of the standard web page but
-	are generated in PDF format,
-	which you can print or attach to email or save on disk. So you don't get the standard Open ERP
-	navigation links on these pages.
-
-	Open ERP has not always been fully consistent in the display of these pages,
-	so the PDF page is not always brought up in a new tab or window as it should be
-	(and as it is in other areas of Open ERP), but may replace the standard Open ERP web-format
-	pages.
-
-	In such as case you'll have a strong temptation to just close the window once you've finished
-	looking at the PDF document,
-	but that would completely close Open ERP for you!
-	Instead, click the :guilabel:`Back` button in your web browser to return to Open ERP.
-
 .. tip:: Traceability in double-entry
 
-	Open ERP operates a double-entry stock transfer scheme similar to double-entry accounting.
-	Because of this you can carry out various analyses of stock levels in your warehouse,
-	along with the corresponding levels in virtual locations at your supplier.
-	Supplier locations show negative levels once you've received goods in your company, as you can see
-	in the figure :ref:`fig-lotsbyloc`.
+   Open ERP operates a double-entry stock transfer scheme similar to double-entry accounting.
+   Because of this you can carry out various analyses of stock levels in your warehouse,
+   along with the corresponding levels in Partner Location at your Supplier.
+
+.. todo:: Got HERE.
 
 Control of purchase invoices
 ----------------------------

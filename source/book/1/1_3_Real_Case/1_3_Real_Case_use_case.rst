@@ -83,11 +83,11 @@ with the password you gave it. You'll have to go through the Setup wizard in ste
 
 	#.  :guilabel:`Select a profile` : select ``Minimal Profile`` and click :guilabel:`Next`.
 
-	#.  At the :guilabel:`Define Main Company` step you can select your own :guilabel:`Company Name` and 
+	#.  At the :guilabel:`Define Main Company` step you could select your own :guilabel:`Company Name` and 
 	    :guilabel:`Currency`, and address details on the first tab :guilabel:`General Information`; 
 	    and you can add more details on the second tab :guilabel:`Report Information` including a logo
-	    that would appear on reports. In this test you may choose to leave everything untouched if you wish
-	    and just click :guilabel:`Next`.
+	    that would appear on reports. In this test you should leave everything untouched for the moment
+	    and just click :guilabel:`Next`: you'll change them later.
 
 	#.  At the :guilabel:`Summary` page you can go back to change details if you need.
 	    Click the :guilabel:`Install` button.
@@ -191,7 +191,7 @@ Configuration is required for both the accounts setup and the sales defaults.
        :guilabel:`Charts of Account` to be :guilabel:`None` then click 
        :guilabel:`Continue`.
        
-    #. The sales defaults are shown in :ref:`fig-oech03cfss`. The selections you make
+    #. The sales defaults are shown in the screenshot :ref:`fig-oech03cfss`. The selections you make
        determine how Open ERP's processes work by setting its default behaviour
        (although you can override any of them for any sales order, 
        so you are not strictly bound by these defaults). 
