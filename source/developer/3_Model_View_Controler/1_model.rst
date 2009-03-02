@@ -403,8 +403,7 @@ where
 
                 return [('id','in',[1,3,5])]
 
-Example Of Functional Field
-"""""""""""""""""""""""""""
+..describe:: Example Of Functional Field
 
 Suppose we create a contract object which is:
 
@@ -561,8 +560,7 @@ Sometimes you need to refer the relation of a relation. For example, supposing y
 Property Fields
 +++++++++++++++
 
-Declaring a property
-""""""""""""""""""""
+.. describe:: Declaring a property
 
 A property is a special field: fields.property.
 
