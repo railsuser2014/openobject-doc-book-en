@@ -206,8 +206,7 @@ The predefined methods may be classified into 5 categories: the basic methods, m
 Basic methods
 +++++++++++++
 
-create
-""""""
+.. describe:: create
 
 :Description:
 
@@ -230,8 +229,7 @@ Example::
                  'partner_id': partner.id,
                  'description': 'The Description for Partner Event'})
 
-search
-""""""
+.. describe:: search
 
 :Description:
 
@@ -257,8 +255,7 @@ Example::
 
 This example will return a list with all the partners that have the category 'Customer'.
 
-read
-""""
+.. describe:: read
 
 :Description:
 
@@ -278,8 +275,7 @@ Example::
 
         values = pooler.get_pool(cr.dbname).get('res.partner').read(cr, uid, ids, ['name','category_id'], context=context)
 
-browse
-"""""""
+.. describe:: browse
 
 :Description:
 
@@ -326,9 +322,7 @@ so, to recover the two fields that interest us, you have to write::
 
         This method is only useful locally (on the server itself) and not with the other interfaces !!
 
-
-write
-"""""
+.. describe:: write
 
 :Description:
 
@@ -348,9 +342,7 @@ Example::
 
         self.pool.get('sale.order').write(cr, uid, ids, {'state':'cancel'})
 
-
-unlink
-""""""
+.. describe:: unlink
 
 :Description:
 
@@ -373,8 +365,7 @@ Example::
 Methods to manipulate the default values
 ++++++++++++++++++++++++++++++++++++++++
 
-default_get
-"""""""""""
+.. describe:: default_get
 
 :Description:
 
@@ -394,8 +385,7 @@ Example::
 
         self.pool.get('hr.analytic.timesheet').default_get(cr, uid, ['product_id','product_uom_id'])
 
-default_set
-"""""""""""
+.. describe:: default_set
 
 :Description:
 
@@ -418,8 +408,7 @@ Example::
 Methods to manipulate the permissions
 +++++++++++++++++++++++++++++++++++++
 
-perm_read
-"""""""""
+.. describe:: perm_read
 
 :Description:
 
@@ -439,8 +428,7 @@ perm_read
             * write_uid: last user who changed the resource
             * write_date: date of the last change to the resource 
 
-perm_write
-""""""""""
+.. describe:: perm_write
 
 :Description:
 
@@ -457,8 +445,7 @@ Example::
 Methods to generate the fields and the views
 ++++++++++++++++++++++++++++++++++++++++++++
 
-fields_get
-""""""""""
+.. describe:: fields_get
 
 :Description:
 
@@ -483,8 +470,7 @@ In payment.line in account_payment module ::
             res['communication2']['states']['normal'] = [('readonly', False)]
         return res
 
-fields_view_get
-"""""""""""""""
+.. describe:: fields_view_get
 
 :Description:
 
@@ -511,10 +497,7 @@ In membership module [product.product]::
                 view_id = dict_model['membership_products_tree']
         return super(Product,self).fields_view_get(cr, user, view_id, view_type, context, toolbar)
 
-
-
-distinct_field_get
-""""""""""""""""""
+.. describe:: distinct_field_get
 
 :Description:
 
@@ -531,8 +514,7 @@ Example::
 Methods concerning the name of the resources
 ++++++++++++++++++++++++++++++++++++++++++++
 
-name_get
-""""""""""
+.. describe:: name_get
 
 :Description:
 
@@ -558,8 +540,7 @@ In res.partner.address::
                 res.append((r['id'], addr))
             return res
 
-name_search
-"""""""""""
+.. describe:: name_search
 
 :Description:
 
