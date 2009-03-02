@@ -9,7 +9,7 @@ Open ERP supplies a Microsoft Word plugin that enables you to create your own d
 What's more you can use the merge tool :menuselection:`Tools --> Merge documents` to insert data
 from Open ERP while you generate different business documents.
 
-So it's possible to create templates for a number of needs, such as proposals, business letters of
+So you can create templates for a number of needs, such as proposals, business letters of
 agreement, or price requests. Each user can create his or her own document and use the plugin to
 obtain data from Open ERP. The plugin is very helpful for easily automating business actions.
 
@@ -19,8 +19,8 @@ Installing the Word plugin
 The module for connecting Microsoft Word is also found in the list of Open ERP modules at
 http://openerp.com. Once it's been downloaded install the file \ ``tiny_word_plugin-X.exe``\  .
 
-When the program is installed, you must run Microsoft Word and configure the parameters that will
-enable you to access the Open ERP server from Word. Click the menu :menuselection:`Tools --> Tiny
+When the program is installed, you must run Microsoft Word and configure the parameters that
+enable you to access the Open ERP server from Word. Click the menu :menuselection:`Tools --> Open
 ERP options`.
 
 .. figure::  images/word_menu.png

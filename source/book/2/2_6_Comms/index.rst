@@ -7,11 +7,11 @@ Communication Tools
 *******************
 
  *Open ERP provides all the information you need to pursue your company's business opportunities
- efficiently. But to stay productive with all the information you have to handle it's essential 
+ effectively. But to stay productive with all the information you have to handle it's essential 
  that you can keep using your normal communication tools by interfacing them with Open ERP, 
- and not be restricted just to Open ERP's interface.*
+ and not be limited just to Open ERP's interface.*
 
-Open ERP can do most things you need to pursue your business opportunities effectively. But there
+Open ERP can do most things you need to pursue your business opportunities. But there
 can be quite a quite a bit to learn, which reduces your efficiency while you're learning. And if
 that's true for a heavy user of the system, it's doubly true for an occasional user or someone who
 already makes heavy use of standard Office applications and can't easily change.

@@ -1,11 +1,14 @@
 .. index::
    single: Thunderbird (Mozilla)
 
+.. todo:: Tiny -> Open ERP
+
 Mozilla Thunderbird interface
 =============================
 
-The Mozilla Thunderbird plugin enables you to carry out a series of Open ERP operations directly
-from the Thunderbird email client:
+Everything that you can do with the Outlook plugin you can also do with the Mozilla Thunderbird
+plugin – enabling you to carry out a series of Open ERP operations directly from Thunderbird, such
+as:
 
 * create a contact or partner from an email,
 
@@ -22,8 +25,12 @@ to load it using one of the methods described at the end of :ref:`ch-inst`. Once
 server's filesystem it's installed the same way as all of the other modules you've handled so far.
 
 You'll then have to install the Thunderbird extension. To do that, use the file \
-``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the \ ``email_interface``\
-module. Then take the following steps:
+``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the :mod:`email_interface`
+module. Don't install it again if it's already there (which it might be
+because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
+functionality – so some of your staff may use one and other may use the other). 
+
+Then take the following steps:
 
 	#. From Thunderbird, open the menu :menuselection:`Tools --> Complementary Modules`.
 
@@ -34,15 +41,15 @@ module. Then take the following steps:
 	#. Click :guilabel:`Install Now` then restart Thunderbird.
 
 Once the extension has been installed, you have only to create a shortcut in your Thunderbird
-toolbar for the function :guilabel:`Archive to Tiny`. Do it like this:
+toolbar for the function :guilabel:`Archive to Open ERP`. Do it like this:
 
 	#. Click the right mouse button on the toolbar and select :guilabel:`Personalize`,
 
-	#. Place the icon :guilabel:`Archive to Tiny` in your toolbar in the place of your choice.
+	#. Place the icon :guilabel:`Archive to Open ERP` in your toolbar in the place of your choice.
 
 .. tip::  Thunderbird version
 
-	The Tiny plugin for Thunderbird only works with Thunderbird version 2.0 and above.
+	The Open ERP plugin for Thunderbird only works with Thunderbird version 2.0 and above.
 
 	So check your Thunderbird version before installing, and download the latest version that you need
 	from the following address: http://www.mozilla.org/products/thunderbird/
@@ -51,7 +58,7 @@ Thunderbird user interface
 --------------------------
 
 When you've installed the module the first thing to do is connect it to Open ERP from Thunderbird.
-To do this use the menu :menuselection:`Tools --> Tiny Plugin`.
+To do this use the menu :menuselection:`Tools --> Open ERP Plugin`.
 
 A configuration window appears enabling you to enter configuration data about your Open ERP server.
 
@@ -61,7 +68,7 @@ A configuration window appears enabling you to enter configuration data about yo
    *Configuration for accessing Open ERP from Thunderbird*
 
 To archive an email in Open ERP from Thunderbird select the email and click on the icon
-:guilabel:`Archive in Tiny`. Alternatively you could right-click the mouse: either opens a search
+:guilabel:`Archive in Open ERP`. Alternatively you could right-click the mouse: either opens a search
 dialog box.
 
 This allows you to select an object that you'd like to add to your email and its attachments. You

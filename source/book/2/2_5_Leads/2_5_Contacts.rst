@@ -53,7 +53,7 @@ Depending on your needs, Open ERP provides three menus to access the same inform
 
 * List of contacts: :menuselection:`Partners --> Contacts`,
 
-* List of posts held by contacts at partners: :menuselection:`Partners --> Contact Posts`.
+* List of posts held by contacts at partners: :menuselection:`Partners --> Contact's Jobs`.
 
 The three menus above are only three different views on the same data. If you correct a contact name
 on the contact form, this will be modified on all the posts occupied in the different companies.
@@ -81,7 +81,7 @@ personal blog).
 
    *Detail of a contact form for someone occupying several posts*
 
-Partner management is found in the Open ERP base modules. To manager partner relations you must
+Partner management is found in the Open ERP base modules. To manage partner relations you have to
 install the CRM modules. Then start by installing a CRM profile and configure the system to meet
 your needs.
 
@@ -94,7 +94,7 @@ the CRM module if your requirements are limited to customer relationships.
 
    *Creating a new database*
 
-Once the database is installed, Open ERP proposes that you configure it with a series of questions:
+Once the database is installed, Open ERP suggests that you configure it using a series of questions:
 
 * Creating users: click :guilabel:`Skip`,
 
@@ -119,7 +119,7 @@ Once the database is installed, Open ERP proposes that you configure it with a s
 If you install the modules separately don't forget to install the ``crm_configuration`` module.
 The :mod:`crm` module just contains the generic case management system.
 
-Open ERP proposes that you select from preconfigured functions for CRM:
+Open ERP proposes a selection from pre-configured functions for CRM:
 
 * managing a prospects database,
 
@@ -141,8 +141,8 @@ Open ERP proposes that you select from preconfigured functions for CRM:
 
 You see that Open ERP's CRM module isn't limited just to Customer relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
-This book will describe just customer relationships. The other CRM functions are similar in use, so
-you shouldn't have problems with understanding those extra functions.
+This book will describe just customer relationships. The other CRM functions are similar to use, so
+you shouldn't have huge problems with understanding those functions.
 
 The following cases will be looked at for this chapter
 

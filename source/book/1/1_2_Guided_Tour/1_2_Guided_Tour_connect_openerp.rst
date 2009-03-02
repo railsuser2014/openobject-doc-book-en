@@ -9,7 +9,7 @@ go through the Setup wizard in steps:
 	#.  At the :guilabel:`Define Main Company` step you should select your own :guilabel:`Company Name` and 
 	    :guilabel:`Currency`, and address details on the first tab :guilabel:`General Information`; 
 	    and add more details on the second tab :guilabel:`Report Information` including a logo,
-	     if you have one, that appears on reports. Click :guilabel:`Next`.
+	    if you have one, that appears on reports. Click :guilabel:`Next`.
 
 	#.  At the :guilabel:`Summary` page you can go back to change details if you need.
 	    Click the :guilabel:`Install` button.

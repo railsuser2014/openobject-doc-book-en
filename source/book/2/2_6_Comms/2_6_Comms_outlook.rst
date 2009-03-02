@@ -2,6 +2,8 @@
    single: Microsoft Outlook interface
 ..
 
+.. todo:: Fix all of these database segments now.
+
 Open ERP preparation
 ====================
 
@@ -26,9 +28,8 @@ interface adapters described in the chapter.
 Microsoft Outlook interface
 ===========================
 
-Everything that you can do with the Thunderbird plugin you can also do with the Microsoft Outlook
-plugin – enabling you to carry out a series of Open ERP operations directly from Outlook, such
-as:
+The Microsoft Outlook plugin enables you to carry out a series of Open ERP operations directly
+from the Outlook email client:
 
 * create a contact or partner from an email,
 
@@ -44,7 +45,7 @@ as:
 Installing the Outlook plugin
 -----------------------------
 
-To start, you must install the \ ``email_interface``\   module in Open ERP. It's the same module as
+To start, you must install the :mod:`email_interface` module in Open ERP. It's the same module as
 used by the Thunderbird extension. Don't install it again if it's already there (which it might be
 because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
 functionality – so some of your staff may use one and other may use the other).
@@ -59,7 +60,7 @@ Using the Outlook plugin
 ------------------------
 
 Using the Microsoft Outlook plugin is quite similar to using the Thunderbird extension. In Outlook
-find the menu :menuselection:`Tools --> Tiny ERP Options`.
+find the menu :menuselection:`Tools --> Open ERP Options`.
 
 .. figure::  images/outlook_menu.png
    :align: center
@@ -67,7 +68,7 @@ find the menu :menuselection:`Tools --> Tiny ERP Options`.
    *Configuration menu for the interface between Outlook and Open ERP*
 
 In the window that you use for configuring the Outlook plugin you can enter parameters for accessing
-the Tiny server, with various options for:
+the Open ERP server, with various options for:
 
 * how to handle attachments,
 
