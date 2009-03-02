@@ -201,7 +201,11 @@ latex_documents = [
 #latex_use_parts = False
 
 # Additional stuff for the LaTeX preamble.
-latex_preamble = '\DeclareUnicodeCharacter{00A0}{~}'
+#latex_preamble = '' # DEPRECATED sinc sphinx 0.5 (use 'latex_elements')
+
+latex_elements = {
+    'preamble': "\DeclareUnicodeCharacter{00A0}{~}",
+}
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
