@@ -19,8 +19,7 @@ Managing Customer Relationships
  Open ERP can share information through its interfaces to the most common office applications,
  minimizing disruption to your operations when you first install it.
  Your staff can build on their previous productivity by continuing to use their email and office
- systems,
- now connected to Open ERP, transferring to the Open ERP interface only if they need to.
+ systems, now connected to Open ERP, transferring to the Open ERP interface only if they need to.
 
 .. toctree::
     :maxdepth: 1
