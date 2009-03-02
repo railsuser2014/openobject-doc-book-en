@@ -162,7 +162,7 @@ html_last_updated_fmt = '%Y-%m-%d'
 #html_split_index = False
 
 # If true, the reST sources are included in the HTML build as _sources/<name>.
-html_copy_source = False
+html_copy_source = True
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -187,18 +187,30 @@ htmlhelp_basename = 'openobject-doc'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
+#latex_documents = [
+#  ('index', 'openobject-doc.tex', ur'openobject Documentation',
+#   ur'OpenObject Community', 'manual'),
+#]
+
 latex_documents = [
-  ('index', 'openobject-doc.tex', ur'openobject Documentation',
-   ur'OpenObject Community', 'manual'),
+  ('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner²', 'manual'),
+  ('bi/index', 'openobject-bi.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
+  #('customize', 'openobject-customize.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
+  ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
+  ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
+  ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
+  ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
+  #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
+  ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = '.static/openerp.jpg'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-#latex_use_parts = False
+latex_use_parts = True
 
 # Additional stuff for the LaTeX preamble.
 #latex_preamble = '' # DEPRECATED sinc sphinx 0.5 (use 'latex_elements')
@@ -208,7 +220,7 @@ latex_elements = {
 }
 
 # Documents to append as an appendix to all manuals.
-#latex_appendices = []
+#latex_appendices = ['doc_copyright.rst']
 
 # If false, no module index is generated.
 #latex_use_modindex = True
