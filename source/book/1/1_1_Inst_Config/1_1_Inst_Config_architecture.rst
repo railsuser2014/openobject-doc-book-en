@@ -39,7 +39,7 @@ responsive, so more satisfying to use.
     The Tiny company will continue to support two clients for the foreseeable
     future, so you can use whichever client you prefer.
 
-An Open ERP system is formed by three main components:
+An Open ERP system is formed from three main components:
 
 * the PostgreSQL database server, which contains all of the databases, each of which contains all
   data and most elements of the Open ERP system configuration,
