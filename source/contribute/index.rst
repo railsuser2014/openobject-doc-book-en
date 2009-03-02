@@ -9,6 +9,7 @@ How To Contribute
     introduction
     opensource_vision
     working_in_teams
+    planet
     using_bazaar
     developing_modules
     distribute_modules
