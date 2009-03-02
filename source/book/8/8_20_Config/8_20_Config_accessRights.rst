@@ -95,8 +95,8 @@ just created.
 
    *Groups that have access to the :menuselection:`Stock Management` menu*
 
-Save the user, then go into the menu :menuselection:`Administration --> Security --> Define Access
-to Menu-Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to
+Save the user, then go into the menu :menuselection:`Administration --> Security --> Grant Access
+to Menus` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to
 get the :menuselection:`Stock Management` menu item. In the form describing the menu, add \ ``Stock1``\
 into the :guilabel:`Groups` field. While you're at it, also add the \ ``admin``\   group there. From
 now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see
@@ -170,7 +170,9 @@ You can manage four access modes on objects independently:
 (access_control.png)Access control to invoices for the admin group
 
 To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
-Security --> Access Controls` . You give a  *Name*  to the access control, select a  *Group* , and
+Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there 
+and click :guilabel:`Edit`. 
+You give a  *Name*  to the access control, select a  *Group* , and
 the object ( *Model* ), then check the checkbox corresponding to each of the four  *Access*  modes.
 
 If you don't specify any group in the access rules, the rule is applied to all groups. So to remove

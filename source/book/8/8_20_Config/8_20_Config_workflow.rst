@@ -25,10 +25,12 @@ client.
 Defining workflows
 ------------------
 
+.. todo:: Process
+
 Workflows can be created and modified in Open ERP's user interface.
 
 You can look at the specifications of the workflow for the sales order above using the menu
-:menuselection:`Administration --> Configuration --> Low level --> Base --> Workflow`. It's the
+:menuselection:`Administration --> Customization --> Workflow Definitions --> Workflows`. It's the
 process named sale.order.basic. All of the nodes appearing in the graph are listed in the field
 :guilabel:`Activities`, and all of the arrows are listed in the field :guilabel:`Transitions`.
 
@@ -58,7 +60,7 @@ workflows accompanying the various documents. For example, if a user has taken t
 manager he takes on the task of approving holiday requests from his staff. So his role will be
 integrated in the holiday request workflow.
 
-Role definition is done in :menuselection:`Administration --> Users --> Roles Structure --> Define
+Role definition is done in :menuselection:`Administration --> Users --> Roles Structure -->
 Roles`, the same way you define groups, except that roles can be hierarchical: a parent role has the
 same influence as all of its child roles (for example, the sales director would be able to do all of
 the things that have been defined for a sales person, as well as anything defined specifically for

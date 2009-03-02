@@ -262,7 +262,7 @@ state to the \ ``Open``\   state.
 
 When you've validated an invoice, Open ERP gives it a unique number from a defined sequence. By
 default it takes the form \ ``Year / Sequence Number``\   for example \ ``2008/00101``\  . If you
-want to modify the sequence numbers use the menu :menuselection:`Administration --> Custom -->
+want to modify the sequence numbers use the menu :menuselection:`Administration --> Configuration -->
 Sequences --> Sequences`.
 
 Accounting entries corresponding to this invoice are automatically generated when you approve the
@@ -368,7 +368,7 @@ When the invoice has been cancelled you then have the possibility of putting it 
 	you find yourself with a break in the numbering you must go and modify the sequence,
 	redo the invoice and replace the sequence number with its original value.
 
-	You can control the sequences using the menu :menuselection:`Administration --> Custom -->
+	You can control the sequences using the menu :menuselection:`Administration --> Configuration -->
 	Sequences --> Sequences`.
 
 Attention: cancelling an invoice will cause a break in the number sequence of your invoices. You're

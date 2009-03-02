@@ -1,62 +1,58 @@
 To connect to Open ERP
 =======================
 
-Connect to the new \ ``openerp_ch02``\   database as user \ ``admin``\   with its default password \
-``admin``\   (you might have to wait a couple of seconds before the system will allow you to connect
-if you've only just created it). Since this is the first time you've connected to it you'll have to
+Since this is the first time you've connected to it you'll have to
 go through the Setup wizard in steps:
 
-	#.  :guilabel:`Select a profile` : select :guilabel:`Profile` \ ``Minimal Profile``\   since you'll
-	    be adding more modules in just a moment.
+	#.  :guilabel:`Select a profile` : select ``Minimal Profile`` and click :guilabel:`Next`.
 
-	#.  :guilabel:`Define Main Company` and :guilabel:`Report Header` : change anything you like on
-	    this page to match your own situation. Only the :guilabel:`Company Name` and :guilabel:`Currency`
-	    are required but you should aim to put something relevant in all fields. If you alter the currency
-	    you'll need to click the :guilabel:`Search / Open a resource` icon to the right of the field to
-	    register the name of the currency you type in.
+	#.  At the :guilabel:`Define Main Company` step you should select your own :guilabel:`Company Name` and 
+	    :guilabel:`Currency`, and address details on the first tab :guilabel:`General Information`; 
+	    and add more details on the second tab :guilabel:`Report Information` including a logo,
+	     if you have one, that appears on reports. Click :guilabel:`Next`.
 
-	#.  :guilabel:`Summary` : just click the :guilabel:`Install` button.
+	#.  At the :guilabel:`Summary` page you can go back to change details if you need.
+	    Click the :guilabel:`Install` button.
 
-	#.  :guilabel:`Installation done` : click :guilabel:`Ok`.
+	#.  Finally, at the :guilabel:`Installation done` page, click :guilabel:`Start Configuration`.
+	
+Configuration consists of a set of wizards that help you through options for the installed modules.
+Hardly anything is installed so this is a very simple process at the moment.
+   
+    #.  At the first screen click :guilabel:`Continue` to go into the first wizard. 
+        Choose :guilabel:`View Mode` : :guilabel:`Simplified Interface`
+        and then click :guilabel:`Set` to save it.
 
-Now you're signed in as an administrator you'll be able to add functionality and modify database
-settings.
+    #.  Click :guilabel:`Skip Step` to step over the next wizard, which would enable you to add other users.
 
-.. note:: Dashboard after connection
+    #.  You've now reached the end of the configuration so click :guilabel:`Continue` to start using the
+        system as the Administrator.
 
-	If you'd installed any of the other profiles from the installation wizard you'd find that your
-	login screen shows a dashboard with information related to your user account rather than the main
-	menu.
-
-	When that happens the main menu is still available, as you'll see later in this chapter. If you're
-	using the web client you can reach the main menu by clicking the :guilabel:`Main Menu` link towards
-	the top left of the window. If you're using the GTK client the main menu is in the first tab (which
-	is hidden – it's the second tab containing the dashboard that's initially showing).
-
-Once you're displaying the main menu you're able to see the following screen items:
+Once you're displaying the main menu you're able to see the following screen items, 
+as shown in screenshot :ref:`fig-oech2-main`:
 
 * the :guilabel:`Preferences` toolbar to the top right, showing the user name, links to the :guilabel:`Home` page,
   :guilabel:`Preferences`, :guilabel:`About` and :guilabel:`Logout`,
 
 * just below you'll find information about the :guilabel:`Request` system,
 
-* links to the :guilabel:`Main Menu` and the :guilabel:`Shortcuts`,
+* links to the :guilabel:`MAIN MENU` and the :guilabel:`SHORTCUTS`,
 
-* information about copyright at the bottom of the page,
+* information about copyright and the database you're logged into at the bottom of the page,
 
-* the main contents of the window flanked by the menu toolbar to the left and some links up and to
-  the right.
+* the main contents of the window with by the menu toolbar to the left: links generally line up on
+  the right but there are none to show at the moment.
+
+.. _fig-oech2-main:
 
 .. figure:: images/main_window_openerp_ch02.png
    :align: center
 
    *The Main Menu of the openerp_ch02 database*
 
-Three menus are available on the left:
+Two menus are available on the left:
 
 * :guilabel:`Partners`,
-
-* :guilabel:`Financial Management`,
 
 * :menuselection:`Administration`.
 
@@ -71,9 +67,9 @@ When you're connected to Open ERP the Preferences toolbar indicates which user 
 So it should currently be showing :guilabel:`Welcome Administrator` (unless you logged in as another
 user and it's reflecting the name of that user instead).
 
-You'll find a link to the :guilabel:`Home`  page to its right. This takes you to either the
+You'll find a link to the :guilabel:`Home` page to its right. This takes you to either the
 dashboard or the available menus, depending on the user configuration. In the case of the \
-``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the
+``openerp_ch02``\ database so far the Home page is the Main Menu. But in general each user of the
 system is presented with a dashboard that's designed to show performance indicators and urgent
 documents that are most useful to someone of the user's position in the company. You'll see how to
 assign dashboards to different users in a later chapter, :ref:`ch-config`.
@@ -93,17 +89,26 @@ assign dashboards to different users in a later chapter, :ref:`ch-config`.
 	user's available time will be converted to English time.
 
 The next element in the Toolbar is a link to :guilabel:`Preferences`. By clicking that link you
-reach a page where the current user can set a timezone and a working language:
+reach a page where the current user can set their password, a timezone, a working language, and
+a signature:
+
+* The :guilabel:`Password` field gives the user the opportunity to change their own password.
+  You should take steps (perhaps written policies) to prevent users making these too trivial. 
 
 * The :guilabel:`Language` field enables the user's working language to be changed. But first the
   system must be loaded with other languages for the user to be able to choose an alternative, which
-  is described in the next subsection of this chapter.
+  is described in the next subsection of this chapter. This is a mandatory field, although might
+  initially be set as blank.
 
 * The :guilabel:`Timezone` setting indicates the user's location to Open ERP. This can be different
   from that of the server. All of the dates in the system are converted to the user's timezone
   automatically.
 
-The :guilabel:`About` link gives information about the development of the Open ERP software.
+* The :guilabel:`Signature` field gives the user a place for the signature attached to messages sent
+  from within Open ERP. 
+
+The :guilabel:`About` link gives information about the development of the Open ERP software and 
+various links to other information.
 
 The :guilabel:`Logout` link enables you to logout and return to the original login page. You can
 then login to another database, or to the same database as another user. This page also gives you
@@ -130,22 +135,25 @@ sent to that partner will be automatically translated into that language.
 	The base version of Open ERP is translated into the following languages: English, German, Chinese,
 	Spanish, Italian, Hungarian, Dutch, Portuguese, Romanian, Swedish and Czech.
 
-	But other languages are also available in the Forge (http://tinyforge.org): Arabic, Afghan,
+	But other languages are also available: Arabic, Afghan,
 	Austrian, Bulgarian, Indonesian, Finnish, Thai, Turkish and Vietnamese..
 
 As administrator you can install a new main working language into the system.
 
 	#. Select :menuselection:`Administration` in the Menu Toolbar and click
-	   :menuselection:`Translations --> Load New Language` in the main menu window,
+	   :menuselection:`Translations --> Load an Official Translation` in the main menu window,
 
 	#. Select the language to install, \ ``French``\  for example, and click on :guilabel:`Start
 	   Installation`,
 
-	#. When the message :guilabel:`Installation finished` appears, click :guilabel:`OK` to return to
-	   the menu.
+	#. When the message :guilabel:`Installation done` appears in the :guilabel:`Language file loaded` window,
+	   click :guilabel:`OK` to return to  the menu. (Your system will actually need the French locale loaded
+	   to be able to do this, so you may not be successful here.)
 
 To see the effects of this installation change the preferences of your user to change the working
-language. The main menu is immediately translated in the selected language. If you're using the GTK
+language (you may first need to ensure that you have selected English as your language before
+you're given the French option). 
+The main menu is immediately translated in the selected language. If you're using the GTK
 client you'll first have to close the menu then open a new main menu to start seeing things in the
 new language.
 
@@ -153,8 +161,8 @@ new language.
 
    From this point in the book navigation from the main menu is written as a series of menu entries
    connected by the :menuselection:`-->` character. Instead of seeing “ Select Administration in
-   the Menu toolbar then click Translations > Load New Language ” you'll just get “ use menu
-   :menuselection:`Administration --> Translations --> Load New Language` ”.
+   the Menu toolbar then click Translations > Load an Official Translation ” you'll just get “ use menu
+   :menuselection:`Administration --> Translations --> Load an Official Translation` ”.
 
 .. index:: Requests
 
@@ -186,7 +194,7 @@ Send a request to get an understanding of its functionality:
 	#. Complete the subject of the request, such as \ ``How are you?``\  then give a description of the
 	   enquiry in the field.
 
-	#. Click the :guilabel:`Search` button to the right of the :guilabel:`Send to` field and select
+	#. Click the :guilabel:`Search` button to the right of the :guilabel:`To` field and select
 	   :guilabel:`Administrator` in the window that opens (that's the user that you're already connected
 	   as).
 
@@ -195,7 +203,6 @@ Send a request to get an understanding of its functionality:
 
 	#. Click :guilabel:`Send` to send the request to the intended recipient – that's yourself in this
 	   case. Then click :guilabel:`Main Menu` to return to the original screen.
-
 
 .. figure:: images/request_tab.png
    :align: center
@@ -260,7 +267,8 @@ Because you logged in as Administrator, you have all the access you need to conf
 system. A second user, \ ``Demo User``\  , is also present in the system as part of the
 demonstration data. Click the \ ``Demo User``\   name to open a non-editable form on that user.
 
-Click the :guilabel:`Security`  tab to see that the demo user is a member of no groups, has no roles
+Click the :guilabel:`Security`  tab to see that the demo user is a member of only the ``Employees`` group,
+has no roles
 and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you
 follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group,
 which gives it more advanced rights to configure new users.
@@ -268,7 +276,7 @@ which gives it more advanced rights to configure new users.
 .. tip::  Roles, Groups and Users
 
 	Users and groups provide the structure for specifying access rights to different documents. Their
-	setup answers the question "who has access to what?"
+	setup answers the question "Who has access to what?"
 
 	Roles are used in business processes for permitting or blocking certain steps in the workflow of a
 	given document. For example you can assign the role of approving an invoice. Roles answer the
@@ -318,15 +326,18 @@ on it:
   name, its primary language, your different contacts at that partner and the categories it belongs
   to.
 
-* the :guilabel:`Extra Info` tab contains information that's slightly less immediate.
+* the :guilabel:`Sales & Purchases` tab contains information that's slightly less immediate.
 
-* the :menuselection:`Event History` tab contains the history of all the events that the partner has
+* the :menuselection:`History` tab contains the history of all the events that the partner has
   been involved in. These events are created automatically by different system documents: invoices,
-  orders, support requests and so on. These give you a rapid view of the partner's history on a single
+  orders, support requests and so on, from a list that can be configured in the system. 
+  These give you a rapid view of the partner's history on a single
   screen.
 
-* the :menuselection:`Properties` tab contains partner settings related to accounting, inventory and
-  other areas: you can leave this alone for the moment.
+* the :menuselection:`Notes` tab is an area for free text notes.
+
+To the right of the form is a list of Reports, Actions and Links related to a partner. Click some of 
+them to get a feel for their use.
 
 .. figure:: images/partner.png
    :align: center
@@ -343,6 +354,10 @@ on it:
 	Partner Categories enable you to segment different partners according to their relation with you
 	(client, prospect, supplier, and so on). A partner can belong to several categories – for example
 	it may be both a customer and supplier at the same time.
+	
+	But there are also Customer, Supplier and Rental checkboxes on the partner form, which are different.
+	These checkboxes are designed to enable Open ERP to quickly select what should appear on some of the
+	system drop-down selection boxes. They, too, need to be set correctly.
 
 Partner Categories
 ^^^^^^^^^^^^^^^^^^^
@@ -363,7 +378,7 @@ as :guilabel:`Supplier`).
 The administrator can define new categories. So you'll create a new category and link it to a
 partner:
 
-	#. Use :menuselection:`Partners --> Configuration --> Categories --> Edit Category` to reach a list
+	#. Use :menuselection:`Partners --> Configuration --> Partner Categories` to reach a list
 	   of the same categories as above but in a list view rather than a hierarchical tree structure.
 
 	#. Click :guilabel:`New` to open an empty form for creating a new category
@@ -380,8 +395,8 @@ partner:
 	the field turns red to indicate that there's a problem. It's impossible to save the form until
 	you've completed every required field.
 
-You can review your new category structure using :menuselection:`Partners --> Partners by category`
-. You should see the new structure of \ ``Prospects / My Prospects``\   there.
+You can review your new category structure using :menuselection:`Partners --> Partners by category`. 
+You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 .. figure:: images/main_window_partner_tab.png
    :align: center

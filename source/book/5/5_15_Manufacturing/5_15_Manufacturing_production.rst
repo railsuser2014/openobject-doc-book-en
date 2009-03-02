@@ -840,7 +840,7 @@ to determine the priorities between the different production orders, deliveries 
 purchases.
 
 You can decide the starting time by modifying the corresponding action in the menu
-:menuselection:`Administration --> Configuration --> Planning --> Planned Actions`. Modify the
+:menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Modify the
 resource called 'Run MRP Scheduler'.
 
 .. figure:: images/stock_cron.png

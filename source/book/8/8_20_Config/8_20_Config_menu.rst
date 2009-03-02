@@ -18,6 +18,8 @@ access rights to the menus and the various underlying business objects.
    single: Change User Password
 ..
 
+.. todo:: I don't think this is useful as it stands, needs to be modified
+
 Letting users change their password themselves
 ----------------------------------------------
 
@@ -241,7 +243,7 @@ CSV form.
 
 .. todo:: what's this?
 
-.. :menuselection:`Administration --> Translation --> Export language`
+.. :menuselection:`Administration --> Translations --> Import/Export --> Export a Translation file`
 .. *Français*  *New Language* \ ``.csv``\
 
 .. note:: UTF-8 format
@@ -274,8 +276,8 @@ English translation will automatically be used on the the form you see.
    menu.
 
 You should then load the new file into your Open ERP system using the menu
-:menuselection:`Administration --> Translation --> Import language`. You've then got two ways
-forward:
+:menuselection:`Administration --> Translations --> Import/Export --> Import a Translation file`. 
+You've then got two ways forward:
 
 * you can overwrite the previous translation by using the same name as before (so you could have a
   special 'standard French' translation by reusing the :guilabel:`Name` \ ``Français``\   and

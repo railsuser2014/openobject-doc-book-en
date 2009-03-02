@@ -21,7 +21,7 @@ The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show the UML classes w
 
    *UML class diagram without :mod:`base_contact`*
 
-A concrete example will illustrate the concept of multiple relationships between contacts and
+A concrete example illustrates the concept of multiple relationships between contacts and
 partners (companies)  The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
 business) and several contacts attached to these addresses.
 

@@ -325,7 +325,7 @@ the performance of your teams in many ways.
 
 Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
 Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
-into your server using :menuselection:`Administration --> Modules Management --> Import New Module`.
+into your server using :menuselection:`Administration --> Modules Management --> Import module`.
 Then, for both databases \ ``openerp_04X``\   and \ ``openerp_ch04``\  , install it into the
 database.
 
