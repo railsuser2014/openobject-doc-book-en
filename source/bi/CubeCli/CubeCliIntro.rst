@@ -74,7 +74,8 @@ Options:
 This will give output on CLI as :
 
 .. csv-table:: 
-   :header: " ","credit_limit","count"
+   :header: "\ ","credit_limit","count"
 
    "All user","[66700.0]","[21.0]"
+
 

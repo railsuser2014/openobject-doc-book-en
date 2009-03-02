@@ -55,7 +55,7 @@ session.
 At the end of the installation, the setup wizard proposes to open, Open ERP Prompt, from
 where you can prepare your server, as described below.
 
-.. image:: ../../img/Terp_server.finish_install.png
+.. image:: ../../img/Terp_server_finish_install.png
 
 Preparing the server for the first time run
 +++++++++++++++++++++++++++++++++++++++++++
@@ -198,21 +198,21 @@ You can now start the Open ERP Server service from the command prompt with a sim
 
   net start openerp-service
 
-.. image:: ../../img/Terp_service.start.png
+.. image:: ../../img/Terp_service_start.png
 
 You can also stop it in a similar way, in case the service is running but you need to
 reconfigure it: ::
 
  net stop openerp-service
 
-.. image:: ../../img/Terp_service.stop.png
+.. image:: ../../img/Terp_service_stop.png
 
 From the main program menu
 ++++++++++++++++++++++++++
 
 You can also control the service from the Program menu:
 
-.. image:: ../../img/Terps_menu.server_controls.png
+.. image:: ../../img/Terps_menu_server_controls.png
 
 From the service manager
 ++++++++++++++++++++++++
@@ -220,18 +220,18 @@ From the service manager
 The service and some runtime information is also accessible in the Computer management in
 Administration tools.
 
-.. image:: ../../img/Terp_service.mmc_terp_service.png
+.. image:: ../../img/Terp_service_mmc_terp_service.png
 
 .. 
 
-.. image:: ../../img/Terp_service.mmc_logs.png
+.. image:: ../../img/Terp_service_mmc_logs.png
 
 The logging service offers additional information about the execution of the Open ERP Server
 service.
 
 In the service manager you can define how the service should act in case of server failure.
 
-.. image:: ../../img/Terp_service.mmc_control_actions.png
+.. image:: ../../img/Terp_service_mmc_control_actions.png
 
 Monitoring Open ERP Server
 --------------------------
@@ -248,7 +248,7 @@ You can find out whether Open ERP Server is running by opening the Windows Task 
 when you look at the Processes tab, you will see OpenERPServerService.exe and openerp-
 server.exe and that these two processes are running as SYSTEM user.
 
-.. image:: ../../img/Terp_service.running.png
+.. image:: ../../img/Terp_service_running.png
 
 Configuring Open ERP Server
 ---------------------------
@@ -257,9 +257,9 @@ Open ERP Server menu contains a direct link to the configuration file used by th
 This way you can edit the configuration and then restart the service to load the new
 configurations.
 
-.. image:: ../../img/Terps_menu.editconf.png
+.. image:: ../../img/Terps_menu_editconf.png
 
-.. image:: ../../img/Terp_server.conf.png
+.. image:: ../../img/Terp_server_conf.png
 
 Be extremely cautious when editing the server configuration directly, you can crash the
 entire system with inappropriate values.

@@ -747,7 +747,7 @@ where:
 
     * method is an object method used to check the constraint. This method must have the following signature::
 
-                def _name_of_the_method(self, cr, uid, ids): 
+                def _name_of_the_method(self, cr, uid, ids):
                         ...
                         return True|False
 

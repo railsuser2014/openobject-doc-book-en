@@ -34,7 +34,7 @@ Installing the OpenERP Web
 
 Click on the executable installation file you've just downloaded and select the installation path.
 
-.. image:: ../../img/Web.01.install_path.png
+.. image:: ../../img/Web_01_install_path.png
 
 Preparing the web server for the first time run
 +++++++++++++++++++++++++++++++++++++++++++++++

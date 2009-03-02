@@ -31,18 +31,18 @@ Default values
 
 leave the default selection:
 
-.. image:: ../../img/06.proc_lang.png
+.. image:: ../../img/06_proc_lang.png
 
 .. describe:: Contrib modules screen:
 
 You don't need to change the default selections:
 
-.. image:: ../../img/07.contrib_modules.png
+.. image:: ../../img/07_contrib_modules.png
 
 Account Domain lookup failure
 """""""""""""""""""""""""""""
 
-.. image:: ../../img/100.internal_account_failure.png
+.. image:: ../../img/100_internal_account_failure.png
 
 If you see this screen at the end of PostgreSQL installation, it is due to an incorrect ``Account domain`` in the Service
 configuration screen. By default the installer fills this value automatically, so if you have changed it, it may cause the
@@ -77,24 +77,24 @@ when launching Open ERP Server
 
 If there's another problem similar to this situation:
 
-.. image:: ../../img/101.erp2pgsql_conn_fail.png
+.. image:: ../../img/101_erp2pgsql_conn_fail.png
 
 You should have look if the service PostgreSQL is running in the Services manager (Control Panel : Administration tools -
 > Services)
 
-.. image:: ../../img/Pgsql.51.service_status.png
+.. image:: ../../img/Pgsql_51_service_status.png
 
 You can edit the service configuration to have PostgreSQL starting as a service at system boot
 
-.. image:: ../../img/Pgsql.53.service_start_mode.png
+.. image:: ../../img/Pgsql_53_service_start_mode.png
 
 Or you can start it manually every time from the programs menu.
 
-.. image:: ../../img/104.pgsql_start_service.png
+.. image:: ../../img/104_pgsql_start_service.png
 
 If your PostgreSQL service is running, but you get connection errors, you can restart the service.
 
-.. image:: ../../img/Pgsql.52.service_restart.png
+.. image:: ../../img/Pgsql_52_service_restart.png
 
 GTK client localization
 +++++++++++++++++++++++

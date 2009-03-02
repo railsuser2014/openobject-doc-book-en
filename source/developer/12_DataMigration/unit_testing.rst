@@ -111,7 +111,7 @@ Notice that workflow tags (as all other tags) are interpreted as root which migh
 	
 	<workflow model="sale.order" ref="test_order_1" action="manual_invoice" uid="base.user_admin" />
 
-(here we had to specify the module base − from which user_admin comes − because this tag is supposed to be placed in an xml file of the sale module)
+(here we had to specify the module base - from which user_admin comes - because this tag is supposed to be placed in an xml file of the sale module)
 
 In some particular cases, you do not know a priori the id of the object to manipulate through the workflow. It is thus allowed to replace the ref attribute by a value child tag:
 
