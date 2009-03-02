@@ -25,7 +25,7 @@ Description
 ::
 
   This is an extension module of document management system with
-      * Implementation of Versioning and lock system
+      * Implementation of Versioning and lock system
 
 Dependencies
 ------------
