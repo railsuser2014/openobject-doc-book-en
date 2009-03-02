@@ -35,23 +35,22 @@ settings.
 
 Once you're displaying the main menu you're able to see the following screen items:
 
-* the Preferences toolbar to the top right, showing the user name, links to the Home page,
-  Preferences, About and Logout,
+* the :guilabel:`Preferences` toolbar to the top right, showing the user name, links to the :guilabel:`Home` page,
+  :guilabel:`Preferences`, :guilabel:`About` and :guilabel:`Logout`,
 
-* just below you'll find information about the Request system,
+* just below you'll find information about the :guilabel:`Request` system,
 
-* links to the Main Menu and the Shortcuts,
+* links to the :guilabel:`Main Menu` and the :guilabel:`Shortcuts`,
 
 * information about copyright at the bottom of the page,
 
 * the main contents of the window flanked by the menu toolbar to the left and some links up and to
   the right.
 
-
 .. figure:: images/main_window_openerp_ch02.png
    :align: center
 
-   *The Main Menu of the openerp_ch02 database.*
+   *The Main Menu of the openerp_ch02 database*
 
 Three menus are available on the left:
 
@@ -61,11 +60,9 @@ Three menus are available on the left:
 
 * :menuselection:`Administration`.
 
-
 .. index::
    single: Preferences
 ..
-
 
 Preferences toolbar
 ---------------------
@@ -79,7 +76,7 @@ dashboard or the available menus, depending on the user configuration. In the ca
 ``openerp_ch02``\   database so far the Home page is the Main Menu. But in general each user of the
 system is presented with a dashboard that's designed to show performance indicators and urgent
 documents that are most useful to someone of the user's position in the company. You'll see how to
-assign dashboards to different users in Chapter 13.
+assign dashboards to different users in a later chapter, :ref:`ch-config`.
 
 .. index::
    single: TimeZone
@@ -203,7 +200,7 @@ Send a request to get an understanding of its functionality:
 .. figure:: images/request_tab.png
    :align: center
 
-   *Creating a new request.*
+   *Creating a new request*
 
 To check your requests:
 
@@ -282,7 +279,7 @@ groups defined in the system. If you open the form view of the \ ``admin``\   gr
 name in the list, the first tab give you the list of all the users who belong to this group.
 
 Click the Security tab and it gives you details of the access rights for that group. These are
-detailed in Chapter 13, but you can already see there further up in the window, the list of menus
+detailed later in :ref:`ch-config`, but you can already see there further up in the window, the list of menus
 reserved for the admin group. By convention, the \ ``admin``\   in Open ERP has rights of access to
 the :menuselection:`Configuration`  menu in each section. So \ ``Partners / Configuration``\   is
 found in the list of access rights but \ ``Partners``\   isn't found there because it's accessible
@@ -290,7 +287,7 @@ to all users.
 
 You can create some new users to integrate them into the system. Assign them to predefined groups to
 grant them certain access rights. Then try their access rights when you login as these users.
-Management defines these access rights as described in Chapter 13.
+Management defines these access rights as described in :ref:`ch-config`.
 
 .. note::  Changes to default access rights
 
@@ -331,13 +328,11 @@ on it:
 * the :menuselection:`Properties` tab contains partner settings related to accounting, inventory and
   other areas: you can leave this alone for the moment.
 
-
 .. figure:: images/partner.png
    :align: center
    :scale: 80
 
-   *Partner form.*
-
+   *Partner form*
 
 .. index::
   single: Partner; Categories
@@ -360,12 +355,10 @@ Components Supplier`. You'll see that if a company is in a subcategory (such as
 :guilabel:`Components Supplier` ) then it will also show up when you click the parent category (such
 as :guilabel:`Supplier`).
 
-
 .. figure:: images/main_window_partner_menu_config.png
    :align: center
 
-   *Categories of partner in a hierarchical structure : Customer,Prospect,Supplier...*
-
+   *Categories of partner in a hierarchical structure, for example Customer, Prospect, Supplier*
 
 The administrator can define new categories. So you'll create a new category and link it to a
 partner:
@@ -376,10 +369,10 @@ partner:
 	#. Click :guilabel:`New` to open an empty form for creating a new category
 
 	#. Enter \ ``My Prospects``\  in the field :guilabel:`Name of Category`. Then click on the
-	   :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select \
-	   ``Prospect``\  in the list that appears.
+	   :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select 
+	   \ ``Prospect``\  in the list that appears.
 
-	#. Then save your new category using the Save button.
+	#. Then save your new category using the :guilabel:`Save` button.
 
 .. tip:: Required Fields
 
@@ -390,12 +383,10 @@ partner:
 You can review your new category structure using :menuselection:`Partners --> Partners by category`
 . You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
-
 .. figure:: images/main_window_partner_tab.png
    :align: center
 
-   *Creating a new partner category : My prospects.*
-
+   *Creating a new partner category :guilabel:`My prospects`*
 
 To create a new partner and link it to this new category open a new partner form to modify it.
 
@@ -404,10 +395,10 @@ To create a new partner and link it to this new category open a new partner form
 	#. Then click on the search icon to the right of the :guilabel:`Categories` field and select your
 	   new category from the list that appears: \ ``Prospect / My Prospects``\
 
-	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category \
-	   ``Prospect / My prospects.``\
+	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category 
+	   \ ``Prospect / My prospects.``\
 
-	#. Monitor your modification in the menu :menuselection:`Partners --> Partners by category`  Select
+	#. Monitor your modification in the menu :menuselection:`Partners --> Partners by category`. Select
 	   the category :guilabel:`My Prospect`. The list of partners opens and you'll find your new partner
 	   there in that list.
 
@@ -416,10 +407,6 @@ To create a new partner and link it to this new category open a new partner form
 	If you need to search through a long list of partners it's best to use the available search
 	criteria rather than scroll through the whole partner list. It's a habit that'll save you a lot of
 	time in the long run as you search for all kinds of documents.
-
-
----------------------
-
 
 	.. note::  *Example Categories of partners*
 

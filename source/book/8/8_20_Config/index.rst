@@ -1,4 +1,6 @@
 
+.. _ch-config:
+
 **************************************
 Configuring and Administering Open ERP
 **************************************

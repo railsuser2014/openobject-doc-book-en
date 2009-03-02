@@ -1,11 +1,12 @@
 
+.. _part-phys:
+
 #######################
 Stock and Manufacturing
 #######################
 
-
-
 .. toctree::
+    :maxdepth: 1
 
     5_14_Stock/index
     5_15_Manufacturing/index

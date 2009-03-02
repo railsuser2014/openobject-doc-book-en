@@ -49,13 +49,13 @@ The invoice will be managed by the system depending on the setting of the field 
 Policy` on the order's second tab :guilabel:`Other data` :
 
 *  :guilabel:`Payment before delivery` : Open ERP creates an invoice in the \ ``Draft``\   state.
-Once this is confirmed and paid the delivery is activated.
+   Once this is confirmed and paid the delivery is activated.
 
 *  :guilabel:`Automatic Invoice after delivery` : the delivery order is produced when the order is
-validated. A draft invoice is then created when the delivery has been completed.
+   validated. A draft invoice is then created when the delivery has been completed.
 
 *  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of
-the order, and adds a button which you manually click when you're ready to create an invoice.
+   the order, and adds a button which you manually click when you're ready to create an invoice.
 
 *  :guilabel:`Invoice from the Packings`
 
@@ -92,8 +92,8 @@ In this case you should create several invoices for the one order. You've two op
 * Don't handle invoicing automatically from the order but carry out manual invoicing instead,
 
 * Create draft invoices and then link to them in the third tab  *History* , in the  *Related
-Invoices*  section. When you create an invoice from the order, Open ERP deducts the amounts of the
-invoices already linked to the order to calculate the proposed invoice value.
+  Invoices*  section. When you create an invoice from the order, Open ERP deducts the amounts of the
+  invoices already linked to the order to calculate the proposed invoice value.
 
 Cost-reimbursement contracts
 ----------------------------
@@ -101,9 +101,12 @@ Cost-reimbursement contracts
 Some contracts aren't invoiced from a price fixed on the order but from the cost of the services
 carried out. That's usually what happens in the building sector or in large projects.
 
+.. index::
+   pair: module; hr_timesheet_invoice
+
 The approach you use for this is totally different because instead of using the sales order as the
-basis of the invoice you must use the analytic accounts. For this you have to install the module \
-``hr_timesheet_invoice``\  .
+basis of the invoice you must use the analytic accounts. For this you have to install the module 
+:mod:`hr_timesheet_invoice`.
 
 An analytic account is created for each new contract. The following fields must be completed in this
 analytic account:
@@ -145,12 +148,15 @@ the level of detail which is reported on the invoice, such as the date and detai
 .. figure::  images/service_timesheet_invoice.png
    :align: center
 
-   *Screen for invoicing services.*
+   *Screen for invoicing services*
+
+.. index::
+   pair: module; account_analytic_analysis
 
 .. note:: Project Management and analytic accounts
 
 	The menu :menuselection:`Project Management --> Analytic Accounts` is only available once you have
-	installed the module ``account_analytic_analysis``.
+	installed the module :mod:`account_analytic_analysis`.
 	It provides various global financial and operational views of a project manager's projects.
 
 Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You'll
@@ -181,21 +187,21 @@ Such an approach is often used in a company but there are other options. This me
 can pose many problems for the organization and invoicing of the project:
 
 * It's extremely difficult to determine if the project is on track or not.. The endpoint is fuzzy,
-which can result in a tricky discussion with the client at the moment of final invoicing.
+  which can result in a tricky discussion with the client at the moment of final invoicing.
 
 * If the project takes more or less time than forecast, it will effectively result in under- or
-over- invoicing during the project.
+  over- invoicing during the project.
 
 * Whether you get a proper return can depend on the client. For example if the client takes a long
-time to sign off on project acceptance you can't invoice the remaining 40% even though you might
-have supplied the agreed service properly.
+  time to sign off on project acceptance you can't invoice the remaining 40% even though you might
+  have supplied the agreed service properly.
 
 * The account manager and the project manager are often different people. The project manager has to
-alert the account manager the moment that the client can be invoiced, but that moment easily can be
-forgotten or mistaken.
+  alert the account manager the moment that the client can be invoiced, but that moment easily can be
+  forgotten or mistaken.
 
 * The project can be fixed for service costs but have agreed extras, such as reimbursement for
-travel expenses. Invoicing from the order doesn't adapt well to such an approach.
+  travel expenses. Invoicing from the order doesn't adapt well to such an approach.
 
 Open ERP provides a third method for invoicing services that can be useful on long projects. This
 consists of invoicing the project periodically on the basis of time worked up to a fixed amount that
@@ -217,16 +223,16 @@ This approach offers many advantages compared with the traditional methods of in
 for fixed-price contracts:
 
 * Fixed-price contracts and cost-reimbursable contracts are invoiced in the same way, which makes
-the company's invoicing process quite simple and systematic even when the projects are mixed.
+  the company's invoicing process quite simple and systematic even when the projects are mixed.
 
 * Everything is invoiced on the basis of worked time, making it easy to forecast invoicing from
-plans linked to the different analytical accounts.
+  plans linked to the different analytical accounts.
 
 * This method of proceeding educates project managers just as much as the client because refunds
-have to be given for work done if the project slips.
+  have to be given for work done if the project slips.
 
 * Invoicing follows the course of the project and avoids a supplier's dependence on the goodwill of
-the client in approving certain phases.
+  the client in approving certain phases.
 
 * Invoicing of expenses follows the same workflow and is therefore very simple.
 
@@ -238,9 +244,12 @@ the client in approving certain phases.
 Contracts limited to a quantity
 -------------------------------
 
+.. index::
+   pair: module; account_analytic_analysis
+
 Finally certain contracts are expressed in terms of a quantity rather than a fixed amount. Support
 contracts comprising a number of prepaid hours are a case in point. To generate such contracts in
-Open ERP you should start by installing the module \ ``account_analytic_analysis``\  .
+Open ERP you should start by installing the module :mod:`account_analytic_analysis`.
 
 Then you can set a maximum number of hours for each analytic account. When employees enter their
 time worked on the support contract in the timesheets, the hours are automatically deducted from the

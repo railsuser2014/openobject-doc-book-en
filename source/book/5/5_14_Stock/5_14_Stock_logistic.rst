@@ -22,7 +22,7 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Locations` t
 .. figure:: images/stock_location_form.png
    :align: center
 
-   *Definition of a stock location.*
+   *Definition of a stock location*
 
 You should then give a name to your stock location. Now look at location types and localization.
 
@@ -61,12 +61,12 @@ the warehouse, linked to a Shop.
 .. figure:: images/stock_product_location_form.png
    :align: center
 
-   *Definition of stock locations on the product form.*
+   *Definition of stock locations on the product form*
 
 .. figure:: images/stock_partner_location_form.png
    :align: center
 
-   *Definition of stock locations on the partner form.*
+   *Definition of stock locations on the partner form*
 
 Localization
 ------------
@@ -78,7 +78,7 @@ location given to partner deliveries.
 
 .. tip:: Subcontracting production
 
-    You'll see in the chapter about Manufacturing that it is possible to assign a location to a
+    You'll see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
     manufacturing workcenter.
     If this location is at a supplier's you must give it an address so that Open ERP can prepare a
     delivery order
@@ -131,7 +131,7 @@ Accounting valuation in real time
 If you have experience of managing with traditional software you'll know the problem of getting
 useful indicators. If you ask your accountant for a stock valuation or the value added by production
 he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
-entirely different figure. It's terrible because you have no idea who's right.
+entirely different amount. It's terrible because you have no idea who's right.
 
 In Open ERP the management of stock is totally integrated with the accounts, to give strong
 coherence between the two systems. The double-entry structure of locations enables a very precise
@@ -179,9 +179,12 @@ The manual mode will create an internal move order to the linked location once p
 the source locations. This order will wait for a confirmation of the move by a user. This enables
 you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
+.. index::
+   pair: module; stock_location
+
 .. tip:: Product Logistics
 
-    The module ``stock_location`` enables you to generate paths to follow, not just at the level of
+    The module :mod:`stock_location` enables you to generate paths to follow, not just at the level of
     locations but also at the level of products.
     It then enables you to manage default locations for a given product or to refer to the products
     as a function of
@@ -205,7 +208,7 @@ of the partner form. If the field is set to 'fixed', the destination location is
 :guilabel:`Location if link is fixed`.
 
 Some operations take a certain time between order and execution. To account for this lead time, you
-can set a figure in days in the field :guilabel:`Link lead time`. Then the extra move (automatic or
+can set a value in days in the field :guilabel:`Link lead time`. Then the extra move (automatic or
 not) will be carried out several days after the original move. If you use the mode 'automatic
 without step', the lead time is inserted directly into the initial order. In this way you can add
 security lead times at certain control points in the warehouse.
@@ -237,7 +240,7 @@ Customer orders are usually handled in one of two ways:
 * item note (or preparation order), confirmed when the item is ready to send,
 
 * delivery order (or freight note), confirmed when the transporter has delivered the item to a
-customer.
+  customer.
 
 You use the following stock move in Open ERP to simulate these operations:
 
@@ -258,7 +261,7 @@ been delivered to the customer.
 Linked Production
 -----------------
 
-The ``stock_location`` module enables you to manage the linkages by product in addition to doing
+The :mod:`stock_location` module enables you to manage the linkages by product in addition to doing
 that by location. You can then create a location structure that represents your production chain by
 product.
 
@@ -286,7 +289,7 @@ products that enter the production chain will automatically follow the predeterm
 .. figure:: images/stock_product_path.png
    :align: center
 
-   *Logistics for a given product.*
+   *Logistics for a given product*
 
 To improve your logistics, you'll see further on in this chapter how you can put minimum stock rules
 onto different locations to guarantee security stocks for assembly operators. Reports on the state

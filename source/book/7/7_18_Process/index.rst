@@ -1,4 +1,6 @@
 
+.. _ch-process:
+
 *******
 Process
 *******
@@ -114,10 +116,18 @@ You'll be asked what View Mode you want during the Configuration stage.
 more cluttered than the :guilabel:`Simple Interface` because it shows you all the menu
 options. You don't need any additional users.
 
-Then install the ``sale`` module for the first example below, which installs
-several other modules as dependencies. Also install some of the ``hr`` modules for
-the second example below, such as ``hr_attendence``, ``hr_contract``,
-``hr_holidays``, and ``hr_holidays_request``.
+.. index::
+   pair: module; sale
+   pair: modules; hr_
+   pair: module; hr_attendance
+   pair: module; hr_contract
+   pair: module; hr_holidays
+   pair: module; hr_holidays_request
+
+Then install the :mod:`sale` module for the first example below, which installs
+several other modules as dependencies. Also install some of the :mod:`hr` modules for
+the second example below, such as :mod:`hr_attendance`, :mod:`hr_contract`,
+:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
 
 You'll be asked to set up a Chart of Accounts during the configuration stage.
 Selecting :guilabel:`None` is fine: you can also try one that matches your own
@@ -129,7 +139,7 @@ that's offered.
 Following a customer sales order
 ----------------------------------
 
-The example below shows the process for handling a customer sales order. Use
+The example :ref:`fig-procquot` shows the process for handling a customer sales order. Use
 the menu :menuselection:`Sales Management --> Sales Orders` to list all orders, then choose
 Order SO001 – you can either check the checkbox to its left, or you can open
 the order itself by clicking the order date to the left of its name in the
@@ -140,10 +150,12 @@ top right of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
 node whose left edge is colored maroon rather than grey.
 
+.. _fig-procquot:
+
 .. figure:: images/process_quotation_flow.png
    :align: center
 
-   *Example of a process handling a customer order quotation.*
+   *Example of a process handling a customer order quotation*
 
 This order is in the Quotation state. The whole of some nodes is greyed out
 because the selected document will never enter into that state, such as
@@ -183,7 +195,7 @@ transition:
 .. figure:: images/process_transition_zoom.png
    :align: center
 
-   *Detail of a transition in the process.*
+   *Detail of a transition in the process*
 
 Confirm quotation SO001 by clicking on the icon of a person beside the
 maroon-colored transition that takes the document from quotation to order.
@@ -199,7 +211,7 @@ results.
 .. figure:: images/process_sale_flow.png
    :align: center
 
-   *The process after confirming a process into an order.*
+   *The process after confirming a process into an order*
 
 During order processing, the salesperson can quickly:
 
@@ -227,7 +239,7 @@ process of engagement.
 .. figure:: images/process_employee_flow.png
    :align: center
 
-   *Example of a process engaging a new employee.*
+   *Example of a process engaging a new employee*
 
 You can immediately see things that might interest the HR manager. On a single
 screen she has all of the documents about the selected employee. She can then
@@ -262,9 +274,9 @@ documents to be completed and posted or faxed to the institutions:
 .. figure:: images/process_document.png
    :align: center
 
-   *Example of a process required for the declarations for a new employee.*
+   *Example of a process required for the declarations for a new employee*
 
-The system of 'Corporate Intelligence' gives you a complete overview of all the
+The system of *Corporate Intelligence* gives you a complete overview of all the
 company's processes. So if you click on the node to the left it will start the
 recruitment process of selecting and interviewing new employees if the
 necessary modules have been installed.
@@ -285,7 +297,7 @@ there so that the software is robust.
 .. figure:: images/process_sale_workflow.png
    :align: center
 
-   *Example of a workflow handling a customer order.*
+   *Example of a workflow handling a customer order*
 
 Unlike workflows, user processes represent workflows across all of a company
 and its documents. They are used by end users to locate an action for more
@@ -295,7 +307,7 @@ software but will show the user another way of working on a given problem.
 .. figure:: images/process_sale_process.png
    :align: center
 
-   *Example of a process handling a customer order.*
+   *Example of a process handling a customer order*
 
 Processes are used by end users to help them understand the problems which
 haven't been handled in Open ERP. You can find actions that have no influence
@@ -310,7 +322,7 @@ as:
 .. figure:: images/process_cross_worfklow_process.png
    :align: center
 
-   *Relationship between workflow and user process.*
+   *Relationship between workflow and user process*
 
 User processes are thus connected to technical workflows. If you modify the
 software's behaviour with a workflow, the changes will be directly visible in
@@ -330,7 +342,7 @@ modify the workflow for the selected document type.
 .. figure:: images/process_workflow_editor.png
    :align: center
 
-   *Workflow editor modifying the behaviour of invoices.*
+   *Workflow editor modifying the behaviour of invoices*
 
 The workflow editor is only available in Open ERP's web client. If you use the
 GTK client you can use the menus in
@@ -357,7 +369,7 @@ the processes it knows about that involve such forms:
 .. figure:: images/process_screen.png
    :align: center
 
-   *Button for entering a user process from a form.*
+   *Button for entering a user process from a form*
 
 The element colored red shows the active process for the selected document.
 Elements in grey are the states that the selected document won't go through
@@ -373,7 +385,7 @@ handled.
 .. figure:: images/process_subflow_icon.png
    :align: center
 
-   *A state that refers to another workflow.*
+   *A state that refers to another workflow*
 
 Finally, you can place your mouse for a second over a transition (hover over a
 transition) to get a help balloon about this transition to appear. Open ERP
@@ -388,7 +400,7 @@ then shows you:
 .. figure:: images/process_transition.png
    :align: center
 
-   *Detail of a transition in a workflow.*
+   *Detail of a transition in a workflow*
 
 If you click on the transition, Open ERP opens a dialog box with buttons that
 enable you to change the document state. These are the same buttons that you
@@ -405,7 +417,7 @@ Open ERP shows you the list of states available for that process.
 .. figure:: images/process_form.png
    :align: center
 
-   *Form for defining a process.*
+   *Form for defining a process*
 
 You can add a new state or modify an existing state. A state can be associated
 with an object (whose instances are represented by documents). If that is the
@@ -433,7 +445,7 @@ object. For each transition you can:
 .. figure:: images/process_transition_form.png
    :align: center
 
-   *Screen for defining a process transition.*
+   *Screen for defining a process transition*
 
 .. Copyright © Open Object Press. All rights reserved.
 

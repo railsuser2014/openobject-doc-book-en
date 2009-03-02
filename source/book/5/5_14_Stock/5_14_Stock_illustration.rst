@@ -13,12 +13,15 @@ operations:
 
 * Manufacturing.
 
-For this chapter you should start by installing the ``stock`` module (which also installs a few
+.. index::
+   pair: module; stock
+
+For this chapter you should start by installing the :mod:`stock` module (which also installs a few
 dependencies with it) into a new minimal database populated with Tiny's demonstration data. You
 don't need to choose any particular chart of accounts during configuration of the database, but you
 can if you want to.
 
-The structure of stock locations is shown by the figure above. Stocks are assumed to be totally
+The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.
 
 If you order '30 bicycles' from a supplier, Open ERP will then do the following operations after the
@@ -136,7 +139,7 @@ finished products.
 
     You might already have noticed a useful effect of this approach:
     if you do a stock valuation in the “Default Production” location you get
-    a statement of value created by your company (as a negative figure).
+    a statement of value created by your company (as a negative amount).
     Stock valuation in any given location is calculated by multiplying quantities of products in
     stock by their cost.
     In this case the raw material value is deducted from the finished product value.

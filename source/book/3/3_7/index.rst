@@ -72,7 +72,10 @@ integration between all of the application modules. Furthermore, the transaction
 the financial analyses happen in real time, so that you can not only monitor the situation but also
 manage it effectively.
 
-The ``accounting`` module in Open ERP covers general accounting, analytic accounting, and auxiliary
+.. index::
+   pair: module; account
+
+The :mod:`account` module in Open ERP covers general accounting, analytic accounting, and auxiliary
 and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 .. index::
@@ -108,9 +111,12 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 	* if the companies share many documents, you can register them in the same database and install
 	  Open ERP's multi-company documents to finely manage access rights,
+	  
+	.. index::
+	   pair: module; base_synchro	
 
-	* it's possible to synchronize specified document types in several databases using the ``synchro``
-	  module.
+	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
+	  module, which is a shared-funding module rather than in the standard open repositories.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in Open ERP an Order automatically generates an

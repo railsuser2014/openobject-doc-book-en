@@ -17,13 +17,12 @@ To view, edit or create new journals use the menu :menuselection:`Financial Mana
 Configuration --> Journals --> Definition of Journals`.
 
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the
-*Active*  checkbox for that.
-
+:guilabel:`Active` checkbox for that.
 
 .. figure::  images/account_journal_form.png
    :align: center
 
-   *Definition of an accounting journal.*
+   *Definition of an accounting journal*
 
 You have to associate a view with each journal. The journal view indicates the fields that must be
 visible and required to enter accounting data in that journal. The view determines both the order of
@@ -61,7 +60,7 @@ Controls and aids for data entry
 
 You can carry out two types of control on Journals in Open ERP – controls over the financial
 accounts and access controls for groups of users. In addition to these controls you can also apply
-all of the rights management detailed in Chapter 13.
+all of the rights management detailed in :ref:`ch-config`.
 
 To avoid mistakes while entering accounts data, you can place conditions in the general accounts
 about who can use a given account. To do this, you must list all the accounts or valid account types

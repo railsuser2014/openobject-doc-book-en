@@ -103,7 +103,7 @@ made jointly responsible for taking on tasks that they have the skills for.
 .. figure::  images/service_task.png
    :align: center
 
-   *Tasks in project management.*
+   *Tasks in project management*
 
 Each user then manages his or her own task using the different available menus. To open the list of
 unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project
@@ -116,11 +116,16 @@ and \ ``Open``\   tasks from that list.
 	Every user should create a link in their own shortcuts to the :menuselection:`My Open Tasks` menu because they'll
 	have to consult this menu several times a day.
 
+.. todo:: what is this?
+
  *Task Work*  *Effective hours*
+
+.. index::
+   pair: module; project_timesheet
 
 .. note:: Tasks and timesheet
 
-	The module ``hr_timesheet_project`` gives you a way of creating the day's timesheet automatically
+	The module :mod:`project_timesheet` gives you a way of creating the day's timesheet automatically
 	from
 	the effective work done for each of the different tasks.
 	This way you don't have to encode service times twice – once for the project task and once for
@@ -209,9 +214,12 @@ so on. When you first open the list of project tasks, they're listed in their se
 You can use one of these three ordering methods, or combine several of them, depending on the
 project.
 
+.. index::
+   pair: module; scrum
+
 .. note:: Agile methods
 
-	Open ERP implements the agile methodology Scrum for IT development projects in the ``scrum``
+	Open ERP implements the agile methodology Scrum for IT development projects in the :mod:`scrum`
 	module.
 
 	Scrum completes the task system by adding the following concepts:
@@ -223,7 +231,7 @@ project.
 .. figure::  images/service_project_gantt.png
    :align: center
 
-   *Gantt plan, calculated for earliest delivery.*
+   *Gantt plan, calculated for earliest delivery*
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify
 anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a
@@ -240,10 +248,10 @@ calculates a project plan for earliest delivery using task ordering and the atte
 
 	This view isn't available in Open ERP's GTK client.
 
-    .. figure::  images/service_task_calendar.png
+	.. figure::  images/service_task_calendar.png
 	   :align: center
 
-       *Calendar view of the system tasks.*
+       *Calendar view of the system tasks*
 
 .. index:: Delegation
 
@@ -257,7 +265,7 @@ you do it this way.
 .. figure::  images/service_task_delegate.png
    :align: center
 
-   *Form for delegating a task to another user.*
+   *Form for delegating a task to another user*
 
 Instead, you can use the button :guilabel:`Delegate` on a task.
 

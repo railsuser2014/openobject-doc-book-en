@@ -13,7 +13,7 @@ particularly in installing the software nor in configuring it, but rather more a
 * knowing what to configure,
 
 * deciding if you should adapt the software or perhaps change your method of working, for some of
-your specialized processes,
+	your specialized processes,
 
 * forming teams that can specify and work on some of the changes,
 
@@ -65,7 +65,9 @@ The menus themselves hint at several helpful implementation suggestions, for exa
 New functions such as the Module Recorder enable you to significantly accelerate the configuration
 of data.
 
-External modules, such as the Implementation Planner module \ ``implem``\   which helps you develop
+.. todo:: Shall we remove this now in Open ERP 5?
+
+External modules, such as the Implementation Planner module :mod:`implem` which helps you develop
 high level implementation plans are also being produced by third-party developers. These plans,
 designed for managing or investigating Open ERP, detail the software structure and the different
 steps required by your implementation.

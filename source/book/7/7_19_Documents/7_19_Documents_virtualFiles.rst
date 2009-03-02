@@ -28,15 +28,17 @@ that have the special type of 'linked resource' and link the virtual files to Op
     you just open the file containing that document in the document management system.
     The PDF file is then created in real time by Open ERP by reading the relevant data.
 
-The screen below shows the parameters of the virtual files in Orders. You define the virtual files
+The screen :ref:`fig-docvirt` shows the parameters of the virtual files in Orders. You define the virtual files
 using the name NUMCOMMAND_print.pdf, where NUMCOMMAND represents the reference to the order. To do
 this you must complete the section Descriptive Contents of the file for a directory. For each report
 associated with an order you can then find a virtual file.
 
+.. _fig-docvirt:
+
 .. figure::  images/document_virtual_form.png
    :align: center
 
-   *Virtual files about sales orders in Open ERP.*
+   *Virtual files about sales orders in Open ERP*
 
 To see the effect of this configuration, connect to the FTP server and go into a directory for an
 order such as :menuselection:`Main Repository --> Sales Orders --> All Sales Orders --> SO003`. You
@@ -46,7 +48,7 @@ You can attach it to an email or put it on your desktop.
 .. figure::  images/document_virtual_ftp.png
    :align: center
 
-   *Virtual files about sale orders through FTP.*
+   *Virtual files about sale orders through FTP*
 
 This system of virtual files is very useful in a lot of situations. For example if you must quickly
 re-send a quotation to a customer you don't have to open Open ERP, you can just attach the relevant

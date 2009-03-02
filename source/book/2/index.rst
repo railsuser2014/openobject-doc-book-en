@@ -1,4 +1,6 @@
 
+.. _part2-crm:
+
 ###############################
 Managing Customer Relationships
 ###############################
@@ -21,6 +23,7 @@ Managing Customer Relationships
  now connected to Open ERP, transferring to the Open ERP interface only if they need to.
 
 .. toctree::
+    :maxdepth: 1
 
     2_4_CRM/index
     2_5_Leads/index

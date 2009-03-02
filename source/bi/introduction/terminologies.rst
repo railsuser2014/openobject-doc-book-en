@@ -44,10 +44,11 @@ This page define all terminolgies. Objects in the OLAP cube use this convention.
    Meta data of the quantity your are measuring. (value)
    A measure may be complex, ex: the tuple (quantity,uom)
    Attributes which are also objects:
-      Agregator: an SQL function that define how we aggregate measures
-         "sum", "count", "min", "max", "avg", and "distinct-count"
-      FormatString
-      DataType (the measure/value datatype)
+
+	Agregator: an SQL function that define how we aggregate measures
+	"sum", "count", "min", "max", "avg", and "distinct-count"
+	FormatString
+	DataType (the measure/value datatype)
 
 .. _cube-link:
 

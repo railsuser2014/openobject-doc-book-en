@@ -35,8 +35,7 @@ above it.
    :align: center
    :scale: 95
 
-   *Project Dashboard.*
-
+   *Project Dashboard*
 
 Users' home pages are automatically reassigned during the creation or upgrading of a database. It's
 usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the
@@ -86,11 +85,10 @@ shows only the first few partners (the web client defaults to \ ``20``\  , but y
 maximum of \ ``100``\   on a page). If you want to display other records you can search for them or
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
-
 .. figure:: images/partner_search_tab.png
    :align: center
 
-   *Standard partner search.*
+   *Standard partner search*
 
 .. note:: List limits
 
@@ -208,7 +206,7 @@ and you'll get the Partner form rather than the Sales Order form.
 .. figure:: images/familiarization_sale_partner.png
    :align: center
 
-   *Links for a partner appear in an order form.*
+   *Links for a partner appear in an order form*
 
 Before moving on to the next module, take a quick look into the :menuselection:`Partners -->
 Configuration`  menu, particularly :menuselection:`Categories`  and  :menuselection:`Localisation`.
@@ -221,7 +219,7 @@ They contain some of the demonstration data that you installed when you created 
 Accounting and finance
 ----------------------
 
-Chapters 6 to 9 in this book are dedicated to general and analytic accounting. A brief overview of
+The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. A brief overview of
 the functions provided by these modules is given here as an introduction.
 
 Accounting is totally integrated into all of the company's functions, whether it's general,
@@ -316,8 +314,11 @@ of its available variants briefly rather than every item as an entire product.
 			* Quality of Cloth (125g/m2, 150g/m2, 160g/m2, 180g/m2),
 
 			* Collar (V, Round).
+			
+			.. index::
+			   pair: module; product_variant_multi
 
-			This separation of variant types requires the optional module ``product_variant_multi``. Using it
+			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
 			than 160 completely different products. This module is available in the extra_addons list (it had
@@ -389,22 +390,26 @@ Open ERP's Human Resources Management modules provide such functionality as:
 
 * management of skills and competencies.
 
+.. index::
+   pair: modules; hr_
+   pair: module; hr
+
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
-rather than the core HR module, but they're all loaded into the main :menuselection:`Human
+rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
 Resources` menu.
 
 The different issues are handled in detail in the fourth section of this book, dedicated to internal
 organization and to the management of a services business.
 
-
 .. index::
    single: Inventory Control
+   single: Stock Management
 ..
 
-Inventory Control
--------------------
+Stock Management
+----------------
 
-The various sub-menus under Inventory Control together provide operations you need to manage stock.
+The various sub-menus under :menuselection:`Stock Management` together provide operations you need to manage stock.
 You can:
 
 * define your warehouses and structure them around locations and layouts of your choosing,
@@ -485,7 +490,7 @@ statistical tools in Open ERP to analyze the different communications with your
 these, you can execute a real improvement policy to manage your service quality.
 
 The management of customer relationships is detailed in the second section of this book (see
-Chapters 4 and 5).
+:ref:`part2-crm`).
 
 
 .. index::
@@ -522,7 +527,7 @@ needs.
 .. figure:: images/purchase_workflow.png
    :align: center
 
-   *Purchase order workflow.*
+   *Purchase order workflow*
 
 Project Management
 ------------------
@@ -539,12 +544,12 @@ representation of the plan.
 .. figure:: images/familiarization_project_gantt.png
    :align: center
 
-   *Project Planning.*
+   *Project Planning*
 
 You can run projects related to Services or Support, Production or Development – it's a universal
 module for all enterprise needs.
 
-Project Management is described in Chapter 12.
+Project Management is described in :ref:`ch-projects`.
 
 .. index::
    single: Production Management
@@ -602,8 +607,8 @@ You've been through a brisk, brief overview of the main functional areas of Open
 You can use the menu :menuselection:`Administration --> Modules Management --> Modules -->
 Uninstalled Modules` to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as
-\ ``base_iban``\  ), some have quite extensive effects (such as the various charts of accounts), and
-some make fundamental additions (such as \ ``multi_company``\  ).
+:mod:`base_iban`), some have quite extensive effects (such as the various charts of accounts), and
+some make fundamental additions (such as :mod:`multi_company`).
 
 But there are now more than three hundred modules available. If you've connected to the Internet,
 and if your \ ``addons``\   directory is writable as described at the beginning of this chapter, you

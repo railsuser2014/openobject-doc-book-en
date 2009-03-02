@@ -27,7 +27,7 @@ or a production, or a source location, or any given destination.
 .. figure:: images/stock_move_tree.png
    :align: center
 
-   *History of stock movements.*
+   *History of stock movements*
 
 Each stock move is in a given state. The different possible states are:
 
@@ -71,7 +71,7 @@ and product deliveries.
 .. figure:: images/picking_form_line.png
    :align: center
 
-   *Encoding of a line for production reception.*
+   *Encoding of a line for production reception*
 
 To enter the lot number in an operation you can use an existing lot number or create a new lot. A
 manufacturing lot (batch number) must always be used for a single product. A tracking number can be
@@ -94,7 +94,7 @@ complete the prefix in the wizard with a continuing sequence number.
 .. figure:: images/picking_split_lot.png
    :align: center
 
-   *Splitting a lot into uniquely identified parts.*
+   *Splitting a lot into uniquely identified parts*
 
 .. index:: Traceability (Stock)
 
@@ -133,12 +133,12 @@ can see the form about this lot several actions are possible:
 .. figure:: images/stock_traceability_upstream.png
    :align: center
 
-   *Tracing upstream in 'From Order'.*
+   *Tracing upstream in 'From Order'*
 
 .. figure:: images/stock_traceability_downstream.png
    :align: center
 
-   *Tracing downstream in 'From Stock'.*
+   *Tracing downstream in 'From Stock'*
 
 Finally, on a lot, you can enter data on all the operations that have been done on the product. That
 forms a useful history of the presales operations.

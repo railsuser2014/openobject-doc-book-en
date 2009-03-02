@@ -66,15 +66,17 @@ projects for the period concerned. The tasks for each project are ordered by pri
 directly assigned to a user or left unassigned. Each employee then chooses the task that he or she
 will do next, based on the plans and the relative priorities of the tasks.
 
+.. _fig-srvplantime:
+
 .. figure::  images/service_planning_time.png
    :align: center
 
-   *Monthly planning for work time of each employee.*
+   *Monthly planning for work time of each employee*
 
-The figure shows a monthly planning session where plans are being made for each employee to spend a
+The figure :ref:`fig-srvplantime` shows a monthly planning session where plans are being made for each employee to spend a
 number of days' work on various different projects.
 
-In this time-focused planning approach, clients' priorities don't figure in the planning any more,
+In this time-focused planning approach, clients' priorities don't feature in the planning any more,
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
@@ -150,8 +152,11 @@ the months ahead.
 Using planning well
 -------------------
 
-Plans can be printed and/or sent to employees by email. If you install the module \
-``board_project``\  , each employee can be given access to a dashboard that graphically shows the
+.. index::
+   pair: module; board_project
+
+Plans can be printed and/or sent to employees by email. If you install the module 
+:mod:`board_project`, each employee can be given access to a dashboard that graphically shows the
 time allocated to him or her on a project and the time that's been worked so far. So each employee
 can decide which projects should be prioritized.
 
@@ -166,7 +171,7 @@ the real time worked.
 .. figure::  images/planning_stat.png
    :align: center
 
-   *Comparison of planned hours, worked hours and the productivity of employees by project.*
+   *Comparison of planned hours, worked hours and the productivity of employees by project*
 
 You can also study several of your project's figures from the menu :menuselection:`Human Resources
 --> Reporting --> Planning`.
@@ -174,8 +179,11 @@ You can also study several of your project's figures from the menu :menuselectio
 Planning at all levels of the hierarchy
 ---------------------------------------
 
+.. index::
+   pair: module; report_analytic_planning_delegate
+
 To put planning in place across the whole company you can use a system of planning delegation. For
-this, install the module \ ``report_analytic_planning_delegate``\  .
+this, install the module :mod:`report_analytic_planning_delegate`.
 
 When you've installed this module, the planning entry form changes to reflect the hierarchical
 structure of the company. To enter data into a plan line you can:

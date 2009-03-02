@@ -70,7 +70,7 @@ Using Outlook and Thunderbird
 .. figure::  images/document_attachment_outlook.png
    :align: center
 
-   *Sending an attachment that's in the document management system from Outlook.*
+   *Sending an attachment that's in the document management system from Outlook*
 
 Working with users' changes
 ============================
@@ -90,7 +90,7 @@ could also quickly assess the use that's made of the system by the various users
 .. figure::  images/document_board1.png
    :align: center
 
-   *Dashboard for the document management system manager.*
+   *Dashboard for the document management system manager*
 
 The second dashboard lets you track the user that's made of the system by different employees.
 You'll find the number of files sent by user and a classification of the users using document
@@ -100,7 +100,7 @@ necessary to do something about changing work methods.
 .. figure::  images/document_board2.png
    :align: center
 
-   *Dashboard for the document management system amalyzed by user.*
+   *Dashboard for the document management system amalyzed by user*
 
 Version Management
 ===================
@@ -120,7 +120,7 @@ activate that functionality on another type of report, modify this in the menu
 .. figure::  images/document_report_modif.png
    :align: center
 
-   *Modifying the definition of a report.*
+   *Modifying the definition of a report*
 
 Select the report that you want to change and complete the field 'Prefix for saving as an
 attachment'. Once you've done that each document print action will automatically be saved as an
@@ -139,7 +139,7 @@ So you could also efficiently store the documents required for each phase of a p
 .. figure::  images/document_process.png
    :align: center
 
-   *Example of a document linked to process management.*
+   *Example of a document linked to process management*
 
 .. Copyright © Open Object Press. All rights reserved.
 

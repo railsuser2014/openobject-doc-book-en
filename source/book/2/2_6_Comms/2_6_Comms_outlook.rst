@@ -8,7 +8,7 @@ Open ERP preparation
 You'll need only one database for this chapter:
 
 * \ ``openerp_ch05X``\  , which should be a restored copy of\ `` openerp_ch04X``\   the database you
-  created at the start of Chapter 4 and then extended – you'll refer to it from time to time because
+  created at the start of :ref:`ch-crm` and then extended – you'll refer to it from time to time because
   it contains demonstration data that you can use to exercise some of the functions you encounter in
   the chapter.
 
@@ -64,7 +64,7 @@ find the menu :menuselection:`Tools --> Tiny ERP Options`.
 .. figure::  images/outlook_menu.png
    :align: center
 
-   *Configuration menu for the interface between Outlook and Open ERP.*
+   *Configuration menu for the interface between Outlook and Open ERP*
 
 In the window that you use for configuring the Outlook plugin you can enter parameters for accessing
 the Tiny server, with various options for:
@@ -79,7 +79,7 @@ parameters make it function correctly.
 .. figure::  images/outlook_config.png
    :align: center
 
-   *Configuring access to Open ERP from Word.*
+   *Configuring access to Open ERP from Word*
 
 When Outlook is configured, archiving an email and its attached files in Open ERP can be done in
 several ways:
@@ -93,7 +93,7 @@ several ways:
 .. figure::  images/outlook_archive.png
    :align: center
 
-   *Saving an Outlook email in Open ERP.*
+   *Saving an Outlook email in Open ERP*
 
 You can select an existing contact or create a new contact on the fly in the Open ERP database.
 Then you can send the email and its attachments and also save it in Open ERP.

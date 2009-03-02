@@ -32,7 +32,7 @@ open the partner form.
 .. figure:: images/crm_partner_event.png
    :align: center
 
-   *History of events in a partner form.*
+   *History of events in a partner form*
 
 When the leads have been converted into opportunities, the opportunities can be assigned to any
 salesperson. In that case you designate a manager in the company who is responsible for assigned the
@@ -56,12 +56,12 @@ another use the buttons above and to the right of the calendar.
 .. figure:: images/crm_calendar_month.png
    :align: center
 
-   *Meetings calendar in monthly view.*
+   *Meetings calendar in monthly view*
 
 .. figure:: images/crm_calendar_week.png
    :align: center
 
-   *Meetings calendar in weekly view.*
+   *Meetings calendar in weekly view*
 
 In the calendar you distinguish between multi-day events and events that last only for a few hours.
 Multi-day events have a colored background whereas single events have a colored font. Each event
@@ -75,7 +75,7 @@ along to create an event of several hours. Open ERP then opens an entry screen f
 .. figure:: images/crm_meeting_form.png
    :align: center
 
-   *Entering a new meeting.*
+   *Entering a new meeting*
 
 .. tip:: Consolidated Calendar
 
@@ -144,7 +144,7 @@ communal projects. To activate the portal it's necessary to install the modules 
 string ``portal_...``.
 
 The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for
-the email gateway are available in the ``crm`` module in the ``scripts`` subdirectory.
+the email gateway are available in the :mod:`crm` module in the ``scripts`` subdirectory.
 
 The Outlook and Thunderbird plugins enable you to synchronize your contacts between your email
 client and your ERP. They both enable you to create sales opportunities based on exchanges you have
@@ -154,12 +154,18 @@ The rules for automating actions will enable you to send emails automatically ba
 such as assigning opportunities to the most appropriate person. To access the CRM rules, use the
 menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
+.. index::
+   pair: module; crm_profiling
+
 The segmentation tools will enable you to create partner groups and act on each segment differently.
 For example you could create pricelists for each of the segments, or start phone marketing campaigns
 by segment. To enable the management of segmentation you should install the module
-``crm_profiling``.
+:mod:`crm_profiling`.
 
-The ``report_designer`` module enables you to create letter templates in OpenOffice and automate
+.. index::
+   pair: module; base_report_designer
+
+The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
 letter for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
 mass mailing.
 

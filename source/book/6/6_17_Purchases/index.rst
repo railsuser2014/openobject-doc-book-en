@@ -1,4 +1,6 @@
 
+.. _ch-purchase:
+
 *********************
 Purchasing Management
 *********************
@@ -45,7 +47,10 @@ company details when asked, or just select the default of :guilabel:`Tiny SPRL` 
 You'll be asked what View Mode you want during the Configuration stage. :guilabel:`Extended Interface` is
 recommended at this stage. You don't need any additional users.
 
-Then install the ``purchase`` module, which installs several other modules as dependencies. Continue
+.. index::
+   pair: module; purchase
+
+Then install the :mod:`purchase` module, which installs several other modules as dependencies. Continue
 the remainder of this chapter logged in as the admin user.
 
 Price request from the supplier
@@ -53,18 +58,23 @@ Price request from the supplier
 
 To enter data for a new supplier price request, use the menu :menuselection:`Purchase Management -->
 New Purchase Order`. Open ERP opens a blank purchase form that you use for requesting prices from a
-supplier. This is shown in the figure below. If the price request came from an automatic procurement
+supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement
 created by Open ERP you'll find in the :guilabel:`Origin` field a reference to the document that
 generated the request.
+
+.. _fig-pfrm:
 
 .. figure:: images/purchase_form.png
    :align: center
 
-   *Data entry for a supplier order.*
+   *Data entry for a supplier order*
+
+.. index::
+   pair: module; warning
 
 .. note:: Managing Alerts
 
-   If you install the ``warning`` module you will be able to define alerts that will appear when the
+   If you install the :mod:`warning` module you will be able to define alerts that will appear when the
    purchaser enters a price request or order.
    You can set alerts on the product or on the supplier.
 
@@ -87,7 +97,7 @@ Once the main body of the purchase order has been completed you can enter the pr
 .. figure:: images/purchase_line_form.png
    :align: center
 
-   *Order line on a  supplier order.*
+   *Order line on a  supplier order*
 
 When you've completed the product, Open ERP automatically completes the other fields on the form:
 
@@ -100,7 +110,7 @@ When you've completed the product, Open ERP automatically completes the other fi
 * :guilabel:`Purchase Price`, provided by the supplier pricelist,
 
 * :guilabel:`Applicable taxes`, taken from the information on the product form and partner form,
-  depending on the rules seen in the chapter on Accounting.
+   depending on the rules seen in :ref:`Financial Analysis <ch-financial>`.
 
 .. tip:: Product wording and code
 
@@ -113,15 +123,22 @@ If you work with management by case you can also set the analytic account that s
 report all the purchase costs. The costs will then be reported at the receipt of the supplier
 invoice.
 
+.. index::
+   pair: module; purchase_analytic_analysis
+
 .. tip:: Management by case
 
    Analytic accounts can be very useful for all companies that manage costs by case, by site, by
    project or by folder.
-   To work with several analytic axes you should install the module ``purchase_analytic_plans``.
+   To work with several analytic axes you should install the module :mod:`purchase_analytic_plans`.
+
+.. index::
+   pair: module; account_analytic_default
+   pair: module; purchase_analytic_plans
 
 For that the analytic account is automatically selected as a function of the partner, the date, the
-products or the user, you can install the module ``account_analytic_default`` (which is installed
-automatically as a dependency of ``purchase_analytic_plans``, since the latter depends on it).
+products or the user, you can install the module :mod:`account_analytic_default` (which is installed
+automatically as a dependency of :mod:`purchase_analytic_plans`, since the latter depends on it).
 
 In the second tab of the product line you can enter a note that will be attached when the order
 confirmation or price quotation is printed. This note can be predefined on the product form to
@@ -134,7 +151,7 @@ the supplier. You can set a note for the attention of the supplier in the form's
 .. figure:: images/purchase_quotation.png
    :align: center
 
-   *Printing the supplier price quotation.*
+   *Printing the supplier price quotation*
 
 Then leave the document in that state. When you receive the response from the supplier, use the menu
 :menuselection:`Purchase Management --> Supplier Orders --> My Price Requests`. Then select the
@@ -158,12 +175,15 @@ Supplier`.
 .. figure:: images/purchase_process.png
    :align: center
 
-   *Supplier order process.*
+   *Supplier order process*
+
+.. index::
+   pair: module; purchase_approve
 
 .. note:: Supplier validation
 
    If you want to automate the data entry stage at goods receipt, install the module
-   ``purchase_approve``.
+   :mod:`purchase_approve`.
    This will automatically validate all the orders that have been confirmed.
 
 Goods receipt
@@ -182,7 +202,7 @@ Select the document that corresponds to the item that you're receiving. Usually 
 note is found by making a search on the order reference or the supplier name. You can then confirm
 the receipt of the products.
 
-As you saw in the chapter on Stock Management, if you receive only part of the order, Open ERP
+As you saw in :ref:`ch-stocks`, if you receive only part of the order, Open ERP
 manages the remains of that order.
 A second receipt note is then automatically forecast with goods not received.
 You can cancel if you think that you will never receive the forgotten products.
@@ -193,7 +213,7 @@ receipt and invoicing if you return to the list of orders.
 .. figure:: images/purchase_list.png
    :align: center
 
-   *List of open orders, and their receipt and invoice status.*
+   *List of open orders, and their receipt and invoice status*
 
 Control of invoicing
 --------------------
@@ -213,7 +233,7 @@ The mode of invoicing control is set in the second tab of the purchase order in 
 .. figure:: images/purchase_form_tab2.png
    :align: center
 
-   *Supplier order, invoice control.*
+   *Supplier order, invoice control*
 
 .. tip:: Default value
 
@@ -270,9 +290,12 @@ The invoices are then handled just like the controlled from On Order. Once the i
 the accounting service he just compares it with the invoices waiting to control what the supplier
 invoices you.
 
+.. index::
+   pair: module; purchase_delivery
+
 .. tip:: Delivery Charges
 
-   To manage delivery charges, install the module ``purchase_delivery``.
+   To manage delivery charges, install the module :mod:`purchase_delivery`.
    This will automatically add delivery changes to the creation of the draft invoice as a function
    of the products delivered or ordered.
 
@@ -281,14 +304,17 @@ invoices you.
 Tenders
 -------
 
-To manage tenders, you should use the module ``purchase_tender``. This lets you create several
+.. index::
+   pair: module; purchase_tender
+
+To manage tenders, you should use the module :mod:`purchase_tender`. This lets you create several
 supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds
 a new menu in the Purchase management, Tenders. You will then be able to define the new tenders.
 
 .. figure:: images/purchase_tender.png
    :align: center
 
-   *Defining a tender.*
+   *Defining a tender*
 
 To enter data for a new tender, use the menu :menuselection:`Purchase Management --> Purchase
 Tenders --> New Purchase Tenders`. Open ERP then opens a new blank tender form. The reference number
@@ -327,7 +353,7 @@ everything directly related to the received price. You could include such elemen
 Standard Price
 --------------
 
-The mode of price management for the product is shown in the third tab on the product form :guilabel:`Price`.
+The mode of price management for the product is shown in the third tab :guilabel:`Price` on the product form.
 On each product you can select if you want to work in standard price or on weighted average.
 
 .. tip:: Simplified view
@@ -351,7 +377,10 @@ Those costs that can be fixed for the whole year bring certain advantages:
 * accounting is simplified because there's a direct relationship between the value of stock and the
   number of items received.
 
-To automate periodic revaluation of the standard price you can use the module ``product_extended``.
+.. index::
+   pair: module; product_extended
+
+To automate periodic revaluation of the standard price you can use the module :mod:`product_extended`.
 This will add an action on the product form enabling you to set a date all the selected products. It
 will then recalculate the price of the products as a function of the cost of raw materials and the
 manufacturing operations given in the routing.
@@ -389,7 +418,7 @@ delivery to the different received products.
 .. figure:: images/purchase_pmp.png
    :align: center
 
-   *Goods receipt of products managed in weighted average.*
+   *Goods receipt of products managed in weighted average*
 
 Once the receipt has been confirmed, the price is automatically recalculated and entered on the
 product form.
@@ -400,10 +429,14 @@ Analyis of purchases
 Elementary statistics
 ---------------------
 
-To get statistics about your purchases you can install the modules ``report_purchase`` and
-``product_margin``.
+.. index::
+   pair: module; report_purchase
+   pair: module; product_margin
 
-The first, ``report_purchase``, will add two new reports in your purchase menu, analysis of
+To get statistics about your purchases you can install the modules :mod:`report_purchase` and
+:mod:`product_margin`.
+
+The first, :mod:`report_purchase`, will add two new reports in your purchase menu, analysis of
 purchases by month and by product, and analysing product by month and by product category. To use
 these reports use the menu :menuselection:`Purchase Management --> Reporting --> This month -->
 Purchases by product`.
@@ -411,11 +444,11 @@ Purchases by product`.
 .. figure:: images/purchase_report.png
    :align: center
 
-   *Analysis of purchases over the month by product.*
+   *Analysis of purchases over the month by product*
 
 This analysis carries on the supplier orders and not on the invoices or the quantities effectively
-received. To get an analysis by product, use the module ``product_margin``. The function of this
-module is described in detail in the chapter on Sales Management.
+received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
+module is described in detail in :ref:`ch-sales`.
 
 To analyze the received quantities, you can use the statistical modules based on the management of
 stock.
@@ -423,16 +456,20 @@ stock.
 Supplier relationship management
 ================================
 
-To manage supplier relations, you should install the ``crm_configuration`` module. You will then be
+.. index::
+   pair: module; crm_configuration
+   pair: module; crm
+
+To manage supplier relations, you should install the :mod:`crm_configuration` module. You will then be
 able to manage supplier complaints and integrate them with your emails and document management.
 
-Once you've installed the CRM module, check the checkbox by the :guilabel:`Complaints` option. Open ERP will
+Once you've installed the :mod:`crm` module, check the checkbox by the :guilabel:`Complaints` option. Open ERP will
 then create a menu configuration for managing supplier complaints.
 
 .. figure:: images/crm_config.png
    :align: center
 
-   *Selection of the management of complaints in the CRM installation.*
+   *Selection of the management of complaints in the CRM installation*
 
 Once the module is installed you can use the menu :menuselection:`CRM & SRM --> After Sales Service
 --> Complaints --> New Supplier Complaint`.
@@ -440,7 +477,7 @@ Once the module is installed you can use the menu :menuselection:`CRM & SRM --> 
 .. figure:: images/crm_complaints.png
    :align: center
 
-   *Data entry screen for a supplier complaint.*
+   *Data entry screen for a supplier complaint*
 
 The CRM module has many reports predefined. You can analyse:
 
@@ -457,7 +494,10 @@ To manage purchases by project you should use the analytic accounts. On each lin
 order you can note an analytic account. The analytic costs linked to this purchase will be managed
 by Open ERP to the receipt and confirmation of the supplier invoice.
 
-The ``hr_timesheet_invoice`` module lets you reinvoice the analytic costs automatically by reference
+.. index::
+   pair: module; hr_timesheet_invoice
+
+The :mod:`hr_timesheet_invoice` module lets you reinvoice the analytic costs automatically by reference
 to the parameters in the analytic accounts: such as pricelist, end customer, maximum amount,
 employee ????
 
@@ -482,12 +522,15 @@ Re-invoicing based on costs you'd get the following workflow:
 
 #. Invoice these costs to the customer.
 
+.. index::
+   pair: module; purchase_analytic_plans
+
 .. tip:: Analytic multiplans
 
-   If you want several analysis plans you should install the module ``purchase_analytic_plans``.
+   If you want several analysis plans you should install the module :mod:`purchase_analytic_plans`.
    These enable you to split a line on a supplier purchase order into several accounts and analytic
    plans.
-   Look back at the chapters on accounting for more information on the use of analytic accounts.
+   Look back at :ref:`ch-accts` for more information on the use of analytic accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 

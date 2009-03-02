@@ -8,7 +8,10 @@ Now take a slight detour away from pure enterprise management by looking at some
 Open ERP to improve your own personal time management. It's not much of a detour because good
 organization is the key to better productivity in your daily work.
 
-Open ERP's \ ``project_gtd``\   module was inspired by the work of two books focusing on efficient
+.. index::
+   pair: module; project_gtd
+
+Open ERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
 time management:
 
 
@@ -49,7 +52,7 @@ time management:
   organization that result.
 
 The objective in this detour is not to detail the whole methodology but to describe the supporting
-tools provided by Open ERP's \ ``project_gtd``\   module.
+tools provided by Open ERP's :mod:`project_gtd` module.
 
 Not everything that is urgent is necessarily important
 ------------------------------------------------------
@@ -193,7 +196,7 @@ themselves, just classifying them.
 .. figure::  images/service_timebox_day.png
    :align: center
 
-   *Timebox for tasks to be done today.*
+   *Timebox for tasks to be done today*
 
 Then click on the button at the top right :guilabel:`Plan the timebox`. This procedure lets you
 select the tasks for the day from those in the timebox for the week. This operation gives you an

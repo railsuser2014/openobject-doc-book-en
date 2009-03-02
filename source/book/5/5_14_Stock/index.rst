@@ -1,4 +1,6 @@
 
+.. _ch-stocks:
+
 ******************************
 Logistics and Stock Management
 ******************************
@@ -37,13 +39,15 @@ locations are used for the counterparts of these two operations.
 Inventory locations are counterparts of the stock operations that represent your company's profits
 and losses in terms of your stocks.
 
-The following figure shows the initial configuration of the stores locations when the software is
+The figure :ref:`fig-stloctree` shows the initial configuration of the stores locations when the software is
 installed.
+
+.. _fig-stloctree:
 
 .. figure:: images/stock_location_tree.png
    :align: center
 
-   *Stores location structure when Open ERP has just been installed.*
+   *Stores location structure when Open ERP has just been installed*
 
 .. note::  Hierarchical stock locations
 

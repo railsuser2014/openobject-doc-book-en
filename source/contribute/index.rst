@@ -8,7 +8,6 @@ How To Contribute
 
     introduction
     opensource_vision
-    summary_of_ressources
     working_in_teams
     using_bazaar
     developing_modules

@@ -62,8 +62,20 @@ release = '1.0rc3'
 today_fmt = '%Y-%m-%d'
 
 # List of documents that shouldn't be included in the build.
-#unused_docs = []
+unused_docs = [
+	'bi/openobject_module/openobject_module.rst',
+	'bi/installation/install_olap.rst',
+	'bi/installation/install_web.rst',
+	'book/content.rst',
+	'contents.rst',
+	'contribute/summary_of_ressources.rst',
+	'developer/7_School/index.rst',
+	'features/example.rst',
+	'features/repairs.rst',
+	'install/windows/allinone.rst',
+	'verticalisations/index.rst',
 
+]
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_trees = [

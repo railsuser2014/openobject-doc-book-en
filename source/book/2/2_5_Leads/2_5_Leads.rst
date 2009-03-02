@@ -47,7 +47,7 @@ form opens to let you enter data about this new contact.
 .. figure:: images/crm_lead_new.png
    :align: center
 
-   *Creating a new lead.*
+   *Creating a new lead*
 
 Leads have a status that depends on the qualification work that's been carried out:
 
@@ -77,10 +77,10 @@ data.
 .. figure:: images/crm_lead_import.png
    :align: center
 
-   *Importing leads into the system.*
+   *Importing leads into the system*
 
 You then set which columns are present in your CSV file in the correct order. Then select your file
-and click on :guilabel:`Import`. Check in the chapter about system administration for more
+and click on :guilabel:`Import`. Check in the chapter about system administration, :ref:`ch-config`, for more
 information on import and export.
 
 .. tip:: Various Imports
@@ -99,7 +99,7 @@ There are other methods of importing leads automatically or semi-automatically:
 
 * Using Open ERP's XML-RPC web-servces to connect to a form on your website.
 
-These different methods are described in the earlier CRM chapter.
+These different methods are described in the earlier CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
 ----------------
@@ -126,7 +126,7 @@ system that can be used depending on the needs of each:
 .. figure:: images/crm_leads_list.png
    :align: center
 
-   *List of leads to be handled.*
+   *List of leads to be handled*
 
 Leads are prioritized. The salespeople should ideally start at the top of the list. They then open a
 form to describe the lead. At this stage they contact the suspect by email or phone and enter the
@@ -158,7 +158,7 @@ of converting to a sale.
 .. figure:: images/crm_lead_convert.png
    :align: center
 
-   *Converting a lead into a sales opportunity.*
+   *Converting a lead into a sales opportunity*
 
 Some companies have more advanced processes for the qualification of a lead. They pass through
 several steps, auch as first call, renewing contact, waiting for a verbal agreement. You can then

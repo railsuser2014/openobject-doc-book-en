@@ -53,11 +53,11 @@ or validate them. Open ERP uses the following different ways of generating invo
 
 * from reception or despatch of goods,
 
-* from work carried out (timesheets, see chapter 10),
+* from work carried out (timesheets, see :ref:`ch-hr`),
 
-* from closed tasks (see chapter 12),
+* from closed tasks (see :ref:`ch-projects`),
 
-* from fee charges or other rechargeable expenses (see chapter 11).
+* from fee charges or other rechargeable expenses (see :ref:`ch-services`).
 
 The different processes generate \ ``Draft``\   invoices. These must then be approved by a suitable
 system user and sent to the customer. The different invoicing methods are detailed in the following
@@ -96,7 +96,7 @@ A new invoice form opens for entering information.
 .. figure::  images/account_invoice_new.png
    :align: center
 
-   *Entering a new invoice.*
+   *Entering a new invoice*
 
 The document is composed of three parts:
 
@@ -183,12 +183,15 @@ following fields are then completed automatically:
 
 *  :guilabel:`Taxes` : provided by the product form and the partner form.
 
+.. index::
+   pair: module; account_tax_include
+
 .. tip::  Managing the price with tax included
 
 	By default, Open ERP invoices and processes the price without taxes – they're managed as a
-	separate figure.
+	separate amount.
 	If you want to have invoices provided with tax included you can install the module
-	``account_tax_include``.
+	:mod:`account_tax_include`.
 
 	The module adds a field on each invoice that enables you to indicate if the invoice is tax
 	exclusive or tax inclusive.
@@ -239,18 +242,19 @@ calculated for different tax rates used in the invoice.
 .. figure::  images/account_invoice_tva.png
    :align: center
 
-   *Detail of tax charges on an invoice.*
+   *Detail of tax charges on an invoice*
 
 Before approving the invoice you can modify the date and the accounting period, which are entered by
 default as today's date. These fields are found on the second tab :guilabel:`Other Information`.
 
 .. index::
    single: Invoice layout
+   pair: module; account_invoice_layout
 
 .. note:: Invoice layout
 
 	If you want to make your invoice layout more elaborate you can install the module
-	``account_invoice_layout``. This enables you to add various elements between the lines such as
+	:mod:`account_invoice_layout`. This enables you to add various elements between the lines such as
 	subtotals, sections, separators and notes.
 
 Click :guilabel:`Validate` when you want to approve the invoice. It moves from the \ ``Draft``\
@@ -296,7 +300,7 @@ Take the case of the following product
 
 	The DEEE tax (disposal of electronic and electrical equipment) is an ecological tax that was
 	imposed in France from 2007. It's applied to batteries to finance their recycling and is a fixed
-	sum that's applied to the before-tax figure on the invoice
+	sum that's applied to the before-tax amount on the invoice
 
 If you trade with a company in your own country, and your country has a DEEE-type tax, the
 applicable taxes for this invoice will be:

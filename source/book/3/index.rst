@@ -1,4 +1,6 @@
 
+.. _part-genacct:
+
 ##################
 General Accounting
 ##################
@@ -17,6 +19,7 @@ General Accounting
  company very closely.
 
 .. toctree::
+    :maxdepth: 1
 
     3_7/index
     3_8/index

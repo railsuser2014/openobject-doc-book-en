@@ -92,8 +92,6 @@ A report that relates both general accounts and analytic accounts enables you to
 costs within a given department. An analysis of the Production / Product Range 1 department is shown
 in this table:
 
-
-
 .. csv-table:: **Report merging both general and analytic accounts for a department (Case 1)**
    :header: "Production / Product Range 1",""
    :widths: 10,5
@@ -103,8 +101,6 @@ in this table:
    "613 – Transport charges","- 450"
    "6201 – Staff costs","-2 000"
    "Total","-3 750"
-
-
 
 The examples above are based on a breakdown of the costs of the company. Analytic allocations can be
 just as effective for sales. That gives you the profitability (sales - costs) of different
@@ -132,7 +128,7 @@ of the expenses and products are then attached to a given file.
 A principal preoccupation of law firms is the invoicing of hours worked and the profitability by
 case and by employee.
 
-Mechanisms used for encoding the hours worked will be covered in detail in the following chapter.
+Mechanisms used for encoding the hours worked will be covered in detail in the following chapter, :ref:`ch-hr`.
 Like most system processes, hours worked are integrated into the analytic accounting. Every time an
 employee enters a timesheet for a number of hours, that automatically generates analytic accounts
 corresponding to the cost of those hours in the case concerned. The hourly charge is a function of
@@ -209,7 +205,7 @@ different cases.
 This same data can be used for automatic recharging of the services to the client at the end of the
 month. To invoice clients just take the analytic costs in that month and apply a selling price
 factor to generate the invoice. Invoicing mechanisms for this are explained in greater detail in
-chapter 11. If the client requires details of the services used on the case, you can then print the
+:ref:`ch-services`. If the client requires details of the services used on the case, you can then print the
 service entries in the analytic account for this case.
 
 .. tip:: Invoicing analytic costs

@@ -29,7 +29,7 @@ with disks formatted in NTFS (not a FAT or FAT32 partition).
    for obvious reasons -- these can't be formatted using NTFS.
 
 You will also need a PostgreSQL server up and running. If it's not the case,
-you can read the :ref:`postgresql-server-installation` Section.
+you can read the :ref:`windows_postgresql-server-installation` Section.
 
 Downloading the Open ERP Server
 -------------------------------

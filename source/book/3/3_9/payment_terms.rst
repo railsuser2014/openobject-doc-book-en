@@ -16,7 +16,7 @@ the end of the month.
 .. figure::  images/account_payment_term.png
    :align: center
 
-   *Configuring payment terms.*
+   *Configuring payment terms*
 
 To configure new conditions start by giving a name to the :guilabel:`Payment Term` field. Text that
 you put in the field :guilabel:`Description` is used on invoices, so enter a clear description of

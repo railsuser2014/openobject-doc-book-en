@@ -23,11 +23,10 @@ Defining a period or a fiscal year
 To define your fiscal year use the menu :menuselection:`Financial Management --> Configuration -->
 Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
-
 .. figure::  images/account_period.png
    :align: center
 
-   *Defining a financial year and periods.*
+   *Defining a financial year and periods*
 
 First enter the date of the first day of your fiscal year and the last day. Then to create the
 periods click one of the two buttons at the bottom depending on whether you want to create twelve
@@ -52,7 +51,7 @@ finally sent to the statutory authorities, and no further modifications are perm
 .. figure::  images/account_fy_close.png
    :align: center
 
-   *Closing a financial year.*
+   *Closing a financial year*
 
 It's also possible to close an accounting period. You could for example close a monthly period when
 a tax declaration has been made. When a period is closed you can't modify any of the entries in that

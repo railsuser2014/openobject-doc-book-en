@@ -17,12 +17,14 @@ the time worked on client or internal projects to make up the full number of hou
 day. If an account isn't in the system then the time is added to the hours that haven't been
 assigned for the day.
 
+.. _fig-servtimlis:
+
 .. figure::  images/service_timesheet_list.png
    :align: center
 
-   *Timesheet for a working day.*
+   *Timesheet for a working day*
 
-The figure gives an example of a timesheet for an employee.
+The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee.
 
 .. note:: Don't confuse timesheets and attendence compliance
 
@@ -84,9 +86,12 @@ The following information is important in the product form:
 
 *  :guilabel:`Standard Price`
 
+.. index::
+   pair: module; product_index
+
 .. tip:: Price Indexation
 
-	The module ``product_index`` lets you generate indexes connected to the change of purchase or sale
+	The module :mod:`product_index` lets you generate indexes connected to the change of purchase or sale
 	price for individual products.
 
 	In human resources, this module can be used to change your prices or costs in step with a national
@@ -104,11 +109,14 @@ In summary, each company employee corresponds, in most cases, to:
 
 And each company job position corresponds to a :guilabel:`Product`.
 
+.. index::
+   pair: module; hr_contract
+
 .. note:: Time charge rates
 
 	By default the hourly cost of an employee is given by the standard cost of the product linked to
 	that employee.
-	But if you install the ``hr_contract`` module it's possible to manage contracts differently.
+	But if you install the :mod:`hr_contract` module it's possible to manage contracts differently.
 	The hourly cost of the employee is then automatically calculated from their employment contract
 	when they enter their timesheet data.
 
@@ -124,7 +132,10 @@ And each company job position corresponds to a :guilabel:`Product`.
 Entering timesheet data
 ------------------------
 
-To be able to use timesheets, you should install the module \ ``hr_timesheet``\  . Once this module
+.. index::
+   pair: module; hr_timesheet
+
+To be able to use timesheets, you should install the module :mod:`hr_timesheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu :menuselection:`Human Resources --> Hours Encoding --> For me --> My
 Works of the Day`.
@@ -138,15 +149,15 @@ Works of the Day`.
 
  *New*
 
-	#. The :guilabel:`User` is proposed by default, but you can change it if you're encoding the first timesheet
-	for another company employee.
+	#.	The :guilabel:`User` is proposed by default, but you can change it if you're encoding the first timesheet
+		for another company employee.
 
-	#. The :guilabel:`Date` is automatically proposed as today's date, but it's possible to change it if you're
-	encoding the timesheet for a prior day.
+	#.	The :guilabel:`Date` is automatically proposed as today's date, but it's possible to change it if you're
+		encoding the timesheet for a prior day.
 
-	#. :guilabel:`Analytic Account`
+	#.	:guilabel:`Analytic Account`
 
-	#.  :guilabel:`Quantity`
+	#. 	:guilabel:`Quantity`
 
  *Description*
 
@@ -186,7 +197,7 @@ forgotten to encode her timesheet on a certain day.
 .. figure::  images/service_timesheet_all.png
    :align: center
 
-   *Employee's monthly summary timesheet.*
+   *Employee's monthly summary timesheet*
 
 Many graphs are available through the menus :menuselection:`Human Resources --> Reporting --> This
 Month / All Months`, for example:
@@ -202,7 +213,7 @@ Month / All Months`, for example:
 .. figure::  images/service_timesheet_graph.png
    :align: center
 
-   *Chart of timesheet by account.*
+   *Chart of timesheet by account*
 
 The data making up these graphs can be varied using the filters available in the upper part of the
 screen. If you want to get more exact figures, switch to the list view.
@@ -215,8 +226,11 @@ screen. If you want to get more exact figures, switch to the list view.
 	It's possible to assign a dashboard to users so that it appears when they sign into Open ERP.
 	Then each employee will be able to see if they've forgotten to complete their timesheet when they
 	signed out of the system.
+	
+	.. index::
+	   pair: module; board_project	
 
-	To use this dashboard, install the module ``board_project``.
+	To use this dashboard, install the module :mod:`board_project`.
 
 .. index::
    single: Timesheets; Evaluation
@@ -303,19 +317,22 @@ When employee teams are important, a control system must be implemented. All emp
 complete their timesheets correctly because this forms the basis of planning control, and the
 financial management and invoicing of projects
 
-You'll see in the next chapter that it's possible to automatically invoice services at the end of
+You'll see in :ref:`ch-services` that you can automatically invoice services at the end of
 the month based on the timesheet. But at the same time some contracts are limited to prepaid hours.
 These hours and their deduction from the original limit are also managed by these timesheets.
 
+.. index::
+   pair: module; hr_timesheet_sheet
+
 In such a situation, hours that aren't coded into the timesheets represent lost money for the
 company. So it's important to establish effective follow-up of the services timesheets and their
-encoding. To set up a structure for control using timesheets you should install the module \
-``hr_timesheet_sheet``\  .
+encoding. To set up a structure for control using timesheets you should install the module 
+:mod:`hr_timesheet_sheet`.
 
 .. figure::  images/timesheet_flow.png
    :align: center
 
-   *Process of approving a timesheet.*
+   *Process of approving a timesheet*
 
 This module supplies a new screen enabling you to manage timesheets by period. Timesheet entries are
 made by employees each day. At the end of the week, employees validate their week's sheet and it's
@@ -328,7 +345,7 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 .. figure::  images/service_timesheet_sheet_form.png
    :align: center
 
-   *Form for entering timesheet data.*
+   *Form for entering timesheet data*
 
 In the upper part of the screen the user starts with the sign-in and sign-out times. The system
 enables the control of attendance day by day. The two buttons Sign in and Sign out enable the
@@ -346,7 +363,7 @@ second tab to detect the days or the entries that haven't been correctly coded i
 .. figure::  images/timesheet_sheet_hours.png
    :align: center
 
-   *Detail of hours worked by day for an employee.*
+   *Detail of hours worked by day for an employee*
 
 The third tab :guilabel:`By account` shows the time worked on all the different projects. That enables you
 to step back to see an overview of the time an employee has worked spread over different projects.
@@ -378,7 +395,7 @@ Once the timesheets have been approved you can then use them for cost control an
 hours to clients.
 
 Contracts and their rates, planning, and methods of invoicing are the object of the following
-chapter.
+chapter, :ref:`ch-services`.
 
 
 .. Copyright © Open Object Press. All rights reserved.

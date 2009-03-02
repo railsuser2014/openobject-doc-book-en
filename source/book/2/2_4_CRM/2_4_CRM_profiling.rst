@@ -41,14 +41,14 @@ The products offered by Tiny at these exhibitions are:
   integration – for companies that are slightly larger.
 
 The Tiny company has therefore put a decision tree in place based on the answers to several
-questions posed to prospects. These are given in the following figure:
+questions posed to prospects. These are given in the following figure :ref:`fig-crmprof`:
 
+.. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree.png
    :align: center
 
-   *Example of profiling customer prospects by the Tiny company.*
-
+   *Example of profiling customer prospects by the Tiny company*
 
 The sales person starts by asking the questions mentioned above and then with a couple of minutes of
 work can decide what to propose to the prospective customer.
@@ -65,7 +65,10 @@ proposition, such as an invitation to a training session a week after the show.
 Using profiles effectively
 --------------------------
 
-To use the profiling system you'll need to install Open ERP's \ ``crm_profiling``\   module. It's
+.. index::
+   pair: module; crm_profiling
+
+To use the profiling system you'll need to install Open ERP's :mod:`crm_profiling` module. It's
 part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from
 ``addons-extra``.
 
@@ -100,9 +103,12 @@ When entering the details of a specific prospect, the prospect's answers to vari
 entered in the new fifth tab of the partner form. Open ERP will automatically assign prospects to
 the appropriate partner category based on these answers.
 
+.. index::
+   pair: module; report_invoice_salesman
+
 .. tip:: Sales targets
 
-	The module ``report_invoice_salesman`` enables you to set up regular business targets. These can be
+	The module :mod:`report_invoice_salesman` enables you to set up regular business targets. These can be
 	based on sales turnover or sales margins.
 
 	With this module you can compare the performance of each sales person with their targets for the

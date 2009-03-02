@@ -6,12 +6,14 @@
 Accounting workflow and the automatic generation of invoices
 ============================================================
 
-The chart below shows the financial workflow followed by each invoice.
+The chart :ref:`fig-accfl` shows the financial workflow followed by each invoice.
+
+.. _fig-accfl:
 
 .. figure::  images/account_flow.png
    :align: center
 
-   *Accounting workflow for invoicing and payment.*
+   *Accounting workflow for invoicing and payment*
 
 In general, when you use all of Open ERP's functionality, invoices don't need to be entered
 manually. Draft invoices are generated automatically from other documents such as Purchase Orders.
@@ -55,7 +57,7 @@ that's created correspond to the amounts that Open ERP will record as the custo
 	You create instead a report from the purchase order, which prints a pro forma invoice,
 	which has no accounting consequences within the system.
 
-	You can use the module described in Chapter 13 to create this report.
+	You can use the module described in :ref:`ch-config` to create this report.
 
 An open invoice has a unique invoice number. The invoice is sent to the customer and is marked on
 the system as awaiting payment.

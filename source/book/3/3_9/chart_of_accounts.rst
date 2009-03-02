@@ -5,10 +5,14 @@
 Chart of Accounts
 =================
 
+.. index::
+   pair: modules; l10n_
+   pair: module; l10n_fr
+
 On installation, the software is given a default chart of accounts that's the same regardless of
 your country. To install the chart of accounts and tax definitions for your own country install the
-module \ ``l10n_XX``\   where XX represents your country code in two letters. For example to get the
-chart of accounts for France install the module \ ``l10n_fr``\  .
+module :mod:`l10n_XX` where XX represents your country code in two letters. For example to get the
+chart of accounts for France install the module :mod:`l10n_fr`.
 
 Some of these pre-built modules are comprehensive and accurate, others have rather more tentative
 status and are simply indicators of the possibilities. You can modify these, or build your own
@@ -51,7 +55,7 @@ Creating a chart of accounts
 .. figure::  images/account_form.png
    :align: center
 
-   *Definition of an account.*
+   *Definition of an account*
 
 To add, modify or delete existing accounts, use the menu :menuselection:`Financial Management -->
 Configuration --> General Accounts --> Accounts Definitions`.

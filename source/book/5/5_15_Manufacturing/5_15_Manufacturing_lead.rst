@@ -148,21 +148,25 @@ distinguish three types of workcenter: machines, tools and human resources.
     that can be considered as a unit for the purposes of forecasting capacity and planning.
 
 Use the menu :menuselection:`Manufacturing --> Configuration --> Workcenters` to define a new
-workcenter. You get a form as shown in the figure below.
+workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
+
+.. _fig-mrpwkc:
 
 .. figure:: images/mrp_workcenter.png
    :align: center
 
-   *Definition of a workcenter.*
+   *Definition of a workcenter*
 
 A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and
-a description of operating hours or functionality. The figure below represents the hours from Monday
+a description of operating hours or functionality. The figure :ref:`fig-mrpwkcwh` represents the hours from Monday
 to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
+
+.. _fig-mrpwkcwh:
 
 .. figure:: images/mrp_workcenter_working_hour.png
    :align: center
 
-   *Working hours for a workcenter.*
+   *Working hours for a workcenter*
 
 You should show a description of the workcenter and its operations.
 
@@ -218,7 +222,7 @@ effect on the analytic accounts.
 .. figure:: images/mrp_workcenter_tab.png
    :align: center
 
-   *Data about analytic accounts for a workcenter.*
+   *Data about analytic accounts for a workcenter*
 
 .. index::
    single: Routing; Manufacturing
@@ -238,7 +242,7 @@ location. That enable you to indicate where assembly takes place.
 .. figure:: images/mrp_routing.png
    :align: center
 
-   *Definition of a routing with three operations.*
+   *Definition of a routing with three operations*
 
 .. note:: Subcontracting assembly
 
@@ -253,13 +257,13 @@ Impact of the production order
 ------------------------------
 
 The routings are then attached to the Bills of Materials which are then also used to generate
-product order. On a production order one the finds the assembly operations for making on the tab
-called 'Operations'.
+product order. On a production order you'll find assembly operations for manufacture on the 
+:guilabel:`Operations` tab.
 
-mrp_production_workorder.png
+.. figure:: images/mrp_production_workorder.png
+   :align: center
 
-
-Operations on a production order.
+   *Operations on a production order*
 
 The times and the cycles shown in the production order are in the same way as the materials,
 theoretical data. The user can change the values to reflect reality for manufacture.
@@ -281,7 +285,7 @@ interval is calculated (by day, week or month).
 .. figure:: images/mrp_workcenter_load.png
    :align: center
 
-   *Charge by workcenter.*
+   *Charge by workcenter*
 
 .. tip:: Theoretical times
 
@@ -306,7 +310,10 @@ Management of operations
 
    Operations are often called work orders.
 
-To work using work orders you must install the optional module ``mrp_operations``. Once the module
+.. index::
+   pair: module; mrp_operations
+
+To work using work orders you must install the optional module :mod:`mrp_operations`. Once the module
 is installed you'll find a new menu called :menuselection:`Manufacturing --> Operations -->
 Operations` to be carried out. The assembly workers must then encode each step operation by
 operation and, for each step, the real working time for it.
@@ -326,7 +333,7 @@ The following process is attached to each operation.
 .. figure:: images/mrp_operations_workflow.png
    :align: center
 
-   *Process for handling an operation.*
+   *Process for handling an operation*
 
 Thanks to this use by operation, the real working time is recorded on the production order.
 
@@ -371,7 +378,7 @@ order:
 .. figure:: images/mrp_operation.png
    :align: center
 
-   *Capturing events for work orders.*
+   *Capturing events for work orders*
 
 Open ERP then applies the events to the relevant operation.
 
@@ -420,7 +427,7 @@ your supplier. It's then that you indicate the quantities consumed by your suppl
 Production orders are found in the menu :menuselection:`Manufacture --> Production Orders -->
 Production Orders to start`. A production order is always carried out in two stages:
 
-#. Consumption of raw materials
+#. Consumption of raw materials.
 
 #. Production of finished products.
 
@@ -475,7 +482,7 @@ it automatically, for example if a procurement rule is defined for minimum stock
 .. figure:: images/mrp_exception.png
    :align: center
 
-   *Example of a procurement in exception.*
+   *Example of a procurement in exception*
 
 If no procurement rule is defined the exception must be corrected manually by the user. Once the
 exception is corrected you can restart by clicking on :guilabel:`Retry`. If you don't do that then
@@ -490,7 +497,7 @@ To procure internally, you can create a procurement order manually. Use the menu
 .. figure:: images/mrp_procurement.png
    :align: center
 
-   *Encoding for a new procurement order.*
+   *Encoding for a new procurement order*
 
 The procurement order will then be responsible for calculating a  proposal for automatic procurement
 for the product concerned. This procurement wll start a task, a purchase order form the supplier or
@@ -499,7 +506,7 @@ a production depending on the product configuration.
 .. figure:: images/mrp_procurement_flow.png
    :align: center
 
-   *Workflow for handling a procurement, a function of the product configuration.*
+   *Workflow for handling a procurement, a function of the product configuration*
 
 It is better to encode a procurement order rather than direct purchasing or production, That method
 has the following advantages:
@@ -523,7 +530,10 @@ short-circuit the planning of different procurements.
 Management of waste products and secondary products
 ===================================================
 
-For the management of waste you must install the module ``mrp_subproduct``. The normal behaviour of
+.. index::
+   pair: module; mrp_subproduct
+
+For the management of waste you must install the module :mod:`mrp_subproduct`. The normal behaviour of
 manufacture in Open ERP enables you to manufacture several units of the same finished product from
 raw materials (A + B > C). With waste management, the result of a manufacture can be to have both
 finished products and secondary products (A + B > C + D).
@@ -536,13 +546,13 @@ finished products and secondary products (A + B > C + D).
    small
    (or the offcuts may have value for the company if they can be used elsewhere).
 
-If the module ``mrp_subproduct`` has been installed you get a new field in the Bill of Material that
+If the module :mod:`mrp_subproduct` has been installed you get a new field in the Bill of Material that
 lets you set secondary products resulting from the manufacture of the finished product.
 
 .. figure:: images/mrp_bom_subproduct.png
    :align: center
 
-   *Definition of waste products in a Bill of Materials.*
+   *Definition of waste products in a Bill of Materials*
 
 When Open ERP generates a production order based on a Bill of Materials that uses secondary product
 you pick up the list of all products in the the third tab of the production order 'Finished
@@ -551,7 +561,7 @@ Products'.
 .. figure:: images/mrp_production.png
    :align: center
 
-   *A production order producing several finished products.*
+   *A production order producing several finished products*
 
 Secondary products enable you to generate several types of products from the same raw materials and
 manufacturing methods – only these aren't used in the calculation of requirements. Then if you
@@ -575,7 +585,10 @@ production order for the secondary product.
 Management of repairs
 =====================
 
-The management of repairs is carried out using the module ``mrp_repair``. Once it's installed this
+.. index::
+   pair: module; mrp_repair
+
+The management of repairs is carried out using the module :mod:`mrp_repair`. Once it's installed this
 module adds new menus to the Manufacturing menu:
 
 * :menuselection:`Manufacturing --> Repairs`
@@ -610,12 +623,14 @@ Entering data for a new repair
 ------------------------------
 
 Use the menu :menuselection:`Manufacturing --> Repairs --> New Repair` to enter a new repair into
-the system. You'll see a blank form for the repair data, as shown in the figure below.
+the system. You'll see a blank form for the repair data, as shown in the figure :ref:`fig-mrprepnew` below.
+
+.. _fig-mrprepnew:
 
 .. figure:: images/mrp_repair_new.png
    :align: center
 
-   *Entering data for a new repair.*
+   *Entering data for a new repair*
 
 Start by identifying the product that will be repaired using the product lot number. Open ERP then
 automatically completes fields from the selected lot – the partner fields, address, delivery
@@ -664,7 +679,7 @@ bill.
 .. figure:: images/mrp_repair_tab2.png
    :align: center
 
-   *Second tab.*
+   *Repair form, second tab*
 
 The third tab, Quality, is for encoding information about the quality: internal notes, notes for the
 quotation, corrective actions and preventative actions for example.
@@ -673,12 +688,14 @@ Repair workflow
 ---------------
 
 A defined process handles a repair order – both the repair itself and invoicing the client. The
-figure below shows this repair process.
+figure :ref:`fig-mrprepflow` shows this repair process.
+
+.. _fig-mrprepflow:
 
 .. figure:: images/mrp_repair_workflow.png
    :align: center
 
-   *Process for handling a repair.*
+   *Process for handling a repair*
 
 Once a repair has been entered onto the system, it is in the 'draft' state. In this state it has no
 impact on the rest of the system. You can print a quotation from it using the action 'Print
@@ -724,12 +741,14 @@ customer delivery order when the repair has been completed. This also lets you m
 of the repaired products.
 
 For example, take the case of the cabinet that was produced at the start of this chapter. If you
-have to replace the shelf PANLAT, you must enter data for the repair as in the figure below.
+have to replace the shelf PANLAT, you must enter data for the repair as shown in figure :ref:`fig-mrpreppan`.
+
+.. _fig-mrpreppan:
 
 .. figure:: images/mrp_repair_panlat.png
    :align: center
 
-   *Repair of a shelf in a cabinet.*
+   *Repair of a shelf in a cabinet*
 
 In this example, you'd carry out the following operations:
 

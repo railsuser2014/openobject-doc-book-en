@@ -4,16 +4,18 @@
 
 .. index:: Database
 
+.. _sect-dbcreate:
+
 Database creation
 =================
 
-Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This
+Use the technique outlined in this chapter, :ref:`ch-inst` to create a new database, \ ``openerp_ch01``\  . This
 database will contain the demonstration data provided with Open ERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.
 
 Start the database creation process from the :guilabel:`Database Administration` page by clicking
-:guilabel:`Create`  and then completing the following fields on the :guilabel:`Create Database`
+:guilabel:`Create` and then completing the following fields on the :guilabel:`Create Database`
 form:
 
 *  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system
@@ -25,18 +27,18 @@ form:
 
 *  :guilabel:`Default Language` : \ ``English``\  .
 
+.. _sect-creatingdb:
 
 Creating the database
 ---------------------
 
-Before walking through an Open ERP business process step by step in the next chapter you'll create
+Before walking through an Open ERP business process step by step in the next chapter, :ref:`ch-guided`, you'll create
 a database to check that the installation is working correctly:
 
 * \ ``openerp_ch01``\  : a minimal database containing demonstration data.
 
 To create new databases you must know the super-administrator password which defaults to ``admin``
 on a new installation.
-
 
 .. note :: The super-administrator password
 
@@ -55,12 +57,12 @@ on a new installation.
 .. figure:: images/change_superadmin_pwd.png
    :align: center
 
-   *Changing the super-administrator password through the web client.*
+   *Changing the super-administrator password through the web client*
 
 .. figure:: images/create_new_db_GTK.png
    :align: center
 
-   *Creating a new database through the GTK client.*
+   *Creating a new database through the GTK client*
 
 * If you're using the GTK client, choose :menuselection:`Files --> Database --> New database`  in
   the menu at the top left. Enter the super-administrator password, then the name of the new database
@@ -88,12 +90,17 @@ database you can extend it without knowing the super administrator password.
 	The combination of username/password is specific to a single database. If you have administrative
 	rights to a database you can modify the predefined users.
 
-	Alternatively you can install the ``users_ldap`` module, which manages the authentication of users
+ 	.. index::
+	   pair: module; users_ldap
+
+	Alternatively you can install the :mod:`users_ldap` module, which manages the authentication of users
 	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
 	Open ERP databases. Using this, many databases can share the same user account details.
 
 .. figure:: images/create_new_db_web.png
    :align: center
+   
+   *Creating a new database through the web client*
 
 .. note::  Failure to create a database
 
@@ -127,12 +134,11 @@ Once configuration is complete you're connected to your Open ERP system. Its fu
 limited because you've selected a minimal installation, but this is sufficient to demonstrate that
 your installation is working.
 
-
 .. figure:: images/define_main_co_dlg.png
    :align: center
    :scale: 95
 
-   *Defining your company during initial database configuration.*
+   *Defining your company during initial database configuration*
 
 .. index::
    single: Database; Manage
@@ -179,14 +185,14 @@ New Open ERP functionality
 
 The database you've created and managed so far is based on the core Open ERP functionality that you
 installed. The core system is installed in the file system of your Open ERP application server, but
-only installed into an Open ERP database as you require it, as is described in the next chapter.
+only installed into an Open ERP database as you require it, as is described in the next chapter, :ref:`ch-guided`.
 
 What if want to update what's there, or extend what's there with additional modules?
 
 * To update what you have, you'd install a new instance of Open ERP using the same techniques as
-  described earlier in this chapter.
+  described earlier in this chapter, :ref:`ch-inst`.
 
-* To extend what you have, you'd install new modules in the addons directory of your current
+* To extend what you have, you'd install new modules in the ``addons`` directory of your current
   Open ERP installation. There are several ways of doing that.
 
 In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your
@@ -195,11 +201,15 @@ Open ERP application server.
 Extending Open ERP
 ------------------
 
-To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's is in
+To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's in
 your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the
 various Linux distributions and not available at all in the Windows all-in-one installer).
 
-If you look there you'll see existing modules such as \ ``product``\   and \ ``purchase``\  . A
+.. index::
+   pair: module; product
+   pair: module; purchase
+
+If you look there you'll see existing modules such as :mod:`product` and :mod:`purchase`. A
 module can be provided in the form of files within a directory or a a zip-format file containing
 that same directory structure.
 

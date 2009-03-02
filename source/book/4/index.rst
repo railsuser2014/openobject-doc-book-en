@@ -1,4 +1,6 @@
 
+.. _part-ops:
+
 ##################################
 Effective Management of Operations
 ##################################
@@ -15,6 +17,7 @@ Effective Management of Operations
  complex processes, simplify the transmission of information, and control your whole set of operations.
 
 .. toctree::
+    :maxdepth: 1
 
     4_10_Accounts/index
     4_11_HR/index

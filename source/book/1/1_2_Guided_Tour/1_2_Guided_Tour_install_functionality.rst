@@ -75,21 +75,24 @@ repository.
 Installing a module
 ---------------------
 
-You'll now install a module named \ ``product``\  , which will enable you to manage the company's
+.. index::
+   pair: module; product
+
+You'll now install a module named :mod:`product`, which will enable you to manage the company's
 products. This is part of the core installation, so you don't need to load anything to make this
 work, but isn't installed in the Minimal Profile.
 
 Open the list of uninstalled modules from :menuselection:`Administration --> Modules Management -->
-Uninstalled Modules`. Search for the module by entering the name \ ``product``\   in the search
+Uninstalled Modules`. Search for the module by entering the name :mod:`product` in the search
 screen then clicking it in the list that appears below it to open it. The form that describes the
 module gives you useful information such as its version number, its status and a review of its
-functionality. Click  *Install*  and the status of the module changes to \ ``To be installed``\  .
+functionality. Click :guilabel:`Install` and the status of the module changes to :guilabel:`To be installed`.
 
 
 .. figure:: images/install_product_module.png
    :align: center
 
-   *Installation of the ``product`` module.*
+   *Installation of the :mod:`product` module*
 
 
 .. tip::  Technical Guide
@@ -117,21 +120,24 @@ see the new menu :menuselection:`Products` has become available.
 Installing a module with its dependencies
 -------------------------------------------
 
+.. index::
+   pair: module; crm
+
 You'll now install the CRM module (Customer Relationship Management) using the same process as
 before.
 
-	#. Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
-	of modules to install. Search for the \ ``crm``\  module in that list.
+	#. 	Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
+		of modules to install. Search for the :mod:`crm` module in that list.
 
-	#. Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
-	resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
+	#.	Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
+		resulting module form, followed by :guilabel:`Start Upgrade` on the toolbar to the right.
 
-	#. When the update screen appears, Open ERP gives you the list of modules that it will install and
-	update. You'll find two modules there – \ ``crm``\  (which you selected) and \ ``account``\
-	What's happened is that the \ ``crm``\  module lists the \ ``account``\  module as a dependency,
-	and \ ``account``\  is not yet installed. So Open ERP automatically installs \ ``account``\
+	#.	When the update screen appears, Open ERP gives you the list of modules that it will install and
+		update. You'll find two modules there :mod:`crm` (which you selected) and :mod:`account`
+		What's happened is that the :mod:`crm` module lists the :mod:`account` module as a dependency,
+		and :mod:`account` is not yet installed. So Open ERP automatically installs :mod:`account`.
 
-	#. Start the upgrade to install both modules.
+	#.	Start the upgrade to install both modules.
 
 When you return to the main menu you'll find the new customer relationship management menu
 :menuselection:`CRM & SRM`. You'll also see all the accounting functions that are now available in
@@ -197,7 +203,7 @@ can skip this step.
 	accept them.
 	Your Open ERP addons directory must be writable by the system user that's running your Open ERP
 	application for this,
-	as described in the final section of Chapter 1.
+	as described in the final section of :ref:`ch-inst`.
 
 Click :menuselection:`Administration --> Modules Management --> Uninstalled modules` to give you an
 overview of all of the modules available for installation.
@@ -205,11 +211,14 @@ overview of all of the modules available for installation.
 To test several modules you won't have to install them all one by one. You can use the dependencies
 between modules to load several at once. For example, try loading the following modules:
 
-* \ ``profile_accounting``\  ,
+.. index::
+   pair: modules; profile_
 
-* \ ``profile_manufacturing``\  ,
+* :mod:`profile_accounting`,
 
-* \ ``profile_service``\  .
+* :mod:`profile_manufacturing`,
+
+* :mod:`profile_service`.
 
 To find these quickly, enter the word \ ``profile``\   in the :guilabel:`Name` field of the search
 form and click :guilabel:`Filter` to search for the relevant modules. Then install them one by one
@@ -218,8 +227,6 @@ or all at once.
 As you update you'll see thirty or so modules to be installed. When you close the :guilabel:`System
 Upgrade Done` form you'll be returned to a dashboard, not the main menu you had before. To get to
 the main menu, use the :guilabel:`Main Menu` link.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

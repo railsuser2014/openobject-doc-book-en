@@ -1,4 +1,6 @@
 
+.. _part-config:
+
 ########################################
 System Administration and Implementation
 ########################################
@@ -11,6 +13,7 @@ System Administration and Implementation
  taking account of different problems, a range of supplier types, implementation risks, and the options available to you.
 
 .. toctree::
+    :maxdepth: 1
 
     8_20_Config/index
     8_21_Implem/index

@@ -1,19 +1,21 @@
 
+.. _ch-real:
+
 *****************************************************************
 Developing a real case from purchase to sale: a complete workflow
 *****************************************************************
 
  *Now that you've discovered some of the many possibilities of Open ERP from a tour of the
- demonstration database,
- you'll develop a real case. An empty database provides the starting point for testing a classic
- workflow from
- product purchase to sale, completing your guided tour and your familiarization with Open ERP.*
+ demonstration database, you'll develop a real case. An empty database provides the starting point 
+ for testing a classic workflow from product purchase to sale, 
+ completing your guided tour and your familiarization with Open ERP.*
 
 A database loaded with demonstration data is very useful for understanding Open ERP's general
 capabilities. But to explore Open ERP through a lens of your own company's needs you should start
 with an empty database. You'll work in this chapter on a minimal database containing no
 demonstration data so that there is no confusion about what you created. And you'll keep the
-database you've created so that you can build on it throughout the rest of this book.
+database you've created so that you can build on it throughout the rest of this book
+if you want to.
 
 You'll develop a real case through the following phases:
 
@@ -30,8 +32,6 @@ You'll develop a real case through the following phases:
 The case is deliberately extremely simple to provide you with a foundation for the more complex
 situations you'll handle in reality. Throughout this chapter it's assumed that you're accessing
 Open ERP through its web interface.
-
-
 
 .. raw:: html
 

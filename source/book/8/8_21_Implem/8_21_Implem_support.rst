@@ -10,10 +10,10 @@ It's when you actually use your ERP that you will obtain value from your investm
 maintenance and support are critical for your long term success.
 
 * Support aims to ensure that end users get the maximum productivity from their use of Open ERP by
-responding to their questions on the use of the system. Support can be technical or functional.
+	responding to their questions on the use of the system. Support can be technical or functional.
 
 * Maintenance aims to ensure that the system itself continues to function as required. It includes
-system upgrades, which give you access to the latest functionality available.
+	system upgrades, which give you access to the latest functionality available.
 
 Some partners offer preventative maintenance. This makes sure that all the specific developments for
 your system are revised and tested for each new version so that they remain compatible with the base
@@ -29,13 +29,13 @@ Updates and Upgrades
 There are four sources of code change for Open ERP:
 
 * patches supplied by Tiny to correct faults: after validation these patches won't cause any
-secondary effects,
+	secondary effects,
 
 * minor updates, which gather the fault corrections together in one package, and are generally
-announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
+	announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
 
 * upgrades, which bundle both the fault corrections and the improvements to the functionality in a
-major release such as from 5.0.3 to 5.2.0.
+	major release such as from 5.0.3 to 5.2.0.
 
 * new functions generally released in the form of new modules.
 

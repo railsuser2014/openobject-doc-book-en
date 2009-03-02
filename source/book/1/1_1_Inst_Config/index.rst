@@ -1,4 +1,6 @@
 
+.. _ch-inst:
+
 ******************************
 Installation and Configuration
 ******************************
@@ -13,17 +15,17 @@ Installation and Configuration
  or install application clients on each intended user's PC.
  When you first install Open ERP you'll configure a database containing a little functionality and
  some demonstration data to test the installation.*
-
+ 
 .. figure:: images/ch1_outline.png
    :align: center
 
-   *Your options for reading this section of the book.*
+   *Options for reading this part of the book*
 
-This chapter focuses on the installation of Open ERP so that you can begin to familiarize
+This chapter, :ref:`ch-inst`, focuses on the installation of Open ERP so that you can begin to familiarize
 yourselves with its use. If you're not a systems administrator, or if you've already installed
 Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and
-move straight to Chapter 2. If you've already used Open ERP (or Tiny ERP) a bit then you can move
-past that to Chapter 3 in this section of the book.
+move straight to the next chapter, :ref:`ch-guided`. If you've already used Open ERP (or Tiny ERP) a bit then you can move
+past that to the third chapter in this part of the book, :ref:`ch-real`.
 
 .. index::
    single: Tiny ERP

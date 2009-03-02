@@ -1,4 +1,6 @@
 
+.. _ch-configacct:
+
 ********************************
 Configuring Accounts from A to Z
 ********************************

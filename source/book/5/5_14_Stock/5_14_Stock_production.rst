@@ -14,7 +14,10 @@ by the logistics manager.
     manufactured.
     You can then use it for stock management with purchased and manufactured products.
 
-To be able to use the production plan, you must install the ``stock_planning`` module which can be
+.. index::
+   pair: module; stock_planning
+
+To be able to use the production plan, you must install the :mod:`stock_planning` module which can be
 found amongst Open ERP's extra_addons rather in the main set of addons.
 
 .. index:: Forecasts
@@ -40,7 +43,7 @@ provided for stock management.
 .. figure:: images/sale_period.png
    :align: center
 
-   *Defining periods for stock management.*
+   *Defining periods for stock management*
 
 Salespeople can then enter their sales forecasts by product and by period using the menu
 :menuselection:`Sales Management --> Sales Forecasts --> My Sales Forecasts`. The forecasts can be
@@ -51,7 +54,7 @@ completion.
 .. figure:: images/stock_sale_forecast.png
    :align: center
 
-   *Sales Forecast to help create a master production plan.*
+   *Sales Forecast to help create a master production plan*
 
 .. index::
    single: Plan; Production
@@ -86,7 +89,7 @@ For each period and product Open ERP gives you the following information:
 .. figure:: images/stock_forecast.png
    :align: center
 
-   *The master production schedule (MPS).*
+   *The master production schedule (MPS)*
 
 The production plan then enables the logistics manager to play with the forecast income and
 outgoings and test the impact on the future stock for the product under consideration. It enables

@@ -21,7 +21,10 @@ same time.
 The different journals
 ----------------------
 
-Install the module ``sale_journal`` to work with journals. This adds three new concepts to Open ERP:
+.. index::
+   pair: module; sale_journal
+
+Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
 
 * Invoicing journals,
 
@@ -54,13 +57,13 @@ Using the journals
 ------------------
 
 You'll now see how to use the journals to organize your stock management in practice. After
-installing the module ``sale_journal`` look at the list of partners. In the tab :guilabel:`Sales and
+installing the module :mod:`sale_journal` look at the list of partners. In the tab :guilabel:`Sales and
 Purchases` on any of them you'll now see the field :guilabel:`Invoicing Journal`.
 
 .. figure:: images/partner_property_view.png
    :align: center
 
-   *Partner form in invoicing mode.*
+   *Partner form in invoicing mode*
 
 You can create a new *Invoicing Journal* on a partner on the fly. You can show if the invoices
 should be grouped or not after the generation in the journal. Create a second invoicing journal
@@ -69,7 +72,7 @@ should be grouped or not after the generation in the journal. Create a second in
 .. figure:: images/invoice_mode.png
    :align: center
 
-   *Defining an invoicing journal.*
+   *Defining an invoicing journal*
 
 Then enter the data for some orders for these two partners. After entering this order data, the
 field :guilabel:`Invoicing Mode` is completed automatically from the partner settings. Put these
@@ -100,8 +103,7 @@ quotations and assign them in a journal and confirm or cancel them en masse at o
 .. figure:: images/stock_jounral_form.png
    :align: center
 
-   *View of an order journal.*
-
+   *View of an order journal*
 
 .. Copyright © Open Object Press. All rights reserved.
 

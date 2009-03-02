@@ -1,7 +1,7 @@
 Database creation
 =================
 
-Use the technique outlined in Chapter 1 to create a new database, \ ``openerp_ch02``\  . This
+Use the technique outlined in :ref:`ch-inst` to create a new database, \ ``openerp_ch02``\  . This
 database will contain the demonstration data provided with Open ERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.

@@ -5,17 +5,155 @@ Database setup
 You'll create all the elements in the database that you need to carry out the use case. These are
 specified in the functional requirements.
 
+Configuring Accounts
+--------------------
+
+You need to start off with a minimal set of accounts, and to do that you will need a couple of
+account types. You can structure your accounts into a chart at any time (and, in fact, you can
+structure them into several additional charts at the same time as you'll see in the chapter
+:ref:`ch-configacct`), so you don't need to be concerned unduly about structure.
+
+Account Types
+^^^^^^^^^^^^^
+
+Create account types using :menuselection:`Financial Management --> Configuration --> 
+Financial Accounting --> Financial Accounts --> Account Types` and then clicking the
+:guilabel:`New` button. You'll need the following four types, the first of which is shown
+in figure :ref:`fig-oech03accty`.
+
+============== ======== ========  =============== =============== ===============
+Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
+============== ======== ========  =============== =============== ===============
+View           view     5         Positive        None            unchecked
+Income         income   5         Positive        Unreconciled    unchecked         
+Expense        expense  5         Positive        Unreconciled    unchecked
+Cash           cash     5         Positive        Balance         unchecked
+============== ======== ========  =============== =============== ===============
+
+
+.. _fig-oech03accty:
+
+.. figure::  images/openerp_ch03_acctype.png
+   :align: center
+   :scale: 80
+
+   *New Account Type*
+   
+Accounts
+^^^^^^^^
+
+Create accounts using :menuselection:`Financial Management --> Configuration --> 
+Financial Accounting --> Financial Accounts --> List of Accounts` and then clicking the
+:guilabel:`New` button. 
+
+You need accounts to handle the purchase and sales orders that haven't yet been paid,
+two more for the receipt and shipping of goods, and one for the payment and receipt of funds. 
+And one 'organizing' account that's just a view of the other five. So
+you'll need the following six accounts, one of which is shown
+in :ref:`fig-oech03accts`.
+
+============= ==== ============= =============== ============ =========
+Name          Code Internal Type Parent          Account Type Reconcile
+============= ==== ============= =============== ============ =========
+Minimal Chart 0    View                          View         unchecked
+Payable       AP   Payable       0 Minimal Chart Expense      checked
+Receivable    AR   Receivable    0 Minimal Chart Income       checked
+Cash          C    Others        0 Minimal Chart Cash         unchecked
+Purchases     P    Others        0 Minimal Chart Expense      unchecked
+Sales         S    Others        0 Minimal Chart Income       unchecked
+============= ==== ============= =============== ============ =========
+
+.. _fig-oech03accts:
+
+.. figure::  images/openerp_ch03_accts.png
+   :align: center
+   :scale: 80
+
+   *New Account*
+
+The :guilabel:`Account Type` entry is taken from the list of types that you just created.
+Although it looks a bit like a text box, it doesn't behave in quite the same way.
+A single :kbd:`Del` or :kbd:`Backspace` keystroke is all you need to delete the whole text,
+and when you type the name (or part of the name) you still need to associate that text
+with the entry by clicking the :guilabel:`Search` icon to the right of the field.
+
+Properties
+^^^^^^^^^^
+
+You now define some default properties so that you don't have to think about
+which account is used for which transaction every time you do something.
+The main new properties are the four that associate accounts payable and receivable
+to partners, and expenses and income to product categories.
+
+Create properties using :menuselection:`Administration --> Configuration --> 
+Properties --> Default Properties` and then clicking the :guilabel:`New` button. 
+
+============================== ========= ================== =============================== ===============
+Name                           Company   Fields             Value                           Parent Resource
+============================== ========= ================== =============================== ===============
+property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
+property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
+property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
+property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
+============================== ========= ================== =============================== ===============
+
+.. tip:: Mistakes in configuring accounts and properties
+
+   It's easy to make mistakes in configuring the accounts and their properties, but the consequences
+   are not immediately obvious. You'll mostly discover mistakes when trying to make a Purchase or
+   Sale Order (see later, for example, :ref:`sect-PO`), where the accounts are required fields or,
+   if you're diligent, when you set up Partners (see :ref:`sect-ConfiCo`). 
+   
+   If you configure them correctly at this stage then fields will be completed automatically and you'll
+   never know a thing. If you don't configure all this correctly then you won't be able to save the
+   order form until you have corrected the problem or until you manually set the accounts. 
+   
+   Since this configuration is quite tedious you'd be best finding a certified Chart of Accounts that
+   that has already been set up to meet your needs, if you can find one.
+
+Configuring Journals
+--------------------
+
+You'll also need to configure some journals, which are used to record the transactions from one account
+to another when invoices are raised and then paid. Create journals from the menu
+:menuselection:`Financial Management --> Configuration --> 
+Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
+
+===================== ==== ============= ================= ================ ===================== ======================
+Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
+===================== ==== ============= ================= ================ ===================== ======================
+Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
+Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
+Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
+===================== ==== ============= ================= ================ ===================== ======================
+
+.. tip:: Mistakes in configuring journals
+
+   It's easy to make mistakes in configuring the journals, too, and the consequences
+   are also not immediately obvious. You'll mostly discover mistakes when creating an invoice
+   (which happens at different points in the process depending on your configuration).
+   In this example, validating a Purchase Order creates a draft invoice 
+   (see later, again for example, :ref:`sect-PO`), where a journal is required. 
+   
+   As with accounts and properties, if you configure them correctly at this stage then 
+   the fields will be completed automatically and you'll never know a thing. 
+   If you don't configure all this correctly then there will be errors with the
+   order form or corresponding draft invoice
+   until you have corrected the problem or until you manually set the journal. 
+
+.. _sect-ConfiCo:
+
 Configuring the Main Company
 ----------------------------
 
-Start to personalize your database by renaming the :guilabel:`Main Company` from its default of \
+Start to configure your database by renaming the :guilabel:`Main Company` from its default of \
 ``Tiny sprl``\   to the name of your own company or (in this case) another example company. When you
 print standard documents such as quotations, orders and invoices you'll find this configuration
 information used in the document headers and footers.
 
 To do this, click :menuselection:`Partners --> Partners`  and click the name of the only company
 there, which is \ ``Tiny sprl``\  . This gives you a read-only view form view of the company, so
-make it editable by clicking the  *Edit*  button to the upper left of the form.
+make it editable by clicking the :guilabel:`Edit` button to the upper left of the form.
 
 .. tip:: Editable form in the web client
 
@@ -26,29 +164,46 @@ make it editable by clicking the  *Edit*  button to the upper left of the form.
 
 Change the following:
 
-*  *Name* : \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Name` : \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Contact Name` : \ ``George Turnbull``\  .
 
-*  *Contact Name* : \ ``George Turnbull``\  .
+Before you save this, look at the partner's accounting setup by clicking the fifth tab
+:guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
+have account values in them that were taken from the account properties you just created.
+You don't have to accept those values: you can enter any suitable account you like at this stage, 
+although Open ERP constrains the selection to ones that make accounting sense.
 
-and any other fields you like, such as the address and phone numbers, then :guilabel:`Save`. This
-adds one Contact to the Partner, which is sufficient for the example.
+Back at the first tab, :guilabel:`General`change  any other fields you like, 
+such as the address and phone numbers, then :guilabel:`Save`. This
+changes one Contact for the Partner, which is sufficient for the example.
 
-From the :guilabel:`Main Menu`, click :menuselection:`Administration --> Configuration --> Base -->
-Define Main Company`  and edit the entry there:
+From the :guilabel:`MAIN MENU`, click :menuselection:`Administration --> Users --> Company Structure -->
+Companies` and edit the only entry there:
 
 *  :guilabel:`Company Name` : \ ``AmbiPlum``\  ,
 
 *  :guilabel:`Partner` : should already show \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  :guilabel:`Report Header` : \ ``Ambitious Plumbing Enterprises``\  ,
+*  :guilabel:`Report Header` : \ ``Ambitious Plumbing``\  ,
 
 *  :guilabel:`Report Footer 1` : \ ``Best Plumbing Services, Great Prices``\  ,
 
 *  :guilabel:`Report Footer 2` : \ ``Ambitious – our Registered Company Details``\  .
 
-You can leave the currency at its default setting of \ ``EUR``\   for this example. Or you can
-change it in the Main Company (:menuselection:`Administration --> Configuration --> Base --> Main
-Company`) and the two default Pricelists (:menuselection:`Product --> Pricelists --> Pricelists`) if
+Figure :ref:`fig-oech03co` shows the effect of this.
+You can also change various other company-wide parameters for reports and scheduling in the other tabs,
+and you can upload a company logo of a specific size for the reports. Click :guilabel:`Save` to store this.
+
+.. _fig-oech03co:
+
+.. figure::  images/openerp_ch03_co.png
+   :align: center
+   :scale: 60
+
+   *Changing company details*
+
+You can leave the currency at its default setting of \ ``EUR``\ for this example. Or you can
+change it in this Company and the two default Pricelists (:menuselection:`Products --> Pricelists --> Pricelists`) if
 you feel compelled to do that.
 
 .. note::  Currency
@@ -63,8 +218,8 @@ You'll now create a suppliers category and a customers category. Partner categor
 organizing groups of partners but have no special behavior that affects partners, so you can assign
 them as you like. Then you'll define one supplier and one customer, with a contact for each.
 
-To do this use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit
-Categories`. Click :guilabel:`New`  to open a new form for defining :guilabel:`Partner Categories`.
+To do this use the menu :menuselection:`Partners --> Configuration --> Partner Categories`and
+click :guilabel:`New` to open a new form for defining :guilabel:`Partner Categories`.
 Define the two categories that follow by just entering their :guilabel:`Category Name` and saving
 them:
 
@@ -76,15 +231,29 @@ Then create two partners from the menu :menuselection:`Partners --> Partners`. C
 :guilabel:`New` button to open a blank form and then add the following data for the first partner
 first:
 
-*  :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
+* :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
 
-*  :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
+* :guilabel:`Customer` checkbox : \ ``unchecked``\  ,
 
-*  :guilabel:`Address Type` : \ ``Default``\  ,
+* :guilabel:`Supplier` checkbox : \ ``checked``\  ,
+
+* :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
+
+* :guilabel:`Address Type` : \ ``Default``\  ,
 
 * add \ ``Suppliers``\   to the :guilabel:`Categories` field by selecting it from the Search List,
 
-* then save the partner by clicking the :guilabel:`Save` button.
+* then save the partner by clicking the :guilabel:`Save` button. 
+
+Figure :ref:`fig-oech03part` shows the result. 
+
+.. _fig-oech03part:
+
+.. figure::  images/openerp_03_part.png
+   :align: center
+   :scale: 80
+
+   *New Partner Form*
 
 .. note:: Contact Types
 
@@ -98,11 +267,15 @@ first:
 
 For the second partner, proceed just as you did for the first, with the following data:
 
-*  :guilabel:`Name` : \ ``Smith and Offspring``\  ,
+* :guilabel:`Name` : \ ``Smith and Offspring``\ ,
 
-*  :guilabel:`Contact Name` : \ ``Stephen Smith``\  ,
+* :guilabel:`Customer` checkbox : \ ``checked``\ ,
 
-*  :guilabel:`Address Type` : \ ``Default``\  .
+* :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
+
+* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
+
+* :guilabel:`Address Type` : \ ``Default``\ .
 
 Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check
 your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each
@@ -122,16 +295,16 @@ products assigned to them – and a product may belong to only one category. Sel
 :menuselection:`Products --> Configuration --> Product Categories` and click :guilabel:`New` to get
 an empty form for defining a product category.
 
-Enter \ ``Radiators``\   in the :guilabel:`Name` field and, watching the :guilabel:`Product
-Categories` form closely, click :guilabel:`Save`. You'll see that other fields, specifically those
+Enter \ ``Radiators``\   in the :guilabel:`Name` field. You'll see that other fields, specifically those
 in the :guilabel:`Accounting Properties` section, have been automatically filled in with values of
 accounts and journals. These are the values that will affect products – equivalent fields in a
 product will take on these values if they, too, are blank when their form is saved.
+Click :guilabel:`Save`.
 
 .. note:: Properties fields
 
 	Properties have a rather unusual behavior. They're defined by parameters in the menu
-	:menuselection:`Administration --> Custom --> Properties`, and they update fields only when a form
+	:menuselection:`Administration --> Configuration --> Properties`, and they update fields only when a form
 	is saved, and only when the fields are empty at the time the form is saved. You can manually
 	override any of these properties as you need.
 
@@ -160,35 +333,37 @@ product will take on these values if they, too, are blank when their form is sav
 
 Now create a new product:
 
-	#. Go to the :menuselection:`Products --> Products` menu and click :guilabel:`New`,
+	#.	Go to the :menuselection:`Products --> Products` menu and click :guilabel:`New`.
 
-	#. Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field,
+	#.	Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field.
 
-	#. Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
-	:guilabel:`Radiators` category,
+	#.	Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
+		:guilabel:`Radiators` category.
 
-	#. The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
-	The fields :guilabel:`Procure Method` :guilabel:`Default UOM`, and :guilabel:`Purchase UOM` should
-	also stay at their default values: in fact every other field remains untouched.
+	#.	The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
+		The fields :guilabel:`Procure Method`, :guilabel:`Supply Method`, :guilabel:`Default UOM`, 
+		and :guilabel:`Purchase UOM` should
+		also stay at their default values: in fact every other field in this tab remains untouched.
 
-           .. figure::  images/product.png
-              :align: center
-              :scale: 95
+        .. figure::  images/product.png
+           :align: center
+           :scale: 60
+           
+           *Product Form*
 
-	#. Click on the :guilabel:`Procurement` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
-	field and \ ``132.50``\  into the :guilabel:`List Price` field,
+	#.	Click on the :guilabel:`Prices & Suppliers` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
+		field and \ ``132.50``\  into the :guilabel:`Sale Price` field.
 
-	#. Click the :guilabel:`Properties` tab, then click :guilabel:`Save` and observe that
-	:guilabel:`Inventory Properties` have taken on new values (just as the Accounting Properties did in
-	the product category) but :guilabel:`Accounting Properties` here remain empty. When product
-	transactions occur, the Income and Expense accounts that you've just defined in the Product
-	Category are used by the Product unless an account is specified here, directly in the product, to
-	override that.
+	#.	Click the :guilabel:`Accounting` tab, then click :guilabel:`Save` and observe that
+		:guilabel:`Accounting Properties` here remain empty. When product
+		transactions occur, the Income and Expense accounts that you've just defined in the Product
+		Category are used by the Product unless an account is specified here, directly in the product, to
+		override that.
 
-	#. Once the product is saved it changes to a non-editable state. If you had entered data
-	incorrectly or left a required field blank, the form would have stayed editable and you'd need to
-	click from tab to tab to find a field colored red, with an error message below it, that would have
-	to be correctly filled in.
+	#.	Once the product is saved it changes to a non-editable state. If you had entered data
+		incorrectly or left a required field blank, the form would have stayed editable and you'd need to
+		click from tab to tab to find a field colored red, with an error message below it, that would have
+		to be correctly filled in.
 
 .. index::
    single: Stock locations
@@ -196,19 +371,27 @@ Now create a new product:
 Stock locations
 ---------------
 
-Click :menuselection:`Inventory Control --> Location Structure` to see the hierarchy of stock
+Click :menuselection:`Stock Management --> Stock Locations Structure` to see the hierarchy of stock
 locations. These locations have been defined by the minimal default data loaded when the database
 was created. You'll use this default structure in this example.
 
-	#. From the :guilabel:`Main Menu` click on :menuselection:`Inventory Control --> Configuration -->
-	Locations` to reach a list view of the locations (not the tree view)
+Open ERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
+that act as their names suggest, and ``Virtual Locations`` that are used by Open ERP for its own purposes.
 
-	#. Click on the name of a location, such as \ ``Company``\   to open a descriptive form view. Each
-	location has a  *Location type*  and a  *Parent Location* that defines he hierarchical structure.
-	An  *Inventory Account* can also be assigned to a location.
+	#.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
+		Locations` to reach a list view of the locations (not the tree view).
 
-	#. From the :menuselection:`Main Menu` click :menuselection:`Inventory Control --> Configuration
-	--> Warehouses` to view a list of warehouses.
+	#.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
+		location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
+		An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
+		the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
+		company name.
+
+	#.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
+		--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
+		should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
+
+.. todo:: Get this, below, right!
 
 .. tip:: Valuation of stock
 
@@ -232,13 +415,19 @@ stock on your behalf.
 
 .. note:: Location Structure
 
-	Each warehouse is composed of three locations: Input, Output and Stock. Your available stock is
-	given by the contents of the Stock location.
+	Each warehouse is composed of three locations :guilabel:`Location Input`, :guilabel:`Location Output`, and 
+	:guilabel:`Location Stock`. Your available stock is given by the contents of the :guilabel:`Location Stock` 
+	and its child locations.
 
-	The Input location can be placed as a child of the Stock location, which means that when Stock is
-	interrogated for product quantities, it also takes account of the contents of the Input location.
-	The Output location must never be placed as a child of Stock, since items in Output, which are
-	packed ready for customer shipment, should not be considered as available for sale elsewhere.
+	So the :guilabel:`Location Input` can be placed as a child of the :guilabel:`Location Stock`, which means 
+	that when :guilabel:`Location Stock` is interrogated for product quantities, it also takes account of the 
+	contents of the :guilabel:`Location Input`. :guilabel:`Location Input` could be used as a goods-in QC location.
+	The :guilabel:`Location Output` must never be placed as a child of :guilabel:`Location Stock`, 
+	since items in :guilabel:`Location Output`, which can be considered to be
+	packed ready for customer shipment, should not be thought of as available for sale elsewhere.
+	
+	In the default configuration, Open ERP uses the same ``Stock`` location for both Input and Output because it
+	is easier to understand when you're starting out.
 
 .. index::
    single: Account Chart
@@ -247,7 +436,7 @@ Setting up a chart of accounts
 ------------------------------
 
 You can set up a chart of accounts during the creation of a database, but for this exercise you'll
-start with the minimal chart that's built into the core of Open ERP (just a handful of required
+start with the minimal chart that you created (just a handful of required
 accounts without hierarchy, tax or subtotals).
 
 A number of account charts have been predefined for Open ERP, some of which meet the needs of
@@ -261,29 +450,14 @@ accounts into several charts, with different arrangements for taxation and depre
 differently for various needs.
 
 Before you can use any chart of accounts for anything you need to specify a Fiscal Year. This
-defines the different time periods available for accounting transactions. To do so:
-
-	#. Select :menuselection:`Financial Management --> Configuration --> Periods --> Fiscal Years` and
-	click :guilabel:`New` to open a blank  *Fiscal Year* definition form.
-
-	#. Give a name to that :guilabel:`Fiscal Year` (such as Financial Year 2009 and a  *Code* (Y2009,
-	then select the  *Start date* and  *End date*  which should be a year apart and (for this example)
-	straddle today's date.
-
-	#. Then click on one of the buttons :guilabel:`Create Monthly Periods` or :menuselection:`Create 3
-	Months Periods` to create an appropriate set of periods for the fiscal year, as shown in the figure
-	below.  *Save* this.
-
-
-.. figure::  images/def_fiscal_year_tab.png
-   :align: center
-
-   *Defining a fiscal year and the accounting periods within it.*
+defines the different time periods available for accounting transactions. An initial Fiscal Year
+was created during the database setup so you don't need to do any more on this.
 
 Click :menuselection:`Financial Management --> Charts --> Charts of Accounts` and then click
-:guilabel:`Open Charts` on the :menuselection:`Fiscal Year` that you've just created to see a
-hierarchical structure of the accounts. You can click on the expand/collapse icon of the top tree
-node to show the detail of this minimal chart.
+:guilabel:`Open Charts` to open a new
+:guilabel:`Account charts` form where you define exactly what you want to see. 
+Click :guilabel:`Open Charts` to accept the defaults and see a
+hierarchical structure of the accounts.
 
 .. index::
    single: Database; Backup
@@ -293,11 +467,11 @@ Make a backup of the database
 -----------------------------
 
 If you know the super-administrator password, make a backup of your database using the procedure
-described at the very end of Chapter 1. Then restore it to a new database: \ ``testing``\  .
+described at the very end of :ref:`ch-inst`. Then restore it to a new database: \ ``testing``\  .
 
 This operation enables you to test the new configuration on \ ``testing``\   so that you can be sure
 everything works as designed. Then if the tests are successful you can make a new database from \
-``openerp_ch03``\  , perhaps called \ ``production``\  , for your real work.
+``openerp_ch03``\  , perhaps called \ ``live``\ or  \ ``production``\ , for your real work.
 
 From here on, connect to this new \ ``testing``\   database logged in as \ ``admin``\   if you can.
 If you have to make corrections, do that on \ ``openerp_ch03``\   and copy it to a new \
@@ -306,7 +480,6 @@ If you have to make corrections, do that on \ ``openerp_ch03``\   and copy it to
 Or you can just continue working with the \ ``openerp_ch03``\   database to get through this
 chapter. You can recreate \ ``openerp_ch03``\   quite quickly if something goes wrong and you can't
 recover from it but, again, you'd need to know your super-administrator password for that.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

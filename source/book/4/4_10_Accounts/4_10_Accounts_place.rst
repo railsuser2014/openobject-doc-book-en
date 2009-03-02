@@ -21,7 +21,7 @@ Management --> Configuration --> Analytic Accounts --> Analytic Accounts`.
 .. figure::  images/account_analytic_form.png
    :align: center
 
-   *Setting up an analytic account.*
+   *Setting up an analytic account*
 
 To create an analytic account you have to complete the main fields:
 
@@ -67,24 +67,27 @@ which you'd need so that you can invoice the partner:
 	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
 	  orders.
 
-
 .. figure::  images/account_analytic_chart.png
    :align: center
 
-   *Example of an analytic chart for projects.*
+   *Example of an analytic chart for projects*
 
 Once you've defined the different analytic accounts you can view your chart through the menu
 :menuselection:`Financial Management --> Charts --> Analytic Charts of Accounts`.
+
+.. index::
+   pair: module; hr_timesheet_invoice
+   pair: module; account_analytic_analysis
 
 .. tip:: Setting up an analytic account
 
 	The setup screen for an analytic account can vary greatly depending on the modules installed in
 	your database.
 	For example, you'll only see information about recharging services if you have the module
-	``hr_timesheet_invoice`` installed.
+	:mod:`hr_timesheet_invoice` installed.
 
 	Some of these modules add helpful management statistics to the analytic account.
-	The most useful is probably the module ``account_analytic_analysis``,
+	The most useful is probably the module :mod:`account_analytic_analysis`,
 	which adds such information as indicators about your margins, invoicing amounts, and latest service
 	dates and invoice dates.
 
@@ -118,7 +121,7 @@ These enable you to categorize the different accounting entries by their type:
 .. figure::  images/account_analytic_journal.png
    :align: center
 
-   *Creating an analytic journal.*
+   *Creating an analytic journal*
 
 To define your analytic journals, use the menu :menuselection:`Financial Management -->
 Configuration --> Journal --> Analytic Journal Definition`.
