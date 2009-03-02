@@ -10,11 +10,11 @@ Writing a simple MDX on a SALES Schema::
 
 Gives results as,
 
-=================== ==========
-\                   Items Sold
-=================== ==========
-All partner_country                   [43.0]
-=================== ==========
+===================== ============
+ /                     Items Sold
+===================== ============
+ All partner_country     [43.0]
+===================== ============
 
 
 Expanding the partner country to its children, we change the MDX as.::
@@ -26,14 +26,14 @@ Expanding the partner country to its children, we change the MDX as.::
 
 Gives result as,
 
-=================== ==========  
-\                   Items Sold
-=================== ==========
-All partner_country	[43.0]
-Belgium                   [30.0]
-China                   [4.0]
-France                   [9.0]
-=================== ==========
+===================== ============
+ /                     Items Sold
+===================== ============
+ All partner_country   [43.0]
+ Belgium               [30.0]
+ China                 [4.0]
+ France                [9.0]
+===================== ============
 
 One more example bit complex with slicer::
 
@@ -45,11 +45,11 @@ One more example bit complex with slicer::
 
 Gives results as:
 
-=================== ==========  
-\                   Items Sold
-=================== ==========  
-2008.0                           [43.0]
-Q1                              [43.0]
-=================== ==========  
+===================== ============
+ /                     Items Sold
+===================== ============
+ 2008.0                  [43.0]
+ Q1                      [43.0]
+===================== ============
 
 

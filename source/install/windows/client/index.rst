@@ -35,7 +35,7 @@ Installing the Open ERP client
 
 CLick on the executable installation file you've just downloaded and select the installation path.
 
-.. image:: ../../img/Client.01.install_path.png
+.. image:: ../../img/Client_01_install_path.png
 
 Starting the Open ERP client
 ++++++++++++++++++++++++++++
