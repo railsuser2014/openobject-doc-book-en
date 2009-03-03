@@ -28,7 +28,7 @@ Just in Time
 By default, requirements calculation starts automatically once a day. You're advised to make this
 run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when
 you're also trying to use it interactively yourselves. To specify the time it starts use the menu
-:menuselection:`Administration --> Configuration --> Planning --> Actions Planned`. Select the rule
+:menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Select the rule
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 .. index::

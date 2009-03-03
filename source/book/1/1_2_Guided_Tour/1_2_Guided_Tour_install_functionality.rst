@@ -33,7 +33,7 @@ existing ones.
 .. tip:: Remote module repositories
 
 	If the repository list doesn't reflect your needs then you can edit it from
-	:menuselection:`Administration --> Modules Management --> Repositories`. There you can link to new
+	:menuselection:`Administration --> Modules Management --> Repository List`. There you can link to new
 	repositories by adding their URLs and disable listed ones by unchecking their *Active* checkbox. If
 	you're not connected to the Internet then you probably want to disable anything there.
 
@@ -60,7 +60,8 @@ repository.
 
 	The list of modules shows only the first available modules. In the web client you can search or
 	follow the First / Previous / Next / Last links to get to any point in the whole list, and you can
-	change the number of entries listed by clicking the row number indicators between Previous and Next
+	change the number of entries listed by clicking the row number indicators between :guilabel:`Previous` 
+	and :guilabel:`Next`
 	and selecting a different number from the default of 20.
 
 	If you use the GTK client you can search, as you would with the web client, or use the + icon to
@@ -83,7 +84,7 @@ products. This is part of the core installation, so you don't need to load anyth
 work, but isn't installed in the Minimal Profile.
 
 Open the list of uninstalled modules from :menuselection:`Administration --> Modules Management -->
-Uninstalled Modules`. Search for the module by entering the name :mod:`product` in the search
+Modules --> Uninstalled modules`. Search for the module by entering the name :mod:`product` in the search
 screen then clicking it in the list that appears below it to open it. The form that describes the
 module gives you useful information such as its version number, its status and a review of its
 functionality. Click :guilabel:`Install` and the status of the module changes to :guilabel:`To be installed`.
@@ -100,7 +101,7 @@ functionality. Click :guilabel:`Install` and the status of the module changes to
 	If you select a module in any of the module lists by clicking on a module line and then on
 	:guilabel:`Technical Guide` at the top right of the window, Open ERP produces a technical report
 	on that module. It's helpful only if the module is installed, so the menu
-	:menuselection:`Administration --> Modules Management --> Installed Modules` produces the most
+	:menuselection:`Administration --> Modules Management --> Modules --> Installed Modules` produces the most
 	fruitful list.
 
 	This report comprises a list of all the objects and all the fields along with their descriptions.
@@ -126,7 +127,7 @@ Installing a module with its dependencies
 You'll now install the CRM module (Customer Relationship Management) using the same process as
 before.
 
-	#. 	Use :menuselection:`Administration --> Modules Management --> Uninstalled Modules` to get a list
+	#. 	Use :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to get a list
 		of modules to install. Search for the :mod:`crm` module in that list.
 
 	#.	Install the module by clicking :guilabel:`Install` and then :guilabel:`Apply Upgrades` on the
@@ -176,7 +177,7 @@ installing because you have to handle existing system data.
 	your backup so that you don't have to delete all your test data.
 
 	If you wanted to uninstall you would use the menu :menuselection:`Administration --> Modules
-	Management --> Installed Modules` and then uninstall them in the inverse order of their
+	Management --> Modules --> Installed Modules` and then uninstall them in the inverse order of their
 	dependencies: ``crm``, ``account``, ``product``.
 
 Installing additional functionality
@@ -185,7 +186,7 @@ Installing additional functionality
 To discover the full range of Open ERP's possibilities you can install many additional modules.
 Installing them with their demonstration data provides a convenient way of exploring the whole core
 system. When you build on the \ ``openerp_ch02``\   database you'll automatically include
-demonstration data because you checked the  *Load Demonstration Data*  checkbox when you originally
+demonstration data because you checked the :guilabel:`Load Demonstration Data` checkbox when you originally
 created the database.
 
 So click :menuselection:`Administration --> Modules Management --> Update Modules List` to upload
@@ -197,15 +198,7 @@ can skip this step.
   single: Module; Import
 ..
 
-.. tip:: Importing new modules
-
-	You can only import new modules and update your existing ones if your system is configured to
-	accept them.
-	Your Open ERP addons directory must be writable by the system user that's running your Open ERP
-	application for this,
-	as described in the final section of :ref:`ch-inst`.
-
-Click :menuselection:`Administration --> Modules Management --> Uninstalled modules` to give you an
+Click :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to give you an
 overview of all of the modules available for installation.
 
 To test several modules you won't have to install them all one by one. You can use the dependencies
@@ -226,7 +219,7 @@ or all at once.
 
 As you update you'll see thirty or so modules to be installed. When you close the :guilabel:`System
 Upgrade Done` form you'll be returned to a dashboard, not the main menu you had before. To get to
-the main menu, use the :guilabel:`Main Menu` link.
+the main menu, use the :guilabel:`MAIN MENU` link.
 
 .. Copyright © Open Object Press. All rights reserved.
 

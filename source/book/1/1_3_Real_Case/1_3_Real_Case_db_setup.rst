@@ -303,7 +303,7 @@ Click :guilabel:`Save`.
 
 .. note:: Properties fields
 
-	Properties have a rather unusual behavior. They're defined by parameters in the menu
+	Properties have a rather unusual behavior. They're defined by parameters in the menus in 
 	:menuselection:`Administration --> Configuration --> Properties`, and they update fields only when a form
 	is saved, and only when the fields are empty at the time the form is saved. You can manually
 	override any of these properties as you need.

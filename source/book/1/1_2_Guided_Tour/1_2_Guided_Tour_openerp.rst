@@ -9,7 +9,7 @@ you an insight into the coverage of the core Open ERP software.
 
 	When you've installed a new module and are using additional languages to English you have to reload
 	the translation file. New terms introduced in these modules aren't translated by default. To do
-	this use :menuselection:`Administration --> Translation --> Load a New Language`.
+	this use :menuselection:`Administration --> Translations --> Load an Official Translation`.
 
 Depending on the user you're connected as the page appears differently from the Main Menu that
 showed before. Using the installation sequence above, certain dashboards may be assigned as various
@@ -52,9 +52,9 @@ home page of any user.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
 	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the right of
-	:guilabel:`Shortcuts`.
+	:guilabel:`SHORTCUTS`.
 
-	To change or replace a link click on the :guilabel:`Shortcuts` link. Open ERP then opens a list of
+	To change or replace a link click on the :guilabel:`SHORTCUTS` link. Open ERP then opens a list of
 	editable shortcuts.
 
 The following sections present an overview of the main functions of Open ERP. Some areas are
@@ -81,8 +81,7 @@ tabs are available for searching – :guilabel:`Basic Search` and :guilabel:`Adv
 latter simply shows more fields to narrow your selection.
 
 If you've applied no filter, the list shows every partner in the system. For space reasons this list
-shows only the first few partners (the web client defaults to \ ``20``\  , but you can select a
-maximum of \ ``100``\   on a page). If you want to display other records you can search for them or
+shows only the first few partners. If you want to display other records you can search for them or
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
@@ -124,25 +123,25 @@ The partner form contains several tabs, all referring to the current record:
 
 *  :guilabel:`General`,
 
-*  :guilabel:`Extra Info`,
+*  :guilabel:`Suppliers & Customers`,
 
-*  :guilabel:`Event History`,
+*  :guilabel:`History`,
 
-*  :guilabel:`Properties`.
+*  :guilabel:`Notes`.
 
 The fields in a tab aren't all of the same type – some (such as :guilabel:`Name`) contain free
 text, some (such as the :guilabel:`Language`) enable you to select a value from a list of options,
 others give you a view of another object (such as :guilabel:`Partner Contacts` – because a partner
 can have several contacts) or a list of link to another object (such as :guilabel:`Categories`).
-There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Extra Info` tab),
+There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Suppliers & Customers` tab),
 numeric fields (such as :guilabel:`Credit Limit`) and date fields (such as :guilabel:`Date`).
 
-The :guilabel:`Events History` tab gives a quick overview of things that have happened to the partner – an
+The :guilabel:`History` tab gives a quick overview of things that have happened to the partner – an
 overview of useful information such as orders, open invoices and support requests. Events are
 generated automatically by Open ERP from changes in other documents that refer to this partner.
 
 It's possible to add events manually, such as a note recording a phone call. To add a new event
-click :guilabel:`Create new record` to the right of the :guilabel:`Partner Events`  field. That
+click :guilabel:`Create new record.` to the right of the :guilabel:`Partner Events`  field. That
 opens a new :guilabel:`Partner Events` dialog box enabling an event to be created and added to the
 current partner.
 
@@ -153,12 +152,9 @@ To the right of the partner form is a toolbar containing a list of possible :gui
 :guilabel:`Actions`, and quick :guilabel:`Links` about the partner displayed in the form.
 
 You can generate PDF documents about the selected object (or, in list view, about one or more
-selected objects) using the following buttons in the :guilabel:`Reports` section of the toolbar:
+selected objects) using certain buttons in the :guilabel:`Reports` section of the toolbar:
 
 *  :guilabel:`Labels` : print address labels for the selected partners,
-
-*  :guilabel:`Overdue payments` : generate followup letters for overdue payments from partners. Each letter is
-   printed in the language of the partner or, by default, in English.
 
 Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the
 toolbar:
@@ -200,7 +196,7 @@ and you'll get the Partner form rather than the Sales Order form.
 
 	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales
 	Management --> Sales Order --> All Sales Orders` and seeing what you can reach from the
-	:guilabel:`Partner` field on that sales order form using either the web client with the form in
+	:guilabel:`Customer` field on that sales order form using either the web client with the form in
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
@@ -209,7 +205,7 @@ and you'll get the Partner form rather than the Sales Order form.
    *Links for a partner appear in an order form*
 
 Before moving on to the next module, take a quick look into the :menuselection:`Partners -->
-Configuration`  menu, particularly :menuselection:`Categories`  and  :menuselection:`Localisation`.
+Configuration`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
 They contain some of the demonstration data that you installed when you created the database.
 
 .. index::
@@ -228,11 +224,11 @@ supports multiple company divisions and multiple companies, as well as multiple 
 languages.
 
 Accounting that's integrated throughout all of the company's processes greatly simplifies the work
-of inputting accounting data, because most of the entries are generated automatically while other
+of entering accounting data, because most of the entries are generated automatically while other
 documents are being processed. You can avoid entering data twice in Open ERP, which is commonly a
 source of errors and delays.
 
-So Open ERP's accounting isn't just for financial reporting – it's also the anchor point for many
+So Open ERP's accounting isn't just for financial reporting – it's also the anchorpoint for many
 of a company's management processes. For example if one of your accountants puts a customer on
 credit hold then that will immediately block any other action related to that company's credit (such
 as a sale or a delivery).
@@ -252,7 +248,7 @@ Dashboards
 
 Dashboards give you an overview of all the information that's important to you on a single page. The
 :menuselection:`Dashboards` menu gives you access to predefined boards for
-:menuselection:`Accounting`, :menuselection:`Production` and :menuselection:`Project Management`.
+:menuselection:`Financial Management`, :menuselection:`Manufacturing` and :menuselection:`Project Management`.
 
 .. note:: Dashboards
 
@@ -262,11 +258,11 @@ Dashboards give you an overview of all the information that's important to you o
 
 	Users can each have their own dashboard, adapted to their needs,
 	to enable them to manage their own work effectively.
-	For example a developer using the Project Dashboard can see such information
+	For example a developer using the :guilabel:`Project Dashboard` can see such information
 	as a list of the next tasks, task completion history and an analysis of the state of progress of
 	the relevant projects.
 
-Dashboards are dynamic, which enables you to easily navigate around the whole information base.
+Dashboards are dynamic, which lets you navigate easily around the whole information base.
 Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can
 click on any element of the list to get detailed statistics on the selected element.
 
@@ -355,16 +351,36 @@ product ranges and so on.
 You can find many optional modules to extend product functionality through the Open ERP website,
 such as:
 
-* \ ``membership``\  : for managing the subscriptions of members of a company,
+.. index::
+   pair: module; membership
+..
 
-* \ ``product_electronic``\  : for managing electronic products,
+* :mod:`membership` : for managing the subscriptions of members of a company,
 
-* \ ``product_extended``\  : for managing production costs,
+.. index::
+   pair: module; product_electronic
+..
 
-* \ ``product_expiry``\  : for agro-food products where items must be retired after a certain
+* :mod:`product_electronic` : for managing electronic products,
+
+.. index::
+   pair: module; product_extended
+..
+
+* :mod:`product_extended` : for managing production costs,
+
+.. index::
+   pair: module; product_expiry
+..
+
+* :mod:`product_expiry` : for agro-food products where items must be retired after a certain
   period,
 
-* \ ``product_lot_foundry``\  : for managing forged metal products.
+.. index::
+   pair: module; product_lot_foundry
+..
+
+* :mod:`product_lot_foundry` : for managing forged metal products.
 
 
 .. index::
@@ -398,7 +414,7 @@ Most of these functions are provided from optional modules whose name starts wit
 rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
 Resources` menu.
 
-The different issues are handled in detail in the fourth section of this book, dedicated to internal
+The different issues are handled in detail in the fourth part of this book :ref:`part-ops`, dedicated to internal
 organization and to the management of a services business.
 
 .. index::
@@ -443,7 +459,6 @@ and analysis of counterpart stock moves.
 Furthermore, just like accounts, stock locations are hierarchical, so you can carry out analyses at
 various levels of detail.
 
-
 .. index::
    single: CRM
 ..
@@ -454,10 +469,10 @@ Customer and Supplier Relationship Management
 Open ERP provides many tools for managing relationships with partners. These are available through
 the :menuselection:`CRM & SRM` menu.
 
-.. tip::  **CRM** and **SRM**
+.. tip::  :guilabel:`CRM & SRM`
 
-	CRM stands for Customer Relationship Management, a standard term for systems that manage client and
-	customer relations. SRM stands for Supplier Relationship Management, and is commonly used for
+	``CRM`` stands for Customer Relationship Management, a standard term for systems that manage client and
+	customer relations. ``SRM`` stands for Supplier Relationship Management, and is commonly used for
 	functions that manage your communications with your suppliers.
 
 The concept of a “case” is used to handle arbitrary different types of relationship, each
@@ -604,8 +619,8 @@ Other functions
 You've been through a brisk, brief overview of the main functional areas of Open ERP. Some of these
 – a large proportion of the core modules – are treated in more detail in the following chapters.
 
-You can use the menu :menuselection:`Administration --> Modules Management --> Modules -->
-Uninstalled Modules` to find the remaining modules that have been loaded into your installation but
+You can use the menu :menuselection:`Administration --> Modules Management --> Modules --> 
+Uninstalled modules` to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as
 :mod:`base_iban`), some have quite extensive effects (such as the various charts of accounts), and
 some make fundamental additions (such as :mod:`multi_company`).

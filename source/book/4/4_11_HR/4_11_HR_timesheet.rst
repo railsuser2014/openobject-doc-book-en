@@ -377,7 +377,7 @@ menu :menuselection:`Human Resource --> Timesheets --> My Department's Timesheet
 validate`. He then has to approve them or return them to their initial state.
 
 To define the departmental structure, use the menu :menuselection:`Administration --> Users -->
-Department Structure --> Define Departments`.
+Departments --> Departments`.
 
 .. tip:: Timesheet approval
 
