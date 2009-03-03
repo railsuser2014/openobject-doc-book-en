@@ -91,22 +91,13 @@ of payment must correspond exactly with one or several due dates of invoice.
 	Other methods of reconciliation are possible: from accounting entries, when saving the payment
 	directly on an invoice, or using the automatic reconciliation tool. But if you can, you should do a
 	reconciliation when you're encoding the payment because that's the time when you have all of the
-	information you need to hand for reconciling the payment with the corresponding invoice
-
-.. tip:: Partial reconciliation
-
-	In Open ERP, only total reconciliation is possible. To enter a partial payment for an invoice,
-	several methods are given you:
-
-	* Don't reconcile that payment amount, just reconcile the entire balance.
-
-	* Reconcile at once, but make an accounting adjustment in the partner's credit account. In this
-	  case the invoice will be marked as paid.
+ 	information you need to hand for reconciling the payment with the corresponding invoice.
+ 	
+ 	You can carry out either a full or a partial reconciliation.
 
 If you see a difference between the payment and the invoices to reconcile,
-you can enter the difference in the second part of the form –  *Write-off* .
-You must then indicate which account should be used for the adjustment.
-The main reasons explaining the difference are usually:
+you can enter the difference in the second part of the form :guilabel:`Write-off`.
+You must then set an account for the adjustment. The main reasons explaining the difference are usually:
 
 * losses and profits,
 
