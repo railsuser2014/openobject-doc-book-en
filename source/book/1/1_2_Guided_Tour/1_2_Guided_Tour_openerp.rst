@@ -407,7 +407,7 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of skills and competencies.
 
 .. index::
-   pair: modules; hr_
+   pair: module; hr_
    pair: module; hr
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\

@@ -205,7 +205,7 @@ To test several modules you won't have to install them all one by one. You can u
 between modules to load several at once. For example, try loading the following modules:
 
 .. index::
-   pair: modules; profile_
+   pair: module; profile_
 
 * :mod:`profile_accounting`,
 
