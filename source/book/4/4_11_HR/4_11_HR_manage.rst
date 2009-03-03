@@ -17,7 +17,7 @@ date list of collaborators.
 	periods, and also independent and freelance service contracts.
 	
 	.. index::
-	   pair: modules; portal_	
+	   pair: module; portal_	
 
 	A “user” is a physical person who's given access to the company's systems. Most employees are
 	users but some users aren't employees: external partners can have access to parts of the system.
