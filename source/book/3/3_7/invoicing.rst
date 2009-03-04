@@ -140,29 +140,29 @@ completed automatically:
 
 .. tip:: Seeing partner relationships
 
-	You can reach more information from certain relation fields in Open ERP. 
+   You can reach more information from certain relation fields in Open ERP. 
 	
-	* In the web client in read-only mode a relation is commonly a hyperlink
-	- it takes you to the main form for that entity, with all of the actions and links. 
+   * In the web client in read-only mode a relation is commonly a hyperlink
+     - it takes you to the main form for that entity, with all of the actions and links. 
 	
-	* In the web client in edit mode you can press the keyboard :kbd:`Ctrl` button at the same time 
-	as right-clicking in the field to get a
-	context menu with links and other options. 
+   * In the web client in edit mode you can press the keyboard :kbd:`Ctrl` button at the same time 
+     as right-clicking in the field to get a
+     context menu with links and other options. 
 	
-	* And in the GTK clientyou can right-click the field to get that same
-	context menu. 
+   * And in the GTK clientyou can right-click the field to get that same
+     context menu. 
 	
-	So one way or another you can rapidly reach the partner's:
+   So one way or another you can rapidly reach the partner's:
 
-	* current sales and purchases,
+   * current sales and purchases,
 
-	* CRM requests,
+   * CRM requests,
 
-	* open invoices,
+   * open invoices,
 
-	* accounts records,
+   * accounts records,
 
-	* payable and receivable accounts.
+   * payable and receivable accounts.
 
 You can add more detailed additional information to the invoice and select the currency that you want to invoice in.
 
@@ -413,8 +413,8 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 		default values.
 
 		To test this functionality, create an invoice for a partner and add some lines
-		(from the GTK client). Then
-		:kb:`Ctrl` and right-mouse-click on the name on the :guilabel:`Invoices` field and select 
+		(from the GTK client). Then hold
+		:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select 
 		:guilabel:`Set as default`. Check the box that indicates this default should apply only to you.
 
 		Then the next time you create an invoice these invoice lines will be
