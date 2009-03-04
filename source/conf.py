@@ -195,7 +195,7 @@ htmlhelp_basename = 'openobject-doc'
 latex_documents = [
   ('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
    ('bi/index', 'openobject-bi.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
-   #('customize', 'openobject-customize.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
+   #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
    ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
    ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
    ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
