@@ -38,8 +38,8 @@ reality and the report.
 	In many small companies, the accounting function is poorly treated.
 
 	Not only do you see the data for documents being entered into the system twice,
-	but also the results are often just used to produce legal documentation and periodic printouts,
-	some weeks later, of the balance sheet and income statements.
+	but also the results are often just used to produce legal documentation and regular printouts
+	of the balance sheet and income statements some weeks after the closing dates.
 
 	By contrast, integrating your accounts with your management system means that you can:
 
@@ -50,7 +50,7 @@ reality and the report.
 
 	* easily get hold of useful information when you need it, such as a customer's credit position.
 
-So accounting is too often under-utilized. The information it brings makes it a very effective tool
+So accounting is too often underused. The information it brings makes it a very effective tool
 for running the company if it's integrated into the management system. Accounting information really
 is necessary in all of your company's processes for you to be effective, for example:
 
@@ -61,7 +61,7 @@ is necessary in all of your company's processes for you to be effective, for exa
   deliveries to the customer,
 
 * if a project budget is 80% consumed but the project is only 20% complete you could renegotiate
-  with the client, or review and reign in the objectives of the project,
+  with the client, or review and rein in the objectives of the project,
 
 * if you need to improve your company's cash flow then you could plan your services projects on the
   basis of billing rates and payment terms of the various projects, and not just delivery dates –
@@ -135,9 +135,10 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 .. tip:: For accountants
 
 	When you create a database you can elect to install only the accounting modules by choosing the
-	Accounting Only profile.
+	:guilabel:`Accounting only profile` :mod:`profile_accounting`.
 
-	You should install the web portal. With appropriate rights management, this allows trustees to
+	You should then install the web portal :mod:`portal_account`. 
+	With appropriate rights management, this allows trustees to
 	provide customers with real-time access to their data. It also gives them the opportunity to work
 	on certain documents that have no direct accounting impact, such as budgets.
 

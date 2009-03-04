@@ -23,7 +23,7 @@ form:
 
 *  :guilabel:`New database name` : \ ``openerp_ch02``\  .
 
-*  :guilabel:`Load Demonstration Data`  checkbox : \ ``checked``\
+*  :guilabel:`Load Demonstration Data` checkbox : \ ``checked``\
 
 *  :guilabel:`Default Language` : \ ``English``\  .
 

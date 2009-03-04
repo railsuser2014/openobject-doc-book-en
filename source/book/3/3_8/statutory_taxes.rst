@@ -42,7 +42,7 @@ You can attach taxes to financial transactions so that you can
   monetary transactions.
 
 Since the detailed tax structure is a mechanism for carrying out governments' policies, and the
-collecting of taxes so critical to their tax authorities, tax requirements and reporting can be
+collecting of taxes so critical to their authorities, tax requirements and reporting can be
 complex. Open ERP has a flexible mechanism for handling taxation that can be configured through its
 GUI or through data import mechanisms to meet the requirements of many various tax jurisdictions.
 
@@ -60,7 +60,7 @@ Three main objects are involved in the tax system in Open ERP:
 * a :guilabel:`Tax`, the basic tax object that contains the rules for calculating tax on the financial
   transaction it's attached to, and is linked to the General Accounts and to the Tax Cases. A tax can
   contain multiple child taxes and base its calculation on those taxes rather than the base
-  transaction, providing considerable flexibility. Each tax belongs to a  *Tax Group*  (currently just
+  transaction, providing considerable flexibility. Each tax belongs to a :guilabel:`Tax Group` (currently just
   \ ``VAT``\   or \ ``Other``\  ).
 
 * the :guilabel:`General Accounts`, that record the taxes owing and paid. Since the general accounts are
@@ -72,7 +72,7 @@ account separately for purchase and sales taxes (or Input and Output VAT – whe
 Added Tax). Because you can attach more than one tax, you can handle a VAT or Sales Tax separately
 from an Eco Tax on the same product.
 
-You can also attach a :guilabel:`Default Tax` to a partner, which replaces any taxes belonging to
+You can also attach a :guilabel:`Default Tax` to a Partner, which replaces any taxes belonging to
 the same Tax Group that may have been defined in a Product.
 
 So you can define a \ ``Tax Exempt``\   tax in the \ ``VAT``\   group and assign it to partners who
@@ -94,7 +94,7 @@ Taxes --> Tax Codes`. You define the following fields:
 *  :guilabel:`Company` : a required link that attaches the Case to a specific company, such as the
    Main Company,
 
-*  :guilabel:`Case Code` : a short code for the case,
+*  :guilabel:`Case Code` : an optional short code for the case,
 
 *  :guilabel:`Parent Code` : a link to a parent Tax Case that forms the basis of the tree structure
    like a Chart of Accounts,
@@ -118,7 +118,7 @@ tax cases that you won't link to Tax objects (similar to General Account \ ``Vie
 to organize the tree structure.
 
 To view the structure that you've constructed you can use the menu :menuselection:`Financial
-Management --> Periodical Processing --> Taxes`. This tree view reflects the structure of the 
+Management --> Reporting --> Taxes Report --> Chart of Taxes`. This tree view reflects the structure of the 
 :guilabel:`Tax Cases` and shows the current tax situation.
 
 Tax objects
@@ -128,7 +128,7 @@ Tax objects calculate tax on the financial transactions that they're attached to
 the General Accounts and to the Tax Cases.
 
 To create a new Tax Case, use the menu :menuselection:`Financial Management --> Configuration -->
-Taxes --> Taxes`. You define the following fields:
+Financial Accounting --> Taxes --> Taxes`. You define the following fields:
 
 *  :guilabel:`Tax Name` : a unique name required for this tax (such as \ ``12% Sales VAT``\  ),
 
@@ -161,11 +161,16 @@ Taxes --> Taxes`. You define the following fields:
 *  :guilabel:`Refund Tax Account` : a General Account used to record invoiced tax refunds, which may
    be the same as the Invoice Tax Account or, in some tax jurisdictions, must be separated,
 
-*  :guilabel:`Tax on childs` : when checked, the tax calculation is applied to the output from other
+*  :guilabel:`Tax on Children` : when checked, the tax calculation is applied to the output from other
    tax calculations specified in the :guilabel:`Childs Tax Account` field (so you can have taxes on
    taxes), otherwise the calculation is applied to the base amount on the transaction,
 
-*  :guilabel:`Childs Tax Account` : other tax accounts that can be used to supply the figure for
+*  :guilabel:`Tax included in Price` : when checked, the total value shown includes this tax,
+
+*  :guilabel:`Tax Application` : selects whether the tax is applicable to Sale, Purchase or All
+   transactions,
+
+*  :guilabel:`Child Tax Accounts` : other tax accounts that can be used to supply the figure for
    taxation.
 
 .. tip:: Using Child Taxes
@@ -188,10 +193,10 @@ Declaration tab to define which Tax Cases should be used for this tax:
 
 *  :guilabel:`Invoices/Tax Code` : tax case to record the invoiced tax amount
 
-*  :guilabel:`Refund Invoices/Base Code` : tax case to record the refund invoice amount that the tax
+*  :guilabel:`Credit Notes/Refund Base Code` : tax case to record the refund invoice amount that the tax
    is based on,
 
-*  :guilabel:`Refund Invoices/Tax Code` : tax case to record the refund invoice tax amount.
+*  :guilabel:`Credit Notes/Refund Tax Code` : tax case to record the refund invoice tax amount.
 
 Use of Taxes on Products, Partners, Projects and Accounts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,8 +215,8 @@ tax-like charges.
 	   pair: module; account_tax_include
 	
 	To do this in Open ERP just install the :mod:`account_tax_include` module.
-	Each invoice is given a new :guilabel:`Price method` field, in which you choose Tax included or Tax
-	excluded.
+	Each invoice is given a new :guilabel:`Price method` field, in which you choose 
+	:guilabel:`Tax included` or :guilabel:`Tax excluded`.
 	Prices are then displayed appropriately.
 
 You can assign a tax to a Partner so that it overrides any tax defined in a Product. You'd do this,
@@ -248,11 +253,12 @@ appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-p
 
 .. note:: Tax regions
 
-	The third-party module :mod:`import_export` can be used to extend Open ERP's tax system,
+	The third-party module :mod:`import_export` (currently in ``addons-extra`` 
+	can be used to extend Open ERP's tax system,
 	so that you can assign taxes to different accounts depending on the location of the Partner.
 	The :guilabel:`Partner` is given a new :guilabel:`Partner Location` field that can be set to Local,
 	Europe or Outside,
-	so that taxes and tax bases can be channeled to different accounts.
+	so that taxes and tax bases can be channelled to different accounts.
 
 	This module could be the basis of more ambitious location-based tax accounting.
 
@@ -269,11 +275,13 @@ The accounts ledgers and the balance sheet
 To print the balance of accounts or the accounts ledgers you should turn to the Chart of Accounts.
 To do that go to the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts`.
 
-Select the accounting period you're interested in and click :guilabel:`Open Charts`, then select one
-or several accounts for analysis by clicking and highlighting the appropriate line(s). Click the
-:guilabel:`Print` button and Open ERP asks you to select either the :guilabel:`General Ledger`, the :guilabel:`Account
-balance`, or an :guilabel:`Analytic check`. If you select an account which has sub-accounts in the
-hierarchy you can automatically analyze that account and its child accounts.
+Select the accounting period and type of moves (all entries or just posted entries) you're interested in
+and click :guilabel:`Open Charts` to display the chart in a tree view, then select one
+or several accounts for analysis by clicking and highlighting the appropriate line(s). 
+Click the :guilabel:`General Ledger`, the :guilabel:`Account
+balance`, or an :guilabel:`Analytic check` in the :guilabel:`Reports` toolbar at the right. 
+If you select an account which has sub-accounts in the
+hierarchy you automatically analyze both that account and its child accounts.
 
 .. index::
    pair: module; account_simulation
@@ -281,7 +289,8 @@ hierarchy you can automatically analyze that account and its child accounts.
 .. tip::  Simulated balance
 
 	While you're printing account balances,
-	if you have installed the :mod:`account_simulation` module Open ERP asks you which level of
+	if you have installed the :mod:`account_simulation` module from addons-extra,
+	Open ERP asks you which level of
 	simulation to execute.
 
 	Results will vary depending on the level selected.
@@ -292,7 +301,7 @@ hierarchy you can automatically analyze that account and its child accounts.
 	* the French method.
 
 	More generally it enables you to make analyses using other simulation levels that you could
-	expect..
+	expect.
 
 .. index::
    pair: module; account_reporting
@@ -306,7 +315,7 @@ The accounting journals
 -----------------------
 
 To obtain the different journals use the menu :menuselection:`Financial Management --> Reporting -->
-Printing Journals`.
+Journals`.
 
 .. index::
    pair: module; sale_journal
@@ -318,19 +327,20 @@ Printing Journals`.
 
 	* accounting journals (detailed in this chapter),
 
-	* purchase journals (for distributing supplies provided or on certain dates),
+	* purchase journals (for distributing supplies provided on certain dates),
 
 	* sales journals (for example classifying sales by their type of trade),
 
-	* the invoice journals (to classify sales by mode of invoicing: daily / weekly / monthly) and
+	* the invoice journals (to classify sales by mode of invoicing - daily / weekly / monthly - and
 	  automating the tasks.
 
-	To obtain these different journals install the modules :mod:`sale_journal` (found at the time of
+	To get access to these different journals install the modules :mod:`sale_journal` (found at the time of
 	writing in ``addons``, so available in a standard installation) and :mod:`purchase_journal` (found in
 	``addons-extra`` at the time of writing, so needing special installation).
 
-Then select one or several journals and click :guilabel:`Print`. Open ERP then proposes the three
-following reports:
+.. todo:: which reports are these - the Reports to the right?
+
+Then select one or several journals and click :guilabel:`Print`. Open ERP then proposes various reports:
 
 * detailed accounting entries,
 
@@ -392,20 +402,20 @@ automatically by the taxes which had previously been configured in the invoice l
 	* you can restructure your chart of taxes as you need.
 
 At any time you can check your chart of taxes for a given period using the report
-:menuselection:`Financial Management --> Reporting --> Taxes Report`.
+:menuselection:`Financial Management --> Reporting --> Taxes Reports --> Print Taxes Report`.
 
-This data is updated in real time. That's very useful because it enables you at any time to preview
+This data is updated in real time. That's very useful because it enables you to preview at any time
 the tax that you owe at the start and end of the month or quarter.
 
 Furthermore, for your tax declaration you can click on one of the tax accounts to investigate the
 detailed entries that make up the full amount. This helps you search for errors such as when you've
-coded an invoice at full tax rate where it should be zero-rated for an inter-community trade or for
+entered an invoice at full tax rate when it should have been zero-rated for an inter-community trade or for
 a charity.
 
 In some countries, tax can be calculated on the basis of payments received rather than invoices
 sent. In this instance choose :guilabel:`Base on` \ ``Payments``\   instead of :guilabel:`Base on` \
-``Invoices``\   in the :guilabel:`Select period` form. Even if you make your declaration on the
-basis of invoices sent and received it can be interesting to compare the two reports to see the
+``Invoices``\   in the :guilabel:`Select period` field. Even if you make your declaration on the
+basis of invoices sent and received it can be helpful to compare the two reports to see the
 amount of tax that you pay but haven't yet received from your customers.
 
 .. Copyright © Open Object Press. All rights reserved.

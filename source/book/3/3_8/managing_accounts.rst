@@ -8,7 +8,7 @@
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================
 
-Open ERP provides numerous tools for managing customer and supplier accounts. You'll see here:
+Open ERP provides many tools for managing customer and supplier accounts. You'll see here:
 
 * financial analysis of partners, to understand the reports that enable you to carry out an analysis
   of all of your partners,
@@ -24,7 +24,7 @@ Financial analysis of partners
 .. index::
    pair: module; board_account
 
-When members of your accounts department sign on to the Open ERP system, they're immediately
+When members of your accounts department sign on to the Open ERP system, they can immediately be
 presented with the :guilabel:`Accounting Dashboard`. By default it contains a useful graph for analyzing
 Receivables. To get access to it, install the module :mod:`board_account`. Then look at it using
 the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
@@ -41,7 +41,7 @@ receivables week by week. That shows you at a glance the cumulative amount of yo
 by week.
 
 All of Open ERP's graphs are dynamic. So you can, for example, filter the data by clicking
-:guilabel:`Zoom`  and then :guilabel:`Filter` on the Search form. Or just click on :guilabel:`Zoom`
+:guilabel:`Zoom` and then :guilabel:`Filter` on the Search form. Or just click on :guilabel:`Zoom`
 to open in a larger window for a graph, then click :guilabel:`Search` to display this in a list
 view.
 
@@ -77,22 +77,22 @@ Ledger`.
 .. figure::  images/account_partner_ledger.png
    :align: center
 
-   *Partner ledger.*
+   *Partner ledger*
 
 Finally you can look up individual account entries by searching for useful information. To search
 for account entries:
 
-* by journal, go through the menu :menuselection:`Financial Management --> Entries --> Entries by
-  journal`,
+* by journal, go through the menu :menuselection:`Financial Management --> Entries Encoding --> 
+  Entries Encoding by Line`,
 
 * by account, go through the menu :menuselection:`Financial Management --> Charts --> Chart of
   Accounts` and double-click the appropriate account,
 
-* by making a global search, go through the menu :menuselection:`Financial Management --> Entries
-  --> Search Entries`,
+* by making a global search, go through the menu :menuselection:`Financial Management --> Entries Encoding
+  --> Entries Encoding by Move` and searching,
 
-* by partner, do it by right-clicking on the :guilabel:`Partner` field in any form that shows it, or
-  by using the buttons to the right of the partner form.
+* by partner, do it by navigating from a :guilabel:`Partner` field in any form that shows it to the partner then 
+  using the buttons to the right of the partner form.
 
 .. tip:: Exporting entries
 
@@ -117,10 +117,10 @@ Multi-step follow-ups
 
 To automate the management of followups (reminders) you must install the module 
 :mod:`account_followup`. This is installed automatically as part of the accounting profile, but is
-not part of the other profiles.
+not part of the other profiles. Or you can install it alone.
 
 Once the module is installed configure your levels of followup using the menu
-:menuselection:`Financial Management --> Configuration --> Payment Terms --> Follow-Ups`.
+:menuselection:`Financial Management --> Configuration --> Follow-Ups`.
 
 The levels of follow-up are relative to the date of creation of an invoice and not the due date.
 This enables you to put payment conditions such as 'payable in 21 days' and send a reminder in 30
@@ -139,7 +139,7 @@ added into the reminder letter. The sequence determines the order of the level i
    "3","Level 3","60 days from end of month","Put on notice"
 
 You can send your reminders by mail and/or email with the menu :menuselection:`Financial Management
---> Periodic Handling --> Send Follow-Ups`.
+--> Periodical Processing --> Send followups`.
 
 .. figure::  images/account_followup_wizard.png
    :align: center
@@ -154,20 +154,15 @@ The system then gives you a PDF report with all of the reminder letters for each
 letter is produced in the language of the partner (if that's available) and you can therefore get
 letters in several languages in the same PDF on several pages.
 
-To analyze the due date of customers and/or suppliers before starting the reminder procedure, use
-the submenus of :menuselection:`Financial Management --> Periodical Processing --> Send Follow-Ups`:
-
-*  *Receivable entries* ,
-
-*  *Payable entries* .
-
-You get a list of unreconciled entries in Receivable and Payable type accounts. You can then modify
+To check the due date of customers and/or suppliers before starting the reminder procedure, use
+the menu :menuselection:`Financial Management --> Periodical Processing --> Send followups`. 
+You get a list of unreconciled entries accounts. You can then modify
 the date and the last follow-up and the level of reminder for each entry.
 
-To obtain a detailed report per partner use the menu :menuselection:`Financial Management -->
+To obtain a detailed report per partner use the menus in :menuselection:`Financial Management -->
 Reporting --> Follow-Ups`.
 
-The different reports are classic Open ERP screens, so you can filter them and explore the elements
+The different reports are standard Open ERP screens, so you can filter them and explore the elements
 in detail.
 
 .. figure::  images/account_followup.png
@@ -181,13 +176,13 @@ in detail.
 Partner situation
 -----------------
 
-In daily use of Open ERP a senior manager will often need to search quickly for financial
+In daily use of Open ERP a manager will often need to search quickly for financial
 information amongst partner data. For this she can use the buttons to the right of form when she
 opens a partner form, to go directly to:
 
 * a follow-up letter from the :guilabel:`Overdue payments` Report button,
 
-* the list of :guilabel:`Open Invoices`,
+* the list of open :guilabel:`Invoices`,
 
 * a shortcut to :guilabel:`All account entries`,
 
@@ -195,18 +190,20 @@ opens a partner form, to go directly to:
 
 * a shortcut to the unreconciled :guilabel:`Receivables and Payables`.
 
-These links are also available to her when she right-clicks the mouse on a partner field on any
-form.
+The exact links depend on the modules that are installed in Open ERP.
+
+These links are also available to her using the navigation features such as right-clicking partner
+fields in the GTK client.
 
 The :guilabel:`Overdue payments` report produces a PDF document which is used for follow-up but it
-doesn't modify any of the partner's accounting entries. It's use doesn't increase the follow-up
-level so you can use this report repeatedly without any problem.
+doesn't modify any of the partner's accounting entries. Its use doesn't increase the follow-up
+level so you can run this report repeatedly without any problem.
 
 In Open ERP you can search for a partner on the basis of the value of its trade receivables. So
 search for partners with a credit amount between 1 and 99999999 and you'll get a list of partners
 that owe you payment. You can then select the whole list and print follow-up letters for them all.
 
-To the right of the partner form there's a shortcut to :guilabel:`Open invoices`. This link includes
+To the right of the partner form there's a shortcut to :guilabel:`Invoices`. This link includes
 all of the invoices defined in the systems, namely:
 
 * customer invoices,
@@ -240,10 +237,6 @@ entries:
 The first button is useful for obtaining a historical analysis of the customer or supplier. You can
 get information about such significant items as sales volume and payment delays. The second button
 is a filter which shows only the open trade credits and debits for the partner.
-
-Finally, keep in mind that all of the functions on the partner form are accessible from any
-Open ERP document by right-clicking with the mouse on a :guilabel:`Partner` field. This is
-extremely useful for gaining rapid access to information from any screen.
 
 .. Copyright © Open Object Press. All rights reserved.
 

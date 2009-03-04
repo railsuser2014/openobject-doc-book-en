@@ -7,7 +7,7 @@ Analytic Accounts
 
  *Sitting at the heart of your company's processes, analytic accounts (or cost accounts) are
  indispensable tools for managing your operations well. Unlike your financial accounts they're for
- more than accountants, they're for general managers and project managers too.*
+ more than accountants - they're for general managers and project managers, too.*
 
 You need a common way of referring to each user, service, or document to integrate all your
 company's processes effectively. Such a common basis is provided by analytic accounts (or management
@@ -19,7 +19,7 @@ management tool, at the center of most system processes
 
 There are several reasons for this:
 
-* reflect your entire management activity,
+* they reflect your entire management activity,
 
 * unlike the general accounts, the structure of the analytic accounts isn't regulated by legal
   obligations, so each company can adapt it to its needs.
@@ -57,8 +57,7 @@ here are some of those advantages:
 .. tip:: Who gains from analytic accounts?
 
 	Unlike general accounts, analytic accounts in Open ERP aren't about accounting so much as a
-	management tool for everyone in the company.
-	That's why they're also called management accounts.
+	management tool for everyone in the company. (That's why they're also called management accounts.)
 
 	The main users of analytic accounts are the directors, general managers and project managers.
 

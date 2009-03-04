@@ -92,9 +92,8 @@ services journal to print the report.
 
 	To print several analytic accounts at once you can make a multiple selection on the different
 	account in the tree of accounts.
-	For that select account lines using the :guilabel:`Ctrl-Click` keyboard and mouse combination.
-
-	Then click on :guilabel:`Print` in the tree or list view to export the whole selection into a
+	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or 
+	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
 	single PDF document.
 
 .. index::
@@ -163,7 +162,7 @@ amount that would have been invoiced if you had charged for all the time worked.
 
 To give project managers a direct view of their different projects, the 
 :mod:`account_analytic_analysis` module creates new menus in the Project management module in
-:menuselection:`Project Management --> Analytic Accounts`.
+:menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
    :align: center
@@ -179,7 +178,7 @@ In the following chapters you'll see how each project manager can use this infor
 the different operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
 
-.. todo:: Write more now.
+.. todo:: Write more now. Or maybe not!
 
 .. index::
    pair: module; account_budget

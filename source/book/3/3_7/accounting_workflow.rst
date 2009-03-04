@@ -27,7 +27,7 @@ Draft Invoices
 
 The system generates invoice proposals which are initially set to the \ ``Draft``\   state. While
 these invoices remain unconfirmed they have no accounting impact within the system. There's nothing
-to stop users creating their own invoices if they want to.
+to stop users creating their own draft invoices if they want to.
 
 The information that's needed for invoicing is automatically taken from the Partner form (such as
 payment conditions and the invoice address) or from the Product (such as the account to be used) or
@@ -38,24 +38,24 @@ from a combination of the two (such as applicable Taxes and the Price of the pro
 	There are several advantages in working with Draft invoices:
 
 	* You've got an intermediate validation state before the invoice is approved.
-	  This is very useful when your accountants aren't the people creating the initial invoice,
+	  This is useful when your accountants aren't the people creating the initial invoice,
 	  but are still required to approve it before the invoice is entered into the accounts.
 
-	* This enables you to create invoices in advance, without approving them at the same time.
+	* It enables you to create invoices in advance, without approving them at the same time.
 	  You're also able to list all of the invoices awaiting approval.
 
 Open or Pro-Forma Invoices
 --------------------------
 
-It's possible to approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
+you can approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
 A Pro Forma invoice doesn't yet have an invoice number, but the accounting entries on the invoice
 that's created correspond to the amounts that Open ERP will record as the customer's payables.
 
 .. tip:: Pro Forma invoices
 
 	In some countries, you're not allowed to generate accounting entries from pro forma invoices.
-	You create instead a report from the purchase order, which prints a pro forma invoice,
-	which has no accounting consequences within the system.
+	You create instead a report from the purchase order, which prints a pro forma invoice
+	that has no accounting consequences within the system.
 
 	You can use the module described in :ref:`ch-config` to create this report.
 
@@ -84,7 +84,7 @@ state until you have entered the payment.
 
 .. note:: Reconciliation
 
-	Reconciliation links entries in a single account that cancel each other out – they're reconciled
+	Reconciliation links entries in an account that cancel each other out – they're reconciled
 	to each other (sum of credits = sum of debits).
 
 	This is generally applied to payments against corresponding invoices.
@@ -102,21 +102,20 @@ If you receive a payment of 120, Open ERP will delay reconciliation because the
 invoices to pay. It could either reconcile the payment against invoices 145 and 184 or against
 invoice 167.
 
-You can cancel an invoice if the  *Allow Cancelling Entries*  function has been activated in the
+You can cancel an invoice if the :guilabel:`Allow Cancelling Entries` function has been activated in the
 journal and the entries haven't yet been reconciled. You could then move it from \ ``Canceled``\  ,
 through the \ ``Draft``\   state to modify it and regenerate it.
 
 .. tip:: Treatment in Lots
 
 	Usually, different transactions are grouped together and handled at the same time rather than
-	invoice by invoice.
-	This is called batch work or lot handling.
+	invoice by invoice. This is called batch work or lot handling.
 
 	You can select several documents in the list of invoices: check the checkboxes of
 	the interesting lines using the web client and click the appropriate shortcut button at the right;
 	or shift-click the lines using the mouse in the GTK client and use the action or print button at
 	the top –
-	these give you the option of one of a number of possible actions on the selected objects.
+	these give you the option of a number of possible actions on the selected objects.
 
 At regular intervals, and independently of the invoices, an automatic import procedure or a manual
 accounts procedure can be used to bring in bank statements. These comprise all of the payments of
@@ -143,7 +142,7 @@ they're used to thinking in terms of accounting records rather than in terms of 
 payments.
 
 You should really use the forms designed for invoices and bank statements rather than manual data
-entry records, however. These are simpler and are managed within an error-control system.
+entry records, however. These are simpler and are managed within an error-controlling system.
 
 A records-based system
 ----------------------
@@ -151,9 +150,9 @@ A records-based system
 All the accounting transactions in Open ERP are based on records, whether they're created by an
 invoice or created directly.
 
-So partner reminders are generated simply from the list of unreconciled entries in the trade
+So partner reminders are generated quickly from the list of unreconciled entries in the trade
 receivables account for that partner. In a single reminder you'll find the whole set of unpaid
-invoices as well as unreconciled payments, such as advances.
+invoices as well as unreconciled payments, such as advance payments.
 
 Similarly, financial statements such as the general ledger, account balance, aged balance (or
 chronological balance) and the various journals, are all based on accounting entries. It doesn't

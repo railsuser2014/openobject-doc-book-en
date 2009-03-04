@@ -5,7 +5,7 @@ Periods and fiscal years
 .. note:: Periods and fiscal years
 
 	A fiscal year corresponds to twelve months for a company.
-	In many countries, the fiscal year corresponds to a calendar year but that's not the case in
+	In many countries, the fiscal year corresponds to a calendar year. That's not the case in
 	others.
 
 	The fiscal year is divided into monthly or three-monthly accounting periods.
@@ -21,7 +21,7 @@ Defining a period or a fiscal year
 ----------------------------------
 
 To define your fiscal year use the menu :menuselection:`Financial Management --> Configuration -->
-Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
+Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
 .. figure::  images/account_period.png
    :align: center
@@ -32,9 +32,9 @@ First enter the date of the first day of your fiscal year and the last day. Then
 periods click one of the two buttons at the bottom depending on whether you want to create twelve
 1-month or four 3-month periods:
 
-*  *Create monthly periods* ,
+*  :guilabel:`Create monthly periods` ,
 
-*  *Create 3-monthly periods* .
+*  :guilabel:`Create 3-monthly periods` .
 
 Closing the end of the year
 ---------------------------
@@ -55,8 +55,8 @@ finally sent to the statutory authorities, and no further modifications are perm
 
 It's also possible to close an accounting period. You could for example close a monthly period when
 a tax declaration has been made. When a period is closed you can't modify any of the entries in that
-period. To close an accounting period use the menu :menuselection:`Financial Management --> End of
-Year Processing --> Close a Period`.
+period. To close an accounting period use the menu :menuselection:`Financial Management --> 
+Configuration --> Periodical Processing --> End of Year Treatments --> Close a Period`.
 
 .. Copyright © Open Object Press. All rights reserved.
 

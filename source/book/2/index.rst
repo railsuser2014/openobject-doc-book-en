@@ -24,8 +24,8 @@ Managing Customer Relationships
 .. toctree::
     :maxdepth: 1
 
-    2_4_CRM/index
-    2_5_Leads/index
+    2_4_Leads/index
+    2_5_CRM/index
     2_6_Comms/index
 
 .. Copyright © Open Object Press. All rights reserved.

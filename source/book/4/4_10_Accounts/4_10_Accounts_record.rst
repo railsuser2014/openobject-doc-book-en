@@ -69,28 +69,16 @@ project.
 To visualize the general entries following these different actions you can use one of the following
 menus:
 
-	#. To see all of the entries, :menuselection:`Financial Management --> Entries --> Analytic Entries
-	   --> Analytic Entries`,
+	#. To see all of the entries, :menuselection:`Financial Management --> Entries Encoding --> Analytic Entries
+	   --> Entries Encoding by Line` and then click :guilabel:`Open Entries`,
 
 	#. To see the entries per account, click the :guilabel:`Analytic Account` field of any of the lines
-	   of Analytic Entries to see the details of that entry, then use the analytic  *Account name* to
-	   start a search of all entries with that name (just click the Date hyperlink on a line in the web
+	   of Analytic Entries to see the details of that entry, then use the analytic :guilabel:`Account name` to
+	   start a search of all entries with that name (just click the :guilabel:`Date` hyperlink on a line in the web
 	   client, or double-click the line in the GTK client).
 
-	#. To see all of the entries by Journal, :menuselection:`Financial Management --> Entries -->
-	   Analytic Entries --> Entries by journal` and then click on one of the journal names.
-
-.. todo:: - this did not work originally. Does it now?
-
-.. note:: Reviewing a hierarchical account
-
-	In the chart of analytic accounts, if you click on an account Open ERP opens a window showing the
-	corresponding analytic entries.
-
-	It was intended that if you do that on a View-type account Open ERP opens all of the entries
-	belonging to its child accounts.
-	That can be very useful for opening entries belonging to several accounts, such as all project
-	clients.
+	#. To see all of the entries by Journal, :menuselection:`Financial Management --> Entries Encoding -->
+	   Analytic Entries --> Analytic Entries by Journal` and then click on one of the journal names.
 
 Manual record entry
 -------------------
@@ -99,8 +87,8 @@ Even though most analytic entries are produced automatically by the other Open 
 sometimes necessary to make manual record entries. It's usually needed for certain analytic
 operations that have no counterpart in the general accounts.
 
-To make manual record entries, use the menu :menuselection:`Financial Management --> Entries -->
-Analytic Entries --> Entries by journal`.
+To make manual record entries, use the menu :menuselection:`Financial Management --> Entries Encoding-->
+Analytic Entries --> Entries Encoding by Line`.
 
 .. index::
    single: Analytic entries
@@ -113,8 +101,6 @@ Analytic Entries --> Entries by journal`.
 
 Select a journal and complete the different fields. Write an expense as a negative amount and income
 as a positive amount.
-
-.. todo:: - check behaviour now
 
 .. tip::  Entering a date
 

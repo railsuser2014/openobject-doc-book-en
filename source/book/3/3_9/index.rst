@@ -9,9 +9,9 @@ Configuring Accounts from A to Z
  This chapter explains how to modify your chart of accounts, journals, access rights, initial
  account balances, and default values for the initial configuration of your Open ERP accounts.*
 
-Assuming always that it calculates accurately, the best accounting software would be marked out by
+Assuming that it calculates sufficiently accurately, the best accounting software would be marked out by
 its usability and simplicity of data entry, and flexibility in configuring its different components.
-These would let you modify the accounting module easily to meet your own needs so that you can
+You'd be able to easily modify the accounting module to meet your own needs so that you could
 optimize it for the way you want to use it.
 
 Open ERP lets you adapt and reconfigure many functions to ease the task of data entry:

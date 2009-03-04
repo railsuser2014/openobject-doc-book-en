@@ -2,6 +2,8 @@
 Open ERP preparation
 ====================
 
+.. todo:: Not any more
+
 You'll need two databases for this chapter:
 
 * \ ``openerp_ch06X``\  , which should be a restored copy of\ `` openerp_ch02``\  , the database you

@@ -3,9 +3,6 @@
 Conclusion
 **********
 
-Conclusion
-==========
-
 Open ERP has become established as the main free market-changing alternative for enterprise
 management systems
 in amongst software from giants such as SAP, Oracle and Microsoft,
@@ -34,7 +31,7 @@ We frequently receive the gratitude of senior management who get better results 
 business because they've adopted Open ERP.
 
 You aren't alone
-----------------
+================
 
 Many resources are at hand to accompany you on your Open ERP adventure.
 
@@ -54,7 +51,7 @@ modules offered. So you can't use your own modules, and are limited to the stand
 included in various package levels.
 
 Consult the available resources
--------------------------------
+===============================
 
 Larger companies often prefer a more classic implementation path. Even though Open ERP's simplicity
 makes this task easier than with other systems, you can't hide the fact that a project
@@ -70,7 +67,7 @@ out:
 * the main project developers, Tiny, themselves.
 
 The community of users and developers
-+++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The community, supported by Tiny, hosts a set of communication tools which can help you in your
 Open ERP investigation.
@@ -106,7 +103,7 @@ source code (using the *bzr* source code control system) and is used for reporti
 become the central location for Open ERP technology.
 
 Open ERP partners
-+++++++++++++++++
+^^^^^^^^^^^^^^^^^^^
 
 If you need contract-backed guarantees for implementing and maintaining Open ERP you can contact an
 official Open ERP partner. Open ERP partners offer various services such as user training,
@@ -114,7 +111,7 @@ prototype installations, and change management services. The complete list of pa
 and by type can be found on the official Open ERP site: http://openerp.com/partners.html.
 
 The main developer, Tiny
-++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Finally you can call the main project developers, Tiny, who can help you in your Open ERP project.
 Tiny offers various services such as free demonstration days for the software, user training and

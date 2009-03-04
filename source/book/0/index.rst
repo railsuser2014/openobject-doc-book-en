@@ -3,27 +3,24 @@
 Foreword
 ********
 
-Foreword
-========
-
 Information Systems have played an increasingly visible role over the past several years in
 improving the competitiveness of business.
 More than just tools for handling repetitive tasks, they're used to guide and advance
 all of a company's' daily activities. Integrated management software is today very often a
 key source of significant competitive advantage.
 
-The standard response to a need for responsiveness, reliability, and rapidly increasing expectations
-is to create an organization based on departments with a clear linear structure,
-integrated around your operating processes.
-To increase efficiency amongst salespeople, accountants, logistics staff and everyone else
-you should have a common understanding of your problems.
+The standard response to a need for responsiveness, reliability, and rapidly
+increasing expectations is to create an organization based on departments with
+a clear linear structure, integrated around your operating processes.  To
+increase efficiency amongst salespeople, accountants, logistics staff and
+everyone else you should have a common understanding of your problems.
 
 For this you need a common language for shared references, policies and communication.
 An ERP (Enterprise Resource Planning) system makes the ideal platform for this common reference
 point.
 
 Open Source software at the service of management
--------------------------------------------------
+=================================================
 
 Risks and integration costs are important barriers to all the advantages you gain from such systems.
 That's why, today, few small- and medium-sized companies use ERP.
@@ -68,7 +65,7 @@ the organization, synchronization and coherence of the software.
 And Open ERP offers great performance in all these areas!
 
 The Open ERP Solution
----------------------
+=====================
 
 Because of its modularity, collaborative developments in Open ERP have been cleanly integrated,
 enabling any company to choose from a large list of available functions.
@@ -107,7 +104,7 @@ the days when the only people who could be expected to benefit from ERP were the
 factory on some remote industrial estate.
 
 Why this book?
-++++++++++++++
+--------------
 
 Many books set out to tell readers about the management of enterprise, and equally many aim to
 instruct the reader in the use of a piece of specialized software. We're not aiming to add to those
@@ -123,7 +120,7 @@ It's this that we'll consider Open ERP for: not as an end in itself but just the
 an advanced management system into place.
 
 Who's it for?
-+++++++++++++
+-------------
 
 Written by two CEOs who have been successful with new technologies, this book is aimed at directors
 and managers who have an ambition to improve the performance of their whole company's management
@@ -135,7 +132,7 @@ hundred staff), and independent companies, because of the breadth of functions t
 analyzed and involved in change. The same principles also apply to larger companies, however.
 
 Structure of this book
-----------------------
+======================
 
 The first part starts with the installation of Open ERP. If you have already installed Open ERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
@@ -214,7 +211,7 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 			tool.
 
 Dedication
-----------
+==========
 
         *From Geoff Gardiner*
 

@@ -194,7 +194,7 @@ analytic account:
    "Fuel Cost -Client trip","Case 1.1","-35","","613 – Transports","35",""
    "Staff salaries","","","","6201 – Salaries","","3 000"
 
-You'll quickly see that it allows you to make a detailed study of the profitability of different
+You'll see that it allows you to make a detailed study of the profitability of different
 transactions. In this example the cost of Case 1.1 is 95.00 (the sum of the analytic costs of
 studying the files, searching for information and service charges), but has been invoiced for
 280.00, which gives you a gross profit of 185.00.

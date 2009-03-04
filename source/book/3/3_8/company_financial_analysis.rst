@@ -30,7 +30,7 @@ Management Indicators
 .. index::
    pair: module; account_report
 
-To define accounting indicators in Open ERP you should install the module :mod:`account_report`.
+To define financial indicators in Open ERP you should install the module :mod:`account_report`.
 When installing the module the usual financial indicators are registered in Open ERP.
 
 You can consult your indicators, calculated in real time, from the menu :menuselection:`Financial
@@ -38,14 +38,14 @@ Management --> Reporting --> Custom Reports`.
 
 Indicators defined by default in Open ERP are the following:
 
-*  *Indicators of Working Capital* : determines if the company can pay its short term debts in
+*  :guilabel:`Indicators of Working Capital` : determines if the company can pay its short term debts in
    normal conditions. It's calculated from \ ``(Stocks + Cash + Current Assets) / Current
    Liabilities``\  .
 
-*  *Financial Ratios* : enables you to calculate the company's liquidity. It is defined as follows:
+*  :guilabel:`Financial Ratios` : enables you to calculate the company's liquidity. It is defined as follows:
    \ ``( Current Assets – Stocks) / Current Liabilities``\  .
 
-*  *Fixed Assets* : in a going concern, the value of fixed assets are covered in the first place by
+*  :guilabel:`Fixed Assets` : in a going concern, the value of fixed assets are covered in the first place by
    owners' capital and in the second place by all of the long term liabilities. Ideally this indicator
    will be greater than 1.
 
@@ -69,7 +69,7 @@ the company.
    pair: module; account_report_history
 
 To do a temporal analysis of your indicators, you must install the module 
-:mod:`account_report_history` from the set of modules in extra_addons.
+:mod:`account_report_history` from the set of modules in addons-extra.
 
 Once this module is installed, you can click on a financial indicator to get a graph of its
 evolution in time.
@@ -119,7 +119,8 @@ Good management budgeting
 -------------------------
 
 Open ERP manages its budgets using both General and Analytic Accounts. You'll see how to do this
-here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts.
+here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts. 
+Install :mod:`account_budget` to be able to do this.
 
 Use the menu :menuselection:`Financial Management --> Configuration --> Budgets --> General Budgets`
 to define a new budget.
@@ -129,35 +130,32 @@ to define a new budget.
 
 .. tip:: Budget Revisions
 
-	Even though you can modify a budget at any time to make a revision of it, it's best if you don't do
+	Even though you *can* modify a budget at any time to make a revision of it, it's best if you don't do
 	that.
 
 	Rather than edit an existing budget document, make a new version so that you can keep your original
-	estimates safe for comparison. This enables you to analyze your changing perspectives of the
+	estimates safe for comparison. This lets you analyze your changing perspectives of the
 	company from revision to revision.
 
-Begin data entry by entering a :guilabel:`Code` and a :guilabel:`Name` in the first tab of your new budget. The
-budget :guilabel:`Direction` can be for \ ``Products``\   or \ ``Charges``\   – choose one. Then, in the
-second tab :guilabel:`Dotations/Expenses` you can define the charges per period. For each period you
-can define a quantity and/or an amount spent in the default currency of the chart of accounts.
+Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`, 
+and a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget. 
+Then you can define the budgeted amounts within that period, one by one. For each, you define:
 
-It's also possible to automatically create the different income and expenses over the periods of a
-single fiscal year. To do that, click :guilabel:`Spread` on the second tab. A window then opens
-requesting the fiscal year over which you want to budget, and the total quantities and amounts for
-that year. If you want your budget to cover several years, repeat this operation several times.
+* an :guilabel:`Analytic Account`
 
-Once the charges have been generated you can modify them manually to revise the charges period by
-period. Once the amounts have been assigned over the period, you must specify the accounts for
-creating this budget on the third tab :guilabel:`Accounts`.
+* a :guilabel:`Budgetary Position` : for example :guilabel:`Sales` or :guilabel:`Purchases`,
 
-To do this, click :guilabel:`Add` and make multiple selections for the different accounts to be
-represented in the budget. Once the three tabs are completed you can save your budget.
+* a :guilabel:`Start Date` and :guilabel:`End Date` for the use of the budget,
 
-.. tip:: Multiple selection
+* a :guilabel:`Planned Amount` in the default currency of the chart of accounts.
 
-	You can select several elements (accounts, partners, etc) at the same time from a list.
-	In the web client, click the checkbox alongside their name in the list view.
-	In the GTK client, click on each element with the mouse, while holding the Ctrl button down.
+Once it's completed you can save your budget.
+
+To print a budget and make calculations of expenditure to budget use the menu
+:menuselection:`Financial Management --> Budgets --> Budget` Open ERP then gives you a
+list of available budgets. Select one or more budgets and then click :guilabel:`Print Budgets` to create
+the report for each in a date range of your choosing. 
+The figure :ref:`fig-accbudg` gives an example of a budget produced by Open ERP.
 
 .. _fig-accbudg:
 
@@ -166,10 +164,10 @@ represented in the budget. Once the three tabs are completed you can save your b
 
    *Printing a budget*
 
-To print a budget and make calculations of expenditure to budget use the menu
-:menuselection:`Financial Management --> Reporting --> Print Budgets`. Open ERP then gives you a
-list of available budgets. Select one or more budgets and then click :guilabel:`Print` to configure
-the report. The figure :ref:`fig-accbudg` gives an example of a budget produced by Open ERP.
+You could also use the menu :menuselection:`Financial Management --> Reporting --> Budgets`
+which gives you a choice of one or more :guilabel:`Budgetary Position` entries before 
+clicking :guilabel:`Budget` and choosing a date range. This gives a budgetary analysis report for each
+of the positions.
 
 The Accounting Dashboard
 ------------------------
@@ -204,7 +202,7 @@ to right:
 *  :guilabel:`Aged receivables` : gives a weekly graph of the receivables that haven't yet been
    reconciled.
 
-*  :guilabel:`Aged revenues` : gives a weekly graph of the company's turnover.
+*  :guilabel:`Aged income` : gives a weekly graph of the company's turnover.
 
 In each panel of the accountants' dashboard you can click the :guilabel:`Zoom` button at the top
 right to investigate the detail of your financial indicators.
