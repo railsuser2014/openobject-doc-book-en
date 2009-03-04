@@ -25,7 +25,7 @@ tools that will make it easy to use all of that knowledge and analysis.
 
 A crucial advantage that Open ERP gives you over the more specialist CRM applications is that
 Open ERP knows more about your customers and your ability to supply them because it's handling all
-of your accounting, sales, purchases, manufacturing and fulfillment as well as linking to all of
+of your accounting, sales, purchases, manufacturing and fulfilment as well as linking to all of
 your internal staff.
 
 .. index::
@@ -56,9 +56,9 @@ prospects.
 
 .. toctree::
 
-    2_4_CRM_partners
-    2_4_CRM_case
-    2_4_CRM_profiling
+    2_5_CRM_partners
+    2_5_CRM_case
+    2_5_CRM_profiling
 
 .. raw:: html
 

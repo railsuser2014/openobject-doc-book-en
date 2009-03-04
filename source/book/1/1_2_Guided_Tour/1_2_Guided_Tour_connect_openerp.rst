@@ -233,7 +233,7 @@ To check your requests:
 
 Look at the request and its history, then close it.
 
-	#. Click on the :guilabel:`History:guilabel:` tab in the :guilabel:`Request` form to see the
+	#. Click on the :guilabel:`History` tab in the :guilabel:`Request` form to see the
 	   original request and all of the responses. By clicking on each line you could get more information
 	   on each element.
 
