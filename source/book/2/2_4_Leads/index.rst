@@ -3,10 +3,11 @@
 Leads, Business Opportunities and Campaigns
 *******************************************
 
- *This chapter extends the discussion of customer relationships into pre-sales activities such as the
- management of leads and opportunities. It introduces a more complex set of relationships between 
- partners and contacts than offered by the :mod:`base` module. 
- It shows how to use the company calendar, and discusses how a call center can use the Open ERP system.*
+ *This chapter introduces the pre-sales activities of managing
+ leads and opportunities. You're introduced to a more complex set of relationships between 
+ partners and contacts than offered by the :mod:`base` module, and 
+ shown how to use the company calendar. 
+ You'll finish by discussing how a call center might use the Open ERP system.*
 
 .. raw:: html
 
@@ -14,9 +15,9 @@ Leads, Business Opportunities and Campaigns
 
 .. toctree::
 
-    2_5_Contacts
-    2_5_Leads
-    2_5_Opportunities
+    2_4_Contacts
+    2_4_Leads
+    2_4_Opportunities
 
 .. raw:: html
 

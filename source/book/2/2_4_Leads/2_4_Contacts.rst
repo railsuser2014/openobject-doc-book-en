@@ -5,7 +5,19 @@ Managing Contacts
 .. index::
    pair: module; base_contact
 
-The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show the UML classes with and without the :mod:`base_contact` module.
+The standard way of representing partners and contacts throughout Open ERP
+and many other enterprise systems (such as phone contact applications) 
+is having a partner with multiple contacts.
+*Partner* is the word for any entity that you do business with - supplier, customer, etc.
+This representation may not be flexible enough for some uses, so Open ERP provides
+an alternative, which is brought into the system by installing the :mod:`base_contact` module.
+
+The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
+the structure of partners and contacts in the form of UML classes both 
+with and without this :mod:`base_contact` module. 
+For the non-programmer this diagram can be a bit of a brutal way
+of showing it, but it's the clearest way to illustrate the
+complexities that can be accomplished.
 
 .. _fig-crmconw:
 
@@ -21,8 +33,8 @@ The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show the UML classes w
 
    *UML class diagram without :mod:`base_contact`*
 
-A concrete example illustrates the concept of multiple relationships between contacts and
-partners (companies)  The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
+A concrete example may illustrate this concept of multiple relationships between contacts and
+partners (companies) better. The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
 business) and several contacts attached to these addresses.
 
 .. _fig-crmcont:

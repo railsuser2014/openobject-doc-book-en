@@ -29,7 +29,7 @@ For example, the following events could result in the creation of one or several
         and the role of the sales department is to crystallize the sales opportunities or work with
         existing customers.
 
-In Open ERP the users in the presales department will usually work on leads. Once these are
+System users in the pre-sales department will usually work on leads. Once these leads are
 converted into customers or sales opportunities the sales department pays individual attention to
 each opportunity.
 
@@ -51,26 +51,26 @@ form opens to let you enter data about this new contact.
 
 Leads have a status that depends on the qualification work that's been carried out:
 
-* Draft: the lead data has been entered, any work has not yet been done and a salesperson has not
+* ``Draft`` : the lead data has been entered, any work has not yet been done and a salesperson has not
   yet been assigned to the request,
 
-* Open: the lead is being handled,
+* ``Open`` : the lead is being handled,
 
-* Closed: the lead has been converted into a partner and/or a sales opportunity,
+* ``Closed`` : the lead has been converted into a partner and/or a sales opportunity,
 
-* Waiting: the lead is waiting for a response from the customer,
+* ``Waiting`` : the lead is waiting for a response from the customer,
 
-* Cancelled: the lead has been cancelled because the salesperson has decided that it's not worth
+* ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it's not worth
   following up.
 
 When a new lead has been created it's automatically put into the open state.
 
-It's also possible to import a huget list of leads. That's useful if you've bought a database of
-potential prospects and you want to insert them all into the system to handle them all at once.
+You can also import a huge list of leads. That's useful if you've bought a database of
+potential prospects and you want to load them all into the system to handle them all at the same time.
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in
-another format it's very simple to convert them to the CSV format using MS Excel or OpenOffice Calc.
-Open the leads list using the menu :menuselection:`CRM & SRM --> Presales -> Leads -> My Leads`. At
+another format it's very simple to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
+Open the leads list using the menu :menuselection:`CRM & SRM --> Sales -> Leads -> My Leads`. At
 the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a form for importing the
 data.
 
@@ -85,7 +85,7 @@ information on import and export.
 
 .. tip:: Various Imports
 
-    Importing and Exporting data in Open ERP is a generic function available to all resource.
+    Importing and Exporting data in Open ERP is a generic function available to all resources.
     So you can import and export such lists as partners, sales opportunities, accounting entries,
     products and pricelists.
 
@@ -97,9 +97,9 @@ There are other methods of importing leads automatically or semi-automatically:
 * Using the email gateway for each incoming email from a certain address (such as
   info@mycompany.com) creating a lead automatically from the contents of the email,
 
-* Using Open ERP's XML-RPC web-servces to connect to a form on your website.
+* Using Open ERP's XML-RPC web-services to connect to a form on your website.
 
-These different methods are described in the earlier CRM chapter, :ref:`ch-crm`.
+These different methods are described in the next CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
 ----------------
@@ -116,7 +116,7 @@ system that can be used depending on the needs of each:
 * :menuselection:`Leads --> My Leads --> My Current Leads` gives a list of all your leads that you
   still need to handle (your open, draft and waiting leads),
 
-* :menuselection:`Leads --> My Leads --> My Open Leads --> Leads Waiting` gives a list of all your
+* :menuselection:`Leads --> My Leads --> My Current Leads --> My Pending Leads` gives a list of all your
   leads that that are still waiting for a customer response. This enables you to check periodically on
   your work to do,
 
@@ -128,31 +128,31 @@ system that can be used depending on the needs of each:
 
    *List of leads to be handled*
 
-Leads are prioritized. The salespeople should ideally start at the top of the list. They then open a
-form to describe the lead. At this stage they contact the suspect by email or phone and enter the
+Leads are prioritized. Salespeople should ideally start at the top of the list. They then open a
+form to describe the lead. At this stage they contact the suspected customer by email or phone and enter the
 result of the contact on the lead form.
 
 They can then change the status of the lead to a state that depends on the response from the
-customer:
+suspect:
 
-* Cancelled: not to be followed as a lead,
+* ``Cancelled`` : not to be followed as a lead,
 
-* Waiting: waiting for a response from the suspect.
+* ``Waiting`` : waiting for a response from the suspect.
 
 Converting leads into customers or opportunities
 ------------------------------------------------
 
 If a lead is interesting you convert it into a partner in the system. To do that, push the button
-:guilabel:`Convert into a Partner`. Open ERP opens a partner form with the information from the lead entered
-into it. At this stage you can complete more information such as the exact partner address and the
+:guilabel:`Convert to Partner`. Open ERP opens a partner form with the information from the lead entered
+into it. At this stage you can add more information such as the exact partner address and the
 contact details.
 
-The created partner is automatically attached to the lead, which enables you to keep the complete
+The created partner is automatically attached to the lead, which enables you to keep complete
 traceability from the lead. To do that look at the second tab in the lead :guilabel:`History`.
 
 If the salesperson thinks that there is a real opportunity with the lead, following the contact, he
 can convert it into a sales opportunity using the button :guilabel:`Convert to Opportunity`. Open ERP then
-opens a window asking the title of the opportunity, the estimate revenue and the percentage success
+opens a window asking the title of the opportunity, the estimated revenue and the percentage success
 of converting to a sale.
 
 .. figure:: images/crm_lead_convert.png
@@ -161,7 +161,7 @@ of converting to a sale.
    *Converting a lead into a sales opportunity*
 
 Some companies have more advanced processes for the qualification of a lead. They pass through
-several steps, auch as first call, renewing contact, waiting for a verbal agreement. You can then
+several steps, such as first call, renewing contact, waiting for a verbal agreement. You can then
 use the field :guilabel:`Step` that is found up to the right of the lead definition. To move it
 automatically through the next step, you can use the button that looks like a right arrow.
 
