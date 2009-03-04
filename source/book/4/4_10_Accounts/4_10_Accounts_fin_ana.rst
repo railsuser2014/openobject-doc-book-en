@@ -162,7 +162,7 @@ amount that would have been invoiced if you had charged for all the time worked.
 
 To give project managers a direct view of their different projects, the 
 :mod:`account_analytic_analysis` module creates new menus in the Project management module in
-:menuselection:`Project Management --> Analytic Accounts`.
+:menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
    :align: center
@@ -178,7 +178,7 @@ In the following chapters you'll see how each project manager can use this infor
 the different operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
 
-.. todo:: Write more now.
+.. todo:: Write more now. Or maybe not!
 
 .. index::
    pair: module; account_budget

@@ -16,7 +16,7 @@ Setting up the chart of accounts
 
 Start by choosing the most suitable analytic representation for your company before entering it into
 Open ERP. To create the different analytic accounts, use the menu :menuselection:`Financial
-Management --> Configuration --> Analytic Accounts --> Analytic Accounts`.
+Management --> Configuration --> Analytic Accounting --> Analytic Accounts --> New Analytic Account`.
 
 .. figure::  images/account_analytic_form.png
    :align: center
@@ -27,17 +27,17 @@ To create an analytic account you have to complete the main fields:
 
 * the :guilabel:`Account Name`,
 
-* the :guilabel:`Account Code`, which is used as a shortcut for selecting the account,
+* the :guilabel:`Account Code` : used as a shortcut for selecting the account,
 
-* the :guilabel:`Account type`, just like general accounts the \ ``View``\   type is used for
+* the :guilabel:`Account type` : just like general accounts the \ ``View``\   type is used for
   virtual accounts which are used only to create a hierarchical structure and for subtotals, and not
   to store accounting entries,
 
-* the :guilabel:`Parent analytic account`, which defines the hierarchy between the accounts.
+* the :guilabel:`Parent analytic account` : defines the hierarchy between the accounts.
 
 If the project is for a limited time you can define a start and end date here. The :guilabel:`State`
 field is used to indicate whether the project is running (\ ``Open``\  ), waiting for information
-from the client (Pending), \ ``Draft``\   or \ ``Closed``\  .
+from the client (\ ``Pending``\ ), \ ``Draft``\   or \ ``Closed``\  .
 
 Finally, if the analytic account is a client project you can complete the fields about the partner,
 which you'd need so that you can invoice the partner:
@@ -73,7 +73,7 @@ which you'd need so that you can invoice the partner:
    *Example of an analytic chart for projects*
 
 Once you've defined the different analytic accounts you can view your chart through the menu
-:menuselection:`Financial Management --> Charts --> Analytic Charts of Accounts`.
+:menuselection:`Financial Management --> Charts --> Analytic Chart of Accounts`.
 
 .. index::
    pair: module; hr_timesheet_invoice
@@ -124,7 +124,7 @@ These enable you to categorize the different accounting entries by their type:
    *Creating an analytic journal*
 
 To define your analytic journals, use the menu :menuselection:`Financial Management -->
-Configuration --> Journal --> Analytic Journal Definition`.
+Configuration --> Analytic Accounting --> Analytic Journal Definition` then click :guilabel:`New`..
 
 It's easy to create an analytic journal. Just give it a :guilabel:`Name`, a :guilabel:`Code` and a :guilabel:`Type`. The
 types available are:
