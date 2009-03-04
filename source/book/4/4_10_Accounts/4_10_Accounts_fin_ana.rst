@@ -92,9 +92,8 @@ services journal to print the report.
 
 	To print several analytic accounts at once you can make a multiple selection on the different
 	account in the tree of accounts.
-	For that select account lines using the :guilabel:`Ctrl-Click` keyboard and mouse combination.
-
-	Then click on :guilabel:`Print` in the tree or list view to export the whole selection into a
+	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or 
+	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
 	single PDF document.
 
 .. index::

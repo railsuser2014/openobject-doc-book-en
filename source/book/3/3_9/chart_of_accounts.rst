@@ -6,7 +6,7 @@ Chart of Accounts
 =================
 
 .. index::
-   pair: module; l10n_
+   pair: modules; l10n_
    pair: module; l10n_fr
 
 On installation, the software is given a default chart of accounts that's the same regardless of
@@ -19,7 +19,7 @@ status and are simply indicators of the possibilities. You can modify these, or 
 accounts onto the default chart, or replace it entirely with a custom chart.
 
 You view active charts of accounts using the menu :menuselection:`Financial Management --> Charts
---> Charts of Accounts`.
+--> Charts of Accounts`, and :guilabel:`Open Charts` for the selected year and account moves.
 
 .. note:: Hierarchical charts
 
@@ -28,11 +28,11 @@ You view active charts of accounts using the menu :menuselection:`Financial Mana
 
 	* it lets you show and calculate only the accounts that interest you,
 
-	* it enables you to get a global view of accounts (when you show only summary accounts)
+	* it enables you to get a global view of accounts (when you show only summary accounts),
 
-	* it simplifies searches semantically
+	* it simplifies searches semantically,
 
-	* it's more intuitive, because you can search for accounts on the basis of their classification
+	* it's more intuitive, because you can search for accounts on the basis of their classification,
 
 	* it's flexible because you can easily restructure them.
 
@@ -40,9 +40,8 @@ The structure of the chart of accounts is hierarchical, with account subtotals c
 You can develop a set of account views to contain only those elements that interest you.
 
 To get the detail of the account entries that are important to you, all you need to do is click the
-account. You can also click the :guilabel:`Print` icon after selecting one or several accounts (do a
-:guilabel:`Ctrl-click` on each line you want to select). The software gives you a choice of at least
-two reports: print the ledger or the balance of the selected accounts.
+account's :guilabel:`Code` (if you have no codes, you can select the line, then click :guilabel:`Switch`
+to get the acount definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar). 
 
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits,
 credits and balance for each account in real time. If you just want to work with a chart of accounts
@@ -58,7 +57,7 @@ Creating a chart of accounts
    *Definition of an account*
 
 To add, modify or delete existing accounts, use the menu :menuselection:`Financial Management -->
-Configuration --> General Accounts --> Accounts Definitions`.
+Configuration --> Financial Accounting --> Financial Accounts --> List of Accounts`.
 
 .. index::
    single: Multi-lingual
@@ -88,8 +87,8 @@ The main account fields are:
    :guilabel:`View`,:guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
    :guilabel:`Expense`, :guilabel:`Tax`, :guilabel:`Cash`, :guilabel:`Asset`, :guilabel:`Equity`.
    You can add new types through the menu
-   :menuselection:`Financial Management --> Configuration --> Charts of Accounts --> Type of
-   Accounts`.
+   :menuselection:`Financial Management -->
+   Configuration --> Financial Accounting --> Financial Accounts --> Account Types`.
    Use the :guilabel:`View` type for accounts that make up the structure of the charts and have no
    account data inputs of their own.
 
@@ -100,7 +99,7 @@ The main account fields are:
 .. note:: Type of account
 
 	The account types are mainly used as an informative title.
-	The only two types that have any particular effect are Receivables and Payables.
+	The only two types that have any particular effect are :guilabel:`Receivables` and :guilabel:`Payables`.
 
 	These two types are used by reports on partner credits and debits.
 	They're calculated from the list of unreconciled entries in the accounts of one of these two types.
@@ -113,15 +112,15 @@ The main account fields are:
 *  :guilabel:`Deferral Method` : determines how to treat the account and its entries at the closing of the
    books at the end of the year. Four methods are available:
 
-	- Balance: an entry is generated for the account balance and carried across to the new year
+	- :guilabel:`Balance` : an entry is generated for the account balance and carried across to the new year
 	  (generally used for bank accounts),
 
-	- None: no accounting entries are transferred across to the new financial year (generally for
+	- :guilabel:`None` : no accounting entries are transferred across to the new financial year (generally for
 	  classes 6 and 7),
 
-	- Detail: all entries are kept for the new fiscal year,
+	- :guilabel:`Detail` : all entries are kept for the new fiscal year,
 
-	- Unreconciled: only unreconciled entries are carried over to the new fiscal year (usually used for
+	- :guilabel:`Unreconciled` : only unreconciled entries are carried over to the new fiscal year (usually used for
 	  third-party accounts).
 
 *  :guilabel:`Reconcile` : determines if you can reconcile the entries in this account. Activate this field
@@ -160,7 +159,6 @@ The most interesting thing about virtual charts of accounts is that they can be 
 as the default chart of accounts for the whole organization. For example you can establish budgets
 from your consolidated accounts or from the accounts from one of your companies.
 
-
 .. index::
    single: Virtual Accounts
 
@@ -186,12 +184,11 @@ from your consolidated accounts or from the accounts from one of your companies.
 	* presenting summary charts to other users that are appropriate to their general system rights.
 
 	So there are good reasons for viewing the execution of financial transactions through virtual
-	charts,
-	such as budgets and financial indicators based on special views of the company.
+	charts, such as budgets and financial indicators based on special views of the company.
 
 To create a new chart of accounts you should create a root account using the menu
-:menuselection:`Financial Management --> Configuration --> General Accounts --> Accounts
-Definition`. Your top level account should have :guilabel:`Code` \ ``0``\   and :guilabel:`Type` \ ``View``\  . Then
+:menuselection:`Financial Management --> Configuration --> Financial Accounting --> Financial Accounts
+--> List of Accounts`. Your top level account should have :guilabel:`Code` \ ``0``\   and :guilabel:`Type` \ ``View``\  . Then
 you can choose your structure by creating other accounts of :guilabel:`Type` \ ``View``\   as necessary.
 Check your virtual structure using the menu :menuselection:`Financial Management --> Charts -->
 Charts of Accounts`.

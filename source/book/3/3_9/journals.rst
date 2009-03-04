@@ -14,7 +14,7 @@ Configuring a Journal
 ---------------------
 
 To view, edit or create new journals use the menu :menuselection:`Financial Management -->
-Configuration --> Journals --> Definition of Journals`.
+Configuration --> Financial Accounting --> Financial Journals`.
 
 Just like General accounts, the journals can be deactivated to make them invisible: uncheck the
 :guilabel:`Active` checkbox for that.
@@ -41,7 +41,7 @@ another journal. You should only create a new view for new types of journal.
 	Conversely, to simplify data entry the journal view for the bank is quite different from one of the
 	invoicing journals.
 
-You can also create a sequence for each journal. This sequence gives the automatic numbering for
+You can create a sequence for each journal. This sequence gives the automatic numbering for
 accounting entries. Or several journals can use the same sequence if you want to define one for them
 all.
 
@@ -64,7 +64,7 @@ all of the rights management detailed in :ref:`ch-config`.
 
 To avoid mistakes while entering accounts data, you can place conditions in the general accounts
 about who can use a given account. To do this, you must list all the accounts or valid account types
-in the second tab,  *Entry Control* . If you haven't added any accounts there, Open ERP applies no
+in the second tab, :guilabel:`Entry Controls`. If you haven't added any accounts there, Open ERP applies no
 restriction on data entry in the accounts or journals. If you list accounts and the types of account
 that can be used in a journal, Open ERP prevents you from using any account not in that list. This
 verification step starts from the moment you save the entry.
