@@ -242,7 +242,7 @@ the items proposed by Open ERP.
 
 .. tip::  States
 
-    Open ERP distinguishes between the states **Confirmed** and **Assigned*.
+    Open ERP distinguishes between the states **Confirmed** and **Assigned**.
 
     You say that an item is **Confirmed** when it's needed but the available stock is insufficient.
     You say that an item is **Assigned** when it's available in stock and the storesperson reserves it:
