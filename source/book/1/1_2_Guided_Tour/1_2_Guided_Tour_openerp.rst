@@ -317,7 +317,7 @@ of its available variants briefly rather than every item as an entire product.
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
-			than 160 completely different products. This module is available in the extra_addons list (it had
+			than 160 completely different products. This module is available in the addons-extra list (it had
 			not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The :menuselection:`Products` menu gives you access to the definition of products and their
