@@ -5,15 +5,18 @@
 Organization of Human Resources
 *******************************
 
- *Functions used for directly managing a business. To start, this chapter deals with human resources
- and employee services. Most of the solutions discussed after this chapter concern management by
- business or by project: they depend mostly on analytic accounting, and each business or project is
+ *This chapter describes Open ERP's core human resources and employee services features. 
+ Most of the solutions discussed after this chapter concern management by
+ business or by project and depend mostly on analytic accounting, with each business or project
  represented by an analytic account.*
 
-A company is effective only as far as it can rely on its employees' good work. Open ERP's human
+A company's effectiveness depends on its employees' good work. Open ERP's human
 resource modules enable you to manage important aspects of staff work efficiently, such as their
 skills, contracts, and working time.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`hr_timesheet` and all of its dependencies installed and 
+no particular chart of accounts configured. 
 
 .. raw:: html
 

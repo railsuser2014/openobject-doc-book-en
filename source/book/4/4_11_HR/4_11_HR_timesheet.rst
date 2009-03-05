@@ -51,6 +51,18 @@ Amongst the many uses of such a timesheet system for a company, here are some of
 * knowing the costs needed to run the company, such as the marketing costs, the training costs for a
   new employee, and the invoicing rates for a client.
 
+Timesheet categories
+--------------------
+
+The different timesheet categories (working time sessions) can be defined in the menu 
+:menuselection:`Human Resources --> Configuration --> Working Time Categories` and select 
+one of the groups there such as :guilabel:`38 Hours/Week`.
+
+.. figure::  images/service_timesheet_def.png
+   :align: center
+
+   *Timesheet category for full time 38 hours per week*
+
 .. index::
    single: Employee; Configuration
 ..
@@ -97,8 +109,6 @@ The following information is important in the product form:
 	In human resources, this module can be used to change your prices or costs in step with a national
 	index.
 
-.. todo:: *Product Category* \ ``Employees``\
-
 In summary, each company employee corresponds, in most cases, to:
 
 *  :guilabel:`Partner`
@@ -135,35 +145,36 @@ Entering timesheet data
 .. index::
    pair: module; hr_timesheet
 
-To be able to use timesheets, you should install the module :mod:`hr_timesheet`. Once this module
+To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
-timesheet data in the menu :menuselection:`Human Resources --> Hours Encoding --> For me --> My
-Works of the Day`.
+timesheet data in the menu 
+:menuselection:`Human Resources --> Working Hours --> My Working Hours --> My Working Hours of The Day`,
+the click :guilabel:`New`.
 
 .. tip:: Shortcut to timesheets
 
 	It's a good idea if all employees who use timesheets place this menu in their shortcuts.
 	That's because they'll need to return to them several times each day.
 
-.. todo:: What's this about 'New' and 'Description' ?
+For a new entry:
 
- *New*
-
-	#.	The :guilabel:`User` is proposed by default, but you can change it if you're encoding the first timesheet
+	#.	The :guilabel:`User` : proposed by default, but you can change it if you're encoding the first timesheet
 		for another company employee.
 
-	#.	The :guilabel:`Date` is automatically proposed as today's date, but it's possible to change it if you're
+	#.	The :guilabel:`Date` : automatically proposed as today's date, but it's possible to change it if you're
 		encoding the timesheet for a prior day.
 
-	#.	:guilabel:`Analytic Account`
+	#.	:guilabel:`Analytic Account` : for the project you've been working on - obviously it should be predefined.
 
-	#. 	:guilabel:`Quantity`
+	#. 	:guilabel:`Description` : a free text description of the work done in the time.
 
- *Description*
-
-The other fields are automatically completed but can be modified: the :guilabel:`Product`, the
-:guilabel:`Unit of Measure`, the :guilabel:`Cost` of the service, and the associated
-:guilabel:`General Account`.
+	#. 	:guilabel:`Quantity` : number of units of time (the units are defined as part of the product).
+	
+The other fields are automatically completed but can be modified: the :guilabel:`Product` 
+which is the service product such as consultancy, the
+:guilabel:`Unit of Measure` (predefined, and could perhaps be minutes, hours or days), 
+the :guilabel:`Cost` of the service (which is calculated by default), 
+and the associated :guilabel:`General Account`.
 
 The hours are then encoded throughout the day by each employee. It helps to revisit the list at the
 end of the day to verify that the number of hours of attendance in the company has been properly
@@ -174,10 +185,11 @@ jobs and the recharging of services. Different reports are therefore available f
 employees' data entry. Employees can verify their own timesheet using the following reports:
 
 * Printing the timesheets per month, using the menu :menuselection:`Human Resources --> Reporting
-  --> Timesheet --> Print My Timesheet`.
+  --> Timesheet --> Print my timesheet`.
 
-* Reviewing all service entries using the menu :menuselection:`Human Resources --> Hours Encoding
-  --> For Me --> All My Work`. You can then use the filters to analyze your services by project, by
+* Reviewing all service entries using the menu :menuselection:`Human Resources --> Timesheets
+  --> My Timesheets --> My timesheets to confirm`. 
+  You can then use the filters to analyze your services by project, by
   period or by product.
 
 .. tip:: Hiding service costs
@@ -191,24 +203,26 @@ employees' data entry. Employees can verify their own timesheet using the follow
 
 Managers can draw on different reports for managing timesheets quite easily. You can print a summary
 in the form of a table per user and per day in the menu :menuselection:`Human Resources -->
-Reporting --> Timesheet --> Print Summary Timesheet`. This helps you spot when an employee has
-forgotten to encode her timesheet on a certain day.
+Reporting --> Timesheet --> Employees timesheet`. This helps you spot when an employee has
+forgotten to enter her timesheet details on a certain day.
 
 .. figure::  images/service_timesheet_all.png
    :align: center
 
-   *Employee's monthly summary timesheet*
+   *Employees' monthly summary timesheet*
 
-Many graphs are available through the menus :menuselection:`Human Resources --> Reporting --> This
-Month / All Months`, for example:
+If you install the module :mod:`report_timesheet` you'll have many more reports available.
+Some new graphs become available through the menus 
+:menuselection:`Human Resources --> Reporting --> This Month` and 
+:menuselection:`Human Resources --> Reporting --> All Months`, for example:
 
 *  :guilabel:`Timesheet by User`
-
-*  :guilabel:`Timesheet by Account`
 
 *  :guilabel:`Timesheet by Invoice`
 
 *  :guilabel:`Daily Timesheet by Account`
+
+*  :guilabel:`Timesheet by Account`
 
 .. figure::  images/service_timesheet_graph.png
    :align: center
@@ -216,16 +230,16 @@ Month / All Months`, for example:
    *Chart of timesheet by account*
 
 The data making up these graphs can be varied using the filters available in the upper part of the
-screen. If you want to get more exact figures, switch to the list view.
+screen. If you want to see more detail, switch to the list view.
 
 .. note:: Project dashboard when signing in
 
 	The dashboard for managing projects has a graphical view that summarizes the current user's
 	timesheet for the last seven days.
 
-	It's possible to assign a dashboard to users so that it appears when they sign into Open ERP.
-	Then each employee will be able to see if they've forgotten to complete their timesheet when they
-	signed out of the system.
+	you can assign a dashboard to users so that it appears when they sign into Open ERP.
+	Then each employee will be able to see if they forgot to complete their timesheet next time
+	they sign into the system.
 	
 	.. index::
 	   pair: module; board_project	
@@ -241,7 +255,9 @@ Evaluation of service costs
 
 You already know that timesheets are closely linked with analytic accounts. The different projects
 reported on the timesheets correspond to analytic accounts. The timesheet entries themselves are
-analytic entries. These entries comprise various analytic operations that don't correspond to any of
+analytic entries. 
+
+These entries comprise various analytic operations that don't correspond to any of
 the general accounts. Therefore all operations that modify and create timesheet lines automatically
 impact the corresponding analytic line and, conversely are automatically modified by changes in that
 line.
@@ -303,7 +319,7 @@ The analyses of profitability by project and by employee are available from the 
 They take all of the invoices into account, and also take into account the cost of the time spent on
 each project.
 
- *Cost Ledger (only by quantity)*
+.. todo::  *Cost Ledger (only by quantity)*
 
 .. index:: Department
 
