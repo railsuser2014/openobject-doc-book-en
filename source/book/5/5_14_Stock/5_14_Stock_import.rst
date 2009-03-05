@@ -21,21 +21,21 @@ numerous transportation stages and customs. To manage such deliveries efficientl
 Linked locations in Open ERP enable this all to be managed rather elegantly. You can use a structure
 like this:
 
-Suppliers
+* Suppliers
 
-  European Suppliers
+  * European Suppliers
 
-  Chinese Suppliers
+  * Chinese Suppliers
 
-In transit
+* In transit
 
-  Shanghai Port
+  * Shanghai Port
 
-  Pacific Ocean
+  * Pacific Ocean
 
-  San Francisco Port
+  * San Francisco Port
 
-  San Francisco Customs
+  * San Francisco Customs
 
 Stock
 -----
@@ -50,7 +50,7 @@ automatically.
 .. note:: Intrastat
 
     Companies that do import / export should install the module :mod:`report_intrastat`.
-    This will enable them to prepare the reports needed to declare product exports.
+    This enables them to prepare the reports needed to declare product exports.
 
 You can use the lead times between different locations to account for real delays.
 Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of
@@ -84,12 +84,12 @@ The same principle is used for internal stock to generate the quality control fo
 Consigned Products
 ------------------
 
-The principle of linked locations is used to manage consigned products. You can indicate that
-certain products should be returned to you after a certain number of days after they have been
+The principle of linked locations is used to manage consigned products. You can specify that
+certain products should be returned to you a certain number of days after they have been
 delivered to customers.
 
 When the products have been delivered Open ERP automatically creates goods receipts for the
-consigned product. The indicated date is obviously approximate but enables you to forecast returns.
+consigned product. The specified date is obviously approximate but enables you to forecast returns.
 
 
 .. Copyright © Open Object Press. All rights reserved.

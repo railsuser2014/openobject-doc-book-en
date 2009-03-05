@@ -3,6 +3,8 @@ Advanced elements of stock management
 
 In this section you'll enter the details of management and control of stocks.
 
+.. todo:: GOT TO HERE - I'm sure that this is Scheduler not Req Calc
+
 Requirements Calculation
 ------------------------
 

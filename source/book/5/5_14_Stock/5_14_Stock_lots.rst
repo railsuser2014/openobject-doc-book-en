@@ -3,12 +3,12 @@ Management of lots and traceability
 ===================================
 
 The double-entry management in Open ERP enables you to run very advanced traceability. All
-operations are formalized in terms of stock moves, so it's very simple to search for the cause of a
-gap in the whole stock moves.
+operations are formalized in terms of stock moves, so it's very simple to search for the cause of any
+gaps in stock moves.
+
+.. todo:: - I don't think that this is the right direction, although it IS the way that Open ERP uses it
 
 .. note:: Upstream and downstream traceability
-
-.. todo:: - I don't think that this is the right direction
 
     **Upstream** traceability runs from the raw materials received from the supplier and follows the
     chain to the finished products delivered to customers.
@@ -31,26 +31,26 @@ or a production, or a source location, or any given destination.
 
 Each stock move is in a given state. The different possible states are:
 
-* Draft: the move has so far had no effect in the system. The transaction hasn't yet been confirmed,
+* ``Draft`` : the move has so far had no effect in the system. The transaction hasn't yet been confirmed,
 
-* Confirmed: the move will be done, so it will be counted in the calculations of virtual stock. But
+* ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
   you don't know whether it will be done without problem because the products have been reserved for
   the move,
 
-* Validated: the move will be done and the necessary raw material have been reserved for the
+* ``Validated`` : the move will be done and the necessary raw material have been reserved for the
   transaction,
 
-* Done: the stock move has been done, and entered into the calculations of real stock,
+* ``Done`` : the stock move has been done, and entered into the calculations of real stock,
 
-* Waiting: in the case of transactions 'From Order', this state shows that the stock move is blocked
+* ``Waiting`` : in the case of transactions 'From Order', this state shows that the stock move is blocked
   waiting for the end of another move,
 
-* Cancelled: the stock move wasn't carried out, so there's no account in either real stock or
+* ``Cancelled`` : the stock move wasn't carried out, so there's no account in either real stock or
   virtual stock.
 
-Delivery orders, goods receipts and internal picking lists are just documents that regroup a set of
+Delivery orders, goods receipts and internal picking lists are just documents that group a set of
 stock moves. You can also consult the history of these documents using the menu
-:menuselection:`Stock Management --> Traceability --> Low level --> Picking`.
+:menuselection:`Stock Management --> Traceability --> Low level --> Packing`.
 
 Lots
 ----
@@ -59,13 +59,13 @@ Open ERP is also capable of managing product lots. Two lot types can be distingu
 
 * Manufacturing lots (batch numbers) are represented by a unique product or an assembly of identical
   products leaving the same production. They are usually identified by bar codes stuck on the
-  products. The batch can be identied for your supplier or your company.
+  products. The batch can be identified for your supplier or your company.
 
 * Tracking numbers are logistical lots by which you can identify the container for a set of
   products. This corresponds, for example, to the pallet numbers on which several different products
   are stocked.
 
-These lots can be encoded on all stock moves and, more precisely, on goods-in lines, internal moves
+These lots can be encoded on all stock moves and, specifically, on goods-in lines, internal moves
 and product deliveries.
 
 .. figure:: images/picking_form_line.png
@@ -82,8 +82,8 @@ used several times for different products so you can mix different products on a
     In the simplified view the tracking numbers can't be seen.
     These fields are hidden when working in simplified view.
 
-On the product form it is also possible to indicate the operations in which a lot nubmer is
-required. You can then force the user to show the lot number for manufacturing operations, goods
+You can also specify on the product form the operations in which a lot number is
+required. You can then require the user to set a lot number for manufacturing operations, goods
 receipt, or customer packing.
 
 To assign a unique lot number to a set of several items you don't have to encode the lot number one
@@ -128,17 +128,17 @@ can see the form about this lot several actions are possible:
 
 * :guilabel:`Traceability downstream` : from customer to suppliers,
 
-* Stock spread amongst all the physical and virtual locations.
+* Stock in all the physical and virtual locations.
 
 .. figure:: images/stock_traceability_upstream.png
    :align: center
 
-   *Tracing upstream in 'From Order'*
+   *Tracing upstream in ``Make to Order`` *
 
 .. figure:: images/stock_traceability_downstream.png
    :align: center
 
-   *Tracing downstream in 'From Stock'*
+   *Tracing downstream in ``Make to Stock`` *
 
 Finally, on a lot, you can enter data on all the operations that have been done on the product. That
 forms a useful history of the presales operations.

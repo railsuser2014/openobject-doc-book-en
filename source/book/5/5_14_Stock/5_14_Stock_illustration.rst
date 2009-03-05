@@ -16,11 +16,6 @@ operations:
 .. index::
    pair: module; stock
 
-For this chapter you should start by installing the :mod:`stock` module (which also installs a few
-dependencies with it) into a new minimal database populated with Tiny's demonstration data. You
-don't need to choose any particular chart of accounts during configuration of the database, but you
-can if you want to.
-
 The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.
 
@@ -34,7 +29,7 @@ Partner Locations > Suppliers > Suppliers          -30 bicycles
 Physical Locations > Tiny SPRL > Stock             +30 bicycles
 ================================================== =============
 
-If you deliver 2 bicycles to a European customer you will get the following transastions for the
+If you deliver 2 bicycles to a European customer you will get the following transactions for the
 delivery:
 
 ================================================== =============
@@ -65,14 +60,14 @@ stock because that helps when you carry out detailed stock management analysis.
 
 .. note:: Accounts
 
-     In managing stock a gap between the data in the software and real quantities in stock is
+     In managing stock, a gap between the data in the software and real quantities in stock is
      difficult to avoid.
      Double-entry stock management gives twice as many opportunities to find an error.
      If you forget two items of stock this error will automatically be reflected in the
      counterpart's location.
 
 You can make a comparison with accounting, where you'll easily find an error because you can look
-for an anomaly in an account or in the counterparts: if there's not enough in a bank account that's
+for an anomaly in an account or in the counterparts: if there's not enough in a bank account then that's
 probably because someone's forgotten to enter a customer's invoice payment. You always know that the
 sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
 
@@ -110,7 +105,7 @@ Partner Locations > Customers > European Customers +2 bicycles
 Virtual Locations > Inventory Loss                 +2 bicycles
 ================================================== =============
 
-*Real and counterpart stocks when the operations have been carried out.*
+*Real and counterpart stocks when the operations have been carried out*
 
 This example shows one of the great advantages of this approach in terms of performance analysis.
 After a few months, you can just make a stock valuation of the location “Virtual Locations >
@@ -143,7 +138,6 @@ finished products.
     Stock valuation in any given location is calculated by multiplying quantities of products in
     stock by their cost.
     In this case the raw material value is deducted from the finished product value.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

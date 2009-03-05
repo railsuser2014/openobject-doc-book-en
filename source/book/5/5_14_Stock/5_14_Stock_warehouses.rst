@@ -13,14 +13,14 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Warehouses` 
 
 A warehouse is defined by a link between three locations:
 
-* The stock location shows the place of products available for delivery to a customer direct from
+* The :guilabel:`Location Stock` field shows the place of products available for delivery to a customer direct from
   this warehouse. Availability is given by all the products in that location and any child locations.
 
-* The entry location shows where ordered products are received from a supplier to that warehouse. It
+* The :guilabel:`Location Input` field shows where ordered products are received from a supplier to that warehouse. It
   can be the same as the stock location if, for example, you want to do a quality control operation on
   your incoming raw materials.
 
-* The outgoing location (called Output in the demonstration database) is designed as a buffer zone
+* The :guilabel:`Location Output` field (called ``Output`` in the demonstration database) is designed as a buffer zone
   in which you store all the items that have been picked but not yet delivered to a customer. You're
   strongly advised not to put this location within the stock hierarchy but instead at a level higher
   or the same.
@@ -63,8 +63,8 @@ Minimum stock rules
 To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use
 the menu :menuselection:`Stock Management --> Automatic Procurements --> Minimum Stock Rules`.
 
-The rule is the following: if the virtual stock for the given is lower than the minimum stock
-indicated in the rule, the system will automatically propose a replenishment to increase the level
+The rule is the following: if the virtual stock for the given location is lower than the minimum stock
+indicated in the rule, the system will automatically propose a procurement to increase the level
 of virtual stock to the maximum level given in the rule.
 
 .. figure:: images/stock_min_rule.png
@@ -79,7 +79,7 @@ of virtual stock to the maximum level given in the rule.
    supplier on a product).
 
    To check this, look at the list of procurements in the exception state in the menu
-   :menuselection:`Stock Management --> Automatic Procurements --> Procurement Exceptions`. More
+   :menuselection:`Stock Management --> Automatic Procurements --> Exceptions Procurements`. More
    detail on handling these exceptions is given in :ref:`ch-mnf`.
 
 It's important to underline that the rule is based on virtual quantities and not just on real
@@ -95,23 +95,23 @@ Take the following example:
 
 The rules defined are:
 
-Minimum stock: 13
+* Minimum stock: 13
 
-Maximum stock: 25.
+* Maximum stock: 25.
 
 Once the rules have been properly configured the purchasing manager only needs to look at the list
 of orders for confirmation with the supplier using the menu :menuselection:`Purchase Management -->
 Purchase Orders --> Requests for Quotation`.
 
-Note that the restocking doesn't require that you buy from a supplier. If the product has a
-restocking method of 'to manufacture' the scheduler will generate a production order and not a
+Note that the procurement doesn't require that you buy from a supplier. If the product has a
+:guilabel:`Supply method` of ``Produce`` the scheduler will generate a production order and not a
 supplier order.
 
 You can also set multiple quantities in the minimum stock rules. If you set a multiple quantity of 3
 the system will propose a restocking of 15 pieces not the 13 it really needs. In this case it
 automatically rounds the quantity upwards.
 
-In a minimum stock rule, when you indicate a warehouse it suggest a stock location by default in
+In a minimum stock rule, when you indicate a warehouse it suggests a stock location by default in
 that warehouse. You can change that location by default when the scheduler completes, by location
 and not by warehouse.
 

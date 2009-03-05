@@ -8,8 +8,7 @@ Logistics and Stock Management
  *Open ERP's stock management is at once very simple, flexible and complete.
  It's based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
- “everything moved”.
- In Open ERP you don't talk of disappearance, consumption or loss of products:
+ “everything moved”. In Open ERP you don't talk of disappearance, consumption or loss of products:
  instead you talk only of stock moves from one place to another.*
 
 Just as in accounting, the Open ERP system manages counterparts to each of its operations such as
@@ -62,6 +61,9 @@ installed.
     A warehouse can be structured into several locations at multiple levels.
     Locations are used to manage all types of storage place, such as at the customer and production
     counterparts.
+
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`stock` and its dependencies installed and no particular chart of accounts configured. 
 
 .. raw:: html
 
