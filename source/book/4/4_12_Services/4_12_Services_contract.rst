@@ -6,13 +6,13 @@ Managing Service Contracts
 ==========================
 
 Contracts can take different forms within Open ERP, depending on their nature. So you can have
-several distinct types of service contract, such as:
+several distinct types of services contract, such as:
 
-* fixed-price contracts
+* fixed-price contracts,
 
 * cost-reimbursement contracts, invoiced when services are completed,
 
-* fixed-price contracts, invoiced monthly as services are carried out
+* fixed-price contracts, invoiced monthly as services are carried out.
 
 .. tip:: Contract quotations
 
@@ -20,7 +20,7 @@ several distinct types of service contract, such as:
 	defined period.
 	In such a case the contract is represented by a pricelist for that specific customer.
 
-	The pricelist is linked in the Properties tab of the customer's Partner form,
+	The pricelist is linked in the :guilabel:`Properties` tab of the customer's :guilabel:`Partner` form,
 	so that it is brought up whenever anything is bought from or sold to this partner
 	(depending on whether it's a purchase or sales agreement).
 	Open ERP automatically selects the price based on this agreed pricelist.
@@ -31,7 +31,7 @@ Fixed Price contracts
 Fixed price contracts for the sale of services are represented in Open ERP by a Sales Order. In
 this case, the supply of services is managed just like all other stockable or consumable products.
 
-You can add new orders using the menu :menuselection:`Sales Management --> Sales Order`.
+You can add new orders using the menu :menuselection:`Sales Management --> Sales Orders --> New Quotation`.
 
 The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no
 accounting impact on the system until it's confirmed. When you approve the document, your estimate
@@ -51,13 +51,13 @@ Policy` on the order's second tab :guilabel:`Other data` :
 *  :guilabel:`Payment before delivery` : Open ERP creates an invoice in the \ ``Draft``\   state.
    Once this is confirmed and paid the delivery is activated.
 
-*  :guilabel:`Automatic Invoice after delivery` : the delivery order is produced when the order is
+*  :guilabel:`Invoice on Order After Delivery` : the delivery order is produced when the order is
    validated. A draft invoice is then created when the delivery has been completed.
 
 *  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of
    the order, and adds a button which you manually click when you're ready to create an invoice.
 
-*  :guilabel:`Invoice from the Packings`
+*  :guilabel:`Invoice from the Packing` : invoices are created from the packing stage.
 
 .. index:: Delivery
 
@@ -87,12 +87,13 @@ several times through the contract, for example:
 
 * 30% one month after the system has gone into production.
 
-In this case you should create several invoices for the one order. You've two options for this:
+In this case you should create several invoices for the one Sales Order. You've two options for this:
 
-* Don't handle invoicing automatically from the order but carry out manual invoicing instead,
+* Don't handle invoicing automatically from the Sales Order but carry out manual invoicing instead,
 
-* Create draft invoices and then link to them in the third tab  *History* , in the  *Related
-  Invoices*  section. When you create an invoice from the order, Open ERP deducts the amounts of the
+* Create draft invoices and then link to them in the third tab :guilabel:`History` of the
+  Sales Order, in the :guilabel:`Related
+  Invoices` section. When you create an invoice from the order, Open ERP deducts the amounts of the
   invoices already linked to the order to calculate the proposed invoice value.
 
 Cost-reimbursement contracts
@@ -105,7 +106,7 @@ carried out. That's usually what happens in the building sector or in large proj
    pair: module; hr_timesheet_invoice
 
 The approach you use for this is totally different because instead of using the sales order as the
-basis of the invoice you must use the analytic accounts. For this you have to install the module 
+basis of the invoice you use the analytic accounts. For this you have to install the module 
 :mod:`hr_timesheet_invoice`.
 
 An analytic account is created for each new contract. The following fields must be completed in this
@@ -130,16 +131,16 @@ services, purchase of raw materials, and expense reimbursements.
 	You can select a pricelist on the analytic account without having to use it to specify billing
 	rates.
 
-	Such a case would be for a client project that is to be invoiced only indirectly from the analytic
+	An example of this is a client project that is to be invoiced only indirectly from the analytic
 	costs.
 	Putting the price list on the analytic account makes it possible to compare the actual sales with
-	the best case where all the services would be invoiced.
+	a best case situation where all the services would be invoiced.
 	To get this comparison you have to print the analytic balance from the analytic account.
 
 Services are then entered onto timesheets by the various people who work on the project.
 Periodically the project manager or account manager uses the following menu to prepare an invoice
-:menuselection:`Financial Management --> Periodical Processing --> Invoicing on a Time basis -->
-Uninvoiced Hours`.
+:menuselection:`Financial Management --> Periodical Processing --> Entries to Invoice -->
+Uninvoiced Entries`.
 
 Open ERP then displays all of the costs that haven't yet been invoiced. You can filter the proposed
 list and click the appropriate action button to generate the corresponding invoices. You can select
@@ -155,16 +156,19 @@ the level of detail which is reported on the invoice, such as the date and detai
 
 .. note:: Project Management and analytic accounts
 
-	The menu :menuselection:`Project Management --> Analytic Accounts` is only available once you have
+	The menu :menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`
+	is only available once you have
 	installed the module :mod:`account_analytic_analysis`.
 	It provides various global financial and operational views of a project manager's projects.
+
+.. todo:: I can't find this button or the action below
 
 Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You'll
 find a list of costs that can be invoiced to the client:
 
 * time worked,
 
-* expense reimbursement,
+* expenses reimbursement,
 
 * purchase of raw materials.
 
@@ -186,17 +190,19 @@ the following:
 Such an approach is often used in a company but there are other options. This method of invoicing
 can pose many problems for the organization and invoicing of the project:
 
-* It's extremely difficult to determine if the project is on track or not.. The endpoint is fuzzy,
+* It's extremely difficult to determine if the project is on track or not. The endpoint is fuzzy,
   which can result in a tricky discussion with the client at the moment of final invoicing.
 
 * If the project takes more or less time than forecast, it will effectively result in under- or
-  over- invoicing during the project.
+  over-invoicing during the project.
 
 * Whether you get a proper return can depend on the client. For example if the client takes a long
   time to sign off on project acceptance you can't invoice the remaining 40% even though you might
   have supplied the agreed service properly.
 
-* The account manager and the project manager are often different people. The project manager has to
+* The account manager and the project manager are often different people (see the section :ref:`sect-projroles`
+  in the chapter :ref:`ch-projects`).
+  The project manager has to
   alert the account manager the moment that the client can be invoiced, but that moment easily can be
   forgotten or mistaken.
 
@@ -260,7 +266,6 @@ responsible for searching through the list of accounts showing negative remainin
 
 The client contract can be limited to a certain quantity of hours, and it can also be limited in
 time. For that, you set an end date for the corresponding analytic account.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

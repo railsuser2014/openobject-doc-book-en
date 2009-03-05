@@ -4,7 +4,7 @@
 The art of productivity without stress
 ======================================
 
-Now take a slight detour away from pure enterprise management by looking at some tools offered by
+Now you can take a slight detour away from pure enterprise management by looking at some tools offered by
 Open ERP to improve your own personal time management. It's not much of a detour because good
 organization is the key to better productivity in your daily work.
 
@@ -14,9 +14,8 @@ organization is the key to better productivity in your daily work.
 Open ERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
 time management:
 
-
 * Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often
-  referred to by its initials GTD (trademark registered since 2005). This book is built around the
+  referred to by its initials **GTD** (trademark registered since 2005). This book is built around the
   principle that people should clearly write down all their outstanding tasks and store the details
   about these tasks in a trustworthy system.
 
@@ -24,7 +23,7 @@ time management:
   quite sure that it's recorded safely, they can allow themselves to relax and so have the energy
   and time to concentrate on handling the tasks themselves systematically.
 
-.. attention:: Managing time efficiently
+  .. note:: Managing time efficiently
 
      David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN :
      978-0142000281). Also see the site: http://davidco.com
@@ -32,20 +31,20 @@ time management:
 	 Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary
 	 Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 
-.. tip:: De-stress yourself !
+  .. tip:: De-stress yourself !
 
-	Clear the tasks that clutter your thoughts by registering them in an organized system.
-	This immediately helps you to de-stress yourself and organize your work in the best possible way.
+	 Clear the tasks that clutter your thoughts by registering them in an organized system.
+	 This immediately helps you to de-stress yourself and organize your work in the best possible way.
 
-	If you feel stressed by too much work, do the following exercise to convince yourself about the
-	benefits.
-	Take some sheets of blank paper and write down everything that passes through your head about the
-	things you need to do.
-	For each task, note the next action to do on an adjacent line, and rank it by the date that you'll
-	commit yourself to doing it.
+	 If you feel stressed by too much work, do the following exercise to convince yourself about the
+	 benefits.
+	 Take some sheets of blank paper and write down everything that passes through your head about the
+	 things you need to do.
+	 For each task, note the next action to do on an adjacent line, and rank it by the date that you'll
+	 commit yourself to doing it.
 
-	At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably
-	free of worries !
+	 At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably
+	 free of worries !
 
 * The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises
   organizations on the use of these practices, and reports on the productivity improvements in the
@@ -57,7 +56,7 @@ tools provided by Open ERP's :mod:`project_gtd` module.
 Not everything that is urgent is necessarily important
 ------------------------------------------------------
 
-The first modification brought to the basic Open ERP system by the module is a separation of the
+The first modification brought by the module to the basic Open ERP system is a separation of the
 concepts of urgency and importance. Tasks are no longer classified by a single criterion but by the
 product of the two criteria, enabling you to prioritize matters that are both urgent and important
 in a single list
@@ -94,16 +93,16 @@ The context is determined by the work environment you must be in to deal with ce
 example you could define the following contexts:
 
 *  *Office* : for tasks which have to be dealt with at your workplace (such as telephone a customer,
-   or write a document).
+   or write a document),
 
-*  *House* : for tasks which have to happen at your private address (such as finding a cleaning
+*  *Car* : for tasks that you need to do on the move (such as going shopping, or going to
+   the post office),
+
+*  *Travel* : for tasks that you can handle on the plane or in the train while you're doing
+   travelling on business (tasks such as writing an article, or analyzing a new product),
+
+*  *Home* : for tasks which have to happen at your private address (such as finding a cleaning
    contractor, or mowing the lawn).
-
-*  *On the move* : for tasks that you need to do on the move (such as going shopping, or going to
-   the post office).
-
-*  *Traveling* : for tasks that you can handle on the plane or in the train while you're doing
-   traveling on business (tasks such as writing an article, or analyzing a new product).
 
 An employee / system user can create his or her own contexts using the menu :menuselection:`Project
 Management --> Configuration --> Time Management --> Contexts`.
@@ -114,11 +113,11 @@ Timebox
 You then have to define the timeboxes. You have to complete the tasks in the time interval specified
 by a timebox. You usually define timeboxes with the following periods:
 
-*  *Day* : for tasks which must be handled today,
+*  *Daily* : for tasks which must be handled today,
 
-*  *Week* : for tasks that have to be dealt with this week,
+*  *Weekly* : for tasks that have to be dealt with this week,
 
-*  *Month* : for tasks which have to be completed within the month,
+*  *Monthly* : for tasks which have to be completed within the month,
 
 *  *Long term* : for tasks that can be dealt with in more than one month.
 
@@ -141,7 +140,7 @@ iterative process:
 
 	#. Identify all the tasks that you have to deal with, including everything that keeps you awake at
 	   night, and enter them in your Inbox, which you'll find in the menu :menuselection:`Project
-	   Management --> Time Management --> Inbox`.
+	   Management --> Time Management --> My Inbox`.
 
 	#. Classify the tasks in your Inbox periodically, assigning them a context and a timebox. This
 	   indicates both when and where the task should be handled. If a task takes less than 10 minutes then
@@ -164,7 +163,7 @@ iterative process:
 .. index:: Agenda
 .. index:: Timebox
 
-.. tip:: Don't confuse **Agenda** and **timebox**
+.. tip:: Don't confuse **Agenda** and **Timebox**
 
 	The idea of timebox is independent from that of an agenda.
 	Certain tasks, such as meetings, must be done on a precise date.
@@ -233,7 +232,7 @@ Shortcuts to the right of the timebox help you use the system efficiently with:
 Some convincing results
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-After a few days of carefully practicing this method, users have reported the following
+After a few days of carefully practising this method, users have reported the following
 improvements:
 
 * a reduction in the number of tasks and objectives that were forgotten,

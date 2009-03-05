@@ -9,6 +9,11 @@ The Management of Services
  The complete process of managing services is studied here: from defining prices and contracts to
  automatically invoicing the services, through planning and the treatment of
  additional costs such as expense receipts.*
+ 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale`, :mod:`project` and all of their dependencies installed, and 
+no particular chart of accounts configured. 
+ 
 
 .. raw:: html
 

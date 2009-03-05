@@ -80,7 +80,7 @@ In this time-focused planning approach, clients' priorities don't feature in the
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
-	.. note::  *Example Comparing the two planning methods*
+	.. note:: Comparing the two planning methods
 
 			To illustrate the difference between planning by time and planning by task, take the case of an
 			IT project that's estimated to be around six months of work. This project is managed by iterative
@@ -90,8 +90,11 @@ resources on projects from the task prioritization within a project.
 			the client for the work done on the project.
 
 			Suppose that the project encounters a delay because it is more complex than expected. There are
-			two ways of resolving the delay if you have no further resources: you can be late in your
-			delivery of the planned functions or on time, but with fewer functions than planned.
+			two ways of resolving the delay if you have no further resources: you can be
+			
+			* late in your delivery of the planned functions, or 
+			
+			* on time, but with fewer functions than planned.
 
 			If your planning is based on phases and tasks you'll report at the client meeting that it will
 			take several weeks to complete everything that was planned for the current phase. Conversely, if
@@ -104,8 +107,9 @@ resources on projects from the task prioritization within a project.
 			any work that has been completed late but hasn't yet been shown to the client.
 
 			The second approach will require you to report on the functions that haven't been completed, and
-			on how they would fit into a future planning phase. However that won't involve a break in the
-			working time allocated to the project. You'd then generate two different lists: a staffing plan
+			on how they would fit into a future planning phase. That won't involve a break in the
+			working time allocated to the project, however. 
+			You'd then generate two different lists: a staffing plan
 			for the different projects, and the list of tasks prioritized for the client's project. This
 			approach offers a number of advantages over the first one:
 
@@ -131,26 +135,26 @@ resources on projects from the task prioritization within a project.
 Creating plans
 --------------
 
-.. todo:: What's this line for?
-
-\ ``report_analytic_planning``\ :menuselection:`Human Resources --> Planning --> Planning`.
+Install the module :mod:`report_analytic_planning` to get additional functions
+that help with both planning and reporting on projects. Start a plan by using the
+menu :menuselection:`Human Resources --> Planning --> New Planning`.
 
 On each planning line you should enter the user, the analytic account concerned, and the quantity of
 time allocated. The quantity will be expressed in hours or in days depending on the unit of measure
 used. For each line you can add a brief note about the work to be done.
 
 Once the plan has been saved, use the other tabs of the planning form to check that the amount of
-time allocated to the employees or to the projects is right. The time allocated must correspond to
-the employees' employment contract, for example 37.5 hours per week. The forecast time for the
-project must match the commitments that you've made with client.
+time allocated to the employees or to the projects is right. The time allocated should match
+the employees' employment contracts, for example 37.5 hours per week. The forecast time for the
+project should also match the commitments that you've made with client.
 
 You should ideally complete all the planning for the current period. You can also complete some
 lines in the planning of future months – reserving resources on different project in response to
-your client commitments, for example This enables you to manage your available human resources for
+your client commitments, for example. This enables you to manage your available human resources for
 the months ahead.
 
-Using planning well
--------------------
+Good planning
+-------------
 
 .. index::
    pair: module; board_project
@@ -173,7 +177,7 @@ the real time worked.
 
    *Comparison of planned hours, worked hours and the productivity of employees by project*
 
-You can also study several of your project's figures from the menu :menuselection:`Human Resources
+You can also study several of your project's figures from the menus in :menuselection:`Human Resources
 --> Reporting --> Planning`.
 
 Planning at all levels of the hierarchy
@@ -183,7 +187,7 @@ Planning at all levels of the hierarchy
    pair: module; report_analytic_planning_delegate
 
 To put planning in place across the whole company you can use a system of planning delegation. For
-this, install the module :mod:`report_analytic_planning_delegate`.
+this, install the module :mod:`report_analytic_planning_delegate` from the addons-extra directory.
 
 When you've installed this module, the planning entry form changes to reflect the hierarchical
 structure of the company. To enter data into a plan line you can:
