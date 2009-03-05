@@ -133,12 +133,12 @@ can see the form about this lot several actions are possible:
 .. figure:: images/stock_traceability_upstream.png
    :align: center
 
-   *Tracing upstream in ``Make to Order`` *
+   *Tracing upstream in Make to Order*
 
 .. figure:: images/stock_traceability_downstream.png
    :align: center
 
-   *Tracing downstream in ``Make to Stock`` *
+   *Tracing downstream in Make to Stock*
 
 Finally, on a lot, you can enter data on all the operations that have been done on the product. That
 forms a useful history of the presales operations.

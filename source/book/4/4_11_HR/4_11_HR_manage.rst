@@ -85,7 +85,7 @@ form with the following information:
 Management of employment contracts
 ----------------------------------
 
-If you install the :mod:``hr_contract` module you can link contract details to the employee record.
+If you install the :mod:`hr_contract` module you can link contract details to the employee record.
 
 .. figure::  images/service_hr_contract.png
    :align: center
