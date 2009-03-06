@@ -146,7 +146,8 @@ You can now move on to editing the views. To do this, edit the custom_view.xml f
                 <record model="res.groups" id="group_compta_admin">
                         <field name="name">grcomptaadmin</field>
                 </record>
-                <menuitem name="Administration" groups="admin,grcomptaadmin" icon="terp-stock" id="menu_admin_compta"/>
+                <menuitem name="Administration" groups="admin,grcomptaadmin" 
+		icon="terp-stock" id="menu_admin_compta"/>
         </data>
         </openerp>
 

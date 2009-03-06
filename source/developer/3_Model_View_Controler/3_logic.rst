@@ -102,7 +102,8 @@ Example:
                 def _constraint_sum(self, cr, uid, ids):
                         cr.execute('SELECT a.currency_id 
                                     FROM account_move m, account_move_line l, account_account a 
-                                    WHERE m.id=l.move_id AND l.account_id=a.id AND m.id IN ('+','.join(map(str, ids))+') 
+                                    WHERE m.id=l.move_id AND l.account_id=a.id AND m.id 
+                                    IN ('+','.join(map(str, ids))+') 
                                     GROUP BY a.currency_id')
                         if len(cr.fetchall())>=2:
                             return True
@@ -144,13 +145,15 @@ A context dictionary is declared in a field of a view using the following syntax
 
 .. code-block:: xml
 
-        <field name="field_name" context="field_1_name=field_1_value, field_2_name=field_2_value, ..., field_n_name=field_n_value"/>
+        <field name="field_name" context="field_1_name=field_1_value, 
+                     field_2_name=field_2_value, ..., field_n_name=field_n_value"/>
 
 A context dictionary is declared in an action using the following syntax :
 
 .. code-block:: xml
 
-        <field name="context">{'field_1_name':'field_1_value', 'field_2_name':'field_2_value', ..., 'field_n_name':'field_n_value'} </field>
+        <field name="context">{'field_1_name':'field_1_value', 
+                               'field_2_name':'field_2_value', ..., 'field_n_name':'field_n_value'} </field>
 
 Examples The file server/bin/addons/stock/stock_view.xml declares context dictionaries in fields and in actions.
 
@@ -164,9 +167,11 @@ Examples The file server/bin/addons/stock/stock_view.xml declares context dictio
                             <field name="type">form</field>
                             <field name="arch" type="xml">
                             <form string="Stock Inventory Lines">
-                                 <field name="location_id" colspan="3" select="1" domain="[('usage','=','internal')]"/>
+                                 <field name="location_id" colspan="3" select="1" 
+                                        domain="[('usage','=','internal')]"/>
                                  <field name="product_id" select="1"  
-                                      on_change="on_change_product_id(location_id,product_id,product_uom)"
+                                      on_change="on_change_product_id
+                                                 (location_id,product_id,product_uom)"
                                       context="location=location_id,uom=product_uom"/>
                                  <field name="product_uom"/>
                                  <field name="product_qty"/>
@@ -273,7 +278,8 @@ List of fields resources values.
 
 Example::
 
-        values = pooler.get_pool(cr.dbname).get('res.partner').read(cr, uid, ids, ['name','category_id'], context=context)
+        values = pooler.get_pool(cr.dbname).get('res.partner').
+                    read(cr, uid, ids, ['name','category_id'], context=context)
 
 .. describe:: browse
 
@@ -486,8 +492,11 @@ In membership module [product.product]::
 
     def fields_view_get(self, cr, user, view_id=None, view_type='form', context=None, toolbar=False):
         if ('product' in context) and (context['product']=='membership_product'):
-            model_data_ids_form = self.pool.get('ir.model.data').search(cr,user,[('model','=','ir.ui.view'),('name','in',['membership_products_form','membership_products_tree'])])
-            resource_id_form = self.pool.get('ir.model.data').read(cr,user,model_data_ids_form,fields=['res_id','name'])
+            model_data_ids_form = self.pool.get('ir.model.data').
+                                    search(cr,user,[('model','=','ir.ui.view'),('name','in',
+                                        ['membership_products_form','membership_products_tree'])])
+            resource_id_form = self.pool.get('ir.model.data').
+                                read(cr,user,model_data_ids_form,fields=['res_id','name'])
             dict_model={}
             for i in resource_id_form:
                 dict_model[i['name']]=i['res_id']

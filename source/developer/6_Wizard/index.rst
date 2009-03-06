@@ -131,7 +131,10 @@ The fields description is similar to the fields described in the python ORM obje
 	      'credit': {'string':'Credit amount', 'type':'float', 'readonly':True},
 	      'debit': {'string':'Debit amount', 'type':'float', 'readonly':True},
 	      'writeoff': {'string':'Write-Off amount', 'type':'float', 'readonly':True},
-	      'writeoff_acc_id': {'string':'Write-Off account', 'type':'many2one', 'relation':'account.account'},
+	      'writeoff_acc_id': {'string':'Write-Off account', 
+                                   'type':'many2one', 
+                                   'relation':'account.account'
+                                 },
 	}
 
 Each step/state of a wizard can have several buttons. Those are located on the bottom right of the dialog box. The list of buttons for each step of the wizard is declared in the state key of its result dictionary.
@@ -295,12 +298,18 @@ Here is an example of the account_wizard.xml file;
 	<terp>
 	    <data>
 		<delete model="ir.actions.wizard" search="[('wiz_name','like','account.')]" />
-		<wizard string="Reconcile Transactions" model="account.move.line" name="account.move.line.reconcile" />
-		<wizard string="Verify Transac steptions" model="account.move.line" name="account.move.line.check" keyword="tree_but_action" /> 
-		<wizard string="Verify Transactions" model="account.move.line"  name="account.move.line.check" />
-		<wizard string="Print Journal" model="account.account" name="account.journal" />
-		<wizard string="Split Invoice" model="account.invoice" name="account.invoice.split" />
-		<wizard string="Refund Invoice" model="account.invoice" name="account.invoice.refund" />
+		<wizard string="Reconcile Transactions" model="account.move.line" 
+                        name="account.move.line.reconcile" />
+		<wizard string="Verify Transac steptions" model="account.move.line" 
+                        name="account.move.line.check" keyword="tree_but_action" /> 
+		<wizard string="Verify Transactions" model="account.move.line"  
+                        name="account.move.line.check" />
+		<wizard string="Print Journal" model="account.account" 
+                        name="account.journal" />
+		<wizard string="Split Invoice" model="account.invoice" 
+                        name="account.invoice.split" />
+		<wizard string="Refund Invoice" model="account.invoice" 
+                        name="account.invoice.refund" />
 	    </data>
 	</terp>
 
@@ -373,7 +382,8 @@ Example : In project.py file.
 	    def compute_hours(self, cr, uid, ids, context=None):
 		if 'active_id' in context:
 		    remaining_hrs=self.browse(cr,uid,ids)[0].remaining_hours
-		    self.pool.get('project.task').write(cr,uid,context['active_id'],{'remaining_hours' : remaining_hrs})
+		    self.pool.get('project.task').write(cr,uid,context['active_id'],
+                                                         {'remaining_hours' : remaining_hrs})
 		return {
 		        'type': 'ir.actions.act_window_close',
 		 }

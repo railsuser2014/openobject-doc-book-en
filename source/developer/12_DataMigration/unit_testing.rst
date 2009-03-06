@@ -58,7 +58,9 @@ For more complex tests it is not always sufficient to compare a result to a stri
 
 .. code-block:: xml
 	
-	<assert model="res.company" id="main_company" string="The main company's currency is €" : severity="warning">
+	<assert model="res.company" 
+                id="main_company" 
+                string="The main company's currency is €" : severity="warning">
 	    <test expr="currency_id.code == 'eur'.upper()"/>
 	</assert>
 
@@ -68,7 +70,9 @@ As sometimes you do not know the id a priori, that attribute can be substituted 
 
 .. code-block:: xml
 	
-	<assert model="res.partner" search="[('name','=','Agrolait')]" string="The name of Agrolait is :Agrolait">
+	<assert model="res.partner" 
+                search="[('name','=','Agrolait')]" 
+                string="The name of Agrolait is :Agrolait">
 	    <test expr="name">Agrolait</test>
 	</assert>
 
@@ -76,7 +80,9 @@ When you use the search, each resulting record is tested but the assertion is co
 
 .. code-block:: xml
 	
-	<assert model="res.partner" search="[('name','=','Agrolait')]" string="The name of Agrolait is :Agrolait" count="1">
+	<assert model="res.partner" 
+                search="[('name','=','Agrolait')]" 
+                string="The name of Agrolait is :Agrolait" count="1">
 	    <test expr="name">Agrolait</test>
 	</assert>
 
@@ -87,7 +93,9 @@ Require the version of a module.
 .. code-block:: xml
 	
 	<!-- modules requirement -->
-	<assert model="ir.module.module" search="[('name','=','common')]" severity="critical" count="1">
+	<assert model="ir.module.module" 
+                search="[('name','=','common')]" 
+                severity="critical" count="1">
 	    <test expr="state == 'installed'" />
 	    <!-- only check module version -->
 	    <test expr="'.'.join(installed_version.split('.')[3:]) >= '2.4'" />
