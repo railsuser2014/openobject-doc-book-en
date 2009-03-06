@@ -17,6 +17,7 @@ Installation and Configuration
  some demonstration data to test the installation.*
  
 .. figure:: images/ch1_outline.png
+   :scale: 50
    :align: center
 
    *Options for reading this part of the book*

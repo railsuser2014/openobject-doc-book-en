@@ -41,6 +41,7 @@ To define a new employee in Open ERP, use the menu :menuselection:`Human Resour
 --> New Employee`.
 
 .. figure::  images/service_employee_form.png
+   :scale: 50
    :align: center
 
    *Form describing an employee*
@@ -88,6 +89,7 @@ Management of employment contracts
 If you install the :mod:`hr_contract` module you can link contract details to the employee record.
 
 .. figure::  images/service_hr_contract.png
+   :scale: 50
    :align: center
 
    *Definition of a working contract for a given employee*

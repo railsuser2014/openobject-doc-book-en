@@ -65,6 +65,7 @@ Start the database creation process from the :guilabel:`Welcome` page by clickin
 .. _fig-oech03:
 
 .. figure::  images/openerp_ch03.png
+   :scale: 50
    :align: center
 
    *Creating a blank database*
@@ -74,6 +75,7 @@ Then click :guilabel:`OK` to create the database and move to the setup screen :r
 .. _fig-oech03s1:
 
 .. figure::  images/openerp_ch03_s1.png
+   :scale: 50
    :align: center
 
    *Setting up a blank database - first screen*
@@ -101,6 +103,7 @@ at the moment, starting with the menu layout :ref:`fig-oech03cfg` .
 .. _fig-oech03cfg:
 
 .. figure::  images/openerp_ch03_config.png
+   :scale: 50
    :align: center
 
    *Configuring a minimal database - first screen*
@@ -117,6 +120,7 @@ at the moment, starting with the menu layout :ref:`fig-oech03cfg` .
 .. _fig-oech03st:
 
 .. figure::  images/openerp_ch03_start.png
+   :scale: 50
    :align: center
 
    *Starting the minimal database*
@@ -209,6 +213,7 @@ Configuration is required for both the accounts setup and the sales defaults.
 .. _fig-oech03cfss:
 
 .. figure:: images/openerp_ch03_setsales.png
+   :scale: 50
    :align: center
 
    *The module form once a module is installed*
@@ -216,6 +221,7 @@ Configuration is required for both the accounts setup and the sales defaults.
 .. _fig-oech03mm:
 
 .. figure:: images/openerp_ch03_main.png
+   :scale: 50
    :align: center
 
    *Continuing with the database after installing new modules*

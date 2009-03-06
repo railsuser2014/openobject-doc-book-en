@@ -31,6 +31,7 @@ detailed entries for the selected accounts. It enables you to make a detailed an
 out on one or several projects.
 
 .. figure::  images/analytic_cost_ledger.png
+   :scale: 50
    :align: center
 
    *The analytic cost ledger gives a detailed history of the entries in an analytic account*
@@ -42,6 +43,7 @@ This report gives the detail of entries for an analytic account and a list of se
 Only quantities are reported for this analysis, not costs and revenues.
 
 .. figure::  images/analytic_cost_ledger_quantity.png
+   :scale: 50
    :align: center
 
    *The cost ledger (quantities only) gives a history of an analytic account*
@@ -72,6 +74,7 @@ analytic accounts. This report shows the balances of the general accounts
 broken down by the selected analytic accounts for a selected period.
 
 .. figure::  images/analytic_balance_inverse.png
+   :scale: 50
    :align: center
 
    *The inverted analytic balance indicates the breakdown of operations by the nature of the
@@ -85,6 +88,7 @@ Analytic Balance
 ^^^^^^^^^^^^^^^^
 
 .. figure::  images/analytic_balance.png
+   :scale: 50
    :align: center
 
    *The analytic balance presents the breakdown of each project by the nature of the operations
@@ -131,6 +135,7 @@ form:
 .. _fig-mgtindic:
 
 .. figure::  images/account_analytic_analysis.png
+   :scale: 50
    :align: center
 
    *Management indicators for an analytic account*
@@ -148,6 +153,7 @@ These indicators enable you to quickly see such important information as:
 * the different margin figures.
 
 .. figure::  images/account_analytic_analysis_month.png
+   :scale: 50
    :align: center
 
    *Breakdown of monthly costs for an analytic account*
@@ -165,6 +171,7 @@ To give project managers a direct view of their different projects, the
 :menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
+   :scale: 50
    :align: center
 
    *Analytic accounts in Project Management*

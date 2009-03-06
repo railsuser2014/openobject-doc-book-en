@@ -20,6 +20,7 @@ assigned for the day.
 .. _fig-servtimlis:
 
 .. figure::  images/service_timesheet_list.png
+   :scale: 50
    :align: center
 
    *Timesheet for a working day*
@@ -59,6 +60,7 @@ The different timesheet categories (working time sessions) can be defined in the
 one of the groups there such as :guilabel:`38 Hours/Week`.
 
 .. figure::  images/service_timesheet_def.png
+   :scale: 50
    :align: center
 
    *Timesheet category for full time 38 hours per week*
@@ -207,6 +209,7 @@ Reporting --> Timesheet --> Employees timesheet`. This helps you spot when an em
 forgotten to enter her timesheet details on a certain day.
 
 .. figure::  images/service_timesheet_all.png
+   :scale: 50
    :align: center
 
    *Employees' monthly summary timesheet*
@@ -225,6 +228,7 @@ Some new graphs become available through the menus
 *  :guilabel:`Timesheet by Account`
 
 .. figure::  images/service_timesheet_graph.png
+   :scale: 50
    :align: center
 
    *Chart of timesheet by account*
@@ -346,6 +350,7 @@ encoding. To set up a structure for control using timesheets you should install 
 :mod:`hr_timesheet_sheet`.
 
 .. figure::  images/timesheet_flow.png
+   :scale: 50
    :align: center
 
    *Process of approving a timesheet*
@@ -359,6 +364,7 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 --> My Timesheets --> My Current Timesheet`.
 
 .. figure::  images/service_timesheet_sheet_form.png
+   :scale: 50
    :align: center
 
    *Form for entering timesheet data*
@@ -377,6 +383,7 @@ projects. When there's a gap between the attendance and the timesheet entries, y
 second tab to detect the days or the entries that haven't been correctly coded in.
 
 .. figure::  images/timesheet_sheet_hours.png
+   :scale: 50
    :align: center
 
    *Detail of hours worked by day for an employee*

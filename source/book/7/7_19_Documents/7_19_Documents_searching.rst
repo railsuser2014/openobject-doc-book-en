@@ -68,6 +68,7 @@ Using Outlook and Thunderbird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure::  images/document_attachment_outlook.png
+   :scale: 50
    :align: center
 
    *Sending an attachment that's in the document management system from Outlook*
@@ -88,6 +89,7 @@ The first lets you track the change of documents by month, by customer and by ty
 could also quickly assess the use that's made of the system by the various users.
 
 .. figure::  images/document_board1.png
+   :scale: 50
    :align: center
 
    *Dashboard for the document management system manager*
@@ -98,6 +100,7 @@ management system the least. That will enable you to know who has been well-trai
 necessary to do something about changing work methods.
 
 .. figure::  images/document_board2.png
+   :scale: 50
    :align: center
 
    *Dashboard for the document management system amalyzed by user*
@@ -118,6 +121,7 @@ activate that functionality on another type of report, modify this in the menu
 :menuselection:`Administration --> Configuration --> Low Level --> Actions --> XML Reports`.
 
 .. figure::  images/document_report_modif.png
+   :scale: 50
    :align: center
 
    *Modifying the definition of a report*
@@ -137,6 +141,7 @@ get all the documents that might be useful for this phase of the process.
 So you could also efficiently store the documents required for each phase of a process.
 
 .. figure::  images/document_process.png
+   :scale: 50
    :align: center
 
    *Example of a document linked to process management*

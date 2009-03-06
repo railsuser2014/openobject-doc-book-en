@@ -38,6 +38,7 @@ accounting impact on the system until it's confirmed. When you approve the docum
 moves into the state \ ``In Progress``\  .
 
 .. figure::  images/service_sale_workflow.png
+   :scale: 50
    :align: center
 
    *Process for handling a Sales Order*
@@ -147,6 +148,7 @@ list and click the appropriate action button to generate the corresponding invoi
 the level of detail which is reported on the invoice, such as the date and details of the services.
 
 .. figure::  images/service_timesheet_invoice.png
+   :scale: 50
    :align: center
 
    *Screen for invoicing services*

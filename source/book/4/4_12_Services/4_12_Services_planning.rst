@@ -69,6 +69,7 @@ will do next, based on the plans and the relative priorities of the tasks.
 .. _fig-srvplantime:
 
 .. figure::  images/service_planning_time.png
+   :scale: 50
    :align: center
 
    *Monthly planning for work time of each employee*
@@ -173,6 +174,7 @@ that of the initial estimate. Print the plan to obtain a comparison of the plann
 the real time worked.
 
 .. figure::  images/planning_stat.png
+   :scale: 50
    :align: center
 
    *Comparison of planned hours, worked hours and the productivity of employees by project*

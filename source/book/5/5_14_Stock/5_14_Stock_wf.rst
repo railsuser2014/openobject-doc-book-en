@@ -31,6 +31,7 @@ Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` 
 product.
 
 .. figure:: images/stock_product.png
+   :scale: 50
    :align: center
 
    *Definition of a new product*
@@ -86,6 +87,7 @@ available from the product form.
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as :guilabel:`Make to Stock`*
@@ -93,6 +95,7 @@ available from the product form.
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as :guilabel:`Make to Order`*
@@ -129,6 +132,7 @@ The following illustrates different cases for automatic restocking.
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
+   :scale: 50
    :align: center
 
    *Workflow for automatic restocking, depending on the configuration of the product*

@@ -30,6 +30,7 @@ reported on the partner form of the associated customer. To see this, open the e
 open the partner form.
 
 .. figure:: images/crm_partner_event.png
+   :scale: 50
    :align: center
 
    *History of events in a partner form*
@@ -54,11 +55,13 @@ You can use the monthly, weekly or daily views to plan a meeting. To move betwee
 another use the buttons above and to the right of the calendar.
 
 .. figure:: images/crm_calendar_month.png
+   :scale: 50
    :align: center
 
    *Meetings calendar in monthly view*
 
 .. figure:: images/crm_calendar_week.png
+   :scale: 50
    :align: center
 
    *Meetings calendar in weekly view*
@@ -73,6 +76,7 @@ weekly and daily views you can also press the mouse left button on the calendar 
 along to create an event of several hours. Open ERP then opens an entry screen for a new meeting.
 
 .. figure:: images/crm_meeting_form.png
+   :scale: 50
    :align: center
 
    *Entering a new meeting*

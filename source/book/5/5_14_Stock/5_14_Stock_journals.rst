@@ -64,6 +64,7 @@ installing the module :mod:`sale_journal` look at the list of partners. In the t
 Purchases` on any of them you'll now see the field :guilabel:`Invoicing Method`.
 
 .. figure:: images/partner_property_view.png
+   :scale: 50
    :align: center
 
    *Partner form in invoicing mode*
@@ -73,6 +74,7 @@ should be grouped or not after you have generated them in the journal. Create a 
 ``End-of-Month Invoicing`` which you can assign to another partner.
 
 .. figure:: images/invoice_mode.png
+   :scale: 50
    :align: center
 
    *Defining an invoicing journal*
@@ -104,6 +106,7 @@ You can also enter a journal to confirm / cancel all the orders in one go. Then 
 quotations and assign them in a journal and confirm or cancel them en masse at once.
 
 .. figure:: images/stock_jounral_form.png
+   :scale: 50
    :align: center
 
    *View of an order journal*

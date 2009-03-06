@@ -45,6 +45,7 @@ To enter a lead manually use the menu :menuselection:`CRM & SRM --> Sales --> Le
 form opens to let you enter data about this new contact.
 
 .. figure:: images/crm_lead_new.png
+   :scale: 50
    :align: center
 
    *Creating a new lead*
@@ -75,6 +76,7 @@ the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a fo
 data.
 
 .. figure:: images/crm_lead_import.png
+   :scale: 50
    :align: center
 
    *Importing leads into the system*
@@ -124,6 +126,7 @@ system that can be used depending on the needs of each:
   This menu as those beneath it are used by managers to check on each person's work.
 
 .. figure:: images/crm_leads_list.png
+   :scale: 50
    :align: center
 
    *List of leads to be handled*
@@ -156,6 +159,7 @@ opens a window asking the title of the opportunity, the estimated revenue and th
 of converting to a sale.
 
 .. figure:: images/crm_lead_convert.png
+   :scale: 50
    :align: center
 
    *Converting a lead into a sales opportunity*

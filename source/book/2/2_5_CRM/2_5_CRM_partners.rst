@@ -66,6 +66,7 @@ Partners` (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``op
 only the data that you've put into it - both can show the principles).
 
 .. figure::  images/crm_partner.png
+   :scale: 50
    :align: center
 
    *A partner form*
@@ -131,6 +132,7 @@ Open ERP uses hierarchical categories to organize all of its partners. To reach
 available partner categories, use the menu :menuselection:`Partners --> Partners by Category`.
 
 .. figure::  images/crm_partner_category_big.png
+   :scale: 50
    :align: center
 
    *Example Partner Category structure*

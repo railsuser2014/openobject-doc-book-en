@@ -47,6 +47,7 @@ that's important to you.
 
 
 .. figure::  images/csv_column_select.png
+   :scale: 50
    :align: center
 
    *Selecting fields to import using a CSV file*
@@ -83,18 +84,21 @@ Have a look at the screenshots below to see the differences.
 
 
 .. figure::  images/csv_many2one.png
+   :scale: 50
    :align: center
 
    *A many-to-one field: a salesperson linked to a partner*
 
 
 .. figure::  images/csv_many2many.png
+   :scale: 50
    :align: center
 
    *A many-to-many field: partner categories*
 
 
 .. figure::  images/csv_one2many.png
+   :scale: 50
    :align: center
 
    *A one-to-many field: partner contacts*

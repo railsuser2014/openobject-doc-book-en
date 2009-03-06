@@ -105,6 +105,7 @@ leave it unassigned so that nobody specific will be responsible: various team me
 made jointly responsible for taking on tasks that they have the skills for.
 
 .. figure::  images/service_task.png
+   :scale: 50
    :align: center
 
    *Tasks in project management*
@@ -232,6 +233,7 @@ project.
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
+   :scale: 50
    :align: center
 
    *Gantt plan, calculated for earliest delivery*
@@ -248,6 +250,7 @@ calculates a project plan for earliest delivery using task ordering and the atte
 	You can then delete, create or modify tasks using simple drag and drop.
 
 	.. figure::  images/service_task_calendar.png
+	   :scale: 50
 	   :align: center
 
        *Calendar view of the system tasks*
@@ -262,6 +265,7 @@ the system doesn't help you track tasks that you've delegated, such as monitorin
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
+   :scale: 50
    :align: center
 
    *Form for delegating a task to another user*

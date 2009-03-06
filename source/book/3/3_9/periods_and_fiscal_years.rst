@@ -24,6 +24,7 @@ To define your fiscal year use the menu :menuselection:`Financial Management -->
 Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
 .. figure::  images/account_period.png
+   :scale: 50
    :align: center
 
    *Defining a financial year and periods*
@@ -49,6 +50,7 @@ isn't obligatory and you could easily do that sometime in the following year whe
 finally sent to the statutory authorities, and no further modifications are permitted.
 
 .. figure::  images/account_fy_close.png
+   :scale: 50
    :align: center
 
    *Closing a financial year*

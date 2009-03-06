@@ -43,6 +43,7 @@ Management --> Modules --> Uninstalled modules`. After installing the module the
 configure the document management system.
 
 .. figure::  images/document_config.png
+   :scale: 50
    :align: center
 
    *Screen for configuring document management*
@@ -51,6 +52,7 @@ Once the module has been installed you'll see a new entry in the main menu calle
 Management`.
 
 .. figure::  images/document_menu.png
+   :scale: 50
    :align: center
 
    *The document management menu*

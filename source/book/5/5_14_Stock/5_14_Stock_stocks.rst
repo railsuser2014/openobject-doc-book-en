@@ -37,6 +37,7 @@ The two fields are:
    .. _fig-stfore:
    
    .. figure:: images/stock_forecast.png
+      :scale: 50
       :align: center
 
       *Printout of provisional stock*
@@ -88,6 +89,7 @@ into the system by location for the products in stock. Use the menu :menuselecti
 --> Periodical Inventory --> New Periodical Inventory` for this.
 
 .. figure:: images/stock_inventory_new.png
+   :scale: 50
    :align: center
 
    *Defining a new inventory operation*
@@ -144,6 +146,7 @@ right goods receipt form for confirmation of a goods in. This approach enables y
 quantities received by referring to the quantities ordered.
 
 .. figure:: images/stock_picking_in_tree.png
+   :scale: 50
    :align: center
 
    *List of items waiting*
@@ -166,6 +169,7 @@ using the :guilabel:`Process Now` button. If you want to enter data for a goods 
 waiting for click the button :guilabel:`Process Later`.
 
 .. figure:: images/stock_picking_in_form.png
+   :scale: 50
    :align: center
 
    *Form for coding in reception of goods from a supplier order*
@@ -209,6 +213,7 @@ and you're not waiting for any of these products to be received into stock. The 
 all the information needed to take orders efficiently.
 
 .. figure:: images/stock_sale_form.png
+   :scale: 50
    :align: center
 
    *Entering an order for three computers*
@@ -236,6 +241,7 @@ there for your order representing the items to be sent. Double-click the line to
 the items proposed by Open ERP.
 
 .. figure:: images/stock_picking_out_form.png
+   :scale: 50
    :align: center
 
    *Items for a customer order*
@@ -258,6 +264,7 @@ delivered (done). A progress indicator from 0% to 100% is shown by each order so
 salesperson can follow the progress of their orders at a glance.
 
 .. figure:: images/stock_sale_tree.png
+   :scale: 50
    :align: center
 
 *List of orders with their delivery state*
@@ -304,6 +311,7 @@ Consolidate locations (the sum of several locations, following the hierarchical 
 colored blue.
 
 .. figure:: images/stock_location_product_tree.png
+   :scale: 50
    :align: center
 
    *Stock quantities by location for a given product*

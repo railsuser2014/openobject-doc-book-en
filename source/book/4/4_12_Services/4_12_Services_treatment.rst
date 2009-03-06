@@ -16,6 +16,7 @@ An integrated process
 ---------------------
 
 .. figure::  images/service_expense_workflow.png
+   :scale: 50
    :align: center
 
    *Process for dealing with expense reimbursements*

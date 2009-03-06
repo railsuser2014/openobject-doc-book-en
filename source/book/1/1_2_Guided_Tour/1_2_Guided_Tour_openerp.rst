@@ -85,6 +85,7 @@ shows only the first few partners. If you want to display other records you can 
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
+   :scale: 50
    :align: center
 
    *Standard partner search*
@@ -200,6 +201,7 @@ and you'll get the Partner form rather than the Sales Order form.
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
+   :scale: 50
    :align: center
 
    *Links for a partner appear in an order form*
@@ -540,6 +542,7 @@ needs.
 	is marked by nodes colored red.
 
 .. figure:: images/purchase_workflow.png
+   :scale: 50
    :align: center
 
    *Purchase order workflow*
@@ -557,6 +560,7 @@ line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to 
 representation of the plan.
 
 .. figure:: images/familiarization_project_gantt.png
+   :scale: 50
    :align: center
 
    *Project Planning*

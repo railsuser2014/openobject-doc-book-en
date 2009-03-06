@@ -22,6 +22,7 @@ complexities that can be accomplished.
 .. _fig-crmconw:
 
 .. figure:: images/crm_contact_with.png
+   :scale: 50
    :align: center
 
    *UML class diagram with :mod:`base_contact`*
@@ -29,6 +30,7 @@ complexities that can be accomplished.
 .. _fig-crmcono:
 
 .. figure:: images/crm_contact_without.png
+   :scale: 50
    :align: center
 
    *UML class diagram without :mod:`base_contact`*
@@ -40,6 +42,7 @@ business) and several contacts attached to these addresses.
 .. _fig-crmcont:
 
 .. figure:: images/crm_contact_exemple.png
+   :scale: 50
    :align: center
 
    *Example of a structure with management of partners and contacts*
@@ -75,6 +78,7 @@ contacts above each address. For each contact you see a name, a function, a phon
 email.
 
 .. figure:: images/crm_partner_contact.png
+   :scale: 50
    :align: center
 
    *A partner form with the :mod:`base_contact` module installed*
@@ -84,11 +88,13 @@ and fax) or enter into the contact form (such as personal phone, different posts
 personal blog).
 
 .. figure:: images/crm_partner_poste.png
+   :scale: 50
    :align: center
 
    *Detail of a post occupied by a contact at a partner*
 
 .. figure:: images/crm_partner_contacts.png
+   :scale: 50
    :align: center
 
    *Detail of a contact form for someone occupying several posts*
@@ -102,6 +108,7 @@ For this chapter you should create a new database. After installing the database
 the CRM module if your requirements are limited to customer relationships.
 
 .. figure:: images/crm_db_init.png
+   :scale: 50
    :align: center
 
    *Creating a new database*
@@ -115,6 +122,7 @@ Once the database is installed, Open ERP suggests that you configure it using a 
 * Select the CRM functionality to install.
 
 .. figure:: images/ crm_db_select.png
+   :scale: 50
    :align: center
 
    *Selecting the CRM functionality to install*
@@ -172,6 +180,7 @@ install.
 .. _fig-crmconwiz:
 
 .. figure:: images/crm_configuration_wizard.png
+   :scale: 50
    :align: center
 
    *Selecting parameters for CRM modules for the reader of this chapter*
@@ -183,6 +192,7 @@ If you have installed the management of prospects and opportunities, Open ERP im
 following workflow for the qualification of prospects and future opportunities.
 
 .. figure:: images/crm_flux.png
+   :scale: 50
    :align: center
 
    *Process of converting a prospect into a customer or opportunity*

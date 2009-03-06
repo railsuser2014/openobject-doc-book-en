@@ -193,6 +193,7 @@ operation shouldn't take more than a few minutes because you aren't dealing with
 themselves, just classifying them.
 
 .. figure::  images/service_timebox_day.png
+   :scale: 50
    :align: center
 
    *Timebox for tasks to be done today*

@@ -19,6 +19,7 @@ Open ERP. To create the different analytic accounts, use the menu :menuselectio
 Management --> Configuration --> Analytic Accounting --> Analytic Accounts --> New Analytic Account`.
 
 .. figure::  images/account_analytic_form.png
+   :scale: 50
    :align: center
 
    *Setting up an analytic account*
@@ -68,6 +69,7 @@ which you'd need so that you can invoice the partner:
 	  orders.
 
 .. figure::  images/account_analytic_chart.png
+   :scale: 50
    :align: center
 
    *Example of an analytic chart for projects*
@@ -119,6 +121,7 @@ These enable you to categorize the different accounting entries by their type:
 	because it wouldn't be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
+   :scale: 50
    :align: center
 
    *Creating an analytic journal*

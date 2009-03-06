@@ -44,6 +44,7 @@ Periods`. A window appears enabling you to automatically define the next periods
 provided for stock management.
 
 .. figure:: images/sale_period.png
+   :scale: 50
    :align: center
 
    *Defining periods for stock management*
@@ -55,6 +56,7 @@ quantity equivalent to the estimated amount. This can be modified manually as ne
 completion.
 
 .. figure:: images/stock_sale_forecast.png
+   :scale: 50
    :align: center
 
    *Sales Forecast to help create a master production plan*
@@ -90,6 +92,7 @@ For each period and product Open ERP gives you the following information:
 * sales forecasts, which represent the sum of forecasts made by the salespeople.
 
 .. figure:: images/stock_forecast.png
+   :scale: 50
    :align: center
 
    *The master production schedule (MPS)*

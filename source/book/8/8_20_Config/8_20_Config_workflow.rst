@@ -18,6 +18,7 @@ client.
 .. _fig-sflow:
 
 .. figure::  images/sales_workflow.png
+   :scale: 50
    :align: center
 
    *Workflow for order SO005*
@@ -35,6 +36,7 @@ process named sale.order.basic. All of the nodes appearing in the graph are list
 :guilabel:`Activities`, and all of the arrows are listed in the field :guilabel:`Transitions`.
 
 .. figure::  images/sales_workflow_spec.png
+   :scale: 50
    :align: center
 
    *Definition of the workflow for a sales order*

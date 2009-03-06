@@ -19,11 +19,13 @@ For example you can look at the directory shown in :menuselection:`Main Reposito
 created automatically by the system.
 
 .. figure::  images/document_sale.png
+   :scale: 50
    :align: center
 
    *Orders in Open ERP*
 
 .. figure::  images/document_ftp_sale.png
+   :scale: 50
    :align: center
 
    *Directories representing all the orders in the document management system*
@@ -44,6 +46,7 @@ define the directory itself:
 * :guilabel:`Tree structure` : to show the resources hierarchically
 
 .. figure::  images/document_dir_form.png
+   :scale: 50
    :align: center
 
    *Configuration of the directory containing quotations (draft orders)*

@@ -14,6 +14,7 @@ document set. You can use the structure automatically proposed by Open ERP from 
 :menuselection:`Document Management --> Directory Structure`.
 
 .. figure::  images/document_structure.png
+   :scale: 50
    :align: center
 
    *Structure of directories when the :mod:`document` module has been installed*
@@ -46,11 +47,13 @@ management system. Once you enter the directory you find a structure that matche
 defined in Open ERP.
 
 .. figure::  images/document_ftp_structure_root.png
+   :scale: 50
    :align: center
 
    *Root of the database directory seen through FTP*
 
 .. figure::  images/document_ftp_structure_tree.png
+   :scale: 50
    :align: center
 
    *Structure of the directories in the document management system*

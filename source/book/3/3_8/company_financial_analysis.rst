@@ -75,6 +75,7 @@ Once this module is installed, you can click on a financial indicator to get a g
 evolution in time.
 
 .. figure::  images/account_report_history.png
+   :scale: 50
    :align: center
 
    *History of an accounting indicator*
@@ -86,6 +87,7 @@ You can define your own indicators in Open ERP using the menu :menuselection:`F
 --> Configuration --> Custom Reporting --> New Reporting Item Formula`.
 
 .. figure::  images/account_indicator_new.png
+   :scale: 50
    :align: center
 
    *Defining a new indicator*
@@ -160,6 +162,7 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by Open ERP
 .. _fig-accbudg:
 
 .. figure::  images/account_budget.png
+   :scale: 50
    :align: center
 
    *Printing a budget*
@@ -173,6 +176,7 @@ The Accounting Dashboard
 ------------------------
 
 .. figure::  images/account_board.png
+   :scale: 50
    :align: center
 
    *Accounting Dashboard*

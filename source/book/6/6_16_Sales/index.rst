@@ -62,6 +62,7 @@ Orders --> New Quotation`. Open ERP then opens a new window so that you can ente
 blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
+   :scale: 50
    :align: center
 
    *Data entry for a new quotation*
@@ -124,6 +125,7 @@ new order line as shown in the figure :ref:`fig-slinf`:
 .. _fig-slinf:
 
 .. figure:: images/sale_line_form.png
+   :scale: 50
    :align: center
 
    *Entering a new customer order line*
@@ -150,6 +152,7 @@ useful information for your sale in the list of products it provides:
   than this amount, then the company loses money.
 
 .. figure:: images/sale_product_list.png
+   :scale: 50
    :align: center
 
    *Selecting a product in a Sales Order*
@@ -175,6 +178,7 @@ what he's selling. The description of the product sold is presented in the custo
 language is used on the quotation or order when it's printed for the customer.
 
 .. figure:: images/sale_line_translation.png
+   :scale: 50
    :align: center
 
    *Sale of a product in a partner language that differs from the user language*
@@ -192,6 +196,7 @@ this, click on the report :guilabel:`Quotation / Order` to the right. Open ERP t
 quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
+   :scale: 50
    :align: center
 
    *Printing a customer quotation*
@@ -206,6 +211,7 @@ ERP then shows you an interactive process view of that order. For more informati
 look at :ref:`ch-process`.
 
 .. figure:: images/sale_process.png
+   :scale: 50
    :align: center
 
    *Process view from following a customer order*
@@ -240,6 +246,7 @@ quantities don't correspond to the proposed packages. The quantity must be a mul
 :guilabel:`Quantity of items` defined on the packaging form.
 
 .. figure:: images/sale_warning_packaging.png
+   :scale: 50
    :align: center
 
    *Alert on the quantities sold compared with the packaging*
@@ -303,11 +310,13 @@ To manage alerts on products or partners, you can install the :mod:`warning` mod
 installed, it will enable you to configure a series of alerts on the partners or products.
 
 .. figure:: images/warning_partner.png
+   :scale: 50
    :align: center
 
    *Management of alerts on partners*
 
 .. figure:: images/warning_product.png
+   :scale: 50
    :align: center
 
    *Management of alerts on products*
@@ -334,6 +343,7 @@ invoice for that customer, the alert message will be attached as shown in the fi
 .. _fig-warnsmp:
 
 .. figure:: images/warning_sample.png
+   :scale: 50
    :align: center
 
    *Alert from invoicing a customer*
@@ -519,6 +529,7 @@ of the form. A dialog box opens, asking you to select a delivery mode from one o
 ones.
 
 .. figure:: images/sale_delivery.png
+   :scale: 50
    :align: center
 
    *Adding a delivery charge to an order*
@@ -571,6 +582,7 @@ If you want to check your margins on sales orders you can install the :mod:`sale
 will add margins calculated on each order line and on the order total.
 
 .. figure:: images/sale_margin.png
+   :scale: 50
    :align: center
 
    *An order with the module :mod:`sale_margin`*
@@ -614,6 +626,7 @@ You can also filter the analysis on certain types of invoice:
 * Paid invoices only.
 
 .. figure:: images/product_margin_tree.png
+   :scale: 50
    :align: center
 
    *Screen following product margins*
@@ -633,6 +646,7 @@ You then get a margin analysis table. The following fields are given by product 
 * :guilabel:`Sales Waiting` : the number of products sold multiplied by the theoretical list price.
 
 .. figure:: images/product_margin_form.png
+   :scale: 50
    :align: center
 
    *Detail of margins for a given product*
@@ -676,6 +690,7 @@ product form to handle the different margins in an analytic account representing
 case.
 
 .. figure:: images/account_analytic_analysis_form.png
+   :scale: 50
    :align: center
 
    *Detail of margins for a case*
@@ -847,6 +862,7 @@ Rules for calculating price
 A pricelist version is made up of a set of rules that apply to the product base prices.
 
 .. figure:: images/service_pricelist_line.png
+   :scale: 50
    :align: center
 
    *Detail of a rule in a pricelist version*
@@ -972,6 +988,7 @@ Default pricelists
 ^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/product_pricelist_default.png
+   :scale: 50
    :align: center
 
    *Default pricelist after installing Open ERP*
@@ -1159,6 +1176,7 @@ Management --> Configuration --> Rebates at the end of a campaign`.
    this will only actually be the case if the campaign lasts exactly one year.
 
 .. figure:: images/discount_campaign_RFA.png
+   :scale: 50
    :align: center
 
    *Configuring a year-end rebate*
@@ -1175,6 +1193,7 @@ the sales volume.
 .. _fig-discamp:
 
 .. figure:: images/discount_campaign.png
+   :scale: 50
    :align: center
 
    *Configuring a discount campaign for computers*
@@ -1212,6 +1231,7 @@ Then you can use the new tab :guilabel:`Deliveries` on the order to plan the qua
 delivery planning there.
 
 .. figure:: images/sale_delivery.png
+   :scale: 50
    :align: center
 
    *Managing open orders, planning forecasts*
@@ -1260,6 +1280,7 @@ and the resulting printed invoice.
 .. _fig-invlayfrm:
 
 .. figure:: images/invoice_layout_form.png
+   :scale: 50
    :align: center
 
    *Template for an invoice in Open ERP using the :mod:`account_invoice_layout` module*
@@ -1267,6 +1288,7 @@ and the resulting printed invoice.
 .. _fig-invlayprin:
 
 .. figure:: images/invoice_layout_print.png
+   :scale: 50
    :align: center
 
    *The resulting printed invoice*

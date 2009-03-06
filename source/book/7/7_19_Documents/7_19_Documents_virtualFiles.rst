@@ -36,6 +36,7 @@ associated with an order you can then find a virtual file.
 .. _fig-docvirt:
 
 .. figure::  images/document_virtual_form.png
+   :scale: 50
    :align: center
 
    *Virtual files about sales orders in Open ERP*
@@ -46,6 +47,7 @@ can then just double-click the file :guilabel:`SO003_print.pdf` to get a printou
 You can attach it to an email or put it on your desktop.
 
 .. figure::  images/document_virtual_ftp.png
+   :scale: 50
    :align: center
 
    *Virtual files about sale orders through FTP*

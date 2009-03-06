@@ -63,6 +63,7 @@ To do this use the menu :menuselection:`Tools --> Open ERP Plugin`.
 A configuration window appears enabling you to enter configuration data about your Open ERP server.
 
 .. figure::  images/thunderbird_config.png
+   :scale: 50
    :align: center
 
    *Configuration for accessing Open ERP from Thunderbird*
@@ -75,6 +76,7 @@ This allows you to select an object that you'd like to add to your email and its
 can select a partner, a task, a project, an analytical account, or any other object.
 
 .. figure::  images/thunderbird_selection.png
+   :scale: 50
    :align: center
 
    *Selecting Open ERP objects from Thunderbird*
@@ -98,6 +100,7 @@ create one on the fly simply by using the information contained in the email and
 :guilabel:`Create` button.
 
 .. figure::  images/thunderbird_creation.png
+   :scale: 50
    :align: center
 
    *Creating a contact on the fly from Thunderbird*

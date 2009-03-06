@@ -94,6 +94,7 @@ Start by manually entering a customer invoice. Use :menuselection:`Financial Man
 A new invoice form opens for entering information.
 
 .. figure::  images/account_invoice_new.png
+   :scale: 50
    :align: center
 
    *Entering a new invoice*
@@ -254,6 +255,7 @@ calculated for different tax rates used in the invoice.
 
 
 .. figure::  images/account_invoice_tva.png
+   :scale: 50
    :align: center
 
    *Detail of tax charges on an invoice*
