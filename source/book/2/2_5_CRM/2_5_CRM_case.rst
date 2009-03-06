@@ -135,6 +135,7 @@ menu structure like :ref:`fig-busopp`.
 .. _fig-busopp:
 
 .. figure::  images/business_ops.png
+   :scale: 50
    :align: center
 
    *Business Opportunities menu automatically generated*
@@ -191,6 +192,7 @@ case types are just versions of the generic case.
 	You can also track items across the whole company.
 
 .. figure::  images/crm_case.png
+   :scale: 50
    :align: center
 
    *An entry following a business opportunity*
@@ -333,6 +335,7 @@ Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reportin
 ``openerp_04X``\   (which has plenty of data already in it) to create different reports.
 
 .. figure::  images/crm_graph.png
+   :scale: 50
    :align: center
 
    *Analyzing the performance of your support team*
@@ -407,6 +410,7 @@ Using these rules you could:
 To define new rules use the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
 
 .. figure::  images/crm_rule.png
+   :scale: 50
    :align: center
 
    *Screenshot of a rule*
@@ -587,6 +591,7 @@ with the major current email clients such as Microsoft Outlook and Outlook Expre
 Evolution.
 
 .. figure::  images/crm_gateway.png
+   :scale: 50
    :align: center
 
    *Schematic showing the use of the email gateway*

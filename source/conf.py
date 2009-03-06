@@ -180,10 +180,10 @@ htmlhelp_basename = 'openobject-doc'
 # ------------------------
 
 # The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
+#latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
+latex_font_size = '9pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
@@ -193,7 +193,7 @@ htmlhelp_basename = 'openobject-doc'
 #]
 
 latex_documents = [
-  ('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
+   ('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
    ('bi/index', 'openobject-bi.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
    #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
    ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),

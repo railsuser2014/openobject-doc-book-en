@@ -14,6 +14,7 @@ The figure below represents the following payment term: 35% on delivery, the bal
 the end of the month.
 
 .. figure::  images/account_payment_term.png
+   :scale: 50
    :align: center
 
    *Configuring payment terms*

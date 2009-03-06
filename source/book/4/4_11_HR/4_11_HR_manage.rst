@@ -7,8 +7,8 @@
 Managing Human Resources
 ========================
 
-To establish a system that's integrated into a company's management you need to start with an up to
-date list of collaborators.
+To establish a system that's integrated into a company's management you need to start with a
+current list of collaborators.
 
 .. note:: Don't confuse employees and users
 
@@ -17,19 +17,19 @@ date list of collaborators.
 	periods, and also independent and freelance service contracts.
 	
 	.. index::
-	   pair: module; portal_	
+	   pair: modules; portal_	
 
 	A “user” is a physical person who's given access to the company's systems. Most employees are
 	users but some users aren't employees: external partners can have access to parts of the system.
 	You can manage them through the :mod:`portal_` modules.
 
-Here are some examples of functions which depend on the list of employees:
+Here are some examples of functions which depend on the accuracy of the employee list:
 
 * the cost of a service, which depends on the employee's working contract,
 
 * project planning, which depends on the work pattern of the project contributors,
 
-* the client billing rate, which depends on the employee's job function,
+* the client billing rate, which probably depends on the employee's job function,
 
 * the chain of command, or responsibilities, which is related to the hierarchical structure of the
   company.
@@ -41,74 +41,60 @@ To define a new employee in Open ERP, use the menu :menuselection:`Human Resour
 --> New Employee`.
 
 .. figure::  images/service_employee_form.png
+   :scale: 50
    :align: center
 
    *Form describing an employee*
 
-Start by entering the employee's :guilabel:`Name`  and the company that this employee works for
-(:guilabel:`Company`). You can then create a new user of the Open ERP system which is linked to this
-employee by filling in the :guilabel:`Username` field. Even if the employee isn't a user, it's best if you
+Start by entering the employee's name in :guilabel:`Employee` and the company that this employee works for
+in :guilabel:`Company`. You can then create a new user of the Open ERP system linked to this
+employee by filling in a new :guilabel:`User` form through the :guilabel:`Related User` field. 
+
+Even if the employee isn't a user, it's best if you
 create a system access for most of your staff just so that you can control their access rights from
-the outset.
+the outset (and you can do that through this field if you need to).
 
 .. tip:: Employee and User link.
 
-	If the employee has a user account on the system you shouldn't forget to link his or her user
+	If the employee has a user account on the system you always link his or her user
 	account to the employee form.
 
 	Creating this link enables automatic completion to be done on the :guilabel:`Employee` field in the
 	relevant forms, such as services and expense records.
 
-Then enter the employee's address. This appears in the partner contact form in Open ERP. Since
-employees are people that your company has contacts with, it's logical that they have entries just
+Then enter the employee's address. 
+
+.. todo:: We need better guidance about Partner vs Employee just here.
+
+This appears in the partner contact form in Open ERP. Since
+employees are people that have contacts with your company, it's logical that they have entries
 like any other partner in your database. So enter the name of the employee as a new partner Name and
 the address in the Contact form. Then all of the functions that apply to a partner can also be
-applied to an employee. This becomes particularly useful because you can track debits and credits in
+applied to an employee. This is particularly useful for tracking debits and credits in
 the accounts – so you can track salary payments, for example.
 
-It's then possible to indicate both an analytic journal and a linked product to this employee. If
+You can then set both an analytic journal and a linked product to this employee
+in the :guilabel:`Timesheets` tab. If
 you do it that way, then this information can be used to track services. For now, just complete the
 form with the following information:
 
-*  :guilabel:`Analytic Journal`,
+*  :guilabel:`Analytic Journal` : usually a ``Timesheet Journal``,
 
-*  :guilabel:`Product`.
-
-Then type in the following information about the employee's working contract:
-
-.. todo:: Check label
-
-*  :guilabel:`Hours per week`
-
-*  :guilabel:`Number of holidays`
-
-*  :guilabel:`Started on`
-
-*  :guilabel:`Boss`
-
-*  :guilabel:`Category`
-
-*  :guilabel:`Employee's work team`
-
-.. figure::  images/service_timesheet_def.png
-   :align: center
-
-   *Timesheet category for full time 38 hours per week*
-
-The different timesheet categories can be defined in the menu :menuselection:`Human Resources -->
-Configuration --> Timesheet Categories`.
+*  :guilabel:`Product` : a service product that describes how this employee would be charged out,
+   for example as ``Senior Consultant``.
 
 Management of employment contracts
 ----------------------------------
 
-.. todo:: \ ``hr_contract``\   *Contracts*
+If you install the :mod:`hr_contract` module you can link contract details to the employee record.
 
 .. figure::  images/service_hr_contract.png
+   :scale: 50
    :align: center
 
    *Definition of a working contract for a given employee*
 
-You can enter information about the employment contract for the employee there.
+You can enter information about the employment contract for the employee, such as:
 
 *  :guilabel:`Contract Name`
 
@@ -120,7 +106,7 @@ You can enter information about the employment contract for the employee there.
 
 *  :guilabel:`End Date`
 
-*  :guilabel:`Wage` :guilabel:`Wage Type` :guilabel:`Monthly Gross` :guilabel:`Weekly Net`
+*  :guilabel:`Wage Type` either :guilabel:`Monthly Gross` or :guilabel:`Weekly Net`
 
 .. index::
    single: Employee; Sign in and out
@@ -131,25 +117,29 @@ Sign in and out
 
 In some companies, staff have to sign in when they arrive at work and sign out again at the end of
 the day. If each employee has been linked to a system user, then they can sign in on Open ERP by
-using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Out`.
+using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Sign out`.
 
 If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually
-and type in the time that they left when they come in again the next day. The gives you a simple way
-of managing forgotten sign-outs, :menuselection:`Human Resources --> Employees`.
+and type in the time that they left when they come in again the next day. This gives you a simple way
+of managing forgotten sign-outs.
+
+Find employee attendance details from their forms in 
+:menuselection:`Human Resources --> Employees --> All Employees`.
 
 To get the detail of attendances from an employee's form in Open ERP you can use the three
 available reports:
+
+*  :guilabel:`Print Attendance Error Report`
 
 *  :guilabel:`Print Timesheet by week`
 
 *  :guilabel:`Print Timesheet by month`
 
-*  :guilabel:`Print Attendance Error Report`
+The first report highlights errors in attendance data entry. 
+It shows you whether an employee has entered the time of
+entry or exit manually and the differences between the actual and expected sign out time and the time.
 
-The last report, about managing changes, can show you whether an employee has entered the time of
-entry or exit manually. It shows the difference between the expected sign out time and the time
-entered by the employee at sign out. This enables you to easily discover people who are
-systematically misrepresenting their attendances.
+The others are reports using the data recorded.
 
 .. Copyright © Open Object Press. All rights reserved.
 

@@ -17,8 +17,11 @@ by the logistics manager.
 .. index::
    pair: module; stock_planning
 
-To be able to use the production plan, you must install the :mod:`stock_planning` module which can be
-found amongst Open ERP's extra_addons rather in the main set of addons.
+To be able to use the production plan, you must install the :mod:`stock_planning` module.
+This can be found amongst Open ERP's ``addons-extra`` rather in the main set of ``addons``.
+(Beware! One reason it is not in the core of Open ERP at the time of writing
+could be because some screens have no navigation 
+controls, so you can't always easily get back to the main Open ERP system).
 
 .. index:: Forecasts
 
@@ -41,6 +44,7 @@ Periods`. A window appears enabling you to automatically define the next periods
 provided for stock management.
 
 .. figure:: images/sale_period.png
+   :scale: 50
    :align: center
 
    *Defining periods for stock management*
@@ -52,6 +56,7 @@ quantity equivalent to the estimated amount. This can be modified manually as ne
 completion.
 
 .. figure:: images/stock_sale_forecast.png
+   :scale: 50
    :align: center
 
    *Sales Forecast to help create a master production plan*
@@ -87,9 +92,12 @@ For each period and product Open ERP gives you the following information:
 * sales forecasts, which represent the sum of forecasts made by the salespeople.
 
 .. figure:: images/stock_forecast.png
+   :scale: 50
    :align: center
 
    *The master production schedule (MPS)*
+
+.. todo:: Is the MPS actually Procurement not Production ?
 
 The production plan then enables the logistics manager to play with the forecast income and
 outgoings and test the impact on the future stock for the product under consideration. It enables
@@ -99,9 +107,10 @@ consideration.
 You can also open the production plan for past periods. In this case Open ERP shows you the real
 stock moves, by period for forecast reports.
 
-If you don't have automated restocking rules for a product you can at any time start a restocking
-based on the estimates of the production plan. To do this press the button 'Start restocking'. Open
-ERP manages the forecast of restocking for an amount equal to the entries 'forecast'.
+If you don't have automated procurement rules for a product you can at any time start procurement
+based on the estimates of the production plan. 
+To do this press the button :guilabel:`Procure Incoming Left` on the :guilabel:`Master Procurement Schedule`. 
+Open ERP manages the forecast of restocking for an amount equal to the entries 'forecast'.
 
 
 .. Copyright © Open Object Press. All rights reserved.

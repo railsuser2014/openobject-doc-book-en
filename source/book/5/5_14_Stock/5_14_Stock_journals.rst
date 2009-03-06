@@ -2,8 +2,9 @@
 Management by Journal
 =====================
 
-Just as with accounting you can manage stock through journals. This approach has the great advantage
-of being able to define journals in various ways at will as your company's needs change.
+You can manage stock through journals in the same way as you can manage your accounts
+through journals. This approach has the great advantage
+of being able to define journals in various ways as you need them to meet your company's needs.
 
 For example, a large company may want to organize deliveries by department or warehouse. You can
 then create a journal and a manager for each department. The different users can then work in a
@@ -56,20 +57,24 @@ as truck1, truck2).
 Using the journals
 ------------------
 
+.. todo:: I think the field is Invoicing Method not Invoicing Journal
+
 You'll now see how to use the journals to organize your stock management in practice. After
 installing the module :mod:`sale_journal` look at the list of partners. In the tab :guilabel:`Sales and
-Purchases` on any of them you'll now see the field :guilabel:`Invoicing Journal`.
+Purchases` on any of them you'll now see the field :guilabel:`Invoicing Method`.
 
 .. figure:: images/partner_property_view.png
+   :scale: 50
    :align: center
 
    *Partner form in invoicing mode*
 
 You can create a new *Invoicing Journal* on a partner on the fly. You can show if the invoices
-should be grouped or not after the generation in the journal. Create a second invoicing journal
-'End-of-Month Invoicing' which you can assign to another partner.
+should be grouped or not after you have generated them in the journal. Create a second invoicing journal
+``End-of-Month Invoicing`` which you can assign to another partner.
 
 .. figure:: images/invoice_mode.png
+   :scale: 50
    :align: center
 
    *Defining an invoicing journal*
@@ -78,7 +83,7 @@ Then enter the data for some orders for these two partners. After entering this 
 field :guilabel:`Invoicing Mode` is completed automatically from the partner settings. Put these
 orders into the Invoicing Mode based on items in the second tab.
 
-Then you'll look at the assembly notes about these orders in the field :guilabel:`Invoicing Mode` is
+Look at the assembly notes about these orders in the field :guilabel:`Invoicing Mode` is
 automatically shown there. Then confirm the different orders in the list.
 
 At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the
@@ -101,6 +106,7 @@ You can also enter a journal to confirm / cancel all the orders in one go. Then 
 quotations and assign them in a journal and confirm or cancel them en masse at once.
 
 .. figure:: images/stock_jounral_form.png
+   :scale: 50
    :align: center
 
    *View of an order journal*

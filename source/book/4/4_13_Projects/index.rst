@@ -8,8 +8,12 @@ Internal organization and project management
  *If you have good systems for managing tasks, then your whole company will benefit.
  Open ERP's project management modules enable you to manage and track tasks efficiently,
  work on them effectively, delegate them quickly, and track the delegated tasks closely.
- Open ERP also helps handle staff's personal time in the organization,
- and this chapter proposes a methodology aimed at improving the productivity of executives.*
+ Open ERP also helps people in the company to organize their personal time,
+ and this chapter proposes a methodology aimed at improving the productivity of managers.*
+ 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale`, :mod:`project` and all of their dependencies installed, and 
+no particular chart of accounts configured. 
 
 .. raw:: html
 

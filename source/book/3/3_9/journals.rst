@@ -20,6 +20,7 @@ Just like General accounts, the journals can be deactivated to make them invisib
 :guilabel:`Active` checkbox for that.
 
 .. figure::  images/account_journal_form.png
+   :scale: 50
    :align: center
 
    *Definition of an accounting journal*

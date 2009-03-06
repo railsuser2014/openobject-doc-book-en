@@ -30,6 +30,7 @@ Receivables. To get access to it, install the module :mod:`board_account`. Then 
 the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
 
 .. figure::  images/account _board.png
+   :scale: 50
    :align: center
 
    *Accounting Dashboard*
@@ -49,6 +50,7 @@ To obtain a more detailed report of the aged balance (or order by past date) use
 :menuselection:`Finance --> Accounting --> Reporting --> Partner Accounts --> Aged Partner balance`.
 
 .. figure::  images/account_balance.png
+   :scale: 50
    :align: center
 
    *Aged balance using a 30 day period*
@@ -64,6 +66,7 @@ system then supplies you with a PDF report containing one line per partner repre
 cumulative credit balance.
 
 .. figure::  images/account_partner_balance.png
+   :scale: 50
    :align: center
 
    *Partner balances*
@@ -75,6 +78,7 @@ through the menu :menuselection:`Financial Management --> Reporting --> Partner 
 Ledger`.
 
 .. figure::  images/account_partner_ledger.png
+   :scale: 50
    :align: center
 
    *Partner ledger*
@@ -142,6 +146,7 @@ You can send your reminders by mail and/or email with the menu :menuselection:`F
 --> Periodical Processing --> Send followups`.
 
 .. figure::  images/account_followup_wizard.png
+   :scale: 50
    :align: center
 
    *Form for preparing follow-up letters*
@@ -166,6 +171,7 @@ The different reports are standard Open ERP screens, so you can filter them and
 in detail.
 
 .. figure::  images/account_followup.png
+   :scale: 50
    :align: center
 
    *Summary screen for follow-ups*

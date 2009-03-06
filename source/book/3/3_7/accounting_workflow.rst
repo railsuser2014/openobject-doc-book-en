@@ -11,6 +11,7 @@ The chart :ref:`fig-accfl` shows the financial workflow followed by each invoice
 .. _fig-accfl:
 
 .. figure::  images/account_flow.png
+   :scale: 50
    :align: center
 
    *Accounting workflow for invoicing and payment*

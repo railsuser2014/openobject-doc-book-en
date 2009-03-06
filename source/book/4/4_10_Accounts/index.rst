@@ -54,16 +54,18 @@ here are some of those advantages:
 * even those companies that don't use Open ERP's general accounts can use the analytic accounts for
   management.
 
-.. tip:: Who gains from analytic accounts?
+.. tip:: Who benefits from analytic accounts?
 
-	Unlike general accounts, analytic accounts in Open ERP aren't about accounting so much as a
+	Unlike general accounts, analytic accounts in Open ERP aren't so much an accounting tool for Accounts as a
 	management tool for everyone in the company. (That's why they're also called management accounts.)
 
-	The main users of analytic accounts are the directors, general managers and project managers.
+	The main users of analytic accounts should be the directors, general managers and project managers.
 
 Analytic accounts make up a powerful tool that can be used in different ways. The trick is to create
 your own analytic structure for a chart of accounts that closely matches your company's needs.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`account` and its dependencies installed and no particular chart of accounts configured. 
 
 .. raw:: html
 

@@ -30,6 +30,7 @@ Then in each project (represented by analytic accounts) you'll get this substruc
 organization your documents efficiently.
 
 .. figure::  images/document_shared_structure.png
+   :scale: 50
    :align: center
 
    *Substructure common to all projects*

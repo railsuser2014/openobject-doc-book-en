@@ -3,6 +3,8 @@ Advanced elements of stock management
 
 In this section you'll enter the details of management and control of stocks.
 
+.. todo:: GOT TO HERE - I'm sure that this is Scheduler not Req Calc
+
 Requirements Calculation
 ------------------------
 
@@ -78,6 +80,7 @@ deliveries and goods receipts. You can put them into a calendar view at all time
 deliveries or goods receipts.
 
 .. figure:: images/stock_planning.png
+   :scale: 50
    :align: center
 
    *Planning the deliveries of customer products*
@@ -106,6 +109,7 @@ for the remaining quantities. The first will be confirmed and the second will re
 deliveries (or receipts) waiting.
 
 .. figure:: images/stock_picking_wizard.png
+   :scale: 50
    :align: center
 
    *Confirmation screen for delivered quantities*
@@ -138,6 +142,7 @@ To enter data about goods receipt manually you must use the menu :menuselection:
 receipt form.
 
 .. figure:: images/stock_getting.png
+   :scale: 50
    :align: center
 
    *Manual data entry for product receipt*
@@ -153,6 +158,7 @@ In this case Open ERP generates a list of all products waiting to be received fr
 :menuselection:`Stock Management --> Incoming Products --> Packings to Process`.
 
 .. figure:: images/stock_packing_in.png
+   :scale: 50
    :align: center
 
    *List of items waiting for receipt*
@@ -189,6 +195,7 @@ You should install the :mod:`stock_location` module if routing products to custo
 in your warehouse is a function of the product itself.
 
 .. figure:: images/product_location.png
+   :scale: 50
    :align: center
 
    *Managing the paths from one location to another in a product form*

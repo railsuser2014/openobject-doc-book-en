@@ -55,11 +55,13 @@ on a new installation.
    administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
+   :scale: 50
    :align: center
 
    *Changing the super-administrator password through the web client*
 
 .. figure:: images/create_new_db_GTK.png
+   :scale: 50
    :align: center
 
    *Creating a new database through the GTK client*
@@ -98,6 +100,7 @@ database you can extend it without knowing the super administrator password.
 	Open ERP databases. Using this, many databases can share the same user account details.
 
 .. figure:: images/create_new_db_web.png
+   :scale: 50
    :align: center
    
    *Creating a new database through the web client*

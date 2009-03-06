@@ -349,6 +349,7 @@ Then select one or several journals and click :guilabel:`Print`. Open ERP then 
 * journal grouped by account.
 
 .. figure::  images/account_journal_print.png
+   :scale: 50
    :align: center
 
    *Printing a journal*
@@ -367,6 +368,7 @@ Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Fin
 declaration but also all the other taxes can be calculated (such as the French DEEE).
 
 .. figure::  images/account_tax_chart.png
+   :scale: 50
    :align: center
 
    *Example of a Belgian TVA (VAT) declaration*

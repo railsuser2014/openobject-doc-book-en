@@ -63,6 +63,7 @@ Using the Microsoft Outlook plugin is quite similar to using the Thunderbird ext
 find the menu :menuselection:`Tools --> Open ERP Options`.
 
 .. figure::  images/outlook_menu.png
+   :scale: 50
    :align: center
 
    *Configuration menu for the interface between Outlook and Open ERP*
@@ -78,6 +79,7 @@ Once the server data entry is completed, click :guilabel:`Test the Connection` t
 parameters make it function correctly.
 
 .. figure::  images/outlook_config.png
+   :scale: 50
    :align: center
 
    *Configuring access to Open ERP from Word*
@@ -92,6 +94,7 @@ several ways:
 * from the page while looking at the email.
 
 .. figure::  images/outlook_archive.png
+   :scale: 50
    :align: center
 
    *Saving an Outlook email in Open ERP*

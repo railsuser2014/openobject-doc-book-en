@@ -85,6 +85,7 @@ shows only the first few partners. If you want to display other records you can 
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
+   :scale: 50
    :align: center
 
    *Standard partner search*
@@ -200,6 +201,7 @@ and you'll get the Partner form rather than the Sales Order form.
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
+   :scale: 50
    :align: center
 
    *Links for a partner appear in an order form*
@@ -317,7 +319,7 @@ of its available variants briefly rather than every item as an entire product.
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
-			than 160 completely different products. This module is available in the extra_addons list (it had
+			than 160 completely different products. This module is available in the addons-extra list (it had
 			not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The :menuselection:`Products` menu gives you access to the definition of products and their
@@ -540,6 +542,7 @@ needs.
 	is marked by nodes colored red.
 
 .. figure:: images/purchase_workflow.png
+   :scale: 50
    :align: center
 
    *Purchase order workflow*
@@ -557,6 +560,7 @@ line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to 
 representation of the plan.
 
 .. figure:: images/familiarization_project_gantt.png
+   :scale: 50
    :align: center
 
    *Project Planning*

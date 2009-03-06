@@ -46,6 +46,7 @@ questions posed to prospects. These are given in the following figure :ref:`fig-
 .. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree.png
+   :scale: 50
    :align: center
 
    *Example of profiling customer prospects by the Tiny company*

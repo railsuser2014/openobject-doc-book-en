@@ -150,6 +150,7 @@ you've successfully connected to an Open ERP server containing, as yet, no data
 
 
 .. figure:: images/new_login_dlg.png
+   :scale: 50
    :align: center
 
    *Dialog box on connecting a GTK client to a new Open ERP server*
@@ -219,6 +220,7 @@ resolving this below:
            .. _fig-cmdp:
            
            .. figure:: images/cmd_prompt_ping.png
+              :scale: 50
               :align: center
               
               *Sending a ping from the command prompt*
@@ -398,6 +400,7 @@ To install an Open ERP GTK client, follow the steps below:
 	choose to enter no data, to prevent that window reappearing next time.
 
 .. figure:: images/terp_client_startup.png
+   :scale: 50
    :align: center
    
    *Open ERP client at startup*
@@ -437,6 +440,7 @@ and set the following field as needed:
 
 
 .. figure:: images/terp_client_server.png
+   :scale: 50
    :align: center
 
    *Dialog box for defining connection parameters to the server*
@@ -501,6 +505,7 @@ you've just installed, so should connect directly at startup.
 .. _fig-webwel:
 
 .. figure:: images/web_welcome.png
+   :scale: 50
    :align: center
 
    *Open ERP web client at startup*

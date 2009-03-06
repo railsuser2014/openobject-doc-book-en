@@ -8,44 +8,73 @@ are available directly from the tree of accounts or from the form view of the ac
 Analysis per account
 --------------------
 
-From an analytic form, click on the :guilabel:`Print` button to select a report. Open ERP proposes
-the following financial analyses:
-
-*  :guilabel:`Analytic Balance`,
-
-*  :guilabel:`Inverted Analytic Balance`,
+From an analytic form, click on one of the :guilabel:`REPORTS` buttons to select a report. 
+Open ERP provides the following financial analyses from the analytic accounts (and maybe more,
+depending on the additional installed modules):
 
 *  :guilabel:`Cost Ledger`,
 
 *  :guilabel:`Cost Ledger (quantities only)`.
 
+*  :guilabel:`Inverted Analytic Balance`,
+
+*  :guilabel:`Analytic Balance`,
+
 .. index::
-   single: Balance; Analytic
-   single: Analytic Balance
+   single: Cost ledger; Analytic
 
-Analytic Balance
-^^^^^^^^^^^^^^^^
+The cost ledger
+^^^^^^^^^^^^^^^
 
-.. figure::  images/analytic_balance.png
+The cost ledger provides all of the
+detailed entries for the selected accounts. It enables you to make a detailed analysis of each operation carried
+out on one or several projects.
+
+.. figure::  images/analytic_cost_ledger.png
+   :scale: 50
    :align: center
 
-   *The analytic balance presents the breakdown of each project by the nature of the operations
-   given by the financial accounts*
+   *The analytic cost ledger gives a detailed history of the entries in an analytic account*
 
-The analytic balance is a report that relates the analytic accounts to the general accounts. It
-gives, for a given period, the balances of the analytic accounts broken down by general account.
+The cost ledger (quantities only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This report is useful for analyzing the profitability of projects. It gives you the profitability of
-a project for the different operations that you used to carry out the project.
+This report gives the detail of entries for an analytic account and a list of selected journals.
+Only quantities are reported for this analysis, not costs and revenues.
+
+.. figure::  images/analytic_cost_ledger_quantity.png
+   :scale: 50
+   :align: center
+
+   *The cost ledger (quantities only) gives a history of an analytic account*
+
+The report is often used to print the number of hours worked on a project, without exposing the
+costs and revenues. So you can show it to a client as a record of the hours worked on a particular
+project.
+
+To restrict the report to hours worked, without including sales and purchases, select only the
+services journal for printing.
+
+.. tip:: Multiple printing
+
+	To print several analytic accounts at once you can make a multiple selection on the different
+	accounts in the tree of accounts.
+	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or 
+	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
+	single PDF document.
+
+.. index::
+   pair: Balance; Analytic
 
 Inverted Analytic Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The inverted analytic balance provides a similar report relating the general accounts and the
-analytic accounts. This report shows, for a given period, the balances of the general accounts
-broken down by the selected analytic accounts.
+The inverted analytic balance provides a summary report relating general accounts and 
+analytic accounts. This report shows the balances of the general accounts
+broken down by the selected analytic accounts for a selected period.
 
 .. figure::  images/analytic_balance_inverse.png
+   :scale: 50
    :align: center
 
    *The inverted analytic balance indicates the breakdown of operations by the nature of the
@@ -55,46 +84,21 @@ This enables you to analyze your costs by general account. For example, if you e
 account for staff salaries you can obtain all your salary costs broken down by the different
 analytic (or project) accounts.
 
-.. index::
-   single: Cost ledger; Analytic
+Analytic Balance
+^^^^^^^^^^^^^^^^
 
-The cost ledger
-^^^^^^^^^^^^^^^
-
-While the two reports above provide results summed by account, the cost ledger provides all of the
-detailed entries for the selected accounts. It enables a detailed analysis of each operation carried
-out on one or several projects.
-
-.. figure::  images/analytic_cost_ledger.png
+.. figure::  images/analytic_balance.png
+   :scale: 50
    :align: center
 
-   *The analytic cost ledger gives a detailed history of the entries in an analytic account*
+   *The analytic balance presents the breakdown of each project by the nature of the operations
+   given by the financial accounts*
 
-The cost ledger (quantities only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The analytic balance is a summary report that relates the analytic accounts to the general accounts. It
+shows the balances of the analytic accounts broken down by general account for a selected period.
 
-The last report gives the detail of entries for an analytic account and a list of selected journals.
-Only quantities are reported for this analysis, not costs and revenues.
-
-.. figure::  images/analytic_cost_ledger_quantity.png
-   :align: center
-
-   *The cost ledger (quantities only) gives a history of an analytic account*
-
-The report is frequently used to print the number of hours worked on a project, without showing the
-costs and revenues. So you can show it to a client as a record of the hours worked on a particular
-project.
-
-To restrict the report to hours worked, without including sales and purchases, select only the
-services journal to print the report.
-
-.. tip:: Multiple printing
-
-	To print several analytic accounts at once you can make a multiple selection on the different
-	account in the tree of accounts.
-	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or 
-	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
-	single PDF document.
+This report is useful for analyzing the profitability of projects, giving you the profitability of
+a project for the different operations that you used to carry out the project.
 
 .. index::
    single: Multi-company
@@ -103,7 +107,7 @@ services journal to print the report.
 
 	In a multi-company environment each company can have its own general chart of accounts on the same
 	database.
-	The two general charts of accounts are then independent but can be linked in a third chart using a
+	The two general charts of accounts are independent but can be linked in a third chart using a
 	view account to do the consolidation.
 
 	If the different companies collaborate on joint projects they may all share the same analytic chart
@@ -131,13 +135,14 @@ form:
 .. _fig-mgtindic:
 
 .. figure::  images/account_analytic_analysis.png
+   :scale: 50
    :align: center
 
    *Management indicators for an analytic account*
 
 The figure :ref:`fig-mgtindic` shows all of the management indicators.
 
-These indicators enable you to quickly see the following elements:
+These indicators enable you to quickly see such important information as:
 
 * project profitability,
 
@@ -145,9 +150,10 @@ These indicators enable you to quickly see the following elements:
 
 * the amount of services to invoice,
 
-* the different margins.
+* the different margin figures.
 
 .. figure::  images/account_analytic_analysis_month.png
+   :scale: 50
    :align: center
 
    *Breakdown of monthly costs for an analytic account*
@@ -165,17 +171,18 @@ To give project managers a direct view of their different projects, the
 :menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
+   :scale: 50
    :align: center
 
    *Analytic accounts in Project Management*
 
-These different menus give quick views that are very useful for live projects. For each project you
-can check if there are uninvoiced services, and see the last invoice date and the last uninvoiced
-service date, and reports on the amounts received and those planned. Project managers have therefore
-all the information necessary to manage their project well, shown in a single page.
+These different menus give quick views that are useful for live projects. For each project you
+can check if there are uninvoiced services, see the last invoice date and the last uninvoiced
+service date, and get reports on the amounts received and those planned. So project managers have
+all the information necessary to manage their project, shown in a single page.
 
-In the following chapters you'll see how each project manager can use this information to carry out
-the different operations needed to manage the project, such as automatic invoicing, project
+In the following chapters you'll see how project managers can use this information to carry out
+the various operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
 
 .. todo:: Write more now. Or maybe not!
@@ -185,14 +192,14 @@ planning, keeping customers up to date, and budgeting for resources.
 
 .. note:: Analytic Budgets
 
-	Analytic budgets are now handled in the :mod:`account_budget` module, 
-	having been developed for version 5 of Open ERP. They offer:
+	Analytic budgets can be budgeted in the :mod:`account_budget` module, 
+	which was developed starting at version 5 of Open ERP. They offer:
 
 	* forecasting projects in the medium term,
 
 	* controlling project costs,
 
-	* comparing with the general accounts.
+	* comparisons with general accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 

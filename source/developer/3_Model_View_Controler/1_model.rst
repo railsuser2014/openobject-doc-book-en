@@ -130,7 +130,8 @@ Objects may contain different types of fields. Those types can be divided into t
 
 Here's the header of the initialization method of the class any field defined in Open ERP inherits (as you can see in server/bin/osv/fields.py)::
 
-        def __init__(self, string='unknown', required=False, readonly=False, domain=[], context="", states={}, priority=0, change_default=False, size=None, ondelete="set null", translate=False, select=False, **args) :
+        def __init__(self, string='unknown', required=False, readonly=False,
+			 domain=[], context="", states={}, priority=0, change_default=False, size=None, ondelete="set  				 null", translate=False, select=False, **args) :
 
 
 Optional parameters to All Field Types
@@ -328,7 +329,8 @@ A field which allows the user to make a selection between various predefined val
 
         Syntax::
 
-                fields.selection((('n','Unconfirmed'), ('c','Confirmed')), 'Field Name' [, Optional Parameters]),
+                fields.selection((('n','Unconfirmed'), ('c','Confirmed')), 
+                                   'Field Name' [, Optional Parameters]),
 
 .. note::
 
@@ -375,7 +377,8 @@ where
 
                 def fnct(cr, table, ids, field_name, arg, context)
 
-        Either way, it must return a dictionary of values of the form {id'_1_': value'_1_', id'_2_': value'_2_',...}.::
+        Either way, it must return a dictionary of values of the form 
+        {id'_1_': value'_1_', id'_2_': value'_2_',...}.::
 
                 The values of the returned dictionary must be of the type specified by the type argument in the field declaration.
 
@@ -475,7 +478,10 @@ It will compute the field depends on other objects.
 
 **Example** In membership module::
 
-        'membership_state': fields.function(_membership_state, method=True, string='Current membership state', type='selection', selection=STATE, 
+        'membership_state': fields.function(_membership_state, method=True, 
+                                            string='Current membership state', 
+                                            type='selection', 
+                                            selection=STATE, 
           store={'account.invoice':(_get_invoice_partner,['state'], 10),
           'membership.membership_line':(_get_partner_id,['state'], 10),
           'res.partner':(lambda self,cr,uid,ids,c={}:ids, ['free_member'], 10)}),
@@ -534,7 +540,11 @@ TODO
 
         syntax::
 
-                fields.many2many('other.object.name', 'relation object', 'other.object.id', 'actual.object.id', 'Field Name')
+                fields.many2many('other.object.name', 
+                                 'relation object', 
+                                 'other.object.id', 
+                                 'actual.object.id', 
+                                 'Field Name')
 
         * where
                 - other.object.name is the other object which belongs to the relation
@@ -555,7 +565,8 @@ TODO
 
 Sometimes you need to refer the relation of a relation. For example, supposing you have objects: City <- State <- Country, and you need to refer Country in a City, you can define a field as below in the City object::
 
-        'country_id': fields.related('state_id', 'country_id', type="many2one", relation="module.country", string="Country", store=False)
+        'country_id': fields.related('state_id', 'country_id', type="many2one", 
+				      relation="module.country", string="Country", store=False)
 
 Property Fields
 +++++++++++++++
@@ -587,7 +598,8 @@ Then you have to create the default value in a .XML file for this property:
 
         <record model="ir.property" id="property_product_pricelist">
             <field name="name">property_product_pricelist</field> 
-            <field name="fields_id" search="[('model','=','res.partner'),('name','=','property_product_pricelist')]"/> 
+            <field name="fields_id" search="[('model','=','res.partner'),
+              ('name','=','property_product_pricelist')]"/> 
             <field name="value" eval="'product.pricelist,'+str(list0)"/> 
         </record>
 
@@ -762,7 +774,8 @@ Example:
                 def _constraint_sum(self, cr, uid, ids):
                         cr.execute('SELECT a.currency_id 
                                     FROM account_move m, account_move_line l, account_account a 
-                                    WHERE m.id=l.move_id AND l.account_id=a.id AND m.id IN ('+','.join(map(str, ids))+') 
+                                    WHERE m.id=l.move_id AND l.account_id=a.id AND 
+                                    m.id IN ('+','.join(map(str, ids))+') 
                                     GROUP BY a.currency_id')
                         if len(cr.fetchall())>=2:
                             return True
@@ -801,7 +814,8 @@ Here is an example of the definition of an object. More particulary, here is the
             def _credit_get(self, cr, uid, ids, prop, unknow_none, unknow_dict):
                 res={}
                 for id in ids:
-                    acc = ir.ir_get(cr, uid, [('meta','res.partner'),('name','account.receivable')],[('id',str(id))])[0][2]
+                    acc = ir.ir_get(cr, uid, [('meta','res.partner'),('name','account.receivable')],
+                          [('id',str(id))])[0][2]
                     cr.execute('select sum(amount) from account_move_line 
                                 where account_id=%d and partner_id=%d', (acc, id))
                     res[id]=cr.fetchone()[0] or 0.0
@@ -822,7 +836,8 @@ Here is an example of the definition of an object. More particulary, here is the
             def _debit_get(self, cr, uid, ids, prop, unknow_none, unknow_dict):
                 res={}
                 for id in ids:
-                    acc = ir.ir_get(cr, uid, [('meta','res.partner'),('name','account.payable')],[('id',str(id))])[0][2]
+                    acc = ir.ir_get(cr, uid, [('meta','res.partner'),('name','account.payable')],
+                                   [('id',str(id))])[0][2]
                     cr.execute('select sum(amount) from account_move_line 
                                 where account_id=%d and partner_id=%d', (acc, id))
                     res[id]=cr.fetchone()[0] or 0.0
@@ -854,8 +869,10 @@ Here is an example of the definition of an object. More particulary, here is the
                 'bank':fields.char('Bank account',size=64),
                 'website':fields.char('Website',size=64),
                 'comment':fields.text('Notes'),
-                'address': fields.one2many('res.partner.address', 'partner_id', 'Contacts'),
-                'category_id': fields.many2many('res.partner.category', 'res_partner_category_rel', 'partner_id', 'category_id', 'Categories'),
+                'address': fields.one2many('res.partner.address', 'partner_id',
+                                            'Contacts'),
+                'category_id': fields.many2many('res.partner.category', 'res_partner_category_rel',
+                                                'partner_id', 'category_id', 'Categories'),
                 'events': fields.one2many('res.partner.event', 'partner_id', 'events'),
                 'credit': fields.function(_credit_get, fnct_search=_credit_search, method=True, string='Credit'),
                 'debit': fields.function(_debit_get, fnct_search=_debit_search, method=True, string='Debit'),
@@ -889,7 +906,8 @@ Here is an example of the definition of an object. More particulary, here is the
                 return True
          
             def address_get(self, cr, uid, ids, adr_pref=['default']):
-                cr.execute('select type,id from res_partner_address where partner_id in ('+','.join(map(str,ids))+')')
+                cr.execute('select type,id from res_partner_address where 
+                       partner_id in ('+','.join(map(str,ids))+')')
                 res = cr.fetchall()
                 adr = dict(res)
                 result = {}
@@ -973,7 +991,10 @@ The second form of inheritance in Tiny ERP is used to extend an object from one 
                  class tiny_object(osv.osv)
                      _name = 'tiny.object'
                      _table = 'tiny_object'
-                     _inherits = { 'tiny.object'_1_ : name_col'_1_', 'tiny.object'_2_ : name_col'_2_', ..., 'tiny.object'_n_ : name_col'_n_' }
+                     _inherits = { 'tiny.object'_1_ : name_col'_1_', 
+                                   'tiny.object'_2_ : name_col'_2_', 
+                                    ..., 
+                                   'tiny.object'_n_ : name_col'_n_' }
                      (...)
 
 The object 'tiny.object' inherits from all the *columns* and all the *methods* from the **n** objects *'tiny.object'_1_, ..., 'tiny.object'_n_.*

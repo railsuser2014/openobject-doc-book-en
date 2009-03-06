@@ -78,7 +78,8 @@ ID.
 
 So let's start to export the partners from our database using psql: ::
 
-  psql trunk -c "select 'partner_'||id as id,name from res_partner" -A -F , --pset footer > res.partner.csv
+  psql trunk -c "select 'partner_'||id as id,name from res_partner" 
+             -A -F , --pset footer > res.partner.csv
 
 This creates a res.partner.csv file containing a structure that looks like this:
 
@@ -100,7 +101,9 @@ way to export the data and put them into our module:
 
 ::
 
-  psql trunk -c "select 'partner_address'||id as id,name,'partner_'||partner_id as \"partner_id:id\" from res_partner_address" -A -F , --pset footer > res.partner.address.csv
+  psql trunk -c "select 'partner_address'||id as id,name,'partner_'||
+                partner_id as \"partner_id:id\" from res_partner_address" 
+                -A -F , --pset footer > res.partner.address.csv
 
 This should create a file called res.partner.address with the following data:
 

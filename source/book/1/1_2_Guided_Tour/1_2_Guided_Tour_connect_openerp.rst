@@ -46,6 +46,7 @@ as shown in screenshot :ref:`fig-oech2-main`:
 .. _fig-oech2-main:
 
 .. figure:: images/main_window_openerp_ch02.png
+   :scale: 50
    :align: center
 
    *The Main Menu of the openerp_ch02 database*
@@ -205,6 +206,7 @@ Send a request to get an understanding of its functionality:
 	   case. Then click :guilabel:`Main Menu` to return to the original screen.
 
 .. figure:: images/request_tab.png
+   :scale: 50
    :align: center
 
    *Creating a new request*
@@ -371,6 +373,7 @@ Components Supplier`. You'll see that if a company is in a subcategory (such as
 as :guilabel:`Supplier`).
 
 .. figure:: images/main_window_partner_menu_config.png
+   :scale: 50
    :align: center
 
    *Categories of partner in a hierarchical structure, for example Customer, Prospect, Supplier*
@@ -399,6 +402,7 @@ You can review your new category structure using :menuselection:`Partners --> Pa
 You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 .. figure:: images/main_window_partner_tab.png
+   :scale: 50
    :align: center
 
    *Creating a new partner category :guilabel:`My prospects`*

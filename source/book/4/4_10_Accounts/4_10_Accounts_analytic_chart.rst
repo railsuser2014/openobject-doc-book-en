@@ -4,7 +4,7 @@
 To each enterprise [his] own analytic chart
 ===========================================
 
-To illustrate analytic accounts clearly, you can follow three use cases, each in one of three
+To illustrate analytic accounts clearly, you'll follow three use cases, each in one of three
 different types of company:
 
 	#. An industrial manufacturing enterprise.
@@ -23,7 +23,7 @@ So the objective is to examine the costs, sales and margins by department and by
 level of the structure comprises the different departments and the lower levels represent the
 product ranges that the company makes and sells.
 
-	.. note::  *Example Analytic chart of accounts for an industrial manufacturing company*
+	.. note::  Analytic chart of accounts for an industrial manufacturing company
 
 		#. Marketing Department
 

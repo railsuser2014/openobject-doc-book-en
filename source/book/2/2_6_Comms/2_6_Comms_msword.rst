@@ -24,11 +24,13 @@ enable you to access the Open ERP server from Word. Click the menu :menuselecti
 ERP options`.
 
 .. figure::  images/word_menu.png
+   :scale: 50
    :align: center
 
    *Menu for accessing the configuration of the plugin*
 
 .. figure::  images/word_config.png
+   :scale: 50
    :align: center
 
    *Configuration of the Word plugin for accessing Open ERP*
@@ -41,6 +43,7 @@ Word you can access all the fields in an Open ERP Order, and all of the fields 
 such as from Order Lines, and from Products in those Order Lines.
 
 .. figure::  images/word_module.png
+   :scale: 50
    :align: center
 
    *Select the module that will generate the report*
@@ -66,6 +69,7 @@ document. This tool enables you to select which documents must be included in th
 selection and click :guilabel:`Start Merge` to run the tool that produces your different documents.
 
 .. figure::  images/word_select.png
+   :scale: 50
    :align: center
 
    *Selecting the Open ERP documents to use in the merge*
@@ -74,6 +78,7 @@ Word then generates the documents by inserting the Open ERP data. You get one p
 selected document.
 
 .. figure::  images/word_finnish.png
+   :scale: 50
    :align: center
 
    *Result of merging a Word document with data from Open ERP*

@@ -52,6 +52,7 @@ Creating a chart of accounts
 ----------------------------
 
 .. figure::  images/account_form.png
+   :scale: 50
    :align: center
 
    *Definition of an account*

@@ -31,6 +31,7 @@ Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` 
 product.
 
 .. figure:: images/stock_product.png
+   :scale: 50
    :align: center
 
    *Definition of a new product*
@@ -57,16 +58,16 @@ procurement. The three distinct product types are:
   But its stock level isn't managed by the system. Open ERP assumes that you've got sufficient levels
   in stock at all time, so it doesn't restock it automatically. Example, nails.
 
-* :guilabel:`Services` : don't appear in the various stock operations. Example, a consulting
+* :guilabel:`Service` : doesn't appear in the various stock operations. Example, a consulting
   service.
 
-Procurement Methods – Make to Stock and Make to Order
------------------------------------------------------
+Procure Methods – Make to Stock and Make to Order
+-------------------------------------------------
 
-The procurement method shows how the product will be replenished:
+The procure method determines how the product will be replenished:
 
 * :guilabel:`Make to Stock` : your customers are supplied from available stock. You procure a
-  significant quantity of each product when its stock is too low. Example, a classic distributor.
+  set quantity of each product when its stock is too low. Example, a classic distributor.
 
 * :guilabel:`Make to Order` : when a customer order is confirmed, you then procure or manufacture
   the products for this order. A customer order 'Make to Order' won't modify stock in the medium term
@@ -75,15 +76,18 @@ The procurement method shows how the product will be replenished:
 
 You find a mix of these two modes used for the different final and intermediate products in most
 industries. The procurement method shown on the product form is a default value for the order,
-enabling the salesperson to choose the best mode for fulfilling a particular order.
+enabling the salesperson to choose the best mode for fulfilling a particular order by varying the 
+sales order parameters as needed.
 
-The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for a product managed Make to Order and one
-managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Moves` report,
+The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product 
+managed Make to Order and another
+managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Forecast` report,
 available from the product form.
 
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as :guilabel:`Make to Stock`*
@@ -91,6 +95,7 @@ available from the product form.
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as :guilabel:`Make to Order`*
@@ -105,16 +110,16 @@ available from the product form.
 Supply Methods
 ---------------
 
-Open ERP supports two methods of procurement:
+Open ERP supports two supply methods:
 
-* Make: when the product or service is supplied from internal resources,
+* Produce: when the product or service is supplied from internal resources,
 
 * Buy: when the product is bought from a supplier.
 
 These are just the default settings used by the system during automated replenishment. The same
 product can be either manufactured internally or bought from a supplier.
 
-The three fields (:guilabel:`Supply Method`, :guilabel:`Procurement Method`, :guilabel:`Product
+These three fields (:guilabel:`Supply Method`, :guilabel:`Procurem Method`, :guilabel:`Product
 Type`) determine the system's behaviour when a product is required. The system will generate
 different documents depending on the configuration of these three fields when satisfying an order, a
 price quotation to a supplier or a manufacturing order.
@@ -122,11 +127,12 @@ price quotation to a supplier or a manufacturing order.
 Open ERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-The following illustrates the different cases for automatic restocking.
+The following illustrates different cases for automatic restocking.
 
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
+   :scale: 50
    :align: center
 
    *Workflow for automatic restocking, depending on the configuration of the product*
@@ -134,7 +140,7 @@ The following illustrates the different cases for automatic restocking.
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
 ================== ===================== =====================
-Mode of restocking Make                  Buy
+Mode of restocking Produce               Buy
 ================== ===================== =====================
 MTS                Wait for availability Wait for availability
 MTO                Production Order      Supplier Order
@@ -143,7 +149,7 @@ MTO                Production Order      Supplier Order
 *Showing restocking for a product of type 'stockable' or 'consumable'.*
 
 ================== ===================== =====================
-Mode of restocking Produce               Purchase
+Mode of restocking Produce               Buy
 ================== ===================== =====================
 MTS                /                     /
 MTO                Create task           Subcontract

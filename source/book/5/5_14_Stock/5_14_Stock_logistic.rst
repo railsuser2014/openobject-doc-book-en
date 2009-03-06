@@ -3,7 +3,7 @@ Logistics Configuration
 =======================
 
 In this section you'll see how to configure stock management to match your company's needs. Open ERP
-can handle many different situations by configuring it to behave as needed.
+can handle many different situations by configuring it to behave as required.
 
 .. index:: Location
 
@@ -20,6 +20,7 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Locations` t
 :guilabel:`New` to define new locations.
 
 .. figure:: images/stock_location_form.png
+   :scale: 50
    :align: center
 
    *Definition of a stock location*
@@ -59,11 +60,13 @@ locations shown on the partner form. The choice of stock location is given by th
 the warehouse, linked to a Shop.
 
 .. figure:: images/stock_product_location_form.png
+   :scale: 50
    :align: center
 
    *Definition of stock locations on the product form*
 
 .. figure:: images/stock_partner_location_form.png
+   :scale: 50
    :align: center
 
    *Definition of stock locations on the partner form*
@@ -99,6 +102,7 @@ structure is given by the field :guilabel:`Parent location`. That also enables y
 cases of product localization. For example, you could imagine the following scenario.
 
 Example Structure for two warehouses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A company has a warehouse in Paris and in Bordeaux. For some orders you must deliver the products
 from Paris, and for others from Bordeaux. But you should also specify a fictitious warehouse that
@@ -131,16 +135,16 @@ Accounting valuation in real time
 If you have experience of managing with traditional software you'll know the problem of getting
 useful indicators. If you ask your accountant for a stock valuation or the value added by production
 he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
-entirely different amount. It's terrible because you have no idea who's right.
+entirely different amount. You have no idea who's right!
 
-In Open ERP the management of stock is totally integrated with the accounts, to give strong
+In Open ERP the management of stock is completely integrated with the accounts, to give strong
 coherence between the two systems. The double-entry structure of locations enables a very precise
-correspondance between stocks and accounts.
+correspondence between stocks and accounts.
 
 Each stock movement also generates a corresponding accounting entry in an accounting journal to
 ensure that the two systems can stay in permanent synchronization.
 
-To do that, set up a general account for each location which must be valued in accounting. If a
+To do that, set up a general account for each location that should be valued in your accounts. If a
 product goes to one location or another and the accounts are different in the two locations, Open
 ERP automatically generates the corresponding accounting entries in the accounts, in the stock
 journal.
@@ -153,16 +157,16 @@ needed.
 
 You use this system for managing consigned stocks:
 
-* supplier location that is valued in your own accounts or,
+* a supplier location that is valued in your own accounts or,
 
-* location in your own company that isn't valued in your accounts.
+* a location in your own company that isn't valued in your accounts.
 
 .. index:: Chained Location
 
 Linked locations
 ----------------
 
-Locations in Open ERP can be linked between themselves to define paths followed by products. So you
+Locations in Open ERP can be linked between each other to define paths followed by products. So you
 can then define rules such as: all products that enter the warehouse must automatically be sent to
 quality control. The warehouse and quality control are represented by two different locations.
 
@@ -184,7 +188,7 @@ you to have a list of moves to do, proposed by the system and confirmed by the s
 
 .. tip:: Product Logistics
 
-    The module :mod:`stock_location` enables you to generate paths to follow, not just at the level of
+    The module :mod:`stock_location` lets you generate paths to follow, not just at the level of
     locations but also at the level of products.
     It then enables you to manage default locations for a given product or to refer to the products
     as a function of
@@ -197,27 +201,27 @@ automatically be sent to the linked location without any intervening manual oper
 corresponds to the case where, for simplicity, you delete a step in the process so the end user can
 set off the process automatically.
 
-The *automatic without steps* mode won't include the additional stock move but will change the
+The ``automatic without steps`` mode won't include the additional stock move but will change the
 destination move transparently to assign the linked the location. You could then assign a
 destination location to which you send all the products that arrive in your warehouse. The
 storesperson will modify the goods receipt note.
 
 If there is a linkage to do, the field :guilabel:`Type of linked location` lets the destination
 location be determined. If the field is set to 'customer', the location is given by the properties
-of the partner form. If the field is set to 'fixed', the destination location is given by the field
+of the partner form. If the field is set to ``fixed`` , the destination location is given by the field
 :guilabel:`Location if link is fixed`.
 
 Some operations take a certain time between order and execution. To account for this lead time, you
 can set a value in days in the field :guilabel:`Link lead time`. Then the extra move (automatic or
-not) will be carried out several days after the original move. If you use the mode 'automatic
-without step', the lead time is inserted directly into the initial order. In this way you can add
+not) will be carried out several days after the original move. If you use the mode ``automatic
+without steps``, the lead time is inserted directly into the initial order. In this way you can add
 security lead times at certain control points in the warehouse.
 
 Case of structuring locations
 -----------------------------
 
 You'll see in the next part that linking locations lets you manage a whole series of complex cases
-in manageing production efficiently:
+in managing production efficiently:
 
 * handling multiple operations for a customer order,
 
@@ -249,8 +253,8 @@ You use the following stock move in Open ERP to simulate these operations:
 * Delivery Order: Output > Customer.
 
 The first operation is automatically generated by the customer order. The second is then generated
-by the stock management by showing that the 'Output' location is linked to the 'Customer' location.
-That then gives the two operations waiting. If the 'Output' location isn't situated beneath the
+by the stock management by showing that the ``Output`` location is linked to the ``Customer`` location.
+That then gives the two operations waiting. If the ``Output`` location isn't situated beneath the
 stock location you then have to move the item from stock to the place that the item is prepared.
 
 Some companies don't want to work in two steps, because it just seems like extra work to have to
@@ -287,6 +291,7 @@ You can then set the locations a product or a routing must go through on the rel
 products that enter the production chain will automatically follow the predetermined path.
 
 .. figure:: images/stock_product_path.png
+   :scale: 50
    :align: center
 
    *Logistics for a given product*

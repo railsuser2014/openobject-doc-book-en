@@ -17,7 +17,7 @@ need to get the tasks completed. All of the necessary operations are carried out
 
 	In Open ERP a project is represented by a set of tasks for completion.
 	Projects have a tree structure that can be divided into phases and sub-phases.
-	This structure is very useful for work organization
+	This structure is very useful for work organization.
 
 	Whereas analytic accounts look at the past activities of the company, project management's role is
 	to plan the future.
@@ -36,16 +36,27 @@ Most client projects are represented by:
 Defining a project and its tasks
 --------------------------------
 
-To define a new project, go to the menu :menuselection:`Project Management --> Configuration -->
-Projects` and click :guilabel:`New`.
+To define a new project, go to the menu :menuselection:`Project Management --> Projects --> New Project`.
+Give your new project a :guilabel:`Project Name`.
 
-.. todo:: What?
-
- :menuselection:`Project Management --> All projects`
+You can put this project into a hierarchy, as a child of a :guilabel:`Parent Project`, and
+give it a :guilabel:`Project Manager`. 
+You can also give it a general duration by completing :guilabel:`Starting Date` and 
+:guilabel:`Expected End`.
 
 By checking the box :guilabel:`Warn manager`, you configure the system to send the project manager
-an Open ERP request every time that a task is closed.
+an Open ERP request every time that a task is closed. 
+You can also link to a :guilabel:`Working Time` category, and an :guilabel:`Analytic Account`.
+And you add :guilabel:`Project Members` as you need.
 
+.. note:: Warn Customer setup
+
+   If you check :guilabel:`Warn customer`, you should define a page header and footer in the
+   :guilabel:`Partner Info` tab for use in an email. 
+   Open ERP prepares an email that the user can send to the client
+   each time that a task is completed. The contents of this email are based on details of the project
+   task, and can be modified by the user before the email is sent.
+   
 The status of a project can take the following values:
 
 * \ ``Open``\  : while the project is being carried out,
@@ -55,13 +66,6 @@ The status of a project can take the following values:
 * \ ``Canceled``\  : if the project has been canceled and therefore aborted,
 
 * \ ``Done``\  : the project has been successfully completed.
-
- *Partner Info*
-
-If you check the box :guilabel:`Warn customer`, you should define a page header and footer in that
-same tab for use in an email. Open ERP then prepares an email that the user can send to the client
-each time that a task is completed. The contents of this email are based on details of the project
-task, and can be modified by the user before the email is sent.
 
 .. note:: Study of client satisfaction
 
@@ -75,7 +79,7 @@ task, and can be modified by the user before the email is sent.
 Once a project has been defined you can code in the tasks to be done. You've two possibilities for
 this:
 
-*  *Tasks*
+* from the :guilabel:`ACTION` link button :guilabel:`Create a task` to the right of the project form, 
 
 * from the menu :menuselection:`Project Management --> All Tasks`, create a new task and assign it
   to an existing project.
@@ -83,7 +87,7 @@ this:
 Managing tasks
 --------------
 
-Each task contains one of the following statuses, depending on the state:
+Each task must adopt one of the following states:
 
 * \ ``Draft``\  : the task has been entered but hasn't yet been validated by the person who will
   have to do it,
@@ -101,24 +105,23 @@ leave it unassigned so that nobody specific will be responsible: various team me
 made jointly responsible for taking on tasks that they have the skills for.
 
 .. figure::  images/service_task.png
+   :scale: 50
    :align: center
 
    *Tasks in project management*
 
 Each user then manages his or her own task using the different available menus. To open the list of
 unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project
-Management --> My Tasks --> My Open Tasks`. Or to open the unassigned tasks, go to
-:menuselection:`Project Management --> All Tasks --> Unassigned Tasks` and then select \ ``Draft``\
+Management --> Tasks --> My Tasks`. Or to open the unassigned tasks, go to
+:menuselection:`Project Management --> Tasks --> All Tasks --> Unassigned Tasks` and then select \ ``Draft``\
 and \ ``Open``\   tasks from that list.
 
 .. tip:: Shortcuts
 
-	Every user should create a link in their own shortcuts to the :menuselection:`My Open Tasks` menu because they'll
+	Every user should create a link in their own shortcuts to the :menuselection:`My Tasks` menu because they'll
 	have to consult this menu several times a day.
 
-.. todo:: what is this?
-
- *Task Work*  *Effective hours*
+.. todo:: what is this? *Task Work*  *Effective hours*
 
 .. index::
    pair: module; project_timesheet
@@ -126,13 +129,16 @@ and \ ``Open``\   tasks from that list.
 .. note:: Tasks and timesheet
 
 	The module :mod:`project_timesheet` gives you a way of creating the day's timesheet automatically
-	from
-	the effective work done for each of the different tasks.
+	from the actual work done for each of the different tasks.
 	This way you don't have to encode service times twice – once for the project task and once for
 	the timesheet.
 
 	When you want to complete your timesheet, use the menu :menuselection:`Human Resources -->
 	Timesheets --> My Timesheets --> Import projects`.
+
+.. todo::  this menu is not found 
+
+.. _sect-projroles:
 
 Assigning roles: account manager and project manager
 ----------------------------------------------------
@@ -153,8 +159,6 @@ makes the project happen, organizing and sub-contracting the different project t
 manager would often be responsible for a development team to carry the project out, and generally
 has a technical profile.
 
-.. todo: What are these doing here? *Account Manager*  *Project manager*  *Partner Info*
-
 If you don't make any such distinction in the roles then put the same person in both fields.
 
 .. index::
@@ -163,7 +167,7 @@ If you don't make any such distinction in the roles then put the same person in 
 Invoicing tasks
 ---------------
 
-Several methods of invoicing have already been reviewed:
+Several methods of invoicing have already been described:
 
 * invoicing from a sales order,
 
@@ -173,7 +177,7 @@ Several methods of invoicing have already been reviewed:
 
 * manual invoicing.
 
-Although invoicing tasks might appear useful in certain situations, it's best to invoice from the
+Although invoicing tasks might appear useful, in certain situations it's best to invoice from the
 service or purchase orders instead. These methods of invoicing are more flexible, with various
 pricing levels set out in the pricelist, and different products that can be invoiced. And it's
 helpful to limit the number of invoicing methods in your company by extending the use of an
@@ -181,16 +185,16 @@ invoicing method that you already have.
 
 If you want to connect your Sales Order with Project Management tasks you should create such
 products as \ ``Consultant``\  , and \ ``Senior Developer``\  . These products should be configured
-with :guilabel:`Product Type` \ ``Service``\  , a :guilabel:`Procurement Method` of \ ``Make to Order``\  , and a
-:guilabel:`Supply Method` (on the second tab :guilabel:`Procurement`) of \ ``Produce``\  . Once you've set this up,
-Open ERP automatically creates a task in the project management when the order is approved.
+with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procure Method` of \ ``Make to Order``\  , 
+and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you've set this up,
+Open ERP automatically creates a task in project management when the order is approved.
 
 You can also change some of the order parameters, which affects the invoice:
 
-*  :guilabel:`Shipping Policy` : \ ``Payment before delivery``\   or \ ``Invoice automatically after
-   delivery``\   (at the closure of the task),
+*  :guilabel:`Shipping Policy` : \ ``Payment before delivery``\ or \ ``Invoice on Order After
+   Delivery``\ (when the task is closed),
 
-*  :guilabel:`Invoice On` : \ ``Ordered Quantities``\   or \ ``Delivered quantities``\   (effective hours in
+*  :guilabel:`Invoice On` : \ ``Ordered Quantities``\   or \ ``Shipped Quantities``\   (actual hours in
    the task).
 
 Planning and managing priorities
@@ -205,7 +209,7 @@ project made up of several tasks. In the case of an IT project, for example, whe
 are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and
 so on. When you first open the list of project tasks, they're listed in their sequence order.
 
-.. todo:: More of these labels - why?
+.. todo:: More of these labels - why? 
 
 .. *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent*
 
@@ -222,47 +226,46 @@ project.
 	Open ERP implements the agile methodology Scrum for IT development projects in the :mod:`scrum`
 	module.
 
-	Scrum completes the task system by adding the following concepts:
+	Scrum supplements the task system with the following concepts:
 	long-term planning, sprints, iterative development, progress meetings, burndown chart, and product
 	backlog.
 
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
+   :scale: 50
    :align: center
 
    *Gantt plan, calculated for earliest delivery*
 
 You can set an attendance grid (or the timesheets) in the project file. If you don't specify
 anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a
-grid is specified you can call up a project Gantt chart using the Print button. The system then
+grid is specified you can call up a project Gantt chart from right-hand toolbar. The system then
 calculates a project plan for earliest delivery using task ordering and the attendance grid.
 
 .. tip:: Calendar view
 
-	Open ERP's web client can give you a calendar view of the different tasks.
+	Open ERP can give you a calendar view of the different tasks in both the web client and the GTK client.
 	This is all based on the deadline data and displays only tasks that have a deadline.
 	You can then delete, create or modify tasks using simple drag and drop.
 
-	.. todo:: - is this true any more?
-
-	This view isn't available in Open ERP's GTK client.
-
 	.. figure::  images/service_task_calendar.png
+	   :scale: 50
 	   :align: center
 
        *Calendar view of the system tasks*
 
 .. index:: Delegation
 
-Efficient delegation
----------------------
+Task delegation
+---------------
 
 To delegate a task to another user you can just change the person responsible for that task. However
 the system doesn't help you track tasks that you've delegated, such as monitoring of work done, if
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
+   :scale: 50
    :align: center
 
    *Form for delegating a task to another user*

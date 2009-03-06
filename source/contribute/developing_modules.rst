@@ -299,7 +299,7 @@ List are plurals:
 If you want to create menu that filters on the user (*All* and *My*) put them at the same level:
 
   * Tasks
-  * My Taks
+  * My Tasks
 
 And not:
 

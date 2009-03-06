@@ -7,7 +7,7 @@ expenses to the employee. The receipts encountered most frequently are:
 
 * car travel, reimbursed per unit of distance (mile or kilometer),
 
-* restaurant expenses, reimbursed based on the bill,
+* subsistence expenses, reimbursed based on the bill,
 
 * other purchases, such as stationery and books, destined for the company but carried out by the
   employee.
@@ -16,6 +16,7 @@ An integrated process
 ---------------------
 
 .. figure::  images/service_expense_workflow.png
+   :scale: 50
    :align: center
 
    *Process for dealing with expense reimbursements*
@@ -34,7 +35,7 @@ costs incurred are then added to the supplementary cost of the analytic account 
 approved.
 
 You often need to invoice expenses to a client, depending on the precise contract that's been
-negotiated. Traveling and subsistence expenses are generally handled this way. These can be
+negotiated. Travelling and subsistence expenses are generally handled this way. These can be
 recharged to the client at the the end of the month if the contract price has been negotiated plus
 expenses.
 
@@ -55,11 +56,10 @@ Claiming expenses
    pair: module; hr_expense
 
 Install the module :mod:`hr_expense` to automate the management of expense claims. Users can then
-enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> My Expenses`.
+enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> New Expenses Sheet`
+and review them using menus in :menuselection:`Human Resources --> Expenses --> My Expenses`.
 
-\ ``Draft``\
-
-The various expenses accepted by the company must previously have been created using Open ERP's
+Templates for the various expenses accepted by the company must previously have been created using Open ERP's
 product form. You could, for example, create a product with the following parameters for the
 reimbursement of travel expenses by car at 0.25 per kilometer:
 
@@ -78,14 +78,14 @@ period. At the end of the period (week or month) she can confirm her expense for
 :guilabel:`Confirm` button on the form. This puts it into the state \ ``Waiting for validation``\  .
 
 At the end of the period the department manager can access the list of expense forms waiting for
-approval using the menu :menuselection:`Human resources --> Expenses --> All expenses --> Expenses
-waiting for validation`.
+approval using the menu :menuselection:`Human Resources --> Expenses --> All expenses --> Expenses
+waiting validation`.
 
 .. tip:: Role Management
 
 	You must assign the role :guilabel:`Human Resources – Expenses` to a user to enable that user to approve
 	these expenses.
-	You'd generally assign this role only to those people responsible for projects or departments
+	You'd generally assign this role only to those people responsible for projects or departments.
 
 	You can also assign the role :guilabel:`Human Resources – Invoicing Expenses` to users responsible for
 	creating invoices.
@@ -105,8 +105,6 @@ associated with the project.
 
 Invoicing from timesheets lets you prepare your invoices all within the one integrated system - all
 the expenses and timesheets for a project's client.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

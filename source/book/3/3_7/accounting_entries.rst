@@ -39,6 +39,7 @@ A data entry form for statements then opens as shown in figure :ref:`fig-accstat
 .. _fig-accstate:
 
 .. figure::  images/account_statement.png
+   :scale: 50
    :align: center
 
    *Data entry form for a bank statement*
@@ -81,6 +82,7 @@ not the GTK client) and then press the :kbd:`<F1>` key while your cursor is in t
 :guilabel:`Reconcile` field on the payment line.
 
 .. figure::  images/account_statement_reconcile.png
+   :scale: 50
    :align: center
 
    *Reconciliation from data entry of the bank statement*
@@ -259,6 +261,7 @@ could reconcile from two to nine entries at the same time. For example, if you s
 Open ERP will reconcile three invoices and two payments if the total amounts correspond.
 
 .. figure::  images/account_reconcile_auto.png
+   :scale: 50
    :align: center
 
    *Form for automatic reconciliation*
@@ -439,6 +442,7 @@ manager to go ahead with payment.
 	value limit conditions.
 
 .. figure::  images/account_payment_workflow.png
+   :scale: 50
    :align: center
 
    *Payments workflow*

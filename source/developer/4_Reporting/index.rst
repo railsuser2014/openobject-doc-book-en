@@ -138,7 +138,8 @@ The parsers are generally put into the folder report of the module. Here is the 
       'time': time,
       })
 
-  report_sxw.report_sxw('report.sale.order', 'sale.order', 'addons/sale/report/order.rml', parser=order, header=True)
+  report_sxw.report_sxw('report.sale.order', 'sale.order', 'addons/sale/report/order.rml', 
+                         parser=order, header=True)
 
 The parser inherit from the report_sxw.rml_parse object and it add to the localcontext, the function time so it will be possible to call it in the report.
 
@@ -316,7 +317,9 @@ XSL stylesheet
 
 .. code-block:: xml
 
-        <?xml version="1.0" encoding="utf-8"?> <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+        <?xml version="1.0" encoding="utf-8"?> <xsl:stylesheet version="1.0" 
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+          xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
             <xsl:template match="/">
 
