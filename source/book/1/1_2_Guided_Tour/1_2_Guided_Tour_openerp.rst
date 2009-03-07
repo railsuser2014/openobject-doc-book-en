@@ -290,7 +290,7 @@ For example if you sell t-shirts in different sizes and colors:
 * the product template is the “T-shirt” which contains information common to all sizes and all
   colors,
 
-* the variants are “Size:S” and “Colour:Red”, which define the parameters for that size and
+* the variants are “Size:S” and “Color:Red”, which define the parameters for that size and
   color,
 
 * the final product is thus the combination of the two – t-shirt in size S and color Red.

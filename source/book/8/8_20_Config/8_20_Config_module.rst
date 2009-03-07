@@ -39,7 +39,7 @@ Modules Recording --> Save Recorded Module`.
 
 	Once your personal configuration has been saved into a module, install the module
 	:mod:`base_module_publish`.
-	This gives you a new possible action Publish Module in the menu :menuselection:`Administration -->
+	This gives you a new possible action :guilabel:`Publish Module` in the menu :menuselection:`Administration -->
 	Modules Manage --> Modules`.
 
 	Use this function to publish your module on the official Open ERP site.

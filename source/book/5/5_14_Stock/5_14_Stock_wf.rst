@@ -187,7 +187,7 @@ Item      Unit              1
 100 Items Unit           0.01
 ========= ============ ======
 
-Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the “Weight”
+Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
 category could be expressed in Kg, Tonnes or Grammes. You can't express them in hours or pieces.
 
 Use the menu :menuselection:`Products --> Configuration --> Units of Measure --> Units of Measure`

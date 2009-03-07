@@ -12,8 +12,8 @@ for staff. Each report must be saved in the document management system as well a
 by email to the customer.
 
 That's not the case in Open ERP. To automatically make Open ERP reports available in the FTP server,
-Open ERP automatically uses "virtual files". You can put virtual files into directories
-that have the special type of "linked resource" and link the virtual files to Open ERP's reports.
+Open ERP automatically uses *virtual files*. You can put virtual files into directories
+that have the special type of *linked resource* and link the virtual files to Open ERP's reports.
 
 .. note:: Virtual Files
 

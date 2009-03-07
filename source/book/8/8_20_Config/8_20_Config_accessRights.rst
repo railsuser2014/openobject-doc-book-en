@@ -34,7 +34,7 @@ company's business processes.
 Groups and Users
 ================
 
-To configure access rights you must start by defining the groups. It's important for the groups to
+To configure access rights you'd start by defining the groups. It's important for the groups to
 be representative of your company's job functions rather than of its individual employees.
 
 So if your finance director is also your sales director, you should create both a Finance Director
@@ -197,7 +197,7 @@ Modification history
 
    *Partner Record history*
 
-Each record in a Open ERP database carries a note of its history. You can then find out who it was
+Each record in a Open ERP database carries a note of its history. You can find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
 :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-
 only, not when it's editable) to display a dialog box showing this information, as shown in the

@@ -9,7 +9,7 @@ Configuring and Administering Open ERP
  You'll learn to configure Open ERP to match it to your company's needs and
  those of each individual user of the system.*
 
-Open ERP gives you great flexibility in the ways of configuring and using it, which let you modify
+Open ERP gives you great flexibility in configuring and using it, letting you modify
 its appearance, the general way it functions and the different analysis tools chosen to match your
 company's needs most closely. These configuration changes are carried out through the user
 interface.
@@ -39,26 +39,26 @@ the ability to approve employee expense requests).
 	*Customization* generally refers to something that requires a bit of technical effort
 	(such as creating specialized code modules) and creates a non-standard system.
 
-	*Configuration* is more closely related – it's the general process of setting all
+	*Configuration* is less radical – it's the general process of setting all
 	the parameters of the software to fit the needs of your system (often called *parameterization*).
-	Configuration is also, by convention, the submenu below each of Open ERP's top-level menus that
+	Configuration is also, by convention, the name of the submenu below each of Open ERP's top-level menus that
 	is accessible only to the administrative user for that section.
 
 	*Personalization* is just that subset of configuration options that shapes the system to the
 	operational needs of a certain person or company.
 
-Using the module *OpenOffice.org Report Designer* you can change any part of any of the reports
+Using the *OpenOffice.org Report Designer* module you can change any part of any of the reports
 produced by the system. The system administrator can configure each report to modify its layout and
 style, or even the data that's provided there.
 
 .. note::  The OpenOffice.org Report Editor
 
 	The OpenOffice.org plug-in enables you not only to configure the reports of the basic products in
-	Open ERP but also to create new report templates.
-	When the user prints these reports through Open ERP's client interface, OpenOffice.org opens with
-	the report containing all the selected data.
+	Open ERP but also to create entirely new report templates.
+	When the user uses Open ERP's client interface, OpenOffice can create a report template 
+	that has access to all the data available to any Open ERP document type.
 
-	You can also easily create fax documents, quotations, or any other commercial document.
+	You can easily create fax documents, quotations, or any other commercial document.
 	This functionality enables you to considerably extend the productivity of your salespeople who have
 	to send many proposals to customers.
 
@@ -81,6 +81,7 @@ data in one single go.
 .. raw:: html
 
     </div>
+    
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

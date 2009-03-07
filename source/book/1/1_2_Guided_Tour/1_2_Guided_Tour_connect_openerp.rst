@@ -278,7 +278,7 @@ which gives it more advanced rights to configure new users.
 .. tip::  Roles, Groups and Users
 
 	Users and groups provide the structure for specifying access rights to different documents. Their
-	setup answers the question "Who has access to what?"
+	setup answers the question “Who has access to what?”
 
 	Roles are used in business processes for permitting or blocking certain steps in the workflow of a
 	given document. For example you can assign the role of approving an invoice. Roles answer the

@@ -75,8 +75,8 @@ An Open ERP system is formed from three main components:
 
 .. note::   eTiny
 
-    The web application used to be known as "eTiny".
-    Its name changed to "client-web" as Tiny ERP was renamed to Open ERP,
+    The web application used to be known as “eTiny”.
+    Its name changed to “client-web” as Tiny ERP was renamed to Open ERP,
     but its characteristics have generally stayed the same.
 
 .. index::
