@@ -1,6 +1,6 @@
 
 The Open ERP solution
-----------------------
+=====================
 
 Open ERP's management of documents is unique and totally innovative in its integrated approach. Its
 complete integration with the company's management system solves most of the problems that are
@@ -25,13 +25,13 @@ encountered when you use independent document management systems:
   efficiency.
 
 Getting Started
-================
+---------------
 
 This section is about how to get started with the document management system from its installation
 to advanced use with FTP access.
 
 Installation
--------------
+^^^^^^^^^^^^
 
 .. index::
    pair: module; document

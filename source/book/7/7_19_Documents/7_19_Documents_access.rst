@@ -2,7 +2,7 @@
 .. index:: FTP
 
 Internal and external access using FTP
----------------------------------------
+======================================
 
 .. index:: Directory
 
@@ -20,7 +20,7 @@ document set. You can use the structure automatically proposed by Open ERP from 
    *Structure of directories when the :mod:`document` module has been installed*
 
 In addition to the usual access to documents through Open ERP, you will be able to connect to them
-directly through the filesystem using the FTP protocol. To connect to the FTP server, use the
+directly through the file system using the FTP protocol. To connect to the FTP server, use the
 following address:
 
 ========= ===========================================
@@ -35,15 +35,15 @@ Password  Your Open ERP password
 
 .. note:: FTP server
 
-   These comment about an FTP server may appear a bit technical, but
-   it's just a standard for getting hold of files without worrying too much about the platform
+   These comments about an FTP server may appear a bit technical, but
+   it's just a general standard for getting hold of files without worrying too much about the platform
    standards (Windows, Mac, Linux, or other Unix-like system).
    So FTP is just a way of getting access to files without needing to use an Open ERP client.
-   There are other ways, but FTP proved itself to the developers to be the one that performed best
+   There could have been other ways, but FTP proved itself to the developers to be the one that performed best
    at lowest cost.
 
-Once you're connected using FTP you appear to get to the root of a directory for the document
-management system. Once you enter the directory you find a structure that matches the structure
+Once you're connected using FTP you get to the root of a directory for the document
+management system. Once you enter that directory you find a structure that matches the structure
 defined in Open ERP.
 
 .. figure::  images/document_ftp_structure_root.png
