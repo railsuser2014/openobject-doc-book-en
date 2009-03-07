@@ -33,7 +33,7 @@ above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
-   :scale: 95
+   :scale: 75
 
    *Project Dashboard*
 
@@ -51,10 +51,10 @@ home page of any user.
 	general an employee uses only a small part of the system's functions.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the right of
+	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the far right of
 	:guilabel:`SHORTCUTS`.
 
-	To change or replace a link click on the :guilabel:`SHORTCUTS` link. Open ERP then opens a list of
+	To change or replace a link click :guilabel:`SHORTCUTS`. Open ERP then opens a list of
 	editable shortcuts.
 
 The following sections present an overview of the main functions of Open ERP. Some areas are
@@ -214,10 +214,11 @@ They contain some of the demonstration data that you installed when you created 
   single: Accounting and finance
 ..
 
-Accounting and finance
-----------------------
+Financial Management
+--------------------
 
-The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. A brief overview of
+The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. 
+A brief overview of
 the functions provided by these modules is given here as an introduction.
 
 Accounting is totally integrated into all of the company's functions, whether it's general,
@@ -319,7 +320,7 @@ of its available variants briefly rather than every item as an entire product.
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
-			than 160 completely different products. This module is available in the addons-extra list (it had
+			than 160 completely different products. This module is available in the ``addons-extra`` list (it had
 			not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The :menuselection:`Products` menu gives you access to the definition of products and their
@@ -559,6 +560,8 @@ All projects are hierarchically structured. You can review all of the projects f
 line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical
 representation of the plan.
 
+.. todo:: This isn't working. Gantt charts aren't displaying right.
+
 .. figure:: images/familiarization_project_gantt.png
    :scale: 50
    :align: center
@@ -574,8 +577,8 @@ Project Management is described in :ref:`ch-projects`.
    single: Production Management
 ..
 
-Production Management
----------------------
+Manufacturing
+-------------
 
 Open ERP's production management capabilities enable companies to plan, automate, and track
 manufacturing and product assembly. Open ERP supports multi-level Bills of Materials and lets you
@@ -616,6 +619,28 @@ Confirmation of an order triggers delivery of the goods, and invoicing timing is
 setting in each individual order.
 
 Delivery charges can be managed using a grid of tariffs for different carriers.
+
+Document Management
+-------------------
+
+Open ERP integrates a complete document management system that not only 
+carried out the functions of a standard DMS, but also integrates with all
+of its system-generated documents such as Invoices and Quotations. What's more
+it keeps all of this synchronized.
+
+Process Management
+------------------
+
+Many documents have a workflow of their own, and also take part in cross-functional processes.
+Take a document that could be expected to have a workflow, such as a Sales Order, and
+then click the :guilabel:`Process` button above its form to see the full process.
+
+You can see the position of that particular document in its process, if you have selected
+a single document, by the solid bar on one of the process nodes. You also link
+to documents and menus for each of the stages.
+
+Alongside the document management system, the process visualization features make Open ERP
+far better for documentation than similar systems.
 
 Other functions
 ---------------

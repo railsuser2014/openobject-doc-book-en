@@ -46,7 +46,7 @@ as shown in screenshot :ref:`fig-oech2-main`:
 .. _fig-oech2-main:
 
 .. figure:: images/main_window_openerp_ch02.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *The Main Menu of the openerp_ch02 database*
@@ -152,8 +152,8 @@ As administrator you can install a new main working language into the system.
 	   to be able to do this, so you may not be successful here.)
 
 To see the effects of this installation change the preferences of your user to change the working
-language (you may first need to ensure that you have selected English as your language before
-you're given the French option). 
+language (you may first need to ensure that you have explicitly selected English as your language,
+rather than keep the default, before you're given the French option). 
 The main menu is immediately translated in the selected language. If you're using the GTK
 client you'll first have to close the menu then open a new main menu to start seeing things in the
 new language.
@@ -192,7 +192,7 @@ Send a request to get an understanding of its functionality:
 
 	#. Click :guilabel:`New` to create and send a new request.
 
-	#. Complete the subject of the request, such as \ ``How are you?``\  then give a description of the
+	#. Complete the subject of the request, such as \ ``How are things?``\  then give a description of the
 	   enquiry in the field.
 
 	#. Click the :guilabel:`Search` button to the right of the :guilabel:`To` field and select
@@ -203,10 +203,9 @@ Send a request to get an understanding of its functionality:
 	   which could, for example, be a partner or a quotation or a disputed invoice.
 
 	#. Click :guilabel:`Send` to send the request to the intended recipient – that's yourself in this
-	   case. Then click :guilabel:`Main Menu` to return to the original screen.
+	   case. Then click :guilabel:`MAIN MENU` to return to the original screen.
 
 .. figure:: images/request_tab.png
-   :scale: 50
    :align: center
 
    *Creating a new request*
@@ -269,7 +268,7 @@ Because you logged in as Administrator, you have all the access you need to conf
 system. A second user, \ ``Demo User``\  , is also present in the system as part of the
 demonstration data. Click the \ ``Demo User``\   name to open a non-editable form on that user.
 
-Click the :guilabel:`Security`  tab to see that the demo user is a member of only the ``Employees`` group,
+Click the :guilabel:`Security`  tab to see that the demo user is a member of only the ``Employee`` group,
 has no roles
 and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you
 follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group,
@@ -343,7 +342,7 @@ them to get a feel for their use.
 
 .. figure:: images/partner.png
    :align: center
-   :scale: 80
+   :scale: 75
 
    *Partner form*
 
@@ -373,7 +372,7 @@ Components Supplier`. You'll see that if a company is in a subcategory (such as
 as :guilabel:`Supplier`).
 
 .. figure:: images/main_window_partner_menu_config.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Categories of partner in a hierarchical structure, for example Customer, Prospect, Supplier*

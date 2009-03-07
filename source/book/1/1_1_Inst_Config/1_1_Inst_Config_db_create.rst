@@ -21,7 +21,7 @@ form:
 *  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system
    administrator haven't changed it.
 
-*  :guilabel:`New database name` : \ ``openerp_ch02``\  .
+*  :guilabel:`New database name` : \ ``openerp_ch01``\  .
 
 *  :guilabel:`Load Demonstration Data` checkbox : \ ``checked``\
 
@@ -45,13 +45,11 @@ on a new installation.
    Anyone who knows the super-administrator password has complete access to the data on the server
    – able to read, change and delete any of the data in any of the databases there.
 
-   .. todo:: this isn't right any more
-
    After first installation, the password is ``admin``. You can change it through the GTK client
-   from the menu :menuselection:`File --> Database ... --> Administrator Password`, or through the
-   web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Manage` on the
+   from the menu :menuselection:`File --> Databases --> Administrator Password`, or through the
+   web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Databases` on the
    login screen, and then clicking the :guilabel:`Password` button on the Management screen. This
-   password is stored in a configuration file outside the database, so your server systems
+   password is stored in a configuration file outside the database, so a server systems
    administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
@@ -60,19 +58,26 @@ on a new installation.
 
    *Changing the super-administrator password through the web client*
 
-.. figure:: images/create_new_db_GTK.png
-   :scale: 50
-   :align: center
-
-   *Creating a new database through the GTK client*
-
-* If you're using the GTK client, choose :menuselection:`Files --> Database --> New database`  in
+* If you're using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
   the menu at the top left. Enter the super-administrator password, then the name of the new database
   you're creating.
+  
+  .. figure:: images/create_new_db_GTK.png
+     :scale: 50
+     :align: center
 
-* If you're using the web client, click :guilabel:`Manage`  on the login screen, then
-  :guilabel:`Create` on the database management page. Enter the super-administrator password, then the
+     *Creating a new database through the GTK client*  
+
+* If you're using the web client, click :guilabel:`Databases` on the login screen, then
+  :guilabel:`Create` on the database management page. Enter the super-administrator password, and the
   name of the new database you're creating.
+  
+* In both cases you'll see a checkbox that determines whether you load demonstration data or not.
+  The consequences of checking this box or not affect the **whole use** of this database.
+
+* In both cases you'll also see that you can choose the Administrator password. This makes your 
+  database quite secure because you can ensure that it is unique from the outset.
+  (In fact many people find it hard to resist ``admin`` as their password!)
 
 Database openerp_ch01
 ---------------------
@@ -84,13 +89,13 @@ it's installed. Choose the default language for this database (English for many 
 book), then click :guilabel:`Ok`.
 
 Wait for the message showing that the database has been successfully created, along with the user
-accounts and passwords (\ ``admin/admin``\   and \ ``demo/demo``\  ). Now you've created this seed
-database you can extend it without knowing the super administrator password.
+accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you've created this seed
+database you can extend it without having to know the super administrator password.
 
 .. tip::   User Access
 
 	The combination of username/password is specific to a single database. If you have administrative
-	rights to a database you can modify the predefined users.
+	rights to a database you can modify all users.
 
  	.. index::
 	   pair: module; users_ldap
@@ -99,18 +104,12 @@ database you can extend it without knowing the super administrator password.
 	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
 	Open ERP databases. Using this, many databases can share the same user account details.
 
-.. figure:: images/create_new_db_web.png
-   :scale: 50
-   :align: center
-   
-   *Creating a new database through the web client*
-
 .. note::  Failure to create a database
 
 	How do you know if you've successfully created your new database?
 	You're told if the database creation has been unsuccessful.
 	If you have entered a database name using prohibited characters (or no name, or too short a name)
-	you will be alerted by the dialog box Bad database name! explaining how to correct the error.
+	you will be alerted by the dialog box :guilabel:`Bad database name!` explaining how to correct the error.
 	If you've entered the wrong super-administrator password or a name already in use
 	(some names can be reserved without your knowledge), you'll be alerted by the dialog box
 	:guilabel:`Error during database creation!`.
@@ -159,8 +158,8 @@ As a super-administrator you've not only got rights to create new databases, but
 * restore databases.
 
 All of these operations can be carried out from the menu :menuselection:`File --> Databases... -->
-Backup databases` in the GTK client, or from :menuselection:`Manage...`  in the web client's Login
-screen.
+Backup databases` in the GTK client, or from the :guilabel:`Database` button in the web client's 
+:guilabel:`Login` screen.
 
 .. index::
    single: Database; Duplicate
@@ -177,8 +176,8 @@ screen.
 	This can be a useful way of making a test database from a production database. You can try out the
 	operation of a new configuration, new modules, or just the import of new data.
 
-Future versions of Open ERP may only give you access to some of these database functions in a
-special development mode, so that your security is enhanced in normal production use.
+A system administrator can configure Open ERP to restrict access to some of these database functions
+so that your security is enhanced in normal production use.
 
 You are now ready to use databases from your installation to familiarize yourself with the
 administration and use of Open ERP.
@@ -238,9 +237,8 @@ server by the server software).
 	server/addons).
 
 Any user of Open ERP who has access to the relevant administration menus can then upload any new
-functionality, so you'd probably disable this capability for production use. You'll see examples of
+functionality, so you'd certainly disable this capability for production use. You'll see examples of
 this uploading as you make your way through this book.
-
 
 
 .. Copyright © Open Object Press. All rights reserved.

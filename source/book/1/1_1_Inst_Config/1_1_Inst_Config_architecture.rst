@@ -53,7 +53,7 @@ An Open ERP system is formed from three main components:
 
 .. figure:: images/terp_arch_1.png
    :align: center
-   :scale: 95
+   :scale: 90
    
    *The architecture of Open ERP*
 
@@ -83,11 +83,9 @@ An Open ERP system is formed from three main components:
    single: PostgreSQL
 ..
 
-.. note::   PostgreSQL
+.. note::   PostgreSQL, the relational and object database management system.
 
-	PostgreSQL is a relational and object database management system.
-
-    It's a free high-performance system that compares with other database
+    It's a free and open-source high-performance system that compares well with other database
     management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2
     and Microsoft SQL Server (all proprietary). It runs on all types of
     Operating System, from Unix/Linux to the various releases of Windows, via
