@@ -134,7 +134,7 @@ analyzed and involved in change. The same principles also apply to larger compan
 Structure of this book
 ======================
 
-The first part starts with the installation of Open ERP. If you have already installed Open ERP you
+Part One, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
 with Open ERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
 scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
@@ -144,22 +144,23 @@ Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Manage
 elements necessary for managing an efficient sales department there, and automating tasks to monitor
 performance.
 
-Part Three, :ref:`part-genacct`,  is devoted to general accounting and its key role in the management of the whole
+Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
 enterprise.
 
 Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
-human resources for managing projects,
+Human Resources for managing projects,
 through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
 can help you to optimize your leadership of an enterprise.
 
-Part Five, :ref:`part-phys`, describes the physical movement of stocks and their manufacture.
+Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
+(the transformation or products and services into other products).
 
-Part Six, :ref:`part-trade`, deals with purchasing and selling goods and services.
+Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
 
-Part Seven, :ref:`part-qual`, is focused on the process description and documentation handling that Open ERP
+Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that Open ERP
 manages.
 
-Finally Part Nine, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
+Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
 ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 

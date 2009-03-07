@@ -5,11 +5,11 @@ In this section you'll enter the details of management and control of stocks.
 
 .. todo:: GOT TO HERE - I'm sure that this is Scheduler not Req Calc
 
-Requirements Calculation
-------------------------
+Requirements Calculation / Scheduling
+-------------------------------------
 
 Requirements calculation is the calculation engine that plans, prioritizes and starts the automated
-restocking as a function of rules defined in the products.
+procurement as a function of rules defined in the products.
 
 .. note:: Requirements Calculation
 
@@ -27,21 +27,23 @@ restocking as a function of rules defined in the products.
 Just in Time
 ------------
 
-By default, requirements calculation starts automatically once a day. You're advised to make this
-run overnight to ensure that the system doesn't slow down under the heavy load of scheduling when
-you're also trying to use it interactively yourselves. To specify the time it starts use the menu
+By default, scheduling starts automatically once a day. You should make this
+run happen overnight to ensure that the system doesn't slow down under a heavy load of scheduling when
+you're also trying to use it interactively yourselves. 
+
+To set the time it starts use the menu
 :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Select the rule
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 .. index::
    pair: module; mrp_jit
 
-Some companies want to plan the orders progressively as they are entered so they don't wait until
-the procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
-it's installed each requirement (production or procurement order) will be planned in real time as
-soon as it's been confirmed.
+Some companies want to plan orders progressively as they are entered so they don't wait until
+procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
+it's installed, each requirement (that could result in a Production or Purchase Order) 
+will be planned in real time as soon as it's been confirmed.
 
-Then if you make a customer order with a product that's *Make To Order* the quotation request for a
+Then if you make a customer order with a product that's ``Make To Order`` the quotation request to a
 supplier will be generated.
 
 .. index::
@@ -50,18 +52,19 @@ supplier will be generated.
 ..tip :: Delivery from the supplier or to the customer
 
     The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
-    the supplier to the customer.
-    The logic to follow is configured for each products and affects only the products whose lines
-    are marked “Make to Order”.
+    the supplier to the customer. At the time of writing this module is in ``addons-extra`` .
+    The logic that the product follows is configured individually for each product and affects only those 
+    products marked ``Make to Order``.
 
-This mode is not always advisable. Each order is handled once it's been confirmed. Then if an order
+This mode is not always sensible. Each order is processed immediately it's been confirmed. So if an order
 is to be delivered in three months the scheduler will reserve goods in stock for each order once
-it's been confirmed. It would have been more efficient to leave these products available for other
+it's been confirmed. It would have been more sensible to leave these products available for other
 orders.
 
-If a customer order is configured 'From Order', the scheduler will directly create the corresponding
-supplier quotation request. Outside, it would have been preferable to wait for several weeks if the
-lead time enabled you to group the purchase with other future orders.
+If a Purchase Order's :guilabel:`Invoicing Control` is configured ``From Order``, 
+the scheduler will immediately create the corresponding
+supplier quotation request. It would have been preferable to delay for several weeks if 
+you could have used the lead time to group the purchase with other future orders.
 
 So the negative effects of working with the Just in Time module are:
 
@@ -76,7 +79,7 @@ Planning
 --------
 
 You've seen that most Open ERP documents can be changed in a planning view. It's the same for
-deliveries and goods receipts. You can put them into a calendar view at all times to plan your
+deliveries and goods receipts. You can put them into a calendar view at any time to plan your
 deliveries or goods receipts.
 
 .. figure:: images/stock_planning.png
@@ -85,7 +88,7 @@ deliveries or goods receipts.
 
    *Planning the deliveries of customer products*
 
-The planned dates on a packing order are put on each stock move line. Then if you have a packing
+Planned dates on a packing order are put on each stock move line. Then if you have a packing
 order containing several products you don't have to have all of the lines on the order delivered on
 the same day. The minimum and maximum dates on a packing order show the earliest and latest dates on
 the stock move lines for the packing.
@@ -99,14 +102,14 @@ automatically be moved as a result.
 Management of partial deliveries
 --------------------------------
 
-Partial deliveries, sometimes call Back Orders, are generated automatically by Open ERP. When you
+Partial deliveries, sometimes called Back Orders, are generated automatically by Open ERP. When you
 confirm a customer delivery or the receipt of products from suppliers, Open ERP asks you to confirm
 the quantity delivered or received.
 
-If you leave the quantities alone, Open ERP confirms and closes the order for delivery or reception.
-If you modify a quantity, Open ERP will automatically generate a second delivery or reception order
+If you leave the quantities alone, Open ERP confirms and then closes the order for delivery or receipt.
+If you modify a quantity, Open ERP will automatically generate a second delivery or goods receipt document
 for the remaining quantities. The first will be confirmed and the second will remain on the list of
-deliveries (or receipts) waiting.
+waiting deliveries (or receipts).
 
 .. figure:: images/stock_picking_wizard.png
    :scale: 50
@@ -115,21 +118,21 @@ deliveries (or receipts) waiting.
    *Confirmation screen for delivered quantities*
 
 When you open the list of current deliveries, you find the field :guilabel:`Partial delivery` which
-shows the reference number of the first delivery sent to the customer. That enables you to easily
-find the partial orders delivered so that you can treat them as a priority.
+shows the reference number of the first delivery sent to the customer. That enables you to quickly
+find the deliveries for partial orders each day so that you can treat them as a priority.
 
 Receiving supplier products
 ---------------------------
 
-Open ERP supports three approaches to controlling data entry about products ordered from suppliers:
+Open ERP supports three approaches to controlling data entry on products ordered from suppliers:
 
 * Manual data entry,
 
-* Work by controlling the receipts pre-generated by the system,
+* Using the goods receipt documents pre-generated by the system,
 
-* Work by selecting the products waiting from the supplier, independent of good receipt documents.
+* Selecting from all the products waiting from the supplier, independently from goods receipt documents.
 
-You'll see the configuration of the supplier order in detail in :ref:`ch-purchase`.
+You can see how the configuration of the supplier order affects receipts in detail in :ref:`ch-purchase`.
 
 .. index::
    single: Goods receipt
@@ -147,15 +150,15 @@ receipt form.
 
    *Manual data entry for product receipt*
 
-Confirming pre-generated goods received
----------------------------------------
+Confirming pre-generated goods receipt documents
+------------------------------------------------
 
-If you use supplier orders in Open ERP, product receipts are automatically generated by the system
-when the purchase order is confirmed. You don't then have to enter any date, but just confirm that
+If you use Supplier Orders in Open ERP, product receipts are automatically generated by the system
+when the purchase order is confirmed. You don't have to enter any date, just confirm that
 the quantities ordered match the quantities received.
 
 In this case Open ERP generates a list of all products waiting to be received from the menu
-:menuselection:`Stock Management --> Incoming Products --> Packings to Process`.
+:menuselection:`Stock Management --> Incoming Products --> Packing to Process`.
 
 .. figure:: images/stock_packing_in.png
    :scale: 50
@@ -165,22 +168,23 @@ In this case Open ERP generates a list of all products waiting to be received fr
 
 Then you just look for the  corresponding entry using the supplier name or order reference. Click it
 and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP
-will automatically generate another receipt that will be put in waiting. You can let remain open or
-cancel it if products missed by your supplier will never be delivered.
+will automatically generate another receipt document that will be set open, waiting for the 
+remaining deliveries. You can leave it open or
+cancel it if you know that products missed by your supplier will never be delivered.
 
 Confirmation by selecting products waiting
 ------------------------------------------
 
-The approach shown above is very useful if product receipt corresponds to the original orders. Only
-if your suppliers deliver items that don't necessarily coincide with the orders it is easier to work
-by products received rather than by orders.
+The approach shown above is very useful if goods receipts correspond to the original orders. 
+If your suppliers deliver items that don't necessarily coincide with the orders, however,
+it is easier to work by products received rather than by orders.
 
 In this case you can manually create a new goods receipt using the menu :menuselection:`Stock
-Management --> Incoming Products --> New Reception Packing`. Instead of entering the product lines
+Management --> Incoming Products --> New Reception Packing`. Instead of entering all the product lines
 manually you can click the button at the lower right :guilabel:`Products not received`. Open ERP
-then opens all the products waiting from the selected supplier and you can then automatically add
-some or all of them on your form. This method of encoding is very useful when you're entering goods
-received at one time but from several orders.
+then opens a list of all the goods waiting from that supplier and you can then automatically add
+some or all of them on your form. This method of data entry is very useful when you're entering goods
+received at one time from several orders.
 
 .. index::
    single: Routing; Logistic
@@ -192,7 +196,7 @@ Product routing
    pair: module; stock_location
 
 You should install the :mod:`stock_location` module if routing products to customers, from suppliers or
-in your warehouse is a function of the product itself.
+in your warehouse is determined by the identity of the product itself.
 
 .. figure:: images/product_location.png
    :scale: 50
@@ -200,7 +204,7 @@ in your warehouse is a function of the product itself.
 
    *Managing the paths from one location to another in a product form*
 
-This will enable you to configure logistics rules individually for each product. For example, when a
+This will let you configure logistics rules individually for each product. For example, when a
 specific product arrives in stores it can automatically be sent to quality control. In this case it
 must be configured with rules on the product form. The fields that make up those rules are:
 
@@ -215,7 +219,7 @@ must be configured with rules on the product form. The fields that make up those
 * :guilabel:`Name of operations` : a free text field which will be included in the automatic stock
   move proposed by Open ERP.
 
-You'll see some examples of using these locations and logistics by product:
+You'll now see some examples of using these locations and logistics by product:
 
 * A rentable product,
 
@@ -224,11 +228,12 @@ You'll see some examples of using these locations and logistics by product:
 * A product that you want to send to quality control before putting it in stocks.
 
 Example 1: A rentable product
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A rentable product is just a product delivered to a customer that is expected to be  returned in a
 few days time. When it has been delivered to the customer, Open ERP will generate a new goods
-receipt note with a forecast date at the end of the rental period. So you have a list of goods
-pending receipt for you to confirm when they are returned to your stores. To do this you should
+receipt note with a forecast date at the end of the rental period. So you generate a list of goods
+pending receipt that you confirm when they are returned to your stores. To do this you should
 configure a product with the following rules:
 
 ==================== ==============
@@ -246,6 +251,7 @@ form in the draft state ready for returning it to Stock. This is due in 15 days 
 system your forecasts and stock graphs can always be correct in real time.
 
 Example 2: Management of imports by sea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To manage products that follow a complex logistical import path by sea and then into customs, create
 as many 'Supplier' locations as there are steps, then create rules to move the product from one
@@ -260,10 +266,10 @@ Import by sea take around 7 weeks and must go through the following steps:
 
 * Customer at the port of Anvers: 2 weeks,
 
-* Delivery by truch from the port of Anvers to your stores: 3 days.
+* Delivery by truck from the port of Anvers to your stores: 3 days.
 
-You want to follow the movement of your products and encode all the documents as each move it made
-so that you know where your products are at any moment, and can estimate when they are likely to
+You should track the movement of your goods and enter all the documents as each move is made
+so that you know where your goods are at any moment, and can estimate when they are likely to
 arrive in your stores. To do this, create all the locations for the intermediate steps:
 
 * Shanghai Port,
@@ -272,7 +278,7 @@ arrive in your stores. To do this, create all the locations for the intermediate
 
 * Anvers Customs.
 
-Finally, on the product form, create the following rule to show that when purchased, the products
+Finally, on the product form, create the following rule to show that when purchased, the goods
 don't arrive at your stores directly, but instead at the port of Shanghai. In this example the
 stores are configured to enter all the products in a location called 'Input'.
 
@@ -286,9 +292,9 @@ Lead time            2 days
 Operation            Sending to Shanghai Port
 ==================== ========================
 
-Then Open ERP will change the usual product reception (which has them arriving in the Input
+Open ERP will then change the usual product receipt (which has them arriving in the Input
 location) to a delivery from this supplier to the external port. The move is automatically carried
-out because you don't want to do operations at this level manually.
+out because operations at this level are too labour-intensive to be done manually.
 
 You then have to create a rule on the product form to move it from one location to another:
 
@@ -323,24 +329,25 @@ Operation            Truck transport into stock
 ==================== ==============================
 
 Once the rules have been configured, Open ERP will automatically prepare all the documents needed
-for the internal stock movements of products from one location to another. These document will be
+for the internal stock movements of products from one location to another. These documents will be
 assigned one after another depending on the order defined in the rules definition.
 
 When the company received notification of the arrival at a port or at customers, the corresponding
 move can be confirmed. You can then follow, using each location:
 
-* where a given product can be found,
+* where a given goods item can be found,
 
-* quantities of product awaiting customs,
+* quantities of goods awaiting customs,
 
-* lead times for products to get to stores,
+* lead times for goods to get to stores,
 
 * the value of stock in different locations.
 
 Example 3: Quality Control
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can configure the system to put a given product in the Quality Control bay automatically when it
-arrives in your company. To do that you just need to configure a rule for the product to be placed
+arrives in your company. To do that you just configure a rule for the product to be placed
 in the Quality Control location rather than the Input location when the product is received from the
 supplier.
 
@@ -355,7 +362,7 @@ Operation            Quality Control
 ==================== ==============================
 
 Once this product has been received, Open ERP will then automatically manage the request for an
-internal movement to send it to the “Quality Control” location.
+internal movement to send it to the ``Quality Control``` location.
 
 .. Copyright © Open Object Press. All rights reserved.
 

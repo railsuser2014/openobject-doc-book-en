@@ -5,20 +5,25 @@
 Calculation of lead times
 =========================
 
+.. todo:: There's a half-finished para here.
+
 Each request for products will then
 
-All the operations are automatically calculated by the requirements calculator. But more than
-creating each production order and procurements, Open ERP plans each action, You will find on each
-document a plan date calculated by the system.
+All procurement operations (that is, the requirement for both production orders and purchase orders)
+are automatically calculated by the scheduler. But more than just
+creating each order, Open ERP plans the timing of each step. 
+A planned date calculated by the system can be found on each order document.
 
-To organize a whole chain of manufacturing and restocking, Open ERP bases everythin on the delivery
+.. todo:: Big question - is lead time calculated on order date or promised delivery date?
+
+To organize the whole chain of manufacturing and procurement, Open ERP bases everything on the delivery
 date promised to the customer. This is given by the date of the confirmation in the order and the
-lead times shown in each product line of the order. This lead time is itself suggested automatically
-in the field :guilabel:`Customer Lead Time` shown in the product form. It shows the time promised to
-the customer between the order and that of the delivery.
+lead times shown in each product line of the order. This lead time is itself proposed automatically
+in the field :guilabel:`Customer Lead Time` shown in the product form. This is the difference 
+between the time on an order and that of the delivery.
 
-To show the calculation of the lead times, take the example of the cabinet above. Suppose that the
-cabinet is assembled in two time, use the two following Bills of Materials.
+To see a calculation of the lead times, take the example of the cabinet above. Suppose that the
+cabinet is assembled in two steps, using the two following Bills of Materials.
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -52,7 +57,7 @@ PANLAT                          10 days
 BOIS02                                               5 days
 ============ ================== ==================== ==================
 
-Then a customer order placed on the 1st January will set uup the following operations and delays:
+A customer order placed on the 1st January will set up the following operations and lead times:
 
 * Delivery ARM100: 31 January (=1st January + 30 days),
 
@@ -65,16 +70,18 @@ Then a customer order placed on the 1st January will set uup the following opera
 * Purchase BOIS02 (for PANLAT): 11 January (=16 January – 5 days).
 
 In this example, Open ERP will propose making two orders to the supplier of product BOIS02. Each of
-these orders can be for a different planned data. Clearly before confirming these orders, the
-purchasing manager can group these orders into single one.
+these orders can be for a different planned date. Before confirming these orders the
+purchasing manager could group these orders into single order.
 
 Security days
 -------------
 
+.. todo:: STOPPED HERE - Need to check which module this is all in, install it in test system
+
 The scheduler will plan all operations as a function of the time configured on the products. But it
 is also possible to configure these factors in the company. These factors are then global to the
-company, whatever the product concerned. In the description of the company, on the Configuration
-tab, you find the following parameters:
+company, whatever the product concerned. In the description of the company, on the 
+:guilabel:`Configuration` tab, you find the following parameters:
 
 * Security days: number of days to deduct from a system order to cope with the problems of
   restocking,
@@ -83,8 +90,8 @@ tab, you find the following parameters:
 
 * Production lead time: number of additional days needed for manufacturing.
 
-Period for calculating requirements: all the requests which are for procuring for a later date to
-the number of days which aren't calculated in the scheduler.
+* Period for calculating requirements: all the requests which are for procuring for a later date to
+  the number of days which aren't calculated in the scheduler.
 
 .. note:: Purchasing lead time
 

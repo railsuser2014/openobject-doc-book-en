@@ -54,7 +54,7 @@ Start the database creation process from the :guilabel:`Welcome` page by clickin
 
 *  :guilabel:`New database name` : \ ``openerp_ch03``\  ,
 
-*  :guilabel:`Load Demonstration data` checkbox: \ ``not checked``\  ,
+*  :guilabel:`Load Demonstration data` checkbox: \ ``not checked``\  (**this step is very important, but catches out many people**),
 
 *  :guilabel:`Default Language` : \ ``English``\  ,
 

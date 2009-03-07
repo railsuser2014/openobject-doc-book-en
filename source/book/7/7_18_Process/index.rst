@@ -118,7 +118,7 @@ options. You don't need any additional users.
 
 .. index::
    pair: module; sale
-   pair: module; hr_
+   pair: modules; hr_
    pair: module; hr_attendance
    pair: module; hr_contract
    pair: module; hr_holidays
