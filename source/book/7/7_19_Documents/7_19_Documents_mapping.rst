@@ -1,10 +1,10 @@
 
 Mapping between Open ERP resources and directories
----------------------------------------------------
+==================================================
 
-Each directory can have the type Static or be linked to another resource. A static directory, as
+Each directory can either have the type ``Static`` or be linked to another resource. A static directory, as
 with Operating Systems, is the classic directory that can contain a set of files. The directories
-linked to systems resources automatically possess sub-directores for each resource type defined in
+linked to systems resources automatically possess sub-directories for each of resource types defined in
 the parent directory.
 
 .. tip:: Directories in English
@@ -55,7 +55,7 @@ This is a very flexible approach because any modification of the resource in Ope
 automatically reflected in the document management system. So when the quotation gets confirmed in
 Open ERP the directory no longer appears as a quotation through FTP access.
 
-Here are some examples of directories linked to Open ERP resources that could be helpful if
+Here are some examples of directories linked to Open ERP resources that could be helpful when
 configured in the document management system:
 
 * Quotations and Order: storing documents that relate to orders,

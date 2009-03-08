@@ -1,6 +1,6 @@
 
 Classic document management solutions
---------------------------------------
+=====================================
 
 Faced with the need to organize documents, companies have looked at a number of document management
 solutions that are promoted today, from simple email archiving to complete electronic management
@@ -41,7 +41,7 @@ effort of purchasing and installing one.
 
     * Quotero: http://www.quotero.com
 
-It's very difficult to keep the information in the company's management system in synchronization
+It's very difficult to keep the information in the company's management system synchronized
 with that in the document management system. For example when a customer changes his address, users
 will modify the details in the management software but usually not in the document management
 system.

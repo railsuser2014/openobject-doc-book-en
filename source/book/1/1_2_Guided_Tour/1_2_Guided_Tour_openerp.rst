@@ -33,7 +33,7 @@ above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
-   :scale: 95
+   :scale: 65
 
    *Project Dashboard*
 
@@ -51,10 +51,10 @@ home page of any user.
 	general an employee uses only a small part of the system's functions.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the right of
+	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the far right of
 	:guilabel:`SHORTCUTS`.
 
-	To change or replace a link click on the :guilabel:`SHORTCUTS` link. Open ERP then opens a list of
+	To change or replace a link click :guilabel:`SHORTCUTS`. Open ERP then opens a list of
 	editable shortcuts.
 
 The following sections present an overview of the main functions of Open ERP. Some areas are
@@ -214,10 +214,11 @@ They contain some of the demonstration data that you installed when you created 
   single: Accounting and finance
 ..
 
-Accounting and finance
-----------------------
+Financial Management
+--------------------
 
-The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. A brief overview of
+The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. 
+A brief overview of
 the functions provided by these modules is given here as an introduction.
 
 Accounting is totally integrated into all of the company's functions, whether it's general,
@@ -290,7 +291,7 @@ For example if you sell t-shirts in different sizes and colors:
 * the product template is the “T-shirt” which contains information common to all sizes and all
   colors,
 
-* the variants are “Size:S” and “Colour:Red”, which define the parameters for that size and
+* the variants are “Size:S” and “Color:Red”, which define the parameters for that size and
   color,
 
 * the final product is thus the combination of the two – t-shirt in size S and color Red.
@@ -319,7 +320,7 @@ of its available variants briefly rather than every item as an entire product.
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
 			take the example above it's easier to manage a template with 15 variants in four different types
-			than 160 completely different products. This module is available in the addons-extra list (it had
+			than 160 completely different products. This module is available in the ``addons-extra`` list (it had
 			not been updated, at the time of writing, to work in release 5.0 of Open ERP).
 
 The :menuselection:`Products` menu gives you access to the definition of products and their
@@ -409,7 +410,7 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of skills and competencies.
 
 .. index::
-   pair: module; hr_
+   pair: modules; hr_
    pair: module; hr
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
@@ -528,25 +529,6 @@ Open ERP's replenishment management rules enable the system to generate draft p
 automatically, or you can configure it to run a lean process driven entirely by current production
 needs.
 
-.. todo:: - change the details here
-
-.. tip::   **Note**  *Workflow visualization*
-
-	Open ERP can show you the workflow of any operating process and the current state of a document
-	following the workflow, to help you understand your company processes.
-
-	For example, open a supplier Purchase Order form in the GTK client. Click :menuselection:`Plugins
-	--> Execute a Plugin`, then select :guilabel:`Print Workflow (complex)` and click :guilabel:`OK`.
-
-	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state
-	is marked by nodes colored red.
-
-.. figure:: images/purchase_workflow.png
-   :scale: 50
-   :align: center
-
-   *Purchase order workflow*
-
 Project Management
 ------------------
 
@@ -559,8 +541,10 @@ All projects are hierarchically structured. You can review all of the projects f
 line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical
 representation of the plan.
 
+.. todo:: This isn't working. Gantt charts aren't displaying right.
+
 .. figure:: images/familiarization_project_gantt.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Project Planning*
@@ -574,8 +558,8 @@ Project Management is described in :ref:`ch-projects`.
    single: Production Management
 ..
 
-Production Management
----------------------
+Manufacturing
+-------------
 
 Open ERP's production management capabilities enable companies to plan, automate, and track
 manufacturing and product assembly. Open ERP supports multi-level Bills of Materials and lets you
@@ -617,11 +601,52 @@ setting in each individual order.
 
 Delivery charges can be managed using a grid of tariffs for different carriers.
 
+Document Management
+-------------------
+
+Open ERP integrates a complete document management system that not only 
+carried out the functions of a standard DMS, but also integrates with all
+of its system-generated documents such as Invoices and Quotations. What's more
+it keeps all of this synchronized.
+
+Process Management
+------------------
+
+Many documents have a workflow of their own, and also take part in cross-functional processes.
+Take a document that could be expected to have a workflow, such as a Sales Order, and
+then click the :guilabel:`Process` button above its form to see the full process.
+
+.. figure:: images/guided_tour_process.png
+   :scale: 50
+   :align: center
+
+   *Process for a Sales Order*
+   
+You can see the position of that particular document in its process, if you have selected
+a single document, by the solid bar on one of the process nodes. You also link
+to documents and menus for each of the stages.
+
+There is a clear distinction between a cross-functional process (that is currently only
+shown in the web client) and the detailed document workflow (that is shown in both the
+web client from a process node, and the GTK client from the 
+:menuselection:`Plugins > Execute a Plugin...` menu and clicking either 
+the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
+
+.. figure:: images/purchase_workflow.png
+   :scale: 65
+   :align: center
+
+   *Workflow for a Purchase Order*
+
+Alongside the document management system, the process visualization features make Open ERP
+far better for documentation than similar systems.
+
 Other functions
 ---------------
 
-You've been through a brisk, brief overview of the main functional areas of Open ERP. Some of these
-– a large proportion of the core modules – are treated in more detail in the following chapters.
+You've been through a brisk, brief overview of many of the main functional areas of Open ERP. 
+Some of these – a large proportion of the core modules – are treated in more detail 
+in the following chapters.
 
 You can use the menu :menuselection:`Administration --> Modules Management --> Modules --> 
 Uninstalled modules` to find the remaining modules that have been loaded into your installation but

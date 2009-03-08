@@ -15,6 +15,9 @@ all sorts of company documents such as work procedures, meeting reports, documen
 customers and suppliers, documents sent to customers, faxes, sales presentations, and product
 datasheets.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale`, :mod:`document` and their dependencies installed and 
+no particular chart of accounts configured. 
 
 .. raw:: html
 

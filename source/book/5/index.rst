@@ -16,8 +16,6 @@ Stock and Manufacturing
  Manufacture is the transformation of materials and components, perhaps using measurable 
  resources, into other products and services, adding value to your company on the way.
  
-
-
 .. toctree::
     :maxdepth: 1
 

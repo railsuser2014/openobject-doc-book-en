@@ -121,23 +121,6 @@ and \ ``Open``\   tasks from that list.
 	Every user should create a link in their own shortcuts to the :menuselection:`My Tasks` menu because they'll
 	have to consult this menu several times a day.
 
-.. todo:: what is this? *Task Work*  *Effective hours*
-
-.. index::
-   pair: module; project_timesheet
-
-.. note:: Tasks and timesheet
-
-	The module :mod:`project_timesheet` gives you a way of creating the day's timesheet automatically
-	from the actual work done for each of the different tasks.
-	This way you don't have to encode service times twice – once for the project task and once for
-	the timesheet.
-
-	When you want to complete your timesheet, use the menu :menuselection:`Human Resources -->
-	Timesheets --> My Timesheets --> Import projects`.
-
-.. todo::  this menu is not found 
-
 .. _sect-projroles:
 
 Assigning roles: account manager and project manager
@@ -208,12 +191,6 @@ Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Informati
 project made up of several tasks. In the case of an IT project, for example, where development tasks
 are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and
 so on. When you first open the list of project tasks, they're listed in their sequence order.
-
-.. todo:: More of these labels - why? 
-
-.. *Priority*  *Very low*  *Low*  *Medium*  *Urgent*  *Very Urgent*
-
-.. todo:: More of these labels - why? *Deadline*
 
 You can use one of these three ordering methods, or combine several of them, depending on the
 project.

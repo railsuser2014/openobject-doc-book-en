@@ -43,7 +43,7 @@ Sections
 
 To handle each of these case types in a different way, you must create different sections in
 Open ERP using the menu :menuselection:`CRM & SRM --> Configuration --> Case --> Sections` . Do
-this as user \ ``admin``\   in database \ ``openerp_ch04``\   to try it for yourself.
+this as user \ ``admin``\   in your database to try it for yourself.
 
 You'll define the following four sections:
 
@@ -75,8 +75,7 @@ section.
 
 .. note:: Cases by Section – with data
 
-	Using database openerp_04X (which has a substantial amount of data in it),
-	click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a
+	Click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a
 	hierarchical list,
 	then click a section name, such as :guilabel:`Helpdesk` or :guilabel:`Support`, to list the cases
 	that have been assigned to that section.
@@ -90,10 +89,9 @@ Categories
 
 Once you've defined the different sections you can create Categories, which are used to
 differentiate the cases in a section. You create categories using the menu :menuselection:`CRM & SRM
---> Configuration --> Cases --> Categories` . Create the following in \ ``database openerp_ch04``\
-.
+--> Configuration --> Cases --> Categories` . Create the following in your database:
 
- .. csv-table:: **Categories assigned to the different sections**
+ .. csv-table:: Categories assigned to the different sections
    :header: "Category","Section"
    :widths: 30, 15
 
@@ -113,14 +111,14 @@ Menu
 ^^^^
 
 Once the sections and the categories are defined you can generate some menus to make it easier to
-use these cases. In database \ ``openerp_ch04``\  , select the menu :menuselection:`CRM & SRM -->
+use these cases. Select the menu :menuselection:`CRM & SRM -->
 Configuration --> Create Menus` for a New Section`.
 
 The procedure is to create the name of the new menu in :guilabel:`Menu base name`, select the name
 of a suitable :guilabel:`Parent menu` for the menu and the :guilabel:`Case Section` name, then click
 :guilabel:`Create menu Entries`. Following this procedure, create the following menus:
 
-.. csv-table:: **Example of creating menus that make it easier to use cases**
+.. csv-table:: Example of creating menus that make it easier to use cases
    :header: "Menu base name","Case Section","Parent menu"
    :widths: 25,20,25
 
@@ -203,7 +201,7 @@ menus
 :menuselection:`CRM & SRM --> Cases --> Cases by section`, or :menuselection:`CRM & SRM --> Cases
 --> All cases`.
 
-Create a case in database \ ``openerp_ch04``\   from :menuselection:`Sales Management --> Business
+Create a case from :menuselection:`Sales Management --> Business
 Opportunities` by entering information about the request, namely:
 
 * a :guilabel:`Description`  of the case,
@@ -243,7 +241,7 @@ While the case is open you can click :guilabel:`Close`  if it's been completed o
 if it's to go no further. If you want the case to wait for a response from a partner click
 :guilabel:`Pending`.
 
-Add some text for this example case in \ ``openerp_ch04``\  , then close it.
+Add some text for this example case in the database, then close it.
 
 If you've organized the sections in a hierarchical structure you can click on :guilabel:`Escalate`.
 The case then escalates into the parent section. You can't do that with the Business Opportunity
@@ -328,11 +326,10 @@ the performance of your teams in many ways.
 Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
 Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
 into your server using :menuselection:`Administration --> Modules Management --> Import module`.
-Then, for both databases \ ``openerp_04X``\   and \ ``openerp_ch04``\  , install it into the
-database.
+Then install it into the database.
 
-Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting` on database \
-``openerp_04X``\   (which has plenty of data already in it) to create different reports.
+Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting` 
+to create different reports.
 
 .. figure::  images/crm_graph.png
    :scale: 50
@@ -447,8 +444,6 @@ are:
 
 	- reporting by the length of time that it's been active.
 
-
-
 If you have defined several criteria Open ERP will apply the rule only if all of the criteria are
 valid.
 
@@ -471,12 +466,10 @@ the setup window. The following actions are included:
 
 * send a predefined email.
 
-.. todo:: figure reference must be removed or found
-
 	.. note::  *Example 1 Improvement in the quality of support*
 
-			For example, on the graph that analyses the performance of team support in Figure 4-6 (taken from
-			the database openerp_04X) you can see that the Demo User takes an average time of 3 days and 4
+			For example, on the graph that analyses the performance of team support in Figure 4-6 
+			you can see that the Demo User takes an average time of 3 days and 4
 			hours to close a customer support request. This is too long. After analyzing the data in depth,
 			you can see that most cases were closed in less than two days, but some may take more than ten
 			days.

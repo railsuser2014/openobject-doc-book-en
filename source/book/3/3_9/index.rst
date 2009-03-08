@@ -22,6 +22,9 @@ Open ERP lets you adapt and reconfigure many functions to ease the task of data
 
 * filling fields automatically during data entry with data that's already known to the system.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+
 .. raw:: html
 
     <div class="all-toctree">

@@ -108,8 +108,8 @@ Virtual Locations > Inventory Loss                 +2 bicycles
 *Real and counterpart stocks when the operations have been carried out*
 
 This example shows one of the great advantages of this approach in terms of performance analysis.
-After a few months, you can just make a stock valuation of the location “Virtual Locations >
-Inventory Loss” to give you the value of the company's stock losses in the given period.
+After a few months, you can just make a stock valuation of the location ``Virtual Locations >
+Inventory Loss`` to give you the value of the company's stock losses in the given period.
 
 Now see how the following manufacturing operation is structured in Open ERP. To make a bicycle you
 need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
@@ -133,7 +133,7 @@ finished products.
 .. note::  Valuing created value
 
     You might already have noticed a useful effect of this approach:
-    if you do a stock valuation in the “Default Production” location you get
+    if you do a stock valuation in the ``Default Production`` location you get
     a statement of value created by your company (as a negative amount).
     Stock valuation in any given location is calculated by multiplying quantities of products in
     stock by their cost.

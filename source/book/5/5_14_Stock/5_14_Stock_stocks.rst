@@ -172,7 +172,7 @@ waiting for click the button :guilabel:`Process Later`.
    :scale: 50
    :align: center
 
-   *Form for coding in reception of goods from a supplier order*
+   *Form for entering goods received from a supplier order*
 
 The products then arrive in stock and should reflect the quantities shown on the product form.
 
@@ -244,7 +244,7 @@ the items proposed by Open ERP.
    :scale: 50
    :align: center
 
-   *Items for a customer order*
+   *Items on a customer order*
 
 .. tip::  States
 
@@ -267,7 +267,7 @@ salesperson can follow the progress of their orders at a glance.
    :scale: 50
    :align: center
 
-*List of orders with their delivery state*
+   *List of orders with their delivery state*
 
 .. note:: Negative Stock
 

@@ -2,7 +2,7 @@
 .. index:: Search
 
 Searching for documents
-------------------------
+=======================
 
 You've seen several methods of accessing documents quickly:
 
@@ -61,11 +61,11 @@ This functionality is very significant. All you need to do is search for a partn
 number to automatically get all the documents that are referenced there. And you can use a fragment
 of text to find the document you need from within that subset.
 
-Integration with your emails
-=============================
+Integration with emails
+=======================
 
 Using Outlook and Thunderbird
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 .. figure::  images/document_attachment_outlook.png
    :scale: 50
@@ -74,15 +74,15 @@ Using Outlook and Thunderbird
    *Sending an attachment that's in the document management system from Outlook*
 
 Working with users' changes
-============================
+===========================
 
 To make the document management system's use as unobtrusive as possible the system's users should
 easily be able to store all the documents that they produce or receive from their customers and
 suppliers. So Open ERP supplies dashboards to help system users approve their acceptance of such
 documents.
 
-So you'll find two dashboards in the menu :menuselection:`Dashboards --> Document Management` : one
-dashboard for the document management system manager and one dashboard for follwing use by different
+So you'll find two dashboards in the menu :menuselection:`Dashboards --> Document Management`. One
+dashboard is for the document management system manager and one dashboard is for tracking use by different
 users.
 
 The first lets you track the change of documents by month, by customer and by type of resource. You
@@ -94,19 +94,19 @@ could also quickly assess the use that's made of the system by the various users
 
    *Dashboard for the document management system manager*
 
-The second dashboard lets you track the user that's made of the system by different employees.
-You'll find the number of files sent by user and a classification of the users using document
-management system the least. That will enable you to know who has been well-trained and if it is
-necessary to do something about changing work methods.
+The second dashboard shows you how different employees use the system.
+You can see the number of files sent by each user and who uses the document
+management system the least. That tells you something about your user training
+and whether you need to do something about changing work methods.
 
 .. figure::  images/document_board2.png
    :scale: 50
    :align: center
 
-   *Dashboard for the document management system amalyzed by user*
+   *Dashboard for the document management system analyzed by user*
 
 Version Management
-===================
+==================
 
 There's usually a need to keep track of all the important documents that you have printed. For
 example, when you send an invoice to a customer it's a good idea to store a copy of that invoice
@@ -115,8 +115,10 @@ you sent it, even if the company's details have changed in the meantime.
 
 To do this, Open ERP can automatically store as attachments the different reports printed by users.
 By default, only invoices are saved as attachments, and they're saved when they are printed.
+That's because they are commonly legally required.
 
-But you can configure the system so that it doesn't matter which type of report is printed. To
+But you can configure the system so that it doesn't matter which type of report is printed - 
+they can all be stored automatically. To
 activate that functionality on another type of report, modify this in the menu
 :menuselection:`Administration --> Configuration --> Low Level --> Actions --> XML Reports`.
 
@@ -126,12 +128,12 @@ activate that functionality on another type of report, modify this in the menu
 
    *Modifying the definition of a report*
 
-Select the report that you want to change and complete the field 'Prefix for saving as an
-attachment'. Once you've done that each document print action will automatically be saved as an
+Select the report that you want to change and complete the field :guilabel:`Prefix for saving as an
+attachment`. Once you've done that each document print action will automatically be saved as an
 attachment to the document.
 
 Documents used for company processes
-=====================================
+====================================
 
 Finally, the document management system is also completely linked to the main system that manages
 company processes. Then on each node of your management process you could store a procedure. Once

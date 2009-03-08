@@ -6,7 +6,9 @@ The double-entry management in Open ERP enables you to run very advanced traceab
 operations are formalized in terms of stock moves, so it's very simple to search for the cause of any
 gaps in stock moves.
 
-.. todo:: - I don't think that this is the right direction, although it IS the way that Open ERP uses it
+.. index::
+   single: traceability; upstream
+   single: traceability; downstream
 
 .. note:: Upstream and downstream traceability
 
@@ -73,7 +75,7 @@ and product deliveries.
    :scale: 50
    :align: center
 
-   *Encoding of a line for production reception*
+   *Entering a line for production receipt*
 
 To enter the lot number in an operation you can use an existing lot number or create a new lot. A
 manufacturing lot (batch number) must always be used for a single product. A tracking number can be
@@ -125,11 +127,9 @@ Production Lots`, or :menuselection:`Stock Management --> Traceability --> Track
 Search for the expected lot using the filters for the lot number, the date or the product. Once you
 can see the form about this lot several actions are possible:
 
-.. todo:: Check Direction
+* :guilabel:`Traceability upstream` : from supplier through to customers,
 
-* :guilabel:`Traceability upstream` : from supplier to customers,
-
-* :guilabel:`Traceability downstream` : from customer to suppliers,
+* :guilabel:`Traceability downstream` : from customer back to suppliers,
 
 * Stock in all the physical and virtual locations.
 

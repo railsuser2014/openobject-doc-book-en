@@ -1,6 +1,6 @@
 
 Standardizing Structures
--------------------------
+========================
 
 You now have a configuration that enables you to automatically get a directory structure linke to
 Open ERP for each resource, such as for projects and orders. The ideal situation would now be to
@@ -22,12 +22,12 @@ that type.
 So create the structure above for your project management system. To do that, create the four
 directories above and give them the following data:
 
-* **Type** : Static Directory
+* **Type** : Static Directory,
 
-* **Linked Model** : Analytic Account
+* **Linked Model** : Analytic Account.
 
 Then in each project (represented by analytic accounts) you'll get this substructure for
-organization your documents efficiently.
+organizating your documents efficiently.
 
 .. figure::  images/document_shared_structure.png
    :scale: 50
@@ -37,15 +37,14 @@ organization your documents efficiently.
 
 .. tip:: Mapping
 
-    In practice, Open Erp doesn't create directories or files for every resource.
+    In practice, Open ERP doesn't create directories or files for every resource.
     It actually manages this by mapping between Open ERP resources and the FTP interface
 
-    This approach gives a lot of flexibility because there's no synchronization to do, nor
-    redundancy.
+    This approach gives a lot of flexibility because there's no synchronizing to do, nor any redundancy.
     Changes in either the document management system or in Open ERP will automatically be reflected
     over in the other side.
 
-    And at the same time, resources are obviously not used up by storing things twice.
+    And system resources are obviously not used up by storing things twice.
 
 Once a new project has been defined in Open ERP, the system automatically creates a directory
 corresponding to the project in the right place in the document management system, and creates a

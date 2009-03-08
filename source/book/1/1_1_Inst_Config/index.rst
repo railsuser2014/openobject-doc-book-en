@@ -17,7 +17,6 @@ Installation and Configuration
  some demonstration data to test the installation.*
  
 .. figure:: images/ch1_outline.png
-   :scale: 50
    :align: center
 
    *Options for reading this part of the book*
@@ -64,7 +63,7 @@ past that to the third chapter in this part of the book, :ref:`ch-real`.
 Whether you want to test Open ERP or to put it into full production, you have at least two starting
 points:
 
-* evaluate it on line at http://openerp.com and ask Tiny for an SaaS trial hosted at
+* evaluate it on line at http://www.openerp.com and ask Tiny for an SaaS trial hosted at
   http://ondemand.openerp.com, or the equivalent service at any of Tiny's partner companies,
 
 * install it on your own computers to test it in your company's systems environment.
@@ -80,12 +79,14 @@ of server you're using.
 
 .. note:: Web sites for Open ERP
 
-   * Main Site: http://openerp.com,
+   * Main Site: http://www.openerp.com,
 
    * SaaS or “on-demand” Site: http://ondemand.openerp.com,
 
+   * Documentation Site: http://doc.openerp.com/,
+
    * Community discussion forum where you can often receive informed assistance:
-     http://openobject.com/forum.
+     http://www.openobject.com/forum.
 
 .. tip:: Current documentation
 
@@ -93,9 +94,8 @@ of server you're using.
    each new version, so you should always check each release's documentation – both packaged with
    the release and on the website – for exact installation procedures.
 
-Once you've completed this installation, you'll create and configure a database to confirm that your
-Open ERP installation is working.
-
+Once you've completed this installation, create and configure a database to confirm that your
+Open ERP installation is working. You can follow the early chapters in this part of the book to achieve this.
 
 .. raw:: html
 

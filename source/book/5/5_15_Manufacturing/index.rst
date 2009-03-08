@@ -5,20 +5,20 @@
 Production Management
 *********************
 
- *The management of manufacturing described in this chapter will cover
+ *The management of manufacturing described in this chapter covers
  planning, ordering, inventory and the manufacturing or assembly of products from raw materials and
  components.
  It also covers consumption and production of products as well as the necessary operations on
  machinery, tools or human resources.*
 
 The management of manufacturing in Open ERP is based on its stock management and, like it, is very
-flexible in both its operations and its financial control. It particularly benefits from the use of
-double-entry inventory management for manufacturing orders.
+flexible in both its operations and its financial control. It benefits in particular from the use of
+double-entry inventory management for production orders.
 
 .. index::
    pair: module; mrp
 
-Manufacturing management is implemented by the :mod:`mrp` module. It is useful for transforming all
+Manufacturing management is implemented by the :mod:`mrp` module. It is used for transforming all
 types of products:
 
 * Assemblies of parts: composite products, soldered or welded products, assemblies, packs,
@@ -30,7 +30,7 @@ types of products:
 * Mixtures: mixing, chemical processes, distillation.
 
 You'll work in two areas: on products in the first part of this chapter, and on operations in the
-second part. The management of products depends on the concept of classiciations while the
+second part. The management of products depends on the concept of classifications while the
 management of operations depends on routing and workcenters.
 
 .. note:: Bills of Materials
@@ -38,11 +38,14 @@ management of operations depends on routing and workcenters.
     Bills of Materials, or manufacturing specifications, are named differently depending on their
     application area, for example:
 
-    * Restoration: Recipe,
+    * Food: Recipe,
 
     * Chemicals: Equation,
 
     * Building: Plan.
+
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`mrp` and its dependencies installed and no particular chart of accounts configured. 
 
 .. raw:: html
 

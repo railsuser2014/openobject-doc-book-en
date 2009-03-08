@@ -134,7 +134,7 @@ For each level you should define the number of days and create a note which will
 added into the reminder letter. The sequence determines the order of the level in ascending order.
 
 
-.. csv-table::  **Example of configuring followup levels**
+.. csv-table::  Example of configuring followup levels
    :header: "Sequence","Level","Days","Description"
    :widths: 5, 5, 15, 15
 

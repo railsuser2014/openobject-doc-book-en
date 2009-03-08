@@ -155,7 +155,7 @@ entering new documents.
 .. *New*  :menuselection:`Partners --> Partners` \ ``New Zealand``\
 .. *Country*  *Partner Contact*
 
-* If you're using the web client do a Ctrl-Right-Click (that's a mouse right-click while the mouse
+* If you're using the web client hold :kbd:`Ctrl` down and Right-Click at the same time (that's a mouse right-click while the mouse
   pointer is in the field and the Control key is held down on the keyboard).
 
 * If you're using the GTK client, you just need to right-click the mouse while the pointer is in the
@@ -221,7 +221,7 @@ You can do this one of two ways:
 	        Schumacher, Helen, Cook Chain
 
 
-        .. csv-table:: represents the table
+        .. csv-table:: Resulting table
             :header: "LastName","FirstName","Company"
             :widths:  8,8,8
 
