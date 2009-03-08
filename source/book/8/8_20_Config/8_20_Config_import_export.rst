@@ -127,8 +127,6 @@ to the names (for example when you're saving inventory the uses the product name
 To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \
 ``Product:id``\  ).
 
-.. todo:: - link to another document here?
-
 .. tip:: Importing with identifiers
 
 	The management of free text identifiers enables you to considerably simplify the conversion of
@@ -165,7 +163,7 @@ For example, to import partners with several contact for which you specify a nam
 would create the following CSV file:
 
 
-.. csv-table::  **Example of importing one-to-many fields**
+.. csv-table::  Example of importing one-to-many fields
     :header: "Name","Code","Address/Contact","Address/City"
     :widths: 8,5,10,10
 
@@ -221,7 +219,7 @@ Start by creating partner categories in a CSV file:
 	#. Create the following table in your spreadsheet program:
 
 
-                        .. csv-table:: **Partner categories file: categories.csv**
+                        .. csv-table:: Partner categories file: categories.csv
                            :header: "","Column A","Column B"
                            :widths: 5,10,10
 
@@ -273,7 +271,7 @@ Here's how to create new partners with several contacts, and how to link them to
 
 	#. Enter the table below into your spreadsheet program.
 
-                .. csv-table::  **Partner data file: partners.csv**
+                .. csv-table::  Partner data file: partners.csv
                    :header: "","Column A","Column B","Column C","Column D"
                    :widths: 5,10,10,10,10
 
@@ -333,7 +331,7 @@ partner using the web client:
 	   option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
 	   similar to the one below.
 
-.. csv-table::  **Partner data in the exported file**
+.. csv-table::  Partner data in the exported file
    :header: "","Column A","Column B","Column C","Column D"
    :widths: 5,10,10,10,10
 

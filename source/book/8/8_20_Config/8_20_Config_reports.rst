@@ -296,8 +296,7 @@ From the Open ERP toolbar in OpenOffice.org it's possible to:
 	In this example, amount_total is a field from the order object. The result will be 90% of the total
 	of the order, formatted to two decimal places.
 
-.. todo:: - I don't quite know what to do with this, yet. A spec for a bit of writing?
-
+.. todo:: - Is this a specification for a bit more writing?
 .. :menuselection:`OpenERP Report --> Send to server`
 .. *Technical Name*  *Report Name* \ ``Sale Order Mod``\
 .. *Corporate Header*  *Send Report to Server*
@@ -312,8 +311,7 @@ Orders --> All Orders`.
 Creating a new report
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Another loose spec
-
+.. todo:: Another specification?
 .. :menuselection:`OpenERP Report --> Open a new report` \ ``Sale Order``\
 .. :guilabel:`Open New Report` :guilabel:`Use Model in Report`
 

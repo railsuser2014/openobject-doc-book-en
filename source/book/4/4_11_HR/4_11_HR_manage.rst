@@ -64,7 +64,7 @@ the outset (and you can do that through this field if you need to).
 
 Then enter the employee's address. 
 
-.. todo:: We need better guidance about Partner vs Employee just here.
+.. todo:: We need to give better guidance about Partners vs Employees just here.
 
 This appears in the partner contact form in Open ERP. Since
 employees are people that have contacts with your company, it's logical that they have entries

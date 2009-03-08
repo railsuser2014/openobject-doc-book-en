@@ -1,5 +1,6 @@
 .. index:: MPS
 .. index:: Master Production Schedule
+.. index:: Master Procurement Schedule
 
 Scheduling
 ==========
@@ -7,6 +8,14 @@ Scheduling
 The master production plan, sometimes called the MPS (Master Production Schedule), enables you to
 generate forecasts for incoming and outgoing material. It's based on forecasts of inputs and outputs
 by the logistics manager.
+
+.. note:: MPS, Procurement and Production
+   
+   Open ERP distinguishes between Production, Purchase and Production.
+   
+   Production is manufacture, Purchase is the acquisition of goods from another party,
+   and Procurement is either or both of those. So it would be better to call the
+   MPS the Master Procurement Schedule. Which Open ERP does!
 
 .. tip:: Product trading
 
@@ -69,7 +78,7 @@ Production Plan
 
 The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings
 (consumption or customer deliveries) by period. To do this use the menu :menuselection:`Stock
-Management --> Planning --> Master Production Schedule`.
+Management --> Planning --> Master Procurement Schedule`.
 
 For each period and product Open ERP gives you the following information:
 
@@ -97,8 +106,6 @@ For each period and product Open ERP gives you the following information:
 
    *The master production schedule (MPS)*
 
-.. todo:: Is the MPS actually Procurement not Production ?
-
 The production plan then enables the logistics manager to play with the forecast income and
 outgoings and test the impact on the future stock for the product under consideration. It enables
 you for example to check that the stock doesn't fall below a certain level for the product under
@@ -107,11 +114,11 @@ consideration.
 You can also open the production plan for past periods. In this case Open ERP shows you the real
 stock moves, by period for forecast reports.
 
-If you don't have automated procurement rules for a product you can at any time start procurement
+If you don't have automated procurement rules for a product you can start procurement at any time
 based on the estimates of the production plan. 
-To do this press the button :guilabel:`Procure Incoming Left` on the :guilabel:`Master Procurement Schedule`. 
-Open ERP manages the forecast of restocking for an amount equal to the entries 'forecast'.
-
+To do this press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on 
+the :guilabel:`Master Procurement Schedule`. 
+Open ERP plans procurement for an amount equal to the entries forecast.
 
 .. Copyright © Open Object Press. All rights reserved.
 

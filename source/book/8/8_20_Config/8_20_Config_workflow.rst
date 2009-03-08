@@ -26,7 +26,7 @@ client.
 Defining workflows
 ------------------
 
-.. todo:: Process
+.. todo:: Process needs to be described here
 
 Workflows can be created and modified in Open ERP's user interface.
 

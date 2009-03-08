@@ -94,7 +94,7 @@ just created.
    :scale: 50
    :align: center
 
-   *Groups that have access to the :menuselection:`Stock Management` menu*
+   *Groups that have access to the Stock Management menu*
 
 Save the user, then go into the menu :menuselection:`Administration --> Security --> Grant Access
 to Menus` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to

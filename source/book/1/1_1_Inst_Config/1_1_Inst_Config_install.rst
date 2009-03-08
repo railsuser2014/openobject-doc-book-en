@@ -138,7 +138,6 @@ PC – by default). If the message :guilabel:`No database found, you must create
 you've **successfully connected** to an Open ERP server containing, as yet, no databases.
 
 .. figure:: images/new_login_dlg.png
-   :scale: 50
    :align: center
 
    *Dialog box on connecting a GTK client to a new Open ERP server*
@@ -325,6 +324,7 @@ seconds or so, which indicates that the server is waiting for a client to connec
 
 .. figure:: images/terps_startup_log.png
    :align: center
+   :scale: 75
    
    *Open ERP startup log in the console*
 
@@ -438,7 +438,7 @@ you've just installed, so should connect directly at startup.
 .. _fig-webwel:
 
 .. figure:: images/web_welcome.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Open ERP web client at startup*

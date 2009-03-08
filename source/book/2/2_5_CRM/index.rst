@@ -50,6 +50,9 @@ Finally, at the end of this chapter you'll see an efficient method of qualifying
 customers that enables you to offer a service tailored to the potential value of different
 prospects.
 
+For this chapter you should start with a fresh database that includes demo data,
+using the :guilabel:`CRM profile` and no particular chart of accounts configured. 
+
 .. raw:: html
 
     <div class="all-toctree">

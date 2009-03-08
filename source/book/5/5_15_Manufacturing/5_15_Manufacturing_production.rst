@@ -319,7 +319,7 @@ elements of the assembly and keep them isolated.
 If you define the BoM for the ARM100 cabinet in the way shown by the table below,
 you'll get production orders of the
 
-.. todo:: Not finshed this para!
+.. todo:: Not finished the above para!
 
 ============  ========  ===============  ===========
 Product Code  Quantity  Unit of Measure  Type of BoM
@@ -368,11 +368,9 @@ For example if you deliver the cabinet in pieces for self-assembly, set the ARM1
 ``Assembly`` .
 
 When a salesperson creates an order for an ARM100 product, Open ERP automatically changes the ARM100
-from components into a package for sending to a customer. Then it will ask the storesperson to
-deliver: 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100. This assembly fully describes an ARM100 not the
-delivered products.
-
-.. todo:: there must be a better way to say that!
+from a set of components into an identifiable package for sending to a customer. 
+Then it asks the storesperson to pack 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100. 
+This is described as an ARM100 not just the individual delivered products.
 
 Example: Large distributor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -641,7 +639,7 @@ The production order must be in the closed state as shown in the figure :ref:`fi
    :scale: 50
    :align: center
 
-   *Production order at the end of the different steps*
+   *Production order after the different stages*
 
 Manufacture of finished product
 --------------------------------
@@ -651,7 +649,8 @@ manufacture of the computer PC2 using the order created earlier. So return to th
 production orders to start :menuselection:`Manufacturing --> Production Orders --> Production Orders
 to start`.
 
-You'll now find the computer PC2 which has been sold to the customer, as shown in the figure :ref:`fig-mrpprdlis`.
+You'll find computer PC2 which has been sold to the customer, 
+as shown in the figure :ref:`fig-mrpprdlis`.
 
 .. _fig-mrpprdlis:
 
@@ -699,7 +698,7 @@ be done, there, as shown in the figure :ref:`fig-mrppacko`.
    :scale: 50
    :align: center
 
-   *List of packings to be done*
+   *List of packing operations to be done*
 
 The packing orders are presented in priority order of despatch 
 so the storesperson must begin with the orders
@@ -728,9 +727,7 @@ Products --> Packing to Invoice --> Packing by Invoice Method`.
 You then get a list of all the deliveries that have been made but
 haven't yet been invoiced.
 
-.. todo:: This caused an error in the console when I tried it.
-
-So select some or all of the deliveries. Click on the action :guilabel:`Invoice pickings`. Open ERP asks
+So select some or all of the deliveries. Click on the action :guilabel:`Create Invoice`. Open ERP asks
 if you want to group the deliveries from the same partner into a single invoice or if you'd prefer to
 invoice for each delivery individually.
 
@@ -740,11 +737,8 @@ invoice for each delivery individually.
 
    *Invoicing of deliveries*
 
-Invoices are generated automatically in the ``Draft`` state by Open ERP and the orders of deliveries
-are eventually added if they were configured on the order. You can also modify the invoice before
-approving them finally.
-
-.. todo:: what does this above mean?
+Invoices are generated automatically in the ``Draft`` state by Open ERP. 
+You can modify invoices before approving them finally.
 
 .. figure:: images/mrp_invoice_list.png
    :scale: 50
@@ -768,14 +762,14 @@ Find the product corresponding to the product or lot number. Once it's been foun
 following actions:
 
 .. index::
-   single traceability: upstream
+   single: traceability; upstream
 
 * Upstream traceability: trace where an identified component has been used, from the product
   that it was used on to the customer that currently has it, if it has been tracked. 
   (Note that the name is confusing - this would normally be considered a downstream direction.) 
 
 .. index::
-   single traceability: downstream
+   single: traceability; downstream
 
 * Downstream traceability: trace where the components of an identified product at a
   customer came from. 
@@ -790,7 +784,7 @@ figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
    :scale: 50
    :align: center
 
-   *Upstream traceability from customer to suppliers*
+   *Upstream traceability from supplier to customers*
 
 .. _fig-mrptracd:
 
@@ -798,7 +792,7 @@ figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
    :scale: 50
    :align: center
 
-   *Downstream traceability from supplier to customers*
+   *Downstream traceability from customer to suppliers*
 
 .. index:: Manufacturing Order
 .. index:: Production Order
@@ -882,10 +876,8 @@ then moved into stock.
 Scheduling
 ===========
 
-.. todo:: What's the ??? - this para needs more work
-
-Calculation requirements is the calculation engine which makes planning, prioritising and ??
-automatically procurement as a function of the rules defined on these products. It's started once
+The requirements scheduler is the calculation engine which plans and prioritises production
+and purchasing automatically from the rules defined on these products. It's started once
 per day. You can also start it manually using the menu :menuselection:`Manufacturing --> Compute All
 Schedulers`. This uses all the relevant parameters defined in the products, the suppliers and the company
 to determine the priorities between the different production orders, deliveries and supplier

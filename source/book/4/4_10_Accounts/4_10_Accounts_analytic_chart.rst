@@ -49,7 +49,7 @@ Here's a possible breakdown of some general accounting entries for the example a
 various analytic accounts:
 
 
-.. csv-table::  **Breakdown of general and analytic accounting entries (Case 1)**
+.. csv-table::  Breakdown of general and analytic accounting entries (Case 1)
    :header: "General accounts","","","","","Analytic accounts",""
    :widths: 10,5,5,5,2,10,8
 
@@ -71,9 +71,7 @@ department in the company.
 So the analytic chart of accounts shows the distribution of the company's costs using the example
 above:
 
-
-
-.. csv-table::  **Analytic chart of accounts (Case 1)**
+.. csv-table::  Analytic chart of accounts (Case 1)
    :header: "Account","Total"
    :widths: 10, 5
 
@@ -92,7 +90,7 @@ A report that relates both general accounts and analytic accounts enables you to
 costs within a given department. An analysis of the Production / Product Range 1 department is shown
 in this table:
 
-.. csv-table:: **Report merging both general and analytic accounts for a department (Case 1)**
+.. csv-table:: Report merging both general and analytic accounts for a department (Case 1)
    :header: "Production / Product Range 1",""
    :widths: 10,5
 
@@ -182,7 +180,7 @@ The following table gives an example of different analytic entries that you can 
 analytic account:
 
 
-.. csv-table::  **Analytic entries for the account chart (Case 2)**
+.. csv-table:: Analytic entries for the account chart (Case 2)
    :header: "Title","Account","Amount","","General Account","Debit","Credit"
    :widths: 15, 10, 8 ,2,15 ,8,8
 

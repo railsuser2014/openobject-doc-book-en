@@ -2,39 +2,6 @@
    single: Partner
 ..
 
-
-Open ERP preparation
-====================
-
-You'll need two databases for this chapter:
-
-* \ ``openerp_ch04X``\  , which should be a restored copy of\ `` openerp_ch02``\  , the database you
-  created through :ref:`ch-guided`. It's referenced throughout the main body of this chapter because it
-  contains demonstration data that illustrates the points made in the chapter.
-
-* \ ``openerp_ch04``\  , which should be a restored copy of \ ``openerp_ch03,``\   the database you
-  created through :ref:`ch-real`. If you follow the steps in this chapter you can extend this database.
-
-To be able to backup and restore these databases you'll need to know your super-administrator
-password.
-
-.. todo:: is this now correct?
-
-You'll also need your system's \ ``addons``\   directory to be writable, since you'll load new
-modules into it later in the chapter – they're not all available in the core 5.0.0 release of
-Open ERP.
-
-And you'll need access to a system administrator for your server system if you want to install the \
-``fetchmail``\   system software that's mentioned later in this chapter.
-
-Once you've created \ ``openerp_ch04``\  , add a new group – \ ``support``\  , and four new users
-– \ ``General``\  , \ ``Sales``\  , \ ``Support``\  , and \ ``Senior Support``\   (the former two
-should be put in group \ ``user``\  , and the latter two in \ ``support``\  ). Then also install the
-:mod:`crm` module that exists in the Open ERP core installation (but has not yet been installed
-into this database). You'll need only to know your database's \ ``admin``\   user details to do
-this.
-
-
 Partners
 ========
 
@@ -62,8 +29,7 @@ particularly important when you have subsidiaries or franchises since transactio
 parent and its subsidiaries in these cases will generally be two-way.
 
 To get a list of partners using demonstration data, use the menu :menuselection:`Partners -->
-Partners` (database \ ``openerp_ch04X``\   has more data preloaded, while \ ``openerp_ch04``\   has
-only the data that you've put into it - both can show the principles).
+Partners`.
 
 .. figure::  images/crm_partner.png
    :scale: 50
@@ -73,7 +39,6 @@ only the data that you've put into it - both can show the principles).
 
 .. index::
    single: Send SMS
-
 
 To the right of the partner form you'll find all of the actions, reports and shortcuts available to
 the selected partner. This enables you to quickly send an SMS message, for example, or review a
@@ -154,8 +119,8 @@ newsletter subscription or as a hot prospect), or automatically using segmentati
 Use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit Categories` to
 define a new category.
 
-To try Open ERP's partner capabilities described here for yourself, log into the \
-``openerp_ch04``\   database as \ ``admin/admin``\   then click :menuselection:`Partners -->
+To try Open ERP's partner capabilities described here for yourself, log into your
+database as \ ``admin/XXXXX``\   then click :menuselection:`Partners -->
 Configuration --> Categories --> Edit Categories` and create a new category of \ ``Small
 Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new :guilabel:`Partner` whose :guilabel:`Name` is \
 ``Susan Trent ``\  and category is \ ``Small Suppliers``\  .

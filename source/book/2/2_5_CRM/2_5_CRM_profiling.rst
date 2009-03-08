@@ -79,7 +79,7 @@ the menu :menuselection:`CRM & SRM --> Configuration --> Segmentation --> Questi
 To obtain the scheme presented earlier you can create the following questions and responses:
 
 
-.. csv-table::  **Questionnaire for defining profiles**
+.. csv-table::  Questionnaire for defining profiles
    :header: "Questions","Possible Responses"
    :widths: 20, 30
 

@@ -65,7 +65,7 @@ Analytic accounts make up a powerful tool that can be used in different ways. Th
 your own analytic structure for a chart of accounts that closely matches your company's needs.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`account` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
 
 .. raw:: html
 

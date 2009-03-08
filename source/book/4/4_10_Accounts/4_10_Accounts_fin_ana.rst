@@ -77,8 +77,7 @@ broken down by the selected analytic accounts for a selected period.
    :scale: 50
    :align: center
 
-   *The inverted analytic balance indicates the breakdown of operations by the nature of the
-   different the analytic accounts (projects)*
+   *The inverted analytic balance shows a breakdown of operations by analytic account (project)*
 
 This enables you to analyze your costs by general account. For example, if you examine your general
 account for staff salaries you can obtain all your salary costs broken down by the different
@@ -91,8 +90,7 @@ Analytic Balance
    :scale: 50
    :align: center
 
-   *The analytic balance presents the breakdown of each project by the nature of the operations
-   given by the financial accounts*
+   *The analytic balance shows a breakdown of each project by operation in the financial accounts*
 
 The analytic balance is a summary report that relates the analytic accounts to the general accounts. It
 shows the balances of the analytic accounts broken down by general account for a selected period.
@@ -184,8 +182,6 @@ all the information necessary to manage their project, shown in a single page.
 In the following chapters you'll see how project managers can use this information to carry out
 the various operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
-
-.. todo:: Write more now. Or maybe not!
 
 .. index::
    pair: module; account_budget

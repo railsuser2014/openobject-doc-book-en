@@ -29,7 +29,7 @@ A warehouse is defined by a link between three locations:
        :scale: 50
        :align: center
 
-    *Warehouse parameters*
+       *Warehouse parameters*
 
 You can also set an address for the warehouse. This address should ideally be an address for your
 company. Once the warehouse has been defined it can be used in:

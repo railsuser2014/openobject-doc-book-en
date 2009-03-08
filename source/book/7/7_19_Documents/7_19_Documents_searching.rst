@@ -94,18 +94,16 @@ could also quickly assess the use that's made of the system by the various users
 
    *Dashboard for the document management system manager*
 
-.. todo:: Phrasing below is a bit clunky
-
-The second dashboard lets you track the use that different employees make of the system.
-You can find the number of files sent by each user and a classification of the users using the document
-management system the least. That will enable you to know who has been well-trained and if it is
-necessary to do something about changing work methods.
+The second dashboard shows you how different employees use the system.
+You can see the number of files sent by each user and who uses the document
+management system the least. That tells you something about your user training
+and whether you need to do something about changing work methods.
 
 .. figure::  images/document_board2.png
    :scale: 50
    :align: center
 
-   *Dashboard for the document management system amalyzed by user*
+   *Dashboard for the document management system analyzed by user*
 
 Version Management
 ==================

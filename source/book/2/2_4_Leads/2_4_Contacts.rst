@@ -25,7 +25,7 @@ complexities that can be accomplished.
    :scale: 50
    :align: center
 
-   *UML class diagram with :mod:`base_contact`*
+   *UML class diagram with base_contact module installed*
 
 .. _fig-crmcono:
 
@@ -33,7 +33,7 @@ complexities that can be accomplished.
    :scale: 50
    :align: center
 
-   *UML class diagram without :mod:`base_contact`*
+   *UML class diagram with base_contact module not installed*
 
 A concrete example may illustrate this concept of multiple relationships between contacts and
 partners (companies) better. The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
@@ -81,7 +81,7 @@ email.
    :scale: 50
    :align: center
 
-   *A partner form with the :mod:`base_contact` module installed*
+   *A partner form with the base_contact module installed*
 
 If you click on the line you can get more detail about the function (such as start date, end date,
 and fax) or enter into the contact form (such as personal phone, different posts occupied, and
@@ -91,20 +91,21 @@ personal blog).
    :scale: 50
    :align: center
 
-   *Detail of a post occupied by a contact at a partner*
+   *Detail of a job post occupied by a contact at a partner*
 
 .. figure:: images/crm_partner_contacts.png
    :scale: 50
    :align: center
 
-   *Detail of a contact form for someone occupying several posts*
+   *Detail of a contact form for someone employed in several job posts*
 
 Partner management is found in the Open ERP base modules. To manage partner relations you have to
 install the CRM modules. Then start by installing a CRM profile and configure the system to meet
 your needs.
 
-For this chapter you should create a new database. After installing the database select
-:guilabel:`Demonstration Data` and select the :guilabel:`CRM profile`. Open ERP's modularity enables you to install only
+For this chapter you should start with a fresh database that includes demo data,
+using the :guilabel:`CRM profile` and no particular chart of accounts configured. 
+Open ERP's modularity enables you to install only
 the CRM module if your requirements are limited to customer relationships.
 
 .. figure:: images/crm_db_init.png

@@ -207,6 +207,7 @@ Send a request to get an understanding of its functionality:
 
 .. figure:: images/request_tab.png
    :align: center
+   :scale: 80
 
    *Creating a new request*
 
@@ -342,7 +343,7 @@ them to get a feel for their use.
 
 .. figure:: images/partner.png
    :align: center
-   :scale: 75
+   :scale: 65
 
    *Partner form*
 
@@ -401,10 +402,10 @@ You can review your new category structure using :menuselection:`Partners --> Pa
 You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
 .. figure:: images/main_window_partner_tab.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *Creating a new partner category :guilabel:`My prospects`*
+   *Creating a new partner category*
 
 To create a new partner and link it to this new category open a new partner form to modify it.
 
@@ -426,20 +427,20 @@ To create a new partner and link it to this new category open a new partner form
 	criteria rather than scroll through the whole partner list. It's a habit that'll save you a lot of
 	time in the long run as you search for all kinds of documents.
 
-	.. note::  *Example Categories of partners*
+.. note::  Example Categories of partners
 
-			A partner can be assigned to several categories. These enable you to create alternative
-			classifications as necessary, usually in a hierarchical form.
+	A partner can be assigned to several categories. These enable you to create alternative
+	classifications as necessary, usually in a hierarchical form.
 
-			Here are some structures that are often used:
+	Here are some structures that are often used:
 
-			* geographical locations,
+	* geographical locations,
 
-			* interest in certain product lines,
+	* interest in certain product lines,
 
-			* subscriptions to newsletters,
+	* subscriptions to newsletters,
 
-			* type of industry.
+	* type of industry.
 
 
 .. Copyright © Open Object Press. All rights reserved.

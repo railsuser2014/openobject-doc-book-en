@@ -5,16 +5,10 @@
 Calculation of lead times
 =========================
 
-.. todo:: There's a half-finished para here.
-
-Each request for products will then
-
 All procurement operations (that is, the requirement for both production orders and purchase orders)
 are automatically calculated by the scheduler. But more than just
 creating each order, Open ERP plans the timing of each step. 
 A planned date calculated by the system can be found on each order document.
-
-.. todo:: Big question - is lead time calculated on order date or promised delivery date?
 
 To organize the whole chain of manufacturing and procurement, Open ERP bases everything on the delivery
 date promised to the customer. This is given by the date of the confirmation in the order and the
@@ -75,8 +69,6 @@ purchasing manager could group these orders into single order.
 
 Security days
 -------------
-
-.. todo:: STOPPED HERE - Need to check which module this is all in, install it in test system
 
 The scheduler will plan all operations as a function of the time configured on the products. But it
 is also possible to configure these factors in the company. These factors are then global to the
@@ -539,10 +531,8 @@ short-circuit the planning of different procurements.
 
 .. tip:: Shortcuts
 
-   .. todo:: - left ... or right?
-
-   On the product form you have a shortcut to the left that lets you quickly create a new
-   procurement order.
+   On the product form you have an :guilabel:`ACTIONS` shortcut button :guilabel:`Create Procurements`
+   that lets you quickly create a new procurement order.
 
 .. index:: Waste Products
 

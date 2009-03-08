@@ -149,6 +149,9 @@ All the accounts are held in the default currency (which is specified in the com
 but each account and/or transaction can also have a secondary currency (which is defined in the
 account). The value of multi-currency transactions is then tracked in both currencies.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

@@ -9,36 +9,10 @@
 Database creation
 =================
 
-Use the technique outlined in this chapter, :ref:`ch-inst` to create a new database, \ ``openerp_ch01``\  . This
+Use the technique outlined in this section to create a new database, \ ``openerp_ch01``\  . This
 database will contain the demonstration data provided with Open ERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.
-
-Start the database creation process from the :guilabel:`Database Administration` page by clicking
-:guilabel:`Create` and then completing the following fields on the :guilabel:`Create Database`
-form:
-
-*  :guilabel:`Super administrator password` : by default it's \ ``admin``\  , if you or your system
-   administrator haven't changed it.
-
-*  :guilabel:`New database name` : \ ``openerp_ch01``\  .
-
-*  :guilabel:`Load Demonstration Data` checkbox : \ ``checked``\
-
-*  :guilabel:`Default Language` : \ ``English``\  .
-
-.. _sect-creatingdb:
-
-Creating the database
----------------------
-
-Before walking through an Open ERP business process step by step in the next chapter, :ref:`ch-guided`, you'll create
-a database to check that the installation is working correctly:
-
-* \ ``openerp_ch01``\  : a minimal database containing demonstration data.
-
-To create new databases you must know the super-administrator password which defaults to ``admin``
-on a new installation.
 
 .. note :: The super-administrator password
 
@@ -53,40 +27,39 @@ on a new installation.
    administrator can change it if you forget it.
 
 .. figure:: images/change_superadmin_pwd.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Changing the super-administrator password through the web client*
 
-* If you're using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
-  the menu at the top left. Enter the super-administrator password, then the name of the new database
-  you're creating.
+.. _sect-creatingdb:
+
+Creating the database
+---------------------
+
+If you're using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
+the menu at the top left. Enter the super-administrator password, then the name of the new database
+you're creating.
   
-  .. figure:: images/create_new_db_GTK.png
-     :scale: 50
-     :align: center
+.. figure:: images/create_new_db_GTK.png
+   :scale: 75
+   :align: center
 
-     *Creating a new database through the GTK client*  
+   *Creating a new database through the GTK client*  
 
-* If you're using the web client, click :guilabel:`Databases` on the login screen, then
-  :guilabel:`Create` on the database management page. Enter the super-administrator password, and the
-  name of the new database you're creating.
+If you're using the web client, click :guilabel:`Databases` on the login screen, then
+:guilabel:`Create` on the database management page. Enter the super-administrator password, and the
+name of the new database you're creating.
   
-* In both cases you'll see a checkbox that determines whether you load demonstration data or not.
-  The consequences of checking this box or not affect the **whole use** of this database.
+In both cases you'll see a checkbox that determines whether you load demonstration data or not.
+The consequences of checking this box or not affect the **whole use** of this database.
 
-* In both cases you'll also see that you can choose the Administrator password. This makes your 
-  database quite secure because you can ensure that it is unique from the outset.
-  (In fact many people find it hard to resist ``admin`` as their password!)
+In both cases you'll also see that you can choose the Administrator password. This makes your 
+database quite secure because you can ensure that it is unique from the outset.
+(In fact many people find it hard to resist ``admin`` as their password!)
 
 Database openerp_ch01
 ---------------------
-
-To create the \ ``openerp_ch01``\   database, enter the database name \ ``openerp_ch01``\   into the
-:guilabel:`New database` field. Make sure that the :guilabel:`Load Demonstration Data`  checkbox is
-checked. Each Open ERP module will now be loaded with previously-constructed demonstration data as
-it's installed. Choose the default language for this database (English for many readers of this
-book), then click :guilabel:`Ok`.
 
 Wait for the message showing that the database has been successfully created, along with the user
 accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you've created this seed
@@ -138,7 +111,7 @@ your installation is working.
 
 .. figure:: images/define_main_co_dlg.png
    :align: center
-   :scale: 95
+   :scale: 80
 
    *Defining your company during initial database configuration*
 
@@ -192,7 +165,7 @@ only installed into an Open ERP database as you require it, as is described in 
 What if want to update what's there, or extend what's there with additional modules?
 
 * To update what you have, you'd install a new instance of Open ERP using the same techniques as
-  described earlier in this chapter, :ref:`ch-inst`.
+  described earlier in this section, :ref:`sect-dbcreate`.
 
 * To extend what you have, you'd install new modules in the ``addons`` directory of your current
   Open ERP installation. There are several ways of doing that.

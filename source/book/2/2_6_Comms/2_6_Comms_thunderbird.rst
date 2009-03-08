@@ -1,8 +1,6 @@
 .. index::
    single: Thunderbird (Mozilla)
 
-.. todo:: Tiny -> Open ERP
-
 Mozilla Thunderbird interface
 =============================
 

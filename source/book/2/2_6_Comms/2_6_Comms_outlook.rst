@@ -2,8 +2,6 @@
    single: Microsoft Outlook interface
 ..
 
-.. todo:: Fix all of these database segments now.
-
 Open ERP preparation
 ====================
 

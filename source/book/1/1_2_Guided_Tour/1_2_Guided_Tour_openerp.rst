@@ -33,7 +33,7 @@ above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
-   :scale: 75
+   :scale: 65
 
    *Project Dashboard*
 
@@ -529,25 +529,6 @@ Open ERP's replenishment management rules enable the system to generate draft p
 automatically, or you can configure it to run a lean process driven entirely by current production
 needs.
 
-.. todo:: - change the details here
-
-.. tip::   **Note**  *Workflow visualization*
-
-	Open ERP can show you the workflow of any operating process and the current state of a document
-	following the workflow, to help you understand your company processes.
-
-	For example, open a supplier Purchase Order form in the GTK client. Click :menuselection:`Plugins
-	--> Execute a Plugin`, then select :guilabel:`Print Workflow (complex)` and click :guilabel:`OK`.
-
-	As the Purchase Order progresses, you can keep reprinting the displayed workflow. The order's state
-	is marked by nodes colored red.
-
-.. figure:: images/purchase_workflow.png
-   :scale: 50
-   :align: center
-
-   *Purchase order workflow*
-
 Project Management
 ------------------
 
@@ -563,7 +544,7 @@ representation of the plan.
 .. todo:: This isn't working. Gantt charts aren't displaying right.
 
 .. figure:: images/familiarization_project_gantt.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Project Planning*
@@ -635,9 +616,27 @@ Many documents have a workflow of their own, and also take part in cross-functio
 Take a document that could be expected to have a workflow, such as a Sales Order, and
 then click the :guilabel:`Process` button above its form to see the full process.
 
+.. figure:: images/guided_tour_process.png
+   :scale: 50
+   :align: center
+
+   *Process for a Sales Order*
+   
 You can see the position of that particular document in its process, if you have selected
 a single document, by the solid bar on one of the process nodes. You also link
 to documents and menus for each of the stages.
+
+There is a clear distinction between a cross-functional process (that is currently only
+shown in the web client) and the detailed document workflow (that is shown in both the
+web client from a process node, and the GTK client from the 
+:menuselection:`Plugins > Execute a Plugin...` menu and clicking either 
+the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
+
+.. figure:: images/purchase_workflow.png
+   :scale: 65
+   :align: center
+
+   *Workflow for a Purchase Order*
 
 Alongside the document management system, the process visualization features make Open ERP
 far better for documentation than similar systems.
@@ -645,8 +644,9 @@ far better for documentation than similar systems.
 Other functions
 ---------------
 
-You've been through a brisk, brief overview of the main functional areas of Open ERP. Some of these
-– a large proportion of the core modules – are treated in more detail in the following chapters.
+You've been through a brisk, brief overview of many of the main functional areas of Open ERP. 
+Some of these – a large proportion of the core modules – are treated in more detail 
+in the following chapters.
 
 You can use the menu :menuselection:`Administration --> Modules Management --> Modules --> 
 Uninstalled modules` to find the remaining modules that have been loaded into your installation but

@@ -7,7 +7,7 @@ Sales and Purchasing
 
  These two chapters are about selling and purchasing products and services.
  
-.. todo:: Give it more than this!
+.. todo:: Give it more description than this!
  
 
 .. toctree::

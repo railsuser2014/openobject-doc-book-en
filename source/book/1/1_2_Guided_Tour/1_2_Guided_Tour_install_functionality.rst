@@ -95,7 +95,7 @@ and the status of the module changes to :guilabel:`To be installed`.
    :scale: 50
    :align: center
 
-   *Installation of the :mod:`product` module*
+   *Installation of the product module*
 
 
 .. tip::  Technical Guide
@@ -121,18 +121,16 @@ see the new menu :menuselection:`Products` has become available.
 	Refresh/Cancel`.
 
 Installing a module with its dependencies
--------------------------------------------
+-----------------------------------------
 
 .. index::
    pair: module; crm
 
-You'll now install the CRM module (Customer Relationship Management) using the same process as
-before.
+Now install the CRM module (Customer Relationship Management) using the same process as before.
+Start from :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules`.
 
-	#. 	Use :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules`
-	    to get a list
-		of modules to install. Search for the :mod:`crm` module in that list.
-
+	#. 	Get the list of modules to install, and search for the :mod:`crm` module in that list.
+	
 	#.	Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
 	
 	#.  Do the same for :mod:`account`. 

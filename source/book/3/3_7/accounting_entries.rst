@@ -184,11 +184,9 @@ Fill these fields manually in this order:
 
 *  :guilabel:`Account` : account for the purchase line (\ ``Products Purchase``\  ),
 
-*  :guilabel:`Name` : description of the invoice line (Titanium Alloy Radiator),
+*  :guilabel:`Name` : description of the invoice line ( ``PC2`` ),
 
 *  :guilabel:`Credit` : \ ``1196``\  .
-
-.. todo:: Change to demo data
 
 Press the :guilabel:`Enter` key on your keyboard to validate this first line. The next sequence number is
 assigned to your accounting entry. Your line is then colored red and takes the \ ``Draft``\   state.
@@ -351,7 +349,7 @@ For example, if you want to reconcile the following entries:
 
 
 
-.. csv-table:: **Entries for reconciliation**
+.. csv-table:: Entries for reconciliation
    :header: "Date","Ref.","Description","Account","Debit","Credit"
    :widths: 12, 5, 15, 5,5,5
 
@@ -368,7 +366,7 @@ On reconciliation, Open ERP shows a difference of 0.50. At this stage you have 
 Open ERP generates the following account automatically:
 
 
-.. csv-table:: **Write-off account**
+.. csv-table:: Write-off account
    :header: "Date","Ref.","Description","Account","Debit","Credit"
    :widths: 12, 5, 15, 5,5,5
 
@@ -429,12 +427,13 @@ Once the payment order is confirmed there's still a validation step for an accou
 You could imagine that these orders would be prepared by an accounts clerk, and then approved by a
 manager to go ahead with payment.
 
-.. todo:: - get the details corrected here - web client can now do this
+.. todo:: Can you get to the workflow in the web client? 
+.. todo:: There doesn't seem to be a process associated with a payment order.
 
 .. tip:: Payment Workflow
 
 	An Open ERP workflow is associated with each payment order. Select a payment order and 
-	in the web client click :guilabel:`Process` or in the GTK client 
+	if you're in the GTK client 
 	click :menuselection:`Plugins --> Print workflow` from the top menu.
 
 	You can integrate more complex workflow rules to manage payment orders by adapting the workflow.

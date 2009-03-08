@@ -65,6 +65,9 @@ style, or even the data that's provided there.
 Finally, you'll see how to import your data into Open ERP automatically, to migrate all of your
 data in one single go.
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+
 .. raw:: html
 
     <div class="all-toctree">

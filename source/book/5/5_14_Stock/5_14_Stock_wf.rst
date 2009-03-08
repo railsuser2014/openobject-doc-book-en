@@ -90,7 +90,7 @@ available from the product form.
    :scale: 50
    :align: center
 
-   *Change in stock for a product managed as :guilabel:`Make to Stock`*
+   *Change in stock for a product managed as Make to Stock*
 
 .. _fig-stfrord:
 
@@ -98,7 +98,7 @@ available from the product form.
    :scale: 50
    :align: center
 
-   *Change in stock for a product managed as :guilabel:`Make to Order`*
+   *Change in stock for a product managed as Make to Order*
 
 .. note:: Logistical Methods
 
@@ -135,7 +135,7 @@ The following illustrates different cases for automatic restocking.
    :scale: 50
    :align: center
 
-   *Workflow for automatic restocking, depending on the configuration of the product*
+   *Workflow for automatic procurement, depending on the configuration of the product*
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 

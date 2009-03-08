@@ -39,7 +39,7 @@ You can then find a virtual file for each report associated with an order.
    :scale: 50
    :align: center
 
-   *Virtual files about sales orders in Open ERP*
+   *Virtual files for Sales Orders in Open ERP*
 
 To see the effect of this configuration, connect to the FTP server and go into a directory for an
 order such as :menuselection:`Main Repository --> Sales Orders --> All Sales Orders --> SO003`. You
@@ -50,7 +50,7 @@ You can attach it to an email or put it on your desktop.
    :scale: 50
    :align: center
 
-   *Virtual files about sale orders through FTP*
+   *Virtual files for Sales Orders through FTP*
 
 This system of virtual files is very useful in a lot of situations. For example if you must quickly
 re-send a quotation to a customer you don't have to open Open ERP, you can just attach the relevant

@@ -57,8 +57,6 @@ as truck1, truck2).
 Using the journals
 ------------------
 
-.. todo:: I think the field is Invoicing Method not Invoicing Journal
-
 You'll now see how to use the journals to organize your stock management in practice. After
 installing the module :mod:`sale_journal` look at the list of partners. In the tab :guilabel:`Sales and
 Purchases` on any of them you'll now see the field :guilabel:`Invoicing Method`.
@@ -69,7 +67,7 @@ Purchases` on any of them you'll now see the field :guilabel:`Invoicing Method`.
 
    *Partner form in invoicing mode*
 
-You can create a new *Invoicing Journal* on a partner on the fly. You can show if the invoices
+You can create a new :guilabel:`Invoicing Journal` on a partner on the fly. You can show if the invoices
 should be grouped or not after you have generated them in the journal. Create a second invoicing journal
 ``End-of-Month Invoicing`` which you can assign to another partner.
 

@@ -323,8 +323,6 @@ The analyses of profitability by project and by employee are available from the 
 They take all of the invoices into account, and also take into account the cost of the time spent on
 each project.
 
-.. todo::  *Cost Ledger (only by quantity)*
-
 .. index:: Department
 
 Managing by department

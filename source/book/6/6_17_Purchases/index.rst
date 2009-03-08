@@ -10,6 +10,10 @@ Purchasing Management
  You'll now see how Open ERP handles and simplifies this and the control of purchases at the
  suppliers.*
 
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+
+
 .. raw:: html
 
     <div class="all-toctree">
