@@ -241,7 +241,7 @@ While the case is open you can click :guilabel:`Close`  if it's been completed o
 if it's to go no further. If you want the case to wait for a response from a partner click
 :guilabel:`Pending`.
 
-Add some text for this example case in \ ``openerp_ch04``\  , then close it.
+Add some text for this example case in the database, then close it.
 
 If you've organized the sections in a hierarchical structure you can click on :guilabel:`Escalate`.
 The case then escalates into the parent section. You can't do that with the Business Opportunity

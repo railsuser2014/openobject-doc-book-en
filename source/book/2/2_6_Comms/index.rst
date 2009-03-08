@@ -38,6 +38,9 @@ The chapter is a mix of installation and configuration instructions, and basic i
 For this chapter you should start with a fresh database that includes demo data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
 
+You will also need to have administrator access to your Windows PC to install the Outlook and Word
+interface adapters described in the chapter.
+
 .. raw:: html
 
     <div class="all-toctree">

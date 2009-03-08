@@ -109,7 +109,8 @@ Thunderbird` interface that appears over Open ERP documents.
 .. note:: Testing the Thunderbird adapter
 
 	If you install the Thunderbird adapter as described,
-	use the openerp_ch05X database to explore its functionality as described in this section
+	explore its functionality as described in this section using the database you 
+	installed.
 
 .. Copyright © Open Object Press. All rights reserved.
 

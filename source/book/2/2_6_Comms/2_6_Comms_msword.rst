@@ -88,8 +88,8 @@ selected document.
 
 .. note:: Testing the Word adapter
 
-	If you install the Word adapter as described, use the openerp_ch05X database to explore its
-	functionality as described in this section.
+	If you install the Word adapter as described, 
+    explore its functionality using the database as described in this section.
 
 In :ref:`ch-config` you'll see another, more powerful, module that enables you to create complete reports
 in OpenOffice.org through an interface added directly in Open ERP. So you can create your own
