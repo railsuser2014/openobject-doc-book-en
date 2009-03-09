@@ -24,12 +24,12 @@ Description
 
 ::
 
-  This module allows you to manage the planning of procurements based on sales
-  forecasts, confirmed orders (customers and suppliers), stock movements, etc.
-  You can planify expected outputs and inputs for each warehouses. It also works
-  to manage all kind of procurements like purchase orders. That's why it is
-  called Master Procurement Schedule instead of the classic Master Production
-  Schedule therminology.
+  This module allows you to manage the planning of procurements based on sales forecasts, confirmed 
+  orders (customers and suppliers), stock movements, etc.
+  You can planify expected outputs and inputs for each warehouses. 
+  It also worksto manage all kind of procurements like purchase orders. 
+  That's why it is called Master Procurement Schedule instead of the classic Master Production Schedule 
+  therminology.
 
 Dependencies
 ------------

@@ -24,8 +24,8 @@ Description
 
 ::
 
-  Use Email client module to send to customers
-  the selected sale orders attached by Email
+  Use Email client module to send to customers the selected sale orders 
+  attached by Email
 
 Dependencies
 ------------

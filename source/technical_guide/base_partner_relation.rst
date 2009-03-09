@@ -26,8 +26,8 @@ Description
 
   Add a tab in the partner form to encode relations between several partners.
       For eg, the partner 'Toubib and Co.' has different contacts.
-      When 'Toubib and Co.' orders, you have to deliver to 'Toubib - Belgium'
-      and invoice to 'Toubib - Geneva'.
+      When 'Toubib and Co.' orders, you have to deliver to 'Toubib - Belgium' and invoice to 
+      'Toubib - Geneva'.
 
 Dependencies
 ------------

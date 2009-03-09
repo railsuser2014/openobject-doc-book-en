@@ -24,8 +24,8 @@ Description
 
 ::
 
-  Provide the scheduler wizard, the procurement and
-  the exception sub-menu from the mrp menu in the inventory control menu. This allow to hide easily the Mrp menu.
+  Provide the scheduler wizard, the procurement and the exception sub-menu from the mrp menu 
+  in the inventory control menu. This allow to hide easily the Mrp menu.
 
 Dependencies
 ------------

@@ -24,7 +24,11 @@ Description
 
 ::
 
-  This module allows your user to easily and efficiently participate in the innovation of the enterprise. It allows everybody to express ideas about different subjects. Then, others users can comment these ideas and vote for particular ideas. Each idea as a score based on the different votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check the menu 'Ideas' in the 'Tools' main menu.
+  This module allows your user to easily and efficiently participate in the innovation of the 
+  enterprise. It allows everybody to express ideas about different subjects. Then, others users 
+  can comment these ideas and vote for particular ideas. Each idea as a score based on the different 
+  votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check 
+  the menu 'Ideas' in the 'Tools' main menu.
 
 Dependencies
 ------------

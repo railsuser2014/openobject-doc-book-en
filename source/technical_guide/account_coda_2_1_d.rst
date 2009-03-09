@@ -24,9 +24,8 @@ Description
 
 ::
 
-  Module provides functionality to import
-      bank statements from .csv file.
-      Import coda file wizard is used to import bank statements.
+  Module provides functionality to import bank statements from .csv file.
+  Import coda file wizard is used to import bank statements.
 
 Dependencies
 ------------

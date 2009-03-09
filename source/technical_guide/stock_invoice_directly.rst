@@ -24,8 +24,8 @@ Description
 
 ::
 
-  When you send or deliver goods, this module automatically launch
-          the invoicing wizard if the delivery is to be invoiced.
+  When you send or deliver goods, this module automatically launch the invoicing wizard 
+  if the delivery is to be invoiced.
 
 Dependencies
 ------------

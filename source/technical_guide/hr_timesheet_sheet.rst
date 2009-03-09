@@ -24,9 +24,9 @@ Description
 
 ::
 
-  This module help you easily encode and validate timesheet and attendances
-  within the same view. The upper part of the view is for attendances and
-  track (sign in/sign out) events. The lower part is for timesheet.
+  This module help you easily encode and validate timesheet and attendances within the same view. 
+  The upper part of the view is for attendances and track (sign in/sign out) events. The lower 
+  part is for timesheet.
   
   Others tabs contains statistics views to help you analyse your
   time or the time of your team:

@@ -24,7 +24,9 @@ Description
 
 ::
 
-  A module that analyse the productivity of Tiny ERP users in terms of creation and modification of objects. It is able to render graphs, compare users, eso.
+  A module that analyse the productivity of Tiny ERP users in terms of creation and modification of 
+  objects. 
+  It is able to render graphs, compare users, eso.
 
 Dependencies
 ------------

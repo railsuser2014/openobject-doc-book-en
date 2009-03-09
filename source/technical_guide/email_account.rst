@@ -24,8 +24,7 @@ Description
 
 ::
 
-  Use Email client module to send to customers or suppliers
-  the selected invoices attached by Email.
+  Use Email client module to send to customers or suppliers the selected invoices attached by Email.
   
     * The sale order, invoice and shipping emails addresses are proposed
     * An email subject and text with the user signature are proposed

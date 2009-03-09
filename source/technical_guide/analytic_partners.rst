@@ -24,16 +24,15 @@ Description
 
 ::
 
-  This module adds the possibility to assign multiple partners on
-      the same analytic account. It's usefull when you do a management
-      by affairs, where you can attach all suppliers and customers to
-      a project.
+  This module adds the possibility to assign multiple partners on the same analytic account. 
+  It's usefull when you do a management by affairs, where you can attach all suppliers and 
+  customers to a project.
   
-      A report for the project manager is added to print the analytic
-      account and all associated partners with their contacts.
+  A report for the project manager is added to print the analyti account and all associated 
+  partners with their contacts.
   
-      It's usefull to give to all members of a project, so that they
-      get the contacts of all suppliers in this project.
+  It's usefull to give to all members of a project, so that they get the contacts of all suppliers 
+  in this project.
 
 Dependencies
 ------------

@@ -24,7 +24,8 @@ Description
 
 ::
 
-  This is the module to manage the accounting chart for United States of America (UCOA EZ Profile) in Open ERP.
+  This is the module to manage the accounting chart for United States of America 
+(UCOA EZ Profile) in Open ERP.
 
 Dependencies
 ------------

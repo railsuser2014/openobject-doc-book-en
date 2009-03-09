@@ -24,7 +24,8 @@ Description
 
 ::
 
-  This module adds a wizard to help reversing moves. This can be used to correct mistakes where it's not possible to cancel moves or even for creating close/open moves for periods or fiscalyears.
+  This module adds a wizard to help reversing moves. This can be used to correct mistakes where it's not 
+  possible to cancel moves or even for creating close/open moves for periods or fiscalyears.
 
 Dependencies
 ------------

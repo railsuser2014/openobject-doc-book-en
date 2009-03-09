@@ -25,8 +25,8 @@ Description
 ::
 
   eCommerce Users can order on the website, orders are automatically imported in TinyERP.
-                        You can configure products, categories of products, language, currency, carrier, payment
-                        and also configure row,column,images.
+  You can configure products, categories of products, language, currency, carrier, pay 
+and also configure row,column,images.
 
 Dependencies
 ------------

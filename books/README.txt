@@ -12,35 +12,33 @@ Introduction
 We plan to release a series of specific books based on chapters available
 on Open ERP.
 
-We will organise these books into the book folder. We use symlinks to point
+We will organise these books into the book folder. We'll use symlinks to point
 from the source directory of each book to the right chapter in the main
 documentation.
 
 Here are some rules to follow:
 * 2 books may overlap, with maximum 1/3 of the chapters,
 * Introduction and conclusions must be different on each book,
-* When writting new chapters, split different subjects into several smaller
+* When writing new chapters, split different subjects into several smaller
   chapters.
 * Translations are managed on the main book, not on specific ones
-* As to maintain easy evolution, the same source file must be exactly the
-  same from one book to another. But chapters can be differents (addition or
-  removal)
-* The content of the book as to be clear in the back cover
-
-
+* To maintain easy evolution, the same source file must be exactly the
+  same from one book to another. But the chapters that are included can be 
+  different (addition or removal)
+* The content of the book has to be clear on the back cover.
 
 Proposed Books
 ==============
 
 In order of publication:
 
-1. Logistic, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
+1. Logistics, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
 2. CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
 3. Financial & Organisational Project Management: 19, 20, 21...
 4. Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
 5. Office Productivity: ...
 
-Currently, we focus on the first book only: Logistic
+Currently, we'll focus on the first book only: Logistics
 
 List of chapters
 ================

@@ -24,8 +24,8 @@ Description
 
 ::
 
-  This module add just somes users groups for the management 
-          of users rights specific to the CCI domain
+  This module add just somes users groups for the management  of users rights specific to 
+  the CCI domain
 
 Dependencies
 ------------

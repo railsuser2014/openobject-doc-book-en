@@ -25,8 +25,7 @@ Description
 ::
 
   Joomla (Virtuemart) eCommerce interface synchronisation.
-  Users can order on the website, orders are automatically imported in Tiny
-  ERP.
+  Users can order on the website, orders are automatically imported in Tiny ERP.
   
   You can export products, product's categories, account taxes,  stock level and create links between
   categories of products, taxes and languages.

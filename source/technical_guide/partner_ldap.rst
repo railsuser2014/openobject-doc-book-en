@@ -24,7 +24,8 @@ Description
 
 ::
 
-  Synchronise partners through a LDAP module. Has been used to synchronise partners in Outlook and Tiny ERP.
+  Synchronise partners through a LDAP module. Has been used to synchronise partners  in 
+  Outlook and Tiny ERP.
 
 Dependencies
 ------------
