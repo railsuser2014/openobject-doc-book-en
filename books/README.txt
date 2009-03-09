@@ -39,6 +39,8 @@ In order of publication:
 4. Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
 5. Office Productivity: ...
 
+Currently, we focus on the first book only: Logistic
+
 List of chapters
 ================
 
