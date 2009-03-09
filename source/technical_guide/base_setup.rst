@@ -24,8 +24,8 @@ Description
 
 ::
 
-  This module implements a configuration system that helps user
-      to configure the system at the installation of a new database.
+  This module implements a configuration system that helps user to configure the system at 
+  the installation of a new database.
   
       It allows you to select between a list of profiles to install:
       * Minimal profile

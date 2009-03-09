@@ -25,8 +25,9 @@ Description
 ::
 
   This module allows you to configure and manage a livechat on your website.
-  So that your salesman can directly talk with your users in your website, using
-  their normal jabber account. This project includes two parts:
+  So that your salesman can directly talk with your users in your website, using their normal 
+  jabber account. 
+  This project includes two parts:
   * An OpenERP module to manage everything
   * A python Ajax client to set on your website for the end-user interface.
   

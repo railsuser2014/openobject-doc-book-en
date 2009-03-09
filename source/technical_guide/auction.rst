@@ -24,10 +24,9 @@ Description
 
 ::
 
-  This module provides functionality to 
-       manage artists, articles, sellers, buyers and auction.
-       Manage bids, track of sold, paid and unpaid objects.
-       Delivery Management.
+  This module provides functionality to manage artists, articles, sellers, buyers and auction.
+  Manage bids, track of sold, paid and unpaid objects.
+  Delivery Management.
 
 Dependencies
 ------------

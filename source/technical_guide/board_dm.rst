@@ -25,7 +25,8 @@ Description
 ::
 
   This module implements a dashboard for campaign manager that includes:
-      * List of campaigns that have started at max 2 month ago and those that will start in the 2 month to come
+      * List of campaigns that have started at max 2 month ago and those that will start in the 
+        2 month to come
       * List of the tasks of the day
       * List of  the tasks with a deadline passed
       

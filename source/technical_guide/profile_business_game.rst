@@ -25,12 +25,14 @@ Description
 ::
 
   This business game will help you to discover Open ERP and it's enterprise management processes.
-  The game is based on a company called 'GoodSound' selling audio and video hardware and organising sonorisation events.
+  The game is based on a company called 'GoodSound' selling audio and video hardware and organising 
+  sonorisation events.
   
   The game is structured into two phases:
-     1. You will discover the Open ERP interface through a complete sale flow: from the quotation to the invoice,
-     2. The goal of the next phase is to make some strategic choices in the system to increase company's profitability
-        within a few turns of one year each.
+     1. You will discover the Open ERP interface through a complete sale flow: from the quotation to 
+        the invoice,
+     2. The goal of the next phase is to make some strategic choices in the system to increase company's 
+        profitability within a few turns of one year each.
 
 Dependencies
 ------------

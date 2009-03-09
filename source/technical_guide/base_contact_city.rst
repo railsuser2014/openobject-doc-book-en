@@ -24,7 +24,8 @@ Description
 
 ::
 
-  Zip code, city, state and country fields are replaced with a location field in partner form when base_contact module is installed.
+  Zip code, city, state and country fields are replaced with a location field in partner form when 
+  base_contact module is installed.
   This module helps to keep homogenous address data in our database.
 
 Dependencies

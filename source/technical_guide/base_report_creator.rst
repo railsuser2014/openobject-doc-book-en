@@ -24,12 +24,10 @@ Description
 
 ::
 
-  This modules allows you to create any statistic
-  report on several object. It's a SQL query builder and browser
-  for and users.
+  This modules allows you to create any statistic report on several object. 
+  It's a SQL query builder and browser for and users.
   
-  After installing the module, it adds a menu to define custom report in
-  the "Dashboard" menu.
+  After installing the module, it adds a menu to define custom report in the "Dashboard" menu.
 
 Dependencies
 ------------

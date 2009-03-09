@@ -24,7 +24,8 @@ Description
 
 ::
 
-  This module lets you compare famous ERP systems and lets you vote their respective facilities(e.g. accounting, BOM Support, etc.) provided by them.
+  This module lets you compare famous ERP systems and lets you vote their respective facilities
+  (e.g. accounting, BOM Support, etc.) provided by them.
 
 Dependencies
 ------------

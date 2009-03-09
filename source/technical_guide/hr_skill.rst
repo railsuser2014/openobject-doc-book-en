@@ -24,7 +24,8 @@ Description
 
 ::
 
-  Generic and powerfull skill management system. This module allows you to manage your company and employees skills, interviews, ...
+  Generic and powerfull skill management system. This module allows you to manage your 
+  company and employees skills, interviews, ...
 
 Dependencies
 ------------

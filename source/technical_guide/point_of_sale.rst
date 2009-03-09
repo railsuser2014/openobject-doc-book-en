@@ -26,7 +26,8 @@ Description
 
   Main features :
    - Fast encoding of the sale.
-   - Allow to choose one payment mode (the quick way) or to split the payment between several payment mode.
+   - Allow to choose one payment mode (the quick way) or to split the payment between 
+     several payment mode.
    - Computation of the amount of money to return.
    - Create and confirm picking list automatically.
    - Allow the user to create invoice automatically.

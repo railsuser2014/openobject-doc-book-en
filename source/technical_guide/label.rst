@@ -26,9 +26,11 @@ Description
 
   Flexible partner labels:
     * Definition of page sizes, label manufacturers and label formats
-    * Flexible label formats (page size, portrait or landscape, manufacturer, rows, columns, width, height, top margin, left margin, ...)
+    * Flexible label formats (page size, portrait or landscape, manufacturer, rows, columns, 
+      width, height, top margin, left margin, ...)
     * Initial data for page sizes and label formats (from Avery and Apli manufacturers)
-    * Wizard to print labels. The label format, the printer margins, the font type and size, the first label (row and column) to print on the first page can be set.
+    * Wizard to print labels. The label format, the printer margins, the font type and size, 
+      the first label (row and column) to print on the first page can be set.
 
 Dependencies
 ------------

@@ -24,12 +24,15 @@ Description
 
 ::
 
-  This module allow users to create profile and compute automatically which partners do fit the profile criteria. 
+  This module allow users to create profile and compute automatically which partners do fit the profile 
+  criteria. 
   
-      In this version the new concept of questionnaire allow you to regroup questions into a questionnaire and directly use it on a partner.
+     In this version the new concept of questionnaire allow you to regroup questions into a questionnaire 
+     and directly use it on a partner.
   
   
-  NOTICE: This Module is Deprecated. Please install crm_profiling in order to have access to the latest functionnalities.
+  NOTICE: This Module is Deprecated. Please install crm_profiling in order to have access to the 
+          latest functionnalities.
 
 Dependencies
 ------------

@@ -24,8 +24,7 @@ Description
 
 ::
 
-  This module adds wizards to import/export documents to be edited in
-  OpenOffice.
+  This module adds wizards to import/export documents to be edited in OpenOffice.
 
 Dependencies
 ------------

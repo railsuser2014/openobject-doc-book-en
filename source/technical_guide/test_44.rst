@@ -24,9 +24,8 @@ Description
 
 ::
 
-  The module adds google map field in partner address
-  so that we can directly open google map from the
-  url widget.
+  The module adds google map field in partner address so that we can directly open google 
+  map from the url widget.
 
 Dependencies
 ------------

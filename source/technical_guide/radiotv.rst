@@ -24,7 +24,8 @@ Description
 
 ::
 
-  This module allows to control TV & Radio channels, programs, grid of date/time of broadcasting and podcasts
+  This module allows to control TV & Radio channels, programs, grid of date/time of 
+  broadcasting and podcasts
   
   channel <--n---m--> program <--1---n--> broadcast <--1---n--> podcast
   

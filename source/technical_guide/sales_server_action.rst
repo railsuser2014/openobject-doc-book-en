@@ -24,9 +24,8 @@ Description
 
 ::
 
-  Server Action for Sales Management
-  You will get 2 actions, for the demonstration for the Server Action
-  that will helps you to customize the Business process
+  Server Action for Sales Management You will get 2 actions, for the demonstration for the 
+  Server Action that will helps you to customize the Business process
   * One Invoice / Each Sales Order Line
   * Two Invoice for One Sales Order
   ** Invoice for the Stokable products

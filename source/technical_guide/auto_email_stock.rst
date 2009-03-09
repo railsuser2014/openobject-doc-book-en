@@ -24,10 +24,8 @@ Description
 
 ::
 
-  Use Email Client module 
-      to Send the Automatic Sales Order to the 
-      Customer or supplier by Email 
-      when the Picking order confirm
+  Use Email Client module to Send the Automatic Sales Order to the Customer or supplier by Email 
+  when the Picking order confirm
 
 Dependencies
 ------------

@@ -25,9 +25,11 @@ Description
 ::
 
   The aim of this module is to allow the automatic upgrade of the field 'List Price' on each product.
-      * added a new price type called 'Internal Pricelist' (currently, we have only 2 price types: Sale and Purchase Pricelist)
+      * added a new price type called 'Internal Pricelist' (currently, we have only 2 price types: 
+        Sale and Purchase Pricelist)
       * Created a wizard button in the menu Products>Pricelist called 'Upgrade Product List Price'
-      * When we have completed the wizard and click on 'Upgrade', it will change the field 'List Price' for all products contained in the categories that we have selected in the wizard
+      * When we have completed the wizard and click on 'Upgrade', it will change the field 
+  'List Price' for all products contained in the categories that we have selected in the wizard
 
 Dependencies
 ------------

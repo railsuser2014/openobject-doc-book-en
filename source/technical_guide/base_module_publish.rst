@@ -31,8 +31,8 @@ Description
   * PyPi, The python offical repository
   * http://Freshmeat.net
   
-  It adds a button "Publish module" on each module, so that you simply have
-  to call this button when you want to release a new version of your module.
+  It adds a button "Publish module" on each module, so that you simply have to call this button when 
+  you want to release a new version of your module.
 
 Dependencies
 ------------

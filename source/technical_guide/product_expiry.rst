@@ -24,7 +24,8 @@ Description
 
 ::
 
-  Track different dates on products and lots. Used, for exampel, in food industries: expiry date, alert date, date of removal, eso.
+  Track different dates on products and lots. Used, for exampel, in food industries: expiry date,
+  alert date, date of removal, eso.
 
 Dependencies
 ------------

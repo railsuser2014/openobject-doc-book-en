@@ -24,8 +24,8 @@ Description
 
 ::
 
-  This module adds a shortcut on the purchase order to automaticalle
-      create an assicated sale order.
+  This module adds a shortcut on the purchase order to automaticalle create an assicated 
+  sale order.
 
 Dependencies
 ------------
