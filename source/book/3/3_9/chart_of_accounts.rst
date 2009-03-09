@@ -1,6 +1,7 @@
 
 .. index::
-   single: Chart of Accounts
+   single: accounts; chart
+   single: chart of accounts
 
 Chart of Accounts
 =================
@@ -61,7 +62,7 @@ To add, modify or delete existing accounts, use the menu :menuselection:`Financi
 Configuration --> Financial Accounting --> Financial Accounts --> List of Accounts`.
 
 .. index::
-   single: Multi-lingual
+   single: multi-lingual
 
 .. tip:: Multi-lingual fields
 
@@ -94,8 +95,7 @@ The main account fields are:
    account data inputs of their own.
 
 .. index::
-   single: Type of account
-   single: Account Type
+   pair: account; type
 
 .. note:: Type of account
 
@@ -137,8 +137,9 @@ The tree structure of the accounts can be altered as often and as much as you wi
 recalculating any of the individual entries. So you can easily restructure your account during the
 year to reflect the reality of the company better.
 
-.. index:: Consolidation (Accounting)
-.. index:: Virtual (Chart of Accounts)
+.. index::
+   single: consolidation (accounting)
+   pair: chart of accounts; virtual
 
 Using virtual charts of accounts
 --------------------------------
@@ -159,9 +160,6 @@ accounts for different companies.
 The most interesting thing about virtual charts of accounts is that they can be used in the same way
 as the default chart of accounts for the whole organization. For example you can establish budgets
 from your consolidated accounts or from the accounts from one of your companies.
-
-.. index::
-   single: Virtual Accounts
 
 .. tip:: Virtual accounts
 

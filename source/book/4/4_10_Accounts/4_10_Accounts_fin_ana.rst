@@ -21,7 +21,7 @@ depending on the additional installed modules):
 *  :guilabel:`Analytic Balance`,
 
 .. index::
-   single: Cost ledger; Analytic
+   pair: cost ledger; analytic
 
 The cost ledger
 ^^^^^^^^^^^^^^^
@@ -64,7 +64,7 @@ services journal for printing.
 	single PDF document.
 
 .. index::
-   pair: Balance; Analytic
+   pair: balance; analytic
 
 Inverted Analytic Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ This report is useful for analyzing the profitability of projects, giving you th
 a project for the different operations that you used to carry out the project.
 
 .. index::
-   single: Multi-company
+   single: multi-company
 
 .. tip::  Multi-company
 

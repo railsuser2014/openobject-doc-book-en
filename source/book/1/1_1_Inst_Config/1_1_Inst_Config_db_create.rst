@@ -1,8 +1,8 @@
-.. index::
-   single: Database; Create
-..
 
-.. index:: Database
+.. index::
+   single: database; create
+   single: database
+..
 
 .. _sect-dbcreate:
 
@@ -13,6 +13,10 @@ Use the technique outlined in this section to create a new database, \ ``openerp
 database will contain the demonstration data provided with Open ERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.
+
+.. index::
+   single: password; super-administrator
+   single: password; superadmin
 
 .. note :: The super-administrator password
 
@@ -61,9 +65,16 @@ database quite secure because you can ensure that it is unique from the outset.
 Database openerp_ch01
 ---------------------
 
+.. index::
+   pair: account; user
+
 Wait for the message showing that the database has been successfully created, along with the user
 accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you've created this seed
 database you can extend it without having to know the super administrator password.
+
+.. index::
+   pair: access; LDAP
+   pair: password; username
 
 .. tip::   User Access
 
@@ -116,8 +127,7 @@ your installation is working.
    *Defining your company during initial database configuration*
 
 .. index::
-   single: Database; Manage
-..
+   single: database; manage
 
 Managing databases
 ------------------
@@ -135,8 +145,7 @@ Backup databases` in the GTK client, or from the :guilabel:`Database` button in 
 :guilabel:`Login` screen.
 
 .. index::
-   single: Database; Duplicate
-..
+   single: database; duplicate
 
 .. tip::   Duplicating a database
 
@@ -148,6 +157,9 @@ Backup databases` in the GTK client, or from the :guilabel:`Database` button in 
 
 	This can be a useful way of making a test database from a production database. You can try out the
 	operation of a new configuration, new modules, or just the import of new data.
+
+.. index::
+   single: access
 
 A system administrator can configure Open ERP to restrict access to some of these database functions
 so that your security is enhanced in normal production use.
@@ -200,7 +212,7 @@ Open ERP modules using the Open ERP client (a task ultimately carried out on t
 server by the server software).
 
 .. index::
-   single:  Permissions
+   pair:  filesystem; permissions
 
 .. tip:: Changing permissions
 

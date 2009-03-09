@@ -71,8 +71,7 @@ EUR. If the currency conversion rates between EUR and USD change, or the EUR pri
 rates can be **automatically** adjusted.
 
 .. index::
-   single: Pricelists; Create
-..
+   single: pricelist; create
 
 Creating pricelists
 -------------------
@@ -98,8 +97,7 @@ For each list you should define:
    This doesn't have to be the same as your selling price to an intermediary or distributor.
 
 .. index::
-   single: Pricelists; versions
-..
+   single: pricelists; version
 
 Pricelist versions
 ^^^^^^^^^^^^^^^^^^
@@ -125,7 +123,7 @@ Use the :guilabel:`Active` field in the versions to activate or disable a pricel
    The prices are automatically calculated as a function of the purchase price and need no further
    manual adjustment.
 
-.. index:: Price
+.. index:: price
 
 Rules for calculating price
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -247,8 +245,7 @@ TABLE
 
 
 .. index::
-   single: Pricelists; Default Pricelist
-..
+   single: pricelist; default pricelist
 
 Default pricelists
 ^^^^^^^^^^^^^^^^^^
@@ -269,8 +266,7 @@ The price for purchases defined in the Default Purchase Pricelist is set by defa
 the Standard Cost of the product in the product file.
 
 .. index::
-   single: Trading Company
-..
+   single: trading company
 
 Example of a trading company
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

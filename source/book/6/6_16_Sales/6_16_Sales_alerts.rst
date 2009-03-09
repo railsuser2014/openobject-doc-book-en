@@ -2,9 +2,9 @@
 Management of Alerts
 ====================
 
-.. index:: Warning
-.. index:: Alerts
-.. index::
+.. index:: 
+   single: warning
+   single: alerts
    pair: module; warning
 
 To manage alerts on products or partners, you can install the :mod:`warning` module. Once that is

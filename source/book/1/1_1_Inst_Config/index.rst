@@ -40,7 +40,6 @@ past that to the third chapter in this part of the book, :ref:`ch-real`.
 
 .. index::
    single:SaaS
-..
 
 .. note:: The SaaS, or “on-demand”, offer
 

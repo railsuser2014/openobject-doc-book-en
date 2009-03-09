@@ -1,5 +1,6 @@
 
-.. index:: Search
+.. index:: 
+   pair: document; search
 
 Searching for documents
 =======================

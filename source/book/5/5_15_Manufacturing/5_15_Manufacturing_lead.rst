@@ -1,6 +1,6 @@
 
 .. index::
-   single: Scheduler; Lead Time
+   single: scheduler; lead time
 
 Calculation of lead times
 =========================
@@ -111,7 +111,7 @@ The example above will then be given the following lead times:
 
 * Purchase BOIS02 (for PANLAT): 4 January (=12 January – 5 days – 3 days).
 
-.. index:: Work Orders
+.. index:: work orders
 
 Operations
 ==========
@@ -227,7 +227,7 @@ effect on the analytic accounts.
    *Data about analytic accounts for a workcenter*
 
 .. index::
-   single: Routing; Manufacturing
+   pair: routing; manufacturing
 
 Routing
 -------
@@ -348,7 +348,7 @@ The production order is automatically put into the state 'Running' once the firs
 started. That consumes some raw materials. Similarly the production order is closed automatically
 once the last operation is completed. The finished products are then made.
 
-.. index:: Barcodes
+.. index:: barcode
 
 Scores, events and barcodes
 ===========================
@@ -534,7 +534,7 @@ short-circuit the planning of different procurements.
    On the product form you have an :guilabel:`ACTIONS` shortcut button :guilabel:`Create Procurements`
    that lets you quickly create a new procurement order.
 
-.. index:: Waste Products
+.. index:: waste products
 
 Management of waste products and secondary products
 ===================================================
@@ -591,7 +591,7 @@ production order for the secondary product.
    subcontract order for the operations.
    The behaviour will depend on the supply method configured on the product form :guilabel:`Buy` or :guilabel:`Produce`.
 
-.. index:: Repairs
+.. index:: repairs
 
 Management of repairs
 =====================
@@ -728,7 +728,7 @@ the running state. You can specify the invoicing mode in the second tab:
 You can confirm the repair operation or create an invoice for the customer depending on this state.
 
 .. index::
-   single: Invoicing; Repair
+   pair: invoicing; repair
 
 Invoicing the repair
 --------------------

@@ -1,5 +1,5 @@
 
-.. index:: Payment Terms
+.. index:: payment terms
 
 Payment Terms
 =============

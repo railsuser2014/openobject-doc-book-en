@@ -78,9 +78,11 @@ The :mod:`account` module in Open ERP covers general accounting, analytic accou
 and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 .. index::
-   single: Accounting
-   single: Financial Accounting
-..
+   single: accounting
+   single: accounting; financial
+   single: accounting; analytical
+   single: accounting; auxiliary
+   single: accounting; budgetary
 
 .. note:: Accounting
 
@@ -98,7 +100,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	  financial year.
 
 .. index::
-   single: Accounting; Multi-company
+   pair: accounting; multi-company
 ..
 
 .. tip:: Multi-company

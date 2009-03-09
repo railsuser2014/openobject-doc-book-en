@@ -275,7 +275,9 @@ invoices you.
    This will automatically add delivery changes to the creation of the draft invoice as a function
    of the products delivered or ordered.
 
-.. index:: Tender
+.. index:: 
+   single: tender
+   single: purchase; tender
 
 Tenders
 -------

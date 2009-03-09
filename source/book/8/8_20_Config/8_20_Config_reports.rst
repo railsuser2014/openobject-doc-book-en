@@ -1,6 +1,6 @@
 .. index::
-   single: Report
-..
+   single: configuring; report
+   single: report
 
 Configuring reports
 ===================
@@ -113,7 +113,8 @@ the right of the form to get the requested analysis.
    *Analyzing sales by partner and by product in graph view*
 
 .. index::
-   single: Configuring; Dashboards
+   single: configuring; dashboard
+   single: dashboard
 ..
 
 Configuring the dashboards
@@ -217,7 +218,7 @@ Then close the application and restart Writer: a new menu appears in the top men
 Report*  or  *Open ERP Report* .
 
 .. index::
-   single: Report; OpenOffice.org
+   pair: report; OpenOffice.org
 ..
 
 Connecting OpenOffice.org to Open ERP
@@ -229,7 +230,7 @@ database \ ``demo_min``\   in which you've already installed the module :mod:`sa
 appears if you've made a successful connection.
 
 .. index::
-   single: Report; Modify
+   single: report; modify
 ..
 
 Modifying a report
@@ -305,7 +306,7 @@ You can check the result in Open ERP using the menu :menuselection:`Sales Manag
 Orders --> All Orders`.
 
 .. index::
-   single: Report; New
+   single: report; new
 ..
 
 Creating a new report

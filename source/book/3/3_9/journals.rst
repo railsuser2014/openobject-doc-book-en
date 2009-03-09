@@ -1,7 +1,6 @@
 
 .. index::
-   single: Journal; Configuring
-..
+   single: journal; configuring
 
 Journals
 ========

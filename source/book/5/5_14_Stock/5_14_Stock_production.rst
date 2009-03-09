@@ -32,7 +32,7 @@ This can be found amongst Open ERP's ``addons-extra`` rather in the main set of 
 could be because some screens have no navigation 
 controls, so you can't always easily get back to the main Open ERP system).
 
-.. index:: Forecasts
+.. index:: forecasts
 
 Sales Forecasts
 ---------------
@@ -71,7 +71,7 @@ completion.
    *Sales Forecast to help create a master production plan*
 
 .. index::
-   single: Plan; Production
+   single: plan; production
 
 Production Plan
 ---------------

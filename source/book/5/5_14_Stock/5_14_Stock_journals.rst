@@ -17,7 +17,7 @@ vehicle has left the company you can confirm all the orders that are found in th
 same time.
 
 .. index::
-   single: Journal; Stock Management
+   single: journal; stock management
 
 The different journals
 ----------------------

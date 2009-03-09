@@ -1,6 +1,6 @@
 
 .. index::
-   single: Analytic accounts
+   single: analytic; accounts
 
 Putting analytic accounts in place
 ==================================
@@ -56,7 +56,7 @@ which you'd need so that you can invoice the partner:
   should be invoiced automatically from the services represented by the costs in the analytic account.
 
 .. index::
-   single: Invoicing
+   single: invoicing
 
 .. tip:: Invoicing
 
@@ -112,7 +112,7 @@ These enable you to categorize the different accounting entries by their type:
 * situation entries (special situations, such as installation of the software).
 
 .. index::
-   single: Journal; Minimal journals
+   single: journal; minimal journals
 
 .. note::  Minimal journals
 

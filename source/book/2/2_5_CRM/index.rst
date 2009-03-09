@@ -11,8 +11,8 @@ Customer Relationship Management
  understand their customers' needs better, and automating their communication efforts.*
 
 .. index::
-   single: CRM & SRM
-..
+   single: CRM
+   single: SRM
 
 .. tip:: CRM & SRM
 

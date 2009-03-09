@@ -3,6 +3,8 @@ Management of Carriers
 ======================
 
 .. index::
+   single: delivery grid
+   single: carriers
    pair: module; delivery
    pair: module; profile_manfuacturing
 

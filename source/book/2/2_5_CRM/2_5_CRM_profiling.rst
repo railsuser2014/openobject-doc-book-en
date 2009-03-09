@@ -5,8 +5,7 @@
 Profiling
 =========
 
-.. index:: Prospect
-.. index:: Profiling
+.. index:: prospect
 
 Establishing the profiles of prospects
 --------------------------------------
