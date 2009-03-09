@@ -3,8 +3,8 @@ Import / Export
 ===============
 
 .. index::
-   single: Export; Stock Management
-.. index:: Import; Stock Management
+   single: export; stock management
+   single: import; stock management
 
 Managing import / export with foreign companies can sometimes be very complex. Between a departure
 port and destination company, products can get stopped for several weeks at sea or somewhere in the
@@ -59,7 +59,7 @@ incoming products so that you can respond to a customer's needs as precisely as 
 You can also value the products in transit in your account depending on the chosen stock location
 configuration.
 
-.. index:: Rent
+.. index:: rent
 
 Rental locations
 ----------------

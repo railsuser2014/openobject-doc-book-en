@@ -1,5 +1,5 @@
 .. index::
-   single: Planning
+   single: planning
 ..
 
 Planning that improves leadership
@@ -49,7 +49,7 @@ The planning function covers several objectives which will be described in this 
 	stress in a company stemming from a lack of communication and planning.
 
 .. index::
-   single: Tasks
+   single: tasks
 
 Planning by time or by tasks?
 -----------------------------
@@ -130,7 +130,7 @@ resources on projects from the task prioritization within a project.
 			changing priorities within projects.
 
 .. index::
-   single: Planning; Create Plan
+   single: planning; create plan
 ..
 
 Creating plans

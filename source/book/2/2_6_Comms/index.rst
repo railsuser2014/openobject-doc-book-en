@@ -1,6 +1,5 @@
 .. index::
-   single: Communication Tools
-..
+   single: communication tools
 
 *******************
 Communication Tools

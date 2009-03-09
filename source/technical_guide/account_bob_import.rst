@@ -24,14 +24,16 @@ Description
 
 ::
 
-  This module provide an easy way to migrate your financial data from Bob software to OpenERP. It includes the import of
+  This module provide an easy way to migrate your financial data from Bob 
+  software to OpenERP. It includes the import of
               * chart of accounts,
               * financial journals,
               * customers, suppliers and prospects,
               * contacts,
               * accounting entries
   
-          Once the module is installed, all you have to do is run the configuration wizard and provide OpenERP the location of the Bob directory where is your data.
+          Once the module is installed, all you have to do is run the configuration 
+          wizard and provide OpenERP the location of the Bob directory where is your data.
 
 Dependencies
 ------------

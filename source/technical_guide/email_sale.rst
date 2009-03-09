@@ -24,8 +24,7 @@ Description
 
 ::
 
-  Use Email client module to send to customers
-  the selected sale orders attached by Email.
+  Use Email client module to send to customers the selected sale orders attached by Email.
   
     * The invoice and contact emails addresses are proposed
     * An email subject and text with the user signature are proposed

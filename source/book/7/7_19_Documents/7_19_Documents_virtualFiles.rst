@@ -1,6 +1,6 @@
 
 .. index::
-   single: Virtual; Files
+   single: virtual; file
 
 Virtual Files
 =============

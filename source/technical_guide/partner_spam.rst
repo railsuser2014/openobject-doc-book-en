@@ -30,7 +30,8 @@ Description
     * The email field can contain several email addresses separated by ,
     * A maximum of 3 files can be attached to emails
     * Clickatell gateway to send SMS can be configured by http or by email
-    * The spam text can include special [[field]] tags to create personalized messages (they will be replaced to the the corresponding values of each partner contact):
+    * The spam text can include special [[field]] tags to create personalized messages 
+      (they will be replaced to the the corresponding values of each partner contact):
         [[partner_id]] -> Partner name
         [[name]] -> Contact name
         [[function]] -> Function

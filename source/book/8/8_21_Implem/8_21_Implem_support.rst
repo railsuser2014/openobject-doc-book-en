@@ -1,7 +1,7 @@
 
 .. index::
-   single: Maintenance
-   single: Support
+   single: maintenance
+   single: support
 
 Support and maintenance
 =======================

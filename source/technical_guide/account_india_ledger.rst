@@ -24,8 +24,8 @@ Description
 
 ::
 
-  India Accounting Ledger module provides that allows to create a 
-      parter ledger after creating the partner and customised reports based on that.
+  India Accounting Ledger module provides that allows to create a parter ledger after creating  the
+  partner and customised reports based on that.
 
 Dependencies
 ------------

@@ -4,9 +4,8 @@
 Internal and external access using FTP
 ======================================
 
-.. index:: Directory
-
 .. index::
+   single: directory
    pair: module; document
 
 The first configuration step is to create a directory structure that will be used to classify your

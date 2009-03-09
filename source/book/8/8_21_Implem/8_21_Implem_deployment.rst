@@ -1,6 +1,6 @@
 
 .. index::
-   single: Deployment
+   single: deployment
 ..
 
 Deployment

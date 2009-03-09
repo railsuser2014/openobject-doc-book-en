@@ -25,7 +25,7 @@ This section deals with statutory taxes and accounts which are legally required 
 	You can, for example, install the :mod:`report_intrastat` module for intra-stat declarations
 	about sending goods to and receiving goods from other countries.
 
-.. index:: Tax
+.. index:: tax
 
 Taxation
 --------
@@ -267,7 +267,7 @@ you attract a tax amount. In such a case, this 'tax' may not be legally-required
 something tax-like, for example authors' royalties or sales commission.
 
 .. index::
-   single: Balance sheet
+   single: balance sheet
 
 The accounts ledgers and the balance sheet
 ------------------------------------------
@@ -309,7 +309,7 @@ hierarchy you automatically analyze both that account and its child accounts.
 The :mod:`account_reporting` module was developed to provide configurable reports for balance sheets
 or earnings statements in legally required formats.
 
-.. index:: Journal
+.. index:: journal
 
 The accounting journals
 -----------------------
@@ -367,14 +367,15 @@ Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Fin
 --> Periodical Processing --> Taxes`. The structure of the chart is for calculating the tax
 declaration but also all the other taxes can be calculated (such as the French DEEE).
 
+.. index::
+   single: TVA
+   single: VAT
+
 .. figure::  images/account_tax_chart.png
    :scale: 50
    :align: center
 
    *Example of a Belgian TVA (VAT) declaration*
-
-.. index::
-   single: TVA
 
 The tax chart represents the amount of each area of the tax declaration for your country. It's
 presented in a hierarchical structure which lets you see the detail only of what interests you and

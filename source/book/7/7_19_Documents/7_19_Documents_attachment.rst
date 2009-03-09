@@ -1,5 +1,5 @@
 
-.. index:: Attachments
+.. index:: attachments
 
 Managing Attachments
 ====================

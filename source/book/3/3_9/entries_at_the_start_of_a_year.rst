@@ -1,4 +1,7 @@
 
+.. index::
+   single: accounts; start of year
+
 Entries at the start of a year
 ==============================
 

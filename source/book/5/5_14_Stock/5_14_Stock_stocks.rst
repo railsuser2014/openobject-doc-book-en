@@ -2,7 +2,7 @@ Stocks
 ======
 
 .. index::
-   single: Virtual; Stock
+   single: virtual; stock
 
 In the product form you can find a report that will give you the stock levels of the various
 different products in any selected location. If you haven't selected any location, Open ERP
@@ -79,7 +79,7 @@ production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'
 everything that hasn't yet been planned by the system. The quantities of product in this location
 cancel each other out.
 
-.. index:: Inventory
+.. index:: inventory
 
 Initial Inventory
 -----------------

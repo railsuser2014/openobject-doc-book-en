@@ -24,8 +24,7 @@ Description
 
 ::
 
-  Modify account analytic view to show
-  important data for project manager of services companies.
+  Modify account analytic view to show important data for project manager of services companies.
   Add menu to show relevant information for each manager.
 
 Dependencies

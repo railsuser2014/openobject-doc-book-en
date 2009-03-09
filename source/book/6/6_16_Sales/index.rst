@@ -1,5 +1,5 @@
 
-.. index:: Sales
+.. index:: Sales Management
 
 .. _ch-sales:
 

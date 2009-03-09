@@ -25,7 +25,8 @@ Description
 ::
 
   - define some groups with access rules
-          - so using above rules , new object which will be confidential (can only be accessed by some users of group)
+          - so using above rules , new object which will be confidential 
+            (can only be accessed by some users of group)
 
 Dependencies
 ------------

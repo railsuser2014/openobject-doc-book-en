@@ -167,11 +167,14 @@ Examples The file server/bin/addons/stock/stock_view.xml declares context dictio
                             <field name="type">form</field>
                             <field name="arch" type="xml">
                             <form string="Stock Inventory Lines">
-                                 <field name="location_id" colspan="3" select="1" 
+                                 <field name="location_id" 
+                                        colspan="3" 
+                                        select="1" 
                                         domain="[('usage','=','internal')]"/>
-                                 <field name="product_id" select="1"  
-                                      on_change="on_change_product_id
-                                                 (location_id,product_id,product_uom)"
+                                 <field name="product_id" 
+                                        select="1"  
+                                        on_change="on_change_product_id
+                                                      (location_id,product_id,product_uom)"
                                       context="location=location_id,uom=product_uom"/>
                                  <field name="product_uom"/>
                                  <field name="product_qty"/>
@@ -492,9 +495,8 @@ In membership module [product.product]::
 
     def fields_view_get(self, cr, user, view_id=None, view_type='form', context=None, toolbar=False):
         if ('product' in context) and (context['product']=='membership_product'):
-            model_data_ids_form = self.pool.get('ir.model.data').
-                                    search(cr,user,[('model','=','ir.ui.view'),('name','in',
-                                        ['membership_products_form','membership_products_tree'])])
+            model_data_ids_form = self.pool.get('ir.model.data').search(cr,user,[('model','=','ir.ui.view'),('name','in',
+                                                                ['membership_products_form','membership_products_tree'])])
             resource_id_form = self.pool.get('ir.model.data').
                                 read(cr,user,model_data_ids_form,fields=['res_id','name'])
             dict_model={}
@@ -572,10 +574,10 @@ In res.country::
         ids = False
         if len(name) == 2:
             ids = self.search(cr, user, [('code', '=', name)] + args,
-                    limit=limit, context=context)
+                              limit=limit, context=context)
         if not ids:
             ids = self.search(cr, user, [('name', operator, name)] + args,
-                    limit=limit, context=context)
+                              limit=limit, context=context)
         return self.name_get(cr, user, ids, context)
 
 

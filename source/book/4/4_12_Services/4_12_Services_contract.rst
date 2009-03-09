@@ -1,6 +1,5 @@
 .. index::
-   single: Contracts
-..
+   pair: service; contract
 
 Managing Service Contracts
 ==========================
@@ -60,7 +59,7 @@ Policy` on the order's second tab :guilabel:`Other data` :
 
 *  :guilabel:`Invoice from the Packing` : invoices are created from the packing stage.
 
-.. index:: Delivery
+.. index:: delivery
 
 .. note:: Delivery of an order
 
@@ -124,7 +123,7 @@ invoiced on the basis of analytic costs. This can take different forms, such as 
 services, purchase of raw materials, and expense reimbursements.
 
 .. index::
-   single: Pricelists
+   single: pricelist
 ..
 
 .. note:: Pricelists and billing rates

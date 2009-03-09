@@ -130,7 +130,7 @@ with reference to what an individual can do.
 To define timeboxes for your company, use the menu :menuselection:`Project Management -->
 Configuration --> Time Management --> Timeboxes --> My timeboxes`.
 
-.. index:: Methodology; GTD
+.. index:: methodology; GTD
 
 Methodology and iterative process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -160,8 +160,8 @@ iterative process:
 
 	#. Repeat the same process each week and each month for the respective timeboxes.
 
-.. index:: Agenda
-.. index:: Timebox
+.. index:: agenda
+.. index:: timebox
 
 .. tip:: Don't confuse **Agenda** and **Timebox**
 

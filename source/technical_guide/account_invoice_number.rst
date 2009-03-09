@@ -24,8 +24,8 @@ Description
 
 ::
 
-  Module to change defination of the name field of invoice
-      using this module you can change the invoice number when it is in draft state.
+  Module to change defination of the name field of invoice using this module you can change the 
+  invoice number when it is in draft state.
 
 Dependencies
 ------------

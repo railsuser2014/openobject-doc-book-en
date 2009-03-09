@@ -1,8 +1,6 @@
 
 .. index::
-  single: Module; Install functionality
-..
-
+  single: module; new functionality
 
 Installing new functionality
 =============================
@@ -18,8 +16,7 @@ You'll start by checking if there are any updates available online that apply to
 installation. Then you'll install a CRM module to complete your existing database.
 
 .. index::
-  single: Module; Upgrade Modules
-
+  single: module; upgrading
 
 Updating the Modules list
 ---------------------------
@@ -69,8 +66,7 @@ repository.
 	limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
 
 .. index::
-  single: Module; Install
-..
+  single: module; installing
 
 
 Installing a module
@@ -156,7 +152,7 @@ modules add menus and submenus as they need. Modules can also add additional fie
 forms, or simply additional demonstration data or some settings specific to a given requirement.
 
 .. index::
-  single: Module; Dependencies
+  single: module; dependencies
 ..
 
 .. note::  Dependencies between modules
@@ -197,7 +193,7 @@ demonstration data because you checked the :guilabel:`Load Demonstration Data` c
 created the database.
 
 .. index::
-  single: Module; Import
+  single: module; importing
 ..
 
 Click :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to give you an

@@ -1,5 +1,5 @@
 .. index::
-   single: Chart of Accounts; Analytic
+   pair: chart of accounts; analytic
 
 To each enterprise [his] own analytic chart
 ===========================================
@@ -131,6 +131,9 @@ Like most system processes, hours worked are integrated into the analytic accoun
 employee enters a timesheet for a number of hours, that automatically generates analytic accounts
 corresponding to the cost of those hours in the case concerned. The hourly charge is a function of
 the employee's salary.
+
+.. index:: 
+   single: absences
 
 So a law firm will opt for an analytic representation which reflects the management of the time that
 employees work on the different client cases.

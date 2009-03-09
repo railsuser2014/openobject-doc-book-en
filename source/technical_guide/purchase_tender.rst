@@ -24,8 +24,10 @@ Description
 
 ::
 
-  This module allows you to manage your Purchase Tenders. When a purchase order is created, you now have the opportunity to save the related tender. 
-      This new object will regroup and will allow you to easily keep track and order all your purchase orders.
+  This module allows you to manage your Purchase Tenders. When a purchase order is created, you 
+  now have the opportunity to save the related tender. 
+      This new object will regroup and will allow you to easily keep track and order all your 
+      purchase orders.
 
 Dependencies
 ------------

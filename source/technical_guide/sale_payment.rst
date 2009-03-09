@@ -26,7 +26,9 @@ Description
 
   Adds payment type and bank account to sale process.
   
-  The sale order inherits payment type and bank account (if the payment type is related to bank accounts) from partner as default. Next, the invoice based on this sale order inherits the payment information from it.
+  The sale order inherits payment type and bank account (if the payment type is related to bank accounts) 
+  from partner as default. Next, the invoice based on this sale order inherits the payment information 
+  from it.
   
   Based on previous work of Readylan (version for 4.2).
 

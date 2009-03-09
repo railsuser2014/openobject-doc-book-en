@@ -24,10 +24,9 @@ Description
 
 ::
 
-  This module automatically generates inter-company documents, without
-      confirmations or validation steps. When a purchase order is confirmed,
-      if the partner exist in one of the company <> from the current one, it
-      generates a SO.
+  This module automatically generates inter-company documents, without confirmations or validation steps. 
+  When a purchase order is confirmed,if the partner exist in one of the company <> from the current one, it
+  generates a SO.
   
       Company C1: Sale order -> Purchase Order (MTO)
       Inter-Co : Confirm Purchase Order (C1)

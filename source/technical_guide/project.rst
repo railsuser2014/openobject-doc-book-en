@@ -24,8 +24,8 @@ Description
 
 ::
 
-  Project management module that track multi-level projects, tasks,
-  works done on tasks, eso. It is able to render planning, order tasks, eso.
+  Project management module that track multi-level projects, tasks, works done on tasks, eso. 
+  It is able to render planning, order tasks, eso.
 
 Dependencies
 ------------

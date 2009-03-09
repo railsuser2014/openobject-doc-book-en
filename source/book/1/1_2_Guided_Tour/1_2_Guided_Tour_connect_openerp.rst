@@ -59,7 +59,6 @@ Two menus are available on the left:
 
 .. index::
    single: Preferences
-..
 
 Preferences toolbar
 ---------------------
@@ -76,8 +75,7 @@ documents that are most useful to someone of the user's position in the company.
 assign dashboards to different users in a later chapter, :ref:`ch-config`.
 
 .. index::
-   single: TimeZone
-..
+   single: timezone
 
 .. tip::  Multi-nationals and time zones
 
@@ -120,8 +118,7 @@ a database. If your database is new it will say :guilabel:`No request`. You can 
 to look at requests that have been sent to you at any time.
 
 .. index::
-   single: Language Installation
-..
+   single: installation; language
 
 Installing a new language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -165,7 +162,7 @@ new language.
    the Menu toolbar then click Translations > Load an Official Translation ” you'll just get “ use menu
    :menuselection:`Administration --> Translations --> Load an Official Translation` ”.
 
-.. index:: Requests
+.. index:: requests
 
 Requests as a mechanism for internal communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -252,8 +249,7 @@ waiting requests.
 	important event.
 
 .. index::
-  single: User Configuration
-..
+   single: user; configuration
 
 Configuring Users
 -------------------
@@ -274,6 +270,11 @@ has no roles
 and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you
 follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group,
 which gives it more advanced rights to configure new users.
+
+.. index:: 
+   single: user; access
+   single: user; role
+   single: user; group
 
 .. tip::  Roles, Groups and Users
 
@@ -308,8 +309,7 @@ Management defines these access rights as described in :ref:`ch-config`.
 	could be defined but were not activated by default.
 
 .. index::
-  single: Partner; Managing Partners
-..
+   single: partner; managing
 
 Managing partners
 -------------------
@@ -348,8 +348,7 @@ them to get a feel for their use.
    *Partner form*
 
 .. index::
-  single: Partner; Categories
-..
+   single: partner; category
 
 .. tip::  Partner Categories
 

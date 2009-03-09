@@ -19,7 +19,7 @@ Manufacturing has the following results:
   products.
 
 .. index:: BoM
-.. index:: Bill of Materials
+.. index:: bill of materials
 
 Bills of Materials
 ===================
@@ -161,7 +161,7 @@ product. The quantities are set out in a report based on the quantities of finis
 the quantities needed to produce them from the Bill of Materials.
 
 .. index::
-   single: BoM;Revisions
+   single: BoM; revisions
 
 The second tab, :guilabel:`Revisions`, is used to indicate all the changes made to the 
 Bill of Materials. After each
@@ -195,9 +195,8 @@ The final part of the third tab lets you set some properties for the product's m
 processes. These will be detailed further on in the chapter in the section on configurable products.
 
 .. index::
-   single: BoM;Multi-level
-
-.. index:: Multi-level BoM
+   single: BoM; multi-level
+   single: multi-level BoM
 
 Multi-level Bills of Materials
 ===============================
@@ -289,7 +288,7 @@ TAQ000        12        Unit
 Table: Single manufacture from a tree-structured BoM
 
 .. index::
-   single: Phantom; Bill of Materials
+   pair: phantom; bill of materials
 
 Phantom Bills of Materials
 ----------------------------
@@ -538,7 +537,7 @@ chapter.
 The customer order
 ------------------
 
-.. index:: Quotation
+.. index:: quotation
 
 Begin by encoding a customer order. To do this, use the menu :menuselection:`Sales Management -->
 Sales Orders -> New Quotation`. Enter the following information:
@@ -573,7 +572,7 @@ Start the requirements calculation using the menu :menuselection:`Manufacturing 
 Schedulers`.
 
 .. index::
-   Semi-Finished Product
+   single: semi-finished product
 
 Producing an Intermediate Product
 -----------------------------------
@@ -684,8 +683,8 @@ Delivery of product to the customer
 --------------------------------------
 
 .. index::
-   single: Picking
-   single: Packing
+   single: picking
+   single: packing
 
 When the products have been manufactured, the storesperson automatically finds the order in his
 list of items to do. To see the items waiting for delivery, use the menu :menuselection:`Stock
@@ -716,7 +715,7 @@ name ( ``Agrolait`` ) or by its reference ( ``SO007`` ). Click on it and then cl
     * delivery order.
 
 .. index::
-   single: Invoicing; At Delivery
+   single: invoicing; at delivery
 
 Invoicing at delivery
 ----------------------
@@ -794,8 +793,11 @@ figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
 
    *Downstream traceability from customer to suppliers*
 
-.. index:: Manufacturing Order
-.. index:: Production Order
+.. index:: 
+   single: manufacturing order
+   single: production order
+   single: order; manufacturing
+   single: order; production
 
 Production order in detail
 ===========================
@@ -871,7 +873,9 @@ consumed automatically from stock, which means that the draft ( ``Waiting`` ) mo
 Once the production is complete, click :guilabel:`Production Finished`. The finished products are
 then moved into stock.
 
-.. index:: Scheduler
+.. index:: 
+   single: scheduler
+   single: requirements planning
 
 Scheduling
 ===========

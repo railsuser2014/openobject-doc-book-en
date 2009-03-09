@@ -1,5 +1,5 @@
 .. index::
-   single: Workflows
+   single: workflow
 
 Configuring workflows
 =====================
@@ -51,7 +51,7 @@ by modifying the conditions that control the existing transitions.
 	The definition just consists of a list of activities (nodes) and transitions (arrows).
 
 .. index::
-   single: Workflows; Roles
+   single: workflow; role
 ..
 
 Assigning roles

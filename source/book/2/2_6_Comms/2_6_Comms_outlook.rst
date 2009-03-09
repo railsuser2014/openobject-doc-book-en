@@ -1,7 +1,3 @@
-.. index::
-   single: Microsoft Outlook interface
-..
-
 .. index:: Outlook (Microsoft)
 
 Microsoft Outlook interface

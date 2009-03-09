@@ -32,9 +32,11 @@ Description
       of a new production number/code to create and associate to the move (it also checks it
       doesn't exist yet)
       
-      Notice: this module doesn't split product nomemclatures in MRP since they don't use pickings
+      Notice: this module doesn't split product nomemclatures in MRP since 
+              they don't use pickings
       A good workaround is too define several lines of individual products in nomemclatures
-      and produce 1 by 1 (if possible) to make it easier to encore unique prodlot in production orders too.
+      and produce 1 by 1 (if possible) to make it easier to encore unique prodlot in 
+      production orders too.
 
 Dependencies
 ------------

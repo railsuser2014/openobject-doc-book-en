@@ -24,9 +24,8 @@ Description
 
 ::
 
-  This module adds the possibility to define a sequence for
-          the partner code. This code is then set as default when you
-          create a new partner, using the defined sequence.
+  This module adds the possibility to define a sequence for the partner code. 
+  This code is then set as default when you create a new partner, using the defined sequence.
 
 Dependencies
 ------------

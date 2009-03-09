@@ -1,6 +1,6 @@
 
 .. index::
-   single: Timesheets
+   single: timesheet
 ..
 
 Timesheets
@@ -66,7 +66,7 @@ one of the groups there such as :guilabel:`38 Hours/Week`.
    *Timesheet category for full time 38 hours per week*
 
 .. index::
-   single: Employee; Configuration
+   single: employee; configuring
 ..
 
 Employee configuration
@@ -138,7 +138,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 	overheads associated with pay.
 
 .. index::
-   single: Timesheets; Entering data
+   single: timesheet; entering data
 ..
 
 Entering timesheet data
@@ -251,7 +251,7 @@ screen. If you want to see more detail, switch to the list view.
 	To use this dashboard, install the module :mod:`board_project`.
 
 .. index::
-   single: Timesheets; Evaluation
+   single: timesheets; evaluation
 ..
 
 Evaluation of service costs
@@ -323,7 +323,7 @@ The analyses of profitability by project and by employee are available from the 
 They take all of the invoices into account, and also take into account the cost of the time spent on
 each project.
 
-.. index:: Department
+.. index:: department
 
 Managing by department
 ----------------------

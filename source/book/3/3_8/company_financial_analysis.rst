@@ -1,6 +1,6 @@
 
 .. index::
-  single: Financial Analysis
+  single: financial analysis
 ..
 
 Company Financial Analysis
@@ -14,7 +14,7 @@ You'll see here the analysis tools for your company's financial situation, in pa
 
 * the accounting dashboard.
 
-.. index:: Indicators
+.. index:: indicators
 
 Management Indicators
 ---------------------
@@ -114,7 +114,7 @@ So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / ba
 that's the balance in accounts 4 and 5 divided by the balance in account 1.
 
 .. index::
-  single: Budgeting
+  single: budgeting
 ..
 
 Good management budgeting
@@ -128,7 +128,7 @@ Use the menu :menuselection:`Financial Management --> Configuration --> Budgets 
 to define a new budget.
 
 .. index::
-   single: Budget Revisions
+   single: budget revisions
 
 .. tip:: Budget Revisions
 
