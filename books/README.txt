@@ -33,7 +33,7 @@ Proposed Books
 
 - CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
 - Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
-- Logistic, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 21, 22, C
+- Logistic, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
 - Financial & Organisational Project Management: 19, 20, 21...
 
 
@@ -80,9 +80,9 @@ The chapters marked with a (*) should be written.
 21. Wiki Engine (*)
 
 * System Administration and Implementation
-21. Configuring and Administering Open ERP
-22. Implementation Methodology
+22. Configuring and Administering Open ERP
+23. Implementation Methodology
 
 * Conclusion
-23 You aren’t alone
-24 Consult the available resources
+24 You aren’t alone
+25 Consult the available resources
