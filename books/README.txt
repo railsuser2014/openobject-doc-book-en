@@ -31,10 +31,12 @@ Here are some rules to follow:
 Proposed Books
 ==============
 
-- CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
-- Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
-- Logistic, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
-- Financial & Organisational Project Management: 19, 20, 21...
+In order of publication:
+
+1. Logistic, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
+2. CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
+3. Financial & Organisational Project Management: 19, 20, 21...
+4. Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
 
 
 List of chapters
