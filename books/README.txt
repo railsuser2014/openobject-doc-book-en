@@ -37,7 +37,7 @@ In order of publication:
 2. CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
 3. Financial & Organisational Project Management: 19, 20, 21...
 4. Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
-
+5. Office Productivity: ...
 
 List of chapters
 ================
