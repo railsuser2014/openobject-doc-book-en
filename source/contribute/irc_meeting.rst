@@ -61,7 +61,7 @@ The phases of the meeting
 +++++++++++++++++++++++++
 
 Introduction
-------------
+~~~~~~~~~~~~
 
 At the beginning of each meeting, we will select:
 * A responsible to organize and respect the list of topics
@@ -77,12 +77,12 @@ the different elements are added in the list of topics, in the right section.
 
 
 Presentations
--------------
+~~~~~~~~~~~~~
 
 People can write their names and the company they work for.
 
 Discussion on topics
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 The responsible of the meeting announces the topics one by one. Each new topics
 should be emphasized so that it's clear when we read the logs:
@@ -99,7 +99,7 @@ responsible of the meeting can request to continue on the next topic and,
 if needed, ask a new date to discuss this topic specifically.
 
 Conclusion
-----------
+~~~~~~~~~~
 
 The responsible to write the summary copy/paste his summary in the IRC
 channel. The summary must contain in minimum:
@@ -113,7 +113,7 @@ people, the IRC log is accessible for this.
 
 
 Summary Post
-------------
+~~~~~~~~~~~~
 
 The responsible of the summary writes a post in the planet with the summary
 of the IRC meeting.
