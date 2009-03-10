@@ -1,29 +1,22 @@
 
-.. _part1-steps:
+.. _part-config:
 
-#########################
-First steps with Open ERP
-#########################
+########################################
+System Administration and Implementation
+########################################
 
- Open ERP is an impressive software system, being simple to use and yet providing great benefits
- in helping you manage your company.
- It's easy to install under both Windows and Linux compared with other enterprise-scale systems,
- and offers unmatched functionality.
+ After you've tested and evaluated Open ERP, you'll need to configure it to match the software to your company's needs.
+ Its flexibility enables you to configure the different modules, adapting them to your industry or sector of activity.
 
- The objective of this first part of the book is to help you to start discovering it in practice.
-
- The first chapter, :ref:`ch-inst`, gives detailed guidance for installing it.
- Next, in :ref:`ch-guided`, you're taken on a step-by-step guided tour using the information in its demonstration
- database.
- Then in :ref:`ch-real` you can try out a real case, from scratch in a new database,
- by developing a complete business workflow that runs from purchase to sale of goods.
+ Designed for ERP project managers, this section deals with the administration and configuration of the system, 
+ giving you powerful tools for integrating the software in a company and driving and tracking the project,
+ taking account of different problems, a range of supplier types, implementation risks, and the options available to you.
 
 .. toctree::
     :maxdepth: 1
 
-    1_1_Inst_Config/index
-    1_2_Guided_Tour/index
-    1_3_Real_Case/index
+    8_20_Config/index
+    8_21_Implem/index
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -50,5 +43,4 @@ First steps with Open ERP
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
-
 

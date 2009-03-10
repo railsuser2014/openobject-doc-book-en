@@ -1,29 +1,26 @@
 
-.. _part1-steps:
+.. _part-phys:
 
-#########################
-First steps with Open ERP
-#########################
+#######################
+Stock and Manufacturing
+#######################
 
- Open ERP is an impressive software system, being simple to use and yet providing great benefits
- in helping you manage your company.
- It's easy to install under both Windows and Linux compared with other enterprise-scale systems,
- and offers unmatched functionality.
-
- The objective of this first part of the book is to help you to start discovering it in practice.
-
- The first chapter, :ref:`ch-inst`, gives detailed guidance for installing it.
- Next, in :ref:`ch-guided`, you're taken on a step-by-step guided tour using the information in its demonstration
- database.
- Then in :ref:`ch-real` you can try out a real case, from scratch in a new database,
- by developing a complete business workflow that runs from purchase to sale of goods.
-
+ This part of the book concentrates on physical materials - the handling of stock and
+ the transformation of materials by assembly and manufacture.
+ 
+ Stocks are the physical embodiment of their product specification, things rather than
+ datasheets. So they need to be stored and moved between locations, and tracked in 
+ sets and individually. They have a size, a weight, and a cost.
+ Open ERP manages all of this in some rather useful and unique ways.
+ 
+ Manufacture is the transformation of materials and components, perhaps using measurable 
+ resources, into other products and services, adding value to your company on the way.
+ 
 .. toctree::
     :maxdepth: 1
 
-    1_1_Inst_Config/index
-    1_2_Guided_Tour/index
-    1_3_Real_Case/index
+    5_14_Stock/index
+    5_15_Manufacturing/index
 
 .. Copyright © Open Object Press. All rights reserved.
 
