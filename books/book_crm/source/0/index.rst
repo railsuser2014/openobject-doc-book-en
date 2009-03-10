@@ -106,7 +106,7 @@ factory on some remote industrial estate.
 
 .. raw:: latex
 
-    \section*{The Open ERP Solution}
+    \section*{Why this book ?}
     \addcontentsline{toc}{section}{Why this book ?}
 
 .. *
