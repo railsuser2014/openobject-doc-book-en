@@ -126,7 +126,7 @@ an advanced management system into place.
 
 .. raw:: latex
 
-    \chapter*{Who's it for ?}
+    \section*{Who's it for ?}
     \addcontentsline{toc}{section}{Who's it for ?}
 
 .. *
