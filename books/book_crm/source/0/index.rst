@@ -14,8 +14,8 @@ key source of significant competitive advantage.
 
 .. raw:: latex
 
-    \chapter*{Open Source software at the service of management}
-    \addcontentsline{toc}{chapter}{Open Source software at the service of management}
+    \section*{Open Source software at the service of management}
+    \addcontentsline{toc}{section}{Open Source software at the service of management}
 
 .. *
 
@@ -63,8 +63,8 @@ And Open ERP offers great performance in all these areas!
 
 .. raw:: latex
 
-    \chapter*{The Open ERP Solution}
-    \addcontentsline{toc}{chapter}{The Open ERP Solution}
+    \section*{The Open ERP Solution}
+    \addcontentsline{toc}{section}{The Open ERP Solution}
 
 .. *
 
@@ -106,8 +106,8 @@ factory on some remote industrial estate.
 
 .. raw:: latex
 
-    \section*{Why this book ?}
-    \addcontentsline{toc}{section}{Why this book ?}
+    \subsection*{Why this book ?}
+    \addcontentsline{toc}{subsection}{Why this book ?}
 
 .. *
 
@@ -126,8 +126,8 @@ an advanced management system into place.
 
 .. raw:: latex
 
-    \section*{Who's it for ?}
-    \addcontentsline{toc}{section}{Who's it for ?}
+    \subsection*{Who's it for ?}
+    \addcontentsline{toc}{subsection}{Who's it for ?}
 
 .. *
 
@@ -142,8 +142,8 @@ analyzed and involved in change. The same principles also apply to larger compan
 
 .. raw:: latex
 
-    \chapter*{Structure of this book}
-    \addcontentsline{toc}{chapter}{Structure of this book}
+    \section*{Structure of this book}
+    \addcontentsline{toc}{section}{Structure of this book}
 
 .. *
 
@@ -226,8 +226,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 .. raw:: latex
 
-    \chapter*{Dedication}
-    \addcontentsline{toc}{chapter}{Dedication}
+    \section*{Dedication}
+    \addcontentsline{toc}{section}{Dedication}
 
 .. *
 
