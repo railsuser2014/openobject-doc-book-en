@@ -100,6 +100,9 @@ of payment must correspond exactly with one or several due dates of invoice.
  	
  	You can carry out either a full or a partial reconciliation.
 
+.. index::
+   single: adjustment
+
 If you see a difference between the payment and the invoices to reconcile,
 you can enter the difference in the second part of the form :guilabel:`Write-off`.
 You have to set an account for the adjustment. The main reasons explaining the difference are usually:
@@ -289,6 +292,9 @@ equivalent. For example, Open ERP permits foreign customers whose accounts are 
 currencies to have a difference of up to, say, 0.50 units of currency and put the difference in a write-
 off account.
 
+.. index::
+   single: adjustment; limit
+
 .. tip:: Limit write-off adjustments
 
 	You shouldn't make the adjustment limits too large. Companies that introduced substantial automatic
@@ -404,7 +410,7 @@ Process for managing payment orders
 -----------------------------------
 
 .. index::
-   pair: module; account_payment
+   single: module; account_payment
 
 To use the tool for managing payments you must first install the module :mod:`account_payment`.
 It's part of the core Open ERP system.

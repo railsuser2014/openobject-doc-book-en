@@ -1,6 +1,6 @@
 .. index::
    single: access rights
-..
+   single: access; user
 
 Managing access rights
 ======================
@@ -29,7 +29,7 @@ role determines the user's duties. This is managed at the level of workflows, wh
 company's business processes.
 
 .. index:: 
-   pair: users; groups
+   pair: user; group
 
 Groups and Users
 ================
@@ -50,6 +50,8 @@ member of both groups, and give the Sales Director group a limited set of extra 
 group. You should choose the scheme that gives you most flexibility and then stick with it to
 maintain consistency.
 
+.. index::
+   pair:  system; administrator
 
 .. tip:: Flexibility in managing access
 

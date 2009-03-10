@@ -14,7 +14,7 @@ operations:
 * Manufacturing.
 
 .. index::
-   pair: module; stock
+   single: module; stock
 
 The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.

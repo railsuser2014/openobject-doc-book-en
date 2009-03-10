@@ -131,27 +131,27 @@ Installing and configuring modules
 All of the functional needs are provided by core modules from Open ERP:
 
 .. index::
-   pair: module; product
+   single: module; product
 
 * product management (the :mod:`product` module),
 
 .. index::
-   pair: module; stock
+   single: module; stock
 
 * inventory control (the :mod:`stock` module),
 
 .. index::
-   pair: module; account
+   single: module; account
 
 * accounting and finance (the :mod:`account` module),
 
 .. index::
-   pair: module; purchase
+   single: module; purchase
 
 * purchase management (the :mod:`purchase` module),
 
 .. index::
-   pair: module; sale
+   single: module; sale
 
 * sales management (the :mod:`sale` module).
 

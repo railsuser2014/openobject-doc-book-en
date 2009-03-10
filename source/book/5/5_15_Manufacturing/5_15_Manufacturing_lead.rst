@@ -316,7 +316,7 @@ Management of operations
    Operations are often called work orders.
 
 .. index::
-   pair: module; mrp_operations
+   single: module; mrp_operations
 
 To work using work orders you must install the optional module :mod:`mrp_operations`. Once the module
 is installed you'll find a new menu called :menuselection:`Manufacturing --> Operations -->
@@ -540,7 +540,7 @@ Management of waste products and secondary products
 ===================================================
 
 .. index::
-   pair: module; mrp_subproduct
+   single: module; mrp_subproduct
 
 For the management of waste you must install the module :mod:`mrp_subproduct`. The normal behaviour of
 manufacture in Open ERP enables you to manufacture several units of the same finished product from
@@ -597,7 +597,7 @@ Management of repairs
 =====================
 
 .. index::
-   pair: module; mrp_repair
+   single: module; mrp_repair
 
 The management of repairs is carried out using the module :mod:`mrp_repair`. Once it's installed this
 module adds new menus to the Manufacturing menu:
@@ -684,7 +684,7 @@ Once the component has been selected, Open ERP automatically completes most of t
 
 This information is automatically proposed by the system but you can modify it all yourself.
 
-You can also encode additional charges in the second tab of the repair: applicable list price,
+You can also encode additional charges in the second tab of the repair - applicable list price,
 address and type of invoice, as well as additional line items that need to be added to the repair
 bill.
 

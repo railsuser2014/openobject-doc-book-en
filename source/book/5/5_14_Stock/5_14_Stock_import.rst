@@ -45,7 +45,7 @@ stock move is validated at each port and customs arrival. Open ERP prepares all 
 automatically.
 
 .. index::
-   pair: module; report_instrastat
+   single: module; report_instrastat
 
 .. note:: Intrastat
 
@@ -65,7 +65,7 @@ Rental locations
 ----------------
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 You can manage rental locations in Open ERP very simply using the same system of linked locations.
 Using the module :mod:`stock_location` you can set a return date for rental items sent to customer

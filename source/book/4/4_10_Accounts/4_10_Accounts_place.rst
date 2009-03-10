@@ -78,8 +78,8 @@ Once you've defined the different analytic accounts you can view your chart thro
 :menuselection:`Financial Management --> Charts --> Analytic Chart of Accounts`.
 
 .. index::
-   pair: module; hr_timesheet_invoice
-   pair: module; account_analytic_analysis
+   single: module; hr_timesheet_invoice
+   single: module; account_analytic_analysis
 
 .. tip:: Setting up an analytic account
 

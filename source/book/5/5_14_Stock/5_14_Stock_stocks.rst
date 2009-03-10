@@ -186,7 +186,7 @@ Customer delivery
 -----------------
 
 .. index::
-   pair: module; sale
+   single: module; sale
 
 Everything about goods receipt can also be done manually for a customer delivery. But this time, use
 the automated product delivery processes based on customer orders. Install the :mod:`sale` module so
@@ -228,7 +228,7 @@ products and places orders based on the dates promised to customers, and the var
 times and priorities.
 
 .. index::
-   pair: module; mrp_jit
+   single: module; mrp_jit
 
 .. tip:: Just in Time
 

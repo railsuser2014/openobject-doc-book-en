@@ -194,7 +194,7 @@ following fields are then completed automatically:
 *  :guilabel:`Taxes` : provided by the product form and the partner form.
 
 .. index::
-   pair: module; account_tax_include
+   single: module; account_tax_include
 
 .. tip::  Managing the price with tax included
 
@@ -263,7 +263,7 @@ default as today's date. These fields are found on the second tab :guilabel:`Oth
 
 .. index::
    single: invoice layout
-   pair: module; account_invoice_layout
+   single: module; account_invoice_layout
 
 .. note:: Invoice layout
 

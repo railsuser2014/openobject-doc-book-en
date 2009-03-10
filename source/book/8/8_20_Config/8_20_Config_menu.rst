@@ -85,7 +85,7 @@ then click :guilabel:`Main Menu` to see the results.
 	your system.
 
 .. index::
-   pair: module; users_ldap
+   single: module; users_ldap
 
 .. tip:: Managing users through LDAP
 

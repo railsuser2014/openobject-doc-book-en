@@ -20,7 +20,7 @@ This section deals with statutory taxes and accounts which are legally required 
 	Open ERP supplies declarations based on the functionality in other modules.
 	
 	.. index::
-	   pair: module; report_instrastat
+	   single: module; report_instrastat
 
 	You can, for example, install the :mod:`report_intrastat` module for intra-stat declarations
 	about sending goods to and receiving goods from other countries.
@@ -212,7 +212,7 @@ tax-like charges.
 	than a tax-exclusive price plus tax.
 	
 	.. index::
-	   pair: module; account_tax_include
+	   single: module; account_tax_include
 	
 	To do this in Open ERP just install the :mod:`account_tax_include` module.
 	Each invoice is given a new :guilabel:`Price method` field, in which you choose 
@@ -249,7 +249,7 @@ You can also assign multiple taxes to a Project, so that invoices from the Proje
 appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-projects`).
 
 .. index::
-   pair: module; import_export
+   single: module; import_export
 
 .. note:: Tax regions
 
@@ -284,7 +284,7 @@ If you select an account which has sub-accounts in the
 hierarchy you automatically analyze both that account and its child accounts.
 
 .. index::
-   pair: module; account_simulation
+   single: module; account_simulation
 
 .. tip::  Simulated balance
 
@@ -304,7 +304,7 @@ hierarchy you automatically analyze both that account and its child accounts.
 	expect.
 
 .. index::
-   pair: module; account_reporting
+   single: module; account_reporting
 
 The :mod:`account_reporting` module was developed to provide configurable reports for balance sheets
 or earnings statements in legally required formats.
@@ -318,8 +318,8 @@ To obtain the different journals use the menu :menuselection:`Financial Manageme
 Journals`.
 
 .. index::
-   pair: module; sale_journal
-   pair: module; purchase_journal
+   single: module; sale_journal
+   single: module; purchase_journal
 
 .. note::  Journals
 

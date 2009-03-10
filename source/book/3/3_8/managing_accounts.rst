@@ -22,7 +22,7 @@ Financial analysis of partners
 ------------------------------
 
 .. index::
-   pair: module; board_account
+   single: module; board_account
    pair: dashboard; accounting
 
 When members of your accounts department sign on to the Open ERP system, they can immediately be
@@ -111,7 +111,7 @@ for account entries:
 .. index::
    single: follow-up
    single: reminder
-   pair: module; account_followup
+   single: module; account_followup
 
 Multi-step follow-ups
 ---------------------

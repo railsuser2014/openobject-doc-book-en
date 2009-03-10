@@ -9,7 +9,9 @@ Open ERP to improve your own personal time management. It's not much of a detou
 organization is the key to better productivity in your daily work.
 
 .. index::
-   pair: module; project_gtd
+   single: module; project_gtd
+   single: GTD
+   single: Getting Things Done
 
 Open ERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
 time management:
@@ -45,6 +47,9 @@ time management:
 
 	 At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably
 	 free of worries !
+
+.. index::
+   simple: The 7 Habits of Highly Effective People
 
 * The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises
   organizations on the use of these practices, and reports on the productivity improvements in the

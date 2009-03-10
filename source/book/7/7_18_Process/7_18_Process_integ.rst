@@ -44,12 +44,12 @@ more cluttered than the :guilabel:`Simple Interface` because it shows you all th
 options. You don't need any additional users.
 
 .. index::
-   pair: module; sale
-   pair: modules; hr_
-   pair: module; hr_attendance
-   pair: module; hr_contract
-   pair: module; hr_holidays
-   pair: module; hr_holidays_request
+   single: module; sale
+   single: modules; hr_
+   single: module; hr_attendance
+   single: module; hr_contract
+   single: module; hr_holidays
+   single: module; hr_holidays_request
 
 Then install the :mod:`sale` module for the first example below, which installs
 several other modules as dependencies. Also install some of the :mod:`hr` modules for

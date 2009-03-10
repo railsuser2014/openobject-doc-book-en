@@ -66,7 +66,7 @@ Using profiles effectively
 --------------------------
 
 .. index::
-   pair: module; crm_profiling
+   single: module; crm_profiling
 
 To use the profiling system you'll need to install Open ERP's :mod:`crm_profiling` module. It's
 part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from
@@ -104,7 +104,7 @@ entered in the new fifth tab of the partner form. Open ERP will automatically a
 the appropriate partner category based on these answers.
 
 .. index::
-   pair: module; report_invoice_salesman
+   single: module; report_invoice_salesman
 
 .. tip:: Sales targets
 

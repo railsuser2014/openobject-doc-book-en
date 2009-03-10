@@ -8,7 +8,7 @@ The analytic costs linked to this purchase will be managed
 by Open ERP from the goods receipt and confirmation of the supplier invoice.
 
 .. index::
-   pair: module; hr_timesheet_invoice
+   single: module; hr_timesheet_invoice
 
 The :mod:`hr_timesheet_invoice` module lets you reinvoice the analytic costs automatically using
 parameters in the analytic accounts such as sale pricelist, associated partner company, and maximum amount.
@@ -35,7 +35,7 @@ When re-invoicing based on costs you'd get the following workflow:
 #. Invoice these costs to the customer.
 
 .. index::
-   pair: module; purchase_analytic_plans
+   single: module; purchase_analytic_plans
 
 .. tip:: Analytic multiplans
 

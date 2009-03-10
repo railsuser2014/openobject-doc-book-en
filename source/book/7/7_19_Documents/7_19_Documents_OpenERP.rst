@@ -34,8 +34,8 @@ Installation
 ^^^^^^^^^^^^
 
 .. index::
-   pair: module; document
-   pair: module; board_document
+   single: module; document
+   single: module; board_document
 
 To install Open ERP's document management system you just need is to install the :mod:`document`
 and :mod:`board_document` modules through :menuselection:`Administration --> Modules

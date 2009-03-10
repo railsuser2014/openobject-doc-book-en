@@ -117,7 +117,7 @@ applicable taxes, default packaging and the product description. All of this inf
 the product form.
 
 .. index::
-   pair: module; product_visible_discount
+   single: module; product_visible_discount
 
 .. tip:: Visible Discount
 

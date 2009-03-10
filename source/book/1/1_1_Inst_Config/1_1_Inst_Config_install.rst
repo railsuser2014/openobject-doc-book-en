@@ -64,6 +64,9 @@ To download the version of Open ERP for Windows, follow these steps:
 	#. Save the file on your PC - it's quite a substantial size because it downloads everything including
 	   the PostgreSQL database system, so will take some time.
 
+.. index::
+   pair:  administrator
+
 To install Open ERP and its database you must be signed in as an Administrator on your PC. Double-
 click the installer file to install it and accept the default parameters on each dialog box as you go. 
 
@@ -116,6 +119,9 @@ visible to the other PCs, and install a GTK client on each of the those PCs:
 	You must make sure that the version of the client matches that of the server. The version number is
 	given as part of the name of the downloaded file. Although it's possible that some different
 	revisions of client and server will function together, there's no certainty about that.
+
+.. index::
+   single:  administrator
 
 To run the client installer on every other PC you'll need to have administrator rights there. The
 installation is automated, so you just need to guide it through its different installation steps.

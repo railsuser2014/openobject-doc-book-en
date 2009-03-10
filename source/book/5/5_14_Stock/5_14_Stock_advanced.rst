@@ -34,7 +34,7 @@ To set the time it starts use the menu
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 .. index::
-   pair: module; mrp_jit
+   single: module; mrp_jit
 
 Some companies want to plan orders progressively as they are entered so they don't wait until
 procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
@@ -45,7 +45,7 @@ Then if you make a customer order with a product that's ``Make To Order`` the qu
 supplier will be generated.
 
 .. index::
-   pair: module; sale_supplier_direct_delivery
+   single: module; sale_supplier_direct_delivery
 
 ..tip :: Delivery from the supplier or to the customer
 
@@ -191,7 +191,7 @@ Product routing
 ---------------
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 You should install the :mod:`stock_location` module if routing products to customers, from suppliers or
 in your warehouse is determined by the identity of the product itself.
