@@ -85,7 +85,7 @@ tiny_latex_include = r"""
 \usepackage{flowfram}
 \usepackage{multicol}
 
-\usepackage[vcentering,dvips]{geometry}
+\usepackage[]{geometry}
 \geometry{papersize={189mm,246mm}} % width, height
 
 \DeclareUnicodeCharacter{00A0}{~}
