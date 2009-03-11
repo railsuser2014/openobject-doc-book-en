@@ -28,6 +28,9 @@ Hardly anything is installed so this is a very simple process at the moment.
     #.  You've now reached the end of the configuration so click :guilabel:`Continue` to start using the
         system as the Administrator.
 
+.. index::
+   single:  administrator
+
 Once you're displaying the main menu you're able to see the following screen items, 
 as shown in screenshot :ref:`fig-oech2-main`:
 
@@ -259,6 +262,9 @@ potential functionality available to Open ERP. About the only functions actuall
 minimal database are Partners and Currencies – and these only because the definition of your main
 company required this. And because you chose to include demonstration data, both Partners and
 Currencies were installed with some samples.
+
+.. index::
+   single: administrator
 
 Because you logged in as Administrator, you have all the access you need to configure users. Click
 :menuselection:`Administration --> Users --> Users` to display the list of users defined in the

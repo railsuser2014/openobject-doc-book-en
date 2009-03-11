@@ -322,7 +322,7 @@ Since all of your customer communications are integrated into the Open ERP syst
 the performance of your teams in many ways.
 
 .. index::
-   pair: module; report_crm
+   single: module; report_crm
 
 Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
 Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
@@ -562,7 +562,7 @@ the setup window. The following actions are included:
 .. index:: portal
 
 .. index::
-   pair: module; portal_service
+   single: module; portal_service
 
 .. tip::  The CRM portal
 

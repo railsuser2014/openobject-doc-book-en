@@ -132,6 +132,9 @@ warehouse.
 Accounting valuation in real time
 ---------------------------------
 
+.. index::
+   single: accountant
+
 If you have experience of managing with traditional software you'll know the problem of getting
 useful indicators. If you ask your accountant for a stock valuation or the value added by production
 he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
@@ -186,7 +189,7 @@ the source locations. This order will wait for a confirmation of the move by a u
 you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 .. tip:: Product Logistics
 

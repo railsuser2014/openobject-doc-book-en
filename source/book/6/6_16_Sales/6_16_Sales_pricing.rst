@@ -87,7 +87,7 @@ For each list you should define:
 * the :guilabel:`Currency` in which the prices are expressed.
 
 .. index::
-   pair: module; edi
+   single: module; edi
 
 .. tip:: Customer Price
 

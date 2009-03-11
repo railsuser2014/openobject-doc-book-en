@@ -118,7 +118,7 @@ Key indicators
 --------------
 
 .. index::
-   pair: module; account_analytic_analysis
+   single: module; account_analytic_analysis
 
 If you use analytic accounts with a structure of accounts by project client you should install the 
 :mod:`account_analytic_analysis` module. This module adds three new tabs to the analytic account
@@ -184,7 +184,7 @@ the various operations needed to manage the project, such as automatic invoicing
 planning, keeping customers up to date, and budgeting for resources.
 
 .. index::
-   pair: module; account_budget
+   single: module; account_budget
 
 .. note:: Analytic Budgets
 

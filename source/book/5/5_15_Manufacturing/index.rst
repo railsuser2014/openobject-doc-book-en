@@ -1,22 +1,22 @@
 
 .. _ch-mnf:
 
-*********************
-Production Management
-*********************
+*************
+Manufacturing
+*************
 
  *The management of manufacturing described in this chapter covers
- planning, ordering, inventory and the manufacturing or assembly of products from raw materials and
+ planning, ordering, stocks and the manufacturing or assembly of products from raw materials and
  components.
  It also covers consumption and production of products as well as the necessary operations on
  machinery, tools or human resources.*
 
 The management of manufacturing in Open ERP is based on its stock management and, like it, is very
-flexible in both its operations and its financial control. It benefits in particular from the use of
-double-entry inventory management for production orders.
+flexible in both its operations and its financial control. It benefits particularly from the use of
+double-entry stock management for production orders.
 
 .. index::
-   pair: module; mrp
+   single: module; mrp
 
 Manufacturing management is implemented by the :mod:`mrp` module. It is used for transforming all
 types of products:

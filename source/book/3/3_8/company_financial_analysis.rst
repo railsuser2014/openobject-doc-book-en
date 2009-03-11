@@ -28,7 +28,7 @@ Management Indicators
 	the next or against those of other companies.
 
 .. index::
-   pair: module; account_report
+   single: module; account_report
 
 To define financial indicators in Open ERP you should install the module :mod:`account_report`.
 When installing the module the usual financial indicators are registered in Open ERP.
@@ -66,7 +66,7 @@ can also calculate a time series to follow the change of a given indicator throu
 the company.
 
 .. index::
-   pair: module; account_report_history
+   single: module; account_report_history
 
 To do a temporal analysis of your indicators, you must install the module 
 :mod:`account_report_history` from the set of modules in addons-extra.
@@ -182,7 +182,7 @@ The Accounting Dashboard
    *Accounting Dashboard*
 
 .. index::
-   pair: module; board_account
+   single: module; board_account
 
 If you've installed the module :mod:`board_account`, Open ERP gives you an accounting dashboard
 that can be presented to your accounting staff as they sign into the system (if you have set it as

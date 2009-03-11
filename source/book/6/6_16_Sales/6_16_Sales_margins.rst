@@ -18,7 +18,7 @@ Margins on sales orders
 -----------------------
 
 .. index::
-   pair: module; sale_margin
+   single: module; sale_margin
 
 If you want to check your margins on sales orders you can install the :mod:`sale_margin` module
 from ``addons-extra``. This will add margins calculated on each order line and on the order total.
@@ -37,7 +37,7 @@ suppliers. After product receipt you can add fixed costs, such as delivery costs
 each product.
 
 .. index::
-   pair: module; product_extended
+   single: module; product_extended
 
 Open ERP supports a third method of updating the cost price of products using the module
 :mod:`product_extended`, also in ``addons-extra`` at the time of writing. 
@@ -50,7 +50,7 @@ Margins by product
 ------------------
 
 .. index::
-   pair: module; product_margin
+   single: module; product_margin
 
 To track margins by product, install the module :mod:`product_margin`. Once the module
 is installed you can see the margins by product by using the menu :menuselection:`Products -->
@@ -126,7 +126,7 @@ To manage margins by project you must install the analytical accounts with manag
 of these accounts is described in :ref:`ch-accts`.
 
 .. index::
-   pair: module; account_analytic_analysis
+   single: module; account_analytic_analysis
 
 Install the module :mod:`account_analytic_analysis` and all of its dependencies. 
 This module adds a tab on the analytic account form to handle the different margins in an analytic account 

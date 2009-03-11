@@ -196,7 +196,8 @@ You can use one of these three ordering methods, or combine several of them, dep
 project.
 
 .. index::
-   pair: module; scrum
+   single: module; scrum
+   single: agile (method)
 
 .. note:: Agile methods
 

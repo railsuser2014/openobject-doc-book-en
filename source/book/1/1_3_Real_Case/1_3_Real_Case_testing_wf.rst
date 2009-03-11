@@ -195,7 +195,7 @@ within Open ERP and returns you to the invoice. Although this invoice is still 
 :guilabel:`Paid/Reconciled` box is now checked and the :guilabel:`State` is now ``Done`` .
 
 .. index::
-   pair: module; account
+   single: module; account
 
 .. note:: Payment of an invoice
 
@@ -281,7 +281,7 @@ example there's only one, \ ``PACK2``\  , so click the text to open the
 :guilabel:`Confirmed Packing Waiting Availability` form.
 
 .. index::
-   pair: module; mrp_jit
+   single: module; mrp_jit
 
 .. tip::  Running Schedulers
 

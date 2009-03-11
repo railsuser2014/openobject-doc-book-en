@@ -39,6 +39,9 @@ product ranges that the company makes and sells.
 
 			* Product Range 2
 
+.. index::
+   pair: cost; allocation
+
 In daily use it's useful to mark the analytic account on each purchase invoice. The analytic account
 is the one to which the costs of that purchase should be allocated. When the invoice is approved it
 will automatically generate the entries for both the general and the corresponding analytic
@@ -275,6 +278,9 @@ In Open ERP each analytic line lists the number of units sold or used, as well 
 usually find there – the amount in currency units (USD or GBP, or whatever other choice you make).
 So you can sum the quantities sold and used on each analytic account to determine whether any hours
 of the support contract remain.
+
+.. index::
+   pair: cost; allocation
 
 To differentiate services from other costs in the analytic account you use the concept of the
 analytic journal. Analytic entries are then allocated into the different journals:

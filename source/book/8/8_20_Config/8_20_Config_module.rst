@@ -20,7 +20,7 @@ dedicated just to that. That enables you to:
   in a module.
 
 .. index::
-   pair: module; base_module_record
+   single: module; base_module_record
 
 Start by installing the module :mod:`base_module_record` in the usual way. Then start recording
 your actions using the menu :menuselection:`Administration --> Modules Management --> Modules
@@ -33,7 +33,7 @@ Once you've done all this, go to the menu :menuselection:`Administration --> Mod
 Modules Recording --> Save Recorded Module`.
 
 .. index::
-   pair: module; base_module_publish
+   single: module; base_module_publish
 
 .. note:: Contributing to the development of Open ERP
 

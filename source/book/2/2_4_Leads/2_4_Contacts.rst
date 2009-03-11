@@ -3,7 +3,7 @@ Managing Contacts
 =================
 
 .. index::
-   pair: module; base_contact
+   single: module; base_contact
 
 The standard way of representing partners and contacts throughout Open ERP
 and many other enterprise systems (such as phone contact applications) 
@@ -129,7 +129,7 @@ Once the database is installed, Open ERP suggests that you configure it using a 
    *Selecting the CRM functionality to install*
 
 .. index::
-   pair: module; crm_configuration
+   single: module; crm_configuration
 
 .. note:: The CRM configuration module
 

@@ -23,7 +23,7 @@ where the price is dependent on the usual wholesaler's terms. You can propose a 
 will be assigned at the end of the year as a function of the actual sales made.
 
 .. index::
-   pair: module; discount_campaign
+   single: module; discount_campaign
 
 Install the :mod:`discount_campaign` module (in ``addons-extra`` at the time of writing)
 to generate rebates at the end of the campaign. Once

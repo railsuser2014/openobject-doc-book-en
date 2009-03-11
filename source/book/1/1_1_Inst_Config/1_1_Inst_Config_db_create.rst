@@ -2,7 +2,6 @@
 .. index::
    single: database; create
    single: database
-..
 
 .. _sect-dbcreate:
 
@@ -44,7 +43,7 @@ Creating the database
 If you're using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
 the menu at the top left. Enter the super-administrator password, then the name of the new database
 you're creating.
-  
+
 .. figure:: images/create_new_db_GTK.png
    :scale: 75
    :align: center
@@ -70,11 +69,13 @@ Database openerp_ch01
 
 Wait for the message showing that the database has been successfully created, along with the user
 accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you've created this seed
-database you can extend it without having to know the super administrator password.
+database you can extend it without having to know the super-administrator password.
 
 .. index::
-   pair: access; LDAP
+   single: access; LDAP
+   single: LDAP
    pair: password; username
+   single: access; user
 
 .. tip::   User Access
 
@@ -82,7 +83,7 @@ database you can extend it without having to know the super administrator passwo
 	rights to a database you can modify all users.
 
  	.. index::
-	   pair: module; users_ldap
+	   single: module; users_ldap
 
 	Alternatively you can install the :mod:`users_ldap` module, which manages the authentication of users
 	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
@@ -182,6 +183,9 @@ What if want to update what's there, or extend what's there with additional modu
 * To extend what you have, you'd install new modules in the ``addons`` directory of your current
   Open ERP installation. There are several ways of doing that.
 
+.. index::
+   pair:  system; administrator
+
 In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your
 Open ERP application server.
 
@@ -193,14 +197,17 @@ your server's \ ``openerp-server``\   directory (which differs between Windows, 
 various Linux distributions and not available at all in the Windows all-in-one installer).
 
 .. index::
-   pair: module; product
-   pair: module; purchase
+   single: module; product
+   single: module; purchase
 
 If you look there you'll see existing modules such as :mod:`product` and :mod:`purchase`. A
 module can be provided in the form of files within a directory or a a zip-format file containing
 that same directory structure.
 
 You can add modules in two main ways – through the server, or through the client.
+
+.. index::
+   pair:  system; administration
 
 To add new modules through the server is a conventional systems administration task. As \ ``root``\
 user or other suitable user, you'd put the module in the \ ``addons``\   directory and change its

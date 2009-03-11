@@ -21,7 +21,7 @@ Calc and Microsoft Excel) and is easily editable as a worksheet. The first line 
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
 .. index::
-   pair: data; CSV iport-export
+   pair: data; CSV import-export
    single: CSV; data
 
 The CSV format for complex database structures
@@ -105,7 +105,7 @@ Have a look at the screenshots below to see the differences.
 All of the other fields are coded in the CSV file as just one field in each column.
 
 .. index:: 
-   pair: relation; fields
+   pair: relation; field
 
 Many-to-one fields
 ^^^^^^^^^^^^^^^^^^

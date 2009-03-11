@@ -5,8 +5,8 @@ Management of Carriers
 .. index::
    single: delivery grid
    single: carriers
-   pair: module; delivery
-   pair: module; profile_manfuacturing
+   single: module; delivery
+   single: module; profile_manfuacturing
 
 To manage deliveries in Open ERP, install the :mod:`delivery` module. (If you have installed the
 :mod:`profile_manufacturing` profile this is installed by default during configuration of the database.) 

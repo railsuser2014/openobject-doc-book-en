@@ -103,6 +103,9 @@ Analytic Entries --> Entries Encoding by Line`.
 Select a journal and complete the different fields. Write an expense as a negative amount and income
 as a positive amount.
 
+.. index::
+   pair: cost; allocation
+
 .. tip::  Entering a date
 
 	To enter a date in the editable list you can use the calendar widget in the web client or, in the

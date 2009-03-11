@@ -501,7 +501,7 @@ Clearly it's also possible to start production manually. To do this you can use 
 :menuselection:`Manufacturing --> Production Orders --> New Production Order`.
 
 .. index::
-   pair: module; mrp_jit
+   single: module; mrp_jit
 
 If you haven't installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
 using Open ERP to schedule the Production Orders automatically using the
@@ -548,7 +548,7 @@ Sales Orders -> New Quotation`. Enter the following information:
 
 * :guilabel:`Order Line` :
 
-  * :guilabel:Product` : PC2 – Basic PC (assemble on demand),
+  * :guilabel:`Product` : PC2 – Basic PC (assemble on demand),
 
   * :guilabel:`Quantity (UoM)` : 1,
 

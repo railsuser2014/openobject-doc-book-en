@@ -311,7 +311,7 @@ of its available variants briefly rather than every item as an entire product.
 			* Collar (V, Round).
 			
 			.. index::
-			   pair: module; product_variant_multi
+			   single: module; product_variant_multi
 
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
@@ -350,28 +350,28 @@ You can find many optional modules to extend product functionality through the O
 such as:
 
 .. index::
-   pair: module; membership
+   single: module; membership
 
 * :mod:`membership` : for managing the subscriptions of members of a company,
 
 .. index::
-   pair: module; product_electronic
+   single: module; product_electronic
 
 * :mod:`product_electronic` : for managing electronic products,
 
 .. index::
-   pair: module; product_extended
+   single: module; product_extended
 
 * :mod:`product_extended` : for managing production costs,
 
 .. index::
-   pair: module; product_expiry
+   single: module; product_expiry
 
 * :mod:`product_expiry` : for agro-food products where items must be retired after a certain
   period,
 
 .. index::
-   pair: module; product_lot_foundry
+   single: module; product_lot_foundry
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
@@ -399,8 +399,8 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of skills and competencies.
 
 .. index::
-   pair: modules; hr_
-   pair: module; hr
+   single: modules; hr_
+   single: module; hr
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
 rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human

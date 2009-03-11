@@ -73,7 +73,7 @@ Installing a module
 ---------------------
 
 .. index::
-   pair: module; product
+   single: module; product
 
 You'll now install a module named :mod:`product`, which will enable you to manage the company's
 products. This is part of the core installation, so you don't need to load anything to make this
@@ -120,7 +120,7 @@ Installing a module with its dependencies
 -----------------------------------------
 
 .. index::
-   pair: module; crm
+   single: module; crm
 
 Now install the CRM module (Customer Relationship Management) using the same process as before.
 Start from :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules`.
@@ -203,7 +203,7 @@ To test several modules you won't have to install them all one by one. You can u
 between modules to load several at once. For example, try loading the following modules:
 
 .. index::
-   pair: modules; profile_
+   single: modules; profile_
 
 * :mod:`profile_accounting`,
 

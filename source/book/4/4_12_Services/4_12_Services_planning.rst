@@ -61,6 +61,9 @@ In planning by task, the project manager assigns tasks from the different projec
 over a given period. Employees then carry out precisely the work they've been assigned by the
 project manager.
 
+.. index::
+   pair: time; allocation
+
 Planning by time consists of allocating, for each employee, some time on each of the different
 projects for the period concerned. The tasks for each project are ordered by priority and can be
 directly assigned to a user or left unassigned. Each employee then chooses the task that he or she
@@ -140,6 +143,9 @@ Install the module :mod:`report_analytic_planning` to get additional functions
 that help with both planning and reporting on projects. Start a plan by using the
 menu :menuselection:`Human Resources --> Planning --> New Planning`.
 
+.. index::
+   pair: time; allocation
+
 On each planning line you should enter the user, the analytic account concerned, and the quantity of
 time allocated. The quantity will be expressed in hours or in days depending on the unit of measure
 used. For each line you can add a brief note about the work to be done.
@@ -158,7 +164,7 @@ Good planning
 -------------
 
 .. index::
-   pair: module; board_project
+   single: module; board_project
 
 Plans can be printed and/or sent to employees by email. If you install the module 
 :mod:`board_project`, each employee can be given access to a dashboard that graphically shows the
@@ -186,7 +192,7 @@ Planning at all levels of the hierarchy
 ---------------------------------------
 
 .. index::
-   pair: module; report_analytic_planning_delegate
+   single: module; report_analytic_planning_delegate
 
 To put planning in place across the whole company you can use a system of planning delegation. For
 this, install the module :mod:`report_analytic_planning_delegate` from the addons-extra directory.
