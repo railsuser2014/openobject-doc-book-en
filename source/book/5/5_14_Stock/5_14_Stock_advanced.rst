@@ -34,7 +34,7 @@ To set the time it starts use the menu
 called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 .. index::
-   pair: module; mrp_jit
+   single: module; mrp_jit
 
 Some companies want to plan orders progressively as they are entered so they don't wait until
 procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
@@ -45,7 +45,7 @@ Then if you make a customer order with a product that's ``Make To Order`` the qu
 supplier will be generated.
 
 .. index::
-   pair: module; sale_supplier_direct_delivery
+   single: module; sale_supplier_direct_delivery
 
 ..tip :: Delivery from the supplier or to the customer
 
@@ -71,7 +71,7 @@ So the negative effects of working with the Just in Time module are:
 * Additional stocked products.
 
 .. index::
-   single: Planning; Stock Management
+   single: planning; stock management
 
 Planning
 --------
@@ -95,7 +95,7 @@ If you move a packing order in the calendar view, the planned date on the stock 
 automatically be moved as a result.
 
 .. index::
-   single: Back Order
+   single: back order
 
 Management of partial deliveries
 --------------------------------
@@ -133,7 +133,7 @@ Open ERP supports three approaches to controlling data entry on products ordered
 You can see how the configuration of the supplier order affects receipts in detail in :ref:`ch-purchase`.
 
 .. index::
-   single: Goods receipt
+   single: goods receipt
 
 Manual data entry of goods receipt
 ----------------------------------
@@ -185,13 +185,13 @@ some or all of them on your form. This method of data entry is very useful when 
 received at one time from several orders.
 
 .. index::
-   single: Routing; Logistic
+   single: routing; logistics
 
 Product routing
 ---------------
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 You should install the :mod:`stock_location` module if routing products to customers, from suppliers or
 in your warehouse is determined by the identity of the product itself.

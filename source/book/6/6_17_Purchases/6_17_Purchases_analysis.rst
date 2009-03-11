@@ -7,8 +7,8 @@ Elementary statistics
 ---------------------
 
 .. index::
-   pair: module; report_purchase
-   pair: module; product_margin
+   single: module; report_purchase
+   single: module; product_margin
 
 To get statistics about your purchases you can install the modules :mod:`report_purchase` and
 :mod:`product_margin`.

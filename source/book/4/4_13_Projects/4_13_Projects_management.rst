@@ -11,7 +11,7 @@ need to get the tasks completed. All of the necessary operations are carried out
 :menuselection:`Project Management`.
 
 .. index::
-   single: Project
+   single: project
 
 .. note:: Project
 
@@ -145,7 +145,7 @@ has a technical profile.
 If you don't make any such distinction in the roles then put the same person in both fields.
 
 .. index::
-   single: Invoicing; Tasks
+   single: invoicing; tasks
 
 Invoicing tasks
 ---------------
@@ -196,7 +196,8 @@ You can use one of these three ordering methods, or combine several of them, dep
 project.
 
 .. index::
-   pair: module; scrum
+   single: module; scrum
+   single: agile (method)
 
 .. note:: Agile methods
 
@@ -232,7 +233,7 @@ calculates a project plan for earliest delivery using task ordering and the atte
 
        *Calendar view of the system tasks*
 
-.. index:: Delegation
+.. index:: delegation (task)
 
 Task delegation
 ---------------

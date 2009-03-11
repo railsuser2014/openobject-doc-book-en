@@ -24,11 +24,10 @@ Description
 
 ::
 
-  This module is used to automatically create tasks based on different
-  procurements: sales order, manufacturing order, ...
+  This module is used to automatically create tasks based on different procurements: sales order, 
+  manufacturing order, ...
   
-  It is mainly used to invoices services based on tasks automatically
-  created by sales orders.
+  It is mainly used to invoices services based on tasks automatically created by sales orders.
 
 Dependencies
 ------------

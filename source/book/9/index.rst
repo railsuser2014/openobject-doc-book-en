@@ -37,6 +37,9 @@ Many resources are at hand to accompany you on your Open ERP adventure.
 
 Bypass the technical difficulties by using the SaaS offer
 
+.. index::
+   single:  administration
+
 For a quick low-cost start, you can make use of a month's comprehensive free trial of Tiny's
 Open ERP SaaS package found at . Using this you sidestep any technical difficulties and get a
 comprehensive set of system administration services, server hosting, configuration to your

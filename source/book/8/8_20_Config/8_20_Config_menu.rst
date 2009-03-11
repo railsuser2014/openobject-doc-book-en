@@ -1,4 +1,6 @@
-.. index:: Menu
+
+.. index:: 
+   single: menu; configuring
 
 Configuring the menu
 ====================
@@ -15,7 +17,7 @@ configure the terminology of the menus and forms in the user interface and for m
 access rights to the menus and the various underlying business objects.
 
 .. index::
-   single: Change User Password
+   single: change user password
 ..
 
 .. todo:: I don't think this is useful as it stands, needs to be modified
@@ -83,7 +85,7 @@ then click :guilabel:`Main Menu` to see the results.
 	your system.
 
 .. index::
-   pair: module; users_ldap
+   single: module; users_ldap
 
 .. tip:: Managing users through LDAP
 
@@ -234,9 +236,7 @@ example, with modules that haven't yet been translated into English or any other
 want.
 
 .. index::
-   single: Translation
-..
-
+   single: translation
 
 Translation through a CSV file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

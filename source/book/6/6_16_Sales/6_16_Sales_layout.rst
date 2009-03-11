@@ -3,7 +3,7 @@ Layout templates
 ================
 
 .. index::
-   pair: module; sale_layout
+   single: module; sale_layout
 
 The :mod:`sale_layout` module enables you to have a more elaborate template than the standard order
 forms.
@@ -21,7 +21,7 @@ For example you could put the following in the order lines:
 * a page break.
 
 .. index::
-   pair: module; account_invoice_layout
+   single: module; account_invoice_layout
 
 This enables you to lay out a more elaborate professional-looking quotation page. There's also the
 module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.

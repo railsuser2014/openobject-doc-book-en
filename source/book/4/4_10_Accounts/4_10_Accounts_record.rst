@@ -1,6 +1,6 @@
 
 .. index::
-   single: Analytic records
+   single: analytic; records
 ..
 
 Analytic records
@@ -92,7 +92,7 @@ To make manual record entries, use the menu :menuselection:`Financial Management
 Analytic Entries --> Entries Encoding by Line`.
 
 .. index::
-   single: Analytic entries
+   single: analytic; entries
 
 .. note:: Analytic entries
 
@@ -102,6 +102,9 @@ Analytic Entries --> Entries Encoding by Line`.
 
 Select a journal and complete the different fields. Write an expense as a negative amount and income
 as a positive amount.
+
+.. index::
+   pair: cost; allocation
 
 .. tip::  Entering a date
 

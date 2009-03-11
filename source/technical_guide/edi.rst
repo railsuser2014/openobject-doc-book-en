@@ -24,7 +24,8 @@ Description
 
 ::
 
-  Used for the communication with others proprietary ERP's. Has been tested in the food industries process, communicating with SAP. This module is able to import order and export delivery notes.
+  Used for the communication with others proprietary ERP's. Has been tested in the food industries 
+  process, communicating with SAP. This module is able to import order and export delivery notes.
 
 Dependencies
 ------------

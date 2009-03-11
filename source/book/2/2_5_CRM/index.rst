@@ -11,8 +11,8 @@ Customer Relationship Management
  understand their customers' needs better, and automating their communication efforts.*
 
 .. index::
-   single: CRM & SRM
-..
+   single: CRM
+   single: SRM
 
 .. tip:: CRM & SRM
 
@@ -29,7 +29,7 @@ of your accounting, sales, purchases, manufacturing and fulfilment as well as li
 your internal staff.
 
 .. index::
-   pair: module; crm
+   single: module; crm
 
 Open ERP's :mod:`crm` module uses that information and offers several significant features that enable
 you and your staff to monitor and control your supplier and customer relationships effectively, such

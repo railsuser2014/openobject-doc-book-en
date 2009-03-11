@@ -1,5 +1,6 @@
 .. index::
-   single: Import-Export
+   pair: data; import
+   pair: data; export
 
 Importing and exporting data
 ============================
@@ -20,10 +21,8 @@ Calc and Microsoft Excel) and is easily editable as a worksheet. The first line 
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
 .. index::
-   single: Import-Export; CSV
-..
-
-.. index:: CSV
+   pair: data; CSV import-export
+   single: CSV; data
 
 The CSV format for complex database structures
 ----------------------------------------------
@@ -105,7 +104,8 @@ Have a look at the screenshots below to see the differences.
 
 All of the other fields are coded in the CSV file as just one field in each column.
 
-.. index:: Relation Fields
+.. index:: 
+   pair: relation; field
 
 Many-to-one fields
 ^^^^^^^^^^^^^^^^^^
@@ -198,8 +198,7 @@ Importing this file will give you three partners:
 	  one form).
 
 .. index::
-   single: Import-Export; Example
-..
+   single: data; import example
 
 Examples of CSV import files
 ----------------------------

@@ -1,8 +1,6 @@
-.. index::
-   single: Open ERP architecture
-..
 
-.. index:: Architecture
+.. index::
+   single: architecture; Open ERP
 
 The architecture of Open ERP
 ============================
@@ -26,8 +24,7 @@ server (such as in the same building). In this case the GTK client will be more
 responsive, so more satisfying to use.
 
 .. index::
-   single: Client
-..
+   single: client; web (thin) and GTK (thick)
 
 .. note::   Web client and GTK client
 
@@ -70,8 +67,7 @@ An Open ERP system is formed from three main components:
     a server or a client.
 
 .. index::
-   single: eTiny; client-web
-..
+   pair: eTiny; client-web
 
 .. note::   eTiny
 
@@ -81,7 +77,6 @@ An Open ERP system is formed from three main components:
 
 .. index::
    single: PostgreSQL
-..
 
 .. note::   PostgreSQL, the relational and object database management system.
 

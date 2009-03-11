@@ -24,12 +24,9 @@ Description
 
 ::
 
-  This module help user to configure a tiny for Product selling compant doing 
-  Import Export business
-  Take care for the Taxes according to the govt policy for 
-  Local Sale
-  With in Country Sale
-  or Sales Outside the Country
+  This module help user to configure a tiny for Product selling compant doing Import Export business
+  Take care for the Taxes according to the govt policy for Local Sale
+  With in Country Sale or Sales Outside the Country
 
 Dependencies
 ------------

@@ -3,7 +3,7 @@ Open orders
 ===========
 
 .. index::
-   pair: module; sale_delivery
+   single: module; sale_delivery
 
 In some industries, customers commonly place orders for a certain volume of product and ask for regular
 deliveries from an order up to the total amount on it. This principle, called open orders, is managed

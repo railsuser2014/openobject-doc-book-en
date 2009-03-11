@@ -131,7 +131,8 @@ Objects may contain different types of fields. Those types can be divided into t
 Here's the header of the initialization method of the class any field defined in Open ERP inherits (as you can see in server/bin/osv/fields.py)::
 
         def __init__(self, string='unknown', required=False, readonly=False,
-			 domain=[], context="", states={}, priority=0, change_default=False, size=None, ondelete="set  				 null", translate=False, select=False, **args) :
+			domain=[], context="", states={}, priority=0, change_default=False, size=None, 
+                        ondelete="setnull", translate=False, select=False, **args) :
 
 
 Optional parameters to All Field Types
@@ -380,7 +381,8 @@ where
         Either way, it must return a dictionary of values of the form 
         {id'_1_': value'_1_', id'_2_': value'_2_',...}.::
 
-                The values of the returned dictionary must be of the type specified by the type argument in the field declaration.
+                The values of the returned dictionary must be of the type specified by the 
+type argument in the field declaration.
 
 * *fnct_inv* is the function or method that will allow writing values in that field. 
 

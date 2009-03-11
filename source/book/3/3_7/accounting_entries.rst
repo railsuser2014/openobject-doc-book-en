@@ -1,6 +1,6 @@
 
 .. index::
-   single: Accounting Entry
+   pair: accounting; entry
 
 Accounting entries
 ==================
@@ -21,8 +21,8 @@ form for handling bank statements and for managing cash. The two types of transa
 the journal that's used.
 
 .. index::
-   single: Bank; Statements
-   single: Statement
+   pair: bank; statement
+   single: accounting; bank statement
 
 Managing bank statements
 ------------------------
@@ -100,6 +100,9 @@ of payment must correspond exactly with one or several due dates of invoice.
  	
  	You can carry out either a full or a partial reconciliation.
 
+.. index::
+   single: adjustment
+
 If you see a difference between the payment and the invoices to reconcile,
 you can enter the difference in the second part of the form :guilabel:`Write-off`.
 You have to set an account for the adjustment. The main reasons explaining the difference are usually:
@@ -132,8 +135,7 @@ The resulting account is the same but the operation is more complex because you 
 accounts to use and must have mastered the ideas of credit and debit.
 
 .. index::
-   single: Cash Management
-..
+   single: cash management
 
 Cash Management
 ---------------
@@ -245,7 +247,7 @@ entries while doing data entry in an account. Automatic and manual reconciliatio
 here.
 
 .. index::
-    single: Reconciliation; Automatic
+   single: reconciliation; automatic
 
 Automatic reconciliation
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -290,6 +292,9 @@ equivalent. For example, Open ERP permits foreign customers whose accounts are 
 currencies to have a difference of up to, say, 0.50 units of currency and put the difference in a write-
 off account.
 
+.. index::
+   single: adjustment; limit
+
 .. tip:: Limit write-off adjustments
 
 	You shouldn't make the adjustment limits too large. Companies that introduced substantial automatic
@@ -305,7 +310,7 @@ off account.
 	This means that you won't have to re-type all the fields each time.
 
 .. index::
-    single: Reconciliation; Manual
+   single: reconciliation; manual
 
 Manual reconciliation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -379,7 +384,7 @@ The two invoices and the payment will be reconciled in the first adjustment line
 will then be automatically marked as paid.
 
 .. index::
-   single: Payments
+   single: payments
 ..
 
 Management of payments
@@ -405,7 +410,7 @@ Process for managing payment orders
 -----------------------------------
 
 .. index::
-   pair: module; account_payment
+   single: module; account_payment
 
 To use the tool for managing payments you must first install the module :mod:`account_payment`.
 It's part of the core Open ERP system.

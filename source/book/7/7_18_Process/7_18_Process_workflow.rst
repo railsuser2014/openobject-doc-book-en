@@ -1,8 +1,8 @@
 
 
 .. index:: 
-   single: Process
-   single: Workflow
+   single: process
+   single: workflow
 
 Workflows and User Processes
 =============================

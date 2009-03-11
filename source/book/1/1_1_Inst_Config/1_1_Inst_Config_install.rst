@@ -33,7 +33,7 @@ to install – the stable version or the development version. If you're planning
 into production you're strongly advised to choose the stable version.
 
 .. index::
-   single: Stable versions
+   single: stable versions
 
 .. note::  Stable versions and development versions
 
@@ -49,8 +49,7 @@ into production you're strongly advised to choose the stable version.
 	released through the year on the stable branch.
 
 .. index::
-   single: Open ERP Installation; Windows (All-in-One)
-..
+   single: installation; Windows (all-in-one)
 
 To download the version of Open ERP for Windows, follow these steps:
 
@@ -65,6 +64,9 @@ To download the version of Open ERP for Windows, follow these steps:
 	#. Save the file on your PC - it's quite a substantial size because it downloads everything including
 	   the PostgreSQL database system, so will take some time.
 
+.. index::
+   pair:  administrator
+
 To install Open ERP and its database you must be signed in as an Administrator on your PC. Double-
 click the installer file to install it and accept the default parameters on each dialog box as you go. 
 
@@ -78,8 +80,7 @@ the all--in-one installation. The next step consists
 of configuring the database, and is covered in the final section of this chapter :ref:`sect-creatingdb`.
 
 .. index::
-   single: Open ERP Installation; Windows (Independent)
-..
+   single: installation; Windows (independent)
 
 Independent installation on Windows
 -----------------------------------
@@ -119,6 +120,9 @@ visible to the other PCs, and install a GTK client on each of the those PCs:
 	given as part of the name of the downloaded file. Although it's possible that some different
 	revisions of client and server will function together, there's no certainty about that.
 
+.. index::
+   single:  administrator
+
 To run the client installer on every other PC you'll need to have administrator rights there. The
 installation is automated, so you just need to guide it through its different installation steps.
 
@@ -143,6 +147,8 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
    *Dialog box on connecting a GTK client to a new Open ERP server*
 
 .. index::
+   single: protocol; XML-RPC
+   single: protocol; NET-RPC
    single: XML-RPC
    single: NET-RPC
 
@@ -211,8 +217,7 @@ resolving this below:
 
 
 .. index::
-   single: Open ERP Installation; Linux (Ubuntu)
-..
+   single: installation; Linux (Ubuntu)
 
 Installation on Linux (Ubuntu)
 ------------------------------
@@ -329,9 +334,8 @@ seconds or so, which indicates that the server is waiting for a client to connec
    *Open ERP startup log in the console*
 
 .. index::
-  single: Client; GTK
-  single: Installation; GTK clients
-..
+   single: client; GTK
+   single: installation; GTK client
 
 Manual installation of Open ERP GTK clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -367,7 +371,7 @@ server, make sure you know its network address – either by its name (such as \
 ``mycomputer.mycompany.net``\  ) or its IP address (such as \ ``192.168.0.123``\  ).
 
 .. index::
-   single: Port
+   single: port (network)
 
 .. note:: Different networks
 
@@ -398,9 +402,8 @@ If your Linux server is protected by a firewall you'll have to provide access to
  \ ``8069``\ or \ ``8070``\ for users on other computers with Open ERP GTK clients.
 
 .. index::
-  single: Installation; eTiny web server
-  single: Installation; Open ERP client-web server
-..
+   single: installation; eTiny web server
+   single: installation; Open ERP client-web server
 
 Installation of an Open ERP web server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -454,7 +457,6 @@ Verifying your Linux installation
 
 .. index::
    single: pgAdmin III
-..
 
 You've used default parameters so far during the installation of the various components.
 If you've had problems, or you just want to set this up differently,

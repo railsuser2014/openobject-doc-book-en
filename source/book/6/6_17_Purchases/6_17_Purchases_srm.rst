@@ -3,8 +3,8 @@ Supplier relationship management
 ================================
 
 .. index::
-   pair: module; crm_configuration
-   pair: module; crm
+   single: module; crm_configuration
+   single: module; crm
 
 To manage supplier relations, you should install the :mod:`crm_configuration` module. You will then be
 able to manage supplier complaints and integrate them with your emails and document management.

@@ -1,6 +1,8 @@
 
 .. index::
-   single: Accounting workflow
+   single: accounting; workflow
+   single: accounting; invoicing
+   single: invoicing
 ..
 
 Accounting workflow and the automatic generation of invoices
@@ -20,8 +22,7 @@ In general, when you use all of Open ERP's functionality, invoices don't need t
 manually. Draft invoices are generated automatically from other documents such as Purchase Orders.
 
 .. index::
-   single: Invoices
-..
+   single: invoices
 
 Draft Invoices
 --------------
@@ -64,8 +65,7 @@ An open invoice has a unique invoice number. The invoice is sent to the customer
 the system as awaiting payment.
 
 .. index::
-   single: Reconciliation
-..
+   single: reconciliation
 
 Reconciling invoice entries and payments
 ----------------------------------------

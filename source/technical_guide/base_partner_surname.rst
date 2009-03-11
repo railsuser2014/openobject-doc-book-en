@@ -24,7 +24,8 @@ Description
 
 ::
 
-  This module use for seperate surname from contact name of partner. Now You can give first name & last name on contact Name
+  This module use for seperate surname from contact name of partner. Now You can give first name & 
+  last name on contact Name
 
 Dependencies
 ------------

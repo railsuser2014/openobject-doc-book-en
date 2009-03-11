@@ -25,8 +25,8 @@ Description
 ::
 
   Progress bar for analytic accounts.
-  This is the module used for displaying the shared funded
-  development projects on the Tiny ERP website.
+  This is the module used for displaying the shared funded development projects on  the Tiny ERP 
+  website.
 
 Dependencies
 ------------

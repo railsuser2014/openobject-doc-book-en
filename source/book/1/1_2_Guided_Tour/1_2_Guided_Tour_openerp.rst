@@ -42,8 +42,7 @@ usual to assign a dashboard to someone's home page but any Open ERP screen can 
 home page of any user.
 
 .. index::
-  single: Shortcuts
-..
+   single: shortcut
 
 .. tip:: Creating shortcuts
 
@@ -62,6 +61,9 @@ covered in more detail in the following chapters of this book and you'll find ma
 available in the optional modules. Functions are presented in the order that they appear on the main
 menu.
 
+.. index::
+   single: Partners
+
 Partners
 --------
 
@@ -70,8 +72,7 @@ partners. Clicking :menuselection:`Partners --> Partners` brings up a list of pa
 automatically loaded when you created the database with :guilabel:`Load Demonstration Data` checked.
 
 .. index::
-  single: Partner; Search Partners
-..
+   single: partner; search
 
 Search for a partner
 ^^^^^^^^^^^^^^^^^^^^
@@ -114,8 +115,7 @@ were in the List view. In Read-Only mode you can also click :guilabel:`Search` t
 List view again.
 
 .. index::
-  single: Partner; Form View
-..
+   single: partner; view form
 
 Partner form
 ^^^^^^^^^^^^
@@ -169,8 +169,7 @@ toolbar:
 *  :guilabel:`Mass Mailing` : enables you to send an email to a selection of partners.
 
 .. index::
-  single: Right Actions
-..
+   single: buttons; reports, actions, links
 
 .. tip:: Reports, Actions and Links in the GTK client
 
@@ -211,8 +210,8 @@ Configuration`  menu, particularly :menuselection:`Partner Categories`  and  :me
 They contain some of the demonstration data that you installed when you created the database.
 
 .. index::
-  single: Accounting and finance
-..
+   single: Accounting and Finance
+   single: Financial Management
 
 Financial Management
 --------------------
@@ -243,8 +242,6 @@ statutory requirements.
 
 .. index::
    single: Dashboards
-..
-
 
 Dashboards
 ----------
@@ -278,7 +275,6 @@ Dashboards are adaptable to the needs of each user and each company.
 
 .. index::
    single: Products
-..
 
 Products
 --------
@@ -315,7 +311,7 @@ of its available variants briefly rather than every item as an entire product.
 			* Collar (V, Round).
 			
 			.. index::
-			   pair: module; product_variant_multi
+			   single: module; product_variant_multi
 
 			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
@@ -327,8 +323,7 @@ The :menuselection:`Products` menu gives you access to the definition of product
 constituent templates and variants, and to price lists.
 
 .. index::
-   single: Products; Consumables
-..
+   single: Product; Consumable
 
 .. tip::  Consumables
 
@@ -355,40 +350,34 @@ You can find many optional modules to extend product functionality through the O
 such as:
 
 .. index::
-   pair: module; membership
-..
+   single: module; membership
 
 * :mod:`membership` : for managing the subscriptions of members of a company,
 
 .. index::
-   pair: module; product_electronic
-..
+   single: module; product_electronic
 
 * :mod:`product_electronic` : for managing electronic products,
 
 .. index::
-   pair: module; product_extended
-..
+   single: module; product_extended
 
 * :mod:`product_extended` : for managing production costs,
 
 .. index::
-   pair: module; product_expiry
-..
+   single: module; product_expiry
 
 * :mod:`product_expiry` : for agro-food products where items must be retired after a certain
   period,
 
 .. index::
-   pair: module; product_lot_foundry
-..
+   single: module; product_lot_foundry
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
-
 .. index::
    single: Human Resources
-..
+   single: HR
 
 Human Resources
 ---------------
@@ -410,8 +399,8 @@ Open ERP's Human Resources Management modules provide such functionality as:
 * management of skills and competencies.
 
 .. index::
-   pair: modules; hr_
-   pair: module; hr
+   single: modules; hr_
+   single: module; hr
 
 Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
 rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
@@ -421,7 +410,7 @@ The different issues are handled in detail in the fourth part of this book :ref:
 organization and to the management of a services business.
 
 .. index::
-   single: Inventory Control
+   single: inventory control
    single: Stock Management
 ..
 
@@ -464,6 +453,9 @@ various levels of detail.
 
 .. index::
    single: CRM
+   single: Customer Relationship Management
+   single: SRM
+   single: Supplier Relationship Management
 ..
 
 Customer and Supplier Relationship Management
@@ -510,10 +502,8 @@ these, you can execute a real improvement policy to manage your service quality.
 The management of customer relationships is detailed in the second section of this book (see
 :ref:`part2-crm`).
 
-
 .. index::
    single: Purchase Management
-..
 
 Purchase Management
 -------------------
@@ -556,7 +546,7 @@ Project Management is described in :ref:`ch-projects`.
 
 .. index::
    single: Production Management
-..
+   single: Manufacturing
 
 Manufacturing
 -------------
@@ -587,7 +577,6 @@ and ranges. You can test the system using this data.
 
 .. index::
    single: Sales Management
-..
 
 Sales Management
 ----------------

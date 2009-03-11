@@ -72,15 +72,19 @@ the financial analyses happen in real time, so that you can not only monitor the
 manage it effectively.
 
 .. index::
-   pair: module; account
+   single: module; account
 
 The :mod:`account` module in Open ERP covers general accounting, analytic accounting, and auxiliary
 and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 .. index::
-   single: Accounting
-   single: Financial Accounting
-..
+   single: accounting
+   single: accounting; financial
+   single: accounting; analytical
+   single: accounting; auxiliary
+   single: accounting; budgetary
+   single: asset
+   single: liability
 
 .. note:: Accounting
 
@@ -98,8 +102,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	  financial year.
 
 .. index::
-   single: Accounting; Multi-company
-..
+   pair: accounting; multi-company
 
 .. tip:: Multi-company
 
@@ -112,7 +115,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	  Open ERP's multi-company documents to finely manage access rights,
 	  
 	.. index::
-	   pair: module; base_synchro	
+	   single: module; base_synchro	
 
 	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
 	  module, which is a shared-funding module rather than in the standard open repositories.
@@ -130,6 +133,9 @@ submissions, customer reminders, and so on. Such strong integration enables you 
   example),
 
 * exert timely control over all areas of company management.
+
+.. index::
+   single: accountant
 
 .. tip:: For accountants
 

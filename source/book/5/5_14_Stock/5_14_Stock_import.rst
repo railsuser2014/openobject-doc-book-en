@@ -3,8 +3,8 @@ Import / Export
 ===============
 
 .. index::
-   single: Export; Stock Management
-.. index:: Import; Stock Management
+   single: export; stock management
+   single: import; stock management
 
 Managing import / export with foreign companies can sometimes be very complex. Between a departure
 port and destination company, products can get stopped for several weeks at sea or somewhere in the
@@ -45,7 +45,7 @@ stock move is validated at each port and customs arrival. Open ERP prepares all 
 automatically.
 
 .. index::
-   pair: module; report_instrastat
+   single: module; report_instrastat
 
 .. note:: Intrastat
 
@@ -59,13 +59,13 @@ incoming products so that you can respond to a customer's needs as precisely as 
 You can also value the products in transit in your account depending on the chosen stock location
 configuration.
 
-.. index:: Rent
+.. index:: rent
 
 Rental locations
 ----------------
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 You can manage rental locations in Open ERP very simply using the same system of linked locations.
 Using the module :mod:`stock_location` you can set a return date for rental items sent to customer

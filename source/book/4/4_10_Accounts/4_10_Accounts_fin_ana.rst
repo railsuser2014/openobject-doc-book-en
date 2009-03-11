@@ -21,7 +21,7 @@ depending on the additional installed modules):
 *  :guilabel:`Analytic Balance`,
 
 .. index::
-   single: Cost ledger; Analytic
+   pair: cost ledger; analytic
 
 The cost ledger
 ^^^^^^^^^^^^^^^
@@ -64,7 +64,7 @@ services journal for printing.
 	single PDF document.
 
 .. index::
-   pair: Balance; Analytic
+   pair: balance; analytic
 
 Inverted Analytic Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ This report is useful for analyzing the profitability of projects, giving you th
 a project for the different operations that you used to carry out the project.
 
 .. index::
-   single: Multi-company
+   single: multi-company
 
 .. tip::  Multi-company
 
@@ -118,7 +118,7 @@ Key indicators
 --------------
 
 .. index::
-   pair: module; account_analytic_analysis
+   single: module; account_analytic_analysis
 
 If you use analytic accounts with a structure of accounts by project client you should install the 
 :mod:`account_analytic_analysis` module. This module adds three new tabs to the analytic account
@@ -184,7 +184,7 @@ the various operations needed to manage the project, such as automatic invoicing
 planning, keeping customers up to date, and budgeting for resources.
 
 .. index::
-   pair: module; account_budget
+   single: module; account_budget
 
 .. note:: Analytic Budgets
 

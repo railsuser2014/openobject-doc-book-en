@@ -4,10 +4,9 @@
 Internal and external access using FTP
 ======================================
 
-.. index:: Directory
-
 .. index::
-   pair: module; document
+   single: directory
+   single: module; document
 
 The first configuration step is to create a directory structure that will be used to classify your
 document set. You can use the structure automatically proposed by Open ERP from the menu

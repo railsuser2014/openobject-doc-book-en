@@ -35,7 +35,9 @@ Description
           Partners \ Contacts
           Partners \ Functions
   
-      Pay attention that this module converts the existing addresses into "addresses + contacts". It means that some fields of the addresses will be missing (like the contact name), since these are supposed to be defined in an other object.
+      Pay attention that this module converts the existing addresses into "addresses + contacts".
+ It means that some fields of the addresses will be missing (like the contact name), since 
+these are supposed to be defined in an other object.
 
 Dependencies
 ------------

@@ -26,8 +26,7 @@ Description
 
   Manages a list of asterisk servers and IP phones.
   This module implements a system to popup the partner form based on phone calls.
-  This is still a proof of concept, that have been made during Tiny ERP's
-  technical training session.
+  This is still a proof of concept, that have been made during Tiny ERP's technical training session.
 
 Dependencies
 ------------

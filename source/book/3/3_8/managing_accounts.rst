@@ -1,9 +1,9 @@
 
 .. index::
-   single: Payable
-   single: Receivable
-   single: Creditors
-   single: Debtors
+   single: payable
+   single: receivable
+   single: creditor
+   single: debtor
 
 Managing accounts payable / creditors and accounts receivable / debtors
 =======================================================================
@@ -22,7 +22,8 @@ Financial analysis of partners
 ------------------------------
 
 .. index::
-   pair: module; board_account
+   single: module; board_account
+   pair: dashboard; accounting
 
 When members of your accounts department sign on to the Open ERP system, they can immediately be
 presented with the :guilabel:`Accounting Dashboard`. By default it contains a useful graph for analyzing
@@ -35,7 +36,7 @@ the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
 
    *Accounting Dashboard*
 
-.. index:: Balance; Aged
+.. index:: balance; aged
 
 In the dashboard, the graph at the right entitled :guilabel:`Aged Receivables` represents your
 receivables week by week. That shows you at a glance the cumulative amount of your customer debtors
@@ -71,7 +72,7 @@ cumulative credit balance.
 
    *Partner balances*
 
-.. index:: Ledger
+.. index:: ledger
 
 If you want detailed information about a partner you can use the partner ledgers that you reach
 through the menu :menuselection:`Financial Management --> Reporting --> Partner Accounts --> Partner
@@ -108,16 +109,12 @@ for account entries:
 	by exporting accounting entries.
 
 .. index::
-  single: Follow-ups
-..
-
-.. index:: Reminders
+   single: follow-up
+   single: reminder
+   single: module; account_followup
 
 Multi-step follow-ups
 ---------------------
-
-.. index::
-   pair: module; account_followup
 
 To automate the management of followups (reminders) you must install the module 
 :mod:`account_followup`. This is installed automatically as part of the accounting profile, but is
@@ -177,7 +174,7 @@ in detail.
    *Summary screen for follow-ups*
 
 .. index::
-   single: Overdue payments
+   single: overdue payments
 
 Partner situation
 -----------------

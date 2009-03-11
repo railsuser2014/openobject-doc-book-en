@@ -1,6 +1,6 @@
 
 .. index::
-   single: Scheduler; Lead Time
+   single: scheduler; lead time
 
 Calculation of lead times
 =========================
@@ -111,7 +111,7 @@ The example above will then be given the following lead times:
 
 * Purchase BOIS02 (for PANLAT): 4 January (=12 January – 5 days – 3 days).
 
-.. index:: Work Orders
+.. index:: work orders
 
 Operations
 ==========
@@ -227,7 +227,7 @@ effect on the analytic accounts.
    *Data about analytic accounts for a workcenter*
 
 .. index::
-   single: Routing; Manufacturing
+   pair: routing; manufacturing
 
 Routing
 -------
@@ -316,7 +316,7 @@ Management of operations
    Operations are often called work orders.
 
 .. index::
-   pair: module; mrp_operations
+   single: module; mrp_operations
 
 To work using work orders you must install the optional module :mod:`mrp_operations`. Once the module
 is installed you'll find a new menu called :menuselection:`Manufacturing --> Operations -->
@@ -348,7 +348,7 @@ The production order is automatically put into the state 'Running' once the firs
 started. That consumes some raw materials. Similarly the production order is closed automatically
 once the last operation is completed. The finished products are then made.
 
-.. index:: Barcodes
+.. index:: barcode
 
 Scores, events and barcodes
 ===========================
@@ -534,13 +534,13 @@ short-circuit the planning of different procurements.
    On the product form you have an :guilabel:`ACTIONS` shortcut button :guilabel:`Create Procurements`
    that lets you quickly create a new procurement order.
 
-.. index:: Waste Products
+.. index:: waste products
 
 Management of waste products and secondary products
 ===================================================
 
 .. index::
-   pair: module; mrp_subproduct
+   single: module; mrp_subproduct
 
 For the management of waste you must install the module :mod:`mrp_subproduct`. The normal behaviour of
 manufacture in Open ERP enables you to manufacture several units of the same finished product from
@@ -591,13 +591,13 @@ production order for the secondary product.
    subcontract order for the operations.
    The behaviour will depend on the supply method configured on the product form :guilabel:`Buy` or :guilabel:`Produce`.
 
-.. index:: Repairs
+.. index:: repairs
 
 Management of repairs
 =====================
 
 .. index::
-   pair: module; mrp_repair
+   single: module; mrp_repair
 
 The management of repairs is carried out using the module :mod:`mrp_repair`. Once it's installed this
 module adds new menus to the Manufacturing menu:
@@ -684,7 +684,7 @@ Once the component has been selected, Open ERP automatically completes most of t
 
 This information is automatically proposed by the system but you can modify it all yourself.
 
-You can also encode additional charges in the second tab of the repair: applicable list price,
+You can also encode additional charges in the second tab of the repair - applicable list price,
 address and type of invoice, as well as additional line items that need to be added to the repair
 bill.
 
@@ -728,7 +728,7 @@ the running state. You can specify the invoicing mode in the second tab:
 You can confirm the repair operation or create an invoice for the customer depending on this state.
 
 .. index::
-   single: Invoicing; Repair
+   pair: invoicing; repair
 
 Invoicing the repair
 --------------------

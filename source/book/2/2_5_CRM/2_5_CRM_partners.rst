@@ -38,7 +38,7 @@ Partners`.
    *A partner form*
 
 .. index::
-   single: Send SMS
+   single: send SMS
 
 To the right of the partner form you'll find all of the actions, reports and shortcuts available to
 the selected partner. This enables you to quickly send an SMS message, for example, or review a
@@ -87,7 +87,7 @@ You can search for a subset of Partners and Contacts using their company :guilab
 	in any Contact Name.
 
 .. index::
-   single: Partner; Categories
+   pair: partner; category
 ..
 
 Partner Categories

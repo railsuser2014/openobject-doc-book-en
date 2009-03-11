@@ -1,4 +1,4 @@
-.. index:: Warehouse
+.. index:: warehouse
 
 Warehouses
 ==========
@@ -40,7 +40,7 @@ company. Once the warehouse has been defined it can be used in:
 
 * Customer orders (using the definition of a point of sale, which is linked to a warehouse).
 
-.. index:: Procurement
+.. index:: procurement
 
 Automatic procurement
 ---------------------
@@ -55,8 +55,8 @@ Several methods of automatically procuring products can be carried out by Open E
 
 The two last methods are described below.
 
-.. index:: Orderpoint
-.. index:: Minimum Stock Rule
+.. index:: orderpoint
+.. index:: minimum stock rule
 
 Minimum stock rules
 -------------------

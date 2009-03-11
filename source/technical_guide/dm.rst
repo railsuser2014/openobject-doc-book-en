@@ -35,7 +35,8 @@ Description
   
           * Marketing Campaign
               - Plan your Marketing Campaign and Commercial Propositions
-              - Generate the Retro planning (automaticaly creates all the tasks necessary to launch your campaign)
+              - Generate the Retro planning (automaticaly creates all the tasks 
+                necessary to launch your campaign)
               - Assign automatic prices to the items of your commercial propositions
               - Auto generate the purchase orders for all the items of the campaign
               - Manage Customers Fils, segments and segmentation criteria

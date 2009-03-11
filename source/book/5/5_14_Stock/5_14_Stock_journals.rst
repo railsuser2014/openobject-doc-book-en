@@ -17,13 +17,13 @@ vehicle has left the company you can confirm all the orders that are found in th
 same time.
 
 .. index::
-   single: Journal; Stock Management
+   single: journal; stock management
 
 The different journals
 ----------------------
 
 .. index::
-   pair: module; sale_journal
+   single: module; sale_journal
 
 Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
 

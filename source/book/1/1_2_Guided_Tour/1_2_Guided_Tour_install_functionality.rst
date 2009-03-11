@@ -1,8 +1,6 @@
 
 .. index::
-  single: Module; Install functionality
-..
-
+  single: module; new functionality
 
 Installing new functionality
 =============================
@@ -18,8 +16,7 @@ You'll start by checking if there are any updates available online that apply to
 installation. Then you'll install a CRM module to complete your existing database.
 
 .. index::
-  single: Module; Upgrade Modules
-
+  single: module; upgrading
 
 Updating the Modules list
 ---------------------------
@@ -69,15 +66,14 @@ repository.
 	limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
 
 .. index::
-  single: Module; Install
-..
+  single: module; installing
 
 
 Installing a module
 ---------------------
 
 .. index::
-   pair: module; product
+   single: module; product
 
 You'll now install a module named :mod:`product`, which will enable you to manage the company's
 products. This is part of the core installation, so you don't need to load anything to make this
@@ -124,7 +120,7 @@ Installing a module with its dependencies
 -----------------------------------------
 
 .. index::
-   pair: module; crm
+   single: module; crm
 
 Now install the CRM module (Customer Relationship Management) using the same process as before.
 Start from :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules`.
@@ -156,7 +152,7 @@ modules add menus and submenus as they need. Modules can also add additional fie
 forms, or simply additional demonstration data or some settings specific to a given requirement.
 
 .. index::
-  single: Module; Dependencies
+  single: module; dependencies
 ..
 
 .. note::  Dependencies between modules
@@ -197,7 +193,7 @@ demonstration data because you checked the :guilabel:`Load Demonstration Data` c
 created the database.
 
 .. index::
-  single: Module; Import
+  single: module; importing
 ..
 
 Click :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to give you an
@@ -207,7 +203,7 @@ To test several modules you won't have to install them all one by one. You can u
 between modules to load several at once. For example, try loading the following modules:
 
 .. index::
-   pair: modules; profile_
+   single: modules; profile_
 
 * :mod:`profile_accounting`,
 

@@ -1,6 +1,6 @@
 
 .. index::
-  single: Financial Analysis
+  single: financial analysis
 ..
 
 Company Financial Analysis
@@ -14,7 +14,7 @@ You'll see here the analysis tools for your company's financial situation, in pa
 
 * the accounting dashboard.
 
-.. index:: Indicators
+.. index:: indicators
 
 Management Indicators
 ---------------------
@@ -28,7 +28,7 @@ Management Indicators
 	the next or against those of other companies.
 
 .. index::
-   pair: module; account_report
+   single: module; account_report
 
 To define financial indicators in Open ERP you should install the module :mod:`account_report`.
 When installing the module the usual financial indicators are registered in Open ERP.
@@ -66,7 +66,7 @@ can also calculate a time series to follow the change of a given indicator throu
 the company.
 
 .. index::
-   pair: module; account_report_history
+   single: module; account_report_history
 
 To do a temporal analysis of your indicators, you must install the module 
 :mod:`account_report_history` from the set of modules in addons-extra.
@@ -114,7 +114,7 @@ So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / ba
 that's the balance in accounts 4 and 5 divided by the balance in account 1.
 
 .. index::
-  single: Budgeting
+  single: budgeting
 ..
 
 Good management budgeting
@@ -128,7 +128,7 @@ Use the menu :menuselection:`Financial Management --> Configuration --> Budgets 
 to define a new budget.
 
 .. index::
-   single: Budget Revisions
+   single: budget revisions
 
 .. tip:: Budget Revisions
 
@@ -182,7 +182,7 @@ The Accounting Dashboard
    *Accounting Dashboard*
 
 .. index::
-   pair: module; board_account
+   single: module; board_account
 
 If you've installed the module :mod:`board_account`, Open ERP gives you an accounting dashboard
 that can be presented to your accounting staff as they sign into the system (if you have set it as

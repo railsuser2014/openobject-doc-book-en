@@ -5,6 +5,9 @@ Database setup
 You'll create all the elements in the database that you need to carry out the use case. These are
 specified in the functional requirements.
 
+.. index::
+   single: accounts; configuring
+   
 Configuring Accounts
 --------------------
 
@@ -12,6 +15,9 @@ You need to start off with a minimal set of accounts, and to do that you will ne
 account types. You can structure your accounts into a chart at any time (and, in fact, you can
 structure them into several additional charts at the same time as you'll see in the chapter
 :ref:`ch-configacct`), so you don't need to be concerned unduly about structure.
+
+.. index::
+   single: account types
 
 Account Types
 ^^^^^^^^^^^^^
@@ -77,6 +83,9 @@ A single :kbd:`Del` or :kbd:`Backspace` keystroke is all you need to delete the 
 and when you type the name (or part of the name) you still need to associate that text
 with the entry by clicking the :guilabel:`Search` icon to the right of the field.
 
+.. index::
+   single: properties; defining
+
 Properties
 ^^^^^^^^^^
 
@@ -102,7 +111,7 @@ property_account_income_categ  Tiny sprl Income Account     (account.account) S 
    It's easy to make mistakes in configuring the accounts and their properties, but the consequences
    are not immediately obvious. You'll mostly discover mistakes when trying to make a Purchase or
    Sale Order (see later, for example, :ref:`sect-PO`), where the accounts are required fields or,
-   if you're diligent, when you set up Partners (see :ref:`sect-ConfiCo`). 
+   if you're diligent, when you set up Partners. 
    
    If you configure them correctly at this stage then fields will be completed automatically and you'll
    never know a thing. If you don't configure all this correctly then you won't be able to save the
@@ -110,6 +119,9 @@ property_account_income_categ  Tiny sprl Income Account     (account.account) S 
    
    Since this configuration is quite tedious you'd be best finding a certified Chart of Accounts that
    that has already been set up to meet your needs, if you can find one.
+
+.. index::
+   single: journals; configuring
 
 Configuring Journals
 --------------------
@@ -142,6 +154,9 @@ Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Ca
    until you have corrected the problem or until you manually set the journal. 
 
 .. _sect-ConfiCo:
+
+.. index::
+   single: Main Company; configuring
 
 Configuring the Main Company
 ----------------------------
@@ -210,6 +225,11 @@ you feel compelled to do that.
 
 	The examples in this book are in USD and EUR. You, the reader, could use your home currency
 	(perhaps CAD, CNY, GBP, or IDR) in their place.
+
+.. index::
+   single: partner
+   pair: partner; category
+   pair: partner; contact
 
 Creating partner categories, partners and their contacts
 --------------------------------------------------------
@@ -286,6 +306,10 @@ category in turn to see the companies in the category.
 	If this partner was also a supplier then you'd add Suppliers to the categories as well, but there's
 	no need to do so in this example. You can assign a partner to multiple categories at all levels of
 	the hierarchy.
+
+.. index::
+   single: product
+   pair: product; category
 
 Creating products and their categories
 --------------------------------------
@@ -366,7 +390,7 @@ Now create a new product:
 		to be correctly filled in.
 
 .. index::
-   single: Stock locations
+   single: stock; location
 
 Stock locations
 ---------------
@@ -411,7 +435,7 @@ be your own company (although it can be): you can easily specify another partner
 stock on your behalf.
 
 .. index::
-   single: Location Structure
+   single: location structure
 
 .. note:: Location Structure
 
@@ -430,7 +454,8 @@ stock on your behalf.
 	is easier to understand when you're starting out.
 
 .. index::
-   single: Account Chart
+   single: account; chart
+   single: chart of accounts
 
 Setting up a chart of accounts
 ------------------------------
@@ -460,8 +485,7 @@ Click :guilabel:`Open Charts` to accept the defaults and see a
 hierarchical structure of the accounts.
 
 .. index::
-   single: Database; Backup
-..
+   pair: database; backup
 
 Make a backup of the database
 -----------------------------

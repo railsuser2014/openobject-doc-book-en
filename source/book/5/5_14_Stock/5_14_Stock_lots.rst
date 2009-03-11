@@ -101,7 +101,7 @@ complete the prefix in the wizard with a continuing sequence number.
 
    *Splitting a lot into uniquely identified parts*
 
-.. index:: Traceability (Stock)
+.. index:: traceability (stock)
 
 Traceability
 ------------

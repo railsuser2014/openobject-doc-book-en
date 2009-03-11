@@ -1,8 +1,7 @@
 
 .. index::
-   single: Human Resources; Management
-   single: Employee
-..
+   single: HR; management
+   single: employee
 
 Managing Human Resources
 ========================
@@ -17,7 +16,7 @@ current list of collaborators.
 	periods, and also independent and freelance service contracts.
 	
 	.. index::
-	   pair: modules; portal_	
+	   single: modules; portal_	
 
 	A “user” is a physical person who's given access to the company's systems. Most employees are
 	users but some users aren't employees: external partners can have access to parts of the system.
@@ -109,8 +108,7 @@ You can enter information about the employment contract for the employee, such a
 *  :guilabel:`Wage Type` either :guilabel:`Monthly Gross` or :guilabel:`Weekly Net`
 
 .. index::
-   single: Employee; Sign in and out
-..
+   single: employee; sign in / sign out
 
 Sign in and out
 ---------------

@@ -24,15 +24,14 @@ Description
 
 ::
 
-  This module implement a timesheet system. Each employee can encode and
-  track their time spent on the different projects. A project is an
-  analytic account and the time spent on a project generate costs on
+  This module implement a timesheet system. Each employee can encode and track their time spent on the 
+  different projects. A project is an analytic account and the time spent on a project generate costs on 
   the analytic account.
   
   Lots of reporting on time and employee tracking are provided.
   
-  It is completely integrated with the cost accounting module. It allows you
-  to set up a management by affair.
+  It is completely integrated with the cost accounting module. 
+  It allows you to set up a management by affair.
 
 Dependencies
 ------------

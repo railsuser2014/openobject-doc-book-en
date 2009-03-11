@@ -4,7 +4,6 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-#PAPER         = a4
 PAPER         =
 
 # Internal variables.
@@ -12,7 +11,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html web pickle htmlhelp latex changes linkcheck html_image_original html_image_raw_html
+.PHONY: help clean html web pickle htmlhelp latex changes linkcheck
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -30,8 +29,6 @@ clean:
 html:
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
-	./copy_images.sh
-	cp ./index.php build/html
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 
@@ -63,6 +60,9 @@ latex:
 	@echo "Build finished; the LaTeX files are in build/latex."
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
 	      "run these through (pdf)latex."
+	../edit_tex_file.py build/latex
+	cp ../common/book.cls build/latex
+	cp ../common/sphinx.sty build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees

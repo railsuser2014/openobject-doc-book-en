@@ -20,12 +20,12 @@ This section deals with statutory taxes and accounts which are legally required 
 	Open ERP supplies declarations based on the functionality in other modules.
 	
 	.. index::
-	   pair: module; report_instrastat
+	   single: module; report_instrastat
 
 	You can, for example, install the :mod:`report_intrastat` module for intra-stat declarations
 	about sending goods to and receiving goods from other countries.
 
-.. index:: Tax
+.. index:: tax
 
 Taxation
 --------
@@ -212,7 +212,7 @@ tax-like charges.
 	than a tax-exclusive price plus tax.
 	
 	.. index::
-	   pair: module; account_tax_include
+	   single: module; account_tax_include
 	
 	To do this in Open ERP just install the :mod:`account_tax_include` module.
 	Each invoice is given a new :guilabel:`Price method` field, in which you choose 
@@ -249,7 +249,7 @@ You can also assign multiple taxes to a Project, so that invoices from the Proje
 appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-projects`).
 
 .. index::
-   pair: module; import_export
+   single: module; import_export
 
 .. note:: Tax regions
 
@@ -267,7 +267,7 @@ you attract a tax amount. In such a case, this 'tax' may not be legally-required
 something tax-like, for example authors' royalties or sales commission.
 
 .. index::
-   single: Balance sheet
+   single: balance sheet
 
 The accounts ledgers and the balance sheet
 ------------------------------------------
@@ -284,7 +284,7 @@ If you select an account which has sub-accounts in the
 hierarchy you automatically analyze both that account and its child accounts.
 
 .. index::
-   pair: module; account_simulation
+   single: module; account_simulation
 
 .. tip::  Simulated balance
 
@@ -304,12 +304,12 @@ hierarchy you automatically analyze both that account and its child accounts.
 	expect.
 
 .. index::
-   pair: module; account_reporting
+   single: module; account_reporting
 
 The :mod:`account_reporting` module was developed to provide configurable reports for balance sheets
 or earnings statements in legally required formats.
 
-.. index:: Journal
+.. index:: journal
 
 The accounting journals
 -----------------------
@@ -318,8 +318,8 @@ To obtain the different journals use the menu :menuselection:`Financial Manageme
 Journals`.
 
 .. index::
-   pair: module; sale_journal
-   pair: module; purchase_journal
+   single: module; sale_journal
+   single: module; purchase_journal
 
 .. note::  Journals
 
@@ -367,14 +367,15 @@ Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Fin
 --> Periodical Processing --> Taxes`. The structure of the chart is for calculating the tax
 declaration but also all the other taxes can be calculated (such as the French DEEE).
 
+.. index::
+   single: TVA
+   single: VAT
+
 .. figure::  images/account_tax_chart.png
    :scale: 50
    :align: center
 
    *Example of a Belgian TVA (VAT) declaration*
-
-.. index::
-   single: TVA
 
 The tax chart represents the amount of each area of the tax declaration for your country. It's
 presented in a hierarchical structure which lets you see the detail only of what interests you and

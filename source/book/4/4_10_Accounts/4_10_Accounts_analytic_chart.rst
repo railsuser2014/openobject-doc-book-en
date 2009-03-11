@@ -1,5 +1,5 @@
 .. index::
-   single: Chart of Accounts; Analytic
+   pair: chart of accounts; analytic
 
 To each enterprise [his] own analytic chart
 ===========================================
@@ -38,6 +38,9 @@ product ranges that the company makes and sells.
 			* Sub-groups
 
 			* Product Range 2
+
+.. index::
+   pair: cost; allocation
 
 In daily use it's useful to mark the analytic account on each purchase invoice. The analytic account
 is the one to which the costs of that purchase should be allocated. When the invoice is approved it
@@ -131,6 +134,9 @@ Like most system processes, hours worked are integrated into the analytic accoun
 employee enters a timesheet for a number of hours, that automatically generates analytic accounts
 corresponding to the cost of those hours in the case concerned. The hourly charge is a function of
 the employee's salary.
+
+.. index:: 
+   single: absences
 
 So a law firm will opt for an analytic representation which reflects the management of the time that
 employees work on the different client cases.
@@ -272,6 +278,9 @@ In Open ERP each analytic line lists the number of units sold or used, as well 
 usually find there – the amount in currency units (USD or GBP, or whatever other choice you make).
 So you can sum the quantities sold and used on each analytic account to determine whether any hours
 of the support contract remain.
+
+.. index::
+   pair: cost; allocation
 
 To differentiate services from other costs in the analytic account you use the concept of the
 analytic journal. Analytic entries are then allocated into the different journals:

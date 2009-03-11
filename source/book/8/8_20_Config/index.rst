@@ -25,10 +25,10 @@ that each system user plays in the workflows that move system documents from sta
 the ability to approve employee expense requests).
 
 .. index::
-   single: Configuration
-   single: Configuration; Parameterization
-   single: Configuration; Personalization
-   single: Configuration; Customization
+   single: configuration
+   single: configuration; parameterization
+   single: configuration; personalization
+   single: configuration; customization
 ..
 
 .. note:: Configuration, Parameterization, Personalization, Customization

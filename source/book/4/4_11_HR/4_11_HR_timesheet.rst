@@ -1,6 +1,6 @@
 
 .. index::
-   single: Timesheets
+   single: timesheet
 ..
 
 Timesheets
@@ -26,6 +26,9 @@ assigned for the day.
    *Timesheet for a working day*
 
 The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee.
+
+.. index::
+   pair: cost; allocation
 
 .. note:: Don't confuse timesheets and attendence compliance
 
@@ -66,7 +69,7 @@ one of the groups there such as :guilabel:`38 Hours/Week`.
    *Timesheet category for full time 38 hours per week*
 
 .. index::
-   single: Employee; Configuration
+   single: employee; configuring
 ..
 
 Employee configuration
@@ -101,7 +104,7 @@ The following information is important in the product form:
 *  :guilabel:`Standard Price`
 
 .. index::
-   pair: module; product_index
+   single: module; product_index
 
 .. tip:: Price Indexation
 
@@ -122,7 +125,7 @@ In summary, each company employee corresponds, in most cases, to:
 And each company job position corresponds to a :guilabel:`Product`.
 
 .. index::
-   pair: module; hr_contract
+   single: module; hr_contract
 
 .. note:: Time charge rates
 
@@ -138,14 +141,14 @@ And each company job position corresponds to a :guilabel:`Product`.
 	overheads associated with pay.
 
 .. index::
-   single: Timesheets; Entering data
+   single: timesheet; entering data
 ..
 
 Entering timesheet data
 ------------------------
 
 .. index::
-   pair: module; hr_timesheet
+   single: module; hr_timesheet
 
 To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
@@ -246,12 +249,12 @@ screen. If you want to see more detail, switch to the list view.
 	they sign into the system.
 	
 	.. index::
-	   pair: module; board_project	
+	   single: module; board_project	
 
 	To use this dashboard, install the module :mod:`board_project`.
 
 .. index::
-   single: Timesheets; Evaluation
+   single: timesheets; evaluation
 ..
 
 Evaluation of service costs
@@ -281,6 +284,9 @@ This isn't a classical approach but it's logical and pragmatic. Employee timeshe
 indication of how the costs of a service enterprise are spread across different cases as reported in
 the analytic accounts.
 
+.. index::
+   single: benefits
+   
 An analytic account should be reflected in the general accounts, but there's no direct counterpart
 of these analytic accounts in the general accounts. Instead, if the hourly costs of the employees
 are correctly accounted for, the month's timesheet entries should be balanced by the salary +
@@ -323,7 +329,7 @@ The analyses of profitability by project and by employee are available from the 
 They take all of the invoices into account, and also take into account the cost of the time spent on
 each project.
 
-.. index:: Department
+.. index:: department
 
 Managing by department
 ----------------------
@@ -340,7 +346,7 @@ the month based on the timesheet. But at the same time some contracts are limite
 These hours and their deduction from the original limit are also managed by these timesheets.
 
 .. index::
-   pair: module; hr_timesheet_sheet
+   single: module; hr_timesheet_sheet
 
 In such a situation, hours that aren't coded into the timesheets represent lost money for the
 company. So it's important to establish effective follow-up of the services timesheets and their

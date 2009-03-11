@@ -5,7 +5,7 @@ Logistics Configuration
 In this section you'll see how to configure stock management to match your company's needs. Open ERP
 can handle many different situations by configuring it to behave as required.
 
-.. index:: Location
+.. index:: location
 
 Stock locations
 ---------------
@@ -132,6 +132,9 @@ warehouse.
 Accounting valuation in real time
 ---------------------------------
 
+.. index::
+   single: accountant
+
 If you have experience of managing with traditional software you'll know the problem of getting
 useful indicators. If you ask your accountant for a stock valuation or the value added by production
 he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
@@ -161,7 +164,9 @@ You use this system for managing consigned stocks:
 
 * a location in your own company that isn't valued in your accounts.
 
-.. index:: Chained Location
+.. index:: 
+   single: chained location
+   single: location; chained
 
 Linked locations
 ----------------
@@ -184,7 +189,7 @@ the source locations. This order will wait for a confirmation of the move by a u
 you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
 .. index::
-   pair: module; stock_location
+   single: module; stock_location
 
 .. tip:: Product Logistics
 

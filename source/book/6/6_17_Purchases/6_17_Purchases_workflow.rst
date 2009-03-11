@@ -23,7 +23,7 @@ select the :guilabel:`Minimal Profile` when you log in as the *admin* user. You 
 company details when asked, or just select the default of :guilabel:`Tiny SPRL` if you want.
 
 .. index::
-   pair: module; purchase
+   single: module; purchase
 
 Then install the :mod:`purchase` module, which installs several other modules as dependencies. Continue
 the remainder of this chapter logged in as the admin user.
@@ -46,7 +46,7 @@ generated the request in the :guilabel:`Origin` field.
    *Data entry for a supplier order*
 
 .. index::
-   pair: module; warning
+   single: module; warning
 
 .. note:: Managing Alerts
 
@@ -99,7 +99,7 @@ report all the purchase costs. The costs will then be reported at the receipt of
 invoice.
 
 .. index::
-   pair: module; purchase_analytic_analysis
+   single: module; purchase_analytic_analysis
 
 .. tip:: Management by case
 
@@ -108,8 +108,8 @@ invoice.
    To work with several analytic axes you should install the module :mod:`purchase_analytic_plans`.
 
 .. index::
-   pair: module; account_analytic_default
-   pair: module; purchase_analytic_plans
+   single: module; account_analytic_default
+   single: module; purchase_analytic_plans
 
 For that the analytic account is automatically selected as a function of the partner, the date, the
 products or the user, you can install the module :mod:`account_analytic_default` (which is installed
@@ -153,7 +153,7 @@ Supplier`.
    *Supplier order process*
 
 .. index::
-   pair: module; purchase_approve
+   single: module; purchase_approve
 
 .. note:: Supplier Approval
 
@@ -259,6 +259,9 @@ create the draft invoices based on all the receipts for the day. To do that he u
 He clicks on the action to generate all draft invoices from
 the list of receipts that haven't yet been invoiced.
 
+.. index::
+   single: accountant
+
 At that point, the accountant can decide if he wants to generate an invoice per item or group all items
 for the same partner into the same invoice.
 
@@ -267,7 +270,7 @@ the accounting service he just compares it with the invoices waiting to control 
 invoices you.
 
 .. index::
-   pair: module; purchase_delivery
+   single: module; purchase_delivery
 
 .. tip:: Delivery Charges
 
@@ -275,13 +278,15 @@ invoices you.
    This will automatically add delivery changes to the creation of the draft invoice as a function
    of the products delivered or ordered.
 
-.. index:: Tender
+.. index:: 
+   single: tender
+   single: purchase; tender
 
 Tenders
 -------
 
 .. index::
-   pair: module; purchase_tender
+   single: module; purchase_tender
 
 To manage tenders, you should use the module :mod:`purchase_tender` (which was in ``addons-extra`` at the time of writing). 
 This lets you create several
@@ -359,7 +364,7 @@ Those costs that can be fixed for the whole year bring certain advantages:
   number of items received.
 
 .. index::
-   pair: module; product_extended
+   single: module; product_extended
 
 To get and automated periodic revaluation of the standard price you can use the module :mod:`product_extended`
 (from ``addons-extra`` at the time of writing).

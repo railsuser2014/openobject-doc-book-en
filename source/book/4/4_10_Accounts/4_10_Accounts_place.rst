@@ -1,6 +1,6 @@
 
 .. index::
-   single: Analytic accounts
+   single: analytic; accounts
 
 Putting analytic accounts in place
 ==================================
@@ -56,7 +56,7 @@ which you'd need so that you can invoice the partner:
   should be invoiced automatically from the services represented by the costs in the analytic account.
 
 .. index::
-   single: Invoicing
+   single: invoicing
 
 .. tip:: Invoicing
 
@@ -78,8 +78,8 @@ Once you've defined the different analytic accounts you can view your chart thro
 :menuselection:`Financial Management --> Charts --> Analytic Chart of Accounts`.
 
 .. index::
-   pair: module; hr_timesheet_invoice
-   pair: module; account_analytic_analysis
+   single: module; hr_timesheet_invoice
+   single: module; account_analytic_analysis
 
 .. tip:: Setting up an analytic account
 
@@ -112,7 +112,7 @@ These enable you to categorize the different accounting entries by their type:
 * situation entries (special situations, such as installation of the software).
 
 .. index::
-   single: Journal; Minimal journals
+   single: journal; minimal journals
 
 .. note::  Minimal journals
 

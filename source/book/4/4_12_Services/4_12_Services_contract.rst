@@ -1,6 +1,5 @@
 .. index::
-   single: Contracts
-..
+   pair: service; contract
 
 Managing Service Contracts
 ==========================
@@ -60,7 +59,7 @@ Policy` on the order's second tab :guilabel:`Other data` :
 
 *  :guilabel:`Invoice from the Packing` : invoices are created from the packing stage.
 
-.. index:: Delivery
+.. index:: delivery
 
 .. note:: Delivery of an order
 
@@ -104,7 +103,7 @@ Some contracts aren't invoiced from a price fixed on the order but from the cost
 carried out. That's usually what happens in the building sector or in large projects.
 
 .. index::
-   pair: module; hr_timesheet_invoice
+   single: module; hr_timesheet_invoice
 
 The approach you use for this is totally different because instead of using the sales order as the
 basis of the invoice you use the analytic accounts. For this you have to install the module 
@@ -124,7 +123,7 @@ invoiced on the basis of analytic costs. This can take different forms, such as 
 services, purchase of raw materials, and expense reimbursements.
 
 .. index::
-   single: Pricelists
+   single: pricelist
 ..
 
 .. note:: Pricelists and billing rates
@@ -154,7 +153,7 @@ the level of detail which is reported on the invoice, such as the date and detai
    *Screen for invoicing services*
 
 .. index::
-   pair: module; account_analytic_analysis
+   single: module; account_analytic_analysis
 
 .. note:: Project Management and analytic accounts
 
@@ -253,7 +252,7 @@ Contracts limited to a quantity
 -------------------------------
 
 .. index::
-   pair: module; account_analytic_analysis
+   single: module; account_analytic_analysis
 
 Finally certain contracts are expressed in terms of a quantity rather than a fixed amount. Support
 contracts comprising a number of prepaid hours are a case in point. To generate such contracts in

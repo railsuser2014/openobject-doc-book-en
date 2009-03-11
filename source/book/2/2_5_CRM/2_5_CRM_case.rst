@@ -6,7 +6,7 @@ The following sections describe the steps you might use to implement an effectiv
 relationship management policy. The policy is implemented by basing new types of case on the built-
 in Open ERP case handling system.
 
-.. index:: Case
+.. index:: case (CRM)
 
 .. note:: Case
 
@@ -35,7 +35,7 @@ develop three case types here, to see how to build the following systems:
 	#. A system for managing supplier quality.
 
 .. index::
-   single: Case; Sections
+   single: case; sections
 ..
 
 Sections
@@ -81,7 +81,7 @@ section.
 	that have been assigned to that section.
 
 .. index::
-   single: Case; Categories
+   single: case; categories
 ..
 
 Categories
@@ -104,7 +104,7 @@ differentiate the cases in a section. You create categories using the menu :menu
    "Preventative Actions","Quality"
 
 .. index::
-   single: Case; Menu
+   single: case; menu
 ..
 
 Menu
@@ -172,7 +172,7 @@ continue using the generic case system reached through :menuselection:`CRM & SRM
 case types are just versions of the generic case.
 
 .. index::
-   single: Case; transferability
+   single: case; transferability
 ..
 
 .. tip:: Transferability of cases
@@ -222,7 +222,8 @@ Opportunities` by entering information about the request, namely:
 
 
 .. index::
-   single: Email gateway
+   single: email gateway
+   single: gateway; email
 
 .. tip::  The email gateway
 
@@ -267,7 +268,7 @@ Users can create their own shortcuts from menus such as :menuselection:`My Suppo
 :menuselection:`My Business Opportunities` to quickly list cases that they're personally responsible
 for.
 
-.. index:: Calendars
+.. index:: calendars
 
 Generating calendars
 --------------------
@@ -312,7 +313,7 @@ calendar or, for example, to display the calendar for only some employees at a t
 
 	This view is very useful for planning or to get a global overview of a list of dated elements.
 
-.. index:: Performance
+.. index:: performance analysis
 
 Analyzing performance
 ---------------------
@@ -321,7 +322,7 @@ Since all of your customer communications are integrated into the Open ERP syst
 the performance of your teams in many ways.
 
 .. index::
-   pair: module; report_crm
+   single: module; report_crm
 
 Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
 Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
@@ -375,8 +376,7 @@ You can specify that the graph view, say, appears by default so that you can con
 the information more visually.
 
 .. index::
-   single: Case; Rule
-..
+   single: case; rule
 
 Automating actions using rules
 ------------------------------
@@ -413,7 +413,7 @@ To define new rules use the menu :menuselection:`CRM & SRM --> Configuration -->
    *Screenshot of a rule*
 
 .. index::
-   single: Rule; Case
+   single: rule; case
 
 The criteria for activating this rule are defined on the main part of the screen. These criteria
 are:
@@ -559,10 +559,10 @@ the setup window. The following actions are included:
 			* select and qualify your suppliers on the basis of their quality of service
 
 
-.. index:: Portal
+.. index:: portal
 
 .. index::
-   pair: module; portal_service
+   single: module; portal_service
 
 .. tip::  The CRM portal
 
@@ -571,7 +571,7 @@ the setup window. The following actions are included:
 	their orders or requests online. For example the customer could make a support request directly in
 	your system, perhaps avoiding a lengthy process of data entry.
 
-.. index:: Gateway
+.. index:: gateway
 
 Using the email gateway
 -----------------------
@@ -631,7 +631,7 @@ example, the :guilabel:`Helpdesk and Support`  section.
 Install Fetchmail on your Open ERP server. You can download it from the address
 http://fetchmail.berlios.de/.
 
-.. index:: Fetchmail
+.. index:: fetchmail
 
 .. note:: Fetchmail
 
@@ -661,7 +661,7 @@ Then start the fetchmail program, giving it a link to the configuration file tha
 	output verbose so you can easily see what's happening as the program executes.
 
 .. index::
-   single: Case; Create and Maintain
+   single: case; create and maintain
 ..
 
 Creating and maintaining cases

@@ -5,7 +5,9 @@ Control of deliveries and invoicing
 Configuration of orders
 -----------------------
 
-.. index:: Control
+.. index:: 
+   pair: control; delivery
+   pair: control; invoicing
 
 Depending on the configuration of the order, several different possible consequences can follow.
 Three fields determine the future behaviour of an order:
@@ -47,9 +49,6 @@ In the case of invoicing on the basis of packing, the cost of delivering the pro
 calculated on the basis of multiple deliveries. This risks incurring a higher cost because of
 each delivery. If invoicing is on the basis of the orders, the customer will only be invoiced
 once for the whole delivery, even if the delivery of several items has already been made.
-
-.. index:: Delivery Grid
-.. index:: Carriers
 
 .. Copyright © Open Object Press. All rights reserved.
 

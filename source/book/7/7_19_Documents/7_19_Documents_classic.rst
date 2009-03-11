@@ -52,6 +52,9 @@ from that in the company's management system if the two are separate. For exampl
 where to store your least-frequently used documents such as (perhaps) employee car-leasing
 documents?
 
+.. index::
+   single: access; user
+
 Also, document management systems are typically very complex because they must manage user access
 rights in just the same way as those that are available in the company management system. This means
 that you have to enter the same sort of data about access rights twice for the system

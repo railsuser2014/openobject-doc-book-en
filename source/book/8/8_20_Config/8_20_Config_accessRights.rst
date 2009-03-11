@@ -1,6 +1,6 @@
 .. index::
-   single: Access rights
-..
+   single: access rights
+   single: access; user
 
 Managing access rights
 ======================
@@ -28,8 +28,8 @@ Open ERP users can also belong to various roles. Just as group gives a user acc
 role determines the user's duties. This is managed at the level of workflows, which form the
 company's business processes.
 
-.. index:: Groups
-.. index:: Users
+.. index:: 
+   pair: user; group
 
 Groups and Users
 ================
@@ -50,6 +50,8 @@ member of both groups, and give the Sales Director group a limited set of extra 
 group. You should choose the scheme that gives you most flexibility and then stick with it to
 maintain consistency.
 
+.. index::
+   pair:  system; administrator
 
 .. tip:: Flexibility in managing access
 
@@ -59,14 +61,13 @@ maintain consistency.
 	and is authorized by the management to carry out specific tasks for people.
 
 .. index::
-   single: Access rights; Menus
-..
+   single: access rights; menus
 
 Access rights for menus
 -----------------------
 
 To get a feel for rights management in Open ERP you'll create a new \ ``Stock1``\  group, with
-access to the *Inventory Control* menu items. You'll then create a stores person user who's a member
+access to the *Stock Management* menu items. You'll then create a stores person user who's a member
 of the \ ``Stock1``\  group.
 
 To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the
@@ -131,8 +132,7 @@ this menu item in their main menu list.
 	users who are members of the admin group.
 
 .. index::
-   single: Access rights; Objects
-..
+   single: access rights; objects
 
 Access Rights to Objects
 ------------------------
