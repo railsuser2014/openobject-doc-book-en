@@ -61,6 +61,8 @@ latex:
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
 	      "run these through (pdf)latex."
 	../edit_tex_file.py build/latex
+	cp ../common/book.cls build/latex
+	cp ../common/sphinx.sty build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees

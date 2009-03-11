@@ -15,7 +15,7 @@ begin_doc_regex = re.compile(r"""^\\begin\{document\}""")
 maketitle_regex = re.compile(r"""^\\maketitle""")
 tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
 end_foreword_regex = re.compile(r"""SPHINXENDFOREWORDDIRECTIVE""")
-
+printindex_regex = re.compile(r"""^\\printindex""")
 
 
 class LatexBook(object):
@@ -59,6 +59,7 @@ class LatexBook(object):
                     match_maketitle = maketitle_regex.search(old_line)
                     match_tableofcontents = tableofcontents_regex.search(old_line)
                     match_end_foreword = end_foreword_regex.search(old_line)
+                    match_printindex = printindex_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
@@ -83,9 +84,18 @@ class LatexBook(object):
                                              ])
                     elif match_end_foreword:
                         new_line = '\n'.join(["",
-                                              "\mainmatter",
-                                              "\pagenumbering{arabic}",
-                                              "\setcounter{page}{1}",
+                                              "\\mainmatter",
+                                              "\\pagenumbering{arabic}",
+                                              "\\setcounter{page}{1}",
+                                              "",
+                                             ])
+                    elif match_printindex:
+                        new_line = '\n'.join(["",
+                                              "\\chapter*{\indexname}",
+                                              "",
+                                              "\\begin{multicols}{2}",
+                                              "\\printindex",
+                                              "\\end{multicols}",
                                               "",
                                              ])
                     else:
