@@ -218,6 +218,9 @@ latex_use_parts = True
 tiny_latex_include = r"""
 \usepackage{flowfram}
 
+\usepackage[vcentering,dvips]{geometry}
+\geometry{papersize={189mm,246mm}} % width, height
+
 \DeclareUnicodeCharacter{00A0}{~}
 
 \definecolor{MyGray}{rgb}{0.80,0.80,0.80}
