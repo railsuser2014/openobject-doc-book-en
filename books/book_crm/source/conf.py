@@ -83,6 +83,10 @@ latex_use_parts = True
 
 tiny_latex_include = r"""
 \usepackage{flowfram}
+\usepackage{multicol}
+
+\usepackage[]{geometry}
+\geometry{papersize={189mm,246mm}} % width, height
 
 \DeclareUnicodeCharacter{00A0}{~}
 
