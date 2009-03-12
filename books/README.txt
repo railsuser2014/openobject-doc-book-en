@@ -27,18 +27,29 @@ Here are some rules to follow:
   different (addition or removal)
 * The content of the book has to be clear on the back cover.
 
+Book SIze: 246x189mm
+Cover: Color
+Inside: Grey
+
 Proposed Books
 ==============
 
 In order of publication:
 
 1. Logistics, Stock & MRP: 1, 2, 3, 4, 17, 18, 15, 16, 19, 22, 23, C
-2. CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
-3. Financial & Organisational Project Management: 19, 20, 21...
+2. Financial & Organisational Project Management: 19, 20, 21...
+3. CRM & Sales Mgt: 1, 2b, 3, 5, 6, 7, 17, 20, C
 4. Analytic & Financial Accounting: 1, 2, 2b, 8, 9, 10, 11, 12, 13, C
 5. Office Productivity: ...
 
 Currently, we'll focus on the first book only: Logistics
+
+Who is working on what ?
+========================
+
+Geoff: content
+Olivier: layout Latex
+Philippe: Cover + Announces
 
 List of chapters
 ================
