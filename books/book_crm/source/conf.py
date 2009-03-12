@@ -90,7 +90,7 @@ tiny_latex_include = r"""
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\definecolor{NoticeBoxBg}{rgb}{0.80,0.80,0.80}
+\definecolor{NoticeBoxBg}{rgb}{0.90,0.90,0.90}
 
 \newlength{\boxwidth}
 
@@ -102,16 +102,25 @@ tiny_latex_include = r"""
   \setlength{\hsize}{\boxwidth} \FrameRestore}}%
 {\endMakeFramed}
 
-
 \makeatletter
 \renewenvironment{notice}[2]{
+  \begin{samepage}
   \begin{NoticeBox}
-  \bf\it
+  \def\py@noticetypetip{tip}
+  \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
+
+  \ifx\py@noticetype\py@noticetypetip
+    \scalebox{0.500000}{\includegraphics{tip.png}}
+  \else
+    \scalebox{0.8}{\includegraphics{note.png}}
+  \fi
+  \nopagebreak[4]
   \par\strong{#2}
 }
 {
   \end{NoticeBox}
+  \end{samepage}
 }
 \makeatother
 

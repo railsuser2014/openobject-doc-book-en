@@ -68,10 +68,10 @@ class LatexBook(object):
                         new_line = """\\documentclass[%s]{book}\n""" % (match_dclass.group('options'), )
                     elif match_begin_document:
                         new_line = '\n'.join([old_line,
-                                              r"\ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}"
-                                              r"\ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}"
-                                              r"\ChTitleVar{\Huge\bfseries\rm}"
-                                              r"\ChRuleWidth{1pt}"
+                                              r"\ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}",
+                                              r"\ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}",
+                                              r"\ChTitleVar{\Huge\bfseries\rm}",
+                                              r"\ChRuleWidth{1pt}",
                                               '',
                                               r"\frontmatter",
                                               r"\pagenumbering{roman}",

@@ -63,6 +63,8 @@ latex:
 	../edit_tex_file.py build/latex
 	cp ../common/book.cls build/latex
 	cp ../common/sphinx.sty build/latex
+	cp ../../source/.static/tip.png build/latex
+	cp ../../source/.static/note.png build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees
