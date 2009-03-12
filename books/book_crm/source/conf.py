@@ -116,7 +116,8 @@ tiny_latex_include = r"""
     \scalebox{0.8}{\includegraphics{note.png}}
   \fi
   \nopagebreak[4]
-  \par\strong{#2}
+  \strong{#2}
+  \nopagebreak[4]
 }
 {
   \end{NoticeBox}
