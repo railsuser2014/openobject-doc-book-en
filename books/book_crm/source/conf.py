@@ -61,7 +61,7 @@ htmlhelp_basename = 'logistic_stock_mrp_book'
 #latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
-latex_font_size = '9pt'
+latex_font_size = '10pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
@@ -86,28 +86,32 @@ tiny_latex_include = r"""
 \usepackage{multicol}
 
 \usepackage[]{geometry}
-\geometry{papersize={189mm,246mm}} % width, height
+\geometry{papersize={189mm,246mm},top=15mm,bottom=20mm,left=15mm,right=15mm}
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\definecolor{MyGray}{rgb}{0.80,0.80,0.80}
+\definecolor{NoticeBoxBg}{rgb}{0.80,0.80,0.80}
 
-\makeatletter\newenvironment{graybox}{%
-   \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}}{\end{minipage}\end{lrbox}%
-   \colorbox{MyGray}{\usebox{\@tempboxa}}
-}\makeatother
+\newlength{\boxwidth}
+
+\newenvironment{NoticeBox}{%
+  \def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{NoticeBoxBg}}%
+  \MakeFramed {\setlength{\boxwidth}{\textwidth}
+  \addtolength{\boxwidth}{-2\FrameSep}
+  \addtolength{\boxwidth}{-2\FrameRule}
+  \setlength{\hsize}{\boxwidth} \FrameRestore}}%
+{\endMakeFramed}
+
 
 \makeatletter
 \renewenvironment{notice}[2]{
-  \begin{graybox}
+  \begin{NoticeBox}
   \bf\it
   \def\py@noticetype{#1}
   \par\strong{#2}
-  \csname py@noticestart@#1\endcsname
 }
 {
-  \csname py@noticeend@\py@noticetype\endcsname
-  \end{graybox}
+  \end{NoticeBox}
 }
 \makeatother
 
@@ -116,7 +120,6 @@ tiny_latex_include = r"""
 }{
   \end{staticfigure}
 }
-
 """
 
 latex_elements = {
@@ -130,7 +133,7 @@ from docutils import nodes
 def end_foreword_directive(name, arguments, options, content, lineno,
                        content_offset, block_text, state, state_machine):
 
-    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')]
+    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')] # XXX cannot add a raw node for the moment
     # return [nodes.raw('latex', '\\mainmatter')]
 
 

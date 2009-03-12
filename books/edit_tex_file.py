@@ -16,6 +16,7 @@ maketitle_regex = re.compile(r"""^\\maketitle""")
 tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
 end_foreword_regex = re.compile(r"""SPHINXENDFOREWORDDIRECTIVE""")
 printindex_regex = re.compile(r"""^\\printindex""")
+fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
 
 
 class LatexBook(object):
@@ -60,42 +61,50 @@ class LatexBook(object):
                     match_tableofcontents = tableofcontents_regex.search(old_line)
                     match_end_foreword = end_foreword_regex.search(old_line)
                     match_printindex = printindex_regex.search(old_line)
+                    match_fancychapter = fancychapter_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
                         new_line = """\\documentclass[%s]{book}\n""" % (match_dclass.group('options'), )
                     elif match_begin_document:
                         new_line = '\n'.join([old_line,
-                                              "\\frontmatter",
-                                              "\\pagenumbering{roman}",
+                                              r"\ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}"
+                                              r"\ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}"
+                                              r"\ChTitleVar{\Huge\bfseries\rm}"
+                                              r"\ChRuleWidth{1pt}"
+                                              '',
+                                              r"\frontmatter",
+                                              r"\pagenumbering{roman}",
                                               '',
                                              ])
+                    elif match_fancychapter:
+                        new_line = '\n'.join([r"\usepackage[Lenny]{fncychap}"])
                     elif match_maketitle:
                         new_line = '\n'.join([old_line,
-                                              "\\thispagestyle{empty}",
-                                              "\\newpage",
-                                              "\\pagestyle{plain}",
+                                              r"\thispagestyle{empty}",
+                                              r"\newpage",
+                                              r"\pagestyle{plain}",
                                               '',
                                              ])
                     elif match_tableofcontents:
                         new_line = '\n'.join([old_line,
-                                              "\\newpage",
+                                              r"\newpage",
                                               '',
                                              ])
                     elif match_end_foreword:
                         new_line = '\n'.join(["",
-                                              "\\mainmatter",
-                                              "\\pagenumbering{arabic}",
-                                              "\\setcounter{page}{1}",
+                                              r"\mainmatter",
+                                              r"\pagenumbering{arabic}",
+                                              r"\setcounter{page}{1}",
                                               "",
                                              ])
                     elif match_printindex:
                         new_line = '\n'.join(["",
-                                              "\\chapter*{\indexname}",
+                                              r"\chapter*{\indexname}",
                                               "",
-                                              "\\begin{multicols}{2}",
-                                              "\\printindex",
-                                              "\\end{multicols}",
+                                              r"\begin{multicols}{2}",
+                                              r"\printindex",
+                                              r"\end{multicols}",
                                               "",
                                              ])
                     else:
