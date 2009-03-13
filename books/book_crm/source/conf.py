@@ -86,7 +86,7 @@ tiny_latex_include = r"""
 \usepackage{multicol}
 
 \usepackage[]{geometry}
-\geometry{papersize={189mm,246mm},top=15mm,bottom=20mm,left=15mm,right=15mm}
+\geometry{papersize={189mm,246mm},top=15mm,bottom=28mm,left=15mm,right=15mm,bindingoffset=5mm}
 
 \DeclareUnicodeCharacter{00A0}{~}
 
