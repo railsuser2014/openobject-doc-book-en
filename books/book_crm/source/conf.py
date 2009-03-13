@@ -146,9 +146,15 @@ def end_foreword_directive(name, arguments, options, content, lineno,
     return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')] # XXX cannot add a raw node for the moment
     # return [nodes.raw('latex', '\\mainmatter')]
 
+# def create_new_reference(app, env, node, contnode):
+#     """Convert a bad reference into a simple text."""
+#     txt = node.astext()
+#     return [nodes.emphasis(txt, txt)]
+
 
 def setup(app):
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
+    #app.connect('missing-reference', create_new_reference)
 
 
 

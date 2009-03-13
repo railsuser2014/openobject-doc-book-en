@@ -1,2 +1,3 @@
 ./build/*
 ./books/book_crm/build/*
+./books/book_crm/warn.log
