@@ -65,7 +65,7 @@ To download the version of Open ERP for Windows, follow these steps:
 	   the PostgreSQL database system, so will take some time.
 
 .. index::
-   pair:  administrator
+   single:  installation; administrator
 
 To install Open ERP and its database you must be signed in as an Administrator on your PC. Double-
 click the installer file to install it and accept the default parameters on each dialog box as you go. 

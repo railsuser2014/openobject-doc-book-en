@@ -61,7 +61,7 @@ htmlhelp_basename = 'logistic_stock_mrp_book'
 #latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
-latex_font_size = '9pt'
+latex_font_size = '10pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
@@ -86,28 +86,42 @@ tiny_latex_include = r"""
 \usepackage{multicol}
 
 \usepackage[]{geometry}
-\geometry{papersize={189mm,246mm}} % width, height
+\geometry{papersize={189mm,246mm},top=15mm,bottom=20mm,left=15mm,right=15mm}
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\definecolor{MyGray}{rgb}{0.80,0.80,0.80}
+\definecolor{NoticeBoxBg}{rgb}{0.90,0.90,0.90}
 
-\makeatletter\newenvironment{graybox}{%
-   \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}}{\end{minipage}\end{lrbox}%
-   \colorbox{MyGray}{\usebox{\@tempboxa}}
-}\makeatother
+\newlength{\boxwidth}
+
+\newenvironment{NoticeBox}{%
+  \def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{NoticeBoxBg}}%
+  \MakeFramed {\setlength{\boxwidth}{\textwidth}
+  \addtolength{\boxwidth}{-2\FrameSep}
+  \addtolength{\boxwidth}{-2\FrameRule}
+  \setlength{\hsize}{\boxwidth} \FrameRestore}}%
+{\endMakeFramed}
 
 \makeatletter
 \renewenvironment{notice}[2]{
-  \begin{graybox}
-  \bf\it
+  \begin{samepage}
+  \begin{NoticeBox}
+  \def\py@noticetypetip{tip}
+  \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
-  \par\strong{#2}
-  \csname py@noticestart@#1\endcsname
+
+  \ifx\py@noticetype\py@noticetypetip
+    \scalebox{0.500000}{\includegraphics{tip.png}}
+  \else
+    \scalebox{0.8}{\includegraphics{note.png}}
+  \fi
+  \nopagebreak[4]
+  \strong{#2}
+  \nopagebreak[4]
 }
 {
-  \csname py@noticeend@\py@noticetype\endcsname
-  \end{graybox}
+  \end{NoticeBox}
+  \end{samepage}
 }
 \makeatother
 
@@ -116,7 +130,6 @@ tiny_latex_include = r"""
 }{
   \end{staticfigure}
 }
-
 """
 
 latex_elements = {
@@ -130,12 +143,18 @@ from docutils import nodes
 def end_foreword_directive(name, arguments, options, content, lineno,
                        content_offset, block_text, state, state_machine):
 
-    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')]
+    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')] # XXX cannot add a raw node for the moment
     # return [nodes.raw('latex', '\\mainmatter')]
+
+# def create_new_reference(app, env, node, contnode):
+#     """Convert a bad reference into a simple text."""
+#     txt = node.astext()
+#     return [nodes.emphasis(txt, txt)]
 
 
 def setup(app):
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
+    #app.connect('missing-reference', create_new_reference)
 
 
 

@@ -11,6 +11,10 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
+WARNLOG = warn.log
+FAKE_REF_FILE = source/fake_ref.rst
+SEARCH_FILE = search.txt
+
 .PHONY: help clean html web pickle htmlhelp latex changes linkcheck
 
 help:
@@ -55,6 +59,10 @@ htmlhelp:
 
 latex:
 	mkdir -p build/latex build/doctrees
+	rm -rf ${FAKE_REF_FILE}
+	$(SPHINXBUILD) -q -b latex $(ALLSPHINXOPTS) build/latex 2> ${WARNLOG}
+	../create_fake_references.py ${WARNLOG} ${SEARCH_FILE} ${FAKE_REF_FILE}
+	rm -rf ${SEARCH_FILE} ${WARNLOG}
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) build/latex
 	@echo
 	@echo "Build finished; the LaTeX files are in build/latex."
@@ -63,6 +71,8 @@ latex:
 	../edit_tex_file.py build/latex
 	cp ../common/book.cls build/latex
 	cp ../common/sphinx.sty build/latex
+	cp ../../source/.static/tip.png build/latex
+	cp ../../source/.static/note.png build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees
