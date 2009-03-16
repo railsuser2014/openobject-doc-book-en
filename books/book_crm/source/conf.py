@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Logistic, Stock & MRP documentation build configuration file, created by
+# CRM & Sales Management documentation build configuration file, created by
 # sphinx-quickstart on Mon Mar  9 11:55:03 2009.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -23,7 +23,7 @@ from conf import *
 master_doc = 'index'
 
 # General information about the project.
-project = u'Logistic, Stock & MRP Book'
+project = u'CRM & Sales Management Book'
 copyright = u'2009, Fabien Pinckaers & Geoff Gardiner'
 
 version = '1.0'
@@ -48,12 +48,12 @@ html_style = 'default.css'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Logistic, Stock & MRP Book'
+html_title = 'CRM & Sales Management Book'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
-htmlhelp_basename = 'logistic_stock_mrp_book'
+htmlhelp_basename = 'crm_sales_management_book'
 
 
 # Options for LaTeX output
@@ -69,7 +69,7 @@ latex_font_size = '10pt'
 # (source start file, target name, title, author, document class [howto/manual]).
 
 latex_documents = [
-   ('index', 'openerp-logistic-stock-mrp-book.tex', ur'Logistic, Stock \& MRP Book', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
+   ('index', 'openerp-crm-sales-management-book.tex', ur'CRM \& Sales Management Book', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
