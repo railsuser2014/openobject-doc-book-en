@@ -1,3 +1,4 @@
 ./build/*
-./books/book_crm/build/*
-./books/book_crm/warn.log
+./books/book_*/build/*
+./books/book_*/warn.log
+./books/book_*/source/fake_ref.rst
