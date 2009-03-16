@@ -126,6 +126,7 @@ tiny_latex_include = r"""
 \makeatother
 
 \renewenvironment{figure}[6]{
+  \par
   \begin{staticfigure}
 }{
   \end{staticfigure}
