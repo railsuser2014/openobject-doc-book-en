@@ -133,6 +133,7 @@ tiny_latex_include = r"""
   \begin{staticfigure}
 }{
   \end{staticfigure}
+  \addvspace{10mm}
 }
 """
 
