@@ -231,6 +231,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 .. *
 
+.. 
+
         *From Geoff Gardiner*
 
 My gratitude goes to my co-author, Fabien Pinckaers, for his vision and tenacity in
