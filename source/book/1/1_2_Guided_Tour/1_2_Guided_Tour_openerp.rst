@@ -354,30 +354,30 @@ such as:
 
 * :mod:`membership` : for managing the subscriptions of members of a company,
 
-.. index::
-   single: module; product_electronic
+  .. index::
+     single: module; product_electronic
 
 * :mod:`product_electronic` : for managing electronic products,
 
-.. index::
-   single: module; product_extended
+  .. index::
+     single: module; product_extended
 
 * :mod:`product_extended` : for managing production costs,
 
-.. index::
-   single: module; product_expiry
+  .. index::
+     single: module; product_expiry
 
 * :mod:`product_expiry` : for agro-food products where items must be retired after a certain
   period,
 
-.. index::
-   single: module; product_lot_foundry
+  .. index::
+     single: module; product_lot_foundry
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
-.. index::
-   single: Human Resources
-   single: HR
+  .. index::
+     single: Human Resources
+     single: HR
 
 Human Resources
 ---------------
