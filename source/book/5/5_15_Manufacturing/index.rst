@@ -1,10 +1,10 @@
 
-.. _ch-mnf:
-
 .. index::
    single: Manufacturing
    single: production; management
    
+.. _ch-mnf:
+
 *************
 Manufacturing
 *************

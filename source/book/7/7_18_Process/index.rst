@@ -1,9 +1,9 @@
 
-.. _ch-process:
-
 .. index::
    single: Process
    single: workflow
+
+.. _ch-process:
 
 *******
 Process

@@ -20,13 +20,13 @@ sys.path.append('../../common')
 from conf import *
 
 # General information about the project.
-project = u'Logistic, Stock & MRP Book'
+project = u'Logistics, Stocks & MRP Book'
 
 
 # Options for HTML output
 # -----------------------
 
-html_title = 'Logistic, Stock & MRP Book'
+html_title = 'Logistics, Stocks & MRP Book'
 
 htmlhelp_basename = 'logistic_stock_mrp_book'
 
@@ -35,6 +35,6 @@ htmlhelp_basename = 'logistic_stock_mrp_book'
 # ------------------------
 
 latex_documents = [
-   ('index', 'openerp-logistic-stock-mrp-book.tex', ur'Logistic, Stock \& MRP Book', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
+   ('index', 'openerp-logistic-stock-mrp-book.tex', ur'Logistics, Stocks \& MRP Book', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
 ]
 

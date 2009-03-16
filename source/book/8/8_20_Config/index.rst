@@ -1,9 +1,9 @@
 
-.. _ch-config:
-
 .. index::
    single: Configuration
    single: Administration
+
+.. _ch-config:
 
 **************************************
 Configuring and Administering Open ERP

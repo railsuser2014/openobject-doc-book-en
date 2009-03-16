@@ -1,9 +1,9 @@
 
-.. _ch-stocks:
-
 .. index::
    single: Logistics
    single: Stock Management
+
+.. _ch-stocks:
 
 ******************************
 Logistics and Stock Management
