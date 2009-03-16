@@ -17,6 +17,8 @@ As you've seen the complete architecture of Open ERP includes the following ele
 * several clients that access the Open ERP server: they can either be web clients if the client-web
   server is installed, or GTK clients.
 
+.. index::
+   single: deployment
 
 .. note:: Deployment
 
@@ -43,15 +45,20 @@ To deploy Open ERP in your company, several options are available to you:
 
 The first two approaches are the most commonly used.
 
+.. index::
+   single: SaaS
+   single: Software as a Service
+   single: On-Demand
+
 The SaaS (Software as a Service) offer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 SaaS is a complete package hosted at a supplier, that includes the following services: server
 hardware, hosting of the generic solution, installation and initial configuration, redundancy of the
-architecture, backups, system maintenance and support.
+architecture, backups, system maintenance and support. It's also known as :guilabel:`On-Demand`.
 
 It's provided in the form of a monthly subscription with a fixed price per user. You can find the
-detail of available SaaS packages at .
+detail of Tiny's SaaS packages at http://ondemand.openerp.com/.
 
 SaaS packages don't permit you to develop specific modules to your needs. On the contrary, they
 offer a service at a set price based on standard software modules that contain few migration risks.

@@ -11,7 +11,7 @@ USAGE = """%prog [options] <warning log file>"""
 
 FAKE_FILENAME = 'fake_ref.rst'
 
-TEXT_TO_ADD = """(which can found in a companion volume to this book and in the online book)"""
+TEXT_TO_ADD = """(which can be found in a companion volume to this book and in the online book)"""
 
 undef_label_regex = re.compile(r"""^WARNING:.*? undefined label: (?P<text>.*?)([ ]|$)""")
 

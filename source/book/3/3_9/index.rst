@@ -1,6 +1,9 @@
 
 .. _ch-configacct:
 
+.. index::
+   single: Configuring Accounts
+
 ********************************
 Configuring Accounts from A to Z
 ********************************

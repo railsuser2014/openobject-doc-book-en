@@ -1,20 +1,32 @@
 
-.. _part-trade:
+.. _part2-crm:
 
-####################
-Sales and Purchasing
-####################
+###############################
+Managing Customer Relationships
+###############################
 
- These two chapters are about selling and purchasing products and services.
- 
-.. todo:: Give it more description than this!
- 
+ The Sales department is the engine of your whole company.
+ Sales success drives staff motivation and your company's general dynamism,
+ which in turn enables you to keep innovating and lay the foundations for future success.
+
+ The key to continued Sales success is effective Customer Relationship Management (most often known
+ as CRM).
+ Open ERP's CRM capabilities are flexible and highly developed to assist you in managing
+ all aspects of both supplier and customer relationships.
+ Analytic tools help you understand your performance drivers, and the automation of data and
+ processes drives new levels of efficiency.
+
+ Open ERP can share information through its interfaces to the most common office applications,
+ minimizing disruption to your operations when you first install it.
+ Your staff can build on their previous productivity by continuing to use their email and office
+ systems, now connected to Open ERP, transferring to the Open ERP interface only if they need to.
 
 .. toctree::
     :maxdepth: 1
 
-    6_16_Sales/index
-    6_17_Purchases/index
+    2_4_Leads/index
+    2_5_CRM/index
+    2_6_Comms/index
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -41,5 +53,4 @@ Sales and Purchasing
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
-
 

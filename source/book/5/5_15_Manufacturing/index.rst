@@ -1,4 +1,8 @@
 
+.. index::
+   single: Manufacturing
+   single: production; management
+   
 .. _ch-mnf:
 
 *************
@@ -32,6 +36,9 @@ types of products:
 You'll work in two areas: on products in the first part of this chapter, and on operations in the
 second part. The management of products depends on the concept of classifications while the
 management of operations depends on routing and workcenters.
+
+.. index::
+   single: bill of materials
 
 .. note:: Bills of Materials
 

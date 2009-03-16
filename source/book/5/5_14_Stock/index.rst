@@ -1,4 +1,8 @@
 
+.. index::
+   single: Logistics
+   single: Stock Management
+
 .. _ch-stocks:
 
 ******************************

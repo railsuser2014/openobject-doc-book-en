@@ -1,4 +1,7 @@
 
+.. index::
+   single: Purchasing
+
 .. _ch-purchase:
 
 *********************

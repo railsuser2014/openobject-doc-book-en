@@ -65,15 +65,6 @@ The menus themselves hint at several helpful implementation suggestions, for exa
 New functions such as the Module Recorder enable you to significantly accelerate the configuration
 of data.
 
-.. todo:: Shall we remove this now in Open ERP 5?
-
-External modules, such as the Implementation Planner module :mod:`implem` which helps you develop
-high level implementation plans are also being produced by third-party developers. These plans,
-designed for managing or investigating Open ERP, detail the software structure and the different
-steps required by your implementation.
-
-
-
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

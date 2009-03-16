@@ -1,7 +1,7 @@
 
-:::::::::::::::::::::::::::::::::::
-Open ERP Logistic, Stock & MRP Book
-:::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::
+CRM & Sales Management MRP Book
+:::::::::::::::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
@@ -12,7 +12,6 @@ Open ERP Logistic, Stock & MRP Book
     3/index
     4/index
     5/index
-    6/index
 
 
 .. Copyright © Open Object Press. All rights reserved.
