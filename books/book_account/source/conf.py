@@ -15,43 +15,18 @@
 # serve to show the default.
 
 import sys, os
-sys.path.append('../../../source')
 from docutils import nodes
+sys.path.append('../../common')
 from conf import *
-
-
-master_doc = 'index'
 
 # General information about the project.
 project = u'Analytic & Financial Accounting Book'
-copyright = u'2009, Fabien Pinckaers & Geoff Gardiner'
 
-version = '1.0'
-release = '1.0'
-
-# List of documents that shouldn't be included in the build.
-unused_docs = [
-]
-
-# List of directories, relative to source directory, that shouldn't be searched
-# for source files.
-exclude_trees = [
-]
 
 # Options for HTML output
 # -----------------------
 
-# The style sheet to use for HTML and HTML Help pages. A file of that name
-# must exist either in Sphinx' static/ path, or in one of the custom paths
-# given in html_static_path.
-html_style = 'default.css'
-
-# The name for this set of Sphinx documents.  If None, it defaults to
-# "<project> v<release> documentation".
 html_title = 'Analytic & Financial Accounting Book'
-
-# A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
 
 htmlhelp_basename = 'analytic_financial_accounting_book'
 
@@ -59,103 +34,7 @@ htmlhelp_basename = 'analytic_financial_accounting_book'
 # Options for LaTeX output
 # ------------------------
 
-# The paper size ('letter' or 'a4').
-#latex_paper_size = 'a4'
-
-# The font size ('10pt', '11pt' or '12pt').
-latex_font_size = '10pt'
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, document class [howto/manual]).
-
 latex_documents = [
    ('index', 'openerp-analytic-financial-accounting-book.tex', ur'Analytic \& Financial Accounting Book', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
 ]
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-latex_logo = '.static/openerp.jpg'
-
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-latex_use_parts = True
-
-# Additional stuff for the LaTeX preamble.
-#latex_preamble = '' # DEPRECATED sinc sphinx 0.5 (use 'latex_elements')
-
-tiny_latex_include = r"""
-\usepackage{flowfram}
-\usepackage{multicol}
-
-\usepackage[]{geometry}
-\geometry{papersize={189mm,246mm},top=15mm,bottom=28mm,left=15mm,right=15mm,bindingoffset=5mm}
-
-\DeclareUnicodeCharacter{00A0}{~}
-
-\definecolor{NoticeBoxBg}{rgb}{0.90,0.90,0.90}
-
-\newlength{\boxwidth}
-
-\newenvironment{NoticeBox}{%
-  \def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{NoticeBoxBg}}%
-  \MakeFramed {\setlength{\boxwidth}{\textwidth}
-  \addtolength{\boxwidth}{-2\FrameSep}
-  \addtolength{\boxwidth}{-2\FrameRule}
-  \setlength{\hsize}{\boxwidth} \FrameRestore}}%
-{\endMakeFramed}
-
-\makeatletter
-\renewenvironment{notice}[2]{
-  \begin{samepage}
-  \begin{NoticeBox}
-  \def\py@noticetypetip{tip}
-  \def\py@noticetypenote{note}
-  \def\py@noticetype{#1}
-
-  \ifx\py@noticetype\py@noticetypetip
-    \scalebox{0.500000}{\includegraphics{tip.png}}
-  \else
-    \scalebox{0.8}{\includegraphics{note.png}}
-  \fi
-  \nopagebreak[4]
-  \strong{#2}
-  \nopagebreak[4]
-}
-{
-  \end{NoticeBox}
-  \end{samepage}
-}
-\makeatother
-
-\renewenvironment{figure}[6]{
-  \par
-  \begin{staticfigure}
-}{
-  \end{staticfigure}
-}
-"""
-
-latex_elements = {
-    'preamble': tiny_latex_include,
-}
-
-#     self.body.append("\n".join(["\\mainmatter", "\\pagenumbering{arabic}", "\\setcounter{page}{1}", '']))
-
-def end_foreword_directive(name, arguments, options, content, lineno,
-                       content_offset, block_text, state, state_machine):
-
-    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')] # XXX cannot add a raw node for the moment
-    # return [nodes.raw('latex', '\\mainmatter')]
-
-# def create_new_reference(app, env, node, contnode):
-#     """Convert a bad reference into a simple text."""
-#     txt = node.astext()
-#     return [nodes.emphasis(txt, txt)]
-
-
-def setup(app):
-    app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
-    #app.connect('missing-reference', create_new_reference)
-
-
 
