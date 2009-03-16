@@ -9,8 +9,13 @@
 Information Systems have played an increasingly visible role over the past several years in
 improving the competitiveness of business.
 More than just tools for handling repetitive tasks, they're used to guide and advance
-all of a company's' daily activities. Integrated management software is today very often a
-key source of significant competitive advantage.
+all of a company's daily activities. Integrated management software is today very often a
+key source of significant competitive advantage. 
+
+Such software is commonly called an ERP (Enterprise Resource Planning) system. This book
+is about the use of Open ERP, a leading example of ERP system, 
+for manufacturing and stock management. It's one of a series of books on the use
+of Open ERP in a range of enterprise settings.
 
 .. raw:: latex
 
@@ -84,7 +89,7 @@ which has been used to interface with Match and Leclerc stores, up to the generi
 automation
 module for ordering sandwiches, which can take care of the eating preference of your staff.
 
-The results are quite impressive. Open ERP (once called Tiny ERP when it started out) is management
+The results are impressive. Open ERP (once called Tiny ERP when it started out) is management
 software that is downloaded more than any other in the world, with over 600 downloads per day.
 It's available today in 18 languages and has a world network of partners and contributors.
 More than 800 developers participate in the projects on the collaborative development system of Tiny
@@ -95,7 +100,7 @@ companies but also by very small companies and independent companies. This diver
 illustration of the software's flexibility: a rather elegant coordination between people's
 functional expectations of the software and great simplicity in its use.
 
-And this diversity is also found in the various sectors and trades which use the software, including
+And diversity is also found in the various sectors and trades which use the software, including
 agricultural products, textiles, public auctions, IT, and trade associations.
 
 Lastly, such software has arisen from the blend of high code quality, well-judged architecture and
@@ -147,35 +152,22 @@ analyzed and involved in change. The same principles also apply to larger compan
 
 .. *
 
-Part One, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
+Part I, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
 with Open ERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
-scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
-the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
+scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-sales` chapter in
+the :ref:`part-trade` part, to start with details of Open ERP's functional modules.
 
-Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
-elements necessary for managing an efficient sales department there, and automating tasks to monitor
-performance.
+Part II, :ref:`part-trade`, deals with Selling and Purchasing goods and services.
 
-Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
-enterprise.
-
-Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
-Human Resources for managing projects,
-through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
-can help you to optimize your leadership of an enterprise.
-
-Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
+Part III, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
 (the transformation or products and services into other products).
 
-Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
-
-Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that Open ERP
+Part IV, :ref:`part-qual`, is focused on the Process description that Open ERP
 manages.
 
-Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
+Finally Part V, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
 ERP then provides a methodology for implementing Open ERP in the enterprise.
-
 
 	.. note::  *About the authors*
 

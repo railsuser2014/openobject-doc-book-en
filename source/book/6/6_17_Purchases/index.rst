@@ -1,6 +1,9 @@
 
 .. _ch-purchase:
 
+.. index::
+   single: Purchasing
+
 *********************
 Purchasing Management
 *********************

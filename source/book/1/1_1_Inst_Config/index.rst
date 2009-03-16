@@ -1,8 +1,13 @@
 
+.. index::
+   single: Installation
+   single: Initial Setup
+   pair: configuration; setup
+
 .. _ch-inst:
 
 ******************************
-Installation and Configuration
+Installation and Initial Setup
 ******************************
 
  *Installing Open ERP under Windows or Linux for familiarization use should take you only half an
@@ -13,7 +18,7 @@ Installation and Configuration
  either install a web server (most probably on the original server PC) to use with standard web
  clients that can be found on anybody's PC,
  or install application clients on each intended user's PC.
- When you first install Open ERP you'll configure a database containing a little functionality and
+ When you first install Open ERP you'll set up a database containing a little functionality and
  some demonstration data to test the installation.*
  
 .. figure:: images/ch1_outline.png
@@ -93,7 +98,7 @@ of server you're using.
    each new version, so you should always check each release's documentation – both packaged with
    the release and on the website – for exact installation procedures.
 
-Once you've completed this installation, create and configure a database to confirm that your
+Once you've completed this installation, create and set up a database to confirm that your
 Open ERP installation is working. You can follow the early chapters in this part of the book to achieve this.
 
 .. raw:: html

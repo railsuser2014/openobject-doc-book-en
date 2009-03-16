@@ -1,5 +1,6 @@
 
-.. index:: Sales Management
+.. index::
+   single: Sales Management
 
 .. _ch-sales:
 

@@ -1,4 +1,9 @@
 
+.. index::
+   single: Leads
+   single: Opportunities
+   single: Campaigns
+
 *******************************************
 Leads, Business Opportunities and Campaigns
 *******************************************

@@ -1,9 +1,12 @@
 
 .. _ch-services:
 
-**************************
-The Management of Services
-**************************
+.. index::
+   single: Services Management
+
+*******************
+Services Management
+*******************
 
  *This chapter focuses on the management of contracts, and the services associated with that.
  The complete process of managing services is studied here: from defining prices and contracts to

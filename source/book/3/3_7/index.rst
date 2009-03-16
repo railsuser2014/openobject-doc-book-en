@@ -1,4 +1,7 @@
 
+.. index::
+   single: Invoice to Payment
+
 ***********************
 From invoice to payment
 ***********************

@@ -1,6 +1,9 @@
 
 .. _ch-accts:
 
+.. index::
+   single: Analytic Accounts
+
 *****************
 Analytic Accounts
 *****************

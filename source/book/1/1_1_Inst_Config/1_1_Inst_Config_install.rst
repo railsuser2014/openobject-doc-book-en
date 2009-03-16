@@ -77,7 +77,7 @@ you're likely to have to restart your PC to finish removing all traces of them.
 
 The Open ERP client can be opened, ready to use the Open ERP system, once you have completed 
 the all--in-one installation. The next step consists
-of configuring the database, and is covered in the final section of this chapter :ref:`sect-creatingdb`.
+of setting up the database, and is covered in the final section of this chapter :ref:`sect-creatingdb`.
 
 .. index::
    single: installation; Windows (independent)
@@ -95,14 +95,14 @@ For this situation you can get separate installers for the Open ERP server and 
 location as the all-in-one auto-installer. You'll also have to download and install a suitable
 version of PostgreSQL independently.
 
-You must install PostgreSQL before the Open ERP server, and you must also configure it with a user
+You must install PostgreSQL before the Open ERP server, and you must also set it up with a user
 and password so that the Open ERP server can connect to it. Tiny's web-based documentation gives
 full and current details.
 
 Connecting users on other PCs to the Open ERP server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To connect other computers to the Open ERP server you must configure the server so that it's
+To connect other computers to the Open ERP server you must set the server up so that it's
 visible to the other PCs, and install a GTK client on each of the those PCs:
 
 	#. Make your Open ERP server visible to other PCs by opening the Windows Firewall in the Control
@@ -172,7 +172,7 @@ resolving this below:
 	   restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
 	   :menuselection:`Start --> Programs --> OpenERP Server` .
 
-	#. Is the Open ERP application server configured correctly? Signed in to the server as
+	#. Is the Open ERP application server set up correctly? Signed in to the server as
 	   Administrator, open the file \ ``openerp-server.conf``\  in \
 	   ``C:\Program Files\OpenERP AllInOne``\  and check its content. This file is generated during
 	   installation with information derived from the database. If you see something strange it's best to
@@ -430,7 +430,7 @@ To install client-web follow the up-to-date instructions in the installation doc
 	:program:`ez_setup` is a small program that installs ez_install automatically.
 
 The Open ERP Web server connects to the Open ERP server in the same way as an Open ERP client
-using the NET-RPC protocol. Its default configuration corresponds to that of the Open ERP server
+using the NET-RPC protocol. Its default setup corresponds to that of the Open ERP server
 you've just installed, so should connect directly at startup.
 
 	#.	At the same console as you've just been using, go to the Openerp web directory by typing
@@ -460,7 +460,7 @@ Verifying your Linux installation
 
 You've used default parameters so far during the installation of the various components.
 If you've had problems, or you just want to set this up differently,
-the following points provide some indicators about how you can configure your installation.
+the following points provide some indicators about how you can set your installation up.
 
 .. tip:: **psql** and **pgAdmin** tools
 
@@ -510,7 +510,7 @@ the following points provide some indicators about how you can configure your in
 	server can use both ports simultaneously. The window displays the log file when the client is
 	started this way.
 
-#.	The client configuration is stored in the file \ ``.terprc``\  in the user's home directory.
+#.	The client setup is stored in the file \ ``.terprc``\  in the user's home directory.
 	Since a GTK client can be started by any user, each user would have their setup defined in a
 	configuration file in their own home directory.
 

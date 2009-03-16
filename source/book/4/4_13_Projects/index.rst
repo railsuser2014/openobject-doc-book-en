@@ -1,8 +1,11 @@
 
 .. _ch-projects:
 
+.. index::
+   single: Project Management
+
 ********************************************
-Internal organization and project management
+Internal Organization and Project Management
 ********************************************
 
  *If you have good systems for managing tasks, then your whole company will benefit.
