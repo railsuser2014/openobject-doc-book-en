@@ -315,10 +315,9 @@ it's been defined as multi-level.
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ARM100 cabinet in the way shown by the table below,
-you'll get production orders of the
-
-.. todo:: Not finished the above para!
+If you define the BoM for the ARM100 cabinet in the way shown by the table arm100_phantom below,
+you'll get two production orders when the order is confirmed, as shown in the table 
+arm100_phantom_of below that.
 
 ============  ========  ===============  ===========
 Product Code  Quantity  Unit of Measure  Type of BoM

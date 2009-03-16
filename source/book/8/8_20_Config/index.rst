@@ -1,6 +1,10 @@
 
 .. _ch-config:
 
+.. index::
+   single: Configuration
+   single: Administration
+
 **************************************
 Configuring and Administering Open ERP
 **************************************
@@ -29,6 +33,7 @@ the ability to approve employee expense requests).
    single: configuration; parameterization
    single: configuration; personalization
    single: configuration; customization
+   single: configuration; setup
 ..
 
 .. note:: Configuration, Parameterization, Personalization, Customization
@@ -40,7 +45,7 @@ the ability to approve employee expense requests).
 	(such as creating specialized code modules) and creates a non-standard system.
 
 	*Configuration* is less radical – it's the general process of setting all
-	the parameters of the software to fit the needs of your system (often called *parameterization*).
+	the parameters of the software to fit the needs of your system (often called *parameterization* or *setup*).
 	Configuration is also, by convention, the name of the submenu below each of Open ERP's top-level menus that
 	is accessible only to the administrative user for that section.
 

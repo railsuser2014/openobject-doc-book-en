@@ -1,4 +1,7 @@
 
+.. index::
+   single: Document Management
+
 ******************************
 Integrated Document Management
 ******************************

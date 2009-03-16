@@ -1,6 +1,9 @@
 
 .. _ch-crm:
 
+.. index::
+   single: Customer Relationship Management
+
 ********************************
 Customer Relationship Management
 ********************************

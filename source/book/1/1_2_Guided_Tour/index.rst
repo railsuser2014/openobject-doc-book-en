@@ -1,4 +1,7 @@
 
+.. index::
+   single: Guided Tour
+
 .. _ch-guided: 
 
 ***********

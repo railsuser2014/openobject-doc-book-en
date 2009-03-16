@@ -1,6 +1,9 @@
 
 .. _ch-hr:
 
+.. index::
+   single: Human Resources
+   
 *******************************
 Organization of Human Resources
 *******************************

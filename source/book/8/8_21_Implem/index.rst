@@ -1,4 +1,8 @@
 
+.. index::
+   single: Implementation
+   single: Methodology
+
 **************************
 Implementation Methodology
 **************************

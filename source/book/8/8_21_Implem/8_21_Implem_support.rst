@@ -10,14 +10,20 @@ It's when you actually use your ERP that you will obtain value from your investm
 maintenance and support are critical for your long term success.
 
 * Support aims to ensure that end users get the maximum productivity from their use of Open ERP by
-	responding to their questions on the use of the system. Support can be technical or functional.
+  responding to their questions on the use of the system. Support can be technical or functional.
 
 * Maintenance aims to ensure that the system itself continues to function as required. It includes
-	system upgrades, which give you access to the latest functionality available.
+  system upgrades, which give you access to the latest functionality available.
 
 Some partners offer preventative maintenance. This makes sure that all the specific developments for
 your system are revised and tested for each new version so that they remain compatible with the base
 Open ERP.
+
+Tiny themselves have changed their support strategy from time to time. At the time of writing
+they propose a maintenance contract supplied either direct to the end user or through partners
+that guarantees a quick fix to any faults discovered in the covered code. Although you can 
+expect these fixes to become available to all users of the code in time, maintenance
+guarantees quick attention. And you're likely to get quicker migration support to new upgrades.
 
 If you haven't anticipated your needs with a preventive maintenance contract, the costs of migration
 after a few years can become significant. If special modules that you developed have been allowed to
@@ -28,14 +34,14 @@ Updates and Upgrades
 
 There are four sources of code change for Open ERP:
 
-* patches supplied by Tiny to correct faults: after validation these patches won't cause any
-	secondary effects,
+* patches supplied by Tiny to correct faults: after validation these patches shouldn't cause any
+  secondary effects,
 
 * minor updates, which gather the fault corrections together in one package, and are generally
-	announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
+  announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
 
 * upgrades, which bundle both the fault corrections and the improvements to the functionality in a
-	major release such as from 5.0.3 to 5.2.0.
+  major release such as from 5.0.3 to 5.2.0.
 
 * new functions generally released in the form of new modules.
 
@@ -61,16 +67,16 @@ and after the upgrade can be a little different.
 Version Migration
 -----------------
 
-Open ERP has a system to manage migrations automatically. To update specific modules, or the whole
+Open ERP has a system to manage migrations semi-automatically. To update specific modules, or the whole
 database, you only need to start the server with the argument:–\ ``update=NAME_OF_MODULE``\   or \
-``–update=all``\  ..
+``–update=all``\ (that's minor module changes).
 
 New stable versions of Open ERP sometimes require operations that aren't provided in the automated
 migration. Tiny, the creator and maintainer of Open ERP, has a policy of supporting migration from
 all official stable releases to the latest. Scripts are provided for each new release of a stable
 version. These carry out the upgrade from the previous major version to the new major version.
 
-The managers responsible for the migration between two versions of Open ERP will find the
+Managers responsible for the migration between two versions of Open ERP will find the
 documentation and the necessary scripts in the directory \ ``doc/migrate``\   of the Open ERP
 server.
 
@@ -90,6 +96,10 @@ The procedure for migrating runs like this:
 
 	#. Start the new version of the server and test it.
 
+The changes between version 4 and 5 made the migration process more difficult than in the past
+so there was a greater delay in the provision of migration assistance and more manual work
+than usual.
+
 A migration is never an easy process. It may be that your system doesn't function as it did before
 or that something requires new developments in the functionality of the modules that have already
 been installed. So you should only move to a new version if you have a real need and should engage a
@@ -100,7 +110,6 @@ Similarly you should take care that this migration does not correct any setting 
 incorrectly. It's can be the case, for example, that the main menu structure has been modified
 without recording it. You may find that you're making the wrong assumptions about that structure
 when loading data in that was recorded with the Module Recorder.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

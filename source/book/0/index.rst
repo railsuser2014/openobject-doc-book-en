@@ -81,9 +81,9 @@ by simply grouping and configuring the most suitable modules. Hundreds of module
 They range from specific modules like the EDI interface for agricultural products,
 which has been used to interface with Match and Leclerc stores, up to the generic demonstration
 automation
-module for ordering sandwiches, which can take care of the eating preference of your staff.
+module for ordering sandwiches, which can take care of the eating preferences of your staff.
 
-The results are quite impressive. Open ERP (once called Tiny ERP when it started out) is management
+The results are rather impressive. Open ERP (once called Tiny ERP when it started out) is management
 software that is downloaded more than any other in the world, with over 600 downloads per day.
 It's available today in 18 languages and has a world network of partners and contributors.
 More than 800 developers participate in the projects on the collaborative development system of Tiny
