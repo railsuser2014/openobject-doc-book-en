@@ -90,7 +90,7 @@ location given to partner deliveries.
     Creating a location specifically for a partner is also a simple solution for handled consigned
     stocks in Open ERP.
 
-.. note: Consigned Stock
+.. note:: Consigned Stock
 
     Consigned stock is stock that is owned by you (valued in your accounts) but is physically
     stocked by your supplier.
