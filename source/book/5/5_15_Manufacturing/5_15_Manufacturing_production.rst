@@ -41,6 +41,8 @@ manufacturing plan is given by the figure :ref:`fig-mrparm`.
 
 The cabinet is assembled from raw materials and intermediate assemblies:
 
+.. table:: *Product Definitions prior to defining Bills of Materials*
+
 ================ =========================
 Product Code     Description
 ================ =========================
@@ -57,6 +59,8 @@ LIN040           Lintel
 
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
 product and for the final cabinet assembly. These are given by the table below.
+
+.. table:: *Bills of Materials*
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -109,7 +113,9 @@ ETA100        3         Unit
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
 requirements of the finished products. Then if you want to manufacture 10 cabinets, the system can
-easily calculate what will be consumed:
+calculate what will be consumed:
+
+.. table:: *Total Quantities*
 
 ============  =================  ===============
 Product Code  Quantity           Unit of Measure
@@ -224,6 +230,8 @@ So if you select a BoM using intermediate products that automatically generates 
 based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
 manufacture a cabinet, you'd create 6 production orders:
 
+.. table:: *Production Orders*
+
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
 ============  ========  ===============
@@ -315,9 +323,10 @@ it's been defined as multi-level.
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ARM100 cabinet in the way shown by the table arm100_phantom below,
-you'll get two production orders when the order is confirmed, as shown in the table 
-arm100_phantom_of below that.
+If you define the BoM for the ARM100 cabinet in the way shown by the table below,
+you'll get two production orders when the order is confirmed, as shown in the tables below that.
+
+.. table:: *Definition and use of phantom BoMs*
 
 ============  ========  ===============  ===========
 Product Code  Quantity  Unit of Measure  Type of BoM
@@ -329,7 +338,7 @@ PROFIL        4         m                phantom
 ETA100        3         Unit             phantom
 ============  ========  ===============  ===========
 
-Table: arm100_phantom: definition and use of phantom BoMs
+.. table:: *Production Orders from phantom BoMs*
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -348,8 +357,6 @@ Product Code  Quantity  Unit of Measure
 PANLAT        2         Unit
 BOIS002       0.17      m2
 ============  ========  ===============
-
-Table: arm100_phantom_of: generated production orders
 
 Assembly Bills of Materials
 -----------------------------
@@ -422,6 +429,8 @@ Bill of Materials when you have a choice of BoMs.
    of Materials.
 
 For example you can define the properties and the following groups:
+
+.. table:: *Properties*
 
 =====================  ============
 Property Group         Property

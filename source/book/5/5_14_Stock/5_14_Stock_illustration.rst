@@ -22,6 +22,8 @@ empty and no operation is in progress nor planned.
 If you order '30 bicycles' from a supplier, Open ERP will then do the following operations after the
 receipt of the products:
 
+.. table:: *Stock Move operation from Suppliers to Stock*
+
 ================================================== =============
 Location                                           Products
 ================================================== =============
@@ -32,6 +34,8 @@ Physical Locations > Tiny SPRL > Stock             +30 bicycles
 If you deliver 2 bicycles to a European customer you will get the following transactions for the
 delivery:
 
+.. table:: *Stock Move operation from Stock to European Customers*
+
 ================================================== =============
 Location                                           Products
 ================================================== =============
@@ -40,6 +44,8 @@ Partner Locations > Customers > European Customers +2 bicycles
 ================================================== =============
 
 When the two operations are complete you'll then get the following stock in each location:
+
+.. table:: *Resulting stock situation*
 
 ================================================== =============
 Location                                           Products
@@ -87,6 +93,8 @@ Open ERP shows 28 in the system. You then have to reduce the number in Open ERP 
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
 
+.. table:: *Inventory operation to adjust stock*
+
 ================================================== =============
 Location                                           Products
 ================================================== =============
@@ -95,6 +103,8 @@ Virtual Locations > Inventory Loss                 +2 bicycles
 ================================================== =============
 
 The product stock under consideration then becomes:
+
+.. table:: *Resulting stock situation*
 
 ================================================== =============
 Location                                           Products
@@ -115,6 +125,8 @@ Now see how the following manufacturing operation is structured in Open ERP. To 
 need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
 from real stock and the addition of a bicycle there. The consumption / production is formalized by
 moving products out of and into physical stock. The stock operations for this are as follows:
+
+.. table:: *Resulting stock situation from manufacture*
 
 ====================================== ========== ================================
 Location                               Products   Step

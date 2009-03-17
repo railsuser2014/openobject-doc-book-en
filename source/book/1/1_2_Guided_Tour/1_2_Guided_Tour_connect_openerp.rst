@@ -56,7 +56,7 @@ as shown in screenshot :ref:`fig-oech2-main`:
 
 Two menus are available on the left:
 
-* :guilabel:`Partners`,
+* :menuselection:`Partners`,
 
 * :menuselection:`Administration`.
 

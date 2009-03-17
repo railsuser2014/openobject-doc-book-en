@@ -217,7 +217,7 @@ Start by creating partner categories in a CSV file:
 
 #. Create the following table in your spreadsheet program:
 
-   .. csv-table:: Partner categories file: categories.csv
+   .. csv-table:: Partner categories file
       :header: "","Column A","Column B"
       :widths: 5,10,10
 
@@ -332,7 +332,6 @@ partner using the web client:
 .. csv-table::  Partner data in the exported file
    :header: "","Column A","Column B","Column C","Column D"
    :widths: 5,10,10,10,10
-   :align: center
 
    "Line 1","Name","Categories/Category name","Contact","Salesman"
    "Line 2","Black Advertising","Silver","George Black","Administrator"
