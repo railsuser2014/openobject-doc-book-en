@@ -34,7 +34,7 @@ For each delivery mode, you should define the following elements:
 
 For example you can create the following modes:
 
-.. table:: Example Delivery Modes
+.. table:: *Example Delivery Modes*
 
 ================    ===========   ==========================
 Delivery Mode       Partner       Associated Product

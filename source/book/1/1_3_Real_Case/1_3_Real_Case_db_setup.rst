@@ -137,7 +137,7 @@ to another when invoices are raised and then paid. Create journals from the menu
 :menuselection:`Financial Management --> Configuration --> 
 Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
 
-.. table:: Defining Journals
+.. table:: *Defining Journals*
 
 ===================== ==== ============= ================= ================ ===================== ======================
 Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
