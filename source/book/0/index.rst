@@ -99,7 +99,9 @@ agricultural products, textiles, public auctions, IT, and trade associations.
 
 Lastly, such software has arisen from the blend of high code quality, well-judged architecture and
 use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the
-size of Open ERP is less than 4 MB when you've installed the software. We've moved a long way from
+download size of Open ERP is only around 6 MB. When that's expanded during installation its size is mostly 
+attributable to all the official translations that are packaged with it, not the operating code. 
+We've moved a long way from
 the days when the only people who could be expected to benefit from ERP were the owners of a widget
 factory on some remote industrial estate.
 

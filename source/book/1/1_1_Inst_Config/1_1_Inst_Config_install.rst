@@ -477,7 +477,7 @@ the following points provide some indicators about how you can set your installa
 	found at \ ``http://www.pgadmin.org/`` \ ).
 
 #.	The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check
-	this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
+	this by entering \ ``sudo netstat -anpt``\  at a terminal to see if port 5432 is visible there.
 
 #.	The database system has a default role of \ ``postgres``\   accessible by running under the Linux
 	postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql

@@ -255,13 +255,13 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	   you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
 	   ``Quotation``\  state for as long as necessary.
 
-.. _fig-ch03ord:
+	   .. _fig-ch03ord:
 
-.. figure:: images/order.png
-   :scale: 75
-   :align: center
-        	   
-   *Sales Order Form*
+	   .. figure:: images/order.png
+	      :scale: 75
+	      :align: center
+
+	      *Sales Order Form*
 
 	#. In the last tab of the order, :guilabel:`History` you can see the :guilabel:`Packing List`
 	   that's been created and you'll be able to see any invoices that relate to this order when they're

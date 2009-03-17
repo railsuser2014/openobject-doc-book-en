@@ -29,15 +29,14 @@ in figure :ref:`fig-oech03accty`.
 
 .. table:: *Defining Account Types*
 
-============== ======== ========  =============== =============== ===============
-Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
-============== ======== ========  =============== =============== ===============
-View           view     5         Positive        None            unchecked
-Income         income   5         Positive        Unreconciled    unchecked         
-Expense        expense  5         Positive        Unreconciled    unchecked
-Cash           cash     5         Positive        Balance         unchecked
-============== ======== ========  =============== =============== ===============
-
+   ============== ======== ========  =============== =============== ===============
+   Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
+   ============== ======== ========  =============== =============== ===============
+   View           view     5         Positive        None            unchecked
+   Income         income   5         Positive        Unreconciled    unchecked         
+   Expense        expense  5         Positive        Unreconciled    unchecked
+   Cash           cash     5         Positive        Balance         unchecked
+   ============== ======== ========  =============== =============== ===============
 
 .. _fig-oech03accty:
 
@@ -62,16 +61,16 @@ in :ref:`fig-oech03accts`.
 
 .. table:: *Defining Accounts*
 
-============= ==== ============= =============== ============ =========
-Name          Code Internal Type Parent          Account Type Reconcile
-============= ==== ============= =============== ============ =========
-Minimal Chart 0    View                          View         unchecked
-Payable       AP   Payable       0 Minimal Chart Expense      checked
-Receivable    AR   Receivable    0 Minimal Chart Income       checked
-Cash          C    Others        0 Minimal Chart Cash         unchecked
-Purchases     P    Others        0 Minimal Chart Expense      unchecked
-Sales         S    Others        0 Minimal Chart Income       unchecked
-============= ==== ============= =============== ============ =========
+   ============= ==== ============= =============== ============ =========
+   Name          Code Internal Type Parent          Account Type Reconcile
+   ============= ==== ============= =============== ============ =========
+   Minimal Chart 0    View                          View         unchecked
+   Payable       AP   Payable       0 Minimal Chart Expense      checked
+   Receivable    AR   Receivable    0 Minimal Chart Income       checked
+   Cash          C    Others        0 Minimal Chart Cash         unchecked
+   Purchases     P    Others        0 Minimal Chart Expense      unchecked
+   Sales         S    Others        0 Minimal Chart Income       unchecked
+   ============= ==== ============= =============== ============ =========
 
 .. _fig-oech03accts:
 
@@ -103,14 +102,14 @@ Properties --> Default Properties` and then clicking the :guilabel:`New` button.
 
 .. table:: *Defining Properties*
 
-============================== ========= ================== =============================== ===============
-Name                           Company   Fields             Value                           Parent Resource
-============================== ========= ================== =============================== ===============
-property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
-property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
-property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
-property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
-============================== ========= ================== =============================== ===============
+   ============================== ========= ================== =============================== ===============
+   Name                           Company   Fields             Value                           Parent Resource
+   ============================== ========= ================== =============================== ===============
+   property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
+   property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
+   property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
+   property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
+   ============================== ========= ================== =============================== ===============
 
 .. tip:: Mistakes in configuring accounts and properties
 
@@ -139,13 +138,13 @@ Financial Accounting --> Financial Journals` and then clicking the :guilabel:`Ne
 
 .. table:: *Defining Journals*
 
-===================== ==== ============= ================= ================ ===================== ======================
-Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
-===================== ==== ============= ================= ================ ===================== ======================
-Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
-Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
-Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
-===================== ==== ============= ================= ================ ===================== ======================
+   ===================== ==== ============= ================= ================ ===================== ======================
+   Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
+   ===================== ==== ============= ================= ================ ===================== ======================
+   Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
+   Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
+   Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
+   ===================== ==== ============= ================= ================ ===================== ======================
 
 .. tip:: Mistakes in configuring journals
 

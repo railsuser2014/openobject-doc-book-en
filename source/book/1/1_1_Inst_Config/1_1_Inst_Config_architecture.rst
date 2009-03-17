@@ -25,6 +25,7 @@ responsive, so more satisfying to use.
 
 .. index::
    single: client; web (thin) and GTK (thick)
+   single: client; caching
 
 .. note::   Web client and GTK client
 
@@ -32,6 +33,16 @@ responsive, so more satisfying to use.
     presence of the calendar view in the web client, which doesn't exist in the
     GTK client at present (versions 4.x and 5.0). Apart from that you will find that
     there are small differences in their general usability.
+    
+    When you're changing the structure of your Open ERP installation (adding and
+    removing modules, perhaps changing labels) you'll find the web client to be
+    irritating because of its use of **caching**. 
+    
+    Caching speeds it all up by keeping a copy of data somewhere between the server 
+    and your client, which is usually good. But you may 
+    have made changes to your installation that you cannot immediately see in
+    your browser. Many apparent faults are caused by this! The workaround is 
+    to use the GTK client during development and implementation where possible.
 
     The Tiny company will continue to support two clients for the foreseeable
     future, so you can use whichever client you prefer.

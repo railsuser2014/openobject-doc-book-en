@@ -21,16 +21,16 @@ cabinet is assembled in two steps, using the two following Bills of Materials.
 
 .. table:: *Bills of Materials*
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
