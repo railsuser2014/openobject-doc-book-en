@@ -283,7 +283,7 @@ Here's how to create new partners with several contacts, and how to link them to
 
 #. Save the file using the name \ ``partners.csv``\
 
-#. In penERP, select :menuselection:`Partners --> Partners` then import the file that you've just
+#. In OpenERP, select :menuselection:`Partners --> Partners` then import the file that you've just
    saved. You'll get a message confirming that you've imported and saved the data.
 
 #. Verify that you've imported the data. A new partner should have appeared (``NoirAdvertising``),
