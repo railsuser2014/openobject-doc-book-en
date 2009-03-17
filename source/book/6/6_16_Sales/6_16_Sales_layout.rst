@@ -32,7 +32,7 @@ and the resulting printed invoice.
 .. _fig-invlayfrm:
 
 .. figure:: images/invoice_layout_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Template for an invoice in Open ERP using the account_invoice_layout module*
@@ -40,7 +40,7 @@ and the resulting printed invoice.
 .. _fig-invlayprin:
 
 .. figure:: images/invoice_layout_print.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *The resulting printed invoice*

@@ -19,7 +19,7 @@ these reports use the menu :menuselection:`Purchase Management --> Reporting -->
 Purchases by product`.
 
 .. figure:: images/purchase_report.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Analysis of purchases over the month by product*

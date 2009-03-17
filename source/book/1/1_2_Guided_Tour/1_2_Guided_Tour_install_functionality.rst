@@ -88,7 +88,7 @@ and the status of the module changes to :guilabel:`To be installed`.
 
 
 .. figure:: images/install_product_module.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Installation of the product module*
@@ -193,7 +193,7 @@ demonstration data because you checked the :guilabel:`Load Demonstration Data` c
 created the database.
 
 .. index::
-  single: module; importing
+   single: module; importing
 ..
 
 Click :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to give you an
@@ -225,9 +225,9 @@ Finally install the additional modules :guilabel:`Analytic Accounting` and :guil
 when you're offered that configuration option. Don't install any more - you now have quite a 
 fully-loaded system to look at.
 
-.. todo: After you have installed 'additional modules' you're invited to install them again, plus more.
+.. todo:: After you have installed 'additional modules' you're invited to install them again, plus more.
 
-Clcik :guilabel:`Home` and you'll be returned to a dashboard, not the main menu you had before. To get to
+Click :guilabel:`Home` and you'll be returned to a dashboard, not the main menu you had before. To get to
 the main menu, use the :guilabel:`MAIN MENU` link. 
 
 .. Copyright © Open Object Press. All rights reserved.

@@ -131,7 +131,7 @@ Rules for calculating price
 A pricelist version is made up of a set of rules that apply to the product base prices.
 
 .. figure:: images/service_pricelist_line.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of a rule in a pricelist version*
@@ -235,7 +235,7 @@ chart of accounts.
 
 TABLE
 
-.. csv-table:: Examples of products with their different prices
+.. csv-table:: *Examples of products with their different prices*
 
    "Product ","List Price","Standard Price","Default supplier price",
    "Acclo Portable","1,200 ","887 ","893 ",
@@ -251,7 +251,7 @@ Default pricelists
 ^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/product_pricelist_default.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Default pricelist after installing Open ERP*

@@ -20,7 +20,7 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Locations` t
 :guilabel:`New` to define new locations.
 
 .. figure:: images/stock_location_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a stock location*
@@ -60,13 +60,13 @@ locations shown on the partner form. The choice of stock location is given by th
 the warehouse, linked to a Shop.
 
 .. figure:: images/stock_product_location_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of stock locations on the product form*
 
 .. figure:: images/stock_partner_location_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of stock locations on the partner form*
@@ -90,7 +90,7 @@ location given to partner deliveries.
     Creating a location specifically for a partner is also a simple solution for handled consigned
     stocks in Open ERP.
 
-.. note: Consigned Stock
+.. note:: Consigned Stock
 
     Consigned stock is stock that is owned by you (valued in your accounts) but is physically
     stocked by your supplier.
@@ -296,7 +296,7 @@ You can then set the locations a product or a routing must go through on the rel
 products that enter the production chain will automatically follow the predetermined path.
 
 .. figure:: images/stock_product_path.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Logistics for a given product*

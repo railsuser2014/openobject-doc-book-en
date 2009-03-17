@@ -33,7 +33,7 @@ above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
-   :scale: 65
+   :scale: 75
 
    *Project Dashboard*
 
@@ -86,7 +86,7 @@ shows only the first few partners. If you want to display other records you can 
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Standard partner search*
@@ -200,7 +200,7 @@ and you'll get the Partner form rather than the Sales Order form.
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Links for a partner appear in an order form*
@@ -606,7 +606,7 @@ Take a document that could be expected to have a workflow, such as a Sales Order
 then click the :guilabel:`Process` button above its form to see the full process.
 
 .. figure:: images/guided_tour_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process for a Sales Order*
@@ -622,7 +622,7 @@ web client from a process node, and the GTK client from the
 the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
 
 .. figure:: images/purchase_workflow.png
-   :scale: 65
+   :scale: 75
    :align: center
 
    *Workflow for a Purchase Order*

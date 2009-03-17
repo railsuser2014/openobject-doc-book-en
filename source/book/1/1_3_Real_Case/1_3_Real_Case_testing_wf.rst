@@ -136,7 +136,7 @@ If you explore further you'll also see you have ``-10``\   pieces in the Partner
 .. _fig-lotsbyloc:
 
 .. figure::  images/lots_by_location_pdf.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of products and their stock levels*
@@ -255,13 +255,13 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	   you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
 	   ``Quotation``\  state for as long as necessary.
 
-.. _fig-ch03ord:
+	   .. _fig-ch03ord:
 
-.. figure:: images/order.png
-   :scale: 50
-   :align: center
-        	   
-   *Sales Order Form*
+	   .. figure:: images/order.png
+	      :scale: 75
+	      :align: center
+
+	      *Sales Order Form*
 
 	#. In the last tab of the order, :guilabel:`History` you can see the :guilabel:`Packing List`
 	   that's been created and you'll be able to see any invoices that relate to this order when they're
@@ -357,7 +357,7 @@ check its checkbox in the list:
 .. _fig_ch03faminv:
 
 .. figure::  images/familiarization_invoice.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Invoice Form*

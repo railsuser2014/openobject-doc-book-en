@@ -40,7 +40,7 @@ generated the request in the :guilabel:`Origin` field.
 .. _fig-pfrm:
 
 .. figure:: images/purchase_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Data entry for a supplier order*
@@ -69,7 +69,7 @@ bring in all of the conditions that you've negotiated with the supplier for a gi
 Once the main body of the purchase order has been completed you can enter the product lines.
 
 .. figure:: images/purchase_line_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Order line on a  supplier order*
@@ -124,7 +124,7 @@ Once the document has been completed, you can print it as a price estimate to se
 the supplier. You can set a note for the attention of the supplier in the form's third tab.
 
 .. figure:: images/purchase_quotation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Printing the supplier price quotation*
@@ -147,7 +147,7 @@ Supplier`.
    the menu :menuselection:`Purchase Management --> Purchase Orders --> Purchase Orders Awaiting Approval`.
 
 .. figure:: images/purchase_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Supplier order process*
@@ -185,7 +185,7 @@ After receiving the goods, Open ERP will show you which orders are open and the 
 receipt and invoicing if you return to the list of orders.
 
 .. figure:: images/purchase_list.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of open orders, and their receipt and invoice status*
@@ -206,7 +206,7 @@ The mode of invoicing control is set in the second tab of the purchase order in 
 :guilabel:`Invoicing Control`.
 
 .. figure:: images/purchase_form_tab2.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Supplier order, invoice control*
@@ -294,7 +294,7 @@ supplier price reqests for a single supply requirement. Once the module is insta
 a new :menuselection:`Purchase Tenders` menu in :menuselection:`Purchase management`. You can then define the new tenders.
 
 .. figure:: images/purchase_tender.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Defining a tender*
@@ -404,7 +404,7 @@ set from the purchase order, but you can change the price to add the cost of
 delivery to the various received products, for example.
 
 .. figure:: images/purchase_pmp.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Goods receipt of products managed in weighted average*

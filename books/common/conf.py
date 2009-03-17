@@ -113,13 +113,17 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \ifx\py@noticetype\py@noticetypetip
-    \scalebox{0.500000}{\includegraphics{tip.png}}
-  \else
-    \scalebox{0.8}{\includegraphics{note.png}}
-  \fi
-  \nopagebreak[4]
-  \strong{#2}
+  \begin{tabular}{ccl}
+    \ifx\py@noticetype\py@noticetypetip
+      \scalebox{0.500000}{\includegraphics{tip.png}}
+    \else
+      \scalebox{0.8}{\includegraphics{note.png}}
+    \fi
+    &
+    \raisebox{5mm}{\strong{#2}}
+    \vspace{3mm}
+  \end{tabular}
+  \linebreak
   \nopagebreak[4]
 }
 {
@@ -130,6 +134,7 @@ tiny_latex_include = r"""
 
 \renewenvironment{figure}[6]{
   \par
+  \addvspace{5mm}
   \begin{staticfigure}
 }{
   \end{staticfigure}

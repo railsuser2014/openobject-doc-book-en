@@ -9,9 +9,9 @@ is to install it or to find a working installation.
 The table below summarizes the various installation methods that will be described in the following
 sections.
 
- .. csv-table:: Comparison of the different methods of installation on Windows or Linux.
+.. csv-table:: *Comparison of the different methods of installation on Windows or Linux*
    :header: "Method","Average Time","Level of Complexity","Notes"
-   :widths: 20, 15, 15,30
+   :widths: 20,15,15,30
 
    "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
    "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
@@ -53,16 +53,16 @@ into production you're strongly advised to choose the stable version.
 
 To download the version of Open ERP for Windows, follow these steps:
 
-	#. Navigate to the site http://openerp.com.
+#. Navigate to the site http://openerp.com.
 
-	#. Click :menuselection:`Downloads` on the menu at the left then, under :guilabel:`Windows Installers`,
-	   :menuselection:`All in One`.
+#. Click :menuselection:`Downloads` on the menu at the left then, under :guilabel:`Windows Installers`,
+   :menuselection:`All in One`.
 
-	#. This brings up the demonstration version Windows installer, 
-	   currently :program:`openerp-allinone-setup-5.0.0-3`.
+#. This brings up the demonstration version Windows installer, 
+   currently :program:`openerp-allinone-setup-5.0.0-3`.
 
-	#. Save the file on your PC - it's quite a substantial size because it downloads everything including
-	   the PostgreSQL database system, so will take some time.
+#. Save the file on your PC - it's quite a substantial size because it downloads everything including
+   the PostgreSQL database system, so will take some time.
 
 .. index::
    single:  installation; administrator
@@ -105,14 +105,14 @@ Connecting users on other PCs to the Open ERP server
 To connect other computers to the Open ERP server you must set the server up so that it's
 visible to the other PCs, and install a GTK client on each of the those PCs:
 
-	#. Make your Open ERP server visible to other PCs by opening the Windows Firewall in the Control
-	   Panel, then asking the firewall to make an exception of the Open ERP server. In the
-	   :guilabel:`Exceptions` tab of Windows Firewall click on :guilabel:`Add a program...` and choose
-	   :guilabel:`Open ERP Server` in the list provided. This step enables other computers to see the
-	   Open ERP application on this server.
+#. Make your Open ERP server visible to other PCs by opening the Windows Firewall in the Control
+   Panel, then asking the firewall to make an exception of the Open ERP server. In the
+   :guilabel:`Exceptions` tab of Windows Firewall click on :guilabel:`Add a program...` and choose
+   :guilabel:`Open ERP Server` in the list provided. This step enables other computers to see the
+   Open ERP application on this server.
 
-	#. Install the Open ERP client (:program:`openerp-client-5.X.exe`), which you can download in the
-	   same way as you downloaded the other Open ERP software, onto the other PCs.
+#. Install the Open ERP client (:program:`openerp-client-5.X.exe`), which you can download in the
+   same way as you downloaded the other Open ERP software, onto the other PCs.
 
 .. tip:: Version matching
 
@@ -143,6 +143,7 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 
 .. figure:: images/new_login_dlg.png
    :align: center
+   :scale: 75
 
    *Dialog box on connecting a GTK client to a new Open ERP server*
 
@@ -154,10 +155,12 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 
 .. note:: Connection modes
 
-	In its default configuration, the Open ERP client connects to port 8069 on the server using the
-	XML-RPC protocol. You can change this and connect to port 8070 using the NET-RPC protocol instead.
+	In its default configuration at the time of writing, 
+	the Open ERP client connects to port 8069 on the server using the
+	XML-RPC protocol (from Linux) or port 8070 using the NET-RPC protocol instead (from Windows).
+	You can use either protocol from either operating system.
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
-	Open ERP can run XML-RPC as a secure connection, but not NET-RPC.
+	Open ERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
 The all-in-one installer also provides a web server, but this was not yet working at the time
 of writing.
@@ -168,53 +171,52 @@ Resolving errors with a Windows installation
 If you can't get Open ERP to work after installing your Windows system you'll find some ideas for
 resolving this below:
 
-	#. Is the Open ERP application working? Signed in to the server as an administrator, stop and
-	   restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
-	   :menuselection:`Start --> Programs --> OpenERP Server` .
+#. Is the Open ERP application working? Signed in to the server as an administrator, stop and
+   restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
+   :menuselection:`Start --> Programs --> OpenERP Server` .
 
-	#. Is the Open ERP application server set up correctly? Signed in to the server as
-	   Administrator, open the file \ ``openerp-server.conf``\  in \
-	   ``C:\Program Files\OpenERP AllInOne``\  and check its content. This file is generated during
-	   installation with information derived from the database. If you see something strange it's best to
-	   entirely reinstall the server from the demonstration installer rather than try to work out what's
-	   happening.
+#. Is the Open ERP application server set up correctly? Signed in to the server as
+   Administrator, open the file \ ``openerp-server.conf``\  in \
+   ``C:\Program Files\OpenERP AllInOne``\  and check its content. This file is generated during
+   installation with information derived from the database. If you see something strange it's best to
+   entirely reinstall the server from the demonstration installer rather than try to work out what's
+   happening.
 
-	       .. figure:: images/terp_server_conf.png
-	          :align: center
-	          :scale: 80
+	.. figure:: images/terp_server_conf.png
+	   :align: center
+	   :scale: 80
 	          
-	          *Typical Open ERP configuration file*
+	   *Typical Open ERP configuration file*
 
-	#. Is your PostgreSQL server running? Signed in as administrator, select :guilabel:`Stop Service`
-	   from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
-	   you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
-	   that the database server was working. Restart PostgreSQL.
+#. Is your PostgreSQL server running? Signed in as administrator, select :guilabel:`Stop Service`
+   from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
+   you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
+   that the database server was working. Restart PostgreSQL.
 	   
-	#. Does PostgreSQL work at all? Still in the PostgreSQL menu, start
-	   the pgAdmin III application which you can use to explore the database. Double-click on the \
-	   ``PostgreSQL4OpenERP``\  connection. 
-	   You can find the password in the Open ERP server configuration file.
-	   If the database server is working
-	   you'll be able to see some information about the empty database. If it's not then an error message
-	   will appear.
+#. Does PostgreSQL work at all? Still in the PostgreSQL menu, start
+   the pgAdmin III application which you can use to explore the database. Double-click on the \
+   ``PostgreSQL4OpenERP``\  connection. 
+   You can find the password in the Open ERP server configuration file.
+   If the database server is working
+   you'll be able to see some information about the empty database. If it's not then an error message
+   will appear.
 
-	#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then
-	   the swiftest approach is to reinstall them.
+#. Are your client programs correctly installed? If your Open ERP GTK clients haven't started then
+   the swiftest approach is to reinstall them.
 
-	#. Can remote client computers see the server computer at all? Check this by opening a command prompt
-	   window (enter \ ``cmd``\  in the window :menuselection:`Start --> Run...` ) and enter \ ``ping
-	   <address of server>``\  there (where \ ``<address of server>``\  represents the IP address of the
-	   server). The server should respond with a reply. 
+#. Can remote client computers see the server computer at all? Check this by opening a command prompt
+   window (enter \ ``cmd``\  in the window :menuselection:`Start --> Run...` ) and enter \ ``ping
+   <address of server>``\  there (where \ ``<address of server>``\  represents the IP address of the
+   server). The server should respond with a reply. 
 
-	#. Have you changed any of the server's parameters? At this point in the installation the port
-	   number of the server must be 8069 using the protocol XML-RPC.
+#. Have you changed any of the server's parameters? At this point in the installation the port
+   number of the server must be 8069 using the protocol XML-RPC.
 
-	#. Is there anything else in the server's history that can help you identify the problem? Open the file
-	   \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP AllInOne``\  
-	   (which you can only do when the server is stopped) and scan through the
-	   history for ideas. If something looks strange there, contributors to the Open ERP forums can often
-	   help identify the reason.
-
+#. Is there anything else in the server's history that can help you identify the problem? Open the file
+   \ ``openerp-server.log``\  in \ ``C:\Program Files\OpenERP AllInOne``\  
+   (which you can only do when the server is stopped) and scan through the
+   history for ideas. If something looks strange there, contributors to the Open ERP forums can often
+   help identify the reason.
 
 .. index::
    single: installation; Linux (Ubuntu)
@@ -246,17 +248,17 @@ so can be used to test the software.
 
 Here's a summary of the procedure:
 
-	#. Start Synaptic Package Manager, and enter your root password as required.
+#. Start Synaptic Package Manager, and enter your root password as required.
 
-	#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
+#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
 
-	#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\ then select it for
-	   installation along with its dependencies.
+#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\ then select it for
+   installation along with its dependencies.
 
-	#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for
-	   installation along with their dependencies. Click :guilabel:`Update Now` to install it all.
+#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for
+   installation along with their dependencies. Click :guilabel:`Update Now` to install it all.
 
-	#. Close Synaptic Package Manager.
+#. Close Synaptic Package Manager.
 
 Installing PostgreSQL results in a database server that runs and restarts automatically when the PC
 is turned on. If all goes as it should with the tinyerp-server package then tinyerp-server will also
@@ -286,25 +288,25 @@ In this section you'll see how to install Open ERP by downloading it from the s
 http://openerp.com, and how to install the libraries and packages that Open ERP depends on, onto a
 desktop version of Ubuntu. Here's a summary of the procedure:
 
-	#. Navigate to the page http://openerp.com with your web browser,
+#. Navigate to the page http://openerp.com with your web browser,
 
-	#. Click :menuselection:`Downloads` on the left menu,
+#. Click :menuselection:`Downloads` on the left menu,
 
-	#. Download the client and server files from the *Sources (Linux)* section into your home directory
-	   (or some other location if you've defined a different download area).
+#. Download the client and server files from the *Sources (Linux)* section into your home directory
+   (or some other location if you've defined a different download area).
 
 To download the PostgreSQL database and all of the other dependencies for Open ERP from packages:
 
-	#. Start Synaptic Package Manager, and enter the root password as required.
+#. Start Synaptic Package Manager, and enter the root password as required.
 
-	#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
+#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
 
-	#. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.3``\   then select it for
-	   installation along with its dependencies.
+#. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.3``\   then select it for
+   installation along with its dependencies.
 
-	#. Select all of Open ERP's dependences, an up-to-date list of which should be
-	   found in the installation documents on Tiny's website,
-	   then click :guilabel:`Update Now` to install them.
+#. Select all of Open ERP's dependences, an up-to-date list of which should be
+   found in the installation documents on Tiny's website,
+   then click :guilabel:`Update Now` to install them.
 
 .. index::
    single: Python
@@ -329,7 +331,7 @@ seconds or so, which indicates that the server is waiting for a client to connec
 
 .. figure:: images/terps_startup_log.png
    :align: center
-   :scale: 75
+   :scale: 90
    
    *Open ERP startup log in the console*
 
@@ -354,6 +356,7 @@ your particular operating system.
 
 .. figure:: images/terp_client_startup.png
    :align: center
+   :scale: 75
    
    *Open ERP client at startup*
 
@@ -384,14 +387,16 @@ section. You can connect different clients to the Open ERP server by modifying 
 parameters on each client. To do that, click the :guilabel:`Change` button on the connection dialog
 and set the following field as needed:
 
-*  :guilabel:`Server` : \ ``name``\   or \ ``IP address``\   of the server over the network,
+*  :guilabel:`Server` : \ ``name``\   or  \ ``IP address``\   of the server over the network,
 
-*  :guilabel:`Port` : the port, whose default is \ ``8069``\ or  \ ``8070``\ ,
+*  :guilabel:`Port` : the port, whose default is \ ``8069``\   or  \ ``8070``\ ,
 
-*  :guilabel:`Connection protocol` : \ ``XML-RPC``\ or \ ``NET-RPC``\  .
+*  :guilabel:`Connection protocol` : \ ``XML-RPC``\   or  \ ``NET-RPC``\  .
+
 
 .. figure:: images/terp_client_server.png
    :align: center
+   :scale: 75
 
    *Dialog box for defining connection parameters to the server*
 
@@ -433,10 +438,10 @@ The Open ERP Web server connects to the Open ERP server in the same way as an O
 using the NET-RPC protocol. Its default setup corresponds to that of the Open ERP server
 you've just installed, so should connect directly at startup.
 
-	#.	At the same console as you've just been using, go to the Openerp web directory by typing
-		:command:`cd openerp-web-5.X`.
+#.	At the same console as you've just been using, go to the Openerp web directory by typing
+	:command:`cd openerp-web-5.X`.
 
-	#. At a terminal window type :command:`start-openerp-web` to start the Open ERP Web server.
+#. At a terminal window type :command:`start-openerp-web` to start the Open ERP Web server.
 
 .. _fig-webwel:
 
@@ -472,7 +477,7 @@ the following points provide some indicators about how you can set your installa
 	found at \ ``http://www.pgadmin.org/`` \ ).
 
 #.	The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check
-	this by entering \ ``sudo netstat -anpt``\  t a terminal to see if port 5432 is visible there.
+	this by entering \ ``sudo netstat -anpt``\  at a terminal to see if port 5432 is visible there.
 
 #.	The database system has a default role of \ ``postgres``\   accessible by running under the Linux
 	postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql

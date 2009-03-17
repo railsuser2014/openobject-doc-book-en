@@ -2,6 +2,39 @@
    single: access rights
    single: access; user
 
+User Login
+==========
+
+.. tip:: Managing Passwords
+
+   If you let users change their passwords for themselves you'll have no direct control over the
+   password they choose.
+   You should have a written policy about password strength to try to maintain a level of security in
+   your system.
+
+.. index::
+   single: module; users_ldap
+
+.. tip:: Managing users through LDAP
+
+	With the :mod:`users_ldap` module, user accounts can be managed through an LDAP directory that can be
+	made common to various different company resources.
+
+	Connection parameters for the LDAP directory are then registered with the company definition.
+	You can provide a user profile template there from which new users are automatically created during
+	their first connection to Open ERP.
+
+.. index::
+   single: LDAP
+
+.. note:: LDAP
+
+	The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories
+	for various different resources through your standard TCP/IP network.
+
+	This enables users in the company to have the same username and password to access all
+	their applications (such as email and intranet).
+
 Managing access rights
 ======================
 
@@ -92,7 +125,7 @@ In the second tab of the user form, :guilabel:`Security` , add the \ ``Stock1``\
 just created.
 
 .. figure::  images/menu_access.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Groups that have access to the Stock Management menu*
@@ -190,9 +223,8 @@ You can then create additional rules on the same object to give specific rights 
 Modification history
 --------------------
 
-
 .. figure::  images/view_log.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Partner Record history*

@@ -11,9 +11,9 @@ procurement as a function of rules defined in the products.
 
 .. note:: Requirements Calculation
 
-    Requirements Calculation is often called the Scheduler.
+    Requirements Calculation is often called Scheduling.
 
-    It automatically starts once per day.
+    By default, it automatically starts once per day.
     You can also start it manually using the menu :menuselection:`Manufacturing --> Start All
     Schedulers`.
     It then uses the parameters defined in the products, the suppliers, and the company
@@ -81,7 +81,7 @@ deliveries and goods receipts. You can put them into a calendar view at any time
 deliveries or goods receipts.
 
 .. figure:: images/stock_planning.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Planning the deliveries of customer products*
@@ -110,7 +110,7 @@ for the remaining quantities. The first will be confirmed and the second will re
 waiting deliveries (or receipts).
 
 .. figure:: images/stock_picking_wizard.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Confirmation screen for delivered quantities*
@@ -143,7 +143,7 @@ To enter data about goods receipt manually you must use the menu :menuselection:
 receipt form.
 
 .. figure:: images/stock_getting.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Manual data entry for product receipt*
@@ -159,7 +159,7 @@ In this case Open ERP generates a list of all products waiting to be received fr
 :menuselection:`Stock Management --> Incoming Products --> Packing to Process`.
 
 .. figure:: images/stock_packing_in.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of items waiting for receipt*
@@ -197,7 +197,7 @@ You should install the :mod:`stock_location` module if routing products to custo
 in your warehouse is determined by the identity of the product itself.
 
 .. figure:: images/product_location.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Managing the paths from one location to another in a product form*
@@ -234,15 +234,17 @@ receipt note with a forecast date at the end of the rental period. So you genera
 pending receipt that you confirm when they are returned to your stores. To do this you should
 configure a product with the following rules:
 
-==================== ==============
-Field                Value
-==================== ==============
-Source location      Customer
-Destination location Stock
-Type of Movement     Manual
-Lead time            15 days
-Operation            Product return
-==================== ==============
+.. table:: *Example Product For Rental*
+
+   ==================== ==============
+   Field                Value
+   ==================== ==============
+   Source location      Customer
+   Destination location Stock
+   Type of Movement     Manual
+   Lead time            15 days
+   Operation            Product return
+   ==================== ==============
 
 Then when the product is delivered to the customer, Open ERP automatically generates a goods receipt
 form in the draft state ready for returning it to Stock. This is due in 15 days time. With such a
@@ -280,15 +282,17 @@ Finally, on the product form, create the following rule to show that when purcha
 don't arrive at your stores directly, but instead at the port of Shanghai. In this example the
 stores are configured to enter all the products in a location called 'Input'.
 
-==================== ========================
-Field                Value
-==================== ========================
-Source location      Input
-Destination location Shanghai Port
-Type of Movement     Automatic without steps
-Lead time            2 days
-Operation            Sending to Shanghai Port
-==================== ========================
+.. table:: *Rule to move products automatically to Shanghai Port*
+
+   ==================== ========================
+   Field                Value
+   ==================== ========================
+   Source location      Input
+   Destination location Shanghai Port
+   Type of Movement     Automatic without steps
+   Lead time            2 days
+   Operation            Sending to Shanghai Port
+   ==================== ========================
 
 Open ERP will then change the usual product receipt (which has them arriving in the Input
 location) to a delivery from this supplier to the external port. The move is automatically carried
@@ -296,35 +300,41 @@ out because operations at this level are too labour-intensive to be done manuall
 
 You then have to create a rule on the product form to move it from one location to another:
 
-==================== ==============================
-Field                Value
-==================== ==============================
-Source location      Shanghai Port
-Destination location Anvers Port
-Type of Movement     Manual
-Lead time            30 days
-Operation            Sending to Anvers Port by ship
-==================== ==============================
+.. table:: *Rule to move products manually from Shanghai Port to Anvers Port*
 
-==================== =================
-Field                Value
-==================== =================
-Source location      Anvers Port
-Destination location Anvers Customs
-Type of Movement     Manual
-Lead time            15 days
-Operation            Customs at Anvers
-==================== =================
+   ==================== ==============================
+   Field                Value
+   ==================== ==============================
+   Source location      Shanghai Port
+   Destination location Anvers Port
+   Type of Movement     Manual
+   Lead time            30 days
+   Operation            Sending to Anvers Port by ship
+   ==================== ==============================
 
-==================== ==============================
-Field                Value
-==================== ==============================
-Source location      Anvers Customs
-Destination location Stock
-Type of Movement     Manual
-Lead time            3 days
-Operation            Truck transport into stock
-==================== ==============================
+.. table:: *Rule to move products manually from Anvers Port to Anvers Customs*
+
+   ==================== =================
+   Field                Value
+   ==================== =================
+   Source location      Anvers Port
+   Destination location Anvers Customs
+   Type of Movement     Manual
+   Lead time            15 days
+   Operation            Customs at Anvers
+   ==================== =================
+
+.. table:: *Rule to move products manually from Anvers Customs to Stock*
+
+   ==================== ==============================
+   Field                Value
+   ==================== ==============================
+   Source location      Anvers Customs
+   Destination location Stock
+   Type of Movement     Manual
+   Lead time            3 days
+   Operation            Truck transport into stock
+   ==================== ==============================
 
 Once the rules have been configured, Open ERP will automatically prepare all the documents needed
 for the internal stock movements of products from one location to another. These documents will be
@@ -349,18 +359,20 @@ arrives in your company. To do that you just configure a rule for the product to
 in the Quality Control location rather than the Input location when the product is received from the
 supplier.
 
-==================== ==============================
-Field                Value
-==================== ==============================
-Source location      Input
-Destination location Quality Control
-Type of Movement     Manual
-Lead time            0 days
-Operation            Quality Control
-==================== ==============================
+.. table:: *Rule to move products manually from Input to Quality Control*
+
+   ==================== ==============================
+   Field                Value
+   ==================== ==============================
+   Source location      Input
+   Destination location Quality Control
+   Type of Movement     Manual
+   Lead time            0 days
+   Operation            Quality Control
+   ==================== ==============================
 
 Once this product has been received, Open ERP will then automatically manage the request for an
-internal movement to send it to the ``Quality Control``` location.
+internal movement to send it to the ``Quality Control`` location.
 
 .. Copyright © Open Object Press. All rights reserved.
 

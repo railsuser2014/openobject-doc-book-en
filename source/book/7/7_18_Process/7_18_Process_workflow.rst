@@ -16,7 +16,7 @@ the software in response to user actions. You handle all possible exceptions
 there so that the software is robust.
 
 .. figure:: images/process_sale_workflow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a workflow handling a customer order*
@@ -27,7 +27,7 @@ complete handling. A change of user process won't have any effect on the
 software but will show the user another way of working on a given problem.
 
 .. figure:: images/process_sale_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a process handling a customer order*
@@ -43,7 +43,7 @@ as:
 * showing the user menu for finding a specific document.
 
 .. figure:: images/process_cross_worfklow_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Relationship between workflow and user process*
@@ -64,7 +64,7 @@ the menu :menuselection:`Customize --> Manage Workflows`. Open ERP opens a graph
 modify the workflow for the selected document type.
 
 .. figure:: images/process_workflow_editor.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Workflow editor modifying the behaviour of invoices*
@@ -92,7 +92,7 @@ the processes it knows about that involve such forms:
 * processes for visiting customers and handling expenses.
 
 .. figure:: images/process_screen.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Button for entering a user process from a form*
@@ -109,7 +109,7 @@ the customer order management workflow to see in detail how that invoice is
 handled.
 
 .. figure:: images/process_subflow_icon.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A state that refers to another workflow*
@@ -125,7 +125,7 @@ then shows you:
 * The roles you need to make anything happen from this step.
 
 .. figure:: images/process_transition.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of a transition in a workflow*
@@ -143,7 +143,7 @@ define new processes or modify existing processes. When entering a process,
 Open ERP shows you the list of states available for that process.
 
 .. figure:: images/process_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Form for defining a process*
@@ -172,7 +172,7 @@ object. For each transition you can:
 * Put an explanatory notice in different languages.
 
 .. figure:: images/process_transition_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Screen for defining a process transition*

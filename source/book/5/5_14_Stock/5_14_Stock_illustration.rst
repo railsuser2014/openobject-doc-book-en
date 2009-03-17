@@ -22,32 +22,38 @@ empty and no operation is in progress nor planned.
 If you order '30 bicycles' from a supplier, Open ERP will then do the following operations after the
 receipt of the products:
 
-================================================== =============
-Location                                           Products
-================================================== =============
-Partner Locations > Suppliers > Suppliers          -30 bicycles
-Physical Locations > Tiny SPRL > Stock             +30 bicycles
-================================================== =============
+.. table:: *Stock Move operation from Suppliers to Stock*
+
+   ================================================== =============
+   Location                                           Products
+   ================================================== =============
+   Partner Locations > Suppliers > Suppliers          -30 bicycles
+   Physical Locations > Tiny SPRL > Stock             +30 bicycles
+   ================================================== =============
 
 If you deliver 2 bicycles to a European customer you will get the following transactions for the
 delivery:
 
-================================================== =============
-Location                                           Products
-================================================== =============
-Physical Locations > Tiny SPRL > Stock             -2 bicycles
-Partner Locations > Customers > European Customers +2 bicycles
-================================================== =============
+.. table:: *Stock Move operation from Stock to European Customers*
+
+   ================================================== =============
+   Location                                           Products
+   ================================================== =============
+   Physical Locations > Tiny SPRL > Stock             -2 bicycles
+   Partner Locations > Customers > European Customers +2 bicycles
+   ================================================== =============
 
 When the two operations are complete you'll then get the following stock in each location:
 
-================================================== =============
-Location                                           Products
-================================================== =============
-Partner Locations > Suppliers > Suppliers          -30 bicycles
-Physical Locations > Tiny SPRL > Stock             +28 bicycles
-Partner Locations > Customers > European Customers +2 bicycles
-================================================== =============
+.. table:: *Resulting stock situation*
+
+   ================================================== =============
+   Location                                           Products
+   ================================================== =============
+   Partner Locations > Suppliers > Suppliers          -30 bicycles
+   Physical Locations > Tiny SPRL > Stock             +28 bicycles
+   Partner Locations > Customers > European Customers +2 bicycles
+   ================================================== =============
 
 So you can see that the sum of the stocks of a product in all the locations in Open ERP is always
 zero. In accounting you'd say that the sum of the debits is equal to the sum of the credits.
@@ -87,25 +93,27 @@ Open ERP shows 28 in the system. You then have to reduce the number in Open ERP 
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
 
-================================================== =============
-Location                                           Products
-================================================== =============
-Physical Locations > Tiny SPRL > Stock             -2 bicycles
-Virtual Locations > Inventory Loss                 +2 bicycles
-================================================== =============
+.. table:: *Inventory operation to adjust stock*
+
+   ================================================== =============
+   Location                                           Products
+   ================================================== =============
+   Physical Locations > Tiny SPRL > Stock             -2 bicycles
+   Virtual Locations > Inventory Loss                 +2 bicycles
+   ================================================== =============
 
 The product stock under consideration then becomes:
 
-================================================== =============
-Location                                           Products
-================================================== =============
-Partner Locations > Suppliers > Suppliers          -30 bicycles
-Physical Locations > Tiny SPRL > Stock             +26 bicycles
-Partner Locations > Customers > European Customers +2 bicycles
-Virtual Locations > Inventory Loss                 +2 bicycles
-================================================== =============
+.. table:: *Real and counterpart stocks when operations are completed*
 
-*Real and counterpart stocks when the operations have been carried out*
+   ================================================== =============
+   Location                                           Products
+   ================================================== =============
+   Partner Locations > Suppliers > Suppliers          -30 bicycles
+   Physical Locations > Tiny SPRL > Stock             +26 bicycles
+   Partner Locations > Customers > European Customers +2 bicycles
+   Virtual Locations > Inventory Loss                 +2 bicycles
+   ================================================== =============
 
 This example shows one of the great advantages of this approach in terms of performance analysis.
 After a few months, you can just make a stock valuation of the location ``Virtual Locations >
@@ -116,16 +124,18 @@ need two wheels and a frame. This means that there should be a reduction of two 
 from real stock and the addition of a bicycle there. The consumption / production is formalized by
 moving products out of and into physical stock. The stock operations for this are as follows:
 
-====================================== ========== ================================
-Location                               Products   Step
-====================================== ========== ================================
-Virtual Locations > Default Production +2 Wheels  Consumption of raw materials
-Physical Locations > Tiny SPRL > Stock -2 Wheels  Consumption of raw materials
-Virtual Locations > Default Production +1 Frame   Consumption of raw materials
-Physical Locations > Tiny SPRL > Stock -1 Frame   Consumption of raw materials
-Virtual Locations > Default Production -1 Bicycle Manufacture of finished products
-Physical Locations > Tiny SPRL > Stock +1 Bicycle Manufacture of finished products
-====================================== ========== ================================
+.. table:: *Resulting stock situation from manufacture*
+
+   ====================================== ========== ================================
+   Location                               Products   Step
+   ====================================== ========== ================================
+   Virtual Locations > Default Production +2 Wheels  Consumption of raw materials
+   Physical Locations > Tiny SPRL > Stock -2 Wheels  Consumption of raw materials
+   Virtual Locations > Default Production +1 Frame   Consumption of raw materials
+   Physical Locations > Tiny SPRL > Stock -1 Frame   Consumption of raw materials
+   Virtual Locations > Default Production -1 Bicycle Manufacture of finished products
+   Physical Locations > Tiny SPRL > Stock +1 Bicycle Manufacture of finished products
+   ====================================== ========== ================================
 
 So you've now got the outcome you need from the consumption of raw materials and the manufacture of
 finished products.

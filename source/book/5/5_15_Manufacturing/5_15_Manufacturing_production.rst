@@ -34,39 +34,43 @@ manufacturing plan is given by the figure :ref:`fig-mrparm`.
 .. _fig-mrparm:
 
 .. figure:: images/mrp_armoire.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Plan of construction of a cabinet*
 
 The cabinet is assembled from raw materials and intermediate assemblies:
 
-================ =========================
-Product Code     Description
-================ =========================
-ARM100           Cabinet
-PANLAT           Wooden Side Panel
-PANA100          Rear Panel
-PROFIL           Metal Strut
-ETA100           Shelf
-PLET100          Shelf Panel
-BOIS 002         Wood Panel
-TAQ000           Panel Pins
-LIN040           Lintel
-================ =========================
+.. table:: *Product Definitions prior to defining Bills of Materials*
+
+   ================ =========================
+   Product Code     Description
+   ================ =========================
+   ARM100           Cabinet
+   PANLAT           Wooden Side Panel
+   PANA100          Rear Panel
+   PROFIL           Metal Strut
+   ETA100           Shelf
+   PLET100          Shelf Panel
+   BOIS 002         Wood Panel
+   TAQ000           Panel Pins
+   LIN040           Lintel
+   ================ =========================
 
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
 product and for the final cabinet assembly. These are given by the table below.
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         m2
-PANA100       1         m2
-PROFIL        4         m
-ETA100        3         Unit
-============  ========  ===============
+.. table:: *Bills of Materials*
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         m2
+   PANA100       1         m2
+   PROFIL        4         m
+   ETA100        3         Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -109,16 +113,18 @@ ETA100        3         Unit
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
 requirements of the finished products. Then if you want to manufacture 10 cabinets, the system can
-easily calculate what will be consumed:
+calculate what will be consumed:
 
-============  =================  ===============
-Product Code  Quantity           Unit of Measure
-============  =================  ===============
-BOIS002       2 * 0.083 + 0.25   Unit
-LIN040        1                  Unit
-BOIS002       0.083 * 3          m2
-TAQ000        12                 Unit
-============  =================  ===============
+.. table:: *Total Quantities*
+
+   ============  =================  ===============
+   Product Code  Quantity           Unit of Measure
+   ============  =================  ===============
+   BOIS002       2 * 0.083 + 0.25   Unit
+   LIN040        1                  Unit
+   BOIS002       0.083 * 3          m2
+   TAQ000        12                 Unit
+   ============  =================  ===============
 
 .. tip:: Bill of Materials
 
@@ -126,7 +132,7 @@ TAQ000        12                 Unit
    Configuration --> Bill of Materials --> Bill of Materials Structure`.
 
 .. figure:: images/mrp_bom_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Bill of Materials structure*
@@ -143,7 +149,7 @@ Materials` to define a new Bill of Materials.
     * From a product form use the menu :guilabel:`Structure of Bill of Materials` to the right.
 
 .. figure:: images/mrp_bom.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Screen defining a Bill of Materials*
@@ -173,7 +179,7 @@ change you can specify a revision number and some notes on the modifications you
    (which means that the user must belong to the group ``Usability / Extended View`` .
 
 .. figure:: images/mrp_bom_revision.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Revisions of a Bill of Materials*
@@ -224,12 +230,14 @@ So if you select a BoM using intermediate products that automatically generates 
 based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
 manufacture a cabinet, you'd create 6 production orders:
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PLET100       3         Unit
-BOIS002       0.25      m2
-============  ========  ===============
+.. table:: *Production Orders*
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PLET100       3         Unit
+   BOIS002       0.25      m2
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -315,32 +323,33 @@ it's been defined as multi-level.
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ARM100 cabinet in the way shown by the table arm100_phantom below,
-you'll get two production orders when the order is confirmed, as shown in the table 
-arm100_phantom_of below that.
+If you define the BoM for the ARM100 cabinet in the way shown by the table below,
+you'll get two production orders when the order is confirmed, as shown in the tables below that.
 
-============  ========  ===============  ===========
-Product Code  Quantity  Unit of Measure  Type of BoM
-============  ========  ===============  ===========
-ARM100        1         Unit             normal
-PANLAT        2         m2               normal
-PANA100       1         m2               phantom
-PROFIL        4         m                phantom
-ETA100        3         Unit             phantom
-============  ========  ===============  ===========
+.. table:: *Definition and use of phantom BoMs*
 
-Table: arm100_phantom: definition and use of phantom BoMs
+   ============  ========  ===============  ===========
+   Product Code  Quantity  Unit of Measure  Type of BoM
+   ============  ========  ===============  ===========
+   ARM100        1         Unit             normal
+   PANLAT        2         m2               normal
+   PANA100       1         m2               phantom
+   PROFIL        4         m                phantom
+   ETA100        3         Unit             phantom
+   ============  ========  ===============  ===========
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+.. table:: *Production Orders from phantom BoMs*
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -348,8 +357,6 @@ Product Code  Quantity  Unit of Measure
 PANLAT        2         Unit
 BOIS002       0.17      m2
 ============  ========  ===============
-
-Table: arm100_phantom_of: generated production orders
 
 Assembly Bills of Materials
 -----------------------------
@@ -423,14 +430,16 @@ Bill of Materials when you have a choice of BoMs.
 
 For example you can define the properties and the following groups:
 
-=====================  ============
-Property Group         Property
-=====================  ============
-Warranty               3 years
-Warranty               1 year
-Method of Manufacture  Serial
-Method of Manufacture  Batch
-=====================  ============
+.. table:: *Properties*
+
+   =====================  ============
+   Property Group         Property
+   =====================  ============
+   Warranty               3 years
+   Warranty               1 year
+   Method of Manufacture  Serial
+   Method of Manufacture  Batch
+   =====================  ============
 
 Once the Bills of Materials have been defined you could associate the corresponding properties to them. Then
 when the salesperson goes to encode a product line he can attach the properties there. If the
@@ -442,7 +451,7 @@ working in the Extended View mode. If you can't see it on your screen add the gr
 Extended View`` to your user.
 
 .. figure:: images/sale_line_property.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Properties on a customer order line*
@@ -491,7 +500,7 @@ described in the preceding chapter:
 * Using the Production plan.
 
 .. figure:: images/mrp_auto.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Automatically proposing production orders*
@@ -562,7 +571,7 @@ you can look at the process linked to your order using the :guilabel:`Process` b
 of the form.
 
 .. figure:: images/mrp_sale_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process for handling Sales Order SO007*
@@ -584,7 +593,7 @@ of the selected product.
 .. _fig-mrpbomtree:
 
 .. figure:: images/mrp_product_bom_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Composition of product PC2 in the demonstration data*
@@ -600,7 +609,7 @@ The manufacturing supervisor can then consult the product orders using the menu
 list of orders to start and the estimated start date to meet the ordered customer delivery date.
 
 .. figure:: images/mrp_production_list.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of production orders*
@@ -611,7 +620,7 @@ several of them, select the one corresponding to your order using the reference 
 order number (in this example ``SO007`` ).
 
 .. figure:: images/mrp_production_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *The detail of a production order*
@@ -634,7 +643,7 @@ The production order must be in the closed state as shown in the figure :ref:`fi
 .. _fig-mrpprdfrm:
 
 .. figure:: images/mrp_production_form_end.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Production order after the different stages*
@@ -653,7 +662,7 @@ as shown in the figure :ref:`fig-mrpprdlis`.
 .. _fig-mrpprdlis:
 
 .. figure:: images/mrp_production_list_end.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of production orders*
@@ -693,7 +702,7 @@ be done, there, as shown in the figure :ref:`fig-mrppacko`.
 .. _fig-mrppacko:
 
 .. figure:: images/mrp_packing_out.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of packing operations to be done*
@@ -730,7 +739,7 @@ if you want to group the deliveries from the same partner into a single invoice 
 invoice for each delivery individually.
 
 .. figure:: images/mrp_picking_invoice_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Invoicing of deliveries*
@@ -739,7 +748,7 @@ Invoices are generated automatically in the ``Draft`` state by Open ERP.
 You can modify invoices before approving them finally.
 
 .. figure:: images/mrp_invoice_list.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of invoices generated by the system based on deliveries*
@@ -756,41 +765,8 @@ product. You can consult the traceability through the whole manufacturing chain 
 serial number indicated on the product MB1. To look through the detailed history, use the menu
 :menuselection:`Stock Management --> Traceability --> Production Lots`.
 
-Find the product corresponding to the product or lot number. Once it's been found you can use the
-following actions:
-
-.. index::
-   single: traceability; upstream
-
-* Upstream traceability: trace where an identified component has been used, from the product
-  that it was used on to the customer that currently has it, if it has been tracked. 
-  (Note that the name is confusing - this would normally be considered a downstream direction.) 
-
-.. index::
-   single: traceability; downstream
-
-* Downstream traceability: trace where the components of an identified product at a
-  customer came from. 
-  (Note that the name is confusing - this would normally be considered an upstream direction.) 
-
-Examples of the two traceability types are given in the by the 
-figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
-
-.. _fig-mrptracu:
-
-.. figure:: images/mrp_tracability_upstream.png
-   :scale: 50
-   :align: center
-
-   *Upstream traceability from supplier to customers*
-
-.. _fig-mrptracd:
-
-.. figure:: images/mrp_tracability_downstream.png
-   :scale: 50
-   :align: center
-
-   *Downstream traceability from customer to suppliers*
+Find the product corresponding to the product or lot number. Once it's been found you can use
+traceability as described in the section :ref:`sect-lotmgt` in the :ref:`ch-stocks` chapter.
 
 .. index:: 
    single: manufacturing order
@@ -808,7 +784,7 @@ entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
 .. _fig-mrpprdnew:
 
 .. figure:: images/mrp_production_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *New production order*
@@ -818,7 +794,7 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 .. _fig-mrpprdproc:
 
 .. figure:: images/mrp_production_processus.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process for handling a production order*
@@ -891,7 +867,7 @@ You can set the starting time by modifying the corresponding action in the menu
 ``Run MRP Scheduler`` configuration document.
 
 .. figure:: images/stock_cron.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuring the start time for calculating requirements*

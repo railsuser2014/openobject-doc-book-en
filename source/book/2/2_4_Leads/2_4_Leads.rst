@@ -70,7 +70,7 @@ You can also import a huge list of leads. That's useful if you've bought a datab
 potential prospects and you want to load them all into the system to handle them all at the same time.
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in
-another format it's very simple to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
+another format it's easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
 Open the leads list using the menu :menuselection:`CRM & SRM --> Sales -> Leads -> My Leads`. At
 the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a form for importing the
 data.
@@ -81,7 +81,7 @@ data.
 
    *Importing leads into the system*
 
-You then set which columns are present in your CSV file in the correct order. Then select your file
+You then define which columns are present in your CSV file in the correct order. Then select your file
 and click on :guilabel:`Import`. Check in the chapter about system administration, :ref:`ch-config`, for more
 information on import and export.
 

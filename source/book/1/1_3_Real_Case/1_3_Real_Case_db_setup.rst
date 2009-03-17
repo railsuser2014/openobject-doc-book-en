@@ -27,15 +27,16 @@ Financial Accounting --> Financial Accounts --> Account Types` and then clicking
 :guilabel:`New` button. You'll need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
-============== ======== ========  =============== =============== ===============
-Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
-============== ======== ========  =============== =============== ===============
-View           view     5         Positive        None            unchecked
-Income         income   5         Positive        Unreconciled    unchecked         
-Expense        expense  5         Positive        Unreconciled    unchecked
-Cash           cash     5         Positive        Balance         unchecked
-============== ======== ========  =============== =============== ===============
+.. table:: *Defining Account Types*
 
+   ============== ======== ========  =============== =============== ===============
+   Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
+   ============== ======== ========  =============== =============== ===============
+   View           view     5         Positive        None            unchecked
+   Income         income   5         Positive        Unreconciled    unchecked         
+   Expense        expense  5         Positive        Unreconciled    unchecked
+   Cash           cash     5         Positive        Balance         unchecked
+   ============== ======== ========  =============== =============== ===============
 
 .. _fig-oech03accty:
 
@@ -58,16 +59,18 @@ And one 'organizing' account that's just a view of the other five. So
 you'll need the following six accounts, one of which is shown
 in :ref:`fig-oech03accts`.
 
-============= ==== ============= =============== ============ =========
-Name          Code Internal Type Parent          Account Type Reconcile
-============= ==== ============= =============== ============ =========
-Minimal Chart 0    View                          View         unchecked
-Payable       AP   Payable       0 Minimal Chart Expense      checked
-Receivable    AR   Receivable    0 Minimal Chart Income       checked
-Cash          C    Others        0 Minimal Chart Cash         unchecked
-Purchases     P    Others        0 Minimal Chart Expense      unchecked
-Sales         S    Others        0 Minimal Chart Income       unchecked
-============= ==== ============= =============== ============ =========
+.. table:: *Defining Accounts*
+
+   ============= ==== ============= =============== ============ =========
+   Name          Code Internal Type Parent          Account Type Reconcile
+   ============= ==== ============= =============== ============ =========
+   Minimal Chart 0    View                          View         unchecked
+   Payable       AP   Payable       0 Minimal Chart Expense      checked
+   Receivable    AR   Receivable    0 Minimal Chart Income       checked
+   Cash          C    Others        0 Minimal Chart Cash         unchecked
+   Purchases     P    Others        0 Minimal Chart Expense      unchecked
+   Sales         S    Others        0 Minimal Chart Income       unchecked
+   ============= ==== ============= =============== ============ =========
 
 .. _fig-oech03accts:
 
@@ -97,14 +100,16 @@ to partners, and expenses and income to product categories.
 Create properties using :menuselection:`Administration --> Configuration --> 
 Properties --> Default Properties` and then clicking the :guilabel:`New` button. 
 
-============================== ========= ================== =============================== ===============
-Name                           Company   Fields             Value                           Parent Resource
-============================== ========= ================== =============================== ===============
-property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
-property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
-property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
-property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
-============================== ========= ================== =============================== ===============
+.. table:: *Defining Properties*
+
+   ============================== ========= ================== =============================== ===============
+   Name                           Company   Fields             Value                           Parent Resource
+   ============================== ========= ================== =============================== ===============
+   property_account_payable       Tiny sprl Account Payable    (account.account) AP Payable    (None) 
+   property_account_receivable    Tiny sprl Account Receivable (account.account) AR Receivable (None) 
+   property_account_expense_categ Tiny sprl Expense Account    (account.account) P Purchases   (None) 
+   property_account_income_categ  Tiny sprl Income Account     (account.account) S Sales       (None) 
+   ============================== ========= ================== =============================== ===============
 
 .. tip:: Mistakes in configuring accounts and properties
 
@@ -131,13 +136,15 @@ to another when invoices are raised and then paid. Create journals from the menu
 :menuselection:`Financial Management --> Configuration --> 
 Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
 
-===================== ==== ============= ================= ================ ===================== ======================
-Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
-===================== ==== ============= ================= ================ ===================== ======================
-Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
-Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
-Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
-===================== ==== ============= ================= ================ ===================== ======================
+.. table:: *Defining Journals*
+
+   ===================== ==== ============= ================= ================ ===================== ======================
+   Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
+   ===================== ==== ============= ================= ================ ===================== ======================
+   Purchase Journal      PUJ  Purchase      Journal View      Purchase Journal P Purchases           P Purchases
+   Sale Journal          SAJ  Sale          Journal View      Sale Journal     S Sales               S Sales
+   Bank Journal          BNK  Cash          Cash Journal View Account Journal  C Cash                C Cash
+   ===================== ==== ============= ================= ================ ===================== ======================
 
 .. tip:: Mistakes in configuring journals
 
@@ -180,6 +187,7 @@ make it editable by clicking the :guilabel:`Edit` button to the upper left of th
 Change the following:
 
 *  :guilabel:`Name` : \ ``Ambitious Plumbing Enterprises``\  ,
+
 *  :guilabel:`Contact Name` : \ ``George Turnbull``\  .
 
 Before you save this, look at the partner's accounting setup by clicking the fifth tab
@@ -213,7 +221,7 @@ and you can upload a company logo of a specific size for the reports. Click :gui
 
 .. figure::  images/openerp_ch03_co.png
    :align: center
-   :scale: 60
+   :scale: 75
 
    *Changing company details*
 
@@ -357,37 +365,37 @@ Click :guilabel:`Save`.
 
 Now create a new product:
 
-	#.	Go to the :menuselection:`Products --> Products` menu and click :guilabel:`New`.
+#.	Go to the :menuselection:`Products --> Products` menu and click :guilabel:`New`.
 
-	#.	Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field.
+#.	Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field.
 
-	#.	Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
-		:guilabel:`Radiators` category.
+#.	Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
+	:guilabel:`Radiators` category.
 
-	#.	The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
-		The fields :guilabel:`Procure Method`, :guilabel:`Supply Method`, :guilabel:`Default UOM`, 
-		and :guilabel:`Purchase UOM` should
-		also stay at their default values: in fact every other field in this tab remains untouched.
+#.	The :guilabel:`Product Type` field should stay as \ ``Stockable Product``\   its default value.
+	The fields :guilabel:`Procure Method`, :guilabel:`Supply Method`, :guilabel:`Default UOM`, 
+	and :guilabel:`Purchase UOM` should
+	also stay at their default values: in fact every other field in this tab remains untouched.
 
-        .. figure::  images/product.png
-           :align: center
-           :scale: 60
+	.. figure:: images/product.png
+	   :align: center
+	   :scale: 75
            
-           *Product Form*
+	   *Product Form*
 
-	#.	Click on the :guilabel:`Prices & Suppliers` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
-		field and \ ``132.50``\  into the :guilabel:`Sale Price` field.
+#.	Click on the :guilabel:`Prices & Suppliers` tab and enter \ ``57.50``\  into the :guilabel:`Cost Price`
+	field and \ ``132.50``\  into the :guilabel:`Sale Price` field.
 
-	#.	Click the :guilabel:`Accounting` tab, then click :guilabel:`Save` and observe that
-		:guilabel:`Accounting Properties` here remain empty. When product
-		transactions occur, the Income and Expense accounts that you've just defined in the Product
-		Category are used by the Product unless an account is specified here, directly in the product, to
-		override that.
+#.	Click the :guilabel:`Accounting` tab, then click :guilabel:`Save` and observe that
+	:guilabel:`Accounting Properties` here remain empty. When product
+	transactions occur, the Income and Expense accounts that you've just defined in the Product
+	Category are used by the Product unless an account is specified here, directly in the product, to
+	override that.
 
-	#.	Once the product is saved it changes to a non-editable state. If you had entered data
-		incorrectly or left a required field blank, the form would have stayed editable and you'd need to
-		click from tab to tab to find a field colored red, with an error message below it, that would have
-		to be correctly filled in.
+#.	Once the product is saved it changes to a non-editable state. If you had entered data
+	incorrectly or left a required field blank, the form would have stayed editable and you'd need to
+	click from tab to tab to find a field colored red, with an error message below it, that would have
+	to be correctly filled in.
 
 .. index::
    single: stock; location
@@ -402,18 +410,18 @@ was created. You'll use this default structure in this example.
 Open ERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
 that act as their names suggest, and ``Virtual Locations`` that are used by Open ERP for its own purposes.
 
-	#.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
-		Locations` to reach a list view of the locations (not the tree view).
+#.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
+	Locations` to reach a list view of the locations (not the tree view).
 
-	#.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
-		location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
-		An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
-		the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
-		company name.
+#.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
+	location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
+	An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
+	the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
+	company name.
 
-	#.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
-		--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
-		should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
+#.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
+	--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
+	should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
 
 .. todo:: Get this, below, right!
 

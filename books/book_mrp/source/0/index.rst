@@ -13,8 +13,8 @@ all of a company's daily activities. Integrated management software is today ver
 key source of significant competitive advantage. 
 
 Such software is commonly called an ERP (Enterprise Resource Planning) system. This book
-is about the use of Open ERP, a leading example of ERP system, 
-for manufacturing and stock management. It's one of a series of books on the use
+is about the use of Open ERP, a leading ERP system, 
+for manufacturing and stock management. It's one of a series of books from Open Object Press on the use
 of Open ERP in a range of enterprise settings.
 
 .. raw:: latex

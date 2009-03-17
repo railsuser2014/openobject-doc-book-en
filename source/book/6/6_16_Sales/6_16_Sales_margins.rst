@@ -24,7 +24,7 @@ If you want to check your margins on sales orders you can install the :mod:`sale
 from ``addons-extra``. This will add margins calculated on each order line and on the order total.
 
 .. figure:: images/sale_margin.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *An order with the module sale_margin*
@@ -69,7 +69,7 @@ You can also filter the analysis on certain types of invoice:
 * Paid invoices only.
 
 .. figure:: images/product_margin_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Screen showing product margins*
@@ -89,7 +89,7 @@ You then get a margin analysis table. The following fields are given by product 
 * :guilabel:`Expected Sales` : the number of products sold multiplied by the list price.
 
 .. figure:: images/product_margin_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of margins for a given product*
@@ -133,7 +133,7 @@ This module adds a tab on the analytic account form to handle the different marg
 representing a project or a case, and several new reports on those accounts.
 
 .. figure:: images/account_analytic_analysis_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of margins for a case*

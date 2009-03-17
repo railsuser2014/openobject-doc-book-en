@@ -18,20 +18,22 @@ Defining a new product
 
 To start, define the following product:
 
-==================== ======================
-Field                Value
-==================== ======================
-Name                 Central Heating Type 1
-Code                 CCT1
-Product Type         Stockable
-Method of restocking Purchase
-==================== ======================
+.. table:: *Product Definition*
+
+   ==================== ======================
+   Field                Value
+   ==================== ======================
+   Name                 Central Heating Type 1
+   Code                 CCT1
+   Product Type         Stockable
+   Method of restocking Purchase
+   ==================== ======================
 
 Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` to define a new
 product.
 
 .. figure:: images/stock_product.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a new product*
@@ -87,7 +89,7 @@ available from the product form.
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Change in stock for a product managed as Make to Stock*
@@ -95,7 +97,7 @@ available from the product form.
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Change in stock for a product managed as Make to Order*
@@ -127,35 +129,35 @@ price quotation to a supplier or a manufacturing order.
 Open ERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-The following illustrates different cases for automatic restocking.
+Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
 
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
-   :scale: 50
+   :scale: 90
    :align: center
 
-   *Workflow for automatic procurement, depending on the configuration of the product*
+   *Workflow for automatic procurement, dependent on the configuration of the product*
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
-================== ===================== =====================
-Mode of restocking Produce               Buy
-================== ===================== =====================
-MTS                Wait for availability Wait for availability
-MTO                Production Order      Supplier Order
-================== ===================== =====================
+.. table:: *Restocking Modes for Make to Stock and Make To Order*
 
-*Showing restocking for a product of type 'stockable' or 'consumable'.*
+   ================== ===================== =====================
+   Mode of restocking Produce               Buy
+   ================== ===================== =====================
+   MTS                Wait for availability Wait for availability
+   MTO                Production Order      Supplier Order
+   ================== ===================== =====================
 
-================== ===================== =====================
-Mode of restocking Produce               Buy
-================== ===================== =====================
-MTS                /                     /
-MTO                Create task           Subcontract
-================== ===================== =====================
+.. table:: *Restocking Modes for Services*
 
-*Showing restocking for a product of type 'service'.*
+   ================== ===================== =====================
+   Mode of restocking Produce               Buy
+   ================== ===================== =====================
+   MTS                /                     /
+   MTO                Create task           Subcontract
+   ================== ===================== =====================
 
 You'll see the automated management processes for restocking in detail further on in this chapter.
 
@@ -174,18 +176,20 @@ measure category.
 The table below shows some examples of units of measure and their category. The factor is used to
 convert from one unit of measure to another as long as they are in the same category.
 
-========= ============ ======
-UoM       Category     Factor
-========= ============ ======
-Kg        Weight            1
-Gram      Weight         1000
-Tonne     Weight         0.01
-Hour      Working time      8
-Day       Working time      1
-Half-day  Working time      2
-Item      Unit              1
-100 Items Unit           0.01
-========= ============ ======
+.. table:: *Example Units of Measure*
+
+   ========= ============ ======
+   UoM       Category     Factor
+   ========= ============ ======
+   Kg        Weight            1
+   Gram      Weight         1000
+   Tonne     Weight         0.01
+   Hour      Working time      8
+   Day       Working time      1
+   Half-day  Working time      2
+   Item      Unit              1
+   100 Items Unit           0.01
+   ========= ============ ======
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
 category could be expressed in Kg, Tonnes or Grammes. You can't express them in hours or pieces.

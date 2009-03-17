@@ -80,7 +80,7 @@ node whose left edge is colored maroon rather than grey.
 .. _fig-procquot:
 
 .. figure:: images/process_quotation_flow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a process handling a customer order quotation*
@@ -121,7 +121,7 @@ transition:
 * The actions available to you from the state.
 
 .. figure:: images/process_transition_zoom.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of a transition in the process*
@@ -138,7 +138,7 @@ gives you a high-level view of the different actions carried out and their
 results.
 
 .. figure:: images/process_sale_flow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *The process after confirming a process into an order*
@@ -167,7 +167,7 @@ Click the :guilabel:`Process` button to open the detailed
 process of engagement.
 
 .. figure:: images/process_employee_flow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a process engaging a new employee*
@@ -203,7 +203,7 @@ documents to be completed and posted or faxed to the institutions:
 * Statutary forms for government departments.
 
 .. figure:: images/process_document.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a process required for the declarations for a new employee*

@@ -26,7 +26,7 @@ A warehouse is defined by a link between three locations:
   or the same.
 
     .. figure:: images/stock_warehouse.png
-       :scale: 50
+       :scale: 75
        :align: center
 
        *Warehouse parameters*
@@ -69,7 +69,7 @@ indicated in the rule, the system will automatically propose a procurement to in
 of virtual stock to the maximum level given in the rule.
 
 .. figure:: images/stock_min_rule.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of minimum stock rules*

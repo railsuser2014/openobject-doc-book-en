@@ -19,16 +19,18 @@ between the time on an order and that of the delivery.
 To see a calculation of the lead times, take the example of the cabinet above. Suppose that the
 cabinet is assembled in two steps, using the two following Bills of Materials.
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+.. table:: *Bills of Materials*
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -152,7 +154,7 @@ workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
 .. _fig-mrpwkc:
 
 .. figure:: images/mrp_workcenter.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a workcenter*
@@ -164,7 +166,7 @@ to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
 .. _fig-mrpwkcwh:
 
 .. figure:: images/mrp_workcenter_working_hour.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Working hours for a workcenter*
@@ -221,7 +223,7 @@ costs of the workcenter operations. If you leave the different fields empty Open
 effect on the analytic accounts.
 
 .. figure:: images/mrp_workcenter_tab.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Data about analytic accounts for a workcenter*
@@ -242,7 +244,7 @@ description. Later in this chapter you'll see that a routing can also be associa
 location. That enable you to indicate where assembly takes place.
 
 .. figure:: images/mrp_routing.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a routing with three operations*
@@ -264,7 +266,7 @@ product order. On a production order you'll find assembly operations for manufac
 :guilabel:`Operations` tab.
 
 .. figure:: images/mrp_production_workorder.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Operations on a production order*
@@ -287,7 +289,7 @@ Configuration --> Workcenters`. Then select one or several workcenters and click
 interval is calculated (by day, week or month).
 
 .. figure:: images/mrp_workcenter_load.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Charge by workcenter*
@@ -324,7 +326,7 @@ Operations` to be carried out. The assembly workers must then encode each step o
 operation and, for each step, the real working time for it.
 
 .. figure:: images/mrp_operations_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of operations to be carried out.*
@@ -337,7 +339,7 @@ operation on hold and start again later.
 The following process is attached to each operation.
 
 .. figure:: images/mrp_operations_workflow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process for handling an operation*
@@ -383,7 +385,7 @@ order:
 #. The event code.
 
 .. figure:: images/mrp_operation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Capturing events for work orders*
@@ -488,7 +490,7 @@ exception in 'temporary' or 'to be corrected'. The exception is temporary if the
 it automatically, for example if a procurement rule is defined for minimum stock.
 
 .. figure:: images/mrp_exception.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of a procurement in exception*
@@ -504,7 +506,7 @@ To procure internally, you can create a procurement order manually. Use the menu
 :menuselection:`Manufacturing --> Procurement Orders --> New Procurement` to do this.
 
 .. figure:: images/mrp_procurement.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Encoding for a new procurement order*
@@ -514,7 +516,7 @@ for the product concerned. This procurement wll start a task, a purchase order f
 a production depending on the product configuration.
 
 .. figure:: images/mrp_procurement_flow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Workflow for handling a procurement, a function of the product configuration*
@@ -559,7 +561,7 @@ If the module :mod:`mrp_subproduct` has been installed you get a new field in th
 lets you set secondary products resulting from the manufacture of the finished product.
 
 .. figure:: images/mrp_bom_subproduct.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of waste products in a Bill of Materials*
@@ -569,7 +571,7 @@ you pick up the list of all products in the the third tab of the production orde
 Products'.
 
 .. figure:: images/mrp_production.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A production order producing several finished products*
@@ -626,7 +628,7 @@ In Open ERP a repair will have the following effects:
 
 * Receipt and delivery of product from and to the end user,
 
-* Adding operations in the product traceability,
+* Adding operations that can be seen in the product's traceability,
 
 * Invoicing items used and/or free for repairs.
 
@@ -639,7 +641,7 @@ the system. You'll see a blank form for the repair data, as shown in the figure 
 .. _fig-mrprepnew:
 
 .. figure:: images/mrp_repair_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Entering data for a new repair*
@@ -689,7 +691,7 @@ address and type of invoice, as well as additional line items that need to be ad
 bill.
 
 .. figure:: images/mrp_repair_tab2.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Repair form, second tab*
@@ -706,7 +708,7 @@ figure :ref:`fig-mrprepflow` shows this repair process.
 .. _fig-mrprepflow:
 
 .. figure:: images/mrp_repair_workflow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process for handling a repair*
@@ -760,7 +762,7 @@ have to replace the shelf PANLAT, you must enter data for the repair as shown in
 .. _fig-mrpreppan:
 
 .. figure:: images/mrp_repair_panlat.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Repair of a shelf in a cabinet*

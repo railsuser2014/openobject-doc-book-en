@@ -56,7 +56,7 @@ as shown in screenshot :ref:`fig-oech2-main`:
 
 Two menus are available on the left:
 
-* :guilabel:`Partners`,
+* :menuselection:`Partners`,
 
 * :menuselection:`Administration`.
 
@@ -349,7 +349,7 @@ them to get a feel for their use.
 
 .. figure:: images/partner.png
    :align: center
-   :scale: 65
+   :scale: 80
 
    *Partner form*
 

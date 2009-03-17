@@ -17,54 +17,30 @@ configure the terminology of the menus and forms in the user interface and for m
 access rights to the menus and the various underlying business objects.
 
 .. index::
-   single: change user password
-..
+   single: menu, duplicating
 
-.. todo:: I don't think this is useful as it stands, needs to be modified
+Changing the menu
+-----------------
 
-Letting users change their password themselves
-----------------------------------------------
-
-When you signed onto the \ ``openerp_ch02``\   database as the administrator, two menus gave you
-access to forms for changing your password:
-
-*  :menuselection:`Administration --> Users --> Users` gives a list of all users: click on your own
-   name in that list and a form appears containing a field that with your password (don't click the
-   :guilabel:`Edit` button above the form for the moment, and don't click the :guilabel:`Edit`  icon to
-   the right of the list of users either)
-
-*  :menuselection:`Administration --> Users --> Users --> Change My Password` shows another list,
-   this time with only you in that list: click on your own name and you'll see a form where only the
-   password and signature can be edited (again, don't edit this at the moment).
-
-These two points mentioned above are found in the :menuselection:`Administration` branch of your
-menu, which is only visible to users who are members of the \ ``admin``\   group (login again as \
-``demo``\   if you want to check this). You can easily make a menu item accessible to everyone by
-moving it or duplicating it, so you can make the :guilabel:`Change My Password` menu accessible to
-everybody.
-
-To do this, select the menu item :menuselection:`Administration --> Users --> Users --> Change My
-Password`. Then click on the line containing the word Administrator (but not on the name \
-``Administrator``\   itself) and click the :guilabel:`Switch` button to bring up the menu item as an
+As administrator, and using the web client, select a menu item (but don't click it).
+Click on the line containing
+:menuselection:`Administration --> Translations --> Import/Export --> Export a Translation File`
+(but not on the string \ ``Export a Translation File``\   itself) and click the 
+:guilabel:`Switch` button to bring up the menu item as an
 editable form (you can do the same using the GTK client – there you select the line and click the
 :guilabel:`View` button instead).
 
-You could now edit this form – change its :guilabel:`Parent Menu`, which moves the entry to a
+You could now edit this form (**but don't do that, read the next paragraph first!**) – change 
+its :guilabel:`Parent Menu`, which moves the entry to a
 different part of the menu system; edit its :guilabel:`Menu` name to change how it appears in the
 menu tree, or give it a new :guilabel:`Icon`. Or you could give it a new :guilabel:`Action` entirely
 (but this would lose the point of this particular exercise).
 
-Instead of editing this form, which is the original menu entry, duplicate it instead. With the web
+Instead of editing this form, which is the original menu entry, duplicate it. With the web
 client you must first make the form read-only by clicking the :guilabel:`Cancel` button, then you
 click the :guilabel:`Duplicate` button that appears (in the GTK client, click :menuselection:`Form
 --> Duplicate`  from the top menu). The form that remains is now the duplicate entry, not the
 original.
-
-.. figure::  images/new_menu.png
-   :scale: 50
-   :align: center
-
-   *Menu enabling you to change your own password, accessible to all users*
 
 To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleting what's there and
 replacing it with another menu that everyone can see, such as :guilabel:`Tools` or :guilabel:`Human
@@ -74,40 +50,8 @@ then click :guilabel:`Main Menu` to see the results.
 
 .. tip:: Duplicating the menu
 
-	If you're planning to modify a menu you should duplicate it first.
-	In this way you'll always keep a link to the original menu that works if you need it to.
-
-.. tip:: Managing Passwords
-
-	If you let users change their passwords for themselves you'll have no direct control over the
-	password they choose.
-	You should have a written policy about password strength to try to maintain a level of security in
-	your system.
-
-.. index::
-   single: module; users_ldap
-
-.. tip:: Managing users through LDAP
-
-	With the :mod:`users_ldap` module, user accounts can be managed through an LDAP directory that can be
-	made common to various different company resources.
-
-	Connection parameters for the LDAP directory are then registered with the company definition.
-	You can provide a user profile template there from which new users are automatically created during
-	their first connection to Open ERP.
-
-.. index::
-   single: LDAP
-..
-
-
-.. note:: LDAP
-
-	The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories
-	for various different resources through your standard TCP/IP network.
-
-	This enables users in the company to have the same username and password to access all
-	their applications (such as email and intranet).
+   If you're planning to modify a menu you should duplicate it first.
+   In this way you'll always keep a link to the original menu that works if you need it to.
 
 Personalizing the welcome page for each user
 --------------------------------------------
@@ -127,7 +71,7 @@ To make modifications for a particular user, edit the user configuration again i
 different menu entries for the two fields :guilabel:`Home Action` and :guilabel:`Menu Action`.
 
 .. figure::  images/new_home.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Selecting a new welcome page*
@@ -170,7 +114,7 @@ entering new documents.
 
 
 .. figure::  images/set_default.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Inserting a new default value*
@@ -205,32 +149,6 @@ You can do this one of two ways:
 
 .. todo:: - check the details of representation below
 
-.. note:: CSV
-
-	CSV (Comma-Separated Values) is an open text file format, representing tabular data where values
-	are separated by commas. These files use a file extension of .csv, and the format is a very common
-	one for exporting data from one software system to another.
-
-	Each line of the file corresponds to a record in the table, and the cells of each row are separated
-	by the commas. For example, the following file:
-
-	        LastName, FirstName, Company
-
-	        Robins, Gerald, SOS Plumbers
-
-	        Lacoste, John, Extra-Textiles
-
-	        Schumacher, Helen, Cook Chain
-
-
-        .. csv-table:: Resulting table
-            :header: "LastName","FirstName","Company"
-            :widths:  8,8,8
-
-           "Robins","Gerald","SOS Plumbers"
-           "Lacoste","John","Extra-Textiles"
-           "Schumacher","Helen","Cook Chain"
-
 The same approach is used to translate terms that haven't been created yet. This can be useful, for
 example, with modules that haven't yet been translated into English or any other language that you
 want.
@@ -242,12 +160,17 @@ Translation through a CSV file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To translate or modify all of the system's phrases you first have to export a translation file in
-CSV form.
+CSV form. And to do that, you have to install a language into Open ERP. To load a translation
+that already exists in Open ERP use
+:menuselection:`Administration --> Translations --> Load an Official Translation`
+choose a language and then click :guilabel:`Start Installation`.
 
-.. todo:: what's this?
-
-.. :menuselection:`Administration --> Translations --> Import/Export --> Export a Translation file`
-.. *Français*  *New Language* \ ``.csv``\
+Then export it using 
+:menuselection:`Administration --> Translations --> Import/Export --> Export a Translation file. 
+Select the language, then the :guilabel:`CSV File` format, then one or more (or all) modules.
+Click :guilabel:`Get File` to start the download process, then click the small 
+:guilabel:`Save` icon to save the file somewhere. A French translation would be
+named fr_FR.csv by default, but you can use whatever you like. 
 
 .. note:: UTF-8 format
 
@@ -257,26 +180,29 @@ CSV form.
 	characters.
 
 .. figure::  images/csv_transl.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *CSV translation file with the translation superimposed*
 
-The file contains five columns: :guilabel:`type` , :guilabel:`name`, :guilabel:`res_id`,
+The file contains sixe columns: :guilabel:`module` , 
+:guilabel:`type` , :guilabel:`name`, :guilabel:`res_id`,
 :guilabel:`src`, and :guilabel:`value`. You have to ensure that the first line, which specifies
-these column names, remains untouched. The :guilabel:`src`  field contains the base text in English,
+these column names, remains untouched. 
+
+The :guilabel:`src`  field contains the base text in English,
 and the :guilabel:`value` field contains a translation into another conventional language or into a
 specialist technical phrase. If there's nothing at all in the :guilabel:`value` field then the
 English translation will automatically be used on the the form you see.
 
-.. tip:: When should you modify the text?
+.. tip:: Where should you modify the text?
 
    Most of the time, you will find the text that you want to modify in several lines of the CSV
    file.
    Which line should you modify?
-   Refer to the two columns type (column A) and name (column B).
-   Some lines have the name :guilabel:`ir.ui.menu` which shows that this is a menu entry.
-   Others have a type of :guilabel:`selection`, which indicates you that you'd see this entry in a drop-down
+   Refer to the two columns :guilabel:`type` (in column B) and :guilabel:`name` (in column C).
+   Some lines have the name :guilabel:`ir.ui.menu` in the :guilabel:`name` column which shows that this is a menu entry.
+   Others have :guilabel:`selection` in the :guilabel:`type` column, which indicates that you'd see this entry in a drop-down
    menu.
 
 You should then load the new file into your Open ERP system using the menu
@@ -295,33 +221,30 @@ new terminology.
 
 .. tip:: Partial translations
 
-   You can load only some of the lines in a translation file by deleting most of the lines in the
+   You can load a selection of the lines in a translation file by deleting most of the lines in the
    file and then loading back only the changed ones. Open ERP then changes only the uploaded lines
    and leaves the original ones alone.
 
 Changes through the client interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. *New Language*
-
-Then you should open the form that you want to translate.
-
-.. todo:: As usual I don't know where these came from or why
-
-.. *Translate this resource*  *Search*
+You can also change labels and other screen items on screen in the web client. 
+To do that, open the form that you want to translate, then click the 
+:guilabel:`Translate this resource.` icon to its top right. 
+You then have the choice of translating:
 
 * the data in the system (contained in the :guilabel:`Fields`),
 
 * the field titles (the :guilabel:`Labels`),
 
-* all of the :guilabel:`Action` buttons to the right of the form,
+* all of the :guilabel:`Action` buttons to the right of the form (the :guilabel:`Relates` option),
 
 * the terms used in the form :guilabel:`View`.
 
 You can modify any of these.
 
-The procedure is slightly different using the GTK client. In this you just right-click with the
-mouse on a label or button. You can choose to translate the item itself or the whole view.
+The procedure is slightly different using the GTK client. In this you just right-click on a label or button
+with the mouse. You can choose to translate the item itself or the whole view.
 
 This method is simple and quick when you only have a few entries to modify, but it can become
 tiresome and you can lose a lot of time if you've got to change some terms across the whole system.
@@ -333,8 +256,6 @@ In that case it would be better to use the translation method that employs a CSV
    In the GTK client the modified terms aren't updated immediately.
    To see the effects of the modifications you must close the current window and then reopen the
    form.
-
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

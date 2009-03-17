@@ -48,7 +48,7 @@ installed.
 .. _fig-stloctree:
 
 .. figure:: images/stock_location_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Stores location structure when Open ERP has just been installed*

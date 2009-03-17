@@ -34,14 +34,16 @@ For each delivery mode, you should define the following elements:
 
 For example you can create the following modes:
 
-================    ===========   ==========================
-Delivery Mode       Partner       Associated Product
-================    ===========   ==========================
-Express Track       Mail Office   Express Track Delivery
-Priority Courier    Mail Office   Courier Express Delivery
-EFG Standard        EFG Inc       Delivery EFG
-EFG Express         EFG Inc       Delivery EFG Express
-================    ===========   ==========================
+.. table:: *Example Delivery Modes*
+
+   ================    ===========   ==========================
+   Delivery Mode       Partner       Associated Product
+   ================    ===========   ==========================
+   Express Track       Mail Office   Express Track Delivery
+   Priority Courier    Mail Office   Courier Express Delivery
+   EFG Standard        EFG Inc       Delivery EFG
+   EFG Express         EFG Inc       Delivery EFG Express
+   ================    ===========   ==========================
 
 Information about the invoicing of transport (such as accounts, applicable taxes) are entered in the
 product linked to the delivery mode. Ideally the product should be configured as 
@@ -92,25 +94,29 @@ Then set the sale price and the cost price. The price can be expressed in differ
 
 * a variable price, as a function of weight, or volume, or weight x volume or price.
 
-For example, the rules for defining
+For example, mailing within France using 2008 tariffs would be defined as shown in the table.
 
-==========  =============  =====   =============
-Rule Title  Condition      Price   Type of Price
-==========  =============  =====   =============
-S           Weight < 3 kg   6.9    Fixed
-M           Weight < 5 kg  7.82    Fixed
-L           Weight < 6 kg  8.53    Fixed
-XL          Weight < 7 kg  9.87    Fixed
-==========  =============  =====   =============
+.. table:: *Example Tariff Rules*
+
+   ==========  =============  =====   =============
+   Rule Title  Condition      Price   Type of Price
+   ==========  =============  =====   =============
+   S           Weight < 3 kg   6.9    Fixed
+   M           Weight < 5 kg  7.82    Fixed
+   L           Weight < 6 kg  8.53    Fixed
+   XL          Weight < 7 kg  9.87    Fixed
+   ==========  =============  =====   =============
 
 You can also define rules that depend on the total amount on the order. For example to offer fixed price
 delivery if the order is more than 150 USD, add the following rule:
 
-================= ===============  ======   =============
-Rule Title        Condition        Price    Type of Price
-================= ===============  ======   =============
-Franked > 150 USD Price > 150 USD   10      Fixed
-================= ===============  ======   =============
+.. table:: *Additional Tariff Rule*
+
+   ================= ===============  ======   =============
+   Rule Title        Condition        Price    Type of Price
+   ================= ===============  ======   =============
+   Franked > 150 USD Price > 150 USD   10      Fixed
+   ================= ===============  ======   =============
 
 Using delivery modes
 --------------------
@@ -130,7 +136,7 @@ of the form. A dialog box opens, asking you to select a delivery mode from one o
 ones.
 
 .. figure:: images/sale_delivery.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Adding a delivery charge to an order*
