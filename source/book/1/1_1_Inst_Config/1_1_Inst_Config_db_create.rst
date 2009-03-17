@@ -17,7 +17,7 @@ you'll have to find somebody who does have it to create this seed database.
    single: password; super-administrator
    single: password; superadmin
 
-.. note :: The super-administrator password
+.. note:: The super-administrator password
 
    Anyone who knows the super-administrator password has complete access to the data on the server
    – able to read, change and delete any of the data in any of the databases there.

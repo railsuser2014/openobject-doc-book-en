@@ -120,7 +120,7 @@ the right of the form to get the requested analysis.
 Configuring the dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo: What is this for?
+.. todo:: What is this for?
 
  *Dashboards > Configuration > Dashboard definition*
 

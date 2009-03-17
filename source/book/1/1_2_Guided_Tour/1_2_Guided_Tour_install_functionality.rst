@@ -225,7 +225,7 @@ Finally install the additional modules :guilabel:`Analytic Accounting` and :guil
 when you're offered that configuration option. Don't install any more - you now have quite a 
 fully-loaded system to look at.
 
-.. todo: After you have installed 'additional modules' you're invited to install them again, plus more.
+.. todo:: After you have installed 'additional modules' you're invited to install them again, plus more.
 
 Click :guilabel:`Home` and you'll be returned to a dashboard, not the main menu you had before. To get to
 the main menu, use the :guilabel:`MAIN MENU` link. 
