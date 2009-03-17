@@ -64,6 +64,9 @@ latex:
 	../create_fake_references.py ${WARNLOG} ${SEARCH_FILE} ${FAKE_REF_FILE}
 	rm -rf ${SEARCH_FILE} ${WARNLOG}
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) build/latex
+	cp ../../source/.static/tip.png build/latex
+	cp ../../source/.static/note.png build/latex
+	../convert_to_greyscale.sh build/latex
 	@echo
 	@echo "Build finished; the LaTeX files are in build/latex."
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
@@ -71,8 +74,6 @@ latex:
 	../edit_tex_file.py build/latex
 	cp ../common/book.cls build/latex
 	cp ../common/sphinx.sty build/latex
-	cp ../../source/.static/tip.png build/latex
-	cp ../../source/.static/note.png build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees
