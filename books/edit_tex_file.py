@@ -3,7 +3,7 @@
 
 import os, sys
 from glob import glob
-import shutil
+from shutil import copy2 as filecopy
 import re
 import optparse
 
@@ -17,6 +17,8 @@ tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
 end_foreword_regex = re.compile(r"""SPHINXENDFOREWORDDIRECTIVE""")
 printindex_regex = re.compile(r"""^\\printindex""")
 fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
+beginfigure_regex = re.compile(r"""\\begin\{figure\}""")
+endfigure_regex = re.compile(r"""\\end\{figure\}""")
 
 
 class LatexBook(object):
@@ -36,7 +38,7 @@ class LatexBook(object):
         dst = "%s.orig" % (src, )
         if os.path.exists(dst):
             os.unlink(dst)
-        shutil.copy2(src, dst)
+        filecopy(src, dst)
 
     def _get_content(self, tex_filename):
         tex_file = open(tex_filename, 'r')
@@ -62,6 +64,8 @@ class LatexBook(object):
                     match_end_foreword = end_foreword_regex.search(old_line)
                     match_printindex = printindex_regex.search(old_line)
                     match_fancychapter = fancychapter_regex.search(old_line)
+                    match_beginfigure = beginfigure_regex.search(old_line)
+                    match_endfigure = endfigure_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
@@ -105,6 +109,16 @@ class LatexBook(object):
                                               r"\begin{multicols}{2}",
                                               r"\printindex",
                                               r"\end{multicols}",
+                                              "",
+                                             ])
+                    elif match_beginfigure:
+                        new_line = '\n'.join(["",
+                                              r"\begin{minipage}[b]{\linewidth}",
+                                              old_line,
+                                             ])
+                    elif match_endfigure:
+                        new_line = '\n'.join([old_line,
+                                              r"\end{minipage}",
                                               "",
                                              ])
                     else:
