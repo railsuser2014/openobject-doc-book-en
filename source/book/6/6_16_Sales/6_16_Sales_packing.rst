@@ -29,7 +29,7 @@ quantities don't correspond to the proposed packages. The quantity must be a mul
 :guilabel:`Quantity by Package` defined on the packaging form.
 
 .. figure:: images/sale_warning_packaging.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Alert on the quantities sold compared with the packaging*

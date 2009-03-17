@@ -60,7 +60,7 @@ report.
 	different lists and graphs with live data.
 
 .. figure::  images/report_analysis_config.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Fields selected for the analysis of sales by customer and by product (plugin_excel.png)*
@@ -101,13 +101,13 @@ You can now :guilabel:`Save` the report you defined. Click on the :guilabel:`Ope
 the right of the form to get the requested analysis.
 
 .. figure::  images/report_sale_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Analyzing sales by partner and by product in list view*
 
 .. figure::  images/report_sale_graphe.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Analyzing sales by partner and by product in graph view*
@@ -207,7 +207,7 @@ the  *Report Designer*  distribution. Check that OpenOffice.org is properly inst
 computer and that you have administration rights for installation.
 
 .. figure::  images/tinyreport.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Menu Open ERP Report in OpenOffice.org Writer*
@@ -247,7 +247,7 @@ Choose the report:menuselection:`Request for Quotation` in the :guilabel:`Modify
 dialog box and then click :guilabel:`Save to Temp Directory`.
 
 .. figure::  images/openoffice_quotation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Modifying a document template*

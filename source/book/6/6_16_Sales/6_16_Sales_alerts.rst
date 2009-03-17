@@ -12,13 +12,13 @@ installed, you will be able to configure a series of alerts on the partners or p
 setting parameters in the new :guilabel:`Warnings` tab on each of the forms.
 
 .. figure:: images/warning_partner.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Management of alerts on partners*
 
 .. figure:: images/warning_product.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Management of alerts on products*
@@ -47,7 +47,7 @@ invoice for that customer, the alert message will be attached as shown in the fi
 .. _fig-warnsmp:
 
 .. figure:: images/warning_sample.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Alert from invoicing a customer*

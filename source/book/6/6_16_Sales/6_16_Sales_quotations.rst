@@ -16,7 +16,7 @@ Orders --> New Quotation`. Open ERP then opens a new window so that you can ente
 blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Data entry for a new quotation*
@@ -79,7 +79,7 @@ new order line as shown in the figure :ref:`fig-slinf`:
 .. _fig-slinf:
 
 .. figure:: images/sale_line_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Entering a new customer order line*
@@ -106,7 +106,7 @@ useful information in the list of products to help you during your sale:
   than this amount, then the company loses money.
 
 .. figure:: images/sale_product_list.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Selecting a product in a Sales Order*
@@ -134,7 +134,7 @@ what he's selling. The description of the product sold can also be expressed in 
 The translation to the customer's language is used on the quotation or order when it's printed.
 
 .. figure:: images/sale_line_translation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Sale of a product in a partner language that differs from the user language*
@@ -152,7 +152,7 @@ this, click on the report :guilabel:`Quotation / Order` in the :guilabel:`REPORT
 Open ERP opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Printing a customer quotation*
@@ -167,7 +167,7 @@ ERP shows you an interactive process view of that order. For more information ab
 look at :ref:`ch-process`.
 
 .. figure:: images/sale_process.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Process view from following a customer order*

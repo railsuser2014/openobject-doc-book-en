@@ -349,7 +349,7 @@ them to get a feel for their use.
 
 .. figure:: images/partner.png
    :align: center
-   :scale: 65
+   :scale: 80
 
    *Partner form*
 

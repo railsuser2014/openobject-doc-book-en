@@ -37,7 +37,7 @@ Management --> Configuration --> Discount campaign`.
    this would only actually be the case if the campaign lasts exactly one year.
 
 .. figure:: images/discount_campaign_RFA.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuring a year-end rebate*
@@ -54,7 +54,7 @@ the sales volume.
 .. _fig-discamp:
 
 .. figure:: images/discount_campaign.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuring a discount campaign for computers*

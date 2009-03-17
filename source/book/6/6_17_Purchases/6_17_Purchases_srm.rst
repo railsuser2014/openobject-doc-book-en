@@ -13,7 +13,7 @@ Once you've installed the :mod:`crm` module, check the checkbox by the :guilabel
 during configuration. Open ERP will then create a menu in your working database for managing supplier complaints.
 
 .. figure:: images/crm_config.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Selection of the management of complaints in the CRM installation*
@@ -22,7 +22,7 @@ Once the module is installed you can use the menu :menuselection:`CRM & SRM --> 
 --> Complaints --> New Supplier Complaint`.
 
 .. figure:: images/crm_complaints.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Data entry screen for a supplier complaint*

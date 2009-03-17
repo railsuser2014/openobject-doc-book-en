@@ -136,7 +136,7 @@ If you explore further you'll also see you have ``-10``\   pieces in the Partner
 .. _fig-lotsbyloc:
 
 .. figure::  images/lots_by_location_pdf.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of products and their stock levels*
@@ -258,7 +258,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 .. _fig-ch03ord:
 
 .. figure:: images/order.png
-   :scale: 50
+   :scale: 75
    :align: center
         	   
    *Sales Order Form*
@@ -357,7 +357,7 @@ check its checkbox in the list:
 .. _fig_ch03faminv:
 
 .. figure::  images/familiarization_invoice.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Invoice Form*

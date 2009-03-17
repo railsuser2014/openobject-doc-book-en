@@ -31,7 +31,7 @@ Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` 
 product.
 
 .. figure:: images/stock_product.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a new product*
@@ -87,7 +87,7 @@ available from the product form.
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Change in stock for a product managed as Make to Stock*
@@ -95,7 +95,7 @@ available from the product form.
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Change in stock for a product managed as Make to Order*
@@ -127,15 +127,15 @@ price quotation to a supplier or a manufacturing order.
 Open ERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-The following illustrates different cases for automatic restocking.
+Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
 
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
-   :scale: 50
+   :scale: 100
    :align: center
 
-   *Workflow for automatic procurement, depending on the configuration of the product*
+   *Workflow for automatic procurement, dependent on the configuration of the product*
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 

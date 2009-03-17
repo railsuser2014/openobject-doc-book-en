@@ -46,7 +46,7 @@ that's important to you.
 
 
 .. figure::  images/csv_column_select.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Selecting fields to import using a CSV file*
@@ -83,21 +83,21 @@ Have a look at the screenshots below to see the differences.
 
 
 .. figure::  images/csv_many2one.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A many-to-one field: a salesperson linked to a partner*
 
 
 .. figure::  images/csv_many2many.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A many-to-many field: partner categories*
 
 
 .. figure::  images/csv_one2many.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A one-to-many field: partner contacts*
@@ -164,13 +164,13 @@ would create the following CSV file:
 
 
 .. csv-table::  Example of importing one-to-many fields
-    :header: "Name","Code","Address/Contact","Address/City"
-    :widths: 8,5,10,10
+   :header: "Name","Code","Address/Contact","Address/City"
+   :widths: 8,5,10,10
 
-    "Tiny sprl","Tiny","Fabien Pinckaers","Grand-Rosière"
-    "","","Cécile Debois","Namur"
-    "Axelor SARL","Axelor","Laith Jubair","Paris"
-    "Open-Net","OpenNet","",""
+   "Tiny sprl","Tiny","Fabien Pinckaers","Grand-Rosière"
+   "","","Cécile Debois","Namur"
+   "Axelor SARL","Axelor","Laith Jubair","Paris"
+   "Open-Net","OpenNet","",""
 
 In this example, the :guilabel:`Name` and :guilabel:`Code`  fields belong to the :guilabel:`Partner`
 table, and the :guilabel:`Contact` and :guilabel:`City` fields belong to the :guilabel:`Contact`
@@ -215,46 +215,45 @@ Partner categories
 
 Start by creating partner categories in a CSV file:
 
-	#. Create the following table in your spreadsheet program:
+#. Create the following table in your spreadsheet program:
 
+   .. csv-table:: Partner categories file: categories.csv
+      :header: "","Column A","Column B"
+      :widths: 5,10,10
 
-                        .. csv-table:: Partner categories file: categories.csv
-                           :header: "","Column A","Column B"
-                           :widths: 5,10,10
+      "Line 1","Category Name","Parent Category"
+      "Line 2","Quality",""
+      "Line 3","Gold","Quality"
+      "Line 4","Silver","Quality"
+      "Line 5","Bronze","Quality"
 
-                           "Line 1","Category Name","Parent Category"
-                           "Line 2","Quality",""
-                           "Line 3","Gold","Quality"
-                           "Line 4","Silver","Quality"
-                           "Line 5","Bronze","Quality"
+    On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
+    the column titles that correspond to field names in the :guilabel:`Partner
+    category` form.
 
-                  On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
-                  the column titles that correspond to field names in the :guilabel:`Partner
-                  category` form.
+    :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
+    B` indicates if that category has a parent category. If :guilabel:`Column B` is
+    blank then the category sits at the top level.
 
-                  :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
-                  B` indicates if that category has a parent category. If :guilabel:`Column B` is
-                  blank then the category sits at the top level.
+#. Save spreadsheet file in CSV format – separated by commas – and name the file 
+   \ ``categories.csv``\.
 
-	#. Save spreadsheet file in CSV format – separated by commas – and name the file 
-	   \ ``categories.csv``\.
+#. In Open ERP, select :menuselection:`Partners --> Configuration --> Categories --> Edit
+   Categories`.
 
-	#. In Open ERP, select :menuselection:`Partners --> Configuration --> Categories --> Edit
-	   Categories`.
+#. Click :guilabel:`Import` (to the bottom left of the list) to bring up the :guilabel:`Import Data` dialog
+   box, in which you'll find the ist of fields that can be imported.
 
-	#. Click :guilabel:`Import` (to the bottom left of the list) to bring up the :guilabel:`Import Data` dialog
-	   box, in which you'll find the ist of fields that can be imported.
+#. Click :guilabel:`Browse...` on the :guilabel:`File to import` field and select the CSV file you
+   just created, \ ``categories.csv``\   Then click :guilabel:`Auto Detect` to atch the column names
+   in the CSV file with the field names available in:guilabel:`Partner Categories`.
 
-	#. Click :guilabel:`Browse...` on the :guilabel:`File to import` field and select the CSV file you
-	   just created, \ ``categories.csv``\   Then click :guilabel:`Auto Detect` to atch the column names
-	   in the CSV file with the field names available in:guilabel:`Partner Categories`.
+#. Click :guilabel:`Import` at the bottom-right of the dialog box to load your data. You should get
+   the message \ ``4 objects imported``\  in a new dialog box. Close both this and the
+   :guilabel:`Import Data` dialog box to return to the original page.
 
-	#. Click :guilabel:`Import` at the bottom-right of the dialog box to load your data. You should get
-	   the message \ ``4 objects imported``\  in a new dialog box. Close both this and the
-	   :guilabel:`Import Data` dialog box to return to the original page.
-
-	#. Click :menuselection:`Partners --> Partners by category` to view the tree of categories,
-	   including the new \ ``Quality``\  branch that you loaded.
+#. Click :menuselection:`Partners --> Partners by category` to view the tree of categories,
+   including the new \ ``Quality``\  branch that you loaded.
 
 .. tip:: GTK dialog box for importing CSV files
 
@@ -268,28 +267,28 @@ New partners
 
 Here's how to create new partners with several contacts, and how to link them to new categories:
 
-	#. Enter the table below into your spreadsheet program.
+#. Enter the table below into your spreadsheet program.
 
-                .. csv-table::  Partner data file: partners.csv
-                   :header: "","Column A","Column B","Column C","Column D"
-                   :widths: 5,10,10,10,10
+   .. csv-table::  Partner data file: partners.csv
+      :header: "","Column A","Column B","Column C","Column D"
+      :widths: 5,10,10,10,10
 
-                   "Line 1","Name","Categories","Contacts/Name","Salesman"
-                   "Line 2","Black Advertising","Silver, Gold","George Black","Administrator"
-                   "Line 3","","","Jean Green",""
-                   "Line 4","Tiny sprl","","Fabien Pinckaers","Administrator"
+      "Line 1","Name","Categories","Contacts/Name","Salesman"
+      "Line 2","Black Advertising","Silver, Gold","George Black","Administrator"
+      "Line 3","","","Jean Green",""
+      "Line 4","Tiny sprl","","Fabien Pinckaers","Administrator"
 
-	#. The second line corresponds to the creation of a new partner, with two existing categories, that
-	   has two contacts and is linked to a salesman.
+#. The second line corresponds to the creation of a new partner, with two existing categories, that
+   has two contacts and is linked to a salesman.
 
-	#. Save the file using the name \ ``partners.csv``\
+#. Save the file using the name \ ``partners.csv``\
 
-	#. In penERP, select :menuselection:`Partners --> Partners` then import the file that you've just
-	   saved. You'll get a message confirming that you've imported and saved the data.
+#. In penERP, select :menuselection:`Partners --> Partners` then import the file that you've just
+   saved. You'll get a message confirming that you've imported and saved the data.
 
-	#. Verify that you've imported the data. A new partner should have appeared (``NoirAdvertising``),
-	   with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
-	   (``Silver`` and ``Gold``).
+#. Verify that you've imported the data. A new partner should have appeared (``NoirAdvertising``),
+   with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
+   (``Silver`` and ``Gold``).
 
 Exporting data
 --------------
@@ -314,25 +313,26 @@ to Microsoft Excel using Microsoft's COM mechanism.
 To illustrate the export of data, you can follow the steps below to export information on a specific
 partner using the web client:
 
-	#. In Open ERP, select :menuselection:`Partners --> Partners` to show a list of partners. Search
-	   for a specific :guilabel:`Name` (here, \ ``Black``\   to display only the one line.
+#. In Open ERP, select :menuselection:`Partners --> Partners` to show a list of partners. Search
+   for a specific :guilabel:`Name` (here, \ ``Black``\   to display only the one line.
 
-	#. Click :guilabel:`Export` to bring up the :guilabel:`Export Data` dialog box.
+#. Click :guilabel:`Export` to bring up the :guilabel:`Export Data` dialog box.
 
-	#. All of the fields available are shown in the :guilabel:`All fields` section to the left – that corresponds
-	   to all of the fields visible on the form, including all of the fields that come from links to other
-	   tables in the underlying database.
+#. All of the fields available are shown in the :guilabel:`All fields` section to the left – that corresponds
+   to all of the fields visible on the form, including all of the fields that come from links to other
+   tables in the underlying database.
 
-	#. Select the fields that interest you by adding them to the :guilabel:`Fields to Export` section
-	   using the :guilabel:`Add` button.
+#. Select the fields that interest you by adding them to the :guilabel:`Fields to Export` section
+   using the :guilabel:`Add` button.
 
-	#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have the
-	   option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
-	   similar to the one below.
+#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have the
+   option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
+   similar to the one below.
 
 .. csv-table::  Partner data in the exported file
    :header: "","Column A","Column B","Column C","Column D"
    :widths: 5,10,10,10,10
+   :align: center
 
    "Line 1","Name","Categories/Category name","Contact","Salesman"
    "Line 2","Black Advertising","Silver","George Black","Administrator"

@@ -130,7 +130,7 @@ of the form. A dialog box opens, asking you to select a delivery mode from one o
 ones.
 
 .. figure:: images/sale_delivery.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Adding a delivery charge to an order*

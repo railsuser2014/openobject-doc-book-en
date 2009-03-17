@@ -143,6 +143,7 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 
 .. figure:: images/new_login_dlg.png
    :align: center
+   :scale: 75
 
    *Dialog box on connecting a GTK client to a new Open ERP server*
 
@@ -154,10 +155,12 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 
 .. note:: Connection modes
 
-	In its default configuration, the Open ERP client connects to port 8069 on the server using the
-	XML-RPC protocol. You can change this and connect to port 8070 using the NET-RPC protocol instead.
+	In its default configuration at the time of writing, 
+	the Open ERP client connects to port 8069 on the server using the
+	XML-RPC protocol (from Linux) or port 8070 using the NET-RPC protocol instead (from Windows).
+	You can use either protocol from either operating system.
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
-	Open ERP can run XML-RPC as a secure connection, but not NET-RPC.
+	Open ERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
 The all-in-one installer also provides a web server, but this was not yet working at the time
 of writing.
@@ -329,7 +332,7 @@ seconds or so, which indicates that the server is waiting for a client to connec
 
 .. figure:: images/terps_startup_log.png
    :align: center
-   :scale: 75
+   :scale: 90
    
    *Open ERP startup log in the console*
 
@@ -354,6 +357,7 @@ your particular operating system.
 
 .. figure:: images/terp_client_startup.png
    :align: center
+   :scale: 75
    
    *Open ERP client at startup*
 
@@ -384,14 +388,16 @@ section. You can connect different clients to the Open ERP server by modifying 
 parameters on each client. To do that, click the :guilabel:`Change` button on the connection dialog
 and set the following field as needed:
 
-*  :guilabel:`Server` : \ ``name``\   or \ ``IP address``\   of the server over the network,
+*  :guilabel:`Server` : \ ``name``\   or  \ ``IP address``\   of the server over the network,
 
-*  :guilabel:`Port` : the port, whose default is \ ``8069``\ or  \ ``8070``\ ,
+*  :guilabel:`Port` : the port, whose default is \ ``8069``\   or  \ ``8070``\ ,
 
-*  :guilabel:`Connection protocol` : \ ``XML-RPC``\ or \ ``NET-RPC``\  .
+*  :guilabel:`Connection protocol` : \ ``XML-RPC``\   or  \ ``NET-RPC``\  .
+
 
 .. figure:: images/terp_client_server.png
    :align: center
+   :scale: 75
 
    *Dialog box for defining connection parameters to the server*
 

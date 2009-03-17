@@ -27,7 +27,7 @@ are then available. You can filter on the various field to retrieve the operatio
 or a production, or a source location, or any given destination.
 
 .. figure:: images/stock_move_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *History of stock movements*
@@ -72,7 +72,7 @@ These lots can be encoded on all stock moves and, specifically, on goods-in line
 and product deliveries.
 
 .. figure:: images/picking_form_line.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Entering a line for production receipt*
@@ -96,7 +96,7 @@ by one. You only need to take a stock move for several products line and click t
 complete the prefix in the wizard with a continuing sequence number.
 
 .. figure:: images/picking_split_lot.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Splitting a lot into uniquely identified parts*
@@ -106,7 +106,7 @@ complete the prefix in the wizard with a continuing sequence number.
 Traceability
 ------------
 
-If you encode the lot numbers for stock moves you can then enquire about the traceability for a
+If you encode the lot numbers for stock moves you can then investigate the traceability of any
 given lot number. To do this use the menu :menuselection:`Stock Management --> Traceability -->
 Production Lots`, or :menuselection:`Stock Management --> Traceability --> Tracking Lots`.
 
@@ -134,13 +134,13 @@ can see the form about this lot several actions are possible:
 * Stock in all the physical and virtual locations.
 
 .. figure:: images/stock_traceability_upstream.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Tracing upstream in Make to Order*
 
 .. figure:: images/stock_traceability_downstream.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Tracing downstream in Make to Stock*

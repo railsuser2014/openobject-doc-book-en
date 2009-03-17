@@ -21,7 +21,7 @@ Then you can use the new tab :guilabel:`Deliveries` on the order to plan the qua
 delivery planning there.
 
 .. figure:: images/sale_delivery.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Managing open orders, planning forecasts*

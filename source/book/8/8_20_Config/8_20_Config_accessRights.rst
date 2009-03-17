@@ -92,7 +92,7 @@ In the second tab of the user form, :guilabel:`Security` , add the \ ``Stock1``\
 just created.
 
 .. figure::  images/menu_access.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Groups that have access to the Stock Management menu*
@@ -192,7 +192,7 @@ Modification history
 
 
 .. figure::  images/view_log.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Partner Record history*

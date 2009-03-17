@@ -61,7 +61,7 @@ click the :guilabel:`Duplicate` button that appears (in the GTK client, click :m
 original.
 
 .. figure::  images/new_menu.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Menu enabling you to change your own password, accessible to all users*
@@ -127,7 +127,7 @@ To make modifications for a particular user, edit the user configuration again i
 different menu entries for the two fields :guilabel:`Home Action` and :guilabel:`Menu Action`.
 
 .. figure::  images/new_home.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Selecting a new welcome page*
@@ -170,7 +170,7 @@ entering new documents.
 
 
 .. figure::  images/set_default.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Inserting a new default value*
@@ -257,7 +257,7 @@ CSV form.
 	characters.
 
 .. figure::  images/csv_transl.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *CSV translation file with the translation superimposed*

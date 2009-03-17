@@ -131,7 +131,7 @@ Rules for calculating price
 A pricelist version is made up of a set of rules that apply to the product base prices.
 
 .. figure:: images/service_pricelist_line.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Detail of a rule in a pricelist version*
@@ -251,7 +251,7 @@ Default pricelists
 ^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/product_pricelist_default.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Default pricelist after installing Open ERP*
