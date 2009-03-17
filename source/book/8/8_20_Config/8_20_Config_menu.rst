@@ -223,7 +223,7 @@ You can do this one of two ways:
 	        Schumacher, Helen, Cook Chain
 
 
-    .. csv-table:: Resulting table
+    .. csv-table:: *Resulting table*
        :header: "LastName","FirstName","Company"
        :widths:  8,8,8
 
