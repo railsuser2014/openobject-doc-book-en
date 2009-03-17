@@ -9,9 +9,9 @@ is to install it or to find a working installation.
 The table below summarizes the various installation methods that will be described in the following
 sections.
 
- .. csv-table:: Comparison of the different methods of installation on Windows or Linux.
+.. csv-table:: Comparison of the different methods of installation on Windows or Linux.
    :header: "Method","Average Time","Level of Complexity","Notes"
-   :widths: 20, 15, 15,30
+   :widths: 20,15,15,30
 
    "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
    "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
