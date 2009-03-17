@@ -36,12 +36,14 @@ You aren't alone
 Many resources are at hand to accompany you on your Open ERP adventure.
 
 Bypass the technical difficulties by using the SaaS offer
+---------------------------------------------------------
 
 .. index::
-   single:  administration
+   single:  SaaS
 
 For a quick low-cost start, you can make use of a month's comprehensive free trial of Tiny's
-Open ERP SaaS package found at . Using this you sidestep any technical difficulties and get a
+Open ERP SaaS package found at http://ondemand.openobject.com/. 
+Using this you sidestep any technical difficulties and get a
 comprehensive set of system administration services, server hosting, configuration to your
 environment, maintenance, support and initial training.
 
@@ -54,7 +56,7 @@ modules offered. So you can't use your own modules, and are limited to the stand
 included in various package levels.
 
 Consult the available resources
-===============================
+-------------------------------
 
 Larger companies often prefer a more classic implementation path. Even though Open ERP's simplicity
 makes this task easier than with other systems, you can't hide the fact that a project
@@ -75,38 +77,30 @@ The community of users and developers
 The community, supported by Tiny, hosts a set of communication tools which can help you in your
 Open ERP investigation.
 
-        *The forum*
-
-* http://openobject.com/forum
+* **The forum** http://openobject.com/forum
 
 The forum enables you to discuss issues with other Open ERP users. It's very active and you have a
 good chance of receiving some form of response to your questions within twenty-four hours or so.
 
-        *The wiki*
-
-* http://openerp.org/wiki
+* **The wiki** http://openerp.org/wiki
 
 The wiki contains a large amount of information about the software, some current and some
 historical. You'll find the documentation necessary for installation there, as well as user
 documentation, and a technical manual for developing your own modules.
 
-        *Database of Open ERP modules*
-
-* http://openerp.org/component/option,com_mtree/Itemid,111/
+* **Database of Open ERP modules** http://openerp.org/component/option,com_mtree/Itemid,111/
 
 A database of all the modules available for use gives you free access to most of the known Open ERP
 extensions.
 
-        *Launchpad*
-
-https://code.launchpad.net/~openerp/
+* **Launchpad** https://code.launchpad.net/~openerp/
 
 The most recent communication tool is the launchpad system, which now hosts all of Open ERP's
 source code (using the *bzr* source code control system) and is used for reporting faults. It's
 become the central location for Open ERP technology.
 
 Open ERP partners
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 If you need contract-backed guarantees for implementing and maintaining Open ERP you can contact an
 official Open ERP partner. Open ERP partners offer various services such as user training,
@@ -121,9 +115,7 @@ Tiny offers various services such as free demonstration days for the software, u
 technical training, support contracts, maintenance contracts and developments as required. Depending
 on the demand, they can also put you in contact with partners most aligned to your requirements.
 
-        *The mailing list*
-
-To keep up to date with all Open ERP's news you can subscribe to the mailing list using
+* **The mailing list** To keep up to date with all Open ERP's news you can subscribe to the mailing list using
 http://tiny.be/mailman/listinfo/tinyerp-announce.
 
 

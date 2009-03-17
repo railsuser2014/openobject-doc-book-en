@@ -170,7 +170,7 @@ Then export it using
 Select the language, then the :guilabel:`CSV File` format, then one or more (or all) modules.
 Click :guilabel:`Get File` to start the download process, then click the small 
 :guilabel:`Save` icon to save the file somewhere. A French translation would be
-named fr_FR.csv by default, but you can use whatever you like. 
+named :file:`fr_FR.csv` by default, but you can name it whatever you like. 
 
 .. note:: UTF-8 format
 
@@ -183,9 +183,9 @@ named fr_FR.csv by default, but you can use whatever you like.
    :scale: 75
    :align: center
 
-   *CSV translation file with the translation superimposed*
+   *CSV translation file with a translation in view*
 
-The file contains sixe columns: :guilabel:`module` , 
+The file contains six columns: :guilabel:`module` , 
 :guilabel:`type` , :guilabel:`name`, :guilabel:`res_id`,
 :guilabel:`src`, and :guilabel:`value`. You have to ensure that the first line, which specifies
 these column names, remains untouched. 

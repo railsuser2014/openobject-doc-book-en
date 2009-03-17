@@ -179,7 +179,7 @@ linked to this partner.
 
 Importing this file will give you three partners:
 
-* Tiny
+* Tiny: with two contacts, Fabien and Cécile,
 
 * Axelor SARL: with just one contact,
 
@@ -226,13 +226,13 @@ Start by creating partner categories in a CSV file:
       "Line 4","Silver","Quality"
       "Line 5","Bronze","Quality"
 
-    On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
-    the column titles that correspond to field names in the :guilabel:`Partner
-    category` form.
+   On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
+   the column titles that correspond to field names in the :guilabel:`Partner
+   category` form.
 
-    :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
-    B` indicates if that category has a parent category. If :guilabel:`Column B` is
-    blank then the category sits at the top level.
+   :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
+   B` indicates if that category has a parent category. If :guilabel:`Column B` is
+   blank then the category sits at the top level.
 
 #. Save spreadsheet file in CSV format – separated by commas – and name the file 
    \ ``categories.csv``\.
