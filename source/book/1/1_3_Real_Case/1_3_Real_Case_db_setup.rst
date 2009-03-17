@@ -27,6 +27,8 @@ Financial Accounting --> Financial Accounts --> Account Types` and then clicking
 :guilabel:`New` button. You'll need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
+.. table:: *Defining Account Types*
+
 ============== ======== ========  =============== =============== ===============
 Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
 ============== ======== ========  =============== =============== ===============
@@ -57,6 +59,8 @@ two more for the receipt and shipping of goods, and one for the payment and rece
 And one 'organizing' account that's just a view of the other five. So
 you'll need the following six accounts, one of which is shown
 in :ref:`fig-oech03accts`.
+
+.. table:: *Defining Accounts*
 
 ============= ==== ============= =============== ============ =========
 Name          Code Internal Type Parent          Account Type Reconcile
@@ -97,6 +101,8 @@ to partners, and expenses and income to product categories.
 Create properties using :menuselection:`Administration --> Configuration --> 
 Properties --> Default Properties` and then clicking the :guilabel:`New` button. 
 
+.. table:: *Defining Properties*
+
 ============================== ========= ================== =============================== ===============
 Name                           Company   Fields             Value                           Parent Resource
 ============================== ========= ================== =============================== ===============
@@ -130,6 +136,8 @@ You'll also need to configure some journals, which are used to record the transa
 to another when invoices are raised and then paid. Create journals from the menu
 :menuselection:`Financial Management --> Configuration --> 
 Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
+
+.. table:: Defining Journals
 
 ===================== ==== ============= ================= ================ ===================== ======================
 Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
@@ -403,18 +411,18 @@ was created. You'll use this default structure in this example.
 Open ERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
 that act as their names suggest, and ``Virtual Locations`` that are used by Open ERP for its own purposes.
 
-	#.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
-		Locations` to reach a list view of the locations (not the tree view).
+#.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
+	Locations` to reach a list view of the locations (not the tree view).
 
-	#.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
-		location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
-		An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
-		the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
-		company name.
+#.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
+	location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
+	An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
+	the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
+	company name.
 
-	#.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
-		--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
-		should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
+#.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
+	--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
+	should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
 
 .. todo:: Get this, below, right!
 

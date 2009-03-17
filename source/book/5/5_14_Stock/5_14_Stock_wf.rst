@@ -18,6 +18,8 @@ Defining a new product
 
 To start, define the following product:
 
+.. table:: *Product Definition*
+
 ==================== ======================
 Field                Value
 ==================== ======================
@@ -139,6 +141,8 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
+.. table:: *Restocking Modes for Make to Stock and Make To Order*
+
 ================== ===================== =====================
 Mode of restocking Produce               Buy
 ================== ===================== =====================
@@ -146,7 +150,7 @@ MTS                Wait for availability Wait for availability
 MTO                Production Order      Supplier Order
 ================== ===================== =====================
 
-*Showing restocking for a product of type 'stockable' or 'consumable'.*
+.. table:: *Restocking Modes for Services*
 
 ================== ===================== =====================
 Mode of restocking Produce               Buy
@@ -154,8 +158,6 @@ Mode of restocking Produce               Buy
 MTS                /                     /
 MTO                Create task           Subcontract
 ================== ===================== =====================
-
-*Showing restocking for a product of type 'service'.*
 
 You'll see the automated management processes for restocking in detail further on in this chapter.
 
@@ -173,6 +175,8 @@ measure category.
 
 The table below shows some examples of units of measure and their category. The factor is used to
 convert from one unit of measure to another as long as they are in the same category.
+
+.. table:: *Example Units of Measure*
 
 ========= ============ ======
 UoM       Category     Factor

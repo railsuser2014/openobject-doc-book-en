@@ -19,6 +19,8 @@ between the time on an order and that of the delivery.
 To see a calculation of the lead times, take the example of the cabinet above. Suppose that the
 cabinet is assembled in two steps, using the two following Bills of Materials.
 
+.. table:: *Bills of Materials*
+
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
 ============  ========  ===============

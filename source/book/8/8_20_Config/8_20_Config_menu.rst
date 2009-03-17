@@ -223,13 +223,13 @@ You can do this one of two ways:
 	        Schumacher, Helen, Cook Chain
 
 
-        .. csv-table:: Resulting table
-            :header: "LastName","FirstName","Company"
-            :widths:  8,8,8
+    .. csv-table:: Resulting table
+       :header: "LastName","FirstName","Company"
+       :widths:  8,8,8
 
-           "Robins","Gerald","SOS Plumbers"
-           "Lacoste","John","Extra-Textiles"
-           "Schumacher","Helen","Cook Chain"
+       "Robins","Gerald","SOS Plumbers"
+       "Lacoste","John","Extra-Textiles"
+       "Schumacher","Helen","Cook Chain"
 
 The same approach is used to translate terms that haven't been created yet. This can be useful, for
 example, with modules that haven't yet been translated into English or any other language that you
