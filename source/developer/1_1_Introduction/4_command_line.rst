@@ -3,6 +3,20 @@ Command line options
 
 General Options
 ----------------
+
+
+.. csv-table:: General Options
+   :header: "Option","Description"
+   :widths: 15, 30
+
+   "Installation Requests","Sales"
+   "Potential Distributor","Sales"
+   "Interest in Training","Sales"
+   "Fault Fix","Support Level 1"
+   "Functional Problem","Support Level 1"
+   "Corrective Actions","Quality"
+   "Preventative Actions","Quality"
+
   --version             show program version number and exit
   -h, --help            show this help message and exit
   -c CONFIG, --config=CONFIG
