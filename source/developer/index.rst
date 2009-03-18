@@ -26,26 +26,50 @@ Part 2 : Module Development
    2_4_module_development/index
    2_5_Objects_Fields_Methods/index
    2_6_views_events/index
+   2_7_menu_action/index
    4_Reporting/index
    5_Workflow/index
    6_Wizard/index
 
-Part 4 : Advance Customization / Configuration
------------------------------------------------
+
+Part 3 : Business Process Development 
+-------------------------------------
 .. toctree::
    :maxdepth: 2
 
+   3_9_Work flow - Business Process/index
+   3_10_wizard/index   
+   3_11_reports/index  
    8_I18n/index
 
-Part 5 : Migration, Upgradation, Testing
+Part 4 : Business Process Advance Configuration 
 -----------------------------------------
 .. toctree::
    :maxdepth: 2
 
-   12_DataMigration/index
-   12_DataMigration/unit_testing
-   12_DataMigration/automated_test
+   4_13_server_action/index
+   4_14_dashboard/index	
 
-Part 6 : Service base Integration
------------------------------------
+
+Part 5 : Migration, Upgradation, Testing 
+----------------------------------------
+.. toctree::
+   :maxdepth: 2
+
+   5_18_data_migration/index
    
+
+Part 7 : Miscellaneous 
+----------------------
+.. toctree::
+   :maxdepth: 2
+
+   Miscellaneous/index
+
+ 
+Part 8 : Appendices
+-------------------
+.. toctree::
+   :maxdepth: 2
+
+   Appendices/index
