@@ -5,18 +5,17 @@
 Importing and exporting data
 ============================
 
-Every form in Open ERP has a standard mechanism for importing data from a CSV file. That's the same
-format as used in the language translations.
+Every form in Open ERP has a standard mechanism for importing data from a CSV file through the client user interface. 
+That's the same format as used in the language translations.
 
 .. note:: Forms and Lists
 
-	You have access to the Import and Export functions in the web client on a single form view in read-
-	only mode –
-	you can't reach Import or Export in any other view or when the form is editable.
-	If you're using the GTK client you can find the functions from the top menu 
-	:menuselection:`Form --> Import...` and :menuselection:`Form --> Export...`.
+   You have access to the Import and Export functions in the web client on a single form view in read-
+   only mode – you can't reach Import or Export in any other view or when the form is editable.
+   If you're using the GTK client you can find the functions from the top menu 
+   :menuselection:`Form --> Import...` and :menuselection:`Form --> Export...`.
 
-The CSV file format is text format compatible with most spreadsheet programs (such as OpenOffice
+The CSV file format is a text format compatible with most spreadsheet programs (such as OpenOffice
 Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
@@ -39,11 +38,18 @@ To do this, two solutions are possible in Open ERP:
 * importing several CSV files, each corresponding to a specific database table, that have explicit
   links between the tables.
 
+.. note:: Server-side importing
+
+   You can also import CSV data in through the server interface. The file format is the same, but
+   column headings differ slightly. When importing through the user interface it checks that the column
+   heading names match the names seen in the forms on the user interface itself. 
+   In contrast, when importing through the 
+   server the column heading names must match the internal names of the fields.
+
 Start by building the header of the CSV file. Open the import tool on the object that you're
 interested in and select the fields that you want to import into your Open ERP database. You must
-include every field that's colored in blue because those fields are required, and any other field
-that's important to you.
-
+include every field that's colored in blue because those fields are required (unless you know that they
+get filled by default with an appropriate value), and also any other field that's important to you.
 
 .. figure::  images/csv_column_select.png
    :scale: 75
@@ -51,36 +57,32 @@ that's important to you.
 
    *Selecting fields to import using a CSV file*
 
-Use the field names as the column names in the first line of your CSV file, applying one field per
+Use the field names as the column names in the first line of your CSV file, adding one field per
 column. If your CSV file has these names in the first line then when you import your CSV file,
 Open ERP will automatically match the column name to the field name of the table. When you've
 created your CSV file you'll do that by clicking the :guilabel:`Nothing` button to clear the
 :guilabel:`Fields to Import`, then select your CSV file by browsing for a :guilabel:`File to
 import`, and then clicking the :guilabel:`Auto Detect` button.
 
-To import CSV data that matches your database structure, you need to distinguish the following types
+To import CSV data that matches your database structure, you should distinguish between the following types
 of field in the Open ERP interface:  *many-to-many*  fields (between multiple sources and
 destinations),  *many-to-one*  fields (from multiple sources to a single destination), and  *one-to-
 many*  fields (from a single origin to multiple destinations).
 
-.. todo:: - check that the next bit is still true
-
 .. note:: Foreground table
 
-	Each of these types is described in relation to a foreground table –
-	the table whose entry form you're viewing and whose entries would be updated by a simple CSV file.
+   Each of these types is described in relation to a foreground table –
+   the table whose entry form you're viewing and whose entries would be updated by a simple CSV file.
 
-	Just because one of these relation fields appears on the foreground table, does not mean that there
-	is an inverse field on the related table –
-	but there may be.
+   Just because one of these relation fields appears on the foreground table, does not mean that there
+   is an inverse field on the related table – but there may be.
 
-	So there is *no* one-to-many field in the User form to reflect the many-to-one Salesman field in
-	the Partner form,
-	but there *is* a many-to-one Partner field in the Partner contact form to reflect the one-to-many
-	Partner contact field in the Partner form.
+   So there is *no* one-to-many field in the User form to reflect the many-to-one :guilabel:`user_id` Salesman field in
+   the Partner form,
+   but there *is* a many-to-one :guilabel:`partner_id` Partner field in the Partner contact form to reflect the one-to-many
+   :guilabel:`child_ids` Partner contacts field in the Partner form.
 
 Have a look at the screenshots below to see the differences.
-
 
 .. figure::  images/csv_many2one.png
    :scale: 75
@@ -88,13 +90,11 @@ Have a look at the screenshots below to see the differences.
 
    *A many-to-one field: a salesperson linked to a partner*
 
-
 .. figure::  images/csv_many2many.png
    :scale: 75
    :align: center
 
    *A many-to-many field: partner categories*
-
 
 .. figure::  images/csv_one2many.png
    :scale: 75
@@ -115,28 +115,30 @@ database where the foreground table has a single entry for the other table. Open
 the new record in the foreground table with one of the entries in the other table by searching for
 and matching the :guilabel:`Name` or the :guilabel:`Code` with the value in the CSV file.
 
-You can also work with identifiers rather than the names of resources. To do this you must import a
-first file (for example, Products) with a column named :guilabel:`id` in your CSV file that contains an
-identifier for each product. The identifier is a character string that is unique for each of the
-lines being imported and saved.
+.. note:: Field identifiers 
 
+   If you're working on the server side you can use identifiers rather than the names of resources. 
+   To do this you must import a
+   first file (for example, Products) with a column named :guilabel:`id` in your CSV file that contains an
+   identifier for each product. The identifier is a character string that is unique for each of the
+   lines being imported and saved.
 
-When you import other files which link to the first table, you can use the identifier in preference
-to the names (for example when you're saving inventory the uses the product names).
+   When you import other files which link to the first table, you can use the identifier in preference
+   to the names (for example when you're saving inventory the uses the product names).
 
-To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \
-``Product:id``\  ).
+   To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \
+   ``product:id``\  ). This format is covered clearly in the online developers' guide.
 
 .. tip:: Importing with identifiers
 
-	The management of free text identifiers enables you to considerably simplify the conversion of
-	another database to Open ERP.
-	You can just create an id column that contains the identifier used in the original database for
-	each table that you're importing.
+   The management of free text identifiers enables you to considerably simplify the conversion of
+   another database to Open ERP.
+   You can just create an id column that contains the identifier used in the original database for
+   each table that you're importing.
 
-	For the other tables linked to this one you can just use the identifier relationship to the entry
-	in the original table.
-	You don't need a complex conversion then to create links to the original table.
+   For the other tables linked to this one you can just use the identifier relationship to the entry
+   in the original table.
+   You don't need a complex conversion then to create links to the original table.
 
 Many-to-many fields
 ^^^^^^^^^^^^^^^^^^^
@@ -162,8 +164,7 @@ many/field_linked-object``\  .
 For example, to import partners with several contact for which you specify a name and a city, you
 would create the following CSV file:
 
-
-.. csv-table::  *Example of importing one-to-many fields*
+.. csv-table:: *Example of importing one-to-many fields*
    :header: "Name","Code","Address/Contact","Address/City"
    :widths: 8,5,10,10
 
@@ -178,7 +179,7 @@ linked to this partner.
 
 Importing this file will give you three partners:
 
-* Tiny
+* Tiny: with two contacts, Fabien and Cécile,
 
 * Axelor SARL: with just one contact,
 
@@ -187,8 +188,7 @@ Importing this file will give you three partners:
 .. note::  Symmetry in relation fields
 
 	Depending on the structure of your data it can be easier to use the one-to-many form or the many-
-	to-one form in relating two tables,
-	so long as the relevant fields exist on both ends of the relationship.
+	to-one form in relating two tables, so long as the relevant fields exist on both ends of the relationship.
 
 	For example, you can:
 
@@ -203,12 +203,11 @@ Importing this file will give you three partners:
 Examples of CSV import files
 ----------------------------
 
-To illustrate data importing, you can find two examples below. The first one is to import partner
+To illustrate data importing, you can see two examples below. The first one is to import partner
 categories, and then to import some partners and their contacts along with links to the categories
 just created. Although you can create new contacts at the same time as creating partners (because
 you can do this for *one-to-many* relations), you can't create new categories this way (because they
 use *many-to-many* relations).
-
 
 Partner categories
 ^^^^^^^^^^^^^^^^^^
@@ -227,13 +226,13 @@ Start by creating partner categories in a CSV file:
       "Line 4","Silver","Quality"
       "Line 5","Bronze","Quality"
 
-    On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
-    the column titles that correspond to field names in the :guilabel:`Partner
-    category` form.
+   On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
+   the column titles that correspond to field names in the :guilabel:`Partner
+   category` form.
 
-    :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
-    B` indicates if that category has a parent category. If :guilabel:`Column B` is
-    blank then the category sits at the top level.
+   :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
+   B` indicates if that category has a parent category. If :guilabel:`Column B` is
+   blank then the category sits at the top level.
 
 #. Save spreadsheet file in CSV format – separated by commas – and name the file 
    \ ``categories.csv``\.
@@ -269,7 +268,7 @@ Here's how to create new partners with several contacts, and how to link them to
 
 #. Enter the table below into your spreadsheet program.
 
-   .. csv-table::  *Partner data file - partners.csv*
+   .. csv-table:: *Partner data file - partners.csv*
       :header: "","Column A","Column B","Column C","Column D"
       :widths: 5,10,10,10,10
 
@@ -329,7 +328,7 @@ partner using the web client:
    option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
    similar to the one below.
 
-.. csv-table::  *Partner data in the exported file*
+.. csv-table:: *Partner data in the exported file*
    :header: "","Column A","Column B","Column C","Column D"
    :widths: 5,10,10,10,10
 
@@ -362,7 +361,7 @@ In the table above:
 	If you want to enter data into Open ERP manually, you should use the Module Recorder, described in
 	the first section of this chapter.
 
-	By doing that you'll be generated a module that can easily be reused in different databases.
+	By doing that you'll generate a module that can easily be reused in different databases.
 	Then if there are problems with a database you'll be able to reinstall the data module you
 	generated
 	with all of the entries and modifications you made for this system.

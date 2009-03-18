@@ -2,6 +2,39 @@
    single: access rights
    single: access; user
 
+User Login
+==========
+
+.. tip:: Managing Passwords
+
+   If you let users change their passwords for themselves you'll have no direct control over the
+   password they choose.
+   You should have a written policy about password strength to try to maintain a level of security in
+   your system.
+
+.. index::
+   single: module; users_ldap
+
+.. tip:: Managing users through LDAP
+
+	With the :mod:`users_ldap` module, user accounts can be managed through an LDAP directory that can be
+	made common to various different company resources.
+
+	Connection parameters for the LDAP directory are then registered with the company definition.
+	You can provide a user profile template there from which new users are automatically created during
+	their first connection to Open ERP.
+
+.. index::
+   single: LDAP
+
+.. note:: LDAP
+
+	The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories
+	for various different resources through your standard TCP/IP network.
+
+	This enables users in the company to have the same username and password to access all
+	their applications (such as email and intranet).
+
 Managing access rights
 ======================
 
@@ -168,13 +201,17 @@ You can manage four access modes on objects independently:
 
 *  :guilabel:`Delete access` : members of the group can delete records from the object.
 
-(access_control.png)Access control to invoices for the admin group
+.. figure::  images/access_control.png
+   :scale: 75
+   :align: center
+
+   *Access control to invoices for the Finance/Admin group*
 
 To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
 Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there 
 and click :guilabel:`Edit`. 
-You give a  *Name*  to the access control, select a  *Group* , and
-the object ( *Model* ), then check the checkbox corresponding to each of the four  *Access*  modes.
+You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
+the object (:guilabel:`Model`), then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
 
 If you don't specify any group in the access rules, the rule is applied to all groups. So to remove
 access to an object for all users you could create a rule:
@@ -189,7 +226,6 @@ You can then create additional rules on the same object to give specific rights 
 
 Modification history
 --------------------
-
 
 .. figure::  images/view_log.png
    :scale: 75

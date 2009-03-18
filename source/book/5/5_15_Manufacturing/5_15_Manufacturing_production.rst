@@ -43,34 +43,34 @@ The cabinet is assembled from raw materials and intermediate assemblies:
 
 .. table:: *Product Definitions prior to defining Bills of Materials*
 
-================ =========================
-Product Code     Description
-================ =========================
-ARM100           Cabinet
-PANLAT           Wooden Side Panel
-PANA100          Rear Panel
-PROFIL           Metal Strut
-ETA100           Shelf
-PLET100          Shelf Panel
-BOIS 002         Wood Panel
-TAQ000           Panel Pins
-LIN040           Lintel
-================ =========================
+   ================ =========================
+   Product Code     Description
+   ================ =========================
+   ARM100           Cabinet
+   PANLAT           Wooden Side Panel
+   PANA100          Rear Panel
+   PROFIL           Metal Strut
+   ETA100           Shelf
+   PLET100          Shelf Panel
+   BOIS 002         Wood Panel
+   TAQ000           Panel Pins
+   LIN040           Lintel
+   ================ =========================
 
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
 product and for the final cabinet assembly. These are given by the table below.
 
 .. table:: *Bills of Materials*
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         m2
-PANA100       1         m2
-PROFIL        4         m
-ETA100        3         Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         m2
+   PANA100       1         m2
+   PROFIL        4         m
+   ETA100        3         Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -117,14 +117,14 @@ calculate what will be consumed:
 
 .. table:: *Total Quantities*
 
-============  =================  ===============
-Product Code  Quantity           Unit of Measure
-============  =================  ===============
-BOIS002       2 * 0.083 + 0.25   Unit
-LIN040        1                  Unit
-BOIS002       0.083 * 3          m2
-TAQ000        12                 Unit
-============  =================  ===============
+   ============  =================  ===============
+   Product Code  Quantity           Unit of Measure
+   ============  =================  ===============
+   BOIS002       2 * 0.083 + 0.25   Unit
+   LIN040        1                  Unit
+   BOIS002       0.083 * 3          m2
+   TAQ000        12                 Unit
+   ============  =================  ===============
 
 .. tip:: Bill of Materials
 
@@ -232,12 +232,12 @@ manufacture a cabinet, you'd create 6 production orders:
 
 .. table:: *Production Orders*
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PLET100       3         Unit
-BOIS002       0.25      m2
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PLET100       3         Unit
+   BOIS002       0.25      m2
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -282,18 +282,18 @@ In the case where a single Bill of Materials is defined in multiple levels, a si
 order will be generated for each cabinet, including all of the sub-BoMs. You'd then get the
 following production order:
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-BOIS002       0.17      Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+.. table:: Single manufacture from a tree-structured BoM
 
-Table: Single manufacture from a tree-structured BoM
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   BOIS002       0.17      Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 .. index::
    pair: phantom; bill of materials
@@ -328,28 +328,28 @@ you'll get two production orders when the order is confirmed, as shown in the ta
 
 .. table:: *Definition and use of phantom BoMs*
 
-============  ========  ===============  ===========
-Product Code  Quantity  Unit of Measure  Type of BoM
-============  ========  ===============  ===========
-ARM100        1         Unit             normal
-PANLAT        2         m2               normal
-PANA100       1         m2               phantom
-PROFIL        4         m                phantom
-ETA100        3         Unit             phantom
-============  ========  ===============  ===========
+   ============  ========  ===============  ===========
+   Product Code  Quantity  Unit of Measure  Type of BoM
+   ============  ========  ===============  ===========
+   ARM100        1         Unit             normal
+   PANLAT        2         m2               normal
+   PANA100       1         m2               phantom
+   PROFIL        4         m                phantom
+   ETA100        3         Unit             phantom
+   ============  ========  ===============  ===========
 
 .. table:: *Production Orders from phantom BoMs*
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -432,14 +432,14 @@ For example you can define the properties and the following groups:
 
 .. table:: *Properties*
 
-=====================  ============
-Property Group         Property
-=====================  ============
-Warranty               3 years
-Warranty               1 year
-Method of Manufacture  Serial
-Method of Manufacture  Batch
-=====================  ============
+   =====================  ============
+   Property Group         Property
+   =====================  ============
+   Warranty               3 years
+   Warranty               1 year
+   Method of Manufacture  Serial
+   Method of Manufacture  Batch
+   =====================  ============
 
 Once the Bills of Materials have been defined you could associate the corresponding properties to them. Then
 when the salesperson goes to encode a product line he can attach the properties there. If the
@@ -765,41 +765,8 @@ product. You can consult the traceability through the whole manufacturing chain 
 serial number indicated on the product MB1. To look through the detailed history, use the menu
 :menuselection:`Stock Management --> Traceability --> Production Lots`.
 
-Find the product corresponding to the product or lot number. Once it's been found you can use the
-following actions:
-
-.. index::
-   single: traceability; upstream
-
-* Upstream traceability: trace where an identified component has been used, from the product
-  that it was used on to the customer that currently has it, if it has been tracked. 
-  (Note that the name is confusing - this would normally be considered a downstream direction.) 
-
-.. index::
-   single: traceability; downstream
-
-* Downstream traceability: trace where the components of an identified product at a
-  customer came from. 
-  (Note that the name is confusing - this would normally be considered an upstream direction.) 
-
-Examples of the two traceability types are given in the by the 
-figures :ref:`fig-mrptracu` and :ref:`fig-mrptracd`:
-
-.. _fig-mrptracu:
-
-.. figure:: images/mrp_tracability_upstream.png
-   :scale: 75
-   :align: center
-
-   *Upstream traceability from supplier to customers*
-
-.. _fig-mrptracd:
-
-.. figure:: images/mrp_tracability_downstream.png
-   :scale: 75
-   :align: center
-
-   *Downstream traceability from customer to suppliers*
+Find the product corresponding to the product or lot number. Once it's been found you can use
+traceability as described in the section :ref:`sect-lotmgt` in the :ref:`ch-stocks` chapter.
 
 .. index:: 
    single: manufacturing order

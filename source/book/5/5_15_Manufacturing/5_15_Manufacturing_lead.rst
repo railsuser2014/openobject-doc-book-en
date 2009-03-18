@@ -21,16 +21,16 @@ cabinet is assembled in two steps, using the two following Bills of Materials.
 
 .. table:: *Bills of Materials*
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 ============  ========  ===============
 Product Code  Quantity  Unit of Measure
@@ -602,19 +602,8 @@ Management of repairs
    single: module; mrp_repair
 
 The management of repairs is carried out using the module :mod:`mrp_repair`. Once it's installed this
-module adds new menus to the Manufacturing menu:
-
-* :menuselection:`Manufacturing --> Repairs`
-
-* :menuselection:`Manufacturing --> Repairs --> Repairs in quotation`
-
-* :menuselection:`Manufacturing --> Repairs --> Repairs in progress`
-
-* :menuselection:`Manufacturing --> Repairs --> Repairs Ready to Start`
-
-* :menuselection:`Manufacturing --> Repairs --> Repairs to be invoiced`
-
-* :menuselection:`Manufacturing --> Repairs --> New Repair`
+module adds new :menuselection:`Manufacturing --> Repairs` menus under the Manufacturing menu for
+creating repair jobs and reviewing repairs in progress.
 
 In Open ERP a repair will have the following effects:
 

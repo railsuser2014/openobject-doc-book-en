@@ -20,14 +20,14 @@ To start, define the following product:
 
 .. table:: *Product Definition*
 
-==================== ======================
-Field                Value
-==================== ======================
-Name                 Central Heating Type 1
-Code                 CCT1
-Product Type         Stockable
-Method of restocking Purchase
-==================== ======================
+   ==================== ======================
+   Field                Value
+   ==================== ======================
+   Name                 Central Heating Type 1
+   Code                 CCT1
+   Product Type         Stockable
+   Method of restocking Purchase
+   ==================== ======================
 
 Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` to define a new
 product.
@@ -134,7 +134,7 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
-   :scale: 100
+   :scale: 90
    :align: center
 
    *Workflow for automatic procurement, dependent on the configuration of the product*
@@ -143,21 +143,21 @@ The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
 .. table:: *Restocking Modes for Make to Stock and Make To Order*
 
-================== ===================== =====================
-Mode of restocking Produce               Buy
-================== ===================== =====================
-MTS                Wait for availability Wait for availability
-MTO                Production Order      Supplier Order
-================== ===================== =====================
+   ================== ===================== =====================
+   Mode of restocking Produce               Buy
+   ================== ===================== =====================
+   MTS                Wait for availability Wait for availability
+   MTO                Production Order      Supplier Order
+   ================== ===================== =====================
 
 .. table:: *Restocking Modes for Services*
 
-================== ===================== =====================
-Mode of restocking Produce               Buy
-================== ===================== =====================
-MTS                /                     /
-MTO                Create task           Subcontract
-================== ===================== =====================
+   ================== ===================== =====================
+   Mode of restocking Produce               Buy
+   ================== ===================== =====================
+   MTS                /                     /
+   MTO                Create task           Subcontract
+   ================== ===================== =====================
 
 You'll see the automated management processes for restocking in detail further on in this chapter.
 
@@ -178,18 +178,18 @@ convert from one unit of measure to another as long as they are in the same cate
 
 .. table:: *Example Units of Measure*
 
-========= ============ ======
-UoM       Category     Factor
-========= ============ ======
-Kg        Weight            1
-Gram      Weight         1000
-Tonne     Weight         0.01
-Hour      Working time      8
-Day       Working time      1
-Half-day  Working time      2
-Item      Unit              1
-100 Items Unit           0.01
-========= ============ ======
+   ========= ============ ======
+   UoM       Category     Factor
+   ========= ============ ======
+   Kg        Weight            1
+   Gram      Weight         1000
+   Tonne     Weight         0.01
+   Hour      Working time      8
+   Day       Working time      1
+   Half-day  Working time      2
+   Item      Unit              1
+   100 Items Unit           0.01
+   ========= ============ ======
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
 category could be expressed in Kg, Tonnes or Grammes. You can't express them in hours or pieces.
