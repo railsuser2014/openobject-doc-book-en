@@ -94,12 +94,18 @@ tiny_latex_include = r"""
 \DeclareUnicodeCharacter{00A0}{~}
 
 \hypersetup{
-    colorlinks=true,        % false: boxed links; true: colored links
-    linkcolor=black,        % color of internal links
-    citecolor=black,        % color of links to bibliography
-    filecolor=black,        % color of file links
-    urlcolor=black          % color of external links
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black
 }
+
+\definecolor{TitleColor}{rgb}{1,1,1}
+\definecolor{InnerLinkColor}{rgb}{1,1,1}
+\definecolor{OuterLinkColor}{rgb}{1,1,1}
+\definecolor{VerbatimColor}{rgb}{1,1,1}
+\definecolor{VerbatimBorderColor}{rgb}{1,1,1}
 
 \definecolor{NoticeBoxBg}{rgb}{0.95,0.95,0.95}
 
