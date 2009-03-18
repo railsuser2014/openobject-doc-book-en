@@ -19,6 +19,8 @@ printindex_regex = re.compile(r"""^\\printindex""")
 fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
 beginfigure_regex = re.compile(r"""\\begin\{figure\}""")
 endfigure_regex = re.compile(r"""\\end\{figure\}""")
+tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
+
 
 
 class LatexBook(object):
@@ -66,6 +68,7 @@ class LatexBook(object):
                     match_fancychapter = fancychapter_regex.search(old_line)
                     match_beginfigure = beginfigure_regex.search(old_line)
                     match_endfigure = endfigure_regex.search(old_line)
+                    match_tabular = tabular_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
@@ -121,6 +124,12 @@ class LatexBook(object):
                                               r"\end{minipage}",
                                               "",
                                              ])
+                    elif match_tabular :
+                        coldef = match_tabular.group('coldef').replace('|', '')
+                        new_line = "%s%s%s\n" % (match_tabular.group('envname'),
+                                             match_tabular.group('opt'),
+                                             coldef,
+                                             )
                     else:
                         new_line = old_line
                     new_lines.append(new_line)
