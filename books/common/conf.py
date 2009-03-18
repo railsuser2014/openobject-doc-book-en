@@ -93,7 +93,7 @@ tiny_latex_include = r"""
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\definecolor{NoticeBoxBg}{rgb}{0.90,0.90,0.90}
+\definecolor{NoticeBoxBg}{rgb}{0.95,0.95,0.95}
 
 \newlength{\boxwidth}
 
