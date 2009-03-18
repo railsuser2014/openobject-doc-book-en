@@ -282,18 +282,18 @@ In the case where a single Bill of Materials is defined in multiple levels, a si
 order will be generated for each cabinet, including all of the sub-BoMs. You'd then get the
 following production order:
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-BOIS002       0.17      Unit
-BOIS002       0.25      Unit
-LIN040        1         Unit
-BOIS010       0.25      m2
-TAQ000        12        Unit
-============  ========  ===============
+.. table:: Single manufacture from a tree-structured BoM
 
-Table: Single manufacture from a tree-structured BoM
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   BOIS002       0.17      Unit
+   BOIS002       0.25      Unit
+   LIN040        1         Unit
+   BOIS010       0.25      m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 .. index::
    pair: phantom; bill of materials

@@ -46,7 +46,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
     </div>
 
-    .. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
 .. change the content. You can also print a copy to be read by yourself only.

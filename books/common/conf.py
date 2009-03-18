@@ -93,7 +93,21 @@ tiny_latex_include = r"""
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\definecolor{NoticeBoxBg}{rgb}{0.90,0.90,0.90}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black
+}
+
+\definecolor{TitleColor}{rgb}{1,1,1}
+\definecolor{InnerLinkColor}{rgb}{1,1,1}
+\definecolor{OuterLinkColor}{rgb}{1,1,1}
+\definecolor{VerbatimColor}{rgb}{1,1,1}
+\definecolor{VerbatimBorderColor}{rgb}{1,1,1}
+
+\definecolor{NoticeBoxBg}{rgb}{0.95,0.95,0.95}
 
 \newlength{\boxwidth}
 
@@ -113,7 +127,7 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{ccl}
+  \begin{tabular}{ccp{11cm}}
     \ifx\py@noticetype\py@noticetypetip
       \scalebox{0.500000}{\includegraphics{tip.png}}
     \else
@@ -121,12 +135,12 @@ tiny_latex_include = r"""
     \fi
     &
     \raisebox{5mm}{\strong{#2}}
-    \vspace{3mm}
-  \end{tabular}
-  \linebreak
-  \nopagebreak[4]
+    &
+    \vspace{-2.5\baselineskip}
+    \setlength{\parskip}{2mm}
 }
 {
+  \end{tabular}
   \end{NoticeBox}
   \end{samepage}
 }

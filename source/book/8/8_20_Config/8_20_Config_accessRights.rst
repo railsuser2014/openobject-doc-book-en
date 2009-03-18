@@ -201,13 +201,17 @@ You can manage four access modes on objects independently:
 
 *  :guilabel:`Delete access` : members of the group can delete records from the object.
 
-(access_control.png)Access control to invoices for the admin group
+.. figure::  images/access_control.png
+   :scale: 75
+   :align: center
+
+   *Access control to invoices for the Finance/Admin group*
 
 To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
 Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there 
 and click :guilabel:`Edit`. 
-You give a  *Name*  to the access control, select a  *Group* , and
-the object ( *Model* ), then check the checkbox corresponding to each of the four  *Access*  modes.
+You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
+the object (:guilabel:`Model`), then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
 
 If you don't specify any group in the access rules, the rule is applied to all groups. So to remove
 access to an object for all users you could create a rule:
