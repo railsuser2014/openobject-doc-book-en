@@ -113,7 +113,7 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{ccl}
+  \begin{tabular}{ccp{11cm}}
     \ifx\py@noticetype\py@noticetypetip
       \scalebox{0.500000}{\includegraphics{tip.png}}
     \else
@@ -121,12 +121,12 @@ tiny_latex_include = r"""
     \fi
     &
     \raisebox{5mm}{\strong{#2}}
-    \vspace{3mm}
-  \end{tabular}
-  \linebreak
-  \nopagebreak[4]
+    &
+    \vspace{-2.5\baselineskip}
+    \setlength{\parskip}{2mm}
 }
 {
+  \end{tabular}
   \end{NoticeBox}
   \end{samepage}
 }
