@@ -93,7 +93,13 @@ tiny_latex_include = r"""
 
 \DeclareUnicodeCharacter{00A0}{~}
 
-\renewcommand\href[2]{#1}
+\hypersetup{
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=black,        % color of internal links
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=black          % color of external links
+}
 
 \definecolor{NoticeBoxBg}{rgb}{0.95,0.95,0.95}
 
