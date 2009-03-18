@@ -93,6 +93,8 @@ tiny_latex_include = r"""
 
 \DeclareUnicodeCharacter{00A0}{~}
 
+\renewcommand\href[2]{#1}
+
 \definecolor{NoticeBoxBg}{rgb}{0.95,0.95,0.95}
 
 \newlength{\boxwidth}
