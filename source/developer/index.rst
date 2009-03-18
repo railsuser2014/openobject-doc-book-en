@@ -27,9 +27,6 @@ Part 2 : Module Development
    2_5_Objects_Fields_Methods/index
    2_6_views_events/index
    2_7_menu_action/index
-   4_Reporting/index
-   5_Workflow/index
-   6_Wizard/index
 
 
 Part 3 : Business Process Development 
