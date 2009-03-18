@@ -11,7 +11,7 @@ Developer Book
 Part 1 : Getting Started with OpenERP
 --------------------------------------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    1_1_Introduction/index
    1_2_module_development/index
@@ -21,7 +21,7 @@ Part 1 : Getting Started with OpenERP
 Part 2 : Module Development
 --------------------------------------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    2_4_module_development/index
    2_5_Objects_Fields_Methods/index
@@ -33,14 +33,14 @@ Part 2 : Module Development
 Part 4 : Advance Customization / Configuration
 -----------------------------------------------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    8_I18n/index
 
 Part 5 : Migration, Upgradation, Testing
 -----------------------------------------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    12_DataMigration/index
    12_DataMigration/unit_testing
