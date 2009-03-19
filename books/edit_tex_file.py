@@ -85,7 +85,10 @@ class LatexBook(object):
                                               '',
                                              ])
                     elif match_fancychapter:
-                        new_line = '\n'.join([r"\usepackage[Lenny]{fncychap}"])
+                        new_line = '\n'.join([
+                                              r"\usepackage[Tiny]{fncychap}",
+                                              '',
+                                             ])
                     elif match_maketitle:
                         new_line = '\n'.join([old_line,
                                               r"\thispagestyle{empty}",

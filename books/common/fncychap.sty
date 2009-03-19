@@ -554,11 +554,11 @@
 %%%%%%% BJARNE DEF
 
 \DeclareOption{Bjarne}{%
-  \ChNameUpperCase
-  \ChTitleUpperCase
-  \ChNameVar{\raggedleft\normalsize\rm}
-  \ChNumVar{\raggedleft \bfseries\Large}
-  \ChTitleVar{\raggedleft \Large\rm}
+  %\ChNameUpperCase
+  %\ChTitleUpperCase
+  \ChNameVar{\raggedright\normalsize\rm}
+  \ChNumVar{\raggedright\bfseries\normalsize}
+  \ChTitleVar{\raggedright \normalsize\rm}
   \ChRuleWidth{1pt}
 
 
@@ -575,7 +575,7 @@
     \or Six\or Seven\or Eight\or Nine\or Ten
     \or Eleven\or Twelve\or Thirteen\or Fourteen\or Fifteen
     \or Sixteen\or Seventeen\or Eighteen\or Nineteen\fi
-}
+  }
 
   \newcommand{\AlphaDecNo}{%
     \setcounter{AlphaDecCnt}{0}
@@ -605,13 +605,23 @@
       \fi
     \fi
     }
+
   \renewcommand{\DOCH}{%
-    \mghrulefill{\RW}\par\nobreak
-    \CNV\FmN{\@chapapp}\par\nobreak
-    \CNoV\it\TheAlphaChapter\par\nobreak
+    %\mghrulefill{\RW}\par\nobreak
+    %\CNV\FmN{\@chapapp}\par\nobreak
+    \small\CNV\par\nobreak
+    \CNoV\it\Huge\TheAlphaChapter\par\nobreak
     \vskip -1\baselineskip\vskip 5pt\mghrulefill{\RW}\par\nobreak
-    \vskip 20\p@
-    }
+    \vskip 1\p@
+  }
+
+%   \renewcommand{\DOCH}{%
+%     \mghrulefill{\RW}\par\nobreak
+%     \CNV\FmN{\@chapapp}\par\nobreak
+%     \CNoV\it\TheAlphaChapter\par\nobreak
+%     \vskip -1\baselineskip\vskip 5pt\mghrulefill{\RW}\par\nobreak
+%     \vskip 20\p@
+%     }
   \renewcommand{\DOTI}[1]{%
     \CTV\FmTi{#1}\par\nobreak
     \vskip 40\p@
@@ -621,6 +631,82 @@
     \vskip 40\p@
     }
 }
+
+%%%%%% TINY DEF
+
+\DeclareOption{Tiny}{%
+
+  \ChTitleAsIs
+  \ChNameVar{\raggedleft\normalsize\rm}
+  \ChNumVar{\raggedleft\bfseries\normalsize}
+  \ChTitleVar{\raggedleft\normalsize\rm}
+  \ChRuleWidth{1pt}
+
+  \newcounter{AlphaCnt}
+  \newcounter{AlphaDecCnt}
+  \newcommand{\AlphaNo}{%
+    \ifcase\number\theAlphaCnt
+      \ifnum\c@chapter=0
+        Zero\else{}\fi
+    \or One\or Two\or Three\or Four\or Five
+    \or Six\or Seven\or Eight\or Nine\or Ten
+    \or Eleven\or Twelve\or Thirteen\or Fourteen\or Fifteen
+    \or Sixteen\or Seventeen\or Eighteen\or Nineteen\fi
+  }
+
+  \newcommand{\AlphaDecNo}{%
+    \setcounter{AlphaDecCnt}{0}
+    \@whilenum\number\theAlphaCnt>0\do
+      {\addtocounter{AlphaCnt}{-10}
+       \addtocounter{AlphaDecCnt}{1}}
+     \ifnum\number\theAlphaCnt=0
+     \else
+       \addtocounter{AlphaDecCnt}{-1}
+       \addtocounter{AlphaCnt}{10}
+     \fi
+
+
+    \ifcase\number\theAlphaDecCnt\or Ten\or Twenty\or Thirty\or
+    Forty\or Fifty\or Sixty\or Seventy\or Eighty\or Ninety\fi
+  }
+  \newcommand{\TheAlphaChapter}{%
+
+    \ifinapp
+      \thechapter
+    \else
+      \setcounter{AlphaCnt}{\c@chapter}
+      \ifnum\c@chapter<20
+        \AlphaNo
+      \else
+        \AlphaDecNo\AlphaNo
+      \fi
+    \fi
+  }
+
+  \renewcommand{\DOCH}{%
+    \centering\it\Huge\TheAlphaChapter\par\nobreak
+    \vskip 1\p@
+  }
+
+  \renewcommand{\DOTI}[1]{%
+    \vskip -20\p@
+    \raggedleft\mghrulefill{\RW}\par\nobreak
+    \vskip -10\p@
+    \FmTi{#1}\par\nobreak % FmTi: upper case, lowercase or asis
+    \vskip -25\p@
+    \mghrulefill{\RW}\par\nobreak
+  }
+
+  \renewcommand{\DOTIS}[1]{%
+    \vskip -20\p@
+    \raggedleft\mghrulefill{\RW}\par\nobreak
+    \vskip -10\p@
+    \Huge\FmTi{#1}\par\nobreak
+    \vskip -25\p@
+    \mghrulefill{\RW}\par\nobreak
+  }
+}
+
 
 \DeclareOption*{%
   \PackageWarning{fancychapter}{unknown style option}
