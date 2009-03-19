@@ -8,10 +8,13 @@
 Management of Sales
 *******************
 
-  *This chapter is for sales management in Open ERP, handling the complete order process from
+  *This chapter is for sales management in Open ERP, following the complete sales order process from
   quotation to customer order, including the management of deliveries and of invoicing. 
   It doesn't look at customer relations and pre-sales, which are handled by the CRM
-  (Customer Relationship Management) modules described in an earlier part of the book.*
+  (Customer Relationship Management) modules described in an earlier part of the book.
+  
+  It also describes the management of carriers, margin control and reporting, and
+  price management and the handling of various types of sales discount campaign.*
   
 For this chapter you should start with a fresh database that includes demo data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 

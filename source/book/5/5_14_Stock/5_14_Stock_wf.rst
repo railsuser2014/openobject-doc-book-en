@@ -225,7 +225,7 @@ These units are given suggested titles. For each operation on a product you can 
 measure, as long as it can be found in the same category as the two units already defined. If you
 use another unit of measure, Open ERP automatically handles the conversion of prices and quantities.
 
-So if you have 430 Kg of carottes at 5.30 EUR/Kg, Open ERP will automatically make the conversion if
+So if you have 430 Kg of carrots at 5.30 EUR/Kg, Open ERP will automatically make the conversion if
 you want to sell in tonnes – 0.43 tonnes at 5300 EUR / tonne. If you had set a rounding factor of
 0.1 for the :guilabel:`tonne` unit of measure then Open ERP will tell you that you have only 0.4 tonnes
 available.

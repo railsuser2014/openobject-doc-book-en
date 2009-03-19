@@ -5,10 +5,12 @@
 Sales and Purchasing
 ####################
 
- These two chapters are about selling and purchasing products and services.
+ One of the most necessary business process is selling goods and services and,
+ for goods and materials, their purchase.
  
-.. todo:: Give it more description than this!
- 
+ The objective of this part of the book is to detail the core elements of Open ERP's
+ sales management (in the chapter :ref:`ch-sales`) and purchasing management
+ (in the chapter :ref:`ch-purchase`), and some of the many options that support those processes. 
 
 .. toctree::
     :maxdepth: 1
