@@ -29,20 +29,18 @@ The two fields are:
 
 .. tip:: Detail of future stock
 
-   To get more detail about future stock, you can use the report :ref:`fig-stfore` to the right of the product form
-   :guilabel:`Future Stock Forecast`.
+   To get more detail about future stock, you can click :guilabel:`Future Stock Forecast` to the right of the product form
+   to get the report :ref:`fig-stfore` below.
    Open ERP shows a graph of the change of stock in the days to come, varying as a function of
-   purchase orders or confirmed production.
+   purchase orders, confirmed production and sales orders.
 
    .. _fig-stfore:
    
-   .. figure:: images/stock_forecast.png
+   .. figure:: images/stock_forecast_report.png
       :scale: 75
       :align: center
 
-      *Printout of provisional stock*
-
-.. todo:: This figure doesn't match the text
+      *Printout of forecast stock levels*
 
 Lead times and locations
 ------------------------

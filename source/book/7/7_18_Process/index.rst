@@ -23,14 +23,19 @@ Process
  an invoice or order, then you will also be shown the exact position of that document on 
  its process and workflow diagrams.*
 
+.. index::
+   single: module; sale
+   single: modules; hr_
+   single: module; hr_attendance
+   single: module; hr_contract
+   single: module; hr_holidays
+   single: module; hr_holidays_request
+
 For this chapter you should start with a fresh database that includes demonstration data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
-:mod:`process` is one of those dependencies. 
-
-This is useful as for illustrations because the :mod:`sale` module defines the 
-sale order document and the process 
-and the workflow that sales orders go through, and brings in the :mod:`account` module with its 
-associated invoice workflow and process.
+:mod:`process` is one of those dependencies.  Also install some of the :mod:`hr` modules for
+the second example in this chapter, such as :mod:`hr_attendance`, :mod:`hr_contract`,
+:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
 
 .. raw:: html
 

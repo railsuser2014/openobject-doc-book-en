@@ -96,22 +96,13 @@ You can quite easily configure the system to put default values in various field
 forms. This enables you to pre-complete the fields with default data to simplify your users' work in
 entering new documents.
 
-.. todo:: What's this?
-
-.. *New*  :menuselection:`Partners --> Partners` \ ``New Zealand``\
-.. *Country*  *Partner Contact*
-
 * If you're using the web client hold :kbd:`Ctrl` down and Right-Click at the same time (that's a mouse right-click while the mouse
   pointer is in the field and the Control key is held down on the keyboard).
 
 * If you're using the GTK client, you just need to right-click the mouse while the pointer is in the
   field.
-
-.. todo:: What's this?
-
-.. *Set as default*  *Field Preferences*  *Value applicable for*
-.. \ ``For all``\  or \ ``Only for you``\
-
+  
+An administrator has the choice of making the default work just for that user, or for all users of the database.
 
 .. figure::  images/set_default.png
    :scale: 75
@@ -126,7 +117,9 @@ This is a very powerful feature! An administrator can use this functionality to 
 behavior of your whole system. You can test that in database \ ``openerp_ch13``\   by opening up a
 new :guilabel:`Purchase Order` form, clicking the second tab :guilabel:`Purchase Shippings`,
 selecting \ ``From Picking``\   in the :guilabel:`Invoicing Control` field and then making that the
-default. From that moment on, you'd automatically create draft purchase invoices only when goods are
+default.
+
+From that moment on, you'd automatically create draft purchase invoices only when goods are
 received, so you could very easily restrict your accountants from paying any invoices that turn up
 until you were sure you had received the goods. It wouldn't stop anyone from selecting another
 method of invoice control, but they'd start with the default definition.
@@ -146,8 +139,6 @@ You can do this one of two ways:
 
 * translate the phrases directly in the client, which means that you can change them in their
   context, and that can be helpful to you while you're translating.
-
-.. todo:: - check the details of representation below
 
 The same approach is used to translate terms that haven't been created yet. This can be useful, for
 example, with modules that haven't yet been translated into English or any other language that you

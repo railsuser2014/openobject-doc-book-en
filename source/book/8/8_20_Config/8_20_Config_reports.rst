@@ -120,10 +120,6 @@ the right of the form to get the requested analysis.
 Configuring the dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: What is this for?
-
- *Dashboards > Configuration > Dashboard definition*
-
 A dashboard is a selection of reports previously defined in Open ERP. You can choose from hundreds
 of predefined reports and, for each report, indicate its position on the dashboard.
 
@@ -136,7 +132,9 @@ appear in the dashboard.
 
    *Definition of a new dashboard*
 
-Once the dashboard has been defined you can use the :guilabel:`Create Menu` button to create a menu
+Once the dashboard has been defined through the menu  
+:menuselection:`Dashboards --> Configuration --> Dashboard definition`
+you can use the :guilabel:`Create Menu` button to create a menu
 entry for your dashboard anywhere in the menu system.
 
 Managing document templates with OpenOffice.org

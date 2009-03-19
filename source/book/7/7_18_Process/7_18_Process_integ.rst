@@ -30,39 +30,6 @@ two processes:
 
 * The engagement of a new employee.
 
-Setting up your database
-------------------------
-
-To set a system up for these examples, create a new database with demonstration
-data in it, and select the :guilabel:`Minimal Profile` when you log in as the *admin*
-user. You can enter your own company details when asked, or just select the
-default of *Tiny SPRL* if you want.
-
-You'll be asked what View Mode you want during the Configuration stage.
-:guilabel:`Extended Interface` is recommended at this stage, although it's quite a lot
-more cluttered than the :guilabel:`Simple Interface` because it shows you all the menu
-options. You don't need any additional users.
-
-.. index::
-   single: module; sale
-   single: modules; hr_
-   single: module; hr_attendance
-   single: module; hr_contract
-   single: module; hr_holidays
-   single: module; hr_holidays_request
-
-Then install the :mod:`sale` module for the first example below, which installs
-several other modules as dependencies. Also install some of the :mod:`hr` modules for
-the second example below, such as :mod:`hr_attendance`, :mod:`hr_contract`,
-:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
-
-You'll be asked to set up a Chart of Accounts during the configuration stage.
-Selecting :guilabel:`None` is fine: you can also try one that matches your own
-jurisdiction, if a suitable working one is available.
-
-You'll also be asked to define a default picking policy. Select the default
-that's offered.
-
 Following a customer sales order
 ----------------------------------
 
