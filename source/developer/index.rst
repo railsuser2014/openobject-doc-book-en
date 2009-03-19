@@ -40,7 +40,7 @@ Part 3 : Business Process Development
    3_12_I18n/index
 
 Part 4 : Business Process Advance Configuration 
------------------------------------------
+----------------------------------------------- 
 .. toctree::
    :maxdepth: 2
 
@@ -57,15 +57,25 @@ Part 5 : Migration, Upgradation, Testing
    5_18_upgrading server/index
    5_20_unit_testing/index
 
-Part 7 : Miscellaneous 
-----------------------
+
+Part 6 : Service base Integration
+---------------------------------
 .. toctree::
    :maxdepth: 2
 
-   Miscellaneous/index
+   6_21_web_services/index
+   6_22_XML-RPC_web_services/index
+
+
+Part 7 : Other Topics 
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   7_23_RAD_tools/index
 
  
-Part 8 : Appendices
+Part 8 : Appendices 
 -------------------
 .. toctree::
    :maxdepth: 2

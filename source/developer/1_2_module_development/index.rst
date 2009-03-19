@@ -3,7 +3,7 @@ Moulder Development Approach
 ========================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     1_server_module
     2_module_integration
