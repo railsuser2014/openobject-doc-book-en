@@ -61,7 +61,7 @@ Adds a separator line
 
 .. code-block:: xml
 	
-	<separator string="Links" colspan="4"/>: 
+	<separator string="Links" colspan="4"/>
 
 The string attribute defines its label and the colspan attribute defines his horizontal size (in number of columns). 
 
