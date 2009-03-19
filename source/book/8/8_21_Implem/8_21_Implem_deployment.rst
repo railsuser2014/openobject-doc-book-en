@@ -144,12 +144,12 @@ Such companies can do the implementation work themselves internally, or turn to 
 who will do the ERP implementation work or assist them with it. Generally companies prefer to adopt
 an intermediate solution which consists of:
 
-	#. Turn the initial implementation over to a partner to limit the risks and delays of integration.
-		That enables them to be managed by experts and to obtain a high quality configuration.
+    #. Turn the initial implementation over to a partner to limit the risks and delays of integration.
+       That enables them to be managed by experts and to obtain a high quality configuration.
 
-	#. Take charge of the simple needs for themselves once the software has been implemented. It's
-		quite a lot more convenient for them to be able to modify the database tables, forms, templates and
-		workflows internally than routinely depend on a supplier.
+    #. Take charge of the simple needs for themselves once the software has been implemented. It's
+       quite a lot more convenient for them to be able to modify the database tables, forms, templates and
+       workflows internally than routinely depend on a supplier.
 
 An internal installation will probably prove more costly than an SaaS package or hosted service.
 Even if you put yourself in charge of it all, you'll take quite a bit of time learning how to manage

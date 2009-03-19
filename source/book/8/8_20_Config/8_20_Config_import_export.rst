@@ -181,36 +181,24 @@ Many-to-one fields
 ^^^^^^^^^^^^^^^^^^
 
 Many-to-one fields represent a relationship between the foreground table and another table in the
-database where the foreground table has a single entry for the other table. Open ERP tries to link
-the new record in the foreground table with one of the entries in the other table by searching for
-and matching the :guilabel:`Name` or the :guilabel:`Code` with the value in the CSV file.
+database where the foreground table has a single entry for the other table. Open ERP tries to link 
+the new record in the foreground table with the field in the other table by matching the field values.
 
-.. todo:: this bit is a mess - work out what you're trying to say first.
+.. tip:: Field identifiers 
 
-.. note:: Field identifiers 
-
-   If you're working on the server side you can use identifiers rather than the names of resources. 
-   To do this you must import a
-   first file (for example, Products) with a column named :guilabel:`id` in your CSV file that contains an
-   identifier for each product. The identifier is a character string that is unique for each of the
-   lines being imported and saved.
+   If you're working on the server side you can use identifiers rather than the names of resources
+   to link tables. To do this you import the
+   first file (for example, Products) with a column named :guilabel:`id` in your CSV file that contains a
+   unique identifier for each product. This could be an incrementing number.
 
    When you import other files which link to the first table, you can use the identifier in preference
-   to the names (for example when you're saving inventory the uses the product names).
-
-   To do this, the title of the column in your CSV file must end in \ ``:id``\   (for example \
-   ``product:id``\  ). This format is covered clearly in the online developers' guide.
-
-.. tip:: Importing with identifiers
-
-   The management of free text identifiers enables you to considerably simplify the conversion of
-   another database to Open ERP.
-   You can just create an id column that contains the identifier used in the original database for
-   each table that you're importing.
-
-   For the other tables linked to this one you can just use the identifier relationship to the entry
-   in the original table.
-   You don't need a complex conversion then to create links to the original table.
+   to the names (so, for example, when you're saving inventory you can use \ ``product:id``\ 
+   instead of the product name). 
+   You then don't need any complex conversion to create links between the two tables.
+   
+   This considerably simplifies the importation of another database into Open ERP.
+   You just create a linking ``id`` column for each table that you're importing
+   that contains the identifier used in the first table.
 
 Many-to-many fields
 ^^^^^^^^^^^^^^^^^^^
