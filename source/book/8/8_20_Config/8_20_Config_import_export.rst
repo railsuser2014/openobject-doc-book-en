@@ -19,6 +19,8 @@ The CSV file format is a text format compatible with most spreadsheet programs (
 Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
+.. todo:: this explanation is not yet clear - start with CSV export, I think.
+
 .. index::
    pair: data; CSV import-export
    single: CSV; data
@@ -102,7 +104,7 @@ Have a look at the screenshots below to see the differences.
 
    *A one-to-many field: partner contacts*
 
-All of the other fields are coded in the CSV file as just one field in each column.
+All of the other fields are coded in the CSV file as just one text string in each column.
 
 .. index:: 
    pair: relation; field
@@ -114,6 +116,8 @@ Many-to-one fields represent a relationship between the foreground table and ano
 database where the foreground table has a single entry for the other table. Open ERP tries to link
 the new record in the foreground table with one of the entries in the other table by searching for
 and matching the :guilabel:`Name` or the :guilabel:`Code` with the value in the CSV file.
+
+.. todo:: this bit is a mess - work out what you're trying to say first.
 
 .. note:: Field identifiers 
 

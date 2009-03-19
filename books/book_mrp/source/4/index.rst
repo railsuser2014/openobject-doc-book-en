@@ -5,6 +5,15 @@
 Process Management
 ##################
 
+ This part of the book contains a single chapter, :ref:`ch-process`.
+ It is concerned with something that is rather special in Open ERP -
+ the management and visualization of cross-company processes and document workflows.
+ 
+ In combination with the documentation, this visualization can show exactly where a document
+ (such as a Sales Order) has reached in its process, how it generates other documents (such as
+ an Invoice), and the technical detail of its own workflow (which can be seen in both 
+ the GTK client and the web client).
+
 .. toctree::
     :maxdepth: 1
 
