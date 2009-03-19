@@ -74,6 +74,7 @@ latex:
 	../edit_tex_file.py build/latex
 	cp ../common/book.cls build/latex
 	cp ../common/sphinx.sty build/latex
+	cp ../common/fncychap.sty build/latex
 
 changes:
 	mkdir -p build/changes build/doctrees

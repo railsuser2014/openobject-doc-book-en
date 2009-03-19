@@ -5,9 +5,9 @@
 
 .. _ch-config:
 
-**************************************
-Configuring and Administering Open ERP
-**************************************
+******************************
+Configuration & Administration
+******************************
 
  *This chapter is for the administrators of an Open ERP system.
  You'll learn to configure Open ERP to match it to your company's needs and
@@ -28,6 +28,9 @@ assign certain functions to specific system users. You can also assign roles, wh
 that each system user plays in the workflows that move system documents from state to state (such as
 the ability to approve employee expense requests).
 
+For this chapter you should start with a fresh database that includes demonstration data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+
 .. index::
    single: configuration
    single: configuration; parameterization
@@ -46,11 +49,11 @@ the ability to approve employee expense requests).
 
 	*Configuration* is less radical – it's the general process of setting all
 	the parameters of the software to fit the needs of your system (often called *parameterization* or *setup*).
-	Configuration is also, by convention, the name of the submenu below each of Open ERP's top-level menus that
+	Configuration is also, by convention, the name of the sub-menu below each of Open ERP's top-level menus that
 	is accessible only to the administrative user for that section.
 
 	*Personalization* is just that subset of configuration options that shapes the system to the
-	operational needs of a certain person or company.
+	particular operational and/or stylistic wishes of a person or company.
 
 Using the *OpenOffice.org Report Designer* module you can change any part of any of the reports
 produced by the system. The system administrator can configure each report to modify its layout and

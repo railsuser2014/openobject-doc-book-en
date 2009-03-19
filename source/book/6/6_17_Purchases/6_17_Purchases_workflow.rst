@@ -1,9 +1,9 @@
 
-A complete workflow
-===================
+All the elements of a complete workflow
+=======================================
 
-The supplier order is the document that enables you to manage price negotiations, control
-supplier invoices, control goods receipts and synchronize all of these documents.
+The supplier order is the document that lets you manage price negotiations, control
+supplier invoices, handle goods receipts and synchronize all of these documents.
 
 Start by looking at the following order workflow:
 

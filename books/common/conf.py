@@ -101,9 +101,9 @@ tiny_latex_include = r"""
     urlcolor=black
 }
 
-\definecolor{TitleColor}{rgb}{1,1,1}
-\definecolor{InnerLinkColor}{rgb}{1,1,1}
-\definecolor{OuterLinkColor}{rgb}{1,1,1}
+\definecolor{TitleColor}{rgb}{0,0,0}
+\definecolor{InnerLinkColor}{rgb}{0,0,0}
+\definecolor{OuterLinkColor}{rgb}{0,0,0}
 \definecolor{VerbatimColor}{rgb}{1,1,1}
 \definecolor{VerbatimBorderColor}{rgb}{1,1,1}
 

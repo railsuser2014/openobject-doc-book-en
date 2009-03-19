@@ -13,9 +13,9 @@ Logistics and Stock Management
  It's based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
  “everything moved”. In Open ERP you don't talk of disappearance, consumption or loss of products:
- instead you talk only of stock moves from one place to another.*
+ instead you speak only of stock moves from one place to another.*
 
-Just as in accounting, the Open ERP system manages counterparts to each of its operations such as
+Just as in accounting, the Open ERP system manages counterparts to each of its main operations such as
 receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption
 of raw materials. Stock movements are always made from one location to another. To satisfy the need
 for a counterpart to each stock movement, the software supports different types of stock location:

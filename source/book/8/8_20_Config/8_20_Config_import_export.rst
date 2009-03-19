@@ -20,8 +20,37 @@ Calc and Microsoft Excel) and is easily editable as a worksheet. The first line 
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
 .. index::
-   pair: data; CSV import-export
-   single: CSV; data
+   pair: data; CSV export
+
+.. todo:: starting with CSV export
+
+Exporting Open ERP data to CSV
+------------------------------
+
+Start exploring Open ERP's use of the CSV format by exporting a modestly complex set of data,
+the partners and partner addresses in the demonstration data.
+
+Go to :menuselection:`Partners --> Partners` for the list of partners and then scroll to the bottom
+of the list to click the :guilabel:`Export` link. This pops up the :guilabel:`Export Data` dialog box.
+Select the following fields:
+
+* :guilabel:`Name`,
+
+* :guilabel:`Contact Name` under the :guilabel:`Contacts` menu,
+
+* :guilabel:`Zip` under the :guilabel:`Contacts` menu.
+
+You can either select and add them one at a time, or :kbd:`Ctrl-click` them and add
+the multiple selection - the order in which you 
+select them is the order in which they'll be displayed.
+
+Then click :guilabel:`Export` and save the resulting :file:`data.csv` file somewhere accessible - 
+perhaps your Desktop. You can open that file in a spreadsheet program or a text editor.
+
+.. todo:: this explanation is not yet finished and linked to the next section.
+
+.. index::
+   pair: data; CSV import
 
 The CSV format for complex database structures
 ----------------------------------------------
@@ -102,7 +131,7 @@ Have a look at the screenshots below to see the differences.
 
    *A one-to-many field: partner contacts*
 
-All of the other fields are coded in the CSV file as just one field in each column.
+All of the other fields are coded in the CSV file as just one text string in each column.
 
 .. index:: 
    pair: relation; field
@@ -114,6 +143,8 @@ Many-to-one fields represent a relationship between the foreground table and ano
 database where the foreground table has a single entry for the other table. Open ERP tries to link
 the new record in the foreground table with one of the entries in the other table by searching for
 and matching the :guilabel:`Name` or the :guilabel:`Code` with the value in the CSV file.
+
+.. todo:: this bit is a mess - work out what you're trying to say first.
 
 .. note:: Field identifiers 
 

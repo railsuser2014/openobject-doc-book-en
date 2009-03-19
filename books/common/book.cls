@@ -346,17 +346,19 @@
      \normalfont
      \Huge \bfseries #1\par}%
     \@endpart}
-\def\@endpart{\vfil\newpage
-              \if@twoside
-               \if@openright
-                \null
-                \thispagestyle{empty}%
-                \newpage
-               \fi
-              \fi
-              \if@tempswa
-                \twocolumn
-              \fi}
+% \def\@endpart{\vfil\newpage
+%               \if@twoside
+%                \if@openright
+%                 \null
+%                 \thispagestyle{empty}%
+%                 \newpage
+%                \fi
+%               \fi
+%               \if@tempswa
+%                 \twocolumn
+%               \fi}
+\def\@endpart{}
+
 \newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
                     \thispagestyle{plain}%
                     \global\@topnum\z@
