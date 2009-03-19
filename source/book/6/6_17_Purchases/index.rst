@@ -8,13 +8,15 @@
 Purchasing Management
 *********************
 
- *In the preceding chapters you saw how to use supplier invoices and delivery notes in Open ERP.
- This chapter is about the management of purchases, the process upstream of these two operations.
- You'll now see how Open ERP handles and simplifies this and the control of purchases at the
+ *In the preceding chapters you saw how to use customer invoices and delivery notes in Open ERP.
+ This chapter is about the management of purchases, the process ahead of these two operations.
+ You'll now see how Open ERP handles and simplifies this and the control of purchases from
  suppliers.*
 
-For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+For this chapter you should start with a fresh database that includes demonstration data,
+with :mod:`sale` and its dependencies installed (which indirectly depends on, and installs, 
+the :mod:`purchase` module) 
+and no particular chart of accounts configured. 
 
 
 .. raw:: html

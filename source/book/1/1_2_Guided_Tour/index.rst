@@ -8,7 +8,7 @@
 Guided Tour
 ***********
 
- *Starting to discover Open ERP, using demonstration data supplied with the system to
+ *Starting to discover Open ERP, using demonstration data supplied with the system, is a good way to
  familiarize yourself with the user interface.
  This guided tour provides you with an introduction to many of the available system features.*
  
@@ -35,7 +35,6 @@ A two-phase approach provides a good guide for your first steps with Open ERP:
 To read this chapter effectively, make sure that you have access to an Open ERP server. The
 description in this chapter assumes that you're using the Open ERP web client unless it states
 otherwise. The general functionality differs little from one client to the other.
-
 
 .. raw:: html
 

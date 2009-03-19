@@ -26,7 +26,7 @@ Your training needs depend on the type of deployment you've chosen. If you have 
 development, technical training isn't very useful.
 
 In summary, you should arrange both user training and self-paced training (perhaps based on this
-book) if you can. Technical training is strongly advised if you see yourselves developing your own
+book series) if you can. Technical training is strongly advised if you see yourselves developing your own
 modules. Although it's not obligatory it gives you quite a time advantage in any serious Open ERP
 engagement.
 
