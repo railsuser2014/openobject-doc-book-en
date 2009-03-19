@@ -22,8 +22,6 @@ the field in the form. All the subsequent lines are data, aligned in their respe
 .. index::
    pair: data; CSV export
 
-.. todo:: starting with CSV export
-
 Exporting Open ERP data to CSV
 ------------------------------
 
@@ -38,7 +36,7 @@ Select the following fields:
 
 * :guilabel:`Contact Name` under the :guilabel:`Contacts` menu,
 
-* :guilabel:`Zip` under the :guilabel:`Contacts` menu.
+* :guilabel:`City` under the :guilabel:`Contacts` menu.
 
 You can either select and add them one at a time, or :kbd:`Ctrl-click` them and add
 the multiple selection - the order in which you 
@@ -47,22 +45,65 @@ select them is the order in which they'll be displayed.
 Then click :guilabel:`Export` and save the resulting :file:`data.csv` file somewhere accessible - 
 perhaps your Desktop. You can open that file in a spreadsheet program or a text editor.
 
-.. todo:: this explanation is not yet finished and linked to the next section.
+You'll see that you have a list of partners, with the name and city of each partner's contacts
+alongside. In the couple of cases where there is more than one address, the partner name
+is left out. So it is important to note that the order of entries is critical - do not sort
+that list!
+
+.. tip:: List limits
+
+   There is a limit to the number of items you can export in the clients - it's the number
+   you can actually see and that is limited to a maximum of 100 in the web client, but is
+   arbitrary in the GTK client.
+   
+   So if you want to export everything, use the GTK client. Set the export limit to an 
+   arbitrarily large figure (using the :guilabel:`+` button to expose the 
+   :guilabel:`Parameters` and :guilabel:`Limit` fields), then click 
+   :menuselection:`Form --> Export data...`, set up the fields to export, and
+   then prepare to wait.
 
 .. index::
    pair: data; CSV import
+
+Importing CSV data to Open ERP
+------------------------------
+
+Use this export file as a template for an import file by deleting all of the data
+and using new data (here you'll just import new data alongside the demonstration data,
+but the principle is the same for a blank database).
+
+For example, to import partners with several contacts for which you specify a name and a city, you
+would create the following CSV file from the export file:
+
+.. csv-table:: *Example of importing partner address fields*
+   :header: "Name", "Contacts/Contact Name", "Contacts/City"
+   :widths: 12,10,8
+
+   "Whole Globe Technologies","Graham Global","Athens"
+   "","Wanda World","Rome"
+   "","Emerson Earth","New York"
+   "Miles A Minute","",""
+
+From the list of partners, click the :guilabel:`Import` button and then in the 
+:guilabel:`Import Data` window click :guilabel:`Open` to search for and import
+the new :file:`data.csv` file. The web client automatically matches column names
+but the GTK client requires that you click the :guilable:`Auto detect` button.
+
+You'll get a dialog box showing that you have imported 2 objects, and you can
+see the new partners and partner addresses when you refresh the list on screen.
+
+.. index::
+   pair: data; CSV structured
 
 The CSV format for complex database structures
 ----------------------------------------------
 
 When you import data you have to overcome the problem of representing a database structure in \
-``.csv``\  flat files.
-
-To do this, two solutions are possible in Open ERP:
+``.csv``\  flat files. To do this, two solutions are possible in Open ERP:
 
 * importing a CSV file that's been structured in a particular way to enable you to load several
   different database tables from a single file (such as partners and partner contacts in one CSV
-  file),
+  file, as you have just done above),
 
 * importing several CSV files, each corresponding to a specific database table, that have explicit
   links between the tables.
@@ -190,31 +231,7 @@ To import such a field you don't have to link to an existing entry in another ta
 create and link to several partner contacts using the same file. You can then specify several values
 for different fields linked to that object by the one-to-many field. Each field must be put in a
 column of the table, and the title of that column must be expressed in the form \ ``field_one-to-
-many/field_linked-object``\  .
-
-For example, to import partners with several contact for which you specify a name and a city, you
-would create the following CSV file:
-
-.. csv-table:: *Example of importing one-to-many fields*
-   :header: "Name","Code","Address/Contact","Address/City"
-   :widths: 8,5,10,10
-
-   "Tiny sprl","Tiny","Fabien Pinckaers","Grand-Rosière"
-   "","","Cécile Debois","Namur"
-   "Axelor SARL","Axelor","Laith Jubair","Paris"
-   "Open-Net","OpenNet","",""
-
-In this example, the :guilabel:`Name` and :guilabel:`Code`  fields belong to the :guilabel:`Partner`
-table, and the :guilabel:`Contact` and :guilabel:`City` fields belong to the :guilabel:`Contact`
-linked to this partner.
-
-Importing this file will give you three partners:
-
-* Tiny: with two contacts, Fabien and Cécile,
-
-* Axelor SARL: with just one contact,
-
-* Open-Net: with no contact..
+many/field_linked-object``\  . The partner data you imported earlier took that form.
 
 .. note::  Symmetry in relation fields
 
@@ -231,18 +248,17 @@ Importing this file will give you three partners:
 .. index::
    single: data; import example
 
-Examples of CSV import files
-----------------------------
+Another example of a CSV import file
+------------------------------------
 
-To illustrate data importing, you can see two examples below. The first one is to import partner
-categories, and then to import some partners and their contacts along with links to the categories
+To illustrate data importing, you can see another example below. First import partner
+categories, and then import some partners and their contacts along with links to the categories
 just created. Although you can create new contacts at the same time as creating partners (because
 you can do this for *one-to-many* relations), you can't create new categories this way (because they
-use *many-to-many* relations).
+use *many-to-many* relations). You must create new categories in a separate step.
 
 Partner categories
 ^^^^^^^^^^^^^^^^^^
-
 Start by creating partner categories in a CSV file:
 
 #. Create the following table in your spreadsheet program:
@@ -285,17 +301,10 @@ Start by creating partner categories in a CSV file:
 #. Click :menuselection:`Partners --> Partners by category` to view the tree of categories,
    including the new \ ``Quality``\  branch that you loaded.
 
-.. tip:: GTK dialog box for importing CSV files
-
-   The dialog box you use in the web client for importing a CSV file is slightly different from that
-   of the GTK client.
-   The GTK client shows you which fields are required and doesn't include those fields that can't be
-   completed (such as calculated fields).
-
 New partners
 ^^^^^^^^^^^^
 
-Here's how to create new partners with several contacts, and how to link them to new categories:
+Here's how to create new partners with more than one contact, as you did before, and how to link them to these new categories:
 
 #. Enter the table below into your spreadsheet program.
 
@@ -303,8 +312,8 @@ Here's how to create new partners with several contacts, and how to link them to
       :header: "","Column A","Column B","Column C","Column D"
       :widths: 5,10,10,10,10
 
-      "Line 1","Name","Categories","Contacts/Name","Salesman"
-      "Line 2","Black Advertising","Silver, Gold","George Black","Administrator"
+      "Line 1","Name","Categories","Contacts/Contact Name","Dedicated Salesman"
+      "Line 2","Black Advertising","Silver,Gold","George Black","Administrator"
       "Line 3","","","Jean Green",""
       "Line 4","Tiny sprl","","Fabien Pinckaers","Administrator"
 
@@ -320,8 +329,8 @@ Here's how to create new partners with several contacts, and how to link them to
    with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
    (``Silver`` and ``Gold``).
 
-Exporting data
---------------
+Exporting data in other forms
+-----------------------------
 
 Open ERP's generic export mechanism lets you easily export any of your data to any location on your
 system. You're not restricted to what you can export, although you can restrict who can export that
@@ -339,53 +348,6 @@ to Microsoft Excel using Microsoft's COM mechanism.
 	* using the XML-RPC web service,
 
 	* accessing the PostgreSQL database directly.
-
-To illustrate the export of data, you can follow the steps below to export information on a specific
-partner using the web client:
-
-#. In Open ERP, select :menuselection:`Partners --> Partners` to show a list of partners. Search
-   for a specific :guilabel:`Name` (here, \ ``Black``\   to display only the one line.
-
-#. Click :guilabel:`Export` to bring up the :guilabel:`Export Data` dialog box.
-
-#. All of the fields available are shown in the :guilabel:`All fields` section to the left – that corresponds
-   to all of the fields visible on the form, including all of the fields that come from links to other
-   tables in the underlying database.
-
-#. Select the fields that interest you by adding them to the :guilabel:`Fields to Export` section
-   using the :guilabel:`Add` button.
-
-#. Click :guilabel:`Export` to export a CSV file or, if your client is on a Windows PC, you have the
-   option of opening the data in a Microsoft Excel spreadsheet. The data is exported in a table
-   similar to the one below.
-
-.. csv-table:: *Partner data in the exported file*
-   :header: "","Column A","Column B","Column C","Column D"
-   :widths: 5,10,10,10,10
-
-   "Line 1","Name","Categories/Category name","Contact","Salesman"
-   "Line 2","Black Advertising","Silver","George Black","Administrator"
-   "Line 3","","Gold","",""
-   "Line 4","","","Jean Green",""
-
-In the table above:
-
-*  :guilabel:`Column A` contains text data for the :guilabel:`Name` field in the
-   :guilabel:`Partners` table.
-
-*  :guilabel:`Column B`  contains text data for the :guilabel:`Category name` field in the  *many-
-   to-many*  related :guilabel:`Partner Category` table: if there are several categories they're listed
-   in that column with all other lines remaining blank except for any other fields in the
-   :guilabel:`Partner Category` table that may also have been selected.
-
-*  :guilabel:`Column C` contains text data for the :guilabel:`Name` field in the  *one-to-many*
-   related :guilabel:`Partner contact` table: if there are several partner contacts then they're listed
-   in that column with all other lines remaining blank except for any other fields in the partner
-   contact tables that may also have been selected.
-
-*  :guilabel:`Column D` contains text data for the Salesman, which is the :guilabel:`Name` field in
-   the  *many-to-one*  related :guilabel:`User` table. It is listed only on the same line as the
-   Partner itself.
 
 .. tip:: Module Recorder
 
