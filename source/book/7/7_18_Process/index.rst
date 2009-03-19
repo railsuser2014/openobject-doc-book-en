@@ -13,7 +13,7 @@ Process
  of new documents (based on business objects) and processes that you need to encounter to
  model and manage your business.*
  
- *Open ERP's :mod:`process` module, which is installed automatically when a process-aware module
+ *Open ERP's process module, which is installed automatically when a process-aware module
  is installed, shows you cross-functional processes and technical workflows for those
  nodes in the process that have them. This visualization is invaluable for documentation - 
  but it also goes a step further. You can modify processes and workflows and even generate
@@ -25,6 +25,7 @@ Process
 
 For this chapter you should start with a fresh database that includes demonstration data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+:mod:`process` is one of those dependencies. 
 
 This is useful as for illustrations because the :mod:`sale` module defines the 
 sale order document and the process 

@@ -19,11 +19,38 @@ The CSV file format is a text format compatible with most spreadsheet programs (
 Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of
 the field in the form. All the subsequent lines are data, aligned in their respective columns.
 
-.. todo:: this explanation is not yet clear - start with CSV export, I think.
+.. index::
+   pair: data; CSV export
+
+.. todo:: starting with CSV export
+
+Exporting Open ERP data to CSV
+------------------------------
+
+Start exploring Open ERP's use of the CSV format by exporting a modestly complex set of data,
+the partners and partner addresses in the demonstration data.
+
+Go to :menuselection:`Partners --> Partners` for the list of partners and then scroll to the bottom
+of the list to click the :guilabel:`Export` link. This pops up the :guilabel:`Export Data` dialog box.
+Select the following fields:
+
+* :guilabel:`Name`,
+
+* :guilabel:`Contact Name` under the :guilabel:`Contacts` menu,
+
+* :guilabel:`Zip` under the :guilabel:`Contacts` menu.
+
+You can either select and add them one at a time, or :kbd:`Ctrl-click` them and add
+the multiple selection - the order in which you 
+select them is the order in which they'll be displayed.
+
+Then click :guilabel:`Export` and save the resulting :file:`data.csv` file somewhere accessible - 
+perhaps your Desktop. You can open that file in a spreadsheet program or a text editor.
+
+.. todo:: this explanation is not yet finished and linked to the next section.
 
 .. index::
-   pair: data; CSV import-export
-   single: CSV; data
+   pair: data; CSV import
 
 The CSV format for complex database structures
 ----------------------------------------------
