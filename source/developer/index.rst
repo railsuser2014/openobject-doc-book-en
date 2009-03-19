@@ -37,7 +37,7 @@ Part 3 : Business Process Development
    3_9_Work flow - Business Process/index
    3_10_wizard/index   
    3_11_reports/index  
-   8_I18n/index
+   3_12_I18n/index
 
 Part 4 : Business Process Advance Configuration 
 -----------------------------------------
@@ -53,8 +53,9 @@ Part 5 : Migration, Upgradation, Testing
 .. toctree::
    :maxdepth: 2
 
-   5_18_data_migration/index
-   
+   5_17_data_migration/index
+   5_18_upgrading server/index
+   5_20_unit_testing/index
 
 Part 7 : Miscellaneous 
 ----------------------
