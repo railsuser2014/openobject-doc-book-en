@@ -127,14 +127,12 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{ccp{11cm}}
+  \begin{tabular}{cp{11cm}}
     \ifx\py@noticetype\py@noticetypetip
       \scalebox{0.500000}{\includegraphics{tip.png}}
     \else
       \scalebox{0.8}{\includegraphics{note.png}}
     \fi
-    &
-    \raisebox{5mm}{\strong{#2}}
     &
     \vspace{-2.5\baselineskip}
     \setlength{\parskip}{2mm}
