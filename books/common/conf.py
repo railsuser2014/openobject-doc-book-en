@@ -127,7 +127,7 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{cp{11cm}}
+  \begin{tabular}{cp{125mm}}
     \ifx\py@noticetype\py@noticetypetip
       \scalebox{0.500000}{\includegraphics{tip.png}}
     \else
