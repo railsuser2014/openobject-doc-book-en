@@ -11,15 +11,17 @@ Installation and Initial Setup
 ******************************
 
  *Installing Open ERP under Windows or Linux for familiarization use should take you only half an
- hour or so and needs only a couple of operations.
- The first operation is installation of the application and database server on a server PC (that's
+ hour or so and needs only a couple of operations.*
+ 
+ *The first operation is installation of the application and database server on a server PC (that's
  a Windows or Linux or Macintosh computer).
- You've a choice of approaches for the second operation:
+
+ *You've a choice of approaches for the second operation:
  either install a web server (most probably on the original server PC) to use with standard web
- clients that can be found on anybody's PC,
- or install application clients on each intended user's PC.
- When you first install Open ERP you'll set up a database containing a little functionality and
- some demonstration data to test the installation.*
+ clients that can be found on anybody's PC, or install application clients on each intended user's PC.*
+ 
+When you first install Open ERP you'll set up a database containing a little functionality and
+some demonstration data to test the installation.
  
 .. figure:: images/ch1_outline.png
    :align: center
@@ -99,7 +101,7 @@ of server you're using.
    the release and on the website – for exact installation procedures.
 
 Once you've completed this installation, create and set up a database to confirm that your
-Open ERP installation is working. You can follow the early chapters in this part of the book to achieve this.
+Open ERP installation is working. You can follow these early chapters in this part of the book to achieve this.
 
 .. raw:: html
 

@@ -430,12 +430,12 @@ that act as their names suggest, and ``Virtual Locations`` that are used by Open
 	If you want real-time stock valuation that tracks stock movements you must assign an account to
 	each stock location. As product items are added to and taken from each location Open ERP generates
 	an account entry for that location defined by the configuration of the product being moved – and
-	a stock valuation based (in the current versions of Open ERP) on either Standard Cost or Average
-	Price.
+	a stock valuation based (in the current versions of Open ERP) on either :guilabel:`Cost Price` or 
+	:guilabel:`Average Price`.
 
 	For example, if you assign an account to the Supplier location you'll be able see the value of
-	stock that you've taken from the supplier. Its contents should be valued in your accounts. Thus it
-	manages inventory on consignment.
+	stock that you've taken from the supplier. Its contents can be valued in your accounts and it
+	can manage inventory on consignment.
 
 A Warehouse contains an input location, a stock location and an output location for sold products.
 You can associate a warehouse with a partner to give the warehouse an address. That doesn't have to

@@ -9,7 +9,33 @@
 Process
 *******
 
-.. todo:: Chapter intro needed - indented and with * characters.
+ *If you have reached this far in the book, your mind may well be reeling with the number
+ of new documents (based on business objects) and processes that you need to encounter to
+ model and manage your business.*
+ 
+ *Open ERP's process module, which is installed automatically when a process-aware module
+ is installed, shows you cross-functional processes and technical workflows for those
+ nodes in the process that have them. This visualization is invaluable for documentation - 
+ but it also goes a step further. You can modify processes and workflows and even generate
+ entirely new processes and workflows for your various document types.*
+ 
+ *If your starting point is a specific document, such as
+ an invoice or order, then you will also be shown the exact position of that document on 
+ its process and workflow diagrams.*
+
+.. index::
+   single: module; sale
+   single: modules; hr_
+   single: module; hr_attendance
+   single: module; hr_contract
+   single: module; hr_holidays
+   single: module; hr_holidays_request
+
+For this chapter you should start with a fresh database that includes demonstration data,
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+:mod:`process` is one of those dependencies.  Also install some of the :mod:`hr` modules for
+the second example in this chapter, such as :mod:`hr_attendance`, :mod:`hr_contract`,
+:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
 
 .. raw:: html
 

@@ -4,9 +4,9 @@
 
 .. _ch-real:
 
-*****************************************************************
-Developing a real case from purchase to sale: a complete workflow
-*****************************************************************
+**********************
+Developing a real case
+**********************
 
  *Now that you've discovered some of the many possibilities of Open ERP from a tour of the
  demonstration database, you'll develop a real case. An empty database provides the starting point 
