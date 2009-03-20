@@ -30,7 +30,7 @@ Stock Moves
 Use the menu :menuselection:`Stock Management --> Traceability --> Low Level --> Stock Moves`
 to track past stock transactions for a product or a given location. All the operations
 are available. You can filter on the various fields to retrieve the operations about an order,
-or a production, or a source location, or any given destination.
+or a production activity, or a source location, or any given destination.
 
 .. figure:: images/stock_move_tree.png
    :scale: 75
@@ -51,10 +51,10 @@ Each stock move is in a given state. The different possible states are:
 
 * ``Done`` : the stock move has been done, and entered into the calculations of real stock,
 
-* ``Waiting`` : in the case of transactions 'From Order', this state shows that the stock move is blocked
+* ``Waiting`` : in the case of transactions ``From Order`` , this state shows that the stock move is blocked
   waiting for the end of another move,
 
-* ``Cancelled`` : the stock move wasn't carried out, so there's no account in either real stock or
+* ``Cancelled`` : the stock move wasn't carried out, so there's no accounting for it in either real stock or
   virtual stock.
 
 Delivery orders, goods receipts and internal picking lists are just documents that group a set of
@@ -66,11 +66,11 @@ Lots
 
 Open ERP can also manage product lots. Two lot types are defined:
 
-* Manufacturing lots (batch numbers) are represented by a unique product or an assembly of identical
-  products leaving the same production. They are usually identified by bar codes stuck on the
-  products. The batch can be identified for your supplier or your company.
+* Production lots (batch numbers) are represented by a unique product or an assembly of identical
+  products leaving the same production area. They are usually identified by bar codes stuck on the
+  products. The batch can be marked with a supplier number or your own company numbers.
 
-* Tracking numbers are logistical lots by which you can identify the container for a set of
+* Tracking numbers are logistical lots for identifying the container for a set of
   products. This corresponds, for example, to the pallet numbers on which several different products
   are stocked.
 
@@ -84,22 +84,24 @@ and product deliveries.
    *Entering a line for production receipt*
 
 To enter the lot number in an operation you can use an existing lot number or create a new lot. A
-manufacturing lot (batch number) must always be used for a single product. A tracking number can be
-used several times for different products so you can mix different products on a pallet or in a box.
+production lot (batch number) is used for a single product. A tracking number can be
+used several times for different products, so you can mix different products on a pallet or in a box.
 
 .. note:: Simplified View
 
-    In the simplified view the tracking numbers can't be seen.
-    These fields are hidden when working in simplified view.
+    In the ``Simplified View`` the tracking numbers can't be seen: the field is hidden.
+    To get to ``Extended View`` mode, assign the group 
+    :guilabel:`Usability – Extended View` to the current user.
 
 You can also specify on the product form the operations in which a lot number is
-required. You can then require the user to set a lot number for manufacturing operations, goods
+required. You can then compel the user to set a lot number for manufacturing operations, goods
 receipt, or customer packing.
 
-To assign a unique lot number to a set of several items you don't have to encode the lot number one
-by one. You only need to take a stock move for several products line and click the button
-:guilabel:`Split move lines in two`. You can then give a lot number prefix and Open ERP will
-complete the prefix in the wizard with a continuing sequence number.
+You don't have to encode the lot number one by one to assign a unique lot number to a set of several items. 
+You only need to take a stock move for several products line and click the button
+:guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and Open ERP will
+complete the prefix in the wizard with a continuing sequence number. This sequence number
+might correspond to a set of pre-printed barcodes that you stick on each product.
 
 .. figure:: images/picking_split_lot.png
    :scale: 75
@@ -112,7 +114,7 @@ complete the prefix in the wizard with a continuing sequence number.
 Traceability
 ------------
 
-If you encode the lot numbers for stock moves you can then investigate the traceability of any
+If you code in the lot numbers for stock moves as described above you can then investigate the traceability of any
 given lot number. To do this use the menu :menuselection:`Stock Management --> Traceability -->
 Production Lots`, or :menuselection:`Stock Management --> Traceability --> Tracking Lots`.
 
@@ -130,7 +132,7 @@ Production Lots`, or :menuselection:`Stock Management --> Traceability --> Track
 
     * :guilabel:`Bills of Materials`.
 
-Search for the expected lot using the filters for the lot number, the date or the product. Once you
+Search for a particular lot using the filters for the lot number, the date or the product. Once you
 can see the form about this lot several actions are possible:
 
 * :guilabel:`Traceability upstream` : from supplier through to customers,
@@ -152,7 +154,7 @@ can see the form about this lot several actions are possible:
    *Tracing downstream in Make to Stock*
 
 Finally, on a lot, you can enter data on all the operations that have been done on the product. That
-forms a useful history of the presales operations.
+forms a useful history of the pre-sales operations.
 
 .. Copyright © Open Object Press. All rights reserved.
 
