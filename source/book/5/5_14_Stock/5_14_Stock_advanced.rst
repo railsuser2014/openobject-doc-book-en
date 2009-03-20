@@ -234,7 +234,7 @@ receipt note with a forecast date at the end of the rental period. So you genera
 pending receipt that you confirm when they are returned to your stores. To do this you should
 configure a product with the following rules:
 
-.. table:: *Example Product For Rental*
+.. table:: Example Product For Rental
 
    ==================== ==============
    Field                Value
@@ -282,7 +282,7 @@ Finally, on the product form, create the following rule to show that when purcha
 don't arrive at your stores directly, but instead at the port of Shanghai. In this example the
 stores are configured to enter all the products in a location called 'Input'.
 
-.. table:: *Rule to move products automatically to Shanghai Port*
+.. table:: Rule to move products automatically to Shanghai Port
 
    ==================== ========================
    Field                Value
@@ -300,7 +300,7 @@ out because operations at this level are too labour-intensive to be done manuall
 
 You then have to create a rule on the product form to move it from one location to another:
 
-.. table:: *Rule to move products manually from Shanghai Port to Anvers Port*
+.. table:: Rule to move products manually from Shanghai Port to Anvers Port
 
    ==================== ==============================
    Field                Value
@@ -312,7 +312,7 @@ You then have to create a rule on the product form to move it from one location 
    Operation            Sending to Anvers Port by ship
    ==================== ==============================
 
-.. table:: *Rule to move products manually from Anvers Port to Anvers Customs*
+.. table:: Rule to move products manually from Anvers Port to Anvers Customs
 
    ==================== =================
    Field                Value
@@ -324,7 +324,7 @@ You then have to create a rule on the product form to move it from one location 
    Operation            Customs at Anvers
    ==================== =================
 
-.. table:: *Rule to move products manually from Anvers Customs to Stock*
+.. table:: Rule to move products manually from Anvers Customs to Stock
 
    ==================== ==============================
    Field                Value
@@ -359,7 +359,7 @@ arrives in your company. To do that you just configure a rule for the product to
 in the Quality Control location rather than the Input location when the product is received from the
 supplier.
 
-.. table:: *Rule to move products manually from Input to Quality Control*
+.. table:: Rule to move products manually from Input to Quality Control
 
    ==================== ==============================
    Field                Value

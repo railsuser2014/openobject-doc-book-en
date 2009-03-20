@@ -18,15 +18,15 @@ Defining a new product
 
 To start, define the following product:
 
-.. table:: *Product Definition*
+.. table:: Product Definition
 
    ==================== ======================
    Field                Value
    ==================== ======================
    Name                 Central Heating Type 1
    Code                 CCT1
-   Product Type         Stockable
-   Method of restocking Purchase
+   Product Type         Stockable Product
+   Supply Method        Buy
    ==================== ======================
 
 Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` to define a new
@@ -129,7 +129,7 @@ price quotation to a supplier or a manufacturing order.
 Open ERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
+Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
 
 .. _fig-stflow:
 
@@ -141,25 +141,25 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic restocking.
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
-.. table:: *Restocking Modes for Make to Stock and Make To Order*
+.. table:: Consequences of Procurement Methods Make to Stock and Make To Order
 
    ================== ===================== =====================
-   Mode of restocking Produce               Buy
+   Procurement Method Produce               Buy
    ================== ===================== =====================
    MTS                Wait for availability Wait for availability
    MTO                Production Order      Supplier Order
    ================== ===================== =====================
 
-.. table:: *Restocking Modes for Services*
+.. table:: Consequences of Procurement Methods when using Services
 
    ================== ===================== =====================
-   Mode of restocking Produce               Buy
+   Procurement Method Produce               Buy
    ================== ===================== =====================
    MTS                /                     /
    MTO                Create task           Subcontract
    ================== ===================== =====================
 
-You'll see the automated management processes for restocking in detail further on in this chapter.
+You'll see the automated management processes for procurement in detail further on in this chapter.
 
 Units of Measure
 ----------------
@@ -176,7 +176,7 @@ measure category.
 The table below shows some examples of units of measure and their category. The factor is used to
 convert from one unit of measure to another as long as they are in the same category.
 
-.. table:: *Example Units of Measure*
+.. table:: Example Units of Measure
 
    ========= ============ ======
    UoM       Category     Factor

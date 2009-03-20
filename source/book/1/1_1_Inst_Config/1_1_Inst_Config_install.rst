@@ -9,7 +9,7 @@ is to install it or to find a working installation.
 The table below summarizes the various installation methods that will be described in the following
 sections.
 
-.. csv-table:: *Comparison of the different methods of installation on Windows or Linux*
+.. csv-table:: Comparison of the different methods of installation on Windows or Linux
    :header: "Method","Average Time","Level of Complexity","Notes"
    :widths: 20,15,15,30
 

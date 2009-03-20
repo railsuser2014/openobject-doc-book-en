@@ -235,7 +235,7 @@ chart of accounts.
 
 TABLE
 
-.. csv-table:: *Examples of products with their different prices*
+.. csv-table:: Examples of products with their different prices
 
    "Product ","List Price","Standard Price","Default supplier price",
    "Acclo Portable","1,200 ","887 ","893 ",

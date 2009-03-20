@@ -75,7 +75,7 @@ but the principle is the same for a blank database).
 For example, to import partners with several contacts for which you specify a name and a city, you
 would create the following CSV file from the export file:
 
-.. csv-table:: *Example of importing partner address fields*
+.. csv-table:: Example of importing partner address fields
    :header: "Name", "Contacts/Contact Name", "Contacts/City"
    :widths: 12,10,8
 
@@ -251,7 +251,7 @@ Start by creating partner categories in a CSV file:
 
 #. Create the following table in your spreadsheet program:
 
-   .. csv-table:: *Partner categories file*
+   .. csv-table:: Partner categories file
       :header: "","Column A","Column B"
       :widths: 5,10,10
 
@@ -296,7 +296,7 @@ Here's how to create new partners with more than one contact, as you did before,
 
 #. Enter the table below into your spreadsheet program.
 
-   .. csv-table:: *Partner data file - partners.csv*
+   .. csv-table:: Partner data file - partners.csv
       :header: "","Column A","Column B","Column C","Column D"
       :widths: 5,10,10,10,10
 

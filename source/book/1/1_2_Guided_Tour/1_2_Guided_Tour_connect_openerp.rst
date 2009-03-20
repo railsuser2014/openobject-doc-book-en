@@ -182,7 +182,7 @@ They have distinct advantages over traditional emails:
 * you can monitor events effectively from the messages they've sent.
 
 Open ERP uses this mechanism to inform users about certain system events. For example if there's a
-problem concerning the restocking of a product a request is sent by Open ERP to the production
+problem concerning the procurement of a product a request is sent by Open ERP to the production
 manager.
 
 Send a request to get an understanding of its functionality:

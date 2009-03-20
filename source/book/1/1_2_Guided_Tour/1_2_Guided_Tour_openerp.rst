@@ -330,7 +330,7 @@ constituent templates and variants, and to price lists.
 	In Open ERP a consumable is a physical product which is treated like a stockable product except
 	that stock management isn't taken into account by the system. You could buy it, deliver it or
 	produce it but Open ERP will always assume that there's enough of it in stock. It never triggers a
-	restocking exception.
+	procurement exception.
 
 Open a product form to see the information that describes it. Several different types of product can
 be found in the demonstration data, giving quite a good overview of the possible options.
@@ -552,9 +552,13 @@ Manufacturing
 -------------
 
 Open ERP's production management capabilities enable companies to plan, automate, and track
-manufacturing and product assembly. Open ERP supports multi-level Bills of Materials and lets you
+manufacturing and product assembly. Open ERP supports multi-level bills of materials and lets you
 substitute subassemblies dynamically, at the time of sales ordering. You can create virtual sub-
-assemblies for reuse on several products with Phantom Bills of Materials.
+assemblies for reuse on several products with phantom bills of materials.
+
+.. index::
+   single: bill of materials
+   single: BoM
 
 .. note:: BoMs, routing, workcenters
 
@@ -568,7 +572,7 @@ assemblies for reuse on several products with Phantom Bills of Materials.
 
 Production orders based on your company's requirements are scheduled automatically by the system,
 but you can also run the schedulers manually whenever you want. Orders are worked out by calculating
-the requirements from sales, through Bills of Materials, taking current inventory into account. The
+the requirements from sales, through bills of materials, taking current inventory into account. The
 production schedule is also generated from the various lead times defined throughout, using the same
 route
 

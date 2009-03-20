@@ -41,7 +41,7 @@ manufacturing plan is given by the figure :ref:`fig-mrparm`.
 
 The cabinet is assembled from raw materials and intermediate assemblies:
 
-.. table:: *Product Definitions prior to defining Bills of Materials*
+.. table:: Product Definitions before defining Bills of Materials
 
    ================ =========================
    Product Code     Description
@@ -52,7 +52,7 @@ The cabinet is assembled from raw materials and intermediate assemblies:
    PROFIL           Metal Strut
    ETA100           Shelf
    PLET100          Shelf Panel
-   BOIS 002         Wood Panel
+   BOIS002          Wood Panel
    TAQ000           Panel Pins
    LIN040           Lintel
    ================ =========================
@@ -60,62 +60,55 @@ The cabinet is assembled from raw materials and intermediate assemblies:
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
 product and for the final cabinet assembly. These are given by the table below.
 
-.. table:: *Bills of Materials*
+.. table:: Bill of Materials for 1 ARM100 Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
    PANLAT        2         m2
    PANA100       1         m2
    PROFIL        4         m
    ETA100        3         Unit
    ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ETA100        1         Unit
-PLET100       1         Unit
-TAQ0 00       4         Unit
-============  ========  ===============
+.. table:: Bill of Materials for 1 ETA100 Unit
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PROFIL        1         Unit
-LIN40         0.25      m
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PLET100       1         Unit
+   TAQ000        4         Unit
+   ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANA100       1         Unit
-BOIS002       0.25      m2
-============  ========  ===============
+.. table:: Bill of Materials for 1 PROFIL Unit
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANLAT        2         Unit
-BOIS002       0.083     m2
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   LIN40         0.25      m
+   ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         m2
-PANA100       1         m2
-PROFIL        4         m
-ETA100        3         Unit
-============  ========  ===============
+.. table:: Bill of Materials for 1 PANA100 Unit
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   BOIS002       0.25      m2
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 2 PANLAT Units
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   BOIS002       0.083     m2
+   ============  ========  ===============
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
 requirements of the finished products. Then if you want to manufacture 10 cabinets, the system can
 calculate what will be consumed:
 
-.. table:: *Total Quantities*
+.. table:: Total Quantities
 
    ============  =================  ===============
    Product Code  Quantity           Unit of Measure
@@ -128,7 +121,7 @@ calculate what will be consumed:
 
 .. tip:: Bill of Materials
 
-   To see the Bill of Materials in tree view, use the menu :menuselection:`Manufacturing -->
+   To see the bill of materials in tree view, use the menu :menuselection:`Manufacturing -->
    Configuration --> Bill of Materials --> Bill of Materials Structure`.
 
 .. figure:: images/mrp_bom_tree.png
@@ -138,13 +131,13 @@ calculate what will be consumed:
    *Bill of Materials structure*
 
 Use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materials --> New Bill of
-Materials` to define a new Bill of Materials.
+Materials` to define a new bill of materials.
 
 .. tip::The different views
 
-    To change the view in the Bill of Materials you can:
+    To change the view in the bill of materials you can:
 
-    * From the list, select a Bill of Materials name and then click :guilabel:`Other View`,
+    * From the list, select a bill of materials name and then click :guilabel:`Other View`,
 
     * From a product form use the menu :guilabel:`Structure of Bill of Materials` to the right.
 
@@ -154,9 +147,9 @@ Materials` to define a new Bill of Materials.
 
    *Screen defining a Bill of Materials*
 
-In the area below the Bill of Materials you should set the finished product, which will be
+In the area below the bill of materials you should set the finished product, which will be
 manufactured or assembled. Once the product has been selected, Open ERP automatically completes the
-name of the Bill of Materials and the default Unit of Measure for this product.
+name of the bill of materials and the default Unit of Measure for this product.
 
 The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and 
 the :guilabel:`Range` field will be described in
@@ -164,13 +157,13 @@ more detail later in the chapter.
 
 After this you can select the raw materials that are used in the manufacture of the finished
 product. The quantities are set out in a report based on the quantities of finished product and
-the quantities needed to produce them from the Bill of Materials.
+the quantities needed to produce them from the bill of materials.
 
 .. index::
    single: BoM; revisions
 
 The second tab, :guilabel:`Revisions`, is used to indicate all the changes made to the 
-Bill of Materials. After each
+bill of materials. After each
 change you can specify a revision number and some notes on the modifications you carried out.
 
 .. note:: Simplified View
@@ -207,9 +200,9 @@ processes. These will be detailed further on in the chapter in the section on co
 Multi-level Bills of Materials
 ===============================
 
-In Open ERP each line of a Bill of Materials may itself be a Bill of Materials. So you can
+In Open ERP each line of a bill of materials may itself be a bill of materials. So you can
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
-:ref:`fig-mrparm` you could define the single Bill of Materials below:
+:ref:`fig-mrparm` you could define the single bill of materials below:
 
 ARM100 ; 1 ; Unit
 PANLAT ; 2 ; m2
@@ -223,14 +216,14 @@ PLET100 ; 3 ; Unit
 BOIS010 ; 0.249 ; m2
 TAQ000 ; 12 ; Unit
 
-Open ERP behaves differently depending on whether the Bill of Materials is defined in several small
+Open ERP behaves differently depending on whether the bill of materials is defined in several small
 BoMs each on a single level or in one BoM tree-structured on several levels.
 
 So if you select a BoM using intermediate products that automatically generates production orders
 based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
 manufacture a cabinet, you'd create 6 production orders:
 
-.. table:: *Production Orders*
+.. table:: Production Orders
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -278,7 +271,7 @@ PROFIL        4         m
 ETA100        3         Unit
 ============  ========  ===============
 
-In the case where a single Bill of Materials is defined in multiple levels, a single manufacturing
+In the case where a single bill of materials is defined in multiple levels, a single manufacturing
 order will be generated for each cabinet, including all of the sub-BoMs. You'd then get the
 following production order:
 
@@ -326,7 +319,7 @@ elements of the assembly and keep them isolated.
 If you define the BoM for the ARM100 cabinet in the way shown by the table below,
 you'll get two production orders when the order is confirmed, as shown in the tables below that.
 
-.. table:: *Definition and use of phantom BoMs*
+.. table:: Definition and use of phantom BoMs
 
    ============  ========  ===============  ===========
    Product Code  Quantity  Unit of Measure  Type of BoM
@@ -338,7 +331,7 @@ you'll get two production orders when the order is confirmed, as shown in the ta
    ETA100        3         Unit             phantom
    ============  ========  ===============  ===========
 
-.. table:: *Production Orders from phantom BoMs*
+.. table:: Production Orders from phantom BoMs
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -363,11 +356,11 @@ Assembly Bills of Materials
 
 .. note:: Sales Bills of Materials
 
-    In some software this is named a Sales Bills of Materials.
-    In Open ERP the term assembly is used because the effect of the Bill of Materials is visible not
+    In some software this is named a Sales Bill of Materials.
+    In Open ERP the term assembly is used because the effect of the bill of materials is visible not
     only in sales but also elsewhere, for example in the intermediate manufactured products.
 
-Assembly Bills of Materials enable you to define assemblies that will be sold directly. These
+Assembly bills of materials enable you to define assemblies that will be sold directly. These
 could also be used in deliveries and stock management rather than just sold in isolation.
 For example if you deliver the cabinet in pieces for self-assembly, set the ARM100 BoM to type
 ``Assembly`` .
@@ -388,7 +381,7 @@ But customers have the right to open a pack and extract some bottles to take the
 individually to the checkout. The supermarket can't track its stock in packs and bottles any more, but
 only individually in bottles.
 
-So you can define a Bill of Materials for sale which defines a pack as an assembly of 6 bottles.
+So you can define a bill of materials for sale which defines a pack as an assembly of 6 bottles.
 Then when you've sold a pack, you can find a pack on the invoice or bill of sale but the associated
 stock operation will still be 6 bottles.
 
@@ -406,19 +399,19 @@ transformation is done directly between the order and the set.
 Configurable Bills of Materials
 --------------------------------
 
-In Open ERP you can define several Bills of Materials for the same product. In fact you can have
+In Open ERP you can define several bills of materials for the same product. In fact you can have
 several manufacturing methods or several approved raw materials for a given product. You'll see in
 the following section that the manufacturing procedure (the routing) is attached to the Bill of
-Materials, so the choice of Bill of Materials implicitly includes the operations to make it.
+Materials, so the choice of bill of materials implicitly includes the operations to make it.
 
-Once several Bill of Materials have been defined for a particular product it's necessary to have a
-system to enable Open ERP to select one of them for use. By default the Bill of Materials with the
+Once several bills of materials have been defined for a particular product you need to have a
+system to enable Open ERP to select one of them for use. By default the bill of materials with the
 lowest sequence number is selected by the system.
 
 To gain more control over the process during the sale or procurement, you can use **properties**.
 The menu :menuselection:`Production Management --> Configuration --> Properties` enables you to
 define properties, which can be defined arbitrarily to help you select a 
-Bill of Materials when you have a choice of BoMs.
+bill of materials when you have a choice of BoMs.
 
 .. note:: Properties
 
@@ -430,7 +423,7 @@ Bill of Materials when you have a choice of BoMs.
 
 For example you can define the properties and the following groups:
 
-.. table:: *Properties*
+.. table:: Properties
 
    =====================  ============
    Property Group         Property
@@ -441,9 +434,9 @@ For example you can define the properties and the following groups:
    Method of Manufacture  Batch
    =====================  ============
 
-Once the Bills of Materials have been defined you could associate the corresponding properties to them. Then
+Once the bills of materials have been defined you could associate the corresponding properties to them. Then
 when the salesperson goes to encode a product line he can attach the properties there. If the
-product must be manufactured, Open ERP will automatically choose the Bill of Materials that matches
+product must be manufactured, Open ERP will automatically choose the bill of materials that matches
 the defined properties in the order most closely.
 
 Note the properties are only visible in the Bills of Materials and Sales Management if you're
@@ -470,24 +463,27 @@ has two methods of manufacturing this cabinet:
   lengthy. The delay to the start of production is much longer, yet the cost per unit is much lower
   in this volume.
 
-You define two Bills of Materials for the same cabinet. To distinguish between them, you will define
+You define two bills of materials for the same cabinet. To distinguish between them, you will define
 to properties in the same group: ``manual assembly`` and ``production line assembly`` . On the quotation, the
 salesperson can set the method of manufacture he wants on each order line, 
 depending on the quantities and the lead time requested by the customer.
 
-.. note:: Bills of Materials and substitute products
+.. index::
+   :single: BoM, substitute products
+   
+.. note:: bills of materials and substitute products
 
     In some software, you use the term ``substitute`` for this principle of configurable properties in
-    a Bill of Materials.
+    a bill of materials.
 
-By putting a Bill of Materials on its own line, you can also implement substitute products. You set
-the Bill of Materials to type ``Assembly`` to make the substitution transparent and to prevent Open ERP 
+By putting a bill of materials on its own line, you can also implement substitute products. You set
+the bill of materials to type ``Assembly`` to make the substitution transparent and to prevent Open ERP 
 from proposing an intermediate production order.
 
 Manufacturing
 =============
 
-Once the Bills of Materials have been defined, Open ERP becomes capable of automatically deciding on
+Once the bills of materials have been defined, Open ERP becomes capable of automatically deciding on
 the manufacturing route depending on the needs of the company.
 
 Production orders can be proposed automatically by the system depending on several criteria
