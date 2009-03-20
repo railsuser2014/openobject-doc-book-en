@@ -14,14 +14,15 @@ documentclass_regex = re.compile(r"""^\\documentclass\[(?P<options>[\w,]+)\]\{(?
 begin_doc_regex = re.compile(r"""^\\begin\{document\}""")
 maketitle_regex = re.compile(r"""^\\maketitle""")
 tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
-end_foreword_regex = re.compile(r"""SPHINXENDFOREWORDDIRECTIVE""")
+end_foreword_regex = re.compile(r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""")
+begin_conclusion_regex = re.compile(r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""")
 printindex_regex = re.compile(r"""^\\printindex""")
 fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
 beginfigure_regex = re.compile(r"""\\begin\{figure\}""")
 endfigure_regex = re.compile(r"""\\end\{figure\}""")
 tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
 beginnotice_regex = re.compile(r"""\\begin\{notice\}""")
-
+conclusion_regex = re.compile(r"""\\begin\{notice\}""")
 
 
 class LatexBook(object):
@@ -83,6 +84,7 @@ class LatexBook(object):
                     match_maketitle = maketitle_regex.search(old_line)
                     match_tableofcontents = tableofcontents_regex.search(old_line)
                     match_end_foreword = end_foreword_regex.search(old_line)
+                    match_begin_conclusion = begin_conclusion_regex.search(old_line)
                     match_printindex = printindex_regex.search(old_line)
                     match_fancychapter = fancychapter_regex.search(old_line)
                     match_beginfigure = beginfigure_regex.search(old_line)
@@ -113,7 +115,7 @@ class LatexBook(object):
                         new_line = '\n'.join([old_line,
                                               r"\thispagestyle{empty}",
                                               r"\newpage",
-                                              r"\pagestyle{plain}",
+                                              #r"\pagestyle{plain}",
                                               '',
                                              ])
                     elif match_tableofcontents:
@@ -124,9 +126,28 @@ class LatexBook(object):
                     elif match_end_foreword:
                         new_line = '\n'.join(["",
                                               r"\mainmatter",
+                                              r"\pagestyle{fancy}",
                                               r"\pagenumbering{arabic}",
                                               r"\setcounter{page}{1}",
                                               "",
+                                             ])
+                    elif match_begin_conclusion:
+                        # BEFORE:
+                        # \resetcurrentobjects
+                        # \part*{Conclusion}
+                        # \addcontentsline{toc}{part}{Conclusion}
+
+                        # AFTER
+                        # \backmatter
+                        # \resetcurrentobjects
+                        # \part*{Conclusion}
+                        # \addcontentsline{toc}{part}{Conclusion}
+                        # \pagestyle{plain}
+                        part = match_begin_conclusion.group('after')
+                        new_line = '\n'.join(["",
+                                              r"\backmatter",
+                                              r"\pagestyle{plain}",
+                                              part
                                              ])
                     elif match_printindex:
                         new_line = '\n'.join(["",
