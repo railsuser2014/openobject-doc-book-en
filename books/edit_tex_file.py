@@ -20,6 +20,7 @@ fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
 beginfigure_regex = re.compile(r"""\\begin\{figure\}""")
 endfigure_regex = re.compile(r"""\\end\{figure\}""")
 tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
+beginnotice_regex = re.compile(r"""\\begin\{notice\}""")
 
 
 
@@ -48,6 +49,23 @@ class LatexBook(object):
         tex_file.close()
         return content
 
+    def _get_next_non_blank_line_index(self, where, lines):
+        i = where + 1
+        while True:
+            next_line = lines[i]
+            if next_line.strip():
+                return i
+        return None
+
+    def add_tex_command(self, cmd, s):
+        def are_curly_brackets_matching(s):
+            return s.count('{') == s.count('}')
+        s = s.strip('\r\n')
+        if are_curly_brackets_matching(s):
+            return r"\%s{%s}" % (cmd, s)
+        else:
+            raise Exception("Non matching curly brackets in string: %s" % s)
+
     def transform(self):
         for tex_filename in self.tex_files:
             self._make_backup(tex_filename)
@@ -57,7 +75,8 @@ class LatexBook(object):
                 tex_file = open(tex_filename, 'w')
                 new_lines = []
 
-                for old_line in orig_lines:
+                i2 = None
+                for i, old_line in enumerate(orig_lines):
 
                     match_dclass = documentclass_regex.search(old_line)
                     match_begin_document = begin_doc_regex.search(old_line)
@@ -69,16 +88,17 @@ class LatexBook(object):
                     match_beginfigure = beginfigure_regex.search(old_line)
                     match_endfigure = endfigure_regex.search(old_line)
                     match_tabular = tabular_regex.search(old_line)
+                    match_beginnotice = beginnotice_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
                         new_line = """\\documentclass[%s]{book}\n""" % (match_dclass.group('options'), )
                     elif match_begin_document:
                         new_line = '\n'.join([old_line,
-                                              r"\ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}",
-                                              r"\ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}",
-                                              r"\ChTitleVar{\Huge\bfseries\rm}",
-                                              r"\ChRuleWidth{1pt}",
+#                                               r"\ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}",
+#                                               r"\ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}",
+#                                               r"\ChTitleVar{\Huge\bfseries\rm}",
+#                                               r"\ChRuleWidth{1pt}",
                                               '',
                                               r"\frontmatter",
                                               r"\pagenumbering{roman}",
@@ -127,12 +147,19 @@ class LatexBook(object):
                                               r"\end{minipage}",
                                               "",
                                              ])
-                    elif match_tabular :
+                    elif match_tabular:
                         coldef = match_tabular.group('coldef').replace('|', '')
                         new_line = "%s%s%s\n" % (match_tabular.group('envname'),
                                              match_tabular.group('opt'),
                                              coldef,
                                              )
+                    elif match_beginnotice:
+                        i2 = self._get_next_non_blank_line_index(i, orig_lines)
+                        new_line = old_line
+                    elif i == i2:
+                        new_line = '\n'.join([self.add_tex_command('strong', old_line),
+                                              ''])
+                        i2 = None # job done -> reset i2
                     else:
                         new_line = old_line
                     new_lines.append(new_line)
