@@ -57,6 +57,15 @@ class LatexBook(object):
                 return i
         return None
 
+    def add_tex_command(self, cmd, s):
+        def are_curly_brackets_matching(s):
+            return s.count('{') == s.count('}')
+        s = s.strip('\r\n')
+        if are_curly_brackets_matching(s):
+            return r"\%s{%s}" % (cmd, s)
+        else:
+            raise Exception("Non matching curly brackets in string: %s" % s)
+
     def transform(self):
         for tex_filename in self.tex_files:
             self._make_backup(tex_filename)
@@ -148,7 +157,7 @@ class LatexBook(object):
                         i2 = self._get_next_non_blank_line_index(i, orig_lines)
                         new_line = old_line
                     elif i == i2:
-                        new_line = '\n'.join([r"\strong{%s}" % (old_line.strip('\r\n'), ),
+                        new_line = '\n'.join([self.add_tex_command('strong', old_line),
                                               ''])
                         i2 = None # job done -> reset i2
                     else:
