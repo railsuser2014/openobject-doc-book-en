@@ -259,3 +259,15 @@ latex_elements = {
 # If false, no module index is generated.
 #latex_use_modindex = True
 
+def end_foreword_directive(name, arguments, options, content, lineno,
+                       content_offset, block_text, state, state_machine):
+    return [nodes.Text('')]
+
+def begin_conclusion_directive(name, arguments, options, content, lineno,
+                       content_offset, block_text, state, state_machine):
+    return [nodes.Text('')]
+
+def setup(app):
+    app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
+    app.add_directive('begin_conclusion', begin_conclusion_directive, 1, (0, 0, 0))
+

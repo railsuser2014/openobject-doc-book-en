@@ -319,7 +319,7 @@
   \else
     \@tempswafalse
   \fi
-  \null\vfil
+  %\null\vfil
   \secdef\@part\@spart}
 
 \def\@part[#1]#2{%

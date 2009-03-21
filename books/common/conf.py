@@ -91,6 +91,28 @@ tiny_latex_include = r"""
 \usepackage[]{geometry}
 \geometry{papersize={189mm,246mm},top=15mm,bottom=28mm,left=15mm,right=15mm,bindingoffset=5mm}
 
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{%
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[LE,RO]{\bfseries \thepage}
+  %\fancyhead[RE,LO]{\thechapter}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancyhead[RE,LO]{}
+}
+
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[LE,RO]{\bfseries \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+
+\renewcommand{\chaptermark}[1]{%
+  \markboth{\chaptername
+  \ \thechapter.\ #1}{}}
+
 \DeclareUnicodeCharacter{00A0}{~}
 
 \hypersetup{
@@ -127,14 +149,12 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{ccp{11cm}}
+  \begin{tabular}{cp{125mm}}
     \ifx\py@noticetype\py@noticetypetip
       \scalebox{0.500000}{\includegraphics{tip.png}}
     \else
       \scalebox{0.8}{\includegraphics{note.png}}
     \fi
-    &
-    \raisebox{5mm}{\strong{#2}}
     &
     \vspace{-2.5\baselineskip}
     \setlength{\parskip}{2mm}
@@ -160,23 +180,15 @@ latex_elements = {
     'preamble': tiny_latex_include,
 }
 
-#     self.body.append("\n".join(["\\mainmatter", "\\pagenumbering{arabic}", "\\setcounter{page}{1}", '']))
-
 def end_foreword_directive(name, arguments, options, content, lineno,
                        content_offset, block_text, state, state_machine):
+    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')]
 
-    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')] # XXX cannot add a raw node for the moment
-    # return [nodes.raw('latex', '\\mainmatter')]
-
-# def create_new_reference(app, env, node, contnode):
-#     """Convert a bad reference into a simple text."""
-#     txt = node.astext()
-#     return [nodes.emphasis(txt, txt)]
-
+def begin_conclusion_directive(name, arguments, options, content, lineno,
+                       content_offset, block_text, state, state_machine):
+    return [nodes.Text('SPHINXBEGINCONCLUSIONDIRECTIVE')]
 
 def setup(app):
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
-    #app.connect('missing-reference', create_new_reference)
-
-
+    app.add_directive('begin_conclusion', begin_conclusion_directive, 1, (0, 0, 0))
 
