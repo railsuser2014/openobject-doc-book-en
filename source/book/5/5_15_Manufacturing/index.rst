@@ -42,14 +42,14 @@ management of operations depends on routing and workcenters.
 
 .. note:: Bills of Materials
 
-    Bills of Materials, or manufacturing specifications, are named differently depending on their
+    Bills of Materials, or manufacturing specifications, go by different names depending on their
     application area, for example:
 
-    * Food: Recipe,
+    * Food: Recipes,
 
-    * Chemicals: Equation,
+    * Chemicals: Equations,
 
-    * Building: Plan.
+    * Building: Plans.
 
 For this chapter you should start with a fresh database that includes demo data,
 with :mod:`mrp` and its dependencies installed and no particular chart of accounts configured. 

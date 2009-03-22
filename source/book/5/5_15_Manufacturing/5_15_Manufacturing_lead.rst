@@ -17,14 +17,13 @@ in the field :guilabel:`Customer Lead Time` shown in the product form. This is t
 between the time on an order and that of the delivery.
 
 To see a calculation of the lead times, take the example of the cabinet above. Suppose that the
-cabinet is assembled in two steps, using the two following Bills of Materials.
+cabinet is assembled in two steps, using the two following bills of materials.
 
-.. table:: *Bills of Materials*
+.. table:: Bill of Materials for 1 ARM100 Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
    PANLAT        2         Unit
    BOIS002       0.25      Unit
    LIN040        1         Unit
@@ -32,12 +31,13 @@ cabinet is assembled in two steps, using the two following Bills of Materials.
    TAQ000        12        Unit
    ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANLAT        2         Unit
-BOIS002       0.17      Unit
-============  ========  ===============
+.. table:: Bill of Materials for 2 PANLAT Units
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   BOIS002       0.17      Unit
+   ============  ========  ===============
 
 The PANLAT is made from an order using the workflow shown. The BOIS02 is purchased on order and the
 other products are all found in stock. An order for the product ARM100 will then generate two
@@ -45,13 +45,15 @@ production orders (ARM100 et PANLAT) then produce two purchase orders for the pr
 Product BOIS02 is used in the production of both ARM100 and PANLAT. Set the lead times on the
 product forms to the following:
 
-============ ================== ==================== ==================
-Product Code Customer Lead Time Production Lead Time Supplier Lead Time
-============ ================== ==================== ==================
-ARM100       30 days            5 days
-PANLAT                          10 days
-BOIS02                                               5 days
-============ ================== ==================== ==================
+.. table:: Lead Times
+
+   ============ ================== ==================== ==================
+   Product Code Customer Lead Time Production Lead Time Supplier Lead Time
+   ============ ================== ==================== ==================
+   ARM100       30 days            5 days
+   PANLAT                          10 days
+   BOIS02                                               5 days
+   ============ ================== ==================== ==================
 
 A customer order placed on the 1st January will set up the following operations and lead times:
 
@@ -77,8 +79,8 @@ is also possible to configure these factors in the company. These factors are th
 company, whatever the product concerned. In the description of the company, on the 
 :guilabel:`Configuration` tab, you find the following parameters:
 
-* Security days: number of days to deduct from a system order to cope with the problems of
-  restocking,
+* Security days: number of days to deduct from a system order to cope with any problems of
+  procurement,
 
 * Purchase lead time: additional days to include for all purchase orders with this supplier,
 
@@ -214,9 +216,9 @@ capacity per cycle is 6 it takes 3 cycles to realize 15 operations.
 
 .. tip:: Multi-level routing
 
-   It is possible to define routing on several levels to support multi-level Bills of Materials.
-   You can select the routing on each level of a Bill of Materials.
-   The levels are then linked to hierarchies of Bills of Materials.
+   It is possible to define routing on several levels to support multi-level bills of materials.
+   You can select the routing on each level of a bill of materials.
+   The levels are then linked to hierarchies of bills of materials.
 
 The second tab of the production order lets you define the links to analytical account to report the
 costs of the workcenter operations. If you leave the different fields empty Open ERP won't have any
@@ -235,10 +237,10 @@ Routing
 -------
 
 Routings define the assembly operations to be done in workcenters for manufacturing a certain
-product. They are usually attached to Bills of Materials which will define the assembly of products
+product. They are usually attached to bills of materials which will define the assembly of products
 required for manufacture or for finished products.
 
-A routing can be defined directly in a Bill of Materials or through the menu
+A routing can be defined directly in a bill of materials or through the menu
 :menuselection:`Manufacturing --> Configuration --> Routings`. A routing has a name, a code and a
 description. Later in this chapter you'll see that a routing can also be associated with a stock
 location. That enable you to indicate where assembly takes place.
@@ -261,7 +263,7 @@ at a workcenter and possess a number of hours and/or cycles be done.
 Impact of the production order
 ------------------------------
 
-The routings are then attached to the Bills of Materials which are then also used to generate
+The routings are then attached to the bills of materials which are then also used to generate
 product order. On a production order you'll find assembly operations for manufacture on the 
 :guilabel:`Operations` tab.
 
@@ -449,7 +451,7 @@ Treatment of exceptions
 =======================
 
 The set of stock requirements is generated by procurement orders. Then for each customer order line
-or raw materials in a manufacturing order, you will find a restocking form. To review all the
+or raw materials in a manufacturing order, you will find a procurement form. To review all the
 procurement orders use the menu :menuselection:`Manufacturing --> Procurement orders`.
 
 In normal system use, you don't need to worry about procurement orders because they're automatically
@@ -564,9 +566,9 @@ lets you set secondary products resulting from the manufacture of the finished p
    :scale: 75
    :align: center
 
-   *Definition of waste products in a Bill of Materials*
+   *Definition of waste products in a bill of materials*
 
-When Open ERP generates a production order based on a Bill of Materials that uses secondary product
+When Open ERP generates a production order based on a bill of materials that uses secondary product
 you pick up the list of all products in the the third tab of the production order 'Finished
 Products'.
 
@@ -586,7 +588,7 @@ production order for the secondary product.
 
    Unlike most software for production management, Open ERP manages services as well as stockable
    products.
-   So it's possible to put products of type :guilabel:`Service` in a Bill of Materials.
+   So it's possible to put products of type :guilabel:`Service` in a bill of materials.
    These don't appear in the production order but their requirements will be taken into account.
 
    If they're defined as :guilabel:`Make to Order` Open ERP will generate a task for the manufacture or a

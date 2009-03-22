@@ -110,7 +110,7 @@ Note that the procurement doesn't require that you buy from a supplier. If the p
 supplier order.
 
 You can also set multiple quantities in the minimum stock rules. If you set a multiple quantity of 3
-the system will propose a restocking of 15 pieces not the 13 it really needs. In this case it
+the system will propose procurement of 15 pieces not the 13 it really needs. In this case it
 automatically rounds the quantity upwards.
 
 In a minimum stock rule, when you indicate a warehouse it suggests a stock location by default in

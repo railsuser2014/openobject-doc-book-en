@@ -34,7 +34,7 @@ For each delivery mode, you should define the following elements:
 
 For example you can create the following modes:
 
-.. table:: *Example Delivery Modes*
+.. table:: Example Delivery Modes
 
    ================    ===========   ==========================
    Delivery Mode       Partner       Associated Product
@@ -96,7 +96,7 @@ Then set the sale price and the cost price. The price can be expressed in differ
 
 For example, mailing within France using 2008 tariffs would be defined as shown in the table.
 
-.. table:: *Example Tariff Rules*
+.. table:: Example Tariff Rules
 
    ==========  =============  =====   =============
    Rule Title  Condition      Price   Type of Price
@@ -110,7 +110,7 @@ For example, mailing within France using 2008 tariffs would be defined as shown 
 You can also define rules that depend on the total amount on the order. For example to offer fixed price
 delivery if the order is more than 150 USD, add the following rule:
 
-.. table:: *Additional Tariff Rule*
+.. table:: Additional Tariff Rule
 
    ================= ===============  ======   =============
    Rule Title        Condition        Price    Type of Price

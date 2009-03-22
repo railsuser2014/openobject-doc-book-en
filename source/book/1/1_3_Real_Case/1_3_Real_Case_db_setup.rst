@@ -27,7 +27,7 @@ Financial Accounting --> Financial Accounts --> Account Types` and then clicking
 :guilabel:`New` button. You'll need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
-.. table:: *Defining Account Types*
+.. table:: Defining Account Types
 
    ============== ======== ========  =============== =============== ===============
    Acc. Type Name Code     Sequence  Sign on Reports Deferral Method Partner Account
@@ -59,7 +59,7 @@ And one 'organizing' account that's just a view of the other five. So
 you'll need the following six accounts, one of which is shown
 in :ref:`fig-oech03accts`.
 
-.. table:: *Defining Accounts*
+.. table:: Defining Accounts
 
    ============= ==== ============= =============== ============ =========
    Name          Code Internal Type Parent          Account Type Reconcile
@@ -100,7 +100,7 @@ to partners, and expenses and income to product categories.
 Create properties using :menuselection:`Administration --> Configuration --> 
 Properties --> Default Properties` and then clicking the :guilabel:`New` button. 
 
-.. table:: *Defining Properties*
+.. table:: Defining Properties
 
    ============================== ========= ================== =============================== ===============
    Name                           Company   Fields             Value                           Parent Resource
@@ -136,7 +136,7 @@ to another when invoices are raised and then paid. Create journals from the menu
 :menuselection:`Financial Management --> Configuration --> 
 Financial Accounting --> Financial Journals` and then clicking the :guilabel:`New` button. 
 
-.. table:: *Defining Journals*
+.. table:: Defining Journals
 
    ===================== ==== ============= ================= ================ ===================== ======================
    Journal Name          Code Type          View              Entry Sequence   Default Debit Account Default Credit Account
