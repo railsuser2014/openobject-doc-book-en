@@ -14,7 +14,7 @@ Installation and Initial Setup
  hour or so and needs only a couple of operations.*
  
  *The first operation is installation of the application and database server on a server PC (that's
- a Windows or Linux or Macintosh computer).
+ a Windows or Linux or Macintosh computer).*
 
  *You've a choice of approaches for the second operation:
  either install a web server (most probably on the original server PC) to use with standard web
