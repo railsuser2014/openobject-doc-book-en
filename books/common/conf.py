@@ -149,14 +149,27 @@ tiny_latex_include = r"""
   \def\py@noticetypenote{note}
   \def\py@noticetype{#1}
 
-  \begin{tabular}{cp{125mm}}
+  \setlength\tabcolsep{1mm}
+  \renewcommand{\arraystretch}{0.3}
+  \begin{tabular}[t]{cp{138mm}}
     \ifx\py@noticetype\py@noticetypetip
-      \scalebox{0.500000}{\includegraphics{tip.png}}
+      % TIPS:
+      \hspace{-5mm}
+      \scalebox{0.5}{\includegraphics{tip.png}}
+
     \else
-      \scalebox{0.8}{\includegraphics{note.png}}
+      % NOTES:
+      \hspace{-3mm}
+      \scalebox{0.8}{\includegraphics[trim=1mm 1mm 1mm 1mm]{note.png}}
     \fi
     &
-    \vspace{-2.5\baselineskip}
+    \ifx\py@noticetype\py@noticetypetip
+      % TIPS:
+      \vspace{-3.2\baselineskip}
+    \else
+      % NOTES:
+      \vspace{-2.8\baselineskip}
+    \fi
     \setlength{\parskip}{2mm}
 }
 {
