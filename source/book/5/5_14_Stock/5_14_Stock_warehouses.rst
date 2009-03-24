@@ -1,4 +1,5 @@
-.. index:: warehouse
+.. index:: 
+   single: stock; warehouse
 
 Warehouses
 ==========
@@ -55,8 +56,9 @@ Several methods of automatically procuring products can be carried out by Open E
 
 The two last methods are described below.
 
-.. index:: orderpoint
-.. index:: minimum stock rule
+.. index:: 
+   single: stock; orderpoint
+   single: minimum stock rule
 
 Minimum stock rules
 -------------------

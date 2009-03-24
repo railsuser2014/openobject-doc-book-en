@@ -17,7 +17,7 @@ configure the terminology of the menus and forms in the user interface and for m
 access rights to the menus and the various underlying business objects.
 
 .. index::
-   single: menu, duplicating
+   single: menu; duplicating
 
 Changing the menu
 -----------------
@@ -53,6 +53,9 @@ then click :guilabel:`Main Menu` to see the results.
    If you're planning to modify a menu you should duplicate it first.
    In this way you'll always keep a link to the original menu that works if you need it to.
 
+.. index:: 
+   single: welcome page
+   
 Personalizing the welcome page for each user
 --------------------------------------------
 
@@ -89,6 +92,9 @@ main menu and the dashboards there.
 	However, you shouldn't change the main administrator's menu because you could make certain menus
 	completely inaccessible by mistake.
 
+.. index:: 
+   single: field; default value
+   
 Assigning default values to fields
 ----------------------------------
 

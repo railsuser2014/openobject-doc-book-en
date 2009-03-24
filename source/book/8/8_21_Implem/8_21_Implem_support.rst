@@ -29,6 +29,10 @@ If you haven't anticipated your needs with a preventive maintenance contract, th
 after a few years can become significant. If special modules that you developed have been allowed to
 become too old you may eventually need a new development to your specifications.
 
+.. index:: 
+   single: update
+   single: upgrade
+   
 Updates and Upgrades
 --------------------
 
@@ -63,6 +67,9 @@ perfectly satisfied with the existing system it would be best to not touch the n
 want to have access to the new functionality supplied by an upgraded version, you have a delicate
 operation to carry out. Most upgrades require your data to be migrated because the databases before
 and after the upgrade can be a little different.
+
+.. index:: 
+   single: migration
 
 Version Migration
 -----------------

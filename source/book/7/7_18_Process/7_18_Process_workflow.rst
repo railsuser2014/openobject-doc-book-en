@@ -135,6 +135,9 @@ enable you to change the document state. These are the same buttons that you
 see on the active document form. They enable you to confirm an order directly
 from the process and then see the consequences in real time at a macro level.
 
+.. index::
+   single: process; defining
+
 Defining your own user processes
 ---------------------------------
 

@@ -212,12 +212,11 @@ computer and that you have administration rights for installation.
 
 Start OpenOffice.org Writer, select :menuselection:`Tools --> Package Management...`  to open the
 Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it.
-Then close the application and restart Writer: a new menu appears in the top menu bar –  *Tiny
-Report*  or  *Open ERP Report* .
+Then close the application and restart Writer: a new menu appears in the top menu bar –  :guilabel:`Tiny
+Report`  or  :guilabel:`Open ERP Report`.
 
 .. index::
    pair: report; OpenOffice.org
-..
 
 Connecting OpenOffice.org to Open ERP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -229,7 +228,6 @@ appears if you've made a successful connection.
 
 .. index::
    single: report; modify
-..
 
 Modifying a report
 ^^^^^^^^^^^^^^^^^^
@@ -330,6 +328,9 @@ To send it to the server, you can specify if you prefer Open ERP to produce a P
 prints the document, or if Open ERP should open the document for editing in OpenOffice.org Writer
 before printing. To do that choose \ ``PDF``\   or \ ``SXW``\   (a format of OpenOffice.org
 documents) in the field :guilabel:`Select Report Type`.
+
+.. index::
+   single; report; common headers
 
 Creating common headers for reports
 -----------------------------------

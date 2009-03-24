@@ -1,4 +1,7 @@
 
+.. index::
+   single: stock; double-entry
+
 Understanding double-entry stock management
 ===========================================
 
@@ -87,6 +90,10 @@ You've seen a fairly simple example of goods receipt and product delivery, but s
 less obvious – a stock inventory operation, for example. An inventory operation is carried out
 when you compare the stock shown in software with real stock numbers counted in the stores.
 
+.. index::
+   single: stock; inventory operation
+   single: stock; stock check
+
 In Open ERP, with its double-entry stock management, you'd use stock moves for this inventory
 operation. That helps you manage your stock traceability. If there are 26 Bicycles in real stock but
 Open ERP shows 28 in the system. You then have to reduce the number in Open ERP to 26. This
@@ -140,7 +147,7 @@ moving products out of and into physical stock. The stock operations for this ar
 So you've now got the outcome you need from the consumption of raw materials and the manufacture of
 finished products.
 
-.. note::  Valuing created value
+.. note::  Assessing created value
 
     You might already have noticed a useful effect of this approach:
     if you do a stock valuation in the ``Default Production`` location you get

@@ -1,4 +1,7 @@
 
+.. index:: 
+   single: training
+   
 User training
 =============
 

@@ -5,7 +5,8 @@ Logistics Configuration
 In this section you'll see how to configure stock management to match your company's needs. Open ERP
 can handle many different situations by configuring it to behave as required.
 
-.. index:: location
+.. index:: 
+   single: stock; location
 
 Stock locations
 ---------------
@@ -26,6 +27,9 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Locations` t
    *Definition of a stock location*
 
 You should then give a name to your stock location. Now look at location types and localization.
+
+.. index:: 
+   single: stock; location type
 
 Location types
 --------------
@@ -70,6 +74,9 @@ the warehouse, linked to a Shop.
    :align: center
 
    *Definition of stock locations on the partner form*
+
+.. index:: 
+   single: stock; localization
 
 Localization
 ------------
@@ -128,6 +135,9 @@ Y, Z) of the different stores to enable Open ERP to search for the nearest goods
 
 The same co-ordinates could also be used to structure the shelves, aisles and interior rooms in a
 warehouse.
+
+.. index:: 
+   single: stock; real time valutation
 
 Accounting valuation in real time
 ---------------------------------
@@ -266,6 +276,9 @@ Some companies don't want to work in two steps, because it just seems like extra
 confirm a delivery note in the system. You can then set the link mode to 'Automatic' to make Open
 ERP automatically confirm the second step. It's then assumed the all the items have automatically
 been delivered to the customer.
+
+.. index:: 
+   single: linked production
 
 Linked Production
 -----------------

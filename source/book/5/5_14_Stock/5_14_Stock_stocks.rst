@@ -79,7 +79,9 @@ production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'
 everything that hasn't yet been planned by the system. The quantities of product in this location
 cancel each other out.
 
-.. index:: inventory
+.. index:: 
+   single: inventory
+   single: stock check
 
 Initial Inventory
 -----------------
@@ -269,6 +271,9 @@ salesperson can follow the progress of their orders at a glance.
 
    *List of orders with their delivery state*
 
+.. index::
+   single: stock; negative
+
 .. note:: Negative Stock
 
     Stock Management is very flexible so that it can be more effective.
@@ -277,6 +282,9 @@ salesperson can follow the progress of their orders at a glance.
     In Open ERP you can force all operations manually using the button :guilabel:`Force assignment`.
     In this case your stocks risk falling negative. You should monitor all stocks for negative
     levels and carry out an inventory correction when that happens.
+
+.. index::
+   single: stock; analysis
 
 Analysing stock
 ---------------

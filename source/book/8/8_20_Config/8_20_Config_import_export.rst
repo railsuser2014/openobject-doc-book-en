@@ -317,6 +317,9 @@ Here's how to create new partners with more than one contact, as you did before,
    with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
    (``Silver`` and ``Gold``).
 
+.. index::
+   single: data, export in other forms
+   
 Exporting data in other forms
 -----------------------------
 

@@ -200,7 +200,7 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 			Geoff has held posts as director of services and of IT systems for
 			international companies and in manufacturing.
-			He was Senior Industrial Research Fellow at Cambridge University's Institute for Manufacturing
+			He was senior Industrial Research Fellow at Cambridge University's Institute for Manufacturing
 			where he focused on innovation processes.
 
 			He founded Seath Solutions Ltd (http://www.seathsolutions.com/) to provide services
@@ -212,8 +212,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 			an MA in Engineering and Electrical Sciences from Trinity Hall, Cambridge.
 			He is a member of the Institution of Engineering and Technology and of the Society of Authors.
 
-			Having observed, suffered, and led process implementation projects in various organizations,
-			he has many thoughts to share on the successful adoption of an effective management automation
+			Having observed, suffered from, and led process implementation projects in various organizations,
+			he has many thoughts about the successful adoption of an effective management automation
 			tool.
 
 .. raw:: latex
@@ -234,11 +234,11 @@ Open ERP relies on a philosophy of Open Source and on the technologies that have
 developed and tuned over the years by numerous talented people. Their efforts are greatly
 appreciated.
 
-Thanks also to my family for their encouragement, their tolerance and their constant presence.
+Special thanks to my family for their encouragement, their tolerance and their constant presence.
 
         *From Fabien Pinckaers*
 
-I address my thanks to all of the team at Tiny for their hard work in preparing, translating and
+My thanks to all of the team at Tiny for their hard work in preparing, translating and
 re-reading the book in its various forms.
 My particular thanks to Laurence Henrion and my family for supporting me throughout all this effort.
 
