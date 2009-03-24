@@ -13,8 +13,8 @@ This chapter mainly describes OpenOffice.org reports, and then XSL:RML reports. 
 
 ..  toctree::
     :maxdepth: 3
-     
+
     11_1_openoffice_report
-    11_2_XSL-RML reports
-    
+    11_2_XSL-RML_reports
+
 
