@@ -51,8 +51,8 @@ Bypass the technical difficulties by using the "on demand" offer: Odoo.
 .. index::
    single:  administration
 
-For a quick low-cost start, you can make use of a month's comprehensive free trial of Tiny's
-Open ERP on demand's offer is available at http://odoo.com .
+For a quick low-cost start you can make use of a month's comprehensive free trial of Tiny's
+Open ERP on demand offer, available at http://odoo.com.
 Using this you sidestep any technical difficulties and get a
 comprehensive set of system administration services, server hosting, configuration to your
 environment, maintenance, support and initial training.
