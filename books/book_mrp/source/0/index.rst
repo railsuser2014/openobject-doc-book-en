@@ -178,7 +178,7 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 			all based on Free / Open Source software.
 
 			He originated Tiny ERP, now Open ERP, and is the director of two companies including Tiny sprl,
-			the editor of Open ERP. In three years he has grown the Tiny group from one to sixty-five
+			the editor of Open ERP. In three years he has grown the Tiny group from one to eighty-five
 			employees
 			without loans or external fund-raising, and while making a profit.
 
@@ -218,8 +218,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 .. raw:: latex
 
-    \section*{Dedication}
-    \addcontentsline{toc}{section}{Dedication}
+    \section*{Acknowledgements}
+    \addcontentsline{toc}{section}{Acknowledgements}
 
 .. *
 

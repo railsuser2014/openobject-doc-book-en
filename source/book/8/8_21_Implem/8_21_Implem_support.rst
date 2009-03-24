@@ -80,6 +80,10 @@ Managers responsible for the migration between two versions of Open ERP will fi
 documentation and the necessary scripts in the directory \ ``doc/migrate``\   of the Open ERP
 server.
 
+The changes between version 4 and 5 made the migration process more difficult than in the past
+so there was a greater delay in the provision of migration assistance and more manual work
+than usual.
+
 The procedure for migrating runs like this:
 
 	#. Make a backup of the database from the old version of Open ERP
@@ -96,20 +100,17 @@ The procedure for migrating runs like this:
 
 	#. Start the new version of the server and test it.
 
-The changes between version 4 and 5 made the migration process more difficult than in the past
-so there was a greater delay in the provision of migration assistance and more manual work
-than usual.
-
 A migration is never an easy process. It may be that your system doesn't function as it did before
 or that something requires new developments in the functionality of the modules that have already
 been installed. So you should only move to a new version if you have a real need and should engage a
 competent partner to help if the version that you use differs greatly from the basic version of
 Open ERP.
 
-Similarly you should take care that this migration does not correct any setting that was done
-incorrectly. It's can be the case, for example, that the main menu structure has been modified
-without recording it. You may find that you're making the wrong assumptions about that structure
-when loading data in that was recorded with the Module Recorder.
+Similarly you should take care that this migration does not incorrectly change any setting
+that has already been made. The main menu structure might have been modified in place
+without proper recording of the changes. 
+So you could find that you're making the wrong assumptions about that structure
+when later loading data in that was recorded with the Module Recorder.
 
 .. Copyright © Open Object Press. All rights reserved.
 

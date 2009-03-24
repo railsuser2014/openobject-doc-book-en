@@ -3,9 +3,8 @@ XSL:RML reports
 
 RML reports don't require programming but require two simple XML files to be written:
 
-    * a file describing the data to export (*.xml)
-    * a file containing the presentation rules to apply to that data (*.xsl) 
-
+    * a file describing the data to export (\*.xml)
+    * a file containing the presentation rules to apply to that data (\*.xsl)
 
 .. figure::  images/automatic-reports.png
    :scale: 85
@@ -320,7 +319,8 @@ Here is the list of available field types:
     * **eval**: This node type evaluate the expression given in the *expr* attribute. This expression may be any Python expression and may contain objects fields names. 
 
     * **zoom**: This node type allows to "enter" into the resource referenced by the relation field whose name is given in the name attribute. It means that its child nodes will be able to access the fields of that resource without having to prefix them with the field name that makes the link with the other object. In our example above, we could also have accessed the field name of the partner with the following: 
-::
+
+  ::
 
 	<partner type="zoom" name="partner_id">
 
@@ -348,7 +348,7 @@ The **zoom** type is only useful when we want to recover several fields in the s
 
 	</cost> 
 
-**TODO**: documenter format methode appellée def compute_buyer_costs(self, cr, uid, ids, *args):
+**TODO**: documenter format methode appellée def compute_buyer_costs(self, cr, uid, ids, \*args):
 
     * **attachment**: extract the first attachment of the resource whose id is taken from the field whose name is given in the name attribute, and put it as an image in the report. 
 
@@ -728,8 +728,9 @@ trml2pdf.py should be modified to load this if invoked from the command line.
 **All the xsl and rml files have to be modified**
 
 A list of possible alternatives:
-::		
-	'Times-Roman',       'DejaVuSerif.ttf'	
+::
+
+	'Times-Roman',       'DejaVuSerif.ttf'
 	'Times-BoldItalic',  'DejaVuSerif-BoldItalic.ttf'
 	'Times-Bold',        'DejaVuSerif-Bold.ttf'
 	'Times-Italic',      'DejaVuSerif-Italic.ttf'

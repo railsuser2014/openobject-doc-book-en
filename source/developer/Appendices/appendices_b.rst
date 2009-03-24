@@ -67,7 +67,7 @@ To import a file having translations, use this command:
 
 where **LANG** is the language of the translation data in the CSV file.
 
-Note that the translation file must be encoded in `**UTF8!**
+Note that the translation file must be encoded in **UTF8!**
 
 Translate to a new language
 ---------------------------

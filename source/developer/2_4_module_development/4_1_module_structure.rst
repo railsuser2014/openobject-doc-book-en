@@ -161,9 +161,9 @@ It is easier to manipulate one object (example, a partner) than several tables (
 PostgreSQL
 """"""""""
 
-The ORM of Open ERP is constructed over `PostgreSQL. It is thus possible to query the object used by Open ERP using the object interface or by directly using SQL statements.
+The ORM of Open ERP is constructed over PostgreSQL. It is thus possible to query the object used by Open ERP using the object interface or by directly using SQL statements.
 
-But it is dangerous to write or read directly in the `PostgreSQL database, as you will shortcut important steps like constraints checking or workflow modification.
+But it is dangerous to write or read directly in the PostgreSQL database, as you will shortcut important steps like constraints checking or workflow modification.
 
 .. note::
 	The Physical Database Model of OpenERP
@@ -176,7 +176,7 @@ Pre-Installed Data
 
 	%define=lightblue color=#27adfb%
 
-Data can be inserted or updated into the `PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows:
+Data can be inserted or updated into the PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows:
 ::
 
 	<?xml version="1.0"?>
@@ -389,7 +389,7 @@ When you open an invoice, here is the chain of operations followed by the client
 To develop new objects
 """"""""""""""""""""""
 
-The design of new objects is restricted to the minimum: create the objects and optionally create the views to represent them. The `PostgreSQL tables do not have to be written by hand because the objects are able to automatically create them (or adapt them in case they already exist).
+The design of new objects is restricted to the minimum: create the objects and optionally create the views to represent them. The PostgreSQL tables do not have to be written by hand because the objects are able to automatically create them (or adapt them in case they already exist).
 
   
 Reports
@@ -404,7 +404,9 @@ Wizards
 +++++++
 
 Here's an example of a .XML file that declares a wizard.
+
 ::
+
 	<?xml version="1.0"?>
 	<terp>
 	    <data>

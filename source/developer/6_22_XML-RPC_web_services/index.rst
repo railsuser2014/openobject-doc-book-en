@@ -107,25 +107,25 @@ import xmlrpclib
 	address_id = sock.execute(dbname, uid, pwd, 'res.partner.address', 'create', address)
 
 * **Search a partner** 
-::
+  ::
 
 	args = [('vat', '=', 'ZZZZZZ')] #query clause
 	ids = sock.execute(dbname, uid, pwd, 'res.partner', 'search', args)
 
 * **Read partner data**
-::
+  ::
 
 	fields = ['name', 'active', 'vat', 'ref'] #fields to read
 	data = sock.execute(dbname, uid, pwd, 'res.partner', 'read', ids, fields) #ids is a list of id
 
 * **Update partner data** 
-::
+  ::
 
 	values = {'vat': 'ZZ1ZZZ'} #data to update
 	result = sock.execute(dbname, uid, pwd, 'res.partner', 'write', ids, values)
 
 * **Delete partner**
-::
+  ::
 
 	# ids : list of id
 	result = sock.execute(dbname, uid, pwd, 'res.partner', 'unlink', ids)
@@ -224,12 +224,12 @@ extract file xmlrpc-2.2.tar.gz and take the file xmlrpc.inc from lib directory p
 	}
 
 * **Create** 
-::
+  ::
 
 	TODO
 
 * **Write**
-::
+  ::
 
 	TODO
 
@@ -333,18 +333,17 @@ Download the xml-rpc framework for java from http://ws.apache.org/xmlrpc/ The la
 	}
 
 * **Search** 
-
-::
+  ::
 	
 	TODO
 
 * **Create** 
-::
+  ::
 
 	TODO
 
 * **Write**
-::
+  ::
  
 	TODO
 

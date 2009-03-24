@@ -22,7 +22,8 @@ Workflows are entirely customizable, they can be adapted to the flows and trade 
 
 
 WkfExample1: Discount On Orders
-------------
+-------------------------------
+
 The first diagram represent a very basic workflow of an order:
 
 .. image:: images/Workflow_bc1.png
@@ -47,8 +48,8 @@ We could then further improve this workflow by sending a request to the sales ma
 
 
 WkfExample2: A sale order that generates an invoice and a shipping order.
------------ 
-	
+-------------------------------------------------------------------------
+
 
 .. image:: images/Workflow_sale.png
 

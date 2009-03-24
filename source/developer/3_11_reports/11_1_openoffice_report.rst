@@ -37,7 +37,7 @@ in the .RML file will be replaced by the name of the country of the partner of t
 Creating a SXW
 --------------
 
-You can design reports using `OpenOffice. Here's, as an example, the file @@server/bin/addons/sale/report/order.sxw@@.
+You can design reports using *OpenOffice*. Here's, as an example, the file @@server/bin/addons/sale/report/order.sxw@@.
 
 .. figure::  images/writer_report.png
    :scale: 85

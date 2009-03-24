@@ -4,7 +4,7 @@ OpenERP Server and Web Client - Start/Stop
 OpenERP 4.2
 -----------
 
-First check that all the required dependencies are installed. Then create the terp database. You have to make sure that your user has the correct credentials to create databases with `PostgreSQL. For more information on this subject please refer to the PostgreSQL manual.::
+First check that all the required dependencies are installed. Then create the terp database. You have to make sure that your user has the correct credentials to create databases with PostgreSQL. For more information on this subject please refer to the PostgreSQL manual.::
 
 	$ createdb terp --encoding=unicode
 
