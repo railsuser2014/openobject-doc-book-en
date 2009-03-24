@@ -18,10 +18,12 @@ end_foreword_regex = re.compile(r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P
 begin_conclusion_regex = re.compile(r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""")
 printindex_regex = re.compile(r"""^\\printindex""")
 fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
-beginfigure_regex = re.compile(r"""\\begin\{figure\}""")
-endfigure_regex = re.compile(r"""\\end\{figure\}""")
+begin_figure_regex = re.compile(r"""\\begin\{figure\}""")
+end_figure_regex = re.compile(r"""\\end\{figure\}""")
 tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
-beginnotice_regex = re.compile(r"""\\begin\{notice\}""")
+begin_threeparttable_regex = re.compile(r"""(?P<envname>\\begin\{threeparttable.*?\})""")
+end_threeparttable_regex = re.compile(r"""(?P<envname>\\end\{threeparttable.*?\})""")
+begin_notice_regex = re.compile(r"""\\begin\{notice\}""")
 conclusion_regex = re.compile(r"""\\begin\{notice\}""")
 
 
@@ -87,10 +89,12 @@ class LatexBook(object):
                     match_begin_conclusion = begin_conclusion_regex.search(old_line)
                     match_printindex = printindex_regex.search(old_line)
                     match_fancychapter = fancychapter_regex.search(old_line)
-                    match_beginfigure = beginfigure_regex.search(old_line)
-                    match_endfigure = endfigure_regex.search(old_line)
+                    match_begin_figure = begin_figure_regex.search(old_line)
+                    match_end_figure = end_figure_regex.search(old_line)
                     match_tabular = tabular_regex.search(old_line)
-                    match_beginnotice = beginnotice_regex.search(old_line)
+                    match_begin_threeparttable = begin_threeparttable_regex.search(old_line)
+                    match_end_threeparttable = end_threeparttable_regex.search(old_line)
+                    match_begin_notice = begin_notice_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
@@ -158,12 +162,12 @@ class LatexBook(object):
                                               r"\end{multicols}",
                                               "",
                                              ])
-                    elif match_beginfigure:
+                    elif match_begin_figure:
                         new_line = '\n'.join(["",
                                               r"\begin{minipage}[b]{\linewidth}",
                                               old_line,
                                              ])
-                    elif match_endfigure:
+                    elif match_end_figure:
                         new_line = '\n'.join([old_line,
                                               r"\end{minipage}",
                                               "",
@@ -174,7 +178,18 @@ class LatexBook(object):
                                              match_tabular.group('opt'),
                                              coldef,
                                              )
-                    elif match_beginnotice:
+                    elif match_begin_threeparttable:
+                        new_line = '\n'.join([r"\begin{center}",
+                                              old_line,
+                                              "",
+                                             ])
+                    elif match_end_threeparttable:
+                        old_line = old_line.strip('\n\r')
+                        new_line = '\n'.join([old_line,
+                                              r"\end{center}",
+                                              "",
+                                             ])
+                    elif match_begin_notice:
                         i2 = self._get_next_non_blank_line_index(i, orig_lines)
                         new_line = old_line
                     elif i == i2:
