@@ -44,6 +44,7 @@ pageTracker._trackPageview();
         </ul>
       </div>
   {%- endmacro %}
+
   <div class="openobject-header">
     <table cellspacing="0" cellpadding="0" border="0" width="1004">
       <tbody>
@@ -95,6 +96,37 @@ pageTracker._trackPageview();
 {% endblock %}
 
 {% block rootrellink %}
+{% endblock %}
+
+{#
+{%- block relbar2 %}{{ relbar_tiny() }}{% endblock %}
+#}
+{%- block footer %}
+  {%- macro relbar_tiny2 %}
+      <div class="related-tiny">
+        <h3>{{ _('Navigation') }}</h3>
+        <ul>
+          {%- for rellink in rellinks %}
+          <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+            <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
+               accesskey="{{ rellink[2] }}" class="bottom-nav-links" >{{ rellink[3] }}</a>
+            {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+          {%- endfor %}
+          {%- block rootrellink_new_2 %}
+          <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+          {%- endblock %}
+          {%- for parent in parents %}
+            <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
+          {%- endfor %}
+          {#
+          {%- block relbaritems %} {% endblock %}
+          #}
+        </ul>
+      </div>
+  {%- endmacro %}
+
+{{relbar_tiny2()}}
+{{super()}}
 {% endblock %}
 
 </center>
