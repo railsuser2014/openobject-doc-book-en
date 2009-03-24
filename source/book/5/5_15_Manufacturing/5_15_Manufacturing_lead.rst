@@ -25,8 +25,8 @@ cabinet is assembled in two steps, using the two following bills of materials.
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
    PANLAT        2         Unit
-   BOIS002       0.25      Unit
-   LIN040        1         Unit
+   BOIS002       0.25      m2
+   LIN040        1         m
    BOIS010       0.25      m2
    TAQ000        12        Unit
    ============  ========  ===============
@@ -36,12 +36,12 @@ cabinet is assembled in two steps, using the two following bills of materials.
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   BOIS002       0.17      Unit
+   BOIS002       0.17      m2
    ============  ========  ===============
 
 The PANLAT is made from an order using the workflow shown. The BOIS02 is purchased on order and the
 other products are all found in stock. An order for the product ARM100 will then generate two
-production orders (ARM100 et PANLAT) then produce two purchase orders for the product BOIS02.
+production orders (ARM100 and PANLAT) then produce two purchase orders for the product BOIS02.
 Product BOIS02 is used in the production of both ARM100 and PANLAT. Set the lead times on the
 product forms to the following:
 
@@ -122,11 +122,11 @@ Operations
 
 In the first part of this chapter, manufacturing management was handled in terms of products and
 materials. This section focuses on manufacturing operations. To manufacture or assemble products, as
-well as using raw materials and finished product you should handle operations such as assembly,
+well as using raw materials and finished product you must also handle operations such as assembly,
 drilling wood, and cutting timber.
 
-The different operation will have impacts on the costs of manufacture and the planning as function
-of the available workload.
+The different operations will have different impacts on the costs of manufacture and planning depending
+on the available workload.
 
 Definition of concepts
 ----------------------
@@ -138,6 +138,9 @@ To manage operations you should understand the following concepts
 * Routing,
 
 * Operations.
+
+.. index::
+   single: workcenter
 
 Workcenters
 -----------
@@ -180,6 +183,9 @@ Depending on whether you have a machine or a person, a workcenter will be define
 hours. If it represents a set of machines and people you can use both cycles and hours at the same
 time.
 
+.. index::
+   single: workcenter, cycle
+
 .. note:: A Cycle
 
     A cycle corresponds to the time required to carry out an assembly operation.
@@ -190,7 +196,7 @@ time.
     depending on the printer.
 
 To define the capacity properly it is necessary know, for each workcenter, what will be the
-reference operation which will serve to determine the cycle. You can then define the data relative
+reference operation which determines the cycle. You can then define the data relative
 to the capacity.
 
 Capacity per cycle (CA): determine the number of operations that can be done in parallel during a
@@ -233,6 +239,9 @@ effect on the analytic accounts.
 .. index::
    pair: routing; manufacturing
 
+.. index::
+   single: routing
+
 Routing
 -------
 
@@ -260,7 +269,7 @@ location. That enable you to indicate where assembly takes place.
 In the routing you must show the list of operations that must be done. Each operation must be done
 at a workcenter and possess a number of hours and/or cycles be done.
 
-Impact of the production order
+Impact on the production order
 ------------------------------
 
 The routings are then attached to the bills of materials which are then also used to generate
@@ -273,7 +282,7 @@ product order. On a production order you'll find assembly operations for manufac
 
    *Operations on a production order*
 
-The times and the cycles shown in the production order are in the same way as the materials,
+The times and the cycles shown in the production order are, in the same way as the materials,
 theoretical data. The user can change the values to reflect reality for manufacture.
 
 So if you use routings, Open ERP automatically calculates the operations required for the production
@@ -304,13 +313,16 @@ interval is calculated (by day, week or month).
    That enables you to compare the real working time in your company and work out the productivity
    per person.
 
+.. index::
+   single: work operations
+
 Work operations
 ---------------
 
-A production order is for several products defined in the Bills of Materials, and several
-operations, defined in the routing. You've seen how to handle manufacturing production by
-production, Some companies like to have finer-grained control of operations where instead of
-encoding the production they enter data on each constituent operation of production.
+A production order defines the use of the products defined in the Bills of Materials, and the
+operations defined in the routing. You've seen how to handle manufacturing production as a top-level process, 
+but some companies prefer to have finer-grained control of operations where instead of
+specifying just the production process itself, they enter data on each constituent production operation.
 
 Management of operations
 ------------------------
@@ -354,8 +366,8 @@ once the last operation is completed. The finished products are then made.
 
 .. index:: barcode
 
-Scores, events and barcodes
-===========================
+Events and barcodes
+===================
 
 If the company wants to work with barcodes in manufacturing you can work on each operation using
 events. Here are some examples of events for an operations:
