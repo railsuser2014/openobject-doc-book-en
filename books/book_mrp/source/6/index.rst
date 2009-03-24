@@ -136,8 +136,8 @@ Tiny offers various services such as free demonstration days for the software, u
 technical training, support contracts, maintenance contracts and developments as required. Depending
 on the demand, they can also put you in contact with partners most aligned to your requirements.
 
-* **The mailing list** : To keep up to date with all Open ERP's news you can subscribe to the mailing 
-list using http://tiny.be/mailman/listinfo/tinyerp-announce.
+* **The mailing list** : To keep up to date with all Open ERP's news you can subscribe to
+  the mailing list using http://tiny.be/mailman/listinfo/tinyerp-announce.
 
 To conclude, don't forget that Open ERP has more than four hundred modules available and that many
 of them haven't been covered in this book. So if you haven't found a solution to your problems here,
