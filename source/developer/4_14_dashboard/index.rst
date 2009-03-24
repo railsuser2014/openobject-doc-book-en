@@ -1,7 +1,7 @@
 Dashboard 
 =========
 
-Open ERP objects can be created from `PostgreSQL views. The technique is as follows :
+Open ERP objects can be created from PostgreSQL views. The technique is as follows :
 
    1. Declare your _columns dictionary. All fields must have the flag **readonly=True.**
    2. Specify the parameter **_auto=False** to the Open ERP object, so no table corresponding to the _columns dictionnary is created automatically.

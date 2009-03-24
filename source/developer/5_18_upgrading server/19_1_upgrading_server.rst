@@ -25,7 +25,7 @@ Files: .XML
 
 	%define=lightblue color=#27adfb%
 
-Data can be inserted or updated into the `PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows :
+Data can be inserted or updated into the PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows :
 ::
 
 	 <?xml version="1.0"?>
@@ -49,7 +49,7 @@ Data can be inserted or updated into the `PostgreSQL tables corresponding to the
 
 Fields content are strings that must be encoded as UTF-8 in XML files.
 
-Let's review an example taken from the `TinyERP source (base_demo.xml in the base module):
+Let's review an example taken from the TinyERP source (base_demo.xml in the base module):
 ::
 
 	   <record model="res.company" id="main_company">
@@ -458,7 +458,7 @@ Examples of builtin (non demo) data:
     * Menu structure, 
     * View definition, 
     * Workflow description, ... 
-    -> Everything that as an id="..." in the .XML data declaration (if no attr noupdate="1" in the header) 
+      -> Everything that as an id="..." in the .XML data declaration (if no attr noupdate="1" in the header) 
 
 What's going on on a update process:
 

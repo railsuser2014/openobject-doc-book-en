@@ -49,8 +49,8 @@ The first field is the X axis. The second one is the Y axis and the optionnal th
     * **group**: if set to true, the client will group all item of the same value for this field. For each other field, it will apply an operator
     * **operator**: the operator to apply is another field is grouped. By default it's '+'. Allowed values are:
           + +: addition
-          + *: multiply
-          + **: exponent
+          + \*: multiply
+          + \**: exponent
           + min: minimum of the list
           + max: maximum of the list 
 
