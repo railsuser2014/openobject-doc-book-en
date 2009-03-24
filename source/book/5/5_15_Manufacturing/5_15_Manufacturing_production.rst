@@ -53,6 +53,7 @@ The cabinet is assembled from raw materials and intermediate assemblies:
    ETA100           Shelf
    PLET100          Shelf Panel
    BOIS002          Wood Panel
+   BOIS010          Wood Panel
    TAQ000           Panel Pins
    LIN040           Lintel
    ================ =========================
@@ -65,9 +66,9 @@ product and for the final cabinet assembly. These are given by the table below.
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   PANLAT        2         m2
-   PANA100       1         m2
-   PROFIL        4         m
+   PANLAT        2         Unit
+   PANA100       1         Unit
+   PROFIL        4         Unit
    ETA100        3         Unit
    ============  ========  ===============
 
@@ -78,6 +79,14 @@ product and for the final cabinet assembly. These are given by the table below.
    ============  ========  ===============
    PLET100       1         Unit
    TAQ000        4         Unit
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 PLET100 Unit
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   BOIS010       0.083     m2
    ============  ========  ===============
 
 .. table:: Bill of Materials for 1 PROFIL Unit
@@ -96,7 +105,7 @@ product and for the final cabinet assembly. These are given by the table below.
    BOIS002       0.25      m2
    ============  ========  ===============
 
-.. table:: Bill of Materials for 2 PANLAT Units
+.. table:: Bill of Materials for 1 PANLAT Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -113,8 +122,8 @@ calculate what will be consumed:
    ============  =================  ===============
    Product Code  Quantity           Unit of Measure
    ============  =================  ===============
-   BOIS002       2 * 0.083 + 0.25   Unit
-   LIN040        1                  Unit
+   BOIS002       2 * 0.083 + 0.25   m2
+   LIN040        1                  m
    BOIS002       0.083 * 3          m2
    TAQ000        12                 Unit
    ============  =================  ===============
@@ -152,7 +161,7 @@ manufactured or assembled. Once the product has been selected, Open ERP automati
 name of the bill of materials and the default Unit of Measure for this product.
 
 The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and 
-the :guilabel:`Range` field will be described in
+the :guilabel:`Routing` field will be described in
 more detail later in the chapter.
 
 After this you can select the raw materials that are used in the manufacture of the finished
@@ -162,7 +171,7 @@ the quantities needed to produce them from the bill of materials.
 .. index::
    single: BoM; revisions
 
-The second tab, :guilabel:`Revisions`, is used to indicate all the changes made to the 
+The second tab, :guilabel:`Revisions`, is used to set down all the changes made to the 
 bill of materials. After each
 change you can specify a revision number and some notes on the modifications you carried out.
 
@@ -184,7 +193,7 @@ is valid, and values for rounding and product efficiency.
 
 :guilabel:`Rounding` is used to set the smallest :guilabel:`Unit of Measure` 
 for expressing the quantities of the selected
-product. So if you set the rounding to 1.00 you're not able to manufacture half a piece. The
+product. So if you set the rounding to 1.00 you'll not be able to manufacture half a piece. The
 :guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacture. This loss
 can be set for the finished product or for each raw materials line. The impact of this efficiency
 figure is to reserve more raw materials for manufacture than you'd otherwise use just from the Bill
@@ -204,17 +213,23 @@ In Open ERP each line of a bill of materials may itself be a bill of materials. 
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
 :ref:`fig-mrparm` you could define the single bill of materials below:
 
-ARM100 ; 1 ; Unit
-PANLAT ; 2 ; m2
-BOIS002 ; 0.166 ; m2
-PANA100 ; 1 ; m2
-BOIS002 ; 0.25 ; m2
-PROFIL ; 4 ; m
-LIN040 ; 1 ; m
-ETA100 ; 3 ; Unit
-PLET100 ; 3 ; Unit
-BOIS010 ; 0.249 ; m2
-TAQ000 ; 12 ; Unit
+.. table:: Single Bill of Materials for 1 ARM100 Unit
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   BOIS002       0.166     m2
+   PANA100       1         Unit
+   BOIS002       0.25      m2
+   PROFIL        4         Unit
+   LIN040        1         m
+   ETA100        3         Unit
+   PLET100       3         Unit
+   BOIS010       0.249     m2
+   TAQ000        12        Unit
+   ============  ========  ===============
 
 Open ERP behaves differently depending on whether the bill of materials is defined in several small
 BoMs each on a single level or in one BoM tree-structured on several levels.
@@ -223,53 +238,63 @@ So if you select a BoM using intermediate products that automatically generates 
 based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
 manufacture a cabinet, you'd create 6 production orders:
 
-.. table:: Production Orders
+.. table:: Production Order
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
    PLET100       3         Unit
+   BOIS010       0.25      m2
+   ============  ========  ===============
+
+.. table:: Production Order
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ETA100        3         Unit
+   PLET100       3         Unit
+   TAQ000        12        Unit
+   ============  ========  ===============
+
+.. table:: Production Order
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PROFIL        4         Unit
+   LIN040        1         m
+   ============  ========  ===============
+
+.. table:: Production Order
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PANA100       1         Unit
    BOIS002       0.25      m2
    ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ETA100        3         Unit
-PLET100       3         Unit
-TAQ000        12        Unit
-============  ========  ===============
+.. table:: Production Order
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PROFIL        4         Unit
-LIN040        1         Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PANA100       2         Unit
+   BOIS002       0.17      m2
+   ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANA100       1         Unit
-BOIS002       0.25      m2
-============  ========  ===============
+.. table:: Production Order
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANA100       2         Unit
-BOIS002       0.17      m2
-============  ========  ===============
-
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-ARM100        1         Unit
-PANLAT        2         m2
-PANA100       1         m2
-PROFIL        4         m
-ETA100        3         Unit
-============  ========  ===============
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   ARM100        1         Unit
+   PANLAT        2         Unit
+   PANA100       1         Unit
+   PROFIL        4         Unit
+   ETA100        3         Unit
+   ============  ========  ===============
 
 In the case where a single bill of materials is defined in multiple levels, a single manufacturing
 order will be generated for each cabinet, including all of the sub-BoMs. You'd then get the
@@ -281,9 +306,9 @@ following production order:
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
    ARM100        1         Unit
-   BOIS002       0.17      Unit
-   BOIS002       0.25      Unit
-   LIN040        1         Unit
+   BOIS002       0.17      m2
+   BOIS002       0.25      m2
+   LIN040        1         m
    BOIS010       0.25      m2
    TAQ000        12        Unit
    ============  ========  ===============
@@ -325,31 +350,33 @@ you'll get two production orders when the order is confirmed, as shown in the ta
    Product Code  Quantity  Unit of Measure  Type of BoM
    ============  ========  ===============  ===========
    ARM100        1         Unit             normal
-   PANLAT        2         m2               normal
-   PANA100       1         m2               phantom
-   PROFIL        4         m                phantom
+   PANLAT        2         Unit             normal
+   PANA100       1         Unit             phantom
+   PROFIL        4         Unit             phantom
    ETA100        3         Unit             phantom
    ============  ========  ===============  ===========
 
-.. table:: Production Orders from phantom BoMs
+.. table:: Production Order from phantom BoMs
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
    ARM100        1         Unit
    PANLAT        2         Unit
-   BOIS002       0.25      Unit
-   LIN040        1         Unit
+   BOIS002       0.25      m2
+   LIN040        1         m
    BOIS010       0.25      m2
    TAQ000        12        Unit
    ============  ========  ===============
 
-============  ========  ===============
-Product Code  Quantity  Unit of Measure
-============  ========  ===============
-PANLAT        2         Unit
-BOIS002       0.17      m2
-============  ========  ===============
+.. table:: Production Order from normal BoM
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   PANLAT        2         Unit
+   BOIS002       0.17      m2
+   ============  ========  ===============
 
 Assembly Bills of Materials
 -----------------------------
@@ -469,7 +496,7 @@ salesperson can set the method of manufacture he wants on each order line,
 depending on the quantities and the lead time requested by the customer.
 
 .. index::
-   :single: BoM, substitute products
+   single: BoM, substitute products
    
 .. note:: bills of materials and substitute products
 

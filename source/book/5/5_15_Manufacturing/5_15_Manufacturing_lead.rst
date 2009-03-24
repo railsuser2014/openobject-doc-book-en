@@ -67,7 +67,7 @@ A customer order placed on the 1st January will set up the following operations 
 
 * Purchase BOIS02 (for PANLAT): 11 January (=16 January – 5 days).
 
-In this example, Open ERP will propose making two orders to the supplier of product BOIS02. Each of
+In this example, Open ERP will propose placing two orders with the supplier of product BOIS002. Each of
 these orders can be for a different planned date. Before confirming these orders the
 purchasing manager could group these orders into single order.
 
