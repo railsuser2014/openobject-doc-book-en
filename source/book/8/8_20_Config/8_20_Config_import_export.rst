@@ -87,7 +87,7 @@ would create the following CSV file from the export file:
 From the list of partners, click the :guilabel:`Import` button and then in the 
 :guilabel:`Import Data` window click :guilabel:`Open` to search for and import
 the new :file:`data.csv` file. The web client automatically matches column names
-but the GTK client requires that you click the :guilable:`Auto detect` button.
+but the GTK client requires that you click the :guilabel:`Auto detect` button.
 
 You'll get a dialog box showing that you have imported 2 objects, and you can
 see the new partners and partner addresses when you refresh the list on screen.

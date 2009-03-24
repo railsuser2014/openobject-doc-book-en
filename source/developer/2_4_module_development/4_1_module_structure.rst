@@ -404,7 +404,9 @@ Wizards
 +++++++
 
 Here's an example of a .XML file that declares a wizard.
+
 ::
+
 	<?xml version="1.0"?>
 	<terp>
 	    <data>
