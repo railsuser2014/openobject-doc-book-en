@@ -106,8 +106,8 @@ tiny_latex_include = r"""
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
-\fancyhead[LE,RO]{\slshape \rightmark}
-\fancyhead[LO,RE]{\slshape \leftmark}
+%% \fancyhead[LE,RO]{\slshape \rightmark} %% display the section
+\fancyhead[LO,RE]{\slshape \leftmark} %% displays the chapter
 
 \renewcommand{\chaptermark}[1]{%
   \markboth{\chaptername

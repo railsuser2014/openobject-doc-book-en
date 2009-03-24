@@ -49,8 +49,8 @@ The first field is the X axis. The second one is the Y axis and the optionnal th
     * **group**: if set to true, the client will group all item of the same value for this field. For each other field, it will apply an operator
     * **operator**: the operator to apply is another field is grouped. By default it's '+'. Allowed values are:
           + +: addition
-          + *: multiply
-          + **: exponent
+          + \*: multiply
+          + \**: exponent
           + min: minimum of the list
           + max: maximum of the list 
 
@@ -61,5 +61,5 @@ The easiest method to compute real statistics on objects is:
    1. Define a statistic object wich is a postgresql view
    2. Create a tree view and a graph view on this object 
 
-You can get en example in all modules of the form: report_.... Example: report_crm. 
+You can get en example in all modules of the form: report\_.... Example: report_crm. 
 

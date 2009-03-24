@@ -1,8 +1,8 @@
 
-.. _ch-projects:
-
 .. index::
    single: Project Management
+
+.. _ch-projects:
 
 ********************************************
 Internal Organization and Project Management

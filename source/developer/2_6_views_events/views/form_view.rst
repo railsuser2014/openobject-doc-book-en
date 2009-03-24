@@ -16,10 +16,9 @@ Views also support more advanced placement options:
 
     * A view field can use several columns. For example, on the screen-shot below, the zone in the blue frame is, in fact, the only field of a "one to many". We will come back later on this note, but let's note that it uses the whole width of the screen and not only one column. 
 
-.. figure::  images/sale_order_sale_order_lines.png
-   :scale: 50
-   :align: center
-
+      .. figure::  images/sale_order_sale_order_lines.png
+        :scale: 50
+        :align: center
 
     * We can also make the opposite operation: take a columns group and divide it in as many columns as desired. The surrounded green zones of the screen above are good examples. Precisely, the green framework up and on the right side takes the place of two columns, but contains 4 columns. 
 

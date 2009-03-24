@@ -1,8 +1,8 @@
 
-.. _ch-services:
-
 .. index::
    single: Services Management
+
+.. _ch-services:
 
 *******************
 Services Management

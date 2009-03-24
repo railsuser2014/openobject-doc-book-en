@@ -61,7 +61,9 @@ Example
 
 
 Here is an example of __terp__.py file for the *product* module:
+
 ::
+
 	{
 	    "name" : "Products & Pricelists",
 	    "version" : "1.0",

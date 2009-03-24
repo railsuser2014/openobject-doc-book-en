@@ -49,9 +49,7 @@ Description
       - The wizard allows you to choose if you want to print either the Confirmed & Validated 
 holidays or only the Validated ones. These states must be set up by a user from the group 'HR' 
 and with the role 'holidays'. You can define these features in the security tab from the user 
-data in
-                  Administration \ Users \ Users
-              for example, you maybe will do it for the user 'admin'.
+data in *Administration \ Users \ Users* for example, you maybe will do it for the user 'admin'.
 
 Dependencies
 ------------
