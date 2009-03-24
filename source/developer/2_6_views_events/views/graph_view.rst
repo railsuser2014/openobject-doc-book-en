@@ -61,5 +61,5 @@ The easiest method to compute real statistics on objects is:
    1. Define a statistic object wich is a postgresql view
    2. Create a tree view and a graph view on this object 
 
-You can get en example in all modules of the form: report_.... Example: report_crm. 
+You can get en example in all modules of the form: report\_.... Example: report_crm. 
 
