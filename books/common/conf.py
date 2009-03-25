@@ -178,15 +178,6 @@ tiny_latex_include = r"""
   \end{samepage}
 }
 \makeatother
-
-\renewenvironment{figure}[6]{
-  \par
-  \addvspace{5mm}
-  \begin{staticfigure}
-}{
-  \end{staticfigure}
-  \addvspace{10mm}
-}
 """
 
 latex_elements = {

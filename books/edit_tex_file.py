@@ -10,23 +10,23 @@ import optparse
 __version__ = '0.1'
 USAGE = """%prog [options] <latex build directory>"""
 
-documentclass_regex = re.compile(r"""^\\documentclass\[(?P<options>[\w,]+)\]\{(?P<class>\w+)\}""")
-begin_doc_regex = re.compile(r"""^\\begin\{document\}""")
-end_doc_regex = re.compile(r"""^\\end\{document\}""")
-maketitle_regex = re.compile(r"""^\\maketitle""")
-tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
-end_foreword_regex = re.compile(r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""")
 begin_conclusion_regex = re.compile(r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""")
-printindex_regex = re.compile(r"""^\\printindex""")
-fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
-begin_figure_regex = re.compile(r"""\\begin\{figure\}""")
-end_figure_regex = re.compile(r"""\\end\{figure\}""")
-begin_tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
-end_tabular_regex = re.compile(r"""(?P<envname>\\end\{tabular.*?\})""")
-begin_threeparttable_regex = re.compile(r"""(?P<envname>\\begin\{threeparttable.*?\})""")
-end_threeparttable_regex = re.compile(r"""(?P<envname>\\end\{threeparttable.*?\})""")
+begin_doc_regex = re.compile(r"""^\\begin\{document\}""")
+begin_figure_regex = re.compile(r"""(?P<envname>\\begin\{figure\})(?P<opt>.*)""")
 begin_notice_regex = re.compile(r"""\\begin\{notice\}""")
-conclusion_regex = re.compile(r"""\\begin\{notice\}""")
+begin_tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
+begin_threeparttable_regex = re.compile(r"""(?P<envname>\\begin\{threeparttable.*?\})""")
+documentclass_regex = re.compile(r"""^\\documentclass\[(?P<options>[\w,]+)\]\{(?P<class>\w+)\}""")
+end_doc_regex = re.compile(r"""^\\end\{document\}""")
+end_figure_regex = re.compile(r"""(?P<before>.*)(?P<envname>\\end\{figure\})(?P<after>)""")
+end_foreword_regex = re.compile(r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""")
+end_notice_regex = re.compile(r"""\\end\{notice\}""")
+end_tabular_regex = re.compile(r"""(?P<envname>\\end\{tabular.*?\})""")
+end_threeparttable_regex = re.compile(r"""(?P<envname>\\end\{threeparttable.*?\})""")
+fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
+maketitle_regex = re.compile(r"""^\\maketitle""")
+printindex_regex = re.compile(r"""^\\printindex""")
+tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
 
 
 class LatexBook(object):
@@ -83,24 +83,26 @@ class LatexBook(object):
                 i_next_non_blank = None
                 in_threeparttable = False
                 in_begin_document = False
+                in_begin_notice = False
                 for i, old_line in enumerate(orig_lines):
 
-                    match_dclass = documentclass_regex.search(old_line)
-                    match_begin_document = begin_doc_regex.search(old_line)
-                    match_end_document = end_doc_regex.search(old_line)
-                    match_maketitle = maketitle_regex.search(old_line)
-                    match_tableofcontents = tableofcontents_regex.search(old_line)
-                    match_end_foreword = end_foreword_regex.search(old_line)
                     match_begin_conclusion = begin_conclusion_regex.search(old_line)
-                    match_printindex = printindex_regex.search(old_line)
-                    match_fancychapter = fancychapter_regex.search(old_line)
+                    match_begin_document = begin_doc_regex.search(old_line)
                     match_begin_figure = begin_figure_regex.search(old_line)
-                    match_end_figure = end_figure_regex.search(old_line)
-                    match_begin_tabular = begin_tabular_regex.search(old_line)
-                    match_end_tabular = end_tabular_regex.search(old_line)
-                    match_begin_threeparttable = begin_threeparttable_regex.search(old_line)
-                    match_end_threeparttable = end_threeparttable_regex.search(old_line)
                     match_begin_notice = begin_notice_regex.search(old_line)
+                    match_begin_tabular = begin_tabular_regex.search(old_line)
+                    match_begin_threeparttable = begin_threeparttable_regex.search(old_line)
+                    match_dclass = documentclass_regex.search(old_line)
+                    match_end_document = end_doc_regex.search(old_line)
+                    match_end_figure = end_figure_regex.search(old_line)
+                    match_end_foreword = end_foreword_regex.search(old_line)
+                    match_end_notice = end_notice_regex.search(old_line)
+                    match_end_tabular = end_tabular_regex.search(old_line)
+                    match_end_threeparttable = end_threeparttable_regex.search(old_line)
+                    match_fancychapter = fancychapter_regex.search(old_line)
+                    match_maketitle = maketitle_regex.search(old_line)
+                    match_printindex = printindex_regex.search(old_line)
+                    match_tableofcontents = tableofcontents_regex.search(old_line)
 
                     if match_dclass:
                         # set 'book' document class:
@@ -125,7 +127,6 @@ class LatexBook(object):
                         new_line = '\n'.join([old_line,
                                               r"\thispagestyle{empty}",
                                               r"\newpage",
-                                              #r"\pagestyle{plain}",
                                               "",
                                              ])
                     elif match_tableofcontents:
@@ -142,17 +143,6 @@ class LatexBook(object):
                                               "",
                                              ])
                     elif match_begin_conclusion:
-                        # BEFORE:
-                        # \resetcurrentobjects
-                        # \part*{Conclusion}
-                        # \addcontentsline{toc}{part}{Conclusion}
-
-                        # AFTER
-                        # \backmatter
-                        # \resetcurrentobjects
-                        # \part*{Conclusion}
-                        # \addcontentsline{toc}{part}{Conclusion}
-                        # \pagestyle{plain}
                         part = match_begin_conclusion.group('after')
                         new_line = '\n'.join(["",
                                               r"\backmatter",
@@ -169,15 +159,29 @@ class LatexBook(object):
                                               "",
                                              ])
                     elif match_begin_figure:
-                        new_line = '\n'.join(["",
-                                              r"\begin{minipage}[b]{\linewidth}",
-                                              old_line,
-                                             ])
+                        if in_begin_notice:
+                            new_line = '\n'.join([r"\begin{staticfigure}",
+                                                  ""
+                                                 ])
+                        else:
+                            new_line = '\n'.join([old_line.strip('\n\r'),
+                                                  r"\begin{minipage}[htbp]{\linewidth}",
+                                                  "",
+                                                 ])
                     elif match_end_figure:
-                        new_line = '\n'.join([old_line,
-                                              r"\end{minipage}",
-                                              "",
-                                             ])
+                        if in_begin_notice:
+                            new_line = '\n'.join([match_end_figure.group('before'),
+                                                  r"\end{staticfigure}",
+                                                  match_end_figure.group('after'),
+                                                  ""
+                                                 ])
+                        else:
+                            new_line = '\n'.join([match_end_figure.group('before'),
+                                                  r"\end{minipage}",
+                                                  match_end_figure.group('envname'),
+                                                  match_end_figure.group('after'),
+                                                  ""
+                                                 ])
                     elif match_begin_tabular:
                         if in_begin_document:
                             coldef = match_begin_tabular.group('coldef').replace('|', '')
@@ -214,7 +218,11 @@ class LatexBook(object):
                                               "",
                                              ])
                     elif match_begin_notice:
+                        in_begin_notice = True
                         i_next_non_blank = self._get_next_non_blank_line_index(i, orig_lines)
+                        new_line = old_line
+                    elif match_end_notice:
+                        in_begin_notice = False
                         new_line = old_line
                     elif i == i_next_non_blank:
                         new_line = '\n'.join([self.add_tex_command('strong', old_line),
