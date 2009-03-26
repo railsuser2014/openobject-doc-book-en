@@ -202,11 +202,11 @@ latex_elements = {
 
 def end_foreword_directive(name, arguments, options, content, lineno,
                        content_offset, block_text, state, state_machine):
-    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE')]
+    return [nodes.Text('SPHINXENDFOREWORDDIRECTIVE\n')]
 
 def begin_conclusion_directive(name, arguments, options, content, lineno,
                        content_offset, block_text, state, state_machine):
-    return [nodes.Text('SPHINXBEGINCONCLUSIONDIRECTIVE')]
+    return [nodes.Text('SPHINXBEGINCONCLUSIONDIRECTIVE\n')]
 
 def setup(app):
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))

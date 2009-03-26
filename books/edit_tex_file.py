@@ -33,7 +33,10 @@ rgxs = {
     'maketitle': r"""^\\maketitle""",
     'printindex': r"""^\\printindex""",
     'tableofcontents': r"""^\\tableofcontents""",
+    'front_or_back_matter_part': r"""\\part\*""",
 }
+
+begin_chapter_or_section_regex = re.compile(r"""\\chapter\*|\\section\*""")
 
 
 class LatexRgx(object):
@@ -60,6 +63,9 @@ class LatexState(object):
         self.in_begin_document = False
         self.in_begin_notice = False
         self.in_chapter_intro_quote = False
+        self.in_frontmatter = False
+        self.in_mainmatter = False
+        self.in_backmatter = False
 
 
 class LatexBook(object):
@@ -90,11 +96,25 @@ class LatexBook(object):
         return content
 
     def _get_next_non_blank_line_index(self, where, lines):
-        i = where + 1
+        i = where
         while True:
+            i += 1
             next_line = lines[i]
             if next_line.strip():
                 return i
+            elif i > len(lines):
+                return None
+        return None
+
+    def _get_next_front_or_back_matter_part_end_line_index(self, where, lines):
+        i = where
+        while True:
+            i += 1
+            next_line = lines[i]
+            if begin_chapter_or_section_regex.search(next_line):
+                return i
+            elif i > len(lines):
+                return None
         return None
 
     def add_tex_command(self, cmd, s):
@@ -117,6 +137,7 @@ class LatexBook(object):
 
                 i_next_non_blank = None
                 i_chapter = None
+                i_front_or_back_matter_part_end = None
                 for i, old_line in enumerate(orig_lines):
                     rgxname, matchobj = self.tex_rgx.match(old_line)
 
@@ -132,6 +153,7 @@ class LatexBook(object):
                                                   r"\pagenumbering{roman}",
                                                   "",
                                                  ])
+                            self.state.in_frontmatter = True
                         elif rgxname == 'end_document':
                             self.state.in_begin_document = False
                             new_line = old_line
@@ -159,6 +181,8 @@ class LatexBook(object):
                                                   r"\setcounter{page}{1}",
                                                   "",
                                                  ])
+                            self.state.in_frontmatter = False
+                            self.state.in_mainmatter = True
                         elif rgxname == 'begin_conclusion':
                             part = matchobj.group('after')
                             new_line = '\n'.join(["",
@@ -166,6 +190,9 @@ class LatexBook(object):
                                                   r"\pagestyle{plain}",
                                                   part
                                                  ])
+                            self.state.in_frontmatter = False
+                            self.state.in_mainmatter = False
+                            self.state.in_backmatter = True
                         elif rgxname == 'printindex':
                             new_line = '\n'.join(["",
                                                   r"\chapter*{\indexname}",
@@ -266,6 +293,15 @@ class LatexBook(object):
                             else:
                                 new_line = old_line
                             self.state.in_chapter_intro_quote = False # job done -> reset in_chapter_intro_quote
+                        elif rgxname == 'front_or_back_matter_part':
+                            if self.state.in_frontmatter or self.state.in_backmatter:
+                                new_line = '\n'.join([old_line.strip(CRLF),
+                                                      r"\vspace{8mm}",
+                                                      "",
+                                                     ])
+                                i_front_or_back_matter_part_end = self._get_next_front_or_back_matter_part_end_line_index(i, orig_lines)
+                            else:
+                                new_line = old_line
                         else:
                             raise UnhandledMatchException("Matching object '%s' was not handled (matching line: %s)." % (rgxname, i))
 
@@ -274,6 +310,13 @@ class LatexBook(object):
                                               "",
                                              ])
                         i_next_non_blank = None # job done -> reset i_next_non_blank
+                    elif i == i_front_or_back_matter_part_end:
+                        new_line = '\n'.join([r"\vspace{5mm}",
+                                              old_line.strip(CRLF),
+                                              "",
+                                             ])
+                        i_next_non_blank = None # job done -> reset i_next_non_blank
+                        i_front_or_back_matter_part_end = None # job done -> reset i_front_or_back_matter_part_end
                     else:
                         new_line = old_line
                     new_lines.append(new_line)
