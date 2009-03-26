@@ -10,11 +10,15 @@ import optparse
 __version__ = '0.1'
 USAGE = """%prog [options] <latex build directory>"""
 
+CRLF = '\n\r'
+
 rgxs = {
+    'begin_chapter': r"""\\chapter""",
     'begin_conclusion': r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""",
     'begin_document': r"""^\\begin\{document\}""",
     'begin_figure': r"""(?P<envname>\\begin\{figure\})(?P<opt>.*)""",
     'begin_notice': r"""\\begin\{notice\}""",
+    'begin_quote': r"""\\begin\{quote\}""",
     'begin_tabular': r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""",
     'begin_threeparttable': r"""(?P<envname>\\begin\{threeparttable.*?\})""",
     'documentclass': r"""^\\documentclass\[(?P<opt>[\w,]+)\]\{(?P<class>\w+)\}""",
@@ -22,6 +26,7 @@ rgxs = {
     'end_figure': r"""(?P<before>.*)(?P<envname>\\end\{figure\})(?P<after>)""",
     'end_foreword': r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""",
     'end_notice': r"""\\end\{notice\}""",
+    'end_quote': r"""\\end\{quote\}""",
     'end_tabular': r"""(?P<envname>\\end\{tabular.*?\})""",
     'end_threeparttable': r"""(?P<envname>\\end\{threeparttable.*?\})""",
     'fancychapter': r"""^\\usepackage\[Bjarne\]\{fncychap\}""",
@@ -41,9 +46,9 @@ class LatexRgx(object):
         for k, v in self.regexes.items():
             self.compiled[k] = re.compile(v)
 
-    def match(self, s):
+    def match(self, txt):
         for rgxname, rgxobj in self.compiled.items():
-            matchobj = rgxobj.search(s)
+            matchobj = rgxobj.search(txt)
             if matchobj:
                 return (rgxname, matchobj)
         return (None, None)
@@ -54,6 +59,7 @@ class LatexState(object):
         self.in_threeparttable = False
         self.in_begin_document = False
         self.in_begin_notice = False
+        self.in_chapter_intro_quote = False
 
 
 class LatexBook(object):
@@ -110,6 +116,7 @@ class LatexBook(object):
                 new_lines = []
 
                 i_next_non_blank = None
+                i_chapter = None
                 for i, old_line in enumerate(orig_lines):
                     rgxname, matchobj = self.tex_rgx.match(old_line)
 
@@ -174,7 +181,7 @@ class LatexBook(object):
                                                       ""
                                                      ])
                             else:
-                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                new_line = '\n'.join([old_line.strip(CRLF),
                                                       r"\begin{minipage}[htbp]{\linewidth}",
                                                       "",
                                                      ])
@@ -209,7 +216,7 @@ class LatexBook(object):
                                                          ])
                         elif rgxname == 'end_tabular':
                             if self.state.in_begin_document and not self.state.in_threeparttable:
-                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                new_line = '\n'.join([old_line.strip(CRLF),
                                                       r"\end{center}",
                                                       "",
                                                      ])
@@ -223,7 +230,7 @@ class LatexBook(object):
                                                  ])
                         elif rgxname == 'end_threeparttable':
                             self.state.in_threeparttable = False
-                            old_line = old_line.strip('\n\r')
+                            old_line = old_line.strip(CRLF)
                             new_line = '\n'.join([old_line,
                                                   r"\end{center}",
                                                   "",
@@ -235,6 +242,30 @@ class LatexBook(object):
                         elif rgxname == 'end_notice':
                             self.state.in_begin_notice = False
                             new_line = old_line
+                        elif rgxname == 'begin_chapter':
+                            # The first quote after a chapter is the chapter intro.
+                            # So it should begin and end with more space.
+                            i_chapter = i
+                            new_line = old_line
+                        elif rgxname == 'begin_quote':
+                            if i_chapter and (1 <= (i - i_chapter) < 3):
+                               self.state.in_chapter_intro_quote = True
+                               new_line = '\n'.join(["",
+                                                     old_line.strip(CRLF),
+                                                     r"\vspace{6mm}",
+                                                     "",
+                                                    ])
+                            else:
+                                new_line = old_line
+                        elif rgxname == 'end_quote':
+                            if self.state.in_chapter_intro_quote:
+                                new_line = '\n'.join([old_line.strip(CRLF),
+                                                      r"\vspace{5mm}",
+                                                      "",
+                                                     ])
+                            else:
+                                new_line = old_line
+                            self.state.in_chapter_intro_quote = False # job done -> reset in_chapter_intro_quote
                         else:
                             raise UnhandledMatchException("Matching object '%s' was not handled (matching line: %s)." % (rgxname, i))
 
