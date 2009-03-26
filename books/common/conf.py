@@ -136,7 +136,7 @@ tiny_latex_include = r"""
 \newenvironment{NoticeBox}{%
   \def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{NoticeBoxBg}}%
   \MakeFramed {\setlength{\boxwidth}{\textwidth}
-  \addtolength{\boxwidth}{-2\FrameSep}
+  \addtolength{\boxwidth}{-8\FrameSep}
   \addtolength{\boxwidth}{-2\FrameRule}
   \setlength{\hsize}{\boxwidth} \FrameRestore}}%
 {\endMakeFramed}
@@ -151,7 +151,7 @@ tiny_latex_include = r"""
 
   \setlength\tabcolsep{1mm}
   \renewcommand{\arraystretch}{0.3}
-  \begin{tabular}[t]{cp{138mm}}
+  \begin{tabular}[t]{cp{120mm}}
     \ifx\py@noticetype\py@noticetypetip
       % TIPS:
       \hspace{-5mm}
