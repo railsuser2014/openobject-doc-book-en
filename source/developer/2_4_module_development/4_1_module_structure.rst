@@ -317,8 +317,7 @@ i18n
 Improving Translations
 """"""""""""""""""""""
 
-Translating in launchpad
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. describe:: Translating in launchpad
 
 Translations are managed by 
 the `Launchpad Web interface <https://translations.launchpad.net/openobject>`_. Here, you'll
@@ -326,8 +325,7 @@ find the list of translatable projects.
 
 Please read the `FAQ <https://answers.launchpad.net/rosetta/+faqs>`_ before asking questions.
 
-Translating your own module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. describe:: Translating your own module
 
 
 .. versionchanged:: 5.0
@@ -341,8 +339,6 @@ generate a .tgz archive containing well organised ``.po`` files for each selecte
 module.
 
 .. [#f_po] http://www.gnu.org/software/autoconf/manual/gettext/PO-Files.html#PO-Files
-
-
 
 Process
 +++++++

@@ -10,23 +10,50 @@ import optparse
 __version__ = '0.1'
 USAGE = """%prog [options] <latex build directory>"""
 
-documentclass_regex = re.compile(r"""^\\documentclass\[(?P<options>[\w,]+)\]\{(?P<class>\w+)\}""")
-begin_doc_regex = re.compile(r"""^\\begin\{document\}""")
-end_doc_regex = re.compile(r"""^\\end\{document\}""")
-maketitle_regex = re.compile(r"""^\\maketitle""")
-tableofcontents_regex = re.compile(r"""^\\tableofcontents""")
-end_foreword_regex = re.compile(r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""")
-begin_conclusion_regex = re.compile(r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""")
-printindex_regex = re.compile(r"""^\\printindex""")
-fancychapter_regex = re.compile(r"""^\\usepackage\[Bjarne\]\{fncychap\}""")
-begin_figure_regex = re.compile(r"""\\begin\{figure\}""")
-end_figure_regex = re.compile(r"""\\end\{figure\}""")
-begin_tabular_regex = re.compile(r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""")
-end_tabular_regex = re.compile(r"""(?P<envname>\\end\{tabular.*?\})""")
-begin_threeparttable_regex = re.compile(r"""(?P<envname>\\begin\{threeparttable.*?\})""")
-end_threeparttable_regex = re.compile(r"""(?P<envname>\\end\{threeparttable.*?\})""")
-begin_notice_regex = re.compile(r"""\\begin\{notice\}""")
-conclusion_regex = re.compile(r"""\\begin\{notice\}""")
+rgxs = {
+    'begin_conclusion': r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""",
+    'begin_document': r"""^\\begin\{document\}""",
+    'begin_figure': r"""(?P<envname>\\begin\{figure\})(?P<opt>.*)""",
+    'begin_notice': r"""\\begin\{notice\}""",
+    'begin_tabular': r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""",
+    'begin_threeparttable': r"""(?P<envname>\\begin\{threeparttable.*?\})""",
+    'documentclass': r"""^\\documentclass\[(?P<opt>[\w,]+)\]\{(?P<class>\w+)\}""",
+    'end_document': r"""^\\end\{document\}""",
+    'end_figure': r"""(?P<before>.*)(?P<envname>\\end\{figure\})(?P<after>)""",
+    'end_foreword': r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""",
+    'end_notice': r"""\\end\{notice\}""",
+    'end_tabular': r"""(?P<envname>\\end\{tabular.*?\})""",
+    'end_threeparttable': r"""(?P<envname>\\end\{threeparttable.*?\})""",
+    'fancychapter': r"""^\\usepackage\[Bjarne\]\{fncychap\}""",
+    'maketitle': r"""^\\maketitle""",
+    'printindex': r"""^\\printindex""",
+    'tableofcontents': r"""^\\tableofcontents""",
+}
+
+
+class LatexRgx(object):
+    def __init__(self, regexes):
+        self.regexes = regexes
+        self.compiled = {}
+        self.compile_regexes()
+
+    def compile_regexes(self):
+        for k, v in self.regexes.items():
+            self.compiled[k] = re.compile(v)
+
+    def match(self, s):
+        for rgxname, rgxobj in self.compiled.items():
+            matchobj = rgxobj.search(s)
+            if matchobj:
+                return (rgxname, matchobj)
+        return (None, None)
+
+
+class LatexState(object):
+    def __init__(self):
+        self.in_threeparttable = False
+        self.in_begin_document = False
+        self.in_begin_notice = False
 
 
 class LatexBook(object):
@@ -34,6 +61,8 @@ class LatexBook(object):
         self._check_args(args, options)
         self.build_dir = args[0]
         self.tex_files = self._get_tex_files()
+        self.tex_rgx = LatexRgx(rgxs)
+        self.state = LatexState()
 
     def _check_args(self, args, options):
         if len(args) != 1:
@@ -81,155 +110,154 @@ class LatexBook(object):
                 new_lines = []
 
                 i_next_non_blank = None
-                in_threeparttable = False
-                in_begin_document = False
                 for i, old_line in enumerate(orig_lines):
+                    rgxname, matchobj = self.tex_rgx.match(old_line)
 
-                    match_dclass = documentclass_regex.search(old_line)
-                    match_begin_document = begin_doc_regex.search(old_line)
-                    match_end_document = end_doc_regex.search(old_line)
-                    match_maketitle = maketitle_regex.search(old_line)
-                    match_tableofcontents = tableofcontents_regex.search(old_line)
-                    match_end_foreword = end_foreword_regex.search(old_line)
-                    match_begin_conclusion = begin_conclusion_regex.search(old_line)
-                    match_printindex = printindex_regex.search(old_line)
-                    match_fancychapter = fancychapter_regex.search(old_line)
-                    match_begin_figure = begin_figure_regex.search(old_line)
-                    match_end_figure = end_figure_regex.search(old_line)
-                    match_begin_tabular = begin_tabular_regex.search(old_line)
-                    match_end_tabular = end_tabular_regex.search(old_line)
-                    match_begin_threeparttable = begin_threeparttable_regex.search(old_line)
-                    match_end_threeparttable = end_threeparttable_regex.search(old_line)
-                    match_begin_notice = begin_notice_regex.search(old_line)
-
-                    if match_dclass:
-                        # set 'book' document class:
-                        new_line = """\\documentclass[%s]{book}\n""" % (match_dclass.group('options'), )
-                    elif match_begin_document:
-                        in_begin_document = True
-                        new_line = '\n'.join([old_line,
-                                              "",
-                                              r"\frontmatter",
-                                              r"\pagenumbering{roman}",
-                                              "",
-                                             ])
-                    elif match_end_document:
-                        in_begin_document = False
-                        new_line = old_line
-                    elif match_fancychapter:
-                        new_line = '\n'.join([
-                                              r"\usepackage[Tiny]{fncychap}",
-                                              "",
-                                             ])
-                    elif match_maketitle:
-                        new_line = '\n'.join([old_line,
-                                              r"\thispagestyle{empty}",
-                                              r"\newpage",
-                                              #r"\pagestyle{plain}",
-                                              "",
-                                             ])
-                    elif match_tableofcontents:
-                        new_line = '\n'.join([old_line,
-                                              r"\newpage",
-                                              "",
-                                             ])
-                    elif match_end_foreword:
-                        new_line = '\n'.join(["",
-                                              r"\mainmatter",
-                                              r"\pagestyle{fancy}",
-                                              r"\pagenumbering{arabic}",
-                                              r"\setcounter{page}{1}",
-                                              "",
-                                             ])
-                    elif match_begin_conclusion:
-                        # BEFORE:
-                        # \resetcurrentobjects
-                        # \part*{Conclusion}
-                        # \addcontentsline{toc}{part}{Conclusion}
-
-                        # AFTER
-                        # \backmatter
-                        # \resetcurrentobjects
-                        # \part*{Conclusion}
-                        # \addcontentsline{toc}{part}{Conclusion}
-                        # \pagestyle{plain}
-                        part = match_begin_conclusion.group('after')
-                        new_line = '\n'.join(["",
-                                              r"\backmatter",
-                                              r"\pagestyle{plain}",
-                                              part
-                                             ])
-                    elif match_printindex:
-                        new_line = '\n'.join(["",
-                                              r"\chapter*{\indexname}",
-                                              "",
-                                              r"\begin{multicols}{2}",
-                                              r"\printindex",
-                                              r"\end{multicols}",
-                                              "",
-                                             ])
-                    elif match_begin_figure:
-                        new_line = '\n'.join(["",
-                                              r"\begin{minipage}[b]{\linewidth}",
-                                              old_line,
-                                             ])
-                    elif match_end_figure:
-                        new_line = '\n'.join([old_line,
-                                              r"\end{minipage}",
-                                              "",
-                                             ])
-                    elif match_begin_tabular:
-                        if in_begin_document:
-                            coldef = match_begin_tabular.group('coldef').replace('|', '')
-                            table_line = "%s%s%s\n" % (match_begin_tabular.group('envname'),
-                                                       match_begin_tabular.group('opt'),
-                                                       coldef,
-                                                      )
-                            if in_threeparttable:
-                                new_line = table_line
+                    if rgxname:
+                        if rgxname == 'documentclass':
+                            # set 'book' document class:
+                            new_line = """\\documentclass[%s]{book}\n""" % (matchobj.group('opt'), )
+                        elif rgxname == 'begin_document':
+                            self.state.in_begin_document = True
+                            new_line = '\n'.join([old_line,
+                                                  "",
+                                                  r"\frontmatter",
+                                                  r"\pagenumbering{roman}",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'end_document':
+                            self.state.in_begin_document = False
+                            new_line = old_line
+                        elif rgxname == 'fancychapter':
+                            new_line = '\n'.join([
+                                                  r"\usepackage[Tiny]{fncychap}",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'maketitle':
+                            new_line = '\n'.join([old_line,
+                                                  r"\thispagestyle{empty}",
+                                                  r"\newpage",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'tableofcontents':
+                            new_line = '\n'.join([old_line,
+                                                  r"\newpage",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'end_foreword':
+                            new_line = '\n'.join(["",
+                                                  r"\mainmatter",
+                                                  r"\pagestyle{fancy}",
+                                                  r"\pagenumbering{arabic}",
+                                                  r"\setcounter{page}{1}",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'begin_conclusion':
+                            part = matchobj.group('after')
+                            new_line = '\n'.join(["",
+                                                  r"\backmatter",
+                                                  r"\pagestyle{plain}",
+                                                  part
+                                                 ])
+                        elif rgxname == 'printindex':
+                            new_line = '\n'.join(["",
+                                                  r"\chapter*{\indexname}",
+                                                  "",
+                                                  r"\begin{multicols}{2}",
+                                                  r"\printindex",
+                                                  r"\end{multicols}",
+                                                  "",
+                                                 ])
+                        elif rgxname == 'begin_figure':
+                            if self.state.in_begin_notice:
+                                new_line = '\n'.join([r"\begin{staticfigure}",
+                                                      ""
+                                                     ])
                             else:
-                                new_line = '\n'.join([r"\begin{center}",
-                                                      table_line,
+                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                                      r"\begin{minipage}[htbp]{\linewidth}",
                                                       "",
                                                      ])
-                    elif match_end_tabular:
-                        if in_begin_document and not in_threeparttable:
-                            new_line = '\n'.join([old_line.strip('\n\r'),
+                        elif rgxname == 'end_figure':
+                            if self.state.in_begin_notice:
+                                # in a notice env, figure -> staticfigure
+                                new_line = '\n'.join([matchobj.group('before'),
+                                                      r"\end{staticfigure}",
+                                                      matchobj.group('after'),
+                                                      ""
+                                                     ])
+                            else:
+                                new_line = '\n'.join([matchobj.group('before'),
+                                                      r"\end{minipage}",
+                                                      matchobj.group('envname'),
+                                                      matchobj.group('after'),
+                                                      ""
+                                                     ])
+                        elif rgxname == 'begin_tabular':
+                            if self.state.in_begin_document:
+                                coldef = matchobj.group('coldef').replace('|', '')
+                                table_line = "%s%s%s\n" % (matchobj.group('envname'),
+                                                           matchobj.group('opt'),
+                                                           coldef,
+                                                          )
+                                if self.state.in_threeparttable:
+                                    new_line = table_line
+                                else:
+                                    new_line = '\n'.join([r"\begin{center}",
+                                                          table_line,
+                                                          "",
+                                                         ])
+                        elif rgxname == 'end_tabular':
+                            if self.state.in_begin_document and not self.state.in_threeparttable:
+                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                                      r"\end{center}",
+                                                      "",
+                                                     ])
+                            else:
+                                new_line = old_line
+                        elif rgxname == 'begin_threeparttable':
+                            self.state.in_threeparttable = True
+                            new_line = '\n'.join([r"\begin{center}",
+                                                  old_line,
+                                                  "",
+                                                 ])
+                        elif rgxname == 'end_threeparttable':
+                            self.state.in_threeparttable = False
+                            old_line = old_line.strip('\n\r')
+                            new_line = '\n'.join([old_line,
                                                   r"\end{center}",
                                                   "",
                                                  ])
-                        else:
+                        elif rgxname == 'begin_notice':
+                            self.state.in_begin_notice = True
+                            i_next_non_blank = self._get_next_non_blank_line_index(i, orig_lines)
                             new_line = old_line
-                    elif match_begin_threeparttable:
-                        in_threeparttable = True
-                        new_line = '\n'.join([r"\begin{center}",
-                                              old_line,
-                                              "",
-                                             ])
-                    elif match_end_threeparttable:
-                        in_threeparttable = False
-                        old_line = old_line.strip('\n\r')
-                        new_line = '\n'.join([old_line,
-                                              r"\end{center}",
-                                              "",
-                                             ])
-                    elif match_begin_notice:
-                        i_next_non_blank = self._get_next_non_blank_line_index(i, orig_lines)
-                        new_line = old_line
+                        elif rgxname == 'end_notice':
+                            self.state.in_begin_notice = False
+                            new_line = old_line
+                        else:
+                            raise UnhandledMatchException("Matching object '%s' was not handled (matching line: %s)." % (rgxname, i))
+
                     elif i == i_next_non_blank:
                         new_line = '\n'.join([self.add_tex_command('strong', old_line),
-                                              ""])
+                                              "",
+                                             ])
                         i_next_non_blank = None # job done -> reset i_next_non_blank
                     else:
                         new_line = old_line
                     new_lines.append(new_line)
 
+                new_lines.append("\n".join(["%% ", "%% vi: fdm=manual", "%% "]))
                 tex_file.writelines(new_lines)
             finally:
                 tex_file.close()
 
 
 class CommandLineException(Exception):
+    pass
+
+
+class UnhandledMatchException(Exception):
     pass
 
 

@@ -38,15 +38,19 @@ The roles define a hierarchical structure in tree. They represent the different 
 
 **Example:**
 
-    * CEO
-          + Technical manager
-                - Chief of projects
-                      • Developers
-                      • Testers 
+CEO
 
-          + Commercial manager
-                - Salesmen
-                - ... 
+  + Technical manager
+
+    - Chief of projects
+
+      - Developers
+      - Testers
+
+  + Commercial manager
+
+      - Salesmen
+      - ...
 
 If we want to validate the test of a program (=role Testers), it may be done by a user having one of the following roles: Testers, Chief of the project, Technical manager, CEO.
 

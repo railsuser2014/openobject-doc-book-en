@@ -136,7 +136,7 @@ tiny_latex_include = r"""
 \newenvironment{NoticeBox}{%
   \def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{NoticeBoxBg}}%
   \MakeFramed {\setlength{\boxwidth}{\textwidth}
-  \addtolength{\boxwidth}{-2\FrameSep}
+  \addtolength{\boxwidth}{-8\FrameSep}
   \addtolength{\boxwidth}{-2\FrameRule}
   \setlength{\hsize}{\boxwidth} \FrameRestore}}%
 {\endMakeFramed}
@@ -151,7 +151,7 @@ tiny_latex_include = r"""
 
   \setlength\tabcolsep{1mm}
   \renewcommand{\arraystretch}{0.3}
-  \begin{tabular}[t]{cp{138mm}}
+  \begin{tabular}[t]{cp{115mm}}
     \ifx\py@noticetype\py@noticetypetip
       % TIPS:
       \hspace{-5mm}
@@ -159,8 +159,9 @@ tiny_latex_include = r"""
 
     \else
       % NOTES:
-      \hspace{-3mm}
-      \scalebox{0.8}{\includegraphics[trim=1mm 1mm 1mm 1mm]{note.png}}
+      \hspace{-2mm}
+      \scalebox{0.8}{\includegraphics{note.png}}
+      \hspace{1mm}
     \fi
     &
     \ifx\py@noticetype\py@noticetypetip
@@ -178,15 +179,21 @@ tiny_latex_include = r"""
   \end{samepage}
 }
 \makeatother
-
-\renewenvironment{figure}[6]{
-  \par
-  \addvspace{5mm}
-  \begin{staticfigure}
-}{
-  \end{staticfigure}
-  \addvspace{10mm}
-}
+% float variables:
+\renewcommand{\topfraction}{0.9} % max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8} % max fraction of floats at bottom
+%   Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}     % 2 may work better
+\setcounter{dbltopnumber}{2}    % for 2-column pages
+\renewcommand{\dbltopfraction}{0.9} % fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07} % allow minimal text w. figs
+%   Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7} % require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.7} % require fuller float pages
+% END of float variables.
 """
 
 latex_elements = {

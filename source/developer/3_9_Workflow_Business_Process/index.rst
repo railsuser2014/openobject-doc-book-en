@@ -309,14 +309,19 @@ Each user can have one or several roles. Roles are defined in a tree of roles, p
 
 Example:
 
-#. CEO
-          * Technical manager
-                - Lead developper
-                      + Developpers
-                      + Testers
-          * Sales manager
-                - Commercials
-                - ...
+CEO
+
+  * Technical manager
+
+    - Lead developper
+
+      + Developpers
+      + Testers
+
+  * Sales manager
+
+    - Commercials
+    - ...
 
 Let's suppose we handle our own bug database and that the action of marking a bug as valid needs the Testers role. In the example tree above, marking a bug as valid could be done by all the users having the following roles: Testers, Lead developper, Technical manager, CEO.
 
