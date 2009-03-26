@@ -94,7 +94,7 @@ maintain consistency.
 	and is authorized by the management to carry out specific tasks for people.
 
 .. index::
-   single: access rights; menus
+   single: access; menu
 
 Access rights for menus
 -----------------------
@@ -165,7 +165,7 @@ this menu item in their main menu list.
 	users who are members of the admin group.
 
 .. index::
-   single: access rights; objects
+   single: access; objects
 
 Access Rights to Objects
 ------------------------
@@ -224,6 +224,9 @@ access to an object for all users you could create a rule:
 
 You can then create additional rules on the same object to give specific rights to certain groups.
 
+.. index:: 
+   single: modification history
+   
 Modification history
 --------------------
 
@@ -240,6 +243,15 @@ only, not when it's editable) to display a dialog box showing this information, 
 figure :ref:`fig-sflow`. It can help you identify who to contact if there are any problems with the 
 data in the records.
 
+.. index:: 
+   single: module; audittrail
+   
+.. tip:: Audit Trail
+
+   Open ERP has an Audit Trail module :mod:`audittrail` which can be used to track any or 
+   all of the changes to one or more objects. It should be used with care, because it
+   can generate huge amounts of data in the live database, but can be an invaluable 
+   tool.
 
 .. Copyright © Open Object Press. All rights reserved.
 

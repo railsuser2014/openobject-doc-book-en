@@ -1,4 +1,6 @@
-
+.. index::
+   single: process integration
+   
 The integration of processes into the management system
 =======================================================
 
@@ -29,6 +31,9 @@ two processes:
 * A customer order quotation,
 
 * The engagement of a new employee.
+
+.. index::
+   single: process; customer order
 
 Following a customer sales order
 ----------------------------------
@@ -124,6 +129,9 @@ Create a draft invoice by starting the next step on your own.
 It should be clear that this system of user processes gives you great
 visibility of the company's overall functions. Each process individually
 reflects the specific situation of the company and its documents.
+
+.. index::
+   single: process; new employee
 
 New employee induction
 -----------------------

@@ -82,7 +82,7 @@ enabling the salesperson to choose the best mode for fulfilling a particular ord
 sales order parameters as needed.
 
 The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product 
-managed Make to Order and another
+managed Make to Order and another 
 managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Forecast` report,
 available from the product form.
 
@@ -160,6 +160,10 @@ The table below shows all possible cases for the figure :ref:`fig-stflow`.
    ================== ===================== =====================
 
 You'll see the automated management processes for procurement in detail further on in this chapter.
+
+.. index::
+   single: unit of measure
+   single: UoM
 
 Units of Measure
 ----------------

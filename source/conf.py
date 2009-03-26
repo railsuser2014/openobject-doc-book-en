@@ -198,7 +198,7 @@ latex_documents = [
    #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
    ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
    ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
-   ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
+   #('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
    ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
    #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
    ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),

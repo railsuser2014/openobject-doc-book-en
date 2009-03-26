@@ -1,7 +1,6 @@
 
 .. index::
    single: deployment
-..
 
 Deployment
 ==========
@@ -81,6 +80,9 @@ Here are the main advantages of an Open ERP SaaS solution:
 
 So this server is recommended for small companies with fewer than about fifteen employees.
 
+.. index:: 
+   single: hosting
+   
 Hosting by a supplier
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -134,6 +136,9 @@ Calling such suppliers can be a good solution if you are willing to entrust all 
 specifications for the functioning of Open ERP to them, especially if you need to use customized or
 extension modules that aren't in the stable version released by Tiny.
 
+.. index:: 
+   single: internal installation
+   
 Internal Installation
 ^^^^^^^^^^^^^^^^^^^^^
 

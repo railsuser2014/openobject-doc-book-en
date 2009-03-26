@@ -1,6 +1,5 @@
 .. index::
    pair: configuring; module
-..
 
 Creating a Configuration Module
 ===============================
