@@ -151,7 +151,7 @@ tiny_latex_include = r"""
 
   \setlength\tabcolsep{1mm}
   \renewcommand{\arraystretch}{0.3}
-  \begin{tabular}[t]{cp{120mm}}
+  \begin{tabular}[t]{cp{115mm}}
     \ifx\py@noticetype\py@noticetypetip
       % TIPS:
       \hspace{-5mm}
@@ -159,8 +159,9 @@ tiny_latex_include = r"""
 
     \else
       % NOTES:
-      \hspace{-3mm}
-      \scalebox{0.8}{\includegraphics[trim=1mm 1mm 1mm 1mm]{note.png}}
+      \hspace{-2mm}
+      \scalebox{0.8}{\includegraphics{note.png}}
+      \hspace{1mm}
     \fi
     &
     \ifx\py@noticetype\py@noticetypetip
@@ -178,7 +179,6 @@ tiny_latex_include = r"""
   \end{samepage}
 }
 \makeatother
-
 % float variables:
 \renewcommand{\topfraction}{0.9} % max fraction of floats at top
 \renewcommand{\bottomfraction}{0.8} % max fraction of floats at bottom
