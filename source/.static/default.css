@@ -4,7 +4,7 @@
 
 div.related-tiny li.right a.bottom-nav-links {
   font-size: 75%;
-  float:right;
+  /*float:right;*/
   margin-right:5px;
   position:relative;
   top:-50px;
