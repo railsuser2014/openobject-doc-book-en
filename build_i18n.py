@@ -27,7 +27,7 @@ IGNORED_RST_DIRECTIVES = [ # XXX not used for the moment
 ]
 I18N_PREFIX = '.. i18n:'
 I18N_REGEX = r'^\.\. i18n: '
-PICKLE_FILE = 'i18n.pickle'
+PICKLE_FILENAME = 'i18n.pickle'
 
 has_directive_regex = re.compile(r"""\.\.\s+(?P<directive>\w+)::(?P<content>.*)""")
 is_list_item_regex = re.compile(r"""^\s*(?P<list_item_char>#\.|\*|-|\d+\.){1,1}\s+(?P<content>.*)""")
@@ -138,19 +138,14 @@ class FileContent(object):
 
     def merge_sections(self, sections):
         """Merge contiguous sections when necessary (eg.: multiline directives for example)"""
-        #pp(sections)
         for i, section in enumerate(sections):
             next_section = self._get_next_non_empty_section(sections, i)
 
             if section and next_section:
-                #print section
-                #print next_section
-                #print
                 if section.has_directive():
                     section.merge(next_section)
                 elif section.is_list_item() and next_section.is_list_item():
                     section.merge(next_section)
-        #pp(sections)
         return sections
 
     def _get_next_non_empty_section(self, sections, index):
@@ -174,7 +169,6 @@ class TemplateContent(FileContent):
 
     def _get_content(self):
         sections = self.build_sections(self.lines)
-        print len(sections)
         sections = self.merge_sections(sections)
         sections = self.add_i18n_sections(sections)
 
@@ -190,25 +184,16 @@ class TranslatedContent(FileContent):
     def __init__(self, lines):
         super(TranslatedContent, self).__init__(lines)
 
-    def _save_pickled_dict(self, dico):
-        print dico
-
-    def _get_pickled_dict(self):
-        dico = {}
-        return dico
-
     def process_i18n_sections(self, sections):
-        new_sections = []
-        dico = {}
+        processed_sections = []
         for i, section in enumerate(sections):
             if section and section.i18n:
                 next_section = self._get_next_non_empty_section(sections, i)
                 if next_section is not None:
-                    new_sections.append(next_section)
-                    dico[section.raw_content] = next_section.content
+                    processed_sections.append(next_section)
+                    ExistingTranslationManager.memory[section.raw_content] = next_section.content
 
-        self._save_pickled_dict(dico)
-        return new_sections
+        return processed_sections
 
     def _get_content(self):
         sections = self.build_sections(self.lines)
@@ -219,20 +204,55 @@ class TranslatedContent(FileContent):
         for section in sections:
             if section:
                 content += '\n' + section.content + '\n'
+
         return content
 
 
+class ExistingTranslationManager(object):
+    pickle_filename = PICKLE_FILENAME
+    memory = {}
+
+    @classmethod
+    def _save_pickled_dict(cls):
+        cls.pickle_file = open(cls.pickle_filename, 'w')
+        pickle.dump(cls.memory, cls.pickle_file)
+
+    @classmethod
+    def _get_pickled_dict():
+        if os.path.exists(cls, pickle_filename):
+            cls.pickle_file = open(cls.pickle_filename, 'r')
+            cls.memory = pickle.load(cls.pickle_file)
+        else:
+            cls.memory = {}
+        return cls.memory
+
+
 class SectionManager(object):
-    def __init__(self, cmd, lang, src_dir, dest_dir, options=None):
+    def __init__(self, cmd, lang, options=None):
         self.cmd = cmd
         self.lang = lang
-        self.src_dir = src_dir + os.sep
-        self.dest_dir = os.path.join(conf['build_default_dir'], dest_dir, self.lang, 'source') + os.sep
+        self.src_dir, self.dst_dir = self._get_src_and_dst_dir()
         self.options = options
 
         self._check_src_dir()
         self.source_content = self.get_structure()
-        self._build_dest_structure()
+        self._build_dst_structure()
+        self.translation_memory = {}
+
+    def _get_src_and_dst_dir(self):
+        if self.cmd == 'create-templates':
+            src_dir = os.path.join('.', 'source')
+            dst_dir = os.path.join(conf['build_default_dir'], 'source', self.lang) + os.sep
+        elif self.cmd == 'copy-translated':
+            src_dir = os.path.join(conf['build_default_dir'], 'source', self.lang) + os.sep
+            dst_dir = os.path.join(conf['build_default_dir'], 'build', self.lang) + os.sep
+        return (src_dir, dst_dir)
+
+    def _get_dst_dir(self):
+        if self.cmd == 'create-templates':
+            pass
+        elif self.cmd == 'copy-translated':
+            pass
 
     def run(self):
         # checking that files are new to avoid overwriting a big work:
@@ -257,16 +277,24 @@ class SectionManager(object):
             for k, v in self.source_content.items():
                 self.copy_translated(k, v)
 
+        ExistingTranslationManager._save_pickled_dict()
+
     def _check_src_dir(self):
         """Check that source directory is a valid directory."""
         if not os.path.isdir(self.src_dir):
-            raise OSError("Source directory does not exists")
+            if self.cmd == 'copy-translated':
+                msg = "Source directory '%s' does not exists."
+                msg += " You should probably create the translation templates before trying to copy them."
+            else:
+                msg = "Source directory '%s' does not exists."
+            msg = msg % (self.src_dir, )
+            raise OSError(msg)
 
-    def _build_dest_structure(self):
+    def _build_dst_structure(self):
         for d in self.source_content.keys():
-            dest_filepath = re.sub(self.src_dir, self.dest_dir, d)
-            if not os.path.exists(dest_filepath):
-                os.makedirs(dest_filepath)
+            dst_filepath = re.sub(self.src_dir, self.dst_dir, d)
+            if not os.path.exists(dst_filepath):
+                os.makedirs(dst_filepath)
 
     def get_structure(self):
         """Get the source directory structure"""
@@ -279,57 +307,58 @@ class SectionManager(object):
             os.path.walk(directory, _visit_func, None)
         return content
 
-    def create_template(self, src_filepath, dest_filepath):
+    def create_template(self, src_filepath, dst_filepath):
         src_file = open(src_filepath, 'r')
         src_lines = src_file.readlines()
         src_file.close()
-        dest_file = open(dest_filepath, 'w')
+        dst_file = open(dst_filepath, 'w')
         tmpl_content = TemplateContent(src_lines).content
-        dest_file.write(tmpl_content)
-        dest_file.close()
+        dst_file.write(tmpl_content)
+        dst_file.close()
 
-    def create_translated(self, src_filepath, dest_filepath):
+    def create_translated(self, src_filepath, dst_filepath):
         src_file = open(src_filepath, 'r')
         src_lines = src_file.readlines()
         src_file.close()
-        dest_file = open(dest_filepath, 'w')
+        dst_file = open(dst_filepath, 'w')
         tmpl_content = TranslatedContent(src_lines).content
-        dest_file.write(tmpl_content)
-        dest_file.close()
+
+        dst_file.write(tmpl_content)
+        dst_file.close()
 
     def _check_files(self, d, files):
-        def _set_dest_filepath(filepath):
-            dest_filepath = re.sub(self.src_dir, self.dest_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
-            return dest_filepath
+        def _set_dst_filepath(filepath):
+            dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
+            return dst_filepath
 
         existing, new = 0, 0
         for filename in files:
             filepath = os.path.join(d, filename)
-            dest_filepath = _set_dest_filepath(filepath)
+            dst_filepath = _set_dst_filepath(filepath)
             new += 1
-            if os.path.exists(dest_filepath):
+            if os.path.exists(dst_filepath):
                 existing += 1
         return existing, new
 
     def create_templates(self, d, files):
-        def _set_dest_filepath(filepath):
-            dest_filepath = re.sub(self.src_dir, self.dest_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
-            return dest_filepath
+        def _set_dst_filepath(filepath):
+            dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
+            return dst_filepath
 
         for filename in files:
             filepath = os.path.join(d, filename)
-            dest_filepath = _set_dest_filepath(filepath)
-            self.create_template(filepath, dest_filepath)
+            dst_filepath = _set_dst_filepath(filepath)
+            self.create_template(filepath, dst_filepath)
 
     def copy_translated(self, d, files):
-        def _set_dest_filepath(filepath):
-            dest_filepath = re.sub(self.src_dir, self.dest_dir, filepath).replace('-'+self.lang, '')
-            return dest_filepath
+        def _set_dst_filepath(filepath):
+            dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('-'+self.lang, '')
+            return dst_filepath
 
         for filename in files:
             filepath = os.path.join(d, filename)
-            dest_filepath = _set_dest_filepath(filepath)
-            self.create_translated(filepath, dest_filepath)
+            dst_filepath = _set_dst_filepath(filepath)
+            self.create_translated(filepath, dst_filepath)
 
 
 class I18nBuilderArgumentException(Exception):
@@ -345,15 +374,15 @@ class ArgDispatcher(object):
 
     def _check_args(self):
         args_len = len(self.args)
-        if args_len != 4:
-            raise I18nBuilderArgumentException("Incorrect number of arguments. Expected 4, got %d" % (args_len, ))
+        if args_len != 2:
+            raise I18nBuilderArgumentException("Incorrect number of arguments. Expected 2, got %d" % (args_len, ))
         cmd = self.args[0]
         if cmd not in self.valid_commands:
             msg = "Command '%s' is not recognized. Valid commands are: %s" % (cmd, ', '.join(self.valid_commands))
             raise I18nBuilderArgumentException(msg)
 
     def dispatch(self):
-        src_mngr = SectionManager(self.args[0], self.args[1], self.args[2], self.args[3], self.options)
+        src_mngr = SectionManager(self.args[0], self.args[1], self.options)
         src_mngr.run()
 
 
