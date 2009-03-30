@@ -10,11 +10,15 @@ import optparse
 __version__ = '0.1'
 USAGE = """%prog [options] <latex build directory>"""
 
+CRLF = '\n\r'
+
 rgxs = {
+    'begin_chapter': r"""\\chapter""",
     'begin_conclusion': r"""(?P<directive>SPHINXBEGINCONCLUSIONDIRECTIVE)(?P<after>.*)""",
     'begin_document': r"""^\\begin\{document\}""",
     'begin_figure': r"""(?P<envname>\\begin\{figure\})(?P<opt>.*)""",
     'begin_notice': r"""\\begin\{notice\}""",
+    'begin_quote': r"""\\begin\{quote\}""",
     'begin_tabular': r"""(?P<envname>\\begin\{tabular.*?\})(?P<opt>\{.*?\})(?P<coldef>\{.*?\})""",
     'begin_threeparttable': r"""(?P<envname>\\begin\{threeparttable.*?\})""",
     'documentclass': r"""^\\documentclass\[(?P<opt>[\w,]+)\]\{(?P<class>\w+)\}""",
@@ -22,13 +26,17 @@ rgxs = {
     'end_figure': r"""(?P<before>.*)(?P<envname>\\end\{figure\})(?P<after>)""",
     'end_foreword': r"""(?P<directive>SPHINXENDFOREWORDDIRECTIVE)(?P<after>.*)""",
     'end_notice': r"""\\end\{notice\}""",
+    'end_quote': r"""\\end\{quote\}""",
     'end_tabular': r"""(?P<envname>\\end\{tabular.*?\})""",
     'end_threeparttable': r"""(?P<envname>\\end\{threeparttable.*?\})""",
     'fancychapter': r"""^\\usepackage\[Bjarne\]\{fncychap\}""",
     'maketitle': r"""^\\maketitle""",
     'printindex': r"""^\\printindex""",
     'tableofcontents': r"""^\\tableofcontents""",
+    'front_or_back_matter_part': r"""\\part\*""",
 }
+
+begin_chapter_or_section_regex = re.compile(r"""\\chapter\*|\\section\*""")
 
 
 class LatexRgx(object):
@@ -41,9 +49,9 @@ class LatexRgx(object):
         for k, v in self.regexes.items():
             self.compiled[k] = re.compile(v)
 
-    def match(self, s):
+    def match(self, txt):
         for rgxname, rgxobj in self.compiled.items():
-            matchobj = rgxobj.search(s)
+            matchobj = rgxobj.search(txt)
             if matchobj:
                 return (rgxname, matchobj)
         return (None, None)
@@ -54,6 +62,10 @@ class LatexState(object):
         self.in_threeparttable = False
         self.in_begin_document = False
         self.in_begin_notice = False
+        self.in_chapter_intro_quote = False
+        self.in_frontmatter = False
+        self.in_mainmatter = False
+        self.in_backmatter = False
 
 
 class LatexBook(object):
@@ -84,11 +96,25 @@ class LatexBook(object):
         return content
 
     def _get_next_non_blank_line_index(self, where, lines):
-        i = where + 1
+        i = where
         while True:
+            i += 1
             next_line = lines[i]
             if next_line.strip():
                 return i
+            elif i > len(lines):
+                return None
+        return None
+
+    def _get_next_front_or_back_matter_part_end_line_index(self, where, lines):
+        i = where
+        while True:
+            i += 1
+            next_line = lines[i]
+            if begin_chapter_or_section_regex.search(next_line):
+                return i
+            elif i > len(lines):
+                return None
         return None
 
     def add_tex_command(self, cmd, s):
@@ -110,6 +136,8 @@ class LatexBook(object):
                 new_lines = []
 
                 i_next_non_blank = None
+                i_chapter = None
+                i_front_or_back_matter_part_end = None
                 for i, old_line in enumerate(orig_lines):
                     rgxname, matchobj = self.tex_rgx.match(old_line)
 
@@ -125,6 +153,7 @@ class LatexBook(object):
                                                   r"\pagenumbering{roman}",
                                                   "",
                                                  ])
+                            self.state.in_frontmatter = True
                         elif rgxname == 'end_document':
                             self.state.in_begin_document = False
                             new_line = old_line
@@ -152,6 +181,8 @@ class LatexBook(object):
                                                   r"\setcounter{page}{1}",
                                                   "",
                                                  ])
+                            self.state.in_frontmatter = False
+                            self.state.in_mainmatter = True
                         elif rgxname == 'begin_conclusion':
                             part = matchobj.group('after')
                             new_line = '\n'.join(["",
@@ -159,6 +190,9 @@ class LatexBook(object):
                                                   r"\pagestyle{plain}",
                                                   part
                                                  ])
+                            self.state.in_frontmatter = False
+                            self.state.in_mainmatter = False
+                            self.state.in_backmatter = True
                         elif rgxname == 'printindex':
                             new_line = '\n'.join(["",
                                                   r"\chapter*{\indexname}",
@@ -174,7 +208,7 @@ class LatexBook(object):
                                                       ""
                                                      ])
                             else:
-                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                new_line = '\n'.join([old_line.strip(CRLF),
                                                       r"\begin{minipage}[htbp]{\linewidth}",
                                                       "",
                                                      ])
@@ -209,7 +243,7 @@ class LatexBook(object):
                                                          ])
                         elif rgxname == 'end_tabular':
                             if self.state.in_begin_document and not self.state.in_threeparttable:
-                                new_line = '\n'.join([old_line.strip('\n\r'),
+                                new_line = '\n'.join([old_line.strip(CRLF),
                                                       r"\end{center}",
                                                       "",
                                                      ])
@@ -223,7 +257,7 @@ class LatexBook(object):
                                                  ])
                         elif rgxname == 'end_threeparttable':
                             self.state.in_threeparttable = False
-                            old_line = old_line.strip('\n\r')
+                            old_line = old_line.strip(CRLF)
                             new_line = '\n'.join([old_line,
                                                   r"\end{center}",
                                                   "",
@@ -235,6 +269,39 @@ class LatexBook(object):
                         elif rgxname == 'end_notice':
                             self.state.in_begin_notice = False
                             new_line = old_line
+                        elif rgxname == 'begin_chapter':
+                            # The first quote after a chapter is the chapter intro.
+                            # So it should begin and end with more space.
+                            i_chapter = i
+                            new_line = old_line
+                        elif rgxname == 'begin_quote':
+                            if i_chapter and (1 <= (i - i_chapter) < 3):
+                               self.state.in_chapter_intro_quote = True
+                               new_line = '\n'.join(["",
+                                                     old_line.strip(CRLF),
+                                                     r"\vspace{6mm}",
+                                                     "",
+                                                    ])
+                            else:
+                                new_line = old_line
+                        elif rgxname == 'end_quote':
+                            if self.state.in_chapter_intro_quote:
+                                new_line = '\n'.join([old_line.strip(CRLF),
+                                                      r"\vspace{5mm}",
+                                                      "",
+                                                     ])
+                            else:
+                                new_line = old_line
+                            self.state.in_chapter_intro_quote = False # job done -> reset in_chapter_intro_quote
+                        elif rgxname == 'front_or_back_matter_part':
+                            if self.state.in_frontmatter or self.state.in_backmatter:
+                                new_line = '\n'.join([old_line.strip(CRLF),
+                                                      r"\vspace{8mm}",
+                                                      "",
+                                                     ])
+                                i_front_or_back_matter_part_end = self._get_next_front_or_back_matter_part_end_line_index(i, orig_lines)
+                            else:
+                                new_line = old_line
                         else:
                             raise UnhandledMatchException("Matching object '%s' was not handled (matching line: %s)." % (rgxname, i))
 
@@ -243,6 +310,13 @@ class LatexBook(object):
                                               "",
                                              ])
                         i_next_non_blank = None # job done -> reset i_next_non_blank
+                    elif i == i_front_or_back_matter_part_end:
+                        new_line = '\n'.join([r"\vspace{5mm}",
+                                              old_line.strip(CRLF),
+                                              "",
+                                             ])
+                        i_next_non_blank = None # job done -> reset i_next_non_blank
+                        i_front_or_back_matter_part_end = None # job done -> reset i_front_or_back_matter_part_end
                     else:
                         new_line = old_line
                     new_lines.append(new_line)
