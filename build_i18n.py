@@ -42,6 +42,8 @@ def propertx(fct):
 
 
 class I18nSection(object):
+
+    _slice_int = 12
     def __init__(self, lines, i18n=False):
         self.lines = lines
         self._raw_content = ''
@@ -99,13 +101,14 @@ class I18nSection(object):
             len(self.lines),
             self.has_directive(),
             self.is_list_item(),
-            self.content[:12],
+            self.content[:self._slice_int],
         )
 
 
 class FileContent(object):
-    def __init__(self, lines):
+    def __init__(self, lines, lang):
         self.lines = lines
+        self.lang = lang
         self._content = ''
 
     def _get_content(self):
@@ -159,8 +162,8 @@ class FileContent(object):
 
 
 class TemplateContent(FileContent):
-    def __init__(self, lines):
-        super(TemplateContent, self).__init__(lines)
+    def __init__(self, lines, lang):
+        super(TemplateContent, self).__init__(lines, lang)
 
     def add_i18n_sections(self, sections):
         new_sections = []
@@ -177,28 +180,29 @@ class TemplateContent(FileContent):
 
         # build file content:
         content = ''
-        for section in sections:
+        for i, section in enumerate(sections):
             if section:
-                content += '\n' + section.content + '\n'
+                translated_content = ExistingTranslationManager.remember(section.content, self.lang)
+                content += '\n' + translated_content + '\n'
         return content
 
 
 class TranslatedContent(FileContent):
-    def __init__(self, lines):
-        super(TranslatedContent, self).__init__(lines)
+    def __init__(self, lines, lang):
+        super(TranslatedContent, self).__init__(lines, lang)
 
     def process_i18n_sections(self, sections):
         processed_sections = []
         for i, section in enumerate(sections):
             if section and not section.i18n:
+                previous_section = sections[i-1]
                 processed_sections.append(section)
-                ExistingTranslationManager.memory[section.raw_content] = section.content
+                ExistingTranslationManager.memorize(previous_section.raw_content, section.content, self.lang)
 
         return processed_sections
 
     def _get_content(self):
         sections = self.build_sections(self.lines)
-        #import pydb; pydb.debugger()
         sections = self.process_i18n_sections(sections)
 
         # build file content:
@@ -208,25 +212,6 @@ class TranslatedContent(FileContent):
                 content += '\n' + section.content + '\n'
 
         return content
-
-
-class ExistingTranslationManager(object):
-    pickle_filename = PICKLE_FILENAME
-    memory = {}
-
-    @classmethod
-    def _save_pickled_dict(cls):
-        cls.pickle_file = open(cls.pickle_filename, 'w')
-        pickle.dump(cls.memory, cls.pickle_file)
-
-    @classmethod
-    def _get_pickled_dict():
-        if os.path.exists(cls, pickle_filename):
-            cls.pickle_file = open(cls.pickle_filename, 'r')
-            cls.memory = pickle.load(cls.pickle_file)
-        else:
-            cls.memory = {}
-        return cls.memory
 
 
 class SectionManager(object):
@@ -267,13 +252,13 @@ class SectionManager(object):
                     sys.exit("Doing nothing.")
 
         if self.cmd == 'create-templates':
+            ExistingTranslationManager.create_memory()
             for k, v in self.source_content.items():
                 self.create_templates(k, v)
         elif self.cmd == 'copy-translated':
             for k, v in self.source_content.items():
                 self.copy_translated(k, v)
-
-        ExistingTranslationManager._save_pickled_dict()
+            ExistingTranslationManager.save_memory()
 
     def _check_src_dir(self):
         """Check that source directory is a valid directory."""
@@ -308,7 +293,7 @@ class SectionManager(object):
         src_lines = src_file.readlines()
         src_file.close()
         dst_file = open(dst_filepath, 'w')
-        tmpl_content = TemplateContent(src_lines).content
+        tmpl_content = TemplateContent(src_lines, self.lang).content
         dst_file.write(tmpl_content)
         dst_file.close()
 
@@ -317,44 +302,86 @@ class SectionManager(object):
         src_lines = src_file.readlines()
         src_file.close()
         dst_file = open(dst_filepath, 'w')
-        tmpl_content = TranslatedContent(src_lines).content
+        tmpl_content = TranslatedContent(src_lines, self.lang).content
 
         dst_file.write(tmpl_content)
         dst_file.close()
 
-    def _check_files(self, d, files):
+    def _check_files(self, directory, files):
         def _set_dst_filepath(filepath):
             dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
             return dst_filepath
 
         existing, new = 0, 0
         for filename in files:
-            filepath = os.path.join(d, filename)
+            filepath = os.path.join(directory, filename)
             dst_filepath = _set_dst_filepath(filepath)
             new += 1
             if os.path.exists(dst_filepath):
                 existing += 1
         return existing, new
 
-    def create_templates(self, d, files):
+    def create_templates(self, directory, files):
         def _set_dst_filepath(filepath):
             dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('.'+conf['ext'], '') + '.' + conf['ext']
             return dst_filepath
 
         for filename in files:
-            filepath = os.path.join(d, filename)
+            filepath = os.path.join(directory, filename)
             dst_filepath = _set_dst_filepath(filepath)
             self.create_template(filepath, dst_filepath)
 
-    def copy_translated(self, d, files):
+    def copy_translated(self, directory, files):
         def _set_dst_filepath(filepath):
             dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('-'+self.lang, '')
             return dst_filepath
 
         for filename in files:
-            filepath = os.path.join(d, filename)
+            filepath = os.path.join(directory, filename)
             dst_filepath = _set_dst_filepath(filepath)
             self.create_translated(filepath, dst_filepath)
+
+
+class ExistingTranslationManager(object):
+    pickle_filename = PICKLE_FILENAME
+    memory = {}
+
+    @classmethod
+    def memorize(cls, key, content, lang):
+        if not cls.memory.get(lang, None):
+            cls.memory[lang] = {key: content}
+        else:
+            cls.memory[lang][key] = content
+
+    @classmethod
+    def remember(cls, key, lang):
+        if not cls.memory.get(lang, None):
+            content = key
+        else:
+            try:
+                content = cls.memory[lang][key]
+            except KeyError:
+                content = key
+        return content
+
+    @classmethod
+    def save_memory(cls):
+        try:
+            pickled_file = open(cls.pickle_filename, 'w')
+            pickle.dump(cls.memory, pickled_file)
+        finally:
+            pickled_file.close()
+
+    @classmethod
+    def create_memory(cls):
+        if os.path.exists(cls.pickle_filename):
+            try:
+                pickled_file = open(cls.pickle_filename, 'r')
+                cls.memory = pickle.load(pickled_file)
+            finally:
+                pickled_file.close()
+        else:
+            cls.memory = {}
 
 
 class I18nBuilderArgumentException(Exception):
@@ -396,6 +423,7 @@ def _main():
         argdispatcher.dispatch()
     except (OSError, ), e:
         sys.exit("Error: %s" % (e, ))
+
 
 if __name__ == '__main__':
     _main()
