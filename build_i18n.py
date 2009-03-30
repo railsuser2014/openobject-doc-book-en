@@ -6,7 +6,6 @@ import re
 import optparse
 import pickle
 
-from pprint import pprint as pp
 
 __version__ = '0.1'
 USAGE = """%prog [options] <command> <lang code> <source directory> <destination directory>
@@ -21,10 +20,6 @@ conf = {
     'build_default_dir': 'i18n',
 }
 
-
-IGNORED_RST_DIRECTIVES = [ # XXX not used for the moment
-    'toctree',
-]
 I18N_PREFIX = '.. i18n:'
 I18N_REGEX = r'^\.\. i18n: '
 PICKLE_FILENAME = 'i18n.pickle'
@@ -126,10 +121,18 @@ class FileContent(object):
         # separate file sections:
         section = []
         sections = []
-        for line in lines:
+        for i, line in enumerate(lines):
             line = line.replace('\n', '')
             orig_section = I18nSection(filter(None, section))
-            if not line: # line is empty -> this is a paragraph separator
+            # line is empty -> this is a paragraph separator
+            if not line:
+                sections.append(orig_section)
+                section = []
+                continue
+            # (or this is the last line):
+            elif i+1 == len(lines):
+                section.append(line)
+                orig_section = I18nSection(filter(None, section))
                 sections.append(orig_section)
                 section = []
                 continue
@@ -187,16 +190,15 @@ class TranslatedContent(FileContent):
     def process_i18n_sections(self, sections):
         processed_sections = []
         for i, section in enumerate(sections):
-            if section and section.i18n:
-                next_section = self._get_next_non_empty_section(sections, i)
-                if next_section is not None:
-                    processed_sections.append(next_section)
-                    ExistingTranslationManager.memory[section.raw_content] = next_section.content
+            if section and not section.i18n:
+                processed_sections.append(section)
+                ExistingTranslationManager.memory[section.raw_content] = section.content
 
         return processed_sections
 
     def _get_content(self):
         sections = self.build_sections(self.lines)
+        #import pydb; pydb.debugger()
         sections = self.process_i18n_sections(sections)
 
         # build file content:
@@ -247,12 +249,6 @@ class SectionManager(object):
             src_dir = os.path.join(conf['build_default_dir'], 'source', self.lang) + os.sep
             dst_dir = os.path.join(conf['build_default_dir'], 'build', self.lang) + os.sep
         return (src_dir, dst_dir)
-
-    def _get_dst_dir(self):
-        if self.cmd == 'create-templates':
-            pass
-        elif self.cmd == 'copy-translated':
-            pass
 
     def run(self):
         # checking that files are new to avoid overwriting a big work:
