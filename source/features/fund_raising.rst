@@ -2,8 +2,8 @@ Fund Raising
 ============
 
 The fund raising module allows you to manage your fund raising
-operations. From the searching of investors/donators, to the tracking on how
-the money is used accross your different projects and ressources.
+operations. From the searching of investors/donors, to the tracking on how
+the money is used accross your different projects and resources.
 
 .. raw:: html
  
@@ -12,7 +12,7 @@ the money is used accross your different projects and ressources.
 Key Points:
 -----------
 
-* Independant or part of the association management module,
+* Independent or part of the association management module,
 * Pre-configured and easy to start with,
 * Lots of dashboards and reporting available.
 

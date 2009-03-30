@@ -8,6 +8,7 @@ How To Contribute
 
     introduction
     opensource_vision
+    summary_of_resources
     working_in_teams
     planet
     using_bazaar

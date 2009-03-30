@@ -10,7 +10,7 @@ Schedule, Minimum Stock Rules.
 
 The scheduler will compute the best proposed planning according to the different
 constraints on products, customers, orders or workcenters. The production manager
-will be able to use our gantt views to organise the different ressources or orders.
+will be able to use our gantt views to organise the different resources or orders.
 
 .. raw:: html
  
@@ -29,7 +29,7 @@ Integration Benefits:
 
 * Schedule on products, services, sub-contractings
 * Integrated with accounting for automatic transactions
-* Integrated to HR management to get the availability of ressources
+* Integrated to HR management to get the availability of resources
 
 Links:
 ------

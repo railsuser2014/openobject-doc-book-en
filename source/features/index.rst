@@ -46,7 +46,7 @@ Accounting and Finance
    budget
    payments_management
 
-Human Ressources
+Human Resources
 ++++++++++++++++
 
 .. toctree::

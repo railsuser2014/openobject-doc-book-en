@@ -74,7 +74,7 @@ Object: Document directory (document.directory)
 
 :domain: Domain, char
 
-    *Use a domain if you want to apply an automatic filter on visible ressources.*
+    *Use a domain if you want to apply an automatic filter on visible resources.*
 
 
 

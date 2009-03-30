@@ -24,7 +24,7 @@ Description
 
 ::
 
-  Human Ressources: Holidays summary printing functionality 
+  Human Resources: Holidays summary printing functionality 
   
   
   NOTICE: This Module is Deprecated. Please install hr_holidays in order to have latest functionnalities.
