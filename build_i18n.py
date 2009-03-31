@@ -43,7 +43,7 @@ def propertx(fct):
 
 class I18nSection(object):
 
-    _slice_int = 12
+    _slice_int = 80 # how many chars to display in repr.
     def __init__(self, lines, i18n=False):
         self.lines = lines
         self._raw_content = ''
@@ -90,17 +90,17 @@ class I18nSection(object):
         else:
             return False
 
-    def merge(self, i18nsection):
+    def merge(self, next_section):
         self.lines.append('')
-        self.lines.extend(i18nsection.lines)
-        i18nsection.lines = []
+        self.lines.extend(next_section.lines)
+        next_section.lines = []
 
     def __repr__(self):
         return """<%s object, lines: %s, directive:%s list:%s "%s">""" % (
             self.__class__.__name__,
             len(self.lines),
-            self.has_directive(),
-            self.is_list_item(),
+            self.has_directive() or 'None',
+            self.is_list_item() or 'None',
             self.content[:self._slice_int],
         )
 
@@ -144,15 +144,22 @@ class FileContent(object):
 
     def merge_sections(self, sections):
         """Merge contiguous sections when necessary (eg.: multiline directives for example)"""
-        for i, section in enumerate(sections):
-            next_section = self._get_next_non_empty_section(sections, i)
+        return sections # XXX for the moment, there are problems with this XXX
+#         for i, section in enumerate(sections):
+#             next_section = self._get_next_non_empty_section(sections, i)
 
-            if section and next_section:
-                if section.has_directive():
-                    section.merge(next_section)
-                elif section.is_list_item() and next_section.is_list_item():
-                    section.merge(next_section)
-        return sections
+#             if section and next_section:
+#                 if section.has_directive():
+#                     print "a:section: %s" % section
+#                     print "a:next_section: %s" % next_section
+#                     section.merge(next_section)
+#                     print "b:section: %s" % section
+#                     print "b:next_section: %s" % next_section
+#                     print "-"*120
+#                     print
+#                 elif section.is_list_item() and next_section.is_list_item():
+#                     section.merge(next_section)
+#         return sections
 
     def _get_next_non_empty_section(self, sections, index):
         for section in sections[index+1:]:
@@ -182,8 +189,11 @@ class TemplateContent(FileContent):
         content = ''
         for i, section in enumerate(sections):
             if section:
-                translated_content = ExistingTranslationManager.remember(section.content, self.lang)
-                content += '\n' + translated_content + '\n'
+                if not section.i18n:
+                    translated_content = ExistingTranslationManager.remember(section.raw_content, self.lang)
+                    content += '\n' + translated_content + '\n'
+                else:
+                    content += '\n' + section.content + '\n'
         return content
 
 
