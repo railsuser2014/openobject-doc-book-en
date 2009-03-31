@@ -8,7 +8,7 @@ import pickle
 
 
 __version__ = '0.1'
-USAGE = """%prog [options] <command> <lang code> <source directory> <destination directory>
+USAGE = """%prog [options] <command> <lang code>
 eg. %prog create-templates fr source i18n
 available commands are:
   - create-templates: create the necessary templates before translating
@@ -150,13 +150,7 @@ class FileContent(object):
 
 #             if section and next_section:
 #                 if section.has_directive():
-#                     print "a:section: %s" % section
-#                     print "a:next_section: %s" % next_section
 #                     section.merge(next_section)
-#                     print "b:section: %s" % section
-#                     print "b:next_section: %s" % next_section
-#                     print "-"*120
-#                     print
 #                 elif section.is_list_item() and next_section.is_list_item():
 #                     section.merge(next_section)
 #         return sections
@@ -266,6 +260,7 @@ class SectionManager(object):
             for k, v in self.source_content.items():
                 self.create_templates(k, v)
         elif self.cmd == 'copy-translated':
+            ExistingTranslationManager.create_memory()
             for k, v in self.source_content.items():
                 self.copy_translated(k, v)
             ExistingTranslationManager.save_memory()
