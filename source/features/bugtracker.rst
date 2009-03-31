@@ -21,10 +21,10 @@ Key Points:
 Integration Benefits:
 ---------------------
 
-* Integrated with the Wiki (to manage bugs like the trac software)
+* Integrated with the Wiki (to manage bugs like the Trac software)
 * Integrated with timesheets for costs and time control
-* Linked to project management for fixes organisation and planning
-* Link bugs to others ressources like sales, claims, products, etc.
+* Linked to project management for fixes organizing and planning
+* Link bugs to others resources like sales, claims, products, etc.
 
 Links:
 ------

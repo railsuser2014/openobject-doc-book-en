@@ -414,10 +414,10 @@ Object Naming Conventions
 Some terms
 ^^^^^^^^^^
 
-  * All Tree of ressources are called *XXX's Structure*, unless a dedicated term exist for the concept
+  * All Tree of resources are called *XXX's Structure*, unless a dedicated term exist for the concept
 
     - Good: Location' Structure, Chart of Accounts, Categories' Structure
-    - Bad: Tree of Category, Tree of Bill of Meterials
+    - Bad: Tree of Category, Tree of Bill of Materials
 
 Module Recorder
 +++++++++++++++

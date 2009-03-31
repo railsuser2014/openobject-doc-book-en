@@ -14,15 +14,15 @@ Key Points:
 -----------
 
 * Browse at the resource or at the consolidation level
-* Fully support drag & drop horizontal (time) or vertical (accross ressources)
+* Fully support drag & drop horizontal (time) or vertical (across resources)
 * Support filters and efficient zoom in or out
 
 Integration Benefits:
 ---------------------
 
-* Supply chains organisation and planification
+* Supply chains organizing and planning
 * Streamline manufacturing operations and work at the workcenter consolidation level
-* Plannify easily ressources on your projects and detect bottlenecks
+* Easily plan resources on your projects and detect bottlenecks
 
 Links:
 ------
