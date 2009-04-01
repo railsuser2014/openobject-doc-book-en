@@ -16,6 +16,7 @@ How To Contribute
     distribute_modules
     improving_translations
     documentation_process
+    documentation_translation
     irc_meeting
     bug_tracker
     feature_requests
