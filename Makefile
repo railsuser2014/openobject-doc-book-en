@@ -12,17 +12,23 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html web pickle htmlhelp latex changes linkcheck html_image_original html_image_raw_html
+# I18N stuff:
+BUILDI18N     = ./build_i18n.py
+LANG          = 
+
+.PHONY: help clean html web pickle htmlhelp latex changes linkcheck i18n_src2tmpl i18n_tmpl2build
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  html      to make standalone HTML files"
-	@echo "  pickle    to make pickle files"
-	@echo "  json      to make JSON files"
-	@echo "  htmlhelp  to make HTML files and a HTML help project"
-	@echo "  latex     to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
-	@echo "  changes   to make an overview over all changed/added/deprecated items"
-	@echo "  linkcheck to check all external links for integrity"
+	@echo "  html                             to make standalone HTML files"
+	@echo "  pickle                           to make pickle files"
+	@echo "  json                             to make JSON files"
+	@echo "  htmlhelp                         to make HTML files and a HTML help project"
+	@echo "  latex                            to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
+	@echo "  changes                          to make an overview over all changed/added/deprecated items"
+	@echo "  linkcheck                        to check all external links for integrity"
+	@echo "  i18n_src2tmpl LANG=<your_lang>   to convert untranslated sources to translatable templates"
+	@echo "  i18n_tmpl2build LANG=<your_lang> to convert translated templates to usable documentation"
 
 clean:
 	-rm -rf build/*
@@ -76,3 +82,10 @@ linkcheck:
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in build/linkcheck/output.txt."
+
+i18n_src2tmpl:
+	$(BUILDI18N) create-templates ${LANG}
+
+i18n_tmpl2build:
+	$(BUILDI18N) copy-translated ${LANG}
+
