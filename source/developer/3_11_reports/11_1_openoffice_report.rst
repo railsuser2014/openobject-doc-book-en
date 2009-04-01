@@ -70,29 +70,29 @@ Here are Python functions you can use:
 
 Example of useful tags:
 
-    repeatIn(objects,'o') Loop on each objects selected for the print 
+    * **[[ repeatIn(objects,'o') ]]** : Loop on each objects selected for the print
 
-    repeatIn(o.invoice_line,'l') Loop on every line 
+    * **[[ repeatIn(o.invoice_line,'l') ]]** : Loop on every line
 
-    (o.prop=='draft')and 'YES' or 'NO' print YES or NO according the field 'prop' 
+    * **[[ (o.prop=='draft')and 'YES' or 'NO' ]]** : Print YES or NO according the field 'prop'
 
-    round(o.quantity * o.price * 0.9, 2) Operations are OK. 
+    * **[[ round(o.quantity * o.price * 0.9, 2) ]]** : Operations are OK.
 
-    [[ '%07d' % int(o.number) ]] number formating 
+    * **[[ '%07d' % int(o.number) ]]** : Number formating
 
-    reduce(lambda x, obj: x+obj.qty , list , 0 ) total qty of list (try "objects" as list) 
+    * **[[ reduce(lambda x, obj: x+obj.qty , list , 0 ) ]]** : Total qty of list (try "objects" as list)
 
-    user.name user name. 
+    * **[[ user.name ]]** : user name
 
-    setLang(o.partner_id.lang) Localized printings 
+    * **[[ setLang(o.partner_id.lang) ]]** : Localized printings
 
-    time.strftime('%d/%m/%Y') format=dd MM YYYY, check python doc for more about "%d", ... 
+    * **[[ time.strftime('%d/%m/%Y') ]]** : Show the time in format=dd/MM/YYYY, check python doc for more about "%d", ...
 
-    [[ time.strftime(time.ctime()[0:10]) ]] [[ time.strftime(time.ctime()[-4:]) ]] prints only date. 
+    * **[[ time.strftime(time.ctime()[0:10]) ]]** or **[[ time.strftime(time.ctime()[-4:]) ]]** : Prints only date.
 
-    time.ctime() it prints the actual date & time. 
+    * **[[ time.ctime() ]]** : Prints the actual date & time
 
-    [[ time.ctime().split()[3] ]] prints only time 
+    * **[[ time.ctime().split()[3] ]]** : Prints only time
 
 
 SXW2RML
