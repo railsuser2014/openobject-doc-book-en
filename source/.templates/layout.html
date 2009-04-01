@@ -7,13 +7,9 @@
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 
-</script>
-
-<script type="text/javascript">
-
 try {
-var pageTracker = _gat._getTracker("UA-7333765-8");
-pageTracker._trackPageview();
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
 } catch(err) {}
 
 </script>
@@ -102,6 +98,10 @@ pageTracker._trackPageview();
 {%- block relbar2 %}{{ relbar_tiny() }}{% endblock %}
 #}
 {%- block footer %}
+
+  <div class="js-kit-comments" permalink=""></div>
+  <script src="http://js-kit.com/comments.js"></script>
+
   {%- macro relbar_tiny2 %}
       <div class="related-tiny">
         <h3>{{ _('Navigation') }}</h3>
