@@ -66,33 +66,23 @@ Here are Python functions you can use:
     * **setlang('fr')** : change the language used in automated translation (fields...).
     * **repeatIn(list,varname)** : repeat the current part of the template (whole document, current section, current row in the table) for each object in the list. Use varname in the template's tags. Since versions 4.1.X, you can use an optionnal third argument that is the name of the .RML tag you want to loop on.
     * **setTag('para','xpre')** : change the enclosing RML tag (usually 'para') by an other (xpre is a preformatted paragraph), in the (converted from sxw)rml document (?)
-    * **removeParentNode** 
+    * **removeParentNode('tr')** : removes the parent node of type 'tr', this parameter is usually used together with a conditional (see examples below)
 
 Example of useful tags:
 
     * **[[ repeatIn(objects,'o') ]]** : Loop on each objects selected for the print
-
     * **[[ repeatIn(o.invoice_line,'l') ]]** : Loop on every line
-
     * **[[ (o.prop=='draft')and 'YES' or 'NO' ]]** : Print YES or NO according the field 'prop'
-
     * **[[ round(o.quantity * o.price * 0.9, 2) ]]** : Operations are OK.
-
     * **[[ '%07d' % int(o.number) ]]** : Number formating
-
     * **[[ reduce(lambda x, obj: x+obj.qty , list , 0 ) ]]** : Total qty of list (try "objects" as list)
-
     * **[[ user.name ]]** : user name
-
     * **[[ setLang(o.partner_id.lang) ]]** : Localized printings
-
     * **[[ time.strftime('%d/%m/%Y') ]]** : Show the time in format=dd/MM/YYYY, check python doc for more about "%d", ...
-
     * **[[ time.strftime(time.ctime()[0:10]) ]]** or **[[ time.strftime(time.ctime()[-4:]) ]]** : Prints only date.
-
     * **[[ time.ctime() ]]** : Prints the actual date & time
-
     * **[[ time.ctime().split()[3] ]]** : Prints only time
+    * **[[ o.type in ['in_invoice', 'out_invoice'] and 'Invoice' or removeParentNode('tr') ]]** : If the type is 'in_invoice' or 'out_invoice' then the word 'Invoice' is printed, if it's neither the first node above it of type 'tr' will be removed.
 
 
 SXW2RML
