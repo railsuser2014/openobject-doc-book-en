@@ -1,10 +1,9 @@
 
-.. _books-link:
-
 .. index::
    single: Open ERP Book
 ..
 
+.. _books-link:
 
 :::::::::::::
 Open ERP Book

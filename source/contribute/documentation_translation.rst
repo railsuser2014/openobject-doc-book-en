@@ -23,7 +23,7 @@ Translation workflow
 Here is the translation workflow:
 
 .. csv-table::
-    :header: "Transition","Activity","Destination directory"
+    :header: "Transition","Activity","Directory"
     :widths: 5,5,5
 
     untranslated sources,,source
@@ -37,9 +37,11 @@ Here is the translation workflow:
 Creating the translation templates
 ----------------------------------
 
-You start with *untranslated sources* located in **<openobject-doc>/source**
+You start with *untranslated sources* located in **<openobject-doc>/source**,
+where *<openobject-doc>* is the directory where you download the documentation sources.
 
-Use the *make* command (with target *i18n_src2tmpl*) to create the templates passing the language as additional argument.
+Use the *make* command (with target *i18n_src2tmpl*) to create the templates
+passing the language as additional argument.
 
 Example: ::
 
@@ -121,7 +123,4 @@ Status
 
 At the moment, this script is in alpha status and has not been thoroughly
 tested. It should work but expects some bugs to pop up at unexpected times.
-
-
-.. vi: ft=rst
 

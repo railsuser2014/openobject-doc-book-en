@@ -5,15 +5,13 @@ import os, sys
 import re
 import optparse
 import pickle
+from shutil import copy as filecopy
+import operator
 
 
 __version__ = '0.1'
-USAGE = """%prog [options] <command> <lang code>
-eg. %prog create-templates fr source i18n
-available commands are:
-  - create-templates: create the necessary templates before translating
-  - copy-translated: copy the translated files"""
-
+USAGE = """%prog [options] <lang code>
+eg. %prog fr"""
 
 conf = {
     'ext': 'rst',
@@ -23,10 +21,15 @@ conf = {
 I18N_PREFIX = '.. i18n:'
 I18N_REGEX = r'^\.\. i18n: '
 PICKLE_FILENAME = 'i18n.pickle'
+REQUIRED_ARG_NBR = 1
+IGNORED_FILES_SUFFIX = ['pyc', conf['ext']]
+IGNORED_FILES_SUFFIX.extend(['~%d~' % i for i in range(1, 10)])
+FILES_TO_COPY = ['Makefile', 'copy_images.sh', 'index.php']
 
-has_directive_regex = re.compile(r"""\.\.\s+(?P<directive>\w+)::(?P<content>.*)""")
+
+has_directive_regex = re.compile(r"""\.\.\s+(?P<directive>[\w-]+)::(?P<content>.*)""")
+is_literal_block_regex = re.compile(r""".*::$""")
 is_list_item_regex = re.compile(r"""^\s*(?P<list_item_char>#\.|\*|-|\d+\.){1,1}\s+(?P<content>.*)""")
-
 
 def propertx(fct):
     """Decorator to simplify the use of property.
@@ -83,6 +86,13 @@ class I18nSection(object):
         else:
             return False
 
+    def is_literal_block(self):
+        match_obj = is_literal_block_regex.search(self.content)
+        if match_obj:
+            return True
+        else:
+            return False
+
     def is_list_item(self):
         match_obj = is_list_item_regex.search(self.content)
         if match_obj:
@@ -96,10 +106,11 @@ class I18nSection(object):
         next_section.lines = []
 
     def __repr__(self):
-        return """<%s object, lines: %s, directive:%s list:%s "%s">""" % (
+        return """<%s object, lines: %s, directive:%s literal_block: %s list:%s "%s">""" % (
             self.__class__.__name__,
             len(self.lines),
             self.has_directive() or 'None',
+            bool(self.is_literal_block()) or 'None',
             self.is_list_item() or 'None',
             self.content[:self._slice_int],
         )
@@ -144,16 +155,16 @@ class FileContent(object):
 
     def merge_sections(self, sections):
         """Merge contiguous sections when necessary (eg.: multiline directives for example)"""
-        return sections # XXX for the moment, there are problems with this XXX
-#         for i, section in enumerate(sections):
-#             next_section = self._get_next_non_empty_section(sections, i)
+        #return sections # XXX for the moment, there are problems with this XXX
+        for i, section in enumerate(sections):
+            next_section = self._get_next_non_empty_section(sections, i)
 
-#             if section and next_section:
-#                 if section.has_directive():
-#                     section.merge(next_section)
-#                 elif section.is_list_item() and next_section.is_list_item():
-#                     section.merge(next_section)
-#         return sections
+            if section and next_section:
+                if section.has_directive() or section.is_literal_block():
+                    section.merge(next_section)
+                elif section.is_list_item() and next_section.is_list_item():
+                    section.merge(next_section)
+        return sections
 
     def _get_next_non_empty_section(self, sections, index):
         for section in sections[index+1:]:
@@ -191,52 +202,20 @@ class TemplateContent(FileContent):
         return content
 
 
-class TranslatedContent(FileContent):
-    def __init__(self, lines, lang):
-        super(TranslatedContent, self).__init__(lines, lang)
-
-    def process_i18n_sections(self, sections):
-        processed_sections = []
-        for i, section in enumerate(sections):
-            if section and not section.i18n:
-                previous_section = sections[i-1]
-                processed_sections.append(section)
-                ExistingTranslationManager.memorize(previous_section.raw_content, section.content, self.lang)
-
-        return processed_sections
-
-    def _get_content(self):
-        sections = self.build_sections(self.lines)
-        sections = self.process_i18n_sections(sections)
-
-        # build file content:
-        content = ''
-        for section in sections:
-            if section:
-                content += '\n' + section.content + '\n'
-
-        return content
-
-
 class SectionManager(object):
-    def __init__(self, cmd, lang, options=None):
-        self.cmd = cmd
+    def __init__(self, lang, options=None):
         self.lang = lang
         self.src_dir, self.dst_dir = self._get_src_and_dst_dir()
         self.options = options
 
         self._check_src_dir()
-        self.source_content = self.get_structure()
+        self.source_content, self.files_to_copy = self.get_structure()
         self._build_dst_structure()
         self.translation_memory = {}
 
     def _get_src_and_dst_dir(self):
-        if self.cmd == 'create-templates':
-            src_dir = os.path.join('.', 'source')
-            dst_dir = os.path.join(conf['build_default_dir'], 'source', self.lang) + os.sep
-        elif self.cmd == 'copy-translated':
-            src_dir = os.path.join(conf['build_default_dir'], 'source', self.lang) + os.sep
-            dst_dir = os.path.join(conf['build_default_dir'], 'build', self.lang) + os.sep
+        src_dir = os.path.join('.', 'source')
+        dst_dir = os.path.join(conf['build_default_dir'], self.lang, 'source') + os.sep
         return (src_dir, dst_dir)
 
     def run(self):
@@ -255,15 +234,8 @@ class SectionManager(object):
                 if question == 'n':
                     sys.exit("Doing nothing.")
 
-        if self.cmd == 'create-templates':
-            ExistingTranslationManager.create_memory()
             for k, v in self.source_content.items():
                 self.create_templates(k, v)
-        elif self.cmd == 'copy-translated':
-            ExistingTranslationManager.create_memory()
-            for k, v in self.source_content.items():
-                self.copy_translated(k, v)
-            ExistingTranslationManager.save_memory()
 
     def _check_src_dir(self):
         """Check that source directory is a valid directory."""
@@ -277,21 +249,45 @@ class SectionManager(object):
             raise OSError(msg)
 
     def _build_dst_structure(self):
+        """Create the necessary directory tree. eg.:
+             i18n
+             `-- fr
+                 |-- build
+                 `-- source
+                     `-- ...
+        """
         for d in self.source_content.keys():
+        #for d in self.source_content.keys():
             dst_filepath = re.sub(self.src_dir, self.dst_dir, d)
             if not os.path.exists(dst_filepath):
                 os.makedirs(dst_filepath)
+        build_dir = os.path.join(conf['build_default_dir'], self.lang, 'build')
+        if not os.path.exists(build_dir):
+            os.makedirs(build_dir)
+
+        for fn in FILES_TO_COPY:
+            filecopy(fn, os.path.join(conf['build_default_dir'], self.lang, fn))
+
+        for d, lst in self.files_to_copy.items():
+            for fn in lst:
+                if not os.path.exists(os.path.join(conf['build_default_dir'], self.lang, d, fn)):
+                    src = os.path.join(d, fn)
+                    dst = os.path.join(conf['build_default_dir'], self.lang, d, fn)
+                    filecopy(src, dst)
 
     def get_structure(self):
         """Get the source directory structure"""
         def _visit_func(arg, dirname, names):
             content[dirname] = [name for name in names if name.endswith('.'+conf['ext'])]
+            files_to_copy[dirname] = [name for name in names if not filter(name.endswith, map(operator.add, '.'*len(IGNORED_FILES_SUFFIX), IGNORED_FILES_SUFFIX))]
+
         content = {}
+        files_to_copy = {}
         os.path.walk(self.src_dir, _visit_func, None)
         for directory in os.listdir(self.src_dir):
             directory = os.path.join(self.src_dir, directory)
             os.path.walk(directory, _visit_func, None)
-        return content
+        return content, files_to_copy
 
     def create_template(self, src_filepath, dst_filepath):
         src_file = open(src_filepath, 'r')
@@ -299,16 +295,6 @@ class SectionManager(object):
         src_file.close()
         dst_file = open(dst_filepath, 'w')
         tmpl_content = TemplateContent(src_lines, self.lang).content
-        dst_file.write(tmpl_content)
-        dst_file.close()
-
-    def create_translated(self, src_filepath, dst_filepath):
-        src_file = open(src_filepath, 'r')
-        src_lines = src_file.readlines()
-        src_file.close()
-        dst_file = open(dst_filepath, 'w')
-        tmpl_content = TranslatedContent(src_lines, self.lang).content
-
         dst_file.write(tmpl_content)
         dst_file.close()
 
@@ -335,16 +321,6 @@ class SectionManager(object):
             filepath = os.path.join(directory, filename)
             dst_filepath = _set_dst_filepath(filepath)
             self.create_template(filepath, dst_filepath)
-
-    def copy_translated(self, directory, files):
-        def _set_dst_filepath(filepath):
-            dst_filepath = re.sub(self.src_dir, self.dst_dir, filepath).replace('-'+self.lang, '')
-            return dst_filepath
-
-        for filename in files:
-            filepath = os.path.join(directory, filename)
-            dst_filepath = _set_dst_filepath(filepath)
-            self.create_translated(filepath, dst_filepath)
 
 
 class ExistingTranslationManager(object):
@@ -395,28 +371,25 @@ class I18nBuilderArgumentException(Exception):
 
 class ArgDispatcher(object):
     def __init__(self, args, opts):
-        self.valid_commands = ('create-templates', 'copy-translated')
         self.args = args
         self.options = opts
         self._check_args()
 
     def _check_args(self):
         args_len = len(self.args)
-        if args_len != 2:
-            raise I18nBuilderArgumentException("Incorrect number of arguments. Expected 2, got %d" % (args_len, ))
+        if args_len != REQUIRED_ARG_NBR:
+            raise I18nBuilderArgumentException("Incorrect number of arguments. Expected %d, got %d" % (REQUIRED_ARG_NBR, args_len, ))
         cmd = self.args[0]
-        if cmd not in self.valid_commands:
-            msg = "Command '%s' is not recognized. Valid commands are: %s" % (cmd, ', '.join(self.valid_commands))
-            raise I18nBuilderArgumentException(msg)
 
     def dispatch(self):
-        src_mngr = SectionManager(self.args[0], self.args[1], self.options)
+        src_mngr = SectionManager(self.args[0], self.options)
         src_mngr.run()
 
 
 def _main():
     parser = optparse.OptionParser(usage=USAGE, version=__version__)
-    parser.add_option('', '--force', dest='force', default=False, action="store_true", help="Force the copy without prompting for confirmation")
+    parser.add_option('', '--force', dest='force', default=False, action="store_true", help="Force the file copy without prompting for confirmation")
+    parser.add_option('', '--save-memory', dest='save_memory', default=False, action="store_true", help="Save the translation memory in a Python pickle file")
     (opt, args) = parser.parse_args()
 
     try:
