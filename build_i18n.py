@@ -23,7 +23,7 @@ I18N_REGEX = r'^\.\. i18n: '
 PICKLE_FILENAME = 'i18n.pickle'
 REQUIRED_ARG_NBR = 1
 IGNORED_FILES_SUFFIX = ['pyc', conf['ext']]
-IGNORED_FILES_SUFFIX.extend(['~%d~' % i for i in range(1, 10)])
+IGNORED_FILES_SUFFIX.extend(['~%d~' % nbr for nbr in range(1, 10)])
 FILES_TO_COPY = ['Makefile', 'copy_images.sh', 'index.php']
 
 
@@ -195,7 +195,7 @@ class TemplateContent(FileContent):
         for i, section in enumerate(sections):
             if section:
                 if not section.i18n:
-                    translated_content = ExistingTranslationManager.remember(section.raw_content, self.lang)
+                    translated_content = TranslationMemory.remember(section.raw_content, self.lang)
                     content += '\n' + translated_content + '\n'
                 else:
                     content += '\n' + section.content + '\n'
@@ -234,6 +234,7 @@ class SectionManager(object):
                 if question == 'n':
                     sys.exit("Doing nothing.")
 
+            TranslationMemory.create_memory()
             for k, v in self.source_content.items():
                 self.create_templates(k, v)
 
@@ -290,9 +291,27 @@ class SectionManager(object):
         return content, files_to_copy
 
     def create_template(self, src_filepath, dst_filepath):
-        src_file = open(src_filepath, 'r')
-        src_lines = src_file.readlines()
-        src_file.close()
+        def _get_file_content(filepath):
+            _f = open(filepath, 'r')
+            _lines = _f.readlines()
+            _f.close()
+            return _lines
+
+        src_lines = _get_file_content(src_filepath)
+        # if dst file exists: read it:
+        if os.path.exists(dst_filepath):
+            old_lines = _get_file_content(dst_filepath)
+            old_tmpl = TemplateContent(old_lines, self.lang)
+#             old_content = old_tmpl.content
+            # store old content (bacause it can be translated) in translation memory:
+            sections = old_tmpl.build_sections(old_lines)
+            sections = old_tmpl.merge_sections(sections)
+            for i, section in enumerate(sections):
+                if section and not section.i18n:
+                    previous_section = sections[i-1]
+                    TranslationMemory.memorize(previous_section.raw_content, section.content, self.lang)
+
+        # write destination file:
         dst_file = open(dst_filepath, 'w')
         tmpl_content = TemplateContent(src_lines, self.lang).content
         dst_file.write(tmpl_content)
@@ -323,7 +342,7 @@ class SectionManager(object):
             self.create_template(filepath, dst_filepath)
 
 
-class ExistingTranslationManager(object):
+class TranslationMemory(object):
     pickle_filename = PICKLE_FILENAME
     memory = {}
 
@@ -379,7 +398,6 @@ class ArgDispatcher(object):
         args_len = len(self.args)
         if args_len != REQUIRED_ARG_NBR:
             raise I18nBuilderArgumentException("Incorrect number of arguments. Expected %d, got %d" % (REQUIRED_ARG_NBR, args_len, ))
-        cmd = self.args[0]
 
     def dispatch(self):
         src_mngr = SectionManager(self.args[0], self.options)
@@ -389,7 +407,7 @@ class ArgDispatcher(object):
 def _main():
     parser = optparse.OptionParser(usage=USAGE, version=__version__)
     parser.add_option('', '--force', dest='force', default=False, action="store_true", help="Force the file copy without prompting for confirmation")
-    parser.add_option('', '--save-memory', dest='save_memory', default=False, action="store_true", help="Save the translation memory in a Python pickle file")
+    #parser.add_option('', '--save-memory', dest='save_memory', default=False, action="store_true", help="Save the translation memory in a Python pickle file")
     (opt, args) = parser.parse_args()
 
     try:
