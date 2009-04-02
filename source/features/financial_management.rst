@@ -30,5 +30,6 @@ Links:
   .. raw:: html
   
     <a target="_blank" href="http://example.net">Example</a>
+
 * Module: example
 
