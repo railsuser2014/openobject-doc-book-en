@@ -30,6 +30,9 @@ FILES_TO_COPY = ['Makefile', 'copy_images.sh', 'index.php']
 has_directive_regex = re.compile(r"""\.\.\s+(?P<directive>[\w-]+)::(?P<content>.*)""")
 is_literal_block_regex = re.compile(r""".*::$""")
 is_list_item_regex = re.compile(r"""^\s*(?P<list_item_char>#\.|\*|-|\d+\.){1,1}\s+(?P<content>.*)""")
+is_indented_regex = re.compile(r"""^\s+""")
+is_label_regex = re.compile(r"""^\s*\.\.\s+_[\w-]+:""")
+
 
 def propertx(fct):
     """Decorator to simplify the use of property.
@@ -88,6 +91,20 @@ class I18nSection(object):
 
     def is_literal_block(self):
         match_obj = is_literal_block_regex.search(self.content)
+        if match_obj:
+            return True
+        else:
+            return False
+
+    def is_indented(self):
+        match_obj = is_indented_regex.search(self.content)
+        if match_obj:
+            return True
+        else:
+            return False
+
+    def is_label(self):
+        match_obj = is_label_regex.search(self.content)
         if match_obj:
             return True
         else:
@@ -155,15 +172,28 @@ class FileContent(object):
 
     def merge_sections(self, sections):
         """Merge contiguous sections when necessary (eg.: multiline directives for example)"""
-        #return sections # XXX for the moment, there are problems with this XXX
-        for i, section in enumerate(sections):
-            next_section = self._get_next_non_empty_section(sections, i)
+        def _merge_section(sections, last):
+            for i, section in enumerate(sections):
+                if i+1 == len(sections):
+                    last = True
+                next_section = self._get_next_non_empty_section(sections, i)
 
-            if section and next_section:
-                if section.has_directive() or section.is_literal_block():
-                    section.merge(next_section)
-                elif section.is_list_item() and next_section.is_list_item():
-                    section.merge(next_section)
+                if section and next_section:
+                    if (section.has_directive() or section.is_literal_block()) and \
+                        next_section.is_indented() or \
+                        section.is_label():
+                        section.merge(next_section)
+                        return sections, last
+                    elif section.is_list_item() and next_section.is_list_item():
+                        section.merge(next_section)
+                        return sections, last
+            return sections, last
+
+        if sections:
+            last = False
+            while not last:
+                sections, last = _merge_section(sections, last)
+
         return sections
 
     def _get_next_non_empty_section(self, sections, index):
