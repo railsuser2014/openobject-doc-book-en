@@ -30,7 +30,7 @@ Open Object Documentation
   <div class="tip">
   You will find a new integrated approach to enterprise management
   and best development practices in these pages. These books have been best-sellers
-  on Amazon for several months. You can also have a look at our <a href="">printed
+  on Amazon for several months. You can also have a look at our <a href="http://openerp.com/buy.html?page=shop.browse&category_id=4">printed
   books</a>.  </div>
   <br/>
   <br/>
