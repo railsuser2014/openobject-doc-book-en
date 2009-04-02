@@ -83,9 +83,6 @@ linkcheck:
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in build/linkcheck/output.txt."
 
-i18n_src2tmpl:
-	$(BUILDI18N) create-templates ${LANG}
-
-i18n_tmpl2build:
-	$(BUILDI18N) copy-translated ${LANG}
+i18n:
+	$(BUILDI18N) ${LANG}
 
