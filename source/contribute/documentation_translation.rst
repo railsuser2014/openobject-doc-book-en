@@ -105,6 +105,7 @@ When you will get the documentation changes with bzr pull (for example), the
 new sections and some changed sections will be reset to the untranslated text
 when you will rebuild the translation with *make i18n LANG=fr*.
 
+Status
 ------
 
 At the moment, this script is in alpha status and has not been thoroughly
