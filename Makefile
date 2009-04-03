@@ -86,5 +86,5 @@ i18n:
 	$(BUILDI18N) ${LANG}
 
 cleani18n:
-	-rm -rf i18n/*
+	-rm -rf i18n/*/build/*
 
