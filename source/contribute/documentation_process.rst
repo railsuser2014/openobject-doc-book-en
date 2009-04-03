@@ -24,8 +24,8 @@ Once we have enough chapters written, we can compose a book and publish it.
 
 Books are first published in a paper version. Three months after, we release it online.
 
-Guidelines
-""""""""""
+..  Guidelines
+..  """"""""""
 
 .. todo:: write the 'guidelines' section
 
@@ -82,18 +82,56 @@ author rights are computed slightly differently:
   * Computed rights are divided by two for the employee: 50%
   * Valid until the employee work for Tiny
 
-Translators
-"""""""""""
+..  Translators
+..  """""""""""
 
-Reviewers
-"""""""""
+..  Reviewers
+..  """""""""
 
-Modules in Wiki
-+++++++++++++++
+Modules
++++++++
 
-Each module should have a small and minimal documentation in the wiki.
+Each module should have a small and minimal documentation.
 
-.. todo:: extending the 'Modules in Wiki' section
+Building the documentation
+++++++++++++++++++++++++++
+
+We use `Sphinx <http://sphinx.pocoo.org>`_, a documentation generator, to build
+the documentation. So, Sphinx should be installed on your system and you should
+know how to use it.
+
+You can install it with `easy_install
+<http://peak.telecommunity.com/DevCenter/EasyInstall>`_. For example, on Ubuntu: ::
+
+  sudo easy_install sphinx
+
+.. describe:: building the documentation in html:
+
+::
+
+  make clean
+  make html
+
+.. describe:: building the documentation in pdf:
+
+::
+
+  make clean
+  make latex
+  cd build/latex
+  make all
+
+.. describe:: building a book:
+
+For example, if you want to build the *Open ERP for Retail and Industrial Management* book:
+
+::
+
+  cd books/book_mrp
+  make clean
+  make latex
+  cd build/latex
+  make all
 
 FAQ
 +++
@@ -104,4 +142,5 @@ The first french book we wrote is sold at 500 items per month. It's good as it
 was our the first book on OpenERP but we can expect better results with an
 english version. So probably between 250 and 1500 items per month for an
 english book.
+
 
