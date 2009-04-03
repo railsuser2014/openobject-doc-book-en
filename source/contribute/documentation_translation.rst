@@ -5,53 +5,68 @@ How to translate the Open Object Documentation in your language
 Prerequisite
 ------------
 
-You should be able to build the untranslated documentation. So `Sphinx <http://sphinx.pocoo.org>`_ should be
-installed on your system and you should know how to use it.
+You should be able to build the untranslated documentation. So `Sphinx
+<http://sphinx.pocoo.org>`_ should be installed on your system and you should
+know how to use it.
 
 If this is not the case, please read the `Community Guide
 <http://doc.openerp.com/contribute/documentation_process.html#building-the-documentation>`_.
 
-Translating the Open Object documentation in your language is a three steps process.
+Understanding the directory structure
+-------------------------------------
 
-   #. you start by building templates from the untranslated sources
-   #. you translate these templates
-   #. you convert the translated templates to usable restructured files ready to be used
+We are supposing that **<openobject-doc>** is the root of the Open Object
+documentation baazar branch.
 
-Translation workflow
---------------------
+The *untranslated sources* are located in **<openobject-doc>/source**.
 
-Here is the translation workflow:
+The translated documentation is located in **<openobject-doc>>/i18n/<lang>/source**.
+
+For example, the documentation in french will be
+located in **<openobject-doc>/i18n/fr/source** and it will be built
+in **<openobject-doc>/i18n/fr/build/html** for example.
+
+Summary
++++++++
 
 .. csv-table::
-    :header: "Transition","Activity","Directory"
-    :widths: 5,5,5
+    :header: "Directory", "Description"
+    :widths: 5,5
 
-    untranslated sources,,source
-    ,create the templates,
-    translation templates,,i18n/source/<lang>
-    ,translate the files,
-    translated files,,i18n/source/<lang>
-    ,copy the translated files,
-    translated files,,i18n/build/<lang>
+    <openobject-doc>/source,untranslated sources
+    <openobject-doc>/i18n/<lang>/source,translated sources
+    <openobject-doc>/i18n/<lang>/build/html,translated documentation in html
 
-Creating the translation templates
-----------------------------------
+Creating the translation directory structure
+--------------------------------------------
 
-You start with *untranslated sources* located in **<openobject-doc>/source**,
-where *<openobject-doc>* is the directory where you download the documentation sources.
+Use the **make** command (with target **i18n**) to create the translation
+templates. You'll need to pass the language as an additional parameter to the *make* command.
 
-Use the *make* command (with target *i18n_src2tmpl*) to create the templates
-passing the language as additional argument.
+For example, supposing you want to translate the documentation in french: ::
 
-Example: ::
+  make i18n LANG=fr
 
-  make i18n_src2tmpl LANG=fr
+This command will do several things:
 
-The second argument is the language you want to translate to.
+* create these directories, if they does not exist yet:
 
-The translation templates will be created in *i18n/source/<lang>*. For example, in *i18n/source/fr*.
+  * i18n
+  * i18n/fr
+  * i18n/fr/source
+  * i18n/fr/build
 
-Translating the files
+* copy files in *i18n/fr/* required for the html build:
+
+  * MakeFile
+  * conf.py
+
+* create the *translation templates* based on the untranslated restructured text files. They will be created in *i18n/fr/source*
+
+* copy all the other necessary files (images for example)
+
+
+Translation templates
 ---------------------
 
 The template structure for a given file is very simple. Each text section is
@@ -65,11 +80,11 @@ prepended by the original context. Here is a title, for example: ::
   Open Object Documentation
   %%%%%%%%%%%%%%%%%%%%%%%%%
 
-The context is a commented section starting with *i18n:*. It helps you
+The context is a commented section starting with **.. i18n:**. It helps you
 understand the section in its context. It also helps you remember the original
 section.
 
-Here is the translated section: ::
+And here is the translated section: ::
 
   .. i18n: %%%%%%%%%%%%%%%%%%%%%%%%%
   .. i18n: Open Object Documentation
@@ -79,48 +94,20 @@ Here is the translated section: ::
   Documentation sur Open Object
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Copy the translated files
--------------------------
+Managing source changes
+-----------------------
 
-Once the files are translated, the next step is to copy them to the
-*i18n/build/<lang>* directory. This step will also remove the context sections.
-For example, with French language: ::
+If someone adds or changes something in the documentation, that section will
+have to be retranslated but all the other sections will hopefully keep their
+translation.
 
-  make i18n_tmpl2build LANG=fr
+When you will get the documentation changes with bzr pull (for example), the
+new sections and some changed sections will be reset to the untranslated text
+when you will rebuild the translation with *make i18n LANG=fr*.
 
-The second argument is the language you want to translate to.
-
-Files will be copied in *i18n/build/fr* where you can use them to build you
-documentation in your language.
-
-Translation memory
-------------------
-
-Translation memory is handled by a Python pickled dictionary following this
-structure: ::
-
-  {
-    "<lang1>": {
-      "original section text 1": "translated section text 1",
-      "original section text 2": "translated section text 2",
-    },
-    "<lang2>": {
-      "original section text 1": "translated section text 1",
-      "original section text 2": "translated section text 2",
-    }
-  }
-
-This file is named *i18n.pickle* and it's created by the *copy-translated*
-command. And read by the *create-templates* command.
-
-So, you'll benefits from already translated contents translated by others.
-
-The *i18n.pickle* file is versioned. If you translate some texts, don't forget
-to commit your work in Bazaar.
-
-Status
 ------
 
 At the moment, this script is in alpha status and has not been thoroughly
 tested. It should work but expects some bugs to pop up at unexpected times.
+
 
