@@ -70,3 +70,39 @@ Goals:
 
   * Publish when everything is perfect
 
+
+
+Creating Screen cast for OpenERP
+""""""""""""""""""""""""""""""""""
+Point to be noted to start with Screen cast for OpenERP.
+
+  *  Make demo in eTiny  *Webclient*.(Its not compulsory)
+
+  *  We have a specific software to create screen cast. The name is "Screen Flash". It works in windows.
+	   You can purchas license copy of Screen Flash. So, do not use with fake / crack ID. 
+
+  *  For linux, one can use "gtk-Record-my-desktop", but preferable is to use "Screen Flash" on windows to get good result.
+
+  *  The resolution of your screen at the time of recording should be 800 X 600 for screen cast.
+
+  *  The speed of recording (cursor / pointer) should be very slow (wait for 1-2 second between to clicks), as you are experts so you know the process, but we are preparing these screen cast for the people, who are not used to with OpenERP. The purpose of screen cast is to make them understand and can learn the process by themselves.
+
+  *  At the time of typing, be careful for not committing any mistake, avoid erase and retype.
+
+  *  Close all your other program / application / software running before you start processing for screen cast.
+
+  *  For windows, screen flash software, kindly configure your short cut for better clarity. 
+
+  *  Auto hide your task bar before starting screen flash on windows/ gtk-Record-my-desktop on linux.
+
+  *  Always maximize your window at the time of screen cast, so it can capture all the visible portion with perfection and to avoid other part of unused screen object.
+
+  *  First list out all steps to show, and remember all steps. At the time of recording you must be clear that what will be the next step to show. so you do not hesitate in between choosing inappropriate steps.
+
+  *  If required, kindly prepare demo data that you want to show for better understanding of users, and also it will not take too much time to type it during recording.
+
+  *  For required and useful fields highlight the tool-tip and stay for sometimes (At least once we can read it slowly) so the other people can read it and know the exact use of that field.
+
+  *  One can edit screen cast, if prepared in Screen Flash software on windows. But its better to avoid it by making it proper from the start.
+
+
