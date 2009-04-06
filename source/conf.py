@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-#
+
+import sys, os
+from docutils import nodes
+
 # openobject-doc documentation build configuration file, created by
 # sphinx-quickstart on Tue Dec  9 11:16:22 2008.
 #
@@ -10,8 +13,6 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
-
-import sys, os
 
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
@@ -37,10 +38,6 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
-
-# General information about the project.
-project = u'OpenObject Documentation'
-copyright = u'2008, OpenObject Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -260,14 +257,31 @@ latex_elements = {
 #latex_use_modindex = True
 
 def end_foreword_directive(name, arguments, options, content, lineno,
-                       content_offset, block_text, state, state_machine):
+                           content_offset, block_text, state, state_machine):
     return [nodes.Text('')]
 
 def begin_conclusion_directive(name, arguments, options, content, lineno,
-                       content_offset, block_text, state, state_machine):
+                               content_offset, block_text, state, state_machine):
     return [nodes.Text('')]
 
+# add js-kit comments or not:
+js_kit_comments = True
+
 def setup(app):
+    from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+
+    def depart_title_new(self, node):
+        old_depart_title(self, node) # call the original depart_title.
+        if self.builder.globalcontext.get('builder') == 'html':
+            parent_class_name = node.parent.__class__.__name__
+            if parent_class_name == 'section' and self.section_level == 2:
+                title_id = node.parent.attributes['ids'][0]
+                self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+
+    if js_kit_comments:
+        old_depart_title = HTMLTranslator.depart_title
+        HTMLTranslator.depart_title = depart_title_new
+
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
     app.add_directive('begin_conclusion', begin_conclusion_directive, 1, (0, 0, 0))
 
