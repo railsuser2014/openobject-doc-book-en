@@ -16,11 +16,11 @@ Understanding the directory structure
 -------------------------------------
 
 We are supposing that **<openobject-doc>** is the root of the Open Object
-documentation baazar branch.
+documentation bazaar branch.
 
 The *untranslated sources* are located in **<openobject-doc>/source**.
 
-The translated documentation is located in **<openobject-doc>>/i18n/<lang>/source**.
+The translated documentation will be located in **<openobject-doc>>/i18n/<lang>/source**.
 
 For example, the documentation in french will be
 located in **<openobject-doc>/i18n/fr/source** and it will be built
@@ -109,6 +109,6 @@ Status
 ------
 
 At the moment, this script is in alpha status and has not been thoroughly
-tested. It should work but expects some bugs to pop up at unexpected times.
+tested. It should work but expect some bugs to pop up at unexpected times.
 
 
