@@ -9,7 +9,7 @@ from shutil import copy as filecopy
 import operator
 
 
-__version__ = '0.1'
+__version__ = '0.3'
 USAGE = """%prog [options] <lang code>
 eg. %prog fr"""
 
@@ -260,17 +260,9 @@ class SectionManager(object):
             allexisting += existing
             allnew += new
 
-        if not self.options.force:
-            if float(allexisting) / float(allnew) > 0.001:
-                question = raw_input("Some files are already existing. Are you sure you want to overwrite them ? [y/n]\n")
-                if question not in ('y', 'n'):
-                    sys.stderr.write("Please answer with 'y' or 'n'.\n")
-                if question == 'n':
-                    sys.exit("Doing nothing.")
-
-            TranslationMemory.create_memory()
-            for k, v in self.source_content.items():
-                self.create_templates(k, v)
+        TranslationMemory.create_memory()
+        for k, v in self.source_content.items():
+            self.create_templates(k, v)
 
     def _check_src_dir(self):
         """Check that source directory is a valid directory."""
@@ -440,7 +432,6 @@ class ArgDispatcher(object):
 
 def _main():
     parser = optparse.OptionParser(usage=USAGE, version=__version__)
-    parser.add_option('', '--force', dest='force', default=False, action="store_true", help="Force the file copy without prompting for confirmation")
     #parser.add_option('', '--save-memory', dest='save_memory', default=False, action="store_true", help="Save the translation memory in a Python pickle file")
     (opt, args) = parser.parse_args()
 
