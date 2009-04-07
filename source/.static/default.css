@@ -2,6 +2,20 @@
  * OpenERP Doc Design
  */
 
+.js-kit-comments {
+  float: right;
+  top: -40px;
+  position: relative;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 10pt;
+  background-color: #e6e6e6;
+}
+
+.js-kit-comments  a {
+  color: #6e6e6e;
+}
+
 div.related-tiny li.right a.bottom-nav-links {
   font-size: 75%;
   /*float:right;*/
