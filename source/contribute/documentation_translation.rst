@@ -105,6 +105,23 @@ When you will get the documentation changes with bzr pull (for example), the
 new sections and some changed sections will be reset to the untranslated text
 when you will rebuild the translation with *make i18n LANG=fr*.
 
+Building the documentation in your language
+-------------------------------------------
+
+That is very simple because the directory and file structure is exactly the
+same as the original structure: ::
+
+  i18n
+  `-- fr
+      |-- build
+      `-- source
+
+For example, in *i18n/fr*, you just have to do a simple *make*::
+
+  make html
+
+And the html documentation will be built in *i18n/fr/build/html*.
+
 Status
 ------
 
