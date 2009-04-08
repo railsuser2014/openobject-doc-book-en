@@ -76,6 +76,9 @@ latex:
 	cp ../common/sphinx.sty build/latex
 	cp ../common/fncychap.sty build/latex
 
+book: build/latex/Makefile
+	../build_book.sh
+
 changes:
 	mkdir -p build/changes build/doctrees
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) build/changes
