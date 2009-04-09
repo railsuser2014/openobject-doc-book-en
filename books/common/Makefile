@@ -76,7 +76,7 @@ latex:
 	cp ../common/sphinx.sty build/latex
 	cp ../common/fncychap.sty build/latex
 
-book: build/latex/Makefile
+book: latex
 	../build_book.sh
 
 changes:

@@ -151,6 +151,7 @@ class LatexBook(object):
                             new_line = '\n'.join([old_line,
                                                   "",
                                                   r"\frontmatter",
+                                                  r"\pagestyle{foreword}",
                                                   r"\pagenumbering{roman}",
                                                   "",
                                                  ])

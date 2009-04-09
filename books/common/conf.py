@@ -101,6 +101,15 @@ tiny_latex_include = r"""
   \fancyhead[RE,LO]{}
 }
 
+\fancypagestyle{foreword}{%
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[LE,RO]{\thepage}
+  %\fancyhead[RE,LO]{\thechapter}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancyhead[RE,LO]{}
+}
+
 \fancyhf{} % clear all header and footer fields
 \fancyfoot[LE,RO]{\bfseries \thepage}
 \renewcommand{\headrulewidth}{0pt}
