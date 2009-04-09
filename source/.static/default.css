@@ -2,21 +2,21 @@
  * OpenERP Doc Design
  */
 
-div.js-kit-comments {
-  border: 1px solid black;
-  background-color: #e6e6e6;
-  position: relative;
-  float: right;
-  padding: 2px;
-  top: -40px;
-  right: -10px;
-  width: 22%;
-}
+/* div.js-kit-comments { */
+/*   border: 1px solid black; */
+/*   background-color: #e6e6e6; */
+/*   position: relative; */
+/*   float: right; */
+/*   padding: 2px; */
+/*   top: -40px; */
+/*   right: -10px; */
+/*   width: 22%; */
+/* } */
 
-div.js-kit-comments a {
-  color: #444;
-  font-size: 10pt;
-}
+/* div.js-kit-comments a { */
+/*   color: #444; */
+/*   font-size: 10pt; */
+/* } */
 
 .js-poweredBy {
   display: none;
