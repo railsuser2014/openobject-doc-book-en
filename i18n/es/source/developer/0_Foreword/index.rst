@@ -3,9 +3,9 @@
 .. i18n: Forewords
 .. i18n: =========
 
-=========
-Forewords
-=========
+=======
+Prólogo
+=======
 
 .. i18n: Introduction
 .. i18n: ============
