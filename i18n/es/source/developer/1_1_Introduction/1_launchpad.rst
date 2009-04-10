@@ -2,35 +2,35 @@
 .. i18n: Working with Launchpad
 .. i18n: ======================
 
-Working with Launchpad
-======================
+Trabajando con Launchpad
+========================
 
 .. i18n: Registration and Configuration
 .. i18n: ------------------------------
 
-Registration and Configuration
-------------------------------
+Registro y Configuración
+------------------------
 
 .. i18n: Before you can commit on launchpad, you need to create a login.
 
-Before you can commit on launchpad, you need to create a login.
+Antes de que puedas hacer *commit* en launchpad, necesitas registrarte.
 
 .. i18n: Go to: https://launchpad.net --> log in / register on top right.
 
-Go to: https://launchpad.net --> log in / register on top right.
+Ir a: https://launchpad.net --> log in / register en la parte superior derecha.
 
 .. i18n: You enter your e-mail address and you wait for an e-mail which will guide you trough the process needed to create your login.
 
-You enter your e-mail address and you wait for an e-mail which will guide you trough the process needed to create your login.
+Ingresas tu dirección de correo electrónico y esperas por un correo que te guiará a través del proceso de registro en el sitio.
 
 .. i18n: This login is only needed if you intend to commit on bazaar on openerp-commiter or on your own branch.
 
-This login is only needed if you intend to commit on bazaar on openerp-commiter or on your own branch.
+Este registro solo es necesario si si usted tiene la intención de hacer *commit* en bazaar sobre openerp-commiter o crear tu propio *branch*.
 
 .. i18n: You can refer to this link :
 .. i18n: https://help.launchpad.net/YourAccount/NewAccount
 
-You can refer to this link :
+Puede referirse a este enlace :
 https://help.launchpad.net/YourAccount/NewAccount
 
 .. i18n: Any contributor who is interested to become a commiter must show his interest
@@ -40,16 +40,17 @@ https://help.launchpad.net/YourAccount/NewAccount
 .. i18n: You can even suggest additional modules and/or functionalities on our :ref:`bug
 .. i18n: tracker <bug-tracker-link>` system.
 
-Any contributor who is interested to become a commiter must show his interest
-on working for openerp project and his ability to do it in a proper way as the
-selection for this group is based on meritocracy. It can be by proposing bug
-fixes, features requested on our :ref:`bug tracker <bug-tracker-link>` system.
-You can even suggest additional modules and/or functionalities on our :ref:`bug
-tracker <bug-tracker-link>` system.
+Cualquier contribuidor que este interesado en ser *commiter* debe mostrar su
+interés en trabajar en el Proyecto OpenERP y su capacidad para hacerlo de una
+manera adecuada como la selección de este grupo es basado en una meritocracia.
+Puede proponer corrección de errores, características solicitadas en nuestro
+sistema :ref:`bug tracker <bug-tracker-link>`.
+Puede incluso sugerir módulos adicionales y/o funcionalidades en nuestro sistema 
+:ref:`bugtracker <bug-tracker-link>`.
 
 .. i18n: You contribute or join Open ERP team, : https://help.launchpad.net/Teams/Joining
 
-You contribute or join Open ERP team, : https://help.launchpad.net/Teams/Joining
+Puedes contribuir o unirte al equipo de Open ERP, : https://help.launchpad.net/Teams/Joining
 
 .. i18n: Contributors are people who wants to help the project getting better, add
 .. i18n: functionnality and improve stability. Everyone can contribute on the project
@@ -63,16 +64,16 @@ posting patch.
 
 .. i18n: The community team is available on launchpad: https://launchpad.net/~openerp-community
 
-The community team is available on launchpad: https://launchpad.net/~openerp-community
+El equipo de la Comunidad esta disponible en launchpad: https://launchpad.net/~openerp-community
 
 .. i18n: Member of the quality and commiter team are automatically members of the community.
 
-Member of the quality and commiter team are automatically members of the community.
+Miembros de los equipos de calidad y desarrollo son automáticamente miembros de la comunidad.
 
 .. i18n: Installing Bazaar
 .. i18n: +++++++++++++++++
 
-Installing Bazaar
+Instalando Bazaar
 +++++++++++++++++
 
 .. i18n: .. index::
@@ -80,18 +81,18 @@ Installing Bazaar
 .. i18n:    single: Installation; Bazaar
 .. i18n: .. 
 
-.. index::
-   single: Bazaar; installation
-   single: Installation; Bazaar
-.. 
+.. Indice::
+   single: Bazaar; instalación
+   single: Instalación; Bazaar
+
 
 .. i18n: Get Bazaar version control to pull the source from Launchpad.
 
-Get Bazaar version control to pull the source from Launchpad.
+Obtenga el sistema de control de versiones Bazaar para poder poner el código fuente en Launchpad.
 
 .. i18n: To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list by
 
-To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list by
+Para instalar bazaar en cualquier distribución de Ubuntu, puedes editar /etc/apt/sources.list por
 
 .. i18n: ::
 .. i18n: 
@@ -103,7 +104,7 @@ To install bazaar on any ubuntu distribution, you can edit /etc/apt/sources.list
 
 .. i18n: and put these lines in it:
 
-and put these lines in it:
+y agregar estas líneas:
 
 .. i18n: ::
 .. i18n: 
@@ -117,7 +118,7 @@ and put these lines in it:
 
 .. i18n: Then, do the following
 
-Then, do the following
+Luego, hacer los siguiente
 
 .. i18n: ::
 .. i18n: 
@@ -129,7 +130,7 @@ Then, do the following
 
 .. i18n: To work correctly, bzr version must be at least 1.3. Check it with the command:
 
-To work correctly, bzr version must be at least 1.3. Check it with the command:
+Para trabajar correctamente, la versión debzr debe ser al menos 1.3. Revísalo con el comando:
 
 .. i18n: ::
 .. i18n: 
@@ -142,12 +143,12 @@ To work correctly, bzr version must be at least 1.3. Check it with the command:
 .. i18n: If you don't have at least 1.3 version, you can check this url: http://bazaar-vcs.org/Download
 .. i18n: On debian, in any distribution, the 1.5 version is working, you can get it on this url: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
 
-If you don't have at least 1.3 version, you can check this url: http://bazaar-vcs.org/Download
-On debian, in any distribution, the 1.5 version is working, you can get it on this url: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
+Si no tienes al menos la version 1.3, puedes servisar este sitio: http://bazaar-vcs.org/Download
+En Debian,para cualquier distribución, la version 1.5, puedes obtenerla de este sitio: http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb
 
 .. i18n: If you experience problems with Bazaar, please read the :ref:`bazaar-faq-link` before asking any questions.
 
-If you experience problems with Bazaar, please read the :ref:`bazaar-faq-link` before asking any questions.
+Si tienes problemas con Bazaar, por favor leer :ref:`bazaar-faq-link` antes de hacer cualquier pregunta.
 
 .. i18n: Working with Branch
 .. i18n: -------------------
