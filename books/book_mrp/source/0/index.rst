@@ -218,6 +218,7 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 
 .. raw:: latex
 
+    \pagebreak
     \section*{Acknowledgements}
     \addcontentsline{toc}{section}{Acknowledgements}
 

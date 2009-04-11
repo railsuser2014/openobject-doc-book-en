@@ -192,6 +192,133 @@ Sometimes you need to refer the relation of a relation. For example, supposing y
         'country_id': fields.related('state_id', 'country_id', type="many2one", 
 				      relation="module.country", string="Country", store=False)
 
+Functional Field
+++++++++++++++++
+
+A functional field is a field whose value is calculated by a function (rather than being stored in the database).
+
+**Parameters:** fnct, arg=None, fnct_inv=None, fnct_inv_arg=None, type="%green%float%black%", fnct_search=None, obj=None, method=False, store=True
+
+where
+
+    * :guilabel:`type` is the field type name returned by the function. It can be any field type name except function.
+    * :guilabel:`store` If you want to store field in database or not. Default is False.
+    * :guilabel:`method` whether the field is computed by a method (of an object) or a global function
+    * :guilabel:`fnct` is the function or method that will compute the field value. It must have been declared before declaring the functional field. 
+
+If *method* is True, the signature of the method must be::
+
+	def fnct(self, cr, uid, ids, field_name, arg, context)
+
+otherwise (if it is a global function), its signature must be::
+
+	def fnct(cr, table, ids, field_name, arg, context)
+
+Either way, it must return a dictionary of values of the form **{id'_1_': value'_1_', id'_2_': value'_2_',...}.**
+
+The values of the returned dictionary must be of the type specified by the type argument in the field declaration.
+
+    * :guilabel:`fnct_inv` is the function or method that will allow writing values in that field. 
+
+If *method* is true, the signature of the method must be::
+
+	def fnct(self, cr, uid, ids, field_name, field_value, arg, context)
+
+otherwise (if it is a global function), it should be::
+
+	def fnct(cr, table, ids, field_name, field_value, arg, context)
+
+* :guilabel:`fnct_search` allows you to define the searching behaviour on that field. 
+
+If method is true, the signature of the method must be::
+
+	def fnct(self, cr, uid, obj, name, args)
+
+otherwise (if it is a global function), it should be::
+
+	def fnct(cr, uid, obj, name, args)
+
+The return value is a list countaining 3-part tuplets which are used in search funtion::
+
+	return [('id','in',[1,3,5])]
+
+:Example Of Functional Field:
+
+Suppose we create a contract object which is :
+
+.. code-block:: python
+
+	class hr_contract(osv.osv):
+	    _name = 'hr.contract'
+	    _description = 'Contract'
+	    _columns = {
+		'name' : fields.char('Contract Name', size=30, required=True),
+		'employee_id' : fields.many2one('hr.employee', 'Employee', required=True),
+		'function' : fields.many2one('res.partner.function', 'Function'),
+	    }
+	hr_contract()
+
+If we want to add a field that retrieves the function of an employee by looking its current contract, we use a functional field. The object hr_employee is inherited this way:
+
+.. code-block:: python
+
+	class hr_employee(osv.osv):
+	    _name = "hr.employee"
+	    _description = "Employee"
+	    _inherit = "hr.employee"
+	    _columns = {
+		'contract_ids' : fields.one2many('hr.contract', 'employee_id', 'Contracts'),
+		'function' : fields.function(_get_cur_function_id, type='many2one', obj="res.partner.function",
+		                             method=True, string='Contract Function'),
+	    }
+	hr_employee()
+
+.. note:: three points
+
+	    * :guilabel:`type` ='many2one' is because the function field must create a many2one field; function is declared as a many2one in hr_contract also.
+	    * :guilabel:`obj` ="res.partner.function" is used to specify that the object to use for the many2one field is res.partner.function.
+	    * We called our method :guilabel:`_get_cur_function_id` because its role is to return a dictionary whose keys are ids of employees, and whose corresponding values are ids of the function of those employees. The code of this method is: 
+
+.. code-block:: python
+
+	def _get_cur_function_id(self, cr, uid, ids, field_name, arg, context):
+	    for i in ids:
+		#get the id of the current function of the employee of identifier "i"
+		sql_req= """
+		SELECT f.id AS func_id
+		FROM hr_contract c
+		  LEFT JOIN res_partner_function f ON (f.id = c.function)
+		WHERE
+		  (c.employee_id = %d)
+		""" % (i,)
+	 
+		cr.execute(sql_req)
+		sql_res = cr.dictfetchone()
+	 
+		if sql_res: #The employee has one associated contract
+		    res[i] = sql_res['func_id']
+		else:
+		    #res[i] must be set to False and not to None because of XML:RPC
+		    # "cannot marshal None unless allow_none is enabled"
+		    res[i] = False
+		    return res
+
+The id of the function is retrieved using a SQL query. Note that if the query returns no result, the value of sql_res['func_id'] will be None. We force the False value in this case value because XML:RPC (communication between the server and the client) doesn't allow to transmit this value.
+
+:store={...} Enhancement:
+
+It will compute the field depends on other objects.
+
+:Syntex: store={'object_name':(function_name,['field_name1','field_name2'],priority)} It will call function function_name when any changes will be applied on field list ['field1','field2'] on object 'object_name' and output of the function will send as a parameter for main function of the field.
+
+:Example In membership module:
+
+.. code-block:: python
+
+	'membership_state': fields.function(_membership_state, method=True, string='Current membership state', type='selection', selection=STATE, 
+	  store={'account.invoice':(_get_invoice_partner,['state'], 10),
+	  'membership.membership_line':(_get_partner_id,['state'], 10),
+	  'res.partner':(lambda self,cr,uid,ids,c={}:ids, ['free_member'], 10)}),
 
 Property Fields
 +++++++++++++++

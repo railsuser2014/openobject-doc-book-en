@@ -11,6 +11,7 @@ __version__ = '0.1'
 USAGE = """%prog [options] <latex build directory>"""
 
 CRLF = '\n\r'
+CONTENT_STARTS_AT_PAGE = 5 # we remove the first page and add 3 pages
 
 rgxs = {
     'begin_chapter': r"""\\chapter""",
@@ -150,6 +151,7 @@ class LatexBook(object):
                             new_line = '\n'.join([old_line,
                                                   "",
                                                   r"\frontmatter",
+                                                  r"\pagestyle{foreword}",
                                                   r"\pagenumbering{roman}",
                                                   "",
                                                  ])
@@ -169,7 +171,8 @@ class LatexBook(object):
                                                   "",
                                                  ])
                         elif rgxname == 'tableofcontents':
-                            new_line = '\n'.join([old_line,
+                            new_line = '\n'.join([r"\setcounter{page}{%s}" % (CONTENT_STARTS_AT_PAGE, ),
+                                                  old_line,
                                                   r"\newpage",
                                                   "",
                                                  ])
