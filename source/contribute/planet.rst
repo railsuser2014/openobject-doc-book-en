@@ -1,5 +1,5 @@
 
-.. _bazaar-faq-link:
+.. _planet-link:
 
 The Planets and announcements
 -----------------------------

@@ -2,6 +2,33 @@
  * OpenERP Doc Design
  */
 
+/* div.js-kit-comments { */
+/*   border: 1px solid black; */
+/*   background-color: #e6e6e6; */
+/*   position: relative; */
+/*   float: right; */
+/*   padding: 2px; */
+/*   top: -40px; */
+/*   right: -10px; */
+/*   width: 22%; */
+/* } */
+
+/* div.js-kit-comments a { */
+/*   color: #444; */
+/*   font-size: 10pt; */
+/* } */
+
+.js-poweredBy {
+  display: none;
+  visibility: hidden
+}
+
+/*div.tiny-global-comment-area {*/
+/*  border: 1px solid black;*/
+/*  background-color: #e6e6e6;*/
+/*  padding: 2px;*/
+/*}*/
+
 div.related-tiny li.right a.bottom-nav-links {
   font-size: 75%;
   /*float:right;*/

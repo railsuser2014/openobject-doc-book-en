@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-#
+
+import sys, os
+from docutils import nodes
+
 # openobject-doc documentation build configuration file, created by
 # sphinx-quickstart on Tue Dec  9 11:16:22 2008.
 #
@@ -10,8 +13,6 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
-
-import sys, os
 
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
@@ -38,10 +39,6 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
-# General information about the project.
-project = u'OpenObject Documentation'
-copyright = u'2008, OpenObject Community'
-
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -63,32 +60,32 @@ today_fmt = '%Y-%m-%d'
 
 # List of documents that shouldn't be included in the build.
 unused_docs = [
-	'bi/openobject_module/openobject_module.rst',
-	'bi/installation/install_olap.rst',
-	'bi/installation/install_web.rst',
-	'book/content.rst',
-	'contents.rst',
-	'contribute/summary_of_ressources.rst',
-	'developer/7_School/index.rst',
-	'features/example.rst',
-	'features/repairs.rst',
-	'install/windows/allinone.rst',
-	'verticalisations/index.rst',
-
+  'bi/openobject_module/openobject_module.rst',
+  'bi/installation/install_olap.rst',
+  'bi/installation/install_web.rst',
+  'book/content.rst',
+  'contents.rst',
+  'contribute/summary_of_ressources.rst',
+  'developer/7_School/index.rst',
+  'features/example.rst',
+  'features/repairs.rst',
+  'install/windows/allinone.rst',
+  'verticalisations/index.rst',
 ]
+
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_trees = [
-    #'bi',
-    #'book',
-    #'customize',
-    #'install',
-    #'contribute',
-    #'developer',
-    #'features',
-    #'technical_guide',
-    #'verticalisations',
-    ]
+   #'bi',
+   #'book',
+   #'customize',
+   #'install',
+   #'contribute',
+   #'developer',
+   #'features',
+   #'technical_guide',
+   #'verticalisations',
+]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -198,7 +195,7 @@ latex_documents = [
    #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
    ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
    ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
-   #('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
+   ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
    ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
    #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
    ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
@@ -260,14 +257,31 @@ latex_elements = {
 #latex_use_modindex = True
 
 def end_foreword_directive(name, arguments, options, content, lineno,
-                       content_offset, block_text, state, state_machine):
+                           content_offset, block_text, state, state_machine):
     return [nodes.Text('')]
 
 def begin_conclusion_directive(name, arguments, options, content, lineno,
-                       content_offset, block_text, state, state_machine):
+                               content_offset, block_text, state, state_machine):
     return [nodes.Text('')]
 
+# add js-kit comments or not:
+js_kit_comments = True
+
 def setup(app):
+    from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+
+    def depart_title_new(self, node):
+        old_depart_title(self, node) # call the original depart_title.
+        if self.builder.globalcontext.get('builder') == 'html':
+            parent_class_name = node.parent.__class__.__name__
+            if parent_class_name == 'section' and self.section_level == 2:
+                title_id = node.parent.attributes['ids'][0]
+                self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+
+    if js_kit_comments:
+        old_depart_title = HTMLTranslator.depart_title
+        HTMLTranslator.depart_title = depart_title_new
+
     app.add_directive('end_foreword', end_foreword_directive, 1, (0, 0, 0))
     app.add_directive('begin_conclusion', begin_conclusion_directive, 1, (0, 0, 0))
 

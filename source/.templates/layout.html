@@ -14,6 +14,10 @@ try {
 
 </script>
 
+{#
+<script src="{{ pathto('_static/tiny_js_kit.js', 1) }}" type="text/javascript"></script>
+#}
+
   {{ super() }}
 {% endblock %}
 
@@ -97,10 +101,27 @@ try {
 {#
 {%- block relbar2 %}{{ relbar_tiny() }}{% endblock %}
 #}
-{%- block footer %}
 
-  <div class="js-kit-comments" permalink=""></div>
-  <script src="http://js-kit.com/comments.js"></script>
+{%- block document %}
+    <div class="document">
+      <div class="documentwrapper">
+      {%- if builder != 'htmlhelp' %}
+        <div class="bodywrapper">
+      {%- endif %}
+          <div class="body">
+            {% block body %} {% endblock %}
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+      {%- if builder != 'htmlhelp' %}
+        </div>
+      {%- endif %}
+      </div>
+{%- endblock %}
+
+
+{%- block footer %}
 
   {%- macro relbar_tiny2 %}
       <div class="related-tiny">
