@@ -76,15 +76,15 @@ unused_docs = [
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_trees = [
-   'bi',
-   'book',
-   'customize',
+   #'bi',
+   #'book',
+   #'customize',
    #'install',
-   'contribute',
-   'developer',
-   'features',
-   'technical_guide',
-   'verticalisations',
+   #'contribute',
+   #'developer',
+   #'features',
+   #'technical_guide',
+   #'verticalisations',
 ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
