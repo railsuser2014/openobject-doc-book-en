@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_simulation"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_simulation"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Accounting simulation journal (*account_simulation*)

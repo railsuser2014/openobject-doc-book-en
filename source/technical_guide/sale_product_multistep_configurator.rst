@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_product_multistep_configurator"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_product_multistep_configurator"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 MultiStep Product Configurator (*sale_product_multistep_configurator*)

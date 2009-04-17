@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_extended"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_extended"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Product extension to track sales and purchases (*product_extended*)

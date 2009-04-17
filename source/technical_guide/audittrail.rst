@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="audittrail"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/audittrail"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Audit Trail (*audittrail*)

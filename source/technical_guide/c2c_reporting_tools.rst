@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="c2c_reporting_tools"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/c2c_reporting_tools"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 c2c Reporting Tools. A library that provide a new way to create clean reports efficiently (*c2c_reporting_tools*)

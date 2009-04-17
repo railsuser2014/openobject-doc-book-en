@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="document_ics"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/document_ics"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Support for iCal based on Document Management System (*document_ics*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="profile_bookstore"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/profile_bookstore"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Bookstore Profile (*profile_bookstore*)

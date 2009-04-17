@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="profile_association"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/profile_association"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Association profile (*profile_association*)

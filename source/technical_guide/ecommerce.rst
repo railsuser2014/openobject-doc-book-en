@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="ecommerce"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/ecommerce"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 E-Commerce (*ecommerce*)

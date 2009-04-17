@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_coda_2_1_d"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_coda_2_1_d"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Account CODA Version 2.1 D (*account_coda_2_1_d*)

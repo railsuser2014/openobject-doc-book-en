@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="multi_company_account"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/multi_company_account"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Multi company for accounting module (*multi_company_account*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_visible_discount"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_visible_discount"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Visible Discount Module (*product_visible_discount*)

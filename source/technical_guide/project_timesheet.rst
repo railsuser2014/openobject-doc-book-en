@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="project_timesheet"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/project_timesheet"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Project Timesheet (*project_timesheet*)

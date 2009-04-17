@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="fleet_maintenance"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/fleet_maintenance"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Help managing maintenance contracts related to product fleet (*fleet_maintenance*)

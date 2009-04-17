@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_supplier_direct_delivery"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_supplier_direct_delivery"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)

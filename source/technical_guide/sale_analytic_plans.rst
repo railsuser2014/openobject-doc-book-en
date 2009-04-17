@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_analytic_plans"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_analytic_plans"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sales Analytic Distribution Management (*sale_analytic_plans*)

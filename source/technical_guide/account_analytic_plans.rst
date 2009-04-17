@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_analytic_plans"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_analytic_plans"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Multiple-plans management in Analytic Accounting (*account_analytic_plans*)

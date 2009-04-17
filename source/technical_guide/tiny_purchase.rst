@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="tiny_purchase"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/tiny_purchase"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Tiny purchase (*tiny_purchase*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_invoice_analytic_required"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_invoice_analytic_required"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Account invoice analytic required (*account_invoice_analytic_required*)

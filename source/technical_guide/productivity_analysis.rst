@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="productivity_analysis"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/productivity_analysis"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Productivity Analysis (*productivity_analysis*)

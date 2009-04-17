@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_invoice_number"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_invoice_number"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 account_invoice_number (*account_invoice_number*)

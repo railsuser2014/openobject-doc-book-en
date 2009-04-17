@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="test_44"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/test_44"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Test New Features (*test_44*)

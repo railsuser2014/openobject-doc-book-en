@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="maintenance_editor"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/maintenance_editor"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Maintenance Editor (*maintenance_editor*)

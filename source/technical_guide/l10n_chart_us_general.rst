@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_us_general"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_us_general"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)

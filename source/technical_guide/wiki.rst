@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="wiki"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/wiki"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Document Management - Wiki (*wiki*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="profile_indian_account"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/profile_indian_account"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Indian Accounting (*profile_indian_account*)

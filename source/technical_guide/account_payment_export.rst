@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_payment_export"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_payment_export"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Payment Order Export (*account_payment_export*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_intrastat"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_intrastat"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Intrastat Reporting - Reporting (*report_intrastat*)

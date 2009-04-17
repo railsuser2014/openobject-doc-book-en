@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_ch_vat_brut"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_ch_vat_brut"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Switzerland - VAT Brut (*l10n_ch_vat_brut*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_ch_zip_and_bank"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_ch_zip_and_bank"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Switzerland localisation bank and zip data Camptocamp (*l10n_ch_zip_and_bank*)

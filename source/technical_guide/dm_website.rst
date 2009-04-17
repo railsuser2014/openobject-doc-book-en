@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="dm_website"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/dm_website"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Direct Marketing For Web Site (*dm_website*)

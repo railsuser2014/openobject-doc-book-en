@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="auto_email_stock"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/auto_email_stock"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Auto Email Stock Picking (*auto_email_stock*)

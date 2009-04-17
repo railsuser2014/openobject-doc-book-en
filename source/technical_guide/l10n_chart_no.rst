@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_no"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_no"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Norway - Chart of Accounts (*l10n_chart_no*)

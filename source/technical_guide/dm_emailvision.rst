@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="dm_emailvision"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/dm_emailvision"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Direct Marketing For EmailVision (*dm_emailvision*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="mrp_production_report"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/mrp_production_report"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Production Report (*mrp_production_report*)

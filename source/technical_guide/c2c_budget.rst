@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="c2c_budget"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/c2c_budget"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Advanced Budget (*c2c_budget*)

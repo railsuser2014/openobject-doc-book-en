@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_ca-qc"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_ca-qc"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Canada - Quebec Chart of Accounts (*l10n_ca-qc*)

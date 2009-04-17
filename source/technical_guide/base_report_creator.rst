@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_report_creator"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_report_creator"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Report Creator (*base_report_creator*)

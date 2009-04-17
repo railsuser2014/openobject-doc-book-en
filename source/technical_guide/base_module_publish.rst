@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_module_publish"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_module_publish"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Module publisher (*base_module_publish*)

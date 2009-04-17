@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="olap_extract"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/olap_extract"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 olap_extract (*olap_extract*)

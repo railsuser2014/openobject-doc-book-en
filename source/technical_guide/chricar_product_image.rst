@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="chricar_product_image"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/chricar_product_image"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Product Image (*chricar_product_image*)

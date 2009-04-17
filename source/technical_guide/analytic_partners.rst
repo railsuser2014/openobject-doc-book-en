@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="analytic_partners"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/analytic_partners"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Analytic accounts with multiple partners (*analytic_partners*)

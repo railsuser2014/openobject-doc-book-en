@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_ch_chart_c2c_pcg"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_ch_chart_c2c_pcg"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Suisse - Plan comptable general pour PME STERCHI (*l10n_ch_chart_c2c_pcg*)

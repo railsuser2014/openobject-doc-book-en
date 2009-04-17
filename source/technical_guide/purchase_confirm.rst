@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_confirm"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/purchase_confirm"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Confirm all selected purchase order at once (*purchase_confirm*)

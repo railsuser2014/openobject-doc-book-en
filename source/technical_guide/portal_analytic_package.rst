@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="portal_analytic_package"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/portal_analytic_package"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Portal Management - Analytic Entries (*portal_analytic_package*)

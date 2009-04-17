@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="radiotv"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/radiotv"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Tiny ERP TV & Radio Program Grid Module (*radiotv*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_mrp"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_mrp"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 MRP Management - Reporting (*report_mrp*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="google_calendar"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/google_calendar"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Google calendar (*google_calendar*)

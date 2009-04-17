@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_nl_standard"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_nl_standard"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Netherlands - Standard Chart of Account (*l10n_chart_nl_standard*)

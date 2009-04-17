@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="google_map"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/google_map"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Google Map (*google_map*)

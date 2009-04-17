@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_ca_fr"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_ca_fr"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Canadian - French - Chart of Acounts (*l10n_chart_ca_fr*)

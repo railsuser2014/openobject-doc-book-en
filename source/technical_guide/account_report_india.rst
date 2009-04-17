@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_report_india"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_report_india"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Indian Accounting and financial management (*account_report_india*)

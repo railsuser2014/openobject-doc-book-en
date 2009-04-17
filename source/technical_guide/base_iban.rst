@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_iban"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_iban"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 IBAN (*base_iban*)

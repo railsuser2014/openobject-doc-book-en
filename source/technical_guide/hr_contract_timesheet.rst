@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="hr_contract_timesheet"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hr_contract_timesheet"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Human Resources Timesheets on contracts (*hr_contract_timesheet*)

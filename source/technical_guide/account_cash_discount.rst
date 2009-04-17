@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_cash_discount"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_cash_discount"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Payement Term with Cash Discount (*account_cash_discount*)

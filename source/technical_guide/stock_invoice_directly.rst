@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="stock_invoice_directly"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock_invoice_directly"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Invoice Picking Directly (*stock_invoice_directly*)

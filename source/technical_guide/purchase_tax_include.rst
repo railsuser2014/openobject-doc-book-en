@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_tax_include"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/purchase_tax_include"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Purchases with taxes included (*purchase_tax_include*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="email_sale"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/email_sale"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Email Sale order (*email_sale*)

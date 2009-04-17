@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="hr_evaluation"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hr_evaluation"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Human Resources Evaluation (*hr_evaluation*)

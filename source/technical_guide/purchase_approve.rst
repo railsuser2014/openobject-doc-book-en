@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_approve"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/purchase_approve"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Approve PO automatically when confirmed. (*purchase_approve*)

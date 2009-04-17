@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_us_service"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_us_service"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 United States - Chart of Accounts for Services (*l10n_chart_us_service*)

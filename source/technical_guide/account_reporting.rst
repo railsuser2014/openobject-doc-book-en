@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_reporting"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_reporting"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Reporting of Balancesheet for accounting (*account_reporting*)

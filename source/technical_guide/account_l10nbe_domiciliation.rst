@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_l10nbe_domiciliation"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_l10nbe_domiciliation"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Account l10nbe Domiciliation (*account_l10nbe_domiciliation*)

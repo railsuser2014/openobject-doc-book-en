@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="crm"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/crm"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Customer & Supplier Relationship Management (*crm*)

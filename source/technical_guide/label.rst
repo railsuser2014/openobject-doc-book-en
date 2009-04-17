@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="label"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/label"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Partner labels (*label*)

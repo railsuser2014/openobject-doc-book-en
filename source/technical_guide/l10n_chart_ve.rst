@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_ve"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_ve"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Venezuela -Chart of Account (*l10n_chart_ve*)

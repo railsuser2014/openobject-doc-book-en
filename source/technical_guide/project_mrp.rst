@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="project_mrp"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/project_mrp"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Project Management - MRP and Sale Integration (*project_mrp*)

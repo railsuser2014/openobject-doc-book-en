@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="board_project"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/board_project"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Board for project users (*board_project*)

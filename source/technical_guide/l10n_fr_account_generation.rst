@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_fr_account_generation"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_fr_account_generation"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 France - Generation de compte comptable tiers (*l10n_fr_account_generation*)

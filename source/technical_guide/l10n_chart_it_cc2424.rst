@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_it_cc2424"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_it_cc2424"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Italy - CC2424 - Chart of Accounts (*l10n_chart_it_cc2424*)

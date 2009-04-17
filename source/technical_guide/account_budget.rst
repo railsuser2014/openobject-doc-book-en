@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_budget"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_budget"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Budget Management (*account_budget*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="olap_crm"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/olap_crm"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 olap_crm (*olap_crm*)

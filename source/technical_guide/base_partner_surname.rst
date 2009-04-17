@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_partner_surname"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_partner_surname"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Base Partner Surname (*base_partner_surname*)

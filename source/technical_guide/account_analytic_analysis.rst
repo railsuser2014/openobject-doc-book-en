@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_analytic_analysis"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_analytic_analysis"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 report_account_analytic (*account_analytic_analysis*)

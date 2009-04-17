@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_se_food"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_se_food"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sweden - Food industries - Chart of Accounts (*l10n_chart_se_food*)

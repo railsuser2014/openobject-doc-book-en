@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="cci_data_csv"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/cci_data_csv"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 cci Data 1 (*cci_data_csv*)

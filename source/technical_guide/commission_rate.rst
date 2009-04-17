@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="commission_rate"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/commission_rate"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sale Agent Information (*commission_rate*)

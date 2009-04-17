@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="analytic_user_function"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/analytic_user_function"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Analytic User Function (*analytic_user_function*)

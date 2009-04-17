@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_da"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_da"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Denmark Chart of Accounts (*l10n_chart_da*)

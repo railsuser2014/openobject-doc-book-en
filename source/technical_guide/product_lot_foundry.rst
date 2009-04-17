@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_lot_foundry"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_lot_foundry"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Products Lot Foundry (*product_lot_foundry*)

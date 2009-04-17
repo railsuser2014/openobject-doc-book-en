@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="crm_telemarketing"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/crm_telemarketing"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Telemarketing Management (*crm_telemarketing*)

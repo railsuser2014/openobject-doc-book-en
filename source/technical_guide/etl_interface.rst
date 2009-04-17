@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="etl_interface"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/etl_interface"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 ETL system (*etl_interface*)

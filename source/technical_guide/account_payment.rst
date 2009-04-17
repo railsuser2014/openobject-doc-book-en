@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_payment"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_payment"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Payment Management (*account_payment*)

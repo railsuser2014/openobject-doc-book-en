@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="stock_planning"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock_planning"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Master Procurement Schedule (*stock_planning*)

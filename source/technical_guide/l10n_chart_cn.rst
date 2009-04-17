@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_cn"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_cn"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 China - Chart of Accounts (*l10n_chart_cn*)

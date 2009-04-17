@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="proforma_followup"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/proforma_followup"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Pro-forma invoices and their payments Management (*proforma_followup*)

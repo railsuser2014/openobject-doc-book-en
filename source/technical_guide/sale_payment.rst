@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_payment"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_payment"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sale payment type (*sale_payment*)

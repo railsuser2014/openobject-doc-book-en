@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_margin"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_margin"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Margins in Product (*product_margin*)

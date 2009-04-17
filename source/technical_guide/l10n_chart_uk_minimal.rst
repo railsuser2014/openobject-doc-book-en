@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_uk_minimal"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_uk_minimal"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 United Kingdom - minimal (*l10n_chart_uk_minimal*)

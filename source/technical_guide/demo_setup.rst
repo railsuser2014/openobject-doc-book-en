@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="demo_setup"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/demo_setup"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Online Demo Setup Module (*demo_setup*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="esale_osc"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/esale_osc"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 OScommerce Interface / ZenCart (*esale_osc*)

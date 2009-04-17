@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_number"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/purchase_number"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Purchase Number (*purchase_number*)

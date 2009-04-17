@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_url_menu"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_url_menu"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Url Menus (*base_url_menu*)

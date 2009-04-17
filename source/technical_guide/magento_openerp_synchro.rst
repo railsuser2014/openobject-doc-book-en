@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="magento_openerp_synchro"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/magento_openerp_synchro"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Magento Synchro Smile (*magento_openerp_synchro*)

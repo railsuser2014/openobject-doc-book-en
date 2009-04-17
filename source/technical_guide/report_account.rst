@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_account"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_account"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Account Reporting - Reporting (*report_account*)

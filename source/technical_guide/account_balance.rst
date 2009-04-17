@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_balance"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_balance"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Accounting and financial management-Compare Accounts (*account_balance*)

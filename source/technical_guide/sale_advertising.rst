@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_advertising"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_advertising"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sales: Avertising Sales (*sale_advertising*)

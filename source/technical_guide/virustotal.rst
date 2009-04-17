@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="virustotal"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/virustotal"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Allow attachments to be checked via virustotal.com (*virustotal*)

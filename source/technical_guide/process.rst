@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="process"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/process"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Enterprise Process (*process*)

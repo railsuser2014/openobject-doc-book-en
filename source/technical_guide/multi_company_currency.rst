@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="multi_company_currency"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/multi_company_currency"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Multi Currency for Multi Company (*multi_company_currency*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="mrp_jit"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/mrp_jit"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 MRP JIT (*mrp_jit*)

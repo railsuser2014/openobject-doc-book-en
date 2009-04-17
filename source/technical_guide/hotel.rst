@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="hotel"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hotel"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Hotel Management (*hotel*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_lu"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_lu"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Luxembourg - Plan Comptable Minimum Normalise (*l10n_lu*)

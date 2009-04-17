@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="md_hr_course"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/md_hr_course"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Pilot Human Resources (*md_hr_course*)

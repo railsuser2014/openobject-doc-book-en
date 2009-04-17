@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="portal_sale"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/portal_sale"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Portal Sale Management (*portal_sale*)

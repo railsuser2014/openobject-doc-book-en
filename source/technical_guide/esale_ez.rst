@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="esale_ez"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/esale_ez"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 EZ Publish eCommerce Interface (*esale_ez*)

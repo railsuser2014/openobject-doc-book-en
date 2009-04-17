@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="flagey"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/flagey"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Auction module - Flagey Customs (*flagey*)

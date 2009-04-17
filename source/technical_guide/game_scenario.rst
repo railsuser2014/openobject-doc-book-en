@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="game_scenario"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/game_scenario"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Scenario of games (*game_scenario*)

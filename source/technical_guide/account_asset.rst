@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_asset"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_asset"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Asset management (*account_asset*)

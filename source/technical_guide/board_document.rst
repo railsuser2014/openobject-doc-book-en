@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="board_document"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/board_document"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Dashboard for Document Management (*board_document*)

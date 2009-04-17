@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="merge_picking"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/merge_picking"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Merge Picking (*merge_picking*)

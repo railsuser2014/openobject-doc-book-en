@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_discount"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/purchase_discount"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Purchase Order Lines With Discounts (*purchase_discount*)

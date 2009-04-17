@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_voucher"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_voucher"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 India Accounting (*account_voucher*)

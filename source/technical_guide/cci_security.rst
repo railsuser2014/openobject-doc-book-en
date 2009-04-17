@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="cci_security"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/cci_security"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 CCI Security (*cci_security*)

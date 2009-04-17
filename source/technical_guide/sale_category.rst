@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_category"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_category"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sale Order Line With Categories (*sale_category*)

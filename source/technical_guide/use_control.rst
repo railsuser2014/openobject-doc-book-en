@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="use_control"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/use_control"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 On Demand Open Object - Subscription Control (*use_control*)

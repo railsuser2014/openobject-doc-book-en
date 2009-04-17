@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="cci_mission"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/cci_mission"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 CCI mission (*cci_mission*)

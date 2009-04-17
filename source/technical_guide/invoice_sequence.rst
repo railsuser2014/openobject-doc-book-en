@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="invoice_sequence"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/invoice_sequence"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Invoice lines with sequence number (*invoice_sequence*)

@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="stock_no_autopicking"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock_no_autopicking"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Stock No Auto-Picking (*stock_no_autopicking*)

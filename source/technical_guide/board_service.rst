@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="board_service"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/board_service"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Dashboard for Service Profile (*board_service*)

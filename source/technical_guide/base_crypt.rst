@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_crypt"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_crypt"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Base (*base_crypt*)

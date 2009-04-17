@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="users_ldap"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/users_ldap"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Authenticate users with ldap server (*users_ldap*)

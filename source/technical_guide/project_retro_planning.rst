@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="project_retro_planning"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/project_retro_planning"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Project Retro planning (*project_retro_planning*)

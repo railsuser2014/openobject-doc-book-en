@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_intercompany_auto"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_intercompany_auto"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Sale Inter-Company - Fully Automatic (*sale_intercompany_auto*)

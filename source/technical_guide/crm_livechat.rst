@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="crm_livechat"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/crm_livechat"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 CRM - Livechat Jabber Client (*crm_livechat*)

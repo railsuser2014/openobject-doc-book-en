@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_be_frnl"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_chart_be_frnl"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Belgium - French & Dutch (*l10n_chart_be_frnl*)

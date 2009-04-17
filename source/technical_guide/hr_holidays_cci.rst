@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="hr_holidays_cci"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hr_holidays_cci"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Human Resources: Holidays management (*hr_holidays_cci*)

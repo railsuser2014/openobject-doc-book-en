@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_task"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_task"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 Report on tasks by user for projects (*report_task*)

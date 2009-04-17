@@ -16,7 +16,7 @@
 
 .. raw:: html
 
-    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="cci_crm"></div>
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/cci_crm"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
 CCI CRM (*cci_crm*)
