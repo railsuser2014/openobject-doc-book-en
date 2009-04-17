@@ -269,14 +269,25 @@ js_kit_comments = True
 
 def setup(app):
     from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+    import pickle
 
     # load unique_path dict:
-#     comments_path_pickle_filename = "comments_path.pickle"
-#     if os.path.exists(comments_path_pickle_filename):
-#         comments_path_pickle_file = open(comments_path_pickle_filename, 'r')
-#         comments_path_dict = pickle.load(comments_path_pickle_file)
-#     else:
-#         comments_path_dict = {}
+    comments_path_pickle_filename = "comments_path.pickle"
+    if os.path.exists(comments_path_pickle_filename):
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'r')
+        comments_path_dict = pickle.load(comments_path_pickle_file)
+        comments_path_pickle_file.close()
+    else:
+        comments_path_dict = {}
+    this_build_comments_path_dict = {}
+
+    import atexit
+    def save_comments_path_dict():
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'w')
+        pickle.dump(comments_path_dict, comments_path_pickle_file)
+        comments_path_pickle_file.close()
+
+    atexit.register(save_comments_path_dict)
 
     def depart_title_new(self, node):
         res = old_depart_title(self, node) # call the original depart_title.
@@ -292,10 +303,17 @@ def setup(app):
                 path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
                 title_path = title_path[path_start+8:].replace('.rst', '')
 
-#                 if title_id in comments_path_dict:
-#                     pass
+                #this_build_comments_path_dict
+                if title_id not in this_build_comments_path_dict and title_id in comments_path_dict:
+                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
+                    this_build_comments_path_dict[title_id] = True
+                    comments_path_dict[title_id] = True
+                else:
+                    path = u"""/%s/%s""" % (title_path, title_id, )
+                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (path, ))
+                    this_build_comments_path_dict[title_id] = True
+                    comments_path_dict[title_id] = True
 
-                self.body.append(u"""<div class="js-kit-comments" path="/%s/%s" ></div>""" % (title_path, title_id, ))
         return res
 
     if js_kit_comments:
