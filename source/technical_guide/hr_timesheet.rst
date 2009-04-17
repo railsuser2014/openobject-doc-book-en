@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Human Resources (Timesheet encoding) (*hr_timesheet*)
@@ -24,14 +30,25 @@ Description
 
 ::
 
-  This module implement a timesheet system. Each employee can encode and track their time spent on the 
-  different projects. A project is an analytic account and the time spent on a project generate costs on 
+  This module implement a timesheet system. Each employee can encode and
+  track their time spent on the different projects. A project is an
+  analytic account and the time spent on a project generate costs on
   the analytic account.
   
   Lots of reporting on time and employee tracking are provided.
   
-  It is completely integrated with the cost accounting module. 
-  It allows you to set up a management by affair.
+  It is completely integrated with the cost accounting module. It allows you
+  to set up a management by affair.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/hr_timesheet.zip>`_
+  * `5.0 </download/modules/5.0/hr_timesheet.zip>`_
+  * `trunk </download/modules/trunk/hr_timesheet.zip>`_
+
 
 Dependencies
 ------------
@@ -47,7 +64,7 @@ Reports
 
  * Employee timesheet
 
- * Employees timesheet
+ * Employees Timesheet
 
 Menus
 -------
@@ -58,9 +75,9 @@ Menus
  * Human Resources/Working Hours/Working Hours
  * Human Resources/Working Hours/Working Hours/Working Hours of The Day
  * Human Resources/Reporting/Timesheet
- * Human Resources/Reporting/Timesheet/Employee timesheet
- * Human Resources/Reporting/Timesheet/Print my timesheet
- * Human Resources/Reporting/Timesheet/Employees timesheet
+ * Human Resources/Reporting/Timesheet/Employee Timesheet
+ * Human Resources/Reporting/Timesheet/Print My Timesheet
+ * Human Resources/Reporting/Timesheet/Employees Timesheet
  * Human Resources/Attendances/Sign in / Sign out by project
 
 Views
@@ -69,7 +86,6 @@ Views
  * hr.analytic.timesheet.tree (tree)
  * hr.analytic.timesheet.form (form)
  * \* INHERIT hr.timesheet.employee.extd_form (form)
- * \* INHERIT account.analytic.account.invoice.form.inherit (form)
 
 
 Objects

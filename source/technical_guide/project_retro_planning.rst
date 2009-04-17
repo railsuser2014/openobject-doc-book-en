@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Project Retro planning (*project_retro_planning*)
@@ -25,6 +31,15 @@ Description
 ::
 
   - Stop date of project is change will change all the tasks of that project to same number of days
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/project_retro_planning.zip>`_
+  * `trunk </download/modules/trunk/project_retro_planning.zip>`_
+
 
 Dependencies
 ------------

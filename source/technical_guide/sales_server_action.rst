@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Sales Server Action (*sales_server_action*)
@@ -24,12 +30,21 @@ Description
 
 ::
 
-  Server Action for Sales Management You will get 2 actions, for the demonstration for the 
-  Server Action that will helps you to customize the Business process
+  Server Action for Sales Management
+  You will get 2 actions, for the demonstration for the Server Action
+  that will helps you to customize the Business process
   * One Invoice / Each Sales Order Line
   * Two Invoice for One Sales Order
   ** Invoice for the Stokable products
   ** Invoice for the Service product
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/sales_server_action.zip>`_
+
 
 Dependencies
 ------------

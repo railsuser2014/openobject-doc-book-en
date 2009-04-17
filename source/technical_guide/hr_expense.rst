@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Human Resources Expenses Tracking (*hr_expense*)
@@ -36,6 +42,16 @@ Description
       This module also use the analytic accounting and is compatible with
       the invoice on timesheet module so that you will be able to automatically
       re-invoice your customer's expenses if your work by project.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/hr_expense.zip>`_
+  * `5.0 </download/modules/5.0/hr_expense.zip>`_
+  * `trunk </download/modules/trunk/hr_expense.zip>`_
+
 
 Dependencies
 ------------
@@ -69,6 +85,7 @@ Views
  * hr.expense.line.tree (tree)
  * hr.expense.expense.tree (tree)
  * hr.expense.form (form)
+ * \* INHERIT product.product.expense.form (form)
 
 
 Objects
@@ -145,7 +162,7 @@ Object: Expense (hr.expense.expense)
 
 
 
-:date_valid: Date Valided, date
+:date_valid: Date Validated, date
 
 
 
@@ -157,7 +174,7 @@ Object: Expense (hr.expense.expense)
 
 
 
-:line_ids: Expense Lines, one2many
+:line_ids: Expense Lines, one2many, readonly
 
 
 
@@ -215,13 +232,13 @@ Object: Expense Line (hr.expense.line)
 
 
 
-:uom_id: UoM, many2one, readonly
+:uom_id: UoM, many2one
 
 
 
 
 
-:product_id: Product, many2one, readonly
+:product_id: Product, many2one
 
 
 
@@ -233,13 +250,13 @@ Object: Expense Line (hr.expense.line)
 
 
 
-:unit_amount: Unit Price, float, readonly
+:unit_amount: Unit Price, float
 
 
 
 
 
-:unit_quantity: Quantities, float, readonly
+:unit_quantity: Quantities, float
 
 
 

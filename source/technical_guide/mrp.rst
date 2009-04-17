@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Manufacturing Resource Planning (*mrp*)
@@ -50,6 +56,16 @@ Description
       * Print a production order
       * Stock forecasts
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/mrp.zip>`_
+  * `5.0 </download/modules/5.0/mrp.zip>`_
+  * `trunk </download/modules/trunk/mrp.zip>`_
+
+
 Dependencies
 ------------
 
@@ -69,7 +85,7 @@ Reports
 Menus
 -------
 
- * Stock Management/Compute All Schedulers
+ * Manufacturing/Compute All Schedulers
  * Manufacturing
  * Stock Management/Automatic Procurements
  * Manufacturing/Configuration
@@ -95,8 +111,8 @@ Menus
  * Stock Management/Automatic Procurements/Exceptions Procurements/Temporary Procurement Exceptions
  * Manufacturing/Procurement Orders/New Procurement
  * Stock Management/Automatic Procurements/Minimum Stock Rules
- * Stock Management/Compute All Schedulers/Compute Procurements Only
- * Stock Management/Compute All Schedulers/Compute Stock Minimum Rules Only
+ * Manufacturing/Compute All Schedulers/Compute Procurements Only
+ * Manufacturing/Compute All Schedulers/Compute Stock Minimum Rules Only
 
 Views
 -----
@@ -119,8 +135,6 @@ Views
  * mrp.production.gantt (gantt)
  * mrp.production.graph (graph)
  * mrp.production.form (form)
- * mrp.production.workcenter.line.form (form)
- * mrp.production.workcenter.line.tree (tree)
  * mrp.production.lot.line.form (form)
  * mrp.production.lot.line.tree (tree)
  * mrp.production.product.line.form (form)
@@ -322,7 +336,7 @@ Object: Routing (mrp.routing)
 
 :location_id: Production Location, many2one
 
-    *Keep empty if you produce at the location where the finnished products are needed.Put a location if you produce at a fixed location. This can be a partner location if you subcontract the manufacturing operations.*
+    *Keep empty if you produce at the location where the finished products are needed.Set a location if you produce at a fixed location. This can be a partner location if you subcontract the manufacturing operations.*
 
 
 Object: Routing workcenter usage (mrp.routing.workcenter)
@@ -442,9 +456,9 @@ Object: Bill of Material (mrp.bom)
 
 
 
-:routing_id: Routing, many2one
+:bom_id: Parent BoM, many2one
 
-    *The list of operations (list of workcenters) to produce the finnished product. The routing is mainly used to compute workcenter costs during operations and to plan futur loads on workcenters based on production plannification.*
+
 
 
 
@@ -472,9 +486,9 @@ Object: Bill of Material (mrp.bom)
 
 
 
-:bom_id: Parent BoM, many2one
+:routing_id: Routing, many2one
 
-
+    *The list of operations (list of workcenters) to produce the finished product. The routing is mainly used to compute workcenter costs during operations and to plan futur loads on workcenters based on production plannification.*
 
 
 
@@ -509,6 +523,12 @@ Object: Bill of Material (mrp.bom)
 
 
 :name: Name, char, required
+
+
+
+
+
+:variation_lines: Variation lines, one2many
 
 
 
@@ -582,7 +602,7 @@ Object: Production (mrp.production)
 
 
 
-:product_uos_qty: Product Qty, float
+:product_uos_qty: Product UoS Qty, float
 
 
 
@@ -612,7 +632,7 @@ Object: Production (mrp.production)
 
 
 
-:product_uos: Product UOM, many2one
+:product_uos: Product UoS, many2one
 
 
 
@@ -642,7 +662,7 @@ Object: Production (mrp.production)
 
 
 
-:location_src_id: Raw Products Location, many2one, required
+:location_src_id: Raw Materials Location, many2one, required
 
     *Location where the system will look for products used in raw materials.*
 
@@ -744,9 +764,9 @@ Object: Production (mrp.production)
 
 
 
-:location_dest_id: Finnished Products Location, many2one, required
+:location_dest_id: Finished Products Location, many2one, required
 
-    *Location where the system will stock the finnished products.*
+    *Location where the system will stock the finished products.*
 
 
 
@@ -790,13 +810,7 @@ Object: Production workcenters used (mrp.production.workcenter.line)
 
 
 
-:qlty_test_accept: Accepted, boolean, readonly
-
-
-
-
-
-:date_planned: Date Planned, datetime
+:production_state: Prod.State, char
 
 
 
@@ -814,12 +828,6 @@ Object: Production workcenters used (mrp.production.workcenter.line)
 
 
 
-:qlty_test_reject: Rejected, boolean, readonly
-
-
-
-
-
 :state: Status, selection, readonly
 
 
@@ -833,6 +841,12 @@ Object: Production workcenters used (mrp.production.workcenter.line)
 
 
 :production_id: Production Order, many2one
+
+
+
+
+
+:date_planned: Date Planned, datetime
 
 
 
@@ -985,7 +999,7 @@ Object: Procurement (mrp.procurement)
 
 
 
-:state: Status, selection
+:state: Status, selection, required
 
 
 

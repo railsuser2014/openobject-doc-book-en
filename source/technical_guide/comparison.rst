@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 ERP Comparisons (*comparison*)
@@ -24,8 +30,16 @@ Description
 
 ::
 
-  This module lets you compare famous ERP systems and lets you vote their respective facilities
-  (e.g. accounting, BOM Support, etc.) provided by them.
+  This module manages the backend of a collaborative comparison website amongst
+  different products.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/comparison.zip>`_
+
 
 Dependencies
 ------------
@@ -45,8 +59,8 @@ Menus
  * ERP Comparison/Configuration
  * ERP Comparison/Configuration/Users
  * ERP Comparison/Configuration/Items
- * ERP Comparison/Configuration/Criterions
- * ERP Comparison/Criterions Structure
+ * ERP Comparison/Configuration/Criterias
+ * ERP Comparison/Criterias Structure
  * ERP Comparison/Reporting
  * ERP Comparison/Reporting/Results of the Comparisons
  * ERP Comparison/Configuration/Vote Values(Criterias)
@@ -54,6 +68,18 @@ Menus
  * ERP Comparison/Votes/New Vote
  * ERP Comparison/Suggestions
  * ERP Comparison/Suggestions/New Suggestion
+ * ERP Comparison/Configuration/Item Packs
+ * ERP Comparison/Periodical Processing
+ * ERP Comparison/Periodical Processing/Criterias
+ * ERP Comparison/Periodical Processing/Votes
+ * ERP Comparison/Periodical Processing/Ponderation Suggestions
+ * ERP Comparison/Periodical Processing/Criterias/Draft Criterias
+ * ERP Comparison/Periodical Processing/Criterias/Cancelled Criterias
+ * ERP Comparison/Periodical Processing/Votes/Draft Votes
+ * ERP Comparison/Periodical Processing/Votes/Cancelled Votes
+ * ERP Comparison/Periodical Processing/Ponderation Suggestions/Draft Suggestions
+ * ERP Comparison/Periodical Processing/Ponderation Suggestions/Cancelled Suggestions
+ * ERP Comparison/Periodical Processing/Recompute All Evaluations
 
 Views
 -----
@@ -72,6 +98,8 @@ Views
  * comparison.vote.tree (tree)
  * comparison.ponderation.suggestion.form (form)
  * comparison.ponderation.suggestion.tree (tree)
+ * evaluation.pack.form (form)
+ * evaluation.pack.tree (tree)
 
 
 Objects
@@ -79,6 +107,30 @@ Objects
 
 Object: comparison.user (comparison.user)
 #########################################
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:suggestion_ids: Ponderation Suggestions, one2many
+
+
+
+
+
+:vote_ids: Votes, one2many
+
+
+
+
+
+:factor_ids: Factors, one2many
+
+
 
 
 
@@ -94,12 +146,6 @@ Object: comparison.user (comparison.user)
 
 
 
-:name: Name, char, required
-
-
-
-
-
 :email: Email, char, required
 
 
@@ -107,6 +153,18 @@ Object: comparison.user (comparison.user)
 
 Object: comparison.item (comparison.item)
 #########################################
+
+
+
+:load_default: Load by Default, boolean
+
+    *This option if checked, will let the Item display on Evaluation Matrix, by default.*
+
+
+
+:code: Code, char, required
+
+
 
 
 
@@ -123,6 +181,12 @@ Object: comparison.item (comparison.item)
 
 
 :result_ids: Results, one2many
+
+
+
+
+
+:sequence: Sequence, integer
 
 
 
@@ -210,7 +274,7 @@ Object: comparison.factor (comparison.factor)
 
 
 
-:type: Type, selection
+:type: Type, selection, required
 
 
 
@@ -236,13 +300,7 @@ Object: comparison.vote (comparison.vote)
 
 
 
-:item_id: Item, many2one, required
-
-
-
-
-
-:note: Note, text
+:user_id: User, many2one
 
 
 
@@ -254,13 +312,25 @@ Object: comparison.vote (comparison.vote)
 
 
 
-:user_id: User, many2one, required
+:note: Note, text
+
+
+
+
+
+:state: Status, selection, required, readonly
 
 
 
 
 
 :score_id: Value, many2one, required
+
+
+
+
+
+:item_id: Item, many2one, required
 
 
 
@@ -298,13 +368,7 @@ Object: comparison.ponderation.suggestion (comparison.ponderation.suggestion)
 
 
 
-:ponderation: Ponderation, float, required
-
-
-
-
-
-:note: Suggestion, text
+:user_id: User, many2one, required
 
 
 
@@ -316,12 +380,40 @@ Object: comparison.ponderation.suggestion (comparison.ponderation.suggestion)
 
 
 
-:user_id: User, many2one, required
+:effect: Ponderation Effect, selection
+
+    *Select Positive if your suggestion has greater poderation value than the current value, negative otherwise.*
+
+
+
+:note: Suggestion, text
 
 
 
 
 
 :state: State, selection, readonly
+
+
+
+
+
+:ponderation: Ponderation, float, required
+
+
+
+
+Object: Evaluation Pack for Easy Comparison (evaluation.pack)
+#############################################################
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:item_ids: Items, many2many
 
 

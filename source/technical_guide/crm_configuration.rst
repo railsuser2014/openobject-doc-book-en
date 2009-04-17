@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Customer Relationship Management (*crm_configuration*)
@@ -24,13 +30,23 @@ Description
 
 ::
 
-  The Open ERP case and request tracker enables a group of people to intelligently and efficiently manage 
-  tasks, issues,and requests. 
-  It manages key tasks such as communication,identification, prioritization, assignment,resolution and 
-  notification.
+  The Open ERP case and request tracker enables a group of
+  people to intelligently and efficiently manage tasks, issues,
+  and requests. It manages key tasks such as communication, 
+  identification, prioritization, assignment, resolution and notification.
   
-  This module provide screens like: jobs hiring process, leads, business opportunities, 
-fund raising trackings, support & helpdesk, calendar of meetings, eso.
+  This module provide screens like: jobs hiring process, leads, business
+  opportunities, fund raising tracking, support & helpdesk, calendar of
+  meetings, eso.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/crm_configuration.zip>`_
+  * `trunk </download/modules/trunk/crm_configuration.zip>`_
+
 
 Dependencies
 ------------
@@ -49,14 +65,14 @@ Menus
 -------
 
  * CRM & SRM/Configuration/Cases/Stages
- * CRM & SRM/Reporting/This Month/Cases by Section and Category2
- * CRM & SRM/Reporting/All Months/Cases by Section and Category2
+ * CRM & SRM/Reporting/This Month/Cases by Section and Type
+ * CRM & SRM/Reporting/All Months/Cases by Section and Type
  * CRM & SRM/Reporting/This Month/Cases by Section and Stage
  * CRM & SRM/Reporting/All Months/Cases by Section and Stage
  * CRM & SRM/Reporting/This Month/Cases by Section, Category and Stage
  * CRM & SRM/Reporting/All Months/Cases by Section, Category and Stage
- * CRM & SRM/Reporting/This Month/Cases by Section, Category and Category2
- * CRM & SRM/Reporting/All Months/Cases by Section, Category and Category2
+ * CRM & SRM/Reporting/This Month/Cases by Section, Category and Type
+ * CRM & SRM/Reporting/All Months/Cases by Section, Category and Type
 
 Views
 -----
@@ -90,16 +106,16 @@ Views
  * CRM - Phone Calls Tree (tree)
  * CRM - Phone Call Form (form)
  * CRM - Phone Calls Calendar (calendar)
- * CRM Report - Sections and Category2(Tree) (tree)
- * CRM Report - Sections and Category2(Form) (form)
- * CRM Report - Sections and Category2(Graph) (graph)
+ * CRM Report - Sections and Type(Tree) (tree)
+ * CRM Report - Sections and Type(Form) (form)
+ * CRM Report - Sections and Type(Graph) (graph)
  * CRM Report - Sections and Stage(Tree) (tree)
  * CRM Report - Sections and Stage(Form) (form)
  * CRM Report - Sections and Stage(Graph) (graph)
  * CRM Report - Section, Category and Stage(Tree) (tree)
  * CRM Report - Section, Category and Stage(Form) (form)
- * CRM Report - Section, Category and Category2(Tree) (tree)
- * CRM Report - Section, Category and Category2(Form) (form)
+ * CRM Report - Section, Category and Type(Tree) (tree)
+ * CRM Report - Section, Category and Type(Form) (form)
 
 
 Objects
@@ -126,13 +142,19 @@ Object: Stage of case (crm.case.stage)
 
 
 
-:name: Stage Name, char, required
+:sequence: Sequence, integer
 
 
 
 
 
 :section_id: Case Section, many2one
+
+
+
+
+
+:name: Stage Name, char, required
 
 
 

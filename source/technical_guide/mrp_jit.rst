@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 MRP JIT (*mrp_jit*)
@@ -27,10 +33,21 @@ Description
   This module allows Just In Time computation of all procurement.
   
       If you install this module, you will not have to run the schedulers anymore.
-      Each document is computed in realtime. Note that this module can slow down your system a little bit.
+      Each document is computed in real time. Note that this module can slow down your
+      system a little bit.
   
-      It may also increase your stock size because products are reserved as soon as possible. 
-      In that case, you can not use priorities anymore on the different pickings.
+      It may also increase your stock size because products are reserved as soon
+      as possible. In that case, you can not use priorities any more on the different
+      picking.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/mrp_jit.zip>`_
+  * `trunk </download/modules/trunk/mrp_jit.zip>`_
+
 
 Dependencies
 ------------

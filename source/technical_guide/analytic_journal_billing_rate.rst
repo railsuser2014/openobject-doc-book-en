@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Analytic Journal Billing Rate (*analytic_journal_billing_rate*)
@@ -24,12 +30,18 @@ Description
 
 ::
 
-  This module allows you to define what is the default invoicing rate for a specific journal 
-  on a given account. This is mostly used when a user encode his timesheet: the values are retrieved 
-  and the fields are auto-filled... but the possibility to change these values is still available.
+  This module allows you to define what is the default invoicing rate for a specific journal on a given account. This is mostly used when a user encode his timesheet: the values are retrieved and the fields are auto-filled... but the possibility to change these values is still available.
   
-      Obviously if no data has been recorded for the current account, the default value is given 
-  as usual by the account data so that this module is perfectly compatible with older configurations.
+      Obviously if no data has been recorded for the current account, the default value is given as usual by the account data so that this module is perfectly compatible with older configurations.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/analytic_journal_billing_rate.zip>`_
+  * `trunk </download/modules/trunk/analytic_journal_billing_rate.zip>`_
+
 
 Dependencies
 ------------

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Import Export (*import_export*)
@@ -24,9 +30,20 @@ Description
 
 ::
 
-  This module help user to configure a tiny for Product selling compant doing Import Export business
-  Take care for the Taxes according to the govt policy for Local Sale
-  With in Country Sale or Sales Outside the Country
+  This module help user to configure a tiny for Product selling compant doing 
+  Import Export business
+  Take care for the Taxes according to the govt policy for 
+  Local Sale
+  With in Country Sale
+  or Sales Outside the Country
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/import_export.zip>`_
+
 
 Dependencies
 ------------

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Purchase Management (*purchase*)
@@ -27,6 +33,16 @@ Description
   Module for purchase management
       Request for quotation, Create Supplier Invoice, Print Order...
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/purchase.zip>`_
+  * `5.0 </download/modules/5.0/purchase.zip>`_
+  * `trunk </download/modules/trunk/purchase.zip>`_
+
+
 Dependencies
 ------------
 
@@ -40,7 +56,7 @@ Reports
 
  * Request for Quotation
 
- * Print Order
+ * Purchase Order
 
 Menus
 -------
@@ -97,7 +113,7 @@ Object: Purchase order (purchase.order)
 
 
 
-:internal_notes: Internal Note, text
+:partner_address_id: Address, many2one, required
 
 
 
@@ -139,7 +155,7 @@ Object: Purchase order (purchase.order)
 
 
 
-:approvator: Approved by, many2one, readonly
+:amount_untaxed: Untaxed Amount, float, readonly
 
 
 
@@ -163,7 +179,7 @@ Object: Purchase order (purchase.order)
 
 
 
-:state: Order State, selection, readonly
+:state: Order Status, selection, readonly
 
     *The state of the purchase order or the quotation request. A quotation is a purchase order in a 'Draft' state. Then the order has to be confirmed by the user, the state switch to 'Confirmed'. Then the supplier must confirm the order to change the state to 'Approved'. When the purchase order is paid and received, the state becomes 'Done'. If a cancel action occurs in the invoice or in the reception of goods, the state becomes in exception.*
 
@@ -187,19 +203,7 @@ Object: Purchase order (purchase.order)
 
 
 
-:partner_address_id: Address, many2one, required
-
-
-
-
-
 :warehouse_id: Warehouse, many2one
-
-
-
-
-
-:amount_untaxed: Untaxed Amount, float, readonly
 
 
 
@@ -235,7 +239,7 @@ Object: Purchase order (purchase.order)
 
 
 
-:name: Order Reference, char, required
+:name: Order Description, char, required
 
 
 

@@ -1,11 +1,17 @@
 
 .. module:: sale_delivery_report
-    :synopsis: Print Delivery Order 
+    :synopsis: Print Delivery Order (Official, Quality Certified)
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Print Delivery Order (*sale_delivery_report*)
@@ -16,8 +22,8 @@ Print Delivery Order (*sale_delivery_report*)
 :Author: Tiny
 :Directory: sale_delivery_report
 :Web: 
-:Official module: no
-:Quality certified: no
+:Official module: yes
+:Quality certified: yes
 
 Description
 -----------
@@ -25,6 +31,15 @@ Description
 ::
 
   Allows to print a delivery order.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/sale_delivery_report.zip>`_
+  * `trunk </download/modules/trunk/sale_delivery_report.zip>`_
+
 
 Dependencies
 ------------

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Url Menus (*base_url_menu*)
@@ -15,7 +21,7 @@ Url Menus (*base_url_menu*)
 :Version: 5.0.1.1
 :Author: Tiny
 :Directory: base_url_menu
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,6 +31,14 @@ Description
 ::
 
   Module for creating URL menus. Work only with eTiny
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/base_url_menu.zip>`_
+
 
 Dependencies
 ------------

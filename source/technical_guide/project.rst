@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Project Management (*project*)
@@ -24,8 +30,18 @@ Description
 
 ::
 
-  Project management module that track multi-level projects, tasks, works done on tasks, eso. 
-  It is able to render planning, order tasks, eso.
+  Project management module that track multi-level projects, tasks,
+  works done on tasks, eso. It is able to render planning, order tasks, eso.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/project.zip>`_
+  * `5.0 </download/modules/5.0/project.zip>`_
+  * `trunk </download/modules/trunk/project.zip>`_
+
 
 Dependencies
 ------------
@@ -71,6 +87,7 @@ Views
 -----
 
  * project.project.form (form)
+ * project.project.list (tree)
  * project.project.tree (tree)
  * project.task.work.form (form)
  * project.task.work.tree (tree)
@@ -78,6 +95,7 @@ Views
  * Compute Remaining Hours  (form)
  * project.task.form (form)
  * project.task.tree (tree)
+ * my.pending.task.tree (tree)
  * project.task.calendar (calendar)
  * project.task.gantt (gantt)
  * project.task.graph (graph)
@@ -180,11 +198,17 @@ Object: Project (project.project)
 
 :parent_id: Parent Project, many2one
 
-
+    *If you have [?] in the name, it means there are no analytic account linked to project.*
 
 
 
 :state: State, selection, required, readonly
+
+
+
+
+
+:complete_name: Project Name, char, readonly
 
 
 
@@ -240,7 +264,7 @@ Object: Project (project.project)
 
 :category_id: Analytic Account, many2one
 
-    *Link this project to an analytic account if you need financial management on projects. It ables to connect projects with budgets, plannings, costs and revenues analysis, timesheet on projects, etc.*
+    *Link this project to an analytic account if you need financial management on projects. It enables you to connect projects with budgets, planning, cost and revenue analysis, timesheets on projects, etc.*
 
 
 
@@ -294,7 +318,7 @@ Object: Task (project.task)
 
 
 
-:planned_hours: Planned Hours, float, required, readonly
+:planned_hours: Planned Hours, float, required
 
     *Estimated time to do the task, usually set by the project manager when the task is in draft state.*
 
@@ -356,7 +380,7 @@ Object: Task (project.task)
 
 :project_id: Project, many2one
 
-
+    *If you have [?] in the project name, it means there are no analytic account linked to this project.*
 
 
 
@@ -399,6 +423,12 @@ Object: Task (project.task)
 :delay_hours: Delay Hours, float, readonly
 
     *Computed as: Total Time - Estimated Time. It gives the difference of the time estimated by the project manager and the real time to close the task.*
+
+
+
+:delegated_user_id: Delegated To, many2one
+
+
 
 
 
@@ -454,12 +484,6 @@ Object: Task Work (project.task.work)
 
 
 
-:timesheet_line_id: Timesheet Line, many2one
-
-
-
-
-
 :user_id: Done by, many2one, required
 
 
@@ -478,24 +502,6 @@ Object: Task Work (project.task.work)
 
 
 
-:zip_id: Zip, many2one
-
-
-
-
-
-:grant_id: Grant, many2one
-
-
-
-
-
-:contact_id: Contact, many2one
-
-
-
-
-
 :hours: Time Spent, float
 
 
@@ -503,12 +509,6 @@ Object: Task Work (project.task.work)
 
 
 :date: Date, datetime
-
-
-
-
-
-:partner_id: Partner, many2one
 
 
 

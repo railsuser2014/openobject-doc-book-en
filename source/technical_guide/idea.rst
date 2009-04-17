@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Idea Manager (*idea*)
@@ -24,11 +30,16 @@ Description
 
 ::
 
-  This module allows your user to easily and efficiently participate in the innovation of the 
-  enterprise. It allows everybody to express ideas about different subjects. Then, others users 
-  can comment these ideas and vote for particular ideas. Each idea as a score based on the different 
-  votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check 
-  the menu 'Ideas' in the 'Tools' main menu.
+  This module allows your user to easily and efficiently participate in the innovation of the enterprise. It allows everybody to express ideas about different subjects. Then, others users can comment these ideas and vote for particular ideas. Each idea as a score based on the different votes. The managers can obtain an easy view on best ideas from all the users. Once installed, check the menu 'Ideas' in the 'Tools' main menu.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/idea.zip>`_
+  * `trunk </download/modules/trunk/idea.zip>`_
+
 
 Dependencies
 ------------

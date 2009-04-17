@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Budget Management (*account_budget*)
@@ -26,23 +32,30 @@ Description
 
   This module allows accountants to manage analytic and crossovered budgets.
   
-  Once the Master Budgets and the Budgets defined (in Financial Management/Budgets/), 
-  the Project Managers can set the planned amount on each Analytic Account.
+  Once the Master Budgets and the Budgets defined (in Financial
+  Management/Budgets/), the Project Managers can set the planned amount on each
+  Analytic Account.
   
-  The accountant has the possibility to see the total of amount planned for each Budget and 
-  Master Budget in order to ensure the total planned is not greater/lower than what he planned 
-  for this Budget/Master Budget. Each list of record can also be switched to a graphical view 
-  of it.
+  The accountant has the possibility to see the total of amount planned for each
+  Budget and Master Budget in order to ensure the total planned is not
+  greater/lower than what he planned for this Budget/Master Budget. Each list of
+  record can also be switched to a graphical view of it.
   
   Three reports are available:
-      1. The first is available from a list of Budgets. It gives the spreading, for these Budgets, 
-         of the Analytic Accounts per Master Budgets.
+      1. The first is available from a list of Budgets. It gives the spreading, for these Budgets, of the Analytic Accounts per Master Budgets.
   
-      2. The second is a summary of the previous one, it only gives the spreading, for the selected 
-         Budgets, of the Analytic Accounts.
+      2. The second is a summary of the previous one, it only gives the spreading, for the selected Budgets, of the Analytic Accounts.
   
-      3. The last one is available from the Analytic Chart of Accounts. It gives the spreading, for the 
-         selected Analytic Accounts, of the Master Budgets per Budgets.
+      3. The last one is available from the Analytic Chart of Accounts. It gives the spreading, for the selected Analytic Accounts, of the Master Budgets per Budgets.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/account_budget.zip>`_
+  * `trunk </download/modules/trunk/account_budget.zip>`_
+
 
 Dependencies
 ------------
@@ -89,6 +102,12 @@ Object: Budgetary Position (account.budget.post)
 
 
 
+:crossovered_budget_line: Budget Lines, one2many
+
+
+
+
+
 :code: Code, char, required
 
 
@@ -102,18 +121,6 @@ Object: Budgetary Position (account.budget.post)
 
 
 :name: Name, char, required
-
-
-
-
-
-:company_id: Company, many2one
-
-
-
-
-
-:crossovered_budget_line: Budget Lines, one2many
 
 
 

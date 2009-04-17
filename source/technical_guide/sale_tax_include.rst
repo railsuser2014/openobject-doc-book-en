@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Invoices and prices with taxes included (*sale_tax_include*)
@@ -15,7 +21,7 @@ Invoices and prices with taxes included (*sale_tax_include*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: sale_tax_include
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -28,6 +34,15 @@ Description
   Especially useful for b2c businesses.
       
   This module implement the modification on the sale order form.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/sale_tax_include.zip>`_
+  * `trunk </download/modules/trunk/sale_tax_include.zip>`_
+
 
 Dependencies
 ------------

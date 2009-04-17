@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Add an automatic sequence on partners (*base_partner_sequence*)
@@ -15,7 +21,7 @@ Add an automatic sequence on partners (*base_partner_sequence*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: base_partner_sequence
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,8 +30,18 @@ Description
 
 ::
 
-  This module adds the possibility to define a sequence for the partner code. 
-  This code is then set as default when you create a new partner, using the defined sequence.
+  This module adds the possibility to define a sequence for
+          the partner code. This code is then set as default when you
+          create a new partner, using the defined sequence.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/base_partner_sequence.zip>`_
+  * `trunk </download/modules/trunk/base_partner_sequence.zip>`_
+
 
 Dependencies
 ------------

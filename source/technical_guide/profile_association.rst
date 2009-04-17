@@ -4,15 +4,21 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Association profile (*profile_association*)
 ===========================================
 :Module: profile_association
 :Name: Association profile
-:Version: False
+:Version: 5.0.0.1
 :Author: Tiny
 :Directory: profile_association
 :Web: 
@@ -25,6 +31,15 @@ Description
 ::
 
   Profile for Associates
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/profile_association.zip>`_
+  * `trunk </download/modules/trunk/profile_association.zip>`_
+
 
 Dependencies
 ------------
@@ -48,12 +63,53 @@ None
 Views
 -----
 
-
-None
-
+ * Association Profile : Install extra modules (form)
 
 
 Objects
 -------
 
-None
+Object: profile.association.config.install_modules_wizard (profile.association.config.install_modules_wizard)
+#############################################################################################################
+
+
+
+:wiki: Wiki, boolean
+
+    *An integrated wiki content management system. This is really usefull to manage FAQ, quality manuals, etc.*
+
+
+
+:hr_expense: Expenses Tracking, boolean
+
+    *Tracks the personal expenses process, from the employee expense encoding, to the reimbursement of the employee up to the reinvoicing to the final customer.*
+
+
+
+:segmentation: Segmentation, boolean
+
+
+
+
+
+:project_gtd: Getting Things Done, boolean
+
+    *GTD is a methodology to efficiently organise yourself and your tasks. This module fully integrates GTD principle with OpenERP's project management.*
+
+
+
+:crm_configuration: Partner Relation & Calendars, boolean
+
+
+
+
+
+:project: Project Management, boolean
+
+
+
+
+
+:board_document: Document Management, boolean
+
+    *The Document Management System of Open ERP allows you to store, browse, automatically index, search and preview all kind of documents (internal documents, printed reports, calendar system). It opens an FTP access for the users to easily browse association's document.*

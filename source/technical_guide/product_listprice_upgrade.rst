@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Product listprice upgrade (*product_listprice_upgrade*)
@@ -25,11 +31,17 @@ Description
 ::
 
   The aim of this module is to allow the automatic upgrade of the field 'List Price' on each product.
-      * added a new price type called 'Internal Pricelist' (currently, we have only 2 price types: 
-        Sale and Purchase Pricelist)
+      * added a new price type called 'Internal Pricelist' (currently, we have only 2 price types: Sale and Purchase Pricelist)
       * Created a wizard button in the menu Products>Pricelist called 'Upgrade Product List Price'
-      * When we have completed the wizard and click on 'Upgrade', it will change the field 
-  'List Price' for all products contained in the categories that we have selected in the wizard
+      * When we have completed the wizard and click on 'Upgrade', it will change the field 'List Price' for all products contained in the categories that we have selected in the wizard
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/product_listprice_upgrade.zip>`_
+
 
 Dependencies
 ------------
@@ -46,8 +58,8 @@ None
 Menus
 -------
 
- * Books/Pricelists
- * Books/Pricelists/Upgrade Product List price
+ * Products/Pricelists
+ * Products/Pricelists/Upgrade Product List price
 
 Views
 -----

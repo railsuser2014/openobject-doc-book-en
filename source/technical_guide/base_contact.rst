@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Base Contact (*base_contact*)
@@ -35,9 +41,16 @@ Description
           Partners \ Contacts
           Partners \ Functions
   
-      Pay attention that this module converts the existing addresses into "addresses + contacts".
- It means that some fields of the addresses will be missing (like the contact name), since 
-these are supposed to be defined in an other object.
+      Pay attention that this module converts the existing addresses into "addresses + contacts". It means that some fields of the addresses will be missing (like the contact name), since these are supposed to be defined in an other object.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/base_contact.zip>`_
+  * `trunk </download/modules/trunk/base_contact.zip>`_
+
 
 Dependencies
 ------------
@@ -86,37 +99,13 @@ Object: res.partner.contact (res.partner.contact)
 
 
 
-:origin: Origin, char
-
-    *The DB from which the info is coming from*
-
-
-
-:fse_work_status: FSE Work Status, char
+:website: Website, char
 
 
 
 
 
-:canal_id: Favourite Channel, many2one
-
-
-
-
-
-:data_private: Private data, boolean
-
-
-
-
-
-:self_sufficent: Keep contact, boolean
-
-    *This contact will not be removed even if all his addresses are deleted*
-
-
-
-:partner_id: Main Employer, many2one
+:comment: Notes, text
 
 
 
@@ -128,115 +117,13 @@ Object: res.partner.contact (res.partner.contact)
 
 
 
-:title: Title, selection
-
-
-
-
-
-:country_id: Nationality, many2one
-
-
-
-
-
-:who_presence: In WsW, boolean
-
-
-
-
-
-:lang_id: Language, many2one
-
-
-
-
-
-:who_date_publication: Publication, date
-
-
-
-
-
-:fse_work_experience: FSE Work Exp., char
-
-
-
-
-
-:magazine_subscription: Magazine subscription, selection
-
-
-
-
-
-:country_ids: Expertize's Countries, many2many
-
-
-
-
-
-:website: Website, char
-
-
-
-
-
-:old_id: Old Datman ID, integer
-
-
-
-
-
-:fse_studies: FSE Studies, char
-
-
-
-
-
-:who_description: WsW Description, text
-
-
-
-
-
-:active: Active, boolean
-
-
-
-
-
-:answers_ids: Answers, many2many
-
-
-
-
-
-:function_id: Main Job, many2one
-
-
-
-
-
-:job_ids: Functions and Addresses, one2many
-
-
-
-
-
-:link_ids: Contact Link, one2many
-
-
-
-
-
 :name: Last Name, char, required
 
 
 
 
 
-:magazine_subscription_source: Mag. Subscription Source, char
+:title: Title, selection
 
 
 
@@ -248,7 +135,7 @@ Object: res.partner.contact (res.partner.contact)
 
 
 
-:who_date_accept: Accept Date, date
+:country_id: Nationality, many2one
 
 
 
@@ -260,113 +147,13 @@ Object: res.partner.contact (res.partner.contact)
 
 
 
-:who_date_last: Last Modification, date
-
-
-
-
-
-:national_number: National Number, char
-
-
-
-
-
-:article_ids: Articles, many2many
-
-
-
-
-Object: Contact Partner Function (res.partner.job)
-##################################################
-
-
-
-:date_stop: Date Stop, date
-
-
-
-
-
-:dir_presence: In Directory, boolean
-
-
-
-
-
-:canal_id: Canal, many2one
-
-    *favorite chanel for communication*
-
-
-
-:date_end: Date end, date
-
-
-
-
-
-:address_id: Address, many2one
-
-
-
-
-
-:contact_id: Contact, many2one, required
-
-
-
-
-
-:function_label: Function Label, char, required
-
-
-
-
-
-:team_id: Team, many2one
-
-
-
-
-
-:password: Password, char
-
-
-
-
-
-:date_start: Date start, date
-
-
-
-
-
-:who_presence: In Whos Who, boolean
-
-
-
-
-
-:state: State, selection, required
-
-
-
-
-
-:department: Department, char
-
-
-
-
-
 :email: E-Mail, char
 
 
 
 
 
-:phone: Phone, char
+:lang_id: Language, many2one
 
 
 
@@ -378,7 +165,101 @@ Object: Contact Partner Function (res.partner.job)
 
 
 
-:answers_ids: Answers, many2many
+:function_id: Main Job, many2one
+
+
+
+
+
+:partner_id: Main Employer, many2one
+
+
+
+
+
+:job_ids: Functions and Addresses, one2many
+
+
+
+
+Object: Contact Partner Function (res.partner.job)
+##################################################
+
+
+
+:sequence_partner: Partner Seq., integer
+
+    *Order of importance of this job title in the list of job title of the linked partner*
+
+
+
+:address_id: Address, many2one
+
+
+
+
+
+:fax: Fax, char
+
+
+
+
+
+:name: Partner, many2one
+
+
+
+
+
+:extension: Extension, char
+
+    *Internal/External extension phone number*
+
+
+
+:date_start: Date Start, date
+
+
+
+
+
+:sequence_contact: Contact Seq., integer
+
+    *Order of importance of this address in the list of addresses of the linked contact*
+
+
+
+:contact_id: Contact, many2one, required
+
+
+
+
+
+:phone: Phone, char
+
+
+
+
+
+:state: State, selection, required
+
+
+
+
+
+:other: Other, char
+
+    *Additional phone field*
+
+
+
+:date_stop: Date Stop, date
+
+
+
+
+
+:team_id: Team, many2one
 
 
 
@@ -390,36 +271,6 @@ Object: Contact Partner Function (res.partner.job)
 
 
 
-:sequence_partner: Partner Seq., integer
-
-    *Order of importance of this job title in the list of job title of the linked partner*
-
-
-
-:sequence_contact: Contact Seq., integer
-
-    *Order of importance of this address in the list of addresses of the linked contact*
-
-
-
-:name: Partner, many2one
-
-
-
-
-
-:function_code_label: Codes, char
-
-
-
-
-
-:token: Token, char
-
-
-
-
-
-:login_name: Login Name, char
+:email: E-Mail, char
 
 

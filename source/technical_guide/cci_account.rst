@@ -4,15 +4,21 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 CCI Account (*cci_account*)
 ===========================
 :Module: cci_account
 :Name: CCI Account
-:Version: 5.0.1.0
+:Version: False
 :Author: Tiny
 :Directory: cci_account
 :Web: http://www.openerp.com
@@ -25,6 +31,14 @@ Description
 ::
 
   specific module for cci project which will use account module (Reports).
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/cci_account.zip>`_
+
 
 Dependencies
 ------------
@@ -40,26 +54,22 @@ Dependencies
 Reports
 -------
 
- * Draft Invoices
+None
 
- * Print VCS
 
 Menus
 -------
 
- * Financial Management/Periodical Processing/Use Models
+
+None
+
 
 Views
 -----
 
- * \* INHERIT account.invoice.supplier.form.inherit (form)
- * \* INHERIT account.invoice.form.inherit (form)
- * \* INHERIT account.bank.statement.form (form)
- * \* INHERIT account.invoice.supplier.form (form)
- * \* INHERIT account.invoice.form (form)
- * \* INHERIT account.invoice.supplier.form (form)
- * \* INHERIT account.invoice.form (form)
- * \* INHERIT sale.order.form (form)
+
+None
+
 
 
 Objects

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Document Management - Reporting (*report_document*)
@@ -27,6 +33,15 @@ Description
   Reporting for the Document Management module:
       * My Files
       * All users Files
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/report_document.zip>`_
+  * `trunk </download/modules/trunk/report_document.zip>`_
+
 
 Dependencies
 ------------

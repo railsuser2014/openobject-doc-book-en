@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Invoice on analytic lines (*hr_timesheet_invoice*)
@@ -25,7 +31,18 @@ Description
 ::
 
   Module to generate invoices based on costs (human resources, expenses, ...).
-  You can define price lists in analytic account, make some theoretical revenue reports, eso.
+  You can define price lists in analytic account, make some theoretical revenue
+  reports, eso.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/hr_timesheet_invoice.zip>`_
+  * `5.0 </download/modules/5.0/hr_timesheet_invoice.zip>`_
+  * `trunk </download/modules/trunk/hr_timesheet_invoice.zip>`_
+
 
 Dependencies
 ------------
@@ -51,7 +68,7 @@ Menus
  * Financial Management/Configuration/Analytic Accounting/Analytic Accounts/Analytic Chart of Accounts/Draft Analytic Accounts
  * Financial Management/Configuration/Analytic Accounting/Analytic Accounts/Analytic Chart of Accounts/Pending Analytic Accounts
  * Financial Management/Configuration/Analytic Accounting/Analytic Accounts/Types of Invoicing
- * Human Resources/Reporting/Timesheet profit
+ * Human Resources/Reporting/Timesheet Profit
 
 Views
 -----

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Partners - relation extension (*base_partner_relation*)
@@ -26,8 +32,17 @@ Description
 
   Add a tab in the partner form to encode relations between several partners.
       For eg, the partner 'Toubib and Co.' has different contacts.
-      When 'Toubib and Co.' orders, you have to deliver to 'Toubib - Belgium' and invoice to 
-      'Toubib - Geneva'.
+      When 'Toubib and Co.' orders, you have to deliver to 'Toubib - Belgium'
+      and invoice to 'Toubib - Geneva'.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/base_partner_relation.zip>`_
+  * `trunk </download/modules/trunk/base_partner_relation.zip>`_
+
 
 Dependencies
 ------------
@@ -63,30 +78,18 @@ Object: Partner Relation (res.partner.relation)
 
 
 
-:percent: Ownership, float
+:partner_id: Main Partner, many2one, required
 
 
 
 
 
-:current_partner_id: Partner, many2one, required
+:name: Relation Type, selection, required
 
 
 
 
 
-:partner_id: Partner, many2one, required
-
-
-
-
-
-:description: Description, text
-
-
-
-
-
-:type_id: Type, many2one, required
+:relation_id: Relation Partner, many2one, required
 
 

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Purchase - Purchase Tender (*purchase_tender*)
@@ -15,7 +21,7 @@ Purchase - Purchase Tender (*purchase_tender*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: purchase_tender
-:Web: http://www.openerp.com//
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,10 +30,16 @@ Description
 
 ::
 
-  This module allows you to manage your Purchase Tenders. When a purchase order is created, you 
-  now have the opportunity to save the related tender. 
-      This new object will regroup and will allow you to easily keep track and order all your 
-      purchase orders.
+  This module allows you to manage your Purchase Tenders. When a purchase order is created, you now have the opportunity to save the related tender. 
+      This new object will regroup and will allow you to easily keep track and order all your purchase orders.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/purchase_tender.zip>`_
+
 
 Dependencies
 ------------

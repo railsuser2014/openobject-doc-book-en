@@ -4,15 +4,21 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 CCI CRM (*cci_crm*)
 ===================
 :Module: cci_crm
 :Name: CCI CRM
-:Version: 5.0.1.0
+:Version: False
 :Author: Tiny
 :Directory: cci_crm
 :Web: http://www.openerp.com
@@ -25,8 +31,15 @@ Description
 ::
 
   - define some groups with access rules
-          - so using above rules , new object which will be confidential 
-            (can only be accessed by some users of group)
+          - so using above rules , new object which will be confidential (can only be accessed by some users of group)
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/cci_crm.zip>`_
+
 
 Dependencies
 ------------
@@ -45,40 +58,19 @@ None
 Menus
 -------
 
- * CRM & SRM/Meeting Confidential Info
+
+None
+
 
 Views
 -----
 
- * \* INHERIT crm.case.form.confidential (form)
- * \* INHERIT crm.case.form.inherit (form)
- * \* INHERIT event.event.form.inherit (form)
- * meeting.confidential.info.form (form)
- * meeting.confidential.info.tree (tree)
- * meeting.confidential.info.form (form)
- * meeting.confidential.info.tree (tree)
+
+None
+
 
 
 Objects
 -------
 
-Object: Meeting Confidential Info (meeting.confidential.info)
-#############################################################
-
-
-
-:group: Group, selection, required
-
-
-
-
-
-:name: Table, char
-
-
-
-
-
-:description: Description, text, required
-
-
+None

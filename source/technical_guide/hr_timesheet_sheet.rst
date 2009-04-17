@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Timesheets (*hr_timesheet_sheet*)
@@ -24,9 +30,9 @@ Description
 
 ::
 
-  This module help you easily encode and validate timesheet and attendances within the same view. 
-  The upper part of the view is for attendances and track (sign in/sign out) events. The lower 
-  part is for timesheet.
+  This module help you easily encode and validate timesheet and attendances
+  within the same view. The upper part of the view is for attendances and
+  track (sign in/sign out) events. The lower part is for timesheet.
   
   Others tabs contains statistics views to help you analyse your
   time or the time of your team:
@@ -41,6 +47,16 @@ Description
   The validation can be configured in te company:
   * Period size (day, week, month, year)
   * Maximal difference between timesheet and attendances
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/hr_timesheet_sheet.zip>`_
+  * `5.0 </download/modules/5.0/hr_timesheet_sheet.zip>`_
+  * `trunk </download/modules/trunk/hr_timesheet_sheet.zip>`_
+
 
 Dependencies
 ------------

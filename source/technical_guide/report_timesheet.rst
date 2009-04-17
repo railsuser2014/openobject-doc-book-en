@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Timesheet - Reporting (*report_timesheet*)
@@ -26,6 +32,16 @@ Description
 
   Module to add timesheet views like
       All Month, Timesheet By User, Timesheet Of Month, Timesheet By Account
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/report_timesheet.zip>`_
+  * `5.0 </download/modules/5.0/report_timesheet.zip>`_
+  * `trunk </download/modules/trunk/report_timesheet.zip>`_
+
 
 Dependencies
 ------------
@@ -70,6 +86,8 @@ Views
  * report_timesheet.account.tree (tree)
  * report_timesheet.account.graph (graph)
  * report_timesheet.timesheet.account.form (form)
+ * report.random.timesheet.tree (tree)
+ * random.timesheet.lines.tree (tree)
 
 
 Objects
@@ -189,5 +207,103 @@ Object: Costs to invoice (report_timesheet.invoice)
 
 
 :account_id: Project, many2one, readonly
+
+
+
+
+Object: Random Timesheet Report (report.random.timesheet)
+#########################################################
+
+
+
+:analytic_account_id: Analytic Account, many2one, readonly
+
+
+
+
+
+:date: Date, date, readonly
+
+
+
+
+
+:user_id: User, many2one, readonly
+
+
+
+
+
+:name: Description, char, readonly
+
+
+
+
+
+:quantity: Quantity, float, readonly
+
+
+
+
+Object: Random Timesheet Lines (random.timesheet.lines)
+#######################################################
+
+
+
+:analytic_account_id: Analytic Account, many2one, readonly
+
+
+
+
+
+:user_id: User, many2one, readonly
+
+
+
+
+
+:product_id: Product, many2one, readonly
+
+
+
+
+
+:general_account_id: General Account, many2one, readonly
+
+
+
+
+
+:to_invoice: Invoicing, many2one, readonly
+
+
+
+
+
+:uom_id: UoM, many2one, readonly
+
+
+
+
+
+:amount: Amount, float, readonly
+
+
+
+
+
+:date: Date, date, readonly
+
+
+
+
+
+:quantity: Quantity, float, readonly
+
+
+
+
+
+:name: Description, char, readonly
 
 

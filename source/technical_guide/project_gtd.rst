@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Getting Things Done - Time Management Module (*project_gtd*)
@@ -24,16 +30,26 @@ Description
 
 ::
 
-  This module implements all concepts defined by the Getting Things Done methodology. 
-  This world-wide used methodology is used for personal time management improvement.
+  This module implements all concepts defined by the Getting Things Done
+  methodology. This world-wide used methodology is used for personal
+  time management improvement.
   
-  Getting Things Done (commonly abbreviated as GTD) is an action management method created 
-  by David Allen, and described in a book of the same name.
+  Getting Things Done (commonly abbreviated as GTD) is an action management
+  method created by David Allen, and described in a book of the same name.
   
-  GTD rests on the principle that a person needs to move tasks out of the mind by recording them 
-  externally. 
-  That way, the mind is freed from the job of remembering everything that needs to be done, and can 
-  concentrate on actually performing those tasks.
+  GTD rests on the principle that a person needs to move tasks out of the mind by
+  recording them externally. That way, the mind is freed from the job of
+  remembering everything that needs to be done, and can concentrate on actually
+  performing those tasks.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/project_gtd.zip>`_
+  * `trunk </download/modules/trunk/project_gtd.zip>`_
+
 
 Dependencies
 ------------
@@ -51,7 +67,6 @@ Menus
 
  * Project Management/Configuration/Time Management
  * Project Management/Configuration/Time Management/Contexts
- * Project Management/Configuration/Time Management/Contexts/My Contexts
  * Project Management/Configuration/Time Management/Timeboxes
  * Project Management/Configuration/Time Management/Timeboxes/My Timeboxes
  * Project Management/Time Management
@@ -191,7 +206,7 @@ Object: project.gtd.timebox (project.gtd.timebox)
 
 
 
-:child_ids: Childs Timebox, one2many
+:child_ids: Child Timeboxes, one2many
 
 
 

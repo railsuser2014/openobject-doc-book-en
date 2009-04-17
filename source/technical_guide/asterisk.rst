@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Asterisk (*asterisk*)
@@ -26,7 +32,16 @@ Description
 
   Manages a list of asterisk servers and IP phones.
   This module implements a system to popup the partner form based on phone calls.
-  This is still a proof of concept, that have been made during Tiny ERP's technical training session.
+  This is still a proof of concept, that have been made during Tiny ERP's
+  technical training session.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/asterisk.zip>`_
+
 
 Dependencies
 ------------

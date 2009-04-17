@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Test New Features (*test_44*)
@@ -15,7 +21,7 @@ Test New Features (*test_44*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: test_44
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,8 +30,17 @@ Description
 
 ::
 
-  The module adds google map field in partner address so that we can directly open google 
-  map from the url widget.
+  The module adds google map field in partner address
+  so that we can directly open google map from the
+  url widget.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/test_44.zip>`_
+
 
 Dependencies
 ------------

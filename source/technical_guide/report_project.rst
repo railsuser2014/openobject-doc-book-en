@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Sales Management - Reporting (*report_project*)
@@ -26,6 +32,16 @@ Description
 
   A module that adds some reports on projects.
       Closed Tasks (By User and By Project), Finished Task (By User and By Project)
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/report_project.zip>`_
+  * `5.0 </download/modules/5.0/report_project.zip>`_
+  * `trunk </download/modules/trunk/report_project.zip>`_
+
 
 Dependencies
 ------------

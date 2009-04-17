@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 E-Commerce (*ecommerce*)
@@ -13,9 +19,9 @@ E-Commerce (*ecommerce*)
 :Module: ecommerce
 :Name: E-Commerce
 :Version: 5.0.1.0
-:Author: e-tiny
+:Author: Tiny
 :Directory: ecommerce
-:Web: http://www.etiny.com
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,17 +30,29 @@ Description
 
 ::
 
-  eCommerce Users can order on the website, orders are automatically imported in TinyERP.
-  You can configure products, categories of products, language, currency, carrier, pay 
-and also configure row,column,images.
+  ecommerce users can order on the website, orders are automatically imported in OpenERP.
+  
+  You can export products, product's categories, product images and create links between
+  categories of products, currency and languages to website.
+  
+  Delivery of products manage by carriers.
+  
+  Different payment methods are available for users to make payment.
+  
+  You can display products in table on website using rows and columns specified in webshop.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/ecommerce.zip>`_
+
 
 Dependencies
 ------------
 
  * :mod:`delivery`
- * :mod:`base`
- * :mod:`product`
- * :mod:`sale`
 
 Reports
 -------
@@ -47,8 +65,9 @@ Menus
  * Ecommerce
  * Ecommerce/Configuration
  * Ecommerce/Configuration/Web Shop
+ * Ecommerce/Configuration/New Web Shop
  * Ecommerce/Products
- * Ecommerce/Products/Products by Category
+ * Ecommerce/Products/Ecommerce Products by Category
  * Ecommerce/Payment Configuration
  * Ecommerce/Payment Configuration/Payment
  * Ecommerce/Configuration/Payment method
@@ -60,13 +79,13 @@ Menus
  * Ecommerce/Products/Product Reviews
  * Ecommerce/Products/Search Parameters
  * Ecommerce/Sales Orders
- * Ecommerce/Sales Orders/Sale order
+ * Ecommerce/Sales Orders/Ecommerce Sales Orders
 
 Views
 -----
 
  * ecommerce.shop.tree (tree)
- * Ecommerce Shop Basic Info (form)
+ * Web Shop (form)
  * ecommerce.product.category.form (form)
  * ecommerce.product.category.tree (tree)
  * ecommerce.payment.tree (tree)
@@ -107,7 +126,13 @@ Object: ecommerce partner (ecommerce.partner)
 
 
 
-:last_name: Last Name, char, required
+:address_ids: Contacts, one2many
+
+
+
+
+
+:last_name: Last Name, char
 
 
 
@@ -115,7 +140,7 @@ Object: ecommerce partner (ecommerce.partner)
 
 :name: Name, char, required
 
-
+    *Its ecommerce partner name and address*
 
 
 
@@ -131,12 +156,6 @@ Object: ecommerce partner (ecommerce.partner)
 
 
 
-:address: Contacts, one2many
-
-
-
-
-
 :active: Active, boolean
 
 
@@ -147,7 +166,7 @@ Object: ecommerce partner address (ecommerce.partner.address)
 
 
 
-:username: Contact Name, char, required
+:username: Contact Name, char
 
 
 
@@ -177,7 +196,7 @@ Object: ecommerce partner address (ecommerce.partner.address)
 
 
 
-:partner_id: Partner, many2one, required
+:partner_id: Partner, many2one
 
 
 
@@ -229,15 +248,15 @@ Object: search parameters (ecommerce.search)
 
 
 
-:code: Search Parameter Code, char
+:code: Product fields, many2one, required
 
 
 
 
 
-:name: Search Parameter Name, char
+:name: Name, char, required
 
-
+    *Search parameter name which you want to display at website*
 
 
 Object: Reviews about product (ecommerce.product.reviews)
@@ -274,18 +293,34 @@ Object: Reviews about product (ecommerce.product.reviews)
 
 
 
+Object: payment method (ecommerce.payment.method)
+#################################################
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:shortcut: Shortcut, char, required
+
+
+
+
 Object: Credit Cards (ecommerce.creditcard)
 ###########################################
 
 
 
-:code: Credit Card Code, char
+:code: Code, char, required
 
 
 
 
 
-:name: Credit Card Name, char
+:name: Card Name, char, required
 
 
 
@@ -295,9 +330,9 @@ Object: ecommerce payment (ecommerce.payment)
 
 
 
-:biz_account: Your Business E-mail Id, char
+:biz_account: Business E-mail Id, char
 
-    *Paypal Business Account Id.*
+    *Paypal business account Id.*
 
 
 
@@ -307,13 +342,13 @@ Object: ecommerce payment (ecommerce.payment)
 
 
 
-:chequepay_to: Account Name, char
+:chequepay_to: Account Owner, char
 
 
 
 
 
-:name: Method, selection, required
+:name: Payment Method, selection, required
 
 
 
@@ -349,6 +384,18 @@ Object: ecommerce payment (ecommerce.payment)
 
 
 
+:creditcard_ids: Credit Cards, many2many
+
+
+
+
+
+:transaction_dtl_ids: Transaction History, one2many
+
+    *Transaction detail with the uniq transaction id.*
+
+
+
 :cancel_url: Cancel URL, char
 
     *Cancel url which is set at the paypal account.*
@@ -361,33 +408,15 @@ Object: ecommerce payment (ecommerce.payment)
 
 
 
-:iban: IBAN, char
-
-    *for international bank transfers*
-
-
-
-:return_url: Return URL, char
-
-    *Return url which is set at the paypal account.*
-
-
-
-:creditcards: Credit Cards, many2many
-
-
-
-
-
 :state_id: State, many2one
 
 
 
 
 
-:transaction_detail: Transaction History, one2many
+:return_url: Return URL, char
 
-    *Transaction detail with the uniq transaction id.*
+    *Return url which is set at the paypal account.*
 
 
 
@@ -401,39 +430,39 @@ Object: ecommerce payment received (ecommerce.payment.received)
 
 
 
-:paypal_acc: Paypal Account, many2one, required
+:saleorder_id: Sales Order, many2one
 
 
 
 
 
-:saleorder_id: Sale Order, many2one, required
+:invoice_id: Invoice, many2one
 
 
 
 
 
-:invoice_id: Invoice, many2one, required
+:paypal_acc_id: Paypal Account, many2one, required
 
 
 
 
 
-:transaction_date: Date, date, required
+:transaction_date: Date Payment, date, required
+
+    *Transaction finish date.*
+
+
+
+:partner_id: Partner, many2one, required
 
 
 
 
 
-:partner: Partner, many2one, required
+:transaction_id: Transaction Id, char, readonly
 
-
-
-
-
-:transaction_id: Uniq Transaction Id, char, required
-
-
+    *Its Unique id which is generated from the paypal.*
 
 
 Object: ecommerce shop (ecommerce.shop)
@@ -443,17 +472,17 @@ Object: ecommerce shop (ecommerce.shop)
 
 :column_configuration: No. of Columns, integer
 
-    *Add No. of columns for products which u want to configure at website*
+    *Add number of columns for products which you want to configure at website*
 
 
 
 :name: Name, char, required
 
-    *Name of the Shop which u want to configure for website.*
+    *Name of the shop which you are configure at website.*
 
 
 
-:payment_method: Payable method, many2many
+:payment_method_ids: Payment Methods, many2many
 
 
 
@@ -485,19 +514,19 @@ Object: ecommerce shop (ecommerce.shop)
 
 :language_ids: Language, many2many
 
-    *Add the Launguage options for the online customers.*
+    *Add the launguage options for the online customers.*
 
 
 
-:row_configuration: No. of Row, integer
+:row_configuration: No. of Rows, integer
 
-    *Add No. of row for products which u want to configure at website*
+    *Add number of rows for products which you want to configure at website*
 
 
 
 :search_ids: Search On, many2many
 
-    *Add the Search Parameters which you are allow from the website.*
+    *Add the search parameters which you are allow from the website.*
 
 
 
@@ -515,7 +544,7 @@ Object: ecommerce shop (ecommerce.shop)
 
 :delivery_ids: Delivery, many2many
 
-    *Add the carriers which we use for the shipping.*
+    *Add the carriers which you use for the shipping.*
 
 
 Object: ecommerce category (ecommerce.category)
@@ -523,7 +552,7 @@ Object: ecommerce category (ecommerce.category)
 
 
 
-:child_id: Child Categories, one2many
+:child_ids: Child Categories, one2many
 
 
 
@@ -531,11 +560,11 @@ Object: ecommerce category (ecommerce.category)
 
 :category_id: Tiny Category, many2one
 
-    *It display the product which are under the tiny category.*
+    *It display the product which are under the openerp category.*
 
 
 
-:web_id: Webshop, many2one
+:web_id: Web Shop, many2one
 
 
 
@@ -543,7 +572,7 @@ Object: ecommerce category (ecommerce.category)
 
 :name: E-commerce Category, char, required
 
-    *Add the Category name which you want to display on the website.*
+    *Add the category name which you want to display at the website.*
 
 
 
@@ -552,8 +581,8 @@ Object: ecommerce category (ecommerce.category)
 
 
 
-Object: ecommerce sale order (ecommerce.saleorder)
-##################################################
+Object: ecommerce saleorder (ecommerce.saleorder)
+#################################################
 
 
 
@@ -569,7 +598,7 @@ Object: ecommerce sale order (ecommerce.saleorder)
 
 
 
-:name: Order Description, char, required
+:name: Order Reference, char, required
 
 
 
@@ -588,6 +617,12 @@ Object: ecommerce sale order (ecommerce.saleorder)
 
 
 :epartner_add_id: Contact Address, many2one
+
+
+
+
+
+:orderline_ids: Order Lines, one2many
 
 
 
@@ -616,12 +651,6 @@ Object: ecommerce sale order (ecommerce.saleorder)
 
 
 
-
-:order_lines: Order Lines, one2many
-
-
-
-
 Object: ecommerce order line (ecommerce.order.line)
 ###################################################
 
@@ -639,7 +668,7 @@ Object: ecommerce order line (ecommerce.order.line)
 
 
 
-:product_uom_id: Unit of Measure, many2one, required
+:product_uom_id: Product UOM, many2one, required
 
 
 
@@ -657,6 +686,6 @@ Object: ecommerce order line (ecommerce.order.line)
 
 
 
-:name: Order Line, char, required
+:name: Description, char, required
 
 

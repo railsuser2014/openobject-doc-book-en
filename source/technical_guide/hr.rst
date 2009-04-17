@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Human Resources (*hr*)
@@ -30,6 +36,16 @@ Description
       * Attendances and sign in/out system
   
       Different reports are also provided, mainly for attendance statistics.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/hr.zip>`_
+  * `5.0 </download/modules/5.0/hr.zip>`_
+  * `trunk </download/modules/trunk/hr.zip>`_
+
 
 Dependencies
 ------------
@@ -73,6 +89,7 @@ Views
  * hr.employee.category.tree (tree)
  * hr.department.form (form)
  * hr.department.tree (tree)
+ * \* INHERIT res.users.form (form)
 
 
 Objects
@@ -105,13 +122,13 @@ Object: Employee Category (hr.employee.category)
 
 
 
-:parent_id: Parent category, many2one
+:parent_id: Parent Category, many2one
 
 
 
 
 
-:child_ids: Childs Categories, one2many
+:child_ids: Child Categories, one2many
 
 
 
@@ -133,49 +150,19 @@ Object: Employee (hr.employee)
 
 
 
-:code: Personal Number, char
-
-
-
-
-
-:ssnid: SSN No, char
-
-
-
-
-
-:address_number: Number, char
-
-
-
-
-
-:zip_id: Zip, many2one
-
-
-
-
-
-:holidays_id: unknown, one2many
-
-
-
-
-
 :audiens_num: AUDIENS Number, char
 
 
 
 
 
-:partner_prefix: Partner's prefix, char
+:marital: Marital Status, selection
 
 
 
 
 
-:sinid: SIN No, char
+:active: Active, boolean
 
 
 
@@ -187,55 +174,7 @@ Object: Employee (hr.employee)
 
 
 
-:partner_initials: Partner's initials, char
-
-
-
-
-
-:waowiaww_dep_id: If yes, which department, many2one
-
-
-
-
-
-:lang_id: Languages Known, one2many
-
-
-
-
-
-:partner_lastname: Partner's name, char
-
-
-
-
-
-:education: Education, char
-
-
-
-
-
-:nationality_id: Nationality, many2one
-
-
-
-
-
 :children: Number of children, integer
-
-
-
-
-
-:place_of_birth: Place of Birth, char
-
-
-
-
-
-:maiden_name: Maiden Name, char
 
 
 
@@ -247,25 +186,13 @@ Object: Employee (hr.employee)
 
 
 
-:earings_order_beneficier: In name of, char
-
-
-
-
-
 :work_phone: Work Phone, char
 
 
 
 
 
-:dist_home_work: Dist. between home and workplace (km), integer
-
-
-
-
-
-:country_id: Country, many2one
+:country_id: Nationality, many2one
 
 
 
@@ -295,43 +222,7 @@ Object: Employee (hr.employee)
 
 
 
-:nbr_of_children: # of children, integer
-
-
-
-
-
-:payscale: Scale, many2one
-
-
-
-
-
-:town_id: Town, many2one
-
-
-
-
-
-:pension: Pension, boolean
-
-
-
-
-
-:evaluation_id: unknown, one2many
-
-
-
-
-
-:email: Email, char
-
-
-
-
-
-:contract_ids: Contracts, one2many
+:lang_id: Languages Known, one2many
 
 
 
@@ -343,37 +234,7 @@ Object: Employee (hr.employee)
 
 
 
-:earings_order_account: Account Number, char
-
-
-
-
-
 :otherid: Other ID, char
-
-
-
-
-
-:nin: National Insurance Number, char
-
-
-
-
-
-:firstname: Surname, char
-
-
-
-
-
-:spaarloonregeling_account: A/C number spaarloonregeling, char
-
-
-
-
-
-:partner_firstname: Partner's surname, char
 
 
 
@@ -385,55 +246,13 @@ Object: Employee (hr.employee)
 
 
 
-:waowiaww: Disability/unemployment benefit, boolean
-
-
-
-
-
-:phone: Phone Number, char
-
-
-
-
-
 :birthday: Birthday, date
 
 
 
 
 
-:levensloopregeling_account: A/C number levensloonregeling, char
-
-
-
-
-
-:birth_date: Birth Date, date
-
-
-
-
-
-:active: Active, boolean
-
-
-
-
-
-:field_of_education: Field of education, char
-
-
-
-
-
-:nationality: Nationality, many2one
-
-
-
-
-
-:marital: Marital Status, selection
+:sinid: SIN No, char
 
 
 
@@ -463,25 +282,7 @@ Object: Employee (hr.employee)
 
 
 
-:partner_dob: Partner's DOB, date
-
-
-
-
-
 :name: Employee, char, required
-
-
-
-
-
-:pension_waiver: Pension waiver, boolean
-
-
-
-
-
-:mobile: Mobile Phone Number, char
 
 
 
@@ -493,37 +294,25 @@ Object: Employee (hr.employee)
 
 
 
-:notes: Notes, text
+:ssnid: SSN No, char
 
 
 
 
 
-:amount_travel_allowance: Travel allowance(per year), float, readonly
+:marital_status: Marital Status, many2one
 
 
 
 
 
-:attachment_earings_order: Attachment of earings order, boolean
+:payscale: Scale, many2one
 
 
 
 
 
-:prefix: Prefix, char
-
-
-
-
-
-:birthdate: Date of Birthday, date
-
-
-
-
-
-:earings_order_amount: Amount, float
+:address_home_id: Home Address, many2one
 
 
 
@@ -535,37 +324,13 @@ Object: Employee (hr.employee)
 
 
 
-:travel_allowance: Travel Allowande, boolean
+:contract_ids: Contracts, one2many
 
 
 
 
 
-:marital_status: Marital Status, selection
-
-
-
-
-
-:spaarloonregeling: Spaarloonregeling, float
-
-
-
-
-
-:partner_gender: Partner's gender, selection
-
-
-
-
-
-:levensloopregeling: Levensloopregeling, float
-
-
-
-
-
-:addres_id: Address, many2one
+:place_of_birth: Place of Birth, char
 
 
 
@@ -577,7 +342,7 @@ Object: Employee (hr.employee)
 
 
 
-:soc_security: Social security number, char
+:notes: Notes, text
 
 
 
@@ -639,7 +404,7 @@ Object: hr.department (hr.department)
 
 
 
-:child_ids: Childs Departments, one2many
+:child_ids: Child Departments, one2many
 
 
 
@@ -658,12 +423,6 @@ Object: hr.department (hr.department)
 
 
 :parent_id: Parent Department, many2one
-
-
-
-
-
-:max_temp_contract: Maximum temporary contracts, integer
 
 
 

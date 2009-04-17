@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Workcenter Production start end workflow (*mrp_operations*)
@@ -47,6 +53,15 @@ Description
       The field delay is the delay(stop date - start date).
       So that we can compare the theoretic delay and real delay.
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/mrp_operations.zip>`_
+  * `trunk </download/modules/trunk/mrp_operations.zip>`_
+
+
 Dependencies
 ------------
 
@@ -66,17 +81,17 @@ Reports
 Menus
 -------
 
- * Manufacturing/All Work Order
- * Manufacturing/All Work Order/Work Orders to Do
- * Manufacturing/All Work Order/Waiting Work Orders
+ * Manufacturing/All Work Orders
+ * Manufacturing/All Work Orders/Work Orders to Do
+ * Manufacturing/All Work Orders/Future Work Orders
  * Manufacturing/Configuration/Start - Stop Codes
  * Manufacturing/Work Order Events Using Bar Codes
 
 Views
 -----
 
- * \* INHERIT mrp.production.workcenter.line.inherit.tree (tree)
- * \* INHERIT mrp.production.workcenter.line.form.inherit (form)
+ * mrp.production.workcenter.line.tree (tree)
+ * mrp.production.workcenter.line.form (form)
  * mrp.production.workcenter.line.calendar (calendar)
  * mrp.production.workcenter.line.gantt (gantt)
  * mrp.production.code.tree (tree)

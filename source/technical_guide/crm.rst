@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Customer & Supplier Relationship Management (*crm*)
@@ -24,23 +30,34 @@ Description
 
 ::
 
-  The generic Open ERP Customer Relationship Management system enables a group of people to 
-  intelligently and efficiently manage leads, opportunities, tasks, issues, requests, bugs, campaign, 
-  claims, etc.
-  It manages key tasks such as communication, identification, prioritization, assignment, 
-  resolution and notification.
+  The generic Open ERP Customer Relationship Management
+  system enables a group of people to intelligently and efficiently manage
+  leads, opportunities, tasks, issues, requests, bugs, campaign, claims, etc.
+  It manages key tasks such as communication, identification, prioritization,
+  assignment, resolution and notification.
   
-  Open ERP ensures that all cases are successfully tracked by users, customers and suppliers. 
-  It can automatically send reminders, escalate the request, trigger specific methods and lots of others 
-  actions based on your enterprise own rules.
+  Open ERP ensures that all cases are successfully tracked by users, customers and
+  suppliers. It can automatically send reminders, escalate the request, trigger
+  specific methods and lots of others actions based on your enterprise own rules.
   
-  The greatest thing about this system is that users don't need to do anything special. 
-  They can just send email to the request tracker. 
-  Open ERP will take care of thanking them for their message, automatically routing it to the appropriate 
-  staff, and making sure all future correspondence gets to the right place.
+  The greatest thing about this system is that users don't need to do anything
+  special. They can just send email to the request tracker. Open ERP will take
+  care of thanking them for their message, automatically routing it to the
+  appropriate staff, and making sure all future correspondence gets to the right
+  place.
   
   The CRM module has a email gateway for the synchronisation interface
   between mails and Open ERP.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/crm.zip>`_
+  * `5.0 </download/modules/5.0/crm.zip>`_
+  * `trunk </download/modules/trunk/crm.zip>`_
+
 
 Dependencies
 ------------
@@ -59,17 +76,17 @@ Menus
  * CRM & SRM/Configuration
  * CRM & SRM/Configuration/Cases
  * CRM & SRM/Configuration/Cases/Sections
- * CRM & SRM/Reporting/All Cases
- * CRM & SRM/Reporting/All Cases/Cases by section
+ * CRM & SRM/All Cases
+ * CRM & SRM/All Cases/Cases by section
  * CRM & SRM/Configuration/Cases/Categories
  * CRM & SRM/Configuration/Cases/Rules
- * CRM & SRM/Reporting/All Cases/All Cases
- * CRM & SRM/Reporting/All Cases/All Cases/Open Cases
- * CRM & SRM/Reporting/All Cases/My cases
- * CRM & SRM/Reporting/All Cases/My cases/My Open Cases
- * CRM & SRM/Reporting/All Cases/Cases Histories
- * CRM & SRM/Reporting/All Cases/Cases Histories/All Histories
- * CRM & SRM/Reporting/All Cases/Cases Histories/My Histories
+ * CRM & SRM/All Cases/All Cases
+ * CRM & SRM/All Cases/All Cases/Open Cases
+ * CRM & SRM/All Cases/My cases
+ * CRM & SRM/All Cases/My cases/My Open Cases
+ * CRM & SRM/All Cases/Cases Histories
+ * CRM & SRM/All Cases/Cases Histories/All Histories
+ * CRM & SRM/All Cases/Cases Histories/My Histories
  * CRM & SRM/Configuration/Segmentations
  * CRM & SRM/Configuration/Segmentations/Segmentations
  * CRM & SRM/Configuration/Create menus for a case section
@@ -116,7 +133,7 @@ Object: Case Section (crm.case.section)
 
 
 
-:user_id: Responsible, many2one
+:user_id: Responsible User, many2one
 
 
 
@@ -140,7 +157,7 @@ Object: Case Section (crm.case.section)
 
 
 
-:child_ids: Childs Sections, one2many
+:child_ids: Child Sections, one2many
 
 
 
@@ -160,7 +177,13 @@ Object: Case Section (crm.case.section)
 
 :reply_to: Reply-To, char
 
-    *The email address wich is the 'Reply-To' of all email sent by Open ERP for cases in this section*
+    *The email address put in the 'Reply-To' of all emails sent by Open ERP about cases in this section*
+
+
+
+:allow_unlink: Allow Delete, boolean
+
+    *Allows to delete non draft cases*
 
 
 
@@ -208,6 +231,12 @@ Object: Case Rule (crm.case.rule)
 
 
 
+:regex_history: Regular Expression on Case History, char
+
+
+
+
+
 :sequence: Sequence, integer
 
 
@@ -217,6 +246,12 @@ Object: Case Rule (crm.case.rule)
 :act_remind_partner: Remind Partner, boolean
 
     *Check this if you want the rule to send a reminder by email to the partner.*
+
+
+
+:active: Active, boolean
+
+
 
 
 
@@ -264,7 +299,7 @@ Object: Case Rule (crm.case.rule)
 
 :act_email_cc: Add watchers (Cc), char
 
-    *These people will receive a copy of the futur communication between partner and users by email*
+    *These people will receive a copy of the future communication between partner and users by email*
 
 
 
@@ -316,13 +351,19 @@ Object: Case Rule (crm.case.rule)
 
 
 
-:active: Active, boolean
+:trg_max_history: Maximum Communication History, integer
 
 
 
 
 
-:act_mail_to_watchers: Mail to watchers (Cc), boolean
+:regex_name: Regular Expression on Case Name, char
+
+
+
+
+
+:act_mail_to_watchers: Mail to watchers (CC), boolean
 
 
 
@@ -341,6 +382,12 @@ Object: Case Rule (crm.case.rule)
 
 
 :act_user_id: Set responsible to, many2one
+
+
+
+
+
+:server_action_id: Server Action, many2one
 
 
 
@@ -386,13 +433,13 @@ Object: Case (crm.case)
 
 
 
-:code: Calendar Code, char
-
-
-
-
-
 :create_date: Created, datetime, readonly
+
+
+
+
+
+:outgoing_picking_id: Outgoing Picking, many2one
 
 
 
@@ -416,12 +463,6 @@ Object: Case (crm.case)
 
 
 
-:zip_id: Zip, many2one
-
-
-
-
-
 :partner_address_id: Partner Contact, many2one
 
 
@@ -429,6 +470,12 @@ Object: Case (crm.case)
 
 
 :som: State of Mind, many2one
+
+
+
+
+
+:related_picking_state: Related Picking State, char, readonly
 
 
 
@@ -452,25 +499,19 @@ Object: Case (crm.case)
 
 
 
-:in_supplier_move_id: Return To Supplier Move, many2one
-
-
-
-
-
 :duration: Duration, float
 
 
 
 
 
-:event_ids: Events, many2many
+:out_supplier_picking_id: Return From Supplier Picking, many2one
 
 
 
 
 
-:partner_id: Partner, many2one
+:planned_revenue: Planned Revenue, float
 
 
 
@@ -494,12 +535,6 @@ Object: Case (crm.case)
 
 
 
-:timesheet_line_id: Timesheet Line, many2one
-
-
-
-
-
 :user_id: Responsible, many2one
 
 
@@ -512,13 +547,7 @@ Object: Case (crm.case)
 
 
 
-:planned_revenue: Planned Revenue, float
-
-
-
-
-
-:meeting_id: Meeting confidential, many2one
+:partner_id: Partner, many2one
 
 
 
@@ -542,7 +571,7 @@ Object: Case (crm.case)
 
 
 
-:outgoing_move_id: Outgoing Move, many2one
+:in_supplier_picking_id: Return To Supplier Picking, many2one
 
 
 
@@ -620,7 +649,7 @@ Object: Case (crm.case)
 
 
 
-:incoming_move_id: Incoming Move, many2one
+:incident_ref: Incident Ref, char, required
 
 
 
@@ -632,7 +661,7 @@ Object: Case (crm.case)
 
 
 
-:product_id: Related Product, many2one
+:incoming_picking_id: Incoming Picking, many2one
 
 
 
@@ -644,7 +673,7 @@ Object: Case (crm.case)
 
 
 
-:incident_ref: Incident Ref, char, required
+:related_incoming_picking_state: Related Picking State, char, readonly
 
 
 
@@ -662,19 +691,13 @@ Object: Case (crm.case)
 
 
 
-:out_supplier_move_id: Return From Supplier Move, many2one
-
-
-
-
-
 :email_last: Latest E-Mail, text, readonly
 
 
 
 
 
-:grant_id: Grant, many2one
+:related_outgoing_picking_state: Related Picking State, char, readonly
 
 
 
@@ -699,6 +722,12 @@ Object: Case (crm.case)
 
 
 :partner_phone: Phone, char
+
+
+
+
+
+:product_id: Related Product, many2one
 
 
 
@@ -832,7 +861,7 @@ Object: Partner Segmentation (crm.segmentation)
 
 :som_interval: Days per Periode, integer
 
-    *A period is the average number of days between two cycle of sale or purchase for this segmentation. It's mainly used to detect if a partner has not purchased or buy for a too long time, so we suppose that his state of mind has decreased because he probably bought goods to another supplier. Use this functionnality for recurring businesses.*
+    *A period is the average number of days between two cycle of sale or purchase for this segmentation. It's mainly used to detect if a partner has not purchased or buy for a too long time, so we suppose that his state of mind has decreased because he probably bought goods to another supplier. Use this functionality for recurring businesses.*
 
 
 
@@ -854,7 +883,7 @@ Object: Partner Segmentation (crm.segmentation)
 
 
 
-:child_ids: Childs profile, one2many
+:child_ids: Child Profiles, one2many
 
 
 
@@ -866,7 +895,7 @@ Object: Partner Segmentation (crm.segmentation)
 
 
 
-:answer_yes: Inclued answers, many2many
+:answer_yes: Included Answers, many2many
 
 
 
@@ -886,7 +915,7 @@ Object: Partner Segmentation (crm.segmentation)
 
 :profiling_active: Use The Profiling Rules, boolean
 
-    *Check if you want to use this tab as part of the segmentation rule. If not checked, the criteria beneath will be ignored*
+    *Check this box if you want to use this tab as part of the segmentation rule. If not checked, the criteria beneath will be ignored*
 
 
 
@@ -926,7 +955,7 @@ Object: Partner Segmentation (crm.segmentation)
 
 
 
-:answer_no: Excluded answers, many2many
+:answer_no: Excluded Answers, many2many
 
 
 
@@ -960,7 +989,7 @@ Object: Segmentation line (crm.segmentation.line)
 
 
 
-:operator: Mandatory / Optionnal, selection, required
+:operator: Mandatory / Optional, selection, required
 
 
 

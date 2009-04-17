@@ -4,18 +4,24 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 report_analytic_planning_long_term (*report_analytic_planning_long_term*)
 =========================================================================
 :Module: report_analytic_planning_long_term
 :Name: report_analytic_planning_long_term
-:Version: 5.0.1.0
+:Version: False
 :Author: Tiny
 :Directory: report_analytic_planning_long_term
-:Web: http://www.openerp.com//
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,10 +30,17 @@ Description
 
 ::
 
-  This modules is an improvement of the basic planning module and offers additional functionalities 
-  for long term planning, such as:
+  This modules is an improvement of the basic planning module and offers additional functionalities for long term planning, such as:
           - planning of the functions that will be needed
-          - additional data for planned resources: the start and end dates
+          - additional data for planned ressources: the start and end dates
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/report_analytic_planning_long_term.zip>`_
+
 
 Dependencies
 ------------
@@ -50,38 +63,12 @@ None
 Views
 -----
 
- * \* INHERIT report.account.analytic.planning.form.inherit_longterm_1 (form)
- * \* INHERIT report.account.analytic.planning.form.inherit_longterm_2 (form)
- * \* INHERIT report.account.analytic.planning.form.inherit_longterm_3 (form)
- * \* INHERIT report.account.analytic.planning.form.inherit_longterm_4 (form)
+
+None
+
 
 
 Objects
 -------
 
-Object: Planning product stat (report_account_analytic.planning.stat.product)
-#############################################################################
-
-
-
-:sum_amount_real: Timesheet, float, readonly
-
-
-
-
-
-:product_id: Post / Product, many2one, required
-
-
-
-
-
-:planning_id: Planning, many2one, required
-
-
-
-
-
-:quantity: Planned, float, required
-
-
+None

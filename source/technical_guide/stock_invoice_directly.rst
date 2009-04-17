@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Invoice Picking Directly (*stock_invoice_directly*)
@@ -24,8 +30,17 @@ Description
 
 ::
 
-  When you send or deliver goods, this module automatically launch the invoicing wizard 
-  if the delivery is to be invoiced.
+  When you send or deliver goods, this module automatically launch
+          the invoicing wizard if the delivery is to be invoiced.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 </download/modules/5.0/stock_invoice_directly.zip>`_
+  * `trunk </download/modules/trunk/stock_invoice_directly.zip>`_
+
 
 Dependencies
 ------------

@@ -4,8 +4,14 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Payment Management (*account_payment*)
@@ -27,6 +33,16 @@ Description
   This module provide :
       * a more efficient way to manage invoice payment.
       * a basic mechanism to easily plug various automated payment.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 </download/modules/4.2/account_payment.zip>`_
+  * `5.0 </download/modules/5.0/account_payment.zip>`_
+  * `trunk </download/modules/trunk/account_payment.zip>`_
+
 
 Dependencies
 ------------
@@ -255,7 +271,7 @@ Object: Payment Line (payment.line)
 
 :communication: Communication, char, required
 
-    *Used as the message between ordering customer and current company.Depicts 'What do you want to say to the receipent about this oder?'*
+    *Used as the message between ordering customer and current company. Depicts 'What do you want to say to the recipient about this order ?'*
 
 
 

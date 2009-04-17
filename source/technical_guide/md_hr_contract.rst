@@ -4,15 +4,21 @@
     :noindex:
 .. 
 
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
 
 Pilot Human Resource Management (*md_hr_contract*)
 ==================================================
 :Module: md_hr_contract
 :Name: Pilot Human Resource Management
-:Version: 5.0.1.0
+:Version: False
 :Author: Tiny
 :Directory: md_hr_contract
 :Web: 
@@ -28,6 +34,14 @@ Description
       * Contract of the employee
       * Availability of the employee
       and many more.................
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk </download/modules/trunk/md_hr_contract.zip>`_
+
 
 Dependencies
 ------------
@@ -52,43 +66,12 @@ None
 Views
 -----
 
- * \* INHERIT md.hr.contract.form1 (form)
- * \* INHERIT md.hr.contract.form2 (form)
- * \* INHERIT md.hr.contract.form3 (form)
- * \* INHERIT md.hr.contract.form4 (form)
- * \* INHERIT md.hr.contract.form5 (form)
- * \* INHERIT md.hr.employee.form1 (form)
- * md.hr.contract.availability.form (form)
- * md.hr.contract.availability.tree (tree)
- * \* INHERIT hr.department.form (form)
+
+None
+
 
 
 Objects
 -------
 
-Object: HR Contract Availability (md.hr.contract.availability)
-##############################################################
-
-
-
-:to_hour: To, time
-
-
-
-
-
-:from_hour: From, time
-
-
-
-
-
-:contract_id: Contract, many2one
-
-
-
-
-
-:day: Day, selection
-
-
+None
