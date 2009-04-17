@@ -270,13 +270,33 @@ js_kit_comments = True
 def setup(app):
     from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
 
+    # load unique_path dict:
+#     comments_path_pickle_filename = "comments_path.pickle"
+#     if os.path.exists(comments_path_pickle_filename):
+#         comments_path_pickle_file = open(comments_path_pickle_filename, 'r')
+#         comments_path_dict = pickle.load(comments_path_pickle_file)
+#     else:
+#         comments_path_dict = {}
+
     def depart_title_new(self, node):
-        old_depart_title(self, node) # call the original depart_title.
+        res = old_depart_title(self, node) # call the original depart_title.
+
         if self.builder.globalcontext.get('builder') == 'html':
             parent_class_name = node.parent.__class__.__name__
             if parent_class_name == 'section' and self.section_level == 2:
                 title_id = node.parent.attributes['ids'][0]
-                self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+                ## paths should be unique:
+                ## -> build a database (pickled dict) with already used paths and
+                ## create a new unique path if already used.
+                title_path = self.document['source']
+                path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
+                title_path = title_path[path_start+8:].replace('.rst', '')
+
+#                 if title_id in comments_path_dict:
+#                     pass
+
+                self.body.append(u"""<div class="js-kit-comments" path="/%s/%s" ></div>""" % (title_path, title_id, ))
+        return res
 
     if js_kit_comments:
         old_depart_title = HTMLTranslator.depart_title
