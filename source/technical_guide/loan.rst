@@ -1,0 +1,590 @@
+
+.. module:: loan
+    :synopsis: Loan Management 
+    :noindex:
+.. 
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+      <br />
+    <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+Loan Management (*loan*)
+========================
+:Module: loan
+:Name: Loan Management
+:Version: 5.0.1.0
+:Author: Tiny
+:Directory: loan
+:Web: http://tinyerpindia.com
+:Official module: no
+:Quality certified: no
+
+Description
+-----------
+
+::
+
+  Loan Management System
+      Integrated with the Payroll Susyem
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+(No download links available)
+
+
+Dependencies
+------------
+
+ * :mod:`base`
+ * :mod:`account`
+
+Reports
+-------
+
+ * Loan Paper
+
+Menus
+-------
+
+ * Financial Management/Configuration/Loan/Proof Type
+ * Financial Management/Configuration/Loan/Loan Period
+ * Financial Management/Loan/Personal Loan
+ * Financial Management/Loan/Personal Loan/Apprived Loans
+ * Financial Management/Loan/Personal Loan/Small Loans
+ * Financial Management/Loan/Personal Loan/Medium Loans
+ * Financial Management/Loan/Personal Loan/Large Loans
+ * Financial Management/Loan/Cheque
+ * Financial Management/Loan/Cheque/Draft
+ * Financial Management/Loan/Cheque/Posted
+ * Financial Management/Loan/Installment
+ * Financial Management/Configuration/Loan/Interest/Interest List
+ * Financial Management/Configuration/Loan/Interest/Interest Version
+ * Financial Management/Loan/Report Of Partner Loan
+
+Views
+-----
+
+ * account.loan.proof.type.form (form)
+ * account.loan.proof.type.tree (tree)
+ * loan.installment.period.form (form)
+ * loan.installment.period.tree (tree)
+ * \* INHERIT res.partner.form.inherit (form)
+ * account.loan.proof.tree (tree)
+ * account.loan.installment.tree (tree)
+ * account.loan.proof.form (form)
+ * account.loan.tree (tree)
+ * account.loan.form (form)
+ * account.loan.bank.cheque.form (form)
+ * account.loan.bank.cheque.tree (tree)
+ * account.loan.installment.form (form)
+ * account.loan.installment.tree (tree)
+ * account.loan.loantype.form (form)
+ * account.loan.loantype.tree (tree)
+ * account.loan.loantype.interestversion.form (form)
+ * account.loan.loantype.interestversion.tree (tree)
+ * account.loan.loantype.interestversionline.form (form)
+ * account.loan.loantype.interestversionline.tree (tree)
+
+
+Objects
+-------
+
+Object: account.loan (account.loan)
+###################################
+
+
+
+:loan_id: Loan Id, char, required
+
+
+
+
+
+:installment_id: Installments, one2many
+
+
+
+
+
+:apply_date: Apply Date, date
+
+
+
+
+
+:partner_id: Customer, many2one
+
+
+
+
+
+:auto_id: Auto Id, integer
+
+
+
+
+
+:loan_type: Loan Type, selection, required
+
+
+
+
+
+:interest_rate: Interest Rate, float, readonly
+
+
+
+
+
+:process_fee: Processing Fee, float
+
+
+
+
+
+:state: State, selection, readonly
+
+
+
+
+
+:interest: Interest, float
+
+
+
+
+
+:pricelist_id: Pricelist, many2one, readonly
+
+
+
+
+
+:proof_id: Proof Detail, one2many
+
+
+
+
+
+:cheque_ids: Cheque Detail, one2many
+
+
+
+
+
+:loan_amount: Loan Amount, float
+
+
+
+
+
+:total_installment: Total Installment, integer
+
+
+
+
+
+:return_type: Payment Type, selection
+
+
+
+
+
+:proof_1: Gaurenter 1, many2one
+
+
+
+
+
+:running_loan: Current Loans, many2many
+
+
+
+
+
+:name: Description, char, required
+
+
+
+
+
+:proof_2: Gaurenter 2, many2one
+
+
+
+
+
+:invoice_id: Invoice, many2one, readonly
+
+
+
+
+
+:notes: Description, text
+
+
+
+
+
+:approve_amount: Approve Amount, float, readonly
+
+
+
+
+
+:loan_period: Loan Period, selection, required
+
+
+
+
+
+:contact: Contact, many2one
+
+
+
+
+
+:approve_date: Approve Date, date, readonly
+
+
+
+
+Object: account.loan.proof.type (account.loan.proof.type)
+#########################################################
+
+
+
+:name: Proof Type Name, char, required
+
+
+
+
+
+:shortcut: Shortcut, char, required
+
+
+
+
+Object: account.loan.proof (account.loan.proof)
+###############################################
+
+
+
+:loan_id: Loan , many2one
+
+
+
+
+
+:name: Proof name, char, required
+
+
+
+
+
+:note: Proof Note, text
+
+
+
+
+
+:state: State, selection, readonly
+
+
+
+
+
+:document: Proof Document, binary
+
+
+
+
+
+:type: Type, selection
+
+
+
+
+Object: account loan type  (account.loan.loantype)
+##################################################
+
+
+
+:calculation: Calculation Method, selection
+
+
+
+
+
+:name: Type Name, char, required
+
+
+
+
+
+:interestversion_ids: Interest Versions, one2many
+
+
+
+
+
+:prooftypes: Taxes, many2many
+
+
+
+
+Object: account.loan.loantype.interestversion (account.loan.loantype.interestversion)
+#####################################################################################
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:end_date: End Date, date
+
+
+
+
+
+:sequence: Sequence, integer
+
+
+
+
+
+:interestversionline_ids: Current Interest Version, one2many
+
+
+
+
+
+:loantype_id: Loan Type, many2one
+
+
+
+
+
+:active: Active, boolean
+
+
+
+
+
+:start_date: Start Date, date
+
+
+
+
+Object: account.loan.loantype.interestversionline (account.loan.loantype.interestversionline)
+#############################################################################################
+
+
+
+:interestversion_id: Loan Interest Id, many2one
+
+
+
+
+
+:max_month: Maximum Month, integer
+
+
+
+
+
+:name: Interest ID, char, required
+
+
+
+
+
+:sequence: Sequence, integer
+
+
+
+
+
+:max_amount: Maximum Amount, float
+
+
+
+
+
+:min_amount: Minimum Amount, float
+
+
+
+
+
+:rate: Rate, float
+
+
+
+
+
+:min_month: Minimum Month, integer
+
+
+
+
+Object: Bank Account Cheque (account.loan.bank.cheque)
+######################################################
+
+
+
+:loan_id: Loan, many2one
+
+
+
+
+
+:code: Code, char, required
+
+
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:clear_date: Cheque Clearing Date, date, readonly
+
+
+
+
+
+:loan: Loan Amount, float
+
+
+
+
+
+:account_id: General Account, many2one, required
+
+
+
+
+
+:note: Notes, text
+
+
+
+
+
+:state: State, selection, readonly
+
+
+
+
+
+:cheque_amount: Cheque Amount, float, required
+
+
+
+
+
+:interest: Interest Amount, float
+
+
+
+
+
+:date: Date, date, required
+
+
+
+
+
+:partner_id: Customer, many2one, required
+
+
+
+
+
+:cheque_id: Installments, one2many
+
+
+
+
+
+:return_date: Cheque Return Date, date, readonly
+
+
+
+
+
+:loan_bank_id: Bank, many2one, required
+
+
+
+
+Object: account.loan.installment (account.loan.installment)
+###########################################################
+
+
+
+:loan_id: Loan, many2one
+
+
+
+
+
+:name: Description, char
+
+
+
+
+
+:cheque_id: Bank Cheque, many2one
+
+
+
+
+
+:interest: Interest, float
+
+
+
+
+
+:capital: Installment, float
+
+
+
+
+
+:total: Installment, float
+
+
+
+
+Object: loan.installment.period (loan.installment.period)
+#########################################################
+
+
+
+:name: Period Name, char, required
+
+
+
+
+
+:period: Loan Period, integer, required
+
+
