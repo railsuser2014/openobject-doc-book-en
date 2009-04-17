@@ -76,15 +76,15 @@ unused_docs = [
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_trees = [
-   #'bi',
-   #'book',
-   #'customize',
+   'bi',
+   'book',
+   'customize',
    #'install',
-   #'contribute',
-   #'developer',
-   #'features',
-   #'technical_guide',
-   #'verticalisations',
+   'contribute',
+   'developer',
+   'features',
+   'technical_guide',
+   'verticalisations',
 ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
@@ -281,12 +281,12 @@ def setup(app):
         comments_path_dict = {}
     this_build_comments_path_dict = {}
 
-    import atexit
     def save_comments_path_dict():
         comments_path_pickle_file = open(comments_path_pickle_filename, 'w')
         pickle.dump(comments_path_dict, comments_path_pickle_file)
         comments_path_pickle_file.close()
 
+    import atexit
     atexit.register(save_comments_path_dict)
 
     def depart_title_new(self, node):
@@ -303,15 +303,16 @@ def setup(app):
                 path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
                 title_path = title_path[path_start+8:].replace('.rst', '')
 
-                if title_id not in this_build_comments_path_dict and title_id in comments_path_dict:
-                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
-                    this_build_comments_path_dict[title_id] = True
-                    comments_path_dict[title_id] = True
-                else:
-                    path = u"""/%s%s""" % (title_path, title_id, )
-                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (path, ))
-                    this_build_comments_path_dict[path] = True
-                    comments_path_dict[path] = True
+                if title_id not in this_build_comments_path_dict: # first time we process this path
+                    title_id = comments_path_dict.get(title_id, title_id)
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+                else: # it's a double
+                    title_id = u"""/%s%s""" % (title_path, title_id, )
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+
+                self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
 
         return res
 
