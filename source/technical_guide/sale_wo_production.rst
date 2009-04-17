@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_wo_production"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Sales Without production (*sale_wo_production*)
 ===============================================
 :Module: sale_wo_production

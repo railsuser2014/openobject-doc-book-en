@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="board_crm_configuration"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Dashboard for CRM Configuration (*board_crm_configuration*)
 ===========================================================
 :Module: board_crm_configuration

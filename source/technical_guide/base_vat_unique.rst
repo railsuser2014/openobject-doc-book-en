@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_vat_unique"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Base VAT Unique (*base_vat_unique*)
 ===================================
 :Module: base_vat_unique

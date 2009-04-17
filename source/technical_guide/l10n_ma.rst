@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_ma"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Maroc Plan comptable général pour les sociétés (*l10n_ma*)
 ==========================================================
 :Module: l10n_ma

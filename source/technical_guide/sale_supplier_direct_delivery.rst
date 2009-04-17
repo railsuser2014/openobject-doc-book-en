@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_supplier_direct_delivery"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Automates direct delivery between a supplier and a customer (*sale_supplier_direct_delivery*)
 =============================================================================================
 :Module: sale_supplier_direct_delivery

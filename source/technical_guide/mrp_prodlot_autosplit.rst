@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="mrp_prodlot_autosplit"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Unique serial number management management:  (*mrp_prodlot_autosplit*)
 ======================================================================
 :Module: mrp_prodlot_autosplit

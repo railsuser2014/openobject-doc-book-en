@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="hr_holidays_request"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 HR Holiday Request (*hr_holidays_request*)
 ==========================================
 :Module: hr_holidays_request

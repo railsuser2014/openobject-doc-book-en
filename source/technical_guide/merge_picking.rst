@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="merge_picking"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Merge Picking (*merge_picking*)
 ===============================
 :Module: merge_picking

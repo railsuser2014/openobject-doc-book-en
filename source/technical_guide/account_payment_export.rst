@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_payment_export"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Payment Order Export (*account_payment_export*)
 ===============================================
 :Module: account_payment_export

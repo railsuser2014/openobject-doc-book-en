@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="dm_email"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Direct Marketing For Emails (*dm_email*)
 ========================================
 :Module: dm_email

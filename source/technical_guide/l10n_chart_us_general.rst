@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_us_general"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 United States - Chart of Accounts for General Profile (*l10n_chart_us_general*)
 ===============================================================================
 :Module: l10n_chart_us_general

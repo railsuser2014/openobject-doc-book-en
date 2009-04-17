@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_delivery"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Carriers and deliveries For Purchase Order (*purchase_delivery*)
 ================================================================
 :Module: purchase_delivery

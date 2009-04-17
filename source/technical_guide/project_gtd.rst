@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="project_gtd"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Getting Things Done - Time Management Module (*project_gtd*)
 ============================================================
 :Module: project_gtd

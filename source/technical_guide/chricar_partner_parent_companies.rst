@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="chricar_partner_parent_companies"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Partner Parent Companies (*chricar_partner_parent_companies*)
 =============================================================
 :Module: chricar_partner_parent_companies

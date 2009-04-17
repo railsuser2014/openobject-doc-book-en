@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="multi_company_account"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Multi company for accounting module (*multi_company_account*)
 =============================================================
 :Module: multi_company_account

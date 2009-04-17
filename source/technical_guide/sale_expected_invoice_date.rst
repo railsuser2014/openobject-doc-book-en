@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="sale_expected_invoice_date"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Sale Expected Invoice Date (*sale_expected_invoice_date*)
 =========================================================
 :Module: sale_expected_invoice_date

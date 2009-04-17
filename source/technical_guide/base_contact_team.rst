@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_contact_team"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Base Contact Team (*base_contact_team*)
 =======================================
 :Module: base_contact_team

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="mrp_bom_customization"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 BoM Customization (*mrp_bom_customization*)
 ===========================================
 :Module: mrp_bom_customization

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_analytic_plans"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Purchase Analytic Distribution Management (*purchase_analytic_plans*)
 =====================================================================
 :Module: purchase_analytic_plans

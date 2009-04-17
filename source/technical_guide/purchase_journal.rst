@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_journal"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Managing sales and deliveries by journal (*purchase_journal*)
 =============================================================
 :Module: purchase_journal

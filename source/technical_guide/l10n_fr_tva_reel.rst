@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_fr_tva_reel"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 France - Régime réel de TVA (*l10n_fr_tva_reel*)
 ================================================
 :Module: l10n_fr_tva_reel

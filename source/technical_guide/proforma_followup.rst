@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="proforma_followup"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Pro-forma invoices and their payments Management (*proforma_followup*)
 ======================================================================
 :Module: proforma_followup

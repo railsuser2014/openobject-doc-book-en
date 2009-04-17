@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="cci_data_csv"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 cci Data 1 (*cci_data_csv*)
 ===========================
 :Module: cci_data_csv

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_analytic_planning_delegate"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Analytic planning - Delegation in the hierarchy (*report_analytic_planning_delegate*)
 =====================================================================================
 :Module: report_analytic_planning_delegate

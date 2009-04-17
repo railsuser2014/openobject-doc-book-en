@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_fr_tva_franchise"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 France - Franchise de TVA (ex: Micro Entreprise, etc.) (*l10n_fr_tva_franchise*)
 ================================================================================
 :Module: l10n_fr_tva_franchise

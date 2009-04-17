@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_qt"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Products & Pricelists (*product_qt*)
 ====================================
 :Module: product_qt

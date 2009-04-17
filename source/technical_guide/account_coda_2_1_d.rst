@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="account_coda_2_1_d"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Account CODA Version 2.1 D (*account_coda_2_1_d*)
 =================================================
 :Module: account_coda_2_1_d

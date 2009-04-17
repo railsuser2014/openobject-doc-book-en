@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="marketing"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Marketing Campaigns (*marketing*)
 =================================
 :Module: marketing

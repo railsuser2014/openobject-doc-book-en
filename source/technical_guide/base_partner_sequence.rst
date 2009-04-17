@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_partner_sequence"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Add an automatic sequence on partners (*base_partner_sequence*)
 ===============================================================
 :Module: base_partner_sequence

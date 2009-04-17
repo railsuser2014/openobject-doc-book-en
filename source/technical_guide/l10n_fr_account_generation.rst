@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_fr_account_generation"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 France - Generation de compte comptable tiers (*l10n_fr_account_generation*)
 ============================================================================
 :Module: l10n_fr_account_generation

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="project_mrp"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Project Management - MRP and Sale Integration (*project_mrp*)
 =============================================================
 :Module: project_mrp

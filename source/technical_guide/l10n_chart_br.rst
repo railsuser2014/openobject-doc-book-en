@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_br"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Brazil - Chart of Accounts (*l10n_chart_br*)
 ============================================
 :Module: l10n_chart_br

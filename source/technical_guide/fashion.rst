@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="fashion"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Tiny TERP fashion module (*fashion*)
 ====================================
 :Module: fashion

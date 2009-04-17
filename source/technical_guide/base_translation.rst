@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="base_translation"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Translation (*base_translation*)
 ================================
 :Module: base_translation

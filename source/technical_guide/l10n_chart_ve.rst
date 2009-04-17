@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_ve"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Venezuela -Chart of Account (*l10n_chart_ve*)
 =============================================
 :Module: l10n_chart_ve

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="document_extension"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Extension Module of Document Management System (*document_extension*)
 =====================================================================
 :Module: document_extension

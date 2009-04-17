@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="profile_accounting"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Accounting only profile (*profile_accounting*)
 ==============================================
 :Module: profile_accounting

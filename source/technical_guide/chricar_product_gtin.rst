@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="chricar_product_gtin"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Product GTIN EAN8 EAN13 UPC JPC Support (*chricar_product_gtin*)
 ================================================================
 :Module: chricar_product_gtin

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="analytic_user_function"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Analytic User Function (*analytic_user_function*)
 =================================================
 :Module: analytic_user_function

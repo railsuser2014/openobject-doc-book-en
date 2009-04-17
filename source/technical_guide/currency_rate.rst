@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="currency_rate"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Currency Rates (*currency_rate*)
 ================================
 :Module: currency_rate

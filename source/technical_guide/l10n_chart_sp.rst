@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="l10n_chart_sp"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Spain - Chart of Account (*l10n_chart_sp*)
 ==========================================
 :Module: l10n_chart_sp

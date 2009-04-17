@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="report_project"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Sales Management - Reporting (*report_project*)
 ===============================================
 :Module: report_project

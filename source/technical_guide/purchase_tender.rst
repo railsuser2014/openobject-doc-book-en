@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="purchase_tender"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Purchase - Purchase Tender (*purchase_tender*)
 ==============================================
 :Module: purchase_tender

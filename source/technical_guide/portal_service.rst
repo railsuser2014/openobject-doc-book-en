@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="portal_service"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Portal Management - Service (*portal_service*)
 ==============================================
 :Module: portal_service

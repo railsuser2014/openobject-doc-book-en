@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="mrp_operations"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Workcenter Production start end workflow (*mrp_operations*)
 ===========================================================
 :Module: mrp_operations

@@ -14,6 +14,11 @@
   `screencasts <href="http://openerp.tv>`_ or download 
   `Open ERP <href="http://openerp.com>`_ directly.
 
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="product_variant_configurator"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
+
 Products with multi-level variants configurator (*product_variant_configurator*)
 ================================================================================
 :Module: product_variant_configurator
