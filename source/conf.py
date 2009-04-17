@@ -305,7 +305,7 @@ def setup(app):
 
                 #this_build_comments_path_dict
                 if title_id not in this_build_comments_path_dict and title_id in comments_path_dict:
-                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
+                    self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
                     this_build_comments_path_dict[title_id] = True
                     comments_path_dict[title_id] = True
                 else:
