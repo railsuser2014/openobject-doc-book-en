@@ -308,7 +308,7 @@ def setup(app):
                     this_build_comments_path_dict[title_id] = True
                     comments_path_dict[title_id] = True
                 else:
-                    path = u"""/%s/%s""" % (title_path, title_id, )
+                    path = u"""/%s%s""" % (title_path, title_id, )
                     self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (path, ))
                     this_build_comments_path_dict[path] = True
                     comments_path_dict[path] = True
