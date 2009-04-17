@@ -295,7 +295,7 @@ def setup(app):
         if self.builder.globalcontext.get('builder') == 'html':
             parent_class_name = node.parent.__class__.__name__
             if parent_class_name == 'section' and self.section_level == 2:
-                title_id = node.parent.attributes['ids'][0]
+                title_id = "/" + node.parent.attributes['ids'][0]
                 ## paths should be unique:
                 ## -> build a database (pickled dict) with already used paths and
                 ## create a new unique path if already used.
@@ -303,16 +303,15 @@ def setup(app):
                 path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
                 title_path = title_path[path_start+8:].replace('.rst', '')
 
-                #this_build_comments_path_dict
                 if title_id not in this_build_comments_path_dict and title_id in comments_path_dict:
-                    self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+                    self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
                     this_build_comments_path_dict[title_id] = True
                     comments_path_dict[title_id] = True
                 else:
                     path = u"""/%s/%s""" % (title_path, title_id, )
                     self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (path, ))
-                    this_build_comments_path_dict[title_id] = True
-                    comments_path_dict[title_id] = True
+                    this_build_comments_path_dict[path] = True
+                    comments_path_dict[path] = True
 
         return res
 
