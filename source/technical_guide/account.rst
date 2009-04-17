@@ -4,15 +4,15 @@
     :noindex:
 .. 
 
-.. tip:: This module is part of the Open ERP software, the leading Open Source 
-  enterprise management system. If you want to discover Open ERP, check our 
-  `screencasts <href="http://openerp.tv>`_ or download 
-  `Open ERP <href="http://openerp.com>`_ directly.
-
 .. raw:: html
 
       <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
 
 Accounting and financial management (*account*)
 ===============================================
@@ -465,9 +465,9 @@ Object: account.tax (account.tax)
 
 
 
-:ref_tax_sign: Tax Code Sign, float
+:python_applicable: Python Code, text
 
-    *Usually 1 or -1.*
+
 
 
 
@@ -501,9 +501,9 @@ Object: account.tax (account.tax)
 
 
 
-:python_applicable: Python Code, text
+:ref_tax_sign: Tax Code Sign, float
 
-
+    *Usually 1 or -1.*
 
 
 
@@ -527,7 +527,7 @@ Object: account.tax (account.tax)
 
 :tax_group: Tax Group, selection
 
-    *If a default tax if given in the partner it only override taxes from account (or product) of the same group.*
+    *If a default tax is given in the partner it only overrides taxes from accounts (or products) in the same group.*
 
 
 
@@ -2504,12 +2504,6 @@ Object: Invoice (account.invoice)
 
 
 
-:excise_amount: Excise, float, readonly
-
-
-
-
-
 :tax_line: Tax Lines, one2many, readonly
 
 
@@ -2578,12 +2572,6 @@ Object: Invoice (account.invoice)
 
 
 :type: Type, selection, readonly
-
-
-
-
-
-:other_amount: Others, float
 
 
 
@@ -2661,12 +2649,6 @@ Object: Invoice (account.invoice)
 
 
 
-:latest_date: Latest Date, datetime
-
-
-
-
-
 :name: Description, char, readonly
 
 
@@ -2686,12 +2668,6 @@ Object: Invoice (account.invoice)
 
 
 :export_date: Export time, datetime
-
-
-
-
-
-:retail_tax: Invoice, selection, readonly
 
 
 
@@ -2822,12 +2798,6 @@ Object: Invoice line (account.invoice.line)
 
 
 :maintenance_product_qty: Maintenance Product Quantity, float
-
-
-
-
-
-:exise_amt: Exise Amount, float
 
 
 
@@ -3296,12 +3266,6 @@ Object: Entry lines (account.move.line)
 
 
 :analytic_account_id: Analytic Account, many2one
-
-
-
-
-
-:analytic_account: Analytic Account, many2one
 
 
 

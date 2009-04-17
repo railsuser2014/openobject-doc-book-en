@@ -4,15 +4,15 @@
     :noindex:
 .. 
 
-.. tip:: This module is part of the Open ERP software, the leading Open Source 
-  enterprise management system. If you want to discover Open ERP, check our 
-  `screencasts <href="http://openerp.tv>`_ or download 
-  `Open ERP <href="http://openerp.com>`_ directly.
-
 .. raw:: html
 
       <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
 
 Direct Marketing (*dm*)
 =======================
@@ -1008,19 +1008,13 @@ Object: dm.offer.step.transition.trigger (dm.offer.step.transition.trigger)
 
 
 
-:in_act_cond: Incoming Action Condition, text, required
+:in_act_cond: Action Condition, text, required
 
 
 
 
 
 :code: Code, char, required
-
-
-
-
-
-:out_act_cond: Outgoing Action Condition, text, required
 
 
 
@@ -3582,6 +3576,12 @@ Object: workitem (dm.workitem)
 
 
 
+:tr_from_id: Source Transition, many2one
+
+
+
+
+
 :step_id: Offer Step, many2one
 
 
@@ -3938,7 +3938,7 @@ Object: dm.event (dm.event)
 
 
 
-:segment_id: Segment, many2one
+:segment_id: Segment, many2one, required
 
 
 
@@ -3950,19 +3950,19 @@ Object: dm.event (dm.event)
 
 
 
-:source: Source, selection
+:source: Source, selection, required
 
 
 
 
 
-:trigger_type_id: Trigger Condition, many2one
+:trigger_type_id: Trigger Condition, many2one, required
 
 
 
 
 
-:step_id: Offer Step, many2one
+:step_id: Offer Step, many2one, required
 
 
 
@@ -4160,6 +4160,12 @@ Object: dm.offer.document (dm.offer.document)
 
 
 
+:media_id: Media, many2one
+
+
+
+
+
 :name: Name, char, required
 
 
@@ -4203,12 +4209,6 @@ Object: dm.offer.document (dm.offer.document)
 
 
 :has_attachment: Has Attachment, char, readonly
-
-
-
-
-
-:media: Media, char
 
 
 
