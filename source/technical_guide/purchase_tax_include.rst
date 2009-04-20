@@ -42,8 +42,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `4.2 </download/modules/4.2/purchase_tax_include.zip>`_
-  * `trunk </download/modules/trunk/purchase_tax_include.zip>`_
+  * `4.2 <http://www.openerp.com/download/modules/4.2/purchase_tax_include.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/purchase_tax_include.zip>`_
 
 
 Dependencies

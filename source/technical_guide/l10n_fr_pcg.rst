@@ -44,8 +44,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `4.2 </download/modules/4.2/l10n_fr_pcg.zip>`_
-  * `trunk </download/modules/trunk/l10n_fr_pcg.zip>`_
+  * `4.2 <http://www.openerp.com/download/modules/4.2/l10n_fr_pcg.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/l10n_fr_pcg.zip>`_
 
 
 Dependencies

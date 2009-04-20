@@ -42,7 +42,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/sales_purchase_seq.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/sales_purchase_seq.zip>`_
 
 
 Dependencies

@@ -44,7 +44,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/report_analytic_planning_long_term.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/report_analytic_planning_long_term.zip>`_
 
 
 Dependencies

@@ -47,8 +47,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `5.0 </download/modules/5.0/account_analytic_default.zip>`_
-  * `trunk </download/modules/trunk/account_analytic_default.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/account_analytic_default.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_analytic_default.zip>`_
 
 
 Dependencies

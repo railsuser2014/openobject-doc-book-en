@@ -42,7 +42,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/l10n_ch_vat_forfait.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/l10n_ch_vat_forfait.zip>`_
 
 
 Dependencies

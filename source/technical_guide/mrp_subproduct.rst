@@ -47,8 +47,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `5.0 </download/modules/5.0/mrp_subproduct.zip>`_
-  * `trunk </download/modules/trunk/mrp_subproduct.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/mrp_subproduct.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/mrp_subproduct.zip>`_
 
 
 Dependencies

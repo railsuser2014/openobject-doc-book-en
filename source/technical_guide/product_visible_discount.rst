@@ -47,7 +47,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/product_visible_discount.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/product_visible_discount.zip>`_
 
 
 Dependencies

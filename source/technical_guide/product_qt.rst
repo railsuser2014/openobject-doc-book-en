@@ -46,7 +46,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/product_qt.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/product_qt.zip>`_
 
 
 Dependencies

@@ -45,8 +45,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `4.2 </download/modules/4.2/magento_openerp_synchro.zip>`_
-  * `trunk </download/modules/trunk/magento_openerp_synchro.zip>`_
+  * `4.2 <http://www.openerp.com/download/modules/4.2/magento_openerp_synchro.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/magento_openerp_synchro.zip>`_
 
 
 Dependencies

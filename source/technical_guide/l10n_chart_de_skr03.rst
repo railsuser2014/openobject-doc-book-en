@@ -42,7 +42,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/l10n_chart_de_skr03.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/l10n_chart_de_skr03.zip>`_
 
 
 Dependencies

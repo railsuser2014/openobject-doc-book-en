@@ -42,8 +42,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `4.2 </download/modules/4.2/productivity_analysis.zip>`_
-  * `trunk </download/modules/trunk/productivity_analysis.zip>`_
+  * `4.2 <http://www.openerp.com/download/modules/4.2/productivity_analysis.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/productivity_analysis.zip>`_
 
 
 Dependencies

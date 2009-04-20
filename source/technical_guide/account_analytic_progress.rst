@@ -44,7 +44,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/account_analytic_progress.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_analytic_progress.zip>`_
 
 
 Dependencies

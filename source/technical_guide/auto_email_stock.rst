@@ -45,7 +45,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/auto_email_stock.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/auto_email_stock.zip>`_
 
 
 Dependencies

@@ -56,7 +56,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/partner_nace.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/partner_nace.zip>`_
 
 
 Dependencies

@@ -42,8 +42,8 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `5.0 </download/modules/5.0/l10n_ch_chart_c2c_pcg.zip>`_
-  * `trunk </download/modules/trunk/l10n_ch_chart_c2c_pcg.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/l10n_ch_chart_c2c_pcg.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/l10n_ch_chart_c2c_pcg.zip>`_
 
 
 Dependencies

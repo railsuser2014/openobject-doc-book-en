@@ -43,7 +43,7 @@ Download links
 
 You can download this module as a zip file in the following version:
 
-  * `trunk </download/modules/trunk/purchase_tender.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/purchase_tender.zip>`_
 
 
 Dependencies
