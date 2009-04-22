@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hr_contract_available"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Human Resources Contracts (*hr_contract_available*)
 ===================================================
@@ -15,7 +26,7 @@ Human Resources Contracts (*hr_contract_available*)
 :Version: False
 :Author: Tiny
 :Directory: hr_contract_available
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,9 +36,18 @@ Description
 ::
 
   This module is a reservation system on employees.
-  You can assign an employee to a poste or a department for a
-  defined period. This module is used to track availability and
-  reservations on human resources.
+  
+      You can assign an employee to a poste or a department for a
+      defined period. This module is used to track availability and
+      reservations on human ressources.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/hr_contract_available.zip>`_
+
 
 Dependencies
 ------------
@@ -58,5 +78,4 @@ None
 Objects
 -------
 
-Object: Allocations (hr.allocation)
-###################################
+None

@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/analytic_partners"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Analytic accounts with multiple partners (*analytic_partners*)
 ==============================================================
@@ -24,15 +35,24 @@ Description
 
 ::
 
-  This module adds the possibility to assign multiple partners on the same analytic account. 
-  It's usefull when you do a management by affairs, where you can attach all suppliers and 
-  customers to a project.
+  This module adds the possibility to assign multiple partners on
+      the same analytic account. It's usefull when you do a management
+      by affairs, where you can attach all suppliers and customers to
+      a project.
   
-  A report for the project manager is added to print the analyti account and all associated 
-  partners with their contacts.
+      A report for the project manager is added to print the analytic
+      account and all associated partners with their contacts.
   
-  It's usefull to give to all members of a project, so that they get the contacts of all suppliers 
-  in this project.
+      It's usefull to give to all members of a project, so that they
+      get the contacts of all suppliers in this project.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/analytic_partners.zip>`_
+
 
 Dependencies
 ------------

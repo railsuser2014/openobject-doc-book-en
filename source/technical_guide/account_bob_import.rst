@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_bob_import"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Import accounting entries from Bob (*account_bob_import*)
 =========================================================
@@ -24,16 +35,22 @@ Description
 
 ::
 
-  This module provide an easy way to migrate your financial data from Bob 
-  software to OpenERP. It includes the import of
+  This module provide an easy way to migrate your financial data from Bob software to OpenERP. It includes the import of
               * chart of accounts,
               * financial journals,
               * customers, suppliers and prospects,
               * contacts,
               * accounting entries
   
-          Once the module is installed, all you have to do is run the configuration 
-          wizard and provide OpenERP the location of the Bob directory where is your data.
+          Once the module is installed, all you have to do is run the configuration wizard and provide OpenERP the location of the Bob directory where is your data.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_bob_import.zip>`_
+
 
 Dependencies
 ------------

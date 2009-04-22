@@ -269,14 +269,52 @@ js_kit_comments = True
 
 def setup(app):
     from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+    import pickle
+
+    # load unique_path dict:
+    comments_path_pickle_filename = "comments_path.pickle"
+    if os.path.exists(comments_path_pickle_filename):
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'r')
+        comments_path_dict = pickle.load(comments_path_pickle_file)
+        comments_path_pickle_file.close()
+    else:
+        comments_path_dict = {}
+    this_build_comments_path_dict = {}
+
+    def save_comments_path_dict():
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'w')
+        pickle.dump(comments_path_dict, comments_path_pickle_file)
+        comments_path_pickle_file.close()
+
+    import atexit
+    atexit.register(save_comments_path_dict)
 
     def depart_title_new(self, node):
-        old_depart_title(self, node) # call the original depart_title.
+        res = old_depart_title(self, node) # call the original depart_title.
+
         if self.builder.globalcontext.get('builder') == 'html':
             parent_class_name = node.parent.__class__.__name__
             if parent_class_name == 'section' and self.section_level == 2:
-                title_id = node.parent.attributes['ids'][0]
-                self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+                title_id = "/" + node.parent.attributes['ids'][0]
+                ## paths should be unique:
+                ## -> build a database (pickled dict) with already used paths and
+                ## create a new unique path if already used.
+                title_path = self.document['source']
+                path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
+                title_path = title_path[path_start+8:].replace('.rst', '')
+
+                if title_id not in this_build_comments_path_dict: # first time we process this path
+                    title_id = comments_path_dict.get(title_id, title_id)
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+                else: # it's a double
+                    title_id = u"""/%s%s""" % (title_path, title_id, )
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+
+                self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
+
+        return res
 
     if js_kit_comments:
         old_depart_title = HTMLTranslator.depart_title

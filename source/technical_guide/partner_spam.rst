@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/partner_spam"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 SMS and Email spam to partner (*partner_spam*)
 ==============================================
@@ -30,8 +41,7 @@ Description
     * The email field can contain several email addresses separated by ,
     * A maximum of 3 files can be attached to emails
     * Clickatell gateway to send SMS can be configured by http or by email
-    * The spam text can include special [[field]] tags to create personalized messages 
-      (they will be replaced to the the corresponding values of each partner contact):
+    * The spam text can include special [[field]] tags to create personalized messages (they will be replaced to the the corresponding values of each partner contact):
         [[partner_id]] -> Partner name
         [[name]] -> Contact name
         [[function]] -> Function
@@ -47,6 +57,15 @@ Description
         [[fax]] -> Fax
         [[mobile]] -> Mobile
         [[birthdate]] -> Birthday
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/partner_spam.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/partner_spam.zip>`_
+
 
 Dependencies
 ------------

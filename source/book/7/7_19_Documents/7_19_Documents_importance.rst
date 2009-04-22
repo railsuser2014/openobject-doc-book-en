@@ -18,7 +18,7 @@ find.
 The results of poor document management can lead to a significant loss of time. Ask yourself how
 often you find yourself looking for:
 
-* A supplier catalogue that's been send to a purchasing manager,
+* A supplier catalogue that's been sent to a purchasing manager,
 
 * A customer contract signed several months ago,
 

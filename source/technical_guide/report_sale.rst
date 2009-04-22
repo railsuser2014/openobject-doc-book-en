@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_sale"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Sales Management - Reporting (*report_sale*)
 ============================================
@@ -33,6 +44,16 @@ Description
       * Open quotations
       * Uninvoiced Sales
       * Uninvoiced but shipped Sales
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/report_sale.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/report_sale.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/report_sale.zip>`_
+
 
 Dependencies
 ------------
@@ -71,6 +92,12 @@ Views
  * report.sale.order.category.tree (tree)
  * report.sale.order.category.graph (graph)
  * sale.order.graph (graph)
+ * sale.order.dashboard.graph (graph)
+ * report.turnover.per.month.tree (tree)
+ * report.turnover.per.month.graph (graph)
+ * report.turnover.per.product.tree (tree)
+ * report.turnover.per.product.graph (graph)
+ * report.sale.order.created.tree (tree)
 
 
 Objects
@@ -164,5 +191,83 @@ Object: Sales Orders by Categories (report.sale.order.category)
 
 
 :quantity: # of Products, float, readonly
+
+
+
+
+Object: Turnover Per Month (report.turnover.per.month)
+######################################################
+
+
+
+:name: Month, date, readonly
+
+
+
+
+
+:turnover: Total Turnover, float, readonly
+
+
+
+
+Object: Turnover Per Product (report.turnover.per.product)
+##########################################################
+
+
+
+:product_id: Product, many2one, readonly
+
+
+
+
+
+:turnover: Total Turnover, float, readonly
+
+
+
+
+Object: Report of Created Sale Order (report.sale.order.created)
+################################################################
+
+
+
+:create_date: Create Date, datetime
+
+
+
+
+
+:name: Order Reference, char, readonly
+
+
+
+
+
+:partner_shipping_id: Shipping Address, many2one, readonly
+
+
+
+
+
+:state: Order State, selection, readonly
+
+
+
+
+
+:amount_untaxed: Untaxed Amount, float, readonly
+
+
+
+
+
+:date_order: Date Ordered, date, readonly
+
+
+
+
+
+:partner_id: Customer, many2one, readonly
 
 

@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/point_of_sale"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Point Of Sale (*point_of_sale*)
 ===============================
@@ -26,12 +37,20 @@ Description
 
   Main features :
    - Fast encoding of the sale.
-   - Allow to choose one payment mode (the quick way) or to split the payment between 
-     several payment mode.
+   - Allow to choose one payment mode (the quick way) or to split the payment between several payment mode.
    - Computation of the amount of money to return.
    - Create and confirm picking list automatically.
    - Allow the user to create invoice automatically.
    - Allow to refund former sales.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 <http://www.openerp.com/download/modules/5.0/point_of_sale.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/point_of_sale.zip>`_
+
 
 Dependencies
 ------------
@@ -141,13 +160,13 @@ Object: Point of Sale (pos.order)
 
 
 
-:last_out_picking: Last output picking, many2one, readonly
+:last_out_picking: Last Output Picking, many2one, readonly
 
 
 
 
 
-:nb_print: Number of print, integer, readonly
+:nb_print: Number of Print, integer, readonly
 
 
 
@@ -171,7 +190,7 @@ Object: Point of Sale (pos.order)
 
 
 
-:invoice_wanted: Create invoice, boolean
+:invoice_wanted: Create Invoice, boolean
 
 
 
@@ -253,7 +272,7 @@ Object: Lines of Point of Sale (pos.order.line)
 
 
 
-:create_date: Creation date, datetime, readonly
+:create_date: Creation Date, datetime, readonly
 
 
 
@@ -311,13 +330,13 @@ Object: Pos Payment (pos.payment)
 
 
 
-:payment_date: Payment date, date, required
+:payment_date: Payment Date, date, required
 
 
 
 
 
-:payment_name: Payment name, char
+:payment_name: Payment Name, char
 
 
 
@@ -347,7 +366,7 @@ Object: Pos Payment (pos.payment)
 
 
 
-:payment_nb: Piece number, char
+:payment_nb: Piece Number, char
 
 
 
@@ -363,7 +382,7 @@ Object: transaction for the pos (report.transaction.pos)
 
 
 
-:no_trans: Number of transaction, float, readonly
+:no_trans: Number of Transaction, float, readonly
 
 
 

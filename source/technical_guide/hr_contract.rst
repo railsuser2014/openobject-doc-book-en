@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/hr_contract"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Human Resources Contracts (*hr_contract*)
 =========================================
@@ -30,6 +41,16 @@ Description
       * Place of birth, birth date, ...
   
       You can assign several contracts per employee.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/hr_contract.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/hr_contract.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/hr_contract.zip>`_
+
 
 Dependencies
 ------------
@@ -133,7 +154,7 @@ Object: Contract (hr.contract)
 
 
 
-:function: Position, many2one
+:function: Function, many2one
 
 
 
@@ -145,103 +166,31 @@ Object: Contract (hr.contract)
 
 
 
-:fulltime_salary: Full-time Salary, float, readonly
-
-
-
-
-
-:code: code, char
-
-
-
-
-
-:availability_per_week: Availability per week, one2many
-
-
-
-
-
-:salary_level: Salary level, integer
-
-
-
-
-
-:form_of_employment: Form of employment, selection
-
-
-
-
-
-:date_end: Expire date, date
-
-
-
-
-
-:date_start: Date of appointment, date, required
-
-
-
-
-
-:trial_period_review: Trial period review, date
-
-
-
-
-
 :employee_id: Employee, many2one, required
 
 
 
 
 
-:fte_hrs: FTE in Hours, float, readonly
+:name: Contract Name, char, required
 
 
 
 
 
-:bank_account_nbr: Bank account number, char
+:date_end: End Date, date
 
 
 
 
 
-:extend_appointment_date: Extend appointment from, date
+:date_start: Start Date, date, required
 
 
 
 
 
-:wage: Base salary, float, required
-
-
-
-
-
-:fte: FTE, float
-
-
-
-
-
-:salary_grade: Salary grade, integer
-
-
-
-
-
-:working_hours_per_day: Working hours per day, integer
-
-
-
-
-
-:department_id: Department, many2one
+:wage: Wage, float, required
 
 
 
@@ -253,6 +202,6 @@ Object: Contract (hr.contract)
 
 
 
-:name: Contract Name, char, required
+:working_hours_per_day: Working hours per day, integer
 
 

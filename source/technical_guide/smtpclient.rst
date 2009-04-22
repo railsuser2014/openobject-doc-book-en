@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/smtpclient"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Email Client (*smtpclient*)
 ===========================
@@ -15,7 +26,7 @@ Email Client (*smtpclient*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: smtpclient
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -29,6 +40,14 @@ Description
       Use Multiple Server
       Multi Threading
       Multi Attachment
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/smtpclient.zip>`_
+
 
 Dependencies
 ------------
@@ -44,14 +63,15 @@ None
 Menus
 -------
 
- * Administration/Configuration
- * Administration/Configuration/Servers
- * Administration/Configuration/Servers/SMTP Server
+ * Administration/Configuration/Email Servers
+ * Administration/Configuration/Email Servers/SMTP Server
+ * Administration/Configuration/Email Servers/Email Server History
+ * Administration/Configuration/Email Servers/Message Queue
 
 Views
 -----
 
- * report.smtp.server.graph (graph)
+ * \* INHERIT ir.actions.server.form.inherit (form)
  * report.smtp.server.tree (tree)
  * report.smtp.server.form (form)
  * \* INHERIT smtp.company.form (form)
@@ -59,6 +79,8 @@ Views
  * email.smtpclient.form (tree)
  * email.smtpclient.history.tree (tree)
  * email.smtpclient.history.form (form)
+ * email.smtpclient.queue.tree (tree)
+ * email.smtpclient.queue.form (form)
 
 
 Objects
@@ -87,13 +109,13 @@ Object: Email Client (email.smtpclient)
 
 
 
-:from: Email From, char, required, readonly
-
-
-
-
-
 :name: Server Name, char, required
+
+
+
+
+
+:from_email: Email From, char, required, readonly
 
 
 
@@ -187,7 +209,7 @@ Object: Email Client History (email.smtpclient.history)
 
 
 
-:server_id: Smtp Server, many2one, required
+:server_id: Smtp Server, many2one, required, readonly
 
 
 
@@ -228,24 +250,82 @@ Object: Email Client History (email.smtpclient.history)
 
 
 
+Object: Email Queue (email.smtpclient.queue)
+############################################
+
+
+
+:body: Email Text, text, readonly
+
+
+
+
+
+:server_id: SMTP Server, many2one, readonly
+
+
+
+
+
+:serialized_message: Message, text, readonly
+
+
+
+
+
+:name: Subject, char, readonly
+
+
+
+
+
+:cc: CC to, char, readonly
+
+
+
+
+
+:bcc: BCC to, char, readonly
+
+
+
+
+
+:date_create: Date, datetime, readonly
+
+
+
+
+
+:to: Mail to, char, readonly
+
+
+
+
+
+:state: Message Status, selection, readonly
+
+
+
+
+
+:error: Last Error, text, readonly
+
+
+
+
 Object: Server Statistics (report.smtp.server)
 ##############################################
 
 
 
-:model: Model, char, readonly
+:server_id: Server ID, many2one, readonly
 
 
 
 
 
 :no: Total No., integer, readonly
-
-
-
-
-
-:server_id: Server ID, many2one, readonly
 
 
 

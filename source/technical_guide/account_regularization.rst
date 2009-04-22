@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_regularization"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Account Regularizations (*account_regularization*)
 ==================================================
@@ -24,12 +35,20 @@ Description
 
 ::
 
-  This module creates a new object in accounting,very similar to the account models named 
-  account.regularization. 
-  Within this object you can define regularization moves, 
-  This is, accounting moves that will automatically calculate the balance of a set of accounts, 
-  Set it to 0 and transfer the difference to a new account. This is used, for example with tax declarations 
-  or in some countries to create the 'Profit and Loss' regularization
+  This module creates a new object in accounting, 
+  	very similar to the account models named account.regularization. 
+  	Within this object you can define regularization moves, 
+  	This is, accounting moves that will automatically calculate the balance of a set of accounts, 
+  	Set it to 0 and transfer the difference to a new account. This is used, for example with tax declarations or in some countries to create the 'Profit and Loss' regularization
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/account_regularization.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_regularization.zip>`_
+
 
 Dependencies
 ------------

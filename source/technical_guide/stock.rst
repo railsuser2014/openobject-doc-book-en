@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Stock Management (*stock*)
 ==========================
@@ -35,6 +46,16 @@ Description
   * Rapid detection of mistakes through double entry system
   * Traceability (upstream/downstream, production lots, serial number, ...)
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/stock.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/stock.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/stock.zip>`_
+
+
 Dependencies
 ------------
 
@@ -54,7 +75,7 @@ Reports
 
  * Lots by location
 
- * Location Content (With childs)
+ * Location Content (With children)
 
 Menus
 -------
@@ -72,23 +93,23 @@ Menus
  * Stock Management/Configuration/Warehouses
  * Stock Management/Delivery Orders
  * Stock Management/Delivery Orders/Delivery Orders to Process
- * Stock Management/Delivery Orders/Futur Delivery Orders
+ * Stock Management/Delivery Orders/Future Delivery Orders
  * Stock Management/Delivery Orders/Calendar of Deliveries
  * Stock Management/Outgoing Products
- * Stock Management/Outgoing Products/Available Packings
- * Stock Management/Outgoing Products/Confirmed Packings Waiting Availability
+ * Stock Management/Outgoing Products/Available Packing
+ * Stock Management/Outgoing Products/Confirmed Packing Waiting Availability
  * Stock Management/Incoming Products
- * Stock Management/Incoming Products/Packings to Process
+ * Stock Management/Incoming Products/Packing to Process
  * Stock Management/Incoming Products/New Reception Packing
  * Stock Management/Internal Moves
- * Stock Management/Internal Moves/Available Packings
- * Stock Management/Internal Moves/Confirmed Packings Waiting Availability
- * Stock Management/Internal Moves/New Internal Packings
+ * Stock Management/Internal Moves/Available Packing
+ * Stock Management/Internal Moves/Confirmed Packing Waiting Availability
+ * Stock Management/Internal Moves/New Internal Packing
  * Stock Management/Traceability/Low Level
  * Stock Management/Traceability/Low Level/Stock Moves
  * Stock Management/Traceability/Low Level/Stock Moves/Draft Moves
  * Stock Management/Traceability/Low Level/Stock Moves/Available Moves
- * Stock Management/Traceability/Low Level/Packings
+ * Stock Management/Traceability/Low Level/Packing
  * Stock Management/Configuration/Incoterms
  * Stock Management/Reporting
  * Stock Management/Reporting/Traceability
@@ -239,7 +260,7 @@ Object: Location (stock.location)
 
 
 
-:usage: Location type, selection, required
+:usage: Location Type, selection, required
 
 
 
@@ -412,7 +433,7 @@ Object: Stock Tracking Lots (stock.tracking)
 
 
 
-:move_ids: Moves tracked, one2many
+:move_ids: Moves Tracked, one2many
 
 
 
@@ -424,7 +445,7 @@ Object: Stock Tracking Lots (stock.tracking)
 
 
 
-:date: Date create, datetime, required
+:date: Date Created, datetime, required
 
 
 
@@ -435,7 +456,7 @@ Object: Stock Tracking Lots (stock.tracking)
 
 
 
-Object: Packing list (stock.picking)
+Object: Packing List (stock.picking)
 ####################################
 
 
@@ -596,7 +617,7 @@ Object: Packing list (stock.picking)
 
 
 
-:name: Reference, char, required
+:name: Reference, char
 
 
 
@@ -630,7 +651,7 @@ Object: Production lot (stock.production.lot)
 
 
 
-:heatcode_id: HeatCode, many2one, required
+:heatcode_id: Heatcode, many2one
 
 
 
@@ -654,12 +675,6 @@ Object: Production lot (stock.production.lot)
 
 
 
-:quality: Quality Information, char
-
-
-
-
-
 :revisions: Revisions, one2many
 
 
@@ -673,6 +688,12 @@ Object: Production lot (stock.production.lot)
 
 
 :stock_available: Available, float, readonly
+
+
+
+
+
+:last_location_id: Last Location, many2one, readonly
 
 
 
@@ -696,7 +717,7 @@ Object: Production lot (stock.production.lot)
 
 
 
-:ref: Internal Ref., char
+:ref: Internal Ref, char
 
 
 
@@ -709,12 +730,6 @@ Object: Production lot (stock.production.lot)
 
 
 :reservation_ids: Reservations, one2many
-
-
-
-
-
-:localisation: Localisation, char
 
 
 
@@ -767,24 +782,6 @@ Object: Production lot (stock.production.lot)
 
 
 
-
-:y: Y of Product, float
-
-
-
-
-
-:x: X of Product, float
-
-
-
-
-
-:z: Z of Product, float
-
-
-
-
 Object: Production lot revisions (stock.production.lot.revision)
 ################################################################
 
@@ -796,13 +793,13 @@ Object: Production lot revisions (stock.production.lot.revision)
 
 
 
-:name: Revision name, char, required
+:name: Revision Name, char, required
 
 
 
 
 
-:date: Revision date, date
+:date: Revision Date, date
 
 
 
@@ -914,12 +911,6 @@ Object: Stock Move (stock.move)
 
 
 
-:qlty_test_reject: Rejected, boolean, readonly
-
-
-
-
-
 :state: Status, selection, readonly
 
 
@@ -950,7 +941,7 @@ Object: Stock Move (stock.move)
 
 
 
-:prodlot_id: Production lot, many2one
+:prodlot_id: Production Lot, many2one
 
     *Production lot is used to put a serial number on the production*
 
@@ -968,7 +959,7 @@ Object: Stock Move (stock.move)
 
 
 
-:name: Name, char, required
+:product_id: Product, many2one, required
 
 
 
@@ -980,19 +971,13 @@ Object: Stock Move (stock.move)
 
 
 
-:product_id: Product, many2one, required
+:name: Name, char, required
 
 
 
 
 
-:date_planned: Scheduled date, datetime, required
-
-
-
-
-
-:qlty_test_accept: Accepted, boolean, readonly
+:date_planned: Scheduled Date, datetime, required
 
 
 
@@ -1004,9 +989,9 @@ Object: Stock Move (stock.move)
 
 
 
-:tracking_id: Tracking lot, many2one
+:tracking_id: Tracking Lot, many2one
 
-    *Tracking lot is the code that will be put on the logistic unit/pallet*
+    *Tracking lot is the code that will be put on the logistical unit/pallet*
 
 
 
@@ -1016,7 +1001,7 @@ Object: Stock Move (stock.move)
 
 
 
-:picking_id: Packing list, many2one
+:picking_id: Packing List, many2one
 
 
 

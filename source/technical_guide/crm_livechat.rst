@@ -6,16 +6,27 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/crm_livechat"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 CRM - Livechat Jabber Client (*crm_livechat*)
 =============================================
 :Module: crm_livechat
 :Name: CRM - Livechat Jabber Client
-:Version: 5.0.1.3
+:Version: False
 :Author: Tiny
 :Directory: crm_livechat
-:Web: http://www.openerp.com//
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,9 +36,8 @@ Description
 ::
 
   This module allows you to configure and manage a livechat on your website.
-  So that your salesman can directly talk with your users in your website, using their normal 
-  jabber account. 
-  This project includes two parts:
+  So that your salesman can directly talk with your users in your website, using
+  their normal jabber account. This project includes two parts:
   * An OpenERP module to manage everything
   * A python Ajax client to set on your website for the end-user interface.
   
@@ -38,6 +48,14 @@ Description
   Then based one some events (a customer visiting some pages), it can open a
   window so that the visitor can directly talk with your teams. It goes to a
   jabber user according to what you configured in the OpenERP interface.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/crm_livechat.zip>`_
+
 
 Dependencies
 ------------
@@ -53,203 +71,19 @@ None
 Menus
 -------
 
- * CRM & SRM/Live Chat
- * CRM & SRM/Live Chat/Configuration
- * CRM & SRM/Live Chat/Configuration/Jabber Accounts
- * CRM & SRM/Live Chat/Configuration/Live Chat Sessions
- * CRM & SRM/Live Chat/Configuration/Visitors Accounts
- * CRM & SRM/Live Chat/Configuration/Users Accounts
- * CRM & SRM/Live Chat/Live Chat Logs
+
+None
+
 
 Views
 -----
 
- * Jabber Account Form (form)
- * Jabber Account Tree (tree)
- * LiveChat Sessions (form)
- * Live Chat Tree (tree)
- * partners Accounts (form)
- * partners Accounts (tree)
- * Users Accounts (form)
- * Users Accounts (tree)
- * log Accounts (form)
- * Livechat Logs (tree)
+
+None
+
 
 
 Objects
 -------
 
-Object: Livechat Account (crm_livechat.jabber)
-##############################################
-
-
-
-:name: Jabber Account, char, required
-
-
-
-
-
-:server: Server, char, required
-
-
-
-
-
-:ssl: SSL Info, selection
-
-
-
-
-
-:login: Account Login, char, required
-
-
-
-
-
-:password: Account Password, char, required
-
-
-
-
-
-:port: Port Number, char
-
-
-
-
-Object: LiveChat Account (crm_livechat.livechat)
-################################################
-
-
-
-:max_per_user: Maximum Customer per User, integer
-
-
-
-
-
-:session_delay: Minutes to Close a session, integer
-
-    *Put here to number of minutes after which a session is considered as closed*
-
-
-
-:state: State, selection
-
-
-
-
-
-:user_ids: Users Accounts, one2many
-
-
-
-
-
-:name: Livechat Account, char, required
-
-
-
-
-Object: LiveChat Visitors (crm_livechat.livechat.partner)
-#########################################################
-
-
-
-:available: Available IP, char
-
-    *If empty, the acount is available/not used*
-
-
-
-:state: State, selection, required
-
-
-
-
-
-:jabber_id: Jabber Account, many2one, required
-
-
-
-
-
-:name: Account Name, char, required
-
-
-
-
-
-:available_date: Available Date, datetime
-
-
-
-
-Object: LiveChat Users (crm_livechat.livechat.user)
-###################################################
-
-
-
-:jabber_id: Jabber Account, many2one, required
-
-
-
-
-
-:user_id: User, many2one, required
-
-
-
-
-
-:name: User Name, char, required
-
-
-
-
-
-:livechat_id: Livechat, many2one, required
-
-
-
-
-
-:languages: Language Regex, char
-
-
-
-
-
-:state: State, selection, required
-
-
-
-
-Object: LiveChat Log (crm_livechat.log)
-#######################################
-
-
-
-:note: History, text
-
-
-
-
-
-:user_id: User, many2one
-
-
-
-
-
-:name: Date and Time, datetime, required
-
-
-
-
-
-:livechat_id: Livechat, many2one, required
-
-
+None

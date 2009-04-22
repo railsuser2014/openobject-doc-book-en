@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_margin_delivery"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Margins in Sale Delivery Lines (*sale_margin_delivery*)
 =======================================================
@@ -25,6 +36,15 @@ Description
 ::
 
   None
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/sale_margin_delivery.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/sale_margin_delivery.zip>`_
+
 
 Dependencies
 ------------

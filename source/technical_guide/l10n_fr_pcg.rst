@@ -6,13 +6,24 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/l10n_fr_pcg"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 France - Plan Comptable Général (*l10n_fr_pcg*)
 ===============================================
 :Module: l10n_fr_pcg
 :Name: France - Plan Comptable Général
-:Version: 5.0.1.0
+:Version: False
 :Author: Simon JAILLET - CrysaLEAD
 :Directory: l10n_fr_pcg
 :Web: http://www.crysalead.com
@@ -24,9 +35,18 @@ Description
 
 ::
 
-  This is the module to manage the accounting chart for France in Open ERP.
+  This module is deprecated... Please use l10n_fr from the addons instead.
   
-  Credits: Sistheo Zeekom CrysaLEAD
+  Thanks.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/l10n_fr_pcg.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/l10n_fr_pcg.zip>`_
+
 
 Dependencies
 ------------
@@ -39,9 +59,8 @@ Dependencies
 Reports
 -------
 
- * Compte de resultat
+None
 
- * Bilan
 
 Menus
 -------
@@ -61,51 +80,4 @@ None
 Objects
 -------
 
-Object: Report for l10n_fr (l10n.fr.report)
-###########################################
-
-
-
-:line_ids: Lines, one2many
-
-
-
-
-
-:code: Code, char
-
-
-
-
-
-:name: Name, char
-
-
-
-
-Object: Report Lines for l10n_fr (l10n.fr.line)
-###############################################
-
-
-
-:definition: Definition, char
-
-
-
-
-
-:code: Variable Name, char
-
-
-
-
-
-:name: Name, char
-
-
-
-
-
-:report_id: Report, many2one
-
-
+None

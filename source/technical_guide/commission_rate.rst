@@ -6,13 +6,24 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/commission_rate"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Sale Agent Information (*commission_rate*)
 ==========================================
 :Module: commission_rate
 :Name: Sale Agent Information
-:Version: 5.0.0.1
+:Version: False
 :Author: Tiny
 :Directory: commission_rate
 :Web: 
@@ -25,6 +36,14 @@ Description
 ::
 
   Sale agent Info
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/commission_rate.zip>`_
+
 
 Dependencies
 ------------
@@ -42,99 +61,19 @@ None
 Menus
 -------
 
- * Sales Management
- * Sales Management/Commissions
- * Sales Management/Commissions/Sales agent
- * Sales Management/Commissions/Reporting
- * Sales Management/Commissions/Reporting/This Month
- * Sales Management/Commissions/Reporting/This Month/All Commissions
- * Sales Management/Commissions/Reporting/This Month/Commissions with Opened Invoices
- * Sales Management/Commissions/Reporting/This Month/Commissions with Paid Invoices
- * Sales Management/Commissions/Reporting/All Months
- * Sales Management/Commissions/Reporting/All Months/All Commissions
- * Sales Management/Commissions/Reporting/All Months/Commissions with Opened Invoices
- * Sales Management/Commissions/Reporting/All Months/Commissions with Paid Invoices
+
+None
+
 
 Views
 -----
 
- * saleagent.info.tree (tree)
- * saleagent.info.form (form)
- * \* INHERIT res.partner.form.inherit (form)
- * commission.month.form (form)
- * commission.month.form.tree (tree)
- * commission.all.form (form)
- * commission.all.form.tree (tree)
+
+None
+
 
 
 Objects
 -------
 
-Object: Commission of month (report.commission.month)
-#####################################################
-
-
-
-:inv_total: Invoice Amount, float, readonly
-
-
-
-
-
-:name: Sales Agent Name, char, readonly
-
-
-
-
-
-:pdate: Invoice Paid Date, date, readonly
-
-
-
-
-
-:state: Invoice State, selection
-
-
-
-
-
-:productname: Product Name, char, readonly
-
-
-
-
-
-:commission: Commissions Amount, float, readonly
-
-
-
-
-
-:comrate: Commission Rate (%), float, readonly
-
-
-
-
-
-:in_date: Invoice Date, date, readonly
-
-
-
-
-
-:invno: Invoice Number, char, readonly
-
-
-
-
-
-:product_quantity: Product Quantity, integer, readonly
-
-
-
-
-
-:sono: Sales Order No, char, readonly
-
-
+None

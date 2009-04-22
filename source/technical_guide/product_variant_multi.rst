@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_variant_multi"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Products with multi-level variants (*product_variant_multi*)
 ============================================================
@@ -24,12 +35,37 @@ Description
 
 ::
 
-  None
+  OpenERP is already supporting a product variants at the core level. But
+      without this module, variants are only mono-axial. OpenERP indeed uses the product.tempate
+      as the model object and the product.variant as the instance variant.
+      Using this module, you can now easily deal with multi-axial variants.
+      A product.template, now has a set of dimensions (like Color, Size, anything you want).
+      For each dimension, a product.template has a set of dimension values (like Red, Green
+      for the Color dimension). For each dimension, you can accept or not custom dimension
+      values. The sale interface product configurator will take it into account.
+      Once the product.template is set up, you can use a 'generator' button that will populate
+      the space of the variants. You could also choose to populate only some combinations
+      by hand instead.
+      Each variant can have an extra price that will be taken into account when computing
+      the base listed price.
+      Finally, this module is better used along with the product_variant_configurator which
+      will help the salesman selecting the appropriate variant in the sale order line
+      using dimension criteria instead of having to crawl the full space of variants.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/product_variant_multi.zip>`_
+
 
 Dependencies
 ------------
 
+ * :mod:`base`
  * :mod:`product`
+ * :mod:`sale`
 
 Reports
 -------
@@ -40,15 +76,21 @@ None
 Menus
 -------
 
- * Books/Products/Product Templates
- * Books/Products/Product Variants
+ * Products/Products/Product Templates
+ * Products/Products/Product Variants
+ * Products/Configuration/Variant Dimensions
+ * Products/Configuration/Variant Dimensions/Dimension Types
+ * Products/Configuration/Variant Dimensions/Dimension Values
 
 Views
 -----
 
-
-None
-
+ * product_variant_multi.variant_value.tree (tree)
+ * product_variant_multi.variant_value.form (form)
+ * product_variant_multi.variant_type.tree (tree)
+ * product_variant_multi.variant_type.form (form)
+ * \* INHERIT product_variant_multi.product.template.form (form)
+ * \* INHERIT product_variant_multi.product.product.form (form)
 
 
 Objects
@@ -56,6 +98,18 @@ Objects
 
 Object: Dimension Type (product.variant.dimension.type)
 #######################################################
+
+
+
+:product_tmpl_id: Product Template, many2one, required
+
+
+
+
+
+:allow_custom_value: Allow Custom Value, boolean
+
+    *If true, custom values can be entered in the product configurator*
 
 
 
@@ -73,38 +127,50 @@ Object: Dimension Type (product.variant.dimension.type)
 
 :sequence: Sequence, integer
 
+    *The product 'variants' code will use this to order the dimension values*
+
+
+Object: Dimension Value (product.variant.dimension.value)
+#########################################################
 
 
 
-Object: Dimension Type (product.variant.dimension.value)
-########################################################
-
-
-
-:dimension_id: Dimension, many2one, required
-
-
-
-
-
-:price_extra: Dimension Values, float
-
-
-
-
-
-:price_margin: Dimension Values, float
-
-
-
-
-
-:name: Dimension Value, char
+:name: Dimension Value, char, required
 
 
 
 
 
 :sequence: Sequence, integer
+
+
+
+
+
+:dimension_id: Dimension Type, many2one, required
+
+
+
+
+
+:dimension_sequence: Related Dimension Sequence, float
+
+
+
+
+
+:price_extra: Price Extra, float
+
+
+
+
+
+:product_tmpl_id: Product Template, many2one
+
+
+
+
+
+:price_margin: Price Margin, float
 
 

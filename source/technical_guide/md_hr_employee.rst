@@ -6,16 +6,27 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/md_hr_employee"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Pilot Human Resources (*md_hr_employee*)
 ========================================
 :Module: md_hr_employee
 :Name: Pilot Human Resources
-:Version: 5.0.1.0
+:Version: False
 :Author: Tiny
 :Directory: md_hr_employee
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,6 +36,14 @@ Description
 ::
 
   None
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/md_hr_employee.zip>`_
+
 
 Dependencies
 ------------
@@ -44,129 +63,19 @@ None
 Menus
 -------
 
- * Human Resources/Configuration/Maximun Travel allowance
+
+None
+
 
 Views
 -----
 
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * \* INHERIT md.hr.employee.form (form)
- * md.hr.employee.tree (tree)
- * md.hr.employee.tree (tree)
- * md.hr.address.form (form)
- * md.hr.address.tree (tree)
- * hr.employee.max.travel.allow.form (form)
- * hr.employee.max.travel.allow.tree (tree)
+
+None
+
 
 
 Objects
 -------
 
-Object: Street (md.hr.address.street)
-#####################################
-
-
-
-:name: Street, char
-
-
-
-
-Object: Zip (md.hr.address.zip)
-###############################
-
-
-
-:name: Zip, char
-
-
-
-
-Object: Town (md.hr.address.town)
-#################################
-
-
-
-:name: Town, char
-
-
-
-
-Object: Employee Address (md.hr.address)
-########################################
-
-
-
-:employee_id: Employee, many2one
-
-
-
-
-
-:name: Name, char
-
-
-
-
-
-:house_nbr: # House No, char
-
-
-
-
-
-:zip_id: Zip, many2one
-
-
-
-
-
-:country_id: Country, many2one
-
-
-
-
-
-:town_id: Town, many2one
-
-
-
-
-
-:street_id: Street, many2one
-
-
-
-
-
-:type: Address Type, selection
-
-
-
-
-Object: Maximun Travel allowance per year and per day (hr.employee.max.travel.allow)
-####################################################################################
-
-
-
-:amount_per_day: Maximun Amount Per Day, float, required
-
-
-
-
-
-:amount_per_year: Maximum Amount Per Year, float, required
-
-
+None

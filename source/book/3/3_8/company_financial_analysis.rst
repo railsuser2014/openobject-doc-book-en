@@ -124,7 +124,7 @@ Open ERP manages its budgets using both General and Analytic Accounts. You'll s
 here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts. 
 Install :mod:`account_budget` to be able to do this.
 
-Use the menu :menuselection:`Financial Management --> Configuration --> Budgets --> General Budgets`
+Use the menu :menuselection:`Financial Management --> Budgets --> Budget`
 to define a new budget.
 
 .. index::

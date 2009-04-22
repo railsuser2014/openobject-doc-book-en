@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale_journal"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Managing sales and deliveries by journal (*sale_journal*)
 =========================================================
@@ -24,9 +35,10 @@ Description
 
 ::
 
-  The sale journal modules allows you to categorise your sales and deliveries (packing lists) 
-  between different journals.
-  This module is very helpful for bigger companies that works by departments.
+  The sale journal modules allows you to categorise your
+      sales and deliveries (packing lists) between different journals.
+      This module is very helpful for bigger companies that
+      works by departments.
   
       You can use journal for different purposes, some examples:
       * isolate sales of different departments
@@ -35,15 +47,25 @@ Description
       Journals have a responsible and evolves between different status:
       * draft, open, cancel, done.
   
-      Batch operations can be processed on the different journals to confirm all sales at once, 
-      to validate or invoice packing, ...
+      Batch operations can be processed on the different journals to
+      confirm all sales at once, to validate or invoice packing, ...
   
-      It also supports batch invoicing methods that can be configured by partners and sales orders, 
-      examples:
+      It also supports batch invoicing methods that can be configured by
+      partners and sales orders, examples:
       * daily invoicing,
       * monthly invoicing, ...
   
       Some statistics by journals are provided.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/sale_journal.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/sale_journal.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/sale_journal.zip>`_
+
 
 Dependencies
 ------------
@@ -70,19 +92,19 @@ Menus
  * Sales Management/Reporting/This Month/Sales by Journal
  * Sales Management/Reporting/All Months
  * Sales Management/Reporting/All Months/Sales by Journal
- * Stock Management/Configuration/Packings Journals
- * Stock Management/Packings by Journal
- * Stock Management/Packings by Journal/My Open Journals
- * Stock Management/Packings by Journal/All Open Journals
- * Stock Management/Outgoing Products/Packings to Invoice
- * Stock Management/Outgoing Products/Packings to Invoice/Packings by Invoice Method
- * Stock Management/Reporting/Packings Journal
- * Stock Management/Reporting/Packings Journal/This Month
- * Stock Management/Reporting/Packings Journal/This Month/Packings by Invoice Method
- * Stock Management/Reporting/Packings Journal/All Months
- * Stock Management/Reporting/Packings Journal/All Months/Packings by Invoice Method
- * Stock Management/Reporting/Packings Journal/This Month/Packings by Journal
- * Stock Management/Reporting/Packings Journal/All Months/Packings by Journal
+ * Stock Management/Configuration/Packing Journals
+ * Stock Management/Packing by Journal
+ * Stock Management/Packing by Journal/My Open Journals
+ * Stock Management/Packing by Journal/All Open Journals
+ * Stock Management/Outgoing Products/Packing to Invoice
+ * Stock Management/Outgoing Products/Packing to Invoice/Packing by Invoice Method
+ * Stock Management/Reporting/Packing Journal
+ * Stock Management/Reporting/Packing Journal/This Month
+ * Stock Management/Reporting/Packing Journal/This Month/Packing by Invoice Method
+ * Stock Management/Reporting/Packing Journal/All Months
+ * Stock Management/Reporting/Packing Journal/All Months/Packing by Invoice Method
+ * Stock Management/Reporting/Packing Journal/This Month/Packing by Journal
+ * Stock Management/Reporting/Packing Journal/All Months/Packing by Journal
 
 Views
 -----
@@ -195,8 +217,8 @@ Object: Sale Journal (sale_journal.sale.journal)
 
 
 
-Object: Packings Journal (sale_journal.picking.journal)
-#######################################################
+Object: Packing Journal (sale_journal.picking.journal)
+######################################################
 
 
 
@@ -299,8 +321,8 @@ Object: Sales Orders by Journal (sale_journal.sale.stats)
 
 
 
-Object: Stats on packings by invoice method (sale_journal.invoice.type.stats)
-#############################################################################
+Object: Stats on packing by invoice method (sale_journal.invoice.type.stats)
+############################################################################
 
 
 

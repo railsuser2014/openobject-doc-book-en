@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/travel"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Travel (*travel*)
 =================
@@ -25,6 +36,14 @@ Description
 ::
 
   None
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/travel.zip>`_
+
 
 Dependencies
 ------------
@@ -72,15 +91,27 @@ Object: Partner (travel.hostel)
 
 
 
-:ean13: EAN13, char
+:ean13: EAN, char
 
-
+    *Barcode number for EAN8 EAN13 UPC JPC GTIN*
 
 
 
 :property_account_position: Fiscal Position, many2one
 
     *The fiscal position will determine taxes and the accounts used for the the partner.*
+
+
+
+:vat_no: VAT Number, char
+
+
+
+
+
+:excise: Exices Number, char
+
+
 
 
 
@@ -91,12 +122,6 @@ Object: Partner (travel.hostel)
 
 
 :relation_ids: Relations, one2many
-
-
-
-
-
-:rooms_id: Rooms, one2many
 
 
 
@@ -144,9 +169,27 @@ Object: Partner (travel.hostel)
 
 
 
+:pan_no: PAN Number, char
+
+
+
+
+
+:debit_limit: Payable Limit, float
+
+
+
+
+
+:participation_ids: Participations, one2many
+
+
+
+
+
 :property_account_payable: Account Payable, many2one, required
 
-    *This account will be used, instead of the default one, as the payable account for the current partner*
+    *This account will be used instead of the default one as the payable account for the current partner*
 
 
 
@@ -168,6 +211,12 @@ Object: Partner (travel.hostel)
 
 
 
+:turnover_id: Turnover, one2many
+
+
+
+
+
 :ref: Code, char, readonly
 
 
@@ -186,7 +235,7 @@ Object: Partner (travel.hostel)
 
 
 
-:website: Website, char
+:rooms_id: Rooms, one2many
 
 
 
@@ -198,7 +247,19 @@ Object: Partner (travel.hostel)
 
 
 
+:website: Website, char
+
+
+
+
+
 :bank_ids: Banks, one2many
+
+
+
+
+
+:signature: Signature, binary
 
 
 
@@ -228,7 +289,13 @@ Object: Partner (travel.hostel)
 
 
 
-:category_id: Categories, many2many
+:partner_ids: Parent Companies, one2many
+
+
+
+
+
+:cst_no: CST Number, char
 
 
 
@@ -258,7 +325,7 @@ Object: Partner (travel.hostel)
 
 
 
-:debit_limit: Payable Limit, float
+:country: Country, many2one
 
 
 
@@ -266,17 +333,23 @@ Object: Partner (travel.hostel)
 
 :property_account_receivable: Account Receivable, many2one, required
 
-    *This account will be used, instead of the default one, as the receivable account for the current partner*
+    *This account will be used instead of the default one as the receivable account for the current partner*
 
 
 
 :credit: Total Receivable, float, readonly
 
-    *Total amount this customer owns you.*
+    *Total amount this customer owes you.*
 
 
 
-:signature: Signature, binary
+:range: Range, char
+
+
+
+
+
+:ser_tax: Service Tax Number, char
 
 
 
@@ -284,11 +357,17 @@ Object: Partner (travel.hostel)
 
 :property_payment_term: Payment Term, many2one
 
-    *This payment term will be used, instead of the default one, for the current partner*
+    *This payment term will be used instead of the default one for the current partner*
 
 
 
-:country: Country, many2one
+:div: Division, char
+
+
+
+
+
+:category_id: Categories, many2many
 
 
 
@@ -356,9 +435,9 @@ Object: Product (travel.room)
 
 
 
-:ean13: EAN UPC JPC GTIN, char
+:ean13: EAN, char
 
-
+    *Barcode number for EAN8 EAN13 UPC JPC GTIN http://de.wikipedia.org/wiki/Global_Trade_Item_Number*
 
 
 
@@ -370,7 +449,7 @@ Object: Product (travel.room)
 
 :standard_price: Cost Price, float, required
 
-    *The cost of the product for accounting stock valorisation. It can serves as a base price for supplier price.*
+    *The cost of the product for accounting stock valuation. It can serves as a base price for supplier price.*
 
 
 
@@ -424,7 +503,7 @@ Object: Product (travel.room)
 
 :property_account_income: Income Account, many2one
 
-    *This account will be used, instead of the default one, to value incoming stock for the current product*
+    *This account will be used instead of the default one to value incoming stock for the current product*
 
 
 
@@ -483,15 +562,15 @@ Object: Product (travel.room)
 
 
 
-:buyer_price_index: Indexed buyer price, float, readonly
+:life_cycle: Life Cycle, selection
 
 
 
 
 
-:auto_picking: Auto Picking for Production, boolean
+:purchase_ok: Can be Purchased, boolean
 
-
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -501,9 +580,9 @@ Object: Product (travel.room)
 
 
 
-:property_stock_account_output: Stock Output Account, many2one
+:characteristic_group_ids: Characteristic groups, many2many
 
-    *This account will be used, instead of the default one, to value output stock*
+
 
 
 
@@ -525,12 +604,6 @@ Object: Product (travel.room)
 
 
 
-:produce_delay: Manufacturing Lead Time, float
-
-    *Average time to produce this product. This is only for the production order and, if it is a multi-level bill of material, it's only for the level of this product. Different delays will be summed for all levels and purchase orders.*
-
-
-
 :state: Status, selection
 
     *Tells the user if he can use the product or not.*
@@ -549,7 +622,19 @@ Object: Product (travel.room)
 
 
 
-:view: Room View, selection
+:rough_drawing: rough drawing, binary
+
+
+
+
+
+:standard_price_index: Indexed standard price, float, readonly
+
+
+
+
+
+:series: Series, many2one
 
 
 
@@ -569,7 +654,7 @@ Object: Product (travel.room)
 
 :type: Product Type, selection, required
 
-    *Will change the way procurements are processed, consumable are stockable products with infinite stock, or without a stock management in the system.*
+    *Will change the way procurements are processed. Consumables are stockable products with infinite stock, or for use when you have no stock management in the system.*
 
 
 
@@ -585,7 +670,13 @@ Object: Product (travel.room)
 
 
 
-:standard_price_index: Indexed standard price, float, readonly
+:schema: schema, binary
+
+
+
+
+
+:picture: Image, binary
 
 
 
@@ -645,13 +736,19 @@ Object: Product (travel.room)
 
 
 
-:seller_ids: Partners, one2many
+:outgoing_qty: Outgoing, float, readonly
 
 
 
 
 
-:cutting: Can be Cutted, boolean
+:dimension_type_ids: Dimension Types, one2many
+
+
+
+
+
+:description_sale: Sale Description, text
 
 
 
@@ -659,7 +756,7 @@ Object: Product (travel.room)
 
 :procure_method: Procure Method, selection, required
 
-    *'Make to Stock': When needed, take from the stock or wait until refurnishing. 'Make to Order': When needed, purchase or produce for the procurement request.*
+    *'Make to Stock': When needed, take from the stock or wait until re-supplying. 'Make to Order': When needed, purchase or produce for the procurement request.*
 
 
 
@@ -693,7 +790,7 @@ Object: Product (travel.room)
 
 
 
-:rental: Rentable product, boolean
+:rental: Rentable Product, boolean
 
 
 
@@ -707,7 +804,7 @@ Object: Product (travel.room)
 
 :sale_delay: Customer Lead Time, float
 
-    *This is the average time between the confirmation of the customer order and the delivery of the finnished products. It's the time you promise to your customers.*
+    *This is the average time between the confirmation of the customer order and the delivery of the finished products. It's the time you promise to your customers.*
 
 
 
@@ -723,19 +820,31 @@ Object: Product (travel.room)
 
 
 
-:description_sale: Sale Description, text
+:produce_delay: Manufacturing Lead Time, float
 
-
+    *Average time to produce this product. This is only for the production order and, if it is a multi-level bill of material, it's only for the level of this product. Different delays will be summed for all levels and purchase orders.*
 
 
 
 :property_account_expense: Expense Account, many2one
 
-    *This account will be used, instead of the default one, to value outgoing stock for the current product*
+    *This account will be used instead of the default one to value outgoing stock for the current product*
+
+
+
+:buyer_price_index: Indexed buyer price, float, readonly
+
+
 
 
 
 :categ_id: Category, many2one, required
+
+
+
+
+
+:variant_ids: Variants, one2many
 
 
 
@@ -753,49 +862,31 @@ Object: Product (travel.room)
 
 
 
-:outgoing_qty: Outgoing, float, readonly
-
-
-
-
-
 :taxes_id: Product Taxes, many2many
 
 
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:property_stock_account_output: Stock Output Account, many2one
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
-
-
-
-:y: Y of Product, float
+    *This account will be used, instead of the default one, to value output stock*
 
 
 
-
-
-:x: X of Product, float
+:seller_ids: Partners, one2many
 
 
 
 
 
-:z: Z of Product, float
+:view: Room View, selection
 
 
 
 
 
 :buyer_price: Buyer price, float
-
-
-
-
-
-:dimension_ids: Dimensions, many2many
 
 
 
@@ -847,9 +938,9 @@ Object: Product (travel.flight)
 
 
 
-:ean13: EAN UPC JPC GTIN, char
+:ean13: EAN, char
 
-
+    *Barcode number for EAN8 EAN13 UPC JPC GTIN http://de.wikipedia.org/wiki/Global_Trade_Item_Number*
 
 
 
@@ -859,15 +950,9 @@ Object: Product (travel.flight)
 
 
 
-:airport_from: Airport Departure, many2one
-
-
-
-
-
 :standard_price: Cost Price, float, required
 
-    *The cost of the product for accounting stock valorisation. It can serves as a base price for supplier price.*
+    *The cost of the product for accounting stock valuation. It can serves as a base price for supplier price.*
 
 
 
@@ -915,7 +1000,7 @@ Object: Product (travel.flight)
 
 :property_account_income: Income Account, many2one
 
-    *This account will be used, instead of the default one, to value incoming stock for the current product*
+    *This account will be used instead of the default one to value incoming stock for the current product*
 
 
 
@@ -974,15 +1059,15 @@ Object: Product (travel.flight)
 
 
 
-:buyer_price_index: Indexed buyer price, float, readonly
+:life_cycle: Life Cycle, selection
 
 
 
 
 
-:auto_picking: Auto Picking for Production, boolean
+:purchase_ok: Can be Purchased, boolean
 
-
+    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
 
 
 
@@ -992,9 +1077,9 @@ Object: Product (travel.flight)
 
 
 
-:property_stock_account_output: Stock Output Account, many2one
+:characteristic_group_ids: Characteristic groups, many2many
 
-    *This account will be used, instead of the default one, to value output stock*
+
 
 
 
@@ -1016,12 +1101,6 @@ Object: Product (travel.flight)
 
 
 
-:produce_delay: Manufacturing Lead Time, float
-
-    *Average time to produce this product. This is only for the production order and, if it is a multi-level bill of material, it's only for the level of this product. Different delays will be summed for all levels and purchase orders.*
-
-
-
 :state: Status, selection
 
     *Tells the user if he can use the product or not.*
@@ -1035,6 +1114,24 @@ Object: Product (travel.flight)
 
 
 :loc_rack: Rack, char
+
+
+
+
+
+:rough_drawing: rough drawing, binary
+
+
+
+
+
+:standard_price_index: Indexed standard price, float, readonly
+
+
+
+
+
+:series: Series, many2one
 
 
 
@@ -1054,7 +1151,7 @@ Object: Product (travel.flight)
 
 :type: Product Type, selection, required
 
-    *Will change the way procurements are processed, consumable are stockable products with infinite stock, or without a stock management in the system.*
+    *Will change the way procurements are processed. Consumables are stockable products with infinite stock, or for use when you have no stock management in the system.*
 
 
 
@@ -1070,7 +1167,13 @@ Object: Product (travel.flight)
 
 
 
-:standard_price_index: Indexed standard price, float, readonly
+:schema: schema, binary
+
+
+
+
+
+:picture: Image, binary
 
 
 
@@ -1136,19 +1239,25 @@ Object: Product (travel.flight)
 
 
 
-:seller_ids: Partners, one2many
+:airport_from: Airport Departure, many2one
 
 
 
 
 
-:cutting: Can be Cutted, boolean
+:outgoing_qty: Outgoing, float, readonly
 
 
 
 
 
-:airport_to: Airport Arrival, many2one
+:dimension_type_ids: Dimension Types, one2many
+
+
+
+
+
+:description_sale: Sale Description, text
 
 
 
@@ -1156,7 +1265,7 @@ Object: Product (travel.flight)
 
 :procure_method: Procure Method, selection, required
 
-    *'Make to Stock': When needed, take from the stock or wait until refurnishing. 'Make to Order': When needed, purchase or produce for the procurement request.*
+    *'Make to Stock': When needed, take from the stock or wait until re-supplying. 'Make to Order': When needed, purchase or produce for the procurement request.*
 
 
 
@@ -1190,7 +1299,7 @@ Object: Product (travel.flight)
 
 
 
-:rental: Rentable product, boolean
+:rental: Rentable Product, boolean
 
 
 
@@ -1204,7 +1313,7 @@ Object: Product (travel.flight)
 
 :sale_delay: Customer Lead Time, float
 
-    *This is the average time between the confirmation of the customer order and the delivery of the finnished products. It's the time you promise to your customers.*
+    *This is the average time between the confirmation of the customer order and the delivery of the finished products. It's the time you promise to your customers.*
 
 
 
@@ -1220,19 +1329,19 @@ Object: Product (travel.flight)
 
 
 
-:description_sale: Sale Description, text
+:produce_delay: Manufacturing Lead Time, float
 
-
+    *Average time to produce this product. This is only for the production order and, if it is a multi-level bill of material, it's only for the level of this product. Different delays will be summed for all levels and purchase orders.*
 
 
 
 :property_account_expense: Expense Account, many2one
 
-    *This account will be used, instead of the default one, to value outgoing stock for the current product*
+    *This account will be used instead of the default one to value outgoing stock for the current product*
 
 
 
-:buyer_price: Buyer price, float
+:buyer_price_index: Indexed buyer price, float, readonly
 
 
 
@@ -1244,13 +1353,13 @@ Object: Product (travel.flight)
 
 
 
+:variant_ids: Variants, one2many
+
+
+
+
+
 :lst_price: List Price, float, readonly
-
-
-
-
-
-:outgoing_qty: Outgoing, float, readonly
 
 
 
@@ -1262,25 +1371,19 @@ Object: Product (travel.flight)
 
 
 
-:purchase_ok: Can be Purchased, boolean
+:property_stock_account_output: Stock Output Account, many2one
 
-    *Determine if the product is visible in the list of products within a selection from a purchase order line.*
-
-
-
-:y: Y of Product, float
+    *This account will be used, instead of the default one, to value output stock*
 
 
 
-
-
-:x: X of Product, float
+:seller_ids: Partners, one2many
 
 
 
 
 
-:z: Z of Product, float
+:airport_to: Airport Arrival, many2one
 
 
 
@@ -1292,7 +1395,7 @@ Object: Product (travel.flight)
 
 
 
-:dimension_ids: Dimensions, many2many
+:buyer_price: Buyer price, float
 
 
 

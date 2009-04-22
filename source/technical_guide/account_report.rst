@@ -6,13 +6,24 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_report"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Reporting for accounting (*account_report*)
 ===========================================
 :Module: account_report
 :Name: Reporting for accounting
-:Version: 5.0.1.0
+:Version: 5.0.1.1
 :Author: Tiny
 :Directory: account_report
 :Web: http://www.openerp.com
@@ -27,6 +38,16 @@ Description
   Financial and accounting reporting
       Fiscal statements
       Indicators
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/account_report.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/account_report.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_report.zip>`_
+
 
 Dependencies
 ------------
@@ -50,8 +71,7 @@ Menus
  * Financial Management/Reporting/Custom reporting
  * Financial Management/Reporting/Custom reporting/Fiscal Statements reporting
  * Financial Management/Reporting/Custom reporting/Indicators reporting
- * Financial Management/Reporting/Custom reporting/Others reportings
- * Financial Management/Reporting/All Indicators History
+ * Financial Management/Reporting/Custom reporting/Other reports
  * Financial Management/Reporting/Custom reporting/Print Indicators
 
 Views
@@ -87,7 +107,7 @@ Object: Account reporting (account.report.report)
 
 :disp_tree: Display Tree, boolean
 
-    *When the indicators will be printed, if one indicator is set with this field to True, then it will display one more graph with all its children in tree*
+    *When the indicators are printed, if one indicator is set with this field to True, then it will display one more graphs with all its children in tree*
 
 
 
@@ -115,7 +135,7 @@ Object: Account reporting (account.report.report)
 
 
 
-:child_ids: Childs, one2many
+:child_ids: Children, one2many
 
 
 
@@ -123,13 +143,13 @@ Object: Account reporting (account.report.report)
 
 :badness_limit: Badness Indicator Limit, float
 
-    *This Value depicts the limit of badness.*
+    *This Value sets the limit of badness.*
 
 
 
 :goodness_limit: Goodness Indicator Limit, float
 
-    *This Value depicts the limit of goodness.*
+    *This Value sets the limit of goodness.*
 
 
 
@@ -145,9 +165,9 @@ Object: Account reporting (account.report.report)
 
 
 
-:disp_graph: Display as a Graph, boolean
+:disp_graph: Display As Graph, boolean
 
-    *If the field is set to True,information will be printed as a Graph; as an array otherwise.*
+    *If the field is set to True, information will be printed as a Graph, otherwise as an array.*
 
 
 

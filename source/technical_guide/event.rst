@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/event"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Event (*event*)
 ===============
@@ -28,16 +39,23 @@ Description
   
       This module allow you
           * to manage your events and their registrations
-          * to use emails to automatically confirm and send acknowledgements for 
-            any registration to an event
+          * to use emails to automatically confirm and send acknowledgements for any registration to an event
           * ...
   
       Note that:
       - You can define new types of events in
                   Events \ Configuration \ Types of Events
-      - You can access predefined reports about number of registration per event 
-        or per event category in :
+      - You can access predefined reports about number of registration per event or per event category in :
                   Events \ Reporting
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 <http://www.openerp.com/download/modules/5.0/event.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/event.zip>`_
+
 
 Dependencies
 ------------
@@ -98,12 +116,6 @@ Object: Event type (event.type)
 
 
 
-
-:check_type: Default Check Type, many2one
-
-
-
-
 Object: Event (event.event)
 ###########################
 
@@ -115,7 +127,7 @@ Object: Event (event.event)
 
 
 
-:check_type: Check Type, many2one
+:create_date: Date create, datetime, readonly
 
 
 
@@ -139,13 +151,7 @@ Object: Event (event.event)
 
 
 
-:task_ids: Project tasks, one2many, readonly
-
-
-
-
-
-:date_begin: Beginning date, datetime, required
+:event_modify_date: Google Modify Date, datetime
 
 
 
@@ -169,7 +175,7 @@ Object: Event (event.event)
 
 
 
-:user_id: Responsible, many2one
+:user_id: Responsible User, many2one
 
 
 
@@ -187,19 +193,13 @@ Object: Event (event.event)
 
 
 
-:note: Note, text
-
-
-
-
-
 :parent_id: Parent Section, many2one
 
 
 
 
 
-:state: State, selection, required, readonly
+:state: Status, selection, required, readonly
 
 
 
@@ -211,55 +211,7 @@ Object: Event (event.event)
 
 
 
-:project_id: Project, many2one, readonly
-
-
-
-
-
-:type: Type, many2one
-
-
-
-
-
-:agreement_nbr: Agreement Nbr, char
-
-
-
-
-
-:child_ids: Childs Sections, one2many
-
-
-
-
-
-:section_id: Case section, many2one, required
-
-
-
-
-
-:localisation: Localisation, char
-
-
-
-
-
-:active: Active, boolean
-
-
-
-
-
-:signet_type: Signet type, selection
-
-
-
-
-
-:fse_hours: FSE Hours, integer
+:task_ids: Project tasks, one2many, readonly
 
 
 
@@ -271,25 +223,61 @@ Object: Event (event.event)
 
 
 
+:type: Type, many2one
+
+
+
+
+
+:child_ids: Child Sections, one2many
+
+
+
+
+
+:section_id: Case section, many2one, required
+
+
+
+
+
+:write_date: Date Modified, datetime, readonly
+
+
+
+
+
+:active: Active, boolean
+
+
+
+
+
+:date_begin: Beginning date, datetime, required
+
+
+
+
+
+:google_event_id: Google Event Id, char, readonly
+
+
+
+
+
+:project_id: Project, many2one, readonly
+
+
+
+
+
 :name: Case Section, char, required
 
 
 
 
 
-:case_ids: Cases, many2many
-
-
-
-
-
 :analytic_journal_id: Analytic Journal, many2one
-
-
-
-
-
-:fse_code: FSE code, char
 
 
 
@@ -315,7 +303,13 @@ Object: Event (event.event)
 
 :reply_to: Reply-To, char
 
-    *The email address wich is the 'Reply-To' of all email sent by Open ERP for cases in this section*
+    *The email address put in the 'Reply-To' of all emails sent by Open ERP about cases in this section*
+
+
+
+:allow_unlink: Allow Delete, boolean
+
+    *Allows to delete non draft cases*
 
 
 Object: Event Registration (event.registration)
@@ -335,13 +329,13 @@ Object: Event Registration (event.registration)
 
 
 
-:code: Calendar Code, char
-
-
-
-
-
 :create_date: Created, datetime, readonly
+
+
+
+
+
+:outgoing_picking_id: Outgoing Picking, many2one
 
 
 
@@ -365,12 +359,6 @@ Object: Event Registration (event.registration)
 
 
 
-:zip_id: Zip, many2one
-
-
-
-
-
 :partner_address_id: Partner Contact, many2one
 
 
@@ -383,25 +371,13 @@ Object: Event Registration (event.registration)
 
 
 
-:contact_id: Partner Contact, many2one
+:related_picking_state: Related Picking State, char, readonly
 
 
 
 
 
-:check_amount: Check Amount, float, readonly
-
-
-
-
-
-:incoming_move_id: Incoming Move, many2one
-
-
-
-
-
-:invoice_label: Label Invoice, char, required
+:incident_ref: Incident Ref, char, required
 
 
 
@@ -419,25 +395,19 @@ Object: Event Registration (event.registration)
 
 
 
-:in_supplier_move_id: Return To Supplier Move, many2one
-
-
-
-
-
 :duration: Duration, float
 
 
 
 
 
-:event_ids: Events, many2many
+:out_supplier_picking_id: Return From Supplier Picking, many2one
 
 
 
 
 
-:partner_id: Partner, many2one
+:planned_revenue: Planned Revenue, float
 
 
 
@@ -461,12 +431,6 @@ Object: Event Registration (event.registration)
 
 
 
-:timesheet_line_id: Timesheet Line, many2one
-
-
-
-
-
 :user_id: Responsible, many2one
 
 
@@ -485,13 +449,7 @@ Object: Event Registration (event.registration)
 
 
 
-:planned_revenue: Planned Revenue, float
-
-
-
-
-
-:meeting_id: Meeting confidential, many2one
+:partner_id: Partner, many2one
 
 
 
@@ -527,7 +485,7 @@ Object: Event Registration (event.registration)
 
 
 
-:outgoing_move_id: Outgoing Move, many2one
+:in_supplier_picking_id: Return To Supplier Picking, many2one
 
 
 
@@ -536,12 +494,6 @@ Object: Event Registration (event.registration)
 :email_cc: Watchers Emails, char
 
 
-
-
-
-:training_authorization: Training Auth., char, readonly
-
-    *Formation Checks Authorization number*
 
 
 
@@ -569,19 +521,7 @@ Object: Event Registration (event.registration)
 
 
 
-:cavalier: Cavalier, boolean
-
-    *Check if we should print papers with participant name*
-
-
-
 :description: Your action, text
-
-
-
-
-
-:payment_ids: Payment, many2many, readonly
 
 
 
@@ -617,12 +557,6 @@ Object: Event Registration (event.registration)
 
 
 
-:check_mode: Check Mode, boolean
-
-
-
-
-
 :prodlot_id: Serial Number, many2one
 
 
@@ -647,6 +581,12 @@ Object: Event Registration (event.registration)
 
 
 
+:contact_id: Partner Contact, many2one
+
+
+
+
+
 :nb_register: Number of Registration, integer, readonly
 
 
@@ -659,19 +599,7 @@ Object: Event Registration (event.registration)
 
 
 
-:check_ids: Check ids, one2many
-
-
-
-
-
-:name: Description, char, required
-
-
-
-
-
-:invoice_id: Invoice, many2one
+:incoming_picking_id: Incoming Picking, many2one
 
 
 
@@ -683,19 +611,13 @@ Object: Event Registration (event.registration)
 
 
 
-:contact_order_id: Contact Order, many2one
+:related_incoming_picking_state: Related Picking State, char, readonly
 
 
 
 
 
-:incident_ref: Incident Ref, char, required
-
-
-
-
-
-:product_id: Related Product, many2one
+:name: Description, char, required
 
 
 
@@ -707,19 +629,13 @@ Object: Event Registration (event.registration)
 
 
 
-:out_supplier_move_id: Return From Supplier Move, many2one
-
-
-
-
-
 :email_last: Latest E-Mail, text, readonly
 
 
 
 
 
-:grant_id: Grant, many2one
+:related_outgoing_picking_state: Related Picking State, char, readonly
 
 
 
@@ -743,12 +659,6 @@ Object: Event Registration (event.registration)
 
 
 
-:payment_mode: Payment Mode, many2one
-
-
-
-
-
 :event_id: Event Related, many2one, required
 
 
@@ -761,13 +671,25 @@ Object: Event Registration (event.registration)
 
 
 
+:product_id: Related Product, many2one
+
+
+
+
+
+:invoice_id: Invoice, many2one
+
+
+
+
+
+:invoice_label: Label Invoice, char, required
+
+
+
+
+
 :badge_name: Badge Name, char
-
-
-
-
-
-:group_id: Event Group, many2one
 
 
 

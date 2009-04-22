@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/sale"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Sales Management (*sale*)
 =========================
@@ -39,6 +50,16 @@ Description
           - all at once, multi-parcel
           - delivery costs
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/sale.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/sale.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/sale.zip>`_
+
+
 Dependencies
 ------------
 
@@ -50,7 +71,7 @@ Dependencies
 Reports
 -------
 
- * Print Order
+ * Quotation / Order
 
 Menus
 -------
@@ -84,7 +105,7 @@ Views
  * sale.order.tree (tree)
  * sale.order.form (form)
  * sale.order.line.graph (graph)
- * Sale lines (tree)
+ * sale.order.line.tree (tree)
  * sale.order.line.form2 (form)
  * Configure Picking Policy for Sale Order  (form)
  * \* INHERIT stock.picking.form (form)
@@ -98,19 +119,25 @@ Object: Sale Shop (sale.shop)
 
 
 
-:payment_account_id: Payment accounts, many2many
+:payment_account_id: Payment Accounts, many2many
 
 
 
 
 
-:name: Shop name, char, required
+:name: Shop Name, char, required
 
 
 
 
 
 :warehouse_id: Warehouse, many2one
+
+
+
+
+
+:magento_flag: Magento webshop, boolean
 
 
 
@@ -158,7 +185,7 @@ Object: Sale Order (sale.order)
 
 :picking_policy: Packing Policy, selection, required
 
-    *If you don't have enough stock available to deliver all at once, do you accept partial shippings or not.*
+    *If you don't have enough stock available to deliver all at once, do you accept partial shipments or not?*
 
 
 
@@ -168,13 +195,13 @@ Object: Sale Order (sale.order)
     - The 'Pay before delivery' choice will first generate the invoice and then generate the packing order after the payment of this invoice.
     - The 'Shipping & Manual Invoice' will create the packing order directly and wait for the user to manually click on the 'Invoice' button to generate the draft invoice.
     - The 'Invoice on Order Ater Delivery' choice will generate the draft invoice based on sale order after all packing lists have been finished.
-    - The 'Invoice from the packings' choice is used to create an invoice during the packing process.*
+    - The 'Invoice from the packing' choice is used to create an invoice during the packing process.*
 
 
 
 :carrier_id: Delivery method, many2one
 
-    *Complete this field if you plan to invoice the shipping based on packings made.*
+    *Complete this field if you plan to invoice the shipping based on packing.*
 
 
 
@@ -196,7 +223,7 @@ Object: Sale Order (sale.order)
 
 
 
-:client_order_ref: Customer Ref., char
+:client_order_ref: Customer Ref, char
 
 
 
@@ -208,7 +235,7 @@ Object: Sale Order (sale.order)
 
 
 
-:esale_osc_id: esale_osc Id, integer
+:partner_id: Customer, many2one, readonly
 
 
 
@@ -232,7 +259,7 @@ Object: Sale Order (sale.order)
 
 
 
-:amount_tax: Taxes, float, readonly
+:note: Notes, text
 
 
 
@@ -250,25 +277,7 @@ Object: Sale Order (sale.order)
 
 
 
-:esale_osc_web: Website, many2one
-
-
-
-
-
-:partner_id: Customer, many2one, readonly
-
-
-
-
-
 :payment_term: Payment Term, many2one
-
-
-
-
-
-:parent_so: Parent Sales Order, many2one
 
 
 
@@ -280,7 +289,7 @@ Object: Sale Order (sale.order)
 
 
 
-:note: Notes, text
+:amount_tax: Taxes, float, readonly
 
 
 
@@ -288,7 +297,7 @@ Object: Sale Order (sale.order)
 
 :state: Order State, selection, readonly
 
-    *Gives the state of the quotation or sale order. The exception state is automatically set when a cancel operation occurs in the invoice validation (Invoice Exception) or in the packing list process (Shipping Exception). The 'Waiting Schedule' state is set when the invoice is confirmed but waiting for the scheduler to be on the date 'Date Ordered'.*
+    *Gives the state of the quotation or sale order. The exception state is automatically set when a cancel operation occurs in the invoice validation (Invoice Exception) or in the packing list process (Shipping Exception). The 'Waiting Schedule' state is set when the invoice is confirmed but waiting for the scheduler to run on the date 'Date Ordered'.*
 
 
 
@@ -334,12 +343,6 @@ Object: Sale Order (sale.order)
 
 
 
-:child_so: Child Sales Order, one2many
-
-
-
-
-
 :incoterm: Incoterm, selection
 
 
@@ -370,7 +373,7 @@ Object: Sale Order (sale.order)
 
 
 
-:amount_untaxed: Untaxed Amount, float, readonly
+:esale_oscom_web: Website, many2one
 
 
 
@@ -382,9 +385,15 @@ Object: Sale Order (sale.order)
 
 
 
-:picking_ids: Related Packings, one2many, readonly
+:picking_ids: Related Packing, one2many, readonly
 
     *This is the list of picking list that have been generated for this invoice*
+
+
+
+:esale_oscom_id: esale_oscom Id, integer
+
+
 
 
 
@@ -394,7 +403,7 @@ Object: Sale Order (sale.order)
 
 
 
-:name: Order Reference, char, required
+:name: Order Description, char, required
 
 
 
@@ -418,19 +427,13 @@ Object: Sale Order (sale.order)
 
 
 
-:case_ids: Related Cases, one2many
+:amount_untaxed: Untaxed Amount, float, readonly
 
 
 
 
 
-:dept: Department, many2one
-
-
-
-
-
-:shipped: Picked, boolean, readonly
+:has_error: Magento order error, integer
 
 
 
@@ -448,6 +451,12 @@ Object: Sale Order (sale.order)
 
 
 
+:shipped: Picked, boolean, readonly
+
+
+
+
+
 :discount_campaign: Discount Campaign, many2one
 
 
@@ -455,6 +464,12 @@ Object: Sale Order (sale.order)
 
 
 :margin: Margin, float, readonly
+
+
+
+
+
+:magento_id: Magento order id, integer
 
 
 
@@ -470,7 +485,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:product_uos_qty: Quantity (UOS), float
+:product_uos_qty: Quantity (UoS), float
 
 
 
@@ -482,7 +497,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:product_uom: Product UoM, many2one, required
+:product_uom: Product UoM, many2one
 
 
 
@@ -506,7 +521,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:product_uom_qty: Quantity (UoM), float, required
+:product_uom_qty: Quantity (UoM), float
 
 
 
@@ -554,7 +569,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:product_uos: Product UOS, many2one
+:product_uos: Product UoS, many2one
 
 
 
@@ -572,7 +587,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:number_packages: Number packages, integer, readonly
+:number_packages: Number Packages, integer, readonly
 
 
 
@@ -662,7 +677,7 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:fleet_id: Sub Fleet, many2one
+:purchase_price: Cost Price, float
 
 
 
@@ -717,6 +732,12 @@ Object: Sale Order line (sale.order.line)
 
 
 :to_date: End of Validity, datetime
+
+
+
+
+
+:dimension_custom_value_ids: Dimension Custom Values, one2many
 
 
 
@@ -800,25 +821,13 @@ Object: Sale Order line (sale.order.line)
 
 
 
-:y: Y of Product, float
-
-
-
-
-
-:x: X of Product, float
+:fleet_id: Sub Fleet, many2one
 
 
 
 
 
 :layout_type: Layout Type, selection, required
-
-
-
-
-
-:z: Z of Product, float
 
 
 

@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_analytic_planning"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Analytic planning - Reporting (*report_analytic_planning*)
 ==========================================================
@@ -26,6 +37,16 @@ Description
 
   Planning on analytic accounts.
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/report_analytic_planning.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/report_analytic_planning.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/report_analytic_planning.zip>`_
+
+
 Dependencies
 ------------
 
@@ -43,10 +64,10 @@ Menus
 -------
 
  * Human Resources/Planning
- * Human Resources/Planning/Plannings
- * Human Resources/Planning/My Plannings
- * Human Resources/Planning/My Plannings/My Current Plannings
- * Human Resources/Planning/Plannings/Current Plannings
+ * Human Resources/Planning/Planning
+ * Human Resources/Planning/My Planning
+ * Human Resources/Planning/My Planning/My Current Planning
+ * Human Resources/Planning/Planning/Current Planning
  * Human Resources/Planning/New Planning
  * Human Resources/Reporting/Planning
  * Human Resources/Reporting/Planning/Planning Statistics
@@ -130,12 +151,6 @@ Object: Planning (report_account_analytic.planning)
 
 
 
-
-:stat_product_ids: Planning by Post / Product, one2many, readonly
-
-
-
-
 Object: Planning Line (report_account_analytic.planning.line)
 #############################################################
 
@@ -177,25 +192,7 @@ Object: Planning Line (report_account_analytic.planning.line)
 
 
 
-:date_to: End date, date
-
-
-
-
-
 :delegate_id: Delegate To, many2one
-
-
-
-
-
-:date_from: Start date, date
-
-
-
-
-
-:product_id: Job / Product, many2one, required
 
 
 

@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_report_creator"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Report Creator (*base_report_creator*)
 ======================================
@@ -24,10 +35,21 @@ Description
 
 ::
 
-  This modules allows you to create any statistic report on several object. 
-  It's a SQL query builder and browser for and users.
+  This modules allows you to create any statistic
+  report on several object. It's a SQL query builder and browser
+  for and users.
   
-  After installing the module, it adds a menu to define custom report in the "Dashboard" menu.
+  After installing the module, it adds a menu to define custom report in
+  the "Dashboard" menu.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 <http://www.openerp.com/download/modules/5.0/base_report_creator.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/base_report_creator.zip>`_
+
 
 Dependencies
 ------------

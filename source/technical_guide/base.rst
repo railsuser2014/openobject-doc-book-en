@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Base (*base*)
 =============
@@ -26,6 +37,14 @@ Description
 
   The kernel of OpenERP, needed for all installation.
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+(No download links available)
+
+
 Dependencies
 ------------
 
@@ -39,8 +58,6 @@ Reports
  * Technical guide
 
  * Labels
-
- * Product Catalog
 
 Menus
 -------
@@ -57,7 +74,7 @@ Menus
  * Administration/Users
  * Administration/Security
  * Administration/Modules Management
- * Financial Management/Configuration/Currencies
+ * Partners/Configuration/Localisation/Currencies
  * Partners/Configuration
  * Partners/Partners/New Partner
  * Administration/Maintenance/Your Maintenance Contracts
@@ -122,10 +139,10 @@ Menus
  * Administration/Translations/Application Terms/Languages
  * Partners
  * Partners/Configuration/Partner Functions
- * Partners/Addresses
+ * Partners/Partner Addresses
  * Partners/Configuration/Titles
- * Partners/Configuration/Titles/Partners Titles
- * Partners/Configuration/Titles/Contacts Titles
+ * Partners/Configuration/Titles/Partner Titles
+ * Partners/Configuration/Titles/Contact Titles
  * Partners/Partners
  * Partners/Partners/Customers Partners
  * Partners/Partners/Suppliers Partners
@@ -141,7 +158,7 @@ Menus
  * Partners/Configuration/Partner Events/Active Partner Events
  * Partners/Configuration/Partner Events/States of mind
  * Administration/Configuration/Properties
- * Administration/Configuration/Properties/Default properties
+ * Administration/Configuration/Properties/Default Properties
  * Administration/Configuration/Properties/All Properties
  * Administration/Maintenance
  * Administration/Maintenance/Add Maintenance Contract
@@ -304,13 +321,13 @@ Object: Objects (ir.model)
 
 
 
-:state: Manualy Created, selection, readonly
+:state: Manually Created, selection, readonly
 
 
 
 
 
-:model: Object Name, char, required
+:model: Object, char, required
 
 
 
@@ -320,103 +337,31 @@ Object: Objects Security Grid (ir.model.grid)
 
 
 
-:group_15: Human Resources / Manager, char
+:access_ids: Access, one2many
 
 
 
 
 
-:group_71: Encodage comptoir, char
+:group_14: Portal group, char
 
 
 
 
 
-:group_70: Configuration Missions Déléguées, char
+:group_44: Point of Sale / Manager, char
 
 
 
 
 
-:group_73: Acces partenaire base, char
+:group_33: Purchase / User, char
 
 
 
 
 
-:group_72: Superviseur Missions Déléguées, char
-
-
-
-
-
-:group_75: Acces compta base, char
-
-
-
-
-
-:group_74: Acces partenaire admin, char
-
-
-
-
-
-:group_77: Groupe vide, char
-
-
-
-
-
-:group_76: Acces compta admin, char
-
-
-
-
-
-:group_79: Acces livre admin, char
-
-
-
-
-
-:group_78: Acces livre base, char
-
-
-
-
-
-:group_84: Acces commande client admin, char
-
-
-
-
-
-:group_80: Acces stock base, char
-
-
-
-
-
-:group_81: Acces stock admin, char
-
-
-
-
-
-:group_82: Acces commandes fournisseur, char
-
-
-
-
-
-:group_83: Acces commandes client base, char
-
-
-
-
-
-:name: Object Name, char, required
+:group_25: Human Resources / Attendances User, char
 
 
 
@@ -428,19 +373,97 @@ Object: Objects Security Grid (ir.model.grid)
 
 
 
+:group_39: Portal Account group, char
+
+
+
+
+
+:group_38: Portal Service group, char
+
+
+
+
+
+:group_18: Useability / Product UoS View, char
+
+
+
+
+
 :group_16: Human Resources / User, char
 
 
 
 
 
-:state: Manualy Created, selection, readonly
+:group_35: Manufacturing / Worker, char
 
 
 
 
 
-:group_14: Portal group, char
+:group_34: Manufacturing / Manager, char
+
+
+
+
+
+:group_37: Sale / Salesman, char
+
+
+
+
+
+:group_36: Sale / Manager, char
+
+
+
+
+
+:group_31: Stock / Worker, char
+
+
+
+
+
+:group_59: Direct Marketing / Customer File Admin, char
+
+
+
+
+
+:group_42: Hotel / User, char
+
+
+
+
+
+:group_32: Purchase / Manager, char
+
+
+
+
+
+:group_71: Acces commandes client base, char
+
+
+
+
+
+:group_70: Acces commandes fournisseur, char
+
+
+
+
+
+:state: Manually Created, selection, readonly
+
+
+
+
+
+:group_72: Acces commande client admin, char
 
 
 
@@ -470,259 +493,49 @@ Object: Objects Security Grid (ir.model.grid)
 
 
 
-:group_19: Product / Manager, char
+:group_53: Direct Marketing / Item Admin, char
 
 
 
 
 
-:group_18: Useability / Product UoS View, char
+:group_52: Direct Marketing / Campaign Manager, char
 
 
 
 
 
-:group_28: Project / User, char
+:group_51: Direct Marketing / Campaign Admin, char
 
 
 
 
 
-:group_29: Stock / Manager, char
+:group_50: Direct Marketing / Offer Manager, char
 
 
 
 
 
-:group_22: Finance / Manager, char
+:group_57: Direct Marketing / DTP Admin, char
 
 
 
 
 
-:group_23: Human Resources / Contracts, char
+:group_58: Direct Marketing / DTP Manager, char
 
 
 
 
 
-:group_20: Finance / Invoice, char
+:group_55: Direct Marketing / Manufacturing Admin, char
 
 
 
 
 
-:group_21: Finance / Accountant, char
-
-
-
-
-
-:group_26: Project / Financial Manager, char
-
-
-
-
-
-:group_27: Project / Manager, char
-
-
-
-
-
-:group_24: Human Resources / Attendances User, char
-
-
-
-
-
-:group_25: Finance / Payments, char
-
-
-
-
-
-:access_ids: Access, one2many
-
-
-
-
-
-:group_39: Direct Marketing / Offer Manager, char
-
-
-
-
-
-:group_38: Direct Marketing / Offer Admin, char
-
-
-
-
-
-:group_35: Manufacturing / Worker, char
-
-
-
-
-
-:group_34: Manufacturing / Manager, char
-
-
-
-
-
-:group_37: Direct Marketing / Admin, char
-
-
-
-
-
-:group_36: Direct Marketing / User, char
-
-
-
-
-
-:group_31: Purchase / Manager, char
-
-
-
-
-
-:group_30: Stock / Worker, char
-
-
-
-
-
-:group_32: Purchase / User, char
-
-
-
-
-
-:info: Information, text
-
-
-
-
-
-:group_48: Direct Marketing / Customer File Admin, char
-
-
-
-
-
-:group_49: Direct Marketing / Customer File Manager, char
-
-
-
-
-
-:group_40: Direct Marketing / Campaign Admin, char
-
-
-
-
-
-:group_41: Direct Marketing / Campaign Manager, char
-
-
-
-
-
-:group_42: Direct Marketing / Item Admin, char
-
-
-
-
-
-:group_43: Direct Marketing / Item Manager, char
-
-
-
-
-
-:group_44: Direct Marketing / Manufacturing Admin, char
-
-
-
-
-
-:group_45: Direct Marketing / Manufacturing Manager, char
-
-
-
-
-
-:group_46: Direct Marketing / DTP Admin, char
-
-
-
-
-
-:group_47: Direct Marketing / DTP Manager, char
-
-
-
-
-
-:group_59: CCI Event Access Rights, char
-
-
-
-
-
-:group_58: CCI Event User, char
-
-
-
-
-
-:group_53: CCI TimeSheet Manager, char
-
-
-
-
-
-:group_52: CCI TimeSheet User, char
-
-
-
-
-
-:group_51: Sale / Salesman, char
-
-
-
-
-
-:group_50: Sale / Manager, char
-
-
-
-
-
-:group_57: Point of Sale / User, char
-
-
-
-
-
-:group_56: Point of Sale / Manager, char
-
-
-
-
-
-:group_55: OSCommerce / User, char
-
-
-
-
-
-:group_54: Hotel / User, char
+:group_54: Direct Marketing / Item Manager, char
 
 
 
@@ -794,67 +607,205 @@ Object: Objects Security Grid (ir.model.grid)
 
 
 
-:group_64: Superviseur Traductions, char
+:group_30: Stock / Manager, char
 
 
 
 
 
-:group_68: CCI Missions Access Rights, char
+:group_19: Product / Manager, char
 
 
 
 
 
-:group_69: CCI Missions Supervisor, char
+:group_40: Portal Analytic group, char
 
 
 
 
 
-:group_66: CCI Membership Yearly operations, char
+:group_29: Project / User, char
 
 
 
 
 
-:group_67: CCI Missions User, char
+:group_43: OSCommerce / User, char
 
 
 
 
 
-:model: Object Name, char, required
+:group_45: Point of Sale / User, char
 
 
 
 
 
-:group_65: CCI Membership Billing one by one, char
+:group_64: Acces compta admin, char
 
 
 
 
 
-:group_62: CCI Translation User, char
+:group_41: Portal Analytic Package group, char
 
 
 
 
 
-:group_63: CCI Translation Manager, char
+:info: Information, text
 
 
 
 
 
-:group_60: CCI Event Supervisor, char
+:group_28: Project / Manager, char
 
 
 
 
 
-:group_61: CCI Event Master, char
+:group_65: Groupe vide, char
+
+
+
+
+
+:name: Object Name, char, required
+
+
+
+
+
+:group_15: Human Resources / Manager, char
+
+
+
+
+
+:group_22: Finance / Accountant, char
+
+
+
+
+
+:group_23: Finance / Manager, char
+
+
+
+
+
+:group_20: Maintenance Editor / Manager, char
+
+
+
+
+
+:group_21: Finance / Invoice, char
+
+
+
+
+
+:group_26: Finance / Payments, char
+
+
+
+
+
+:group_27: Project / Financial Manager, char
+
+
+
+
+
+:group_24: Human Resources / Contracts, char
+
+
+
+
+
+:group_56: Direct Marketing / Manufacturing Manager, char
+
+
+
+
+
+:group_48: Direct Marketing / Admin, char
+
+
+
+
+
+:group_49: Direct Marketing / Offer Admin, char
+
+
+
+
+
+:group_46: Portal Sale group, char
+
+
+
+
+
+:group_68: Acces stock base, char
+
+
+
+
+
+:group_69: Acces stock admin, char
+
+
+
+
+
+:group_66: Acces livre base, char
+
+
+
+
+
+:group_67: Acces livre admin, char
+
+
+
+
+
+:model: Object, char, required
+
+
+
+
+
+:group_47: Direct Marketing / User, char
+
+
+
+
+
+:group_62: Acces partenaire admin, char
+
+
+
+
+
+:group_63: Acces compta base, char
+
+
+
+
+
+:group_60: Direct Marketing / Customer File Manager, char
+
+
+
+
+
+:group_61: Acces partenaire base, char
 
 
 
@@ -864,7 +815,7 @@ Object: Fields (ir.model.fields)
 
 
 
-:model_id: Object id, many2one, required
+:model_id: Object ID, many2one, required
 
 
 
@@ -900,7 +851,7 @@ Object: Fields (ir.model.fields)
 
 
 
-:state: Manualy Created, selection, required, readonly
+:state: Manually Created, selection, required, readonly
 
 
 
@@ -1074,7 +1025,7 @@ Object: ir.model.config (ir.model.config)
 
 
 
-:password_check: confirmation, char
+:password_check: Confirmation, char
 
 
 
@@ -1142,6 +1093,12 @@ Object: ir.sequence (ir.sequence)
 
 
 
+:fiscal_ids: Sequences, one2many
+
+
+
+
+
 :active: Active, boolean
 
 
@@ -1160,7 +1117,7 @@ Object: ir.ui.menu (ir.ui.menu)
 
 :groups_id: Groups, many2many
 
-    *If you put groups, the visibility of this menu will be based on these groups. If this field is empty, Open ERP will compute visibility based on the related object's read access.*
+    *If you have groups, the visibility of this menu will be based on these groups. If this field is empty, Open ERP will compute visibility based on the related object's read access.*
 
 
 
@@ -1194,7 +1151,7 @@ Object: ir.ui.menu (ir.ui.menu)
 
 
 
-:child_id: Child ids, one2many
+:child_id: Child IDs, one2many
 
 
 
@@ -1228,7 +1185,7 @@ Object: ir.ui.view.custom (ir.ui.view.custom)
 
 
 
-:ref_id: Orignal View, many2one
+:ref_id: Original View, many2one
 
 
 
@@ -1274,7 +1231,7 @@ Object: ir.ui.view (ir.ui.view)
 
 
 
-:field_parent: Childs Field, char
+:field_parent: Child Field, char
 
 
 
@@ -1354,7 +1311,7 @@ Object: ir.default (ir.default)
 
 
 
-:field_name: Object field, char
+:field_name: Object Field, char
 
 
 
@@ -1394,7 +1351,7 @@ Object: ir.actions.report.custom (ir.actions.report.custom)
 
 :multi: On multiple doc., boolean
 
-    *If set to true, the action will not be displayed on the right toolbar of a form views.*
+    *If set to true, the action will not be displayed on the right toolbar of a form view.*
 
 
 
@@ -1476,7 +1433,7 @@ Object: ir.actions.report.xml (ir.actions.report.xml)
 
 :attachment: Save As Attachment Prefix, char
 
-    *This is the filename of the attachment to store the printing result. Keep empty to not save the printed reports. You can use python expression using the object and time variables.*
+    *This is the filename of the attachment used to store the printing result. Keep empty to not save the printed reports. You can use a python expression with the object and time variables.*
 
 
 
@@ -1536,7 +1493,7 @@ Object: ir.actions.report.xml (ir.actions.report.xml)
 
 :multi: On multiple doc., boolean
 
-    *If set to true, the action will not be displayed on the right toolbar of a form views.*
+    *If set to true, the action will not be displayed on the right toolbar of a form view.*
 
 
 
@@ -1566,7 +1523,7 @@ Object: ir.actions.report.xml (ir.actions.report.xml)
 
 :attachment_use: Reload from Attachment, boolean
 
-    *If you check this, the second time the user print with same attachment name, it returns the previour report.*
+    *If you check this, then the second time the user prints with same attachment name, it returns the previous report.*
 
 
 
@@ -1598,7 +1555,7 @@ Object: ir.actions.act_window (ir.actions.act_window)
 
 
 
-:view_type: Type of view, selection
+:view_type: View Type, selection
 
 
 
@@ -1634,7 +1591,7 @@ Object: ir.actions.act_window (ir.actions.act_window)
 
 
 
-:view_mode: Mode of view, char
+:view_mode: View Mode, char
 
 
 
@@ -1698,13 +1655,13 @@ Object: ir.actions.act_window.view (ir.actions.act_window.view)
 
 
 
-:multi: On multiple doc., boolean
+:multi: On Multiple Doc., boolean
 
-    *If set to true, the action will not be displayed on the right toolbar of a form views.*
+    *If set to true, the action will not be displayed on the right toolbar of a form view.*
 
 
 
-:view_mode: Type of view, selection, required
+:view_mode: View Type, selection, required
 
 
 
@@ -1726,13 +1683,13 @@ Object: ir.actions.wizard (ir.actions.wizard)
 
 
 
-:multi: Action on multiple doc., boolean
+:multi: Action on Multiple Doc., boolean
 
-    *If set to true, the wizard will not be displayed on the right toolbar of a form views.*
+    *If set to true, the wizard will not be displayed on the right toolbar of a form view.*
 
 
 
-:name: Wizard info, char, required
+:name: Wizard Info, char, required
 
 
 
@@ -1744,7 +1701,13 @@ Object: ir.actions.wizard (ir.actions.wizard)
 
 
 
-:wiz_name: Wizard name, char, required
+:wiz_name: Wizard Name, char, required
+
+
+
+
+
+:usage: Action Usage, char
 
 
 
@@ -1756,7 +1719,7 @@ Object: ir.actions.wizard (ir.actions.wizard)
 
 
 
-:type: Action type, char, required
+:type: Action Type, char, required
 
 
 
@@ -1766,7 +1729,7 @@ Object: ir.actions.url (ir.actions.url)
 
 
 
-:url: Action Url, text, required
+:url: Action URL, text, required
 
 
 
@@ -1824,43 +1787,49 @@ Object: ir.actions.server (ir.actions.server)
 
 :code: Python Code, text
 
-    *python code to be execute*
+    *Python code to be executed*
 
 
 
 :sequence: Sequence, integer
 
-    *Important when you deal with the multi action, the execution order will be decided based on this, low number higher priority*
+    *Important when you deal with multiple actions, the execution order will be decided based on this, low number is higher priority.*
 
 
 
 :write_id: Write Id, char
 
-    *Provide the field name from where the record id refer for the write operation, if its empty it will refer to the active id of the object*
+    *Provide the field name that the record id refers to for the write operation. If it is empty it will refer to the active id of the object.*
 
 
 
 :message: Message, text
 
-    *Specify the Message, you can use the fields from the object. like `Dear [[ object.partner_id.name ]]`*
+    *Specify the message. You can use the fields from the object. e.g. `Dear [[ object.partner_id.name ]]`*
+
+
+
+:email_server: Email Server, many2one
+
+
 
 
 
 :subject: Subject, char
 
-    *Specify the subject, you can use the fields from the object. like `Hello [[ object.partner_id.name ]]`*
+    *Specify the subject. You can use fields from the object, e.g. `Hello [[ object.partner_id.name ]]`*
 
 
 
 :loop_action: Loop Action, many2one
 
-    *select the action, which will be executes. Loop action will not be avaliable inside loop*
+    *Select the action that will be executed. Loop action will not be avaliable inside loop.*
 
 
 
 :trigger_obj_id: Trigger On, many2one
 
-    *select the object from the model on which the workflow will execute*
+    *Select the object from the model on which the workflow will executed.*
 
 
 
@@ -1870,15 +1839,21 @@ Object: ir.actions.server (ir.actions.server)
 
 
 
-:wkf_model_id: Workflow on, many2one
+:wkf_model_id: Workflow On, many2one
 
-    *Workflow to be execute on which model*
+    *Workflow to be executed on this model.*
 
 
 
 :state: Action Type, selection, required
 
-    *Type of the Action that is to be execute*
+    *Type of the Action that is to be executed*
+
+
+
+:sms_server: SMS Server, many2one
+
+
 
 
 
@@ -1896,23 +1871,23 @@ Object: ir.actions.server (ir.actions.server)
 
 :email: Email Address, char
 
-    *provides the fiels that will refer to the tiny to fetch the email address, i.e. you select the invoice, then `object.invoice_address_id.email` is the field which give the correct address*
+    *Provides the fields that will be used to fetch the email address, e.g. when you select the invoice, then `object.invoice_address_id.email` is the field which gives the correct address*
 
 
 
 :action_id: Client Action, many2one
 
-    *Select the Ation Window, Report, Wizard to be execute*
+    *Select the Action Window, Report, Wizard to be executed.*
 
 
 
 :model_id: Object, many2one, required
 
-    *select the obect on which the action will work (read, write, create)*
+    *Select the object on which the action will work (read, write, create).*
 
 
 
-:child_ids: Others Actions, many2many
+:child_ids: Other Actions, many2many
 
 
 
@@ -1920,29 +1895,35 @@ Object: ir.actions.server (ir.actions.server)
 
 :record_id: Create Id, many2one
 
-    *Provide the field name from where the record id stores after the create operations, if its empty, you can not track the new record*
+    *Provide the field name where the record id is stored after the create operations. If it is empty, you can not track the new record.*
 
 
 
 :srcmodel_id: Model, many2one
 
-    *In which object you want to create / write the object if its empty refer to the Object field*
+    *Object in which you want to create / write the object. If it is empty then refer to the Object field.*
 
 
 
 :trigger_name: Trigger Name, selection
 
-    *Select the Signal name that is to be*
+    *Select the Signal name that is to be used as the trigger.*
+
+
+
+:dm_action: Action, boolean
+
+
 
 
 
 :condition: Condition, char, required
 
-    *Condition that is to be test before execute action,  i.e : object.list_price > object.cost_price*
+    *Condition that is to be tested before action is executed, e.g. object.list_price > object.cost_price*
 
 
 
-:fields_lines: Fields Mapping, one2many
+:fields_lines: Field Mappings., one2many
 
 
 
@@ -1950,23 +1931,29 @@ Object: ir.actions.server (ir.actions.server)
 
 :name: Action Name, char, required
 
-    *Easy to Refer action by name i.e. One Sales Order -> Many Invoice*
+    *Easy to Refer action by name e.g. One Sales Order -> Many Invoices*
 
 
 
 :mobile: Mobile No, char
 
-    *provides the fiels that will refer to the tiny to fetch the mobile number, i.e. you select the invoice, then `object.invoice_address_id.mobile` is the field which give the correct mobile number*
+    *Provides fields that be used to fetch the mobile number, e.g. you select the invoice, then `object.invoice_address_id.mobile` is the field which gives the correct mobile number*
 
 
 
 :expression: Loop Expression, char
 
-    *enter the field/expression that will return the list, i.e. select the sale order in Object, and we can have loop on sales order line. Expression = `object.order_line`*
+    *Enter the field/expression that will return the list. E.g. select the sale order in Object, and you can have loop on the sales order line. Expression = `object.order_line`.*
 
 
 Object: ir.actions.act_window_close (ir.actions.act_window_close)
 #################################################################
+
+
+
+:usage: Action Usage, char
+
+
 
 
 
@@ -1976,7 +1963,7 @@ Object: ir.actions.act_window_close (ir.actions.act_window_close)
 
 
 
-:name: Action Name, char
+:name: Action Name, char, required
 
 
 
@@ -2120,7 +2107,7 @@ Object: ir.report.custom (ir.report.custom)
 
 
 
-:title: Report title, char, required
+:title: Report Title, char, required
 
 
 
@@ -2184,7 +2171,7 @@ Object: ir.report.custom.fields (ir.report.custom.fields)
 
 
 
-:groupby: Group by, boolean
+:groupby: Group By, boolean
 
 
 
@@ -2262,25 +2249,25 @@ Object: ir.report.custom.fields (ir.report.custom.fields)
 
 
 
-:field_child1: field child1, many2one
+:field_child1: Field child1, many2one
 
 
 
 
 
-:field_child0: field child0, many2one, required
+:field_child0: Field child0, many2one, required
 
 
 
 
 
-:field_child3: field child3, many2one
+:field_child3: Field child3, many2one
 
 
 
 
 
-:field_child2: field child2, many2one
+:field_child2: Field child2, many2one
 
 
 
@@ -2292,7 +2279,7 @@ Object: ir.report.custom.fields (ir.report.custom.fields)
 
 
 
-:cumulate: Cumulate, boolean
+:cumulate: Accumulate, boolean
 
 
 
@@ -2362,6 +2349,12 @@ Object: ir.attachment (ir.attachment)
 
 
 
+:vt_url: VirusTotal URL, char, readonly
+
+
+
+
+
 :file_size: File Size, integer, required
 
 
@@ -2393,6 +2386,12 @@ Object: ir.attachment (ir.attachment)
 
 
 :parent_id: Directory, many2one
+
+
+
+
+
+:vt_status: VirusTotal status, selection, readonly
 
 
 
@@ -2446,6 +2445,12 @@ Object: ir.attachment (ir.attachment)
 
 
 
+:vt_status_pict: unknown, picture, readonly
+
+
+
+
+
 :group_ids: Groups, many2many
 
 
@@ -2458,13 +2463,13 @@ Object: ir.attachment (ir.attachment)
 
 
 
-:datas_fname: Filename, char
-
-
-
-
-
 :datas: File Content, binary
+
+
+
+
+
+:datas_fname: Filename, char
 
 
 
@@ -2504,14 +2509,14 @@ Object: ir.cron (ir.cron)
 
 
 
-:numbercall: Number of calls, integer
+:numbercall: Number of Calls, integer
 
     *Number of time the function is called,
     a negative number indicates that the function will always be called*
 
 
 
-:nextcall: Next call date, datetime, required
+:nextcall: Next Call Date, datetime, required
 
 
 
@@ -2524,7 +2529,7 @@ Object: ir.cron (ir.cron)
 
 
 
-:doall: Repeat missed, boolean
+:doall: Repeat Missed, boolean
 
 
 
@@ -2624,7 +2629,7 @@ Object: ir.values (ir.values)
 
 
 
-:meta_unpickle: Meta Datas, text
+:meta_unpickle: Metadata, text
 
 
 
@@ -2680,7 +2685,7 @@ Object: ir.exports (ir.exports)
 
 
 
-:export_fields: Export Id, one2many
+:export_fields: Export ID, one2many
 
 
 
@@ -2692,7 +2697,7 @@ Object: ir.exports (ir.exports)
 
 
 
-:name: Export name, char
+:name: Export Name, char
 
 
 
@@ -2702,13 +2707,13 @@ Object: ir.exports.line (ir.exports.line)
 
 
 
-:export_id: Exportation, many2one
+:export_id: Export, many2one
 
 
 
 
 
-:name: Field name, char
+:name: Field Name, char
 
 
 
@@ -2806,13 +2811,13 @@ Object: workflow.activity (workflow.activity)
 
 
 
-:out_transitions: Outgoing transitions, one2many
+:out_transitions: Outgoing Transitions, one2many
 
 
 
 
 
-:in_transitions: Incoming transitions, one2many
+:in_transitions: Incoming Transitions, one2many
 
 
 
@@ -2984,7 +2989,7 @@ Object: ir.rule.group (ir.rule.group)
 
 :global: Global, boolean
 
-    *Make the rule global or it needs to be put on a group or user*
+    *Make the rule global, otherwise it needs to be put on a group or user*
 
 
 
@@ -3156,7 +3161,7 @@ Object: Module Repository (ir.module.repository)
 
 
 
-:url: Url, char, required
+:url: URL, char, required
 
 
 
@@ -3166,7 +3171,7 @@ Object: Module Repository (ir.module.repository)
 
     *Regexp to search module on the repository webpage:
     - The first parenthesis must match the name of the module.
-    - The second parenthesis must match all the version number.
+    - The second parenthesis must match the whole version number.
     - The last parenthesis must match the extension of the module.*
 
 
@@ -3199,13 +3204,13 @@ Object: Module Category (ir.module.category)
 
 
 
-:module_nr: # of Modules, integer, readonly
+:module_nr: Number of Modules, integer, readonly
 
 
 
 
 
-:child_ids: Parent Category, one2many
+:child_ids: Child Categories, one2many
 
 
 
@@ -3311,7 +3316,7 @@ Object: Module (ir.module.module)
 
 
 
-:shortdesc: Short description, char, readonly
+:shortdesc: Short Description, char, readonly
 
 
 
@@ -3374,7 +3379,7 @@ Object: Country (res.country)
 
 
 
-:payment_methods: Payment Methods, many2many
+:payment_method_ids: Payment Methods, many2many
 
 
 
@@ -3404,7 +3409,7 @@ Object: Country state (res.country.state)
 
 :code: State Code, char, required
 
-
+    *The state code in three chars.*
 
 
 
@@ -3415,12 +3420,6 @@ Object: Country state (res.country.state)
 
 
 :name: State Name, char, required
-
-
-
-
-
-:city_ids: Cities, one2many
 
 
 
@@ -3496,6 +3495,12 @@ Object: Bank (res.bank)
 
 
 
+:clearing: Clearing number, char
+
+
+
+
+
 :active: Active, boolean
 
 
@@ -3518,13 +3523,19 @@ Object: Function of the contact (res.partner.function)
 
 
 
-:code: Code, char
+:code: Code, char, required
 
 
 
 
 
-:name: Position name, char, required
+:ref: Notes, char
+
+
+
+
+
+:name: Function Name, char, required
 
 
 
@@ -3534,7 +3545,7 @@ Object: Payment term (res.payterm)
 
 
 
-:name: Payment term (short name), char
+:name: Payment Term (short name), char
 
 
 
@@ -3550,7 +3561,7 @@ Object: Partner Categories (res.partner.category)
 
 
 
-:child_ids: Childs Category, one2many
+:child_ids: Child Categories, one2many
 
 
 
@@ -3562,7 +3573,7 @@ Object: Partner Categories (res.partner.category)
 
 
 
-:complete_name: Name, char, readonly
+:complete_name: Full Name, char, readonly
 
 
 
@@ -3570,7 +3581,7 @@ Object: Partner Categories (res.partner.category)
 
 :active: Active, boolean
 
-    *The active field allows you to hide the category, without removing it.*
+    *The active field allows you to hide the category without removing it.*
 
 
 
@@ -3581,6 +3592,12 @@ Object: Partner Categories (res.partner.category)
 
 Object: res.partner.title (res.partner.title)
 #############################################
+
+
+
+:gender_id: Gender, many2one
+
+
 
 
 
@@ -3606,9 +3623,9 @@ Object: Partner (res.partner)
 
 
 
-:ean13: EAN13, char
+:ean13: EAN, char
 
-
+    *Barcode number for EAN8 EAN13 UPC JPC GTIN*
 
 
 
@@ -3618,19 +3635,19 @@ Object: Partner (res.partner)
 
 
 
+:excise: Exices Number, char
+
+
+
+
+
 :ref_companies: Companies that refers to partner, one2many
 
 
 
 
 
-:canal_id: Favourite Channel, many2one
-
-
-
-
-
-:sender_name: Sender Name, char
+:fleets: Fleets, one2many
 
 
 
@@ -3648,13 +3665,13 @@ Object: Partner (res.partner)
 
 
 
-:name_official: Official Name, char
-
-
-
-
-
 :title: Title, selection
+
+
+
+
+
+:vat_no: VAT Number, char
 
 
 
@@ -3672,25 +3689,13 @@ Object: Partner (res.partner)
 
 
 
-:alert_membership: Membership Alert, boolean
+:decoy_for_campaign: Used for Campaigns, boolean
 
-    *Partners description to be shown when inserting new ship sale*
-
-
-
-:alert_advertising: Adv.Alert, boolean
-
-    *Partners description to be shown when inserting new advertising sale*
+    *Define if this decoy address can be used with campaigns*
 
 
 
-:asker_name: Asker Name, char
-
-
-
-
-
-:import_procent: Import (%), integer
+:client_media_ids: Client for Media, many2many
 
 
 
@@ -3702,9 +3707,21 @@ Object: Partner (res.partner)
 
 
 
+:number: Number, char, readonly
+
+
+
+
+
 :property_stock_supplier: Supplier Location, many2one
 
     *This stock location will be used, instead of the default one, as the source location for goods you receive from the current partner*
+
+
+
+:language_ids: Other Languages, many2many
+
+
 
 
 
@@ -3714,15 +3731,15 @@ Object: Partner (res.partner)
 
 
 
-:export_year: Export date, date
-
-    *year of the export_procent value*
-
-
-
 :name: Name, char, required
 
 
+
+
+
+:decoy_external_ref: External Reference, char
+
+    *The reference of the decoy address for the owner*
 
 
 
@@ -3734,13 +3751,13 @@ Object: Partner (res.partner)
 
 :property_delivery_carrier: Delivery Method, many2one
 
-    *This delivery method will be used when invoicing from packings.*
+    *This delivery method will be used when invoicing from packing.*
 
 
 
 :property_account_receivable: Account Receivable, many2one, required
 
-    *This account will be used, instead of the default one, as the receivable account for the current partner*
+    *This account will be used instead of the default one as the receivable account for the current partner*
 
 
 
@@ -3750,25 +3767,13 @@ Object: Partner (res.partner)
 
 
 
-:article_ids: Articles, many2many
+:decoy_for_renting: Used for File Renting, boolean
+
+    *Define if this decoy address can be used with used with customers files renting*
 
 
 
-
-
-:dir_exclude: Dir. exclude, boolean
-
-    *Exclusion from the Members directory*
-
-
-
-:alert_others: Other alert, boolean
-
-    *Partners description to be shown when inserting new sale not treated by _advertising, _events, _legalisations, _Membership*
-
-
-
-:asker_zip_id: Asker Zip Code, many2one
+:div: Division, char
 
 
 
@@ -3783,36 +3788,6 @@ Object: Partner (res.partner)
 :logo: Logo, binary
 
 
-
-
-
-:name_old: Former Name, char
-
-
-
-
-
-:activity_description: Activity Description, text
-
-
-
-
-
-:alert_events: Event Alert, boolean
-
-    *Partners description to be shown when inserting new subscription to a meeting*
-
-
-
-:invoice_special: Invoice Special, boolean
-
-
-
-
-
-:state_id2: Customer State, many2one
-
-    *status of the partner as a customer*
 
 
 
@@ -3834,15 +3809,9 @@ Object: Partner (res.partner)
 
 
 
-:picking_warn: Stock Picking, boolean
+:picking_warn: Stock Picking, selection
 
-
-
-
-
-:import_year: Import Date, date
-
-    *year of the import_procent value*
+    *Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.*
 
 
 
@@ -3858,13 +3827,7 @@ Object: Partner (res.partner)
 
 
 
-:agent_id: Sale Agent, many2one
-
-
-
-
-
-:address: Addresses, one2many
+:address: Contacts, one2many
 
 
 
@@ -3876,15 +3839,9 @@ Object: Partner (res.partner)
 
 
 
-:dir_date_publication: Publication Date, date
+:cst_no: CST Number, char
 
 
-
-
-
-:wall_exclusion: Not in Walloon DB, boolean
-
-    *exclusion of this partner from the walloon database*
 
 
 
@@ -3894,25 +3851,7 @@ Object: Partner (res.partner)
 
 
 
-:country: Country, many2one
-
-
-
-
-
-:invoice_nbr: Nbr of invoice to print, integer
-
-    *number of additive invoices to be printed for this customer*
-
-
-
-:invoice_paper: Bank Transfer Type, selection
-
-
-
-
-
-:awex_eligible: AWEX Eligible, selection
+:state_ids: Allowed States, many2many
 
 
 
@@ -3920,31 +3859,25 @@ Object: Partner (res.partner)
 
 :credit: Total Receivable, float, readonly
 
-    *Total amount this customer owns you.*
+    *Total amount this customer owes you.*
 
 
 
-:country_relation: Country Relation, one2many
-
-
-
-
-
-:signature: Signature, binary
+:range: Range, char
 
 
 
 
 
-:invoice_public: Invoice Public, boolean
+:ser_tax: Service Tax Number, char
 
 
 
 
 
-:employee_nbr: Nbr of Employee (Area), integer
+:magento_id: Magento partner id, integer
 
-    *Nbr of Employee in the area of the CCI*
+
 
 
 
@@ -3954,15 +3887,21 @@ Object: Partner (res.partner)
 
 
 
-:fleets: Fleets, one2many
+:sale_warn: Sale Order, selection
+
+    *Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.*
 
 
 
+:decoy_owner: Decoy Address Owner, many2one
+
+    *The partner this decoy address belongs to*
 
 
-:purchase_warn: Purchase Order, boolean
 
+:purchase_warn: Purchase Order, selection
 
+    *Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.*
 
 
 
@@ -3978,19 +3917,13 @@ Object: Partner (res.partner)
 
 
 
-:number: Number, char, readonly
+:dm_contact_id: Address To Use, many2one
 
 
 
 
 
 :header: Header (.odt), binary
-
-
-
-
-
-:asker_address: Asker Address, char
 
 
 
@@ -4004,25 +3937,13 @@ Object: Partner (res.partner)
 
 :property_invoice_type: Invoicing Method, many2one
 
-    *The type of journal used for sales and packings.*
-
-
-
-:alert_legalisations: Legal. Alert, boolean
-
-    *Partners description to be shown when inserting new legalisation*
+    *The type of journal used for sales and packing.*
 
 
 
 :city: City, char
 
 
-
-
-
-:dir_date_last: Partner Data Date, date
-
-    *Date of latest update of the partner data by itself (via paper or Internet)*
 
 
 
@@ -4038,7 +3959,7 @@ Object: Partner (res.partner)
 
 
 
-:magazine_subscription: Magazine subscription, selection
+:partner_ids: Parent Companies, one2many
 
 
 
@@ -4068,19 +3989,19 @@ Object: Partner (res.partner)
 
 
 
-:activity_code_ids: Activity Codes, one2many
-
-
-
-
-
 :answers_ids: Answers, many2many
 
 
 
 
 
-:alert_explanation: Warning, text
+:participation_ids: Participations, one2many
+
+
+
+
+
+:esale_oscom_id: OScommerce Id, integer
 
 
 
@@ -4092,27 +4013,9 @@ Object: Partner (res.partner)
 
 
 
-:date_founded: Founding Date, date
-
-    *Date of foundation of this company*
-
-
-
-:employee_nbr_total: Nbr of Employee (Tot), integer
-
-    *Nbr of Employee all around the world*
-
-
-
 :purchase_warn_msg: Message for Purchase Order, text
 
 
-
-
-
-:dir_date_accept: Good to shoot Date, date
-
-    *Date of last acceptation of Bon a Tirer*
 
 
 
@@ -4122,7 +4025,7 @@ Object: Partner (res.partner)
 
 
 
-:state_ids: Allowed States, many2many
+:country: Country, many2one
 
 
 
@@ -4131,12 +4034,6 @@ Object: Partner (res.partner)
 :membership_stop: Stop membership date, date, readonly
 
 
-
-
-
-:state_id: Partner State, many2one
-
-    *status of activity of the partner*
 
 
 
@@ -4152,7 +4049,13 @@ Object: Partner (res.partner)
 
 
 
-:relation_ids: Partner Relation, one2many
+:relation_ids: Relations, one2many
+
+
+
+
+
+:prospect_media_ids: Prospect for Media, many2many
 
 
 
@@ -4164,27 +4067,27 @@ Object: Partner (res.partner)
 
 
 
-:dir_presence: Dir. Presence, boolean
+:decoy_address: Decoy Address, boolean
 
-    *Present in the directory of the members*
-
-
-
-:invoice_warn: Invoice, boolean
+    *A decoy address is an address used to identify unleagal uses of a customers file*
 
 
+
+:pan_no: PAN Number, char
+
+
+
+
+
+:invoice_warn: Invoice, selection
+
+    *Selecting the "Warning" option will notify user with the message, Selecting "Blocking Message" will throw an exception with the message and block the flow. The Message has to be written in the next field.*
 
 
 
 :property_account_payable: Account Payable, many2one, required
 
-    *This account will be used, instead of the default one, as the payable account for the current partner*
-
-
-
-:insurer_id: Insurer ID, char
-
-
+    *This account will be used instead of the default one as the payable account for the current partner*
 
 
 
@@ -4194,9 +4097,9 @@ Object: Partner (res.partner)
 
 
 
-:training_authorization: Checks Auth., char
+:turnover_id: Turnover, one2many
 
-    *Formation and Language Checks Authorization number*
+
 
 
 
@@ -4206,27 +4109,9 @@ Object: Partner (res.partner)
 
 
 
-:refuse_membership: Refuse to Become a Member, boolean
-
-
-
-
-
 :associate_member: Associate member, many2one
 
 
-
-
-
-:dir_name2: 1st Shortcut name , char
-
-    *First shortcut in the members directory, pointing to the dir_name field*
-
-
-
-:dir_name3: 2nd Shortcut name , char
-
-    *Second shortcut*
 
 
 
@@ -4242,13 +4127,19 @@ Object: Partner (res.partner)
 
 
 
-:export_procent: Export(%), integer
+:signature: Signature, binary
 
 
 
 
 
 :property_product_pricelist_customer: Customer Pricelist, many2one
+
+
+
+
+
+:decoy_media_ids: decoy address for Media, many2many
 
 
 
@@ -4263,12 +4154,6 @@ Object: Partner (res.partner)
 :lang: Language, selection
 
     *If the selected language is loaded in the system, all documents related to this partner will be printed in this language. If not, it will be english.*
-
-
-
-:dir_name: Name in Member Dir., char
-
-    *Name under wich the partner will be inserted in the members directory*
 
 
 
@@ -4290,21 +4175,9 @@ Object: Partner (res.partner)
 
 
 
-:membership_vcs: VCS number for membership offer, char, readonly
-
-
-
-
-
-:magazine_subscription_source: Mag. Subscription Source, char
-
-
-
-
-
 :property_payment_term: Payment Term, many2one
 
-    *This payment term will be used, instead of the default one, for the current partner*
+    *This payment term will be used instead of the default one for the current partner*
 
 
 
@@ -4315,12 +4188,6 @@ Object: Partner (res.partner)
 
 
 :category_id: Categories, many2many
-
-
-
-
-
-:sale_warn: Sale Order, boolean
 
 
 
@@ -4354,6 +4221,12 @@ Object: Partner Addresses (res.partner.address)
 
 
 
+:zarafa_id: Z-Id, char
+
+
+
+
+
 :street: Street, char
 
 
@@ -4366,7 +4239,7 @@ Object: Partner Addresses (res.partner.address)
 
 
 
-:city: City, char, readonly
+:city: City, char
 
 
 
@@ -4378,7 +4251,13 @@ Object: Partner Addresses (res.partner.address)
 
 
 
-:zip: Zip, char, readonly
+:name_complement: Name Complement, char
+
+
+
+
+
+:zip: Zip, char
 
 
 
@@ -4390,25 +4269,7 @@ Object: Partner Addresses (res.partner.address)
 
 
 
-:country_id: Country, many2one, readonly
-
-
-
-
-
-:state: Code, selection
-
-
-
-
-
-:location: Location, many2one
-
-
-
-
-
-:zip_id: Zip, many2one
+:country_id: Country, many2one
 
 
 
@@ -4438,7 +4299,25 @@ Object: Partner Addresses (res.partner.address)
 
 
 
+:firstname: First Name, char
+
+
+
+
+
 :street2: Street2, char
+
+
+
+
+
+:street3: Street3, char
+
+
+
+
+
+:street4: Street4, char
 
 
 
@@ -4456,21 +4335,15 @@ Object: Partner Addresses (res.partner.address)
 
 
 
-:answers_ids: Answers, many2many
-
-
-
-
-
 :job_ids: Contacts, one2many
 
 
 
 
 
-:sequence_partner: Sequence (Partner), integer
+:esale_oscom_id: OScommerce Id, integer
 
-    *order of importance of this address in the list of addresses of the linked partner*
+
 
 
 
@@ -4498,7 +4371,7 @@ Object: Partner Addresses (res.partner.address)
 
 
 
-:state_id: State, many2one, readonly
+:state_id: Fed. State, many2one
 
 
 
@@ -4548,13 +4421,13 @@ Object: Bank type fields (res.partner.bank.type.field)
 
 
 
-:name: Field name, char, required
+:name: Field Name, char, required
 
 
 
 
 
-:bank_type_id: Bank type, many2one, required
+:bank_type_id: Bank Type, many2one, required
 
 
 
@@ -4564,7 +4437,7 @@ Object: Bank Accounts (res.partner.bank)
 
 
 
-:city: City, char
+:post_number: Post number, char
 
 
 
@@ -4576,13 +4449,13 @@ Object: Bank Accounts (res.partner.bank)
 
 
 
-:owner_name: Account owner, char
+:owner_name: Account Owner, char
 
 
 
 
 
-:name: Description, char
+:name: Description, char, required
 
 
 
@@ -4600,19 +4473,25 @@ Object: Bank Accounts (res.partner.bank)
 
 
 
-:default_bank: Default, boolean
-
-
-
-
-
 :country_id: Country, many2one
 
 
 
 
 
-:state: Bank type, selection, required
+:dta_code: DTA code, char
+
+
+
+
+
+:default_bank: Default, boolean
+
+
+
+
+
+:state: Bank Type, selection, required
 
 
 
@@ -4636,7 +4515,25 @@ Object: Bank Accounts (res.partner.bank)
 
 
 
+:bvr_number: BVR account number, char
+
+
+
+
+
+:acc_number: Account Number, char
+
+
+
+
+
 :partner_id: Partner, many2one, required
+
+
+
+
+
+:city: City, char
 
 
 
@@ -4648,7 +4545,7 @@ Object: Bank Accounts (res.partner.bank)
 
 
 
-:acc_number: Account number, char
+:bvr_adherent_num: BVR adherent number, char
 
 
 
@@ -4830,7 +4727,7 @@ Object: Currency (res.currency)
 
 
 
-:rate: Current rate, float, readonly
+:rate: Current Rate, float, readonly
 
     *The rate of the currency to the currency of rate 1*
 
@@ -4904,6 +4801,12 @@ Object: res.company (res.company)
 
 
 
+:user_provider: Providers, many2one
+
+
+
+
+
 :logo: Logo, binary
 
 
@@ -4928,6 +4831,12 @@ Object: res.company (res.company)
 
 
 
+:user_customer: Customers, many2one
+
+
+
+
+
 :timesheet_range: Timeshet range, selection
 
 
@@ -4946,15 +4855,27 @@ Object: res.company (res.company)
 
 
 
-:federation_key: ID for the Federation, char
+:bvr_delta_horz: BVR Horz. Delta (mm), float
 
-    *ID key for the sending of data to the belgian CCI's Federation*
-
-
-
-:child_ids: Childs Company, one2many
+    *horiz. delta in mm 1.2 will print the bvz 1.2mm lefter*
 
 
+
+:child_ids: Child Companies, one2many
+
+
+
+
+
+:user_computer: Computers, many2one
+
+
+
+
+
+:bvr_delta_vert: BVR Vert. Delta (mm), float
+
+    *vert. delta in mm 1.2 will print the bvz 1.2mm lefter*
 
 
 
@@ -5057,7 +4978,7 @@ Object: res.roles (res.roles)
 
 
 
-:child_id: Childs, one2many
+:child_id: Children, one2many
 
 
 
@@ -5079,12 +5000,6 @@ Object: res.users (res.users)
 
 
 
-:menu_id: Menu Action, many2one
-
-
-
-
-
 :groups_id: Groups, many2many
 
 
@@ -5092,6 +5007,120 @@ Object: res.users (res.users)
 
 
 :address_id: Address, many2one
+
+
+
+
+
+:currency_id: Default Currency, many2one, required
+
+
+
+
+
+:blogger_email: Blogger Email Id, char
+
+
+
+
+
+:unit_test: unit_test, boolean
+
+
+
+
+
+:context_tz: Timezone, selection
+
+
+
+
+
+:google_email: Google Email Id, char
+
+
+
+
+
+:company_id: Company, many2one
+
+
+
+
+
+:zarafa_password: Zarafa password, char
+
+
+
+
+
+:rules_id: Rules, many2many
+
+
+
+
+
+:parent_id: Parent Users, many2many, readonly
+
+
+
+
+
+:email: E-Mail Address, char, required
+
+
+
+
+
+:action_id: Home Action, many2one
+
+
+
+
+
+:menu_id: Menu Action, many2one
+
+
+
+
+
+:google_password: Password, char
+
+
+
+
+
+:roles_id: Roles, many2many
+
+
+
+
+
+:blogger_password: Password, char
+
+
+
+
+
+:active: Active, boolean
+
+
+
+
+
+:password: Password, char
+
+    *Keep empty if you don't want the user to be able to connect on the system.*
+
+
+
+:zarafa_server: Zarafa server, char
+
+
+
+
+
+:zarafa_user: Zarafa user, char
 
 
 
@@ -5109,31 +5138,25 @@ Object: res.users (res.users)
 
 
 
+:created: Created, datetime
+
+
+
+
+
+:first_login: First Login, boolean, required
+
+
+
+
+
 :input_pw: Password, char
 
 
 
 
 
-:roles_id: Roles, many2many
-
-
-
-
-
-:company_id: Company, many2one
-
-
-
-
-
-:user_code: User Code, char
-
-
-
-
-
-:context_tz: Timezone, selection
+:zarafa_email: Zarafa email, char
 
 
 
@@ -5145,31 +5168,7 @@ Object: res.users (res.users)
 
 
 
-:active: Active, boolean
-
-
-
-
-
 :login: Login, char, required
-
-
-
-
-
-:password: Password, char
-
-    *Keep empty if you don't want the user to be able to connect on the system.*
-
-
-
-:action_id: Home Action, many2one
-
-
-
-
-
-:rules_id: Rules, many2many
 
 
 
@@ -5265,7 +5264,7 @@ Object: res.request (res.request)
 
 
 
-:create_date: Created date, datetime, readonly
+:create_date: Created Date, datetime, readonly
 
 
 

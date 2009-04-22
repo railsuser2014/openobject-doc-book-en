@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <href="http://openerp.tv>`_ or download 
+  `Open ERP <href="http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/analytic_user_function"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Analytic User Function (*analytic_user_function*)
 =================================================
@@ -24,12 +35,19 @@ Description
 
 ::
 
-  This module allows you to define what is the default function of a specific user on a given account. 
-  This is mostly used when a user encode his timesheet: the values are  retrieved and the fields are 
-  auto-filled... but the possibility to change these values is still available.
+  This module allows you to define what is the default function of a specific user on a given account. This is mostly used when a user encode his timesheet: the values are retrieved and the fields are auto-filled... but the possibility to change these values is still available.
   
-      Obviously if no data has been recorded for the current account, the default value 
-  is given as usual by the employee data so that this module is perfectly compatible with older configurations.
+      Obviously if no data has been recorded for the current account, the default value is given as usual by the employee data so that this module is perfectly compatible with older configurations.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/analytic_user_function.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/analytic_user_function.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/analytic_user_function.zip>`_
+
 
 Dependencies
 ------------
