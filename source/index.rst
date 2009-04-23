@@ -28,10 +28,13 @@ Open Object Documentation
 
   <br/>
   <div class="tip">
-  You will find a new integrated approach to enterprise management
-  and best development practices in these pages. These books have been best-sellers
-  on Amazon for several months. You can also have a look at our <a href="http://openerp.com/buy.html?page=shop.browse&category_id=4">printed
-  books</a>.  </div>
+  These books present a new integrated approach to enterprise management and
+  best development practices. They have been best-sellers on Amazon for several
+  months. You can also have a look at our <a
+  href="http://openerp.com/buy.html?page=shop.browse&category_id=4">printed
+  books</a>.
+  <br/>
+  We are looking for translators, <a href="http://doc.openerp.com/contribute/documentation_translation.html">read this</a> to contribute.</a>.  </div>
   <br/>
   <br/>
 
