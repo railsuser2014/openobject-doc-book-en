@@ -11,8 +11,8 @@
 
 .. tip:: This module is part of the Open ERP software, the leading Open Source 
   enterprise management system. If you want to discover Open ERP, check our 
-  `screencasts <href="http://openerp.tv>`_ or download 
-  `Open ERP <href="http://openerp.com>`_ directly.
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
 
 .. raw:: html
 
@@ -4165,7 +4165,7 @@ Object: dm.offer.document (dm.offer.document)
 
 
 
-:media_id: Media, many2one
+:media_id: Media, char
 
 
 

@@ -11,8 +11,8 @@
 
 .. tip:: This module is part of the Open ERP software, the leading Open Source 
   enterprise management system. If you want to discover Open ERP, check our 
-  `screencasts <href="http://openerp.tv>`_ or download 
-  `Open ERP <href="http://openerp.com>`_ directly.
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
 
 .. raw:: html
 
@@ -127,9 +127,9 @@ Object: Event (event.event)
 
 
 
-:create_date: Date create, datetime, readonly
+:create_date: Date created, datetime, readonly
 
-
+    *tiny event create date*
 
 
 
@@ -151,9 +151,9 @@ Object: Event (event.event)
 
 
 
-:event_modify_date: Google Modify Date, datetime
+:event_modify_date: Google Modify Date, datetime, readonly
 
-
+    *google event modify date*
 
 
 
@@ -243,7 +243,7 @@ Object: Event (event.event)
 
 :write_date: Date Modified, datetime, readonly
 
-
+    *tiny event modify date*
 
 
 

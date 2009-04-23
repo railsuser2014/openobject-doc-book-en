@@ -188,11 +188,6 @@ Module Technical Guide: Introspection report on objects
     l10n_be
     l10n_ca-qc
     l10n_ch
-    l10n_ch_chart_c2c_pcg
-    l10n_ch_vat_brut
-    l10n_ch_vat_forfait
-    l10n_ch_vat_net
-    l10n_ch_zip_and_bank
     l10n_chart_at
     l10n_chart_au
     l10n_chart_be_frnl
@@ -228,6 +223,11 @@ Module Technical Guide: Introspection report on objects
     l10n_chart_us_ucoa
     l10n_chart_us_ucoa_ez
     l10n_chart_ve
+    l10n_ch_chart_c2c_pcg
+    l10n_ch_vat_brut
+    l10n_ch_vat_forfait
+    l10n_ch_vat_net
+    l10n_ch_zip_and_bank
     l10n_fr
     l10n_fr_account_generation
     l10n_fr_export
@@ -290,6 +290,7 @@ Module Technical Guide: Introspection report on objects
     product_extended
     product_gtin
     product_index
+    productivity_analysis
     product_listprice_upgrade
     product_lot_foundry
     product_margin
@@ -300,7 +301,6 @@ Module Technical Guide: Introspection report on objects
     product_variant_configurator
     product_variant_multi
     product_visible_discount
-    productivity_analysis
     profile_accounting
     profile_ampco
     profile_association
@@ -369,12 +369,12 @@ Module Technical Guide: Introspection report on objects
     sale_payment
     sale_product_multistep_configurator
     sale_rebate
+    sales_purchase_seq
+    sales_server_action
     sale_supplier_direct_delivery
     sale_tax_include
     sale_wo_prices
     sale_wo_production
-    sales_purchase_seq
-    sales_server_action
     sandwich
     scrum
     segmentation
