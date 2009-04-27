@@ -196,7 +196,7 @@ have account values in them that were taken from the account properties you just
 You don't have to accept those values: you can enter any suitable account you like at this stage, 
 although Open ERP constrains the selection to ones that make accounting sense.
 
-Back at the first tab, :guilabel:`General`change  any other fields you like, 
+Back at the first tab, :guilabel:`General` change any other fields you like, 
 such as the address and phone numbers, then :guilabel:`Save`. This
 changes one Contact for the Partner, which is sufficient for the example.
 
@@ -225,7 +225,7 @@ and you can upload a company logo of a specific size for the reports. Click :gui
 
    *Changing company details*
 
-You can leave the currency at its default setting of \ ``EUR``\ for this example. Or you can
+You can leave the currency at its default setting of \ ``EUR`` \ for this example. Or you can
 change it in this Company and the two default Pricelists (:menuselection:`Products --> Pricelists --> Pricelists`) if
 you feel compelled to do that.
 
@@ -246,7 +246,7 @@ You'll now create a suppliers category and a customers category. Partner categor
 organizing groups of partners but have no special behavior that affects partners, so you can assign
 them as you like. Then you'll define one supplier and one customer, with a contact for each.
 
-To do this use the menu :menuselection:`Partners --> Configuration --> Partner Categories`and
+To do this use the menu :menuselection:`Partners --> Configuration --> Partner Categories` and
 click :guilabel:`New` to open a new form for defining :guilabel:`Partner Categories`.
 Define the two categories that follow by just entering their :guilabel:`Category Name` and saving
 them:

@@ -92,7 +92,8 @@ Tracking phone calls
 --------------------
 
 Open ERP has functions to manage a telephone call centre. If,
- hen you installed the CRM module, you selected the option for calls you'll be able to manage incoming and outgoing calls.
+when you installed the CRM module, you selected the option for calls 
+you'll be able to manage incoming and outgoing calls.
 
 Call management can be used for two particular needs:
 
@@ -140,11 +141,14 @@ Advanced Customer Relations
 Open ERP also supplies several tools to improve and automate relationships with partners. They won't
 be described extensively here, just introduced briefly.
 
+.. index::
+   single: modules; portal_
+
 The supplier/customer portal gives you the ability to provide your suppliers and customers with
 constrained access to Open ERP. They will then be able to view or enter sets of information directly
 online to Open ERP. For example they could enter their orders, reprint their invoices, or work on
 communal projects. To activate the portal you should install the modules that start with the
-string ``portal_...``.
+string :mod:`portal_`.
 
 The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for
 the email gateway are available in the :mod:`crm` module in the ``scripts`` subdirectory.
