@@ -11,22 +11,42 @@
   </p>
 
   <form action="" method="get">
-    <select id="search_sections" name="sections" multiple="1" size="3">
-      <option value="">All</option>
-      <option value="technical_guide">Module Index</option>
-      <option value="contribute">Community Book</option>
-      <option value="book">Open ERP Book</option>
-      <option value="install">Installation Manual</option>s
-      <option value="bi">Business Intelligence</option>
-      <option value="features">Open ERP Features</option>
-      <option value="developer">Developer Book</option>
-    </select>
-    <br />
-    <input type="text" name="q" value="" />
-    <input type="submit" value="{{ _('search') }}" />
-    <span class="search-exclude-tip">
-      {% trans %}If you want to exclude a word from the search<br /> results, prepend it with a dash. (eg.: -network){% endtrans %}
-    </span>
+  <table border="0">
+    <tr>
+      <td class="search-type">
+        <span>Sections:</span>
+      </td>
+      <td>
+        <select id="search_sections" name="sections" multiple="1" size="5">
+          <option value="">All</option>
+          <option value="technical_guide">Module Index</option>
+          <option value="contribute">Community Book</option>
+          <option value="book">Open ERP Book</option>
+          <option value="install">Installation Manual</option>s
+          <option value="bi">Business Intelligence</option>
+          <option value="features">Open ERP Features</option>
+          <option value="developer">Developer Book</option>
+        </select>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td class="search-type">
+        <span>Query:</span>
+      </td>
+      <td style="white-space: nowrap;">
+        <input type="text" name="q" value="" />
+        <input type="submit" value="search" />
+      </td>
+      <td class="search-exclude-tip">
+        <span>
+          If you want to exclude a word from the search results, prepend it with a dash. (eg.: -network)
+        </span>
+      </td>
+    </tr>
+  </table>
+
     <span id="search-progress" style="padding-left: 10px"></span>
   </form>
 

@@ -23,12 +23,22 @@
   visibility: hidden
 }
 
-span.search-exclude-tip {
+td.search-exclude-tip {
+}
+
+td.search-exclude-tip span {
   font-size: 8pt;
   color: grey;
-  float: right;
-  position: absolute;
   padding: 8px;
+}
+
+td.search-type {
+  vertical-align: top;
+}
+
+td.search-type span {
+  font-size: 8pt;
+  color: #333;
 }
 
 span.search-section-label{
