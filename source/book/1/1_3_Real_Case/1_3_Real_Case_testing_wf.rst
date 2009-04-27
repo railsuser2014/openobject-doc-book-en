@@ -36,9 +36,9 @@ New Purchase Order` for a new Purchase Order form.
 
 Complete the following field:
 
-*  :guilabel:`Partner` : \ ``Plumbing Component Suppliers``\  .
+*  :guilabel:`Supplier` : \ ``Plumbing Component Suppliers``\  .
 
-As you complete the :guilabel:`Partner` field, Open ERP automatically completes the
+As you complete the :guilabel:`Supplier` field, Open ERP automatically completes the
 :guilabel:`Address` field and the :guilabel:`Price List` field from information it takes out of the
 Partner record. Then click on the :guilabel:`Save Parent Record.` icon to the right of
 the :guilabel:`Order Line` field. This automatically saves the body of the :guilabel:`Purchase
@@ -47,8 +47,9 @@ Order`, and changes to a :guilabel:`Create New Record.` icon. Click that to open
 
 Enter the following information
 
-*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then click the
-   :guilabel:`Search` icon at the end of the line to complete it,
+*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then 
+   press the tab key to complete it, or click the
+   :guilabel:`Search` icon at the end of the line to bring a search box,
 
 When you've selected a product on the product line, Open ERP automatically completes the following
 fields from information it finds in the Product record:
@@ -107,14 +108,14 @@ this would be somebody in Stores, who would:
 
 	#. When the :guilabel:`Packing` window appears, select the name of the entry in the list 
 	   (\ ``PACK1``\   to display the Packing List itself – you'd usually do a search for the supplier name
-	   or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
+	   or order number in a list that was larger than this – then click :guilabel:`Products Received` to load the
 	   :guilabel:`Make Packing` form.
 
 	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
 
 At this point you've accepted 10 units into your company, in a location that you've already seen.
 
-To check actual stock levels, use the menu :menuselection:`Stock Management --> Location Structure`,
+To check actual stock levels, use the menu :menuselection:`Stock Management --> Stock Locations Structure`,
 find \ ``Stock``\ in the hierarchy under :guilabel:`Physical Locations`,
 using the expand/collapse controls to make your way through
 the tree and click it. You'll next get a :guilabel:`View Stock of Products` screen, where you just
