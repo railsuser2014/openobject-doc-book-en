@@ -34,7 +34,10 @@ You'll develop a real case through the following phases:
 
 The case is deliberately extremely simple to provide you with a foundation for the more complex
 situations you'll handle in reality. Throughout this chapter it's assumed that you're accessing
-Open ERP through its web interface.
+Open ERP through its web interface. And it's also assumed (as in the rest of this book) that 
+you're using the latest download of Open ERP version 5, 
+the stable production version at the time of writing
+(not the trunk version, which is likely to have new and potentially unstable features).
 
 .. raw:: html
 
