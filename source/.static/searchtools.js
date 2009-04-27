@@ -473,7 +473,7 @@ var Search = {
         var item = results.pop();
         var listItem = $('<li style="display:none"></li>');
 
-        listItem.append($('<span style="color:red;"> (' + getSectionLabel(item[0].split('/')[0]) + ') </span>'));
+        listItem.append($('<span class="search-section-label"> (' + getSectionLabel(item[0].split('/')[0]) + ') </span>'));
 
         listItem.append($('<a/>').attr(
           'href',

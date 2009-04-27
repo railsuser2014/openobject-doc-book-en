@@ -31,6 +31,10 @@ span.search-exclude-tip {
   padding: 8px;
 }
 
+span.search-section-label{
+  color: red;
+}
+
 /*div.tiny-global-comment-area {*/
 /*  border: 1px solid black;*/
 /*  background-color: #e6e6e6;*/
