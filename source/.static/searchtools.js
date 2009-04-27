@@ -221,7 +221,7 @@ var Search = {
       var params = $.getQueryParameters();
       if (params.q) {
           var query = params.q[0];
-          var sections = params.sections;
+          var sections = params.sections || [""];
           $('input[@name="q"]')[0].value = query;
           this.performSearch(query);
       } else {
@@ -336,7 +336,7 @@ var Search = {
     $('#search-progress').empty();
 
     var params = $.getQueryParameters();
-    var sections = params.sections || [];
+    var sections = params.sections || [""];
 
     // lookup as object
     if (object != null) {
@@ -409,7 +409,7 @@ var Search = {
       // if we have still a valid result we can add it
       // to the result list
       var params = $.getQueryParameters();
-      var sections = params.sections || [];
+      var sections = params.sections || [""];
       if (valid) {
         if ( (sections.indexOf(filenames[file].split('/')[0]) > -1) || (sections.indexOf("") > -1) ) {
           regularResults.push([filenames[file], titles[file], '', null]);
@@ -443,14 +443,8 @@ var Search = {
         'features': "Open ERP Features",
         'developer': "Developer Book"
       }
-      var params = $.getQueryParameters();
-      var search_sections = params.sections;
       var label = labels[section];
-      if (!label) {
-        return section;
-      } else {
-        return label;
-      }
+      return (label) ? label : section;
     }
 
     function setPreviousSearch() {
