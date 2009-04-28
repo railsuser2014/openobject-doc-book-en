@@ -92,31 +92,27 @@ tiny_latex_include = r"""
 \geometry{papersize={189mm,246mm},top=15mm,bottom=28mm,left=15mm,right=15mm,bindingoffset=5mm}
 
 \usepackage{fancyhdr}
-\fancypagestyle{plain}{%
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancypagestyle{conclusion}{%
   \fancyhf{} % clear all header and footer fields
   \fancyfoot[LE,RO]{\bfseries \thepage}
-  %\fancyhead[RE,LO]{\thechapter}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0.4pt}
   \fancyhead[RE,LO]{}
 }
 
 \fancypagestyle{foreword}{%
   \fancyhf{} % clear all header and footer fields
-  \fancyfoot[LE,RO]{\thepage}
-  %\fancyhead[RE,LO]{\thechapter}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0.4pt}
+  \fancyfoot[LE,RO]{\bfseries \thepage}
   \fancyhead[RE,LO]{}
 }
 
-\fancyhf{} % clear all header and footer fields
-\fancyfoot[LE,RO]{\bfseries \thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0.4pt}
-
-%% \fancyhead[LE,RO]{\slshape \rightmark} %% display the section
-\fancyhead[LO,RE]{\slshape \leftmark} %% displays the chapter
+\fancypagestyle{main}{%
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[LE,RO]{\bfseries \thepage}
+  \fancyhead[LO,RE]{\slshape \leftmark} %% displays the chapter
+}
 
 \renewcommand{\chaptermark}[1]{%
   \markboth{\chaptername
