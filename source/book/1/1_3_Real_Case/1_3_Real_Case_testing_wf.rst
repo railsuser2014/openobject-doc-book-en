@@ -126,11 +126,11 @@ You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock``\
 :guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
 been made) – both \ ``10``\   in this case.
 
-Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises``\ line to highlight it
-(the line, not the \ ``Ambitious Plumbing Enterprises``\ text itself), and then click the 
+Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises`` \ line to highlight it
+(the line, not the \ ``Ambitious Plumbing Enterprises`` \ text itself), and then click the 
 :guilabel:`Lots by Location` button in the :guilabel:`Reports` to the top right of the form. 
 You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\ in the location
-\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises``\ , its parent
+\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises`` \ , its parent
 as shown in the figure :ref:`fig-lotsbyloc`.
 If you explore further you'll also see you have ``-10``\   pieces in the Partner Location \ ``Suppliers``\ .
 

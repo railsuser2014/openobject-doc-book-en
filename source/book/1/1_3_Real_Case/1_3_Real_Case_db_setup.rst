@@ -416,12 +416,12 @@ that act as their names suggest, and ``Virtual Locations`` that are used by Open
 #.	Click on the name of a location, such as \ ``Physical Locations/Tiny SPRL``\  to open a descriptive form view. Each
 	location has a :guilabel:`Location type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
 	An :guilabel:`Inventory Account` can also be assigned to a location. While you're here you should change 
-	the location's name to Ambitious Plumbing Enterprises, since it was named before you changed the
+	the location's name to ``Ambitious Plumbing Enterprises`` , since it was named before you changed the
 	company name.
 
 #.	From the :menuselection:`Main Menu` click :menuselection:`Stock Management --> Configuration
 	--> Warehouses` to view a list of warehouses. There's only the one at the moment, which
-	should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises``.
+	should also be renamed from ``Tiny SPRL`` to ``Ambitious Plumbing Enterprises`` .
 
 .. todo:: Get this, below, right!
 

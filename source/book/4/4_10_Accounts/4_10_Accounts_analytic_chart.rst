@@ -1,7 +1,7 @@
 .. index::
    pair: chart of accounts; analytic
 
-To each enterprise [his] own analytic chart
+To each enterprise [its] own analytic chart
 ===========================================
 
 To illustrate analytic accounts clearly, you'll follow three use cases, each in one of three

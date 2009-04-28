@@ -22,12 +22,20 @@ you'll have to find somebody who does have it to create this seed database.
    Anyone who knows the super-administrator password has complete access to the data on the server
    – able to read, change and delete any of the data in any of the databases there.
 
-   After first installation, the password is ``admin``. You can change it through the GTK client
+   After first installation, the password is ``admin``. This is the hard-coded default, and
+   is used if there is no accessible server configuration file. If your system has been 
+   set up so that the server configuration file can be written to by the server then
+   you can change the password through the client. Or you could deliberately make the 
+   configuration file read-only so that there is no prospect of changing it from the client.
+   Either way, a server systems administrator can change it if you forget it.
+   
+   So if your system is set u to allow it, you can change the superadmin password through the GTK client
    from the menu :menuselection:`File --> Databases --> Administrator Password`, or through the
    web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Databases` on the
-   login screen, and then clicking the :guilabel:`Password` button on the Management screen. This
-   password is stored in a configuration file outside the database, so a server systems
-   administrator can change it if you forget it.
+   login screen, and then clicking the :guilabel:`Password` button on the Management screen. 
+   
+   The location of the server configuration file is typically defined by starting the server with 
+   the ``--config`` command line option.
 
 .. figure:: images/change_superadmin_pwd.png
    :scale: 75
