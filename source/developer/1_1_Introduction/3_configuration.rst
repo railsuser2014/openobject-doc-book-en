@@ -19,7 +19,7 @@ If they are not found, the server and the client will start with the default con
 Server Configuration File
 -------------------------
 
-The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
+The server configuration file .openerp_serverrc is used to save server startup options. Here is the list of the available options:
 
 :interface:
     Address to which the server will be bound 
