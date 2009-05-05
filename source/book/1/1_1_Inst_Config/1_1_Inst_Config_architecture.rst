@@ -29,10 +29,9 @@ responsive, so more satisfying to use.
 
 .. note::   Web client and GTK client
 
-    The main functional difference between the two Open ERP clients is the
-    presence of the calendar view in the web client, which doesn't exist in the
-    GTK client at present (versions 4.x and 5.0). Apart from that you will find that
-    there are small differences in their general usability.
+    There is little functional difference between the two Open ERP clients - the 
+    web client and the GTK client at present (since early versions of 5.0). 
+    In earlier versions, the web client had fractionally greater functionality.
     
     When you're changing the structure of your Open ERP installation (adding and
     removing modules, perhaps changing labels) you'll find the web client to be

@@ -3,24 +3,23 @@ Configuration
 
 Two configuration files are available:
 
-    * one for the client: ~/.terprc
-    * one for the server: ~/.terp_serverrc 
+    * one for the client: ~/.openerprc
+    * one for the server: ~/.openerp_serverrc
 
 Those files follow the convention used by python's ConfigParser module.
 
 Lines beginning with "#" or ";" are comments.
 
-Those files are not necessary. If they are not found, the server and the client will start with the default configuration.
+The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command: ::
 
-The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command:
+  tinyerp-server.py -s
 
-tinyerp-server.py -s
+If they are not found, the server and the client will start with the default configuration.
 
-       
 Server Configuration File
 -------------------------
 
-The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
+The server configuration file .openerp_serverrc is used to save server startup options. Here is the list of the available options:
 
 :interface:
     Address to which the server will be bound 

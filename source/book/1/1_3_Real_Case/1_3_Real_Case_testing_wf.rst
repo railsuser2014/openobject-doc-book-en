@@ -126,11 +126,11 @@ You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock``\
 :guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
 been made) – both \ ``10``\   in this case.
 
-Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises``\ line to highlight it
-(the line, not the \ ``Ambitious Plumbing Enterprises``\ text itself), and then click the 
+Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises`` \ line to highlight it
+(the line, not the \ ``Ambitious Plumbing Enterprises`` \ text itself), and then click the 
 :guilabel:`Lots by Location` button in the :guilabel:`Reports` to the top right of the form. 
 You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\ in the location
-\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises``\ , its parent
+\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises`` \ , its parent
 as shown in the figure :ref:`fig-lotsbyloc`.
 If you explore further you'll also see you have ``-10``\   pieces in the Partner Location \ ``Suppliers``\ .
 
@@ -169,7 +169,7 @@ receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 Now click the invoice for your order \ ``PO001``\  to display its contents. You can compare the
 goods that you've recorded there with the invoice received from your supplier. If there's a
 difference it's possible to change the order lines to, for example, add a delivery charge. Click
-:guilabel:`Validate` to confirm the invoice and put it into the \ ``Open``\   state.
+:guilabel:`Validate` to confirm the invoice and put it into the \ ``Open`` \   state.
 
 Accounting entries are generated automatically once the invoice is validated. To see the effects on
 your chart of accounts, use the menu :menuselection:`Financial Management --> Charts --> Chart of
@@ -227,7 +227,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 
 	#. Select the :guilabel:`Customer` \ ``Smith and Offspring``\  . This has the effect of automatically
 	   completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
-	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Default Sale Pricelist``\.  They're
+	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Public Pricelist``\.  They're
 	   all only defaults so these fields can be modified as you need.
 
 	#. Click the :guilabel:`Save parent record.` icon to the right of the
@@ -307,7 +307,7 @@ Then click the :guilabel:`Packing Done` button to reach the :guilabel:`Make Pack
 you click the :guilabel:`Make Picking` button to transfer the 6 radiators to the customer.
 
 To analyze stock movements that you've made during these operations use
-:menuselection:`Stock Management --> Locations Structure` to see that your stocks have reduced to
+:menuselection:`Stock Management --> Stock Locations Structure` to see that your stocks have reduced to
 4 radiators and the generic ``Customers`` location has a level of 6 radiators.
 
 Invoicing Goods

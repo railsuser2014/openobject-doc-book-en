@@ -202,8 +202,15 @@ employees' data entry. Employees can verify their own timesheet using the follow
 	By default, Open ERP is configured to show the cost of each service when an employee encodes the
 	number of hours per project.
 	You can modify this field by adding the attribute invisible=True in the timesheet view.
+	
+	(And the way to do that is either to modify the view on the filesystem, or
+	to use the web client to modify the view in the current database.
+	For the latter, there's a pale grey :guilabel:`[CUSTOMIZE]` label
+	to the bottom left of each form that gives you access to the 
+	:guilabel:`Manage Views` option.
+	If you have sufficient permissions you can edit the XML that defines the current view.)
 
-	The value in this field shows employees the cost of their time used in the company, so masking this
+	The value in the cost field shows employees the cost of their time used in the company, so masking this
 	field might not always be the best option.
 
 Managers can draw on different reports for managing timesheets quite easily. You can print a summary

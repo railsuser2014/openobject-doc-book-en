@@ -179,7 +179,7 @@ class LatexBook(object):
                         elif rgxname == 'end_foreword':
                             new_line = '\n'.join(["",
                                                   r"\mainmatter",
-                                                  r"\pagestyle{fancy}",
+                                                  r"\pagestyle{main}",
                                                   r"\pagenumbering{arabic}",
                                                   r"\setcounter{page}{1}",
                                                   "",
@@ -190,7 +190,7 @@ class LatexBook(object):
                             part = matchobj.group('after')
                             new_line = '\n'.join(["",
                                                   r"\backmatter",
-                                                  r"\pagestyle{plain}",
+                                                  r"\pagestyle{conclusion}",
                                                   part
                                                  ])
                             self.state.in_frontmatter = False
