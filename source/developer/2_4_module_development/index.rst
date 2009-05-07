@@ -1,8 +1,13 @@
+
 =======================
 First Module to OpenERP
 =======================
 
-Open ERP is a Python based client/server program for Enterprise Resource Planning. It consist of a client "tinyerp-client" and a server "tinyerp-server" while the persistence is provided by Postgresql. Open ERP currently uses XML-RPC for communication over a network. Once installed Open ERP has a modular structure that allows modules to be added as needed. 
+Open ERP is a Python based client/server program for Enterprise Resource
+Planning. It consist of a client "openerp-client" and a server "openerp-server"
+while the persistence is provided by Postgresql. Open ERP currently uses
+XML-RPC for communication over a network. Once installed Open ERP has a
+modular structure that allows modules to be added as needed. 
 
 The Modules - Introduction
 ==========================
@@ -14,7 +19,7 @@ The usage of the modules is the way to extend Tiny ERP functionality. The defaul
     * sale : Sales Management.
     * mrp : Manufacturing Resource Planning. 
 
-New modules can be programed easily, and require a little practice of XML and Python. 
+New modules can be programed easily, and require a little practice of XML and Python.
 
 ..  toctree::
     :maxdepth: 3
@@ -22,4 +27,5 @@ New modules can be programed easily, and require a little practice of XML and Py
     4_1_module_structure
     4_2_module_descriptor
     4_3_create_module
-    4_4_createing_action  
+    4_4_createing_action
+

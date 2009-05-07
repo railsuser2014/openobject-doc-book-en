@@ -1,3 +1,4 @@
+
 Create Module
 =============
 
@@ -9,7 +10,7 @@ Creating a new module is quickly done by copying the module called "simple" or "
 As an example on Ubuntu:
 ::
 
-	$ cd /usr/lib/tinyerp-server/addons/
+	$ cd /usr/lib/openerp-server/addons/
 	$ sudo cp -r custom travel
 
 You will need to give yourself permissions over that new directory if you want to be able to modify it:
