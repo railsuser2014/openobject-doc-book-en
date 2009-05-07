@@ -1,10 +1,10 @@
 
-.. _ch-financial:
-
 .. index::
    single: Financial Analysis
    single: taxation
    single: financial reporting
+
+.. _ch-financial:
 
 ******************
 Financial Analysis
