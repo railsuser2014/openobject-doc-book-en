@@ -28,11 +28,10 @@ Open Object Documentation
 
   <br/>
   <div class="tip">
-  These books present a new integrated approach to enterprise management and
-  best development practices. They have been best-sellers on Amazon for several
-  months. You can also have a look at our <a
+  These best-sellers books present a new integrated approach to enterprise management and
+  best development practices. You can have a look at our <a
   href="http://openerp.com/buy.html?page=shop.browse&category_id=4">printed
-  books</a>.
+  books</a> or <a href="http://openerp.com/en/buy/e-book.html">PDF's version</a>.
   <br/>
   We are looking for translators, <a href="http://doc.openerp.com/contribute/documentation_translation.html">read this</a> to contribute.</a>.  </div>
   <br/>
@@ -43,7 +42,7 @@ Open Object Documentation
 
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
-  |  :ref:`Open ERP Book <books-link>`                           |  :ref:`Developer Book <book-develop-link>`       |
+  |  :ref:`Open ERP Tutorial <books-link>`                       |  :ref:`Developer Book <book-develop-link>`       |
   |                                                              |                                                  |
   |  A best-seller book about enterprise management              |  Develop your own modules on Open Object         |
   |                                                              |                                                  |

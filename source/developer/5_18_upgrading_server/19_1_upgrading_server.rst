@@ -377,7 +377,7 @@ Open ERP has a built'in migration and upgrade system which allows updates to be 
 Table/Object structure
 """"""""""""""""""""""
 
-When you run tinyerp-server with option --init or --update, the table structure are updated to match the new description that is in .py files. Fields that are removed are not removed in the postgresql database not to lose data.
+When you run openerp-server with option --init or --update, the table structure are updated to match the new description that is in .py files. Fields that are removed are not removed in the postgresql database not to lose data.
 
 So, simply running --update or --init, will upgrade your table structure.
 
