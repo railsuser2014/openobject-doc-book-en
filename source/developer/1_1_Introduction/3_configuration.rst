@@ -1,3 +1,6 @@
+
+.. _configuration-files-link:
+
 Configuration
 =============
 
