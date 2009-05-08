@@ -297,6 +297,7 @@ Button
           + uid is the userID of the user who clicked the button
           + ids is the record ID list
           + \**args is a tuple of additional arguments
+
           .. **
 
     * states: a comma-separated list of states (from the state field or from the workflow) in which the button must appear. If the states attribute is not given, the button is always visible.
