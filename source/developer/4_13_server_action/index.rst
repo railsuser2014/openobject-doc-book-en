@@ -109,17 +109,17 @@ Email Action Configuration
 .. image:: images/email_action.png
 
 
-Important Fields are
+Important Fields are:
 
 :Object: Select the object on which we want to implement the Server Action when work flow will execute on this object
 :Contact: We need to select the fields from which action will select the email address to whom we would like to send the email, system will display all the fields related to the current object selected in the Object field
-:Message: You can provide the message template with the fields that related to the current object. And it will be merge when it is going to send the email. This is the same language then the rml which is used to design the report here we can use the [[ ]] + html tage to design in the html format Working with You can select the any fields from the current object, like here we select the [[ ]] invoice in the object.
+:Message: You can provide the message template with the fields that relate to the current object. And it will be merged when it is going to send the email. This is the same language than the rml which is used to design the report here we can use the [[ ]] + html tags to design in the html format Working with You can select the any fields from the current object, like here we select the [[ ]] invoice in the object.
 
 For example to get the partner name we can use [[ object.partner_id.name ]]like the same, object refers to the current object and we can access any fields which exist in the model.
 
 After confirmation the invoice we get the confirmation email from the action.
 
-.. 	:: images/email_confirm.png
+.. image:: images/email_confirm.png
 
 Create Object
 -------------

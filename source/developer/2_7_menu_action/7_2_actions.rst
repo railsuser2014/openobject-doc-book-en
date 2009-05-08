@@ -11,16 +11,16 @@ There are different types of simple actions:
     * Window: Opening of a new window
     * Report: The printing of a report
           o Custom Report: The personalized reports
-          o RML Report: The XSL:RML reports 
+          o RML Report: The XSL:RML reports
     * Wizard: The beginning of a Wizard
     * Execute: The execution of a method on the server side
-    * Group: Gather some actions in one group 
+    * Group: Gather some actions in one group
 
 The actions are used for the following events;
 
     * User connection,
     * The user double-clicks on the menu,
-    * The user clicks on the icon 'print' or 'action'. 
+    * The user clicks on the icon 'print' or 'action'.
 
 Example of events
 -----------------
@@ -28,7 +28,7 @@ Example of events
 In Open ERP, all the actions are described and not configured. Two examples:
 
     * Opening of a window when double-clicking in the menu
-    * User connection 
+    * User connection
 
 Opening of the menu
 +++++++++++++++++++
@@ -38,7 +38,7 @@ When the user open the option of the menu "Operations > Partners > Partners Cont
    1. Search the action in the IR.
    2. Execution of the action
          1. If the action is the type Opening the Window; it indicates to the user that a new window must be opened for a selected object and it gives you the view (form or list) and the filed to use (only the pro-forma invoice).
-         2. The user asks the object and receives information necessary to trace a form; the fields description and the XML view. 
+         2. The user asks the object and receives information necessary to trace a form; the fields description and the XML view.
 
 User connection
 +++++++++++++++
@@ -48,23 +48,23 @@ When a new user is connected to the server, the client must search the action to
 The steps are:
 
    1. Reading of a user file to obtain ACTION_ID
-   2. Reading of the action and execution of this one 
+   2. Reading of the action and execution of this one
 
 The fields
 ++++++++++
 
 **Action Name**
-	The action name 
+	The action name
 **Action Type**
-	Always 'ir.actions.act_window' 
+	Always 'ir.actions.act_window'
 **View Ref**
-    	The view used for showing the object 
+    	The view used for showing the object
 **Model**
-	The model of the object to post 
+	The model of the object to post
 **Type of View**
-    	The type of view (Tree/Form) 
+    	The type of view (Tree/Form)
 **Domain Value**
-    	The domain that decreases the visible data with this view 
+    	The domain that decreases the visible data with this view
 
 The view
 --------
@@ -83,7 +83,7 @@ The domains are written in python; list of tuples. The tuples have three element
 
     * the field on which the test must be done
     * the operator used for the test (<, >, =, like)
-    * the tested value 
+    * the tested value
 
 For example, if you want to obtain only 'Draft' invoice, use the following domain; [('state','=','draft')]
 
@@ -120,12 +120,12 @@ Actions are explained in more detail in section "Administration Modules - Action
           - **form,tree** : the view is first displayed as a form, the list view can be displayed by clicking the "alternate view button" ;
           - **tree,form** : the view is first displayed as a list, the form view can be displayed by clicking the "alternate view button" ;
           - **form** : the view is displayed as a form and there is no way to switch to list view ;
-          - **tree** : the view is displayed as a list and there is no way to switch to form view. 
+          - **tree** : the view is displayed as a list and there is no way to switch to form view.
 
 (version 5 introduced **graph** and **calendar** views)
 
     * **usage** is used [+ ***TODO*** +]
-    * **target** the view will open in new window like wizard. 
+    * **target** the view will open in new window like wizard.
 
 
 They indicate at the user that he has to open a new window in a new 'tab'.
@@ -142,26 +142,25 @@ Examples of actions
 This action is declared in server/bin/addons/project/project_view.xml.
 ::
 
-	<record model="ir.actions.act_window" id="open_view_my_project">
-	    <field name="name">project.project</field>
-	    <field name="res_model">project.project</field>
-	    <field name="view_type">tree</field>
-	    <field name="domain">[('parent_id','=',False), ('manager', '=', uid)]</field>
-	    <field name="view_id" ref="view_my_project" />
-	</record>
+    <record model="ir.actions.act_window" id="open_view_my_project">
+        <field name="name">project.project</field>
+        <field name="res_model">project.project</field>
+        <field name="view_type">tree</field>
+        <field name="domain">[('parent_id','=',False), ('manager', '=', uid)]</field>
+        <field name="view_id" ref="view_my_project" />
+    </record>
 
 This action is declared in server/bin/addons/stock/stock_view.xml.
 ::
 
-	<record model="ir.actions.act_window" id="action_picking_form">
-	    <field name="name">stock.picking</field>
-	    <field name="res_model">stock.picking</field>
-	    <field name="type">ir.actions.act_window</field>
-	    <field name="view_type">form</field>
-	    <field name="view_id" ref="view_picking_form"/>
-	    <field name="context">{'contact_display': 'partner'}</field>
-	</record>
-	
+    <record model="ir.actions.act_window" id="action_picking_form">
+        <field name="name">stock.picking</field>
+        <field name="res_model">stock.picking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_picking_form"/>
+        <field name="context">{'contact_display': 'partner'}</field>
+    </record>
 
 Url Action
 -----------
@@ -188,20 +187,20 @@ A wizard is declared using a wizard tag. See "Add A New Wizard" for more informa
 also you can add wizard in menu using following xml entry
 ::
 
-	<?xml version="1.0"?>
-	<terp>
-	     <data>
-		 <wizard string="Employee Info"
-		         model="hr.employee"
-		         name="employee.info.wizard"
-		         id="wizard_employee_info"/>
-		 <menuitem
-		         name="Human Resource/Employee Info"
-		         action="wizard_employee_info"
-		         type="wizard"
-		         id="menu_wizard_employee_info"/>
-	     </data>
-	</terp>
+    <?xml version="1.0"?>
+    <terp>
+         <data>
+         <wizard string="Employee Info"
+                 model="hr.employee"
+                 name="employee.info.wizard"
+                 id="wizard_employee_info"/>
+         <menuitem
+                 name="Human Resource/Employee Info"
+                 action="wizard_employee_info"
+                 type="wizard"
+                 id="menu_wizard_employee_info"/>
+         </data>
+    </terp>
 
 
 Report Action
@@ -213,18 +212,18 @@ Report declaration
 Reports in Open ERP are explained in chapter "Reports Reporting". Here's an example of a XML file that declares a RML report :
 ::
 
-	<?xml version="1.0"?>
-	<terp>
-	    <data>
-		<report id="sale_category_print"
-		        string="Sales Orders By Categories"
-		        model="sale.order"
-		        name="sale_category.print"
-		        rml="sale_category/report/sale_category_report.rml"
-		        menu="True"
-		        auto="False"/>
-	     </data>
-	</terp>
+    <?xml version="1.0"?>
+    <terp>
+        <data>
+        <report id="sale_category_print"
+                string="Sales Orders By Categories"
+                model="sale.order"
+                name="sale_category.print"
+                rml="sale_category/report/sale_category_report.rml"
+                menu="True"
+                auto="False"/>
+         </data>
+    </terp>
 
 A report is declared using a **report tag** inside a "data" block. The different arguments of a report tag are :
 
@@ -233,7 +232,6 @@ A report is declared using a **report tag** inside a "data" block. The different
     * **model** : the Open ERP object on which the report will be rendered.
     * **rml** : the .RML report model. Important Note : Path is relative to addons/ directory.
     * **menu** : whether the report will be able to be called directly via the client or not. Setting menu to False is useful in case of reports called by wizards.
-    * **auto** : determines if the .RML file must be parsed using the default parser or not. Using a custom parser allows you to define additional functions to your report. 
-
+    * **auto** : determines if the .RML file must be parsed using the default parser or not. Using a custom parser allows you to define additional functions to your report.
 
 

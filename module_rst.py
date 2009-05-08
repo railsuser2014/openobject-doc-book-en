@@ -1,3 +1,24 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (C) 2004-2009 Tiny SPRL (<http://tiny.be>). All Rights Reserved
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
 
 import os, sys
 import zipfile
@@ -7,21 +28,21 @@ import optparse
 class DocRst:
     def __init__(self, zipTerp):
         self.dico = {}
-        key = ['module_name', 'name', 'version', 'website', 'description', 'depends', 'certificate', 'author', 'depends']
+        key = ['module_name', 'name', 'version', 'website', 'description', 'depends', 'certificate', 'author']
         
         for value in key:            
             
             if zipTerp.has_key(value) == True:
                 if value == key[0]:
-                    self.dico['name'] = zipTerp[value]
+                    self.dico['name'] = unicode(zipTerp[value],'utf_8')
                 if value == key[1]:
-                    self.dico['shortdesc'] = zipTerp[value]
+                    self.dico['shortdesc'] = unicode(zipTerp[value],'utf_8')
                 if value == key[2]:
                     self.dico['latest_version'] = zipTerp[value]
                 if value == key[3]:
                     self.dico['website'] = zipTerp[value]
                 if value == key[4]:
-                    self.dico['description'] = self._handle_text(zipTerp[value] or 'None')                    
+                    self.dico['description'] = self._handle_text(unicode(zipTerp[value],'utf_8') or 'None')                    
                 if value == key[5]:
                     self.dico['depends'] = zipTerp[value]
                 if value == key[6]:
@@ -29,9 +50,7 @@ class DocRst:
                     self.dico['official_module'] = str(zipTerp[value])[:2] == '00' and 'yes' or 'no'
                     self.dico['quality_certified_label'] = self._quality_certified_label(zipTerp[value])                    
                 if value == key[7]:
-                    self.dico['author'] = zipTerp[value]
-                if value == key[8]:
-                    self.dico['depends'] = zipTerp[value]                    
+                    self.dico['author'] = unicode(zipTerp[value],'utf_8')
             else:
                 if value == key[0]:
                     self.dico['name'] = ''
@@ -51,13 +70,12 @@ class DocRst:
                     self.dico['quality_certified_label'] = self._quality_certified_label(None)                    
                 if value == key[7]:
                     self.dico['author'] = ''
-                if value == key[8]:
-                    self.dico['depends'] = ''
 
         self.dico['report_list'] = ''
         self.dico['menu_list'] = ''
         self.dico['view_list'] = ''
-                                 
+        self.objects = None
+                         
     def _quality_certified_label(self, certificate):
         '''
             Function to add label weather module is quality certified and official 
@@ -264,7 +282,7 @@ class DocRst:
         s += self._write_reports()
         s += self._write_menus()
         s += self._write_views()
-#        s += self._write_objects()
+        s += self._write_objects()
 
         return s
 
@@ -306,7 +324,6 @@ def dirCounter(zipPath, rstPath):
     if file_count == 0 and dir_count == 0:
         return 0
     else:
-        #return 'No.of ZIP File: '+ str(file_count) +' \nNo.of Match RST File: ' + str(rst_count) + ' \nNot Rst File: '.join(no_zip)
         return no_zip 
 
 def fileType(fileName):
@@ -366,7 +383,7 @@ def main():
                             dirOpen = open(zipFolder + f + '/' + aDirFile, 'r').read()   # Reading zip file form zip folder
                                 
                             fileObj = eval(dirOpen)
-                             
+ 
                             fileObj["module_name"] = f
                             
                             rstObj = DocRst(fileObj)            # Rst class object 
@@ -375,7 +392,7 @@ def main():
                             try:
                                 fileRst += '\t\t\t\t'+ f + '.rst\n'
                                 rstFileObj = open( rstFolder + f + '.rst', 'w')     # Create rst file                
-                                rstFileObj.write(rstOut.encode('utf8'))                                    # Write text in rst file
+                                rstFileObj.write(rstOut.encode('utf_8'))                                    # Write text in rst file
                             finally:
                                 rstFileObj.close()
                                                                 
@@ -403,7 +420,7 @@ def main():
                             try:
                                 fileRst += '\t\t\t\t'+ zipName + '.rst\n'
                                 rstFileObj = open( rstFolder + zipName + '.rst', 'w')     # Create rst file                
-                                rstFileObj.write(rstOut.encode('utf8'))                                    # Write text in rst file
+                                rstFileObj.write(rstOut.encode('utf_8'))                                    # Write text in rst file
                             finally:
                                 rstFileObj.close()
                                 

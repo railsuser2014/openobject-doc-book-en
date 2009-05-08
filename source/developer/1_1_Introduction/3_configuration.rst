@@ -15,7 +15,7 @@ Lines beginning with "#" or ";" are comments.
 
 The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command: ::
 
-  tinyerp-server.py -s
+  openerp-server.py -s
 
 If they are not found, the server and the client will start with the default configuration.
 
