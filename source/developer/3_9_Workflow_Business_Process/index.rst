@@ -167,23 +167,43 @@ In the action though, they will be called by a statement like:
 
 ::
 
-	signal_send
+    signal_send
 
 ::
 
-	flow_start
+    flow_start
 
 
 Indicates if the node is a start node. When a new instance of a workflow is created, a workitem is activated for each activity marked as a flow_start.
 
-Be warned to not use this flag unless your activity really is a "flow start". There are tiny versions that do not care about the tags contents like "true" or "false". Using such tag and tiny version, you will always end up whith an activity which is tagged as "flow start = true", leaving u with a nasty hunt to find out where your workflowdesign could be wrong.
+.. warning::
+
+    Be warned to not use this flag unless your activity really is a "flow
+    start". There are tiny versions that do not care about the tags contents
+    like "true" or "false". Using such tag and tiny version, you will always
+    end up whith an activity which is tagged as "flow start = true", leaving u
+    with a nasty hunt to find out where your workflow design could be wrong.
+
+    This is because tags content are always evaluated as string. Read the
+    section about the :ref:`eval attribute <eval-attribute-link>` for an
+    explanation.
 
 flow_stop
 ---------
 
 Indicates if the node is an ending node. When all the active workitems for a given instance come in the node marked by flow_stop, the workflow is finished.
 
-Be warned to not use this flag unless your activity really is a "flow stop". There are tiny versions that do not care about the tags contents like "true" or "false". Using such tag and tiny version, you will always end up whith an activity which is tagged as "flow stop = true", leaving u with a nasty hunt to find out where your workflowdesign could be wrong.
+.. warning::
+
+    Be warned to not use this flag unless your activity really is a "flow
+    stop". There are tiny versions that do not care about the tags contents
+    like "true" or "false". Using such tag and tiny version, you will always
+    end up whith an activity which is tagged as "flow stop = true", leaving u
+    with a nasty hunt to find out where your workflow design could be wrong.
+
+    This is because tags content are always evaluated as string. Read the
+    section about the :ref:`eval attribute <eval-attribute-link>` for an
+    explanation.
 
 wkf_id
 ------
@@ -196,21 +216,31 @@ The general structure of an activity record is as follows
 
 .. code-block:: xml
 
-	<record model="workflow.activity" id="''activity_id''">
-	      <field name="wkf_id" ref="''workflow_id''"/>
-	      <field name="name">''activity.name''</field>::
+    <record model="workflow.activity" id="''activity_id''">
+          <field name="wkf_id" ref="''workflow_id''"/>
+          <field name="name">''activity.name''</field>::
 
-	      <field name="split_mode">XOR | OR | AND</field>
-	      <field name="join_mode">XOR | AND</field>
-	      <field name="kind">dummy | function | subflow | stopall</field>
+          <field name="split_mode">XOR | OR | AND</field>
+          <field name="join_mode">XOR | AND</field>
+          <field name="kind">dummy | function | subflow | stopall</field>
 
-	      <field name="action">''(...)''</field>
-	      <field name="signal_send">''(...)''</field>
-	      <field name="flow_start">True | False</field>
-	      <field name="flow_stop">True | False</field>
-	  </record>
+          <field name="action">''(...)''</field>
+          <field name="signal_send">''(...)''</field>
+          <field name="flow_start">True | False</field>
+          <field name="flow_stop">True | False</field>
+      </record>
 
-The first two arguments **wkf_id** and name are mandatory. Be warned to not use **flow_start** and **flow_stop** unless your activity really is a **flow start** or **flow_stop**. There are tiny versions that do not care about the tags contents like "True" or "False".
+The first two arguments **wkf_id** and name are mandatory.
+
+.. warning::
+
+    Be warned to not use **flow_start** and **flow_stop** unless your activity
+    really is a **flow start** or **flow_stop**. There are tiny versions that
+    do not care about the tags contents like "True" or "False".
+
+    This is because tags content are always evaluated as string. Read the
+    section about the :ref:`eval attribute <eval-attribute-link>` for an
+    explanation.
 
 Examples
 
@@ -236,25 +266,25 @@ Transition tests may not write values in objects.
 The fields
 ::
 
-	act_from
+    act_from
 
 Source activity. When this activity is over, the condition is tested to determine if we can start the ACT_TO activity.
 
 ::
 
-	act_to
+    act_to
 
 The destination activity.
 
 ::
 
-	condition
+    condition
 
 **Expression** to be satisfied if we want the transition done.
 
 ::
 
-	signal
+    signal
 
 When the operation of transition comes from a button pressed in the client form, signal tests the name of the pressed button.
 
@@ -262,7 +292,7 @@ If signal is NULL, no button is necessary to validate this transition.
 
 ::
 
-	role_id
+    role_id
 
 The **role** that a user must have to validate this transition.
 Defining Transitions Using XML Files
@@ -332,7 +362,7 @@ As of this writing, there is no exception handling in workflows.
 
 Workflows being made of several actions executed in batch, they can't trigger exceptions. In order to improve the execution efficiency and to release a maximum of locks, workflows commit at the end of each activity. This approach is reasonable because an activity is only started if the conditions of the transactions are satisfied.
 
-The only problem comes from exceptions due to programming errors; in that case, only transactions belonging to the entirely terminated activities are executed. Other transactions are "rolled back". 
+The only problem comes from exceptions due to programming errors; in that case, only transactions belonging to the entirely terminated activities are executed. Other transactions are "rolled back".
 
 
 Creating a Workflow
@@ -348,15 +378,15 @@ The first step is to define the States your object can be in. We do this by addi
 
 .. code-block:: python
 
-	_columns = {
-	 ...
-	    'state': fields.selection([
-		('new','New'),
-		('assigned','Assigned'),
-		('negotiation','Negotiation'),
-		('won','Won'),
-		('lost','Lost')], 'Stage', readonly=True),
-	}
+    _columns = {
+     ...
+        'state': fields.selection([
+        ('new','New'),
+        ('assigned','Assigned'),
+        ('negotiation','Negotiation'),
+        ('won','Won'),
+        ('lost','Lost')], 'Stage', readonly=True),
+    }
 
 Define the State-change Handling Methods
 ----------------------------------------
@@ -365,25 +395,25 @@ Add the following additional methods to your object. These will be called by our
 
 .. code-block:: python
 
-	def mymod_new(self, cr, uid, ids):
-		 self.write(cr, uid, ids, { 'state' : 'new' })
-		 return True
+    def mymod_new(self, cr, uid, ids):
+         self.write(cr, uid, ids, { 'state' : 'new' })
+         return True
 
-	def mymod_assigned(self, cr, uid, ids):
-		 self.write(cr, uid, ids, { 'state' : 'assigned' })
-		 return True
+    def mymod_assigned(self, cr, uid, ids):
+         self.write(cr, uid, ids, { 'state' : 'assigned' })
+         return True
 
-	def mymod_negotiation(self, cr, uid, ids):
-		 self.write(cr, uid, ids, { 'state' : 'negotiation' })
-		 return True
+    def mymod_negotiation(self, cr, uid, ids):
+         self.write(cr, uid, ids, { 'state' : 'negotiation' })
+         return True
 
-	def mymod_won(self, cr, uid, ids):
-		 self.write(cr, uid, ids, { 'state' : 'won' })
-		 return True
+    def mymod_won(self, cr, uid, ids):
+         self.write(cr, uid, ids, { 'state' : 'won' })
+         return True
 
-	def mymod_lost(self, cr, uid, ids):
-		 self.write(cr, uid, ids, { 'state' : 'lost' })
-		 return True
+    def mymod_lost(self, cr, uid, ids):
+         self.write(cr, uid, ids, { 'state' : 'lost' })
+         return True
 
 Obviously you would extend these methods in the future to do something more useful!
 Create your Workflow XML file
@@ -393,87 +423,87 @@ There are three types of records we need to define in a file called mymod_workfl
 
 #. Workflow header record (only one of these)
 
-	.. code-block:: xml
+    .. code-block:: xml
 
-		<record model="workflow" id="wkf_mymod">
-		    <field name="name">mymod.wkf</field>
-		    <field name="osv">mymod.mymod</field>
-		    <field name="on_create">True</field>
-		</record>
+        <record model="workflow" id="wkf_mymod">
+            <field name="name">mymod.wkf</field>
+            <field name="osv">mymod.mymod</field>
+            <field name="on_create">True</field>
+        </record>
 
 #. Workflow Activity records
 
-	These define the actions that should be executed when the workflow reaches a particular state
+    These define the actions that should be executed when the workflow reaches a particular state
 
-	.. code-block:: xml
+    .. code-block:: xml
 
-		<record model="workflow.activity" id="act_new">
-			<field name="wkf_id" ref="wkf_mymod" />
-			<field name="flow_start">True</field>
-			<field name="name">new</field>
-			<field name="kind">function</field>
-			<field name="action">mymod_new()</field>
-		</record>
+        <record model="workflow.activity" id="act_new">
+            <field name="wkf_id" ref="wkf_mymod" />
+            <field name="flow_start">True</field>
+            <field name="name">new</field>
+            <field name="kind">function</field>
+            <field name="action">mymod_new()</field>
+        </record>
 
-		<record model="workflow.activity" id="act_assigned">
-			<field name="wkf_id" ref="wkf_mymod" />
-			<field name="name">assigned</field>
-			<field name="kind">function</field>
-			<field name="action">mymod_assigned()</field>
-		</record>
+        <record model="workflow.activity" id="act_assigned">
+            <field name="wkf_id" ref="wkf_mymod" />
+            <field name="name">assigned</field>
+            <field name="kind">function</field>
+            <field name="action">mymod_assigned()</field>
+        </record>
 
-		<record model="workflow.activity" id="act_negotiation">
-			<field name="wkf_id" ref="wkf_mymod" />
-			<field name="name">negotiation</field>
-			<field name="kind">function</field>
-			<field name="action">mymod_negotiation()</field>
-		</record>
+        <record model="workflow.activity" id="act_negotiation">
+            <field name="wkf_id" ref="wkf_mymod" />
+            <field name="name">negotiation</field>
+            <field name="kind">function</field>
+            <field name="action">mymod_negotiation()</field>
+        </record>
 
-		<record model="workflow.activity" id="act_won">
-			<field name="wkf_id" ref="wkf_mymod" />
-			<field name="name">won</field>
-			<field name="kind">function</field>
-			<field name="action">mymod_won()</field>
-			<field name="flow_stop">True</field>
-		</record>
+        <record model="workflow.activity" id="act_won">
+            <field name="wkf_id" ref="wkf_mymod" />
+            <field name="name">won</field>
+            <field name="kind">function</field>
+            <field name="action">mymod_won()</field>
+            <field name="flow_stop">True</field>
+        </record>
 
-		<record model="workflow.activity" id="act_lost">
-			<field name="wkf_id" ref="wkf_mymod" />
-			<field name="name">lost</field>
-			<field name="kind">function</field>
-			<field name="action">mymod_lost()</field>
-			<field name="flow_stop">True</field>
-		</record>
+        <record model="workflow.activity" id="act_lost">
+            <field name="wkf_id" ref="wkf_mymod" />
+            <field name="name">lost</field>
+            <field name="kind">function</field>
+            <field name="action">mymod_lost()</field>
+            <field name="flow_stop">True</field>
+        </record>
 
 #. Workflow Transition records
 
-	These define the possible transitions between workflow states
+    These define the possible transitions between workflow states
 
-	.. code-block:: xml
+    .. code-block:: xml
 
-		<record model="workflow.transition" id="t1">
-			<field name="act_from" ref="act_new" />
-			<field name="act_to" ref="act_assigned" />
-			<field name="signal">mymod_assigned</field>
-		</record>
+        <record model="workflow.transition" id="t1">
+            <field name="act_from" ref="act_new" />
+            <field name="act_to" ref="act_assigned" />
+            <field name="signal">mymod_assigned</field>
+        </record>
 
-		<record model="workflow.transition" id="t2">
-			<field name="act_from" ref="act_assigned" />
-			<field name="act_to" ref="act_negotiation" />
-			<field name="signal">mymod_negotiation</field>
-		</record>
+        <record model="workflow.transition" id="t2">
+            <field name="act_from" ref="act_assigned" />
+            <field name="act_to" ref="act_negotiation" />
+            <field name="signal">mymod_negotiation</field>
+        </record>
 
-		<record model="workflow.transition" id="t3">
-			<field name="act_from" ref="act_negotiation" />
-			<field name="act_to" ref="act_won" />
-			<field name="signal">mymod_won</field>
-		</record>
+        <record model="workflow.transition" id="t3">
+            <field name="act_from" ref="act_negotiation" />
+            <field name="act_to" ref="act_won" />
+            <field name="signal">mymod_won</field>
+        </record>
 
-		<record model="workflow.transition" id="t4">
-			<field name="act_from" ref="act_negotiation" />
-			<field name="act_to" ref="act_lost" />
-			<field name="signal">mymod_lost</field>
-		</record>
+        <record model="workflow.transition" id="t4">
+            <field name="act_from" ref="act_negotiation" />
+            <field name="act_to" ref="act_lost" />
+            <field name="signal">mymod_lost</field>
+        </record>
 
 Add mymod_workflow.xml to __terp__.py
 
@@ -484,15 +514,15 @@ The final step is to add the required buttons to mymod_views.xml file.
 
 Add the following at the end of the <form> section of your object's view definition:
 
-	.. code-block:: xml
+    .. code-block:: xml
 
-		<separator string="Workflow Actions" colspan="4"/>
-		<group colspan="4" col="3">
-		    <button name="mymod_assigned" string="Assigned" states="new" />
-		    <button name="mymod_negotiation" string="In Negotiation" states="assigned" />
-		    <button name="mymod_won" string="Won" states="negotiating" />
-		    <button name="mymod_lost" string="Lost" states="negotiating" />
-		</group>
+        <separator string="Workflow Actions" colspan="4"/>
+        <group colspan="4" col="3">
+            <button name="mymod_assigned" string="Assigned" states="new" />
+            <button name="mymod_negotiation" string="In Negotiation" states="assigned" />
+            <button name="mymod_won" string="Won" states="negotiating" />
+            <button name="mymod_lost" string="Lost" states="negotiating" />
+        </group>
 
 Testing
 -------
