@@ -4,7 +4,7 @@ Data Loading
 During Open ERP installation, two steps are necessary to create and feed the database:
 
    1. Create the SQL tables
-   2. Insert the different data into the tables 
+   2. Insert the different data into the tables
 
 The creation (or modification in the case of an upgrade) of SQL tables is automated thanks to the description of objects in the server.
 
@@ -13,83 +13,83 @@ Into Open ERP, all the logic of the application is stored in the database. We fi
     * the definitions of the reports,
     * the object default values,
     * the form description of the interface client,
-    * the relations between the menu and the client buttons, ... 
+    * the relations between the menu and the client buttons, ...
 
 
-There must be a mechanism to describe, modify and reload the different data. These data are represented into a set of XML files that can possibly be loaded during start of the program in order to fill in the tables. 
+There must be a mechanism to describe, modify and reload the different data. These data are represented into a set of XML files that can possibly be loaded during start of the program in order to fill in the tables.
 
 
 Files: .XML
 -----------
 ::
 
-	%define=lightblue color=#27adfb%
+    %define=lightblue color=#27adfb%
 
 Data can be inserted or updated into the PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows :
 ::
 
-	 <?xml version="1.0"?>
-	 <terp>
-	     <data>
-		 <record model="model.name_1" id="id_name_1">
-		     <field name="field1">
-		         %lightblue%"field1 content"
-		     </field>
-		     <field name="field2">
-		         %lightblue%"field2 content"
-		     </field>
-		     (...)
-		 </record> 
-		 <record model="model.name_2" id="id_name_2">
-		     (...)
-		 </record>
-		 (...)
-	     </data>
-	 </terp> 
+     <?xml version="1.0"?>
+     <terp>
+         <data>
+         <record model="model.name_1" id="id_name_1">
+             <field name="field1">
+                 %lightblue%"field1 content"
+             </field>
+             <field name="field2">
+                 %lightblue%"field2 content"
+             </field>
+             (...)
+         </record>
+         <record model="model.name_2" id="id_name_2">
+             (...)
+         </record>
+         (...)
+         </data>
+     </terp>
 
 Fields content are strings that must be encoded as UTF-8 in XML files.
 
 Let's review an example taken from the TinyERP source (base_demo.xml in the base module):
 ::
 
-	   <record model="res.company" id="main_company">
-	       <field name="name">Tiny sprl</field>
-	       <field name="partner_id" ref="main_partner"/>
-	       <field name="currency_id" ref="EUR"/>
-	   </record>
+       <record model="res.company" id="main_company">
+           <field name="name">Tiny sprl</field>
+           <field name="partner_id" ref="main_partner"/>
+           <field name="currency_id" ref="EUR"/>
+       </record>
 
 ::
 
-	   <record model="res.users" id="user_admin">
-	       <field name="login">admin</field>
-	       <field name="password">admin</field>
-	       <field name="name">Administrator</field>
-	       <field name="signature">Administrator</field>
-	       <field name="action_id" ref="action_menu_admin"/>
-	       <field name="menu_id" ref="action_menu_admin"/>
-	       <field name="address_id" ref="main_address"/>
-	       <field name="groups_id" eval="[(6,0,[group_admin])]"/>
-	       <field name="company_id" ref="main_company"/>
-	   </record>
+       <record model="res.users" id="user_admin">
+           <field name="login">admin</field>
+           <field name="password">admin</field>
+           <field name="name">Administrator</field>
+           <field name="signature">Administrator</field>
+           <field name="action_id" ref="action_menu_admin"/>
+           <field name="menu_id" ref="action_menu_admin"/>
+           <field name="address_id" ref="main_address"/>
+           <field name="groups_id" eval="[(6,0,[group_admin])]"/>
+           <field name="company_id" ref="main_company"/>
+       </record>
 
 This last record defines the admin user :
 
     * The fields login, password, etc are straightforward.
-    * The **ref** attribute allows to fill relations between the records : 
+    * The **ref** attribute allows to fill relations between the records :
 
 ::
-	
-	<field name="company_id" ref="main_company"/>
+
+    <field name="company_id" ref="main_company"/>
 
 ->The field @@company_id@@ is a many-to-one relation from the user object to the company object, and **main_company** is the id of to associate.
 
-    * The **eval** attribute allows to put some python code in the xml: here the groups_id field is a many2many. For such a field, "[(6,0,[group_admin])]" means : Remove all the groups associated with the current user and use the list [group_admin] as the new associated groups (and group_admin is the id of another record). 
+    * The **eval** attribute allows to put some python code in the xml: here the groups_id field is a many2many. For such a field, "[(6,0,[group_admin])]" means : Remove all the groups associated with the current user and use the list [group_admin] as the new associated groups (and group_admin is the id of another record).
 
-    * The **search** attribute allows to find the record to associate when you do not know its xml id. You can thus specify a search criteria to find the wanted record. The criteria is a list of tuples of the same form than for the predefined search method. If there are several results, an arbitrary one will be chosen (the first one): 
+    * The **search** attribute allows to find the record to associate when you do not know its xml id. You can thus specify a search criteria to find the wanted record. The criteria is a list of tuples of the same form than for the predefined search method. If there are several results, an arbitrary one will be chosen (the first one):
 
-	<field name="partner_id" search="[]" model="res.partner"/>
+    <field name="partner_id" search="[]" model="res.partner"/>
 
-->This is a classical example of the use of @@search@@ in demo data: here we do not really care about which partner we want to use for the test, so we give an empty list. Notice the **model** attribute is currently mandatory. 
+->This is a classical example of the use of @@search@@ in demo data: here we do not really care about which partner we want to use for the test, so we give an empty list. Notice the **model** attribute is currently mandatory.
 
 The Data
 ++++++++
@@ -108,13 +108,13 @@ Example
 ~~~~~~~
 ::
 
-	<record model="ir.actions.report.xml" id="l0">
-	     <field name="model">account.invoice</field>
-	     <field name="name">Invoices List</field>
-	     <field name="report_name">account.invoice.list</field>
-	     <field name="report_xsl">account/report/invoice.xsl</field>
-	     <field name="report_xml">account/report/invoice.xml</field>
-	</record>
+    <record model="ir.actions.report.xml" id="l0">
+         <field name="model">account.invoice</field>
+         <field name="name">Invoices List</field>
+         <field name="report_name">account.invoice.list</field>
+         <field name="report_xsl">account/report/invoice.xsl</field>
+         <field name="report_xml">account/report/invoice.xml</field>
+    </record>
 
 field tag
 ~~~~~~~~~
@@ -122,11 +122,11 @@ field tag
 The attributes for the field tag are the following:
 
     * **name**
-          o mandatory attribute indicating the field name 
+          o mandatory attribute indicating the field name
     * **eval**
-          o python expression that indicating the value to add 
+          o python expression that indicating the value to add
     * **ref**
-          o reference to an id defined in this file 
+          o reference to an id defined in this file
 
 function tag
 ~~~~~~~~~~~~
@@ -134,35 +134,35 @@ function tag
     * model:
     * name:
     * eval
-          o should evaluate to the list of parameters of the method to be called, excluding cr and uid 
+          o should evaluate to the list of parameters of the method to be called, excluding cr and uid
 
 Example
 ~~~~~~~
 ::
 
-	<function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/>
+    <function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/>
 
 getitem tag
 
 Takes a subset of the evaluation of the last child node of the tag.
 
     * type
-          - int or list 
+          - int or list
     * index
-    * int or string (a key of a dictionary) 
+    * int or string (a key of a dictionary)
 
 Example
 ~~~~~~~
 
 Evaluates to the first element of the list of ids returned by the function node
 
-.. code-block :: python
+.. code-block:: python
 
-	<getitem index="0" type="list">
-	    <function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/>
-	</getitem>
+    <getitem index="0" type="list">
+        <function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/>
+    </getitem>
 
-CSV Files 
+CSV Files
 ---------
 
 Importing from a CSV
@@ -176,7 +176,7 @@ The name of the object is the name of the file before the first '-'. You must us
 
     * res.partner.csv
     * res.partner-tiny_demo.csv
-    * res.partner-tiny.demo.csv 
+    * res.partner-tiny.demo.csv
 
 Structure of the CSV file
 +++++++++++++++++++++++++
@@ -187,67 +187,67 @@ Usefull info:
 
     * Separator of field: ,
     * Quote of fields: "
-    * Encoding to use: UTF-8 
+    * Encoding to use: UTF-8
 
 Export demo data and import it from a module
 ++++++++++++++++++++++++++++++++++++++++++++
 
 You can import .CSV file that have been exported from the Tiny ERP client. This is interesting to create your own demo module. But both formats are not exactly the same, mainly due to the conversion: Structured Data -> Flat Data -> Structured Data.
 
-    * The name of the column (first line of the .CSV file) use the end user term in his own language when you export from the client. If you want to import from a module, you must convert the first column using the fields names. Example, from the partner form: 
+    * The name of the column (first line of the .CSV file) use the end user term in his own language when you export from the client. If you want to import from a module, you must convert the first column using the fields names. Example, from the partner form:
 
     Name,Code,Contacts/Contact Name,Contacts/Street,Contacts/Zip
 
-        becomes 
+        becomes
 
-    name,ref,address/name,address/street,address/zip 
+    name,ref,address/name,address/street,address/zip
 
-    * When you export from the Tiny ERP client, you can select any many2one fields and their child's relation. When you import from a module, Tiny ERP tries to recreate the relation between the two resources. For example, do not export something like this from a sale order form - otherwise Tiny ERP will not be able to import your file: 
+    * When you export from the Tiny ERP client, you can select any many2one fields and their child's relation. When you import from a module, Tiny ERP tries to recreate the relation between the two resources. For example, do not export something like this from a sale order form - otherwise Tiny ERP will not be able to import your file:
 
-    Order Description,Partner/Name,Partner/Payable,Partner/Address/Name 
+    Order Description,Partner/Name,Partner/Payable,Partner/Address/Name
 
-    * To find the link for a many2one or many2many field, the server use the name_search function when importing. So, for a many2one field, it is better to export the field 'name' or 'code' of the related resource only. Use the more unique one. Be sure that the field you export is searchable by the name_search function. (the 'name' column is always searchable). 
+    * To find the link for a many2one or many2many field, the server use the name_search function when importing. So, for a many2one field, it is better to export the field 'name' or 'code' of the related resource only. Use the more unique one. Be sure that the field you export is searchable by the name_search function. (the 'name' column is always searchable).
 
-    Order Description,Partner/Code 
+    Order Description,Partner/Code
 
-    * Change the title of the column for all many2many or many2one fields. It's because you export the related resource and you import a link on the resource. Example from a sale order: Partner/Code should become partner_id and not partner_id/code. If you kept the @@/code@@, Tiny ERP will try to create those entries in the database instead of finding reference to existing ones. 
+    * Change the title of the column for all many2many or many2one fields. It's because you export the related resource and you import a link on the resource. Example from a sale order: Partner/Code should become partner_id and not partner_id/code. If you kept the @@/code@@, Tiny ERP will try to create those entries in the database instead of finding reference to existing ones.
 
-    * Many2many fields. If all the exported data contains 0 or 1 relation on each many2many fields, there will be no problem. Otherwise, the export will result in one line per many2many. The import function expect to get all many2many relations in one column, separated by a comma. So, you have to make to transformation. For example, if the categories "Customer" and "Supplier" already exists : 
+    * Many2many fields. If all the exported data contains 0 or 1 relation on each many2many fields, there will be no problem. Otherwise, the export will result in one line per many2many. The import function expect to get all many2many relations in one column, separated by a comma. So, you have to make to transformation. For example, if the categories "Customer" and "Supplier" already exists :
 
-    name,category_id 
-    Smith, "Customer, Supplier" 
+    name,category_id
+    Smith, "Customer, Supplier"
 
 If you want to create these two categories you can try :
 
-    name,category_id/name 
-    Smith, "Customer, Supplier" 
+    name,category_id/name
+    Smith, "Customer, Supplier"
 
 This does not work as expected: a category "Customer, Supplier" is created. The solution is to create an empty line with only the second category:
 
 
-    name,category_id/name 
-    Smith, Customer 
-    ,Supplier 
+    name,category_id/name
+    Smith, Customer
+    ,Supplier
 
 (Note the comma before "Supplier").
 
 
-    * Read only fields. Do not try to import read only fields like the amount receivable or payable for a partner. Otherwise, Tiny ERP will not accept to import your file. 
+    * Read only fields. Do not try to import read only fields like the amount receivable or payable for a partner. Otherwise, Tiny ERP will not accept to import your file.
 
-    * Exporting trees. You can export and import tree structures using the parent field. You just have to take care of the import order. The parent have to be created before his child's. 
+    * Exporting trees. You can export and import tree structures using the parent field. You just have to take care of the import order. The parent have to be created before his child's.
 
 Use record id like in xml file:
 +++++++++++++++++++++++++++++++
 
 It's possible to define an id for each line of the csv file. This allow to define references between records:
 
-    id, name, parent_id:id 
-    record_one, Father, 
-    record_two, Child, record_one 
+    id, name, parent_id:id
+    record_one, Father,
+    record_two, Child, record_one
 
-If you do this, the line with the parent data must be before the child lines in the file. 
+If you do this, the line with the parent data must be before the child lines in the file.
 
-Multiple CSV Files 
+Multiple CSV Files
 ------------------
 
 Importing from multiple CSV a full group of linked data
@@ -272,24 +272,24 @@ You create this module as others modules of OpenObject :
 
    1. create a folder 'import_my_books'
    2. inside, create a '__init__.py' file with only one line : import import_my_books
-   3. again, in the same folder, create a '__terp__.py' file and in this file, write the following code : 
+   3. again, in the same folder, create a '__terp__.py' file and in this file, write the following code :
 
-.. code-block :: python
+.. code-block:: python
 
 
-	 # -*- encoding: utf-8 -*-
-	 {
-	   'name': 'My Book Import',
-	   'category': 'Data Module 1',
-	   'init_xml':[],
-	   'author': 'mySelf & I',
-	   'depends': ['base','library_management','contact_name'],
-	   'version': '1.0',
-	   'active': False,
-	   'demo_xml': [],
-	   'update_xml':['contact_name.author.csv','library.book.csv'],
-	   'installable': True
-	 }
+     # -*- encoding: utf-8 -*-
+     {
+       'name': 'My Book Import',
+       'category': 'Data Module 1',
+       'init_xml':[],
+       'author': 'mySelf & I',
+       'depends': ['base','library_management','contact_name'],
+       'version': '1.0',
+       'active': False,
+       'demo_xml': [],
+       'update_xml':['contact_name.author.csv','library.book.csv'],
+       'installable': True
+     }
 
 
 Creation of CSV files
@@ -299,31 +299,31 @@ For the CSV files, you'll import one the after, the other one.
 
 So you have to choose, in which way you'll treat the many2many relation. For our example, we've choose to import all the authors, then all the books with the links to the authors.
 
-   1. authors CSV file 
+   1. authors CSV file
 
 You have to put your data in a CSV file without any link to books (because the book ids will be known only AFTERWARDS...) For example : ("contact_name.author.csv")
 
 ::
 
-	 id,last_name,first_name,type
-	 author_1,Bradley,Marion Zimmer,Book writer
-	 author_2,"Szu T'su",,Chinese philosopher
-	 author_3,Zelazny,Roger,Book writer
-	 author_4,Arleston,Scotch,Screen Writer
-	 author_5,Magnin,Florence,Comics Drawer
-	 ...
+     id,last_name,first_name,type
+     author_1,Bradley,Marion Zimmer,Book writer
+     author_2,"Szu T'su",,Chinese philosopher
+     author_3,Zelazny,Roger,Book writer
+     author_4,Arleston,Scotch,Screen Writer
+     author_5,Magnin,Florence,Comics Drawer
+     ...
 
-   1. Books CSV file 
+   1. Books CSV file
 
 Here, you can put the data about your books, but also, the links to the authors, using the same id as the column 'id' of the author CSV file. For example : ("library.book.csv" )
 
 ::
 
-	 id,title,isbn,pages,date,author_ids:id
-	 book_a,Les Cours du Chaos,1234567890123,268,1975-12-25,"author_3"
-	 book_b,"L'art de la Guerre, en 219 volumes",1234567890124,1978-01-01,"author_2"
-	 book_c,"new marvellous comics",1587459248579,2009-01-01,"author_5,author_4"
-	 ...
+     id,title,isbn,pages,date,author_ids:id
+     book_a,Les Cours du Chaos,1234567890123,268,1975-12-25,"author_3"
+     book_b,"L'art de la Guerre, en 219 volumes",1234567890124,1978-01-01,"author_2"
+     book_c,"new marvellous comics",1587459248579,2009-01-01,"author_5,author_4"
+     ...
 
 Five remarks :
 
@@ -331,12 +331,12 @@ Five remarks :
    2. the dates are in the format YYYY-MM-DD
    3. if you have many ids in the same column, you must separate them with a comma, and, by the way, you must enclosed the content of the column between double quotes...
    4. the name of the field is the same as the name of the field in the class definition AND must be followed by ':id' if the content is an ID that must be interpreted by the import module. In fact, "author_4" will be transformed by the import module in an integer id for the database module and this numercial id will be put also in the table between author and book, not the literal ID (author_4).
-   5. the encoding to be used by the CSV file is the 'UTF-8' encoding 
+   5. the encoding to be used by the CSV file is the 'UTF-8' encoding
 
 Links between id if the CSV files
 +++++++++++++++++++++++++++++++++
 
-Links to id already in the system 
+Links to id already in the system
 +++++++++++++++++++++++++++++++++
 
 
@@ -351,7 +351,7 @@ Jump to: navigation, search
 
 The ressources are placed in different files according to their uses. By convention;
 
- .. csv-table:: 
+ .. csv-table::
    :header: "Name","Description"
    :widths: 25, 25
 
@@ -366,7 +366,7 @@ The ressources are placed in different files according to their uses. By convent
 The workflow files have to be loaded before the datas ! Otherwise, the ressource created won't be integrated inside the workflow because the later is not yet defined.
 
 
-Managing updates 
+Managing updates
 ----------------
 
 Managing updates and migrations
@@ -390,7 +390,7 @@ Some data is automatically loaded at the installation of Tiny ERP:
 
     * views, actions, menus,
     * workflows,
-    * demo data 
+    * demo data
 
 This data is also migrated to a new version if you run --update or --init.
 
@@ -416,7 +416,7 @@ If you use a new id, the resource will be automatically created at the next upda
 
     * view_invoice_form,
     * view_move_line_tree,
-    * action_invoice_form_open, ... 
+    * action_invoice_form_open, ...
 
 It is important to put id="...." to all record that are important for the next version migrations. For example, do not forget to put some id="..." on all workflows transitions. This will allows Open ERP to know which transition has been removed and which transition is new or updated.
 
@@ -427,9 +427,9 @@ For example, if you want to override the view of an object named 'invoice_form' 
 
 Example:
 
-    <record model="ir.ui.view" id="account.invoice_form"> 
-    ... 
-    <record> 
+    <record model="ir.ui.view" id="account.invoice_form">
+    ...
+    <record>
 
 This will override the invoice form view. You do not have to delete the old view, like in 3.0 versions of Open ERP.
 
@@ -447,30 +447,30 @@ Summary of update and init process
 
 init:
 
-    modify/add/delete demo data and builtin data 
+    modify/add/delete demo data and builtin data
 
 update:
 
-    modifiy/add/delete non demo data 
+    modifiy/add/delete non demo data
 
 Examples of builtin (non demo) data:
 
-    * Menu structure, 
-    * View definition, 
-    * Workflow description, ... 
-      -> Everything that as an id="..." in the .XML data declaration (if no attr noupdate="1" in the header) 
+    * Menu structure,
+    * View definition,
+    * Workflow description, ...
+      -> Everything that as an id="..." in the .XML data declaration (if no attr noupdate="1" in the header)
 
 What's going on on a update process:
 
    1. If you manually added data within the client:
-          * the update process will not change them 
+          * the update process will not change them
    2. If you dropped data:
           * if it was demo data, the update process will do nothing
-          * it it was builtin data (like a view), the update process will recreate it 
+          * it it was builtin data (like a view), the update process will recreate it
    3. If you modified data (either in the .XML or the client):
           * if it's demo data: nothing
-          * if it's builtin data, data are updated 
+          * if it's builtin data, data are updated
    4. If builtin data have been deleted in the .XML file:
-          * this data will be deleted in the database. 
+          * this data will be deleted in the database.
 
 
