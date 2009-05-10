@@ -302,68 +302,40 @@ Si quieres contribuir con OpenERP o con OpenObject, aquí esta el método propue
 .. i18n: and commit your own work. This branch do not require a validation of the
 .. i18n: quality team. You should put there your special modules for your own customers.
 
-The extra-addons branch, that stores all extra modules, is directly accessible
-to all commiters. If you are a commiter, you can work directly on this branch
-and commit your own work. This branch do not require a validation of the
-quality team. You should put there your special modules for your own customers.
+El branch de *extra-addons*, guarda todos los módulos extra, es accesible para todos los commiters
+Si tu eres commiter, tu puedes trabajar directamente en este branch y poner tu trabajo.
+Este branch no require validación del equipo de calidad. 
+Debes poner ahí los módulos especiales para tus clientes.
 
 .. i18n: If you want to propose or develop new modules, we suggest you to create your
 .. i18n: own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
 .. i18n: and develop within your branch. You can fill in a bug to request that
 .. i18n: your modules are integrated in one of the two branches:
 
-If you want to propose or develop new modules, we suggest you to create your
-own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
-and develop within your branch. You can fill in a bug to request that
-your modules are integrated in one of the two branches:
+Si quieres proponer o desarrollar nuevos módulos, te sugerimos crear tu propio  branch en
+`openobject-addons project <https://launchpad.net/openobject-addons>`_
+y desarrollarlo dentro. Puedes asignar en una petición de errores que tus módulos
+están integrados en uno de los dos branches:
 
 .. i18n:   * extra-addons : if your module touches a few companies
 .. i18n:   * addons : if your module will be usefull for most of the companies
 
-  * extra-addons : if your module touches a few companies
-  * addons : if your module will be usefull for most of the companies
+  * extra-addons : Si tu módulo es para ciertas empresas.
+  * addons : Si tu módulo se podrá usar en cualquier empresa.
 
 .. i18n: We invite all our partners and contributors to work in that way so that we can
 .. i18n: easily integrate and share the work done between the different projects.
 
-We invite all our partners and contributors to work in that way so that we can
-easily integrate and share the work done between the different projects.
-
-.. i18n: After having done that, your branch is public on Launchpad, in the `OpenObject
-.. i18n: project <https://code.launchpad.net/openobject>`_, and commiters can work on
-.. i18n: it, review it and propose for integration in the official branch. The last line
-.. i18n: allows you to rebind your branch to the one which is on launchpad, after having
-.. i18n: done this, your commit will be applied on launchpad directly (unless you use ``--local``)::
-.. i18n: 
-.. i18n:   bzr pull    # Get modifications on your branch from others
-.. i18n:   EDIT STUFF
-.. i18n:   bzr ci    # commit your changes on your public branch
-
-After having done that, your branch is public on Launchpad, in the `OpenObject
-project <https://code.launchpad.net/openobject>`_, and commiters can work on
-it, review it and propose for integration in the official branch. The last line
-allows you to rebind your branch to the one which is on launchpad, after having
-done this, your commit will be applied on launchpad directly (unless you use ``--local``)::
-
-  bzr pull    # Get modifications on your branch from others
-  EDIT STUFF
-  bzr ci    # commit your changes on your public branch
-
-.. i18n: If your changes fixe a public bug on launchpad, you can use this to mark the bug as fixed by your branch::
-.. i18n: 
-.. i18n:   bzr ci --fixes=lp:453123   # Where 453123 is a bug ID
-
-If your changes fixe a public bug on launchpad, you can use this to mark the bug as fixed by your branch::
-
-  bzr ci --fixes=lp:453123   # Where 453123 is a bug ID
+Invitamos a todos nuestros *partners* y contribuidores a trabajar en esa vía así podremos
+fácilmente integrar y compartir el trabajo hecho entre los diferentes proyectos.
 
 .. i18n: Once your branch is mature, mark it as mature in the web interface of launchpad
 .. i18n: and request for merging in the official release. Your branch will be reviewed
 .. i18n: by a commiter and then the quality team to be merged in the official release.
 
-Once your branch is mature, mark it as mature in the web interface of launchpad
-and request for merging in the official release. Your branch will be reviewed
-by a commiter and then the quality team to be merged in the official release.
+Una ves que tu branch está hecho,marcalo como *mature* en la interfaz web de Launchpad
+y pide que se ponga en el release oficial. Tu código será revisado por un desarrollador
+y luego por el equipo de calidad para ser puesto en el release oficial.
 
 .. i18n: How to commit Your Work
 .. i18n: +++++++++++++++++++++++
