@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/segmentation"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 segmentation management (*segmentation*)
 ========================================
@@ -15,7 +26,7 @@ segmentation management (*segmentation*)
 :Version: False
 :Author: Tiny
 :Directory: segmentation
-:Web: http://www.openerp.com//
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -24,15 +35,20 @@ Description
 
 ::
 
-  This module allow users to create profile and compute automatically which partners do fit the profile 
-  criteria. 
+  This module allow users to create profile and compute automatically which partners do fit the profile criteria. 
   
-     In this version the new concept of questionnaire allow you to regroup questions into a questionnaire 
-     and directly use it on a partner.
+      In this version the new concept of questionnaire allow you to regroup questions into a questionnaire and directly use it on a partner.
   
   
-  NOTICE: This Module is Deprecated. Please install crm_profiling in order to have access to the 
-          latest functionnalities.
+  NOTICE: This Module is Deprecated. Please install crm_profiling in order to have access to the latest functionalities.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/segmentation.zip>`_
+
 
 Dependencies
 ------------

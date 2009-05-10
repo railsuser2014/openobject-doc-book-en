@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/product_expiry"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Products date of expiry (*product_expiry*)
 ==========================================
@@ -24,8 +35,15 @@ Description
 
 ::
 
-  Track different dates on products and lots. Used, for exampel, in food industries: expiry date,
-  alert date, date of removal, eso.
+  Track different dates on products and lots. Used, for exampel, in food industries: expiry date, alert date, date of removal, eso.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/product_expiry.zip>`_
+
 
 Dependencies
 ------------

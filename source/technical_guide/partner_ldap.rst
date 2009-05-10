@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/partner_ldap"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Partner extension to synchronize TinyERP with ldap (*partner_ldap*)
 ===================================================================
@@ -24,8 +35,15 @@ Description
 
 ::
 
-  Synchronise partners through a LDAP module. Has been used to synchronise partners  in 
-  Outlook and Tiny ERP.
+  Synchronise partners through a LDAP module. Has been used to synchronise partners in Outlook and Tiny ERP.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/partner_ldap.zip>`_
+
 
 Dependencies
 ------------

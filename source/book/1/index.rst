@@ -13,10 +13,21 @@ First steps with Open ERP
  The objective of this first part of the book is to help you to start discovering it in practice.
 
  The first chapter, :ref:`ch-inst`, gives detailed guidance for installing it.
- Next, in :ref:`ch-guided`, you're taken on a step-by-step guided tour using the information in its demonstration
- database.
- Then in :ref:`ch-real` you can try out a real case, from scratch in a new database,
+ If you're not a systems administrator, or if you've already installed
+ Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and
+ move straight to the next chapter, :ref:`ch-guided`. 
+ There, you're taken on a step-by-step guided tour using the information 
+ in its demonstration database.
+ 
+ If you've already used Open ERP (or Tiny ERP) a bit then you can move
+ past that to the third chapter in this part of the book.
+ In :ref:`ch-real` you can try out a real case, from scratch in a new database,
  by developing a complete business workflow that runs from purchase to sale of goods.
+ 
+ .. figure:: images/sect1_outline.png
+   :align: center
+
+   *Options for reading this part of the book*
 
 .. toctree::
     :maxdepth: 1

@@ -16,7 +16,7 @@ prepayments, cascaded rebates, seasonal promotions, and progressive price reduct
    * Refund: reduction on the order line or invoice line if a certain quantity of goods is purchased
      at one time or is sold in a framework of a promotional activity.
 
-   * Reduction: A one-off reduction resulting from a quality defect or a variation in a product's
+   * Reduction: a one-off reduction resulting from a quality defect or a variation in a product's
      conformance to a specification.
 
 Intelligent price management is difficult, because it requires you to integrate several conditions

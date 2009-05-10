@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_balance"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Accounting and financial management-Compare Accounts (*account_balance*)
 ========================================================================
@@ -37,6 +48,16 @@ Description
       4. You can select periods as an actual date or periods as creation date.
   
       5. You have an option to print the desired report in Landscape format.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/account_balance.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/account_balance.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_balance.zip>`_
+
 
 Dependencies
 ------------

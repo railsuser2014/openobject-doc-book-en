@@ -80,7 +80,7 @@ Instalando Bazaar
 .. i18n:    single: Installation; Bazaar
 .. i18n: .. 
 
-.. Indice::
+.. index::
    single: Bazaar; instalación
    single: Instalación; Bazaar
 

@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/board_dm"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Board for DM users (*board_dm*)
 ===============================
@@ -25,14 +36,21 @@ Description
 ::
 
   This module implements a dashboard for campaign manager that includes:
-      * List of campaigns that have started at max 2 month ago and those that will start in the 
-        2 month to come
+      * List of campaigns that have started at max 2 month ago and those that will start in the 2 month to come
       * List of the tasks of the day
       * List of  the tasks with a deadline passed
       
   This module implements a dashboard for offer manager that includes:
       * Offers
       * Offer Ideas
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/board_dm.zip>`_
+
 
 Dependencies
 ------------

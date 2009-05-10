@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock_no_autopicking"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Stock No Auto-Picking (*stock_no_autopicking*)
 ==============================================
@@ -24,11 +35,22 @@ Description
 
 ::
 
-  This module allows an intermediate picking process to provide raw materials to production orders.
+  This module allows an intermediate picking process to provide raw materials
+      to production orders.
   
-  One example of usage of this module is to manage production made by your suppliers (sub-contracting). 
-  To achieve this, set the assembled productwhich is sub-contracted to "No Auto-Picking" and put the 
-  location of the supplier in the routing of the assembly operation.
+      One example of usage of this module is to manage production made by your
+      suppliers (sub-contracting). To achieve this, set the assembled product
+      which is sub-contracted to "No Auto-Picking" and put the location of the
+      supplier in the routing of the assembly operation.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 <http://www.openerp.com/download/modules/5.0/stock_no_autopicking.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/stock_no_autopicking.zip>`_
+
 
 Dependencies
 ------------

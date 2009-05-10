@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/stock_planning"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Master Procurement Schedule (*stock_planning*)
 ==============================================
@@ -24,12 +35,21 @@ Description
 
 ::
 
-  This module allows you to manage the planning of procurements based on sales forecasts, confirmed 
-  orders (customers and suppliers), stock movements, etc.
-  You can planify expected outputs and inputs for each warehouses. 
-  It also worksto manage all kind of procurements like purchase orders. 
-  That's why it is called Master Procurement Schedule instead of the classic Master Production Schedule 
-  therminology.
+  This module allows you to manage the planning of procurements based on sales
+  forecasts, confirmed orders (customers and suppliers), stock movements, etc.
+  You can planify expected outputs and inputs for each warehouses. It also works
+  to manage all kind of procurements like purchase orders. That's why it is
+  called Master Procurement Schedule instead of the classic Master Production
+  Schedule therminology.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/stock_planning.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/stock_planning.zip>`_
+
 
 Dependencies
 ------------

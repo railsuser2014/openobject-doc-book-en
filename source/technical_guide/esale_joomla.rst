@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/esale_joomla"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 eSale Interface - Joomla (*esale_joomla*)
 =========================================
@@ -15,7 +26,7 @@ eSale Interface - Joomla (*esale_joomla*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: esale_joomla
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,12 +36,22 @@ Description
 ::
 
   Joomla (Virtuemart) eCommerce interface synchronisation.
-  Users can order on the website, orders are automatically imported in Tiny ERP.
+  Users can order on the website, orders are automatically imported in Tiny
+  ERP.
   
   You can export products, product's categories, account taxes,  stock level and create links between
   categories of products, taxes and languages.
   
   If you product has an image attched, it send the image to the Joomla website.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/esale_joomla.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/esale_joomla.zip>`_
+
 
 Dependencies
 ------------
@@ -50,16 +71,33 @@ None
 Menus
 -------
 
-
-None
-
+ * Sales Management/eSale
+ * Sales Management/eSale/Definition
+ * Sales Management/eSale/Definition/Web Shop
+ * Sales Management/eSale/Definition/Web Product
+ * Sales Management/eSale/eSale Orders
+ * Sales Management/eSale/eSale Orders/Draft eSale Orders
+ * Sales Management/eSale/Synchronisation
+ * Sales Management/eSale/Synchronisation/Website Export log
+ * Sales Management/eSale/Synchronisation/Export Product Categories
+ * Sales Management/eSale/Synchronisation/Export Tax
+ * Sales Management/eSale/Synchronisation/Export Products
+ * Sales Management/eSale/Synchronisation/Export Inventory Level
+ * Sales Management/eSale/Synchronisation/Import eSales Orders
 
 Views
 -----
 
-
-None
-
+ * \* INHERIT product.normal.form (form)
+ * esale_joomla.web.form (form)
+ * esale_joomla.product.form (form)
+ * esale_joomla.product.tree (tree)
+ * esale_joomla.order.tree (tree)
+ * esale_joomla.order.form (form)
+ * esale_joomla.order.line.form (form)
+ * esale_joomla.order.line.tree (tree)
+ * esale_joomla.web.exportlog.form (form)
+ * esale_joomla.web.exportlog.tree (tree)
 
 
 Objects

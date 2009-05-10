@@ -9,8 +9,13 @@ You should be able to build the untranslated documentation. So `Sphinx
 <http://sphinx.pocoo.org>`_ should be installed on your system and you should
 know how to use it.
 
-If this is not the case, please read the `Community Guide
+If this is not the case, please read the `Community Guide's related section
 <http://doc.openerp.com/contribute/documentation_process.html#building-the-documentation>`_.
+
+You can download the sources of the documentation from launchpad:
+
+  bzr branch lp:openobject-doc
+
 
 Understanding the directory structure
 -------------------------------------
@@ -122,10 +127,23 @@ For example, in *i18n/fr*, you just have to do a simple *make*::
 
 And the html documentation will be built in *i18n/fr/build/html*.
 
+Uploading to Launchpad
+----------------------
+
+Once you have translated a few pages, you should commit back to launchpad.
+To do this, your launchpad account must be subscribed in the openobject-community group.
+
+To upload your modifications, you should commit on launchpad:
+
+  bzr add YOUR_NEW_FILES_OR_DIR
+  bzr ci
+  bzr push
+
 Status
 ------
 
 At the moment, this script is in alpha status and has not been thoroughly
 tested. It should work but expect some bugs to pop up at unexpected times.
+Contact oli AT openerp.com if you notice some troubles.
 
 

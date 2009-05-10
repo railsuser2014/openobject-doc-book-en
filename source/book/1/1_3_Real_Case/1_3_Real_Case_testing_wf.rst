@@ -36,9 +36,9 @@ New Purchase Order` for a new Purchase Order form.
 
 Complete the following field:
 
-*  :guilabel:`Partner` : \ ``Plumbing Component Suppliers``\  .
+*  :guilabel:`Supplier` : \ ``Plumbing Component Suppliers``\  .
 
-As you complete the :guilabel:`Partner` field, Open ERP automatically completes the
+As you complete the :guilabel:`Supplier` field, Open ERP automatically completes the
 :guilabel:`Address` field and the :guilabel:`Price List` field from information it takes out of the
 Partner record. Then click on the :guilabel:`Save Parent Record.` icon to the right of
 the :guilabel:`Order Line` field. This automatically saves the body of the :guilabel:`Purchase
@@ -47,8 +47,9 @@ Order`, and changes to a :guilabel:`Create New Record.` icon. Click that to open
 
 Enter the following information
 
-*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then click the
-   :guilabel:`Search` icon at the end of the line to complete it,
+*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then 
+   press the tab key to complete it, or click the
+   :guilabel:`Search` icon at the end of the line to bring a search box,
 
 When you've selected a product on the product line, Open ERP automatically completes the following
 fields from information it finds in the Product record:
@@ -107,14 +108,14 @@ this would be somebody in Stores, who would:
 
 	#. When the :guilabel:`Packing` window appears, select the name of the entry in the list 
 	   (\ ``PACK1``\   to display the Packing List itself – you'd usually do a search for the supplier name
-	   or order number in a list that was larger than this – then click :guilabel:`Validate` to load the
+	   or order number in a list that was larger than this – then click :guilabel:`Products Received` to load the
 	   :guilabel:`Make Packing` form.
 
 	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
 
 At this point you've accepted 10 units into your company, in a location that you've already seen.
 
-To check actual stock levels, use the menu :menuselection:`Stock Management --> Location Structure`,
+To check actual stock levels, use the menu :menuselection:`Stock Management --> Stock Locations Structure`,
 find \ ``Stock``\ in the hierarchy under :guilabel:`Physical Locations`,
 using the expand/collapse controls to make your way through
 the tree and click it. You'll next get a :guilabel:`View Stock of Products` screen, where you just
@@ -125,11 +126,11 @@ You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock``\
 :guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
 been made) – both \ ``10``\   in this case.
 
-Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises``\ line to highlight it
-(the line, not the \ ``Ambitious Plumbing Enterprises``\ text itself), and then click the 
+Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises`` \ line to highlight it
+(the line, not the \ ``Ambitious Plumbing Enterprises`` \ text itself), and then click the 
 :guilabel:`Lots by Location` button in the :guilabel:`Reports` to the top right of the form. 
 You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\ in the location
-\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises``\ , its parent
+\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises`` \ , its parent
 as shown in the figure :ref:`fig-lotsbyloc`.
 If you explore further you'll also see you have ``-10``\   pieces in the Partner Location \ ``Suppliers``\ .
 
@@ -168,7 +169,7 @@ receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 Now click the invoice for your order \ ``PO001``\  to display its contents. You can compare the
 goods that you've recorded there with the invoice received from your supplier. If there's a
 difference it's possible to change the order lines to, for example, add a delivery charge. Click
-:guilabel:`Validate` to confirm the invoice and put it into the \ ``Open``\   state.
+:guilabel:`Validate` to confirm the invoice and put it into the \ ``Open`` \   state.
 
 Accounting entries are generated automatically once the invoice is validated. To see the effects on
 your chart of accounts, use the menu :menuselection:`Financial Management --> Charts --> Chart of
@@ -226,7 +227,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 
 	#. Select the :guilabel:`Customer` \ ``Smith and Offspring``\  . This has the effect of automatically
 	   completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
-	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Default Sale Pricelist``\.  They're
+	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Public Pricelist``\.  They're
 	   all only defaults so these fields can be modified as you need.
 
 	#. Click the :guilabel:`Save parent record.` icon to the right of the
@@ -306,7 +307,7 @@ Then click the :guilabel:`Packing Done` button to reach the :guilabel:`Make Pack
 you click the :guilabel:`Make Picking` button to transfer the 6 radiators to the customer.
 
 To analyze stock movements that you've made during these operations use
-:menuselection:`Stock Management --> Locations Structure` to see that your stocks have reduced to
+:menuselection:`Stock Management --> Stock Locations Structure` to see that your stocks have reduced to
 4 radiators and the generic ``Customers`` location has a level of 6 radiators.
 
 Invoicing Goods

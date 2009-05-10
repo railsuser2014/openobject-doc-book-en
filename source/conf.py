@@ -60,32 +60,32 @@ today_fmt = '%Y-%m-%d'
 
 # List of documents that shouldn't be included in the build.
 unused_docs = [
-	'bi/openobject_module/openobject_module.rst',
-	'bi/installation/install_olap.rst',
-	'bi/installation/install_web.rst',
-	'book/content.rst',
-	'contents.rst',
-	'contribute/summary_of_ressources.rst',
-	'developer/7_School/index.rst',
-	'features/example.rst',
-	'features/repairs.rst',
-	'install/windows/allinone.rst',
-	'verticalisations/index.rst',
-
+  'bi/openobject_module/openobject_module.rst',
+  'bi/installation/install_olap.rst',
+  'bi/installation/install_web.rst',
+  'book/content.rst',
+  'contents.rst',
+  'contribute/summary_of_ressources.rst',
+  'developer/7_School/index.rst',
+  'features/example.rst',
+  'features/repairs.rst',
+  'install/windows/allinone.rst',
+  'verticalisations/index.rst',
 ]
+
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_trees = [
-    #'bi',
-    #'book',
-    #'customize',
-    #'install',
-    #'contribute',
-    #'developer',
-    #'features',
-    #'technical_guide',
-    #'verticalisations',
-    ]
+   #'bi',
+   #'book',
+   #'customize',
+   #'install',
+   #'contribute',
+   #'developer',
+   #'features',
+   #'technical_guide',
+   #'verticalisations',
+]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -195,7 +195,7 @@ latex_documents = [
    #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
    ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
    ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
-   #('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
+   ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
    ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
    #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
    ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
@@ -269,14 +269,52 @@ js_kit_comments = True
 
 def setup(app):
     from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+    import pickle
+
+    # load unique_path dict:
+    comments_path_pickle_filename = "comments_path.pickle"
+    if os.path.exists(comments_path_pickle_filename):
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'r')
+        comments_path_dict = pickle.load(comments_path_pickle_file)
+        comments_path_pickle_file.close()
+    else:
+        comments_path_dict = {}
+    this_build_comments_path_dict = {}
+
+    def save_comments_path_dict():
+        comments_path_pickle_file = open(comments_path_pickle_filename, 'w')
+        pickle.dump(comments_path_dict, comments_path_pickle_file)
+        comments_path_pickle_file.close()
+
+    import atexit
+    atexit.register(save_comments_path_dict)
 
     def depart_title_new(self, node):
-        old_depart_title(self, node) # call the original depart_title.
+        res = old_depart_title(self, node) # call the original depart_title.
+
         if self.builder.globalcontext.get('builder') == 'html':
             parent_class_name = node.parent.__class__.__name__
             if parent_class_name == 'section' and self.section_level == 2:
-                title_id = node.parent.attributes['ids'][0]
-                self.body.append(u"""<div class="js-kit-comments" path="/%s" ></div>""" % (title_id, ))
+                title_id = "/" + node.parent.attributes['ids'][0]
+                ## paths should be unique:
+                ## -> build a database (pickled dict) with already used paths and
+                ## create a new unique path if already used.
+                title_path = self.document['source']
+                path_start = title_path.find('%ssource%s' % (os.sep, os.sep))
+                title_path = title_path[path_start+8:].replace('.rst', '')
+
+                if title_id not in this_build_comments_path_dict: # first time we process this path
+                    title_id = comments_path_dict.get(title_id, title_id)
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+                else: # it's a double
+                    title_id = u"""/%s%s""" % (title_path, title_id, )
+                    this_build_comments_path_dict[title_id] = title_id
+                    comments_path_dict[title_id] = title_id
+
+                self.body.append(u"""<div class="js-kit-comments" path="%s" ></div>""" % (title_id, ))
+
+        return res
 
     if js_kit_comments:
         old_depart_title = HTMLTranslator.depart_title

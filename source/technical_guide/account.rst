@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Accounting and financial management (*account*)
 ===============================================
@@ -32,6 +43,16 @@ Description
       Budgets
       Customer and Supplier Invoices
       Bank statements
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/account.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/account.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account.zip>`_
+
 
 Dependencies
 ------------
@@ -114,8 +135,8 @@ Menus
  * Financial Management/Legal Statements/Generic Reports/Account Balance
  * Financial Management/Legal Statements/Generic Reports/General Ledger
  * Financial Management/Legal Statements/Generic Reports/Print Journal
- * Financial Management/Legal Statements/Generic Reports/Print Central journal
- * Financial Management/Legal Statements/Generic Reports/Print General journal
+ * Financial Management/Legal Statements/Generic Reports/Print Central Journal
+ * Financial Management/Legal Statements/Generic Reports/Print General Journal
  * Financial Management/Configuration/Financial Accounting/Periods
  * Financial Management/Configuration/Financial Accounting/Periods/Fiscal Years
  * Financial Management/Configuration/Financial Accounting/Periods/Periods
@@ -250,7 +271,7 @@ Views
  * account.fiscal.position.template.tree (tree)
  * account.invoice.calendar (calendar)
  * account.invoice.graph (graph)
- * Invoice lines (tree)
+ * account.invoice.line.tree (tree)
  * account.invoice.line.form (form)
  * account.invoice.tax.tree (tree)
  * account.invoice.tax.form (form)
@@ -276,6 +297,7 @@ Views
  * \* INHERIT product.normal.form.inherit (form)
  * \* INHERIT product.template.product.form.inherit (form)
  * \* INHERIT product.category.property.form.inherit (form)
+ * \* INHERIT ir.sequence.form (form)
 
 
 Objects
@@ -386,7 +408,7 @@ Object: Account Type (account.account.type)
 
 :sign: Sign on Reports, selection, required
 
-    *Allows to change the displayed amount of the balance in the reports, in order to see positive results instead of negative ones in expenses accounts.*
+    *Allows you to change the sign of the balance amount displayed in the reports, so that you can see positive figures instead of negative ones in expenses accounts.*
 
 
 
@@ -414,7 +436,7 @@ Object: account.tax (account.tax)
 
 :domain: Domain, char
 
-    *This field is only used if you develop your own module allowing developpers to create specific taxes in a custom domain.*
+    *This field is only used if you develop your own module allowing developers to create specific taxes in a custom domain.*
 
 
 
@@ -426,7 +448,7 @@ Object: account.tax (account.tax)
 
 :sequence: Sequence, integer, required
 
-    *The sequence field is used to order the taxes lines from the lowest sequences to the higher ones. The order is important if you have a tax that have several tax childs. In this case, the evaluation order is important.*
+    *The sequence field is used to order the tax lines from the lowest sequences to the higher ones. The order is important if you have a tax with several tax children. In this case, the evaluation order is important.*
 
 
 
@@ -436,9 +458,9 @@ Object: account.tax (account.tax)
 
 
 
-:child_depend: Tax on Childs, boolean
+:child_depend: Tax on Children, boolean
 
-    *Indicate if the tax computation is based on the value computed for the computation of child taxes or based on the total amount.*
+    *Set if the tax computation is based on the computation of child taxes rather than on the total amount.*
 
 
 
@@ -456,7 +478,7 @@ Object: account.tax (account.tax)
 
 :applicable_type: Applicable Type, selection, required
 
-    *If not applicable (computed through a Python code), the tax do not appears on the invoice.*
+    *If not applicable (computed through a Python code), the tax won't appear on the invoice.*
 
 
 
@@ -510,11 +532,11 @@ Object: account.tax (account.tax)
 
 :tax_group: Tax Group, selection
 
-    *If a default tax if given in the partner it only override taxes from account (or product) of the same group.*
+    *If a default tax is given in the partner it only overrides taxes from accounts (or products) in the same group.*
 
 
 
-:child_ids: Childs Tax Account, one2many
+:child_ids: Child Tax Accounts, one2many
 
 
 
@@ -540,7 +562,7 @@ Object: account.tax (account.tax)
 
 :name: Tax Name, char, required
 
-    *This name will be used to be displayed on reports*
+    *This name will be displayed on reports*
 
 
 
@@ -576,7 +598,7 @@ Object: account.tax (account.tax)
 
 :price_include: Tax Included in Price, boolean
 
-    *Check this is the price you use on the product and invoices is including this tax.*
+    *Check this if the price you use on the product and invoices includes this tax.*
 
 
 Object: Account (account.account)
@@ -592,7 +614,7 @@ Object: Account (account.account)
 
 :reconcile: Reconcile, boolean
 
-    *Check this account if the user can make a reconciliation of the entries in this account.*
+    *Check this if the user is allowed to reconcile entries in this account.*
 
 
 
@@ -608,31 +630,13 @@ Object: Account (account.account)
 
 
 
-:active: Active, boolean
-
-
-
-
-
 :check_history: Display History, boolean
 
     *Check this box if you want to print all entries when printing the General Ledger, otherwise it will only print its balance.*
 
 
 
-:diff: Difference of Opening Bal., float, readonly
-
-
-
-
-
-:child_id: Children Accounts, many2many, readonly
-
-
-
-
-
-:type1: Dr/Cr, selection
+:child_id: Child Accounts, many2many, readonly
 
 
 
@@ -692,7 +696,7 @@ Object: Account (account.account)
 
 
 
-:open_bal: Opening Balance, float
+:active: Active, boolean
 
 
 
@@ -730,11 +734,11 @@ Object: Account (account.account)
 
 :currency_mode: Outgoing Currencies Rate, selection, required
 
-    *This will select how is computed the current currency rate for outgoing transactions. In most countries the legal method is "average" but only a few softwares are able to manage this. So if you import from another software, you may have to use the rate at date. Incoming transactions, always use the rate at date.*
+    *This will select how the current currency rate for outgoing transactions is computed. In most countries the legal method is "average" but only a few software systems are able to manage this. So if you import from another software system you may have to use the rate at date. Incoming transactions always use the rate at date.*
 
 
 
-:balance: Closing Balance, float, readonly
+:balance: Balance, float, readonly
 
 
 
@@ -824,31 +828,25 @@ Object: Journal (account.journal)
 
 
 
-:fy_seq_id: Sequences, one2many
-
-
-
-
-
 :user_id: User, many2one
 
-    *The responsible user of this journal*
+    *The user responsible for this journal*
 
 
 
 :centralisation: Centralised counterpart, boolean
 
-    *Check this box if you want that each entry doesn't create a counterpart but share the same counterpart for each entry of this journal. This is used in fiscal year closing.*
+    *Check this box to determine that each entry of this journal won't create a new counterpart but will share the same counterpart. This is used in fiscal year closing.*
 
 
 
 :group_invoice_lines: Group invoice lines, boolean
 
-    *If this box is cheked, the system will try to group the accouting lines when generating them from invoices.*
+    *If this box is checked, the system will try to group the accounting lines when generating them from invoices.*
 
 
 
-:company_id: Company, many2one, required
+:company_id: Company, many2one
 
 
 
@@ -956,9 +954,15 @@ Object: Journal (account.journal)
 
 
 
+:invoice_sequence_id: Invoice Sequence, many2one
+
+    *The sequence used for invoice numbers in this journal.*
+
+
+
 :entry_posted: Skip 'Draft' State for Created Entries, boolean
 
-    *Check this box if you don't want that new account moves pass through the 'draft' state and goes direclty to the 'posted state' without any manual validation.*
+    *Check this box if you don't want new account moves to pass through the 'draft' state and instead goes directly to the 'posted state' without any manual validation.*
 
 
 Object: Fiscal Year (account.fiscalyear)
@@ -966,7 +970,7 @@ Object: Fiscal Year (account.fiscalyear)
 
 
 
-:date_stop: End date, date, required
+:date_stop: End Date, date, required
 
 
 
@@ -990,15 +994,15 @@ Object: Fiscal Year (account.fiscalyear)
 
 
 
-:date_start: Start date, date, required
+:date_start: Start Date, date, required
 
 
 
 
 
-:company_id: Company, many2one, required
+:company_id: Company, many2one
 
-
+    *Keep empty if the fiscal year belongs to several companies.*
 
 
 
@@ -1008,7 +1012,7 @@ Object: Fiscal Year (account.fiscalyear)
 
 
 
-:state: Status, selection
+:state: Status, selection, readonly
 
 
 
@@ -1018,7 +1022,7 @@ Object: Account period (account.period)
 
 
 
-:date_stop: End of period, date, required
+:date_stop: End of Period, date, required
 
 
 
@@ -1036,25 +1040,19 @@ Object: Account period (account.period)
 
 
 
-:date_start: Start of period, date, required
-
-
-
-
-
-:company_id: Company, many2one, required
-
-
-
-
-
-:fiscalyear_id: Fiscal Year, many2one, required
+:date_start: Start of Period, date, required
 
 
 
 
 
 :state: Status, selection, readonly
+
+
+
+
+
+:fiscalyear_id: Fiscal Year, many2one, required
 
 
 
@@ -1076,13 +1074,19 @@ Object: Journal - Period (account.journal.period)
 
 
 
+:state: Status, selection, required, readonly
+
+
+
+
+
 :journal_id: Journal, many2one, required
 
 
 
 
 
-:state: Status, selection, required, readonly
+:fiscalyear_id: Fiscal Year, many2one
 
 
 
@@ -1123,6 +1127,12 @@ Object: Account Entry (account.move)
 
 
 :ref: Ref, char
+
+
+
+
+
+:company_id: Company, many2one, required
 
 
 
@@ -1186,7 +1196,7 @@ Object: Account Reconciliation (account.move.reconcile)
 
 
 
-:line_id: Entry lines, one2many
+:line_id: Entry Lines, one2many
 
 
 
@@ -1244,7 +1254,7 @@ Object: Tax Code (account.tax.code)
 
 
 
-:child_ids: Childs Codes, one2many
+:child_ids: Child Codes, one2many
 
 
 
@@ -1264,7 +1274,7 @@ Object: Tax Code (account.tax.code)
 
 :notprintable: Not Printable in Invoice, boolean
 
-    *Check this box if you don't want that any vat related to this Tax Code appears on invoices*
+    *Check this box if you don't want any VAT related to this Tax Code to appear on invoices*
 
 
 
@@ -1338,7 +1348,7 @@ Object: Account Model Entries (account.model.line)
 
 :sequence: Sequence, integer, required
 
-    *The sequence field is used to order the resources from the lowest sequences to the higher ones*
+    *The sequence field is used to order the resources from lower sequences to higher ones*
 
 
 
@@ -1386,7 +1396,7 @@ Object: Account Model Entries (account.model.line)
 
 :amount_currency: Amount Currency, float
 
-    *The amount expressed in an optionnal other currency.*
+    *The amount expressed in an optional other currency.*
 
 
 
@@ -1398,7 +1408,7 @@ Object: Account Model Entries (account.model.line)
 
 :quantity: Quantity, float
 
-    *The optionnal quantity on entries*
+    *The optional quantity on entries*
 
 
 Object: Account Subscription (account.subscription)
@@ -1430,13 +1440,13 @@ Object: Account Subscription (account.subscription)
 
 
 
-:date_start: Starting date, date, required
+:date_start: Start Date, date, required
 
 
 
 
 
-:period_total: Number of period, integer, required
+:period_total: Number of Periods, integer, required
 
 
 
@@ -1454,7 +1464,7 @@ Object: Account Subscription (account.subscription)
 
 
 
-:ref: Ref., char
+:ref: Ref, char
 
 
 
@@ -1486,13 +1496,13 @@ Object: account.config.wizard (account.config.wizard)
 
 
 
-:date1: Starting Date, date, required
+:date1: Start Date, date, required
 
 
 
 
 
-:date2: Ending Date, date, required
+:date2: End Date, date, required
 
 
 
@@ -1546,7 +1556,7 @@ Object: account.tax.template (account.tax.template)
 
 :sequence: Sequence, integer, required
 
-    *The sequence field is used to order the taxes lines from the lowest sequences to the higher ones. The order is important if you have a tax that have several tax children. In this case, the evaluation order is important.*
+    *The sequence field is used to order the taxes lines from lower sequences to higher ones. The order is important if you have a tax that has several tax children. In this case, the evaluation order is important.*
 
 
 
@@ -1556,15 +1566,15 @@ Object: account.tax.template (account.tax.template)
 
 
 
-:child_depend: Tax on Childs, boolean
+:child_depend: Tax on Children, boolean
 
     *Indicate if the tax computation is based on the value computed for the computation of child taxes or based on the total amount.*
 
 
 
-:include_base_amount: Include in base amount, boolean
+:include_base_amount: Include in Base Amount, boolean
 
-    *Indicate if the amount of tax must be included in the base amount for the computation of the next taxes.*
+    *Set if the amount of tax must be included in the base amount before computing the next taxes.*
 
 
 
@@ -1628,7 +1638,7 @@ Object: account.tax.template (account.tax.template)
 
 
 
-:type_tax_use: Tax Use in, selection
+:type_tax_use: Tax Use In, selection, required
 
 
 
@@ -1748,7 +1758,7 @@ Object: Templates for Accounts (account.account.template)
 
 :reconcile: Allow Reconciliation, boolean
 
-    *Check this option if the user can make a reconciliation of the entries in this account.*
+    *Check this option if you want the user to reconcile entries in this account.*
 
 
 Object: Tax Code Template (account.tax.code.template)
@@ -1774,7 +1784,7 @@ Object: Tax Code Template (account.tax.code.template)
 
 
 
-:child_ids: Childs Codes, one2many
+:child_ids: Child Codes, one2many
 
 
 
@@ -1788,7 +1798,7 @@ Object: Tax Code Template (account.tax.code.template)
 
 :notprintable: Not Printable in Invoice, boolean
 
-    *Check this box if you don't want that any vat related to this Tax Code appears on invoices*
+    *Check this box if you don't want any VAT related to this Tax Code to appear on invoices*
 
 
 
@@ -1878,7 +1888,7 @@ Object: Template for Fiscal Position (account.fiscal.position.template)
 
 
 
-:tax_ids: Taxes Mapping, one2many
+:tax_ids: Tax Mapping, one2many
 
 
 
@@ -1890,13 +1900,13 @@ Object: Template for Fiscal Position (account.fiscal.position.template)
 
 
 
-:account_ids: Accounts Mapping, one2many
+:account_ids: Account Mapping, one2many
 
 
 
 
-Object: Fiscal Position Template Taxes Mapping (account.fiscal.position.tax.template)
-#####################################################################################
+Object: Fiscal Position Template Tax Mapping (account.fiscal.position.tax.template)
+###################################################################################
 
 
 
@@ -1917,8 +1927,8 @@ Object: Fiscal Position Template Taxes Mapping (account.fiscal.position.tax.temp
 
 
 
-Object: Fiscal Position Template Accounts Mapping (account.fiscal.position.account.template)
-############################################################################################
+Object: Fiscal Position Template Account Mapping (account.fiscal.position.account.template)
+###########################################################################################
 
 
 
@@ -2000,7 +2010,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:code: Account code, char
+:code: Account Code, char
 
 
 
@@ -2012,7 +2022,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:quantity_max: Maximal quantity, float
+:quantity_max: Maximum Quantity, float
 
 
 
@@ -2066,7 +2076,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:partner_id: Associated partner, many2one
+:partner_id: Associated Partner, many2one
 
 
 
@@ -2114,7 +2124,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:parent_id: Parent analytic account, many2one
+:parent_id: Parent Analytic Account, many2one
 
 
 
@@ -2126,7 +2136,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:complete_name: Account Name, char, readonly
+:complete_name: Full Account Name, char, readonly
 
 
 
@@ -2156,7 +2166,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:type: Account type, selection
+:type: Account Type, selection
 
 
 
@@ -2186,7 +2196,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:child_ids: Childs Accounts, one2many
+:child_ids: Child Accounts, one2many
 
 
 
@@ -2246,7 +2256,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:name: Account name, char, required
+:name: Account Name, char, required
 
 
 
@@ -2276,7 +2286,7 @@ Object: Analytic Accounts (account.analytic.account)
 
 
 
-:line_ids: Analytic entries, one2many
+:line_ids: Analytic Entries, one2many
 
 
 
@@ -2298,24 +2308,6 @@ Object: account.analytic.journal (account.analytic.journal)
 
 
 
-:code: Journal code, char
-
-
-
-
-
-:name: Journal name, char, required
-
-
-
-
-
-:company_id: Company, many2one
-
-
-
-
-
 :active: Active, boolean
 
 
@@ -2328,9 +2320,21 @@ Object: account.analytic.journal (account.analytic.journal)
 
 
 
+:code: Journal code, char
+
+
+
+
+
 :type: Type, selection, required
 
     *Gives the type of the analytic journal. When a document (eg: an invoice) needs to create analytic entries, Open ERP will look for a matching journal of the same type.*
+
+
+
+:name: Journal name, char, required
+
+
 
 
 Object: Fiscal Position (account.fiscal.position)
@@ -2338,7 +2342,7 @@ Object: Fiscal Position (account.fiscal.position)
 
 
 
-:tax_ids: Taxes Mapping, one2many
+:tax_ids: Tax Mapping, one2many
 
 
 
@@ -2356,7 +2360,7 @@ Object: Fiscal Position (account.fiscal.position)
 
 
 
-:account_ids: Accounts Mapping, one2many
+:account_ids: Account Mapping, one2many
 
 
 
@@ -2464,7 +2468,7 @@ Object: Invoice (account.invoice)
 
 :payment_term: Payment Term, many2one, readonly
 
-    *If you use payment terms, the due date will be computed automatically at the generation of accounting entries. If you keep the payment term and the due date empty, it means direct payment. The payment term may compute several due dates: 50% now, 50% in one month.*
+    *If you use payment terms, the due date will be computed automatically at the generation of accounting entries. If you keep the payment term and the due date empty, it means direct payment. The payment term may compute several due dates, for example 50% now, 50% in one month.*
 
 
 
@@ -2517,19 +2521,13 @@ Object: Invoice (account.invoice)
 
 
 
-:invoice_special: Special Invoice, boolean
-
-
-
-
-
 :fiscal_position: Fiscal Position, many2one
 
 
 
 
 
-:amount_untaxed: Untaxed, float, readonly
+:esale_oscom_web: Website, many2one
 
 
 
@@ -2567,17 +2565,12 @@ Object: Invoice (account.invoice)
 
 :partner_bank: Bank Account, many2one
 
-    *The bank account to pay to or to be paid from*
+    *The partner bank account to pay
+    Keep empty to use the default*
 
 
 
 :abstract_line_ids: Invoice Lines, one2many, readonly
-
-
-
-
-
-:internal_note: Internal Note, text
 
 
 
@@ -2637,7 +2630,7 @@ Object: Invoice (account.invoice)
 
 
 
-:user_id: Salesman, many2one
+:amount_untaxed: Untaxed, float, readonly
 
 
 
@@ -2667,6 +2660,12 @@ Object: Invoice (account.invoice)
 
 
 
+:user_id: Salesman, many2one
+
+
+
+
+
 :price_type: Price method, selection, required, readonly
 
 
@@ -2674,12 +2673,6 @@ Object: Invoice (account.invoice)
 
 
 :export_date: Export time, datetime
-
-
-
-
-
-:dept: Department, many2one
 
 
 
@@ -2815,12 +2808,6 @@ Object: Invoice line (account.invoice.line)
 
 
 
-:cci_special_reference: Special Reference, char
-
-
-
-
-
 :account_analytic_id: Analytic Account, many2one, required
 
 
@@ -2941,13 +2928,13 @@ Object: Invoice Tax (account.invoice.tax)
 
 :base_code_id: Base Code, many2one
 
-    *The case of the tax declaration.*
+    *The account basis of the tax declaration.*
 
 
 
 :tax_code_id: Tax Code, many2one
 
-    *The case of the tax declaration.*
+    *The tax basis of the tax declaration.*
 
 
 
@@ -2970,12 +2957,6 @@ Object: Invoice Tax (account.invoice.tax)
 
 Object: Bank Statement (account.bank.statement)
 ###############################################
-
-
-
-:coda_id: Coda, many2one
-
-
 
 
 
@@ -3247,9 +3228,15 @@ Object: Entry lines (account.move.line)
 
 
 
+:company_id: Company, many2one, required
+
+
+
+
+
 :currency_id: Currency, many2one
 
-    *The optionnal other currency if it is a multi-currency entry.*
+    *The optional other currency if it is a multi-currency entry.*
 
 
 
@@ -3361,12 +3348,6 @@ Object: Entry lines (account.move.line)
 
 
 
-:case_id: Registration, many2many
-
-
-
-
-
 :period_id: Period, many2one, required
 
 
@@ -3453,7 +3434,7 @@ Object: Entry lines (account.move.line)
 
 :amount_currency: Amount Currency, float
 
-    *The amount expressed in an optionnal other currency if it is a multi-currency entry.*
+    *The amount expressed in an optional other currency if it is a multi-currency entry.*
 
 
 
@@ -3604,5 +3585,27 @@ Object: Analytic account costs and revenues (report.hr.timesheet.invoice.journal
 
 
 :name: Month, date, readonly
+
+
+
+
+Object: account.sequence.fiscalyear (account.sequence.fiscalyear)
+#################################################################
+
+
+
+:sequence_id: Sequence, many2one, required
+
+
+
+
+
+:fiscalyear_id: Fiscal Year, many2one, required
+
+
+
+
+
+:sequence_main_id: Main Sequence, many2one, required
 
 

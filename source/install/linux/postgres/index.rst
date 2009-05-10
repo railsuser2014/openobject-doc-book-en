@@ -62,6 +62,9 @@ Option explanations:
 You can now start the Open ERP Server. You will probably need to modify the
 Open ERP configuration file to your need.
 
+.. tip:: You can find information on configuration files in the Developer Book,
+   section :ref:`Configuration <configuration-files-link>`
+
 Case insensitive searches issue
 +++++++++++++++++++++++++++++++
 

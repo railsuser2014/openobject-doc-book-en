@@ -390,62 +390,60 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 	The duplication function can be applied to all the system documents: you can duplicate anything –
 	a product, an order, or a delivery.
 
-.. note:: Some points
+.. note:: Duplicating invoices
 
-	#. Duplicating invoices
+	Instead of entering a new invoice each time, you can base an invoice on a similar preceding one
+	and duplicate it. To do this, first search for a suitable existing one. In the web client, show
+	the invoice in read-only (non-editable) form view, then click :guilabel:`Duplicate`. In the GTK client,
+	select :menuselection:`Form --> Duplicate` from the top menu.
 
-		Instead of entering a new invoice each time, you can base an invoice on a similar preceding one
-		and duplicate it. To do this, first search for a suitable existing one. In the web client, show
-		the invoice in read-only (non-editable) form view, then click :guilabel:`Duplicate`. In the GTK client,
-		select :menuselection:`Form --> Duplicate` from the top menu.
+	The duplication creates a new invoice in the ``Draft`` state. That enables you to modify it before
+	approving it. Duplicating documents in Open ERP is an intelligent function, which enables the
+	duplicated invoice to be given its own sequence number, today's date, and the draft state, even if
+	the preceding invoice has been paid.
 
-		The duplication creates a new invoice in the ``Draft`` state. That enables you to modify it before
-		approving it. Duplicating documents in Open ERP is an intelligent function, which enables the
-		duplicated invoice to be given its own sequence number, today's date, and the draft state, even if
-		the preceding invoice has been paid.
+.. note:: Saving partner preferences
 
-	#. Saving partner preferences
+	Open ERP has many functions to help you enter data quickly. If you invoice the same products
+	frequently for the same partner you can save the last invoice preferences using conditional
+	default values.
 
-		Open ERP has many functions to help you enter data quickly. If you invoice the same products
-		frequently for the same partner you can save the last invoice preferences using conditional
-		default values.
+	To test this functionality, create an invoice for a partner and add some lines
+	(from the GTK client). Then hold
+	:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select 
+	:guilabel:`Set as default`. Check the box that indicates this default should apply only to you.
 
-		To test this functionality, create an invoice for a partner and add some lines
-		(from the GTK client). Then hold
-		:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select 
-		:guilabel:`Set as default`. Check the box that indicates this default should apply only to you.
+	Then the next time you create an invoice these invoice lines will be
+	automatically created and you'll only have to modify the quantities before confirming the invoice.
 
-		Then the next time you create an invoice these invoice lines will be
-		automatically created and you'll only have to modify the quantities before confirming the invoice.
-
-		For taxes you could put the default amount in the invoice lines (in France it would be
-		19.6%, in Belgium 21%, in the UK 17.5% or 15%). Doing this you won't forget to add tax when you're
-		manually entering invoices.
+	For taxes you could put the default amount in the invoice lines (in France it would be
+	19.6%, in Belgium 21%, in the UK 17.5% or 15%). Doing this you won't forget to add tax when you're
+	manually entering invoices.
 		
-		(The capabilities of the GTK client are more extensive than those of the web client.
-		You can set defaults for multiple lines in the GTK client but only a single line in the web client,
-		so you need to be quite sure what is possible before you use this functionality routinely.)
+	(The capabilities of the GTK client are more extensive than those of the web client.
+	You can set defaults for multiple lines in the GTK client but only a single line in the web client,
+	so you need to be quite sure what is possible before you use this functionality routinely.)
 
-	#. Getting information by navigating to it
+.. note:: Getting information by navigating to it
 
-		As you're creating an invoice you'll often find you need extra information about the partner to
-		help you complete the invoice. As described earlier, you can navigate to other
-		information linked to this partner, such as:
+	As you're creating an invoice you'll often find you need extra information about the partner to
+	help you complete the invoice. As described earlier, you can navigate to other
+	information linked to this partner, such as:
 
-		* tasks completed,
+	* tasks completed,
 
-		* benefit details,
+	* benefit details,
 
-		* most recent invoices,
+	* most recent invoices,
 
-		* latest orders.
+	* latest orders.
 
-		Do the same to get information about the products you're invoicing,. For example: is there enough
-		stock? When will you be getting more stocks in? What are the costs and normal list prices for this
-		product?
+	Do the same to get information about the products you're invoicing. For example: is there enough
+	stock? When will you be getting more stocks in? What are the costs and normal list prices for this
+	product?
 
-		By making this information easily accessible while you're invoicing, Open ERP greatly simplifies
-		your work in creating the invoice.
+	By making this information easily accessible while you're invoicing, Open ERP greatly simplifies
+	your work in creating the invoice.
 
 Creating a supplier invoice
 ---------------------------

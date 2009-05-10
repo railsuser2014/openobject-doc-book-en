@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/report_crm"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 CRM Management - Reporting (*report_crm*)
 =========================================
@@ -26,6 +37,16 @@ Description
 
   A module that adds new reports based on CRM cases.
       Case By section, Case By category
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/report_crm.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/report_crm.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/report_crm.zip>`_
+
 
 Dependencies
 ------------
@@ -59,6 +80,10 @@ Views
  * report.crm.case.user.graph (graph)
  * report.crm.case.categ.tree (tree)
  * report.crm.case.categ.form (form)
+ * report.crm.case.section.tree (tree)
+ * report.crm.case.section.graph (graph)
+ * report.crm.case.service.dashboard.tree (tree)
+ * report.crm.case.service.dashboard.tree (tree)
 
 
 Objects
@@ -188,5 +213,121 @@ Object: Cases by section and category (report.crm.case.categ)
 
 
 :categ_id: Category, many2one, readonly
+
+
+
+
+Object: Cases by Section (report.crm.case.section)
+##################################################
+
+
+
+:nbr_cases: # of Cases, integer, readonly
+
+
+
+
+
+:delay_close: Delay to close, char, readonly
+
+
+
+
+
+:section_id: Section, many2one, readonly
+
+
+
+
+
+:perc_cancel: %Cancel, float, readonly
+
+
+
+
+
+:avg_answers: Avg. Answers, integer, readonly
+
+
+
+
+
+:perc_done: %Done, float, readonly
+
+
+
+
+
+:name: Month, date, readonly
+
+
+
+
+Object: Report of Closed and Open CRM Cases within past 15 days (report.crm.case.service.dashboard)
+###################################################################################################
+
+
+
+:date_closed: Date Closed, datetime, readonly
+
+
+
+
+
+:user_id: Responsible, many2one, readonly
+
+
+
+
+
+:name: Description, char, readonly
+
+
+
+
+
+:date_deadline: Deadline, datetime, readonly
+
+
+
+
+
+:planned_revenue: Planned Revenue, float, readonly
+
+
+
+
+
+:planned_cost: Planned Costs, float, readonly
+
+
+
+
+
+:priority: Priority, char, readonly
+
+
+
+
+
+:state: Status, selection, readonly
+
+
+
+
+
+:date: Date, datetime, readonly
+
+
+
+
+
+:create_date: Create Date, datetime, readonly
+
+
+
+
+
+:partner_id: Partner, many2one, readonly
 
 

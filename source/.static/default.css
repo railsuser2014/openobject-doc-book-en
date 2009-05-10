@@ -23,6 +23,28 @@
   visibility: hidden
 }
 
+td.search-exclude-tip {
+}
+
+td.search-exclude-tip span {
+  font-size: 8pt;
+  color: grey;
+  padding: 8px;
+}
+
+td.search-type {
+  vertical-align: top;
+}
+
+td.search-type span {
+  font-size: 8pt;
+  color: #333;
+}
+
+span.search-section-label{
+  color: red;
+}
+
 /*div.tiny-global-comment-area {*/
 /*  border: 1px solid black;*/
 /*  background-color: #e6e6e6;*/

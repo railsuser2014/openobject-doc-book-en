@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/crm_profiling"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 crm_profiling management (*crm_profiling*)
 ==========================================
@@ -25,14 +36,25 @@ Description
 ::
 
   This module allow users to perform segmentation within partners.
-  It use the profiles criteria from the earlier segmentation module and improve it thanks to the new 
-  concept of questionnaire. 
-  You can now regroup questions into a questionnaire and directly use it on a partner.
+      It use the profiles criteria from the earlier segmentation module and improve it thanks to the new concept of questionnaire. You can now regroup questions into a questionnaire and directly use it on a partner.
   
-  It also has been merged with the earlier CRM & SRM segmentation tool because they were overlapping.
-  The menu items related are in "CRM & SRM\Configuration\Segmentations"
-      * Note: this module is not compatible with the module segmentation, since it's the same which 
-              has been renamed.
+      It also has been merged with the earlier CRM & SRM segmentation tool because they were overlapping.
+  
+  
+      The menu items related are in "CRM & SRM\Configuration\Segmentations"
+  
+  
+      * Note: this module is not compatible with the module segmentation, since it's the same which has been renamed.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/crm_profiling.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/crm_profiling.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/crm_profiling.zip>`_
+
 
 Dependencies
 ------------
@@ -79,25 +101,19 @@ Object: Question (crm_profiling.question)
 
 
 
-:open_question: Open Question, boolean
-
-
-
-
-
 :name: Question, char, required
-
-
-
-
-
-:target: Target, selection, required
 
 
 
 
 Object: Questionnaire (crm_profiling.questionnaire)
 ###################################################
+
+
+
+:first: First question, many2one
+
+
 
 
 
@@ -123,7 +139,7 @@ Object: Answer (crm_profiling.answer)
 
 
 
-:text: Open Answer, text
+:next: Next question, many2one
 
 
 

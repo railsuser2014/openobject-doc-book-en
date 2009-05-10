@@ -7,9 +7,7 @@ Module Technical Guide: Introspection report on objects
 .. toctree::
     :maxdepth: 1
 
-    Ampco
     account
-    account_4_2_l10n_ch
     account_analytic_analysis
     account_analytic_default
     account_analytic_package
@@ -17,6 +15,7 @@ Module Technical Guide: Introspection report on objects
     account_analytic_progress
     account_asset
     account_balance
+    account_base
     account_bob_import
     account_budget
     account_cash_discount
@@ -25,8 +24,8 @@ Module Technical Guide: Introspection report on objects
     account_coda_2_1_d
     account_date_check
     account_followup
-    account_india_ledger
-    account_indian_report
+    account_india
+    account_invoice
     account_invoice_analytic_required
     account_invoice_layout
     account_invoice_number
@@ -34,16 +33,21 @@ Module Technical Guide: Introspection report on objects
     account_invoice_salesman
     account_journal_visibility
     account_l10nbe_domiciliation
+    account_multicompany
     account_payment
     account_payment_export
     account_payment_extension
     account_regularization
     account_report
+    account_report_india
     account_reporting
     account_reverse
     account_simulation
+    account_stock
     account_tax_include
     account_voucher
+    account_voucher_payment
+    account_voucher_workflow
     airport
     analytic_journal_billing_rate
     analytic_partners
@@ -67,6 +71,7 @@ Module Technical Guide: Introspection report on objects
     base_module_publish
     base_module_quality
     base_module_record
+    base_partner_gender
     base_partner_relation
     base_partner_sequence
     base_partner_surname
@@ -77,6 +82,7 @@ Module Technical Guide: Introspection report on objects
     base_translation
     base_url_menu
     base_vat
+    base_vat_unique
     board
     board_account
     board_association
@@ -87,7 +93,11 @@ Module Technical Guide: Introspection report on objects
     board_manufacturing
     board_project
     board_sale
+    board_service
     bookstore
+    c2c_budget
+    c2c_reporting_tools
+    c2c_scan_bvr
     cci_account
     cci_audittrail
     cci_base_contact
@@ -104,6 +114,10 @@ Module Technical Guide: Introspection report on objects
     cci_security
     cci_timesheet
     cci_translation
+    chemical
+    chricar_partner_parent_companies
+    chricar_product_gtin
+    chricar_product_image
     city
     commission_pricelist
     commission_rate
@@ -119,9 +133,15 @@ Module Technical Guide: Introspection report on objects
     demo_setup
     discount_campaign
     dm
+    dm_crm
+    dm_email
+    dm_emailvision
+    dm_lead
+    dm_website
     document
     document_extension
     document_ics
+    document_rule
     document_webdav_old
     ecommerce
     edi
@@ -130,13 +150,18 @@ Module Technical Guide: Introspection report on objects
     esale_ez
     esale_joomla
     esale_osc
+    etl_interface
     event
     event_project
+    fashion
     flagey
     fleet_maintenance
     game_scenario
     gnucash
+    google_blogger
+    google_calendar
     google_map
+    health
     hotel
     hotel_housekeeping
     hotel_restaurant
@@ -162,9 +187,7 @@ Module Technical Guide: Introspection report on objects
     invoice_sequence
     l10n_be
     l10n_ca-qc
-    l10n_ch_vat_brut
-    l10n_ch_vat_forfait
-    l10n_ch_vat_net
+    l10n_ch
     l10n_chart_at
     l10n_chart_au
     l10n_chart_be_frnl
@@ -200,7 +223,14 @@ Module Technical Guide: Introspection report on objects
     l10n_chart_us_ucoa
     l10n_chart_us_ucoa_ez
     l10n_chart_ve
+    l10n_ch_chart_c2c_pcg
+    l10n_ch_vat_brut
+    l10n_ch_vat_forfait
+    l10n_ch_vat_net
+    l10n_ch_zip_and_bank
     l10n_fr
+    l10n_fr_account_generation
+    l10n_fr_export
     l10n_fr_pcg
     l10n_fr_tva_franchise
     l10n_fr_tva_reel
@@ -209,7 +239,9 @@ Module Technical Guide: Introspection report on objects
     l10n_simple
     label
     library
+    loan
     lunch
+    magento_openerp_synchro
     maintenance_editor
     marketing
     md_hr_contract
@@ -219,6 +251,7 @@ Module Technical Guide: Introspection report on objects
     membership_card
     merge_picking
     mrp
+    mrp_bom_customization
     mrp_jit
     mrp_operations
     mrp_prodlot_autosplit
@@ -230,10 +263,18 @@ Module Technical Guide: Introspection report on objects
     multi_company_currency
     multi_company_hr_timesheet_sheet
     multi_company_project
+    multilogin_portal
     network
+    olap
+    olap_crm
+    olap_extract
+    olap_sale
+    partner_informations
     partner_layout
     partner_ldap
+    partner_nace
     partner_spam
+    personal_base
     point_of_sale
     portal
     portal_account
@@ -249,15 +290,17 @@ Module Technical Guide: Introspection report on objects
     product_extended
     product_gtin
     product_index
+    productivity_analysis
     product_listprice_upgrade
     product_lot_foundry
     product_margin
     product_qt
     product_search_reference
+    product_series
     product_size
+    product_variant_configurator
     product_variant_multi
     product_visible_discount
-    productivity_analysis
     profile_accounting
     profile_ampco
     profile_association
@@ -271,7 +314,9 @@ Module Technical Guide: Introspection report on objects
     profile_indian_account
     profile_manufacturing
     profile_service
+    proforma_followup
     project
+    project_contact
     project_gtd
     project_mrp
     project_retro_planning
@@ -283,6 +328,7 @@ Module Technical Guide: Introspection report on objects
     purchase_delivery
     purchase_discount
     purchase_journal
+    purchase_number
     purchase_tax_include
     purchase_tender
     radiotv
@@ -319,16 +365,20 @@ Module Technical Guide: Introspection report on objects
     sale_layout
     sale_margin
     sale_margin_delivery
+    sale_numbers
     sale_payment
+    sale_product_multistep_configurator
     sale_rebate
-    sale_supplier_direct_delivery
-    sale_tax_include
-    sale_wo_production
     sales_purchase_seq
     sales_server_action
+    sale_supplier_direct_delivery
+    sale_tax_include
+    sale_wo_prices
+    sale_wo_production
     sandwich
     scrum
     segmentation
+    smsclient
     smtpclient
     stock
     stock_invoice_directly
@@ -339,7 +389,10 @@ Module Technical Guide: Introspection report on objects
     test_44
     tiny_purchase
     travel
+    use_control
     users_ldap
+    virustotal
     warning
     webmail
     wiki
+    zarafa

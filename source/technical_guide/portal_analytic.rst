@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/portal_analytic"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Portal Management - Analytic Entries (*portal_analytic*)
 ========================================================
@@ -15,7 +26,7 @@ Portal Management - Analytic Entries (*portal_analytic*)
 :Version: 5.0.0.1
 :Author: Tiny
 :Directory: portal_analytic
-:Web: http://www.openerp.com//
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -25,6 +36,14 @@ Description
 ::
 
   Potal Management - Service company specific data for analytic accounting.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/portal_analytic.zip>`_
+
 
 Dependencies
 ------------
@@ -50,9 +69,7 @@ Menus
 Views
 -----
 
-
-None
-
+ * portal.account.analytic.account.form (form)
 
 
 Objects

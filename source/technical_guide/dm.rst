@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/dm"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Direct Marketing (*dm*)
 =======================
@@ -15,7 +26,7 @@ Direct Marketing (*dm*)
 :Version: 5.0.1.0
 :Author: Tiny
 :Directory: dm
-:Web: http://www.openerp.com/
+:Web: http://www.openerp.com
 :Official module: no
 :Quality certified: no
 
@@ -35,22 +46,31 @@ Description
   
           * Marketing Campaign
               - Plan your Marketing Campaign and Commercial Propositions
-              - Generate the Retro planning (automaticaly creates all the tasks 
-                necessary to launch your campaign)
+              - Generate the Retro planning (automaticaly creates all the tasks necessary to launch your campaign)
               - Assign automatic prices to the items of your commercial propositions
               - Auto generate the purchase orders for all the items of the campaign
               - Manage Customers Fils, segments and segmentation criteria
               - Create campaigns from campaign models
               - Manage copywriters, brokers, dealers, addresses deduplicators and cleaners
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/dm.zip>`_
+
+
 Dependencies
 ------------
 
  * :mod:`project_retro_planning`
- * :mod:`purchase`
  * :mod:`purchase_tender`
  * :mod:`base_language`
  * :mod:`document`
+ * :mod:`base_report_designer`
+ * :mod:`sale`
+ * :mod:`base_partner_gender`
 
 Reports
 -------
@@ -86,19 +106,17 @@ Menus
  * Direct Marketing/Offers/My Offer Ideas
  * Direct Marketing/Configuration/Offers/Edit Categories
  * Direct Marketing/Offers/Offer Categories
- * Direct Marketing/Configuration/Offer Steps
- * Direct Marketing/Configuration/Offer Steps/Documents
- * Direct Marketing/Configuration/Offer Steps/Documents/Edit document categories
- * Direct Marketing/Configuration/Offer Steps/Documents/All Documents
- * Direct Marketing/Configuration/Offer Steps/All Offer Step Types
- * Direct Marketing/Configuration/Offer Steps/All Offer Steps
- * Direct Marketing/Configuration/Offer Steps/Transition Trigger
- * Direct Marketing/Configuration/Offer Steps/All Items
- * Direct Marketing/Configuration/Offer Steps/All Manufacturing Constraints
- * Direct Marketing/Configuration/Offer Steps/All Offer Medias
+ * Direct Marketing/Configuration/Offers/Offer Steps
+ * Direct Marketing/Configuration/Offers/Offer Steps/All Offer Step Types
+ * Direct Marketing/Configuration/Offers/Offer Steps/All Offer Steps
+ * Direct Marketing/Configuration/Offers/Offer Steps/All Transition Triggers
+ * Direct Marketing/Configuration/Offers/Offer Steps/All Medias
+ * Direct Marketing/Configuration/Offers/Offer Steps/All Offer Step Action
  * Direct Marketing/Configuration/Campaigns
- * Direct Marketing/Configuration/Campaigns/Customers Lists
+ * Direct Marketing/Configuration/Customers Lists
  * Direct Marketing/Campaigns
+ * Direct Marketing/Configuration/Low Level
+ * Direct Marketing/Configuration/Low Level/Campaign Documents
  * Direct Marketing/Campaigns/All Campaigns
  * Direct Marketing/Campaigns/All Campaigns/Open Campaigns
  * Direct Marketing/Campaigns/All Campaigns/Draft Campaigns
@@ -116,23 +134,34 @@ Menus
  * Direct Marketing/Configuration/Campaigns/All Campaign Types
  * Direct Marketing/Configuration/Campaigns/All Overlays
  * Direct Marketing/Configuration/Campaigns/All Dealers
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Customers Lists Brokers
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Deduplicator
+ * Direct Marketing/Configuration/Customers Lists/All Customers Lists Brokers
+ * Direct Marketing/Configuration/Customers Lists/All Deduplicator
  * Direct Marketing/Configuration/Campaigns/All Campaign Prices Progression
  * Direct Marketing/Configuration/Campaigns/All Purchase Lines
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Customers Lists
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Customers List Type
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Customers List Recruiting Origin
- * Direct Marketing/Configuration/Campaigns/Customers Lists/All Customers Files
+ * Direct Marketing/Configuration/Customers Lists/All Customers Lists
+ * Direct Marketing/Configuration/Customers Lists/All Customers List Type
+ * Direct Marketing/Configuration/Customers Lists/All Customers List Recruiting Origin
+ * Direct Marketing/Configuration/Low Level/Campaign Documents/All Campaign Document Types
+ * Direct Marketing/Configuration/Low Level/Campaign Documents/All Campaign Documents
+ * Direct Marketing/Configuration/Customers Lists/All Customers Files
+ * Direct Marketing/Configuration/Campaigns/Overlay Payment Rule
  * Direct Marketing/Configuration/Customers
  * Direct Marketing/Configuration/Customers/All Customers
  * Direct Marketing/Configuration/Customers/All Customer Orders
  * Direct Marketing/Configuration/Customers/All Orders
+ * Direct Marketing/Configuration/Customers/All Customers Genders
+ * Direct Marketing/Configuration/Low Level/All Workitems
  * Direct Marketing/Configuration/Customers/All Segmentations
+ * Direct Marketing/Configuration/Low Level/Edit Events
  * Direct Marketing/Configuration/Campaigns/All Trademarks
- * Direct Marketing/Configuration/Offer Steps/Documents/All Document Dynamic Fields Templates
- * Direct Marketing/Configuration/Offer Steps/Documents/All Plugins
- * Direct Marketing/Configuration/Customers/All Customers' Plugins
+ * Direct Marketing/Configuration/Documents
+ * Direct Marketing/Configuration/Documents/Edit DTP Documents Categories
+ * Direct Marketing/Configuration/Documents/All DTP Documents
+ * Direct Marketing/Configuration/Documents/All DTP Plugins Template
+ * Direct Marketing/Configuration/Documents/All DTP Plugins
+ * Direct Marketing/Configuration/Customers/All Plugins Values
+ * Direct Marketing/Configuration/Mail Service
+ * Direct Marketing/Configuration/Mail Service/All Mail Services
 
 Views
 -----
@@ -148,24 +177,18 @@ Views
  * dm.offer.category.tree (tree)
  * dm.offer.history.form (form)
  * dm.offer.history.tree (tree)
- * dm.offer.document.category.form (form)
- * dm.offer.document.category.tree (tree)
- * dm.offer.document.form (form)
- * dm.offer.document.tree (tree)
  * dm.offer.step.type.form (form)
  * dm.offer.step.type.tree (tree)
  * dm.offer.step.tree (tree)
  * dm.offer.step.form (form)
  * dm.offer.step.transition.trigger.form (form)
  * dm.offer.step.transition.trigger.tree (tree)
- * dm.offer.step.history.form (form)
- * dm.offer.step.history.tree (tree)
- * dm.offer.step.item.tree (tree)
- * dm.offer.step.item.form (form)
- * dm.offer.step.manufacturing_constraint.form (form)
- * dm.offer.step.manufacturing_constraint.tree (tree)
  * dm.media.form (form)
  * dm.meida.tree (tree)
+ * \* INHERIT product.normal.form.inherit (form)
+ * \* INHERIT ir.actions.server.inherit (form)
+ * dm.offer.step.action.form (form)
+ * dm.offer.step.action.tree (tree)
  * dm.campaign.calendar (calendar)
  * dm.campaign.tree (tree)
  * dm.campaign.form (form)
@@ -192,30 +215,64 @@ Views
  * dm.customers_list.type.tree (tree)
  * dm.customers_list.recruit_origin.form (form)
  * dm.customers_list.recruit_origin.tree (tree)
+ * dm.campaign.document.type.form (form)
+ * dm.campaign.document.type.tree (tree)
+ * dm.campaign.document.form (form)
+ * dm.campaign.document.tree (tree)
  * dm.customers_file.form (form)
  * dm.customers_file.tree (tree)
  * \* INHERIT res.country.form.inherit (form)
  * \* INHERIT res.partner.form.inherit (form)
+ * dm.overlay.payment_rule.form (form)
+ * dm.overlay.payment_rule.tree (tree)
  * dm.customer.form (form)
  * dm.customer.tree (tree)
  * dm.customer.order.form (form)
  * dm.customer.order.tree (tree)
  * dm.order.form (form)
  * dm.order.tree (tree)
+ * dm.customer.gender.form (form)
+ * dm.customer.gender.tree (tree)
+ * dm.worktitem.form (form)
+ * dm.workitem.tree (tree)
  * dm.customer.segmentation.form (form)
  * dm.customer.segmentation.tree (tree)
+ * dm.event.tree (tree)
+ * dm.event.form (form)
  * dm.trademark.tree (tree)
  * dm.trademark.form (form)
+ * dm.offer.document.category.form (form)
+ * dm.offer.document.category.tree (tree)
+ * dm.offer.document.form (form)
+ * dm.offer.document.tree (tree)
  * dm.document.template.form (form)
  * dm.document.template.tree (tree)
  * dm.ddf.plugin.form (form)
  * dm.ddf.plugin.tree (tree)
- * dm.customer.plugin.form (form)
- * dm.customer.plugin.tree (tree)
+ * dm.plugins.value.form (form)
+ * dm.plugins.value.tree (tree)
+ * dm.mail_service.form (form)
+ * dm.mail_service.tree (tree)
 
 
 Objects
 -------
+
+Object: dm.media (dm.media)
+###########################
+
+
+
+:code: Code, char, required
+
+
+
+
+
+:name: Name, char, required
+
+
+
 
 Object: dm.trademark (dm.trademark)
 ###################################
@@ -223,6 +280,12 @@ Object: dm.trademark (dm.trademark)
 
 
 :code: Code, char, required
+
+
+
+
+
+:media_id: Media, many2one
 
 
 
@@ -253,16 +316,6 @@ Object: dm.trademark (dm.trademark)
 
 
 :partner_id: Partner, many2one
-
-
-
-
-Object: dm.media (dm.media)
-###########################
-
-
-
-:name: Media, char, required
 
 
 
@@ -352,6 +405,12 @@ Object: dm.offer (dm.offer)
 
 
 
+:production_cost_id: Production Cost, many2one
+
+
+
+
+
 :copywriter_id: Copywriter, many2one
 
 
@@ -388,12 +447,6 @@ Object: dm.offer (dm.offer)
 
 
 
-:production_cost: Production Cost, many2one
-
-
-
-
-
 :history_ids: History, one2many, readonly
 
 
@@ -401,6 +454,12 @@ Object: dm.offer (dm.offer)
 
 
 :type: Type, selection
+
+
+
+
+
+:lang_orig_id: Original Language, many2one
 
 
 
@@ -418,6 +477,12 @@ Object: dm.offer (dm.offer)
 
 
 
+:recommended_trademark_id: Recommended Trademark, many2one
+
+
+
+
+
 :child_ids: Childs Category, one2many
 
 
@@ -425,12 +490,6 @@ Object: dm.offer (dm.offer)
 
 
 :preoffer_offer_id: Offer, many2one
-
-
-
-
-
-:recommended_trademark: Recommended Trademark, many2one
 
 
 
@@ -449,12 +508,6 @@ Object: dm.offer (dm.offer)
 
 
 :order_date: Order Date, date
-
-
-
-
-
-:lang_orig: Original Language, many2one
 
 
 
@@ -581,6 +634,184 @@ Object: dm.offer.step.type (dm.offer.step.type)
 
 
 
+Object: dm.offer.step.action (dm.offer.step.action)
+###################################################
+
+
+
+:sms_server: SMS Server, many2one
+
+
+
+
+
+:code: Python Code, text
+
+    *Python code to be executed*
+
+
+
+:media_id: Media, many2one, required
+
+
+
+
+
+:sequence: Sequence, integer
+
+    *Important when you deal with multiple actions, the execution order will be decided based on this, low number is higher priority.*
+
+
+
+:child_ids: Other Actions, many2many
+
+
+
+
+
+:trigger_name: Trigger Name, selection
+
+    *Select the Signal name that is to be used as the trigger.*
+
+
+
+:record_id: Create Id, many2one
+
+    *Provide the field name where the record id is stored after the create operations. If it is empty, you can not track the new record.*
+
+
+
+:write_id: Write Id, char
+
+    *Provide the field name that the record id refers to for the write operation. If it is empty it will refer to the active id of the object.*
+
+
+
+:srcmodel_id: Model, many2one
+
+    *Object in which you want to create / write the object. If it is empty then refer to the Object field.*
+
+
+
+:message: Message, text
+
+    *Specify the message. You can use the fields from the object. e.g. `Dear [[ object.partner_id.name ]]`*
+
+
+
+:dm_action: Action, boolean
+
+
+
+
+
+:email_server: Email Server, many2one
+
+
+
+
+
+:model_id: Object, many2one, required
+
+    *Select the object on which the action will work (read, write, create).*
+
+
+
+:subject: Subject, char
+
+    *Specify the subject. You can use fields from the object, e.g. `Hello [[ object.partner_id.name ]]`*
+
+
+
+:loop_action: Loop Action, many2one
+
+    *Select the action that will be executed. Loop action will not be avaliable inside loop.*
+
+
+
+:fields_lines: Field Mappings., one2many
+
+
+
+
+
+:trigger_obj_id: Trigger On, many2one
+
+    *Select the object from the model on which the workflow will executed.*
+
+
+
+:name: Action Name, char, required
+
+    *Easy to Refer action by name e.g. One Sales Order -> Many Invoices*
+
+
+
+:mobile: Mobile No, char
+
+    *Provides fields that be used to fetch the mobile number, e.g. you select the invoice, then `object.invoice_address_id.mobile` is the field which gives the correct mobile number*
+
+
+
+:expression: Loop Expression, char
+
+    *Enter the field/expression that will return the list. E.g. select the sale order in Object, and you can have loop on the sales order line. Expression = `object.order_line`.*
+
+
+
+:server_action_id: Server Action, many2one
+
+
+
+
+
+:sms: SMS, char
+
+
+
+
+
+:wkf_model_id: Workflow On, many2one
+
+    *Workflow to be executed on this model.*
+
+
+
+:state: Action Type, selection, required
+
+    *Type of the Action that is to be executed*
+
+
+
+:condition: Condition, char, required
+
+    *Condition that is to be tested before action is executed, e.g. object.list_price > object.cost_price*
+
+
+
+:usage: Action Usage, char
+
+
+
+
+
+:type: Action Type, char, required
+
+
+
+
+
+:email: Email Address, char
+
+    *Provides the fields that will be used to fetch the email address, e.g. when you select the invoice, then `object.invoice_address_id.email` is the field which gives the correct address*
+
+
+
+:action_id: Client Action, many2one
+
+    *Select the Action Window, Report, Wizard to be executed.*
+
+
 Object: dm.offer.step (dm.offer.step)
 #####################################
 
@@ -592,7 +823,7 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
-:code: Code, char, readonly
+:manufacturing_constraint_ids: Mailing Manufacturing Products, many2many
 
 
 
@@ -604,43 +835,37 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
-:origin_id: Origin, many2one
+:seq: Step Type Sequence, integer
 
 
 
 
 
-:floating date: Floating date, boolean
+:type_id: Type, many2one, required
 
 
 
 
 
-:quotation: Quotation, char
+:flow_start: Flow Start, boolean
 
 
 
 
 
-:manufacturing_constraint_ids: Manufacturing Constraints, one2many
-
-
-
-
-
-:desc: Description, text
-
-
-
-
-
-:media_ids: Medias, many2many
+:code: Code, char, required
 
 
 
 
 
 :item_ids: Items, many2many
+
+
+
+
+
+:origin_id: Origin, many2one
 
 
 
@@ -664,25 +889,7 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
-:flow_start: Flow Start, boolean
-
-
-
-
-
-:type: Type, many2one, required
-
-
-
-
-
-:offer_id: Offer, many2one, required
-
-
-
-
-
-:document_ids: DTP Documents, one2many
+:desc: Description, text
 
 
 
@@ -694,19 +901,37 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
-:dtp_note: DTP Notes, text
+:action_id: Action, many2one, required
+
+
+
+
+
+:document_ids: DTP Documents, one2many
+
+
+
+
+
+:media_id: Media, many2one, required
+
+
+
+
+
+:offer_id: Offer, many2one, required
+
+
+
+
+
+:production_note: Production Notes, text
 
 
 
 
 
 :doc_number: Number of documents of the mailing, integer
-
-
-
-
-
-:history_ids: History, one2many
 
 
 
@@ -730,7 +955,7 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
-:trademark_category_ids: Trademark Categories, many2many
+:quotation: Quotation, char
 
 
 
@@ -748,13 +973,25 @@ Object: dm.offer.step (dm.offer.step)
 
 
 
+:floating_date: Floating date, boolean
+
+
+
+
+
 :notes: Notes, text
 
 
 
 
 
-:production_note: Production Notes, text
+:trademark_category_ids: Trademark Categories, many2many
+
+
+
+
+
+:dtp_note: DTP Notes, text
 
 
 
@@ -776,6 +1013,12 @@ Object: dm.offer.step.transition.trigger (dm.offer.step.transition.trigger)
 
 
 
+:in_act_cond: Action Condition, text, required
+
+
+
+
+
 :code: Code, char, required
 
 
@@ -783,6 +1026,12 @@ Object: dm.offer.step.transition.trigger (dm.offer.step.transition.trigger)
 
 
 :name: Trigger Name, char, required
+
+
+
+
+
+:gen_next_wi: Auto Generate Next Workitems, boolean
 
 
 
@@ -798,133 +1047,65 @@ Object: dm.offer.step.transition (dm.offer.step.transition)
 
 
 
-:step_from: From Offer Step, many2one, required
+:delay_type: Delay type, selection, required
 
 
 
 
 
-:media_id: Media, many2one, required
+:step_to_id: To Offer Step, many2one, required
 
 
 
 
 
-:condition: Trigger Condition, many2one, required
+:condition_id: Trigger Condition, many2one, required
 
 
 
 
 
-:step_to: To Offer Step, many2one, required
+:step_from_id: From Offer Step, many2one, required
 
 
 
 
-Object: dm.offer.step.history (dm.offer.step.history)
-#####################################################
+Object: dm.overlay.payment_rule (dm.overlay.payment_rule)
+#########################################################
 
 
 
-:date: Date, date
+:account_id: Account, many2one
 
 
 
 
 
-:step_id: Offer, many2one
+:move: Move, selection
 
 
 
 
 
-:state: Status, selection
+:country_id: Country, many2one
 
 
 
 
 
-:user_id: User, many2one
+:journal_id: Journal, many2one
 
 
 
 
-Object: dm.offer.step.item (dm.offer.step.item)
-###############################################
 
+:currency_id: Currency, many2one
 
 
-:name: Description, char, required
 
 
 
-
-
-:offer_step_id: Offer Step, many2one
-
-
-
-
-
-:offer_step_type: Offer Step Type, char, readonly
-
-
-
-
-
-:price: Price, float
-
-
-
-
-
-:item_type: Item Type, selection
-
-
-
-
-
-:product_ids: Products, many2many
-
-
-
-
-
-:purchase_constraints: Purchase Constraints, text
-
-
-
-
-
-:notes: Notes, text
-
-
-
-
-Object: dm.offer.step.manufacturing_constraint (dm.offer.step.manufacturing_constraint)
-#######################################################################################
-
-
-
-:offer_step_id: Offer Step, many2one
-
-
-
-
-
-:country_ids: Country, many2many
-
-
-
-
-
-:name: Description, char, required
-
-
-
-
-
-:constraint: Manufacturing Description, text
+:country_default: Default for Country, boolean
 
 
 
@@ -946,25 +1127,19 @@ Object: dm.campaign.group (dm.campaign.group)
 
 
 
-:quantity_wanted_total: Total Wanted Quantity, char, readonly
-
-
-
-
-
 :campaign_ids: Campaigns, one2many, readonly
 
 
 
 
 
+:quantity_wanted_total: Total Wanted Quantity, char, readonly
+
+
+
+
+
 :quantity_usable_total: Total Usable Quantity, char, readonly
-
-
-
-
-
-:quantity_planned_total: Total planned Quantity, char, readonly
 
 
 
@@ -1020,6 +1195,12 @@ Object: dm.overlay (dm.overlay)
 
 
 
+:dealer_id: Dealer, many2one, required
+
+
+
+
+
 :country_ids: Country, many2many, required
 
 
@@ -1032,7 +1213,7 @@ Object: dm.overlay (dm.overlay)
 
 
 
-:dealer_id: Dealer, many2one, required
+:payment_method_rule_ids: Payment Method Rules, many2many
 
 
 
@@ -1048,7 +1229,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:code: Account code, char
+:code: Account Code, char
 
 
 
@@ -1114,7 +1295,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:parent_id: Parent analytic account, many2one
+:parent_id: Parent Analytic Account, many2one
 
 
 
@@ -1144,7 +1325,13 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:child_ids: Childs Accounts, one2many
+:payment_method_ids: Payment Methods, many2many
+
+
+
+
+
+:child_ids: Child Accounts, one2many
 
 
 
@@ -1186,7 +1373,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:name: Account name, char, required
+:name: Account Name, char, required
 
 
 
@@ -1222,6 +1409,12 @@ Object: dm.campaign (dm.campaign)
 
 
 
+:manufacturing_product_id: Manufacturing Product, many2one
+
+
+
+
+
 :customer_file_state: Customers Files Status, selection, readonly
 
 
@@ -1246,7 +1439,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:partner_id: Associated partner, many2one
+:partner_id: Associated Partner, many2one
 
 
 
@@ -1324,6 +1517,12 @@ Object: dm.campaign (dm.campaign)
 
 
 
+:mail_service_ids: Mailing Service, one2many
+
+
+
+
+
 :real_margin_rate: Real Margin Rate (%), float, readonly
 
     *Computes using the formula: (Real Margin / Total Costs) * 100.*
@@ -1342,7 +1541,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:line_ids: Analytic entries, one2many
+:line_ids: Analytic Entries, one2many
 
 
 
@@ -1361,12 +1560,6 @@ Object: dm.campaign (dm.campaign)
 
 
 :amount_max: Max. Invoice Price, float
-
-
-
-
-
-:campaign_type: Type, many2one
 
 
 
@@ -1396,13 +1589,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:type: Account type, selection
-
-
-
-
-
-:manufacturing_product: Manufacturing Product, many2one
+:type: Account Type, selection
 
 
 
@@ -1410,13 +1597,19 @@ Object: dm.campaign (dm.campaign)
 
 :offer_id: Offer, many2one, required
 
-    *Choose the commercial offer to use with this campaign, only offers in open state can be assigned*
+    *Choose the commercial offer to use with this campaign, only offers in ready to plan or open state can be assigned*
 
 
 
 :ca_invoiced: Invoiced Amount, float, readonly
 
     *Total customer invoiced amount for this account.*
+
+
+
+:campaign_type_id: Type, many2one
+
+
 
 
 
@@ -1474,7 +1667,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:quantity_max: Maximal quantity, float
+:quantity_max: Maximum Quantity, float
 
 
 
@@ -1522,7 +1715,7 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:complete_name: Account Name, char, readonly
+:complete_name: Full Account Name, char, readonly
 
 
 
@@ -1588,12 +1781,6 @@ Object: dm.campaign (dm.campaign)
 
 
 
-:payment_methods: Payment Methods, many2many
-
-
-
-
-
 :cust_file_purchase_line_ids: Customer Files Purchase Lines, one2many
 
 
@@ -1616,13 +1803,13 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:initial_proposition_id: Initial proposition, many2one, readonly
+:initial_proposition_id: Initial proposition, many2one
 
 
 
 
 
-:code: Account code, char
+:code: Account Code, char
 
 
 
@@ -1640,15 +1827,17 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:quantity_max: Maximal quantity, float
+:quantity_max: Maximum Quantity, float
 
 
 
 
 
-:quantity_usable: Usable Quantity, char, readonly
+:quantity_wanted: Wanted Quantity, char, readonly
 
-    *The usable quantity is the number of addresses you have after delivery, deduplication and cleaning.*
+    *The wanted quantity is the number of addresses you wish to get for that segment.
+    This is usually the quantity used to order Customers Lists
+    The wanted quantity could be AAA for All Addresses Available*
 
 
 
@@ -1706,7 +1895,7 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:partner_id: Associated partner, many2one
+:partner_id: Associated Partner, many2one
 
 
 
@@ -1778,7 +1967,7 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:parent_id: Parent analytic account, many2one
+:parent_id: Parent Analytic Account, many2one
 
 
 
@@ -1790,14 +1979,14 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:quantity_planned: planned Quantity, char, readonly
+:quantity_planned: Planned Quantity, integer
 
     *The planned quantity is an estimation of the usable quantity of addresses you  will get after delivery, deduplication and cleaning
     This is usually the quantity used to order the manufacturing of the mailings*
 
 
 
-:complete_name: Account Name, char, readonly
+:complete_name: Full Account Name, char, readonly
 
 
 
@@ -1827,7 +2016,7 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:type: Account type, selection
+:type: Account Type, selection
 
 
 
@@ -1846,6 +2035,12 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 :journal_rate_ids: Invoicing Rate per Journal, one2many
+
+
+
+
+
+:payment_method_ids: Payment Methods, many2many
 
 
 
@@ -1875,7 +2070,7 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:child_ids: Childs Accounts, one2many
+:child_ids: Child Accounts, one2many
 
 
 
@@ -1947,17 +2142,21 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
+:quantity_usable: Usable Quantity, char, readonly
+
+    *The usable quantity is the number of addresses you have after delivery, deduplication and cleaning.*
+
+
+
 :ca_theorical: Theorical Revenue, float, readonly
 
     *Based on the costs you had on the project, what would have been the revenue if all these costs have been invoiced at the normal sale price provided by the pricelist.*
 
 
 
-:quantity_wanted: Wanted Quantity, char, readonly
+:force_sm_price: Force Starting Mail Price, boolean
 
-    *The wanted quantity is the number of addresses you wish to get for that segment.
-    This is usually the quantity used to order Customers Lists
-    The wanted quantity could be AAA for All Addresses Available*
+
 
 
 
@@ -1973,25 +2172,19 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:name: Account name, char, required
+:name: Account Name, char, required
 
 
 
 
 
-:customer_pricelist_id: Items Pricelist, many2one
+:customer_pricelist_id: Product Pricelist, many2one
 
 
 
 
 
 :notes: Notes, text
-
-
-
-
-
-:force_sm_price: Force Starting Mail Price, boolean
 
 
 
@@ -2027,13 +2220,13 @@ Object: dm.campaign.proposition (dm.campaign.proposition)
 
 
 
-:payment_methods: Payment Methods, many2many
+:price_prog_use: Price Progression, boolean
 
 
 
 
 
-:line_ids: Analytic entries, one2many
+:line_ids: Analytic Entries, one2many
 
 
 
@@ -2117,7 +2310,7 @@ Object: A list of addresses proposed by an adresses broker (dm.customers_list)
 
 
 
-:product_id: Product, many2one, required
+:list_type_id: Type, many2one
 
 
 
@@ -2147,13 +2340,19 @@ Object: A list of addresses proposed by an adresses broker (dm.customers_list)
 
 
 
+:name: Name, char, required
+
+
+
+
+
 :broker_discount: Broker Discount (%), float
 
 
 
 
 
-:recruiting_origin: Recruiting Origin, many2one
+:recruiting_origin_id: Recruiting Origin, many2one
 
     *Origin of the recruiting of the adresses*
 
@@ -2166,12 +2365,6 @@ Object: A list of addresses proposed by an adresses broker (dm.customers_list)
 
 
 :delivery_cost: Delivery Cost, float
-
-
-
-
-
-:list_type: Type, many2one
 
 
 
@@ -2198,23 +2391,47 @@ Object: A list of addresses proposed by an adresses broker (dm.customers_list)
 
 
 
-:name: Name, char, required
+:product_id: Product, many2one, required
 
 
 
 
-Object: A File of addresses delivered by an addresses broker (dm.customers_file)
-################################################################################
+Object: A File of addresses (dm.customers_file)
+###############################################
 
 
 
-:segment_ids: Segments, one2many, readonly
+:address_ids: Customers File Addresses, many2many
 
 
 
 
 
 :code: Code, char, required
+
+
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:case_ids: CRM Cases, many2many
+
+
+
+
+
+:note: Notes, text
+
+
+
+
+
+:source: Source, selection, required
 
 
 
@@ -2232,7 +2449,7 @@ Object: A File of addresses delivered by an addresses broker (dm.customers_file)
 
 
 
-:name: Name, char, required
+:segment_ids: Segments, one2many, readonly
 
 
 
@@ -2242,7 +2459,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:code: Account code, char
+:code: Account Code, char
 
 
 
@@ -2272,13 +2489,19 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
+:segmentation_criteria: Segmentation Criteria, text
+
+
+
+
+
 :quantity_dedup_cleaner: Deduplication Quantity, integer
 
     *The quantity of duplicated addresses removed by the cleaner.*
 
 
 
-:quantity_max: Maximal quantity, float
+:quantity_max: Maximum Quantity, float
 
 
 
@@ -2338,7 +2561,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:partner_id: Associated partner, many2one
+:partner_id: Associated Partner, many2one
 
 
 
@@ -2368,7 +2591,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:start_census: Start Census (days), integer
+:start_census: Start Census, integer
 
     *The recency is the time since the latest purchase.
     For example : A 0-30 recency means all the customers that have purchased in the last 30 days*
@@ -2405,7 +2628,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:customers_file_id: Customers File, many2one, readonly
+:customers_file_id: Customers File, many2one
 
 
 
@@ -2429,7 +2652,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:parent_id: Parent analytic account, many2one
+:parent_id: Parent Analytic Account, many2one
 
 
 
@@ -2441,13 +2664,13 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:customers_list_id: Customers List, many2one, required
+:customers_list_id: Customers List, many2one
 
 
 
 
 
-:complete_name: Account Name, char, readonly
+:complete_name: Full Account Name, char, readonly
 
 
 
@@ -2471,7 +2694,13 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:type: Account type, selection
+:type_src: Type, selection
+
+
+
+
+
+:type: Account Type, selection
 
 
 
@@ -2486,12 +2715,6 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 :quantity_cleaned_dedup: Cleaned Quantity, integer
 
     *The quantity of wrong addresses removed by the deduplicator.*
-
-
-
-:quantity_dedup_dedup: Deduplication Quantity, integer
-
-    *The quantity of duplicated addresses removed by the deduplicator.*
 
 
 
@@ -2526,7 +2749,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:child_ids: Childs Accounts, one2many
+:child_ids: Child Accounts, one2many
 
 
 
@@ -2612,13 +2835,19 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:name: Account name, char, required
+:type_census: Census Type, selection
 
 
 
 
 
-:end_census: End Census (days), integer
+:name: Account Name, char, required
+
+
+
+
+
+:end_census: End Census, integer
 
 
 
@@ -2642,9 +2871,9 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:segmentation_criteria: Segmentation Criteria, text
+:quantity_dedup_dedup: Deduplication Quantity, integer
 
-
+    *The quantity of duplicated addresses removed by the deduplicator.*
 
 
 
@@ -2660,7 +2889,7 @@ Object: A subset of addresses coming from a customers file (dm.campaign.proposit
 
 
 
-:line_ids: Analytic entries, one2many
+:line_ids: Analytic Entries, one2many
 
 
 
@@ -2712,7 +2941,7 @@ Object: dm.campaign.proposition.item (dm.campaign.proposition.item)
 
 
 
-:item_type: Item Type, selection
+:item_type: Product Type, selection
 
 
 
@@ -2891,6 +3120,44 @@ Object: dm.campaign.proposition.prices_progression (dm.campaign.proposition.pric
 
 
 
+Object: dm.campaign.document.type (dm.campaign.document.type)
+#############################################################
+
+
+
+:code: Code, char, required
+
+
+
+
+
+:name: Name, char, required
+
+
+
+
+Object: dm.campaign.document (dm.campaign.document)
+###################################################
+
+
+
+:segment_id: Segment, many2one, required
+
+
+
+
+
+:name: Name, char, required
+
+
+
+
+
+:type_id: Format, many2one, required
+
+
+
+
 Object: dm.order (dm.order)
 ###########################
 
@@ -2991,628 +3258,70 @@ Object: dm.order (dm.order)
 
 
 
-Object: res.partner (dm.customer)
-#################################
+Object: Sale Order (dm.customer.order)
+######################################
 
 
 
-:ean13: EAN13, char
+:origin: Origin, char
 
 
 
 
 
-:property_account_position: Fiscal Position, many2one
+:order_line: Order Lines, one2many, readonly
 
-    *The fiscal position will determine taxes and the accounts used for the the partner.*
 
 
 
-:ref_companies: Companies that refers to partner, one2many
 
+:picking_policy: Packing Policy, selection, required
 
+    *If you don't have enough stock available to deliver all at once, do you accept partial shipments or not?*
 
 
 
-:canal_id: Favourite Channel, many2one
+:order_policy: Shipping Policy, selection, required, readonly
 
+    *The Shipping Policy is used to synchronise invoice and delivery operations.
+    - The 'Pay before delivery' choice will first generate the invoice and then generate the packing order after the payment of this invoice.
+    - The 'Shipping & Manual Invoice' will create the packing order directly and wait for the user to manually click on the 'Invoice' button to generate the draft invoice.
+    - The 'Invoice on Order Ater Delivery' choice will generate the draft invoice based on sale order after all packing lists have been finished.
+    - The 'Invoice from the packing' choice is used to create an invoice during the packing process.*
 
 
 
+:invoice_ids: Invoice, many2many
 
-:property_product_pricelist: Sale Pricelist, many2one
+    *This is the list of invoices that have been generated for this sale order. The same sale order may have been invoiced in several times (by line for example).*
 
-    *This pricelist will be used, instead of the default one,                     for sales to the current partner*
 
 
+:shop_id: Shop, many2one, required, readonly
 
-:name_official: Official Name, char
 
 
 
 
+:client_order_ref: Customer Ref, char
 
-:title: Title, char
 
 
 
 
+:date_order: Date Ordered, date, required, readonly
 
-:parent_id: Main Company, many2one
 
 
 
 
+:partner_id: Customer, many2one, readonly
 
-:membership_cancel: Cancel membership date, date, readonly
 
 
 
 
-
-:alert_advertising: Adv.Alert, boolean
-
-    *Partners description to be shown when inserting new advertising sale*
-
-
-
-:decoy_for_campaign: Used for Campaigns, boolean
-
-    *Define if this decoy address can be used with campaigns*
-
-
-
-:import_procent: Import (%), integer
-
-
-
-
-
-:client_media_ids: Client for Media, many2many
-
-
-
-
-
-:lastname: Last Name, char
-
-
-
-
-
-:child_ids: Partner Ref., one2many
-
-
-
-
-
-:payment_type_customer: Payment type, many2one
-
-    *Payment type of the customer*
-
-
-
-:export_year: Export date, date
-
-    *year of the export_procent value*
-
-
-
-:name: Name, char, required
-
-
-
-
-
-:decoy_external_ref: External Reference, char
-
-    *The reference of the decoy address for the owner*
-
-
-
-:debit_limit: Payable Limit, float
-
-
-
-
-
-:property_account_receivable: Account Receivable, many2one, required
-
-    *This account will be used, instead of the default one, as the receivable account for the current partner*
-
-
-
-:domiciliation_bool: Domiciliation, boolean
-
-
-
-
-
-:decoy_for_renting: Used for File Renting, boolean
-
-    *Define if this decoy address can be used with used with customers files renting*
-
-
-
-:article_ids: Articles, many2many
-
-
-
-
-
-:dir_exclude: Dir. exclude, boolean
-
-    *Exclusion from the Members directory*
-
-
-
-:logo: Logo, binary
-
-
-
-
-
-:name_old: Former Name, char
-
-
-
-
-
-:activity_description: Activity Description, text
-
-
-
-
-
-:alert_events: Event Alert, boolean
-
-    *Partners description to be shown when inserting new subscription to a meeting*
-
-
-
-:invoice_special: Invoice Special, boolean
-
-
-
-
-
-:state_id2: Customer State, many2one
-
-    *status of the partner as a customer*
-
-
-
-:debit: Total Payable, float, readonly
-
-    *Total amount you have to pay to this supplier.*
-
-
-
-:supplier: Supplier, boolean
-
-    *Check this box if the partner is a supplier. If it's not checked, purchase people will not see it when encoding a purchase order.*
-
-
-
-:ref: Code, char, readonly
-
-
-
-
-
-:alert_others: Other alert, boolean
-
-    *Partners description to be shown when inserting new sale not treated by _advertising, _events, _legalisations, _Membership*
-
-
-
-:import_year: Import Date, date
-
-    *year of the import_procent value*
-
-
-
-:free_member: Free member, boolean
-
-
-
-
-
-:membership_amount: Membership amount, float
-
-    *The price negociated by the partner*
-
-
-
-:address: Addresses, one2many
-
-
-
-
-
-:active: Active, boolean
-
-
-
-
-
-:dir_date_publication: Publication Date, date
-
-
-
-
-
-:wall_exclusion: Not in Walloon DB, boolean
-
-    *exclusion of this partner from the walloon database*
-
-
-
-:property_product_pricelist_purchase: Purchase Pricelist, many2one
-
-    *This pricelist will be used, instead of the default one, for purchases from the current partner*
-
-
-
-:country: Country, many2one
-
-
-
-
-
-:invoice_nbr: Nbr of invoice to print, integer
-
-    *number of additive invoices to be printed for this customer*
-
-
-
-:invoice_paper: Bank Transfer Type, selection
-
-
-
-
-
-:credit: Total Receivable, float, readonly
-
-    *Total amount this customer owns you.*
-
-
-
-:country_relation: Country Relation, one2many
-
-
-
-
-
-:signature: Signature, binary
-
-
-
-
-
-:invoice_public: Invoice Public, boolean
-
-
-
-
-
-:employee_nbr: Nbr of Employee (Area), integer
-
-    *Nbr of Employee in the area of the CCI*
-
-
-
-:comment: Notes, text
-
-
-
-
-
-:decoy_owner: Decoy Address Owner, many2one
-
-    *The partner this decoy address belongs to*
-
-
-
-:country_ids: Allowed Countries, many2many
-
-
-
-
-
-:language_ids: Other Languages, many2many
-
-
-
-
-
-:header: Header (.odt), binary
-
-
-
-
-
-:member_lines: Membership, one2many
-
-
-
-
-
-:alert_legalisations: Legal. Alert, boolean
-
-    *Partners description to be shown when inserting new legalisation*
-
-
-
-:city: City, char
-
-
-
-
-
-:dir_date_last: Partner Data Date, date
-
-    *Date of latest update of the partner data by itself (via paper or Internet)*
-
-
-
-:user_id: Dedicated Salesman, many2one
-
-    *The internal user that is in charge of communicating with this partner if any.*
-
-
-
-:magazine_subscription: Magazine subscription, selection
-
-
-
-
-
-:vat: VAT, char
-
-    *Value Added Tax number. Check the box if the partner is subjected to the VAT. Used by the VAT legal statement.*
-
-
-
-:website: Website, char
-
-
-
-
-
-:credit_limit: Credit Limit, float
-
-
-
-
-
-:answers_ids: Answers, many2many
-
-
-
-
-
-:alert_explanation: Warning, text
-
-
-
-
-
-:customer: Customer, boolean
-
-    *Check this box if the partner is a customer.*
-
-
-
-:date_founded: Founding Date, date
-
-    *Date of foundation of this company*
-
-
-
-:employee_nbr_total: Nbr of Employee (Tot), integer
-
-    *Nbr of Employee all around the world*
-
-
-
-:dir_date_accept: Good to shoot Date, date
-
-    *Date of last acceptation of Bon a Tirer*
-
-
-
-:membership_start: Start membership date, date, readonly
-
-
-
-
-
-:alert_membership: Membership Alert, boolean
-
-    *Partners description to be shown when inserting new ship sale*
-
-
-
-:membership_stop: Stop membership date, date, readonly
-
-
-
-
-
-:state_id: Partner State, many2one
-
-    *status of activity of the partner*
-
-
-
-:relation_ids: Partner Relation, one2many
-
-
-
-
-
-:prospect_media_ids: Prospect for Media, many2many
-
-
-
-
-
-:domiciliation: Domiciliation Number, char
-
-
-
-
-
-:date: Date, date
-
-
-
-
-
-:decoy_address: Decoy Address, boolean
-
-    *A decoy address is an address used to identify unleagal uses of a customers file*
-
-
-
-:dir_presence: Dir. Presence, boolean
-
-    *Present in the directory of the members*
-
-
-
-:property_account_payable: Account Payable, many2one, required
-
-    *This account will be used, instead of the default one, as the payable account for the current partner*
-
-
-
-:property_stock_supplier: Supplier Location, many2one
-
-    *This stock location will be used, instead of the default one, as the source location for goods you receive from the current partner*
-
-
-
-:training_authorization: Checks Auth., char
-
-    *Formation and Language Checks Authorization number*
-
-
-
-:events: Events, one2many
-
-
-
-
-
-:associate_member: Associate member, many2one
-
-
-
-
-
-:dir_name2: 1st Shortcut name , char
-
-    *First shortcut in the members directory, pointing to the dir_name field*
-
-
-
-:dir_name3: 2nd Shortcut name , char
-
-    *Second shortcut*
-
-
-
-:bank_ids: Banks, one2many
-
-
-
-
-
-:vat_subjected: VAT Legal Statement, boolean
-
-    *Check this box if the partner is subjected to the VAT. It will be used for the VAT legal statement.*
-
-
-
-:state_ids: Allowed States, many2many
-
-
-
-
-
-:export_procent: Export(%), integer
-
-
-
-
-
-:decoy_media_ids: decoy address for Media, many2many
-
-
-
-
-
-:property_stock_customer: Customer Location, many2one
-
-    *This stock location will be used, instead of the default one, as the destination location for goods you send to this partner*
-
-
-
-:lang: Language, selection
-
-    *If the selected language is loaded in the system, all documents related to this partner will be printed in this language. If not, it will be english.*
-
-
-
-:dir_name: Name in Member Dir., char
-
-    *Name under wich the partner will be inserted in the members directory*
-
-
-
-:membership_state: Current membership state, selection, readonly
-
-
-
-
-
-:activity_code_ids: Activity Codes, one2many
-
-
-
-
-
-:magazine_subscription_source: Mag. Subscription Source, char
-
-
-
-
-
-:property_payment_term: Payment Term, many2one
-
-    *This payment term will be used, instead of the default one, for the current partner*
-
-
-
-:payment_type_supplier: Payment type, many2one
-
-    *Payment type of the supplier*
-
-
-
-:category_id: Categories, many2many
-
-
-
-
-Object: dm.customer.order (dm.customer.order)
-#############################################
-
-
-
-:offer_step_id: Offer Step, many2one
+:invoiced: Paid, boolean, readonly
 
 
 
@@ -3624,7 +3333,115 @@ Object: dm.customer.order (dm.customer.order)
 
 
 
+:fiscal_position: Fiscal Position, many2one
+
+
+
+
+
+:user_id: Salesman, many2one
+
+
+
+
+
+:payment_term: Payment Term, many2one
+
+
+
+
+
+:amount_tax: Taxes, float, readonly
+
+
+
+
+
+:offer_step_id: Offer Step, many2one
+
+
+
+
+
 :state: Status, selection, readonly
+
+
+
+
+
+:abstract_line_ids: Order Lines, one2many, readonly
+
+
+
+
+
+:invoiced_rate: Invoiced, float, readonly
+
+
+
+
+
+:pricelist_id: Pricelist, many2one, required, readonly
+
+
+
+
+
+:advertising_agency: Advertising Agency, many2one
+
+
+
+
+
+:project_id: Analytic Account, many2one, readonly
+
+
+
+
+
+:incoterm: Incoterm, selection
+
+
+
+
+
+:published_customer: Published Customer, many2one
+
+
+
+
+
+:partner_order_id: Ordering Contact, many2one, required, readonly
+
+    *The name and address of the contact that requested the order or quotation.*
+
+
+
+:picked_rate: Picked, float, readonly
+
+
+
+
+
+:partner_invoice_id: Invoice Address, many2one, required, readonly
+
+
+
+
+
+:amount_untaxed: Untaxed Amount, float, readonly
+
+
+
+
+
+:picking_ids: Related Packing, one2many, readonly
+
+    *This is the list of picking list that have been generated for this invoice*
+
+
+
+:amount_total: Total, float, readonly
 
 
 
@@ -3636,7 +3453,147 @@ Object: dm.customer.order (dm.customer.order)
 
 
 
+:name: Order Description, char, required
+
+
+
+
+
+:partner_shipping_id: Shipping Address, many2one, required, readonly
+
+
+
+
+
 :segment_id: Segment, many2one
+
+
+
+
+
+:price_type: Price method, selection, required
+
+
+
+
+
+:shipped: Picked, boolean, readonly
+
+
+
+
+
+:invoice_quantity: Invoice on, selection, required
+
+    *The sale order will automatically create the invoice proposition (draft invoice). Ordered and delivered quantities may not be the same. You have to choose if you invoice based on ordered or shipped quantities. If the product is a service, shipped quantities means hours spent on the associated tasks.*
+
+
+
+:discount_campaign: Discount Campaign, many2one
+
+
+
+
+
+:margin: Margin, float, readonly
+
+
+
+
+Object: dm.customer.gender (dm.customer.gender)
+###############################################
+
+
+
+:code: Code, char, readonly
+
+
+
+
+
+:name: Name, char
+
+
+
+
+
+:to_gender_id: To Gender, many2one, required
+
+
+
+
+
+:lang_id: Language, many2one
+
+
+
+
+
+:from_gender_id: From Gender, many2one
+
+
+
+
+
+:description: Description, text
+
+
+
+
+Object: workitem (dm.workitem)
+##############################
+
+
+
+:action_time: Action Time, datetime
+
+
+
+
+
+:address_id: Customer Address, many2one
+
+
+
+
+
+:segment_id: Segments, many2one
+
+
+
+
+
+:source: Source, selection, required
+
+
+
+
+
+:state: Status, selection
+
+
+
+
+
+:case_id: CRM Case, many2one
+
+
+
+
+
+:tr_from_id: Source Transition, many2one
+
+
+
+
+
+:step_id: Offer Step, many2one
+
+
+
+
+
+:error_msg: System Message, text
 
 
 
@@ -3734,13 +3691,13 @@ Object: Customer Segmentation Textual Criteria (dm.customer.text_criteria)
 
 
 
+:field_id: Customers Field, many2one
+
+
+
+
+
 :value: Value, char
-
-
-
-
-
-:field: Customers Field, many2one
 
 
 
@@ -3762,13 +3719,13 @@ Object: Customer Segmentation Numeric Criteria (dm.customer.numeric_criteria)
 
 
 
+:field_id: Customers Field, many2one
+
+
+
+
+
 :value: Value, float
-
-
-
-
-
-:field: Customers Field, many2one
 
 
 
@@ -3790,13 +3747,13 @@ Object: Customer Segmentation Boolean Criteria (dm.customer.boolean_criteria)
 
 
 
+:field_id: Customers Field, many2one
+
+
+
+
+
 :value: Value, selection
-
-
-
-
-
-:field: Customers Field, many2one
 
 
 
@@ -3818,19 +3775,13 @@ Object: Customer Segmentation Date Criteria (dm.customer.date_criteria)
 
 
 
-:to_value: To, datetime
+:field_id: Customers Field, many2one
 
 
 
 
 
-:from_value: From, datetime
-
-
-
-
-
-:field: Customers Field, many2one
+:value: Date, date
 
 
 
@@ -3852,13 +3803,13 @@ Object: Customer Order Segmentation Textual Criteria (dm.customer.order.text_cri
 
 
 
+:field_id: Customers Field, many2one
+
+
+
+
+
 :value: Value, char
-
-
-
-
-
-:field: Customers Field, many2one
 
 
 
@@ -3880,13 +3831,41 @@ Object: Customer Order Segmentation Numeric Criteria (dm.customer.order.numeric_
 
 
 
+:field_id: Customers Field, many2one
+
+
+
+
+
 :value: Value, float
 
 
 
 
+Object: Customer Order Segmentation Boolean Criteria (dm.customer.order.boolean_criteria)
+#########################################################################################
 
-:field: Customers Field, many2one
+
+
+:operator: Operator, selection
+
+
+
+
+
+:segmentation_id: Segmentation, many2one
+
+
+
+
+
+:field_id: Customers Field, many2one
+
+
+
+
+
+:value: Value, selection
 
 
 
@@ -3908,19 +3887,13 @@ Object: Customer Order Segmentation Date Criteria (dm.customer.order.date_criter
 
 
 
-:to_value: To, datetime
+:field_id: Customers Field, many2one
 
 
 
 
 
-:from_value: From, datetime
-
-
-
-
-
-:field: Customers Field, many2one
+:value: Date, date
 
 
 
@@ -3959,12 +3932,94 @@ Object: dm.offer.history (dm.offer.history)
 
 
 
+Object: dm.event (dm.event)
+###########################
+
+
+
+:address_id: Address, many2one
+
+
+
+
+
+:segment_id: Segment, many2one, required
+
+
+
+
+
+:campaign_id: Campaign, many2one
+
+
+
+
+
+:source: Source, selection, required
+
+
+
+
+
+:trigger_type_id: Trigger Condition, many2one, required
+
+
+
+
+
+:step_id: Offer Step, many2one, required
+
+
+
+
 Object: dm.ddf.plugin (dm.ddf.plugin)
 #####################################
 
 
 
+:model_id: Object, many2one
+
+
+
+
+
+:code: Code, char, required
+
+
+
+
+
 :name: DDF Plugin Name, char
+
+
+
+
+
+:store_value: Store Value, boolean
+
+
+
+
+
+:field_id: Customers Field, many2one
+
+
+
+
+
+:note: Description, text
+
+
+
+
+
+:argument_ids: Argument List, one2many
+
+
+
+
+
+:file_id: File Content, binary
 
 
 
@@ -3976,7 +4031,47 @@ Object: dm.ddf.plugin (dm.ddf.plugin)
 
 
 
-:file_id: File Content, binary
+:type: Type, selection, required
+
+
+
+
+Object: Argument List (dm.plugin.argument)
+##########################################
+
+
+
+:name: Argument Name, char, required
+
+
+
+
+
+:stored_plugin: Value from plugin, boolean
+
+
+
+
+
+:value: Argument Value, text
+
+
+
+
+
+:note: Description, text, readonly
+
+
+
+
+
+:plugin_id: Plugin, many2one
+
+
+
+
+
+:custome_plugin_id: Plugin For Value, many2one
 
 
 
@@ -3992,7 +4087,7 @@ Object: dm.document.template (dm.document.template)
 
 
 
-:dynamic_fields: Fields, many2many
+:note: Description, text
 
 
 
@@ -4003,8 +4098,8 @@ Object: dm.document.template (dm.document.template)
 
 
 
-Object: dm.customer.plugin (dm.customer.plugin)
-###############################################
+Object: dm.plugins.value (dm.plugins.value)
+###########################################
 
 
 
@@ -4058,7 +4153,19 @@ Object: dm.offer.document (dm.offer.document)
 
 
 
-:copywriter_id: Copywriter, many2one
+:gender_id: Gender, many2one
+
+
+
+
+
+:code: Code, char, required
+
+
+
+
+
+:media_id: Media, char
 
 
 
@@ -4082,7 +4189,7 @@ Object: dm.offer.document (dm.offer.document)
 
 
 
-:category_ids: Categories, many2many
+:content: Content, text
 
 
 
@@ -4094,19 +4201,19 @@ Object: dm.offer.document (dm.offer.document)
 
 
 
-:code: Code, char, required
+:copywriter_id: Copywriter, many2one
+
+
+
+
+
+:editor: Editor, selection
 
 
 
 
 
 :has_attachment: Has Attachment, char, readonly
-
-
-
-
-
-:document_template_field_ids: Dynamic Fields, many2many
 
 
 
@@ -4119,5 +4226,91 @@ Object: dm.offer.document (dm.offer.document)
 
 
 :step_id: Offer Step, many2one
+
+
+
+
+
+:category_id: Category, many2one
+
+
+
+
+
+:note: Description, text
+
+
+
+
+
+:subject: Subject, char
+
+
+
+
+Object: dm.mail_service (dm.mail_service)
+#########################################
+
+
+
+:unit_interval: Interval Unit, selection
+
+
+
+
+
+:media_id: Media, many2one
+
+
+
+
+
+:action_interval: Interval, integer
+
+
+
+
+
+:default_for_media: Default Mail Service for Media, boolean
+
+
+
+
+
+:action_id: Server Action, many2one
+
+
+
+
+
+:partner_id: Partner, many2one
+
+
+
+
+
+:name: Name, char, readonly
+
+
+
+
+Object: dm.campaign.mail_service (dm.campaign.mail_service)
+###########################################################
+
+
+
+:offer_step_id: Offer Step, many2one
+
+
+
+
+
+:mail_service_id: Mail Service, many2one
+
+
+
+
+
+:campaign_id: Campaign, many2one
 
 

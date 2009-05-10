@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/scrum"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Scrum, Agile Development Method (*scrum*)
 =========================================
@@ -24,8 +35,8 @@ Description
 
 ::
 
-  This modules implements all concepts defined by the scrum project management methodology 
-  for IT companies:
+  This modules implements all concepts defined by the scrum project
+      management methodology for IT companies:
       * Project with sprints, product owner, scrum master
       * Sprints with reviews, daily meetings, feedbacks
       * Product backlog
@@ -38,11 +49,22 @@ Description
       It also create a new reporting:
       * Burn-down chart
   
-      The scrum projects and tasks inherits from the real projects and tasks, so you can continue 
-      working on normal tasks that will also include tasks from scrum projects.
+      The scrum projects and tasks inherits from the real projects and
+      tasks, so you can continue working on normal tasks that will also
+      include tasks from scrum projects.
   
       More information on the methodology:
       * http://controlchaos.com
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `4.2 <http://www.openerp.com/download/modules/4.2/scrum.zip>`_
+  * `5.0 <http://www.openerp.com/download/modules/5.0/scrum.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/scrum.zip>`_
+
 
 Dependencies
 ------------
@@ -207,6 +229,12 @@ Object: Scrum Project (scrum.project)
 
 
 
+:complete_name: Project Name, char, readonly
+
+
+
+
+
 :timesheet_id: Working Time, many2one
 
     *Timetable working hours to adjust the gantt diagram report*
@@ -269,7 +297,7 @@ Object: Scrum Project (scrum.project)
 
 :category_id: Analytic Account, many2one
 
-    *Link this project to an analytic account if you need financial management on projects. It ables to connect projects with budgets, plannings, costs and revenues analysis, timesheet on projects, etc.*
+    *Link this project to an analytic account if you need financial management on projects. It enables you to connect projects with budgets, planning, cost and revenue analysis, timesheets on projects, etc.*
 
 
 
@@ -465,7 +493,7 @@ Object: Scrum Task (scrum.task)
 
 
 
-:planned_hours: Planned Hours, float, required, readonly
+:planned_hours: Planned Hours, float, required
 
     *Estimated time to do the task, usually set by the project manager when the task is in draft state.*
 
@@ -515,7 +543,7 @@ Object: Scrum Task (scrum.task)
 
 :project_id: Project, many2one
 
-
+    *If you have [?] in the project name, it means there are no analytic account linked to this project.*
 
 
 
@@ -558,6 +586,12 @@ Object: Scrum Task (scrum.task)
 :delay_hours: Delay Hours, float, readonly
 
     *Computed as: Total Time - Estimated Time. It gives the difference of the time estimated by the project manager and the real time to close the task.*
+
+
+
+:delegated_user_id: Delegated To, many2one
+
+
 
 
 

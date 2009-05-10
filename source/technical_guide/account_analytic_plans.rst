@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_analytic_plans"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Multiple-plans management in Analytic Accounting (*account_analytic_plans*)
 ===========================================================================
@@ -25,7 +36,8 @@ Description
 ::
 
   This module allows to use several analytic plans, according to the general journal,
-  so that multiple analytic lines are created when the invoice or the entries are confirmed.
+  so that multiple analytic lines are created when the invoice or the entries
+  are confirmed.
   
   For example, you can define the following analytic structure:
     Projects
@@ -37,10 +49,10 @@ Description
         Eric
         Fabien
   
-  Here, we have two plans: Projects and Salesman. An invoice line must be able to write analytic 
-entries in the 2 plans: SubProj 1.1 and Fabien. 
-  The amount can also be splitted. The following example is for an invoice that touches the two 
-subproject and assigned to one salesman:
+  Here, we have two plans: Projects and Salesman. An invoice line must
+  be able to write analytic entries in the 2 plans: SubProj 1.1 and
+  Fabien. The amount can also be split. The following example is for
+  an invoice that touches the two subproject and assigned to one salesman:
   
   Plan1:
       SubProject 1.1 : 50%
@@ -50,6 +62,15 @@ subproject and assigned to one salesman:
   
   So when this line of invoice will be confirmed, it will generate 3 analytic lines,
   for one account entry.
+
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `5.0 <http://www.openerp.com/download/modules/5.0/account_analytic_plans.zip>`_
+  * `trunk <http://www.openerp.com/download/modules/trunk/account_analytic_plans.zip>`_
+
 
 Dependencies
 ------------

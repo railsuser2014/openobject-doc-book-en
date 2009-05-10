@@ -6,7 +6,18 @@
 
 .. raw:: html
 
+      <br />
     <link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" />
+
+.. tip:: This module is part of the Open ERP software, the leading Open Source 
+  enterprise management system. If you want to discover Open ERP, check our 
+  `screencasts <http://openerp.tv>`_ or download 
+  `Open ERP <http://openerp.com>`_ directly.
+
+.. raw:: html
+
+    <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/library"></div>
+    <script src="http://js-kit.com/ratings.js"></script>
 
 Library (*library*)
 ===================
@@ -29,12 +40,20 @@ Description
       Publisher and Author Information,
       Book Rack Tracking etc...
 
+Download links
+--------------
+
+You can download this module as a zip file in the following version:
+
+  * `trunk <http://www.openerp.com/download/modules/trunk/library.zip>`_
+
+
 Dependencies
 ------------
 
  * :mod:`point_of_sale`
  * :mod:`report_intrastat`
- * :mod:`purchase`
+ * :mod:`mrp`
 
 Reports
 -------
@@ -45,13 +64,13 @@ None
 Menus
 -------
 
- * Books/Authors
- * Books/Books
- * Books/Books/Books to return before 30 days
+ * Products/Authors
+ * Products/Books
+ * Products/Books/Books to return before 30 days
  * Sales Management/Orders of the day
  * Sales Management/Orders of the day/My orders of the day
  * Partners/Editor - Suppliers Relations
- * Books/Authors/New Author
+ * Products/Authors/New Author
  * Books/Configuration/Price Categories
 
 Views
