@@ -11,9 +11,9 @@
 .. i18n: Open Object Documentation
 .. i18n: %%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-Open Object Documentation
-%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Documentación de Open Object
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 .. i18n: .. raw:: html
 .. i18n: 
@@ -64,10 +64,10 @@ Open Object Documentation
 
   <br/>
   <div class="tip">
-  You will find a new integrated approach to enterprise management
-  and best development practices in these pages. These books have been best-sellers
-  on Amazon for several months. You can also have a look at our <a href="http://openerp.com/buy.html?page=shop.browse&category_id=4">printed
-  books</a>.  </div>
+  Encontrarás nuevas mejoras integradas para la administración empresarial
+  y las mejores prácticas de desarrollo en estas páginas. Este libro ha sdo un best-sellers
+  en Amazon por varios meses. También puedes revisar el <a href="http://openerp.com/buy.html?page=shop.browse&category_id=4">libro
+  impreso</a>.  </div>
   <br/>
   <br/>
 
@@ -107,31 +107,31 @@ Open Object Documentation
   |                                                              |                                                  |
   |  :ref:`Open ERP Book <books-link>`                           |  :ref:`Developer Book <book-develop-link>`       |
   |                                                              |                                                  |
-  |  A best-seller book about enterprise management              |  Develop your own modules on Open Object         |
+  |  Un éxito de librería sobre administración empresarial       |  Desarrolla tus propios módulos en Open Object   |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
   |  :ref:`Installation Manuals <installation-link>`             |  :ref:`Community Book <how-to-contribute-link>`  |
   |                                                              |                                                  |
-  |  Manuals to install Open ERP and Open Object                 |  The Open Object community organisation          |
+  |  Manual para instalar Open ERP y Open Object                 |  La organización de la comunidad de Open Object  |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
   |  :ref:`Business Intelligence <book-bi-link>`                 |  :ref:`Open ERP Features <features-link>`        |
   |                                                              |                                                  |
-  |  Business Intelligence with Open Object                      |  A summary of main Open ERP features             |
+  |  Inteligencia de Negocios con Open Object                    |  Resumen de las caracteristicas Open ERP         |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
   |                                                              |                                                  |
   |  :ref:`modindex`                                             |                                                  |
   |                                                              |                                                  |
-  |  A developer resource listing all modules and objects        |                                                  |
+  |  Recurso de desarrollador que lista  los módulos y objetos   |                                                  |
   |                                                              |                                                  |
   +--------------------------------------------------------------+--------------------------------------------------+
 
 .. i18n: **Indices and tables:**
 
-**Indices and tables:**
+**Indices y tablas:**
 
 .. i18n: .. table::
 .. i18n:   :class: main-content-presentation
@@ -150,26 +150,26 @@ Open Object Documentation
 .. i18n:   |                                                         |                                               |
 .. i18n:   +---------------------------------------------------------+-----------------------------------------------+
 
-.. table::
+.. tabla::
   :class: main-content-presentation
 
   +---------------------------------------------------------+-----------------------------------------------+
   |                                                         |                                               |
-  |  :ref:`Complete Table of Contents <contents-link>`      |  :ref:`search`                                |
+  |  :ref:`Tabla completa de contenidos <contents-link>`    |  :ref:`search`                                |
   |                                                         |                                               |
-  |  Lists all sections and subsections                     |  Search this documentation                    |
+  |  Listasde todas las secciones y subsecciones            |  Buscar esta documentación                    |
   |                                                         |                                               |
   +---------------------------------------------------------+-----------------------------------------------+
   |                                                         |                                               |
   |  :ref:`genindex`                                        |                                               |
   |                                                         |                                               |
-  |  All terms from this documentation                      |                                               |
+  |  Todos los términos de esta documentación               |                                               |
   |                                                         |                                               |
   +---------------------------------------------------------+-----------------------------------------------+
 
 .. i18n: **Meta information:**
 
-**Meta information:**
+**Meta-información:**
 
 .. i18n: .. table::
 .. i18n:   :class: main-content-presentation
@@ -188,21 +188,21 @@ Open Object Documentation
 .. i18n:   |                                         |                                                    |
 .. i18n:   +-----------------------------------------+----------------------------------------------------+
 
-.. table::
+.. tabla::
   :class: main-content-presentation
 
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
   |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
   |                                         |                                                    |
-  |  The GPL and OEPL                       |  Licence on this documentation                     |
+  |  GPL y OEPL                             |  Licencias sobre esta documentación                |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
   |  :ref:`Copyright <copyright-link>`      |                                                    |
   |                                         |                                                    |
-  |  Software and documentation copyrights  |                                                    |
-  |                                         |                                                    |
+  |  Derechos de autor de Software y docu-  |                                                    |
+  |  mentación                              |                                                    |
   +-----------------------------------------+----------------------------------------------------+
 
 .. i18n: ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
@@ -211,8 +211,8 @@ Open Object Documentation
 
 ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
 ..  |                                         |                                                    |
-..  |  About our company                      |  Software and documentation copyrights             |
+..  |  Sobre nuestra empresa                  |  Derechos de autor de Software y documentación     |
 
 .. i18n: This documentation is based on version 5.0 of Open Object and Open ERP, last updated |today|
 
-This documentation is based on version 5.0 of Open Object and Open ERP, last updated |today|
+Esta documentación es basada en la versión 5.0 de Open Object y Open ERP, última actualización |today|

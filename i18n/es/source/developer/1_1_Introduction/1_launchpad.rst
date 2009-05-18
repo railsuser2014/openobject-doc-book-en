@@ -345,7 +345,7 @@ How to commit Your Work
 
 .. i18n: If you want to contribute on OpenERP or OpenObject, here is the proposed method:
 
-If you want to contribute on OpenERP or OpenObject, here is the proposed method:
+Si quieres contribuir con OpenERP u OpenObject, aquí esta la manera propuesta:
 
 .. i18n:   * You create a branch on launchpad on the project that interest you. It's
 .. i18n:     important that you create your branch on launchpad and not on your local
@@ -365,10 +365,10 @@ If you want to contribute on OpenERP or OpenObject, here is the proposed method:
 .. i18n:       so that you can review your code to better fits guidelines (problem for
 .. i18n:       futur migrations, ...)
 
-  * You create a branch on launchpad on the project that interest you. It's
-    important that you create your branch on launchpad and not on your local
-    system so that we can easily merge, share code between projects and
-    centralize futur developments.
+  * Crear un brach en launchpad sobre el proyecto que te interesa. Es 
+    importante que crees tu branch en launchpad y no en to sistema local
+    así podremos juntarlo facilmente, compartir c;odigo entre proyectos y
+    centralizar futuros desarrollos.
   * You develop your own features or bugfixes
     in your own branch on launchpad. Don't forget to set the status of your
     branch (new, experimental, development, mature, ...) so that contributors
