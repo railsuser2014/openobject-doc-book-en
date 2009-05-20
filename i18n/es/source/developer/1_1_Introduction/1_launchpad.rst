@@ -369,19 +369,18 @@ Si quieres contribuir con OpenERP u OpenObject, aquí esta la manera propuesta:
     importante que crees tu branch en launchpad y no en to sistema local
     así podremos juntarlo facilmente, compartir c;odigo entre proyectos y
     centralizar futuros desarrollos.
-  * You develop your own features or bugfixes
-    in your own branch on launchpad. Don't forget to set the status of your
-    branch (new, experimental, development, mature, ...) so that contributors
-    knows what they can use or not.
-  * Once your code is good enough, you propose your branch for merging
-  * Your work will be evaluated by one responsible of the commiters team.
+  * Yu desarrollo tus propias caracteristicas or correcciones entu propio branch
+    en launchpad. No olvides poner el estado de tu *branch* (nuevo, experimentalm desarrollo, estable, ...)
+    asi los contribuidores saben que pueden usar y que no.
+  * Una ves que tu código sea lo suficientemente bueno, puedes proponer tu *branch* para publicarlo
+  * Tu trabajo será evaluado por el responsable del *commiters team*.
 
-    - If they accept your branch for integration in the official version, they
-      will submit to the quality team that will review and merge in the official
-      branch.
-    - If the commiter team refuses your branch, they will explain why
-      so that you can review your code to better fits guidelines (problem for
-      futur migrations, ...)
+    - Si aceptan tu *branch* para la integración en la versión oficial, ellos
+      lo darán al equipo de calidad para que lo revisen y lo pongan en el *branch*
+      oficial.
+    - Si el equipo de programadores asignado rechaza tu *branch*, ellos te explicarán por qué
+      así tu podrás revisar tu código para mejorar con las sugerencias (problemas para
+      futuras migraciones, ...)
 
 .. i18n: The `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_,
 .. i18n: that stores all extra modules, is directly accessible to all commiters. If you
@@ -389,45 +388,45 @@ Si quieres contribuir con OpenERP u OpenObject, aquí esta la manera propuesta:
 .. i18n: This branch do not require a validation of the quality team. You should put
 .. i18n: there your special modules for your own customers.
 
-The `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_,
-that stores all extra modules, is directly accessible to all commiters. If you
-are a commiter, you can work directly on this branch and commit your own work.
-This branch do not require a validation of the quality team. You should put
-there your special modules for your own customers.
+El `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_,
+que guarda todos los módulos extras, es directamente accesible para todos los desarrolladores. Si tu
+eres un desarrollador, puedes trabajar directamente en este *branch* y escribir tu trabajo.
+Este *branch* no require una validación del equipo de calidad. Debes poner tus módulos especiales
+para tus clientes.
 
 .. i18n: If you want to propose or develop new modules, we suggest you to create your
 .. i18n: own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
 .. i18n: and develop within your branch. You can fill in a bug to request that
 .. i18n: your modules are integrated in one of the two branches:
 
-If you want to propose or develop new modules, we suggest you to create your
-own branch in the `openobject-addons project <https://launchpad.net/openobject-addons>`_
-and develop within your branch. You can fill in a bug to request that
-your modules are integrated in one of the two branches:
+Si tu propones o desarrollas nuevos módulos, te sugerimos crear tu propio *branch*
+en `openobject-addons project <https://launchpad.net/openobject-addons>`_
+y desarrollar dentro de tu *branch*. Puedes reportar en un bug la petición que tus módulos están
+integrados en uno de estos *branches*:
 
 .. i18n:   * `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_ : if your module touches a few companies
 .. i18n:   * `addons <https://code.launchpad.net/~openerp/openobject-addons/trunk>`_ : if your module will be usefull for most of the companies
 
-  * `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_ : if your module touches a few companies
-  * `addons <https://code.launchpad.net/~openerp/openobject-addons/trunk>`_ : if your module will be usefull for most of the companies
+  * `extra-addons branch <https://code.launchpad.net/~openerp-commiter/openobject-addons/trunk-extra-addons>`_ : Si tu módulo llega a pocas compañias
+  * `addons <https://code.launchpad.net/~openerp/openobject-addons/trunk>`_ : Si tu módulo será usadopor más compañias
 
 .. i18n: We invite all our partners and contributors to work in that way so that we can
 .. i18n: easily integrate and share the work done between the different projects.
 
-We invite all our partners and contributors to work in that way so that we can
-easily integrate and share the work done between the different projects.
+Invitamos a todos nuestros socios y contribuidores a trabajar de esta manera, así podemos fácilmente
+integrar y compartir el trabajo hecho entre diferentes proyectos.
 
 .. i18n: Answer Tracker and Bugs Management
 .. i18n: ----------------------------------
 
-Answer Tracker and Bugs Management
-----------------------------------
+Respuestas Tracker y Administración de Errores
+----------------------------------------------
 
 .. i18n: We use launchpad on the openobject project to track all bugs and features
 .. i18n: request related to openerp and openobject. the bug tracker is available here:
 
-We use launchpad on the openobject project to track all bugs and features
-request related to openerp and openobject. the bug tracker is available here:
+Usamos launchpad para el poyecto OpenObject para seguir todos los errores y características
+requeridas y relacionadas con openerp y openobject. El seguidor de errores esta disponible aquí:
 
 .. i18n:   * Bug Tracker : https://bugs.launchpad.net/openobject
 .. i18n:   * Ideas Tracker : https://blueprints.launchpad.net/openobject
@@ -440,8 +439,8 @@ request related to openerp and openobject. the bug tracker is available here:
 .. i18n: Every contributor can report bug and propose bugfixes for the bugs.
 .. i18n: The status of the bug is set according to the correction.
 
-Every contributor can report bug and propose bugfixes for the bugs.
-The status of the bug is set according to the correction.
+Cada contribuidor puede reportar errores y proponer correcciones para los errores.
+El estado del error es puesto de acuerdo a la corrección.
 
 .. i18n: When a particular branch fixes the bug, a commiter (member of the `Commiter
 .. i18n: Team <https://launchpad.net/~openerp-commiter>`_) can set the status to "Fix
@@ -449,11 +448,10 @@ The status of the bug is set according to the correction.
 .. i18n: Committed.", after they validated the proposed patch or branch that fixes the
 .. i18n: bug.
 
-When a particular branch fixes the bug, a commiter (member of the `Commiter
-Team <https://launchpad.net/~openerp-commiter>`_) can set the status to "Fix
-Commited". Only commiters have the right to change the status to "Fix
-Committed.", after they validated the proposed patch or branch that fixes the
-bug.
+Cuando un *branch* particular arregla el error, un desarrollador (miembro de `Commiter
+Team <https://launchpad.net/~openerp-commiter>`_) puede cambiar el estdo a  "Corrección
+Realizada". Solo los desarrolladores de este equipo tiene ls permisos para cambiar el estado a "Corrección
+Realizada.", después ellos lo validan el parche propuesto o *branch* que arregla el error.
 
 .. i18n: The `Quality Team <https://launchpad.net/~openerp>`_ have a look every day to
 .. i18n: bugs in the status "Fix Commited". They check the quality of the code and merge
@@ -461,29 +459,29 @@ bug.
 .. i18n: important that only commiters can set the bug in the status "Fix Commited".
 .. i18n: Once quality team finish merging, they change the status to "Fix Released".
 
-The `Quality Team <https://launchpad.net/~openerp>`_ have a look every day to
-bugs in the status "Fix Commited". They check the quality of the code and merge
-in the official branch if it's ok. To limit the work of the quality team, it's
-important that only commiters can set the bug in the status "Fix Commited".
-Once quality team finish merging, they change the status to "Fix Released".
+El `Quality Team <https://launchpad.net/~openerp>`_ tiene que revisar cada día los errores en estado
+"Corrección Realizada". Ellos revisan la calidad del código y ponerlo en el *branch* oficial si está bien.
+Para limitar el trabajo del equipo de calidad, es importante que solo los desarrolladores permitidos
+puedan cambiar el estado a "Corrección Realizada".
+Una ves que el equipo de calidad termine de aplicar los cambios, ellos cambian el estado a "Correción Liberada".
 
 .. i18n: Translation
 .. i18n: -----------
 
-Translation
------------
+Traducción
+----------
 
 .. i18n: Translations are managed by 
 .. i18n: the `Launchpad Web interface <https://translations.launchpad.net/openobject>`_. Here, you'll
 .. i18n: find the list of translatable projects.
 
-Translations are managed by 
-the `Launchpad Web interface <https://translations.launchpad.net/openobject>`_. Here, you'll
-find the list of translatable projects.
+Las traducciones son administradas por
+la `Launchpad Web interface <https://translations.launchpad.net/openobject>`_. Aquí, encontrarás
+la lista de proyectos de traducción.
 
 .. i18n: Please read the `FAQ <https://answers.launchpad.net/rosetta/+faqs>`_ before asking questions.
 
-Please read the `FAQ <https://answers.launchpad.net/rosetta/+faqs>`_ before asking questions.
+Por favor leer `FAQ <https://answers.launchpad.net/rosetta/+faqs>`_ antes de hacer preguntas.
 
 .. i18n: Blueprints
 .. i18n: ----------

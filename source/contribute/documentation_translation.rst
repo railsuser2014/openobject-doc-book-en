@@ -131,7 +131,8 @@ Uploading to Launchpad
 ----------------------
 
 Once you have translated a few pages, you should commit back to launchpad.
-To do this, your launchpad account must be subscribed in the openobject-community group.
+To do this, your launchpad account must be subscribed in the 
+`openobject-community group <http://https://launchpad.net/~openerp-community>`_.
 
 To upload your modifications, you should commit on launchpad:
 
