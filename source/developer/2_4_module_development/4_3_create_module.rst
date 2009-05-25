@@ -5,7 +5,8 @@ Create Module
 Getting the skeleton directory
 ------------------------------
 
-Creating a new module is quickly done by copying the module called "simple" or "custom" (depending on your OpenERP version) into a new directory.
+Creating a new module is quickly done by copying the module called "simple" or
+"custom" (depending on your OpenERP version) into a new directory.
 
 As an example on Ubuntu:
 ::
@@ -13,24 +14,28 @@ As an example on Ubuntu:
     $ cd /usr/lib/openerp-server/addons/
     $ sudo cp -r custom travel
 
-You will need to give yourself permissions over that new directory if you want to be able to modify it:
-::
+You will need to give yourself permissions over that new directory if you want
+to be able to modify it: ::
 
     $ sudo chown -R `whoami` travel
 
-You got yourself the directory for a new module there, and a skeleton structure, but you still need to change a few things inside the module's definition...
+You got yourself the directory for a new module there, and a skeleton
+structure, but you still need to change a few things inside the module's
+definition...
 
 Changing the default definition
 -------------------------------
 
-To change the default settings of the custom module (which is now the "travel" module), get yourself into the "travel" directory and edit *__terp__.py. gedit*, in the following example, is just a simple text editor. Feel free to use another one.
-::
+To change the default settings of the custom module (which is now the "travel" module),
+get yourself into the "travel" directory and edit *__terp__.py* (with *gedit*,
+for example, a simple text editor. Feel free to use another one) ::
 
     $ cd travel
     $ gedit __terp__.py
 
 The file looks like this:
-::
+
+.. code-block:: python
 
     #
     # Use the custom module to put your specific code in a separate module.
@@ -50,7 +55,8 @@ The file looks like this:
     }
 
 You will want to change whichever settings you feel right and get something like this:
-::
+
+.. code-block:: python
 
     {
         "name" : "Travel agency module",
@@ -72,13 +78,16 @@ Note the "active" field becomes true.
 Changing the main module file
 -----------------------------
 
-Now you need to update the custom.py script to suit the needs of your module. We suggest you follow the Flash tutorial for this or download the travel agency module from the 20 minutes tutorial page.
-::
+Now you need to update the custom.py script to suit the needs of your module.
+We suggest you follow the Flash tutorial for this or download the travel agency
+module from the 20 minutes tutorial page.  ::
 
     The documentation below is overlapping the two next step in this wiki tutorial,
     so just consider them as a help and head towards the next two pages first...
 
 The custom.py file should initially look like this (intentionally removing the comments):
+
+.. code-block:: python
 
     from osv import osv, fields
 
@@ -91,8 +100,10 @@ The custom.py file should initially look like this (intentionally removing the c
     #       }
     #custom_material()
 
-The '#' signs represent comments. You'll have to remove them, rename the class and its attributes to something like this:
-::
+The '#' signs represent comments. You'll have to remove them, rename the class
+and its attributes to something like this:
+
+.. code-block:: python
 
     from osv import osv, fields
 
@@ -107,13 +118,18 @@ The '#' signs represent comments. You'll have to remove them, rename the class a
            }
     travel_hostel()
 
-Ideally, you would copy that bunch of code several times to create all the entities you need (travel_airport, travel_room, travel_flight). This is what will hold the database structure of your objects, but you don't really need to worry too much about the database side. Just filling this file will create the system structure for you when you install the module.
+Ideally, you would copy that bunch of code several times to create all the
+entities you need (travel_airport, travel_room, travel_flight). This is what
+will hold the database structure of your objects, but you don't really need to
+worry too much about the database side. Just filling this file will create the
+system structure for you when you install the module.
 
 Customizing the view
 --------------------
 
 You can now move on to editing the views. To do this, edit the custom_view.xml file. It should first look like this:
-::
+
+.. code-block:: xml
 
     <terp>
     <data>
@@ -127,9 +143,15 @@ You can now move on to editing the views. To do this, edit the custom_view.xml f
     </data>
     </terp>
 
-This is, as you can see, an example taken from an accounting system (French people call accounting "comptabilité", which explains the compta bit).
+This is, as you can see, an example taken from an accounting system (French
+people call accounting "comptabilité", which explains the compta bit).
 
-Defining a view is defining the interfaces the user will get when accessing your module. Just defining a bunch of fields here should already get you started on a complete interface. However, due to the complexity of doing it right, we recommend, once again, that you take a look at the 20 minutes Flash tutorial or download the travel agency module example.
+Defining a view is defining the interfaces the user will get when accessing
+your module. Just defining a bunch of fields here should already get you
+started on a complete interface. However, due to the complexity of doing it
+right, we recommend, once again, that you take a look at the 20 minutes Flash
+tutorial or download the travel agency module example.
 
-Next you should be able to create different views using other files to separate them from your basic/admin view.
+Next you should be able to create different views using other files to separate
+them from your basic/admin view.
 
