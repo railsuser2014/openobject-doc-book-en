@@ -237,7 +237,6 @@ Module Technical Guide: Introspection report on objects
     huissier
     idea
     import_export
-    index
     invoice_numbering
     invoice_sequence
     l10n_be
