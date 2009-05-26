@@ -20,7 +20,7 @@
     <script src="http://js-kit.com/ratings.js"></script>
 
 City for base_contact (*base_contact_city*)
-==========================================
+===========================================
 :Module: base_contact_city
 :Name: City for base_contact
 :Version: False
