@@ -1,6 +1,6 @@
 
 .. module:: base_contact_city
-    :synopsis: City for base_contat 
+    :synopsis: City for base_contact 
     :noindex:
 .. 
 
@@ -19,10 +19,10 @@
     <div class="js-kit-rating" title="" permalink="" standalone="yes" path="/base_contact_city"></div>
     <script src="http://js-kit.com/ratings.js"></script>
 
-City for base_contat (*base_contact_city*)
-==========================================
+City for base_contact (*base_contact_city*)
+===========================================
 :Module: base_contact_city
-:Name: City for base_contat
+:Name: City for base_contact
 :Version: False
 :Author: Pablo Rocandio
 :Directory: base_contact_city

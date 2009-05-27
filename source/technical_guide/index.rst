@@ -15,6 +15,7 @@ Module Technical Guide: Introspection report on objects
     account_analytic_progress
     account_asset
     account_balance
+    account_bankimport
     account_base
     account_bob_import
     account_budget
@@ -27,6 +28,7 @@ Module Technical Guide: Introspection report on objects
     account_india
     account_invoice
     account_invoice_analytic_required
+    account_invoice_india
     account_invoice_layout
     account_invoice_number
     account_invoice_payment_term
@@ -41,6 +43,7 @@ Module Technical Guide: Introspection report on objects
     account_report
     account_report_india
     account_reporting
+    account_reports_india
     account_reverse
     account_simulation
     account_stock
@@ -49,6 +52,7 @@ Module Technical Guide: Introspection report on objects
     account_voucher_payment
     account_voucher_workflow
     airport
+    alerts
     analytic_journal_billing_rate
     analytic_partners
     analytic_user_function
@@ -59,6 +63,7 @@ Module Technical Guide: Introspection report on objects
     auto_email_sale
     auto_email_stock
     base
+    base_contact
     base_contact
     base_contact_city
     base_contact_team
@@ -73,11 +78,13 @@ Module Technical Guide: Introspection report on objects
     base_module_record
     base_partner_gender
     base_partner_relation
+    base_partner_security
     base_partner_sequence
     base_partner_surname
     base_report_creator
     base_report_designer
     base_report_model
+    base_report_unicode
     base_setup
     base_translation
     base_url_menu
@@ -90,14 +97,46 @@ Module Technical Guide: Introspection report on objects
     board_crm_configuration
     board_dm
     board_document
+    board_frontdesk
     board_manufacturing
     board_project
+    board_reservation
+    board_restaurant
     board_sale
     board_service
     bookstore
+    business
+    c2c_account_payment
+    c2c_analytic
+    c2c_analytic_chart
+    c2c_analytic_wizard
+    c2c_base_account
     c2c_budget
+    c2c_contact_to_ldap
+    c2c_correct_invoice
+    c2c_crm_reporting
+    c2c_currency_rate_update
+    c2c_expense
+    c2c_finance_report
+    c2c_finance_report_extended
+    c2c_fiscal_year_close
+    c2c_holidays_import
+    c2c_holidays_report
+    c2c_hours_blocks
+    c2c_hr_timesheet_sheet
+    c2c_invoice_layer
+    c2c_multi_currency_expense
+    c2c_multicurrency_journal
+    c2c_orphans_accounts_checker
+    c2c_partner_address
+    c2c_planning_management
+    c2c_project_activities
     c2c_reporting_tools
     c2c_scan_bvr
+    c2c_stock_obsolete
+    c2c_timesheet_reports
+    c2c_translation_synchro
+    catalog
     cci_account
     cci_audittrail
     cci_base_contact
@@ -129,21 +168,27 @@ Module Technical Guide: Introspection report on objects
     crm_telemarketing
     crm_vertical
     currency_rate
+    custom
     delivery
     demo_setup
     discount_campaign
     dm
+    dm_base_contact
     dm_crm
     dm_email
     dm_emailvision
     dm_lead
+    dm_partner_address
+    dm_simulator
     dm_website
     document
     document_extension
     document_ics
     document_rule
+    document_sftp
     document_webdav_old
     ecommerce
+    ecotaxe
     edi
     email_account
     email_sale
@@ -156,14 +201,19 @@ Module Technical Guide: Introspection report on objects
     fashion
     flagey
     fleet_maintenance
+    fleet_manager
     game_scenario
     gnucash
     google_blogger
     google_calendar
+    google_earth
     google_map
+    google_translate
     health
+    hnm_heofax
     hotel
     hotel_housekeeping
+    hotel_reservation
     hotel_restaurant
     hr
     hr_attendance
@@ -174,16 +224,20 @@ Module Technical Guide: Introspection report on objects
     hr_expense
     hr_holidays
     hr_holidays_cci
+    hr_holidays_evaluation
     hr_holidays_request
+    hr_medical
     hr_performance
     hr_skill
     hr_timesheet
     hr_timesheet_ical
     hr_timesheet_invoice
+    hr_timesheet_project
     hr_timesheet_sheet
     huissier
     idea
     import_export
+    invoice_numbering
     invoice_sequence
     l10n_be
     l10n_ca-qc
@@ -224,6 +278,7 @@ Module Technical Guide: Introspection report on objects
     l10n_chart_us_ucoa_ez
     l10n_chart_ve
     l10n_ch_chart_c2c_pcg
+    l10n_ch_pcg
     l10n_ch_vat_brut
     l10n_ch_vat_forfait
     l10n_ch_vat_net
@@ -269,6 +324,7 @@ Module Technical Guide: Introspection report on objects
     olap_crm
     olap_extract
     olap_sale
+    partner_credit
     partner_informations
     partner_layout
     partner_ldap
@@ -282,25 +338,35 @@ Module Technical Guide: Introspection report on objects
     portal_analytic_package
     portal_sale
     portal_service
+    pricing_policy
     process
     product
     product_catalog_report
+    product_code_category
     product_electronic
     product_expiry
     product_extended
     product_gtin
+    product_hardware_revision
     product_index
     productivity_analysis
     product_listprice_upgrade
+    product_loan
     product_lot_foundry
     product_margin
+    product_price_decay
+    product_price_update
     product_qt
     product_search_reference
+    product_sequence
     product_series
     product_size
+    product_tax_incl
     product_variant_configurator
     product_variant_multi
     product_visible_discount
+    produit_pharmaceutique
+    profile_account_india
     profile_accounting
     profile_ampco
     profile_association
@@ -311,6 +377,7 @@ Module Technical Guide: Introspection report on objects
     profile_cci
     profile_crm
     profile_dm
+    profile_hotel
     profile_indian_account
     profile_manufacturing
     profile_service
@@ -334,6 +401,7 @@ Module Technical Guide: Introspection report on objects
     radiotv
     report_account
     report_analytic
+    report_analytic2
     report_analytic_line
     report_analytic_planning
     report_analytic_planning_delegate
@@ -341,15 +409,19 @@ Module Technical Guide: Introspection report on objects
     report_auction
     report_crm
     report_document
+    report_hotel_reservation
     report_hotel_restaurant
     report_intrastat
     report_mrp
     report_project
     report_purchase
     report_sale
+    report_stock
     report_task
     report_timesheet
     report_timesheet_user
+    res_config
+    rollmanagement
     sale
     sale_advertising
     sale_analytic_plans
@@ -369,6 +441,7 @@ Module Technical Guide: Introspection report on objects
     sale_payment
     sale_product_multistep_configurator
     sale_rebate
+    sale_simple_pos
     sales_purchase_seq
     sales_server_action
     sale_supplier_direct_delivery
@@ -377,6 +450,7 @@ Module Technical Guide: Introspection report on objects
     sale_wo_production
     sandwich
     scrum
+    sednacom_extras
     segmentation
     smsclient
     smtpclient
@@ -384,9 +458,13 @@ Module Technical Guide: Introspection report on objects
     stock_invoice_directly
     stock_location
     stock_no_autopicking
+    stock_period
     stock_planning
     subscription
+    supplier_product
+    syleam_pos
     test_44
+    test_server
     tiny_purchase
     travel
     use_control

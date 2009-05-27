@@ -110,8 +110,8 @@ tiny_latex_include = r"""
 
 \fancypagestyle{main}{%
   \fancyhf{} % clear all header and footer fields
-  \fancyfoot[LE,RO]{\bfseries \thepage}
-  \fancyhead[LO,RE]{\slshape \leftmark} %% displays the chapter
+  \fancyfoot[RO]{\bfseries \leftmark\ \ \ \ \ \ \thepage}
+  \fancyfoot[LE]{\bfseries \thepage\ \ \ \ \ \ \leftmark}
 }
 
 \renewcommand{\chaptermark}[1]{%

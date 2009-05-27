@@ -69,13 +69,21 @@ http://tiny.be/mailman/listinfo/partners: the web interface to manage your subsc
 Wiki
 ++++
 
-All documentations about OpenERP and OpenObject are maintained in the official wiki:
+The OpenObject wiki is used to manage activities around Open ERP.
 
-  * http://openerp.com/wiki
+  * http://openobject.com/wiki
+
+You'll find informations about:
+
+  * Shared Funding Projects
+  * IRC Meetings
+  * Real Life Meetings (eg. Community Days)
+  * Business Intelligence
+  * Open Report (eg. OpenReport, OpenOffice Plugin)
 
 To keep you aware about what is improved on this wiki, use this RSS feed:
 
-  * http://openerp.com/wiki/index.php?title=Special:Recentchanges&feed=rss
+  * http://openobject.com/wiki/index.php?title=Special:Recentchanges&feed=rss
 
 Blog
 ++++
