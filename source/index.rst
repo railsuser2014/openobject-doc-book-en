@@ -30,7 +30,7 @@ Open Object Documentation
   <div class="tip">
   These best-sellers books present a new integrated approach to enterprise management and
   best development practices. You can have a look at our <a
-  href="http://openerp.com/buy/books.html.html">printed
+  href="http://openerp.com/buy/books.html">printed
   books</a> or <a href="http://openerp.com/buy/e-book.html">PDF's version</a>.
   <br/>
   We are looking for translators, <a href="http://doc.openerp.com/contribute/documentation_translation.html">read this</a> to contribute.</a>.  </div>
