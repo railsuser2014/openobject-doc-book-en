@@ -82,13 +82,19 @@ Open ERP investigation.
 The forum enables you to discuss issues with other Open ERP users. It's very active and you have a
 good chance of receiving some form of response to your questions within twenty-four hours or so.
 
-* **The wiki** http://openerp.org/wiki
+* **The wiki**  http://openobject.com/wiki
 
-The wiki contains a large amount of information about the software, some current and some
-historical. You'll find the documentation necessary for installation there, as well as user
-documentation, and a technical manual for developing your own modules.
+The OpenObject wiki is used to manage activities around Open ERP.
 
-* **Database of Open ERP modules** http://openerp.org/component/option,com_mtree/Itemid,111/
+You'll find informations about:
+
+  * Shared Funding Projects
+  * IRC Meetings
+  * Real Life Meetings (eg. Community Days)
+  * Business Intelligence
+  * Open Report (eg. OpenReport, OpenOffice Plugin)
+
+* **Database of Open ERP modules** http://doc.openerp.com/modindex.html
 
 A database of all the modules available for use gives you free access to most of the known Open ERP
 extensions.
