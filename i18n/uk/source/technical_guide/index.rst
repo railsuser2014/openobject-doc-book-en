@@ -242,7 +242,6 @@ Module Technical Guide: Introspection report on objects
 .. i18n:     huissier
 .. i18n:     idea
 .. i18n:     import_export
-.. i18n:     index
 .. i18n:     invoice_numbering
 .. i18n:     invoice_sequence
 .. i18n:     l10n_be
@@ -714,7 +713,6 @@ Module Technical Guide: Introspection report on objects
     huissier
     idea
     import_export
-    index
     invoice_numbering
     invoice_sequence
     l10n_be
