@@ -7,5 +7,5 @@ OpenObject Architecture - Mvc
 
     mvc
     mvc_sql
-    mvc_view
+..    mvc_view
 
