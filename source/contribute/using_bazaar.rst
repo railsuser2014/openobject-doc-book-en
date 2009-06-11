@@ -286,4 +286,94 @@ Once your development on this branch are ok, you can ask a commiter to review
 and merge it or fill in a bug in the bugtracker. A commiter will then review
 your work and merge it to the official branch if it's good enough.
 
+Commit Guidelines
++++++++++++++++++
+
+When commiting your work to Launchpad, please respect these policies:
+
+The stable branch is for bugfixes
+"""""""""""""""""""""""""""""""""
+
+The stable branch must be used for bugfixes. **Only bugfixes**.
+
+The new features (+the bugfixes on these new functionalities) have to be done
+in the trunk branch.
+
+.. note:: We will periodically backport all the fixes from stable to trunk.
+
+Set the author's name, if it's different from the committer
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Always set the author's name, if it's different from the committer. It is not
+acceptable at all to commit a contributor's work without at least his/her name in
+the commit message. We have to show respect for them and for their work, so
+please use ``--author="<author_name>"`` when merging work or patching features
+from community.
+
+::
+
+  e.g: bzr commit --author="<author_name>"
+
+Write a helpful commit message
+""""""""""""""""""""""""""""""
+
+Use a *commit tag* in **each** message. This tag should be one of:
+
+* **[IMP]**
+* **[FIX]**
+* **[REF]**
+* **[ADD]**
+* **[REM]**
+
+:[IMP]: For improvements
+
+:[FIX]: For bug fixes
+
+:[REF]: For refactoring (improvements of the source code, without changing the
+  functionalities or behavior. See http://en.wikipedia.org/wiki/Refactoring for
+  further details)
+
+:[ADD]: For adding new resources
+
+:[REM]: For removing of resources
+
+* Always put a meaningful commit message. Commit message should be self
+  explanatory including the name of the module that has been changed. No more
+  *"bugfix"* or *"improvements"* anymore! (the only single word commit messgae
+  accepted is "merge")
+
+* If you are fixing the bugs use ``--fixes=lp:<bug_number>`` instead of putting the
+  number of the bug in the commit message.
+
+* Use the revision id instead of the revision number when you make reference to
+  a revision in your commit message. You can get this revision id, by using the
+  command ``bzr version-info``.
+
+::
+
+  e.g:
+
+    Not Correct : bzr commit -m “[FIX]: reverted bad revision (cannot install new db) 
+      with revision number:525425”
+
+    Correct : bzr commit -m “[FIX]: reverted bad revision (cannot install new db) 
+    with revision number id: qdp@tinyerp.com-20090602143202-ehmntlift166mrnn”
+
+    Not Correct : bzr commit -m "Bug 568889 : typo corrected"
+
+    Correct : bzr commit --fixes=lp:568889 -m "[FIX] account module: typo corrected"
+
+.. note:: How to handle translations ?
+
+    use **[IMP]** if you translated a message in a po file
+
+    use **[ADD]** if you added an new po file
+
+Avoid big commits
+"""""""""""""""""
+
+Don't make a commit that will impact lots of modules. Try to split it into
+different commits where impacted modules are differents (It will be
+helpful when we are going to revert that module separately).
+
 
