@@ -1,5 +1,5 @@
 
-.. _part-ops:
+.. _part-exercice:
 
 #################
 Open ERP Exercice
