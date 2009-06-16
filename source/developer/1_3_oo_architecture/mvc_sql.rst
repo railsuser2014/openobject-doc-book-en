@@ -100,69 +100,69 @@ Here is a complete example, from the Open ERP official distribution, of the func
 .. code-block:: python
 
     class mrp_bom(osv.osv):
-    ...
+        ...
         def _bom_find(self, cr, uid, product_id, product_uom, properties=[]):
-         bom_result = False
-         # Why searching on 'BoM without parent' ?
-         cr.execute('select id from mrp_bom where product_id=%d and bom_id is null
-                       order by sequence', (product_id,))
-         ids = map(lambda x: x[0], cr.fetchall())
-         max_prop = 0
-         result = False
-         for bom in self.pool.get('mrp.bom').browse(cr, uid, ids):
-              prop = 0
-              for prop_id in bom.property_ids:
-                   if prop_id.id in properties:
+            bom_result = False
+            # Why searching on 'BoM without parent' ?
+            cr.execute('select id from mrp_bom where product_id=%d and bom_id is null
+                          order by sequence', (product_id,))
+            ids = map(lambda x: x[0], cr.fetchall())
+            max_prop = 0
+            result = False
+            for bom in self.pool.get('mrp.bom').browse(cr, uid, ids):
+                prop = 0
+                for prop_id in bom.property_ids:
+                    if prop_id.id in properties:
                         prop+=1
-              if (prop>max_prop) or ((max_prop==0) and not result):
-                   result = bom.id
-         return result
+                if (prop>max_prop) or ((max_prop==0) and not result):
+                    result = bom.id
+            return result
 
-         def _bom_explode(self, cr, uid, bom, factor, properties, addthis=False, level=10):
-         factor = factor / (bom.product_efficiency or 1.0)
-         factor = rounding(factor, bom.product_rounding)
-         if factor<bom.product_rounding:
-              factor = bom.product_rounding
-         result = []
-         result2 = []
-         if bom.type=='phantom' and not bom.bom_lines:
-              newbom = self._bom_find(cr, uid, bom.product_id.id,
-                                   bom.product_uom.id, properties)
-              if newbom:
-                   res = self._bom_explode(cr, uid, self.browse(cr, uid, [newbom])[0],
-                         factor*bom.product_qty, properties, addthis=True, level=level+10)
-                   result = result + res[0]
-                   result2 = result2 + res[1]
-              else:
-                   return [],[]
-         else:
-              if addthis and not bom.bom_lines:
-                   result.append(
-                   {
-                        'name': bom.product_id.name,
-                        'product_id': bom.product_id.id,
-                        'product_qty': bom.product_qty * factor,
-                        'product_uom': bom.product_uom.id,
-                   })
-              if bom.routing_id:
-                   for wc_use in bom.routing_id.workcenter_lines:
-                        wc = wc_use.workcenter_id
-                        cycle = factor * wc_use.cycle_nbr
-                        result2.append({
-                             'name': bom.routing_id.name,
-                             'workcenter_id': wc.id,
-                             'sequence': level,
-                             'cycle': cycle,
-                             'hour': wc_use.hour_nbr + (
-                                 wc.time_start+wc.time_stop+cycle*wc.time_cycle) *
-                                 (wc.time_efficiency or 1
-                       })
-              for bom2 in bom.bom_lines:
-                  res = self._bom_explode(cr, uid, bom2, factor, properties,
-                                              addthis=True, level=level+10)
-                  result = result + res[0]
-                  result2 = result2 + res[1]
-         return result, result2
+            def _bom_explode(self, cr, uid, bom, factor, properties, addthis=False, level=10):
+                factor = factor / (bom.product_efficiency or 1.0)
+                factor = rounding(factor, bom.product_rounding)
+                if factor<bom.product_rounding:
+                    factor = bom.product_rounding
+                result = []
+                result2 = []
+                if bom.type=='phantom' and not bom.bom_lines:
+                    newbom = self._bom_find(cr, uid, bom.product_id.id,
+                                         bom.product_uom.id, properties)
+                    if newbom:
+                        res = self._bom_explode(cr, uid, self.browse(cr, uid, [newbom])[0],
+                              factor*bom.product_qty, properties, addthis=True, level=level+10)
+                        result = result + res[0]
+                        result2 = result2 + res[1]
+                    else:
+                        return [],[]
+                else:
+                    if addthis and not bom.bom_lines:
+                        result.append(
+                        {
+                             'name': bom.product_id.name,
+                             'product_id': bom.product_id.id,
+                             'product_qty': bom.product_qty * factor,
+                             'product_uom': bom.product_uom.id,
+                        })
+                     if bom.routing_id:
+                         for wc_use in bom.routing_id.workcenter_lines:
+                             wc = wc_use.workcenter_id
+                             cycle = factor * wc_use.cycle_nbr
+                             result2.append({
+                                  'name': bom.routing_id.name,
+                                  'workcenter_id': wc.id,
+                                  'sequence': level,
+                                  'cycle': cycle,
+                                  'hour': wc_use.hour_nbr + (
+                                      wc.time_start+wc.time_stop+cycle*wc.time_cycle) *
+                                      (wc.time_efficiency or 1
+                             })
+                     for bom2 in bom.bom_lines:
+                         res = self._bom_explode(cr, uid, bom2, factor, properties,
+                                                     addthis=True, level=level+10)
+                         result = result + res[0]
+                         result2 = result2 + res[1]
+                return result, result2
 
 
 
