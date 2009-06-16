@@ -48,13 +48,16 @@ Then, we instruct a person in charge of the company to provide us with an
 inventory of various users. The following simplified table has been provided
 by NotSoTiny.
 
----------------------------------------------------
-| Employee | Role | Login | Password | Activities |
----------------------------------------------------
-|Fabien Dupont|CEO|fabien|fabien|Must access all features, except administration of the ERP|
-|Luc Lecoq|CSO & CFO|luc|luc|Should access all financial and sales documents.|
-|Eric Dubois|Worker|eric|eric|Do only production orders, must have the simplest menu possible|
----------------------------------------------------------------------------------------
++---------------+-----------+---------+------------+-----------------------------------------------------------------+
+|  Employee     |  Role     |  Login  |  Password  |  Activities                                                     |
++===============+===========+=========+============+=================================================================+
+| Fabien Dupont | CEO       | fabien  | fabien     | Must access all features, except administration of the ERP      |
++---------------+-----------+---------+------------+-----------------------------------------------------------------+
+| Luc Lecoq     | CSO & CFO | luc     | luc        | Should access all financial and sales documents.                |
++---------------+-----------+---------+------------+-----------------------------------------------------------------+
+| Eric Dubois   | Worker    | eric    | eric       | Do only production orders, must have the simplest menu possible |
++---------------+-----------+---------+------------+-----------------------------------------------------------------+
+
 
 .. note:: Exercice 3 - Create the different users and set their access rights
 
@@ -164,12 +167,17 @@ of products.
 
 Here is a list of some products to encode, with their main characteristics:
 
-| Code | Description | Type | Unit of Measure | Cust.Price | Cost | Method | Supplier | Delivery Delay |
--------------------------------------------------------------------------------------------------------
-|ARM100|Shelf of 100cm| Product | Unit | 130€ | 50€ | Produce | / | / |
-|ARM200|Shelf of 200cm| Product | Unit | 210€ | 80€ | Produce | / | / |
-|WOOD002|Wood 2mm| Product | Meter | 10€ | 5€ | Buy | Wood y Wood Pecker | 2 Weeks |
-|PROJ|Cooking Design Project| Service | Hour | 90€ | 20€ | Produce | / | / |
++---------+------------------------+-----------+-------------------+--------------+---------+-----------+----------------------+------------------+
+|  Code   |  Description           |  Type     |  Unit of Measure  |  Cust.Price  |  Cost   |  Method   |  Supplier            |  Delivery Delay  |
++=========+========================+===========+===================+==============+=========+===========+======================+==================+
+| ARM100  | Shelf of 100cm         |  Product  |  Unit             |  130€        |  50€    |  Produce  |  /                   |  /               |
++---------+------------------------+-----------+-------------------+--------------+---------+-----------+----------------------+------------------+
+| ARM200  | Shelf of 200cm         |  Product  |  Unit             |  210€        |  80€    |  Produce  |  /                   |  /               |
++---------+------------------------+-----------+-------------------+--------------+---------+-----------+----------------------+------------------+
+| WOOD002 | Wood 2mm               |  Product  |  Meter            |  10€         |  5€     |  Buy      |  Wood y Wood Pecker  |  2 Weeks         |
++---------+------------------------+-----------+-------------------+--------------+---------+-----------+----------------------+------------------+
+| PROJ    | Cooking Design Project |  Service  |  Hour             |  90€         |  20€    |  Produce  |  /                   |  /               |
++---------+------------------------+-----------+-------------------+--------------+---------+-----------+----------------------+------------------+
 
 .. note:: Exercice 9 - Products.
 
@@ -179,11 +187,15 @@ Here is a list of some products to encode, with their main characteristics:
 As to be able to sell some products, you will encode a starting inventory.
 Currently, here is the stock level of the above products:
 
-| Code | Stock |
-----------------
-|ARM100|50 Units|
-|ARM200|20 Units|
-|WOOD002|120 Meters|
++---------+------------+
+|  Code   |  Stock     |
++=========+============+
+| ARM100  | 50 Units   |
++---------+------------+
+| ARM200  | 20 Units   |
++---------+------------+
+| WOOD002 | 120 Meters |
++---------+------------+
 
 .. note:: Exercice 10 - Create the initial stock inventory.
 

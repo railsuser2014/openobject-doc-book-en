@@ -7,6 +7,7 @@ manufactures wooden bookshelves as shown in the above figure.
 
 La société a été fondée en 1978 par deux associés: Fabien Dupont et Luc
 Lecoq.
+
 * Fabien Dupont, l'actuel directeur général, a un parcours professionel
   plutôt technique et est responsable des grandes innovations qui ont fait la
   renommée de NotSoTiny.

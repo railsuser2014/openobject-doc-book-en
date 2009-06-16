@@ -98,6 +98,12 @@ try {
 {% block rootrellink %}
 {% endblock %}
 
+{% block sidebarsearch %}
+{{ super() }}
+<p style="display: none;">toto</p>
+{% endblock %}
+
+
 {#
 {%- block relbar2 %}{{ relbar_tiny() }}{% endblock %}
 #}
