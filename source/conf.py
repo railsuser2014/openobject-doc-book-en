@@ -24,7 +24,10 @@ from docutils import nodes
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig']
+extensions = [
+  'sphinx.ext.todo',
+  'sphinx.ext.ifconfig',
+]
 todo_include_todos = False
 
 # Add any paths that contain templates here, relative to this directory.
@@ -268,7 +271,10 @@ def begin_conclusion_directive(name, arguments, options, content, lineno,
 js_kit_comments = True
 
 def setup(app):
-    from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+    try:
+        from sphinx.htmlwriter import HTMLTranslator, BaseTranslator # sphinx ver 5.*
+    except ImportError:
+        from sphinx.writers.html import HTMLTranslator, BaseTranslator # sphinx ver 6.*
     import pickle
 
     # load unique_path dict:
