@@ -271,10 +271,12 @@ def begin_conclusion_directive(name, arguments, options, content, lineno,
 js_kit_comments = True
 
 def setup(app):
-    try:
-        from sphinx.htmlwriter import HTMLTranslator, BaseTranslator # sphinx ver 5.*
-    except ImportError:
-        from sphinx.writers.html import HTMLTranslator, BaseTranslator # sphinx ver 6.*
+    from sphinx import __version__
+    major, minor, revision = map(int, __version__.split('.'))
+    if major*10+minor < 6:
+        raise Exception("You should upgrade Sphinx to version 0.6 or higher")
+
+    from sphinx.writers.html import HTMLTranslator, BaseTranslator
     import pickle
 
     # load unique_path dict:
