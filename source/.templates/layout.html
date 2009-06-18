@@ -1,4 +1,55 @@
 
+{% macro relbar_tiny() %}
+    <div class="related-tiny">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
+             accesskey="{{ rellink[2] }}">{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink_new %}
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{% endmacro %}
+
+{%- macro relbar_tiny2() %}
+    <div class="related-tiny">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
+             accesskey="{{ rellink[2] }}" class="bottom-nav-links" >{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink_new_2 %}
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {#
+        {%- block relbaritems %} {% endblock %}
+        #}
+      </ul>
+    </div>
+{%- endmacro %}
+
 {% extends "!layout.html" %}
 
 {% block extrahead %}
@@ -13,6 +64,7 @@ try {
 } catch(err) {}
 
 </script>
+<script src="{{ pathto('_static/tiny_js_kit_comment_control.js', 1) }}" type="text/javascript"></script>
 
 {#
 <script src="{{ pathto('_static/tiny_js_kit.js', 1) }}" type="text/javascript"></script>
@@ -24,27 +76,6 @@ try {
 <center>
 
 {% block sidebar1 %}
-  {%- macro relbar_tiny %}
-      <div class="related-tiny">
-        <h3>{{ _('Navigation') }}</h3>
-        <ul>
-          {%- for rellink in rellinks %}
-          <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
-            <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
-               accesskey="{{ rellink[2] }}">{{ rellink[3] }}</a>
-            {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
-          {%- endfor %}
-          {%- block rootrellink_new %}
-          <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
-          {%- endblock %}
-          {%- for parent in parents %}
-            <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
-          {%- endfor %}
-          {%- block relbaritems %} {% endblock %}
-        </ul>
-      </div>
-  {%- endmacro %}
-
   <div class="openobject-header">
     <table cellspacing="0" cellpadding="0" border="0" width="1004">
       <tbody>
@@ -99,7 +130,18 @@ try {
 {% endblock %}
 
 {% block sidebarsearch %}
-{{ super() }}
+<div id="searchbox">
+  <h3>{{ _('Quick search') }}</h3>
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="{{ _('Go') }}" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    {{ _('Enter search terms or a module, class or function name.') }}
+    </p>
+</div>
 <p style="display: none;">toto</p>
 {% endblock %}
 
@@ -128,29 +170,6 @@ try {
 
 
 {%- block footer %}
-
-  {%- macro relbar_tiny2 %}
-      <div class="related-tiny">
-        <h3>{{ _('Navigation') }}</h3>
-        <ul>
-          {%- for rellink in rellinks %}
-          <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
-            <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
-               accesskey="{{ rellink[2] }}" class="bottom-nav-links" >{{ rellink[3] }}</a>
-            {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
-          {%- endfor %}
-          {%- block rootrellink_new_2 %}
-          <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
-          {%- endblock %}
-          {%- for parent in parents %}
-            <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
-          {%- endfor %}
-          {#
-          {%- block relbaritems %} {% endblock %}
-          #}
-        </ul>
-      </div>
-  {%- endmacro %}
 
 {{relbar_tiny2()}}
 {{super()}}
