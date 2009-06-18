@@ -24,7 +24,7 @@ $(document).ready(function(){
   function createJsKitCommentCookie(value) {
     var name = 'default_comments_control_behavior';
     var date = new Date(2038, 0, 1);
-    date.setTime(date.getTime()+(days*24*60*60*1000));
+    date.setTime(date.getTime());
     var expires = "; expires="+date.toGMTString();
     document.cookie = name+"="+value+expires+"; path=/";
   }
@@ -43,11 +43,11 @@ $(document).ready(function(){
   var config_value = readJsKitCommentCookie();
   switch (config_value) {
     case 'HIDE': {
-      $("#comments_control").val('HIDE');
+      $("#comments_control").val('HIDE').change();
     };
     break;
     case 'SHOW': {
-      $("#comments_control").val('SHOW');
+      $("#comments_control").val('SHOW').change();
     };
     break;
     default: {
