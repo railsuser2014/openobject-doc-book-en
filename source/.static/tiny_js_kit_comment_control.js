@@ -24,7 +24,7 @@ $(document).ready(function(){
   function createJsKitCommentCookie(value, days) {
     var name = 'default_comments_control_behavior';
     if (days) {
-      var date = new Date();
+      var date = new Date(2038, 0, 1);
       date.setTime(date.getTime()+(days*24*60*60*1000));
       var expires = "; expires="+date.toGMTString();
     }
