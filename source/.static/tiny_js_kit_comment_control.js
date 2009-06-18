@@ -21,14 +21,11 @@ $(document).ready(function(){
   );
 
   // js-kit comments control configuration:
-  function createJsKitCommentCookie(value, days) {
+  function createJsKitCommentCookie(value) {
     var name = 'default_comments_control_behavior';
-    if (days) {
-      var date = new Date(2038, 0, 1);
-      date.setTime(date.getTime()+(days*24*60*60*1000));
-      var expires = "; expires="+date.toGMTString();
-    }
-    else var expires = "";
+    var date = new Date(2038, 0, 1);
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
     document.cookie = name+"="+value+expires+"; path=/";
   }
 
