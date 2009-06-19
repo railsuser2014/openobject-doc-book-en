@@ -107,6 +107,8 @@ way to export the data and put them into our module:
 
 This should create a file called res.partner.address with the following data:
 
+::
+
   id,name,partner_id:id
   partner_address2,Benoit Mortier,partner_2
   partner_address3,Laurent Jacot,partner_3
@@ -123,6 +125,8 @@ them.
 
 If you plan to upload thousands of records through this technique, you should consider
 using the argument '-P' when running the server.
+
+::
 
   openerp_server.py -P status.pickle --init=data_yourcompany
 
