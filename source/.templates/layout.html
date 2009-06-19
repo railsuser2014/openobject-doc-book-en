@@ -53,24 +53,13 @@
 {% extends "!layout.html" %}
 
 {% block extrahead %}
-<script type="text/javascript">
-
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-try {
-  var pageTracker = _gat._getTracker("UA-7333765-8");
-  pageTracker._trackPageview();
-} catch(err) {}
-
-</script>
 <script src="{{ pathto('_static/tiny_js_kit_comment_control.js', 1) }}" type="text/javascript"></script>
 
 {#
 <script src="{{ pathto('_static/tiny_js_kit.js', 1) }}" type="text/javascript"></script>
 #}
 
-  {{ super() }}
+{{ super() }}
 {% endblock %}
 
 <center>
@@ -166,6 +155,7 @@ try {
         </div>
       {%- endif %}
       </div>
+
 {%- endblock %}
 
 
@@ -173,6 +163,17 @@ try {
 
 {{relbar_tiny2()}}
 {{super()}}
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
 {% endblock %}
 
 </center>
