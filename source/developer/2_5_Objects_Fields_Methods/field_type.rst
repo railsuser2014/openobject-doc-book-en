@@ -184,6 +184,24 @@ TODO
                     'partner_id', 
                     'category_id', 
                     'Categories'),
+                    
+        To make it bidirectionnal (= create a field in the other object)::
+                class other.object.name2(osv.osv):
+                    _inherit = 'other.object.name'
+                    _columns = {
+                        'other_field': fields.many2many('actual.object.name', 'relation object', 'actual.object.id', 'other.object.id', 'Other Field Name'),
+                    }
+                other.object.name2()
+                
+        Example::
+
+                class res.partner.category2(osv.osv):
+                    _inherit = 'res.partner.category'
+                    _columns = {
+                        'partner_id': fields.many2many('res.partner', 'res_partner_category_rel', 'category_id', 'partner_id', 'Partners'),
+                    }
+                res.partner.category2()
+            
 
 :related:
 
