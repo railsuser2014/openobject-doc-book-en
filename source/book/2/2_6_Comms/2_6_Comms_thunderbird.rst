@@ -18,12 +18,12 @@ Installing the Thunderbird extension
 ------------------------------------
 
 To be able to use the Thunderbird plugin you first have to install the Open ERP module \
-``email_interface``\  . It may not be loaded in the core of the Open ERP Server so you might have
+``thunderbird``\  . It may not be loaded in the core of the Open ERP Server so you might have
 to load it using one of the methods described at the end of :ref:`ch-inst`. Once you've got it into your
 server's filesystem it's installed the same way as all of the other modules you've handled so far.
 
 You'll then have to install the Thunderbird extension. To do that, use the file \
-``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the :mod:`email_interface`
+``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the :mod:`thunderbird`
 module. Don't install it again if it's already there (which it might be
 because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
 functionality – so some of your staff may use one and other may use the other). 
@@ -71,7 +71,11 @@ To archive an email in Open ERP from Thunderbird select the email and click on 
 dialog box.
 
 This allows you to select an object that you'd like to add to your email and its attachments. You
-can select a partner, a task, a project, an analytical account, or any other object.
+can select a partner, a task, a project, an analytical account, or any other object and attach 
+selected mail as .eml file in attachment of selected record.
+
+You can create new case in crm using Create Case button.Select a section for which you want to
+create case.
 
 .. figure::  images/thunderbird_selection.png
    :scale: 50
