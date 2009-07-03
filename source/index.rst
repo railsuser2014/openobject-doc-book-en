@@ -21,6 +21,7 @@ Open Object Documentation
     contribute/index
     install/index
     technical_guide/index
+    odoo/index
 
 .. raw:: html
 
