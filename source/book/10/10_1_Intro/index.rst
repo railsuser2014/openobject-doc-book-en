@@ -1,4 +1,4 @@
-*********************
+
 The NotSoTiny Company
 *********************
 
@@ -30,18 +30,19 @@ a permi à la société de se distinguer des concurrents:
 The company Organisation
 ========================
 
-The various departments of NotsoTiny company are: 
-* A commercial department which is working with 3 types of customers: Direct customers, the retailers and departmental store style 'Ikea'. The commercial department is composed of a team of, a sales manager and 3 salesmen. They are in charge of before-sale and sale services.  
-* Research and development department is made up of a project manager, a public relation officer and 3 prototype developers. They have two main vocations. 
+The various departments of NotsoTiny company are:
+
+* A commercial department which is working with 3 types of customers: Direct customers, the retailers and departmental store style 'Ikea'. The commercial department is composed of a team of, a sales manager and 3 salesmen. They are in charge of before-sale and sale services.
+* Research and development department is made up of a project manager, a public relation officer and 3 prototype developers. They have two main vocations.
 
   * develop products on the request of prominent customers, this is study projects of around 3 months which are financed by the customers.
   * develop new internal products.
 
-* Production is responsible for manufacturing cupboards as well as effective maintenance of bill of materials and of manufacturing ranges 
-* Quality department. The NotSoTiny company has the ISO 9001 quality label and therefore, it has to maintain customers satisfaction and  quality problems follow-up.    
-* The data processing department will have the responsibility of the maintenance of the access rights on the various systems of the company. This service has been selected for the administration of TinyERP once it will have been integrated by yourself.  
-* The accounting and financial department is in charge of the management of NotSoTiny. They must also control the budgets of the research and development projects and the good invoicing of the various activities of the company. 
-* The management who wished to have the maximum information and key factors in order to have a good control.  
+* Production is responsible for manufacturing cupboards as well as effective maintenance of bill of materials and of manufacturing ranges
+* Quality department. The NotSoTiny company has the ISO 9001 quality label and therefore, it has to maintain customers satisfaction and  quality problems follow-up.
+* The data processing department will have the responsibility of the maintenance of the access rights on the various systems of the company. This service has been selected for the administration of TinyERP once it will have been integrated by yourself.
+* The accounting and financial department is in charge of the management of NotSoTiny. They must also control the budgets of the research and development projects and the good invoicing of the various activities of the company.
+* The management who wished to have the maximum information and key factors in order to have a good control.
 
 
 
@@ -52,18 +53,18 @@ The main product of the NotSoTiny company is Picasso bookshelf. Two different
 models are presented in the catalog: a bookshelf having a width of one meter
 and a bookshelf having a width of 2 meters.
 
-.. image: book_shelp.png
+.. image:: book_shelp.png
 
 The "Picaso" bookshelf is composed of 3 external support panels (2 small ones
 on the sides and one large on the backside), of 4 sections putting together the
 components, 3 racks and and 12 metal blocks (4 per rack)   
 
-.. image: book_shelp_compose.png
+.. image:: book_shelp_compose.png
 
 The factory is composed of wooden machines which allow streamlining and
 reinforcements, with saws for cutting the panels and assembling workshops.
 
-.. image:factory.png
+.. image:: factory.png
 
 
 The Open ERP Project
@@ -86,7 +87,7 @@ and prototypes on Open ERP.
 After a first meeting with the NotSoTiny ERP project managers, you agreed to
 build the following prototype.
 
-.. image: mindmap.png
+.. image:: mindmap.png
 
 You have 5 days to setup the Open ERP system and organise workshops with the
 different users of NotSoTiny. If you succeed to run a good prototype for
