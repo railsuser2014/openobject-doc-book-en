@@ -131,6 +131,8 @@ Field
 
     * **invisible="True"**: hides both the label and the field.
 
+    * **password="True"**: replace field entry by asterisk, "*".
+
     * **string=""**: change the field label. Note that this label is also used in the search view: see select attribute above).
 
     * **domain**: can restrict the domain.
