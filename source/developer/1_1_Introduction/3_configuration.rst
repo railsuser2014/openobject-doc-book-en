@@ -46,7 +46,7 @@ The server configuration file .openerp_serverrc is used to save server startup o
     Use this language as the language of the server. This must be specified as an ISO country code, as specified by the W3C. 
 
 :verbose:
-    Will used debugged output 
+    Enable debug output 
 
 :init:
     init a module (use "all" for all modules) 
@@ -179,7 +179,7 @@ GTK-Client Configuration
 .. topic:: form section
 
         :autosave:
-            Will the client automatically save the change you made to a record 
+            The client will automatically save the change you made to a record 
 
 .. topic:: printer section
 
