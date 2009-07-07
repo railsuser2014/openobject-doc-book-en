@@ -11,8 +11,8 @@ OpenERP Web Installation
 ===============================================================================
 
 Here is the installation instructions for Debian based Linux distributions.
-Tested on Debian Etch and Ubuntu Hardy. The procedure might work with other 
-Linux or similar distributions. See the docs on how to install the specified 
+Tested on Debian Etch and Ubuntu Hardy. The procedure might work with other
+Linux or similar distributions. See the docs on how to install the specified
 Packages on your favourite distribution.
 
 -------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ TurboGears
 
     $ sudo apt-get install python-setuptools
     $ sudo easy_install TurboGears==1.0.8
-    
+
 or
 
 .. code-block:: bash
@@ -59,7 +59,7 @@ OpenERP Web
 Configuration
 -------------------------------------------------------------------------------
 
-Locate the *config/default.cfg* in the installed *EGG*, and make appropriate 
+Locate the *config/default.cfg* in the installed *EGG*, and make appropriate
 changes, especially:
 
 .. code-block:: ini
@@ -81,19 +81,19 @@ Now start the web server with ``start-openerp-web`` command:
 
     $ start-openerp-web
 
-If you see message showing ``cherrypy._cperror.NotReady: Port not free.`` then 
+If you see message showing ``cherrypy._cperror.NotReady: Port not free.`` then
 make sure no other application is running on the specified port (8080 is default).
 
 You can change port for by changing ``server.socket_port`` value in *config/default.cfg*.
 
-If everything is fine, open your favourite web browser and type http://localhost:8080, 
+If everything is fine, open your favourite web browser and type http://localhost:8080,
 and your can see welcome page with login screen.
 
 Please make sure cookies are enabled in your browser.
 
-Of course, OpenERP Server must be running at that time. You should create a 
-database from the DBAdmin interface by clicking on Manage button that you can 
-see besides the Database selection box. After creating a new database login 
+Of course, OpenERP Server must be running at that time. You should create a
+database from the DBAdmin interface by clicking on Manage button that you can
+see besides the Database selection box. After creating a new database login
 with the admin/admin or demo/demo to see OpenERP in action...
 
 .. warning::
@@ -133,7 +133,7 @@ Create ``/var/log/openerp-web.log`` with proper ownership
     $ sudo touch /var/log/openerp-web.log
     $ sudo chown terp /var/log/openerp-web.log
 
-Now run following command to start the OpenERP Web automatically on system 
+Now run following command to start the OpenERP Web automatically on system
 startup (Debian/Ubuntu).
 
 .. code-block:: bash
@@ -148,19 +148,19 @@ Start the deamon:
 
 .. note::
 
-     The init script is compatible with all major Linux distributions. Please 
+     The init script is compatible with all major Linux distributions. Please
      check docs of your distribution on how to enable services.
 
 -------------------------------------------------------------------------------
 Configure HTTPS
 -------------------------------------------------------------------------------
 
-The following text describes how to configure OpenERP Web for production 
+The following text describes how to configure OpenERP Web for production
 environment over HTTPS with Apache2.
 
 **mod_proxy + mod_ssl (Apache2)**
 
-See `Apache manual <http://httpd.apache.org/docs/>`_ for more information. 
+See `Apache manual <http://httpd.apache.org/docs/>`_ for more information.
 
 **Apache configuration**
 
@@ -198,14 +198,14 @@ See `Apache manual <http://httpd.apache.org/docs/>`_ for more information.
     $ iptables -A INPUT -i lo -j ACCEPT
     $ iptables -A INPUT -p tcp --dport 8080 -j REJECT
 
-.. note:: 
-    
+.. note::
+
     Don't block the localhost/121.0.0.1 (the first rule)
 
 .. note::
 
-    This method only works if you want your OpenERP Web application at the 
-    root of your server (https://www.example.com) and can't be deployed under 
+    This method only works if you want your OpenERP Web application at the
+    root of your server (https://www.example.com) and can't be deployed under
     a subdirectory, e.g. http://www.example.com/openerp.
 
     To overcome with the issue you can go with `subdomain`, like:
@@ -219,7 +219,7 @@ Web Browser Compatibilities
 Supported browsers
 ++++++++++++++++++
 
-*OpenERP Web* is known to work best with *Mozilla* based web browsers. Here is 
+*OpenERP Web* is known to work best with *Mozilla* based web browsers. Here is
 the list of supported browsers.
 
 #. Firefox >= 1.5
