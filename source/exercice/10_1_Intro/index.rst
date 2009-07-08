@@ -53,18 +53,18 @@ The main product of the NotSoTiny company is Picasso bookshelf. Two different
 models are presented in the catalog: a bookshelf having a width of one meter
 and a bookshelf having a width of 2 meters.
 
-.. image:: book_shelp.png
+.. .. image:: book_shelp.png
 
 The "Picaso" bookshelf is composed of 3 external support panels (2 small ones
 on the sides and one large on the backside), of 4 sections putting together the
 components, 3 racks and and 12 metal blocks (4 per rack)   
 
-.. image:: book_shelp_compose.png
+.. .. image:: book_shelp_compose.png
 
 The factory is composed of wooden machines which allow streamlining and
 reinforcements, with saws for cutting the panels and assembling workshops.
 
-.. image:: factory.png
+.. .. image:: factory.png
 
 
 The Open ERP Project
@@ -87,7 +87,7 @@ and prototypes on Open ERP.
 After a first meeting with the NotSoTiny ERP project managers, you agreed to
 build the following prototype.
 
-.. image:: mindmap.png
+.. .. image:: mindmap.png
 
 You have 5 days to setup the Open ERP system and organise workshops with the
 different users of NotSoTiny. If you succeed to run a good prototype for

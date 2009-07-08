@@ -202,6 +202,7 @@ latex_documents = [
    ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
    #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
    ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
+   ('exercice/index', 'openobject-exercise.tex', ur'Open Object Exercise', ur'Tiny SPRL', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
