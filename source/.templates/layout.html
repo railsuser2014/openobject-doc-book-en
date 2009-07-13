@@ -1,50 +1,70 @@
 
+{% macro relbar_tiny() %}
+    <div class="related-tiny">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
+             accesskey="{{ rellink[2] }}">{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink_new %}
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{% endmacro %}
+
+{%- macro relbar_tiny2() %}
+    <div class="related-tiny">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
+             accesskey="{{ rellink[2] }}" class="bottom-nav-links" >{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink_new_2 %}
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {#
+        {%- block relbaritems %} {% endblock %}
+        #}
+      </ul>
+    </div>
+{%- endmacro %}
+
 {% extends "!layout.html" %}
 
 {% block extrahead %}
-<script type="text/javascript">
-
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-try {
-  var pageTracker = _gat._getTracker("UA-7333765-8");
-  pageTracker._trackPageview();
-} catch(err) {}
-
-</script>
+<script src="{{ pathto('_static/tiny_js_kit_comment_control.js', 1) }}" type="text/javascript"></script>
 
 {#
 <script src="{{ pathto('_static/tiny_js_kit.js', 1) }}" type="text/javascript"></script>
 #}
 
-  {{ super() }}
+{{ super() }}
 {% endblock %}
 
 <center>
 
 {% block sidebar1 %}
-  {%- macro relbar_tiny %}
-      <div class="related-tiny">
-        <h3>{{ _('Navigation') }}</h3>
-        <ul>
-          {%- for rellink in rellinks %}
-          <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
-            <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
-               accesskey="{{ rellink[2] }}">{{ rellink[3] }}</a>
-            {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
-          {%- endfor %}
-          {%- block rootrellink_new %}
-          <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
-          {%- endblock %}
-          {%- for parent in parents %}
-            <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
-          {%- endfor %}
-          {%- block relbaritems %} {% endblock %}
-        </ul>
-      </div>
-  {%- endmacro %}
-
   <div class="openobject-header">
     <table cellspacing="0" cellpadding="0" border="0" width="1004">
       <tbody>
@@ -98,6 +118,40 @@ try {
 {% block rootrellink %}
 {% endblock %}
 
+{% block sidebarsearch %}
+<div id="searchbox">
+  <h3>{{ _('Quick search') }}</h3>
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="{{ _('Go') }}" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    {{ _('Enter search terms or a module, class or function name.') }}
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+{% endblock %}
+
+
 {#
 {%- block relbar2 %}{{ relbar_tiny() }}{% endblock %}
 #}
@@ -118,36 +172,25 @@ try {
         </div>
       {%- endif %}
       </div>
+
 {%- endblock %}
 
 
 {%- block footer %}
 
-  {%- macro relbar_tiny2 %}
-      <div class="related-tiny">
-        <h3>{{ _('Navigation') }}</h3>
-        <ul>
-          {%- for rellink in rellinks %}
-          <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
-            <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags }}"
-               accesskey="{{ rellink[2] }}" class="bottom-nav-links" >{{ rellink[3] }}</a>
-            {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
-          {%- endfor %}
-          {%- block rootrellink_new_2 %}
-          <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
-          {%- endblock %}
-          {%- for parent in parents %}
-            <li><a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>{{ reldelim1 }}</li>
-          {%- endfor %}
-          {#
-          {%- block relbaritems %} {% endblock %}
-          #}
-        </ul>
-      </div>
-  {%- endmacro %}
-
 {{relbar_tiny2()}}
 {{super()}}
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
 {% endblock %}
 
 </center>

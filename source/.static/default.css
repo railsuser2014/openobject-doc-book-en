@@ -23,6 +23,10 @@
   visibility: hidden
 }
 
+#comments_control {
+  border: 1px solid #98DBCC;
+}
+
 td.search-exclude-tip {
 }
 

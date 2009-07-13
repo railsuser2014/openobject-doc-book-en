@@ -73,7 +73,8 @@ Inheritance by Delegation
 	 class tiny_object(osv.osv)
 	     _name = 'tiny.object'
 	     _table = 'tiny_object'
-	     _inherits = { 'tiny.object'_1_ : name_col'_1_', 'tiny.object'_2_ : name_col'_2_', ..., 'tiny.object'_n_ : name_col'_n_' }
+	     _inherits = { 'tiny.object'_1_ : name_col'_1_', 'tiny.object'_2_ : name_col'_2_',
+                        ..., 'tiny.object'_n_ : name_col'_n_' }
 	     (...)
 
 

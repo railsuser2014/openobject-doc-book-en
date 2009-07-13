@@ -4,6 +4,7 @@ PAGES1_4=pages1-4
 P1=${PAGES1_4}/page1.pdf
 P2=${PAGES1_4}/page2.pdf
 P3=${PAGES1_4}/page3.pdf
+P4=${PAGES1_4}/page4.pdf
 PEMPTY=${PAGES1_4}/5blankpages.pdf
 BLANK_END_PAGES=1
 
@@ -30,10 +31,16 @@ if [ -d build/latex ]; then
   BUILT_PDF=$(find build/latex -iname '*.pdf')
   OUTPUT_FILE=build/book/$(echo $(basename ${BUILT_PDF}) | sed -e 's/\.pdf$//').complete.pdf
   echo $OUTPUT_FILE
-  pdftk A=${P1} B=${P2} C=${P3} D=${BUILT_PDF} E=${PEMPTY} cat A1-1 B1-1 C1-1 E1-1 D2-end E1-${BLANK_END_PAGES} output ${OUTPUT_FILE}
+
+  if [ -e ${PAGES1_4}/page4.pdf ]; then
+    # 4 pages at the beginning
+    pdftk A=${P1} B=${P2} C=${P3} Z=${P4} D=${BUILT_PDF} E=${PEMPTY} cat A1-1 B1-1 C1-1 Z1-1 D2-end E1-${BLANK_END_PAGES} output ${OUTPUT_FILE}
+  else
+    # 3 pages at the beginning
+    pdftk A=${P1} B=${P2} C=${P3} D=${BUILT_PDF} E=${PEMPTY} cat A1-1 B1-1 C1-1 D2-end E1-${BLANK_END_PAGES} output ${OUTPUT_FILE}
+  fi
 else
   echo "build/latex directory does not exists. Run make latex."
   exit 1
 fi
-
 

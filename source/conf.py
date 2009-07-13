@@ -24,7 +24,10 @@ from docutils import nodes
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig']
+extensions = [
+  'sphinx.ext.todo',
+  'sphinx.ext.ifconfig',
+]
 todo_include_todos = False
 
 # Add any paths that contain templates here, relative to this directory.
@@ -190,15 +193,16 @@ latex_font_size = '9pt'
 #]
 
 latex_documents = [
-   ('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
-   ('bi/index', 'openobject-bi.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
+   #('book/index', 'openerp-book.tex', ur'Open ERP, a modern approach to integrated business management', ur'Fabien Pinckaers\\Geoff Gardiner', 'manual'),
+   #('bi/index', 'openobject-bi.tex', ur'Open Object Business Intelligence', ur'Tiny SPRL', 'manual'),
    #('customize', 'openobject-customize.tex', ur'Open Object Customization Book', ur'Tiny SPRL', 'manual'),
-   ('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
-   ('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
-   ('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
-   ('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
+   #('install/index', 'openobject-install.tex', ur'Open Object Installation Manuals', ur'Tiny SPRL', 'manual'),
+   #('contribute/index', 'openobject-contribute.tex', ur'Open Object Community Book', ur'Tiny SPRL', 'manual'),
+   #('developer/index', 'openobject-developer.tex', ur'Open Object Developer Book', ur'Tiny SPRL', 'manual'),
+   #('features/index', 'openobject-features.tex', ur'Open ERP Features', ur'Tiny SPRL', 'manual'),
    #('verticalisations', 'openobject-verticalisations.tex', ur'Open Object verticalisations', ur'Tiny SPRL', 'manual'),
-   ('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
+   #('technical_guide/index', 'openobject-technical_guide.tex', ur'Open Object Technical Guide', ur'Tiny SPRL', 'manual'),
+   ('exercice/index', 'openobject-exercise.tex', ur'Open Object Exercise', ur'Tiny SPRL', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -268,7 +272,12 @@ def begin_conclusion_directive(name, arguments, options, content, lineno,
 js_kit_comments = True
 
 def setup(app):
-    from sphinx.htmlwriter import HTMLTranslator, BaseTranslator
+    from sphinx import __version__
+    major, minor, revision = map(int, __version__.split('.'))
+    if major*10+minor < 6:
+        raise Exception("You should upgrade Sphinx to version 0.6 or higher")
+
+    from sphinx.writers.html import HTMLTranslator, BaseTranslator
     import pickle
 
     # load unique_path dict:

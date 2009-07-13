@@ -1,0 +1,12 @@
+
+
+-------------- This line and the following will be ignored --------------
+
+modified:
+  books/common/Makefile*
+  comments_path.pickle
+  source/conf.py
+  source/contribute/documentation_translation.rst*
+unknown:
+  source/exercice/fr/
+
