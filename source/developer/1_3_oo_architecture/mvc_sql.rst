@@ -88,8 +88,9 @@ Notes:
 
     * IDS is the list of the 10 ID's: [12,15,18,34, ...,99]
     * The arguments of a function are always the same:
+
           - cr: the cursor database (from psycopg)
-              - uid: the user id (for security checks)
+          - uid: the user id (for security checks)
     * If you run this code on 5000 sales orders, you may have 8 SQL queries because as SQL queries are not allowed to take too much memory, it may have to do two separate readings.
 
 A complete example
@@ -103,7 +104,7 @@ Here is a complete example, from the Open ERP official distribution, of the func
         ...
         def _bom_find(self, cr, uid, product_id, product_uom, properties=[]):
             bom_result = False
-            # Why searching on 'BoM without parent' ?
+            # Why searching on BoM without parent ?
             cr.execute('select id from mrp_bom where product_id=%d and bom_id is null
                           order by sequence', (product_id,))
             ids = map(lambda x: x[0], cr.fetchall())
@@ -116,6 +117,7 @@ Here is a complete example, from the Open ERP official distribution, of the func
                         prop+=1
                 if (prop>max_prop) or ((max_prop==0) and not result):
                     result = bom.id
+                    max_prop = prop
             return result
 
             def _bom_explode(self, cr, uid, bom, factor, properties, addthis=False, level=10):
@@ -125,44 +127,50 @@ Here is a complete example, from the Open ERP official distribution, of the func
                     factor = bom.product_rounding
                 result = []
                 result2 = []
+                phantom = False
                 if bom.type=='phantom' and not bom.bom_lines:
                     newbom = self._bom_find(cr, uid, bom.product_id.id,
-                                         bom.product_uom.id, properties)
+                                            bom.product_uom.id, properties)
                     if newbom:
                         res = self._bom_explode(cr, uid, self.browse(cr, uid, [newbom])[0],
                               factor*bom.product_qty, properties, addthis=True, level=level+10)
                         result = result + res[0]
                         result2 = result2 + res[1]
+                        phantom = True
                     else:
-                        return [],[]
-                else:
+                        phantom = False
+                if not phantom:
                     if addthis and not bom.bom_lines:
                         result.append(
                         {
-                             'name': bom.product_id.name,
-                             'product_id': bom.product_id.id,
-                             'product_qty': bom.product_qty * factor,
-                             'product_uom': bom.product_uom.id,
+                            'name': bom.product_id.name,
+                            'product_id': bom.product_id.id,
+                            'product_qty': bom.product_qty * factor,
+                            'product_uom': bom.product_uom.id,
+                            'product_uos_qty': bom.product_uos and 
+                                               bom.product_uos_qty * factor or False,
+                            'product_uos': bom.product_uos and bom.product_uos.id or False,
                         })
-                     if bom.routing_id:
-                         for wc_use in bom.routing_id.workcenter_lines:
-                             wc = wc_use.workcenter_id
-                             cycle = factor * wc_use.cycle_nbr
-                             result2.append({
-                                  'name': bom.routing_id.name,
-                                  'workcenter_id': wc.id,
-                                  'sequence': level,
-                                  'cycle': cycle,
-                                  'hour': wc_use.hour_nbr + (
-                                      wc.time_start+wc.time_stop+cycle*wc.time_cycle) *
-                                      (wc.time_efficiency or 1
-                             })
-                     for bom2 in bom.bom_lines:
+                    if bom.routing_id:
+                        for wc_use in bom.routing_id.workcenter_lines:
+                            wc = wc_use.workcenter_id
+                            d, m = divmod(factor, wc_use.workcenter_id.capacity_per_cycle)
+                            mult = (d + (m and 1.0 or 0.0))
+                            cycle = mult * wc_use.cycle_nbr
+                            result2.append({
+                                'name': bom.routing_id.name,
+                                'workcenter_id': wc.id,
+                                'sequence': level+(wc_use.sequence or 0),
+                                'cycle': cycle,
+                                'hour': float(wc_use.hour_nbr*mult +
+                                              (wc.time_start+wc.time_stop+cycle*wc.time_cycle) *
+                                               (wc.time_efficiency or 1.0)),
+                            })
+                    for bom2 in bom.bom_lines:
                          res = self._bom_explode(cr, uid, bom2, factor, properties,
                                                      addthis=True, level=level+10)
                          result = result + res[0]
                          result2 = result2 + res[1]
                 return result, result2
-
 
 

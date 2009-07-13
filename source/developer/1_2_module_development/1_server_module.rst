@@ -46,8 +46,9 @@ Architecture
    :align: center
 
 
-Explanation of modules
-Server - Base distribution
+Explanation of modules:
+
+**Server - Base distribution**
 
 We use a distributed communication mechanism inside the Open ERP server. Our engine support most commonly distributed patterns: request/reply, publish/subscribe, monitoring, triggers/callback, ...
 
@@ -62,7 +63,7 @@ This layer provides additional object functionality on top of postgresql:
     * Complex actions on a group of resources
     * Inheritance 
 
-Server - Web-Services
+**Server - Web-Services**
 
 The web-service module offer a common interface for all web-services
 
@@ -71,34 +72,40 @@ The web-service module offer a common interface for all web-services
     * NET-RPC 
 
 Business objects can also be accessed via the distributed object mechanism. They can all be modified via the client interface with contextual views.
-Server - Workflow Engine
+
+**Server - Workflow Engine**
 
 Workflows are graphs represented by business objects that describe the dynamics of the company. Workflows are also used to track processes that evolve over time.
 
 An example of workflow used in Open ERP:
 
 A sales order generates an invoice and a shipping order
-Server - Report Engine
+
+**Server - Report Engine**
 
 Reports in Open ERP can be rendered in different ways:
 
     * Custom reports: those reports can be directly created via the client interface, no programming required. Those reports are represented by business objects (ir.report.custom)
     * High quality personalized reports using openreport: no programming required but you have to write 2 small XML files:
+
           - a template which indicates the data you plan to report
           - an XSL:RML stylesheet 
     * Hard coded reports
     * OpenOffice Writer templates 
 
 Nearly all reports are produced in PDF.
-Server - Business Objects
+
+**Server - Business Objects**
 
 Almost everything is a business object in Open ERP, they described all data of the program (workflows, invoices, users, customized reports, ...). Business objects are described using the ORM module. They are persistent and can have multiple views (described by the user or automatically calculated).
 
 Business objects are structured in the /module directory.
-Client - Wizards
+
+**Client - Wizards**
 
 Wizards are graphs of actions/windows that the user can perform during a session.
-Client - Widgets
+
+**Client - Widgets**
 
 Widgets are probably, although the origin of the term seems to be very difficult to trace, "WIndow gaDGETS" in the IT world, which mean they are gadgets before anything, which implement elementary features through a portable visual tool.
 
@@ -115,6 +122,7 @@ And also all special widgets:
 
     * buttons that call actions
     * references widgets
+
           - one2one
 
           - many2one
