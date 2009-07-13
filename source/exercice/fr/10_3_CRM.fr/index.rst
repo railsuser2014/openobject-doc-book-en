@@ -100,20 +100,20 @@ Gérer avec la CRM
 
 Luc, le directeur commercial, voudrait vérifier la qualité de son équipe commerciale.
 
-..note:: Exercice 11 – Vérifiez le délai moyen pour clôturer une opportunité
+..note:: Exercice 11 – Délai moyen pour clôturer une opportunité
 
-Trouvez un moyen de savoir quel est le temps moyen (en heures) pour répondre à une requête d'un client (clôturer une opportunité d'affaire).
+    Parmi les différents rapports de reporting fournis par le module CRM,  trouvez celui qui permet de connaître le temps moyen pour répondre à une requête d'un client (c'est à dire pour clôturer une opportunité d'affaire).
 
-Luc remarque que le temps moyen pour clôturer une opportunité d'affaire est de 7 jours. Ce délai semble trop long pour lui. Etant donné qu'il veut améliorer la qualité de l'équipe commerciale, il aimerait recevoir une message d'alerte par email à chaque fois qu'une opportunité d'affaire n'est pas clôturée endéans les 5 jours après sa création.
+[Problème bug?]Luc remarque que le temps moyen pour clôturer une opportunité d'affaire est de 7 jours. Ce délai semble trop long pour lui. Etant donné qu'il veut améliorer la qualité de l'équipe commerciale, il aimerait recevoir une message d'alerte par email à chaque fois qu'une opportunité d'affaire n'est pas clôturée endéans les 5 jours après sa création.
 
-..note:: Exercice 12 – Rappel par email
+..note:: Exercice 12 – Rappel par email [Problème bug?]
 
-Envoyez un rappel au responsable si l'opportunité d'affaire n'est pas clôturé après 5 jours. Pour les prospects, il accepte seulement un délai de 3 jours avant de les clôturer. Mettre Luc en copie du mail quand le rappel est envoyé.
+    Créez une règle pour la CRM spécifiant qu'il faut envoyer un rappel au responsable si l'opportunité d'affaire n'est pas clôturé après 5 jours. Pour les prospects, il accepte seulement un délai de 3 jours avant de les clôturer. Mettre Luc en copie du mail quand le rappel est envoyé.
 
-La société a différentes politiques pour gérer les prospects non-qualifiés et les réelles opportunité d'affaire. Les prospects sont gardés dans une réserve de prospects non assignés quand ils sont créés. Ensuite, les différents utilisateurs prennent les prospects et se les assignent périodiquement.
+[Problème bug?]La société a différentes politiques pour gérer les prospects non-qualifiés et les réelles opportunité d'affaire. Les prospects sont gardés dans une réserve de prospects non assignés quand ils sont créés. Ensuite, les différents utilisateurs prennent les prospects et se les assignent périodiquement.
 
 Pour les opportunités d'affaire, c'est différent. Toutes les opportunités d'affaire doivent être assignées à Luc. Ensuite, Luc décide s'il veut assigner le cas à quelqu'un autre ou de s'en occuper lui-même.
 
-..note:: Exercice 13 – Assignation et réserve de cas disponibles
+..note:: Exercice 13 – Assignation et réserve de cas disponibles [Problème bug?]
 
 Trouvez un moyen d'obtenir une liste de tous les cas non assignés. Trouvez un moyen d'assigner automatiquement les opportunités d'affaire à Luc dès qu'ils sont créés.
