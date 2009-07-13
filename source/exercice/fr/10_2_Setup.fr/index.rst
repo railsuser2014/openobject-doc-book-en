@@ -135,7 +135,7 @@ Voici une liste de quelques produits à encoder, avec leur caractéristiques pri
 |PROJ   |Projet Design cuisine|Service|Heure          |90€       |20€ |Sur commande |Produire      |/                 |/          |Services       |21%vente|
 +-------+---------------------+-------+---------------+----------+----+-------------+--------------+------------------+-----------+---------------+--------|
 
-En analysant ces produits, vous remarquez qu'il y a différentes unités de mesure: les armoires sont vendues à la pièce, le bois est acheté au mètre, les services sont vendus en heure. Il faudra donc vérifier si Open ERP peut déjà gérer ces différentes unités de mesure ou s'il faudra en créer. Vous voyez que dans le système actuel, les seules catégories disponibles sont 'Unité' et 'Masse', il faudra donc ajouter ajouter des catégories pour gérer les mètres et les heures.
+En analysant ces produits, vous remarquez qu'il y a différentes unités de mesure: les armoires sont vendues à la pièce, le bois est acheté au mètre, les services sont vendus en heure. Il faudra donc vérifier si Open ERP peut déjà gérer ces différentes unités de mesure ou s'il faudra en créer des nouvelles. En vérifiant dans le système actuel, vous constatez que les seules catégories disponibles sont 'Unité' et 'Masse', il faudra donc ajouter des nouvelles catégories pour gérer les mètres et les heures.
 
 +---------+---------------+
 |Catégorie|Unité de mesure|
@@ -151,9 +151,9 @@ En analysant ces produits, vous remarquez qu'il y a différentes unités de mesu
 
 ..note:: Exercice 10 – Encodage des produits
 
-    Créez les produits définis plus haut dans la base de données de NotSoTiny. Vous allez encoder seulement 4 produits pour le moment, mais vous en encoderez d'autres quand vous recevrez la liste complète des produits.
+    Maintenant que vous avez créé les unités de mesure manquantes, vous êtes en mesure d'encoder les produits définis plus haut dans la base de données de NotSoTiny. Vous allez encoder seulement 4 produits pour le moment, mais vous en encoderez d'autres quand vous recevrez la liste complète des produits.
 
-Afin de pouvoir vendre quelques produits, vous allez encoder un inventaire de départ. Actuellement, voici le niveau de stock des produits décrits ci-dessus:
+Pour les tests du prototype, afin de pouvoir vendre quelques produits, vous allez encoder un inventaire de départ. Actuellement, voici le niveau de stock des produits décrits ci-dessus:
 
 +-------+---------+
 |Code   |Stock    |
@@ -171,7 +171,7 @@ Afin de pouvoir vendre quelques produits, vous allez encoder un inventaire de d�
 
 ..note:: Exercice 11 – Testez le système
 
-    Vous devriez maintenant être capable de tester le système. Effectuez les opérations suivantes:
+    Vous devriez maintenant être capable de tester le système. Pour cela, effectuez les opérations suivantes:
 
 * Créez un devis:
 
