@@ -2,47 +2,46 @@
 .. i18n: Configuration
 .. i18n: =============
 
-Configuration
+Configuración
 =============
 
 .. i18n: Two configuration files are available:
 
-Two configuration files are available:
+Dos archivos de configuración están disponibles:
 
 .. i18n:     * one for the client: ~/.terprc
 .. i18n:     * one for the server: ~/.terp_serverrc 
 
-    * one for the client: ~/.terprc
-    * one for the server: ~/.terp_serverrc 
+    * Uno para el cliente: ~/.terprc
+    * Uno para el servidor: ~/.terp_serverrc 
 
 .. i18n: Those files follow the convention used by python's ConfigParser module.
 
-Those files follow the convention used by python's ConfigParser module.
+Estos archivos siguen el estandar usado por el módulo de configuración de Python ConfigParser.
 
 .. i18n: Lines beginning with "#" or ";" are comments.
 
-Lines beginning with "#" or ";" are comments.
+Líneas al inicio con "#" o ";" son comentarios.
 
 .. i18n: Those files are not necessary. If they are not found, the server and the client will start with the default configuration.
 
-Those files are not necessary. If they are not found, the server and the client will start with the default configuration.
+Estos archivos no son necesarios. Si ellos no son encontrados, el servidor y el cliente iniciarán con la confiración por defecto.
 
 .. i18n: The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command:
 
-The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command:
+El archivo de configuración del cliente es generado automáticamente cuando inicio la primera vez. El archivo del servidor puede ser generado automáticamente usando el comando:
 
-.. i18n: tinyerp-server.py -s
+.. i18n: openerp-server.py -s
 
-tinyerp-server.py -s
+openerp-server.py -s
 
 .. i18n:        
 .. i18n: Server Configuration File
 .. i18n: -------------------------
 
        
-Server Configuration File
--------------------------
-
+Archivo de Configuración del Servidor
+-------------------------------------
 .. i18n: The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
 
 The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
