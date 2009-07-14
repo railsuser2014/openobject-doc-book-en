@@ -44,117 +44,117 @@ Archivo de Configuración del Servidor
 -------------------------------------
 .. i18n: The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
 
-The server configuration file .terp_serverrc is used to save server startup options. For the version 5.X configuration file is .openerp_serverrc. Here is the list of the available options:
+El archivo de configuración del servidor .terp_serverrc es usado para guardar sus opciones de inicio. Para la versión 5.X el archivo de configuración es .openerp_serverrc. Aquí esta la lista de opciones disponibles:
 
 .. i18n: :interface:
 .. i18n:     Address to which the server will be bound 
 
 :interface:
-    Address to which the server will be bound 
+    Dirección donde el servidor quedará colgado.
 
 .. i18n: :port:
 .. i18n:     Port the server will listen on 
 
 :port:
-    Port the server will listen on 
+    Puerto del servidor donde escucha
 
 .. i18n: :database:
 .. i18n:     Name of the database to use 
 
 :database:
-    Name of the database to use 
+    Nombre de la base de datos a usar
 
 .. i18n: :user:
 .. i18n:     Username used when connecting to the database 
 
 :user:
-    Username used when connecting to the database 
+    Nombre de usuario para conectarse a la base de datos
 
 .. i18n: :translate_in:
 .. i18n:     File used to translate Open ERP to your language 
 
 :translate_in:
-    File used to translate Open ERP to your language 
+    Archivo usado para traducir Open ERP a tu lenguaje
 
 .. i18n: :translate_out:
 .. i18n:     File used to export the language Open ERP use 
 
 :translate_out:
-    File used to export the language Open ERP use 
+    Archivo usado para exportar el lenguaje en uso de Open ERP
 
 .. i18n: :language:
 .. i18n:     Use this language as the language of the server. This must be specified as an ISO country code, as specified by the W3C. 
 
 :language:
-    Use this language as the language of the server. This must be specified as an ISO country code, as specified by the W3C. 
+    Usar este lenguaje como lenguaje del servidor. Esto debe ser especificado con el código ISO del país, como especifica la W3C.
 
 .. i18n: :verbose:
 .. i18n:     Will used debugged output 
 
 :verbose:
-    Will used debugged output 
+    Se usa la salida para depurado
 
 .. i18n: :init:
 .. i18n:     init a module (use "all" for all modules) 
 
 :init:
-    init a module (use "all" for all modules) 
+    Inicia un módulo (usar "all" para todos los módulos)
 
 .. i18n: :update:
 .. i18n:     update a module (use "all" for all modules) 
 
 :update:
-    update a module (use "all" for all modules) 
+    Actualiza un módulo(usar "all" para todos los módulos)
 
 .. i18n: :upgrade:
 .. i18n:     Upgrade/install/uninstall modules 
 
 :upgrade:
-    Upgrade/install/uninstall modules 
+    Actualizar/Instalar/Desinstalar módulos
 
 .. i18n: :db_name:
 .. i18n:     specify the database name 
 
 :db_name:
-    specify the database name 
+    Especifica el nombre de la base de datos
 
 .. i18n: :db_user:
 .. i18n:     specify the database user name 
 
 :db_user:
-    specify the database user name 
+    Especifica el nombre de usuario de la base de datos
 
 .. i18n: :db_password:
 .. i18n:     specify the database password 
 
 :db_password:
-    specify the database password 
+    Especifica la contraseña de la base de datos
 
 .. i18n: :pg_path:
 .. i18n:     specify the pg executable path 
 
 :pg_path:
-    specify the pg executable path 
+    Especifica la ruta ejecutable de pg
 
 .. i18n: :db_host:
 .. i18n:     specify the database host 
 
 :db_host:
-    specify the database host 
+    Especifica el host de la base de datos
 
 .. i18n: :db_port:
 .. i18n:     specify the database port 
 
 :db_port:
-    specify the database port 
+    Especifica el puerto de la base de datos
 
 .. i18n: :translate_modules:
 .. i18n:     Specify modules to export. Use in combination with --i18n-export 
 
 :translate_modules:
-    Specify modules to export. Use in combination with --i18n-export 
+    Especifica los módulos a exportar. Usar en combinación con --i18n-export 
 
-.. i18n: You can create your own configuration file by specifying -s or --save on the server command line. If you would like to write an alternativve configuration file, use -c <config file> or --config=<config file>
+.. i18n: You can create your own configuration file by specifying -s or --save on the server command line. If you would like to write an alternative configuration file, use -c <config file> or --config=<config file>
 .. i18n: Here is a basic configuration for a server::
 .. i18n: 
 .. i18n:         [options]
@@ -167,8 +167,8 @@ The server configuration file .terp_serverrc is used to save server startup opti
 .. i18n:         interface = 127.0.0.1
 .. i18n:         reportgz = False
 
-You can create your own configuration file by specifying -s or --save on the server command line. If you would like to write an alternativve configuration file, use -c <config file> or --config=<config file>
-Here is a basic configuration for a server::
+Puedes crear tu propiio archivo de configuración especificando -s o --save en la línea de comandos del servidor. Si quieres escribir un archivo de configuración personalizado, usa -c <archivo de conf> o --config=<archivo de conf>.
+Aquí esta la configuración básica para el servidor::
 
         [options]
         verbose = False
@@ -188,7 +188,7 @@ Here is a basic configuration for a server::
 .. i18n:         preview = True
 .. i18n:         softpath = none
 
-Full Example for Server V5.0 ::
+Ejemplo completo para el servidor V5.0 ::
 
         [printer]
         path = none
@@ -289,8 +289,8 @@ Full Example for Server V5.0 ::
 .. i18n: GTK-Client Configuration
 .. i18n: ------------------------
 
-GTK-Client Configuration
-------------------------
+Configuración Cliente-GTK
+-------------------------
 
 .. i18n: .. topic:: login section
 .. i18n: 
