@@ -491,40 +491,41 @@ Blueprints
 
 .. i18n: Blueprint is a lightweight way to manage releases of your software and to track the progress of features and ideas, from initial concept to implementation. Using Blueprint, you can encourage contributions from right across your project's community, while targeting the best ideas to future releases. 
 
-Blueprint is a lightweight way to manage releases of your software and to track the progress of features and ideas, from initial concept to implementation. Using Blueprint, you can encourage contributions from right across your project's community, while targeting the best ideas to future releases. 
+Blueprint es la manera mas facil para administrar la liberación de tu software y seguir el progreso de las características e ideas, desde el concepto inicial hasta la implementación. Usando Blueprint, puedes mejorar contribuciones desde proyectos de la comunidad, mientras apuntas las mejores ideas para futuras versiones.
 
 .. i18n: Launchpad Blueprint helps you to plan future release with two tools:
 
-Launchpad Blueprint helps you to plan future release with two tools:
+Launchpad Blueprint te ayuda a planear futuras publicaciones con dos herramientas:
 
 .. i18n:     * milestones: points in time, such as a future release or development sprint
 .. i18n:     * series goals: a statement of intention to work on the blueprint for a particular series. 
 
-    * milestones: points in time, such as a future release or development sprint
-    * series goals: a statement of intention to work on the blueprint for a particular series. 
+    * Hitos: Puntos de tiempo, tales como futuros releases o development sprint.
+    * Series de objetivos: una declaracion de intenciones de trabajo sobre los blueprints para una serie en particular.
 
 .. i18n: Although only drivers can target blueprints to milestones and set them as series goals, anyone can propose a blueprint as a series goal. As a driver or owner, you can review proposed goals by following the Set goals link on your project's Blueprint overview page. 
 
-Although only drivers can target blueprints to milestones and set them as series goals, anyone can propose a blueprint as a series goal. As a driver or owner, you can review proposed goals by following the Set goals link on your project's Blueprint overview page. 
+Aunque solo los administradores pueden apuntar blueprints a hitos y ponerlos como objetivos de una serie, cualquiera puede proponer como objetivos para una serie. Como administrador o propietario, puedes revisar los objetivos propuestos siguiendo el conjunto de objetivos con links en la pagina de Blueprint.
 
 .. i18n: By following the Subscribe yourself link on a blueprint page, you can ask Launchpad to send you email notification of any changes to the blueprint. In most cases, you'll receive notification only of changes made to the blueprint itself in Launchpad and not to any further information, such as in an external wiki.
 
-By following the Subscribe yourself link on a blueprint page, you can ask Launchpad to send you email notification of any changes to the blueprint. In most cases, you'll receive notification only of changes made to the blueprint itself in Launchpad and not to any further information, such as in an external wiki.
+Siguiendo el link de Suscríbeme en la pagina de blueprints, puedes recibir información de launchpad con el envío de  correos electrónicos de los cambios.
+En muchos casos, recibirás notificaciones solo de los cambios hechos a los blueprints en Launchpad y no sobre otra información, como en una wiki externa.
 
 .. i18n: However, if the wiki software supports email change notifications, Launchpad can even notify you of changes to the wiki page.
 
-However, if the wiki software supports email change notifications, Launchpad can even notify you of changes to the wiki page.
+Aunque, si la wiki soporta notificaciones de cambios por correo electrónico, Launchpad puede incluso notificar si cambias la Wiki.
 
 .. i18n: If you're a blueprint owner and want Launchpad to know about updates to the related wiki page, ask the wiki admin how to send email notifications. Notifications should go to notifications@specs.launchpad.net. 
 
-If you're a blueprint owner and want Launchpad to know about updates to the related wiki page, ask the wiki admin how to send email notifications. Notifications should go to notifications@specs.launchpad.net. 
+Si eres propietario de un blueprint y quieres que launchpad sepa sobre las actualizaciones relacionadas a una pagina, pregunta al administrador de la wiki como enviar notificaciones por correo electronico. Notificaciones deben ir a: notifications@specs.launchpad.net. 
 
 .. i18n: The Buleprints for OpenERP are listed here:
 .. i18n: 	
 .. i18n: * https://blueprints.launchpad.net/openerp
 .. i18n: * https://blueprints.launchpad.net/~openerp-commiter
 
-The Buleprints for OpenERP are listed here:
+Los Buleprints para OpenERP son listados aquí:
 	
 * https://blueprints.launchpad.net/openerp
 * https://blueprints.launchpad.net/~openerp-commiter
