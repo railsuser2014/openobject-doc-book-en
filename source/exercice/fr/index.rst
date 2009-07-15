@@ -1,5 +1,5 @@
 
-.. _part-exercice:
+.. _part-exercice-fr:
 
 #################
 Open ERP Exercice
@@ -19,7 +19,7 @@ Open ERP Exercice
 .. toctree::
     :maxdepth: 1
 
-    10_1_Intro/index
+    10_1_Intro.fr/index
 
 .. Copyright © Open Object Press. All rights reserved.
 
