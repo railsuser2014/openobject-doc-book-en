@@ -6,8 +6,8 @@
 
 .. _faqs-link:
 
-List of Frequently Asked Questions
-==================================
+Lista de Preguntas Frecuentes
+=============================
 
 .. i18n: .. toctree::
 .. i18n:     :maxdepth: 1

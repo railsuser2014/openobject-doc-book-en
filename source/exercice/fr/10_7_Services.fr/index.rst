@@ -14,7 +14,7 @@ Vous êtes chargé de mettre en place un système de gestion des projets de NotS
 
 Pour les projets clients, ils veulent aussi vérifier la rentabilité par projet. Vu que ces projets sont vendus au client, ils doivent vérifier les coûts exacts du projet, ce qui inclue: Achat de matériel, temps passé sur le projet, dépenses diverses comme les trajets, etc...
 
-..note:: Exercice 1 – Installer les modules requis
+.. note:: Exercice 1 – Installez les modules requis
 
     Installez les  modules nécessaires à la gestion financière et opérationnelle de projets. Pour la gestion purement projet (tâches, planning, etc), il s'agit du module 'project', et pour le suivi financier du projet, il faut y ajouter le module 'account_analytic_analysis'.
 
