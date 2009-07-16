@@ -37,17 +37,17 @@ Paramétrage du système
 
 Ensuite, nous chargeons une personne de la société de nous fournir un inventaire des différents utilisateurs. NotSoTiny nous fournit alors le tableau simplifié suivant:
 
-+-------------+------+------------+----------------------------+--------------------------------------------------------------------------+
-|Employé      |Login |Mot de passe|Fonction                    |Activités                                                                 |
-+=============+======+============+============================+==========================================================================+
-|Fabien Dupont|fabien|fabien      |CEO                         |Accès à toutes les fonctionnalités, sauf à l'administration de l'ERP      |
-+-------------+------+------------+----------------------------+--------------------------------------------------------------------------+
-|Luc Lecoq    |luc   |luc         |Dir. Commercial et Financier|Accès à tous les documents financiers et commerciaux, responsable clients |
-+-------------+------+------------+----------------------------+--------------------------------------------------------------------------+
-|Eric Dubois  |eric  |eric        |Ouvrier                     |Accès aux ordres de production, et à la CRM, menu le plus simple possible |
-+-------------+------+------------+----------------------------+--------------------------------------------------------------------------+
-|Thomas Lebrun|thomas|thomas      |Commercial                  |Accès aux ventes, à la CRM, responsable clients                           |
-+-------------+------+------------+----------------------------+--------------------------------------------------------------------------+
++---------------+--------+--------------+------------------------------+----------------------------------------------------------------------------+
+| Employé       | Login  | Mot de passe | Fonction                     | Activités                                                                  |
++===============+========+==============+==============================+============================================================================+
+| Fabien Dupont | fabien | fabien       | CEO                          | Accès à toutes les fonctionnalités, sauf à l'administration de l'ERP       |
++---------------+--------+--------------+------------------------------+----------------------------------------------------------------------------+
+| Luc Lecoq     | luc    | luc          | Dir. Commercial et Financier | Accès à tous les documents financiers et commerciaux, responsable clients  |
++---------------+--------+--------------+------------------------------+----------------------------------------------------------------------------+
+| Eric Dubois   | eric   | eric         | Ouvrier                      | Accès aux ordres de production, et à la CRM, menu le plus simple possible  |
++---------------+--------+--------------+------------------------------+----------------------------------------------------------------------------+
+| Thomas Lebrun | thomas | thomas       | Commercial                   | Accès aux ventes, à la CRM, responsable clients                            |
++---------------+--------+--------------+------------------------------+----------------------------------------------------------------------------+
 
 .. note:: Exercice 3 – Créer les différents utilisateurs
 
@@ -155,15 +155,15 @@ En analysant ces produits, vous remarquez qu'il y a différentes unités de mesu
 
 Pour les tests du prototype, afin de pouvoir vendre quelques produits, vous allez encoder un inventaire de départ. Actuellement, voici le niveau de stock des produits décrits ci-dessus:
 
-+-------+---------+
-|Code   |Stock    |
-+=======+=========+
-|ARM100 |50 pièces|
-+-------+---------+
-|ARM200 |20 pièces|
-+-------+---------+
-|BOIS002|20 mètres|
-+-------+---------+
++---------+-----------+
+| Code    | Stock     |
++=========+===========+
+| ARM100  | 50 pièces |
++---------+-----------+
+| ARM200  | 20 pièces |
++---------+-----------+
+| BOIS002 | 20 mètres |
++---------+-----------+
 
 .. note:: Exercice 10 – Créez l'inventaire du stock initial
 

@@ -34,15 +34,15 @@ A la fin de chaque jour, les différents commerciaux présents au salon encodent
 
     Thomas, un des commerciaux de NotSoTiny, se charge de regouper les cartes de visites et les différentes notes et encode dans le système les informations suivantes en tant que nouveaux leads (prospects).
 
-+--------------+--------+-----------------+-------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-|Description   |Section |Source           |Nom prospect |E-mail                 |Détail de l'affaire                                                                                                                       |
-+==============+========+=================+=============+=======================+==========================================================================================================================================+
-|Prospect Brico|Affaires|House&Design 2009|Pierre Durand|p.durand@brico.be      |Brico est intéressé par nos armoires pour les revendre dans leurs magasin, mais quantité exigée trop importante (environ 100 armoires/moi)|
-+--------------+--------+-----------------+-------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-|Dubois sprl   |Affaires|House&Design 2009|Marc Dubois  |m.dubois@dubois.be     |Sprl Dubois, soc. indépendante, voudrait vendre nos armoires, mais sans devoir les stocker chez eux car manque de place => sur commande   |
-+--------------+--------+-----------------+-------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-|Particulier   |Affaires|House&Design 2009|Lucie Vonck  |lucie.vonck@hotmail.com|Mme Vonck serait intéressée par un projet de rénovation de sa cuisine. Lui envoyer un devis.                                              |
-+--------------+--------+-----------------+-------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
++----------------+----------+-------------------+---------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Description    | Section  | Source            | Nom prospect  | E-mail                  | Détail de l'affaire                                                                                                                        |
++================+==========+===================+===============+=========================+============================================================================================================================================+
+| Prospect Brico | Affaires | House&Design 2009 | Pierre Durand | p.durand@brico.be       | Brico est intéressé par nos armoires pour les revendre dans leurs magasin, mais quantité exigée trop importante (environ 100 armoires/moi) |
++----------------+----------+-------------------+---------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Dubois sprl    | Affaires | House&Design 2009 | Marc Dubois   | m.dubois@dubois.be      | Sprl Dubois, soc. indépendante, voudrait vendre nos armoires, mais sans devoir les stocker chez eux car manque de place => sur commande    |
++----------------+----------+-------------------+---------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Particulier    | Affaires | House&Design 2009 | Lucie Vonck   | lucie.vonck@hotmail.com | Mme Vonck serait intéressée par un projet de rénovation de sa cuisine. Lui envoyer un devis.                                               |
++----------------+----------+-------------------+---------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 Si un des prospect semble intéressant, le commercial (Thomas) peut le convertir en opportunité et créer une fiche partenaire. Cela permettra de suivre cette opportunité de plus près et d'essayer de conclure l'affaire par une vente ou la signature d'un contrat, par exemple.
 
