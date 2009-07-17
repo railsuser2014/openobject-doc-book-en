@@ -232,9 +232,9 @@ Và, đây là chính sách khuyến khích của chúng tôi đối với tác 
 .. i18n: contributions on writing good documentation. As people will be published and
 .. i18n: paid for their good work, this should promote new authors and translators.
 
-Having established that, this should leverage individuals effort and promote
-contributions on writing good documentation. As people will be published and
-paid for their good work, this should promote new authors and translators.
+Chính sách trên chắc chắn sẽ là đòn bẩy, thúc đẩy các cả nhân nỗ lực hết mình trong việc
+đóng góp những tài liệu có chất lượng cao. Khi một người có sách được xuất bản và nhận được tiền
+nhuận bút từ công việc của họ, họ sẽ đóng góp nhiều hơn nữa.
 
 .. i18n: Books are sold in bookstores in different countries and languages, which allows
 .. i18n: us to remunerate the full edition chain through author rights. It will help us
