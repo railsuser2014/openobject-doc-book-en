@@ -20,6 +20,12 @@ Open ERP Exercice
     :maxdepth: 1
 
     10_1_Intro.fr/index
+    10_2_Setup.fr/index
+    10_3_Pricelists.fr/index
+    10_4_CRM.fr/index
+    10_5_DMS.fr/index
+    10_7_Services.fr/index
+    10_10_Production.fr/index
 
 .. Copyright © Open Object Press. All rights reserved.
 

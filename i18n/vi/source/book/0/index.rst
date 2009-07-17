@@ -202,7 +202,7 @@ Tại sao nên chọn cuốn sách này?
 
 Nhiều sách được phát hành để giới thiệu độc giả về cách quản lý doanh nghiệp, số khác nhắm đến việc hướng dẫn
 cách sử dụng một số phần mềm đặc biệt. Chúng tôi không định nằm trong những danh sách đó vì chúng tôi muốn có
-cách tiếp cận khác biệt
+cách tiếp cận khác biệt.
 
 .. i18n: Having restructured and reorganized many businesses, we wanted our management experience to generate
 .. i18n: a work that is both instructive and practical. It was important for us not to write a manual about
@@ -210,22 +210,21 @@ cách tiếp cận khác biệt
 .. i18n: IT tools. You'll see what management practices might be useful, what's possible, and then how you
 .. i18n: could achieve that in Open ERP.
 
-Having restructured and reorganized many businesses, we wanted our management experience to generate
-a work that is both instructive and practical. It was important for us not to write a manual about
-Open ERP, but instead a work that deals with advanced management techniques realized through these
-IT tools. You'll see what management practices might be useful, what's possible, and then how you
-could achieve that in Open ERP.
+Từng tái cấu trúc và tá tổ chức nhiều doanh nghiệp, chúng tôi muốn những kinh nghiệm có được từng việc đó
+tạo ra một cuốn sách có cả lý thuyết lẫn thực tế. Điều quan trọng là chúng tôi không viết một cuốn hướng dẫn sử dụng
+Open ERP, mà thay vào đó là một tư liệu nghiên cứu các kỹ thuật quản lý cao cấp có được nhờ sợ hỗ trợ của CNTT.
+Bạn sẽ tìm thấy những hoạt động và chức năng bổ ích, và cách áp dụng nó bằng Open ERP.
 
 .. i18n: It's this that we'll consider Open ERP for: not as an end in itself but just the tool you use to put
 .. i18n: an advanced management system into place.
 
-It's this that we'll consider Open ERP for: not as an end in itself but just the tool you use to put
-an advanced management system into place.
+.. TruongSinh Tran: It's this that we'll consider Open ERP for: not as an end in itself but just the tool you use to put???
+.. TruongSInh Tran: an advanced management system into place.???
 
 .. i18n: Who's it for?
 .. i18n: -------------
 
-Who's it for?
+Sách này dành cho những ai?
 -------------
 
 .. i18n: Written by two CEOs who have been successful with new technologies, this book is aimed at directors
@@ -233,23 +232,25 @@ Who's it for?
 .. i18n: team. They're likely already to have significant responsibilities and possess the influence to get
 .. i18n: things done in their company.
 
-Written by two CEOs who have been successful with new technologies, this book is aimed at directors
-and managers who have an ambition to improve the performance of their whole company's management
-team. They're likely already to have significant responsibilities and possess the influence to get
-things done in their company.
+Được viết bởi hai CEO từng thành công với công nghệ này, cuốn sách hướng đến các giám đốc và quản lý
+có tham vọng nâng cao hiệu quả của tập thể ban lãnh đạo. Những người này có lẽ đã có trách nhiệm và quyền hạn đáng kể
+để thực hiện được điều đó trong cộng ty của họ.
 
 .. i18n: It's likely that most readers will come from small- and medium-sized enterprises (up to a few
 .. i18n: hundred staff), and independent companies, because of the breadth of functions that need to be
 .. i18n: analyzed and involved in change. The same principles also apply to larger companies, however.
 
-It's likely that most readers will come from small- and medium-sized enterprises (up to a few
-hundred staff), and independent companies, because of the breadth of functions that need to be
-analyzed and involved in change. The same principles also apply to larger companies, however.
+
+.. TruongSinh Tran: because of the breadth of functions that need to be???
+.. TruongSinh Tran: analyzed and involved in change. ???
+
+Chúng tôi nghĩ rằng đa số độc giả đến từ các doanh nghiệp vừa và nhỏ (khoảng vài trăm lao động) và các công ty độc lập.
+Nhưng các nguyên tắc từ cuốn sách này vẫn có thể áp dụng dễ dàng cho các tập đoàn lớn.
 
 .. i18n: Structure of this book
 .. i18n: ======================
 
-Structure of this book
+Cấu trúc cuốn sách
 ======================
 
 .. i18n: Part One, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
@@ -258,57 +259,53 @@ Structure of this book
 .. i18n: scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
 .. i18n: the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
 
-Part One, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
-can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
-with Open ERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
-scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
-the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
+Phần Một, :ref:`part1-steps`, bắt đầu với cách cài đặt Open ERP. Nếu bàn đã cài đặt thành công Open ERP,
+bạn có thể đọc ngay chương :ref:`ch-guided`. Nếu bạn đã quen thuộc với Open ERP hoặc Tiny ERP, bạn có thể đọc chương
+:ref:`ch-real` để tìm hiểu cách tạo một tiến độ công tác hoàn toàn mới trong một cơ sở dữ liệu rỗng. Bạn cũng có thể bỏ qua tất cả
+để đi thẳng vào chương :ref:`ch-crm` trong phần :ref:`part2-crm` để bắt đầu với các module chức năng của Open ERP.
 
 .. i18n: Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
 .. i18n: elements necessary for managing an efficient sales department there, and automating tasks to monitor
 .. i18n: performance.
 
-Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
-elements necessary for managing an efficient sales department there, and automating tasks to monitor
-performance.
+Phần Hai, :ref:`part2-crm`, tập trung vào mảng SRM (Supplier Relationship Management: Quản lý quan hệ nhà cung ứng) và CRM (Customer Relationship Management: Quản lý quan hệ khách hàng). Bạn sẽ tìm thấy những thành phần cần thiết để quản lý hiệu quả và tự động theo dõi các nhà kho, điểm bán hàng.
 
 .. i18n: Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
 .. i18n: enterprise.
 
-Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
-enterprise.
+Phần Ba, :ref:`part-genacct`, dành cho kế toán và những vai trò không thể thiếu của nó trong doanh nghiệp
 
 .. i18n: Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
 .. i18n: Human Resources for managing projects,
 .. i18n: through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
 .. i18n: can help you to optimize your leadership of an enterprise.
 
-Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
-Human Resources for managing projects,
-through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
-can help you to optimize your leadership of an enterprise.
+.. TruongSinh Tran: !!! -------------------------------------------------------------------------------------------------
+Phần Bốn, :ref:`part-ops`, giải quyết các hoạt động chức năng trong quản lý doanh nghiệp:
+Nhân lực trong quản lý dự án, phân tích tài chính từ kế toán. Bạn sẽ thấy sử dụng Open ERP tối ưu hoá
+sự lãnh đạo của Ban giám đốc như thế nào.
+.. TruongSinh Tran: !!! -------------------------------------------------------------------------------------------------
 
 .. i18n: Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
 .. i18n: (the transformation or products and services into other products).
 
-Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
-(the transformation or products and services into other products).
+Phần Năm, :ref:`part-phys`, mô tả quá trình chuyện động vật lý của nguyên vật liệu và sản phẩm
+(sự chuyển hoá của nguyên vật liệu hay dịch vụ thành sản phẩm)
 
 .. i18n: Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
 
-Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
+Phần Sáu, :ref:`part-trade`, thảo luận về chủ đề mua bán sản phẩm và dịch vụ
 
 .. i18n: Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that Open ERP
 .. i18n: manages.
 
-Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that Open ERP
-manages.
+Phần Bảy, :ref:`part-qual`, tập trung vào các miêu tả quá trình và xử lý tài liệu mà Open ERP quản lý
 
 .. i18n: Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
 .. i18n: ERP then provides a methodology for implementing Open ERP in the enterprise.
 
-Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
-ERP then provides a methodology for implementing Open ERP in the enterprise.
+Cuối cùng, Phần Tám, :ref:`part-config`, chia thành hai chương, giải thích cách quản trị và cấu hình Open ERP, sau đó
+cung cấp các phương pháp để triển khai Open ERP trong doanh nghiệp
 
 .. i18n: 	.. note::  *About the authors*
 .. i18n: 
@@ -357,20 +354,19 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 .. i18n: 			he has many thoughts to share on the successful adoption of an effective management automation
 .. i18n: 			tool.
 
-	.. note::  *About the authors*
+	.. note::  *Về các tác giả*
 
 	                **Fabien Pinckaers**
 
-			Fabien Pinckaers was only eighteen years old when he started his first company.
-			Today, over ten years later, he has founded and managed several new technology companies,
-			all based on Free / Open Source software.
+			Fabien Pinckaers mở công ty riêng đầu tiên năm ông 18 tuổi.
+			Ngày nay, sau hơn 10 năm, ông đã thành lập và quản lý khá nhiều các công ty công nghệ mới,
+			tất cả đều dựa trên những phần mềm nguồn mở hoặc miễn phí.
 
-			He originated Tiny ERP, now Open ERP, and is the director of two companies including Tiny sprl,
-			the editor of Open ERP. In three years he has grown the Tiny group from one to sixty-five
-			employees
-			without loans or external fund-raising, and while making a profit.
+			Ông cũng thành lập Tiny ERP, nay là Open ERP, và là giám đốc của 2 công ty, gồm cả Tiny SPLR,
+			công ty biên tập tài liệu cho Open ERP. Trong 3 năm, ông đã giúp Tiny phát triển từ 1 lên đến 65 lao động
+			mà không cần các khoản vay hay đầu tư ngoài, và vẫn có lợi nhuận.
 
-			He has also developed several large scale projects, such as Auction-in-Europe.com,
+			Ông cũng phát triển một số dự án quy mô lớn, chẳng hạn như Auction-in-Europe.com,
 			which become the leader in the art market in Belgium.
 			Even today people sell more art works there than on ebay.be.
 
