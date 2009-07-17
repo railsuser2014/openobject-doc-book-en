@@ -4,7 +4,7 @@
 .. i18n: ********
 
 ********
-Foreword
+Lời nói đầu
 ********
 
 .. i18n: Information Systems have played an increasingly visible role over the past several years in
@@ -13,11 +13,11 @@ Foreword
 .. i18n: all of a company's' daily activities. Integrated management software is today very often a
 .. i18n: key source of significant competitive advantage.
 
-Information Systems have played an increasingly visible role over the past several years in
-improving the competitiveness of business.
-More than just tools for handling repetitive tasks, they're used to guide and advance
-all of a company's' daily activities. Integrated management software is today very often a
-key source of significant competitive advantage.
+Trong thập kỷ vừa qua, hệ thống thông tin (HTTT) ngày càng đóng vai trò quan trọng
+trong việc nâng cao tính cạnh tranh của doanh nghiệp.
+Không chỉ là công cụ để giải quyết các công việc lặp đi lặp lại, HTTT còn được sử dụng để hỗ trợ
+mọi hoạt động hàng ngày của công ty. Ngày nay, phần mềm tích hợp quản lý có thể xem là một trong những
+con át chủ bài để dành lấy lợi thế trên thương trường.
 
 .. i18n: The standard response to a need for responsiveness, reliability, and rapidly
 .. i18n: increasing expectations is to create an organization based on departments with
@@ -27,22 +27,22 @@ key source of significant competitive advantage.
 
 The standard response to a need for responsiveness, reliability, and rapidly
 increasing expectations is to create an organization based on departments with
-a clear linear structure, integrated around your operating processes.  To
-increase efficiency amongst salespeople, accountants, logistics staff and
-everyone else you should have a common understanding of your problems.
+a clear linear structure, integrated around your operating processes.
+Để tăng năng suất lao động của người bán hàng, kế toán, nhân viên hậu cần, ... chúng ta
+cần phải có hiểu biết cơ bản về các vấn đề mà doanh nghiệp chúng ta đang mắc phải.
 
 .. i18n: For this you need a common language for shared references, policies and communication.
 .. i18n: An ERP (Enterprise Resource Planning) system makes the ideal platform for this common reference
 .. i18n: point.
 
-For this you need a common language for shared references, policies and communication.
-An ERP (Enterprise Resource Planning) system makes the ideal platform for this common reference
-point.
+Để đạt được điều đó, chúng ta cần một thứ ngôn ngữ chung trong tất cả các tài liệu, số liệu, báo cáo, kế hoạch.
+Một hệ thống ERP (Enterprise Resource Planning, hoạch định tài nguyên doanh nghiệp) chính là thứ ngôn ngữ
+mà chúng ta đang mong muốn.
 
 .. i18n: Open Source software at the service of management
 .. i18n: =================================================
 
-Open Source software at the service of management
+Dịch vụ quản lý và phần mềm nguồn mở
 =================================================
 
 .. i18n: Risks and integration costs are important barriers to all the advantages you gain from such systems.
@@ -52,12 +52,10 @@ Open Source software at the service of management
 .. i18n: wanted by the users.
 .. i18n: But this is exactly what small and medium enterprises are looking for.
 
-Risks and integration costs are important barriers to all the advantages you gain from such systems.
-That's why, today, few small- and medium-sized companies use ERP.
-In addition, the larger ERP vendors such as SAP, Microsoft and Oracle haven't been able
-to reconcile the power and comprehensive cover of an ERP system with the simplicity and flexibility
-wanted by the users.
-But this is exactly what small and medium enterprises are looking for.
+Rủi ro thất bại và chi phí triển khai là một rào cản lớn đối với doanh nghiệp trước khi họ nhận ra được lợi ích thật sự
+từ những hệ thống như thế này.
+Đó là lý do mà hiện nay, chỉ một số ít doanh nghiệp vừa và nhỏ sử dụng ERP.
+Thêm vào đó, những nhà cung cấp ERP lớn như SAP, Microsoft và Oracle đã không thể dung hoà sức mạnh toàn diện của một hệ thống ERP với sự đơn giản và cơ động mà người dùng mong muốn.
 
 .. i18n: The development processes of open source software, and the new business models adopted by their
 .. i18n: developers,
