@@ -116,7 +116,7 @@ Và Open ERP sẽ đem lại những kết quả tuyệt với trong những lĩ
 .. i18n: The Open ERP Solution
 .. i18n: =====================
 
-Giải pháp Open ERP
+Giải pháp của Open ERP
 =====================
 
 .. i18n: Because of its modularity, collaborative developments in Open ERP have been cleanly integrated,
@@ -143,11 +143,8 @@ Có hơn 400 module sẵn sàng để sử dụng có thể tải về từ máy
 .. i18n: automation
 .. i18n: module for ordering sandwiches, which can take care of the eating preferences of your staff.
 
-Nó gồm những module chuyên dụng như
-They range from specific modules like the EDI interface for agricultural products,
-which has been used to interface with Match and Leclerc stores, up to the generic demonstration
-automation
-module for ordering sandwiches, which can take care of the eating preferences of your staff.
+Nó gồm những module chuyên dụng, từ giao thức EDI (Electronic Data Interchange: Trao đổi dữ liệu điện tử) dùng cho nông phẩm,
+được dùng để làm giao thức trảo đổi giữa 2 cửa hàng Match và Leclerc, đến module tự động hoá cho việc đặt bánh mì kẹp thịt, chức năng mà một ông chủ doanh nghiệp có thể sử dụng để đặt suất ăn trưa cho các nhân viên của mình.
 
 .. i18n: The results are rather impressive. Open ERP (once called Tiny ERP when it started out) is management
 .. i18n: software that is downloaded more than any other in the world, with over 600 downloads per day.
