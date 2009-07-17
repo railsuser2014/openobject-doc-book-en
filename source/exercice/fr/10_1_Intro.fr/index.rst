@@ -24,8 +24,9 @@ Les différents départements de la société NotSoTiny sont:
 * Un département commercial qui travaille avec 3 types de clients: les clients directs, les détaillants et les grandes surfaces style 'Ikea'. Le département commercial est consituté d'un directeur commercial et de 3 commerciaux. Ils ont la charge de l'avant-vente et de la vente.
 
 * Un département recherche et développement qui est composé d'un chef de projet, d'un responsable clients et de 3 développeurs de prototypes. Ce département possède deux grandes vocations:
-	* développer des produits à la demande pour les grands clients, ce sont des projets d'étude d'environ 3 mois qui sont financés par les clients. 
-	* développer de nouveaux produits internes .
+
+    * développer des produits à la demande pour les grands clients, ce sont des projets d'étude d'environ 3 mois qui sont financés par les clients. 
+    * développer de nouveaux produits internes .
 
 * La production est responsable de la fabrication des armoires ainsi que de la maintenance efficace des nomenclatures et des gammes de fabrication. 
 
