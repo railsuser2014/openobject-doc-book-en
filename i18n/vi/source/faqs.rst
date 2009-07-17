@@ -6,7 +6,7 @@
 
 .. _faqs-link:
 
-List of Frequently Asked Questions
+Các câu hỏi đáp
 ==================================
 
 .. i18n: .. toctree::
