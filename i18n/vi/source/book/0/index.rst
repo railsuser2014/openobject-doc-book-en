@@ -381,23 +381,23 @@ cung cấp các phương pháp để triển khai Open ERP trong doanh nghiệp
 
                         **Geoff Gardiner**
 
-			Geoff has held posts as director of services and of IT systems for
-			international companies and in manufacturing.
-			He was Senior Industrial Research Fellow at Cambridge University's Institute for Manufacturing
-			where he focused on innovation processes.
+			Geoff từng năm giữ các vị trí giám đốc dịch vụ và CNTT cho các
+			tập đoàn sản xuất đa quốc gia.
+			Ông cũng từng là nghiên cứu sinh lâu năm ngành công nghiệp ở Viện nghiên cứu Sản xuất, Đại học Cambiridge,
+			nơi ông tập trung nghiên cứu các quá trình.
 
-			He founded Seath Solutions Ltd (http://www.seathsolutions.com/) to provide services
-			in the use of Open Source software, particularly Open ERP, for business management.
+			Ông sáng lập Seath Solutions Ltd (http://www.seathsolutions.com/) để cung cấp các dịch vụ
+			sử dụng phần mềm nguôn mở, đặc biệt là Open ERP, trong quản lý kinh doanh.
 
-			Author of articles and books focusing on the processes and technology of innovation,
-			Geoff is also an active contributor to the Open ERP project.
-			He holds an MBA from Cranfield School of Management and
-			an MA in Engineering and Electrical Sciences from Trinity Hall, Cambridge.
-			He is a member of the Institution of Engineering and Technology and of the Society of Authors.
+			Là tác giả của nhiều bài báo và sách về chủ đề quá trình và công nghệ cho sự đổi mới,
+			Geoff cũng là thành viên có nhiều đóng góp đáng ghi nhận cho dự án Open ERP.
+			Ông tốt nghiệp MBA (Master of Business Administration: Thạc sĩ quản trị kinh doanh) tại Cranfield School of Management và
+.. TruongSInh Tran: MA stands for Master of Art??? No way!!! Is it MEng?
+			MEng (Master of Engineering: Thạc sĩ kỹ thuật) ngành Electrical Sciences (khoa học điện) tại Trinity Hall, Cambridge.
+			Ông là thành viên của Viện Kỹ thuật và Công nghệ, và Hội các tác giả.
 
-			Having observed, suffered, and led process implementation projects in various organizations,
-			he has many thoughts to share on the successful adoption of an effective management automation
-			tool.
+			Đã quan sát, trải nghiệm và chịu trách nhiệm trong các quá trình đổi mới ở nhiều tổ chức,
+			ông có nhiều ý tưởng để chia sẻ về sự thành công trong việc ứng dụng các công cụ tự động hoá vào công tác quản lý.
 
 .. i18n: Dedication
 .. i18n: ==========
