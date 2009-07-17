@@ -20,7 +20,6 @@ Open ERP Exercice
     :maxdepth: 1
 
     10_1_Intro.fr/index
-    10_1_Intro.fr/index
     10_2_Setup.fr/index
     10_3_Pricelists.fr/index
     10_4_CRM.fr/index
