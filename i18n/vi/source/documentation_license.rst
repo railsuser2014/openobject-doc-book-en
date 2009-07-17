@@ -241,6 +241,10 @@ nhuận bút từ công việc của họ, họ sẽ đóng góp nhiều hơn n�
 .. i18n: to motivate authors and translators to write more chapters, and improve
 .. i18n: existing ones.
 
+Sách được bán ở các nhà sách ở các quốc gia bằng nhiều ngôn ngữ khác nhau sẽ đem lại
+nhuận bút cho các giả và dịch giả, giúp chúng ta thể hiện sự trân trọng đối với họ. Điều này
+sẽ khuyến khích họ viết nhiều hơn, viết tốt hơn.
+
 Books are sold in bookstores in different countries and languages, which allows
 us to remunerate the full edition chain through author rights. It will help us
 to motivate authors and translators to write more chapters, and improve
@@ -252,59 +256,53 @@ existing ones.
 .. i18n: country), will be published online some months after their official
 .. i18n: publication.
 
-We had to find a good middle point between selling through bookstores to
-remunerate authors and publishing online to provide a free version. So, most of
-our books (depending on the contract we have with the editor in the related
-country), will be published online some months after their official
-publication.
+Chúng ta phải cân bằng giữa việc bán sánh như đã đề cập với việc phát hành bản số miễn phí trên mạng.
+Vì thế, đa số các cuốn sách của chúng tôi sẽ được phát hành dạng số miễn phí trên mạng sau vài tháng
+kể từ ngày chính thức phát hành bản in, tuỳ thuộc vào hợp đồng của chúng tôi với đối tác.
 
 .. i18n: Our goal is to create many different books for different domains: technical
 .. i18n: books, marketing management, services companies management, openerp for
 .. i18n: accountants, ...
 
-Our goal is to create many different books for different domains: technical
-books, marketing management, services companies management, openerp for
-accountants, ...
+Mục tiêu của chúng ta là tạo ra nhiều sách ở nhiều lĩnh vực khác nhau: kỹ thuật, marketing,
+dịch vụ, tài chính, vân vân...
 
 .. i18n: Book writing will be our main documentation process. At each new version of
 .. i18n: OpenERP, we will release new versions of the different books. The editor will
 .. i18n: organise this and will get revenues for this.
 
-Book writing will be our main documentation process. At each new version of
-OpenERP, we will release new versions of the different books. The editor will
-organise this and will get revenues for this.
+Sách xuất bản sẽ là nguồn cung cấp tài liệu chính cho việc hướng dẫn. Mỗi phiên bản mới của OpenERP,
+chúng tôi sẽ ấn hành phiên bản mới của sách. Biên tập viên sẽ quản lý việc này, và tất nhiên, hưởng
+phụ cấp từ việc này.
 
 .. i18n: In addition to this, we use a community wiki for all others documentations that
 .. i18n: are not directly related to the software or for documentations that are "per
 .. i18n: module". For our main knowledge management system, we use Launchpad Answers,
 .. i18n: where you can ask questions or reply answers.
 
-In addition to this, we use a community wiki for all others documentations that
-are not directly related to the software or for documentations that are "per
-module". For our main knowledge management system, we use Launchpad Answers,
-where you can ask questions or reply answers.
+Ngoài ra, chúng tôi sử dụng wiki cho tất cả các tài liệu khác không trực tiếp liên quan đến phần mềm
+hoặc để hướng dẫn chi tiết từng trường hợp. Hãy vào Launchpad Answers để hỏi và trả lời các vấn đề liên quan.
 
 .. i18n: **The Role of The Community**
 
-**The Role of The Community**
+**Vai Trò Của Cộng Đồng**
 
 .. i18n: This documentation writing and maintaining process tends to emphasize
 .. i18n: individual efforts from authors and translators. This does not means we think
 .. i18n: the community is less important for writing documentations. The community
 .. i18n: remains very important for different reasons:
 
-This documentation writing and maintaining process tends to emphasize
-individual efforts from authors and translators. This does not means we think
-the community is less important for writing documentations. The community
-remains very important for different reasons:
+Quá trình soạn thảo và biên tập các tài liệu phụ thuộc chủ yếu vào sự nỗ lực của các
+tác giả và dịch giả, nhưng không có nghĩa chúng tôi đánh giá thấp cộng đồng trong quá trình này.
+Trái lại, cộng đồng đóng một vai trò rất quan trọng, với những lý do như:
 
 .. i18n: * The community provides authors and translators because everyone can request to be an author for one or several chapters, no need to write a full book.
 .. i18n: * The editor needs readers that will review the book before his official release.
 .. i18n: * These readers will be chosen amongst the different contributors in the community.
 
-* The community provides authors and translators because everyone can request to be an author for one or several chapters, no need to write a full book.
-* The editor needs readers that will review the book before his official release.
-* These readers will be chosen amongst the different contributors in the community.
+* Cộng đồng là nguồn gốc xuất thân của các tác giả, soạn giả, vì mọi người có thể viết một hoặc vài chương, không nhất thiết phải viết trọn cuốn sách
+* Biên tập viên cần độc giả để đánh giá bản thảo trước khi chính thức phát hành sách.
+* Các động giả này sẽ được chọn trong các người đóng góp trong cộng đồng.
 
 .. i18n: To improve the quality of books versions after versions, we will extensively
 .. i18n: work on errata in the wiki. Community will be able to propose improvement
