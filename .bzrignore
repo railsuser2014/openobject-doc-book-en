@@ -1,6 +1,0 @@
-./build/*
-./books/book_*/build/*
-./books/book_*/warn.log
-./books/book_*/source/fake_ref.rst
-test_server.rst	 source/technical_guide/test_server.rst
-source/technical_guide/test_server.rst

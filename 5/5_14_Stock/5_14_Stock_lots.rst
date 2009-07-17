@@ -1,0 +1,183 @@
+
+.. _sect-lotmgt:
+
+Management of lots and traceability
+===================================
+
+The double-entry management in Open ERP enables you to run very advanced traceability. All
+operations are formalized in terms of stock moves, so it's very simple to search for the cause of any
+gaps in stock moves.
+
+.. index::
+   single: traceability; upstream
+   single: traceability; downstream
+
+.. note:: Upstream and downstream traceability
+
+    **Upstream** traceability runs from the raw materials received from the supplier and follows the
+    chain to the finished products delivered to customers.
+    (Note that the name is confusing - this would often be considered a downstream direction.
+    Think of it as **Where Used**.) 
+
+    **Downstream** traceability follows the product in the other direction, from customer to the
+    different suppliers of raw material.
+    (Note that the name is confusing - this would often be considered an upstream direction.
+    Think of it as **Where Supplied**.) 
+
+Stock Moves
+-----------
+
+Use the menu :menuselection:`Stock Management --> Traceability --> Low Level --> Stock Moves`
+to track past stock transactions for a product or a given location. All the operations
+are available. You can filter on the various fields to retrieve the operations about an order,
+or a production activity, or a source location, or any given destination.
+
+.. figure:: images/stock_move_tree.png
+   :scale: 75
+   :align: center
+
+   *History of stock movements*
+
+Each stock move is in a given state. The different possible states are:
+
+* ``Draft`` : the move has so far had no effect in the system. The transaction hasn't yet been confirmed,
+
+* ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
+  you don't know whether it will be done without problem because the products have been reserved for
+  the move,
+
+* ``Validated`` : the move will be done and the necessary raw material have been reserved for the
+  transaction,
+
+* ``Done`` : the stock move has been done, and entered into the calculations of real stock,
+
+* ``Waiting`` : in the case of transactions ``From Order`` , this state shows that the stock move is blocked
+  waiting for the end of another move,
+
+* ``Cancelled`` : the stock move wasn't carried out, so there's no accounting for it in either real stock or
+  virtual stock.
+
+Delivery orders, goods receipts and internal picking lists are just documents that group a set of
+stock moves. You can also consult the history of these documents using the menu
+:menuselection:`Stock Management --> Traceability --> Low level --> Packing`.
+
+Lots
+----
+
+Open ERP can also manage product lots. Two lot types are defined:
+
+* Production lots (batch numbers) are represented by a unique product or an assembly of identical
+  products leaving the same production area. They are usually identified by bar codes stuck on the
+  products. The batch can be marked with a supplier number or your own company numbers.
+
+* Tracking numbers are logistical lots for identifying the container for a set of
+  products. This corresponds, for example, to the pallet numbers on which several different products
+  are stocked.
+
+These lots can be encoded onto all stock moves and, specifically, on goods-in lines, internal moves
+and product deliveries.
+
+.. figure:: images/picking_form_line.png
+   :scale: 75
+   :align: center
+
+   *Entering a line for production receipt*
+
+To enter the lot number in an operation you can use an existing lot number or create a new lot. A
+production lot (batch number) is used for a single product. A tracking number can be
+used several times for different products, so you can mix different products on a pallet or in a box.
+
+.. note:: Simplified View
+
+    In the ``Simplified View`` the tracking numbers can't be seen: the field is hidden.
+    To get to ``Extended View`` mode, assign the group 
+    :guilabel:`Usability – Extended View` to the current user.
+
+You can also specify on the product form the operations in which a lot number is
+required. You can then compel the user to set a lot number for manufacturing operations, goods
+receipt, or customer packing.
+
+You don't have to encode the lot number one by one to assign a unique lot number to a set of several items. 
+You only need to take a stock move for several products line and click the button
+:guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and Open ERP will
+complete the prefix in the wizard with a continuing sequence number. This sequence number
+might correspond to a set of pre-printed barcodes that you stick on each product.
+
+.. figure:: images/picking_split_lot.png
+   :scale: 75
+   :align: center
+
+   *Splitting a lot into uniquely identified parts*
+
+.. index:: traceability (stock)
+
+Traceability
+------------
+
+If you code in the lot numbers for stock moves as described above you can then investigate the traceability of any
+given lot number. To do this use the menu :menuselection:`Stock Management --> Traceability -->
+Production Lots`, or :menuselection:`Stock Management --> Traceability --> Tracking Lots`.
+
+.. tip:: Product Shortcuts
+
+    From the product form, the toolbar to the right offers useful information:
+
+    * :guilabel:`Minimum stock rules`,
+
+    * :guilabel:`Stocks by location`,
+
+    * :guilabel:`Sales detail`,
+
+    * :guilabel:`Stocks by lot`,
+
+    * :guilabel:`Bills of Materials`.
+
+Search for a particular lot using the filters for the lot number, the date or the product. Once you
+can see the form about this lot several actions are possible:
+
+* :guilabel:`Traceability upstream` : from supplier through to customers,
+
+* :guilabel:`Traceability downstream` : from customer back to suppliers,
+
+* Stock in all the physical and virtual locations.
+
+.. figure:: images/stock_traceability_upstream.png
+   :scale: 75
+   :align: center
+
+   *Tracing upstream in Make to Order*
+
+.. figure:: images/stock_traceability_downstream.png
+   :scale: 75
+   :align: center
+
+   *Tracing downstream in Make to Stock*
+
+Finally, on a lot, you can enter data on all the operations that have been done on the product. That
+forms a useful history of the pre-sales operations.
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open Object Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open Object Press, Grand Rosière, Belgium
