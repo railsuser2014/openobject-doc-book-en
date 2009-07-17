@@ -55,7 +55,7 @@ Dịch vụ quản lý và phần mềm nguồn mở
 Rủi ro thất bại và chi phí triển khai là một rào cản lớn đối với doanh nghiệp trước khi họ nhận ra được lợi ích thật sự
 từ những hệ thống như thế này.
 Đó là lý do mà hiện nay, chỉ một số ít doanh nghiệp vừa và nhỏ sử dụng ERP.
-Thêm vào đó, những nhà cung cấp ERP lớn như SAP, Microsoft và Oracle đã không thể dung hoà sức mạnh toàn diện của một hệ thống ERP với sự đơn giản và cơ động mà người dùng mong muốn.
+Thêm vào đó, những nhà cung cấp ERP lớn như SAP, Microsoft và Oracle đã không thể dung hoà sức mạnh toàn diện của một hệ thống ERP với sự đơn giản và linh hoạt mà người dùng mong muốn.
 
 .. i18n: The development processes of open source software, and the new business models adopted by their
 .. i18n: developers,
@@ -105,7 +105,7 @@ Mỗi người góp một chút kiến thức và kinh nghiệm của họ, mộ
 .. i18n: So the development team of Tiny ERP, today called Open ERP, is responsible for most of
 .. i18n: the organization, synchronization and coherence of the software.
 
-Nhưng thử thách thật sự của việc phát triển một hệ thống như vậy chính là làm cách nào để nó vừa đơn giản và cơ động, lại vừa hoàn thiện.
+Nhưng thử thách thật sự của việc phát triển một hệ thống như vậy chính là làm cách nào để nó vừa đơn giản và linh hoạt, lại vừa hoàn thiện.
 Và để đạt được chất lượng cao, chúng ta cần những người lãnh đạo và các cộng sự có cái nhìn sâu rộng trong mọi vấn đề trên.
 Vì vậy, nhóm phát triển Open ERP (trước kia là Tiny ERP), chịu trách nhiệm phần lớn công việc quản lý, đồng bộ hoá và định hướng phát triển phần mềm.
 
@@ -128,8 +128,8 @@ Giải pháp của Open ERP
 
 Được xây dựng theo hình thức lắp ghép module (modularity), việc phát triển Open ERP rất dễ dàng và nhanh chóng,
 cho phép bất kỳ công ty nào lựa chọn các chức năng phù hợp với yêu cầu riêng từ một kho khổng lồ, với mỗi module tương ứng với một hoạt động trong công ty.
-Cũng như đa số các phần mềm nguồn mở khác, tính thuận tiện, cơ động và đơn giản là những tiêu chuẩn quan trọng khi phát triển Open ERP.
-Kinh nghiệm thực tế đã chứng minh rằng không cần phải tập huấn người dùng hàng tháng trời, đơn giản vì họ có thể tự tải nó về cà dùng trực tiếp.
+Cũng như đa số các phần mềm nguồn mở khác, tính thuận tiện, linh hoạt và đơn giản là những tiêu chuẩn quan trọng khi phát triển Open ERP.
+Kinh nghiệm thực tế đã chứng minh rằng không cần phải tập huấn người dùng hàng tháng trời, đơn giản vì họ có thể tự tải nó về và dùng trực tiếp.
 
 .. i18n: So you'll find the modules for all types of needs, allowing your company to build its customized
 .. i18n: system
@@ -152,27 +152,26 @@ Nó gồm những module chuyên dụng, từ giao thức EDI (Electronic Data I
 .. i18n: More than 800 developers participate in the projects on the collaborative development system of Tiny
 .. i18n: Forge.
 
-The results are rather impressive. Open ERP (once called Tiny ERP when it started out) is management
-software that is downloaded more than any other in the world, with over 600 downloads per day.
-It's available today in 18 languages and has a world network of partners and contributors.
-More than 800 developers participate in the projects on the collaborative development system of Tiny
-Forge.
+Kệt quả khá ấn tượng. Open ERP (trước kia gọi là Tiny ERP) là phần mềm quản lý được tải 
+về nhiều nhất trên thế giớ, với hơn 600 lượt mỗi ngày. Nó tích hợp sẵn 18 ngôn ngữ và có một mạng lưới
+đối tác và người đóng góp rộng lớn trên khắp thế giới.
+Hơn 800 lập trình viên tham cùng gia trong các dự án phát triện hệ thộng của Tiny Forge
 
 .. i18n: To our knowledge, Open ERP is the only management system which is routinely used not only by big
 .. i18n: companies but also by very small companies and independent companies. This diversity is an
 .. i18n: illustration of the software's flexibility: a rather elegant coordination between people's
 .. i18n: functional expectations of the software and great simplicity in its use.
 
-To our knowledge, Open ERP is the only management system which is routinely used not only by big
-companies but also by very small companies and independent companies. This diversity is an
-illustration of the software's flexibility: a rather elegant coordination between people's
-functional expectations of the software and great simplicity in its use.
+Theo chúng tôi được biết, Open ERP là phần mềm quản lý duy nhất không những thường được
+được sử dụng ở các tập đoàn lớn mà cả ở những doanh nghiệp rất nhỏ lẫn công ty độc lập.
+Sự đa dạng này là minh chứng cho tính linh hoạt của phần mềm: một sự kết hợp hoàn hảo giữa
+những chức năng chuyên biệt được kỳ vọng với sự đơn giản và dễ sử dụng.
 
 .. i18n: And this diversity is also found in the various sectors and trades which use the software, including
 .. i18n: agricultural products, textiles, public auctions, IT, and trade associations.
 
-And this diversity is also found in the various sectors and trades which use the software, including
-agricultural products, textiles, public auctions, IT, and trade associations.
+Và sự đa đạng đó còn được tìm thấy trong những lĩnh vực có sử dụng phần mềm này, như nông nghiệp,
+dệt may, CNTT, thương mại...
 
 .. i18n: Lastly, such software has arisen from the blend of high code quality, well-judged architecture and
 .. i18n: use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the
@@ -182,27 +181,28 @@ agricultural products, textiles, public auctions, IT, and trade associations.
 .. i18n: the days when the only people who could be expected to benefit from ERP were the owners of a widget
 .. i18n: factory on some remote industrial estate.
 
-Lastly, such software has arisen from the blend of high code quality, well-judged architecture and
-use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the
-download size of Open ERP is only around 6 MB. When that's expanded during installation its size is mostly 
-attributable to all the official translations that are packaged with it, not the operating code. 
-We've moved a long way from
-the days when the only people who could be expected to benefit from ERP were the owners of a widget
-factory on some remote industrial estate.
+Cuối cùng, phần mềm này được phát triển từ những bộ công nghệ mới nhất, lượng cao, và có kiến trúc tinh tế.
+Bạn có thể sẽ ngạc nhiên (nếu bạn là dân CNTT) khi phát hiện rằng kích thước khi tải về của Open ERP
+chỉ chừng 6 MB. Trong quá trình cài đặt, kích thước của nó tăng lên chủ yếu vì những gói ngôn ngữ
+bản địa hoá chứ không phải do phần mã thực thi.
+
+.. TruongSinh Tran: We've moved a long way from???
+.. TruongSinh Tran: the days when the only people who could be expected to benefit from ERP were the owners of a widget???
+.. TruongSinh Tran: factory on some remote industrial estate.???
 
 .. i18n: Why this book?
 .. i18n: --------------
 
-Why this book?
+Tại sao nên chọn cuốn sách này?
 --------------
 
 .. i18n: Many books set out to tell readers about the management of enterprise, and equally many aim to
 .. i18n: instruct the reader in the use of a piece of specialized software. We're not aiming to add to those
 .. i18n: lists because our approach is intended to be different.
 
-Many books set out to tell readers about the management of enterprise, and equally many aim to
-instruct the reader in the use of a piece of specialized software. We're not aiming to add to those
-lists because our approach is intended to be different.
+Nhiều sách được phát hành để giới thiệu độc giả về cách quản lý doanh nghiệp, số khác nhắm đến việc hướng dẫn
+cách sử dụng một số phần mềm đặc biệt. Chúng tôi không định nằm trong những danh sách đó vì chúng tôi muốn có
+cách tiếp cận khác biệt
 
 .. i18n: Having restructured and reorganized many businesses, we wanted our management experience to generate
 .. i18n: a work that is both instructive and practical. It was important for us not to write a manual about
