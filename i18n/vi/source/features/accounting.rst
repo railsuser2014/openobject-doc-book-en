@@ -30,7 +30,7 @@ management, etc.
 
     <a target="_blank" href="../images/accounting_screenshot.png"><img src="../images_small/accounting_screenshot.png" class="screenshot" /></a>
     
-Key Points:
+Chức năng chính:
 -----------
 
 .. i18n: * Multi-company, multi-currencies, multi analytic axes,
