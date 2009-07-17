@@ -1,0 +1,2453 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tiny TERP Health Management (health) &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="up" title="Module Technical Guide: Introspection report on objects" href="index.html" />
+    <link rel="next" title="HeoFAX (hnm_heofax)" href="hnm_heofax.html" />
+    <link rel="prev" title="Google translation (google_translate)" href="google_translate.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="hnm_heofax.html" title="HeoFAX (hnm_heofax)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="google_translate.html" title="Google translation (google_translate)"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="hnm_heofax.html" title="HeoFAX (hnm_heofax)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="google_translate.html" title="Google translation (google_translate)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Tiny TERP Health Management (<em>health</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-semestre-health-semestre">Object: Semestre (health.semestre)</a></li>
+<li><a class="reference external" href="#object-religion-health-religion">Object: religion (health.religion)</a></li>
+<li><a class="reference external" href="#object-situation-health-situation">Object: situation (health.situation)</a></li>
+<li><a class="reference external" href="#object-room-rate-health-room-tarif">Object: Room Rate (health.room.tarif)</a></li>
+<li><a class="reference external" href="#object-localisation-health-room-localisation">Object: Localisation (health.room.localisation)</a></li>
+<li><a class="reference external" href="#object-chambres-health-room">Object: Chambres (health.room)</a></li>
+<li><a class="reference external" href="#object-rate-dependence-health-tarif-dependance">Object: Rate Dependence (health.tarif.dependance)</a></li>
+<li><a class="reference external" href="#object-drug-form-health-drugform">Object: Drug Form (health.drugform)</a></li>
+<li><a class="reference external" href="#object-drug-familly-health-drugfamilly">Object: Drug Familly (health.drugfamilly)</a></li>
+<li><a class="reference external" href="#object-profils-pathos-health-pathosprofils">Object: Profils Pathos (health.pathosprofils)</a></li>
+<li><a class="reference external" href="#object-category-states-pathologique-pathos-health-pathoscategetats">Object: Category States Pathologique Pathos (health.pathoscategetats)</a></li>
+<li><a class="reference external" href="#object-states-patholohgique-pathos-health-pathosetatspatho">Object: States Patholohgique Pathos (health.pathosetatspatho)</a></li>
+<li><a class="reference external" href="#object-facturation-health-facturation">Object: Facturation (health.facturation)</a></li>
+<li><a class="reference external" href="#object-aggir-health-aggir">Object: Aggir (health.aggir)</a></li>
+<li><a class="reference external" href="#object-drugs-health-drug">Object: Drugs (health.drug)</a></li>
+<li><a class="reference external" href="#object-category-health-category">Object: category (health.category)</a></li>
+<li><a class="reference external" href="#object-soins-health-care">Object: soins (health.care)</a></li>
+<li><a class="reference external" href="#object-type-evenement-health-evenement-type">Object: Type Evenement (health.evenement.type)</a></li>
+<li><a class="reference external" href="#object-evenement-health-patient-evenement">Object: evenement (health.patient.evenement)</a></li>
+<li><a class="reference external" href="#object-prescription-health-prescription">Object: prescription (health.prescription)</a></li>
+<li><a class="reference external" href="#object-tarif-absences-health-tarif-absences">Object: Tarif Absences (health.tarif.absences)</a></li>
+<li><a class="reference external" href="#object-regime-health-regime">Object: Regime (health.regime)</a></li>
+<li><a class="reference external" href="#object-output-type-health-exit">Object: Output Type (health.exit)</a></li>
+<li><a class="reference external" href="#object-absences-health-absences">Object: absences (health.absences)</a></li>
+<li><a class="reference external" href="#object-resident-health-patient">Object: Resident (health.patient)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="google_translate.html"
+                                  title="previous chapter">Google translation (<em>google_translate</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="hnm_heofax.html"
+                                  title="next chapter">HeoFAX (<em>hnm_heofax</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/health.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="module-health"></span>  <br />
+<link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" /><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This module is part of the Open ERP software, the leading Open Source
+enterprise management system. If you want to discover Open ERP, check our
+<a class="reference external" href="http://openerp.tv">screencasts</a> or download
+<a class="reference external" href="http://openerp.com">Open ERP</a> directly.</p>
+</div>
+<div class="js-kit-rating" title="" permalink="" standalone="yes" path="/health"></div>
+<script src="http://js-kit.com/ratings.js"></script><div class="section" id="tiny-terp-health-management-health">
+<h1>Tiny TERP Health Management (<em>health</em>)<a class="headerlink" href="#tiny-terp-health-management-health" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Module:</th><td class="field-body">health</td>
+</tr>
+<tr class="field"><th class="field-name">Name:</th><td class="field-body">Tiny TERP Health Management</td>
+</tr>
+<tr class="field"><th class="field-name">Version:</th><td class="field-body">5.0.0.9.3</td>
+</tr>
+<tr class="field"><th class="field-name">Author:</th><td class="field-body">EVI</td>
+</tr>
+<tr class="field"><th class="field-name">Directory:</th><td class="field-body">health</td>
+</tr>
+<tr class="field"><th class="field-name">Web:</th><td class="field-body"></td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Official module:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Quality certified:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/description" ></div><div class="highlight-python"><pre>Health Management System</pre>
+</div>
+</div>
+<div class="section" id="download-links">
+<h2>Download links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/download-links" ></div><p>You can download this module as a zip file in the following version:</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/dependencies" ></div></div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/reports" ></div></div>
+<div class="section" id="menus">
+<h2>Menus<a class="headerlink" href="#menus" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/menus" ></div></div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/views" ></div></div>
+<div class="section" id="objects">
+<h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/health/objects" ></div><div class="section" id="object-semestre-health-semestre">
+<h3>Object: Semestre (health.semestre)<a class="headerlink" href="#object-semestre-health-semestre" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">fiscalyear_id:</th><td class="field-body">Fiscal Year, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_stop:</th><td class="field-body">End of period, date, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_start:</th><td class="field-body">Start of period, date, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Semester, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-religion-health-religion">
+<h3>Object: religion (health.religion)<a class="headerlink" href="#object-religion-health-religion" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-situation-health-situation">
+<h3>Object: situation (health.situation)<a class="headerlink" href="#object-situation-health-situation" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-room-rate-health-room-tarif">
+<h3>Object: Room Rate (health.room.tarif)<a class="headerlink" href="#object-room-rate-health-room-tarif" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">type:</th><td class="field-body">Room type, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">age:</th><td class="field-body">Age Limit, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ref:</th><td class="field-body">reference, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Fare type, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">prix:</th><td class="field-body">Prix, float</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-localisation-health-room-localisation">
+<h3>Object: Localisation (health.room.localisation)<a class="headerlink" href="#object-localisation-health-room-localisation" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nbrchambre:</th><td class="field-body">Number of room, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">designation:</th><td class="field-body">Designation, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-chambres-health-room">
+<h3>Object: Chambres (health.room)<a class="headerlink" href="#object-chambres-health-room" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">localisation:</th><td class="field-body">Localisation, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">type:</th><td class="field-body">Room type, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name of Room, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">bed:</th><td class="field-body">Number of bed, integer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-rate-dependence-health-tarif-dependance">
+<h3>Object: Rate Dependence (health.tarif.dependance)<a class="headerlink" href="#object-rate-dependence-health-tarif-dependance" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">GIR, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">montant:</th><td class="field-body">Rate Dependence, float</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-drug-form-health-drugform">
+<h3>Object: Drug Form (health.drugform)<a class="headerlink" href="#object-drug-form-health-drugform" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-drug-familly-health-drugfamilly">
+<h3>Object: Drug Familly (health.drugfamilly)<a class="headerlink" href="#object-drug-familly-health-drugfamilly" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-profils-pathos-health-pathosprofils">
+<h3>Object: Profils Pathos (health.pathosprofils)<a class="headerlink" href="#object-profils-pathos-health-pathosprofils" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">definition:</th><td class="field-body">Definition, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Profile, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">description:</th><td class="field-body">Description, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-category-states-pathologique-pathos-health-pathoscategetats">
+<h3>Object: Category States Pathologique Pathos (health.pathoscategetats)<a class="headerlink" href="#object-category-states-pathologique-pathos-health-pathoscategetats" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Category States Pathologique, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-states-patholohgique-pathos-health-pathosetatspatho">
+<h3>Object: States Patholohgique Pathos (health.pathosetatspatho)<a class="headerlink" href="#object-states-patholohgique-pathos-health-pathosetatspatho" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">definition:</th><td class="field-body">Definition, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">categorie:</th><td class="field-body">Categorie, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Etats Pathologique, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">profils:</th><td class="field-body">Profils, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">description:</th><td class="field-body">Description, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-facturation-health-facturation">
+<h3>Object: Facturation (health.facturation)<a class="headerlink" href="#object-facturation-health-facturation" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidesociale:</th><td class="field-body">Social Assistance, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">absences:</th><td class="field-body">Personal absences, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Resident, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">decomptes:</th><td class="field-body">No. of days for the period, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">allocation:</th><td class="field-body">Allocation Logement, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">hebergement:</th><td class="field-body">Accommodation Rates, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">period_id:</th><td class="field-body">Billing period, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">datefacturation:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Invoice Date, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">hospitalisation:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Absences Hospitalization, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">commentaire:</th><td class="field-body">Comment, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">dependance:</th><td class="field-body">Tarida Dependence, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">ticketmoderateur:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Moderator Ticket, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apa:</th><td class="field-body">A.P.A., char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">chambre:</th><td class="field-body">Rooms, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">absautres:</th><td class="field-body">Other absences, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-aggir-health-aggir">
+<h3>Object: Aggir (health.aggir)<a class="headerlink" href="#object-aggir-health-aggir" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cuisine:</th><td class="field-body">Kitchen, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">alimentation:</th><td class="field-body">Food, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">orientation:</th><td class="field-body">Orientation, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">menage:</th><td class="field-body">Menage, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">achats:</th><td class="field-body">Procurement, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">communication:</th><td class="field-body">Communication to alert, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">coherence:</th><td class="field-body">Coherence, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">transports:</th><td class="field-body">Transport, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">toilette:</th><td class="field-body">Toilet, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Resident, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">activite:</th><td class="field-body">Free time, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">resultat:</th><td class="field-body">AG-GIR, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">moveint:</th><td class="field-body">Internal displacement, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">gestion:</th><td class="field-body">Management, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">traitement:</th><td class="field-body">monitoring treatment, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">elimination:</th><td class="field-body">Elimination, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">habillage:</th><td class="field-body">Dressing, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">transferts:</th><td class="field-body">Transfers, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">deplacementexterieur:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Deplacement External, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">gir:</th><td class="field-body">GIR, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-drugs-health-drug">
+<h3>Object: Drugs (health.drug)<a class="headerlink" href="#object-drugs-health-drug" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">vidal:</th><td class="field-body">vidal, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">atc:</th><td class="field-body">ATC, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">forme:</th><td class="field-body">Shape, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">commentaire:</th><td class="field-body">Comments, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">description:</th><td class="field-body">Description, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">volume:</th><td class="field-body">Volume, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">uom_id:</th><td class="field-body">Unit, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ucd:</th><td class="field-body">UCD, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cip:</th><td class="field-body">CIP, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">categ_id:</th><td class="field-body">Category, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">famille:</th><td class="field-body">family, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-category-health-category">
+<h3>Object: category (health.category)<a class="headerlink" href="#object-category-health-category" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">name, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-soins-health-care">
+<h3>Object: soins (health.care)<a class="headerlink" href="#object-soins-health-care" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Care, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-type-evenement-health-evenement-type">
+<h3>Object: Type Evenement (health.evenement.type)<a class="headerlink" href="#object-type-evenement-health-evenement-type" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Event Type, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">creator:</th><td class="field-body">Users, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-evenement-health-patient-evenement">
+<h3>Object: evenement (health.patient.evenement)<a class="headerlink" href="#object-evenement-health-patient-evenement" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date:</th><td class="field-body">Date, datetime</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">User, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Patient, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">description:</th><td class="field-body">Description, text, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">type_evenements:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Event Type, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-prescription-health-prescription">
+<h3>Object: prescription (health.prescription)<a class="headerlink" href="#object-prescription-health-prescription" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Patient, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">For seizure, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">commentaire:</th><td class="field-body">Comments, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">prescripteur:</th><td class="field-body">Doctor, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">au:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">medicament:</th><td class="field-body">Medicaments, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">du:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">heure:</th><td class="field-body">Time, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nbrprise:</th><td class="field-body">Number per dose, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-tarif-absences-health-tarif-absences">
+<h3>Object: Tarif Absences (health.tarif.absences)<a class="headerlink" href="#object-tarif-absences-health-tarif-absences" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Reason of Absence, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">montant:</th><td class="field-body">Absences Rate, float</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-regime-health-regime">
+<h3>Object: Regime (health.regime)<a class="headerlink" href="#object-regime-health-regime" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">parent_id:</th><td class="field-body">parent, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Regime Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">child_ids:</th><td class="field-body">Childs Category, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Social security, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-output-type-health-exit">
+<h3>Object: Output Type (health.exit)<a class="headerlink" href="#object-output-type-health-exit" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">reason, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-absences-health-absences">
+<h3>Object: absences (health.absences)<a class="headerlink" href="#object-absences-health-absences" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">For seizure, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">commentaire:</th><td class="field-body">Comments, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">facture:</th><td class="field-body">Billed, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nbrjour:</th><td class="field-body">Number of days, float, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">au:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">categorie:</th><td class="field-body">Category, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">du:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Resident, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-resident-health-patient">
+<h3>Object: Resident (health.patient)<a class="headerlink" href="#object-resident-health-patient" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ean13:</th><td class="field-body">EAN, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">property_account_position:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Fiscal Position, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nomusage:</th><td class="field-body">Name use, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">excise:</th><td class="field-body">Exices Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ref_companies:</th><td class="field-body">Companies that refers to partner, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">pharmacie:</th><td class="field-body">Pharmacy, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">alddu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidelogementndossier:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">File No., char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">property_product_pricelist:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Sale Pricelist, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">property_account_payable:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Account Payable, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">title:</th><td class="field-body">Title, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">vat_no:</th><td class="field-body">VAT Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">caissedu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">participation_ids:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Participations, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">parent_id:</th><td class="field-body">Main Company, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">photo:</th><td class="field-body">Resident Photo, binary</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ergo:</th><td class="field-body">Ergonomist, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">respcivil:</th><td class="field-body">Civil Liability, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nom:</th><td class="field-body">Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">child_ids:</th><td class="field-body">Partner Ref., one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">congregation:</th><td class="field-body">Congregation, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">date_liberation:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Release date of the Board, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidelogementdestinataire:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Addressee, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invaau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">debit_limit:</th><td class="field-body">Payable Limit, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">incineration:</th><td class="field-body">Incineration, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aldtaux:</th><td class="field-body">RATE A.L.D, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">property_account_receivable:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Account Receivable, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_sortie:</th><td class="field-body">Date Release, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">evenements:</th><td class="field-body">events, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">div:</th><td class="field-body">Division, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ncpaiement:</th><td class="field-body">Number Payment Center, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">numerosecu:</th><td class="field-body">Social Security Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidesocialendossier:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">No Dossier, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">logo:</th><td class="field-body">Logo, binary</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invadu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">religion:</th><td class="field-body">Religion, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">room_id:</th><td class="field-body">Rooms, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidesocialemontant:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">amount, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">debit:</th><td class="field-body">Total Payable, float, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">supplier:</th><td class="field-body">Supplier, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ref:</th><td class="field-body">Code, char, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">obseque:</th><td class="field-body">Obseques, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apamontant:</th><td class="field-body">amount, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">prescriptions:</th><td class="field-body">prescriptions, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">respau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">address:</th><td class="field-body">Contacts, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidesocialeau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cmu:</th><td class="field-body">C.M.U, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cst_no:</th><td class="field-body">CST Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">care:</th><td class="field-body">Care, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidelogementdu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">prenom:</th><td class="field-body">First Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">country:</th><td class="field-body">Country, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">admission_date:</th><td class="field-body">Date of admission, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">credit:</th><td class="field-body">Total Receivable, float, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">range:</th><td class="field-body">Range, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apadu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mutdu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">signature:</th><td class="field-body">Signature, binary</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">comment:</th><td class="field-body">Notes, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">hopital:</th><td class="field-body">Hopital, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidesocialedestinataire:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Addressee, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">header:</th><td class="field-body">Header (.odt), binary</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">motif_sortie:</th><td class="field-body">Reason for Release, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apa:</th><td class="field-body">APA, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">aidelogementmontant:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">amount, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">city:</th><td class="field-body">City, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">Dedicated Salesman, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nomreligieux:</th><td class="field-body">Religious Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">provenance:</th><td class="field-body">Provenance, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cmundossier:</th><td class="field-body">Nr File, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_ids:</th><td class="field-body">Parent Companies, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">vat:</th><td class="field-body">VAT, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">website:</th><td class="field-body">Website, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidesociale:</th><td class="field-body">Social Assistance, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">apadestinataire:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Addressee, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mutndossier:</th><td class="field-body">Nr File, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">pacemaker:</th><td class="field-body">Pace Maker / C.I., boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">respdu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">answers_ids:</th><td class="field-body">Answers, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">caisse:</th><td class="field-body">Fund, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">active:</th><td class="field-body">Active, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cmudu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aldau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">customer:</th><td class="field-body">Customer, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apandossier:</th><td class="field-body">Nr File, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">kine:</th><td class="field-body">Kine, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invalidite:</th><td class="field-body">Disability, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">situation:</th><td class="field-body">Family situation, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">birthdaydate:</th><td class="field-body">Date of Birth, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">relation_ids:</th><td class="field-body">Relations, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">medecin:</th><td class="field-body">Doctor, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidesocialedu:</th><td class="field-body">from, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidelogementau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">regime:</th><td class="field-body">Regime, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mutuelle:</th><td class="field-body">Mutual, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">absences:</th><td class="field-body">Absences, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mutau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">assure:</th><td class="field-body">Assuree, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">aidelogement:</th><td class="field-body">Housing assistance, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">pan_no:</th><td class="field-body">PAN Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cmuau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">note:</th><td class="field-body">notes, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">doncorps:</th><td class="field-body">Body donation, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">lieunaissance:</th><td class="field-body">Place of birth, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">girage:</th><td class="field-body">GIR Billing, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">turnover_id:</th><td class="field-body">Turnover, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">donorganes:</th><td class="field-body">Organ Donation, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">events:</th><td class="field-body">Events, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">obsinformations:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Informations, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">bank_ids:</th><td class="field-body">Banks, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">laboratoire:</th><td class="field-body">Laboratory, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ser_tax:</th><td class="field-body">Service Tax Number, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">apaau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date:</th><td class="field-body">Date, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">lang:</th><td class="field-body">Language, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">caisseau:</th><td class="field-body">to, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">credit_limit:</th><td class="field-body">Credit Limit, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">hopitalant:</th><td class="field-body">Hopital Ant., many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">psy:</th><td class="field-body">psy, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">livretremis:</th><td class="field-body">Booklet Remis, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">hospitalisation:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">In Hospitalization, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ambulance:</th><td class="field-body">Ambulance, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">property_payment_term:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Payment Term, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">category_id:</th><td class="field-body">Categories, many2many</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Tiny TERP Health Management (<em>health</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-semestre-health-semestre">Object: Semestre (health.semestre)</a></li>
+<li><a class="reference external" href="#object-religion-health-religion">Object: religion (health.religion)</a></li>
+<li><a class="reference external" href="#object-situation-health-situation">Object: situation (health.situation)</a></li>
+<li><a class="reference external" href="#object-room-rate-health-room-tarif">Object: Room Rate (health.room.tarif)</a></li>
+<li><a class="reference external" href="#object-localisation-health-room-localisation">Object: Localisation (health.room.localisation)</a></li>
+<li><a class="reference external" href="#object-chambres-health-room">Object: Chambres (health.room)</a></li>
+<li><a class="reference external" href="#object-rate-dependence-health-tarif-dependance">Object: Rate Dependence (health.tarif.dependance)</a></li>
+<li><a class="reference external" href="#object-drug-form-health-drugform">Object: Drug Form (health.drugform)</a></li>
+<li><a class="reference external" href="#object-drug-familly-health-drugfamilly">Object: Drug Familly (health.drugfamilly)</a></li>
+<li><a class="reference external" href="#object-profils-pathos-health-pathosprofils">Object: Profils Pathos (health.pathosprofils)</a></li>
+<li><a class="reference external" href="#object-category-states-pathologique-pathos-health-pathoscategetats">Object: Category States Pathologique Pathos (health.pathoscategetats)</a></li>
+<li><a class="reference external" href="#object-states-patholohgique-pathos-health-pathosetatspatho">Object: States Patholohgique Pathos (health.pathosetatspatho)</a></li>
+<li><a class="reference external" href="#object-facturation-health-facturation">Object: Facturation (health.facturation)</a></li>
+<li><a class="reference external" href="#object-aggir-health-aggir">Object: Aggir (health.aggir)</a></li>
+<li><a class="reference external" href="#object-drugs-health-drug">Object: Drugs (health.drug)</a></li>
+<li><a class="reference external" href="#object-category-health-category">Object: category (health.category)</a></li>
+<li><a class="reference external" href="#object-soins-health-care">Object: soins (health.care)</a></li>
+<li><a class="reference external" href="#object-type-evenement-health-evenement-type">Object: Type Evenement (health.evenement.type)</a></li>
+<li><a class="reference external" href="#object-evenement-health-patient-evenement">Object: evenement (health.patient.evenement)</a></li>
+<li><a class="reference external" href="#object-prescription-health-prescription">Object: prescription (health.prescription)</a></li>
+<li><a class="reference external" href="#object-tarif-absences-health-tarif-absences">Object: Tarif Absences (health.tarif.absences)</a></li>
+<li><a class="reference external" href="#object-regime-health-regime">Object: Regime (health.regime)</a></li>
+<li><a class="reference external" href="#object-output-type-health-exit">Object: Output Type (health.exit)</a></li>
+<li><a class="reference external" href="#object-absences-health-absences">Object: absences (health.absences)</a></li>
+<li><a class="reference external" href="#object-resident-health-patient">Object: Resident (health.patient)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="google_translate.html"
+                                  title="previous chapter">Google translation (<em>google_translate</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="hnm_heofax.html"
+                                  title="next chapter">HeoFAX (<em>hnm_heofax</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/health.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="hnm_heofax.html" title="HeoFAX (hnm_heofax)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="google_translate.html" title="Google translation (google_translate)"
+             >previous</a> |</li>
+
+          <li><a href="index.html" >Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="hnm_heofax.html" title="HeoFAX (hnm_heofax)"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="google_translate.html" title="Google translation (google_translate)"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

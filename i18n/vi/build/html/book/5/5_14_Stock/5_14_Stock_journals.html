@@ -1,0 +1,414 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Management by Journal &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Logistics and Stock Management" href="index.html" />
+    <link rel="next" title="Advanced elements of stock management" href="5_14_Stock_advanced.html" />
+    <link rel="prev" title="Management of lots and traceability" href="5_14_Stock_lots.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_advanced.html" title="Advanced elements of stock management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_lots.html" title="Management of lots and traceability"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_advanced.html" title="Advanced elements of stock management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_lots.html" title="Management of lots and traceability"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Management by Journal</a><ul>
+<li><a class="reference external" href="#the-different-journals">The different journals</a></li>
+<li><a class="reference external" href="#using-the-journals">Using the journals</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_lots.html"
+                                  title="previous chapter">Management of lots and traceability</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_advanced.html"
+                                  title="next chapter">Advanced elements of stock management</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_journals.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="management-by-journal">
+<h1>Management by Journal<a class="headerlink" href="#management-by-journal" title="Permalink to this headline">¶</a></h1>
+<p>You can manage stock through journals in the same way as you can manage your accounts
+through journals. This approach has the great advantage
+of being able to define journals in various ways as you need them to meet your company&#8217;s needs.</p>
+<p>For example, a large company may want to organize deliveries by department or warehouse. You can
+then create a journal and a manager for each department. The different users can then work in a
+journal as a function of their position in the company. That enables you to structure your
+information better.</p>
+<p>A company that does a lot of transport can organize its journals by delivery vehicle. The different
+delivery orders will then be assigned to a journal representing a particular vehicle. Then if the
+vehicle has left the company you can confirm all the orders that are found in the journal all at the
+same time.</p>
+<span class="target" id="index-267"></span><div class="section" id="the-different-journals">
+<h2>The different journals<a class="headerlink" href="#the-different-journals" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-different-journals" ></div><span class="target" id="index-268"></span><p>Install the module <a title="Managing sales and deliveries by journal (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale_journal.html#module-sale_journal"><tt class="xref docutils literal"><span class="pre">sale_journal</span></tt></a> to work with journals. This adds three new concepts to Open ERP:</p>
+<ul class="simple">
+<li>Invoicing journals,</li>
+<li>Order journals,</li>
+<li>Delivery journals.</li>
+</ul>
+<p>Invoicing journals are used to assign purchase orders and/or delivery order to a given invoicing
+journal. Everything in the journal can be invoiced in one go, and you can control the amounts by
+journal. For example you can create the following journals: daily invoicing, end-of-week invoicing,
+and end-of-month invoicing. It&#8217;s also possible to show the invoicing journal by default in the
+partner form.</p>
+<p>Order journals look like orders and are automatically transferred to orders for the corresponding
+items. These enable you to classify the orders in various ways, such as by department, by
+salesperson, or by type. Then if a salesperson looks at her own journals after an order she can
+easily see the work on current items compared with her own orders.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Default Values</p>
+<p class="last">To enter all the orders in their own order journal, a salesperson can use the default values that
+are entered in the fields when creating orders.</p>
+</div>
+<p>Finally the delivery journals are used to post each item into a delivery journal. For example you
+can create journals dated according to customer delivery dates (such as Monday&#8217;s deliveries, or
+afternoon deliveries) or these journals could represent the day&#8217;s work for delivery vehicles (such
+as truck1, truck2).</p>
+</div>
+<div class="section" id="using-the-journals">
+<h2>Using the journals<a class="headerlink" href="#using-the-journals" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/using-the-journals" ></div><p>You&#8217;ll now see how to use the journals to organize your stock management in practice. After
+installing the module <a title="Managing sales and deliveries by journal (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale_journal.html#module-sale_journal"><tt class="xref docutils literal"><span class="pre">sale_journal</span></tt></a> look at the list of partners. In the tab <strong>Sales and
+Purchases</strong> on any of them you&#8217;ll now see the field <strong>Invoicing Method</strong>.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/partner_property_view.png"><img alt="../../../_images/partner_property_view.png" src="../../../_images/partner_property_view.png" style="width: 507.0px; height: 500.25px;" /></a>
+<p class="caption"><em>Partner form in invoicing mode</em></p>
+</div>
+<p>You can create a new <strong>Invoicing Journal</strong> on a partner on the fly. You can show if the invoices
+should be grouped or not after you have generated them in the journal. Create a second invoicing journal
+<tt class="docutils literal"><span class="pre">End-of-Month</span> <span class="pre">Invoicing</span></tt> which you can assign to another partner.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/invoice_mode.png"><img alt="../../../_images/invoice_mode.png" src="../../../_images/invoice_mode.png" style="width: 523.5px; height: 506.25px;" /></a>
+<p class="caption"><em>Defining an invoicing journal</em></p>
+</div>
+<p>Then enter the data for some orders for these two partners. After entering this order data, the
+field <strong>Invoicing Mode</strong> is completed automatically from the partner settings. Put these
+orders into the Invoicing Mode based on items in the second tab.</p>
+<p>Look at the assembly notes about these orders in the field <strong>Invoicing Mode</strong> is
+automatically shown there. Then confirm the different orders in the list.</p>
+<p>At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the
+menu <em>Stock Management ‣ Sorted List ‣ List to invoice</em>. Choose the invoicing
+journal and all the lists of orders to invoice then open in list view. It&#8217;s then possible to
+automatically carry out invoicing by clicking the action <strong>Invoice</strong> (the gears symbol in
+the application client).</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Confirming invoices</p>
+<p class="last">By default, invoices are generated in the draft state which enables you to modify them before
+sending them to the customer.
+But you can confirm all the invoices in one go by selecting them all from the list and doing the
+action &#8216;Confirm draft invoices&#8217;.</p>
+</div>
+<p>At the end of the month the invoicing management does the same work but in the journal &#8216;month-end
+invoicing&#8217;.</p>
+<p>You can also enter a journal to confirm / cancel all the orders in one go. Then you can do several
+quotations and assign them in a journal and confirm or cancel them en masse at once.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/stock_jounral_form.png"><img alt="../../../_images/stock_jounral_form.png" src="../../../_images/stock_jounral_form.png" style="width: 515.25px; height: 420.75px;" /></a>
+<p class="caption"><em>View of an order journal</em></p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Management by Journal</a><ul>
+<li><a class="reference external" href="#the-different-journals">The different journals</a></li>
+<li><a class="reference external" href="#using-the-journals">Using the journals</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_lots.html"
+                                  title="previous chapter">Management of lots and traceability</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_advanced.html"
+                                  title="next chapter">Advanced elements of stock management</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_journals.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_advanced.html" title="Advanced elements of stock management"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_lots.html" title="Management of lots and traceability"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" >Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_advanced.html" title="Advanced elements of stock management"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_lots.html" title="Management of lots and traceability"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

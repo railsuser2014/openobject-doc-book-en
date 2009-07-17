@@ -1,0 +1,1311 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Event (event) &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="up" title="Module Technical Guide: Introspection report on objects" href="index.html" />
+    <link rel="next" title="Event - Project (event_project)" href="event_project.html" />
+    <link rel="prev" title="ETL system (etl_interface)" href="etl_interface.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="event_project.html" title="Event - Project (event_project)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="etl_interface.html" title="ETL system (etl_interface)"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="event_project.html" title="Event - Project (event_project)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="etl_interface.html" title="ETL system (etl_interface)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Event (<em>event</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-event-type-event-type">Object: Event type (event.type)</a></li>
+<li><a class="reference external" href="#object-event-event-event">Object: Event (event.event)</a></li>
+<li><a class="reference external" href="#object-event-registration-event-registration">Object: Event Registration (event.registration)</a></li>
+<li><a class="reference external" href="#object-events-on-registrations-report-event-registration">Object: Events on registrations (report.event.registration)</a></li>
+<li><a class="reference external" href="#object-event-type-on-registration-report-event-type-registration">Object: Event type on registration (report.event.type.registration)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="etl_interface.html"
+                                  title="previous chapter">ETL system (<em>etl_interface</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="event_project.html"
+                                  title="next chapter">Event - Project (<em>event_project</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/event.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="module-event"></span>  <br />
+<link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" /><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This module is part of the Open ERP software, the leading Open Source
+enterprise management system. If you want to discover Open ERP, check our
+<a class="reference external" href="http://openerp.tv">screencasts</a> or download
+<a class="reference external" href="http://openerp.com">Open ERP</a> directly.</p>
+</div>
+<div class="js-kit-rating" title="" permalink="" standalone="yes" path="/event"></div>
+<script src="http://js-kit.com/ratings.js"></script><div class="section" id="event-event">
+<h1>Event (<em>event</em>)<a class="headerlink" href="#event-event" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Module:</th><td class="field-body">event</td>
+</tr>
+<tr class="field"><th class="field-name">Name:</th><td class="field-body">Event</td>
+</tr>
+<tr class="field"><th class="field-name">Version:</th><td class="field-body">5.0.0.1</td>
+</tr>
+<tr class="field"><th class="field-name">Author:</th><td class="field-body">Tiny</td>
+</tr>
+<tr class="field"><th class="field-name">Directory:</th><td class="field-body">event</td>
+</tr>
+<tr class="field"><th class="field-name">Web:</th><td class="field-body"></td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Official module:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Quality certified:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/description" ></div><div class="highlight-python"><pre>Organization and management of events.
+
+    This module allow you
+        * to manage your events and their registrations
+        * to use emails to automatically confirm and send acknowledgements for any registration to an event
+        * ...
+
+    Note that:
+    - You can define new types of events in
+                Events \ Configuration \ Types of Events
+    - You can access predefined reports about number of registration per event or per event category in :
+                Events \ Reporting</pre>
+</div>
+</div>
+<div class="section" id="download-links">
+<h2>Download links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/download-links" ></div><p>You can download this module as a zip file in the following version:</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/dependencies" ></div></div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/reports" ></div><p>None</p>
+</div>
+<div class="section" id="menus">
+<h2>Menus<a class="headerlink" href="#menus" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/menus" ></div></div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/views" ></div></div>
+<div class="section" id="objects">
+<h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/event/objects" ></div><div class="section" id="object-event-type-event-type">
+<h3>Object: Event type (event.type)<a class="headerlink" href="#object-event-type-event-type" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Event type, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-event-event-event">
+<h3>Object: Event (event.event)<a class="headerlink" href="#object-event-event-event" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Section Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">create_date:</th><td class="field-body">Date created, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">sequence:</th><td class="field-body">Sequence, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_end:</th><td class="field-body">Ending date, datetime, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">register_max:</th><td class="field-body">Maximum Registrations, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">event_modify_date:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Google Modify Date, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mail_registr:</th><td class="field-body">Registration Email, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">analytic_account_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Main Analytic Account, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">mail_auto_confirm:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Mail Auto Confirm, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">Responsible User, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">mail_auto_registr:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Mail Auto Register, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">register_min:</th><td class="field-body">Minimum Registrations, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">parent_id:</th><td class="field-body">Parent Section, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">state:</th><td class="field-body">Status, selection, required, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mail_confirm:</th><td class="field-body">Confirmation Email, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">task_ids:</th><td class="field-body">Project tasks, one2many, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">register_prospect:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Unconfirmed Registrations, float, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">type:</th><td class="field-body">Type, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">child_ids:</th><td class="field-body">Child Sections, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">section_id:</th><td class="field-body">Case section, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">write_date:</th><td class="field-body">Date Modified, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">active:</th><td class="field-body">Active, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_begin:</th><td class="field-body">Beginning date, datetime, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">google_event_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Google Event Id, char, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">project_id:</th><td class="field-body">Project, many2one, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Case Section, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">analytic_journal_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Analytic Journal, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">package_product_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Package Product, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">register_current:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Confirmed Registrations, float, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_id:</th><td class="field-body">Product, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">reply_to:</th><td class="field-body">Reply-To, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">allow_unlink:</th><td class="field-body">Allow Delete, boolean</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-event-registration-event-registration">
+<h3>Object: Event Registration (event.registration)<a class="headerlink" href="#object-event-registration-event-registration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_closed:</th><td class="field-body">Closed, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">history_line:</th><td class="field-body">Communication, one2many, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">create_date:</th><td class="field-body">Created, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">outgoing_picking_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Outgoing Picking, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">probability:</th><td class="field-body">Probability (%), float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">canal_id:</th><td class="field-body">Channel, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">parent_fleet_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Fleet, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">partner_address_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Partner Contact, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">som:</th><td class="field-body">State of Mind, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">related_picking_state:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Related Picking State, char, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">incident_ref:</th><td class="field-body">Incident Ref, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">fleet_id:</th><td class="field-body">Fleet, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">category2_id:</th><td class="field-body">Category Name, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">duration:</th><td class="field-body">Duration, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">out_supplier_picking_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Return From Supplier Picking, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">planned_revenue:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Planned Revenue, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">id:</th><td class="field-body">ID, integer, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">date_action_next:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Next Action, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">priority:</th><td class="field-body">Priority, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user_id:</th><td class="field-body">Responsible, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">tobe_invoiced:</th><td class="field-body">To be Invoiced, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_name:</th><td class="field-body">Employee Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Partner, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">unit_price:</th><td class="field-body">Unit Price, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">badge_partner:</th><td class="field-body">Badge Partner, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">note:</th><td class="field-body">Note, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">state:</th><td class="field-body">Status, selection, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">case_id:</th><td class="field-body">Case, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">in_supplier_picking_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Return To Supplier Picking, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">email_cc:</th><td class="field-body">Watchers Emails, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">external_ref:</th><td class="field-body">Ticket Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ref:</th><td class="field-body">Reference, reference</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">log_ids:</th><td class="field-body">Logs History, one2many, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">partner_invoice_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Partner Invoiced, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">description:</th><td class="field-body">Your action, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">date_action_last:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Last Action, datetime, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">planned_cost:</th><td class="field-body">Planned Costs, float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ref2:</th><td class="field-body">Reference 2, reference</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">badge_title:</th><td class="field-body">Badge Title, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">section_id:</th><td class="field-body">Section, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">prodlot_id:</th><td class="field-body">Serial Number, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_name2:</th><td class="field-body">Employee Email, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_mobile:</th><td class="field-body">Mobile, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date:</th><td class="field-body">Date, datetime</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">contact_id:</th><td class="field-body">Partner Contact, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nb_register:</th><td class="field-body">Number of Registration, integer, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">active:</th><td class="field-body">Active, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">incoming_picking_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Incoming Picking, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">stage_id:</th><td class="field-body">Stage, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">related_incoming_picking_state:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Related Picking State, char, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Description, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_deadline:</th><td class="field-body">Deadline, datetime</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">email_last:</th><td class="field-body">Latest E-Mail, text, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">related_outgoing_picking_state:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Related Picking State, char, readonly</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">is_fleet_expired:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Is Fleet Expired?, boolean</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">categ_id:</th><td class="field-body">Category, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">email_from:</th><td class="field-body">Partner Email, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">event_id:</th><td class="field-body">Event Related, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_phone:</th><td class="field-body">Phone, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_id:</th><td class="field-body">Related Product, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invoice_id:</th><td class="field-body">Invoice, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invoice_label:</th><td class="field-body">Label Invoice, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">badge_name:</th><td class="field-body">Badge Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">picking_id:</th><td class="field-body">Repair Picking, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-events-on-registrations-report-event-registration">
+<h3>Object: Events on registrations (report.event.registration)<a class="headerlink" href="#object-events-on-registrations-report-event-registration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_begin:</th><td class="field-body">Beginning date, datetime, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Event, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">confirm_state:</th><td class="field-body">Confirm Registration, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">draft_state:</th><td class="field-body">Draft Registration, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_end:</th><td class="field-body">Ending date, datetime, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">register_max:</th><td class="field-body">Maximum Registrations, integer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-event-type-on-registration-report-event-type-registration">
+<h3>Object: Event type on registration (report.event.type.registration)<a class="headerlink" href="#object-event-type-on-registration-report-event-type-registration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">draft_state:</th><td class="field-body">Draft Registrations, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">confirm_state:</th><td class="field-body">Confirm Registrations, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Event Type, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">nbevent:</th><td class="field-body">Number Of Events, integer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Event (<em>event</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-event-type-event-type">Object: Event type (event.type)</a></li>
+<li><a class="reference external" href="#object-event-event-event">Object: Event (event.event)</a></li>
+<li><a class="reference external" href="#object-event-registration-event-registration">Object: Event Registration (event.registration)</a></li>
+<li><a class="reference external" href="#object-events-on-registrations-report-event-registration">Object: Events on registrations (report.event.registration)</a></li>
+<li><a class="reference external" href="#object-event-type-on-registration-report-event-type-registration">Object: Event type on registration (report.event.type.registration)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="etl_interface.html"
+                                  title="previous chapter">ETL system (<em>etl_interface</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="event_project.html"
+                                  title="next chapter">Event - Project (<em>event_project</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/event.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="event_project.html" title="Event - Project (event_project)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="etl_interface.html" title="ETL system (etl_interface)"
+             >previous</a> |</li>
+
+          <li><a href="index.html" >Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="event_project.html" title="Event - Project (event_project)"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="etl_interface.html" title="ETL system (etl_interface)"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

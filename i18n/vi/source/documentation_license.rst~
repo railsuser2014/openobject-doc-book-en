@@ -1,0 +1,321 @@
+
+.. i18n: .. _doc-license-link:
+.. i18n: 
+.. i18n: Licence for the documentation
+.. i18n: -----------------------------
+
+.. _doc-license-link:
+
+Giấy phép sử dụng tài liệu
+-----------------------------
+
+.. i18n: Copyright © Open Object Press. All rights reserved.
+
+Bản quyền © NXB Open Object. Mọi quyền đều được bảo vệ.
+
+.. i18n: You may take an electronic copy of this publication and distribute it if you 
+.. i18n: don't change the content in any way. You can also print a copy to be read by 
+.. i18n: yourself only.
+
+Bạn có thể giữ và phân phát lại tài liệu này ở dạng số nếu bạn 
+không thay đổi nội dung của nó dưới bất kỳ hình thức nào. Bạn cũng có thể in ra 
+để đọc.
+
+.. i18n: We have contracts with different publishers in different countries to sell and
+.. i18n: distribute paper or electronic based versions of this book (both translated and
+.. i18n: not) in bookstores. This helps to distribute and promote the Open ERP product.
+.. i18n: It also helps us to create incentives to pay contributors and authors using 
+.. i18n: the authors rights for these sales.
+
+Chúng tôi có các hợp đồng với nhiều nhà xuất bản ở các nước trên thế giới để bán và
+phân phối bản in hoặc bản số của sách này (cả bản dịch lẫn
+nguyên văn) trong các nhà sách. Điều này giúp  chúng tôi quảng bá các sản phẩm của Open ERP.
+Đồng thời, nó cũng giúp chúng tôi tạo động lực và trả nhận bút cho các tác giả vả dịch giả
+từ tiền bán sách.
+
+.. i18n: Due to this, grants to translate, modify or sell this book are strictly
+.. i18n: forbidden, unless Tiny SPRL (representing Open Object Press) gives you
+.. i18n: written authorisation for this.
+
+Vì vậy, việc biên dịch, sửa chữa hoặc bán lại sách này bị
+cấm hoàn toàn, trừ khi Tiny SPRL (đại diện NXP Open Object) trao quyền
+cho bạn.
+
+.. i18n: Many of the designations used by manufacturers and suppliers to distinguish their
+.. i18n: products are claimed as trademarks. Where those designations appear in this book,
+.. i18n: and Open Object Press was aware of a trademark claim, the designations have been
+.. i18n: printed in initial capitals.
+
+Nhiều tên gọi được các nhà sản xuất và cung ứng dùng để gọi sản phẩm của họ
+là những nhãn hiệu đã được đăng ký. NXB Open Object Press tôn trọng các tên gọi này.
+Nó được in hoa khi xuất hiện trong sách này.
+
+.. i18n: While every precaution has been taken in the preparation of this book, the publisher
+.. i18n: and the authors assume no responsibility for errors or omissions, or for damages
+.. i18n: resulting from the use of the information contained herein.
+
+Dù đã nghiêm túc làm việc chuẩn bị cho cuốn sách, nhà xuất bản, tác giả và dịch giả
+xin được miễn trách nhiệm các sai sót, lỗi kỹ thuật, hoặc hư hỏng hệ thống
+từ việc sử dụng thông tin trong cuốn sách này.
+
+.. i18n: Published by Open Object Press, Grand Rosière, Belgium
+
+NXB Open Object ấn hành, Grand Rosière, Belgium
+
+.. i18n: FAQ about documentation Licence
+.. i18n: ===============================
+
+Hỏi đáp về giấy phép sử dụng tài liệu
+===============================
+
+.. i18n: Why not use a free documentation licence ?
+.. i18n: ++++++++++++++++++++++++++++++++++++++++++++
+
+Tại sao không sử dụng giấy phép miễn phí?
+++++++++++++++++++++++++++++++++++++++++++++
+
+.. i18n: To achieve very high quality documentation, we are managing it as a standard
+.. i18n: publication process, with quality reviews by an editor. We also think that
+.. i18n: the documentation is worth being distributed in bookstores as printed editions
+.. i18n: on paper. It gives very good worldwide visibility for the product.
+
+Để đạt được một tài liệu có chất lượng cao, chúng tôi quản lý nó như một quy trình
+xuất bản thông thường, có sự xem xét đánh giá lại của các biên tập. Chúng tôi cho rằng
+tài liệu này xứng đáng được phân phối trong các nhà sách ở dạng bản in.
+Nó giúp mọi người dễ dàng hơn trong việc tiếp cận tài liệu.
+
+.. i18n: When working with professional editors, like Eyrolles, they ask for
+.. i18n: copyrights on the (translated) content so that they can easily invest in
+.. i18n: mass printing and distribution of the book. To take this risk, they need 
+.. i18n: protection on versions of the book that is not compatible with the GFPL.
+
+Khi làm việc với các biên tập viên chuyên nghiệp, như Eyrolles, họ yêu cầu phải có
+bản quyền nội dung (nguyên bản và bản dịch) để họ có thể dễ dàng đầu tư
+in số lượng lớn và phân phối sách.
+.. TruongSInh: "To take this risk, they need protection on versions of the book that is not compatible with the GFPL."
+.. TruongSInh: what does it mean?
+.. TruongSInh: GFPL?
+
+.. i18n: Do you accept contributions from everyone to modify the book ?
+.. i18n: +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Tiny SPRL có chấp nhận sự đóng góp của tất cả mọi người cho cuốn sách này?
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. i18n: Our goal is to accept most of the contributions and contributors. So we provide
+.. i18n: written authorisation if you contribute significantly.
+
+Mục tiêu của chúng tôi là chấp nhận tất cả các đóng góp có ích. Vì vậy chúng tôi sẽ cấp phép
+nếu bạn có những đóng góp đáng kể.
+
+.. i18n: But we must keep control of the book content to ensure:
+.. i18n: * Editors' rights are not infringed
+.. i18n: * Incentives like paid authors/translators rights are not infringed
+
+Nhưng chúng tôi cần quản lý nội dung của sách để đảm bảo:
+* Quyền của biên tập viên không bị xâm phạm
+* Nhuận bút của tác giả, dịch giả không bị xâm phạm
+
+.. i18n: The errata section is public on the wiki. Everyone can contribute in this
+.. i18n: section. Then an author can review modification proposals and apply them in
+.. i18n: his or her own way.
+
+Các phần có lỗi in hoặc còn đang tranh luận được phổ biến trên wiki. Mọi người có thể đóng góp.
+Sau đó, tác giả sẽ xem xét các ý kiến và chọn lựa đưa vào sách.
+
+.. i18n: Why is this a good approach ?
+.. i18n: +++++++++++++++++++++++++++++
+
+Tại sao đây là cách làm hay?
++++++++++++++++++++++++++++++
+
+.. i18n: The documentation of OpenERP is one of our biggest priorities. We currently
+.. i18n: have the best documentation amongst all open source ERP systems but it's not
+.. i18n: enough and I am sure we can do much more better.
+
+Tài liệu cho OpenERP là một trong những ưu tiên hàng đầu của chúng ta. Chúng ta
+đang có những tài liệu hỗ trợ tốt nhất trong cố các hệ thống ERP nguồn mở, nhưng
+điều đó vẫn chưa đủ, và tôi tin rằng chúng ta sẽ còn làm tốt hơn thế rất nhiều.
+
+.. i18n: **Writing Good Documentation is Complex**
+
+**Việc Viết Một Tài Liệu Tốt Rất Phức Tạp**
+
+.. i18n: For years we have tried to develop community based documentation on a wiki where
+.. i18n: everyone contributes. With Open ERP we have a strong community but, after years,
+.. i18n: the community documentation still does not reach our expectations:
+
+Đã nhiều năm qua, chúng tôi cố gắng phát triển một tài liệu đóng góp bởi cộng đồng trên wiki,
+nơi mọi người đều có thể đóng góp. Với Open ERP, chúng ta đã có một cộng đồng vững mạnh, nhưng,
+sau ngần ấy năm, phương pháp cũ vẫn chưa đem lại kết quả như mong muốn:
+
+.. i18n: * Deprecated compared to new versions of the software,
+.. i18n: * Original authors do not maintain what they write / contribute,
+.. i18n: * Appears like we assembled different pieces of unrelated documentation,
+.. i18n: * Sometimes contributions come from people that do not understand the software well enough,
+.. i18n: * Not end-user oriented,
+.. i18n: * Some have experience only in food industries, others services companies, others manufacturing, etc.
+
+* Tài liệu chưa theo kịp nhịp độ phát triển phiên bản mới,
+* Các tác giả, người đóng góp không gắn bó, không tiếp tục công việc
+* Tài liệu như một thứ chấp vá những bài viết lẻ tẻ,
+* Một số người đóng góp chưa hiểu biết cặn kẽ về phần mềm,
+* Tài liệu chưa hướng đến người dùng phổ thông,
+* Một số tác người đóng góp chỉ có kinh nghiệm trong ngành công nghiệp thực phẩm, số khác lại có kinh nghiệm
+trong các công ty dịch vụ, nhà máy sản xuất, vân vân...
+
+.. i18n: As a result we decided to review the way we will write and maintain future
+.. i18n: documentation about Open ERP and Open Object.
+
+Vì vậy, chúng tôi quyết định xem lại cách chúng tôi sẽ xuất bản và tái bản các tài liệu
+về Open ERP và Open Object trong tương lai
+
+.. i18n: **The Process**
+
+**Quá trình**
+
+.. i18n: Most of the best open source documentation has been fully written in one try
+.. i18n: by only one or two people / authors. After that, the community improved the
+.. i18n: content with small improvements here and there.
+
+Phần lớn tài liệu hướng dẫn các phần mềm nguồn mở chỉ được một hoặc hai người biên soạn.
+Sau đó, nó được cộng động sửa chữa và bổ sung ở một vài chỗ.
+
+.. i18n: So I think we'd be better to focus our resources on some good individuals
+.. i18n: rather than a global community. But writing a complete document (or even a
+.. i18n: complete chapter) can take a long time (we took about 200 hours to write the
+.. i18n: Open ERP book in french, 280 pages). So we need incentives to motivate these
+.. i18n: contributors / authors.
+
+Vì vậy, chúng tôi nghĩ rằng chúng ta nên tập trung nguồn lực vào một số cá nhân chủ chốt
+hơn là trải rộng toàn cộng đồng. Nhưng viết một cuốn sách hoàn chỉnh (hay chỉ là một chương hoàn chỉnh)
+tốn rất nhiều thời gian (chúng tôi viết 280 trang cuốn sách này, bằng tiếng Pháp, mất khoảng 200 giờ).
+Cho nên chúng ta cần khuyến khích và và động viên các tác giả, dịch giả.
+
+.. i18n: So, we decided to manage all documentation about Open ERP like any other
+.. i18n: book edition. We will set up an editing chain with the following actors:
+
+Do đó, chúng tôi quyết định quản lý tất cả các tài liệu về Open ERP tương tự
+như các cuốn sách. Chúng tôi thiết lập quy trình biên tập với cách thành viên như sau:
+
+.. i18n: * The editors: will work with authors to review the quality of the book and will distribute in a range of countries through webshops and real bookstores. The editor also defines author contracts and the graphics, charts and style. He will manage the collections (set of books).
+.. i18n: * The authors: everyone can write his own chapter(s) and propose them to the editor. The editor will make a selection of chapters to publish complete books.
+.. i18n: * Re-Readers: will re-read books before publication and work with the editor to achieve a high level of quality.
+.. i18n: * Translators: will translate a particular book to their mother tongue based on the english version.
+
+* The editors: will work with authors to review the quality of the book and will distribute in a range of countries through webshops and real bookstores. The editor also defines author contracts and the graphics, charts and style. He will manage the collections (set of books).
+* The authors: everyone can write his own chapter(s) and propose them to the editor. The editor will make a selection of chapters to publish complete books.
+* Re-Readers: will re-read books before publication and work with the editor to achieve a high level of quality.
+* Translators: will translate a particular book to their mother tongue based on the english version.
+
+.. i18n: Editors will be different according to the countries/translations of the book.
+.. i18n: For all French countries, we already contracted our preceding books with
+.. i18n: Eyrolles. For the English version, we will create our own company edition to
+.. i18n: keep the rights on the text so that we can publish it online for free.
+
+Editors will be different according to the countries/translations of the book.
+For all French countries, we already contracted our preceding books with
+Eyrolles. For the English version, we will create our own company edition to
+keep the rights on the text so that we can publish it online for free.
+
+.. i18n: Now, we have our incentives for authors and translators:
+
+Now, we have our incentives for authors and translators:
+
+.. i18n: * Getting monthly revenue through author rights based on monthly sales,
+.. i18n: * Being published in bookstores with our worldwide distribution channel.
+
+* Getting monthly revenue through author rights based on monthly sales,
+* Being published in bookstores with our worldwide distribution channel.
+
+.. i18n: Having established that, this should leverage individuals effort and promote
+.. i18n: contributions on writing good documentation. As people will be published and
+.. i18n: paid for their good work, this should promote new authors and translators.
+
+Having established that, this should leverage individuals effort and promote
+contributions on writing good documentation. As people will be published and
+paid for their good work, this should promote new authors and translators.
+
+.. i18n: Books are sold in bookstores in different countries and languages, which allows
+.. i18n: us to remunerate the full edition chain through author rights. It will help us
+.. i18n: to motivate authors and translators to write more chapters, and improve
+.. i18n: existing ones.
+
+Books are sold in bookstores in different countries and languages, which allows
+us to remunerate the full edition chain through author rights. It will help us
+to motivate authors and translators to write more chapters, and improve
+existing ones.
+
+.. i18n: We had to find a good middle point between selling through bookstores to
+.. i18n: remunerate authors and publishing online to provide a free version. So, most of
+.. i18n: our books (depending on the contract we have with the editor in the related
+.. i18n: country), will be published online some months after their official
+.. i18n: publication.
+
+We had to find a good middle point between selling through bookstores to
+remunerate authors and publishing online to provide a free version. So, most of
+our books (depending on the contract we have with the editor in the related
+country), will be published online some months after their official
+publication.
+
+.. i18n: Our goal is to create many different books for different domains: technical
+.. i18n: books, marketing management, services companies management, openerp for
+.. i18n: accountants, ...
+
+Our goal is to create many different books for different domains: technical
+books, marketing management, services companies management, openerp for
+accountants, ...
+
+.. i18n: Book writing will be our main documentation process. At each new version of
+.. i18n: OpenERP, we will release new versions of the different books. The editor will
+.. i18n: organise this and will get revenues for this.
+
+Book writing will be our main documentation process. At each new version of
+OpenERP, we will release new versions of the different books. The editor will
+organise this and will get revenues for this.
+
+.. i18n: In addition to this, we use a community wiki for all others documentations that
+.. i18n: are not directly related to the software or for documentations that are "per
+.. i18n: module". For our main knowledge management system, we use Launchpad Answers,
+.. i18n: where you can ask questions or reply answers.
+
+In addition to this, we use a community wiki for all others documentations that
+are not directly related to the software or for documentations that are "per
+module". For our main knowledge management system, we use Launchpad Answers,
+where you can ask questions or reply answers.
+
+.. i18n: **The Role of The Community**
+
+**The Role of The Community**
+
+.. i18n: This documentation writing and maintaining process tends to emphasize
+.. i18n: individual efforts from authors and translators. This does not means we think
+.. i18n: the community is less important for writing documentations. The community
+.. i18n: remains very important for different reasons:
+
+This documentation writing and maintaining process tends to emphasize
+individual efforts from authors and translators. This does not means we think
+the community is less important for writing documentations. The community
+remains very important for different reasons:
+
+.. i18n: * The community provides authors and translators because everyone can request to be an author for one or several chapters, no need to write a full book.
+.. i18n: * The editor needs readers that will review the book before his official release.
+.. i18n: * These readers will be chosen amongst the different contributors in the community.
+
+* The community provides authors and translators because everyone can request to be an author for one or several chapters, no need to write a full book.
+* The editor needs readers that will review the book before his official release.
+* These readers will be chosen amongst the different contributors in the community.
+
+.. i18n: To improve the quality of books versions after versions, we will extensively
+.. i18n: work on errata in the wiki. Community will be able to propose improvement
+.. i18n: through the errata section.
+
+To improve the quality of books versions after versions, we will extensively
+work on errata in the wiki. Community will be able to propose improvement
+through the errata section.
+
+.. i18n: Allowing everyone to contribute in errata instead of directly in the content
+.. i18n: allows us to keep into control on the quality of our documentations.
+
+Allowing everyone to contribute in errata instead of directly in the content
+allows us to keep into control on the quality of our documentations.

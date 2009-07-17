@@ -1,0 +1,547 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Open ERP Server Installation &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Open ERP Installation on Windows" href="../index.html" />
+    <link rel="next" title="PostgreSQL Server installation and configuration" href="../postgres/index.html" />
+    <link rel="prev" title="Open ERP Installation on Windows" href="../index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../postgres/index.html" title="PostgreSQL Server installation and configuration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Open ERP Installation on Windows"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Installation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Open ERP Installation on Windows</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../postgres/index.html" title="PostgreSQL Server installation and configuration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Open ERP Installation on Windows"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Installation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Open ERP Installation on Windows</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Open ERP Server Installation</a><ul>
+<li><a class="reference external" href="#system-requirements">System Requirements</a></li>
+<li><a class="reference external" href="#downloading-the-open-erp-server">Downloading the Open ERP Server</a></li>
+<li><a class="reference external" href="#installing-the-open-erp-server">Installing the Open ERP Server</a><ul>
+<li><a class="reference external" href="#preparing-the-server-for-the-first-time-run">Preparing the server for the first time run</a></li>
+<li><a class="reference external" href="#open-erp-prompt">Open ERP Prompt</a></li>
+<li><a class="reference external" href="#deciding-what-is-the-purpose-of-the-server">Deciding what is the purpose of the server</a></li>
+<li><a class="reference external" href="#first-time-run-with-demo-data">First time run with demo data</a></li>
+<li><a class="reference external" href="#first-time-run-without-demo-data-or-new-clean-version">First time run without demo data (or new clean version)</a></li>
+<li><a class="reference external" href="#first-time-run-with-an-upgraded-version-of-open-erp-server">First time run with an upgraded version of Open ERP Server</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#starting-the-server">Starting the server</a><ul>
+<li><a class="reference external" href="#from-the-command-prompt">From the command prompt</a></li>
+<li><a class="reference external" href="#from-the-main-program-menu">From the main program menu</a></li>
+<li><a class="reference external" href="#from-the-service-manager">From the service manager</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#monitoring-open-erp-server">Monitoring Open ERP Server</a></li>
+<li><a class="reference external" href="#configuring-open-erp-server">Configuring Open ERP Server</a></li>
+<li><a class="reference external" href="#congratulations-you-have-successfully-installed-the-open-erp-server">Congratulations, you have successfully installed the Open ERP Server</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Open ERP Installation on Windows</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../postgres/index.html"
+                                  title="next chapter">PostgreSQL Server installation and configuration</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/install/windows/server/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-468"></span><div class="section" id="open-erp-server-installation">
+<span id="installation-windows-server-link"></span><h1>Open ERP Server Installation<a class="headerlink" href="#open-erp-server-installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="system-requirements">
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/system-requirements" ></div><p>The server installation works on:</p>
+<p>with disks formatted in NTFS (not a FAT or FAT32 partition).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Open ERP Server doesn&#8217;t work on Windows 98 or ME;
+for obvious reasons &#8211; these can&#8217;t be formatted using NTFS.</p>
+</div>
+<p>You will also need a PostgreSQL server up and running. If it&#8217;s not the case,
+you can read the <a class="reference external" href="../postgres/index.html#windows-postgresql-server-installation"><em>PostgreSQL Server installation and configuration</em></a> Section.</p>
+</div>
+<div class="section" id="downloading-the-open-erp-server">
+<h2>Downloading the Open ERP Server<a class="headerlink" href="#downloading-the-open-erp-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/install/windows/server/index/downloading-the-open-erp-server" ></div><p>The server can be downloaded from
+the <a class="reference external" href="http://www.openerp.com/index.php?option=com_content&amp;view=article&amp;id=18&amp;Itemid=28">Open ERP website&#8217;s download page</a></p>
+<p>Choose <strong>Standalone Server</strong> if you want to install Open ERP Server standalone
+and plan to install the Open ERP Client and the PostgreSQL Server separately.</p>
+<p>Choose <strong>All in One</strong> if you want to install PostgreSQL Server, Open ERP Server
+and OpenERP Client in one shot.</p>
+</div>
+<div class="section" id="installing-the-open-erp-server">
+<h2>Installing the Open ERP Server<a class="headerlink" href="#installing-the-open-erp-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/install/windows/server/index/installing-the-open-erp-server" ></div><p>Click on the installer you&#8217;ve just downloaded.</p>
+<p>The ERP server installs also as a Windows service. This means you don&#8217;t have to start the
+server each time you start the computer and it runs without the need of an open user
+session.</p>
+<p>At the end of the installation, the setup wizard proposes to open, Open ERP Prompt, from
+where you can prepare your server, as described below.</p>
+<img alt="../../../_images/Terp_server_finish_install.png" src="../../../_images/Terp_server_finish_install.png" />
+<div class="section" id="preparing-the-server-for-the-first-time-run">
+<h3>Preparing the server for the first time run<a class="headerlink" href="#preparing-the-server-for-the-first-time-run" title="Permalink to this headline">¶</a></h3>
+<p>The Windows service for Open ERP Server is installed during the installation and it&#8217;s set up
+to start the server automatically on system boot.</p>
+<p>The configuration file is now automatically saved in the installation directory, in:</p>
+<div class="highlight-python"><pre>C:\Program Files\OpenERP Server\openerp-server.conf</pre>
+</div>
+</div>
+<div class="section" id="open-erp-prompt">
+<h3>Open ERP Prompt<a class="headerlink" href="#open-erp-prompt" title="Permalink to this headline">¶</a></h3>
+<p>At the end of installation, the setup wizard proposes to open an Open ERP Prompt.</p>
+<p>To start the server manually, start the Windows Command prompt and navigate to the
+installation directory in &#8220;C:Program FilesOpenERP Server&#8221;:</p>
+<p>You need to initialize the server and save its configuration for the service to be able
+to start automatically.</p>
+<p>You also need to specify a logfile to be able to read the output the server writes
+during its execution.</p>
+<p>When in the Server directory, type this command but don&#8217;t execute it yet:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">openerp</span><span class="o">-</span><span class="n">server</span><span class="o">.</span><span class="n">exe</span> <span class="o">-</span><span class="n">d</span> <span class="o">&lt;</span><span class="n">db_name</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">db_user</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">w</span> <span class="o">&lt;</span><span class="n">db_password</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">db_host</span><span class="o">=</span><span class="n">localhost</span>
+<span class="o">--</span><span class="n">db_port</span><span class="o">=</span><span class="mf">5432</span> <span class="o">--</span><span class="n">logfile</span><span class="o">=</span><span class="s">&quot;&lt;logfile&gt;&quot;</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">stop</span><span class="o">-</span><span class="n">after</span><span class="o">-</span><span class="n">init</span>
+</pre></div>
+</div>
+<p>The initialization of Open ERP Server provides the necessary informations for the connection
+to the database PostgreSQL and indication of the choice of data to load. Here is the
+explanation of used options:</p>
+<p>Before execution of this command you have to decide what usage you want the Open ERP for:
+see the next section! The command is on only one line, the other long commands as well.</p>
+<p>Sample command:</p>
+<div class="highlight-python"><pre>openerp-server.exe -d terp -r postgresadmin -w postgresadminpasswd
+--db_host=localhost --logfile="C:\Program Files\OpenERP Server\openerp-server.log"
+--db_port=5432 -s  --stop-after-init</pre>
+</div>
+<p>Here you have to enter the username and password initialized in the Initialise database
+cluster screen.</p>
+<p>When you will execute the initialization command, if you specified a logfile, you will not
+see any server output in the prompt window.</p>
+<p>Everything is written to the logfile. You have only to wait until the prompt comes back.</p>
+</div>
+<div class="section" id="deciding-what-is-the-purpose-of-the-server">
+<h3>Deciding what is the purpose of the server<a class="headerlink" href="#deciding-what-is-the-purpose-of-the-server" title="Permalink to this headline">¶</a></h3>
+<p>You have three possibilities for the first launch. This section is really important because
+the correct initialization can be crucial.</p>
+<p>You can initialize the database with Open ERP Server to:</p>
+</div>
+<div class="section" id="first-time-run-with-demo-data">
+<h3>First time run with demo data<a class="headerlink" href="#first-time-run-with-demo-data" title="Permalink to this headline">¶</a></h3>
+<p>To initialize Open ERP Server with the demo data, you need to add this option to the above
+command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="o">--</span><span class="n">init</span><span class="o">=</span><span class="n">all</span>
+</pre></div>
+</div>
+<p>Sample command:</p>
+<div class="highlight-python"><pre>openerp-server.exe -d terp -r postgresadmin -w postgresadminpasswd
+--db_host=localhost --logfile="C:\Program Files\OpenERP Server\openerp-server.log"
+--db_port=5432 -s  --stop-after-init --init=all</pre>
+</div>
+<p>This command will initialize the Open ERP Server and fill its PostgreSQL database with the
+demo data.</p>
+</div>
+<div class="section" id="first-time-run-without-demo-data-or-new-clean-version">
+<h3>First time run without demo data (or new clean version)<a class="headerlink" href="#first-time-run-without-demo-data-or-new-clean-version" title="Permalink to this headline">¶</a></h3>
+<p>Execute the command with an option excluding the demo data:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">demo</span><span class="o">=</span><span class="n">all</span>
+</pre></div>
+</div>
+<p>This will load all modules, but will not load the demo data.</p>
+<p>Sample command usage:</p>
+<div class="highlight-python"><pre>openerp-server.exe -d terp -r postgresadmin -w postgresadminpasswd
+--db_host=localhost --logfile="C:\Program Files\OpenERP Server\openerp-server.log"
+--db_port=5432 -s  --stop-after-init --without-demo=all</pre>
+</div>
+<p>Recreate a new database:If you have more than one database , you may force the server to
+initialize by using the &#8220;-i all&#8221; or &#8220;&#8211;init=all&#8221; command line option.</p>
+<p>If you already initialized the database and you have the demo data loaded, you can recreate
+a new database</p>
+</div>
+<div class="section" id="first-time-run-with-an-upgraded-version-of-open-erp-server">
+<h3>First time run with an upgraded version of Open ERP Server<a class="headerlink" href="#first-time-run-with-an-upgraded-version-of-open-erp-server" title="Permalink to this headline">¶</a></h3>
+<p>Execute the command with an option that updates the data structures:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="o">--</span><span class="n">update</span><span class="o">=</span><span class="n">all</span>
+</pre></div>
+</div>
+<p>Sample command usage:</p>
+<div class="highlight-python"><pre>openerp-server.exe -d terp -r postgresadmin -w postgresadminpasswd
+--db_host=localhost --logfile="C:\Program Files\OpenERP Server\openerp-server.log"
+--db_port=5432 -s  --stop-after-init --update=all</pre>
+</div>
+</div>
+</div>
+<div class="section" id="starting-the-server">
+<h2>Starting the server<a class="headerlink" href="#starting-the-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/starting-the-server" ></div><p>Now as the server is initialized and the settings are saved, you can finally start the Open
+ERP Server service.</p>
+<p>In the menus there is an icon that directly executes the Open ERP server, but it is only for
+debugging or testing purposes.</p>
+<div class="section" id="from-the-command-prompt">
+<h3>From the command prompt<a class="headerlink" href="#from-the-command-prompt" title="Permalink to this headline">¶</a></h3>
+<p>You can now start the Open ERP Server service from the command prompt with a simple command:</p>
+<div class="highlight-python"><pre>net start openerp-service</pre>
+</div>
+<img alt="../../../_images/Terp_service_start.png" src="../../../_images/Terp_service_start.png" />
+<p>You can also stop it in a similar way, in case the service is running but you need to
+reconfigure it:</p>
+<div class="highlight-python"><pre>net stop openerp-service</pre>
+</div>
+<img alt="../../../_images/Terp_service_stop.png" src="../../../_images/Terp_service_stop.png" />
+</div>
+<div class="section" id="from-the-main-program-menu">
+<h3>From the main program menu<a class="headerlink" href="#from-the-main-program-menu" title="Permalink to this headline">¶</a></h3>
+<p>You can also control the service from the Program menu:</p>
+<img alt="../../../_images/Terps_menu_server_controls.png" src="../../../_images/Terps_menu_server_controls.png" />
+</div>
+<div class="section" id="from-the-service-manager">
+<h3>From the service manager<a class="headerlink" href="#from-the-service-manager" title="Permalink to this headline">¶</a></h3>
+<p>The service and some runtime information is also accessible in the Computer management in
+Administration tools.</p>
+<img alt="../../../_images/Terp_service_mmc_terp_service.png" src="../../../_images/Terp_service_mmc_terp_service.png" />
+<img alt="../../../_images/Terp_service_mmc_logs.png" src="../../../_images/Terp_service_mmc_logs.png" />
+<p>The logging service offers additional information about the execution of the Open ERP Server
+service.</p>
+<p>In the service manager you can define how the service should act in case of server failure.</p>
+<img alt="../../../_images/Terp_service_mmc_control_actions.png" src="../../../_images/Terp_service_mmc_control_actions.png" />
+</div>
+</div>
+<div class="section" id="monitoring-open-erp-server">
+<h2>Monitoring Open ERP Server<a class="headerlink" href="#monitoring-open-erp-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/monitoring-open-erp-server" ></div><p>You can find startup or shutdown information in the Computer Management logging service.</p>
+<p>Open ERP Server runtime output can be found in the logfile you specified on the
+initialization command line.</p>
+<p>Given that the server is now running as a Windows service, it doesn&#8217;t output any runtime
+messages, for this the logfile is the only option.</p>
+<p>You can find out whether Open ERP Server is running by opening the Windows Task Manager and
+when you look at the Processes tab, you will see OpenERPServerService.exe and openerp-
+server.exe and that these two processes are running as SYSTEM user.</p>
+<img alt="../../../_images/Terp_service_running.png" src="../../../_images/Terp_service_running.png" />
+</div>
+<div class="section" id="configuring-open-erp-server">
+<h2>Configuring Open ERP Server<a class="headerlink" href="#configuring-open-erp-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/configuring-open-erp-server" ></div><p>Open ERP Server menu contains a direct link to the configuration file used by the service.
+This way you can edit the configuration and then restart the service to load the new
+configurations.</p>
+<img alt="../../../_images/Terps_menu_editconf.png" src="../../../_images/Terps_menu_editconf.png" />
+<img alt="../../../_images/Terp_server_conf.png" src="../../../_images/Terp_server_conf.png" />
+<p>Be extremely cautious when editing the server configuration directly, you can crash the
+entire system with inappropriate values.</p>
+</div>
+<div class="section" id="congratulations-you-have-successfully-installed-the-open-erp-server">
+<h2>Congratulations, you have successfully installed the Open ERP Server<a class="headerlink" href="#congratulations-you-have-successfully-installed-the-open-erp-server" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/congratulations-you-have-successfully-installed-the-open-erp-server" ></div><p>For more information, please take a look at
+the <a class="reference external" href="complementary_install_information.html#troubleshooting-and-windows-complementary-install-information"><em>Additional Installation Information and
+Troubleshooting</em></a> page
+where you can find some troubleshooting examples.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Open ERP Server Installation</a><ul>
+<li><a class="reference external" href="#system-requirements">System Requirements</a></li>
+<li><a class="reference external" href="#downloading-the-open-erp-server">Downloading the Open ERP Server</a></li>
+<li><a class="reference external" href="#installing-the-open-erp-server">Installing the Open ERP Server</a><ul>
+<li><a class="reference external" href="#preparing-the-server-for-the-first-time-run">Preparing the server for the first time run</a></li>
+<li><a class="reference external" href="#open-erp-prompt">Open ERP Prompt</a></li>
+<li><a class="reference external" href="#deciding-what-is-the-purpose-of-the-server">Deciding what is the purpose of the server</a></li>
+<li><a class="reference external" href="#first-time-run-with-demo-data">First time run with demo data</a></li>
+<li><a class="reference external" href="#first-time-run-without-demo-data-or-new-clean-version">First time run without demo data (or new clean version)</a></li>
+<li><a class="reference external" href="#first-time-run-with-an-upgraded-version-of-open-erp-server">First time run with an upgraded version of Open ERP Server</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#starting-the-server">Starting the server</a><ul>
+<li><a class="reference external" href="#from-the-command-prompt">From the command prompt</a></li>
+<li><a class="reference external" href="#from-the-main-program-menu">From the main program menu</a></li>
+<li><a class="reference external" href="#from-the-service-manager">From the service manager</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#monitoring-open-erp-server">Monitoring Open ERP Server</a></li>
+<li><a class="reference external" href="#configuring-open-erp-server">Configuring Open ERP Server</a></li>
+<li><a class="reference external" href="#congratulations-you-have-successfully-installed-the-open-erp-server">Congratulations, you have successfully installed the Open ERP Server</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Open ERP Installation on Windows</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../postgres/index.html"
+                                  title="next chapter">PostgreSQL Server installation and configuration</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/install/windows/server/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../postgres/index.html" title="PostgreSQL Server installation and configuration"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Open ERP Installation on Windows"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Installation</a> &raquo;</li>
+          <li><a href="../index.html" >Open ERP Installation on Windows</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../postgres/index.html" title="PostgreSQL Server installation and configuration"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Open ERP Installation on Windows"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Installation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Open ERP Installation on Windows</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

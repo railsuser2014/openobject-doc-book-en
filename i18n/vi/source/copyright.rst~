@@ -1,0 +1,28 @@
+
+.. i18n: .. _copyright-link:
+.. i18n: 
+.. i18n: Copyright
+.. i18n: =========
+
+.. _copyright-link:
+
+Quyền bản quyền
+=========
+
+.. i18n: Open ERP, Open Object and this documentation are: ::
+.. i18n: 
+.. i18n:   Copyright © 2001-TODAY Tiny SPRL. All rights reserved.
+
+Open ERP, Open Object và tài liệu này: ::
+
+  Bản quyền © 2001-NAY Tiny SPRL. Mọi quyền đều được bảo vệ.
+
+.. i18n: "Open ERP" and "Open Object" are registered trademarks of the Tiny company.
+.. i18n: They both are released under GPL V3.0.
+
+"Open ERP" và "Open Object" là thương hiệu của của công ty Tiny.
+Cả hai được phát hành theo giấy phép GPL V3.0.
+
+.. i18n: Check the :ref:`Documentation License <doc-license-link>`.
+
+Xem thêm :ref:`Documentation License <doc-license-link>`.

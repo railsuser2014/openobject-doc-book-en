@@ -1,0 +1,530 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Server Action &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Developer Book" href="../index.html" />
+    <link rel="next" title="Dashboard" href="../4_14_dashboard/index.html" />
+    <link rel="prev" title="I18n - Internationalization" href="../3_12_I18n/index.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../4_14_dashboard/index.html" title="Dashboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../4_14_dashboard/index.html" title="Dashboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Server Action</a><ul>
+<li><a class="reference external" href="#introduction">Introduction</a></li>
+<li><a class="reference external" href="#client-action">Client Action</a></li>
+<li><a class="reference external" href="#trigger">Trigger</a></li>
+<li><a class="reference external" href="#email-action">Email Action</a></li>
+<li><a class="reference external" href="#create-object">Create Object</a></li>
+<li><a class="reference external" href="#write-object">Write Object</a></li>
+<li><a class="reference external" href="#multi-action">Multi Action</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../3_12_I18n/index.html"
+                                  title="previous chapter">I18n - Internationalization</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../4_14_dashboard/index.html"
+                                  title="next chapter">Dashboard</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/4_13_server_action/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="server-action">
+<h1>Server Action<a class="headerlink" href="#server-action" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/developer/4_13_server_action/index/introduction" ></div><p>Server action is an new feature to the OpenERP available since the version 5.0 beta, This is the
+interesting features for the customizer, to full fill the customers requirements, This features enables
+to provides the quick and easy configuration some process which is day to day requirements. Like
+send email on confirmation of the sale order, or confirmation of the Invoice, log the operation of
+the invoice (confirm, cancel, etc..). or need to develope some system which runs wizard / report on
+the confirmation of the sales, purchase, or invoice. So Server action is the only one answer to solve
+all this kind of problems without doing any development, just a few configuration and the system is
+ready to answer few of above questions.</p>
+<p>Following are the list of action types which are supplied under the Server Action.</p>
+<p>Each type of action have the special features and different configuration parameters. We will see
+one by one all type of action how to configure and list of parameters that affect the system</p>
+</div>
+<div class="section" id="client-action">
+<h2>Client Action<a class="headerlink" href="#client-action" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/client-action" ></div><p>This action executes at client side, this is a good idea to run the wizard or report at client side.
+Using this type of action we can make the system like ERP will print the invoice after confirmation
+of the Invoice. Like it will run the payment wizard after confirmation of the invoice. Technically we
+can run all client action which execute at client side. We can execute ir.actions.report.custom,
+ir.actions.report.xml, ir.actions.act_window, ir.actions.wizard, or ir.actions.url. Here is an example
+to show how we can configuration Client action to print the invoice after confirmation of the
+invoice.</p>
+<img alt="../../_images/client_action.png" src="../../_images/client_action.png" />
+<p>This is an good and seems easy to configure the action.</p>
+<p>Important fields are</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Object:</th><td class="field-body">Select the object on which we want to implement the Server Action when work flow will execute on this object</td>
+</tr>
+<tr class="field"><th class="field-name">Client Action:</th><td class="field-body">Select the client action that is to execute at client side. Any of the following types.</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>ir.actions.report.custom</li>
+<li>ir.actions.report.xml</li>
+<li>ir.actions.act_window</li>
+<li>ir.actions.wizard</li>
+<li>ir.actions.url</li>
+</ul>
+</div>
+<div class="section" id="trigger">
+<h2>Trigger<a class="headerlink" href="#trigger" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/trigger" ></div><p>Trigger is an really excellent when we want to deal with the work flow of the other object which
+working the work flow of the first object. For example we want to configure the system like when
+we confirm the purchase order and create the invoice that newly created invoice should confirm it
+self automatically by the server action.</p>
+<img alt="../../_images/trigger_action.png" src="../../_images/trigger_action.png" />
+<p>This is the easy configuration for the trigger to have the system where the created invoice will
+confirm it self.</p>
+<p>Important fields are</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Object:</th><td class="field-body">Select the object on which we want to implement the Server Action when work flow will execute on this object</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Work-flow on:</th><td class="field-body">Here we select invoice, need to select the model on which the automatic workflow will be called by the action system</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Trigger On:</th><td class="field-body">We need to provide the id of the newly record, here in this case, Purchase order store the id of the Invoice after creating of the invoice in invoice_id field.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Trigger Name:</th><td class="field-body">This is the signal name which we want to generate on the newly created object.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="email-action">
+<h2>Email Action<a class="headerlink" href="#email-action" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/email-action" ></div><p>This is the common requirement for all business process, like send the confirmation by the email
+when sales order, purchase order, invoice, payment, shipping of goods will takes place. For that we
+need only few things to configure and tiny will send the email very quickly and in easy way. Even
+not need to setting up the your own email server, you can use your exciting email server and
+account, of you not have your email server you can use from the free email account by Gmail,
+Yahoo !, etc..</p>
+<p><em>Server Configuration</em></p>
+<p>supply the following parameters when we run OpenERP Server.</p>
+<div class="highlight-python"><pre>--email-from=gajjarmantavya@yahoo.co.in user email address
+--smtp=smtp.mail.yahoo.co.in smtp server name or ip
+--smtp-port=587 smtp port
+--smtp-user=gajjarmantavya user name usually same as the email address name without domain name
+--smtp-password=************* password to the user account
+--smtp-ssl=False use in case if the server required ssl for sending email</pre>
+</div>
+<p>Email Action Configuration</p>
+<img alt="../../_images/email_action.png" src="../../_images/email_action.png" />
+<p>Important Fields are:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Object:</th><td class="field-body">Select the object on which we want to implement the Server Action when work flow will execute on this object</td>
+</tr>
+<tr class="field"><th class="field-name">Contact:</th><td class="field-body">We need to select the fields from which action will select the email address to whom we would like to send the email, system will display all the fields related to the current object selected in the Object field</td>
+</tr>
+<tr class="field"><th class="field-name">Message:</th><td class="field-body">You can provide the message template with the fields that relate to the current object. And it will be merged when it is going to send the email. This is the same language than the rml which is used to design the report here we can use the [[ ]] + html tags to design in the html format Working with You can select the any fields from the current object, like here we select the [[ ]] invoice in the object.</td>
+</tr>
+</tbody>
+</table>
+<p>For example to get the partner name we can use [[ object.partner_id.name ]]like the same, object refers to the current object and we can access any fields which exist in the model.</p>
+<p>After confirmation the invoice we get the confirmation email from the action.</p>
+<img alt="../../_images/email_confirm.png" src="../../_images/email_confirm.png" />
+</div>
+<div class="section" id="create-object">
+<h2>Create Object<a class="headerlink" href="#create-object" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/create-object" ></div><p>This is an interesting feature for the tiny partners those who want to track the transaction in the
+OpenERP, like currently in the ERP you can get the Event history on the Partners which logs the
+only the sales order events. But if we want to start logging the invoice like the same we can easily
+do like that using the Create object Actions.</p>
+<img alt="../../_images/create_object.png" src="../../_images/create_object.png" />
+<p>Create Object action have the easy but tricky configuration, for the movement you have to
+remember the fields name or check it out from the code it self, in future we will develop the
+expression builder inside OpenERP so you can build the complex expression.</p>
+<p>Important fields are</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Object:</th><td class="field-body">Select the object on which we want to implement the Server Action when work flow will execute on this object</td>
+</tr>
+<tr class="field"><th class="field-name">Model:</th><td class="field-body">This is the target model where the new object is to be created, if its empty it refers to the current object and allow to select the fields from the same, but its advisable to provide the model in all case if different or if the same.</td>
+</tr>
+<tr class="field"><th class="field-name">Fields Mapping:</th><td class="field-body">Need to provide the 3 values</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple">
+<li>Field: any of the fields from the target model</li>
+<li>type of the value you can give either value or expression</li>
+<li>provide the value or expression the expression again start with the &#8216;object&#8217; keyword and its refers to the current object which selected in to the Object field.</li>
+</ol>
+<p><em>You must select the all required fields from the object</em></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Record Id:</th><td class="field-body">After creating the new record where the id of the new record if going to store. So in future we can refer the same for the other operations.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="write-object">
+<h2>Write Object<a class="headerlink" href="#write-object" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/write-object" ></div><p>The same configuration as defined for the Create Object, here we take an example that it will write the
+&#8216;Additional Information&#8217; on the same object</p>
+<img alt="../../_images/write_object.png" src="../../_images/write_object.png" />
+<p>Important Fields are</p>
+</div>
+<div class="section" id="multi-action">
+<h2>Multi Action<a class="headerlink" href="#multi-action" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/multi-action" ></div><p>This is the most interesting action, which allows to execute the multiple server action on the same
+business operations. Like if you want to print and send the email on confirmation of the invoice. We
+need to create the 3 Server Actions for that.</p>
+<p>The only problem with the Multi Action is that it will execute many actions at the server side, but only
+one client action will be executed.</p>
+<p>For example we would like to print report + execute the wizard this 2 operation is not allowd in the
+one multi action.</p>
+<img alt="../../_images/multi_action.png" src="../../_images/multi_action.png" />
+<p>Important Fields are</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Object:</th><td class="field-body">Select the object on which we want to implement the Server Action when work flow will execute on this object</td>
+</tr>
+<tr class="field"><th class="field-name">Other Actions:</th><td class="field-body">We need to select the server action in this fields, we are free to select the as many as actions as we can. Just we need to take care for the problem of the multi action, other things is very easy.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Link it up with the Work flow</strong></p>
+<p>The important things is to link the server action with the work flow, its bit easy to link with action
+with the work flow. Open the work flow editor in GTK, select the work flow and go to the start and
+select the Sever Action. This will automatically be called when the object comes to that state.</p>
+<img alt="../../_images/link_workflow.png" src="../../_images/link_workflow.png" />
+<p>Here in this example I added the Action to print the Invoice, when the Invoice will be confirmed.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Server Action</a><ul>
+<li><a class="reference external" href="#introduction">Introduction</a></li>
+<li><a class="reference external" href="#client-action">Client Action</a></li>
+<li><a class="reference external" href="#trigger">Trigger</a></li>
+<li><a class="reference external" href="#email-action">Email Action</a></li>
+<li><a class="reference external" href="#create-object">Create Object</a></li>
+<li><a class="reference external" href="#write-object">Write Object</a></li>
+<li><a class="reference external" href="#multi-action">Multi Action</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../3_12_I18n/index.html"
+                                  title="previous chapter">I18n - Internationalization</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../4_14_dashboard/index.html"
+                                  title="next chapter">Dashboard</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/4_13_server_action/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../4_14_dashboard/index.html" title="Dashboard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../4_14_dashboard/index.html" title="Dashboard"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

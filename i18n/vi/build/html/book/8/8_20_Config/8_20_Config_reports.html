@@ -1,0 +1,590 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuring reports &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Configuration & Administration" href="index.html" />
+    <link rel="next" title="Importing and exporting data" href="8_20_Config_import_export.html" />
+    <link rel="prev" title="Configuring workflows and processes" href="8_20_Config_workflow.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_import_export.html" title="Importing and exporting data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_import_export.html" title="Importing and exporting data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuring reports</a><ul>
+<li><a class="reference external" href="#managing-statistical-reports">Managing statistical reports</a><ul>
+<li><a class="reference external" href="#modeling-a-new-report">Modeling a new report</a></li>
+<li><a class="reference external" href="#configuring-the-dashboards">Configuring the dashboards</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#managing-document-templates-with-openoffice-org">Managing document templates with OpenOffice.org</a><ul>
+<li><a class="reference external" href="#installing-the-openoffice-org-module">Installing the OpenOffice.org module</a></li>
+<li><a class="reference external" href="#connecting-openoffice-org-to-open-erp">Connecting OpenOffice.org to Open&nbsp;ERP</a></li>
+<li><a class="reference external" href="#modifying-a-report">Modifying a report</a></li>
+<li><a class="reference external" href="#creating-a-new-report">Creating a new report</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#creating-common-headers-for-reports">Creating common headers for reports</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_workflow.html"
+                                  title="previous chapter">Configuring workflows and processes</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_import_export.html"
+                                  title="next chapter">Importing and exporting data</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_reports.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-402"></span><div class="section" id="configuring-reports">
+<h1>Configuring reports<a class="headerlink" href="#configuring-reports" title="Permalink to this headline">¶</a></h1>
+<p>Open&nbsp;ERP has two distinct report types:</p>
+<ul class="simple">
+<li>Statistical reports: these are calculated data, often represented in the form of lists or graphs.
+These reports are dynamic and you can navigate through the data that comprise the figures through
+the client interface.</li>
+<li>Report documents: they&#8217;re used to print system documents. The result is usually a PDF generated by
+a selection made on the screen. Furthermore, Open&nbsp;ERP enables you to open these reports in
+OpenOffice.org to edit in any changes you want before sending them to your customer.</li>
+</ul>
+<p>Because of the power of the Open&nbsp;ERP engine, these two types of report can be created or modified
+without needing any development and this can be done directly in the client interface of Open&nbsp;ERP
+or from OpenOffice.org.</p>
+<div class="section" id="managing-statistical-reports">
+<h2>Managing statistical reports<a class="headerlink" href="#managing-statistical-reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/managing-statistical-reports" ></div><p>Many reports are configured in advance in Open&nbsp;ERP. You can find them in the <em>Reporting</em> submenus
+under each main menu entry.</p>
+<p>You can also install more new reports using various different modules whose name usually starts with
+<tt class="docutils literal"><span class="pre">report_</span></tt> .</p>
+<div class="section" id="modeling-a-new-report">
+<h3>Modeling a new report<a class="headerlink" href="#modeling-a-new-report" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-403"></span><p>Open&nbsp;ERP gives you the possibility of developing your own analyses to meet your specific needs. To
+define a new analysis of the system&#8217;s data you should install the module <a title="Report Creator (Official, Quality Certified)" class="reference external" href="../../../technical_guide/base_report_creator.html#module-base_report_creator"><tt class="xref docutils literal"><span class="pre">base_report_creator</span></tt></a>
+. This enables you to create complex queries on the database, in a simple and visual way.</p>
+<p>Once the module is installed, create a new report using the menu <em>Dashboards ‣
+Configuration ‣ Custom Reports</em>.</p>
+<p>Give a <strong>Report Name</strong> to your new report and select the objects that you&#8217;re going to
+analyze. For example, select the three following objects: <strong>Partner</strong>, <strong>Sale Order</strong>, <strong>Sale Order
+line</strong>.</p>
+<p>Then turn to the second tab <strong>View parameters</strong> to select the views that you want in your
+report. Select <tt class="docutils literal"><span class="pre">Tree</span></tt>  in the <strong>First View</strong> and <tt class="docutils literal"><span class="pre">Graph</span></tt>  in the <strong>Second
+View</strong>. You can choose the type of graph displayed using the <strong>Graph View</strong> fields. You could
+also select <tt class="docutils literal"><span class="pre">Calendar</span></tt>  as a view if you were going to add the <strong>Date</strong> field in your
+report.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>The MS Excel plug-in</p>
+<p class="last">The Microsoft Excel plug-in enables you to connect to Open&nbsp;ERP and automatically extract the
+selected data.
+You can then apply formulas and graphs to make your own dashboards of measures directly in Excel.
+The .xls file can be saved and, when it is reopened, it reconnects to Open&nbsp;ERP to refresh the
+different lists and graphs with live data.</p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/report_analysis_config.png"><img alt="../../../_images/report_analysis_config.png" src="../../../_images/report_analysis_config.png" style="width: 525.0px; height: 358.5px;" /></a>
+<p class="caption"><em>Fields selected for the analysis of sales by customer and by product (plugin_excel.png)</em></p>
+</div>
+<p>In the third tab <strong>Fields to Display</strong> you can add filters on all the fields of the selected
+objects (<strong>Filters on Fields</strong>). To do that, use the button <strong>Add Filter</strong> at the
+top of the form. For the moment, don&#8217;t add a filter.</p>
+<p>In the fourth tab you must indicate which of the fields in the list you want to be shown in your
+report (<strong>Fields to Display</strong>). Complete the screen along the lines of the figure below.</p>
+<p>You can now <strong>Save</strong> the report you defined. Click on the <strong>Open Report</strong> button to
+the right of the form to get the requested analysis.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/report_sale_tree.png"><img alt="../../../_images/report_sale_tree.png" src="../../../_images/report_sale_tree.png" style="width: 501.75px; height: 375.0px;" /></a>
+<p class="caption"><em>Analyzing sales by partner and by product in list view</em></p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/report_sale_graphe.png"><img alt="../../../_images/report_sale_graphe.png" src="../../../_images/report_sale_graphe.png" style="width: 448.5px; height: 375.0px;" /></a>
+<p class="caption"><em>Analyzing sales by partner and by product in graph view</em></p>
+</div>
+<span class="target" id="index-404"></span></div>
+<div class="section" id="configuring-the-dashboards">
+<h3>Configuring the dashboards<a class="headerlink" href="#configuring-the-dashboards" title="Permalink to this headline">¶</a></h3>
+<p>A dashboard is a selection of reports previously defined in Open&nbsp;ERP. You can choose from hundreds
+of predefined reports and, for each report, indicate its position on the dashboard.</p>
+<p>Just like fields on reports, the <strong>Sequence</strong> field determines the order in which views
+appear in the dashboard.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/dashboard_config.png"><img alt="../../../_images/dashboard_config.png" src="../../../_images/dashboard_config.png" style="width: 595.0px; height: 415.65px;" /></a>
+<p class="caption"><em>Definition of a new dashboard</em></p>
+</div>
+<p>Once the dashboard has been defined through the menu
+<em>Dashboards ‣ Configuration ‣ Dashboard definition</em>
+you can use the <strong>Create Menu</strong> button to create a menu
+entry for your dashboard anywhere in the menu system.</p>
+</div>
+</div>
+<div class="section" id="managing-document-templates-with-openoffice-org">
+<h2>Managing document templates with OpenOffice.org<a class="headerlink" href="#managing-document-templates-with-openoffice-org" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/managing-document-templates-with-openoffice-org" ></div><span class="target" id="index-405"></span><p>To configure your printable documents in Open&nbsp;ERP, use the module <a title="Report designer interface module (Official, Quality Certified)" class="reference external" href="../../../technical_guide/base_report_designer.html#module-base_report_designer"><tt class="xref docutils literal"><span class="pre">base_report_designer</span></tt></a>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>The OpenOffice.org Writer plug-in</p>
+<p class="last">You can create your own reports in just a few minutes using the OpenOffice.org Writer plug-in.
+This tool can give your team a big productivity improvement.
+Using it, you can create templates for all of your company&#8217;s documents, reducing the work of
+creating and laying out data and customer documents.</p>
+</div>
+<p>The system is both simple and powerful, because it gives you the benefits of all of the layout
+facilities offered by OpenOffice.org Writer as well as all of the data and calculation provided by
+Open&nbsp;ERP. You could create or modify reports directly from OpenOffice.org and then use them in
+Open&nbsp;ERP.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Independence from OpenOffice.org</p>
+<p>OpenOffice.org is only used to generate new document templates.
+The system administrator is the only person who has to install it.</p>
+<p class="last">Once the document templates have been defined the users don&#8217;t need it to carry out their normal
+work.
+They can use either Microsoft Office or OpenOffice.org as they choose.</p>
+</div>
+<p>The OpenOffice.org plug-in enables you to search for fields in Open&nbsp;ERP and integrate them into
+your document templates. You can use data loops in tables or sections, enabling you to attach
+several lines to an order, for example.</p>
+<p>Once the new report has been defined it appears directly in the Open&nbsp;ERP client for the system
+users.</p>
+<p>There are two modes of using reports:</p>
+<ul class="simple">
+<li>make the report produce a PDF document with data in it reflecting the selected record (for
+example, an invoice).</li>
+<li>make the report open a document for modification in OpenOffice.org, with data in it reflecting the
+selected record. This enables you to modify the document in OpenOffice.org before sending it to the
+customer (such as with a Quotation).</li>
+</ul>
+<p>The personalized reports are stored in the Open&nbsp;ERP database and are accessible to everyone who has
+rights to use your database without any need for the installation of OpenOffice.org on their own
+computers. The document modifications are applied to a single database.</p>
+<div class="section" id="installing-the-openoffice-org-module">
+<h3>Installing the OpenOffice.org module<a class="headerlink" href="#installing-the-openoffice-org-module" title="Permalink to this headline">¶</a></h3>
+<p>You should install two components before using the report editor:</p>
+<ul class="simple">
+<li>the module <a title="Report designer interface module (Official, Quality Certified)" class="reference external" href="../../../technical_guide/base_report_designer.html#module-base_report_designer"><tt class="xref docutils literal"><span class="pre">base_report_designer</span></tt></a> – first in your Open&nbsp;ERP installation if it&#8217;s not
+already there, and then in the Open&nbsp;ERP database, you want to use it in.</li>
+<li>the OpenOffice.org Report Designer in the OpenOffice.org installation on your system
+administrator&#8217;s computer.</li>
+</ul>
+<p>You start by installing the module <a title="Report designer interface module (Official, Quality Certified)" class="reference external" href="../../../technical_guide/base_report_designer.html#module-base_report_designer"><tt class="xref docutils literal"><span class="pre">base_report_designer</span></tt></a> just like all the other Open&nbsp;ERP
+modules.</p>
+<p>To install the OpenOffice.org extension, look for the file <tt class="docutils literal"><span class="pre">openerpreport.zip</span></tt>  supplied with
+the  <em>Report Designer</em>  distribution. Check that OpenOffice.org is properly installed on your
+computer and that you have administration rights for installation.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/tinyreport.png"><img alt="../../../_images/tinyreport.png" src="../../../_images/tinyreport.png" style="width: 525.0px; height: 244.5px;" /></a>
+<p class="caption"><em>Menu Open ERP Report in OpenOffice.org Writer</em></p>
+</div>
+<p>Start OpenOffice.org Writer, select <em>Tools ‣ Package Management...</em>  to open the
+Package Management dialog box and then search for the <tt class="docutils literal"><span class="pre">openerpreport.zip</span></tt>  file to install it.
+Then close the application and restart Writer: a new menu appears in the top menu bar –  <strong>Tiny
+Report</strong>  or  <strong>Open ERP Report</strong>.</p>
+<span class="target" id="index-406"></span></div>
+<div class="section" id="connecting-openoffice-org-to-open-erp">
+<h3>Connecting OpenOffice.org to Open&nbsp;ERP<a class="headerlink" href="#connecting-openoffice-org-to-open-erp" title="Permalink to this headline">¶</a></h3>
+<p>Select <em>OpenERP Report ‣ Server parameters</em> in the top menu of OpenOffice.org
+Writer. You can then enter your connection parameters to the Open&nbsp;ERP server. You must select a
+database <tt class="docutils literal"><span class="pre">demo_min</span></tt>  in which you&#8217;ve already installed the module <a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a>. A message
+appears if you&#8217;ve made a successful connection.</p>
+<span class="target" id="index-407"></span></div>
+<div class="section" id="modifying-a-report">
+<h3>Modifying a report<a class="headerlink" href="#modifying-a-report" title="Permalink to this headline">¶</a></h3>
+<p>The report editor lets you:</p>
+<ul class="simple">
+<li>modify existing reports which will then replace the originals in your Open&nbsp;ERP database,</li>
+<li>create new reports for the selected object.</li>
+</ul>
+<p>To modify an existing report, select <em>OpenERP Report ‣ Modify Existing Report</em>.
+Choose the report:menuselection:<cite>Request for Quotation</cite> in the <strong>Modify Existing Report</strong>
+dialog box and then click <strong>Save to Temp Directory</strong>.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/openoffice_quotation.png"><img alt="../../../_images/openoffice_quotation.png" src="../../../_images/openoffice_quotation.png" style="width: 499.5px; height: 375.0px;" /></a>
+<p class="caption"><em>Modifying a document template</em></p>
+</div>
+<p>OpenOffice.org then opens the report in edit mode for you. You can modify it using the standard word
+processing functions of OpenOffice.org Writer.</p>
+<p>The document is modified in its English version. It will be translated as usual by Open&nbsp;ERP&#8217;s
+translation system when you use it through the client interface, if you&#8217;ve configured your own setup
+to translate to another language for you. So you only need to modify the template once, even if your
+system uses other languages – but you&#8217;ll need to add translations as described earlier in this
+chapter if you add fields or change the content of the existing ones.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Older reports</p>
+<p>The older reports may not all have been converted into the new form supported by Open&nbsp;ERP.
+Data expressions in the old format are shown within double brackets and not in OpenOffice.org
+fields.</p>
+<p class="last">You can transform an old report format to the new format from the OpenOffice.org menu
+<em>OpenERP Report ‣ Convert Bracket–Fields</em>.</p>
+</div>
+<p>From the Open ERP toolbar in OpenOffice.org it&#8217;s possible to:</p>
+<ul class="simple">
+<li>connect to the Open&nbsp;ERP server: by supplying the connection parameters.</li>
+<li>add a loop: select a related field amongst the available fields from the proposed object, for
+example <tt class="docutils literal"><span class="pre">Order</span> <span class="pre">lines</span></tt> . When it&#8217;s printed this loop will be run for each line of the order.
+The loop can be put into a table (the lines will then be repeated) or into an OpenOffice.org
+section.</li>
+<li>add a field: you can then go through the whole Open&nbsp;ERP database from the selected object and
+then a particular field.</li>
+<li>add an expression: enter an expression in the Python language to calculate values from any fields
+in the selected object.</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Python Expressions</p>
+<p>Using the Expression button you can enter expressions in the Python language.
+These expressions can use all of the object&#8217;s fields for their calculations.</p>
+<p>For example if you make a report on an order you can use the following expression:</p>
+<p>&#8216;%.2f&#8217; % (amount_total * 0.9,)</p>
+<p class="last">In this example, amount_total is a field from the order object. The result will be 90% of the total
+of the order, formatted to two decimal places.</p>
+</div>
+<p>You can check the result in Open&nbsp;ERP using the menu <em>Sales Management ‣ Sales
+Orders ‣ All Orders</em>.</p>
+<span class="target" id="index-409"></span></div>
+<div class="section" id="creating-a-new-report">
+<h3>Creating a new report<a class="headerlink" href="#creating-a-new-report" title="Permalink to this headline">¶</a></h3>
+<p>The general template is made up of loops (such as the list of selected orders) and fields from the
+object, which can also be looped. Format them to your requirements then save the template.</p>
+<p>The existing report templates make up a rich source of examples. You can start by adding the loops
+and several fields to create a minimal template.</p>
+<p>When the report has been created, send it to the server by clicking <em>OpenERP Report
+‣ Send to server</em>, which brings up the <strong>Send to server</strong> dialog box. Enter the
+<strong>Technical Name</strong> of <tt class="docutils literal"><span class="pre">sale.order</span></tt> , to make it appear beside the other sales order
+reports. Rename the template as <tt class="docutils literal"><span class="pre">Sale</span> <span class="pre">Order</span> <span class="pre">New</span></tt>  in <strong>Report Name</strong>, check the
+checkbox <strong>Corporate Header</strong> and finally click <strong>Send Report to Server</strong>.</p>
+<p>To send it to the server, you can specify if you prefer Open&nbsp;ERP to produce a PDF when the user
+prints the document, or if Open&nbsp;ERP should open the document for editing in OpenOffice.org Writer
+before printing. To do that choose <tt class="docutils literal"><span class="pre">PDF</span></tt>  or <tt class="docutils literal"><span class="pre">SXW</span></tt>  (a format of OpenOffice.org
+documents) in the field <strong>Select Report Type</strong>.</p>
+<span class="target" id="index-411"></span></div>
+</div>
+<div class="section" id="creating-common-headers-for-reports">
+<h2>Creating common headers for reports<a class="headerlink" href="#creating-common-headers-for-reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/creating-common-headers-for-reports" ></div><p>When saving new reports and reports that you&#8217;ve modified, you&#8217;re given the option to select a
+header. This header is a template that creates a standard page header and footer containing data
+that&#8217;s defined in each database.</p>
+<p>The header is available to all users of the Open&nbsp;ERP server. Its template can be found on the file
+system of the server in the directory  <tt class="docutils literal"><span class="pre">addons/custom</span></tt>  and is common to all the users of the
+server. Although reports attach information about the company that&#8217;s printing them you can replace
+various names in the template with values from the database, but the layout of the page will stay
+common to all databases on the server.</p>
+<p>If your company has its own server, or a hosted server, you can customize this template. To add the
+company&#8217;s logo you must login to the Open&nbsp;ERP server as a user who&#8217;s allowed to edit server files.
+Then go to the <tt class="docutils literal"><span class="pre">addons/custom</span></tt> directory, copy your logo across (in a standard graphical file
+format), then edit the file <tt class="docutils literal"><span class="pre">corporate_rml_header.rml</span></tt>  in a text editor. Text in the form <tt class="docutils literal"><span class="pre">&lt;image</span> <span class="pre">file=&quot;corporate_logo.png&quot;</span> <span class="pre">x=&quot;1cm&quot;</span> <span class="pre">y=&quot;27.4cm&quot;</span> <span class="pre">width=&quot;6cm&quot;/&gt;</span></tt> should be put after the line
+<tt class="docutils literal"><span class="pre">&lt;!--logo--&gt;</span></tt>  to pick up and display your logo on each page that uses the corporate header.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuring reports</a><ul>
+<li><a class="reference external" href="#managing-statistical-reports">Managing statistical reports</a><ul>
+<li><a class="reference external" href="#modeling-a-new-report">Modeling a new report</a></li>
+<li><a class="reference external" href="#configuring-the-dashboards">Configuring the dashboards</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#managing-document-templates-with-openoffice-org">Managing document templates with OpenOffice.org</a><ul>
+<li><a class="reference external" href="#installing-the-openoffice-org-module">Installing the OpenOffice.org module</a></li>
+<li><a class="reference external" href="#connecting-openoffice-org-to-open-erp">Connecting OpenOffice.org to Open&nbsp;ERP</a></li>
+<li><a class="reference external" href="#modifying-a-report">Modifying a report</a></li>
+<li><a class="reference external" href="#creating-a-new-report">Creating a new report</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#creating-common-headers-for-reports">Creating common headers for reports</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_workflow.html"
+                                  title="previous chapter">Configuring workflows and processes</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_import_export.html"
+                                  title="next chapter">Importing and exporting data</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_reports.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_import_export.html" title="Importing and exporting data"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" >Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_import_export.html" title="Importing and exporting data"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

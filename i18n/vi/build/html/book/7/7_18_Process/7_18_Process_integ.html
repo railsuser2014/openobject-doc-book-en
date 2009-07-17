@@ -1,0 +1,471 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The integration of processes into the management system &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Process" href="index.html" />
+    <link rel="next" title="Workflows and User Processes" href="7_18_Process_workflow.html" />
+    <link rel="prev" title="Process" href="index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="7_18_Process_workflow.html" title="Workflows and User Processes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Process"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Process and Document Management</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Process</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="7_18_Process_workflow.html" title="Workflows and User Processes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Process"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Process and Document Management</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Process</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">The integration of processes into the management system</a><ul>
+<li><a class="reference external" href="#examples-of-process">Examples of process</a></li>
+<li><a class="reference external" href="#following-a-customer-sales-order">Following a customer sales order</a></li>
+<li><a class="reference external" href="#new-employee-induction">New employee induction</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Process</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="7_18_Process_workflow.html"
+                                  title="next chapter">Workflows and User Processes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/7/7_18_Process/7_18_Process_integ.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="the-integration-of-processes-into-the-management-system">
+<span id="index-363"></span><h1>The integration of processes into the management system<a class="headerlink" href="#the-integration-of-processes-into-the-management-system" title="Permalink to this headline">¶</a></h1>
+<p>Processes are at the heart of a company: they form a structure for all
+activities that enable the company to function effectively. A company&#8217;s human
+dimension is often disconnected from its processes at the moment, preventing
+individual employees&#8217; aspirations from being directed towards a collective
+objective.</p>
+<p>From a mapping process, integrating management and the changing needs of each
+employee becomes very useful for the fulfillment of each. Based on that, each
+employee becomes aware of his own personal contribution to the company&#8217;s value
+chain. This representation also helps an employee&#8217;s own personal management
+because it shows his place and his role in the overall process, very often over
+several departments.</p>
+<p>The system of &#8216;Corporate Intelligence&#8217; will also be highly useful to system
+implementers who, after studying the requirements, have to formalize a
+company&#8217;s processes to put them into operation in Open ERP.</p>
+<div class="section" id="examples-of-process">
+<h2>Examples of process<a class="headerlink" href="#examples-of-process" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/examples-of-process" ></div><p>To understand the aims of the system of Corporate Intelligence (process)
+better, you&#8217;ll now see an overview of the functions available to you in a the study of
+two processes:</p>
+<ul class="simple">
+<li>A customer order quotation,</li>
+<li>The engagement of a new employee.</li>
+</ul>
+<span class="target" id="index-364"></span></div>
+<div class="section" id="following-a-customer-sales-order">
+<h2>Following a customer sales order<a class="headerlink" href="#following-a-customer-sales-order" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/following-a-customer-sales-order" ></div><p>The example <a class="reference internal" href="#fig-procquot"><em>Example of a process handling a customer order quotation</em></a> shows the process for handling a customer sales order. Use
+the menu <em>Sales Management ‣ Sales Orders</em> to list all orders, then choose
+Order SO001 – you can either check the checkbox to its left, or you can open
+the order itself by clicking the order date to the left of its name in the
+list.</p>
+<p>To view the process for that specific order, click the <strong>Process</strong> button at the
+top right of the list or form. The process for this order is shown in the
+window, and the current state of this document can be seen by looking for the
+node whose left edge is colored maroon rather than grey.</p>
+<div align="center" class="figure" id="fig-procquot">
+<a class="reference external image-reference" href="../../../_images/process_quotation_flow.png"><img alt="../../../_images/process_quotation_flow.png" src="../../../_images/process_quotation_flow.png" style="width: 799.5px; height: 498.75px;" /></a>
+<p class="caption"><em>Example of a process handling a customer order quotation</em></p>
+</div>
+<p>This order is in the Quotation state. The whole of some nodes is greyed out
+because the selected document will never enter into that state, such as
+invoicing based on deliveries (the order is in an invoicing mode that&#8217;s based
+on orders, not deliveries).</p>
+<p>The process is completely dynamic and based on that specific sale order
+document. You can click each of the process nodes (<strong>Quotation</strong>, <strong>Sale Order</strong>,
+<strong>Procurement</strong>, <strong>Draft Invoice</strong>, <strong>Outgoing Products</strong>) using one of the
+links or icons
+on it:</p>
+<ul class="simple">
+<li>Obtaining the documentation and the corresponding process in the quality manual, using the
+<strong>Help</strong> (or <strong>Information</strong>) icon,</li>
+<li>Opening the corresponding Open ERP document, using the <strong>Open</strong> icon,</li>
+<li>Printing the document, using the <strong>Print</strong> icon,</li>
+<li>Printing the technical workflow by using the Gears (or <strong>Print Workflow</strong>) icon.</li>
+<li>Obtaining the documents that an employee needs to carry out the process by clicking the green
+arrow icon,</li>
+<li>Seeing the menu that Open ERP uses to get the document by hovering over the green arrow icon.</li>
+</ul>
+<p>Returning to the process diagram, note that you can also get more information
+about the transitions between nodes by hovering the mouse cursor over a
+transition:</p>
+<ul class="simple">
+<li>A description of the transition,</li>
+<li>A list of the roles that can carry out the transition,</li>
+<li>The actions available to you from the state.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/process_transition_zoom.png"><img alt="../../../_images/process_transition_zoom.png" src="../../../_images/process_transition_zoom.png" style="width: 510.75px; height: 496.5px;" /></a>
+<p class="caption"><em>Detail of a transition in the process</em></p>
+</div>
+<p>Confirm quotation SO001 by clicking on the icon of a person beside the
+maroon-colored transition that takes the document from quotation to order.
+Then click the <strong>Confirm</strong> button. The process automatically moves on to the next
+state and updates its references to some new delivery reservations that you&#8217;ve
+just created (see the third tab <strong>History</strong> for a reference to the Packing List
+PACK13).</p>
+<p>This dynamic response is extremely useful for learning about the software. It
+gives you a high-level view of the different actions carried out and their
+results.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/process_sale_flow.png"><img alt="../../../_images/process_sale_flow.png" src="../../../_images/process_sale_flow.png" style="width: 525.0px; height: 498.75px;" /></a>
+<p class="caption"><em>The process after confirming a process into an order</em></p>
+</div>
+<p>During order processing, the salesperson can quickly:</p>
+<ul class="simple">
+<li>Print the corresponding delivery note,</li>
+<li>Zoom into the invoice to see payment details,</li>
+<li>Get examples of the necessary documents (such as quotation types, export documents, and fax
+to confirm the order with the customer).</li>
+</ul>
+<p>Create a draft invoice by starting the next step on your own.</p>
+<p>It should be clear that this system of user processes gives you great
+visibility of the company&#8217;s overall functions. Each process individually
+reflects the specific situation of the company and its documents.</p>
+<span class="target" id="index-365"></span></div>
+<div class="section" id="new-employee-induction">
+<h2>New employee induction<a class="headerlink" href="#new-employee-induction" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/new-employee-induction" ></div><p>Open the employee form for Fabien Pinckaers from the menu
+<em>Human Resources ‣ Employees ‣ All Employees</em>.
+Click the <strong>Process</strong> button to open the detailed
+process of engagement.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/process_employee_flow.png"><img alt="../../../_images/process_employee_flow.png" src="../../../_images/process_employee_flow.png" style="width: 516.0px; height: 594.0px;" /></a>
+<p class="caption"><em>Example of a process engaging a new employee</em></p>
+</div>
+<p>You can immediately see things that might interest the HR manager. On a single
+screen she has all of the documents about the selected employee. She can then
+zoom into each document to look at employee holidays, associated documents, or
+the user account in the system.</p>
+<p>It&#8217;s also a great help for day-to-day management. When a new employee is
+engaged, an HR manager - or anyone else with a suitable role - can complete each
+node in the corresponding process, such as:</p>
+<ul class="simple">
+<li>Entering his address,</li>
+<li>Creating his user account in the system,</li>
+<li>Sending any mandatory employment documents to the relevant government departments,</li>
+<li>Declaring the required insurance documents,</li>
+<li>Setting meal preferences, perhaps,</li>
+<li>Entering statutory public holidays into the system.</li>
+</ul>
+<p>You can click on each node to open the corresponding form in Open ERP. Some
+actions aren&#8217;t owned by Open ERP, such as contacts with government offices and
+insurance companies. In this case click on the document icon to get the
+documents to be completed and posted or faxed to the institutions:</p>
+<ul class="simple">
+<li>Fax for insurance declarations,</li>
+<li>Statutary forms for government departments.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/process_document.png"><img alt="../../../_images/process_document.png" src="../../../_images/process_document.png" style="width: 516.0px; height: 594.0px;" /></a>
+<p class="caption"><em>Example of a process required for the declarations for a new employee</em></p>
+</div>
+<p>The system of <em>Corporate Intelligence</em> gives you a complete overview of all the
+company&#8217;s processes. So if you click on the node to the left it will start the
+recruitment process of selecting and interviewing new employees if the
+necessary modules have been installed.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">The integration of processes into the management system</a><ul>
+<li><a class="reference external" href="#examples-of-process">Examples of process</a></li>
+<li><a class="reference external" href="#following-a-customer-sales-order">Following a customer sales order</a></li>
+<li><a class="reference external" href="#new-employee-induction">New employee induction</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Process</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="7_18_Process_workflow.html"
+                                  title="next chapter">Workflows and User Processes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/7/7_18_Process/7_18_Process_integ.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="7_18_Process_workflow.html" title="Workflows and User Processes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Process"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Process and Document Management</a> &raquo;</li>
+          <li><a href="index.html" >Process</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="7_18_Process_workflow.html" title="Workflows and User Processes"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Process"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Process and Document Management</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Process</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

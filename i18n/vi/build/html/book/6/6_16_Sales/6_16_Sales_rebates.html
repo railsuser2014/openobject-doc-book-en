@@ -1,0 +1,381 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Rebates at the end of a campaign &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Management of Sales" href="index.html" />
+    <link rel="next" title="Open orders" href="6_16_Sales_open.html" />
+    <link rel="prev" title="Price management policies" href="6_16_Sales_pricing.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_open.html" title="Open orders"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_pricing.html" title="Price management policies"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_open.html" title="Open orders"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_pricing.html" title="Price management policies"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Rebates at the end of a campaign</a><ul>
+<li><a class="reference external" href="#example-using-returns-for-the-end-of-a-campaign">Example: Using returns for the end of a campaign</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="6_16_Sales_pricing.html"
+                                  title="previous chapter">Price management policies</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="6_16_Sales_open.html"
+                                  title="next chapter">Open orders</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/6/6_16_Sales/6_16_Sales_rebates.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="rebates-at-the-end-of-a-campaign">
+<h1>Rebates at the end of a campaign<a class="headerlink" href="#rebates-at-the-end-of-a-campaign" title="Permalink to this headline">¶</a></h1>
+<p>If you want to provide discounts on an order, use the pricelist system in Open ERP. But it&#8217;s better
+to work with end-of-campaign rebates or year-end rebates. In this case the customer pays a certain
+price for the whole of the campaign or the year and a rebate is returned to him at the end of the
+campaign that depends on the sales he&#8217;s made throughout the year.</p>
+<div class="section" id="example-using-returns-for-the-end-of-a-campaign">
+<h2>Example: Using returns for the end of a campaign<a class="headerlink" href="#example-using-returns-for-the-end-of-a-campaign" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/example-using-returns-for-the-end-of-a-campaign" ></div><p>Take the case of a contract negotiations with a wholesaler. To get the best selling price, the
+wholesaler will ask you for a good deal and will sign up to a certain volume of orders over
+the year.</p>
+<p>You can then propose a price based on the volume that the wholesaler agrees to sell. But then you
+don&#8217;t have any control over his orders. If at the end of the year the wholesaler hasn&#8217;t taken the
+agreed volumes then you can&#8217;t do anything. At most you can review his terms for the following year.</p>
+<p>Rebates at the end of a campaign can help you avoid this sort of problem. You can propose a contract
+where the price is dependent on the usual wholesaler&#8217;s terms. You can propose a rebate grid which
+will be assigned at the end of the year as a function of the actual sales made.</p>
+<span class="target" id="index-345"></span><p>Install the <a title="Discount on Marketing Campaigns" class="reference external" href="../../../technical_guide/discount_campaign.html#module-discount_campaign"><tt class="xref docutils literal"><span class="pre">discount_campaign</span></tt></a> module (in <tt class="docutils literal"><span class="pre">addons-extra</span></tt> at the time of writing)
+to generate rebates at the end of the campaign. Once
+the modules have been installed you can configure your campaign using the menu <em>Sales
+Management ‣ Configuration ‣ Discount campaign</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Year-end rebate</p>
+<p class="last">Most companies use the term <em>year-end rebate</em>, where rebates are applied at the end of the year.
+But if you&#8217;re using rebates at the end of a campaign,
+this would only actually be the case if the campaign lasts exactly one year.</p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/discount_campaign_RFA.png"><img alt="../../../_images/discount_campaign_RFA.png" src="../../../_images/discount_campaign_RFA.png" style="width: 550.5px; height: 371.25px;" /></a>
+<p class="caption"><em>Configuring a year-end rebate</em></p>
+</div>
+<p>A campaign must have a name, a start date, and an end date. After entering this information, you
+should describe the lines of the campaign. Each line can be applied to a product or a category of
+products. Then set the quantity of products sold from which the discount is applied, and the amount
+of the rebate as a percentage of the actual sales volume.</p>
+<p>When you&#8217;ve defined the campaign you can active it by clicking the <strong>Open</strong> button. The
+figure <a class="reference internal" href="#fig-discamp"><em>Configuring a discount campaign for computers</em></a> shows a campaign with a rebate on computers which is between 10% and 20% depending on
+the sales volume.</p>
+<div align="center" class="figure" id="fig-discamp">
+<a class="reference external image-reference" href="../../../_images/discount_campaign.png"><img alt="../../../_images/discount_campaign.png" src="../../../_images/discount_campaign.png" style="width: 550.5px; height: 371.25px;" /></a>
+<p class="caption"><em>Configuring a discount campaign for computers</em></p>
+</div>
+<p>Once the campaign has been defined you can assign a given campaign to various partners. To do that
+set a <strong>Discount Campaign</strong> in the second tab <strong>Sales and Purchases</strong> of the partner form.</p>
+<p>Finally at the end of the campaign you should close it and Open ERP will automatically generate
+invoices or credit notes for your partner associated with this campaign. Open ERP opens credit
+notes in the <tt class="docutils literal"><span class="pre">Draft</span></tt> state that you can modify before validating them. To calculate the amount on the
+credit note, Open ERP uses all of the invoices sent out during the period of the campaign as its
+basis.</p>
+<p>You can also reach all of the draft credit notes using the menu <em>Financial Management
+‣ Invoices ‣ Customer Refunds</em>.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Rebates at the end of a campaign</a><ul>
+<li><a class="reference external" href="#example-using-returns-for-the-end-of-a-campaign">Example: Using returns for the end of a campaign</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="6_16_Sales_pricing.html"
+                                  title="previous chapter">Price management policies</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="6_16_Sales_open.html"
+                                  title="next chapter">Open orders</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/6/6_16_Sales/6_16_Sales_rebates.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_open.html" title="Open orders"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_pricing.html" title="Price management policies"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" >Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_open.html" title="Open orders"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_pricing.html" title="Price management policies"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

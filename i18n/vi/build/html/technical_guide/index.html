@@ -1,0 +1,770 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module Technical Guide: Introspection report on objects &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="next" title="Accounting and financial management (account)" href="account.html" />
+    <link rel="prev" title="Troubleshooting and Windows Complementary Install Information" href="../install/windows/server/complementary_install_information.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="account.html" title="Accounting and financial management (account)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../install/windows/server/complementary_install_information.html" title="Troubleshooting and Windows Complementary Install Information"
+             accesskey="P">previous</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="account.html" title="Accounting and financial management (account)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../install/windows/server/complementary_install_information.html" title="Troubleshooting and Windows Complementary Install Information"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../install/windows/server/complementary_install_information.html"
+                                  title="previous chapter">Troubleshooting and Windows Complementary Install Information</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="account.html"
+                                  title="next chapter">Accounting and financial management (<em>account</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-technical-guide-introspection-report-on-objects">
+<span id="module-technical-guide-link"></span><h1>Module Technical Guide: Introspection report on objects<a class="headerlink" href="#module-technical-guide-introspection-report-on-objects" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="account.html">Accounting and financial management (<em>account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_analytic_analysis.html">report_account_analytic (<em>account_analytic_analysis</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_analytic_default.html">Account Analytic Default (<em>account_analytic_default</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_analytic_package.html">account_analytic_package (<em>account_analytic_package</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_analytic_plans.html">Multiple-plans management in Analytic Accounting (<em>account_analytic_plans</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_analytic_progress.html">account_analytic_progress (<em>account_analytic_progress</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_asset.html">Asset management (<em>account_asset</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_balance.html">Accounting and financial management-Compare Accounts (<em>account_balance</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_bankimport.html">Account Bankimport (<em>account_bankimport</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_base.html">Voucher-setup (<em>account_base</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_bob_import.html">Import accounting entries from Bob (<em>account_bob_import</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_budget.html">Budget Management (<em>account_budget</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_cash_discount.html">Payement Term with Cash Discount (<em>account_cash_discount</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_chart.html">Charts of Accounts (<em>account_chart</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_coda.html">Account CODA (<em>account_coda</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_coda_2_1_d.html">Account CODA Version 2.1 D (<em>account_coda_2_1_d</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_date_check.html">Account Date check (<em>account_date_check</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_followup.html">Accounting follow-ups management (<em>account_followup</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_india.html">Indian Accounting and financial management (<em>account_india</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice.html">India Accounting (<em>account_invoice</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_analytic_required.html">Account invoice analytic required (<em>account_invoice_analytic_required</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_india.html">Accounting Base Configuration and Properties (<em>account_invoice_india</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_layout.html">account_invoice_layout (<em>account_invoice_layout</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_number.html">account_invoice_number (<em>account_invoice_number</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_payment_term.html">Invoice with payment term lines (<em>account_invoice_payment_term</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_invoice_salesman.html">Salesman on invoices (<em>account_invoice_salesman</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_journal_visibility.html">Accounting journal visibility (<em>account_journal_visibility</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_l10nbe_domiciliation.html">Account l10nbe Domiciliation (<em>account_l10nbe_domiciliation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_multicompany.html">Account For Multicompany (<em>account_multicompany</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_payment.html">Payment Management (<em>account_payment</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_payment_export.html">Payment Order Export (<em>account_payment_export</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_payment_extension.html">Account Payment Extension (<em>account_payment_extension</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_regularization.html">Account Regularizations (<em>account_regularization</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_report.html">Reporting for accounting (<em>account_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_report_india.html">Indian Accounting and financial management (<em>account_report_india</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_reporting.html">Reporting of Balancesheet for accounting (<em>account_reporting</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_reports_india.html">Accounting Reports - Indian Accounting (<em>account_reports_india</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_reverse.html">Account Move Reverse (<em>account_reverse</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_simulation.html">Accounting simulation journal (<em>account_simulation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_stock.html">Account Stock (<em>account_stock</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_tax_include.html">Invoices and prices with taxes included (<em>account_tax_include</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_voucher.html">India Accounting (<em>account_voucher</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_voucher_payment.html">Invoice Payment through Voucher (<em>account_voucher_payment</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="account_voucher_workflow.html">Accounting - Voucher Management Business Process (<em>account_voucher_workflow</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="airport.html">Airport (<em>airport</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="alerts.html">Generic alerts (<em>alerts</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="analytic_journal_billing_rate.html">Analytic Journal Billing Rate (<em>analytic_journal_billing_rate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="analytic_partners.html">Analytic accounts with multiple partners (<em>analytic_partners</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="analytic_user_function.html">Analytic User Function (<em>analytic_user_function</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="asterisk.html">Asterisk (<em>asterisk</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="auction.html">Auction module (<em>auction</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="audittrail.html">Audit Trail (<em>audittrail</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="auto_email_account.html">Email Invoice (<em>auto_email_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="auto_email_sale.html">Email Sale order (<em>auto_email_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="auto_email_stock.html">Auto Email Stock Picking (<em>auto_email_stock</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base.html">Base (<em>base</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_contact.html">Base Contact (<em>base_contact</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_contact.html">Base Contact (<em>base_contact</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_contact_city.html">City for base_contact (<em>base_contact_city</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_contact_team.html">Base Contact Team (<em>base_contact_team</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_create_menu.html">Menu Wizard  (<em>base_create_menu</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_crypt.html">Base (<em>base_crypt</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_iban.html">IBAN (<em>base_iban</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_language.html">Base Language (<em>base_language</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_module_doc_rst.html">Module Technical Guide in Restructured Text  (<em>base_module_doc_rst</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_module_merge.html">Module Merger (<em>base_module_merge</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_module_publish.html">Module publisher (<em>base_module_publish</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_module_quality.html">Base module quality (<em>base_module_quality</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_module_record.html">Module Recorder (<em>base_module_record</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_partner_gender.html">Base Partner Gender (<em>base_partner_gender</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_partner_relation.html">Partners - relation extension (<em>base_partner_relation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_partner_security.html">Restrict access to partners by categories (<em>base_partner_security</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_partner_sequence.html">Add an automatic sequence on partners (<em>base_partner_sequence</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_partner_surname.html">Base Partner Surname (<em>base_partner_surname</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_report_creator.html">Report Creator (<em>base_report_creator</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_report_designer.html">Report designer interface module (<em>base_report_designer</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_report_model.html">Base Report Model (<em>base_report_model</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_report_unicode.html">Unicode Reports with TrueType fonts (<em>base_report_unicode</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_setup.html">Base Setup (<em>base_setup</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_translation.html">Translation (<em>base_translation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_url_menu.html">Url Menus (<em>base_url_menu</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_vat.html">VAT (<em>base_vat</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="base_vat_unique.html">Base VAT Unique (<em>base_vat_unique</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board.html">Dashboard main module (<em>board</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_account.html">Board for accountant (<em>board_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_association.html">Dashboard for Associations (<em>board_association</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_auction.html">Board for Auction (<em>board_auction</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_crm_configuration.html">Dashboard for CRM Configuration (<em>board_crm_configuration</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_dm.html">Board for DM users (<em>board_dm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_document.html">Dashboard for Document Management (<em>board_document</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_frontdesk.html">Board for Hotel FrontDesk (<em>board_frontdesk</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_manufacturing.html">Board for manufacturing (<em>board_manufacturing</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_project.html">Board for project users (<em>board_project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_reservation.html">Board for Hotel Reservation (<em>board_reservation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_restaurant.html">Board for Hotel Restaurant users (<em>board_restaurant</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_sale.html">Dashboard for sales (<em>board_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="board_service.html">Dashboard for Service Profile (<em>board_service</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="bookstore.html">Bookstore Verticalisation (<em>bookstore</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="business.html">Module business (<em>business</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_account_payment.html">Account Payment (<em>c2c_account_payment</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_analytic.html">Fonctions standads C2C pour account analytic (<em>c2c_analytic</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_analytic_chart.html">Rapport sur le plan comptable analytique (<em>c2c_analytic_chart</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_analytic_wizard.html">Analytic wizard and tools for services companies (<em>c2c_analytic_wizard</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_base_account.html">Fonctions standads C2C pour base et account (<em>c2c_base_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_budget.html">Advanced Budget (<em>c2c_budget</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_contact_to_ldap.html">Camptocamp Partner extension to synchronize TinyERP with ldap (<em>c2c_contact_to_ldap</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_correct_invoice.html">Invoice Correcting (<em>c2c_correct_invoice</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_crm_reporting.html">CRM Reporting (<em>c2c_crm_reporting</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_currency_rate_update.html">Currency Rate Update (<em>c2c_currency_rate_update</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_expense.html">Fonctions standads C2C pour expense (<em>c2c_expense</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_finance_report.html">Finanacial report improvments (<em>c2c_finance_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_finance_report_extended.html">Finanacial report improvments (<em>c2c_finance_report_extended</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_fiscal_year_close.html">c2c close fiscal year (<em>c2c_fiscal_year_close</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_holidays_import.html">Holidays import in timesheet (<em>c2c_holidays_import</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_holidays_report.html">Holidays Report (<em>c2c_holidays_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_hours_blocks.html">C2C Hours Blocks (<em>c2c_hours_blocks</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_hr_timesheet_sheet.html">Fonctions standads C2C pour timsheet (<em>c2c_hr_timesheet_sheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_invoice_layer.html">C2C Invoice Layer (<em>c2c_invoice_layer</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_multi_currency_expense.html">Multi currency expenses (<em>c2c_multi_currency_expense</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_multicurrency_journal.html">Auto currency computation in journal (<em>c2c_multicurrency_journal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_orphans_accounts_checker.html">Show orphans accounts (<em>c2c_orphans_accounts_checker</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_partner_address.html">C2C partner address (<em>c2c_partner_address</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_planning_management.html">Planning management (<em>c2c_planning_management</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_project_activities.html">Project activities (<em>c2c_project_activities</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_reporting_tools.html">c2c Reporting Tools. A library that provide a new way to create clean reports efficiently (<em>c2c_reporting_tools</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_scan_bvr.html">Wizard to Scan BVR for Invoice (<em>c2c_scan_bvr</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_stock_obsolete.html">Stock obsolete (<em>c2c_stock_obsolete</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_timesheet_reports.html">Timesheet Reports (<em>c2c_timesheet_reports</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="c2c_translation_synchro.html">Translation synchronisation (<em>c2c_translation_synchro</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="catalog.html">Module Catalogue (<em>catalog</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_account.html">CCI Account (<em>cci_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_audittrail.html">Audit Trail (<em>cci_audittrail</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_base_contact.html">CCI Base Contact (<em>cci_base_contact</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_country.html">CCI Country (<em>cci_country</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_crm.html">CCI CRM (<em>cci_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_crm_profile.html">CCI CRM Profile (<em>cci_crm_profile</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_data_csv.html">cci Data 1 (<em>cci_data_csv</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_event.html">CCI EVENT (<em>cci_event</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_membership.html">CCI Membership (<em>cci_membership</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_mission.html">CCI mission (<em>cci_mission</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_partner.html">CCI Partner (<em>cci_partner</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_purchase.html">CCI Purchase (<em>cci_purchase</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_sales.html">CCI Sales (<em>cci_sales</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_security.html">CCI Security (<em>cci_security</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_timesheet.html">CCI Timesheet (<em>cci_timesheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="cci_translation.html">CCI Translation (<em>cci_translation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="chemical.html">Module for Chemical Industries (<em>chemical</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="chricar_partner_parent_companies.html">Partner Parent Companies (<em>chricar_partner_parent_companies</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="chricar_product_gtin.html">Product GTIN EAN8 EAN13 UPC JPC Support (<em>chricar_product_gtin</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="chricar_product_image.html">Product Image (<em>chricar_product_image</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="city.html">City (<em>city</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="commission_pricelist.html">Sale agent Information (<em>commission_pricelist</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="commission_rate.html">Sale Agent Information (<em>commission_rate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="comparison.html">ERP Comparisons (<em>comparison</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm.html">Customer &amp; Supplier Relationship Management (<em>crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm_configuration.html">Customer Relationship Management (<em>crm_configuration</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm_livechat.html">CRM - Livechat Jabber Client (<em>crm_livechat</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm_profiling.html">crm_profiling management (<em>crm_profiling</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm_telemarketing.html">Telemarketing Management (<em>crm_telemarketing</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="crm_vertical.html">CRM Verticalisation (<em>crm_vertical</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="currency_rate.html">Currency Rates (<em>currency_rate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="custom.html">Module for custom developments (<em>custom</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="delivery.html">Carriers and deliveries (<em>delivery</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="demo_setup.html">Online Demo Setup Module (<em>demo_setup</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="discount_campaign.html">Discount on Marketing Campaigns (<em>discount_campaign</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm.html">Direct Marketing (<em>dm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_base_contact.html">Base Contact extension For DM (<em>dm_base_contact</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_crm.html">Direct Marketing For CRM (<em>dm_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_email.html">Direct Marketing For Emails (<em>dm_email</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_emailvision.html">Direct Marketing For EmailVision (<em>dm_emailvision</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_lead.html">Direct Marketing For Leads (<em>dm_lead</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_partner_address.html">Partner Address Extension For DM (<em>dm_partner_address</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_simulator.html">Simulation (<em>dm_simulator</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="dm_website.html">Direct Marketing For Web Site (<em>dm_website</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document.html">Integrated Document Management System (<em>document</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document_extension.html">Extension Module of Document Management System (<em>document_extension</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document_ics.html">Support for iCal based on Document Management System (<em>document_ics</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document_rule.html">Extension Module of Document Management System (<em>document_rule</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document_sftp.html">Integrated Document Management System using paramiko lib (<em>document_sftp</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="document_webdav_old.html">Integrated Document Management System (<em>document_webdav_old</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="ecommerce.html">E-Commerce (<em>ecommerce</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="ecotaxe.html">Module for &#8216;Eco participation&#8217; (<em>ecotaxe</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="edi.html">EDI (<em>edi</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="email_account.html">Email Invoice (<em>email_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="email_sale.html">Email Sale order (<em>email_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="esale_ez.html">EZ Publish eCommerce Interface (<em>esale_ez</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="esale_joomla.html">eSale Interface - Joomla (<em>esale_joomla</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="esale_osc.html">OScommerce Interface / ZenCart (<em>esale_osc</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="etl_interface.html">ETL system (<em>etl_interface</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="event.html">Event (<em>event</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="event_project.html">Event - Project (<em>event_project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="fashion.html">Tiny TERP fashion module (<em>fashion</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="flagey.html">Auction module - Flagey Customs (<em>flagey</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="fleet_maintenance.html">Help managing maintenance contracts related to product fleet (<em>fleet_maintenance</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="fleet_manager.html">Fleet Management System (<em>fleet_manager</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="game_scenario.html">Scenario of games (<em>game_scenario</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="gnucash.html">gnucash (<em>gnucash</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="google_blogger.html">Google Blogger (<em>google_blogger</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="google_calendar.html">Google calendar (<em>google_calendar</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="google_earth.html">Google Earth/Map Module (<em>google_earth</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="google_map.html">Google Map (<em>google_map</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="google_translate.html">Google translation (<em>google_translate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="health.html">Tiny TERP Health Management (<em>health</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hnm_heofax.html">HeoFAX (<em>hnm_heofax</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hotel.html">Hotel Management (<em>hotel</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hotel_housekeeping.html">Hotel Housekeeping (<em>hotel_housekeeping</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hotel_reservation.html">Hotel Reservation (<em>hotel_reservation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hotel_restaurant.html">Hotel Restaurant (<em>hotel_restaurant</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr.html">Human Resources (<em>hr</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_attendance.html">Attendances Of Employees (<em>hr_attendance</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_contract.html">Human Resources Contracts (<em>hr_contract</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_contract_available.html">Human Resources Contracts (<em>hr_contract_available</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_contract_timesheet.html">Human Resources Timesheets on contracts (<em>hr_contract_timesheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_evaluation.html">Human Resources Evaluation (<em>hr_evaluation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_expense.html">Human Resources Expenses Tracking (<em>hr_expense</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_holidays.html">Human Resources: Holidays management (<em>hr_holidays</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_holidays_cci.html">Human Resources: Holidays management (<em>hr_holidays_cci</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_holidays_evaluation.html">Hr holidays evaluation (<em>hr_holidays_evaluation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_holidays_request.html">HR Holiday Request (<em>hr_holidays_request</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_medical.html">Human Resources Medical Exam (<em>hr_medical</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_performance.html">Performance Review (<em>hr_performance</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_skill.html">Skill Management (<em>hr_skill</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_timesheet.html">Human Resources (Timesheet encoding) (<em>hr_timesheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_timesheet_ical.html">Complete timesheet from an iCal server (<em>hr_timesheet_ical</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_timesheet_invoice.html">Invoice on analytic lines (<em>hr_timesheet_invoice</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_timesheet_project.html">Human Resources (Timesheet encoding from project tasks) (<em>hr_timesheet_project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="hr_timesheet_sheet.html">Timesheets (<em>hr_timesheet_sheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="huissier.html">Tiny ERP Huissiers (<em>huissier</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="idea.html">Idea Manager (<em>idea</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="import_export.html">Import Export (<em>import_export</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="invoice_numbering.html">Invoice Numbering (<em>invoice_numbering</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="invoice_sequence.html">Invoice lines with sequence number (<em>invoice_sequence</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_be.html">Belgium - Plan Comptable Minimum Normalise (<em>l10n_be</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ca-qc.html">Canada - Quebec Chart of Accounts (<em>l10n_ca-qc</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch.html">Switzerland localisation corrected by Camptocamp (<em>l10n_ch</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_at.html">Austria - Chart of Accounts (<em>l10n_chart_at</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_au.html">Australia - Chart of Accounts (<em>l10n_chart_au</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_be_frnl.html">Belgium - French &amp; Dutch (<em>l10n_chart_be_frnl</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_br.html">Brazil - Chart of Accounts (<em>l10n_chart_br</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_ca_en.html">Canadian - English - Chart of Accounts (<em>l10n_chart_ca_en</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_ca_fr.html">Canadian - French - Chart of Acounts (<em>l10n_chart_ca_fr</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_ch_german.html">Switzerland - German Chart of Accounts (<em>l10n_chart_ch_german</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_cn.html">China - Chart of Accounts (<em>l10n_chart_cn</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_cn_traditional.html">China Traditional - Chart of Account (<em>l10n_chart_cn_traditional</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_co.html">Colombia - Chart of Accounts (<em>l10n_chart_co</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_cz.html">Czech Republic - Chart of Accounts (<em>l10n_chart_cz</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_da.html">Denmark Chart of Accounts (<em>l10n_chart_da</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_de_skr03.html">German - SKR03 Chart of Accounts (<em>l10n_chart_de_skr03</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_hu.html">Hungary - Chart of Accounts (<em>l10n_chart_hu</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_in.html">India (<em>l10n_chart_in</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_it.html">Italy - Chart of Accounts (<em>l10n_chart_it</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_it_cc2424.html">Italy - CC2424 - Chart of Accounts (<em>l10n_chart_it_cc2424</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_lv.html">Latvia - Chart of Accounts (<em>l10n_chart_lv</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_nl.html">Netherlands - Chart of Accounts (<em>l10n_chart_nl</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_nl_standard.html">Netherlands - Standard Chart of Account (<em>l10n_chart_nl_standard</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_no.html">Norway - Chart of Accounts (<em>l10n_chart_no</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_pa.html">Panama - Chart of Account (<em>l10n_chart_pa</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_pl.html">Poland - Chart of Accounts (<em>l10n_chart_pl</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_se.html">Sweden - Chart of Accounts (<em>l10n_chart_se</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_se_church.html">Sweden - Church Chart of Account (<em>l10n_chart_se_church</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_se_food.html">Sweden - Food industries - Chart of Accounts (<em>l10n_chart_se_food</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_sp.html">Spain - Chart of Account (<em>l10n_chart_sp</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_uk.html">United Kingdom Chart of Accounts (<em>l10n_chart_uk</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_uk_minimal.html">United Kingdom - minimal (<em>l10n_chart_uk_minimal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_us_general.html">United States - Chart of Accounts for General Profile (<em>l10n_chart_us_general</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_us_manufacturing.html">United States - Chart of Accounts for Manufacturing Profile (<em>l10n_chart_us_manufacturing</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_us_service.html">United States - Chart of Accounts for Services (<em>l10n_chart_us_service</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_us_ucoa.html">United States - Chart of Accounts for UCOA (<em>l10n_chart_us_ucoa</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_us_ucoa_ez.html">United States -Chart of Accounts for UCOA EZ Profile (<em>l10n_chart_us_ucoa_ez</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_chart_ve.html">Venezuela -Chart of Account (<em>l10n_chart_ve</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_chart_c2c_pcg.html">Suisse - Plan comptable general pour PME STERCHI (<em>l10n_ch_chart_c2c_pcg</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_pcg.html">Plan comptable général pour les PME (<em>l10n_ch_pcg</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_vat_brut.html">Switzerland - VAT Brut (<em>l10n_ch_vat_brut</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_vat_forfait.html">Switzerland - VAT Forfait (<em>l10n_ch_vat_forfait</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_vat_net.html">Switzerland - VAT Net (<em>l10n_ch_vat_net</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ch_zip_and_bank.html">Switzerland localisation bank and zip data Camptocamp (<em>l10n_ch_zip_and_bank</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr.html">France - Plan Comptable Général (<em>l10n_fr</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr_account_generation.html">France - Generation de compte comptable tiers (<em>l10n_fr_account_generation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr_export.html">France - Export ecritures (<em>l10n_fr_export</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr_pcg.html">France - Plan Comptable Général (<em>l10n_fr_pcg</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr_tva_franchise.html">France - Franchise de TVA (ex: Micro Entreprise, etc.) (<em>l10n_fr_tva_franchise</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_fr_tva_reel.html">France - Régime réel de TVA (<em>l10n_fr_tva_reel</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_lu.html">Luxembourg - Plan Comptable Minimum Normalise (<em>l10n_lu</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_ma.html">Maroc Plan comptable général pour les sociétés (<em>l10n_ma</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="l10n_simple.html">Simple Account Chart (<em>l10n_simple</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="label.html">Partner labels (<em>label</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="library.html">Library (<em>library</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="loan.html">Loan Management (<em>loan</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="lunch.html">Lunch Module (<em>lunch</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="magento_openerp_synchro.html">Magento Synchro Smile (<em>magento_openerp_synchro</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="maintenance_editor.html">Maintenance Editor (<em>maintenance_editor</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="marketing.html">Marketing Campaigns (<em>marketing</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="md_hr_contract.html">Pilot Human Resource Management (<em>md_hr_contract</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="md_hr_course.html">Pilot Human Resources (<em>md_hr_course</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="md_hr_employee.html">Pilot Human Resources (<em>md_hr_employee</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="membership.html">Membership (<em>membership</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="membership_card.html">Membership card (<em>membership_card</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="merge_picking.html">Merge Picking (<em>merge_picking</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp.html">Manufacturing Resource Planning (<em>mrp</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_bom_customization.html">BoM Customization (<em>mrp_bom_customization</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_jit.html">MRP JIT (<em>mrp_jit</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_operations.html">Workcenter Production start end workflow (<em>mrp_operations</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_prodlot_autosplit.html">Unique serial number management management:  (<em>mrp_prodlot_autosplit</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_production_report.html">Production Report (<em>mrp_production_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_repair.html">Products Repairs Module (<em>mrp_repair</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="mrp_subproduct.html">MRP Sub Product (<em>mrp_subproduct</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multi_company.html">Multi company base module (<em>multi_company</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multi_company_account.html">Multi company for accounting module (<em>multi_company_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multi_company_currency.html">Multi Currency for Multi Company (<em>multi_company_currency</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multi_company_hr_timesheet_sheet.html">Multi company Human Resources (Timesheet groups) (<em>multi_company_hr_timesheet_sheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multi_company_project.html">Multi company Project Management (<em>multi_company_project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="multilogin_portal.html">Multilogin portal (<em>multilogin_portal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="network.html">Network Management (<em>network</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="olap.html">olap (<em>olap</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="olap_crm.html">olap_crm (<em>olap_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="olap_extract.html">olap_extract (<em>olap_extract</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="olap_sale.html">olap_sale (<em>olap_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_credit.html">Partner Credit (<em>partner_credit</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_informations.html">Partner informations (<em>partner_informations</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_layout.html">Partner Layout (<em>partner_layout</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_ldap.html">Partner extension to synchronize TinyERP with ldap (<em>partner_ldap</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_nace.html">Partner NACE informations (<em>partner_nace</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="partner_spam.html">SMS and Email spam to partner (<em>partner_spam</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="personal_base.html">Personal Base (<em>personal_base</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="point_of_sale.html">Point Of Sale (<em>point_of_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal.html">Portal Management (<em>portal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal_account.html">Portal Management - Account (<em>portal_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal_analytic.html">Portal Management - Analytic Entries (<em>portal_analytic</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal_analytic_package.html">Portal Management - Analytic Entries (<em>portal_analytic_package</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal_sale.html">Portal Sale Management (<em>portal_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="portal_service.html">Portal Management - Service (<em>portal_service</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="pricing_policy.html">Pricing policy module (<em>pricing_policy</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="process.html">Enterprise Process (<em>process</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product.html">Products &amp; Pricelists (<em>product</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_catalog_report.html">Product Catalog (<em>product_catalog_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_code_category.html">Product code by Category (<em>product_code_category</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_electronic.html">Products Attributes &amp; Manufacturers (<em>product_electronic</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_expiry.html">Products date of expiry (<em>product_expiry</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_extended.html">Product extension to track sales and purchases (<em>product_extended</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_gtin.html">Product GTIN EAN UPC JPC Support (<em>product_gtin</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_hardware_revision.html">Product Hardware Revision (<em>product_hardware_revision</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_index.html">Manage indexes on products prices (<em>product_index</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="productivity_analysis.html">Productivity Analysis (<em>productivity_analysis</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_listprice_upgrade.html">Product listprice upgrade (<em>product_listprice_upgrade</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_loan.html">Product Loan - work in progress (<em>product_loan</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_lot_foundry.html">Products Lot Foundry (<em>product_lot_foundry</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_margin.html">Margins in Product (<em>product_margin</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_price_decay.html">Product Decay - work in progress (<em>product_price_decay</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_price_update.html">Product price update (<em>product_price_update</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_qt.html">Products &amp; Pricelists (<em>product_qt</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_search_reference.html">Products Search Reference (<em>product_search_reference</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_sequence.html">Product Sequence (<em>product_sequence</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_series.html">Partner Product Series (<em>product_series</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_size.html">Sizes of lots (width, length, thickness) (<em>product_size</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_tax_incl.html">Product Tax Include (<em>product_tax_incl</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_variant_configurator.html">Products with multi-level variants configurator (<em>product_variant_configurator</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_variant_multi.html">Products with multi-level variants (<em>product_variant_multi</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="product_visible_discount.html">Visible Discount Module (<em>product_visible_discount</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="produit_pharmaceutique.html">produit_pharmaceutique (<em>produit_pharmaceutique</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_account_india.html">Indian Accounting Profile (<em>profile_account_india</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_accounting.html">Accounting only profile (<em>profile_accounting</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_ampco.html">AMPCO profile (<em>profile_ampco</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_association.html">Association profile (<em>profile_association</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_auction.html">Auction house profile (<em>profile_auction</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_bi.html">Business Intelligence profile (<em>profile_bi</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_bookstore.html">Bookstore Profile (<em>profile_bookstore</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_business_game.html">Bussiness Game (<em>profile_business_game</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_cci.html">Profile Chamber of Commerce (<em>profile_cci</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_crm.html">CRM profile (<em>profile_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_dm.html">Direct Marketing profile (<em>profile_dm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_hotel.html">Hotel Management profile (<em>profile_hotel</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_indian_account.html">Indian Accounting (<em>profile_indian_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_manufacturing.html">Manufacturing industry profile (<em>profile_manufacturing</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="profile_service.html">Service company profile (<em>profile_service</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="proforma_followup.html">Pro-forma invoices and their payments Management (<em>proforma_followup</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project.html">Project Management (<em>project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project_contact.html">Project Contact Management (<em>project_contact</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project_gtd.html">Getting Things Done - Time Management Module (<em>project_gtd</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project_mrp.html">Project Management - MRP and Sale Integration (<em>project_mrp</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project_retro_planning.html">Project Retro planning (<em>project_retro_planning</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="project_timesheet.html">Project Timesheet (<em>project_timesheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase.html">Purchase Management (<em>purchase</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_analytic_plans.html">Purchase Analytic Distribution Management (<em>purchase_analytic_plans</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_approve.html">Approve PO automatically when confirmed. (<em>purchase_approve</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_confirm.html">Confirm all selected purchase order at once (<em>purchase_confirm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_delivery.html">Carriers and deliveries For Purchase Order (<em>purchase_delivery</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_discount.html">Purchase Order Lines With Discounts (<em>purchase_discount</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_journal.html">Managing sales and deliveries by journal (<em>purchase_journal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_number.html">Purchase Number (<em>purchase_number</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_tax_include.html">Purchases with taxes included (<em>purchase_tax_include</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="purchase_tender.html">Purchase - Purchase Tender (<em>purchase_tender</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="radiotv.html">Tiny ERP TV &amp; Radio Program Grid Module (<em>radiotv</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_account.html">Account Reporting - Reporting (<em>report_account</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic.html">Analytic Account Reporting (<em>report_analytic</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic2.html">report_analytic (<em>report_analytic2</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic_line.html">Analytic lines - Reporting (<em>report_analytic_line</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic_planning.html">Analytic planning - Reporting (<em>report_analytic_planning</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic_planning_delegate.html">Analytic planning - Delegation in the hierarchy (<em>report_analytic_planning_delegate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_analytic_planning_long_term.html">report_analytic_planning_long_term (<em>report_analytic_planning_long_term</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_auction.html">Auction Management - Reporting (<em>report_auction</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_crm.html">CRM Management - Reporting (<em>report_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_document.html">Document Management - Reporting (<em>report_document</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_hotel_reservation.html">Reservation Management - Reporting (<em>report_hotel_reservation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_hotel_restaurant.html">Restaurant Management - Reporting (<em>report_hotel_restaurant</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_intrastat.html">Intrastat Reporting - Reporting (<em>report_intrastat</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_mrp.html">MRP Management - Reporting (<em>report_mrp</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_project.html">Sales Management - Reporting (<em>report_project</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_purchase.html">Purchase Management - Reporting (<em>report_purchase</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_sale.html">Sales Management - Reporting (<em>report_sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_stock.html">Stock report (<em>report_stock</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_task.html">Report on tasks by user for projects (<em>report_task</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_timesheet.html">Timesheet - Reporting (<em>report_timesheet</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="report_timesheet_user.html">Report for timesheet (<em>report_timesheet_user</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="res_config.html">Res Config (<em>res_config</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="rollmanagement.html">Roll Management (<em>rollmanagement</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale.html">Sales Management (<em>sale</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_advertising.html">Sales: Avertising Sales (<em>sale_advertising</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_analytic_plans.html">Sales Analytic Distribution Management (<em>sale_analytic_plans</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_category.html">Sale Order Line With Categories (<em>sale_category</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_crm.html">Sale CRM Stuff (<em>sale_crm</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_delivery.html">Sale Delivery Planning (<em>sale_delivery</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_delivery_report.html">Print Delivery Order (<em>sale_delivery_report</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_expected_invoice_date.html">Sale Expected Invoice Date (<em>sale_expected_invoice_date</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_forecast.html">Sales Forecasts, goals and statistics (<em>sale_forecast</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_intercompany.html">Sale Inter-Company (<em>sale_intercompany</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_intercompany_auto.html">Sale Inter-Company - Fully Automatic (<em>sale_intercompany_auto</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_journal.html">Managing sales and deliveries by journal (<em>sale_journal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_layout.html">sale_layout (<em>sale_layout</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_margin.html">Margins in Sale Orders (<em>sale_margin</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_margin_delivery.html">Margins in Sale Delivery Lines (<em>sale_margin_delivery</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_numbers.html">Sale Number (<em>sale_numbers</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_payment.html">Sale payment type (<em>sale_payment</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_product_multistep_configurator.html">MultiStep Product Configurator (<em>sale_product_multistep_configurator</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_rebate.html">Sales Management extented with rebates (<em>sale_rebate</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_simple_pos.html">Very Simplified Point Of Sale (<em>sale_simple_pos</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sales_purchase_seq.html">Sales Purchase Sequence Management (<em>sales_purchase_seq</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sales_server_action.html">Sales Server Action (<em>sales_server_action</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_supplier_direct_delivery.html">Automates direct delivery between a supplier and a customer (<em>sale_supplier_direct_delivery</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_tax_include.html">Invoices and prices with taxes included (<em>sale_tax_include</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_wo_prices.html">Sales without prices (<em>sale_wo_prices</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sale_wo_production.html">Sales Without production (<em>sale_wo_production</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sandwich.html">Sandwich Module (<em>sandwich</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="scrum.html">Scrum, Agile Development Method (<em>scrum</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="sednacom_extras.html">Sednacom tools (<em>sednacom_extras</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="segmentation.html">segmentation management (<em>segmentation</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="smsclient.html">SMS Client (<em>smsclient</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="smtpclient.html">Email Client (<em>smtpclient</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock.html">Stock Management (<em>stock</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock_invoice_directly.html">Invoice Picking Directly (<em>stock_invoice_directly</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock_location.html">Stock Location Paths (<em>stock_location</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock_no_autopicking.html">Stock No Auto-Picking (<em>stock_no_autopicking</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock_period.html">Stock periods (<em>stock_period</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="stock_planning.html">Master Procurement Schedule (<em>stock_planning</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="subscription.html">Subscription and recurring operations (<em>subscription</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="supplier_product.html">Supplier products list (<em>supplier_product</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="syleam_pos.html">Syleam POS (<em>syleam_pos</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="test_44.html">Test New Features (<em>test_44</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="test_server.html">Automated Tests &amp; Integration Server (<em>test_server</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="tiny_purchase.html">Tiny purchase (<em>tiny_purchase</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="travel.html">Travel (<em>travel</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="use_control.html">On Demand Open Object - Subscription Control (<em>use_control</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="users_ldap.html">Authenticate users with ldap server (<em>users_ldap</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="virustotal.html">Allow attachments to be checked via virustotal.com (<em>virustotal</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="warning.html">Module for Warnings form onchange Event (<em>warning</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="webmail.html">Webmail (<em>webmail</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="wiki.html">Document Management - Wiki (<em>wiki</em>)</a></li>
+<li class="toctree-l1"><a class="reference external" href="zarafa.html">Zarafa Integration (<em>zarafa</em>)</a></li>
+</ul>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../install/windows/server/complementary_install_information.html"
+                                  title="previous chapter">Troubleshooting and Windows Complementary Install Information</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="account.html"
+                                  title="next chapter">Accounting and financial management (<em>account</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="account.html" title="Accounting and financial management (account)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../install/windows/server/complementary_install_information.html" title="Troubleshooting and Windows Complementary Install Information"
+             >previous</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="account.html" title="Accounting and financial management (account)"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../install/windows/server/complementary_install_information.html" title="Troubleshooting and Windows Complementary Install Information"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

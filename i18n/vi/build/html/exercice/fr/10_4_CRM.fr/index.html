@@ -1,0 +1,432 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gestion de la relation clients &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Gestion de la relation clients</a><ul>
+<li><a class="reference external" href="#configuration-de-la-crm">Configuration de la CRM</a></li>
+<li><a class="reference external" href="#flux-crm">Flux CRM</a></li>
+<li><a class="reference external" href="#g-rer-avec-la-crm">Gérer avec la CRM</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/exercice/fr/10_4_CRM.fr/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="gestion-de-la-relation-clients">
+<h1>Gestion de la relation clients<a class="headerlink" href="#gestion-de-la-relation-clients" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="configuration-de-la-crm">
+<h2>Configuration de la CRM<a class="headerlink" href="#configuration-de-la-crm" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/configuration-de-la-crm" ></div><p>Dans le but de développer votre prototype pour NotSoTiny, vous allez devoir installer les modules de la CRM. Vous devez pouvoir gérer:</p>
+<ul class="simple">
+<li>Les leads (prospects)</li>
+<li>Les opportunités d&#8217;affaire</li>
+<li>Les appels téléphoniques</li>
+<li>Les calendriers partagés</li>
+<li>Les devis</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 1 – Installer les modules CRM requis</p>
+<p class="last">Le module standard nécessaire aux besoins listés ci-dessus est &#8216;CRM_configuration&#8217;. Vérifiez si ce module est déjà installé et si non, installez-le. Lors de la configuration de ce module, vous devrez choisir les options qui vous seront utiles pour gérer les points ci-dessus, les autres critères ne vous seront pas nécessaire dans le cas NotSoTiny. Pour la gestion des devis, cela sera traité dans un exercice plus loin.</p>
+</div>
+</div>
+<div class="section" id="flux-crm">
+<h2>Flux CRM<a class="headerlink" href="#flux-crm" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/flux-crm" ></div><p>Afin de préparer la démonstration de votre prototype, nous allons simuler un réel cas d&#8217;affaire, depuis l&#8217;encodage du client en tant que prospect jusqu&#8217;au devis pour un projet particulier.</p>
+<p>Chaque année, la société NotSoTiny participe au salon «&nbsp;House &amp; Design&nbsp;» à Paris. Pendant ce salon, la société va rencontrer environ 200 prospects en 3 jours. Pour chaque évènement de ce type, NotSoTiny envoie ses commerciaux qui auront la charge d&#8217;établir une nouvelle campagne marketing. Ils devront encoder les prospects rencontrés, ensuite, de retour chez NotSoTiny, ils les contacteront un par un afin d&#8217;essayer de conclure le plus d&#8217;affaire possible.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 2 – Le salon</p>
+<p class="last">La première étape est donc de créer une nouvelle campagne, c&#8217;est à dire de créer une nouvelle catégorie de cas qui portera le nom de &#8220;House&amp;Design 2009&#8221;. Cela permettra d&#8217;encoder tous les prospects sous cette catégorie afin de les différencier des autres évèvements auxquels participe NotSoTiny.</p>
+</div>
+<p>A la fin de chaque jour, les différents commerciaux présents au salon encodent dans le système toutes les cartes de visite qu&#8217;ils ont reçus des prospects. Sur le formulaire Lead (prospect) ils mettent un maximum d&#8217;informations relatifs au propect. Ensuite, quelques jours plus tard, ils contacteront chaque prospect un par un pour les qualifier et vérifier s&#8217;ils pourront déboucher sur une opportunité d&#8217;affaire.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 3 – Encoder les prospects dans le système</p>
+<p class="last">Thomas, un des commerciaux de NotSoTiny, se charge de regouper les cartes de visites et les différentes notes et encode dans le système les informations suivantes en tant que nouveaux leads (prospects).</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="4%" />
+<col width="8%" />
+<col width="7%" />
+<col width="11%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Description</th>
+<th class="head">Section</th>
+<th class="head">Source</th>
+<th class="head">Nom prospect</th>
+<th class="head">E-mail</th>
+<th class="head">Détail de l&#8217;affaire</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Prospect Brico</td>
+<td>Affaires</td>
+<td>House&amp;Design 2009</td>
+<td>Pierre Durand</td>
+<td><a class="reference external" href="mailto:p&#46;durand&#37;&#52;&#48;brico&#46;be">p<span>&#46;</span>durand<span>&#64;</span>brico<span>&#46;</span>be</a></td>
+<td>Brico est intéressé par nos armoires pour les revendre dans leurs magasin, mais quantité exigée trop importante (environ 100 armoires/moi)</td>
+</tr>
+<tr><td>Dubois sprl</td>
+<td>Affaires</td>
+<td>House&amp;Design 2009</td>
+<td>Marc Dubois</td>
+<td><a class="reference external" href="mailto:m&#46;dubois&#37;&#52;&#48;dubois&#46;be">m<span>&#46;</span>dubois<span>&#64;</span>dubois<span>&#46;</span>be</a></td>
+<td>Sprl Dubois, soc. indépendante, voudrait vendre nos armoires, mais sans devoir les stocker chez eux car manque de place =&gt; sur commande</td>
+</tr>
+<tr><td>Particulier</td>
+<td>Affaires</td>
+<td>House&amp;Design 2009</td>
+<td>Lucie Vonck</td>
+<td><a class="reference external" href="mailto:lucie&#46;vonck&#37;&#52;&#48;hotmail&#46;com">lucie<span>&#46;</span>vonck<span>&#64;</span>hotmail<span>&#46;</span>com</a></td>
+<td>Mme Vonck serait intéressée par un projet de rénovation de sa cuisine. Lui envoyer un devis.</td>
+</tr>
+</tbody>
+</table>
+<p>Si un des prospect semble intéressant, le commercial (Thomas) peut le convertir en opportunité et créer une fiche partenaire. Cela permettra de suivre cette opportunité de plus près et d&#8217;essayer de conclure l&#8217;affaire par une vente ou la signature d&#8217;un contrat, par exemple.</p>
+<p>Supposons que Thomas trouve que le prospect &#8220;Dubois sprl&#8221; est très intéressant, il aimerait le convertir en opportunité et le transférer à Luc, le directeur commercial, qui s&#8217;occupe des cas les plus intéressants.
+Sur l&#8217;opportunité d&#8217;affaire, il pourra fournir plus d&#8217;informations, comme le revenu estimé (5.000 k€). En premier lieu, Thomas va convertir le prospect en partenaire afin de faciliter la gestion future du cas, s&#8217;il y a aboutissement. Pour remplir la fiche partenaire, Thomas va donc contacter le prospect par téléphone.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 4 – Convertir et compléter les données de la fiche partenaire</p>
+<p class="last">Convertissez le prospect en partenaire, puis complétez l&#8217;adresse du partenaire concerné:
+Dubois sprl
+Avenue de la liberté 56
+1000 Bruxelles
+Belgique</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 5 – Convertir le prospect en opportunité d&#8217;affaire</p>
+<p class="last">Thomas convertit le prospect en opportunité car il semble très intéressant et indique que le revenu estimé serait de 5.000 k€.</p>
+</div>
+<p>En discutant au téléphone avec le prospect, Thomas planifie une réunion pour Luc. Il demande aussi au client d&#8217;envoyer une description complètes de ses besoin par mail avant la réunion, de façon à ce que Luc puisse en prendre connaissance pour préparer efficacement cette réunion.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 6 – Plannifier une réunion</p>
+<p class="last">Depuis la fiche partenaire, plannifiez une réunion pour Luc. Cette réunion est organisée dans une semaine chez le client et est liée à l&#8217;opportunité d&#8217;affaire &#8220;Dubois sprl&#8221;.</p>
+</div>
+<p>Quelques jours plus tard, le client appelle au bureau de NotSoTiny et c&#8217;est Eric qui répond au téléphone. Le client veut fournir plus d&#8217;informations sur les armoires qu&#8217;il désire. Il voudrait des armoires rouges et aimerait que Thomas lui apporte un catalogue d&#8217;armoires quand il viendra au bureau du client.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 7 – Encoder un appel téléphonique</p>
+<p class="last">Eric encode le résumé de la conversation téléphonique. Il lie cet appel à l&#8217;opportunité &#8220;Dubois sprl&#8221;.</p>
+</div>
+<p>La semaine passe, et Luc voit parmi ses RDV planifiés qu&#8217;il a une réunion le lendemain avec un client. Il va donc préparer cette réunion avant de se rendre chez le client. Il ouvre la fiche client et vérifie toutes les activités qu&#8217;il y a eu avec ce partenaire pendant les 15 derniers jours.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 8 – Vérifier la fiche partenaire</p>
+<p class="last">Luc se connecte, voit ses RDV dont celui avec Dubois sprl et va consulter la fiche du partenaire &#8220;Dubois sprl&#8221; avec en historique tous les évènements enregistrés dessus.</p>
+</div>
+<p>Luc rend visite au client, discute, négocie et finalement lui propose un devis. Le directeur de Dubois sprl désire obtenir un devis pour un projet de design de cuisine et une armoire pour évaluer la qualité du produit. Etant donné qu&#8217;il n&#8217;y a pas d&#8217;autre besoin à ajouter, il peut proposer un devis lié à l&#8217;opportunité d&#8217;affaire, et va aussi devoir clôturer le cas du prospect.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 9 – Installer le module de génération de devis</p>
+<p class="last">En tant qu&#8217;utilisateur Admin, installez le module &#8216;sale_crm&#8217; qui permet de convertir une ou une liste d&#8217;opportunité(s) d&#8217;affaire en devis.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 10 – Créez un devis à partir de l&#8217;opportunité d&#8217;affaire</p>
+<p>Reconnectez-vous en tant que Luc et faites un devis à partir de l&#8217;opportunité d&#8217;affaire &#8220;Dubois sprl&#8221; avec les produits suivants:</p>
+<blockquote>
+<ul class="simple">
+<li>Un projet de design de cuisine</li>
+<li>Une armoire de 100cm</li>
+</ul>
+</blockquote>
+<p class="last">N&#8217;oubliez pas de clôturer l&#8217;opportunité puisque nous allons faire le suivi à partir du devis.</p>
+</div>
+</div>
+<div class="section" id="g-rer-avec-la-crm">
+<h2>Gérer avec la CRM<a class="headerlink" href="#g-rer-avec-la-crm" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/g-rer-avec-la-crm" ></div><p>Luc, le directeur commercial, voudrait vérifier la qualité de son équipe commerciale.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 11 – Délai moyen pour clôturer une opportunité</p>
+<p class="last">Parmi les différents rapports de reporting fournis par le module CRM,  trouvez celui qui permet de connaître le temps moyen pour répondre à une requête d&#8217;un client (c&#8217;est à dire pour clôturer une opportunité d&#8217;affaire).</p>
+</div>
+<p>[Problème bug?]Luc remarque que le temps moyen pour clôturer une opportunité d&#8217;affaire est de 7 jours. Ce délai semble trop long pour lui. Etant donné qu&#8217;il veut améliorer la qualité de l&#8217;équipe commerciale, il aimerait recevoir une message d&#8217;alerte par email à chaque fois qu&#8217;une opportunité d&#8217;affaire n&#8217;est pas clôturée endéans les 5 jours après sa création.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 12 – Rappel par email [Problème bug?]</p>
+<p class="last">Créez une règle pour la CRM spécifiant qu&#8217;il faut envoyer un rappel au responsable si l&#8217;opportunité d&#8217;affaire n&#8217;est pas clôturé après 5 jours. Pour les prospects, il accepte seulement un délai de 3 jours avant de les clôturer. Mettre Luc en copie du mail quand le rappel est envoyé.</p>
+</div>
+<p>[Problème bug?]La société a différentes politiques pour gérer les prospects non-qualifiés et les réelles opportunité d&#8217;affaire. Les prospects sont gardés dans une réserve de prospects non assignés quand ils sont créés. Ensuite, les différents utilisateurs prennent les prospects et se les assignent périodiquement.</p>
+<p>Pour les opportunités d&#8217;affaire, c&#8217;est différent. Toutes les opportunités d&#8217;affaire doivent être assignées à Luc. Ensuite, Luc décide s&#8217;il veut assigner le cas à quelqu&#8217;un autre ou de s&#8217;en occuper lui-même.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Exercice 13 – Assignation et réserve de cas disponibles [Problème bug?]</p>
+</div>
+<p>Trouvez un moyen d&#8217;obtenir une liste de tous les cas non assignés. Trouvez un moyen d&#8217;assigner automatiquement les opportunités d&#8217;affaire à Luc dès qu&#8217;ils sont créés.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Gestion de la relation clients</a><ul>
+<li><a class="reference external" href="#configuration-de-la-crm">Configuration de la CRM</a></li>
+<li><a class="reference external" href="#flux-crm">Flux CRM</a></li>
+<li><a class="reference external" href="#g-rer-avec-la-crm">Gérer avec la CRM</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/exercice/fr/10_4_CRM.fr/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

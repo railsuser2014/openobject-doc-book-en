@@ -1,0 +1,432 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Logistics and Stock Management &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Stock and Manufacturing" href="../index.html" />
+    <link rel="next" title="Understanding double-entry stock management" href="5_14_Stock_illustration.html" />
+    <link rel="prev" title="Stock and Manufacturing" href="../index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Stock and Manufacturing"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Stock and Manufacturing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Stock and Manufacturing</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_illustration.html"
+                                  title="next chapter">Understanding double-entry stock management</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-295"></span><div class="section" id="logistics-and-stock-management">
+<span id="ch-stocks"></span><h1>Logistics and Stock Management<a class="headerlink" href="#logistics-and-stock-management" title="Permalink to this headline">¶</a></h1>
+<p>Just as in accounting, the Open ERP system manages counterparts to each of its main operations such as
+receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption
+of raw materials. Stock movements are always made from one location to another. To satisfy the need
+for a counterpart to each stock movement, the software supports different types of stock location:</p>
+<ul class="simple">
+<li>Physical stock locations,</li>
+<li>Partner locations,</li>
+<li>Virtual counterparts such as production and inventory.</li>
+</ul>
+<p>Physical locations represent warehouses and their hierarchical structure. These are generally the
+locations that are managed by traditional stock management systems.</p>
+<p>Partner locations represent your customers&#8217; and suppliers&#8217; stocks. To reconcile them with your
+accounts, these stores play the role of third-party accounts. Reception from a supplier can be shown
+by the movement of goods from a partner location to a physical location in your own company. As you
+see, supplier locations usually show negative stocks and customer locations usually show positive
+stocks.</p>
+<p>Virtual counterparts for production are used in manufacturing operations. Manufacturing is
+characterized by the consumption of raw materials and the production of finished products. Virtual
+locations are used for the counterparts of these two operations.</p>
+<p>Inventory locations are counterparts of the stock operations that represent your company&#8217;s profits
+and losses in terms of your stocks.</p>
+<p>The figure <a class="reference internal" href="#fig-stloctree"><em>Stores location structure when Open ERP has just been installed</em></a> shows the initial configuration of the stores locations when the software is
+installed.</p>
+<div align="center" class="figure" id="fig-stloctree">
+<a class="reference external image-reference" href="../../../_images/stock_location_tree.png"><img alt="../../../_images/stock_location_tree.png" src="../../../_images/stock_location_tree.png" style="width: 513.75px; height: 543.75px;" /></a>
+<p class="caption"><em>Stores location structure when Open ERP has just been installed</em></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Hierarchical stock locations</p>
+<p class="last">In Open ERP locations are structured hierarchically.
+You can structure your locations as a tree, dependent on a parent-child relationship.
+This gives you more detailed levels of analysis of your stock operations and the organization of
+your warehouses.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Locations and Warehouses</p>
+<p class="last">In Open ERP <strong>warehouses</strong> represent your places of physical stock.
+A warehouse can be structured into several locations at multiple levels.
+Locations are used to manage all types of storage place, such as at the customer and production
+counterparts.</p>
+</div>
+<p>For this chapter you should start with a fresh database that includes demo data,
+with <a title="Stock Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/stock.html#module-stock"><tt class="xref docutils literal"><span class="pre">stock</span></tt></a> and its dependencies installed and no particular chart of accounts configured.</p>
+<div class="all-toctree"><ul>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_illustration.html">Understanding double-entry stock management</a></li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_wf.html">Complete workflow from supplier to customer</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_wf.html#defining-a-new-product">Defining a new product</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_wf.html#product-types">Product Types</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_wf.html#procure-methods-make-to-stock-and-make-to-order">Procure Methods – Make to Stock and Make to Order</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_wf.html#supply-methods">Supply Methods</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_wf.html#units-of-measure">Units of Measure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_stocks.html">Stocks</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_stocks.html#lead-times-and-locations">Lead times and locations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_stocks.html#initial-inventory">Initial Inventory</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_stocks.html#receipt-of-a-supplier-order">Receipt of a supplier order</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_stocks.html#customer-delivery">Customer delivery</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_stocks.html#analysing-stock">Analysing stock</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_logistic.html">Logistics Configuration</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#stock-locations">Stock locations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#location-types">Location types</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#localization">Localization</a><ul>
+<li class="toctree-l3"><a class="reference external" href="5_14_Stock_logistic.html#example-structure-for-two-warehouses">Example Structure for two warehouses</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#accounting-valuation-in-real-time">Accounting valuation in real time</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#linked-locations">Linked locations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#case-of-structuring-locations">Case of structuring locations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#handling-customer-orders">Handling customer orders</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_logistic.html#linked-production">Linked Production</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_import.html">Import / Export</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_import.html#stock">Stock</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_import.html#rental-locations">Rental locations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_import.html#consigned-products">Consigned Products</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_warehouses.html">Warehouses</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_warehouses.html#automatic-procurement">Automatic procurement</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_warehouses.html#minimum-stock-rules">Minimum stock rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_production.html">Scheduling</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_production.html#sales-forecasts">Sales Forecasts</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_production.html#production-plan">Production Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_lots.html">Management of lots and traceability</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_lots.html#stock-moves">Stock Moves</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_lots.html#lots">Lots</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_lots.html#traceability">Traceability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_journals.html">Management by Journal</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_journals.html#the-different-journals">The different journals</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_journals.html#using-the-journals">Using the journals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_14_Stock_advanced.html">Advanced elements of stock management</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#requirements-calculation-scheduling">Requirements Calculation / Scheduling</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#just-in-time">Just in Time</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#planning">Planning</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#management-of-partial-deliveries">Management of partial deliveries</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#receiving-supplier-products">Receiving supplier products</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#manual-data-entry-of-goods-receipt">Manual data entry of goods receipt</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#confirming-pre-generated-goods-receipt-documents">Confirming pre-generated goods receipt documents</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#confirmation-by-selecting-products-waiting">Confirmation by selecting products waiting</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_14_Stock_advanced.html#product-routing">Product routing</a><ul>
+<li class="toctree-l3"><a class="reference external" href="5_14_Stock_advanced.html#example-1-a-rentable-product">Example 1: A rentable product</a></li>
+<li class="toctree-l3"><a class="reference external" href="5_14_Stock_advanced.html#example-2-management-of-imports-by-sea">Example 2: Management of imports by sea</a></li>
+<li class="toctree-l3"><a class="reference external" href="5_14_Stock_advanced.html#example-3-quality-control">Example 3: Quality Control</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Stock and Manufacturing</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_illustration.html"
+                                  title="next chapter">Understanding double-entry stock management</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Stock and Manufacturing"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Stock and Manufacturing"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

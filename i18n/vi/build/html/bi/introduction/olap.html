@@ -1,0 +1,447 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>OLAP &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Business Intelligence" href="../index.html" />
+    <link rel="next" title="Terminologies" href="terminologies.html" />
+    <link rel="prev" title="What is for User?" href="introduction.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="terminologies.html" title="Terminologies"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="What is for User?"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" accesskey="U">Business Intelligence</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="terminologies.html" title="Terminologies"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="What is for User?"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Business Intelligence</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">OLAP</a><ul>
+<li><a class="reference external" href="#who-uses-olap-and-why">Who uses OLAP and Why?</a><ul>
+<li><a class="reference external" href="#multidimensional-views-of-data">Multidimensional views of data</a></li>
+<li><a class="reference external" href="#calculation-intensive-capabilities">Calculation-intensive capabilities</a></li>
+<li><a class="reference external" href="#time-intelligence">Time intelligence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="introduction.html"
+                                  title="previous chapter">What is for User?</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="terminologies.html"
+                                  title="next chapter">Terminologies</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/bi/introduction/olap.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="olap">
+<span id="olap-link"></span><h1>OLAP<a class="headerlink" href="#olap" title="Permalink to this headline">¶</a></h1>
+<p>Online Analytical Processing (OLAP) means analysing large quantities of data in real-time. Unlike Online Transaction Processing (OLTP), where typical operations read and modify individual and small numbers of records, OLAP deals with data in bulk, and operations are generally read-only. The term &#8216;online&#8217; implies that even though huge quantities of data are involved — typically many millions of records, occupying several gigabytes — the system must respond to queries fast enough to allow an interactive exploration of the data. As we shall see, that presents considerable technical challenges.</p>
+<p>OLAP performs multidimensional analysis of business data and provides the capability for complex calculations, trend analysis, and sophisticated data modeling. Whereas a relational database stores all data in the form of rows and columns, a multidimensional dataset consists of axes and cells.
+Consider the dataset</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Year</th>
+<th class="head">2000</th>
+<th class="head">&nbsp;</th>
+<th class="head">2001</th>
+<th class="head">&nbsp;</th>
+<th class="head">Growth</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Product</td>
+<td>Dollar sales</td>
+<td>Unit sales</td>
+<td>Dollar sales</td>
+<td>Unit sales</td>
+<td>Dollar sales</td>
+<td>Unit sales</td>
+</tr>
+<tr><td>Total</td>
+<td>$7,073.00</td>
+<td>2693</td>
+<td>$7,636.00</td>
+<td>3008</td>
+<td>8.00%</td>
+<td>12.00%</td>
+</tr>
+<tr><td>Books</td>
+<td>$2,753.00</td>
+<td>824</td>
+<td>$3,331.00</td>
+<td>966</td>
+<td>21.00%</td>
+<td>17.00%</td>
+</tr>
+<tr><td>Fiction</td>
+<td>$1,341.00</td>
+<td>424</td>
+<td>$1,202.00</td>
+<td>380</td>
+<td>-10.00%</td>
+<td>-10.00%</td>
+</tr>
+<tr><td>Non-fiction</td>
+<td>$1,412.00</td>
+<td>400</td>
+<td>$2,129.00</td>
+<td>586</td>
+<td>51.00%</td>
+<td>47.00%</td>
+</tr>
+<tr><td>Magazines</td>
+<td>$2,753.00</td>
+<td>824</td>
+<td>$2,426.00</td>
+<td>766</td>
+<td>-12.00%</td>
+<td>-7.00%</td>
+</tr>
+<tr><td>Greetings cards</td>
+<td>$1,567.00</td>
+<td>1045</td>
+<td>$1,879.00</td>
+<td>1276</td>
+<td>20.00%</td>
+<td>22.00%</td>
+</tr>
+</tbody>
+</table>
+<p>The rows axis consists of the members &#8216;All products&#8217;, &#8216;Books&#8217;, &#8216;Fiction&#8217;, and so forth, and the columns axis consists of the cartesian product of the years &#8216;2000&#8217; and &#8216;2001&#8217;, and the calculation &#8216;Growth&#8217;, and the measures &#8216;Unit sales&#8217; and &#8216;Dollar sales&#8217;. Each cell represents the sales of a product category in a particular year; for example, the dollar sales of Magazines in 2001 were $2,426.</p>
+<p>This is a richer view of the data than would be presented by a relational database. The members of a multidimensional dataset are not always values from a relational column. &#8216;Total&#8217;, &#8216;Books&#8217; and &#8216;Fiction&#8217; are members at successive levels in a hierarchy, each of which is rolled up to the next. And even though it is alongside the years &#8216;2000&#8217; and &#8216;2001&#8217;, &#8216;Growth&#8217; is a calculated member, which introduces a formula for computing cells from other cells.</p>
+<p>The dimensions used here — products, time, and measures — are just three of many dimensions by which the dataset can be categorized and filtered. The collection of dimensions, hierarchies and measures is called a cube.</p>
+<p>The above simple example or outlook shows how one can get the smallest details from the data stored for years in the database in form of relation. It helps in managing resources, forming policies , budgeting , Business Process Management,designing strategic marketing policies, forecasting and many more. The options are endless</p>
+<p>The multidimensional is above all is a way of presenting data. Although some multidimensional databases store the data in multidimensional format, I shall argue that it is simpler to store the data in relational format and manipulate it using OLAP.</p>
+<div class="section" id="who-uses-olap-and-why">
+<h2>Who uses OLAP and Why?<a class="headerlink" href="#who-uses-olap-and-why" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/who-uses-olap-and-why" ></div><p>OLAP applications span a variety of organizational functions. Finance departments use OLAP for applications such as budgeting, activity-based costing (allocations), financial performance analysis, and financial modeling. Sales analysis and forecasting are two of the OLAP applications found in sales departments. Among other applications, marketing departments use OLAP for market research analysis, sales forecasting, promotions analysis, customer analysis, and market/customer segmentation. Typical manufacturing OLAP applications include production planning and defect analysis.</p>
+<p>Important to all of the above applications is the ability to provide managers with the information they need to make effective decisions about an organization&#8217;s strategic directions. The key indicator of a successful OLAP application is its ability to provide information as needed, i.e., its ability to provide &#8220;just-in-time&#8221; information for effective decision-making. This requires more than a base level of detailed data.</p>
+<p>Just-in-time information is computed data that usually reflects complex relationships and is often calculated on the fly. Analyzing and modeling complex relationships are practical only if response times are consistently short. In addition, because the nature of data relationships may not be known in advance, the data model must be flexible. A truly flexible data model ensures that OLAP systems can respond to changing business requirements as needed for effective decision making. Although OLAP applications are found in widely divergent functional areas, they all require the following key features:</p>
+<ol class="arabic simple">
+<li>Multidimensional views of data</li>
+<li>Calculation-intensive capabilities</li>
+<li>Time intelligence</li>
+</ol>
+<div class="section" id="multidimensional-views-of-data">
+<h3>Multidimensional views of data<a class="headerlink" href="#multidimensional-views-of-data" title="Permalink to this headline">¶</a></h3>
+<p>Multidimensional views are inherently representative of an actual business model. Rarely is a business model limited to fewer than three dimensions. Managers typically look at financial data by scenario (for example, actual vs. budget), organization, line items and at sales data by product, geography, channel, and time.</p>
+<p>A multidimensional view of data provides more than the ability to &#8220;slice and dice&#8221;; it provides the foundation for analytical processing through flexible access to information. Database design should not prejudice which operations can be performed on a dimension or how rapidly those operations are performed. Managers must be able to analyze data across any dimension, at any level of aggregation, with equal functionality and ease. OLAP software should support these views of data in a natural and responsive fashion,insulating users of the information from complex query syntax. After all, managers should not have to understand complex table layouts, elaborate table joins, and summary tables.</p>
+<p>Whether a request is for the weekly sales of a product across all geographical areas or the year-to-date sales in a city across all products, an OLAP system must have consistent response times. Basic aggregation is performed on some of the dimensions (product, customer, and channel). More complex calculations are performed on other dimensions. The measure dimension computes ratios and averages. Variances are computed along the scenario dimension. A complex model based on historical performance is used to compute the forecast scenario. Consistently quick response times to these kinds of queries are key to establishing a server&#8217;s ability to provide multidimensional views of information.</p>
+</div>
+<div class="section" id="calculation-intensive-capabilities">
+<h3>Calculation-intensive capabilities<a class="headerlink" href="#calculation-intensive-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>The real test of an OLAP database is its ability to perform complex calculations. OLAP databases must be able to do more than simple aggregation. While aggregation along a hierarchy is important, there is more to analysis than simple data roll-ups. Examples of more complex calculations include share calculations (percentage of total) and allocations(which use hierarchies from a top-down perspective).</p>
+<p>Key performance indicators often require involved algebraic equations. Sales forecasting uses trend algorithms such as moving averages and percentage growth. Analyzing the sales and promotions of a given company and its competitors requires modeling complex relationships among the players. The real world is complicated &#8211; the ability to model complex relationships is key in analytical processing applications.</p>
+<p>Whereas transaction processing systems are judged on their ability to collect and manage data, analytical processing systems are judged on their ability to create information from data.</p>
+</div>
+<div class="section" id="time-intelligence">
+<h3>Time intelligence<a class="headerlink" href="#time-intelligence" title="Permalink to this headline">¶</a></h3>
+<p>Time is an integral component of almost any analytical application. Time is a unique dimension because it is sequential in character (January always comes before February). True OLAP systems understand the sequential nature of time. Business performance is almost always judged over time, for example, this month vs. last month, this month vs. the same month last year.  The time hierarchy is not always used in the same manner as other hierarchies. For example, a manager might ask to see the sales for May or the sales for the first five months of 1995. The same manager might also ask to see the sales for blue shirts but   would never ask to see the sales for the first five shirts. Concepts such as year-to-date and period over period comparisons must be easily defined in an OLAP system.</p>
+<p>In addition, OLAP systems must understand the concept of balances over time. For example, if a company sold 10 shirts in January, five shirts in February, and 10 shirts in March, then the total balance sold for the quarter would be 25 shirts. If, on the other hand, a company had a head count of 10 employees in January, only five employees in February, and 10 employees again in March, what was the company&#8217;s employee head count for the quarter? Most companies would use an average balance. In the case of cash,    most companies use an ending balance.</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">OLAP</a><ul>
+<li><a class="reference external" href="#who-uses-olap-and-why">Who uses OLAP and Why?</a><ul>
+<li><a class="reference external" href="#multidimensional-views-of-data">Multidimensional views of data</a></li>
+<li><a class="reference external" href="#calculation-intensive-capabilities">Calculation-intensive capabilities</a></li>
+<li><a class="reference external" href="#time-intelligence">Time intelligence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="introduction.html"
+                                  title="previous chapter">What is for User?</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="terminologies.html"
+                                  title="next chapter">Terminologies</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/bi/introduction/olap.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="terminologies.html" title="Terminologies"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="What is for User?"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Business Intelligence</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="terminologies.html" title="Terminologies"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="What is for User?"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Business Intelligence</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,639 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Importing and exporting data &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Configuration & Administration" href="index.html" />
+    <link rel="next" title="Implementation Methodology" href="../8_21_Implem/index.html" />
+    <link rel="prev" title="Configuring reports" href="8_20_Config_reports.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../8_21_Implem/index.html" title="Implementation Methodology"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_reports.html" title="Configuring reports"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../8_21_Implem/index.html" title="Implementation Methodology"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_reports.html" title="Configuring reports"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Importing and exporting data</a><ul>
+<li><a class="reference external" href="#exporting-open-erp-data-to-csv">Exporting Open ERP data to CSV</a></li>
+<li><a class="reference external" href="#importing-csv-data-to-open-erp">Importing CSV data to Open ERP</a></li>
+<li><a class="reference external" href="#the-csv-format-for-complex-database-structures">The CSV format for complex database structures</a><ul>
+<li><a class="reference external" href="#many-to-one-fields">Many-to-one fields</a></li>
+<li><a class="reference external" href="#many-to-many-fields">Many-to-many fields</a></li>
+<li><a class="reference external" href="#one-to-many-fields">One-to-many fields</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#another-example-of-a-csv-import-file">Another example of a CSV import file</a><ul>
+<li><a class="reference external" href="#partner-categories">Partner categories</a></li>
+<li><a class="reference external" href="#new-partners">New partners</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#exporting-data-in-other-forms">Exporting data in other forms</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_reports.html"
+                                  title="previous chapter">Configuring reports</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../8_21_Implem/index.html"
+                                  title="next chapter">Implementation Methodology</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_import_export.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-387"></span><div class="section" id="importing-and-exporting-data">
+<h1>Importing and exporting data<a class="headerlink" href="#importing-and-exporting-data" title="Permalink to this headline">¶</a></h1>
+<p>Every form in Open&nbsp;ERP has a standard mechanism for importing data from a CSV file through the client user interface.
+That&#8217;s the same format as used in the language translations.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Forms and Lists</p>
+<p class="last">You have access to the Import and Export functions in the web client on a single form view in read-
+only mode – you can&#8217;t reach Import or Export in any other view or when the form is editable.
+If you&#8217;re using the GTK client you can find the functions from the top menu
+<em>Form ‣ Import...</em> and <em>Form ‣ Export...</em>.</p>
+</div>
+<p>The CSV file format is a text format compatible with most spreadsheet programs (such as OpenOffice
+Calc and Microsoft Excel) and is easily editable as a worksheet. The first line contains the name of
+the field in the form. All the subsequent lines are data, aligned in their respective columns.</p>
+<span class="target" id="index-388"></span><div class="section" id="exporting-open-erp-data-to-csv">
+<h2>Exporting Open ERP data to CSV<a class="headerlink" href="#exporting-open-erp-data-to-csv" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/exporting-open-erp-data-to-csv" ></div><p>Start exploring Open ERP&#8217;s use of the CSV format by exporting a modestly complex set of data,
+the partners and partner addresses in the demonstration data.</p>
+<p>Go to <em>Partners ‣ Partners</em> for the list of partners and then scroll to the bottom
+of the list to click the <strong>Export</strong> link. This pops up the <strong>Export Data</strong> dialog box.
+Select the following fields:</p>
+<ul class="simple">
+<li><strong>Name</strong>,</li>
+<li><strong>Contact Name</strong> under the <strong>Contacts</strong> menu,</li>
+<li><strong>City</strong> under the <strong>Contacts</strong> menu.</li>
+</ul>
+<p>You can either select and add them one at a time, or <tt class="docutils literal"><span class="pre">Ctrl-click</span></tt> them and add
+the multiple selection - the order in which you
+select them is the order in which they&#8217;ll be displayed.</p>
+<p>Then click <strong>Export</strong> and save the resulting <tt class="docutils literal"><span class="pre">data.csv</span></tt> file somewhere accessible -
+perhaps your Desktop. You can open that file in a spreadsheet program or a text editor.</p>
+<p>You&#8217;ll see that you have a list of partners, with the name and city of each partner&#8217;s contacts
+alongside. In the couple of cases where there is more than one address, the partner name
+is left out. So it is important to note that the order of entries is critical - do not sort
+that list!</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>List limits</p>
+<p>There is a limit to the number of items you can export in the clients - it&#8217;s the number
+you can actually see and that is limited to a maximum of 100 in the web client, but is
+arbitrary in the GTK client.</p>
+<p class="last">So if you want to export everything, use the GTK client. Set the export limit to an
+arbitrarily large figure (using the <strong>+</strong> button to expose the
+<strong>Parameters</strong> and <strong>Limit</strong> fields), then click
+<em>Form ‣ Export data...</em>, set up the fields to export, and
+then prepare to wait.</p>
+</div>
+<span class="target" id="index-389"></span></div>
+<div class="section" id="importing-csv-data-to-open-erp">
+<h2>Importing CSV data to Open ERP<a class="headerlink" href="#importing-csv-data-to-open-erp" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/importing-csv-data-to-open-erp" ></div><p>Use this export file as a template for an import file by deleting all of the data
+and using new data (here you&#8217;ll just import new data alongside the demonstration data,
+but the principle is the same for a blank database).</p>
+<p>For example, to import partners with several contacts for which you specify a name and a city, you
+would create the following CSV file from the export file:</p>
+<table border="1" class="docutils">
+<caption>Example of importing partner address fields</caption>
+<colgroup>
+<col width="40%" />
+<col width="33%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Name</th>
+<th class="head">Contacts/Contact Name</th>
+<th class="head">Contacts/City</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Whole Globe Technologies</td>
+<td>Graham Global</td>
+<td>Athens</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>Wanda World</td>
+<td>Rome</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>Emerson Earth</td>
+<td>New York</td>
+</tr>
+<tr><td>Miles A Minute</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>From the list of partners, click the <strong>Import</strong> button and then in the
+<strong>Import Data</strong> window click <strong>Open</strong> to search for and import
+the new <tt class="docutils literal"><span class="pre">data.csv</span></tt> file. The web client automatically matches column names
+but the GTK client requires that you click the <strong>Auto detect</strong> button.</p>
+<p>You&#8217;ll get a dialog box showing that you have imported 2 objects, and you can
+see the new partners and partner addresses when you refresh the list on screen.</p>
+<span class="target" id="index-390"></span></div>
+<div class="section" id="the-csv-format-for-complex-database-structures">
+<h2>The CSV format for complex database structures<a class="headerlink" href="#the-csv-format-for-complex-database-structures" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-csv-format-for-complex-database-structures" ></div><p>When you import data you have to overcome the problem of representing a database structure in <tt class="docutils literal"><span class="pre">.csv</span></tt> flat files. To do this, two solutions are possible in Open&nbsp;ERP:</p>
+<ul class="simple">
+<li>importing a CSV file that&#8217;s been structured in a particular way to enable you to load several
+different database tables from a single file (such as partners and partner contacts in one CSV
+file, as you have just done above),</li>
+<li>importing several CSV files, each corresponding to a specific database table, that have explicit
+links between the tables.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Server-side importing</p>
+<p class="last">You can also import CSV data in through the server interface. The file format is the same, but
+column headings differ slightly. When importing through the user interface it checks that the column
+heading names match the names seen in the forms on the user interface itself.
+In contrast, when importing through the
+server the column heading names must match the internal names of the fields.</p>
+</div>
+<p>Start by building the header of the CSV file. Open the import tool on the object that you&#8217;re
+interested in and select the fields that you want to import into your Open&nbsp;ERP database. You must
+include every field that&#8217;s colored in blue because those fields are required (unless you know that they
+get filled by default with an appropriate value), and also any other field that&#8217;s important to you.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/csv_column_select.png"><img alt="../../../_images/csv_column_select.png" src="../../../_images/csv_column_select.png" style="width: 474.0px; height: 375.0px;" /></a>
+<p class="caption"><em>Selecting fields to import using a CSV file</em></p>
+</div>
+<p>Use the field names as the column names in the first line of your CSV file, adding one field per
+column. If your CSV file has these names in the first line then when you import your CSV file,
+Open&nbsp;ERP will automatically match the column name to the field name of the table. When you&#8217;ve
+created your CSV file you&#8217;ll do that by clicking the <strong>Nothing</strong> button to clear the
+<strong>Fields to Import</strong>, then select your CSV file by browsing for a <strong>File to
+import</strong>, and then clicking the <strong>Auto Detect</strong> button.</p>
+<p>To import CSV data that matches your database structure, you should distinguish between the following types
+of field in the Open&nbsp;ERP interface:  <em>many-to-many</em>  fields (between multiple sources and
+destinations),  <em>many-to-one</em>  fields (from multiple sources to a single destination), and  <em>one-to-
+many</em>  fields (from a single origin to multiple destinations).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Foreground table</p>
+<p>Each of these types is described in relation to a foreground table –
+the table whose entry form you&#8217;re viewing and whose entries would be updated by a simple CSV file.</p>
+<p>Just because one of these relation fields appears on the foreground table, does not mean that there
+is an inverse field on the related table – but there may be.</p>
+<p class="last">So there is <em>no</em> one-to-many field in the User form to reflect the many-to-one <strong>user_id</strong> Salesman field in
+the Partner form,
+but there <em>is</em> a many-to-one <strong>partner_id</strong> Partner field in the Partner contact form to reflect the one-to-many
+<strong>child_ids</strong> Partner contacts field in the Partner form.</p>
+</div>
+<p>Have a look at the screenshots below to see the differences.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/csv_many2one.png"><img alt="../../../_images/csv_many2one.png" src="../../../_images/csv_many2one.png" style="width: 273.75px; height: 20.25px;" /></a>
+<p class="caption"><em>A many-to-one field: a salesperson linked to a partner</em></p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/csv_many2many.png"><img alt="../../../_images/csv_many2many.png" src="../../../_images/csv_many2many.png" style="width: 525.0px; height: 116.25px;" /></a>
+<p class="caption"><em>A many-to-many field: partner categories</em></p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/csv_one2many.png"><img alt="../../../_images/csv_one2many.png" src="../../../_images/csv_one2many.png" style="width: 525.0px; height: 153.0px;" /></a>
+<p class="caption"><em>A one-to-many field: partner contacts</em></p>
+</div>
+<p>All of the other fields are coded in the CSV file as just one text string in each column.</p>
+<span class="target" id="index-391"></span><div class="section" id="many-to-one-fields">
+<h3>Many-to-one fields<a class="headerlink" href="#many-to-one-fields" title="Permalink to this headline">¶</a></h3>
+<p>Many-to-one fields represent a relationship between the foreground table and another table in the
+database where the foreground table has a single entry for the other table. Open&nbsp;ERP tries to link
+the new record in the foreground table with the field in the other table by matching the field values.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Field identifiers</p>
+<p>If you&#8217;re working on the server side you can use identifiers rather than the names of resources
+to link tables. To do this you import the
+first file (for example, Products) with a column named <strong>id</strong> in your CSV file that contains a
+unique identifier for each product. This could be an incrementing number.</p>
+<p>When you import other files which link to the first table, you can use the identifier in preference
+to the names (so, for example, when you&#8217;re saving inventory you can use <tt class="docutils literal"><span class="pre">product:id</span></tt>instead of the product name).
+You then don&#8217;t need any complex conversion to create links between the two tables.</p>
+<p class="last">This considerably simplifies the importation of another database into Open&nbsp;ERP.
+You just create a linking <tt class="docutils literal"><span class="pre">id</span></tt> column for each table that you&#8217;re importing
+that contains the identifier used in the first table.</p>
+</div>
+</div>
+<div class="section" id="many-to-many-fields">
+<h3>Many-to-many fields<a class="headerlink" href="#many-to-many-fields" title="Permalink to this headline">¶</a></h3>
+<p>Many-to-many fields are handled just like many-to-one fields in trying to recreate the relationship
+between tables: either by searching for names or by using identifiers.</p>
+<p>There are several possible values in a single many-to-many field. Therefore a partner can be given
+several associated categories. You must separate the different values with a comma.</p>
+</div>
+<div class="section" id="one-to-many-fields">
+<h3>One-to-many fields<a class="headerlink" href="#one-to-many-fields" title="Permalink to this headline">¶</a></h3>
+<p>One-to-many fields are a bit different. Take as an example the <strong>Partner Contacts</strong> field in
+the Partner form, which contains all of the linked contacts.</p>
+<p>To import such a field you don&#8217;t have to link to an existing entry in another table, but can instead
+create and link to several partner contacts using the same file. You can then specify several values
+for different fields linked to that object by the one-to-many field. Each field must be put in a
+column of the table, and the title of that column must be expressed in the form <tt class="docutils literal"><span class="pre">field_one-to-</span>
+<span class="pre">many/field_linked-object</span></tt> . The partner data you imported earlier took that form.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Symmetry in relation fields</p>
+<p>Depending on the structure of your data it can be easier to use the one-to-many form or the many-
+to-one form in relating two tables, so long as the relevant fields exist on both ends of the relationship.</p>
+<p>For example, you can:</p>
+<ul class="last simple">
+<li>import one partner with different contact in a single file (one-to-many),</li>
+<li>import the partners first, and then contacts with the field linking to the partner in a many-to-
+one form).</li>
+</ul>
+</div>
+<span class="target" id="index-392"></span></div>
+</div>
+<div class="section" id="another-example-of-a-csv-import-file">
+<h2>Another example of a CSV import file<a class="headerlink" href="#another-example-of-a-csv-import-file" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/another-example-of-a-csv-import-file" ></div><p>To illustrate data importing, you can see another example below. First import partner
+categories, and then import some partners and their contacts along with links to the categories
+just created. Although you can create new contacts at the same time as creating partners (because
+you can do this for <em>one-to-many</em> relations), you can&#8217;t create new categories this way (because they
+use <em>many-to-many</em> relations). You must create new categories in a separate step.</p>
+<div class="section" id="partner-categories">
+<h3>Partner categories<a class="headerlink" href="#partner-categories" title="Permalink to this headline">¶</a></h3>
+<p>Start by creating partner categories in a CSV file:</p>
+<ol class="arabic simple">
+<li>Create the following table in your spreadsheet program:</li>
+</ol>
+<ol class="arabic simple">
+<li>Save spreadsheet file in CSV format – separated by commas – and name the file
+<tt class="docutils literal"><span class="pre">categories.csv</span></tt>.</li>
+<li>In Open&nbsp;ERP, select <em>Partners ‣ Configuration ‣ Categories ‣ Edit
+Categories</em>.</li>
+<li>Click <strong>Import</strong> (to the bottom left of the list) to bring up the <strong>Import Data</strong> dialog
+box, in which you&#8217;ll find the ist of fields that can be imported.</li>
+<li>Click <strong>Browse...</strong> on the <strong>File to import</strong> field and select the CSV file you
+just created, <tt class="docutils literal"><span class="pre">categories.csv</span></tt>  Then click <strong>Auto Detect</strong> to atch the column names
+in the CSV file with the field names available in:guilabel:<cite>Partner Categories</cite>.</li>
+<li>Click <strong>Import</strong> at the bottom-right of the dialog box to load your data. You should get
+the message <tt class="docutils literal"><span class="pre">4</span> <span class="pre">objects</span> <span class="pre">imported</span></tt> in a new dialog box. Close both this and the
+<strong>Import Data</strong> dialog box to return to the original page.</li>
+<li>Click <em>Partners ‣ Partners by category</em> to view the tree of categories,
+including the new <tt class="docutils literal"><span class="pre">Quality</span></tt> branch that you loaded.</li>
+</ol>
+</div>
+<div class="section" id="new-partners">
+<h3>New partners<a class="headerlink" href="#new-partners" title="Permalink to this headline">¶</a></h3>
+<p>Here&#8217;s how to create new partners with more than one contact, as you did before, and how to link them to these new categories:</p>
+<ol class="arabic simple">
+<li>Enter the table below into your spreadsheet program.</li>
+</ol>
+<ol class="arabic simple">
+<li>The second line corresponds to the creation of a new partner, with two existing categories, that
+has two contacts and is linked to a salesman.</li>
+<li>Save the file using the name <tt class="docutils literal"><span class="pre">partners.csv</span></tt></li>
+<li>In OpenERP, select <em>Partners ‣ Partners</em> then import the file that you&#8217;ve just
+saved. You&#8217;ll get a message confirming that you&#8217;ve imported and saved the data.</li>
+<li>Verify that you&#8217;ve imported the data. A new partner should have appeared (<tt class="docutils literal"><span class="pre">NoirAdvertising</span></tt>),
+with a salesman (<tt class="docutils literal"><span class="pre">Administrator</span></tt>), two contacts (<tt class="docutils literal"><span class="pre">George</span> <span class="pre">Black</span></tt> and <tt class="docutils literal"><span class="pre">Jean</span> <span class="pre">Green</span></tt>) and two categories
+(<tt class="docutils literal"><span class="pre">Silver</span></tt> and <tt class="docutils literal"><span class="pre">Gold</span></tt>).</li>
+</ol>
+</div>
+</div>
+<div class="section" id="exporting-data-in-other-forms">
+<span id="index-393"></span><h2>Exporting data in other forms<a class="headerlink" href="#exporting-data-in-other-forms" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/exporting-data-in-other-forms" ></div><p>Open&nbsp;ERP&#8217;s generic export mechanism lets you easily export any of your data to any location on your
+system. You&#8217;re not restricted to what you can export, although you can restrict who can export that
+data using the rights management facilities discussed above.</p>
+<p>You can use this to export your data into spreadsheets or into other systems such as specialist
+accounts packages. The export format is usually in the CSV format but you can also connect directly
+to Microsoft Excel using Microsoft&#8217;s COM mechanism.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Access to the database</p>
+<p>Developers can also use other techniques to automatically access the Open&nbsp;ERP database. The two
+most useful are:</p>
+<ul class="last simple">
+<li>using the XML-RPC web service,</li>
+<li>accessing the PostgreSQL database directly.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Module Recorder</p>
+<p>If you want to enter data into Open&nbsp;ERP manually, you should use the Module Recorder, described in
+the first section of this chapter.</p>
+<p class="last">By doing that you&#8217;ll generate a module that can easily be reused in different databases.
+Then if there are problems with a database you&#8217;ll be able to reinstall the data module you
+generated
+with all of the entries and modifications you made for this system.</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Importing and exporting data</a><ul>
+<li><a class="reference external" href="#exporting-open-erp-data-to-csv">Exporting Open ERP data to CSV</a></li>
+<li><a class="reference external" href="#importing-csv-data-to-open-erp">Importing CSV data to Open ERP</a></li>
+<li><a class="reference external" href="#the-csv-format-for-complex-database-structures">The CSV format for complex database structures</a><ul>
+<li><a class="reference external" href="#many-to-one-fields">Many-to-one fields</a></li>
+<li><a class="reference external" href="#many-to-many-fields">Many-to-many fields</a></li>
+<li><a class="reference external" href="#one-to-many-fields">One-to-many fields</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#another-example-of-a-csv-import-file">Another example of a CSV import file</a><ul>
+<li><a class="reference external" href="#partner-categories">Partner categories</a></li>
+<li><a class="reference external" href="#new-partners">New partners</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#exporting-data-in-other-forms">Exporting data in other forms</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_reports.html"
+                                  title="previous chapter">Configuring reports</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../8_21_Implem/index.html"
+                                  title="next chapter">Implementation Methodology</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_import_export.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../8_21_Implem/index.html" title="Implementation Methodology"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_reports.html" title="Configuring reports"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" >Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../8_21_Implem/index.html" title="Implementation Methodology"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_reports.html" title="Configuring reports"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

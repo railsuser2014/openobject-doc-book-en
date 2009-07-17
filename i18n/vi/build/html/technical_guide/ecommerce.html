@@ -1,0 +1,1177 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>E-Commerce (ecommerce) &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="up" title="Module Technical Guide: Introspection report on objects" href="index.html" />
+    <link rel="next" title="Module for ‘Eco participation’ (ecotaxe)" href="ecotaxe.html" />
+    <link rel="prev" title="Integrated Document Management System (document_webdav_old)" href="document_webdav_old.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="ecotaxe.html" title="Module for ‘Eco participation’ (ecotaxe)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="document_webdav_old.html" title="Integrated Document Management System (document_webdav_old)"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="ecotaxe.html" title="Module for ‘Eco participation’ (ecotaxe)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="document_webdav_old.html" title="Integrated Document Management System (document_webdav_old)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">E-Commerce (<em>ecommerce</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-ecommerce-partner-ecommerce-partner">Object: ecommerce partner (ecommerce.partner)</a></li>
+<li><a class="reference external" href="#object-ecommerce-partner-address-ecommerce-partner-address">Object: ecommerce partner address (ecommerce.partner.address)</a></li>
+<li><a class="reference external" href="#object-search-parameters-ecommerce-search">Object: search parameters (ecommerce.search)</a></li>
+<li><a class="reference external" href="#object-reviews-about-product-ecommerce-product-reviews">Object: Reviews about product (ecommerce.product.reviews)</a></li>
+<li><a class="reference external" href="#object-payment-method-ecommerce-payment-method">Object: payment method (ecommerce.payment.method)</a></li>
+<li><a class="reference external" href="#object-credit-cards-ecommerce-creditcard">Object: Credit Cards (ecommerce.creditcard)</a></li>
+<li><a class="reference external" href="#object-ecommerce-payment-ecommerce-payment">Object: ecommerce payment (ecommerce.payment)</a></li>
+<li><a class="reference external" href="#object-ecommerce-payment-received-ecommerce-payment-received">Object: ecommerce payment received (ecommerce.payment.received)</a></li>
+<li><a class="reference external" href="#object-ecommerce-shop-ecommerce-shop">Object: ecommerce shop (ecommerce.shop)</a></li>
+<li><a class="reference external" href="#object-ecommerce-category-ecommerce-category">Object: ecommerce category (ecommerce.category)</a></li>
+<li><a class="reference external" href="#object-ecommerce-saleorder-ecommerce-saleorder">Object: ecommerce saleorder (ecommerce.saleorder)</a></li>
+<li><a class="reference external" href="#object-ecommerce-order-line-ecommerce-order-line">Object: ecommerce order line (ecommerce.order.line)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="document_webdav_old.html"
+                                  title="previous chapter">Integrated Document Management System (<em>document_webdav_old</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="ecotaxe.html"
+                                  title="next chapter">Module for &#8216;Eco participation&#8217; (<em>ecotaxe</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/ecommerce.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="module-ecommerce"></span>  <br />
+<link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" /><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This module is part of the Open ERP software, the leading Open Source
+enterprise management system. If you want to discover Open ERP, check our
+<a class="reference external" href="http://openerp.tv">screencasts</a> or download
+<a class="reference external" href="http://openerp.com">Open ERP</a> directly.</p>
+</div>
+<div class="js-kit-rating" title="" permalink="" standalone="yes" path="/ecommerce"></div>
+<script src="http://js-kit.com/ratings.js"></script><div class="section" id="e-commerce-ecommerce">
+<h1>E-Commerce (<em>ecommerce</em>)<a class="headerlink" href="#e-commerce-ecommerce" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Module:</th><td class="field-body">ecommerce</td>
+</tr>
+<tr class="field"><th class="field-name">Name:</th><td class="field-body">E-Commerce</td>
+</tr>
+<tr class="field"><th class="field-name">Version:</th><td class="field-body">5.0.1.0</td>
+</tr>
+<tr class="field"><th class="field-name">Author:</th><td class="field-body">Tiny</td>
+</tr>
+<tr class="field"><th class="field-name">Directory:</th><td class="field-body">ecommerce</td>
+</tr>
+<tr class="field"><th class="field-name">Web:</th><td class="field-body"><a class="reference external" href="http://www.openerp.com">http://www.openerp.com</a></td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Official module:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">no</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Quality certified:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">no</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/description" ></div><div class="highlight-python"><pre>ecommerce users can order on the website, orders are automatically imported in OpenERP.
+
+You can export products, product's categories, product images and create links between
+categories of products, currency and languages to website.
+
+Delivery of products manage by carriers.
+
+Different payment methods are available for users to make payment.
+
+You can display products in table on website using rows and columns specified in webshop.</pre>
+</div>
+</div>
+<div class="section" id="download-links">
+<h2>Download links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/download-links" ></div><p>You can download this module as a zip file in the following version:</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/dependencies" ></div></div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/reports" ></div></div>
+<div class="section" id="menus">
+<h2>Menus<a class="headerlink" href="#menus" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/menus" ></div></div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/views" ></div></div>
+<div class="section" id="objects">
+<h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/ecommerce/objects" ></div><div class="section" id="object-ecommerce-partner-ecommerce-partner">
+<h3>Object: ecommerce partner (ecommerce.partner)<a class="headerlink" href="#object-ecommerce-partner-ecommerce-partner" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">lang:</th><td class="field-body">Language, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">address_ids:</th><td class="field-body">Contacts, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">last_name:</th><td class="field-body">Last Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">category_ids:</th><td class="field-body">Categories, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">company_name:</th><td class="field-body">Company Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">active:</th><td class="field-body">Active, boolean</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-partner-address-ecommerce-partner-address">
+<h3>Object: ecommerce partner address (ecommerce.partner.address)<a class="headerlink" href="#object-ecommerce-partner-address-ecommerce-partner-address" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">username:</th><td class="field-body">Contact Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">city:</th><td class="field-body">City, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">fax:</th><td class="field-body">Fax, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">zip:</th><td class="field-body">Zip, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">mobile:</th><td class="field-body">Mobile, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Partner, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">street2:</th><td class="field-body">Street2, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">country_id:</th><td class="field-body">Country, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">phone:</th><td class="field-body">Phone, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">street:</th><td class="field-body">Street, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">state_id:</th><td class="field-body">State, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">type:</th><td class="field-body">Address Type, selection</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">email:</th><td class="field-body">E-Mail, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-search-parameters-ecommerce-search">
+<h3>Object: search parameters (ecommerce.search)<a class="headerlink" href="#object-search-parameters-ecommerce-search" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Product fields, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-reviews-about-product-ecommerce-product-reviews">
+<h3>Object: Reviews about product (ecommerce.product.reviews)<a class="headerlink" href="#object-reviews-about-product-ecommerce-product-reviews" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">rating:</th><td class="field-body">Rating, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">reviewdate:</th><td class="field-body">Review Date, date</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">customer_id:</th><td class="field-body">Customer, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_id:</th><td class="field-body">Product, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">review:</th><td class="field-body">Review, text</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-payment-method-ecommerce-payment-method">
+<h3>Object: payment method (ecommerce.payment.method)<a class="headerlink" href="#object-payment-method-ecommerce-payment-method" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">shortcut:</th><td class="field-body">Shortcut, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-credit-cards-ecommerce-creditcard">
+<h3>Object: Credit Cards (ecommerce.creditcard)<a class="headerlink" href="#object-credit-cards-ecommerce-creditcard" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Code, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Card Name, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-payment-ecommerce-payment">
+<h3>Object: ecommerce payment (ecommerce.payment)<a class="headerlink" href="#object-ecommerce-payment-ecommerce-payment" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">biz_account:</th><td class="field-body">Business E-mail Id, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">bank_name:</th><td class="field-body">Bank Name, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">chequepay_to:</th><td class="field-body">Account Owner, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Payment Method, selection, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">zip:</th><td class="field-body">Zip, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">city:</th><td class="field-body">City, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">street2:</th><td class="field-body">Street2, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">country_id:</th><td class="field-body">Country, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">bic:</th><td class="field-body">BIC number or SWIFT, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">creditcard_ids:</th><td class="field-body">Credit Cards, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">transaction_dtl_ids:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Transaction History, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">cancel_url:</th><td class="field-body">Cancel URL, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">street:</th><td class="field-body">Street, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">state_id:</th><td class="field-body">State, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">return_url:</th><td class="field-body">Return URL, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">acc_number:</th><td class="field-body">Account Number, char</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-payment-received-ecommerce-payment-received">
+<h3>Object: ecommerce payment received (ecommerce.payment.received)<a class="headerlink" href="#object-ecommerce-payment-received-ecommerce-payment-received" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">saleorder_id:</th><td class="field-body">Sales Order, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">invoice_id:</th><td class="field-body">Invoice, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">paypal_acc_id:</th><td class="field-body">Paypal Account, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">transaction_date:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Date Payment, date, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">partner_id:</th><td class="field-body">Partner, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">transaction_id:</th><td class="field-body">Transaction Id, char, readonly</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-shop-ecommerce-shop">
+<h3>Object: ecommerce shop (ecommerce.shop)<a class="headerlink" href="#object-ecommerce-shop-ecommerce-shop" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">column_configuration:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">No. of Columns, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Name, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">payment_method_ids:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Payment Methods, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">image_width:</th><td class="field-body">Width in Pixel, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">currency_ids:</th><td class="field-body">Currency, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">company_id:</th><td class="field-body">Company, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">shop_id:</th><td class="field-body">Sale Shop, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">language_ids:</th><td class="field-body">Language, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">row_configuration:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">No. of Rows, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">search_ids:</th><td class="field-body">Search On, many2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">image_height:</th><td class="field-body">Height in Pixel, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">category_ids:</th><td class="field-body">Categories, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">delivery_ids:</th><td class="field-body">Delivery, many2many</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-category-ecommerce-category">
+<h3>Object: ecommerce category (ecommerce.category)<a class="headerlink" href="#object-ecommerce-category-ecommerce-category" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">child_ids:</th><td class="field-body">Child Categories, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">category_id:</th><td class="field-body">Tiny Category, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">web_id:</th><td class="field-body">Web Shop, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">E-commerce Category, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">parent_category_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Parent Category, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-saleorder-ecommerce-saleorder">
+<h3>Object: ecommerce saleorder (ecommerce.saleorder)<a class="headerlink" href="#object-ecommerce-saleorder-ecommerce-saleorder" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">note:</th><td class="field-body">Notes, text</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">web_id:</th><td class="field-body">Web Shop, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Order Reference, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">epartner_shipping_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Shipping Address, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">order_id:</th><td class="field-body">Sale Order, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">epartner_add_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Contact Address, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">orderline_ids:</th><td class="field-body">Order Lines, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">epartner_id:</th><td class="field-body">Ecommerce Partner, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">pricelist_id:</th><td class="field-body">Pricelist, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date_order:</th><td class="field-body">Date Ordered, date, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">epartner_invoice_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Invoice Address, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-ecommerce-order-line-ecommerce-order-line">
+<h3>Object: ecommerce order line (ecommerce.order.line)<a class="headerlink" href="#object-ecommerce-order-line-ecommerce-order-line" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_id:</th><td class="field-body">Product, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">order_id:</th><td class="field-body">eOrder Ref, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_uom_id:</th><td class="field-body">Product UOM, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">price_unit:</th><td class="field-body">Unit Price, float, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">product_qty:</th><td class="field-body">Quantity, float, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Description, char, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">E-Commerce (<em>ecommerce</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-ecommerce-partner-ecommerce-partner">Object: ecommerce partner (ecommerce.partner)</a></li>
+<li><a class="reference external" href="#object-ecommerce-partner-address-ecommerce-partner-address">Object: ecommerce partner address (ecommerce.partner.address)</a></li>
+<li><a class="reference external" href="#object-search-parameters-ecommerce-search">Object: search parameters (ecommerce.search)</a></li>
+<li><a class="reference external" href="#object-reviews-about-product-ecommerce-product-reviews">Object: Reviews about product (ecommerce.product.reviews)</a></li>
+<li><a class="reference external" href="#object-payment-method-ecommerce-payment-method">Object: payment method (ecommerce.payment.method)</a></li>
+<li><a class="reference external" href="#object-credit-cards-ecommerce-creditcard">Object: Credit Cards (ecommerce.creditcard)</a></li>
+<li><a class="reference external" href="#object-ecommerce-payment-ecommerce-payment">Object: ecommerce payment (ecommerce.payment)</a></li>
+<li><a class="reference external" href="#object-ecommerce-payment-received-ecommerce-payment-received">Object: ecommerce payment received (ecommerce.payment.received)</a></li>
+<li><a class="reference external" href="#object-ecommerce-shop-ecommerce-shop">Object: ecommerce shop (ecommerce.shop)</a></li>
+<li><a class="reference external" href="#object-ecommerce-category-ecommerce-category">Object: ecommerce category (ecommerce.category)</a></li>
+<li><a class="reference external" href="#object-ecommerce-saleorder-ecommerce-saleorder">Object: ecommerce saleorder (ecommerce.saleorder)</a></li>
+<li><a class="reference external" href="#object-ecommerce-order-line-ecommerce-order-line">Object: ecommerce order line (ecommerce.order.line)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="document_webdav_old.html"
+                                  title="previous chapter">Integrated Document Management System (<em>document_webdav_old</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="ecotaxe.html"
+                                  title="next chapter">Module for &#8216;Eco participation&#8217; (<em>ecotaxe</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/ecommerce.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ecotaxe.html" title="Module for ‘Eco participation’ (ecotaxe)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="document_webdav_old.html" title="Integrated Document Management System (document_webdav_old)"
+             >previous</a> |</li>
+
+          <li><a href="index.html" >Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="ecotaxe.html" title="Module for ‘Eco participation’ (ecotaxe)"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="document_webdav_old.html" title="Integrated Document Management System (document_webdav_old)"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

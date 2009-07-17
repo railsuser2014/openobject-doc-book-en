@@ -1,0 +1,628 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Multiple-plans management in Analytic Accounting (account_analytic_plans) &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="up" title="Module Technical Guide: Introspection report on objects" href="index.html" />
+    <link rel="next" title="account_analytic_progress (account_analytic_progress)" href="account_analytic_progress.html" />
+    <link rel="prev" title="account_analytic_package (account_analytic_package)" href="account_analytic_package.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_progress.html" title="account_analytic_progress (account_analytic_progress)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_package.html" title="account_analytic_package (account_analytic_package)"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_progress.html" title="account_analytic_progress (account_analytic_progress)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_package.html" title="account_analytic_package (account_analytic_package)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Multiple-plans management in Analytic Accounting (<em>account_analytic_plans</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-analytic-plans-account-analytic-plan">Object: Analytic Plans (account.analytic.plan)</a></li>
+<li><a class="reference external" href="#object-analytic-plan-lines-account-analytic-plan-line">Object: Analytic Plan Lines (account.analytic.plan.line)</a></li>
+<li><a class="reference external" href="#object-analytic-plan-instance-account-analytic-plan-instance">Object: Analytic Plan Instance (account.analytic.plan.instance)</a></li>
+<li><a class="reference external" href="#object-analytic-instance-line-account-analytic-plan-instance-line">Object: Analytic Instance Line (account.analytic.plan.instance.line)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="account_analytic_package.html"
+                                  title="previous chapter">account_analytic_package (<em>account_analytic_package</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="account_analytic_progress.html"
+                                  title="next chapter">account_analytic_progress (<em>account_analytic_progress</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/account_analytic_plans.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="module-account_analytic_plans"></span>  <br />
+<link rel="stylesheet" href="../_static/hide_objects_in_sidebar.css" type="text/css" /><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This module is part of the Open ERP software, the leading Open Source
+enterprise management system. If you want to discover Open ERP, check our
+<a class="reference external" href="http://openerp.tv">screencasts</a> or download
+<a class="reference external" href="http://openerp.com">Open ERP</a> directly.</p>
+</div>
+<div class="js-kit-rating" title="" permalink="" standalone="yes" path="/account_analytic_plans"></div>
+<script src="http://js-kit.com/ratings.js"></script><div class="section" id="multiple-plans-management-in-analytic-accounting-account-analytic-plans">
+<h1>Multiple-plans management in Analytic Accounting (<em>account_analytic_plans</em>)<a class="headerlink" href="#multiple-plans-management-in-analytic-accounting-account-analytic-plans" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Module:</th><td class="field-body">account_analytic_plans</td>
+</tr>
+<tr class="field"><th class="field-name">Name:</th><td class="field-body">Multiple-plans management in Analytic Accounting</td>
+</tr>
+<tr class="field"><th class="field-name">Version:</th><td class="field-body">5.0.1.0</td>
+</tr>
+<tr class="field"><th class="field-name">Author:</th><td class="field-body">Tiny</td>
+</tr>
+<tr class="field"><th class="field-name">Directory:</th><td class="field-body">account_analytic_plans</td>
+</tr>
+<tr class="field"><th class="field-name">Web:</th><td class="field-body"><a class="reference external" href="http://www.openerp.com">http://www.openerp.com</a></td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Official module:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">Quality certified:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">yes</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/description" ></div><div class="highlight-python"><pre>This module allows to use several analytic plans, according to the general journal,
+so that multiple analytic lines are created when the invoice or the entries
+are confirmed.
+
+For example, you can define the following analytic structure:
+  Projects
+      Project 1
+          SubProj 1.1
+          SubProj 1.2
+      Project 2
+  Salesman
+      Eric
+      Fabien
+
+Here, we have two plans: Projects and Salesman. An invoice line must
+be able to write analytic entries in the 2 plans: SubProj 1.1 and
+Fabien. The amount can also be split. The following example is for
+an invoice that touches the two subproject and assigned to one salesman:
+
+Plan1:
+    SubProject 1.1 : 50%
+    SubProject 1.2 : 50%
+Plan2:
+    Eric: 100%
+
+So when this line of invoice will be confirmed, it will generate 3 analytic lines,
+for one account entry.</pre>
+</div>
+</div>
+<div class="section" id="download-links">
+<h2>Download links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/download-links" ></div><p>You can download this module as a zip file in the following version:</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/dependencies" ></div></div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/reports" ></div></div>
+<div class="section" id="menus">
+<h2>Menus<a class="headerlink" href="#menus" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/menus" ></div></div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/views" ></div></div>
+<div class="section" id="objects">
+<h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/technical_guide/account_analytic_plans/objects" ></div><div class="section" id="object-analytic-plans-account-analytic-plan">
+<h3>Object: Analytic Plans (account.analytic.plan)<a class="headerlink" href="#object-analytic-plans-account-analytic-plan" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">plan_ids:</th><td class="field-body">Analytic Plans, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Analytic Plan, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">default_instance_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Default Entries, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-analytic-plan-lines-account-analytic-plan-line">
+<h3>Object: Analytic Plan Lines (account.analytic.plan.line)<a class="headerlink" href="#object-analytic-plan-lines-account-analytic-plan-line" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">min_required:</th><td class="field-body">Minimum Allowed (%), float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">plan_id:</th><td class="field-body">Analytic Plan, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Plan Name, char, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">max_required:</th><td class="field-body">Maximum Allowed (%), float</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">sequence:</th><td class="field-body">Sequence, integer</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">root_analytic_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Root Account, many2one, required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-analytic-plan-instance-account-analytic-plan-instance">
+<h3>Object: Analytic Plan Instance (account.analytic.plan.instance)<a class="headerlink" href="#object-analytic-plan-instance-account-analytic-plan-instance" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account5_ids:</th><td class="field-body">Account5 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">code:</th><td class="field-body">Distribution Code, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">plan_id:</th><td class="field-body">Model&#8217;s Plan, many2one</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">name:</th><td class="field-body">Analytic Distribution, char</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account3_ids:</th><td class="field-body">Account3 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">journal_id:</th><td class="field-body">Analytic Journal, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account6_ids:</th><td class="field-body">Account6 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account_ids:</th><td class="field-body">Account Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account4_ids:</th><td class="field-body">Account4 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account2_ids:</th><td class="field-body">Account2 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">account1_ids:</th><td class="field-body">Account1 Id, one2many</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="object-analytic-instance-line-account-analytic-plan-instance-line">
+<h3>Object: Analytic Instance Line (account.analytic.plan.instance.line)<a class="headerlink" href="#object-analytic-instance-line-account-analytic-plan-instance-line" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">analytic_account_id:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Analytic Account, many2one, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">rate:</th><td class="field-body">Rate (%), float, required</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">plan_id:</th><td class="field-body">Plan Id, many2one</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Multiple-plans management in Analytic Accounting (<em>account_analytic_plans</em>)</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#download-links">Download links</a></li>
+<li><a class="reference external" href="#dependencies">Dependencies</a></li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#menus">Menus</a></li>
+<li><a class="reference external" href="#views">Views</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#object-analytic-plans-account-analytic-plan">Object: Analytic Plans (account.analytic.plan)</a></li>
+<li><a class="reference external" href="#object-analytic-plan-lines-account-analytic-plan-line">Object: Analytic Plan Lines (account.analytic.plan.line)</a></li>
+<li><a class="reference external" href="#object-analytic-plan-instance-account-analytic-plan-instance">Object: Analytic Plan Instance (account.analytic.plan.instance)</a></li>
+<li><a class="reference external" href="#object-analytic-instance-line-account-analytic-plan-instance-line">Object: Analytic Instance Line (account.analytic.plan.instance.line)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="account_analytic_package.html"
+                                  title="previous chapter">account_analytic_package (<em>account_analytic_package</em>)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="account_analytic_progress.html"
+                                  title="next chapter">account_analytic_progress (<em>account_analytic_progress</em>)</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/technical_guide/account_analytic_plans.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_progress.html" title="account_analytic_progress (account_analytic_progress)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_package.html" title="account_analytic_package (account_analytic_package)"
+             >previous</a> |</li>
+
+          <li><a href="index.html" >Module Technical Guide: Introspection report on objects</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_progress.html" title="account_analytic_progress (account_analytic_progress)"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="account_analytic_package.html" title="account_analytic_package (account_analytic_package)"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module Technical Guide: Introspection report on objects</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

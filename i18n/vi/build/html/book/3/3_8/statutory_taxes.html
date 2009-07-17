@@ -1,0 +1,665 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Statutory taxes and accounts &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Financial Analysis" href="index.html" />
+    <link rel="next" title="Company Financial Analysis" href="company_financial_analysis.html" />
+    <link rel="prev" title="Managing accounts payable / creditors and accounts receivable / debtors" href="managing_accounts.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="company_financial_analysis.html" title="Company Financial Analysis"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="managing_accounts.html" title="Managing accounts payable / creditors and accounts receivable / debtors"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="company_financial_analysis.html" title="Company Financial Analysis"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="managing_accounts.html" title="Managing accounts payable / creditors and accounts receivable / debtors"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Statutory taxes and accounts</a><ul>
+<li><a class="reference external" href="#taxation">Taxation</a><ul>
+<li><a class="reference external" href="#setting-up-a-tax-structure">Setting up a tax structure</a></li>
+<li><a class="reference external" href="#tax-cases">Tax Cases</a></li>
+<li><a class="reference external" href="#tax-objects">Tax objects</a></li>
+<li><a class="reference external" href="#use-of-taxes-on-products-partners-projects-and-accounts">Use of Taxes on Products, Partners, Projects and Accounts</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#the-accounts-ledgers-and-the-balance-sheet">The accounts ledgers and the balance sheet</a></li>
+<li><a class="reference external" href="#the-accounting-journals">The accounting journals</a></li>
+<li><a class="reference external" href="#tax-declaration">Tax declaration</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="managing_accounts.html"
+                                  title="previous chapter">Managing accounts payable / creditors and accounts receivable / debtors</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="company_financial_analysis.html"
+                                  title="next chapter">Company Financial Analysis</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/3/3_8/statutory_taxes.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="statutory-taxes-and-accounts">
+<h1>Statutory taxes and accounts<a class="headerlink" href="#statutory-taxes-and-accounts" title="Permalink to this headline">¶</a></h1>
+<p>This section deals with statutory taxes and accounts which are legally required from the company:</p>
+<ul class="simple">
+<li>the taxation structure provided by Open&nbsp;ERP,</li>
+<li>the accounts ledgers,</li>
+<li>account balance (used to produce the income statement and balance sheet),</li>
+<li>the different journals (general, centralized and detailed),</li>
+<li>the tax declaration.</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Other declarations</p>
+<p>In addition to the legal declarations available in the accounts modules,
+Open&nbsp;ERP supplies declarations based on the functionality in other modules.</p>
+<p class="last" id="index-169">You can, for example, install the <a title="Intrastat Reporting - Reporting (Official, Quality Certified)" class="reference external" href="../../../technical_guide/report_intrastat.html#module-report_intrastat"><tt class="xref docutils literal"><span class="pre">report_intrastat</span></tt></a> module for intra-stat declarations
+about sending goods to and receiving goods from other countries.</p>
+</div>
+<span class="target" id="index-170"></span><div class="section" id="taxation">
+<h2>Taxation<a class="headerlink" href="#taxation" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/taxation" ></div><p>You can attach taxes to financial transactions so that you can</p>
+<ul class="simple">
+<li>add taxes to the amount that you pay or get paid,</li>
+<li>report on the taxes in various categories that you should pay the tax authorities,</li>
+<li>track taxes in your general accounts,</li>
+<li>manage the payment and refund of taxes using the same mechanisms that Open&nbsp;ERP uses for other
+monetary transactions.</li>
+</ul>
+<p>Since the detailed tax structure is a mechanism for carrying out governments&#8217; policies, and the
+collecting of taxes so critical to their authorities, tax requirements and reporting can be
+complex. Open&nbsp;ERP has a flexible mechanism for handling taxation that can be configured through its
+GUI or through data import mechanisms to meet the requirements of many various tax jurisdictions.</p>
+<p>The taxation mechanism can also be used to handle other tax-like financial transactions, such as
+royalties to authors based on the value of transactions through an account.</p>
+<div class="section" id="setting-up-a-tax-structure">
+<h3>Setting up a tax structure<a class="headerlink" href="#setting-up-a-tax-structure" title="Permalink to this headline">¶</a></h3>
+<p>Three main objects are involved in the tax system in Open&nbsp;ERP:</p>
+<ul class="simple">
+<li>a <strong>Tax Case</strong> (or <strong>Tax Code</strong>), used for tax reporting, that can be set up in a hierarchical
+structure so that multiple codes can be formed into trees in the same way as a Chart of Accounts.</li>
+<li>a <strong>Tax</strong>, the basic tax object that contains the rules for calculating tax on the financial
+transaction it&#8217;s attached to, and is linked to the General Accounts and to the Tax Cases. A tax can
+contain multiple child taxes and base its calculation on those taxes rather than the base
+transaction, providing considerable flexibility. Each tax belongs to a <strong>Tax Group</strong> (currently just
+<tt class="docutils literal"><span class="pre">VAT</span></tt>  or <tt class="docutils literal"><span class="pre">Other</span></tt> ).</li>
+<li>the <strong>General Accounts</strong>, that record the taxes owing and paid. Since the general accounts are
+discussed elsewhere in this part of the book and are not tax-specific, they won&#8217;t be detailed in
+this section.</li>
+</ul>
+<p>You can attach zero or more <strong>Supplier Tax</strong> and <strong>Customer Tax</strong> items to products, so that you can
+account separately for purchase and sales taxes (or Input and Output VAT – where VAT is Value
+Added Tax). Because you can attach more than one tax, you can handle a VAT or Sales Tax separately
+from an Eco Tax on the same product.</p>
+<p>You can also attach a <strong>Default Tax</strong> to a Partner, which replaces any taxes belonging to
+the same Tax Group that may have been defined in a Product.</p>
+<p>So you can define a <tt class="docutils literal"><span class="pre">Tax</span> <span class="pre">Exempt</span></tt>  tax in the <tt class="docutils literal"><span class="pre">VAT</span></tt>  group and assign it to partners who
+declare themselves to be charities. All product sales to a charity would then be VAT free even if
+the products themselves carry various tax rates, but non-VAT taxes such as Eco-taxes can still be
+applied.</p>
+</div>
+<div class="section" id="tax-cases">
+<h3>Tax Cases<a class="headerlink" href="#tax-cases" title="Permalink to this headline">¶</a></h3>
+<p>Tax Cases are also known in Open&nbsp;ERP as Tax Codes. They&#8217;re used for tax reporting, and can be set
+up in a hierarchical structure to form trees in the same way as a Chart of Accounts.</p>
+<p>To create a new Tax Case, use the menu <em>Financial Management ‣ Configuration ‣
+Taxes ‣ Tax Codes</em>. You define the following fields:</p>
+<ul class="simple">
+<li><strong>Tax Case Name</strong> : a unique name required to identify the Case,</li>
+<li><strong>Company</strong> : a required link that attaches the Case to a specific company, such as the
+Main Company,</li>
+<li><strong>Case Code</strong> : an optional short code for the case,</li>
+<li><strong>Parent Code</strong> : a link to a parent Tax Case that forms the basis of the tree structure
+like a Chart of Accounts,</li>
+<li><strong>Sign for Parent</strong> : choose 1.00 to add the total to the parent account or -1.00 to
+subtract it,</li>
+<li><strong>Description</strong> : a free text field for documentation purposes.</li>
+</ul>
+<p>You can also see two read-only fields:</p>
+<ul class="simple">
+<li><strong>Year Sum</strong> : a single figure showing the total accumulated on this case for the
+financial year.</li>
+<li><strong>Period Sum</strong> : a single figure showing the total accumulated on this case for the
+current financial period (perhaps 1 month or 3 months).</li>
+</ul>
+<p>You will probably need to create two tax cases for each different tax rate that you have to define,
+one for the tax itself and one for the invoice amount that the tax is based on. And you&#8217;ll create
+tax cases that you won&#8217;t link to Tax objects (similar to General Account <tt class="docutils literal"><span class="pre">View</span></tt>  types) just
+to organize the tree structure.</p>
+<p>To view the structure that you&#8217;ve constructed you can use the menu <em>Financial
+Management ‣ Reporting ‣ Taxes Report ‣ Chart of Taxes</em>. This tree view reflects the structure of the
+<strong>Tax Cases</strong> and shows the current tax situation.</p>
+</div>
+<div class="section" id="tax-objects">
+<h3>Tax objects<a class="headerlink" href="#tax-objects" title="Permalink to this headline">¶</a></h3>
+<p>Tax objects calculate tax on the financial transactions that they&#8217;re attached to, and are linked to
+the General Accounts and to the Tax Cases.</p>
+<p>To create a new Tax Case, use the menu <em>Financial Management ‣ Configuration ‣
+Financial Accounting ‣ Taxes ‣ Taxes</em>. You define the following fields:</p>
+<ul class="simple">
+<li><strong>Tax Name</strong> : a unique name required for this tax (such as <tt class="docutils literal"><span class="pre">12%</span> <span class="pre">Sales</span> <span class="pre">VAT</span></tt> ),</li>
+<li><strong>Company</strong> : a required link to a company associated with the tax, such as the Main
+Company,</li>
+<li><strong>Tax Group</strong> : <tt class="docutils literal"><span class="pre">VAT</span></tt>  or <tt class="docutils literal"><span class="pre">Other</span></tt> , used to determine which taxes on products
+can be substituted by taxes on partners,</li>
+<li><strong>Tax Type</strong> : a required field directing how to calculate the tax: <tt class="docutils literal"><span class="pre">Percent</span></tt> ,
+``Fixed`` , <tt class="xref docutils literal"><span class="pre">None</span></tt>  or <tt class="docutils literal"><span class="pre">Python</span> <span class="pre">Code</span></tt> , (the latter is found in the <strong>Compute Code</strong>
+field in the <strong>Special Computation</strong> tab),</li>
+<li><strong>Applicable Type</strong> : a required field that indicates whether the base amount should be
+used unchanged (when the value is <tt class="xref docutils literal"><span class="pre">True</span></tt> ) or whether it should be processed by Python Code in
+the <strong>Applicable Code</strong> field in the <strong>Special Computation</strong> tab when the value is <tt class="docutils literal"><span class="pre">Code</span></tt> ),</li>
+<li><strong>Amount</strong> : a required field whose meaning depends on the Tax Type, being a multiplier
+on the base amount when the <strong>Tax Type</strong> is <tt class="docutils literal"><span class="pre">Percent</span></tt> , and a fixed amount added to the base
+amount when the <strong>Tax Type</strong> is <tt class="docutils literal"><span class="pre">Fixed</span></tt> ,</li>
+<li><strong>Include in base amount</strong> : when checked, the tax is added to the base amount and not
+shown separately,</li>
+<li><strong>Domain</strong> : is only used in special developments, not in the core Open&nbsp;ERP system,</li>
+<li><strong>Invoice Tax Account</strong> :a General Account used to record invoiced tax amounts, which may
+be the same for several taxes or split so that one tax is allocated to one account,</li>
+<li><strong>Refund Tax Account</strong> : a General Account used to record invoiced tax refunds, which may
+be the same as the Invoice Tax Account or, in some tax jurisdictions, must be separated,</li>
+<li><strong>Tax on Children</strong> : when checked, the tax calculation is applied to the output from other
+tax calculations specified in the <strong>Childs Tax Account</strong> field (so you can have taxes on
+taxes), otherwise the calculation is applied to the base amount on the transaction,</li>
+<li><strong>Tax included in Price</strong> : when checked, the total value shown includes this tax,</li>
+<li><strong>Tax Application</strong> : selects whether the tax is applicable to Sale, Purchase or All
+transactions,</li>
+<li><strong>Child Tax Accounts</strong> : other tax accounts that can be used to supply the figure for
+taxation.</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Using Child Taxes</p>
+<p>You can use child taxes when you have a complex tax situation that you want to hide your end users
+from.
+For example, you might define a motor mileage expenses product with a composite tax made up of two
+child taxes –
+a non-reclaimable private element and a reclaimable business element (which is the case in some
+European countries).</p>
+<p class="last">When your staff come to claim motor mileage, they do not need to know about this taxation,
+but the accounting impact of their claim will be automatically managed in Open&nbsp;ERP.</p>
+</div>
+<p>The fields above apply the taxes that you specify and record them in the general accounts but don&#8217;t
+provide you with the documentation that your tax authorities might need. For this use the Tax
+Declaration tab to define which Tax Cases should be used for this tax:</p>
+<ul class="simple">
+<li><strong>Invoices/Base Code</strong> : tax case to record the invoiced amount that the tax is based on,</li>
+<li><strong>Invoices/Tax Code</strong> : tax case to record the invoiced tax amount</li>
+<li><strong>Credit Notes/Refund Base Code</strong> : tax case to record the refund invoice amount that the tax
+is based on,</li>
+<li><strong>Credit Notes/Refund Tax Code</strong> : tax case to record the refund invoice tax amount.</li>
+</ul>
+</div>
+<div class="section" id="use-of-taxes-on-products-partners-projects-and-accounts">
+<h3>Use of Taxes on Products, Partners, Projects and Accounts<a class="headerlink" href="#use-of-taxes-on-products-partners-projects-and-accounts" title="Permalink to this headline">¶</a></h3>
+<p>When you&#8217;ve created a tax structure consisting of Tax Cases and Tax objects, you can use the taxes
+in your various business objects so that financial transactions can be associated with taxes and
+tax-like charges.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Retail Customers</p>
+<p>When you&#8217;re retailing to end users rather than selling to a business,
+you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather
+than a tax-exclusive price plus tax.</p>
+<p class="last" id="index-171">To do this in Open&nbsp;ERP just install the <a title="Invoices and prices with taxes included (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account_tax_include.html#module-account_tax_include"><tt class="xref docutils literal"><span class="pre">account_tax_include</span></tt></a> module.
+Each invoice is given a new <strong>Price method</strong> field, in which you choose
+<strong>Tax included</strong> or <strong>Tax excluded</strong>.
+Prices are then displayed appropriately.</p>
+</div>
+<p>You can assign a tax to a Partner so that it overrides any tax defined in a Product. You&#8217;d do this,
+for example, if a partner was a charity and paid a lower or zero rate of VAT or Sales Tax on its
+purchases. Assuming that you have an appropriate Charities VAT or Sales Tax in the <tt class="docutils literal"><span class="pre">VAT</span></tt> <strong>Tax
+Group</strong>, use the menu <em>Partners ‣ Partners</em> to open and edit a Partner form for the
+charity, then:</p>
+<ul class="simple">
+<li>select the <strong>Properties</strong> tab,</li>
+<li>set the <strong>Default Tax</strong> field to the <tt class="docutils literal"><span class="pre">Charities</span> <span class="pre">VAT</span></tt>  tax.</li>
+</ul>
+<p>You can assign multiple taxes to a Product. Assuming you have set up the appropriate taxes, you
+would use the menu <em>Products ‣ Products</em> to open and edit a Product definition,
+then:</p>
+<ul class="simple">
+<li>select one or more <strong>Customer Taxes</strong>  for any products that you might sell, which may
+include a <tt class="docutils literal"><span class="pre">Sales</span> <span class="pre">Tax</span></tt>  or <tt class="docutils literal"><span class="pre">Output</span> <span class="pre">VAT</span></tt> , and a <tt class="docutils literal"><span class="pre">Sales</span> <span class="pre">Eco</span> <span class="pre">Tax</span></tt> ,</li>
+<li>select one or more <strong>Supplier Taxes</strong> for any products that you might purchase, which may
+include a <tt class="docutils literal"><span class="pre">Purchase</span> <span class="pre">Tax</span></tt>  or <tt class="docutils literal"><span class="pre">Input</span> <span class="pre">VAT</span></tt> , and a <tt class="docutils literal"><span class="pre">Purchase</span> <span class="pre">Eco</span> <span class="pre">Tax</span></tt> .</li>
+</ul>
+<p>Generally, when you make a purchase or sale, the taxes assigned to the product are used to calculate
+the taxes owing or owed. But when you make a transaction with a partner that has a <strong>Default Tax</strong>
+defined, for example a sale to a charity with <tt class="docutils literal"><span class="pre">Charities</span> <span class="pre">``\</span>&nbsp; <span class="pre">\</span> <span class="pre">``Tax</span></tt> , that tax will be used
+in place of other Product taxes in the same group – in this case replacing the standard <tt class="docutils literal"><span class="pre">Sales</span>
+<span class="pre">Tax</span></tt>  or <tt class="docutils literal"><span class="pre">Output</span> <span class="pre">VAT</span></tt> .</p>
+<p>You can also assign multiple taxes to a Project, so that invoices from the Project carry an
+appropriate rate of tax (project invoicing is dealt with in detail in <a class="reference external" href="../../4/4_13_Projects/index.html#ch-projects"><em>Internal Organization and Project Management</em></a>).</p>
+<span class="target" id="index-172"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Tax regions</p>
+<p>The third-party module <a title="Import Export" class="reference external" href="../../../technical_guide/import_export.html#module-import_export"><tt class="xref docutils literal"><span class="pre">import_export</span></tt></a> (currently in <tt class="docutils literal"><span class="pre">addons-extra</span></tt>
+can be used to extend Open&nbsp;ERP&#8217;s tax system,
+so that you can assign taxes to different accounts depending on the location of the Partner.
+The <strong>Partner</strong> is given a new <strong>Partner Location</strong> field that can be set to Local,
+Europe or Outside,
+so that taxes and tax bases can be channelled to different accounts.</p>
+<p class="last">This module could be the basis of more ambitious location-based tax accounting.</p>
+</div>
+<p>And you can assign multiple taxes to an account so that when you transfer money through the account
+you attract a tax amount. In such a case, this &#8216;tax&#8217; may not be legally-required taxation but
+something tax-like, for example authors&#8217; royalties or sales commission.</p>
+<span class="target" id="index-173"></span></div>
+</div>
+<div class="section" id="the-accounts-ledgers-and-the-balance-sheet">
+<h2>The accounts ledgers and the balance sheet<a class="headerlink" href="#the-accounts-ledgers-and-the-balance-sheet" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-accounts-ledgers-and-the-balance-sheet" ></div><p>To print the balance of accounts or the accounts ledgers you should turn to the Chart of Accounts.
+To do that go to the menu <em>Financial Management ‣ Charts ‣ Charts of Accounts</em>.</p>
+<p>Select the accounting period and type of moves (all entries or just posted entries) you&#8217;re interested in
+and click <strong>Open Charts</strong> to display the chart in a tree view, then select one
+or several accounts for analysis by clicking and highlighting the appropriate line(s).
+Click the <strong>General Ledger</strong>, the <strong>Account
+balance</strong>, or an <strong>Analytic check</strong> in the <strong>Reports</strong> toolbar at the right.
+If you select an account which has sub-accounts in the
+hierarchy you automatically analyze both that account and its child accounts.</p>
+<span class="target" id="index-174"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Simulated balance</p>
+<p>While you&#8217;re printing account balances,
+if you have installed the <a title="Accounting simulation journal" class="reference external" href="../../../technical_guide/account_simulation.html#module-account_simulation"><tt class="xref docutils literal"><span class="pre">account_simulation</span></tt></a> module from addons-extra,
+Open&nbsp;ERP asks you which level of
+simulation to execute.</p>
+<p>Results will vary depending on the level selected.
+You could, for example, print the balance depending on various methods of amortization:</p>
+<ul class="simple">
+<li>the normal IFRS method,</li>
+<li>the French method.</li>
+</ul>
+<p class="last">More generally it enables you to make analyses using other simulation levels that you could
+expect.</p>
+</div>
+<span class="target" id="index-175"></span><p>The <a title="Reporting of Balancesheet for accounting (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account_reporting.html#module-account_reporting"><tt class="xref docutils literal"><span class="pre">account_reporting</span></tt></a> module was developed to provide configurable reports for balance sheets
+or earnings statements in legally required formats.</p>
+<span class="target" id="index-176"></span></div>
+<div class="section" id="the-accounting-journals">
+<h2>The accounting journals<a class="headerlink" href="#the-accounting-journals" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-accounting-journals" ></div><p>To obtain the different journals use the menu <em>Financial Management ‣ Reporting ‣
+Journals</em>.</p>
+<span class="target" id="index-177"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Journals</p>
+<p>Note there are different types of journal in Open&nbsp;ERP</p>
+<ul class="simple">
+<li>accounting journals (detailed in this chapter),</li>
+<li>purchase journals (for distributing supplies provided on certain dates),</li>
+<li>sales journals (for example classifying sales by their type of trade),</li>
+<li>the invoice journals (to classify sales by mode of invoicing - daily / weekly / monthly - and
+automating the tasks.</li>
+</ul>
+<p class="last">To get access to these different journals install the modules <a title="Managing sales and deliveries by journal (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale_journal.html#module-sale_journal"><tt class="xref docutils literal"><span class="pre">sale_journal</span></tt></a> (found at the time of
+writing in <tt class="docutils literal"><span class="pre">addons</span></tt>, so available in a standard installation) and <a title="Managing sales and deliveries by journal" class="reference external" href="../../../technical_guide/purchase_journal.html#module-purchase_journal"><tt class="xref docutils literal"><span class="pre">purchase_journal</span></tt></a> (found in
+<tt class="docutils literal"><span class="pre">addons-extra</span></tt> at the time of writing, so needing special installation).</p>
+</div>
+<p>Then select one or several journals and click <strong>Print</strong>. Open&nbsp;ERP then proposes various reports:</p>
+<ul class="simple">
+<li>detailed accounting entries,</li>
+<li>general journal,</li>
+<li>journal grouped by account.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_journal_print.png"><img alt="../../../_images/account_journal_print.png" src="../../../_images/account_journal_print.png" style="width: 251.0px; height: 250.0px;" /></a>
+<p class="caption"><em>Printing a journal</em></p>
+</div>
+</div>
+<div class="section" id="tax-declaration">
+<h2>Tax declaration<a class="headerlink" href="#tax-declaration" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/tax-declaration" ></div><p>Information required for a tax declaration is automatically generated by Open&nbsp;ERP from invoices. In
+the section on invoicing you&#8217;ll have seen that you can get details of tax information from the area
+at the bottom left of an invoice.</p>
+<p>You can also get the information from the accounting entries in the columns to the right.</p>
+<p>Open&nbsp;ERP keeps a tax chart that you can reach from the menu <em>Financial Management
+‣ Periodical Processing ‣ Taxes</em>. The structure of the chart is for calculating the tax
+declaration but also all the other taxes can be calculated (such as the French DEEE).</p>
+<span class="target" id="index-179"></span><div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_tax_chart.png"><img alt="../../../_images/account_tax_chart.png" src="../../../_images/account_tax_chart.png" style="width: 350.0px; height: 247.0px;" /></a>
+<p class="caption"><em>Example of a Belgian TVA (VAT) declaration</em></p>
+</div>
+<p>The tax chart represents the amount of each area of the tax declaration for your country. It&#8217;s
+presented in a hierarchical structure which lets you see the detail only of what interests you and
+hides the less interesting subtotals. This structure can be altered as you wish to fit your needs.</p>
+<p>You can create several tax charts if your company is subject to different types of tax or tax-like
+accounts, such as:</p>
+<ul class="simple">
+<li>authors&#8217; rights,</li>
+<li>ecotaxes such as the French DEEE for recycling electrical equipment.</li>
+</ul>
+<p>Each accounting entry can then be linked to one of the tax accounts. This association is done
+automatically by the taxes which had previously been configured in the invoice lines.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Tax declaration</p>
+<p>Some accounting software manages the tax declaration in a dedicated general account.
+The declaration is then limited to the balance in the specified period.
+In Open&nbsp;ERP you can create an independent chart of taxes, which has several advantages:</p>
+<ul class="last simple">
+<li>it&#8217;s possible to allocate only a part of the tax transaction,</li>
+<li>it&#8217;s not necessary to manage several different general accounts depending on the type of sale and
+type of tax,</li>
+<li>you can restructure your chart of taxes as you need.</li>
+</ul>
+</div>
+<p>At any time you can check your chart of taxes for a given period using the report
+<em>Financial Management ‣ Reporting ‣ Taxes Reports ‣ Print Taxes Report</em>.</p>
+<p>This data is updated in real time. That&#8217;s very useful because it enables you to preview at any time
+the tax that you owe at the start and end of the month or quarter.</p>
+<p>Furthermore, for your tax declaration you can click on one of the tax accounts to investigate the
+detailed entries that make up the full amount. This helps you search for errors such as when you&#8217;ve
+entered an invoice at full tax rate when it should have been zero-rated for an inter-community trade or for
+a charity.</p>
+<p>In some countries, tax can be calculated on the basis of payments received rather than invoices
+sent. In this instance choose <strong>Base on</strong> <tt class="docutils literal"><span class="pre">Payments</span></tt>  instead of <strong>Base on</strong> <tt class="docutils literal"><span class="pre">Invoices</span></tt>  in the <strong>Select period</strong> field. Even if you make your declaration on the
+basis of invoices sent and received it can be helpful to compare the two reports to see the
+amount of tax that you pay but haven&#8217;t yet received from your customers.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Statutory taxes and accounts</a><ul>
+<li><a class="reference external" href="#taxation">Taxation</a><ul>
+<li><a class="reference external" href="#setting-up-a-tax-structure">Setting up a tax structure</a></li>
+<li><a class="reference external" href="#tax-cases">Tax Cases</a></li>
+<li><a class="reference external" href="#tax-objects">Tax objects</a></li>
+<li><a class="reference external" href="#use-of-taxes-on-products-partners-projects-and-accounts">Use of Taxes on Products, Partners, Projects and Accounts</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#the-accounts-ledgers-and-the-balance-sheet">The accounts ledgers and the balance sheet</a></li>
+<li><a class="reference external" href="#the-accounting-journals">The accounting journals</a></li>
+<li><a class="reference external" href="#tax-declaration">Tax declaration</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="managing_accounts.html"
+                                  title="previous chapter">Managing accounts payable / creditors and accounts receivable / debtors</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="company_financial_analysis.html"
+                                  title="next chapter">Company Financial Analysis</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/3/3_8/statutory_taxes.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="company_financial_analysis.html" title="Company Financial Analysis"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="managing_accounts.html" title="Managing accounts payable / creditors and accounts receivable / debtors"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >General Accounting</a> &raquo;</li>
+          <li><a href="index.html" >Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="company_financial_analysis.html" title="Company Financial Analysis"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="managing_accounts.html" title="Managing accounts payable / creditors and accounts receivable / debtors"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

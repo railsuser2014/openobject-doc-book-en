@@ -1,0 +1,491 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Database creation &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Installation and Initial Setup" href="index.html" />
+    <link rel="next" title="Guided Tour" href="../1_2_Guided_Tour/index.html" />
+    <link rel="prev" title="The installation of Open ERP" href="1_1_Inst_Config_install.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../1_2_Guided_Tour/index.html" title="Guided Tour"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../1_2_Guided_Tour/index.html" title="Guided Tour"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Database creation</a><ul>
+<li><a class="reference external" href="#creating-the-database">Creating the database</a></li>
+<li><a class="reference external" href="#database-openerp-ch01">Database openerp_ch01</a></li>
+<li><a class="reference external" href="#managing-databases">Managing databases</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#new-open-erp-functionality">New Open&nbsp;ERP functionality</a><ul>
+<li><a class="reference external" href="#extending-open-erp">Extending Open&nbsp;ERP</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="1_1_Inst_Config_install.html"
+                                  title="previous chapter">The installation of Open&nbsp;ERP</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../1_2_Guided_Tour/index.html"
+                                  title="next chapter">Guided Tour</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_1_Inst_Config/1_1_Inst_Config_db_create.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-4"></span><div class="section" id="database-creation">
+<span id="sect-dbcreate"></span><h1>Database creation<a class="headerlink" href="#database-creation" title="Permalink to this headline">¶</a></h1>
+<p>Use the technique outlined in this section to create a new database, <tt class="docutils literal"><span class="pre">openerp_ch01</span></tt> . This
+database will contain the demonstration data provided with Open ERP and a large proportion of the
+core Open&nbsp;ERP functionality. You&#8217;ll need to know your super administrator password for this – or
+you&#8217;ll have to find somebody who does have it to create this seed database.</p>
+<span class="target" id="index-5"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The super-administrator password</p>
+<p>Anyone who knows the super-administrator password has complete access to the data on the server
+– able to read, change and delete any of the data in any of the databases there.</p>
+<p>After first installation, the password is <tt class="docutils literal"><span class="pre">admin</span></tt>. This is the hard-coded default, and
+is used if there is no accessible server configuration file. If your system has been
+set up so that the server configuration file can be written to by the server then
+you can change the password through the client. Or you could deliberately make the
+configuration file read-only so that there is no prospect of changing it from the client.
+Either way, a server systems administrator can change it if you forget it.</p>
+<p>So if your system is set u to allow it, you can change the superadmin password through the GTK client
+from the menu <em>File ‣ Databases ‣ Administrator Password</em>, or through the
+web client by logging out (click the <strong>Logout</strong> link), clicking <strong>Databases</strong> on the
+login screen, and then clicking the <strong>Password</strong> button on the Management screen.</p>
+<p class="last">The location of the server configuration file is typically defined by starting the server with
+the <tt class="docutils literal"><span class="pre">--config</span></tt> command line option.</p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/change_superadmin_pwd.png"><img alt="../../../_images/change_superadmin_pwd.png" src="../../../_images/change_superadmin_pwd.png" style="width: 600.0px; height: 320.25px;" /></a>
+<p class="caption"><em>Changing the super-administrator password through the web client</em></p>
+</div>
+<div class="section" id="creating-the-database">
+<span id="sect-creatingdb"></span><h2>Creating the database<a class="headerlink" href="#creating-the-database" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/creating-the-database" ></div><p>If you&#8217;re using the GTK client, choose <em>Files ‣ Databases ‣ New database</em>  in
+the menu at the top left. Enter the super-administrator password, then the name of the new database
+you&#8217;re creating.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/create_new_db_GTK.png"><img alt="../../../_images/create_new_db_GTK.png" src="../../../_images/create_new_db_GTK.png" style="width: 472.5px; height: 254.25px;" /></a>
+<p class="caption"><em>Creating a new database through the GTK client</em></p>
+</div>
+<p>If you&#8217;re using the web client, click <strong>Databases</strong> on the login screen, then
+<strong>Create</strong> on the database management page. Enter the super-administrator password, and the
+name of the new database you&#8217;re creating.</p>
+<p>In both cases you&#8217;ll see a checkbox that determines whether you load demonstration data or not.
+The consequences of checking this box or not affect the <strong>whole use</strong> of this database.</p>
+<p>In both cases you&#8217;ll also see that you can choose the Administrator password. This makes your
+database quite secure because you can ensure that it is unique from the outset.
+(In fact many people find it hard to resist <tt class="docutils literal"><span class="pre">admin</span></tt> as their password!)</p>
+</div>
+<div class="section" id="database-openerp-ch01">
+<h2>Database openerp_ch01<a class="headerlink" href="#database-openerp-ch01" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/database-openerp-ch01" ></div><span class="target" id="index-6"></span><p>Wait for the message showing that the database has been successfully created, along with the user
+accounts and passwords (<tt class="docutils literal"><span class="pre">admin/XXXX</span></tt>  and <tt class="docutils literal"><span class="pre">demo/demo</span></tt> ). Now you&#8217;ve created this seed
+database you can extend it without having to know the super-administrator password.</p>
+<span class="target" id="index-7"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>User Access</p>
+<p>The combination of username/password is specific to a single database. If you have administrative
+rights to a database you can modify all users.</p>
+<p class="last" id="index-8">Alternatively you can install the <a title="Authenticate users with ldap server" class="reference external" href="../../../technical_guide/users_ldap.html#module-users_ldap"><tt class="xref docutils literal"><span class="pre">users_ldap</span></tt></a> module, which manages the authentication of users
+in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
+Open&nbsp;ERP databases. Using this, many databases can share the same user account details.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Failure to create a database</p>
+<p class="last">How do you know if you&#8217;ve successfully created your new database?
+You&#8217;re told if the database creation has been unsuccessful.
+If you have entered a database name using prohibited characters (or no name, or too short a name)
+you will be alerted by the dialog box <strong>Bad database name!</strong> explaining how to correct the error.
+If you&#8217;ve entered the wrong super-administrator password or a name already in use
+(some names can be reserved without your knowledge), you&#8217;ll be alerted by the dialog box
+<strong>Error during database creation!</strong>.</p>
+</div>
+<p>Connect to the database <tt class="docutils literal"><span class="pre">openerp_ch01</span></tt>  that you just created, using the default administrator
+account.</p>
+<p>If this is the first time you&#8217;ve connected to this database you&#8217;ll be asked a series of questions to
+define the database parameters:</p>
+<p>Once configuration is complete you&#8217;re connected to your Open&nbsp;ERP system. Its functionality is very
+limited because you&#8217;ve selected a minimal installation, but this is sufficient to demonstrate that
+your installation is working.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/define_main_co_dlg.png"><img alt="../../../_images/define_main_co_dlg.png" src="../../../_images/define_main_co_dlg.png" style="width: 640.0px; height: 426.4px;" /></a>
+<p class="caption"><em>Defining your company during initial database configuration</em></p>
+</div>
+<span class="target" id="index-9"></span></div>
+<div class="section" id="managing-databases">
+<h2>Managing databases<a class="headerlink" href="#managing-databases" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/managing-databases" ></div><p>As a super-administrator you&#8217;ve not only got rights to create new databases, but also to:</p>
+<ul class="simple">
+<li>delete databases,</li>
+<li>backup databases,</li>
+<li>restore databases.</li>
+</ul>
+<p>All of these operations can be carried out from the menu <em>File ‣ Databases... ‣
+Backup databases</em> in the GTK client, or from the <strong>Database</strong> button in the web client&#8217;s
+<strong>Login</strong> screen.</p>
+<span class="target" id="index-10"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Duplicating a database</p>
+<p>To duplicate a database you can:</p>
+<ol class="arabic simple">
+<li>make a backup file on your PC from this database.</li>
+<li>restore this database from the backup file on your PC, giving it a new name as you do so.</li>
+</ol>
+<p class="last">This can be a useful way of making a test database from a production database. You can try out the
+operation of a new configuration, new modules, or just the import of new data.</p>
+</div>
+<span class="target" id="index-11"></span><p>A system administrator can configure Open&nbsp;ERP to restrict access to some of these database functions
+so that your security is enhanced in normal production use.</p>
+<p>You are now ready to use databases from your installation to familiarize yourself with the
+administration and use of Open&nbsp;ERP.</p>
+</div>
+</div>
+<div class="section" id="new-open-erp-functionality">
+<h1>New Open&nbsp;ERP functionality<a class="headerlink" href="#new-open-erp-functionality" title="Permalink to this headline">¶</a></h1>
+<p>The database you&#8217;ve created and managed so far is based on the core Open&nbsp;ERP functionality that you
+installed. The core system is installed in the file system of your Open&nbsp;ERP application server, but
+only installed into an Open&nbsp;ERP database as you require it, as is described in the next chapter, <a class="reference external" href="../1_2_Guided_Tour/index.html#ch-guided"><em>Guided Tour</em></a>.</p>
+<p>What if want to update what&#8217;s there, or extend what&#8217;s there with additional modules?</p>
+<ul class="simple">
+<li>To update what you have, you&#8217;d install a new instance of Open&nbsp;ERP using the same techniques as
+described earlier in this section, <a class="reference internal" href="#sect-dbcreate"><em>Database creation</em></a>.</li>
+<li>To extend what you have, you&#8217;d install new modules in the <tt class="docutils literal"><span class="pre">addons</span></tt> directory of your current
+Open&nbsp;ERP installation. There are several ways of doing that.</li>
+</ul>
+<span class="target" id="index-12"></span><p>In both cases you&#8217;ll need briefly to be a <tt class="docutils literal"><span class="pre">root</span></tt>  user or <tt class="docutils literal"><span class="pre">Administrator</span></tt>  of your
+Open&nbsp;ERP application server.</p>
+<div class="section" id="extending-open-erp">
+<h2>Extending Open&nbsp;ERP<a class="headerlink" href="#extending-open-erp" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/extending-open-erp" ></div><p>To extend Open&nbsp;ERP you&#8217;ll need to copy modules into the <tt class="docutils literal"><span class="pre">addons</span></tt>  directory. That&#8217;s in
+your server&#8217;s <tt class="docutils literal"><span class="pre">openerp-server</span></tt>  directory (which differs between Windows, Mac and some of the
+various Linux distributions and not available at all in the Windows all-in-one installer).</p>
+<span class="target" id="index-13"></span><p>If you look there you&#8217;ll see existing modules such as <a title="Products &amp; Pricelists (Official, Quality Certified)" class="reference external" href="../../../technical_guide/product.html#module-product"><tt class="xref docutils literal"><span class="pre">product</span></tt></a> and <a title="Purchase Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/purchase.html#module-purchase"><tt class="xref docutils literal"><span class="pre">purchase</span></tt></a>. A
+module can be provided in the form of files within a directory or a a zip-format file containing
+that same directory structure.</p>
+<p>You can add modules in two main ways – through the server, or through the client.</p>
+<span class="target" id="index-14"></span><p>To add new modules through the server is a conventional systems administration task. As <tt class="docutils literal"><span class="pre">root</span></tt>user or other suitable user, you&#8217;d put the module in the <tt class="docutils literal"><span class="pre">addons</span></tt>  directory and change its
+permissions to match those of the other modules.</p>
+<p>To add new modules through the client you must first change the permissions of the <tt class="docutils literal"><span class="pre">addons</span></tt>directory of the server, so that it is writable by the server. That will enable you to install
+Open&nbsp;ERP modules using the Open&nbsp;ERP client (a task ultimately carried out on the application
+server by the server software).</p>
+<span class="target" id="index-15"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Changing permissions</p>
+<p class="last">A very simple way of changing permissions on the Linux system you&#8217;re using to develop an Open&nbsp;ERP
+application is to execute the command sudo chmod 777 &lt;path_to_addons&gt; (where &lt;path_to_addons&gt; is
+the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-
+server/addons).</p>
+</div>
+<p>Any user of Open&nbsp;ERP who has access to the relevant administration menus can then upload any new
+functionality, so you&#8217;d certainly disable this capability for production use. You&#8217;ll see examples of
+this uploading as you make your way through this book.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Database creation</a><ul>
+<li><a class="reference external" href="#creating-the-database">Creating the database</a></li>
+<li><a class="reference external" href="#database-openerp-ch01">Database openerp_ch01</a></li>
+<li><a class="reference external" href="#managing-databases">Managing databases</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#new-open-erp-functionality">New Open&nbsp;ERP functionality</a><ul>
+<li><a class="reference external" href="#extending-open-erp">Extending Open&nbsp;ERP</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="1_1_Inst_Config_install.html"
+                                  title="previous chapter">The installation of Open&nbsp;ERP</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../1_2_Guided_Tour/index.html"
+                                  title="next chapter">Guided Tour</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_1_Inst_Config/1_1_Inst_Config_db_create.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../1_2_Guided_Tour/index.html" title="Guided Tour"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" >Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../1_2_Guided_Tour/index.html" title="Guided Tour"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

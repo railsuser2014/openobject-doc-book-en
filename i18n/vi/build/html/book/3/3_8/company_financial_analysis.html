@@ -1,0 +1,492 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Company Financial Analysis &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Financial Analysis" href="index.html" />
+    <link rel="next" title="Configuring Accounts from A to Z" href="../3_9/index.html" />
+    <link rel="prev" title="Statutory taxes and accounts" href="statutory_taxes.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../3_9/index.html" title="Configuring Accounts from A to Z"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="statutory_taxes.html" title="Statutory taxes and accounts"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../3_9/index.html" title="Configuring Accounts from A to Z"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="statutory_taxes.html" title="Statutory taxes and accounts"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Company Financial Analysis</a><ul>
+<li><a class="reference external" href="#management-indicators">Management Indicators</a><ul>
+<li><a class="reference external" href="#time-analysis-of-indicators">Time analysis of indicators</a></li>
+<li><a class="reference external" href="#defining-your-own-indicators">Defining your own indicators</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#good-management-budgeting">Good management budgeting</a></li>
+<li><a class="reference external" href="#the-accounting-dashboard">The Accounting Dashboard</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="statutory_taxes.html"
+                                  title="previous chapter">Statutory taxes and accounts</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../3_9/index.html"
+                                  title="next chapter">Configuring Accounts from A to Z</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/3/3_8/company_financial_analysis.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-155"></span><div class="section" id="company-financial-analysis">
+<h1>Company Financial Analysis<a class="headerlink" href="#company-financial-analysis" title="Permalink to this headline">¶</a></h1>
+<p>You&#8217;ll see here the analysis tools for your company&#8217;s financial situation, in particular:</p>
+<ul class="simple">
+<li>management indicators,</li>
+<li>budgets,</li>
+<li>the accounting dashboard.</li>
+</ul>
+<span class="target" id="index-156"></span><div class="section" id="management-indicators">
+<h2>Management Indicators<a class="headerlink" href="#management-indicators" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/management-indicators" ></div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Financial Indicators</p>
+<p class="last">Indicators, sometimes called financial ratios, are tools for analyzing a company&#8217;s finances.
+They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
+and loss account, in the form of a ratio.
+They also let you measure the financial health of a company and make comparisons from one year to
+the next or against those of other companies.</p>
+</div>
+<span class="target" id="index-157"></span><p>To define financial indicators in Open&nbsp;ERP you should install the module <a title="Reporting for accounting (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account_report.html#module-account_report"><tt class="xref docutils literal"><span class="pre">account_report</span></tt></a>.
+When installing the module the usual financial indicators are registered in Open&nbsp;ERP.</p>
+<p>You can consult your indicators, calculated in real time, from the menu <em>Financial
+Management ‣ Reporting ‣ Custom Reports</em>.</p>
+<p>Indicators defined by default in Open&nbsp;ERP are the following:</p>
+<ul class="simple">
+<li><strong>Indicators of Working Capital</strong> : determines if the company can pay its short term debts in
+normal conditions. It&#8217;s calculated from <tt class="docutils literal"><span class="pre">(Stocks</span> <span class="pre">+</span> <span class="pre">Cash</span> <span class="pre">+</span> <span class="pre">Current</span> <span class="pre">Assets)</span> <span class="pre">/</span> <span class="pre">Current</span>
+<span class="pre">Liabilities</span></tt> .</li>
+<li><strong>Financial Ratios</strong> : enables you to calculate the company&#8217;s liquidity. It is defined as follows:
+<tt class="docutils literal"><span class="pre">(</span> <span class="pre">Current</span> <span class="pre">Assets</span> <span class="pre">–</span> <span class="pre">Stocks)</span> <span class="pre">/</span> <span class="pre">Current</span> <span class="pre">Liabilities</span></tt> .</li>
+<li><strong>Fixed Assets</strong> : in a going concern, the value of fixed assets are covered in the first place by
+owners&#8217; capital and in the second place by all of the long term liabilities. Ideally this indicator
+will be greater than 1.</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Calculation of indicators</p>
+<p>Calculating indicators can take quite a while in Open&nbsp;ERP because you have to analyse the whole
+company&#8217;s accounting entries.</p>
+<p class="last">So it&#8217;s best not to calculate all of the indicators at once, but just a small selection to keep
+calculation time within limits.</p>
+</div>
+<div class="section" id="time-analysis-of-indicators">
+<h3>Time analysis of indicators<a class="headerlink" href="#time-analysis-of-indicators" title="Permalink to this headline">¶</a></h3>
+<p>You can analyze the financial indicators along two axes. You must have a figure calculated at a
+particular instant of time when you compare accounts, balances and the ratios between them. But you
+can also calculate a time series to follow the change of a given indicator throughout the life of
+the company.</p>
+<span class="target" id="index-158"></span><p>To do a temporal analysis of your indicators, you must install the module
+<tt class="xref docutils literal"><span class="pre">account_report_history</span></tt> from the set of modules in addons-extra.</p>
+<p>Once this module is installed, you can click on a financial indicator to get a graph of its
+evolution in time.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_report_history.png"><img alt="../../../_images/account_report_history.png" src="../../../_images/account_report_history.png" style="width: 302.0px; height: 250.0px;" /></a>
+<p class="caption"><em>History of an accounting indicator</em></p>
+</div>
+</div>
+<div class="section" id="defining-your-own-indicators">
+<h3>Defining your own indicators<a class="headerlink" href="#defining-your-own-indicators" title="Permalink to this headline">¶</a></h3>
+<p>You can define your own indicators in Open&nbsp;ERP using the menu <em>Financial Management
+‣ Configuration ‣ Custom Reporting ‣ New Reporting Item Formula</em>.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_indicator_new.png"><img alt="../../../_images/account_indicator_new.png" src="../../../_images/account_indicator_new.png" style="width: 308.0px; height: 250.0px;" /></a>
+<p class="caption"><em>Defining a new indicator</em></p>
+</div>
+<p>You should make sure that the accounts that you base indicators on are given unique account codes,
+because codes are used in the creation of formulae. Create a formula using the syntax indicated in
+the instructions at the bottom of the form:</p>
+<ul class="simple">
+<li>Sum of debits in a general account: <tt class="docutils literal"><span class="pre">debit('12345')</span></tt> ,</li>
+<li>Sum of credits in a general account: <tt class="docutils literal"><span class="pre">credit('12345')</span></tt> ,</li>
+<li>Balance of a general account: <tt class="docutils literal"><span class="pre">balance('12345')</span></tt> ,</li>
+<li>Value of another indicator: <tt class="docutils literal"><span class="pre">report</span> <span class="pre">('IND')</span></tt> .</li>
+</ul>
+<p>where:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">12345</span></tt>  represents the code of a general account,</li>
+<li><tt class="docutils literal"><span class="pre">IND</span></tt>  represents the code of another indicator.</li>
+</ul>
+<p>So, using this notation, the cash ratio is defined by <tt class="docutils literal"><span class="pre">balance('4',</span> <span class="pre">'5')</span> <span class="pre">/</span> <span class="pre">balance('1')</span></tt>  –
+that&#8217;s the balance in accounts 4 and 5 divided by the balance in account 1.</p>
+<span class="target" id="index-159"></span></div>
+</div>
+<div class="section" id="good-management-budgeting">
+<h2>Good management budgeting<a class="headerlink" href="#good-management-budgeting" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/good-management-budgeting" ></div><p>Open&nbsp;ERP manages its budgets using both General and Analytic Accounts. You&#8217;ll see how to do this
+here for General Accounts and then in <a class="reference external" href="../../4/4_10_Accounts/index.html#ch-accts"><em>Analytic Accounts</em></a> for Analytical Accounts.
+Install <a title="Budget Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account_budget.html#module-account_budget"><tt class="xref docutils literal"><span class="pre">account_budget</span></tt></a> to be able to do this.</p>
+<p>Use the menu <em>Financial Management ‣ Budgets ‣ Budget</em>
+to define a new budget.</p>
+<span class="target" id="index-160"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Budget Revisions</p>
+<p>Even though you <em>can</em> modify a budget at any time to make a revision of it, it&#8217;s best if you don&#8217;t do
+that.</p>
+<p class="last">Rather than edit an existing budget document, make a new version so that you can keep your original
+estimates safe for comparison. This lets you analyze your changing perspectives of the
+company from revision to revision.</p>
+</div>
+<p>Begin data entry by entering a <strong>Name</strong>, a <strong>Code</strong>,
+and a <strong>Start Date</strong> and an <strong>End Date</strong> in your new budget.
+Then you can define the budgeted amounts within that period, one by one. For each, you define:</p>
+<ul class="simple">
+<li>an <strong>Analytic Account</strong></li>
+<li>a <strong>Budgetary Position</strong> : for example <strong>Sales</strong> or <strong>Purchases</strong>,</li>
+<li>a <strong>Start Date</strong> and <strong>End Date</strong> for the use of the budget,</li>
+<li>a <strong>Planned Amount</strong> in the default currency of the chart of accounts.</li>
+</ul>
+<p>Once it&#8217;s completed you can save your budget.</p>
+<p>To print a budget and make calculations of expenditure to budget use the menu
+<em>Financial Management ‣ Budgets ‣ Budget</em> Open&nbsp;ERP then gives you a
+list of available budgets. Select one or more budgets and then click <strong>Print Budgets</strong> to create
+the report for each in a date range of your choosing.
+The figure <a class="reference internal" href="#fig-accbudg"><em>Printing a budget</em></a> gives an example of a budget produced by Open&nbsp;ERP.</p>
+<div align="center" class="figure" id="fig-accbudg">
+<a class="reference external image-reference" href="../../../_images/account_budget.png"><img alt="../../../_images/account_budget.png" src="../../../_images/account_budget.png" style="width: 313.5px; height: 250.0px;" /></a>
+<p class="caption"><em>Printing a budget</em></p>
+</div>
+<p>You could also use the menu <em>Financial Management ‣ Reporting ‣ Budgets</em>
+which gives you a choice of one or more <strong>Budgetary Position</strong> entries before
+clicking <strong>Budget</strong> and choosing a date range. This gives a budgetary analysis report for each
+of the positions.</p>
+</div>
+<div class="section" id="the-accounting-dashboard">
+<h2>The Accounting Dashboard<a class="headerlink" href="#the-accounting-dashboard" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-accounting-dashboard" ></div><div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_board.png"><img alt="../../../_images/account_board.png" src="../../../_images/account_board.png" style="width: 333.0px; height: 250.0px;" /></a>
+<p class="caption"><em>Accounting Dashboard</em></p>
+</div>
+<span class="target" id="index-161"></span><p>If you&#8217;ve installed the module <a title="Board for accountant (Official, Quality Certified)" class="reference external" href="../../../technical_guide/board_account.html#module-board_account"><tt class="xref docutils literal"><span class="pre">board_account</span></tt></a>, Open&nbsp;ERP gives you an accounting dashboard
+that can be presented to your accounting staff as they sign into the system (if you have set it as
+their Home Page). This dashboard provides an analysis of the company&#8217;s financial health at a glance.</p>
+<p>This gives a description of the different parts of the dashboard, from top to bottom then from left
+to right:</p>
+<ul class="simple">
+<li><strong>Analytic accounts to close</strong> : when you&#8217;re managing cases each analytical account is a
+project or a contract. This area gives the accounts that must be closed (for example, contracts
+expired, support hours exceeded).</li>
+<li><strong>Accounts to invoice</strong> : shows analytical accounts where there are charges to be
+invoiced.</li>
+<li><strong>Draft invoices</strong> : gives the list of invoices waiting to be approved by an accountant.</li>
+<li><strong>Costs to invoice</strong> : gives the weekly changes which can be, but haven&#8217;t yet been,
+invoiced.</li>
+<li><strong>Aged receivables</strong> : gives a weekly graph of the receivables that haven&#8217;t yet been
+reconciled.</li>
+<li><strong>Aged income</strong> : gives a weekly graph of the company&#8217;s turnover.</li>
+</ul>
+<p>In each panel of the accountants&#8217; dashboard you can click the <strong>Zoom</strong> button at the top
+right to investigate the detail of your financial indicators.</p>
+<p>The Accounting dashboard is dynamically integrated, which means that you can navigate easily through
+the data if you want more detail about certain factors, and edit the entries if necessary.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Company Financial Analysis</a><ul>
+<li><a class="reference external" href="#management-indicators">Management Indicators</a><ul>
+<li><a class="reference external" href="#time-analysis-of-indicators">Time analysis of indicators</a></li>
+<li><a class="reference external" href="#defining-your-own-indicators">Defining your own indicators</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#good-management-budgeting">Good management budgeting</a></li>
+<li><a class="reference external" href="#the-accounting-dashboard">The Accounting Dashboard</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="statutory_taxes.html"
+                                  title="previous chapter">Statutory taxes and accounts</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../3_9/index.html"
+                                  title="next chapter">Configuring Accounts from A to Z</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/3/3_8/company_financial_analysis.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../3_9/index.html" title="Configuring Accounts from A to Z"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="statutory_taxes.html" title="Statutory taxes and accounts"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >General Accounting</a> &raquo;</li>
+          <li><a href="index.html" >Financial Analysis</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../3_9/index.html" title="Configuring Accounts from A to Z"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="statutory_taxes.html" title="Statutory taxes and accounts"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">General Accounting</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Financial Analysis</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

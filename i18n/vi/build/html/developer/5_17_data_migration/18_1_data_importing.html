@@ -1,0 +1,449 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Data Importation &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Data Migration - Import / Export" href="index.html" />
+    <link rel="next" title="Upgrading Server, Modules" href="../5_18_upgrading_server/index.html" />
+    <link rel="prev" title="Data Migration - Import / Export" href="index.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../5_18_upgrading_server/index.html" title="Upgrading Server, Modules"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Data Migration - Import / Export"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Data Migration - Import / Export</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../5_18_upgrading_server/index.html" title="Upgrading Server, Modules"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Data Migration - Import / Export"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Data Migration - Import / Export</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Data Importation</a><ul>
+<li><a class="reference external" href="#introduction">Introduction</a></li>
+<li><a class="reference external" href="#importing-data-through-a-module">Importing data through a module</a></li>
+<li><a class="reference external" href="#using-open-erp-s-etl">Using Open ERP&#8217;s ETL</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Data Migration - Import / Export</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../5_18_upgrading_server/index.html"
+                                  title="next chapter">Upgrading Server, Modules</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/5_17_data_migration/18_1_data_importing.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="data-importation">
+<h1>Data Importation<a class="headerlink" href="#data-importation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/developer/5_17_data_migration/18_1_data_importing/introduction" ></div><p>There are different methods to import your data into Open ERP:</p>
+<ul class="simple">
+<li>Through the web-service interface</li>
+<li>Using CSV files through the client interface</li>
+<li>Building a module with .XML or .CSV files with the content</li>
+<li>Directly into the SQL database, using an ETL</li>
+</ul>
+</div>
+<div class="section" id="importing-data-through-a-module">
+<h2>Importing data through a module<a class="headerlink" href="#importing-data-through-a-module" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/importing-data-through-a-module" ></div><p>The best way to import data in Open ERP is to build a module that
+integrates all the data you want to import. So, when you want to
+import all the data, you just have to install the module and Open ERP
+manages the different creation operations. When you have lots of different
+data to import, we sometimes create different modules.</p>
+<p>So, let&#8217;s create a new module where we will store all our datas. To do
+this, from the addons directory, create a new module called data_yourcompany.</p>
+<ul class="simple">
+<li>mkdir data_yourcompany</li>
+<li>cd data_yourcompany</li>
+<li>touch __init__.py</li>
+</ul>
+<p>You must also create a file called __terp__.py in this new module.
+Write the following content in this module file description.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;Module for Data Importation&#39;</span><span class="p">,</span>
+  <span class="s">&#39;version&#39;</span><span class="p">:</span> <span class="s">&#39;1.0&#39;</span><span class="p">,</span>
+  <span class="s">&#39;category&#39;</span><span class="p">:</span> <span class="s">&#39;Generic Modules/Others&#39;</span><span class="p">,</span>
+  <span class="s">&#39;description&#39;</span><span class="p">:</span> <span class="s">&quot;Sample module for data importation.&quot;</span><span class="p">,</span>
+  <span class="s">&#39;author&#39;</span><span class="p">:</span> <span class="s">&#39;Tiny&#39;</span><span class="p">,</span>
+  <span class="s">&#39;website&#39;</span><span class="p">:</span> <span class="s">&#39;http://www.openerp.com&#39;</span><span class="p">,</span>
+  <span class="s">&#39;depends&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;base&#39;</span><span class="p">],</span>
+  <span class="s">&#39;init_xml&#39;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s">&#39;res.partner.csv&#39;</span><span class="p">,</span>
+      <span class="s">&#39;res.partner.address.csv&#39;</span>
+  <span class="p">],</span>
+  <span class="s">&#39;update_xml&#39;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&#39;installable&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+  <span class="s">&#39;active&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The following module will import two different files:</p>
+<ul class="simple">
+<li>res.partner.csv : a CSV file containing records of the res.partner object</li>
+<li>res.partner.address.csv : a CSV file containing records of the res.partner.address object</li>
+</ul>
+<p>Once this module is created, you must load data from your old application to
+.CSV file that will be loaded in Open ERP. Open ERP has a builtin system to
+manage identifications columns of the original software.</p>
+<p>For this exercice, we will load data from another Open ERP database called old.
+As this database is in SQL, it&#8217;s quite easy to export the data using the command
+line postgresql client: psql. As to get a result that looks like a .CSV fiel,
+we will use the following arguments of psql:</p>
+<ul class="simple">
+<li>-A : display records without space for the row separators</li>
+<li>-F , : set the separator character as &#8216;,&#8217;</li>
+<li>&#8211;pset footer : don&#8217;t write the latest line that looks like &#8220;(21 rows)&#8221;</li>
+</ul>
+<p>When you import a .CSV file in Open ERP, you can provide a &#8216;id&#8217; column that
+contains a uniq identification number or string for the record. We will use
+this &#8216;id&#8217; column to refer to the ID of the record in the original application.
+As to refer to this record from a many2one field, you can use &#8216;FIELD_NAME:id&#8217;.
+Open ERP will re-create the relationship between the record using this uniq
+ID.</p>
+<p>So let&#8217;s start to export the partners from our database using psql: ::</p>
+<div class="highlight-python"><pre>psql trunk -c "select 'partner_'||id as id,name from res_partner"
+           -A -F , --pset footer &gt; res.partner.csv</pre>
+</div>
+<p>This creates a res.partner.csv file containing a structure that looks like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">id</span><span class="p">,</span><span class="n">name</span>
+<span class="n">partner_2</span><span class="p">,</span><span class="n">ASUStek</span>
+<span class="n">partner_3</span><span class="p">,</span><span class="n">Agrolait</span>
+<span class="n">partner_4</span><span class="p">,</span><span class="n">Camptocamp</span>
+<span class="n">partner_5</span><span class="p">,</span><span class="n">Syleam</span>
+</pre></div>
+</div>
+<p>By doing this, we generated data from the res.partner object, by creating a uniq
+identification string for each record, which is related to the old application&#8217;s
+ID.</p>
+<p>Now, we will export the table with addresses (or contacts) that are linked to
+partners through the relation field: partner_id. We will proceed in the same
+way to export the data and put them into our module:</p>
+<div class="highlight-python"><pre>psql trunk -c "select 'partner_address'||id as id,name,'partner_'||
+              partner_id as \"partner_id:id\" from res_partner_address"
+              -A -F , --pset footer &gt; res.partner.address.csv</pre>
+</div>
+<p>This should create a file called res.partner.address with the following data:</p>
+<div class="highlight-python"><pre>id,name,partner_id:id
+partner_address2,Benoit Mortier,partner_2
+partner_address3,Laurent Jacot,partner_3
+partner_address4,Laith Jubair,partner_4
+partner_address5,Fabien Pinckaers,partner_4</pre>
+</div>
+<p>When you will install this module, Open ERP will automatically import the partners
+and then the address and recreate efficiently the link between the two records.
+When installing a module, Open ERP will test and apply the constraints for consistency
+of the data. So, when you install this module, it may crash, for example, because
+you may have different partners with the same name in the system. (due to the uniq
+constraint on the name of a partner). So, you have to clean your data before importing
+them.</p>
+<p>If you plan to upload thousands of records through this technique, you should consider
+using the argument &#8216;-P&#8217; when running the server.</p>
+<div class="highlight-python"><pre>openerp_server.py -P status.pickle --init=data_yourcompany</pre>
+</div>
+<p>This method provides a faster importation of the data and, if it crashes in the middle
+of the import, it will continue at the same line after rerunning the server. This may
+preserves hours of testing when importing big files.</p>
+</div>
+<div class="section" id="using-open-erp-s-etl">
+<h2>Using Open ERP&#8217;s ETL<a class="headerlink" href="#using-open-erp-s-etl" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/using-open-erp-s-etl" ></div><p>The next version of Open ERP will include an ETL module to allow you
+to easily manages complex import jobs. If you are interrested in this
+system, you can check the complete specifications and the available
+prototype at this location:</p>
+<p>... to be continued ...</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Data Importation</a><ul>
+<li><a class="reference external" href="#introduction">Introduction</a></li>
+<li><a class="reference external" href="#importing-data-through-a-module">Importing data through a module</a></li>
+<li><a class="reference external" href="#using-open-erp-s-etl">Using Open ERP&#8217;s ETL</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Data Migration - Import / Export</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../5_18_upgrading_server/index.html"
+                                  title="next chapter">Upgrading Server, Modules</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/5_17_data_migration/18_1_data_importing.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../5_18_upgrading_server/index.html" title="Upgrading Server, Modules"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Data Migration - Import / Export"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" >Data Migration - Import / Export</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../5_18_upgrading_server/index.html" title="Upgrading Server, Modules"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Data Migration - Import / Export"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Data Migration - Import / Export</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

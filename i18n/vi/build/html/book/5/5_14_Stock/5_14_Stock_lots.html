@@ -1,0 +1,452 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Management of lots and traceability &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Logistics and Stock Management" href="index.html" />
+    <link rel="next" title="Management by Journal" href="5_14_Stock_journals.html" />
+    <link rel="prev" title="Scheduling" href="5_14_Stock_production.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_journals.html" title="Management by Journal"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_production.html" title="Scheduling"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_journals.html" title="Management by Journal"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_production.html" title="Scheduling"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Management of lots and traceability</a><ul>
+<li><a class="reference external" href="#stock-moves">Stock Moves</a></li>
+<li><a class="reference external" href="#lots">Lots</a></li>
+<li><a class="reference external" href="#traceability">Traceability</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_production.html"
+                                  title="previous chapter">Scheduling</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_journals.html"
+                                  title="next chapter">Management by Journal</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_lots.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="management-of-lots-and-traceability">
+<span id="sect-lotmgt"></span><h1>Management of lots and traceability<a class="headerlink" href="#management-of-lots-and-traceability" title="Permalink to this headline">¶</a></h1>
+<p>The double-entry management in Open ERP enables you to run very advanced traceability. All
+operations are formalized in terms of stock moves, so it&#8217;s very simple to search for the cause of any
+gaps in stock moves.</p>
+<span class="target" id="index-277"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Upstream and downstream traceability</p>
+<p><strong>Upstream</strong> traceability runs from the raw materials received from the supplier and follows the
+chain to the finished products delivered to customers.
+(Note that the name is confusing - this would often be considered a downstream direction.
+Think of it as <strong>Where Used</strong>.)</p>
+<p class="last"><strong>Downstream</strong> traceability follows the product in the other direction, from customer to the
+different suppliers of raw material.
+(Note that the name is confusing - this would often be considered an upstream direction.
+Think of it as <strong>Where Supplied</strong>.)</p>
+</div>
+<div class="section" id="stock-moves">
+<h2>Stock Moves<a class="headerlink" href="#stock-moves" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/stock-moves" ></div><p>Use the menu <em>Stock Management ‣ Traceability ‣ Low Level ‣ Stock Moves</em>
+to track past stock transactions for a product or a given location. All the operations
+are available. You can filter on the various fields to retrieve the operations about an order,
+or a production activity, or a source location, or any given destination.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/stock_move_tree.png"><img alt="../../../_images/stock_move_tree.png" src="../../../_images/stock_move_tree.png" style="width: 554.25px; height: 489.0px;" /></a>
+<p class="caption"><em>History of stock movements</em></p>
+</div>
+<p>Each stock move is in a given state. The different possible states are:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">Draft</span></tt> : the move has so far had no effect in the system. The transaction hasn&#8217;t yet been confirmed,</li>
+<li><tt class="docutils literal"><span class="pre">Confirmed</span></tt> : the move will be done, so it will be counted in the calculations of virtual stock. But
+you don&#8217;t know whether it will be done without problem because the products have been reserved for
+the move,</li>
+<li><tt class="docutils literal"><span class="pre">Validated</span></tt> : the move will be done and the necessary raw material have been reserved for the
+transaction,</li>
+<li><tt class="docutils literal"><span class="pre">Done</span></tt> : the stock move has been done, and entered into the calculations of real stock,</li>
+<li><tt class="docutils literal"><span class="pre">Waiting</span></tt> : in the case of transactions <tt class="docutils literal"><span class="pre">From</span> <span class="pre">Order</span></tt> , this state shows that the stock move is blocked
+waiting for the end of another move,</li>
+<li><tt class="docutils literal"><span class="pre">Cancelled</span></tt> : the stock move wasn&#8217;t carried out, so there&#8217;s no accounting for it in either real stock or
+virtual stock.</li>
+</ul>
+<p>Delivery orders, goods receipts and internal picking lists are just documents that group a set of
+stock moves. You can also consult the history of these documents using the menu
+<em>Stock Management ‣ Traceability ‣ Low level ‣ Packing</em>.</p>
+</div>
+<div class="section" id="lots">
+<h2>Lots<a class="headerlink" href="#lots" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/lots" ></div><p>Open ERP can also manage product lots. Two lot types are defined:</p>
+<ul class="simple">
+<li>Production lots (batch numbers) are represented by a unique product or an assembly of identical
+products leaving the same production area. They are usually identified by bar codes stuck on the
+products. The batch can be marked with a supplier number or your own company numbers.</li>
+<li>Tracking numbers are logistical lots for identifying the container for a set of
+products. This corresponds, for example, to the pallet numbers on which several different products
+are stocked.</li>
+</ul>
+<p>These lots can be encoded onto all stock moves and, specifically, on goods-in lines, internal moves
+and product deliveries.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/picking_form_line.png"><img alt="../../../_images/picking_form_line.png" src="../../../_images/picking_form_line.png" style="width: 864.0px; height: 648.0px;" /></a>
+<p class="caption"><em>Entering a line for production receipt</em></p>
+</div>
+<p>To enter the lot number in an operation you can use an existing lot number or create a new lot. A
+production lot (batch number) is used for a single product. A tracking number can be
+used several times for different products, so you can mix different products on a pallet or in a box.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Simplified View</p>
+<p class="last">In the <tt class="docutils literal"><span class="pre">Simplified</span> <span class="pre">View</span></tt> the tracking numbers can&#8217;t be seen: the field is hidden.
+To get to <tt class="docutils literal"><span class="pre">Extended</span> <span class="pre">View</span></tt> mode, assign the group
+<strong>Usability – Extended View</strong> to the current user.</p>
+</div>
+<p>You can also specify on the product form the operations in which a lot number is
+required. You can then compel the user to set a lot number for manufacturing operations, goods
+receipt, or customer packing.</p>
+<p>You don&#8217;t have to encode the lot number one by one to assign a unique lot number to a set of several items.
+You only need to take a stock move for several products line and click the button
+<strong>Split in Production Lots</strong>. You can then give a lot number prefix (if you want) and Open ERP will
+complete the prefix in the wizard with a continuing sequence number. This sequence number
+might correspond to a set of pre-printed barcodes that you stick on each product.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/picking_split_lot.png"><img alt="../../../_images/picking_split_lot.png" src="../../../_images/picking_split_lot.png" style="width: 575.25px; height: 309.0px;" /></a>
+<p class="caption"><em>Splitting a lot into uniquely identified parts</em></p>
+</div>
+<span class="target" id="index-278"></span></div>
+<div class="section" id="traceability">
+<h2>Traceability<a class="headerlink" href="#traceability" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/traceability" ></div><p>If you code in the lot numbers for stock moves as described above you can then investigate the traceability of any
+given lot number. To do this use the menu <em>Stock Management ‣ Traceability ‣
+Production Lots</em>, or <em>Stock Management ‣ Traceability ‣ Tracking Lots</em>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Product Shortcuts</p>
+<p>From the product form, the toolbar to the right offers useful information:</p>
+<ul class="last simple">
+<li><strong>Minimum stock rules</strong>,</li>
+<li><strong>Stocks by location</strong>,</li>
+<li><strong>Sales detail</strong>,</li>
+<li><strong>Stocks by lot</strong>,</li>
+<li><strong>Bills of Materials</strong>.</li>
+</ul>
+</div>
+<p>Search for a particular lot using the filters for the lot number, the date or the product. Once you
+can see the form about this lot several actions are possible:</p>
+<ul class="simple">
+<li><strong>Traceability upstream</strong> : from supplier through to customers,</li>
+<li><strong>Traceability downstream</strong> : from customer back to suppliers,</li>
+<li>Stock in all the physical and virtual locations.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/stock_traceability_upstream.png"><img alt="../../../_images/stock_traceability_upstream.png" src="../../../_images/stock_traceability_upstream.png" style="width: 558.75px; height: 360.0px;" /></a>
+<p class="caption"><em>Tracing upstream in Make to Order</em></p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/stock_traceability_downstream.png"><img alt="../../../_images/stock_traceability_downstream.png" src="../../../_images/stock_traceability_downstream.png" style="width: 510.0px; height: 337.5px;" /></a>
+<p class="caption"><em>Tracing downstream in Make to Stock</em></p>
+</div>
+<p>Finally, on a lot, you can enter data on all the operations that have been done on the product. That
+forms a useful history of the pre-sales operations.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Management of lots and traceability</a><ul>
+<li><a class="reference external" href="#stock-moves">Stock Moves</a></li>
+<li><a class="reference external" href="#lots">Lots</a></li>
+<li><a class="reference external" href="#traceability">Traceability</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_production.html"
+                                  title="previous chapter">Scheduling</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_journals.html"
+                                  title="next chapter">Management by Journal</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_lots.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_journals.html" title="Management by Journal"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_production.html" title="Scheduling"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" >Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_journals.html" title="Management by Journal"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_production.html" title="Scheduling"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

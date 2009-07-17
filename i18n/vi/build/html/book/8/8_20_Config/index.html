@@ -1,0 +1,415 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration & Administration &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="System Administration and Implementation" href="../index.html" />
+    <link rel="next" title="Creating a Configuration Module" href="8_20_Config_module.html" />
+    <link rel="prev" title="System Administration and Implementation" href="../index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_module.html" title="Creating a Configuration Module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="System Administration and Implementation"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_module.html" title="Creating a Configuration Module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="System Administration and Implementation"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">System Administration and Implementation</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_module.html"
+                                  title="next chapter">Creating a Configuration Module</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-414"></span><div class="section" id="configuration-administration">
+<span id="ch-config"></span><h1>Configuration &amp; Administration<a class="headerlink" href="#configuration-administration" title="Permalink to this headline">¶</a></h1>
+<p>Open&nbsp;ERP gives you great flexibility in configuring and using it, letting you modify
+its appearance, the general way it functions and the different analysis tools chosen to match your
+company&#8217;s needs most closely. These configuration changes are carried out through the user
+interface.</p>
+<p>Users can each arrange their own welcome page and their own menu, and you can also personalize
+Open&nbsp;ERP by assigning each user their own dashboard on their welcome page to provide them with the
+most up to date information. Then they can immediately see the information most relevant to them
+each time they sign in.</p>
+<p>And Open&nbsp;ERP&#8217;s main menu can be entirely reorganized. The management of access rights lets you
+assign certain functions to specific system users. You can also assign roles, which define the part
+that each system user plays in the workflows that move system documents from state to state (such as
+the ability to approve employee expense requests).</p>
+<p>For this chapter you should start with a fresh database that includes demonstration data,
+with <a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a> and its dependencies installed and no particular chart of accounts configured.</p>
+<span class="target" id="index-415"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Configuration, Parameterization, Personalization, Customization</p>
+<p>The word <em>personalization</em> is sometimes used in this book where you might expect to find
+<em>configuration</em> or <em>customization</em>.</p>
+<p><em>Customization</em> generally refers to something that requires a bit of technical effort
+(such as creating specialized code modules) and creates a non-standard system.</p>
+<p><em>Configuration</em> is less radical – it&#8217;s the general process of setting all
+the parameters of the software to fit the needs of your system (often called <em>parameterization</em> or <em>setup</em>).
+Configuration is also, by convention, the name of the sub-menu below each of Open ERP&#8217;s top-level menus that
+is accessible only to the administrative user for that section.</p>
+<p class="last"><em>Personalization</em> is just that subset of configuration options that shapes the system to the
+particular operational and/or stylistic wishes of a person or company.</p>
+</div>
+<p>Using the <em>OpenOffice.org Report Designer</em> module you can change any part of any of the reports
+produced by the system. The system administrator can configure each report to modify its layout and
+style, or even the data that&#8217;s provided there.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The OpenOffice.org Report Editor</p>
+<p>The OpenOffice.org plug-in enables you not only to configure the reports of the basic products in
+Open&nbsp;ERP but also to create entirely new report templates.
+When the user uses Open&nbsp;ERP&#8217;s client interface, OpenOffice can create a report template
+that has access to all the data available to any Open ERP document type.</p>
+<p class="last">You can easily create fax documents, quotations, or any other commercial document.
+This functionality enables you to considerably extend the productivity of your salespeople who have
+to send many proposals to customers.</p>
+</div>
+<p>Finally, you&#8217;ll see how to import your data into Open&nbsp;ERP automatically, to migrate all of your
+data in one single go.</p>
+<p>For this chapter you should start with a fresh database that includes demo data,
+with <a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a> and its dependencies installed and no particular chart of accounts configured.</p>
+<div class="all-toctree"><ul>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_module.html">Creating a Configuration Module</a></li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_menu.html">Configuring the menu</a><ul>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_menu.html#changing-the-menu">Changing the menu</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_menu.html#personalizing-the-welcome-page-for-each-user">Personalizing the welcome page for each user</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_menu.html#assigning-default-values-to-fields">Assigning default values to fields</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_menu.html#changing-the-terminology">Changing the terminology</a><ul>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_menu.html#translation-through-a-csv-file">Translation through a CSV file</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_menu.html#changes-through-the-client-interface">Changes through the client interface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_accessRights.html">User Login</a></li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_accessRights.html#managing-access-rights">Managing access rights</a></li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_accessRights.html#groups-and-users">Groups and Users</a><ul>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_accessRights.html#access-rights-for-menus">Access rights for menus</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_accessRights.html#access-rights-to-objects">Access Rights to Objects</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_accessRights.html#modification-history">Modification history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_workflow.html">Configuring workflows and processes</a><ul>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_workflow.html#assigning-roles">Assigning roles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_reports.html">Configuring reports</a><ul>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_reports.html#managing-statistical-reports">Managing statistical reports</a><ul>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#modeling-a-new-report">Modeling a new report</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#configuring-the-dashboards">Configuring the dashboards</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_reports.html#managing-document-templates-with-openoffice-org">Managing document templates with OpenOffice.org</a><ul>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#installing-the-openoffice-org-module">Installing the OpenOffice.org module</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#connecting-openoffice-org-to-open-erp">Connecting OpenOffice.org to Open&nbsp;ERP</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#modifying-a-report">Modifying a report</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_reports.html#creating-a-new-report">Creating a new report</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_reports.html#creating-common-headers-for-reports">Creating common headers for reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="8_20_Config_import_export.html">Importing and exporting data</a><ul>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_import_export.html#exporting-open-erp-data-to-csv">Exporting Open ERP data to CSV</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_import_export.html#importing-csv-data-to-open-erp">Importing CSV data to Open ERP</a></li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_import_export.html#the-csv-format-for-complex-database-structures">The CSV format for complex database structures</a><ul>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_import_export.html#many-to-one-fields">Many-to-one fields</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_import_export.html#many-to-many-fields">Many-to-many fields</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_import_export.html#one-to-many-fields">One-to-many fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_import_export.html#another-example-of-a-csv-import-file">Another example of a CSV import file</a><ul>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_import_export.html#partner-categories">Partner categories</a></li>
+<li class="toctree-l3"><a class="reference external" href="8_20_Config_import_export.html#new-partners">New partners</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="8_20_Config_import_export.html#exporting-data-in-other-forms">Exporting data in other forms</a></li>
+</ul>
+</li>
+</ul>
+</div></div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">System Administration and Implementation</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_module.html"
+                                  title="next chapter">Creating a Configuration Module</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_module.html" title="Creating a Configuration Module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="System Administration and Implementation"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_module.html" title="Creating a Configuration Module"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="System Administration and Implementation"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

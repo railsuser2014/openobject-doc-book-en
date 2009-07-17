@@ -1,0 +1,532 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>User Login &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Configuration & Administration" href="index.html" />
+    <link rel="next" title="Configuring workflows and processes" href="8_20_Config_workflow.html" />
+    <link rel="prev" title="Configuring the menu" href="8_20_Config_menu.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_menu.html" title="Configuring the menu"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_menu.html" title="Configuring the menu"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">User Login</a></li>
+<li><a class="reference external" href="#managing-access-rights">Managing access rights</a></li>
+<li><a class="reference external" href="#groups-and-users">Groups and Users</a><ul>
+<li><a class="reference external" href="#access-rights-for-menus">Access rights for menus</a></li>
+<li><a class="reference external" href="#access-rights-to-objects">Access Rights to Objects</a></li>
+<li><a class="reference external" href="#modification-history">Modification history</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_menu.html"
+                                  title="previous chapter">Configuring the menu</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_workflow.html"
+                                  title="next chapter">Configuring workflows and processes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_accessRights.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-378"></span><div class="section" id="user-login">
+<h1>User Login<a class="headerlink" href="#user-login" title="Permalink to this headline">¶</a></h1>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Managing Passwords</p>
+<p class="last">If you let users change their passwords for themselves you&#8217;ll have no direct control over the
+password they choose.
+You should have a written policy about password strength to try to maintain a level of security in
+your system.</p>
+</div>
+<span class="target" id="index-379"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Managing users through LDAP</p>
+<p>With the <a title="Authenticate users with ldap server" class="reference external" href="../../../technical_guide/users_ldap.html#module-users_ldap"><tt class="xref docutils literal"><span class="pre">users_ldap</span></tt></a> module, user accounts can be managed through an LDAP directory that can be
+made common to various different company resources.</p>
+<p class="last">Connection parameters for the LDAP directory are then registered with the company definition.
+You can provide a user profile template there from which new users are automatically created during
+their first connection to Open&nbsp;ERP.</p>
+</div>
+<span class="target" id="index-380"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>LDAP</p>
+<p>The LDAP protocol (Lightweight Directory Access Protocol) enables you to manage common directories
+for various different resources through your standard TCP/IP network.</p>
+<p class="last">This enables users in the company to have the same username and password to access all
+their applications (such as email and intranet).</p>
+</div>
+</div>
+<div class="section" id="managing-access-rights">
+<h1>Managing access rights<a class="headerlink" href="#managing-access-rights" title="Permalink to this headline">¶</a></h1>
+<p>One of the most important areas in configuring Open&nbsp;ERP is how to manage access rights to the
+information in it.</p>
+<p>You&#8217;re planning to put everything significant to your business into the system, but most of your
+staff need see only part of it, and may need to change even less of it. Who should have rights to
+what, and how do you manage that?</p>
+<p>Open ERP&#8217;s approach to rights management is highly flexible. Each user can belong to one or more
+groups, and the group(s) you belong to determine(s):</p>
+<ul class="simple">
+<li>the visibility of each menu item and</li>
+<li>the accessibility of each table in the database.</li>
+</ul>
+<p>For example, the group <tt class="docutils literal"><span class="pre">Stock</span></tt>may only be given access to some of the menus in
+<em>Stock Management</em>, and may have no access to any of the accounting information. Each system user who works in
+Stores is given membership of the <tt class="docutils literal"><span class="pre">Stock</span></tt> group. If some users also work elsewhere, they&#8217;d also be
+given membership of other groups.</p>
+<p>Open&nbsp;ERP users can also belong to various roles. Just as group gives a user access rights, each
+role determines the user&#8217;s duties. This is managed at the level of workflows, which form the
+company&#8217;s business processes.</p>
+<span class="target" id="index-381"></span></div>
+<div class="section" id="groups-and-users">
+<h1>Groups and Users<a class="headerlink" href="#groups-and-users" title="Permalink to this headline">¶</a></h1>
+<p>To configure access rights you&#8217;d start by defining the groups. It&#8217;s important for the groups to
+be representative of your company&#8217;s job functions rather than of its individual employees.</p>
+<p>So if your finance director is also your sales director, you should create both a Finance Director
+group and a Sales Director group, even though they&#8217;re both the same person, and would both be
+assigned to this user in practice. This gives you flexibility for the future.</p>
+<p>You should also create groups within a departmental areas that have different levels of access
+rights. For example, if you create a <tt class="docutils literal"><span class="pre">Sales</span> <span class="pre">Director</span></tt>group and a <tt class="docutils literal"><span class="pre">Sales</span></tt> group avoid
+assigning exactly the same rights to each group. The first could see all the of reports, while the
+second could be restricted to seeing quotations. You could either make the <tt class="docutils literal"><span class="pre">Sales</span> <span class="pre">Director</span></tt>a
+member of both groups, and give the Sales Director group a limited set of extra rights, or give the
+<tt class="docutils literal"><span class="pre">Sales</span> <span class="pre">Director</span></tt>group all the rights it needs for a Sales Director to belong only to this one
+group. You should choose the scheme that gives you most flexibility and then stick with it to
+maintain consistency.</p>
+<span class="target" id="index-382"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Flexibility in managing access</p>
+<p class="last">To give yourself flexibility, you can ensure that a trusted staff member
+(perhaps a director or someone in accounts, or even the system administrator) is given wide rights
+to use the system,
+and is authorized by the management to carry out specific tasks for people.</p>
+</div>
+<span class="target" id="index-383"></span><div class="section" id="access-rights-for-menus">
+<h2>Access rights for menus<a class="headerlink" href="#access-rights-for-menus" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/access-rights-for-menus" ></div><p>To get a feel for rights management in Open ERP you&#8217;ll create a new <tt class="docutils literal"><span class="pre">Stock1</span></tt> group, with
+access to the <em>Stock Management</em> menu items. You&#8217;ll then create a stores person user who&#8217;s a member
+of the <tt class="docutils literal"><span class="pre">Stock1</span></tt> group.</p>
+<p>To create a new group, use the menu <em>Administration ‣ Users ‣ Groups</em>. Enter the
+group name Stock1.</p>
+<p>Then to create a new user linked to this, use <em>Administration ‣ Users ‣ Users</em> to
+enter the following:</p>
+<ul class="simple">
+<li><strong>Name</strong> : <tt class="docutils literal"><span class="pre">Stores</span> <span class="pre">Person</span></tt> ,</li>
+<li><strong>Username</strong> : <tt class="docutils literal"><span class="pre">stores</span></tt> ,</li>
+<li><strong>Password</strong> : <tt class="docutils literal"><span class="pre">stores</span></tt> ,</li>
+<li><strong>Company</strong> : <tt class="docutils literal"><span class="pre">&lt;your</span> <span class="pre">company&gt;</span></tt> ,</li>
+<li><strong>Action</strong> : <tt class="docutils literal"><span class="pre">Menu</span></tt> ,</li>
+<li><strong>Menu Action</strong> : <tt class="docutils literal"><span class="pre">Menu</span></tt> .</li>
+</ul>
+<p>In the second tab of the user form, <strong>Security</strong> , add the <tt class="docutils literal"><span class="pre">Stock1</span></tt>  group that you
+just created.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/menu_access.png"><img alt="../../../_images/menu_access.png" src="../../../_images/menu_access.png" style="width: 525.0px; height: 351.0px;" /></a>
+<p class="caption"><em>Groups that have access to the Stock Management menu</em></p>
+</div>
+<p>Save the user, then go into the menu <em>Administration ‣ Security ‣ Grant Access
+to Menus</em> to get a list of menus. Filter this list using the search field <strong>Menu</strong>  to
+get the <em>Stock Management</em> menu item. In the form describing the menu, add <tt class="docutils literal"><span class="pre">Stock1</span></tt>into the <strong>Groups</strong> field. While you&#8217;re at it, also add the <tt class="docutils literal"><span class="pre">admin</span></tt>  group there. From
+now on, only members of the <tt class="docutils literal"><span class="pre">Stock1</span></tt>  group and the <tt class="docutils literal"><span class="pre">admin</span></tt>  group will be able to see
+this menu item in their main menu list.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Menu hierarchy</p>
+<p class="last">Since menus are hierarchical there is no need to hide access to lower menus:
+once you&#8217;ve configured <em>Stock Management</em> this way, all lower-level menus become invisible to
+members of other groups.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Security</p>
+<p>This method of managing access to menus doesn&#8217;t guarantee that users are prevented from reaching
+hidden business objects in the system in other ways.
+For example, hiding the Invoices menu won&#8217;t prevent people reaching invoices through purchase and
+sales orders, or by guessing the URL.</p>
+<p class="last">For effective security management you must use the methods for managing access rights to objects
+presented in the following section.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Initial access configuration</p>
+<p class="last">In the initial configuration, Open&nbsp;ERP&#8217;s admin user, a member of the admin group, is given access
+to the Configuration menu
+in each section of the main menu. This is a general convention.
+For example, <em>Partners ‣ Configuration</em> is visible in the administrator&#8217;s menu
+amongst the other Partner menu items,
+but only those other menu entries are visible to other users.
+Similarly, the main menu entry <em>Administration</em> is, by convention, visible only to
+users who are members of the admin group.</p>
+</div>
+<span class="target" id="index-384"></span></div>
+<div class="section" id="access-rights-to-objects">
+<h2>Access Rights to Objects<a class="headerlink" href="#access-rights-to-objects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/access-rights-to-objects" ></div><p>The menu access rights determine who can access which menu, but doesn&#8217;t define what you can do once
+you&#8217;re in the menu.</p>
+<p>Access controls on the objects give you the possibility of defining what your users have the right
+to do with your data when they get access to it. Access control of objects is structured the same
+way as access to menus.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Object</p>
+<p class="last">An object represents a document in the system.
+Objects are linked to database tables and also have additional concepts,
+such as the functions of fields, inheritance from other objects, and class methods that give them
+behavior.</p>
+</div>
+<p>If no group is assigned to an object, all users can access it without any restriction of any sort.
+Conversely, when an access control is defined for an object, a user must be a member of a group
+owning appropriate access rights to have any sort of access to that object.</p>
+<p>You must always ensure that you don&#8217;t lock the <tt class="docutils literal"><span class="pre">admin</span></tt>group out of any objects that control
+administration and configuration options, such as the <tt class="docutils literal"><span class="pre">ir.model.access</span></tt>  model.</p>
+<p>You can manage four access modes on objects independently:</p>
+<ul class="simple">
+<li><strong>Read access</strong> : members of the group can read the data in the object,</li>
+<li><strong>Create access</strong> : members of the group can create a new record in the object,</li>
+<li><strong>Write access</strong> : members of the group can modify the contents of records in the object,</li>
+<li><strong>Delete access</strong> : members of the group can delete records from the object.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/access_control.png"><img alt="../../../_images/access_control.png" src="../../../_images/access_control.png" style="width: 600.0px; height: 267.75px;" /></a>
+<p class="caption"><em>Access control to invoices for the Finance/Admin group</em></p>
+</div>
+<p>To configure access rights on a Open&nbsp;ERP objects, use the menu <em>Administration ‣
+Security ‣ Access Controls ‣ Access Controls List</em> and click <strong>New</strong> or choose one there
+and click <strong>Edit</strong>.
+You give a <strong>Name</strong> to the access control, select a <strong>Group</strong>, and
+the object (<strong>Model</strong>), then check the checkbox corresponding to each of the four <strong>Access</strong> modes.</p>
+<p>If you don&#8217;t specify any group in the access rules, the rule is applied to all groups. So to remove
+access to an object for all users you could create a rule:</p>
+<ul class="simple">
+<li>which is defined for a specific object,</li>
+<li>which is linked to no group,</li>
+<li>for which none of the four access options is checked.</li>
+</ul>
+<p>You can then create additional rules on the same object to give specific rights to certain groups.</p>
+</div>
+<div class="section" id="modification-history">
+<span id="index-385"></span><h2>Modification history<a class="headerlink" href="#modification-history" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/modification-history" ></div><div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/view_log.png"><img alt="../../../_images/view_log.png" src="../../../_images/view_log.png" style="width: 383.25px; height: 263.25px;" /></a>
+<p class="caption"><em>Partner Record history</em></p>
+</div>
+<p>Each record in a Open ERP database carries a note of its history. You can find out who it was
+created by and when that occurred, and who last modified it and when that occurred. Click the
+<strong>View Log</strong> icon at the top right of any form in the web client (but only when it&#8217;s read-
+only, not when it&#8217;s editable) to display a dialog box showing this information, as shown in the
+figure <a class="reference external" href="8_20_Config_workflow.html#fig-sflow"><em>Workflow for order SO005</em></a>. It can help you identify who to contact if there are any problems with the
+data in the records.</p>
+<div class="admonition tip" id="index-386">
+<p class="first admonition-title">Tip</p>
+<p>Audit Trail</p>
+<p class="last">Open ERP has an Audit Trail module <a title="Audit Trail (Official, Quality Certified)" class="reference external" href="../../../technical_guide/audittrail.html#module-audittrail"><tt class="xref docutils literal"><span class="pre">audittrail</span></tt></a> which can be used to track any or
+all of the changes to one or more objects. It should be used with care, because it
+can generate huge amounts of data in the live database, but can be an invaluable
+tool.</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">User Login</a></li>
+<li><a class="reference external" href="#managing-access-rights">Managing access rights</a></li>
+<li><a class="reference external" href="#groups-and-users">Groups and Users</a><ul>
+<li><a class="reference external" href="#access-rights-for-menus">Access rights for menus</a></li>
+<li><a class="reference external" href="#access-rights-to-objects">Access Rights to Objects</a></li>
+<li><a class="reference external" href="#modification-history">Modification history</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="8_20_Config_menu.html"
+                                  title="previous chapter">Configuring the menu</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="8_20_Config_workflow.html"
+                                  title="next chapter">Configuring workflows and processes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/8/8_20_Config/8_20_Config_accessRights.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_menu.html" title="Configuring the menu"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" >Configuration &amp; Administration</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_workflow.html" title="Configuring workflows and processes"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="8_20_Config_menu.html" title="Configuring the menu"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">System Administration and Implementation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Configuration &amp; Administration</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

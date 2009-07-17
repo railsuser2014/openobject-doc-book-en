@@ -1,0 +1,606 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Data Loading &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Data Loading</a><ul>
+<li><a class="reference external" href="#files-xml">Files: .XML</a><ul>
+<li><a class="reference external" href="#the-data">The Data</a><ul>
+<li><a class="reference external" href="#record-tag">Record Tag</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#example">Example</a></li>
+<li><a class="reference external" href="#field-tag">field tag</a></li>
+<li><a class="reference external" href="#function-tag">function tag</a></li>
+<li><a class="reference external" href="#id1">Example</a></li>
+<li><a class="reference external" href="#id2">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="#csv-files">CSV Files</a><ul>
+<li><a class="reference external" href="#importing-from-a-csv">Importing from a CSV</a></li>
+<li><a class="reference external" href="#structure-of-the-csv-file">Structure of the CSV file</a></li>
+<li><a class="reference external" href="#export-demo-data-and-import-it-from-a-module">Export demo data and import it from a module</a></li>
+<li><a class="reference external" href="#use-record-id-like-in-xml-file">Use record id like in xml file:</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#multiple-csv-files">Multiple CSV Files</a><ul>
+<li><a class="reference external" href="#importing-from-multiple-csv-a-full-group-of-linked-data">Importing from multiple CSV a full group of linked data</a></li>
+<li><a class="reference external" href="#definition-of-an-import-module">Definition of an import module</a></li>
+<li><a class="reference external" href="#creation-of-csv-files">Creation of CSV files</a></li>
+<li><a class="reference external" href="#links-between-id-if-the-csv-files">Links between id if the CSV files</a></li>
+<li><a class="reference external" href="#links-to-id-already-in-the-system">Links to id already in the system</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#xml-data-files-convention">XML data files convention</a></li>
+<li><a class="reference external" href="#managing-updates">Managing updates</a><ul>
+<li><a class="reference external" href="#managing-updates-and-migrations">Managing updates and migrations</a><ul>
+<li><a class="reference external" href="#table-object-structure">Table/Object structure</a></li>
+<li><a class="reference external" href="#data">Data</a></li>
+<li><a class="reference external" href="#workflows">Workflows</a></li>
+<li><a class="reference external" href="#things-to-care-about-during-development">Things to care about during development</a></li>
+<li><a class="reference external" href="#custom-modules">Custom modules</a></li>
+<li><a class="reference external" href="#demo-datas">Demo datas</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#summary-of-update-and-init-process">Summary of update and init process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/5_18_upgrading_server/19_1_upgrading_server.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="data-loading">
+<h1>Data Loading<a class="headerlink" href="#data-loading" title="Permalink to this headline">¶</a></h1>
+<p>During Open ERP installation, two steps are necessary to create and feed the database:</p>
+<p>The creation (or modification in the case of an upgrade) of SQL tables is automated thanks to the description of objects in the server.</p>
+<p>Into Open ERP, all the logic of the application is stored in the database. We find for example:</p>
+<p>There must be a mechanism to describe, modify and reload the different data. These data are represented into a set of XML files that can possibly be loaded during start of the program in order to fill in the tables.</p>
+<div class="section" id="files-xml">
+<h2>Files: .XML<a class="headerlink" href="#files-xml" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/files-xml" ></div><div class="highlight-python"><pre>%define=lightblue color=#27adfb%</pre>
+</div>
+<p>Data can be inserted or updated into the PostgreSQL tables corresponding to the Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file is as follows :</p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;
+&lt;terp&gt;
+    &lt;data&gt;
+    &lt;record model="model.name_1" id="id_name_1"&gt;
+        &lt;field name="field1"&gt;
+            %lightblue%"field1 content"
+        &lt;/field&gt;
+        &lt;field name="field2"&gt;
+            %lightblue%"field2 content"
+        &lt;/field&gt;
+        (...)
+    &lt;/record&gt;
+    &lt;record model="model.name_2" id="id_name_2"&gt;
+        (...)
+    &lt;/record&gt;
+    (...)
+    &lt;/data&gt;
+&lt;/terp&gt;</pre>
+</div>
+<p>Fields content are strings that must be encoded as UTF-8 in XML files.</p>
+<p>Let&#8217;s review an example taken from the TinyERP source (base_demo.xml in the base module):</p>
+<div class="highlight-python"><pre>&lt;record model="res.company" id="main_company"&gt;
+    &lt;field name="name"&gt;Tiny sprl&lt;/field&gt;
+    &lt;field name="partner_id" ref="main_partner"/&gt;
+    &lt;field name="currency_id" ref="EUR"/&gt;
+&lt;/record&gt;</pre>
+</div>
+<div class="highlight-python"><pre>&lt;record model="res.users" id="user_admin"&gt;
+    &lt;field name="login"&gt;admin&lt;/field&gt;
+    &lt;field name="password"&gt;admin&lt;/field&gt;
+    &lt;field name="name"&gt;Administrator&lt;/field&gt;
+    &lt;field name="signature"&gt;Administrator&lt;/field&gt;
+    &lt;field name="action_id" ref="action_menu_admin"/&gt;
+    &lt;field name="menu_id" ref="action_menu_admin"/&gt;
+    &lt;field name="address_id" ref="main_address"/&gt;
+    &lt;field name="groups_id" eval="[(6,0,[group_admin])]"/&gt;
+    &lt;field name="company_id" ref="main_company"/&gt;
+&lt;/record&gt;</pre>
+</div>
+<p>This last record defines the admin user :</p>
+<div class="highlight-python"><pre>&lt;field name="company_id" ref="main_company"/&gt;</pre>
+</div>
+<p>-&gt;The field &#64;&#64;company_id&#64;&#64; is a many-to-one relation from the user object to the company object, and <strong>main_company</strong> is the id of to associate.</p>
+<p>-&gt;This is a classical example of the use of &#64;&#64;search&#64;&#64; in demo data: here we do not really care about which partner we want to use for the test, so we give an empty list. Notice the <strong>model</strong> attribute is currently mandatory.</p>
+<div class="section" id="the-data">
+<h3>The Data<a class="headerlink" href="#the-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="record-tag">
+<h4>Record Tag<a class="headerlink" href="#record-tag" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="description">
+<h5>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h5>
+<p>The addition of new data is made with the <strong>record</strong> tag. This one takes a mandatory attribute : <strong>model</strong>. Model is the object name where the insertion has to be done. The tag record can also take an optional attribute: <strong>id</strong>. If this attribute is given, a variable of this name can be used later on, in the same file, to make reference to the newly created resource ID.</p>
+<p>A <strong>record</strong> tag may contain field tags. They indicate the record&#8217;s <strong>fields</strong> value. If a field is not specified the default value will be used.</p>
+</div>
+<div class="section" id="example">
+<h5>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-python"><pre>&lt;record model="ir.actions.report.xml" id="l0"&gt;
+     &lt;field name="model"&gt;account.invoice&lt;/field&gt;
+     &lt;field name="name"&gt;Invoices List&lt;/field&gt;
+     &lt;field name="report_name"&gt;account.invoice.list&lt;/field&gt;
+     &lt;field name="report_xsl"&gt;account/report/invoice.xsl&lt;/field&gt;
+     &lt;field name="report_xml"&gt;account/report/invoice.xml&lt;/field&gt;
+&lt;/record&gt;</pre>
+</div>
+</div>
+<div class="section" id="field-tag">
+<h5>field tag<a class="headerlink" href="#field-tag" title="Permalink to this headline">¶</a></h5>
+<p>The attributes for the field tag are the following:</p>
+</div>
+<div class="section" id="function-tag">
+<h5>function tag<a class="headerlink" href="#function-tag" title="Permalink to this headline">¶</a></h5>
+</div>
+<div class="section" id="id1">
+<h5>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-python"><pre>&lt;function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/&gt;</pre>
+</div>
+<p>getitem tag</p>
+<p>Takes a subset of the evaluation of the last child node of the tag.</p>
+</div>
+<div class="section" id="id2">
+<h5>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h5>
+<p>Evaluates to the first element of the list of ids returned by the function node</p>
+<div class="highlight-python"><pre>&lt;getitem index="0" type="list"&gt;
+    &lt;function model="ir.ui.menu" name="search" eval="[[('name','=','Operations')]]"/&gt;
+&lt;/getitem&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="csv-files">
+<h2>CSV Files<a class="headerlink" href="#csv-files" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/csv-files" ></div><div class="section" id="importing-from-a-csv">
+<h3>Importing from a CSV<a class="headerlink" href="#importing-from-a-csv" title="Permalink to this headline">¶</a></h3>
+<p>Instead of using .XML file, you can import .CSV files. It is simpler but the migration system does not migrate the data imported from the .CSV files. It&#8217;s like the noupdate attribute in .XML files. It&#8217;s also more difficult to keep track of relations between ressources and it is more slower at the installation of the server.</p>
+<p>Use this only for demo data that will never been upgraded from one version of Tiny ERP to another.</p>
+<p>The name of the object is the name of the file before the first &#8216;-&#8216;. You must use one file per object to import. For example, to import a file with partners (including their multiple contacts and events), the file must be named like one of the following example:</p>
+</div>
+<div class="section" id="structure-of-the-csv-file">
+<h3>Structure of the CSV file<a class="headerlink" href="#structure-of-the-csv-file" title="Permalink to this headline">¶</a></h3>
+<p>Have a look at the user manual for a complete description on how to construct your .CSV file.</p>
+<p>Usefull info:</p>
+</div>
+<div class="section" id="export-demo-data-and-import-it-from-a-module">
+<h3>Export demo data and import it from a module<a class="headerlink" href="#export-demo-data-and-import-it-from-a-module" title="Permalink to this headline">¶</a></h3>
+<p>You can import .CSV file that have been exported from the Tiny ERP client. This is interesting to create your own demo module. But both formats are not exactly the same, mainly due to the conversion: Structured Data -&gt; Flat Data -&gt; Structured Data.</p>
+<p>If you want to create these two categories you can try :</p>
+<p>This does not work as expected: a category &#8220;Customer, Supplier&#8221; is created. The solution is to create an empty line with only the second category:</p>
+<p>(Note the comma before &#8220;Supplier&#8221;).</p>
+</div>
+<div class="section" id="use-record-id-like-in-xml-file">
+<h3>Use record id like in xml file:<a class="headerlink" href="#use-record-id-like-in-xml-file" title="Permalink to this headline">¶</a></h3>
+<p>It&#8217;s possible to define an id for each line of the csv file. This allow to define references between records:</p>
+<p>If you do this, the line with the parent data must be before the child lines in the file.</p>
+</div>
+</div>
+<div class="section" id="multiple-csv-files">
+<h2>Multiple CSV Files<a class="headerlink" href="#multiple-csv-files" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/multiple-csv-files" ></div><div class="section" id="importing-from-multiple-csv-a-full-group-of-linked-data">
+<h3>Importing from multiple CSV a full group of linked data<a class="headerlink" href="#importing-from-multiple-csv-a-full-group-of-linked-data" title="Permalink to this headline">¶</a></h3>
+<p>It&#8217; possible to import a lot of data, with multiple CSV files imported as a single operation. Assume we have a database with books and authors with a relation many2many between book and author.</p>
+<p>And that you already have a file with a lot of books (like a library) and an other file with a lot of authors and a third file with the links between them.</p>
+<p>How to import that easily in openERP ?</p>
+</div>
+<div class="section" id="definition-of-an-import-module">
+<h3>Definition of an import module<a class="headerlink" href="#definition-of-an-import-module" title="Permalink to this headline">¶</a></h3>
+<p>You can do this in the module you have defined to manage yours books and authors. but Sometimes, the tables to import can also be in several modules.</p>
+<p>For this example, let&#8217;s say that &#8216;book&#8217; object is defined in a module called &#8216;library_management&#8217; and that &#8216;Author&#8217; object in a module called &#8216;contact_name&#8217;.</p>
+<p>In this case, you can create a &#8216;fake&#8217; module, just to import the data for all these multiples modules. Call this importation module : &#8216;import_my_books&#8217;.</p>
+<p>You create this module as others modules of OpenObject :</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># -*- encoding: utf-8 -*-</span>
+<span class="p">{</span>
+  <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;My Book Import&#39;</span><span class="p">,</span>
+  <span class="s">&#39;category&#39;</span><span class="p">:</span> <span class="s">&#39;Data Module 1&#39;</span><span class="p">,</span>
+  <span class="s">&#39;init_xml&#39;</span><span class="p">:[],</span>
+  <span class="s">&#39;author&#39;</span><span class="p">:</span> <span class="s">&#39;mySelf &amp; I&#39;</span><span class="p">,</span>
+  <span class="s">&#39;depends&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;base&#39;</span><span class="p">,</span><span class="s">&#39;library_management&#39;</span><span class="p">,</span><span class="s">&#39;contact_name&#39;</span><span class="p">],</span>
+  <span class="s">&#39;version&#39;</span><span class="p">:</span> <span class="s">&#39;1.0&#39;</span><span class="p">,</span>
+  <span class="s">&#39;active&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+  <span class="s">&#39;demo_xml&#39;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&#39;update_xml&#39;</span><span class="p">:[</span><span class="s">&#39;contact_name.author.csv&#39;</span><span class="p">,</span><span class="s">&#39;library.book.csv&#39;</span><span class="p">],</span>
+  <span class="s">&#39;installable&#39;</span><span class="p">:</span> <span class="bp">True</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creation-of-csv-files">
+<h3>Creation of CSV files<a class="headerlink" href="#creation-of-csv-files" title="Permalink to this headline">¶</a></h3>
+<p>For the CSV files, you&#8217;ll import one the after, the other one.</p>
+<p>So you have to choose, in which way you&#8217;ll treat the many2many relation. For our example, we&#8217;ve choose to import all the authors, then all the books with the links to the authors.</p>
+<p>You have to put your data in a CSV file without any link to books (because the book ids will be known only AFTERWARDS...) For example : (&#8220;contact_name.author.csv&#8221;)</p>
+<div class="highlight-python"><pre>id,last_name,first_name,type
+author_1,Bradley,Marion Zimmer,Book writer
+author_2,"Szu T'su",,Chinese philosopher
+author_3,Zelazny,Roger,Book writer
+author_4,Arleston,Scotch,Screen Writer
+author_5,Magnin,Florence,Comics Drawer
+...</pre>
+</div>
+<p>Here, you can put the data about your books, but also, the links to the authors, using the same id as the column &#8216;id&#8217; of the author CSV file. For example : (&#8220;library.book.csv&#8221; )</p>
+<div class="highlight-python"><pre>id,title,isbn,pages,date,author_ids:id
+book_a,Les Cours du Chaos,1234567890123,268,1975-12-25,"author_3"
+book_b,"L'art de la Guerre, en 219 volumes",1234567890124,1978-01-01,"author_2"
+book_c,"new marvellous comics",1587459248579,2009-01-01,"author_5,author_4"
+...</pre>
+</div>
+<p>Five remarks :</p>
+</div>
+<div class="section" id="links-between-id-if-the-csv-files">
+<h3>Links between id if the CSV files<a class="headerlink" href="#links-between-id-if-the-csv-files" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="links-to-id-already-in-the-system">
+<h3>Links to id already in the system<a class="headerlink" href="#links-to-id-already-in-the-system" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="xml-data-files-convention">
+<h2>XML data files convention<a class="headerlink" href="#xml-data-files-convention" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/xml-data-files-convention" ></div><p>Developers:Developper&#8217;s Book/Data Loading/XMLFilesConventions</p>
+<p>Jump to: navigation, search</p>
+<p>The ressources are placed in different files according to their uses. By convention;</p>
+<p>The workflow files have to be loaded before the datas ! Otherwise, the ressource created won&#8217;t be integrated inside the workflow because the later is not yet defined.</p>
+</div>
+<div class="section" id="managing-updates">
+<h2>Managing updates<a class="headerlink" href="#managing-updates" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/managing-updates" ></div><div class="section" id="managing-updates-and-migrations">
+<h3>Managing updates and migrations<a class="headerlink" href="#managing-updates-and-migrations" title="Permalink to this headline">¶</a></h3>
+<p>Open ERP has a built&#8217;in migration and upgrade system which allows updates to be nearly (or often) automatic. This system also allows to easily incorporate custom modules.</p>
+<div class="section" id="table-object-structure">
+<h4>Table/Object structure<a class="headerlink" href="#table-object-structure" title="Permalink to this headline">¶</a></h4>
+<p>When you run openerp-server with option &#8211;init or &#8211;update, the table structure are updated to match the new description that is in .py files. Fields that are removed are not removed in the postgresql database not to lose data.</p>
+<p>So, simply running &#8211;update or &#8211;init, will upgrade your table structure.</p>
+<p>It&#8217;s important to run &#8211;init=module the first time you install the module. Next time, you must use the &#8211;update=module argument instead of the init one. This is because init loads ressources that are loaded only once and never upgraded (eg: ressources with no id=&#8221;&#8221; attribute or within a noupdate=&#8221;1&#8221; &lt;data&gt; tag).</p>
+</div>
+<div class="section" id="data">
+<h4>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h4>
+<p>Some data is automatically loaded at the installation of Tiny ERP:</p>
+<p>This data is also migrated to a new version if you run &#8211;update or &#8211;init.</p>
+</div>
+<div class="section" id="workflows">
+<h4>Workflows<a class="headerlink" href="#workflows" title="Permalink to this headline">¶</a></h4>
+<p>Workflows are also upgraded automatically. If some activities are removed, the documents states evolves automatically to the preceding activities. That ensure that all documents are always in valid states.</p>
+<p>You can freely remove activities in your XML files. If workitems are in this activity, they will evolve to the preceding unlinked activity. And after the activity will be removed.</p>
+</div>
+<div class="section" id="things-to-care-about-during-development">
+<h4>Things to care about during development<a class="headerlink" href="#things-to-care-about-during-development" title="Permalink to this headline">¶</a></h4>
+<p>Since version 3.0.2 of Tiny ERP, you can not use twice the same &#8216;id=&#8221;...&#8221;&#8217; during resource creation in your XML files, unless they are in two different modules.</p>
+<p>Resources which don&#8217;t contain an id are created (and updated) only once; at the installation of the module or when you use the &#8211;init argument.</p>
+<p>If a resource has an id and this resource is not present anymore in the next version of the XML file, Open ERP will automatically remove it from the database. If this resource is still present, Open ERP will update the modifications to this resource.</p>
+<p>If you use a new id, the resource will be automatically created at the next update of this module.</p>
+<p><strong>Use explicit id declaration !</strong>, Example:</p>
+<p>It is important to put id=&#8221;....&#8221; to all record that are important for the next version migrations. For example, do not forget to put some id=&#8221;...&#8221; on all workflows transitions. This will allows Open ERP to know which transition has been removed and which transition is new or updated.</p>
+</div>
+<div class="section" id="custom-modules">
+<h4>Custom modules<a class="headerlink" href="#custom-modules" title="Permalink to this headline">¶</a></h4>
+<p>For example, if you want to override the view of an object named &#8216;invoice_form&#8217; in your xml file (id=&#8221;invoice_form&#8221;). All you have to do is redefine this view in your custom module with the same id. You can prefix ids with the name of the module to reference an id defined in another module.</p>
+<p>Example:</p>
+<p>This will override the invoice form view. You do not have to delete the old view, like in 3.0 versions of Open ERP.</p>
+<p>Note that it is often better to use view inherytancy instead of overwritting views.</p>
+<p>In this migration system, you do not have to delete any ressource. The migration system will detect if it is an update or a delete using id=&#8221;...&#8221; attributes. This is important to preserve references duing migrations.</p>
+</div>
+<div class="section" id="demo-datas">
+<h4>Demo datas<a class="headerlink" href="#demo-datas" title="Permalink to this headline">¶</a></h4>
+<p>Demo datas do not have to be upgraded; because they are probably modified, deleted, ... by users. So, to avoid demo data to be upgraded, you can put a noupdate=&#8221;1&#8221; attribute in the &lt;data&gt; tag of your .xml data files.</p>
+</div>
+</div>
+<div class="section" id="summary-of-update-and-init-process">
+<h3>Summary of update and init process<a class="headerlink" href="#summary-of-update-and-init-process" title="Permalink to this headline">¶</a></h3>
+<p>init:</p>
+<p>update:</p>
+<p>Examples of builtin (non demo) data:</p>
+<p>What&#8217;s going on on a update process:</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Data Loading</a><ul>
+<li><a class="reference external" href="#files-xml">Files: .XML</a><ul>
+<li><a class="reference external" href="#the-data">The Data</a><ul>
+<li><a class="reference external" href="#record-tag">Record Tag</a><ul>
+<li><a class="reference external" href="#description">Description</a></li>
+<li><a class="reference external" href="#example">Example</a></li>
+<li><a class="reference external" href="#field-tag">field tag</a></li>
+<li><a class="reference external" href="#function-tag">function tag</a></li>
+<li><a class="reference external" href="#id1">Example</a></li>
+<li><a class="reference external" href="#id2">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="#csv-files">CSV Files</a><ul>
+<li><a class="reference external" href="#importing-from-a-csv">Importing from a CSV</a></li>
+<li><a class="reference external" href="#structure-of-the-csv-file">Structure of the CSV file</a></li>
+<li><a class="reference external" href="#export-demo-data-and-import-it-from-a-module">Export demo data and import it from a module</a></li>
+<li><a class="reference external" href="#use-record-id-like-in-xml-file">Use record id like in xml file:</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#multiple-csv-files">Multiple CSV Files</a><ul>
+<li><a class="reference external" href="#importing-from-multiple-csv-a-full-group-of-linked-data">Importing from multiple CSV a full group of linked data</a></li>
+<li><a class="reference external" href="#definition-of-an-import-module">Definition of an import module</a></li>
+<li><a class="reference external" href="#creation-of-csv-files">Creation of CSV files</a></li>
+<li><a class="reference external" href="#links-between-id-if-the-csv-files">Links between id if the CSV files</a></li>
+<li><a class="reference external" href="#links-to-id-already-in-the-system">Links to id already in the system</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#xml-data-files-convention">XML data files convention</a></li>
+<li><a class="reference external" href="#managing-updates">Managing updates</a><ul>
+<li><a class="reference external" href="#managing-updates-and-migrations">Managing updates and migrations</a><ul>
+<li><a class="reference external" href="#table-object-structure">Table/Object structure</a></li>
+<li><a class="reference external" href="#data">Data</a></li>
+<li><a class="reference external" href="#workflows">Workflows</a></li>
+<li><a class="reference external" href="#things-to-care-about-during-development">Things to care about during development</a></li>
+<li><a class="reference external" href="#custom-modules">Custom modules</a></li>
+<li><a class="reference external" href="#demo-datas">Demo datas</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#summary-of-update-and-init-process">Summary of update and init process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/5_18_upgrading_server/19_1_upgrading_server.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

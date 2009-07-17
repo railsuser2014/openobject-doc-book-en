@@ -1,0 +1,361 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>F.A.Q on Bazaar version control system &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">F.A.Q on Bazaar version control system</a><ul>
+<li><a class="reference external" href="#how-to-install-bazaar">How to install bazaar ?</a></li>
+<li><a class="reference external" href="#how-to-create-a-login-on-launchpad">How to create a login on launchpad ?</a></li>
+<li><a class="reference external" href="#how-to-commit">How to commit ?</a></li>
+<li><a class="reference external" href="#how-to-use-bazaar">How to use Bazaar ?</a></li>
+<li><a class="reference external" href="#some-problems">Some problems</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/contribute/bazaar_faq.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="f-a-q-on-bazaar-version-control-system">
+<span id="bazaar-faq-link"></span><h1><a class="toc-backref" href="#id1">F.A.Q on Bazaar version control system</a><a class="headerlink" href="#f-a-q-on-bazaar-version-control-system" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#f-a-q-on-bazaar-version-control-system" id="id1">F.A.Q on Bazaar version control system</a><ul>
+<li><a class="reference internal" href="#how-to-install-bazaar" id="id2">How to install bazaar ?</a></li>
+<li><a class="reference internal" href="#how-to-create-a-login-on-launchpad" id="id3">How to create a login on launchpad ?</a></li>
+<li><a class="reference internal" href="#how-to-commit" id="id4">How to commit ?</a></li>
+<li><a class="reference internal" href="#how-to-use-bazaar" id="id5">How to use Bazaar ?</a></li>
+<li><a class="reference internal" href="#some-problems" id="id6">Some problems</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="how-to-install-bazaar">
+<h2><a class="toc-backref" href="#id2">How to install bazaar ?</a><a class="headerlink" href="#how-to-install-bazaar" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/how-to-install-bazaar" ></div><p>To install bazaar on any ubuntu distribution, you can use:</p>
+<div class="highlight-python"><pre>apt-get install bzr</pre>
+</div>
+<p>To work correctly, bzr version must be at least 1.3. Check it with the command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">bzr</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>If you don&#8217;t have at least 1.3 version, you can check this url: <a class="reference external" href="http://bazaar-vcs.org/Download">http://bazaar-vcs.org/Download</a></p>
+<p>On debian, in any distribution, the 1.5 version is working, you can get it on
+this url: <a class="reference external" href="http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb">http://backports.org/debian/pool/main/b/bzr/bzr_1.5-1~bpo40+1_i386.deb</a></p>
+</div>
+<div class="section" id="how-to-create-a-login-on-launchpad">
+<h2><a class="toc-backref" href="#id3">How to create a login on launchpad ?</a><a class="headerlink" href="#how-to-create-a-login-on-launchpad" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/how-to-create-a-login-on-launchpad" ></div><p>Before you can commit on launchpad, you need to create a login.</p>
+<p>Go to: <a class="reference external" href="https://launchpad.net">https://launchpad.net</a> &#8211;&gt; log in / register on top right.</p>
+<p>You enter your e-mail address and you wait for an e-mail which will guide you trough the process needed to create your login.</p>
+<p>This login is only needed if you intend to commit on bazaar on openerp-commiter or on your own branch.</p>
+</div>
+<div class="section" id="how-to-commit">
+<h2><a class="toc-backref" href="#id4">How to commit ?</a><a class="headerlink" href="#how-to-commit" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/how-to-commit" ></div><p>Once your login is created, you need to create some ssh keys and insert them on
+your login page (see create ssh keys on the left). These ssh keys are needed to
+commit.</p>
+<p>I advice you to follow these instructions to complete the creation of your
+ssh keys: <a class="reference external" href="https://help.launchpad.net/YourAccount/CreatingAnSSHKeyPair">https://help.launchpad.net/YourAccount/CreatingAnSSHKeyPair</a></p>
+</div>
+<div class="section" id="how-to-use-bazaar">
+<h2><a class="toc-backref" href="#id5">How to use Bazaar ?</a><a class="headerlink" href="#how-to-use-bazaar" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/how-to-use-bazaar" ></div><p>There are two ways to work on bzr. Either, you make a checkout, either you create a local branch.</p>
+<p>Checkout method:</p>
+<div class="highlight-python"><pre>bzr co lp:~openerp/openobject-addons/trunk -- to make a checkout
+bzr up                                     -- to make an update
+bzr ci                                     -- to commit</pre>
+</div>
+<p>Creating a branch:</p>
+<div class="highlight-python"><pre>bzr branch lp:~&lt;url&gt; &lt;local dir&gt;             -- to create a branch locally
+bzr pull                                     -- to update the branch
+bzr push lp:~&lt;url&gt;                           -- to include your changes in the remote branch</pre>
+</div>
+<p>In any cases, when you experience some problems, you can do:</p>
+<div class="highlight-python"><pre>bzr help</pre>
+</div>
+<p>or <tt class="docutils literal"><span class="pre">bzr</span> <span class="pre">help</span> <span class="pre">&lt;command&gt;</span></tt>. e.g.:</p>
+<div class="highlight-python"><pre>bzr help branch</pre>
+</div>
+</div>
+<div class="section" id="some-problems">
+<h2><a class="toc-backref" href="#id6">Some problems</a><a class="headerlink" href="#some-problems" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/some-problems" ></div><p>Checkout does not work, I have this message error:</p>
+<div class="highlight-python"><pre>bzr lp:~&lt;url&gt;
+bzr: ERROR: Repository KnitPackRepository is not compatible with repository RemoteRepository</pre>
+</div>
+<p>There are two ways to correct it.</p>
+<p>Instead of using <tt class="docutils literal"><span class="pre">bzr</span> <span class="pre">co</span> <span class="pre">lp:~&lt;url&gt;</span></tt>, use <tt class="docutils literal"><span class="pre">bzr</span> <span class="pre">co</span> <span class="pre">bzr+ssh://&lt;yourlaunchpad</span> <span class="pre">login&gt;&#64;bazaar.launchpad.net/~&lt;url&gt;</span></tt></p>
+<p>you can check this url: <a class="reference external" href="https://bugs.launchpad.net/bzr/+bug/205579">https://bugs.launchpad.net/bzr/+bug/205579</a>. Generally, you do:</p>
+<div class="highlight-python"><pre>bzr branch lp:~&lt;url&gt;
+bzr reconfigure --checkout</pre>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">F.A.Q on Bazaar version control system</a><ul>
+<li><a class="reference external" href="#how-to-install-bazaar">How to install bazaar ?</a></li>
+<li><a class="reference external" href="#how-to-create-a-login-on-launchpad">How to create a login on launchpad ?</a></li>
+<li><a class="reference external" href="#how-to-commit">How to commit ?</a></li>
+<li><a class="reference external" href="#how-to-use-bazaar">How to use Bazaar ?</a></li>
+<li><a class="reference external" href="#some-problems">Some problems</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/contribute/bazaar_faq.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

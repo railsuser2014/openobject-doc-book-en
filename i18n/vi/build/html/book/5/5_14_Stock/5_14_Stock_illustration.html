@@ -1,0 +1,531 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Understanding double-entry stock management &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Logistics and Stock Management" href="index.html" />
+    <link rel="next" title="Complete workflow from supplier to customer" href="5_14_Stock_wf.html" />
+    <link rel="prev" title="Logistics and Stock Management" href="index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_wf.html" title="Complete workflow from supplier to customer"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Logistics and Stock Management"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_wf.html" title="Complete workflow from supplier to customer"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Logistics and Stock Management"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Logistics and Stock Management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_wf.html"
+                                  title="next chapter">Complete workflow from supplier to customer</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_illustration.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-260"></span><div class="section" id="understanding-double-entry-stock-management">
+<h1>Understanding double-entry stock management<a class="headerlink" href="#understanding-double-entry-stock-management" title="Permalink to this headline">¶</a></h1>
+<p>To illustrate this concept of stock management, see how stock moves are generated by the following
+operations:</p>
+<ul class="simple">
+<li>Receiving products from a supplier,</li>
+<li>Delivery to a customer,</li>
+<li>Inventory operation for lost materials,</li>
+<li>Manufacturing.</li>
+</ul>
+<span class="target" id="index-261"></span><p>The structure of stock locations is shown by the figure <a class="reference external" href="index.html#fig-stloctree"><em>Stores location structure when Open ERP has just been installed</em></a>. Stocks are assumed to be totally
+empty and no operation is in progress nor planned.</p>
+<p>If you order &#8216;30 bicycles&#8217; from a supplier, Open ERP will then do the following operations after the
+receipt of the products:</p>
+<table border="1" class="docutils">
+<caption>Stock Move operation from Suppliers to Stock</caption>
+<colgroup>
+<col width="79%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Partner Locations &gt; Suppliers &gt; Suppliers</td>
+<td>-30 bicycles</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>+30 bicycles</td>
+</tr>
+</tbody>
+</table>
+<p>If you deliver 2 bicycles to a European customer you will get the following transactions for the
+delivery:</p>
+<table border="1" class="docutils">
+<caption>Stock Move operation from Stock to European Customers</caption>
+<colgroup>
+<col width="79%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>-2 bicycles</td>
+</tr>
+<tr><td>Partner Locations &gt; Customers &gt; European Customers</td>
+<td>+2 bicycles</td>
+</tr>
+</tbody>
+</table>
+<p>When the two operations are complete you&#8217;ll then get the following stock in each location:</p>
+<table border="1" class="docutils">
+<caption>Resulting stock situation</caption>
+<colgroup>
+<col width="79%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Partner Locations &gt; Suppliers &gt; Suppliers</td>
+<td>-30 bicycles</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>+28 bicycles</td>
+</tr>
+<tr><td>Partner Locations &gt; Customers &gt; European Customers</td>
+<td>+2 bicycles</td>
+</tr>
+</tbody>
+</table>
+<p>So you can see that the sum of the stocks of a product in all the locations in Open ERP is always
+zero. In accounting you&#8217;d say that the sum of the debits is equal to the sum of the credits.</p>
+<p>Partner locations (customers and suppliers) aren&#8217;t located under your company in the hierarchical
+structure, so their contents are not considered as part of your own stock. So if you look just at
+the physical locations inside your own company those two bicycles are no longer in your company.
+They&#8217;re not in your own physical stock but it&#8217;s still very useful to see them in your customer&#8217;s
+stock because that helps when you carry out detailed stock management analysis.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Accounts</p>
+<p class="last">In managing stock, a gap between the data in the software and real quantities in stock is
+difficult to avoid.
+Double-entry stock management gives twice as many opportunities to find an error.
+If you forget two items of stock this error will automatically be reflected in the
+counterpart&#8217;s location.</p>
+</div>
+<p>You can make a comparison with accounting, where you&#8217;ll easily find an error because you can look
+for an anomaly in an account or in the counterparts: if there&#8217;s not enough in a bank account then that&#8217;s
+probably because someone&#8217;s forgotten to enter a customer&#8217;s invoice payment. You always know that the
+sum of debits must equal the sum of the credits in both accounting and Open ERP&#8217;s stock management.</p>
+<p>In accounting, all documents lead to accounting entries that form the basis of management
+accounting. If you create invoices or code in statements of account, for example, the results of the
+operations are accounting entries on accounts. And it&#8217;s the same for stock management in Open ERP.
+All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture
+them, or carry out a stock inventory operation, stock moves are carried out every time.</p>
+<p>You&#8217;ve seen a fairly simple example of goods receipt and product delivery, but some operations are
+less obvious – a stock inventory operation, for example. An inventory operation is carried out
+when you compare the stock shown in software with real stock numbers counted in the stores.</p>
+<span class="target" id="index-262"></span><p>In Open ERP, with its double-entry stock management, you&#8217;d use stock moves for this inventory
+operation. That helps you manage your stock traceability. If there are 26 Bicycles in real stock but
+Open ERP shows 28 in the system. You then have to reduce the number in Open ERP to 26. This
+reduction of 2 units is considered as a loss or destruction of products and the correction is
+carried out as in the following operation:</p>
+<table border="1" class="docutils">
+<caption>Inventory operation to adjust stock</caption>
+<colgroup>
+<col width="79%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>-2 bicycles</td>
+</tr>
+<tr><td>Virtual Locations &gt; Inventory Loss</td>
+<td>+2 bicycles</td>
+</tr>
+</tbody>
+</table>
+<p>The product stock under consideration then becomes:</p>
+<table border="1" class="docutils">
+<caption>Real and counterpart stocks when operations are completed</caption>
+<colgroup>
+<col width="79%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Partner Locations &gt; Suppliers &gt; Suppliers</td>
+<td>-30 bicycles</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>+26 bicycles</td>
+</tr>
+<tr><td>Partner Locations &gt; Customers &gt; European Customers</td>
+<td>+2 bicycles</td>
+</tr>
+<tr><td>Virtual Locations &gt; Inventory Loss</td>
+<td>+2 bicycles</td>
+</tr>
+</tbody>
+</table>
+<p>This example shows one of the great advantages of this approach in terms of performance analysis.
+After a few months, you can just make a stock valuation of the location <tt class="docutils literal"><span class="pre">Virtual</span> <span class="pre">Locations</span> <span class="pre">&gt;</span>
+<span class="pre">Inventory</span> <span class="pre">Loss</span></tt> to give you the value of the company&#8217;s stock losses in the given period.</p>
+<p>Now see how the following manufacturing operation is structured in Open ERP. To make a bicycle you
+need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
+from real stock and the addition of a bicycle there. The consumption / production is formalized by
+moving products out of and into physical stock. The stock operations for this are as follows:</p>
+<table border="1" class="docutils">
+<caption>Stock situation resulting from manufacture</caption>
+<colgroup>
+<col width="48%" />
+<col width="13%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Location</th>
+<th class="head">Products</th>
+<th class="head">Step</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Virtual Locations &gt; Default Production</td>
+<td>+2 Wheels</td>
+<td>Consumption of raw materials</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>-2 Wheels</td>
+<td>Consumption of raw materials</td>
+</tr>
+<tr><td>Virtual Locations &gt; Default Production</td>
+<td>+1 Frame</td>
+<td>Consumption of raw materials</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>-1 Frame</td>
+<td>Consumption of raw materials</td>
+</tr>
+<tr><td>Virtual Locations &gt; Default Production</td>
+<td>-1 Bicycle</td>
+<td>Manufacture of finished products</td>
+</tr>
+<tr><td>Physical Locations &gt; Tiny SPRL &gt; Stock</td>
+<td>+1 Bicycle</td>
+<td>Manufacture of finished products</td>
+</tr>
+</tbody>
+</table>
+<p>So you&#8217;ve now got the outcome you need from the consumption of raw materials and the manufacture of
+finished products.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Assessing created value</p>
+<p class="last">You might already have noticed a useful effect of this approach:
+if you do a stock valuation in the <tt class="docutils literal"><span class="pre">Default</span> <span class="pre">Production</span></tt> location you get
+a statement of value created by your company (as a negative amount).
+Stock valuation in any given location is calculated by multiplying quantities of products in
+stock by their cost.
+In this case the raw material value is deducted from the finished product value.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Logistics and Stock Management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_wf.html"
+                                  title="next chapter">Complete workflow from supplier to customer</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_illustration.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_wf.html" title="Complete workflow from supplier to customer"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Logistics and Stock Management"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" >Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_wf.html" title="Complete workflow from supplier to customer"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Logistics and Stock Management"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

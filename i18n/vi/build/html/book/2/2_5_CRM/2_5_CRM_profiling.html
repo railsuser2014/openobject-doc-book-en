@@ -1,0 +1,440 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Profiling &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Customer Relationship Management" href="index.html" />
+    <link rel="next" title="Communications Tools" href="../2_6_Comms/index.html" />
+    <link rel="prev" title="Case management" href="2_5_CRM_case.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../2_6_Comms/index.html" title="Communications Tools"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="2_5_CRM_case.html" title="Case management"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Managing Customer Relationships</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Customer Relationship Management</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../2_6_Comms/index.html" title="Communications Tools"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="2_5_CRM_case.html" title="Case management"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Managing Customer Relationships</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Customer Relationship Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Profiling</a><ul>
+<li><a class="reference external" href="#establishing-the-profiles-of-prospects">Establishing the profiles of prospects</a></li>
+<li><a class="reference external" href="#using-profiles-effectively">Using profiles effectively</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="2_5_CRM_case.html"
+                                  title="previous chapter">Case management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../2_6_Comms/index.html"
+                                  title="next chapter">Communications Tools</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/2/2_5_CRM/2_5_CRM_profiling.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-110"></span><div class="section" id="profiling">
+<h1>Profiling<a class="headerlink" href="#profiling" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="index-111"></span><div class="section" id="establishing-the-profiles-of-prospects">
+<h2>Establishing the profiles of prospects<a class="headerlink" href="#establishing-the-profiles-of-prospects" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/establishing-the-profiles-of-prospects" ></div><p>During presales activities it&#8217;s useful to qualify your prospects quickly. You can pose a series of
+questions to find out what product to offer to the customer, or how quickly you should handle the
+request.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Profiling</p>
+<p>This method of rapidly qualifying prospects is often used by companies who carry out presales by
+phone.
+A prospect list is imported into the Open&nbsp;ERP system as a set of partners and the operators then
+pose a series of questions to each prospect by phone.</p>
+<p class="last">Responses to these questions enable each prospect to be qualified automatically which leads to
+a specific service being offered based on their responses.</p>
+</div>
+<p>As an illustration, take the case of the Tiny company which offers a service based on the Open&nbsp;ERP
+software. The company goes to several exhibitions and encounters dozens of prospects over a few
+days. It&#8217;s important to handle each request quickly and efficiently.</p>
+<p>The products offered by Tiny at these exhibitions are:</p>
+<ul class="simple">
+<li>training on Open&nbsp;ERP – for independent people or small companies,</li>
+<li>partner contract – for IT companies that intend to offer an Open&nbsp;ERP service,</li>
+<li>Open&nbsp;ERP as SaaS – for small companies,</li>
+<li>a meeting in conjunction with a partner to provide a demonstration aimed at providing a software
+integration – for companies that are slightly larger.</li>
+</ul>
+<p>The Tiny company has therefore put a decision tree in place based on the answers to several
+questions posed to prospects. These are given in the following figure <a class="reference internal" href="#fig-crmprof"><em>Example of profiling customer prospects by the Tiny company</em></a>:</p>
+<div align="center" class="figure" id="fig-crmprof">
+<a class="reference external image-reference" href="../../../_images/crm_profile_tree.png"><img alt="../../../_images/crm_profile_tree.png" src="../../../_images/crm_profile_tree.png" style="width: 349.0px; height: 208.0px;" /></a>
+<p class="caption"><em>Example of profiling customer prospects by the Tiny company</em></p>
+</div>
+<p>The sales person starts by asking the questions mentioned above and then with a couple of minutes of
+work can decide what to propose to the prospective customer.</p>
+<p>At the end of the exhibition prospects&#8217; details and their responses to the questionnaire are entered
+into Open&nbsp;ERP. The profiling system automatically classifies the prospects into appropriate partner
+categories.</p>
+<p>This enables your sales people to follow prospects up efficiently and adapt their approach based on
+each prospect&#8217;s profile. For example, they can send a letter based on a template developed for a
+specific partner category. They&#8217;d use Open&nbsp;ERP&#8217;s report editor and generator for their sales
+proposition, such as an invitation to a training session a week after the show.</p>
+</div>
+<div class="section" id="using-profiles-effectively">
+<h2>Using profiles effectively<a class="headerlink" href="#using-profiles-effectively" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/using-profiles-effectively" ></div><span class="target" id="index-112"></span><p>To use the profiling system you&#8217;ll need to install Open&nbsp;ERP&#8217;s <a title="crm_profiling management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/crm_profiling.html#module-crm_profiling"><tt class="xref docutils literal"><span class="pre">crm_profiling</span></tt></a> module. It&#8217;s
+part of the core Open&nbsp;ERP system in version 5.0.0 so you don&#8217;t have to download it separately from
+<tt class="docutils literal"><span class="pre">addons-extra</span></tt>.</p>
+<p>Once the module is installed you can create a list of questions and the possible responses through
+the menu <em>CRM &amp; SRM ‣ Configuration ‣ Segmentation ‣ Questions</em>.</p>
+<p>To obtain the scheme presented earlier you can create the following questions and responses:</p>
+<table border="1" class="docutils">
+<caption>Questionnaire for defining profiles</caption>
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Questions</th>
+<th class="head">Possible Responses</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Journalist&nbsp;?</td>
+<td>Yes / No</td>
+</tr>
+<tr><td>Industry Sector&nbsp;?</td>
+<td>IT / ERP Consultant / Services / Industry / Others</td>
+</tr>
+<tr><td>Number of Staff&nbsp;?</td>
+<td>1 / 2-20 / 21-50 / 51-100 / 101-500 / 500+</td>
+</tr>
+<tr><td>Contact&#8217;s job function&nbsp;?</td>
+<td>Decision-maker / Not decision-maker</td>
+</tr>
+<tr><td>Already created a specification for the work&nbsp;?</td>
+<td>Yes / Soon / No</td>
+</tr>
+<tr><td>Implementation budget&nbsp;?</td>
+<td>Unknown  / &lt;100k / 101-300k / &gt;300k</td>
+</tr>
+</tbody>
+</table>
+<p>For instance, a sales person specializing in large accounts for the service sector could have a
+profile defined like this:</p>
+<ul class="simple">
+<li>Budget for integration: <tt class="docutils literal"><span class="pre">Unknown</span></tt> , <tt class="docutils literal"><span class="pre">100k-300k</span></tt>  or <tt class="docutils literal"><span class="pre">&gt;300k</span></tt> ,</li>
+<li>Already created a specification for the work? <tt class="docutils literal"><span class="pre">Yes</span></tt> ,</li>
+<li>Industry Sector? <tt class="docutils literal"><span class="pre">Services</span></tt> .</li>
+</ul>
+<p>When entering the details of a specific prospect, the prospect&#8217;s answers to various questions can be
+entered in the new fifth tab of the partner form. Open&nbsp;ERP will automatically assign prospects to
+the appropriate partner category based on these answers.</p>
+<span class="target" id="index-113"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Sales targets</p>
+<p>The module <tt class="xref docutils literal"><span class="pre">report_invoice_salesman</span></tt> enables you to set up regular business targets. These can be
+based on sales turnover or sales margins.</p>
+<p>With this module you can compare the performance of each sales person with their targets for the
+period. Sales people can view their own performance against target in real time through a
+dashboard.</p>
+<p class="last">This module is totally integrated with the rest of accounting so there&#8217;s no need to extract any
+data from another system to get the sales figures against objectives by sales person or sector –
+it&#8217;s just available all the time in real time.</p>
+</div>
+<p>Customers corresponding to a specific search profile can be treated as a priority. The sales person
+can access the profile of the large active accounts from the menu <em>Partners ‣
+Partners by category</em>.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Profiling</a><ul>
+<li><a class="reference external" href="#establishing-the-profiles-of-prospects">Establishing the profiles of prospects</a></li>
+<li><a class="reference external" href="#using-profiles-effectively">Using profiles effectively</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="2_5_CRM_case.html"
+                                  title="previous chapter">Case management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../2_6_Comms/index.html"
+                                  title="next chapter">Communications Tools</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/2/2_5_CRM/2_5_CRM_profiling.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../2_6_Comms/index.html" title="Communications Tools"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="2_5_CRM_case.html" title="Case management"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Managing Customer Relationships</a> &raquo;</li>
+          <li><a href="index.html" >Customer Relationship Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../2_6_Comms/index.html" title="Communications Tools"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="2_5_CRM_case.html" title="Case management"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Managing Customer Relationships</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Customer Relationship Management</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

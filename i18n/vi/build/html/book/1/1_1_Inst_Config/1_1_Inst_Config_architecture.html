@@ -1,0 +1,393 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The architecture of Open ERP &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Installation and Initial Setup" href="index.html" />
+    <link rel="next" title="The installation of Open ERP" href="1_1_Inst_Config_install.html" />
+    <link rel="prev" title="Installation and Initial Setup" href="index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Installation and Initial Setup"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Installation and Initial Setup"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Installation and Initial Setup</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="1_1_Inst_Config_install.html"
+                                  title="next chapter">The installation of Open&nbsp;ERP</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_1_Inst_Config/1_1_Inst_Config_architecture.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-0"></span><div class="section" id="the-architecture-of-open-erp">
+<h1>The architecture of Open&nbsp;ERP<a class="headerlink" href="#the-architecture-of-open-erp" title="Permalink to this headline">¶</a></h1>
+<p>To access Open&nbsp;ERP you can:</p>
+<ul class="simple">
+<li>use a web browser pointed at the Open ERP client-web server, or</li>
+<li>use an application client (the GTK client) installed on each computer.</li>
+</ul>
+<p>The two methods of access give very similar facilities, and you can use both on
+the same server at the same time. It&#8217;s best to use the web browser if the
+Open&nbsp;ERP server is some distance away (such as on another continent) because
+it&#8217;s more tolerant of time delays between the two than the GTK client is. The
+web client is also easier to maintain, because it&#8217;s generally already installed
+on users&#8217; computers.</p>
+<p>Conversely you&#8217;d be better off with the application client (called the GTK
+client because of the technology it&#8217;s built with) if you&#8217;re using a local
+server (such as in the same building). In this case the GTK client will be more
+responsive, so more satisfying to use.</p>
+<span class="target" id="index-1"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Web client and GTK client</p>
+<p>There is little functional difference between the two Open&nbsp;ERP clients - the
+web client and the GTK client at present (since early versions of 5.0).
+In earlier versions, the web client had fractionally greater functionality.</p>
+<p>When you&#8217;re changing the structure of your Open ERP installation (adding and
+removing modules, perhaps changing labels) you&#8217;ll find the web client to be
+irritating because of its use of <strong>caching</strong>.</p>
+<p>Caching speeds it all up by keeping a copy of data somewhere between the server
+and your client, which is usually good. But you may
+have made changes to your installation that you cannot immediately see in
+your browser. Many apparent faults are caused by this! The workaround is
+to use the GTK client during development and implementation where possible.</p>
+<p class="last">The Tiny company will continue to support two clients for the foreseeable
+future, so you can use whichever client you prefer.</p>
+</div>
+<p>An Open&nbsp;ERP system is formed from three main components:</p>
+<ul class="simple">
+<li>the PostgreSQL database server, which contains all of the databases, each of which contains all
+data and most elements of the Open&nbsp;ERP system configuration,</li>
+<li>the Open&nbsp;ERP application server, which contains all of the enterprise logic and ensures that
+Open&nbsp;ERP runs optimally,</li>
+<li>the web server, a separate application called the Open Object client-web, which enables you to
+connect to Open&nbsp;ERP from standard web browsers and is not needed when you connect using a GTK
+client.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/terp_arch_1.png"><img alt="../../../_images/terp_arch_1.png" src="../../../_images/terp_arch_1.png" style="width: 630.0px; height: 414.9px;" /></a>
+<p class="caption"><em>The architecture of Open ERP</em></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Terminology: client-web – server or client?</p>
+<p>The client-web component can be thought of as a server or a client depending on
+your viewpoint.</p>
+<p>It acts as a web server to an end user connecting from a web browser, but
+it also acts as a client to the Open&nbsp;ERP application server just as a GTK
+application client does.</p>
+<p class="last">So in this book its context will determine whether the client-web component is referred to as
+a server or a client.</p>
+</div>
+<span class="target" id="index-2"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>eTiny</p>
+<p class="last">The web application used to be known as “eTiny”.
+Its name changed to “client-web” as Tiny ERP was renamed to Open ERP,
+but its characteristics have generally stayed the same.</p>
+</div>
+<span class="target" id="index-3"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>PostgreSQL, the relational and object database management system.</p>
+<p class="last">It&#8217;s a free and open-source high-performance system that compares well with other database
+management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2
+and Microsoft SQL Server (all proprietary). It runs on all types of
+Operating System, from Unix/Linux to the various releases of Windows, via
+Mac OS X, Solaris, SunOS and BSD.</p>
+</div>
+<p>These three components can be installed on the same server or can be
+distributed onto separate computer servers if performance considerations
+require it.</p>
+<p>If you choose to run only with GTK clients you won&#8217;t need the third component –
+the client-web server – at all. In this case Open&nbsp;ERP&#8217;s GTK client must be installed
+on the workstation of each Open&nbsp;ERP user in the company.</p>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Installation and Initial Setup</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="1_1_Inst_Config_install.html"
+                                  title="next chapter">The installation of Open&nbsp;ERP</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_1_Inst_Config/1_1_Inst_Config_architecture.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Installation and Initial Setup"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" >Installation and Initial Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="1_1_Inst_Config_install.html" title="The installation of Open ERP"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Installation and Initial Setup"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installation and Initial Setup</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

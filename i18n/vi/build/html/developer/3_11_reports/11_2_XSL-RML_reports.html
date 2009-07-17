@@ -1,0 +1,593 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>XSL:RML reports &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Reports" href="index.html" />
+    <link rel="next" title="I18n - Internationalization" href="../3_12_I18n/index.html" />
+    <link rel="prev" title="OpenOffice.org reports" href="11_1_openoffice_report.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="11_1_openoffice_report.html" title="OpenOffice.org reports"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Reports</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="11_1_openoffice_report.html" title="OpenOffice.org reports"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Reports</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">XSL:RML reports</a><ul>
+<li><a class="reference external" href="#xml-template">XML Template</a><ul>
+<li><a class="reference external" href="#file-format">File format</a></li>
+<li><a class="reference external" href="#possible-types">Possible types</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#introduction-to-rml">Introduction to RML</a></li>
+<li><a class="reference external" href="#xsl-rml-stylesheet">XSL:RML Stylesheet</a><ul>
+<li><a class="reference external" href="#translations">Translations</a></li>
+<li><a class="reference external" href="#useful-links">Useful links:</a></li>
+<li><a class="reference external" href="#example-with-corporate-defaults">Example (with corporate defaults):</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="#reports-without-corporate-header">Reports without corporate header</a></li>
+<li><a class="reference external" href="#each-report-with-its-own-corporate-header">Each report with its own corporate header</a></li>
+<li><a class="reference external" href="#bar-codes">Bar Codes</a><ul>
+<li><a class="reference external" href="#barcodes-in-rml-files">Barcodes in RML files</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#how-to-add-a-new-report">How to add a new report</a></li>
+<li><a class="reference external" href="#usual-tags">Usual TAGS</a><ul>
+<li><a class="reference external" href="#code-find-in-tags-is-python-code">Code find in [[ ]] tags is python code.</a></li>
+<li><a class="reference external" href="#useful-tags">Useful tags:</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#unicode-reports">Unicode reports</a><ul>
+<li><a class="reference external" href="#the-solution-consists-of-3-parts">The solution consists of 3 parts</a></li>
+<li><a class="reference external" href="#all-these-ideas-are-taken-from-the-forums">All these ideas are taken from the forums</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="11_1_openoffice_report.html"
+                                  title="previous chapter">OpenOffice.org reports</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../3_12_I18n/index.html"
+                                  title="next chapter">I18n - Internationalization</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/3_11_reports/11_2_XSL-RML_reports.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="xsl-rml-reports">
+<h1>XSL:RML reports<a class="headerlink" href="#xsl-rml-reports" title="Permalink to this headline">¶</a></h1>
+<p>RML reports don&#8217;t require programming but require two simple XML files to be written:</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../_images/automatic-reports.png"><img alt="../../_images/automatic-reports.png" src="../../_images/automatic-reports.png" style="width: 544.0px; height: 90.1px;" /></a>
+</div>
+<p>The role of the XML template is to describe which fields of the resource have to be exported (by the server). The XSL:RML style sheet deals with the layout of the exported data as well as the &#8220;static text&#8221; of reports. Static text is referring to the text which is common to all reports of the same type (for example, the title of table columns).</p>
+<p><strong>Example</strong></p>
+<p>Here is, as an example, the different files for the simplest report in the ERP.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../_images/ids-report.png"><img alt="../../_images/ids-report.png" src="../../_images/ids-report.png" style="width: 193.8px; height: 199.75px;" /></a>
+</div>
+<p><strong>XML Template</strong></p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;</pre>
+</div>
+<p><strong>XML data file (generated)</strong></p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;</pre>
+</div>
+<p><strong>XSL stylesheet</strong></p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt; &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format"&gt;</pre>
+</div>
+<p><strong>Resulting RML file (generated)</strong></p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;</pre>
+</div>
+<p>Fore more information on the formats used:</p>
+<p>All these formats use XML:</p>
+<div class="section" id="xml-template">
+<h2>XML Template<a class="headerlink" href="#xml-template" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/xml-template" ></div><p>XML templates are simple XML files describing which fields among all available object fields are necessary for the report.</p>
+<div class="section" id="file-format">
+<h3>File format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h3>
+<p>Tag names can be chosen arbitrarily (it must be valid XML though). In the XSL file, you will have to use those names. Most of the time, the name of a tag will be the same as the name of the object field it refers to.</p>
+<p>Nodes without <strong>type</strong> attribute are transferred identically into the XML destination file (the data file). Nodes with a type attribute will be parsed by the server and their content will be replaced by data coming from objects. In addition to the type attribute, nodes have other possible attributes. These attributes depend on the type of the node (each node type supports or needs different attributes). Most node types have a name attribute, which refers to the  <strong>name</strong> of a field of the object on which we work.</p>
+<p>As for the &#8220;browse&#8221; method on objects, field names in reports can use a notation similar to the notation found in object oriented programming languages. It means that &#8220;relation fields&#8221; can be used as &#8220;bridges&#8221; to fetch data from other (related) objects.</p>
+<p>Let&#8217;s use the &#8220;account.transfer&#8221; object as an example. It contains a partner_id field. This field is a relation field (&#8220;many to one&#8221;) pointing to the &#8220;res.partner&#8221; object. Let&#8217;s suppose that we want to create a report for transfers and in this report, we want to use the name of the recipient partner. This name could be accessed using the following expression as the name of the field:</p>
+</div>
+<div class="section" id="possible-types">
+<h3>Possible types<a class="headerlink" href="#possible-types" title="Permalink to this headline">¶</a></h3>
+<p>Here is the list of available field types:</p>
+<p>The <strong>zoom</strong> type is only useful when we want to recover several fields in the same object.</p>
+<p><strong>Example</strong>:</p>
+<div class="highlight-python"><pre>&lt;cost type="call" name="compute_seller_costs" args=""&gt;</pre>
+</div>
+<p><strong>TODO</strong>: documenter format methode appellée def compute_buyer_costs(self, cr, uid, ids, *args):</p>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd>&lt;image type=&#8221;attachment&#8221; name=&#8221;id&#8221;/&gt;</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Here is an example of XML file:</p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;transfer-list&gt;</pre>
+</div>
+</div>
+</div>
+<div class="section" id="introduction-to-rml">
+<h2>Introduction to RML<a class="headerlink" href="#introduction-to-rml" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/introduction-to-rml" ></div><p>For more information on the RML format, please refer to the official Reportlab documentation.</p>
+</div>
+<div class="section" id="xsl-rml-stylesheet">
+<h2>XSL:RML Stylesheet<a class="headerlink" href="#xsl-rml-stylesheet" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/xsl-rml-stylesheet" ></div><p>There are two possibilities to do a XSL style sheet for a report. Either making everything by yourself, or use our predefined templates</p>
+<p>Either freestyle or use corporate_defaults + rml_template</p>
+<div class="section" id="translations">
+<h3>Translations<a class="headerlink" href="#translations" title="Permalink to this headline">¶</a></h3>
+<p>As Open ERP can be used in several langages, reports must be translatable. But in a report, everything doesn&#8217;t have to be translated : only the actual text has to be translated, not the formatting codes. A field will be processed by the translation system if the XML tag which surrounds it (whatever it is) has a t=&#8221;1&#8221; attribute. The server will translate all the fields with such attributes in the report generation process.</p>
+</div>
+<div class="section" id="useful-links">
+<h3>Useful links:<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="example-with-corporate-defaults">
+<h3>Example (with corporate defaults):<a class="headerlink" href="#example-with-corporate-defaults" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" :xmlns:fo="http://www.w3.org/1999/XSL/Format"&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reports-without-corporate-header">
+<h1>Reports without corporate header<a class="headerlink" href="#reports-without-corporate-header" title="Permalink to this headline">¶</a></h1>
+<p><strong>Example (with corporate defaults):</strong></p>
+<div class="highlight-python"><pre>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" :xmlns:fo="http://www.w3.org/1999/XSL/Format"&gt;
+     &lt;xsl:import href="../../base/report/rml_template.xsl"/&gt;
+     &lt;xsl:variable name="page_format"&gt;a4_normal&lt;/xsl:variable&gt;
+
+     &lt;xsl:template match="/"&gt;
+          &lt;xsl:call-template name="rml"/&gt;
+     &lt;/xsl:template&gt;
+
+     &lt;xsl:template name="stylesheet"&gt;
+      &lt;/xsl:template&gt;
+
+      &lt;xsl:template name="story"&gt;
+           &lt;xsl:apply-templates select="transfer-list"/&gt;
+      &lt;/xsl:template&gt;
+
+      &lt;xsl:template match="transfer-list"&gt;
+           &lt;xsl:apply-templates select="transfer"/&gt;
+      &lt;/xsl:template&gt;
+
+      &lt;xsl:template match="transfer"&gt;
+           &lt;setNextTemplate name="other_pages"/&gt;
+
+           &lt;para&gt;
+                 Document: &lt;xsl:value-of select="name"/&gt;
+           &lt;/para&gt;&lt;para&gt;
+                 Type: &lt;xsl:value-of select="type"/&gt;
+           &lt;/para&gt;&lt;para&gt;
+                 Reference: &lt;xsl:value-of select="reference"/&gt;
+           &lt;/para&gt;&lt;para&gt;
+                 Partner ID: &lt;xsl:value-of select="partner_id"/&gt;
+           &lt;/para&gt;&lt;para&gt;
+                 Date: &lt;xsl:value-of select="date"/&gt;
+           &lt;/para&gt;&lt;para&gt;
+                 Amount: &lt;xsl:value-of select="amount"/&gt;
+           &lt;/para&gt;
+
+           &lt;xsl:if test="number(change)&gt;0"&gt;
+                &lt;para&gt;
+                      Change: &lt;xsl:value-of select="change"/&gt;
+                &lt;/para&gt;
+           &lt;/xsl:if&gt;
+
+           &lt;setNextTemplate name="first_page"/&gt;
+          &lt;pageBreak/&gt;
+     &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</pre>
+</div>
+</div>
+<div class="section" id="each-report-with-its-own-corporate-header">
+<h1>Each report with its own corporate header<a class="headerlink" href="#each-report-with-its-own-corporate-header" title="Permalink to this headline">¶</a></h1>
+<p><strong>Example (with corporate defaults):</strong></p>
+<div class="highlight-python"><pre>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" :xmlns:fo="http://www.w3.org/1999/XSL/Format"&gt;</pre>
+</div>
+</div>
+<div class="section" id="bar-codes">
+<h1>Bar Codes<a class="headerlink" href="#bar-codes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="barcodes-in-rml-files">
+<h2>Barcodes in RML files<a class="headerlink" href="#barcodes-in-rml-files" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/barcodes-in-rml-files" ></div><p>Barcodes can be generated using the &lt;barcode&gt; tag in RML files. The following formats are supported:</p>
+<p>You can change the following attributes for rendering your barcode:</p>
+<p>Examples:</p>
+</div>
+</div>
+<div class="section" id="how-to-add-a-new-report">
+<h1>How to add a new report<a class="headerlink" href="#how-to-add-a-new-report" title="Permalink to this headline">¶</a></h1>
+<p>In 4.0.X</p>
+</div>
+<div class="section" id="usual-tags">
+<h1>Usual TAGS<a class="headerlink" href="#usual-tags" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="code-find-in-tags-is-python-code">
+<h2>Code find in [[ ]] tags is python code.<a class="headerlink" href="#code-find-in-tags-is-python-code" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/code-find-in-tags-is-python-code" ></div><p>The context of the code (the variable&#8217;s values you can use) is the following:</p>
+<p>python objects/variables, available when the report start:</p>
+<p>&#8220;objects&#8221; the list of objects to be printed (invoices for example)</p>
+<p>&#8220;data&#8221; comes from the wizard</p>
+<p>&#8220;time&#8221; see python documentation.</p>
+<p>&#8220;user&#8221; the user object launching the report.</p>
+<p>python functions you can use:</p>
+<p>&#8220;setlang(&#8216;fr&#8217;)&#8221; change the langage used in automated translation (fields...).</p>
+<p>&#8220;repeatIn(list,varname)&#8221; repeat the template (whole doc. or current paragraph?) for each object in the list. Use varname in the template&#8217;s tags.</p>
+<p>&#8220;setTag(&#8216;para&#8217;,&#8217;xpre&#8217;)&#8221; change the enclosing RML tag (usually &#8216;para&#8217;) by an other (xpre is a preformatted paragraph), in the (converted from sxw)rml document (?)</p>
+<p>&#8220;removeParentNode&#8221;</p>
+</div>
+<div class="section" id="useful-tags">
+<h2>Useful tags:<a class="headerlink" href="#useful-tags" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/useful-tags" ></div><blockquote>
+[ repeatIn(objects,&#8217;o&#8217;) ] objects to be printed
+repeatIn(o.invoice_line,&#8217;l&#8217;) print every line
+o.quantity * o.price Operations are OK.
+&#8216;07d&#8217; int(o.number) number formating
+reduce(lambda x obj: x+obj.qty , list , 0 ) total qty of list (try &#8220;objects&#8221; as list)
+user.name user name.
+setLang(o.partner_id.lang) Localized printings
+time.strftime(&#8216;%d/%m/%Y&#8217;) format=dd MM YYYY, check python doc for more about &#8220;%d&#8221;, ...
+[[ time.strftime(time.ctime()[0:10]) ]] [[ time.strftime(time.ctime()[-4:]) ]] prints only date.
+time.ctime() it prints the actual date &amp; time.
+[[ time.ctime().split()[3] ]] prints only time</blockquote>
+<p>one more interesting tag: if you want to print out the creator of an entry (create_uid) or the last one who wrote on an entry (write_uid) you have to add something like this to the class your report refers to:</p>
+<p>and then in your report it&#8217;s like this to print out the corresponding name:</p>
+<p>Sometimes you might want to print out something only if a certain condition is fullfilled. You can construct it with the pyhton logical operators &#8220;not&#8221;, &#8220;and&#8221; and &#8220;or&#8221;. Because every object in python has a logical value (TRUE or FALSE) you can construct something like this:</p>
+<p>it works like this:</p>
+<p>and: first value is TRUE then print out the second value. First value is FALSE print out first value.</p>
+<p>or: first value is TRUE then print out the first value. First value is FALSE print out second value. in this example if o.prop==&#8217;draft&#8217; -&gt; TRUE then <strong>(o.prop==&#8217;draft&#8217;) and &#8216;YES&#8217;</strong> reads <strong>&#8216;Yes&#8217;</strong>. Next step is      &#8216;Yes&#8217; or &#8216;No&#8217; which leads to a printed &#8216;YES&#8217; (because a string&#8217;s logical value is TRUE). If o.prop==&#8217;draft&#8217; -&gt; FALSE then it reads FALSE or &#8216;No&#8217;. So &#8216;No&#8217; is printed. One can use very comlpex structures. To learn more search for some pyhton reference regarding logical opertors.</p>
+<p>python function &#8220;filter&#8221; can... filter: try something like:</p>
+<p>for printing only product with type=&#8217;service&#8217; in a line&#8217;s section.</p>
+<p>To display binary field image on report (to be checked)</p>
+</div>
+</div>
+<div class="section" id="unicode-reports">
+<h1>Unicode reports<a class="headerlink" href="#unicode-reports" title="Permalink to this headline">¶</a></h1>
+<p>As of OpenERP 5.0-rc3 unicode printing with ReportLab is still not available. The problem is that OpenERP uses the PDF standard fonts (14 fonts, they are not embedded in the document but the reader provides them) that are Type1 and have only Latin1 characters.</p>
+<div class="section" id="the-solution-consists-of-3-parts">
+<h2>The solution consists of 3 parts<a class="headerlink" href="#the-solution-consists-of-3-parts" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-solution-consists-of-3-parts" ></div></div>
+<div class="section" id="all-these-ideas-are-taken-from-the-forums">
+<h2>All these ideas are taken from the forums<a class="headerlink" href="#all-these-ideas-are-taken-from-the-forums" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/all-these-ideas-are-taken-from-the-forums" ></div><p><strong>Free TrueType fonts</strong></p>
+<p>that can be used for this purpose are in the DejaVu family. <a class="reference external" href="http://dejavu-fonts.org/wiki/index.php?title=Main_Page">http://dejavu-fonts.org/wiki/index.php?title=Main_Page</a> They can be installed</p>
+<p><strong>In the server/bin/report/render/rml2pdf/__init__.py</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">reportlab.rl_config</span>
+<span class="n">reportlab</span><span class="o">.</span><span class="n">rl_config</span><span class="o">.</span><span class="n">warnOnMissingFontGlyphs</span> <span class="o">=</span> <span class="mf">0</span>
+</pre></div>
+</div>
+<p>trml2pdf.py should be modified to load this if invoked from the command line.</p>
+<p><strong>All the xsl and rml files have to be modified</strong></p>
+<p>A list of possible alternatives:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="s">&#39;Times-Roman&#39;</span><span class="p">,</span>       <span class="s">&#39;DejaVuSerif.ttf&#39;</span>
+<span class="s">&#39;Times-BoldItalic&#39;</span><span class="p">,</span>  <span class="s">&#39;DejaVuSerif-BoldItalic.ttf&#39;</span>
+<span class="s">&#39;Times-Bold&#39;</span><span class="p">,</span>        <span class="s">&#39;DejaVuSerif-Bold.ttf&#39;</span>
+<span class="s">&#39;Times-Italic&#39;</span><span class="p">,</span>      <span class="s">&#39;DejaVuSerif-Italic.ttf&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">XSL:RML reports</a><ul>
+<li><a class="reference external" href="#xml-template">XML Template</a><ul>
+<li><a class="reference external" href="#file-format">File format</a></li>
+<li><a class="reference external" href="#possible-types">Possible types</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#introduction-to-rml">Introduction to RML</a></li>
+<li><a class="reference external" href="#xsl-rml-stylesheet">XSL:RML Stylesheet</a><ul>
+<li><a class="reference external" href="#translations">Translations</a></li>
+<li><a class="reference external" href="#useful-links">Useful links:</a></li>
+<li><a class="reference external" href="#example-with-corporate-defaults">Example (with corporate defaults):</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="#reports-without-corporate-header">Reports without corporate header</a></li>
+<li><a class="reference external" href="#each-report-with-its-own-corporate-header">Each report with its own corporate header</a></li>
+<li><a class="reference external" href="#bar-codes">Bar Codes</a><ul>
+<li><a class="reference external" href="#barcodes-in-rml-files">Barcodes in RML files</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#how-to-add-a-new-report">How to add a new report</a></li>
+<li><a class="reference external" href="#usual-tags">Usual TAGS</a><ul>
+<li><a class="reference external" href="#code-find-in-tags-is-python-code">Code find in [[ ]] tags is python code.</a></li>
+<li><a class="reference external" href="#useful-tags">Useful tags:</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#unicode-reports">Unicode reports</a><ul>
+<li><a class="reference external" href="#the-solution-consists-of-3-parts">The solution consists of 3 parts</a></li>
+<li><a class="reference external" href="#all-these-ideas-are-taken-from-the-forums">All these ideas are taken from the forums</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="11_1_openoffice_report.html"
+                                  title="previous chapter">OpenOffice.org reports</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../3_12_I18n/index.html"
+                                  title="next chapter">I18n - Internationalization</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/3_11_reports/11_2_XSL-RML_reports.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="11_1_openoffice_report.html" title="OpenOffice.org reports"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" >Reports</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="../3_12_I18n/index.html" title="I18n - Internationalization"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="11_1_openoffice_report.html" title="OpenOffice.org reports"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Reports</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

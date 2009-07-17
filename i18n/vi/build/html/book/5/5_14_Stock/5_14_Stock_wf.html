@@ -1,0 +1,603 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Complete workflow from supplier to customer &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Logistics and Stock Management" href="index.html" />
+    <link rel="next" title="Stocks" href="5_14_Stock_stocks.html" />
+    <link rel="prev" title="Understanding double-entry stock management" href="5_14_Stock_illustration.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_stocks.html" title="Stocks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_stocks.html" title="Stocks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Complete workflow from supplier to customer</a><ul>
+<li><a class="reference external" href="#defining-a-new-product">Defining a new product</a></li>
+<li><a class="reference external" href="#product-types">Product Types</a></li>
+<li><a class="reference external" href="#procure-methods-make-to-stock-and-make-to-order">Procure Methods – Make to Stock and Make to Order</a></li>
+<li><a class="reference external" href="#supply-methods">Supply Methods</a></li>
+<li><a class="reference external" href="#units-of-measure">Units of Measure</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_illustration.html"
+                                  title="previous chapter">Understanding double-entry stock management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_stocks.html"
+                                  title="next chapter">Stocks</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_wf.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="complete-workflow-from-supplier-to-customer">
+<h1>Complete workflow from supplier to customer<a class="headerlink" href="#complete-workflow-from-supplier-to-customer" title="Permalink to this headline">¶</a></h1>
+<p>Now you&#8217;ll follow a practical example by adapting stock management operations. In order you&#8217;ll see:</p>
+<ul class="simple">
+<li>defining a new product,</li>
+<li>initial setting of inventory,</li>
+<li>receiving products from a supplier,</li>
+<li>delivering to a customer,</li>
+<li>analysis of the state of stock.</li>
+</ul>
+<div class="section" id="defining-a-new-product">
+<h2>Defining a new product<a class="headerlink" href="#defining-a-new-product" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/defining-a-new-product" ></div><p>To start, define the following product:</p>
+<table border="1" class="docutils">
+<caption>Product Definition</caption>
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Field</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Name</td>
+<td>Central Heating Type 1</td>
+</tr>
+<tr><td>Code</td>
+<td>CCT1</td>
+</tr>
+<tr><td>Product Type</td>
+<td>Stockable Product</td>
+</tr>
+<tr><td>Supply Method</td>
+<td>Buy</td>
+</tr>
+</tbody>
+</table>
+<p>Use the menu <em>Products ‣ Products</em>, then click <strong>New</strong> to define a new
+product.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/stock_product.png"><img alt="../../../_images/stock_product.png" src="../../../_images/stock_product.png" style="width: 630.0px; height: 601.5px;" /></a>
+<p class="caption"><em>Definition of a new product</em></p>
+</div>
+<p>Three fields are important for stock management when you&#8217;re configuring a new product:</p>
+<ul class="simple">
+<li><strong>Product Type</strong>,</li>
+<li><strong>Procure Method</strong>,</li>
+<li><strong>Supply Method</strong>.</li>
+</ul>
+</div>
+<div class="section" id="product-types">
+<h2>Product Types<a class="headerlink" href="#product-types" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/product-types" ></div><p>The product type indicates if the product is handled in stock management and if Open ERP manages its
+procurement. The three distinct product types are:</p>
+<ul class="simple">
+<li><strong>Stockable Product</strong> : this product is used in stock management and its replenishment is
+more or less automated as defined by the rules established in the system. Examples, a bicycle, a
+computer or a central heating system.</li>
+<li><strong>Consumable</strong> : handled in stock management, you can receive it, deliver it and make it.
+But its stock level isn&#8217;t managed by the system. Open ERP assumes that you&#8217;ve got sufficient levels
+in stock at all time, so it doesn&#8217;t restock it automatically. Example, nails.</li>
+<li><strong>Service</strong> : doesn&#8217;t appear in the various stock operations. Example, a consulting
+service.</li>
+</ul>
+</div>
+<div class="section" id="procure-methods-make-to-stock-and-make-to-order">
+<h2>Procure Methods – Make to Stock and Make to Order<a class="headerlink" href="#procure-methods-make-to-stock-and-make-to-order" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/procure-methods-make-to-stock-and-make-to-order" ></div><p>The procure method determines how the product will be replenished:</p>
+<ul class="simple">
+<li><strong>Make to Stock</strong> : your customers are supplied from available stock. You procure a
+set quantity of each product when its stock is too low. Example, a classic distributor.</li>
+<li><strong>Make to Order</strong> : when a customer order is confirmed, you then procure or manufacture
+the products for this order. A customer order &#8216;Make to Order&#8217; won&#8217;t modify stock in the medium term
+because you restock with the exact amount that was ordered. Example, computers from a large supplier
+assembled on demand.</li>
+</ul>
+<p>You find a mix of these two modes used for the different final and intermediate products in most
+industries. The procurement method shown on the product form is a default value for the order,
+enabling the salesperson to choose the best mode for fulfilling a particular order by varying the
+sales order parameters as needed.</p>
+<p>The figures <a class="reference internal" href="#fig-stfrst"><em>Change in stock for a product managed as Make to Stock</em></a> and <a class="reference internal" href="#fig-stfrord"><em>Change in stock for a product managed as Make to Order</em></a> show the change of stock levels for one product
+managed Make to Order and another
+managed Make to Stock. The two figures are taken from Open ERP&#8217;s <strong>Future Stock Forecast</strong> report,
+available from the product form.</p>
+<div align="center" class="figure" id="fig-stfrst">
+<a class="reference external image-reference" href="../../../_images/stock_from_stock.png"><img alt="../../../_images/stock_from_stock.png" src="../../../_images/stock_from_stock.png" style="width: 558.75px; height: 575.25px;" /></a>
+<p class="caption"><em>Change in stock for a product managed as Make to Stock</em></p>
+</div>
+<div align="center" class="figure" id="fig-stfrord">
+<a class="reference external image-reference" href="../../../_images/stock_from_order.png"><img alt="../../../_images/stock_from_order.png" src="../../../_images/stock_from_order.png" style="width: 558.75px; height: 588.75px;" /></a>
+<p class="caption"><em>Change in stock for a product managed as Make to Order</em></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Logistical Methods</p>
+<p class="last">The <strong>Make to Stock</strong> logistical approach is usually used for high volumes and when the
+demand is seasonal or otherwise easy to forecast.
+The <strong>Make to Order</strong> approach is used for products that are measured, or very costly to
+stock or have a short re-stocking time.</p>
+</div>
+</div>
+<div class="section" id="supply-methods">
+<h2>Supply Methods<a class="headerlink" href="#supply-methods" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/supply-methods" ></div><p>Open ERP supports two supply methods:</p>
+<ul class="simple">
+<li>Produce: when the product or service is supplied from internal resources,</li>
+<li>Buy: when the product is bought from a supplier.</li>
+</ul>
+<p>These are just the default settings used by the system during automated replenishment. The same
+product can be either manufactured internally or bought from a supplier.</p>
+<p>These three fields (<strong>Supply Method</strong>, <strong>Procurem Method</strong>, <strong>Product
+Type</strong>) determine the system&#8217;s behaviour when a product is required. The system will generate
+different documents depending on the configuration of these three fields when satisfying an order, a
+price quotation to a supplier or a manufacturing order.</p>
+<p>Open ERP manages both stockable products and services. A service bought from a supplier in
+<strong>Make to Order</strong> mode, will generate a subcontract order from the supplier in question.</p>
+<p>Figure <a class="reference internal" href="#fig-stflow"><em>Workflow for automatic procurement, dependent on the configuration of the product</em></a> illustrates different cases for automatic procurement.</p>
+<div align="center" class="figure" id="fig-stflow">
+<a class="reference external image-reference" href="../../../_images/stock_flow.png"><img alt="../../../_images/stock_flow.png" src="../../../_images/stock_flow.png" style="width: 1440.0px; height: 1080.0px;" /></a>
+<p class="caption"><em>Workflow for automatic procurement, dependent on the configuration of the product</em></p>
+</div>
+<p>The table below shows all possible cases for the figure <a class="reference internal" href="#fig-stflow"><em>Workflow for automatic procurement, dependent on the configuration of the product</em></a>.</p>
+<table border="1" class="docutils">
+<caption>Consequences of Procurement Methods Make to Stock and Make To Order</caption>
+<colgroup>
+<col width="30%" />
+<col width="35%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Procurement Method</th>
+<th class="head">Produce</th>
+<th class="head">Buy</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>MTS</td>
+<td>Wait for availability</td>
+<td>Wait for availability</td>
+</tr>
+<tr><td>MTO</td>
+<td>Production Order</td>
+<td>Supplier Order</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<caption>Consequences of Procurement Methods when using Services</caption>
+<colgroup>
+<col width="30%" />
+<col width="35%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Procurement Method</th>
+<th class="head">Produce</th>
+<th class="head">Buy</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>MTS</td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr><td>MTO</td>
+<td>Create task</td>
+<td>Subcontract</td>
+</tr>
+</tbody>
+</table>
+<p>You&#8217;ll see the automated management processes for procurement in detail further on in this chapter.</p>
+<span class="target" id="index-294"></span></div>
+<div class="section" id="units-of-measure">
+<h2>Units of Measure<a class="headerlink" href="#units-of-measure" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/units-of-measure" ></div><p>Open ERP supports several units of measure. Quantities of the same product can be expressed in
+several units of measure at once. For example you can buy grain by the tonne and resell it by kg.
+You just have to make sure that all the units of measure used for a product are in the same units of
+measure category.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Categories of units of measure</p>
+<p class="last">All units of measure in the same category are convertible from one unit to another.</p>
+</div>
+<p>The table below shows some examples of units of measure and their category. The factor is used to
+convert from one unit of measure to another as long as they are in the same category.</p>
+<table border="1" class="docutils">
+<caption>Example Units of Measure</caption>
+<colgroup>
+<col width="33%" />
+<col width="44%" />
+<col width="22%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">UoM</th>
+<th class="head">Category</th>
+<th class="head">Factor</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Kg</td>
+<td>Weight</td>
+<td>1</td>
+</tr>
+<tr><td>Gram</td>
+<td>Weight</td>
+<td>1000</td>
+</tr>
+<tr><td>Tonne</td>
+<td>Weight</td>
+<td>0.01</td>
+</tr>
+<tr><td>Hour</td>
+<td>Working time</td>
+<td>8</td>
+</tr>
+<tr><td>Day</td>
+<td>Working time</td>
+<td>1</td>
+</tr>
+<tr><td>Half-day</td>
+<td>Working time</td>
+<td>2</td>
+</tr>
+<tr><td>Item</td>
+<td>Unit</td>
+<td>1</td>
+</tr>
+<tr><td>100 Items</td>
+<td>Unit</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p>Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the <tt class="docutils literal"><span class="pre">Weight</span></tt>
+category could be expressed in Kg, Tonnes or Grammes. You can&#8217;t express them in hours or pieces.</p>
+<p>Use the menu <em>Products ‣ Configuration ‣ Units of Measure ‣ Units of Measure</em>
+to define a new unit of measure.</p>
+<p>In the definition of a Unit of Measure, you have a <strong>Rounding precision</strong> factor which shows how
+amounts are rounded after the conversion. A value of 1 gives rounding to the level of one unit. 0.01
+gives rounding to one hundredth.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Secondary Units</p>
+<p>Open ERP supports double units of measure.
+When you use this, the whole of the stock management system is encoded in two units that don&#8217;t
+have a real link between them.</p>
+<p class="last">This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice
+by the Kg.
+A weighing operation is needed before invoicing the customer.</p>
+</div>
+<p>To activate the management options for double units of measure, assign the group <strong>Useability /
+Product UoS View</strong> to your user.</p>
+<p>In this case the same product can be expressed in two units of measure belonging to different
+categories. You can then distinguish between the unit of stock management (the piece) and the unit
+of invoicing or sale (kg).</p>
+<p>In the product form you can then set one unit of measure for sales and stock management, and one
+unit of measure for purchases.</p>
+<p>These units are given suggested titles. For each operation on a product you can use another unit of
+measure, as long as it can be found in the same category as the two units already defined. If you
+use another unit of measure, Open ERP automatically handles the conversion of prices and quantities.</p>
+<p>So if you have 430 Kg of carrots at 5.30 EUR/Kg, Open ERP will automatically make the conversion if
+you want to sell in tonnes – 0.43 tonnes at 5300 EUR / tonne. If you had set a rounding factor of
+0.1 for the <strong>tonne</strong> unit of measure then Open ERP will tell you that you have only 0.4 tonnes
+available.</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Complete workflow from supplier to customer</a><ul>
+<li><a class="reference external" href="#defining-a-new-product">Defining a new product</a></li>
+<li><a class="reference external" href="#product-types">Product Types</a></li>
+<li><a class="reference external" href="#procure-methods-make-to-stock-and-make-to-order">Procure Methods – Make to Stock and Make to Order</a></li>
+<li><a class="reference external" href="#supply-methods">Supply Methods</a></li>
+<li><a class="reference external" href="#units-of-measure">Units of Measure</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="5_14_Stock_illustration.html"
+                                  title="previous chapter">Understanding double-entry stock management</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="5_14_Stock_stocks.html"
+                                  title="next chapter">Stocks</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/5/5_14_Stock/5_14_Stock_wf.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_stocks.html" title="Stocks"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" >Logistics and Stock Management</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_stocks.html" title="Stocks"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="5_14_Stock_illustration.html" title="Understanding double-entry stock management"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Stock and Manufacturing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Logistics and Stock Management</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

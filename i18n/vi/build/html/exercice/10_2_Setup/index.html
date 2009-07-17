@@ -1,0 +1,587 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration and Installation &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuration and Installation</a><ul>
+<li><a class="reference external" href="#setup-a-database">Setup a database</a></li>
+<li><a class="reference external" href="#configure-the-system">Configure the system</a></li>
+<li><a class="reference external" href="#setup-the-base-data">Setup the base data</a></li>
+<li><a class="reference external" href="#setup-the-products">Setup the products</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/exercice/10_2_Setup/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuration-and-installation">
+<h1>Configuration and Installation<a class="headerlink" href="#configuration-and-installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup-a-database">
+<h2>Setup a database<a class="headerlink" href="#setup-a-database" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/setup-a-database" ></div><p>Explain how to start on Odoo.</p>
+<ul class="simple">
+<li>Subscribe on Odoo</li>
+<li>Connect to your database</li>
+</ul>
+<p>Or install manually:</p>
+<ul class="simple">
+<li>Install manually</li>
+<li>Create a database</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 1 - Install a working Open ERP</p>
+<p>As to configure the system, you must start by preparing a new database for
+NotSoTiny. During the process, you must configure the header/footer of the
+NotSoTiny documents. Put them a logo and their address:</p>
+<blockquote class="last">
+NotSoTiny SARL
+Rue du Nid 1
+75000 Paris
+France</blockquote>
+</div>
+<p>NotSoTiny plans to use Open ERP to manage all their activitities. The basic
+requirements of NotSoTiny company have been defined above, so now you have the
+responsibility to install and configure the database by selecting the modules
+which will be used by NotSoTiny company.</p>
+<p>You must take into account all the departments, but in order not to complicate
+the system, you should not install the modules which won&#8217;t be used by NotSoTiny
+company. It&#8217;s better to install too few modules, than too much modules.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 2 - Install the required modules</p>
+<p class="last">As to configure the system, you should install and configure modules required
+by the NotSoTiny company. Have a look at all their activities and department
+to select which module will fit best their needs.</p>
+</div>
+</div>
+<div class="section" id="configure-the-system">
+<h2>Configure the system<a class="headerlink" href="#configure-the-system" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/configure-the-system" ></div><p>Then, we instruct a person in charge of the company to provide us with an
+inventory of various users. The following simplified table has been provided
+by NotSoTiny.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="10%" />
+<col width="8%" />
+<col width="11%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Employee</th>
+<th class="head">Role</th>
+<th class="head">Login</th>
+<th class="head">Password</th>
+<th class="head">Activities</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Fabien Dupont</td>
+<td>CEO</td>
+<td>fabien</td>
+<td>fabien</td>
+<td>Must access all features, except administration of the ERP</td>
+</tr>
+<tr><td>Luc Lecoq</td>
+<td>CSO &amp; CFO</td>
+<td>luc</td>
+<td>luc</td>
+<td>Should access all financial and sales documents.</td>
+</tr>
+<tr><td>Eric Dubois</td>
+<td>Worker</td>
+<td>eric</td>
+<td>eric</td>
+<td>Do only production orders, must have the simplest menu possible</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 3 - Create the different users and set their access rights</p>
+<p class="last">Define the different users and assign them to the right groups. As this is
+just a prototype for the demonstration purpose, just assign existing groups,
+without creating specific rules.</p>
+</div>
+<p>Luc Lecoq, the founder and sales/financial director insisted to have a sales
+dashboard that appears automatically when he logs into the system. Because each
+morning, when he arrives at the office, the first things he needs is his sales
+statistics.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 4 - Assign a sales dashboard at Luc&#8217;s connection</p>
+<p class="last">Setup a sales manager dashboard to Luc. This dashboard must appear when
+he logs in.</p>
+</div>
+<p>Fabien thinks that one of the biggest value of their company is their customer
+database. Since the beginning of the company, they have very strict rules on how
+to keep and maintain their customer database. One of his requirement for his
+ERP system is that noone should be able to delete a partner for the database.</p>
+<p>Fabien must be the only user that have the ability to delete a user from
+the database.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 5 - Modify security rules</p>
+<p class="last">Create a new group for users that have the right to delete a partner. The
+others groups should not have the rights to delete a partner. Assign this
+newly created group to Fabien.</p>
+</div>
+</div>
+<div class="section" id="setup-the-base-data">
+<h2>Setup the base data<a class="headerlink" href="#setup-the-base-data" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/setup-the-base-data" ></div><p>As to prepare your prototype, you requested NotSoTiny to give you files that
+contains their main data. The goal is to import all their partners into the
+database.</p>
+<p>They exported three tables from their old Sage software:</p>
+<ul class="simple">
+<li>Categories of customers and suppliers</li>
+<li>List of customers</li>
+<li>List of suppliers</li>
+</ul>
+<p>NotSoTiyn sent you three .CSV (Comma Separated Values) files containing these
+data. Here is a copy of some of the records contained in these files.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 6 - Define categories of partners</p>
+<p class="last">Define the categories of partners. As they are only a few categories,
+we suggest you to encode them manually. As to provide a good service
+to NotSoTiny, you can structure their categories in a hyerarchical tree.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 7 - Import Partners</p>
+<p class="last">NotSoTiny provided a file with about 1200 customers and 200 suppliers.
+So you will have to import these partners using the .CSV import tools
+of Open ERP. Create a .CSV file yourself with these few lines.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Question 8 - What&#8217;s the easiest way to list all wood suppliers ?</p>
+<p class="last">How will you do to list all &#8220;Wood Suppliers&#8221; ?</p>
+</div>
+</div>
+<div class="section" id="setup-the-products">
+<h2>Setup the products<a class="headerlink" href="#setup-the-products" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/setup-the-products" ></div><p>After a quick analysis of their products, Luc, the sales manager
+gave you a list of all their products&#8217;s categories. Here it is:</p>
+<ul class="simple">
+<li>Sellable Products<ul>
+<li>Services</li>
+<li>Shelves</li>
+</ul>
+</li>
+<li>Others Products</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 8 - Categories of products.</p>
+<p class="last">Before setting up the products, you must define the available categories
+of products. Create the tree structure of the categories of products, using
+the data provided by Luc, the sales manager.</p>
+</div>
+<p>NotSoTiny did not provided their exportation of their products yet.
+As to not take delay in the project, you decided to manually encode
+a few products manually. You will encode only threee products at the
+moment but encode much more when you will receive their full range
+of products.</p>
+<p>Here is a list of some products to encode, with their main characteristics:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="18%" />
+<col width="8%" />
+<col width="14%" />
+<col width="10%" />
+<col width="7%" />
+<col width="8%" />
+<col width="16%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Code</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+<th class="head">Unit of Measure</th>
+<th class="head">Cust.Price</th>
+<th class="head">Cost</th>
+<th class="head">Method</th>
+<th class="head">Supplier</th>
+<th class="head">Delivery Delay</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>ARM100</td>
+<td>Shelf of 100cm</td>
+<td>Product</td>
+<td>Unit</td>
+<td>130€</td>
+<td>50€</td>
+<td>Produce</td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr><td>ARM200</td>
+<td>Shelf of 200cm</td>
+<td>Product</td>
+<td>Unit</td>
+<td>210€</td>
+<td>80€</td>
+<td>Produce</td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr><td>WOOD002</td>
+<td>Wood 2mm</td>
+<td>Product</td>
+<td>Meter</td>
+<td>10€</td>
+<td>5€</td>
+<td>Buy</td>
+<td>Wood y Wood Pecker</td>
+<td>2 Weeks</td>
+</tr>
+<tr><td>PROJ</td>
+<td>Cooking Design Project</td>
+<td>Service</td>
+<td>Hour</td>
+<td>90€</td>
+<td>20€</td>
+<td>Produce</td>
+<td>/</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 9 - Products.</p>
+<p class="last">Setup the above products in the NotSoTiny database.</p>
+</div>
+<p>As to be able to sell some products, you will encode a starting inventory.
+Currently, here is the stock level of the above products:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="57%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Code</th>
+<th class="head">Stock</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>ARM100</td>
+<td>50 Units</td>
+</tr>
+<tr><td>ARM200</td>
+<td>20 Units</td>
+</tr>
+<tr><td>WOOD002</td>
+<td>120 Meters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 10 - Create the initial stock inventory.</p>
+<p class="last">Create the initial stock inventory. Once the inventory is confirmed you
+should see the real stock of each product on the product form.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 11 - Test the system</p>
+<p>You should now be able to test the system. Perform the following operations:</p>
+<ul class="last">
+<li><p class="first">Create a Quotation:</p>
+<blockquote>
+<ul class="simple">
+<li>Customer : ZeroOne Inc</li>
+<li>Products : 1 Cooking Design Project, 3 Shelves 100cm</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Convert the quotation to a sale order</p>
+</li>
+<li><p class="first">Deliver the shelves to the customer</p>
+</li>
+<li><p class="first">Generate the draft invoice</p>
+</li>
+<li><p class="first">Confirm the invoice and print it</p>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice 12 - Check stock level</p>
+<p class="last">You should now test the stock level of the ARM100 product. It should have
+47 Units in stock.</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuration and Installation</a><ul>
+<li><a class="reference external" href="#setup-a-database">Setup a database</a></li>
+<li><a class="reference external" href="#configure-the-system">Configure the system</a></li>
+<li><a class="reference external" href="#setup-the-base-data">Setup the base data</a></li>
+<li><a class="reference external" href="#setup-the-products">Setup the products</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/exercice/10_2_Setup/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,656 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Development Environment" href="index.html" />
+    <link rel="next" title="Command line options" href="4_command_line.html" />
+    <link rel="prev" title="Shutting down the server" href="6_shutdown_server.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_command_line.html" title="Command line options"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="6_shutdown_server.html" title="Shutting down the server"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Development Environment</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_command_line.html" title="Command line options"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="6_shutdown_server.html" title="Shutting down the server"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Development Environment</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuration</a><ul>
+<li><a class="reference external" href="#server-configuration-file">Server Configuration File</a></li>
+<li><a class="reference external" href="#gtk-client-configuration">GTK-Client Configuration</a></li>
+<li><a class="reference external" href="#web-client-configuration">Web Client Configuration</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="6_shutdown_server.html"
+                                  title="previous chapter">Shutting down the server</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_command_line.html"
+                                  title="next chapter">Command line options</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/1_1_Introduction/3_configuration.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuration">
+<span id="configuration-files-link"></span><h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<p>Two configuration files are available:</p>
+<p>Those files follow the convention used by python&#8217;s ConfigParser module.</p>
+<p>Lines beginning with &#8220;#&#8221; or &#8220;;&#8221; are comments.</p>
+<p>The client configuration file is automatically generated upon the first start. The one of the server can automatically be created using the command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">openerp</span><span class="o">-</span><span class="n">server</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">s</span>
+</pre></div>
+</div>
+<p>If they are not found, the server and the client will start with the default configuration.</p>
+<div class="section" id="server-configuration-file">
+<h2>Server Configuration File<a class="headerlink" href="#server-configuration-file" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/server-configuration-file" ></div><p>The server configuration file .openerp_serverrc is used to save server startup options. Here is the list of the available options:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">interface:</th><td class="field-body">Address to which the server will be bound</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">port:</th><td class="field-body">Port the server will listen on</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">database:</th><td class="field-body">Name of the database to use</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">user:</th><td class="field-body">Username used when connecting to the database</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">translate_in:</th><td class="field-body">File used to translate Open ERP to your language</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">translate_out:</th><td class="field-body">File used to export the language Open ERP use</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">language:</th><td class="field-body">Use this language as the language of the server. This must be specified as an ISO country code, as specified by the W3C.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">verbose:</th><td class="field-body">Enable debug output</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">init:</th><td class="field-body">init a module (use &#8220;all&#8221; for all modules)</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">update:</th><td class="field-body">update a module (use &#8220;all&#8221; for all modules)</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">upgrade:</th><td class="field-body">Upgrade/install/uninstall modules</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">db_name:</th><td class="field-body">specify the database name</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">db_user:</th><td class="field-body">specify the database user name</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">db_password:</th><td class="field-body">specify the database password</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">pg_path:</th><td class="field-body">specify the pg executable path</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">db_host:</th><td class="field-body">specify the database host</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">db_port:</th><td class="field-body">specify the database port</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">translate_modules:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">Specify modules to export. Use in combination with &#8211;i18n-export</td>
+</tr>
+</tbody>
+</table>
+<p>You can create your own configuration file by specifying -s or &#8211;save on the server command line. If you would like to write an alternativve configuration file, use -c &lt;config file&gt; or &#8211;config=&lt;config file&gt;
+Here is a basic configuration for a server:</p>
+<div class="highlight-python"><pre>[options]
+verbose = False
+xmlrpc = True
+database = terp
+update = {}
+port = 8069
+init = {}
+interface = 127.0.0.1
+reportgz = False</pre>
+</div>
+<p>Full Example for Server V5.0</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span><span class="n">printer</span><span class="p">]</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">none</span>
+<span class="n">softpath_html</span> <span class="o">=</span> <span class="n">none</span>
+<span class="n">preview</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">softpath</span> <span class="o">=</span> <span class="n">none</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gtk-client-configuration">
+<h2>GTK-Client Configuration<a class="headerlink" href="#gtk-client-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/gtk-client-configuration" ></div><div class="topic">
+<p class="topic-title first">login section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">login:</th><td class="field-body">login name to use to connect to Tiny ERP server</td>
+</tr>
+<tr class="field"><th class="field-name">server:</th><td class="field-body">address used by the server</td>
+</tr>
+<tr class="field"><th class="field-name">port:</th><td class="field-body">port used by the server</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">path section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">share:</th><td class="field-body">path used to find Tiny ERP shared files</td>
+</tr>
+<tr class="field"><th class="field-name">pixmaps:</th><td class="field-body">path used to find Tiny ERP pixmaps files</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">tip section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">autostart:</th><td class="field-body">Should the client display tips at startup</td>
+</tr>
+<tr class="field"><th class="field-name">position:</th><td class="field-body">Tip number the client will display</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">form section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">autosave:</th><td class="field-body">The client will automatically save the change you made to a record</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">printer section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">preview:</th><td class="field-body">Preview report before printing</td>
+</tr>
+<tr class="field"><th class="field-name">softpath:</th><td class="field-body">Path to the pdf previewer</td>
+</tr>
+<tr class="field"><th class="field-name">softpath_html:</th><td class="field-body">Path to the html previewer</td>
+</tr>
+<tr class="field"><th class="field-name">path:</th><td class="field-body">Command used to print</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">logging section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">logger:</th><td class="field-body">log channels to display. List values are: &#64;common&#64;, &#64;common.message&#64;, &#64;view&#64;, &#64;view.form&#64;, &#64;common.options&#64;, &#64;rpc.request&#64;, &#64;rpc.result&#64;, &#64;rpc.exception&#64;</td>
+</tr>
+<tr class="field"><th class="field-name">level:</th><td class="field-body">logging level to show</td>
+</tr>
+<tr class="field"><th class="field-name">output:</th><td class="field-body">file used by the logger</td>
+</tr>
+<tr class="field"><th class="field-name">verbose:</th><td class="field-body">set the log level to INFO</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="topic">
+<p class="topic-title first">client section</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">default_path:</th><td class="field-body">Default path used by the client when saving/loading datas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Default values</strong>:</p>
+<div class="highlight-python"><pre>[login]
+login = admin
+port = 8069
+server = 192.168.1.4
+
+[printer]
+path = none
+preview = True
+softpath = none
+
+[logging]
+output = stdout
+logger =
+verbose = True
+level = ERROR
+
+[form]
+autosave = False
+
+[client]
+default_path = /home/user</pre>
+</div>
+</div>
+<div class="section" id="web-client-configuration">
+<h2>Web Client Configuration<a class="headerlink" href="#web-client-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/web-client-configuration" ></div><p>Get a clone of each repository:</p>
+<div class="highlight-python"><pre>bzr clone lp:~openerp/openobject-server/trunk server
+bzr clone lp:~openerp/openobject-client/trunk client
+bzr clone lp:~openerp/openobject-client-web/trunk client-web
+bzr clone lp:~openerp/openobject-addons/trunk addons</pre>
+</div>
+<p>If you want to get a clone of the extra-addons repository, you can execute this command:</p>
+<div class="highlight-python"><pre>bzr clone lp:~openerp-commiter/openobject-addons/trunk-extra-addons extra-addons</pre>
+</div>
+<p>run the setup scripts in the respective directories:</p>
+<div class="highlight-python"><pre>python2.4 setup.py build
+python2.4 setup.py install</pre>
+</div>
+<p>Currently the initialisation procedure of the server parameter &#8211;init=all to
+populate the database seems to be broken in trunk.</p>
+<p>It is recommended to create a new database via the gtk-client. Before that the web-client will not work.</p>
+<p>Start OpenERP server like this:</p>
+<div class="highlight-python"><pre>./openerp-server.py --addons-path=/path/to/my/addons</pre>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">bin/addons</span></tt> will be considered as default addons directory which can be
+overriden by the <tt class="docutils literal"><span class="pre">/path/to/my/addons/</span></tt>. That is if an addon exists in
+<tt class="docutils literal"><span class="pre">bin/addons</span></tt> as well as <tt class="docutils literal"><span class="pre">/path/to/my/addons</span></tt> (custom path) the later one will
+be given preference over the <tt class="docutils literal"><span class="pre">bin/addons</span></tt> (default path).</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Configuration</a><ul>
+<li><a class="reference external" href="#server-configuration-file">Server Configuration File</a></li>
+<li><a class="reference external" href="#gtk-client-configuration">GTK-Client Configuration</a></li>
+<li><a class="reference external" href="#web-client-configuration">Web Client Configuration</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="6_shutdown_server.html"
+                                  title="previous chapter">Shutting down the server</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_command_line.html"
+                                  title="next chapter">Command line options</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/1_1_Introduction/3_configuration.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="4_command_line.html" title="Command line options"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="6_shutdown_server.html" title="Shutting down the server"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" >Development Environment</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="4_command_line.html" title="Command line options"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="6_shutdown_server.html" title="Shutting down the server"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Development Environment</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

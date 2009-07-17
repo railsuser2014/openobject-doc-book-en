@@ -1,0 +1,438 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Putting analytic accounts in place &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Analytic Accounts" href="index.html" />
+    <link rel="next" title="Analytic records" href="4_10_Accounts_record.html" />
+    <link rel="prev" title="To each enterprise [its] own analytic chart" href="4_10_Accounts_analytic_chart.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_record.html" title="Analytic records"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_analytic_chart.html" title="To each enterprise [its] own analytic chart"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Effective Management of Operations</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Analytic Accounts</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_record.html" title="Analytic records"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_analytic_chart.html" title="To each enterprise [its] own analytic chart"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Effective Management of Operations</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Analytic Accounts</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Putting analytic accounts in place</a><ul>
+<li><a class="reference external" href="#setting-up-the-chart-of-accounts">Setting up the chart of accounts</a></li>
+<li><a class="reference external" href="#creating-journals">Creating Journals</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="4_10_Accounts_analytic_chart.html"
+                                  title="previous chapter">To each enterprise [its] own analytic chart</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_10_Accounts_record.html"
+                                  title="next chapter">Analytic records</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/4/4_10_Accounts/4_10_Accounts_place.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-200"></span><div class="section" id="putting-analytic-accounts-in-place">
+<h1>Putting analytic accounts in place<a class="headerlink" href="#putting-analytic-accounts-in-place" title="Permalink to this headline">¶</a></h1>
+<p>For the initial setup of good analytic accounts you should:</p>
+<ul class="simple">
+<li>set up the chart of accounts,</li>
+<li>create the different journals.</li>
+</ul>
+<div class="section" id="setting-up-the-chart-of-accounts">
+<h2>Setting up the chart of accounts<a class="headerlink" href="#setting-up-the-chart-of-accounts" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/setting-up-the-chart-of-accounts" ></div><p>Start by choosing the most suitable analytic representation for your company before entering it into
+Open&nbsp;ERP. To create the different analytic accounts, use the menu <em>Financial
+Management ‣ Configuration ‣ Analytic Accounting ‣ Analytic Accounts ‣ New Analytic Account</em>.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_analytic_form.png"><img alt="../../../_images/account_analytic_form.png" src="../../../_images/account_analytic_form.png" style="width: 350.0px; height: 246.5px;" /></a>
+<p class="caption"><em>Setting up an analytic account</em></p>
+</div>
+<p>To create an analytic account you have to complete the main fields:</p>
+<ul class="simple">
+<li>the <strong>Account Name</strong>,</li>
+<li>the <strong>Account Code</strong> : used as a shortcut for selecting the account,</li>
+<li>the <strong>Account type</strong> : just like general accounts the <tt class="docutils literal"><span class="pre">View</span></tt>  type is used for
+virtual accounts which are used only to create a hierarchical structure and for subtotals, and not
+to store accounting entries,</li>
+<li>the <strong>Parent analytic account</strong> : defines the hierarchy between the accounts.</li>
+</ul>
+<p>If the project is for a limited time you can define a start and end date here. The <strong>State</strong>
+field is used to indicate whether the project is running (<tt class="docutils literal"><span class="pre">Open</span></tt> ), waiting for information
+from the client (<tt class="docutils literal"><span class="pre">Pending</span></tt>), <tt class="docutils literal"><span class="pre">Draft</span></tt>  or <tt class="docutils literal"><span class="pre">Closed</span></tt> .</p>
+<p>Finally, if the analytic account is a client project you can complete the fields about the partner,
+which you&#8217;d need so that you can invoice the partner:</p>
+<ul class="simple">
+<li>the <strong>Associated partner</strong>,</li>
+<li>a <strong>Sale Pricelist</strong>, which shows how services linked to the project should be charged,</li>
+<li>a <strong>Max. Invoice Price</strong>, showing the maximum invoice price regardless of actual
+overspend,</li>
+<li>a <strong>Max. Quantity</strong>, for contracts with a fixed limit of hours to use,</li>
+<li>an <strong>Invoicing</strong> field, which defines an invoicing rate and whether the project
+should be invoiced automatically from the services represented by the costs in the analytic account.</li>
+</ul>
+<span class="target" id="index-201"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Invoicing</p>
+<p>You have several methods available to you in Open&nbsp;ERP for automated invoicing:</p>
+<ul class="last simple">
+<li>Service companies usually use invoicing from purchase orders, analytic accounts or, more rarely,
+project management tasks.</li>
+<li>Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
+orders.</li>
+</ul>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_analytic_chart.png"><img alt="../../../_images/account_analytic_chart.png" src="../../../_images/account_analytic_chart.png" style="width: 350.0px; height: 246.0px;" /></a>
+<p class="caption"><em>Example of an analytic chart for projects</em></p>
+</div>
+<p>Once you&#8217;ve defined the different analytic accounts you can view your chart through the menu
+<em>Financial Management ‣ Charts ‣ Analytic Chart of Accounts</em>.</p>
+<span class="target" id="index-202"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Setting up an analytic account</p>
+<p>The setup screen for an analytic account can vary greatly depending on the modules installed in
+your database.
+For example, you&#8217;ll only see information about recharging services if you have the module
+<a title="Invoice on analytic lines (Official, Quality Certified)" class="reference external" href="../../../technical_guide/hr_timesheet_invoice.html#module-hr_timesheet_invoice"><tt class="xref docutils literal"><span class="pre">hr_timesheet_invoice</span></tt></a> installed.</p>
+<p class="last">Some of these modules add helpful management statistics to the analytic account.
+The most useful is probably the module <a title="report_account_analytic (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account_analytic_analysis.html#module-account_analytic_analysis"><tt class="xref docutils literal"><span class="pre">account_analytic_analysis</span></tt></a>,
+which adds such information as indicators about your margins, invoicing amounts, and latest service
+dates and invoice dates.</p>
+</div>
+</div>
+<div class="section" id="creating-journals">
+<h2>Creating Journals<a class="headerlink" href="#creating-journals" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/creating-journals" ></div><p>Once the analytic chart has been created for your company you have to create the different journals.
+These enable you to categorize the different accounting entries by their type:</p>
+<ul class="simple">
+<li>services,</li>
+<li>expense reimbursements,</li>
+<li>purchases of materials,</li>
+<li>miscellaneous expenditure,</li>
+<li>sales,</li>
+<li>situation entries (special situations, such as installation of the software).</li>
+</ul>
+<span class="target" id="index-203"></span><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Minimal journals</p>
+<p class="last">At a minimum you have to create one analytic journal for Sales and one for Purchases.
+If you don&#8217;t create these two, Open&nbsp;ERP won&#8217;t validate invoices linked to an analytic account
+because it wouldn&#8217;t be able to create an analytic accounting entry automatically.</p>
+</div>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/account_analytic_journal.png"><img alt="../../../_images/account_analytic_journal.png" src="../../../_images/account_analytic_journal.png" style="width: 350.0px; height: 200.5px;" /></a>
+<p class="caption"><em>Creating an analytic journal</em></p>
+</div>
+<p>To define your analytic journals, use the menu <em>Financial Management ‣
+Configuration ‣ Analytic Accounting ‣ Analytic Journal Definition</em> then click <strong>New</strong>..</p>
+<p>It&#8217;s easy to create an analytic journal. Just give it a <strong>Name</strong>, a <strong>Code</strong> and a <strong>Type</strong>. The
+types available are:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">Sales</span></tt> , for sales to customers and for credit notes,</li>
+<li><tt class="docutils literal"><span class="pre">Purchases</span></tt> , for purchases and miscellaneous expenses,</li>
+<li><tt class="docutils literal"><span class="pre">Cash</span></tt> , for financial entries,</li>
+<li><tt class="docutils literal"><span class="pre">Situation</span></tt> , to adjust accounts when starting an activity, or at the end of the financial
+year,</li>
+<li><tt class="docutils literal"><span class="pre">General</span></tt> , for all other entries.</li>
+</ul>
+<p>The type of journal enables the software to automatically select the analytic journal based on the
+nature of the operation. For example if you enter an invoice for a customer, Open&nbsp;ERP will
+automatically search for an analytic journal of type <tt class="docutils literal"><span class="pre">Sales</span></tt> .</p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Putting analytic accounts in place</a><ul>
+<li><a class="reference external" href="#setting-up-the-chart-of-accounts">Setting up the chart of accounts</a></li>
+<li><a class="reference external" href="#creating-journals">Creating Journals</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="4_10_Accounts_analytic_chart.html"
+                                  title="previous chapter">To each enterprise [its] own analytic chart</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_10_Accounts_record.html"
+                                  title="next chapter">Analytic records</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/4/4_10_Accounts/4_10_Accounts_place.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_record.html" title="Analytic records"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_analytic_chart.html" title="To each enterprise [its] own analytic chart"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Effective Management of Operations</a> &raquo;</li>
+          <li><a href="index.html" >Analytic Accounts</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_record.html" title="Analytic records"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="4_10_Accounts_analytic_chart.html" title="To each enterprise [its] own analytic chart"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Effective Management of Operations</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Analytic Accounts</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

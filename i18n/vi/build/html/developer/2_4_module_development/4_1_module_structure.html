@@ -1,0 +1,665 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module Structure &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="First Module to OpenERP" href="index.html" />
+    <link rel="next" title="OpenERP Module Descriptor File : __terp__.py" href="4_2_module_descriptor.html" />
+    <link rel="prev" title="First Module to OpenERP" href="index.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_2_module_descriptor.html" title="OpenERP Module Descriptor File : __terp__.py"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="First Module to OpenERP"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">First Module to OpenERP</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="4_2_module_descriptor.html" title="OpenERP Module Descriptor File : __terp__.py"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="First Module to OpenERP"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">First Module to OpenERP</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Module Structure</a><ul>
+<li><a class="reference external" href="#the-modules">The Modules</a></li>
+<li><a class="reference external" href="#modules-files-and-directories">Modules - Files and Directories</a><ul>
+<li><a class="reference external" href="#python-module-descriptor-file-init-py">Python Module Descriptor File __init__.py</a></li>
+<li><a class="reference external" href="#openerp-module-descriptor-file-terp-py">OpenERP Module Descriptor File __terp__.py</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#postgresql">PostgreSQL</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#pre-installed-data">Pre-Installed Data</a><ul>
+<li><a class="reference external" href="#record-tag">Record Tag</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#i18n">i18n</a><ul>
+<li><a class="reference external" href="#improving-translations">Improving Translations</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#process">Process</a><ul>
+<li><a class="reference external" href="#defining-the-process">Defining the process</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#views">Views</a><ul>
+<li><a class="reference external" href="#usage-example">Usage example</a></li>
+<li><a class="reference external" href="#to-develop-new-objects">To develop new objects</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#wizards">Wizards</a></li>
+<li><a class="reference external" href="#workflow">Workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">First Module to OpenERP</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_2_module_descriptor.html"
+                                  title="next chapter">OpenERP Module Descriptor File : __terp__.py</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/2_4_module_development/4_1_module_structure.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-structure">
+<h1>Module Structure<a class="headerlink" href="#module-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-modules">
+<h2>The Modules<a class="headerlink" href="#the-modules" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/the-modules" ></div></div>
+<div class="section" id="modules-files-and-directories">
+<h2>Modules - Files and Directories<a class="headerlink" href="#modules-files-and-directories" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/modules-files-and-directories" ></div><p>All the modules are located in the server/addons directory.</p>
+<p>The following steps are necessary to create a new module:</p>
+<p>!The Modules - Files And Directories - XML Files</p>
+<p>XML files located in the module directory are used to modify the structure of
+the database. They are used for many purposes, among which we can cite :</p>
+<p>General structure of Tiny ERP XML files is more detailed in the section <a class="reference external" href="http://doc.openerp.com/developer/index.html">Data Loading Files XML</a>. Look here if you are interested in learning more about <em>initialization</em> and <em>demonstration data declaration</em> XML files. The following section are only related to XML specific to <em>actions, menu entries, reports, wizards</em> and <em>workflows</em> declaration.</p>
+<div class="section" id="python-module-descriptor-file-init-py">
+<h3>Python Module Descriptor File __init__.py<a class="headerlink" href="#python-module-descriptor-file-init-py" title="Permalink to this headline">¶</a></h3>
+<p><strong>The __init__.py file</strong></p>
+<p>The __init__.py file is, like any Python module, executed at the start of the program. It needs to import the Python files that need to be loaded.</p>
+<p>So, if you create a &#8220;module.py&#8221; file, containing the description of your objects, you have to write one line in __init__.py:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">module</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="openerp-module-descriptor-file-terp-py">
+<h3>OpenERP Module Descriptor File __terp__.py<a class="headerlink" href="#openerp-module-descriptor-file-terp-py" title="Permalink to this headline">¶</a></h3>
+<p>In the created module directory, you must add a <strong>__terp__.py</strong> file. This file, which must be in Python format, is responsible to</p>
+<p>This file must contain a Python dictionary with the following values:</p>
+<p><strong>name</strong></p>
+<p><strong>version</strong></p>
+<p><strong>description</strong></p>
+<p><strong>author</strong></p>
+<p><strong>website</strong></p>
+<p><strong>license</strong></p>
+<p><strong>depends</strong></p>
+<p><strong>init_xml</strong></p>
+<p><strong>update_xml</strong></p>
+<p><strong>installable</strong></p>
+<p><strong>active</strong></p>
+<p><strong>Example</strong></p>
+<p>Here is an example of __terp__.py file for the product module</p>
+<div class="highlight-xml"><pre>{
+    "name" : "Products &amp; Pricelists",
+    "version" : "1.0",
+    "author" : "Open",
+    "category" : "Generic Modules/Inventory Control",
+    "depends" : ["base", "account"],
+    "init_xml" : [],
+    "demo_xml" : ["product_demo.xml"],
+    "update_xml" : ["product_data.xml","product_report.xml", "product_wizard.xml","product_view.xml", "pricelist_view.xml"],
+    "installable": True,
+    "active": True
+}</pre>
+</div>
+<p>The files that must be placed in init_xml are the ones that relate to the workflow definition, data to load at the installation of the software and the data for the demonstrations.</p>
+<p>The files in <strong>update_xml</strong> concern: views, reports and wizards.</p>
+</div>
+<div class="section" id="objects">
+<h3>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h3>
+<p>All Tiny ERP resources are objects: menus, actions, reports, invoices, partners, ... Tiny ERP is based on an object relational mapping of a database to control the information. Object names are hierarchical, as in the following examples:</p>
+<p>Generally, the first word is the name of the module: account, stock, sale.</p>
+<p>Other advantages of an ORM;</p>
+<p>It is easier to manipulate one object (example, a partner) than several tables (partner address, categories, events, ...)</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../_images/pom_3_0_3.png"><img alt="../../_images/pom_3_0_3.png" src="../../_images/pom_3_0_3.png" style="width: 595.0px; height: 740.0px;" /></a>
+<p class="caption"><em>The Physical Objects Model of [OpenERP version 3.0.3]</em></p>
+</div>
+<div class="section" id="postgresql">
+<h4>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h4>
+<p>The ORM of Open ERP is constructed over PostgreSQL. It is thus possible to
+query the object used by Open ERP using the object interface or by directly
+using SQL statements.</p>
+<p>But it is dangerous to write or read directly in the PostgreSQL database, as
+you will shortcut important steps like constraints checking or workflow
+modification.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Physical Database Model of OpenERP</p>
+</div>
+</div>
+</div>
+<div class="section" id="pre-installed-data">
+<h3>Pre-Installed Data<a class="headerlink" href="#pre-installed-data" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>%define=lightblue color=#27adfb%</pre>
+</div>
+<p>Data can be inserted or updated into the PostgreSQL tables corresponding to the
+Tiny ERP objects using XML files. The general structure of a Tiny ERP XML file
+is as follows:</p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;
+ &lt;terp&gt;
+         &lt;data&gt;
+     &lt;record model="model.name_1" id="id_name_1"&gt;
+         &lt;field name="field1"&gt;
+             %lightblue%"field1 content"
+         &lt;/field&gt;
+         &lt;field name="field2"&gt;
+             %lightblue%"field2 content"
+         &lt;/field&gt;
+         (...)
+     &lt;/record&gt;
+     &lt;record model="model.name_2" id="id_name_2"&gt;
+         (...)
+     &lt;/record&gt;
+     (...)
+     &lt;/data&gt;
+ &lt;/terp&gt;</pre>
+</div>
+<p>Fields content are strings that must be encoded as <em>UTF-8</em> in XML files.</p>
+<p>Let&#8217;s review an example taken from the TinyERP source (base_demo.xml in the base module):</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;res.company&quot;</span> <span class="na">id=</span><span class="s">&quot;main_company&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Tiny sprl<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;partner_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;main_partner&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;currency_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;EUR&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;res.users&quot;</span> <span class="na">id=</span><span class="s">&quot;user_admin&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;login&quot;</span><span class="nt">&gt;</span>admin<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;password&quot;</span><span class="nt">&gt;</span>admin<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Administrator<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;signature&quot;</span><span class="nt">&gt;</span>Administrator<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;action_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;action_menu_admin&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;menu_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;action_menu_admin&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;address_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;main_address&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;groups_id&quot;</span> <span class="na">eval=</span><span class="s">&quot;[(6,0,[group_admin])]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;company_id&quot;</span> <span class="na">ref=</span><span class="s">&quot; *main_company* &quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</div>
+<p>This last record defines the admin user :</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;company_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;main_company&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p>The field <strong>company_id</strong> is a many-to-one relation from the user object to the company object, and <strong>main_company</strong> is the id of to associate.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;partner_id&quot;</span> <span class="na">search=</span><span class="s">&quot;[]&quot;</span> <span class="na">model=</span><span class="s">&quot;res.partner&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p>This is a classical example of the use of <strong>search</strong> in demo data: here we do not really care about which partner we want to use for the test, so we give an empty list. Notice the <strong>model</strong> attribute is currently mandatory.</p>
+<div class="section" id="record-tag">
+<h4>Record Tag<a class="headerlink" href="#record-tag" title="Permalink to this headline">¶</a></h4>
+<p><strong>Description</strong></p>
+<p>The addition of new data is made with the record tag. This one takes a mandatory attribute : model. Model is the object name where the insertion has to be done. The tag record can also take an optional attribute: id. If this attribute is given, a variable of this name can be used later on, in the same file, to make reference to the newly created resource ID.</p>
+<p>A record tag may contain field tags. They indicate the record&#8217;s fields value. If a field is not specified the default value will be used.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.report.xml&quot;</span> <span class="na">id=</span><span class="s">&quot;l0&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>account.invoice<span class="nt">&lt;/field&gt;</span>
+     <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Invoices List<span class="nt">&lt;/field&gt;</span>
+     <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_name&quot;</span><span class="nt">&gt;</span>account.invoice.list<span class="nt">&lt;/field&gt;</span>
+     <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_xsl&quot;</span><span class="nt">&gt;</span>account/report/invoice.xsl<span class="nt">&lt;/field&gt;</span>
+     <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_xml&quot;</span><span class="nt">&gt;</span>account/report/invoice.xml<span class="nt">&lt;/field&gt;</span>
+<span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</div>
+<p><strong>field tag</strong></p>
+<p>The attributes for the field tag are the following:</p>
+<p><strong>function tag</strong></p>
+<p><strong>Example</strong></p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;function</span> <span class="na">model=</span><span class="s">&quot;ir.ui.menu&quot;</span> <span class="na">name=</span><span class="s">&quot;search&quot;</span> <span class="na">eval=</span><span class="s">&quot;[[(&#39;name&#39;,&#39;=&#39;,&#39;Operations&#39;)]]&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p><strong>getitem tag</strong></p>
+<p>Takes a subset of the evaluation of the last child node of the tag.</p>
+<p><strong>Example</strong></p>
+<p>Evaluates to the first element of the list of ids returned by the function node</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;getitem</span> <span class="na">index=</span><span class="s">&quot;0&quot;</span> <span class="na">type=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;function</span> <span class="na">model=</span><span class="s">&quot;ir.ui.menu&quot;</span> <span class="na">name=</span><span class="s">&quot;search&quot;</span> <span class="na">eval=</span><span class="s">&quot;[[(&#39;name&#39;,&#39;=&#39;,&#39;Operations&#39;)]]&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/getitem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="i18n">
+<h3>i18n<a class="headerlink" href="#i18n" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="improving-translations">
+<h4>Improving Translations<a class="headerlink" href="#improving-translations" title="Permalink to this headline">¶</a></h4>
+<dl class="describe">
+<dt>
+<tt class="descname">Translating in launchpad</tt></dt>
+<dd></dd></dl>
+
+<p>Translations are managed by
+the <a class="reference external" href="https://translations.launchpad.net/openobject">Launchpad Web interface</a>. Here, you&#8217;ll
+find the list of translatable projects.</p>
+<p>Please read the <a class="reference external" href="https://answers.launchpad.net/rosetta/+faqs">FAQ</a> before asking questions.</p>
+<dl class="describe">
+<dt>
+<tt class="descname">Translating your own module</tt></dt>
+<dd></dd></dl>
+
+<p>
+<span class="versionmodified">Changed in version 5.0.</span></p>
+<p>Contrary to the 4.2.x version, the translations are now done by module. So,
+instead of an unique <tt class="docutils literal"><span class="pre">i18n</span></tt> folder for the whole application, each module has
+its own <tt class="docutils literal"><span class="pre">i18n</span></tt> folder. In addition, OpenERP can now deal with <tt class="docutils literal"><span class="pre">.po</span></tt> <a class="footnote-reference" href="#f-po" id="id1">[1]</a>
+files as import/export format. The translation files of the installed languages
+are automatically loaded when installing or updating a module. OpenERP can also
+generate a .tgz archive containing well organised <tt class="docutils literal"><span class="pre">.po</span></tt> files for each selected
+module.</p>
+<table class="docutils footnote" frame="void" id="f-po" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://www.gnu.org/software/autoconf/manual/gettext/PO-Files.html#PO-Files">http://www.gnu.org/software/autoconf/manual/gettext/PO-Files.html#PO-Files</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="process">
+<h3>Process<a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="defining-the-process">
+<h4>Defining the process<a class="headerlink" href="#defining-the-process" title="Permalink to this headline">¶</a></h4>
+<p>Thourgh the interface and module recorder
+Then, put the generated XML in your own module</p>
+</div>
+</div>
+<div class="section" id="views">
+<h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h3>
+<p>(:title Technical Specifications - Architecture - Views:) Views are a way to represent the objects on the client side. They indicate to the client how to lay out the data coming from the objects on the screen.</p>
+<p>There are two types of views:</p>
+<p>Lists are simply a particular case of tree views.</p>
+<p>A same object may have several views: the first defined view of a kind (<em>tree, form</em>, ...) will be used as the default view for this kind. That way you can have a default tree view (that will act as the view of a one2many) and a specialized view with more or less information that will appear when one double-clicks on a menu item. For example, the products have several views according to the product variants.</p>
+<p>Views are described in XML.</p>
+<p>If no view has been defined for an object, the object is able to generate a view to represent itself. This can limit the developer&#8217;s work but results in less ergonomic views.</p>
+<div class="section" id="usage-example">
+<h4>Usage example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h4>
+<p>When you open an invoice, here is the chain of operations followed by the client:</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../_images/arch_view_use.png"><img alt="../../_images/arch_view_use.png" src="../../_images/arch_view_use.png" style="width: 156.0px; height: 186.0px;" /></a>
+</div>
+</div>
+<div class="section" id="to-develop-new-objects">
+<h4>To develop new objects<a class="headerlink" href="#to-develop-new-objects" title="Permalink to this headline">¶</a></h4>
+<p>The design of new objects is restricted to the minimum: create the objects and optionally create the views to represent them. The PostgreSQL tables do not have to be written by hand because the objects are able to automatically create them (or adapt them in case they already exist).</p>
+</div>
+</div>
+<div class="section" id="reports">
+<h3>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h3>
+<p>Open ERP uses a flexible and powerful reporting system. Reports are generated either in PDF or in HTML. Reports are designed on the principle of separation between the data layer and the presentation layer.</p>
+<p>Reports are described more in details in the <a class="reference external" href="http://openobject.com/wiki/index.php/Developers:Developper%27s_Book/Reports">Reporting</a> chapter.</p>
+</div>
+<div class="section" id="wizards">
+<h3>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h3>
+<p>Here&#8217;s an example of a .XML file that declares a wizard.</p>
+<div class="highlight-python"><pre>&lt;?xml version="1.0"?&gt;
+&lt;terp&gt;
+    &lt;data&gt;
+     &lt;wizard string="Employee Info"
+             model="hr.employee"
+             name="employee.info.wizard"
+             id="wizard_employee_info"/&gt;
+    &lt;/data&gt;
+&lt;/terp&gt;</pre>
+</div>
+<p>A wizard is declared using a wizard tag. See &#8220;Add A New Wizard&#8221; for more information about wizard XML.</p>
+<p>also you can add wizard in menu using following xml entry</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="nt">&lt;terp&gt;</span>
+     <span class="nt">&lt;data&gt;</span>
+     <span class="nt">&lt;wizard</span> <span class="na">string=</span><span class="s">&quot;Employee Info&quot;</span>
+             <span class="na">model=</span><span class="s">&quot;hr.employee&quot;</span>
+             <span class="na">name=</span><span class="s">&quot;employee.info.wizard&quot;</span>
+             <span class="na">id=</span><span class="s">&quot;wizard_employee_info&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;menuitem</span>
+             <span class="na">name=</span><span class="s">&quot;Human Resource/Employee Info&quot;</span>
+             <span class="na">action=</span><span class="s">&quot;wizard_employee_info&quot;</span>
+             <span class="na">type=</span><span class="s">&quot;wizard&quot;</span>
+             <span class="na">id=</span><span class="s">&quot;menu_wizard_employee_info&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;/data&gt;</span>
+<span class="nt">&lt;/terp&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="workflow">
+<h3>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h3>
+<p>The objects and the views allow you to define new forms very simply, lists/trees and interactions between them. But it is not enough : you have to define the dynamics of these objects.</p>
+<p>A few examples:</p>
+<p>The workflows describe these interactions with graphs. One or several workflows may be associated to the objects. Workflows are not mandatory; some objects don&#8217;t have workflows.</p>
+<p>Below is an example workflow used for sale orders. It must generate invoices and shipments according to certain conditions.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../_images/arch_workflow_sale.png"><img alt="../../_images/arch_workflow_sale.png" src="../../_images/arch_workflow_sale.png" style="width: 436.9px; height: 529.55px;" /></a>
+</div>
+<p>In this graph, the nodes represent the actions to be done:</p>
+<p>The arrows are the conditions;</p>
+<p>The squared nodes represent other Workflows;</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Module Structure</a><ul>
+<li><a class="reference external" href="#the-modules">The Modules</a></li>
+<li><a class="reference external" href="#modules-files-and-directories">Modules - Files and Directories</a><ul>
+<li><a class="reference external" href="#python-module-descriptor-file-init-py">Python Module Descriptor File __init__.py</a></li>
+<li><a class="reference external" href="#openerp-module-descriptor-file-terp-py">OpenERP Module Descriptor File __terp__.py</a></li>
+<li><a class="reference external" href="#objects">Objects</a><ul>
+<li><a class="reference external" href="#postgresql">PostgreSQL</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#pre-installed-data">Pre-Installed Data</a><ul>
+<li><a class="reference external" href="#record-tag">Record Tag</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#i18n">i18n</a><ul>
+<li><a class="reference external" href="#improving-translations">Improving Translations</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#process">Process</a><ul>
+<li><a class="reference external" href="#defining-the-process">Defining the process</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#views">Views</a><ul>
+<li><a class="reference external" href="#usage-example">Usage example</a></li>
+<li><a class="reference external" href="#to-develop-new-objects">To develop new objects</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#reports">Reports</a></li>
+<li><a class="reference external" href="#wizards">Wizards</a></li>
+<li><a class="reference external" href="#workflow">Workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">First Module to OpenERP</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="4_2_module_descriptor.html"
+                                  title="next chapter">OpenERP Module Descriptor File : __terp__.py</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/2_4_module_development/4_1_module_structure.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="4_2_module_descriptor.html" title="OpenERP Module Descriptor File : __terp__.py"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="First Module to OpenERP"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" >First Module to OpenERP</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="4_2_module_descriptor.html" title="OpenERP Module Descriptor File : __terp__.py"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="First Module to OpenERP"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">First Module to OpenERP</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

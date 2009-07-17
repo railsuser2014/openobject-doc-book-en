@@ -1,0 +1,706 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Type of Fields &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../index.html" />
+    <link rel="up" title="Objects, Fields and Methods" href="index.html" />
+    <link rel="next" title="ORM methods" href="methods.html" />
+    <link rel="prev" title="Fields Introduction" href="openerp_fields.html" />
+<script src="../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="methods.html" title="ORM methods"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="openerp_fields.html" title="Fields Introduction"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Objects, Fields and Methods</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="methods.html" title="ORM methods"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="openerp_fields.html" title="Fields Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Objects, Fields and Methods</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Type of Fields</a><ul>
+<li><a class="reference external" href="#basic-types">Basic Types</a></li>
+<li><a class="reference external" href="#relational-types">Relational Types</a><ul>
+<li><a class="reference external" href="#functional-field">Functional Field</a></li>
+<li><a class="reference external" href="#property-fields">Property Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="openerp_fields.html"
+                                  title="previous chapter">Fields Introduction</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="methods.html"
+                                  title="next chapter">ORM methods</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/2_5_Objects_Fields_Methods/field_type.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="type-of-fields">
+<h1>Type of Fields<a class="headerlink" href="#type-of-fields" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-types">
+<h2>Basic Types<a class="headerlink" href="#basic-types" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/basic-types" ></div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">boolean:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A boolean (true, false).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">integer:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>An integer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">float:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A floating point number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">char:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A string of limited length. The required size parameter determines its size.</p>
+<p>Example</p>
+<p>&#8216;city&#8217; : fields.char(&#8216;City Name&#8217;, size=30, required=True),</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">text:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A text field with no limit in length.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">date:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A date.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">datetime:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Allows to store a date and the time of day in the same field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">binary:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A binary chain</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">selection:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A field which allows the user to make a selection between various predefined values.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Format of the selection parameter: tuple of tuples of strings of the form:</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="p">((</span><span class="s">&#39;key_or_value&#39;</span><span class="p">,</span> <span class="s">&#39;string_to_display&#39;</span><span class="p">),</span> <span class="o">...</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p><em>Example</em></p>
+<p>Using relation fields <strong>many2one</strong> with <strong>selection</strong>. In fields definitions add:</p>
+<div class="highlight-python"><pre>...,
+'my_field': fields.many2one('mymodule.relation.model', 'Title', selection=_sel_func),
+...,</pre>
+</div>
+<p>And then define the _sel_func like this (but before the fields definitions):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">_sel_func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cr</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="p">{}):</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pool</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;mymodule.relation.model&#39;</span><span class="p">)</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="p">[])</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">context</span><span class="p">)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[(</span><span class="n">r</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">r</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">res</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">res</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="relational-types">
+<h2>Relational Types<a class="headerlink" href="#relational-types" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/relational-types" ></div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">one2one:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>A one2one field expresses a one:to:one relation between two objects. It is deprecated. Use many2one instead.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">many2one:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Associates this object to a parent object via this Field. For example Department an Employee belongs to would Many to one. i.e Many employees will belong to a Department</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">one2many:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>TODO</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">many2many:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>TODO</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">related:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Sometimes you need to refer the relation of a relation. For example, supposing you have objects: City &lt;- State &lt;- Country, and you need to refer Country in a City, you can define a field as below in the City object:</p>
+<div class="highlight-python"><pre>'country_id': fields.related('state_id', 'country_id', type="many2one",
+              relation="module.country", string="Country", store=False)</pre>
+</div>
+<div class="section" id="functional-field">
+<h3>Functional Field<a class="headerlink" href="#functional-field" title="Permalink to this headline">¶</a></h3>
+<p>A functional field is a field whose value is calculated by a function (rather than being stored in the database).</p>
+<p><strong>Parameters:</strong> fnct, arg=None, fnct_inv=None, fnct_inv_arg=None, type=&#8221;%green%float%black%&#8221;, fnct_search=None, obj=None, method=False, store=True</p>
+<p>where</p>
+<p>If <em>method</em> is True, the signature of the method must be:</p>
+<div class="highlight-python"><pre>def fnct(self, cr, uid, ids, field_name, arg, context)</pre>
+</div>
+<p>otherwise (if it is a global function), its signature must be:</p>
+<div class="highlight-python"><pre>def fnct(cr, table, ids, field_name, arg, context)</pre>
+</div>
+<p>Either way, it must return a dictionary of values of the form <strong>{id&#8217;_1_&#8217;: value&#8217;_1_&#8217;, id&#8217;_2_&#8217;: value&#8217;_2_&#8217;,...}.</strong></p>
+<p>The values of the returned dictionary must be of the type specified by the type argument in the field declaration.</p>
+<p>If <em>method</em> is true, the signature of the method must be:</p>
+<div class="highlight-python"><pre>def fnct(self, cr, uid, ids, field_name, field_value, arg, context)</pre>
+</div>
+<p>otherwise (if it is a global function), it should be:</p>
+<div class="highlight-python"><pre>def fnct(cr, table, ids, field_name, field_value, arg, context)</pre>
+</div>
+<ul class="simple">
+<li><strong>fnct_search</strong> allows you to define the searching behaviour on that field.</li>
+</ul>
+<p>If method is true, the signature of the method must be:</p>
+<div class="highlight-python"><pre>def fnct(self, cr, uid, obj, name, args)</pre>
+</div>
+<p>otherwise (if it is a global function), it should be:</p>
+<div class="highlight-python"><pre>def fnct(cr, uid, obj, name, args)</pre>
+</div>
+<p>The return value is a list countaining 3-part tuplets which are used in search funtion:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">return</span> <span class="p">[(</span><span class="s">&#39;id&#39;</span><span class="p">,</span><span class="s">&#39;in&#39;</span><span class="p">,[</span><span class="mf">1</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">5</span><span class="p">])]</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">Example Of Functional Field:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Suppose we create a contract object which is :</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">hr_contract</span><span class="p">(</span><span class="n">osv</span><span class="o">.</span><span class="n">osv</span><span class="p">):</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="s">&#39;hr.contract&#39;</span>
+    <span class="n">_description</span> <span class="o">=</span> <span class="s">&#39;Contract&#39;</span>
+    <span class="n">_columns</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&#39;name&#39;</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">char</span><span class="p">(</span><span class="s">&#39;Contract Name&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mf">30</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
+    <span class="s">&#39;employee_id&#39;</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">many2one</span><span class="p">(</span><span class="s">&#39;hr.employee&#39;</span><span class="p">,</span> <span class="s">&#39;Employee&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
+    <span class="s">&#39;function&#39;</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">many2one</span><span class="p">(</span><span class="s">&#39;res.partner.function&#39;</span><span class="p">,</span> <span class="s">&#39;Function&#39;</span><span class="p">),</span>
+    <span class="p">}</span>
+<span class="n">hr_contract</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If we want to add a field that retrieves the function of an employee by looking its current contract, we use a functional field. The object hr_employee is inherited this way:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">hr_employee</span><span class="p">(</span><span class="n">osv</span><span class="o">.</span><span class="n">osv</span><span class="p">):</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="s">&quot;hr.employee&quot;</span>
+    <span class="n">_description</span> <span class="o">=</span> <span class="s">&quot;Employee&quot;</span>
+    <span class="n">_inherit</span> <span class="o">=</span> <span class="s">&quot;hr.employee&quot;</span>
+    <span class="n">_columns</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&#39;contract_ids&#39;</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">one2many</span><span class="p">(</span><span class="s">&#39;hr.contract&#39;</span><span class="p">,</span> <span class="s">&#39;employee_id&#39;</span><span class="p">,</span> <span class="s">&#39;Contracts&#39;</span><span class="p">),</span>
+    <span class="s">&#39;function&#39;</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="n">_get_cur_function_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">&#39;many2one&#39;</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="s">&quot;res.partner.function&quot;</span><span class="p">,</span>
+                                 <span class="n">method</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s">&#39;Contract Function&#39;</span><span class="p">),</span>
+    <span class="p">}</span>
+<span class="n">hr_employee</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>three points</p>
+<ul class="last simple">
+<li><strong>type</strong> =&#8217;many2one&#8217; is because the function field must create a many2one field; function is declared as a many2one in hr_contract also.</li>
+<li><strong>obj</strong> =&#8221;res.partner.function&#8221; is used to specify that the object to use for the many2one field is res.partner.function.</li>
+<li>We called our method <strong>_get_cur_function_id</strong> because its role is to return a dictionary whose keys are ids of employees, and whose corresponding values are ids of the function of those employees. The code of this method is:</li>
+</ul>
+</div>
+<div class="highlight-python"><pre>def _get_cur_function_id(self, cr, uid, ids, field_name, arg, context):
+    for i in ids:
+    #get the id of the current function of the employee of identifier "i"
+    sql_req= """
+    SELECT f.id AS func_id
+    FROM hr_contract c
+      LEFT JOIN res_partner_function f ON (f.id = c.function)
+    WHERE
+      (c.employee_id = %d)
+    """ % (i,)
+
+    cr.execute(sql_req)
+    sql_res = cr.dictfetchone()
+
+    if sql_res: #The employee has one associated contract
+        res[i] = sql_res['func_id']
+    else:
+        #res[i] must be set to False and not to None because of XML:RPC
+        # "cannot marshal None unless allow_none is enabled"
+        res[i] = False
+        return res</pre>
+</div>
+<p>The id of the function is retrieved using a SQL query. Note that if the query returns no result, the value of sql_res[&#8216;func_id&#8217;] will be None. We force the False value in this case value because XML:RPC (communication between the server and the client) doesn&#8217;t allow to transmit this value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">store={...} Enhancement:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>It will compute the field depends on other objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Syntax:</th><td class="field-body">store={&#8216;object_name&#8217;:(function_name,[&#8216;field_name1&#8217;,&#8217;field_name2&#8217;],priority)} It will call function function_name when any changes will be applied on field list [&#8216;field1&#8217;,&#8217;field2&#8217;] on object &#8216;object_name&#8217; and output of the function will send as a parameter for main function of the field.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name" colspan="2">Example In membership module:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><pre>'membership_state': fields.function(_membership_state, method=True, string='Current membership state', type='selection', selection=STATE,
+  store={'account.invoice':(_get_invoice_partner,['state'], 10),
+  'membership.membership_line':(_get_partner_id,['state'], 10),
+  'res.partner':(lambda self,cr,uid,ids,c={}:ids, ['free_member'], 10)}),</pre>
+</div>
+</div>
+<div class="section" id="property-fields">
+<h3>Property Fields<a class="headerlink" href="#property-fields" title="Permalink to this headline">¶</a></h3>
+<dl class="describe">
+<dt>
+<tt class="descname">Declaring a property</tt></dt>
+<dd></dd></dl>
+
+<p>A property is a special field: fields.property.</p>
+<div class="highlight-python"><pre>class res_partner(osv.osv):
+    _name = "res.partner"
+    _inherit = "res.partner"
+    _columns = {
+                'property_product_pricelist': fields.property(
+                'product.pricelist',
+                type='many2one',·
+                relation='product.pricelist',·
+                string="Sale Pricelist",·
+                method=True,
+                view_load=True,
+                group_name="Pricelists Properties"),
+    }</pre>
+</div>
+<p>Then you have to create the default value in a .XML file for this property:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.property&quot;</span> <span class="na">id=</span><span class="s">&quot;property_product_pricelist&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>property_product_pricelist<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;fields_id&quot;</span> <span class="na">search=</span><span class="s">&quot;[(&#39;model&#39;,&#39;=&#39;,&#39;res.partner&#39;),</span>
+<span class="s">      (&#39;name&#39;,&#39;=&#39;,&#39;property_product_pricelist&#39;)]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span> <span class="na">eval=</span><span class="s">&quot;&#39;product.pricelist,&#39;+str(list0)&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>if the default value points to a resource from another module, you can use the ref function like this:</p>
+<p class="last">&lt;field name=&#8221;value&#8221; eval=&#8220;&#8216;product.pricelist,&#8217;+str(ref(&#8216;module.data_id&#8217;))&#8221;/&gt;</p>
+</div>
+<p><strong>Putting properties in forms</strong></p>
+<p>To add properties in forms, just put the &lt;properties/&gt; tag in your form. This will automatically add all properties fields that are related to this object. The system will add properties depending on your rights. (some people will be able to change a specific property, others won&#8217;t).</p>
+<p>Properties are displayed by section, depending on the group_name attribute. (It is rendered in the client like a separator tag).</p>
+<p><strong>How does this work ?</strong></p>
+<p>The fields.property class inherits from fields.function and overrides the read and write method. The type of this field is many2one, so in the form a property is represented like a many2one function.</p>
+<p>But the value of a property is stored in the ir.property class/table as a complete record. The stored value is a field of type reference (not many2one) because each property may point to a different object. If you edit properties values (from the administration menu), these are represented like a field of type reference.</p>
+<p>When you read a property, the program gives you the property attached to the instance of object you are reading. It this object has no value, the system will give you the default property.</p>
+<p>The definition of a property is stored in the ir.model.fields class like any other fields. In the definition of the property, you can add groups that are allowed to change to property.</p>
+<p><strong>Using properties or normal fields</strong></p>
+<p>When you want to add a new feature, you will have to choose to implement it as a property or as normal field. Use a normal field when you inherit from an object and want to extend this object. Use a property when the new feature is not related to the object but to an external concept.</p>
+<p>Here are a few tips to help you choose between a normal field or a property:</p>
+<p>Normal fields extend the object, adding more features or data.</p>
+<p>A property is a concept that is attached to an object and have special features:</p>
+<ul class="simple">
+<li>Different value for the same property depending on the company</li>
+<li>Rights management per field</li>
+<li>It&#8217;s a link between resources (many2one)</li>
+</ul>
+<p><strong>Example 1: Account Receivable</strong></p>
+<p>The default &#8220;Account Receivable&#8221; for a specific partner is implemented as a property because:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">One interesting thing is that properties avoid &#8220;spaghetti&#8221; code. The account module depends on the partner (base) module. But you can install the partner (base) module without the accounting module. If you add a field that points to an account in the partner object, both objects will depend on each other. It&#8217;s much more difficult to maintain and code (for instance, try to remove a table when both tables are pointing to each others.)</p>
+</div>
+<p><strong>Example 2: Product Times</strong></p>
+<p>The product expiry module implements all delays related to products: removal date, product usetime, ... This module is very useful for food industries.</p>
+<p>This module inherits from the product.product object and adds new fields to it:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">product_product</span><span class="p">(</span><span class="n">osv</span><span class="o">.</span><span class="n">osv</span><span class="p">):</span>
+
+    <span class="n">_inherit</span> <span class="o">=</span> <span class="s">&#39;product.product&#39;</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="s">&#39;product.product&#39;</span>
+    <span class="n">_columns</span> <span class="o">=</span> <span class="p">{</span>
+
+        <span class="s">&#39;life_time&#39;</span><span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">integer</span><span class="p">(</span><span class="s">&#39;Product lifetime&#39;</span><span class="p">),</span>
+        <span class="s">&#39;use_time&#39;</span><span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">integer</span><span class="p">(</span><span class="s">&#39;Product usetime&#39;</span><span class="p">),</span>
+        <span class="s">&#39;removal_time&#39;</span><span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">integer</span><span class="p">(</span><span class="s">&#39;Product removal time&#39;</span><span class="p">),</span>
+        <span class="s">&#39;alert_time&#39;</span><span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">integer</span><span class="p">(</span><span class="s">&#39;Product alert time&#39;</span><span class="p">),</span>
+        <span class="p">}</span>
+
+<span class="n">product_product</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This module adds simple fields to the product.product object. We did not use properties because:</p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Type of Fields</a><ul>
+<li><a class="reference external" href="#basic-types">Basic Types</a></li>
+<li><a class="reference external" href="#relational-types">Relational Types</a><ul>
+<li><a class="reference external" href="#functional-field">Functional Field</a></li>
+<li><a class="reference external" href="#property-fields">Property Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="openerp_fields.html"
+                                  title="previous chapter">Fields Introduction</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="methods.html"
+                                  title="next chapter">ORM methods</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/developer/2_5_Objects_Fields_Methods/field_type.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="methods.html" title="ORM methods"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="openerp_fields.html" title="Fields Introduction"
+             >previous</a> |</li>
+
+          <li><a href="../index.html" >Developer Book</a> &raquo;</li>
+          <li><a href="index.html" >Objects, Fields and Methods</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="methods.html" title="ORM methods"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="openerp_fields.html" title="Fields Introduction"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Developer Book</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Objects, Fields and Methods</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

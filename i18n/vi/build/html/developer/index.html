@@ -1,0 +1,549 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Developer Book &mdash; Documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Documentation" href="../index.html" />
+    <link rel="next" title="Forewords" href="0_Foreword/index.html" />
+    <link rel="prev" title="Book Stores" href="../features/bookstores.html" />
+<script src="../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="0_Foreword/index.html" title="Forewords"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../features/bookstores.html" title="Book Stores"
+             accesskey="P">previous</a> |</li>
+ 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="0_Foreword/index.html" title="Forewords"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../features/bookstores.html" title="Book Stores"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Developer Book</a><ul>
+<li><a class="reference external" href="#part-1-getting-started-with-openerp">Part 1 : Getting Started with OpenERP</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-2-module-development">Part 2 : Module Development</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-3-business-process-development">Part 3 : Business Process Development</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-4-business-process-advance-configuration">Part 4 : Business Process Advance Configuration</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-5-migration-upgradation-testing">Part 5 : Migration, Upgradation, Testing</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-6-service-base-integration">Part 6 : Service base Integration</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-7-other-topics">Part 7 : Other Topics</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-8-appendices">Part 8 : Appendices</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../features/bookstores.html"
+                                  title="previous chapter">Book Stores</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="0_Foreword/index.html"
+                                  title="next chapter">Forewords</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/developer/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="developer-book">
+<span id="book-develop-link"></span><h1>Developer Book<a class="headerlink" href="#developer-book" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="0_Foreword/index.html">Forewords</a><ul>
+<li class="toctree-l2"><a class="reference external" href="0_Foreword/index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference external" href="0_Foreword/index.html#who-is-this-book-for">Who is this book for ?</a></li>
+<li class="toctree-l2"><a class="reference external" href="0_Foreword/index.html#content-of-the-book">Content of the book</a></li>
+<li class="toctree-l2"><a class="reference external" href="0_Foreword/index.html#about-the-author-s">About the author(s)</a></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="part-1-getting-started-with-openerp">
+<h2>Part 1 : Getting Started with OpenERP<a class="headerlink" href="#part-1-getting-started-with-openerp" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-1-getting-started-with-openerp" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="1_1_Introduction/index.html">Development Environment</a><ul>
+<li class="toctree-l2"><a class="reference external" href="1_1_Introduction/1_launchpad.html">Working with Launchpad</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_1_Introduction/3_configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_1_Introduction/4_command_line.html">Command line options</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_1_Introduction/5_start_stop.html">OpenERP Server and Web Client - Start/Stop</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_1_Introduction/6_shutdown_server.html">Shutting down the server</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="1_2_module_development/index.html">Modular Development Approach</a><ul>
+<li class="toctree-l2"><a class="reference external" href="1_2_module_development/1_server_module.html">OpenObject Server and Modules</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_2_module_development/2_module_integration.html">Module Integrations</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_2_module_development/3_Inheritance.html">Inheritance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="1_3_oo_architecture/index.html">OpenObject Architecture - Mvc</a><ul>
+<li class="toctree-l2"><a class="reference external" href="1_3_oo_architecture/mvc.html">MVC - Model, View, Controller</a></li>
+<li class="toctree-l2"><a class="reference external" href="1_3_oo_architecture/mvc_sql.html">MVCSQL</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-2-module-development">
+<h2>Part 2 : Module Development<a class="headerlink" href="#part-2-module-development" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-2-module-development" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="2_4_module_development/index.html">First Module to OpenERP</a><ul>
+<li class="toctree-l2"><a class="reference external" href="2_4_module_development/index.html#the-modules-introduction">The Modules - Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="2_5_Objects_Fields_Methods/index.html">Objects, Fields and Methods</a><ul>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/objects.html">OpenERP Objects</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/orm.html">The ORM - Object Relation Model</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/object_attributes.html">OpenERP Object Attributes</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/object_inherit.html">Object Inheritance - _inherit</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/object_inherits.html">Inheritance by Delegation - _inherits</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/openerp_fields.html">Fields Introduction</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/field_type.html">Type of Fields</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_5_Objects_Fields_Methods/methods.html">ORM methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="2_6_views_events/index.html">Views and Events</a><ul>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/view_intro.html">Introduction to Views</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/form_view.html">Form views</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/tree_view.html">Tree views</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/graph_view.html">Graph views</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/design_element.html">Design Elements</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/views/view_inheritence.html">Inheritance in Views</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_6_views_events/events/events.html">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="2_7_menu_action/index.html">Menu and Actions</a><ul>
+<li class="toctree-l2"><a class="reference external" href="2_7_menu_action/7_1_menus.html">Menus</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_7_menu_action/7_2_actions.html">Actions</a></li>
+<li class="toctree-l2"><a class="reference external" href="2_7_menu_action/7_3_security.html">Security</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-3-business-process-development">
+<h2>Part 3 : Business Process Development<a class="headerlink" href="#part-3-business-process-development" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-3-business-process-development" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="3_9_Workflow_Business_Process/index.html">Workflow-Business Process</a><ul>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#defining-workflow">Defining Workflow</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#general-structure-of-a-workflow-xml-file">General structure of a workflow XML file</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#activity">Activity</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#transition">Transition</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#expressions">Expressions</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#user-role">User Role</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#error-handling">Error handling</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_9_Workflow_Business_Process/index.html#creating-a-workflow">Creating a Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="3_10_wizard/index.html">Creating Wizard - (The Process)</a><ul>
+<li class="toctree-l2"><a class="reference external" href="3_10_wizard/index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_10_wizard/index.html#wizards-principles">Wizards - Principles</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_10_wizard/index.html#specification">Specification</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_10_wizard/index.html#add-a-new-wizard">Add A New Wizard</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_10_wizard/index.html#osv-memory-wizard-system">osv_memory Wizard System</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="3_11_reports/index.html">Reports</a><ul>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_1_openoffice_report.html">OpenOffice.org reports</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html">XSL:RML reports</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#reports-without-corporate-header">Reports without corporate header</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#each-report-with-its-own-corporate-header">Each report with its own corporate header</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#bar-codes">Bar Codes</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#how-to-add-a-new-report">How to add a new report</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#usual-tags">Usual TAGS</a></li>
+<li class="toctree-l2"><a class="reference external" href="3_11_reports/11_2_XSL-RML_reports.html#unicode-reports">Unicode reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="3_12_I18n/index.html">I18n - Internationalization</a><ul>
+<li class="toctree-l2"><a class="reference external" href="3_12_I18n/index.html#introduction">Introduction</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-4-business-process-advance-configuration">
+<h2>Part 4 : Business Process Advance Configuration<a class="headerlink" href="#part-4-business-process-advance-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-4-business-process-advance-configuration" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="4_13_server_action/index.html">Server Action</a><ul>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#client-action">Client Action</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#trigger">Trigger</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#email-action">Email Action</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#create-object">Create Object</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#write-object">Write Object</a></li>
+<li class="toctree-l2"><a class="reference external" href="4_13_server_action/index.html#multi-action">Multi Action</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="4_14_dashboard/index.html">Dashboard</a></li>
+</ul>
+</div>
+<div class="section" id="part-5-migration-upgradation-testing">
+<h2>Part 5 : Migration, Upgradation, Testing<a class="headerlink" href="#part-5-migration-upgradation-testing" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-5-migration-upgradation-testing" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="5_17_data_migration/index.html">Data Migration - Import / Export</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_17_data_migration/18_1_data_importing.html">Data Importation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_18_upgrading_server/index.html">Upgrading Server, Modules</a></li>
+<li class="toctree-l1"><a class="reference external" href="5_20_unit_testing/index.html">Unit testing</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#generalities">Generalities</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#using-unit-tests">Using unit tests</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#assert-tag">Assert Tag</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#workflow-tag">Workflow Tag</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#function-tag">Function Tag</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="5_20_unit_testing/index.html#acceptance-testing">Acceptance testing</a><ul>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#integrity-tests-on-migrations">Integrity tests on migrations</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#workflow-tests">Workflow tests</a></li>
+<li class="toctree-l2"><a class="reference external" href="5_20_unit_testing/index.html#record-creation">Record creation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-6-service-base-integration">
+<h2>Part 6 : Service base Integration<a class="headerlink" href="#part-6-service-base-integration" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-6-service-base-integration" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="6_21_web_services/index.html">Working with Web Services</a><ul>
+<li class="toctree-l2"><a class="reference external" href="6_21_web_services/index.html#how-to-load-data">How to load data ?</a></li>
+<li class="toctree-l2"><a class="reference external" href="6_21_web_services/index.html#the-objects-methods">The objects methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="6_22_XML-RPC_web_services/index.html">XML-RPC Web services</a><ul>
+<li class="toctree-l2"><a class="reference external" href="6_22_XML-RPC_web_services/index.html#interfaces">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference external" href="6_22_XML-RPC_web_services/index.html#python-example">Python Example</a></li>
+<li class="toctree-l2"><a class="reference external" href="6_22_XML-RPC_web_services/index.html#php-example">PHP Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-7-other-topics">
+<h2>Part 7 : Other Topics<a class="headerlink" href="#part-7-other-topics" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-7-other-topics" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="7_23_RAD_tools/index.html">RAD Tools</a><ul>
+<li class="toctree-l2"><a class="reference external" href="7_23_RAD_tools/index.html#dia">DIA</a></li>
+<li class="toctree-l2"><a class="reference external" href="7_23_RAD_tools/index.html#open-office-report-designer">Open Office Report Designer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-8-appendices">
+<h2>Part 8 : Appendices<a class="headerlink" href="#part-8-appendices" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/part-8-appendices" ></div><ul>
+<li class="toctree-l1"><a class="reference external" href="Appendices/index.html">Appendices Index</a><ul>
+<li class="toctree-l2"><a class="reference external" href="Appendices/code_convention.html">Appendices A : Coding Conventions</a></li>
+<li class="toctree-l2"><a class="reference external" href="Appendices/appendices_b.html">Releasing a module</a></li>
+<li class="toctree-l2"><a class="reference external" href="Appendices/appendices_b.html#translations">Translations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Developer Book</a><ul>
+<li><a class="reference external" href="#part-1-getting-started-with-openerp">Part 1 : Getting Started with OpenERP</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-2-module-development">Part 2 : Module Development</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-3-business-process-development">Part 3 : Business Process Development</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-4-business-process-advance-configuration">Part 4 : Business Process Advance Configuration</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-5-migration-upgradation-testing">Part 5 : Migration, Upgradation, Testing</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-6-service-base-integration">Part 6 : Service base Integration</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-7-other-topics">Part 7 : Other Topics</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#part-8-appendices">Part 8 : Appendices</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../features/bookstores.html"
+                                  title="previous chapter">Book Stores</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="0_Foreword/index.html"
+                                  title="next chapter">Forewords</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/developer/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="0_Foreword/index.html" title="Forewords"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../features/bookstores.html" title="Book Stores"
+             >previous</a> |</li>
+ 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="0_Foreword/index.html" title="Forewords"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="../features/bookstores.html" title="Book Stores"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../index.html">Documentation</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,463 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sales Quotations &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Management of Sales" href="index.html" />
+    <link rel="next" title="Management of Packaging" href="6_16_Sales_packing.html" />
+    <link rel="prev" title="Management of Sales" href="index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_packing.html" title="Management of Packaging"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Management of Sales"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_packing.html" title="Management of Packaging"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Management of Sales"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Sales Quotations</a><ul>
+<li><a class="reference external" href="#entering-quotation-details">Entering Quotation details</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Management of Sales</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="6_16_Sales_packing.html"
+                                  title="next chapter">Management of Packaging</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/6/6_16_Sales/6_16_Sales_quotations.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sales-quotations">
+<h1>Sales Quotations<a class="headerlink" href="#sales-quotations" title="Permalink to this headline">¶</a></h1>
+<p>In Open ERP a quotation and an order are handled by the same underlying object, but in different states. You
+can consider an order to be a quotation that has evolved because it has been confirmed by the
+customer. Or, conversely, that a quotation is an order that hasn&#8217;t yet been validated or cancelled.
+All of the orders and quotations in the system can be reached using the menu <em>Sales
+Management ‣ Orders</em>.</p>
+<div class="section" id="entering-quotation-details">
+<h2>Entering Quotation details<a class="headerlink" href="#entering-quotation-details" title="Permalink to this headline">¶</a></h2>
+<div class="js-kit-comments" path="/entering-quotation-details" ></div><p>To enter details of a new quotations you can use the menu <em>Sales Management ‣
+Orders ‣ New Quotation</em>. Open ERP then opens a new window so that you can enter data into new
+blank quotation form.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/sale_quotation_new.png"><img alt="../../../_images/sale_quotation_new.png" src="../../../_images/sale_quotation_new.png" style="width: 511.5px; height: 522.0px;" /></a>
+<p class="caption"><em>Data entry for a new quotation</em></p>
+</div>
+<p>Some information is automatically completed by the system:</p>
+<ul class="simple">
+<li>an internal reference for the quotation or order,</li>
+<li>the sale point that the order will be delivered from,</li>
+<li>the order date.</li>
+</ul>
+<p>You can modify any of that information before validating the quotation. The customer
+reference is shown in the header of the order. This optional field if for the customer&#8217;s own reference
+number – if the customer doesn&#8217;t supply one then just leave it empty.</p>
+<p>You then enter all the data about the order in the <strong>Sale Order</strong> tab. Start by entering
+the customer name, selecting the correct customer from the list of customers in the system. You can
+create a new customer on the fly at this stage if necessary – press <tt class="docutils literal"><span class="pre">&lt;F1&gt;</span></tt> in the empty
+<strong>Customer</strong> field to do that.</p>
+<p>Once the customer name has been selected, different fields of the order become completed
+automatically, based on the configuration of the partner form for that customer:</p>
+<ul class="simple">
+<li><strong>Order Address</strong> : person handling the order at the customer. By default, Open ERP
+proposes the Contact Address at the selected partner.</li>
+<li><strong>Delivery Address</strong> : address used on the delivery order. By default, Open ERP proposes
+the Delivery address from the partner form. If nothing is defined in that slot, it uses the default
+address instead.</li>
+<li><strong>Invoice Address</strong> : address used to send the invoice to the customer. By default, Open
+ERP proposes the address labelled <strong>Invoice</strong> from the partner form. If nothing is defined there,
+it uses the default address instead.</li>
+<li><strong>Price List</strong> : will determine both the currency of the quotation and the price that will
+be used for each product.</li>
+<li><strong>Payment Conditions</strong> : shows the payment method that the customer will follow, for example
+<tt class="docutils literal"><span class="pre">50%</span> <span class="pre">on</span> <span class="pre">order,</span> <span class="pre">50%</span> <span class="pre">on</span> <span class="pre">delivery</span></tt> .</li>
+<li><strong>Delivery Method</strong> : for example <tt class="docutils literal"><span class="pre">Post</span> <span class="pre">–</span> <span class="pre">Express</span> <span class="pre">Mail</span></tt> .</li>
+</ul>
+<p>You can modify any of these fields on the order as you go.</p>
+<p>You can also set an analytic account for your order. This account will be used during invoicing
+to generate accounting entries corresponding to the invoice automatically. This is extremely useful
+for assigning revenues to the project or case specified by this order.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Analytic Accounts</p>
+<p class="last">If you&#8217;re managing by task, the analytic account to be selected is the one that corresponds to
+the project for the order.
+The sale carried out by the order can be allocated to the project so that profitability
+calculations can be made.</p>
+</div>
+<p>Once the information has been entered, you can enter data for the order lines. To do that, create a
+new order line as shown in the figure <a class="reference internal" href="#fig-slinf"><em>Entering a new customer order line</em></a>:</p>
+<div align="center" class="figure" id="fig-slinf">
+<a class="reference external image-reference" href="../../../_images/sale_line_form.png"><img alt="../../../_images/sale_line_form.png" src="../../../_images/sale_line_form.png" style="width: 472.5px; height: 471.75px;" /></a>
+<p class="caption"><em>Entering a new customer order line</em></p>
+</div>
+<p>First of all select the product that is to be sold to the customer. Open ERP shows some
+useful information in the list of products to help you during your sale:</p>
+<ul class="simple">
+<li><strong>Real stock</strong> : physically present in your warehouses. This value depends on the sale
+point selected in the order header. Different sale points can be linked to different warehouses,
+giving different stock levels, or can use the same warehouse.</li>
+<li><strong>Virtual stock</strong> : shows a salesperson the quantity that can be sold, taking into account
+both stock reserved for other orders and amounts that could arrive in the short term.</li>
+<li><strong>Customer Price</strong> : (May not be shown, depending on the installed modules). depends on the conditions attached to the customer, calculated on the
+list price. This is the price that&#8217;s proposed by default in the customer quotation, unless it&#8217;s been
+modified by the salesperson.</li>
+<li><strong>List Price</strong> : the base sale price for the given product. It provides a base for the
+salesperson to be able to judge whether to offer a discount to the customer, and how much any
+discount should be.</li>
+<li><strong>Cost Price</strong> : shows the cost price of the product. If the salesperson sells at less
+than this amount, then the company loses money.</li>
+</ul>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/sale_product_list.png"><img alt="../../../_images/sale_product_list.png" src="../../../_images/sale_product_list.png" style="width: 558.75px; height: 327.75px;" /></a>
+<p class="caption"><em>Selecting a product in a Sales Order</em></p>
+</div>
+<p>When the product that&#8217;s to be sold to the customer has been selected, Open ERP automatically
+completes all the other required fields: price, unit of measure, description, discount, lead times,
+applicable taxes, default packaging and the product description. All of this information comes from
+the product form.</p>
+<span class="target" id="index-344"></span><div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Visible Discount</p>
+<p class="last">If a discounted price is taken from a price list then by default that figure is shown as the
+sale price to the customer. He&#8217;ll see a discount of 0% along with unit price that is different
+from the list price.
+If you install the module <a title="Visible Discount Module" class="reference external" href="../../../technical_guide/product_visible_discount.html#module-product_visible_discount"><tt class="xref docutils literal"><span class="pre">product_visible_discount</span></tt></a> from addons-extra
+you can configure whether you want to make the discount
+explicitly visible on an order form as a percentage difference from the list price,
+or just show a reduced unit price as it does by default.</p>
+</div>
+<p>In the form, the selected product is presented in the language of the user so that he can see
+what he&#8217;s selling. The description of the product sold can also be expressed in the customer&#8217;s language.
+The translation to the customer&#8217;s language is used on the quotation or order when it&#8217;s printed.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/sale_line_translation.png"><img alt="../../../_images/sale_line_translation.png" src="../../../_images/sale_line_translation.png" style="width: 600.0px; height: 450.0px;" /></a>
+<p class="caption"><em>Sale of a product in a partner language that differs from the user language</em></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>One-off Sales</p>
+<p class="last">If a product&#8217;s only sold to a customer once, you don&#8217;t have to enter data into a complete new
+product form just for that sale.
+You can manually complete all the information in the order without putting it into a product:
+description, price, quantity, lead time, taxes.
+In this case Open ERP won&#8217;t generate a delivery note because the product isn&#8217;t held in stock.</p>
+</div>
+<p>When all of the products are entered, you can print the quotation and send it to the customer. To do
+this, click on the report <strong>Quotation / Order</strong> in the <strong>REPORTS</strong> links to the right.
+Open ERP opens the quotation in PDF to enable to you to see it before printing.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/sale_print.png"><img alt="../../../_images/sale_print.png" src="../../../_images/sale_print.png" style="width: 546.0px; height: 471.75px;" /></a>
+<p class="caption"><em>Printing a customer quotation</em></p>
+</div>
+<p>You can then confirm the quotation to move it on to an order if the order is confirmed by the
+customer, or just cancel the window without confirming the order to leave it in quotation state. To
+find all of the current quotations, you can use the menu <em>Sales Management ‣ Orders
+‣ My Orders ‣ My Quotations</em>.</p>
+<p>To follow the process for your order, you can click on the process view from the order form. Open
+ERP shows you an interactive process view of that order. For more information about its use,
+look at <a class="reference external" href="../../7/7_18_Process/index.html#ch-process"><em>Process</em></a>.</p>
+<div align="center" class="figure">
+<a class="reference external image-reference" href="../../../_images/sale_process.png"><img alt="../../../_images/sale_process.png" src="../../../_images/sale_process.png" style="width: 768.0px; height: 486.75px;" /></a>
+<p class="caption"><em>Process view from following a customer order</em></p>
+</div>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Sales Quotations</a><ul>
+<li><a class="reference external" href="#entering-quotation-details">Entering Quotation details</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Management of Sales</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="6_16_Sales_packing.html"
+                                  title="next chapter">Management of Packaging</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/6/6_16_Sales/6_16_Sales_quotations.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_packing.html" title="Management of Packaging"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Management of Sales"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" >Management of Sales</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="6_16_Sales_packing.html" title="Management of Packaging"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Management of Sales"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Sales and Purchasing</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Management of Sales</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>

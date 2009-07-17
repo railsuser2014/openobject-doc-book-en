@@ -1,0 +1,480 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Use case &mdash; Documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="top" title="Documentation" href="../../../index.html" />
+    <link rel="up" title="Developing a real case" href="index.html" />
+    <link rel="next" title="Database setup" href="1_3_Real_Case_db_setup.html" />
+    <link rel="prev" title="Developing a real case" href="index.html" />
+<script src="../../../_static/tiny_js_kit_comment_control.js" type="text/javascript"></script>
+
+
+
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="1_3_Real_Case_db_setup.html" title="Database setup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Developing a real case"
+             accesskey="P">previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Developing a real case</a> &raquo;</li> 
+      </ul>
+    </div>
+  <div class="openobject-header">
+    <table cellspacing="0" cellpadding="0" border="0" width="1004">
+      <tbody>
+        <tr>
+           <td width="202" class="headerpic">
+            <a alt="Open Object - Free Management Solution Logo" href="http://openerp.com">
+              <img border="0" src="../../../_static/openerp.jpg"/>
+            </a>
+          </td>
+         <td width="335" class="headerpic">
+            <div align="right"><img src="../../../_static/headerpic.jpg" width="242" height="68" /></div>
+          </td>
+          <td width="440" valign="top" align="right">
+            <table id="Table_01" height="37" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="greycurveleft" width="23px" height="37px"></td>
+                <td width="107" class="headerlinkgrey">
+                  <div class="headerlink" align="center"><a href="http://openerp.com"><strong>OpenERP</strong></a></div>
+                </td>
+                <td width="22px" height="37px" class="greyredcurve"></td>
+                <td width="125" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://ondemand.openerp.com"><strong>OnDemand</strong></a></div>
+                </td>
+                <td width="20" height="37" class="redcurve">&nbsp;</td>
+                <td width="139" height="37" class="redline">
+                  <div class="headerlink" align="center"><a href="http://openobject.com"><strong>Community</strong></a></div>
+                </td>
+                <td width="16" height="37"><img src="../../../_static/curve.gif"/></td>
+              </tr>
+            </table>
+            <p class="fortune">Best-selling book on enterprise management</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="openobject-navbar">
+    <table width="1004" border="0" cellspacing="0" cellpadding="0" id="menu-header">
+      <tr>
+        <td width="230" id="menu-header" nowrap="nowrap">&nbsp;</td>
+        <td id="menu-breadcrumb" nowrap="nowrap">
+          
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right">
+          <select id="comments_control">
+            <option value="">comments control</option>
+            <option value="HIDE">hide</option>
+            <option value="SHOW">show</option>
+          </select>
+        </li>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="1_3_Real_Case_db_setup.html" title="Database setup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Developing a real case"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Developing a real case</a> &raquo;</li> 
+      </ul>
+    </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Use case</a></li>
+<li><a class="reference external" href="#functional-requirements">Functional requirements</a></li>
+<li><a class="reference external" href="#database-creation">Database creation</a></li>
+<li><a class="reference external" href="#installing-and-configuring-modules">Installing and configuring modules</a></li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Developing a real case</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="1_3_Real_Case_db_setup.html"
+                                  title="next chapter">Database setup</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_3_Real_Case/1_3_Real_Case_use_case.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="use-case">
+<h1>Use case<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h1>
+<p>Configure a system that enables you to:</p>
+<ul class="simple">
+<li>buy products from a supplier,</li>
+<li>stock the products in a warehouse,</li>
+<li>sell these products to a customer.</li>
+</ul>
+<p>The system should support all aspects of invoicing, payments to suppliers and receipts from
+customers.</p>
+</div>
+<div class="section" id="functional-requirements">
+<h1>Functional requirements<a class="headerlink" href="#functional-requirements" title="Permalink to this headline">¶</a></h1>
+<p>For working out the business case you&#8217;ll have to model:</p>
+<ul class="simple">
+<li>the suppliers,</li>
+<li>the customers,</li>
+<li>some products,</li>
+<li>inventory for despatch,</li>
+<li>a purchase order,</li>
+<li>a sale order,</li>
+<li>invoices,</li>
+<li>payments.</li>
+</ul>
+<p>To test the system you&#8217;ll need at least one supplier, one customer, one product, a warehouse, a
+minimal chart of accounts and a bank account.</p>
+</div>
+<div class="section" id="database-creation">
+<h1>Database creation<a class="headerlink" href="#database-creation" title="Permalink to this headline">¶</a></h1>
+<p>Use the technique outlined in <a class="reference external" href="../1_1_Inst_Config/1_1_Inst_Config_db_create.html#sect-dbcreate"><em>Database creation</em></a> to create a new database, <tt class="docutils literal"><span class="pre">openerp_ch03</span></tt> . This
+database will be free of data and contain the least possible amount of functionality as a starting
+point. You&#8217;ll need to know your super administrator password for this – or you&#8217;ll have to find
+somebody who does have it to create this seed database. You won&#8217;t be able to use the <tt class="docutils literal"><span class="pre">openerp_ch1</span></tt>  or <tt class="docutils literal"><span class="pre">openerp_ch2</span></tt>  databases that you might have created so far in this book
+because they both contain demonstration data.</p>
+<p>Start the database creation process from the <strong>Welcome</strong> page by clicking
+<strong>Databases</strong> and then completing the following fields on the <strong>Create new database</strong> form, as shown in <a class="reference internal" href="#fig-oech03"><em>Creating a blank database</em></a>:</p>
+<ul class="simple">
+<li><strong>Super admin password</strong> : by default it&#8217;s <tt class="docutils literal"><span class="pre">admin</span></tt> , if you or your system
+administrator haven&#8217;t changed it,</li>
+<li><strong>New database name</strong> : <tt class="docutils literal"><span class="pre">openerp_ch03</span></tt> ,</li>
+<li><strong>Load Demonstration data</strong> checkbox: <tt class="docutils literal"><span class="pre">not</span> <span class="pre">checked</span></tt> (<strong>this step is very important, but catches out many people</strong>),</li>
+<li><strong>Default Language</strong> : <tt class="docutils literal"><span class="pre">English</span></tt> ,</li>
+<li><strong>Administrator password</strong> : <tt class="docutils literal"><span class="pre">admin</span></tt> (because it&#8217;s easiest to remember at this stage, but obviously completely insecure),</li>
+<li><strong>Confirm password</strong> : <tt class="docutils literal"><span class="pre">admin</span></tt> .</li>
+</ul>
+<div align="center" class="figure" id="fig-oech03">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03.png"><img alt="../../../_images/openerp_ch03.png" src="../../../_images/openerp_ch03.png" style="width: 600.0px; height: 375.0px;" /></a>
+<p class="caption"><em>Creating a blank database</em></p>
+</div>
+<p>Then click <strong>OK</strong> to create the database and move to the setup screen <a class="reference internal" href="#fig-oech03s1"><em>Setting up a blank database - first screen</em></a>.</p>
+<div align="center" class="figure" id="fig-oech03s1">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03_s1.png"><img alt="../../../_images/openerp_ch03_s1.png" src="../../../_images/openerp_ch03_s1.png" style="width: 600.0px; height: 339.75px;" /></a>
+<p class="caption"><em>Setting up a blank database - first screen</em></p>
+</div>
+<p>After a short delay you are connected to the new <tt class="docutils literal"><span class="pre">openerp_ch03</span></tt>  database as user <tt class="docutils literal"><span class="pre">admin</span></tt>with the password you gave it. You&#8217;ll have to go through the Setup wizard in steps:</p>
+<blockquote>
+<ol class="arabic simple">
+<li><strong>Select a profile</strong> : select <tt class="docutils literal"><span class="pre">Minimal</span> <span class="pre">Profile</span></tt> and click <strong>Next</strong>.</li>
+<li>At the <strong>Define Main Company</strong> step you could select your own <strong>Company Name</strong> and
+<strong>Currency</strong>, and address details on the first tab <strong>General Information</strong>;
+and you can add more details on the second tab <strong>Report Information</strong> including a logo
+that would appear on reports. In this test you should leave everything untouched for the moment
+and just click <strong>Next</strong>: you&#8217;ll change them later.</li>
+<li>At the <strong>Summary</strong> page you can go back to change details if you need.
+Click the <strong>Install</strong> button.</li>
+<li>Finally, at the <strong>Installation done</strong> page, click <strong>Start Configuration</strong>.</li>
+</ol>
+</blockquote>
+<p>Configuration consists of a set of wizards that help you through options for the installed modules.
+Since you chose the minimal database hardly anything is installed so this is a very simple process
+at the moment, starting with the menu layout <a class="reference internal" href="#fig-oech03cfg"><em>Configuring a minimal database - first screen</em></a> .</p>
+<div align="center" class="figure" id="fig-oech03cfg">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03_config.png"><img alt="../../../_images/openerp_ch03_config.png" src="../../../_images/openerp_ch03_config.png" style="width: 600.0px; height: 270.75px;" /></a>
+<p class="caption"><em>Configuring a minimal database - first screen</em></p>
+<div class="legend">
+<blockquote>
+<ol class="arabic simple">
+<li>At the first screen click <strong>Continue</strong> to go into the first wizard.
+Choose <strong>View Mode</strong> : <strong>Extended Interface</strong> so that you can see everything
+and then click <strong>Set</strong> to save it.</li>
+<li>Click <strong>Skip Step</strong> to step over the next wizard, which would enable you to add other users.</li>
+<li>You&#8217;ve now reached the end of the configuration so click <strong>Continue</strong> to start using the
+system as the Administrator as shown in the screenshot <a class="reference internal" href="#fig-oech03st"><em>Starting the minimal database</em></a>.</li>
+</ol>
+</blockquote>
+</div>
+</div>
+<div align="center" class="figure" id="fig-oech03st">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03_start.png"><img alt="../../../_images/openerp_ch03_start.png" src="../../../_images/openerp_ch03_start.png" style="width: 600.0px; height: 270.75px;" /></a>
+<p class="caption"><em>Starting the minimal database</em></p>
+</div>
+</div>
+<div class="section" id="installing-and-configuring-modules">
+<h1>Installing and configuring modules<a class="headerlink" href="#installing-and-configuring-modules" title="Permalink to this headline">¶</a></h1>
+<p>All of the functional needs are provided by core modules from Open&nbsp;ERP:</p>
+<span class="target" id="index-82"></span><ul class="simple">
+<li>product management (the <a title="Products &amp; Pricelists (Official, Quality Certified)" class="reference external" href="../../../technical_guide/product.html#module-product"><tt class="xref docutils literal"><span class="pre">product</span></tt></a> module),</li>
+<li>inventory control (the <a title="Stock Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/stock.html#module-stock"><tt class="xref docutils literal"><span class="pre">stock</span></tt></a> module),</li>
+<li>accounting and finance (the <a title="Accounting and financial management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/account.html#module-account"><tt class="xref docutils literal"><span class="pre">account</span></tt></a> module),</li>
+<li>purchase management (the <a title="Purchase Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/purchase.html#module-purchase"><tt class="xref docutils literal"><span class="pre">purchase</span></tt></a> module),</li>
+<li>sales management (the <a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a> module).</li>
+</ul>
+<p>Use the menu <em>Administration ‣ Modules Management ‣ Modules ‣ Uninstalled
+modules</em> to show the list of all modules that are registered within Open&nbsp;ERP but as yet
+uninstalled. Then:</p>
+<ol class="arabic simple">
+<li>Enter <tt class="docutils literal"><span class="pre">product</span></tt> into the <strong>Name</strong> field and click <strong>Filter</strong> to list the
+<a title="Products &amp; Pricelists (Official, Quality Certified)" class="reference external" href="../../../technical_guide/product.html#module-product"><tt class="xref docutils literal"><span class="pre">product</span></tt></a> module.</li>
+<li>Click the name <tt class="docutils literal"><span class="pre">product</span></tt> in the list to display the product module in form view, rather
+than the list view that a search displays.</li>
+<li>Click the <strong>Schedule for Installation</strong> button on the product module form.</li>
+<li>Click the <strong>Search</strong> button at the top of the form to toggle back to the list view with
+search selection fields on it.</li>
+<li>Search for the <a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a> module then select it, too, as you did with product, to show it in form
+view.</li>
+<li>Click the <strong>Dependencies</strong> tab to see that you&#8217;ll automatically be loading the <a title="Products &amp; Pricelists (Official, Quality Certified)" class="reference external" href="../../../technical_guide/product.html#module-product"><tt class="xref docutils literal"><span class="pre">product</span></tt></a>, <a title="Stock Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/stock.html#module-stock"><tt class="xref docutils literal"><span class="pre">stock</span></tt></a>, <a title="Manufacturing Resource Planning (Official, Quality Certified)" class="reference external" href="../../../technical_guide/mrp.html#module-mrp"><tt class="xref docutils literal"><span class="pre">mrp</span></tt></a>, and <a title="Enterprise Process (Official, Quality Certified)" class="reference external" href="../../../technical_guide/process.html#module-process"><tt class="xref docutils literal"><span class="pre">process</span></tt></a> modules along with the
+<a title="Sales Management (Official, Quality Certified)" class="reference external" href="../../../technical_guide/sale.html#module-sale"><tt class="xref docutils literal"><span class="pre">sale</span></tt></a> module. <a title="Products &amp; Pricelists (Official, Quality Certified)" class="reference external" href="../../../technical_guide/product.html#module-product"><tt class="xref docutils literal"><span class="pre">product</span></tt></a> and <a title="Enterprise Process (Official, Quality Certified)" class="reference external" href="../../../technical_guide/process.html#module-process"><tt class="xref docutils literal"><span class="pre">process</span></tt></a> are both already marked for
+installation as a result of the first steps.</li>
+<li>Return to the <strong>Module</strong> tab and then click its <strong>Schedule for Installation</strong> button.</li>
+<li>Click <strong>Apply Scheduled Upgrades</strong> in the <strong>Action</strong> toolbar to the right.</li>
+<li>When the <strong>System Upgrade</strong> form appears, review the list of Modules to update – it
+may be longer than you had expected, and now includes all the modules you need, because the
+dependencies themselves had their own dependencies.</li>
+<li>Click <strong>Start Upgrade</strong>, wait for <strong>System upgrade done</strong> to be displayed, then
+click <strong>Start Configuration</strong> on that form.</li>
+</ol>
+<p>Configuration is required for both the accounts setup and the sales defaults.</p>
+<ol class="arabic simple">
+<li>Accept the defaults for the <strong>Fiscal Year</strong> and choose the
+<strong>Charts of Account</strong> to be <strong>None</strong> then click
+<strong>Continue</strong>.</li>
+<li>The sales defaults are shown in the screenshot <a class="reference internal" href="#fig-oech03cfss"><em>The module form once a module is installed</em></a>. The selections you make
+determine how Open ERP&#8217;s processes work by setting its default behaviour
+(although you can override any of them for any sales order,
+so you are not strictly bound by these defaults).
+Accept the initial set by clicking <strong>Set default behaviour</strong>.</li>
+<li>You&#8217;ve reached the end of this configuration stage so click <strong>Continue</strong> to continue using the
+system as the Administrator. You first reach a new tab <strong>Features</strong> that lists the new menus
+and views as shown in the figure <a class="reference internal" href="#fig-oech03cfss"><em>The module form once a module is installed</em></a>. Each of the modules that were installed
+has its own new tab - it&#8217;s not only the one you see displayed in front of you. Click <strong>Next</strong>
+and <strong>Previous</strong> to move between them.</li>
+<li>The main menu now displays all of the menu items that were loaded by the modules you installed.
+Click <strong>MAIN MENU</strong> to see this, shown in the screenshot <a class="reference internal" href="#fig-oech03mm"><em>Continuing with the database after installing new modules</em></a>.</li>
+</ol>
+<div align="center" class="figure" id="fig-oech03cfss">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03_setsales.png"><img alt="../../../_images/openerp_ch03_setsales.png" src="../../../_images/openerp_ch03_setsales.png" style="width: 600.0px; height: 216.0px;" /></a>
+<p class="caption"><em>The module form once a module is installed</em></p>
+</div>
+<div align="center" class="figure" id="fig-oech03mm">
+<a class="reference external image-reference" href="../../../_images/openerp_ch03_main.png"><img alt="../../../_images/openerp_ch03_main.png" src="../../../_images/openerp_ch03_main.png" style="width: 600.0px; height: 468.75px;" /></a>
+<p class="caption"><em>Continuing with the database after installing new modules</em></p>
+</div>
+</div>
+
+
+            <br />
+            <div class="js-kit-comments" permalink=""></div>
+            <script src="http://js-kit.com/comments.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Use case</a></li>
+<li><a class="reference external" href="#functional-requirements">Functional requirements</a></li>
+<li><a class="reference external" href="#database-creation">Database creation</a></li>
+<li><a class="reference external" href="#installing-and-configuring-modules">Installing and configuring modules</a></li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Developing a real case</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="1_3_Real_Case_db_setup.html"
+                                  title="next chapter">Database setup</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../../_sources/book/1/1_3_Real_Case/1_3_Real_Case_use_case.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<h3>Open ERP Books</h3><br />
+<table cellpading="10px" cellspacing="10px" style="border: 1px solid #98DBCC;" align="center" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center">
+   <span style="text-align:center;">
+<iframe src="http://rcm-fr.amazon.fr/e/cm?t=fabsblo-21&o=8&p=8&l=as1&asins=2212122616&fc1=000000&IS2=
+1&lt1=_blank&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1" style="width:120px;height:240px;text-align:center;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</span>
+   </td>
+  </tr>
+  <tr> 
+  <td align="center">
+<a href="http://www.openerp.com/buy.html?page=shop.product_details&amp;flypage=openerp.tpl&amp;product_id=36&amp;category_id=8" title="Open ERP for Retail and Industrial Management" style="border:none;"><img src="http://www.openerp.com/components/com_virtuemart/shop_image/product/Open_ERP_for_Ret_4a1a9e3e3dec5.png" width="100px" height="134px" style="border:none; text-align:center;"></a>
+<p style="font-size:10px;">Retail and Industrial Management, steps towards Sales, Logistics and Manufacturing Integration in the Open Source & Management Collection.</p>
+</span>
+</td>
+</tr>
+</table>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="1_3_Real_Case_db_setup.html" title="Database setup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Developing a real case"
+             >previous</a> |</li>
+
+          <li><a href="../../index.html" >Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" >First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" >Developing a real case</a> &raquo;</li> 
+      </ul>
+    </div>
+
+
+    <div class="related-tiny">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I" class="bottom-nav-links" >index</a></li>
+        <li class="right" >
+          <a href="../../../modindex.html" title="Global Module Index"
+             accesskey="M" class="bottom-nav-links" >modules</a> |</li>
+        <li class="right" >
+          <a href="1_3_Real_Case_db_setup.html" title="Database setup"
+             accesskey="N" class="bottom-nav-links" >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Developing a real case"
+             accesskey="P" class="bottom-nav-links" >previous</a> |</li>
+        <li><a href="../../../index.html">Documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Open ERP Book</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">First steps with Open&nbsp;ERP</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Developing a real case</a> &raquo;</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; <a href="../../../copyright.html">Copyright</a> .
+      Last updated on 2009-07-16.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+  var pageTracker = _gat._getTracker("UA-7333765-8");
+  pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+  </body>
+</html>
