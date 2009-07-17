@@ -48,15 +48,16 @@
   %\gdef\@thanks{}\gdef\@author{}\gdef\@title{}
 }
 
-%% \let\py@OldTableofcontents=\tableofcontents
-%% \renewcommand{\tableofcontents}{
-%%   \begingroup
-%%     \parskip = 0mm
-%%     \py@OldTableofcontents
-%%   \endgroup
-%%   \rule{\textwidth}{1pt}
-%%   \vspace{12pt}
-%% }  
+\let\py@OldTableofcontents=\tableofcontents
+\renewcommand{\tableofcontents}{
+  \begingroup
+    \parskip = 0mm
+    \py@OldTableofcontents
+  \endgroup
+  \newpage
+%%  \rule{\textwidth}{1pt}
+  \vspace{12pt}
+}
 
 \@ifundefined{fancyhf}{
   \pagestyle{plain}}{
@@ -64,3 +65,4 @@
 \pagenumbering{arabic}		% ToC & chapters
 
 \thispagestyle{empty}
+
