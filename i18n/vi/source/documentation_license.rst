@@ -308,12 +308,11 @@ Trái lại, cộng đồng đóng một vai trò rất quan trọng, với nh�
 .. i18n: work on errata in the wiki. Community will be able to propose improvement
 .. i18n: through the errata section.
 
-To improve the quality of books versions after versions, we will extensively
-work on errata in the wiki. Community will be able to propose improvement
-through the errata section.
+Để nâng cao chất lượng quyển sách quả từng phiên bản, chúng tôi sẽ tích cực theo dõi
+phần còn thảo luận trên wiki. Cộng đồng có thể đề xuất các cải thiện cho các phần này.
 
 .. i18n: Allowing everyone to contribute in errata instead of directly in the content
 .. i18n: allows us to keep into control on the quality of our documentations.
 
-Allowing everyone to contribute in errata instead of directly in the content
-allows us to keep into control on the quality of our documentations.
+Cho phép mọi người đóng góp vào phần thảo luận thay vì trực tiếp đóng góp vào nội dung
+sẽ giúp chúng tôi quản lý hiệu quả chất lượng các tài liệu.
