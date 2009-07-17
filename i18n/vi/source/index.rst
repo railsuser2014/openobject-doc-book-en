@@ -12,7 +12,7 @@
 .. i18n: %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-Open Object Documentation
+Tài liệu hướng dẫn Open Object
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 .. i18n: .. raw:: html
@@ -68,12 +68,12 @@ Open Object Documentation
 
   <br/>
   <div class="tip">
-  These best-sellers books present a new integrated approach to enterprise management and
-  best development practices. You can have a look at our <a
-  href="http://openerp.com/buy/books.html">printed
-  books</a> or <a href="http://openerp.com/buy/e-book.html">PDF's version</a>.
+  Những cuốn best-sellers này giới thiệu một phương pháp tiếp cận mới đối với vấn đề quản trị công ty
+  kinh doanh và sản xuất. Bạn có thể mua <a
+  href="http://openerp.com/buy/books.html">sách
+  in</a> hoặc đọc <a href="http://openerp.com/buy/e-book.html">bản PDF</a>.
   <br/>
-  We are looking for translators, <a href="http://doc.openerp.com/contribute/documentation_translation.html">read this</a> to contribute.</a>.  </div>
+  Chúng tôi đang cần dịch tài liệu sang nhiều ngôn ngữ, <a href="http://doc.openerp.com/contribute/documentation_translation.html">đọc để biết cách đóng góp</a>.  </div>
   <br/>
   <br/>
 
@@ -109,35 +109,35 @@ Open Object Documentation
 .. table::
   :class: main-content-presentation
 
-  +--------------------------------------------------------------+--------------------------------------------------+
-  |                                                              |                                                  |
-  |  :ref:`Open ERP Tutorial <books-link>`                       |  :ref:`Developer Book <book-develop-link>`       |
-  |                                                              |                                                  |
-  |  A best-seller book about enterprise management              |  Develop your own modules on Open Object         |
-  |                                                              |                                                  |
-  +--------------------------------------------------------------+--------------------------------------------------+
-  |                                                              |                                                  |
-  |  :ref:`Installation Manuals <installation-link>`             |  :ref:`Community Book <how-to-contribute-link>`  |
-  |                                                              |                                                  |
-  |  Manuals to install Open ERP and Open Object                 |  The Open Object community organisation          |
-  |                                                              |                                                  |
-  +--------------------------------------------------------------+--------------------------------------------------+
-  |                                                              |                                                  |
-  |  :ref:`Business Intelligence <book-bi-link>`                 |  :ref:`Open ERP Features <features-link>`        |
-  |                                                              |                                                  |
-  |  Business Intelligence with Open Object                      |  A summary of main Open ERP features             |
-  |                                                              |                                                  |
-  +--------------------------------------------------------------+--------------------------------------------------+
-  |                                                              |                                                  |
-  |  :ref:`modindex`                                             |                                                  |
-  |                                                              |                                                  |
-  |  A developer resource listing all modules and objects        |                                                  |
-  |                                                              |                                                  |
-  +--------------------------------------------------------------+--------------------------------------------------+
+  +------------------------------------------------------------+------------------------------------------------------------+
+  |                                                            |                                                            |
+  |  :ref:`Hướng dẫn sử dụng Open ERP <books-link>`            |  :ref:`Dành cho lập trình viên <book-develop-link>`        |
+  |                                                            |                                                            |
+  |  Cuốn best-seller về quản trị doanh nghiệp                 |  Phát triển module theo nhu cầu riêng trên nền Open Object |
+  |                                                            |                                                            |
+  +------------------------------------------------------------+------------------------------------------------------------+
+  |                                                            |                                                            |
+  |  :ref:`Hướng dẫn cài đặt <installation-link>`              |  :ref:`Dành cho cộng đồng <how-to-contribute-link>`        |
+  |                                                            |                                                            |
+  |  Hướng dẫn cài đặt Open ERP và Open Object                 |  Cộng đồng Open Object                                     |
+  |                                                            |                                                            |
+  +------------------------------------------------------------+------------------------------------------------------------+
+  |                                                            |                                                            |
+  |  :ref:`Business Intelligence <book-bi-link>`               |  :ref:`Tính năng của Open ERP <features-link>`             |
+  |                                                            |                                                            |
+  |  Triển khai Business Intelligence với Open Object          |  Tóm tắt các tính năng nổi bậy cũa Open ERP                |
+  |                                                            |                                                            |
+  +------------------------------------------------------------+------------------------------------------------------------+
+  |                                                            |                                                            |
+  |  :ref:`modindex`                                           |                                                            |
+  |                                                            |                                                            |
+  |  Danh sách các module và object dành cho lập trình viên    |                                                            |
+  |                                                            |                                                            |
+  +------------------------------------------------------------+------------------------------------------------------------+
 
 .. i18n: **Indices and tables:**
 
-**Indices and tables:**
+**Mục lục và tìm kiếm:**
 
 .. i18n: .. table::
 .. i18n:   :class: main-content-presentation
@@ -161,38 +161,43 @@ Open Object Documentation
 
   +---------------------------------------------------------+-----------------------------------------------+
   |                                                         |                                               |
-  |  :ref:`Complete Table of Contents <contents-link>`      |  :ref:`search`                                |
+  |  :ref:`Mục lục <contents-link>`                         |  :ref:`search`                                |
   |                                                         |                                               |
-  |  Lists all sections and subsections                     |  Search this documentation                    |
+  |  Danh sách các chương, mục                              |  Tìm kiếm trong các tài liệu                  |
   |                                                         |                                               |
   +---------------------------------------------------------+-----------------------------------------------+
   |                                                         |                                               |
   |  :ref:`genindex`                                        |                                               |
   |                                                         |                                               |
-  |  All terms from this documentation                      |                                               |
+  |  Tất cả từ, cụm từ chuyên môn trong các tài liệu        |                                               |
   |                                                         |                                               |
   +---------------------------------------------------------+-----------------------------------------------+
 
+
 .. i18n: **Meta information:**
 
-**Meta information:**
+**Thông tin bổ sung:**
 
 .. i18n: .. table::
 .. i18n:   :class: main-content-presentation
 .. i18n: 
-.. i18n:   +-----------------------------------------+----------------------------------------------------+
-.. i18n:   |                                         |                                                    |
-.. i18n:   |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
-.. i18n:   |                                         |                                                    |
-.. i18n:   |  The GPL and OEPL                       |  Licence on this documentation                     |
-.. i18n:   |                                         |                                                    |
-.. i18n:   +-----------------------------------------+----------------------------------------------------+
-.. i18n:   |                                         |                                                    |
-.. i18n:   |  :ref:`Copyright <copyright-link>`      |                                                    |
-.. i18n:   |                                         |                                                    |
-.. i18n:   |  Software and documentation copyrights  |                                                    |
-.. i18n:   |                                         |                                                    |
-.. i18n:   +-----------------------------------------+----------------------------------------------------+
+.. i18n: ..  +-----------------------------------------+----------------------------------------------------+
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  The GPL and OEPL                       |  Licence on this documentation                     |
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  +-----------------------------------------+----------------------------------------------------+
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  :ref:`Copyright <copyright-link>`      |                                                    |
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  Software and documentation copyrights  |                                                    |
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  +-----------------------------------------+----------------------------------------------------+
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
+.. i18n: ..  |                                         |                                                    |
+.. i18n: ..  |  About our company                      |  Software and documentation copyrights             |
 
 .. table::
   :class: main-content-presentation
@@ -201,24 +206,21 @@ Open Object Documentation
   |                                         |                                                    |
   |  :ref:`Open ERP License <license-link>` |  :ref:`Documentation License <doc-license-link>`   |
   |                                         |                                                    |
-  |  The GPL and OEPL                       |  Licence on this documentation                     |
+  |  Giấy phép GPL và OEPL                  |  Giấy phép sử dụng tài liệu                        |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
   |                                         |                                                    |
   |  :ref:`Copyright <copyright-link>`      |                                                    |
   |                                         |                                                    |
-  |  Software and documentation copyrights  |                                                    |
+  |  Bản quyền phần mềm và tài liệu         |                                                    |
   |                                         |                                                    |
   +-----------------------------------------+----------------------------------------------------+
-
-.. i18n: ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
-.. i18n: ..  |                                         |                                                    |
-.. i18n: ..  |  About our company                      |  Software and documentation copyrights             |
 
 ..  |  :ref:`About <about-link>`              |  :ref:`Copyright <copyright-link>`                 |
 ..  |                                         |                                                    |
 ..  |  About our company                      |  Software and documentation copyrights             |
 
+
 .. i18n: This documentation is based on version 5.0 of Open Object and Open ERP, last updated |today|
 
-This documentation is based on version 5.0 of Open Object and Open ERP, last updated |today|
+Tài liệu này dựa trên phiên bản 5.0 của Open Object và Open ERP, cập nhày ngày |today|

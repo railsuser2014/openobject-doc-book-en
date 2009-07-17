@@ -6,7 +6,7 @@
 
 .. _copyright-link:
 
-Quyền bản quyền
+Bản quyền
 =========
 
 .. i18n: Open ERP, Open Object and this documentation are: ::

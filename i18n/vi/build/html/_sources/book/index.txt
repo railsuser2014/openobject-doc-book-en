@@ -4,7 +4,7 @@
 .. i18n: ..
 
 .. index::
-   single: Open ERP Book
+   single: Open ERP Toàn Tập
 ..
 
 .. i18n: .. _books-link:
