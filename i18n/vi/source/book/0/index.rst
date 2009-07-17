@@ -359,7 +359,7 @@ cung cấp các phương pháp để triển khai Open ERP trong doanh nghiệp
 	                **Fabien Pinckaers**
 
 			Fabien Pinckaers mở công ty riêng đầu tiên năm ông 18 tuổi.
-			Ngày nay, sau hơn 10 năm, ông đã thành lập và quản lý khá nhiều các công ty công nghệ mới,
+			Ngày nay, sau hơn 10 năm, ông là người sáng lập và quản lý khá nhiều các công ty công nghệ mới,
 			tất cả đều dựa trên những phần mềm nguồn mở hoặc miễn phí.
 
 			Ông cũng thành lập Tiny ERP, nay là Open ERP, và là giám đốc của 2 công ty, gồm cả Tiny SPLR,
@@ -367,18 +367,17 @@ cung cấp các phương pháp để triển khai Open ERP trong doanh nghiệp
 			mà không cần các khoản vay hay đầu tư ngoài, và vẫn có lợi nhuận.
 
 			Ông cũng phát triển một số dự án quy mô lớn, chẳng hạn như Auction-in-Europe.com,
-			which become the leader in the art market in Belgium.
-			Even today people sell more art works there than on ebay.be.
+			trang đấu giá có thị phần lớn nhất ở Belgium.
+			Thậm chí người ta còn bán các tác phẩm nghệ thuật ở đây nhiều hơn trên ebay.be.
 
-			He is also the founder of the LUG (Linux User Group) of Louvain-la-Neuve,
-			and of several free projects like OpenReport, OpenStuff and Tiny Report.
-			Educated as a civil engineer (polytechnic), he has won several IT prizes in Europe such as Wired
-			and l'Inscene.
+			Ông cũng là thành viên sáng lập LUG (Linux User Group), của Louvain-la-Neuve,
+			và một vài dự án như OpenReport, OpenStuff hay Tiny Report.
+			Được đào tạo trở thành kỹ sư dân sự (hệ bách khoa), ông đã giành một số giải thưởng về CNTT ở châu Âu như Wired
+			và l'Inscene.
 
-			A fierce defender of free software in the enterprise,
-			he is in constant demand as a conference speaker and
-			he is the author of numerous articles dealing with free software in the management of the
-			enterprise.
+			Là một người đấu tranh dữ dội cho phầm mềm nguồn mỡ và miễn phí,
+			ông thường được mời đến nói chuyện ở các buổi hội thảo chuyên đề,
+			đồng thời cũng là tác giả của một số bài báo về phần mềm miễn phí trong quản lý doanh nghiệp.
 
                         **Geoff Gardiner**
 
