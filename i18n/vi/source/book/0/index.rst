@@ -62,10 +62,8 @@ Thêm vào đó, những nhà cung cấp ERP lớn như SAP, Microsoft và Oracl
 .. i18n: provide a new way of resolving such problems of cost and quality for this kind of enterprise
 .. i18n: software.
 
-The development processes of open source software, and the new business models adopted by their
-developers,
-provide a new way of resolving such problems of cost and quality for this kind of enterprise
-software.
+Quy trình phát triển phần mềm nguồn mở với những chức năng luôn được cập nhật từ thực tế doanh nghiệp
+mở ra một hướng đi mới trong việc giải quyết bài toán chi phí và chất lượng cho những phần mềm doanh nghiệp này.
 
 .. i18n: To make an ERP system fully available to small and medium enterprises, cost reduction is the first
 .. i18n: priority.
@@ -75,13 +73,8 @@ software.
 .. i18n: software;
 .. i18n: and to considerably reduce the marketing overhead.
 
-To make an ERP system fully available to small and medium enterprises, cost reduction is the first
-priority.
-Open source software makes it possible to greatly reduce development costs by
-aggressive reuse of open source software libraries; to eliminate intermediaries (the distributors),
-with all of their expensive sales overhead; to cut out selling costs by free publication of the
-software;
-and to considerably reduce the marketing overhead.
+Để một hệ thống ERP có thể hoàn toàn nằm trong khả năng của các doanh nghiệp vừa và nhỏ, chi phí phải là ưu tiên số một.
+Phần mềm nguồn mở giảm đáng kể các chi phí lập trình bằng cách tận dụng tối đa các thư viện phần mềm miễn phí có sẵn, hạn chế các quá trình trung gian. Mặt khác, phần mềm nguồn mở hoàn toàn không chịu ảnh hưởng của các chi phí marketing, bán hàng.
 
 .. i18n: Since there is open interaction among thousands of contributors and partners working on the same
 .. i18n: project,
@@ -90,12 +83,10 @@ and to considerably reduce the marketing overhead.
 .. i18n: ISO 9001 quality professional, specialist in agricultural products,
 .. i18n: expert in the customs and habits of pharmaceutical vendors, just as a start.
 
-Since there is open interaction among thousands of contributors and partners working on the same
-project,
-the quality of the resulting software benefits greatly from the scrutiny.
-And you can't be everything at once: accountant, software developer, salesperson,
-ISO 9001 quality professional, specialist in agricultural products,
-expert in the customs and habits of pharmaceutical vendors, just as a start.
+Vì mỗi dự án phần mềm nguồn mở đề có được sự đóng góp của hàng nghìn người cùng làm việc
+nên chất lượng sản phẩm luôn luôn ở mức làm hài lòng người dùng.
+Dĩ nhiên chúng ta không phải là ngài Biết Tất: kế toán, lập trình viên, bán háng, chuyên gia kiểm định chất lượng (ISO 9001),
+chuyên viên ngông nghiệp, giám đốc quan hệ khách hàng...
 
 .. i18n: Faced with these wide-ranging requirements, what could be better than a world network of
 .. i18n: partners and contributors?
@@ -103,11 +94,9 @@ expert in the customs and habits of pharmaceutical vendors, just as a start.
 .. i18n: Throughout this book you'll see that the results exceed any reasonable expectations when such work
 .. i18n: is well organized.
 
-Faced with these wide-ranging requirements, what could be better than a world network of
-partners and contributors?
-Everyone adds their own contribution according to their professional competence.
-Throughout this book you'll see that the results exceed any reasonable expectations when such work
-is well organized.
+Đối diện với những yêu cầu trải rộng như vậy, có gì hơn một mạng lưới những người đóng góp trên khắp thế giới?
+Mỗi người góp một chút kiến thức và kinh nghiệm của họ, một giọt nước, chúng ta đã có một đại dương.
+Đọc qua cuốn sách này, bạn sẽ thấy kết quả vượt qua mọi sự mong đợi trong việc tối ưu hoá cách quản lý doanh nghiệp.
 
 .. i18n: But the real challenge of development is to make this solution simple and flexible, as well as
 .. i18n: complete.
@@ -116,21 +105,18 @@ is well organized.
 .. i18n: So the development team of Tiny ERP, today called Open ERP, is responsible for most of
 .. i18n: the organization, synchronization and coherence of the software.
 
-But the real challenge of development is to make this solution simple and flexible, as well as
-complete.
-And to reach this level of quality you need a leader and co-ordinator who can organize all of these
-activities.
-So the development team of Tiny ERP, today called Open ERP, is responsible for most of
-the organization, synchronization and coherence of the software.
+Nhưng thử thách thật sự của việc phát triển một hệ thống như vậy chính là làm cách nào để nó vừa đơn giản và cơ động, lại vừa hoàn thiện.
+Và để đạt được chất lượng cao, chúng ta cần những người lãnh đạo và các cộng sự có cái nhìn sâu rộng trong mọi vấn đề trên.
+Vì vậy, nhóm phát triển Open ERP (trước kia là Tiny ERP), chịu trách nhiệm phần lớn công việc quản lý, đồng bộ hoá và định hướng phát triển phần mềm.
 
 .. i18n: And Open ERP offers great performance in all these areas!
 
-And Open ERP offers great performance in all these areas!
+Và Open ERP sẽ đem lại những kết quả tuyệt với trong những lĩnh vực này!
 
 .. i18n: The Open ERP Solution
 .. i18n: =====================
 
-The Open ERP Solution
+Giải pháp Open ERP
 =====================
 
 .. i18n: Because of its modularity, collaborative developments in Open ERP have been cleanly integrated,
@@ -140,26 +126,24 @@ The Open ERP Solution
 .. i18n: Experience has shown that there's no need to train users for several months on the system,
 .. i18n: because they can just download it and use it directly.
 
-Because of its modularity, collaborative developments in Open ERP have been cleanly integrated,
-enabling any company to choose from a large list of available functions.
-As with most open source software, accessibility, flexibility, and simplicity are important keywords
-for development.
-Experience has shown that there's no need to train users for several months on the system,
-because they can just download it and use it directly.
+Được xây dựng theo hình thức lắp ghép module (modularity), việc phát triển Open ERP rất dễ dàng và nhanh chóng,
+cho phép bất kỳ công ty nào lựa chọn các chức năng phù hợp với yêu cầu riêng từ một kho khổng lồ, với mỗi module tương ứng với một hoạt động trong công ty.
+Cũng như đa số các phần mềm nguồn mở khác, tính thuận tiện, cơ động và đơn giản là những tiêu chuẩn quan trọng khi phát triển Open ERP.
+Kinh nghiệm thực tế đã chứng minh rằng không cần phải tập huấn người dùng hàng tháng trời, đơn giản vì họ có thể tự tải nó về cà dùng trực tiếp.
 
 .. i18n: So you'll find the modules for all types of needs, allowing your company to build its customized
 .. i18n: system
 .. i18n: by simply grouping and configuring the most suitable modules. Hundreds of modules are available.
 
-So you'll find the modules for all types of needs, allowing your company to build its customized
-system
-by simply grouping and configuring the most suitable modules. Hundreds of modules are available.
+Vậy nên bạn sẽ tìm được những module cho mọi yêu cầu của bạn, cho phép công ty có thể tự xây dựng một hệ thống đúng như yêu cầu bằng cách gộp các module lại với nhau rồi cấu hình cho phù hợp nhất với thực tế.
+Có hơn 400 module sẵn sàng để sử dụng có thể tải về từ máy chủ của Open ERP, tính đến ngày |today|.
 
 .. i18n: They range from specific modules like the EDI interface for agricultural products,
 .. i18n: which has been used to interface with Match and Leclerc stores, up to the generic demonstration
 .. i18n: automation
 .. i18n: module for ordering sandwiches, which can take care of the eating preferences of your staff.
 
+Nó gồm những module chuyên dụng như
 They range from specific modules like the EDI interface for agricultural products,
 which has been used to interface with Match and Leclerc stores, up to the generic demonstration
 automation
