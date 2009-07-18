@@ -185,7 +185,7 @@ resolving this below:
 	          
 	   *Typical Open ERP configuration file*
 
-#. Is your PostgreSQL server running? Signed in as administrator, select :guilabel:`Stop Service`
+#. Is your PostgreSQL Server running? Signed in as administrator, select :guilabel:`Stop Service`
    from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
    you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
    that the database server was working. Restart PostgreSQL.
