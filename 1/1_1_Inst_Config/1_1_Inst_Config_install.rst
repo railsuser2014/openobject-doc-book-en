@@ -162,9 +162,6 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 	Open ERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
-The all-in-one installer also provides a web server, but this was not yet working at the time
-of writing.
-
 Resolving errors with a Windows installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
