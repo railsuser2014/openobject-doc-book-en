@@ -172,7 +172,7 @@ resolving this below:
    restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
    :menuselection:`Start --> Programs --> OpenERP Server` .
 
-#. Is the Open ERP application server set up correctly? Signed in to the server as
+#. Is the Open ERP Server set up correctly? Signed in to the server as
    Administrator, open the file \ ``openerp-server.conf``\  in \
    ``C:\Program Files\OpenERP AllInOne``\  and check its content. This file is generated during
    installation with information derived from the database. If you see something strange it's best to
