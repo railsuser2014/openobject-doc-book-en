@@ -190,11 +190,11 @@ resolving this below:
    you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
    that the database server was working. Restart PostgreSQL.
 	   
-#. Is your database accessible? Still in the PostgreSQL menu, start
+#. Is the database accessible? Still in the PostgreSQL menu, start
    the pgAdmin III application which you can use to explore the database. Double-click on the \
    ``PostgreSQL4OpenERP``\  connection. 
    You can find the password in the Open ERP server configuration file.
-   If the database server is working
+   If the database server is accessible
    you'll be able to see some information about the empty database. If it's not then an error message
    will appear.
 
