@@ -185,12 +185,12 @@ resolving this below:
 	          
 	   *Typical Open ERP configuration file*
 
-#. Is your PostgreSQL Server running? Signed in as administrator, select :guilabel:`Stop Service`
+#. Is your PostgreSQL running? Signed in as administrator, select :guilabel:`Stop Service`
    from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
    you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
    that the database server was working. Restart PostgreSQL.
 	   
-#. Does PostgreSQL work at all? Still in the PostgreSQL menu, start
+#. Is your database accessible? Still in the PostgreSQL menu, start
    the pgAdmin III application which you can use to explore the database. Double-click on the \
    ``PostgreSQL4OpenERP``\  connection. 
    You can find the password in the Open ERP server configuration file.
