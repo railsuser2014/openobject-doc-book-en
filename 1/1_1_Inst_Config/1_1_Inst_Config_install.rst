@@ -168,7 +168,7 @@ Resolving errors with a Windows installation
 If you can't get Open ERP to work after installing your Windows system you'll find some ideas for
 resolving this below:
 
-#. Is the Open ERP application working? Signed in to the server as an administrator, stop and
+#. Is the Open ERP Server working? Signed in to the server as an administrator, stop and
    restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
    :menuselection:`Start --> Programs --> OpenERP Server` .
 
