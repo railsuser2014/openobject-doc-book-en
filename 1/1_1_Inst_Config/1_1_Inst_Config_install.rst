@@ -162,17 +162,20 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 	Open ERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
+The all-in-one installer also provides a web server, but this was not yet working at the time
+of writing.
+
 Resolving errors with a Windows installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you can't get Open ERP to work after installing your Windows system you'll find some ideas for
 resolving this below:
 
-#. Is the Open ERP Server working? Signed in to the server as an administrator, stop and
+#. Is the Open ERP application working? Signed in to the server as an administrator, stop and
    restart the service using :guilabel:`Stop Service` and :guilabel:`Start Service` from the menu
    :menuselection:`Start --> Programs --> OpenERP Server` .
 
-#. Is the Open ERP Server set up correctly? Signed in to the server as
+#. Is the Open ERP application server set up correctly? Signed in to the server as
    Administrator, open the file \ ``openerp-server.conf``\  in \
    ``C:\Program Files\OpenERP AllInOne``\  and check its content. This file is generated during
    installation with information derived from the database. If you see something strange it's best to
@@ -185,16 +188,16 @@ resolving this below:
 	          
 	   *Typical Open ERP configuration file*
 
-#. Is your PostgreSQL running? Signed in as administrator, select :guilabel:`Stop Service`
+#. Is your PostgreSQL server running? Signed in as administrator, select :guilabel:`Stop Service`
    from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
    you can read :guilabel:`The PostgreSQL4OpenERP service has stopped` then you can be reasonably sure
    that the database server was working. Restart PostgreSQL.
 	   
-#. Is the database accessible? Still in the PostgreSQL menu, start
+#. Does PostgreSQL work at all? Still in the PostgreSQL menu, start
    the pgAdmin III application which you can use to explore the database. Double-click on the \
    ``PostgreSQL4OpenERP``\  connection. 
    You can find the password in the Open ERP server configuration file.
-   If the database server is accessible
+   If the database server is working
    you'll be able to see some information about the empty database. If it's not then an error message
    will appear.
 
