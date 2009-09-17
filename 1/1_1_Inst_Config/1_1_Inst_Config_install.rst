@@ -221,7 +221,7 @@ resolving this below:
 Installation on Linux (Ubuntu)
 ------------------------------
 
-This section guides you through installing the Open ERP server and client on Ubuntu, one of the
+This section guides you through installing the Open ERP server and client on Ubuntu 9.04, one of the
 most popular Linux distributions. It assumes that you're using a recent release of Desktop Ubuntu
 with its graphical user interface on a desktop or laptop PC.
 
@@ -236,32 +236,177 @@ following :menuselection:`Product --> Documentation` on http://www.openerp.com. 
 are given there for different distributions and releases, and you should also check if there are
 more up to date instructions for the Ubuntu distribution as well.
 
-Installation of Open ERP from packages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. TO Check
 
-At the time of writing this book, Ubuntu hadn't yet published packages for Open ERP, so this
-section describes the installation of version 4.2 of Tiny ERP. This is very similar to Open ERP and
-so can be used to test the software.
+Technical procedure: Initial installation and configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here's a summary of the procedure:
+Upgrade of Ubuntu packages and installation of openerp and pgadmin::
 
-#. Start Synaptic Package Manager, and enter your root password as required.
+    $ sudo apt-get update
 
-#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
+    $ sudo apt-get upgrade
 
-#. Search for a recent version of PostgreSQL, for example \ ``postgresql-8.3``\ then select it for
-   installation along with its dependencies.
+    $ sudo apt-get install openerp-server openerp-client pgadmin3
 
-#. Search for \ ``tinyerp``\  then select \ ``tinyerp-client``\  and \ ``tinyerp-server``\  for
-   installation along with their dependencies. Click :guilabel:`Update Now` to install it all.
+To avoid having some of the labels untranslated in the GTK client, install the language-pack-gnome-YOURLANG-base package. The following command installs the spanish language pack::
 
-#. Close Synaptic Package Manager.
+    $ sudo apt-get install language-pack-gnome-es-base
 
-Installing PostgreSQL results in a database server that runs and restarts automatically when the PC
-is turned on. If all goes as it should with the tinyerp-server package then tinyerp-server will also
-install, and restart automatically when the PC is switched on.
+Postgres Database configuration::
 
-Start the Tiny/Open ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu,
+    $ sudo vi /etc/postgresql/8.3/main/pg_hba.conf
+
+Replace the following line::
+
+    # “local” is for Unix domain socket connections only
+    local all all ident sameuser
+
+with::
+
+    #”local” is for Unix domain socket connections only
+    local all all md5
+
+Restart Postgres::
+
+    $ sudo /etc/init.d/postgresql-8.3 restart
+
+    * Restarting PostgreSQL 8.3 database server [ OK ]
+
+The following two commands will avoid problems with /etc/init.d/openerp-web INIT script::
+
+    $ sudo mkdir /home/openerp
+
+    $ sudo chown openerp.nogroup /home/openerp
+
+Create a user account called openerp with password “openerp” and with privileges to create Postgres databases::
+
+    $ sudo su postgres
+
+    $ createuser openerp -P
+
+    Enter password for new role: (openerp)
+
+    Enter it again:
+
+    Shall the new role be a superuser? (y/n) n
+
+    Shall the new role be allowed to create databases? (y/n) y
+
+    Shall the new role be allowed to create more new roles? (y/n) n
+
+Quit from user postgres::
+
+    $ exit
+
+    exit
+
+Edit OpenERP configuration file::
+
+    $ sudo vi /etc/openerp-server.conf
+
+Replace the following two lines (we don’t force to use a specific database and we add the required password to gain access to postgres)::
+
+    db_name =
+
+    db_user = openerp
+
+    db_password = openerp
+
+Troubles with Python releases: Python 2.6 is not yet supported by OpenERP 5.0, but it is the default Python release on Ubuntu 9.0.4. We need to launch OpenERP 5.0 with Python 2.5 or earlier. There’s also a problem with python-xml package in Ubuntu so we will reinstall it.
+
+Python 2.5 setting up::
+
+    $ sudo apt-get install python2.5 python2.5-dev python-profiler
+
+Reinstall python-xml::
+
+    $ wget http://freefr.dl.sourceforge.net/sourceforge/pyxml/PyXML-0.8.4.tar.gz
+
+    $ tar xvzf PyXML-0.8.4.tar.gz
+
+    $ cd PyXML-0.8.4/
+
+    $ sudo python2.5 setup.py install
+
+Make the following symbolic link::
+
+    $ sudo ln -s /usr/lib/python2.6/dist-packages/oldxml/_xmlplus/utils/boolean.so /usr/lib/python2.5/site-packages/oldxml/_xmlplus/utils/
+
+Force openerp-server to be launched with Python2.5::
+
+
+    $ cd /usr/bin/
+
+    $ sudo cp openerp-server openerp-server.ORIG
+
+    $ sudo vi openerp-server
+
+Replace the following line::
+
+    exec /usr/bin/python ./openerp-server.py $@
+
+with
+
+::
+
+    exec /usr/bin/python2.5 ./openerp-server.py $@
+
+We can now restart openerp-server::
+
+    $ sudo /etc/init.d/openerp-server restart
+
+    Restarting openerp-server: openerp-server.
+
+Check out the logs::
+
+    $ sudo cat /var/log/openerp.log
+
+    [2009-06-14 21:06:39,314] INFO:server:version – 5.0.0
+
+    [2009-06-14 21:06:39,314] INFO:server:addons_path – /usr/lib/openerp-server/addons
+
+    [2009-06-14 21:06:39,314] INFO:server:database hostname – localhost
+
+    [2009-06-14 21:06:39,315] INFO:server:database port – 5432
+
+    [2009-06-14 21:06:39,315] INFO:server:database user – openerp
+
+    [2009-06-14 21:06:39,315] INFO:objects:initialising distributed objects services
+
+    [2009-06-14 21:06:39,502] INFO:web-services:starting XML-RPC services, port 8069
+
+    [2009-06-14 21:06:39,502] INFO:web-services:starting NET-RPC service, port 8070
+
+    [2009-06-14 21:06:39,502] INFO:web-services:the server is running, waiting for connections…
+
+OpenERP is now up and running, connected to Postgres database on port 5432 and listening on ports 8069 and 8070
+
+::
+
+    $ ps uaxww | grep -i openerp
+
+    root   2276  0.0  2.3 185576 23708 ?        Sl   13:09   0:00 /usr/bin/python2.5 ./openerp-server.py –config=/etc/openerp-server.conf
+
+::
+
+    $ sudo lsof -i :8069
+
+    COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
+
+    python2.5 2276 openerp 3u IPv4 6515 TCP localhost:8069 (LISTEN)
+
+::
+
+    $ sudo lsof -i :8070
+
+    COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
+
+    python2.5 2276 openerp 5u IPv4 6520 TCP *:8070 (LISTEN)
+    
+  
+
+Start the Open ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu,
 or by opening a terminal window and typing \ ``tinyerp-client``\  . The Open ERP login dialog box
 should open and show the message :guilabel:`No database found you must create one!`.
 
