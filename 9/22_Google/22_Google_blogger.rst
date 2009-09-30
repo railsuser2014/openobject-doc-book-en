@@ -1,30 +1,27 @@
+**************
+Google Blogger
+**************
 
-.. index::
-   single: Open ERP Book
-..
+Name of the module:
+``google_blogger``
 
-.. _books-link:
+This module integrate Google Blogger and Open ERP Task Management, which exports task to blogger and one can get comments on his/her activity on mentioned tasks in blogger.
 
-:::::::::::::
-Open ERP Book
-:::::::::::::
+A very useful feature of blogger, that is open discussion will be enhanced the development efforts. 
 
-.. toctree::
-    :maxdepth: 6
+This feature helps in managing large projects with many tasks and many users working on different task (simultaneously), with this functionality all users can share their progress for the task with others and give their comments for the same.
 
-    0/index
-    1/index
-    2/index
-    3/index
-    4/index
-    5/index
-    6/index
-    7/index
-    8/index
-    9/index
-    10/index
+Check below screenshots which send Open ERP tasks to blogger.
 
+**Blogger**
 
+.. figure::  images/google_blog.jpg
+   :align: center
+
+**Openerp Tasks**
+
+.. figure::  images/tiny_blog.jpg
+   :align: center
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -51,5 +48,4 @@ Open ERP Book
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
-
 

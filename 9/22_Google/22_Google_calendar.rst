@@ -1,30 +1,23 @@
+**************
+Google Calendar
+**************
 
-.. index::
-   single: Open ERP Book
-..
+Name of the module:
+``google_calendar``
 
-.. _books-link:
+This module synchronize Google-Calender repeating and non repeating events with Open ERP events. So, now get updates of calender schedules from google calendar in Open ERP and vice-versa. Users can change event schedule form any where, with its google calendar which updates Events in Open ERP.
 
-:::::::::::::
-Open ERP Book
-:::::::::::::
+You can find menu here: Event Organization/ Google Import Export/ Synchronize Events
 
-.. toctree::
-    :maxdepth: 6
+**Google Calendar Event**
 
-    0/index
-    1/index
-    2/index
-    3/index
-    4/index
-    5/index
-    6/index
-    7/index
-    8/index
-    9/index
-    10/index
+.. figure::  images/google_event.jpg
+   :align: center
 
+**OpenERP Event**
 
+.. figure::  images/tiny_event.jpg
+   :align: center
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -51,5 +44,4 @@ Open ERP Book
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
-
 

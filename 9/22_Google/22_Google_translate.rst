@@ -1,30 +1,29 @@
+****************
+Google Translate
+****************
 
-.. index::
-   single: Open ERP Book
-..
+Name of the module:
+``google_translate``
 
-.. _books-link:
+This module translate OpenERP terms/fields/objects etc. in any language with the integration of Google Translate.
 
-:::::::::::::
-Open ERP Book
-:::::::::::::
+You can find menu here: Administration/Translation/Application terms/need review terms
 
-.. toctree::
-    :maxdepth: 6
+Check below screenshots which translate string "how are you" in chinese language.
 
-    0/index
-    1/index
-    2/index
-    3/index
-    4/index
-    5/index
-    6/index
-    7/index
-    8/index
-    9/index
-    10/index
+Note: If the Need Review field is True then it will translate the source value to destination by given language.
 
+**Before Translation**
 
+.. figure::  images/translate.png
+   :scale: 50
+   :align: center
+
+**After Translation**
+
+.. figure::  images/translate_dest.png
+   :scale: 50
+   :align: center
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -51,5 +50,4 @@ Open ERP Book
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
-
 
