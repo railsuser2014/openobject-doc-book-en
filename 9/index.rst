@@ -13,7 +13,6 @@ Path to get Modules: lp:~openerp-commiter/openobject-addons/trunk-extra-addons
     22_Google/22_Google_blogger
     22_Google/22_Google_earth
 
-.. raw:: html
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
