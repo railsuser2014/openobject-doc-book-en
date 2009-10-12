@@ -1,6 +1,6 @@
-**************
+***************
 Google Calendar
-**************
+***************
 
 Name of the module:
 ``google_calendar``
