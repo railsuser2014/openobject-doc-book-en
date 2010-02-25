@@ -31,6 +31,8 @@ The system generates invoice proposals which are initially set to the \ ``Draft`
 these invoices remain unconfirmed they have no accounting impact within the system. There's nothing
 to stop users creating their own draft invoices if they want to.
 
+You can create draft invoice manually : Finantial Management / Invoices / Customer Invoices / New Customer Invoice
+
 The information that's needed for invoicing is automatically taken from the Partner form (such as
 payment conditions and the invoice address) or from the Product (such as the account to be used) or
 from a combination of the two (such as applicable Taxes and the Price of the product).
@@ -49,7 +51,7 @@ from a combination of the two (such as applicable Taxes and the Price of the pro
 Open or Pro-Forma Invoices
 --------------------------
 
-you can approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
+You can approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
 A Pro Forma invoice doesn't yet have an invoice number, but the accounting entries on the invoice
 that's created correspond to the amounts that Open ERP will record as the customer's payables.
 

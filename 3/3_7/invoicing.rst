@@ -110,7 +110,7 @@ screen. Doing it this way means that some of the later fields are filled in auto
 selections made in earlier fields. So select the :guilabel:`Partner`, and the following fields are
 completed automatically:
 
-* the invoice address corresponds to the partner contact that was given the address type of 
+* the invoice address corresponds to the partner contact that was given the address type of
   :guilabel:`Invoice` in the partner form (or otherwise the address type of :guilabel:`Default`),
 
 * the partner account corresponds to the account given in the :guilabel:`Accounting` which is found in the last
@@ -139,18 +139,18 @@ completed automatically:
 
 .. tip:: Seeing partner relationships
 
-   You can reach more information from certain relation fields in Open ERP. 
-	
+   You can reach more information from certain relation fields in Open ERP.
+
    * In the web client in read-only mode a relation is commonly a hyperlink
-     - it takes you to the main form for that entity, with all of the actions and links. 
-	
-   * In the web client in edit mode you can press the keyboard :kbd:`Ctrl` button at the same time 
+     - it takes you to the main form for that entity, with all of the actions and links.
+
+   * In the web client in edit mode you can press the keyboard :kbd:`Ctrl` button at the same time
      as right-clicking in the field to get a
-     context menu with links and other options. 
-	
+     context menu with links and other options.
+
    * And in the GTK clientyou can right-click the field to get that same
-     context menu. 
-	
+     context menu.
+
    So one way or another you can rapidly reach the partner's:
 
    * current sales and purchases,
@@ -220,8 +220,8 @@ following fields are then completed automatically:
 	* product cost structure,
 
 	* location of the product in your warehouses.
-	
-	(At the time of writing this function worked on pop-up windows 
+
+	(At the time of writing this function worked on pop-up windows
 	of the GTK client but not the web client.)
 
 You can enter several invoice lines and modify the values that are automatically completed
@@ -275,8 +275,8 @@ Click :guilabel:`Validate` when you want to approve the invoice. It moves from t
 state to the \ ``Open``\   state.
 
 When you've validated an invoice, Open ERP gives it a unique number from a defined sequence. By
-default it takes the form \ ``Year / Sequence Number``\   for example \ ``2008/00101``\  . If you
-want to modify the sequence numbers use the menu :menuselection:`Administration --> Configuration -->
+default it takes the form \ ``Year / Sequence Number``\   for example \ ``2008/00101``\  . You can not modify
+invoice number but if you want to modify the sequence numbers use the menu :menuselection:`Administration --> Configuration -->
 Sequences --> Sequences`.
 
 Accounting entries corresponding to this invoice are automatically generated when you approve the
@@ -369,7 +369,7 @@ cancel the invoice if the following two conditions are met:
 Cancelling an invoice has the effect of automatically modifying the corresponding accounting
 entries.
 
-When the invoice has been cancelled you could then put it back into the 
+When the invoice has been cancelled you could then put it back into the
 \ ``Draft``\ state. So you could modify it and approve it again later.
 
 .. tip::  Numbering invoices
@@ -410,7 +410,7 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 
 	To test this functionality, create an invoice for a partner and add some lines
 	(from the GTK client). Then hold
-	:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select 
+	:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select
 	:guilabel:`Set as default`. Check the box that indicates this default should apply only to you.
 
 	Then the next time you create an invoice these invoice lines will be
@@ -419,7 +419,7 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 	For taxes you could put the default amount in the invoice lines (in France it would be
 	19.6%, in Belgium 21%, in the UK 17.5% or 15%). Doing this you won't forget to add tax when you're
 	manually entering invoices.
-		
+
 	(The capabilities of the GTK client are more extensive than those of the web client.
 	You can set defaults for multiple lines in the GTK client but only a single line in the web client,
 	so you need to be quite sure what is possible before you use this functionality routinely.)
@@ -476,7 +476,7 @@ unless the default is acceptable, and then the
 * partner :guilabel:`Account`.
 
 Unlike the customer invoice you don't have to enter payment conditions – simply a :guilabel:`Due
-Date` if you want one. 
+Date` if you want one.
 If you don't give a due date, Open ERP assumes that this invoice will be paid in cash.
 If you want to code in more complete payment conditions than just due date you can use the :guilabel:`Payment
 Term` field which you can find on the second tab :guilabel:`Other Info`.
