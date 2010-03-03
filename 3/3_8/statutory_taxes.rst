@@ -18,7 +18,7 @@ This section deals with statutory taxes and accounts which are legally required 
 
 	In addition to the legal declarations available in the accounts modules,
 	Open ERP supplies declarations based on the functionality in other modules.
-	
+
 	.. index::
 	   single: module; report_instrastat
 
@@ -51,6 +51,8 @@ royalties to authors based on the value of transactions through an account.
 
 Setting up a tax structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Setup Taxation using `Financial Management > Configuration > Financial Accounting > Taxes`
 
 Three main objects are involved in the tax system in Open ERP:
 
@@ -118,7 +120,7 @@ tax cases that you won't link to Tax objects (similar to General Account \ ``Vie
 to organize the tree structure.
 
 To view the structure that you've constructed you can use the menu :menuselection:`Financial
-Management --> Reporting --> Taxes Report --> Chart of Taxes`. This tree view reflects the structure of the 
+Management --> Reporting --> Taxes Report --> Chart of Taxes`. This tree view reflects the structure of the
 :guilabel:`Tax Cases` and shows the current tax situation.
 
 Tax objects
@@ -138,7 +140,7 @@ Financial Accounting --> Taxes --> Taxes`. You define the following fields:
 *  :guilabel:`Tax Group` : \ ``VAT``\   or \ ``Other``\  , used to determine which taxes on products
    can be substituted by taxes on partners,
 
-*  :guilabel:`Tax Type` : a required field directing how to calculate the tax: \ ``Percent``\  , 
+*  :guilabel:`Tax Type` : a required field directing how to calculate the tax: \ ``Percent``\  ,
    \``Fixed``\  , \ ``None``\   or \ ``Python Code``\  , (the latter is found in the :guilabel:`Compute Code`
    field in the :guilabel:`Special Computation` tab),
 
@@ -210,12 +212,12 @@ tax-like charges.
 	When you're retailing to end users rather than selling to a business,
 	you may want to (or be required to) show tax-inclusive prices on your invoicing documents rather
 	than a tax-exclusive price plus tax.
-	
+
 	.. index::
 	   single: module; account_tax_include
-	
+
 	To do this in Open ERP just install the :mod:`account_tax_include` module.
-	Each invoice is given a new :guilabel:`Price method` field, in which you choose 
+	Each invoice is given a new :guilabel:`Price method` field, in which you choose
 	:guilabel:`Tax included` or :guilabel:`Tax excluded`.
 	Prices are then displayed appropriately.
 
@@ -253,7 +255,7 @@ appropriate rate of tax (project invoicing is dealt with in detail in :ref:`ch-p
 
 .. note:: Tax regions
 
-	The third-party module :mod:`import_export` (currently in ``addons-extra`` 
+	The third-party module :mod:`import_export` (currently in ``addons-extra``
 	can be used to extend Open ERP's tax system,
 	so that you can assign taxes to different accounts depending on the location of the Partner.
 	The :guilabel:`Partner` is given a new :guilabel:`Partner Location` field that can be set to Local,
@@ -277,9 +279,9 @@ To do that go to the menu :menuselection:`Financial Management --> Charts --> Ch
 
 Select the accounting period and type of moves (all entries or just posted entries) you're interested in
 and click :guilabel:`Open Charts` to display the chart in a tree view, then select one
-or several accounts for analysis by clicking and highlighting the appropriate line(s). 
+or several accounts for analysis by clicking and highlighting the appropriate line(s).
 Click the :guilabel:`General Ledger`, the :guilabel:`Account
-balance`, or an :guilabel:`Analytic check` in the :guilabel:`Reports` toolbar at the right. 
+balance`, or an :guilabel:`Analytic check` in the :guilabel:`Reports` toolbar at the right.
 If you select an account which has sub-accounts in the
 hierarchy you automatically analyze both that account and its child accounts.
 
@@ -363,8 +365,7 @@ at the bottom left of an invoice.
 
 You can also get the information from the accounting entries in the columns to the right.
 
-Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Financial Management
---> Periodical Processing --> Taxes`. The structure of the chart is for calculating the tax
+Open ERP keeps a tax chart that you can reach from the menu :menuselection:`Financial Management --> Reporting --> Taxes Reports --> Chart of Taxes`. The structure of the chart is for calculating the tax
 declaration but also all the other taxes can be calculated (such as the French DEEE).
 
 .. index::
