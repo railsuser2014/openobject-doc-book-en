@@ -42,7 +42,7 @@ You can develop a set of account views to contain only those elements that inter
 
 To get the detail of the account entries that are important to you, all you need to do is click the
 account's :guilabel:`Code` (if you have no codes, you can select the line, then click :guilabel:`Switch`
-to get the acount definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar). 
+to get the acount definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar).
 
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits,
 credits and balance for each account in real time. If you just want to work with a chart of accounts
@@ -77,8 +77,7 @@ Configuration --> Financial Accounting --> Financial Accounts --> List of Accoun
 
 The main account fields are:
 
-*  :guilabel:`Name` : the name of the account is a multi-lingual field, which is why there's a
-   little flag to the right. Give the field a name.
+*  :guilabel:`Name` : Give the field a name.
 
 *  :guilabel:`Active` : if you deactivate an account (by unchecking the box) it will no longer be
    visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for
@@ -191,6 +190,9 @@ To create a new chart of accounts you should create a root account using the men
 you can choose your structure by creating other accounts of :guilabel:`Type` \ ``View``\   as necessary.
 Check your virtual structure using the menu :menuselection:`Financial Management --> Charts -->
 Charts of Accounts`.
+
+You have to set Internal Type = Consolidation and set Consolidated Children Accounts to make Account Consolidate.
+'virtual chart of accounts' was in 4.2 and here in 5.0 its Consolidation Account.
 
 Finally, when you've got your structure, you must make the general accounts and virtual accounts
 match. For that search the general accounts and ensure that each non-\ ``View``\   account there
