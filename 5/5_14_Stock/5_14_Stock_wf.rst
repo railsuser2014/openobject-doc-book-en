@@ -78,11 +78,11 @@ The procure method determines how the product will be replenished:
 
 You find a mix of these two modes used for the different final and intermediate products in most
 industries. The procurement method shown on the product form is a default value for the order,
-enabling the salesperson to choose the best mode for fulfilling a particular order by varying the 
+enabling the salesperson to choose the best mode for fulfilling a particular order by varying the
 sales order parameters as needed.
 
-The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product 
-managed Make to Order and another 
+The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
+managed Make to Order and another
 managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Forecast` report,
 available from the product form.
 
@@ -183,7 +183,7 @@ convert from one unit of measure to another as long as they are in the same cate
 .. table:: Example Units of Measure
 
    ========= ============ ======
-   UoM       Category     Factor
+   UoM       Category     Rate
    ========= ============ ======
    Kg        Weight            1
    Gram      Weight         1000

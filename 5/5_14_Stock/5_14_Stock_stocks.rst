@@ -35,7 +35,7 @@ The two fields are:
    purchase orders, confirmed production and sales orders.
 
    .. _fig-stfore:
-   
+
    .. figure:: images/stock_forecast_report.png
       :scale: 75
       :align: center
@@ -79,7 +79,7 @@ production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'
 everything that hasn't yet been planned by the system. The quantities of product in this location
 cancel each other out.
 
-.. index:: 
+.. index::
    single: inventory
    single: stock check
 
@@ -143,7 +143,7 @@ Receipt of a supplier order
 
 Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management
 process. You'll find a list of all the awaited receipts in the menu :menuselection:`Stock Management
---> Incoming Goods --> Packing to Process`. Use the order number or the supplier name to find the
+--> Incoming Products --> Packing to Process`. Use the order number or the supplier name to find the
 right goods receipt form for confirmation of a goods in. This approach enables you to control
 quantities received by referring to the quantities ordered.
 
@@ -154,7 +154,7 @@ quantities received by referring to the quantities ordered.
    *List of items waiting*
 
 You can also do goods-in data entry manually if there's no order, using the same menu
-:menuselection:`Stock Management --> Incoming Goods --> New Reception Packing`.
+:menuselection:`Stock Management --> Incoming Products --> New Reception Packing`.
 
 A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Partner` field
 and you can type in the reference number from your supplier in the field :guilabel:`Origin`. You
@@ -165,7 +165,7 @@ then give the destination location where you will place the products. For exampl
 At this stage you can set a lot number for traceability (this function will be described later in
 this chapter, so leave this field empty for the moment).
 
-Once the form has been completed you 
+Once the form has been completed you
 can confirm the receipt of all the products at the same time
 using the :guilabel:`Process Now` button. If you want to enter data for a goods receipt that you're still
 waiting for click the button :guilabel:`Process Later`.
@@ -238,7 +238,7 @@ times and priorities.
     This means that you don't have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu
-:menuselection:`Stock Management --> Outgoing Products --> Available Packings`. You find a line
+:menuselection:`Stock Management --> Outgoing Products --> Available Packing`. You find a line
 there for your order representing the items to be sent. Double-click the line to see the detail of
 the items proposed by Open ERP.
 
