@@ -195,7 +195,7 @@ Configuration is required for both the accounts setup and the sales defaults.
 
 #. You've reached the end of this configuration stage so click :guilabel:`Continue` to continue using the
    system as the Administrator. You first reach a new tab :guilabel:`Features` that lists the new menus
-   and views as shown in the figure :ref:`fig-oech03cfss`. Each of the modules that were installed
+   and views as shown in the figure :ref:`fig-oech03cf`. Each of the modules that were installed
    has its own new tab - it's not only the one you see displayed in front of you. Click :guilabel:`Next`
    and :guilabel:`Previous` to move between them. 
 
@@ -209,6 +209,14 @@ Configuration is required for both the accounts setup and the sales defaults.
    :align: center
 
    *The module form once a module is installed*
+   
+.. _fig-oech03cf:
+
+.. figure:: images/openerp_feature.png
+   :scale: 65
+   :align: center
+   
+   *The Features tab once a module is installed*
 
 .. _fig-oech03mm:
 

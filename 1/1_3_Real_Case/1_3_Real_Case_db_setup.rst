@@ -306,7 +306,7 @@ For the second partner, proceed just as you did for the first, with the followin
 * :guilabel:`Address Type` : \ ``Default``\ .
 
 Then add \ ``Customers``\   in the :guilabel:`Categories` field. :guilabel:`Save` the form. To check
-your work you can go to the menu :menuselection:`Partners --> Partner Categories` and click on each
+your work you can go to the menu :menuselection:`Partners --> Partners --> Partners by Categories` and click on each
 category in turn to see the companies in the category.
 
 .. note:: Multiple Partner Categories

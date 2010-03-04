@@ -2,7 +2,7 @@
 Project management
 ==================
 
-In the previous chapter you dealt with the financial management of projects, which was based on
+In the previous chapter you deal with the financial management of projects, which was based on
 Open ERP's analytic accounts, structured into cases. This way of working enables you to analyze
 time plans and budgets, to control invoicing, and to manage your different contracts.
 
@@ -40,23 +40,23 @@ To define a new project, go to the menu :menuselection:`Project Management --> P
 Give your new project a :guilabel:`Project Name`.
 
 You can put this project into a hierarchy, as a child of a :guilabel:`Parent Project`, and
-give it a :guilabel:`Project Manager`. 
-You can also give it a general duration by completing :guilabel:`Starting Date` and 
+give it a :guilabel:`Project Manager`.
+You can also give it a general duration by completing :guilabel:`Starting Date` and
 :guilabel:`Expected End`.
 
 By checking the box :guilabel:`Warn manager`, you configure the system to send the project manager
-an Open ERP request every time that a task is closed. 
+an Open ERP request every time that a task is closed.
 You can also link to a :guilabel:`Working Time` category, and an :guilabel:`Analytic Account`.
 And you add :guilabel:`Project Members` as you need.
 
 .. note:: Warn Customer setup
 
    If you check :guilabel:`Warn customer`, you should define a page header and footer in the
-   :guilabel:`Partner Info` tab for use in an email. 
+   :guilabel:`Partner Info` tab for use in an email.
    Open ERP prepares an email that the user can send to the client
    each time that a task is completed. The contents of this email are based on details of the project
    task, and can be modified by the user before the email is sent.
-   
+
 The status of a project can take the following values:
 
 * \ ``Open``\  : while the project is being carried out,
@@ -79,7 +79,7 @@ The status of a project can take the following values:
 Once a project has been defined you can code in the tasks to be done. You've two possibilities for
 this:
 
-* from the :guilabel:`ACTION` link button :guilabel:`Create a task` to the right of the project form, 
+* from the :guilabel:`ACTION` link button :guilabel:`Create a task` to the right of the project form,
 
 * from the menu :menuselection:`Project Management --> All Tasks`, create a new task and assign it
   to an existing project.
@@ -168,7 +168,7 @@ invoicing method that you already have.
 
 If you want to connect your Sales Order with Project Management tasks you should create such
 products as \ ``Consultant``\  , and \ ``Senior Developer``\  . These products should be configured
-with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procure Method` of \ ``Make to Order``\  , 
+with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procure Method` of \ ``Make to Order``\  ,
 and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you've set this up,
 Open ERP automatically creates a task in project management when the order is approved.
 

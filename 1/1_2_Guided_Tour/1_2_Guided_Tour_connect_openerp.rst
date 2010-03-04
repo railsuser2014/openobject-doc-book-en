@@ -215,7 +215,7 @@ To check your requests:
 
 	#. Click on the link to the right of the :guilabel:`Requests` label to open a list of your
 	   requests. (It's possible that you'll still see the statement :guilabel:`No Requests` because this
-	   information is updated periodically ather than instantly.) The list of requests then opens and you
+	   information is updated periodically rather than instantly.) The list of requests then opens and you
 	   can see the requests you've been sent there.
 
 	#. Click the :guilabel:`Edit` icon, represented by a pencil, at the right hand end of the request
