@@ -170,7 +170,7 @@ section.
 
 Next, various operations can be applied to the base price to calculate the sales or purchase price
 for the partner at the specified quantities. To calculate it you apply the formula shown on the
-form: ``Price = Base Price x (1 – Field1) + Field2`` .
+form: ``Price = Base Price x (1 + Field1) + Field2`` .
 
 The first field, :guilabel:`Field1`, defines a discount. Set it to 0.20 for a discount of 20% from
 the base price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift
@@ -326,7 +326,7 @@ example. If it were the other way round the third rule would always be applied b
 5 is always greater than a quantity of 1 for all products.
 
 Also note that to fix a price of 60 for the 5 Berrel Keyboards, the formula \ ``Price = Base Price x
-(1 – 1.0) + 60``\   has been used.
+(1 + 1.0) + 60``\   has been used.
 
 Establishing customer contract conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -376,7 +376,7 @@ Different bases for price calculation
 Open ERP's flexibility enables you to make prices that depend not only on prices on the product
 form, but in addition to the two predefined ones – Cost Price and Public Price.
 
-To do this use the menu :menuselection:`Products --> Definitions --> Price Types`. Create a new
+To do this use the menu :menuselection:`Products --> Configuration --> Prices Computation --> Price Types`. Create a new
 entry for the new price type. Enter the field name, the field on the product form that this type of
 price corresponds to and the currency that will be expressed in this field. The operation works just
 as well on new fields added to the product form to meet specific developments.
