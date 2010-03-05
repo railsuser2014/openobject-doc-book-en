@@ -119,7 +119,7 @@ system that can be used depending on the needs of each:
   still need to handle (your open, draft and waiting leads),
 
 * :menuselection:`Leads --> My Leads --> My Current Leads --> My Pending Leads` gives a list of all your
-  leads that that are still waiting for a customer response. This enables you to check periodically on
+  leads that are still waiting for a customer response. This enables you to check periodically on
   your work to do,
 
 * :menuselection:`Leads --> All Leads` is a list of all the leads assigned to different salespeople.

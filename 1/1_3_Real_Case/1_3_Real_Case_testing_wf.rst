@@ -250,7 +250,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	   :guilabel:`Shipping Policy` of ``Invoice on Order After Delivery``  from their dropdown menu lists.
 
 	#. Return to the first tab :guilabel:`Sale Order` and validate the document by clicking
-	   guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
+	   :guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
 	   ``Quotation``\  to \ ``In Progress``\ as shown in screenshot :ref:`fig-ch03ord`.  
 	   If you were in negotiation with the prospective customer
 	   you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \

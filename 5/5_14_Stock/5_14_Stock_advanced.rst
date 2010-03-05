@@ -14,7 +14,7 @@ procurement as a function of rules defined in the products.
     Requirements Calculation is often called Scheduling.
 
     By default, it automatically starts once per day.
-    You can also start it manually using the menu :menuselection:`Manufacturing --> Start All
+    You can also start it manually using the menu :menuselection:`Manufacturing --> Compute All
     Schedulers`.
     It then uses the parameters defined in the products, the suppliers, and the company
     to determine the priorities between the different product orders, deliveries and purchases from
@@ -47,7 +47,7 @@ supplier will be generated.
 .. index::
    single: module; sale_supplier_direct_delivery
 
-..tip :: Delivery from the supplier or to the customer
+.. tip :: Delivery from the supplier or to the customer
 
     The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
     the supplier to the customer. At the time of writing this module is in ``addons-extra`` .

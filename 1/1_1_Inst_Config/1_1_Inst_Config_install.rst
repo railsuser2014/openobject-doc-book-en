@@ -221,7 +221,7 @@ resolving this below:
 Installation on Linux (Ubuntu)
 ------------------------------
 
-This section guides you through installing the Open ERP server and client on Ubuntu 9.04, one of the
+This section guides you through installing the Open ERP server and client on Ubuntu, one of the
 most popular Linux distributions. It assumes that you're using a recent release of Desktop Ubuntu
 with its graphical user interface on a desktop or laptop PC.
 
@@ -236,7 +236,9 @@ following :menuselection:`Product --> Documentation` on http://www.openerp.com. 
 are given there for different distributions and releases, and you should also check if there are
 more up to date instructions for the Ubuntu distribution as well.
 
-.. TO Check
+.. To Check
+
+.. _installation-ubuntu-9.04:
 
 Technical procedure: Initial installation and configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -422,7 +424,8 @@ likely to be far more up to date than that available from a Linux distribution.
 	third digit group differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because
 	the differences may be minor – fault fixes rather than functionality changes between the package
 	and the latest version.
-
+	
+	
 Manual installation of the Open ERP server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
