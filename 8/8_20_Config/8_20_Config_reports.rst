@@ -90,6 +90,8 @@ report (:guilabel:`Fields to Display`). Complete the screen along the lines of t
 	        - :guilabel:`Maximum` : gives the maximum of all the values that appear in this field.
 
 	        - :guilabel:`Average` : gives the arithmetic average of all the values in this field.
+	        
+	        - :guilabel:`Count` : gives the count of all the values in this field.
 
 	#. :guilabel:`Graph Mode` the fourth column, determines if the field will appear in the graph view
 	   and, if so, on which axis (X or Y).
@@ -150,7 +152,8 @@ To configure your printable documents in Open ERP, use the module :mod:`base_re
 	You can create your own reports in just a few minutes using the OpenOffice.org Writer plug-in.
 	This tool can give your team a big productivity improvement.
 	Using it, you can create templates for all of your company's documents, reducing the work of
-	creating and laying out data and customer documents.
+	creating and laying out data and customer documents. The plug-in can be downloaded from 
+	http://www.openerp.com/buy.html?page=shop.browse&category_id=7  
 
 The system is both simple and powerful, because it gives you the benefits of all of the layout
 facilities offered by OpenOffice.org Writer as well as all of the data and calculation provided by
@@ -350,7 +353,8 @@ company's logo you must login to the Open ERP server as a user who's allowed to
 Then go to the \ ``addons/custom``\  directory, copy your logo across (in a standard graphical file
 format), then edit the file \ ``corporate_rml_header.rml``\   in a text editor. Text in the form \
 ``<image file="corporate_logo.png" x="1cm" y="27.4cm" width="6cm"/>``\  should be put after the line
-\ ``<!--logo-->``\   to pick up and display your logo on each page that uses the corporate header.
+\ ``<!--logo-->``\   to pick up and display your logo on each page that uses the corporate header.For
+any kind of troubleshooting problems kindly mai us at cde@tinyerp.com.
 
 
 .. Copyright © Open Object Press. All rights reserved.
