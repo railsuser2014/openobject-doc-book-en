@@ -196,10 +196,10 @@ case types are just versions of the generic case.
    *An entry following a business opportunity*
 
 To enter a new business opportunity, you can use the menu that you've just created:
+
 :menuselection:`Sales Management --> Business Opportunities`. Or you could have used the generic
 menus
-:menuselection:`CRM & SRM --> Reporting --> All Cases --> Cases by Section`, or :menuselection:`CRM & SRM --> Reporting
- --> All cases`.
+:menuselection:`CRM & SRM --> Reporting --> All Cases --> Cases by Section`, or :menuselection:`CRM & SRM --> Reporting --> All cases`.
 
 Create a case from :menuselection:`Sales Management --> Business
 Opportunities` by entering information about the request, namely:
