@@ -7,7 +7,7 @@ To familiarize yourself with the system workflow you'll test a purchase-sale wor
 The first consists of product purchase, which requires the following operations:
 
 	#. Place a purchase order with Plumbing Component Suppliers for 10 Titanium Alloy Radiators at a
-	   unit price of 60.00.
+	   unit price of 56.00.
 
 	#. Receive these products at your Goods In.
 
@@ -107,7 +107,7 @@ this would be somebody in Stores, who would:
 	      stores role. That link is very useful during testing and training, however.
 
 	#. When the :guilabel:`Packing` window appears, select the name of the entry in the list 
-	   (\ ``PACK1``\   to display the Packing List itself – you'd usually do a search for the supplier name
+	   (\ ``PACK1``\)   to display the Packing List itself – you'd usually do a search for the supplier name
 	   or order number in a list that was larger than this – then click :guilabel:`Products Received` to load the
 	   :guilabel:`Make Packing` form.
 
@@ -121,7 +121,7 @@ using the expand/collapse controls to make your way through
 the tree and click it. You'll next get a :guilabel:`View Stock of Products` screen, where you just
 click :guilabel:`Open Products` to select everything that the system knows.
 
-You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock``\ location (and below it) with
+You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock`` \ location (and below it) with
 :guilabel:`Real stock` (the actual quantity recorded) and
 :guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
 been made) – both \ ``10``\   in this case.
@@ -277,7 +277,7 @@ Preparing goods for despatch to customers
 -----------------------------------------
 
 The stores manager selects the menu :menuselection:`Stock Management --> Outgoing Products --> 
-Confirmed Packing Awaiting Availability` to get a list of orders to despatch. In this
+Confirmed Packing Waiting Availability` to get a list of orders to despatch. In this
 example there's only one, \ ``PACK2``\  , so click the text to open the 
 :guilabel:`Confirmed Packing Waiting Availability` form.
 

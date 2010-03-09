@@ -109,20 +109,20 @@ Organizing leads
 To help the users organize and handle leads efficiently, Open ERP provides several menus in the CRM
 system that can be used depending on the needs of each:
 
-* :menuselection:`Leads --> New Lead` opens an entry form directly onto a new lead. This menu can
+* :menuselection:`CRM & SRM --> Sales --> Leads --> New Lead` opens an entry form directly onto a new lead. This menu can
   usefully be put into your shortcuts,
 
-* :menuselection:`Leads --> My Leads` gives a list of all the leads (both open and not) which you're
+* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads` gives a list of all the leads (both open and not) which you're
   linked to,
 
-* :menuselection:`Leads --> My Leads --> My Current Leads` gives a list of all your leads that you
+* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads --> My Current Leads` gives a list of all your leads that you
   still need to handle (your open, draft and waiting leads),
 
-* :menuselection:`Leads --> My Leads --> My Current Leads --> My Pending Leads` gives a list of all your
+* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads --> My Current Leads --> My Pending Leads` gives a list of all your
   leads that are still waiting for a customer response. This enables you to check periodically on
   your work to do,
 
-* :menuselection:`Leads --> All Leads` is a list of all the leads assigned to different salespeople.
+* :menuselection:`CRM & SRM --> Sales --> Leads --> All Leads` is a list of all the leads assigned to different salespeople.
   This menu as those beneath it are used by managers to check on each person's work.
 
 .. figure:: images/crm_leads_list.png

@@ -271,7 +271,7 @@ Because you logged in as Administrator, you have all the access you need to conf
 system. A second user, \ ``Demo User``\  , is also present in the system as part of the
 demonstration data. Click the \ ``Demo User``\   name to open a non-editable form on that user.
 
-Click the :guilabel:`Security`  tab to see that the demo user is a member of only the ``Employee`` group,
+Click the :guilabel:`Groups`  tab to see that the demo user is a member of only the ``Employee`` group,
 has no roles
 and is subject to no specialized rules. The \ ``admin``\   user is different, as you can see if you
 follow the same sequence to review the its definition. It's a member of the \ ``admin``\   group,

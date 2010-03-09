@@ -29,8 +29,8 @@ The three following modules are described:
 
 * Microsoft Word interface.
 
-These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris) and
-are available through the official Open ERP site in the modules section. 
+These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris).
+Thunderbird available through the official Open ERP site (http://www.openerp.com/download/modules/5.0/). 
 
 The chapter is a mix of installation and configuration instructions, and basic interaction exercises.
 

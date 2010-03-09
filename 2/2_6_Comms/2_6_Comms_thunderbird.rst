@@ -23,7 +23,7 @@ to load it using one of the methods described at the end of :ref:`ch-inst`. Once
 server's filesystem it's installed the same way as all of the other modules you've handled so far.
 
 You'll then have to install the Thunderbird extension. To do that, use the file \
-``tiny_plugin_2.0.xpi``\   which is found in the plugins directory of the :mod:`thunderbird`
+``tiny_plugin-2.0.xpi``\   which is found in the plugins directory of the :mod:`thunderbird`
 module. Don't install it again if it's already there (which it might be
 because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
 functionality – so some of your staff may use one and other may use the other). 

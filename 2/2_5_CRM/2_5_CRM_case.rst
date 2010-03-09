@@ -69,13 +69,13 @@ this email address – case messages are emailed out automatically from this add
 this address are automatically logged in this section of the CRM system. This functionality is based
 on the email gateway referred to in detail further on in this chapter.
 
-Click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a
+Click the menu :menuselection:`CRM & SRM --> Reporting --> All Cases --> Cases by Section` to get the sections in a
 hierarchical list, then click a section name to list the cases that have been assigned to that
 section.
 
 .. note:: Cases by Section – with data
 
-	Click the menu :menuselection:`CRM & SRM --> Cases --> Cases by Section` to get the sections in a
+	Click the menu :menuselection:`CRM & SRM --> Reporting --> All Cases --> Cases by Section` to get the sections in a
 	hierarchical list,
 	then click a section name, such as :guilabel:`Helpdesk` or :guilabel:`Support`, to list the cases
 	that have been assigned to that section.
@@ -198,8 +198,8 @@ case types are just versions of the generic case.
 To enter a new business opportunity, you can use the menu that you've just created:
 :menuselection:`Sales Management --> Business Opportunities`. Or you could have used the generic
 menus
-:menuselection:`CRM & SRM --> Cases --> Cases by section`, or :menuselection:`CRM & SRM --> Cases
---> All cases`.
+:menuselection:`CRM & SRM --> Reporting --> All Cases --> Cases by Section`, or :menuselection:`CRM & SRM --> Reporting
+ --> All cases`.
 
 Create a case from :menuselection:`Sales Management --> Business
 Opportunities` by entering information about the request, namely:

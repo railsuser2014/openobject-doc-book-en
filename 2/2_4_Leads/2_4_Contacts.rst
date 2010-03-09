@@ -116,9 +116,9 @@ the CRM module if your requirements are limited to customer relationships.
 
 Once the database is installed, Open ERP suggests that you configure it using a series of questions:
 
-* Creating users: click :guilabel:`Skip`,
-
 * Simplified or Extended mode: select simplified and click :guilabel:`Ok`,
+
+* Creating users: click :guilabel:`Skip`,
 
 * Select the CRM functionality to install.
 

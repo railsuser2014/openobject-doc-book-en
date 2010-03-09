@@ -104,9 +104,9 @@ Call management can be used for two particular needs:
 
 To enter details of a phone call, use one of the two following menus:
 
-* :menuselection:`CRM & SRM --> Sales --> Phone Calls --> Inbound`,
+* :menuselection:`CRM & SRM --> Phone Calls --> Inbound`,
 
-* :menuselection:`CRM & SRM --> Sales --> Phone Calls --> Outbound`.
+* :menuselection:`CRM & SRM --> Phone Calls --> Outbound`.
 
 The phone call will then be visible on the partner form to give you complete visibility of the
 events about that customer or supplier.

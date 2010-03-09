@@ -22,14 +22,13 @@ dedicated just to that. That enables you to:
    single: module; base_module_record
 
 Start by installing the module :mod:`base_module_record` in the usual way. Then start recording
-your actions using the menu :menuselection:`Administration --> Modules Management --> Modules
-Recording --> Start Recording`. Manually make all your configuration changes through the user
+your actions using the menu :menuselection:`Administration --> Customization --> Module Creation --> Module Recorder --> Start Recording`. Manually make all your configuration changes through the user
 interface as you would normally (such as menu management, dashboard assignments, screen
 configuration, new reports, and access rights management – details of some of these possibilities
 are described later in this chapter).
+To stop module recording use the menu :menuselection:`Administration --> Customization --> Module Creation --> Module Recorder --> Stop Recording`.
 
-Once you've done all this, go to the menu :menuselection:`Administration --> Modules Management -->
-Modules Recording --> Save Recorded Module`.
+Once you've done all this, go to the menu :menuselection:`Administration --> Customization --> Module Creation --> Module Recorder -->  Save Recorded Module`.
 
 .. index::
    single: module; base_module_publish
@@ -38,8 +37,7 @@ Modules Recording --> Save Recorded Module`.
 
 	Once your personal configuration has been saved into a module, install the module
 	:mod:`base_module_publish`.
-	This gives you a new possible action :guilabel:`Publish Module` in the menu :menuselection:`Administration -->
-	Modules Manage --> Modules`.
+	It adds a button "Publish module" on each module, so that you simply have to call this button when you want to release a new 		 version of your module.
 
 	Use this function to publish your module on the official Open ERP site.
 	It could then be reused by other companies that have the same needs as yours.
@@ -53,7 +51,7 @@ publish it online to help other companies. This could turn out to be useful if y
 test server for your company's users and give them the same configuration as the production server.
 
 To install a new module saved in ZIP file form, use the menu :menuselection:`Administration -->
-Modules Management --> Import a new module`.
+Modules Management --> Import module`.
 
 
 .. Copyright © Open Object Press. All rights reserved.

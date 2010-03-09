@@ -39,7 +39,7 @@ Password  Your Open ERP password
    standards (Windows, Mac, Linux, or other Unix-like system).
    So FTP is just a way of getting access to files without needing to use an Open ERP client.
    There could have been other ways, but FTP proved itself to the developers to be the one that performed best
-   at lowest cost.
+   at lowest cost. The next release of Open ERP uses SFTP.
 
 Once you're connected using FTP you get to the root of a directory for the document
 management system. Once you enter that directory you find a structure that matches the structure

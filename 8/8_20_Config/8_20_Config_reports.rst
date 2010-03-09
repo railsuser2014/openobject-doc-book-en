@@ -80,18 +80,18 @@ report (:guilabel:`Fields to Display`). Complete the screen along the lines of t
 	#. :guilabel:`Grouping Method` the third column lets you to determine the grouping operation that
 	   is to be applied to this field:
 
-	        - :guilabel:`Grouped` : enables you to group document entries with the same value in this
+	        - :guilabel:`Grouped` : Enables you to group document entries with the same value in this
 		        field.
 
-	        - :guilabel:`Sum` : gives the sum of values in this field.
+	        - :guilabel:`Sum` : Gives the sum of values in this field.
 
-	        - :guilabel:`Minimum` : gives the minimum of all the values that appear in this field.
+	        - :guilabel:`Minimum` : Gives the minimum of all the values that appear in this field.
 
-	        - :guilabel:`Maximum` : gives the maximum of all the values that appear in this field.
+	        - :guilabel:`Maximum` : Gives the maximum of all the values that appear in this field.
 
-	        - :guilabel:`Average` : gives the arithmetic average of all the values in this field.
-	        
-	        - :guilabel:`Count` : gives the count of all the values in this field.
+	        - :guilabel:`Average` : Gives the arithmetic average of all the values in this field.
+
+	        - :guilabel:`Count` : Gives the count of all the values in this field.
 
 	#. :guilabel:`Graph Mode` the fourth column, determines if the field will appear in the graph view
 	   and, if so, on which axis (X or Y).
@@ -134,7 +134,7 @@ appear in the dashboard.
 
    *Definition of a new dashboard*
 
-Once the dashboard has been defined through the menu  
+Once the dashboard has been defined through the menu
 :menuselection:`Dashboards --> Configuration --> Dashboard definition`
 you can use the :guilabel:`Create Menu` button to create a menu
 entry for your dashboard anywhere in the menu system.
@@ -152,8 +152,8 @@ To configure your printable documents in Open ERP, use the module :mod:`base_re
 	You can create your own reports in just a few minutes using the OpenOffice.org Writer plug-in.
 	This tool can give your team a big productivity improvement.
 	Using it, you can create templates for all of your company's documents, reducing the work of
-	creating and laying out data and customer documents. The plug-in can be downloaded from 
-	http://www.openerp.com/buy.html?page=shop.browse&category_id=7  
+	creating and laying out data and customer documents. The plug-in can be downloaded from
+	http://www.openerp.com/buy.html?page=shop.browse&category_id=7
 
 The system is both simple and powerful, because it gives you the benefits of all of the layout
 facilities offered by OpenOffice.org Writer as well as all of the data and calculation provided by

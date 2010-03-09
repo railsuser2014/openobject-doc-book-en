@@ -20,14 +20,12 @@ from the Outlook email client:
 Installing the Outlook plugin
 -----------------------------
 
-To start, you must install the :mod:`email_interface` module in Open ERP. It's the same module as
+To start, you must extensions. It's the same module as
 used by the Thunderbird extension. Don't install it again if it's already there (which it might be
 because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
 functionality – so some of your staff may use one and other may use the other).
 
-Once you've installed the module all you need is to run the Windows auto-installer \
-``tiny_outlook_plugin-X.exe``\   where X corresponds to the version number downloaded. This file can
-be found in the list of modules on the official Open ERP site.
+Once you've installed the module all you need is to run the Windows auto-installer. This module is developed by Axelor (http://axelor.com/ , located in Paris).
 
 Installation is then automatic.
 

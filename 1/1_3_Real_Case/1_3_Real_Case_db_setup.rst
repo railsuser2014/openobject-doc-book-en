@@ -485,6 +485,7 @@ differently for various needs.
 Before you can use any chart of accounts for anything you need to specify a Fiscal Year. This
 defines the different time periods available for accounting transactions. An initial Fiscal Year
 was created during the database setup so you don't need to do any more on this.
+You can also create Fiscal year manually from :menuselection:`Financial Management --> Configuration --> Financial Accounting --> Periods --> Fiscal Years`
 
 Click :menuselection:`Financial Management --> Charts --> Charts of Accounts` and then click
 :guilabel:`Open Charts` to open a new
