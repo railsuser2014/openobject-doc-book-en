@@ -224,6 +224,57 @@ access to an object for all users you could create a rule:
 
 You can then create additional rules on the same object to give specific rights to certain groups.
 
+.. index::
+   single: record
+   
+Record Rules For Objects
+------------------------
+
+Record rules determine who can access the objects depending on the rules set for the particular object. A record rule has some tests to be performed on objects.
+
+You can manage four access modes on objects independently depending on the test:
+
+    * :guilabel:`Read access` : can read the data in the object,
+    
+    * :guilabel:`Create access` : can create a new record in the object,
+
+    * :guilabel:`Write access` : can modify the contents of records in the object,
+
+    * :guilabel:`Delete access` : can delete records from the object.
+
+To configure rule on object, use the menu :menuselection:`Administration -->
+Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
+
+    * :guilabel:`Object` : Object on which to have the rule
+
+    * :guilabel:`Name` : Name of the rule
+
+    * :guilabel:`Global` : If global is checked then that rule would be applied for all the groups and if it is unchecked then that rule would be applied only for the groups selected for it
+
+    * :guilabel:`Test` : A list of all the tests for the object
+            
+            * If there are mulitple tests on same object then all of them are joined using ``AND`` operator and depending on the result the rule would be satisfied
+
+            * If there are multiple rules on same object then all of them are joined using ``OR`` operator    
+
+    * :guilabel:`Access Modes` : Read, Write, Create, Delete as described earlier 
+            
+            * If only one access mode is checked, then only that mode would be applied
+            
+            * If all of them are checked then all the access modes would be applied
+    
+        But atleast one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise exception.
+
+.. figure:: images/security_rule.png
+   :scale: 75
+   :align: center
+
+*For eg :* If we have a rule defined on ``res.partner`` object which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', User)]``. We check only the create and write access mode and keep other access modes unchecked.
+
+So this means that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman and can not create/write records where he is not the dedicated salesman. As other access modes are unchecked the user can read/delete the records of partners where he is not the dedicated salesman. 
+
+.. note:: Currently record rules are enforced for all operations (read, create, write, delete). But the above described feature is new for version 5.2. 
+   
 .. index:: 
    single: modification history
    
