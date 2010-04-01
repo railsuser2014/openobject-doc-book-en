@@ -52,7 +52,7 @@ groups, and the group(s) you belong to determine(s):
 
 * the accessibility of each table in the database.
 
-For example, the group \ ``Stock``\ may only be given access to some of the menus in 
+For example, the group \ ``Stock``\ may only be given access to some of the menus in
 :menuselection:`Stock Management`, and may have no access to any of the accounting information. Each system user who works in
 Stores is given membership of the ``Stock`` group. If some users also work elsewhere, they'd also be
 given membership of other groups.
@@ -61,7 +61,7 @@ Open ERP users can also belong to various roles. Just as group gives a user acc
 role determines the user's duties. This is managed at the level of workflows, which form the
 company's business processes.
 
-.. index:: 
+.. index::
    pair: user; group
 
 Groups and Users
@@ -208,8 +208,8 @@ You can manage four access modes on objects independently:
    *Access control to invoices for the Finance/Admin group*
 
 To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
-Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there 
-and click :guilabel:`Edit`. 
+Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there
+and click :guilabel:`Edit`.
 You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
 the object (:guilabel:`Model`), then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
 
@@ -226,7 +226,7 @@ You can then create additional rules on the same object to give specific rights 
 
 .. index::
    single: record
-   
+
 Record Rules For Objects
 ------------------------
 
@@ -235,7 +235,7 @@ Record rules determine who can access the objects depending on the rules set for
 You can manage four access modes on objects independently depending on the test:
 
     * :guilabel:`Read access` : can read the data in the object,
-    
+
     * :guilabel:`Create access` : can create a new record in the object,
 
     * :guilabel:`Write access` : can modify the contents of records in the object,
@@ -252,32 +252,32 @@ Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
     * :guilabel:`Global` : If global is checked then that rule would be applied for all the groups and if it is unchecked then that rule would be applied only for the groups selected for it
 
     * :guilabel:`Test` : A list of all the tests for the object
-            
+
             * If there are mulitple tests on same object then all of them are joined using ``AND`` operator and depending on the result the rule would be satisfied
 
-            * If there are multiple rules on same object then all of them are joined using ``OR`` operator    
+            * If there are multiple rules on same object then all of them are joined using ``OR`` operator
 
-    * :guilabel:`Access Modes` : Read, Write, Create, Delete as described earlier 
-            
+    * :guilabel:`Access Modes` : Read, Write, Create, Delete as described earlier
+
             * If only one access mode is checked, then only that mode would be applied
-            
-            * If all of them are checked then all the access modes would be applied
-    
-        But atleast one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise exception.
 
-.. figure:: images/security_rule.png
-   :scale: 75
-   :align: center
+            * If all of them are checked then all the access modes would be applied
+
+        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise exception.
+
+.. .. figure:: images/security_rule.png
+..    :scale: 75
+..    :align: center
 
 *For eg :* If we have a rule defined on ``res.partner`` object which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', User)]``. We check only the create and write access mode and keep other access modes unchecked.
 
-So this means that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman and can not create/write records where he is not the dedicated salesman. As other access modes are unchecked the user can read/delete the records of partners where he is not the dedicated salesman. 
+So this means that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman and can not create/write records where he is not the dedicated salesman. As other access modes are unchecked the user can read/delete the records of partners where he is not the dedicated salesman.
 
-.. note:: Currently record rules are enforced for all operations (read, create, write, delete). But the above described feature is new for version 5.2. 
-   
-.. index:: 
+.. note:: Currently record rules are enforced for all operations (read, create, write, delete). But the above described feature is new for version 5.2.
+
+.. index::
    single: modification history
-   
+
 Modification history
 --------------------
 
@@ -291,17 +291,17 @@ Each record in a Open ERP database carries a note of its history. You can find o
 created by and when that occurred, and who last modified it and when that occurred. Click the
 :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-
 only, not when it's editable) to display a dialog box showing this information, as shown in the
-figure :ref:`fig-sflow`. It can help you identify who to contact if there are any problems with the 
+figure :ref:`fig-sflow`. It can help you identify who to contact if there are any problems with the
 data in the records.
 
-.. index:: 
+.. index::
    single: module; audittrail
-   
+
 .. tip:: Audit Trail
 
-   Open ERP has an Audit Trail module :mod:`audittrail` which can be used to track any or 
+   Open ERP has an Audit Trail module :mod:`audittrail` which can be used to track any or
    all of the changes to one or more objects. It should be used with care, because it
-   can generate huge amounts of data in the live database, but can be an invaluable 
+   can generate huge amounts of data in the live database, but can be an invaluable
    tool.
 
 .. Copyright © Open Object Press. All rights reserved.
