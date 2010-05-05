@@ -11,7 +11,7 @@ by the logistics manager.
 
 .. note:: MPS, Procurement and Production
    
-   Open ERP distinguishes between Production, Purchase and Production.
+   Open ERP distinguishes between Production, Purchase and Procurement.
    
    Production is manufacture, Purchase is the acquisition of goods from another party,
    and Procurement is either or both of those. So it would be better to call the
@@ -78,7 +78,7 @@ Production Plan
 
 The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings
 (consumption or customer deliveries) by period. To do this use the menu :menuselection:`Stock
-Management --> Planning --> Master Procurement Schedule`.
+Management --> Procurement Forecast --> Master Procurement Schedule`.
 
 For each period and product Open ERP gives you the following information:
 

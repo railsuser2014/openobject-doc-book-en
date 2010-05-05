@@ -685,7 +685,7 @@ Once the component has been selected, Open ERP automatically completes most of t
 
 * :guilabel:`Source location` : given by the stock management,
 
-* :guilabel:`To invoice or not` : depends on the actual date and the quarantee period.
+* :guilabel:`To invoice or not` : depends on the actual date and the guarantee period.
 
 This information is automatically proposed by the system but you can modify it all yourself.
 
