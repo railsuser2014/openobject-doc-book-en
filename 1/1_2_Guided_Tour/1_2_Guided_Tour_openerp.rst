@@ -388,8 +388,6 @@ Open ERP's Human Resources Management modules provide such functionality as:
 
 * management of employment contracts,
 
-* benefits management,
-
 * management of holiday and sickness breaks,
 
 * managing claims processes,
