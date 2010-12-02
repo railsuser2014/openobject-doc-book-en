@@ -94,11 +94,11 @@ If you install the :mod:`hr_contract` module you can link contract details to th
 
 You can enter information about the employment contract for the employee, such as:
 
-*  :guilabel:`Contract Name`
+*  :guilabel:`Contract Reference`
 
-*  :guilabel:`Function`
+*  :guilabel:`Job Title`
 
-*  :guilabel:`Working hours per day`
+*  :guilabel:`Working Schedule`
 
 *  :guilabel:`Start Date`
 
