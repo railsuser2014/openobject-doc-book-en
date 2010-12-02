@@ -121,22 +121,20 @@ and type in the time that they left when they come in again the next day. This g
 of managing forgotten sign-outs.
 
 Find employee attendance details from their forms in
-:menuselection:`Human Resources --> Employees --> All Employees`.
+:menuselection:`Human Resources --> Employees`.
 
 To get the detail of attendances from an employee's form in Open ERP you can use the three
 available reports:
 
 *  :guilabel:`Print Attendance Error Report`
 
-*  :guilabel:`Print Timesheet by week`
-
-*  :guilabel:`Print Timesheet by month`
+*  :guilabel:`Print Attendances By Month`
 
 The first report highlights errors in attendance data entry.
 It shows you whether an employee has entered the time of
 entry or exit manually and the differences between the actual and expected sign out time and the time.
 
-The others are reports using the data recorded.
+The second report shows the attendance data recorded.
 
 .. Copyright © Open Object Press. All rights reserved.
 
