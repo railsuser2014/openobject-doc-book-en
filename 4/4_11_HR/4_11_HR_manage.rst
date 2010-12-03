@@ -20,7 +20,6 @@ current list of collaborators.
 
 	A “user” is a physical person who's given access to the company's systems. Most employees are
 	users but some users aren't employees: external partners can have access to parts of the system.
-	You can manage them through the :mod:`portal_` modules.
 
 Here are some examples of functions which depend on the accuracy of the employee list:
 
@@ -104,7 +103,7 @@ You can enter information about the employment contract for the employee, such a
 
 *  :guilabel:`End Date`
 
-*  :guilabel:`Wage Type` either :guilabel:`Monthly Gross` or :guilabel:`Weekly Net`
+*  :guilabel:`Wage Type` like :guilabel:`Monthly Gross` or :guilabel:`Monthly Net` or or :guilabel:`Monthly Basic`
 
 .. index::
    single: employee; sign in / sign out
