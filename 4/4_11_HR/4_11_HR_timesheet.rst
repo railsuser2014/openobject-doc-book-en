@@ -151,7 +151,7 @@ Entering timesheet data
 To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu
-:menuselection:`Human Resources --> Working Hours --> My Working Hours --> My Working Hours of The Day`,
+:menuselection:`Human Resources --> Time Tracking --> Working Hours`,
 the click :guilabel:`New`.
 
 .. tip:: Shortcut to timesheets
@@ -183,18 +183,6 @@ The hours are then encoded throughout the day by each employee. It helps to revi
 end of the day to verify that the number of hours of attendance in the company has been properly
 accounted for. The total entered is shown at the bottom right of the list of service hours.
 
-The accuracy of the services entered is crucial for calculating the profitability of the different
-jobs and the recharging of services. Different reports are therefore available for verifying
-employees' data entry. Employees can verify their own timesheet using the following reports:
-
-* Printing the timesheets per month, using the menu :menuselection:`Human Resources --> Reporting
-  --> Timesheet --> Print my timesheet`.
-
-* Reviewing all service entries using the menu :menuselection:`Human Resources --> Timesheets
-  --> My Timesheets --> My timesheets to confirm`.
-  You can then use the filters to analyze your services by project, by
-  period or by product.
-
 .. tip:: Hiding service costs
 
 	By default, Open ERP is configured to show the cost of each service when an employee encodes the
@@ -203,7 +191,7 @@ employees' data entry. Employees can verify their own timesheet using the follow
 
 	(And the way to do that is either to modify the view on the filesystem, or
 	to use the web client to modify the view in the current database.
-	For the latter, there's a pale grey :guilabel:`[CUSTOMIZE]` label
+	For the latter, there's a pale grey :guilabel:`[Customize]` label
 	to the bottom left of each form that gives you access to the
 	:guilabel:`Manage Views` option.
 	If you have sufficient permissions you can edit the XML that defines the current view.)
@@ -211,10 +199,15 @@ employees' data entry. Employees can verify their own timesheet using the follow
 	The value in the cost field shows employees the cost of their time used in the company, so masking this
 	field might not always be the best option.
 
-Managers can draw on different reports for managing timesheets quite easily. You can print a summary
-in the form of a table per user and per day in the menu :menuselection:`Human Resources -->
-Reporting --> Timesheet --> Employees timesheet`. This helps you spot when an employee has
-forgotten to enter her timesheet details on a certain day.
+The accuracy of the services entered is crucial for calculating the profitability of the different
+jobs and the recharging of services. Different reports are therefore available for verifying
+employees' data entry. Employees can verify their own timesheet using the following reports:
+
+* Printing the particular employee's timesheet, using the menu :menuselection:`Human Resources --> Reporting
+  --> Timesheet --> Employee Timesheet`.
+
+* Printing the more then one employees' timesheet, using the menu :menuselection:`Human Resources --> Reporting
+  --> Timesheet --> Employees Timesheet`.You can print a summary in the form of a table per user and per day.
 
 .. figure::  images/service_timesheet_all.png
    :scale: 50
@@ -222,18 +215,13 @@ forgotten to enter her timesheet details on a certain day.
 
    *Employees' monthly summary timesheet*
 
-If you install the module :mod:`report_timesheet` you'll have many more reports available.
-Some new graphs become available through the menus
-:menuselection:`Human Resources --> Reporting --> This Month` and
-:menuselection:`Human Resources --> Reporting --> All Months`, for example:
+* Reviewing profit of timesheet, using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
+  --> Timesheet Profit`.
 
-*  :guilabel:`Timesheet by User`
-
-*  :guilabel:`Timesheet by Invoice`
-
-*  :guilabel:`Daily Timesheet by Account`
-
-*  :guilabel:`Timesheet by Account`
+* You can then use the statistical reports to analyze your services by period,by product
+  or by account using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
+  --> Timesheet Analysis` and :menuselection:`Human Resources --> Reporting --> Timesheets
+  --> Timesheet Sheet Analysis`.
 
 .. figure::  images/service_timesheet_graph.png
    :scale: 50
@@ -243,20 +231,6 @@ Some new graphs become available through the menus
 
 The data making up these graphs can be varied using the filters available in the upper part of the
 screen. If you want to see more detail, switch to the list view.
-
-.. note:: Project dashboard when signing in
-
-	The dashboard for managing projects has a graphical view that summarizes the current user's
-	timesheet for the last seven days.
-
-	you can assign a dashboard to users so that it appears when they sign into Open ERP.
-	Then each employee will be able to see if they forgot to complete their timesheet next time
-	they sign into the system.
-
-	.. index::
-	   single: module; board_project
-
-	To use this dashboard, install the module :mod:`board_project`.
 
 .. index::
    single: timesheets; evaluation
