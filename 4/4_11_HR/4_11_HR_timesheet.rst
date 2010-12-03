@@ -58,8 +58,8 @@ Amongst the many uses of such a timesheet system for a company, here are some of
 Timesheet categories
 --------------------
 
-The different timesheet categories (working time sessions) can be defined in the menu 
-:menuselection:`Human Resources --> Configuration --> Working Time Categories` and select 
+The different timesheet categories (working time sessions) can be defined in the menu
+:menuselection:`Human Resources --> Configuration --> Working Time Categories` and select
 one of the groups there such as :guilabel:`38 Hours/Week`.
 
 .. figure::  images/service_timesheet_def.png
@@ -99,20 +99,18 @@ The following information is important in the product form:
 
 *  :guilabel:`Unit of Measure` : \ ``Hour``\  \ ``Day``\
 
-*  :guilabel:`List Price`
+*  :guilabel:`Cost Price`
 
-*  :guilabel:`Standard Price`
+*  :guilabel:`Sale Price`
+
+*  :guilabel:`Costing Method` : either \ ``Standard Price``\  or  \ ``Average Price``\
 
 .. index::
    single: module; product_index
 
 .. tip:: Price Indexation
 
-	The module :mod:`product_index` lets you generate indexes connected to the change of purchase or sale
-	price for individual products.
-
-	In human resources, this module can be used to change your prices or costs in step with a national
-	index.
+	When the `Costing Method` is `Average Price` in the `Product` form you can have a button beside `Cost Price` field that open up the wizard for changing the cost price.
 
 In summary, each company employee corresponds, in most cases, to:
 
@@ -152,7 +150,7 @@ Entering timesheet data
 
 To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet`. Once this module
 has been installed and the employees configured, the different system users can enter their
-timesheet data in the menu 
+timesheet data in the menu
 :menuselection:`Human Resources --> Working Hours --> My Working Hours --> My Working Hours of The Day`,
 the click :guilabel:`New`.
 
@@ -174,11 +172,11 @@ For a new entry:
 	#. 	:guilabel:`Description` : a free text description of the work done in the time.
 
 	#. 	:guilabel:`Quantity` : number of units of time (the units are defined as part of the product).
-	
-The other fields are automatically completed but can be modified: the :guilabel:`Product` 
+
+The other fields are automatically completed but can be modified: the :guilabel:`Product`
 which is the service product such as consultancy, the
-:guilabel:`Unit of Measure` (predefined, and could perhaps be minutes, hours or days), 
-the :guilabel:`Cost` of the service (which is calculated by default), 
+:guilabel:`Unit of Measure` (predefined, and could perhaps be minutes, hours or days),
+the :guilabel:`Cost` of the service (which is calculated by default),
 and the associated :guilabel:`General Account`.
 
 The hours are then encoded throughout the day by each employee. It helps to revisit the list at the
@@ -193,7 +191,7 @@ employees' data entry. Employees can verify their own timesheet using the follow
   --> Timesheet --> Print my timesheet`.
 
 * Reviewing all service entries using the menu :menuselection:`Human Resources --> Timesheets
-  --> My Timesheets --> My timesheets to confirm`. 
+  --> My Timesheets --> My timesheets to confirm`.
   You can then use the filters to analyze your services by project, by
   period or by product.
 
@@ -202,11 +200,11 @@ employees' data entry. Employees can verify their own timesheet using the follow
 	By default, Open ERP is configured to show the cost of each service when an employee encodes the
 	number of hours per project.
 	You can modify this field by adding the attribute invisible=True in the timesheet view.
-	
+
 	(And the way to do that is either to modify the view on the filesystem, or
 	to use the web client to modify the view in the current database.
 	For the latter, there's a pale grey :guilabel:`[CUSTOMIZE]` label
-	to the bottom left of each form that gives you access to the 
+	to the bottom left of each form that gives you access to the
 	:guilabel:`Manage Views` option.
 	If you have sufficient permissions you can edit the XML that defines the current view.)
 
@@ -225,8 +223,8 @@ forgotten to enter her timesheet details on a certain day.
    *Employees' monthly summary timesheet*
 
 If you install the module :mod:`report_timesheet` you'll have many more reports available.
-Some new graphs become available through the menus 
-:menuselection:`Human Resources --> Reporting --> This Month` and 
+Some new graphs become available through the menus
+:menuselection:`Human Resources --> Reporting --> This Month` and
 :menuselection:`Human Resources --> Reporting --> All Months`, for example:
 
 *  :guilabel:`Timesheet by User`
@@ -254,9 +252,9 @@ screen. If you want to see more detail, switch to the list view.
 	you can assign a dashboard to users so that it appears when they sign into Open ERP.
 	Then each employee will be able to see if they forgot to complete their timesheet next time
 	they sign into the system.
-	
+
 	.. index::
-	   single: module; board_project	
+	   single: module; board_project
 
 	To use this dashboard, install the module :mod:`board_project`.
 
@@ -269,7 +267,7 @@ Evaluation of service costs
 
 You already know that timesheets are closely linked with analytic accounts. The different projects
 reported on the timesheets correspond to analytic accounts. The timesheet entries themselves are
-analytic entries. 
+analytic entries.
 
 These entries comprise various analytic operations that don't correspond to any of
 the general accounts. Therefore all operations that modify and create timesheet lines automatically
@@ -293,7 +291,7 @@ the analytic accounts.
 
 .. index::
    single: benefits
-   
+
 An analytic account should be reflected in the general accounts, but there's no direct counterpart
 of these analytic accounts in the general accounts. Instead, if the hourly costs of the employees
 are correctly accounted for, the month's timesheet entries should be balanced by the salary +
@@ -357,7 +355,7 @@ These hours and their deduction from the original limit are also managed by thes
 
 In such a situation, hours that aren't coded into the timesheets represent lost money for the
 company. So it's important to establish effective follow-up of the services timesheets and their
-encoding. To set up a structure for control using timesheets you should install the module 
+encoding. To set up a structure for control using timesheets you should install the module
 :mod:`hr_timesheet_sheet`.
 
 .. figure::  images/timesheet_flow.png
