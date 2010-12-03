@@ -152,7 +152,7 @@ To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet`
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu
 :menuselection:`Human Resources --> Time Tracking --> Working Hours`,
-the click :guilabel:`New`.
+then click :guilabel:`New`.
 
 .. tip:: Shortcut to timesheets
 
@@ -343,8 +343,8 @@ made by employees each day. At the end of the week, employees validate their wee
 then passed to the services manager, who must approve his team's entries. Periods are defined in the
 company forms, and you can set them to run monthly or weekly.
 
-To enter timesheet data each employee uses the menu :menuselection:`Human Resources --> Timesheets
---> My Timesheets --> My Current Timesheet`.
+To enter timesheet data each employee uses the menu :menuselection:`Human Resources --> Time Tracking
+--> My Timesheet`.
 
 .. figure::  images/service_timesheet_sheet_form.png
    :scale: 50
@@ -371,7 +371,7 @@ second tab to detect the days or the entries that haven't been correctly coded i
 
    *Detail of hours worked by day for an employee*
 
-The third tab :guilabel:`By account` shows the time worked on all the different projects. That enables you
+The action :guilabel:`Timesheet by Account` shows the time worked on all the different projects. That enables you
 to step back to see an overview of the time an employee has worked spread over different projects.
 
 At the end of the week or the month, the employee confirms his timesheet. If the attendance time in
@@ -379,11 +379,10 @@ the company corresponds to the encoded entries, the whole timesheet is then conf
 his department manager, who is then responsible for approving it or asking for corrections.
 
 Each manager can then look at a list of his department's timesheets waiting for approval using the
-menu :menuselection:`Human Resource --> Timesheets --> My Department's Timesheets --> Timesheets to
-validate`. He then has to approve them or return them to their initial state.
+menu :menuselection:`Human Resource --> Reporting  --> Timesheet --> Timesheet Sheet Analysis` by appling the proper filters. He then has to approve them or return them to their initial state.
 
-To define the departmental structure, use the menu :menuselection:`Administration --> Users -->
-Departments --> Departments`.
+To define the departmental structure, use the menu :menuselection:`Human Resources --> Configuration -->
+Human Resources --> Departments`.
 
 .. tip:: Timesheet approval
 
