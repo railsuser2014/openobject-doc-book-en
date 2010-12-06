@@ -85,7 +85,7 @@ The main account fields are:
 
 *  :guilabel:`Account Type` : account types determine an account's use in each journal.
    By default the following types are available:
-   :guilabel:`View`,:guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
+   :guilabel:`View`, :guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
    :guilabel:`Expense`, :guilabel:`Tax`, :guilabel:`Cash`, :guilabel:`Asset`, :guilabel:`Equity`.
    You can add new types through the menu
    :menuselection:`Financial Management -->
@@ -98,7 +98,7 @@ The main account fields are:
 
 .. note:: Type of account
 
-	The account types are mainly used as an informative title.
+	The account types are mainly used for information purposes only.
 	The only two types that have any particular effect are :guilabel:`Receivables` and :guilabel:`Payables`.
 
 	These two types are used by reports on partner credits and debits.

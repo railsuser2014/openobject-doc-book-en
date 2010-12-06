@@ -22,7 +22,7 @@ From invoice to payment
 
 
  *This chapter traces the basic accounting workflow in Open ERP, from entering an invoice to
- registering payment. The various operations are described, from the entry of accounting receipts and
+ registering payment. The various operations are described, from the entry of accounting receipts to
  the treatment of the reconciliation process, including payment orders.*
 
 Accounting is at the heart of managing a company: all the company's operations have an impact here.
@@ -30,7 +30,7 @@ It has an informational role (how much cash is there? what debts need to be repa
 valuation?) and, because of the information it provides, a reliable and detailed accounting system
 can and should have a major decision-making role.
 
-In most real companies, accounting is limited to producing statutory reports and satisfying the
+In most companies, accounting is limited to producing statutory reports and satisfying the
 directors' curiosity about certain strategic decisions, and to printing the balance sheet and the
 income statement several times a year. Even then there's often several weeks of delay between
 reality and the report.
@@ -48,7 +48,7 @@ reality and the report.
 	* reduce data entry effort – you only need do it once,
 
 	* run your processes with the benefit of financial vision: for example in managing projects,
-	  negotiating contracts, and forecasting cash flow,
+	  negotiating contracts and forecasting cash flow,
 
 	* easily get hold of useful information when you need it, such as a customer's credit position.
 
@@ -56,29 +56,29 @@ So accounting is too often underused. The information it brings makes it a very 
 for running the company if it's integrated into the management system. Accounting information really
 is necessary in all of your company's processes for you to be effective, for example:
 
-* for preparing quotations it's important to know the precise financial position of the client, and
+* for preparing quotations it's important to know the precise financial position of the customer, and
   to see a history of any delays in payment,
 
-* if a given customer has exceeded their credit limit, accounting can automatically stop further
+* if a given customer has exceeded his credit limit, accounting can automatically stop further
   deliveries to the customer,
 
 * if a project budget is 80% consumed but the project is only 20% complete you could renegotiate
-  with the client, or review and rein in the objectives of the project,
+  with the customer, or review and rein in the objectives of the project,
 
 * if you need to improve your company's cash flow then you could plan your services projects on the
   basis of billing rates and payment terms of the various projects, and not just delivery dates –
   you could work on short-term client projects in preference to R&D projects, for example.
 
-Open ERP's general accounting and analytic accounting handle these needs well because of the close
+Open ERP's general and analytic accounting handle these needs well because of the close
 integration between all of the application modules. Furthermore, the transactions, the actions and
-the financial analyses happen in real time, so that you can not only monitor the situation but also
+the financial analyses happen in real time, so that you cannot only monitor the situation but also
 manage it effectively.
 
 .. index::
    single: module; account
 
 The :mod:`account` module in Open ERP covers general accounting, analytic accounting, and auxiliary
-and budgetary accounting. It's double-entry, multi-currency and multi-company.
+and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 .. index::
    single: accounting
@@ -95,7 +95,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	  business. It's managed using double-entry accounting which ensures that each transaction is
 	  credited to one account and debited from another.
 
-	* Analytical accounting (or management accounting, or cost accounting) is an independent accounting
+	* Analytical accounting (or management or cost accounting) is an independent accounting
 	  system which reflects the general accounts but is structured along axes that represent the
 	  company's management needs.
 
@@ -121,7 +121,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 	   single: module; base_synchro	
 
 	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
-	  module, which is a shared-funding module rather than in the standard open repositories.
+	  module, which is a shared-funding module rather than a module in the standard open repositories.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in Open ERP an Order automatically generates an
@@ -142,7 +142,7 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 
 .. tip:: For accountants
 
-	When you create a database you can elect to install only the accounting modules by choosing the
+	When you create a database you can install only the accounting modules by choosing the
 	:guilabel:`Accounting only profile` :mod:`profile_accounting`.
 
 	You should then install the web portal :mod:`portal_account`. 
