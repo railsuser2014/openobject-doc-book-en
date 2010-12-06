@@ -1,12 +1,12 @@
 
 .. index::
-   single: Services Management
+   single: Deliver Quality Services
 
 .. _ch-services:
 
-*******************
-Services Management
-*******************
+************************
+Deliver Quality Services
+************************
 
  *This chapter focuses on the management of contracts, and the services associated with that.
  The complete process of managing services is studied here: from defining prices and contracts to
@@ -26,7 +26,6 @@ no particular chart of accounts configured.
 
     4_12_Services_contract
     4_12_Services_planning
-    4_12_Services_treatment
 
 .. raw:: html
 
