@@ -29,6 +29,7 @@ no particular chart of accounts configured.
 
     4_11_HR_manage
     4_11_HR_timesheet
+    4_11_HR_expenses
     4_11_HR_hire_new_people
 
 .. raw:: html
