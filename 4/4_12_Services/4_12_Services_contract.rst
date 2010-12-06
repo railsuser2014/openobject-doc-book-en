@@ -19,7 +19,7 @@ several distinct types of services contract, such as:
 	defined period.
 	In such a case the contract is represented by a pricelist for that specific customer.
 
-	The pricelist is linked in the :guilabel:`Properties` tab of the customer's :guilabel:`Partner` form,
+	The pricelist is linked in the :guilabel:`Sales and Purchases` tab of the :guilabel:`Customers` form,
 	so that it is brought up whenever anything is bought from or sold to this partner
 	(depending on whether it's a purchase or sales agreement).
 	Open ERP automatically selects the price based on this agreed pricelist.
@@ -30,11 +30,11 @@ Fixed Price contracts
 Fixed price contracts for the sale of services are represented in Open ERP by a Sales Order. In
 this case, the supply of services is managed just like all other stockable or consumable products.
 
-You can add new orders using the menu :menuselection:`Sales Management --> Sales Orders --> New Quotation`.
+You can add new orders using the menu :menuselection:`Sales --> Sales --> Sales Orders`.
 
 The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no
-accounting impact on the system until it's confirmed. When you approve the document, your estimate
-moves into the state \ ``In Progress``\  .
+accounting impact on the system until it's confirmed. When you confirm the order, your estimate
+moves into the state \ ``Manual In Progress``\  .
 
 .. figure::  images/service_sale_workflow.png
    :scale: 50
@@ -46,9 +46,9 @@ Once the order has been approved, Open ERP will automatically generate an invoi
 document proposal based on the parameters you set in the order.
 
 The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping
-Policy` on the order's second tab :guilabel:`Other data` :
+Policy` on the order's second tab :guilabel:`Other Information` :
 
-*  :guilabel:`Payment before delivery` : Open ERP creates an invoice in the \ ``Draft``\   state.
+*  :guilabel:`Payment Before Delivery` : Open ERP creates an invoice in the \ ``Draft``\   state.
    Once this is confirmed and paid the delivery is activated.
 
 *  :guilabel:`Invoice on Order After Delivery` : the delivery order is produced when the order is
@@ -57,7 +57,7 @@ Policy` on the order's second tab :guilabel:`Other data` :
 *  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of
    the order, and adds a button which you manually click when you're ready to create an invoice.
 
-*  :guilabel:`Invoice from the Packing` : invoices are created from the packing stage.
+*  :guilabel:`Invoice from Delivery` : invoices are created from the packing stage.
 
 .. index:: delivery
 
@@ -139,8 +139,8 @@ services, purchase of raw materials, and expense reimbursements.
 
 Services are then entered onto timesheets by the various people who work on the project.
 Periodically the project manager or account manager uses the following menu to prepare an invoice
-:menuselection:`Financial Management --> Periodical Processing --> Entries to Invoice -->
-Uninvoiced Entries`.
+:menuselection:`Accounting --> Periodical Processing --> Billing -->
+Bill Tasks Works`.
 
 Open ERP then displays all of the costs that haven't yet been invoiced. You can filter the proposed
 list and click the appropriate action button to generate the corresponding invoices. You can select
@@ -157,8 +157,7 @@ the level of detail which is reported on the invoice, such as the date and detai
 
 .. note:: Project Management and analytic accounts
 
-	The menu :menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`
-	is only available once you have
+	:guilabel:`Analytic Accounts` is only available once you have
 	installed the module :mod:`account_analytic_analysis`.
 	It provides various global financial and operational views of a project manager's projects.
 
@@ -201,8 +200,7 @@ can pose many problems for the organization and invoicing of the project:
   time to sign off on project acceptance you can't invoice the remaining 40% even though you might
   have supplied the agreed service properly.
 
-* The account manager and the project manager are often different people (see the section :ref:`sect-projroles`
-  in the chapter :ref:`ch-projects`).
+* The account manager and the project manager are often different people.
   The project manager has to
   alert the account manager the moment that the client can be invoiced, but that moment easily can be
   forgotten or mistaken.
