@@ -12,6 +12,7 @@ It is a well managed  recruitment process of applicant from initial stage to hir
 Recruitments
 ------------
 
+You need to install :mod:`hr_recruitment` module to efficiently managed  recruitment process.
 The :guilabel:`Applicant` form can be seen from the menu :menuselection:`Human Resources --> Recruitment --> Applicants`.
 
 .. figure::  images/recruitment_applicant_form.png
