@@ -139,9 +139,9 @@ resources on projects from the task prioritization within a project.
 Creating plans
 --------------
 
-Install the module :mod:`report_analytic_planning` to get additional functions
+Install the module :mod:`project_planning` to get additional functions
 that help with both planning and reporting on projects. Start a plan by using the
-menu :menuselection:`Human Resources --> Planning --> New Planning`.
+menu :menuselection:`Project --> Long Term Planning --> Plannings`.
 
 .. index::
    pair: time; allocation
@@ -166,8 +166,8 @@ Good planning
 .. index::
    single: module; board_project
 
-Plans can be printed and/or sent to employees by email. If you install the module 
-:mod:`board_project`, each employee can be given access to a dashboard that graphically shows the
+Plans can be printed and/or sent to employees by email. 
+Each employee can be given access to a dashboard that graphically shows the
 time allocated to him or her on a project and the time that's been worked so far. So each employee
 can decide which projects should be prioritized.
 
@@ -194,10 +194,9 @@ Planning at all levels of the hierarchy
 .. index::
    single: module; report_analytic_planning_delegate
 
-To put planning in place across the whole company you can use a system of planning delegation. For
-this, install the module :mod:`report_analytic_planning_delegate` from the addons-extra directory.
+To put planning in place across the whole company you can use a system of planning delegation.
 
-When you've installed this module, the planning entry form changes to reflect the hierarchical
+The planning entry form can reflect the hierarchical
 structure of the company. To enter data into a plan line you can:
 
 * assign time on a project to an employee,
