@@ -1,12 +1,12 @@
 
 .. index::
-   single: Project Management
+   single: Drive your Projects
 
 .. _ch-projects:
 
-********************************************
-Internal Organization and Project Management
-********************************************
+*******************
+Drive your Projects
+*******************
 
  *If you have good systems for managing tasks, then your whole company will benefit.
  Open ERP's project management modules enable you to manage and track tasks efficiently,

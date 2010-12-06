@@ -8,7 +8,7 @@ time plans and budgets, to control invoicing, and to manage your different contr
 
 In this chapter you can use operational project management to organize tasks and plan the work you
 need to get the tasks completed. All of the necessary operations are carried out through the menu
-:menuselection:`Project Management`.
+:menuselection:`Project`.
 
 .. index::
    single: project
@@ -21,7 +21,7 @@ need to get the tasks completed. All of the necessary operations are carried out
 
 	Whereas analytic accounts look at the past activities of the company, project management's role is
 	to plan the future.
-	Even when there's a close link between the two (such as where a project has been planned and then
+	Even when there is a close link between the two (such as where a project has been planned and then
 	completed through Open ERP)
 	they are still two different concepts, each making its own contribution to a flexible workflow.
 
@@ -36,23 +36,23 @@ Most client projects are represented by:
 Defining a project and its tasks
 --------------------------------
 
-To define a new project, go to the menu :menuselection:`Project Management --> Projects --> New Project`.
-Give your new project a :guilabel:`Project Name`.
+To define a new project, go to the menu :menuselection:`Project --> Project --> Projects`.
+Select :guilabel:`New` and give your new project a :guilabel:`Project Name`.
 
 You can put this project into a hierarchy, as a child of a :guilabel:`Parent Project`, and
 give it a :guilabel:`Project Manager`.
-You can also give it a general duration by completing :guilabel:`Starting Date` and
-:guilabel:`Expected End`.
+You can also give it a general duration by completing :guilabel:`Start Date` and
+:guilabel:`End Date`.
 
-By checking the box :guilabel:`Warn manager`, you configure the system to send the project manager
+By checking the box :guilabel:`Warn Manager`, you configure the system to send the project manager
 an Open ERP request every time that a task is closed.
-You can also link to a :guilabel:`Working Time` category, and an :guilabel:`Analytic Account`.
-And you add :guilabel:`Project Members` as you need.
+You can also link to a :guilabel:`Working Time` category.
+And you add :guilabel:`Members` as you need.
 
-.. note:: Warn Customer setup
+.. note:: Warn Partner setup
 
-   If you check :guilabel:`Warn customer`, you should define a page header and footer in the
-   :guilabel:`Partner Info` tab for use in an email.
+   If you check :guilabel:`Warn Partner`, you should define a page header and footer in the
+   :guilabel:`Billing` tab for use in an email.
    Open ERP prepares an email that the user can send to the client
    each time that a task is completed. The contents of this email are based on details of the project
    task, and can be modified by the user before the email is sent.
@@ -65,7 +65,7 @@ The status of a project can take the following values:
 
 * \ ``Canceled``\  : if the project has been canceled and therefore aborted,
 
-* \ ``Done``\  : the project has been successfully completed.
+* \ ``Closed``\  : the project has been successfully completed.
 
 .. note:: Study of client satisfaction
 
@@ -79,9 +79,9 @@ The status of a project can take the following values:
 Once a project has been defined you can code in the tasks to be done. You've two possibilities for
 this:
 
-* from the :guilabel:`ACTION` link button :guilabel:`Create a task` to the right of the project form,
+* from the :guilabel:`ACTION` link button :guilabel:`Tasks` to the right of the project form, then select :guilabel:`New`,
 
-* from the menu :menuselection:`Project Management --> All Tasks`, create a new task and assign it
+* from the menu :menuselection:`Project --> Project --> Tasks`, create a new task and assign it
   to an existing project.
 
 Managing tasks
@@ -160,9 +160,9 @@ Several methods of invoicing have already been described:
 
 * manual invoicing.
 
-Although invoicing tasks might appear useful, in certain situations it's best to invoice from the
+Although invoicing tasks might appear useful, in certain situations it is best to invoice from the
 service or purchase orders instead. These methods of invoicing are more flexible, with various
-pricing levels set out in the pricelist, and different products that can be invoiced. And it's
+pricing levels set out in the pricelist, and different products that can be invoiced. And it is
 helpful to limit the number of invoicing methods in your company by extending the use of an
 invoicing method that you already have.
 
