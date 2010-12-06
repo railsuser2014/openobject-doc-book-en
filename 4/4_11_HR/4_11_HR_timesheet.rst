@@ -59,7 +59,7 @@ Timesheet categories
 --------------------
 
 The different timesheet categories (working time sessions) can be defined in the menu
-:menuselection:`Human Resources --> Configuration --> Working Time Categories` and select
+:menuselection:`Manufacturing --> Configuration --> Resources --> Working Period` and select
 one of the groups there such as :guilabel:`38 Hours/Week`.
 
 .. figure::  images/service_timesheet_def.png
@@ -218,7 +218,7 @@ employees' data entry. Employees can verify their own timesheet using the follow
 * Reviewing profit of timesheet, using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
   --> Timesheet Profit`.
 
-* You can then use the statistical reports to analyze your services by period,by product
+* You can then use the statistical reports to analyze your services by period, by product
   or by account using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
   --> Timesheet Analysis` and :menuselection:`Human Resources --> Reporting --> Timesheets
   --> Timesheet Sheet Analysis`.
@@ -229,8 +229,8 @@ employees' data entry. Employees can verify their own timesheet using the follow
 
    *Chart of timesheet by account*
 
-The data making up these graphs can be varied using the filters available in the upper part of the
-screen. If you want to see more detail, switch to the list view.
+The data making up these list view can be varied using the filters available in the upper part of the
+screen. If you want to see more detail, switch to the graph view.
 
 .. index::
    single: timesheets; evaluation
