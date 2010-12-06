@@ -5,10 +5,10 @@
 .. _ch-hr:
 
 *******************************
-Organization of Human Resources
+Lead & Inspire your People
 *******************************
 
- *This chapter describes Open ERP's core human resources and employee services features. 
+ *This chapter describes Open ERP's core human resources and employee services features.
  Most of the solutions discussed after this chapter concern management by
  business or by project and depend mostly on analytic accounting, with each business or project
  represented by an analytic account.*
@@ -18,8 +18,8 @@ resource modules enable you to manage important aspects of staff work efficientl
 skills, contracts, and working time.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`hr_timesheet` and all of its dependencies installed and 
-no particular chart of accounts configured. 
+with :mod:`hr_timesheet` and all of its dependencies installed and
+no particular chart of accounts configured.
 
 .. raw:: html
 
@@ -29,6 +29,7 @@ no particular chart of accounts configured.
 
     4_11_HR_manage
     4_11_HR_timesheet
+    4_11_HR_hire_new_people
 
 .. raw:: html
 
