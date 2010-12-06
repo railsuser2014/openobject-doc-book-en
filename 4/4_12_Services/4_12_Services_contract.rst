@@ -21,7 +21,7 @@ several distinct types of services contract, such as:
 
 	The pricelist is linked in the :guilabel:`Sales and Purchases` tab of the :guilabel:`Customers` form,
 	so that it is brought up whenever anything is bought from or sold to this partner
-	(depending on whether it's a purchase or sales agreement).
+	(depending on whether it is a purchase or sales agreement).
 	Open ERP automatically selects the price based on this agreed pricelist.
 
 Fixed Price contracts
@@ -33,7 +33,7 @@ this case, the supply of services is managed just like all other stockable or co
 You can add new orders using the menu :menuselection:`Sales --> Sales --> Sales Orders`.
 
 The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no
-accounting impact on the system until it's confirmed. When you confirm the order, your estimate
+accounting impact on the system until it is confirmed. When you confirm the order, your estimate
 moves into the state \ ``Manual In Progress``\  .
 
 .. figure::  images/service_sale_workflow.png
@@ -68,7 +68,7 @@ Policy` on the order's second tab :guilabel:`Other Information` :
 
 	If its type is either Stockable Product or Consumable, Open ERP will make a request for it to be
 	sent for packing.
-	If the product's type is Service Open ERP's scheduler will create a task in the project management
+	If the product's type is Service, Open ERP's scheduler will create a task in the project management
 	system,
 	or create a subcontract purchase order if the product's Procure Method is Make to Order.
 
@@ -89,7 +89,7 @@ several times through the contract, for example:
 
 In this case you should create several invoices for the one Sales Order. You've two options for this:
 
-* Don't handle invoicing automatically from the Sales Order but carry out manual invoicing instead,
+* Do not handle invoicing automatically from the Sales Order but carry out manual invoicing instead,
 
 * Create draft invoices and then link to them in the third tab :guilabel:`History` of the
   Sales Order, in the :guilabel:`Related
@@ -100,7 +100,7 @@ Cost-reimbursement contracts
 ----------------------------
 
 Some contracts aren't invoiced from a price fixed on the order but from the cost of the services
-carried out. That's usually what happens in the building sector or in large projects.
+carried out. That is usually what happens in the building sector or in large projects.
 
 .. index::
    single: module; hr_timesheet_invoice
@@ -190,7 +190,7 @@ the following:
 Such an approach is often used in a company but there are other options. This method of invoicing
 can pose many problems for the organization and invoicing of the project:
 
-* It's extremely difficult to determine if the project is on track or not. The endpoint is fuzzy,
+* It is extremely difficult to determine if the project is on track or not. The endpoint is fuzzy,
   which can result in a tricky discussion with the client at the moment of final invoicing.
 
 * If the project takes more or less time than forecast, it will effectively result in under- or

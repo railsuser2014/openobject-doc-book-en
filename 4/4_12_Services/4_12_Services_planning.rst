@@ -87,7 +87,7 @@ resources on projects from the task prioritization within a project.
 	.. note:: Comparing the two planning methods
 
 			To illustrate the difference between planning by time and planning by task, take the case of an
-			IT project that's estimated to be around six months of work. This project is managed by iterative
+			IT project that is estimated to be around six months of work. This project is managed by iterative
 			cycles of development of around a month and a presentation is made to the client at the end of
 			each cycle to track the progress of the project. At this meeting you plan what must be carried
 			out for the following month. At the end of the month the account manager for the project invoices
@@ -153,7 +153,7 @@ used. For each line you can add a brief note about the work to be done.
 Once the plan has been saved, use the other tabs of the planning form to check that the amount of
 time allocated to the employees or to the projects is right. The time allocated should match
 the employees' employment contracts, for example 37.5 hours per week. The forecast time for the
-project should also match the commitments that you've made with client.
+project should also match the commitments that you have made with client.
 
 You should ideally complete all the planning for the current period. You can also complete some
 lines in the planning of future months – reserving resources on different project in response to
@@ -168,11 +168,11 @@ Good planning
 
 Plans can be printed and/or sent to employees by email. 
 Each employee can be given access to a dashboard that graphically shows the
-time allocated to him or her on a project and the time that's been worked so far. So each employee
+time allocated to him or her on a project and the time that has been worked so far. So each employee
 can decide which projects should be prioritized.
 
 The employee then selects a task in the highest priority project. She ideally chooses either a task
-that has been directly assigned to her, or one which is high on the priority list that she's capable
+that has been directly assigned to her, or one which is high on the priority list that she is capable
 of completing, but is not yet directly assigned to anybody.
 
 At the end of the period you can compare the duration of effective work on the different project to
@@ -205,8 +205,8 @@ structure of the company. To enter data into a plan line you can:
 
 You can now allocate the working time on projects for the whole of a department, without having to
 detail each employee's tasks. Then when a department manager creates his own plan he will find
-what's required of his group by his management at the bottom of the form. At the top of the form
-there's the place for assigning project work in detail to each member of department.
+what is required of his group by his management at the bottom of the form. At the top of the form
+there is a place for assigning project work in detail to each member of department.
 
 If you don't have to plan time to work on a final draft you can do it on an analytic account that
 relies on child accounts. This means that you can create plans to meet top-level objectives of the

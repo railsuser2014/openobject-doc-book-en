@@ -34,7 +34,7 @@ Some receipts are for project expenses, so these can then be attached to an anal
 costs incurred are then added to the supplementary cost of the analytic account when the invoice is
 approved.
 
-You often need to invoice expenses to a client, depending on the precise contract that's been
+You often need to invoice expenses to a client, depending on the precise contract that has been
 negotiated. Travelling and subsistence expenses are generally handled this way. These can be
 recharged to the client at the the end of the month if the contract price has been negotiated plus
 expenses.
@@ -46,7 +46,7 @@ many problems and subtly increase staff productivity.
 
 If your systems handle expenses well then you can avoid significant losses by setting your terms of
 sale effectively. In fixed-price contracts, expense reimbursements are usually invoiced according to
-the actual expense. It's in your interests to systematize their treatment, and automate the process
+the actual expense. It is in your interests to systematize their treatment, and automate the process
 to the maximum, to recharge as much as you are contractually able.
 
 Claiming expenses
