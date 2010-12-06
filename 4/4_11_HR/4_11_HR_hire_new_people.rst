@@ -7,7 +7,7 @@ Hire New People
 ===============
 
 Using OpenERP you can efficiently manage the process of hiring the new people for your organization.
-There is well managed  recruitment process of applicant from initial stage to hiring the applicant.
+It is a well managed  recruitment process of applicant from initial stage to hiring the applicant.
 
 Recruitments
 ------------
@@ -25,12 +25,12 @@ You can manage following information using applicant form.
 * Applicant's Name
 * Applied Job
 * Department
-* Stage : It may be  Initial Job Demand or  salary negotiation stage
+* Stage : It may be  `Initial Job Demand` or  `Salary Negotiation` stage
 * Responsible : Responsible person who conduct the interview
 * Contact Information
 * Contract Data : That contains Availability, Expected Salary, Proposed Salary
 * Qualification of Applicant
-* Status : It reflects the actual state of the recruitment process like 'In Progress', 'Pending' or 'Hired'
+* Status : It reflects the actual state of the recruitment process like `In Progress`, `Pending` or `Hired`
 
 The information about the :guilabel:`Job Position` can be maintained by the menu :menuselection:`Human Resources --> Recruitment --> Job Positions`.
 

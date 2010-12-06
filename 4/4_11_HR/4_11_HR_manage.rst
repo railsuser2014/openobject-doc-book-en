@@ -6,10 +6,10 @@
 Managing Human Resources
 ========================
 
-To establish a system that's integrated into a company's management you need to start with a
+To establish a system that is integrated into a company's management you need to start with a
 current list of collaborators.
 
-.. note:: Don't confuse employees and users
+.. note:: Do not confuse employees and users
 
 	For Open ERP, “employee” represents all of the physical people who have an work contract with
 	the company. This includes all types of contract: contracts with both fixed and indeterminate time
@@ -18,8 +18,8 @@ current list of collaborators.
 	.. index::
 	   single: modules; portal_
 
-	A “user” is a physical person who's given access to the company's systems. Most employees are
-	users but some users aren't employees: external partners can have access to parts of the system.
+	A “user” is a physical person who is given access to the company's systems. Most employees are
+	users but some users are not employees: external partners can have access to parts of the system.
 
 Here are some examples of functions which depend on the accuracy of the employee list:
 
@@ -47,7 +47,7 @@ Start by entering the employee's name in :guilabel:`Employee` and the company th
 in :guilabel:`Company`. You can then create a new user of the Open ERP system linked to this
 employee by filling in a new :guilabel:`User` form through the :guilabel:`User` field.
 
-Even if the employee isn't a user, it's best if you
+Even if the employee is not a user, it is best if you
 create a system access for most of your staff just so that you can control their access rights from
 the outset (and you can do that through this field if you need to).
 
@@ -64,7 +64,7 @@ Then enter the employee's address.
 .. todo:: We need to give better guidance about Partners vs Employees just here.
 
 This appears in the partner contact form in Open ERP. Since
-employees are people that have contacts with your company, it's logical that they have entries
+employees are people that have contacts with your company, it is logical that they have entries
 like any other partner in your database. So enter the name of the employee as a new partner Name and
 the address in the Contact form. Then all of the functions that apply to a partner can also be
 applied to an employee. This is particularly useful for tracking debits and credits in

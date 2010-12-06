@@ -14,7 +14,7 @@ account in the system.
 Throughout the day, when employees work on one project or another, they add a line to the timesheets
 with details of the time used on each project. At the end of the day, each employee must mark all
 the time worked on client or internal projects to make up the full number of hours worked in the
-day. If an account isn't in the system then the time is added to the hours that haven't been
+day. If an account is not in the system then the time is added to the hours that have not been
 assigned for the day.
 
 .. _fig-servtimlis:
@@ -32,11 +32,11 @@ The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee
 
 .. note:: Don't confuse timesheets and attendence compliance
 
-	The timesheet system isn't intended to be a disguised attendance form. There's no control over the
+	The timesheet system is not intended to be a disguised attendance form. There is no control over the
 	service times and the employee is free to encode 8 or 9 hours or more of services each day if they
 	want.
 
-	If you decide to put such a system into place, it's important to clarify this point with your
+	If you decide to put such a system into place, it is important to clarify this point with your
 	staff. The objective here isn't to control hours, because the employees decide for themselves what
 	they'll be entering – but to track the tasks running and the allocation of costs between them.
 
@@ -129,7 +129,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 
 	By default the hourly cost of an employee is given by the standard cost of the product linked to
 	that employee.
-	But if you install the :mod:`hr_contract` module it's possible to manage contracts differently.
+	But if you install the :mod:`hr_contract` module it is possible to manage contracts differently.
 	The hourly cost of the employee is then automatically calculated from their employment contract
 	when they enter their timesheet data.
 
@@ -157,14 +157,14 @@ then click :guilabel:`New`.
 .. tip:: Shortcut to timesheets
 
 	It's a good idea if all employees who use timesheets place this menu in their shortcuts.
-	That's because they'll need to return to them several times each day.
+	That is because they will need to return to them several times each day.
 
 For a new entry:
 
-	#.	The :guilabel:`User` : proposed by default, but you can change it if you're encoding the first timesheet
+	#.	The :guilabel:`User` : proposed by default, but you can change it if you are encoding the first timesheet
 		for another company employee.
 
-	#.	The :guilabel:`Date` : automatically proposed as today's date, but it's possible to change it if you're
+	#.	The :guilabel:`Date` : automatically proposed as today's date, but it is possible to change it if you are
 		encoding the timesheet for a prior day.
 
 	#.	:guilabel:`Analytic Account` : for the project you've been working on - obviously it should be predefined.
@@ -191,7 +191,7 @@ accounted for. The total entered is shown at the bottom right of the list of ser
 
 	(And the way to do that is either to modify the view on the filesystem, or
 	to use the web client to modify the view in the current database.
-	For the latter, there's a pale grey :guilabel:`[Customize]` label
+	For the latter, there is a pale grey :guilabel:`[Customize]` label
 	to the bottom left of each form that gives you access to the
 	:guilabel:`Manage Views` option.
 	If you have sufficient permissions you can edit the XML that defines the current view.)
@@ -257,24 +257,24 @@ line.
 	The information is therefore not encoded into the database as two separate events, which avoids
 	many synchronization problems.
 	They are stored in two different tables, however, because a service is an analytical entry, but an
-	analytical entry isn't necessarily a service.
+	analytical entry is not necessarily a service.
 
-This isn't a classical approach but it's logical and pragmatic. Employee timesheets are a good
+This is not a classical approach but it is logical and pragmatic. Employee timesheets are a good
 indication of how the costs of a service enterprise are spread across different cases as reported in
 the analytic accounts.
 
 .. index::
    single: benefits
 
-An analytic account should be reflected in the general accounts, but there's no direct counterpart
+An analytic account should be reflected in the general accounts, but there is no direct counterpart
 of these analytic accounts in the general accounts. Instead, if the hourly costs of the employees
 are correctly accounted for, the month's timesheet entries should be balanced by the salary +
 benefits package paid out to all the employees at the end of the month.
 
-Despite all this it's quite difficult to work out the average hourly cost of an employee precisely
+Despite all this it is quite difficult to work out the average hourly cost of an employee precisely
 because it depends on:
 
-* the extra hours that they've worked,
+* the extra hours that they have worked,
 
 * holidays and sickness,
 
@@ -313,22 +313,22 @@ each project.
 Managing by department
 ----------------------
 
-When they're used properly, timesheets can be a good control tool for project managers and can
+When they are used properly, timesheets can be a good control tool for project managers and can
 provide awareness of costs and times.
 
 When employee teams are important, a control system must be implemented. All employees should
 complete their timesheets correctly because this forms the basis of planning control, and the
 financial management and invoicing of projects
 
-You'll see in :ref:`ch-services` that you can automatically invoice services at the end of
+You will see in :ref:`ch-services` that you can automatically invoice services at the end of
 the month based on the timesheet. But at the same time some contracts are limited to prepaid hours.
 These hours and their deduction from the original limit are also managed by these timesheets.
 
 .. index::
    single: module; hr_timesheet_sheet
 
-In such a situation, hours that aren't coded into the timesheets represent lost money for the
-company. So it's important to establish effective follow-up of the services timesheets and their
+In such a situation, hours that are not coded into the timesheets represent lost money for the
+company. So it is important to establish effective follow-up of the services timesheets and their
 encoding. To set up a structure for control using timesheets you should install the module
 :mod:`hr_timesheet_sheet`.
 
@@ -339,7 +339,7 @@ encoding. To set up a structure for control using timesheets you should install 
    *Process of approving a timesheet*
 
 This module supplies a new screen enabling you to manage timesheets by period. Timesheet entries are
-made by employees each day. At the end of the week, employees validate their week's sheet and it's
+made by employees each day. At the end of the week, employees validate their week's sheet and it is
 then passed to the services manager, who must approve his team's entries. Periods are defined in the
 company forms, and you can set them to run monthly or weekly.
 
@@ -355,15 +355,15 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 In the upper part of the screen the user starts with the sign-in and sign-out times. The system
 enables the control of attendance day by day. The two buttons Sign in and Sign out enable the
 automatic completion of hours in the area to the left. These hours can be modified by employee, so
-it's not a true management control system.
+it is not a true management control system.
 
 The area to the bottom of the screen represents a sheet of the employee's time entries for the
 selected day. In total, this should comprise the number of hours worked in the company each day.
 This provides a simple verification that the whole day's attendance time has been coded in properly.
 
 The second tab of the timesheet :guilabel:`By day` gives the number of hours worked on the different
-projects. When there's a gap between the attendance and the timesheet entries, you can use the
-second tab to detect the days or the entries that haven't been correctly coded in.
+projects. When there is a gap between the attendance and the timesheet entries, you can use the
+second tab to detect the days or the entries that have not been correctly coded in.
 
 .. figure::  images/timesheet_sheet_hours.png
    :scale: 50
@@ -390,7 +390,7 @@ Human Resources --> Departments`.
 	hindrance.
 	This operation is crucial for effective management, however.
 	We have too frequently seen companies in the situation where managers are so overworked that they
-	don't know what their employees are doing.
+	do not know what their employees are doing.
 
 	So this approval process supplies the manager with an outline of each employee's work at least once
 	a week.
@@ -405,7 +405,7 @@ chapter, :ref:`ch-services`.
 
 .. Copyright © Open Object Press. All rights reserved.
 
-.. You may take electronic copy of this publication and distribute it if you don't
+.. You may take electronic copy of this publication and distribute it if you do not
 .. change the content. You can also print a copy to be read by yourself only.
 
 .. We have contracts with different publishers in different countries to sell and
