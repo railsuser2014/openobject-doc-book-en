@@ -56,8 +56,7 @@ Claiming expenses
    single: module; hr_expense
 
 Install the module :mod:`hr_expense` to automate the management of expense claims. Users can then
-enter their expenses using the menu :menuselection:`Human Resources --> Expenses --> New Expenses Sheet`
-and review them using menus in :menuselection:`Human Resources --> Expenses --> My Expenses`.
+enter and review their expenses using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
 
 Templates for the various expenses accepted by the company must previously have been created using Open ERP's
 product form. You could, for example, create a product with the following parameters for the
@@ -75,24 +74,10 @@ reimbursement of travel expenses by car at 0.25 per kilometer:
 
 The employee keeps her expenses sheet in the \ ``Draft``\   state while completing it throughout the
 period. At the end of the period (week or month) she can confirm her expense form using the
-:guilabel:`Confirm` button on the form. This puts it into the state \ ``Waiting for validation``\  .
+:guilabel:`Confirm` button on the form. This puts it into the state \ ``Waiting Approval``\  .
 
 At the end of the period the department manager can access the list of expense forms waiting for
-approval using the menu :menuselection:`Human Resources --> Expenses --> All expenses --> Expenses
-waiting validation`.
-
-.. tip:: Role Management
-
-	You must assign the role :guilabel:`Human Resources – Expenses` to a user to enable that user to approve
-	these expenses.
-	You'd generally assign this role only to those people responsible for projects or departments.
-
-	You can also assign the role :guilabel:`Human Resources – Invoicing Expenses` to users responsible for
-	creating invoices.
-	These roles may overlap (so the same person who approves your accounting group's expenses may also
-	be responsible for creating invoices).
-
-	To find out more about the management of roles look at :ref:`ch-config`.
+approval using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
 
 The department manager can then approve the expenses, which automatically creates a supplier invoice
 in the employee's name so that the employee can be reimbursed. An analytic account is coded onto
