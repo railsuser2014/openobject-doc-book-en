@@ -5,19 +5,19 @@ Managing Contacts
 .. index::
    single: module; base_contact
 
-The standard way of representing partners and contacts throughout Open ERP
+The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications) 
-is having a partner with multiple contacts.
+is a partner with multiple contacts.
 *Partner* is the word for any entity that you do business with - supplier, customer, etc.
-This representation may not be flexible enough for some uses, so Open ERP provides
+This representation may not be flexible enough for some uses, so OpenERP provides
 an alternative, which is brought into the system by installing the :mod:`base_contact` module.
 
 The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
 the structure of partners and contacts in the form of UML classes both 
-with and without this :mod:`base_contact` module. 
-For the non-programmer this diagram can be a bit of a brutal way
-of showing it, but it's the clearest way to illustrate the
-complexities that can be accomplished.
+with and without the :mod:`base_contact` module. 
+For the non-programmer this diagram may be a bit of a brutal way
+of showing it, but it is the clearest way to illustrate the
+complexities that may be accomplished.
 
 .. _fig-crmconw:
 
@@ -35,8 +35,8 @@ complexities that can be accomplished.
 
    *UML class diagram with base_contact module not installed*
 
-A concrete example may illustrate this concept of multiple relationships between contacts and
-partners (companies) better. The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
+A concrete example may better illustrate this concept of multiple relationships between contacts and
+partners (companies). The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
 business) and several contacts attached to these addresses.
 
 .. _fig-crmcont:
@@ -62,11 +62,11 @@ In this example you'll find the following elements:
 * Mr J Smith is director of Dexey France and Dexey Belgium and we also have his private address
   attached to no partner.
 
-Depending on your needs, Open ERP provides three menus to access the same information:
+Depending on your needs, OpenERP provides three menus to access the same information:
 
-* List of partners: :menuselection:`Partners --> Partners`,
+* List of partners: :menuselection:`Sales --> Address Book --> Customers / Suppliers`,
 
-* List of contacts: :menuselection:`Partners --> Contacts`,
+* List of contacts: :menuselection:`Sales --> Address Book --> Contacts`,
 
 * List of posts held by contacts at partners: :menuselection:`Partners --> Contact's Jobs`.
 

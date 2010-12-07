@@ -4,17 +4,17 @@
 
 .. _ch-hr:
 
-*******************************
+**************************
 Lead & Inspire your People
-*******************************
+**************************
 
- *This chapter describes Open ERP's core human resources and employee services features.
+ *This chapter describes OpenERP's main Human Resources and Employee Services features.
  Most of the solutions discussed after this chapter concern management by
  business or by project and depend mostly on analytic accounting, with each business or project
  represented by an analytic account.*
 
-A company's effectiveness depends on its employees' good work. Open ERP's human
-resource modules enable you to manage important aspects of staff work efficiently, such as their
+A company's effectiveness depends on its employees' good work. OpenERP's Human
+Resources modules enable you to manage important aspects of staff work efficiently, such as their
 skills, contracts, and working time.
 
 For this chapter you should start with a fresh database that includes demo data,

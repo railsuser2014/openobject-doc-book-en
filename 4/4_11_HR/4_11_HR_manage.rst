@@ -6,13 +6,13 @@
 Managing Human Resources
 ========================
 
-To establish a system that is integrated into a company's management you need to start with a
+To establish a system that is integrated into the company's management you need to start with a
 current list of collaborators.
 
 .. note:: Do not confuse employees and users
 
-	For Open ERP, “employee” represents all of the physical people who have an work contract with
-	the company. This includes all types of contract: contracts with both fixed and indeterminate time
+	For OpenERP, “employee” represents all of the physical people who have a work contract with
+	the company. This includes all types of contracts: contracts with both fixed and indeterminate time
 	periods, and also independent and freelance service contracts.
 
 	.. index::

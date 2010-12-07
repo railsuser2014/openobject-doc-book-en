@@ -8,11 +8,11 @@
 Leads, Business Opportunities and Campaigns
 *******************************************
 
- *This chapter introduces the pre-sales activities of managing
- leads and opportunities. You're introduced to a more complex set of relationships between 
+ *This chapter helps you boost the pre-sales activities of managing
+ leads and opportunities. You will be introduced to a more complex set of relationships between 
  partners and contacts than offered by the 'base' module, and 
  shown how to use the company calendar. 
- You'll finish by discussing how a call center might use the Open ERP system.*
+ We will also propose a way for a call center to use OpenERP.*
 
 .. raw:: html
 
