@@ -2,7 +2,7 @@
    single: planning
 ..
 
-Planning that improves leadership
+Planning to Improve Leadership
 =================================
 
 Planning in a company often takes the form of a regular meeting between the different teams. Each
@@ -136,7 +136,7 @@ resources on projects from the task prioritization within a project.
    single: planning; create plan
 ..
 
-Creating plans
+Plan your Time
 --------------
 
 Install the module :mod:`project_planning` to get additional functions
@@ -159,9 +159,6 @@ You should ideally complete all the planning for the current period. You can als
 lines in the planning of future months – reserving resources on different project in response to
 your client commitments, for example. This enables you to manage your available human resources for
 the months ahead.
-
-Good planning
--------------
 
 .. index::
    single: module; board_project
@@ -188,7 +185,7 @@ the real time worked.
 You can also study several of your project's figures from the menus in :menuselection:`Human Resources
 --> Reporting --> Planning`.
 
-Planning at all levels of the hierarchy
+Planning at all levels of the Hierarchy
 ---------------------------------------
 
 .. index::
