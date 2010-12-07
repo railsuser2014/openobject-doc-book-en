@@ -12,6 +12,18 @@ It is a well managed recruitment process from initial contact to hiring the appl
 Recruitments
 ------------
 
+.. index::
+   single: module; hr_recruitment
+
+You need to install :mod:`hr_recruitment` module to efficiently managed  recruitment process.
+The configuration wizard to install this module is shown below.
+
+.. figure::  images/config_wiz_recruitment.png
+   :scale: 50
+   :align: center
+
+   *Configuration wizard to install hr_recruitment module*
+
 The :guilabel:`Applicant` form can be seen from the menu :menuselection:`Human Resources --> Recruitment --> Applicants`.
 
 .. figure::  images/recruitment_applicant_form.png
@@ -32,7 +44,14 @@ You can manage following information using applicant form.
 * Qualification of Applicant
 * Status: reflects the actual status of the recruitment process like `In Progress`, `Pending` or `Hired`
 
+
 The information about the :guilabel:`Job Position` can be maintained through the menu :menuselection:`Human Resources --> Recruitment --> Job Positions`.
+
+Initially the applicant states is `New` after that it can be converted into `In Progress`.
+If the applicant is at one of the different stages like it may be in `Waiting for approval by human resource department` or `Waiting for offer acceptance by applicant`,
+in these cases applicant states should be `Pending`. When the status is `Hired`, you can find that applicant from the list of employees.
+
+The information about the :guilabel:`Job Position` can be maintained by the menu :menuselection:`Human Resources --> Recruitment --> Job Positions`.
 
 .. figure::  images/recruitment_job_position.png
    :scale: 50
@@ -41,6 +60,17 @@ The information about the :guilabel:`Job Position` can be maintained through the
    *Job Position in your Organization*
 
 You can analyse data of the recruitment process through the menu :menuselection:`Human Resources --> Reporting --> Recruitment Analysis`.
+
+The key features of OpenERP for the process of hiring the new people using :mod:`hr_recruitment` module.
+
+* Manages job positions and the recruitement process.
+* It's integrated with the `survey` module to allow you to define interview for different jobs.
+* This module is integrated with the mail gateway to automatically tracks email
+  sent to jobs@yourcompany.com.
+* It's also integrated with the document management system to store and search in your CV base.
+
+You can analyse data of recruitment process through the menu :menuselection:`Human Resources --> Reporting --> Recruitment Analysis`.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

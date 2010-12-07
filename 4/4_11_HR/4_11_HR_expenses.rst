@@ -55,8 +55,22 @@ Employee Expenses
 .. index::
    single: module; hr_expense
 
-Install the module :mod:`hr_expense` to automate the management of expense claims. Users can then
-enter and review their expenses using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
+Install the module :mod:`hr_expense` to automate the management of expense claims.
+The configuration wizard to install this module is shown below.
+
+.. figure::  images/config_wiz_expenses.png
+   :scale: 50
+   :align: center
+
+   *Configuration wizard to install hr_expense module*
+
+Users can then enter and review their expenses using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
+
+.. figure::  images/employee_expenses.png
+   :scale: 50
+   :align: center
+
+   *Expenses form to enter and review expenses*
 
 Create templates for the various expenses accepted by the company using OpenERP's
 product form. You could, for instance, create a product with the following parameters for the
@@ -90,6 +104,8 @@ associated with the project.
 
 Invoicing from timesheets allows you to prepare all your invoices, both
 expenses and timesheets for a project's customer.
+
+You can view the statistical analysis of expenses using menu  :menuselection:`Human Resources --> Reporting --> Expenses Analysis`.
 
 .. Copyright © Open Object Press. All rights reserved.
 
