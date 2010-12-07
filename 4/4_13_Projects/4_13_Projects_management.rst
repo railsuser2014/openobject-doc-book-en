@@ -1,5 +1,5 @@
 
-Project management
+Project Management
 ==================
 
 In the previous chapter you deal with the financial management of projects, which was based on
@@ -33,8 +33,8 @@ Most client projects are represented by:
 * one or several projects in project management for tracking the project and the different tasks to
   be completed.
 
-Defining a project and its tasks
---------------------------------
+Creating Projects and Related Tasks
+-----------------------------------
 
 To define a new project, go to the menu :menuselection:`Project --> Project --> Projects`.
 Select :guilabel:`New` and give your new project a :guilabel:`Project Name`.
@@ -63,7 +63,7 @@ The status of a project can take the following values:
 
 * \ ``Pending``\  : while the project is paused,
 
-* \ ``Canceled``\  : if the project has been canceled and therefore aborted,
+* \ ``Cancelled``\  : if the project has been cancelled and therefore aborted,
 
 * \ ``Closed``\  : the project has been successfully completed.
 
@@ -76,7 +76,7 @@ The status of a project can take the following values:
 
 	This function can be used by companies certified to ISO 9001, to rate client satisfaction.
 
-Once a project has been defined you can code in the tasks to be done. You've two possibilities for
+Once a project has been defined you can code in the tasks to be done. You have two possibilities for
 this:
 
 * from the :guilabel:`ACTION` link button :guilabel:`Tasks` to the right of the project form, then select :guilabel:`New`,
@@ -89,7 +89,7 @@ Managing tasks
 
 Each task must adopt one of the following states:
 
-* \ ``Draft``\  : the task has been entered but hasn't yet been validated by the person who will
+* \ ``Draft``\  : the task has been entered but has not yet been validated by the person who will
   have to do it,
 
 * \ ``Open``\
@@ -111,20 +111,19 @@ made jointly responsible for taking on tasks that they have the skills for.
    *Tasks in project management*
 
 Each user then manages his or her own task using the different available menus. To open the list of
-unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project
-Management --> Tasks --> My Tasks`. Or to open the unassigned tasks, go to
-:menuselection:`Project Management --> Tasks --> All Tasks --> Unassigned Tasks` and then select \ ``Draft``\
-and \ ``Open``\   tasks from that list.
+unclosed tasks that you have been assigned specifically use the menu :menuselection:`Project --> Project --> Tasks`. Or to open the unassigned tasks, go to
+:menuselection:`Project --> Project --> Tasks` and then click \ ``Clear``\ button
+and then \ ``Unassigned``\   button.
 
 .. tip:: Shortcuts
 
-	Every user should create a link in their own shortcuts to the :menuselection:`My Tasks` menu because they'll
+	Every user should create a link in their own shortcuts to the :menuselection:`Tasks` menu because they will
 	have to consult this menu several times a day.
 
 .. _sect-projroles:
 
-Assigning roles: account manager and project manager
-----------------------------------------------------
+Assigning Roles
+---------------
 
 In some companies two distinct responsibilities are defined for each important project:
 
@@ -142,12 +141,12 @@ makes the project happen, organizing and sub-contracting the different project t
 manager would often be responsible for a development team to carry the project out, and generally
 has a technical profile.
 
-If you don't make any such distinction in the roles then put the same person in both fields.
+If you do not make any such distinction in the roles then put the same person in both fields.
 
 .. index::
    single: invoicing; tasks
 
-Invoicing tasks
+Invoicing Tasks
 ---------------
 
 Several methods of invoicing have already been described:
@@ -166,10 +165,10 @@ pricing levels set out in the pricelist, and different products that can be invo
 helpful to limit the number of invoicing methods in your company by extending the use of an
 invoicing method that you already have.
 
-If you want to connect your Sales Order with Project Management tasks you should create such
+If you want to connect your Sales Order with Project tasks you should create such
 products as \ ``Consultant``\  , and \ ``Senior Developer``\  . These products should be configured
-with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procure Method` of \ ``Make to Order``\  ,
-and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you've set this up,
+with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procurement Method` of \ ``Make to Order``\  ,
+and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you have set this up,
 Open ERP automatically creates a task in project management when the order is approved.
 
 You can also change some of the order parameters, which affects the invoice:
@@ -180,17 +179,17 @@ You can also change some of the order parameters, which affects the invoice:
 *  :guilabel:`Invoice On` : \ ``Ordered Quantities``\   or \ ``Shipped Quantities``\   (actual hours in
    the task).
 
-Planning and managing priorities
---------------------------------
+Priority Management
+-------------------
 
 Several methods can be used for ordering tasks by their respective priorities. Open ERP orders
 tasks based on a function of the following fields: :guilabel:`Sequence`, :guilabel:`Priority`, and
 :guilabel:`Deadline`.
 
-Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Information`, to plan a
+Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Extra Info`, to plan a
 project made up of several tasks. In the case of an IT project, for example, where development tasks
 are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and
-so on. When you first open the list of project tasks, they're listed in their sequence order.
+so on. When you first open the list of project tasks, they are listed in their sequence order.
 
 You can use one of these three ordering methods, or combine several of them, depending on the
 project.
@@ -201,7 +200,7 @@ project.
 
 .. note:: Agile methods
 
-	Open ERP implements the agile methodology Scrum for IT development projects in the :mod:`scrum`
+	Open ERP implements the agile methodology Scrum for IT development projects in the :mod:`project_scrum`
 	module.
 
 	Scrum supplements the task system with the following concepts:
@@ -216,10 +215,10 @@ project.
 
    *Gantt plan, calculated for earliest delivery*
 
-You can set an attendance grid (or the timesheets) in the project file. If you don't specify
-anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once a
-grid is specified you can call up a project Gantt chart from right-hand toolbar. The system then
-calculates a project plan for earliest delivery using task ordering and the attendance grid.
+You can set the Working Time in the project file. If you do not specify
+anything, Open ERP assumes by default that you work 8 hours a day from Monday to Sunday. Once the
+time is specified you can call up a project Gantt chart from Tasks. The system then
+calculates a project plan for earliest delivery using task ordering and the working time.
 
 .. tip:: Calendar view
 
@@ -235,11 +234,11 @@ calculates a project plan for earliest delivery using task ordering and the atte
 
 .. index:: delegation (task)
 
-Task delegation
----------------
+Delegate your Tasks
+-------------------
 
 To delegate a task to another user you can just change the person responsible for that task. However
-the system doesn't help you track tasks that you've delegated, such as monitoring of work done, if
+the system does not help you track tasks that you have delegated, such as monitoring of work done, if
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
