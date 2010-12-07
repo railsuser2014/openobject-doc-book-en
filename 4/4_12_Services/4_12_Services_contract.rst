@@ -55,7 +55,7 @@ Policy` on the order's second tab :guilabel:`Other Information` :
    validated. A draft invoice is then created when the delivery has been completed.
 
 *  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of
-   the order, and adds a button which you manually click when you're ready to create an invoice.
+   the order, and adds a button which you manually click when you are ready to create an invoice.
 
 *  :guilabel:`Invoice from Delivery` : invoices are created from the packing stage.
 
@@ -70,7 +70,7 @@ Policy` on the order's second tab :guilabel:`Other Information` :
 	sent for packing.
 	If the product's type is Service, Open ERP's scheduler will create a task in the project management
 	system,
-	or create a subcontract purchase order if the product's Procure Method is Make to Order.
+	or create a subcontract purchase order if the product's Procurement Method is Make to Order.
 
 	Invoicing after delivery does as it says: invoicing for the services when the tasks have been
 	closed.
@@ -87,7 +87,7 @@ several times through the contract, for example:
 
 * 30% one month after the system has gone into production.
 
-In this case you should create several invoices for the one Sales Order. You've two options for this:
+In this case you should create several invoices for the one Sales Order. You have two options for this:
 
 * Do not handle invoicing automatically from the Sales Order but carry out manual invoicing instead,
 
@@ -99,7 +99,7 @@ In this case you should create several invoices for the one Sales Order. You've 
 Cost-reimbursement contracts
 ----------------------------
 
-Some contracts aren't invoiced from a price fixed on the order but from the cost of the services
+Some contracts are not invoiced from a price fixed on the order but from the cost of the services
 carried out. That is usually what happens in the building sector or in large projects.
 
 .. index::
@@ -142,7 +142,7 @@ Periodically the project manager or account manager uses the following menu to p
 :menuselection:`Accounting --> Periodical Processing --> Billing -->
 Bill Tasks Works`.
 
-Open ERP then displays all of the costs that haven't yet been invoiced. You can filter the proposed
+Open ERP then displays all of the costs that have not yet been invoiced. You can filter the proposed
 list and click the appropriate action button to generate the corresponding invoices. You can select
 the level of detail which is reported on the invoice, such as the date and details of the services.
 
@@ -163,7 +163,7 @@ the level of detail which is reported on the invoice, such as the date and detai
 
 .. todo:: I can't find this button or the action below
 
-Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You'll
+Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You will
 find a list of costs that can be invoiced to the client:
 
 * time worked,
@@ -177,7 +177,7 @@ You can then invoice the selected lines using the action :guilabel:`Invoice cost
 Fixed-price contracts invoiced as services are worked
 -----------------------------------------------------
 
-For larger-value projects, fixed-price invoicing based on the sales order isn't always appropriate.
+For larger-value projects, fixed-price invoicing based on the sales order is not always appropriate.
 In the case of a services project planned to run for about six months. invoicing could be based on
 the following:
 
@@ -197,7 +197,7 @@ can pose many problems for the organization and invoicing of the project:
   over-invoicing during the project.
 
 * Whether you get a proper return can depend on the client. For example if the client takes a long
-  time to sign off on project acceptance you can't invoice the remaining 40% even though you might
+  time to sign off on project acceptance you cannot invoice the remaining 40% even though you might
   have supplied the agreed service properly.
 
 * The account manager and the project manager are often different people.
@@ -206,11 +206,11 @@ can pose many problems for the organization and invoicing of the project:
   forgotten or mistaken.
 
 * The project can be fixed for service costs but have agreed extras, such as reimbursement for
-  travel expenses. Invoicing from the order doesn't adapt well to such an approach.
+  travel expenses. Invoicing from the order does not adapt well to such an approach.
 
 Open ERP provides a third method for invoicing services that can be useful on long projects. This
 consists of invoicing the project periodically on the basis of time worked up to a fixed amount that
-can't be exceeded. At the end of the project a final invoice or a credit note is generated to meet
+cannot be exceeded. At the end of the project a final invoice or a credit note is generated to meet
 the total amount of value fixed for the project.
 
 To configure such a project you must set an invoicing rate, a pricelist and a maximum amount on the

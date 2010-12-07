@@ -33,7 +33,7 @@ The planning function covers several objectives which will be described in this 
 .. tip:: The social role of planning
 
 	Some project managers think that they can manage planning on their own.
-	They're commonly overworked and think that meetings are a waste of time.
+	They are commonly overworked and think that meetings are a waste of time.
 
 	Even if staff really can manage their work for themselves, you should recognize that this regular
 	meeting is also aimed at reassurance.
@@ -43,9 +43,9 @@ The planning function covers several objectives which will be described in this 
 
 	* lack of feedback and tracking of the work actually completed,
 
-	* an impression of poor organization if that hasn't been made explicit.
+	* an impression of poor organization if that has not been made explicit.
 
-	So the social role of planning shouldn't be neglected. We have often experienced a background of
+	So the social role of planning should not be neglected. We have often experienced a background of
 	stress in a company stemming from a lack of communication and planning.
 
 .. index::
@@ -58,7 +58,7 @@ There are two major approaches to enterprise planning: planning by task and plan
 can manage both with Open ERP.
 
 In planning by task, the project manager assigns tasks from the different projects to each employee
-over a given period. Employees then carry out precisely the work they've been assigned by the
+over a given period. Employees then carry out precisely the work they have been assigned by the
 project manager.
 
 .. index::
@@ -80,7 +80,7 @@ will do next, based on the plans and the relative priorities of the tasks.
 The figure :ref:`fig-srvplantime` shows a monthly planning session where plans are being made for each employee to spend a
 number of days' work on various different projects.
 
-In this time-focused planning approach, clients' priorities don't feature in the planning any more,
+In this time-focused planning approach, clients' priorities do not feature in the planning any more,
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
@@ -100,20 +100,20 @@ resources on projects from the task prioritization within a project.
 			
 			* on time, but with fewer functions than planned.
 
-			If your planning is based on phases and tasks you'll report at the client meeting that it will
+			If your planning is based on phases and tasks you will report at the client meeting that it will
 			take several weeks to complete everything that was planned for the current phase. Conversely, if
-			you're planning by time you'll keep the meeting with the client to close the present development
+			you are planning by time you will keep the meeting with the client to close the present development
 			phase and plan the new one, but only be able to present part of the planned functionality.
 
-			If the client is sensitive to delay, the first approach will cause acute unhappiness. You'll have
+			If the client is sensitive to delay, the first approach will cause acute unhappiness. You will have
 			to re-plan the project and all of its future phases to take account of that delay. Some problems
 			are also likely to occur later with invoicing, because it will be difficult for you to invoice
-			any work that has been completed late but hasn't yet been shown to the client.
+			any work that has been completed late but has not yet been shown to the client.
 
-			The second approach will require you to report on the functions that haven't been completed, and
-			on how they would fit into a future planning phase. That won't involve a break in the
+			The second approach will require you to report on the functions that have not been completed, and
+			on how they would fit into a future planning phase. That will not involve a break in the
 			working time allocated to the project, however. 
-			You'd then generate two different lists: a staffing plan
+			You would then generate two different lists: a staffing plan
 			for the different projects, and the list of tasks prioritized for the client's project. This
 			approach offers a number of advantages over the first one:
 
@@ -122,10 +122,10 @@ resources on projects from the task prioritization within a project.
 
 			* The client may re-plan the functions taking the new delay into account.
 
-			* You'll be able to make the client gradually aware of the fact that project progress has come
+			* You will be able to make the client gradually aware of the fact that project progress has come
 			  under pressure and that work is perhaps more complex than had been estimated at the outset.
 
-			* A delay in the delivery of several of the functions won't necessarily affect either monthly
+			* A delay in the delivery of several of the functions will not necessarily affect either monthly
 			  invoicing or project planning.
 
 			Being able to separate human resource planning from task prioritization simplifies your
@@ -208,7 +208,7 @@ detail each employee's tasks. Then when a department manager creates his own pla
 what is required of his group by his management at the bottom of the form. At the top of the form
 there is a place for assigning project work in detail to each member of department.
 
-If you don't have to plan time to work on a final draft you can do it on an analytic account that
+If you do not have to plan time to work on a final draft you can do it on an analytic account that
 relies on child accounts. This means that you can create plans to meet top-level objectives of the
 senior management team and then cascade them down through the different departments to establish a
 time budget for each employee. Each manager then uses his own plans for managing his level in the

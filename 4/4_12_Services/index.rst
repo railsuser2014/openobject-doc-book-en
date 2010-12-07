@@ -25,7 +25,6 @@ no particular chart of accounts configured.
 .. toctree::
 
     4_12_Services_contract
-    4_12_Services_planning
 
 .. raw:: html
 
