@@ -15,9 +15,6 @@ current list of collaborators.
 	the company. This includes all types of contracts: contracts with both fixed and indeterminate time
 	periods, and also independent and freelance service contracts.
 
-	.. index::
-	   single: modules; portal_
-
 	A “user” is a physical person who is given access to the company's systems. Most employees are
 	users but some users are not employees: external partners can have access to parts of the system.
 
@@ -80,8 +77,8 @@ form with the following information:
 *  :guilabel:`Product` : a service product that describes how this employee would be charged out,
    for example as ``Service on Timesheet``.
 
-Management of employment contracts
-----------------------------------
+Contract Management
+-------------------
 
 If you install the :mod:`hr_contract` module you can link contract details to the employee record.
 

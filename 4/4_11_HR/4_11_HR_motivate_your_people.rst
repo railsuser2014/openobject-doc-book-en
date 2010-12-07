@@ -69,7 +69,7 @@ Using the menu :menuselection:`Human Resources --> Holidays --> Leave Requests` 
    :scale: 50
    :align: center
 
-   *Configuration wizard to install hr_holidays module*
+   *Leave request form*
 
 Leaves requests can be recorded by employees and validated by their managers.
 Once a leave request is validated it appears automatically in the agenda of the employee.
@@ -85,6 +85,8 @@ OpenERP can provide following features for efficient holiday management process.
 * You can set up  colour preferences according to your leave type like `Seak Leave` should be red in reports.
 * An employee can make an ask for more off-days by making a new Allocation
 
+The statistical report for the leaves can be seen using
+:menuselection:`Human Resources --> Reporting --> Holidays --> Leaves Analysis` menu.
 
 .. Copyright © Open Object Press. All rights reserved.
 
