@@ -13,8 +13,28 @@ efficient holiday management.
 Assessments
 -----------
 
+The regular assessments of human resources can be benefited to your people as well organization.
 For efficient periodical evaluation of employees' performance you need to install :mod:`hr_evaluation`
-module.
+module.The configuration wizard to install this module is shown below.
+
+.. figure::  images/config_wiz_evaluation.png
+   :scale: 50
+   :align: center
+
+   *Configuration wizard to install hr_evaluation module*
+
+To create and manage new evaluation you can use the menu :menuselection:`Human Resources --> Evaluations --> Evaluations`.
+
+.. figure::  images/employee_evaluation.png
+   :scale: 50
+   :align: center
+
+   *Employee's evaluation form*
+
+Each employee can be assigned to an evaluation plan. These plans define the frequency and the
+way you manage your periodic personal evaluation. You will be able to define steps and attach
+interview forms to each step. OpenERP manages all kind of evaluations: bottom-up, top-down,
+self evaluation and final evaluation by the manager.
 
 The main features of the evaluation process covered by OpenERP are as follow.
 
@@ -25,8 +45,9 @@ The main features of the evaluation process covered by OpenERP are as follow.
   and it can be defined which level of employee hierarchy fills what and
   final review and evaluation is done by the manager.
 * Every evaluation filled by the employees can be viewed by nice pdf form.
-
-To create new evaluation you can use the menu :menuselection:`Human Resources --> Evaluations --> Evaluations`.
+* Interview Requests are generated automatically by OpenERP according to employees
+  evaluation plan. Each user receives automatic emails and requests to perform evaluation
+  of their colleagues periodically.
 
 You can analyse evaluation data through the menu :menuselection:`Human Resources --> Reporting --> Evaluations Analysis`.
 
@@ -34,11 +55,30 @@ Holiday Management
 ------------------
 
 you can manage the leaves taken by employees using :mod:`hr_holidays`
-module.
+module.The configuration wizard to install this module is shown below.
 
-OpenERP can provide following feature for efficient holiday management process.
+.. figure::  images/config_wiz_holidays.png
+   :scale: 50
+   :align: center
 
-* It you to manage leaves and leaves' requests.
+   *Configuration wizard to install hr_holidays module*
+
+Using the menu :menuselection:`Human Resources --> Holidays --> Leave Requests` employee can put the leave request.
+
+.. figure::  images/employee_leave_request_form.png
+   :scale: 50
+   :align: center
+
+   *Configuration wizard to install hr_holidays module*
+
+Leaves requests can be recorded by employees and validated by their managers.
+Once a leave request is validated it appears automatically in the agenda of the employee.
+You can define several allowance types (paid holidays, sickness, etc) and manage allowances
+per type.
+
+OpenERP can provide following features for efficient holiday management process.
+
+* It helps you to manage leaves and leaves' requests.
 * A synchronisation with an internal agenda (use of the CRM module) is possible:
   in order to automatically create a case when an holiday request is accepted,
   you have to link the holidays status to a case section.
