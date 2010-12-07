@@ -81,6 +81,15 @@ Contract Management
 -------------------
 
 If you install the :mod:`hr_contract` module you can link contract details to the employee record.
+The configuration wizard to install this module is shown below.
+
+.. figure::  images/config_wiz_contract.png
+   :scale: 50
+   :align: center
+
+   *configuration wizard to install hr_contract*
+
+Using :menuselection:`Human Resources --> Human Resources --> Contracts` you can create and edit new contract.
 
 .. figure::  images/service_hr_contract.png
    :scale: 50

@@ -40,6 +40,14 @@ The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee
 	staff. The objective here isn't to control hours, because the employees decide for themselves what
 	they'll be entering – but to track the tasks running and the allocation of costs between them.
 
+To enable your system with all the features related to `Timesheet`, your configuration wizard should be like this.
+
+.. figure::  images/config_wiz_timesheets.png
+   :scale: 50
+   :align: center
+
+   *Configuration wizard for Timesheet*
+
 Amongst the many uses of such a timesheet system for a company, here are some of the most important:
 
 * enabling tracking of the true costs of a project by accounting for the time used on it,

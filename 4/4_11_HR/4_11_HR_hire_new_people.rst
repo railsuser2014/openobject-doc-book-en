@@ -44,9 +44,6 @@ You can manage following information using applicant form.
 * Qualification of Applicant
 * Status: reflects the actual status of the recruitment process like `In Progress`, `Pending` or `Hired`
 
-
-The information about the :guilabel:`Job Position` can be maintained through the menu :menuselection:`Human Resources --> Recruitment --> Job Positions`.
-
 Initially the applicant states is `New` after that it can be converted into `In Progress`.
 If the applicant is at one of the different stages like it may be in `Waiting for approval by human resource department` or `Waiting for offer acceptance by applicant`,
 in these cases applicant states should be `Pending`. When the status is `Hired`, you can find that applicant from the list of employees.
