@@ -1,5 +1,5 @@
-Complete workflow from supplier to customer
-===========================================
+From Supplier to Customer
+=========================
 
 Now you'll follow a practical example by adapting stock management operations. In order you'll see:
 
@@ -13,7 +13,7 @@ Now you'll follow a practical example by adapting stock management operations. I
 
 * analysis of the state of stock.
 
-Defining a new product
+Defining a New Product
 -----------------------
 
 To start, define the following product:

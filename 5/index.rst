@@ -1,21 +1,21 @@
 
 .. _part-phys:
 
-#######################
-Stock and Manufacturing
-#######################
+#####################################################
+Manage your Warehouse and Get your Manufacturing done
+#####################################################
 
  This part of the book concentrates on physical materials - the handling of stock and
  the transformation of materials by assembly and manufacture.
- 
+
  Stocks are the physical embodiment of their product specification, things rather than
- datasheets. So they need to be stored and moved between locations, and tracked in 
+ datasheets. So they need to be stored and moved between locations, and tracked in
  sets and individually. They have a size, a weight, and a cost.
  Open ERP manages all of this in some rather useful and unique ways.
- 
- Manufacture is the transformation of materials and components, perhaps using measurable 
+
+ Manufacture is the transformation of materials and components, perhaps using measurable
  resources, into other products and services, adding value to your company on the way.
- 
+
 .. toctree::
     :maxdepth: 1
 

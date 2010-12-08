@@ -1,4 +1,4 @@
-Advanced elements of stock management
+Advanced Elements of Stock Management
 =====================================
 
 In this section you'll enter the details of management and control of stocks.
@@ -27,7 +27,7 @@ Just in Time
 
 By default, scheduling starts automatically once a day. You should make this
 run happen overnight to ensure that the system doesn't slow down under a heavy load of scheduling when
-you're also trying to use it interactively yourselves. 
+you're also trying to use it interactively yourselves.
 
 To set the time it starts use the menu
 :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Select the rule
@@ -38,7 +38,7 @@ called 'Run MRP Scheduler' and modify the date and time of the next execution.
 
 Some companies want to plan orders progressively as they are entered so they don't wait until
 procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
-it's installed, each requirement (that could result in a Production or Purchase Order) 
+it's installed, each requirement (that could result in a Production or Purchase Order)
 will be planned in real time as soon as it's been confirmed.
 
 Then if you make a customer order with a product that's ``Make To Order`` the quotation request to a
@@ -51,7 +51,7 @@ supplier will be generated.
 
     The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
     the supplier to the customer. At the time of writing this module is in ``addons-extra`` .
-    The logic that the product follows is configured individually for each product and affects only those 
+    The logic that the product follows is configured individually for each product and affects only those
     products marked ``Make to Order``.
 
 This mode is not always sensible. Each order is processed immediately it's been confirmed. So if an order
@@ -59,9 +59,9 @@ is to be delivered in three months the scheduler will reserve goods in stock for
 it's been confirmed. It would have been more sensible to leave these products available for other
 orders.
 
-If a Purchase Order's :guilabel:`Invoicing Control` is configured ``From Order``, 
+If a Purchase Order's :guilabel:`Invoicing Control` is configured ``From Order``,
 the scheduler will immediately create the corresponding
-supplier quotation request. It would have been preferable to delay for several weeks if 
+supplier quotation request. It would have been preferable to delay for several weeks if
 you could have used the lead time to group the purchase with other future orders.
 
 So the negative effects of working with the Just in Time module are:
@@ -166,14 +166,14 @@ In this case Open ERP generates a list of all products waiting to be received fr
 
 Then you just look for the  corresponding entry using the supplier name or order reference. Click it
 and confirm the quantities. If it shows you quantities that differ from the control form, Open ERP
-will automatically generate another receipt document that will be set open, waiting for the 
+will automatically generate another receipt document that will be set open, waiting for the
 remaining deliveries. You can leave it open or
 cancel it if you know that products missed by your supplier will never be delivered.
 
 Confirmation by selecting products waiting
 ------------------------------------------
 
-The approach shown above is very useful if goods receipts correspond to the original orders. 
+The approach shown above is very useful if goods receipts correspond to the original orders.
 If your suppliers deliver items that don't necessarily coincide with the orders, however,
 it is easier to work by products received rather than by orders.
 

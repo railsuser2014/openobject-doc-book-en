@@ -1,14 +1,14 @@
 
-Logistics Configuration
-=======================
+Basic Logistics Configuration
+=============================
 
 In this section you'll see how to configure stock management to match your company's needs. Open ERP
 can handle many different situations by configuring it to behave as required.
 
-.. index:: 
+.. index::
    single: stock; location
 
-Stock locations
+Stock Locations
 ---------------
 
 You've seen in the preceding sections that the whole of stock management is built on a concept of
@@ -28,10 +28,10 @@ Use the menu :menuselection:`Stock Management --> Configuration --> Locations` t
 
 You should then give a name to your stock location. Now look at location types and localization.
 
-.. index:: 
+.. index::
    single: stock; location type
 
-Location types
+Location Types
 --------------
 
 The location must have one of the following types:
@@ -75,11 +75,11 @@ the warehouse, linked to a Shop.
 
    *Definition of stock locations on the partner form*
 
-.. index:: 
+.. index::
    single: stock; localization
 
-Localization
-------------
+Location Addresses
+------------------
 
 Each location can be given an address. That enables you to create a location for a customer or a
 supplier, for example. You can then give it the address of that customer or supplier. You should
@@ -108,8 +108,8 @@ To enable you to consolidate easily at a higher level, the location definition i
 structure is given by the field :guilabel:`Parent location`. That also enables you to manage complex
 cases of product localization. For example, you could imagine the following scenario.
 
-Example Structure for two warehouses
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+One Company with Two Warehouses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A company has a warehouse in Paris and in Bordeaux. For some orders you must deliver the products
 from Paris, and for others from Bordeaux. But you should also specify a fictitious warehouse that
@@ -136,10 +136,10 @@ Y, Z) of the different stores to enable Open ERP to search for the nearest goods
 The same co-ordinates could also be used to structure the shelves, aisles and interior rooms in a
 warehouse.
 
-.. index:: 
+.. index::
    single: stock; real time valutation
 
-Accounting valuation in real time
+Accounting Valuation in Real Time
 ---------------------------------
 
 .. index::
@@ -174,7 +174,7 @@ You use this system for managing consigned stocks:
 
 * a location in your own company that isn't valued in your accounts.
 
-.. index:: 
+.. index::
    single: chained location
    single: location; chained
 
@@ -277,7 +277,7 @@ confirm a delivery note in the system. You can then set the link mode to 'Automa
 ERP automatically confirm the second step. It's then assumed the all the items have automatically
 been delivered to the customer.
 
-.. index:: 
+.. index::
    single: linked production
 
 Linked Production

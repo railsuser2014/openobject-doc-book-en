@@ -1,4 +1,4 @@
-.. index:: 
+.. index::
    single: stock; warehouse
 
 Warehouses
@@ -43,7 +43,7 @@ company. Once the warehouse has been defined it can be used in:
 
 .. index:: procurement
 
-Automatic procurement
+Automatic Procurement
 ---------------------
 
 Several methods of automatically procuring products can be carried out by Open ERP:
@@ -56,11 +56,11 @@ Several methods of automatically procuring products can be carried out by Open E
 
 The two last methods are described below.
 
-.. index:: 
+.. index::
    single: stock; orderpoint
    single: minimum stock rule
 
-Minimum stock rules
+Minimum Stock Rules
 -------------------
 
 To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use

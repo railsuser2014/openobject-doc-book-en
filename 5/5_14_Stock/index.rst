@@ -5,9 +5,9 @@
 
 .. _ch-stocks:
 
-******************************
-Logistics and Stock Management
-******************************
+**************
+Your Warehouse
+**************
 
  *Open ERP's stock management is at once very simple, flexible and complete.
  It's based on the concept of double entry that revolutionized accounting.
@@ -68,7 +68,7 @@ installed.
     counterparts.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`stock` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`stock` and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 

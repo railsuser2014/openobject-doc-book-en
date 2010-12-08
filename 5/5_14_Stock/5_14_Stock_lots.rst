@@ -1,7 +1,7 @@
 
 .. _sect-lotmgt:
 
-Management of lots and traceability
+Management of Lots and Traceability
 ===================================
 
 The double-entry management in Open ERP enables you to run very advanced traceability. All
@@ -17,12 +17,12 @@ gaps in stock moves.
     **Upstream** traceability runs from the raw materials received from the supplier and follows the
     chain to the finished products delivered to customers.
     (Note that the name is confusing - this would often be considered a downstream direction.
-    Think of it as **Where Used**.) 
+    Think of it as **Where Used**.)
 
     **Downstream** traceability follows the product in the other direction, from customer to the
     different suppliers of raw material.
     (Note that the name is confusing - this would often be considered an upstream direction.
-    Think of it as **Where Supplied**.) 
+    Think of it as **Where Supplied**.)
 
 Stock Moves
 -----------
@@ -90,14 +90,14 @@ used several times for different products, so you can mix different products on 
 .. note:: Simplified View
 
     In the ``Simplified View`` the tracking numbers can't be seen: the field is hidden.
-    To get to ``Extended View`` mode, assign the group 
+    To get to ``Extended View`` mode, assign the group
     :guilabel:`Usability – Extended View` to the current user.
 
 You can also specify on the product form the operations in which a lot number is
 required. You can then compel the user to set a lot number for manufacturing operations, goods
 receipt, or customer packing.
 
-You don't have to encode the lot number one by one to assign a unique lot number to a set of several items. 
+You don't have to encode the lot number one by one to assign a unique lot number to a set of several items.
 You only need to take a stock move for several products line and click the button
 :guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and Open ERP will
 complete the prefix in the wizard with a continuing sequence number. This sequence number

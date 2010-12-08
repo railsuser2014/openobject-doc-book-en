@@ -42,7 +42,7 @@ The two fields are:
 
       *Printout of forecast stock levels*
 
-Lead times and locations
+Lead Times and Locations
 ------------------------
 
 The tab :guilabel:`Procurement & Locations` contains information about different lead times and
@@ -138,7 +138,7 @@ You can verify the moves generated using the second tab of the inventory operati
 The correct levels of your product are now in your stock locations. A simple way of verifying this
 is to reopen the product form to see the quantities available in stock.
 
-Receipt of a supplier order
+Receipt of a Supplier Order
 ---------------------------
 
 Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management
@@ -184,7 +184,7 @@ generated automatically in the draft state, based on the goods received. Your ac
 confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that
 the invoiced quantities correspond to the quantities received.
 
-Customer delivery
+Customer Delivery
 -----------------
 
 .. index::
@@ -286,7 +286,7 @@ salesperson can follow the progress of their orders at a glance.
 .. index::
    single: stock; analysis
 
-Analysing stock
+Analysing Stock
 ---------------
 
 Now look at the effect of these operations on stock management. There are several ways of viewing
