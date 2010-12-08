@@ -12,7 +12,7 @@ Your Warehouse
  *Open ERP's stock management is at once very simple, flexible and complete.
  It's based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
- “everything moved”. In Open ERP you don't talk of disappearance, consumption or loss of products:
+ “everything moved”. In Open ERP you do not talk of disappearance, consumption or loss of products:
  instead you speak only of stock moves from one place to another.*
 
 Just as in accounting, the Open ERP system manages counterparts to each of its main operations such as

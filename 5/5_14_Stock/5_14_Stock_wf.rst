@@ -1,17 +1,17 @@
 From Supplier to Customer
 =========================
 
-Now you'll follow a practical example by adapting stock management operations. In order you'll see:
+Now you will follow a practical example by adapting stock management operations. In order you will see:
 
-* defining a new product,
+* Defining a new product
 
-* initial setting of inventory,
+* Initial setting of inventory
 
-* receiving products from a supplier,
+* Receiving products from a supplier
 
-* delivering to a customer,
+* Delivering to a customer
 
-* analysis of the state of stock.
+* Analysis of the state of stock
 
 Defining a New Product
 -----------------------
@@ -29,7 +29,7 @@ To start, define the following product:
    Supply Method        Buy
    ==================== ======================
 
-Use the menu :menuselection:`Products --> Products`, then click :guilabel:`New` to define a new
+Use the menu :menuselection:`Warehouse --> Products --> Products`, then click :guilabel:`New` to define a new
 product.
 
 .. figure:: images/stock_product.png
@@ -38,13 +38,13 @@ product.
 
    *Definition of a new product*
 
-Three fields are important for stock management when you're configuring a new product:
+Three fields are important for stock management when you are configuring a new product:
 
-* :guilabel:`Product Type`,
+* :guilabel:`Product Type`
 
-* :guilabel:`Procure Method`,
+* :guilabel:`Procurement Method`
 
-* :guilabel:`Supply Method`.
+* :guilabel:`Supply Method`
 
 Product Types
 --------------
@@ -52,15 +52,15 @@ Product Types
 The product type indicates if the product is handled in stock management and if Open ERP manages its
 procurement. The three distinct product types are:
 
-* :guilabel:`Stockable Product` : this product is used in stock management and its replenishment is
+* :guilabel:`Stockable Product` : This product is used in stock management and its replenishment is
   more or less automated as defined by the rules established in the system. Examples, a bicycle, a
   computer or a central heating system.
 
-* :guilabel:`Consumable` : handled in stock management, you can receive it, deliver it and make it.
-  But its stock level isn't managed by the system. Open ERP assumes that you've got sufficient levels
-  in stock at all time, so it doesn't restock it automatically. Example, nails.
+* :guilabel:`Consumable` : This product is handled in stock management, you can receive it, deliver it and make it.
+  But its stock level is not managed by the system. Open ERP assumes that you have got sufficient levels
+  in stock at all time, so it does not restock it automatically. Example, nails.
 
-* :guilabel:`Service` : doesn't appear in the various stock operations. Example, a consulting
+* :guilabel:`Service` : It does not appear in the various stock operations. Example, a consulting
   service.
 
 Procure Methods – Make to Stock and Make to Order
@@ -72,7 +72,7 @@ The procure method determines how the product will be replenished:
   set quantity of each product when its stock is too low. Example, a classic distributor.
 
 * :guilabel:`Make to Order` : when a customer order is confirmed, you then procure or manufacture
-  the products for this order. A customer order 'Make to Order' won't modify stock in the medium term
+  the products for this order. A customer order 'Make to Order' will not modify stock in the medium term
   because you restock with the exact amount that was ordered. Example, computers from a large supplier
   assembled on demand.
 
@@ -114,7 +114,7 @@ Supply Methods
 
 Open ERP supports two supply methods:
 
-* Produce: when the product or service is supplied from internal resources,
+* Produce: when the product or service is supplied from internal resources.
 
 * Buy: when the product is bought from a supplier.
 
@@ -196,9 +196,9 @@ convert from one unit of measure to another as long as they are in the same cate
    ========= ============ ======
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
-category could be expressed in Kg, Tonnes or Grammes. You can't express them in hours or pieces.
+category could be expressed in Kg, Tonnes or Grammes. You can not express them in hours or pieces.
 
-Use the menu :menuselection:`Products --> Configuration --> Units of Measure --> Units of Measure`
+Use the menu :menuselection:`Sales --> Configuration --> Products -->  Units of Measure --> Units of Measure --> Units of Measure`
 to define a new unit of measure.
 
 In the definition of a Unit of Measure, you have a :guilabel:`Rounding precision` factor which shows how
@@ -208,7 +208,7 @@ gives rounding to one hundredth.
 .. note::  Secondary Units
 
    Open ERP supports double units of measure.
-   When you use this, the whole of the stock management system is encoded in two units that don't
+   When you use this, the whole of the stock management system is encoded in two units that do not
    have a real link between them.
 
    This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice

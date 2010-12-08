@@ -30,8 +30,8 @@ receipt of the products:
    ================================================== =============
    Location                                           Products
    ================================================== =============
-   Partner Locations > Suppliers > Suppliers          -30 bicycles
-   Physical Locations > Tiny SPRL > Stock             +30 bicycles
+   Partner Locations > Suppliers                      -30 bicycles
+   Physical Locations > OpenERP S.A. > Stock          +30 bicycles
    ================================================== =============
 
 If you deliver 2 bicycles to a European customer you will get the following transactions for the
@@ -42,29 +42,29 @@ delivery:
    ================================================== =============
    Location                                           Products
    ================================================== =============
-   Physical Locations > Tiny SPRL > Stock             -2 bicycles
+   Physical Locations > OpenERP S.A. > Stock          -2 bicycles
    Partner Locations > Customers > European Customers +2 bicycles
    ================================================== =============
 
-When the two operations are complete you'll then get the following stock in each location:
+When the two operations are complete you will then get the following stock in each location:
 
 .. table:: Resulting stock situation
 
    ================================================== =============
    Location                                           Products
    ================================================== =============
-   Partner Locations > Suppliers > Suppliers          -30 bicycles
-   Physical Locations > Tiny SPRL > Stock             +28 bicycles
+   Partner Locations > Suppliers                      -30 bicycles
+   Physical Locations > OpenERP S.A. > Stock          +28 bicycles
    Partner Locations > Customers > European Customers +2 bicycles
    ================================================== =============
 
 So you can see that the sum of the stocks of a product in all the locations in Open ERP is always
-zero. In accounting you'd say that the sum of the debits is equal to the sum of the credits.
+zero. In accounting you would say that the sum of the debits is equal to the sum of the credits.
 
-Partner locations (customers and suppliers) aren't located under your company in the hierarchical
+Partner locations (customers and suppliers) are not located under your company in the hierarchical
 structure, so their contents are not considered as part of your own stock. So if you look just at
 the physical locations inside your own company those two bicycles are no longer in your company.
-They're not in your own physical stock but it's still very useful to see them in your customer's
+They are not in your own physical stock but it is still very useful to see them in your customer's
 stock because that helps when you carry out detailed stock management analysis.
 
 .. note:: Accounts
@@ -75,18 +75,18 @@ stock because that helps when you carry out detailed stock management analysis.
      If you forget two items of stock this error will automatically be reflected in the
      counterpart's location.
 
-You can make a comparison with accounting, where you'll easily find an error because you can look
-for an anomaly in an account or in the counterparts: if there's not enough in a bank account then that's
+You can make a comparison with accounting, where you will easily find an error because you can look
+for an anomaly in an account or in the counterparts: if there is not enough in a bank account then that iss
 probably because someone's forgotten to enter a customer's invoice payment. You always know that the
 sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
 
 In accounting, all documents lead to accounting entries that form the basis of management
 accounting. If you create invoices or code in statements of account, for example, the results of the
-operations are accounting entries on accounts. And it's the same for stock management in Open ERP.
+operations are accounting entries on accounts. And it is the same for stock management in Open ERP.
 All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture
 them, or carry out a stock inventory operation, stock moves are carried out every time.
 
-You've seen a fairly simple example of goods receipt and product delivery, but some operations are
+You have seen a fairly simple example of goods receipt and product delivery, but some operations are
 less obvious – a stock inventory operation, for example. An inventory operation is carried out
 when you compare the stock shown in software with real stock numbers counted in the stores.
 
@@ -94,8 +94,8 @@ when you compare the stock shown in software with real stock numbers counted in 
    single: stock; inventory operation
    single: stock; stock check
 
-In Open ERP, with its double-entry stock management, you'd use stock moves for this inventory
-operation. That helps you manage your stock traceability. If there are 26 Bicycles in real stock but
+In Open ERP, with its double-entry stock management, you would use stock moves for this inventory
+operation. That helps you manage your stock traceability. If there are 26 bicycles in real stock but
 Open ERP shows 28 in the system. You then have to reduce the number in Open ERP to 26. This
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
@@ -105,7 +105,7 @@ carried out as in the following operation:
    ================================================== =============
    Location                                           Products
    ================================================== =============
-   Physical Locations > Tiny SPRL > Stock             -2 bicycles
+   Physical Locations > OpenERP S.A. > Stock          -2 bicycles
    Virtual Locations > Inventory Loss                 +2 bicycles
    ================================================== =============
 
@@ -116,8 +116,8 @@ The product stock under consideration then becomes:
    ================================================== =============
    Location                                           Products
    ================================================== =============
-   Partner Locations > Suppliers > Suppliers          -30 bicycles
-   Physical Locations > Tiny SPRL > Stock             +26 bicycles
+   Partner Locations > Suppliers                      -30 bicycles
+   Physical Locations > OpenERP S.A. > Stock          +26 bicycles
    Partner Locations > Customers > European Customers +2 bicycles
    Virtual Locations > Inventory Loss                 +2 bicycles
    ================================================== =============
@@ -133,24 +133,24 @@ moving products out of and into physical stock. The stock operations for this ar
 
 .. table:: Stock situation resulting from manufacture
 
-   ====================================== ========== ================================
-   Location                               Products   Step
-   ====================================== ========== ================================
-   Virtual Locations > Default Production +2 Wheels  Consumption of raw materials
-   Physical Locations > Tiny SPRL > Stock -2 Wheels  Consumption of raw materials
-   Virtual Locations > Default Production +1 Frame   Consumption of raw materials
-   Physical Locations > Tiny SPRL > Stock -1 Frame   Consumption of raw materials
-   Virtual Locations > Default Production -1 Bicycle Manufacture of finished products
-   Physical Locations > Tiny SPRL > Stock +1 Bicycle Manufacture of finished products
-   ====================================== ========== ================================
+   ========================================= =========== ================================
+   Location                                  Products    Step
+   ========================================= =========== ================================
+   Virtual Locations > Production            +2 Wheels   Consumption of raw materials
+   Physical Locations > OpenERP S.A. > Stock -2 Wheels   Consumption of raw materials
+   Virtual Locations > Production            +1 Frame    Consumption of raw materials
+   Physical Locations > OpenERP S.A. > Stock -1 Frame    Consumption of raw materials
+   Virtual Locations > Production            -1 Bicycle  Manufacture of finished products
+   Physical Locations > OpenERP S.A. > Stock +1 Bicycle  Manufacture of finished products
+   ========================================= =========== ================================
 
-So you've now got the outcome you need from the consumption of raw materials and the manufacture of
+So you have now got the outcome you need from the consumption of raw materials and the manufacture of
 finished products.
 
 .. note::  Assessing created value
 
     You might already have noticed a useful effect of this approach:
-    if you do a stock valuation in the ``Default Production`` location you get
+    if you do a stock valuation in the ``Virtual Locations > Production`` location you get
     a statement of value created by your company (as a negative amount).
     Stock valuation in any given location is calculated by multiplying quantities of products in
     stock by their cost.
