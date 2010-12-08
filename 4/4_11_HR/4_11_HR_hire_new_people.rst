@@ -54,9 +54,7 @@ The information about the :guilabel:`Job Position` can be maintained by the menu
    :scale: 50
    :align: center
 
-   *Job Position in your Organization*
-
-You can analyse data of the recruitment process through the menu :menuselection:`Human Resources --> Reporting --> Recruitment Analysis`.
+   *Job Position in the organization*
 
 The key features of OpenERP for the process of hiring the new people using :mod:`hr_recruitment` module.
 
