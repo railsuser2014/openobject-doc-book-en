@@ -1,11 +1,11 @@
 
 .. index:: GTD
 
-The art of productivity without stress
+The Art of Productivity without Stress
 ======================================
 
 Now you can take a slight detour away from pure enterprise management by looking at some tools offered by
-Open ERP to improve your own personal time management. It's not much of a detour because good
+Open ERP to improve your own personal time management. It is not much of a detour because good
 organization is the key to better productivity in your daily work.
 
 .. index::
@@ -21,17 +21,24 @@ time management:
   principle that people should clearly write down all their outstanding tasks and store the details
   about these tasks in a trustworthy system.
 
-  They then don't have to worry about holding all of this stuff in their head. Since they can be
-  quite sure that it's recorded safely, they can allow themselves to relax and so have the energy
+  They then do not have to worry about holding all of this stuff in their head. Since they can be
+  quite sure that it is recorded safely, they can allow themselves to relax and so have the energy
   and time to concentrate on handling the tasks themselves systematically.
+
+.. index::
+   simple: The 7 Habits of Highly Effective People
+
+* The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises
+  organizations on the use of these practices, and reports on the productivity improvements in the
+  organization that result.
 
   .. note:: Managing time efficiently
 
      David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN :
      978-0142000281). Also see the site: http://davidco.com
 
-	 Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary
-	 Edition : 2004, 384 pages. (ISBN : 978-0743269513).
+     Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary
+     Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 
   .. tip:: De-stress yourself !
 
@@ -42,18 +49,11 @@ time management:
 	 benefits.
 	 Take some sheets of blank paper and write down everything that passes through your head about the
 	 things you need to do.
-	 For each task, note the next action to do on an adjacent line, and rank it by the date that you'll
+	 For each task, note the next action to do on an adjacent line, and rank it by the date that you will
 	 commit yourself to doing it.
 
-	 At the end of the exercise you'll feel better organized, considerably de-stressed and remarkably
+	 At the end of the exercise you will feel better organized, considerably de-stressed and remarkably
 	 free of worries !
-
-.. index::
-   simple: The 7 Habits of Highly Effective People
-
-* The 7 Habits of Highly Effective People by Stephen R. Covey (1989) : the author advises
-  organizations on the use of these practices, and reports on the productivity improvements in the
-  organization that result.
 
 The objective in this detour is not to detail the whole methodology but to describe the supporting
 tools provided by Open ERP's :mod:`project_gtd` module.
@@ -68,11 +68,11 @@ in a single list
 
 Many managers with a heavy workload use urgency as their sole method of prioritization. The
 difficulty is then in working out how to plan for substantive tasks (like medium term objectives).
-These aren't urgent but are nevertheless very important.
+These are not urgent but are nevertheless very important.
 
 	.. note:: Example Distinction between urgency and importance
 
-			If you're very well organized, urgent tasks can (and should often) be given lower precedence than
+			If you are very well organized, urgent tasks can (and should often) be given lower precedence than
 			important tasks. Take an example from daily life as an illustration: the case of having some time
 			with your children.
 
@@ -103,14 +103,14 @@ example you could define the following contexts:
 *  *Car* : for tasks that you need to do on the move (such as going shopping, or going to
    the post office),
 
-*  *Travel* : for tasks that you can handle on the plane or in the train while you're doing
+*  *Travel* : for tasks that you can handle on the plane or in the train while you are doing
    travelling on business (tasks such as writing an article, or analyzing a new product),
 
 *  *Home* : for tasks which have to happen at your private address (such as finding a cleaning
    contractor, or mowing the lawn).
 
-An employee / system user can create his or her own contexts using the menu :menuselection:`Project
-Management --> Configuration --> Time Management --> Contexts`.
+An employee / system user can create his or her own contexts using the menu
+:menuselection:`Project --> Configuration --> Tasks --> Contexts`.
 
 Timebox
 ^^^^^^^
@@ -118,13 +118,13 @@ Timebox
 You then have to define the timeboxes. You have to complete the tasks in the time interval specified
 by a timebox. You usually define timeboxes with the following periods:
 
-*  *Daily* : for tasks which must be handled today,
+*  *Today* : for tasks which must be handled today,
 
-*  *Weekly* : for tasks that have to be dealt with this week,
+*  *This Week* : for tasks that have to be dealt with this week,
 
-*  *Monthly* : for tasks which have to be completed within the month,
+*  *This Month* : for tasks which have to be completed within the month,
 
-*  *Long term* : for tasks that can be dealt with in more than one month.
+*  *Long Term* : for tasks that can be dealt with in more than one month.
 
 A task can be put in one and only one timebox at a time.
 
@@ -132,8 +132,8 @@ You should distinguish between a timebox and the deadline for completing a task 
 is usually fixed by the requirements of the project manager. A timebox, by contrast, is selected
 with reference to what an individual can do.
 
-To define timeboxes for your company, use the menu :menuselection:`Project Management -->
-Configuration --> Time Management --> Timeboxes --> My timeboxes`.
+To define timeboxes for your company, use the menu
+:menuselection:`Project --> Configuration --> Tasks --> Timeboxes`.
 
 .. index:: methodology; GTD
 
@@ -144,10 +144,10 @@ To organize your tasks efficiently, Open ERP uses a method based on the followi
 iterative process:
 
 	#. Identify all the tasks that you have to deal with, including everything that keeps you awake at
-	   night, and enter them in your Inbox, which you'll find in the menu :menuselection:`Project
-	   Management --> Time Management --> My Inbox`.
+	   night, and enter them in Tasks, which you will find in the menu
+	   :menuselection:`Project --> Project --> Tasks`.
 
-	#. Classify the tasks in your Inbox periodically, assigning them a context and a timebox. This
+	#. Classify the tasks periodically, assigning them a context and a timebox. This
 	   indicates both when and where the task should be handled. If a task takes less than 10 minutes then
 	   maybe it could be handled immediately.
 
@@ -157,7 +157,7 @@ iterative process:
 		  want to deal with today. These are presented in order of importance and urgency, so you should
 		  select the tasks closest to the top of the list.
 
-		* Carry out each task, that's to say either work on the task yourself or delegate it to another
+		* Carry out each task, that is to say either work on the task yourself or delegate it to another
 		  user,
 
 		* Last thing at the end of the day's work, empty that day's timebox and return all unclosed tasks
@@ -168,34 +168,34 @@ iterative process:
 .. index:: agenda
 .. index:: timebox
 
-.. tip:: Don't confuse **Agenda** and **Timebox**
+.. tip:: Do not confuse **Agenda** and **Timebox**
 
 	The idea of timebox is independent from that of an agenda.
 	Certain tasks, such as meetings, must be done on a precise date.
-	So they can't be managed by the timebox system but by an agenda.
+	So they cannot be managed by the timebox system but by an agenda.
 
 	The ideal is to put the minimum of things on the agenda and to put there only tasks that have a
 	fixed date.
 	The timebox system is more flexible and more efficient for dealing with multiple tasks.
 
-So start by entering all the tasks required by project management.
+So start by entering all the tasks required by project.
 These could have been entered by another user and assigned to you.
-It's important to code in all of the tasks that are buzzing around in your head, just to get them
+It is important to code in all of the tasks that are buzzing around in your head, just to get them
 off your mind. A task could be:
 
 * work to be done,
 
 * a short objective, medium or long term,
 
-* a complex project that hasn't yet been broken into tasks.
+* a complex project that has not yet been broken into tasks.
 
-A project or an objective over several days can be summarized in a single task. You don't have to
+A project or an objective over several days can be summarized in a single task. You do not have to
 detail each operation if the actions to be done are sufficiently clear to you.
 
-You have to empty your Inbox periodically. To do that, use the menu :menuselection:`Project
-Management --> Time Management --> My Inbox`. Assign a timebox and a context to each task. This
-operation shouldn't take more than a few minutes because you aren't dealing with the tasks
-themselves, just classifying them.
+You have to empty your Tasks periodically. To do that, use the menu :menuselection:`Project
+--> Project --> Tasks`. Assign a timebox and a context to each task. This operation should
+not take more than a few minutes because you are not dealing with the tasks themselves, just
+classifying them.
 
 .. figure::  images/service_timebox_day.png
    :scale: 50
@@ -203,37 +203,25 @@ themselves, just classifying them.
 
    *Timebox for tasks to be done today*
 
-Then click on the button at the top right :guilabel:`Plan the timebox`. This procedure lets you
+Then click on the button at the top right :guilabel:`Plannify Timebox`. This procedure lets you
 select the tasks for the day from those in the timebox for the week. This operation gives you an
 overview of the medium term tasks and objectives and makes you review them there at least once a
-day. It's then that you'd decide to allocate a part of your time that day to certain tasks based on
+day. It is then that you would decide to allocate a part of your time that day to certain tasks based on
 your priorities.
 
-Since the tasks are sorted by priority, it's sufficient to take the first from the list, up to the
-number of hours in your day. That'll only take a minute, because the selection isn't taken from
+Since the tasks are sorted by priority, it is sufficient to take the first from the list, up to the
+number of hours in your day. That will only take a minute, because the selection is not taken from
 every task you know about in the future, but just from those selected for the current week.
 
 Once the timebox has been completed you can start your daily work on the tasks. For each task you
 can start work on it, delegate it, close it, or cancel it.
 
-At the end of the day you empty the timebox using the button at the top right. All the tasks that
-haven't been done are sent back to the weekly timebox to sit in amongst the tasks that will be
-planned next morning.
+At the end of the day you empty the timebox using the button at the top right
+:guilabel:`Empty Timebox`. All the tasks that have not been done are sent back
+to the weekly timebox to sit in amongst the tasks that will be planned next morning.
 
 Do the same each week and each month using the same principles, but just using the appropriate
 timeboxes for those periods.
-
-Shortcuts to the right of the timebox help you use the system efficiently with:
-
-* a direct link to the Inbox,
-
-* the list of all of your open tasks,
-
-* the list of your waiting tasks,
-
-* your deadlines,
-
-* a link to all of the tasks in the timebox.
 
 Some convincing results
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -253,7 +241,7 @@ improvements:
 * better management of task delegation and the selection of which tasks were better to delegate,
 
 
-Finally, it's important to note this system is totally integrated with Open ERP's project
+Finally, it is important to note this system is totally integrated with Open ERP's project
 management function. Staff can use the system or not depending on their own needs. The system is
 complementary to the project management function that handles team organization and company-wide
 planning.
