@@ -17,9 +17,9 @@ calculates stocks for all of the physical locations.
 
 The two important fields in product form are:
 
-* :guilabel:`Real Stock` : quantity physical present in your warehouse
+* :guilabel:`Real Stock` : Quantity physical present in your warehouse
 
-* :guilabel:`Virtual Stock` : calculated this way: real stock – outgoing + incoming
+* :guilabel:`Virtual Stock` : Calculated this way: real stock – outgoing + incoming
 
 .. note::  Virtual Stock
 
@@ -61,11 +61,11 @@ locations. Three lead time figures are available:
     The warranty period is used in the management of repairs and after-sales service.
     You can find more information on this subject in :ref:`ch-mnf`.
 
-Fields in the section :guilabel:`Storage Localisation` are given for information – they don't have
+Fields in the section :guilabel:`Storage Localisation` are given for information – they do not have
 any impact on the management of stock.
 
 :guilabel:`Counterpart locations` are automatically proposed by the system but the different values can be
-modified. You'll find counterpart locations for:
+modified. You will find counterpart locations for:
 
 * :guilabel:`Procurement`,
 
@@ -73,10 +73,10 @@ modified. You'll find counterpart locations for:
 
 * :guilabel:`Inventory`.
 
-A procurement location is a temporary location for stock moves that haven't yet been finalized by
-the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or
-production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'll find there
-everything that hasn't yet been planned by the system. The quantities of product in this location
+A procurement location is a temporary location for stock moves that have not yet been finalized by
+the scheduler. When the system does not yet know if procurement is to be done by a purchase or
+production, Open ERP uses the counterpart location :guilabel:`Procurement`. You will find there
+everything that has not yet been planned by the system. The quantities of product in this location
 cancel each other out.
 
 .. index::
@@ -87,11 +87,11 @@ Initial Inventory
 -----------------
 
 Once a product has been defined, use an initial inventory operation to put actual current quantities
-into the system by location for the products in stock. Use the menu :menuselection:`Stock Management
---> Periodical Inventory --> New Periodical Inventory` for this.
+into the system by location for the products in stock. Use the menu :menuselection:`Warehouse
+--> Inventory Control --> Physical Inventories` for this.
 
 .. figure:: images/stock_inventory_new.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Defining a new inventory operation*
@@ -119,8 +119,7 @@ Enter data for a single line in your inventory:
     That means you can check the stock levels of a proportion of your products every so often.
     This system is accepted in France as long as you can guarantee that all of your products have
     been counted at least once per year.
-    To do this, use the report :menuselection:`Stock Management --> Reporting --> Dates of
-    Inventories`.
+    To do this, use the report :menuselection:`Warehouse --> Reporting --> Last Product Inventories`.
 
     This gives you the last inventory date by product.
 
@@ -141,9 +140,9 @@ is to reopen the product form to see the quantities available in stock.
 Receipt of a Supplier Order
 ---------------------------
 
-Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management
-process. You'll find a list of all the awaited receipts in the menu :menuselection:`Stock Management
---> Incoming Products --> Packing to Process`. Use the order number or the supplier name to find the
+Incoming Shipments forms are automatically prepared by Open ERP by the purchase management
+process. You will find a list of all the awaited receipts in the menu :menuselection:`Warehouse
+--> Warehouse Management --> Incoming Shipments`. Use the order number or the supplier name to find the
 right goods receipt form for confirmation of a goods in. This approach enables you to control
 quantities received by referring to the quantities ordered.
 
@@ -153,10 +152,9 @@ quantities received by referring to the quantities ordered.
 
    *List of items waiting*
 
-You can also do goods-in data entry manually if there's no order, using the same menu
-:menuselection:`Stock Management --> Incoming Products --> New Reception Packing`.
+You can also do goods-in data entry manually if there is no order, using the same menu by clicking on `New` button.
 
-A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Partner` field
+A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Address` field
 and you can type in the reference number from your supplier in the field :guilabel:`Origin`. You
 should then enter data about the products received in the lines.
 
@@ -167,7 +165,7 @@ this chapter, so leave this field empty for the moment).
 
 Once the form has been completed you
 can confirm the receipt of all the products at the same time
-using the :guilabel:`Process Now` button. If you want to enter data for a goods receipt that you're still
+using the :guilabel:`Process Now` button. If you want to enter data for a goods receipt that you are still
 waiting for click the button :guilabel:`Process Later`.
 
 .. figure:: images/stock_picking_in_form.png
@@ -178,7 +176,7 @@ waiting for click the button :guilabel:`Process Later`.
 
 The products then arrive in stock and should reflect the quantities shown on the product form.
 
-In the goods receipt form, the field :guilabel:`Invoicing Control` lets you influence the way you
+In the `Incoming Shipments` form, the field :guilabel:`Invoicing Control` lets you influence the way you
 send invoices to suppliers. If this is set to ``To be invoiced`` a supplier invoice will now be
 generated automatically in the draft state, based on the goods received. Your accountant then has to
 confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that
