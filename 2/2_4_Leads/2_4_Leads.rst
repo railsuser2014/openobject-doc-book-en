@@ -2,9 +2,9 @@
 Leads
 =====
 
-A lead represents a potential customer or a possible future business or sales opportunity. They
-aren't usually qualified yet and they aren't yet assigned to an individual person for following up.
-When a lead needs to be followed up, it's converted to a partner and/or a sales opportunity.
+A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information which too often gets lost. 
+Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
+When a lead requires follow up, it will be converted to a sales opportunity.
 
 For example, the following events could result in the creation of one or several leads:
 
@@ -33,10 +33,10 @@ System users in the pre-sales department will usually work on leads. Once these 
 converted into customers or sales opportunities the sales department pays individual attention to
 each opportunity.
 
-Entering prospects into the system
-----------------------------------
+Storing your Business Cards efficiently
+---------------------------------------
 
-New prospects are usually entered as a lead in the system. This means that you don't create a
+New prospects are usually entered as a lead in the system. This means that you do not create a
 partner form or sales opportunity until you have qualified whether the lead is interesting or not.
 If the new contact is indeed interesting you then enter the data on into a partner form and,
 eventually, a sales opportunity.

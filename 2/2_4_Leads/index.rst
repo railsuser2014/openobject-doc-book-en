@@ -20,8 +20,8 @@ Leads, Business Opportunities and Campaigns
 
 .. toctree::
 
-    2_4_Contacts
     2_4_Leads
+    2_4_Contacts
     2_4_Opportunities
 
 .. raw:: html

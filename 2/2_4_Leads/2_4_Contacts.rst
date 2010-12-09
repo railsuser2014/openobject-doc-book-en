@@ -8,8 +8,8 @@ Managing Contacts
 The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications) 
 is a partner with multiple contacts.
-*Partner* is the word for any entity that you do business with - supplier, customer, etc.
-This representation may not be flexible enough for some uses, so OpenERP provides
+*Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ...
+In some cases, this way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
 an alternative, which is brought into the system by installing the :mod:`base_contact` module.
 
 The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
