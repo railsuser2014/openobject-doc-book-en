@@ -297,8 +297,8 @@ stocks:
 
 * from the orders.
 
-Start by opening the product form from the menu :menuselection:`Products --> Products` and looking
-at the list of items. You'll immediately see the following information about the products:
+Start by opening the product form from the menu :menuselection:`Warehouse --> Products --> Products` and looking
+at the list of items. You will immediately see the following information about the products:
 
 * :guilabel:`Real Stock`,
 
@@ -306,9 +306,7 @@ at the list of items. You'll immediately see the following information about the
 
 If you want more information you can use the actions to the right of the form. If you click the
 report :guilabel:`Future Stock Forecast`, Open ERP opens a graphical view of the stock levels for
-the selected products changing with time over the days and weeks to come. The value at the left of
-the graph is the real stock (today) and the value at the right is the virtual stock (stock in the
-short term future).
+the selected products changing with time over the days and weeks to come.
 
 To get the stock levels by location use the button :guilabel:`Stock by Location`.  Open ERP then
 gives you the stock of this product split out over all the possible locations. If you only want to
@@ -323,7 +321,7 @@ colored blue.
 
    *Stock quantities by location for a given product*
 
-You can get more detail about all the stock moves from the product form. You'll then see each move
+You can get more detail about all the stock moves from the product form. You will then see each move
 from a source location to a destination location. Everything that influences stock levels
 corresponds to a stock move.
 
@@ -349,7 +347,7 @@ supplier location:
 * the real stock shows all of the product receipts coming from this type of supplier,
 
 * the virtual stock takes into account the quantities expected from these suppliers (+ real stock +
-  quantities expected from these suppliers). It's the same scheme for customer locations and
+  quantities expected from these suppliers). It is the same scheme for customer locations and
   production locations.
 
 
