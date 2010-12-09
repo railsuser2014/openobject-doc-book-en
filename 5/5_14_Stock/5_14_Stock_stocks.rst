@@ -5,7 +5,7 @@ Stocks
    single: virtual; stock
 
 In the product form you can find a report that will give you the stock levels of the various
-different products in any selected location. If you haven't selected any location, Open ERP
+different products in any selected location. If you have not selected any location, Open ERP
 calculates stocks for all of the physical locations.
 
 .. note::  Availability of stock
@@ -15,17 +15,17 @@ calculates stocks for all of the physical locations.
     the stock in all of the physical stock locations. Looking at the product from the order you will
     only see the report of the warehouse selected in the order.
 
-The two fields are:
+The two important fields in product form are:
 
-* :guilabel:`Real Stock` : quantity physical present in your warehouse,
+* :guilabel:`Real Stock` : quantity physical present in your warehouse
 
-* :guilabel:`Virtual Stock` : calculated this way: real stock – outgoing + incoming.
+* :guilabel:`Virtual Stock` : calculated this way: real stock – outgoing + incoming
 
 .. note::  Virtual Stock
 
-    Virtual stock is very useful because it shows what the salespeople can sell. If it's more than
-    real stock it's because products will be coming in and if it's smaller than real stock then it's
-    because certain products are reserved for other sales orders or works orders.
+    Virtual stock is very useful because it shows what the salespeople can sell. If it is more than
+    real stock it is because products will be coming in and if it is smaller than real stock then it is
+    because of certain products are reserved for other sales orders or works orders.
 
 .. tip:: Detail of future stock
 
@@ -37,7 +37,7 @@ The two fields are:
    .. _fig-stfore:
 
    .. figure:: images/stock_forecast_report.png
-      :scale: 75
+      :scale: 50
       :align: center
 
       *Printout of forecast stock levels*

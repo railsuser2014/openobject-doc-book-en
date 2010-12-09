@@ -76,7 +76,7 @@ stock because that helps when you carry out detailed stock management analysis.
      counterpart's location.
 
 You can make a comparison with accounting, where you will easily find an error because you can look
-for an anomaly in an account or in the counterparts: if there is not enough in a bank account then that iss
+for an anomaly in an account or in the counterparts: if there is not enough in a bank account then that is
 probably because someone's forgotten to enter a customer's invoice payment. You always know that the
 sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
 

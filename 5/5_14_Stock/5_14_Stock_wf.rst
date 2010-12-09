@@ -89,7 +89,7 @@ available from the product form.
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as Make to Stock*
@@ -97,7 +97,7 @@ available from the product form.
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Change in stock for a product managed as Make to Order*
