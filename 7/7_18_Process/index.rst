@@ -35,7 +35,7 @@ For this chapter you should start with a fresh database that includes demonstrat
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
 :mod:`process` is one of those dependencies.  Also install some of the :mod:`hr` modules for
 the second example in this chapter, such as :mod:`hr_attendance`, :mod:`hr_contract`,
-:mod:`hr_holidays`, and :mod:`hr_holidays_request`.
+and :mod:`hr_holidays`.
 
 .. raw:: html
 
@@ -51,7 +51,7 @@ the second example in this chapter, such as :mod:`hr_attendance`, :mod:`hr_contr
     </div>
 
 The organization and quality of a company is typically related to its maturity. A mature
-company is one where processes are well established, and where staff don't
+company is one where processes are well established, and where staff do not
 waste much time searching for documents or trying to find out how to do their
 different tasks.
 
@@ -68,7 +68,7 @@ have appeared numerous tools:
 
 The problem is that these tools are usually quite separate from your management
 system and often reserved for the use of just a few specific people in your
-company. They're treated separately rather than put at the heart of your
+company. They are treated separately rather than put at the heart of your
 management system. When you ask company staff about ISO9001 they usually see it
 as a constraint rather than a helpful daily management tool.
 
@@ -82,7 +82,7 @@ The system enables:
 * new employees to learn how to use the software by graphically and dynamically discovering how each
   document and action works,
 
-* easy access to the all the links to a document and everything that's attached to it,
+* easy access to the all the links to a document and everything that is attached to it,
 
 * people to see both a high-level map and the detail of all a company's processes,
 
