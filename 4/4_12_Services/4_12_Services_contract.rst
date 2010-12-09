@@ -163,16 +163,8 @@ the level of detail which is reported on the invoice, such as the date and detai
 
 .. todo:: I can't find this button or the action below
 
-Select a project and open its analytic entries using the :guilabel:`Costs to invoice` button. You will
-find a list of costs that can be invoiced to the client:
-
-* time worked,
-
-* expenses reimbursement,
-
-* purchase of raw materials.
-
-You can then invoice the selected lines using the action :guilabel:`Invoice costs`.
+Select an entry and click :guilabel:`Invoice analytic lines` link on the right of the form.
+You can then invoice the selected entry by clicking :guilabel:`Create Invoices`.
 
 Fixed-price contracts invoiced as services are worked
 -----------------------------------------------------
