@@ -2,7 +2,7 @@
 Basic Logistics Configuration
 =============================
 
-In this section you'll see how to configure stock management to match your company's needs. Open ERP
+In this section you will see how to configure stock management to match your company's needs. Open ERP
 can handle many different situations by configuring it to behave as required.
 
 .. index::
@@ -11,13 +11,13 @@ can handle many different situations by configuring it to behave as required.
 Stock Locations
 ---------------
 
-You've seen in the preceding sections that the whole of stock management is built on a concept of
+You have seen in the preceding sections that the whole of stock management is built on a concept of
 stock locations. Locations are structured hierarchically to account for the subdivision of a
 warehouse into sections, aisles, and/or cupboards. The hierarchical view also enables you to
 structure virtual locations such as production counterparts. That gives you a finer level of
 analysis.
 
-Use the menu :menuselection:`Stock Management --> Configuration --> Locations` then click
+Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Locations` then click
 :guilabel:`New` to define new locations.
 
 .. figure:: images/stock_location_form.png
@@ -37,7 +37,7 @@ Location Types
 The location must have one of the following types:
 
 * View: shows that the location is only an organizational node for the hierarchical structure, and
-  can't be involved in stock moves itself. The view type is not usually made into a leaf node in a
+  can not be involved in stock moves itself. The view type is not usually made into a leaf node in a
   structure – it usually has children.
 
 * Customer: destination for products sent to customers,
@@ -51,12 +51,14 @@ The location must have one of the following types:
 * Production: the counterpart for production operations; receipt of raw material and sending
   finished products,
 
-* Procurement: the counterpart for procurement operations when you don't yet know the source
+* Procurement: the counterpart for procurement operations when you do not yet know the source
   (supplier or production). Products in this location should be zero after the scheduler run
   completes.
 
+* Transit Location for Inter-Companies Transfers
+
 You can have several locations of the same type. In that case your product, supplier and warehouse
-configurations determine the location that's to be used for any given operation.
+configurations determine the location that is to be used for any given operation.
 
 The counterparts for procurement, inventory and production operations are given by the locations
 shown on the product form. The counterparts of reception and delivery operations are given by the
@@ -73,7 +75,7 @@ the warehouse, linked to a Shop.
    :scale: 75
    :align: center
 
-   *Definition of stock locations on the partner form*
+   *Definition of stock locations on the customers form*
 
 .. index::
    single: stock; localization
@@ -88,7 +90,7 @@ location given to partner deliveries.
 
 .. tip:: Subcontracting production
 
-    You'll see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
+    You will see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
     manufacturing workcenter.
     If this location is at a supplier's you must give it an address so that Open ERP can prepare a
     delivery order
