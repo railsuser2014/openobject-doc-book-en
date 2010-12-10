@@ -192,24 +192,24 @@ Everything about goods receipt can also be done manually for a customer delivery
 the automated product delivery processes based on customer orders. Install the :mod:`sale` module so
 that you can proceed further in this section of the chapter.
 
-Now create a new customer order from the menu :menuselection:`Sales Management --> Sales Orders -->
-New Quotation`. Enter the following data in this order:
+Now create a new customer order from the menu :menuselection:`Sales --> Sales --> Sales Orders`.
+Enter the following data in this order:
 
-* :guilabel:`Shop` : Tiny SPRL
+* :guilabel:`Shop` : OpenERP S.A.
 
 * :guilabel:`Customer` : Agrolait
 
 * :guilabel:`Order Line` :
 
-  * :guilabel:`Product` : PC1 Computer,
+  * :guilabel:`Product` : Basic+ PC (assembly on order),
 
   * :guilabel:`Quantity` : 3 PCE
 
   * :guilabel:`Procurement Method` : from stock.
 
-You've seen already that Open ERP shows you the available product stock when you've selected list
-mode. The real stock is equal to the virtual stock because you've nothing to deliver to customers
-and you're not waiting for any of these products to be received into stock. The salesperson then has
+You have seen already that Open ERP shows you the available product stock when you have selected list
+mode. The real stock is equal to the virtual stock because you have nothing to deliver to customers
+and you are not waiting for any of these products to be received into stock. The salesperson then has
 all the information needed to take orders efficiently.
 
 .. figure:: images/stock_sale_form.png
@@ -218,11 +218,11 @@ all the information needed to take orders efficiently.
 
    *Entering an order for three computers*
 
-Then confirm the quotation to convert it to an order. If you return to the product form you'll see
+Then confirm the quotation to convert it to an order. If you return to the product form you will see
 the virtual stock is now smaller than the real stock. That happens because three products have been
-reserved by the order that you created, so they can't be sold to another customer.
+reserved by the order that you created, so they can not be sold to another customer.
 
-Start the scheduler through the menu :menuselection:`Manufacturing --> Compute All Schedulers`. Its
+Start the scheduler through the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`. Its
 functionality will be detailed in :ref:`ch-mnf`. This manages the reservation of
 products and places orders based on the dates promised to customers, and the various internal lead
 times and priorities.
@@ -232,11 +232,11 @@ times and priorities.
 
 .. tip:: Just in Time
 
-    Install the module :mod:`mrp_jit` to schedule each order in real time after it's been confirmed.
-    This means that you don't have to start the scheduler or wait for its periodical start time.
+    Install the module :mod:`mrp_jit` to schedule each order in real time after it is been confirmed.
+    This means that you do not have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu
-:menuselection:`Stock Management --> Outgoing Products --> Available Packing`. You find a line
+:menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`. You find a line
 there for your order representing the items to be sent. Double-click the line to see the detail of
 the items proposed by Open ERP.
 
@@ -250,11 +250,12 @@ the items proposed by Open ERP.
 
     Open ERP distinguishes between the states **Confirmed** and **Assigned**.
 
-    You say that an item is **Confirmed** when it's needed but the available stock is insufficient.
-    You say that an item is **Assigned** when it's available in stock and the storesperson reserves it:
+    You say that an item is **Confirmed** when it is needed but the available stock may be insufficient.
+    You say that an item is **Assigned** when it is available in stock and the storesperson reserves it:
     the necessary products have been reserved for this specific operation.
 
-You can confirm a customer delivery using the :guilabel:`Confirm` button. A window then opens where you can
+You can confirm a customer delivery using the :guilabel:`Confirm Order` button in `Sales Order`.
+When you click on :guilabel:`Process` button of `Outgoing Deliveries`, a window then opens where you can
 enter the quantities actually delivered. If you enter a value less than the forecast one, Open ERP
 automatically generates a partial delivery notes and a new order for the remaining items. For this
 exercise, just confirm all the products.
@@ -275,7 +276,7 @@ salesperson can follow the progress of their orders at a glance.
 .. note:: Negative Stock
 
     Stock Management is very flexible so that it can be more effective.
-    For example if you forget to enter products at goods in, this won't prevent you from sending
+    For example if you forget to enter products at goods in, this will not prevent you from sending
     them to customers.
     In Open ERP you can force all operations manually using the button :guilabel:`Force assignment`.
     In this case your stocks risk falling negative. You should monitor all stocks for negative
@@ -296,8 +297,8 @@ stocks:
 
 * from the orders.
 
-Start by opening the product form from the menu :menuselection:`Products --> Products` and looking
-at the list of items. You'll immediately see the following information about the products:
+Start by opening the product form from the menu :menuselection:`Warehouse --> Products --> Products` and looking
+at the list of items. You will immediately see the following information about the products:
 
 * :guilabel:`Real Stock`,
 
@@ -305,9 +306,7 @@ at the list of items. You'll immediately see the following information about the
 
 If you want more information you can use the actions to the right of the form. If you click the
 report :guilabel:`Future Stock Forecast`, Open ERP opens a graphical view of the stock levels for
-the selected products changing with time over the days and weeks to come. The value at the left of
-the graph is the real stock (today) and the value at the right is the virtual stock (stock in the
-short term future).
+the selected products changing with time over the days and weeks to come.
 
 To get the stock levels by location use the button :guilabel:`Stock by Location`.  Open ERP then
 gives you the stock of this product split out over all the possible locations. If you only want to
@@ -322,7 +321,7 @@ colored blue.
 
    *Stock quantities by location for a given product*
 
-You can get more detail about all the stock moves from the product form. You'll then see each move
+You can get more detail about all the stock moves from the product form. You will then see each move
 from a source location to a destination location. Everything that influences stock levels
 corresponds to a stock move.
 
@@ -348,7 +347,7 @@ supplier location:
 * the real stock shows all of the product receipts coming from this type of supplier,
 
 * the virtual stock takes into account the quantities expected from these suppliers (+ real stock +
-  quantities expected from these suppliers). It's the same scheme for customer locations and
+  quantities expected from these suppliers). It is the same scheme for customer locations and
   production locations.
 
 
