@@ -117,7 +117,7 @@ A company has a warehouse in Paris and in Bordeaux. For some orders you must del
 from Paris, and for others from Bordeaux. But you should also specify a fictitious warehouse that
 Open ERP uses to calculate if it should deliver products from Paris or from Bordeaux.
 
-To do this in Open ERP, you'd create a third warehouse 'France' which consolidates the warehouses in
+To do this in Open ERP, you would create a third warehouse 'France' which consolidates the warehouses in
 Paris and Bordeaux. You create the following physical locations:
 
 * Company
@@ -147,10 +147,10 @@ Accounting Valuation in Real Time
 .. index::
    single: accountant
 
-If you have experience of managing with traditional software you'll know the problem of getting
+If you have experience of managing with traditional software you will know the problem of getting
 useful indicators. If you ask your accountant for a stock valuation or the value added by production
-he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
-entirely different amount. You have no idea who's right!
+he will give you a figure. If you ask for the same figure from your stores manager you will get an
+entirely different amount. You have no idea who is right!
 
 In Open ERP the management of stock is completely integrated with the accounts, to give strong
 coherence between the two systems. The double-entry structure of locations enables a very precise
@@ -174,7 +174,7 @@ You use this system for managing consigned stocks:
 
 * a supplier location that is valued in your own accounts or,
 
-* a location in your own company that isn't valued in your accounts.
+* a location in your own company that is not valued in your accounts.
 
 .. index::
    single: chained location
@@ -190,15 +190,14 @@ quality control. The warehouse and quality control are represented by two differ
 Then when a product arrives in a location, Open ERP can automatically suggest that you send the
 product to another linked location. Three link modes are available:
 
-* Manual,
+* Manual Operation
+* Automatic Move
+* Automatic No Step Added
 
-* Automatic,
+The `Manual Operation` mode will create an internal move order to the linked location once products
+arrive in the source locations. This order will wait for a confirmation of the move by a user.
+This enables you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
-* Automatic without steps.
-
-The manual mode will create an internal move order to the linked location once products arrive in
-the source locations. This order will wait for a confirmation of the move by a user. This enables
-you to have a list of moves to do, proposed by the system and confirmed by the storesperson.
 
 .. index::
    single: module; stock_location
@@ -213,25 +212,25 @@ you to have a list of moves to do, proposed by the system and confirmed by the s
 
     A more detailed explanation of this module, with examples, is given at the end of this chapter.
 
-The automatic mode will do the same but won't wait for a confirmation from the user. Products will
+The `Automatic Move` mode will do the same but will not wait for a confirmation from the user. Products will
 automatically be sent to the linked location without any intervening manual operation to do. This
 corresponds to the case where, for simplicity, you delete a step in the process so the end user can
 set off the process automatically.
 
-The ``automatic without steps`` mode won't include the additional stock move but will change the
+The `Automatic No Step Added` mode will not include the additional stock move but will change the
 destination move transparently to assign the linked the location. You could then assign a
 destination location to which you send all the products that arrive in your warehouse. The
 storesperson will modify the goods receipt note.
 
-If there is a linkage to do, the field :guilabel:`Type of linked location` lets the destination
+If there is a linkage to do, the field :guilabel:`Chained Location Type` lets the destination
 location be determined. If the field is set to 'customer', the location is given by the properties
 of the partner form. If the field is set to ``fixed`` , the destination location is given by the field
-:guilabel:`Location if link is fixed`.
+:guilabel:`Chained Location If Fixed`.
 
 Some operations take a certain time between order and execution. To account for this lead time, you
-can set a value in days in the field :guilabel:`Link lead time`. Then the extra move (automatic or
-not) will be carried out several days after the original move. If you use the mode ``automatic
-without steps``, the lead time is inserted directly into the initial order. In this way you can add
+can set a value in days in the field :guilabel:`Chaining Lead Time`. Then the extra move (automatic or
+not) will be carried out several days after the original move. If you use the mode `Automatic No Step Added`,
+the lead time is inserted directly into the initial order. In this way you can add
 security lead times at certain control points in the warehouse.
 
 Case of structuring locations
