@@ -6,19 +6,19 @@ Globalization means that workplaces are ever more geographically dispersed. This
 documents are also used more than ever by people in several
 countries and continents for communicating and collaborating.
 
-You'll see communication problems even between employees in the same office because they don't have
+You will see communication problems even between employees in the same office because they do not have
 easy access to the documents that they need. You find some documents kept by someone in the accounts
 office, shared directories that serve everybody, some documents in paper form, others in electronic
 form – quite a free-for-all.
 
-An explosion in the number of documents that a company needs doesn't help. If their storage and
-indexation are badly organized, these documents become useless because they're almost impossible to
+An explosion in the number of documents that a company needs does not help. If their storage and
+indexation are badly organized, these documents become useless because they are almost impossible to
 find.
 
 The results of poor document management can lead to a significant loss of time. Ask yourself how
 often you find yourself looking for:
 
-* A supplier catalogue that's been sent to a purchasing manager,
+* A supplier catalogue that has been sent to a purchasing manager,
 
 * A customer contract signed several months ago,
 
@@ -29,7 +29,7 @@ often you find yourself looking for:
 * An order confirmation sent by a customer to one of your salespeople or, perhaps even more common
   when the relevant salesperson has gone on vacation, if you ever received such an order confirmation,
 
-* A procedure from your quality manual if there's been a process fault,
+* A procedure from your quality manual if there has been a process fault,
 
 * An email which was sent to one of your colleagues,
 
@@ -38,15 +38,15 @@ often you find yourself looking for:
 * A complete history of communications between yourselves and a supplier about a given contract.
 
 Even worse than the loss of time, perhaps, the lack of good document management is bad for the
-quality of your organization and the service provided by your company. In such a company it's likely
+quality of your organization and the service provided by your company. In such a company it is likely
 that:
 
-* sets of documents don't follow a standard layout,
+* sets of documents do not follow a standard layout,
 
 * all the salespeople prepare quotations in their own way and gradually change the way they do it
   for themselves but not for the group,
 
-* a correction to a type of contract stays with a small group of people and doesn't percolate back
+* a correction to a type of contract stays with a small group of people and does not percolate back
   into the rest of the company to benefit other users,
 
 * version management is chaotic or even non-existent.
@@ -54,14 +54,14 @@ that:
 So a good integrated document management system can be a powerful tool to help in day-to-day company
 management. With it you could also easily:
 
-* Continue the work started by a colleague if she's gone on vacation, and respond to her customers
+* Continue the work started by a colleague if she has gone on vacation, and respond to her customers
   if needed,
 
 * Get hold of examples of all document types with just a few clicks, so that you can follow company
   standards in such areas as order confirmation, price requests, meeting minutes, customer
   deliverables, contract examples, and models for faxes and letters,
 
-* Retrieve procedures and other associated documents if you don't know how to do a certain task –
+* Retrieve procedures and other associated documents if you do not know how to do a certain task –
   such as things you should do when hiring a new employee, organizing a conference, or how to
   structure meeting minutes,
 
