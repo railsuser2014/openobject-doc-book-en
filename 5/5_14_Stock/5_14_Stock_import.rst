@@ -8,11 +8,11 @@ Import / Export
 
 Managing import / export with foreign companies can sometimes be very complex. Between a departure
 port and destination company, products can get stopped for several weeks at sea or somewhere in the
-numerous transportation stages and customs. To manage such deliveries efficiently it's important to:
+numerous transportation stages and customs. To manage such deliveries efficiently it is important to:
 
 * know where your products are,
 
-* know when they're likely to arrive at their destination,
+* know when they are likely to arrive at their destination,
 
 * know your value in transit,
 
@@ -45,7 +45,7 @@ stock move is validated at each port and customs arrival. Open ERP prepares all 
 automatically.
 
 .. index::
-   single: module; report_instrastat
+   single: module; report_intrastat
 
 .. note:: Intrastat
 
