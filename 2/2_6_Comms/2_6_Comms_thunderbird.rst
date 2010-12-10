@@ -1,6 +1,63 @@
 .. index::
    single: Thunderbird (Mozilla)
 
+NEW
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Thunderbird / Outlook integration
+---------------------------------
+
+* Install the *thunderbird* module in OpenERP which will automatically provide the plugin to upload in your Thunderbird instance
+
+.. note:: If you forgot to save the plugin, you can find it back from the menu *Sales > Configuration > Plugins*
+
+* In Thunderbird, install the OpenERP plugin from *Tools > Add-ons > Extensions* and restart Thunderbird
+
+This plugin will provide several actions : 
+
+    * **Configuration Settings** : set the connection and web server parameters as the server name, the database, the login and the password
+    * **Document Settings** : define the OpenERP object with which you want to link your emails
+    * **Push to OpenERP** : 
+    
+        - Create the synchronisation between your emails and OpenERP, 
+        - Create a new objet as a task/a Project Issue and, 
+        - Create a contact which doesn't exist in OpenERP yet
+    
+* Once the configuration done, you can link your email with existing object and see the related emails from OpenERP
+
+    - If the object has an history part, the email will be placed there. Example : a partner
+    - Otherwise, the email will be linked as an attachment of the object. Example : a product    
+
+Geolocalization
+---------------
+
+Install the crm_partner_assign module.
+
+Extra
+-----
+
+* Claims management
+* Rerun the wizard to add extra functionalities (*Administration > Configuration > Configuration Wizards > Start Configuration*), select the Claims when configuring the CRM menu
+
+This modules allows you to track your customers/suppliers claims and flames. It is fully integrated with the email gateway so that you can create automatically new claims based on incoming emails.
+
+* From the *Sales > After-Sales Services*, you can create a claim with all need information. As a Lead, a Claim has several state and can be escalated to your manager. 
+
+* Claims are also linked to a specific partner so from the *Sales > Address Book > Customers* menu, you can find in the history tab of a partner, all claims linked to him
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
 Mozilla Thunderbird interface
 =============================
 
