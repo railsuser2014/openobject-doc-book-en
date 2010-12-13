@@ -2,7 +2,7 @@
 Leads
 =====
 
-A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information which too often gets lost. 
+A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information which too often gets lost because it is registered nowhere. 
 Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
 When a lead requires follow up, it will be converted to a sales opportunity.
 
