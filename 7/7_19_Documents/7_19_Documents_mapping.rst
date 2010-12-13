@@ -11,11 +11,11 @@ the parent directory.
 
     To keep them synchronized to the working language, directory names are not translatable.
     But Open ERP's demonstration data automatically creates directories in English.
-    You can rename them through the menu :menuselection:`Document Management --> Configuration -->
+    You can rename them through the menu :menuselection:`Knowledge --> Configuration --> Document Management -->
     Directories`.
 
-For example you can look at the directory shown in :menuselection:`Main Repository --> Sales Orders
---> All Sales Orders`. You'll see the directory for all the orders present in Open ERP that was
+For example you can look at the directory shown in :menuselection:`Documents --> Sales Order
+--> All Sales Order`. You will see the directory for all the orders present in Open ERP that was
 created automatically by the system.
 
 .. figure::  images/document_sale.png
@@ -31,15 +31,15 @@ created automatically by the system.
    *Directories representing all the orders in the document management system*
 
 Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the
-directory :menuselection:`Main Repository --> Projects` you'll see the structure of the analytic
+directory :menuselection:`Documents --> Projects` you will see the structure of the analytic
 accounts.
 
 To define a directory containing a specific type of resource you have to define parameters when you
 define the directory itself:
 
-* :guilabel:`Type` : Other Resources
+* :guilabel:`Type` : Folders per resource
 
-* :guilabel:`Child Models` : Choose one of the system objects
+* :guilabel:`Resource Model` : Choose one of the system objects
 
 * :guilabel:`Domain` :  an event filtered so that it sees only a subset of the resources
 
@@ -49,7 +49,7 @@ define the directory itself:
    :scale: 50
    :align: center
 
-   *Configuration of the directory containing quotations (draft orders)*
+   *Configuration of the directory containing All Sales Orders*
 
 This is a very flexible approach because any modification of the resource in Open ERP is
 automatically reflected in the document management system. So when the quotation gets confirmed in

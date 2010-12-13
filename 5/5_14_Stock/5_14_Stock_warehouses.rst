@@ -9,7 +9,7 @@ which you receive raw materials. Then when you buy products from a supplier you 
 of which Warehouse you use for this purchase. This also enables the end user to not have to choose
 from a list of locations but simply a real warehouses.
 
-Use the menu :menuselection:`Stock Management --> Configuration --> Warehouses` then click
+Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses` then click
 :guilabel:`New` to configure a new warehouse.
 
 A warehouse is defined by a link between three locations:
@@ -22,7 +22,7 @@ A warehouse is defined by a link between three locations:
   your incoming raw materials.
 
 * The :guilabel:`Location Output` field (called ``Output`` in the demonstration database) is designed as a buffer zone
-  in which you store all the items that have been picked but not yet delivered to a customer. You're
+  in which you store all the items that have been picked but not yet delivered to a customer. You are
   strongly advised not to put this location within the stock hierarchy but instead at a level higher
   or the same.
 
@@ -64,7 +64,7 @@ Minimum Stock Rules
 -------------------
 
 To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use
-the menu :menuselection:`Stock Management --> Automatic Procurements --> Minimum Stock Rules`.
+the menu :menuselection:`Warehouse --> Automatic Procurements --> Minimum Stock Rules`.
 
 The rule is the following: if the virtual stock for the given location is lower than the minimum stock
 indicated in the rule, the system will automatically propose a procurement to increase the level
@@ -78,15 +78,15 @@ of virtual stock to the maximum level given in the rule.
 
 .. tip:: Conflict resolution
 
-   You may find that draft production or procurement orders don't happen correctly.
-   That can happen if the system is badly configured (for example if you've forgotten to set the
+   You may find that draft production or procurement orders do not happen correctly.
+   That can happen if the system is badly configured (for example if you have forgotten to set the
    supplier on a product).
 
    To check this, look at the list of procurements in the exception state in the menu
-   :menuselection:`Stock Management --> Automatic Procurements --> Exceptions Procurements`. More
+   :menuselection:`Warehouse --> Schedulers --> Procurement Exceptions`. More
    detail on handling these exceptions is given in :ref:`ch-mnf`.
 
-It's important to underline that the rule is based on virtual quantities and not just on real
+It is important to underline that the rule is based on virtual quantities and not just on real
 quantities. It then takes account of the calculation of orders and receipts to come.
 
 Take the following example:
@@ -104,10 +104,10 @@ The rules defined are:
 * Maximum stock: 25.
 
 Once the rules have been properly configured the purchasing manager only needs to look at the list
-of orders for confirmation with the supplier using the menu :menuselection:`Purchase Management -->
-Purchase Orders --> Requests for Quotation`.
+of orders for confirmation with the supplier using the menu :menuselection:`Purchases --> Purchase Management -->
+Requests for Quotation`.
 
-Note that the procurement doesn't require that you buy from a supplier. If the product has a
+Note that the procurement does not require that you buy from a supplier. If the product has a
 :guilabel:`Supply method` of ``Produce`` the scheduler will generate a production order and not a
 supplier order.
 

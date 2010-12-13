@@ -6,31 +6,27 @@ Scheduling
 ==========
 
 The master production plan, sometimes called the MPS (Master Production Schedule), enables you to
-generate forecasts for incoming and outgoing material. It's based on forecasts of inputs and outputs
+generate forecasts for incoming and outgoing material. It is based on forecasts of inputs and outputs
 by the logistics manager.
 
 .. note:: MPS, Procurement and Production
-   
+
    Open ERP distinguishes between Production, Purchase and Procurement.
-   
+
    Production is manufacture, Purchase is the acquisition of goods from another party,
    and Procurement is either or both of those. So it would be better to call the
    MPS the Master Procurement Schedule. Which Open ERP does!
 
 .. tip:: Product trading
 
-    Also called the Production Plan, this tool is also very useful for traded products which aren't
+    Also called the Production Plan, this tool is also very useful for traded products which are not
     manufactured.
     You can then use it for stock management with purchased and manufactured products.
 
 .. index::
    single: module; stock_planning
 
-To be able to use the production plan, you must install the :mod:`stock_planning` module.
-This can be found amongst Open ERP's ``addons-extra`` rather in the main set of ``addons``.
-(Beware! One reason it is not in the core of Open ERP at the time of writing
-could be because some screens have no navigation 
-controls, so you can't always easily get back to the main Open ERP system).
+To be able to use the production plan, you must install the :mod:`stock_planning` module..
 
 .. index:: forecasts
 
@@ -45,11 +41,11 @@ Some companies plan daily, others weekly or monthly.
    The interval chosen for managing stock in the production plan will depend on the length of your
    production cycle. You generally work daily, weekly or monthly.
 
-   If your products take several days to assemble it's preferable to have a weekly plan. If your
+   If your products take several days to assemble it is preferable to have a weekly plan. If your
    manufacturing cycles are several months you can work with a monthly plan.
 
-To do this use the menu :menuselection:`Sales Management --> Configuration --> Create Sales
-Periods`. A window appears enabling you to automatically define the next periods that will be
+To do this use the menu :menuselection:`Sales --> Configuration --> Stock and Sales Periods -->
+Stock and Sales Periods`. A window appears enabling you to automatically define the next periods that will be
 provided for stock management.
 
 .. figure:: images/sale_period.png
@@ -59,7 +55,7 @@ provided for stock management.
    *Defining periods for stock management*
 
 Salespeople can then enter their sales forecasts by product and by period using the menu
-:menuselection:`Sales Management --> Sales Forecasts --> My Sales Forecasts`. The forecasts can be
+:menuselection:`Sales --> Sales Forecasts --> Sales Forecasts`. The forecasts can be
 made by quantity or by value. For a forecast by amount Open ERP automatically calculates for you the
 quantity equivalent to the estimated amount. This can be modified manually as needed before
 completion.
@@ -77,28 +73,27 @@ Production Plan
 ---------------
 
 The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings
-(consumption or customer deliveries) by period. To do this use the menu :menuselection:`Stock
-Management --> Procurement Forecast --> Master Procurement Schedule`.
+(consumption or customer deliveries) by period. To do this use the menu :menuselection:`Warehouse --> Stock Planning --> Master Procurement Schedule`.
 
 For each period and product Open ERP gives you the following information:
 
-* stock estimated at the end of the period, calculated as stock in the following period less total
-  estimated outgoings plus total estimated inputs,
+* Stock estimated at the end of the period, calculated as stock in the following period less the total
+  estimated outgoings plus total estimated inputs
 
-* closed entries, coming from production or confirmed purchases,
+* Closed entries, coming from production or confirmed purchases
 
-* forecast inputs for the period, calculated using the incoming entries less the closing amounts,
+* Forecast inputs for the period, calculated using the incoming entries less the closing amounts
 
-* planned inputs entered manually by the logistics manager,
+* Planned inputs entered manually by the logistics manager
 
-* closed outgoings which are the consumption of manufacturing waiting and deliveries to be made to
-  customers,
+* Closed outgoings which are the consumption of manufacturing waiting and deliveries to be made to
+  customers
 
-* forecast outgoings, calculated from the planned outgoings, less the closing amounts,
+* Forecast outgoings, calculated from the planned outgoings, less the closing amounts
 
-* planned outgoings, manually entered by the logistics manager,
+* Planned outgoings, manually entered by the logistics manager
 
-* sales forecasts, which represent the sum of forecasts made by the salespeople.
+* Sales forecasts, which represent the sum of forecasts made by the salespeople
 
 .. figure:: images/stock_forecast.png
    :scale: 75
@@ -108,16 +103,16 @@ For each period and product Open ERP gives you the following information:
 
 The production plan then enables the logistics manager to play with the forecast income and
 outgoings and test the impact on the future stock for the product under consideration. It enables
-you for example to check that the stock doesn't fall below a certain level for the product under
+you for example to check that the stock does not fall below a certain level for the product under
 consideration.
 
 You can also open the production plan for past periods. In this case Open ERP shows you the real
 stock moves, by period for forecast reports.
 
-If you don't have automated procurement rules for a product you can start procurement at any time
-based on the estimates of the production plan. 
-To do this press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on 
-the :guilabel:`Master Procurement Schedule`. 
+If you do not have automated procurement rules for a product you can start procurement at any time
+based on the estimates of the production plan.
+To do this press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on
+the :guilabel:`Master Procurement Schedule`.
 Open ERP plans procurement for an amount equal to the entries forecast.
 
 .. Copyright © Open Object Press. All rights reserved.

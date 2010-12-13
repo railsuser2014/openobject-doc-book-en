@@ -5,12 +5,12 @@
 .. _ch-sales:
 
 *******************
-Management of Sales
+Driving your Sales
 *******************
 
   *This chapter describes Open ERP's sales management, following the complete sales order process from
   quotation to customer order, including the management of deliveries and of invoicing. 
-  It doesn't look at customer relations and pre-sales, which are handled by the CRM
+  It does not look at customer relations and pre-sales, which are handled by the CRM
   (Customer Relationship Management) modules described in an earlier part of the book.*
   
   *It also describes the management of carriers, margin control and reporting, and

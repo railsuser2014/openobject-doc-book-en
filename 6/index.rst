@@ -2,7 +2,7 @@
 .. _part-trade:
 
 ####################
-Sales and Purchasing
+Manage your Business
 ####################
 
  These two chapters are about selling and purchasing products and services.
