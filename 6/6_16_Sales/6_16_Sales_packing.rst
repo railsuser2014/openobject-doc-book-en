@@ -1,6 +1,6 @@
 
-Management of Packaging
-=======================
+Packaging
+=========
 
 Products can be managed in several different packaged forms. For example if you sell
 batteries you can define the following packages for a given battery product:
@@ -25,7 +25,7 @@ The available packages are defined in the product form, in the :guilabel:`Packag
 list is the one that will be used by default.
 
 Once a package has been defined on the order, Open ERP will throw up an alert if the ordered
-quantities don't correspond to the proposed packages. The quantity must be a multiple of the field
+quantities do not correspond to the proposed packages. The quantity must be a multiple of the field
 :guilabel:`Quantity by Package` defined on the packaging form.
 
 .. figure:: images/sale_warning_packaging.png
@@ -34,7 +34,7 @@ quantities don't correspond to the proposed packages. The quantity must be a mul
 
    *Alert on the quantities sold compared with the packaging*
 
-Don't confuse the management of packaging with the management of multiple units of measure. The
+Do not confuse the management of packaging with the management of multiple units of measure. The
 Units of Measure are used to manage the stock differently in its different units. 
 With packages, the stock is always managed by individual item but information about the package to use is supplied
 to the storesperson along with that item.
@@ -50,15 +50,12 @@ on the sales order and the packing order:
 If the customer wants to order a palette and 10 packs, the salesperson can put two order
 lines on the sales order using the same product but different units of measure.
 
-Example Packing and different products
---------------------------------------
-
-It's sometimes more useful to define different products than to define several possible packages for
+It is sometimes more useful to define different products than to define several possible packages for
 the same product. A case of beer in a supermarket is a good example. A case holds 24 bottles, plus
 the empty case itself. The customer can buy bottles by the piece or a case of 24 bottles at one go.
 
 You could define two packages for the product ``Bottle of beer`` : ``PCE`` and ``case`` . But this
-representation doesn't let you manage the stock and price of empty cases. So you might instead
+representation does not let you manage the stock and price of empty cases. So you might instead
 prefer a Bill of Materials for the sale, defining and using three different products:
 
 * the empty case for the beer,
