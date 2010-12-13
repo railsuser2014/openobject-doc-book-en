@@ -4,16 +4,13 @@ Sales Quotations
 
 In Open ERP a quotation and an order are handled by the same underlying object, but in different states. You
 can consider an order to be a quotation that has evolved because it has been confirmed by the
-customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled.
+customer. Or, conversely, that a quotation is an order that has not yet been validated or cancelled.
 All of the orders and quotations in the system can be reached using the menu :menuselection:`Sales
-Management --> Orders`.
+--> Sales --> Sales Orders`.
 
-Entering Quotation details
---------------------------
-
-To enter details of a new quotations you can use the menu :menuselection:`Sales Management -->
-Orders --> New Quotation`. Open ERP then opens a new window so that you can enter data into new
-blank quotation form.
+To enter details of a new quotations you can use the menu :menuselection:`Sales -->
+Sales --> Sales Orders` and the select :guilabel:`New`. Open ERP then opens a new window
+so that you can enter data into new blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
    :scale: 75
@@ -30,10 +27,10 @@ Some information is automatically completed by the system:
 * the order date.
 
 You can modify any of that information before validating the quotation. The customer
-reference is shown in the header of the order. This optional field if for the customer's own reference
-number – if the customer doesn't supply one then just leave it empty.
+reference is shown in the header of the order. This optional field is for the customer's own reference – 
+if the customer does not supply one then just leave it empty.
 
-You then enter all the data about the order in the :guilabel:`Sale Order` tab. Start by entering
+You then enter all the data about the order in the :guilabel:`Sales Order` tab. Start by entering
 the customer name, selecting the correct customer from the list of customers in the system. You can
 create a new customer on the fly at this stage if necessary – press :kbd:`<F1>` in the empty
 :guilabel:`Customer` field to do that.
@@ -41,24 +38,22 @@ create a new customer on the fly at this stage if necessary – press :kbd:`<F1>
 Once the customer name has been selected, different fields of the order become completed
 automatically, based on the configuration of the partner form for that customer:
 
-* :guilabel:`Order Address` : person handling the order at the customer. By default, Open ERP
-  proposes the Contact Address at the selected partner.
+* :guilabel:`Ordering Contact` : person handling the order at the customer. By default, Open ERP
+  proposes the Ordering Contact at the selected partner.
 
-* :guilabel:`Delivery Address` : address used on the delivery order. By default, Open ERP proposes
-  the Delivery address from the partner form. If nothing is defined in that slot, it uses the default
+* :guilabel:`Shipping Address` : address used on the delivery order. By default, Open ERP proposes
+  the Shipping address from the partner form. If nothing is defined in that slot, it uses the default
   address instead.
 
 * :guilabel:`Invoice Address` : address used to send the invoice to the customer. By default, Open
   ERP proposes the address labelled :guilabel:`Invoice` from the partner form. If nothing is defined there,
   it uses the default address instead.
 
-* :guilabel:`Price List` : will determine both the currency of the quotation and the price that will
+* :guilabel:`Pricelist` : will determine both the currency of the quotation and the price that will
   be used for each product.
 
-* :guilabel:`Payment Conditions` : shows the payment method that the customer will follow, for example
+* :guilabel:`Payment Term` : shows the payment method that the customer will follow, for example
   ``50% on order, 50% on delivery`` .
-
-* :guilabel:`Delivery Method` : for example ``Post – Express Mail`` .
 
 You can modify any of these fields on the order as you go.
 
@@ -68,7 +63,7 @@ for assigning revenues to the project or case specified by this order.
 
 .. tip::  Analytic Accounts
 
-   If you're managing by task, the analytic account to be selected is the one that corresponds to
+   If you are managing by task, the analytic account to be selected is the one that corresponds to
    the project for the order.
    The sale carried out by the order can be allocated to the project so that profitability
    calculations can be made.
@@ -94,11 +89,11 @@ useful information in the list of products to help you during your sale:
 * :guilabel:`Virtual stock` : shows a salesperson the quantity that can be sold, taking into account
   both stock reserved for other orders and amounts that could arrive in the short term.
 
-* :guilabel:`Customer Price` : (May not be shown, depending on the installed modules). depends on the conditions attached to the customer, calculated on the
-  list price. This is the price that's proposed by default in the customer quotation, unless it's been
+* :guilabel:`Pricelist` : (May not be shown, depending on the installed modules). depends on the conditions attached to the customer, calculated on the
+  list price. This is the price that is proposed by default in the customer quotation, unless it has been
   modified by the salesperson. 
 
-* :guilabel:`List Price` : the base sale price for the given product. It provides a base for the
+* :guilabel:`Public Price` : the base sale price for the given product. It provides a base for the
   salesperson to be able to judge whether to offer a discount to the customer, and how much any
   discount should be.
 
@@ -111,9 +106,9 @@ useful information in the list of products to help you during your sale:
 
    *Selecting a product in a Sales Order*
 
-When the product that's to be sold to the customer has been selected, Open ERP automatically
-completes all the other required fields: price, unit of measure, description, discount, lead times,
-applicable taxes, default packaging and the product description. All of this information comes from
+When the product that is to be sold to the customer has been selected, Open ERP automatically
+completes all the other required fields: quantity, unit of measure, description, unit price,
+discount, procurement method, lead times and applicable taxes. All of this information comes from
 the product form.
 
 .. index::
@@ -122,7 +117,7 @@ the product form.
 .. tip:: Visible Discount
 
    If a discounted price is taken from a price list then by default that figure is shown as the 
-   sale price to the customer. He'll see a discount of 0% along with unit price that is different 
+   sale price to the customer. He will see a discount of 0% along with unit price that is different 
    from the list price.
    If you install the module :mod:`product_visible_discount` from addons-extra
    you can configure whether you want to make the discount
@@ -130,8 +125,8 @@ the product form.
    or just show a reduced unit price as it does by default.
 
 In the form, the selected product is presented in the language of the user so that he can see
-what he's selling. The description of the product sold can also be expressed in the customer's language. 
-The translation to the customer's language is used on the quotation or order when it's printed.
+what he is selling. The description of the product sold can also be expressed in the customer's language. 
+The translation to the customer's language is used on the quotation or order when it is printed.
 
 .. figure:: images/sale_line_translation.png
    :scale: 75
@@ -141,14 +136,14 @@ The translation to the customer's language is used on the quotation or order whe
 
 .. note:: One-off Sales
 
-   If a product's only sold to a customer once, you don't have to enter data into a complete new
+   If a product is only sold to a customer once, you do not have to enter data into a complete new
    product form just for that sale.
    You can manually complete all the information in the order without putting it into a product:
    description, price, quantity, lead time, taxes.
-   In this case Open ERP won't generate a delivery note because the product isn't held in stock.
+   In this case Open ERP will not generate a delivery note because the product is not held in stock.
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do
-this, click on the report :guilabel:`Quotation / Order` in the :guilabel:`REPORTS` links to the right. 
+this, click on the report :guilabel:`Quotation / Order` in the :guilabel:`Reports` links to the right. 
 Open ERP opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
@@ -159,8 +154,8 @@ Open ERP opens the quotation in PDF to enable to you to see it before printing.
 
 You can then confirm the quotation to move it on to an order if the order is confirmed by the
 customer, or just cancel the window without confirming the order to leave it in quotation state. To
-find all of the current quotations, you can use the menu :menuselection:`Sales Management --> Orders
---> My Orders --> My Quotations`.
+find all of the current quotations, you can use the menu :menuselection:`Sales --> Sales
+--> Sales Orders` and click :guilabel:`Quotations` filter button.
 
 To follow the process for your order, you can click on the process view from the order form. Open
 ERP shows you an interactive process view of that order. For more information about its use,
