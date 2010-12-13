@@ -5,8 +5,8 @@
    single: invoicing
 ..
 
-Accounting workflow and the automatic generation of invoices
-============================================================
+Accounting Workflow and Automatic Invoice Creation
+==================================================
 
 The chart :ref:`fig-accfl` shows the financial workflow followed by each invoice.
 
@@ -18,7 +18,7 @@ The chart :ref:`fig-accfl` shows the financial workflow followed by each invoice
 
    *Accounting workflow for invoicing and payment*
 
-In general, when you use all of Open ERP's functionality, invoices don't need to be entered
+In general, when you use all of Open ERP's functionality, invoices do not need to be entered
 manually. Draft invoices are generated automatically from other documents such as Purchase Orders.
 
 .. index::
@@ -28,12 +28,12 @@ Draft Invoices
 --------------
 
 The system generates invoice proposals which are initially set to the \ ``Draft``\   state. While
-these invoices remain unconfirmed they have no accounting impact within the system. There's nothing
+these invoices remain unconfirmed they have no accounting impact within the system. There is nothing
 to stop users creating their own draft invoices if they want to.
 
-You can create draft invoice manually : Finantial Management / Invoices / Customer Invoices / New Customer Invoice
+You can create draft customer invoice manually using the menu :menuselection:`Accounting --> Customers --> Customer Invoices`.
 
-The information that's needed for invoicing is automatically taken from the Partner form (such as
+The information that is needed for invoicing is automatically taken from the Partner form (such as
 payment conditions and the invoice address) or from the Product (such as the account to be used) or
 from a combination of the two (such as applicable Taxes and the Price of the product).
 
@@ -41,23 +41,23 @@ from a combination of the two (such as applicable Taxes and the Price of the pro
 
 	There are several advantages in working with Draft invoices:
 
-	* You've got an intermediate validation state before the invoice is approved.
-	  This is useful when your accountants aren't the people creating the initial invoice,
+	* You have got an intermediate validation state before the invoice is approved.
+	  This is useful when your accountants are not the people creating the initial invoice,
 	  but are still required to approve it before the invoice is entered into the accounts.
 
 	* It enables you to create invoices in advance, without approving them at the same time.
-	  You're also able to list all of the invoices awaiting approval.
+	  You are also able to list all of the invoices awaiting approval.
 
 Open or Pro-Forma Invoices
 --------------------------
 
 You can approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
-A Pro Forma invoice doesn't yet have an invoice number, but the accounting entries on the invoice
-that's created correspond to the amounts that Open ERP will record as the customer's payables.
+A Pro Forma invoice does not yet have an invoice number, but the accounting entries on the invoice
+that is created correspond to the amounts that Open ERP will record as the customer's payables.
 
 .. tip:: Pro Forma invoices
 
-	In some countries, you're not allowed to generate accounting entries from pro forma invoices.
+	In some countries, you are not allowed to generate accounting entries from pro forma invoices.
 	You create instead a report from the purchase order, which prints a pro forma invoice
 	that has no accounting consequences within the system.
 
@@ -69,8 +69,8 @@ the system as awaiting payment.
 .. index::
    single: reconciliation
 
-Reconciling invoice entries and payments
-----------------------------------------
+Reconciliation and Payments
+---------------------------
 
 In Open ERP an invoice is considered to be paid when its accounting entries have been reconciled
 with the payment entries. If there hasn't been a reconciliation an invoice can remain in the open

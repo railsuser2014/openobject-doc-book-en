@@ -3,7 +3,7 @@
    single: Invoice to Payment
 
 ***********************
-From invoice to payment
+From Invoice to Payment
 ***********************
 
 .. raw:: html
@@ -26,13 +26,13 @@ From invoice to payment
  the treatment of the reconciliation process, including payment orders.*
 
 Accounting is at the heart of managing a company: all the company's operations have an impact here.
-It has an informational role (how much cash is there? what debts need to be repaid? what's the stock
+It has an informational role (how much cash is there? what debts need to be repaid? what is the stock
 valuation?) and, because of the information it provides, a reliable and detailed accounting system
 can and should have a major decision-making role.
 
 In most real companies, accounting is limited to producing statutory reports and satisfying the
 directors' curiosity about certain strategic decisions, and to printing the balance sheet and the
-income statement several times a year. Even then there's often several weeks of delay between
+income statement several times a year. Even then there is often several weeks of delay between
 reality and the report.
 
 .. note:: Valuing your accounting function
@@ -53,10 +53,10 @@ reality and the report.
 	* easily get hold of useful information when you need it, such as a customer's credit position.
 
 So accounting is too often underused. The information it brings makes it a very effective tool
-for running the company if it's integrated into the management system. Accounting information really
+for running the company if it is integrated into the management system. Accounting information really
 is necessary in all of your company's processes for you to be effective, for example:
 
-* for preparing quotations it's important to know the precise financial position of the client, and
+* for preparing quotations it is important to know the precise financial position of the client, and
   to see a history of any delays in payment,
 
 * if a given customer has exceeded their credit limit, accounting can automatically stop further
@@ -78,7 +78,7 @@ manage it effectively.
    single: module; account
 
 The :mod:`account` module in Open ERP covers general accounting, analytic accounting, and auxiliary
-and budgetary accounting. It's double-entry, multi-currency and multi-company.
+and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 .. index::
    single: accounting
@@ -92,7 +92,7 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 .. note:: Accounting
 
 	* General accounting (or financial accounting) is for identifying the assets and liabilities of the
-	  business. It's managed using double-entry accounting which ensures that each transaction is
+	  business. It is managed using double-entry accounting which ensures that each transaction is
 	  credited to one account and debited from another.
 
 	* Analytical accounting (or management accounting, or cost accounting) is an independent accounting
@@ -116,12 +116,11 @@ and budgetary accounting. It's double-entry, multi-currency and multi-company.
 
 	* if the companies share many documents, you can register them in the same database and install
 	  Open ERP's multi-company documents to finely manage access rights,
-	  
 	.. index::
-	   single: module; base_synchro	
+	   single: module; base_synchro
 
 	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
-	  module, which is a shared-funding module rather than in the standard open repositories.
+	  module.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in Open ERP an Order automatically generates an
@@ -142,10 +141,12 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 
 .. tip:: For accountants
 
-	When you create a database you can elect to install only the accounting modules by choosing the
-	:guilabel:`Accounting only profile` :mod:`profile_accounting`.
+	You can configure Accounting application using the information given in the configuration wizard.
 
-	You should then install the web portal :mod:`portal_account`. 
+	.. figure::  images/config_wiz_account.png
+   	   :scale: 50
+
+
 	With appropriate rights management, this allows trustees to
 	provide customers with real-time access to their data. It also gives them the opportunity to work
 	on certain documents that have no direct accounting impact, such as budgets.
@@ -158,7 +159,7 @@ but each account and/or transaction can also have a secondary currency (which is
 account). The value of multi-currency transactions is then tracked in both currencies.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured.
 
 .. Copyright © Open Object Press. All rights reserved.
 

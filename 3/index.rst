@@ -2,10 +2,10 @@
 .. _part-genacct:
 
 ##################
-General Accounting
+Manage your Books
 ##################
 
- When it's well integrated with the management system, an accounting system offers a company special
+ When it is well integrated with the management system, an accounting system offers a company special
  benefits in addition to the obvious abilities it should have to report on the financial position.
  This part deals with the practical aspects of accounting, and accounting's role throughout the whole
  company.
