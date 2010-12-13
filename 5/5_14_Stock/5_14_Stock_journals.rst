@@ -36,7 +36,7 @@ Install the module :mod:`sale_journal` to work with journals. This adds three ne
 Invoicing journals are used to assign purchase orders and/or delivery order to a given invoicing
 journal. Everything in the journal can be invoiced in one go, and you can control the amounts by
 journal. For example you can create the following journals: daily invoicing, end-of-week invoicing,
-and end-of-month invoicing. It's also possible to show the invoicing journal by default in the
+and monthly invoicing. It is also possible to show the invoicing journal by default in the
 partner form.
 
 Order journals look like orders and are automatically transferred to orders for the corresponding
@@ -57,9 +57,9 @@ as truck1, truck2).
 Using the journals
 ------------------
 
-You'll now see how to use the journals to organize your stock management in practice. After
+You will now see how to use the journals to organize your stock management in practice. After
 installing the module :mod:`sale_journal` look at the list of partners. In the tab :guilabel:`Sales and
-Purchases` on any of them you'll now see the field :guilabel:`Invoicing Method`.
+Purchases` on any of them you will now see the field :guilabel:`Invoicing Method`.
 
 .. figure:: images/partner_property_view.png
    :scale: 75
@@ -85,9 +85,9 @@ Look at the assembly notes about these orders in the field :guilabel:`Invoicing 
 automatically shown there. Then confirm the different orders in the list.
 
 At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the
-menu :menuselection:`Stock Management --> Sorted List --> List to invoice`. Choose the invoicing
-journal and all the lists of orders to invoice then open in list view. It's then possible to
-automatically carry out invoicing by clicking the action :guilabel:`Invoice` (the gears symbol in
+menu :menuselection:`Sales --> Invoicing --> List to Invoice`. Choose the invoicing
+journal and all the lists of orders to invoice then open in list view. It is then possible to
+automatically carry out invoicing by clicking the action :guilabel:`Make Invoice` (the gears symbol in
 the application client).
 
 .. tip:: Confirming invoices
@@ -95,13 +95,13 @@ the application client).
     By default, invoices are generated in the draft state which enables you to modify them before
     sending them to the customer.
     But you can confirm all the invoices in one go by selecting them all from the list and doing the
-    action 'Confirm draft invoices'.
+    action 'Confirm Draft Invoices'.
 
 At the end of the month the invoicing management does the same work but in the journal 'month-end
 invoicing'.
 
 You can also enter a journal to confirm / cancel all the orders in one go. Then you can do several
-quotations and assign them in a journal and confirm or cancel them en masse at once.
+quotations and assign them in a journal and confirm or cancel them at once.
 
 .. figure:: images/stock_jounral_form.png
    :scale: 75
