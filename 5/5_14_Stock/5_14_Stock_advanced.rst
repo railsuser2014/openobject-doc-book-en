@@ -1,7 +1,7 @@
 Advanced Elements of Stock Management
 =====================================
 
-In this section you'll enter the details of management and control of stocks.
+In this section you will enter the details of management and control of stocks.
 
 Requirements Calculation / Scheduling
 -------------------------------------
@@ -14,8 +14,7 @@ procurement as a function of rules defined in the products.
     Requirements Calculation is often called Scheduling.
 
     By default, it automatically starts once per day.
-    You can also start it manually using the menu :menuselection:`Manufacturing --> Compute All
-    Schedulers`.
+    You can also start it manually using the menu :menuselection:`Manufacturing --> Schedulers --> Compute Schedulers`.
     It then uses the parameters defined in the products, the suppliers, and the company
     to determine the priorities between the different product orders, deliveries and purchases from
     suppliers.
@@ -26,22 +25,22 @@ Just in Time
 ------------
 
 By default, scheduling starts automatically once a day. You should make this
-run happen overnight to ensure that the system doesn't slow down under a heavy load of scheduling when
-you're also trying to use it interactively yourselves.
+run happen overnight to ensure that the system does not slow down under a heavy load of scheduling when
+you are also trying to use it interactively yourselves.
 
 To set the time it starts use the menu
 :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Select the rule
-called 'Run MRP Scheduler' and modify the date and time of the next execution.
+called 'Run mrp scheduler' and modify the date and time of the next execution.
 
 .. index::
    single: module; mrp_jit
 
-Some companies want to plan orders progressively as they are entered so they don't wait until
+Some companies want to plan orders progressively as they are entered so they do not wait until
 procurement orders are planned the next day. Install the module :mod:`mrp_jit` to handle this. Once
-it's installed, each requirement (that could result in a Production or Purchase Order)
-will be planned in real time as soon as it's been confirmed.
+it is installed, each requirement (that could result in a Production or Purchase Order)
+will be planned in real time as soon as it is been confirmed.
 
-Then if you make a customer order with a product that's ``Make To Order`` the quotation request to a
+Then if you make a customer order with a product that is ``Make To Order`` the quotation request to a
 supplier will be generated.
 
 .. index::
@@ -54,9 +53,9 @@ supplier will be generated.
     The logic that the product follows is configured individually for each product and affects only those
     products marked ``Make to Order``.
 
-This mode is not always sensible. Each order is processed immediately it's been confirmed. So if an order
+This mode is not always sensible. Each order is processed immediately it is been confirmed. So if an order
 is to be delivered in three months the scheduler will reserve goods in stock for each order once
-it's been confirmed. It would have been more sensible to leave these products available for other
+it is been confirmed. It would have been more sensible to leave these products available for other
 orders.
 
 If a Purchase Order's :guilabel:`Invoicing Control` is configured ``From Order``,
@@ -76,7 +75,7 @@ So the negative effects of working with the Just in Time module are:
 Planning
 --------
 
-You've seen that most Open ERP documents can be changed in a planning view. It's the same for
+You have seen that most Open ERP documents can be changed in a planning view. It is the same for
 deliveries and goods receipts. You can put them into a calendar view at any time to plan your
 deliveries or goods receipts.
 
@@ -87,7 +86,7 @@ deliveries or goods receipts.
    *Planning the deliveries of customer products*
 
 Planned dates on a packing order are put on each stock move line. Then if you have a packing
-order containing several products you don't have to have all of the lines on the order delivered on
+order containing several products you do not have to have all of the lines on the order delivered on
 the same day. The minimum and maximum dates on a packing order show the earliest and latest dates on
 the stock move lines for the packing.
 
@@ -115,7 +114,7 @@ waiting deliveries (or receipts).
 
    *Confirmation screen for delivered quantities*
 
-When you open the list of current deliveries, you find the field :guilabel:`Partial delivery` which
+When you open the list of current deliveries, you find the field :guilabel:`Back Order of` which
 shows the reference number of the first delivery sent to the customer. That enables you to quickly
 find the deliveries for partial orders each day so that you can treat them as a priority.
 
@@ -138,8 +137,8 @@ You can see how the configuration of the supplier order affects receipts in deta
 Manual data entry of goods receipt
 ----------------------------------
 
-To enter data about goods receipt manually you must use the menu :menuselection:`Stock Management
---> Goods Receipt --> New items received`. Then enter the necessary data manually in the goods
+To enter data about goods receipt manually you must use the menu :menuselection:`Warehouse
+-->Warehouse Management --> Incoming Shipments` click on `New` button. Then enter the necessary data manually in the goods
 receipt form.
 
 .. figure:: images/stock_getting.png
@@ -152,11 +151,12 @@ Confirming pre-generated goods receipt documents
 ------------------------------------------------
 
 If you use Supplier Orders in Open ERP, product receipts are automatically generated by the system
-when the purchase order is confirmed. You don't have to enter any date, just confirm that
+when the purchase order is confirmed. You do not have to enter any date, just confirm that
 the quantities ordered match the quantities received.
 
 In this case Open ERP generates a list of all products waiting to be received from the menu
-:menuselection:`Stock Management --> Incoming Products --> Packing to Process`.
+:menuselection:`Warehouse -->Warehouse Management --> Incoming Shipments` and applying proper filter.Using group by `State` you can find all
+incoming shipment with correspondent state.
 
 .. figure:: images/stock_packing_in.png
    :scale: 75
