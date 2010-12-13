@@ -1,6 +1,6 @@
 
-Management of Alerts
-====================
+Alerts
+======
 
 .. index:: 
    single: warning
@@ -22,6 +22,12 @@ setting parameters in the new :guilabel:`Warnings` tab on each of the forms.
    :align: center
 
    *Management of alerts on products*
+
+You can select any one of the following types of warnings:
+
+* :guilabel:`Warning`: This option will notify user with the message
+
+* :guilabel:`Blocking Message`: This will throw an exception with the message and block the flow
 
 You can activate alerts for a series of events. For each alert you should enter a message that will
 be attached to the person setting off the event. The different available events on the partner form
