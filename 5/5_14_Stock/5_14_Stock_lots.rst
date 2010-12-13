@@ -115,8 +115,8 @@ Traceability
 ------------
 
 If you code in the lot numbers for stock moves as described above you can then investigate the traceability of any
-given lot number. To do this use the menu :menuselection:`Stock Management --> Traceability -->
-Production Lots`, or :menuselection:`Stock Management --> Traceability --> Tracking Lots`.
+given lot number. To do this use the menu :menuselection:`Warehouse --> Traceability -->
+Production Lots`, or :menuselection:`Warehouse --> Traceability --> Packs`.
 
 .. tip:: Product Shortcuts
 
@@ -126,18 +126,16 @@ Production Lots`, or :menuselection:`Stock Management --> Traceability --> Track
 
     * :guilabel:`Stocks by location`,
 
-    * :guilabel:`Sales detail`,
-
-    * :guilabel:`Stocks by lot`,
+    * :guilabel:`Product sales`,
 
     * :guilabel:`Bills of Materials`.
 
 Search for a particular lot using the filters for the lot number, the date or the product. Once you
 can see the form about this lot several actions are possible:
 
-* :guilabel:`Traceability upstream` : from supplier through to customers,
+* :guilabel:`Upstream traceability` : from supplier through to customers,
 
-* :guilabel:`Traceability downstream` : from customer back to suppliers,
+* :guilabel:`Downstream traceability` : from customer back to suppliers,
 
 * Stock in all the physical and virtual locations.
 
