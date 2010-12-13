@@ -155,7 +155,7 @@ when the purchase order is confirmed. You do not have to enter any date, just co
 the quantities ordered match the quantities received.
 
 In this case Open ERP generates a list of all products waiting to be received from the menu
-:menuselection:`Warehouse -->Warehouse Management --> Incoming Shipments` and applying proper filter.Using group by `State` you can find all
+:menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments` and applying proper filter.Using group by `State` you can find all
 incoming shipment with correspondent state.
 
 .. figure:: images/stock_packing_in.png
@@ -174,15 +174,13 @@ Confirmation by selecting products waiting
 ------------------------------------------
 
 The approach shown above is very useful if goods receipts correspond to the original orders.
-If your suppliers deliver items that don't necessarily coincide with the orders, however,
+If your suppliers deliver items that do not necessarily coincide with the orders, however,
 it is easier to work by products received rather than by orders.
 
-In this case you can manually create a new goods receipt using the menu :menuselection:`Stock
-Management --> Incoming Products --> New Reception Packing`. Instead of entering all the product lines
-manually you can click the button at the lower right :guilabel:`Products not received`. Open ERP
-then opens a list of all the goods waiting from that supplier and you can then automatically add
-some or all of them on your form. This method of data entry is very useful when you're entering goods
-received at one time from several orders.
+In this case you can manually create a new goods receipt using the menu :menuselection:`Warehouse --> Products Moves
+--> Receive Products`. Open ERP then opens a list of all the receivable/received product from that supplier and you can then
+automatically add some or all of them on your form. You can filter receivable product based on state and confirm it. This method
+of data entry is very useful when you are entering goods received at one time from several orders.
 
 .. index::
    single: routing; logistics
@@ -217,7 +215,22 @@ must be configured with rules on the product form. The fields that make up those
 * :guilabel:`Name of operations` : a free text field which will be included in the automatic stock
   move proposed by Open ERP.
 
-You'll now see some examples of using these locations and logistics by product:
+There are two main logistic flows:
+
+* :guilabel:`Pushed Flows`
+
+* :guilabel:`Pulled Flows`
+
+Push flows are useful when the arrival of certain products in a given location should always
+be followed by a corresponding move to another location, optionally after a certain delay.
+The original Warehouse application already supports such Push flow specifications on the
+Locations themselves, but these cannot be refined per-product.
+
+Pull flows are a bit different from Push flows, in the sense that they are not related to
+the processing of product moves, but rather to the processing of procurement orders.
+What is being pulled is a need, not directly products.
+
+You will now see some examples of using these locations and logistics by product:
 
 * A rentable product,
 
@@ -279,7 +292,7 @@ arrive in your stores. To do this, create all the locations for the intermediate
 * Anvers Customs.
 
 Finally, on the product form, create the following rule to show that when purchased, the goods
-don't arrive at your stores directly, but instead at the port of Shanghai. In this example the
+do not arrive at your stores directly, but instead at the port of Shanghai. In this example the
 stores are configured to enter all the products in a location called 'Input'.
 
 .. table:: Rule to move products automatically to Shanghai Port
