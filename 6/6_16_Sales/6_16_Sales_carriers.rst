@@ -8,8 +8,7 @@ Management of Carriers
    single: module; delivery
    single: module; profile_manfuacturing
 
-To manage deliveries in Open ERP, install the :mod:`delivery` module. (If you have installed the
-:mod:`profile_manufacturing` profile this is installed by default during configuration of the database.) 
+To manage deliveries in Open ERP, install the :mod:`delivery` module.
 This module enables you to manage:
 
 * the different carriers with whom you work,
@@ -21,7 +20,7 @@ This module enables you to manage:
 * the modes of transport and their tariffs.
 
 Once the :mod:`delivery` module has been installed, the first thing to do is to configure the different
-modes of delivery accepted by your company. To do that use the menu :menuselection:`Stock Management
+modes of delivery accepted by your company. To do that use the menu :menuselection:`Warehouse
 --> Configuration --> Delivery --> Delivery Method`.
 
 For each delivery mode, you should define the following elements:
@@ -36,26 +35,26 @@ For example you can create the following modes:
 
 .. table:: Example Delivery Modes
 
-   ================    ===========   ==========================
-   Delivery Mode       Partner       Associated Product
-   ================    ===========   ==========================
-   Express Track       Mail Office   Express Track Delivery
-   Priority Courier    Mail Office   Courier Express Delivery
-   EFG Standard        EFG Inc       Delivery EFG
-   EFG Express         EFG Inc       Delivery EFG Express
-   ================    ===========   ==========================
+   ================    ===============   ==========================
+   Carrier             Carrier Partner   Delivery Product
+   ================    ===============   ==========================
+   Express Track       Mail Office       Express Track Delivery
+   Priority Courier    Mail Office       Courier Express Delivery
+   EFG Standard        EFG Inc           Delivery EFG
+   EFG Express         EFG Inc           Delivery EFG Express
+   ================    ===============   ==========================
 
 Information about the invoicing of transport (such as accounts, applicable taxes) are entered in the
 product linked to the delivery mode. Ideally the product should be configured as 
-:guilabel:`Product Type` ``Service`` and :guilabel:`Procure Method` ``Make to Stock``.
+:guilabel:`Product Type` ``Service`` and :guilabel:`Procurement Method` ``Make to Stock``.
 
 You can use the same product for several delivery modes. This simplifies the
-configuration but you won't be able to separate out your sales figures by delivery mode.
+configuration but you will not be able to separate out your sales figures by delivery mode.
 
-Tariff grids
+Tariff Grids
 ------------
 
-Unlike ordinary products, delivery prices aren't given by pricelists but by delivery grids,
+Unlike ordinary products, delivery prices are not given by pricelists but by delivery grids,
 designed specifically for this purpose. For each delivery mode, you enter one or several tariff grids.
 Each grid is used for a given region/destination.
 
@@ -68,8 +67,8 @@ for Mail Office:
 
 * Courier Outside Europe.
 
-To define a new delivery grid, use the menu :menuselection:`Stock Management --> Configuration -->
-Deliveries --> Delivery Pricelist`. You then give a name to your delivery grid and define the
+To define a new delivery grid, use the menu :menuselection:`Warehouse --> Configuration -->
+Delivery --> Delivery Pricelist`. You then give a name to your delivery grid and define the
 region for which the tariffs in the grid will be applicable. To do this, use the second tab
 :guilabel:`Destination`. There you can set:
 
@@ -86,7 +85,7 @@ example ``Weight < 0.5kg``.
 .. note:: Weights
 
    Weights are expressed in kilograms. You can define a number with a decimal point or comma, so
-   that to set 500g you'd put 0.5 in the weight rule.
+   that to set 500g you would put 0.5 in the weight rule.
 
 Then set the sale price and the cost price. The price can be expressed in different ways:
 
@@ -118,20 +117,20 @@ delivery if the order is more than 150 USD, add the following rule:
    Franked > 150 USD Price > 150 USD   10      Fixed
    ================= ===============  ======   =============
 
-Using delivery modes
---------------------
+Delivery Modes
+--------------
 
 Once the delivery modes and their tariffs have been defined you can use them in a Sales Order. 
 There are two methods for doing that in Open ERP.
 
-* Delivery based on order quantities,
+* Delivery based on Order Quantities,
 
-* Delivery based on deliverd quantities.
+* Delivery based on Shipped Quantities.
 
-Delivery based on order quantities
-----------------------------------
+Delivery based on Ordered Quantities
+------------------------------------
 
-To add the delivery charges on the quotation, use the action :guilabel:`Delivery Costs` available to the right
+To add the delivery charges on the quotation, use the button :guilabel:`Delivery Costs` available on the Sales Order tab
 of the form. A dialog box opens, asking you to select a delivery mode from one of the preconfigured available
 ones.
 
@@ -149,16 +148,16 @@ to the customer.
 If you want to calculate the exact delivery charges depending on the actual deliveries you must use
 invoicing based on deliveries.
 
-Delivery based on the packed items
-----------------------------------
+Delivery based on Shipped Quantities
+------------------------------------
 
-To invoice the delivery on the basis of items packed you set the delivery mode in the
-:guilabel:`Delivery method` field on the second tab of the order, :guilabel:`Other data`. 
-Don't add delivery lines to the Sales Order but to the Invoices after they have been
+To invoice the delivery on the basis of items shipped, you set the delivery mode in the
+:guilabel:`Delivery Method` field on the second tab of the order, :guilabel:`Other Information`. 
+Do not add delivery lines to the Sales Order but to the Invoices after they have been
 generated for the delivered items.
 
 For this to work properly, your order must be set to the state 
-:guilabel:`Invoice from the Packing`.
+:guilabel:`Invoice from Delivery`.
 You can then confirm the order and validate the delivery.
 
 When the manager has generated the invoices corresponding to the deliveries carried out,
