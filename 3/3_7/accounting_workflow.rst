@@ -73,27 +73,27 @@ Reconciliation and Payments
 ---------------------------
 
 In Open ERP an invoice is considered to be paid when its accounting entries have been reconciled
-with the payment entries. If there hasn't been a reconciliation an invoice can remain in the open
+with the payment entries. If there has not been a reconciliation an invoice can remain in the open
 state until you have entered the payment.
 
 .. tip::  Payment and reconciliation
 
-	To avoid surprises, it's important to understand the idea of reconciliation and its link with
+	To avoid surprises, it is important to understand the idea of reconciliation and its link with
 	invoice payment.
 
-	You'll find both a :guilabel:`Reconciled` field and the :guilabel:`Paid` checkbox on an invoice.
-	They differ from each other only if an invoice has been paid (using reconciliation of records)
-	but has subsequently been marked as unreconciled.
+	You will find the :guilabel:`Paid/Reconciled` checkbox on an invoice.
+	It is checked if The Journal Entry of the invoice have been totally reconciled
+	with one or several Journal Entries of payment.
 
 .. note:: Reconciliation
 
-	Reconciliation links entries in an account that cancel each other out – they're reconciled
+	Reconciliation links entries in an account that cancel each other out – they are reconciled
 	to each other (sum of credits = sum of debits).
 
 	This is generally applied to payments against corresponding invoices.
 
 Without the reconciliation process, Open ERP would be incapable of marking invoices that have been
-paid. Suppose that you've got the following situation for the Smith and Offspring customer:
+paid. Suppose that you have got the following situation for the Smith and Offspring customer:
 
 * Invoice 145: 50,
 
@@ -101,12 +101,12 @@ paid. Suppose that you've got the following situation for the Smith and Offsprin
 
 * Invoice 184: 70.
 
-If you receive a payment of 120, Open ERP will delay reconciliation because there's a choice of
+If you receive a payment of 120, Open ERP will delay reconciliation because there is a choice of
 invoices to pay. It could either reconcile the payment against invoices 145 and 184 or against
 invoice 167.
 
 You can cancel an invoice if the :guilabel:`Allow Cancelling Entries` function has been activated in the
-journal and the entries haven't yet been reconciled. You could then move it from \ ``Canceled``\  ,
+journal and the entries have not yet been reconciled. You could then move it from \ ``Canceled``\  ,
 through the \ ``Draft``\   state to modify it and regenerate it.
 
 .. tip:: Treatment in Lots
@@ -141,25 +141,25 @@ your preference:
 
 You can create the accounting records directly, without using the invoice and account statements. To
 do this, use the rapid data entry form in a journal. Some accountants prefer this approach because
-they're used to thinking in terms of accounting records rather than in terms of invoices and
+they are used to thinking in terms of accounting records rather than in terms of invoices and
 payments.
 
 You should really use the forms designed for invoices and bank statements rather than manual data
 entry records, however. These are simpler and are managed within an error-controlling system.
 
-A records-based system
-----------------------
+Records-based accounting system
+-------------------------------
 
-All the accounting transactions in Open ERP are based on records, whether they're created by an
+All the accounting transactions in Open ERP are based on records, whether they are created by an
 invoice or created directly.
 
 So partner reminders are generated quickly from the list of unreconciled entries in the trade
-receivables account for that partner. In a single reminder you'll find the whole set of unpaid
+receivables account for that partner. In a single reminder you will find the whole set of unpaid
 invoices as well as unreconciled payments, such as advance payments.
 
 Similarly, financial statements such as the general ledger, account balance, aged balance (or
-chronological balance) and the various journals, are all based on accounting entries. It doesn't
-matter if you generated the entry from an invoice form or directly in the invoice journal. It's the
+chronological balance) and the various journals, are all based on accounting entries. It does not
+matter if you generated the entry from an invoice form or directly in the invoice journal. It is the
 same for the tax declaration and other statutory financial statements.
 
 When using integrated accounting, you should still go through the standard billing process because
