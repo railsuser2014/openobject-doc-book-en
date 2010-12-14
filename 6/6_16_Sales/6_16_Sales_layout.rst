@@ -1,5 +1,5 @@
 
-Layout templates
+Layout Templates
 ================
 
 .. index::
@@ -23,7 +23,7 @@ For example you could put the following in the order lines:
 .. index::
    single: module; account_invoice_layout
 
-This enables you to lay out a more elaborate professional-looking quotation page. There's also the
+This enables you to lay out a more elaborate professional-looking quotation page. There is also the
 module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.
 
 The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in Open ERP 
