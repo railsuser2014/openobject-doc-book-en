@@ -1,6 +1,6 @@
 
-Price management policies
-=========================
+Pricing Policies
+================
 
 Some companies are notorious for their complicated pricelists. Many forms of price variation are
 used, such as end-of-year refunds, discounts, changes of terms and conditions with time, various
@@ -23,26 +23,26 @@ Intelligent price management is difficult, because it requires you to integrate 
 from clients and suppliers to create estimates quickly or to invoice automatically. But if you have
 an efficient price management mechanism you can often keep margins raised and respond quickly to
 changes in market conditions. A good price management system gives you scope for varying any and all
-of the relevant factors when you're negotiating a contract.
+of the relevant factors when you are negotiating a contract.
 
 To help you work most effectively, Open ERP's pricelist principles are extremely powerful yet are
 based on simple and generic rules. You can develop both sales pricelists and purchase pricelists for
 products capable of accommodating conditions such as the date period, the quantity requested and the
 type of product.
 
-.. tip:: Don't confuse the different price specifications
+.. tip:: Do not confuse the different price specifications
 
-   Don't confuse the sale price with the base price of the product.
+   Do not confuse the sale price with the base price of the product.
    In Open ERP's basic configuration the sale price is the list price set on the product form
    but a customer can be given a different sale price depending on the conditions.
 
-It's the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
+It is the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
 which changes in response to different criteria such as quantities, dates, and supplier. This is
-automatically set by the accounting system. You'll find that the two prices have been set by default to the
+automatically set by the accounting system. You will find that the two prices have been set by default to the
 same for all products with the demonstration data, which can be a source of confusion.
-You're free to set the standard cost to something different.
+You are free to set the standard cost to something different.
 
-Each pricelist is calculated from defined policies, so you'll have as many sales pricelists as
+Each pricelist is calculated from defined policies, so you will have as many sales pricelists as
 active sales policies in the company. For example a company that sells products through three sales
 channels could create the following price lists:
 
@@ -63,9 +63,9 @@ pricelist for walk-in customers could have five different versions, for example:
 that change with the seasons.
 
 Each pricelist is expressed in a single currency. If your company sells products in several
-currencies you'll have to create as many pricelists as you have currencies.
+currencies you will have to create as many pricelists as you have currencies.
 
-The prices on a pricelist can depend on another list, which means that you don't have to repeat the
+The prices on a pricelist can depend on another list, which means that you do not have to repeat the
 definition of all conditions for each product. So a pricelist in USD can be based on a pricelist in
 EUR. If the currency conversion rates between EUR and USD change, or the EUR prices change, the USD
 rates can be **automatically** adjusted.
@@ -73,10 +73,10 @@ rates can be **automatically** adjusted.
 .. index::
    single: pricelist; create
 
-Creating pricelists
--------------------
+Creating Price Lists
+--------------------
 
-To define a pricelist use the menu :menuselection:`Products --> Pricelists --> Pricelists` .
+To define a pricelist use the menu :menuselection:`Sales --> Configuration --> Pricelists --> Pricelists` .
 
 For each list you should define:
 
@@ -87,31 +87,21 @@ For each list you should define:
 * the :guilabel:`Currency` in which the prices are expressed.
 
 .. index::
-   single: module; edi
-
-.. tip:: Customer Price
-
-   If you install the module :mod:`edi` (in ``addons-extra`` at the time of writing)
-   a third type of list appears – the :guilabel:`Customer Price` - which
-   defines the price displayed for the end user.
-   This doesn't have to be the same as your selling price to an intermediary or distributor.
-
-.. index::
    single: pricelists; version
 
-Pricelist versions
-^^^^^^^^^^^^^^^^^^
+Price List Versions
+^^^^^^^^^^^^^^^^^^^
 
 Once the list is defined you must provide it with at least one version. To do that use the menu
-:menuselection:`Products --> Pricelists --> Pricelist Versions`. The version contains all of the
+:menuselection:`Sales --> Configuration --> Pricelists --> Pricelist Versions`. The version contains all of the
 rules that enable you to calculate a price for a product and a given quantity.
 
 So set the :guilabel:`Name` of this associated version. If the list only has a single version you
-can use the same name for the pricelist and the version. In the :guilabel:`Pricelist` field select
+can use the same name for the pricelist and the version. In the :guilabel:`Price List` field select
 the pricelist you created.
 
-Then set the :guilabel:`Start date` and :guilabel:`End date` of this version. The fields are both
-optional: if you don't set any dates the version will be permanently active. Only one version
+Then set the :guilabel:`Start Date` and :guilabel:`End Date` of this version. The fields are both
+optional: if you do not set any dates the version will be permanently active. Only one version
 may be active at any one point, so bear this in mind when creating them.
 Use the :guilabel:`Active` field in the versions to activate or disable a pricelist version.
 
@@ -125,8 +115,8 @@ Use the :guilabel:`Active` field in the versions to activate or disable a pricel
 
 .. index:: price
 
-Rules for calculating price
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Calculation Rules
+^^^^^^^^^^^^^^^^^
 
 A pricelist version is made up of a set of rules that apply to the product base prices.
 
@@ -136,7 +126,7 @@ A pricelist version is made up of a set of rules that apply to the product base 
 
    *Detail of a rule in a pricelist version*
 
-You define the conditions for a rule in the first part of the definition screen labeled :guilabel:`Rules Test
+You define the conditions for a rule in the first part of the definition screen labelled :guilabel:`Rules Test
 Match`. The rule applies to the :guilabel:`Product` or :guilabel:`Product Template` and/or the named :guilabel:`Product
 Category`. If a rule is applied to a category then it is automatically applied to all of its
 subcategories too (using the tree structure for product categories).
@@ -150,22 +140,22 @@ sequence is used for the calculation. The :guilabel:`Sequence` field determines 
 lowest number and working up.
 
 Once a rule has been selected, the system has to determine how to calculate the price from the rule.
-This operation is based on the criteria set out in the lower part of the form, labeled :guilabel:`Price
+This operation is based on the criteria set out in the lower part of the form, labelled :guilabel:`Price
 Computation`.
 
-The first field you have to complete is labeled :guilabel:`Based on`. Set the mode for
+The first field you have to complete is labelled :guilabel:`Based on`. Set the mode for
 partner price calculation, choosing between:
 
-* the :guilabel:`List Price` set in the product file,
+* the :guilabel:`Public Price` set in the product file,
 
-* the :guilabel:`Standard Cost` set in the product file,
+* the :guilabel:`Cost Price` set in the product file,
 
 * an :guilabel:`Other Pricelist` given in the field :guilabel:`If Other Pricelist`,
 
 * the price that varies as a function of a supplier defined in the :guilabel:`Partner section of the
   product form`.
 
-Several other criteria can be considered and added to the list, as you'll see in the following
+Several other criteria can be considered and added to the list, as you will see in the following
 section.
 
 Next, various operations can be applied to the base price to calculate the sales or purchase price
@@ -187,7 +177,7 @@ number. For example if you set 0.05 in this example, a price of 45.66 will be ro
 .. note:: Swiss special situation
 
    In Switzerland, the smallest monetary unit is 5 cents.
-   There aren't any 1 or 2 cent coins.
+   There are not any 1 or 2 cent coins.
    So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist.
 
 The supplement from :guilabel:`Field2` is applied before the rounding calculation, which enables
@@ -199,11 +189,11 @@ Minimum and Maximum margins enable you to guarantee a given margin over the base
 field, no effect is taken into account.
 
 Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select
-its :guilabel:`Properties` tab. You can then change the :guilabel:`Purchase Pricelist` and the
-:guilabel:`Sale Pricelist` that's loaded by default for the partner.
+its :guilabel:`Sales & Purchases` tab. You can then change the :guilabel:`Purchase Pricelist` and the
+:guilabel:`Sale Pricelist` that is loaded by default for the partner.
 
-Case of using pricelists
-------------------------
+Example
+-------
 
 Take the case of an IT systems trading company, for which the following product categories have
 been configured:
@@ -247,8 +237,8 @@ TABLE
 .. index::
    single: pricelist; default pricelist
 
-Default pricelists
-^^^^^^^^^^^^^^^^^^
+Default Price Lists
+^^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/product_pricelist_default.png
    :scale: 75
@@ -263,13 +253,13 @@ The price for sales defined in the Default Public Pricelist is set by default to
 the Public Price of the product in the product file, which is the Sale Price in the Product file.
 
 The price for purchases defined in the Default Purchase Pricelist is set by default in the same way to
-the Standard Cost of the product in the product file.
+the Cost Price of the product in the product file.
 
 .. index::
    single: trading company
 
-Example of a trading company
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Trading Company
+^^^^^^^^^^^^^^^
 
 Take the case of a trading company, where the sale price for resellers can be defined like this:
 
@@ -321,14 +311,14 @@ Take the case of a trading company, where the sale price for resellers can be de
 
                 *  :guilabel:`Priority` :  \ ``3``\ .
 
-It's important that the priority of the second rule is set below the priority of the third in this
+It is important that the priority of the second rule is set below the priority of the third in this
 example. If it were the other way round the third rule would always be applied because a quantity of
 5 is always greater than a quantity of 1 for all products.
 
 Also note that to fix a price of 60 for the 5 Berrel Keyboards, the formula \ ``Price = Base Price x
 (1 + 1.0) + 60``\   has been used.
 
-Establishing customer contract conditions
+Establishing Customer Contract Conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The trading company can now set specific conditions to a customer, such as the company TinAtwo, who
@@ -363,31 +353,14 @@ The list price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
                 *  :guilabel:`Priority` : \ ``2``\  .
 
 Once this list has been entered you should look for the partner form for TinAtwo again. Click the
-:guilabel:`Properties` tab to set the :guilabel:`Sale List Price` field to *TinAtwo Contract*. If
-the contract is only valid for one year, don't forget to set the :guilabel:`Start Date` and
-:guilabel:`End Date` fields in the :guilabel:`Price List Version`.
+:guilabel:`Sales & Purchases` tab to set the :guilabel:`Sale Pricelist` field to *TinAtwo Contract*. If
+the contract is only valid for one year, do not forget to set the :guilabel:`Start Date` and
+:guilabel:`End Date` fields in the :guilabel:`Pricelist Version`.
 
 Then when salespeople prepare an estimate for TinAtwo the prices proposed will automatically be
 calculated from the contract conditions.
 
-Different bases for price calculation
--------------------------------------
-
-Open ERP's flexibility enables you to make prices that depend not only on prices on the product
-form, but in addition to the two predefined ones – Cost Price and Public Price.
-
-To do this use the menu :menuselection:`Products --> Configuration --> Prices Computation --> Price Types`. Create a new
-entry for the new price type. Enter the field name, the field on the product form that this type of
-price corresponds to and the currency that will be expressed in this field. The operation works just
-as well on new fields added to the product form to meet specific developments.
-
-Once this operation has been carried out you can make pricelists depend on this new price type.
-
-Then, adding the weight and/or volume field, the price of a product by piece can vary by its weight
-and/or volume. This is different from defining a price by weight – in that case the default unit
-of measure is weight and not piece.
-
-Pricelists and managing currencies
+Pricelists and Managing Currencies
 ----------------------------------
 
 If your trading company wants to start a product catalog in a new currency you can handle this
