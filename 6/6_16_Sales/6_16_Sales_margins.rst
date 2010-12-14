@@ -1,9 +1,9 @@
 
-Margin Control
-==============
+Keep Track of your Margins
+==========================
 
-It's important to keep good control of margins in every company. Even if you have a good level of
-sales it won't guarantee company profitability if margins aren't high enough. Open ERP provides a
+It is important to keep good control of margins in every company. Even if you have a good level of
+sales it will not guarantee company profitability if margins are not high enough. Open ERP provides a
 number of systems for monitoring margins. The main ones are:
 
 * Margins on a sales order,
@@ -14,14 +14,14 @@ number of systems for monitoring margins. The main ones are:
 
 * Using price lists.
 
-Margins on sales orders
+Margins on Sales Orders
 -----------------------
 
 .. index::
    single: module; sale_margin
 
-If you want to check your margins on sales orders you can install the :mod:`sale_margin` module
-from ``addons-extra``. This will add margins calculated on each order line and on the order total.
+If you want to check your margins on sales orders you can install the :mod:`sale_margin` module.
+This will add margins calculated on each order line and on the order total.
 
 .. figure:: images/sale_margin.png
    :scale: 75
@@ -32,31 +32,30 @@ from ``addons-extra``. This will add margins calculated on each order line and o
 The margin on each line is defined as the quantity sold multiplied by the sale price for the
 customer less the cost price of the products. By default, products are managed using standard price
 in Open ERP (cost price fixed manually and reviewed once per year). You can change that to
-``Average Weighted Price``, meaning that the product cost fluctuates with purchases from
+``Average Price``, meaning that the product cost fluctuates with purchases from
 suppliers. After product receipt you can add fixed costs, such as delivery costs, in the cost of
 each product.
 
 .. index::
    single: module; product_extended
 
-Open ERP supports a third method of updating the cost price of products using the module
-:mod:`product_extended`, also in ``addons-extra`` at the time of writing. 
-This adds a button to the product form which lets you
-automatically recalculate the cost price for the selected products. 
+Open ERP supports a third method of updating the cost price of products.
+This is through the button :guilabel:`Update` on the product form which lets you
+automatically recalculate the cost price for the selected product. 
 The cost price is calculated from the raw materials and the operations carried out 
 (if the products have been manufactured internally so that you have set their costs).
 
-Margins by product
+Margins by Product
 ------------------
 
 .. index::
    single: module; product_margin
 
 To track margins by product, install the module :mod:`product_margin`. Once the module
-is installed you can see the margins by product by using the menu :menuselection:`Products -->
-Reporting --> Margins by Product`.
+is installed you can see the margins by product by using the menu :menuselection:`Sales --> Products
+--> Product Margins`.
 
-When you've clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If
+When you have clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If
 no period is given, Open ERP will calculate margins on all of the operations without restriction. By
 default, however, Open ERP proposes a period of the last 12 months for analysis.
 
@@ -86,7 +85,7 @@ You then get a margin analysis table. The following fields are given by product 
 
 * :guilabel:`Turnover` : the actual sales revenue for the product selected,
 
-* :guilabel:`Expected Sales` : the number of products sold multiplied by the list price.
+* :guilabel:`Expected Sale` : the number of products sold multiplied by the list price.
 
 .. figure:: images/product_margin_form.png
    :scale: 75
@@ -139,9 +138,9 @@ representing a project or a case, and several new reports on those accounts.
    *Detail of margins for a case*
 
 Start by opening a project's analytic account through the
-:menuselection:`Project Management --> Financial Project Management --> Analytic Accounts --> All Analytic Accounts`
+:menuselection:`Project --> Billing --> Overpassed Accounts`
 and selecting one of them.
-In the new analytic account :guilabel:`Analysis summary` tab you'll find the following information:
+In the new analytic account :guilabel:`Analysis summary` tab you will find the following information:
 
 * The total costs for the analytic account,
 
@@ -153,7 +152,7 @@ In the new analytic account :guilabel:`Analysis summary` tab you'll find the fol
 
 * The remaining income,
 
-* The theoretical income (hours worked multipled by their sale price),
+* The theoretical income (hours worked multiplied by their sale price),
 
 * The number of hours invoiced,
 
