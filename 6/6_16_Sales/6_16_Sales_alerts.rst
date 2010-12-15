@@ -11,41 +11,32 @@ To manage alerts on products or partners, you can install the :mod:`warning` mod
 installed, you will be able to configure a series of alerts on the partners or products by
 setting parameters in the new :guilabel:`Warnings` tab on each of the forms.
 
+You can select any of the following types of warnings and create different warnings for purchase and for sales:
+
+* :guilabel:`No Message`: This option will not display a message.
+
+* :guilabel:`Warning`: This option will show the user the message entered.
+
+* :guilabel:`Blocking Message`: The message displayed will cause an exception and block the workflow.
+
+You can activate alerts for a series of events. For each alert you should enter a message that will
+be displayed when the event concerned is started.
+
+   *Management of alerts on partners*
+
 .. figure:: images/warning_partner.png
    :scale: 75
    :align: center
 
-   *Management of alerts on partners*
+The available warnings in the partner form are:
 
-.. figure:: images/warning_product.png
-   :scale: 75
-   :align: center
+* Create a warning for a sales order,
 
-   *Management of alerts on products*
+* Create a warning for a purchase order,
 
-You can select any one of the following types of warnings:
+* Create a warning for a delivery to a partner (or receiving an item),
 
-* :guilabel:`Warning`: This option will notify user with the message
-
-* :guilabel:`Blocking Message`: This will throw an exception with the message and block the flow
-
-You can activate alerts for a series of events. For each alert you should enter a message that will
-be attached to the person setting off the event. The different available events on the partner form
-are:
-
-* Entering a customer order for the partner,
-
-* Entering a supplier order for the partner,
-
-* Sending a delivery to the partner (or receiving an item),
-
-* Invoicing a partner.
-
-The alerts that can be configured on a product form are:
-
-* The sale of that product,
-
-* The purchase of that product.
+* Create a warning when invoicing a partner.
 
 For example, if you enter an alert for the invoicing of a customer, for an accountant entering an
 invoice for that customer, the alert message will be attached as shown in the figure :ref:`fig-warnsmp`:
@@ -57,6 +48,19 @@ invoice for that customer, the alert message will be attached as shown in the fi
    :align: center
 
    *Alert from invoicing a customer*
+
+   *Management of alerts on products*
+
+.. figure:: images/warning_product.png
+   :scale: 75
+   :align: center
+
+The alerts that can be configured on a product form are related to:
+
+* The sales of that product,
+
+* The purchase of that product.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

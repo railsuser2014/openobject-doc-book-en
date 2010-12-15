@@ -8,7 +8,7 @@ Management of Carriers
    single: module; delivery
    single: module; profile_manfuacturing
 
-To manage deliveries in Open ERP, install the :mod:`delivery` module.
+To manage deliveries in OpenERP, install the :mod:`delivery` module.
 This module enables you to manage:
 
 * the different carriers with whom you work,
