@@ -77,19 +77,14 @@ a positive sign for a cash payment or deposit.
 .. todo:: really?
 
 When the payment entry has been made you can reconcile this directly with the accounting
-entry for the invoices. Press the :kbd:`Ctrl` key on the keyboard (necessary for the web client, though
-not the GTK client) and then press the :kbd:`<F1>` key while your cursor is in the
-:guilabel:`Reconcile` field on the payment line.
+entry for the invoices. Click on the button `Import Invoices` then you can select the invoices for
+which your payment will have been reconciled.
 
 .. figure::  images/account_statement_reconcile.png
    :scale: 50
    :align: center
 
    *Reconciliation from data entry of the bank statement*
-
-The reconciliation form then appears. To the right you will find the amount for payment. You must then
-select the invoices paid by this transaction (Entries). To enable you to reconcile this the amount
-of payment must correspond exactly with one or several due dates of invoice.
 
 .. note::  Reconciliation
 
@@ -193,7 +188,7 @@ Fill these fields manually in this order:
 *  :guilabel:`Credit` : \ ``1196``\  .
 
 Press the :guilabel:`Enter` key on your keyboard to validate this first line. The next sequence number is
-assigned to your accounting entry. Your line is then colored red and takes the \ ``Draft``\   state.
+assigned to your accounting entry. Your line is then colored red and takes the \ ``Unbalanced``\   state.
 When a line is in the draft state then it is not yet reflected in the accounts. Open ERP will not
 validate that line until the balancing entry is made (so the credit amounts must balance the debit
 amounts for that set of entries).
@@ -204,9 +199,7 @@ proposes taxes associated with the amount entered. At this stage you can modify 
 second line of the account, or replace it with other information such as a second purchase line.
 
 When you have entered all of the data from your lines, Open ERP automatically proposes counterpart
-entries to you, based on the credit entries. If you validate it, the accounting entries are all
-matched together and the lines move from the \ ``Draft``\   state (red) to the \ ``Open``\   state
-(black).
+entries to you, based on the credit entries.
 
 .. tip:: Completing a balancing entry
 
@@ -243,6 +236,7 @@ reconcilable (the :guilabel:`Reconcile`  field).
 	The first consists of linking account entries with each other, while the second consists of
 	verifying
 	that your bank statement corresponds with the entries of that account in your accounting system.
+	You can perform this using menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Statements Reconciliation`.
 
 There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
@@ -341,19 +335,13 @@ button to reconcile the entries.
 
 	               *Unreconciled accounting entries*
 
-			You see an invoice for 1900 and a payment two weeks later of 1900 with the same reference. You
-			can select the two lines in that view. The total at the bottom of the page shows you that the
-			credit amount equals the debit amount for the selected line. Click :guilabel:`Reconcile Entries`
-			to reconcile the two lines.
 
-			After this these lines can not be selected and will not appear when the entries are listed again. If
+			After running the `Reconcile Entries` wizard, this these lines can not be selected and will not appear when the entries are listed again. If
 			there is a difference between the two entries, Open ERP suggests that you make an adjustment.
 			This adjustment is a compensating entry that enables a complete reconciliation. You must
 			therefore specify the journal and the account to be used for the adjustment.
 
 For example, if you want to reconcile the following entries:
-
-
 
 .. csv-table:: Entries for reconciliation
    :header: "Date","Ref.","Description","Account","Debit","Credit"
