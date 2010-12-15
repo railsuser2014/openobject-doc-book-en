@@ -13,11 +13,11 @@ This module enables you to manage:
 
 * the different carriers with whom you work,
 
-* the different possible modes of transport,
+* the different transport methods,
 
 * cost calculation and invoicing of each delivery,
 
-* the modes of transport and their tariffs.
+* the transport methods and their tariffs.
 
 Once the :mod:`delivery` module has been installed, the first thing to do is to configure the different
 modes of delivery accepted by your company. To do that use the menu :menuselection:`Warehouse
