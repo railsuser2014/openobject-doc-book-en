@@ -376,8 +376,8 @@ will then be automatically marked as paid.
    single: payments
 ..
 
-Management of payments
-======================
+Payment Management
+==================
 
 Open ERP gives you forms for preparing, validating and executing payment orders. This enables you
 to manage issues such as:
@@ -395,14 +395,14 @@ to manage issues such as:
 
 	#.	Splitting payments dependent on the balances available in your various bank accounts.
 
-Process for managing payment orders
+How to manage your Payment Orders?
 -----------------------------------
 
 .. index::
    single: module; account_payment
 
 To use the tool for managing payments you must first install the module :mod:`account_payment`.
-It's part of the core Open ERP system.
+It is part of the core Open ERP system.
 
 The system lets you enter a series of payments to be carried out from your various bank
 accounts. Once the different payments have been registered you can validate the payment orders.
@@ -411,13 +411,13 @@ for electronic funds transfer or just printing cheques as you wish.
 
 For example if you have to pay a supplier's invoice for a large amount you can split the payments
 amongst several bank accounts according to their available balance. To do this you can prepare
-several Draft orders and validate them once you're satisfied that the split is correct.
+several Draft orders and validate them once you are satisfied that the split is correct.
 
 This process can also be regularly scheduled. In some companies, a payment order is kept in Draft
-state and payments are added to the draft list each day. At the end of the week it's an accountant's
+state and payments are added to the draft list each day. At the end of the week it is an accountant's
 job to work on all of the waiting payment orders.
 
-Once the payment order is confirmed there's still a validation step for an accountant to carry out.
+Once the payment order is confirmed there is still a validation step for an accountant to carry out.
 You could imagine that these orders would be prepared by an accounts clerk, and then approved by a
 manager to go ahead with payment.
 
@@ -427,7 +427,7 @@ manager to go ahead with payment.
 .. tip:: Payment Workflow
 
 	An Open ERP workflow is associated with each payment order. Select a payment order and
-	if you're in the GTK client
+	if you are in the GTK client
 	click :menuselection:`Plugins --> Print workflow` from the top menu.
 
 	You can integrate more complex workflow rules to manage payment orders by adapting the workflow.
@@ -444,15 +444,14 @@ When the accounting manager validates the document, Open ERP generates a bankin
 payment orders. You can then just send the file over your electronic connection with your bank to
 execute all your payments.
 
-In small businesses it's usually the same person who enters the payment orders and who validates
+In small businesses it is usually the same person who enters the payment orders and who validates
 them. In this case you should just click the two buttons, one after the other, to confirm the
 payment.
 
-Preparation and execution of orders
------------------------------------
+Prepare and Transfer Orders
+---------------------------
 
-To enter a payment order, use the menu :menuselection:`Financial Management --> Payment --> Payment
-Orders --> New Payment Order`.
+To enter a payment order, use the menu :menuselection:`Accounting --> Payment --> Payment Orders`.
 
 .. figure::  images/account_payment_order.png
    :align: center
@@ -463,9 +462,8 @@ Orders --> New Payment Order`.
 Open ERP then proposes a reference number for your payment order.
 
 You then have to choose a payment mode from the various methods available to your company. These
-have to be configured when you set the accounting system up using menus :menuselection:`Financial
-Management --> Configuration --> Payment Type` and :menuselection:`Financial Management -->
-Configuration --> Payment Mode`. Some examples are:
+have to be configured when you set the accounting system up using menu :menuselection:`Accounting -->
+Configuration --> Miscellaneous --> Payment Mode`. Some examples are:
 
 * Cheques
 
@@ -489,8 +487,8 @@ interfaces enable you to select a future execution date for each operation. So t
 Open ERP most simply you can choose to pay all invoices automatically by their deadline.
 
 You must then select the invoices to pay. They can be manually entered in the field
-:guilabel:`Payment Line` but it's easier to add them automatically. For that, click :guilabel:`Add
-payment lines` and Open ERP will then propose lines with payment deadlines. For each deadline you
+:guilabel:`Payment Line` but it is easier to add them automatically. For that, click :guilabel:`Select Invoices to Pay`
+and Open ERP will then propose lines with payment deadlines. For each deadline you
 can see:
 
 * the invoice :guilabel:`Effective date`,
@@ -503,7 +501,7 @@ can see:
 
 * the amount to be paid in the currency of the invoice.
 
-You can then accept the payment proposed by Open ERP or select the entries that you'll pay or not
+You can then accept the payment proposed by Open ERP or select the entries that you will pay or not
 pay on that order. Open ERP gives you all the necessary information to make a payment decision for
 each line item:
 
@@ -529,12 +527,12 @@ visibility of all the company's trade payables. You can pay only a part of an in
 and in preparing your next payment order Open ERP automatically suggests payment of the remainder
 owed.
 
-When the payment has been prepared correctly, click :guilabel:`Confirm`. The payment then changes to
-the \ ``Open``\   state and a new button appears that can be used to start the payment process.
+When the payment has been prepared correctly, click :guilabel:`Confirm Payments`. The payment then changes to
+the \ ``Confirmed``\   state and a new button appears that can be used to start the payment process.
 Depending on the chosen payment method, Open ERP provides a file containing all of the payment
 orders. You can send this to the bank to make the payment transfers.
 
-In future versions of Open ERP it's expected that the system will be able to prepare and print
+In future versions of Open ERP it is expected that the system will be able to prepare and print
 cheques.
 
 As usual, you can change the

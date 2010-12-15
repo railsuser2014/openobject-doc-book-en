@@ -6,11 +6,12 @@ Supplier relationship management
    single: module; crm_configuration
    single: module; crm
 
-To manage supplier relations, you should install the :mod:`crm_configuration` module. You will then be
+To manage supplier relations, you should install the :mod:`crm_claim` module. You will then be
 able to manage supplier complaints and integrate them with your emails and document management.
 
-Once you've installed the :mod:`crm` module, check the checkbox by the :guilabel:`Complaints` option
-during configuration. Open ERP will then create a menu in your working database for managing supplier complaints.
+To do that, use the :guilabel:`Reconfigure` wizard. Ensure :guilabel:`Customer Relationship Management` is installed.
+Once you have installed the :mod:`crm` module, check the checkbox by the :guilabel:`Claims` option
+during configuration. OpenERP will then create a menu in your working database for managing supplier complaints.
 
 .. figure:: images/crm_config.png
    :scale: 75
@@ -18,8 +19,8 @@ during configuration. Open ERP will then create a menu in your working database 
 
    *Selection of the management of complaints in the CRM installation*
 
-Once the module is installed you can use the menu :menuselection:`CRM & SRM --> After Sales Service
---> Complaints --> New Supplier Complaint`.
+Once the module is installed you can use the menu :menuselection:`Sales --> After-Sales Services
+--> Claims`.
 
 .. figure:: images/crm_complaints.png
    :scale: 75
@@ -27,7 +28,8 @@ Once the module is installed you can use the menu :menuselection:`CRM & SRM --> 
 
    *Data entry screen for a supplier complaint*
 
-The CRM module has many reports predefined. You can analyse:
+The CRM module has many reports predefined. Through the menu :menuselection:`Sales --> Reporting
+--> Claims Analysis` you can analyse:
 
 * the number and the severity of the complaints by supplier or user,
 

@@ -26,7 +26,6 @@ and no particular chart of accounts configured.
 
    6_17_Purchases_workflow
    6_17_Purchases_analysis
-   6_17_Purchases_srm
    6_17_Purchases_analytic
 
 .. raw:: html

@@ -5,15 +5,15 @@ Analytic accounts
 To manage purchases by project you should use the analytic accounts. 
 You can set an analytic account on each line of a supplier order. 
 The analytic costs linked to this purchase will be managed
-by Open ERP from the goods receipt and confirmation of the supplier invoice.
+by OpenERP from the goods receipt and confirmation of the supplier invoice.
 
 .. index::
    single: module; hr_timesheet_invoice
 
-The :mod:`hr_timesheet_invoice` module lets you reinvoice the analytic costs automatically using
+The :mod:`hr_timesheet_invoice` module lets you re-invoice the analytic costs automatically using
 parameters in the analytic accounts such as sale pricelist, associated partner company, and maximum amount.
 
-So you can put an invoice order with a defined invoice workflow in place based on the analytic accounts. If you're
+So you can put an invoice order with a defined invoice workflow in place based on the analytic accounts. If you are
 working ``Make to Order``, the workflow will be:
 
 #. Customer Order,
@@ -24,7 +24,7 @@ working ``Make to Order``, the workflow will be:
 
 #. Delivery and invoicing to the customer.
 
-When re-invoicing based on costs you'd get the following workflow:
+When re-invoicing based on costs you would get the following workflow:
 
 #. Enter the customer contract conditions from the analytic accounts,
 
