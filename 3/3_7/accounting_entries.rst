@@ -169,14 +169,11 @@ Invoices and statements produce accounting entries in different journals. But yo
 create entries directly in a journal without using the forms to help you. This functionality is
 often used for various entry transactions.
 
-To do this, use the following menu :menuselection:`Financial Management --> Entries Encoding -->
-Entries Encoding by Line`.
+To do this, use the following menu :menuselection:`Accounting --> Journal Entries -->
+Journal Items`.
 
-Select the journal and the accounting period. A window opens, enabling you to enter the accounting
-data in an editable list. You can then enter data from a supplier invoice.
-
-As you'll recall, these entries are usually generated automatically by Open ERP. If you haven't
-created an invoice you'll have to enter values manually.
+As you will recall, these entries are usually generated automatically by Open ERP. If you have not
+created an invoice you will have to enter values manually.
 
 Fill these fields manually in this order:
 
@@ -197,7 +194,7 @@ Fill these fields manually in this order:
 
 Press the :guilabel:`Enter` key on your keyboard to validate this first line. The next sequence number is
 assigned to your accounting entry. Your line is then colored red and takes the \ ``Draft``\   state.
-When a line is in the draft state then it's not yet reflected in the accounts. Open ERP won't
+When a line is in the draft state then it is not yet reflected in the accounts. Open ERP will not
 validate that line until the balancing entry is made (so the credit amounts must balance the debit
 amounts for that set of entries).
 
@@ -206,7 +203,7 @@ case account \ ``600``\  ) includes taxes by default in its definition Open ERP
 proposes taxes associated with the amount entered. At this stage you can modify and validate this
 second line of the account, or replace it with other information such as a second purchase line.
 
-When you've entered all of the data from your lines, Open ERP automatically proposes counterpart
+When you have entered all of the data from your lines, Open ERP automatically proposes counterpart
 entries to you, based on the credit entries. If you validate it, the accounting entries are all
 matched together and the lines move from the \ ``Draft``\   state (red) to the \ ``Open``\   state
 (black).
@@ -217,16 +214,16 @@ matched together and the lines move from the \ ``Draft``\   state (red) to the \
 	prepares to enter the next data.
 
 	If you want to add some other balancing lines you can enter the number of the entry on the new line
-	that you're entering.
+	that you are entering.
 	In such a case the whole line stays at Draft until the whole set balances to zero.
 
-Process of reconciliation
--------------------------
+Reconciliation Process
+----------------------
 
 The reconciliation operation consists of matching entries in different accounts to indicate that
 they are related. Generally reconciliation is used for:
 
-* matching invoice entries to payments so that invoices are marked as paid and customers don't get
+* matching invoice entries to payments so that invoices are marked as paid and customers do not get
   payment reminder letters (reconciliation in a customer account),
 
 * matching deposits and cheque withdrawals with their respective payments,
@@ -239,25 +236,25 @@ sum of credits equals the sum of the debits for the matched entries.
 Reconciliation in Open ERP can only be carried out in accounts that have been configured as
 reconcilable (the :guilabel:`Reconcile`  field).
 
-.. tip:: Don't confuse: **account** reconciliation and **bank statement** reconciliation
+.. tip:: Do not confuse: **account** reconciliation and **bank statement** reconciliation
 
-	It's important not to confuse the reconciliation of accounting entries with bank statement
+	It is important not to confuse the reconciliation of accounting entries with bank statement
 	reconciliation.
 	The first consists of linking account entries with each other, while the second consists of
 	verifying
 	that your bank statement corresponds with the entries of that account in your accounting system.
 
-There are different methods of reconciling entries. You've already seen the reconciliation of
+There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
 here.
 
 .. index::
    single: reconciliation; automatic
 
-Automatic reconciliation
+Automatic Reconciliation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-For automatic reconciliation, you'll be asking Open ERP to make its own search for entries to
+For automatic reconciliation, you will be asking Open ERP to make its own search for entries to
 reconcile in a series of accounts. It tries to find entries for each partner where the amounts
 correspond.
 
@@ -271,8 +268,8 @@ Open ERP will reconcile three invoices and two payments if the total amounts co
 
    *Form for automatic reconciliation*
 
-To start the reconciliation tool, click :menuselection:`Financial management --> Periodical
-Processing --> Reconciliation --> Automatic Reconciliation`.
+To start the reconciliation tool, click :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
+
 
 A form opens, asking you for the following information:
 
@@ -292,7 +289,7 @@ A form opens, asking you for the following information:
 
 	* all the Accounts Payable – your supplier accounts of type Creditor.
 
-The adjustment option enables you to reconcile entries even if their amounts aren't exactly
+The adjustment option enables you to reconcile entries even if their amounts are not exactly
 equivalent. For example, Open ERP permits foreign customers whose accounts are in different
 currencies to have a difference of up to, say, 0.50 units of currency and put the difference in a write-
 off account.
@@ -302,7 +299,7 @@ off account.
 
 .. tip:: Limit write-off adjustments
 
-	You shouldn't make the adjustment limits too large. Companies that introduced substantial automatic
+	You should not make the adjustment limits too large. Companies that introduced substantial automatic
 	write-off adjustments have found that all employee expense reimbursements below the limit were
 	written off automatically!
 
@@ -312,17 +309,16 @@ off account.
 	field by pressing the :kbd:`Ctrl` key and using the right-click mouse button
 	(when the form is in edit mode using the web client), or just right-click using the GTK client.
 	The resulting context menu enables you to set default values.
-	This means that you won't have to re-type all the fields each time.
+	This means that you will not have to re-type all the fields each time.
 
 .. index::
    single: reconciliation; manual
 
-Manual reconciliation
+Manual Reconciliation
 ^^^^^^^^^^^^^^^^^^^^^
 
-For manual reconciliation, open the entries for reconciling an account through the menu
-:menuselection:`Financial Management --> Periodical Processing --> Reconciliation -->
-Reconcile Entries`. You can also call up manual reconciliation from any screen that shows accounting
+For manual reconciliation, open the entries for reconciling an account through the menu :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Manual Reconciliation`.
+You can also call up manual reconciliation from any screen that shows accounting
 entries.
 
 .. todo:: is that right?
@@ -333,7 +329,7 @@ button to reconcile the entries.
 
 	.. note::  *Example Real case of using reconciliation*
 
-			Suppose that you're entering customer order details. You ask “what's outstanding on the
+			Suppose that you are entering customer order details. You ask “what is outstanding on the
 			customer account ?” (that is the list of unpaid invoices and unreconciled payments). To review
 			it from the order form, navigate to the :guilabel:`Partner` record and select
 			the view :guilabel:`Receivables and Payables`. Open ERP opens a history of unreconciled accounting entries
@@ -341,7 +337,7 @@ button to reconcile the entries.
 
 	            .. figure::  images/account_sample2_entries.png
 	               :align: center
-	               :scale: 80
+	               :scale: 50
 
 	               *Unreconciled accounting entries*
 
@@ -350,8 +346,8 @@ button to reconcile the entries.
 			credit amount equals the debit amount for the selected line. Click :guilabel:`Reconcile Entries`
 			to reconcile the two lines.
 
-			After this these lines can't be selected and won't appear when the entries are listed again. If
-			there's a difference between the two entries, Open ERP suggests that you make an adjustment.
+			After this these lines can not be selected and will not appear when the entries are listed again. If
+			there is a difference between the two entries, Open ERP suggests that you make an adjustment.
 			This adjustment is a compensating entry that enables a complete reconciliation. You must
 			therefore specify the journal and the account to be used for the adjustment.
 
@@ -369,7 +365,7 @@ For example, if you want to reconcile the following entries:
 
 On reconciliation, Open ERP shows a difference of 0.50. At this stage you have two possibilities:
 
-* don't reconcile, and the customer receives a request for 0.50,
+* do not reconcile, and the customer receives a request for 0.50,
 
 * reconcile and accept an adjustment of 0.50 that you will take from the P&L account.
 
