@@ -1,5 +1,5 @@
 
-Open orders
+Open Orders
 ===========
 
 .. index::
@@ -7,33 +7,33 @@ Open orders
 
 In some industries, customers commonly place orders for a certain volume of product and ask for regular
 deliveries from an order up to the total amount on it. This principle, called open orders, is managed
-by the :mod:`sale_delivery` module in Open ERP.
+by the :mod:`sale_delivery` module in OpenERP.
 
-Open ERP handles open orders easily. An open order is an order for a
+OpenERP handles open orders easily. An open order is an order for a
 certain quantity of products but whose deliveries are planned for various dates over a period of
 time.
 
-To do that you must install the :mod:`sale_delivery` module (in ``addons-extra`` at the time of writing). 
+To do that you must install the :mod:`sale_delivery` module (in ``extra-addons`` at the time of writing). 
 A Sales Order is entered as a normal order
 but you also set the total quantity that will be delivered on each order line.
 
 Then you can use the new tab :guilabel:`Deliveries` on the order to plan the quantities sold and enter your
 delivery planning there.
 
-.. figure:: images/sale_delivery.png
+.. figure:: images/sale_delivery_form.png
    :scale: 75
    :align: center
 
    *Managing open orders, planning forecasts*
 
-In the order lines, Open ERP shows you the quantity planned in addition to the quantity sold so you
+In the order lines, OpenERP shows you the quantity planned in addition to the quantity sold so you
 can verify that the quantities sold equal the quantities to be delivered. When you confirm the
-order, Open ERP no longer generates a single delivery order but plans scheduled despatches.
+order, OpenERP no longer generates a single delivery order but plans scheduled despatches.
 
 .. tip:: Invoicing Mode
 
-   If you work with Open Orders, you should set the order into the mode :guilabel:`Invoice from the Packing`.
-   Then the storesperson will be able to replan and change the quantities of the forecast deliveries
+   If you work with Open Orders, you should set :guilabel:`Invoice Control` to the mode :guilabel:`Shipped Quantities`.
+   Then the storesperson will be able to re-plan and change the quantities of the forecast deliveries
    in the system.
 
 .. Copyright © Open Object Press. All rights reserved.
