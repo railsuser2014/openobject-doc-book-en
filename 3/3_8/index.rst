@@ -22,7 +22,7 @@ indicators.
 To bring you the most accurate picture of your business, Open ERP's different accounting reports
 are flexible, and the results are calculated in real time. This enables you to automate recurring
 actions and to change your operations quickly when a company-wide problem (such cash reserves
-dropping too low, or receivables climbing too high) or a local problem (a client that hasn't paid,
+dropping too low, or receivables climbing too high) or a local problem (a client that has not paid,
 or a project budget overspend) occurs.
 
 So this chapter describes the various reports and financial statements supplied by Open ERP's
@@ -30,7 +30,7 @@ accounting modules. It also describes how Open ERP handles purchase and sales t
 reporting of taxation.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 

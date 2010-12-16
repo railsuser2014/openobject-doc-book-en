@@ -5,10 +5,10 @@
    single: creditor
    single: debtor
 
-Managing accounts payable / creditors and accounts receivable / debtors
-=======================================================================
+Reporting
+=========
 
-Open ERP provides many tools for managing customer and supplier accounts. You'll see here:
+Open ERP provides many tools for managing customer and supplier accounts. You will see here:
 
 * financial analysis of partners, to understand the reports that enable you to carry out an analysis
   of all of your partners,
@@ -18,7 +18,7 @@ Open ERP provides many tools for managing customer and supplier accounts. You'l
 
 * detailed analysis of individual partners.
 
-Financial analysis of partners
+Financial Analysis of Partners
 ------------------------------
 
 .. index::
@@ -27,10 +27,10 @@ Financial analysis of partners
 
 When members of your accounts department sign on to the Open ERP system, they can immediately be
 presented with the :guilabel:`Accounting Dashboard`. By default it contains a useful graph for analyzing
-Receivables. To get access to it, install the module :mod:`board_account`. Then look at it using
-the menu :menuselection:`Dashboards --> Accounting --> Accounting Dashboard`.
+Receivables. Then look at it using
+the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
 
-.. figure::  images/account _board.png
+.. figure::  images/account_board.png
    :scale: 50
    :align: center
 
@@ -48,7 +48,7 @@ to open in a larger window for a graph, then click :guilabel:`Search` to display
 view.
 
 To obtain a more detailed report of the aged balance (or order by past date) use the menu
-:menuselection:`Finance --> Accounting --> Reporting --> Partner Accounts --> Aged Partner balance`.
+:menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Aged Partner Balance`.
 
 .. figure::  images/account_balance.png
    :scale: 50
@@ -62,7 +62,7 @@ period. So if you request an interval of 30 days Open ERP generates an analysis
 the past month, past two months, and so on.
 
 For an analysis by partner you can use the partner balance that you get through the menu
-:menuselection:`Financial Management --> Reporting --> Partner Accounts --> Partner balance`. The
+:menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Balance`. The
 system then supplies you with a PDF report containing one line per partner representing the
 cumulative credit balance.
 
@@ -75,7 +75,7 @@ cumulative credit balance.
 .. index:: ledger
 
 If you want detailed information about a partner you can use the partner ledgers that you reach
-through the menu :menuselection:`Financial Management --> Reporting --> Partner Accounts --> Partner
+through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner
 Ledger`.
 
 .. figure::  images/account_partner_ledger.png
@@ -87,24 +87,14 @@ Ledger`.
 Finally you can look up individual account entries by searching for useful information. To search
 for account entries:
 
-* by journal, go through the menu :menuselection:`Financial Management --> Entries Encoding --> 
-  Entries Encoding by Line`,
-
-* by account, go through the menu :menuselection:`Financial Management --> Charts --> Chart of
-  Accounts` and double-click the appropriate account,
-
-* by making a global search, go through the menu :menuselection:`Financial Management --> Entries Encoding
-  --> Entries Encoding by Move` and searching,
-
-* by partner, do it by navigating from a :guilabel:`Partner` field in any form that shows it to the partner then 
-  using the buttons to the right of the partner form.
+You can use the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Entries Analysis`.
 
 .. tip:: Exporting entries
 
-	It's helpful to remember that you can export all types of resource in Open ERP.
+	It is helpful to remember that you can export all types of resource in Open ERP.
 	From the web client you need to navigate to a search list for the resource then click
 	the :guilabel:`Export` link at the bottom left of the list.
-	From the GTK client you'd use the menu :menuselection:`Form --> Export`.
+	From the GTK client you would use the menu :menuselection:`Form --> Export data`.
 	This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc,
 	by exporting accounting entries.
 
@@ -113,15 +103,14 @@ for account entries:
    single: reminder
    single: module; account_followup
 
-Multi-step follow-ups
+Multi-step Reminders
 ---------------------
 
-To automate the management of followups (reminders) you must install the module 
-:mod:`account_followup`. This is installed automatically as part of the accounting profile, but is
-not part of the other profiles. Or you can install it alone.
+To automate the management of followups (reminders) you must install the module
+:mod:`account_followup`.
 
 Once the module is installed configure your levels of followup using the menu
-:menuselection:`Financial Management --> Configuration --> Follow-Ups`.
+:menuselection:`Accounting --> Configuration --> Miscellaneous --> Follow-Ups`.
 
 The levels of follow-up are relative to the date of creation of an invoice and not the due date.
 This enables you to put payment conditions such as 'payable in 21 days' and send a reminder in 30
@@ -135,12 +124,12 @@ added into the reminder letter. The sequence determines the order of the level i
    :header: "Sequence","Level","Days","Description"
    :widths: 5, 5, 15, 15
 
-   "1","Level 1","30 days net","First payment reminder"
-   "2","Level 2","45 days net","Second reminder"
-   "3","Level 3","60 days from end of month","Put on notice"
+   "1","Level 1","15 days net","First payment reminder"
+   "2","Level 2","30 days net","Second reminder"
+   "3","Level 3","45 days from end of month","Put on notice"
 
-You can send your reminders by mail and/or email with the menu :menuselection:`Financial Management
---> Periodical Processing --> Send followups`.
+You can send your reminders by mail and/or email with the menu :menuselection:`Accounting
+--> Periodical Processing --> Billing --> Send followups`.
 
 .. figure::  images/account_followup_wizard.png
    :scale: 50
@@ -149,20 +138,18 @@ You can send your reminders by mail and/or email with the menu :menuselection:`F
    *Form for preparing follow-up letters*
 
 Open ERP presents you with a list of partners who are due reminders, which you can modify before
-starting the procedure. On the second tab of the form you can supply the information you'll send in
+starting the procedure. On the second tab of the form you can supply the information you will send in
 the email reminder.
 
 The system then gives you a PDF report with all of the reminder letters for each partner. Each
-letter is produced in the language of the partner (if that's available) and you can therefore get
+letter is produced in the language of the partner (if that is available) and you can therefore get
 letters in several languages in the same PDF on several pages.
 
-To check the due date of customers and/or suppliers before starting the reminder procedure, use
-the menu :menuselection:`Financial Management --> Periodical Processing --> Send followups`. 
+You should check the due date of customers and/or suppliers before starting the reminder procedure.
 You get a list of unreconciled entries accounts. You can then modify
 the date and the last follow-up and the level of reminder for each entry.
 
-To obtain a detailed report per partner use the menus in :menuselection:`Financial Management -->
-Reporting --> Follow-Ups`.
+To obtain a detailed statastical report of dent follow-ups use the menus in :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Follow-ups Sent`.
 
 The different reports are standard Open ERP screens, so you can filter them and explore the elements
 in detail.
@@ -176,8 +163,8 @@ in detail.
 .. index::
    single: overdue payments
 
-Partner situation
------------------
+Partner Information
+-------------------
 
 In daily use of Open ERP a manager will often need to search quickly for financial
 information amongst partner data. For this she can use the buttons to the right of form when she
@@ -187,7 +174,7 @@ opens a partner form, to go directly to:
 
 * the list of open :guilabel:`Invoices`,
 
-* a shortcut to :guilabel:`All account entries`,
+* a shortcut to :guilabel:`Journal Items`,
 
 * the unclosed CRM requests from :guilabel:`Open cases`,
 
@@ -199,14 +186,14 @@ These links are also available to her using the navigation features such as righ
 fields in the GTK client.
 
 The :guilabel:`Overdue payments` report produces a PDF document which is used for follow-up but it
-doesn't modify any of the partner's accounting entries. Its use doesn't increase the follow-up
+does not modify any of the partner's accounting entries. Its use does not increase the follow-up
 level so you can run this report repeatedly without any problem.
 
 In Open ERP you can search for a partner on the basis of the value of its trade receivables. So
-search for partners with a credit amount between 1 and 99999999 and you'll get a list of partners
+search for partners with a credit amount between 1 and 99999999 and you will get a list of partners
 that owe you payment. You can then select the whole list and print follow-up letters for them all.
 
-To the right of the partner form there's a shortcut to :guilabel:`Invoices`. This link includes
+To the right of the partner form there is a shortcut to :guilabel:`Invoices`. This link includes
 all of the invoices defined in the systems, namely:
 
 * customer invoices,
@@ -222,18 +209,18 @@ all of the invoices defined in the systems, namely:
 	Companies that do not have computerized records tend to keep track of payments from invoices and
 	paperwork and not from a formal partner account.
 
-	It's better to create reminder letters from a partner's account receivable than from unpaid bills,
+	It is better to create reminder letters from a partner's account receivable than from unpaid bills,
 	however.
 	By using the Open ERP system you can easily take account of all advances, unreconciled payments,
 	credit notes and credit payments.
 
-	So it's better to send a letter based on the accounting entries of invoices and unreconciled
+	So it is better to send a letter based on the accounting entries of invoices and unreconciled
 	payments than just on a list of unpaid invoices.
 
 In the links appearing on the partner form, two buttons enable the opening of partner accounting
 entries:
 
-*  :guilabel:`All account entries`,
+*  :guilabel:`Journal Items`,
 
 *  :guilabel:`Receivables & Payables`.
 
