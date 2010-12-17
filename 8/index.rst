@@ -5,7 +5,7 @@
 System Administration and Implementation
 ########################################
 
- After you've tested and evaluated Open ERP, you'll need to configure it to match the software to your company's needs.
+ After you have tested and evaluated Open ERP, you will need to configure it to match the software to your company's needs.
  Its flexibility enables you to configure the different modules, adapting them to your industry or sector of activity.
 
  Designed for ERP project managers, this section deals with the administration and configuration of the system, 

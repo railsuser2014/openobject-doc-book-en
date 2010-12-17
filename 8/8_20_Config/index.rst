@@ -10,7 +10,7 @@ Configuration & Administration
 ******************************
 
  *This chapter is for the administrators of an Open ERP system.
- You'll learn to configure Open ERP to match it to your company's needs and
+ You will learn to configure Open ERP to match it to your company's needs and
  those of each individual user of the system.*
 
 Open ERP gives you great flexibility in configuring and using it, letting you modify
@@ -24,12 +24,9 @@ most up to date information. Then they can immediately see the information most 
 each time they sign in.
 
 And Open ERP's main menu can be entirely reorganized. The management of access rights lets you
-assign certain functions to specific system users. You can also assign roles, which define the part
-that each system user plays in the workflows that move system documents from state to state (such as
+assign certain functions to specific system users. You can also assign groups to the user,
+which lets him move system documents from state to state (such as
 the ability to approve employee expense requests).
-
-For this chapter you should start with a fresh database that includes demonstration data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
 
 .. index::
    single: configuration
@@ -39,7 +36,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
    single: configuration; setup
 ..
 
-.. note:: Configuration, Parameterization, Personalization, Customization
+.. note:: Configuration, Parametrization, Personalization, Customization
 
 	The word *personalization* is sometimes used in this book where you might expect to find
 	*configuration* or *customization*.
@@ -47,21 +44,21 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 	*Customization* generally refers to something that requires a bit of technical effort
 	(such as creating specialized code modules) and creates a non-standard system.
 
-	*Configuration* is less radical – it's the general process of setting all
-	the parameters of the software to fit the needs of your system (often called *parameterization* or *setup*).
+	*Configuration* is less radical – it is the general process of setting all
+	the parameters of the software to fit the needs of your system (often called *parametrization* or *setup*).
 	Configuration is also, by convention, the name of the sub-menu below each of Open ERP's top-level menus that
 	is accessible only to the administrative user for that section.
 
 	*Personalization* is just that subset of configuration options that shapes the system to the
 	particular operational and/or stylistic wishes of a person or company.
 
-Using the *OpenOffice.org Report Designer* module you can change any part of any of the reports
+Using the *OpenOffice Report Designer* module you can change any part of any of the reports
 produced by the system. The system administrator can configure each report to modify its layout and
-style, or even the data that's provided there.
+style, or even the data that is provided there.
 
-.. note::  The OpenOffice.org Report Editor
+.. note::  The OpenOffice Report Designer
 
-	The OpenOffice.org plug-in enables you not only to configure the reports of the basic products in
+	The OpenOffice Report Designer plug-in enables you not only to configure the reports of the basic products in
 	Open ERP but also to create entirely new report templates.
 	When the user uses Open ERP's client interface, OpenOffice can create a report template 
 	that has access to all the data available to any Open ERP document type.
@@ -70,7 +67,7 @@ style, or even the data that's provided there.
 	This functionality enables you to considerably extend the productivity of your salespeople who have
 	to send many proposals to customers.
 
-Finally, you'll see how to import your data into Open ERP automatically, to migrate all of your
+Finally, you will see how to import your data into Open ERP automatically, to migrate all of your
 data in one single go.
 
 For this chapter you should start with a fresh database that includes demo data,
