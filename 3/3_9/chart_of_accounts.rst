@@ -10,16 +10,7 @@ Chart of Accounts
    single: modules; l10n_
    single: module; l10n_fr
 
-On installation, the software is given a default chart of accounts that's the same regardless of
-your country. To install the chart of accounts and tax definitions for your own country install the
-module :mod:`l10n_XX` where XX represents your country code in two letters. For example to get the
-chart of accounts for France install the module :mod:`l10n_fr`.
-
-Some of these pre-built modules are comprehensive and accurate, others have rather more tentative
-status and are simply indicators of the possibilities. You can modify these, or build your own
-accounts onto the default chart, or replace it entirely with a custom chart.
-
-You view active charts of accounts using the menu :menuselection:`Financial Management --> Charts
+You view active charts of accounts using the menu :menuselection:`Accounting --> Charts
 --> Charts of Accounts`, and :guilabel:`Open Charts` for the selected year and account moves.
 
 .. note:: Hierarchical charts
@@ -33,9 +24,9 @@ You view active charts of accounts using the menu :menuselection:`Financial Mana
 
 	* it simplifies searches semantically,
 
-	* it's more intuitive, because you can search for accounts on the basis of their classification,
+	* it is more intuitive, because you can search for accounts on the basis of their classification,
 
-	* it's flexible because you can easily restructure them.
+	* it is flexible because you can easily restructure them.
 
 The structure of the chart of accounts is hierarchical, with account subtotals called account views.
 You can develop a set of account views to contain only those elements that interest you.
@@ -45,21 +36,32 @@ account's :guilabel:`Code` (if you have no codes, you can select the line, then 
 to get the acount definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar).
 
 Displaying the chart of accounts can take several seconds because Open ERP calculates the debits,
-credits and balance for each account in real time. If you just want to work with a chart of accounts
-that has structure but shows no totals, use the function :menuselection:`Financial Management -->
-Charts --> Charts of Accounts --> Fast Charts of Accounts`.
+credits and balance for each account in real time.
 
-Creating a chart of accounts
+Using a Preconfigured Chart of Accounts
+---------------------------------------
+
+On installation, the software is given a default chart of accounts that is the same regardless of
+your country. To install the chart of accounts and tax definitions for your own country install the
+module :mod:`l10n_XX` where XX represents your country code in two letters. For example to get the
+chart of accounts for France install the module :mod:`l10n_fr`.
+
+Some of these pre-built modules are comprehensive and accurate, others have rather more tentative
+status and are simply indicators of the possibilities. You can modify these, or build your own
+accounts onto the default chart, or replace it entirely with a custom chart.
+
+
+Creating a Chart of Accounts
 ----------------------------
+
+To add, modify or delete existing accounts, use the menu :menuselection:`Accounting -->
+Configuration --> Financial Accounting --> Accounts --> Accounts`.
 
 .. figure::  images/account_form.png
    :scale: 50
    :align: center
 
    *Definition of an account*
-
-To add, modify or delete existing accounts, use the menu :menuselection:`Financial Management -->
-Configuration --> Financial Accounting --> Financial Accounts --> List of Accounts`.
 
 .. index::
    single: multi-lingual
@@ -77,21 +79,22 @@ Configuration --> Financial Accounting --> Financial Accounts --> List of Accoun
 
 The main account fields are:
 
-*  :guilabel:`Name` : Give the field a name.
-
-*  :guilabel:`Active` : if you deactivate an account (by unchecking the box) it will no longer be
-   visible in the chart of accounts but can be reactivated later. Only accounts which aren't needed for
-   account entries can be deactivated.
+*  :guilabel:`Name` : Gives the account a name.
 
 *  :guilabel:`Account Type` : account types determine an account's use in each journal.
-   By default the following types are available:
-   :guilabel:`View`,:guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
+   By default the following types are available
+   :guilabel:`View`, :guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
    :guilabel:`Expense`, :guilabel:`Tax`, :guilabel:`Cash`, :guilabel:`Asset`, :guilabel:`Equity`.
    You can add new types through the menu
-   :menuselection:`Financial Management -->
-   Configuration --> Financial Accounting --> Financial Accounts --> Account Types`.
+   :menuselection:`Accounting -->
+   Configuration --> Financial Accounting --> Accounts --> Account Types`.
    Use the :guilabel:`View` type for accounts that make up the structure of the charts and have no
    account data inputs of their own.
+
+*  :guilabel:`Internal Type` : internal types has special effects in OpenERP.
+   By default the following types are available
+   :guilabel:`View`, :guilabel:`Regular`, :guilabel:`Receivable`, :guilabel:`Payable`,
+   :guilabel:`Liquidity`, :guilabel:`Consolidation`, :guilabel:`Closed`.
 
 .. index::
    pair: account; type
@@ -102,26 +105,12 @@ The main account fields are:
 	The only two types that have any particular effect are :guilabel:`Receivables` and :guilabel:`Payables`.
 
 	These two types are used by reports on partner credits and debits.
-	They're calculated from the list of unreconciled entries in the accounts of one of these two types.
+	They are calculated from the list of unreconciled entries in the accounts of one of these two types.
 
-*  :guilabel:`Account Number` : the code length isn't limited to a specific number of digits. Use code 0 for
+*  :guilabel:`Code` : the code length is not limited to a specific number of digits. Use code 0 for
    all root accounts.
 
-*  :guilabel:`Currency` : the default currency for that account.
-
-*  :guilabel:`Deferral Method` : determines how to treat the account and its entries at the closing of the
-   books at the end of the year. Four methods are available:
-
-	- :guilabel:`Balance` : an entry is generated for the account balance and carried across to the new year
-	  (generally used for bank accounts),
-
-	- :guilabel:`None` : no accounting entries are transferred across to the new financial year (generally for
-	  classes 6 and 7),
-
-	- :guilabel:`Detail` : all entries are kept for the new fiscal year,
-
-	- :guilabel:`Unreconciled` : only unreconciled entries are carried over to the new fiscal year (usually used for
-	  third-party accounts).
+*  :guilabel:`Secondary Currency` : forces all the moves for this account to have this secondary currency.
 
 *  :guilabel:`Reconcile` : determines if you can reconcile the entries in this account. Activate this field
    for partner accounts and for chequing (checking) accounts.
@@ -140,11 +129,11 @@ year to reflect the reality of the company better.
    single: consolidation (accounting)
    pair: chart of accounts; virtual
 
-Using virtual charts of accounts
---------------------------------
+Virtual Charts of Accounts
+--------------------------
 
 The structure of a chart of accounts is imposed by the legislation in effect in the country of
-concern. Unfortunately that structure doesn't always correspond to the view that a company's CEO
+concern. Unfortunately that structure does not always correspond to the view that a company's CEO
 needs.
 
 In Open ERP you can use the concept of virtual charts of accounts to manage several different
@@ -168,7 +157,7 @@ from your consolidated accounts or from the accounts from one of your companies.
 	You can then use the virtual charts with no risk of altering the general chart of accounts or
 	future accounting entries.
 
-	Because they're used only to get different representation of the same entries they're very useful
+	Because they are used only to get different representation of the same entries they are very useful
 	for:
 
 	* consolidating several companies in real time,
@@ -185,16 +174,15 @@ from your consolidated accounts or from the accounts from one of your companies.
 	charts, such as budgets and financial indicators based on special views of the company.
 
 To create a new chart of accounts you should create a root account using the menu
-:menuselection:`Financial Management --> Configuration --> Financial Accounting --> Financial Accounts
---> List of Accounts`. Your top level account should have :guilabel:`Code` \ ``0``\   and :guilabel:`Type` \ ``View``\  . Then
+:menuselection:`Accounting -->
+Configuration --> Financial Accounting --> Accounts --> Accounts`. Your top level account should have :guilabel:`Code` \ ``0``\   and :guilabel:`Type` \ ``View``\  . Then
 you can choose your structure by creating other accounts of :guilabel:`Type` \ ``View``\   as necessary.
 Check your virtual structure using the menu :menuselection:`Financial Management --> Charts -->
 Charts of Accounts`.
 
 You have to set Internal Type = Consolidation and set Consolidated Children Accounts to make Account Consolidate.
-'virtual chart of accounts' was in 4.2 and here in 5.0 its Consolidation Account.
 
-Finally, when you've got your structure, you must make the general accounts and virtual accounts
+Finally, when you have got your structure, you must make the general accounts and virtual accounts
 match. For that search the general accounts and ensure that each non-\ ``View``\   account there
 also has a virtual account in the field :guilabel:`Parents`.
 

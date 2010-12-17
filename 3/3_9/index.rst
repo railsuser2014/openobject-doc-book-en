@@ -14,7 +14,7 @@ Configuring Accounts from A to Z
 
 Assuming that it calculates sufficiently accurately, the best accounting software would be marked out by
 its usability and simplicity of data entry, and flexibility in configuring its different components.
-You'd be able to easily modify the accounting module to meet your own needs so that you could
+You would be able to easily modify the accounting module to meet your own needs so that you could
 optimize it for the way you want to use it.
 
 Open ERP lets you adapt and reconfigure many functions to ease the task of data entry:
@@ -23,10 +23,10 @@ Open ERP lets you adapt and reconfigure many functions to ease the task of data
 
 * customizing the screens,
 
-* filling fields automatically during data entry with data that's already known to the system.
+* filling fields automatically during data entry with data that is already known to the system.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`sale` and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 
