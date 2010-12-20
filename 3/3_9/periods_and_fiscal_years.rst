@@ -1,11 +1,11 @@
 
-Periods and fiscal years
-========================
+Periods and Financial Years
+===========================
 
 .. note:: Periods and fiscal years
 
 	A fiscal year corresponds to twelve months for a company.
-	In many countries, the fiscal year corresponds to a calendar year. That's not the case in
+	In many countries, the fiscal year corresponds to a calendar year. That is not the case in
 	others.
 
 	The fiscal year is divided into monthly or three-monthly accounting periods.
@@ -17,10 +17,10 @@ statements straddling several calendar years.
 .. index:: period
 .. index:: fiscal year
 
-Defining a period or a fiscal year
-----------------------------------
+Defining a Period or a Financial Year
+-------------------------------------
 
-To define your fiscal year use the menu :menuselection:`Financial Management --> Configuration -->
+To define your fiscal year use the menu :menuselection:`Accounting --> Configuration -->
 Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
 .. figure::  images/account_period.png
@@ -37,16 +37,16 @@ periods click one of the two buttons at the bottom depending on whether you want
 
 *  :guilabel:`Create 3-monthly periods` .
 
-Closing the end of the year
----------------------------
+Closing a Financial Year
+------------------------
 
-To close the end the year, use the menu :menuselection:`Financial Management --> End of year
-processing --> Close a Fiscal Year`. A form opens asking you for the essential information it needs
-to create entries to start the following year.
+To close the end the year, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Fiscal Year`.
+A form opens asking you for the essential information it needs
+to close the following year.
 
 When the year is closed you can no longer create or modify any financial transactions in that year.
 So you should always make a backup of the database before closing the fiscal year. Closing a year
-isn't obligatory and you could easily do that sometime in the following year when your accounts are
+is not obligatory and you could easily do that sometime in the following year when your accounts are
 finally sent to the statutory authorities, and no further modifications are permitted.
 
 .. figure::  images/account_fy_close.png
@@ -55,10 +55,9 @@ finally sent to the statutory authorities, and no further modifications are perm
 
    *Closing a financial year*
 
-It's also possible to close an accounting period. You could for example close a monthly period when
-a tax declaration has been made. When a period is closed you can't modify any of the entries in that
-period. To close an accounting period use the menu :menuselection:`Financial Management --> 
-Configuration --> Periodical Processing --> End of Year Treatments --> Close a Period`.
+It is also possible to close an accounting period. You could for example close a monthly period when
+a tax declaration has been made. When a period is closed you can not modify any of the entries in that
+period. To close an accounting period use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Period`.
 
 .. Copyright © Open Object Press. All rights reserved.
 
