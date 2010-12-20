@@ -160,13 +160,13 @@ create entries directly in a journal (line by line) without using the dedicated 
 often used for miscellaneous entries.
 
 To make manual entries, go to the following menu :menuselection:`Accounting --> Journal Entries -->
-Journal Items`. In the Journal field from the filter, select the journal in which you want to post, then click Find.
+Journal Items`. In the ``Journal`` field from the filter, select the journal in which you want to post, then click Find. When you select a journal in this filter, you do not have to fill in the journal when posting new entries.
 
 Let's give the example of a purchase invoice. Note however that these entries are usually generated automatically by OpenERP.
 
 Click the ``New`` button. Fill these fields manually in the following order:
 
-*  :guilabel:`Journal Entry`: leave this field empty so that OpenERP can fill it in automatically from the next sequence number for the journal,
+*  :guilabel:`Journal Entry`: leave this field empty so that OpenERP can fill it in automatically from the next sequence number (first draft, then validated) for the journal,
 
 *  :guilabel:`Ref.`: reference from the invoice or entry,
 
@@ -178,36 +178,37 @@ Click the ``New`` button. Fill these fields manually in the following order:
 
 *  :guilabel:`Account`: general account (e.g. purchase account \ ``Products Purchase``\  ),
 
-*  :guilabel:`Name`: description of the invoice line ( ``PC2`` ),
+*  :guilabel:`Name`: description of the invoice line (e.g. ``PC2`` ),
 
 *  :guilabel:`Debit`: here you type the debit amount.
 
 *  :guilabel:`Journal`: here you select the journal in which you want to post.
 
-*  :guilabel:`Credit`: here you type the credit amount \ ``1196``\  .
+*  :guilabel:`Credit`: here you type the credit amount, e.g. \ ``1196``\  .
 
-Press the :guilabel:`Enter` key on your keyboard to validate this first line. The next sequence number is
+Press the :guilabel:`Enter` key on your keyboard to validate the first line. The next draft move number is
 assigned to your accounting entry. Your line is then colored red and takes the \ ``Unbalanced``\   state.
-When a line is in the draft state then it is not yet reflected in the accounts. Open ERP will not
+When a line is in the draft state, it is not yet reflected in the accounts. OpenERP will not
 validate that line until the balancing entry is made (so the credit amounts must balance the debit
 amounts for that set of entries).
 
-Open ERP now proposes the balancing accounting line to be filled in. If the account used (in this
-case account \ ``600``\  ) includes taxes by default in its definition Open ERP automatically
+OpenERP now proposes the balancing accounting line to be filled in. If the account used (in this
+case account \ ``600000``\  ) includes taxes by default OpenERP automatically
 proposes taxes associated with the amount entered. At this stage you can modify and validate this
 second line of the account, or replace it with other information such as a second purchase line.
 
-When you have entered all of the data from your lines, Open ERP automatically proposes counterpart
+When you have entered all of the data from your lines, OpenERP automatically proposes counterpart
 entries to you, based on the credit entries.
 
 .. tip:: Completing a balancing entry
 
-	When an accounting entry is matched, Open ERP moves it to the open state automatically and
-	prepares to enter the next data.
+	When an accounting entry is matched, OpenERP moves it to the Valid state automatically and
+	prepares to enter the next data. Do not forget to definitely post the valid entries by clicking the Action
+        button and selecting Post Journal Entries.
 
 	If you want to add some other balancing lines you can enter the number of the entry on the new line
 	that you are entering.
-	In such a case the whole line stays at Draft until the whole set balances to zero.
+	In such a case the whole line stays Draft until the whole set balances to zero.
 
 Reconciliation Process
 ----------------------
@@ -216,7 +217,7 @@ The reconciliation operation consists of matching entries in different accounts 
 they are related. Generally reconciliation is used for:
 
 * matching invoice entries to payments so that invoices are marked as paid and customers do not get
-  payment reminder letters (reconciliation in a customer account),
+  payment reminder letters for those entries (reconciliation in a customer account),
 
 * matching deposits and cheque withdrawals with their respective payments,
 
@@ -225,17 +226,17 @@ they are related. Generally reconciliation is used for:
 A reconciliation must be carried out on a list of accounting entries by an accountant, so that the
 sum of credits equals the sum of the debits for the matched entries.
 
-Reconciliation in Open ERP can only be carried out in accounts that have been configured as
-reconcilable (the :guilabel:`Reconcile`  field).
+Reconciliation in OpenERP can only be carried out in accounts that have been configured as
+reconcilable (the :guilabel:`Reconcile` field).
 
-.. tip:: Do not confuse: **account** reconciliation and **bank statement** reconciliation
+# .. todo::
+# .. tip:: Do not confuse: **account** reconciliation and **bank statement** reconciliation
 
-	It is important not to confuse the reconciliation of accounting entries with bank statement
-	reconciliation.
-	The first consists of linking account entries with each other, while the second consists of
-	verifying
-	that your bank statement corresponds with the entries of that account in your accounting system.
-	You can perform this using menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Statements Reconciliation`.
+# 	It is important not to confuse the reconciliation of accounting entries with bank statement
+# 	reconciliation.
+# 	Account reconciliation consists of linking account entries with each other, while statement reconciliation consists of
+# 	verifying that your bank statement corresponds to the entries of that account in your accounting system.
+# 	You can perform statement reconciliation using the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> # Statements Reconciliation`.
 
 There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
@@ -247,13 +248,14 @@ here.
 Automatic Reconciliation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-For automatic reconciliation, you will be asking Open ERP to make its own search for entries to
-reconcile in a series of accounts. It tries to find entries for each partner where the amounts
+For automatic reconciliation, you will be asking OpenERP to search for entries to
+reconcile in a series of accounts. OpenERP tries to find entries for each partner where the amounts
 correspond.
 
-Depending on the level of complexity that you choose when you start running the tool, the software
+Depending on the level of complexity that you choose (= power) when you start running the tool, the software
 could reconcile from two to nine entries at the same time. For example, if you select level 5,
-Open ERP will reconcile three invoices and two payments if the total amounts correspond.
+OpenERP will reconcile for instance three invoices and two payments if the total amounts correspond.
+Note that you can also choose a maximum write-off amount, if you allow payment differences to be posted.
 
 .. figure::  images/account_reconcile_auto.png
    :scale: 50
@@ -263,27 +265,28 @@ Open ERP will reconcile three invoices and two payments if the total amounts co
 
 To start the reconciliation tool, click :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
 
-
 A form opens, asking you for the following information:
 
-* :guilabel:`Account to reconcile` : you can select one, several, or all reconcilable accounts,
+* :guilabel:`Accounts to Reconcile` : you can select one, several, or all reconcilable accounts,
 
-* the period to take into consideration (:guilabel:`Start of Period` / :guilabel:`End of Period`),
+* the dates to take into consideration (:guilabel:`Starting Date` / :guilabel:`Ending Date`),
 
 * the Reconciliation :guilabel:`Power`  (from \ ``2``\   to \ ``9``\  ),
+
+* checkbox :guilabel:`Allow write off` to determine whether you will allow for payment differences.
 
 * information needed for the adjustment (details for the :guilabel:`Write-Off Move`).
 
 .. note:: Reconciling
 
-	You can reconcile:
+	You can reconcile any account, but the most common accounts are:
 
 	* all the Accounts Receivable – your customer accounts of type Debtor,
 
 	* all the Accounts Payable – your supplier accounts of type Creditor.
 
-The adjustment option enables you to reconcile entries even if their amounts are not exactly
-equivalent. For example, Open ERP permits foreign customers whose accounts are in different
+The write-off option enables you to reconcile entries even if their amounts are not exactly
+equivalent. For example, OpenERP permits foreign customers whose accounts are in different
 currencies to have a difference of up to, say, 0.50 units of currency and put the difference in a write-
 off account.
 
@@ -298,11 +301,11 @@ off account.
 
 .. note:: Default values
 
-	If you run the automatic reconciliation tool regularly you should set default values for each
+	If you run the automatic reconciliation tool regularly, you should set default values for each
 	field by pressing the :kbd:`Ctrl` key and using the right-click mouse button
 	(when the form is in edit mode using the web client), or just right-click using the GTK client.
 	The resulting context menu enables you to set default values.
-	This means that you will not have to re-type all the fields each time.
+	This means that you will not have to retype all the fields each time.
 
 .. index::
    single: reconciliation; manual
@@ -311,21 +314,21 @@ Manual Reconciliation
 ^^^^^^^^^^^^^^^^^^^^^
 
 For manual reconciliation, open the entries for reconciling an account through the menu :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Manual Reconciliation`.
-You can also call up manual reconciliation from any screen that shows accounting
-entries.
+
+# You can also call up manual reconciliation from any screen that shows accounting entries.
 
 .. todo:: is that right?
 
-Select entries that you want to reconcile. From the selection, Open ERP indicates the sum of debits
+Select entries that you want to reconcile. OpenERP indicates the sum of debits
 and credits for the selected entries. When these are equal you can click the :guilabel:`Reconcile Entries`
 button to reconcile the entries.
 
 	.. note::  *Example Real case of using reconciliation*
 
-			Suppose that you are entering customer order details. You ask “what is outstanding on the
-			customer account ?” (that is the list of unpaid invoices and unreconciled payments). To review
+			Suppose that you are entering customer order details. You wonder what is outstanding on the
+			customer account (that is the list of unpaid invoices and unreconciled payments). To review
 			it from the order form, navigate to the :guilabel:`Partner` record and select
-			the view :guilabel:`Receivables and Payables`. Open ERP opens a history of unreconciled accounting entries
+			the view :guilabel:`Receivables and Payables`. OpenERP opens a history of unreconciled accounting entries
 			on screen.
 
 	            .. figure::  images/account_sample2_entries.png
@@ -334,11 +337,9 @@ button to reconcile the entries.
 
 	               *Unreconciled accounting entries*
 
-
-			After running the `Reconcile Entries` wizard, this these lines can not be selected and will not appear when the entries are listed again. If
-			there is a difference between the two entries, Open ERP suggests that you make an adjustment.
-			This adjustment is a compensating entry that enables a complete reconciliation. You must
-			therefore specify the journal and the account to be used for the adjustment.
+			After running the `Reconcile Entries` wizard, these lines can no longer be selected and will not appear when the 				entries are listed again. If there is a difference between the two entries, OpenERP suggests you to make
+			an adjustment. This "write-off" is a compensating entry that enables a complete reconciliation. You must
+			therefore specify the journal and the account to be used for the write-off.
 
 For example, if you want to reconcile the following entries:
 
@@ -346,17 +347,17 @@ For example, if you want to reconcile the following entries:
    :header: "Date","Ref.","Description","Account","Debit","Credit"
    :widths: 12, 5, 15, 5,5,5
 
-   "12 May 08","FAC23","Car hire","4010","544.50",""
-   "25 May 08","FAC44","Car insurance","4010","100.00",""
-   "31 May 08","PAY01","Invoices n° 23, 44","4010","","644.00"
+   "12 May 11","INV23","Car hire","4010","544.50",""
+   "25 May 11","INV44","Car insurance","4010","100.00",""
+   "31 May 11","PAY01","Invoices n° 23, 44","4010","","644.00"
 
-On reconciliation, Open ERP shows a difference of 0.50. At this stage you have two possibilities:
+On reconciliation, OpenERP shows a difference of 0.50. At this stage you have two possibilities:
 
 * do not reconcile, and the customer receives a request for 0.50,
 
 * reconcile and accept an adjustment of 0.50 that you will take from the P&L account.
 
-Open ERP generates the following account automatically:
+OpenERP generates the following entry automatically:
 
 
 .. csv-table:: Write-off account
@@ -364,8 +365,8 @@ Open ERP generates the following account automatically:
    :widths: 12, 5, 15, 5,5,5
 
    "Date","Ref.","Description","Account","Debit","Credit"
-   "03 Jun 08","AJ001","Adjustment: profits and losses","4010","","0.50"
-   "03 Jun 08","AJ001","Adjustment: profits and losses","XXX","0.50",""
+   "03 Jun 11","AJ001","Adjustment: profits and losses","4010","","0.50"
+   "03 Jun 11","AJ001","Adjustment: profits and losses","XXX","0.50",""
 
 
 The two invoices and the payment will be reconciled in the first adjustment line. The two invoices
@@ -378,7 +379,7 @@ will then be automatically marked as paid.
 Payment Management
 ==================
 
-Open ERP gives you forms for preparing, validating and executing payment orders. This enables you
+OpenERP gives you forms to prepare, validate and execute payment orders. This enables you
 to manage issues such as:
 
 	#.	Payment provided on several due dates.
@@ -392,7 +393,7 @@ to manage issues such as:
 
 	#.	Creating a file for electronic payment which can be sent to a bank for execution.
 
-	#.	Splitting payments dependent on the balances available in your various bank accounts.
+	#.	Splitting payments depending on the balances available in your various bank accounts.
 
 How to manage your Payment Orders?
 -----------------------------------
@@ -400,21 +401,21 @@ How to manage your Payment Orders?
 .. index::
    single: module; account_payment
 
-To use the tool for managing payments you must first install the module :mod:`account_payment`.
-It is part of the core Open ERP system.
+To use the tool for managing payments you must first install the module :mod:`account_payment`, or install ``Supplier Payments`` from the Configuration Wizard.
+It is part of the core OpenERP system.
 
 The system lets you enter a series of payments to be carried out from your various bank
 accounts. Once the different payments have been registered you can validate the payment orders.
 During validation you can modify and approve the payment orders, sending the order to the bank
-for electronic funds transfer or just printing cheques as you wish.
+for electronic funds transfer.
 
 For example if you have to pay a supplier's invoice for a large amount you can split the payments
 amongst several bank accounts according to their available balance. To do this you can prepare
 several Draft orders and validate them once you are satisfied that the split is correct.
 
 This process can also be regularly scheduled. In some companies, a payment order is kept in Draft
-state and payments are added to the draft list each day. At the end of the week it is an accountant's
-job to work on all of the waiting payment orders.
+state and payments are added to the draft list each day. At the end of the week the accountant
+reviews and confirms all the waiting payment orders.
 
 Once the payment order is confirmed there is still a validation step for an accountant to carry out.
 You could imagine that these orders would be prepared by an accounts clerk, and then approved by a
@@ -425,7 +426,7 @@ manager to go ahead with payment.
 
 .. tip:: Payment Workflow
 
-	An Open ERP workflow is associated with each payment order. Select a payment order and
+	An OpenERP workflow is associated with each payment order. Select a payment order and
 	if you are in the GTK client
 	click :menuselection:`Plugins --> Print workflow` from the top menu.
 
@@ -458,7 +459,7 @@ To enter a payment order, use the menu :menuselection:`Accounting --> Payment --
 
    *Entering a payment order*
 
-Open ERP then proposes a reference number for your payment order.
+OpenERP then proposes a reference number for your payment order.
 
 You then have to choose a payment mode from the various methods available to your company. These
 have to be configured when you set the accounting system up using menu :menuselection:`Accounting -->
