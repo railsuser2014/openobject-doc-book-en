@@ -7,7 +7,7 @@ User Login
 
 .. tip:: Managing Passwords
 
-   If you let users change their passwords for themselves you'll have no direct control over the
+   If you let users change their passwords for themselves you will have no direct control over the
    password they choose.
    You should have a written policy about password strength to try to maintain a level of security in
    your system.
@@ -41,7 +41,7 @@ Managing access rights
 One of the most important areas in configuring Open ERP is how to manage access rights to the
 information in it.
 
-You're planning to put everything significant to your business into the system, but most of your
+You are planning to put everything significant to your business into the system, but most of your
 staff need see only part of it, and may need to change even less of it. Who should have rights to
 what, and how do you manage that?
 
@@ -52,14 +52,10 @@ groups, and the group(s) you belong to determine(s):
 
 * the accessibility of each table in the database.
 
-For example, the group \ ``Stock``\ may only be given access to some of the menus in
-:menuselection:`Stock Management`, and may have no access to any of the accounting information. Each system user who works in
-Stores is given membership of the ``Stock`` group. If some users also work elsewhere, they'd also be
+For example, the group \ ``Warehouse / User`` \ may only be given access to some of the menus in
+:menuselection:`Warehouse`, and may have no access to any of the accounting information. Each system user who works in
+stores is given membership of the ``Warehouse / User`` group. If some users also work elsewhere, they would also be
 given membership of other groups.
-
-Open ERP users can also belong to various roles. Just as group gives a user access rights, each
-role determines the user's duties. This is managed at the level of workflows, which form the
-company's business processes.
 
 .. index::
    pair: user; group
@@ -67,19 +63,19 @@ company's business processes.
 Groups and Users
 ================
 
-To configure access rights you'd start by defining the groups. It's important for the groups to
+To configure access rights you would start by defining the groups. It is important for the groups to
 be representative of your company's job functions rather than of its individual employees.
 
 So if your finance director is also your sales director, you should create both a Finance Director
-group and a Sales Director group, even though they're both the same person, and would both be
+group and a Sales Director group, even though they are both the same person, and would both be
 assigned to this user in practice. This gives you flexibility for the future.
 
 You should also create groups within a departmental areas that have different levels of access
-rights. For example, if you create a \ ``Sales Director``\ group and a \ ``Sales``\  group avoid
+rights. For example, if you create a \ ``Sales Director`` \ group and a \ ``Sales`` \ group avoid
 assigning exactly the same rights to each group. The first could see all the of reports, while the
-second could be restricted to seeing quotations. You could either make the \ ``Sales Director``\ a
-member of both groups, and give the Sales Director group a limited set of extra rights, or give the
-\ ``Sales Director``\ group all the rights it needs for a Sales Director to belong only to this one
+second could be restricted to seeing quotations. You could either make the Sales Director a
+member of both groups, and give the \ ``Sales Director`` \ group a limited set of extra rights, or give the
+\ ``Sales Director`` \ group all the rights it needs for a Sales Director to belong only to this one
 group. You should choose the scheme that gives you most flexibility and then stick with it to
 maintain consistency.
 
@@ -99,9 +95,9 @@ maintain consistency.
 Access rights for menus
 -----------------------
 
-To get a feel for rights management in Open ERP you'll create a new \ ``Stock1``\  group, with
-access to the *Stock Management* menu items. You'll then create a stores person user who's a member
-of the \ ``Stock1``\  group.
+To get a feel for rights management in Open ERP you will create a new \ ``Stock1`` \  group, with
+access to the *Warehouse* menu items. You will then create a stores person user who is a member
+of the \ ``Stock1`` \  group.
 
 To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the
 group name Stock1.
@@ -109,45 +105,40 @@ group name Stock1.
 Then to create a new user linked to this, use :menuselection:`Administration --> Users --> Users` to
 enter the following:
 
-*  :guilabel:`Name` : \ ``Stores Person``\  ,
+*  :guilabel:`User Name` : \ ``Stores Person`` \ ,
 
-*  :guilabel:`Username` : \ ``stores``\  ,
+*  :guilabel:`Login` : \ ``stores`` \ ,
 
-*  :guilabel:`Password` : \ ``stores``\  ,
+*  :guilabel:`Password` : \ ``stores`` \ ,
 
-*  :guilabel:`Company` : \ ``<your company>``\  ,
+*  :guilabel:`Menu Action` : \ ``Menu`` \ .
 
-*  :guilabel:`Action` : \ ``Menu``\  ,
-
-*  :guilabel:`Menu Action` : \ ``Menu``\  .
-
-In the second tab of the user form, :guilabel:`Security` , add the \ ``Stock1``\   group that you
+In the :guilabel:`Groups` section of the user form, add the \ ``Stock1`` \ group that you
 just created.
 
 .. figure::  images/menu_access.png
    :scale: 75
    :align: center
 
-   *Groups that have access to the Stock Management menu*
+   *Groups that have access to the Warehouse menu*
 
-Save the user, then go into the menu :menuselection:`Administration --> Security --> Grant Access
-to Menus` to get a list of menus. Filter this list using the search field :guilabel:`Menu`  to
-get the :menuselection:`Stock Management` menu item. In the form describing the menu, add \ ``Stock1``\
-into the :guilabel:`Groups` field. While you're at it, also add the \ ``admin``\   group there. From
-now on, only members of the \ ``Stock1``\   group and the \ ``admin``\   group will be able to see
+Save the user, then go into the menu :menuselection:`Administration --> Customization --> User
+Interface --> Menu Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu` to
+get the :menuselection:`Warehouse` menu item. In the form describing the menu, add \ ``Stock1`` \ into the :guilabel:`Groups` field. From now on, only members of
+the \ ``Warehouse / Manager`` \, \ ``Warehouse / User`` \ and \ ``Stock1`` \ group will be able to see
 this menu item in their main menu list.
 
 .. tip:: Menu hierarchy
 
 	Since menus are hierarchical there is no need to hide access to lower menus:
-	once you've configured :menuselection:`Stock Management` this way, all lower-level menus become invisible to
+	once you have configured :menuselection:`Warehouse` this way, all lower-level menus become invisible to
 	members of other groups.
 
 .. tip:: Security
 
-	This method of managing access to menus doesn't guarantee that users are prevented from reaching
+	This method of managing access to menus does not guarantee that users are prevented from reaching
 	hidden business objects in the system in other ways.
-	For example, hiding the Invoices menu won't prevent people reaching invoices through purchase and
+	For example, hiding the Invoices menu will not prevent people reaching invoices through purchase and
 	sales orders, or by guessing the URL.
 
 	For effective security management you must use the methods for managing access rights to objects
@@ -155,14 +146,14 @@ this menu item in their main menu list.
 
 .. note:: Initial access configuration
 
-	In the initial configuration, Open ERP's admin user, a member of the admin group, is given access
-	to the Configuration menu
+	In the initial configuration, Open ERP's \ ``admin`` \ user, a member of the \ ``Administration / Configuration`` \
+	group, is given access to the Configuration menu
 	in each section of the main menu. This is a general convention.
-	For example, :menuselection:`Partners --> Configuration` is visible in the administrator's menu
-	amongst the other Partner menu items,
-	but only those other menu entries are visible to other users.
-	Similarly, the main menu entry :menuselection:`Administration` is, by convention, visible only to
-	users who are members of the admin group.
+	For example, :menuselection:`Sales --> Configuration` is visible in the administrator's menu
+	amongst the other Sales menu items.
+	But only the menu items other than :menuselection:`Sales --> Configuration` are visible to other users.
+	Similarly, the main menu item :menuselection:`Administration` is, by convention, visible only to
+	users who are members of the \ ``Administration / Configuration`` \ group.
 
 .. index::
    single: access; objects
@@ -170,8 +161,8 @@ this menu item in their main menu list.
 Access Rights to Objects
 ------------------------
 
-The menu access rights determine who can access which menu, but doesn't define what you can do once
-you're in the menu.
+The menu access rights determine who can access which menu, but does not define what you can do once
+you are in the menu.
 
 Access controls on the objects give you the possibility of defining what your users have the right
 to do with your data when they get access to it. Access control of objects is structured the same
@@ -188,8 +179,8 @@ If no group is assigned to an object, all users can access it without any restri
 Conversely, when an access control is defined for an object, a user must be a member of a group
 owning appropriate access rights to have any sort of access to that object.
 
-You must always ensure that you don't lock the \ ``admin``\ group out of any objects that control
-administration and configuration options, such as the \ ``ir.model.access``\   model.
+You must always ensure that you do not lock the \ ``Administration / Access Rights`` \ group out of any objects that control
+administration and configuration options, such as the \ ``ir.model.access`` \ model.
 
 You can manage four access modes on objects independently:
 
@@ -208,12 +199,12 @@ You can manage four access modes on objects independently:
    *Access control to invoices for the Finance/Admin group*
 
 To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
-Security --> Access Controls --> Access Controls List` and click :guilabel:`New` or choose one there
+Security --> Access Controls List` and click :guilabel:`New` or choose an existing one
 and click :guilabel:`Edit`.
 You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
-the object (:guilabel:`Model`), then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
+the :guilabel:`Object`, then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
 
-If you don't specify any group in the access rules, the rule is applied to all groups. So to remove
+If you do not specify any group in the access rules, the rule is applied to all groups. So to remove
 access to an object for all users you could create a rule:
 
 * which is defined for a specific object,
@@ -251,9 +242,9 @@ Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
 
     * :guilabel:`Global` : If global is checked then that rule would be applied for all the groups and if it is unchecked then that rule would be applied only for the groups selected for it
 
-    * :guilabel:`Test` : A list of all the tests for the object
+    * :guilabel:`Domain` : A list of all the tests for the object. It is specified through a Python expression as a list of tuples.
 
-            * If there are mulitple tests on same object then all of them are joined using ``AND`` operator and depending on the result the rule would be satisfied
+            * If there are multiple tests on same object then all of them are joined using ``AND`` operator and depending on the result the rule would be satisfied
 
             * If there are multiple rules on same object then all of them are joined using ``OR`` operator
 
@@ -263,23 +254,23 @@ Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
 
             * If all of them are checked then all the access modes would be applied
 
-        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise exception.
+        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise an exception.
 
 .. .. figure:: images/security_rule.png
 ..    :scale: 75
 ..    :align: center
 
-*For eg :* If we have a rule defined on ``res.partner`` object which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', User)]``. We check only the create and write access mode and keep other access modes unchecked.
+*For example :* If we have a rule defined on ``res.partner`` object which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', user.id)]``. We check only the create and write access modes and keep other access modes unchecked.
 
 So this means that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman and can not create/write records where he is not the dedicated salesman. As other access modes are unchecked the user can read/delete the records of partners where he is not the dedicated salesman.
-
-.. note:: Currently record rules are enforced for all operations (read, create, write, delete). But the above described feature is new for version 5.2.
 
 .. index::
    single: modification history
 
 Modification history
 --------------------
+
+.. _fig-log:
 
 .. figure::  images/view_log.png
    :scale: 75
@@ -289,9 +280,9 @@ Modification history
 
 Each record in a Open ERP database carries a note of its history. You can find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
-:guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-
-only, not when it's editable) to display a dialog box showing this information, as shown in the
-figure :ref:`fig-sflow`. It can help you identify who to contact if there are any problems with the
+:guilabel:`View Log` link at the right of any form in the web client
+to display a dialog box showing this information, as shown in the
+figure :ref:`fig-log`. It can help you identify who to contact if there are any problems with the
 data in the records.
 
 .. index::
