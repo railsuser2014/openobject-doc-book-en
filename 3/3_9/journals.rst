@@ -12,11 +12,8 @@ for cash and bank transactions.
 Configuring a Journal
 ---------------------
 
-To view, edit or create new journals use the menu :menuselection:`Financial Management -->
-Configuration --> Financial Accounting --> Financial Journals`.
-
-Just like General accounts, the journals can be deactivated to make them invisible: uncheck the
-:guilabel:`Active` checkbox for that.
+To view, edit or create new journals use the menu :menuselection:`Accounting -->
+Configuration --> Financial Accounting --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
    :scale: 50
@@ -29,12 +26,12 @@ visible and required to enter accounting data in that journal. The view determin
 the fields and the properties of each field. For example the field :guilabel:`Account Number` must
 appear when entering data in the bank journal but not in the other journals.
 
-Before creating a new view for a journal check that there's nothing similar already defined for
+Before creating a new view for a journal check that there is nothing similar already defined for
 another journal. You should only create a new view for new types of journal.
 
 .. note:: Customizing views
 
-	You'll often have to edit a journal view.
+	You will often have to edit a journal view.
 	For example, for a journal in a foreign currency you add a field for the currency and this currency
 	must be in the journal view.
 
@@ -46,16 +43,16 @@ accounting entries. Or several journals can use the same sequence if you want to
 all.
 
 The credit and debit account by default permit the automatic generation of counterpart entries when
-you're entering data in the journal quickly. For example, in a bank journal you should put an
-associated bank account for default matching credits and debits, so that you don't have to create
+you are entering data in the journal quickly. For example, in a bank journal you should put an
+associated bank account for default matching credits and debits, so that you do not have to create
 counterparts for each transaction manually.
 
-A journal can be marked as being centralized. When you do this, the counterpart entries won't be
-owned by each entry but globally for the given journal and period. You'll then have a credit line
+A journal can be marked as being centralized. When you do this, the counterpart entries will not be
+owned by each entry but globally for the given journal and period. You will then have a credit line
 and a debit line centralized for each entry in one of these journals, meaning that both credit and
 debit appear on the same line.
 
-Controls and aids for data entry
+Controls and tips for Data Entry
 --------------------------------
 
 You can carry out two types of control on Journals in Open ERP – controls over the financial
@@ -64,25 +61,25 @@ all of the rights management detailed in :ref:`ch-config`.
 
 To avoid mistakes while entering accounts data, you can place conditions in the general accounts
 about who can use a given account. To do this, you must list all the accounts or valid account types
-in the second tab, :guilabel:`Entry Controls`. If you haven't added any accounts there, Open ERP applies no
+in the second tab, :guilabel:`Entry Controls`. If you have not added any accounts there, Open ERP applies no
 restriction on data entry in the accounts or journals. If you list accounts and the types of account
 that can be used in a journal, Open ERP prevents you from using any account not in that list. This
 verification step starts from the moment you save the entry.
 
-This functionality is useful for limiting possible data entry errors. Also, in a bank journal it's
-possible to restrict the accounts that can be linked to a bank to classes 1 to 5. Using this you'd
+This functionality is useful for limiting possible data entry errors. Also, in a bank journal it is
+possible to restrict the accounts that can be linked to a bank to classes 1 to 5. Using this you would
 help prevent the user from making any false entries in the journal.
 
 .. tip:: Control of data entry
 
-	In accounting it's not a good idea to allow a data entry directly from bank account A to bank
+	In accounting it is not a good idea to allow a data entry directly from bank account A to bank
 	account B.
 	If you enter a transaction from bank A to bank B the transaction will be accounted for twice.
 
 	To prevent this problem, pass the transaction through intermediate account C.
-	At the time of data entry the system checks the type of account that's accepted in the bank
+	At the time of data entry the system checks the type of account that is accepted in the bank
 	journal:
-	only accounts that aren't of type Bank are accepted.
+	only accounts that are not of type Bank are accepted.
 
 	If your accountant defines this control properly, non-accounting users are prevented from
 	transferring payment from one bank to another, reducing your risks.
