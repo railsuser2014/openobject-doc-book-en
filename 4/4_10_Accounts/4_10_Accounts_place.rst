@@ -2,7 +2,7 @@
 .. index::
    single: analytic; accounts
 
-Putting analytic accounts in place
+Putting Analytic Accounts in Place
 ==================================
 
 For the initial setup of good analytic accounts you should:
@@ -11,12 +11,12 @@ For the initial setup of good analytic accounts you should:
 
 * create the different journals.
 
-Setting up the chart of accounts
+Setting up the Chart of Accounts
 --------------------------------
 
 Start by choosing the most suitable analytic representation for your company before entering it into
-Open ERP. To create the different analytic accounts, use the menu :menuselection:`Financial
-Management --> Configuration --> Analytic Accounting --> Analytic Accounts --> New Analytic Account`.
+Open ERP. To create the different analytic accounts, use the menu :menuselection:`Accounting
+--> Configuration --> Analytic Accounting --> Analytic Accounts` and click on `New` button.
 
 .. figure::  images/account_analytic_form.png
    :scale: 50
@@ -30,29 +30,29 @@ To create an analytic account you have to complete the main fields:
 
 * the :guilabel:`Account Code` : used as a shortcut for selecting the account,
 
-* the :guilabel:`Account type` : just like general accounts the \ ``View``\   type is used for
+* the :guilabel:`Account Type` : just like general accounts the \ ``View``\   type is used for
   virtual accounts which are used only to create a hierarchical structure and for subtotals, and not
   to store accounting entries,
 
-* the :guilabel:`Parent analytic account` : defines the hierarchy between the accounts.
+* the :guilabel:`Parent Analytic Account` : defines the hierarchy between the accounts.
 
 If the project is for a limited time you can define a start and end date here. The :guilabel:`State`
 field is used to indicate whether the project is running (\ ``Open``\  ), waiting for information
 from the client (\ ``Pending``\ ), \ ``Draft``\   or \ ``Closed``\  .
 
 Finally, if the analytic account is a client project you can complete the fields about the partner,
-which you'd need so that you can invoice the partner:
+which you would need so that you can invoice the partner:
 
-* the :guilabel:`Associated partner`,
+* the :guilabel:`Partner`,
 
 * a :guilabel:`Sale Pricelist`, which shows how services linked to the project should be charged,
 
 * a :guilabel:`Max. Invoice Price`, showing the maximum invoice price regardless of actual
   overspend,
 
-* a :guilabel:`Max. Quantity`, for contracts with a fixed limit of hours to use,
+* a :guilabel:`Maximum Quantity`, for contracts with a fixed limit of hours to use,
 
-* an :guilabel:`Invoicing` field, which defines an invoicing rate and whether the project
+* an :guilabel:`Invoicing Rate per Journal` field, which defines an invoicing rate and whether the project
   should be invoiced automatically from the services represented by the costs in the analytic account.
 
 .. index::
@@ -68,14 +68,14 @@ which you'd need so that you can invoice the partner:
 	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
 	  orders.
 
+Once you have defined the different analytic accounts you can view your chart through the menu
+:menuselection:`Accounting --> Charts --> Chart of Analytic Accounts`.
+
 .. figure::  images/account_analytic_chart.png
    :scale: 50
    :align: center
 
    *Example of an analytic chart for projects*
-
-Once you've defined the different analytic accounts you can view your chart through the menu
-:menuselection:`Financial Management --> Charts --> Analytic Chart of Accounts`.
 
 .. index::
    single: module; hr_timesheet_invoice
@@ -85,7 +85,7 @@ Once you've defined the different analytic accounts you can view your chart thro
 
 	The setup screen for an analytic account can vary greatly depending on the modules installed in
 	your database.
-	For example, you'll only see information about recharging services if you have the module
+	For example, you will only see information about recharging services if you have the module
 	:mod:`hr_timesheet_invoice` installed.
 
 	Some of these modules add helpful management statistics to the analytic account.
@@ -117,8 +117,8 @@ These enable you to categorize the different accounting entries by their type:
 .. note::  Minimal journals
 
 	At a minimum you have to create one analytic journal for Sales and one for Purchases.
-	If you don't create these two, Open ERP won't validate invoices linked to an analytic account
-	because it wouldn't be able to create an analytic accounting entry automatically.
+	If you do not create these two, Open ERP will not validate invoices linked to an analytic account
+	because it would not be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
    :scale: 50
@@ -126,10 +126,10 @@ These enable you to categorize the different accounting entries by their type:
 
    *Creating an analytic journal*
 
-To define your analytic journals, use the menu :menuselection:`Financial Management -->
-Configuration --> Analytic Accounting --> Analytic Journal Definition` then click :guilabel:`New`..
+To define your analytic journals, use the menu :menuselection:`Accounting -->
+Configuration --> Analytic Accounting --> Analytic Journals` then click :guilabel:`New`.
 
-It's easy to create an analytic journal. Just give it a :guilabel:`Name`, a :guilabel:`Code` and a :guilabel:`Type`. The
+It is easy to create an analytic journal. Just give it a :guilabel:`Journal Name`, a :guilabel:`Journal Code` and a :guilabel:`Type`. The
 types available are:
 
 * \ ``Sales``\  , for sales to customers and for credit notes,
