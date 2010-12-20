@@ -1,22 +1,22 @@
 .. index::
    pair: chart of accounts; analytic
 
-To each enterprise [its] own analytic chart
-===========================================
+To each enterprise its own Analytic Chart of Accounts
+=====================================================
 
-To illustrate analytic accounts clearly, you'll follow three use cases, each in one of three
+To illustrate analytic accounts clearly, you will follow three use cases, each in one of three
 different types of company:
 
-	#. An industrial manufacturing enterprise.
+	#. Industrial Manufacturing Enterprise.
 
-	#. A law firm.
+	#. Law Firm.
 
-	#. An IT services company.
+	#. IT Services Company.
 
-Case 1: an industrial manufacturing enterprise
+Case 1: Industrial Manufacturing Enterprise
 ----------------------------------------------
 
-In industry, you'll often find analytic charts of accounts structured into the departments and
+In industry, you will often find analytic charts of accounts structured into the departments and
 products that the company itself is built on.
 
 So the objective is to examine the costs, sales and margins by department and by product. The first
@@ -42,13 +42,13 @@ product ranges that the company makes and sells.
 .. index::
    pair: cost; allocation
 
-In daily use it's useful to mark the analytic account on each purchase invoice. The analytic account
+In daily use it is useful to mark the analytic account on each purchase invoice. The analytic account
 is the one to which the costs of that purchase should be allocated. When the invoice is approved it
 will automatically generate the entries for both the general and the corresponding analytic
-accounts. So, for each entry on the general accounts there's at least one analytic entry that
+accounts. So, for each entry on the general accounts there is at least one analytic entry that
 allocates costs to the department that incurred them.
 
-Here's a possible breakdown of some general accounting entries for the example above, allocated to
+Here is a possible breakdown of some general accounting entries for the example above, allocated to
 various analytic accounts:
 
 
@@ -57,7 +57,7 @@ various analytic accounts:
    :widths: 10,5,5,5,2,10,8
 
    "Title","Account","Debit","Credit","","Account","Value"
-   "Purchase of Raw Material","600","1500","","","Production / Range 1","1 500"
+   "Purchase of Raw Material","600","1500","","","Production / Range 1","-1 500"
    "Subcontractors","602","450","","","Production / Range 2","-450"
    "Credit Note for defective materials","600","","200","","Production / Range 1","200"
    "Transport charges","613","450","","","Production / Range 1","-450"
@@ -65,8 +65,8 @@ various analytic accounts:
    "","","","","","Commercial","-3 000"
    "","","","","","Administrative","-1 000"
    "","","","","","Production / Range 1","-2 000"
-   "","","","","","Production / Range 2"," 2 000"
-   "PR ","614","450","","","Marketing"," 450 "
+   "","","","","","Production / Range 2","-2 000"
+   "PR ","614","450","","","Marketing","-450 "
 
 The analytic representation by department enables you to investigate the costs allocated to each
 department in the company.
@@ -98,7 +98,7 @@ in this table:
    :widths: 10,5
 
    "General Account","Amount"
-   "600 – Raw Materials"," 1 300"
+   "600 – Raw Materials","- 1 300"
    "613 – Transport charges","- 450"
    "6201 – Staff costs","-2 000"
    "Total","-3 750"
@@ -120,7 +120,7 @@ departments.
 	Is it a global cost allocated in some general way or does each product range have responsibility
 	for its own marketing costs?
 
-Case 2: a law firm
+Case 2:  Law Firm
 ------------------
 
 Law firms generally adopt management by case where each case represents a current client file. All
@@ -135,7 +135,7 @@ employee enters a timesheet for a number of hours, that automatically generates 
 corresponding to the cost of those hours in the case concerned. The hourly charge is a function of
 the employee's salary.
 
-.. index:: 
+.. index::
    single: absences
 
 So a law firm will opt for an analytic representation which reflects the management of the time that
@@ -170,14 +170,14 @@ employees work on the different client cases.
 All expenses and sales are then attached to a case. This gives the profitability of each case and,
 at a consolidated level, of each client.
 
-Billing for the different cases is a bit unusual. The cases don't match any entry on the general
-account and nor do they come from purchase or sale invoices. They're represented by the various
-analytic operations and don't have exact counterparts in the general accounts. They're calculated on
+Billing for the different cases is a bit unusual. The cases do not match any entry on the general
+account and nor do they come from purchase or sale invoices. They are represented by the various
+analytic operations and do not have exact counterparts in the general accounts. They are calculated on
 the basis of the hourly cost per employee. These entries are automatically created on billing
 worksheets.
 
 At the end of the month when you pay salaries and benefits, you integrate them into the general
-accounts but not in the analytic accounts, because they've already been accounted for in billing
+accounts but not in the analytic accounts, because they have already been accounted for in billing
 each account. A report that relates data from the analytic and general accounts then lets you
 compare the totals, so you can readjust your estimates of hourly cost per employee depending on the
 time actually worked.
@@ -198,12 +198,12 @@ analytic account:
    "Fuel Cost -Client trip","Case 1.1","-35","","613 – Transports","35",""
    "Staff salaries","","","","6201 – Salaries","","3 000"
 
-You'll see that it allows you to make a detailed study of the profitability of different
+You will see that it allows you to make a detailed study of the profitability of different
 transactions. In this example the cost of Case 1.1 is 95.00 (the sum of the analytic costs of
 studying the files, searching for information and service charges), but has been invoiced for
 280.00, which gives you a gross profit of 185.00.
 
-But an interest in analytical accounts isn't limited to a simple analysis of the profitability of
+But an interest in analytical accounts is not limited to a simple analysis of the profitability of
 different cases.
 
 This same data can be used for automatic recharging of the services to the client at the end of the
@@ -219,12 +219,12 @@ service entries in the analytic account for this case.
 	But many other Open ERP documents can also generate analytic costs, such as credit notes and
 	purchases of goods.
 
-	So when you invoice the client at the end of the month it's possible for you to include all the
+	So when you invoice the client at the end of the month it is possible for you to include all the
 	analytic costs,
 	not just the hours worked. So, for example you can easily recharge the whole cost of your journeys
 	to the client.
 
-Case 3 : An IT Services Company
+Case 3 : IT Services Company
 -------------------------------
 
 Most IT services companies face the following problems:
@@ -235,7 +235,7 @@ Most IT services companies face the following problems:
 
 * managing support contracts.
 
-To deal with these problems you'd use an analytic chart of accounts structured by project and by
+To deal with these problems you would use an analytic chart of accounts structured by project and by
 contract. A representation of that is given in the following example.
 
 	.. note::  *Example Analytic representation of a chart of accounts for an IT Services company*
@@ -271,10 +271,10 @@ Invoicing and the study of profitability are also similar.
 
 But now look at support contracts. These contracts are usually limited to a prepaid number of hours.
 Each service posted in the analytic accounts shows the remaining available hours of support. For the
-management of support contracts you'd use the quantities and not the amounts in the analytic
+management of support contracts you would use the quantities and not the amounts in the analytic
 entries.
 
-In Open ERP each analytic line lists the number of units sold or used, as well as what you'd
+In Open ERP each analytic line lists the number of units sold or used, as well as what you would
 usually find there – the amount in currency units (USD or GBP, or whatever other choice you make).
 So you can sum the quantities sold and used on each analytic account to determine whether any hours
 of the support contract remain.
@@ -308,15 +308,15 @@ you to compare the budget (that is, your plan) to the services actually carried 
 
 	Problems of cash management are amongst the main difficulties encountered by small growing
 	businesses.
-	It's really difficult to predict the amount of cash that will be available when a company is young
+	It is really difficult to predict the amount of cash that will be available when a company is young
 	and rapidly growing.
 
 	If the company adopts management by case, then staff planning can be represented on the analytic
 	accounts report, as you have seen.
 
 	But since you know your selling price for each of the different projects,
-	you can see that it's easy to use the plan in the analytic accounts
-	to more precisely forecast the amounts that you'll invoice in the coming months.
+	you can see that it is easy to use the plan in the analytic accounts
+	to more precisely forecast the amounts that you will invoice in the coming months.
 
 
 .. Copyright © Open Object Press. All rights reserved.
