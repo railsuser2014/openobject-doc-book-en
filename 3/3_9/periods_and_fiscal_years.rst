@@ -41,7 +41,7 @@ Closing a Financial Year
 ------------------------
 
 To close the end the year, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Fiscal Year`.
-A form opens asking you for the essential information it needs
+A wizard opens asking you for the essential information it needs
 to close the following year.
 
 When the year is closed you can no longer create or modify any financial transactions in that year.

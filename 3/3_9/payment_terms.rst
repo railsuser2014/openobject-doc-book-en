@@ -7,11 +7,11 @@ Payment Terms
 You can define whatever payment terms you need in Open ERP. Payment terms determine the due dates
 for paying an invoice.
 
-To define new payment terms, use the menu :menuselection:`Financial Management --> 
-Configuration --> Payment Terms` and then click :guilabel:`New`.
+To define new payment terms, use the menu :menuselection:`Accounting -->
+Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`New`.
 
-The figure below represents the following payment term: 35% on delivery, the balance 15 days after
-the end of the month.
+The figure below represents the following payment term: 5000 within 5 days, 50% payment at the last day of current month,
+Remaining on 15th of next month.
 
 .. figure::  images/account_payment_term.png
    :scale: 50
@@ -24,33 +24,31 @@ you put in the field :guilabel:`Description` is used on invoices, so enter a cle
 the payment terms there.
 
 Then create individual lines for calculating the terms in the section :guilabel:`Payment Term`. You
-must give each line a name (:guilabel:`Line Name`). These give an informative title and don't affect
+must give each line a name (:guilabel:`Line Name`). These give an informative title and do not affect
 the actual calculation of terms. The :guilabel:`Sequence` field lets you define the order in which
 the rules are evaluated.
 
-The :guilabel:`Value` field enables you to calculate the amount to pay for each line:
+The :guilabel:`Valuation` field enables you to calculate the amount to pay for each line:
 
 * :guilabel:`Percent` : the line corresponds to a percentage of the total amount, the factor being
-  given in :guilabel:`Amount`. The number indicated in the Amount must take a value between 0 and 1.
+  given in :guilabel:`Value Amount`. The number indicated in the Amount must take a value between 0 and 1.
 
-* :guilabel:`Fixed amount` : this is a fixed value given by the :guilabel:`Amount` box.
+* :guilabel:`Fixed Amount` : this is a fixed value given by the :guilabel:`Value Amount` box.
 
 * :guilabel:`Balance` : indicates the balance remaining after accounting for the other lines.
 
 Think carefully about setting the last line of the calculation to \ ``Balance``\   to avoid rounding
 errors. The highest sequence number is evaluated last.
 
-The two last fields, :guilabel:`Number of Days` and :guilabel:`Condition`, enable the calculation of
-the delay in payment for each line, The delay :guilabel:`Condition` can be set to \ ``Net Days``\
-or \ ``End of Month``\  . For example if you set it to 15 days from the end of the month Open ERP
-adds 15 days to today's date and then sets the payment date to be the end of the month that the new
-date is in. So the payment date for 15 days from month end will be:
+The two last fields, :guilabel:`Number of Days` and :guilabel:`Day of the Month`, enable the calculation of
+the delay in payment for each line, The delay :guilabel:`Day of the Month` can be set to \ ``-1``\,\ ``0``\
+or \ ``Any Positive Number``\  . For example today is 20 December 2010, if you want to set payment terms like this.
 
-* 31 January if today is 5 January,
+* :guilabel:`5000 within 5 days` then set `Valuation` is Fixed Amount, `Number of Days` 5 and  `Day of the Month` is 0 that creates journal entry for date 25th December 2010.
+* :guilabel:`50% payment at the last day of current month` then set `Valuation` Percent, `Number of Days` 0 and  `Day of the Month` is -1 that creates journal entry for date 31th December 2010.
+* :guilabel:`Remaining on 15th of next month` then set `Valuation` Balance, `Number of Days` 0 and  `Day of the Month` is 15 that creates journal entry for date 15th January 2011.
 
-* 28 February if today is 20 January.
-
-You can then add payment terms to a Partner through the :guilabel:`Properties` on the partner form.
+You can then add payment terms to a Partner through the tab :guilabel:`Accounting` on the partner form.
 
 .. Copyright © Open Object Press. All rights reserved.
 
