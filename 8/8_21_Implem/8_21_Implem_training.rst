@@ -18,19 +18,19 @@ Two types of training are provided by the Tiny company and its partners:
   It is designed for those responsible for an ERP project, who will then be capable of training
   employees internally.
 
-Tiny's training calendar is available on the official Open ERP site  by clicking the menu
-:menuselection:`Services --> Training`. The training is delivered in either French or English
+Tiny's training calendar is available on the official Open ERP site at
+http://www.openerp.com/services/training-schedule. The training is delivered in either French or English
 depending on the course.
 
 Both Tiny, the creators of Open ERP, and the Open ERP partners can also provide customized
 training. This, although more expensive, is focused on your own needs.
 
-Your training needs depend on the type of deployment you've chosen. If you have opted for an SaaS
-development, technical training isn't very useful.
+Your training needs depend on the type of deployment you have chosen. If you have opted for a SaaS
+development, technical training is not very useful.
 
 In summary, you should arrange both user training and self-paced training (perhaps based on this
 book series) if you can. Technical training is strongly advised if you see yourselves developing your own
-modules. Although it's not obligatory it gives you quite a time advantage in any serious Open ERP
+modules. Although it is not obligatory it gives you quite a time advantage in any serious Open ERP
 engagement.
 
 

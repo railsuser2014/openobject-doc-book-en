@@ -6,7 +6,7 @@
 Support and maintenance
 =======================
 
-It's when you actually use your ERP that you will obtain value from your investment. For that reason
+It is when you actually use your ERP that you will obtain value from your investment. For that reason
 maintenance and support are critical for your long term success.
 
 * Support aims to ensure that end users get the maximum productivity from their use of Open ERP by
@@ -23,11 +23,11 @@ Tiny themselves have changed their support strategy from time to time. At the ti
 they propose a maintenance contract supplied either direct to the end user or through partners
 that guarantees a quick fix to any faults discovered in the covered code. Although you can 
 expect these fixes to become available to all users of the code in time, maintenance
-guarantees quick attention. And you're likely to get quicker migration support to new upgrades.
+guarantees quick attention. And you are likely to get quicker migration support to new upgrades.
 
-If you haven't anticipated your needs with a preventive maintenance contract, the costs of migration
+If you have not anticipated your needs with a preventive maintenance contract, the costs of migration
 after a few years can become significant. If special modules that you developed have been allowed to
-become too old you may eventually need a new development to your specifications.
+become too old you may eventually need a new development according to your specifications.
 
 .. index:: 
    single: update
@@ -38,14 +38,14 @@ Updates and Upgrades
 
 There are four sources of code change for Open ERP:
 
-* patches supplied by Tiny to correct faults: after validation these patches shouldn't cause any
+* patches supplied by Tiny to correct faults: after validation these patches should not cause any
   secondary effects,
 
 * minor updates, which gather the fault corrections together in one package, and are generally
-  announced with a modification of the version number, such as from 5.0.0 to 5.0.1,
+  announced with a modification of the version number, such as from 6.0.0 to 6.0.1,
 
 * upgrades, which bundle both the fault corrections and the improvements to the functionality in a
-  major release such as from 5.0.3 to 5.2.0.
+  major release such as from 6.0.3 to 6.2.0.
 
 * new functions generally released in the form of new modules.
 
@@ -62,7 +62,7 @@ Patches and updates can only be installed if you have the necessary access to th
 You must first install the patch or update and then restart the server using the command line: \
 ``–update=all``\  .
 
-Once Tiny has released a new upgraded version your response should be a cautious one. If you're
+Once Tiny has released a new upgraded version your response should be a cautious one. If you are
 perfectly satisfied with the existing system it would be best to not touch the new version. If you
 want to have access to the new functionality supplied by an upgraded version, you have a delicate
 operation to carry out. Most upgrades require your data to be migrated because the databases before
@@ -76,9 +76,9 @@ Version Migration
 
 Open ERP has a system to manage migrations semi-automatically. To update specific modules, or the whole
 database, you only need to start the server with the argument:–\ ``update=NAME_OF_MODULE``\   or \
-``–update=all``\ (that's minor module changes).
+``–update=all``\ (that is minor module changes).
 
-New stable versions of Open ERP sometimes require operations that aren't provided in the automated
+New stable versions of Open ERP sometimes require operations that are not provided in the automated
 migration. Tiny, the creator and maintainer of Open ERP, has a policy of supporting migration from
 all official stable releases to the latest. Scripts are provided for each new release of a stable
 version. These carry out the upgrade from the previous major version to the new major version.
@@ -97,17 +97,17 @@ The procedure for migrating runs like this:
 
 	#. Stop the server running the old version
 
-	#. Start the script called \ ``pre.py``\  for the versions you're moving between.
+	#. Start the script called \ ``pre.py``\  for the versions you are moving between.
 
 	#. Start the new version of the server using the option –\ ``update=all``\
 
 	#. Stop the server running the new version.
 
-	#. Start the script called post.py for the versions you're moving between.
+	#. Start the script called post.py for the versions you are moving between.
 
 	#. Start the new version of the server and test it.
 
-A migration is never an easy process. It may be that your system doesn't function as it did before
+A migration is never an easy process. It may be that your system does not function as it did before
 or that something requires new developments in the functionality of the modules that have already
 been installed. So you should only move to a new version if you have a real need and should engage a
 competent partner to help if the version that you use differs greatly from the basic version of
@@ -116,8 +116,8 @@ Open ERP.
 Similarly you should take care that this migration does not incorrectly change any setting
 that has already been made. The main menu structure might have been modified in place
 without proper recording of the changes. 
-So you could find that you're making the wrong assumptions about that structure
-when later loading data in that was recorded with the Module Recorder.
+So you could find that you are making the wrong assumptions about that structure
+when later loading data that was recorded with the Module Recorder.
 
 .. Copyright © Open Object Press. All rights reserved.
 
