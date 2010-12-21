@@ -8,7 +8,7 @@ are available directly from the tree of accounts or from the form view of the ac
 Analysis per account
 --------------------
 
-From an analytic form, click on one of the :guilabel:`REPORTS` buttons to select a report. 
+From an `Analytic Account` form, click on one of the :guilabel:`REPORTS` buttons to select a report.
 Open ERP provides the following financial analyses from the analytic accounts (and maybe more,
 depending on the additional installed modules):
 
@@ -59,7 +59,7 @@ services journal for printing.
 
 	To print several analytic accounts at once you can make a multiple selection on the different
 	accounts in the tree of accounts.
-	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or 
+	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or
 	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
 	single PDF document.
 
@@ -69,7 +69,7 @@ services journal for printing.
 Inverted Analytic Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The inverted analytic balance provides a summary report relating general accounts and 
+The inverted analytic balance provides a summary report relating general accounts and
 analytic accounts. This report shows the balances of the general accounts
 broken down by the selected analytic accounts for a selected period.
 
@@ -114,13 +114,26 @@ a project for the different operations that you used to carry out the project.
 	useful because
 	they enable you to make an analysis per company by linking up to the general accounts.
 
+Analytic Entries Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can have the statistical analysis on all analytic entries from the menu
+:menuselection:`Accounting --> Reporting --> Statistic Reports --> Analytic Entries Analysis`.
+
+.. figure::  images/analytic_entries_analysis.png
+   :scale: 50
+   :align: center
+
+   *Statistical report for analytic entries*
+
+
 Key indicators
 --------------
 
 .. index::
    single: module; account_analytic_analysis
 
-If you use analytic accounts with a structure of accounts by project client you should install the 
+If you use analytic accounts with a structure of accounts by project client you should install the
 :mod:`account_analytic_analysis` module. This module adds three new tabs to the analytic account
 form:
 
@@ -164,9 +177,9 @@ For example, in the case of a fixed price project contract, the real sale price 
 project will be equal to the contract negotiated with the client. The theoretical price gives the
 amount that would have been invoiced if you had charged for all the time worked.
 
-To give project managers a direct view of their different projects, the 
+To give project managers a direct view of their different projects, the
 :mod:`account_analytic_analysis` module creates new menus in the Project management module in
-:menuselection:`Project Management --> Financial Project Management --> Analytic Accounts`.
+:menuselection:`Project --> Billing --> Overpassed Accounts`.
 
 .. figure::  images/account_analytic_project_menu.png
    :scale: 50
@@ -179,7 +192,7 @@ can check if there are uninvoiced services, see the last invoice date and the la
 service date, and get reports on the amounts received and those planned. So project managers have
 all the information necessary to manage their project, shown in a single page.
 
-In the following chapters you'll see how project managers can use this information to carry out
+In the following chapters you will see how project managers can use this information to carry out
 the various operations needed to manage the project, such as automatic invoicing, project
 planning, keeping customers up to date, and budgeting for resources.
 
@@ -188,8 +201,7 @@ planning, keeping customers up to date, and budgeting for resources.
 
 .. note:: Analytic Budgets
 
-	Analytic budgets can be budgeted in the :mod:`account_budget` module, 
-	which was developed starting at version 5 of Open ERP. They offer:
+	Analytic budgets can be budgeted in the :mod:`account_budget` module, They offer:
 
 	* forecasting projects in the medium term,
 
