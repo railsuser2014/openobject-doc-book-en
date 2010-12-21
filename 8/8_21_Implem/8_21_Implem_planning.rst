@@ -9,8 +9,8 @@ Requirements analysis and planning are the keys to the success of an implementat
 you should set up a management team to define the costs and benefits of the project, select a
 project team, and set out the detailed stages that will have to be carried out.
 
-Open ERP is so easy to start using that it's not always obvious, particularly to IT staff, that a
-clear requirements plan is necessary for implementing the system successfully. The difficulty isn't
+Open ERP is so easy to start using that it is not always obvious, particularly to IT staff, that a
+clear requirements plan is necessary for implementing the system successfully. The difficulty is not
 particularly in installing the software nor in configuring it, but rather more about:
 
 * knowing what to configure,
@@ -22,7 +22,7 @@ particularly in installing the software nor in configuring it, but rather more a
 
 * ensuring that your users are committed to the change.
 
-ERP system implementation is a project carried out using information technology but it's a business
+ERP system implementation is a project carried out using information technology but it is a business
 project rather than an IT project in itself. The challenge of this type of project is in changing
 the behaviour of those involved at all levels of the enterprise.
 
@@ -31,7 +31,7 @@ managed by someone in a senior position who both understands the business impact
 organization and has experience of technical projects. Ideally the project manager should know the
 company well, both its specific quirks and its different standard cross-company processes.
 
-If the enterprise doesn't have its own IT group, you're probably better off opting for an SaaS
+If the enterprise does not have its own IT group, you are probably better off opting for a SaaS
 offer. This means that you subcontract all the difficult technology, from the installation of the
 server to its maintenance, all the while being assured of the installation of a robust architecture
 with its redundancy, backed-up servers, and separation of authentication and data.
@@ -39,16 +39,16 @@ with its redundancy, backed-up servers, and separation of authentication and dat
 Planning methods
 ----------------
 
-Planning methods vary in their degree of complexity, formality and level of automation. It's not the
+Planning methods vary in their degree of complexity, formality and level of automation. It is not the
 intention of this chapter to steer you towards one method or the other.
 
 Open ERP's menus are organized to lead you through an implementation in a sensible order, so that
 information that has to be entered first is encountered first in the menu system. Forms are also
-organized so that if you enter data in the natural order you'll get later fields completed
+organized so that if you enter data in the natural order you will get later fields completed
 automatically by the earlier ones where possible. And demonstration data illustrates how Open ERP's
 functional areas are linked from one to the other
 
-The menus themselves hint at several helpful implementation suggestions, for example the submenus of
+The menus themselves hint at several helpful implementation suggestions, for example the sub-menus of
 :menuselection:`Administration --> Configuration` are useful for the configuration of the software.
 New functions such as the Module Recorder enable you to significantly accelerate the configuration
 of data.
