@@ -5,7 +5,7 @@
 Configuring the menu
 ====================
 
-Open ERP's menu organization isn't subject to any restriction, so you can modify the whole
+Open ERP's menu organization is not subject to any restriction, so you can modify the whole
 structure, the terminology and all access rights to it to meet your specific needs in the best
 possible way. However, before you do all that and just as you would for any other customizable
 software, you should balance both the benefits you see in such changes and the costs, such as the
@@ -22,15 +22,15 @@ access rights to the menus and the various underlying business objects.
 Changing the menu
 -----------------
 
-As administrator, and using the web client, select a menu item (but don't click it).
-Click on the line containing
-:menuselection:`Administration --> Translations --> Import/Export --> Export a Translation File`
-(but not on the string \ ``Export a Translation File``\   itself) and click the 
-:guilabel:`Switch` button to bring up the menu item as an
-editable form (you can do the same using the GTK client – there you select the line and click the
-:guilabel:`View` button instead).
+You can change the way menu items appear and the actions they trigger by using the menu
+:menuselection:`Administration --> Customization --> User Interface --> Menu Items`. This
+opens a search view where you may locate the menu item to be edited by entering its entire
+name (specified as menu hierarchy) in the :guilabel:`Menu` field or specifying its immediate
+parent menu name in :guilabel:`Parent Menu`.
 
-You could now edit this form (**but don't do that, read the next paragraph first!**) – change 
+As an example, locate the menu item \ ``Administration/Translations/Import / Export/Export Translation`` \
+and click on this entry to open its corresponding form.
+You could now edit this form (**but do not do that, read the next paragraph first!**) – change 
 its :guilabel:`Parent Menu`, which moves the entry to a
 different part of the menu system; edit its :guilabel:`Menu` name to change how it appears in the
 menu tree, or give it a new :guilabel:`Icon`. Or you could give it a new :guilabel:`Action` entirely
@@ -42,29 +42,22 @@ click the :guilabel:`Duplicate` button that appears (in the GTK client, click :m
 --> Duplicate`  from the top menu). The form that remains is now the duplicate entry, not the
 original.
 
-To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleting what's there and
+To move this duplicate entry, change the :guilabel:`Parent Menu` field by deleting what is there and
 replacing it with another menu that everyone can see, such as :guilabel:`Tools` or :guilabel:`Human
 Resources`, and make sure that the entry moves to the end of the menu list by replacing the
 :guilabel:`Sequence` with \ ``99``\  . You can experiment with icons if you like. Save the form and
-then click :guilabel:`Main Menu` to see the results.
+then reload the page to see the results.
 
 .. tip:: Duplicating the menu
 
-   If you're planning to modify a menu you should duplicate it first.
-   In this way you'll always keep a link to the original menu that works if you need it to.
+   If you are planning to modify a menu you should duplicate it first.
+   In this way you will always keep a link to the original menu that works if you need it to.
 
 .. index:: 
    single: welcome page
    
 Personalizing the welcome page for each user
 --------------------------------------------
-
-When you sign into Open ERP for the first time, a welcome page appears. In a minimal system, such
-as that created in the original \ ``openerp_ch02``\  database before it was expanded in 
-:ref:`ch-guided`, and in the  \ ``openerp_ch03``\  database, you only get the main menu – the same as you
-get by default when you click the :menuselection:`Main Menu` button. As you add functionality to
-your database you get more choices for the welcome page, with different dashboards automatically
-assigned to various company roles as they're created in the demonstration data.
 
 The administrator can change both the welcome page and the main menu page individually for each user
 of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
@@ -81,15 +74,15 @@ different menu entries for the two fields :guilabel:`Home Action` and :guilabel:
 
 The :guilabel:`Home Action` is the menu item that is automatically opened when you first sign on,
 and is also reached when you click the :guilabel:`Home` link in the top right toolbar of the web
-client. There you can choose any page that you'd reach through any menu – one of the dashboards
-could be most useful. The :guilabel:`Menu Action` is the one you reach through the :guilabel:`Main
-Menu` button in the web client (the :guilabel:`Menu` button in the GTK client). You can choose the
+client. There you can choose any page that you would reach through any menu – one of the dashboards
+could be most useful. The :guilabel:`Menu Action` is the one you reach through the menu
+:menuselection:`Form --> Menu` in the GTK client. You can choose the
 main menu and the dashboards there.
 
 .. tip:: Actions on the administrator's menu
 
-	It's very easy to change the welcome page and the menu of the different users.
-	However, you shouldn't change the main administrator's menu because you could make certain menus
+	It is very easy to change the welcome page and the menu of the different users.
+	However, you should not change the main administrator's menu because you could make certain menus
 	completely inaccessible by mistake.
 
 .. index:: 
@@ -100,14 +93,16 @@ Assigning default values to fields
 
 You can quite easily configure the system to put default values in various fields as you open new
 forms. This enables you to pre-complete the fields with default data to simplify your users' work in
-entering new documents.
+entering new documents. Let us use the Customer form to demonstrate this feature. Create a new customer
+with :guilabel:`Country` set as :guilabel:`New Zealand`
 
-* If you're using the web client hold :kbd:`Ctrl` down and Right-Click at the same time (that's a mouse right-click while the mouse
-  pointer is in the field and the Control key is held down on the keyboard).
+* If you are using the web client, click the small button at the right of the :guilabel:`Country`
+  field.
 
-* If you're using the GTK client, you just need to right-click the mouse while the pointer is in the
+* If you are using the GTK client, you just need to right-click the mouse while the pointer is in the
   field.
   
+Select \ ``Set as default`` \ from the pop-up menu.
 An administrator has the choice of making the default work just for that user, or for all users of the database.
 
 .. figure::  images/set_default.png
@@ -121,20 +116,20 @@ contain the entry \ ``New Zealand``\  .
 
 This is a very powerful feature! An administrator can use this functionality to redefine the
 behavior of your whole system. You can test that in database \ ``openerp_ch13``\   by opening up a
-new :guilabel:`Purchase Order` form, clicking the second tab :guilabel:`Purchase Shippings`,
+new :guilabel:`Purchase Order` form, clicking the second tab :guilabel:`Delivery & Invoicing`,
 selecting \ ``From Picking``\   in the :guilabel:`Invoicing Control` field and then making that the
 default.
 
-From that moment on, you'd automatically create draft purchase invoices only when goods are
+From that moment on, you would automatically create draft purchase invoices only when goods are
 received, so you could very easily restrict your accountants from paying any invoices that turn up
-until you were sure you had received the goods. It wouldn't stop anyone from selecting another
-method of invoice control, but they'd start with the default definition.
+until you were sure you had received the goods. It would not stop anyone from selecting another
+method of invoice control, but they would start with the default definition.
 
 Changing the terminology
 ------------------------
 
 You can use Open ERP's language translation functionality to substitute its standard terminology
-with terminology that fits your company better. It's quite straightforward to adapt the software
+with terminology that fits your company better. It is quite straightforward to adapt the software
 with different terms specific to your industry. Moreover, this can strengthen acceptance of your new
 Open ERP system, because everybody will be able to retain their usual vocabulary.
 
@@ -144,10 +139,10 @@ You can do this one of two ways:
   you can search and replace specific occurrences everywhere,
 
 * translate the phrases directly in the client, which means that you can change them in their
-  context, and that can be helpful to you while you're translating.
+  context, and that can be helpful to you while you are translating.
 
-The same approach is used to translate terms that haven't been created yet. This can be useful, for
-example, with modules that haven't yet been translated into English or any other language that you
+The same approach is used to translate terms that have not been created yet. This can be useful, for
+example, with modules that have not yet been translated into English or any other language that you
 want.
 
 .. index::
@@ -160,20 +155,19 @@ To translate or modify all of the system's phrases you first have to export a tr
 CSV form. And to do that, you have to install a language into Open ERP. To load a translation
 that already exists in Open ERP use
 :menuselection:`Administration --> Translations --> Load an Official Translation`
-choose a language and then click :guilabel:`Start Installation`.
+choose a language and then click :guilabel:`Load`.
 
 Then export it using 
-:menuselection:`Administration --> Translations --> Import/Export --> Export a Translation file. 
+:menuselection:`Administration --> Translations --> Import/Export --> Export Translation`. 
 Select the language, then the :guilabel:`CSV File` format, then one or more (or all) modules.
-Click :guilabel:`Get File` to start the download process, then click the small 
-:guilabel:`Save` icon to save the file somewhere. A French translation would be
-named :file:`fr_FR.csv` by default, but you can name it whatever you like. 
+Click :guilabel:`Export` to start the export process, then click the small 
+:guilabel:`Save As` icon to save the file somewhere.
 
 .. note:: UTF-8 format
 
 	The CSV file is encoded in the UTF-8 format.
 	Make sure that you retain this format when you open the file in a spreadsheet program because
-	if you **don't** retain it you risk seeing strange character strings in place of accented
+	if you **do not** retain it you risk seeing strange character strings in place of accented
 	characters.
 
 .. figure::  images/csv_transl.png
@@ -189,7 +183,7 @@ these column names, remains untouched.
 
 The :guilabel:`src`  field contains the base text in English,
 and the :guilabel:`value` field contains a translation into another conventional language or into a
-specialist technical phrase. If there's nothing at all in the :guilabel:`value` field then the
+specialist technical phrase. If there is nothing at all in the :guilabel:`value` field then the
 English translation will automatically be used on the the form you see.
 
 .. tip:: Where should you modify the text?
@@ -199,12 +193,12 @@ English translation will automatically be used on the the form you see.
    Which line should you modify?
    Refer to the two columns :guilabel:`type` (in column B) and :guilabel:`name` (in column C).
    Some lines have the name :guilabel:`ir.ui.menu` in the :guilabel:`name` column which shows that this is a menu entry.
-   Others have :guilabel:`selection` in the :guilabel:`type` column, which indicates that you'd see this entry in a drop-down
-   menu.
+   Others have :guilabel:`selection` in the :guilabel:`type` column, which indicates that you would
+   see this entry in a drop-down menu.
 
 You should then load the new file into your Open ERP system using the menu
-:menuselection:`Administration --> Translations --> Import/Export --> Import a Translation file`. 
-You've then got two ways forward:
+:menuselection:`Administration --> Translations --> Import/Export --> Import Translation`. 
+You have then got two ways forward:
 
 * you can overwrite the previous translation by using the same name as before (so you could have a
   special 'standard French' translation by reusing the :guilabel:`Name` \ ``Français``\   and
@@ -212,9 +206,9 @@ You've then got two ways forward:
 
 * you could create a new translation file which users can select in their :guilabel:`Preferences`.
 
-If you're not connected to the translated language, click :guilabel:`Preferences`, select the
-language in :guilabel:`Language` and finally click :guilabel:`OK` to load the new language with its
-new terminology.
+If you are not connected to the translated language, click :guilabel:`Edit Preferences`, select the
+language in :guilabel:`Language` from the :guilabel:`Preferences` tab and finally click :guilabel:`Save`
+to load the new language with its new terminology.
 
 .. tip:: Partial translations
 
@@ -227,7 +221,7 @@ Changes through the client interface
 
 You can also change labels and other screen items on screen in the web client. 
 To do that, open the form that you want to translate, then click the 
-:guilabel:`Translate this resource.` icon to its top right. 
+:guilabel:`Translate` icon to its bottom right. 
 You then have the choice of translating:
 
 * the data in the system (contained in the :guilabel:`Fields`),
@@ -244,13 +238,13 @@ The procedure is slightly different using the GTK client. In this you just right
 with the mouse. You can choose to translate the item itself or the whole view.
 
 This method is simple and quick when you only have a few entries to modify, but it can become
-tiresome and you can lose a lot of time if you've got to change some terms across the whole system.
+tiresome and you can lose a lot of time if you have got to change some terms across the whole system.
 
 In that case it would be better to use the translation method that employs a CSV file.
 
-.. tip:: Tacking account of translations
+.. tip:: Taking account of translations
 
-   In the GTK client the modified terms aren't updated immediately.
+   In the GTK client the modified terms are not updated immediately.
    To see the effects of the modifications you must close the current window and then reopen the
    form.
 
