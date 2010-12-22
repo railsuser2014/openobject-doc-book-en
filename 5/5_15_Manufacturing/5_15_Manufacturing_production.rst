@@ -405,14 +405,14 @@ buy bottles of cola individually or in a pack of 6 bottles. The pack and the bot
 different products and the barcodes used are also different.
 
 But customers have the right to open a pack and extract some bottles to take them
-individually to the checkout. The supermarket can't track its stock in packs and bottles any more, but
+individually to the checkout. The supermarket can not track its stock in packs and bottles any more, but
 only individually in bottles.
 
 So you can define a bill of materials for sale which defines a pack as an assembly of 6 bottles.
-Then when you've sold a pack, you can find a pack on the invoice or bill of sale but the associated
+Then when you have sold a pack, you can find a pack on the invoice or bill of sale but the associated
 stock operation will still be 6 bottles.
 
-In the case of this assembly, this isn't a production order to transform the product. The
+In the case of this assembly, this is not a production order to transform the product. The
 transformation is done directly between the order and the set.
 
 .. note:: Assemblies and Purchases
@@ -427,7 +427,7 @@ Configurable Bills of Materials
 --------------------------------
 
 In Open ERP you can define several bills of materials for the same product. In fact you can have
-several manufacturing methods or several approved raw materials for a given product. You'll see in
+several manufacturing methods or several approved raw materials for a given product. You will see in
 the following section that the manufacturing procedure (the routing) is attached to the Bill of
 Materials, so the choice of bill of materials implicitly includes the operations to make it.
 
@@ -436,7 +436,7 @@ system to enable Open ERP to select one of them for use. By default the bill of 
 lowest sequence number is selected by the system.
 
 To gain more control over the process during the sale or procurement, you can use **properties**.
-The menu :menuselection:`Production Management --> Configuration --> Properties` enables you to
+The menu :menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Properties` enables you to
 define properties, which can be defined arbitrarily to help you select a
 bill of materials when you have a choice of BoMs.
 
@@ -466,8 +466,8 @@ when the salesperson goes to encode a product line he can attach the properties 
 product must be manufactured, Open ERP will automatically choose the bill of materials that matches
 the defined properties in the order most closely.
 
-Note the properties are only visible in the Bills of Materials and Sales Management if you're
-working in the Extended View mode. If you can't see it on your screen add the group ``Useability /
+Note the properties are only visible in the Bills of Materials and Sales Management if you are
+working in the Extended View mode. If you can not see it on your screen add the group ``Useability /
 Extended View`` to your user.
 
 .. figure:: images/sale_line_property.png
