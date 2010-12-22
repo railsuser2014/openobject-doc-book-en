@@ -4,9 +4,9 @@
 
 .. _ch-crm:
 
-********************************
-Customer Relationship Management
-********************************
+****************************************
+Keep track of your Customers & Suppliers
+****************************************
 
  *It's often said that the customer is king. You would treat all your customers as royalty, 
  at the center of your attention if you had a way of keeping your eyes on them at all times.
@@ -63,8 +63,9 @@ using the :guilabel:`CRM profile` and no particular chart of accounts configured
 .. toctree::
 
     2_5_CRM_partners
+    2_5_CRM_advanced
     2_5_CRM_case
-    6_17_Purchases_srm
+    2_5_CRM_srm
     2_5_CRM_profiling
 
 .. raw:: html

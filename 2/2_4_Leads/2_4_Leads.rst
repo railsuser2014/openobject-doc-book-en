@@ -1,22 +1,19 @@
+A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
+ 
+Often leads are not registered centrally, which makes it very difficult to find the appropriate information.
 
-Leads
-=====
-
-A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information which too often gets lost because it is registered nowhere. 
 Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
 When a lead requires follow up, it will be converted to a sales opportunity.
 
 For example, the following events could result in the creation of one or several leads:
 
-* A business card from a prospective customer met briefly at an exhibition: you must contact him
+* A business card from a prospective customer met briefly at an exhibition: you have to contact him
   again to qualify the lead and to know if there is any possibility of a key sales opportunity,
 
-* A database of potential customers in a given sector and region. The potential customers must be
-  contacted again individually or using a mass mailing to determine which contacts need to be followed
-  up,
+* A database of potential customers in a given sector and region. The potential customers have to be
+  contacted again individually or through a mass mailing to determine which contacts require further follow-up,
 
-* A contact that you've been given by a friend. You must then qualify it before starting to assign a
-  salesperson to the contact,
+* A contact that you have been given by a friend. You have to qualify it before assigning a salesperson to the contact,
 
 * A form completed on your website directly integrated into Open ERP. Before converting the form
   into a sale proposition or opportunity, you should read and handle the person's request.
@@ -33,8 +30,8 @@ System users in the pre-sales department will usually work on leads. Once these 
 converted into customers or sales opportunities the sales department pays individual attention to
 each opportunity.
 
-Storing your Business Cards efficiently
----------------------------------------
+Storing your Business Cards effectively
+=======================================
 
 New prospects are usually entered as a lead in the system. This means that you do not create a
 partner form or sales opportunity until you have qualified whether the lead is interesting or not.
@@ -104,7 +101,7 @@ There are other methods of importing leads automatically or semi-automatically:
 These different methods are described in the next CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
-----------------
+================
 
 To help the users organize and handle leads efficiently, Open ERP provides several menus in the CRM
 system that can be used depending on the needs of each:
@@ -142,8 +139,8 @@ suspect:
 
 * ``Waiting`` : waiting for a response from the suspect.
 
-Converting leads into customers or opportunities
-------------------------------------------------
+Converting Leads into Customers or Opportunities
+================================================
 
 If a lead is interesting you convert it into a partner in the system. To do that, push the button
 :guilabel:`Convert to Partner`. Open ERP opens a partner form with the information from the lead entered

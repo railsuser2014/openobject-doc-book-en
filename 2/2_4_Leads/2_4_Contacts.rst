@@ -187,7 +187,7 @@ install.
    *Selecting parameters for CRM modules for the reader of this chapter*
 
 Organizing Prospects
---------------------
+====================
 
 If you have installed the management of prospects and opportunities, Open ERP implements the
 following workflow for the qualification of prospects and future opportunities.

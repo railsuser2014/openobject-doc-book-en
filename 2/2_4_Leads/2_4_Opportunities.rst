@@ -1,6 +1,6 @@
 
-Sales Opportunities
-===================
+Tracking your Opportunities
+===========================
 
 While a lead represents the first contact with a prospect yet to be qualified, a sales opportunity
 represents a potential contract. Each opportunity must be followed up by a salesperson spending time
@@ -9,9 +9,6 @@ to make a quotation or the cancellation of the opportunity.
 Leads are generally handled en masse, with the automation of certain responses or emails. 
 Opportunities, in contrast, are usually tracked one by one by the salespeople because that involves
 a process of negotiation.
-
-Ensuring that you track opportunities
--------------------------------------
 
 Just like leads, Open ERP provides several menus to handle sales opportunities efficiently. All
 the menus for opportunities are under the menu :menuselection:`CRM & SRM --> Sales -->
@@ -44,8 +41,16 @@ Unassigned Opportunities` to do this. This gives you a list of all opportunities
 to a salesperson. The manager can the enter the salesperson responsible for the opportunity into the
 field :guilabel:`Responsible`.
 
-The company calendar
---------------------
+Geolocalize your Opportunities
+==============================
+
+.. todo:: add new topic Geolocalize your opportunities
+
+
+
+
+Planning your Meetings effectively
+==================================
 
 There are several methods for entering a new meeting with a partner. The first method is to enter
 the meeting directly in the company calendar. To do that, use the menu :menuselection:`CRM & SRM -->
@@ -88,10 +93,10 @@ along to create an event of several hours. Open ERP then opens an entry screen f
     Then in the Open ERP calendar you'll automatically find both these meetings and such information
     as business opportunities, technical interventions, and requests for staff meetings.
 
-Tracking phone calls
---------------------
+Track your Phone Calls
+======================
 
-Open ERP has functions to manage a telephone call centre. If,
+OpenERP has functions to manage a telephone call centre. If,
 when you installed the CRM module, you selected the option for calls 
 you'll be able to manage incoming and outgoing calls.
 
@@ -110,71 +115,6 @@ To enter details of a phone call, use one of the two following menus:
 
 The phone call will then be visible on the partner form to give you complete visibility of the
 events about that customer or supplier.
-
-Managing a Call Center
-----------------------
-
-You can manually encode calls that happen or you can pass them into Open ERP. But for mass
-campaigns, you can import a list of phone calls to make. To do this, click on the import link at the
-bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
-Import` at the top.
-
-Phone calls that have occurred in the open state. The different operators can be assigned calls and
-handle them one by one using the menu :menuselection:`CRM & SRM --> Phone Calls --> Outbound
---> New Outgoing Call`.
-
-The operator can open the calls one by one. For each call, after having contacted the customer, the
-operator can click on one of the following buttons:
-
-* :guilabel:`Cancel`: you cancel the call. For example you could cancel the call if you've tried to call them
-  more than three times.
-
-* :guilabel:`Held`: you've spoken to the customer by phone. In this case the operator can change the case
-  section and send it to sales opportunities, for example. You could alternatively leave it in this
-  state if you don't need to carry out any more actions with this customer.
-
-* :guilabel:`Not Held`: the customer hasn't been called, you'll try to call him again later.
-
-Advanced Customer Relations
----------------------------
-
-Open ERP also supplies several tools to improve and automate relationships with partners. They won't
-be described extensively here, just introduced briefly.
-
-.. index::
-   single: modules; portal_
-
-The supplier/customer portal gives you the ability to provide your suppliers and customers with
-constrained access to Open ERP. They will then be able to view or enter sets of information directly
-online to Open ERP. For example they could enter their orders, reprint their invoices, or work on
-communal projects. To activate the portal you should install the modules that start with the
-string :mod:`portal_`.
-
-The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for
-the email gateway are available in the :mod:`crm` module in the ``scripts`` subdirectory.
-
-Outlook and Thunderbird plugins let you synchronize your contacts between your email
-client and your ERP. They both enable you to create sales opportunities based on exchanges you have
-with the customer.
-
-The rules for automating actions enable you to send emails automatically based on the event,
-such as assigning opportunities to the most appropriate person. To access the CRM rules, use the
-menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
-
-.. index::
-   single: module; crm_profiling
-
-The segmentation tools let you create partner groups and act on each segment differently.
-For example you could create pricelists for each of the segments, or start phone marketing campaigns
-by segment. To enable the management of segmentation you should install the module
-:mod:`crm_profiling`.
-
-.. index::
-   single: module; base_report_designer
-
-The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
-letters for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
-mass mailing.
 
 
 .. Copyright © Open Object Press. All rights reserved.

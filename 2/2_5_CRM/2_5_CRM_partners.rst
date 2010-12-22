@@ -2,8 +2,8 @@
    single: Partner
 ..
 
-Partners
-========
+Organize your Partners
+======================
 
 In Open ERP, a partner represents all the entities that you can do business with. Some possible
 different types of partners are:
@@ -27,6 +27,11 @@ double data-entry and provides greater flexibility in the features available.
 So a partner can be both your supplier and your customer at the same time. This feature is
 particularly important when you have subsidiaries or franchises since transactions between the
 parent and its subsidiaries in these cases will generally be two-way.
+
+Understanding Standard Fields
+-----------------------------
+
+.. todo: add info
 
 To get a list of partners using demonstration data, use the menu :menuselection:`Partners -->
 Partners`.
@@ -61,10 +66,29 @@ then click the :guilabel:`Send SMS` Action icon.
 To create a company in Open ERP (that is – a new partner) you should at a minimum enter the
 company's :guilabel:`Name` in the partner form.
 
+Customizing Partner Fields
+--------------------------
+
+.. todo: add info
+
+Creating and Updating Partners
+------------------------------
+
+.. todo: add info
+
+Performing Actions on Partners
+
+.. todo: add info
+
+Filtering your Partners
+-----------------------
+
+.. todo: add info
+ 
 .. index:: Contact
 
-Contacts
---------
+Contacts / Addresses
+--------------------
 
 You can have several contacts for one partner. Contacts represent company employees that you're in
 contact with, along with their address details. For each address you can indicate their type (\

@@ -7,6 +7,32 @@ Profiling
 
 .. index:: prospect
 
+
+Using Call Center Features
+--------------------------
+
+You can manually encode calls that happen or you can pass them into Open ERP. But for mass
+campaigns, you can import a list of phone calls to make. To do this, click on the import link at the
+bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
+Import` at the top.
+
+Phone calls that have occurred in the open state. The different operators can be assigned calls and
+handle them one by one using the menu :menuselection:`CRM & SRM --> Phone Calls --> Outbound
+--> New Outgoing Call`.
+
+The operator can open the calls one by one. For each call, after having contacted the customer, the
+operator can click on one of the following buttons:
+
+* :guilabel:`Cancel`: you cancel the call. For example you could cancel the call if you've tried to call them
+  more than three times.
+
+* :guilabel:`Held`: you've spoken to the customer by phone. In this case the operator can change the case
+  section and send it to sales opportunities, for example. You could alternatively leave it in this
+  state if you don't need to carry out any more actions with this customer.
+
+* :guilabel:`Not Held`: the customer hasn't been called, you'll try to call him again later.
+
+
 Establishing the profiles of prospects
 --------------------------------------
 

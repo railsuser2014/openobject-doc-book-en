@@ -4,17 +4,35 @@
    single: Opportunities
    single: Campaigns
 
-***********************************************************
-Boost your Sales & Come up to your Customer's Expectations!
-***********************************************************
+******************************
+Tracking Leads & Opportunities
+******************************
 
 Whatever business your company is doing, every single sales act is related to your Customer.  
-This book will help you value your customer even more. The OpenERP CRM & Sales Business Application handles your full sales workflow (from lead to invoice). Track, drive and optimize your sales activities with OpenERP Customer Relationship Management! Offer an excellent customer service by improving issues management and automating follow up. Be mobile and sync your calendars with your mobile device. Correctly link important emails to the CRM directly from your mailbox (Outlook & Thunderbird). Easily integrate your e-mails with OpenERP so that you can reply from your own mailbox and have the answer stored in your CRM.
+Time to come up to your Customer's Expectations!
 
-Customer and Supplier Relationship Management (CRM)
-===================================================
+What's in it for you?
+=====================
 
-Use the OpenERP CRM application as from the very first business contact - either personal, by email, through your website, ...  OpenERP allows your sales team to concentrate on their deals and manage the full sales flow (lead qualification -> opportunity tracking -> quotation -> sales order) while keeping a global vision of each stage.
+* Track, drive and optimize your sales activities! Handle your full sales workflow, from lead to invoice.
+
+* Access to all information such as accounts & contacts in one place, directly at hand when you need it, even when you're working at home!
+
+* Offer an excellent Customer Service by improving issues management and automating follow up.
+
+* Be Mobile and sync your Calendars with your mobile device.
+
+* Link important e-mails to the CRM directly from your current mailbox (Outlook & Thunderbird).
+  Easily integrate your e-mails with OpenERP so that you can reply from your own mailbox and have the answer stored
+  in your CRM automatically.
+
+* Complete history of every action and transaction related to your valued customers and partners.
+
+* Drive your Marketing Campaigns!
+
+* Measure your business through up-to-date dashboards and reporting!
+
+Use the OpenERP CRM application as from the very first business contact - either personal, by e-mail, through your website, ...  OpenERP allows your sales team to concentrate on their deals and manage the full sales flow (lead qualification -> opportunity tracking -> quotation -> sales order) while keeping a global vision of each stage.
 
 Terminology
 -----------
@@ -22,7 +40,7 @@ Lead
   A lead represents a prospect (potential customer) or a future sales opportunity. A lead usually is not qualified and not assigned to a 
   sales person for follow-up. Example: a business card, a database of potential customers.
 Opportunity
-  A sales opportunity represents a potential contract. Each opportunity must be followed up by a salesperson spending time to make a
+  A sales opportunity represents a potential contract. Each opportunity has to be followed up by a salesperson spending time to make a
   quotation or cancel the opportunity.
 
 OpenERP Customer & Supplier Relationship management helps you boost the pre-sales activities of managing leads and opportunities.

@@ -1,9 +1,9 @@
 
 .. _part2-crm:
 
-################
-Boost your Sales
-################
+#########################################
+Boost your Sales & Deliver Great Services
+#########################################
 
  The Sales department is the engine of your company.
  Sales success drives staff motivation and boosts your company's dynamism,
@@ -20,6 +20,8 @@ Boost your Sales
  minimizing disruption to your operations when you first install it.
  Your staff can build on their previous productivity by continuing to use their email and office
  systems, now connected to OpenERP, transferring to the OpenERP interface only if they need to.
+
+This book will help you value your customer and partner relations even more.
 
 .. toctree::
     :maxdepth: 1
