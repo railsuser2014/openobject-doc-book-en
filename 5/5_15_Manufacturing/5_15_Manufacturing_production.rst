@@ -3,7 +3,7 @@ Management of production
 ========================
 
 Production Orders describe the operations that need to be carried out and the raw materials usage
-for each stage of production, You use specifications (bills of materials) 
+for each stage of production, You use specifications (bills of materials)
 to work out the raw material requirements
 and the manufacturing orders needed for the finished products.
 
@@ -28,7 +28,7 @@ Use of Bills of Materials
 ---------------------------
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
-product. To illustrate the concept of specification you're going to work on a cabinet where the
+product. To illustrate the concept of specification you are going to work on a cabinet where the
 manufacturing plan is given by the figure :ref:`fig-mrparm`.
 
 .. _fig-mrparm:
@@ -119,28 +119,28 @@ calculate what will be consumed:
 
 .. table:: Total Quantities
 
-   ============  =================  ===============
-   Product Code  Quantity           Unit of Measure
-   ============  =================  ===============
-   BOIS002       2 * 0.083 + 0.25   m2
-   LIN040        1                  m
-   BOIS002       0.083 * 3          m2
-   TAQ000        12                 Unit
-   ============  =================  ===============
+   ============  ========================  ===============
+   Product Code  Quantity                  Unit of Measure
+   ============  ========================  ===============
+   BOIS002       0.416 (2 * 0.083 + 0.25)   m2
+   LIN040        1 (4 * 0.25)               m
+   BOIS010       0.249 (0.083 * 3)          m2
+   TAQ000        12 (3 * 4)                 Unit
+   ============  ========================  ===============
 
 .. tip:: Bill of Materials
 
    To see the bill of materials in tree view, use the menu :menuselection:`Manufacturing -->
-   Configuration --> Bill of Materials --> Bill of Materials Structure`.
+   Master Data --> Bill of Materials` then select the product and click on action `Bill of Materials Structures`.
 
 .. figure:: images/mrp_bom_tree.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Bill of Materials structure*
 
-Use the menu :menuselection:`Manufacturing --> Configuration --> Bill of Materials --> New Bill of
-Materials` to define a new bill of materials.
+Use the menu :menuselection:`Manufacturing --> Master Data --> Bill of Materials`
+and click on `New` button to define a new bill of materials.
 
 .. tip::The different views
 
@@ -148,7 +148,7 @@ Materials` to define a new bill of materials.
 
     * From the list, select a bill of materials name and then click :guilabel:`Other View`,
 
-    * From a product form use the menu :guilabel:`Structure of Bill of Materials` to the right.
+    * From a product form use the menu :guilabel:`Product BoM Structure` to the right.
 
 .. figure:: images/mrp_bom.png
    :scale: 75
@@ -160,7 +160,7 @@ In the area below the bill of materials you should set the finished product, whi
 manufactured or assembled. Once the product has been selected, Open ERP automatically completes the
 name of the bill of materials and the default Unit of Measure for this product.
 
-The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and 
+The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and
 the :guilabel:`Routing` field will be described in
 more detail later in the chapter.
 
@@ -171,7 +171,7 @@ the quantities needed to produce them from the bill of materials.
 .. index::
    single: BoM; revisions
 
-The second tab, :guilabel:`Revisions`, is used to set down all the changes made to the 
+The second tab, :guilabel:`Revisions`, is used to set down all the changes made to the
 bill of materials. After each
 change you can specify a revision number and some notes on the modifications you carried out.
 
@@ -186,17 +186,17 @@ change you can specify a revision number and some notes on the modifications you
 
    *Revisions of a Bill of Materials*
 
-In the third tab, :guilabel:`Properties`, you can put a free text reference to a plan, 
+In the third tab, :guilabel:`Properties`, you can put a free text reference to a plan,
 a sequence number that is
 used to determine the priorities between bills of materials, dates between which a bill of materials
 is valid, and values for rounding and product efficiency.
 
-:guilabel:`Rounding` is used to set the smallest :guilabel:`Unit of Measure` 
+:guilabel:`Rounding` is used to set the smallest :guilabel:`Unit of Measure`
 for expressing the quantities of the selected
-product. So if you set the rounding to 1.00 you'll not be able to manufacture half a piece. The
+product. So if you set the rounding to 1.00 you will not be able to manufacture half a piece. The
 :guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacture. This loss
 can be set for the finished product or for each raw materials line. The impact of this efficiency
-figure is to reserve more raw materials for manufacture than you'd otherwise use just from the Bill
+figure is to reserve more raw materials for manufacture than you would otherwise use just from the Bill
 of Materials calculations.
 
 The final part of the third tab lets you set some properties for the product's manufacturing
@@ -236,7 +236,7 @@ BoMs each on a single level or in one BoM tree-structured on several levels.
 
 So if you select a BoM using intermediate products that automatically generates production orders
 based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
-manufacture a cabinet, you'd create 6 production orders:
+manufacture a cabinet, you would create 6 production orders:
 
 .. table:: Production Order
 
@@ -244,7 +244,7 @@ manufacture a cabinet, you'd create 6 production orders:
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
    PLET100       3         Unit
-   BOIS010       0.25      m2
+   BOIS010       0.249     m2
    ============  ========  ===============
 
 .. table:: Production Order
@@ -280,7 +280,7 @@ manufacture a cabinet, you'd create 6 production orders:
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   PANA100       2         Unit
+   PANLAT        2         Unit
    BOIS002       0.17      m2
    ============  ========  ===============
 
@@ -297,7 +297,7 @@ manufacture a cabinet, you'd create 6 production orders:
    ============  ========  ===============
 
 In the case where a single bill of materials is defined in multiple levels, a single manufacturing
-order will be generated for each cabinet, including all of the sub-BoMs. You'd then get the
+order will be generated for each cabinet, including all of the sub-BoMs. You would then get the
 following production order:
 
 .. table:: Single manufacture from a tree-structured BoM
@@ -309,7 +309,7 @@ following production order:
    BOIS002       0.17      m2
    BOIS002       0.25      m2
    LIN040        1         m
-   BOIS010       0.25      m2
+   BOIS010       0.249     m2
    TAQ000        12        Unit
    ============  ========  ===============
 
@@ -325,24 +325,24 @@ several production orders. If you only want a single production order you can de
 several levels.
 
 Sometimes, however, it is useful to define the intermediate product separately and not as part of a
-multi-level assembly even if you don't want separate production orders for intermediate
+multi-level assembly even if you do not want separate production orders for intermediate
 products.
 
 In the example, the intermediate product ETA100 is used in the manufacture of several different
-cabinets. So you'd want to define a unique BoM for it even if you didn't want any
+cabinets. So you would want to define a unique BoM for it even if you did not want any
 instances of this product to be built, nor wanted to re-write these elements in a series of
 different multi-level BoMs.
 
 If you only want a single production order for the complete cabinet, and not one for the BoM itself, you
 can define the BoM line corresponding to product ETA100 in the cabinet's BoM as type :guilabel:`Phantom`. Then
 it will automatically put ETA100's BoM contents into the cabinet's production order even though
-it's been defined as multi-level.
+it is been defined as multi-level.
 
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
 If you define the BoM for the ARM100 cabinet in the way shown by the table below,
-you'll get two production orders when the order is confirmed, as shown in the tables below that.
+you will get two production orders when the order is confirmed, as shown in the tables below that.
 
 .. table:: Definition and use of phantom BoMs
 
@@ -365,7 +365,7 @@ you'll get two production orders when the order is confirmed, as shown in the ta
    PANLAT        2         Unit
    BOIS002       0.25      m2
    LIN040        1         m
-   BOIS010       0.25      m2
+   BOIS010       0.249     m2
    TAQ000        12        Unit
    ============  ========  ===============
 
@@ -393,8 +393,8 @@ For example if you deliver the cabinet in pieces for self-assembly, set the ARM1
 ``Assembly`` .
 
 When a salesperson creates an order for an ARM100 product, Open ERP automatically changes the ARM100
-from a set of components into an identifiable package for sending to a customer. 
-Then it asks the storesperson to pack 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100. 
+from a set of components into an identifiable package for sending to a customer.
+Then it asks the storesperson to pack 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100.
 This is described as an ARM100 not just the individual delivered products.
 
 Example: Large distributor
@@ -437,7 +437,7 @@ lowest sequence number is selected by the system.
 
 To gain more control over the process during the sale or procurement, you can use **properties**.
 The menu :menuselection:`Production Management --> Configuration --> Properties` enables you to
-define properties, which can be defined arbitrarily to help you select a 
+define properties, which can be defined arbitrarily to help you select a
 bill of materials when you have a choice of BoMs.
 
 .. note:: Properties
@@ -492,19 +492,19 @@ has two methods of manufacturing this cabinet:
 
 You define two bills of materials for the same cabinet. To distinguish between them, you will define
 to properties in the same group: ``manual assembly`` and ``production line assembly`` . On the quotation, the
-salesperson can set the method of manufacture he wants on each order line, 
+salesperson can set the method of manufacture he wants on each order line,
 depending on the quantities and the lead time requested by the customer.
 
 .. index::
    single: BoM, substitute products
-   
+
 .. note:: bills of materials and substitute products
 
     In some software, you use the term ``substitute`` for this principle of configurable properties in
     a bill of materials.
 
 By putting a bill of materials on its own line, you can also implement substitute products. You set
-the bill of materials to type ``Assembly`` to make the substitution transparent and to prevent Open ERP 
+the bill of materials to type ``Assembly`` to make the substitution transparent and to prevent Open ERP
 from proposing an intermediate production order.
 
 Manufacturing
@@ -610,7 +610,7 @@ Producing an Intermediate Product
 
 To understand the implications of requirements calculation, you must know the configuration of the
 sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of
-Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition 
+Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition
 of the selected product.
 
 .. _fig-mrpbomtree:
@@ -679,7 +679,7 @@ manufacture of the computer PC2 using the order created earlier. So return to th
 production orders to start :menuselection:`Manufacturing --> Production Orders --> Production Orders
 to start`.
 
-You'll find computer PC2 which has been sold to the customer, 
+You'll find computer PC2 which has been sold to the customer,
 as shown in the figure :ref:`fig-mrpprdlis`.
 
 .. _fig-mrpprdlis:
@@ -691,7 +691,7 @@ as shown in the figure :ref:`fig-mrpprdlis`.
    *List of production orders*
 
 Just as for product CPU_GEN, confirm the production order between two dates: start of production and end
-of production. 
+of production.
 
 .. todo:: Between two dates? What does that mean?
 
@@ -730,7 +730,7 @@ be done, there, as shown in the figure :ref:`fig-mrppacko`.
 
    *List of packing operations to be done*
 
-The packing orders are presented in priority order of despatch 
+The packing orders are presented in priority order of despatch
 so the storesperson must begin with the orders
 at the top of the list. Confirm that your packing list has been created by looking for the customer
 name ( ``Agrolait`` ) or by its reference ( ``SO007`` ). Click on it and then click the button
@@ -753,7 +753,7 @@ Invoicing at delivery
 
 Periodically the administrator or an accountant can send invoices based on the deliveries that have
 been carried out. To do that, you can use the menu :menuselection:`Stock Management --> Outgoing
-Products --> Packing to Invoice --> Packing by Invoice Method`. 
+Products --> Packing to Invoice --> Packing by Invoice Method`.
 You then get a list of all the deliveries that have been made but
 haven't yet been invoiced.
 
@@ -767,7 +767,7 @@ invoice for each delivery individually.
 
    *Invoicing of deliveries*
 
-Invoices are generated automatically in the ``Draft`` state by Open ERP. 
+Invoices are generated automatically in the ``Draft`` state by Open ERP.
 You can modify invoices before approving them finally.
 
 .. figure:: images/mrp_invoice_list.png
@@ -791,7 +791,7 @@ serial number indicated on the product MB1. To look through the detailed history
 Find the product corresponding to the product or lot number. Once it's been found you can use
 traceability as described in the section :ref:`sect-lotmgt` in the :ref:`ch-stocks` chapter.
 
-.. index:: 
+.. index::
    single: manufacturing order
    single: production order
    single: order; manufacturing
@@ -843,7 +843,7 @@ the production and the operations needed by the assembly staff.
 
 If you want to start production, click the button :guilabel:`Confirm Production`, and Open ERP then
 automatically completes the :guilabel:`Moves` fields in the :guilabel:`Consumed Products` and
-:guilabel:`Finished Products` fields. 
+:guilabel:`Finished Products` fields.
 The information in the :guilabel:`Consumed Products` tab can be changed if:
 
 * you want to enter a serial number for raw materials,
@@ -851,13 +851,13 @@ The information in the :guilabel:`Consumed Products` tab can be changed if:
 * you want to change the quantities consumed (lost during production).
 
 For traceability you can set lot numbers on the raw materials used, or on the finished
-products. To do this click on one of the lines of the first or the third tab. 
+products. To do this click on one of the lines of the first or the third tab.
 Note the :guilabel:`Production lot` and :guilabel:`Tracking lot` numbers.
 
 Once the order is confirmed, you should force the reservation of materials
 using the :guilabel:`Force Reservation` button. This means that you don't have
 to wait for the scheduler to assign and reserve the raw materials from your stock for this
-production run. This shortcuts the procurement process. 
+production run. This shortcuts the procurement process.
 
 If you don't want to change the priorities, just
 leave the production order in this state and the scheduler will create a plan based on the priority
@@ -871,7 +871,7 @@ consumed automatically from stock, which means that the draft ( ``Waiting`` ) mo
 Once the production is complete, click :guilabel:`Production Finished`. The finished products are
 then moved into stock.
 
-.. index:: 
+.. index::
    single: scheduler
    single: requirements planning
 

@@ -2,7 +2,7 @@
 .. index::
    single: Manufacturing
    single: production; management
-   
+
 .. _ch-mnf:
 
 *************
@@ -33,7 +33,7 @@ types of products:
 
 * Mixtures: mixing, chemical processes, distillation.
 
-You'll work in two areas: on products in the first part of this chapter, and on operations in the
+You will work in two areas: on products in the first part of this chapter, and on operations in the
 second part. The management of products depends on the concept of classifications while the
 management of operations depends on routing and workcenters.
 
@@ -52,7 +52,7 @@ management of operations depends on routing and workcenters.
     * Building: Plans.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`mrp` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`mrp` and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 
