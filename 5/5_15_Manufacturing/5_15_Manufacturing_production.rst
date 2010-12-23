@@ -825,7 +825,7 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 
    *Process for handling a production order*
 
-The `Scheduled date` fields,`Product Qty` and `Reference`, are automatically completed when the form is first opened.
+The `Scheduled date` , `Product Qty` and `Reference`, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The :guilabel:`Product UOM` by
 default is completed automatically by Open ERP when the product is first selected.
 
@@ -883,15 +883,15 @@ Scheduling
 ===========
 
 The requirements scheduler is the calculation engine which plans and prioritises production
-and purchasing automatically from the rules defined on these products. It's started once
-per day. You can also start it manually using the menu :menuselection:`Manufacturing --> Compute All
-Schedulers`. This uses all the relevant parameters defined in the products, the suppliers and the company
+and purchasing automatically from the rules defined on these products. It is started once
+per day. You can also start it manually using the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+This uses all the relevant parameters defined in the products, the suppliers and the company
 to determine the priorities between the different production orders, deliveries and supplier
 purchases.
 
 You can set the starting time by modifying the corresponding action in the menu
 :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Modify the
-``Run MRP Scheduler`` configuration document.
+``Run mrp Scheduler`` configuration document.
 
 .. figure:: images/stock_cron.png
    :scale: 75
