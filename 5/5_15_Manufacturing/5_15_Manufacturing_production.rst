@@ -522,21 +522,21 @@ described in the preceding chapter:
 
 * Using the Production plan.
 
+Clearly it is also possible to start production manually. To do this you can use the menu
+:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+
 .. figure:: images/mrp_auto.png
    :scale: 75
    :align: center
 
-   *Automatically proposing production orders*
-
-Clearly it's also possible to start production manually. To do this you can use the menu
-:menuselection:`Manufacturing --> Production Orders --> New Production Order`.
+   *Menufacturing Order*
 
 .. index::
    single: module; mrp_jit
 
-If you haven't installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
+If you have not installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
 using Open ERP to schedule the Production Orders automatically using the
-various system rules. To do this use the menu :menuselection:`Manufacturing --> Compute All Schedulers`.
+various system rules. To do this use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 
 Workflow for complete production
 =================================
@@ -559,7 +559,7 @@ on the new database installed with the demonstration data. In the order you can 
 .. tip:: Demonstration data
 
     To follow the workflow shown below exactly, you should keep the same quantities as in the
-    example and start from a new database. Then you won't run into exceptions that would result
+    example and start from a new database. Then you will not run into exceptions that would result
     from a lack of stock.
 
 This more advanced case of handling problems in procurement, will be sorted out later in the
@@ -570,8 +570,8 @@ The customer order
 
 .. index:: quotation
 
-Begin by encoding a customer order. To do this, use the menu :menuselection:`Sales Management -->
-Sales Orders -> New Quotation`. Enter the following information:
+Begin by encoding a customer order. To do this, use the menu :menuselection:`Sales -->
+Sales --> Sales Order`. Enter the following information:
 
 * :guilabel:`Customer` : Agrolait,
 
@@ -588,8 +588,16 @@ Sales Orders -> New Quotation`. Enter the following information:
   * :guilabel:`Procure method` : Make To Order.
 
 Once the quotation has been entered you can confirm it immediately by clicking the button
-:guilabel:`Confirm Order` at the bottom to the right. Keep note of the order reference because this
-follows all through the process. Usually, in a new database, this will be ``SO007`` . At this stage
+:guilabel:`Confirm Order` at the bottom to the right, the manufacturing order automatically generated.
+
+.. figure:: images/mrp_auto_generate.png
+   :scale: 75
+   :align: center
+
+   *Automatically generated manufacturing orders from sale order*
+
+Keep note of the order reference because this follows all through the process.
+Usually, in a new database, this will be ``SO007`` . At this stage
 you can look at the process linked to your order using the :guilabel:`Process` button above and to the right
 of the form.
 
@@ -599,8 +607,7 @@ of the form.
 
    *Process for handling Sales Order SO007*
 
-Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All
-Schedulers`.
+Start the requirements calculation using the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 
 .. index::
    single: semi-finished product
@@ -619,36 +626,36 @@ of the selected product.
    :scale: 75
    :align: center
 
-   *Composition of product PC2 in the demonstration data*
+   *Structure of BoM for product PC2*
 
 Manufacturing the PC2 computer must be done in two steps:
 
 1: Manufacture of the intermediate product: CPU_GEN
 
-2: Manufacture of the finished product using that intermediate product: PC2
+2: Manufacture of the finished product using that intermediate products: PC2
 
-The manufacturing supervisor can then consult the product orders using the menu
-:menuselection:`Manufacturing --> Production Orders --> Production Orders To Start`. You then get a
+The manufacturing supervisor can then consult the manufacturing orders using the menu
+:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`. You then get a
 list of orders to start and the estimated start date to meet the ordered customer delivery date.
 
 .. figure:: images/mrp_production_list.png
    :scale: 75
    :align: center
 
-   *List of production orders*
+   *List of manufacturing orders*
 
-You'll see the production order for CPU_GEN but not that for PC2 because that one depends on an
-intermediate product. Return to the production order for CPU_GEN and click below it. If there are
+You will see the production order for PC2 (MO/00034) and also CPU_GEN(MO/00034) because PC2 depends on an
+intermediate product CPU_GEN. Return to the production order for CPU_GEN. If there are
 several of them, select the one corresponding to your order using the reference that contains your
-order number (in this example ``SO007`` ).
+order number (in this example ``SO007:MO/00034`` ).
 
 .. figure:: images/mrp_production_form.png
    :scale: 75
    :align: center
 
-   *The detail of a production order*
+   *The detail of a manufacturing order for product CPU_GEN*
 
-The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN,
+The system shows you that you must manufacture product CPU_GEN using the components: CPU1, MB1, FAN,
 RAM. You can then confirm the production twice:
 
 Start of production: consumption of raw materials,
@@ -658,7 +665,7 @@ End of production: manufacture of finished product.
 At this stage, you should click to edit the line for the product MB1 to enter a lot number for it.
 The lot number is usually shown the parent chart, so you should just copy that over. To do that put
 the cursor in the field :guilabel:`Production Lot` and press :kbd:`<F1>` to create a new lot. Set a lot
-reference, for example: ``MB1345678`` . The system may then show you a warning because this lot is not in
+reference, for example: ``MO:PL/0000001`` . The system may then show you a warning because this lot is not in
 stock, but you can ignore this message.
 
 The production order must be in the closed state as shown in the figure :ref:`fig-mrpprdfrm`.
@@ -676,10 +683,9 @@ Manufacture of finished product
 
 Having manufactured the intermediate product CPU_GEN, Open ERP then automatically proposes the
 manufacture of the computer PC2 using the order created earlier. So return to the menu for
-production orders to start :menuselection:`Manufacturing --> Production Orders --> Production Orders
-to start`.
+production orders to start :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
-You'll find computer PC2 which has been sold to the customer,
+You will find computer PC2 which has been sold to the customer,
 as shown in the figure :ref:`fig-mrpprdlis`.
 
 .. _fig-mrpprdlis:
@@ -688,7 +694,7 @@ as shown in the figure :ref:`fig-mrpprdlis`.
    :scale: 75
    :align: center
 
-   *List of production orders*
+   *Complete the production of PC2*
 
 Just as for product CPU_GEN, confirm the production order between two dates: start of production and end
 of production.
