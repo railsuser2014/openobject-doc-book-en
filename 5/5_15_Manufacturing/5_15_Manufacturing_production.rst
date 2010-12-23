@@ -575,7 +575,7 @@ Sales --> Sales Order`. Enter the following information:
 
 * :guilabel:`Customer` : Agrolait,
 
-* :guilabel:`Shipping Policy` : Invoice from picklist (second tab),
+* :guilabel:`Shipping Policy` : Invoice from Delivery(second tab),
 
 * :guilabel:`Order Line` :
 
@@ -724,9 +724,8 @@ Delivery of product to the customer
    single: packing
 
 When the products have been manufactured, the storesperson automatically finds the order in his
-list of items to do. To see the items waiting for delivery, use the menu :menuselection:`Stock
-Management --> Outgoing Products --> Available Packing`. You'll find lists of packing to
-be done, there, as shown in the figure :ref:`fig-mrppacko`.
+list of items to do. To see the items waiting for picking, use the menu :menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`.
+You will find lists of packing to be done, there, as shown in the figure :ref:`fig-mrppacko`.
 
 .. _fig-mrppacko:
 
@@ -739,13 +738,12 @@ be done, there, as shown in the figure :ref:`fig-mrppacko`.
 The packing orders are presented in priority order of despatch
 so the storesperson must begin with the orders
 at the top of the list. Confirm that your packing list has been created by looking for the customer
-name ( ``Agrolait`` ) or by its reference ( ``SO007`` ). Click on it and then click the button
-:guilabel:`Approve`.
+name ( ``Agrolait`` ) or by its reference ( ``SO007`` ).
 
 .. tip:: Packing and Delivery
 
     Depending on whether you work in the simplified or extended mode you may need a further
-    step to make a delivery to your customer, so you'd have to carry out the two steps:
+    step to make a delivery to your customer, so you would have to carry out the two steps:
 
     * picking list,
 
@@ -758,13 +756,12 @@ Invoicing at delivery
 ----------------------
 
 Periodically the administrator or an accountant can send invoices based on the deliveries that have
-been carried out. To do that, you can use the menu :menuselection:`Stock Management --> Outgoing
-Products --> Packing to Invoice --> Packing by Invoice Method`.
+been carried out. To do that, you can use the menu :menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`.
 You then get a list of all the deliveries that have been made but
-haven't yet been invoiced.
+have not yet been invoiced.
 
 So select some or all of the deliveries. Click on the action :guilabel:`Create Invoice`. Open ERP asks
-if you want to group the deliveries from the same partner into a single invoice or if you'd prefer to
+if you want to group the deliveries from the same partner into a single invoice or if you would prefer to
 invoice for each delivery individually.
 
 .. figure:: images/mrp_picking_invoice_form.png
@@ -792,9 +789,9 @@ Traceability
 Now suppose that the customer phones you to tell you about a production fault in a delivered
 product. You can consult the traceability through the whole manufacturing chain using the
 serial number indicated on the product MB1. To look through the detailed history, use the menu
-:menuselection:`Stock Management --> Traceability --> Production Lots`.
+:menuselection:`Warehouse --> Traceability --> Production Lots`.
 
-Find the product corresponding to the product or lot number. Once it's been found you can use
+Find the product corresponding to the product or lot number. Once it is been found you can use
 traceability as described in the section :ref:`sect-lotmgt` in the :ref:`ch-stocks` chapter.
 
 .. index::
