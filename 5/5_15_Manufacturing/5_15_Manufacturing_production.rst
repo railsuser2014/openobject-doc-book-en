@@ -804,8 +804,8 @@ Production order in detail
 ===========================
 
 To open a Production Order, use the menu
-:menuselection:`Manufacturing --> Production Orders --> New Production Order`. You get a blank form for
-entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
+:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click on `New` button.
+You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
 
 .. _fig-mrpprdnew:
 
@@ -825,9 +825,9 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 
    *Process for handling a production order*
 
-The date fields, priority and reference, are automatically completed when the form is first opened.
+The `Scheduled date` fields,`Product Qty` and `Reference`, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The :guilabel:`Product UOM` by
-default is completed automatically by Open ERP when the product is first created.
+default is completed automatically by Open ERP when the product is first selected.
 
 You then have to set two locations:
 
@@ -836,17 +836,18 @@ The location from which the required raw materials should be found, and
 The location for depositing the finished products.
 
 For simplicity, put the ``Stock`` location in both places. The field :guilabel:`Bill of Materials` will
-automatically be completed by Open ERP when you click the button :guilabel:`Compute Data`. You
+automatically be completed by Open ERP when you select the product.  You
 can then overwrite it with another BoM to specify something else to use for this specific
-manufacture.
+manufacture then Click the button :guilabel:`Compute Data`.
 
-The tabs :guilabel:`Planned Products` and :guilabel:`Work Orders` are also completed automatically when you click
-:guilabel:`Compute Data`. You'll find the raw materials there that are required for
+The tabs :guilabel:`Scheduled Products` and :guilabel:`Work Orders` are also completed automatically when you click
+:guilabel:`Compute Data`. You will find the raw materials there that are required for
 the production and the operations needed by the assembly staff.
 
 If you want to start production, click the button :guilabel:`Confirm Production`, and Open ERP then
-automatically completes the :guilabel:`Moves` fields in the :guilabel:`Consumed Products` and
-:guilabel:`Finished Products` fields.
+automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and
+:guilabel:`Products to Finish` field in :guilabel:`Finished Products` tab.
+
 The information in the :guilabel:`Consumed Products` tab can be changed if:
 
 * you want to enter a serial number for raw materials,
@@ -854,15 +855,15 @@ The information in the :guilabel:`Consumed Products` tab can be changed if:
 * you want to change the quantities consumed (lost during production).
 
 For traceability you can set lot numbers on the raw materials used, or on the finished
-products. To do this click on one of the lines of the first or the third tab.
-Note the :guilabel:`Production lot` and :guilabel:`Tracking lot` numbers.
+products.
+Note the :guilabel:`Production Lot` and :guilabel:`Pack` numbers.
 
 Once the order is confirmed, you should force the reservation of materials
-using the :guilabel:`Force Reservation` button. This means that you don't have
+using the :guilabel:`Force Reservation` button. This means that you do not have
 to wait for the scheduler to assign and reserve the raw materials from your stock for this
 production run. This shortcuts the procurement process.
 
-If you don't want to change the priorities, just
+If you do not want to change the priorities, just
 leave the production order in this state and the scheduler will create a plan based on the priority
 and your planned date.
 
@@ -871,7 +872,7 @@ and your planned date.
 To start the production of products, click :guilabel:`Start Production`. The raw materials are then
 consumed automatically from stock, which means that the draft ( ``Waiting`` ) movements become ``Done`` .
 
-Once the production is complete, click :guilabel:`Production Finished`. The finished products are
+Once the production is complete, click :guilabel:`Produce`. The finished products are
 then moved into stock.
 
 .. index::
