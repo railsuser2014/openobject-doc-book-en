@@ -146,14 +146,14 @@ Workcenters
 -----------
 
 Workcenters represent units of product, capable of doing material transformation operations. You can
-distinguish three types of workcenter: machines, tools and human resources.
+distinguish two types of workcenter: machines and human resources.
 
 .. note:: Workcenter
 
     Workcenters are units of manufacture consisting of one or several people and/or machines
     that can be considered as a unit for the purposes of forecasting capacity and planning.
 
-Use the menu :menuselection:`Manufacturing --> Configuration --> Workcenters` to define a new
+Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers` to define a new
 workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
 
 .. _fig-mrpwkc:
@@ -165,16 +165,8 @@ workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
    *Definition of a workcenter*
 
 A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and
-a description of operating hours or functionality. The figure :ref:`fig-mrpwkcwh` represents the hours from Monday
-to Friday, from 09:00 to 17:00 with a break of an hour from 12:00.
-
-.. _fig-mrpwkcwh:
-
-.. figure:: images/mrp_workcenter_working_hour.png
-   :scale: 75
-   :align: center
-
-   *Working hours for a workcenter*
+a description of operating hours or functionality. The figure :ref:`fig-mrpwkc` represents the hours from Monday
+to Friday, from 08:00 to 18:00 with a break of an hour from 12:00.
 
 You should show a description of the workcenter and its operations.
 
@@ -195,29 +187,29 @@ time.
     For example, for a printing workcenter, a cycle will be the printing of 1 page or of 1000 pages
     depending on the printer.
 
-To define the capacity properly it is necessary know, for each workcenter, what will be the
+To define the capacity properly it is necessary to know, for each workcenter, what will be the
 reference operation which determines the cycle. You can then define the data relative
 to the capacity.
 
-Capacity per cycle (CA): determine the number of operations that can be done in parallel during a
+`Capacity per Cycle` (CA) : determine the number of operations that can be done in parallel during a
 cycle. Generally the number defines the number of identical machines or people defined by the
 workcenter.
 
-Time for a cycle (TC): give the duration in hour for that or the operations defined by a cycle.
+`Time for 1 cycle (hour)` (TC) : give the duration in hour for that or the operations defined by a cycle.
 
-Time before production (TS): give the wait in hours to initialise production operations. Generally
+`Time before production` (TS) : give the wait in hours to initialise production operations. Generally
 this represents the machine setup time.
 
-Time after production (TN): give the delay in hours after the end of a production operation.
+`Time after production` (TN) : give the delay in hours after the end of a production operation.
 Generally this represents the cleaning time necessary after an operation.
 
-Effective time (ET): is a factor that is applied to the three times above to determine the real
+`Efficiency factor`  (ET) : is a factor that is applied to the three times above to determine the real
 production time. This factor enables you to readjust the different times progressively and as a
-measure of machine utilization. You can't readjust the other times because generally they're taken
+measure of machine utilization. You can not readjust the other times because generally they are taken
 from the machine's data sheet.
 
 The total time for carrying out X operations is then given by the following formula: ((C / CA) * TC
-+ TS + TN\_ * ET. In this formula the result of the division is rounded upwards. Then if the
++ TS + TN ) * ET. In this formula the result of the division is rounded upwards. Then if the
 capacity per cycle is 6 it takes 3 cycles to realize 15 operations.
 
 .. tip:: Multi-level routing
@@ -226,15 +218,9 @@ capacity per cycle is 6 it takes 3 cycles to realize 15 operations.
    You can select the routing on each level of a bill of materials.
    The levels are then linked to hierarchies of bills of materials.
 
-The second tab of the production order lets you define the links to analytical account to report the
-costs of the workcenter operations. If you leave the different fields empty Open ERP won't have any
+The `Hour Account` and `Cycle Account` lets you define the links to analytical account to report the
+costs of the workcenter operations. If you leave the different fields empty Open ERP will nott have any
 effect on the analytic accounts.
-
-.. figure:: images/mrp_workcenter_tab.png
-   :scale: 75
-   :align: center
-
-   *Data about analytic accounts for a workcenter*
 
 .. index::
    pair: routing; manufacturing
