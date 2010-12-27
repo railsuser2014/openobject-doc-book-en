@@ -50,9 +50,7 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
     - Click ``Remote Settings`` to open the System Properties window.
     - In the System Properties window, click the Advanced tab. 
     - In the Advanced section, click the ``Environment Variables`` button. 
-    - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory,
-      click Edit and add ;C:\Python26.
-      See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
+    - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory, click Edit and add ;C:\Python26. See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
 
     4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration Data Objects 1.2.1 (CDO 1.21)" from http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en
     Double-click Exchange Cdo to install it.
