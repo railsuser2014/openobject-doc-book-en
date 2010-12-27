@@ -12,6 +12,8 @@ With the Mozilla Thunderbird plugin you can carry out a series of OpenERP operat
 
 * send any attachment to an OpenERP document (such as proposals, projects, and tasks).
 
+This might be useful for sending documents about a customer project to the corresponding project in OpenERP, attaching documents to an order (such as proof of payment and order receipts), attaching documents to an employee file (such as a CV or annual appraisal).
+
 Installing the Thunderbird plugin
 ---------------------------------
 
@@ -33,17 +35,17 @@ Then proceed as follows:
 
 	#. From Thunderbird, open the menu :menuselection:`Tools --> Add-ons`.
 
-	#. Click Extensions, then click the :guilabel:`Install` button.
+	#. Click Extensions, then click the `Install` button.
 
 	#. Go to your desktop and select the file \ ``openerp_plugin.xpi``\. Click Open.
 
-	#. Click :guilabel:`Install Now` then restart Thunderbird.
+	#. Click `Install Now` then restart Thunderbird.
 
 Once the extension has been installed, a new ``OpenERP`` menu item is added to your Thunderbird menubar. 
 
 .. tip::  Thunderbird version
 
-	The OpenERP plugin for Thunderbird only works with Thunderbird version 2.0 and above.
+	The OpenERP plugin for Thunderbird works as from Thunderbird version 2.0.
 
 	So check your Thunderbird version before installing, and download the latest version that you need
 	from the following address: http://www.mozilla.org/products/thunderbird/
@@ -56,7 +58,7 @@ A little configuration needs to be done.
 
 .. note:: Before starting the configuration, make sure your gtk server and web server are running (xml-rpc should be allowed).
 
-Go to the ``OpenERP`` menubar and select :guilabel:` Configuration`.
+Go to the ``OpenERP`` menubar and select ` Configuration`.
 
 A configuration window appears enabling you to enter configuration data about your OpenERP server.
 
@@ -66,31 +68,31 @@ A configuration window appears enabling you to enter configuration data about yo
 
    *How to Connect to the Server*
 
-	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the :guilabel: `Change` button
+	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the `Change` button
 	   and type your server settings and xml-rpc port, e.g. ``http://127.0.0.1:8069``,
 
 	#. Select the database you want to connect to, and type the user and the password required to log in to the database,
 
-	#. Click the :guilabel: `Connect` button,
+	#. Click the `Connect` button,
 
-	#. On the ``Configuration Settings`` tab, under *Webserver Parameters* click the :guilabel: `Change` button
+	#. On the ``Configuration Settings`` tab, under *Webserver Parameters* click the `Change` button
 	   and type your web server settings, e.g. ``http://localhost:8080``,
 
-	#. Click the :guilabel: `Open` button to test the connection.
+	#. Click the `Open` button to test the connection.
 
 When your connection has succeeded, you would typically want to configure Thunderbird to fit your needs.
 
-To define extra document types, go to the :guilabel: `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
+To define extra document types, go to the `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
 
 Here is an example of how to configure extra document types. Suppose you would like to link mails to a purchase order.
 
-	#. In the :guilabel: `Title`, type Purchase Order,
+	#. In the `Title`, type Purchase Order,
 
-	#. In the :guilabel: `Document`, type the object from OpenERP, in this example ``purchase.order``,
+	#. In the `Document`, type the object from OpenERP, in this example ``purchase.order``,
 
-	#. In the :guilabel: `Image`, select an icon you would like to use,
+	#. In the `Image`, select an icon you would like to use,
 
-	#. Click the :guilabel: `Add` button to actually create the document type.
+	#. Click the `Add` button to actually create the document type.
 
 .. note:: To find the object you need in OpenERP, go to the menu :menuselection:`Administration --> Customization --> Database Structure --> Objects`. OpenERP will only show objects for which the corresponding Business Applications / Modules have been installed. You can only add objects to Thunderbird that are available in the selected database.
 
@@ -105,11 +107,11 @@ Using the Thunderbird plugin
 
 You can use the menu :menuselection:`OpenERP` for several things.
 
-The :guilabel: `Push` option allows you to archive e-mails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
+The `Push` option allows you to archive e-mails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
 
-The :guilabel: `Partner` allows you to open the Partner in OpenERP according to the e-mail (i.e. contact e-mail address) selected. 
+The `Partner` allows you to open the Partner in OpenERP according to the e-mail (i.e. contact e-mail address) selected. 
 
-With the :guilabel: `Document`, you can open the document concerned in OpenERP. Make sure you are logged in to the web version to use this functionality. You have to open the mail to use this feature. 
+With `Document`, you can open the document concerned in OpenERP. Make sure you are logged in to the web version to use this functionality. You have to open the mail to use this feature. 
 
 * Link a mail to an existing document in OpenERP
 
@@ -119,7 +121,7 @@ With the :guilabel: `Document`, you can open the document concerned in OpenERP. 
 
    *How to Access OpenERP from Thunderbird?*
 
-To archive an e-mail in OpenERP from Thunderbird, select the e-mail and click the :guilabel:`Push` button. Alternatively you can open the menu :menuselection:`OpenERP --> Push`: the ``Push to OpenERP`` screen will open.
+To archive an e-mail in OpenERP from Thunderbird, select the e-mail and click the `Push` button. Alternatively you can open the menu :menuselection:`OpenERP --> Push`: the ``Push to OpenERP`` screen will open.
 
 In the ``Link to an Existing Document`` section, select an object to which you like to add to your email and its attachments. You
 can select any object you defined in the ``Document Settings`` section and attach the selected mail to the selected record.

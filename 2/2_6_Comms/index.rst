@@ -1,44 +1,38 @@
 .. index::
-   single: Communications Tools
+   single: Communication Tools
 
-********************
-Communications Tools
-********************
+*******************
+Communication Tools
+*******************
 
- *Open ERP provides all the information you need to pursue your company's business opportunities
- effectively. But to stay productive with all the information you have to handle it's essential 
- that you can keep using your normal communications tools by interfacing them with Open ERP, 
- and not be limited just to Open ERP's interface.*
+ *OpenERP provides all the information you need to pursue your company's business opportunities
+ effectively. But to stay productive with all the information you have to handle it is essential 
+ that you can keep using your normal communication tools by interfacing them with OpenERP, 
+ and not be limited just to OpenERP's interface.*
 
-Open ERP can do most things you need to pursue your business opportunities. But there
-can be quite a quite a bit to learn, which reduces your efficiency while you're learning. And if
-that's true for a heavy user of the system, it's doubly true for an occasional user or someone who
-already makes heavy use of standard Office applications and can't easily change.
+OpenERP can do most things you need to pursue your business opportunities. But there
+can be quite a bit to learn, which reduces your efficiency while you are learning. And if
+that is true for a heavy user of the system, it is double true for an occasional user or someone who
+already makes heavy use of standard mail clients and cannot easily change.
 
-So for those who need to continue using their traditional Office applications to maintain their
-efficiency, Open ERP can be fitted out with interface adapters to some of the most common. Your
-users can participate in many Open ERP-maintained processes without ever leaving their familiar
-Office-based environment, and can avoid double data-entry yet link into Open ERP's database
+So for those who need to continue using their traditional mail clients to maintain their
+efficiency, OpenERP can be connected to Outlook and Thunderbird. Your
+users can participate in many OpenERP-maintained processes without ever leaving their familiar environment,
+and can avoid double data entry yet easily link information to OpenERP's database
 automatically.
 
-The three following modules are described:
+The two following modules are described:
 
-* Mozilla Thunderbird interface,
+* Mozilla Thunderbird Interface,
 
-* Microsoft Outlook interface,
-
-* Microsoft Word interface.
-
-These three modules were developed by the Axelor company (http://axelor.com/ , located in Paris).
-Thunderbird available through the official Open ERP site (http://www.openerp.com/download/modules/5.0/). 
+* Microsoft Outlook Interface.
 
 The chapter is a mix of installation and configuration instructions, and basic interaction exercises.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
+with :mod:`sale` and :mod:`crm` and their dependencies installed and no particular chart of accounts configured. 
 
-You will also need to have administrator access to your Windows PC to install the Outlook and Word
-interface adapters described in the chapter.
+You will also need to have administrator access to your Windows PC to install the Outlook adapter described in the chapter.
 
 .. raw:: html
 
@@ -48,7 +42,6 @@ interface adapters described in the chapter.
 
     2_6_Comms_outlook
     2_6_Comms_thunderbird
-    2_6_Comms_msword
 
 .. raw:: html
 
