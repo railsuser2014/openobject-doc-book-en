@@ -4,102 +4,151 @@
 Mozilla Thunderbird interface
 =============================
 
-Everything that you can do with the Outlook plugin you can also do with the Mozilla Thunderbird
-plugin – enabling you to carry out a series of Open ERP operations directly from Thunderbird, such
-as:
+With the Mozilla Thunderbird plugin you can carry out a series of OpenERP operations directly from Thunderbird, such as:
 
-* create a contact or partner from an email,
+* create a contact or partner from an e-mail,
 
-* save an email and its attachments in Open ERP,
+* save an e-mail and its attachments in OpenERP,
 
-* send any file attached to an Open ERP document (such as proposals, projects, and tasks).
+* send any attachment to an OpenERP document (such as proposals, projects, and tasks).
 
-Installing the Thunderbird extension
-------------------------------------
+Installing the Thunderbird plugin
+---------------------------------
 
-To be able to use the Thunderbird plugin you first have to install the Open ERP module \
-``thunderbird``\  . It may not be loaded in the core of the Open ERP Server so you might have
-to load it using one of the methods described at the end of :ref:`ch-inst`. Once you've got it into your
-server's filesystem it's installed the same way as all of the other modules you've handled so far.
+* Step 1: install the Thunderbird plugin in OpenERP
 
-You'll then have to install the Thunderbird extension. To do that, use the file \
-``tiny_plugin-2.0.xpi``\   which is found in the plugins directory of the :mod:`thunderbird`
-module. Don't install it again if it's already there (which it might be
-because you can use both Outlook and Thunderbird simultaneously to get the same Open ERP
-functionality – so some of your staff may use one and other may use the other). 
+Use the OpenERP Configuration Wizard and install the ``Customer Relationship Management`` application. In the *CRM Application Configuration* dialog under Plug-In, select Thunderbird.
+Then the *Thunderbird Plug-In* wizard appears. Next to the ``Thunderbird Plug-in`` field, click the ``Save As`` button to save the plugin to your desktop (or any other location on your computer).
 
-Then take the following steps:
+You can also download the installation manual by clicking the orange arrow next to ``Installation Manual``.  
 
-	#. From Thunderbird, open the menu :menuselection:`Tools --> Complementary Modules`.
+Another way to use the Thunderbird plugin, is by installing the OpenERP module \
+``thunderbird``\. When you install this module, the same Configuration Wizard as explained before will be displayed. Follow the same instructions.
 
-	#. Click the :guilabel:`Install` button.
+* Step 2: install the OpenERP extension in Thunderbird.
 
-	#. Select the file \ ``tiny_plugin-2.0.xpi``\.
+To do that, use the file \``openerp_plugin.xpi``\ that you saved on your desktop. 
+
+Then proceed as follows:
+
+	#. From Thunderbird, open the menu :menuselection:`Tools --> Add-ons`.
+
+	#. Click Extensions, then click the :guilabel:`Install` button.
+
+	#. Go to your desktop and select the file \ ``openerp_plugin.xpi``\. Click Open.
 
 	#. Click :guilabel:`Install Now` then restart Thunderbird.
 
-Once the extension has been installed, you have only to create a shortcut in your Thunderbird
-toolbar for the function :guilabel:`Archive to Open ERP`. Do it like this:
-
-	#. Click the right mouse button on the toolbar and select :guilabel:`Personalize`,
-
-	#. Place the icon :guilabel:`Archive to Open ERP` in your toolbar in the place of your choice.
+Once the extension has been installed, a new ``OpenERP`` menu item is added to your Thunderbird menubar. 
 
 .. tip::  Thunderbird version
 
-	The Open ERP plugin for Thunderbird only works with Thunderbird version 2.0 and above.
+	The OpenERP plugin for Thunderbird only works with Thunderbird version 2.0 and above.
 
 	So check your Thunderbird version before installing, and download the latest version that you need
 	from the following address: http://www.mozilla.org/products/thunderbird/
 
-Thunderbird user interface
---------------------------
+Configuring the Thunderbird plugin
+----------------------------------
 
-When you've installed the module the first thing to do is connect it to Open ERP from Thunderbird.
-To do this use the menu :menuselection:`Tools --> Open ERP Plugin`.
+When you have executed Installation Step 1 and Step 2, the first thing to do is connect Thunderbird to OpenERP.
+A little configuration needs to be done.
 
-A configuration window appears enabling you to enter configuration data about your Open ERP server.
+.. note:: Before starting the configuration, make sure your gtk server and web server are running (xml-rpc should be allowed).
+
+Go to the ``OpenERP`` menubar and select :guilabel:` Configuration`.
+
+A configuration window appears enabling you to enter configuration data about your OpenERP server.
 
 .. figure::  images/thunderbird_config.png
    :scale: 50
    :align: center
 
-   *Configuration for accessing Open ERP from Thunderbird*
+   *How to Connect to the Server*
 
-To archive an email in Open ERP from Thunderbird select the email and click on the icon
-:guilabel:`Archive in Open ERP`. Alternatively you could right-click the mouse: either opens a search
-dialog box.
+	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the :guilabel: `Change` button
+	   and type your server settings and xml-rpc port, e.g. ``http://127.0.0.1:8069``,
 
-This allows you to select an object that you'd like to add to your email and its attachments. You
-can select a partner, a task, a project, an analytical account, or any other object and attach 
-selected mail as .eml file in attachment of selected record.
+	#. Select the database you want to connect to, and type the user and the password required to log in to the database,
 
-You can create new case in crm using Create Case button.Select a section for which you want to
-create case.
+	#. Click the :guilabel: `Connect` button,
+
+	#. On the ``Configuration Settings`` tab, under *Webserver Parameters* click the :guilabel: `Change` button
+	   and type your web server settings, e.g. ``http://localhost:8080``,
+
+	#. Click the :guilabel: `Open` button to test the connection.
+
+When your connection has succeeded, you would typically want to configure Thunderbird to fit your needs.
+
+To define extra document types, go to the :guilabel: `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
+
+Here is an example of how to configure extra document types. Suppose you would like to link mails to a purchase order.
+
+	#. In the :guilabel: `Title`, type Purchase Order,
+
+	#. In the :guilabel: `Document`, type the object from OpenERP, in this example ``purchase.order``,
+
+	#. In the :guilabel: `Image`, select an icon you would like to use,
+
+	#. Click the :guilabel: `Add` button to actually create the document type.
+
+.. note:: To find the object you need in OpenERP, go to the menu :menuselection:`Administration --> Customization --> Database Structure --> Objects`. OpenERP will only show objects for which the corresponding Business Applications / Modules have been installed. You can only add objects to Thunderbird that are available in the selected database.
+
+.. figure::  images/thunderbird_document.png
+   :scale: 50
+   :align: center
+
+   *How to Add Extra OpenERP Document Types to Thunderbird?*
+
+Using the Thunderbird plugin
+----------------------------
+
+You can use the menu :menuselection:`OpenERP` for several things.
+
+The :guilabel: `Push` option allows you to archive e-mails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
+
+The :guilabel: `Partner` allows you to open the Partner in OpenERP according to the e-mail (i.e. contact e-mail address) selected. 
+
+With the :guilabel: `Document`, you can open the document concerned in OpenERP. Make sure you are logged in to the web version to use this functionality. You have to open the mail to use this feature. 
+
+* Link a mail to an existing document in OpenERP
 
 .. figure::  images/thunderbird_selection.png
    :scale: 50
    :align: center
 
-   *Selecting Open ERP objects from Thunderbird*
+   *How to Access OpenERP from Thunderbird?*
 
-.. tip:: Document Management
+To archive an e-mail in OpenERP from Thunderbird, select the e-mail and click the :guilabel:`Push` button. Alternatively you can open the menu :menuselection:`OpenERP --> Push`: the ``Push to OpenERP`` screen will open.
 
-	The Thunderbird plugin is compatible with Open ERP's document management. So if you install the
-	module document you could:
+In the ``Link to an Existing Document`` section, select an object to which you like to add to your email and its attachments. You
+can select any object you defined in the ``Document Settings`` section and attach the selected mail to the selected record.
+The plugin also allows you to select several documents at once, simply by selecting a document and pressing the ``ctrl`` button when selecting the next document.
 
-	* search through the content of your company's documents (those that have the type .doc, .pdf, .sxw
-	  and .odt) and also in archived emails,
+Do not forget to click the ``Search`` button to refresh the Documents list when you have selected a different document type.    
 
-	* have a shared filesystem that's connected to various Open ERP documents to share information and
-	  access it with your favorite browser,
+* Create a New Document
 
-	* organize and structure your documents (such as projects, partners and users) in Open ERP's
-	  system.
+This feature can be used to create any of the configured document types in the ``Document Settings`` tab.
+Suppose you would like to create a new lead from an e-mail. In the ``Create a New Document`` section, select ``CRM Lead``, then click the ``Create`` button. A new lead will be created in OpenERP from the selected e-mail.
 
-If you can't find a partner or contact to correspond with your email in Open ERP it's possible to
-create one on the fly simply by using the information contained in the email and clicking the
-:guilabel:`Create` button.
+* Create a New Contact / Partner
+
+If you cannot find a partner or contact for your e-mail in OpenERP, the Thunderbird plugin allows you to
+create one on the fly simply by using the information contained in the e-mail.
+
+Select the e-mail from which you want to create a new contact, then click the ``Push`` button.
+In the ``Create a New Contact`` section, click the ``New Contact`` button. This option offers two possibilities:
+either you just create a contact (address), or you create a partner with the contact linked to it.
+
+	- When you just want to create a new contact, complete the address data in the dialog box and click the ``Save`` button.
+	  The contact will then be created in OpenERP.
+
+	- When you also want to create a new partner, complete the contact data.
+	  Then click the ``Create Partner`` button, add the partner's name and click the ``Save`` button.
+
+	- You can also add a new contact to an existing partner. Click the ``Search`` button next to the Partner field
+	  and select the corresponding partner from the list. Then complete the contact data and click the ``Save`` button.
 
 .. figure::  images/thunderbird_creation.png
    :scale: 50
@@ -107,14 +156,30 @@ create one on the fly simply by using the information contained in the email and
 
    *Creating a contact on the fly from Thunderbird*
 
-To access archived data from different documents in Open ERP you can use the :guilabel:`Email
-Thunderbird` interface that appears over Open ERP documents.
+* Open the Document created in OpenERP
 
-.. note:: Testing the Thunderbird adapter
+To access archived data from different documents in OpenERP you can use the menu :menuselection:`OpenERP --> Document` which allows you to access the document in OpenERP directly from your e-mail.
 
-	If you install the Thunderbird adapter as described,
+.. tip:: Knowledge Management
+
+	The Thunderbird plugin is compatible with OpenERP's Knowledge (i.e. Document) Management. If you install the
+	Knowledge application you will be able to:
+
+	* search through the content of your company's documents (those that have the type .doc, .pdf, .sxw
+	  and .odt) and also in archived emails,
+
+	* have a shared file system that is connected to various OpenERP documents to share information and
+	  access it with your favorite browser,
+
+	* organize and structure your documents (such as projects, partners and users) in OpenERP's
+	  system.
+
+.. note:: Testing the Thunderbird plugin
+
+	If you install the Thunderbird plugin as described,
 	explore its functionality as described in this section using the database you 
 	installed.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
