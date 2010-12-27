@@ -38,7 +38,8 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
     Download from http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi or for 64bit system http://www.python.org/ftp/python/2.6.6/python-2.6.6.amd64.msi. Run the .exe file to install the software.
 
     2. Python for Windows extensions - PyWin32, this module for python must be installed for the appropriate version of Python.
-http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download or for 64bit system http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win-amd64-py2.6.exe/download
+    http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download or for 64bit system
+    http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win-amd64-py2.6.exe/download
 
     3. Specify the python folder in the system path (typically with this installer C:\Python26)
     *How to set the path in Windows XP*
@@ -49,7 +50,8 @@ http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.wi
     - Click ``Remote Settings`` to open the System Properties window.
     - In the System Properties window, click the Advanced tab. 
     - In the Advanced section, click the ``Environment Variables`` button. 
-    - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory, click Edit and add ;C:\Python26.
+    - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory,
+      click Edit and add ;C:\Python26.
       See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
 
     4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration Data Objects 1.2.1 (CDO 1.21)" from http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en
