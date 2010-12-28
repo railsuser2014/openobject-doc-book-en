@@ -236,8 +236,8 @@ product. They are usually attached to bills of materials which will define the a
 required for manufacture or for finished products.
 
 A routing can be defined directly in a bill of materials or through the menu
-:menuselection:`Manufacturing --> Configuration --> Routings`. A routing has a name, a code and a
-description. Later in this chapter you'll see that a routing can also be associated with a stock
+:menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Routings`. A routing has a name, a code and a
+description. Later in this chapter you will see that a routing can also be associated with a stock
 location. That enable you to indicate where assembly takes place.
 
 .. figure:: images/mrp_routing.png
@@ -248,9 +248,9 @@ location. That enable you to indicate where assembly takes place.
 
 .. note:: Subcontracting assembly
 
-    You'll see further on in this chapter that it is possible to link a routing and a stock location
+    You will see further on in this chapter that it is possible to link a routing and a stock location
     for the customer or the supplier.
-    You do this after you've subcontracted the assembly of a product to a supplier, for example.
+    You do this after you have subcontracted the assembly of a product to a supplier, for example.
 
 In the routing you must show the list of operations that must be done. Each operation must be done
 at a workcenter and possess a number of hours and/or cycles be done.
@@ -259,8 +259,8 @@ Impact on the production order
 ------------------------------
 
 The routings are then attached to the bills of materials which are then also used to generate
-product order. On a production order you'll find assembly operations for manufacture on the
-:guilabel:`Operations` tab.
+product order. On a production order you will find assembly operations for manufacture on the
+:guilabel:`Work Orders` tab.
 
 .. figure:: images/mrp_production_workorder.png
    :scale: 75
@@ -272,21 +272,21 @@ The times and the cycles shown in the production order are, in the same way as t
 theoretical data. The user can change the values to reflect reality for manufacture.
 
 So if you use routings, Open ERP automatically calculates the operations required for the production
-order. If the workcenters are linked to analytic accounts, at the end of production, Open Erp will
+order. If the workcenters are linked to analytic accounts, at the end of production, Open EEP will
 generate the analytic accounts representing the costs of manufacture. This will allow you to work
 out profitability per workcenter or manufacturing unit through analytic accounting.
 
 But the routings also enable you to manage your production capacity. You will be able to leave the
-demand charts for the days / weeks / months ahead to validate that you don't forecast more than you
+demand charts for the days / weeks / months ahead to validate that you do not forecast more than you
 are capable of producing.
 
 To see a demand chart, list the workcenters using the menu :menuselection:`Manufacturing -->
-Configuration --> Workcenters`. Then select one or several workcenters and click on the action
-:guilabel:`Workcenter load`. Open ERP then asks you if you work in cycles or in hours and your
+Configuration --> Resources --> Workcenters`. Then select one or several workcenters and click on the action
+:guilabel:`Workcenter Load`. Open ERP then asks you if you work in cycles or in hours and your
 interval is calculated (by day, week or month).
 
 .. figure:: images/mrp_workcenter_load.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Charge by workcenter*
