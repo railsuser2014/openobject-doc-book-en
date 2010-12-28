@@ -32,30 +32,40 @@ You can also download the installation manual by clicking the green arrow next t
 Another way to use the Outlook plugin, is by installing the OpenERP module \
 ``outlook``\. When you install this module, the same Configuration Wizard as explained before will be displayed. Follow the same instructions.
 
+
 * Step 2: Prerequisites
 
-    1. Install Python 2.6+
-    Download from http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi or for 64bit system http://www.python.org/ftp/python/2.6.6/python-2.6.6.amd64.msi. Run the .exe file to install the software.
+|  1. Install Python 2.6+
+|  Download from http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi
+|  or for 64bit system http://www.python.org/ftp/python/2.6.6/python-2.6.6.amd64.msi. Run the .exe file to install the software.
+|
+|   2. Python for Windows extensions - PyWin32, this module for python must be installed for the appropriate version of Python.
+|   http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download or for 64bit system
+|   http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win-amd64-py2.6.exe/download
+|
+|   3. Specify the python folder in the system path (typically with this installer C:\Python26)
+|
+|   *How to set the path in Windows XP*
+|   For Windows XP: http://www.computerhope.com/issues/ch000549.htm
+|    
+|   *How to set the path in Windows 7*
+|   To change the system environment variables, follow the steps below. 
+|
+|   - From the Windows button, select ``Control Panel``, then click ``System``. 
+|   - Click ``Remote Settings`` to open the System Properties window.
+|   - In the System Properties window, click the Advanced tab. 
+|   - In the Advanced section, click the ``Environment Variables`` button. 
+|   - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory,
+|     click Edit and add ;C:\Python26.
+|     See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
+|
+|   4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration
+|   Data Objects 1.2.1 (CDO 1.21)" from
+|   http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en.
+|   Double-click Exchange Cdo to install it.
+|
+|   5. If you are using MS Outlook 2003, be sure to install the builtin Cdo component.
 
-    2. Python for Windows extensions - PyWin32, this module for python must be installed for the appropriate version of Python.
-    http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download or for 64bit system
-    http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win-amd64-py2.6.exe/download
-
-    3. Specify the python folder in the system path (typically with this installer C:\Python26)
-    *How to set the path in Windows XP*
-    For Windows XP: http://www.computerhope.com/issues/ch000549.htm
-    *How to set the path in Windows 7*
-    To change the system environment variables, follow the steps below. 
-    - From the Windows button, select ``Control Panel``, then click ``System``. 
-    - Click ``Remote Settings`` to open the System Properties window.
-    - In the System Properties window, click the Advanced tab. 
-    - In the Advanced section, click the ``Environment Variables`` button. 
-    - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory, click Edit and add ;C:\Python26. See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
-
-    4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration Data Objects 1.2.1 (CDO 1.21)" from http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en
-    Double-click Exchange Cdo to install it.
-
-    5. If you are using MS Outlook 2003, be sure to install the builtin Cdo component.
 
 * Step 3: install the OpenERP extension in Outlook.
 
@@ -66,7 +76,7 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
 	#. Start Outlook.
 
 Configuring the Outlook plugin
-----------------------------------
+------------------------------
 
 When you have executed Installation Step 1, Step 2 and Step 3, the first thing to do is connect Outlook to OpenERP.
 A little configuration needs to be done.
@@ -77,7 +87,7 @@ A little configuration needs to be done.
 
 A configuration window appears enabling you to enter configuration data about your OpenERP server.
 
-.. figure::  images/outlook_menu.png
+.. figure::  images/outlook_menu2.png
    :scale: 50
    :align: center
 
@@ -124,7 +134,7 @@ With `Document`, you can open the document concerned in OpenERP. Make sure you a
 
 * Link a mail to an existing document in OpenERP
 
-.. figure::  images/outlook_config.png
+.. figure::  images/outlook_config2.png
    :scale: 50
    :align: center
 
