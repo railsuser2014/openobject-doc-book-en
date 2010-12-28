@@ -377,21 +377,9 @@ events. Here are some examples of events for an operations:
 
 * Cancelling an operation.
 
-You place barcodes on the production orders on the machines or operators and a form of barcodes
-representing the events. To print barcodes select the events using the menu
-:menuselection:`Manufacturing --> Configuration --> Codes from start to finish`. Then click for
-printing the barcodes for the selected events. You can do the same for printing barcodes for the
-workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Workcenters`.
-
-Using the system these operations don't need data to be entered on the keyboard. To use these
-barcodes, open the menu :menuselection:`Manufacturing --> Barcode events`. You must then scan, in
-order:
-
-#. The barcode of the production order,
-
-#. The workcenter used,
-
-#. The event code.
+You can print barcodes for the
+workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers`.
+Click on the report action `Work Centers Barcode` to generate the barcodes for that work center.
 
 .. figure:: images/mrp_operation.png
    :scale: 75
@@ -410,15 +398,15 @@ location for stock management.
 
 You must then configure a location dedicated to this supplier with the following data:
 
-* :guilabel:`Type of location` : Supplier,
+* :guilabel:`Location Type` : Supplier,
 
-* :guilabel:`Address of Location` : Select an address of the subcontractor partner,
+* :guilabel:`Location Address` : Select an address of the subcontractor partner,
 
-* :guilabel:`Type of linkage` : Fixed,
+* :guilabel:`Chained Location Type` : Fixed,
 
-* :guilabel:`Location of linkage` : your Stock,
+* :guilabel:`Chained Location If Fixed` : your Stock,
 
-* :guilabel:`Lead time for linkage` : number of days before receipt of the finished product.
+* :guilabel:`Chaining Lead Time` : number of days before receipt of the finished product.
 
 Then once the manufacture has been planned for the product in question, Open ERP will generate the
 following steps:
@@ -430,21 +418,21 @@ stores.
 
 Once the production order has been confirmed, Open ERP automatically generates a delivery order to
 send to the raw materials supplier. The storesperson can access this delivery order using the menu
-:menuselection:`Stock Management --> Incoming Products`. The raw materials will then be placed in
+:menuselection:`Warehouse --> Warehouse Management --> Internal Moves`. The raw materials will then be placed in
 stock at the supplier's stores.
 
 Once the delivery of raw materials has been confirmed, Open ERP activates the production order. The
 supplier uses the raw materials sent to produce the finished goods which will automatically be put
 in your own stores. The confirmation of this manufacture is made when you receive the products from
-your supplier. It's then that you indicate the quantities consumed by your supplier
+your supplier. It is then that you indicate the quantities consumed by your supplier.
 
 .. tip:: Subcontract without routing
 
-   If you don't use routing you can always subcontract work orders by creating an empty routing in
+   If you do not use routing you can always subcontract work orders by creating an empty routing in
    the subcontract bill of materials.
 
-Production orders are found in the menu :menuselection:`Manufacture --> Production Orders -->
-Production Orders to start`. A production order is always carried out in two stages:
+Production orders are found in the menu :menuselection:`Manufacturing --> Manufacturing -->
+Manufacturing Orders`. A production order is always carried out in two stages:
 
 #. Consumption of raw materials.
 
