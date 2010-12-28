@@ -306,7 +306,7 @@ Work operations
 ---------------
 
 A production order defines the use of the products defined in the Bills of Materials, and the
-operations defined in the routing. You've seen how to handle manufacturing production as a top-level process,
+operations defined in the routing. You have seen how to handle manufacturing production as a top-level process,
 but some companies prefer to have finer-grained control of operations where instead of
 specifying just the production process itself, they enter data on each constituent production operation.
 
@@ -321,18 +321,27 @@ Management of operations
    single: module; mrp_operations
 
 To work using work orders you must install the optional module :mod:`mrp_operations`. Once the module
-is installed you'll find a new menu called :menuselection:`Manufacturing --> Operations -->
-Operations` to be carried out. The assembly workers must then encode each step operation by
+is installed you will find a new menu called :menuselection:`Manufacturing --> Manufacturing --> Work Orders`.
+
+.. figure:: images/mrp_work_order_definition.png
+   :scale: 75
+   :align: center
+
+   *Work Order definition*
+
+The assembly workers must then encode each step operation by
 operation and, for each step, the real working time for it.
+OpenERP support the editable workflow through the menu :menuselection:`Administration --> Customization --> Workflows --> Workflows`.
+You can find the operation workflow and edit according to necessecity.
 
 .. figure:: images/mrp_operations_tree.png
    :scale: 75
    :align: center
 
-   *List of operations to be carried out.*
+   *List of operations to be carried out*
 
 Operations must then be carried out one by one. On each operation the operator can click on
-:guilabel:`Start operation` and then :guilabel:`Close Operation`. The time is then worked out
+:guilabel:`Start` button. The time is then worked out
 automatically on the operation between the two changes of status. The operator can also put the
 operation on hold and start again later.
 
@@ -346,7 +355,7 @@ The following process is attached to each operation.
 
 Thanks to this use by operation, the real working time is recorded on the production order.
 
-The production order is automatically put into the state 'Running' once the first operation has been
+The production order is automatically put into the state 'In Production' once the first operation has been
 started. That consumes some raw materials. Similarly the production order is closed automatically
 once the last operation is completed. The finished products are then made.
 
