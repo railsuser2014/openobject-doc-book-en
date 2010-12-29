@@ -693,11 +693,11 @@ figure :ref:`fig-mrprepflow` shows this repair process.
    *Process for handling a repair*
 
 Once a repair has been entered onto the system, it is in the 'draft' state. In this state it has no
-impact on the rest of the system. You can print a quotation from it using the action 'Print
-Quotation'. The repair quotation can then be sent to the customer.
+impact on the rest of the system. You can print a quotation from it using the action 'Quotation / Order'.
+The repair quotation can then be sent to the customer.
 
-Once the customer approves the repair, use the menu :menuselection:`Manufacturing --> Repairs -->
-Repairs in quotation` to find the draft repair. Click to confirm the draft repair and put it into
+Once the customer approves the repair, use the menu :menuselection:`Manufacturing --> Manufacturing --> Repair Orders`
+to find the draft repair. Click to confirm the draft repair and put it into
 the running state. You can specify the invoicing mode in the second tab:
 
 * no invoicing,
@@ -720,7 +720,7 @@ used for the repair. These other costs are entered on the second tab of the repa
 
 If the product to be repaired is still under guarantee, Open ERP automatically suggests that the
 components themselves are not invoiced, but will still use any other defined costs. You can override
-any of these default values when you're entering the data.
+any of these default values when you are entering the data.
 
 The link to the generated invoice is shown on the second tab of the repair document.
 
