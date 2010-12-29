@@ -1,3 +1,4 @@
+
 A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
  
 Often leads are not registered centrally, which makes it very difficult to find the appropriate information.
@@ -47,7 +48,7 @@ form opens to let you enter data about this new contact.
 
    *Creating a new lead*
 
-Leads have a status that depends on the qualification work that's been carried out:
+Leads have a status that depends on the qualification work that has been carried out:
 
 * ``Draft`` : the lead data has been entered, any work has not yet been done and a salesperson has not
   yet been assigned to the request,
@@ -58,18 +59,18 @@ Leads have a status that depends on the qualification work that's been carried o
 
 * ``Waiting`` : the lead is waiting for a response from the customer,
 
-* ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it's not worth
+* ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it is not worth
   following up.
 
-When a new lead has been created it's automatically put into the open state.
+When a new lead has been created it is automatically put into the Open state.
 
-You can also import a huge list of leads. That's useful if you've bought a database of
+You can also import a huge list of leads. That may be useful if you have bought a database of
 potential prospects and you want to load them all into the system to handle them all at the same time.
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in
-another format it's easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
-Open the leads list using the menu :menuselection:`CRM & SRM --> Sales -> Leads -> My Leads`. At
-the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a form for importing the
+another format it is easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
+Open the leads list using the menu :menuselection:`Sales -> Leads`. At
+the bottom of the list click on the :guilabel:`Import` link. OpenERP opens a form for importing the
 data.
 
 .. figure:: images/crm_lead_import.png
@@ -78,48 +79,46 @@ data.
 
    *Importing leads into the system*
 
-You then define which columns are present in your CSV file in the correct order. Then select your file
+You then define which columns are present in your CSV file in the correct order. Select your file
 and click on :guilabel:`Import`. Check in the chapter about system administration, :ref:`ch-config`, for more
 information on import and export.
 
 .. tip:: Various Imports
 
-    Importing and Exporting data in Open ERP is a generic function available to all resources.
+    Importing and Exporting data in OpenERP is a generic function available to all resources.
     So you can import and export such lists as partners, sales opportunities, accounting entries,
-    products and pricelists.
+    products and price lists.
 
 There are other methods of importing leads automatically or semi-automatically:
 
-* Using the Outlook or Thunderbird plugin to insert new leads directly from an email client after a
-  salesperson sees promising emails,
+* Using the Outlook or Thunderbird plugin to insert new leads directly from an e-mail client when a
+  salesperson sees promising e-mails,
 
-* Using the email gateway for each incoming email from a certain address (such as
-  info@mycompany.com) creating a lead automatically from the contents of the email,
+* Using the e-mail gateway for each incoming e-mail from a certain address (such as
+  info@mycompany.com) which allows you to create a lead automatically from the contents of the e-mail,
 
-* Using Open ERP's XML-RPC web-services to connect to a form on your website.
+* Using OpenERP's XML-RPC web-services to connect to a form on your website.
 
 These different methods are described in the next CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
 ================
 
-To help the users organize and handle leads efficiently, Open ERP provides several menus in the CRM
+To help the users organize and handle leads efficiently, OpenERP provides several menus in the CRM
 system that can be used depending on the needs of each:
 
-* :menuselection:`CRM & SRM --> Sales --> Leads --> New Lead` opens an entry form directly onto a new lead. This menu can
-  usefully be put into your shortcuts,
+The :menuselection:`Sales --> Leads` can be used for several things:
 
-* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads` gives a list of all the leads (both open and not) which you're
-  linked to,
+* Click New to start creating a new lead.
 
-* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads --> My Current Leads` gives a list of all your leads that you
-  still need to handle (your open, draft and waiting leads),
+* This view displays a list of all the leads (both open and not) which you are linked to,
 
-* :menuselection:`CRM & SRM --> Sales --> Leads --> My Leads --> My Current Leads --> My Pending Leads` gives a list of all your
-  leads that are still waiting for a customer response. This enables you to check periodically on
+* You can display list of all your leads that you still need to handle (your open, draft and waiting leads),
+
+* You can display a list of all your  leads that are still waiting for a customer response. This enables you to check periodically on
   your work to do,
 
-* :menuselection:`CRM & SRM --> Sales --> Leads --> All Leads` is a list of all the leads assigned to different salespeople.
+* You can display a list of all the leads assigned to different salespeople.
   This menu as those beneath it are used by managers to check on each person's work.
 
 .. figure:: images/crm_leads_list.png

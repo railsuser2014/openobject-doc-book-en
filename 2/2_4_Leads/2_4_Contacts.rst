@@ -9,8 +9,8 @@ The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications) 
 is a partner with multiple contacts.
 *Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ...
-In some cases, this way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
-an alternative, which is brought into the system by installing the :mod:`base_contact` module.
+In some cases, the standard way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
+an alternative, the :mod:`base_contact` module.
 
 The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
 the structure of partners and contacts in the form of UML classes both 
@@ -54,13 +54,13 @@ In this example you'll find the following elements:
 
 * The addresses of Dexey France and Dexey Belgium belong to the Dexey company,
 
-* At the office of ABC Luxembourg, you have the contacts of the director (D Fogerty) and the
+* At the office of ABC Luxembourg, you have the contacts of the director (D. Fogerty) and the
   accountant (A. Jacket),
 
 * Mr Jacket holds the post of accountant for ABC Luxembourg and Dexey France,
 
 * Mr J Smith is director of Dexey France and Dexey Belgium and we also have his private address
-  attached to no partner.
+  which is not attached to a partner.
 
 Depending on your needs, OpenERP provides three menus to access the same information:
 
@@ -99,14 +99,11 @@ personal blog).
 
    *Detail of a contact form for someone employed in several job posts*
 
-Partner management is found in the Open ERP base modules. To manage partner relations you have to
-install the CRM modules. Then start by installing a CRM profile and configure the system to meet
-your needs.
+Partner management is found in the OpenERP base modules. To manage partner relations you have to
+install the CRM module. Then configure the system to meet your needs.
 
-For this chapter you should start with a fresh database that includes demo data,
-using the :guilabel:`CRM profile` and no particular chart of accounts configured. 
-Open ERP's modularity enables you to install only
-the CRM module if your requirements are limited to customer relationships.
+For this chapter you should create a new database with demo data through the Configuration Wizard. Select Customer Relationship Management and configure the CRM according to your needs by selecting the appropriate modules.
+OpenERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
 
 .. figure:: images/crm_db_init.png
    :scale: 50
@@ -114,11 +111,9 @@ the CRM module if your requirements are limited to customer relationships.
 
    *Creating a new database*
 
-Once the database is installed, Open ERP suggests that you configure it using a series of questions:
+When creating the new database, OpenERP suggests that you configure it using a series of questions:
 
 * Simplified or Extended mode: select simplified and click :guilabel:`Ok`,
-
-* Creating users: click :guilabel:`Skip`,
 
 * Select the CRM functionality to install.
 
