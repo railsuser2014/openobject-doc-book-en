@@ -567,8 +567,8 @@ Products'.
    *A production order producing several finished products*
 
 Secondary products enable you to generate several types of products from the same raw materials and
-manufacturing methods – only these aren't used in the calculation of requirements. Then if you
-need the secondary products Open ERP won't ask you to manufacture another product to use the waste
+manufacturing methods – only these are not used in the calculation of requirements. Then if you
+need the secondary products Open ERP will not ask you to manufacture another product to use the waste
 products and secondary products of this manufacture. In this case you should enter another
 production order for the secondary product.
 
@@ -576,10 +576,10 @@ production order for the secondary product.
 
    Unlike most software for production management, Open ERP manages services as well as stockable
    products.
-   So it's possible to put products of type :guilabel:`Service` in a bill of materials.
-   These don't appear in the production order but their requirements will be taken into account.
+   So it is possible to put products of type :guilabel:`Service` in a bill of materials.
+   These do not appear in the production order but their requirements will be taken into account.
 
-   If they're defined as :guilabel:`Make to Order` Open ERP will generate a task for the manufacture or a
+   If they are defined as :guilabel:`Make to Order` Open ERP will generate a task for the manufacture or a
    subcontract order for the operations.
    The behaviour will depend on the supply method configured on the product form :guilabel:`Buy` or :guilabel:`Produce`.
 
@@ -591,8 +591,8 @@ Management of repairs
 .. index::
    single: module; mrp_repair
 
-The management of repairs is carried out using the module :mod:`mrp_repair`. Once it's installed this
-module adds new :menuselection:`Manufacturing --> Repairs` menus under the Manufacturing menu for
+The management of repairs is carried out using the module :mod:`mrp_repair`. Once it is installed this
+module adds new :menuselection:`Manufacturing --> Manufacturing --> Repair Orders` menu under the Manufacturing menu for
 creating repair jobs and reviewing repairs in progress.
 
 In Open ERP a repair will have the following effects:
@@ -614,8 +614,8 @@ In Open ERP a repair will have the following effects:
 Entering data for a new repair
 ------------------------------
 
-Use the menu :menuselection:`Manufacturing --> Repairs --> New Repair` to enter a new repair into
-the system. You'll see a blank form for the repair data, as shown in the figure :ref:`fig-mrprepnew` below.
+Use the menu :menuselection:`Manufacturing --> Manufacturing --> Repair Orders` to enter a new repair into
+the system. You will see a blank form for the repair data, as shown in the figure :ref:`fig-mrprepnew` below.
 
 .. _fig-mrprepnew:
 
@@ -630,9 +630,9 @@ automatically completes fields from the selected lot – the partner fields, add
 location, and stock move.
 
 If a warranty period has been defined in the product description, in months, Open ERP then completes
-the field :guilabel:`Warranty limit` with the correct warranty date.
+the field :guilabel:`Guarantee limit` with the correct warranty date.
 
-You must then specify the components that you'll be adding, replacing or removing in the operations
+You must then specify the components that you will be adding, replacing or removing in the operations
 part. On each line you must specify the following:
 
 Add or remove a component of the finished product:
@@ -675,8 +675,8 @@ bill.
 
    *Repair form, second tab*
 
-The third tab, Quality, is for encoding information about the quality: internal notes, notes for the
-quotation, corrective actions and preventative actions for example.
+The third tab is for encoding information about the internal notes like
+picking, invoice and locations.
 
 Repair workflow
 ---------------
