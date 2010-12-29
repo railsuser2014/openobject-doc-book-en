@@ -567,8 +567,8 @@ Products'.
    *A production order producing several finished products*
 
 Secondary products enable you to generate several types of products from the same raw materials and
-manufacturing methods – only these aren't used in the calculation of requirements. Then if you
-need the secondary products Open ERP won't ask you to manufacture another product to use the waste
+manufacturing methods – only these are not used in the calculation of requirements. Then if you
+need the secondary products Open ERP will not ask you to manufacture another product to use the waste
 products and secondary products of this manufacture. In this case you should enter another
 production order for the secondary product.
 
@@ -576,10 +576,10 @@ production order for the secondary product.
 
    Unlike most software for production management, Open ERP manages services as well as stockable
    products.
-   So it's possible to put products of type :guilabel:`Service` in a bill of materials.
-   These don't appear in the production order but their requirements will be taken into account.
+   So it is possible to put products of type :guilabel:`Service` in a bill of materials.
+   These do not appear in the production order but their requirements will be taken into account.
 
-   If they're defined as :guilabel:`Make to Order` Open ERP will generate a task for the manufacture or a
+   If they are defined as :guilabel:`Make to Order` Open ERP will generate a task for the manufacture or a
    subcontract order for the operations.
    The behaviour will depend on the supply method configured on the product form :guilabel:`Buy` or :guilabel:`Produce`.
 
