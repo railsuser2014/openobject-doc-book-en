@@ -746,7 +746,7 @@ have to replace the shelf PANLAT, you must enter data for the repair as shown in
 
    *Repair of a shelf in a cabinet*
 
-In this example, you'd carry out the following operations:
+In this example, you would carry out the following operations:
 
 * Removal of a PANLAT shelf in the cabinet and put the faulty shelf in the location *Defective Products*,
 
@@ -758,7 +758,7 @@ When the repair is ready to be confirmed, Open ERP will generate the following s
 
 * Consume PANLAT: *Stock > Default production*.
 
-If you analyze the traceability of this lot number you'll see all the repair operations in the
+If you analyze the traceability of this lot number you will see all the repair operations in the
 upstream and downstream traceability lists of the products concerned.
 
 .. Copyright © Open Object Press. All rights reserved.
