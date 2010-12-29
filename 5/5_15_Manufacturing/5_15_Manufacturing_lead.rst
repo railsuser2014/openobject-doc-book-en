@@ -493,7 +493,7 @@ Manual procurement
 ==================
 
 To procure internally, you can create a procurement order manually. Use the menu
-:menuselection:`Manufacturing --> Procurement Orders --> New Procurement` to do this.
+:menuselection:`Warehouse --> Schedulers --> Procurement Exceptions` and click on `New` button to do this.
 
 .. figure:: images/mrp_procurement.png
    :scale: 75
