@@ -2,17 +2,30 @@
 Invoicing Workflow
 ==================
 
-About invoice workflow
+In OpenERP, Invoice  Workflow is very simple. You can see it in the following figure.
+
+.. figure::  images/invoice_workflow.png
+   :scale: 50
+   :align: center
+
+   *Invoice workflow*
+
+Invoice document can be generated form various other documents like `Sale Order`, `Purchase Order` and also
+at the time of confirmation of shipment. So the systematic treatment of Invoice is very important. Whenever
+invoice is generated, first of all it has to be in `Draft` state and hence no effect of it anywhere in your
+`Accounting System`. Invoice state can be changed to `Open` by accountant or in `Pro-forma` state by any other
+normal user. After that invoice will be in `Paid` state. Invoice can be cancelled if it is not paid.
+
 
 Customer Receipts / Supplier Vouchers
 -------------------------------------
 
-about voucher
+
+
 
 Keep Track of your Payments
 ---------------------------
 
-keep trek of your payment
 
 .. Copyright © Open Object Press. All rights reserved.
 
