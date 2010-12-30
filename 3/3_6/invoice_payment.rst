@@ -20,7 +20,25 @@ normal user. After that invoice will be in `Paid` state. Invoice can be cancelle
 Customer Receipts / Supplier Vouchers
 -------------------------------------
 
+When you sell products to a customer, you can give him an invoice or a `Sale Receipt` which is also called `Customer Receipt`.
+When the sales receipt is confirmed, it creates journal items automatically and you can record the customer payment related
+to this sales receipt.
 
+You can create and modify the sale receipt using the menu :menuselection:`Accounting --> Customers --> Sales Receipt`.
+
+.. figure::  images/account_customer_receipt.png
+   :scale: 50
+   :align: center
+
+   *Definition of Customer Receipt*
+
+You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Customers --> Supplier Vouchers`.
+
+.. figure::  images/account_supplier_voucher.png
+   :scale: 50
+   :align: center
+
+   *Definition of Supplier Voucher*
 
 
 Keep Track of your Payments
