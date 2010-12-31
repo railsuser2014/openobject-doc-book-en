@@ -51,7 +51,7 @@ When you purchase products from supplier, `Supplier Voucher` is given to you whi
 in accounting terminology. When the it is confirmed, it creates journal items automatically and you can record
 the supplier payment related to this purchase receipt.
 
-You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Customers --> Supplier Vouchers`.
+You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Suppliers --> Supplier Vouchers`.
 
 .. figure::  images/account_supplier_voucher.png
    :scale: 75
@@ -71,6 +71,37 @@ button.
 
 Keep Track of your Payments
 ---------------------------
+
+You should efficiently keep track of your customer and suppliers payments.
+
+Sales payment allows you to register the payments you receive from your customers.
+In order to record a payment, you must enter the customer, the payment method (=the journal)
+and the payment amount. OpenERP will propose to you automatically the reconciliation of this
+payment with the open invoices or sales receipts.
+
+You can do this in OpenERP using the menu :menuselection:`Accounting --> Customers --> Customer Payment`.
+
+.. figure::  images/account_customer_payment.png
+   :scale: 50
+   :align: center
+
+   *Customer payment form*
+
+The supplier payment form allows you to track the payment you do to your suppliers.
+When you select a supplier, the payment method and an amount for the payment,
+OpenERP will propose to reconcile your payment with the open supplier invoices or bills.
+
+By using the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment` and click on `New` button to
+create new `Supplier Payment`.
+
+.. figure::  images/account_supplier_payment.png
+   :scale: 50
+   :align: center
+
+   *Supplier payment form*
+
+
+
 
 
 .. Copyright © Open Object Press. All rights reserved.
