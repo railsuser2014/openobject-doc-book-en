@@ -2,16 +2,16 @@
 Invoicing Workflow
 ==================
 
-In OpenERP, Invoice  Workflow is very simple. You can see it in the following figure.
+In OpenERP, Invoicing  Workflow is very simple. You can see it in the following figure.
 
 .. figure::  images/account_invoice_workflow.png
    :scale: 50
    :align: center
 
-   *Invoice workflow*
+   *Invoiceing workflow*
 
 Invoice document can be generated form various other documents like `Sale Order`, `Purchase Order` and also
-at the time of confirmation of shipment. So the systematic treatment of Invoice is very important. Whenever
+at the time of confirmation of shipment. So the systematic treatment of Invoicing Workflow is very important. Whenever
 invoice is generated, first of all it has to be in `Draft` state and hence no effect of it anywhere in your
 `Accounting System`. Invoice state can be changed to `Open` by accountant or in `Pro-forma` state by any other
 normal user. After that invoice will be in `Paid` state. Invoice can be cancelled if it is not paid.
@@ -27,19 +27,47 @@ to this sales receipt.
 You can create and modify the sale receipt using the menu :menuselection:`Accounting --> Customers --> Sales Receipt`.
 
 .. figure::  images/account_customer_receipt.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of Customer Receipt*
 
+When you create new `Sales Receipt` you have to enter the `Customer` in it for which you want to create voucher. You can also define `Sales lines`
+in the `Sales Information` tab. In which you have to define `Account` with `Analytic Account`, `Amount` and `Description`.
+At the bottom of the form you can have two option for `Payment` one is `Pay Directly` and another is `Pay Later or Group Funds`.
+You have to enter `Account` in the case of `Pay Directly` option. `Total` amount displays automatically with calculation of tax while
+click on the `Compute Tax` button.
+
+After the validating the sales receipt you can print the voucher by clicking on the button `Voucher Print` at the
+upper right side. The voucher will be printed like this.
+
+.. figure::  images/account_sale_voucher.png
+   :scale: 50
+   :align: center
+
+   *Sale Voucher*
+
+When you purchase products from supplier, `Supplier Voucher` is given to you which is also called `Notes Payable`
+in accounting terminology. When the it is confirmed, it creates journal items automatically and you can record
+the supplier payment related to this purchase receipt.
+
 You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Customers --> Supplier Vouchers`.
 
 .. figure::  images/account_supplier_voucher.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of Supplier Voucher*
 
+The `Supplier Voucher` form looks like same as `Sales Receipt` form. In this form carefully select the journal,
+in this case it is `Expenses Journal`. After validating the `Supplier Voucher` you can print it using `Voucher Print`
+button.
+
+.. figure::  images/account_purchase_voucher.png
+   :scale: 50
+   :align: center
+
+   *Supplier Voucher*
 
 Keep Track of your Payments
 ---------------------------
