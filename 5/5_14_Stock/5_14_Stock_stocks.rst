@@ -236,7 +236,7 @@ times and priorities.
     This means that you do not have to start the scheduler or wait for its periodical start time.
 
 You can now look at the the list of deliveries waiting to be carried out using the menu
-:menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`. You find a line
+:menuselection:`Warehouse --> Warehouse Management --> Delivery Orders`. You find a line
 there for your order representing the items to be sent. Double-click the line to see the detail of
 the items proposed by Open ERP.
 
