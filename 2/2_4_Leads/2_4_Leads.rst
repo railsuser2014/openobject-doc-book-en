@@ -1,6 +1,6 @@
 
 A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
- 
+
 Often leads are not registered centrally, which makes it very difficult to find the appropriate information.
 
 Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
@@ -39,7 +39,7 @@ partner form or sales opportunity until you have qualified whether the lead is i
 If the new contact is indeed interesting you then enter the data on into a partner form and,
 eventually, a sales opportunity.
 
-To enter a lead manually use the menu :menuselection:`CRM & SRM --> Sales --> Leads --> New Lead`. A
+To enter a lead manually use the menu :menuselection:`Sales --> Sales --> Leads` and click on `New` button. A
 form opens to let you enter data about this new contact.
 
 .. figure:: images/crm_lead_new.png
@@ -69,7 +69,7 @@ potential prospects and you want to load them all into the system to handle them
 
 To do that you should start with a list of leads in CSV format. If your prospects are provided in
 another format it is easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
-Open the leads list using the menu :menuselection:`Sales -> Leads`. At
+Open the leads list using the menu :menuselection:`Sales --> Sales --> Leads`. At
 the bottom of the list click on the :guilabel:`Import` link. OpenERP opens a form for importing the
 data.
 
@@ -107,7 +107,7 @@ Organizing leads
 To help the users organize and handle leads efficiently, OpenERP provides several menus in the CRM
 system that can be used depending on the needs of each:
 
-The :menuselection:`Sales --> Leads` can be used for several things:
+The :menuselection:`Sales --> Sales --> Leads` can be used for several things:
 
 * Click New to start creating a new lead.
 
@@ -142,7 +142,7 @@ Converting Leads into Customers or Opportunities
 ================================================
 
 If a lead is interesting you convert it into a partner in the system. To do that, push the button
-:guilabel:`Convert to Partner`. Open ERP opens a partner form with the information from the lead entered
+:guilabel:`Create`. Open ERP opens a partner form with the information from the lead entered
 into it. At this stage you can add more information such as the exact partner address and the
 contact details.
 
@@ -162,7 +162,7 @@ of converting to a sale.
 
 Some companies have more advanced processes for the qualification of a lead. They pass through
 several steps, such as first call, renewing contact, waiting for a verbal agreement. You can then
-use the field :guilabel:`Step` that is found up to the right of the lead definition. To move it
+use the field :guilabel:`Stage` that is found up to the right of the lead definition. To move it
 automatically through the next step, you can use the button that looks like a right arrow.
 
 .. Copyright © Open Object Press. All rights reserved.

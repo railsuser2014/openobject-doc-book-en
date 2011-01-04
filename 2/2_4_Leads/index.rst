@@ -8,15 +8,15 @@
 Tracking Leads & Opportunities
 ******************************
 
-Whatever business your company is doing, every single sales act is related to your Customer.  
+Whatever business your company is doing, every single sales act is related to your Customer.
 Time to come up to your Customer's Expectations!
 
-What's in it for you?
+What is in it for you?
 =====================
 
 * Track, drive and optimize your sales activities! Handle your full sales workflow, from lead to invoice.
 
-* Access to all information such as accounts & contacts in one place, directly at hand when you need it, even when you're working at home!
+* Access to all information such as accounts & contacts in one place, directly at hand when you need it, even when you are working at home!
 
 * Offer an excellent Customer Service by improving issues management and automating follow up.
 
@@ -36,8 +36,8 @@ Use the OpenERP CRM application as from the very first business contact - either
 
 Terminology
 -----------
-Lead 
-  A lead represents a prospect (potential customer) or a future sales opportunity. A lead usually is not qualified and not assigned to a 
+Lead
+  A lead represents a prospect (potential customer) or a future sales opportunity. A lead usually is not qualified and not assigned to a
   sales person for follow-up. Example: a business card, a database of potential customers.
 Opportunity
   A sales opportunity represents a potential contract. Each opportunity has to be followed up by a salesperson spending time to make a
