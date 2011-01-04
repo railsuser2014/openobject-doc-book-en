@@ -25,7 +25,7 @@ Managing statistical reports
 Many reports are configured in advance in Open ERP. You can find them in the :menuselection:`Reporting` sub-menus
 under each main menu entry.
 
-Modeling a new report
+Modelling a new report
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. index::
@@ -223,7 +223,7 @@ Connecting OpenOffice.org to Open ERP
 
 Select :menuselection:`OpenERP Report Designer --> Server parameters` in the top menu of OpenOffice.org
 Writer. You can then enter your connection parameters to the Open ERP server. You must select a
-database in which you have already installed the module :mod:`sale`. A message
+database in which you have already installed the module :mod:`purchase`. A message
 appears if you have made a successful connection.
 
 .. index::
@@ -239,11 +239,11 @@ The report editor lets you:
 * create new reports for the selected object.
 
 To modify an existing report, select :menuselection:`OpenERP Report Designer --> Modify Existing Report`.
-Choose the report:menuselection:`Request for Quotation` in the :guilabel:`Modify Existing Report`
-dialog box and then click :guilabel:`Save to Temp Directory`.
+Choose the report :guilabel:`Purchase Order - Request for Quotation` in the :guilabel:`Modify Existing Report`
+dialog box and then click :guilabel:`Open Report`.
 
 .. figure::  images/openoffice_quotation.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Modifying a document template*
@@ -298,8 +298,8 @@ From the Open ERP toolbar in OpenOffice.org it is possible to:
 .. *Technical Name*  *Report Name* \ ``Sale Order Mod``\
 .. *Corporate Header*  *Send Report to Server*
 
-You can check the result in Open ERP using the menu :menuselection:`Sales Management --> Sales
-Orders --> All Orders`.
+You can check the result in Open ERP using the menu :menuselection:`Purchases --> Purchase Management --> Requests
+for Quotation`.
 
 .. index::
    single: report; new
