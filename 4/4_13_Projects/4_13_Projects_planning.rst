@@ -182,8 +182,8 @@ the real time worked.
 
    *Comparison of planned hours, worked hours and the productivity of employees by project*
 
-You can also study several of your project's figures from the menus in :menuselection:`Human Resources
---> Reporting --> Planning`.
+You can also study several of your project's figures from the menus in :menuselection:`Project
+--> Reporting`.
 
 Planning at all levels of the Hierarchy
 ---------------------------------------
