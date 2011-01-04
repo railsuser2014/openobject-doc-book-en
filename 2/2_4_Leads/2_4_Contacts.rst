@@ -6,15 +6,15 @@ Managing Contacts
    single: module; base_contact
 
 The standard way of representing partners and contacts throughout OpenERP
-and many other enterprise systems (such as phone contact applications) 
+and many other enterprise systems (such as phone contact applications)
 is a partner with multiple contacts.
 *Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ...
 In some cases, the standard way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
 an alternative, the :mod:`base_contact` module.
 
-The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
-the structure of partners and contacts in the form of UML classes both 
-with and without the :mod:`base_contact` module. 
+The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show
+the structure of partners and contacts in the form of UML classes both
+with and without the :mod:`base_contact` module.
 For the non-programmer this diagram may be a bit of a brutal way
 of showing it, but it is the clearest way to illustrate the
 complexities that may be accomplished.
@@ -64,11 +64,9 @@ In this example you'll find the following elements:
 
 Depending on your needs, OpenERP provides three menus to access the same information:
 
-* List of partners: :menuselection:`Sales --> Address Book --> Customers / Suppliers`,
+* List of partners: :menuselection:`Sales --> Address Book --> Customers`,
 
 * List of contacts: :menuselection:`Sales --> Address Book --> Contacts`,
-
-* List of posts held by contacts at partners: :menuselection:`Partners --> Contact's Jobs`.
 
 The three menus above are only three different views on the same data. If you correct a contact name
 on the contact form, this will be modified on all the posts occupied in the different companies.
