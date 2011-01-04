@@ -68,8 +68,7 @@ Depending on your needs, OpenERP provides three menus to access the same informa
 
 * List of contacts: :menuselection:`Sales --> Address Book --> Contacts`,
 
-The three menus above are only three different views on the same data. If you correct a contact name
-on the contact form, this will be modified on all the posts occupied in the different companies.
+If you correct a contact name on the contact form, this will be modified on all the posts occupied in the different companies.
 
 The screen above represents a partner form. You can see several possible address there and a list of
 contacts above each address. For each contact you see a name, a function, a phone number and an
@@ -128,9 +127,9 @@ When creating the new database, OpenERP suggests that you configure it using a s
 
    The pre-configuration of the management of customer relations to generate prospects,
    opportunities, and phone calls
-   isn't supplied by the :mod:`crm` module itself but by the :mod:`crm_configuration` module.
+   is not supplied by the :mod:`crm` module itself but by the :mod:`crm_configuration` module.
 
-If you install the modules separately don't forget to install the ``crm_configuration`` module.
+If you install the modules separately do not forget to install the ``crm_configuration`` module.
 The :mod:`crm` module just contains the generic case management system.
 
 Open ERP proposes a selection from pre-configured functions for CRM:
@@ -153,10 +152,10 @@ Open ERP proposes a selection from pre-configured functions for CRM:
 
 * tracking bugs and new functional requests.
 
-You see that Open ERP's CRM module isn't limited just to Customer relationships but is designed to
+You see that Open ERP's CRM module is not limited just to Customer relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
 This book will describe just customer relationships. The other CRM functions are similar to use, so
-you shouldn't have huge problems with understanding those functions.
+you should not have huge problems with understanding those functions.
 
 The following cases will be looked at for this chapter
 
