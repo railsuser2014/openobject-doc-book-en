@@ -6,24 +6,24 @@ While a lead represents the first contact with a prospect yet to be qualified, a
 represents a potential contract. Each opportunity must be followed up by a salesperson spending time
 to make a quotation or the cancellation of the opportunity.
 
-Leads are generally handled en masse, with the automation of certain responses or emails. 
+Leads are generally handled en masse, with the automation of certain responses or emails.
 Opportunities, in contrast, are usually tracked one by one by the salespeople because that involves
 a process of negotiation.
 
 Just like leads, Open ERP provides several menus to handle sales opportunities efficiently. All
-the menus for opportunities are under the menu :menuselection:`CRM & SRM --> Sales -->
+the menus for opportunities are under the menu :menuselection:`Sales --> Sales -->
 Opportunities`.
 
-To quickly create a new opportunity, use the menu :menuselection:`CRM & SRM --> Sales --> Opportunities --> New Opportunity`.
-You usually use this menu in the case where the opportunity is direct and doesn't come first from a
+To quickly create a new opportunity, use the menu :menuselection:`Sales --> Sales --> Opportunities` and click on `New` button.
+You usually use this menu in the case where the opportunity is direct and does not come first from a
 lead. It can also be useful to create a shortcut to this menu so that you can quickly open a new
 opportunity form when you need to – after a phone call, or an email, that needs followup.
 
-The salesperson uses the menu :menuselection:`CRM & SRM --> Sales --> Opportunities --> My Opportunities --> My Open
-Opportunities` to track their opportunities. After various customer contacts, the salesperson
+The salesperson uses the menu :menuselection:`Sales --> Sales --> Opportunities` to track their opportunities by applying proper filters.
+After various customer contacts, the salesperson
 can enter the information into the form to describe the activity. The history tab provides a history
 of all the information about the activity throughout its life. The activities are automatically
-reported on the partner form of the associated customer. To see this, open the events tab when you
+reported on the partner form of the associated customer. To see this, open the `History` tab when you
 open the partner form.
 
 .. figure:: images/crm_partner_event.png
@@ -36,16 +36,28 @@ When the leads have been converted into opportunities, the opportunities can be 
 salesperson. Then you designate an opportunity manager in the company who is responsible for assigning the
 new opportunities to different salespeople to suit their speciality, location or availability.
 
-The manager can use the menu :menuselection:`Opportunity --> All Opportunities -->
-Unassigned Opportunities` to do this. This gives you a list of all opportunities that haven't yet been assigned
-to a salesperson. The manager can the enter the salesperson responsible for the opportunity into the
-field :guilabel:`Responsible`.
+The manager can use the menu :menuselection:`Sales --> Sales --> Opportunities` to do this click on `Salesman` of `Group By` tab.
+This gives you a list of all opportunities group by  assigned
+to a salesperson. The manager can find not assigned opportunities then enter the salesperson responsible for the opportunity into the
+field :guilabel:`Salesman`.
 
 Geolocalize your Opportunities
 ==============================
 
 .. todo:: add new topic Geolocalize your opportunities
 
+.. index::
+   single: module; crm_partner_assign
+
+You can geolocalize your opportunities by sing the module :mod:`crm_partner_assign`.
+
+In the partner form `Geo Localization` tab gives you the information regarding this.
+
+.. figure:: images/crm_partner_geolocalize.png
+   :scale: 50
+   :align: center
+
+   *Geo Localization in partner form*
 
 
 
@@ -53,8 +65,8 @@ Planning your Meetings effectively
 ==================================
 
 There are several methods for entering a new meeting with a partner. The first method is to enter
-the meeting directly in the company calendar. To do that, use the menu :menuselection:`CRM & SRM -->
-Calendar --> All Meetings`.
+the meeting directly in the company calendar. To do that, use the menu :menuselection:`Sales -->
+Meetings --> Meetings`.
 
 You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and
 another use the buttons above and to the right of the calendar.
@@ -90,15 +102,15 @@ along to create an event of several hours. Open ERP then opens an entry screen f
 
     The advantage of integrated management is that the enterprise calendar will group several system
     events.
-    Then in the Open ERP calendar you'll automatically find both these meetings and such information
+    Then in the Open ERP calendar you will automatically find both these meetings and such information
     as business opportunities, technical interventions, and requests for staff meetings.
 
 Track your Phone Calls
 ======================
 
 OpenERP has functions to manage a telephone call centre. If,
-when you installed the CRM module, you selected the option for calls 
-you'll be able to manage incoming and outgoing calls.
+when you installed the CRM module, you selected the option for calls
+you will be able to manage incoming and outgoing calls.
 
 Call management can be used for two particular needs:
 
@@ -109,9 +121,9 @@ Call management can be used for two particular needs:
 
 To enter details of a phone call, use one of the two following menus:
 
-* :menuselection:`CRM & SRM --> Phone Calls --> Inbound`,
+* :menuselection:`Sales --> Phone Calls --> Inbound`,
 
-* :menuselection:`CRM & SRM --> Phone Calls --> Outbound`.
+* :menuselection:`Sales --> Phone Calls --> Outbound`,
 
 The phone call will then be visible on the partner form to give you complete visibility of the
 events about that customer or supplier.
