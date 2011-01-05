@@ -28,7 +28,7 @@ with the customer.
 
 The rules for automating actions enable you to send emails automatically based on the event,
 such as assigning opportunities to the most appropriate person. To access the CRM rules, use the
-menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
+menu :menuselection:`Sales --> Configuration --> Automated Actions --> Automated Actions`.
 
 .. index::
    single: module; crm_profiling

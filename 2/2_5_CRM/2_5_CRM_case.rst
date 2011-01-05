@@ -11,7 +11,7 @@ in Open ERP case handling system.
 .. note:: Case
 
 	Case is a generic term that refers to a discussion with a partner about a specific subject. This
-	subject could be in any category – the monitoring of responses to a job advert, perhaps, or a
+	subject could be in any category – the monitoring of responses to a job advertisement, perhaps, or a
 	purchase or sales order, or an after-sales quality problem.
 
 	A case is used for following the history of the messages on a topic and for automating some
@@ -25,7 +25,7 @@ in Open ERP case handling system.
 CRM configuration
 -----------------
 
-Case management is a generic system that can be configured to your more precise needs. You'll
+Case management is a generic system that can be configured to your more precise needs. You will
 develop three case types here, to see how to build the following systems:
 
 	#. A system to manage business opportunities.
@@ -45,7 +45,7 @@ To handle each of these case types in a different way, you must create different
 Open ERP using the menu :menuselection:`CRM & SRM --> Configuration --> Case --> Sections` . Do
 this as user \ ``admin``\   in your database to try it for yourself.
 
-You'll define the following four sections:
+You will define the following four sections:
 
 * Sales
 
@@ -329,7 +329,7 @@ Open ERP so you must first download it to your desktop from Open ERP's modules
 into your server using :menuselection:`Administration --> Modules Management --> Import module`.
 Then install it into the database.
 
-Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting` 
+Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting`
 to create different reports.
 
 .. figure::  images/crm_graph.png
@@ -468,7 +468,7 @@ the setup window. The following actions are included:
 
 	.. note::  *Example 1 Improvement in the quality of support*
 
-			For example, on the graph that analyses the performance of team support in Figure 4-6 
+			For example, on the graph that analyses the performance of team support in Figure 4-6
 			you can see that the Demo User takes an average time of 3 days and 4
 			hours to close a customer support request. This is too long. After analyzing the data in depth,
 			you can see that most cases were closed in less than two days, but some may take more than ten

@@ -14,29 +14,28 @@ Using Call Center Features
 You can manually encode calls that happen or you can pass them into Open ERP. But for mass
 campaigns, you can import a list of phone calls to make. To do this, click on the import link at the
 bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
-Import` at the top.
+Import data...` at the top.
 
 Phone calls that have occurred in the open state. The different operators can be assigned calls and
-handle them one by one using the menu :menuselection:`CRM & SRM --> Phone Calls --> Outbound
---> New Outgoing Call`.
+handle them one by one using the menu :menuselection:`Sales --> Phone Calls --> Outbound`.
 
 The operator can open the calls one by one. For each call, after having contacted the customer, the
 operator can click on one of the following buttons:
 
-* :guilabel:`Cancel`: you cancel the call. For example you could cancel the call if you've tried to call them
+* :guilabel:`Cancel`: you cancel the call. For example you could cancel the call if you have tried to call them
   more than three times.
 
-* :guilabel:`Held`: you've spoken to the customer by phone. In this case the operator can change the case
+* :guilabel:`Held`: you have spoken to the customer by phone. In this case the operator can change the case
   section and send it to sales opportunities, for example. You could alternatively leave it in this
-  state if you don't need to carry out any more actions with this customer.
+  state if you do not need to carry out any more actions with this customer.
 
-* :guilabel:`Not Held`: the customer hasn't been called, you'll try to call him again later.
+* :guilabel:`Not Held`: the customer has not been called, you will try to call him again later.
 
 
 Establishing the profiles of prospects
 --------------------------------------
 
-During presales activities it's useful to qualify your prospects quickly. You can pose a series of
+During presales activities it is useful to qualify your prospects quickly. You can pose a series of
 questions to find out what product to offer to the customer, or how quickly you should handle the
 request.
 
@@ -52,7 +51,7 @@ request.
 
 As an illustration, take the case of the Tiny company which offers a service based on the Open ERP
 software. The company goes to several exhibitions and encounters dozens of prospects over a few
-days. It's important to handle each request quickly and efficiently.
+days. It is important to handle each request quickly and efficiently.
 
 The products offered by Tiny at these exhibitions are:
 
@@ -85,7 +84,7 @@ categories.
 
 This enables your sales people to follow prospects up efficiently and adapt their approach based on
 each prospect's profile. For example, they can send a letter based on a template developed for a
-specific partner category. They'd use Open ERP's report editor and generator for their sales
+specific partner category. They would use Open ERP's report editor and generator for their sales
 proposition, such as an invitation to a training session a week after the show.
 
 Using profiles effectively
@@ -94,12 +93,12 @@ Using profiles effectively
 .. index::
    single: module; crm_profiling
 
-To use the profiling system you'll need to install Open ERP's :mod:`crm_profiling` module. It's
-part of the core Open ERP system in version 5.0.0 so you don't have to download it separately from
+To use the profiling system you will need to install Open ERP's :mod:`crm_profiling` module. It is
+part of the core Open ERP system in version 6.0.0 so you do not have to download it separately from
 ``addons-extra``.
 
 Once the module is installed you can create a list of questions and the possible responses through
-the menu :menuselection:`CRM & SRM --> Configuration --> Segmentation --> Questions`.
+the menu :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Questions`.
 
 To obtain the scheme presented earlier you can create the following questions and responses:
 
@@ -126,28 +125,11 @@ profile defined like this:
 * Industry Sector? \ ``Services``\  .
 
 When entering the details of a specific prospect, the prospect's answers to various questions can be
-entered in the new fifth tab of the partner form. Open ERP will automatically assign prospects to
+entered in the `Profiling` tab of the partner form. Open ERP will automatically assign prospects to
 the appropriate partner category based on these answers.
 
-.. index::
-   single: module; report_invoice_salesman
-
-.. tip:: Sales targets
-
-	The module :mod:`report_invoice_salesman` enables you to set up regular business targets. These can be
-	based on sales turnover or sales margins.
-
-	With this module you can compare the performance of each sales person with their targets for the
-	period. Sales people can view their own performance against target in real time through a
-	dashboard.
-
-	This module is totally integrated with the rest of accounting so there's no need to extract any
-	data from another system to get the sales figures against objectives by sales person or sector –
-	it's just available all the time in real time.
-
 Customers corresponding to a specific search profile can be treated as a priority. The sales person
-can access the profile of the large active accounts from the menu :menuselection:`Partners -->
-Partners by category`.
+can access the profile of the large active accounts easily.
 
 
 .. Copyright © Open Object Press. All rights reserved.
