@@ -33,28 +33,28 @@ Understanding Standard Fields
 
 .. todo: add info
 
-To get a list of partners using demonstration data, use the menu :menuselection:`Partners -->
-Partners`.
+To get a list of customer using demonstration data, use the menu :menuselection:`Sales -->
+Address Book --> Customers`.
 
 .. figure::  images/crm_partner.png
    :scale: 50
    :align: center
 
-   *A partner form*
+   *A customer form*
 
 .. index::
    single: send SMS
 
-To the right of the partner form you'll find all of the actions, reports and shortcuts available to
+To the right of the customer form you will find all of the actions, reports and shortcuts available to
 the selected partner. This enables you to quickly send an SMS message, for example, or review a
 partner's order history, or print a reminder letter.
 
 .. tip::  Send an SMS message
 
-	To send an SMS message from standard Open ERP you'll have to place an order with the bulk SMS
+	To send an SMS message from standard Open ERP you will have to place an order with the bulk SMS
 	gateway operator Clickatell™http://clickatell.com.
 
-	You'll then receive an API number, a login and a password which you can use in Open ERP to send
+	You will then receive an API number, a login and a password which you can use in Open ERP to send
 	SMS messages to your partners.
 
 	Or you can just develop a new module based on the inbuilt SMS functions, targeted at any of the
@@ -84,30 +84,28 @@ Filtering your Partners
 -----------------------
 
 .. todo: add info
- 
+
 .. index:: Contact
 
 Contacts / Addresses
 --------------------
 
-You can have several contacts for one partner. Contacts represent company employees that you're in
+You can have several contacts for one partner. Contacts represent company employees that you are in
 contact with, along with their address details. For each address you can indicate their type (\
 ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on
 this, Open ERP can supply an address that matches the contact's function when generating documents
 at various stages through an Order process.
 
-Contacts can be entered into the first (:guilabel:`General`) tab of the :guilabel:`Partners` form,
-or you can get direct access to the list of addresses through the :menuselection:`Partners -->
-Partner Contacts` menu.
+Contacts can be entered into the first (:guilabel:`General`) tab of the :guilabel:`Customer` form,
+or you can get direct access to the list of addresses through the :menuselection:`Sales -->
+Address Book --> Addresses` menu.
 
-You can search for a subset of Partners and Contacts using their company :guilabel:`Name` or
-:guilabel:`Contact name` or part of the address, or any of the other search fields in either the
-:guilabel:`Basic Search` or the :guilabel:`Advanced Search` tab.
+You can search for a subset of Partners and Contacts using the search view.
 
 .. note:: Independent partners or physical people
 
 	If you want to represent a physical person rather than a company, in Open ERP, that person's name
-	can be typed directly into the :guilabel:`Name` field on the Partner form. In this case don't put
+	can be typed directly into the :guilabel:`Name` field on the Partner form. In this case do not put
 	in any Contact Name.
 
 .. index::
@@ -118,46 +116,30 @@ Partner Categories
 ------------------
 
 Open ERP uses hierarchical categories to organize all of its partners. To reach the list of
-available partner categories, use the menu :menuselection:`Partners --> Partners by Category`.
+available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
 
 .. figure::  images/crm_partner_category_big.png
    :scale: 50
    :align: center
 
-   *Example Partner Category structure*
+   *List of Partner Category*
 
 Double-click one of the categories in the partner category structure to get a list of the partners
-in that category. If you click on a category that has sub-categories you'll get a list of all of the
+in that category. If you click on a category that has sub-categories you will get a list of all of the
 partners in the main category and in all of its subcategories.
 
 Because categories are structured in a hierarchical manner, you can apply an action at any level of
 the structure: a marketing promotion activity, for example, can be applied either to all customers,
 or selectively only to customers in one category and its subcategories.
 
-The tree structure is also very useful when you're running the various statistical reports. You can
+The tree structure is also very useful when you are running the various statistical reports. You can
 structure reports at any level of the hierarchy using this partner segmentation.
 
-In the following sections you'll see how to assign partners to categories manually (perhaps for a
+In the following sections you will see how to assign partners to categories manually (perhaps for a
 newsletter subscription or as a hot prospect), or automatically using segmentation rules.
 
-Use the menu :menuselection:`Partners --> Configuration --> Categories --> Edit Categories` to
+Use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and click on `New` button to
 define a new category.
-
-To try Open ERP's partner capabilities described here for yourself, log into your
-database as \ ``admin/XXXXX``\   then click :menuselection:`Partners -->
-Configuration --> Categories --> Edit Categories` and create a new category of \ ``Small
-Suppliers``\   whose parent is \ ``Suppliers``\  . Then create a new :guilabel:`Partner` whose :guilabel:`Name` is \
-``Susan Trent ``\  and category is \ ``Small Suppliers``\  .
-
-Click :menuselection:`Partners --> Partners by Category` and then click :menuselection:`Suppliers
---> Small Suppliers` to find just \ ``Susan Trent``\  . Do this again but now click the :guilabel:`Suppliers`
-category in :guilabel:`Partners by Category` and you'll find that both \ ``Plumbing Component Suppliers``\
-and \ ``Susan Trent``\   are in the higher-level category: \ ``Susan Trent``\  is there because
-she's in a child category.
-
-Add new contact \ ``Graham Strong``\   to \ ``Plumbing Component Suppliers``\  . Graham's
-:guilabel:`Address Type` is \ ``Invoice``\  . Click :menuselection:`Partners --> Partner Contacts`
-and see that both Susan and Graham appear on that list.
 
 
 .. Copyright © Open Object Press. All rights reserved.

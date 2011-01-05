@@ -8,7 +8,7 @@
 Keep track of your Customers & Suppliers
 ****************************************
 
- *It's often said that the customer is king. You would treat all your customers as royalty, 
+ *It is often said that the customer is king. You would treat all your customers as royalty,
  at the center of your attention if you had a way of keeping your eyes on them at all times.
  Open ERP's CRM module is designed to make this aim a reality, helping employees of the business
  understand their customers' needs better, and automating their communication efforts.*
@@ -27,7 +27,7 @@ capture all the knowledge you have available, tools that will help you analyze w
 tools that will make it easy to use all of that knowledge and analysis.
 
 A crucial advantage that Open ERP gives you over the more specialist CRM applications is that
-Open ERP knows more about your customers and your ability to supply them because it's handling all
+Open ERP knows more about your customers and your ability to supply them because it is handling all
 of your accounting, sales, purchases, manufacturing and fulfilment as well as linking to all of
 your internal staff.
 
@@ -49,12 +49,12 @@ databases. This is a significant feature – many of your staff will then use Op
 automatically through email without ever logging into it themselves and having to learn a new
 system.
 
-Finally, at the end of this chapter you'll see an efficient method of qualifying prospects or
+Finally, at the end of this chapter you will see an efficient method of qualifying prospects or
 customers that enables you to offer a service tailored to the potential value of different
 prospects.
 
 For this chapter you should start with a fresh database that includes demo data,
-using the :guilabel:`CRM profile` and no particular chart of accounts configured. 
+using the :guilabel:`CRM profile` and no particular chart of accounts configured.
 
 .. raw:: html
 
