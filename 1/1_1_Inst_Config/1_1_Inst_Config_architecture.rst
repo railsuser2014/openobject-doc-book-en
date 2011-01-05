@@ -12,14 +12,14 @@ To access Open ERP you can:
 * use an application client (the GTK client) installed on each computer.
 
 The two methods of access give very similar facilities, and you can use both on
-the same server at the same time. It's best to use the web browser if the
+the same server at the same time. It is best to use the web browser if the
 Open ERP server is some distance away (such as on another continent) because
-it's more tolerant of time delays between the two than the GTK client is. The
-web client is also easier to maintain, because it's generally already installed
+it is more tolerant of time delays between the two than the GTK client is. The
+web client is also easier to maintain, because it is generally already installed
 on users' computers.
 
-Conversely you'd be better off with the application client (called the GTK
-client because of the technology it's built with) if you're using a local
+Conversely you would be better off with the application client (called the GTK
+client because of the technology it is built with) if you are using a local
 server (such as in the same building). In this case the GTK client will be more
 responsive, so more satisfying to use.
 
@@ -33,8 +33,8 @@ responsive, so more satisfying to use.
     web client and the GTK client at present (since early versions of 5.0). 
     In earlier versions, the web client had fractionally greater functionality.
     
-    When you're changing the structure of your Open ERP installation (adding and
-    removing modules, perhaps changing labels) you'll find the web client to be
+    When you are changing the structure of your Open ERP installation (adding and
+    removing modules, perhaps changing labels) you will find the web client to be
     irritating because of its use of **caching**. 
     
     Caching speeds it all up by keeping a copy of data somewhere between the server 
@@ -90,7 +90,7 @@ An Open ERP system is formed from three main components:
 
 .. note::   PostgreSQL, the relational and object database management system.
 
-    It's a free and open-source high-performance system that compares well with other database
+    It is a free and open-source high-performance system that compares well with other database
     management systems such as MySQL and FirebirdSQL (both free), Sybase, DB2
     and Microsoft SQL Server (all proprietary). It runs on all types of
     Operating System, from Unix/Linux to the various releases of Windows, via
@@ -100,7 +100,7 @@ These three components can be installed on the same server or can be
 distributed onto separate computer servers if performance considerations
 require it.
 
-If you choose to run only with GTK clients you won't need the third component –
+If you choose to run only with GTK clients you will not need the third component –
 the client-web server – at all. In this case Open ERP's GTK client must be installed
 on the workstation of each Open ERP user in the company.
 

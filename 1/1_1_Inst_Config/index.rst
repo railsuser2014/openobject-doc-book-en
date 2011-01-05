@@ -13,14 +13,14 @@ Installation and Initial Setup
  *Installing Open ERP under Windows or Linux for familiarization use should take you only half an
  hour or so and needs only a couple of operations.*
  
- *The first operation is installation of the application and database server on a server PC (that's
+ *The first operation is installation of the application and database server on a server PC (that is
  a Windows or Linux or Macintosh computer).*
 
- *You've a choice of approaches for the second operation:
+ *You have a choice of approaches for the second operation:
  either install a web server (most probably on the original server PC) to use with standard web
  clients that can be found on anybody's PC, or install application clients on each intended user's PC.*
  
-When you first install Open ERP you'll set up a database containing a little functionality and
+When you first install Open ERP you will set up a database containing a little functionality and
 some demonstration data to test the installation.
  
 .. index::
@@ -28,8 +28,8 @@ some demonstration data to test the installation.
 
 .. note:: Renaming from Tiny ERP to Open ERP
 
-   Tiny ERP was renamed to Open ERP early in 2008 so somebody who's already used Tiny ERP should be
-   equally at home with Open ERP. The two names refer to the same software, so there's no
+   Tiny ERP was renamed to Open ERP early in 2008 so somebody who has already used Tiny ERP should be
+   equally at home with Open ERP. The two names refer to the same software, so there is no
    functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book
    applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from
    time to time.
@@ -50,7 +50,7 @@ some demonstration data to test the installation.
 
    This service should be particularly useful to small companies that just want to get going quickly
    and at low cost.
-   It gives them immediate access to an integrated management system that's been built on the type
+   It gives them immediate access to an integrated management system that has been built on the type
    of enterprise architecture
    used in banks and other large organizations.
    Open ERP is that system, and is described in detail throughout this book.
@@ -64,8 +64,8 @@ points:
 * install it on your own computers to test it in your company's systems environment.
 
 There are some differences between installing Open ERP on Windows and on Linux systems, but once
-installed, it gives the same functions from both so you won't generally be able to tell which type
-of server you're using.
+installed, it gives the same functions from both so you will not generally be able to tell which type
+of server you are using.
 
 .. note:: Linux, Windows, Mac
 
@@ -89,7 +89,7 @@ of server you're using.
    each new version, so you should always check each release's documentation – both packaged with
    the release and on the website – for exact installation procedures.
 
-Once you've completed this installation, create and set up a database to confirm that your
+Once you have completed this installation, create and set up a database to confirm that your
 Open ERP installation is working. You can follow these early chapters in this part of the book to achieve this.
 
 .. raw:: html

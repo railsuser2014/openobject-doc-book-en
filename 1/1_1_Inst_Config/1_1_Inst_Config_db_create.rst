@@ -10,8 +10,8 @@ Database creation
 
 Use the technique outlined in this section to create a new database, \ ``openerp_ch01``\  . This
 database will contain the demonstration data provided with Open ERP and a large proportion of the
-core Open ERP functionality. You'll need to know your super administrator password for this – or
-you'll have to find somebody who does have it to create this seed database.
+core Open ERP functionality. You will need to know your super administrator password for this – or
+you will have to find somebody who does have it to create this seed database.
 
 .. index::
    single: password; super-administrator
@@ -29,7 +29,7 @@ you'll have to find somebody who does have it to create this seed database.
    configuration file read-only so that there is no prospect of changing it from the client.
    Either way, a server systems administrator can change it if you forget it.
    
-   So if your system is set u to allow it, you can change the superadmin password through the GTK client
+   So if your system is set to allow it, you can change the superadmin password through the GTK client
    from the menu :menuselection:`File --> Databases --> Administrator Password`, or through the
    web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Databases` on the
    login screen, and then clicking the :guilabel:`Password` button on the Management screen. 
@@ -38,7 +38,7 @@ you'll have to find somebody who does have it to create this seed database.
    the ``--config`` command line option.
 
 .. figure:: images/change_superadmin_pwd.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Changing the super-administrator password through the web client*
@@ -48,9 +48,9 @@ you'll have to find somebody who does have it to create this seed database.
 Creating the database
 ---------------------
 
-If you're using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
+If you are using the GTK client, choose :menuselection:`Files --> Databases --> New database`  in
 the menu at the top left. Enter the super-administrator password, then the name of the new database
-you're creating.
+you are creating.
 
 .. figure:: images/create_new_db_GTK.png
    :scale: 75
@@ -58,14 +58,14 @@ you're creating.
 
    *Creating a new database through the GTK client*  
 
-If you're using the web client, click :guilabel:`Databases` on the login screen, then
+If you are using the web client, click :guilabel:`Databases` on the login screen, then
 :guilabel:`Create` on the database management page. Enter the super-administrator password, and the
-name of the new database you're creating.
+name of the new database you are creating.
   
-In both cases you'll see a checkbox that determines whether you load demonstration data or not.
+In both cases you will see a checkbox that determines whether you load demonstration data or not.
 The consequences of checking this box or not affect the **whole use** of this database.
 
-In both cases you'll also see that you can choose the Administrator password. This makes your 
+In both cases you will also see that you can choose the Administrator password. This makes your 
 database quite secure because you can ensure that it is unique from the outset.
 (In fact many people find it hard to resist ``admin`` as their password!)
 
@@ -76,7 +76,7 @@ Database openerp_ch01
    pair: account; user
 
 Wait for the message showing that the database has been successfully created, along with the user
-accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you've created this seed
+accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now you have created this seed
 database you can extend it without having to know the super-administrator password.
 
 .. index::
@@ -99,35 +99,32 @@ database you can extend it without having to know the super-administrator passwo
 
 .. note::  Failure to create a database
 
-	How do you know if you've successfully created your new database?
-	You're told if the database creation has been unsuccessful.
+	How do you know if you have successfully created your new database?
+	You are told if the database creation has been unsuccessful.
 	If you have entered a database name using prohibited characters (or no name, or too short a name)
 	you will be alerted by the dialog box :guilabel:`Bad database name!` explaining how to correct the error.
-	If you've entered the wrong super-administrator password or a name already in use
-	(some names can be reserved without your knowledge), you'll be alerted by the dialog box
+	If you have entered the wrong super-administrator password or a name already in use
+	(some names can be reserved without your knowledge), you will be alerted by the dialog box
 	:guilabel:`Error during database creation!`.
 
-Connect to the database \ ``openerp_ch01``\   that you just created, using the default administrator
-account.
+Since this is the first time you have connected to this database you will be asked a series of questions to
+define the database parameters. You may choose to :guilabel:`Skip Configuration Wizards` or
+:guilabel:`Start Configuration`. If you choose to configure your application, you may proceed with the
+following steps:
 
-If this is the first time you've connected to this database you'll be asked a series of questions to
-define the database parameters:
+	#.  :guilabel:`Configure Your Interface` : select \ ``Simplified`` \ and click :guilabel:`Next`.
 
-	#.  :guilabel:`Select a profile` : select \ ``Minimal Profile``\  and click :guilabel:`Next`.
+	#.  :guilabel:`Configure Your Company Information` : replace the proposed default of \ ``OpenERP S.A.`` \
+	    by your own company name, complete as much of your address as you like. You can set the currency that
+	    your company uses or leave the default setting.You may also add your company logo which will
+	    be visible on reports and other documents. Click :guilabel:`Next`.
 
-	#.  :guilabel:`Company Details` : replace the proposed default of \ ``Tiny sprl``\  by your own
-	    company name, complete as much of your address as you like, and add some lines about your company,
-	    such as a slogan and any statutory requirements, to the header and footer fields. Click
-	    :guilabel:`Next`.
+	#.  :guilabel:`Install Applications` : check the applications you need and then click :guilabel:`Install`.
+	    For now, do not install any application.
 
-	#.  :guilabel:`Summary` : check the information and go back to make any modifications you need
-	    before installation. Then click :guilabel:`Install`.
-
-	#.  :guilabel:`Installation Completed` : click :guilabel:`Ok`.
-
-Once configuration is complete you're connected to your Open ERP system. Its functionality is very
-limited because you've selected a minimal installation, but this is sufficient to demonstrate that
-your installation is working.
+Once configuration is complete you are connected to your Open ERP system. Its functionality is very
+limited because you have selected a :guilabel:`Simplified` interface with no application installed,
+but this is sufficient to demonstrate that your installation is working.
 
 .. figure:: images/define_main_co_dlg.png
    :align: center
@@ -141,7 +138,7 @@ your installation is working.
 Managing databases
 ------------------
 
-As a super-administrator you've not only got rights to create new databases, but also to:
+As a super-administrator you have not only got rights to create new databases, but also to:
 
 * delete databases,
 
@@ -149,8 +146,8 @@ As a super-administrator you've not only got rights to create new databases, but
 
 * restore databases.
 
-All of these operations can be carried out from the menu :menuselection:`File --> Databases... -->
-Backup databases` in the GTK client, or from the :guilabel:`Database` button in the web client's 
+All of these operations can be carried out from the menu :menuselection:`File --> Databases...`
+in the GTK client, or from the :guilabel:`Database` button in the web client's 
 :guilabel:`Login` screen.
 
 .. index::
@@ -179,36 +176,36 @@ administration and use of Open ERP.
 New Open ERP functionality
 ==========================
 
-The database you've created and managed so far is based on the core Open ERP functionality that you
+The database you have created and managed so far is based on the core Open ERP functionality that you
 installed. The core system is installed in the file system of your Open ERP application server, but
 only installed into an Open ERP database as you require it, as is described in the next chapter, :ref:`ch-guided`.
 
-What if want to update what's there, or extend what's there with additional modules?
+What if you want to update what is there, or extend what is there with additional modules?
 
-* To update what you have, you'd install a new instance of Open ERP using the same techniques as
+* To update what you have, you would install a new instance of Open ERP using the same techniques as
   described earlier in this section, :ref:`sect-dbcreate`.
 
-* To extend what you have, you'd install new modules in the ``addons`` directory of your current
+* To extend what you have, you would install new modules in the ``addons`` directory of your current
   Open ERP installation. There are several ways of doing that.
 
 .. index::
    pair:  system; administrator
 
-In both cases you'll need briefly to be a \ ``root``\   user or \ ``Administrator``\   of your
+In both cases you will need briefly to be a \ ``root`` \ user or \ ``Administrator`` \ of your
 Open ERP application server.
 
 Extending Open ERP
 ------------------
 
-To extend Open ERP you'll need to copy modules into the \ ``addons``\   directory. That's in
-your server's \ ``openerp-server``\   directory (which differs between Windows, Mac and some of the
+To extend Open ERP you will need to copy modules into the \ ``addons`` \ directory. That is in
+your server's \ ``openerp-server`` \ directory (which differs between Windows, Mac and some of the
 various Linux distributions and not available at all in the Windows all-in-one installer).
 
 .. index::
    single: module; product
    single: module; purchase
 
-If you look there you'll see existing modules such as :mod:`product` and :mod:`purchase`. A
+If you look there you will see existing modules such as :mod:`product` and :mod:`purchase`. A
 module can be provided in the form of files within a directory or a a zip-format file containing
 that same directory structure.
 
@@ -217,12 +214,12 @@ You can add modules in two main ways – through the server, or through the clie
 .. index::
    pair:  system; administration
 
-To add new modules through the server is a conventional systems administration task. As \ ``root``\
-user or other suitable user, you'd put the module in the \ ``addons``\   directory and change its
+To add new modules through the server is a conventional systems administration task. As \ ``root`` \
+user or other suitable user, you would put the module in the \ ``addons`` \ directory and change its
 permissions to match those of the other modules.
 
-To add new modules through the client you must first change the permissions of the \ ``addons``\
-directory of the server, so that it is writable by the server. That will enable you to install
+To add new modules through the client you must first change the permissions of the \ ``addons`` \
+directory of the server, so that it is writeable by the server. That will enable you to install
 Open ERP modules using the Open ERP client (a task ultimately carried out on the application
 server by the server software).
 
@@ -231,13 +228,13 @@ server by the server software).
 
 .. tip:: Changing permissions
 
-	A very simple way of changing permissions on the Linux system you're using to develop an Open ERP
+	A very simple way of changing permissions on the Linux system you are using to develop an Open ERP
 	application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is
 	the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-
 	server/addons).
 
 Any user of Open ERP who has access to the relevant administration menus can then upload any new
-functionality, so you'd certainly disable this capability for production use. You'll see examples of
+functionality, so you would certainly disable this capability for production use. You will see examples of
 this uploading as you make your way through this book.
 
 

@@ -7,19 +7,19 @@ First steps with Open ERP
 
  Open ERP is an impressive software system, being simple to use and yet providing great benefits
  in helping you manage your company.
- It's easy to install under both Windows and Linux compared with other enterprise-scale systems,
+ It is easy to install under both Windows and Linux compared with other enterprise-scale systems,
  and offers unmatched functionality.
 
  The objective of this first part of the book is to help you to start discovering it in practice.
 
  The first chapter, :ref:`ch-inst`, gives detailed guidance for installing it.
- If you're not a systems administrator, or if you've already installed
- Open ERP, or if you're planning to use an online SaaS provider, then you can skip this chapter and
+ If you are not a systems administrator, or if you have already installed
+ Open ERP, or if you are planning to use an online SaaS provider, then you can skip this chapter and
  move straight to the next chapter, :ref:`ch-guided`. 
- There, you're taken on a step-by-step guided tour using the information 
+ There, you are taken on a step-by-step guided tour using the information 
  in its demonstration database.
  
- If you've already used Open ERP (or Tiny ERP) a bit then you can move
+ If you have already used Open ERP (or Tiny ERP) a bit then you can move
  past that to the third chapter in this part of the book.
  In :ref:`ch-real` you can try out a real case, from scratch in a new database,
  by developing a complete business workflow that runs from purchase to sale of goods.
