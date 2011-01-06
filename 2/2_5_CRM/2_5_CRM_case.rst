@@ -315,33 +315,24 @@ calendar or, for example, to display the calendar for only some employees at a t
 
 .. index:: performance analysis
 
-Analyzing performance
+Analyzing Performance
 ---------------------
 
 Since all of your customer communications are integrated into the Open ERP system, you can analyses
 the performance of your teams in many ways.
 
-.. index::
-   single: module; report_crm
+You can use menu :menuselection:`Sales --> Reporting` to view different statistical reports.
 
-Open ERP has a module that helps handle this – :mod:`report_crm`. It's not part of the core
-Open ERP so you must first download it to your desktop from Open ERP's modules repository, then
-into your server using :menuselection:`Administration --> Modules Management --> Import module`.
-Then install it into the database.
-
-Once you've installed it you can use menu :menuselection:`CRM & SRM --> Reporting`
-to create different reports.
+As for example statistical analysis of Help Desk can be seen using the menu  :menuselection:`Sales --> Reporting -->
+Helpdesk Analysis` and switch to `Graph` view.
 
 .. figure::  images/crm_graph.png
    :scale: 50
    :align: center
 
-   *Analyzing the performance of your support team*
+   *Analyzing the performance of your Help Desk support team*
 
-If you want to analyze the performance of your service and support group, for example, use the graph
-from :menuselection:`CRM & SRM --> Reporting --> All Months --> Cases by User and Section`. Click
-the menu to obtain a list view, then click the :guilabel:`Graph` button to the top right of the
-list. The system shows you statistics per user and it's possible to filter on each section and use
+The system shows you statistics per user and it is possible to filter on each section and use
 other criteria for searching. For example, you can type in a date range, click :guilabel:`Filter`,
 and see the graph change to reflect the new data.
 
@@ -369,7 +360,7 @@ section, and an indication of the state of each set of information:
 	one of the buttons in the :guilabel:`Action` toolbar to the right of the User or Section form that
 	is displayed.
 
-	In the GTK client you'd right-click over the text instead – this brings up a context menu with
+	In the GTK client you would right-click over the text instead – this brings up a context menu with
 	the same options as the web client would give you.
 
 You can specify that the graph view, say, appears by default so that you can consistently present
