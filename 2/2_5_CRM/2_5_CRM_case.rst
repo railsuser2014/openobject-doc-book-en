@@ -546,19 +546,6 @@ the setup window. The following actions are included:
 
 			* select and qualify your suppliers on the basis of their quality of service
 
-
-.. index:: portal
-
-.. index::
-   single: module; portal_service
-
-.. tip::  The CRM portal
-
-	Open ERP's :mod:`portal_service` module enables you to open parts of your CRM functionality to
-	suppliers and customers. They can then connect to your system using their own login and follow
-	their orders or requests online. For example the customer could make a support request directly in
-	your system, perhaps avoiding a lengthy process of data entry.
-
 .. index:: gateway
 
 Using the email gateway
@@ -582,11 +569,11 @@ Installation and Configuration
 
 To use the email gateway you must install it on your server. You can use a variety of methods to
 configure it. Described here is a simple and generic approach using the Fetchmail program under
-Linux. You'll need a system administrator to carry out this work.
+Linux. You will need a system administrator to carry out this work.
 
-To start with you have to create an email account (POP3 or IMAP) for each Section that you'll want
+To start with you have to create an email account (POP3 or IMAP) for each Section that you will want
 to connect an email to. If you have the support email address \ ``support@pop.mycompany.com``\
-you'd use the following entries:
+you would use the following entries:
 
 *  :guilabel:`POP server` : \ ``pop.mycompany.com``\  ,
 
@@ -594,7 +581,7 @@ you'd use the following entries:
 
 *  :guilabel:`Password` : \ ``<mypass>``\  .
 
-You'll also need to choose an Open ERP user that the gateway will use to access your database, such
+You will also need to choose an Open ERP user that the gateway will use to access your database, such
 as:
 
 *  :guilabel:`User Id` : \ ``3``\  ,
@@ -608,12 +595,12 @@ as:
 
 	With the web client you can usually find this number by going to the form view of a resource and
 	clicking the :guilabel:`View Log` button to the top right of the form. The ID is shown at the top
-	of the :guilabel:`Information` dialog box. (This didn't work in some of the earlier versions prior to 4.2.3.3.)
+	of the :guilabel:`Information` dialog box. (This did not work in some of the earlier versions prior to 4.2.3.3.)
 
 	You can also use the GTK client for this. Viewing any resource, such as a User, you can directly
 	see its ID at the bottom left of the form.
 
-Then specify the case section in Open ERP that you'll use when this user is connected by email, for
+Then specify the case section in Open ERP that you will use when this user is connected by email, for
 example, the :guilabel:`Helpdesk and Support`  section.
 
 Install Fetchmail on your Open ERP server. You can download it from the address
@@ -624,7 +611,7 @@ http://fetchmail.berlios.de/.
 .. note:: Fetchmail
 
 	Fetchmail is a Free / Open Source software utility used on Unix-like operating systems to retrieve
-	e-mails with the remote protocols POP, IMAP, ETRN and ODMR on the local system. It's downloadable
+	e-mails with the remote protocols POP, IMAP, ETRN and ODMR on the local system. It is downloadable
 	from this address: http://fetchmail.berlios.de/.
 
 Create a fetchmailrc file that contains the following rules:
@@ -645,8 +632,8 @@ Then start the fetchmail program, giving it a link to the configuration file tha
 
 .. tip:: Error detection
 
-	If you're executing fetchmail for the first time you should use the -v argument. This makes its
-	output verbose so you can easily see what's happening as the program executes.
+	If you are executing fetchmail for the first time you should use the -v argument. This makes its
+	output verbose so you can easily see what is happening as the program executes.
 
 .. index::
    single: case; create and maintain
