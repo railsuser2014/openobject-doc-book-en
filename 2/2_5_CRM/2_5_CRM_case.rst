@@ -400,17 +400,18 @@ Using these rules you could:
 
 * send a reminder to the supplier if their response is delayed too long,
 
-* always mark a case as urgent if it's from a major client,
+* always mark a case as urgent if it is from a major client,
 
 * transfer the case to technical services if the request is about a technical fault.
 
-To define new rules use the menu :menuselection:`CRM & SRM --> Configuration --> Cases --> Rules`.
+To define new rules use the menu :menuselection:`Sales --> Configuration --> Automated Actions -->
+Automated Actions` and click on `New` button.
 
 .. figure::  images/crm_rule.png
    :scale: 50
    :align: center
 
-   *Screenshot of a rule*
+   *Form to enter the Automated Action*
 
 .. index::
    single: rule; case
@@ -442,7 +443,7 @@ are:
 
 	- reporting by date of the last action
 
-	- reporting by the length of time that it's been active.
+	- reporting by the length of time that it is been active.
 
 If you have defined several criteria Open ERP will apply the rule only if all of the criteria are
 valid.
@@ -495,7 +496,7 @@ the setup window. The following actions are included:
 			* :guilabel:`Remind responsible` : Yes.
 
 			After the rule has been defined, the expert will receive a copy of the whole discussion between
-			the Demo User and the customer for every case that remains unclosed after two days. He'll be able
+			the Demo User and the customer for every case that remains unclosed after two days. He will be able
 			to interact with the discussion to avoid lengthy delays on complex problems.
 
 			Some companies use several support levels. The first level is handled by the least qualified
@@ -504,9 +505,9 @@ the setup window. The following actions are included:
 
 			To systematically train employees at level 1 you can create the following rule: when the case has
 			been escalated they will continue to be copied on the progress of the case. If a user at support
-			level 1 can't handle a request he can escalate it to level 2. Then when an expert at level 2
+			level 1 can not handle a request he can escalate it to level 2. Then when an expert at level 2
 			answers the customer's request, the level 1 support person also receives the answer to the
-			problem that he couldn't originally handle. So your team can be educated automatically from
+			problem that he could not originally handle. So your team can be educated automatically from
 			listening in to the passage of live support calls.
 
 			Suppose that you supply two types of support contract to your customers: Gold and Normal. You can
@@ -548,12 +549,12 @@ the setup window. The following actions are included:
 			The system's statistics provide analyses about the number and the cost of quality problems from
 			different suppliers.
 
-			If certain suppliers don't offer the service quality that you expect you can automatically create
+			If certain suppliers do not offer the service quality that you expect you can automatically create
 			rules that:
 
 			* send a reminder to the supplier after a few days if the case still remains open
 
-			* remind the production manager to call the supplier and resolve the situation if the case hasn't
+			* remind the production manager to call the supplier and resolve the situation if the case has not
 			  been closed within a week
 
 			* select and qualify your suppliers on the basis of their quality of service
