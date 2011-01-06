@@ -270,20 +270,16 @@ for.
 
 .. index:: calendars
 
-Generating calendars
---------------------
+Helpdesk Calendars
+------------------
 
 The Open ERP web client can display any type of resource in the form of a timetable. You can
 generate calendar views for each of your cases as you create menus for those cases.
 
-So if you want to implement a shared calendar for your calendar in Open ERP all you need to do is:
+So if you want to implement a shared calendar for your calendar in Open ERP all you need to use the menu
+:menuselection:`Sales --> Meetings --> Meetings`.
 
-	#. Create a section \ ``Meeting Calendar``\
-
-	#. Create menus for this section while specifying that you want a calendar view from
-	   :menuselection:`CRM & SRM --> Configuration --> Create Menus for a New Section`.
-
-You'll get menus enabling you to manage calendars for each employee, and you'll also get a shared
+You will get menus enabling you to manage calendars for each employee, and you will also get a shared
 calendar for the company. This calendar view is totally dynamic. You can move an event or change its
 duration just using your mouse.
 
@@ -306,7 +302,7 @@ calendar or, for example, to display the calendar for only some employees at a t
 .. note:: The generic calendar
 
 	Unlike traditional CRM software, Open ERP's calendar view is not limited to displaying
-	appointments. It's available for any type of resource.
+	appointments. It is available for any type of resource.
 
 	So in addition to the cases handled here, you could obtain calendars of tasks, deliveries,
 	manufacturing orders, sales or personal leave.
