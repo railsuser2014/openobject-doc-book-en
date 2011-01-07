@@ -7,13 +7,13 @@ Installing new functionality
 
 All of Open ERP's functionality is contained in its many and various modules. Many of these, the
 core modules, are automatically loaded during the initial installation of the system and can be
-updated online later. Although they're mostly not installed in your database at the outset, they're
+updated online later. Although they are mostly not installed in your database at the outset, they are
 available on your computer for immediate installation. Additional modules can also be loaded online
-from the official Open ERP site http://openerp.com. These modules are inactive when they're loaded
+from the official Open ERP site http://openerp.com. These modules are inactive when they are loaded
 into the system, and can then be installed in a separate step.
 
-You'll start by checking if there are any updates available online that apply to your initial
-installation. Then you'll install a CRM module to complete your existing database.
+You will start by checking if there are any updates available online that apply to your initial
+installation. Then you will install a CRM module to complete your existing database.
 
 .. index::
   single: module; upgrading
@@ -21,30 +21,14 @@ installation. Then you'll install a CRM module to complete your existing databas
 Updating the Modules list
 ---------------------------
 
-Click :menuselection:`Administration --> Modules Management --> Update Modules List` to start the
-updating tool. The :guilabel:`Scan for new modules` window opens showing the addresses that
-Open ERP will look in for downloading new modules (known as the repositories), and updating
+Click :menuselection:`Administration --> Modules --> Update Modules List` to start the
+updating tool. The :guilabel:`Module Update` window opens notifying the user that
+Open ERP will look at the server side for adding new modules and updating
 existing ones.
 
-.. tip:: Remote module repositories
-
-	If the repository list doesn't reflect your needs then you can edit it from
-	:menuselection:`Administration --> Modules Management --> Repository List`. There you can link to new
-	repositories by adding their URLs and disable listed ones by unchecking their 
-	:guilabel:`Active` checkbox. If
-	you're not connected to the Internet then you probably want to disable anything there.
-
-	Your Open ERP installation must be configured with its ``addons`` directory as writable for you to be
-	able to download anything at all. If it hasn't been, then you may need the assistance of a systems
-	administrator to change your server's settings so that you can install new modules.
-
-Click :guilabel:`Check New Modules` to start the download from the specified locations. When it's
-complete you'll see a :guilabel:`New Modules` window indicating how many new modules were downloaded
-and how many existing modules were updated. Click :guilabel:`OK` to return to the updated list.
-
-It won't matter in this chapter if you can't download anything, but some of the later chapters refer
-to modules that aren't part of the core installation and have to be obtained from a remote
-repository.
+Click :guilabel:`Update` to start the update on the server side. When it is
+complete you will see a :guilabel:`Module update result` section indicating how many new modules were added
+and how many existing modules were updated. Click :guilabel:`Open Modules` to return to the updated list.
 
 .. note:: Modules
 
@@ -61,8 +45,9 @@ repository.
 	and :guilabel:`Next`
 	and selecting a different number from the default of 20.
 
-	If you use the GTK client you can search, as you would with the web client, or use the + icon to
-	the top left of the window to change the number of entries returned by the search from its default
+	If you use the GTK client you can search, as you would with the web client, or use the selection field
+	(currently showing 80) to
+	the top right of the window to change the number of entries returned by the search from its default
 	limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
 
 .. index::
@@ -75,12 +60,12 @@ Installing a module
 .. index::
    single: module; product
 
-You'll now install a module named :mod:`product`, which will enable you to manage the company's
-products. This is part of the core installation, so you don't need to load anything to make this
-work, but isn't installed in the Minimal Profile.
+You will now install a module named :mod:`product`, which will enable you to manage the company's
+products. This is part of the core installation, so you do not need to load anything to make this
+work.
 
-Open the list of uninstalled modules from :menuselection:`Administration --> Modules Management -->
-Modules --> Uninstalled modules`. Search for the module by entering the name :mod:`product` in the search
+Open the list of modules from :menuselection:`Administration --> Modules -->
+Modules`. Search for the module by entering the name :mod:`product` in the :guilabel:`Name` field on the search
 screen then clicking it in the list that appears below it to open it. The form that describes the
 module gives you useful information such as its version number, its status and a review of its
 functionality. Click :guilabel:`Schedule for Installation` 
@@ -98,23 +83,21 @@ and the status of the module changes to :guilabel:`To be installed`.
 
 	If you select a module in any of the module lists by clicking on a module line and then on
 	:guilabel:`Technical Guide` at the top right of the window, Open ERP produces a technical report
-	on that module. It's helpful only if the module is installed, so the menu
-	:menuselection:`Administration --> Modules Management --> Modules --> Installed Modules` produces the most
-	fruitful list.
+	on that module. It is helpful only if the module is installed.
 
 	This report comprises a list of all the objects and all the fields along with their descriptions.
-	The report adapts to your system and reflects any modifications you've made and all the other
-	modules you've installed.
+	The report adapts to your system and reflects any modifications you have made and all the other
+	modules you have installed.
 
-Click :guilabel:`Apply Scheduled Upgrades` then :guilabel:`Start Upgrade` on the :guilabel:`System Upgrade`
-form that appears. Close the window when the operation has completed. Return to the main menu you'll
+Then, either use the menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, or from the :guilabel:`Actions` section click :guilabel:`Apply Scheduled Upgrades`, then :guilabel:`Start update` on the :guilabel:`Module Upgrade`
+form that appears. Close the window when the operation has completed. Return to the :guilabel:`Sales` menu; you will
 see the new menu :menuselection:`Products` has become available.
 
 .. tip::  Refreshing the menu in the GTK client
 
-	After an update in the GTK client you'll have to open a new menu to refresh the content –
-	otherwise you won't see the new menu item. To do that use the window menu :menuselection:`Form -->
-	Refresh/Cancel`.
+	After an update in the GTK client you will have to open a new menu to refresh the content –
+	otherwise you will not see the new menu item. To do that use the window menu :menuselection:`Form -->
+	Reload / Undo` or use the shortcut :kbd:`Ctrl+R`.
 
 Installing a module with its dependencies
 -----------------------------------------
@@ -123,28 +106,27 @@ Installing a module with its dependencies
    single: module; crm
 
 Now install the CRM module (Customer Relationship Management) using the same process as before.
-Start from :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules`.
+Start from :menuselection:`Administration --> Modules --> Modules`.
 
-	#. 	Get the list of modules to install, and search for the :mod:`crm` module in that list.
+	#.  Get the list of modules, and search for the :mod:`crm` module in that list.
 	
-	#.	Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
+	#.  Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
 	
 	#.  Do the same for :mod:`account`. 
 	
 	#.  Click :guilabel:`Apply Scheduled Upgrades` on the action toolbar to the right.
 
-	#.	Click :guilabel:`Start Upgrade` to install both modules. 
+	#.  Click :guilabel:`Start update` to install both modules. 
 	
-	#.  After a wait, when the installation is complete, click :guilabel:`Start Configuration`.
+	#.  After a wait, when the installation is complete, you may close this dialog box.
 	
-	#.  Accept the defaults for accounts setup and select ``None`` for the chart of accounts.
-	
-	#.  You'll see details of all the features installed by the modules on a new
+	#.  You will see details of all the features installed by the modules on a new
 	    :guilabel:`Features` tab on the module form. 
 
-When you return to the main menu you'll find the new customer relationship management menu
-:menuselection:`CRM & SRM`. You'll also see all the accounting functions that are now available in
-the :menuselection:`Financial Management` menu.
+When you return to the :menuselection:`Sales` menu you will find the new menu items under it like
+:menuselection:`Sales --> Leads`, :menuselection:`Sales --> Opportunities`, :guilabel:`Meetings` and
+:guilabel:`Phone Calls` which are a part of the customer relationship management system. You will also see
+all the accounting functions that are now available in the :menuselection:`Accounting` menu.
 
 There is no particular relationship between the modules installed and the menus added. Most of the
 core modules add complete menus but some also add submenus to menus already in the system. Other
@@ -157,30 +139,30 @@ forms, or simply additional demonstration data or some settings specific to a gi
 
 .. note::  Dependencies between modules
 
-	The module form shows two tabs before it's installed. 
+	The module form shows two tabs before it is installed. 
 	The first tab gives basic information about the module and the
 	second gives a list of modules that this module depends on. So when you install a module, Open ERP
 	automatically selects all the necessary dependencies to install this module.
 
-	That's also how you develop the profile modules: they simply define a list of modules that you want
+	That is also how you develop the profile modules: they simply define a list of modules that you want
 	in your profile as a set of dependencies.
 
-Although you can install a module and all its dependencies at once, you can't remove them in one
-fell swoop – you'd have to uninstall module by module. Uninstalling is more complex than
+Although you can install a module and all its dependencies at once, you cannot remove them in one
+fell swoop – you would have to uninstall module by module. Uninstalling is more complex than
 installing because you have to handle existing system data.
 
 .. note::  Uninstalling modules
 
-	Although it works quite well, uninstalling modules isn't perfect in Open ERP. It's not guaranteed
+	Although it works quite well, uninstalling modules is not perfect in Open ERP. It is not guaranteed
 	to return the system exactly to the state it was in before installation.
 
-	So it's recommended that you make a backup of the database before installing your new modules so
-	that you can test the new modules and decide whether they're suitable or not. If they're not then
-	you can return to your backup. If they are, then you'll probably still reinstall the modules on
-	your backup so that you don't have to delete all your test data.
+	So it is recommended that you make a backup of the database before installing your new modules so
+	that you can test the new modules and decide whether they are suitable or not. If they are not then
+	you can return to your backup. If they are, then you will probably still reinstall the modules on
+	your backup so that you do not have to delete all your test data.
 
 	If you wanted to uninstall you would use the menu :menuselection:`Administration --> Modules
-	Management --> Modules --> Installed Modules` and then uninstall them in the inverse order of their
+	--> Modules` and then uninstall them in the inverse order of their
 	dependencies: ``crm``, ``account``, ``product``.
 
 Installing additional functionality
@@ -188,7 +170,7 @@ Installing additional functionality
 
 To discover the full range of Open ERP's possibilities you can install many additional modules.
 Installing them with their demonstration data provides a convenient way of exploring the whole core
-system. When you build on the \ ``openerp_ch02``\   database you'll automatically include
+system. When you build on the \ ``openerp_ch02``\   database you will automatically include
 demonstration data because you checked the :guilabel:`Load Demonstration Data` checkbox when you originally
 created the database.
 
@@ -196,37 +178,34 @@ created the database.
    single: module; importing
 ..
 
-Click :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled modules` to give you an
+Click :menuselection:`Administration --> Modules --> Modules` to give you an
 overview of all of the modules available for installation.
 
-To test several modules you won't have to install them all one by one. You can use the dependencies
-between modules to load several at once. For example, try loading the following modules:
+To test several modules you will not have to install them all one by one. You can use the dependencies
+between modules to load several at once.
 
-.. index::
-   single: modules; profile_
+Using Reconfigure wizard
+-------------------------
 
-* :mod:`profile_accounting`,
+One of the new features of OpenERP is the :guilabel:`Reconfigure` wizard. This wizard provides a better handling
+of module installation as it employs a user interface which is easy to use. The user may invoke this wizard at
+his own convenience using the shortcut :guilabel:`Reconfigure`, found just below the database and user name in the web-client. This brings up the same configuration dialog box that you may have encountered at the time of installing a new database. The :guilabel:`Reconfigure` wizard is called so, because it allows the user to review installed applications
+and install additional features (modules) related to them or to install new applications altogether.
 
-* :mod:`profile_crm`,
+When you go through the various steps in the wizard, you will come across some options that are checked
+and greyed. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration,
+you may see that the \ ``Customer Relationship Management`` \ option is already checked because the
+:mod:`crm` module had been installed in this database.
+You may choose to install other applications by checking the options and clicking :guilabel:`Install` or simply proceed by clicking :guilabel:`Skip`. You will eventually also come across the :guilabel:`CRM Application Configuration` step which you may use to add features to your CRM application. For now, select the \ ``Claims`` \ option and click :guilabel:`Configure`. This will in turn install the :mod:`crm_claim` module.
 
-* :mod:`profile_manufacturing`,
+.. figure:: images/reconfigure_wizard.png
+   :scale: 75
+   :align: center
 
-* :mod:`profile_service`.
+   *Reconfigure wizard showing Customer Relationship Management application as installed*
 
-To find these quickly, enter the word \ ``profile``\   in the :guilabel:`Name` field of the search
-form and click :guilabel:`Filter` to search for the relevant modules. Then install them one by one
-or all at once.
-
-As you update you'll see thirty or so modules to be installed. Move on from the 
-:guilabel:`System upgrade done` form by clicking :guilabel:`Start configuration` and then
-accepting the default crm configuration and picking configuration in turn.
-
-Finally install the additional modules :guilabel:`Analytic Accounting` and :guilabel:`Document Management`
-when you're offered that configuration option. Don't install any more - you now have quite a 
-fully-loaded system to look at.
-
-Click :guilabel:`Home` and you'll be returned to a dashboard, not the main menu you had before. To get to
-the main menu, use the :guilabel:`MAIN MENU` link. 
+You may continue adding features this way, skip steps or simply exit from this wizard. When you feel the need to
+load your system with additional features, you may invoke the :guilabel:`Reconfigure` wizard again at any point.
 
 .. Copyright © Open Object Press. All rights reserved.
 
