@@ -2,15 +2,15 @@
 Invoices
 ========
 
-In Open ERP, the concept of “invoice” includes the following documents:
+In OpenERP, the concept of “invoice” includes the following documents:
 
 * The Customer Invoice
 
 * The Supplier Invoice
 
-* A Customer Credit note or Customer Refund
+* A Customer Credit Note or Customer Refund
 
-* A Supplier Credit note or Supplier Refund
+* A Supplier Credit Note or Supplier Refund
 
 Only the invoice type and the representation mode differ for each of the four documents. But they are
 all stored in the same object type in the system.
@@ -26,11 +26,11 @@ name of the tab enables you to tell the invoice types apart when you are working
 	There are many advantages in deriving the different types of invoice from the same object. Two of the
 	most important are:
 
-	* In a multi-company environment with inter-company invoicing, a customer invoice in one company
+	* In a multi-company environment with intercompany invoicing, a customer invoice in one company
 	  becomes a supplier invoice for the other,
 
 	* This enables you to work and search for all invoices from the same menu. If you are looking for an
-	  invoicing history, Open ERP provides both supplier and customer invoices in the same list, as well
+	  invoicing history, OpenERP provides both supplier and customer invoices in the same list, as well
 	  as credit notes.
 
 .. index::
@@ -40,17 +40,17 @@ name of the tab enables you to tell the invoice types apart when you are working
 
    A credit note is a document that enables you to cancel an invoice or part of an invoice.
 
-To access customer invoices in Open ERP, use the submenus of :menuselection:`Accounting -->
+To access customer invoices in OpenERP, use the submenus of :menuselection:`Accounting -->
 Customers --> Customer Invoices` and for supplier invoice use the submenu of :menuselection:`Accounting -->
 Suppliers --> Supplier Invoices`.
 
-Most of the time, invoices are generated automatically by Open ERP as they are generated from other
+Most of the time, invoices are generated automatically by OpenERP as they are generated from other
 processes in the system. So it is not usually necessary to create them manually, but simply approve
-or validate them. Open ERP uses the following different ways of generating invoices:
+or validate them. OpenERP uses the following different ways of generating invoices:
 
 * from Supplier or Customer Orders,
 
-* from receipt or despatch of goods,
+* from receipt or dispatch of goods,
 
 * from work carried out (timesheets, see :ref:`ch-hr`),
 
@@ -63,22 +63,22 @@ system user and sent to the customer. The different invoicing methods are detail
 sections and chapters.
 
 It is also possible to enter invoices manually. This is usually done for invoices that are not
-associated with an Order (usually purchase orders) or Credit Notes. Also if the system has not been
+associated with an order (usually purchase orders) or Credit Notes. Also if the system has not been
 configured correctly you might need to edit the invoice before sending it to the customer.
 
 For example, if you have not realized that the customer is tax-exempt, the invoice you generate from an
-Order will contain tax at the normal rates. It is then possible to edit this out of the invoice
+order will contain tax at the normal rates. It is then possible to edit this out of the invoice
 before validating it.
 
-Entering a customer invoice
+Entering a Customer Invoice
 ---------------------------
 
-The principle of entering data for invoices in Open ERP is very simple, as it enables non-
+The principle of entering data for invoices in OpenERP is very simple, as it enables non-
 accountant users to create their own invoices. This means that your accounting information can be
 kept up to date all the time as orders are placed and received, and their taxes are calculated.
 
 At the same time it allows people who have more accounting knowledge to keep full control over the
-accounting entries that are being generated. Each value proposed by Open ERP can be modified later
+accounting entries that are being generated. Each value proposed by OpenERP can be modified later
 if needed.
 
 Start by manually entering a customer invoice. Use :menuselection:`Accounting -->
@@ -90,7 +90,7 @@ A new invoice form opens for entering information.
    :scale: 75
    :align: center
 
-   *Entering a new invoice*
+   *Entering a New Invoice*
 
 The document is composed of three parts:
 
@@ -100,19 +100,19 @@ The document is composed of three parts:
 
 * the bottom of the page, with detail about the taxes, and the totals.
 
-To enter a document in Open ERP you should always fill in fields in the order that they appear on
+To enter a document in OpenERP you should always fill in fields in the order they appear on
 screen. Doing it this way means that some of the later fields are filled in automatically from the
-selections made in earlier fields. So select the :guilabel:`Customer`, and the following fields are
+selections made in earlier fields. So select the `Customer`, and the following fields are
 completed automatically:
 
 * the invoice address corresponds to the customer contact that was given the address type of
-  :guilabel:`Invoice` in the partner form (or otherwise the address type of :guilabel:`Default`),
+  `Invoice` in the partner form (or otherwise the address type of `Default`),
 
-* the partner account corresponds to the account given in the :guilabel:`Accounting` which is found in a
+* the partner account corresponds to the account given in the `Accounting` which is found in a
   tab of the partner form.
 
 * a specific or a default payment condition can be defined for this partner in the
-  :guilabel:`Accounting` tab of the partner form. Payment conditions are generated by rules for the payment of
+  `Accounting` tab of the partner form. Payment conditions are generated by rules for the payment of
   the invoice. For example: 50% in 21 days and 50% in 60 days from the end of the month.
 
 .. index::
@@ -133,7 +133,7 @@ completed automatically:
 
 .. tip:: Seeing partner relationships
 
-   You can reach more information from certain relation fields in Open ERP.
+   You can reach more information from certain relation fields in OpenERP.
 
    * In the web client in read-only mode a relation is commonly a hyperlink
      - it takes you to the main form for that entity, with all of the actions and links.
@@ -142,7 +142,7 @@ completed automatically:
      as right-clicking in the field to get a
      context menu with links and other options.
 
-   * And in the GTK clientyou can right-click the field to get that same
+   * And in the GTK client you can right-click the field to get that same
      context menu.
 
    So one way or another you can rapidly reach the partner's:
@@ -169,42 +169,42 @@ of two techniques:
 .. tip:: Invoice Line Description
 
 	The invoice line description is more of a title than a comment. If you want to add more detailed
-	comments you can use the field in the second tab :guilabel:`Notes`.
+	comments you can use the field in the second tab `Notes`.
 
 So select the product \ ``Basic PC``\ in the product field in an invoice line. The
 following fields are then completed automatically:
 
-*  :guilabel:`Description` : this comes from the product, in the language of the partner,
+*  `Description` : this comes from the product, in the language of the partner,
 
-*  :guilabel:`Account` : determined by the purchase or sales account defined in the
-   product properties. If no account is specified in the product form, Open ERP uses the properties of
+*  `Account` : determined by the purchase or sales account defined in the
+   product properties. If no account is specified in the product form, OpenERP uses the properties of
    the category that the product is associated with.
 
-*  :guilabel:`Unit of Measure` : this is defined by default in the product form,
+*  `Unit of Measure` : this is defined by default in the product form,
 
-*  :guilabel:`Unit Price` : this is given by the sales price in the product form and is expressed
+*  `Unit Price` : this is given by the sales price in the product form and is expressed
    without taxes,
 
-*  :guilabel:`Taxes` : provided by the product form and the partner form.
+*  `Taxes` : provided by the product form and the partner form.
 
 .. index::
    single: module; account_tax_include
 
-.. tip::  Managing the price with tax included
+.. tip::  Managing the Price with Tax Included
 
-	By default, Open ERP invoices and processes the price without taxes – they are managed as a
+	By default, OpenERP invoices and processes the price without taxes – they are managed as a
 	separate amount.
-	OpenERP can manage tax inclusive price when you check the `Tax Included in Price`  field true when configure
+	OpenERP can manage tax inclusive prices when you check the `Tax Included in Price`  field true when configuring
 	the tax.
 
-.. note:: Information about the product
+.. note:: Information about the Product
 
-	When you are entering invoice data it can sometimes be useful to get hold of more information about
+	When you are entering invoice data, it can sometimes be useful to get hold of more information about
 	the product you are invoicing.
-	Since you are already in edit mode, you would press the :guilabel:`Ctrl` key and use a right mouse-click
-	on the :guilabel:`Product` field
+	Since you are already in edit mode, you would press the `Ctrl` key and use a right mouse-click
+	on the `Product` field
 	(in both the web and the GTK clients).
-	Then select the available reports. Open ERP provides three standard reports about the product:
+	Then select the available reports. OpenERP provides three standard reports about the product:
 
 	* forecasts of future stock,
 
@@ -213,9 +213,9 @@ following fields are then completed automatically:
 	* location of the product in your warehouses.
 
 You can enter several invoice lines and modify the values that are automatically completed
-by Open ERP.
+by OpenERP.
 
-Once the invoice lines have been entered, you can click :guilabel:`Compute Taxes` on the invoice to get
+Once the invoice lines have been entered, you can click `Compute Taxes` on the invoice to get
 the following information:
 
 * details of tax calculated,
@@ -226,18 +226,18 @@ the following information:
 
 * total price.
 
-In the :guilabel:`Taxes` area at the bottom left of the invoice you will find the details of the totals
+In the `Taxes` area at the bottom left of the invoice you will find the details of the totals
 calculated for different tax rates used in the invoice.
 
 .. tip::  Tax Calculations
 
-	You can double-click on one of the lines in the tax summary areas in the invoice.
+	You can double-click one of the lines in the tax summary areas in the invoice.
 
-	Open ERP then shows you the detail of the tax charges which will form your tax
+	OpenERP then shows you the detail of the tax charges which will form your tax
 	declaration at the end of the period.
 
 	It shows you the total that will be computed in the different parts of the legal declaration. This
-	enables you to manage the declaration in Open ERP automatically.
+	enables you to manage the declaration in OpenERP automatically.
 
 
 .. figure::  images/account_invoice_tva.png
@@ -247,7 +247,7 @@ calculated for different tax rates used in the invoice.
    *Detail of tax charges on an invoice*
 
 Before approving the invoice you can modify the date and the accounting period, which are entered by
-default as today's date. These fields are found on the second tab :guilabel:`Other Info`.
+default as today's date. These fields are found on the second tab `Other Info`.
 
 .. index::
    single: invoice layout
@@ -259,23 +259,23 @@ default as today's date. These fields are found on the second tab :guilabel:`Oth
 	:mod:`account_invoice_layout`. This enables you to add various elements between the lines such as
 	subtotals, sections, separators and notes.
 
-Click :guilabel:`Validate` when you want to approve the invoice. It moves from the \ ``Draft``\
+Click `Validate` when you want to approve the invoice. It moves from the \ ``Draft``\
 state to the \ ``Open``\   state.
 
-When you have validated an invoice, Open ERP gives it a unique number from a defined sequence. By
-default it takes the form \ ``Journal Code/Year/Sequence Number``\   for example \ ``SAJ/2010/005``\  . You can not modify
-invoice number but if you want to modify the sequence numbers use the menu :menuselection:`Administration --> Configuration -->
+When you have validated an invoice, OpenERP gives it a unique number from a defined sequence. By
+default it takes the form \ ``Journal Code/Year/Sequence Number``\   for example \ ``SAJ/2010/005``\  . You cannot modify an
+invoice number, but instead you should modify the sequence numbers through the menu :menuselection:`Administration --> Configuration -->
 Sequences --> Sequences`.
 
 Accounting entries corresponding to this invoice are automatically generated when you approve the
-invoice. You see the detail of this by clicking the entry in the :guilabel:`Journal Entry` field and searching
+invoice. You see the details by clicking the entry in the `Journal Entry` field and searching
 there for the account moves generated by that invoice number.
 
 Tax Management
 --------------
 
 Details on the product form determine the selection of applicable taxes for an
-invoice line. By default Open ERP takes account of all the taxes defined in the product form.
+invoice line. By default OpenERP takes account of all the taxes defined in the product form.
 
 Take the case of the following product
 
@@ -293,7 +293,7 @@ Take the case of the following product
 
 	The DEEE tax (disposal of electronic and electrical equipment) is an ecological tax that was
 	imposed in France from 2009. It is applied to batteries to finance their recycling and is a fixed
-	sum that is applied to the before-tax amount on the invoice
+	sum that is applied to the before-tax amount on the invoice.
 
 If you trade with a company in your own country, and your country has a DEEE-type tax, the
 applicable taxes for this invoice could be:
@@ -303,25 +303,24 @@ applicable taxes for this invoice could be:
 * TVA: 19.6%.
 
 If you sell to a customer in another company in the community (intracommunity), instead, then tax is
-not charged. In the partner form the tab :guilabel:`Accounting` the field `Fiscal Position`
-maintain the information whether the customer is within the region or not. When you create an invoice for this customer, Open ERP will calculate the following
-taxes on the product:
+not charged. In the partner form the tab `Accounting` the field `Fiscal Position`
+maintain the information whether the customer is within the region or not. When you create an invoice for this customer, OpenERP will calculate the following taxes on the product:
 
 * DEEE: 5.5,
 
 * TVA intracommunity: 0%.
 
-If you have not entered the parameters in the customer form correctly, Open ERP will suggest incorrect
-taxes in the invoice. That is not an insuperable problem because you can always modify the
+If you have not entered the parameters in the customer form correctly, OpenERP will suggest incorrect
+taxes in the invoice. That is not a real issue, because you can always modify the
 information directly in the invoice before approving it.
 
-.. tip:: Occasional invoices
+.. tip:: Occasional Invoices
 
 	When you create an invoice for a product that will only be bought or sold once you do not have to
 	encode a new product.
-	But you will have to provide quite a bit of information manually on the invoice line:
+	Instead, you will have to provide quite a bit of information manually on the invoice line:
 
-	* sale price,
+	* sales price,
 
 	* applicable taxes,
 
@@ -329,23 +328,23 @@ information directly in the invoice before approving it.
 
 	* product description.
 
-Cancelling an invoice
+Cancelling an Invoice
 ---------------------
 
-By default Open ERP will not allow you to cancel an invoice once it has been approved. Since
-accounting entries have been created you theoretically can not go back and delete them. However in
-many cases it is more convenient to cancel an invoice when there is an error than to produce a credit
+By default OpenERP will not allow you to cancel an invoice once it has been approved. Since
+accounting entries have been created, you theoretically cannot go back and delete them. However, in
+some cases it is more convenient to cancel an invoice when there is an error than to produce a credit
 note and reconcile the two entries. Your attitude to this will be influenced by current legislation
 in your accounting jurisdiction and your adherence to accounting purity.
 
-Open ERP accommodates either approach. Cancelling an invoice can be permitted by checking the box
-:guilabel:`Allow Cancelling Entries` in the Journal corresponding to this invoice. You will then be allowed to
+OpenERP accommodates either approach. Install the account_cancel module. Then allow cancelling an invoice by checking the box
+`Allow Cancelling Entries` in the Journal corresponding to this invoice. You will then be allowed to
 cancel the invoice if the following two conditions are met:
 
-	#. The accounting entries have not been reconciled or paid: if they have then you will have to cancel
-	   the reconciliation.
+	#. The accounting entries have not been reconciled or paid: if they have, then you will have to cancel
+	   the reconciliation first.
 
-	#. The accounting period or the fiscal year has not already been closed: if it has then no
+	#. The accounting period or the fiscal year has not already been closed: if it is closed then no
 	   modification is possible.
 
 Cancelling an invoice has the effect of automatically modifying the corresponding accounting
@@ -376,24 +375,24 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 
 	Instead of entering a new invoice each time, you can base an invoice on a similar preceding one
 	and duplicate it. To do this, first search for a suitable existing one. In the web client, show
-	the invoice in read-only (non-editable) form view, then click :guilabel:`Duplicate`. In the GTK client,
+	the invoice in read-only (non-editable) form view, then click `Duplicate`. In the GTK client,
 	select :menuselection:`Form --> Duplicate` from the top menu.
 
 	The duplication creates a new invoice in the ``Draft`` state. That enables you to modify it before
-	approving it. Duplicating documents in Open ERP is an intelligent function, which enables the
+	approving it. Duplicating documents in OpenERP is an intelligent function, which enables the
 	duplicated invoice to be given its own sequence number, today's date, and the draft state, even if
 	the preceding invoice has been paid.
 
-.. note:: Saving partner preferences
+.. note:: Saving Partner Preferences
 
-	Open ERP has many functions to help you enter data quickly. If you invoice the same products
+	OpenERP has many functions to help you enter data quickly. If you invoice the same products
 	frequently for the same partner you can save the last invoice preferences using conditional
 	default values.
 
 	To test this functionality, create an invoice for a partner and add some lines
 	(from the GTK client). Then hold
-	:kbd:`Ctrl` and click with the right mouse button on the contents of the :guilabel:`Invoices` field and select
-	:guilabel:`Set as default`. Check the box that indicates this default should apply only to you.
+	:kbd:`Ctrl` and click with the right mouse button on the contents of the `Invoices` field and select
+	`Set as default`. Check the box that indicates this default should apply only to you.
 
 	Then the next time you create an invoice these invoice lines will be
 	automatically created and you will only have to modify the quantities before confirming the invoice.
@@ -406,28 +405,28 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 	You can set defaults for multiple lines in the GTK client but only a single line in the web client,
 	so you need to be quite sure what is possible before you use this functionality routinely.)
 
-.. note:: Getting information by navigating to it
+.. note:: Getting Information by Navigating to it
 
 	As you are creating an invoice you will often find you need extra information about the partner to
 	help you complete the invoice. As described earlier, you can navigate to other
-	information linked to this partner, such as:
+	information linked to this partner by right-clicking, such as:
 
 	* Monthly Turnover
 
-	* benefit details,
+	* Benefit Details,
 
-	* most recent invoices,
+	* Most Recent Invoices,
 
-	* latest orders - Sale Order, Purchase Order.
+	* Latest Orders - Sales Order, Purchase Order.
 
 	Do the same to get information about the products you are invoicing. For example: is there enough
 	stock? When will you be getting more stocks in? What are the costs and normal list prices for this
 	product?
 
-	By making this information easily accessible while you are invoicing, Open ERP greatly simplifies
+	By making this information easily accessible while you are invoicing, OpenERP greatly simplifies
 	your work in creating the invoice.
 
-Creating a supplier invoice
+Creating a Supplier Invoice
 ---------------------------
 
 The form that manages supplier invoices is very similar to the one for customer invoices. However,
@@ -443,53 +442,52 @@ it is been adapted to simplify rapid data entry and monitoring of the amounts re
 	The two approaches reach the same accounting result: some prefer one and others prefer the other
 	depending on their skills.
 
-	However, when you use the Purchase Management functions in Open ERP you should work directly on
-	invoices because they provide Purchase Orders or Goods Receipt documents.
+	However, when you use the Purchase Management functions in OpenERP you should work directly on
+	invoices because they are provided from Purchase Orders or Goods Receipt documents.
 
 To enter a new supplier invoice, use the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices`.
 
-Everything is similar to the customer invoice, starting with the :guilabel:`Journal`
-unless the default is acceptable, and then the
-:guilabel:`Supplier`, which will automatically complete the following fields
+Everything is similar to the customer invoice, starting with the `Journal`
+unless the default is acceptable, and then the `Supplier`, which will automatically complete the following fields
 
-* :guilabel:`Invoice address`,
+* `Invoice Address`,
 
-* partner :guilabel:`Account`.
+* Partner `Account`.
 
-Unlike the customer invoice you do not have to enter payment conditions – simply a :guilabel:`Due
+Unlike the customer invoice you do not have to enter payment conditions – simply a `Due
 Date` if you want one.
-If you do not give a due date, Open ERP assumes that this invoice will be paid in cash.
-If you want to code in more complete payment conditions than just due date you can use the :guilabel:`Payment
-Term` field which you can find on the second tab :guilabel:`Other Info`.
+If you do not give a due date, OpenERP assumes that this invoice will be paid in cash.
+If you want to enter more complete payment conditions than just the due date, you can use the `Payment
+Term` field which you can find on the second tab `Other Info`.
 
-You must also enter the invoice :guilabel:`Total` with taxes included. Open ERP uses this amount
+You must also enter the invoice `Total` with taxes included. OpenERP uses this amount
 to check whether all invoice lines have been entered correctly before it will let you validate the
 invoice.
 
-Indicate the :guilabel:`Currency` if the invoice is not going to use the default currency, then you can enter
-the :guilabel:`Invoice lines`.
+Indicate the `Currency` if the invoice is not going to use the default currency, then you can enter
+the `Invoice lines`.
 
-Just like the customer invoice you have the choice of entering all the information manually or using
-a product to complete many of the fields automatically. Entering a product, all of the following
+Just like the customer invoice you have the choice of entering all the information manually or use
+a product to complete many of the fields automatically. When you enter a product, all of the following
 values are completed automatically:
 
-* the product :guilabel:`Account` is completed from the properties of the product form or the
-  :guilabel:`Category` of the product if nothing is defined on the product itself,
+* the product `Account` is completed from the properties of the product form or the
+  `Category` of the product if nothing is defined on the product itself,
 
-* the :guilabel:`Taxes` come from the product form and/or the partner form, based on the same
+* the `Taxes` come from the product form and/or the partner form, based on the same
   principles as the customer invoice,
 
-* the :guilabel:`Quantity` is set at 1 by default but can be changed manually,
+* the `Quantity` is set at 1 by default but can be changed manually,
 
-* set the :guilabel:`Unit Price` from the total price you are quoted after deducting all
+* set the `Unit Price` from the total price you are quoted after deducting all
   the different applicable taxes,
 
-Click :guilabel:`Compute Taxes` to ensure that the totals correspond to those indicated on
+Click `Compute Taxes` to ensure that the totals correspond to those indicated on
 the paper invoice from the supplier. When you approve the invoice, Open ERP verifies that the total
 amount indicated in the header correspond to the sum of the amounts without tax on the invoice lines
 and the different applicable taxes.
 
-Open ERP automatically completes the :guilabel:`Date Invoiced` and the accounting period.
+OpenERP automatically completes the `Date Invoiced` and the accounting period.
 
 .. index::
    single: declarations
@@ -537,8 +535,8 @@ In this case you can modify a value in the lines that the total's based on, or t
 taxes at the bottom left of the form: both are editable so that you can modify them to adjust the
 total.
 
-When the totals tally you can validate the invoice. Open ERP then generates the corresponding
-accounting entries. You can manage those entries using the :guilabel:`Account`  fields on the
+When the totals tally you can validate the invoice. OpenERP then generates the corresponding
+accounting entries. You can manage those entries using the `Account`  fields on the
 invoice and on each of the invoice lines.
 
 .. index::
@@ -554,7 +552,7 @@ Similarly, entering a supplier credit note is the same as that of the supplier i
 use the menu :menuselection:`Accounting --> Suppliers --> Supplier Refunds`.
 
 It is easy to generate a credit note quickly from an existing invoice. To do this, select a customer
-or supplier invoice which is in `Open` or `Paid` state and click :guilabel:`Refund` button. Open ERP
+or supplier invoice which is in `Open` or `Paid` state and click `Refund` button. OpenERP
 opens a new payment invoice form for you in the \ ``Draft``\   state so that you can modify it before
 approval.
 
@@ -564,15 +562,15 @@ approval.
 
 .. tip::  Crediting several invoices
 
-	you can credit more then one  customer's invoices using the menu :menuselection:`Accounting --> Customers -->
+	You can credit more than one customer invoice using the menu :menuselection:`Accounting --> Customers -->
 	Customer Payment`. You can find the `Invoices and outstanding transactions` and `Credits` for the particular customers.
 	Enter the amount in the field `Paid Amount` and validate it.
 
 Payments
 --------
 
-The invoice is automatically marked as paid by Open ERP once invoice entries have been reconciled
-with payment entries. You yourself do not have to mark the invoices as paid: Open ERP manages that
+The invoice is automatically marked as paid by OpenERP once invoice entries have been reconciled
+with payment entries. You yourself do not have to mark the invoices as paid: OpenERP manages that
 when you reconcile your payments.
 
 .. tip::  Reconciling a credit note
@@ -581,7 +579,7 @@ when you reconcile your payments.
 	But you can also reconcile an invoice with the entries from the corresponding credit note instead,
 	to mutually cancel them.
 
-You have seen the :guilabel:`Payment` button in the invoice form which is in open state.
+You have seen the `Payment` button in the invoice form which is in Open state.
 This lets you enter payments and get entries reconciled very quickly.
 
 You can also manage the payment of invoices when you are entering bank statements and cash

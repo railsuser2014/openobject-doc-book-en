@@ -10,8 +10,8 @@ Manage your Books
  This part deals with the practical aspects of accounting, and accounting's role throughout the whole
  company.
 
- Open ERP's accounting modules enable you not only to manage your operations clearly,
- following the workflow through from invoicing to payment,
+ OpenERP's accounting modules enable you not only to manage your operations clearly,
+ following the workflow from invoicing to payment,
  but also to use various tools for financial analysis based on both real-time data and recent history
  depending on the analysis.
 

@@ -21,8 +21,8 @@ From Invoice to Payment
     </div>
 
 
- *This chapter traces the basic accounting workflow in Open ERP, from entering an invoice to
- registering payment. The various operations are described, from the entry of accounting receipts and
+ *This chapter traces the basic accounting workflow in OpenERP, from entering an invoice to
+ registering payments. The various operations are described, from the entry of accounting receipts to
  the treatment of the reconciliation process, including payment orders.*
 
 Accounting is at the heart of managing a company: all the company's operations have an impact here.
@@ -30,22 +30,22 @@ It has an informational role (how much cash is there? what debts need to be repa
 valuation?) and, because of the information it provides, a reliable and detailed accounting system
 can and should have a major decision-making role.
 
-In most real companies, accounting is limited to producing statutory reports and satisfying the
+In most companies, accounting is limited to producing statutory reports and satisfying the
 directors' curiosity about certain strategic decisions, and to printing the balance sheet and the
 income statement several times a year. Even then there is often several weeks of delay between
 reality and the report.
 
-.. note:: Valuing your accounting function
+.. note:: Valueing your accounting function
 
 	In many small companies, the accounting function is poorly treated.
 
 	Not only do you see the data for documents being entered into the system twice,
-	but also the results are often just used to produce legal documentation and regular printouts
+	but also the results are often just used to produce legal documents and regular printouts
 	of the balance sheet and income statements some weeks after the closing dates.
 
 	By contrast, integrating your accounts with your management system means that you can:
 
-	* reduce data entry effort – you only need do it once,
+	* reduce data entry effort – you only need to do it once,
 
 	* run your processes with the benefit of financial vision: for example in managing projects,
 	  negotiating contracts, and forecasting cash flow,
@@ -59,17 +59,17 @@ is necessary in all of your company's processes for you to be effective, for exa
 * for preparing quotations it is important to know the precise financial position of the client, and
   to see a history of any delays in payment,
 
-* if a given customer has exceeded their credit limit, accounting can automatically stop further
+* if a given customer has exceeded its credit limit, accounting can automatically stop further
   deliveries to the customer,
 
 * if a project budget is 80% consumed but the project is only 20% complete you could renegotiate
   with the client, or review and rein in the objectives of the project,
 
-* if you need to improve your company's cash flow then you could plan your services projects on the
+* if you need to improve your company's cash flow then you could plan your service projects on the
   basis of billing rates and payment terms of the various projects, and not just delivery dates –
   you could work on short-term client projects in preference to R&D projects, for example.
 
-Open ERP's general accounting and analytic accounting handle these needs well because of the close
+OpenERP's general accounting and analytic accounting handle these needs well because of the close
 integration between all of the application modules. Furthermore, the transactions, the actions and
 the financial analyses happen in real time, so that you can not only monitor the situation but also
 manage it effectively.
@@ -77,7 +77,7 @@ manage it effectively.
 .. index::
    single: module; account
 
-The :mod:`account` module in Open ERP covers general accounting, analytic accounting, and auxiliary
+The :mod:`account` module in OpenERP covers general accounting, analytic accounting, and auxiliary
 and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 .. index::
@@ -109,13 +109,13 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 .. tip:: Multi-company
 
-	There is a choice of methods for integrating Open ERP in a multi-company environment:
+	There is a choice of methods for integrating OpenERP in a multi-company environment:
 
-	* if the companies hold few documents in common (such as products, or partners - any Open ERP
-	  resource), you should install separate databases,
+	* if the companies hold few documents in common (such as products, or partners - any OpenERP
+	  resource), you could install separate databases,
 
 	* if the companies share many documents, you can register them in the same database and install
-	  Open ERP's multi-company documents to finely manage access rights,
+	  OpenERP's multi-company documents to finely manage access rights,
 	.. index::
 	   single: module; base_synchro
 
@@ -123,7 +123,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 	  module.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
-double entry of data into accounting documents. So in Open ERP an Order automatically generates an
+double entry of data into accounting documents. So in OpenERP an Order automatically generates an
 Invoice, and the Invoice automatically generates the accounting entries. These in turn generate tax
 submissions, customer reminders, and so on. Such strong integration enables you to:
 
@@ -141,7 +141,7 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 
 .. tip:: For accountants
 
-	You can configure Accounting application using the information given in the configuration wizard.
+	You can configure the Accounting application using the information given in the configuration wizard.
 
 	.. figure::  images/config_wiz_account.png
    	   :scale: 50

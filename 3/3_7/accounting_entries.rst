@@ -40,7 +40,7 @@ A data entry form for bank statements then opens as shown in figure :ref:`fig-ac
    :scale: 50
    :align: center
 
-   *Data entry form for a bank statement*
+   *Data Entry Form for a Bank Statement*
 
 The statement reference :guilabel:`Name` and the :guilabel:`Date` are automatically suggested by OpenERP. The :guilabel:`Name` will be filled with the statement number at confirmation of the bank statement. You can configure your own reference by managing sequences in the
 :menuselection:`Administration --> Configuration --> Sequences` menu.
@@ -51,9 +51,9 @@ the journal corresponding to the bank account whose statement you are handling.
 
 The currency that you are using for the statement line is that of the selected journal. If you are
 entering statement lines for an account in American Dollars (USD), the amounts must be entered in
-\ ``USD``\ . The currency is automatically converted to the company's main currency when you confirm
+\ ``USD``\ . The currency is automatically converted into the company's main currency when you confirm
 the entry, using the rates in effect at the date of entry. (This means that you would need valid
-currency conversion rates to be created first. Go to :menuselection:`Accounting --> Configuration --> Miscellaneous --> Currencies` menu).
+currency conversion rates to be created first. Go to :menuselection:`Accounting --> Configuration --> Miscellaneous --> Currencies` menu.)
 
 OpenERP automatically completes the initial balance based on the closing balance of the
 preceding statement. You can modify this value and force another value. This lets you enter
@@ -79,14 +79,14 @@ entry or entries to be paid.
 
 Import Invoices
 ---------------
-Click the button `Import Invoices`, then click Add to select the invoices for
-which your payment will have been reconciled. Click OK to confirm your selection; the statement line will automatically be added with the corresponding reconciliation. 
+Click the `Import Invoices` button, then click Add to select the invoices for
+which your payment will have to be reconciled. Click OK to confirm your selection; the statement line will automatically be added with the corresponding reconciliation. 
 
 .. figure::  images/account_statement_reconcile.png
    :scale: 50
    :align: center
 
-   *Reconciliation from data entry of the bank statement*
+   *Reconciliation from Data Entry of the Bank Statement*
 
 .. note::  Reconciliation
 
@@ -152,7 +152,7 @@ generate the corresponding accounting entries. Note that the Calculated balance 
 	So if the total statement has not been approved (that is to say during the day, in the case of petty
 	cash) partner payments will not have been deducted from their corresponding account.
 
-Manual entry in a journal
+Manual Entry in a Journal
 -------------------------
 
 Invoices and statements produce accounting entries in different journals. But you could also
@@ -261,13 +261,13 @@ Note that you can also choose a maximum write-off amount, if you allow payment d
    :scale: 50
    :align: center
 
-   *Form for automatic reconciliation*
+   *Form for Automatic Reconciliation*
 
 To start the reconciliation tool, click :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
 
 A form opens, asking you for the following information:
 
-* :guilabel:`Accounts to Reconcile` : you can select one, several, or all reconcilable accounts,
+* :guilabel:`Accounts to Reconcile` : you can select one, several or all reconcilable accounts,
 
 * the dates to take into consideration (:guilabel:`Starting Date` / :guilabel:`Ending Date`),
 
@@ -323,7 +323,7 @@ Select entries that you want to reconcile. OpenERP indicates the sum of debits
 and credits for the selected entries. When these are equal you can click the :guilabel:`Reconcile Entries`
 button to reconcile the entries.
 
-	.. note::  *Example Real case of using reconciliation*
+	.. note::  *Example Real Case of Using Reconciliation*
 
 			Suppose that you are entering customer order details. You wonder what is outstanding on the
 			customer account (that is the list of unpaid invoices and unreconciled payments). To review
@@ -335,7 +335,7 @@ button to reconcile the entries.
 	               :align: center
 	               :scale: 50
 
-	               *Unreconciled accounting entries*
+	               *Unreconciled Accounting Entries*
 
 			After running the `Reconcile Entries` wizard, these lines can no longer be selected and will not appear when the 				entries are listed again. If there is a difference between the two entries, OpenERP suggests you to make
 			an adjustment. This "write-off" is a compensating entry that enables a complete reconciliation. You must
@@ -395,7 +395,7 @@ to manage issues such as:
 
 	#.	Splitting payments depending on the balances available in your various bank accounts.
 
-How to manage your Payment Orders?
+How to Manage your Payment Orders?
 -----------------------------------
 
 .. index::
@@ -438,11 +438,11 @@ manager to go ahead with payment.
    :scale: 50
    :align: center
 
-   *Payments workflow*
+   *Payments Workflow*
 
-When the accounting manager validates the document, Open ERP generates a banking file with all the
-payment orders. You can then just send the file over your electronic connection with your bank to
-execute all your payments.
+.. When the accounting manager validates the document, OpenERP generates a banking file with all the
+.. payment orders. You can then just send the file over your electronic connection with your bank to
+.. execute all your payments.
 
 In small businesses it is usually the same person who enters the payment orders and who validates
 them. In this case you should just click the two buttons, one after the other, to confirm the
@@ -457,7 +457,7 @@ To enter a payment order, use the menu :menuselection:`Accounting --> Payment --
    :align: center
    :scale: 95
 
-   *Entering a payment order*
+   *Entering a Payment Order*
 
 OpenERP then proposes a reference number for your payment order.
 
@@ -469,7 +469,7 @@ Configuration --> Miscellaneous --> Payment Mode`. Some examples are:
 
 * Bank transfer,
 
-* Visa card on a FORTIS account,
+* Visa card on a bank account,
 
 * Petty cash.
 
@@ -484,11 +484,11 @@ Then you set the :guilabel:`Preferred date` for payment:
 
 The date is particularly important for the preparation of electronic transfers because banking
 interfaces enable you to select a future execution date for each operation. So to configure your
-Open ERP most simply you can choose to pay all invoices automatically by their deadline.
+OpenERP most simply you can choose to pay all invoices automatically by their deadline.
 
-You must then select the invoices to pay. They can be manually entered in the field
-:guilabel:`Payment Line` but it is easier to add them automatically. For that, click :guilabel:`Select Invoices to Pay`
-and Open ERP will then propose lines with payment deadlines. For each deadline you
+You must then select the invoices to pay. They can be entered manually in the field
+:guilabel:`Payment Line`, but it is easier to add them automatically. For that, click :guilabel:`Select Invoices to Pay`
+and OpenERP will then propose lines with payment deadlines. For each deadline you
 can see:
 
 * the invoice :guilabel:`Effective date`,
@@ -501,8 +501,8 @@ can see:
 
 * the amount to be paid in the currency of the invoice.
 
-You can then accept the payment proposed by Open ERP or select the entries that you will pay or not
-pay on that order. Open ERP gives you all the necessary information to make a payment decision for
+You can then accept the payment proposed by OpenERP or select the entries that you will pay or not
+pay on that order. OpenERP gives you all the necessary information to make a payment decision for
 each line item:
 
 * account,
@@ -524,15 +524,15 @@ each line item:
 You can modify the first three fields on each line: the account, the supplier's bank account and the
 amount that will be paid. This arrangement is very practical because it gives you complete
 visibility of all the company's trade payables. You can pay only a part of an invoice, for example,
-and in preparing your next payment order Open ERP automatically suggests payment of the remainder
+and in preparing your next payment order OpenERP automatically suggests payment of the remainder
 owed.
 
 When the payment has been prepared correctly, click :guilabel:`Confirm Payments`. The payment then changes to
 the \ ``Confirmed``\   state and a new button appears that can be used to start the payment process.
-Depending on the chosen payment method, Open ERP provides a file containing all of the payment
-orders. You can send this to the bank to make the payment transfers.
+.. Depending on the chosen payment method, OpenERP provides a file containing all of the payment
+.. orders. You can send this to the bank to make the payment transfers.
 
-In future versions of Open ERP it is expected that the system will be able to prepare and print
+In future versions of OpenERP it is expected that the system will be able to prepare and print
 cheques.
 
 As usual, you can change the
