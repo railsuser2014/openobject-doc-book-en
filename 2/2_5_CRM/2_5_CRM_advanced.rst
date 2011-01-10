@@ -7,24 +7,28 @@
 Advanced Customer Relations
 ===========================
 
-Open ERP also supplies several tools to improve and automate relationships with partners. They won't
-be described extensively here, just introduced briefly.
+OpenERP also supplies several tools to improve and automate relationships with partners. They will not be described in detail here, just briefly introduced.
+
+#
+#.. index::
+#   single: modules; portal_
+#
+#The supplier/customer portal gives you the ability to provide your suppliers and customers #with
+#constrained access to OpenERP. They will then be able to view or enter sets of information 
+# directly
+#online to Open ERP. For example they could enter their orders, reprint their invoices, or #work on communal projects. To activate the portal you should install the modules that start #with the string :mod:`portal_`.
+
+The Web client allows you to define specific access rules to allow your customers to access useful information, such as orders or deliveries.
 
 .. index::
-   single: modules; portal_
+   single: module; fetchmail
 
-The supplier/customer portal gives you the ability to provide your suppliers and customers with
-constrained access to Open ERP. They will then be able to view or enter sets of information directly
-online to Open ERP. For example they could enter their orders, reprint their invoices, or work on
-communal projects. To activate the portal you should install the modules that start with the
-string :mod:`portal_`.
+The *Fetchmail* functionality lets you interface the CRM with incoming and outgoing e-mails. You can install this feature when you configure the CRM or by installing the :mod:`fetchmail` module. It also allows you to create an object in OpenERP from an e-mail you receive. Simply define the generic mail address you want to use, such as sales@openerp.com, and link it to the crm.lead object. Every mail that is sent to this address, will automatically created as a lead for you to qualify.
 
-The email gateway lets you interface the CRM with incoming and outgoing emails. The scripts used for
-the email gateway are available in the :mod:`crm` module in the ``scripts`` subdirectory.
+.. index::
+   single: module; outlook, thunderbird
 
-Outlook and Thunderbird plugins let you synchronize your contacts between your email
-client and your ERP. They both enable you to create sales opportunities based on exchanges you have
-with the customer.
+The Outlook and Thunderbird plugins let you easily create contacts from your mail client in OpenERP. You can also link e-mails (with attachments) to OpenERP, to avoid information getting lost. Both plugins enable you to create sales leads based on exchanges you have with the customer.
 
 The rules for automating actions enable you to send emails automatically based on the event,
 such as assigning opportunities to the most appropriate person. To access the CRM rules, use the
