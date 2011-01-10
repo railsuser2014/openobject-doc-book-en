@@ -1,19 +1,19 @@
 
 .. index::
-   single: architecture; Open ERP
+   single: architecture; OpenERP
 
-The architecture of Open ERP
-============================
+The architecture of OpenERP
+===========================
 
-To access Open ERP you can:
+To access OpenERP you can:
 
-* use a web browser pointed at the Open ERP client-web server, or
+* use a web browser pointed at the OpenERP client-web server, or
 
 * use an application client (the GTK client) installed on each computer.
 
 The two methods of access give very similar facilities, and you can use both on
 the same server at the same time. It is best to use the web browser if the
-Open ERP server is some distance away (such as on another continent) because
+OpenERP server is some distance away (such as on another continent) because
 it is more tolerant of time delays between the two than the GTK client is. The
 web client is also easier to maintain, because it is generally already installed
 on users' computers.
@@ -29,11 +29,11 @@ responsive, so more satisfying to use.
 
 .. note::   Web client and GTK client
 
-    There is little functional difference between the two Open ERP clients - the 
-    web client and the GTK client at present (since early versions of 5.0). 
+    There is little functional difference between the two OpenERP clients - the 
+    web client and the GTK client at present. 
     In earlier versions, the web client had fractionally greater functionality.
     
-    When you are changing the structure of your Open ERP installation (adding and
+    When you are changing the structure of your OpenERP installation (adding and
     removing modules, perhaps changing labels) you will find the web client to be
     irritating because of its use of **caching**. 
     
@@ -43,26 +43,26 @@ responsive, so more satisfying to use.
     your browser. Many apparent faults are caused by this! The workaround is 
     to use the GTK client during development and implementation where possible.
 
-    The Tiny company will continue to support two clients for the foreseeable
+    The OpenERP company will continue to support two clients for the foreseeable
     future, so you can use whichever client you prefer.
 
-An Open ERP system is formed from three main components:
+An OpenERP system is formed from three main components:
 
 * the PostgreSQL database server, which contains all of the databases, each of which contains all
-  data and most elements of the Open ERP system configuration,
+  data and most elements of the OpenERP system configuration,
 
-* the Open ERP application server, which contains all of the enterprise logic and ensures that
-  Open ERP runs optimally,
+* the OpenERP application server, which contains all of the enterprise logic and ensures that
+  OpenERP runs optimally,
 
 * the web server, a separate application called the Open Object client-web, which enables you to
-  connect to Open ERP from standard web browsers and is not needed when you connect using a GTK
+  connect to OpenERP from standard web browsers and is not needed when you connect using a GTK
   client.
 
 .. figure:: images/terp_arch_1.png
    :align: center
    :scale: 90
    
-   *The architecture of Open ERP*
+   *The architecture of OpenERP*
 
 .. note::   Terminology: client-web – server or client?
 
@@ -70,7 +70,7 @@ An Open ERP system is formed from three main components:
     your viewpoint.
 
     It acts as a web server to an end user connecting from a web browser, but
-    it also acts as a client to the Open ERP application server just as a GTK
+    it also acts as a client to the OpenERP application server just as a GTK
     application client does.
 
     So in this book its context will determine whether the client-web component is referred to as
@@ -82,7 +82,7 @@ An Open ERP system is formed from three main components:
 .. note::   eTiny
 
     The web application used to be known as “eTiny”.
-    Its name changed to “client-web” as Tiny ERP was renamed to Open ERP,
+    Its name changed to “client-web” as Tiny ERP was renamed to OpenERP,
     but its characteristics have generally stayed the same.
 
 .. index::
@@ -101,8 +101,8 @@ distributed onto separate computer servers if performance considerations
 require it.
 
 If you choose to run only with GTK clients you will not need the third component –
-the client-web server – at all. In this case Open ERP's GTK client must be installed
-on the workstation of each Open ERP user in the company.
+the client-web server – at all. In this case OpenERP's GTK client must be installed
+on the workstation of each OpenERP user in the company.
 
 
 .. Copyright © Open Object Press. All rights reserved.

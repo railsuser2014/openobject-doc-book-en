@@ -10,28 +10,28 @@
 Installation and Initial Setup
 ******************************
 
- *Installing Open ERP under Windows or Linux for familiarization use should take you only half an
+ *Installing OpenERP under Windows or Linux to get familiar with the software should take you only half an
  hour or so and needs only a couple of operations.*
  
- *The first operation is installation of the application and database server on a server PC (that is
+ *The first operation is to install the application and database server on a server PC (that is
  a Windows or Linux or Macintosh computer).*
 
  *You have a choice of approaches for the second operation:
  either install a web server (most probably on the original server PC) to use with standard web
  clients that can be found on anybody's PC, or install application clients on each intended user's PC.*
  
-When you first install Open ERP you will set up a database containing a little functionality and
+When you first install OpenERP, you will set up a database containing a little functionality and
 some demonstration data to test the installation.
  
 .. index::
    single: Tiny ERP
 
-.. note:: Renaming from Tiny ERP to Open ERP
+.. note:: Renaming from Tiny ERP to OpenERP
 
-   Tiny ERP was renamed to Open ERP early in 2008 so somebody who has already used Tiny ERP should be
+   Tiny ERP was renamed to OpenERP early in 2008 so somebody who has already used Tiny ERP should be
    equally at home with Open ERP. The two names refer to the same software, so there is no
-   functional difference between versions 4.2.X of Open ERP and 4.2.X of Tiny ERP. This book
-   applies to versions of Open ERP from 5.0.0 onwards, with references to earlier versions from
+   functional difference between versions 4.2.X of OpenERP and 4.2.X of Tiny ERP. This book
+   applies to versions of OpenERP from 6.0.0 onwards, with references to earlier versions from
    time to time.
 
 .. index::
@@ -43,40 +43,40 @@ some demonstration data to test the installation.
    subscription that
    includes hardware (servers), system maintenance, provision of hosting services, and support.
 
-   You can get a month's free trial on Tiny's http://ondemand.openerp.com, which enables you to get
+   You can get a month's free trial on OpenERP's http://www.openerp.com/online, which enables you to get
    started quickly
    without incurring costs for integration or for buying computer systems.
-   Many of Tiny's partner companies will access this, and some may offer their own similar service.
+   Many of OpenERP's partner companies will access this, and some may offer their own similar service.
 
    This service should be particularly useful to small companies that just want to get going quickly
    and at low cost.
-   It gives them immediate access to an integrated management system that has been built on the type
+   It gives you immediate access to an integrated management system that has been built on the type
    of enterprise architecture
    used in banks and other large organizations.
-   Open ERP is that system, and is described in detail throughout this book.
+   OpenERP is that system, and is described in detail throughout this book.
 
-Whether you want to test Open ERP or to put it into full production, you have at least two starting
+Whether you want to test OpenERP or to put it into full production, you have at least two starting
 points:
 
-* evaluate it on line at http://www.openerp.com and ask Tiny for an SaaS trial hosted at
-  http://ondemand.openerp.com, or the equivalent service at any of Tiny's partner companies,
+* evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
+  http://ondemand.openerp.com, or the equivalent service at any of OpenERP's partner companies,
 
-* install it on your own computers to test it in your company's systems environment.
+* install it on your own computers to test it in your company's system environment.
 
-There are some differences between installing Open ERP on Windows and on Linux systems, but once
-installed, it gives the same functions from both so you will not generally be able to tell which type
+There are some differences between installing OpenERP on Windows and on Linux systems, but once
+installed, both systems offer the same functionality so you will not generally be able to tell which type
 of server you are using.
 
 .. note:: Linux, Windows, Mac
 
    Although this book deals only with installation on Windows and Linux systems, the same versions
-   are also available for the Macintosh on the official website of Open ERP.
+   are also available for Macintosh on the official website of OpenERP.
 
-.. note:: Web sites for Open ERP
+.. note:: Websites for OpenERP
 
    * Main Site: http://www.openerp.com,
 
-   * SaaS or “on-demand” Site: http://ondemand.openerp.com,
+   * SaaS or OpenERP OnLine Site: http://www.openerp.com/online,
 
    * Documentation Site: http://doc.openerp.com/,
 
@@ -85,12 +85,12 @@ of server you are using.
 
 .. tip:: Current documentation
 
-   The procedure for installing Open ERP and its web server are sure to change and improve with
+   The procedure for installing OpenERP and its web server are sure to change and improve with
    each new version, so you should always check each release's documentation – both packaged with
    the release and on the website – for exact installation procedures.
 
 Once you have completed this installation, create and set up a database to confirm that your
-Open ERP installation is working. You can follow these early chapters in this part of the book to achieve this.
+OpenERP installation is working. You can follow earlier chapters in this part of the book to achieve this.
 
 .. raw:: html
 
