@@ -1,8 +1,8 @@
 
-Testing a Purchase-Sale workflow
-================================
+Driving a Purchase / Sales Flow
+===============================
 
-To familiarize yourself with the system workflow you'll test a purchase-sale workflow in two phases.
+To familiarize yourself with the system workflow you will test a purchase-sale workflow in two phases.
 
 The first consists of product purchase, which requires the following operations:
 
@@ -15,7 +15,7 @@ The first consists of product purchase, which requires the following operations:
 
 	#. Pay your supplier.
 
-Following this, you'll sell some of these products, using this sequence:
+Following this, you will sell some of these products, using this sequence:
 
 	#. Receive a sales order for 6 Titanium Alloy Radiators from Smith and Sons, sold at a unit price
 	   of 130.00.
@@ -31,8 +31,8 @@ Following this, you'll sell some of these products, using this sequence:
 Purchase Order
 --------------
 
-To place a Purchase Order with your supplier, use the menu :menuselection:`Purchase Management -->
-New Purchase Order` for a new Purchase Order form.
+To place a Purchase Order with your supplier, use the menu :menuselection:`Purchases --> Purchase Management -->
+Purchase Orders` and click on `New` button.
 
 Complete the following field:
 
@@ -40,18 +40,15 @@ Complete the following field:
 
 As you complete the :guilabel:`Supplier` field, Open ERP automatically completes the
 :guilabel:`Address` field and the :guilabel:`Price List` field from information it takes out of the
-Partner record. Then click on the :guilabel:`Save Parent Record.` icon to the right of
-the :guilabel:`Order Line` field. This automatically saves the body of the :guilabel:`Purchase
-Order`, and changes to a :guilabel:`Create New Record.` icon. Click that to open the
-:guilabel:`Purchase Order Line` window.
+Partner record.
 
 Enter the following information
 
-*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then 
+*  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then
    press the tab key to complete it, or click the
-   :guilabel:`Search` icon at the end of the line to bring a search box,
+   :guilabel:`Search` icon at the end of the line to bring a search box. (if product is previously configured)
 
-When you've selected a product on the product line, Open ERP automatically completes the following
+When you have selected a product on the product line, Open ERP automatically completes the following
 fields from information it finds in the Product record:
 
 * :guilabel:`Product UOM` : the unit of measure for this product,
@@ -62,10 +59,10 @@ fields from information it finds in the Product record:
 
 * :guilabel:`Unit price` : the unit price of the product,
 
-* :guilabel:`Analytic account` : if any account is specified then it will appear on the order line (it's not in this example),
+* :guilabel:`Analytic account` : if any account is specified then it will appear on the order line (it is not in this example),
 
 * :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the
-  product, if specified (there aren't any in this example).
+  product, if specified (there are not any in this example).
 
 You can edit any of these fields to suit the requirements of the purchase order at the time of
 entry. Change the:
@@ -74,65 +71,50 @@ entry. Change the:
 
 * :guilabel:`Unit Price` to \ ``56.00``\ .
 
-Save the order line and close the :guilabel:`Purchase Order Line` window by clicking the
+Save the order line and close the :guilabel:`Order Line` window by clicking the
 :guilabel:`Close` button. You can then confirm the whole one-line order by clicking
-:guilabel:`Save`, which makes the form non-editable. 
+:guilabel:`Save`, which makes the form non-editable.
 
-It's now in a state of \ ``Request for
-Quotation``\ , so click :guilabel:`Confirm Purchase Order`, which corresponds to an approval from
+It is now in a state of \ ``Request for
+Quotation``\ , so click :guilabel:`Convert to Purchase Order`, which corresponds to an approval from
 a manager or from Accounts within your own company and moves the order into \ ``Confirmed``\
 state. Finally click :guilabel:`Approved by Supplier` to indicate the supplier's acknowledgment of the
-order. The order becomes \ ``Approved``\  . 
+order. The order becomes \ ``Approved``\  .
 
 If you click the :guilabel:`Delivery & Invoices` tab
-you'll see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and that
-the invoice was created from the order and is ``SI: PO001``.
-It's not entirely obvious at this stage, but the invoice is in a draft state so it can be 
-edited and, crucially, has no accounting impact yet: it's just ready for your accounting 
+you will see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and that
+the invoice was created from the order.
+It is not entirely obvious at this stage, but the invoice is in a draft state so it can be
+edited and, crucially, has no accounting impact yet: it is just ready for your accounting
 group to activate it.
 
 Receiving Goods
 ---------------
 
-After confirming the order you'd wait for the delivery of the products from your supplier. Typically
+After confirming the order you would wait for the delivery of the products from your supplier. Typically
 this would be somebody in Stores, who would:
 
-	#. Open the menu :menuselection:`Stock Management --> Incoming Products --> Packings
-	   to Process` using the expand/collapse icon. 
-	   
+	#. Open the menu :menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments` using the expand/collapse icon.
+
 	   .. note:: From the Purchase Order
-	   
-	      You could have clicked the :guilabel:`Packing` link to the right of the Purchase Order
-	      to reach the same screen, but this would confuse the purchasing role with the 
+
+	      You could have clicked the :guilabel:`Receptions` link to the right of the Purchase Order
+	      to reach the same screen, but this would confuse the purchasing role with the
 	      stores role. That link is very useful during testing and training, however.
 
-	#. When the :guilabel:`Packing` window appears, select the name of the entry in the list 
-	   (\ ``PACK1``\)   to display the Packing List itself – you'd usually do a search for the supplier name
-	   or order number in a list that was larger than this – then click :guilabel:`Products Received` to load the
-	   :guilabel:`Make Packing` form.
+	#. When the :guilabel:`Receptions` window appears, select the name of the entry in the list
+	   (\ ``IN/00002``\)   to display the Packing List itself – you would usually do a search for the supplier name
+	   or order number in a list that was larger than this – then click :guilabel:`Process` to load the
+	   :guilabel:`Process Document` form.
 
-	#. Click :guilabel:`Make Picking` to indicate that you're receiving the whole quantity of 10 units.
+	#. Click :guilabel:`Validate` to indicate that you are receiving the whole quantity of 10 units.
 
-At this point you've accepted 10 units into your company, in a location that you've already seen.
+At this point you have accepted 10 units into your company, in a location that you have already seen.
 
-To check actual stock levels, use the menu :menuselection:`Stock Management --> Stock Locations Structure`,
-find \ ``Stock``\ in the hierarchy under :guilabel:`Physical Locations`,
-using the expand/collapse controls to make your way through
-the tree and click it. You'll next get a :guilabel:`View Stock of Products` screen, where you just
-click :guilabel:`Open Products` to select everything that the system knows.
-
-You'll see that :guilabel:`Products: Stock` shows everything in the \ ``Stock`` \ location (and below it) with
-:guilabel:`Real stock` (the actual quantity recorded) and
-:guilabel:`Future stock` (the quantities expected in future when all receipts and despatches have
-been made) – both \ ``10``\   in this case.
-
-Alternatively you could have clicked the \ ``Ambitious Plumbing Enterprises`` \ line to highlight it
-(the line, not the \ ``Ambitious Plumbing Enterprises`` \ text itself), and then click the 
-:guilabel:`Lots by Location` button in the :guilabel:`Reports` to the top right of the form. 
-You'll see that you've now got \ ``10``\   pieces of \ ``Titanium Alloy Radiator``\ in the location
-\ ``Stock``\ and also in the location \ ``Ambitious Plumbing Enterprises`` \ , its parent
-as shown in the figure :ref:`fig-lotsbyloc`.
-If you explore further you'll also see you have ``-10``\   pieces in the Partner Location \ ``Suppliers``\ .
+Using the menu :menuselection:`Purchases --> Products --> Products` you can find the product `Titanium Alloy Radiators`
+with `Real Stock` and `Virtual Stock` 10. From the product form click on the link at the right most side `Stock by Location`
+you can see the `Real Stock` and `Virtual Stock` of this product in various locations. Now click on the `Location Inventory Overview`
+Report to see the inventory valuation per location.
 
 .. _fig-lotsbyloc:
 
@@ -150,31 +132,31 @@ If you explore further you'll also see you have ``-10``\   pieces in the Partner
    The double-entry system, analogous to that of accounting, enables you to keep track
    of stock movements quite easily, and to resolve any errors that occur.
 
-Control of purchase invoices
-----------------------------
+Invoice Control
+---------------
 
-When you've received an invoice from your supplier (which would usually be sent to your Accounts department)
-go to the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices --> Draft
-Supplier Invoices` to open a list of supplier invoices waiting for receipt. 
+When you have received an invoice from your supplier (which would usually be sent to your Accounts department)
+go to the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices`
+to open a list of supplier invoices waiting for receipt.
 These invoices enable your Accounts Department to match the the price and quantities
-ordered against the price and quantities on the supplier's invoice (and since it's not uncommon to receive
+ordered against the price and quantities on the supplier's invoice (and since it is not uncommon to receive
 an invoice showing details more favourable to the supplier than those agreed at the time of
 purchase, this is a useful function).
 
 In this example, you created an invoice automatically when you confirmed the supplier's Purchase
-Order. That's because the :guilabel:`Invoicing Control`  field on the order was set to \ ``From
+Order. That is because the :guilabel:`Invoicing Control`  field on the order was set to \ ``From
 Order``\ (the default option). Other options enable you to create invoices at the time of
 receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 
 Now click the invoice for your order \ ``PO001``\  to display its contents. You can compare the
-goods that you've recorded there with the invoice received from your supplier. If there's a
-difference it's possible to change the order lines to, for example, add a delivery charge. Click
+goods that you have recorded there with the invoice received from your supplier. If there is a
+difference it is possible to change the order lines to, for example, add a delivery charge. Click
 :guilabel:`Validate` to confirm the invoice and put it into the \ ``Open`` \   state.
 
 Accounting entries are generated automatically once the invoice is validated. To see the effects on
 your chart of accounts, use the menu :menuselection:`Financial Management --> Charts --> Chart of
 Accounts` ,then click :guilabel:`Open Charts` at the :guilabel:`Account charts` page to see that you
-have a debit of ``560.00`` in the ``Purchases`` account and a credit of ``560.00`` in 
+have a debit of ``560.00`` in the ``Purchases`` account and a credit of ``560.00`` in
 the ``Payable`` account.
 
 Paying the supplier
@@ -182,17 +164,17 @@ Paying the supplier
 
 Select the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices --> Unpaid
 Supplier Invoices` for a list of supplier invoices that haven't yet been paid. Click the
-``PO001`` text itself to open the invoice in read-only mode. 
+``PO001`` text itself to open the invoice in read-only mode.
 In practice you'd search for the invoice by order number or,
 more generally, for invoices nearing their payment date.
 
-Click :guilabel:`Pay Invoice` in the toolbar to the right of the form, which opens a 
-:guilabel:`Pay invoice` window with a description of the payment. 
+Click :guilabel:`Pay Invoice` in the toolbar to the right of the form, which opens a
+:guilabel:`Pay invoice` window with a description of the payment.
 Type ``Pay Supplier`` in the :guilabel:`Entry Name` field, and
 select \ ``Bank Journal``\   in the :guilabel:`Journal/Payment Mode` field. Then
 click :guilabel:`Full Payment` to the top left of the form, which carries out the payment action
-within Open ERP and returns you to the invoice. Although this invoice is still in the 
-:guilabel:`Unpaid Invoices` screen, you can see it is actually paid because the 
+within Open ERP and returns you to the invoice. Although this invoice is still in the
+:guilabel:`Unpaid Invoices` screen, you can see it is actually paid because the
 :guilabel:`Paid/Reconciled` box is now checked and the :guilabel:`State` is now ``Done`` .
 
 .. index::
@@ -207,13 +189,13 @@ within Open ERP and returns you to the invoice. Although this invoice is still 
 	interfacing with banks.
 
 You can monitor the accounting impact of paying the invoice through the chart of accounts available
-from the menu :menuselection:`Financial Management --> Charts --> Chart of Accounts`. Open ERP
+from the menu :menuselection:`Accounting --> Charts --> Chart of Accounts`. Open ERP
 automatically creates accounting entries from the payment and can reconcile the payment to the
 invoice. You now have a new transaction that has debited the ``Payable`` account with ``560.00`` and
 credited the ``Cash`` account.
 
-If you look in :menuselection:`Financial Management --> Reporting --> Journals` you'll see both
-accounting transactions, one in each of the ``Purchase`` Journal and ``Bank`` Journal in 
+If you look in :menuselection:`Financial Management --> Reporting --> Journals` you will see both
+accounting transactions, one in each of the ``Purchase`` Journal and ``Bank`` Journal in
 ``Draft`` state.
 
 From Sales Proposal to Sales Order
@@ -237,7 +219,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	#. Select the product \ ``Titanium Alloy Radiator``\   Although the :guilabel:`Product` field isn't
 	   itself required, it's used by Open ERP to select the specific product so that several other fields
 	   can be automatically completed on the order line of the proposal, such as :guilabel:`Description`,
-	   :guilabel:`Product UoM`, :guilabel:`Unit Price`, :guilabel:`Procure Method`, 
+	   :guilabel:`Product UoM`, :guilabel:`Unit Price`, :guilabel:`Procure Method`,
 	   :guilabel:`Delivery Delay`, and :guilabel:`Taxes`.
 
 	#. Change the :guilabel:`Quantity` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\
@@ -246,12 +228,12 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	   to return to the order form.
 
 	#. On the :guilabel:`Other data` tab of this Sales Order select a
-	   :guilabel:`Packing Policy` of ``Complete Delivery`` and  
+	   :guilabel:`Packing Policy` of ``Complete Delivery`` and
 	   :guilabel:`Shipping Policy` of ``Invoice on Order After Delivery``  from their dropdown menu lists.
 
 	#. Return to the first tab :guilabel:`Sale Order` and validate the document by clicking
 	   :guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
-	   ``Quotation``\  to \ ``In Progress``\ as shown in screenshot :ref:`fig-ch03ord`.  
+	   ``Quotation``\  to \ ``In Progress``\ as shown in screenshot :ref:`fig-ch03ord`.
 	   If you were in negotiation with the prospective customer
 	   you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
 	   ``Quotation``\  state for as long as necessary.
@@ -276,9 +258,9 @@ products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in th
 Preparing goods for despatch to customers
 -----------------------------------------
 
-The stores manager selects the menu :menuselection:`Stock Management --> Outgoing Products --> 
+The stores manager selects the menu :menuselection:`Stock Management --> Outgoing Products -->
 Confirmed Packing Waiting Availability` to get a list of orders to despatch. In this
-example there's only one, \ ``PACK2``\  , so click the text to open the 
+example there's only one, \ ``PACK2``\  , so click the text to open the
 :guilabel:`Confirmed Packing Waiting Availability` form.
 
 .. index::
@@ -289,7 +271,7 @@ example there's only one, \ ``PACK2``\  , so click the text to open the
 	At the moment your Sales Order is waiting for products to be reserved to fulfil it.
 	A stock reservation activity takes place periodically to calculate the needs,
 	which also takes customer priorities into account.
-	The calculation can be started from the menu 
+	The calculation can be started from the menu
 	:menuselection:`Manufacturing --> Compute All Schedulers`.
 	Running this automatically reserves products.
 
@@ -348,8 +330,8 @@ check its checkbox in the list:
 	#. Use the :guilabel:`Pay Invoice` button in the :guilabel:`Action` section of the toolbar at the
 	   right to open a window that enables you to register the payment.
 
-	#. Select the :guilabel:`Entry Name` and type ``Got paid by customer`` and 
-	   select the :guilabel:`Journal` to be ``Bank Journal`` . 
+	#. Select the :guilabel:`Entry Name` and type ``Got paid by customer`` and
+	   select the :guilabel:`Journal` to be ``Bank Journal`` .
 
 	#. Click :guilabel:`Full Payment`. The
 	   invoice is then marked as paid, with its :guilabel:`Paid/Reconciled` box checked
