@@ -12,7 +12,7 @@ Whatever business your company is doing, every single sales act is related to yo
 Time to come up to your Customer's Expectations!
 
 What is in it for you?
-=====================
+======================
 
 * Track, drive and optimize your sales activities! Handle your full sales workflow, from lead to invoice.
 

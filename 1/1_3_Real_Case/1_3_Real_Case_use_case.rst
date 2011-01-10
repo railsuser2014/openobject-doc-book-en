@@ -81,41 +81,10 @@ Then click :guilabel:`Create` to create the database and move to the setup scree
    *Setting up a blank database - first screen*
 
 After a short delay you are connected to the new \ ``openerp_ch03``\   database as user \ ``admin``\
-with the password you gave it. You'll have to go through the Setup wizard in steps:
+with the password you gave it. You will have to go through the Setup wizard in steps:
 
-	#.  :guilabel:`Select a profile` : select ``Minimal Profile`` and click :guilabel:`Next`.
-
-	#.  At the :guilabel:`Define Main Company` step you could select your own :guilabel:`Company Name` and
-	    :guilabel:`Currency`, and address details on the first tab :guilabel:`General Information`;
-	    and you can add more details on the second tab :guilabel:`Report Information` including a logo
-	    that would appear on reports. In this test you should leave everything untouched for the moment
-	    and just click :guilabel:`Next`: you'll change them later.
-
-	#.  At the :guilabel:`Summary` page you can go back to change details if you need.
-	    Click the :guilabel:`Install` button.
-
-	#.  Finally, at the :guilabel:`Installation done` page, click :guilabel:`Start Configuration`.
-
-Configuration consists of a set of wizards that help you through options for the installed modules.
-Since you chose the minimal database hardly anything is installed so this is a very simple process
-at the moment, starting with the menu layout :ref:`fig-oech03cfg` .
-
-.. _fig-oech03cfg:
-
-.. figure::  images/openerp_ch03_config.png
-   :scale: 75
-   :align: center
-
-   *Configuring a minimal database - first screen*
-
-    #.  At the first screen click :guilabel:`Continue` to go into the first wizard.
-        Choose :guilabel:`View Mode` : :guilabel:`Extended Interface` so that you can see everything
-        and then click :guilabel:`Set` to save it.
-
-    #.  Click :guilabel:`Skip Step` to step over the next wizard, which would enable you to add other users.
-
-    #.  You've now reached the end of the configuration so click :guilabel:`Continue` to start using the
-        system as the Administrator as shown in the screenshot :ref:`fig-oech03st`.
+When you click on the button `Skip Configuration Wizard`, you can have the following screen. Then you
+can start working with this minimal database.
 
 .. _fig-oech03st:
 
@@ -124,6 +93,19 @@ at the moment, starting with the menu layout :ref:`fig-oech03cfg` .
    :align: center
 
    *Starting the minimal database*
+
+If you click on the `Start Configuration` button then OpenERP helps you to install various applications
+with different functionality through the following wizard.
+
+.. _fig-oech03cfg:
+
+.. figure::  images/openerp_ch03_config.png
+   :scale: 75
+   :align: center
+
+   *Configuring a database with other applications and functionality*
+
+
 
 Fit your Needs
 ==============
