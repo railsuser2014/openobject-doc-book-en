@@ -103,14 +103,15 @@ with different functionality through the following wizard.
    :scale: 75
    :align: center
 
-   *Configuring a database with other applications and functionality*
+   *Configuring a database with other applications and functionality when you select Extended view option*
 
 
 
 Fit your Needs
 ==============
 
-All of the functional needs are provided by core modules from Open ERP:
+All of the functional needs are provided by core modules from Open ERP. You need to just decide which functionality
+you want in your system. Click on the `Check Box` of corresponding application in the wizard :ref:`fig-oech03cfsimp`.
 
 .. index::
    single: module; product
@@ -118,6 +119,8 @@ All of the functional needs are provided by core modules from Open ERP:
    single: module; account
    single: module; purchase
    single: module; sale
+
+For the instance, we need following application.
 
 * product management (the :mod:`product` module),
 
@@ -129,84 +132,28 @@ All of the functional needs are provided by core modules from Open ERP:
 
 * sales management (the :mod:`sale` module).
 
-Use the menu :menuselection:`Administration --> Modules Management --> Modules --> Uninstalled
-modules` to show the list of all modules that are registered within Open ERP but as yet
-uninstalled. Then:
+For that the configuration wizard should be like this.
 
-#. Enter \ ``product``\  into the :guilabel:`Name` field and click :guilabel:`Filter` to list the
-   :mod:`product` module.
-
-#. Click the name \ ``product``\  in the list to display the product module in form view, rather
-   than the list view that a search displays.
-
-#. Click the :guilabel:`Schedule for Installation` button on the product module form.
-
-#. Click the :guilabel:`Search` button at the top of the form to toggle back to the list view with
-   search selection fields on it.
-
-#. Search for the :mod:`sale` module then select it, too, as you did with product, to show it in form
-   view.
-
-#. Click the :guilabel:`Dependencies` tab to see that you'll automatically be loading the \
-   :mod:`product`, :mod:`stock`, :mod:`mrp`, and :mod:`process` modules along with the
-   :mod:`sale` module. :mod:`product` and :mod:`process` are both already marked for
-   installation as a result of the first steps.
-
-#. Return to the :guilabel:`Module` tab and then click its :guilabel:`Schedule for Installation` button.
-
-#. Click :guilabel:`Apply Scheduled Upgrades` in the :guilabel:`Action` toolbar to the right.
-
-#. When the :guilabel:`System Upgrade` form appears, review the list of Modules to update – it
-   may be longer than you had expected, and now includes all the modules you need, because the
-   dependencies themselves had their own dependencies.
-
-#. Click :guilabel:`Start Upgrade`, wait for :guilabel:`System upgrade done` to be displayed, then
-   click :guilabel:`Start Configuration` on that form.
-
-Configuration is required for both the accounts setup and the sales defaults.
-
-#. Accept the defaults for the :guilabel:`Fiscal Year` and choose the
-   :guilabel:`Charts of Account` to be :guilabel:`None` then click
-   :guilabel:`Continue`.
-
-#. The sales defaults are shown in the screenshot :ref:`fig-oech03cfss`. The selections you make
-   determine how Open ERP's processes work by setting its default behaviour
-   (although you can override any of them for any sales order,
-   so you are not strictly bound by these defaults).
-   Accept the initial set by clicking :guilabel:`Set default behaviour`.
-
-#. You've reached the end of this configuration stage so click :guilabel:`Continue` to continue using the
-   system as the Administrator. You first reach a new tab :guilabel:`Features` that lists the new menus
-   and views as shown in the figure :ref:`fig-oech03cf`. Each of the modules that were installed
-   has its own new tab - it's not only the one you see displayed in front of you. Click :guilabel:`Next`
-   and :guilabel:`Previous` to move between them.
-
-#. The main menu now displays all of the menu items that were loaded by the modules you installed.
-   Click :guilabel:`MAIN MENU` to see this, shown in the screenshot :ref:`fig-oech03mm`.
-
-.. _fig-oech03cfss:
-
-.. figure:: images/openerp_ch03_setsales.png
-   :scale: 75
-   :align: center
-
-   *The module form once a module is installed*
-
-.. _fig-oech03cf:
+.. _fig-oech03cfsimp:
 
 .. figure:: images/openerp_feature.png
-   :scale: 65
-   :align: center
-
-   *The Features tab once a module is installed*
-
-.. _fig-oech03mm:
-
-.. figure:: images/openerp_ch03_main.png
    :scale: 75
    :align: center
 
-   *Continuing with the database after installing new modules*
+   *Configuration wizard used to install the required applications when you select the Simplified view option*
+
+After the follow through the complete wizard you can have the system that can perform all required functionality.
+
+.. _fig-oech03cfgexample:
+
+.. figure:: images/openerp_ch03_main.png
+   :scale: 50
+   :align: center
+
+   *Database with all required functionality for this example*
+
+If you want to reconfigure your system then click on the `Reconfigure` link appeared in the header of :ref:`fig-oech03cfgexample`.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
