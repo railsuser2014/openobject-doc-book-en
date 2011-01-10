@@ -5,9 +5,9 @@ Google Calendar
 Name of the module:
 ``google_calendar``
 
-This module synchronize Google-Calender repeating and non repeating events with Open ERP events. So, now get updates of calender schedules from google calendar in Open ERP and vice-versa. Users can change event schedule form any where, with its google calendar which updates Events in Open ERP.
+This module synchronizes Google Calender repeating and non-repeating events with OpenERP events. So, now get updates of calendar schedules from Google calendar in OpenERP and vice versa. A user can change the event schedule from anywhere, through his Google calendar which updates Events in OpenERP.
 
-You can find menu here: Event Organization/ Google Import Export/ Synchronize Events
+You can find the menu here: Event Organization/ Google Import Export/ Synchronize Events
 
 **Google Calendar Event**
 

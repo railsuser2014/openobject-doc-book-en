@@ -2,7 +2,7 @@
 Google Modules
 ###############################
 
-We have integrate some google applications with OpenERP, which allow user to view its OpenERP data on Google.So kindly look inside all module descrption.
+We have integrated some Google applications with OpenERP, which allow users to view OpenERP data on Google. Please take a look at the module descriptions.
 
 Path to get Modules: lp:~openerp-commiter/openobject-addons/trunk-extra-addons
 
