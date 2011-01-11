@@ -148,13 +148,13 @@ Order. That is because the :guilabel:`Invoicing Control`  field on the order was
 Order``\ (the default option). Other options enable you to create invoices at the time of
 receiving goods or manually. The initial state of an invoice is \ ``Draft``\  .
 
-Now click the invoice for your order \ ``PO001``\  to display its contents. You can compare the
+Now click the invoice for your order \ ``PO00001``\  to display its contents. You can compare the
 goods that you have recorded there with the invoice received from your supplier. If there is a
 difference it is possible to change the order lines to, for example, add a delivery charge. Click
 :guilabel:`Validate` to confirm the invoice and put it into the \ ``Open`` \   state.
 
 Accounting entries are generated automatically once the invoice is validated. To see the effects on
-your chart of accounts, use the menu :menuselection:`Financial Management --> Charts --> Chart of
+your chart of accounts, use the menu :menuselection:`Accounting --> Charts --> Chart of
 Accounts` ,then click :guilabel:`Open Charts` at the :guilabel:`Account charts` page to see that you
 have a debit of ``560.00`` in the ``Purchases`` account and a credit of ``560.00`` in
 the ``Payable`` account.
@@ -162,39 +162,36 @@ the ``Payable`` account.
 Paying the supplier
 -------------------
 
-Select the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices --> Unpaid
-Supplier Invoices` for a list of supplier invoices that haven't yet been paid. Click the
-``PO001`` text itself to open the invoice in read-only mode.
-In practice you'd search for the invoice by order number or,
+Select the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices` and click on the :guilabel:`Unpaid` button
+for a list of supplier invoices that have not yet been paid. Write the
+``PO00001`` in  `Source Document` text itself to find the invoice.
+In practice you would search for the invoice by order number or,
 more generally, for invoices nearing their payment date.
 
-Click :guilabel:`Pay Invoice` in the toolbar to the right of the form, which opens a
-:guilabel:`Pay invoice` window with a description of the payment.
-Type ``Pay Supplier`` in the :guilabel:`Entry Name` field, and
-select \ ``Bank Journal``\   in the :guilabel:`Journal/Payment Mode` field. Then
-click :guilabel:`Full Payment` to the top left of the form, which carries out the payment action
-within Open ERP and returns you to the invoice. Although this invoice is still in the
-:guilabel:`Unpaid Invoices` screen, you can see it is actually paid because the
-:guilabel:`Paid/Reconciled` box is now checked and the :guilabel:`State` is now ``Done`` .
+Click on :guilabel:`Pay Invoice` button in the supplier invoice form. It opens the
+:guilabel:`Pay invoice` window in new tab with a description of the payment.
+
+``Supplier`` and ``Date`` comes automatically from invoice. You need to just enter the
+``Payment Method``.  After that click on :guilabel:`Validate` button to post this entry.
 
 .. index::
    single: module; account
 
 .. note:: Payment of an invoice
 
-	The method described here is for companies that don't use their accounting system to pay bills –
+	The method described here is for companies that do not use their accounting system to pay bills –
 	just to record them.
-	If you're using the :mod:`account` module fully other, more efficient, methods let you manage payments,
+	If you are using the :mod:`account` module fully other, more efficient, methods let you manage payments,
 	such as entering account statements, reconciling paperwork, using tools for preparing payments,
 	interfacing with banks.
 
 You can monitor the accounting impact of paying the invoice through the chart of accounts available
-from the menu :menuselection:`Accounting --> Charts --> Chart of Accounts`. Open ERP
+from the menu :menuselection:`Accounting --> Charts --> Chart of Accounts`. OpenERP
 automatically creates accounting entries from the payment and can reconcile the payment to the
 invoice. You now have a new transaction that has debited the ``Payable`` account with ``560.00`` and
 credited the ``Cash`` account.
 
-If you look in :menuselection:`Financial Management --> Reporting --> Journals` you will see both
+If you look in :menuselection:`Accounting --> Journal Entries --> Journal Entries` you will see both
 accounting transactions, one in each of the ``Purchase`` Journal and ``Bank`` Journal in
 ``Draft`` state.
 
