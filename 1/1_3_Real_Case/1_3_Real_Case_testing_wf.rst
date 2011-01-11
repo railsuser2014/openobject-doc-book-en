@@ -199,32 +199,28 @@ From Sales Proposal to Sales Order
 ----------------------------------
 
 In Open ERP, sales proposals and sales orders are managed using documents that are based on the
-same common functionality as purchase orders, so you'll recognize the following documents in general
+same common functionality as purchase orders, so you will recognize the following documents in general
 but see changes to their detail and to their workflows. To create a new sales proposal, use the
-menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which creates a new order in a state of \
+menu :menuselection:`Sales --> Sales --> Sales Orders` and click on `New` button which creates a new order in a state of \
 ``Quotation``\  , then:
 
-	#. Select the :guilabel:`Customer` \ ``Smith and Offspring``\  . This has the effect of automatically
+	#. Select the :guilabel:`Customer` \ ``Axelor``\  . This has the effect of automatically
 	   completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
-	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Public Pricelist``\.  They're
+	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Public Pricelist (EUR)``\.  They are
 	   all only defaults so these fields can be modified as you need.
 
-	#. Click the :guilabel:`Save parent record.` icon to the right of the
-	   :guilabel:`Sales Order Lines` field. It saves the main order form and becomes a new
-	   :guilabel:`Create new record.` icon. Click that to open a :guilabel:`Sales Order Lines` window.
+	#. Click the :guilabel:`Create new record` icon to open a :guilabel:`Sales Order Lines` window.
 
-	#. Select the product \ ``Titanium Alloy Radiator``\   Although the :guilabel:`Product` field isn't
-	   itself required, it's used by Open ERP to select the specific product so that several other fields
+	#. Select the product \ ``Titanium Alloy Radiator``\   Although the :guilabel:`Product` field is not
+	   itself required, it is used by Open ERP to select the specific product so that several other fields
 	   can be automatically completed on the order line of the proposal, such as :guilabel:`Description`,
 	   :guilabel:`Product UoM`, :guilabel:`Unit Price`, :guilabel:`Procure Method`,
 	   :guilabel:`Delivery Delay`, and :guilabel:`Taxes`.
 
 	#. Change the :guilabel:`Quantity` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\
-	   Then click :guilabel:`Save` and the line appears on the quotation form. A blank order line form
-	   reappears so that you can enter another line, but it's enough now just to click :guilabel:`Close`
-	   to return to the order form.
+	   Then click :guilabel:`Save` and the line appears on the quotation form.
 
-	#. On the :guilabel:`Other data` tab of this Sales Order select a
+	#. On the :guilabel:`Other Information` tab of this Sales Order select a
 	   :guilabel:`Packing Policy` of ``Complete Delivery`` and
 	   :guilabel:`Shipping Policy` of ``Invoice on Order After Delivery``  from their dropdown menu lists.
 
@@ -232,7 +228,7 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	   :guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
 	   ``Quotation``\  to \ ``In Progress``\ as shown in screenshot :ref:`fig-ch03ord`.
 	   If you were in negotiation with the prospective customer
-	   you'd keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
+	   you would keep clicking :guilabel:`Compute` and :guilabel:`Save` keeping the document in \
 	   ``Quotation``\  state for as long as necessary.
 
 	   .. _fig-ch03ord:
@@ -244,10 +240,10 @@ menu :menuselection:`Sales Management --> Sales Orders --> New Quotation` which 
 	      *Sales Order Form*
 
 	#. In the last tab of the order, :guilabel:`History` you can see the :guilabel:`Packing List`
-	   that's been created and you'll be able to see any invoices that relate to this order when they're
+	   that is been created and you will be able to see any invoices that relate to this order when they are
 	   generated.
 
-From the :guilabel:`Main Menu` click :menuselection:`Products --> Products` to display a list of
+From the  :menuselection:`Sales --> Products --> Products` to display a list of
 products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in this example. Its
 :guilabel:`Real Stock` still shows \ ``10.00``\   but its :guilabel:`Virtual Stock` now shows \
 ``4.00``\  to reflect the new future requirement of 6 units for despatch.
