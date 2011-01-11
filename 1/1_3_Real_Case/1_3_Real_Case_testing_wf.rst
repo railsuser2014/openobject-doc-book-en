@@ -248,13 +248,12 @@ products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in th
 :guilabel:`Real Stock` still shows \ ``10.00``\   but its :guilabel:`Virtual Stock` now shows \
 ``4.00``\  to reflect the new future requirement of 6 units for despatch.
 
-Preparing goods for despatch to customers
+Preparing goods for shipping to customers
 -----------------------------------------
 
-The stores manager selects the menu :menuselection:`Stock Management --> Outgoing Products -->
-Confirmed Packing Waiting Availability` to get a list of orders to despatch. In this
-example there's only one, \ ``PACK2``\  , so click the text to open the
-:guilabel:`Confirmed Packing Waiting Availability` form.
+The stores manager selects the menu :menuselection:`Warehouse --> Warehouse Management -->
+Delivery Orders` to get a list of orders to despatch. For this example find the Delivery Order releted
+to the sale order which you have created.
 
 .. index::
    single: module; mrp_jit
@@ -265,24 +264,25 @@ example there's only one, \ ``PACK2``\  , so click the text to open the
 	A stock reservation activity takes place periodically to calculate the needs,
 	which also takes customer priorities into account.
 	The calculation can be started from the menu
-	:menuselection:`Manufacturing --> Compute All Schedulers`.
+	:menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 	Running this automatically reserves products.
 
-	If you don't want to have to work out your stock needs but have a lean workflow you can install the
+	If you do not want to have to work out your stock needs but have a lean workflow you can install the
 	:mod:`mrp_jit` (Just In Time) module.
 
 Although Open ERP has automatically been made aware that items on this order will need to be
-despatched, it has not yet assigned any specific items from any location to fulfil it. It's ready to
+despatched, it has not yet assigned any specific items from any location to fulfil it. It is ready to
 move \ ``6.00``\  \ ``Titanium Alloy Radiators``\   from the :guilabel:`Stock` location to the :guilabel:`Customers`
 location, so start this process by clicking
 :guilabel:`Check Availability`. The :guilabel:`Move` line has now changed from the \ ``Confirmed``\   state to
 the \ ``Available``\   state.
 
-Then click the :guilabel:`Packing Done` button to reach the :guilabel:`Make Packing` window, where
-you click the :guilabel:`Make Picking` button to transfer the 6 radiators to the customer.
+Then click the :guilabel:`Process` button to reach the :guilabel:`Process Document` window, where
+you click the :guilabel:`Validate` button to transfer the 6 radiators to the customer.
 
-To analyze stock movements that you've made during these operations use
-:menuselection:`Stock Management --> Stock Locations Structure` to see that your stocks have reduced to
+To analyze stock movements that you have made during these operations use
+:menuselection:`Warehouse --> Product --> Product` and find this product then click on the action
+`Stock by Location` which is at the right most side to see that your stocks have reduced to
 4 radiators and the generic ``Customers`` location has a level of 6 radiators.
 
 Invoicing Goods
