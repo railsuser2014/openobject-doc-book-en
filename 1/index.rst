@@ -32,6 +32,7 @@ First steps with OpenERP
     :maxdepth: 1
 
 
+    1_0_Subscribe_Start/index
     1_1_Inst_Config/index
     1_2_Guided_Tour/index
     1_3_Real_Case/index
