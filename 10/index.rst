@@ -3,7 +3,7 @@
 Conclusion
 **********
 
-Open ERP has become established as the main free market-changing alternative for enterprise
+OpenERP has become established as the main free market-changing alternative for enterprise
 management systems
 in amongst software from giants such as SAP, Oracle and Microsoft,
 and from the small software developers in their own niches.
@@ -13,7 +13,7 @@ install a proprietary ERP system, complete but usually overweight, inflexible, a
 or develop a solution internally, adapted to current needs but often expensive to develop, not
 integrated, and incomplete.
 
-With its free business model, Open ERP combines the advantages of a complete ERP system with the
+With its free business model, OpenERP combines the advantages of a complete ERP system with the
 flexibility of an in-house solution.
 The open source code, the project's general flexibility, and its hundreds of modules
 let you construct a solution from a selection of the modules already available and
@@ -28,12 +28,12 @@ intensity.
 Because there are fewer repetitive tasks for your staff to do,
 they can concentrate on higher added-value work.
 We frequently receive the gratitude of senior management who get better results from their
-business because they've adopted Open ERP.
+business because they have adopted OpenERP.
 
-You aren't alone
+You are not alone
 ================
 
-Many resources are at hand to accompany you on your Open ERP adventure.
+Many resources are at hand to accompany you on your OpenERP adventure.
 
 Bypass the technical difficulties by using the SaaS offer
 ---------------------------------------------------------
@@ -42,24 +42,24 @@ Bypass the technical difficulties by using the SaaS offer
    single:  SaaS
 
 For a quick low-cost start, you can make use of a month's comprehensive free trial of Tiny's
-Open ERP SaaS package found at http://ondemand.openobject.com/. 
+OpenERP SaaS package found at http://ondemand.openerp.com/. 
 Using this you sidestep any technical difficulties and get a
 comprehensive set of system administration services, server hosting, configuration to your
 environment, maintenance, support and initial training.
 
-An SaaS package is suited to the needs of small enterprises that don't have very specific needs, and
+An SaaS package is suited to the needs of small enterprises that do not have very specific needs, and
 where the initial cost and the delay of implementation are critical factors.
 
 To meet its objectives of minimal cost, the SaaS package aims for highly automated standardized data
 migrations, minimal support load by training customers well, and a strict limit to the number of
-modules offered. So you can't use your own modules, and are limited to the standard modules that are
+modules offered. So you cannot use your own modules, and are limited to the standard modules that are
 included in various package levels.
 
 Consult the available resources
 -------------------------------
 
-Larger companies often prefer a more classic implementation path. Even though Open ERP's simplicity
-makes this task easier than with other systems, you can't hide the fact that a project
+Larger companies often prefer a more classic implementation path. Even though OpenERP's simplicity
+makes this task easier than with other systems, you cannot hide the fact that a project
 implementation is complex and introduces big changes to a company.
 
 So you can turn towards some of the different actors in this free software ecosystem to help you
@@ -67,7 +67,7 @@ out:
 
 * the community of users and developers,
 
-* Tiny's Open ERP partner companies,
+* Tiny's OpenERP partner companies,
 
 * the main project developers, Tiny, themselves.
 
@@ -75,18 +75,18 @@ The community of users and developers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The community, supported by Tiny, hosts a set of communication tools which can help you in your
-Open ERP investigation.
+OpenERP investigation.
 
-* **The forum** http://openobject.com/forum
+* **The forum** http://openerp.com/forum
 
-The forum enables you to discuss issues with other Open ERP users. It's very active and you have a
+The forum enables you to discuss issues with other OpenERP users. It is very active and you have a
 good chance of receiving some form of response to your questions within twenty-four hours or so.
 
 * **The wiki**  http://openobject.com/wiki
 
-The OpenObject wiki is used to manage activities around Open ERP.
+The OpenObject wiki is used to manage activities around OpenERP.
 
-You'll find informations about:
+You will find informations about:
 
   * Shared Funding Projects
   * IRC Meetings
@@ -94,39 +94,39 @@ You'll find informations about:
   * Business Intelligence
   * Open Report (eg. OpenReport, OpenOffice Plugin)
 
-* **Database of Open ERP modules** http://doc.openerp.com/modindex.html
+* **Database of OpenERP modules** http://doc.openerp.com/py-modindex.html
 
-A database of all the modules available for use gives you free access to most of the known Open ERP
+A database of all the modules available for use gives you free access to most of the known OpenERP
 extensions.
 
 * **Launchpad** https://code.launchpad.net/~openerp/
 
-The most recent communication tool is the launchpad system, which now hosts all of Open ERP's
-source code (using the *bzr* source code control system) and is used for reporting faults. It's
-become the central location for Open ERP technology.
+The most recent communication tool is the launchpad system, which now hosts all of OpenERP's
+source code (using the *bzr* source code control system) and is used for reporting faults. It is
+become the central location for OpenERP technology.
 
-Open ERP partners
+OpenERP partners
 ^^^^^^^^^^^^^^^^^
 
-If you need contract-backed guarantees for implementing and maintaining Open ERP you can contact an
-official Open ERP partner. Open ERP partners offer various services such as user training,
+If you need contract-backed guarantees for implementing and maintaining OpenERP you can contact an
+official OpenERP partner. OpenERP partners offer various services such as user training,
 prototype installations, and change management services. The complete list of partners by country
-and by type can be found on the official Open ERP site: http://openerp.com/partners.html.
+and by type can be found on the official OpenERP site: http://openerp.com/partners
 
 The main developer, Tiny
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Finally you can call the main project developers, Tiny, who can help you in your Open ERP project.
+Finally you can call the main project developers, Tiny, who can help you in your OpenERP project.
 Tiny offers various services such as free demonstration days for the software, user training and
 technical training, support contracts, maintenance contracts and developments as required. Depending
 on the demand, they can also put you in contact with partners most aligned to your requirements.
 
-* **The mailing list** To keep up to date with all Open ERP's news you can subscribe to the mailing list using http://tiny.be/mailman/listinfo/tinyerp-announce.
+* **The mailing list** To keep up to date with all OpenERP's news you can subscribe to the mailing list using http://tiny.be/mailman/listinfo/tinyerp-announce.
 
 
-To conclude, don't forget that Open ERP has more than two hundred modules available and that many
-of them haven't been covered in this book. So if you haven't found a solution to your problems here,
-look amongst those modules, talk to other Open ERP users on the forum, and don't hesitate to
+To conclude, do not forget that OpenERP has more than two hundred modules available and that many
+of them have not been covered in this book. So if you have not found a solution to your problems here,
+look amongst those modules, talk to other OpenERP users on the forum, and do not hesitate to
 contact a partner.
 
 
