@@ -2,29 +2,33 @@
 Getting started with OpenERP
 ****************************
 
-You'll now explore the database \ ``openerp_ch02``\   with these profile modules installed to give
+You will now explore the database \ ``openerp_ch02``\   with these profile modules installed to give
 you an insight into the coverage of the core Open ERP software.
 
 .. tip:: Translating new modules
 
-	When you've installed a new module and are using additional languages to English you have to reload
-	the translation file. New terms introduced in these modules aren't translated by default. To do
+	When you have installed a new module and are using additional languages to English you have to reload
+	the translation file. New terms introduced in these modules are not translated by default. To do
 	this use :menuselection:`Administration --> Translations --> Load an Official Translation`.
 
-Depending on the user you're connected as the page appears differently from the Main Menu that
-showed before. Using the installation sequence above, certain dashboards may be assigned as various
+Depending on the user you are connected as the page appears differently.
+Using the installation sequence above, certain dashboards may be assigned as various
 users' home pages. They show a summary of the information required to start the day effectively. A
 project dashboard might contains:
 
-* a list of the next tasks to carry out,
+* a list of the tasks to carry out,
 
-* a list of the next deadlines,
+* a list of the tasks which is assigned to current user,
 
-* public notes about projects,
+* a list of sprints,
 
-* a planning chart of hours required,
+* a list of issue assigned to current user,
 
-* the timesheet.
+* a graph of Planned vs Total hour,
+
+* a graph of Remaining hour by Project,
+
+* a graph of Open Issues by Creation Date.
 
 Each of the lists can be reordered by clicking on the heading of a column – first in ascending
 then in descending order as you click repeatedly. To get more information about any particular entry
@@ -37,7 +41,7 @@ above it.
 
    *Project Dashboard*
 
-Users' home pages are automatically reassigned during the creation or upgrading of a database. It's
+Users' home pages are automatically reassigned during the creation or upgrading of a database. It is
 usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the
 home page of any user.
 
@@ -50,14 +54,12 @@ home page of any user.
 	general an employee uses only a small part of the system's functions.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut open the select menu and click on the :guilabel:`Add` link to the far right of
-	:guilabel:`SHORTCUTS`.
+	create a new shortcut Just click on the '*' of the header of the view in web client.
 
-	To change or replace a link click :guilabel:`SHORTCUTS`. Open ERP then opens a list of
-	editable shortcuts.
+	To remove shortcut just click on link and again click on '*' of the header of the view.
 
 The following sections present an overview of the main functions of Open ERP. Some areas are
-covered in more detail in the following chapters of this book and you'll find many other functions
+covered in more detail in the following chapters of this book and you will find many other functions
 available in the optional modules. Functions are presented in the order that they appear on the main
 menu.
 
@@ -323,7 +325,7 @@ Boost your Sales
 ================
 
 Open ERP provides many tools for managing relationships with partners. These are available through
-the :menuselection:`CRM & SRM` menu.
+the :menuselection:`Sales` menu.
 
 .. tip::  :guilabel:`CRM & SRM`
 
@@ -332,9 +334,15 @@ the :menuselection:`CRM & SRM` menu.
 	functions that manage your communications with your suppliers.
 
 The concept of a “case” is used to handle arbitrary different types of relationship, each
-derived from a generic method. You can use it for all types of communication such as order
-enquiries, quality problems, management of a call center, record tracking, support requests and job
-offers.
+derived from a generic method. OpenERP provide the following efficiently "Case" management system.
+
+* Leads
+* Opportunities
+* Meetings
+* Phone Calls
+* Claims
+* Helpdesk and Support
+* Fund Raising
 
 Open ERP ensures that each case is handled effectively by the system's users, customers and
 suppliers. It can automatically reassign a case, track it for the new owner, send reminders by email
@@ -344,7 +352,7 @@ All operations are archived, and an email gateway lets you update a case automat
 sent and received. A system of rules enables you to set up actions that can automatically improve
 your process quality by ensuring that open cases never escape attention.
 
-As well as those functions, you've got tools to improve the productivity of all staff in their daily
+As well as those functions, you have got tools to improve the productivity of all staff in their daily
 work:
 
 * a document editor that interfaces with OpenOffice.org,
@@ -353,8 +361,6 @@ work:
 
 * an Outlook plugin enabling you to automatically store your emails and their attachments in a
   Document Management System integrated with Open ERP,
-
-* a portal for your suppliers and customers that enables them to access certain data on your system.
 
 You can implement a continuous improvement policy for all of your services, by using some of the
 statistical tools in Open ERP to analyze the different communications with your partners. With
