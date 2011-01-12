@@ -590,9 +590,14 @@ Be Mobile
 Measure your Business Performance
 =================================
 
-Dashboards give you an overview of all the information that's important to you on a single page. The
-:menuselection:`Dashboards` menu gives you access to predefined boards for
-:menuselection:`Financial Management`, :menuselection:`Manufacturing` and :menuselection:`Project Management`.
+To measure your business performance OpenERP provide two interesting features:
+
+* Dashboards
+* Statistical Reports
+
+Dashboards give you an overview of all the information that is important to you on a single page.
+In OpenERP each application has its own dashboard which opens by default when you select the specific application.
+As for example `Administration Dashboard` will open when you click on the :menuselection:`Administration` menu.
 
 .. note:: Dashboards
 
@@ -600,10 +605,10 @@ Dashboards give you an overview of all the information that's important to you o
 	Open ERP can provide dashboards to all of the system's users, and not just to a select few
 	such as directors and accountants.
 
-	Users can each have their own dashboard, adapted to their needs,
+	Each user can have their own dashboard, adapted to their needs,
 	to enable them to manage their own work effectively.
 	For example a developer using the :guilabel:`Project Dashboard` can see such information
-	as a list of the next tasks, task completion history and an analysis of the state of progress of
+	as a list of the open tasks, task delegated to him and an analysis of the state of progress of
 	the relevant projects.
 
 Dashboards are dynamic, which lets you navigate easily around the whole information base.
@@ -614,11 +619,17 @@ Dashboards are adaptable to the needs of each user and each company.
 
 .. note:: Construction of dashboards
 
-	Open ERP contains a dashboard editor. It lets you construct your own dashboard to fit your
-	specific needs using only a few clicks.
+	OpenERP contains a dashboard editor. It lets you construct your own dashboard to fit your
+	specific needs using only a few clicks. The :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition`
+	menu gives you access to defined your own dashboard.
 
 .. index::
    single: Products
+
+The `Statistical Analysis` is one of the crucial thing for decision making process in any business. The OpenERP provides
+Statistical Reports for each application. As for example you can access the statistical analysis of Sales releted information
+from the menu :menuselection:`Sales --> Reporting --> Sales Analysis`. Also you can search and group by the data using this
+`Statistical Report`.
 
 Track your Process Flows
 ========================
