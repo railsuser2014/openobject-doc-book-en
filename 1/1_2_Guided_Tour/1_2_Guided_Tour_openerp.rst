@@ -1,6 +1,6 @@
-
-Guided Tour of Open ERP
-=======================
+****************************
+Getting started with OpenERP
+****************************
 
 You'll now explore the database \ ``openerp_ch02``\   with these profile modules installed to give
 you an insight into the coverage of the core Open ERP software.
@@ -61,11 +61,14 @@ covered in more detail in the following chapters of this book and you'll find ma
 available in the optional modules. Functions are presented in the order that they appear on the main
 menu.
 
+Basic Concepts
+==============
+
 .. index::
    single: Partners
 
-Partners
---------
+Partners & Contacts
+-------------------
 
 To familiarize yourself with Open ERP's interface, you'll start work with information about
 partners. Clicking :menuselection:`Partners --> Partners` brings up a list of partners that were
@@ -149,7 +152,7 @@ current partner.
 Actions possible on a partner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To the right of the partner form is a toolbar containing a list of possible :guilabel:`Reports` , 
+To the right of the partner form is a toolbar containing a list of possible :guilabel:`Reports` ,
 :guilabel:`Actions`, and quick :guilabel:`Links` about the partner displayed in the form.
 
 You can generate PDF documents about the selected object (or, in list view, about one or more
@@ -209,73 +212,6 @@ Before moving on to the next module, take a quick look into the :menuselection:`
 Configuration`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
 They contain some of the demonstration data that you installed when you created the database.
 
-.. index::
-   single: Accounting and Finance
-   single: Financial Management
-
-Financial Management
---------------------
-
-The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting. 
-A brief overview of
-the functions provided by these modules is given here as an introduction.
-
-Accounting is totally integrated into all of the company's functions, whether it's general,
-analytic, budgetary or auxiliary accounting. Open ERP's accounting function is double-entry and
-supports multiple company divisions and multiple companies, as well as multiple currencies and
-languages.
-
-Accounting that's integrated throughout all of the company's processes greatly simplifies the work
-of entering accounting data, because most of the entries are generated automatically while other
-documents are being processed. You can avoid entering data twice in Open ERP, which is commonly a
-source of errors and delays.
-
-So Open ERP's accounting isn't just for financial reporting – it's also the anchorpoint for many
-of a company's management processes. For example if one of your accountants puts a customer on
-credit hold then that will immediately block any other action related to that company's credit (such
-as a sale or a delivery).
-
-Open ERP also provides integrated analytical accounting, which enables management by business
-activity or project and provides very detailed levels of analysis. You can control your operations
-based on business management needs, rather than on the charts of accounts that generally meet only
-statutory requirements.
-
-.. index::
-   single: Dashboards
-
-Dashboards
-----------
-
-Dashboards give you an overview of all the information that's important to you on a single page. The
-:menuselection:`Dashboards` menu gives you access to predefined boards for
-:menuselection:`Financial Management`, :menuselection:`Manufacturing` and :menuselection:`Project Management`.
-
-.. note:: Dashboards
-
-	Unlike most other ERP systems and classic statistically-based systems,
-	Open ERP can provide dashboards to all of the system's users, and not just to a select few
-	such as directors and accountants.
-
-	Users can each have their own dashboard, adapted to their needs,
-	to enable them to manage their own work effectively.
-	For example a developer using the :guilabel:`Project Dashboard` can see such information
-	as a list of the next tasks, task completion history and an analysis of the state of progress of
-	the relevant projects.
-
-Dashboards are dynamic, which lets you navigate easily around the whole information base.
-Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can
-click on any element of the list to get detailed statistics on the selected element.
-
-Dashboards are adaptable to the needs of each user and each company.
-
-.. note:: Construction of dashboards
-
-	Open ERP contains a dashboard editor. It lets you construct your own dashboard to fit your
-	specific needs using only a few clicks.
-
-.. index::
-   single: Products
-
 Products
 --------
 
@@ -309,7 +245,7 @@ of its available variants briefly rather than every item as an entire product.
 			* Quality of Cloth (125g/m2, 150g/m2, 160g/m2, 180g/m2),
 
 			* Collar (V, Round).
-			
+
 			.. index::
 			   single: module; product_variant_multi
 
@@ -375,79 +311,6 @@ such as:
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
-  .. index::
-     single: Human Resources
-     single: HR
-
-Human Resources
----------------
-
-Open ERP's Human Resources Management modules provide such functionality as:
-
-* management of staff and the holiday calendar,
-
-* management of employment contracts,
-
-* management of holiday and sickness breaks,
-
-* managing claims processes,
-
-* management of staff performance,
-
-* management of skills and competencies.
-
-.. index::
-   single: modules; hr_
-   single: module; hr
-
-Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
-rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
-Resources` menu.
-
-The different issues are handled in detail in the fourth part of this book :ref:`part-ops`, dedicated to internal
-organization and to the management of a services business.
-
-.. index::
-   single: inventory control
-   single: Stock Management
-..
-
-Stock Management
-----------------
-
-The various sub-menus under :menuselection:`Stock Management` together provide operations you need to manage stock.
-You can:
-
-* define your warehouses and structure them around locations and layouts of your choosing,
-
-* manage inventory rotation and stock levels,
-
-* execute packing orders generated by the system,
-
-* execute deliveries with delivery notes and calculate delivery charges,
-
-* manage lots and serial numbers for traceability,
-
-* calculate theoretical stock levels and automate stock valuation,
-
-* create rules for automatic stock replenishment.
-
-Packing orders and deliveries are usually defined automatically by calculating requirements based on
-sales. Stores staff use picking lists generated by Open ERP, produced automatically in order of
-priority.
-
-Stock management is, like accounting, double-entry. So stocks don't appear and vanish magically
-within a warehouse, they just get moved from place to place. And, just like accounting, such a
-double-entry system gives you big advantages when you come to audit stock because each missing item
-has a counterpart somewhere.
-
-Most stock management software is limited to generating lists of products in warehouses. Because of
-its double-entry system Open ERP automatically manages customer and suppliers stocks as well, which
-has many advantages: complete traceability from supplier to customer, management of consigned stock,
-and analysis of counterpart stock moves.
-
-Furthermore, just like accounts, stock locations are hierarchical, so you can carry out analyses at
-various levels of detail.
 
 .. index::
    single: CRM
@@ -456,8 +319,8 @@ various levels of detail.
    single: Supplier Relationship Management
 ..
 
-Customer and Supplier Relationship Management
----------------------------------------------
+Boost your Sales
+================
 
 Open ERP provides many tools for managing relationships with partners. These are available through
 the :menuselection:`CRM & SRM` menu.
@@ -503,22 +366,73 @@ The management of customer relationships is detailed in the second section of th
 .. index::
    single: Purchase Management
 
-Purchase Management
--------------------
 
-Purchase management enables you to track your suppliers' price quotations and convert them into
-Purchase Orders as you require. Open ERP has several methods of monitoring invoices and tracking
-the receipt of ordered goods.
+.. index::
+   single: Accounting and Finance
+   single: Financial Management
 
-You can handle partial deliveries in Open ERP, so you can keep track of items that are still to be
-delivered on your orders, and you can issue reminders automatically.
+Manage your Books
+=================
 
-Open ERP's replenishment management rules enable the system to generate draft purchase orders
-automatically, or you can configure it to run a lean process driven entirely by current production
-needs.
+The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting.
+A brief overview of
+the functions provided by these modules is given here as an introduction.
 
-Project Management
-------------------
+Accounting is totally integrated into all of the company's functions, whether it's general,
+analytic, budgetary or auxiliary accounting. Open ERP's accounting function is double-entry and
+supports multiple company divisions and multiple companies, as well as multiple currencies and
+languages.
+
+Accounting that's integrated throughout all of the company's processes greatly simplifies the work
+of entering accounting data, because most of the entries are generated automatically while other
+documents are being processed. You can avoid entering data twice in Open ERP, which is commonly a
+source of errors and delays.
+
+So Open ERP's accounting isn't just for financial reporting – it's also the anchorpoint for many
+of a company's management processes. For example if one of your accountants puts a customer on
+credit hold then that will immediately block any other action related to that company's credit (such
+as a sale or a delivery).
+
+Open ERP also provides integrated analytical accounting, which enables management by business
+activity or project and provides very detailed levels of analysis. You can control your operations
+based on business management needs, rather than on the charts of accounts that generally meet only
+statutory requirements.
+
+
+  .. index::
+     single: Human Resources
+     single: HR
+
+Lead & Inspire your People
+==========================
+
+Open ERP's Human Resources Management modules provide such functionality as:
+
+* management of staff and the holiday calendar,
+
+* management of employment contracts,
+
+* management of holiday and sickness breaks,
+
+* managing claims processes,
+
+* management of staff performance,
+
+* management of skills and competencies.
+
+.. index::
+   single: modules; hr_
+   single: module; hr
+
+Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
+rather than the core :mod:`hr` module, but they're all loaded into the main :menuselection:`Human
+Resources` menu.
+
+The different issues are handled in detail in the fourth part of this book :ref:`part-ops`, dedicated to internal
+organization and to the management of a services business.
+
+Drive your Projects
+===================
 
 Open ERP's project management tools enable you to handle the definition of tasks and the
 specification of requirements for those tasks, efficient allocation of resources to the
@@ -543,11 +457,83 @@ module for all enterprise needs.
 Project Management is described in :ref:`ch-projects`.
 
 .. index::
+   single: inventory control
+   single: Stock Management
+..
+
+Manage your Business
+====================
+
+Driving your Sales
+------------------
+
+The :menuselection:`Sales Management` menu gives you roughly the same functionality as the
+:menuselection:`Purchase Management` menu – the ability to create new orders and to review the
+existing orders in their various states – but there are important differences in the workflows.
+
+Confirmation of an order triggers delivery of the goods, and invoicing timing is defined by a
+setting in each individual order.
+
+Delivery charges can be managed using a grid of tariffs for different carriers.
+
+Driving your Purchases
+----------------------
+
+Purchase management enables you to track your suppliers' price quotations and convert them into
+Purchase Orders as you require. Open ERP has several methods of monitoring invoices and tracking
+the receipt of ordered goods.
+
+You can handle partial deliveries in Open ERP, so you can keep track of items that are still to be
+delivered on your orders, and you can issue reminders automatically.
+
+Open ERP's replenishment management rules enable the system to generate draft purchase orders
+automatically, or you can configure it to run a lean process driven entirely by current production
+needs.
+
+Organise your Warehous
+----------------------
+
+The various sub-menus under :menuselection:`Stock Management` together provide operations you need to manage stock.
+You can:
+
+* define your warehouses and structure them around locations and layouts of your choosing,
+
+* manage inventory rotation and stock levels,
+
+* execute packing orders generated by the system,
+
+* execute deliveries with delivery notes and calculate delivery charges,
+
+* manage lots and serial numbers for traceability,
+
+* calculate theoretical stock levels and automate stock valuation,
+
+* create rules for automatic stock replenishment.
+
+Packing orders and deliveries are usually defined automatically by calculating requirements based on
+sales. Stores staff use picking lists generated by Open ERP, produced automatically in order of
+priority.
+
+Stock management is, like accounting, double-entry. So stocks don't appear and vanish magically
+within a warehouse, they just get moved from place to place. And, just like accounting, such a
+double-entry system gives you big advantages when you come to audit stock because each missing item
+has a counterpart somewhere.
+
+Most stock management software is limited to generating lists of products in warehouses. Because of
+its double-entry system Open ERP automatically manages customer and suppliers stocks as well, which
+has many advantages: complete traceability from supplier to customer, management of consigned stock,
+and analysis of counterpart stock moves.
+
+Furthermore, just like accounts, stock locations are hierarchical, so you can carry out analyses at
+various levels of detail.
+
+
+.. index::
    single: Production Management
    single: Manufacturing
 
-Manufacturing
--------------
+Get Manufacturing done
+======================
 
 Open ERP's production management capabilities enable companies to plan, automate, and track
 manufacturing and product assembly. Open ERP supports multi-level bills of materials and lets you
@@ -577,31 +563,59 @@ route
 The demonstration data contains a list of products and raw materials with various classifications
 and ranges. You can test the system using this data.
 
-.. index::
-   single: Sales Management
 
-Sales Management
-----------------
+Share your Knowledge
+====================
 
-The :menuselection:`Sales Management` menu gives you roughly the same functionality as the
-:menuselection:`Purchase Management` menu – the ability to create new orders and to review the
-existing orders in their various states – but there are important differences in the workflows.
+Efficient Document Management
+-----------------------------
 
-Confirmation of an order triggers delivery of the goods, and invoicing timing is defined by a
-setting in each individual order.
-
-Delivery charges can be managed using a grid of tariffs for different carriers.
-
-Document Management
--------------------
-
-Open ERP integrates a complete document management system that not only 
+Open ERP integrates a complete document management system that not only
 carried out the functions of a standard DMS, but also integrates with all
 of its system-generated documents such as Invoices and Quotations. What's more
 it keeps all of this synchronized.
 
-Process Management
-------------------
+Be Mobile
+---------
+
+.. index::
+   single: Dashboards
+
+Measure your Business Performance
+=================================
+
+Dashboards give you an overview of all the information that's important to you on a single page. The
+:menuselection:`Dashboards` menu gives you access to predefined boards for
+:menuselection:`Financial Management`, :menuselection:`Manufacturing` and :menuselection:`Project Management`.
+
+.. note:: Dashboards
+
+	Unlike most other ERP systems and classic statistically-based systems,
+	Open ERP can provide dashboards to all of the system's users, and not just to a select few
+	such as directors and accountants.
+
+	Users can each have their own dashboard, adapted to their needs,
+	to enable them to manage their own work effectively.
+	For example a developer using the :guilabel:`Project Dashboard` can see such information
+	as a list of the next tasks, task completion history and an analysis of the state of progress of
+	the relevant projects.
+
+Dashboards are dynamic, which lets you navigate easily around the whole information base.
+Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can
+click on any element of the list to get detailed statistics on the selected element.
+
+Dashboards are adaptable to the needs of each user and each company.
+
+.. note:: Construction of dashboards
+
+	Open ERP contains a dashboard editor. It lets you construct your own dashboard to fit your
+	specific needs using only a few clicks.
+
+.. index::
+   single: Products
+
+Track your Process Flows
+========================
 
 Many documents have a workflow of their own, and also take part in cross-functional processes.
 Take a document that could be expected to have a workflow, such as a Sales Order, and
@@ -612,15 +626,15 @@ then click the :guilabel:`Process` button above its form to see the full process
    :align: center
 
    *Process for a Sales Order*
-   
+
 You can see the position of that particular document in its process, if you have selected
 a single document, by the solid bar on one of the process nodes. You also link
 to documents and menus for each of the stages.
 
 There is a clear distinction between a cross-functional process (that is currently only
 shown in the web client) and the detailed document workflow (that is shown in both the
-web client from a process node, and the GTK client from the 
-:menuselection:`Plugins > Execute a Plugin...` menu and clicking either 
+web client from a process node, and the GTK client from the
+:menuselection:`Plugins > Execute a Plugin...` menu and clicking either
 the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
 
 .. figure:: images/purchase_workflow.png
@@ -632,14 +646,14 @@ the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` o
 Alongside the document management system, the process visualization features make Open ERP
 far better for documentation than similar systems.
 
-Other functions
----------------
+Need more?
+==========
 
-You've been through a brisk, brief overview of many of the main functional areas of Open ERP. 
-Some of these – a large proportion of the core modules – are treated in more detail 
+You've been through a brisk, brief overview of many of the main functional areas of Open ERP.
+Some of these – a large proportion of the core modules – are treated in more detail
 in the following chapters.
 
-You can use the menu :menuselection:`Administration --> Modules Management --> Modules --> 
+You can use the menu :menuselection:`Administration --> Modules Management --> Modules -->
 Uninstalled modules` to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to Open ERP (such as
 :mod:`base_iban`), some have quite extensive effects (such as the various charts of accounts), and
@@ -654,6 +668,8 @@ A brief description is available for each module, but the most thorough way of u
 functionality is to install one and try it. So, pausing only to prepare another test database to try
 it out on, just download and install the modules that appear interesting.
 
+Tips & Tricks
+=============
 
 .. Copyright © Open Object Press. All rights reserved.
 
