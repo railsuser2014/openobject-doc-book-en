@@ -59,7 +59,7 @@ To download the version of OpenERP for Windows, follow these steps:
    :menuselection:`All-in-One`.
 
 #. This brings up the demonstration version Windows installer, 
-   currently :program:`openerp-allinone-setup-5.0.15`.
+   currently :program:`openerp-allinone-setup-6.0.0`.
 
 #. Save the file on your PC - it is quite a substantial size because it downloads everything including
    the PostgreSQL database system, so it will take some time.
@@ -111,7 +111,7 @@ visible to the other PCs, and install a GTK client on each of those PCs:
    :guilabel:`OpenERP Server` in the list provided. This step enables other computers to see the
    OpenERP application on this server.
 
-#. Install the OpenERP client (:program:`openerp-client-5.X.exe`), which you can download in the
+#. Install the OpenERP client (:program:`openerp-client-6.X.exe`), which you can download in the
    same way as you downloaded the other OpenERP software, onto the other PCs.
 
 .. tip:: Version matching
@@ -251,18 +251,19 @@ Upgrade of Ubuntu packages and installation of OpenERP and pgadmin::
 
     $ sudo apt-get install openerp-server openerp-client pgadmin3
 
-To avoid having some of the labels untranslated in the GTK client, install the language-pack-gnome-YOURLANG-base package. The following command installs the spanish language pack::
+To avoid having some of the labels untranslated in the GTK client, install the language-pack-gnome-YOURLANG-base package. The following command installs the Spanish language pack::
 
     $ sudo apt-get install language-pack-gnome-es-base
 
-Postgres Database configuration::
+PostgreSQL version 8.4 has been used at the time of writing. You may have to replace the version number in the
+commands below with your own PostgreSQL version number if it differs. Postgres Database configuration::
 
-    $ sudo vi /etc/postgresql/8.3/main/pg_hba.conf
+    $ sudo vi /etc/postgresql/8.4/main/pg_hba.conf
 
 Replace the following line::
 
     # “local” is for Unix domain socket connections only
-    local all all ident sameuser
+    local all all ident
 
 with::
 
@@ -271,9 +272,9 @@ with::
 
 Restart Postgres::
 
-    $ sudo /etc/init.d/postgresql-8.3 restart
+    $ sudo /etc/init.d/postgresql-8.4 restart
 
-    * Restarting PostgreSQL 8.3 database server [ OK ]
+    * Restarting PostgreSQL 8.4 database server [ OK ]
 
 The following two commands will avoid problems with /etc/init.d/openerp-web INIT script::
 
@@ -317,7 +318,9 @@ Replace the following two lines (we don’t force to use a specific database and
 
 .. to check
 
-Troubles with Python releases: Python 2.6 is not yet supported by OpenERP 5.0, but it is the default Python release on Ubuntu 9.0.4. We need to launch OpenERP 5.0 with Python 2.5 or earlier. There’s also a problem with python-xml package in Ubuntu so we will reinstall it.
+.. Troubles with Python releases: Python 2.6 is not yet supported by OpenERP 5.0, but it is the default Python release
+.. on Ubuntu 9.0.4. We need to launch OpenERP 5.0 with Python 2.5 or earlier. There’s also a problem with python-xml
+.. package in Ubuntu so we will reinstall it.
 
 Python 2.5 setting up::
 
@@ -410,7 +413,8 @@ OpenERP is now up and running, connected to Postgres database on port 5432 and l
     
   
 
-Start the OpenERP GTK client by clicking its icon in the :menuselection:`Applications`  menu,
+Start the OpenERP GTK client by clicking its icon in the :menuselection:`Applications --> Internet
+--> OpenERP Client`  menu,
 or by opening a terminal window and typing \ ``openerp-client``\  . The OpenERP login dialog box
 should open and show the message :guilabel:`No database found you must create one!`.
 
@@ -423,7 +427,7 @@ likely to be far more up to date than that available from a Linux distribution.
 	Maintaining packages is a process of development, testing and publication that takes time. The
 	releases in OpenERP packages are therefore not always the latest available. Check
 	the version number from the information on the website before installing a package. If only the
-	third digit group differs (for example 5.0.1 instead of 5.0.2) then you may decide to install it because
+	third digit group differs (for example 6.0.1 instead of 6.0.2) then you may decide to install it because
 	the differences may be minor – bug fixes rather than functionality changes between the package
 	and the latest version.
 	
@@ -446,9 +450,9 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 
 #. Start Synaptic Package Manager, and enter the root password as required.
 
-#. Check that the repositories \ ``main``\   \ ``universe``\  and \ ``restricted``\  are enabled.
+#. Check that the repositories \ ``main`` \, \ ``universe`` \ and \ ``restricted`` \  are enabled.
 
-#. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.3``\   then select it for
+#. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.4``\   then select it for
    installation along with its dependencies.
 
 #. Select all of OpenERP's dependences, an up-to-date list of which should be
@@ -492,22 +496,13 @@ Manual installation of OpenERP GTK clients
 To install an OpenERP GTK client, follow the steps outlined in the website installation document for
 your particular operating system.
 
-.. tip:: Survey: Don't Cancel!
-
-	When you start the GTK client for the first time, a dialog box appears asking for various details
-	that are intended to help the OpenERP company assess the prospective user base for its software.
-
-	If you click the :guilabel:`Cancel` button, the window goes away – but OpenERP will ask the
-	same questions again next time you start the client. It is best to click :guilabel:`OK`, even if you
-	choose to enter no data, to prevent that window reappearing next time.
-
 .. figure:: images/terp_client_startup.png
    :align: center
    :scale: 75
    
    *OpenERP client at startup*
 
-Open a terminal window to start the client using the command openerp-client. When you start the
+Open a terminal window to start the client using the command :command:`openerp-client`. When you start the
 client on the same Linux PC as the server you will find that the default connection parameters will
 just work without needing any change. The message :guilabel:`No database found, you must create
 one!`  shows you that the connection to the server has been successful and you need to create a
@@ -551,7 +546,7 @@ It is possible to connect the server to the client using a secure protocol to pr
 users from listening in, but the installation described here is for direct unencrypted connection.
 
 If your Linux server is protected by a firewall you will have to provide access to port 
- \ ``8069``\ or \ ``8070``\ for users on other computers with OpenERP GTK clients.
+ \ ``8069`` \ or \ ``8070`` \ for users on other computers with OpenERP GTK clients.
 
 .. index::
    single: installation; eTiny web server
@@ -563,7 +558,7 @@ Installation of an OpenERP web server
 Just as you installed a GTK client on a Linux server, you can also install the OpenERP client-web
 server.
 You can install it from sources after installing its dependencies from packages as you did
-with the Open ERPserver,
+with the OpenERP server,
 but OpenERP has provided a simpler way to do this for the web client – using a system known as ez_setup.
 
 Before proceeding, confirm that your OpenERP installation is functioning correctly with a GTK
@@ -585,7 +580,7 @@ The OpenERP Web server connects to the OpenERP server in the same way as an Open
 using the NET-RPC protocol. Its default setup corresponds to that of the OpenERP server
 you have just installed, so should connect directly at startup.
 
-#.	At the same console as you ha've just been using, go to the OpenERP web directory by typing
+#.	At the same console as you have just been using, go to the OpenERP web directory by typing
 	:command:`cd openerp-web-6.X`.
 
 #. At a terminal window type :command:`start-openerp-web` to start the OpenERP Web server.
@@ -593,7 +588,7 @@ you have just installed, so should connect directly at startup.
 .. _fig-webwel:
 
 .. figure:: images/web_welcome.png
-   :scale: 75
+   :scale: 70
    :align: center
 
    *OpenERP web client at startup*
@@ -623,15 +618,14 @@ the following points provide some indicators about how you can set up your insta
 	(it is commonly installed automatically with PostgreSQL on a windowing system, but can also be
 	found at \ ``http://www.pgadmin.org/`` \ ).
 
+.. To check pts 4 and 7
+
 #.	The PostgreSQL database starts automatically and listens locally on port 5432 as standard: check
 	this by entering \ ``sudo netstat -anpt``\  at a terminal to see if port 5432 is visible there.
 
 #.	The database system has a default role of \ ``postgres``\   accessible by running under the Linux
 	postgres user: check this by entering \ ``sudo su postgres -c psql``\  at a terminal to see the psql
 	startup message – then type \ ``\q``\  to quit the program.
-
-#.	Start the Open ERP server from the postgres user (which enables it to access the PostgreSQL
-	database) by typing \ ``sudo su postgres -c tinyerp-server.``\
 
 #.	If you try to start the OpenERP server from a terminal but get the message ``socket.error: (98,
 	'Address already in use')`` then you might be trying to start OpenERP while an instance of
