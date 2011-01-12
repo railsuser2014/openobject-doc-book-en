@@ -457,7 +457,7 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 
 #. Select all of OpenERP's dependences, an up-to-date list of which should be
    found in the installation documents on OpenERP's website,
-   then click :guilabel:`Update Now` to install them.
+   then click :guilabel:`Apply` to install them.
 
 .. index::
    single: Python
@@ -475,14 +475,14 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 Once all these dependencies and the database are installed, install the server itself using the
 instructions on the website.
 
-Open a terminal window to start the server with the command \ ``sudo -i -u postgres 
-openerp-server``\  , which should result in a series of log messages as the server starts up. If the server
+Open a terminal window to start the server with the command :command:`openerp-server`, which
+should result in a series of log messages as the server starts up. If the server
 is correctly installed, the message :guilabel:`[...] waiting for connections...` should show within 30
 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
 .. figure:: images/terps_startup_log.png
    :align: center
-   :scale: 90
+   :scale: 75
    
    *OpenERP startup log in the console*
 
