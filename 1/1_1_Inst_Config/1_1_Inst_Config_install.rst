@@ -316,49 +316,6 @@ Replace the following two lines (we don’t force to use a specific database and
 
     db_password = openerp
 
-.. to check
-
-.. Troubles with Python releases: Python 2.6 is not yet supported by OpenERP 5.0, but it is the default Python release
-.. on Ubuntu 9.0.4. We need to launch OpenERP 5.0 with Python 2.5 or earlier. There’s also a problem with python-xml
-.. package in Ubuntu so we will reinstall it.
-
-Python 2.5 setting up::
-
-    $ sudo apt-get install python2.5 python2.5-dev python-profiler
-
-Reinstall python-xml::
-
-    $ wget http://freefr.dl.sourceforge.net/sourceforge/pyxml/PyXML-0.8.4.tar.gz
-
-    $ tar xvzf PyXML-0.8.4.tar.gz
-
-    $ cd PyXML-0.8.4/
-
-    $ sudo python2.5 setup.py install
-
-Make the following symbolic link::
-
-    $ sudo ln -s /usr/lib/python2.6/dist-packages/oldxml/_xmlplus/utils/boolean.so /usr/lib/python2.5/site-packages/oldxml/_xmlplus/utils/
-
-Force openerp-server to be launched with Python2.5::
-
-
-    $ cd /usr/bin/
-
-    $ sudo cp openerp-server openerp-server.ORIG
-
-    $ sudo vi openerp-server
-
-Replace the following line::
-
-    exec /usr/bin/python ./openerp-server.py $@
-
-with
-
-::
-
-    exec /usr/bin/python2.5 ./openerp-server.py $@
-
 We can now restart openerp-server::
 
     $ sudo /etc/init.d/openerp-server restart
@@ -369,7 +326,7 @@ Check out the logs::
 
     $ sudo cat /var/log/openerp.log
 
-    [2009-06-14 21:06:39,314] INFO:server:version – 5.0.0
+    [2009-06-14 21:06:39,314] INFO:server:version – 6.0.0
 
     [2009-06-14 21:06:39,314] INFO:server:addons_path – /usr/lib/openerp-server/addons
 
@@ -393,25 +350,24 @@ OpenERP is now up and running, connected to Postgres database on port 5432 and l
 
     $ ps uaxww | grep -i openerp
 
-    root   2276  0.0  2.3 185576 23708 ?        Sl   13:09   0:00 /usr/bin/python2.5 ./openerp-server.py –config=/etc/openerp-server.conf
+    openerp      5686  0.0  1.2  84688 26584 pts/7    Sl+  12:36   0:03 /usr/bin/python ./openerp-server.py
 
 ::
 
     $ sudo lsof -i :8069
 
-    COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
+    COMMAND  PID USER    FD   TYPE DEVICE SIZE/OFF NODE NAME
+    
+    python  5686 openerp 3u  IPv4 116555      0t0  TCP *:8069 (LISTEN)
 
-    python2.5 2276 openerp 3u IPv4 6515 TCP localhost:8069 (LISTEN)
 
 ::
 
     $ sudo lsof -i :8070
 
-    COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
-
-    python2.5 2276 openerp 5u IPv4 6520 TCP *:8070 (LISTEN)
+    COMMAND  PID USER    FD   TYPE DEVICE SIZE/OFF NODE NAME
     
-  
+    python  5686 openerp 5u  IPv4 116563      0t0  TCP *:8070 (LISTEN)
 
 Start the OpenERP GTK client by clicking its icon in the :menuselection:`Applications --> Internet
 --> OpenERP Client`  menu,
@@ -579,11 +535,7 @@ To install client-web follow the up-to-date instructions in the installation doc
 The OpenERP Web server connects to the OpenERP server in the same way as an OpenERP client
 using the NET-RPC protocol. Its default setup corresponds to that of the OpenERP server
 you have just installed, so should connect directly at startup.
-
-#.	At the same console as you have just been using, go to the OpenERP web directory by typing
-	:command:`cd openerp-web-6.X`.
-
-#. At a terminal window type :command:`start-openerp-web` to start the OpenERP Web server.
+At a terminal window type :command:`openerp-web` to start the OpenERP Web server.
 
 .. _fig-webwel:
 
