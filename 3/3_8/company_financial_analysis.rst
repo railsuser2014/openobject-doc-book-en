@@ -66,10 +66,10 @@ can also calculate a time series to follow the change of a given indicator throu
 the company.
 
 .. index::
-   single: module; account_report_history
+   single: module; account_report
 
 To do a temporal analysis of your indicators, you must install the module
-:mod:`account_report_history` from the set of modules in addons-extra.
+:mod:`account_report` from the set of modules in addons-extra.
 
 Once this module is installed, you can click on a financial indicator to get a graph of its
 evolution in time.
