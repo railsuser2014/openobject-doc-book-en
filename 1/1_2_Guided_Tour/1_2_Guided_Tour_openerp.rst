@@ -72,8 +72,8 @@ Basic Concepts
 Partners & Contacts
 -------------------
 
-To familiarize yourself with Open ERP's interface, you'll start work with information about
-partners. Clicking :menuselection:`Partners --> Partners` brings up a list of partners that were
+To familiarize yourself with OpenERP's interface, you will start work with information about
+partners. Clicking :menuselection:`Sales --> Address Book --> Customers` brings up a list of partners that were
 automatically loaded when you created the database with :guilabel:`Load Demonstration Data` checked.
 
 .. index::
@@ -82,11 +82,10 @@ automatically loaded when you created the database with :guilabel:`Load Demonstr
 Search for a partner
 ^^^^^^^^^^^^^^^^^^^^
 
-Above the partner list you'll see a search form that enables you to quickly filter the partners. Two
-tabs are available for searching – :guilabel:`Basic Search` and :guilabel:`Advanced Search`. The
-latter simply shows more fields to narrow your selection.
+Above the partner list you will see a search form that enables you to quickly filter the partners.
 
-If you've applied no filter, the list shows every partner in the system. For space reasons this list
+The \ ``Customers`` \ filter is enabled by default showing partners who are customers.
+If you have applied no filter, the list shows every partner in the system. For space reasons this list
 shows only the first few partners. If you want to display other records you can search for them or
 navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
@@ -101,23 +100,18 @@ navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous
 	By default the list in the GTK client shows only the first 80 records, to avoid overloading the
 	network and the server.
 
-	But you can change that limit by clicking the + icon to the left of the search criteria,
-	and you can change the offset so that it starts further down the whole list than the first entry.
+	But you can change that limit by clicking the selection widget (showing 80 by default) to the
+	right of the search criteria.
 
-	Similarly the list in the web client shows only the first 20, 40, 60, 80 or 100 records.
+	Similarly the list in the web client shows only the first 20, 50, 100, 500 or unlimited records.
 
-	The actual number can be switched by clicking on the number and selecting one of the other limits,
-	but you can't select any other limit (so, unlike the GTK client you can't select hundreds or
-	thousands).
+	The actual number can be switched by clicking on the link between the PREVIOUS and NEXT buttons
+	and selecting one of the other limits.
 
 If you click on the name of a partner the form view corresponding to that partner opens in Read-Only
 mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode.
 Once you have a form you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
 Edit mode and :guilabel:`Edit` when in Read-Only mode.
-
-When you're in Read-Only mode you can navigate through the whole list you selected, as though you
-were in the List view. In Read-Only mode you can also click :guilabel:`Search` to see the form in
-List view again.
 
 .. index::
    single: partner; view form
@@ -129,26 +123,28 @@ The partner form contains several tabs, all referring to the current record:
 
 *  :guilabel:`General`,
 
-*  :guilabel:`Suppliers & Customers`,
+*  :guilabel:`Sales & Purchases`,
+
+*  :guilabel:`Accounting`,
 
 *  :guilabel:`History`,
 
 *  :guilabel:`Notes`.
 
-The fields in a tab aren't all of the same type – some (such as :guilabel:`Name`) contain free
+The fields in a tab are not all of the same type – some (such as :guilabel:`Name`) contain free
 text, some (such as the :guilabel:`Language`) enable you to select a value from a list of options,
 others give you a view of another object (such as :guilabel:`Partner Contacts` – because a partner
-can have several contacts) or a list of link to another object (such as :guilabel:`Categories`).
-There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Suppliers & Customers` tab),
-numeric fields (such as :guilabel:`Credit Limit`) and date fields (such as :guilabel:`Date`).
+can have several contacts) or a list of link to another object (such as :guilabel:`Partner Categories`).
+There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Sales & Purchases` tab),
+numeric fields (such as :guilabel:`Credit Limit` in the :guilabel:`Accounting` tab) and date fields (such as :guilabel:`Date`).
 
 The :guilabel:`History` tab gives a quick overview of things that have happened to the partner – an
-overview of useful information such as orders, open invoices and support requests. Events are
-generated automatically by Open ERP from changes in other documents that refer to this partner.
+overview of useful information such as Leads and Opportunities, Meetings, Phone Calls, Emails and Tasks.
+Events are generated automatically by OpenERP from changes in other documents that refer to this partner.
 
-It's possible to add events manually, such as a note recording a phone call. To add a new event
-click :guilabel:`Create new record.` to the right of the :guilabel:`Partner Events`  field. That
-opens a new :guilabel:`Partner Events` dialog box enabling an event to be created and added to the
+It is possible to add events manually, such as a note recording a phone call. To add a new event
+click :guilabel:`New` in the :guilabel:`Phone Calls` section. That
+opens a new :guilabel:`Phone Call` pop-up form enabling a phone-call event to be created and added to the
 current partner.
 
 Actions possible on a partner
@@ -162,45 +158,46 @@ selected objects) using certain buttons in the :guilabel:`Reports` section of th
 
 *  :guilabel:`Labels` : print address labels for the selected partners,
 
+*  :guilabel:`Overdue Payments` : print a mail notifying the selected partners about overdue payments,
+
 Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the
 toolbar:
 
-*  :guilabel:`Company Architecture` : opens a window showing the partners and their children in a
-   hierarchical structure.
-
-*  :guilabel:`Send SMS` : enables you to send an SMS to selected partners. This system uses the bulk
+*  :guilabel:`SMS Send` : enables you to send an SMS to selected partners. This system uses the bulk
    SMS facilities of the Clickatell® company http://clickatell.com.
 
 *  :guilabel:`Mass Mailing` : enables you to send an email to a selection of partners.
+
+*  :guilabel:`Create Opportunity` : opens a window to create an opportunity for the partner,
 
 .. index::
    single: buttons; reports, actions, links
 
 .. tip:: Reports, Actions and Links in the GTK client
 
-	When you're viewing a form in the GTK client, the buttons to the right of the form are shortcuts to
-	the same Reports, Actions and Links as described in the text. When you're viewing a list (such as
-	the partner list) those buttons aren't available to you. Instead, you can reach Reports and Actions
+	When you are viewing a form in the GTK client, the buttons to the right of the form are shortcuts to
+	the same Reports, Actions and Links as described in the text. When you are viewing a list (such as
+	the partner list) those buttons are not available to you. Instead, you can reach Reports and Actions
 	through two of the buttons in the toolbar at the top of the list – Print and Action.
 
-Partners are used throughout the Open ERP system in other documents. For example, the menu
-:menuselection:`Sales Management --> Sales Orders --> All Sales Orders` brings up all the Sales
-Orders in list view. Click the name of a partner rather than the order number on one of those lines
-and you'll get the Partner form rather than the Sales Order form.
+Partners are used throughout the OpenERP system in other documents. For example, the menu
+:menuselection:`Sales --> Sales Orders` brings up all the Sales
+Orders in list view. Open an order in form view and click the name of a partner while the
+form is still read-only. You will get the Partner form.
 
 .. tip:: Right clicks and shortcuts
 
-	In the GTK client you don't get hyperlinks to other document types. Instead, you can right-click in
+	In the GTK client you do not get hyperlinks to other document types. Instead, you can right-click in
 	a list view to show the linked fields (that is fields having a link to other forms) on that line.
 
-	In the web client you'll see hyperlink shortcuts on several of the fields on a form that's in Read-
+	In the web client you will see hyperlink shortcuts on several of the fields on a form that is in Read-
 	Only mode, so that you can move onto the form for those entries. When the web form is in Edit mode,
-	you can instead hold down the control button on the keyboard and right-click with the mouse button
+	you can instead right-click with the mouse button
 	in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK
 	client.
 
 	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales
-	Management --> Sales Order --> All Sales Orders` and seeing what you can reach from the
+	--> Sales Orders` and seeing what you can reach from the
 	:guilabel:`Customer` field on that sales order form using either the web client with the form in
 	both read-only and in edit mode, or with the GTK client.
 
@@ -210,14 +207,14 @@ and you'll get the Partner form rather than the Sales Order form.
 
    *Links for a partner appear in an order form*
 
-Before moving on to the next module, take a quick look into the :menuselection:`Partners -->
-Configuration`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
+Before moving on to the next module, take a quick look into the :menuselection:`Sales -->
+Configuration --> Address Book`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
 They contain some of the demonstration data that you installed when you created the database.
 
 Products
 --------
 
-In Open ERP, product means a raw material, a stockable product, a consumable or a service. You can
+In OpenERP, product means a raw material, a stockable product, a consumable or a service. You can
 work with whole products or with templates that separate the definition of products and variants.
 
 For example if you sell t-shirts in different sizes and colors:
@@ -251,40 +248,40 @@ of its available variants briefly rather than every item as an entire product.
 			.. index::
 			   single: module; product_variant_multi
 
-			This separation of variant types requires the optional module :mod:`product_variant_multi`. Using it
+			This separation of variant types requires the optional module :mod:`product_variant_multi`.
+			Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
-			take the example above it's easier to manage a template with 15 variants in four different types
-			than 160 completely different products. This module is available in the ``addons-extra`` list (it had
-			not been updated, at the time of writing, to work in release 5.0 of Open ERP).
+			take the example above it is easier to manage a template with 15 variants in four different types
+			than 160 completely different products. This module is available in ``extra-addons``.
 
-The :menuselection:`Products` menu gives you access to the definition of products and their
-constituent templates and variants, and to price lists.
+The :menuselection:`Sales --> Products` menu gives you access to the definition of products and their
+constituent templates and variants.
 
 .. index::
    single: Product; Consumable
 
 .. tip::  Consumables
 
-	In Open ERP a consumable is a physical product which is treated like a stockable product except
-	that stock management isn't taken into account by the system. You could buy it, deliver it or
-	produce it but Open ERP will always assume that there's enough of it in stock. It never triggers a
+	In OpenERP a consumable is a physical product which is treated like a stockable product except
+	that stock management is not taken into account by the system. You could buy it, deliver it or
+	produce it but OpenERP will always assume that there is enough of it in stock. It never triggers a
 	procurement exception.
 
 Open a product form to see the information that describes it. Several different types of product can
 be found in the demonstration data, giving quite a good overview of the possible options.
 
-Price lists (:menuselection:`Products --> Pricelists`) determine the purchase and selling prices and
+Price lists (:menuselection:`Sales --> Configuration --> Pricelists`) determine the purchase and selling prices and
 adjustments derived from the use of different currencies. The :menuselection:`Default Purchase
-Pricelist` uses the product's :guilabel:`Cost`  field to base a Purchase price on. The
-:menuselection:`Default Sale Pricelist` uses the product's :guilabel:`List Price` field to base a
+Pricelist` uses the product's :guilabel:`Cost Price` field to base a Purchase price on. The
+:menuselection:`Public Pricelist` uses the product's :guilabel:`Sale Price` field to base a
 Sales price on when issuing a quote.
 
 Price lists are extremely flexible and enable you to put a whole price management policy in place.
-They're composed of simple rules that enable you to build up a rule set for most complex situations:
+They are composed of simple rules that enable you to build up a rule set for most complex situations:
 multiple discounts, selling prices based on purchase prices, price reductions, promotions on whole
 product ranges and so on.
 
-You can find many optional modules to extend product functionality through the Open ERP website,
+You can find many optional modules to extend product functionality,
 such as:
 
 .. index::
@@ -313,6 +310,7 @@ such as:
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
+Except the :mod:`membership` module, the rest above are found in ``extra-addons``.
 
 .. index::
    single: CRM
