@@ -535,7 +535,11 @@ To install client-web follow the up-to-date instructions in the installation doc
 The OpenERP Web server connects to the OpenERP server in the same way as an OpenERP client
 using the NET-RPC protocol. Its default setup corresponds to that of the OpenERP server
 you have just installed, so should connect directly at startup.
-At a terminal window type :command:`openerp-web` to start the OpenERP Web server.
+
+#.	At the same console as you've just been using, go to the OpenERP web directory by typing
+	:command:`cd openerp-web-6.X`.
+
+#. 	At a terminal window type :command:`openerp-web` to start the OpenERP Web server.
 
 .. _fig-webwel:
 
