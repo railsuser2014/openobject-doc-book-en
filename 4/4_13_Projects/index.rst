@@ -25,6 +25,7 @@ no particular chart of accounts configured.
 .. toctree::
 
     4_13_Projects_management
+    4_13_Projects_long_term
     4_13_Projects_planning
     4_13_Projects_productivity
 
