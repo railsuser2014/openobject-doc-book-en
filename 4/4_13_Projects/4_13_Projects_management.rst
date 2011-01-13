@@ -169,7 +169,7 @@ If you want to connect your Sales Order with Project tasks you should create suc
 products as \ ``Consultant``\  , and \ ``Senior Developer``\  . These products should be configured
 with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procurement Method` of \ ``Make to Order``\  ,
 and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you have set this up,
-Open ERP automatically creates a task in project management when the order is approved.
+OpenERP automatically creates a task in project management when the order is approved.
 
 You can also change some of the order parameters, which affects the invoice:
 

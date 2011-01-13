@@ -26,7 +26,7 @@ Many reports are configured in advance in Open ERP. You can find them in the :m
 under each main menu entry.
 
 Modelling a new report
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. index::
    single: module; base_report_creator
@@ -62,7 +62,7 @@ report.
    :scale: 75
    :align: center
 
-   *Fields selected for the analysis of sales by customer and by product*
+   *Fields selected for the project analysis*
 
 In the third tab :guilabel:`Fields to Display` you must indicate which of the fields in the list you want to be shown in your report. Complete the screen along the lines of the figure below.
 
@@ -99,17 +99,17 @@ top of this tab. For the moment, do not add a filter.
 You can now :guilabel:`Save` the report you defined. Click on the :guilabel:`Open Report` button to
 the right of the form on the :guilabel:`General Configuration` tab to get the requested analysis.
 
-.. figure::  images/report_sale_tree.png
+.. figure::  images/report_project_tree.png
    :scale: 75
    :align: center
 
-   *Analyzing sales by partner and by product in list view*
+   *Analyzing task by project in tree view*
 
-.. figure::  images/report_sale_graphe.png
+.. figure::  images/report_project_graph.png
    :scale: 75
    :align: center
 
-   *Analyzing sales by partner and by product in graph view*
+   *Analyzing task by project in graph view*
 
 .. index::
    single: configuring; dashboard
@@ -344,7 +344,7 @@ This template can be customized by changing the company information through the 
 and edit the fields Report Header, Report Footer 1, Report Footer 2 in the :guilabel:`General Information` tab.
 If your company has a logo that you would want to appear in all reports, you may add it using the :guilabel:`Logo` field.
 You can also change the appearance of the header/footer by editing the XML code in the tabs :guilabel:`Header/Footer`
-and :guilabel:`Internal Header/Footer`. 
+and :guilabel:`Internal Header/Footer`.
 
 For any kind of troubleshooting problems kindly mail us at cde@tinyerp.com.
 
