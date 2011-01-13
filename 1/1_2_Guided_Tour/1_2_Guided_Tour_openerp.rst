@@ -471,11 +471,11 @@ Manage your Business
 Driving your Sales
 ------------------
 
-The :menuselection:`Sales Management` menu gives you roughly the same functionality as the
-:menuselection:`Purchase Management` menu – the ability to create new orders and to review the
+The :menuselection:`Sales` menu gives you roughly the same functionality as the
+:menuselection:`Purchases` menu – the ability to create new orders and to review the
 existing orders in their various states – but there are important differences in the workflows.
 
-Confirmation of an order triggers delivery of the goods, and invoicing timing is defined by a
+Confirmation of an order triggers the delivery of goods, and invoicing timing is defined by a
 setting in each individual order.
 
 Delivery charges can be managed using a grid of tariffs for different carriers.
@@ -483,15 +483,15 @@ Delivery charges can be managed using a grid of tariffs for different carriers.
 Driving your Purchases
 ----------------------
 
-Purchase management enables you to track your suppliers' price quotations and convert them into
-Purchase Orders as you require. Open ERP has several methods of monitoring invoices and tracking
+:menuselection:`Purchases` enables you to track your suppliers' price quotations and convert them into
+Purchase Orders as you require. OpenERP has several methods of monitoring invoices and tracking
 the receipt of ordered goods.
 
-You can handle partial deliveries in Open ERP, so you can keep track of items that are still to be
+You can handle partial deliveries in OpenERP, so you can keep track of items that are still to be
 delivered on your orders, and you can issue reminders automatically.
 
-Open ERP's replenishment management rules enable the system to generate draft purchase orders
-automatically, or you can configure it to run a lean process driven entirely by current production
+OpenERP's replenishment management rules enable the system to generate draft purchase orders
+automatically, or you can configure it to run a lean process, driven entirely by current production
 needs.
 
 Organise your Warehouse
@@ -574,13 +574,18 @@ Share your Knowledge
 Efficient Document Management
 -----------------------------
 
-Open ERP integrates a complete document management system that not only
-carried out the functions of a standard DMS, but also integrates with all
-of its system-generated documents such as Invoices and Quotations. What's more
+OpenERP integrates a complete document management system that not only
+carries out the functions of a standard DMS, but also integrates with all
+of its system-generated documents such as Invoices and Quotations. Moreover, it
 it keeps all of this synchronized.
 
 Be Mobile
 ---------
+
+OpenERP provides a support FTP Interface with document management system. Through this you would not only be able to access documents through OpenERP but you would also be able to connect with them through the file system using the FTP client.
+FTP is just a way of getting access to files without needing to use an OpenERP client, thus also letting you access files from anywhere.
+
+This system is also well-integrated with e-mail clients such as Thunderbird and Outlook.
 
 .. index::
    single: Dashboards
@@ -680,8 +685,6 @@ A brief description is available for each module, but the most thorough way of u
 functionality is to install one and try it. So, pausing only to prepare another test database to try
 it out on, just download and install the modules that appear interesting.
 
-Tips & Tricks
-=============
 
 .. Copyright © Open Object Press. All rights reserved.
 
