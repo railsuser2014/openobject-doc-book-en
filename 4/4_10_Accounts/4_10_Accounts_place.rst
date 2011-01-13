@@ -147,6 +147,27 @@ The type of journal enables the software to automatically select the analytic jo
 nature of the operation. For example if you enter an invoice for a customer, Open ERP will
 automatically search for an analytic journal of type \ ``Sales``\  .
 
+Working with Analytic Levels
+----------------------------
+
+You can work with analytic levels using OpenERP by installing :mod:`account_analytic_default` module.
+
+It allows you to automatically select analytic accounts based on some criteria:
+
+* Product
+* Partner
+* User
+* Company
+* Date
+
+You can configure these criteria using the menu :menuselection:`Accounting -->
+Configuration --> Analytic Accounting --> Analytic Defaults` and click on `New` button.
+
+.. figure::  images/account_analytic_default.png
+   :scale: 50
+   :align: center
+
+   *Specify criteria to select analytic account automatically*
 
 .. Copyright © Open Object Press. All rights reserved.
 
