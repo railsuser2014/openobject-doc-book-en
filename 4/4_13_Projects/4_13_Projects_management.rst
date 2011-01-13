@@ -173,11 +173,33 @@ Open ERP automatically creates a task in project management when the order is a
 
 You can also change some of the order parameters, which affects the invoice:
 
-*  :guilabel:`Shipping Policy` : \ ``Payment before delivery``\ or \ ``Invoice on Order After
-   Delivery``\ (when the task is closed),
+*  :guilabel:`Shipping Policy` : \ ``Invoice on Order After Delivery``\ (when the task is closed),
 
-*  :guilabel:`Invoice On` : \ ``Ordered Quantities``\   or \ ``Shipped Quantities``\   (actual hours in
+*  :guilabel:`Invoice On` : \ ``Shipped Quantities``\   (actual hours in
    the task).
+
+Create the `Sale Order` using the product :guilabel:`Consultant` with above configuration and confirm this sale order.
+You can find the task created from this sale order using the menu :menuselection:`Project --> Project --> Tasks`.
+Once you find that task, click on the :guilabel:`Start Task` button in order to start it.  You have to manually assign the
+project for this task. When you complete the task enter the information regarding
+this in the :guilabel:`Task Work` field. Then click on :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
+As for example the new task `SO008:Create SRS` generated from sale order `SO0008` as shown in following figure.
+
+.. figure::  images/project_task_from_sale_order.png
+   :scale: 50
+   :align: center
+
+   *Task created from sale order*
+
+After finishing this task go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work` in order to
+find the list of uninvoiced task works. You need to configure carefully the analytic account related to this project.
+Click on the action :guilabel:`Invoice analytic lines` when you want to create invoice for this task work.
+
+.. figure::  images/project_invoice_from_task_work.png
+   :scale: 50
+   :align: center
+
+   *Form to create invoice from tasks work*
 
 Priority Management
 -------------------
