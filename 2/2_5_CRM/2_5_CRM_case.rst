@@ -297,40 +297,41 @@ Evolution.
 Installation and Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To use the e-mail gateway you must install the Fetchmail module on your server. You can use a variety of methods to
-configure it. Described here is a simple and generic approach using the Fetchmail module. You will need a system administrator to carry out this work.
+To use the e-mail gateway you must install the Fetchmail module. You might need a system administrator to carry out this work.
 
-To start with you have to create an e-mail account (POP3 or IMAP) for each object that you will want
-to connect an e-mail to. If you have the support e-mail address \ ``support@pop.mycompany.com``\
-you would use the following entries:
+Install the Fetchmail module from the Configuration Wizard (CRM Configuration Wizard, Synchronization, Fetch Emails), or install it from the modules list.
 
-*  :guilabel:`POP server` : \ ``pop.mycompany.com``\  ,
+*Step 1*
 
-*  :guilabel:`User` : \ ``support``\  ,
+Go to Tools > Configuration > Email Template > Email Accounts to define the e-mail smtp settings.
 
-*  :guilabel:`Password` : \ ``<mypass>``\  .
+In the ``Description`` field, type the visible name you would like to use for the account.
 
-You will also need to choose an OpenERP user that the gateway will use to access your database, such
-as:
+In ``Server``, type the mail server, i.e. smtp.googlemail.com.
 
-*  :guilabel:`User Id` : \ ``3``\  ,
+Type the SMTP port (e.g. 587), configure the other settings according to the specifications of your server.
 
-*  :guilabel:`Password` : \ ``support``\  .
+Add the User Information, such as e-mail address for which the mails will enter OpenERP, i.e. support@mycompany.com, the user name and the password. Configure the other settings to your needs.
 
-.. tip:: Identifying a resource
+Save and click the ``Test Outgoing Connection`` button to check whether the settings are correct.
 
-	Each resource on the OpenERP system has a unique identifier number. This corresponds to an
-	identifier in the underlying PostgreSQL database table, in the ID column for that resource.
+When everything is correctly configured, Approve the account. OpenERP will automatically create a Scheduler for the mails. You can also send/receive mails manually by clicking the ``Send/Receive`` button.
 
-	With the web client you can usually find this number by going to the form view of a resource and
-	clicking the :guilabel:`View Log` button to the top right of the form. The ID is shown at the top
-	of the :guilabel:`Information` dialog box. (This did not work in some of the earlier versions prior to 4.2.3.3.)
+*Step 2*
 
-	You can also use the GTK client for this. Viewing any resource, such as a User, you can directly
-	see its ID at the bottom left of the form.
+Go to Sales > Configuration > Emails > Email Servers to define the e-mail server settings.
 
-Then specify the case section in OpenERP that you will use when this user is connected by e-mail, for
-example, the :guilabel:`Helpdesk and Support` section.
+Assign a ``Name`` and select the ``Server Type``, i.e. IMAP Server.
+
+Click ``Add Attachments`` if you want to include attachments for the mails received / sent.
+
+Enter the Server Information, check SSL if necessary, i.e. imap.googlemail.com and the Login Information.
+
+You can also choose to send an automatic reply on receipt of the mail. You can configure the mail here from the ``Email Server Action`` field.
+
+Assign the ``Model`` to use when a new e-mail arrives, i.e. choose Helpdesk (crm.helpdesk) if you want every new e-mail that arrives to be created as a helpdesk case. 
+
+Click Confirm to confirm the account settings.
 
 .. index:: fetchmail
 
