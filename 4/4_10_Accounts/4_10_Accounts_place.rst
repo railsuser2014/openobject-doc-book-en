@@ -15,8 +15,8 @@ Setting up the Chart of Accounts
 --------------------------------
 
 Start by choosing the most suitable analytic representation for your company before entering it into
-Open ERP. To create the different analytic accounts, use the menu :menuselection:`Accounting
---> Configuration --> Analytic Accounting --> Analytic Accounts` and click on `New` button.
+OpenERP. To create the different analytic accounts, use the menu :menuselection:`Accounting
+--> Configuration --> Analytic Accounting --> Analytic Accounts` and click the `New` button.
 
 .. figure::  images/account_analytic_form.png
    :scale: 50
@@ -60,9 +60,9 @@ which you would need so that you can invoice the partner:
 
 .. tip:: Invoicing
 
-	You have several methods available to you in Open ERP for automated invoicing:
+	You have several methods available to you in OpenERP for automated invoicing:
 
-	* Service companies usually use invoicing from purchase orders, analytic accounts or, more rarely,
+	* Service companies usually use invoicing from purchase orders, analytic accounts or 
 	  project management tasks.
 
 	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
@@ -117,7 +117,7 @@ These enable you to categorize the different accounting entries by their type:
 .. note::  Minimal journals
 
 	At a minimum you have to create one analytic journal for Sales and one for Purchases.
-	If you do not create these two, Open ERP will not validate invoices linked to an analytic account
+	If you do not create these two, OpenERP will not validate invoices linked to an analytic account
 	because it would not be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
@@ -144,7 +144,7 @@ types available are:
 * \ ``General``\  , for all other entries.
 
 The type of journal enables the software to automatically select the analytic journal based on the
-nature of the operation. For example if you enter an invoice for a customer, Open ERP will
+nature of the operation. For example if you enter an invoice for a customer, OpenERP will
 automatically search for an analytic journal of type \ ``Sales``\  .
 
 Working with Analytic Levels
@@ -161,7 +161,7 @@ It allows you to automatically select analytic accounts based on some criteria:
 * Date
 
 You can configure these criteria using the menu :menuselection:`Accounting -->
-Configuration --> Analytic Accounting --> Analytic Defaults` and click on `New` button.
+Configuration --> Analytic Accounting --> Analytic Defaults` and click the `New` button.
 
 .. figure::  images/account_analytic_default.png
    :scale: 50
