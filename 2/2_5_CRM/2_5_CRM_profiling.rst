@@ -11,12 +11,12 @@ Profiling
 Using Call Center Features
 --------------------------
 
-You can manually encode calls that happen or you can pass them into Open ERP. But for mass
-campaigns, you can import a list of phone calls to make. To do this, click on the import link at the
+You can manually encode calls that happen or you can pass them into OpenERP. But for mass
+campaigns, you can import a list of phone calls to make. To do this, click the import link at the
 bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
 Import data...` at the top.
 
-Phone calls that have occurred in the open state. The different operators can be assigned calls and
+The different operators can be assigned calls and
 handle them one by one using the menu :menuselection:`Sales --> Phone Calls --> Outbound`.
 
 The operator can open the calls one by one. For each call, after having contacted the customer, the
@@ -49,22 +49,22 @@ request.
 	Responses to these questions enable each prospect to be qualified automatically which leads to
 	a specific service being offered based on their responses.
 
-As an illustration, take the case of the Tiny company which offers a service based on the Open ERP
+As an illustration, take the case of the OpenERP company which offers a service based on the OpenERP
 software. The company goes to several exhibitions and encounters dozens of prospects over a few
 days. It is important to handle each request quickly and efficiently.
 
-The products offered by Tiny at these exhibitions are:
+The products offered by OpenERP at these exhibitions are:
 
-* training on Open ERP – for independent people or small companies,
+* training on OpenERP – for independent people or small companies,
 
-* partner contract – for IT companies that intend to offer an Open ERP service,
+* partner contract – for IT companies that intend to offer an OpenERP service,
 
-* Open ERP as SaaS – for small companies,
+* OpenERP as SaaS – for small companies,
 
 * a meeting in conjunction with a partner to provide a demonstration aimed at providing a software
   integration – for companies that are slightly larger.
 
-The Tiny company has therefore put a decision tree in place based on the answers to several
+The OpenERP company has therefore put a decision tree in place based on the answers to several
 questions posed to prospects. These are given in the following figure :ref:`fig-crmprof`:
 
 .. _fig-crmprof:
@@ -73,13 +73,13 @@ questions posed to prospects. These are given in the following figure :ref:`fig-
    :scale: 50
    :align: center
 
-   *Example of profiling customer prospects by the Tiny company*
+   *Example of profiling customer prospects by the OpenERP company*
 
 The sales person starts by asking the questions mentioned above and then with a couple of minutes of
 work can decide what to propose to the prospective customer.
 
 At the end of the exhibition prospects' details and their responses to the questionnaire are entered
-into Open ERP. The profiling system automatically classifies the prospects into appropriate partner
+into OpenERP. The profiling system automatically classifies the prospects into appropriate partner
 categories.
 
 This enables your sales people to follow prospects up efficiently and adapt their approach based on
@@ -93,10 +93,12 @@ Using profiles effectively
 .. index::
    single: module; crm_profiling
 
-To use the profiling system you will need to install Open ERP's :mod:`crm_profiling` module. It is
-part of the core Open ERP system in version 6.0.0 so you do not have to download it separately from
+To use the profiling system you will need to install OpenERP's :mod:`crm_profiling` module. It is
+part of the core OpenERP system in version 6.0.0 so you do not have to download it separately from
 ``addons-extra``.
 
+You can also use the Reconfiguration Wizard and add Profiling.
+ 
 Once the module is installed you can create a list of questions and the possible responses through
 the menu :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Questions`.
 
@@ -125,7 +127,7 @@ profile defined like this:
 * Industry Sector? \ ``Services``\  .
 
 When entering the details of a specific prospect, the prospect's answers to various questions can be
-entered in the `Profiling` tab of the partner form. Open ERP will automatically assign prospects to
+entered in the `Profiling` tab of the partner form. OpenERP will automatically assign prospects to
 the appropriate partner category based on these answers.
 
 Customers corresponding to a specific search profile can be treated as a priority. The sales person
