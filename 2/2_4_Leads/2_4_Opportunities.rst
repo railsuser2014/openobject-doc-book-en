@@ -10,9 +10,7 @@ Leads are generally handled en masse, with the automation of certain responses o
 Opportunities, in contrast, are usually tracked one by one by the salespeople because that involves
 a process of negotiation.
 
-Just like leads, Open ERP provides several menus to handle sales opportunities efficiently. All
-the menus for opportunities are under the menu :menuselection:`Sales --> Sales -->
-Opportunities`.
+Just like leads, OpenERP provides several menus to handle sales opportunities efficiently. All opportunities can be find in the menu :menuselection:`Sales --> Sales --> Opportunities`.
 
 To quickly create a new opportunity, use the menu :menuselection:`Sales --> Sales --> Opportunities` and click on `New` button.
 You usually use this menu in the case where the opportunity is direct and does not come first from a
