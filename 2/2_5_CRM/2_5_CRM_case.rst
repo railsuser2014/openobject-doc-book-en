@@ -333,6 +333,9 @@ Assign the ``Model`` to use when a new e-mail arrives, i.e. choose Helpdesk (crm
 
 Click Confirm to confirm the account settings.
 
+On every e-mail check, OpenERP will create a new helpdesk case, or any other object according to the model you specified.
+You can of course create as many accounts as you want and link them to different objects.
+
 .. index:: fetchmail
 
 
