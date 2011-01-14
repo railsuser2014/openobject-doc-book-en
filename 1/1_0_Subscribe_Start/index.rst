@@ -8,11 +8,13 @@
 Subscribe & Start
 ******************
 
-Whether you want to test OpenERP or to put it into full production, you have at least two starting
+We want to make it very easy for you to test OpenERP or put it into full production. You have at least three starting
 points:
 
+* no need to install OpenERP, you can test it through http://demo.openerp.com,
+
 * evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
-  http://ondemand.openerp.com, or the equivalent service at any of OpenERP's partner companies,
+  http://www.openerp.com/online, or the equivalent service at any of OpenERP's partner companies,
 
 * install it on your own computers to test it in your company's system environment.
 
@@ -35,7 +37,7 @@ After the free trial expires, you may choose to continue using OpenERP Online, e
 like to bypass technical difficulties.
 This server is also recommended for small companies with fewer than about fifteen employees.
 It is provided in the form of a monthly subscription with a fixed price per user. You can find the
-details of current pricing and payment options at http://ondemand.openerp.com/.
+details of current pricing and payment options at http://www.openerp.com/online.
 
 For every subscription, the following hardware resources are provided:
 
