@@ -1,6 +1,6 @@
 
-Managing Contacts
-=================
+Managing your Potential Customer Contacts
+=========================================
 
 .. index::
    single: module; base_contact
@@ -21,7 +21,7 @@ complexities that may be accomplished.
 
 .. _fig-crmconw:
 
-.. figure:: images/crm_contact_with.png
+.. figure:: images/crm_contact_with_new.png
    :scale: 50
    :align: center
 
@@ -36,7 +36,7 @@ complexities that may be accomplished.
    *UML class diagram with base_contact module not installed*
 
 A concrete example may better illustrate this concept of multiple relationships between contacts and
-partners (companies). The figure :ref:`fig-crmcont` shows two companies each having several addresses (places of
+partners (companies). The figure :ref:`fig-crmcont` shows two companies having several addresses (places of
 business) and several contacts attached to these addresses.
 
 .. _fig-crmcont:

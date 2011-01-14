@@ -6,7 +6,7 @@ Boost your Sales & Deliver Great Services
 #########################################
 
  The Sales department is the engine of your company.
- Sales success drives staff motivation and boosts your company's dynamism,
+ Sales success drives staff motivation and boosts your company's dynamics,
  which in turn enables you to keep innovating and lay the foundations for future success.
 
  The key to continued sales success is effective Customer Relationship Management (most often known

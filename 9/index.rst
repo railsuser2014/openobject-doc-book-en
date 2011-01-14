@@ -1,10 +1,17 @@
-###############################
+.. index::
+   single: Google
+
+**************
 Google Modules
-###############################
+**************
 
 We have integrated some Google applications with OpenERP, which allow users to view OpenERP data on Google. Please take a look at the module descriptions.
 
 Path to get Modules: lp:~openerp-commiter/openobject-addons/trunk-extra-addons
+
+.. raw:: html
+
+    <div class="all-toctree">
 
 .. toctree::
 
@@ -12,6 +19,11 @@ Path to get Modules: lp:~openerp-commiter/openobject-addons/trunk-extra-addons
     22_Google/22_Google_calendar
     22_Google/22_Google_blogger
     22_Google/22_Google_earth
+
+.. raw:: html
+
+    </div>
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

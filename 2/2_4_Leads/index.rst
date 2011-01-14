@@ -16,7 +16,7 @@ What is in it for you?
 
 * Track, drive and optimize your sales activities! Handle your full sales workflow, from lead to invoice.
 
-* Access to all information such as accounts & contacts in one place, directly at hand when you need it, even when you are working at home!
+* Access all information such as accounts & contacts in one place, directly at hand when you need it, even when you are working at home!
 
 * Offer an excellent Customer Service by improving issues management and automating follow up.
 
@@ -43,7 +43,7 @@ Opportunity
   A sales opportunity represents a potential contract. Each opportunity has to be followed up by a salesperson spending time to make a
   quotation or cancel the opportunity.
 
-OpenERP Customer & Supplier Relationship management helps you boost the pre-sales activities of managing leads and opportunities.
+OpenERP Customer Relationship management helps you boost the pre-sales activities of managing leads and opportunities.
 Manage complex relationships between partners and contacts, be mobile, and automate your sales flow as much as possible.
 We will also develop some business cases to show you an example of how to use OpenERP in your company.
 
@@ -53,8 +53,8 @@ We will also develop some business cases to show you an example of how to use Op
 
 .. toctree::
 
-    2_4_Leads
     2_4_Contacts
+    2_4_Leads
     2_4_Opportunities
 
 .. raw:: html
