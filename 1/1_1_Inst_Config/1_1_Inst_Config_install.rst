@@ -13,6 +13,7 @@ sections.
    :header: "Method","Average Time","Level of Complexity","Notes"
    :widths: 20,15,15,30
 
+   "OpenERP Demo","No installation","Simple","Very useful for quick evaluations because no need to install anything."
    "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
    "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
    "Ubuntu Linux packages","A few minutes","Simple","Simple and quick but the Ubuntu packages are not always up to date."
@@ -145,7 +146,7 @@ you have **successfully connected** to an OpenERP server containing, as yet, no 
    :align: center
    :scale: 75
 
-   *Dialog box on connecting a GTK client to a new Open ERP server*
+   *Dialog box on connecting a GTK client to a new OpenERP server*
 
 .. index::
    single: protocol; XML-RPC

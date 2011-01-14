@@ -31,10 +31,10 @@ responsive, so more satisfying to use.
 
     There is little functional difference between the two OpenERP clients - the 
     web client and the GTK client at present. 
-    In earlier versions, the web client had fractionally greater functionality.
+    The web client offers more functionality for instance for Calendar view, Gantt view, .
     
     When you are changing the structure of your OpenERP installation (adding and
-    removing modules, perhaps changing labels) you will find the web client to be
+    removing modules, perhaps changing labels) you might find the web client to be
     irritating because of its use of **caching**. 
     
     Caching speeds it all up by keeping a copy of data somewhere between the server 

@@ -55,8 +55,10 @@ some demonstration data to test the installation.
    used in banks and other large organizations.
    OpenERP is that system, and is described in detail throughout this book.
 
-Whether you want to test OpenERP or to put it into full production, you have at least two starting
+Whether you want to test OpenERP or to put it into full production, you have at least three starting
 points:
+
+* no need to install OpenERP, you can test it through http://demo.openerp.com,
 
 * evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
   http://ondemand.openerp.com, or the equivalent service at any of OpenERP's partner companies,
