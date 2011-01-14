@@ -64,7 +64,7 @@ using the :guilabel:`CRM profile` and no particular chart of accounts configured
 
     2_5_CRM_partners
     2_5_CRM_advanced
-    2_5_CRM_case
+    2-5_CRM_case
     2_5_CRM_srm
     2_5_CRM_profiling
 
