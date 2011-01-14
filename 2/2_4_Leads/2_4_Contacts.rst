@@ -120,19 +120,7 @@ When creating the new database, OpenERP suggests that you configure it using a s
 
    *Selecting the CRM functionality to install*
 
-.. index::
-   single: module; crm_configuration
-
-.. note:: The CRM configuration module
-
-   The pre-configuration of the management of customer relations to generate prospects,
-   opportunities, and phone calls
-   is not supplied by the :mod:`crm` module itself but by the :mod:`crm_configuration` module.
-
-If you install the modules separately do not forget to install the ``crm_configuration`` module.
-The :mod:`crm` module just contains the generic case management system.
-
-Open ERP proposes a selection from pre-configured functions for CRM:
+OpenERP proposes a selection from pre-configured functions for CRM:
 
 * managing a prospects database,
 
@@ -152,7 +140,7 @@ Open ERP proposes a selection from pre-configured functions for CRM:
 
 * tracking bugs and new functional requests.
 
-You see that Open ERP's CRM module is not limited just to Customer relationships but is designed to
+You see that OpenERP's CRM module is not limited just to Customer relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
 This book will describe just customer relationships. The other CRM functions are similar to use, so
 you should not have huge problems with understanding those functions.
@@ -181,7 +169,7 @@ install.
 Organizing Prospects
 ====================
 
-If you have installed the management of prospects and opportunities, Open ERP implements the
+If you have installed the management of prospects and opportunities, OpenERP implements the
 following workflow for the qualification of prospects and future opportunities.
 
 .. figure:: images/crm_flux.png
