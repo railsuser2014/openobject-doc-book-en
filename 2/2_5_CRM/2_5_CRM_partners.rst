@@ -5,7 +5,7 @@
 Organize your Partners
 ======================
 
-In Open ERP, a partner represents all the entities that you can do business with. Some possible
+In OpenERP, a partner represents all the entities that you can do business with. Some possible
 different types of partners are:
 
 * suppliers,
@@ -63,25 +63,25 @@ partner's order history, or print a reminder letter.
 To send an SMS message to a partner or a selection of several partners, first select the partners
 then click the :guilabel:`Send SMS` Action icon.
 
-To create a company in Open ERP (that is – a new partner) you should at a minimum enter the
+To create a company in OpenERP (that is – a new partner) you should at a minimum enter the
 company's :guilabel:`Name` in the partner form.
 
-Customizing Partner Fields
---------------------------
+.. Customizing Partner Fields
+.. --------------------------
 
 .. todo: add info
 
-Creating and Updating Partners
-------------------------------
+.. Creating and Updating Partners
+.. ------------------------------
 
 .. todo: add info
 
-Performing Actions on Partners
+.. Performing Actions on Partners
 
 .. todo: add info
 
-Filtering your Partners
------------------------
+.. Filtering your Partners
+.. -----------------------
 
 .. todo: add info
 
@@ -93,7 +93,7 @@ Contacts / Addresses
 You can have several contacts for one partner. Contacts represent company employees that you are in
 contact with, along with their address details. For each address you can indicate their type (\
 ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on
-this, Open ERP can supply an address that matches the contact's function when generating documents
+this, OpenERP can supply an address that matches the contact's function when generating documents
 at various stages through an Order process.
 
 Contacts can be entered into the first (:guilabel:`General`) tab of the :guilabel:`Customer` form,
@@ -104,7 +104,7 @@ You can search for a subset of Partners and Contacts using the search view.
 
 .. note:: Independent partners or physical people
 
-	If you want to represent a physical person rather than a company, in Open ERP, that person's name
+	If you want to represent a physical person rather than a company, in OpenERP, that person's name
 	can be typed directly into the :guilabel:`Name` field on the Partner form. In this case do not put
 	in any Contact Name.
 
@@ -115,7 +115,7 @@ You can search for a subset of Partners and Contacts using the search view.
 Partner Categories
 ------------------
 
-Open ERP uses hierarchical categories to organize all of its partners. To reach the list of
+OpenERP uses hierarchical categories to organize all of its partners. To reach the list of
 available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
 
 .. figure::  images/crm_partner_category_big.png
@@ -138,7 +138,7 @@ structure reports at any level of the hierarchy using this partner segmentation.
 In the following sections you will see how to assign partners to categories manually (perhaps for a
 newsletter subscription or as a hot prospect), or automatically using segmentation rules.
 
-Use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and click on `New` button to
+Use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and click the `New` button to
 define a new category.
 
 
