@@ -12,20 +12,10 @@ is a partner with multiple contacts.
 In some cases, the standard way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
 an alternative, the :mod:`base_contact` module.
 
-The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show
+The two figures :ref:`fig-crmcono` and :ref:`fig-crmconw` show
 the structure of partners and contacts in the form of UML classes both
-with and without the :mod:`base_contact` module.
-For the non-programmer this diagram may be a bit of a brutal way
-of showing it, but it is the clearest way to illustrate the
-complexities that may be accomplished.
-
-.. _fig-crmconw:
-
-.. figure:: images/crm_contact_with_new.png
-   :scale: 50
-   :align: center
-
-   *UML class diagram with base_contact module installed*
+without and with the :mod:`base_contact` module.
+This is a clear way to illustrate the complexities that may be accomplished.
 
 .. _fig-crmcono:
 
@@ -35,31 +25,31 @@ complexities that may be accomplished.
 
    *UML class diagram with base_contact module not installed*
 
-A concrete example may better illustrate this concept of multiple relationships between contacts and
-partners (companies). The figure :ref:`fig-crmcont` shows two companies having several addresses (places of
-business) and several contacts attached to these addresses.
+.. _fig-crmconw:
 
-.. _fig-crmcont:
-
-.. figure:: images/crm_contact_exemple.png
+.. figure:: images/crm_contact_with_new.png
    :scale: 50
    :align: center
 
-   *Example of a structure with management of partners and contacts*
+   *UML class diagram with base_contact module installed*
 
-In this example you'll find the following elements:
+The concrete example may even better illustrate the concept of multiple relationships between contacts and
+partners (companies). The figure :ref:`fig-crmconw` shows two companies having several addresses (places of
+business) and several contacts attached to these addresses.
+
+In this example you will find the following elements:
 
 * The ABC bank has two places of business, represented by the addresses of ABC Belgium and ABC
   Luxembourg,
 
 * The addresses of Dexey France and Dexey Belgium belong to the Dexey company,
 
-* At the office of ABC Luxembourg, you have the contacts of the director (D. Fogerty) and the
-  accountant (A. Jacket),
+* At the office of ABC Luxembourg, you have the contacts of the director (D. Smith) and the
+  accountant (A. Doe),
 
-* Mr Jacket holds the post of accountant for ABC Luxembourg and Dexey France,
+* Mr Doe holds the post of accountant for ABC Luxembourg and Dexey France,
 
-* Mr J Smith is director of Dexey France and Dexey Belgium and we also have his private address
+* Mr D. Smith is director of Dexey France and Dexey Belgium and we also have his private address
   which is not attached to a partner.
 
 Depending on your needs, OpenERP provides three menus to access the same information:
@@ -70,7 +60,7 @@ Depending on your needs, OpenERP provides three menus to access the same informa
 
 If you correct a contact name on the contact form, this will be modified on all the posts occupied in the different companies.
 
-The screen above represents a partner form. You can see several possible address there and a list of
+The screen above represents a partner form. You can see several possible addresses there and a list of
 contacts above each address. For each contact you see a name, a function, a phone number and an
 email.
 
@@ -110,9 +100,9 @@ OpenERP's modularity enables you to install only the CRM module if your requirem
 
 When creating the new database, OpenERP suggests that you configure it using a series of questions:
 
-* Simplified or Extended mode: select simplified and click :guilabel:`Ok`,
+* Simplified or Extended mode: select simplified and click :guilabel:`OK`,
 
-* Select the CRM functionality to install.
+* Select the Customer Relationship Management functionality to install.
 
 .. figure:: images/ crm_db_select.png
    :scale: 50
@@ -120,43 +110,40 @@ When creating the new database, OpenERP suggests that you configure it using a s
 
    *Selecting the CRM functionality to install*
 
-OpenERP proposes a selection from pre-configured functions for CRM:
+OpenERP proposes a selection from preconfigured functions for CRM:
 
-* managing a prospects database,
+* managing a prospect database,
 
 * managing and tracking opportunities,
 
 * managing meetings and the company calendar,
 
-* managing pre-sales,
+* managing presales,
 
-* managing phone calls and/or a call center,
+* managing phone calls,
 
 * managing after-sales service,
-
-* managing employment offers,
 
 * managing technical service,
 
 * tracking bugs and new functional requests.
 
-You see that OpenERP's CRM module is not limited just to Customer relationships but is designed to
+You see that OpenERP's CRM module is not limited just to Customer Relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
 This book will describe just customer relationships. The other CRM functions are similar to use, so
 you should not have huge problems with understanding those functions.
 
-The following cases will be looked at for this chapter
+The following cases will be looked at in this chapter:
 
-* Prospect management,
+* Prospect Management,
 
-* Opportunity management,
+* Opportunity Management,
 
-* Management of the company calendar,
+* Management of the Company Calendar,
 
-* Management of phone calls.
+* Management of Phone Calls.
 
-The figure :ref:`fig-crmconwiz` shows the CRM module configuration screen after selecting some functions to
-install.
+The figure :ref:`fig-crmconwiz` shows the CRM module configuration screen that appears when you selected the CRM to be installed.
 
 .. _fig-crmconwiz:
 
@@ -166,11 +153,8 @@ install.
 
    *Selecting parameters for CRM modules for the reader of this chapter*
 
-Organizing Prospects
-====================
-
 If you have installed the management of prospects and opportunities, OpenERP implements the
-following workflow for the qualification of prospects and future opportunities.
+following workflow for the *qualification of prospects* and future opportunities.
 
 .. figure:: images/crm_flux.png
    :scale: 50
