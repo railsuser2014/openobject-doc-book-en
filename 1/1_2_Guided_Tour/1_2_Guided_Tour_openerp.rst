@@ -444,11 +444,11 @@ module for all enterprise needs.
 
 Project Management is described in :ref:`ch-projects`.
 
-Manage your Business
-====================
-
 .. index::
    single: sales
+
+Manage your Business
+====================
 
 Driving your Sales
 ------------------
@@ -620,9 +620,6 @@ Dashboards can be customized to fit the needs of each user and each company.
 
 	OpenERP contains a Dashboard Editor. Create your own dashboard to fit your
 	specific needs in only a few clicks. Go to the :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition` menu to define your own dashboard.
-
-.. index::
-   single: Products
 
 The `Statistical Analysis` is one of the crucial thing for decision making process in any business. The OpenERP provides
 Statistical Reports for each application. As for example you can access the statistical analysis of Sales releted information
