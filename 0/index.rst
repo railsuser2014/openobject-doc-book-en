@@ -188,6 +188,9 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			he is the author of numerous articles dealing with free software in the management of the
 			enterprise.
 
+			Follow Fabien on his blog http://fptiny.blogspot.com/ or on twitter fpopenerp. 
+
+
                         **Geoff Gardiner**
 
 			Geoff has held posts as director of services and of IT systems for
@@ -208,6 +211,29 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			he has many thoughts to share on the successful adoption of an effective management automation
 			tool.
 
+	                **Els Van Vossel**
+
+			Els Van Vossel always had a dedication to both written and spoken word.
+			Clear and explicite communication is crucial.
+
+			Educated as a Professional Translator in Antwerp, she worked as an independent translator
+			on the localization of major ERP softwares. As such, Els acquired ERP knowledge and decided
+			to start working as a functional ERP consultant and a Technical Communicator for ERP software.
+
+			As such, the world of OpenSource software became more and more attractive.
+			She started working with OpenERP software in her free time and doing so, Els really wanted to
+			meet Fabien Pinckaers to share thoughts about documentation and training strategy. 
+			At a Partner Meeting she heard Fabien was looking for someone to manage the trainings & documentation.	
+			This was absolutely an opportunity to be qualified, and now Els is the OpenERP Training Program Manager
+			and in this job responsible for the worldwide training and certification program of OpenERP.
+
+			Being an author of several Software Manuals, it is a great challenge to work on the
+			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of job,
+			but Els finds great pleasure in doing it!
+
+			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel. 
+
+
 Dedication
 ==========
 
@@ -221,6 +247,14 @@ developed and tuned over the years by numerous talented people. Their efforts ar
 appreciated.
 
 Thanks also to my family for their encouragement, their tolerance and their constant presence.
+
+        *From Els Van Vossel*
+
+Thank you Fabien, for offering me the opportunity to work with OpenERP.
+Thanks to my documentation team for helping me to get a first V6.0.0 version of the documentation!
+In the near future, I dedicate myself to restructuring the documentation completely and manage to
+get a real Business-oriented version. For that, already in advance I thank the OpenERP team for their support.
+
 
         *From Fabien Pinckaers*
 
