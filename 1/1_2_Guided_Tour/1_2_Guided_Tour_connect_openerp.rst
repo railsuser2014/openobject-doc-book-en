@@ -1,5 +1,5 @@
-To connect to Open ERP
-=======================
+To connect to OpenERP
+=====================
 
 Since this is the first time you have connected to OpenERP you will be given the opportunity
 to configure the system. You may choose to either :guilabel:`Skip Configuration Wizards`
@@ -113,7 +113,7 @@ e-mail and a signature:
 * The :guilabel:`Email` field is for storing the current user's default e-mail address.
 
 * The :guilabel:`Signature` field gives the user a place for the signature attached to messages sent
-  from within Open ERP. 
+  from within OpenERP. 
 
 The :guilabel:`ABOUT` link gives information about the development of the Open ERP software and 
 various links to other information.
@@ -128,7 +128,7 @@ access to the super-administrator functions for managing databases on this serve
    single: installation; language
 
 Installing a new language
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each user of the system can work in his or her own language. More than twenty languages are
 currently available besides English. Users select their working language using the Preferences link.
@@ -306,7 +306,7 @@ Management defines these access rights as described in :ref:`ch-config`.
 
 .. note::  Changes to default access rights
 
-	New versions of Open ERP differ from earlier versions of Open ERP and Tiny ERP in this area:
+	New versions of OpenERP differ from earlier versions of OpenERP and Tiny ERP in this area:
 	many groups have been predefined and access to many of the menus and objects are keyed to these
 	groups by default.
 	This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights
@@ -361,7 +361,7 @@ them to get a feel for their use.
 	it may be both a customer and supplier at the same time.
 	
 	But there are also Customer and Supplier checkboxes on the partner form, which are different.
-	These checkboxes are designed to enable Open ERP to quickly select what should appear on some of the
+	These checkboxes are designed to enable OpenERP to quickly select what should appear on some of the
 	system drop-down selection boxes. They, too, need to be set correctly.
 
 Partner Categories

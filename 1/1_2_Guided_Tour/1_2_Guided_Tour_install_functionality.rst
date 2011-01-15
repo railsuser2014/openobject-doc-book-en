@@ -53,36 +53,49 @@ and how many existing modules were updated. Click :guilabel:`Open Modules` to re
 .. index::
   single: module; installing
 
+The Configuration / Reconfigure wizard
+--------------------------------------
 
-Installing a module
----------------------
+One of the new features of OpenERP is the :guilabel:`Configuration` wizard. Once run, the :guilabel:`Reconfigure` shortcut will appear. This wizard provides an easy way to install modules thanks to its userfriendly and easy-to-use interface. The user may invoke this wizard at his own convenience using the shortcut :guilabel:`Reconfigure`, found just below the database and user name in the web-client or in the Shortcut menu in the GTK client. The same Configuration dialog box appears that you may have encountered at the time of installing a new database. Why did we call it the :guilabel:`Reconfigure` wizard? Indeed, because it allows the user to review installed applications and install related additional features or simply to install new applications on the fly.
 
-.. index::
-   single: module; product
+When you go through the various steps in the wizard, you will come across some options that are checked and greyed. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration, you may see that the \ ``Customer Relationship Management`` \ option is already checked because this Business Application has been installed in this database.
+Install extra applications simply by checking the corresponding options and clicking :guilabel:`Install` or click :guilabel:`Skip` to stop the configuration. You will eventually also come across the :guilabel:`CRM Application Configuration` step which you may use to add features to your CRM application. For now, select the \ ``Claims`` \ option and click :guilabel:`Configure`. This will in turn install the :mod:`crm_claim` module.
 
-You will now install a module named :mod:`product`, which will enable you to manage the company's
-products. This is part of the core installation, so you do not need to load anything to make this
-work.
-
-Open the list of modules from :menuselection:`Administration --> Modules -->
-Modules`. Search for the module by entering the name :mod:`product` in the :guilabel:`Name` field on the search
-screen then clicking it in the list that appears below it to open it. The form that describes the
-module gives you useful information such as its version number, its status and a review of its
-functionality. Click :guilabel:`Schedule for Installation` 
-and the status of the module changes to :guilabel:`To be installed`.
-
-
-.. figure:: images/install_product_module.png
+.. figure:: images/reconfigure_wizard.png
    :scale: 75
    :align: center
 
-   *Installation of the product module*
+   *Reconfigure wizard showing Customer Relationship Management application as installed*
+
+You may continue adding features this way, skip configuration steps or simply exit from this wizard. When you feel the need to
+load your system with additional features, you may invoke the :guilabel:`Reconfigure` wizard again at any point.
+
+.. note:: You can also change the Configuration Wizard through the :menuselection:`Administration --> Configuration --> Configuration Wizards --> Configuration Wizards`.
+
+Installing an application / module from the Modules list
+--------------------------------------------------------
+
+.. index::
+   single: module; google maps
+
+You will now install a module named :mod:`google_map`, which will enable you to add a feature to the partner form to open the location directly in Google Maps. This is part of the core installation, so you do not need to load anything to make this work.
+
+Open the list of modules from :menuselection:`Administration --> Modules --> Modules`. Search for the module by entering the name :mod:`google_map` in the :guilabel:`Name` field on the search screen then clicking it in the list that appears to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its
+functionality. Click :guilabel:`Schedule for Installation` and the status of the module changes to :guilabel:`To be installed`.
+
+.. tip:: From now on you can schedule and install modules from list view too. Notice the buttons on the right side and the action button to install.
+
+.. figure:: images/install_google_map_module.png
+   :scale: 75
+   :align: center
+
+   *Installation of the Google Maps module*
 
 
 .. tip::  Technical Guide
 
 	If you select a module in any of the module lists by clicking on a module line and then on
-	:guilabel:`Technical Guide` at the top right of the window, Open ERP produces a technical report
+	:guilabel:`Technical Guide` at the top right of the window, OpenERP produces a technical report
 	on that module. It is helpful only if the module is installed.
 
 	This report comprises a list of all the objects and all the fields along with their descriptions.
@@ -103,12 +116,12 @@ Installing a module with its dependencies
 -----------------------------------------
 
 .. index::
-   single: module; crm
+   single: module; stock
 
-Now install the CRM module (Customer Relationship Management) using the same process as before.
+Now install the Warehouse Management module using the same process as before.
 Start from :menuselection:`Administration --> Modules --> Modules`.
 
-	#.  Get the list of modules, and search for the :mod:`crm` module in that list.
+	#.  Get the list of modules, and search for the :mod:`stock` module in that list.
 	
 	#.  Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
 	
@@ -118,15 +131,13 @@ Start from :menuselection:`Administration --> Modules --> Modules`.
 
 	#.  Click :guilabel:`Start update` to install both modules. 
 	
-	#.  After a wait, when the installation is complete, you may close this dialog box.
+	#.  After a few seconds, when the installation is complete, you may close this dialog box.
 	
 	#.  You will see details of all the features installed by the modules on a new
 	    :guilabel:`Features` tab on the module form. 
 
-When you return to the :menuselection:`Sales` menu you will find the new menu items under it like
-:menuselection:`Sales --> Leads`, :menuselection:`Sales --> Opportunities`, :guilabel:`Meetings` and
-:guilabel:`Phone Calls` which are a part of the customer relationship management system. You will also see
-all the accounting functions that are now available in the :menuselection:`Accounting` menu.
+When you return to the :menuselection:`Warehouse` menu you will find the new menu items under it like
+:menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`, :menuselection:`Warehouse --> Products Moves`,  which are a part of the Warehouse management system. You will also see all the accounting functions that are now available in the :menuselection:`Accounting` menu.
 
 There is no particular relationship between the modules installed and the menus added. Most of the
 core modules add complete menus but some also add submenus to menus already in the system. Other
@@ -141,7 +152,7 @@ forms, or simply additional demonstration data or some settings specific to a gi
 
 	The module form shows two tabs before it is installed. 
 	The first tab gives basic information about the module and the
-	second gives a list of modules that this module depends on. So when you install a module, Open ERP
+	second gives a list of modules that this module depends on. So when you install a module, OpenERP
 	automatically selects all the necessary dependencies to install this module.
 
 	That is also how you develop the profile modules: they simply define a list of modules that you want
@@ -163,12 +174,12 @@ installing because you have to handle existing system data.
 
 	If you wanted to uninstall you would use the menu :menuselection:`Administration --> Modules
 	--> Modules` and then uninstall them in the inverse order of their
-	dependencies: ``crm``, ``account``, ``product``.
+	dependencies: ``stock``, ``account``.
 
 Installing additional functionality
 -------------------------------------
 
-To discover the full range of Open ERP's possibilities you can install many additional modules.
+To discover the full range of OpenERP's possibilities you can install many additional modules.
 Installing them with their demonstration data provides a convenient way of exploring the whole core
 system. When you build on the \ ``openerp_ch02``\   database you will automatically include
 demonstration data because you checked the :guilabel:`Load Demonstration Data` checkbox when you originally
@@ -183,29 +194,6 @@ overview of all of the modules available for installation.
 
 To test several modules you will not have to install them all one by one. You can use the dependencies
 between modules to load several at once.
-
-Using Reconfigure wizard
--------------------------
-
-One of the new features of OpenERP is the :guilabel:`Reconfigure` wizard. This wizard provides a better handling
-of module installation as it employs a user interface which is easy to use. The user may invoke this wizard at
-his own convenience using the shortcut :guilabel:`Reconfigure`, found just below the database and user name in the web-client. This brings up the same configuration dialog box that you may have encountered at the time of installing a new database. The :guilabel:`Reconfigure` wizard is called so, because it allows the user to review installed applications
-and install additional features (modules) related to them or to install new applications altogether.
-
-When you go through the various steps in the wizard, you will come across some options that are checked
-and greyed. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration,
-you may see that the \ ``Customer Relationship Management`` \ option is already checked because the
-:mod:`crm` module had been installed in this database.
-You may choose to install other applications by checking the options and clicking :guilabel:`Install` or simply proceed by clicking :guilabel:`Skip`. You will eventually also come across the :guilabel:`CRM Application Configuration` step which you may use to add features to your CRM application. For now, select the \ ``Claims`` \ option and click :guilabel:`Configure`. This will in turn install the :mod:`crm_claim` module.
-
-.. figure:: images/reconfigure_wizard.png
-   :scale: 75
-   :align: center
-
-   *Reconfigure wizard showing Customer Relationship Management application as installed*
-
-You may continue adding features this way, skip steps or simply exit from this wizard. When you feel the need to
-load your system with additional features, you may invoke the :guilabel:`Reconfigure` wizard again at any point.
 
 .. Copyright © Open Object Press. All rights reserved.
 
