@@ -14,7 +14,7 @@ you an insight into the coverage of the core Open ERP software.
 Depending on the user you are connected as the page appears differently.
 Using the installation sequence above, certain dashboards may be assigned as various
 users' home pages. They show a summary of the information required to start the day effectively. A
-project dashboard might contains:
+project dashboard might contain:
 
 * a list of the tasks to carry out,
 
@@ -22,18 +22,15 @@ project dashboard might contains:
 
 * a list of sprints,
 
-* a list of issue assigned to current user,
+* a list of issues assigned to current user,
 
-* a graph of Planned vs Total hour,
+* a graph of Planned vs Total hours,
 
-* a graph of Remaining hour by Project,
+* a graph of Remaining hours by Project,
 
 * a graph of Open Issues by Creation Date.
 
-Each of the lists can be reordered by clicking on the heading of a column – first in ascending
-then in descending order as you click repeatedly. To get more information about any particular entry
-click on the name in the first column, or if you want to show a particular panel click :guilabel:`Zoom`
-above it.
+Each of the lists can be reordered simply by clicking the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click :guilabel:`Zoom` above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
@@ -41,8 +38,8 @@ above it.
 
    *Project Dashboard*
 
-Users' home pages are automatically reassigned during the creation or upgrading of a database. It is
-usual to assign a dashboard to someone's home page but any Open ERP screen can be assigned to the
+A user's home page is automatically reassigned during the creation or upgrading of a database. It is
+custom to assign a dashboard to someone's home page but any OpenERP screen can be assigned to the
 home page of any user.
 
 .. index::
@@ -50,15 +47,15 @@ home page of any user.
 
 .. tip:: Creating shortcuts
 
-	Each user has access to many menu items throughout all of the available menu hierarchy. But in
+	Each user has access to many menu items from the menu. But in
 	general an employee uses only a small part of the system's functions.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut Just click on the '*' of the header of the view in web client.
+	create a new shortcut just click the '*' of the header of the view in web client.
 
-	To remove shortcut just click on link and again click on '*' of the header of the view.
+	To remove a shortcut just click the link and again click '*' of the header of the view.
 
-The following sections present an overview of the main functions of Open ERP. Some areas are
+The following sections present an overview of the main functions of OpenERP. Some areas are
 covered in more detail in the following chapters of this book and you will find many other functions
 available in the optional modules. Functions are presented in the order that they appear on the main
 menu.
@@ -70,9 +67,9 @@ Basic Concepts
    single: Partners
 
 Partners & Contacts
--------------------
+^^^^^^^^^^^^^^^^^^^
 
-To familiarize yourself with OpenERP's interface, you will start work with information about
+To get familiar with the OpenERP user interface, you will start working with information about
 partners. Clicking :menuselection:`Sales --> Address Book --> Customers` brings up a list of partners that were
 automatically loaded when you created the database with :guilabel:`Load Demonstration Data` checked.
 
@@ -84,10 +81,7 @@ Search for a partner
 
 Above the partner list you will see a search form that enables you to quickly filter the partners.
 
-The \ ``Customers`` \ filter is enabled by default showing partners who are customers.
-If you have applied no filter, the list shows every partner in the system. For space reasons this list
-shows only the first few partners. If you want to display other records you can search for them or
-navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
+The \ ``Customers`` \ filter is enabled by default showing partners who are customers. If you have applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners. If you want to display other records you can search for them or navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
    :scale: 75
@@ -105,10 +99,10 @@ navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous
 
 	Similarly the list in the web client shows only the first 20, 50, 100, 500 or unlimited records.
 
-	The actual number can be switched by clicking on the link between the PREVIOUS and NEXT buttons
+	The actual number can be switched by clicking the link between the PREVIOUS and NEXT buttons
 	and selecting one of the other limits.
 
-If you click on the name of a partner the form view corresponding to that partner opens in Read-Only
+In the web version, if you click the name of a partner, the form view corresponding to that partner opens in Read-Only
 mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode.
 Once you have a form you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
 Edit mode and :guilabel:`Edit` when in Read-Only mode.
@@ -134,41 +128,36 @@ The partner form contains several tabs, all referring to the current record:
 The fields in a tab are not all of the same type – some (such as :guilabel:`Name`) contain free
 text, some (such as the :guilabel:`Language`) enable you to select a value from a list of options,
 others give you a view of another object (such as :guilabel:`Partner Contacts` – because a partner
-can have several contacts) or a list of link to another object (such as :guilabel:`Partner Categories`).
+can have several contacts) or a list of links to another object (such as :guilabel:`Partner Categories`).
 There are checkboxes (such as the :guilabel:`Active` field in the :guilabel:`Sales & Purchases` tab),
 numeric fields (such as :guilabel:`Credit Limit` in the :guilabel:`Accounting` tab) and date fields (such as :guilabel:`Date`).
 
-The :guilabel:`History` tab gives a quick overview of things that have happened to the partner – an
-overview of useful information such as Leads and Opportunities, Meetings, Phone Calls, Emails and Tasks.
-Events are generated automatically by OpenERP from changes in other documents that refer to this partner.
+The :guilabel:`History` tab gives a quick overview of partner activities – an overview of useful information such as Leads and Opportunities, Meetings, Phone Calls, Emails and Tasks. Events are generated automatically by OpenERP from changes in other documents that refer to this partner.
 
-It is possible to add events manually, such as a note recording a phone call. To add a new event
-click :guilabel:`New` in the :guilabel:`Phone Calls` section. That
-opens a new :guilabel:`Phone Call` pop-up form enabling a phone-call event to be created and added to the
-current partner.
+It is possible to add events manually which directly relate to the corresponding form, such as a note recording a phone call. To add a new event click :guilabel:`New` in the :guilabel:`Phone Calls` section. That opens a new :guilabel:`Phone Call` pop-up form enabling a phone-call event to be created and added to the current partner.
 
-Actions possible on a partner
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Possible Partner Actions
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 To the right of the partner form is a toolbar containing a list of possible :guilabel:`Reports` ,
-:guilabel:`Actions`, and quick :guilabel:`Links` about the partner displayed in the form.
+:guilabel:`Actions` and quick :guilabel:`Links` about the partner displayed in the form.
 
-You can generate PDF documents about the selected object (or, in list view, about one or more
+You can generate PDF documents for the selected object (or, in list view, about one or more
 selected objects) using certain buttons in the :guilabel:`Reports` section of the toolbar:
 
 *  :guilabel:`Labels` : print address labels for the selected partners,
 
-*  :guilabel:`Overdue Payments` : print a mail notifying the selected partners about overdue payments,
+*  :guilabel:`Overdue Payments` : print a letter to notify the selected partners of overdue payments,
 
 Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the
 toolbar:
 
-*  :guilabel:`SMS Send` : enables you to send an SMS to selected partners. This system uses the bulk
-   SMS facilities of the Clickatell® company http://clickatell.com.
+*  :guilabel:`SMS Send`: enables you to send an SMS to selected partners. This system uses the bulk
+   SMS facilities of the Clickatell® company http://clickatell.com,
 
-*  :guilabel:`Mass Mailing` : enables you to send an email to a selection of partners.
+*  :guilabel:`Mass Mailing`: enables you to send an email to a selection of partners,
 
-*  :guilabel:`Create Opportunity` : opens a window to create an opportunity for the partner,
+*  :guilabel:`Create Opportunity`: opens a window to create an opportunity for the partner.
 
 .. index::
    single: buttons; reports, actions, links
@@ -181,24 +170,22 @@ toolbar:
 	through two of the buttons in the toolbar at the top of the list – Print and Action.
 
 Partners are used throughout the OpenERP system in other documents. For example, the menu
-:menuselection:`Sales --> Sales Orders` brings up all the Sales
-Orders in list view. Open an order in form view and click the name of a partner while the
-form is still read-only. You will get the Partner form.
+:menuselection:`Sales --> Sales Orders` brings up all the Sales Orders in list view. Open an order in form view and click the name of a partner, even when the form is read-only. The Partner form will open.
 
-.. tip:: Right clicks and shortcuts
+.. tip:: Right-clicks and shortcuts
 
 	In the GTK client you do not get hyperlinks to other document types. Instead, you can right-click in
 	a list view to show the linked fields (that is fields having a link to other forms) on that line.
 
-	In the web client you will see hyperlink shortcuts on several of the fields on a form that is in Read-
-	Only mode, so that you can move onto the form for those entries. When the web form is in Edit mode,
-	you can instead right-click with the mouse button
+	In the web client you will see hyperlink shortcuts on several of the fields on a form in Read-
+	Only mode, allowing you to be taken directly to the corresponding form. When the web form is in Edit mode,
+	you can instead right-click the mouse button
 	in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK
 	client.
 
-	You can quickly try this out by going to any one of the sales orders in :menuselection:`Sales
-	--> Sales Orders` and seeing what you can reach from the
-	:guilabel:`Customer` field on that sales order form using either the web client with the form in
+	You can quickly give this a try by going to any one of the sales orders in :menuselection:`Sales
+	--> Sales Orders`. See where you can go from the
+	:guilabel:`Customer` field using either the web client with the form in
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
@@ -207,15 +194,15 @@ form is still read-only. You will get the Partner form.
 
    *Links for a partner appear in an order form*
 
-Before moving on to the next module, take a quick look into the :menuselection:`Sales -->
+Before moving on to the next topic, take a quick look at the :menuselection:`Sales -->
 Configuration --> Address Book`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
 They contain some of the demonstration data that you installed when you created the database.
 
 Products
 --------
 
-In OpenERP, product means a raw material, a stockable product, a consumable or a service. You can
-work with whole products or with templates that separate the definition of products and variants.
+In OpenERP, `product` is used to define a raw material, a stockable product, a consumable or a service. You can
+work with whole products or with templates that separate the definition of products and variants (*extra module*).
 
 For example if you sell t-shirts in different sizes and colors:
 
@@ -254,35 +241,30 @@ of its available variants briefly rather than every item as an entire product.
 			take the example above it is easier to manage a template with 15 variants in four different types
 			than 160 completely different products. This module is available in ``extra-addons``.
 
-The :menuselection:`Sales --> Products` menu gives you access to the definition of products and their
-constituent templates and variants.
+The :menuselection:`Sales --> Products` menu gives you access to the definition of products and their templates and variants.
 
 .. index::
    single: Product; Consumable
 
 .. tip::  Consumables
 
-	In OpenERP a consumable is a physical product which is treated like a stockable product except
+	In OpenERP a consumable is a physical product which is treated like a stockable product, with the exception
 	that stock management is not taken into account by the system. You could buy it, deliver it or
 	produce it but OpenERP will always assume that there is enough of it in stock. It never triggers a
 	procurement exception.
 
-Open a product form to see the information that describes it. Several different types of product can
-be found in the demonstration data, giving quite a good overview of the possible options.
+Open a product form to see the information that describes it. The demeonstration data show several types of products, which gives quite a good overview of the options.
 
 Price lists (:menuselection:`Sales --> Configuration --> Pricelists`) determine the purchase and selling prices and
 adjustments derived from the use of different currencies. The :menuselection:`Default Purchase
-Pricelist` uses the product's :guilabel:`Cost Price` field to base a Purchase price on. The
-:menuselection:`Public Pricelist` uses the product's :guilabel:`Sale Price` field to base a
-Sales price on when issuing a quote.
+Pricelist` uses the product's :guilabel:`Cost Price` field for the Purchase price to be calculated. The
+:menuselection:`Public Pricelist` uses the product's :guilabel:`Sale Price` field to calculate the Sales price in quotations.
 
-Price lists are extremely flexible and enable you to put a whole price management policy in place.
+Price lists are extremely flexible and enable you to put a complete price management policy in place.
 They are composed of simple rules that enable you to build up a rule set for most complex situations:
-multiple discounts, selling prices based on purchase prices, price reductions, promotions on whole
-product ranges and so on.
+multiple discounts, selling prices based on purchase prices, price reductions, promotions on product ranges and so on.
 
-You can find many optional modules to extend product functionality,
-such as:
+You can find many optional modules to extend product functionality, such as:
 
 .. index::
    single: module; membership
@@ -310,7 +292,7 @@ such as:
 
 * :mod:`product_lot_foundry` : for managing forged metal products.
 
-Except the :mod:`membership` module, the rest above are found in ``extra-addons``.
+All of the above modules are found in ``extra-addons``, except for the :mod:`membership` and the :mod:`product_expiry` module.
 
 .. index::
    single: CRM
@@ -322,7 +304,7 @@ Except the :mod:`membership` module, the rest above are found in ``extra-addons`
 Boost your Sales
 ================
 
-Open ERP provides many tools for managing relationships with partners. These are available through
+OpenERP provides many tools for managing relationships with partners. These are available through
 the :menuselection:`Sales` menu.
 
 .. tip::  :guilabel:`CRM & SRM`
@@ -331,8 +313,7 @@ the :menuselection:`Sales` menu.
 	customer relations. ``SRM`` stands for Supplier Relationship Management, and is commonly used for
 	functions that manage your communications with your suppliers.
 
-The concept of a “case” is used to handle arbitrary different types of relationship, each
-derived from a generic method. OpenERP provide the following efficiently "Case" management system.
+Through Customer Relationship Management, OpenERP allows you to keep track of:
 
 * Leads
 * Opportunities
@@ -342,9 +323,9 @@ derived from a generic method. OpenERP provide the following efficiently "Case" 
 * Helpdesk and Support
 * Fund Raising
 
-Open ERP ensures that each case is handled effectively by the system's users, customers and
+OpenERP ensures that each case is handled effectively by the system's users, customers and
 suppliers. It can automatically reassign a case, track it for the new owner, send reminders by email
-and raise other Open ERP documentation and processes.
+and raise other OpenERP documentation and processes.
 
 All operations are archived, and an email gateway lets you update a case automatically from emails
 sent and received. A system of rules enables you to set up actions that can automatically improve
@@ -353,22 +334,26 @@ your process quality by ensuring that open cases never escape attention.
 As well as those functions, you have got tools to improve the productivity of all staff in their daily
 work:
 
-* a document editor that interfaces with OpenOffice.org,
+* an email client plugin for Outlook and Thunderbird enabling you to automatically store your emails and their attachments in the
+  Knowledge Management (previously Document Management System) integrated with OpenERP,
 
-* interfaces to synchronize your contacts and Outlook Calendar with Open ERP,
+* interfaces to synchronize your Contacts and Calendars with OpenERP,
 
-* an Outlook plugin enabling you to automatically store your emails and their attachments in a
-  Document Management System integrated with Open ERP,
+* sync your meetings on your mobile phone,
+
+* build a 360° view on your Customer,
+
+* integration with Google applications.
 
 You can implement a continuous improvement policy for all of your services, by using some of the
-statistical tools in Open ERP to analyze the different communications with your partners. With
+statistical tools in OpenERP to analyze the different communications with your partners. With
 these, you can execute a real improvement policy to manage your service quality.
 
 The management of customer relationships is detailed in the second section of this book (see
 :ref:`part2-crm`).
 
 .. index::
-   single: Purchase Management
+   single: Sales Management
 
 
 .. index::
@@ -379,8 +364,7 @@ Manage your Books
 =================
 
 The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting.
-A brief overview of
-the functions provided by these modules is given here as an introduction.
+A brief overview of the functions to introduce you to this Business Application.
 
 Accounting is totally integrated into all of the company's functions, whether it is general,
 analytic, budgetary or auxiliary accounting. OpenERP's accounting function is double-entry and
@@ -395,34 +379,37 @@ source of errors and delays.
 So OpenERP's accounting is not just for financial reporting – it is also the anchorpoint for many
 of a company's management processes. For example if one of your accountants puts a customer on
 credit hold then that will immediately block any other action related to that company's credit (such
-as a sale or a delivery).
+as sales or delivery).
 
 OpenERP also provides integrated analytical accounting, which enables management by business
 activity or project and provides very detailed levels of analysis. You can control your operations
 based on business management needs, rather than on the charts of accounts that generally meet only
 statutory requirements.
 
+OpenERP added a flexible, easy **Invoicing** module allowing you to keep track of your documents and payments, even when you are not an accountant. This will allow smaller business to keep track of their payments without having to implement a complete accounting system.
 
-  .. index::
+Keep track of your Cash Moves by using the new OpenERP Cash Box. 
+
+.. index::
      single: Human Resources
      single: HR
 
 Lead & Inspire your People
 ==========================
 
-OpenERP's Human Resources Management modules provide such functionality as:
+OpenERP's Human Resources Management Business Application provides functionality such as:
 
-* management of staff and the holiday calendar,
+* Manage your Employees, Contracts & Staff Performance,
 
-* management of employment contracts,
+* Talent Acquisition,
 
-* management of holiday and sickness breaks,
+* Keep track of Holidays and Sickness Leaves,
 
-* managing claims processes,
+* Manage the Evaluation Process,
 
-* management of staff performance,
+* Keep track of Attendances & Timesheets,
 
-* management of skills and competencies.
+* Track Expenses.
 
 .. index::
    single: modules; hr_
@@ -435,21 +422,18 @@ Resources` menu.
 The different issues are handled in detail in the fourth part of this book :ref:`part-ops`, dedicated to internal
 organization and to the management of a services business.
 
+.. index::
+   single: project management
+   single: project
+
 Drive your Projects
 ===================
 
-Open ERP's project management tools enable you to handle the definition of tasks and the
-specification of requirements for those tasks, efficient allocation of resources to the
-requirements, project planning, scheduling and automatic communication with partners.
+Open ERP's project management tools enable you to hdefine tasks and specify requirements for those tasks, efficient allocation of resources to the requirements, project planning, scheduling and automatic communication with partners.
 
-All projects are hierarchically structured. You can review all of the projects from the menu
-:menuselection:`Project Management --> All Projects`. To view a project's plans, select a project
-line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical
-representation of the plan.
+All projects are hierarchically structured. You can review all of the projects from the menu :menuselection:`Project Management --> All Projects`. To view a project's plans, select a project line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical representation of the plan.
 
-.. todo:: This isn't working. Gantt charts aren't displaying right.
-
-.. figure:: images/familiarization_project_gantt.png
+.. figure:: images/project_gantt.png
    :scale: 75
    :align: center
 
@@ -460,13 +444,11 @@ module for all enterprise needs.
 
 Project Management is described in :ref:`ch-projects`.
 
-.. index::
-   single: inventory control
-   single: Stock Management
-..
-
 Manage your Business
 ====================
+
+.. index::
+   single: sales
 
 Driving your Sales
 ------------------
@@ -479,6 +461,10 @@ Confirmation of an order triggers the delivery of goods, and invoicing timing is
 setting in each individual order.
 
 Delivery charges can be managed using a grid of tariffs for different carriers.
+
+.. index::
+   single: purchase
+   single: purchase management
 
 Driving your Purchases
 ----------------------
@@ -494,13 +480,19 @@ OpenERP's replenishment management rules enable the system to generate draft pur
 automatically, or you can configure it to run a lean process, driven entirely by current production
 needs.
 
+You can also manage purchase requisitions to keep track of quotations sent to a multitude of suppliers. 
+
+.. index::
+   single: stock
+   single: warehouse management
+
 Organise your Warehouse
 -----------------------
 
 The various sub-menus under :menuselection:`Warehouse` together provide operations you need to manage stock.
 You can:
 
-* define your warehouses and structure them around locations and layouts of your choosing,
+* define your warehouses and structure them around locations you choose,
 
 * manage inventory rotation and stock levels,
 
@@ -539,34 +531,38 @@ various levels of detail.
 Get Manufacturing done
 ======================
 
-OpenERP's production management capabilities enable companies to plan, automate, and track
-manufacturing and product assembly. OpenERP supports multi-level bills of materials and lets you
-substitute subassemblies dynamically, at the time of sales ordering. You can create virtual sub-
-assemblies for reuse on several products with phantom bills of materials.
+OpenERP's production management capabilities enable companies to plan, automate and track manufacturing and product assembly. OpenERP supports multi-level bills of materials and lets you substitute subassemblies dynamically, at the time of sales ordering. You can create virtual subassemblies for re-use on several products with phantom bills of materials.
 
 .. index::
    single: bill of materials
-   single: BoM
+   single: BOM
 
-.. note:: BoMs, routing, workcenters
+.. note:: BOMs, routing, workcenters
 
 	These documents describe the materials that make up a larger assembly. They are commonly called
-	Bills of Materials or BoMs.
+	Bills of Materials or BOMs.
 
-	They are linked to routings which list the operations needed to carry out the manufacture or
+	They are linked to routings which list the operations needed to carry out the manufacturing or
 	assembly of the product.
 
-	Each operation is carried out at a workcenter, which can be a machine, a tool, or a person.
+	Each operation is carried out at a workcenter, which can be a machine or a person.
 
 Production orders based on your company's requirements are scheduled automatically by the system,
 but you can also run the schedulers manually whenever you want. Orders are worked out by calculating
 the requirements from sales, through bills of materials, taking current inventory into account. The
-production schedule is also generated from the various lead times defined throughout, using the same
-route
+production schedule is also generated from the various lead times defined throughout the system, using the same
+route.
 
-The demonstration data contains a list of products and raw materials with various classifications
+The demonstration data contain a list of products and raw materials with various classifications
 and ranges. You can test the system using this data.
 
+.. index::
+   single: knowledge
+   single: document
+   single: FTP
+   single: Document Management
+   single: calendar
+   single: CalDAV
 
 Share your Knowledge
 ====================
@@ -577,15 +573,16 @@ Efficient Document Management
 OpenERP integrates a complete document management system that not only
 carries out the functions of a standard DMS, but also integrates with all
 of its system-generated documents such as Invoices and Quotations. Moreover, it
-it keeps all of this synchronized.
+it keeps all of this synchronized. You can define your own directory structure and tell OpenERP to automatically store documents such as Invoices in the DMS.
+
+OpenERP provides an FTP Interface for the Document Management System. You will not only be able to access documents from OpenERP, but you can also use a regular file system with the FTP client.
+FTP is just a way of getting access to files without needing to use an OpenERP client, to allow you to access files from anywhere.
+You can also add documents to be stored in OpenERP directly through the FTP system in the corresponding OpenERP directory. These documents will automatically be accessible from the form concerned in OpenERP.
 
 Be Mobile
 ---------
 
-OpenERP provides a support FTP Interface with document management system. Through this you would not only be able to access documents through OpenERP but you would also be able to connect with them through the file system using the FTP client.
-FTP is just a way of getting access to files without needing to use an OpenERP client, thus also letting you access files from anywhere.
-
-This system is also well-integrated with e-mail clients such as Thunderbird and Outlook.
+The Knowledge system is also well-integrated with e-mail clients such as Thunderbird and Outlook. It also allows you to sync your calendars (CalDAV).
 
 .. index::
    single: Dashboards
@@ -593,38 +590,36 @@ This system is also well-integrated with e-mail clients such as Thunderbird and 
 Measure your Business Performance
 =================================
 
-To measure your business performance OpenERP provide two interesting features:
+To measure your business performance OpenERP provides two interesting features:
 
 * Dashboards
 * Statistical Reports
 
-Dashboards give you an overview of all the information that is important to you on a single page.
+On a single page, Dashboards give you an overview of all the information that is important to you.
 In OpenERP each application has its own dashboard which opens by default when you select the specific application.
-As for example `Administration Dashboard` will open when you click on the :menuselection:`Administration` menu.
+As for example `Administration Dashboard` will open when you click the :menuselection:`Administration` menu.
 
 .. note:: Dashboards
 
 	Unlike most other ERP systems and classic statistically-based systems,
-	Open ERP can provide dashboards to all of the system's users, and not just to a select few
-	such as directors and accountants.
+	OpenERP can provide dashboards for all system users, and not just managers and accountants.
 
-	Each user can have their own dashboard, adapted to their needs,
-	to enable them to manage their own work effectively.
-	For example a developer using the :guilabel:`Project Dashboard` can see such information
-	as a list of the open tasks, task delegated to him and an analysis of the state of progress of
+	Each user can have his own dashboard, adapted to his needs,
+	enabling him to manage his own work effectively.
+	For example a developer using the :guilabel:`Project Dashboard` can see information such
+	as a list of open tasks, tasks delegated to him and an analysis of the progress of
 	the relevant projects.
 
-Dashboards are dynamic, which lets you navigate easily around the whole information base.
+Dashboards are dynamic, letting you navigate easily around the whole information base.
 Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can
-click on any element of the list to get detailed statistics on the selected element.
+click any element of the list to get detailed statistics on the selected element.
 
-Dashboards are adaptable to the needs of each user and each company.
+Dashboards can be customized to fit the needs of each user and each company.
 
-.. note:: Construction of dashboards
+.. note:: Creating or customizing dashboards
 
-	OpenERP contains a dashboard editor. It lets you construct your own dashboard to fit your
-	specific needs using only a few clicks. The :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition`
-	menu gives you access to defined your own dashboard.
+	OpenERP contains a Dashboard Editor. Create your own dashboard to fit your
+	specific needs in only a few clicks. Go to the :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition` menu to define your own dashboard.
 
 .. index::
    single: Products
