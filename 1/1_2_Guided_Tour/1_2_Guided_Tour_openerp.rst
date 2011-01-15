@@ -613,8 +613,8 @@ Dashboards can be customized to fit the needs of each user and each company.
 	specific needs in only a few clicks. Go to the :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition` menu to define your own dashboard.
 
 The `Statistical Analysis` is one of the crucial thing for decision making process in any business. The OpenERP provides
-Statistical Reports for each application. As for example you can access the statistical analysis of Sales releted information
-from the menu :menuselection:`Sales --> Reporting --> Sales Analysis`. Also you can search and group by the data using this
+Statistical Reports for each application. As for example you can access the statistical analysis of Sales-related information
+from the menu :menuselection:`Sales --> Reporting --> Sales Analysis`. You can search and group the data using this
 `Statistical Report`.
 
 Track your Process Flows
@@ -630,7 +630,7 @@ then click the :guilabel:`?` button above its form to see the full process.
 
    *Process for a Sales Order*
 
-You can see the position of that particular document in its process, if you have selected
+You can see where a particular document is in its process, if you have selected
 a single document, by the solid bar on one of the process nodes. You also link
 to documents and menus for each of the stages.
 
@@ -652,17 +652,17 @@ far better for documentation than similar systems.
 Need more?
 ==========
 
-You have been through a brisk, brief overview of many of the main functional areas of OpenERP.
+You have been guided through a brisk, brief overview of many of the main functional areas of OpenERP.
 Some of these – a large proportion of the core modules – are treated in more detail
 in the following chapters.
 
 You can use the menu :menuselection:`Administration --> Modules --> Modules`
 to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to OpenERP (such as
-:mod:`base_iban`), some have quite extensive effects (such as the various charts of accounts), and
-some make fundamental additions (such as :mod:`multi_company`).
+:mod:`google_maps`), some have quite extensive effects (such as the various charts of accounts), and
+some make fundamental additions.
 
-But there are now more than hundred modules available. You can install as per you need.
+But there are now more than hundred modules available. You can install them according to your needs.
 
 A brief description is available for each module, but the most thorough way of understanding their
 functionality is to install one and try it. So, pausing only to prepare another test database to try
