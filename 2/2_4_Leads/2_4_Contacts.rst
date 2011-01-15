@@ -8,14 +8,7 @@ Managing your Potential Customer Contacts
 The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications)
 is a partner with multiple contacts.
-*Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ...
-In some cases, the standard way of linking contacts to partners may not be flexible enough for you. Of course, OpenERP provides
-an alternative, the :mod:`base_contact` module.
-
-The two figures :ref:`fig-crmcono` and :ref:`fig-crmconw` show
-the structure of partners and contacts in the form of UML classes both
-without and with the :mod:`base_contact` module.
-This is a clear way to illustrate the complexities that may be accomplished.
+*Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ... In other CRM applications, a partner is also referred to as Account. The example below illustrates OpenERP default way of handling Partners and their Contacts.
 
 .. _fig-crmcono:
 
@@ -23,7 +16,14 @@ This is a clear way to illustrate the complexities that may be accomplished.
    :scale: 50
    :align: center
 
-   *UML class diagram with base_contact module not installed*
+   *Default Partner & Contacts Relationship*
+
+According to your Business, the standard way of linking several contacts to one partner may not be flexible enough for you. Of course, OpenERP provides an alternative, the :mod:`base_contact` module. This allows you to share the same contact, holding different positions, with several partners. You only need to enter the contact once and link it to the partners concerned. Any changes to contact information only need to be applied once.
+
+The two figures :ref:`fig-crmcono` and :ref:`fig-crmconw` show
+the structure of partners and contacts in the form of UML classes both
+without and with the :mod:`base_contact` module.
+This is a clear way to illustrate the complexities that may be accomplished.
 
 .. _fig-crmconw:
 
@@ -31,7 +31,7 @@ This is a clear way to illustrate the complexities that may be accomplished.
    :scale: 50
    :align: center
 
-   *UML class diagram with base_contact module installed*
+   *Base_contact module installed*
 
 The concrete example may even better illustrate the concept of multiple relationships between contacts and
 partners (companies). The figure :ref:`fig-crmconw` shows two companies having several addresses (places of
@@ -52,7 +52,7 @@ In this example you will find the following elements:
 * Mr D. Smith is director of Dexey France and Dexey Belgium and we also have his private address
   which is not attached to a partner.
 
-Depending on your needs, OpenERP provides three menus to access the same information:
+According to your Configuration, OpenERP provides three menus to access the same information:
 
 * List of partners: :menuselection:`Sales --> Address Book --> Customers`,
 

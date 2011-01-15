@@ -14,10 +14,10 @@ Boost your Sales & Deliver Great Services
  OpenERP's CRM features are flexible and highly developed to assist you in managing
  all aspects of partner relationships.
  Analytic tools help you understand your performance drivers, and the automation of data and
- processes drives new levels of efficiency.
+ processes drives your company to new levels of efficiency.
 
- OpenERP can share information through its interfaces to the most common office applications,
- minimizing disruption to your operations when you first install it.
+ OpenERP can share information through its interfaces to the most common email clients, calendars and mobile phones, minimizing
+ disruption to your operations when you first install it.
  Your staff can build on their previous productivity by continuing to use their email and office
  systems, now connected to OpenERP, transferring to the OpenERP interface only if they need to.
 

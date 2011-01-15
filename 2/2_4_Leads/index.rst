@@ -16,7 +16,7 @@ What is in it for you?
 
 * Track, drive and optimize your sales activities! Handle your full sales workflow, from lead to invoice.
 
-* Access all information such as accounts & contacts in one place, directly at hand when you need it, even when you are working at home!
+* Access all information such as partners (accounts) & contacts in one place, directly at hand when you need it, even when you are working at home!
 
 * Offer an excellent Customer Service by improving issues management and automating follow up.
 
@@ -32,7 +32,7 @@ What is in it for you?
 
 * Measure your business through up-to-date dashboards and reporting!
 
-Use the OpenERP CRM application as from the very first business contact - either personal, by e-mail, through your website, ...  OpenERP allows your sales team to concentrate on their deals and manage the full sales flow (lead qualification -> opportunity tracking -> quotation -> sales order) while keeping a global vision of each stage.
+Use the OpenERP CRM application as from the very first business contact - either personal, by e-mail, through a contact form on your website, ...  OpenERP allows your sales team to concentrate on their deals and manage the full sales flow (lead qualification -> opportunity tracking -> quotation -> sales order) while keeping a global vision of each stage.
 
 Terminology
 -----------
