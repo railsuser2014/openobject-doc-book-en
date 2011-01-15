@@ -18,11 +18,7 @@ lead. It can also be useful to create a shortcut to this menu so that you can qu
 opportunity form when you need to – after a phone call, or an email, that needs followup.
 
 The salesperson uses the menu :menuselection:`Sales --> Sales --> Opportunities` to track their opportunities by applying proper filters.
-After various customer contacts, the salesperson
-can enter the information into the form to describe the activity. The history tab provides a history
-of all the information about the activity throughout its life. The activities are automatically
-reported on the partner form of the associated customer. To see this, open the `History` tab when you
-open the partner form.
+After various customer contacts, the salesperson can enter the information into the form to describe the activity. The `History` tab provides a history of all the information about the activity throughout its life. The activities are automatically reported on the partner form of the associated customer. To see this, open the `History` tab when you open the partner form.
 
 .. figure:: images/crm_partner_event.png
    :scale: 50
@@ -73,17 +69,12 @@ In the partner form, the `Geo Localization` tab gives you the information you ne
 
    *Geo Localization in partner form*
 
-
-
 Planning your Meetings effectively
 ==================================
 
-There are several methods for entering a new meeting with a partner. The first method is to enter
-the meeting directly in the company calendar. To do that, use the menu :menuselection:`Sales -->
-Meetings --> Meetings`.
+There are several methods for entering a new meeting with a partner. The first method is to enter the meeting directly in the company calendar. To do that, use the menu :menuselection:`Sales --> Meetings --> Meetings`.
 
-You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and
-another use the buttons above and to the right of the calendar.
+You can use the monthly, weekly or daily views to plan a meeting. To move between one mode and another use the buttons above and to the right of the calendar.
 
 .. figure:: images/crm_calendar_month.png
    :scale: 50
@@ -122,11 +113,9 @@ along to create an event of several hours. Open ERP then opens an entry screen f
 Track your Phone Calls
 ======================
 
-OpenERP has functions to manage a telephone call centre. If,
-when you installed the CRM module, you selected the option for calls
-you will be able to manage incoming and outgoing calls.
+OpenERP allows you to manage incoming and outgoing calls.
 
-Call management can be used for two particular needs:
+Call management can be used for particular needs, such as:
 
 * Entering customer calls so that you keep a record of the communication attached to a partner or a
   sales opportunity,
@@ -135,12 +124,12 @@ Call management can be used for two particular needs:
 
 To enter details of a phone call, use one of the two following menus:
 
-* :menuselection:`Sales --> Phone Calls --> Inbound`,
+* :menuselection:`Sales --> Phone Calls --> Inbound` to register incoming calls,
 
-* :menuselection:`Sales --> Phone Calls --> Outbound`,
+* :menuselection:`Sales --> Phone Calls --> Outbound` to register outgoing calls,
 
-The phone call will then be visible on the partner form to give you complete visibility of the
-events about that customer or supplier.
+The phone call will then be visible in the `History` tab of the `Partner` form to give you complete visibility of the
+events for a customer or supplier.
 
 
 .. Copyright © Open Object Press. All rights reserved.

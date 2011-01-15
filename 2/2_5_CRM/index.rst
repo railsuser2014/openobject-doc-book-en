@@ -10,7 +10,7 @@ Keep track of your Customers & Suppliers
 
  *It is often said that the customer is king. You would treat all your customers as royalty,
  at the center of your attention if you had a way of keeping your eyes on them at all times.
- Open ERP's CRM module is designed to make this aim a reality, helping employees of the business
+ OpenERP's CRM module is designed to make this aim a reality, helping employees of the business
  understand their customers' needs better, and automating their communication efforts.*
 
 .. index::
@@ -26,15 +26,13 @@ If you want to focus on your customers, you need tools to make that focus easy. 
 capture all the knowledge you have available, tools that will help you analyze what you know, and
 tools that will make it easy to use all of that knowledge and analysis.
 
-A crucial advantage that Open ERP gives you over the more specialist CRM applications is that
-Open ERP knows more about your customers and your ability to supply them because it is handling all
-of your accounting, sales, purchases, manufacturing and fulfilment as well as linking to all of
+A crucial advantage that OpenERP gives you over other CRM applications is that OpenERP knows more about your customers and your ability to supply them because it is handling all of your accounting, sales, purchases, manufacturing and fulfilment as well as linking to all of
 your internal staff.
 
 .. index::
    single: module; crm
 
-Open ERP's :mod:`crm` module uses that information and offers several significant features that enable
+OpenERP's :mod:`crm` business application uses that information and offers several significant features that enable
 you and your staff to monitor and control your supplier and customer relationships effectively, such
 as delegating issues to the most appropriate people, keeping a history of communications and events,
 qualifying prospects and detecting problems.
@@ -42,11 +40,11 @@ qualifying prospects and detecting problems.
 It also uses several statistical tools that can analyze relationships quantitatively – your
 customer service performance and the quality of your suppliers, for example. Using performance
 analysis, you can easily put a policy of real continuous improvement in place by developing an
-automatic rules-based system in Open ERP.
+automatic rules-based system in OpenERP.
 
-To minimize re-typing work, Open ERP provides an email gateway that links your emails to the
-databases. This is a significant feature – many of your staff will then use Open ERP
-automatically through email without ever logging into it themselves and having to learn a new
+To minimize re-typing work, OpenERP provides an email gateway that links your emails to the
+databases. This is a significant feature – many of your staff members can then use OpenERP
+automatically through their email client without ever logging into it themselves and having to learn a new
 system.
 
 Finally, at the end of this chapter you will see an efficient method of qualifying prospects or
@@ -54,7 +52,7 @@ customers that enables you to offer a service tailored to the potential value of
 prospects.
 
 For this chapter you should start with a fresh database that includes demo data,
-using the :guilabel:`CRM profile` and no particular chart of accounts configured.
+install the :guilabel:`Customer Relationship Management` application.
 
 .. raw:: html
 

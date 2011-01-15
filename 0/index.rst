@@ -228,7 +228,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			and in this job responsible for the worldwide training and certification program of OpenERP.
 
 			Being an author of several Software Manuals, it is a great challenge to work on the
-			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of job,
+			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of a job,
 			but Els finds great pleasure in doing it!
 
 			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel. 

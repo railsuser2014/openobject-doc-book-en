@@ -5,16 +5,13 @@
 Organize your Partners
 ======================
 
-In OpenERP, a partner represents all the entities that you can do business with. Some possible
-different types of partners are:
+In OpenERP, a partner represents all the entities that you can do business with. Some possible types of partners are:
 
 * suppliers,
 
 * manufacturers,
 
 * customers,
-
-* clients,
 
 * employees,
 
@@ -28,12 +25,12 @@ So a partner can be both your supplier and your customer at the same time. This 
 particularly important when you have subsidiaries or franchises since transactions between the
 parent and its subsidiaries in these cases will generally be two-way.
 
-Understanding Standard Fields
------------------------------
+Creating and Updating Partners
+------------------------------
 
 .. todo: add info
 
-To get a list of customer using demonstration data, use the menu :menuselection:`Sales -->
+To create a new customer or get a list of customers using demonstration data, use the menu :menuselection:`Sales -->
 Address Book --> Customers`.
 
 .. figure::  images/crm_partner.png
@@ -42,19 +39,37 @@ Address Book --> Customers`.
 
    *A customer form*
 
+To create a new partner in OpenERP (a company, customer, supplier, ...) you should at least enter the company's :guilabel:`Name` in the partner form.
+
+Documentation to be completed.
+
+.. note:: Blue fields are mandatory, but a field may become mandatory according to data entered in previous fields. 
+
+Customizing Partner Fields
+--------------------------
+
+In the web version, click Manage Views if you want to customize the Partner view to your needs. You can add fields, delete fields or change the order of fields.
+
+Performing Actions on Partners
+------------------------------
+
 .. index::
    single: send SMS
+   single: opportunity
+   single: reminder
 
-To the right of the customer form you will find all of the actions, reports and shortcuts available to
-the selected partner. This enables you to quickly send an SMS message, for example, or review a
-partner's order history, or print a reminder letter.
+To the right of the customer form you will find all of the actions, reports and shortcuts available for the selected partner. 
+
+Print a reminder letter from the Action bar, or create a new opportunity for a customer.
+
+Another Action enables you to quickly send an SMS message. 
 
 .. tip::  Send an SMS message
 
 	To send an SMS message from standard Open ERP you will have to place an order with the bulk SMS
-	gateway operator Clickatell™http://clickatell.com.
+	gateway operator Clickatell™ http://clickatell.com.
 
-	You will then receive an API number, a login and a password which you can use in Open ERP to send
+	You will then receive an API number, a login and a password which you can use in OpenERP to send
 	SMS messages to your partners.
 
 	Or you can just develop a new module based on the inbuilt SMS functions, targeted at any of the
@@ -63,27 +78,15 @@ partner's order history, or print a reminder letter.
 To send an SMS message to a partner or a selection of several partners, first select the partners
 then click the :guilabel:`Send SMS` Action icon.
 
-To create a company in OpenERP (that is – a new partner) you should at a minimum enter the
-company's :guilabel:`Name` in the partner form.
 
-.. Customizing Partner Fields
-.. --------------------------
+.. index:: Filter
 
-.. todo: add info
+Filtering your Partners
+-----------------------
 
-.. Creating and Updating Partners
-.. ------------------------------
+Open the Customer list view to discover the search options allowing you to easily filter your partners. You can group by Salesman to see which customers have already been assigned to a salesman or not. Click the button at the right (the icon of the person) to see the customers you are responsible for.
 
-.. todo: add info
-
-.. Performing Actions on Partners
-
-.. todo: add info
-
-.. Filtering your Partners
-.. -----------------------
-
-.. todo: add info
+These filters also allow you to quickly set lists of customers for which you want to do specific actions.
 
 .. index:: Contact
 
@@ -91,10 +94,10 @@ Contacts / Addresses
 --------------------
 
 You can have several contacts for one partner. Contacts represent company employees that you are in
-contact with, along with their address details. For each address you can indicate their type (\
+contact with, along with their address details. For each address you can indicate the address type (\
 ``Default``\  , \ ``Invoice``\  , \ ``Delivery``\  , \ ``Contact``\   or \ ``Other``\  ). Based on
 this, OpenERP can supply an address that matches the contact's function when generating documents
-at various stages through an Order process.
+in various stages through an Order process.
 
 Contacts can be entered into the first (:guilabel:`General`) tab of the :guilabel:`Customer` form,
 or you can get direct access to the list of addresses through the :menuselection:`Sales -->
@@ -115,8 +118,7 @@ You can search for a subset of Partners and Contacts using the search view.
 Partner Categories
 ------------------
 
-OpenERP uses hierarchical categories to organize all of its partners. To reach the list of
-available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
+OpenERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
 
 .. figure::  images/crm_partner_category_big.png
    :scale: 50
@@ -125,7 +127,7 @@ available partner categories, use the menu :menuselection:`Sales --> Configurati
    *List of Partner Category*
 
 Double-click one of the categories in the partner category structure to get a list of the partners
-in that category. If you click on a category that has sub-categories you will get a list of all of the
+in that category. If you click on a category that has subcategories you will get a list of all of the
 partners in the main category and in all of its subcategories.
 
 Because categories are structured in a hierarchical manner, you can apply an action at any level of

@@ -1,6 +1,6 @@
 
 Lead Management
-===============
+***************
 
 A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
 
@@ -9,7 +9,9 @@ Often leads are not registered centrally, which makes it very difficult to find 
 Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
 When a lead requires follow up, it will be converted to a sales opportunity.
 
-For example, the following events could result in the creation of one or several leads:
+For example, the following events could result in the creation of one or several leads, either manually or automatically:
+
+* An email sent to one of your company's generic email addresses, such as sales@mycompany.com,
 
 * A business card from a prospective customer met briefly at an exhibition: you have to contact him
   again to qualify the lead and to know if there is any possibility of a key sales opportunity,
@@ -17,25 +19,22 @@ For example, the following events could result in the creation of one or several
 * A database of potential customers in a given sector and region. The potential customers have to be
   contacted again individually or through a mass mailing to determine which contacts require further follow-up,
 
-* A contact that you have been given by a friend. You have to qualify it before assigning a salesperson to the contact,
+* An interesting contact that you met during a business networking event. You have to qualify it before assigning a salesperson to the contact,
 
-* A form completed on your website directly integrated into Open ERP. Before converting the form
-  into a sale proposition or opportunity, you should read and handle the person's request.
+* A form completed on your website directly integrated into OpenERP. Before converting the form
+  into a sales proposition or opportunity, you should read and handle the person's request.
 
      .. note:: Separation of sales services
 
-        In companies of a certain type, you often distinguish between the sales department and the
-        presales department.
+        Some companies will have a presales and a sales department.
         The role of the presales department is to acquire and qualify new leads,
         and the role of the sales department is to crystallize the sales opportunities or work with
         existing customers.
 
-System users in the presales department will usually work on leads. Once these leads are
-converted into customers or sales opportunities the sales department pays individual attention to
-each opportunity.
+Employees in the presales department will usually work on leads. Once these leads are converted into customers or sales opportunities the sales department pays individual attention to each opportunity.
 
 Storing your Business Cards effectively
-***************************************
+=======================================
 
 New prospects are usually entered as a lead in the system. This means that you do not create a
 partner form or sales opportunity until you have qualified whether the lead is interesting or not.
@@ -65,6 +64,9 @@ Leads have a status that depends on the qualification work that has been carried
 * ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it is not worth
   following up.
 
+Importing a Leads Database
+==========================
+
 You can also import a huge list of leads. That may be useful if you have bought a database of
 potential prospects and you want to load them all into the system to handle them all at the same time.
 
@@ -90,17 +92,19 @@ information on import and export.
     So you can import and export such lists as partners, sales opportunities, accounting entries,
     products and price lists.
 
-There are other methods of importing leads automatically or semi-automatically:
+There are other methods of generating leads automatically or semi-automatically:
+
+* through a Contact Form on your Website;
 
 * Using the Outlook or Thunderbird plugin to insert new leads directly from an e-mail client when a
-  salesperson sees promising e-mails,
+  salesperson sees promising e-mails ,
 
 * Using the e-mail gateway for each incoming e-mail from a certain address (such as
   info@mycompany.com) which allows you to create a lead automatically from the contents of the e-mail,
 
 * Using OpenERP's XML-RPC web-services to connect to a form on your website.
 
-These different methods are described in the next CRM chapter, :ref:`ch-crm`.
+These different methods are described later in this book.
 
 Organizing leads
 ****************
@@ -165,7 +169,8 @@ OpenERP opens a window allowing you to select:
 
 * whether you want to add this lead to an existing opportunity (merge). 
 
-OpenERP then opens a window with the title of the opportunity (lead description) and the partner. Fill out the estimated revenue and the success rate of converting to a sale.
+OpenERP then opens a window with the title of the opportunity (lead description) and the partner.
+Fill out the estimated revenue and the success rate of converting to a sale.
 
 .. figure:: images/crm_lead_convert.png
    :scale: 50

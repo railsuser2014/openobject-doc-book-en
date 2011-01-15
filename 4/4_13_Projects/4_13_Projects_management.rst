@@ -246,7 +246,7 @@ calculates a project plan for earliest delivery using task ordering and the work
 
 	Open ERP can give you a calendar view of the different tasks in both the web client and the GTK client.
 	This is all based on the deadline data and displays only tasks that have a deadline.
-	You can then delete, create or modify tasks using simple drag and drop.
+	You can then delete, create or modify tasks using simple drag and drop (only in web).
 
 	.. figure::  images/service_task_calendar.png
 	   :scale: 50

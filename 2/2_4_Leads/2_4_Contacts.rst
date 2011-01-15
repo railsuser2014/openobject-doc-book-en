@@ -1,6 +1,6 @@
 
 Managing your Potential Customer Contacts
-=========================================
+*****************************************
 
 .. index::
    single: module; base_contact
@@ -56,12 +56,14 @@ According to your Configuration, OpenERP provides three menus to access the same
 
 * List of partners: :menuselection:`Sales --> Address Book --> Customers`,
 
+* List of Addresses: :menuselection:`Sales --> Address Book --> Addresses`,
+
 * List of contacts: :menuselection:`Sales --> Address Book --> Contacts`,
 
-If you correct a contact name on the contact form, this will be modified on all the posts occupied in the different companies.
+If you correct or change a contact name in the contact form, the changes will be applied to all the posts occupied in the different companies.
 
-The screen above represents a partner form. You can see several possible addresses there and a list of
-contacts above each address. For each contact you see a name, a function, a phone number and an
+The screen below represents a partner form. You can see several possible addresses there and a list of
+contacts below each address. For each contact you see a name, a function, a phone number and an
 email.
 
 .. figure:: images/crm_partner_contact.png
@@ -70,9 +72,7 @@ email.
 
    *A partner form with the base_contact module installed*
 
-If you click on the line you can get more detail about the function (such as start date, end date,
-and fax) or enter into the contact form (such as personal phone, different posts occupied, and
-personal blog).
+If you click the line, you can get more details about the function (such as start date, end date and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog). You can also add a photo to your contact form.
 
 .. figure:: images/crm_partner_poste.png
    :scale: 50
@@ -84,10 +84,9 @@ personal blog).
    :scale: 50
    :align: center
 
-   *Detail of a contact form for someone employed in several job posts*
+   *Detail of a partner form with several contacts*
 
-Partner management is found in the OpenERP base modules. To manage partner relations you have to
-install the CRM module. Then configure the system to meet your needs.
+Partner management is included in the OpenERP base modules. To manage partner relations you have to install the Sales Management module. Then configure the system to meet your needs.
 
 For this chapter you should create a new database with demo data through the Configuration Wizard. Select Customer Relationship Management and configure the CRM according to your needs by selecting the appropriate modules.
 OpenERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
@@ -126,11 +125,13 @@ OpenERP proposes a selection from preconfigured functions for CRM:
 
 * managing technical service,
 
-* tracking bugs and new functional requests.
+* tracking bugs and new functional requests,
+
+* share sales knowledge.
 
 You see that OpenERP's CRM module is not limited just to Customer Relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
-This book will describe just customer relationships. The other CRM functions are similar to use, so
+This part will focus on customer relationships. The other CRM functions are similar to use, so
 you should not have huge problems with understanding those functions.
 
 The following cases will be looked at in this chapter:
