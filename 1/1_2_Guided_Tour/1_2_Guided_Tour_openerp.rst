@@ -447,11 +447,8 @@ Project Management is described in :ref:`ch-projects`.
 .. index::
    single: sales
 
-Manage your Business
-====================
-
 Driving your Sales
-------------------
+==================
 
 The :menuselection:`Sales` menu gives you roughly the same functionality as the
 :menuselection:`Purchases` menu – the ability to create new orders and to review the
@@ -467,7 +464,7 @@ Delivery charges can be managed using a grid of tariffs for different carriers.
    single: purchase management
 
 Driving your Purchases
-----------------------
+======================
 
 :menuselection:`Purchases` enables you to track your suppliers' price quotations and convert them into
 Purchase Orders as you require. OpenERP has several methods of monitoring invoices and tracking
@@ -487,7 +484,7 @@ You can also manage purchase requisitions to keep track of quotations sent to a 
    single: warehouse management
 
 Organise your Warehouse
------------------------
+=======================
 
 The various sub-menus under :menuselection:`Warehouse` together provide operations you need to manage stock.
 You can:
@@ -564,11 +561,8 @@ and ranges. You can test the system using this data.
    single: calendar
    single: CalDAV
 
-Share your Knowledge
-====================
-
-Efficient Document Management
------------------------------
+Share your Knowledge through Efficient Document Management and Being Mobile
+===========================================================================
 
 OpenERP integrates a complete document management system that not only
 carries out the functions of a standard DMS, but also integrates with all
@@ -578,9 +572,6 @@ it keeps all of this synchronized. You can define your own directory structure a
 OpenERP provides an FTP Interface for the Document Management System. You will not only be able to access documents from OpenERP, but you can also use a regular file system with the FTP client.
 FTP is just a way of getting access to files without needing to use an OpenERP client, to allow you to access files from anywhere.
 You can also add documents to be stored in OpenERP directly through the FTP system in the corresponding OpenERP directory. These documents will automatically be accessible from the form concerned in OpenERP.
-
-Be Mobile
----------
 
 The Knowledge system is also well-integrated with e-mail clients such as Thunderbird and Outlook. It also allows you to sync your calendars (CalDAV).
 
