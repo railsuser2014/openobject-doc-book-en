@@ -8,7 +8,7 @@
 Guided Tour
 ***********
 
- *Starting to discover Open ERP, using demonstration data supplied with the system, is a good way to
+ *Starting to discover OpenERP, using demonstration data supplied with the system, is a good way to
  familiarize yourself with the user interface.
  This guided tour provides you with an introduction to many of the available system features.*
  
@@ -19,8 +19,8 @@ most elements of global enterprises, so they should be complicated, should not t
 is often the case for proprietary software, OpenERP is a bit of an exception in the class of
 management software.
 
-Despite its comprehensiveness, OpenERP's interface and workflow management facilities are quite
-simple and intuitive to use. For this reason OpenERP is one of the few software packages with
+Even though OpenERP is a comprehensive software, the user interface and workflow management facilities are quite
+simple and intuitive to use. For this reason, OpenERP is one of the few software packages with
 reference customers in both very small businesses (typically requiring simplicity) and large
 accounts (typically requiring wide functional coverage).
 
@@ -33,7 +33,7 @@ A two-phase approach provides a good guide for your first steps with OpenERP:
    the next chapter, :ref:`ch-real`).
 
 To read this chapter effectively, make sure that you have access to an OpenERP server. The
-description in this chapter assumes that you are using the Open ERP web client unless it states
+description in this chapter assumes that you are using the OpenERP web client unless it states
 otherwise. The general functionality differs little from one client to the other.
 
 .. raw:: html
