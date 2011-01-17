@@ -52,6 +52,8 @@ To set up the calendars, proceed as follows:
 5. Enter the host name.
    (E.g. if the url is http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com is the host)
 
+.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Iphone. Then the Caldav server will be shown.
+
 6. In ``Username`` and ``Password``, type your OpenERP login and password.
 
 7. As a description, you can either leave the server's name or
@@ -104,6 +106,8 @@ How to configure?
    
 2. On the Connection tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
 
+.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Android. Then the Caldav server will be shown.
+
 3. Type your OpenERP username and password
 
 4. If your server does not use SSL, you will get a warning. Answer ``Yes``.
@@ -128,6 +132,9 @@ Calendars in Evolution
     - Username : Your username (e.g. Demo)
     - Refresh : every time you want Evolution to synchronize the data with the server
 
+.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Evolution. Then the Caldav server will be shown.
+
+
 4. Click OK and enter your OpenERP password.
 
 5. A new calendar with the name you entered should appear on the left side.
@@ -151,7 +158,9 @@ Configuration
 
 4. As a format, select CalDav
    and as a location type the url (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings)
-   
+ 
+.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Sunbird/Lightning. Then the Caldav server will be shown.
+  
 5. Choose a name and a colour for the Calendar, and we advice you to uncheck "alarm".
 
 6. Enter your Openerp login and password (to give the password only once, check the box "Use Password Manager to remember this password").

@@ -1,6 +1,6 @@
 
 Managing your Potential Customer Contacts
-*****************************************
+=========================================
 
 .. index::
    single: module; base_contact

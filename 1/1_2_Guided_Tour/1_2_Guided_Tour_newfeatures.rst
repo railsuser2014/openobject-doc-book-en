@@ -31,7 +31,11 @@ General Features
 
 * Create your own e-mail templates for use throughout OpenERP,
 
-* Use the Scheduler for other objects than Manufacturing.
+* Use the Scheduler for other objects than Manufacturing,
+
+* Click the `star` in the web version to quickly create a shortcut for a screen you often use,
+
+* When you perform an action in List view in the web version, (i.e. change the status of a lead), OpenERP will display a bar containing information about this change. You can click the link to open the lead concerned. 
 
 Business Application-related Features
 =====================================
