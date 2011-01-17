@@ -80,6 +80,7 @@ with :mod:`stock` and its dependencies installed and no particular chart of acco
     5_14_Stock_wf
     5_14_Stock_stocks
     5_14_Stock_logistic
+    5_14_Stock_muti_company.rst
     5_14_Stock_import
     5_14_Stock_warehouses
     5_14_Stock_production.rst
