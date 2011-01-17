@@ -2,7 +2,7 @@
 Basic Logistics Configuration
 =============================
 
-In this section you will see how to configure stock management to match your company's needs. Open ERP
+In this section you will see how to configure stock management to match your company's needs. OpenERP
 can handle many different situations by configuring it to behave as required.
 
 .. index::

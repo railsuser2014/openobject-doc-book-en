@@ -3,7 +3,7 @@
 Logistics Configuration in a Multi-Company Environment
 ======================================================
 
-To configure your logistics in multi-comapny environment you need to install module :mod:`stock_location`.
+To configure your logistics in multi-company environment you need to install module :mod:`stock_location`.
 
 This module supplements the Warehouse application by adding support for per-product location paths,
 effectively implementing Push and Pull inventory flows.

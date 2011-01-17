@@ -1,6 +1,6 @@
-
+***************
 Lead Management
-===============
+***************
 
 A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
 
@@ -36,7 +36,7 @@ The following events could result in the creation of one or several leads, eithe
 Employees in the presales department will usually work on leads. Once these leads are converted into customers or sales opportunities the sales department pays individual attention to each opportunity.
 
 Storing your Business Cards effectively
----------------------------------------
+=======================================
 
 New prospects are usually entered as a lead in the system. This means that you do not create a
 partner form or sales opportunity until you have qualified whether the lead is interesting or not.
@@ -71,7 +71,7 @@ You can use the arrows (even from List view) to change the status (qualification
 On the :guilabel:`Communication & History` tab in the Lead form, you can see the action history for this lead. You can also add internal notes and change the status while adding such a note.
 
 Importing a Leads Database
---------------------------
+==========================
 
 You can also import a huge list of leads. That may be useful if you have bought a database of
 potential prospects and you want to load them all into the system to handle them all at the same time.

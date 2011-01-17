@@ -22,10 +22,10 @@ operations:
 The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.
 
-If you order '30 bicycles' from a supplier, Open ERP will then do the following operations after the
+If you order '30 bicycles' from a supplier, OpenERP will do the following operations after the
 receipt of the products:
 
-.. table:: Stock Move operation from Suppliers to Stock
+.. table:: Stock Move Operation from Suppliers to Stock
 
    ================================================== =============
    Location                                           Products
@@ -37,7 +37,7 @@ receipt of the products:
 If you deliver 2 bicycles to a European customer you will get the following transactions for the
 delivery:
 
-.. table:: Stock Move operation from Stock to European Customers
+.. table:: Stock Move Operation from Stock to European Customers
 
    ================================================== =============
    Location                                           Products
@@ -46,9 +46,9 @@ delivery:
    Partner Locations > Customers > European Customers +2 bicycles
    ================================================== =============
 
-When the two operations are complete you will then get the following stock in each location:
+When the two operations are complete, you will see the following stock in each location:
 
-.. table:: Resulting stock situation
+.. table:: Resulting Stock Situation
 
    ================================================== =============
    Location                                           Products
@@ -58,14 +58,16 @@ When the two operations are complete you will then get the following stock in ea
    Partner Locations > Customers > European Customers +2 bicycles
    ================================================== =============
 
-So you can see that the sum of the stocks of a product in all the locations in Open ERP is always
+So you can see that the sum of the stocks of a product in all the locations in OpenERP is always
 zero. In accounting you would say that the sum of the debits is equal to the sum of the credits.
 
 Partner locations (customers and suppliers) are not located under your company in the hierarchical
-structure, so their contents are not considered as part of your own stock. So if you look just at
+structure, so their contents are not considered as part of your own stock. So if you just look at
 the physical locations inside your own company those two bicycles are no longer in your company.
-They are not in your own physical stock but it is still very useful to see them in your customer's
+They are no longer in your own physical stock, but it is still very useful to see them in your customer's
 stock because that helps when you carry out detailed stock management analysis.
+
+.. tip:: For Consignment Stock, you need to define the location for the consignment customer or supplier concerned as part of your own stock.
 
 .. note:: Accounts
 
@@ -77,12 +79,12 @@ stock because that helps when you carry out detailed stock management analysis.
 
 You can make a comparison with accounting, where you will easily find an error because you can look
 for an anomaly in an account or in the counterparts: if there is not enough in a bank account then that is
-probably because someone's forgotten to enter a customer's invoice payment. You always know that the
-sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
+probably because someone hass forgotten to enter a customer's invoice payment. You always know that the
+sum of debits must equal the sum of the credits in both accounting and OpenERP's stock management.
 
 In accounting, all documents lead to accounting entries that form the basis of management
 accounting. If you create invoices or code in statements of account, for example, the results of the
-operations are accounting entries on accounts. And it is the same for stock management in Open ERP.
+operations are accounting entries on accounts. And it is the same for stock management in OpenERP.
 All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture
 them, or carry out a stock inventory operation, stock moves are carried out every time.
 
@@ -94,13 +96,13 @@ when you compare the stock shown in software with real stock numbers counted in 
    single: stock; inventory operation
    single: stock; stock check
 
-In Open ERP, with its double-entry stock management, you would use stock moves for this inventory
-operation. That helps you manage your stock traceability. If there are 26 bicycles in real stock but
-Open ERP shows 28 in the system. You then have to reduce the number in Open ERP to 26. This
+In OpenERP, with its double-entry stock management, you would use stock moves for this inventory
+operation. That helps you manage your stock traceability. Suppose there are 26 bicycles in real stock but
+OpenERP shows 28 in the system. You then have to reduce the number in OpenERP to 26. This
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
 
-.. table:: Inventory operation to adjust stock
+.. table:: Inventory Operation to Adjust Stock
 
    ================================================== =============
    Location                                           Products
@@ -111,7 +113,7 @@ carried out as in the following operation:
 
 The product stock under consideration then becomes:
 
-.. table:: Real and counterpart stocks when operations are completed
+.. table:: Real and Counterpart Stocks when Operations are Completed
 
    ================================================== =============
    Location                                           Products
@@ -126,12 +128,12 @@ This example shows one of the great advantages of this approach in terms of perf
 After a few months, you can just make a stock valuation of the location ``Virtual Locations >
 Inventory Loss`` to give you the value of the company's stock losses in the given period.
 
-Now see how the following manufacturing operation is structured in Open ERP. To make a bicycle you
+Now see how the following manufacturing operation is structured in OpenERP. To make a bicycle you
 need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
 from real stock and the addition of a bicycle there. The consumption / production is formalized by
 moving products out of and into physical stock. The stock operations for this are as follows:
 
-.. table:: Stock situation resulting from manufacture
+.. table:: Stock Situation Resulting from Manufacturing
 
    ========================================= =========== ================================
    Location                                  Products    Step
@@ -144,7 +146,7 @@ moving products out of and into physical stock. The stock operations for this ar
    Physical Locations > OpenERP S.A. > Stock +1 Bicycle  Manufacture of finished products
    ========================================= =========== ================================
 
-So you have now got the outcome you need from the consumption of raw materials and the manufacture of
+So now you have got the outcome you need from the consumption of raw materials and the manufacturing of
 finished products.
 
 .. note::  Assessing created value

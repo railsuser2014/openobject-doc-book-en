@@ -1,20 +1,20 @@
 From Supplier to Customer
 =========================
 
-Now you will follow a practical example by adapting stock management operations. In order you will see:
+Now you will follow a practical example by adapting stock management operations. You will learn how to:
 
-* Defining a new product
+* Define a new product
 
-* Initial setting of inventory
+* Set initial inventory
 
-* Receiving products from a supplier
+* Receive products from a supplier
 
-* Delivering to a customer
+* Deliver to a customer
 
-* Analysis of the state of stock
+* Analyse the status of stock
 
-Defining a New Product
------------------------
+Define a New Product
+--------------------
 
 To start, define the following product:
 
@@ -29,7 +29,7 @@ To start, define the following product:
    Supply Method        Buy
    ==================== ======================
 
-Use the menu :menuselection:`Warehouse --> Products --> Products`, then click :guilabel:`New` to define a new
+Use the menu :menuselection:`Warehouse --> Product --> Products`, then click :guilabel:`New` to define a new
 product.
 
 .. figure:: images/stock_product.png
@@ -40,40 +40,40 @@ product.
 
 Three fields are important for stock management when you are configuring a new product:
 
-* :guilabel:`Product Type`
+* :guilabel:`Product Type`,
 
-* :guilabel:`Procurement Method`
+* :guilabel:`Procurement Method`,
 
-* :guilabel:`Supply Method`
+* :guilabel:`Supply Method`.
 
 Product Types
---------------
+-------------
 
-The product type indicates if the product is handled in stock management and if Open ERP manages its
+The product type indicates whether the product is handled in stock management and if OpenERP manages its
 procurement. The three distinct product types are:
 
-* :guilabel:`Stockable Product` : This product is used in stock management and its replenishment is
-  more or less automated as defined by the rules established in the system. Examples, a bicycle, a
+* :guilabel:`Stockable Product`: This product is used in stock management and its replenishment is
+  more or less automated as defined by the rules established in the system. Examples: a bicycle, a
   computer or a central heating system.
 
-* :guilabel:`Consumable` : This product is handled in stock management, you can receive it, deliver it and make it.
-  But its stock level is not managed by the system. Open ERP assumes that you have got sufficient levels
-  in stock at all time, so it does not restock it automatically. Example, nails.
+* :guilabel:`Consumable`: This product is handled in stock management, you can receive it, deliver it and produce it.
+  However, its stock level is not managed by the system. OpenERP assumes that you have got sufficient levels
+  in stock at all time, so it does not restock it automatically. Example: nails.
 
-* :guilabel:`Service` : It does not appear in the various stock operations. Example, a consulting
+* :guilabel:`Service`: It does not appear in the various stock operations. Example, a consulting
   service.
 
-Procure Methods – Make to Stock and Make to Order
--------------------------------------------------
+Procurement Methods – Make to Stock and Make to Order
+-----------------------------------------------------
 
-The procure method determines how the product will be replenished:
+The procurement method determines how the product will be replenished:
 
-* :guilabel:`Make to Stock` : your customers are supplied from available stock. You procure a
-  set quantity of each product when its stock is too low. Example, a classic distributor.
+* :guilabel:`Make to Stock`: your customers are supplied from available stock. You procure a
+  set quantity of each product when its stock is too low (according to minimum stock rules). Example: a classic distributor.
 
-* :guilabel:`Make to Order` : when a customer order is confirmed, you then procure or manufacture
+* :guilabel:`Make to Order`: when a customer order is confirmed, you then procure or manufacture
   the products for this order. A customer order 'Make to Order' will not modify stock in the medium term
-  because you restock with the exact amount that was ordered. Example, computers from a large supplier
+  because you restock with the exact amount that was ordered. Example: computers from a large supplier
   assembled on demand.
 
 You find a mix of these two modes used for the different final and intermediate products in most
@@ -82,9 +82,7 @@ enabling the salesperson to choose the best mode for fulfilling a particular ord
 sales order parameters as needed.
 
 The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
-managed Make to Order and another
-managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Forecast` report,
-available from the product form.
+managed Make to Order and another managed Make to Stock. The two figures are taken from OpenERP's :guilabel:`Stock Level Forecast` report, available from the product form.
 
 .. _fig-stfrst:
 
@@ -106,27 +104,27 @@ available from the product form.
 
    The :guilabel:`Make to Stock` logistical approach is usually used for high volumes and when the
    demand is seasonal or otherwise easy to forecast.
-   The :guilabel:`Make to Order` approach is used for products that are measured, or very costly to
-   stock or have a short re-stocking time.
+   The :guilabel:`Make to Order` approach is used for products that are measured, or very expensive to
+   stock or have a short restocking time.
 
 Supply Methods
----------------
+--------------
 
-Open ERP supports two supply methods:
+OpenERP supports two supply methods:
 
-* Produce: when the product or service is supplied from internal resources.
+* Produce: when the product is manufactured or the service is supplied from internal resources.
 
 * Buy: when the product is bought from a supplier.
 
 These are just the default settings used by the system during automated replenishment. The same
 product can be either manufactured internally or bought from a supplier.
 
-These three fields (:guilabel:`Supply Method`, :guilabel:`Procurem Method`, :guilabel:`Product
+These three fields (:guilabel:`Supply Method`, :guilabel:`Procurement Method`, :guilabel:`Product
 Type`) determine the system's behaviour when a product is required. The system will generate
 different documents depending on the configuration of these three fields when satisfying an order, a
 price quotation to a supplier or a manufacturing order.
 
-Open ERP manages both stockable products and services. A service bought from a supplier in
+OpenERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
 Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
@@ -137,11 +135,11 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
    :scale: 90
    :align: center
 
-   *Workflow for automatic procurement, dependent on the configuration of the product*
+   *Workflow for automatic procurement, depending on the configuration of the product*
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
-.. table:: Consequences of Procurement Methods Make to Stock and Make To Order
+.. table:: Consequences of Procurement Methods Make to Stock (MTS) and Make To Order (MTO)
 
    ================== ===================== =====================
    Procurement Method Produce               Buy
@@ -159,7 +157,7 @@ The table below shows all possible cases for the figure :ref:`fig-stflow`.
    MTO                Create task           Subcontract
    ================== ===================== =====================
 
-You'll see the automated management processes for procurement in detail further on in this chapter.
+You will learn more about the automated management processes for procurement further on in this chapter.
 
 .. index::
    single: unit of measure
@@ -168,7 +166,7 @@ You'll see the automated management processes for procurement in detail further 
 Units of Measure
 ----------------
 
-Open ERP supports several units of measure. Quantities of the same product can be expressed in
+OpenERP supports several units of measure. Quantities of the same product can be expressed in
 several units of measure at once. For example you can buy grain by the tonne and resell it by kg.
 You just have to make sure that all the units of measure used for a product are in the same units of
 measure category.
@@ -182,23 +180,23 @@ convert from one unit of measure to another as long as they are in the same cate
 
 .. table:: Example Units of Measure
 
-   ========= ============ ======
-   UoM       Category     Rate
-   ========= ============ ======
-   Kg        Weight            1
-   Gram      Weight         1000
-   Tonne     Weight         0.01
-   Hour      Working time      8
-   Day       Working time      1
-   Half-day  Working time      2
+   ========= ============ ====== ========
+   UoM       Category     Ratio  UoM Type
+   ========= ============ ====== ========
+   Kg        Weight            1 Reference       
+   Gram      Weight         1000   Smaller
+   Tonne     Weight         1000    Bigger
+   Hour      Working time      8   Smaller
+   Day       Working time      1 Reference
+   Half-day  Working time      4   Smaller
    Item      Unit              1
    100 Items Unit           0.01
    ========= ============ ======
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
-category could be expressed in Kg, Tonnes or Grammes. You can not express them in hours or pieces.
+category could be expressed in Kg, Tonnes or Grammes. You cannot express it in hours or pieces.
 
-Use the menu :menuselection:`Sales --> Configuration --> Products -->  Units of Measure --> Units of Measure --> Units of Measure`
+Use the menu :menuselection:`Warehouse --> Configuration --> Products -->  Units of Measure --> Units of Measure`
 to define a new unit of measure.
 
 In the definition of a Unit of Measure, you have a :guilabel:`Rounding precision` factor which shows how
@@ -207,7 +205,7 @@ gives rounding to one hundredth.
 
 .. note::  Secondary Units
 
-   Open ERP supports double units of measure.
+   OpenERP supports double units of measure.
    When you use this, the whole of the stock management system is encoded in two units that do not
    have a real link between them.
 
@@ -227,11 +225,11 @@ unit of measure for purchases.
 
 These units are given suggested titles. For each operation on a product you can use another unit of
 measure, as long as it can be found in the same category as the two units already defined. If you
-use another unit of measure, Open ERP automatically handles the conversion of prices and quantities.
+use another unit of measure, OpenERP automatically handles the conversion of prices and quantities.
 
-So if you have 430 Kg of carrots at 5.30 EUR/Kg, Open ERP will automatically make the conversion if
+So if you have 430 Kg of carrots at 5.30 EUR/Kg, OpenERP will automatically make the conversion if
 you want to sell in tonnes – 0.43 tonnes at 5300 EUR / tonne. If you had set a rounding factor of
-0.1 for the :guilabel:`tonne` unit of measure then Open ERP will tell you that you have only 0.4 tonnes
+0.1 for the :guilabel:`tonne` unit of measure then OpenERP will tell you that you have only 0.4 tonnes
 available.
 
 

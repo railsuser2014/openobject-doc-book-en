@@ -1,6 +1,6 @@
-
+***************************
 Tracking your Opportunities
-===========================
+***************************
 
 While a lead represents the first contact with a prospect yet to be qualified, a sales opportunity
 represents a potential contract. Each opportunity must be followed up by a salesperson spending time

@@ -4,9 +4,9 @@ Stocks
 .. index::
    single: virtual; stock
 
-In the product form you can find a report that will give you the stock levels of the various
-different products in any selected location. If you have not selected any location, Open ERP
-calculates stocks for all of the physical locations.
+In the product form you can find the Stock by Location action that will give you the stock levels of the various
+different products in any selected location. If you have not selected any location, OpenERP
+calculates stocks for all of the physical locations. When you are in the Stock by Location view, click the Print button to print the Location Content or the Location Inventory Overview reports.
 
 .. note::  Availability of stock
 
@@ -15,23 +15,23 @@ calculates stocks for all of the physical locations.
     the stock in all of the physical stock locations. Looking at the product from the order you will
     only see the report of the warehouse selected in the order.
 
-The two important fields in product form are:
+In this respect, two important fields in the product form are:
 
-* :guilabel:`Real Stock` : Quantity physical present in your warehouse
+* :guilabel:`Real Stock`: Quantity physically present in your warehouse,
 
-* :guilabel:`Virtual Stock` : Calculated this way: real stock – outgoing + incoming
+* :guilabel:`Virtual Stock`: Calculated as follows: real stock – outgoing + incoming.
 
 .. note::  Virtual Stock
 
-    Virtual stock is very useful because it shows what the salespeople can sell. If it is more than
-    real stock it is because products will be coming in and if it is smaller than real stock then it is
-    because of certain products are reserved for other sales orders or works orders.
+    Virtual stock is very useful because it shows what the salespeople can sell. If the virtual stock is higher than the
+    real stock, this means products will be coming in. If virtual stock is smaller than real stock, certain products are
+    reserved for other sales orders or work orders.
 
 .. tip:: Detail of future stock
 
-   To get more detail about future stock, you can click :guilabel:`Future Stock Forecast` to the right of the product form
+   To get more details about future stock, you can click :guilabel:`Stock Level Forecast` to the right of the product form
    to get the report :ref:`fig-stfore` below.
-   Open ERP shows a graph of the change of stock in the days to come, varying as a function of
+   OpenERP shows a graph of the change of stock in the days to come, varying as a function of
    purchase orders, confirmed production and sales orders.
 
    .. _fig-stfore:
@@ -41,6 +41,12 @@ The two important fields in product form are:
       :align: center
 
       *Printout of forecast stock levels*
+
+.. tip:: Filter on Stock by Location 
+
+   By default in Product list view, the columns Real Stock and Virtual Stock show the stock figures for all stock locations
+   where a product is stored. Use the Extended Filters to enter a specific stock location if you want to see the stock in a
+   specific location.
 
 Lead Times and Locations
 ------------------------

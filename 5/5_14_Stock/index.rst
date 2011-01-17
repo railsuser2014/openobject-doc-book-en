@@ -10,13 +10,13 @@ Your Warehouse
 **************
 
  *Open ERP's stock management is at once very simple, flexible and complete.
- It's based on the concept of double entry that revolutionized accounting.
+ It is based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
- “everything moved”. In Open ERP you do not talk of disappearance, consumption or loss of products:
+ “everything moved”. In OpenERP you do not talk of disappearance, consumption or loss of products:
  instead you speak only of stock moves from one place to another.*
 
-Just as in accounting, the Open ERP system manages counterparts to each of its main operations such as
-receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption
+Just as in accounting, the OpenERP system manages counterparts to each of its main operations such as
+receipts from suppliers, deliveries to customers, profit and loss from inventory, and consumption
 of raw materials. Stock movements are always made from one location to another. To satisfy the need
 for a counterpart to each stock movement, the software supports different types of stock location:
 
@@ -39,10 +39,10 @@ Virtual counterparts for production are used in manufacturing operations. Manufa
 characterized by the consumption of raw materials and the production of finished products. Virtual
 locations are used for the counterparts of these two operations.
 
-Inventory locations are counterparts of the stock operations that represent your company's profits
-and losses in terms of your stocks.
+Inventory locations are counterparts of the stock operations that represent your company's profit
+and loss in terms of your stocks.
 
-The figure :ref:`fig-stloctree` shows the initial configuration of the stores locations when the software is
+The figure :ref:`fig-stloctree` shows the initial configuration of the locations when the software is
 installed.
 
 .. _fig-stloctree:
@@ -51,24 +51,24 @@ installed.
    :scale: 75
    :align: center
 
-   *Stores location structure when Open ERP has just been installed*
+   *Location structure when OpenERP has just been installed*
 
 .. note::  Hierarchical stock locations
 
-    In Open ERP locations are structured hierarchically.
+    In OpenERP, locations are structured hierarchically.
     You can structure your locations as a tree, dependent on a parent-child relationship.
     This gives you more detailed levels of analysis of your stock operations and the organization of
     your warehouses.
 
 .. tip:: Locations and Warehouses
 
-    In Open ERP **warehouses** represent your places of physical stock.
+    In OpenERP a **Warehouse** represents your places of physical stock.
     A warehouse can be structured into several locations at multiple levels.
     Locations are used to manage all types of storage place, such as at the customer and production
     counterparts.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`stock` and its dependencies installed and no particular chart of accounts configured.
+with Warehouse Management and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 

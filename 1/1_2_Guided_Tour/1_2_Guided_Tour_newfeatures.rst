@@ -58,6 +58,8 @@ Business Application-related Features
 
 * Push & Pull rules for stock locations have been extended and integrated with multicompany,
 
+* Configure units of measure by reference unit, bigger then / smaller then reference unit.
+
 *Accounting & Financial Management*
 
 * By default, only one Entry Sequence available for a journal. If you want to have two sequences to be used for your journal numbering, please install the :mod:`account_sequence` module,
