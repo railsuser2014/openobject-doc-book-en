@@ -43,7 +43,7 @@ menu :menuselection:`Sales --> Configuration --> Automated Actions --> Automated
 Profiling
 ---------
 
-The segmentation tools let you create partner groups and act on each segment differently.
+The segmentation tools let you create partner groups and act on each segment differently according to questionnaires.
 For example you could create pricelists for each of the segments, or start phone marketing campaigns
 by segment. To enable the management of segmentation you should install the module
 :mod:`crm_profiling`, which can also be achieved from the Configuration Wizard.
@@ -55,7 +55,7 @@ Report Designer
 ---------------
 
 The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
-letters for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
+letters for different prospects. OpenERP also has e-mail templates to simplify the creation of
 mass mailing.
 
 
