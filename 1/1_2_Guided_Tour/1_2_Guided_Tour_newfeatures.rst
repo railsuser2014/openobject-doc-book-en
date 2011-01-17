@@ -31,18 +31,24 @@ General Features
 
 * Create your own e-mail templates for use throughout OpenERP,
 
+* Use the Scheduler for other objects than Manufacturing.
+
 Business Application-related Features
 =====================================
 
 *Sales Management*
 
-* CRM has been included in the Sales Management Business Application,
+* CRM has been integrated in the Sales Management Business Application,
 
 * Geolocalization module, also allowing you to send qualified opportunities directly to external partners,
 
 * Manage your Marketing Campaigns and send automated e-mails based on your own templates,
 
-* For Leads, OpenERP will check the email address of the contact and when found for an existing partner, it will propose to merge the new contact with the corresponding partner;  
+* For Leads, OpenERP will check the email address of the contact and when found for an existing partner, it will propose to merge the new contact with the corresponding partner,  
+
+* Create your company wiki for Sales FAQ,
+
+* History tab in the Customer form to keep track of all events,
  
 *Warehouse Management*
 
@@ -58,8 +64,7 @@ Business Application-related Features
 
 * Chart of Accounts and Chart of Taxes can be displayed for a selected period,
 
-* OpenERP added a flexible, easy Invoicing module allowing you to keep track of your accounting, even when you are not an accountant.
-If you install the Invoicing module, in Simplified view, you will only have the Invoicing items. You shouldn't use both Invoicing and Accounting,
+* OpenERP added a flexible, easy Invoicing module allowing you to keep track of your accounting, even when you are not an accountant. If you install the Invoicing module, in Simplified view, you will only have the Invoicing items. You shouldn't use both Invoicing and Accounting,
 
 * Use the Financial Management Configuration Wizard to easily select features you want to use.
 
@@ -72,6 +77,25 @@ If you install the Invoicing module, in Simplified view, you will only have the 
 * When creating a new journal, parameters are preset according to the journal type. The Entry Sequence for the journal is automatically created on Save,
 
 * Cash Box, possible to keep a real cash register.
+
+*Project Management*
+
+* Improved Gantt chart in the Web version,
+
+* Long Term Planning that can be calculated according to the working time of each employee involved in the project with the new Scheduler feature,
+
+*Manufacturing Management* 
+
+* Scrap consumed or finished goods and have the related stock moves automatically,
+
+* Consume products partially or completely.
+
+*Human Resources Management*
+
+* Manage your evaluation process,
+
+* Keep track of your recruitments and receive applicant mails directly in OpenERP, including attachments.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

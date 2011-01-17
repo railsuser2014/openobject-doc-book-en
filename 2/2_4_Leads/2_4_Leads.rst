@@ -66,6 +66,10 @@ Leads have a status that depends on the qualification work that has been carried
 * ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it is not worth
   following up.
 
+You can use the arrows (even from List view) to change the status (qualification) of a lead.
+
+On the :guilabel:`Communication & History` tab in the Lead form, you can see the action history for this lead. You can also add internal notes and change the status while adding such a note.
+
 Importing a Leads Database
 ==========================
 
@@ -120,12 +124,12 @@ The :menuselection:`Sales --> Sales --> Leads` can be used for several things:
 
 * This view displays a list of all the leads (both open and not) which you are linked to,
 
-* You can display list of all your leads that you still need to handle (your open, draft and waiting leads),
+* You can display a list of all your leads that you still need to handle (your open, draft and pending leads),
 
-* You can display a list of all your  leads that are still waiting for a customer response (usually in Pending status). This enables you to check periodically on your work to do,
+* You can display a list of all your leads that are still waiting for a customer response (usually in Pending status). This enables you to check periodically on your work to do,
 
 * You can display a list of all the leads assigned to different salespeople.
-  This menu (as those beneath it) are used by managers to check on each person's work.
+  This menu (as those beneath it) are used by managers to check each person's work.
 
 .. figure:: images/crm_leads_list.png
    :scale: 50
@@ -133,8 +137,8 @@ The :menuselection:`Sales --> Sales --> Leads` can be used for several things:
 
    *List of leads to be handled*
 
-Leads are prioritized. Salespeople should ideally start at the top of the list. They then open a
-form to describe the lead. At this stage they contact the suspected customer by email or phone and enter the
+Leads are prioritized. Salespeople should ideally start working on leads from the top of the list. Open a
+form to describe the lead. At this stage, they contact the suspected customer by email or phone and enter the
 result of the contact on the lead form.
 
 They can then change the status of the lead to a state that depends on the response from the
@@ -147,8 +151,12 @@ suspect:
 Converting Leads into Customers or Opportunities
 ************************************************
 
-If a lead is interesting you convert it into a partner in the system. To do that, push the button
-:guilabel:`Create` next to the :guilabel:`Customer` field. 
+If a lead is interesting, you convert it into a partner / opportunity in the system.
+
+You can do this in one step (convert to opportunity, and if partner does not exist, OpenERP will create it or merge it) or in two steps (first create partner, then convert to opportunity).
+
+Click the button :guilabel:`Create` next to the :guilabel:`Customer` field to create a new partner or link to an existing partner. 
+
 OpenERP shows a window allowing you to select:
 
 * whether you want to create a new partner,
@@ -159,11 +167,13 @@ Then OpenERP opens a partner form with the information from the lead entered
 into it. At this stage you can add more information such as the exact partner address and the
 contact details.
 
-The created partner is automatically attached to the lead, which enables you to keep complete
-traceability from the lead. Have a look at the third tab in the lead :guilabel:`Communication & History`.
+The partner created is automatically attached to the lead, which enables you to keep complete
+traceability from the lead. Have a look at the :guilabel:`Communication & History` tab in the lead.
 
 If the salesperson thinks that there is a real opportunity with the lead, following the contact he had with the prospect, he
 can convert it into a sales opportunity using the button :guilabel:`Convert to Opportunity`.
+
+.. tip:: When you click the `Convert to Opportunity` button and the email address of the new contact is filled out, OpenERP will check whether this email address corresponds to one found for an existing partner. If so, OpenERP will directly propose to merge the new contact with the partner found.  
 
 OpenERP opens a window allowing you to select:
 

@@ -217,7 +217,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			Clear and explicite communication is crucial.
 
 			Educated as a Professional Translator in Antwerp, she worked as an independent translator
-			on the localization of major ERP softwares. As such, Els acquired ERP knowledge and decided
+			on the localization of major ERP softwares. Els acquired ERP knowledge and decided
 			to start working as a functional ERP consultant and a Technical Communicator for ERP software.
 
 			As such, the world of OpenSource software became more and more attractive.
