@@ -1,44 +1,70 @@
-Defining a Marketing Campaign in OpenERP v6
-===========================================
+Marketing Campaigns
+===================
 
-Table of Contents
- * 0. Introduction
-   * Access Rights
- * 1. Campaigns
-   * Activities
-   * Transitions
-   * Conditions
-   * Workflow view
-   * Campaign modes/testing
-   * Workitems
- * 2. Email templates
-   * HTML/Plaintext
-   * Attachments
-   * CRM case tracking
- * 3. Other Actions
-   * Server Actions
-   * Dummy Action (no action)
- * 4. Campaign segments
-   * Creation using advanced search filters
-   * Various sync modes
-   * Synchronization
- * 5. Campaign follow-up
-   * Manual/Automated confirmation
-   * Reporting
- * 10. Misc
-   * ...
-=================================================
+.. index::
+   single: Actions
+   single: Activity
+   single: Workflow
+   single: Object
+   single: Criteria
+   single: Conditions
+   single: Workitem
+   single: Startflag
+   single: Boolean
+   single: Dot Notation
+   single: Attributes
+   single: Marketing
+   single: Campaigns
+
+
+OpenERP offers a set of modules allowing you to easily create and track your Marketing Campaigns.
+With the Marketing application you define your direct marketing campaigns, which can be displayed in List or Diagram view (process). 
+
+To use the email functionality, you have to configure your email account.
+Go to :menuselection:`Sales > Configuration > Emails > Email Servers`. Configure your server (i.e. Google), example below. The object defines where you want the emails to enter (e.g. as a Lead). (See Fetchmail)
+
+Click the Fetch email button to get the emails directly. OpenERP also automatically creates a Scheduled Action to fetch the mails every 5 minutes. The email is automatically created as a lead (according to the object used).
+
+Automate your leads with Marketing Campaigns
+--------------------------------------------
+*Example with the email marketing campaign we follow at OpenERP for our SAAS offer.*
+Whenever someone subscribes to OpenERP online he/she fills a form which becomes the lead of OpenERP SaaS offer Campaign. Our SaaS salesperson triggers the marketing campaign by sending an introductory email of services we offer and thanking for subscribing for the one month free trial. Based on the response, we plot whether the lead is interested in OpenERP SAAS offer, Training or buying the OpenERP book. Significantly these are our subsets and based on their cues we send them email catering that respective needs. If they respond back, they are converted into an opportunity and thereby on subscription of our services they become our partner.
+In lack of response, we sent them another reminder regarding the offer after a weeks duration. If they still did not respond, our salesperson gives a voluntary call inquiring their needs. Hence like a flowchart we can trigger a respective activity for every possible cues. The chances of leads going unattended becomes very low, and for every lead we have a predefined method of treating it and we could measure it with our goals. Based on the goals we can also evaluate the effectiveness of our campaign and analyze if there is a room of improvement.
+ 
+*What are the questions you should focus on?*
+Designing every marketing campaign is mostly a long term process and the success of any campaign depends on the research and the effectiveness in the selection of customers in the campaign. There are certain questions that every marketeer always asks while designing a campaign.
+
+* What would be our marketing campaign?
+* Who would be the target audience?
+* How would we measure the effectiveness of our campaign?
+ 
+The OpenERP campaign works on the basic principle of lead automation. A lead is created based on a specific response by a customer towards a stimuli. E.g: Filling the subscription form on your website.
+The first step is defining the campaign i.e. the sequence of steps to be performed. On defining the campaign we trigger a set of activities in the marketing campaign module of OpenERP.
+Based on the lead automation we define the sequence of steps we ought to follow, the modes of creating and processing these activities and the cost involved with these campaign. Thus after each activity and based on its respective stimuli we can trigger the next event of the respective campaign.
+ 
+*Why is the Segment important?*
+The two most important points for any successful campaign are the adoption of a concrete methodology of execution and choosing the right segment: a target loop of customers to whom our campaign would be directed. Inappropriate focus on segment would result in the campaign being misfired and our efforts would reach deaf ears.
+
+* Through the Segment tab in the **Campaign** module we can define our segment for the Campaign activity, since it is possible that with every step downwards our segment gets narrowed in terms of number. You can also synchronize the entire campaign steps based on our defined segments.
+ 
+*How is Marketing Campaign related to CRM?*
+The Marketing Campaign module is closely synchronized with the Sales Management Business Application (CRM). Initially,let us consider the segment we cater in the campaign as Leads. Goals are set for each campaign which would be considered as a desired state. Once a lead accomplishes our objective criteria of goals we change their status by converting them into Opportunity (i.e. we should give focused attention to those leads). Once the lead satisfies our final objective we would consider them as a partner/customer and close that lead.
+
+*Email Templates*
+For each email template, you can have OpenERP generate a Wizard Action / Button that will be related to the object. So if you choose to do marketing campaigns for leads, the action will be added to the right side panel of the Lead form.
+
+Defining a Marketing Campaign in OpenERP
+========================================
+
+Please notice that it requires some technical knowledge to configure Marketing Campaigns.
+To be able to see, create, edit campaign, users need to be in the Marketing / User group.
 
 0. Introduction
 A campaign defines a workflow of activities that items/objects entering the campaign will go through. Items are selected by segments. Segments are automatically processed every few hours and inject new items into the campaign, according to a given set of criteria.
 It is possible to watch the campaign as it is running, by following the campaign "workitems". A workitem represents a given object/item passing through a given campaign activity. Workitems are left behind when the item proceeds to the next activities. This allows an easy analysis and reporting on the running campaign.
-Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted, if the condition is met, the action is executed, the workitem is marked as Done, and propagated to the next activities.
+Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted; if the condition is met, the action is executed, the workitem is marked as Done, and propagated to the next activities.
 
-Access Rights
-To be able to see, create, edit campaign, users need to be in the Marketing / User group.
-
-
-1. Campaigns (Marketing > Campaigns > Campaigns)
+1. Campaigns (:menuselection:`Marketing --> Campaigns --> Campaigns`)
 
 Campaign
 Each campaign is made of activities and transitions, and must be defined on any specific object the system knows about (e.g. Leads, Opportunities, Employees, Partners).
@@ -47,62 +73,66 @@ Mode
 A campaign can be in one of 4 modes:
  * Test Directly: process the whole campaign in one go, ignoring any delay put on transitions, and does not actually execute the actions, so the result is simply the set of corresponding campaign workitems (see below). Any time a segment adds new items in the campaign they will be processed in the same manner.
  * Test in Real time: process the campaign but does not actually execute the actions, so the result is simply the set of corresponding campaign workitems (see below). Any time a segment adds new items in the campaign they will be processed in the same manner.
- * Manual confirmation: No action will be executed automatically, a human intervention is needed to let workitems proceed into the flow. It's like a step-by-step manual process using the Campaign Followup menu. You can ignore the time delays and force any step of the campaign, implementing the campaign at your pace i.e. (you have a test email and want to see if the steps and templates work to your liking). You will see that the actions set are defined as to do and Done  and the page has to be refreshed to see the next activities defined by tthe campaign note: the campaign sends real messages to the actual targets, be warned.
- * Normal: the campaign is processed normally, all actions are executed automatically at the scheduled date. note: the campaign sends real messages to the actual targets, be warned.
+ * Manual confirmation: No action will be executed automatically, a human intervention is needed to let workitems proceed into the flow. It is like a step-by-step manual process using the Campaign Followup menu. You can ignore the time delays and force any step of the campaign, implementing the campaign at your pace i.e. (you have a test email and want to see if the steps and templates work to your liking). You will see that the actions set are defined as to do and Done  and the page has to be refreshed to see the next activities defined by tthe campaign note: the campaign sends real messages to the actual targets, be warned.
+ * Normal: the campaign is processed normally, all actions are executed automatically at the scheduled date. Pay attention that in this status, the campaign sends real messages to the actual targets.
 
-Regardless of the current mode of the campaign, any workitem can be manually executed or cancelled at any time (even if it is scheduled in the future) via Campaign Followup.
+Regardless of the current mode of the campaign, any workitem can be manually executed or cancelled at any time (even if it is scheduled in the future) through *Campaign Followup*.
 
 Resource
-Specifies where the campaing will get the information from, ie what object to choose from. (e.g. Leads, Opportunities, Employees, Partners).
+Specifies where the campaign will get the information from, i.e. the OpenERP object linked (e.g. Leads, Opportunities, Employees, Partners).
 
 
 Activities
-Activities are steps in the campaign. Each activity is optionally linked to previous and next activities via transitions.
+Activities are steps in the campaign. Each activity is optionally linked to previous and next activities through transitions.
 Each activity has:
-   * one optional condition that stops the campaign
-   * one action to be executed when the activity is activated and the condition is True  (could be a 'do nothing' action)
-   * one optional signal (ignore it)
-   * a start flag (see below)
+   * one optional condition that stops the campaign,
+   * one action to be executed when the activity is activated and the condition is True (could be a 'do nothing' action),
+   * one optional signal (ignore it),
+   * a start flag (see below).
 
 Start Activity
-Activities that have the Start flag on will receive a new workitem corresponding to each new resource/object entering the campaign. It is possible to have more than one Start Activity, but not less than one.
+Activities that have the Start flag set will receive a new workitem corresponding to each new resource/object entering the campaign. It is possible to have more than one Start Activity, but not less than one.
 
 Activity Conditions
 [a Boolean expression, made of clauses combined using boolean operators: AND, OR, NOT]
 Each condition is the criterion that decides whether the activity is going to be activated for a given workitem, or just cancelled.
-It is an arbitrary expression composed of simple tests on attributes of the object, possibly combined using or, and and not operators
-See section 10.1 at bottom for reference on comparators.
-The individual tests can make use of the "object" name to refer to the object/resource it originates from (e.g the lead), using a "dot notation" to refer to its attributes. Some examples on a CRM Lead resource:
-   * object.name == 'GTK Survey Lead'  would select only Leads whose title is exactly "GTK Survey Lead"
-   * object.state == 'pending' would select Pending leads only
-   * object.country_id.code == 'be' would select leads whose country field is set to Belgium
-   * object.country_id.name == 'Belgium' would select leads whose country field is set to Belgium
-Tests can also make use of a 'workitem' name to refer to the actual item denoting the position of the object in the campaign. This can be useful to access some specific attributes, such as the segment that selected this item! Some examples:
-   * workitem.segment_id.name == 'GTK Survey EU Zone1 - Industry Consulting/Technology'  would select leads that entered this campaign through the "GTK Survey EU Zone1 - Industry Consulting/Technology" segment
-   * 'EU Zone1' in workitem.segment_id.name would select only leads that entered the campaign through a segment that has "EU Zone1" in its name
+It is an arbitrary expression composed of simple tests on attributes of the object, possibly combined using *or*, *and* & *not* operators.
 
-(In the GTK client you can use "Help > Enable Debug mode tooltips" to see the attribute name of every field in a any form. These are the same that you can use during import/export with CSV files)
+See section 6.1 at bottom for reference on Comparators.
+
+The individual tests can use the "object" name to refer to the object/resource it originates from (e.g the lead), using a "dot notation" to refer to its attributes. Some examples on a CRM Lead resource:
+
+   * object.name == 'GTK Survey Lead'  would select only leads whose title is exactly "GTK Survey Lead",
+   * object.state == 'pending' would select Pending leads only,
+   * object.country_id.code == 'be' would select leads whose country field is set to Belgium,
+   * object.country_id.name == 'Belgium' would select leads whose country field is set to Belgium.
+
+Tests can also use a 'workitem' name to refer to the actual item denoting the position of the object in the campaign. This can be useful to access some specific attributes, such as the segment that selected this item. Some examples:
+
+   * workitem.segment_id.name == 'GTK Survey EU Zone1 - Industry Consulting/Technology'  would select leads that entered this campaign through the "GTK Survey EU Zone1 - Industry Consulting/Technology" segment,
+   * 'EU Zone1' in workitem.segment_id.name would select only leads that entered the campaign through a segment that has "EU Zone1" in its name.
+
+.. tip:: In the GTK client you can use "Help > Enable Debug mode tooltips" to see the attribute name of every field in a form. These are the same that you can use during import/export with CSV files.
 
 You can also use the special formula re.search(PATTERN_TO_SEARCH, ATTRIBUTE_TO_SEARCH) where PATTERN_TO_SEARCH is a character string delimited with quotes, and ATTRIBUTE_TO_SEARCH uses the dot notation above to refer to a field of the object.
 For example for CRM leads:
-   * re.search('Plan to sell: True', object.description) would be true if the Notes on a Lead contain somewhere this text: "Plan to sell: True". Be careful that all spaces etc. do matter, so you may use the special pattern characters as detailed at the bottom to account for small variations
-   * re.search('Plan to.*True', object.description) would be true if the Notes on a Lead contain somewhere this text: "Plan to" followed later on by "True" 
 
-You can combine individual tests using boolean operators and parentheses. Some examples on a CRM Lead resource:
+   * re.search('Plan to sell: True', object.description) would be true if the Notes on a Lead contain this text: "Plan to sell: True". Be careful that all spaces etc. do matter, so you may use the special pattern characters as detailed at the bottom to account for small variations,
+   * re.search('Plan to.*True', object.description) would be true if the Notes on a Lead contain this text: "Plan to" followed later on by "True".
+
+You can combine individual tests using boolean operators and parentheses.
+Some examples on a CRM Lead resource:
+
    * object.state != 'pending' and ( re.search('Plan to sell:.*True',object.description)  and not re.search('Plan to use:.*True',object.description)   )  would be true if the lead is NOT in Pending state and it contains "Plan to sell"  but not "Plan to use"
 
-
-
-
 Guidelines for creating a campaign
- * It is a good idea to have an initial activity that will change some field on the objects entering the campaign to mark them as such, and avoid mixing them in other processes (e.g. set a specific state and Sales Team on a CRM lead being processed by a campaign) you can also define a time delay so that the campaign has a human feel (note if the answer comes in a matter of seconds or minutes it is computer generated)
- * Put a stop condition on each subsequent activity in the campaign to get items out of the campaign as soon as the goal is achieved. (e.g. every activity has a partial condition on the state of the item, if CRM Leads stops being Pending the campaign stops for that case)
 
+ * It is a good idea to have an initial activity that will change some fields on the objects entering the campaign to mark them as such, and avoid mixing them in other processes (e.g. set a specific state and Sales Team on a CRM lead being processed by a campaign). You can also define a time delay so that the campaign seems more human (note if the answer comes in a matter of seconds or minutes it is computer generated).
+ * Put a stop condition on each subsequent activity in the campaign to get items out of the campaign as soon as the goal is achieved (e.g. every activity has a partial condition on the state of the item, if CRM Leads stops being Pending, the campaign ends for that case).
 
+2. Email Templates (:menuselection:`Marketing --> Configuration --> Email Template --> Templates`)
 
-2. Email Templates (Marketing > Configuration > Email Template > Templates)
-
-Email templates are made of the following information:
+Email templates are composed of the following information:
  * The Email headers: to, from, cc, bcc, subject
  * The raw HTML body, with the low-level markup and formatting
  * The plaintext body
@@ -111,14 +141,14 @@ Headers and bodies can contain placeholders for dynamic contents that will be re
 
 3. Campaign Segments
 
-Segments are processed automatically according to a predefined schedule set in the Administration menu (Administration>Configuration>Scheduled Actions). It could be set to process every 4 hours or every minute for example.
+Segments are processed automatically according to a predefined schedule set in the menu :menuselection:`Administration --> Configuration --> Scheduled Actions`. It could be set to process every 4 hours or every minute for example.
 This is the only entry point in a campaign at the moment.
 
 Segment filters
 Segments select resources via filters, exactly the same kind of filter that can be used in advanced search views on any list in OpenERP. You can actually create them easily by saving your advanced search criteria as new filters.
 Filters mainly consist in a domain expressing the criteria of selection on a model (the resource).
 See the section 10.3 at the bottom for more information on the syntax for these filters.
-For example on Leads the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for sell: False" specified in the body:
+For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for sell: False" specified in the body:
     [  ('type','=','lead'), 
        ('state', '=', 'draft'),
        ('country_id.name', 'in', ['Belgium',
@@ -127,83 +157,25 @@ For example on Leads the following filter would select draft Leads from any Euro
                                          'United Kingdom',
                                          'France',
                                          'Germany',
-                                          'Finland',
-                                          'Denmark',
-                                          'Norway',
-                                          'Austria',
-                                          'Switzerland',
-                                          'Italy',
-                                          'Spain',
-                                          'Portugal',
-                                          'Ireland',
+                                         'Finland',
+                                         'Denmark',
+                                         'Norway',
+                                         'Austria',
+                                         'Switzerland',
+                                         'Italy',
+                                         'Spain',
+                                         'Portugal',
+                                         'Ireland',
                                           ]),
         '|', 
             ('description', 'ilike', 'Plan for use: True'), 
             ('description', 'ilike', 'Plan for sell: False')
       ]
 
+6. Miscellaneous References, Examples
 
+6.1 Reference of Comparison Operators:
 
-·         Text summary
-o   Codes to make the workflow
-§  Making fields for the criteria
-§  Making actions for the campaign
-§  Make an Index?
-o   How to define criteria
-o   How to implement
-
-·         Workflow
-o   How to define parameters
-o   How to design
-o   How to test
-
-·         Marketing
-o   How to implement marketing campaign
-o   How to synchronize
-o   How to find relevant information in module
-o   How to launch
-
-
-Idex of Titles and their function and roles
-
-o   To get to campaign
-§  Marketing
-§  Campaign this lets you see the campaigns that are in progress
-
-o   Campaign
-§  Allows you to look at an overview of campaigns
-§  Go into the campaign and see the actions and criteria
-§  Also allows you to see each step of the campaign in a list view
-§  Double clicking a activity line on the list allows you to
-·         Choose the template that will be used$
-·          
-
-o   Segments
-   * Campaign Followup
-     * allows you to see where each object is and the stage it is at, this allows you to filter the objects to visualise how many people have fit the criteria set in the campaign ie(automatic calling if the company is 50-100 strong) as well as how many are continuing the campaign.
-o   Follow up
-o   To synchronise
-o   To create a new campaign
-o   To test campaign
-o   To manually start a campaign
-o   To automatically process campaign
-
-Word index
-Actions
-Activity
-Workflow
-Object
-Criteria
-Conditions
-Workitem
-Startflag
-Boolean
-Dot Notation
-Attributes
-
-10. Misc: References, Examples
-
-10.1 Reference of comparison Operators:
  * ==: Equal
  * !=: Not Equal
  * <: Bigger than
@@ -212,16 +184,18 @@ Attributes
  * >=: Smaller than or equal to
  * in: to check that a given text is included somewhere in another text. e.g "a" in "dabc" is True
 
-10.2 Reference of Pattern/Wildcard characters
-. (this dot) represents any character (but just one)
-* means that the previous pattern can be repeated 0 or more times
-+ means that the previous pattern can be repeated 1 or more times 
-? means that the previous pattern is optional (0 or 1 times)
-.* would represent any character, repeated in 0 or more occurencies 
-.+ would represent at least 1 character (but any)
-5? would represent an optional 5 character
+6.2 Reference of Pattern/Wildcard characters
 
-10.3 Reference of filter domains:
+ * `.` (dot) represents any character (but just one)
+ * `*` means that the previous pattern can be repeated 0 or more times
+ * `+` means that the previous pattern can be repeated 1 or more times 
+ * `?` means that the previous pattern is optional (0 or 1 times)
+ * `.*` would represent any character, repeated in 0 or more occurencies 
+ * `.+` would represent at least 1 character (but any)
+ * `5?` would represent an optional 5 character
+
+6.3 Reference of filter domains
+
 Generic format is:  [ (criterion_1), (criterion_2) ] to filter for resources matching both criterions.
 It is possible to combine criterions differently with the following operators:
    * '&' is the boolean AND operator and will make a new criterion by combining the next 2 criterions (always 2). This is also the implicit operator when no operator is specified.
@@ -240,14 +214,4 @@ Where:
      * 'in', 'not in' : present or absent in a list of value. Values must be specified as [ value1, value2 ], e.g. [ 'Belgium', 'Croatia' ]
      * 'ilike' : search for string value in the operand
    * value is the text or number or list value to compare with field_path_operand using comparator
-
-Some examples:
-
-
-
-
-
-
-
-
 
