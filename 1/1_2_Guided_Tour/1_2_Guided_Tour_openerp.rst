@@ -429,20 +429,20 @@ organization and to the management of a services business.
 Drive your Projects
 ===================
 
-Open ERP's project management tools enable you to hdefine tasks and specify requirements for those tasks, efficient allocation of resources to the requirements, project planning, scheduling and automatic communication with partners.
+OpenERP's project management tools enable you to define tasks and specify requirements for those tasks, efficient allocation of resources to the requirements, project planning, scheduling and automatic communication with partners.
 
-All projects are hierarchically structured. You can review all of the projects from the menu :menuselection:`Project Management --> All Projects`. To view a project's plans, select a project line and then click :guilabel:`Print`. Then select :guilabel:`Gantt diagram` to obtain a graphical representation of the plan.
+All projects are hierarchically structured. You can review all of the projects from the menu :menuselection:`Project --> Projects`. Then select :guilabel:`Gantt view` to obtain a graphical representation of the project.
 
 .. figure:: images/project_gantt.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Project Planning*
 
-You can run projects related to Services or Support, Production or Development – it's a universal
+You can run projects related to Services or Support, Production or Development – it is a universal
 module for all enterprise needs.
 
-Project Management is described in :ref:`ch-projects`.
+Project management is described in :ref:`ch-projects`.
 
 .. index::
    single: sales
