@@ -21,7 +21,7 @@ OpenERP offers a set of modules allowing you to easily create and track your Mar
 With the Marketing application you define your direct marketing campaigns, which can be displayed in List or Diagram view (process). 
 
 To use the email functionality, you have to configure your email account.
-Go to :menuselection:`Sales > Configuration > Emails > Email Servers`. Configure your server (i.e. Google), example below. The object defines where you want the emails to enter (e.g. as a Lead). (See Fetchmail)
+Go to :menuselection:`Sales > Configuration > Emails > Email Servers`. Configure your server (i.e. Google), example below. The object defines where you want the emails to enter (e.g. as a Lead). (See :ref:`ch-crm-fetchmail`)
 
 Click the Fetch email button to get the emails directly. OpenERP also automatically creates a Scheduled Action to fetch the mails every 5 minutes. The email is automatically created as a lead (according to the object used).
 

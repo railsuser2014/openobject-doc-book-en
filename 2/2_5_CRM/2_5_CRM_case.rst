@@ -277,6 +277,9 @@ the setup window. The following actions are included:
 			* select and qualify your suppliers on the basis of their quality of service
 
 .. index:: gateway
+   single: fetchmail
+
+.. _ch-crm-fetchmail:
 
 Using the e-mail gateway
 -----------------------
@@ -303,7 +306,7 @@ Install the Fetchmail module from the Configuration Wizard (CRM Configuration Wi
 
 *Step 1*
 
-Go to Tools > Configuration > Email Template > Email Accounts to define the e-mail smtp settings.
+Go to :menuselection:`Tools --> Configuration --> Email Template --> Email Accounts` to define the e-mail smtp settings.
 
 In the ``Description`` field, type the visible name you would like to use for the account.
 
