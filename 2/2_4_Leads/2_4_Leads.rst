@@ -6,7 +6,9 @@ A lead represents a possible business or sales. Usually it is the first step in 
 
 Often leads are not registered centrally, which makes it very difficult to find the appropriate information.
 
-Leads are usually not qualified nor assigned to an individual (sales)person for follow up.
+Leads can be assigned to a *Sales Team* for follow up (see  :menuselection:`Sales --> Configuration --> Sales --> Sales Teams`). Each user can be added to a default Sales team which can be specified in the Preferences. You can also escalate a lead to another Sales team, according to the tree structure you defined for your sales teams.
+Per sales team, you can assign a responsible user and a generic e-mail address that will be used. You can also assign specific stages. 
+
 When a lead requires follow up, it will be converted to a sales opportunity.
 
 For example, the following events could result in the creation of one or several leads, either manually or automatically:
