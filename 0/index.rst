@@ -1,7 +1,7 @@
 
-********
+########
 Foreword
-********
+########
 
 Information Systems have played an increasingly visible role over the past several years in
 improving the competitiveness of business.
