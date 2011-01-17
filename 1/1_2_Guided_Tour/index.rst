@@ -45,6 +45,7 @@ otherwise. The general functionality differs little from one client to the other
     1_2_Guided_Tour_db_create
     1_2_Guided_Tour_connect_openerp
     1_2_Guided_Tour_install_functionality
+    1_2_Guided_Tour_newfeatures
     1_2_Guided_Tour_openerp
 
 .. raw:: html

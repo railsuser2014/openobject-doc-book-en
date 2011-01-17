@@ -40,7 +40,7 @@ not expect a self-signed certificate (or one that is not verified by
 one of the "big" certificate authorities).
 
 Calendars on iPhone
-===================
+-------------------
 
 To set up the calendars, proceed as follows:
 
@@ -88,16 +88,16 @@ you will first need to let the iPhone trust the certificate. Follow these steps:
       now trusts it.
 
 Calendars on Android
-====================
+--------------------
 
 Prerequisites
--------------
+*************
 There is no built-in way to synchronize calendars with caldav.
 So you need to install a third party software: Calendar (CalDav) Sync BETA 
 from Hypermatrix Software (for now it is the only one).
 
 How to configure?
------------------
+*****************
 
 1. Open the ``Calendar Sync`` application.
    You get an interface with 2 tabs.
@@ -111,7 +111,7 @@ How to configure?
 5. Then you can synchronize manually or customize the settings (Sync tab) to synchronize every x minutes.
 
 Calendars in Evolution
-======================
+----------------------
 
 1. Go to Calendar View
 
@@ -133,15 +133,15 @@ Calendars in Evolution
 5. A new calendar with the name you entered should appear on the left side.
 
 Calendars in Sunbird/Lightning
-==============================
+------------------------------
 
 Prerequisites
--------------
+*************
 If you are using Thunderbird, first install the Lightning module
 http://www.mozilla.org/projects/calendar/lightning/
 
 Configuration
--------------
+*************
 
 1. Go to Calendar View
 
