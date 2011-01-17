@@ -9,9 +9,9 @@ Often leads are not registered centrally, which makes it very difficult to find 
 Leads can be assigned to a *Sales Team* for follow up (see  :menuselection:`Sales --> Configuration --> Sales --> Sales Teams`). Each user can be added to a default Sales team which can be specified in the Preferences. You can also escalate a lead to another Sales team, according to the tree structure you defined for your sales teams.
 Per sales team, you can assign a responsible user and a generic e-mail address that will be used. You can also assign specific stages. 
 
-When a lead requires follow up, it will be converted to a sales opportunity.
+When a lead requires follow up, it will be converted to a sales opportunity. OpenERP checks whether a partner with the e-mail address from the lead form already exists, and then proposes to link the contact to the existing partner.
 
-For example, the following events could result in the creation of one or several leads, either manually or automatically:
+The following events could result in the creation of one or several leads, either manually or automatically:
 
 * An email sent to one of your company's generic email addresses, such as sales@mycompany.com,
 

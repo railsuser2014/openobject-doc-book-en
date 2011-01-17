@@ -41,6 +41,8 @@ Business Application-related Features
 * Geolocalization module, also allowing you to send qualified opportunities directly to external partners,
 
 * Manage your Marketing Campaigns and send automated e-mails based on your own templates,
+
+* For Leads, OpenERP will check the email address of the contact and when found for an existing partner, it will propose to merge the new contact with the corresponding partner;  
  
 *Warehouse Management*
 
@@ -52,11 +54,24 @@ Business Application-related Features
 
 * Separate numbering now also available for Bank Journals,
 
-* Cash Box available,
-
 * Quickly enter Journal Entries from List View from the Journal Items menu. Configure your journal with default debit & credit accounts, select the journal in the Journal Items List View, click New and start creating new entries, 
 
 * Chart of Accounts and Chart of Taxes can be displayed for a selected period,
+
+* OpenERP added a flexible, easy Invoicing module allowing you to keep track of your accounting, even when you are not an accountant.
+If you install the Invoicing module, in Simplified view, you will only have the Invoicing items. You shouldn't use both Invoicing and Accounting,
+
+* Use the Financial Management Configuration Wizard to easily select features you want to use.
+
+* On installation of a predefined Chart of Accounts, the wizard also proposes default bank and cash accounts, and default Sales and Purchase taxes,
+
+* On a journal you can set whether OpenERP should perform a check whether the invoice date is in the current period. This used to be a separate module,
+
+* Different journal types for Refunds and Invoices,
+
+* When creating a new journal, parameters are preset according to the journal type. The Entry Sequence for the journal is automatically created on Save,
+
+* Cash Box, possible to keep a real cash register.
 
 .. Copyright © Open Object Press. All rights reserved.
 
