@@ -26,7 +26,7 @@ by the logistics manager.
 .. index::
    single: module; stock_planning
 
-To be able to use the production plan, you must install the :mod:`stock_planning` module..
+To be able to use the production plan, you must install the :mod:`stock_planning` module.
 
 .. index:: forecasts
 

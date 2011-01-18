@@ -4,15 +4,15 @@
 Management of Lots and Traceability
 ===================================
 
-The double-entry management in Open ERP enables you to run very advanced traceability. All
-operations are formalized in terms of stock moves, so it is very simple to search for the cause of any
+The double-entry management in OpenERP enables you to run very advanced traceability. All
+operations are formalized in terms of stock moves, so it is very easy to search for the cause of any
 gaps in stock moves.
 
 .. index::
    single: traceability; upstream
    single: traceability; downstream
 
-.. note:: Upstream and downstream traceability
+.. note:: Upstream and Downstream Traceability
 
     **Upstream** traceability runs from the raw materials received from the supplier and follows the
     chain to the finished products delivered to customers.
