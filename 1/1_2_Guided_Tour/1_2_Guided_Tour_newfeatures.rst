@@ -13,6 +13,8 @@ General Features
 
 * Great Improvements as to Useability, not in the least in the Web version,
 
+* Simplified versus Extended view,
+
 * When you click a Business Application in the Web version, the related Dashboard will be opened.
 
 * Menutips & Tooltips will be displayed to explain more about the active screen,

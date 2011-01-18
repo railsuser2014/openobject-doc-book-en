@@ -36,22 +36,22 @@ or a production activity, or a source location, or any given destination.
    :scale: 75
    :align: center
 
-   *History of stock movements*
+   *History of Stock Movements*
 
 Each stock move is in a given state. The different possible states are:
 
-* ``Draft`` : the move has so far had no effect in the system. The transaction has not yet been confirmed,
+* ``Draft`` : the move so far had no effect in the system. The transaction has not yet been confirmed,
 
 * ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
   you do not know whether it will be done without problem because the products have been reserved for
   the move,
 
-* ``Validated`` : the move will be done and the necessary raw material have been reserved for the
+* ``Validated`` : the move will be done and the necessary raw materials have been reserved for the
   transaction,
 
 * ``Done`` : the stock move has been done, and entered into the calculations of real stock,
 
-* ``Waiting`` : in the case of transactions ``From Order`` , this state shows that the stock move is blocked
+* ``Waiting`` : in the case of transactions ``From Order``, this state shows that the stock move is blocked
   waiting for the end of another move,
 
 * ``Cancelled`` : the stock move was not carried out, so there is no accounting for it in either real stock or
@@ -64,13 +64,13 @@ stock moves. You can also consult the history of these documents using the menu
 Lots
 ----
 
-Open ERP can also manage product lots. Two lot types are defined:
+OpenERP can also manage product lots. Two lot types are defined:
 
 * Production lots (batch numbers) are represented by a unique product or an assembly of identical
   products leaving the same production area. They are usually identified by bar codes stuck on the
   products. The batch can be marked with a supplier number or your own company numbers.
 
-* Tracking numbers are logistical lots for identifying the container for a set of
+* Tracking numbers are logistical lots to identify the container for a set of
   products. This corresponds, for example, to the pallet numbers on which several different products
   are stocked.
 
@@ -81,7 +81,7 @@ and outgoing deliveries.
    :scale: 75
    :align: center
 
-   *Entering a line for production receipt*
+   *Entering a Line for Production Receipt*
 
 To enter the lot number in an operation you can use an existing lot number or create a new pack. A
 production lot (batch number) is used for a single product. A tracking number can be
@@ -89,7 +89,7 @@ used several times for different products, so you can mix different products on 
 
 .. note:: Simplified View
 
-    In the ``Simplified View`` the tracking numbers can not be seen: the field is hidden.
+    In the ``Simplified View`` the tracking numbers cannot be seen: the field is hidden.
     To get to ``Extended View`` mode, assign the group
     :guilabel:`Usability – Extended View` to the current user.
 
@@ -99,7 +99,7 @@ receipt, or customer packing.
 
 You do not have to encode the lot number one by one to assign a unique lot number to a set of several items.
 You only need to take a stock move for several products line and click the button
-:guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and Open ERP will
+:guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and OpenERP will
 complete the prefix in the wizard with a continuing sequence number. This sequence number
 might correspond to a set of pre-printed barcodes that you stick on each product.
 
@@ -107,35 +107,35 @@ might correspond to a set of pre-printed barcodes that you stick on each product
    :scale: 75
    :align: center
 
-   *Splitting a lot into uniquely identified parts*
+   *Splitting a Lot into uniquely Identified Parts*
 
 .. index:: traceability (stock)
 
 Traceability
 ------------
 
-If you code in the lot numbers for stock moves as described above you can then investigate the traceability of any
-given lot number. To do this use the menu :menuselection:`Warehouse --> Traceability -->
+If you key in the lot numbers for stock moves as described above you can investigate the traceability of any
+given lot number. Go to the menu :menuselection:`Warehouse --> Traceability -->
 Production Lots`, or :menuselection:`Warehouse --> Traceability --> Packs`.
 
 .. tip:: Product Shortcuts
 
     From the product form, the toolbar to the right offers useful information:
 
-    * :guilabel:`Minimum stock rules`,
+    * :guilabel:`Minimum Stock Rules`,
 
-    * :guilabel:`Stocks by location`,
+    * :guilabel:`Stock by Location`,
 
-    * :guilabel:`Product sales`,
+    * :guilabel:`Product Sales`,
 
-    * :guilabel:`Bills of Materials`.
+    * :guilabel:`Bills of Material`.
 
 Search for a particular lot using the filters for the lot number, the date or the product. Once you
-can see the form about this lot several actions are possible:
+can see the form about this lot, several actions can be performed:
 
-* :guilabel:`Upstream traceability` : from supplier through to customers,
+* :guilabel:`Upstream Traceability`: from supplier through to customers,
 
-* :guilabel:`Downstream traceability` : from customer back to suppliers,
+* :guilabel:`Downstream Traceability`: from customer back to suppliers,
 
 * Stock in all the physical and virtual locations.
 
@@ -143,16 +143,16 @@ can see the form about this lot several actions are possible:
    :scale: 75
    :align: center
 
-   *Tracing upstream in Make to Order*
+   *Tracing Upstream in Make to Order*
 
 .. figure:: images/stock_traceability_downstream.png
    :scale: 75
    :align: center
 
-   *Tracing downstream in Make to Stock*
+   *Tracing Downstream in Make to Stock*
 
-Finally, on a lot, you can enter data on all the operations that have been done on the product. That
-forms a useful history of the pre-sales operations.
+Finally, on a lot, you can enter data on all the operations that have been done for the product. That
+keeps a useful history of the pre-sales operations.
 
 .. Copyright © Open Object Press. All rights reserved.
 
