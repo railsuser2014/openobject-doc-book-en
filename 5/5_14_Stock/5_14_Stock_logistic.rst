@@ -24,9 +24,9 @@ Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Managemen
    :scale: 75
    :align: center
 
-   *Definition of a stock location*
+   *Defining a Stock Location*
 
-You should then give a name to your stock location. Now look at location types and localization.
+You should then give a name to your stock location. Now look at the location types.
 
 .. index::
    single: stock; location type
@@ -37,7 +37,7 @@ Location Types
 The location must have one of the following types:
 
 * View: shows that the location is only an organizational node for the hierarchical structure, and
-  can not be involved in stock moves itself. The view type is not usually made into a leaf node in a
+  cannot be involved in stock moves itself. The view type is not usually made into a leaf node in a
   structure – it usually has children.
 
 * Customer: destination for products sent to customers,
@@ -53,29 +53,29 @@ The location must have one of the following types:
 
 * Procurement: the counterpart for procurement operations when you do not yet know the source
   (supplier or production). Products in this location should be zero after the scheduler run
-  completes.
+  completes,
 
-* Transit Location for Inter-Companies Transfers
+* Transit Location for Inter-Company Transfers, used as an intermediate location in a multicompany environment.
 
 You can have several locations of the same type. In that case your product, supplier and warehouse
 configurations determine the location that is to be used for any given operation.
 
 The counterparts for procurement, inventory and production operations are given by the locations
-shown on the product form. The counterparts of reception and delivery operations are given by the
-locations shown on the partner form. The choice of stock location is given by the configuration of
-the warehouse, linked to a Shop.
+shown in the product form. The counterparts of reception and delivery operations are given by the
+locations shown in the partner form. The choice of stock location is determined by the configuration of
+the warehouse, linked to a Shop :menuselection:`Sales --> Configuration --> Sales --> Shop`.
 
 .. figure:: images/stock_product_location_form.png
    :scale: 75
    :align: center
 
-   *Definition of stock locations on the product form*
+   *Defining Stock Locations in the Product Form*
 
 .. figure:: images/stock_partner_location_form.png
    :scale: 75
    :align: center
 
-   *Definition of stock locations on the customers form*
+   *Defining Stock Locations in the Customer Form*
 
 .. index::
    single: stock; localization
@@ -85,19 +85,18 @@ Location Addresses
 
 Each location can be given an address. That enables you to create a location for a customer or a
 supplier, for example. You can then give it the address of that customer or supplier. You should
-indicate to Open ERP on the partner form that it should use this location rather than the default
+indicate to OpenERP on the partner form that it should use this location rather than the default
 location given to partner deliveries.
 
 .. tip:: Subcontracting production
 
-    You will see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
+    You will see in the chapter, :ref:`ch-mnf` that it is possible to assign a location to a
     manufacturing workcenter.
-    If this location is at a supplier's you must give it an address so that Open ERP can prepare a
-    delivery order
-    for the supplier and a receive operation for the manufactured goods.
+    If this location is at a supplier's you must give it an address so that OpenERP can prepare a
+    delivery order for the supplier and a receive operation for the manufactured goods.
 
-    Creating a location specifically for a partner is also a simple solution for handled consigned
-    stocks in Open ERP.
+    Creating a location specifically for a partner is also a simple solution for handling consigned
+    stocks in OpenERP.
 
 .. note:: Consigned Stock
 
@@ -105,6 +104,7 @@ location given to partner deliveries.
     stocked by your supplier.
     Or, conversely, it could be stock owned by your customer (not valued by you) but stocked in your
     company.
+    Make sure that you create consignment locations as part of your internal stock.
 
 To enable you to consolidate easily at a higher level, the location definition is hierarchical. This
 structure is given by the field :guilabel:`Parent location`. That also enables you to manage complex
@@ -115,9 +115,9 @@ One Company with Two Warehouses
 
 A company has a warehouse in Paris and in Bordeaux. For some orders you must deliver the products
 from Paris, and for others from Bordeaux. But you should also specify a fictitious warehouse that
-Open ERP uses to calculate if it should deliver products from Paris or from Bordeaux.
+OpenERP uses to calculate if it should deliver products from Paris or from Bordeaux.
 
-To do this in Open ERP, you would create a third warehouse 'France' which consolidates the warehouses in
+To do this in OpenERP, you would create a third warehouse 'France' which consolidates the warehouses in
 Paris and Bordeaux. You create the following physical locations:
 
 * Company
@@ -130,10 +130,10 @@ Paris and Bordeaux. You create the following physical locations:
 
       * Warehouse Bordeaux
 
-Open ERP will then deliver the goods from the warehouse that has the ordered product in stock. When
-products are available in several warehouses, Open ERP will select the nearest warehouse. To
+OpenERP will then deliver the goods from the warehouse that has the ordered product in stock. When
+products are available in several warehouses, OpenERP will select the nearest warehouse. To
 formalize the notion of distance between warehouses you should use the geographic co-ordinates (X,
-Y, Z) of the different stores to enable Open ERP to search for the nearest goods.
+Y, Z) of the different stores to enable OpenERP to search for the nearest goods.
 
 The same co-ordinates could also be used to structure the shelves, aisles and interior rooms in a
 warehouse.
@@ -152,7 +152,7 @@ useful indicators. If you ask your accountant for a stock valuation or the value
 he will give you a figure. If you ask for the same figure from your stores manager you will get an
 entirely different amount. You have no idea who is right!
 
-In Open ERP the management of stock is completely integrated with the accounts, to give strong
+In OpenERP the management of stock is completely integrated with the accounts, to give strong
 coherence between the two systems. The double-entry structure of locations enables a very precise
 correspondence between stocks and accounts.
 
@@ -160,12 +160,10 @@ Each stock movement also generates a corresponding accounting entry in an accoun
 ensure that the two systems can stay in permanent synchronization.
 
 To do that, set up a general account for each location that should be valued in your accounts. If a
-product goes to one location or another and the accounts are different in the two locations, Open
-ERP automatically generates the corresponding accounting entries in the accounts, in the stock
-journal.
+product goes to one location or another and the accounts are different in the two locations, OpenERP automatically generates the corresponding accounting entries in the accounts, in the stock journal.
 
 If a stock move will go from a location without an account to a location where an account has been
-assigned (for example goods receipt from a supplier order), Open ERP generates an accounting entry
+assigned (for example goods receipt from a supplier order), OpenERP generates an accounting entry
 using the properties defined in the product form for the counterpart. You can use different accounts
 per location or link several location to the same account, depending on the level of analysis
 needed.
@@ -180,14 +178,38 @@ You use this system for managing consigned stocks:
    single: chained location
    single: location; chained
 
+How to configure Accounting Valuation?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* In the Product form, go to the `Accounting` tab and select the `Real Time (automated)` option for Inventory Valuation,
+
+To define your accounts, you have two options. Set them on the product category, or on the product.
+
+* From the Information tab, for the Product Category, set the Stock Input Account, the Stock Output account and the Stock Variation account,
+
+OR
+
+* From the Accounting tab, for the Product, set the Stock Input Account and the Stock Output account.
+
+You can also overwrite the accounts from the Product or the Product Category by defining Stock Input and Stock Output account for a Location.
+
+.. note:: You can also install the :mod:`account_anglo_saxon` module to value your stock according to anglosaxon principles.
+
+.. figure:: images/account_anglo_saxon.pdf
+   :scale: 75
+   :align: center
+
+   *Setting up Stock Valuation Accounts*
+   
+
 Linked locations
 ----------------
 
-Locations in Open ERP can be linked between each other to define paths followed by products. So you
+Locations in OpenERP can be linked between each other to define paths followed by products. So you
 can then define rules such as: all products that enter the warehouse must automatically be sent to
 quality control. The warehouse and quality control are represented by two different locations.
 
-Then when a product arrives in a location, Open ERP can automatically suggest that you send the
+Then when a product arrives in a location, OpenERP can automatically suggest that you send the
 product to another linked location. Three link modes are available:
 
 * Manual Operation
