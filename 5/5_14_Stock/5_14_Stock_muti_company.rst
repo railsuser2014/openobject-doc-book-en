@@ -3,7 +3,7 @@
 Logistics Configuration in a Multi-Company Environment
 ======================================================
 
-To configure your logistics in multi-company environment you need to install module :mod:`stock_location`.
+To configure your logistics in multi-company environment you need to install :mod:`stock_location` module.
 
 This module supplements the Warehouse application by adding support for per-product location paths,
 effectively implementing Push and Pull inventory flows.
@@ -76,7 +76,20 @@ Technically, Pull flows allow to process procurement orders differently, not onl
 the product being considered, but also depending on which location holds the "need" for that
 product (i.e. the destination location of that procurement order).
 
-Find the product CPU1 using menu :menuselection:`Warehouse --> Product --> Products` in order to see the
+To explain pull flow for the product `CPU1`, first we have to configure the minimum stock rules of `CPU1` for
+the company `OpenERP S.A.` and `Shop 1` using the menu :menuselection:`Warehouse --> Automatic Procurements --> Minimum Stock Rules` .
+
+For the company `OpenERP S.A.`:
+
+* :guilabel:`Min Quantity` : `10`
+* :guilabel:`Max Quantity` : `50`
+
+For the company `Shop 1`;
+
+* :guilabel:`Min Quantity` : `10`
+* :guilabel:`Max Quantity` : `20`
+
+Find the product CPU1 using menu :menuselection:`Warehouse --> Product --> Products` in order to define the
 configuration of the pulled flow.
 
 .. figure:: images/stock_pulled_flow.png
@@ -84,6 +97,30 @@ configuration of the pulled flow.
    :align: center
 
    *A pull flow specification for product CPU1*
+
+There are two specification of pull flow for product `CPU1`.
+
+`Specification 1`:
+
+* :guilabel:`Name` : `Receive from Warehouse`
+* :guilabel:`Destination Location` : `Shop 1`
+* :guilabel:`Type of Procurement` : `Move`
+* :guilabel:`Company` : `Shop 1`
+* :guilabel:`Source Location` : `Internal Shippings`
+* :guilabel:`Partner Address` : `OpenERP S.A., Belgium Gerompont Chaussee de Namur 40`
+* :guilabel:`Shipping Type` : `Getting Goods`
+* :guilabel:`Procure Method` : `Make to Order`
+
+`Specification 2`:
+
+* :guilabel:`Name` : `Deliver Shop`
+* :guilabel:`Destination Location` : `Internal Shippings`
+* :guilabel:`Type of Procurement` : `Move`
+* :guilabel:`Company` : `OpenERP S.A.`
+* :guilabel:`Source Location` : `Stock`
+* :guilabel:`Partner Address` : `Fabien`
+* :guilabel:`Shipping Type` : `Sending Goods`
+* :guilabel:`Procure Method` : `Make to Stock`
 
 Now sale 1 unit of product `CPU1` from the `Shop1` and run scheduler using menu :menuselection:`Warehouse -->
 Schedulers --> Compute Schedulers`. Then check the stock moves for product `CPU1` from the menu  :menuselection:`Warehouse -->
@@ -94,5 +131,15 @@ Traceability --> Stock Moves`.
    :align: center
 
    *Stock move of CPU1 releted to pull flow specification*
+
+These moves can be explained like this:
+
+[ Customer ] <-- [ :guilabel:`Shop 1` ]  <-- Internal Shippings <-- Stock <--  [ :guilabel:`OpenERP S.A.` ]
+
+When the company :guilabel:`Shop 1` sale one unit of `CPU1` to customer so its stock goes down to 10 unit.
+According to the minimum stock rule of the product `CPU1` OpenERP generate a procurement order of 21 unit
+of `CPU1` for the company :guilabel:`Shop 1` (OP/00007). So 21 unit of `CPU1` moves from company
+:guilabel:`OpenERP S.A.` to :guilabel:`Shop 1` according to their internal configuration of Source and
+Destination Locations.
 
 A pull flow related to how procurement process run in order to find product to increase or decrease inventory.
