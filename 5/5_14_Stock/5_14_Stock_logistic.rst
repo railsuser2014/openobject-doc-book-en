@@ -195,13 +195,14 @@ You can also overwrite the accounts from the Product or the Product Category by 
 
 .. note:: You can also install the :mod:`account_anglo_saxon` module to value your stock according to anglosaxon principles.
 
+The figure below shows the various accounts that can be used, with and without the :mod:`account_anglo_saxon` module installed.
+
 .. figure:: images/account_anglo_saxon.pdf
    :scale: 75
    :align: center
 
    *Setting up Stock Valuation Accounts*
    
-
 Linked locations
 ----------------
 
