@@ -388,7 +388,7 @@ statutory requirements.
 
 OpenERP added a flexible, easy **Invoicing** module allowing you to keep track of your documents and payments, even when you are not an accountant. This will allow smaller business to keep track of their payments without having to implement a complete accounting system.
 
-Keep track of your Cash Moves by using the new OpenERP Cash Box. 
+Keep track of your Cash Moves by using the new OpenERP Cash Box.
 
 .. index::
      single: Human Resources
@@ -477,7 +477,7 @@ OpenERP's replenishment management rules enable the system to generate draft pur
 automatically, or you can configure it to run a lean process, driven entirely by current production
 needs.
 
-You can also manage purchase requisitions to keep track of quotations sent to a multitude of suppliers. 
+You can also manage purchase requisitions to keep track of quotations sent to a multitude of suppliers.
 
 .. index::
    single: stock
@@ -667,6 +667,93 @@ But there are now more than hundred modules available. You can install them acco
 A brief description is available for each module, but the most thorough way of understanding their
 functionality is to install one and try it. So, pausing only to prepare another test database to try
 it out on, just download and install the modules that appear interesting.
+
+Tips & Tricks
+=============
+
+Overview of Shortcut Keys
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Shortcuts for OpenERP
+
+.. table::
+
+   ============  ===============================
+   Shortcut Key  What does it do?
+   ============  ===============================
+   Ctrl+H        Contextual Help
+   Ctrl+O        Connect
+   Ctrl+Q        Quit
+   ============  ===============================
+
+* Shortcuts for OpenERP Form
+
+.. table::
+
+   ==============  ===============================
+   Shortcut Key    What does it do?
+   ==============  ===============================
+   Ctrl+D          Delete
+   Ctrl+F          Find
+   Ctrl+G          Go To Resource ID
+   Ctrl+L          Switch to List/Form
+   Ctrl+N          New
+   Ctrl+P          Preview in PDF
+   Ctrl+Page Down  Next Tab
+   Ctrl+Page Up    Previous Tab
+   Ctrl+R          Reload/Undo
+   Ctrl+S          Save
+   Ctrl+T          Menu
+   Ctrl+W          Close Tab
+   Page Down       Next
+   Page Up         Previous
+   Shift+Ctrl+D    Duplicate
+   Shift+Ctrl+H    New Home Tab
+   Shift+Ctrl+Y    Repeat latest action
+   ==============  ===============================
+
+* Shortcuts for OpenERP when editing a resource in popup window
+
+.. table::
+
+   ============  ===============================
+   Shortcut Key  What does it do?
+   ============  ===============================
+   Ctrl+Enter    Save and Close window
+   Ctrl+Esc      Close window without Saving
+   ============  ===============================
+
+* Shortcuts in relation field
+
+.. table::
+
+   ============  ===============================
+   Shortcut Key  What does it do?
+   ============  ===============================
+   F1            Add new Field/Line on the fly
+   F2            Open list releted Current field
+   F3            Zoom on current field
+   ============  ===============================
+
+* Shortcuts in text entries
+
+.. table::
+
+   ============  ===============================
+   Shortcut Key  What does it do?
+   ============  ===============================
+   Ctrl+C        Copy selected text
+   Ctrl+V        Paste selected text
+   Ctrl+X        Cut selected text
+   Enter         Auto-complete text field
+   Shift+Tab     Previous editable widget
+   Tab           Next editable widget
+   ============  ===============================
+
+Filters
+^^^^^^^
+
+
 
 
 .. Copyright © Open Object Press. All rights reserved.
