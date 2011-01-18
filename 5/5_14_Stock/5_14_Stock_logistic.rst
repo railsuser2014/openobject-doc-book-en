@@ -207,15 +207,15 @@ Linked locations
 ----------------
 
 Locations in OpenERP can be linked between each other to define paths followed by products. So you
-can then define rules such as: all products that enter the warehouse must automatically be sent to
+can define rules such as: all products that enter the warehouse must automatically be sent to
 quality control. The warehouse and quality control are represented by two different locations.
 
 Then when a product arrives in a location, OpenERP can automatically suggest that you send the
 product to another linked location. Three link modes are available:
 
-* Manual Operation
-* Automatic Move
-* Automatic No Step Added
+* Manual Operation,
+* Automatic Move,
+* Automatic No Step Added.
 
 The `Manual Operation` mode will create an internal move order to the linked location once products
 arrive in the source locations. This order will wait for a confirmation of the move by a user.

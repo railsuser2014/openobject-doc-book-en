@@ -731,7 +731,7 @@ Overview of Shortcut Keys
    Shortcut Key  What does it do?
    ============  ===============================
    F1            Add new Field/Line on the fly
-   F2            Open list releted Current field
+   F2            Open list related Current field
    F3            Zoom on current field
    ============  ===============================
 
