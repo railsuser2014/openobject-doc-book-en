@@ -58,7 +58,9 @@ Business Application-related Features
 
 * Push & Pull rules for stock locations have been extended and integrated with multicompany,
 
-* Configure units of measure by reference unit, bigger then / smaller then reference unit.
+* Configure units of measure by reference unit, bigger then / smaller then reference unit,
+
+* Update stock level from the Product form and automatically create a physical inventory for it.
 
 *Accounting & Financial Management*
 

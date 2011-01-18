@@ -2,8 +2,8 @@
 Project Management
 ==================
 
-In the previous chapter you deal with the financial management of projects, which was based on
-Open ERP's analytic accounts, structured into cases. This way of working enables you to analyze
+In the previous chapter you dealt with the financial management of projects, which was based on
+OpenERP's analytic accounts, structured into cases. This way of working enables you to analyze
 time plans and budgets, to control invoicing, and to manage your different contracts.
 
 In this chapter you can use operational project management to organize tasks and plan the work you
@@ -15,14 +15,14 @@ need to get the tasks completed. All of the necessary operations are carried out
 
 .. note:: Project
 
-	In Open ERP a project is represented by a set of tasks for completion.
+	In OpenERP a project is represented by a set of tasks for completion.
 	Projects have a tree structure that can be divided into phases and sub-phases.
-	This structure is very useful for work organization.
+	This structure is very useful to organise your work.
 
 	Whereas analytic accounts look at the past activities of the company, project management's role is
 	to plan the future.
 	Even when there is a close link between the two (such as where a project has been planned and then
-	completed through Open ERP)
+	completed through OpenERP)
 	they are still two different concepts, each making its own contribution to a flexible workflow.
 
 Most client projects are represented by:
@@ -166,10 +166,11 @@ helpful to limit the number of invoicing methods in your company by extending th
 invoicing method that you already have.
 
 If you want to connect your Sales Order with Project tasks you should create such
-products as \ ``Consultant``\  , and \ ``Senior Developer``\  . These products should be configured
+products as \ ``Consultant``\  , and \ ``Senior Developer``\ . These products should be configured
 with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procurement Method` of \ ``Make to Order``\  ,
 and a :guilabel:`Supply Method` of \ ``Produce``\  . Once you have set this up,
 OpenERP automatically creates a task in project management when the order is approved.
+You can even take this further by adding a default project to your product. In the Product form, on the `Procurement & Locations` tab, enter the default project to which the automatically created task (from the sales order) should be linked.
 
 You can also change some of the order parameters, which affects the invoice:
 
