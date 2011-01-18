@@ -92,6 +92,8 @@ Business Application-related Features
 
 * Long Term Planning that can be calculated according to the working time of each employee involved in the project with the new Scheduler feature,
 
+* On creation of a new project, OpenERP automatically creates the corresponding Analytic Account in the Projects chart of accounts. You no longer have access to the analytic account from the Project.
+
 *Manufacturing Management* 
 
 * Scrap consumed or finished goods and have the related stock moves automatically,

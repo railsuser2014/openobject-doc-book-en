@@ -22,16 +22,17 @@ need to get the tasks completed. All of the necessary operations are carried out
 	Whereas analytic accounts look at the past activities of the company, project management's role is
 	to plan the future.
 	Even when there is a close link between the two (such as where a project has been planned and then
-	completed through OpenERP)
-	they are still two different concepts, each making its own contribution to a flexible workflow.
+	completed through OpenERP) they are still two different concepts, each making its own contribution to a flexible workflow.
 
-Most client projects are represented by:
+Most customer projects are represented by:
 
 * one or several analytic accounts in the accounts system for tracking the contract and its
   different phases,
 
 * one or several projects in project management for tracking the project and the different tasks to
   be completed.
+
+There is a direct link between the project and the analytic account, because for each new project created, OpenERP will automatically create the corresponding analytic account in the Projects analytic chart of accounts. However, you can no longer access the analytic account directly from a project.
 
 Creating Projects and Related Tasks
 -----------------------------------
