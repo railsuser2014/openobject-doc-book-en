@@ -5,34 +5,33 @@ Warehouses
 ==========
 
 Warehouses are designed for physical locations from which you can deliver to the customer and to
-which you receive raw materials. Then when you buy products from a supplier you should take account
-of which Warehouse you use for this purchase. This also enables the end user to not have to choose
-from a list of locations but simply a real warehouses.
+which you receive raw materials. When you buy products from a supplier you should take account
+of the Warehouse you use for this purchase. This also enables the end user to not have to choose
+from a list of locations but simply a real warehouse.
 
-Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses` then click
+Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses`, then click
 :guilabel:`New` to configure a new warehouse.
 
 A warehouse is defined by a link between three locations:
 
-* The :guilabel:`Location Stock` field shows the place of products available for delivery to a customer direct from
+* The :guilabel:`Location Stock` field shows the place of products available for delivery to a customer directly from
   this warehouse. Availability is given by all the products in that location and any child locations.
 
-* The :guilabel:`Location Input` field shows where ordered products are received from a supplier to that warehouse. It
+* The :guilabel:`Location Input` field shows where ordered products are received from a supplier in that warehouse. It
   can be the same as the stock location if, for example, you want to do a quality control operation on
   your incoming raw materials.
 
 * The :guilabel:`Location Output` field (called ``Output`` in the demonstration database) is designed as a buffer zone
-  in which you store all the items that have been picked but not yet delivered to a customer. You are
-  strongly advised not to put this location within the stock hierarchy but instead at a level higher
-  or the same.
+  in which you store all the items that have been picked, but not yet delivered to a customer. You are
+  strongly advised not to put this location within the stock hierarchy but instead at a higher level or at the same level.
 
     .. figure:: images/stock_warehouse.png
        :scale: 75
        :align: center
 
-       *Warehouse parameters*
+       *Warehouse Parameters*
 
-You can also set an address for the warehouse. This address should ideally be an address for your
+You can also set an address for the warehouse. This address should ideally be an address of your
 company. Once the warehouse has been defined it can be used in:
 
 * Minimum stock rules,
@@ -46,7 +45,7 @@ company. Once the warehouse has been defined it can be used in:
 Automatic Procurement
 ---------------------
 
-Several methods of automatically procuring products can be carried out by Open ERP:
+Several methods of automatically procuring products can be carried out by OpenERP:
 
 * the workflow used by products that have the procurement mode :guilabel:`Make to Order`,
 
@@ -54,7 +53,7 @@ Several methods of automatically procuring products can be carried out by Open E
 
 * using the master production schedule for :guilabel:`Make to Stock` products.
 
-The two last methods are described below.
+The last two methods are described below.
 
 .. index::
    single: stock; orderpoint
@@ -74,20 +73,20 @@ of virtual stock to the maximum level given in the rule.
    :scale: 75
    :align: center
 
-   *List of minimum stock rules*
+   *List of Minimum Stock Rules*
 
-.. tip:: Conflict resolution
+.. tip:: Conflict Resolution
 
-   You may find that draft production or procurement orders do not happen correctly.
+   You may find draft production or procurement orders to be created although they should not exist.
    That can happen if the system is badly configured (for example if you have forgotten to set the
    supplier on a product).
 
    To check this, look at the list of procurements in the exception state in the menu
    :menuselection:`Warehouse --> Schedulers --> Procurement Exceptions`. More
-   detail on handling these exceptions is given in :ref:`ch-mnf`.
+   details about processing these exceptions is given in :ref:`ch-mnf`.
 
-It is important to underline that the rule is based on virtual quantities and not just on real
-quantities. It then takes account of the calculation of orders and receipts to come.
+We underline that the rule is based on *virtual* quantities and not just on real
+quantities. It takes into account the calculation of orders and receipts to come.
 
 Take the following example:
 
@@ -95,7 +94,7 @@ Take the following example:
 
 * Products ordered but not delivered: 5
 
-* Products in manfacture: 2
+* Products in manfacturing: 2
 
 The rules defined are:
 
@@ -103,16 +102,17 @@ The rules defined are:
 
 * Maximum stock: 25.
 
-Once the rules have been properly configured the purchasing manager only needs to look at the list
+Once the rules have been properly configured, the purchasing manager only needs to look at the list
 of orders for confirmation with the supplier using the menu :menuselection:`Purchases --> Purchase Management -->
 Requests for Quotation`.
 
-Note that the procurement does not require that you buy from a supplier. If the product has a
-:guilabel:`Supply method` of ``Produce`` the scheduler will generate a production order and not a
-supplier order.
+.. note::
+   Note that the procurement does not require that you buy from a supplier. If the product has a
+   :guilabel:`Supply method` ``Produce`` the scheduler will generate a Manufacturing order instead of a
+   supplier order.
 
 You can also set multiple quantities in the minimum stock rules. If you set a multiple quantity of 3
-the system will propose procurement of 15 pieces not the 13 it really needs. In this case it
+the system will propose procurement of 15 pieces, and not the 13 it really needs. In this case it
 automatically rounds the quantity upwards.
 
 In a minimum stock rule, when you indicate a warehouse it suggests a stock location by default in
