@@ -52,24 +52,25 @@ To have OpenERP accomplish this, configure the push flow as follows:
 
    *Push Flow Specification for Product CPU3*
 
-A push flow related to how stock moves should be generated in order to increase or decrease inventory.
+A push flow is related to how stock moves should be generated in order to increase or decrease inventory.
 
-Pull flows
+Pull Flows
 ----------
 
-Pull flows are a bit different from Pull flows, in the sense that they are not related to
+Pull flows are a bit different from Push flows, in the sense that they are not related to
 the processing of product moves, but rather to the processing of procurement orders.
-What is being pulled is a need, not directly products.
+What is being pulled is a *need*, not directly products.
+
 A classical example of Push flow is when you have an Outlet company, with a parent Company
 that is responsible for the supplies of the Outlet.
 
   [ Customer ] <- A - [ Outlet ]  <- B -  [ Holding ] <~ C ~ [ Supplier ]
 
-When a new procurement order (A, coming from the confirmation of a Sale Order for example) arrives
-in the Outlet, it is converted into another procurement (B, via a Push flow of type 'move')
+When a new procurement order (A, coming from the confirmation of a Sales Order for example) arrives
+in the Outlet, it is converted into another procurement (B, via a Push flow of the 'move' type)
 requested from the Holding. When procurement order B is processed by the Holding company, and
 if the product is out of stock, it can be converted into a Purchase Order (C) from the Supplier
-(Push flow of type Purchase). The result is that the procurement order, the need, is pushed
+(Push flow of the 'Purchase' type). The result is that the procurement order, the need, is pushed
 all the way between the Customer and Supplier.
 
 Technically, Pull flows allow to process procurement orders differently, not only depending on
@@ -89,16 +90,16 @@ For the company `Shop 1`;
 * :guilabel:`Min Quantity` : `10`
 * :guilabel:`Max Quantity` : `20`
 
-Find the product CPU1 using menu :menuselection:`Warehouse --> Product --> Products` in order to define the
+Look up the product CPU1 using menu :menuselection:`Warehouse --> Product --> Products` in order to define the
 configuration of the pulled flow.
 
 .. figure:: images/stock_pulled_flow.png
    :scale: 75
    :align: center
 
-   *A pull flow specification for product CPU1*
+   *Pull Flow Specification for Product CPU1*
 
-There are two specification of pull flow for product `CPU1`.
+There are two specifications of a pull flow for product `CPU1`.
 
 `Specification 1`:
 
@@ -122,7 +123,7 @@ There are two specification of pull flow for product `CPU1`.
 * :guilabel:`Shipping Type` : `Sending Goods`
 * :guilabel:`Procure Method` : `Make to Stock`
 
-Now sale 1 unit of product `CPU1` from the `Shop1` and run scheduler using menu :menuselection:`Warehouse -->
+Now sell 1 unit of product `CPU1` from the `Shop1` and run the scheduler using menu :menuselection:`Warehouse -->
 Schedulers --> Compute Schedulers`. Then check the stock moves for product `CPU1` from the menu  :menuselection:`Warehouse -->
 Traceability --> Stock Moves`.
 
@@ -130,16 +131,17 @@ Traceability --> Stock Moves`.
    :scale: 75
    :align: center
 
-   *Stock move of CPU1 releted to pull flow specification*
+   *Stock Move of CPU1 related to Pull Flow Specification*
 
 These moves can be explained like this:
 
 [ Customer ] <-- [ :guilabel:`Shop 1` ]  <-- Internal Shippings <-- Stock <--  [ :guilabel:`OpenERP S.A.` ]
 
-When the company :guilabel:`Shop 1` sale one unit of `CPU1` to customer so its stock goes down to 10 unit.
-According to the minimum stock rule of the product `CPU1` OpenERP generate a procurement order of 21 unit
-of `CPU1` for the company :guilabel:`Shop 1` (OP/00007). So 21 unit of `CPU1` moves from company
+When the company :guilabel:`Shop 1` sells one unit of `CPU1` to a customer, its stock decreases to 10 units.
+According to the minimum stock rule of the product `CPU1` OpenERP generates a procurement order of 21 units
+of `CPU1` for the company :guilabel:`Shop 1` (OP/00007). So 21 units of `CPU1` move from company
 :guilabel:`OpenERP S.A.` to :guilabel:`Shop 1` according to their internal configuration of Source and
 Destination Locations.
 
-A pull flow related to how procurement process run in order to find product to increase or decrease inventory.
+A pull flow is related to how the procurement process runs in order to find products to increase or decrease inventory.
+

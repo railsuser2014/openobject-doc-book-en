@@ -7,7 +7,7 @@ Import / Export
    single: import; stock management
 
 Managing import / export with foreign companies can sometimes be very complex. Between a departure
-port and destination company, products can get stopped for several weeks at sea or somewhere in the
+port and the destination company, products can get stopped for several weeks at sea or somewhere in the
 numerous transportation stages and customs. To manage such deliveries efficiently it is important to:
 
 * know where your products are,
@@ -18,7 +18,7 @@ numerous transportation stages and customs. To manage such deliveries efficientl
 
 * follow the development of the different steps.
 
-Linked locations in Open ERP enable this all to be managed rather elegantly. You can use a structure
+Linked locations in OpenERP enable you to manage all this rather elegantly. You can use a structure
 like this:
 
 * Suppliers
@@ -40,8 +40,8 @@ like this:
 Stock
 -----
 
-The transit location are linked between themselves with a manual confirmation step. The internal
-stock move is validated at each port and customs arrival. Open ERP prepares all the linked moves
+The transit locations are linked between themselves with a manual confirmation step. The internal
+stock move is validated at each port and customs arrival. OpenERP prepares all the linked moves
 automatically.
 
 .. index::
@@ -53,7 +53,7 @@ automatically.
     This enables them to prepare the reports needed to declare product exports.
 
 You can use the lead times between different locations to account for real delays.
-Your lead times and stock forecasts are calculated by Open ERP to estimate the arrival of
+Your lead times and stock forecasts are calculated by OpenERP to estimate the arrival of
 incoming products so that you can respond to a customer's needs as precisely as possible.
 
 You can also value the products in transit in your account depending on the chosen stock location
@@ -67,12 +67,12 @@ Rental locations
 .. index::
    single: module; stock_location
 
-You can manage rental locations in Open ERP very simply using the same system of linked locations.
+You can manage rental locations in OpenERP very simply using the same system of linked locations.
 Using the module :mod:`stock_location` you can set a return date for rental items sent to customer
 location after a certain rental period.
 
 Then the set of real and virtual stocks is maintained daily in real time. The different operations
-such as delivery and receipt after a few days are automatically suggested by Open ERP which
+such as delivery and receipt after a few days are automatically suggested by OpenERP which
 simplifies the work of data entry.
 
 You then have the product list found in the customer locations and your own stock in your stock
@@ -88,7 +88,7 @@ The principle of linked locations is used to manage consigned products. You can 
 certain products should be returned to you a certain number of days after they have been
 delivered to customers.
 
-When the products have been delivered Open ERP automatically creates goods receipts for the
+When the products have been delivered, OpenERP automatically creates goods receipts for the
 consigned product. The specified date is obviously approximate but enables you to forecast returns.
 
 
