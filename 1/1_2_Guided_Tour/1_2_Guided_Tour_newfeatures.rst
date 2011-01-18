@@ -15,6 +15,8 @@ General Features
 
 * Simplified versus Extended view,
 
+* When you search for a record, e.g. a customer / supplier, the web version will propose to create the new partner when no existing partner is found,
+
 * When you click a Business Application in the Web version, the related Dashboard will be opened.
 
 * Menutips & Tooltips will be displayed to explain more about the active screen,

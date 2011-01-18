@@ -4,16 +4,16 @@ Management by Journal
 
 You can manage stock through journals in the same way as you can manage your accounts
 through journals. This approach has the great advantage
-of being able to define journals in various ways as you need them to meet your company's needs.
+that you can define journals in various ways to meet your company's needs.
 
 For example, a large company may want to organize deliveries by department or warehouse. You can
-then create a journal and a manager for each department. The different users can then work in a
-journal as a function of their position in the company. That enables you to structure your
-information better.
+then create a journal and a manager for each department. The different users can work in a
+journal as a function of their position in the company. That enables you to better structure your
+information.
 
-A company that does a lot of transport can organize its journals by delivery vehicle. The different
-delivery orders will then be assigned to a journal representing a particular vehicle. Then if the
-vehicle has left the company you can confirm all the orders that are found in the journal all at the
+A company doing a lot of transport can organize its journals by delivery vehicle. The different
+delivery orders will then be assigned to a journal representing a particular vehicle. When the
+vehicle has left the company, you can confirm all the orders that are found in the journal all at the
 same time.
 
 .. index::
@@ -25,7 +25,7 @@ The different journals
 .. index::
    single: module; sale_journal
 
-Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
+Install the Reconfigure option `Invoicing Journals` for Sales Management or the :mod:`sale_journal` module to work with different journals. This adds three new concepts to OpenERP:
 
 * Invoicing journals,
 
@@ -33,11 +33,11 @@ Install the module :mod:`sale_journal` to work with journals. This adds three ne
 
 * Delivery journals.
 
-Invoicing journals are used to assign purchase orders and/or delivery order to a given invoicing
-journal. Everything in the journal can be invoiced in one go, and you can control the amounts by
-journal. For example you can create the following journals: daily invoicing, end-of-week invoicing,
+Invoicing journals (:menuselection:`Sales --> Configuration --> Sales --> Invoice Types`) are used to assign purchase orders and/or delivery orders to a given invoicing journal. Everything in the journal can be invoiced in one go, and you can control the amounts by
+journal. For example you can create the following journals: daily invoicing, end-of-week invoicing
 and monthly invoicing. It is also possible to show the invoicing journal by default in the
 partner form.
+Set the Invoicing Method to Grouped (one invoice per customer) or Non Grouped (individual invoices) according to your needs.
 
 Order journals look like orders and are automatically transferred to orders for the corresponding
 items. These enable you to classify the orders in various ways, such as by department, by
@@ -65,9 +65,9 @@ Purchases` on any of them you will now see the field :guilabel:`Invoicing Method
    :scale: 75
    :align: center
 
-   *Partner form in invoicing mode*
+   *Partner Form in Invoicing Mode*
 
-You can create a new :guilabel:`Invoicing Journal` on a partner on the fly. You can show if the invoices
+You can create a new :guilabel:`Invoicing Journal` for a partner on the fly. You can show if the invoices
 should be grouped or not after you have generated them in the journal. Create a second invoicing journal
 ``End-of-Month Invoicing`` which you can assign to another partner.
 
@@ -75,39 +75,39 @@ should be grouped or not after you have generated them in the journal. Create a 
    :scale: 75
    :align: center
 
-   *Defining an invoicing journal*
+   *Defining an Invoicing Journal*
 
-Then enter the data for some orders for these two partners. After entering this order data, the
+Then enter the data for some orders for these two partners. After entering these order data, the
 field :guilabel:`Invoicing Mode` is completed automatically from the partner settings. Put these
 orders into the Invoicing Mode based on items in the second tab.
 
-Look at the assembly notes about these orders in the field :guilabel:`Invoicing Mode` is
-automatically shown there. Then confirm the different orders in the list.
+Look at the `History` tab of the Sales order to the Picking List that has been created. The field :guilabel:`Invoicing Mode` is
+automatically shown there. Confirm the different orders in the list.
 
-At the end of the day, the invoicing supervisor can put the list by journal. To do this, use the
-menu :menuselection:`Sales --> Invoicing --> List to Invoice`. Choose the invoicing
-journal and all the lists of orders to invoice then open in list view. It is then possible to
+At the end of the day, the invoicing supervisor can display the list by journal. Go to the
+menu :menuselection:`Sales --> Invoicing --> Lines to Invoice`. Choose the invoicing
+journal and all the lists of orders to invoice will then open in list view. You can
 automatically carry out invoicing by clicking the action :guilabel:`Make Invoice` (the gears symbol in
 the application client).
 
-.. tip:: Confirming invoices
+.. tip:: Confirming Invoices
 
     By default, invoices are generated in the draft state which enables you to modify them before
     sending them to the customer.
-    But you can confirm all the invoices in one go by selecting them all from the list and doing the
+    But you can confirm all the invoices in one go by selecting them all from the list and selecting the
     action 'Confirm Draft Invoices'.
 
 At the end of the month the invoicing management does the same work but in the journal 'month-end
 invoicing'.
 
 You can also enter a journal to confirm / cancel all the orders in one go. Then you can do several
-quotations and assign them in a journal and confirm or cancel them at once.
+quotations, assign them to a journal and confirm or cancel them at once.
 
-.. figure:: images/stock_jounral_form.png
+.. figure:: images/stock_journal_form.png
    :scale: 75
    :align: center
 
-   *View of an order journal*
+   *View of an Order Journal*
 
 .. Copyright © Open Object Press. All rights reserved.
 
