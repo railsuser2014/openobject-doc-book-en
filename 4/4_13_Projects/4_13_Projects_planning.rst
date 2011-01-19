@@ -3,16 +3,16 @@
 ..
 
 Planning to Improve Leadership
-=================================
+==============================
 
-Planning in a company often takes the form of a regular meeting between the different teams. Each
+Planning in a company often takes the form of regular meetings between the different teams. Each
 team has a certain number of projects and objectives that they must organize and establish
 priorities for.
 
-Ideally these planning meetings should be short but regular and systematic. They can be weekly or
+Ideally, these planning meetings should be short but regular and systematic. They can be weekly or
 monthly depending on the type of activity. A planning meeting often runs in three phases:
 
-	#. Minutes of the preceding period, and analysis of the work done compared with the planned work.
+	#. Minutes of the preceding period, and analysis of the work done compared to the planned work.
 
 	#. Introduction of new projects.
 
