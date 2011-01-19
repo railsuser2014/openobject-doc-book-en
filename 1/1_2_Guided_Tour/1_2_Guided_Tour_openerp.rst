@@ -731,7 +731,7 @@ Overview of Shortcut Keys
    Shortcut Key  What does it do?
    ============  ===============================
    F1            Add new Field/Line on the fly
-   F2            Open list related Current field
+   F2            Look up information
    F3            Zoom on current field
    ============  ===============================
 
@@ -753,6 +753,60 @@ Overview of Shortcut Keys
 Filters
 ^^^^^^^
 
+The `Advance Search View` is the new feature of OpenERP v6 which provides very user friedly filtering mechanism
+for the end user to find desired records from the list of it.
+
+The perfect example of implimentation of advance search view is the `Statistical Reports` of OpenERP.
+The statistical summery with filtered result can be provided by `Statistical Reports` for the end user.
+
+The statistical report for project task is `Task Analysis` which can be seen using the
+menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have installed :mod:`project` module.
+
+.. figure:: images/filter_task_analysis.png
+   :scale: 50
+   :align: center
+
+   *Task Analysis*
+
+You can see the `Advance Search View` in the light green shaded area.
+
+You can filter the information of task according to group by...
+
+* Project
+* Task
+* Partner
+* Assigned users
+* State
+* Company
+* Stage
+* Day
+* Month
+* Year
+
+Also you can search `Task` for specific...
+
+* Year
+* Current Month
+* Last Month
+* State
+* Project
+* Assigned user
+* Partner
+* Priority
+* Stage
+* Company
+* Starting Date
+* Ending Date
+* Dead Line
+
+This `Advance Search View` can also be attached with any `List View` of object and hence increase the
+searching facility when user look up the record in list view.
+
+.. figure:: images/filter_task_list_view.png
+   :scale: 50
+   :align: center
+
+   *Search the Tasks which are `In Progress` with Group by Project and State*
 
 
 
