@@ -19,14 +19,14 @@ You can select any of the following types of warnings and create different warni
 
 * :guilabel:`Blocking Message`: The message displayed will cause an exception and block the workflow.
 
-You can activate alerts for a series of events. For each alert you should enter a message that will
+You can activate alerts for a series of events. For each alert, you should enter a message that will
 be displayed when the event concerned is started.
-
-   *Management of alerts on partners*
 
 .. figure:: images/warning_partner.png
    :scale: 75
    :align: center
+
+   *Management of alerts on partners*
 
 The available warnings in the partner form are:
 
@@ -49,11 +49,11 @@ invoice for that customer, the alert message will be attached as shown in the fi
 
    *Alert from invoicing a customer*
 
-   *Management of alerts on products*
-
 .. figure:: images/warning_product.png
    :scale: 75
    :align: center
+
+   *Management of alerts on products*
 
 The alerts that can be configured on a product form are related to:
 

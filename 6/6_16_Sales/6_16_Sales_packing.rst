@@ -2,29 +2,29 @@
 Packaging
 =========
 
-Products can be managed in several different packaged forms. For example if you sell
+Products can be managed in several different packaged forms. For example, if you sell
 batteries you can define the following packages for a given battery product:
 
-* by Piece: a battery
+* Piece: a battery,
 
-* Blister pack: a pack of 4 batteries
+* Blister Pack: a pack of 4 batteries,
 
-* Pack of 100 blisters: 400 batteries
+* Pack of 100 blisters: 400 batteries,
 
-* Palette, containing 40 packs for a total of 16,000 batteries.
+* Palette: 40 packs for a total of 16,000 batteries.
 
-Open ERP's packaging management enables you to sell the same product in several different forms. The
-salesperson could sell, separately, one battery or a palette of batteries. In the order, you can
+OpenERP's package management enables you to sell the same product in several different forms. The
+salesperson could sell separately, one battery or a palette of batteries. In the order, you can
 select the default packaging type as a function of the quantities ordered.
 
 For example, if the customer wants to buy 30,000 batteries, the salesperson can select the package
-``palette`` . Open ERP will then propose the sale of 32,000 batteries, which corresponds to two
+``palette``. OpenERP will then propose the sale of 32,000 batteries, which corresponds to two
 palettes. Or the salesperson can select 75 packs.
 
 The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
 list is the one that will be used by default.
 
-Once a package has been defined on the order, Open ERP will throw up an alert if the ordered
+Once a package has been defined on the order, OpenERP will throw up an alert if the ordered
 quantities do not correspond to the proposed packages. The quantity must be a multiple of the field
 :guilabel:`Quantity by Package` defined on the packaging form.
 
@@ -35,8 +35,8 @@ quantities do not correspond to the proposed packages. The quantity must be a mu
    *Alert on the quantities sold compared with the packaging*
 
 Do not confuse the management of packaging with the management of multiple units of measure. The
-Units of Measure are used to manage the stock differently in its different units. 
-With packages, the stock is always managed by individual item but information about the package to use is supplied
+Units of Measure is used to manage the stock differently in its different units. 
+With packages, the stock is always managed by individual items, but information about the package to use is supplied
 to the storesperson along with that item.
 
 Even if the effects are the same, the printed documents will be different. The two following
@@ -74,7 +74,7 @@ You also define the bill of materials below which determines the make-up of the 
 
 Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of
 beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, 
-if you sell the product, Open ERP automatically moves the stock in two lines, one for the empty case and the
+if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the
 other for the 24 individual bottles of beer. For more information on bills of material for sale,
 see chapter :ref:`ch-mnf`.
 

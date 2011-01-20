@@ -22,7 +22,7 @@ This module enables you to manage:
 * the transport methods and their tariffs.
 
 Once the :mod:`delivery` module has been installed, the first thing to do is to configure the different
-modes of delivery accepted by your company. To do that use the menu :menuselection:`Warehouse
+modes of delivery accepted by your company. To do that, use the menu :menuselection:`Warehouse
 --> Configuration --> Delivery --> Delivery Method`.
 
 For each delivery mode, you should define the following elements:
@@ -89,18 +89,18 @@ example ``Weight < 0.5kg``.
    Weights are expressed in kilograms. You can define a number with a decimal point or comma, so
    to set 500g you would put 0.5 in the weight rule.
 
-Next you can set the sales price and the cost price. Prices can be expressed in various ways:
+Next you can set the sale price and the cost price. Prices can be expressed in various ways:
 
 * a fixed price,
 
 * a variable price, as a function of weight, volume, weight x volume or price.
 
-For example, mailing within France using current tariffs would be defined as shown in the table.
+For example, mailing within France using current tariffs would be defined as shown in the table below:
 
 .. table:: Example Tariff Rules
 
    ==========  =============  =====   =============
-   Rule Title  Condition      Price   Type of Price
+   Name        Condition      Price   Price Type
    ==========  =============  =====   =============
    S           Weight < 3 kg  6.90    Fixed
    M           Weight < 5 kg  7.82    Fixed
@@ -114,9 +114,9 @@ delivery if the total order amount is greater than 150 USD, add the following ru
 .. table:: Additional Tariff Rule
 
    ================= ===============  ======   =============
-   Rule Title        Condition        Price    Type of Price
+   Name              Condition        Price    Price Type
    ================= ===============  ======   =============
-   Franked > 150 USD Price > 150 USD   10      Fixed
+   Franked > 150 USD Price > 150 USD  10       Fixed
    ================= ===============  ======   =============
 
 Delivery Modes
@@ -147,7 +147,7 @@ the amount calculated by the delivery function. This technique enables you to ca
 delivery charge based on the order and then, separately, how the products will really be delivered
 to the customer.
 
-If you want to calculate the exact delivery charges depending on the actual deliveries you must use
+If you want to calculate the exact delivery charges depending on the actual deliveries, you must use
 invoicing based on deliveries.
 
 Delivery based on Shipped Quantities
