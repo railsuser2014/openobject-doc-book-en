@@ -4,17 +4,17 @@
 
 .. _ch-sales:
 
-*******************
+******************
 Driving your Sales
-*******************
+******************
 
-  *This chapter describes Open ERP's sales management, following the complete sales order process from
-  quotation to customer order, including the management of deliveries and of invoicing. 
+  *This chapter describes OpenERP's sales management, following the complete sales order process from
+  quotation to customer order, including the management of deliveries and invoicing. 
   It does not look at customer relations and pre-sales, which are handled by the CRM
   (Customer Relationship Management) modules described in an earlier part of the book.*
   
-  *It also describes the management of carriers, margin control and reporting, and
-  price management and the handling of various types of sales discount campaign.*
+  *It also describes the management of carriers, margin control and reporting,
+  price management and the handling of various types of sales discount campaigns.*
   
 For this chapter you should start with a fresh database that includes demonstration data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
