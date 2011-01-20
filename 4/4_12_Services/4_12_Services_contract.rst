@@ -4,8 +4,8 @@
 Managing Service Contracts
 ==========================
 
-Contracts can take different forms within Open ERP, depending on their nature. So you can have
-several distinct types of services contract, such as:
+Contracts can take different forms within OpenERP, depending on their nature. So you can have
+several distinct types of service contracts, such as:
 
 * fixed-price contracts,
 
@@ -17,24 +17,24 @@ several distinct types of services contract, such as:
 
 	Some companies commit to contracts on the basis of a requested volume at a certain price for a
 	defined period.
-	In such a case the contract is represented by a pricelist for that specific customer.
+	In such a case, the contract is represented by a pricelist for that specific customer.
 
 	The pricelist is linked in the :guilabel:`Sales and Purchases` tab of the :guilabel:`Customers` form,
 	so that it is brought up whenever anything is bought from or sold to this partner
 	(depending on whether it is a purchase or sales agreement).
-	Open ERP automatically selects the price based on this agreed pricelist.
+	OpenERP automatically selects the price based on this agreed pricelist.
 
 Fixed Price contracts
 ---------------------
 
-Fixed price contracts for the sale of services are represented in Open ERP by a Sales Order. In
+Fixed price contracts for the sale of services are represented in OpenERP by a Sales Order. In
 this case, the supply of services is managed just like all other stockable or consumable products.
 
 You can add new orders using the menu :menuselection:`Sales --> Sales --> Sales Orders`.
 
-The new Sales Order document starts in the \ ``Quotation``\   state, so the estimate has no
+The new Sales Order document starts in the \ ``Quotation`` \ state, so the estimate has no
 accounting impact on the system until it is confirmed. When you confirm the order, your estimate
-moves into the state \ ``Manual In Progress``\  .
+moves into the state \ ``Manual In Progress`` \.
 
 .. figure::  images/service_sale_workflow.png
    :scale: 50
@@ -42,43 +42,43 @@ moves into the state \ ``Manual In Progress``\  .
 
    *Process for handling a Sales Order*
 
-Once the order has been approved, Open ERP will automatically generate an invoice and/or a delivery
+Once the order has been approved, OpenERP will automatically generate an invoice and/or a delivery
 document proposal based on the parameters you set in the order.
 
 The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping
-Policy` on the order's second tab :guilabel:`Other Information` :
+Policy` on the order's second tab :guilabel:`Other Information`:
 
-*  :guilabel:`Payment Before Delivery` : Open ERP creates an invoice in the \ ``Draft``\   state.
-   Once this is confirmed and paid the delivery is activated.
+*  :guilabel:`Payment Before Delivery` : OpenERP creates an invoice in the \ ``Draft`` \ state.
+   Once this is confirmed and paid, the delivery is activated.
 
 *  :guilabel:`Invoice on Order After Delivery` : the delivery order is produced when the order is
    validated. A draft invoice is then created when the delivery has been completed.
 
-*  :guilabel:`Shipping & Manual Invoice` : Open ERP starts the delivery from the confirmation of
+*  :guilabel:`Shipping & Manual Invoice` : OpenERP starts the delivery from the confirmation of
    the order, and adds a button which you manually click when you are ready to create an invoice.
 
-*  :guilabel:`Invoice from Delivery` : invoices are created from the packing stage.
+*  :guilabel:`Invoice from Delivery` : invoices are created from the picking stage.
 
 .. index:: delivery
 
 .. note:: Delivery of an order
 
-	The term 'delivery' should be taken in the broadest sense in Open ERP.
+	The term 'delivery' should be taken in the broadest sense in OpenERP.
 	The effect of a delivery depends on the configuration of the sold product.
 
-	If its type is either Stockable Product or Consumable, Open ERP will make a request for it to be
-	sent for packing.
-	If the product's type is Service, Open ERP's scheduler will create a task in the project management
+	If its type is either Stockable Product or Consumable, OpenERP will make a request for it to be
+	sent for picking.
+	If the product's type is Service, OpenERP's scheduler will create a task in the project management
 	system,
 	or create a subcontract purchase order if the product's Procurement Method is Make to Order.
 
 	Invoicing after delivery does as it says: invoicing for the services when the tasks have been
 	closed.
 
-When you sign a new contract you can just enter the order into the system and Open ERP will track
+When you sign a new contract, you can just enter the order into the system and OpenERP will track
 the order.
 
-This works well for small orders. But for larger value services orders you might want to invoice
+This works well for small orders. But for large valued service orders, you might want to invoice
 several times through the contract, for example:
 
 * 30% on order,
@@ -93,7 +93,7 @@ In this case you should create several invoices for the one Sales Order. You hav
 
 * Create draft invoices and then link to them in the third tab :guilabel:`History` of the
   Sales Order, in the :guilabel:`Related
-  Invoices` section. When you create an invoice from the order, Open ERP deducts the amounts of the
+  Invoices` section. When you create an invoice from the order, OpenERP deducts the amounts of the
   invoices already linked to the order to calculate the proposed invoice value.
 
 Cost-reimbursement contracts
@@ -133,7 +133,7 @@ services, purchase of raw materials, and expense reimbursements.
 
 	An example of this is a client project that is to be invoiced only indirectly from the analytic
 	costs.
-	Putting the price list on the analytic account makes it possible to compare the actual sales with
+	Putting the pricelist on the analytic account makes it possible to compare the actual sales with
 	a best case situation where all the services would be invoiced.
 	To get this comparison you have to print the analytic balance from the analytic account.
 
@@ -142,7 +142,7 @@ Periodically the project manager or account manager uses the following menu to p
 :menuselection:`Accounting --> Periodical Processing --> Billing -->
 Bill Tasks Works`.
 
-Open ERP then displays all of the costs that have not yet been invoiced. You can filter the proposed
+OpenERP then displays all of the costs that have not yet been invoiced. You can filter the proposed
 list and click the appropriate action button to generate the corresponding invoices. You can select
 the level of detail which is reported on the invoice, such as the date and details of the services.
 
@@ -161,16 +161,14 @@ the level of detail which is reported on the invoice, such as the date and detai
 	installed the module :mod:`account_analytic_analysis`.
 	It provides various global financial and operational views of a project manager's projects.
 
-.. todo:: I can't find this button or the action below
-
 Select an entry and click :guilabel:`Invoice analytic lines` link on the right of the form.
 You can then invoice the selected entry by clicking :guilabel:`Create Invoices`.
 
 Fixed-price contracts invoiced as services are worked
 -----------------------------------------------------
 
-For larger-value projects, fixed-price invoicing based on the sales order is not always appropriate.
-In the case of a services project planned to run for about six months. invoicing could be based on
+For large-valued projects, fixed-price invoicing based on the sales order is not always appropriate.
+In the case of a services project planned to run for about six months, invoicing could be based on
 the following:
 
 * 30% on order,
@@ -188,21 +186,21 @@ can pose many problems for the organization and invoicing of the project:
 * If the project takes more or less time than forecast, it will effectively result in under- or
   over-invoicing during the project.
 
-* Whether you get a proper return can depend on the client. For example if the client takes a long
-  time to sign off on project acceptance you cannot invoice the remaining 40% even though you might
+* Whether you get a proper return can depend on the client. For example, if the client takes a long
+  time to sign off on project acceptance, you cannot invoice the remaining 40% even though you might
   have supplied the agreed service properly.
 
 * The account manager and the project manager are often different people.
   The project manager has to
-  alert the account manager the moment that the client can be invoiced, but that moment easily can be
+  alert the account manager about the moment that the client can be invoiced, but that moment can easily be
   forgotten or mistaken.
 
 * The project can be fixed for service costs but have agreed extras, such as reimbursement for
   travel expenses. Invoicing from the order does not adapt well to such an approach.
 
-Open ERP provides a third method for invoicing services that can be useful on long projects. This
+OpenERP provides a third method for invoicing services that can be useful on long projects. This
 consists of invoicing the project periodically on the basis of time worked up to a fixed amount that
-cannot be exceeded. At the end of the project a final invoice or a credit note is generated to meet
+cannot be exceeded. At the end of the project, a final invoice or a credit note is generated to meet
 the total amount of value fixed for the project.
 
 To configure such a project you must set an invoicing rate, a pricelist and a maximum amount on the
@@ -214,7 +212,7 @@ permitted under the contract.
 When the project is finished you can generate the closing invoice using the  *Final Invoice*  button
 on the analytic account. This automatically calculates the final balance of the bill, taking the
 amounts already charged into account. If the amount already invoiced is greater than the maximum
-agreed amount then Open ERP generates a draft credit note.
+agreed amount, then OpenERP generates a draft credit note.
 
 This approach offers many advantages compared with the traditional methods of invoicing in phases
 for fixed-price contracts:
@@ -244,9 +242,9 @@ Contracts limited to a quantity
 .. index::
    single: module; account_analytic_analysis
 
-Finally certain contracts are expressed in terms of a quantity rather than a fixed amount. Support
+Finally, certain contracts are expressed in terms of a quantity rather than a fixed amount. Support
 contracts comprising a number of prepaid hours are a case in point. To generate such contracts in
-Open ERP you should start by installing the module :mod:`account_analytic_analysis`.
+OpenERP you should start by installing the module :mod:`account_analytic_analysis`.
 
 Then you can set a maximum number of hours for each analytic account. When employees enter their
 time worked on the support contract in the timesheets, the hours are automatically deducted from the

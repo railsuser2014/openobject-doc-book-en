@@ -10,7 +10,7 @@ Deliver Quality Services
 
  *This chapter focuses on the management of contracts, and the services associated with that.
  The complete process of managing services is studied here: from defining prices and contracts to
- automatically invoicing the services, through planning and the treatment of
+ automatically invoicing the services through planning, and the treatment of
  additional costs such as expense receipts.*
  
 For this chapter you should start with a fresh database that includes demo data,
