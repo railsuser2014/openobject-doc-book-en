@@ -753,7 +753,7 @@ Overview of Shortcut Keys
 Filters
 ^^^^^^^
 
-The `Advanced Search View` is the new feature of OpenERP v6 which provides a very user-friendly filtering mechanism
+The `Advanced Search View` is a new feature of OpenERP v6 which provides a very user-friendly filtering mechanism
 for the end user to easily look up desired records from the list.
 
 The perfect example of an advanced search view is the `Statistical Report` of OpenERP.
@@ -776,20 +776,9 @@ menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have ins
 
 You can see the `Advanced Search View` in the light green shaded area.
 
-You can filter the information of a task according to the Group by features:
+You can filter the information of a task according to the Group by features.
 
-* Project
-* Task
-* Partner
-* Assigned users
-* State
-* Company
-* Stage
-* Day
-* Month
-* Year
-
-Click for instance the `Stage` button in Group by, and then click Task.
+Click for instance the `Stage` button in Group by, and then click Task to analyse your tasks by stage and then by task.
 
 This `Advanced Search View` can also be attached to any `List View` of an object and hence increase the
 search facility when a user looks up the record in list view.
