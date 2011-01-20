@@ -712,7 +712,7 @@ Overview of Shortcut Keys
    Shift+Ctrl+Y    Repeat latest action
    ==============  ===============================
 
-* Shortcuts for OpenERP when editing a resource in popup window
+* Shortcuts for OpenERP when editing a resource in a popup window
 
 .. table::
 
@@ -753,14 +753,20 @@ Overview of Shortcut Keys
 Filters
 ^^^^^^^
 
-The `Advance Search View` is the new feature of OpenERP v6 which provides very user friedly filtering mechanism
-for the end user to find desired records from the list of it.
+The `Advanced Search View` is the new feature of OpenERP v6 which provides a very user-friendly filtering mechanism
+for the end user to easily look up desired records from the list.
 
-The perfect example of implimentation of advance search view is the `Statistical Reports` of OpenERP.
-The statistical summery with filtered result can be provided by `Statistical Reports` for the end user.
+The perfect example of an advanced search view is the `Statistical Report` of OpenERP.
+Such a report shows the statistical summary with filtered results to the end user.
 
-The statistical report for project task is `Task Analysis` which can be seen using the
-menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have installed :mod:`project` module.
+Usually an Advanced Search is composed of three elements, the Filter buttons at the top, the Extended Filters, and the Group by option.
+These filters are dynamic, so according to filters you apply, extra columns may be added to the view.
+
+You can also easily combine filters; an arrow will be displayed and you will get a structure according to the order in which you clicked the Filter buttons.
+
+Let's show an example.
+The statistical report for project tasks is `Task Analysis` which can be displayed using the
+menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have installed the `Project Management` module.
 
 .. figure:: images/filter_task_analysis.png
    :scale: 50
@@ -768,9 +774,9 @@ menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have ins
 
    *Task Analysis*
 
-You can see the `Advance Search View` in the light green shaded area.
+You can see the `Advanced Search View` in the light green shaded area.
 
-You can filter the information of task according to group by...
+You can filter the information of a task according to the Group by features:
 
 * Project
 * Task
@@ -783,24 +789,10 @@ You can filter the information of task according to group by...
 * Month
 * Year
 
-Also you can search `Task` for specific...
+Click for instance the `Stage` button in Group by, and then click Task.
 
-* Year
-* Current Month
-* Last Month
-* State
-* Project
-* Assigned user
-* Partner
-* Priority
-* Stage
-* Company
-* Starting Date
-* Ending Date
-* Dead Line
-
-This `Advance Search View` can also be attached with any `List View` of object and hence increase the
-searching facility when user look up the record in list view.
+This `Advanced Search View` can also be attached to any `List View` of an object and hence increase the
+search facility when a user looks up the record in list view.
 
 .. figure:: images/filter_task_list_view.png
    :scale: 50
