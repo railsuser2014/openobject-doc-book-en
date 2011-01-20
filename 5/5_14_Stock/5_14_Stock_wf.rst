@@ -180,9 +180,9 @@ convert from one unit of measure to another as long as they are in the same cate
 
 .. table:: Example Units of Measure
 
-   ========= ============ ====== ========
+   ========= ============ ====== =========
    UoM       Category     Ratio  UoM Type
-   ========= ============ ====== ========
+   ========= ============ ====== =========
    Kg        Weight            1 Reference       
    Gram      Weight         1000   Smaller
    Tonne     Weight         1000    Bigger
@@ -191,7 +191,7 @@ convert from one unit of measure to another as long as they are in the same cate
    Half-day  Working time      4   Smaller
    Item      Unit              1
    100 Items Unit           0.01
-   ========= ============ ======
+   ========= ============ ====== =========
 
 Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
 category could be expressed in Kg, Tonnes or Grammes. You cannot express it in hours or pieces.

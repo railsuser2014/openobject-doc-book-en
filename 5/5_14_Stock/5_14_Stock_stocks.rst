@@ -112,11 +112,9 @@ You have three ways of doing an inventory.
 * You can update the inventory from the Product form. Go to the `Information` tab, Stocks and click the Update button. On confirmation, OpenERP will create a Physical Inventory.
 
 * You can manually add inventory lines. You can then enter data about the quantities available for each product by location.
-Start by entering the location, for example ``Stock`` , and then select the product. OpenERP
-automatically completes the quantity available for that product in the location
-shown. You can then change that value to correct the value in stock.
-
-**Example**
+  Start by entering the location, for example ``Stock`` , and then select the product. OpenERP
+  automatically completes the quantity available for that product in the location
+  shown. You can then change that value to correct the value in stock.
 
 Enter data for a single line in your inventory:
 
