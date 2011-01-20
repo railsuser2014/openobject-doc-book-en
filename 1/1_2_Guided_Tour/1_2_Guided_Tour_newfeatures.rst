@@ -17,7 +17,9 @@ General Features
 
 * When you search for a record, e.g. a customer / supplier, the web version will propose to create the new partner when no existing partner is found,
 
-* When you click a Business Application in the Web version, the related Dashboard will be opened.
+* When you click a Business Application in the Web version, the related Dashboard will be opened,
+
+* To display the process view, click the Question Mark next to the title in the web version,
 
 * Menutips & Tooltips will be displayed to explain more about the active screen,
 
