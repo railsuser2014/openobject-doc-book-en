@@ -116,6 +116,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 	* if the companies share many documents, you can register them in the same database and install
 	  OpenERP's multi-company documents to finely manage access rights,
+
 	.. index::
 	   single: module; base_synchro
 
@@ -159,7 +160,7 @@ but each account and/or transaction can also have a secondary currency (which is
 account). The value of multi-currency transactions is then tracked in both currencies.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured.
+with `Sales Management` installed and a generic chart of accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 

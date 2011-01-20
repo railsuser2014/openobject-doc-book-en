@@ -183,28 +183,28 @@ Filters mainly consist in a domain expressing the criteria of selection on a mod
 See the section 10.3 at the bottom for more information on the syntax for these filters.
 
 For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for sell: False" specified in the body:
-    [  ('type','=','lead'), 
-       ('state', '=', 'draft'),
-       ('country_id.name', 'in', ['Belgium',
-                                         'Netherlands',
-                                         'Luxembourg',
-                                         'United Kingdom',
-                                         'France',
-                                         'Germany',
-                                         'Finland',
-                                         'Denmark',
-                                         'Norway',
-                                         'Austria',
-                                         'Switzerland',
-                                         'Italy',
-                                         'Spain',
-                                         'Portugal',
-                                         'Ireland',
-                                          ]),
-        '|', 
-            ('description', 'ilike', 'Plan for use: True'), 
-            ('description', 'ilike', 'Plan for sell: False')
-      ]
+|    [  ('type','=','lead'), 
+|       ('state', '=', 'draft'),
+|       ('country_id.name', 'in', ['Belgium',
+|       'Netherlands',
+|       'Luxembourg',
+|       'United Kingdom',
+|       'France',
+|       'Germany',
+|       'Finland',
+|       'Denmark',
+|       'Norway',
+|       'Austria',
+|       'Switzerland',
+|       'Italy',
+|       'Spain',
+|       'Portugal',
+|       'Ireland',
+|       ]),
+|        '|', 
+|            ('description', 'ilike', 'Plan for use: True'), 
+|            ('description', 'ilike', 'Plan for sell: False')
+|      ]
 
 6. Miscellaneous References, Examples
 

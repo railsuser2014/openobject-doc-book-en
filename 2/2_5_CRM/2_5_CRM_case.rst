@@ -282,7 +282,7 @@ the setup window. The following actions are included:
 .. _ch-crm-fetchmail:
 
 Using the e-mail gateway
------------------------
+------------------------
 
 To automate the creation of current cases you can install the e-mail gateway.
 

@@ -62,7 +62,7 @@ install the :guilabel:`Customer Relationship Management` application.
 
     2_5_CRM_partners
     2_5_CRM_advanced
-    2-5_CRM_case
+    2_5_CRM_case
     2_5_CRM_srm
     2_5_CRM_profiling
 
