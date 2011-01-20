@@ -5,10 +5,10 @@ Layout Templates
 .. index::
    single: module; sale_layout
 
-The :mod:`sale_layout` module enables you to have a more elaborate template than the standard order
-forms.
+Install the :mod:`sale_layout` module by selecting :guilabel:`Sales Order Layout Improvement` and clicking :guilabel:`Configure` in the :guilabel:`Reconfigure` wizard. It enables you to have a more
+elaborate template than the standard order forms. 
 
-For example you could put the following in the order lines:
+For example, you could put the following in the order lines:
 
 * a horizontal separator line,
 
@@ -23,10 +23,11 @@ For example you could put the following in the order lines:
 .. index::
    single: module; account_invoice_layout
 
-This enables you to lay out a more elaborate professional-looking quotation page. There is also the
-module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.
+This enables you to lay out a more elaborate, professional-looking quotation page. The
+module :mod:`account_invoice_layout` (installed automatically on installation of :mod:`sale_layout`),
+also gives you the same functionality for invoice templates.
 
-The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in Open ERP 
+The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in OpenERP 
 and the resulting printed invoice.
 
 .. _fig-invlayfrm:
@@ -35,7 +36,7 @@ and the resulting printed invoice.
    :scale: 75
    :align: center
 
-   *Template for an invoice in Open ERP using the account_invoice_layout module*
+   *Invoice line using improved layout*
 
 .. _fig-invlayprin:
 
@@ -43,7 +44,7 @@ and the resulting printed invoice.
    :scale: 75
    :align: center
 
-   *The resulting printed invoice*
+   *Printed invoice*
 
 .. Copyright © Open Object Press. All rights reserved.
 

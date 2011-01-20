@@ -3,7 +3,7 @@ Keep Track of your Margins
 ==========================
 
 It is important to keep good control of margins in every company. Even if you have a good level of
-sales it will not guarantee company profitability if margins are not high enough. Open ERP provides a
+sales, it will not guarantee company profitability if margins are not high enough. OpenERP provides a
 number of systems for monitoring margins. The main ones are:
 
 * Margins on a sales order,
@@ -12,7 +12,7 @@ number of systems for monitoring margins. The main ones are:
 
 * Margins by project,
 
-* Using price lists.
+* Using pricelists.
 
 Margins on Sales Orders
 -----------------------
@@ -20,7 +20,8 @@ Margins on Sales Orders
 .. index::
    single: module; sale_margin
 
-If you want to check your margins on sales orders you can install the :mod:`sale_margin` module.
+If you want to check your margins on sales orders, you can install the :mod:`sale_margin` module
+by selecting :guilabel:`Margins in Sales Orders` for installation in the :guilabel:`Reconfigure` wizard.
 This will add margins calculated on each order line and on the order total.
 
 .. figure:: images/sale_margin.png
@@ -31,7 +32,7 @@ This will add margins calculated on each order line and on the order total.
 
 The margin on each line is defined as the quantity sold multiplied by the sale price for the
 customer less the cost price of the products. By default, products are managed using standard price
-in Open ERP (cost price fixed manually and reviewed once per year). You can change that to
+in OpenERP (cost price fixed manually and reviewed once per year). You can change that to
 ``Average Price``, meaning that the product cost fluctuates with purchases from
 suppliers. After product receipt you can add fixed costs, such as delivery costs, in the cost of
 each product.
@@ -39,11 +40,11 @@ each product.
 .. index::
    single: module; product_extended
 
-Open ERP supports a third method of updating the cost price of products.
+OpenERP supports a third method of updating the cost price of products.
 This is through the button :guilabel:`Update` on the product form which lets you
 automatically recalculate the cost price for the selected product. 
 The cost price is calculated from the raw materials and the operations carried out 
-(if the products have been manufactured internally so that you have set their costs).
+(if the products have been manufactured internally, so that you have set their costs).
 
 Margins by Product
 ------------------
@@ -55,9 +56,9 @@ To track margins by product, install the module :mod:`product_margin`. Once the 
 is installed you can see the margins by product by using the menu :menuselection:`Sales --> Products
 --> Product Margins`.
 
-When you have clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If
-no period is given, Open ERP will calculate margins on all of the operations without restriction. By
-default, however, Open ERP proposes a period of the last 12 months for analysis.
+When you have clicked on the menu, OpenERP asks for an analysis period and the state of invoices. If
+no period is given, OpenERP will calculate margins on all of the operations without restriction. By
+default, however, OpenERP proposes a period of the last 12 months for analysis.
 
 You can also filter the analysis on certain types of invoice:
 
@@ -121,7 +122,7 @@ The following fields are given by product for margins:
 Margins by Project
 ------------------
 
-To manage margins by project you must install the analytical accounts with management by task. Use
+To manage margins by project, you must install the analytical accounts with management by task. Use
 of these accounts is described in :ref:`ch-accts`.
 
 .. index::
@@ -137,10 +138,10 @@ representing a project or a case, and several new reports on those accounts.
 
    *Detail of margins for a case*
 
-Start by opening a project's analytic account through the
+Start by opening a project's analytic account through
 :menuselection:`Project --> Billing --> Overpassed Accounts`
 and selecting one of them.
-In the new analytic account :guilabel:`Analysis summary` tab you will find the following information:
+In the form's :guilabel:`Analysis summary` tab you will find the following information:
 
 * The total costs for the analytic account,
 

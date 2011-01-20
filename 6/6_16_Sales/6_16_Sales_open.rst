@@ -5,7 +5,7 @@ Open Orders
 .. index::
    single: module; sale_delivery
 
-In some industries, customers commonly place orders for a certain volume of product and ask for regular
+In some industries, customers commonly place orders for a certain volume of products and ask for regular
 deliveries from an order up to the total amount on it. This principle, called open orders, is managed
 by the :mod:`sale_delivery` module in OpenERP.
 
@@ -13,7 +13,7 @@ OpenERP handles open orders easily. An open order is an order for a
 certain quantity of products but whose deliveries are planned for various dates over a period of
 time.
 
-To do that you must install the :mod:`sale_delivery` module (in ``extra-addons`` at the time of writing). 
+To do that, you must install the :mod:`sale_delivery` module (in ``extra-addons`` at the time of writing). 
 A Sales Order is entered as a normal order
 but you also set the total quantity that will be delivered on each order line.
 

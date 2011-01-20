@@ -3,7 +3,7 @@ Pricing Policies
 ================
 
 Some companies are notorious for their complicated pricelists. Many forms of price variation are
-used, such as end-of-year refunds, discounts, changes of terms and conditions with time, various
+used, such as end-of-year refunds, discounts, change of terms and conditions with time, various
 prepayments, cascaded rebates, seasonal promotions, and progressive price reductions.
 
 .. note:: Rebate, Refund, Reduction
@@ -25,7 +25,7 @@ an efficient price management mechanism you can often keep margins raised and re
 changes in market conditions. A good price management system gives you scope for varying any and all
 of the relevant factors when you are negotiating a contract.
 
-To help you work most effectively, Open ERP's pricelist principles are extremely powerful yet are
+To help you work most effectively, OpenERP's pricelist principles are extremely powerful yet are
 based on simple and generic rules. You can develop both sales pricelists and purchase pricelists for
 products capable of accommodating conditions such as the date period, the quantity requested and the
 type of product.
@@ -33,14 +33,14 @@ type of product.
 .. tip:: Do not confuse the different price specifications
 
    Do not confuse the sale price with the base price of the product.
-   In Open ERP's basic configuration the sale price is the list price set on the product form
+   In OpenERP's basic configuration, the sale price is the list price set on the product form
    but a customer can be given a different sale price depending on the conditions.
 
-It is the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
-which changes in response to different criteria such as quantities, dates, and supplier. This is
-automatically set by the accounting system. You will find that the two prices have been set by default to the
-same for all products with the demonstration data, which can be a source of confusion.
-You are free to set the standard cost to something different.
+   It is the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
+   which changes in response to different criteria such as quantities, dates, and supplier. This is
+   automatically set by the accounting system. You will find that the two prices have been set by default to the
+   same for all products with the demonstration data, which can be a source of confusion.
+   You are free to set the standard cost to something different.
 
 Each pricelist is calculated from defined policies, so you will have as many sales pricelists as
 active sales policies in the company. For example a company that sells products through three sales
@@ -58,8 +58,8 @@ channels could create the following price lists:
 
 A single pricelist can exist in several versions, only one of which is permitted to be active at a
 given time. These versions let you set different prices at different points in time. So the
-pricelist for walk-in customers could have five different versions, for example: \ ``Autumn``\,  \
-``Summer``\, \ ``Summer Sales``\, \ ``Winter``\, \ ``Spring``\. Direct customers will see prices
+pricelist for walk-in customers could have five different versions, for example: \ ``Autumn``\,
+\ ``Summer``\, \ ``Summer Sales``\, \ ``Winter``\, \ ``Spring``\. Direct customers will see prices
 that change with the seasons.
 
 Each pricelist is expressed in a single currency. If your company sells products in several
@@ -82,7 +82,7 @@ For each list you should define:
 
 * a :guilabel:`Name` for the list,
 
-* a :guilabel:`Type` of list: \ ``Sale``\   for customers or \ ``Purchase``\   for suppliers,
+* a :guilabel:`Type` of list: \ ``Sale`` \ for customers or \ ``Purchase`` \ for suppliers,
 
 * the :guilabel:`Currency` in which the prices are expressed.
 
@@ -131,11 +131,11 @@ Match`. The rule applies to the :guilabel:`Product` or :guilabel:`Product Templa
 Category`. If a rule is applied to a category then it is automatically applied to all of its
 subcategories too (using the tree structure for product categories).
 
-If you set a minimum quantity in :guilabel:`Min. Quantity` the rule will only apply to a quantity the same
+If you set a minimum quantity in :guilabel:`Min. Quantity`, the rule will only apply to a quantity the same
 as or larger than that set. This lets you set reduced rates in steps that depend on the quantities ordered.
 
-Several rules can be applied to an order. Open ERP evaluates these rules in sequence to select
-which to apply to the specified price calculation. If several rules are valid only the first in
+Several rules can be applied to an order. OpenERP evaluates these rules in sequence to select
+which to apply to the specified price calculation. If several rules are valid, only the first in
 sequence is used for the calculation. The :guilabel:`Sequence` field determines the order, starting with the
 lowest number and working up.
 
@@ -178,17 +178,17 @@ number. For example if you set 0.05 in this example, a price of 45.66 will be ro
 
    In Switzerland, the smallest monetary unit is 5 cents.
    There are not any 1 or 2 cent coins.
-   So you set Open ERP's rounding to 0.05 to round everything in a Swiss franc pricelist.
+   So you set OpenERP's rounding to 0.05 to round everything in a Swiss franc pricelist.
 
 The supplement from :guilabel:`Field2` is applied before the rounding calculation, which enables
-some interesting effects. For example if you want all your prices to end in 9.99, set your rounding
+some interesting effects. For example, if you want all your prices to end in 9.99, set your rounding
 to 10 and your supplement to -0.01 in :guilabel:`Field2`.
 
 Minimum and Maximum margins enable you to guarantee a given margin over the base price. A margin of
 10 USD enables you to stop the discount from returning less than that margin. If you put 0 into this
 field, no effect is taken into account.
 
-Once the pricelist is defined you can assign it to a partner. To do this, find a Partner and select
+Once the pricelist is defined, you can assign it to a partner. To do this, find a Partner and select
 its :guilabel:`Sales & Purchases` tab. You can then change the :guilabel:`Purchase Pricelist` and the
 :guilabel:`Sale Pricelist` that is loaded by default for the partner.
 
@@ -227,7 +227,7 @@ TABLE
 
 .. csv-table:: Examples of products with their different prices
 
-   "Product ","List Price","Standard Price","Default supplier price",
+   "Product ","Sale Price","Cost Price","Default supplier price",
    "Acclo Portable","1,200 ","887 ","893 ",
    "Toshibishi Portable","1,340 ","920 ","920 ",
    "Berrel Keyboard","100 ","50 ","50 ",
@@ -244,7 +244,7 @@ Default Price Lists
    :scale: 75
    :align: center
 
-   *Default pricelist after installing Open ERP*
+   *Default pricelist after installing OpenERP*
 
 When you install the software two pricelists are created by default: one for sales and one for
 purchases. These each contain only one pricelist version and only one line in that version.
@@ -272,7 +272,7 @@ Take the case of a trading company, where the sale price for resellers can be de
 * The sale price of Berrel keyboards is fixed at 60 for a minimum quantity of 5 keyboards purchased.
   Otherwise it uses the rule above.
 
-* Assume that the Acclo pricelist is defined in Open ERP. The pricelist for resellers and the
+* Assume that the Acclo pricelist is defined in OpenERP. The pricelist for resellers and the
   pricelist version then contains three lines:
 
        #. \ ``Acclo``\  line:
@@ -328,7 +328,7 @@ might have signed a valid contract with the following conditions:
 
 * For all other products, the resale conditions are unchanged.
 
-The list price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
+The sale price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
 
        #. \ ``Toshibishi portable``\  :
 
