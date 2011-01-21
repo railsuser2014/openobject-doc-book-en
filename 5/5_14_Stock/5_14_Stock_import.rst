@@ -103,10 +103,11 @@ for a rental product (:guilabel:`PC3`).
    :scale: 75
    :align: center
 
-   *Stock movement entry for sending the product `PC3` to the customer location*
+   *Stock movement entry to send the product `PC3` to the customer location*
 
 The stock movement entry from `Customer Location` (:guilabel:`Axelor - Rental Location`) to `Stock` generates
-automatically with the proper `Scheduled Date` by OpenERP when you confirmed previous stock movement by clicking on :guilabel:`Process Now` button.
+automatically with the proper `Scheduled Date` by OpenERP when you confirmed previous stock movement entry by
+clicking on :guilabel:`Process Now` button.
 
 The same principle is used for internal stock to generate the quality control for certain products.
 
