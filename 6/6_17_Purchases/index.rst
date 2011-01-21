@@ -8,9 +8,9 @@
 Driving your Purchases
 **********************
 
- *In the preceding chapters you saw how to use customer invoices and delivery notes in Open ERP.
+ *In the preceding chapters you saw how to use customer invoices and delivery notes in OpenERP.
  This chapter is about the management of purchases, the process ahead of these two operations.
- You will now see how Open ERP handles and simplifies this and the control of purchases from
+ You will now see how OpenERP handles and simplifies this and the control of purchases from
  suppliers.*
 
 For this chapter you should start with a fresh database that includes demonstration data,
