@@ -1,3 +1,4 @@
+.. include:: <isonum.txt>
 
 .. index::
    single: Process
@@ -13,7 +14,7 @@ Process
  of new documents (based on business objects) and processes that you need to encounter to
  model and manage your business.*
  
- *Open ERP's process module, which is installed automatically when a process-aware module
+ *OpenERP's process module, which is installed automatically when a process-aware module
  is installed, shows you cross-functional processes and technical workflows for those
  nodes in the process that have them. This visualization is invaluable for documentation - 
  but it also goes a step further. You can modify processes and workflows and even generate
@@ -33,7 +34,7 @@ Process
 
 For this chapter you should start with a fresh database that includes demonstration data,
 with :mod:`sale` and its dependencies installed and no particular chart of accounts configured. 
-:mod:`process` is one of those dependencies.  Also install some of the :mod:`hr` modules for
+:mod:`process` is one of those dependencies. Also install some of the :mod:`hr` modules for
 the second example in this chapter, such as :mod:`hr_attendance`, :mod:`hr_contract`,
 and :mod:`hr_holidays`.
 
@@ -73,18 +74,18 @@ management system. When you ask company staff about ISO9001 they usually see it
 as a constraint rather than a helpful daily management tool.
 
 To help the company meet its quality requirements and to form these processes
-into assistance integrated with everyday work, Open ERP supplies a 'Corporate
-Intelligence ( r )' tool that enables you to put company processes at the heart
+into assistance integrated with everyday work, OpenERP supplies a Corporate
+Intelligence\ |reg| tool that enables you to put company processes at the heart
 of your management system.
 
 The system enables:
 
-* new employees to learn how to use the software by graphically and dynamically discovering how each
+* new employees to learn how to use the software by graphically and dynamically, discovering how each
   document and action works,
 
 * easy access to the all the links to a document and everything that is attached to it,
 
-* people to see both a high-level map and the detail of all a company's processes,
+* people to see both a high-level map and the detail of all the company's processes,
 
 * access to a graphical model and integrated quality manual for rapid access that depends on the
   work context,

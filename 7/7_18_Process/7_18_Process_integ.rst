@@ -1,8 +1,8 @@
 .. index::
    single: process integration
    
-The integration of processes into the management system
-=======================================================
+Process Integration in the Management System
+============================================
 
 Processes are at the heart of a company: they form a structure for all
 activities that enable the company to function effectively. A company's human
@@ -11,7 +11,7 @@ individual employees' aspirations from being directed towards a collective
 objective.
 
 From a mapping process, integrating management and the changing needs of each
-employee becomes very useful for the fulfillment of each. Based on that, each
+employee becomes very useful for the fulfilment of each. Based on that, each
 employee becomes aware of his own personal contribution to the company's value
 chain. This representation also helps an employee's own personal management
 because it shows his place and his role in the overall process, very often over
@@ -19,9 +19,9 @@ several departments.
 
 The system of 'Corporate Intelligence' will also be highly useful to system
 implementers who, after studying the requirements, have to formalize a
-company's processes to put them into operation in Open ERP.
+company's processes to put them into operation in OpenERP.
 
-Examples of process
+Examples of Process
 -------------------
 
 To understand the aims of the system of Corporate Intelligence (process)
@@ -36,13 +36,12 @@ two processes:
    single: process; customer order
 
 Following a customer sales order
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The example :ref:`fig-procquot` shows the process for handling a customer sales order. Use
 the menu :menuselection:`Sales --> Sales --> Sales Orders` to list all orders, then choose
 Order SO001 – you can either check the checkbox to its left, or you can open
-the order itself by clicking the order date to the left of its name in the
-list.
+the order itself by clicking the row containing the order.
 
 To view the process for that specific order, click the :guilabel:`Corporate Intelligence`
 button (displayed as a question mark) at the
@@ -58,7 +57,7 @@ node whose left edge is colored maroon rather than grey.
 
    *Example of a process handling a customer order quotation*
 
-This order is in the Quotation state. The whole of some nodes is greyed out
+This order is in the ``Quotation`` state. The whole of some nodes is greyed out
 because the selected document will never enter into that state, such as
 invoicing based on deliveries (the order is in an invoicing mode that is based
 on orders, not deliveries).
@@ -66,8 +65,7 @@ on orders, not deliveries).
 The process is completely dynamic and based on that specific sale order
 document. You can click each of the process nodes (:guilabel:`Quotation`, :guilabel:`Sale Order`,
 :guilabel:`Procurement`, :guilabel:`Draft Invoice`, :guilabel:`Outgoing Products`) using one of the
-links or icons
-on it:
+links or icons on it:
 
 * Obtaining the documentation and the corresponding process in the quality manual, using the
   :guilabel:`Help` (or :guilabel:`Information`) icon,
@@ -75,13 +73,13 @@ on it:
 * Obtaining the documents that an employee needs to carry out the process by clicking the green
   arrow icon,
 
-* Seeing the menu that Open ERP uses to get the document by hovering over the green arrow icon.
+* Seeing the menu that OpenERP uses to get the document by hovering over the green arrow icon.
 
 .. index::
    single: process; new employee
 
 New employee induction
------------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 Open the employee form for Fabien Pinckaers from the menu
 :menuselection:`Human Resources --> Human Resources --> Employees`.
