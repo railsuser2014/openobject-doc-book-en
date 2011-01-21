@@ -1,27 +1,27 @@
 
-The Open ERP solution
-=====================
+The OpenERP Solution
+====================
 
-Open ERP's management of documents is unique and totally innovative in its integrated approach. Its
+OpenERP's management of documents is unique and totally innovative in its integrated approach. Its
 complete integration with the company's management system solves most of the problems that are
 encountered when you use independent document management systems:
 
-* Login and the management of access rights is integrated with that of Open ERP for controlling
+* Login and the management of access rights is integrated with that of OpenERP for controlling
   access to different document types,
 
 * Ultra-rapid access to documents, which are directly accessible through your email client or
   through the company management software,
 
-* Automatic assignment of meta-information comes directly from information contained in your Open
-  ERP login registration,
+* Automatic assignment of meta-information comes directly from information contained in your
+  OpenERP login registration,
 
-* Document workflow which automatically follow Open ERP's documentation process provide complete
+* Document workflow, which automatically follows OpenERP's documentation process, provides complete
   synchronization between the systems,
 
-* Document classification is determined by Open ERP itself so that the structure that is created is
+* Document classification is determined by OpenERP itself so that the structure that is created is
   always synchronized between the systems,
 
-* Automatic indexation and classification of all documents produced by Open ERP for maximum
+* Automatic indexation and classification of all documents produced by OpenERP for maximum
   efficiency.
 
 Getting Started
@@ -37,10 +37,11 @@ Installation
    single: module; document
    single: module; board_document
 
-To install Open ERP's document management system you just need is to install the :mod:`document`
-and :mod:`document_ftp` modules through :menuselection:`Administration --> Modules
---> Modules`. After installing the module the system automatically proposes that you
-configure the document management system.
+To install OpenERP's document management system, you just need to install the :mod:`document`
+and :mod:`document_ftp` modules through the :guilabel:`Reconfigure` wizard by selecting
+:guilabel:`Knowledge Management`, and further on, :guilabel:`Shared Repositories (FTP)` for installation.
+As the module installation proceeds, the system automatically proposes that you
+configure the FTP server.
 
 .. figure::  images/document_config.png
    :scale: 50
@@ -48,7 +49,7 @@ configure the document management system.
 
    *Screen for configuring document management*
 
-Once the module has been installed you will see a new entry in the main menu called :menuselection:`Knowledge`.
+Once the module has been installed, you will see a new entry in the main menu called :menuselection:`Knowledge`.
 
 .. figure::  images/document_menu.png
    :scale: 50

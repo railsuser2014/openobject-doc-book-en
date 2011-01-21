@@ -1,28 +1,28 @@
 
-Mapping between Open ERP resources and directories
-==================================================
+Mapping between OpenERP Resources and Directories
+=================================================
 
-Each directory can either have the type ``Static`` or be linked to another resource. A static directory, as
-with Operating Systems, is the classic directory that can contain a set of files. The directories
-linked to systems resources automatically possess sub-directories for each of resource types defined in
+Each directory can either have the type ``Static`` or ``Folders per resource``. A static directory, as
+with operating systems, is the classic directory that can contain a set of files. On the other hand, the directories
+linked to systems resources automatically possess sub-directories for each of the resource types defined in
 the parent directory.
 
 .. tip:: Directories in English
 
     To keep them synchronized to the working language, directory names are not translatable.
-    But Open ERP's demonstration data automatically creates directories in English.
+    But OpenERP's demonstration data automatically creates directories in English.
     You can rename them through the menu :menuselection:`Knowledge --> Configuration --> Document Management -->
     Directories`.
 
-For example you can look at the directory shown in :menuselection:`Documents --> Sales Order
---> All Sales Order`. You will see the directory for all the orders present in Open ERP that was
+For example, you can look at the directory shown in :menuselection:`Documents --> Sales Order
+--> All Sales Order`. You will see the directory for all the orders present in OpenERP that was
 created automatically by the system.
 
 .. figure::  images/document_sale.png
    :scale: 50
    :align: center
 
-   *Orders in Open ERP*
+   *Orders in OpenERP*
 
 .. figure::  images/document_ftp_sale.png
    :scale: 50
@@ -30,20 +30,20 @@ created automatically by the system.
 
    *Directories representing all the orders in the document management system*
 
-Directories can follow a tree like the tree of resources in Open ERP. For example if you go to the
+Directories can follow a tree structure, like the tree of resources in OpenERP. For example, if you go to the
 directory :menuselection:`Documents --> Projects` you will see the structure of the analytic
 accounts.
 
-To define a directory containing a specific type of resource you have to define parameters when you
+To define a directory containing a specific type of resource, you have to define parameters when you
 define the directory itself:
 
 * :guilabel:`Type` : Folders per resource
 
-* :guilabel:`Resource Model` : Choose one of the system objects
+* :guilabel:`Resource model` : Choose one of the system objects
 
 * :guilabel:`Domain` :  an event filtered so that it sees only a subset of the resources
 
-* :guilabel:`Tree structure` : to show the resources hierarchically
+* :guilabel:`Tree Structure` : to show the resources hierarchically
 
 .. figure::  images/document_dir_form.png
    :scale: 50
@@ -51,11 +51,11 @@ define the directory itself:
 
    *Configuration of the directory containing All Sales Orders*
 
-This is a very flexible approach because any modification of the resource in Open ERP is
+This is a very flexible approach because any modification of the resource in OpenERP is
 automatically reflected in the document management system. So when the quotation gets confirmed in
-Open ERP the directory no longer appears as a quotation through FTP access.
+OpenERP the directory no longer appears as a quotation through FTP access.
 
-Here are some examples of directories linked to Open ERP resources that could be helpful when
+Here are some examples of directories linked to OpenERP resources that could be helpful when
 configured in the document management system:
 
 * Quotations and Order: storing documents that relate to orders,
@@ -69,7 +69,7 @@ configured in the document management system:
 
 * Support Requests: storing items about requests or about technical support responses,
 
-* Analytic accounts or project: to store project management and tracking documents.
+* Analytic Accounts or Project: to store project management and tracking documents.
 
 
 .. Copyright © Open Object Press. All rights reserved.

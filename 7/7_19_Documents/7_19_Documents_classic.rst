@@ -6,12 +6,12 @@ Faced with the need to organize documents, companies have looked at a number of 
 solutions that are promoted today, from simple email archiving to complete electronic management
 systems dedicated to arbitrary documents.
 
-Unfortunately these solutions have not always been very useful because they are too little integrated
-in companies' management systems. Most solutions that we have come across are underused by the
+Unfortunately, these solutions have not always been very useful because they are too little integrated
+in companies' management systems. Most solutions that we have come across, are underused by the
 employees – often used by some of them but not by all.
 
 The primary reason for this is that a document management system that is not integrated imposes extra
-work on an employee. For example a salesperson should ideally save each customer confirmation in the
+work on an employee. For example, a salesperson should ideally save each customer confirmation in the
 document management system. Only that means quite a heavy additional workload just for an order
 confirmation:
 
@@ -19,7 +19,7 @@ confirmation:
 
 #. Save the email and its attachments on the desktop,
 
-#. Connect to the ERP and confirm the order,
+#. Connect to the ERP system and confirm the order,
 
 #. Connect to the document management system,
 
@@ -41,14 +41,14 @@ effort of purchasing and installing one.
 
     * Quotero: http://www.quotero.com
 
-It is very difficult to keep the information in the company's management system synchronized
-with that in the document management system. For example when a customer changes his address, users
-will modify the details in the management software but usually not in the document management
+It is very difficult to keep information in the company's management system synchronized
+with that in the document management system. For example, when a customer changes his address, users
+will modify the details in the management software, but usually, not in the document management
 system.
 
 Furthermore, since users should create the same storage structure in both systems, you quickly find
 after only a few months that the information in the document management system is quite disconnected
-from that in the company's management system if the two are separate. For example, how do you know
+from that in the company's management system, if the two are separate. For example, how do you know
 where to store your least-frequently used documents such as (perhaps) employee car-leasing
 documents?
 
@@ -60,7 +60,7 @@ rights in just the same way as those that are available in the company managemen
 that you have to enter the same sort of data about access rights twice for the system
 administrators.
 
-You will see that the total integration of Open ERP's document management system with the main company
+You will see that the total integration of OpenERP's document management system with the main company
 management system, and plugins to Outlook and Thunderbird email clients, offers an elegant solution
 that addresses these problems.
 

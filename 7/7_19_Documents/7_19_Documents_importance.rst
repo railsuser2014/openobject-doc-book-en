@@ -26,7 +26,7 @@ often you find yourself looking for:
 
 * The documents required for employing a new member of staff,
 
-* An order confirmation sent by a customer to one of your salespeople or, perhaps even more common
+* An order confirmation sent by a customer to one of your salespeople or, perhaps even more common,
   when the relevant salesperson has gone on vacation, if you ever received such an order confirmation,
 
 * A procedure from your quality manual if there has been a process fault,
@@ -62,14 +62,14 @@ management. With it you could also easily:
   deliverables, contract examples, and models for faxes and letters,
 
 * Retrieve procedures and other associated documents if you do not know how to do a certain task –
-  such as things you should do when hiring a new employee, organizing a conference, or how to
-  structure meeting minutes,
+  such as things you should do when hiring a new employee, organizing a conference, or
+  structuring meeting minutes,
 
-* Very easily reuse work done by a colleague to meet similar needs and build on all the individual
+* Reuse work done by a colleague to meet similar needs and build on all the individual
   work done in your own company,
 
 * Find all the orders for a customer or from a supplier in just a few seconds to answer questions or
-  two continue a discussion when the initial contact point in your company is not available,
+  to continue a discussion when the initial contact point in your company is not available,
 
 * Build on your working methods and enable your colleagues to benefit from each improvement in a
   document type or a procedure.
