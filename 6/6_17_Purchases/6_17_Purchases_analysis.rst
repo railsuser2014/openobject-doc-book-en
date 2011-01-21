@@ -1,15 +1,14 @@
 
-
 Purchase Analysis
 =================
 
-Elementary statistics
+Elementary Statistics
 ---------------------
 
 .. index::
    single: module; product_margin
 
-Open ERP enables you to perform analysis of purchases by period (current year, current month,
+OpenERP enables you to perform analysis of purchases by period (current year, current month,
 previous month), by state (quotations, orders), supplier, user, product, category, warehouse
 and so on. This is made possible through a search view accessed through the
 menu :menuselection:`Purchases --> Reporting --> Purchase Analysis`
@@ -24,7 +23,7 @@ This analysis is carried out on supplier orders and not on invoices or the quant
 received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
 module is described in detail in the chapter :ref:`ch-sales`.
 
-To analyze the received quantities, you can use the statistical modules in Warehouse.
+To analyze the received quantities, you can use the statistical reports in Warehouse.
 
 .. Copyright © Open Object Press. All rights reserved.
 

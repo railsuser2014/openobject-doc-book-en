@@ -1,8 +1,8 @@
 
-Analytic accounts
+Analytic Accounts
 =================
 
-To manage purchases by project you should use the analytic accounts. 
+To manage purchases by project, you should use analytic accounts. 
 You can set an analytic account on each line of a supplier order. 
 The analytic costs linked to this purchase will be managed
 by OpenERP from the goods receipt and confirmation of the supplier invoice.
@@ -18,7 +18,7 @@ working ``Make to Order``, the workflow will be:
 
 #. Customer Order,
 
-#. Procurement order on Supplier,
+#. Procurement Order on supplier,
 
 #. Receive invoice and goods from the supplier,
 
@@ -37,9 +37,9 @@ When re-invoicing based on costs you would get the following workflow:
 .. index::
    single: module; purchase_analytic_plans
 
-.. tip:: Analytic multiplans
+.. tip:: Analytic Multi-plans
 
-   If you want several analysis plans you should install the module :mod:`purchase_analytic_plans`.
+   If you want several analysis plans, you should install the module :mod:`purchase_analytic_plans`.
    These let you split a line on a supplier purchase order into several accounts and analytic
    plans.
    Look back at :ref:`ch-accts` for more information on the use of analytic accounts.
