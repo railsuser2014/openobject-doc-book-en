@@ -141,6 +141,8 @@ Bank and Cash --> Cash Registers`. At the start of the day you set the opening a
    :scale: 50
    :align: center
 
+   *Defining the Cash Register*
+
 All the transactions throughout the day are then entered in this statement. When you close the cash
 box, generally at the end of the day, enter the amounts on the ``Cashbox`` tab, in the
 :guilabel:`Closing Balance` section. Then confirm the statement to close the day's cash statement and automatically
