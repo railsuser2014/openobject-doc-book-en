@@ -75,12 +75,12 @@ must then enter the amount that appears on your statement line: a negative sign 
 a positive sign for a cash payment or deposit.
 
 In the :guilabel:`Payment` press F1 to reconcile your payment directly with the corresponding accounting
-entry or entries to be paid. 
+entry or entries to be paid.
 
 Import Invoices
 ---------------
 Click the `Import Invoices` button, then click Add to select the invoices for
-which your payment will have to be reconciled. Click OK to confirm your selection; the statement line will automatically be added with the corresponding reconciliation. 
+which your payment will have to be reconciled. Click OK to confirm your selection; the statement line will automatically be added with the corresponding reconciliation.
 
 .. figure::  images/account_statement_reconcile.png
    :scale: 50
@@ -123,8 +123,8 @@ However, reconciliation has got two significant effects:
 Finally, once you have entered the complete bank statement, you can validate it.
 OpenERP then automatically generates the corresponding accounting entries if the calculated balance equals the final balance indicated in the Closing Balance field. The reconciled invoices are marked as paid at that point.
 
-You can also enter general accounting entries for e.g. banking costs. In such cases, you can enter the amounts directly in the corresponding general accounts. 
- 
+You can also enter general accounting entries for e.g. banking costs. In such cases, you can enter the amounts directly in the corresponding general accounts.
+
 A user with advanced accounting skills can enter accounting entries directly into the bank journal from :menuselection:`Accounting --> Journal Entries -> Journal Items`. The result is the same, but the operation is more complex because you must know the
 accounts to use and must have mastered the ideas of credit and debit.
 
@@ -135,7 +135,7 @@ Cash Management
 ---------------
 
 To manage cash, you can use the menu :menuselection:`Accounting -->
-Bank and Cash --> Cash Registers`. At the start of the day you set the opening amount of cash in the entry (:guilabel:`Opening Balance`). Then Open the Cash journal to start making entries from the ``Cash Transactions`` tab. 
+Bank and Cash --> Cash Registers`. At the start of the day you set the opening amount of cash in the entry (:guilabel:`Opening Balance`). Then Open the Cash journal to start making entries from the ``Cash Transactions`` tab.
 
 .. figure::  images/account_cash_registers.png
    :scale: 50
@@ -144,7 +144,7 @@ Bank and Cash --> Cash Registers`. At the start of the day you set the opening a
 All the transactions throughout the day are then entered in this statement. When you close the cash
 box, generally at the end of the day, enter the amounts on the ``Cashbox`` tab, in the
 :guilabel:`Closing Balance` section. Then confirm the statement to close the day's cash statement and automatically
-generate the corresponding accounting entries. Note that the Calculated balance and the Cashbox balance need to be equal before you can close the cashbox. 
+generate the corresponding accounting entries. Note that the Calculated balance and the Cashbox balance need to be equal before you can close the cashbox.
 
 .. tip::  Confirming the statement
 
@@ -229,14 +229,14 @@ sum of credits equals the sum of the debits for the matched entries.
 Reconciliation in OpenERP can only be carried out in accounts that have been configured as
 reconcilable (the :guilabel:`Reconcile` field).
 
-# .. todo::
-# .. tip:: Do not confuse: **account** reconciliation and **bank statement** reconciliation
+.. todo::
+.. tip:: Do not confuse about **account** reconciliation and **bank statement** reconciliation
 
-# 	It is important not to confuse the reconciliation of accounting entries with bank statement
-# 	reconciliation.
-# 	Account reconciliation consists of linking account entries with each other, while statement reconciliation consists of
-# 	verifying that your bank statement corresponds to the entries of that account in your accounting system.
-# 	You can perform statement reconciliation using the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> # Statements Reconciliation`.
+ 	It is important not to confuse the reconciliation of accounting entries with bank statement
+	reconciliation.
+ 	Account reconciliation consists of linking account entries with each other, while statement reconciliation consists of
+ 	verifying that your bank statement corresponds to the entries of that account in your accounting system.
+ 	You can perform statement reconciliation using the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Statements Reconciliation`.
 
 There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
@@ -315,7 +315,7 @@ Manual Reconciliation
 
 For manual reconciliation, open the entries for reconciling an account through the menu :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Manual Reconciliation`.
 
-# You can also call up manual reconciliation from any screen that shows accounting entries.
+You can also call up manual reconciliation from any screen that shows accounting entries.
 
 .. todo:: is that right?
 
