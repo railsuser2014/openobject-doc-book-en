@@ -3,8 +3,8 @@ Standardizing Structures
 ========================
 
 You now have a configuration that enables you to automatically get a directory structure linked to
-Open ERP for each resource, such as for projects and orders. The ideal situation would now be to
-automatically structure the documents about projects, say. For example, you could classify them
+OpenERP for each resource, such as for projects and orders. The ideal situation would now be to
+automatically structure the documents about projects, say for example, you could classify them
 depending on their type:
 
 * Quotations,
@@ -15,7 +15,7 @@ depending on their type:
 
 * Documentation.
 
-Open ERP provides you with a system that lets you create a structure type for each type of a given
+OpenERP provides you with a system that lets you create a structure type for each type of a given
 document. It then provides that classification for all documents in the directories structured in
 that type.
 
@@ -37,16 +37,16 @@ organizing your documents efficiently.
 
 .. tip:: Mapping
 
-    In practice, Open ERP does not create directories or files for every resource.
-    It actually manages this by mapping between Open ERP resources and the FTP interface
+    In practice, OpenERP does not create directories or files for every resource.
+    It actually manages this by mapping between OpenERP resources and the FTP interface.
 
     This approach gives a lot of flexibility because there is no synchronizing to do, nor any redundancy.
-    Changes in either the document management system or in Open ERP will automatically be reflected
+    Changes in either the document management system or in OpenERP will automatically be reflected
     over in the other side.
 
     And system resources are obviously not used up by storing things twice.
 
-Once a new project has been defined in Open ERP, the system automatically creates a directory
+Once a new project has been defined in OpenERP, the system automatically creates a directory
 corresponding to the project in the right place in the document management system, and creates a
 structure type there for classifying documents.
 
