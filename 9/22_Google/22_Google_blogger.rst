@@ -5,13 +5,13 @@ Google Blogger
 Name of the module:
 ``google_blogger``
 
-This module integrate Google Blogger and Open ERP Task Management, which exports task to blogger and one can get comments on his/her activity on mentioned tasks in blogger.
+This module integrate Google Blogger and OpenERP Task Management, which exports task to blogger and one can get comments on his/her activity on mentioned tasks in blogger.
 
 A very useful feature of blogger, that is open discussion will be enhanced the development efforts. 
 
 This feature helps in managing large projects with many tasks and many users working on different task (simultaneously), with this functionality all users can share their progress for the task with others and give their comments for the same.
 
-Check below screenshots which send Open ERP tasks to blogger.
+Check below screenshots which send OpenERP tasks to blogger.
 
 **Blogger**
 
@@ -30,7 +30,7 @@ Check below screenshots which send Open ERP tasks to blogger.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

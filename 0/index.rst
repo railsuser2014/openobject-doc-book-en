@@ -112,7 +112,7 @@ Having restructured and reorganized many businesses, we wanted our management ex
 a work that is both instructive and practical. It was important for us not to write a manual about
 OpenERP, but instead a work that deals with advanced management techniques realized through these
 IT tools. You will see what management practices might be useful, what is possible, and then how you
-could achieve that in Open ERP.
+could achieve that in OpenERP.
 
 This is what we will consider OpenERP to be: not an end in itself but just the tool you use to put
 an advanced management system into place.
@@ -170,7 +170,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			all based on Free / Open Source software.
 
 			He originated Tiny ERP, now OpenERP, and is the director of two companies including Tiny sprl,
-			the editor of Open ERP. In three years he has grown the Tiny group from one to sixty-five
+			the editor of OpenERP. In three years he has grown the Tiny group from one to sixty-five
 			employees
 			without loans or external fund-raising, and while making a profit.
 
@@ -270,7 +270,7 @@ My particular thanks to Laurence Henrion and my family for supporting me through
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

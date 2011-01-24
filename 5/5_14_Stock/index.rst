@@ -9,7 +9,7 @@
 Your Warehouse
 **************
 
- *Open ERP's stock management is at once very simple, flexible and complete.
+ *OpenERP's stock management is at once very simple, flexible and complete.
  It is based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
  “everything moved”. In OpenERP you do not talk of disappearance, consumption or loss of products:
@@ -99,7 +99,7 @@ with Warehouse Management and its dependencies installed and no particular chart
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

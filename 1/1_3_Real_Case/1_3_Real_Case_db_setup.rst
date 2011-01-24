@@ -194,7 +194,7 @@ Before you save this, look at the partner's accounting setup by clicking the tab
 :guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
 have account values in them that were taken from the account properties you just created.
 You do not have to accept those values: you can enter any suitable account you like at this stage, 
-although Open ERP constrains the selection to ones that make accounting sense.
+although OpenERP constrains the selection to ones that make accounting sense.
 
 Back at the first tab, :guilabel:`General`, change any other fields you like, 
 such as the address and phone numbers, then :guilabel:`Save`. This
@@ -409,8 +409,8 @@ Click :menuselection:`Warehouse --> Inventory Control --> Location Structure` to
 locations. These locations have been defined by the minimal default data loaded when the database
 was created. You will use this default structure in this example.
 
-Open ERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
-that act as their names suggest, and ``Virtual Locations`` that are used by Open ERP for its own purposes.
+OpenERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
+that act as their names suggest, and ``Virtual Locations`` that are used by OpenERP for its own purposes.
 
 #.	From the :guilabel:`Main Menu` click on :menuselection:`Warehouse --> Configuration -->
 	Warehouse Management --> Locations` to reach a list view of the locations (not the tree view).
@@ -506,7 +506,7 @@ recover from it but, again, you would need to know your super-administrator pass
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

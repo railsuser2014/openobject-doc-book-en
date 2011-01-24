@@ -157,7 +157,7 @@ and click on `New` button to define a new bill of materials.
    *Screen defining a Bill of Materials*
 
 In the area below the bill of materials you should set the finished product, which will be
-manufactured or assembled. Once the product has been selected, Open ERP automatically completes the
+manufactured or assembled. Once the product has been selected, OpenERP automatically completes the
 name of the bill of materials and the default Unit of Measure for this product.
 
 The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and
@@ -209,7 +209,7 @@ processes. These will be detailed further on in the chapter in the section on co
 Multi-level Bills of Materials
 ===============================
 
-In Open ERP each line of a bill of materials may itself be a bill of materials. So you can
+In OpenERP each line of a bill of materials may itself be a bill of materials. So you can
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
 :ref:`fig-mrparm` you could define the single bill of materials below:
 
@@ -231,11 +231,11 @@ define BoMs with several levels. Instead of defining several BoMs for the cabine
    TAQ000        12        Unit
    ============  ========  ===============
 
-Open ERP behaves differently depending on whether the bill of materials is defined in several small
+OpenERP behaves differently depending on whether the bill of materials is defined in several small
 BoMs each on a single level or in one BoM tree-structured on several levels.
 
 So if you select a BoM using intermediate products that automatically generates production orders
-based on calculated requirements, Open ERP will propose manufacturing an intermediate product. To
+based on calculated requirements, OpenERP will propose manufacturing an intermediate product. To
 manufacture a cabinet, you would create 6 production orders:
 
 .. table:: Production Order
@@ -320,7 +320,7 @@ Phantom Bills of Materials
 ----------------------------
 
 If a finished product is defined using intermediate products that are themselves defined using other
-BoMs, Open ERP will then propose the manufacture of each intermediate product. This will give
+BoMs, OpenERP will then propose the manufacture of each intermediate product. This will give
 several production orders. If you only want a single production order you can define a single BoM with
 several levels.
 
@@ -384,7 +384,7 @@ Assembly Bills of Materials
 .. note:: Sales Bills of Materials
 
     In some software this is named a Sales Bill of Materials.
-    In Open ERP the term assembly is used because the effect of the bill of materials is visible not
+    In OpenERP the term assembly is used because the effect of the bill of materials is visible not
     only in sales but also elsewhere, for example in the intermediate manufactured products.
 
 Assembly bills of materials enable you to define assemblies that will be sold directly. These
@@ -392,7 +392,7 @@ could also be used in deliveries and stock management rather than just sold in i
 For example if you deliver the cabinet in pieces for self-assembly, set the ARM100 BoM to type
 ``Assembly`` .
 
-When a salesperson creates an order for an ARM100 product, Open ERP automatically changes the ARM100
+When a salesperson creates an order for an ARM100 product, OpenERP automatically changes the ARM100
 from a set of components into an identifiable package for sending to a customer.
 Then it asks the storesperson to pack 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100.
 This is described as an ARM100 not just the individual delivered products.
@@ -426,13 +426,13 @@ transformation is done directly between the order and the set.
 Configurable Bills of Materials
 --------------------------------
 
-In Open ERP you can define several bills of materials for the same product. In fact you can have
+In OpenERP you can define several bills of materials for the same product. In fact you can have
 several manufacturing methods or several approved raw materials for a given product. You will see in
 the following section that the manufacturing procedure (the routing) is attached to the Bill of
 Materials, so the choice of bill of materials implicitly includes the operations to make it.
 
 Once several bills of materials have been defined for a particular product you need to have a
-system to enable Open ERP to select one of them for use. By default the bill of materials with the
+system to enable OpenERP to select one of them for use. By default the bill of materials with the
 lowest sequence number is selected by the system.
 
 To gain more control over the process during the sale or procurement, you can use **properties**.
@@ -463,7 +463,7 @@ For example you can define the properties and the following groups:
 
 Once the bills of materials have been defined you could associate the corresponding properties to them. Then
 when the salesperson goes to encode a product line he can attach the properties there. If the
-product must be manufactured, Open ERP will automatically choose the bill of materials that matches
+product must be manufactured, OpenERP will automatically choose the bill of materials that matches
 the defined properties in the order most closely.
 
 Note the properties are only visible in the Bills of Materials and Sales Management if you are
@@ -504,13 +504,13 @@ depending on the quantities and the lead time requested by the customer.
     a bill of materials.
 
 By putting a bill of materials on its own line, you can also implement substitute products. You set
-the bill of materials to type ``Assembly`` to make the substitution transparent and to prevent Open ERP
+the bill of materials to type ``Assembly`` to make the substitution transparent and to prevent OpenERP
 from proposing an intermediate production order.
 
 Manufacturing
 =============
 
-Once the bills of materials have been defined, Open ERP becomes capable of automatically deciding on
+Once the bills of materials have been defined, OpenERP becomes capable of automatically deciding on
 the manufacturing route depending on the needs of the company.
 
 Production orders can be proposed automatically by the system depending on several criteria
@@ -535,7 +535,7 @@ Clearly it is also possible to start production manually. To do this you can use
    single: module; mrp_jit
 
 If you have not installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
-using Open ERP to schedule the Production Orders automatically using the
+using OpenERP to schedule the Production Orders automatically using the
 various system rules. To do this use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 
 Workflow for complete production
@@ -681,7 +681,7 @@ The production order must be in the closed state as shown in the figure :ref:`fi
 Manufacture of finished product
 --------------------------------
 
-Having manufactured the intermediate product CPU_GEN, Open ERP then automatically proposes the
+Having manufactured the intermediate product CPU_GEN, OpenERP then automatically proposes the
 manufacture of the computer PC2 using the order created earlier. So return to the menu for
 production orders to start :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
@@ -760,7 +760,7 @@ been carried out. To do that, you can use the menu :menuselection:`Warehouse -->
 You then get a list of all the deliveries that have been made but
 have not yet been invoiced.
 
-So select some or all of the deliveries. Click on the action :guilabel:`Create Invoice`. Open ERP asks
+So select some or all of the deliveries. Click on the action :guilabel:`Create Invoice`. OpenERP asks
 if you want to group the deliveries from the same partner into a single invoice or if you would prefer to
 invoice for each delivery individually.
 
@@ -770,7 +770,7 @@ invoice for each delivery individually.
 
    *Invoicing of deliveries*
 
-Invoices are generated automatically in the ``Draft`` state by Open ERP.
+Invoices are generated automatically in the ``Draft`` state by OpenERP.
 You can modify invoices before approving them finally.
 
 .. figure:: images/mrp_invoice_list.png
@@ -827,7 +827,7 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 
 The `Scheduled date` , `Product Qty` and `Reference`, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The :guilabel:`Product UOM` by
-default is completed automatically by Open ERP when the product is first selected.
+default is completed automatically by OpenERP when the product is first selected.
 
 You then have to set two locations:
 
@@ -836,7 +836,7 @@ The location from which the required raw materials should be found, and
 The location for depositing the finished products.
 
 For simplicity, put the ``Stock`` location in both places. The field :guilabel:`Bill of Materials` will
-automatically be completed by Open ERP when you select the product.  You
+automatically be completed by OpenERP when you select the product.  You
 can then overwrite it with another BoM to specify something else to use for this specific
 manufacture then Click the button :guilabel:`Compute Data`.
 
@@ -844,7 +844,7 @@ The tabs :guilabel:`Scheduled Products` and :guilabel:`Work Orders` are also com
 :guilabel:`Compute Data`. You will find the raw materials there that are required for
 the production and the operations needed by the assembly staff.
 
-If you want to start production, click the button :guilabel:`Confirm Production`, and Open ERP then
+If you want to start production, click the button :guilabel:`Confirm Production`, and OpenERP then
 automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and
 :guilabel:`Products to Finish` field in :guilabel:`Finished Products` tab.
 
@@ -917,7 +917,7 @@ most urgent will be produced first.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 
