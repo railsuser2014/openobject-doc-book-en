@@ -2,10 +2,10 @@
 .. index:: 
    single: menu; configuring
 
-Configuring the menu
+Configuring the Menu
 ====================
 
-Open ERP's menu organization is not subject to any restriction, so you can modify the whole
+OpenERP's menu organization is not subject to any restriction, so you can modify the whole
 structure, the terminology and all access rights to it to meet your specific needs in the best
 possible way. However, before you do all that and just as you would for any other customizable
 software, you should balance both the benefits you see in such changes and the costs, such as the
@@ -13,13 +13,13 @@ need to train users, to maintain new documentation and to continue the alteratio
 subsequent versions of the software.
 
 This section describes how to proceed to change the structure of the menu and the welcome page, to
-configure the terminology of the menus and forms in the user interface and for managing users'
+configure the terminology of the menus and forms in the user interface, and for managing users'
 access rights to the menus and the various underlying business objects.
 
 .. index::
    single: menu; duplicating
 
-Changing the menu
+Changing the Menu
 -----------------
 
 You can change the way menu items appear and the actions they trigger by using the menu
@@ -48,19 +48,19 @@ Resources`, and make sure that the entry moves to the end of the menu list by re
 :guilabel:`Sequence` with \ ``99``\  . You can experiment with icons if you like. Save the form and
 then reload the page to see the results.
 
-.. tip:: Duplicating the menu
+.. tip:: Duplicating the Menu
 
-   If you are planning to modify a menu you should duplicate it first.
+   If you are planning to modify a menu, you should duplicate it first.
    In this way you will always keep a link to the original menu that works if you need it to.
 
 .. index:: 
    single: welcome page
    
-Personalizing the welcome page for each user
+Personalizing the Welcome Page for each user
 --------------------------------------------
 
 The administrator can change both the welcome page and the main menu page individually for each user
-of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
+of the system, and can adapt OpenERP to each role in the company to best fit the needs of everyone.
 
 To make modifications for a particular user, edit the user configuration again in
 :menuselection:`Administration --> Users --> Users`. Open the form for a particular user, and select
@@ -79,7 +79,7 @@ could be most useful. The :guilabel:`Menu Action` is the one you reach through t
 :menuselection:`Form --> Menu` in the GTK client. You can choose the
 main menu and the dashboards there.
 
-.. tip:: Actions on the administrator's menu
+.. tip:: Actions on the Administrator's Menu
 
 	It is very easy to change the welcome page and the menu of the different users.
 	However, you should not change the main administrator's menu because you could make certain menus
@@ -88,7 +88,7 @@ main menu and the dashboards there.
 .. index:: 
    single: field; default value
    
-Assigning default values to fields
+Assigning Default Values to Fields
 ----------------------------------
 
 You can quite easily configure the system to put default values in various fields as you open new
@@ -115,9 +115,9 @@ To check this new configuration, open a new partner form: the field :guilabel:`C
 contain the entry \ ``New Zealand``\  .
 
 This is a very powerful feature! An administrator can use this functionality to redefine the
-behavior of your whole system. You can test that in database \ ``openerp_ch13``\   by opening up a
+behavior of your whole system. You can test that in database \ ``openerp_ch13`` \ by opening up a
 new :guilabel:`Purchase Order` form, clicking the second tab :guilabel:`Delivery & Invoicing`,
-selecting \ ``From Picking``\   in the :guilabel:`Invoicing Control` field and then making that the
+selecting \ ``From Picking`` \ in the :guilabel:`Invoicing Control` field and then making that the
 default.
 
 From that moment on, you would automatically create draft purchase invoices only when goods are
@@ -125,13 +125,13 @@ received, so you could very easily restrict your accountants from paying any inv
 until you were sure you had received the goods. It would not stop anyone from selecting another
 method of invoice control, but they would start with the default definition.
 
-Changing the terminology
+Changing the Terminology
 ------------------------
 
-You can use Open ERP's language translation functionality to substitute its standard terminology
+You can use OpenERP's language translation functionality to substitute its standard terminology
 with terminology that fits your company better. It is quite straightforward to adapt the software
 with different terms specific to your industry. Moreover, this can strengthen acceptance of your new
-Open ERP system, because everybody will be able to retain their usual vocabulary.
+OpenERP system, because everybody will be able to retain their usual vocabulary.
 
 You can do this one of two ways:
 
@@ -148,13 +148,13 @@ want.
 .. index::
    single: translation
 
-Translation through a CSV file
+Translation through a CSV File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To translate or modify all of the system's phrases you first have to export a translation file in
-CSV form. And to do that, you have to install a language into Open ERP. To load a translation
-that already exists in Open ERP use
-:menuselection:`Administration --> Translations --> Load an Official Translation`
+To translate or modify all of the system's phrases, you first have to export a translation file in
+CSV form. And to do that, you have to install a language into OpenERP. To load a translation
+that already exists in OpenERP, use
+:menuselection:`Administration --> Translations --> Load an Official Translation`,
 choose a language and then click :guilabel:`Load`.
 
 Then export it using 
@@ -163,11 +163,11 @@ Select the language, then the :guilabel:`CSV File` format, then one or more (or 
 Click :guilabel:`Export` to start the export process, then click the small 
 :guilabel:`Save As` icon to save the file somewhere.
 
-.. note:: UTF-8 format
+.. note:: UTF-8 Format
 
 	The CSV file is encoded in the UTF-8 format.
-	Make sure that you retain this format when you open the file in a spreadsheet program because
-	if you **do not** retain it you risk seeing strange character strings in place of accented
+	Make sure that you retain this format when you open the file in a spreadsheet program, because
+	if you **do not** retain it, you risk seeing strange character strings in place of accented
 	characters.
 
 .. figure::  images/csv_transl.png
@@ -181,7 +181,7 @@ The file contains six columns: :guilabel:`module` ,
 :guilabel:`src`, and :guilabel:`value`. You have to ensure that the first line, which specifies
 these column names, remains untouched. 
 
-The :guilabel:`src`  field contains the base text in English,
+The :guilabel:`src` field contains the base text in English,
 and the :guilabel:`value` field contains a translation into another conventional language or into a
 specialist technical phrase. If there is nothing at all in the :guilabel:`value` field then the
 English translation will automatically be used on the the form you see.
@@ -192,11 +192,11 @@ English translation will automatically be used on the the form you see.
    file.
    Which line should you modify?
    Refer to the two columns :guilabel:`type` (in column B) and :guilabel:`name` (in column C).
-   Some lines have the name :guilabel:`ir.ui.menu` in the :guilabel:`name` column which shows that this is a menu entry.
+   Some lines have the name :guilabel:`ir.ui.menu` in the :guilabel:`name` column, which shows that this is a menu entry.
    Others have :guilabel:`selection` in the :guilabel:`type` column, which indicates that you would
    see this entry in a drop-down menu.
 
-You should then load the new file into your Open ERP system using the menu
+You should then load the new file into your OpenERP system using the menu
 :menuselection:`Administration --> Translations --> Import/Export --> Import Translation`. 
 You have then got two ways forward:
 
@@ -207,16 +207,16 @@ You have then got two ways forward:
 * you could create a new translation file which users can select in their :guilabel:`Preferences`.
 
 If you are not connected to the translated language, click :guilabel:`Edit Preferences`, select the
-language in :guilabel:`Language` from the :guilabel:`Preferences` tab and finally click :guilabel:`Save`
+language in :guilabel:`Language` from the :guilabel:`Preferences` tab, and finally click :guilabel:`Save`
 to load the new language with its new terminology.
 
-.. tip:: Partial translations
+.. tip:: Partial Translations
 
    You can load a selection of the lines in a translation file by deleting most of the lines in the
-   file and then loading back only the changed ones. Open ERP then changes only the uploaded lines
+   file and then loading back only the changed ones. OpenERP then changes only the uploaded lines
    and leaves the original ones alone.
 
-Changes through the client interface
+Changes through the Client Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can also change labels and other screen items on screen in the web client. 
@@ -242,10 +242,10 @@ tiresome and you can lose a lot of time if you have got to change some terms acr
 
 In that case it would be better to use the translation method that employs a CSV file.
 
-.. tip:: Taking account of translations
+.. tip:: Taking account of Translations
 
-   In the GTK client the modified terms are not updated immediately.
-   To see the effects of the modifications you must close the current window and then reopen the
+   In the GTK client, the modified terms are not updated immediately.
+   To see the effects of the modifications, you must close the current window and then reopen the
    form.
 
 .. Copyright © Open Object Press. All rights reserved.

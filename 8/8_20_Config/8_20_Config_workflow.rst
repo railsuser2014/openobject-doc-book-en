@@ -2,20 +2,20 @@
    single: workflow
    single: process
 
-Configuring workflows and processes
+Configuring Workflows and Processes
 ===================================
 
 Workflows represent the company's different document flows. They are completely configurable and
-define the path that any individual Open ERP object (such as an order) must follow depending on the conditions
-(for example an order over a certain value must be approved by a sales director, otherwise by any
+define the path that any individual OpenERP object (such as an order) must follow, depending on the conditions
+(for example, an order above a certain value must be approved by a sales director, otherwise by any
 sales person, before the delivery can be triggered).
 
 The figure :ref:`fig-sflow` shows the standard workflow for an order. You can show it from the GTK client
 starting with :menuselection:`Sales --> Sales --> Sales Orders`. Select an
 order, then go to the top menu :menuselection:`Plugins --> Execute a plugin --> Print Workflow` to
-show the menu below. 
+show the workflow below.
 
-In the web client you can reach a workflow from the associated cross-company process
+In the web client, you can reach a workflow from the associated cross-company process
 (the process itself is reached by going to the sales document and then clicking the 
 :guilabel:`Corporate Intelligence` button above it). 
 The chapter :ref:`ch-process` provides all of the information

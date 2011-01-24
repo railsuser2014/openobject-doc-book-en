@@ -7,7 +7,7 @@ User Login
 
 .. tip:: Managing Passwords
 
-   If you let users change their passwords for themselves you will have no direct control over the
+   If you let users change their passwords for themselves, you will have no direct control over the
    password they choose.
    You should have a written policy about password strength to try to maintain a level of security in
    your system.
@@ -15,14 +15,14 @@ User Login
 .. index::
    single: module; users_ldap
 
-.. tip:: Managing users through LDAP
+.. tip:: Managing Users through LDAP
 
 	With the :mod:`users_ldap` module, user accounts can be managed through an LDAP directory that can be
 	made common to various different company resources.
 
 	Connection parameters for the LDAP directory are then registered with the company definition.
 	You can provide a user profile template there from which new users are automatically created during
-	their first connection to Open ERP.
+	their first connection to OpenERP.
 
 .. index::
    single: LDAP
@@ -35,17 +35,17 @@ User Login
 	This enables users in the company to have the same username and password to access all
 	their applications (such as email and intranet).
 
-Managing access rights
+Managing Access Rights
 ======================
 
-One of the most important areas in configuring Open ERP is how to manage access rights to the
+One of the most important areas in configuring OpenERP is how to manage access rights to the
 information in it.
 
 You are planning to put everything significant to your business into the system, but most of your
 staff need see only part of it, and may need to change even less of it. Who should have rights to
 what, and how do you manage that?
 
-Open ERP's approach to rights management is highly flexible. Each user can belong to one or more
+OpenERP's approach to rights management is highly flexible. Each user can belong to one or more
 groups, and the group(s) you belong to determine(s):
 
 * the visibility of each menu item and
@@ -63,14 +63,14 @@ given membership of other groups.
 Groups and Users
 ================
 
-To configure access rights you would start by defining the groups. It is important for the groups to
+To configure access rights, you would start by defining the groups. It is important for the groups to
 be representative of your company's job functions rather than of its individual employees.
 
 So if your finance director is also your sales director, you should create both a Finance Director
 group and a Sales Director group, even though they are both the same person, and would both be
 assigned to this user in practice. This gives you flexibility for the future.
 
-You should also create groups within a departmental areas that have different levels of access
+You should also create groups within departmental areas that have different levels of access
 rights. For example, if you create a \ ``Sales Director`` \ group and a \ ``Sales`` \ group avoid
 assigning exactly the same rights to each group. The first could see all the of reports, while the
 second could be restricted to seeing quotations. You could either make the Sales Director a
@@ -82,7 +82,7 @@ maintain consistency.
 .. index::
    pair:  system; administrator
 
-.. tip:: Flexibility in managing access
+.. tip:: Flexibility in Managing Access
 
 	To give yourself flexibility, you can ensure that a trusted staff member
 	(perhaps a director or someone in accounts, or even the system administrator) is given wide rights
@@ -92,15 +92,15 @@ maintain consistency.
 .. index::
    single: access; menu
 
-Access rights for menus
+Access Rights for Menus
 -----------------------
 
-To get a feel for rights management in Open ERP you will create a new \ ``Stock1`` \  group, with
+To get a feel for rights management in OpenERP, you will create a new \ ``Stock1`` \  group, with
 access to the *Warehouse* menu items. You will then create a stores person user who is a member
 of the \ ``Stock1`` \  group.
 
 To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the
-group name Stock1.
+group name ``Stock1``.
 
 Then to create a new user linked to this, use :menuselection:`Administration --> Users --> Users` to
 enter the following:
@@ -128,9 +128,9 @@ get the :menuselection:`Warehouse` menu item. In the form describing the menu, a
 the \ ``Warehouse / Manager`` \, \ ``Warehouse / User`` \ and \ ``Stock1`` \ group will be able to see
 this menu item in their main menu list.
 
-.. tip:: Menu hierarchy
+.. tip:: Menu Hierarchy
 
-	Since menus are hierarchical there is no need to hide access to lower menus:
+	Since menus are hierarchical, there is no need to hide access to lower menus:
 	once you have configured :menuselection:`Warehouse` this way, all lower-level menus become invisible to
 	members of other groups.
 
@@ -138,15 +138,15 @@ this menu item in their main menu list.
 
 	This method of managing access to menus does not guarantee that users are prevented from reaching
 	hidden business objects in the system in other ways.
-	For example, hiding the Invoices menu will not prevent people reaching invoices through purchase and
+	For example, hiding the :guilabel:`Invoices` menu will not prevent people reaching invoices through purchase and
 	sales orders, or by guessing the URL.
 
-	For effective security management you must use the methods for managing access rights to objects
+	For effective security management, you must use the methods for managing access rights to objects
 	presented in the following section.
 
-.. note:: Initial access configuration
+.. note:: Initial Access Configuration
 
-	In the initial configuration, Open ERP's \ ``admin`` \ user, a member of the \ ``Administration / Configuration`` \
+	In the initial configuration, OpenERP's \ ``admin`` \ user, a member of the \ ``Administration / Configuration`` \
 	group, is given access to the Configuration menu
 	in each section of the main menu. This is a general convention.
 	For example, :menuselection:`Sales --> Configuration` is visible in the administrator's menu
@@ -171,7 +171,7 @@ way as access to menus.
 .. note:: Object
 
    An object represents a document in the system.
-   Objects are linked to database tables and also have additional concepts,
+   Objects are linked to database tables, and also have additional concepts,
    such as the functions of fields, inheritance from other objects, and class methods that give them
    behavior.
 
@@ -179,8 +179,8 @@ If no group is assigned to an object, all users can access it without any restri
 Conversely, when an access control is defined for an object, a user must be a member of a group
 owning appropriate access rights to have any sort of access to that object.
 
-You must always ensure that you do not lock the \ ``Administration / Access Rights`` \ group out of any objects that control
-administration and configuration options, such as the \ ``ir.model.access`` \ model.
+You must always ensure that you do not lock the \ ``Administration / Access Rights`` \ group out of any object
+that controls administration and configuration options, such as the \ ``ir.model.access`` \ model.
 
 You can manage four access modes on objects independently:
 
@@ -196,9 +196,9 @@ You can manage four access modes on objects independently:
    :scale: 75
    :align: center
 
-   *Access control to invoices for the Finance/Admin group*
+   *Access control to invoices for the Accounting / Invoice group*
 
-To configure access rights on a Open ERP objects, use the menu :menuselection:`Administration -->
+To configure access rights on a OpenERP objects, use the menu :menuselection:`Administration -->
 Security --> Access Controls List` and click :guilabel:`New` or choose an existing one
 and click :guilabel:`Edit`.
 You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
@@ -221,9 +221,9 @@ You can then create additional rules on the same object to give specific rights 
 Record Rules For Objects
 ------------------------
 
-Record rules determine who can access the objects depending on the rules set for the particular object. A record rule has some tests to be performed on objects.
+Record rules determine who can access the objects, depending on the rules set for the particular object. A record rule has some tests to be performed on objects.
 
-You can manage four access modes on objects independently depending on the test:
+You can manage four access modes on objects independently, depending on the test:
 
     * :guilabel:`Read access` : can read the data in the object,
 
@@ -233,41 +233,41 @@ You can manage four access modes on objects independently depending on the test:
 
     * :guilabel:`Delete access` : can delete records from the object.
 
-To configure rule on object, use the menu :menuselection:`Administration -->
+To configure a rule on an object, use the menu :menuselection:`Administration -->
 Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
 
     * :guilabel:`Object` : Object on which to have the rule
 
     * :guilabel:`Name` : Name of the rule
 
-    * :guilabel:`Global` : If global is checked then that rule would be applied for all the groups and if it is unchecked then that rule would be applied only for the groups selected for it
+    * :guilabel:`Global` : If global is checked, then that rule would be applied for all the groups; and if it is unchecked, then that rule would be applied only for the groups selected for it
 
     * :guilabel:`Domain` : A list of all the tests for the object. It is specified through a Python expression as a list of tuples.
 
-            * If there are multiple tests on same object then all of them are joined using ``AND`` operator and depending on the result the rule would be satisfied
+            * If there are multiple tests on same object, then all of them are joined using ``AND`` operator, and depending on the result the rule would be satisfied
 
-            * If there are multiple rules on same object then all of them are joined using ``OR`` operator
+            * If there are multiple rules on same object, then all of them are joined using ``OR`` operator
 
     * :guilabel:`Access Modes` : Read, Write, Create, Delete as described earlier
 
             * If only one access mode is checked, then only that mode would be applied
 
-            * If all of them are checked then all the access modes would be applied
+            * If all of them are checked, then all the access modes would be applied
 
-        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked it would raise an exception.
+        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked, it would raise an exception.
 
 .. .. figure:: images/security_rule.png
 ..    :scale: 75
 ..    :align: center
 
-*For example :* If we have a rule defined on ``res.partner`` object which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', user.id)]``. We check only the create and write access modes and keep other access modes unchecked.
+*For example :* We can have a rule defined on ``res.partner`` object, which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', user.id)]``. We check only the create and write access modes and keep other access modes unchecked.
 
-So this means that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman and can not create/write records where he is not the dedicated salesman. As other access modes are unchecked the user can read/delete the records of partners where he is not the dedicated salesman.
+This would mean that a user in the group for which the rule is applied can only create/write records where he himself serves as the dedicated salesman, and cannot create/write records where he is not the dedicated salesman. As other access modes are unchecked, the user can read/delete the records of partners where he is not the dedicated salesman.
 
 .. index::
    single: modification history
 
-Modification history
+Modification History
 --------------------
 
 .. _fig-log:
@@ -276,9 +276,9 @@ Modification history
    :scale: 75
    :align: center
 
-   *Partner Record history*
+   *Partner Record History*
 
-Each record in a Open ERP database carries a note of its history. You can find out who it was
+Each record in an OpenERP database carries a note of its history. You can find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
 :guilabel:`View Log` link at the right of any form in the web client
 to display a dialog box showing this information, as shown in the
@@ -290,7 +290,7 @@ data in the records.
 
 .. tip:: Audit Trail
 
-   Open ERP has an Audit Trail module :mod:`audittrail` which can be used to track any or
+   OpenERP has an Audit Trail module :mod:`audittrail`, which can be used to track any or
    all of the changes to one or more objects. It should be used with care, because it
    can generate huge amounts of data in the live database, but can be an invaluable
    tool.
