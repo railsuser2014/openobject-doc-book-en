@@ -32,9 +32,9 @@ Price request from the supplier
 -------------------------------
 
 To enter data for a new supplier price request, use the menu :menuselection:`Purchase Management -->
-New Purchase Order`. Open ERP opens a blank purchase form that you use for requesting prices from a
+New Purchase Order`. OpenERP opens a blank purchase form that you use for requesting prices from a
 supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement
-created by Open ERP you'll find a reference to the document that
+created by OpenERP you'll find a reference to the document that
 generated the request in the :guilabel:`Origin` field.
 
 .. _fig-pfrm:
@@ -54,8 +54,8 @@ generated the request in the :guilabel:`Origin` field.
    purchaser enters a price request or order. You can set alerts on the product and on the supplier.
 
 The internal reference, the date, and the warehouse that the products should be delivered to are
-completed automatically by Open ERP but you can change these values if you need. Select a
-supplier. Once a supplier has been selected, Open ERP automatically completes the contact
+completed automatically by OpenERP but you can change these values if you need. Select a
+supplier. Once a supplier has been selected, OpenERP automatically completes the contact
 address for the supplier. The pricelist is also completed when you select the supplier. This should
 bring in all of the conditions that you've negotiated with the supplier for a given period.
 
@@ -74,7 +74,7 @@ Once the main body of the purchase order has been completed you can enter the pr
 
    *Order line on a  supplier order*
 
-When you've completed the product, Open ERP automatically completes the other fields on the form:
+When you've completed the product, OpenERP automatically completes the other fields on the form:
 
 * :guilabel:`Unit of Measure`, taken from the :guilabel:`Purchase UoM` field on the product form,
 
@@ -91,7 +91,7 @@ When you've completed the product, Open ERP automatically completes the other fi
 
    When you enter supplier names on the product form, you can set a name and a product code for each
    individual supplier.
-   If you do that, Open ERP will then use those details in place of your own internal product names
+   If you do that, OpenERP will then use those details in place of your own internal product names
    for that selected supplier.
 
 If you work with management by case you can also set the analytic account that should be used to
@@ -163,25 +163,25 @@ Supplier`.
 Goods receipt
 -------------
 
-Once the order has been approved, Open ERP automatically prepares the goods receipt order in the
+Once the order has been approved, OpenERP automatically prepares the goods receipt order in the
 draft state for you. To get a list of the products you're waiting for from your suppliers, use the
 menu :menuselection:`Stock Management --> Incoming Products --> Packings to process`.
 
 .. tip:: Purchasing Services
 
-    If you buy services from your supplier, Open ERP doesn't generate a goods receipt note.
+    If you buy services from your supplier, OpenERP doesn't generate a goods receipt note.
     There's no service receipt equivalent to a goods receipt.
 
 Select the document that corresponds to the item that you're receiving. Usually the goods receipt
 note is found by making a search on the order reference or the supplier name. You can then confirm
 the receipt of the products.
 
-As you saw in :ref:`ch-stocks`, if you receive only part of the order, Open ERP
+As you saw in :ref:`ch-stocks`, if you receive only part of the order, OpenERP
 manages the remainder of that order.
 A second receipt note is then automatically created for the goods not received.
 You can cancel it if you think that you will never receive the remaining products.
 
-After receiving the goods, Open ERP will show you which orders are open and the state of their
+After receiving the goods, OpenERP will show you which orders are open and the state of their
 receipt and invoicing if you return to the list of orders.
 
 .. figure:: images/purchase_list.png
@@ -193,7 +193,7 @@ receipt and invoicing if you return to the list of orders.
 Control of invoicing
 --------------------
 
-To control supplier invoicing, Open ERP provides three systems as standard, which can differ order
+To control supplier invoicing, OpenERP provides three systems as standard, which can differ order
 by order:
 
 * Invoicing based on quantities ordered,
@@ -220,7 +220,7 @@ The mode of invoicing control is set in the second tab of the purchase order in 
 Control based on orders
 -----------------------
 
-If you selected your invoicing control based on orders, Open ERP will automatically generate a
+If you selected your invoicing control based on orders, OpenERP will automatically generate a
 supplier invoice in the draft state when the order is confirmed. You can obtain a list of invoices
 waiting using the menu :menuselection:`Financial Management --> Invoices --> Supplier Invoices -->
 Draft Supplier Invoices`.
@@ -247,7 +247,7 @@ In this case no invoice, draft state or any other, is generated by the order. On
 note, the field :guilabel:`Invoicing Control` is set to :guilabel:`To be Invoiced`.
 
 The storesperson can then receive different orders. If he wants to generate the draft invoice for a
-goods receipt, he can click the action :guilabel:`Create Invoice`. Open ERP asks you then for the
+goods receipt, he can click the action :guilabel:`Create Invoice`. OpenERP asks you then for the
 journal for this invoice. It then opens that or the generated invoices (in the case of creating
 invoices for several receipts at one time) which enables you to modify it before confirming it.
 
@@ -290,7 +290,7 @@ Tenders
 
 To manage tenders, you should use the module :mod:`purchase_tender` (which was in ``addons-extra`` at the time of writing). 
 This lets you create several
-supplier price reqests for a single supply requirement. Once the module is installed, Open ERP adds
+supplier price reqests for a single supply requirement. Once the module is installed, OpenERP adds
 a new :menuselection:`Purchase Tenders` menu in :menuselection:`Purchase management`. You can then define the new tenders.
 
 .. figure:: images/purchase_tender.png
@@ -300,7 +300,7 @@ a new :menuselection:`Purchase Tenders` menu in :menuselection:`Purchase managem
    *Defining a tender*
 
 To enter data for a new tender, use the menu :menuselection:`Purchase Management --> Purchase
-Tenders --> New Purchase Tenders`. Open ERP then opens a new blank tender form. The reference number
+Tenders --> New Purchase Tenders`. OpenERP then opens a new blank tender form. The reference number
 is set by default and you can enter information about your tender in the other fields.
 
 If you want to enter a supplier's response to your tender request, add a new
@@ -309,16 +309,16 @@ If you want to revise a supplier price in response to negotiations, edit any
 appropriate Purchase Order that you've left
 in the draft state and link that to the tender. 
 
-In the general list of purchase orders, Open ERP shows,
+In the general list of purchase orders, OpenERP shows,
 in the new second column :guilabel:`Purchase Tender`, if the order has a tender reference.
 
 When one of the orders about a tender is confirmed, all of the other orders are automatically
-cancelled by Open ERP. That enables you to accept just one order for a particular tender.
+cancelled by OpenERP. That enables you to accept just one order for a particular tender.
 
 Price revisions
 ---------------
 
-Open ERP supports several methods of calculating and automatically updating product costs:
+OpenERP supports several methods of calculating and automatically updating product costs:
 
 * Standard price: manually fixed, and
 
@@ -369,7 +369,7 @@ Those costs that can be fixed for the whole year bring certain advantages:
 To get and automated periodic revaluation of the standard price you can use the module :mod:`product_extended`
 (from ``addons-extra`` at the time of writing).
 This adds an action on the product form enabling you to set a date on all the selected products. 
-Open ERP then recalculates the price of the products as a function of the cost of raw materials and the
+OpenERP then recalculates the price of the products as a function of the cost of raw materials and the
 manufacturing operations given in the routing.
 
 Weighted average
@@ -379,7 +379,7 @@ Working with Standard Prices does not lend itself well to the management of the 
 when the prices change a lot with the state of the market. This is case for many commodities and
 energy.
 
-In this case you'd want Open ERP to automatically set the price in response to each goods receipt movement
+In this case you'd want OpenERP to automatically set the price in response to each goods receipt movement
 into the warehouse. The deliveries (exit from stock) have no impact on the product price.
 
 .. tip:: Calculating the price
@@ -397,7 +397,7 @@ into the warehouse. The deliveries (exit from stock) have no impact on the produ
 
    * QR: Quantity received.
 
-If the products are managed as a weighted average, Open ERP will open a
+If the products are managed as a weighted average, OpenERP will open a
 window that lets you specify the price of the product received at each goods receipt. 
 The purchase price is by default
 set from the purchase order, but you can change the price to add the cost of
@@ -419,7 +419,7 @@ product form.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -49,7 +49,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
 	*Configuration* is less radical – it's the general process of setting all
 	the parameters of the software to fit the needs of your system (often called *parameterization* or *setup*).
-	Configuration is also, by convention, the name of the sub-menu below each of Open ERP's top-level menus that
+	Configuration is also, by convention, the name of the sub-menu below each of OpenERP's top-level menus that
 	is accessible only to the administrative user for that section.
 
 	*Personalization* is just that subset of configuration options that shapes the system to the
@@ -64,7 +64,7 @@ style, or even the data that's provided there.
 	The OpenOffice.org plug-in enables you not only to configure the reports of the basic products in
 	Open ERP but also to create entirely new report templates.
 	When the user uses Open ERP's client interface, OpenOffice can create a report template 
-	that has access to all the data available to any Open ERP document type.
+	that has access to all the data available to any OpenERP document type.
 
 	You can easily create fax documents, quotations, or any other commercial document.
 	This functionality enables you to considerably extend the productivity of your salespeople who have
@@ -100,7 +100,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

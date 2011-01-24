@@ -11,7 +11,7 @@ Implementation Methodology
 
  *You may have mastered the technical aspects of administering and using your enterprise management
  system,
- but you still have a great deal of work to do integrating Open ERP into your company.
+ but you still have a great deal of work to do integrating OpenERP into your company.
  This work is more business-related and social in nature than technical.*
  
  *The Open ERP implementation process encompasses several different phases:
@@ -52,7 +52,7 @@ phases necessary to implement Open ERP in your company
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

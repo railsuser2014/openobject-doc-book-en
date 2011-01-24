@@ -2,7 +2,7 @@
 Rebates at the end of a campaign
 ================================
 
-If you want to provide discounts on an order, use the pricelist system in Open ERP. But it's better
+If you want to provide discounts on an order, use the pricelist system in OpenERP. But it's better
 to work with end-of-campaign rebates or year-end rebates. In this case the customer pays a certain
 price for the whole of the campaign or the year and a rebate is returned to him at the end of the
 campaign that depends on the sales he's made throughout the year.
@@ -62,10 +62,10 @@ the sales volume.
 Once the campaign has been defined you can assign a given campaign to various partners. To do that
 set a :guilabel:`Discount Campaign` in the second tab :guilabel:`Sales and Purchases` of the partner form.
 
-Finally at the end of the campaign you should close it and Open ERP will automatically generate
-invoices or credit notes for your partner associated with this campaign. Open ERP opens credit
+Finally at the end of the campaign you should close it and OpenERP will automatically generate
+invoices or credit notes for your partner associated with this campaign. OpenERP opens credit
 notes in the ``Draft`` state that you can modify before validating them. To calculate the amount on the
-credit note, Open ERP uses all of the invoices sent out during the period of the campaign as its
+credit note, OpenERP uses all of the invoices sent out during the period of the campaign as its
 basis.
 
 You can also reach all of the draft credit notes using the menu :menuselection:`Financial Management
@@ -78,7 +78,7 @@ You can also reach all of the draft credit notes using the menu :menuselection:`
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

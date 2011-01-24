@@ -5,11 +5,11 @@ Managing Contacts
 .. index::
    single: module; base_contact
 
-The standard way of representing partners and contacts throughout Open ERP
+The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications) 
 is having a partner with multiple contacts.
 *Partner* is the word for any entity that you do business with - supplier, customer, etc.
-This representation may not be flexible enough for some uses, so Open ERP provides
+This representation may not be flexible enough for some uses, so OpenERP provides
 an alternative, which is brought into the system by installing the :mod:`base_contact` module.
 
 The two figures :ref:`fig-crmconw` and :ref:`fig-crmcono` show 
@@ -62,7 +62,7 @@ In this example you'll find the following elements:
 * Mr J Smith is director of Dexey France and Dexey Belgium and we also have his private address
   attached to no partner.
 
-Depending on your needs, Open ERP provides three menus to access the same information:
+Depending on your needs, OpenERP provides three menus to access the same information:
 
 * List of partners: :menuselection:`Partners --> Partners`,
 
@@ -99,13 +99,13 @@ personal blog).
 
    *Detail of a contact form for someone employed in several job posts*
 
-Partner management is found in the Open ERP base modules. To manage partner relations you have to
+Partner management is found in the OpenERP base modules. To manage partner relations you have to
 install the CRM modules. Then start by installing a CRM profile and configure the system to meet
 your needs.
 
 For this chapter you should start with a fresh database that includes demo data,
 using the :guilabel:`CRM profile` and no particular chart of accounts configured. 
-Open ERP's modularity enables you to install only
+OpenERP's modularity enables you to install only
 the CRM module if your requirements are limited to customer relationships.
 
 .. figure:: images/crm_db_init.png
@@ -114,7 +114,7 @@ the CRM module if your requirements are limited to customer relationships.
 
    *Creating a new database*
 
-Once the database is installed, Open ERP suggests that you configure it using a series of questions:
+Once the database is installed, OpenERP suggests that you configure it using a series of questions:
 
 * Simplified or Extended mode: select simplified and click :guilabel:`Ok`,
 
@@ -140,7 +140,7 @@ Once the database is installed, Open ERP suggests that you configure it using a 
 If you install the modules separately don't forget to install the ``crm_configuration`` module.
 The :mod:`crm` module just contains the generic case management system.
 
-Open ERP proposes a selection from pre-configured functions for CRM:
+OpenERP proposes a selection from pre-configured functions for CRM:
 
 * managing a prospects database,
 
@@ -160,7 +160,7 @@ Open ERP proposes a selection from pre-configured functions for CRM:
 
 * tracking bugs and new functional requests.
 
-You see that Open ERP's CRM module isn't limited just to Customer relationships but is designed to
+You see that OpenERP's CRM module isn't limited just to Customer relationships but is designed to
 generate all types of relations with a partner: such as suppliers, employees, customers, prospects.
 This book will describe just customer relationships. The other CRM functions are similar to use, so
 you shouldn't have huge problems with understanding those functions.
@@ -189,7 +189,7 @@ install.
 Organizing Prospects
 --------------------
 
-If you have installed the management of prospects and opportunities, Open ERP implements the
+If you have installed the management of prospects and opportunities, OpenERP implements the
 following workflow for the qualification of prospects and future opportunities.
 
 .. figure:: images/crm_flux.png
@@ -205,7 +205,7 @@ following workflow for the qualification of prospects and future opportunities.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

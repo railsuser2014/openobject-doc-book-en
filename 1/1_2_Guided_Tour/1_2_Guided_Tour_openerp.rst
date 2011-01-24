@@ -595,7 +595,7 @@ Delivery charges can be managed using a grid of tariffs for different carriers.
 Document Management
 -------------------
 
-Open ERP integrates a complete document management system that not only 
+OpenERP integrates a complete document management system that not only 
 carried out the functions of a standard DMS, but also integrates with all
 of its system-generated documents such as Invoices and Quotations. What's more
 it keeps all of this synchronized.
@@ -629,7 +629,7 @@ the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` o
 
    *Workflow for a Purchase Order*
 
-Alongside the document management system, the process visualization features make Open ERP
+Alongside the document management system, the process visualization features make OpenERP
 far better for documentation than similar systems.
 
 Other functions
@@ -662,7 +662,7 @@ it out on, just download and install the modules that appear interesting.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

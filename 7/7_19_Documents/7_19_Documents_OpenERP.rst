@@ -1,12 +1,12 @@
 
-The Open ERP solution
+The OpenERP solution
 =====================
 
-Open ERP's management of documents is unique and totally innovative in its integrated approach. Its
+OpenERP's management of documents is unique and totally innovative in its integrated approach. Its
 complete integration with the company's management system solves most of the problems that are
 encountered when you use independent document management systems:
 
-* Login and the management of access rights is integrated with that of Open ERP for controlling
+* Login and the management of access rights is integrated with that of OpenERP for controlling
   access to different document types,
 
 * Ultra-rapid access to documents, which are directly accessible through your email client or
@@ -15,13 +15,13 @@ encountered when you use independent document management systems:
 * Automatic assignment of meta-information comes directly from information contained in your Open
   ERP login registration,
 
-* Document workflow which automatically follow Open ERP's documentation process provide complete
+* Document workflow which automatically follow OpenERP's documentation process provide complete
   synchronization between the systems,
 
-* Document classification is determined by Open ERP itself so that the structure that is created is
+* Document classification is determined by OpenERP itself so that the structure that is created is
   always synchronized between the systems,
 
-* Automatic indexation and classification of all documents produced by Open ERP for maximum
+* Automatic indexation and classification of all documents produced by OpenERP for maximum
   efficiency.
 
 Getting Started
@@ -37,7 +37,7 @@ Installation
    single: module; document
    single: module; board_document
 
-To install Open ERP's document management system you just need is to install the :mod:`document`
+To install OpenERP's document management system you just need is to install the :mod:`document`
 and :mod:`board_document` modules through :menuselection:`Administration --> Modules
 Management --> Modules --> Uninstalled modules`. After installing the module the system automatically proposes that you
 configure the document management system.
@@ -65,7 +65,7 @@ Management`.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

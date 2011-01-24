@@ -211,12 +211,12 @@ computer and that you have administration rights for installation.
    :scale: 75
    :align: center
 
-   *Menu Open ERP Report in OpenOffice.org Writer*
+   *Menu OpenERP Report in OpenOffice.org Writer*
 
 Start OpenOffice.org Writer, select :menuselection:`Tools --> Package Management...`  to open the
 Package Management dialog box and then search for the \ ``openerpreport.zip``\   file to install it.
 Then close the application and restart Writer: a new menu appears in the top menu bar –  :guilabel:`Tiny
-Report`  or  :guilabel:`Open ERP Report`.
+Report`  or  :guilabel:`OpenERP Report`.
 
 .. index::
    pair: report; OpenOffice.org
@@ -269,7 +269,7 @@ chapter if you add fields or change the content of the existing ones.
 	You can transform an old report format to the new format from the OpenOffice.org menu
 	:menuselection:`OpenERP Report --> Convert Bracket–Fields`.
 
-From the Open ERP toolbar in OpenOffice.org it's possible to:
+From the OpenERP toolbar in OpenOffice.org it's possible to:
 
 * connect to the Open ERP server: by supplying the connection parameters.
 
@@ -364,7 +364,7 @@ any kind of troubleshooting problems kindly mai us at cde@tinyerp.com.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

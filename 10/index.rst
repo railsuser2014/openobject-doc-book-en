@@ -84,7 +84,7 @@ good chance of receiving some form of response to your questions within twenty-f
 
 * **The wiki**  http://openobject.com/wiki
 
-The OpenObject wiki is used to manage activities around Open ERP.
+The OpenObject wiki is used to manage activities around OpenERP.
 
 You'll find informations about:
 
@@ -143,7 +143,7 @@ Wishing you the greatest of success in your ERP project,
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

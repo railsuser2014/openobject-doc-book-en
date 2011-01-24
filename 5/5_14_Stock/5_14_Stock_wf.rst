@@ -49,7 +49,7 @@ Three fields are important for stock management when you're configuring a new pr
 Product Types
 --------------
 
-The product type indicates if the product is handled in stock management and if Open ERP manages its
+The product type indicates if the product is handled in stock management and if OpenERP manages its
 procurement. The three distinct product types are:
 
 * :guilabel:`Stockable Product` : this product is used in stock management and its replenishment is
@@ -57,7 +57,7 @@ procurement. The three distinct product types are:
   computer or a central heating system.
 
 * :guilabel:`Consumable` : handled in stock management, you can receive it, deliver it and make it.
-  But its stock level isn't managed by the system. Open ERP assumes that you've got sufficient levels
+  But its stock level isn't managed by the system. OpenERP assumes that you've got sufficient levels
   in stock at all time, so it doesn't restock it automatically. Example, nails.
 
 * :guilabel:`Service` : doesn't appear in the various stock operations. Example, a consulting
@@ -83,7 +83,7 @@ sales order parameters as needed.
 
 The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
 managed Make to Order and another
-managed Make to Stock. The two figures are taken from Open ERP's :guilabel:`Future Stock Forecast` report,
+managed Make to Stock. The two figures are taken from OpenERP's :guilabel:`Future Stock Forecast` report,
 available from the product form.
 
 .. _fig-stfrst:
@@ -112,7 +112,7 @@ available from the product form.
 Supply Methods
 ---------------
 
-Open ERP supports two supply methods:
+OpenERP supports two supply methods:
 
 * Produce: when the product or service is supplied from internal resources,
 
@@ -126,7 +126,7 @@ Type`) determine the system's behaviour when a product is required. The system w
 different documents depending on the configuration of these three fields when satisfying an order, a
 price quotation to a supplier or a manufacturing order.
 
-Open ERP manages both stockable products and services. A service bought from a supplier in
+OpenERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
 Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
@@ -168,7 +168,7 @@ You'll see the automated management processes for procurement in detail further 
 Units of Measure
 ----------------
 
-Open ERP supports several units of measure. Quantities of the same product can be expressed in
+OpenERP supports several units of measure. Quantities of the same product can be expressed in
 several units of measure at once. For example you can buy grain by the tonne and resell it by kg.
 You just have to make sure that all the units of measure used for a product are in the same units of
 measure category.
@@ -207,7 +207,7 @@ gives rounding to one hundredth.
 
 .. note::  Secondary Units
 
-   Open ERP supports double units of measure.
+   OpenERP supports double units of measure.
    When you use this, the whole of the stock management system is encoded in two units that don't
    have a real link between them.
 
@@ -227,11 +227,11 @@ unit of measure for purchases.
 
 These units are given suggested titles. For each operation on a product you can use another unit of
 measure, as long as it can be found in the same category as the two units already defined. If you
-use another unit of measure, Open ERP automatically handles the conversion of prices and quantities.
+use another unit of measure, OpenERP automatically handles the conversion of prices and quantities.
 
-So if you have 430 Kg of carrots at 5.30 EUR/Kg, Open ERP will automatically make the conversion if
+So if you have 430 Kg of carrots at 5.30 EUR/Kg, OpenERP will automatically make the conversion if
 you want to sell in tonnes – 0.43 tonnes at 5300 EUR / tonne. If you had set a rounding factor of
-0.1 for the :guilabel:`tonne` unit of measure then Open ERP will tell you that you have only 0.4 tonnes
+0.1 for the :guilabel:`tonne` unit of measure then OpenERP will tell you that you have only 0.4 tonnes
 available.
 
 
@@ -242,7 +242,7 @@ available.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

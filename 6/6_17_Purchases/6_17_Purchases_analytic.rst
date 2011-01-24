@@ -5,7 +5,7 @@ Analytic accounts
 To manage purchases by project you should use the analytic accounts. 
 You can set an analytic account on each line of a supplier order. 
 The analytic costs linked to this purchase will be managed
-by Open ERP from the goods receipt and confirmation of the supplier invoice.
+by OpenERP from the goods receipt and confirmation of the supplier invoice.
 
 .. index::
    single: module; hr_timesheet_invoice
@@ -51,7 +51,7 @@ When re-invoicing based on costs you'd get the following workflow:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

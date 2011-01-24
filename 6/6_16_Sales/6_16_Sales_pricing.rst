@@ -25,7 +25,7 @@ an efficient price management mechanism you can often keep margins raised and re
 changes in market conditions. A good price management system gives you scope for varying any and all
 of the relevant factors when you're negotiating a contract.
 
-To help you work most effectively, Open ERP's pricelist principles are extremely powerful yet are
+To help you work most effectively, OpenERP's pricelist principles are extremely powerful yet are
 based on simple and generic rules. You can develop both sales pricelists and purchase pricelists for
 products capable of accommodating conditions such as the date period, the quantity requested and the
 type of product.
@@ -33,7 +33,7 @@ type of product.
 .. tip:: Don't confuse the different price specifications
 
    Don't confuse the sale price with the base price of the product.
-   In Open ERP's basic configuration the sale price is the list price set on the product form
+   In OpenERP's basic configuration the sale price is the list price set on the product form
    but a customer can be given a different sale price depending on the conditions.
 
 It's the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
@@ -254,7 +254,7 @@ Default pricelists
    :scale: 75
    :align: center
 
-   *Default pricelist after installing Open ERP*
+   *Default pricelist after installing OpenERP*
 
 When you install the software two pricelists are created by default: one for sales and one for
 purchases. These each contain only one pricelist version and only one line in that version.
@@ -373,7 +373,7 @@ calculated from the contract conditions.
 Different bases for price calculation
 -------------------------------------
 
-Open ERP's flexibility enables you to make prices that depend not only on prices on the product
+OpenERP's flexibility enables you to make prices that depend not only on prices on the product
 form, but in addition to the two predefined ones – Cost Price and Public Price.
 
 To do this use the menu :menuselection:`Products --> Configuration --> Prices Computation --> Price Types`. Create a new
@@ -410,7 +410,7 @@ several ways:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

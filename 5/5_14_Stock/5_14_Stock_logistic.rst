@@ -2,7 +2,7 @@
 Logistics Configuration
 =======================
 
-In this section you'll see how to configure stock management to match your company's needs. Open ERP
+In this section you'll see how to configure stock management to match your company's needs. OpenERP
 can handle many different situations by configuring it to behave as required.
 
 .. index:: 
@@ -83,19 +83,19 @@ Localization
 
 Each location can be given an address. That enables you to create a location for a customer or a
 supplier, for example. You can then give it the address of that customer or supplier. You should
-indicate to Open ERP on the partner form that it should use this location rather than the default
+indicate to OpenERP on the partner form that it should use this location rather than the default
 location given to partner deliveries.
 
 .. tip:: Subcontracting production
 
     You'll see in the chapter, :ref:`ch-mnf`, that it is possible to assign a location to a
     manufacturing workcenter.
-    If this location is at a supplier's you must give it an address so that Open ERP can prepare a
+    If this location is at a supplier's you must give it an address so that OpenERP can prepare a
     delivery order
     for the supplier and a receive operation for the manufactured goods.
 
     Creating a location specifically for a partner is also a simple solution for handled consigned
-    stocks in Open ERP.
+    stocks in OpenERP.
 
 .. note:: Consigned Stock
 
@@ -113,9 +113,9 @@ Example Structure for two warehouses
 
 A company has a warehouse in Paris and in Bordeaux. For some orders you must deliver the products
 from Paris, and for others from Bordeaux. But you should also specify a fictitious warehouse that
-Open ERP uses to calculate if it should deliver products from Paris or from Bordeaux.
+OpenERP uses to calculate if it should deliver products from Paris or from Bordeaux.
 
-To do this in Open ERP, you'd create a third warehouse 'France' which consolidates the warehouses in
+To do this in OpenERP, you'd create a third warehouse 'France' which consolidates the warehouses in
 Paris and Bordeaux. You create the following physical locations:
 
 * Company
@@ -128,10 +128,10 @@ Paris and Bordeaux. You create the following physical locations:
 
       * Warehouse Bordeaux
 
-Open ERP will then deliver the goods from the warehouse that has the ordered product in stock. When
-products are available in several warehouses, Open ERP will select the nearest warehouse. To
+OpenERP will then deliver the goods from the warehouse that has the ordered product in stock. When
+products are available in several warehouses, OpenERP will select the nearest warehouse. To
 formalize the notion of distance between warehouses you should use the geographic co-ordinates (X,
-Y, Z) of the different stores to enable Open ERP to search for the nearest goods.
+Y, Z) of the different stores to enable OpenERP to search for the nearest goods.
 
 The same co-ordinates could also be used to structure the shelves, aisles and interior rooms in a
 warehouse.
@@ -150,7 +150,7 @@ useful indicators. If you ask your accountant for a stock valuation or the value
 he'll give you a figure. If you ask for the same figure from your stores manager you'll get an
 entirely different amount. You have no idea who's right!
 
-In Open ERP the management of stock is completely integrated with the accounts, to give strong
+In OpenERP the management of stock is completely integrated with the accounts, to give strong
 coherence between the two systems. The double-entry structure of locations enables a very precise
 correspondence between stocks and accounts.
 
@@ -163,7 +163,7 @@ ERP automatically generates the corresponding accounting entries in the accounts
 journal.
 
 If a stock move will go from a location without an account to a location where an account has been
-assigned (for example goods receipt from a supplier order), Open ERP generates an accounting entry
+assigned (for example goods receipt from a supplier order), OpenERP generates an accounting entry
 using the properties defined in the product form for the counterpart. You can use different accounts
 per location or link several location to the same account, depending on the level of analysis
 needed.
@@ -181,11 +181,11 @@ You use this system for managing consigned stocks:
 Linked locations
 ----------------
 
-Locations in Open ERP can be linked between each other to define paths followed by products. So you
+Locations in OpenERP can be linked between each other to define paths followed by products. So you
 can then define rules such as: all products that enter the warehouse must automatically be sent to
 quality control. The warehouse and quality control are represented by two different locations.
 
-Then when a product arrives in a location, Open ERP can automatically suggest that you send the
+Then when a product arrives in a location, OpenERP can automatically suggest that you send the
 product to another linked location. Three link modes are available:
 
 * Manual,
@@ -261,7 +261,7 @@ Customer orders are usually handled in one of two ways:
 * delivery order (or freight note), confirmed when the transporter has delivered the item to a
   customer.
 
-You use the following stock move in Open ERP to simulate these operations:
+You use the following stock move in OpenERP to simulate these operations:
 
 * Packing Note: Stock > Output,
 
@@ -326,7 +326,7 @@ of stocks in different locations will rapidly show you the bottlenecks in your p
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

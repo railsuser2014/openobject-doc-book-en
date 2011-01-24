@@ -89,7 +89,7 @@ It's available today in 18 languages and has a world network of partners and con
 More than 800 developers participate in the projects on the collaborative development system of Tiny
 Forge.
 
-To our knowledge, Open ERP is the only management system which is routinely used not only by big
+To our knowledge, OpenERP is the only management system which is routinely used not only by big
 companies but also by very small companies and independent companies. This diversity is an
 illustration of the software's flexibility: a rather elegant coordination between people's
 functional expectations of the software and great simplicity in its use.
@@ -99,7 +99,7 @@ agricultural products, textiles, public auctions, IT, and trade associations.
 
 Lastly, such software has arisen from the blend of high code quality, well-judged architecture and
 use of free technologies. In fact, you may be surprised (if you're an IT person) to find that the
-download size of Open ERP is only around 6 MB. When that's expanded during installation its size is mostly 
+download size of OpenERP is only around 6 MB. When that's expanded during installation its size is mostly 
 attributable to all the official translations that are packaged with it, not the operating code. 
 We've moved a long way from
 the days when the only people who could be expected to benefit from ERP were the owners of a widget
@@ -114,11 +114,11 @@ lists because our approach is intended to be different.
 
 Having restructured and reorganized many businesses, we wanted our management experience to generate
 a work that is both instructive and practical. It was important for us not to write a manual about
-Open ERP, but instead a work that deals with advanced management techniques realized through these
+OpenERP, but instead a work that deals with advanced management techniques realized through these
 IT tools. You'll see what management practices might be useful, what's possible, and then how you
-could achieve that in Open ERP.
+could achieve that in OpenERP.
 
-It's this that we'll consider Open ERP for: not as an end in itself but just the tool you use to put
+It's this that we'll consider OpenERP for: not as an end in itself but just the tool you use to put
 an advanced management system into place.
 
 Who's it for?
@@ -136,11 +136,11 @@ analyzed and involved in change. The same principles also apply to larger compan
 Structure of this book
 ======================
 
-Part One, :ref:`part1-steps`, starts with the installation of Open ERP. If you have already installed Open ERP you
+Part One, :ref:`part1-steps`, starts with the installation of OpenERP. If you have already installed OpenERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you're already familiar
-with Open ERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
+with OpenERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
 scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
-the :ref:`part2-crm` part, to start with details of Open ERP's functional modules.
+the :ref:`part2-crm` part, to start with details of OpenERP's functional modules.
 
 Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You'll find the
 elements necessary for managing an efficient sales department there, and automating tasks to monitor
@@ -151,7 +151,7 @@ enterprise.
 
 Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
 Human Resources for managing projects,
-through financial analyses supplied by analytic (or cost) accounts. You'll see how using Open ERP
+through financial analyses supplied by analytic (or cost) accounts. You'll see how using OpenERP
 can help you to optimize your leadership of an enterprise.
 
 Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacture 
@@ -159,11 +159,11 @@ Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their
 
 Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
 
-Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that Open ERP
+Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation handling that OpenERP
 manages.
 
 Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure Open
-ERP then provides a methodology for implementing Open ERP in the enterprise.
+ERP then provides a methodology for implementing OpenERP in the enterprise.
 
 
 	.. note::  *About the authors*
@@ -174,8 +174,8 @@ ERP then provides a methodology for implementing Open ERP in the enterprise.
 			Today, over ten years later, he has founded and managed several new technology companies,
 			all based on Free / Open Source software.
 
-			He originated Tiny ERP, now Open ERP, and is the director of two companies including Tiny sprl,
-			the editor of Open ERP. In three years he has grown the Tiny group from one to sixty-five
+			He originated Tiny ERP, now OpenERP, and is the director of two companies including Tiny sprl,
+			the editor of OpenERP. In three years he has grown the Tiny group from one to sixty-five
 			employees
 			without loans or external fund-raising, and while making a profit.
 
@@ -219,9 +219,9 @@ Dedication
         *From Geoff Gardiner*
 
 My gratitude goes to my co-author, Fabien Pinckaers, for his vision and tenacity in
-developing Tiny ERP and Open ERP, and the team at Tiny for its excellent work on this.
+developing Tiny ERP and OpenERP, and the team at Tiny for its excellent work on this.
 
-Open ERP relies on a philosophy of Open Source and on the technologies that have been
+OpenERP relies on a philosophy of Open Source and on the technologies that have been
 developed and tuned over the years by numerous talented people. Their efforts are greatly
 appreciated.
 
@@ -241,7 +241,7 @@ My particular thanks to Laurence Henrion and my family for supporting me through
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

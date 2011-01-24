@@ -7,9 +7,9 @@ Open orders
 
 In some industries, customers commonly place orders for a certain volume of product and ask for regular
 deliveries from an order up to the total amount on it. This principle, called open orders, is managed
-by the :mod:`sale_delivery` module in Open ERP.
+by the :mod:`sale_delivery` module in OpenERP.
 
-Open ERP handles open orders easily. An open order is an order for a
+OpenERP handles open orders easily. An open order is an order for a
 certain quantity of products but whose deliveries are planned for various dates over a period of
 time.
 
@@ -26,9 +26,9 @@ delivery planning there.
 
    *Managing open orders, planning forecasts*
 
-In the order lines, Open ERP shows you the quantity planned in addition to the quantity sold so you
+In the order lines, OpenERP shows you the quantity planned in addition to the quantity sold so you
 can verify that the quantities sold equal the quantities to be delivered. When you confirm the
-order, Open ERP no longer generates a single delivery order but plans scheduled despatches.
+order, OpenERP no longer generates a single delivery order but plans scheduled despatches.
 
 .. tip:: Invoicing Mode
 
@@ -43,7 +43,7 @@ order, Open ERP no longer generates a single delivery order but plans scheduled 
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

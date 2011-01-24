@@ -2,7 +2,7 @@
 Sales Quotations
 ================
 
-In Open ERP a quotation and an order are handled by the same underlying object, but in different states. You
+In OpenERP a quotation and an order are handled by the same underlying object, but in different states. You
 can consider an order to be a quotation that has evolved because it has been confirmed by the
 customer. Or, conversely, that a quotation is an order that hasn't yet been validated or cancelled.
 All of the orders and quotations in the system can be reached using the menu :menuselection:`Sales
@@ -12,7 +12,7 @@ Entering Quotation details
 --------------------------
 
 To enter details of a new quotations you can use the menu :menuselection:`Sales Management -->
-Orders --> New Quotation`. Open ERP then opens a new window so that you can enter data into new
+Orders --> New Quotation`. OpenERP then opens a new window so that you can enter data into new
 blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
@@ -41,10 +41,10 @@ create a new customer on the fly at this stage if necessary – press :kbd:`<F1>
 Once the customer name has been selected, different fields of the order become completed
 automatically, based on the configuration of the partner form for that customer:
 
-* :guilabel:`Order Address` : person handling the order at the customer. By default, Open ERP
+* :guilabel:`Order Address` : person handling the order at the customer. By default, OpenERP
   proposes the Contact Address at the selected partner.
 
-* :guilabel:`Delivery Address` : address used on the delivery order. By default, Open ERP proposes
+* :guilabel:`Delivery Address` : address used on the delivery order. By default, OpenERP proposes
   the Delivery address from the partner form. If nothing is defined in that slot, it uses the default
   address instead.
 
@@ -84,7 +84,7 @@ new order line as shown in the figure :ref:`fig-slinf`:
 
    *Entering a new customer order line*
 
-First of all select the product that is to be sold to the customer. Open ERP shows some
+First of all select the product that is to be sold to the customer. OpenERP shows some
 useful information in the list of products to help you during your sale:
 
 * :guilabel:`Real stock` : physically present in your warehouses. This value depends on the sale
@@ -111,7 +111,7 @@ useful information in the list of products to help you during your sale:
 
    *Selecting a product in a Sales Order*
 
-When the product that's to be sold to the customer has been selected, Open ERP automatically
+When the product that's to be sold to the customer has been selected, OpenERP automatically
 completes all the other required fields: price, unit of measure, description, discount, lead times,
 applicable taxes, default packaging and the product description. All of this information comes from
 the product form.
@@ -145,11 +145,11 @@ The translation to the customer's language is used on the quotation or order whe
    product form just for that sale.
    You can manually complete all the information in the order without putting it into a product:
    description, price, quantity, lead time, taxes.
-   In this case Open ERP won't generate a delivery note because the product isn't held in stock.
+   In this case OpenERP won't generate a delivery note because the product isn't held in stock.
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do
 this, click on the report :guilabel:`Quotation / Order` in the :guilabel:`REPORTS` links to the right. 
-Open ERP opens the quotation in PDF to enable to you to see it before printing.
+OpenERP opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
    :scale: 75
@@ -179,7 +179,7 @@ look at :ref:`ch-process`.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

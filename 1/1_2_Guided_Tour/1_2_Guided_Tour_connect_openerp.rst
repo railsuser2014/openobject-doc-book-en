@@ -107,7 +107,7 @@ a signature:
   automatically.
 
 * The :guilabel:`Signature` field gives the user a place for the signature attached to messages sent
-  from within Open ERP. 
+  from within OpenERP. 
 
 The :guilabel:`About` link gives information about the development of the Open ERP software and 
 various links to other information.
@@ -308,7 +308,7 @@ Management defines these access rights as described in :ref:`ch-config`.
 
 .. note::  Changes to default access rights
 
-	New versions of Open ERP differ from earlier versions of Open ERP and Tiny ERP in this area:
+	New versions of OpenERP differ from earlier versions of OpenERP and Tiny ERP in this area:
 	many groups have been predefined and access to many of the menus and objects are keyed to these
 	groups by default.
 	This is quite a contrast to the rather liberal approach in 4.2.2 and before, where access rights
@@ -363,7 +363,7 @@ them to get a feel for their use.
 	it may be both a customer and supplier at the same time.
 	
 	But there are also Customer, Supplier and Rental checkboxes on the partner form, which are different.
-	These checkboxes are designed to enable Open ERP to quickly select what should appear on some of the
+	These checkboxes are designed to enable OpenERP to quickly select what should appear on some of the
 	system drop-down selection boxes. They, too, need to be set correctly.
 
 Partner Categories
@@ -455,7 +455,7 @@ To create a new partner and link it to this new category open a new partner form
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -13,7 +13,7 @@ Process
  of new documents (based on business objects) and processes that you need to encounter to
  model and manage your business.*
  
- *Open ERP's process module, which is installed automatically when a process-aware module
+ *OpenERP's process module, which is installed automatically when a process-aware module
  is installed, shows you cross-functional processes and technical workflows for those
  nodes in the process that have them. This visualization is invaluable for documentation - 
  but it also goes a step further. You can modify processes and workflows and even generate
@@ -73,7 +73,7 @@ management system. When you ask company staff about ISO9001 they usually see it
 as a constraint rather than a helpful daily management tool.
 
 To help the company meet its quality requirements and to form these processes
-into assistance integrated with everyday work, Open ERP supplies a 'Corporate
+into assistance integrated with everyday work, OpenERP supplies a 'Corporate
 Intelligence ( r )' tool that enables you to put company processes at the heart
 of your management system.
 
@@ -101,7 +101,7 @@ The system enables:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -19,7 +19,7 @@ several departments.
 
 The system of 'Corporate Intelligence' will also be highly useful to system
 implementers who, after studying the requirements, have to formalize a
-company's processes to put them into operation in Open ERP.
+company's processes to put them into operation in OpenERP.
 
 Examples of process
 -------------------
@@ -71,7 +71,7 @@ on it:
 * Obtaining the documentation and the corresponding process in the quality manual, using the
   :guilabel:`Help` (or :guilabel:`Information`) icon,
 
-* Opening the corresponding Open ERP document, using the :guilabel:`Open` icon,
+* Opening the corresponding OpenERP document, using the :guilabel:`Open` icon,
 
 * Printing the document, using the :guilabel:`Print` icon,
 
@@ -80,7 +80,7 @@ on it:
 * Obtaining the documents that an employee needs to carry out the process by clicking the green
   arrow icon,
 
-* Seeing the menu that Open ERP uses to get the document by hovering over the green arrow icon.
+* Seeing the menu that OpenERP uses to get the document by hovering over the green arrow icon.
 
 Returning to the process diagram, note that you can also get more information
 about the transitions between nodes by hovering the mouse cursor over a
@@ -168,8 +168,8 @@ node in the corresponding process, such as:
 
 * Entering statutory public holidays into the system.
 
-You can click on each node to open the corresponding form in Open ERP. Some
-actions aren't owned by Open ERP, such as contacts with government offices and
+You can click on each node to open the corresponding form in OpenERP. Some
+actions aren't owned by OpenERP, such as contacts with government offices and
 insurance companies. In this case click on the document icon to get the
 documents to be completed and posted or faxed to the institutions:
 
@@ -195,7 +195,7 @@ necessary modules have been installed.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

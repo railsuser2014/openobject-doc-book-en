@@ -3,7 +3,7 @@ Margin Control
 ==============
 
 It's important to keep good control of margins in every company. Even if you have a good level of
-sales it won't guarantee company profitability if margins aren't high enough. Open ERP provides a
+sales it won't guarantee company profitability if margins aren't high enough. OpenERP provides a
 number of systems for monitoring margins. The main ones are:
 
 * Margins on a sales order,
@@ -31,7 +31,7 @@ from ``addons-extra``. This will add margins calculated on each order line and o
 
 The margin on each line is defined as the quantity sold multiplied by the sale price for the
 customer less the cost price of the products. By default, products are managed using standard price
-in Open ERP (cost price fixed manually and reviewed once per year). You can change that to
+in OpenERP (cost price fixed manually and reviewed once per year). You can change that to
 ``Average Weighted Price``, meaning that the product cost fluctuates with purchases from
 suppliers. After product receipt you can add fixed costs, such as delivery costs, in the cost of
 each product.
@@ -39,7 +39,7 @@ each product.
 .. index::
    single: module; product_extended
 
-Open ERP supports a third method of updating the cost price of products using the module
+OpenERP supports a third method of updating the cost price of products using the module
 :mod:`product_extended`, also in ``addons-extra`` at the time of writing. 
 This adds a button to the product form which lets you
 automatically recalculate the cost price for the selected products. 
@@ -56,9 +56,9 @@ To track margins by product, install the module :mod:`product_margin`. Once the 
 is installed you can see the margins by product by using the menu :menuselection:`Products -->
 Reporting --> Margins by Product`.
 
-When you've clicked on the menu, Open ERP asks for an analysis period and the state of invoices. If
-no period is given, Open ERP will calculate margins on all of the operations without restriction. By
-default, however, Open ERP proposes a period of the last 12 months for analysis.
+When you've clicked on the menu, OpenERP asks for an analysis period and the state of invoices. If
+no period is given, OpenERP will calculate margins on all of the operations without restriction. By
+default, however, OpenERP proposes a period of the last 12 months for analysis.
 
 You can also filter the analysis on certain types of invoice:
 
@@ -183,7 +183,7 @@ the toolbar to the right.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

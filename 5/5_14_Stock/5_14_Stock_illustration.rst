@@ -22,7 +22,7 @@ operations:
 The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.
 
-If you order '30 bicycles' from a supplier, Open ERP will then do the following operations after the
+If you order '30 bicycles' from a supplier, OpenERP will then do the following operations after the
 receipt of the products:
 
 .. table:: Stock Move operation from Suppliers to Stock
@@ -58,7 +58,7 @@ When the two operations are complete you'll then get the following stock in each
    Partner Locations > Customers > European Customers +2 bicycles
    ================================================== =============
 
-So you can see that the sum of the stocks of a product in all the locations in Open ERP is always
+So you can see that the sum of the stocks of a product in all the locations in OpenERP is always
 zero. In accounting you'd say that the sum of the debits is equal to the sum of the credits.
 
 Partner locations (customers and suppliers) aren't located under your company in the hierarchical
@@ -78,11 +78,11 @@ stock because that helps when you carry out detailed stock management analysis.
 You can make a comparison with accounting, where you'll easily find an error because you can look
 for an anomaly in an account or in the counterparts: if there's not enough in a bank account then that's
 probably because someone's forgotten to enter a customer's invoice payment. You always know that the
-sum of debits must equal the sum of the credits in both accounting and Open ERP's stock management.
+sum of debits must equal the sum of the credits in both accounting and OpenERP's stock management.
 
 In accounting, all documents lead to accounting entries that form the basis of management
 accounting. If you create invoices or code in statements of account, for example, the results of the
-operations are accounting entries on accounts. And it's the same for stock management in Open ERP.
+operations are accounting entries on accounts. And it's the same for stock management in OpenERP.
 All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture
 them, or carry out a stock inventory operation, stock moves are carried out every time.
 
@@ -94,9 +94,9 @@ when you compare the stock shown in software with real stock numbers counted in 
    single: stock; inventory operation
    single: stock; stock check
 
-In Open ERP, with its double-entry stock management, you'd use stock moves for this inventory
+In OpenERP, with its double-entry stock management, you'd use stock moves for this inventory
 operation. That helps you manage your stock traceability. If there are 26 Bicycles in real stock but
-Open ERP shows 28 in the system. You then have to reduce the number in Open ERP to 26. This
+OpenERP shows 28 in the system. You then have to reduce the number in OpenERP to 26. This
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
 
@@ -126,7 +126,7 @@ This example shows one of the great advantages of this approach in terms of perf
 After a few months, you can just make a stock valuation of the location ``Virtual Locations >
 Inventory Loss`` to give you the value of the company's stock losses in the given period.
 
-Now see how the following manufacturing operation is structured in Open ERP. To make a bicycle you
+Now see how the following manufacturing operation is structured in OpenERP. To make a bicycle you
 need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
 from real stock and the addition of a bicycle there. The consumption / production is formalized by
 moving products out of and into physical stock. The stock operations for this are as follows:
@@ -163,7 +163,7 @@ finished products.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

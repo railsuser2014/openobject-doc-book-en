@@ -13,7 +13,7 @@ a process of negotiation.
 Ensuring that you track opportunities
 -------------------------------------
 
-Just like leads, Open ERP provides several menus to handle sales opportunities efficiently. All
+Just like leads, OpenERP provides several menus to handle sales opportunities efficiently. All
 the menus for opportunities are under the menu :menuselection:`CRM & SRM --> Sales -->
 Opportunities`.
 
@@ -73,7 +73,7 @@ selecting them from the list at the left of the screen.
 
 To enter a new meeting into the system you can click the day and the hour for a new meeting. In the
 weekly and daily views you can also press the mouse left button on the calendar and slide the mouse
-along to create an event of several hours. Open ERP then opens an entry screen for a new meeting.
+along to create an event of several hours. OpenERP then opens an entry screen for a new meeting.
 
 .. figure:: images/crm_meeting_form.png
    :scale: 50
@@ -85,13 +85,13 @@ along to create an event of several hours. Open ERP then opens an entry screen f
 
     The advantage of integrated management is that the enterprise calendar will group several system
     events.
-    Then in the Open ERP calendar you'll automatically find both these meetings and such information
+    Then in the OpenERP calendar you'll automatically find both these meetings and such information
     as business opportunities, technical interventions, and requests for staff meetings.
 
 Tracking phone calls
 --------------------
 
-Open ERP has functions to manage a telephone call centre. If,
+OpenERP has functions to manage a telephone call centre. If,
 when you installed the CRM module, you selected the option for calls 
 you'll be able to manage incoming and outgoing calls.
 
@@ -114,7 +114,7 @@ events about that customer or supplier.
 Managing a Call Center
 ----------------------
 
-You can manually encode calls that happen or you can pass them into Open ERP. But for mass
+You can manually encode calls that happen or you can pass them into OpenERP. But for mass
 campaigns, you can import a list of phone calls to make. To do this, click on the import link at the
 bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
 Import` at the top.
@@ -138,15 +138,15 @@ operator can click on one of the following buttons:
 Advanced Customer Relations
 ---------------------------
 
-Open ERP also supplies several tools to improve and automate relationships with partners. They won't
+OpenERP also supplies several tools to improve and automate relationships with partners. They won't
 be described extensively here, just introduced briefly.
 
 .. index::
    single: modules; portal_
 
 The supplier/customer portal gives you the ability to provide your suppliers and customers with
-constrained access to Open ERP. They will then be able to view or enter sets of information directly
-online to Open ERP. For example they could enter their orders, reprint their invoices, or work on
+constrained access to OpenERP. They will then be able to view or enter sets of information directly
+online to OpenERP. For example they could enter their orders, reprint their invoices, or work on
 communal projects. To activate the portal you should install the modules that start with the
 string :mod:`portal_`.
 
@@ -173,7 +173,7 @@ by segment. To enable the management of segmentation you should install the modu
    single: module; base_report_designer
 
 The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
-letters for different prospects. Open ERP also has plugins for MS Word to simplify the creation of
+letters for different prospects. OpenERP also has plugins for MS Word to simplify the creation of
 mass mailing.
 
 
@@ -184,7 +184,7 @@ mass mailing.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

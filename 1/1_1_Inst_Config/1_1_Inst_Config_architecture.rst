@@ -1,13 +1,13 @@
 
 .. index::
-   single: architecture; Open ERP
+   single: architecture; OpenERP
 
 The architecture of Open ERP
 ============================
 
 To access Open ERP you can:
 
-* use a web browser pointed at the Open ERP client-web server, or
+* use a web browser pointed at the OpenERP client-web server, or
 
 * use an application client (the GTK client) installed on each computer.
 
@@ -33,7 +33,7 @@ responsive, so more satisfying to use.
     web client and the GTK client at present (since early versions of 5.0). 
     In earlier versions, the web client had fractionally greater functionality.
     
-    When you're changing the structure of your Open ERP installation (adding and
+    When you're changing the structure of your OpenERP installation (adding and
     removing modules, perhaps changing labels) you'll find the web client to be
     irritating because of its use of **caching**. 
     
@@ -62,7 +62,7 @@ An Open ERP system is formed from three main components:
    :align: center
    :scale: 90
    
-   *The architecture of Open ERP*
+   *The architecture of OpenERP*
 
 .. note::   Terminology: client-web – server or client?
 
@@ -82,7 +82,7 @@ An Open ERP system is formed from three main components:
 .. note::   eTiny
 
     The web application used to be known as “eTiny”.
-    Its name changed to “client-web” as Tiny ERP was renamed to Open ERP,
+    Its name changed to “client-web” as Tiny ERP was renamed to OpenERP,
     but its characteristics have generally stayed the same.
 
 .. index::
@@ -112,7 +112,7 @@ on the workstation of each Open ERP user in the company.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

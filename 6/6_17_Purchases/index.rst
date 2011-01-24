@@ -8,9 +8,9 @@
 Purchasing Management
 *********************
 
- *In the preceding chapters you saw how to use customer invoices and delivery notes in Open ERP.
+ *In the preceding chapters you saw how to use customer invoices and delivery notes in OpenERP.
  This chapter is about the management of purchases, the process ahead of these two operations.
- You'll now see how Open ERP handles and simplifies this and the control of purchases from
+ You'll now see how OpenERP handles and simplifies this and the control of purchases from
  suppliers.*
 
 For this chapter you should start with a fresh database that includes demonstration data,
@@ -41,7 +41,7 @@ and no particular chart of accounts configured.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -12,7 +12,7 @@ Leads, Business Opportunities and Campaigns
  leads and opportunities. You're introduced to a more complex set of relationships between 
  partners and contacts than offered by the 'base' module, and 
  shown how to use the company calendar. 
- You'll finish by discussing how a call center might use the Open ERP system.*
+ You'll finish by discussing how a call center might use the OpenERP system.*
 
 .. raw:: html
 
@@ -35,7 +35,7 @@ Leads, Business Opportunities and Campaigns
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -9,13 +9,13 @@
 Logistics and Stock Management
 ******************************
 
- *Open ERP's stock management is at once very simple, flexible and complete.
+ *OpenERP's stock management is at once very simple, flexible and complete.
  It's based on the concept of double entry that revolutionized accounting.
  The system can be described by Lavoisier's maxim “nothing lost, everything changed” or, better,
- “everything moved”. In Open ERP you don't talk of disappearance, consumption or loss of products:
+ “everything moved”. In OpenERP you don't talk of disappearance, consumption or loss of products:
  instead you speak only of stock moves from one place to another.*
 
-Just as in accounting, the Open ERP system manages counterparts to each of its main operations such as
+Just as in accounting, the OpenERP system manages counterparts to each of its main operations such as
 receipts from suppliers, deliveries to customers, profits and losses from inventory, and consumption
 of raw materials. Stock movements are always made from one location to another. To satisfy the need
 for a counterpart to each stock movement, the software supports different types of stock location:
@@ -51,18 +51,18 @@ installed.
    :scale: 75
    :align: center
 
-   *Stores location structure when Open ERP has just been installed*
+   *Stores location structure when OpenERP has just been installed*
 
 .. note::  Hierarchical stock locations
 
-    In Open ERP locations are structured hierarchically.
+    In OpenERP locations are structured hierarchically.
     You can structure your locations as a tree, dependent on a parent-child relationship.
     This gives you more detailed levels of analysis of your stock operations and the organization of
     your warehouses.
 
 .. tip:: Locations and Warehouses
 
-    In Open ERP **warehouses** represent your places of physical stock.
+    In OpenERP **warehouses** represent your places of physical stock.
     A warehouse can be structured into several locations at multiple levels.
     Locations are used to manage all types of storage place, such as at the customer and production
     counterparts.
@@ -98,7 +98,7 @@ with :mod:`stock` and its dependencies installed and no particular chart of acco
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

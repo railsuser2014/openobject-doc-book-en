@@ -193,7 +193,7 @@ opens a partner form, to go directly to:
 
 * a shortcut to the unreconciled :guilabel:`Receivables and Payables`.
 
-The exact links depend on the modules that are installed in Open ERP.
+The exact links depend on the modules that are installed in OpenERP.
 
 These links are also available to her using the navigation features such as right-clicking partner
 fields in the GTK client.
@@ -248,7 +248,7 @@ is a filter which shows only the open trade credits and debits for the partner.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

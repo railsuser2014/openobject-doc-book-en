@@ -188,7 +188,7 @@ Configuration is required for both the accounts setup and the sales defaults.
    :guilabel:`Continue`.
        
 #. The sales defaults are shown in the screenshot :ref:`fig-oech03cfss`. The selections you make
-   determine how Open ERP's processes work by setting its default behaviour
+   determine how OpenERP's processes work by setting its default behaviour
    (although you can override any of them for any sales order, 
    so you are not strictly bound by these defaults). 
    Accept the initial set by clicking :guilabel:`Set default behaviour`.
@@ -233,7 +233,7 @@ Configuration is required for both the accounts setup and the sales defaults.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

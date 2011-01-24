@@ -26,7 +26,7 @@ For example you could put the following in the order lines:
 This enables you to lay out a more elaborate professional-looking quotation page. There's also the
 module :mod:`account_invoice_layout` which gives you the same functionality for invoice templates.
 
-The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in Open ERP 
+The two figures :ref:`fig-invlayfrm` and :ref:`fig-invlayprin` show an invoice template in OpenERP 
 and the resulting printed invoice.
 
 .. _fig-invlayfrm:
@@ -35,7 +35,7 @@ and the resulting printed invoice.
    :scale: 75
    :align: center
 
-   *Template for an invoice in Open ERP using the account_invoice_layout module*
+   *Template for an invoice in OpenERP using the account_invoice_layout module*
 
 .. _fig-invlayprin:
 
@@ -52,7 +52,7 @@ and the resulting printed invoice.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

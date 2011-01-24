@@ -11,7 +11,7 @@ Stock and Manufacturing
  Stocks are the physical embodiment of their product specification, things rather than
  datasheets. So they need to be stored and moved between locations, and tracked in 
  sets and individually. They have a size, a weight, and a cost.
- Open ERP manages all of this in some rather useful and unique ways.
+ OpenERP manages all of this in some rather useful and unique ways.
  
  Manufacture is the transformation of materials and components, perhaps using measurable 
  resources, into other products and services, adding value to your company on the way.
@@ -29,7 +29,7 @@ Stock and Manufacturing
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

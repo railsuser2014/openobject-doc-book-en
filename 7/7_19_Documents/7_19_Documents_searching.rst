@@ -7,13 +7,13 @@ Searching for documents
 
 You've seen several methods of accessing documents quickly:
 
-* From attachments to an Open ERP resource,
+* From attachments to an OpenERP resource,
 
-* Through FTP access to Open ERP,
+* Through FTP access to OpenERP,
 
 * Using the menu :menuselection:`Document Management --> Structure of Directories`.
 
-But if you don't know where a specific document can be found, Open ERP also has a search tool
+But if you don't know where a specific document can be found, OpenERP also has a search tool
 integrated into its document management. To search for a file use the menu :menuselection:`Document
 Management --> Search for a file`. You get to a document search screen that lets you search amongst
 all the attachments and all the documents in the FTP server.
@@ -33,7 +33,7 @@ You can search for a file using various different criteria:
 * Its creation and modification dates.
 
 Notice here an important advantage for an integrated document management system. Information such as
-which partner is associated with a document is automatically detected by Open ERP when the document
+which partner is associated with a document is automatically detected by OpenERP when the document
 has been stored in a directory. This information is never input by the user – it's detected
 automatically using the information about the resource when it's being saved as a file.
 
@@ -43,7 +43,7 @@ the whole set of company documents.
 
 .. note:: Supported file formats
 
-    The Open ERP document management system can index the following file formats:
+    The OpenERP document management system can index the following file formats:
 
     * **TXT** : text files,
 
@@ -79,7 +79,7 @@ Working with users' changes
 
 To make the document management system's use as unobtrusive as possible the system's users should
 easily be able to store all the documents that they produce or receive from their customers and
-suppliers. So Open ERP supplies dashboards to help system users approve their acceptance of such
+suppliers. So OpenERP supplies dashboards to help system users approve their acceptance of such
 documents.
 
 So you'll find two dashboards in the menu :menuselection:`Dashboards --> Document Management`. One
@@ -114,7 +114,7 @@ example, when you send an invoice to a customer it's a good idea to store a copy
 internally in paper or electronic form. Then you can reprint it exactly in the same format as when
 you sent it, even if the company's details have changed in the meantime.
 
-To do this, Open ERP can automatically store as attachments the different reports printed by users.
+To do this, OpenERP can automatically store as attachments the different reports printed by users.
 By default, only invoices are saved as attachments, and they're saved when they are printed.
 That's because they are commonly legally required.
 
@@ -156,7 +156,7 @@ So you could also efficiently store the documents required for each phase of a p
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

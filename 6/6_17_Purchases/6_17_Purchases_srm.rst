@@ -10,7 +10,7 @@ To manage supplier relations, you should install the :mod:`crm_configuration` mo
 able to manage supplier complaints and integrate them with your emails and document management.
 
 Once you've installed the :mod:`crm` module, check the checkbox by the :guilabel:`Complaints` option
-during configuration. Open ERP will then create a menu in your working database for managing supplier complaints.
+during configuration. OpenERP will then create a menu in your working database for managing supplier complaints.
 
 .. figure:: images/crm_config.png
    :scale: 75
@@ -42,7 +42,7 @@ The CRM module has many reports predefined. You can analyse:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

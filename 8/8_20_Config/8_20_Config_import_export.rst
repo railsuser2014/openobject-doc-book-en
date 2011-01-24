@@ -22,10 +22,10 @@ the field in the form. All the subsequent lines are data, aligned in their respe
 .. index::
    pair: data; CSV export
 
-Exporting Open ERP data to CSV
+Exporting OpenERP data to CSV
 ------------------------------
 
-Start exploring Open ERP's use of the CSV format by exporting a modestly complex set of data,
+Start exploring OpenERP's use of the CSV format by exporting a modestly complex set of data,
 the partners and partner addresses in the demonstration data.
 
 Go to :menuselection:`Partners --> Partners` for the list of partners and then scroll to the bottom
@@ -65,7 +65,7 @@ that list!
 .. index::
    pair: data; CSV import
 
-Importing CSV data to Open ERP
+Importing CSV data to OpenERP
 ------------------------------
 
 Use this export file as a template for an import file by deleting all of the data
@@ -358,7 +358,7 @@ to Microsoft Excel using Microsoft's COM mechanism.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

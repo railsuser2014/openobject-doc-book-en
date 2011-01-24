@@ -8,7 +8,7 @@
 Management of Sales
 *******************
 
-  *This chapter describes Open ERP's sales management, following the complete sales order process from
+  *This chapter describes OpenERP's sales management, following the complete sales order process from
   quotation to customer order, including the management of deliveries and of invoicing. 
   It doesn't look at customer relations and pre-sales, which are handled by the CRM
   (Customer Relationship Management) modules described in an earlier part of the book.*
@@ -47,7 +47,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

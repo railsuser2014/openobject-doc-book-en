@@ -189,7 +189,7 @@ planning, keeping customers up to date, and budgeting for resources.
 .. note:: Analytic Budgets
 
 	Analytic budgets can be budgeted in the :mod:`account_budget` module, 
-	which was developed starting at version 5 of Open ERP. They offer:
+	which was developed starting at version 5 of OpenERP. They offer:
 
 	* forecasting projects in the medium term,
 
@@ -204,7 +204,7 @@ planning, keeping customers up to date, and budgeting for resources.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

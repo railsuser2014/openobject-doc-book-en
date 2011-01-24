@@ -8,7 +8,7 @@ Management of Carriers
    single: module; delivery
    single: module; profile_manfuacturing
 
-To manage deliveries in Open ERP, install the :mod:`delivery` module. (If you have installed the
+To manage deliveries in OpenERP, install the :mod:`delivery` module. (If you have installed the
 :mod:`profile_manufacturing` profile this is installed by default during configuration of the database.) 
 This module enables you to manage:
 
@@ -122,7 +122,7 @@ Using delivery modes
 --------------------
 
 Once the delivery modes and their tariffs have been defined you can use them in a Sales Order. 
-There are two methods for doing that in Open ERP.
+There are two methods for doing that in OpenERP.
 
 * Delivery based on order quantities,
 
@@ -141,7 +141,7 @@ ones.
 
    *Adding a delivery charge to an order*
 
-Once the delivery mode has been selected, Open ERP automatically adds a line on the draft order with
+Once the delivery mode has been selected, OpenERP automatically adds a line on the draft order with
 the amount calculated by the delivery function. This technique enables you to calculate the
 delivery charge based on the order and then, separately, how the products will really be delivered
 to the customer.
@@ -162,7 +162,7 @@ For this to work properly, your order must be set to the state
 You can then confirm the order and validate the delivery.
 
 When the manager has generated the invoices corresponding to the deliveries carried out,
-Open ERP automatically adds a line on each invoice corresponding to the delivery charge, calculated
+OpenERP automatically adds a line on each invoice corresponding to the delivery charge, calculated
 on the basis of the items actually sent.
 
 .. Copyright © Open Object Press. All rights reserved.
@@ -172,7 +172,7 @@ on the basis of the items actually sent.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

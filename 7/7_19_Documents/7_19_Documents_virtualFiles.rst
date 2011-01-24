@@ -11,22 +11,22 @@ or a project. But the work of storing these documents can itself often take up q
 for staff. Each report must be saved in the document management system as well as simply being sent
 by email to the customer.
 
-That's not the case in Open ERP. To automatically make Open ERP reports available in the FTP server,
-Open ERP automatically uses *virtual files*. You can put virtual files into directories
-that have the special type of *linked resource* and link the virtual files to Open ERP's reports.
+That's not the case in OpenERP. To automatically make OpenERP reports available in the FTP server,
+OpenERP automatically uses *virtual files*. You can put virtual files into directories
+that have the special type of *linked resource* and link the virtual files to OpenERP's reports.
 
 .. note:: Virtual Files
 
-    Virtual files don't actually exist in Open ERP but are made visible with a size of 0 in the FTP
+    Virtual files don't actually exist in OpenERP but are made visible with a size of 0 in the FTP
     server.
-    Once these files have been read by the client software, Open ERP prints the document related to
+    Once these files have been read by the client software, OpenERP prints the document related to
     this file and
     returns a PDF document linked to the resource.
 
     When you copy or open a virtual file you print the selected resource.
-    You don't then have to go and print a document through Open ERP –
+    You don't then have to go and print a document through OpenERP –
     you just open the file containing that document in the document management system.
-    The PDF file is then created in real time by Open ERP by reading the relevant data.
+    The PDF file is then created in real time by OpenERP by reading the relevant data.
 
 The screen :ref:`fig-docvirt` shows the parameters of the virtual files in Orders. You define the virtual files
 using the name ORDERNUM_print.pdf, where ORDERNUM represents the reference to the order. To do
@@ -39,7 +39,7 @@ You can then find a virtual file for each report associated with an order.
    :scale: 50
    :align: center
 
-   *Virtual files for Sales Orders in Open ERP*
+   *Virtual files for Sales Orders in OpenERP*
 
 To see the effect of this configuration, connect to the FTP server and go into a directory for an
 order such as :menuselection:`Main Repository --> Sales Orders --> All Sales Orders --> SO003`. You
@@ -53,7 +53,7 @@ You can attach it to an email or put it on your desktop.
    *Virtual files for Sales Orders through FTP*
 
 This system of virtual files is very useful in a lot of situations. For example if you must quickly
-re-send a quotation to a customer you don't have to open Open ERP, you can just attach the relevant
+re-send a quotation to a customer you don't have to open OpenERP, you can just attach the relevant
 virtual file to your email.
 
 Importantly, once files have been read or copied they become real files, taking up real space, rather than
@@ -68,7 +68,7 @@ to customers and suppliers.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

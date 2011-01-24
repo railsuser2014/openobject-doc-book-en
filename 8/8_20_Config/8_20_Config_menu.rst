@@ -67,7 +67,7 @@ your database you get more choices for the welcome page, with different dashboar
 assigned to various company roles as they're created in the demonstration data.
 
 The administrator can change both the welcome page and the main menu page individually for each user
-of the system, and can adapt Open ERP to each role in the company to best fit the needs of everyone.
+of the system, and can adapt OpenERP to each role in the company to best fit the needs of everyone.
 
 To make modifications for a particular user, edit the user configuration again in
 :menuselection:`Administration --> Users --> Users`. Open the form for a particular user, and select
@@ -157,8 +157,8 @@ Translation through a CSV file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To translate or modify all of the system's phrases you first have to export a translation file in
-CSV form. And to do that, you have to install a language into Open ERP. To load a translation
-that already exists in Open ERP use
+CSV form. And to do that, you have to install a language into OpenERP. To load a translation
+that already exists in OpenERP use
 :menuselection:`Administration --> Translations --> Load an Official Translation`
 choose a language and then click :guilabel:`Start Installation`.
 
@@ -261,7 +261,7 @@ In that case it would be better to use the translation method that employs a CSV
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

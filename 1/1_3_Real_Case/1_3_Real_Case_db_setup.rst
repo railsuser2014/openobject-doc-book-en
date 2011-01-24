@@ -194,7 +194,7 @@ Before you save this, look at the partner's accounting setup by clicking the fif
 :guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
 have account values in them that were taken from the account properties you just created.
 You don't have to accept those values: you can enter any suitable account you like at this stage, 
-although Open ERP constrains the selection to ones that make accounting sense.
+although OpenERP constrains the selection to ones that make accounting sense.
 
 Back at the first tab, :guilabel:`General` change any other fields you like, 
 such as the address and phone numbers, then :guilabel:`Save`. This
@@ -407,8 +407,8 @@ Click :menuselection:`Stock Management --> Stock Locations Structure` to see the
 locations. These locations have been defined by the minimal default data loaded when the database
 was created. You'll use this default structure in this example.
 
-Open ERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
-that act as their names suggest, and ``Virtual Locations`` that are used by Open ERP for its own purposes.
+OpenERP has three predefined top-level location types , ``Physical Locations`` and ``Partner Locations``
+that act as their names suggest, and ``Virtual Locations`` that are used by OpenERP for its own purposes.
 
 #.	From the :guilabel:`Main Menu` click on :menuselection:`Stock Management --> Configuration -->
 	Locations` to reach a list view of the locations (not the tree view).
@@ -458,7 +458,7 @@ stock on your behalf.
 	since items in :guilabel:`Location Output`, which can be considered to be
 	packed ready for customer shipment, should not be thought of as available for sale elsewhere.
 	
-	In the default configuration, Open ERP uses the same ``Stock`` location for both Input and Output because it
+	In the default configuration, OpenERP uses the same ``Stock`` location for both Input and Output because it
 	is easier to understand when you're starting out.
 
 .. index::
@@ -521,7 +521,7 @@ recover from it but, again, you'd need to know your super-administrator password
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

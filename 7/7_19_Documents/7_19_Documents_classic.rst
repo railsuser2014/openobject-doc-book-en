@@ -60,7 +60,7 @@ rights in just the same way as those that are available in the company managemen
 that you have to enter the same sort of data about access rights twice for the system
 administrators.
 
-You'll see that the total integration of Open ERP's document management system with the main company
+You'll see that the total integration of OpenERP's document management system with the main company
 management system, and plugins to Outlook and Thunderbird email clients, offers an elegant solution
 that addresses these problems.
 
@@ -71,7 +71,7 @@ that addresses these problems.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

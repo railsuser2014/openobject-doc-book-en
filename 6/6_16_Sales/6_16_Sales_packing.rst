@@ -13,18 +13,18 @@ batteries you can define the following packages for a given battery product:
 
 * Palette, containing 40 packs for a total of 16,000 batteries.
 
-Open ERP's packaging management enables you to sell the same product in several different forms. The
+OpenERP's packaging management enables you to sell the same product in several different forms. The
 salesperson could sell, separately, one battery or a palette of batteries. In the order, you can
 select the default packaging type as a function of the quantities ordered.
 
 For example, if the customer wants to buy 30,000 batteries, the salesperson can select the package
-``palette`` . Open ERP will then propose the sale of 32,000 batteries, which corresponds to two
+``palette`` . OpenERP will then propose the sale of 32,000 batteries, which corresponds to two
 palettes. Or the salesperson can select 75 packs.
 
 The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
 list is the one that will be used by default.
 
-Once a package has been defined on the order, Open ERP will throw up an alert if the ordered
+Once a package has been defined on the order, OpenERP will throw up an alert if the ordered
 quantities don't correspond to the proposed packages. The quantity must be a multiple of the field
 :guilabel:`Quantity by Package` defined on the packaging form.
 
@@ -77,7 +77,7 @@ You also define the bill of materials below which determines the make-up of the 
 
 Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of
 beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, 
-if you sell the product, Open ERP automatically moves the stock in two lines, one for the empty case and the
+if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the
 other for the 24 individual bottles of beer. For more information on bills of material for sale,
 see chapter :ref:`ch-mnf`.
 
@@ -88,7 +88,7 @@ see chapter :ref:`ch-mnf`.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

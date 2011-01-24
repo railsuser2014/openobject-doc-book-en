@@ -33,12 +33,12 @@ software but will show the user another way of working on a given problem.
    *Example of a process handling a customer order*
 
 Processes are used by end users to help them understand the problems which
-haven't been handled in Open ERP. You can find actions that have no influence
+haven't been handled in OpenERP. You can find actions that have no influence
 on the software, such as “Telephone customer to thank him”, and “Send a fax to
 reassure him”. As well as providing user help, processes provide functions such
 as:
 
-* integration with Open ERP help and the company's quality manual,
+* integration with OpenERP help and the company's quality manual,
 
 * showing the user menu for finding a specific document.
 
@@ -55,12 +55,12 @@ required roles for certain transitions on a workflow they will automatically be
 shown in the process corresponding to the modified document.
 
 To get maximum benefit from the power of user processes and the workflow
-engine, Open ERP provides an integrated workflow editor and user process
+engine, OpenERP provides an integrated workflow editor and user process
 editor. This enable you to modify them through the client interface.
 
 You'll only work with the process editor in this chapter. If you want to test the
 workflow editor click on the link to the bottom left of a document and select
-the menu :menuselection:`Customize --> Manage Workflows`. Open ERP opens a graphical editor to
+the menu :menuselection:`Customize --> Manage Workflows`. OpenERP opens a graphical editor to
 modify the workflow for the selected document type.
 
 .. figure:: images/process_workflow_editor.png
@@ -69,7 +69,7 @@ modify the workflow for the selected document type.
 
    *Workflow editor modifying the behaviour of invoices*
 
-The workflow editor is only available in Open ERP's web client at the time of writing. 
+The workflow editor is only available in OpenERP's web client at the time of writing. 
 If you have the GTK client you can use the menus in
 :menuselection:`Administration --> Low Level Objects --> Workflow Items`.
 These are text-based not graphical.
@@ -77,12 +77,12 @@ These are text-based not graphical.
 Using processes effectively
 ----------------------------
 
-Regardless of which Open ERP screen you're in you can call up a process on the
+Regardless of which OpenERP screen you're in you can call up a process on the
 current document by clicking the :guilabel:`Process` icon. Depending on the document you
-can have several processes defined using it, Open ERP then asks you to choose
+can have several processes defined using it, OpenERP then asks you to choose
 which one of them you want.
 
-For example if you are in a meeting form, Open ERP will ask you to choose from
+For example if you are in a meeting form, OpenERP will ask you to choose from
 the processes it knows about that involve such forms:
 
 * processes for selecting and inducting new employees,
@@ -115,7 +115,7 @@ handled.
    *A state that refers to another workflow*
 
 Finally, you can place your mouse for a second over a transition (hover over a
-transition) to get a help balloon appearing about this transition. Open ERP
+transition) to get a help balloon appearing about this transition. OpenERP
 then shows you:
 
 * A description of the transition,
@@ -130,7 +130,7 @@ then shows you:
 
    *Detail of a transition in a workflow*
 
-If you click on the transition, Open ERP opens a dialog box with buttons that
+If you click on the transition, OpenERP opens a dialog box with buttons that
 enable you to change the document state. These are the same buttons that you
 see on the active document form. They enable you to confirm an order directly
 from the process and then see the consequences in real time at a macro level.
@@ -143,7 +143,7 @@ Defining your own user processes
 
 Use the menus under :menuselection:`Administration --> Customization --> Enterprise Processes` to
 define new processes or modify existing processes. When entering a process,
-Open ERP shows you the list of states available for that process.
+OpenERP shows you the list of states available for that process.
 
 .. figure:: images/process_form.png
    :scale: 75
@@ -187,7 +187,7 @@ object. For each transition you can:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

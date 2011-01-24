@@ -46,7 +46,7 @@ company. Once the warehouse has been defined it can be used in:
 Automatic procurement
 ---------------------
 
-Several methods of automatically procuring products can be carried out by Open ERP:
+Several methods of automatically procuring products can be carried out by OpenERP:
 
 * the workflow used by products that have the procurement mode :guilabel:`Make to Order`,
 
@@ -126,7 +126,7 @@ and not by warehouse.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

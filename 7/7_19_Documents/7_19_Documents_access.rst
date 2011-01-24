@@ -9,7 +9,7 @@ Internal and external access using FTP
    single: module; document
 
 The first configuration step is to create a directory structure that will be used to classify your
-document set. You can use the structure automatically proposed by Open ERP from the menu
+document set. You can use the structure automatically proposed by OpenERP from the menu
 :menuselection:`Document Management --> Directory Structure`.
 
 .. figure::  images/document_structure.png
@@ -18,18 +18,18 @@ document set. You can use the structure automatically proposed by Open ERP from 
 
    *Structure of directories when the document module has been installed*
 
-In addition to the usual access to documents through Open ERP, you will be able to connect to them
+In addition to the usual access to documents through OpenERP, you will be able to connect to them
 directly through the file system using the FTP protocol. To connect to the FTP server, use the
 following address:
 
 ========= ===========================================
 Parameter Value
 ========= ===========================================
-Server    Your Open ERP server, for example 127.0.0.1
+Server    Your OpenERP server, for example 127.0.0.1
 Port      8021
 Path      The '/' character, for the root
-User      Your user account in Open ERP
-Password  Your Open ERP password
+User      Your user account in OpenERP
+Password  Your OpenERP password
 ========= ===========================================
 
 .. note:: FTP server
@@ -37,13 +37,13 @@ Password  Your Open ERP password
    These comments about an FTP server may appear a bit technical, but
    it's just a general standard for getting hold of files without worrying too much about the platform
    standards (Windows, Mac, Linux, or other Unix-like system).
-   So FTP is just a way of getting access to files without needing to use an Open ERP client.
+   So FTP is just a way of getting access to files without needing to use an OpenERP client.
    There could have been other ways, but FTP proved itself to the developers to be the one that performed best
-   at lowest cost. The next release of Open ERP uses SFTP.
+   at lowest cost. The next release of OpenERP uses SFTP.
 
 Once you're connected using FTP you get to the root of a directory for the document
 management system. Once you enter that directory you find a structure that matches the structure
-defined in Open ERP.
+defined in OpenERP.
 
 .. figure::  images/document_ftp_structure_root.png
    :scale: 50
@@ -65,7 +65,7 @@ defined in Open ERP.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

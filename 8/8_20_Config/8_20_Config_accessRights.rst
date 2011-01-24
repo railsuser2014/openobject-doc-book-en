@@ -45,7 +45,7 @@ You're planning to put everything significant to your business into the system, 
 staff need see only part of it, and may need to change even less of it. Who should have rights to
 what, and how do you manage that?
 
-Open ERP's approach to rights management is highly flexible. Each user can belong to one or more
+OpenERP's approach to rights management is highly flexible. Each user can belong to one or more
 groups, and the group(s) you belong to determine(s):
 
 * the visibility of each menu item and
@@ -99,7 +99,7 @@ maintain consistency.
 Access rights for menus
 -----------------------
 
-To get a feel for rights management in Open ERP you'll create a new \ ``Stock1``\  group, with
+To get a feel for rights management in OpenERP you'll create a new \ ``Stock1``\  group, with
 access to the *Stock Management* menu items. You'll then create a stores person user who's a member
 of the \ ``Stock1``\  group.
 
@@ -287,7 +287,7 @@ Modification history
 
    *Partner Record history*
 
-Each record in a Open ERP database carries a note of its history. You can find out who it was
+Each record in a OpenERP database carries a note of its history. You can find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
 :guilabel:`View Log` icon at the top right of any form in the web client (but only when it's read-
 only, not when it's editable) to display a dialog box showing this information, as shown in the
@@ -299,7 +299,7 @@ data in the records.
 
 .. tip:: Audit Trail
 
-   Open ERP has an Audit Trail module :mod:`audittrail` which can be used to track any or
+   OpenERP has an Audit Trail module :mod:`audittrail` which can be used to track any or
    all of the changes to one or more objects. It should be used with care, because it
    can generate huge amounts of data in the live database, but can be an invaluable
    tool.
@@ -311,7 +311,7 @@ data in the records.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

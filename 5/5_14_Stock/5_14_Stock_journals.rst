@@ -25,7 +25,7 @@ The different journals
 .. index::
    single: module; sale_journal
 
-Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to Open ERP:
+Install the module :mod:`sale_journal` to work with journals. This adds three new concepts to OpenERP:
 
 * Invoicing journals,
 
@@ -116,7 +116,7 @@ quotations and assign them in a journal and confirm or cancel them en masse at o
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -4,7 +4,7 @@
 Creating a Configuration Module
 ===============================
 
-It's very helpful to be able to backup your specific configuration settings in an Open ERP module
+It's very helpful to be able to backup your specific configuration settings in an OpenERP module
 dedicated just to that. That enables you to:
 
 * automatically duplicate the configuration settings by installing the module in another database,
@@ -61,7 +61,7 @@ Modules Management --> Import module`.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

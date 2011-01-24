@@ -111,7 +111,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 	There is a choice of methods for integrating Open ERP in a multi-company environment:
 
-	* if the companies hold few documents in common (such as products, or partners - any Open ERP
+	* if the companies hold few documents in common (such as products, or partners - any OpenERP
 	  resource), you should install separate databases,
 
 	* if the companies share many documents, you can register them in the same database and install
@@ -167,7 +167,7 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

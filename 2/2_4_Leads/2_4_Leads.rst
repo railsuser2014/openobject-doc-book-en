@@ -18,7 +18,7 @@ For example, the following events could result in the creation of one or several
 * A contact that you've been given by a friend. You must then qualify it before starting to assign a
   salesperson to the contact,
 
-* A form completed on your website directly integrated into Open ERP. Before converting the form
+* A form completed on your website directly integrated into OpenERP. Before converting the form
   into a sale proposition or opportunity, you should read and handle the person's request.
 
     .. note:: Separation of sales services
@@ -72,7 +72,7 @@ potential prospects and you want to load them all into the system to handle them
 To do that you should start with a list of leads in CSV format. If your prospects are provided in
 another format it's easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
 Open the leads list using the menu :menuselection:`CRM & SRM --> Sales -> Leads -> My Leads`. At
-the bottom of the list click on the :guilabel:`Import` link. Open ERP opens a form for importing the
+the bottom of the list click on the :guilabel:`Import` link. OpenERP opens a form for importing the
 data.
 
 .. figure:: images/crm_lead_import.png
@@ -87,7 +87,7 @@ information on import and export.
 
 .. tip:: Various Imports
 
-    Importing and Exporting data in Open ERP is a generic function available to all resources.
+    Importing and Exporting data in OpenERP is a generic function available to all resources.
     So you can import and export such lists as partners, sales opportunities, accounting entries,
     products and pricelists.
 
@@ -99,14 +99,14 @@ There are other methods of importing leads automatically or semi-automatically:
 * Using the email gateway for each incoming email from a certain address (such as
   info@mycompany.com) creating a lead automatically from the contents of the email,
 
-* Using Open ERP's XML-RPC web-services to connect to a form on your website.
+* Using OpenERP's XML-RPC web-services to connect to a form on your website.
 
 These different methods are described in the next CRM chapter, :ref:`ch-crm`.
 
 Organizing leads
 ----------------
 
-To help the users organize and handle leads efficiently, Open ERP provides several menus in the CRM
+To help the users organize and handle leads efficiently, OpenERP provides several menus in the CRM
 system that can be used depending on the needs of each:
 
 * :menuselection:`CRM & SRM --> Sales --> Leads --> New Lead` opens an entry form directly onto a new lead. This menu can
@@ -146,7 +146,7 @@ Converting leads into customers or opportunities
 ------------------------------------------------
 
 If a lead is interesting you convert it into a partner in the system. To do that, push the button
-:guilabel:`Convert to Partner`. Open ERP opens a partner form with the information from the lead entered
+:guilabel:`Convert to Partner`. OpenERP opens a partner form with the information from the lead entered
 into it. At this stage you can add more information such as the exact partner address and the
 contact details.
 
@@ -154,7 +154,7 @@ The created partner is automatically attached to the lead, which enables you to 
 traceability from the lead. To do that look at the second tab in the lead :guilabel:`History`.
 
 If the salesperson thinks that there is a real opportunity with the lead, following the contact, he
-can convert it into a sales opportunity using the button :guilabel:`Convert to Opportunity`. Open ERP then
+can convert it into a sales opportunity using the button :guilabel:`Convert to Opportunity`. OpenERP then
 opens a window asking the title of the opportunity, the estimated revenue and the percentage success
 of converting to a sale.
 
@@ -176,7 +176,7 @@ automatically through the next step, you can use the button that looks like a ri
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

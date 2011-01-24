@@ -15,7 +15,7 @@ Manufacturing
  It also discusses consumption and production of products, as well as the necessary operations on
  machinery, tools or human resources.*
 
-The management of manufacturing in Open ERP is based on its stock management and, like it, is very
+The management of manufacturing in OpenERP is based on its stock management and, like it, is very
 flexible in both its operations and its financial control. It benefits particularly from the use of
 double-entry stock management for production orders.
 
@@ -74,7 +74,7 @@ with :mod:`mrp` and its dependencies installed and no particular chart of accoun
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

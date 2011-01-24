@@ -9,7 +9,7 @@ Database creation
 =================
 
 Use the technique outlined in this section to create a new database, \ ``openerp_ch01``\  . This
-database will contain the demonstration data provided with Open ERP and a large proportion of the
+database will contain the demonstration data provided with OpenERP and a large proportion of the
 core Open ERP functionality. You'll need to know your super administrator password for this – or
 you'll have to find somebody who does have it to create this seed database.
 
@@ -248,7 +248,7 @@ this uploading as you make your way through this book.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

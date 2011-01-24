@@ -5,7 +5,7 @@ Stocks
    single: virtual; stock
 
 In the product form you can find a report that will give you the stock levels of the various
-different products in any selected location. If you haven't selected any location, Open ERP
+different products in any selected location. If you haven't selected any location, OpenERP
 calculates stocks for all of the physical locations.
 
 .. note::  Availability of stock
@@ -31,7 +31,7 @@ The two fields are:
 
    To get more detail about future stock, you can click :guilabel:`Future Stock Forecast` to the right of the product form
    to get the report :ref:`fig-stfore` below.
-   Open ERP shows a graph of the change of stock in the days to come, varying as a function of
+   OpenERP shows a graph of the change of stock in the days to come, varying as a function of
    purchase orders, confirmed production and sales orders.
 
    .. _fig-stfore:
@@ -75,7 +75,7 @@ modified. You'll find counterpart locations for:
 
 A procurement location is a temporary location for stock moves that haven't yet been finalized by
 the scheduler. When the system doesn't yet know if procurement is to be done by a purchase or
-production, Open ERP uses the counterpart location :guilabel:`Procurement`. You'll find there
+production, OpenERP uses the counterpart location :guilabel:`Procurement`. You'll find there
 everything that hasn't yet been planned by the system. The quantities of product in this location
 cancel each other out.
 
@@ -98,7 +98,7 @@ into the system by location for the products in stock. Use the menu :menuselecti
 
 Give a name (for example ``Initial Inventory`` or ``Lost Product XYZ`` ) and a date for each inventory
 operation. You can then enter data about the quantities available for each product by location.
-Start by showing the location, for example ``Stock`` , and then select the product. Open ERP
+Start by showing the location, for example ``Stock`` , and then select the product. OpenERP
 automatically completes the actual quantity actually available for that product in the location
 shown. You can then change that value to correct the value in stock.
 
@@ -113,7 +113,7 @@ Enter data for a single line in your inventory:
 .. tip:: Periodical Inventory
 
     You are usually legally required to do a stock check of all your products at least once a year.
-    As well as doing a complete annual stock check, Open ERP also supports the method of periodical
+    As well as doing a complete annual stock check, OpenERP also supports the method of periodical
     inventory.
 
     That means you can check the stock levels of a proportion of your products every so often.
@@ -131,7 +131,7 @@ Enter data for a single line in your inventory:
 
 When your inventory operation is finished you can confirm it using the button to the bottom right of
 the form.
-Open ERP will then automatically create the stock moves to close the gaps, as mentioned at the start
+OpenERP will then automatically create the stock moves to close the gaps, as mentioned at the start
 of this chapter.
 You can verify the moves generated using the second tab of the inventory operation form.
 
@@ -141,7 +141,7 @@ is to reopen the product form to see the quantities available in stock.
 Receipt of a supplier order
 ---------------------------
 
-Supplier goods receipt forms are automatically prepared by Open ERP by the purchase management
+Supplier goods receipt forms are automatically prepared by OpenERP by the purchase management
 process. You'll find a list of all the awaited receipts in the menu :menuselection:`Stock Management
 --> Incoming Products --> Packing to Process`. Use the order number or the supplier name to find the
 right goods receipt form for confirmation of a goods in. This approach enables you to control
@@ -209,7 +209,7 @@ New Quotation`. Enter the following data in this order:
 
   * :guilabel:`Procurement Method` : from stock.
 
-You've seen already that Open ERP shows you the available product stock when you've selected list
+You've seen already that OpenERP shows you the available product stock when you've selected list
 mode. The real stock is equal to the virtual stock because you've nothing to deliver to customers
 and you're not waiting for any of these products to be received into stock. The salesperson then has
 all the information needed to take orders efficiently.
@@ -240,7 +240,7 @@ times and priorities.
 You can now look at the the list of deliveries waiting to be carried out using the menu
 :menuselection:`Stock Management --> Outgoing Products --> Available Packing`. You find a line
 there for your order representing the items to be sent. Double-click the line to see the detail of
-the items proposed by Open ERP.
+the items proposed by OpenERP.
 
 .. figure:: images/stock_picking_out_form.png
    :scale: 75
@@ -250,14 +250,14 @@ the items proposed by Open ERP.
 
 .. tip::  States
 
-    Open ERP distinguishes between the states **Confirmed** and **Assigned**.
+    OpenERP distinguishes between the states **Confirmed** and **Assigned**.
 
     You say that an item is **Confirmed** when it's needed but the available stock is insufficient.
     You say that an item is **Assigned** when it's available in stock and the storesperson reserves it:
     the necessary products have been reserved for this specific operation.
 
 You can confirm a customer delivery using the :guilabel:`Confirm` button. A window then opens where you can
-enter the quantities actually delivered. If you enter a value less than the forecast one, Open ERP
+enter the quantities actually delivered. If you enter a value less than the forecast one, OpenERP
 automatically generates a partial delivery notes and a new order for the remaining items. For this
 exercise, just confirm all the products.
 
@@ -279,7 +279,7 @@ salesperson can follow the progress of their orders at a glance.
     Stock Management is very flexible so that it can be more effective.
     For example if you forget to enter products at goods in, this won't prevent you from sending
     them to customers.
-    In Open ERP you can force all operations manually using the button :guilabel:`Force assignment`.
+    In OpenERP you can force all operations manually using the button :guilabel:`Force assignment`.
     In this case your stocks risk falling negative. You should monitor all stocks for negative
     levels and carry out an inventory correction when that happens.
 
@@ -306,12 +306,12 @@ at the list of items. You'll immediately see the following information about the
 * :guilabel:`Virtual Stock`.
 
 If you want more information you can use the actions to the right of the form. If you click the
-report :guilabel:`Future Stock Forecast`, Open ERP opens a graphical view of the stock levels for
+report :guilabel:`Future Stock Forecast`, OpenERP opens a graphical view of the stock levels for
 the selected products changing with time over the days and weeks to come. The value at the left of
 the graph is the real stock (today) and the value at the right is the virtual stock (stock in the
 short term future).
 
-To get the stock levels by location use the button :guilabel:`Stock by Location`.  Open ERP then
+To get the stock levels by location use the button :guilabel:`Stock by Location`.  OpenERP then
 gives you the stock of this product split out over all the possible locations. If you only want to
 see the physical locations in your company just filter this list using the Location Type :guilabel:`Internal
 Locations`. By default, physical locations are already colored red to distinguish them better.
@@ -361,7 +361,7 @@ supplier location:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

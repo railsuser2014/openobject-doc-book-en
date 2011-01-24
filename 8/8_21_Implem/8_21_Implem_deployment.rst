@@ -11,7 +11,7 @@ As you've seen the complete architecture of Open ERP includes the following ele
 
 * an Open ERP application server,
 
-* an Open ERP client-web server,
+* an OpenERP client-web server,
 
 * several clients that access the Open ERP server: they can either be web clients if the client-web
   server is installed, or GTK clients.
@@ -243,7 +243,7 @@ depending on access rights and the availability of passwords for the serve.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -72,7 +72,7 @@ click the installer file to install it and accept the default parameters on each
 
 If you had previously tried to install the all-in-one version of Open ERP, you have to uninstall
 that first because various elements of a previous installation could interfere with your new installation.
-Make sure that all Tiny ERP, Open ERP and PostgreSQL applications are removed:
+Make sure that all Tiny ERP, OpenERP and PostgreSQL applications are removed:
 you're likely to have to restart your PC to finish removing all traces of them.
 
 The Open ERP client can be opened, ready to use the Open ERP system, once you have completed 
@@ -160,12 +160,12 @@ you've **successfully connected** to an Open ERP server containing, as yet, no 
 	XML-RPC protocol (from Linux) or port 8070 using the NET-RPC protocol instead (from Windows).
 	You can use either protocol from either operating system.
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
-	Open ERP can run XML-RPC, but not NET-RPC, as a secure connection.
+	OpenERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
 Resolving errors with a Windows installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you can't get Open ERP to work after installing your Windows system you'll find some ideas for
+If you can't get OpenERP to work after installing your Windows system you'll find some ideas for
 resolving this below:
 
 #. Is the Open ERP Server working? Signed in to the server as an administrator, stop and
@@ -183,7 +183,7 @@ resolving this below:
 	   :align: center
 	   :scale: 80
 	          
-	   *Typical Open ERP configuration file*
+	   *Typical OpenERP configuration file*
 
 #. Is your PostgreSQL running? Signed in as administrator, select :guilabel:`Stop Service`
    from the menu :menuselection:`Start --> Programs --> PostgreSQL`.  If, after a couple of seconds,
@@ -193,7 +193,7 @@ resolving this below:
 #. Is the database accessible? Still in the PostgreSQL menu, start
    the pgAdmin III application which you can use to explore the database. Double-click on the \
    ``PostgreSQL4OpenERP``\  connection. 
-   You can find the password in the Open ERP server configuration file.
+   You can find the password in the OpenERP server configuration file.
    If the database server is accessible
    you'll be able to see some information about the empty database. If it's not then an error message
    will appear.
@@ -408,8 +408,8 @@ OpenERP is now up and running, connected to Postgres database on port 5432 and l
     
   
 
-Start the Open ERP GTK client by clicking its icon in the :menuselection:`Applications`  menu,
-or by opening a terminal window and typing \ ``tinyerp-client``\  . The Open ERP login dialog box
+Start the OpenERP GTK client by clicking its icon in the :menuselection:`Applications`  menu,
+or by opening a terminal window and typing \ ``tinyerp-client``\  . The OpenERP login dialog box
 should open and show the message :guilabel:`No database found you must create one!`.
 
 Although this installation method is simple and therefore an attractive option, it's better to
@@ -449,7 +449,7 @@ To download the PostgreSQL database and all of the other dependencies for Open 
 #. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.3``\   then select it for
    installation along with its dependencies.
 
-#. Select all of Open ERP's dependences, an up-to-date list of which should be
+#. Select all of OpenERP's dependences, an up-to-date list of which should be
    found in the installation documents on Tiny's website,
    then click :guilabel:`Update Now` to install them.
 
@@ -478,7 +478,7 @@ seconds or so, which indicates that the server is waiting for a client to connec
    :align: center
    :scale: 90
    
-   *Open ERP startup log in the console*
+   *OpenERP startup log in the console*
 
 .. index::
    single: client; GTK
@@ -503,7 +503,7 @@ your particular operating system.
    :align: center
    :scale: 75
    
-   *Open ERP client at startup*
+   *OpenERP client at startup*
 
 Open a terminal window to start the client using the command openerp-client. When you start the
 client on the same Linux PC as the server you'll find that the default connection parameters will
@@ -553,12 +553,12 @@ If your Linux server is protected by a firewall you'll have to provide access to
 
 .. index::
    single: installation; eTiny web server
-   single: installation; Open ERP client-web server
+   single: installation; OpenERP client-web server
 
-Installation of an Open ERP web server
+Installation of an OpenERP web server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Just as you installed a GTK client on a Linux server, you can also install the Open ERP client-web
+Just as you installed a GTK client on a Linux server, you can also install the OpenERP client-web
 server.
 You can install it from sources after installing its dependencies from packages as you did
 with the Open ERP server,
@@ -579,14 +579,14 @@ To install client-web follow the up-to-date instructions in the installation doc
 
 	:program:`ez_setup` is a small program that installs ez_install automatically.
 
-The Open ERP Web server connects to the Open ERP server in the same way as an Open ERP client
+The OpenERP Web server connects to the Open ERP server in the same way as an Open ERP client
 using the NET-RPC protocol. Its default setup corresponds to that of the Open ERP server
 you've just installed, so should connect directly at startup.
 
 #.	At the same console as you've just been using, go to the Openerp web directory by typing
 	:command:`cd openerp-web-5.X`.
 
-#. At a terminal window type :command:`start-openerp-web` to start the Open ERP Web server.
+#. At a terminal window type :command:`start-openerp-web` to start the OpenERP Web server.
 
 .. _fig-webwel:
 
@@ -594,7 +594,7 @@ you've just installed, so should connect directly at startup.
    :scale: 75
    :align: center
 
-   *Open ERP web client at startup*
+   *OpenERP web client at startup*
    
 You can verify the installation by opening a web browser on the server and navigating to
 http://localhost:8080 to connect to eTiny as shown in the figure :ref:`fig-webwel`. 
@@ -685,7 +685,7 @@ the following points provide some indicators about how you can set your installa
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

@@ -8,7 +8,7 @@
 Organization of Human Resources
 *******************************
 
- *This chapter describes Open ERP's core human resources and employee services features. 
+ *This chapter describes OpenERP's core human resources and employee services features. 
  Most of the solutions discussed after this chapter concern management by
  business or by project and depend mostly on analytic accounting, with each business or project
  represented by an analytic account.*
@@ -41,7 +41,7 @@ no particular chart of accounts configured.
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 

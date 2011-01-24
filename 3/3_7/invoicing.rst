@@ -356,7 +356,7 @@ many cases it's more convenient to cancel an invoice when there's an error than 
 note and reconcile the two entries. Your attitude to this will be influenced by current legislation
 in your accounting jurisdiction and your adherence to accounting purity.
 
-Open ERP accommodates either approach. Cancelling an invoice can be permitted by checking the box
+OpenERP accommodates either approach. Cancelling an invoice can be permitted by checking the box
 :guilabel:`Allow Cancelling Entries` in the Journal corresponding to this invoice. You'll then be allowed to
 cancel the invoice if the following two conditions are met:
 
@@ -642,7 +642,7 @@ areas such as:
 
 .. We have contracts with different publishers in different countries to sell and
 .. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the Open ERP product. It
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
 .. also helps us to create incentives to pay contributors and authors using author
 .. rights of these sales.
 
