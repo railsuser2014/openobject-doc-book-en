@@ -5,15 +5,15 @@
 Deployment
 ==========
 
-As you have seen, the complete architecture of Open ERP includes the following elements:
+As you have seen, the complete architecture of OpenERP includes the following elements:
 
 * a database server,
 
-* an Open ERP application server,
+* an OpenERP application server,
 
 * an OpenERP client-web server,
 
-* several clients that access the Open ERP server: they can either be web clients if the client-web
+* several clients that access the OpenERP server: they can either be web clients if the client-web
   server is installed, or GTK clients.
 
 .. index::
@@ -21,9 +21,9 @@ As you have seen, the complete architecture of Open ERP includes the following 
 
 .. note:: Deployment
 
-	Deployment is the process of putting a Open ERP database into a production-ready state,
+	Deployment is the process of putting an OpenERP database into a production-ready state,
 	where it can be used by everyone in your business for their daily work.
-	You would usually configure Open ERP and load data into it on one development system,
+	You would usually configure OpenERP and load data into it on one development system,
 	train staff on that or another training system and
 	deploy it onto a production system that has better protection against failure, better security and
 	more performance.
@@ -31,15 +31,15 @@ As you have seen, the complete architecture of Open ERP includes the following 
 Deployment Options
 ------------------
 
-To deploy Open ERP in your company, several options are available to you:
+To deploy OpenERP in your company, several options are available to you:
 
-* a SaaS (Software as a Service) or On-Demand offer which includes the equipment, the hosting, the
+* a SaaS (Software as a Service) or On-Demand offer, which includes the equipment, the hosting, the
   maintenance and the support on a system configured to your needs in advance,
 
 * an internal installation, that you manage yourselves or have managed by an IT services company
-  such as an Open ERP partner,
+  such as an OpenERP partner,
 
-* hosting by a server supplier on which Open ERP is installed, which enables you to proceed to add
+* hosting by a server supplier on which OpenERP is installed, which enables you to proceed to add
   adaptations on your server.
 
 The first two approaches are the most commonly used.
@@ -49,7 +49,7 @@ The first two approaches are the most commonly used.
    single: Software as a Service
    single: On-Demand
 
-The SaaS (Software as a Service) offer
+The SaaS (Software as a Service) Offer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 SaaS is a complete package hosted at a supplier, that includes the following services: server
@@ -64,7 +64,7 @@ offer a service at a set price based on standard software modules that contain f
 SaaS suppliers are limited generally to the modules certified and validated by the original author
 and project manager, Tiny.
 
-Here are the main advantages of an Open ERP SaaS solution:
+Here are the main advantages of an OpenERP SaaS solution:
 
 * an unbeatable return on investment (cost of implementation: 0, cost of licenses: 0),
 
@@ -83,13 +83,13 @@ So this server is recommended for small companies with fewer than about fifteen 
 .. index:: 
    single: hosting
    
-Hosting by a supplier
+Hosting by a Supplier
 ^^^^^^^^^^^^^^^^^^^^^
 
-At first sight a hosted Open ERP system appears similar to SaaS: it provides Open ERP from a
-remote installation through a web browser. But in general the similarities stop there.
+At first sight, a hosted OpenERP system appears similar to SaaS: it provides OpenERP from a
+remote installation through a web browser. But in general, the similarities stop there.
 
-To compare it with an SaaS package you should check if the hosting offer properly includes the
+To compare it with an SaaS package, you should check if the hosting offer properly includes the
 following elements:
 
 * server hardware,
@@ -110,7 +110,7 @@ following elements:
 
 Also get yourself up to speed on the following points:
 
-* the version of Open ERP proposed,
+* the version of OpenERP proposed,
 
 * the costs of implementation (configuration, data loading, training),
 
@@ -127,13 +127,13 @@ Also get yourself up to speed on the following points:
 
 * the level of support and its costs,
 
-* the procedure used to update Open ERP (to fault-fixed versions)
+* the procedure used to update OpenERP (to fault-fixed versions)
 
-* the procedure adopted for Open ERP upgrades (to versions that have both fault fixes and new
+* the procedure adopted for OpenERP upgrades (to versions that have both fault fixes and new
   functionality).
 
 Calling such suppliers can be a good solution if you are willing to entrust all the technical
-specifications for the functioning of Open ERP to them, especially if you need to use customized or
+specifications for the functioning of OpenERP to them, especially if you need to use customized or
 extension modules that are not in the stable version released by Tiny.
 
 .. index:: 
@@ -142,11 +142,11 @@ extension modules that are not in the stable version released by Tiny.
 Internal Installation
 ^^^^^^^^^^^^^^^^^^^^^
 
-Large and medium-large companies typically install Open ERP using their own internal company
+Large and medium-large companies typically install OpenERP using their own internal company
 resources. They usually prefer to have their own IT service in charge of maintenance.
 
-Such companies can do the implementation work themselves internally, or turn to an Open ERP partner
-who will do the ERP implementation work or assist them with it. Generally companies prefer to adopt
+Such companies can do the implementation work themselves internally, or turn to an OpenERP partner
+who will do the ERP implementation work or assist them with it. Generally, companies prefer to adopt
 an intermediate solution which consists of:
 
     #. Turning the initial implementation over to a partner to limit the risks and delays of integration.
@@ -158,10 +158,10 @@ an intermediate solution which consists of:
 
 An internal installation will probably prove more costly than an SaaS package or hosted service.
 Even if you put yourself in charge of it all, you will take quite a bit of time learning how to manage
-the implementation unless the team already has an experience of Open ERP. This represents a
+the implementation unless the team already has an experience of OpenERP. This represents a
 significant risk.
 
-However, an internal implementation can be particularly interesting where:
+However, an internal implementation can be particularly interesting when:
 
 * you want to keep your data within your company,
 
@@ -180,19 +180,19 @@ least partly.
 Deployment Procedure
 --------------------
 
-The deployment of a version of Open ERP is quite simple when your server has been configured in
+The deployment of a version of OpenERP is quite simple when your server has been configured in
 your production environment. The security of data will then be a key element.
 
-When you have installed the server you should create at least two databases:
+When you have installed the server, you should create at least two databases:
 
 * a test or development database, in which the users can test the system and familiarize themselves
   with it,
 
-* a production database which will be the one used by the company in daily use.
+* a production database, which will be the one used by the company in daily use.
 
-.. note::  Version numbering
+.. note::  Version Numbering
 
-	Open ERP uses a version numbering model that comprises 3 numbers A.B.C (for example 4.2.2 or
+	OpenERP uses a version numbering model that comprises 3 numbers A.B.C (for example 4.2.2 or
 	5.0.0) where changes in the number A signify a major functional change, changes to number B signify
 	an update that includes a batch of fault fixes and some new functionality, and the number C
 	generally refers to some limited updates or fixes to the existing functionality.
@@ -201,19 +201,19 @@ When you have installed the server you should create at least two databases:
 	version which is not designed for a production environment. The even numbers are for stable
 	versions.
 
-If you have prepared a data module for Open ERP (that is a module that consists just of data, not
+If you have prepared a data module for OpenERP (that is a module that consists just of data, not
 altered functionality), you should test it in your development version and check that it does not
 require any more manual adjustments. If the import runs correctly, it shows that you are ready to
 load your data in the production database.
 
-You can use the Open ERP database backup procedure at different stages of configuration (see
-:ref:`ch-inst`). Then if you have made a false step that you cannot recover from you can always return to a
+You can use the OpenERP database backup procedure at different stages of configuration (see
+:ref:`ch-inst`). Then, if you have made a false step that you cannot recover from, you can always return to a
 prior state.
 
 Since your data describes much of your company's value, take particular care both when you need to
 transfer it (in backups and across your network) and when you are managing the super-administrator
 password. Make sure that the connection between a PC client and the two servers is correctly
-secured. You can configure Open ERP to use the HTTPS protocol, which provides security for data
+secured. You can configure OpenERP to use the HTTPS protocol, which provides security for data
 transfer
 
 .. index::

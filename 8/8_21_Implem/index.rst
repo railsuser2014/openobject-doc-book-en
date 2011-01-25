@@ -14,21 +14,20 @@ Implementation Methodology
  but you still have a great deal of work to do integrating OpenERP into your company.
  This work is more business-related and social in nature than technical.*
  
- *The Open ERP implementation process encompasses several different phases:
+ *The OpenERP implementation process encompasses several different phases:
  evaluation, planning, configuration, data migration, deployment, and user training, and affects
  both support and maintenance.*
 
 The management of ERP projects, and IT project management in general, are the subject of very many
 other books that you might want to investigate for yourself. The elements of the methodology
 presented here are not intended to be an exhaustive review, just a brief overview of the different
-phases necessary to implement Open ERP in your company
+phases necessary to implement OpenERP in your company.
 
 .. tip:: Implementation
 
-	Implementation encompasses the whole process of integrating and deploying Open ERP,
+	Implementation encompasses the whole process of integrating and deploying OpenERP,
 	including evaluating it, establishing specifications, planning the deployment, the configuration of
-	the software,
-	loading data, installation and training the users.
+	the software, loading data, installation and training the users.
 	It does not generally extend to software customization, nor support and maintenance.
 
 .. raw:: html
@@ -45,6 +44,7 @@ phases necessary to implement Open ERP in your company
 .. raw:: html
 
     </div>
+
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't

@@ -2,27 +2,27 @@
 .. index:: 
    single: training
    
-User training
+User Training
 =============
 
 Two types of training are provided by the Tiny company and its partners:
 
-* Technical training in Open ERP: the objective of this intensive training is to enable you to
+* Technical training in OpenERP: the objective of this intensive training is to enable you to
   develop your own modules by modifying and adapting the existing ones. It covers the creation of new
   objects, menus, reports and workflows, and also of interfaces with external software. It lasts for
-  five days and is designed for IT people
+  five days and is designed for IT people.
 
-* User training: this enables you to be productive as rapidly as possible in the use of Open ERP.
+* User training: this enables you to be productive as rapidly as possible in the use of OpenERP.
   All of the modules there are detailed with concrete examples and different exercises. For the sake
-  of realism the training uses data for a fictitious company. This training also lasts for five days.
+  of realism, the training uses data for a fictitious company. This training also lasts for five days.
   It is designed for those responsible for an ERP project, who will then be capable of training
   employees internally.
 
-Tiny's training calendar is available on the official Open ERP site at
-http://www.openerp.com/services/training-schedule. The training is delivered in either French or English
+Tiny's training calendar is available on the official OpenERP site at
+http://www.openerp.com/services/training-schedule. The training is delivered in either French or English,
 depending on the course.
 
-Both Tiny, the creators of Open ERP, and the Open ERP partners can also provide customized
+Both Tiny, the creators of OpenERP, and the OpenERP partners can also provide customized
 training. This, although more expensive, is focused on your own needs.
 
 Your training needs depend on the type of deployment you have chosen. If you have opted for a SaaS
@@ -30,7 +30,7 @@ development, technical training is not very useful.
 
 In summary, you should arrange both user training and self-paced training (perhaps based on this
 book series) if you can. Technical training is strongly advised if you see yourselves developing your own
-modules. Although it is not obligatory it gives you quite a time advantage in any serious Open ERP
+modules. Although it is not obligatory, it gives you quite a time advantage in any serious OpenERP
 engagement.
 
 
