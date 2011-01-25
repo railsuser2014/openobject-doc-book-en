@@ -8,7 +8,7 @@ management systems
 in amongst software from giants such as SAP, Oracle and Microsoft,
 and from the small software developers in their own niches.
 
-Until now only two main alternatives existed for systems that manage a company's information:
+Until now, only two main alternatives existed for systems that manage a company's information:
 install a proprietary ERP system, complete but usually overweight, inflexible, and expensive;
 or develop a solution internally, adapted to current needs but often expensive to develop, not
 integrated, and incomplete.
@@ -26,7 +26,7 @@ after implementation.
 And you can gain from increased operational quality even if you reduce your human resourcing
 intensity.
 Because there are fewer repetitive tasks for your staff to do,
-they can concentrate on higher added-value work.
+they can concentrate on higher value-added work.
 We frequently receive the gratitude of senior management who get better results from their
 business because they have adopted OpenERP.
 
@@ -43,11 +43,11 @@ Bypass the technical difficulties by using the SaaS offer
 
 For a quick low-cost start, you can make use of a month's comprehensive free trial of Tiny's
 OpenERP SaaS package found at http://ondemand.openerp.com/. 
-Using this you sidestep any technical difficulties and get a
+Using this, you sidestep any technical difficulties and get a
 comprehensive set of system administration services, server hosting, configuration to your
 environment, maintenance, support and initial training.
 
-An SaaS package is suited to the needs of small enterprises that do not have very specific needs, and
+A SaaS package is suited to the needs of small enterprises that do not have very specific needs, and
 where the initial cost and the delay of implementation are critical factors.
 
 To meet its objectives of minimal cost, the SaaS package aims for highly automated standardized data
@@ -72,7 +72,7 @@ out:
 * the main project developers, Tiny, themselves.
 
 The community of users and developers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The community, supported by Tiny, hosts a set of communication tools which can help you in your
 OpenERP investigation.
@@ -82,7 +82,7 @@ OpenERP investigation.
 The forum enables you to discuss issues with other OpenERP users. It is very active and you have a
 good chance of receiving some form of response to your questions within twenty-four hours or so.
 
-* **The wiki**  http://openobject.com/wiki
+* **The wiki** http://openobject.com/wiki
 
 The OpenObject wiki is used to manage activities around OpenERP.
 
@@ -90,11 +90,11 @@ You will find informations about:
 
   * Shared Funding Projects
   * IRC Meetings
-  * Real Life Meetings (eg. Community Days)
+  * Real Life Meetings (e.g. Community Days)
   * Business Intelligence
-  * Open Report (eg. OpenReport, OpenOffice Plugin)
+  * Open Report (e.g. OpenReport, OpenOffice Plugin)
 
-* **Database of OpenERP modules** http://doc.openerp.com/py-modindex.html
+* **Database of OpenERP modules** http://doc.openerp.com/v6.0/py-modindex.html
 
 A database of all the modules available for use gives you free access to most of the known OpenERP
 extensions.
@@ -106,18 +106,18 @@ source code (using the *bzr* source code control system) and is used for reporti
 become the central location for OpenERP technology.
 
 OpenERP partners
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
-If you need contract-backed guarantees for implementing and maintaining OpenERP you can contact an
+If you need contract-backed guarantees for implementing and maintaining OpenERP, you can contact an
 official OpenERP partner. OpenERP partners offer various services such as user training,
 prototype installations, and change management services. The complete list of partners by country
 and by type can be found on the official OpenERP site: http://openerp.com/partners
 
 The main developer, Tiny
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Finally you can call the main project developers, Tiny, who can help you in your OpenERP project.
-Tiny offers various services such as free demonstration days for the software, user training and
+Tiny offers various services, such as free demonstration days for the software, user training and
 technical training, support contracts, maintenance contracts and developments as required. Depending
 on the demand, they can also put you in contact with partners most aligned to your requirements.
 
