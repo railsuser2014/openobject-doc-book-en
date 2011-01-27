@@ -59,6 +59,10 @@ Business Application-related Features
 * Create your company wiki for Sales FAQ,
 
 * History tab in the Customer form to keep track of all events,
+
+* When you convert a lead to an opportunity, you now have the option to not create a partner, but just keep the contact data in the opportunity,
+
+* Create a new partner from a lead or an opportunity, or merge with an existing partner.
  
 *Warehouse Management*
 
