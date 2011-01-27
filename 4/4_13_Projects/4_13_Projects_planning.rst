@@ -55,7 +55,7 @@ Planning by time or by tasks?
 -----------------------------
 
 There are two major approaches to enterprise planning: planning by task and planning by time. You
-can manage both with Open ERP.
+can manage both with OpenERP.
 
 In planning by task, the project manager assigns tasks from the different projects to each employee
 over a given period. Employees then carry out precisely the work they have been assigned by the
@@ -72,7 +72,7 @@ will do next, based on the plans and the relative priorities of the tasks.
 .. _fig-srvplantime:
 
 .. figure::  images/service_planning_time.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Monthly planning for work time of each employee*
@@ -88,9 +88,9 @@ resources on projects from the task prioritization within a project.
 
 			To illustrate the difference between planning by time and planning by task, take the case of an
 			IT project that is estimated to be around six months of work. This project is managed by iterative
-			cycles of development of around a month and a presentation is made to the client at the end of
-			each cycle to track the progress of the project. At this meeting you plan what must be carried
-			out for the following month. At the end of the month the account manager for the project invoices
+			cycles of development of around a month, and a presentation is made to the client at the end of
+			each cycle to track the progress of the project. At this meeting, you plan what must be carried
+			out for the following month. At the end of the month, the account manager for the project invoices
 			the client for the work done on the project.
 
 			Suppose that the project encounters a delay because it is more complex than expected. There are
@@ -172,12 +172,12 @@ The employee then selects a task in the highest priority project. She ideally ch
 that has been directly assigned to her, or one which is high on the priority list that she is capable
 of completing, but is not yet directly assigned to anybody.
 
-At the end of the period you can compare the duration of effective work on the different project to
+At the end of the period you can compare the duration of effective work on the different projects to
 that of the initial estimate. Print the plan to obtain a comparison of the planned working time and
 the real time worked.
 
 .. figure::  images/planning_stat.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Comparison of planned hours, worked hours and the productivity of employees by project*
@@ -201,7 +201,7 @@ structure of the company. To enter data into a plan line you can:
 * assign time on a project to a department manager for his whole team.
 
 You can now allocate the working time on projects for the whole of a department, without having to
-detail each employee's tasks. Then when a department manager creates his own plan he will find
+detail each employee's tasks. Then when a department manager creates his own plan, he will find
 what is required of his group by his management at the bottom of the form. At the top of the form
 there is a place for assigning project work in detail to each member of department.
 

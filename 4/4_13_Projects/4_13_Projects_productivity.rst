@@ -5,7 +5,7 @@ The Art of Productivity without Stress
 ======================================
 
 Now you can take a slight detour away from pure enterprise management by looking at some tools offered by
-Open ERP to improve your own personal time management. It is not much of a detour because good
+OpenERP to improve your own personal time management. It is not much of a detour because good
 organization is the key to better productivity in your daily work.
 
 .. index::
@@ -13,7 +13,7 @@ organization is the key to better productivity in your daily work.
    single: GTD
    single: Getting Things Done
 
-Open ERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
+OpenERP's :mod:`project_gtd` module was inspired by the work of two books focusing on efficient
 time management:
 
 * Getting Things Done – The Art of Stress-Free Productivity, by David Allen (2001), most often
@@ -55,37 +55,37 @@ time management:
 	 At the end of the exercise you will feel better organized, considerably de-stressed and remarkably
 	 free of worries !
 
-The objective in this detour is not to detail the whole methodology but to describe the supporting
-tools provided by Open ERP's :mod:`project_gtd` module.
+The objective in this detour is not to detail the whole methodology, but to describe the supporting
+tools provided by OpenERP's :mod:`project_gtd` module.
 
 Not everything that is urgent is necessarily important
 ------------------------------------------------------
 
-The first modification brought by the module to the basic Open ERP system is a separation of the
-concepts of urgency and importance. Tasks are no longer classified by a single criterion but by the
+The first modification brought by the module to the basic OpenERP system is a separation of the
+concepts of urgency and importance. Tasks are no longer classified by a single criterion, but by the
 product of the two criteria, enabling you to prioritize matters that are both urgent and important
-in a single list
+in a single list.
 
 Many managers with a heavy workload use urgency as their sole method of prioritization. The
 difficulty is then in working out how to plan for substantive tasks (like medium term objectives).
 These are not urgent but are nevertheless very important.
 
-	.. note:: Example Distinction between urgency and importance
+	.. note:: Example Distinction between Urgency and Importance
 
 			If you are very well organized, urgent tasks can (and should often) be given lower precedence than
 			important tasks. Take an example from daily life as an illustration: the case of having some time
 			with your children.
 
-			For most people this task is important. But if you have a busy professional life, the days and
+			For most people, this task is important. But if you have a busy professional life, the days and
 			weeks flow on with endless urgent tasks to be resolved. Even if you manage your time well, you
 			could let several months pass without spending time with your children because the task of seeing
 			them is never as urgent as your other work, despite its importance.
 
-In Open ERP urgency is given by the :guilabel:`Deadline` of the task and importance by the :guilabel:`Priority`.
+In OpenERP, urgency is given by the :guilabel:`Deadline` of the task, and importance by the :guilabel:`Priority`.
 The classification of the tasks then results from the product of the two factors. The most important
 tasks and the most urgent both appear at the top of the list.
 
-Organizing your life systematically
+Organizing your Life Systematically
 -----------------------------------
 
 A methodology of organizing yourself using the concepts of context and timebox is presented in this
@@ -95,7 +95,7 @@ Context
 ^^^^^^^
 
 The context is determined by the work environment you must be in to deal with certain tasks. For
-example you could define the following contexts:
+example, you could define the following contexts:
 
 *  *Office* : for tasks which have to be dealt with at your workplace (such as telephone a customer,
    or write a document),
@@ -137,10 +137,10 @@ To define timeboxes for your company, use the menu
 
 .. index:: methodology; GTD
 
-Methodology and iterative process
+Methodology and Iterative Process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To organize your tasks efficiently, Open ERP uses a method based on the following systematic and
+To organize your tasks efficiently, OpenERP uses a method based on the following systematic and
 iterative process:
 
 	#. Identify all the tasks that you have to deal with, including everything that keeps you awake at
@@ -148,7 +148,7 @@ iterative process:
 	   :menuselection:`Project --> Project --> Tasks`.
 
 	#. Classify the tasks periodically, assigning them a context and a timebox. This
-	   indicates both when and where the task should be handled. If a task takes less than 10 minutes then
+	   indicates both when and where the task should be handled. If a task takes less than 10 minutes, then
 	   maybe it could be handled immediately.
 
 	#. Every day, carry out the following process:
@@ -160,7 +160,7 @@ iterative process:
 		* Carry out each task, that is to say either work on the task yourself or delegate it to another
 		  user,
 
-		* Last thing at the end of the day's work, empty that day's timebox and return all unclosed tasks
+		* Last thing, at the end of the day's work, empty that day's timebox and return all unclosed tasks
 		  into the week's timebox.
 
 	#. Repeat the same process each week and each month for the respective timeboxes.
@@ -194,11 +194,11 @@ detail each operation if the actions to be done are sufficiently clear to you.
 
 You have to empty your Tasks periodically. To do that, use the menu :menuselection:`Project
 --> Project --> Tasks`. Assign a timebox and a context to each task. This operation should
-not take more than a few minutes because you are not dealing with the tasks themselves, just
+not take more than a few minutes, because you are not dealing with the tasks themselves, just
 classifying them.
 
 .. figure::  images/service_timebox_day.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Timebox for tasks to be done today*
@@ -213,10 +213,10 @@ Since the tasks are sorted by priority, it is sufficient to take the first from 
 number of hours in your day. That will only take a minute, because the selection is not taken from
 every task you know about in the future, but just from those selected for the current week.
 
-Once the timebox has been completed you can start your daily work on the tasks. For each task you
+Once the timebox has been completed you can start your daily work on the tasks. For each task, you
 can start work on it, delegate it, close it, or cancel it.
 
-At the end of the day you empty the timebox using the button at the top right
+At the end of the day, you empty the timebox using the button at the top right
 :guilabel:`Empty Timebox`. All the tasks that have not been done are sent back
 to the weekly timebox to sit in amongst the tasks that will be planned next morning.
 
@@ -241,8 +241,8 @@ improvements:
 * better management of task delegation and the selection of which tasks were better to delegate,
 
 
-Finally, it is important to note this system is totally integrated with Open ERP's project
-management function. Staff can use the system or not depending on their own needs. The system is
+Finally, it is important to note that this system is totally integrated with OpenERP's project
+management function. Staff can use the system or not, depending on their own needs. The system is
 complementary to the project management function that handles team organization and company-wide
 planning.
 

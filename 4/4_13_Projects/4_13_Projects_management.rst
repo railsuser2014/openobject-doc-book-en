@@ -17,7 +17,7 @@ need to get the tasks completed. All the necessary operations are carried out fr
 
 .. note:: Project
 
-	In OpenERP a project is represented by a set of tasks to be completed.
+	In OpenERP, a project is represented by a set of tasks to be completed.
 	Projects have a tree structure that can be divided into phases and sub-phases.
 	This structure is very useful to organise your work.
 
@@ -28,10 +28,10 @@ need to get the tasks completed. All the necessary operations are carried out fr
 
 Most customer projects are represented by:
 
-* one or several analytic accounts in the Accounting System to keep track of the contract and its
+* one or several analytic accounts in the Accounting System, to keep track of the contract and its
   different phases,
 
-* one or several projects in Project Management to track the project and the different tasks to
+* one or several projects in Project Management, to track the project and the different tasks to
   be completed.
 
 There is a direct link between the project and the analytic account, because for each new project created, OpenERP will automatically create the corresponding analytic account in the `Projects` analytic chart of accounts. Note that you have no access to the analytic account directly from a project.
@@ -49,7 +49,8 @@ Enter the general duration by completing :guilabel:`Start Date` and :guilabel:`E
 The `Administration` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
 By checking the box :guilabel:`Warn Manager`, you configure the system to automatically send the project manager
 an OpenERP `Request` every time a task is closed.
-In case a project takes too long, it can also be escalated to another project. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
+
+In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Issues Tracker` in the :guilabel:`Reconfigure` wizard. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
 Define a generic :guilabel:`Reply-To Email Address` linked to all automated mails; this allows you to receive replies directly in OpenERP.
 You can also link to a :guilabel:`Working Time` category, which will be used to calculate the Project's time line, i.e. through a Gantt chart.
 
@@ -61,19 +62,22 @@ The status of a project can take the following values:
 
 * \ ``Cancelled``\: the project has been cancelled and therefore aborted,
 
-* \ ``Closed``\: the project has been successfully completed.
+* \ ``Closed``\: the project has been successfully completed,
+
+* \ ``Template``\: the project can be used as a template to make projects based on this.
 
 
 On the `Members` tab, add :guilabel:`Members` to the project; this is related to access rights too.
 
 On the `Billing` tab, you find information to invoice your customer.
 Select the `Customer`; the Invoice address will automatically be filled from the customer form.
-You also have to complete the invoicing data, such as `Sale Pricelist` and `Invoice Task Work` to directly invoice from task work done.
-OpenERP allows you to set a `Max. Invoice Price` for the project (or subproject). The `Invoiced Amount` shows the total amount that has already been invoiced for the project concerned. 
+To generate invoices based on time spent on tasks, if activated on a project, you may install :mod:`project_timesheet` by selecting :guilabel:`Bill Time on Tasks` in the :guilabel:`Reconfigure` wizard.
+Then you can complete the invoicing data, such as `Sale Pricelist` and `Invoice Task Work` to directly invoice from task work done.
+OpenERP allows you to set a `Max. Invoice Price` for the project (or sub-project). The `Invoiced Amount` shows the total amount that has already been invoiced for the project concerned. 
 
 If you want to automatically keep your customer informed about the progress of the project, check `Warn Partner`. 
 
-.. note:: Warn Partner setup
+.. note:: Warn Partner Setup
 
    If you check :guilabel:`Warn Partner`, you should define a generic Mail Header and Mail Footer in the
    :guilabel:`Billing` tab that will be used in the automated email (*Extended view* only).
@@ -92,9 +96,9 @@ If you want to automatically keep your customer informed about the progress of t
 	This function can also be used by ISO 9001-certified companies, to measure customer satisfaction.
 	OpenERP also allows you to create your own surveys. 
 
-The `Task Stages` tab allows you to define stages thath help you dividing your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Specification stage and then Development.
+The `Task Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Specification stage and then Development.
 
-Managing tasks
+Managing Tasks
 --------------
 
 Once a project has been defined, you can enter the tasks to be executed. You have two possibilities for this:
@@ -109,9 +113,9 @@ Each task has one of the following states:
 * \ ``Draft``\: the task has been entered but has not yet been validated by the person who will
   have to do it,
 
-* \ ``Open``\: you can start working on the task, or taks is in progress,
+* \ ``In Progress``\: you can start working on the task, hence the task is in progress,
 
-* \ ``Closed``\: task is completed,
+* \ ``Done``\: task is completed,
 
 * \ ``Cancelled``\: task work is no longer required,
 
@@ -122,7 +126,7 @@ leave it unassigned so that nobody specific will be responsible: various team me
 made jointly responsible for working on tasks they have the skills for.
 
 .. figure::  images/service_task.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Tasks in Project Management*
@@ -168,31 +172,30 @@ You can even take this further by adding a default project to your product. In t
 
 You can also change some of the order parameters, which affects the invoice:
 
-*  :guilabel:`Shipping Policy` : \ ``Invoice on Order After Delivery``\ (when the task is closed),
+*  :guilabel:`Shipping Policy` : \ ``Invoice on Order After Delivery`` \ (when the task is closed),
 
-*  :guilabel:`Invoice On` : \ ``Shipped Quantities``\   (actual hours in
-   the task).
+*  :guilabel:`Invoice On` : \ ``Shipped Quantities`` \ (actual hours in the task).
 
 Create the `Sales Order` using the product :guilabel:`Consultant` with the above configuration and confirm it.
 You can find the task created from this sale order using the menu :menuselection:`Project --> Project --> Tasks`.
 Once you find that task, click on the :guilabel:`Start Task` button in order to start it.  You have to manually assign the
-project for this task, unless you specified a default project in the Product form. When you complete the task enter the information in the :guilabel:`Task Work` field. Then click the :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
-As for example the new task `SO008:Create SRS` generated from sales order `SO0008` as shown in following figure.
+project for this task, unless you specified a default project in the Product form. When you complete the task, enter the information in the :guilabel:`Task Work` field. Then click the :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
+As an example, the new task `SO008:Create SRS` generated from sales order `SO0008` is shown in following figure.
 
 .. figure::  images/project_task_from_sale_order.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Task created from Sales Order*
 
 .. tip:: You need to carefully configure the analytic account related to this project. If you use the Billing tab of the project to do this, the analytic account linked to the project will automatically get the related settings.
 
-After finishing this task go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work` in order to
+After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work` in order to
 find the list of uninvoiced task works.
 Click the action :guilabel:`Invoice analytic lines` when you want to create an invoice for this task work.
 
 .. figure::  images/project_invoice_from_task_work.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Form to Create Invoice from Tasks Work*
@@ -216,7 +219,7 @@ project.
    single: module; scrum
    single: agile (method)
 
-.. note:: Agile methods
+.. note:: Agile Methods
 
 	OpenERP implements the agile methodology Scrum for IT development projects in the :mod:`project_scrum`
 	module.
@@ -228,7 +231,7 @@ project.
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Gantt chart, calculated for earliest delivery*
@@ -248,19 +251,19 @@ calculates a project plan for earliest delivery using task ordering and the work
 	   :scale: 50
 	   :align: center
 
-       *Calendar View of the System Tasks*
+	*Calendar View of the System Tasks*
 
 .. index:: delegation (task)
 
 Delegate your Tasks
 -------------------
 
-To delegate a task to another user you can just change the person responsible for that task. However
+To delegate a task to another user, you can just change the person responsible for that task. However,
 the system does not help you track tasks that you have delegated, such as monitoring of work done, if
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Form for Delegating a Task to Another User*
