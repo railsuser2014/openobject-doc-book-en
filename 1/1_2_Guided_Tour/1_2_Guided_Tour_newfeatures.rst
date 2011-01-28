@@ -41,7 +41,9 @@ General Features
 
 * Click the `star` in the web version to quickly create a shortcut for a screen you often use,
 
-* When you perform an action in List view in the web version, (i.e. change the status of a lead), OpenERP will display a bar containing information about this change. You can click the link to open the lead concerned. 
+* When you perform an action in List view in the web version, (i.e. change the status of a lead), OpenERP will display a bar containing information about this change. You can click the link to open the lead concerned,
+
+* Updated configuration wizard to install new features using OpenERP modules in user friendly way.
 
 Business Application-related Features
 =====================================
@@ -54,7 +56,7 @@ Business Application-related Features
 
 * Manage your Marketing Campaigns and send automated e-mails based on your own templates,
 
-* For Leads, OpenERP will check the email address of the contact and when found for an existing partner, it will propose to merge the new contact with the corresponding partner,  
+* For Leads, OpenERP will check the email address of the contact and when found for an existing partner, it will propose to merge the new contact with the corresponding partner,
 
 * Create your company wiki for Sales FAQ,
 
@@ -63,7 +65,7 @@ Business Application-related Features
 * When you convert a lead to an opportunity, you now have the option to not create a partner, but just keep the contact data in the opportunity,
 
 * Create a new partner from a lead or an opportunity, or merge with an existing partner.
- 
+
 *Warehouse Management*
 
 * Push & Pull rules for stock locations have been extended and integrated with multicompany,
@@ -78,7 +80,7 @@ Business Application-related Features
 
 * Separate numbering now also available for Bank Journals,
 
-* Quickly enter Journal Entries from List View from the Journal Items menu. Configure your journal with default debit & credit accounts, select the journal in the Journal Items List View, click New and start creating new entries, 
+* Quickly enter Journal Entries from List View from the Journal Items menu. Configure your journal with default debit & credit accounts, select the journal in the Journal Items List View, click New and start creating new entries,
 
 * Chart of Accounts and Chart of Taxes can be displayed for a selected period,
 
@@ -104,7 +106,7 @@ Business Application-related Features
 
 * On creation of a new project, OpenERP automatically creates the corresponding Analytic Account in the Projects chart of accounts. You no longer have access to the analytic account from the Project.
 
-*Manufacturing Management* 
+*Manufacturing Management*
 
 * Scrap consumed or finished goods and have the related stock moves automatically,
 
@@ -114,7 +116,9 @@ Business Application-related Features
 
 * Manage your evaluation process,
 
-* Keep track of your recruitments and receive applicant mails directly in OpenERP, including attachments.
+* Keep track of your recruitments and receive applicant mails directly in OpenERP, including attachments,
+
+* A complete integration of payroll management system with accounting application.
 
 
 .. Copyright © Open Object Press. All rights reserved.
