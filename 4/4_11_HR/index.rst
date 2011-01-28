@@ -10,22 +10,22 @@ Lead & Inspire your People
 
  *This chapter describes OpenERP's main Human Resources and Employee Services features.
  Most of the solutions discussed after this chapter concern management by
- business or by project and depend mostly on analytic accounting, with each business or project
+ business or by project, and depend mostly on analytic accounting, with each business or project
  represented by an analytic account.*
 
 A company's effectiveness depends on its employees' good work. OpenERP's Human
 Resources modules enable you to manage important aspects of staff work efficiently, such as their
 skills, contracts, and working time.
 
-For this chapter you should start with a fresh database that includes demo data.
-To configure the Human Resource Application you should check the `Human Resource` in the
+For this chapter, you should start with a fresh database that includes demo data.
+To configure the Human Resource Application you should check `Human Resources` in the
 following configuration wizard.
 
 .. figure::  images/config_wiz_HR.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *Human Resource application configuration wizard*
+   *Human Resources Application in the Configuration wizard*
 
 .. raw:: html
 

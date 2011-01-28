@@ -6,7 +6,7 @@
 Hire New People
 ===============
 
-Using OpenERP you can efficiently manage the process of hiring the new people for your organization.
+Using OpenERP, you can efficiently manage the process of hiring new people for your organization.
 It is a well managed recruitment process from initial contact to hiring the applicant.
 
 Recruitments
@@ -15,54 +15,54 @@ Recruitments
 .. index::
    single: module; hr_recruitment
 
-You need to install :mod:`hr_recruitment` module to efficiently managed  recruitment process.
-The configuration wizard to install this module is shown below.
+You need to install :mod:`hr_recruitment` module to efficiently manage the recruitment process.
+The configuration wizard to install this module is shown below:
 
 .. figure::  images/config_wiz_recruitment.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuration wizard to install hr_recruitment module*
 
-The :guilabel:`Applicant` form can be seen from the menu :menuselection:`Human Resources --> Recruitment --> Applicants`.
+The :guilabel:`Applicants` form can be seen from the menu :menuselection:`Human Resources --> Recruitment --> Applicants`.
 
 .. figure::  images/recruitment_applicant_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Applicant recruitment form*
 
-You can manage following information using applicant form.
+You can manage the following information using the Applicants form:
 
-* Applicant's Name
-* Applied Job
-* Department
-* Stage: can be `Initial Job Demand`, `Salary Negotiation`, ...
-* Responsible: Responsible person who conducts the interview
-* Contact Information
-* Contract Data: including Availability, Expected Salary, Proposed Salary
-* Qualification of Applicant
-* Status: reflects the actual status of the recruitment process like `In Progress`, `Pending` or `Hired`
+* :guilabel:`Applicant's Name`
+* :guilabel:`Applied Job`
+* :guilabel:`Department`
+* :guilabel:`Stage`: can be ``Initial Job Demand``, ``Salary Negotiation``, ...
+* :guilabel:`Responsible`: Responsible person who conducts the interview
+* :guilabel:`Contact` information
+* :guilabel:`Contract Data`: including Availability, Expected Salary, Proposed Salary
+* :guilabel:`Qualification` of the applicant
+* :guilabel:`State`: reflects the actual status of the recruitment process like ``New``, ``In Progress``, ``Pending``, ``Refused`` or ``Hired``
 
-Initially the applicant states is `New` after that it can be converted into `In Progress`.
+Initially, the applicant state is ``New``, after that it can be converted to ``In Progress``.
 If the applicant is at one of the different stages like it may be in `Waiting for approval by human resource department` or `Waiting for offer acceptance by applicant`,
-in these cases applicant states should be `Pending`. When the status is `Hired`, you can find that applicant from the list of employees.
+in these cases applicant states should be ``Pending``. When the status is ``Hired``, you can find that applicant from the list of employees.
 
 The information about the :guilabel:`Job Position` can be maintained by the menu :menuselection:`Human Resources --> Recruitment --> Job Positions`.
 
 .. figure::  images/recruitment_job_position.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *Job Position in the organization*
+   *Job Positions in the organization*
 
-The key features of OpenERP for the process of hiring the new people using :mod:`hr_recruitment` module.
+The key features of OpenERP for the process of hiring new people using :mod:`hr_recruitment` module are:
 
-* Manages job positions and the recruitement process.
-* It's integrated with the `survey` module to allow you to define interview for different jobs.
-* This module is integrated with the mail gateway to automatically tracks email
+* It manages job positions and the recruitment process.
+* It is integrated with the `survey` module to allow you to define interviews for different jobs.
+* This module is integrated with the mail gateway to automatically track emails
   sent to jobs@yourcompany.com.
-* It's also integrated with the document management system to store and search in your CV base.
+* It is also integrated with the document management system to store in and search your CV base.
 
 You can analyse data of recruitment process through the menu :menuselection:`Human Resources --> Reporting --> Recruitment Analysis`.
 

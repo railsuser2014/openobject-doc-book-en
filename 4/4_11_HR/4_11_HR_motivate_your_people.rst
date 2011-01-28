@@ -4,49 +4,49 @@
 ..
 
 Inspire your People
-====================
+===================
 
-Motivated workforce of people can give the best out come for the organization. OpenERP
+A motivated workforce of people can give the best outcome for an organization. OpenERP
 can maintain this motivational process by periodical evaluation of employees' performance and
 efficient holiday management.
 
 Assessments
 -----------
 
-The regular assessments of human resources can be benefited to your people as well organization.
-For efficient periodical evaluation of employees' performance you need to install :mod:`hr_evaluation`
-module.The configuration wizard to install this module is shown below.
+The regular assessments of human resources can benefit your people as well organization.
+For efficient periodical evaluation of employees' performance, you need to install the :mod:`hr_evaluation`
+module. The configuration wizard to install this module is shown below:
 
 .. figure::  images/config_wiz_evaluation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuration wizard to install hr_evaluation module*
 
-To create and manage new evaluation you can use the menu :menuselection:`Human Resources --> Evaluations --> Evaluations`.
+To create and manage new evaluations, you can use the menu :menuselection:`Human Resources --> Evaluations --> Evaluations`.
 
 .. figure::  images/employee_evaluation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *Employee's evaluation form*
+   *Employee Evaluation form*
 
-Each employee can be assigned to an evaluation plan. These plans define the frequency and the
+Each employee can be assigned an evaluation plan. These plans define the frequency and the
 way you manage your periodic personal evaluation. You will be able to define steps and attach
-interview forms to each step. OpenERP manages all kind of evaluations: bottom-up, top-down,
+interview forms to each step. OpenERP manages all kinds of evaluations: bottom-up, top-down,
 self evaluation and final evaluation by the manager.
 
-The main features of the evaluation process covered by OpenERP are as follow.
+The main features of the evaluation process covered by OpenERP are as follows:
 
 * Ability to create employees evaluation.
-* An evaluation can be created by employee for subordinates,juniors as well
+* An evaluation can be created by an employee for subordinates, juniors as well
   as his manager.
-* The evaluation is done under a plan in which various surveys can be created
-  and it can be defined which level of employee hierarchy fills what and
-  final review and evaluation is done by the manager.
-* Every evaluation filled by the employees can be viewed by nice pdf form.
+* The evaluation is done under a plan in which various surveys can be created,
+  and which level of employee hierarchy fills what can be defined and
+  the final review and evaluation is done by the manager.
+* Every evaluation filled by employees can be viewed through a PDF form.
 * Interview Requests are generated automatically by OpenERP according to employees
-  evaluation plan. Each user receives automatic emails and requests to perform evaluation
+  evaluation plans. Each user receives automatic emails and requests to perform evaluation
   of their colleagues periodically.
 
 You can analyse evaluation data through the menu :menuselection:`Human Resources --> Reporting --> Evaluations Analysis`.
@@ -54,38 +54,38 @@ You can analyse evaluation data through the menu :menuselection:`Human Resources
 Holiday Management
 ------------------
 
-you can manage the leaves taken by employees using :mod:`hr_holidays`
-module.The configuration wizard to install this module is shown below.
+You can manage leaves taken by employees using the :mod:`hr_holidays`
+module. The configuration wizard to install this module is shown below:
 
 .. figure::  images/config_wiz_holidays.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuration wizard to install hr_holidays module*
 
-Using the menu :menuselection:`Human Resources --> Holidays --> Leave Requests` employee can put the leave request.
+Using the menu :menuselection:`Human Resources --> Holidays --> Leave Requests` an employee can request a leave.
 
 .. figure::  images/employee_leave_request_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *Leave request form*
+   *Leave Request form*
 
 Leaves requests can be recorded by employees and validated by their managers.
-Once a leave request is validated it appears automatically in the agenda of the employee.
-You can define several allowance types (paid holidays, sickness, etc) and manage allowances
+Once a leave request is validated, it appears automatically in the agenda of the employee.
+You can define several allowance types (paid holidays, sickness, etc.) and manage allowances
 per type.
 
-OpenERP can provide following features for efficient holiday management process.
+OpenERP can provide the following features for efficient holiday management process:
 
-* It helps you to manage leaves and leaves' requests.
-* A synchronisation with an internal agenda (use of the CRM module) is possible:
-  in order to automatically create a case when an holiday request is accepted,
+* It helps you to manage leaves and leave requests.
+* Synchronisation with an internal agenda (use of :mod:`crm`) is possible:
+  in order to automatically create a case when a holiday request is accepted,
   you have to link the holidays status to a case section.
-* You can set up  colour preferences according to your leave type like `Seak Leave` should be red in reports.
-* An employee can make an ask for more off-days by making a new Allocation
+* You can set up colour preferences according to your leave type, for example, `Sick Leave` should be red in reports.
+* An employee can request for more days off, by making a new Allocation Request through :menuselection:`Human Resources --> Holidays --> Allocation Requests`.
 
-The statistical report for the leaves can be seen using
+The statistical report for leaves can be seen using the
 :menuselection:`Human Resources --> Reporting --> Holidays --> Leaves Analysis` menu.
 
 .. Copyright © Open Object Press. All rights reserved.

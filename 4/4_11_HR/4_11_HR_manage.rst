@@ -6,7 +6,7 @@
 Managing Human Resources
 ========================
 
-To establish a system that is integrated into the company's management you need to start with a
+To establish a system that is integrated into the company's management, you need to start with a
 current list of collaborators.
 
 .. note:: Do not confuse employees and users
@@ -29,19 +29,19 @@ Here are some examples of functions which depend on the accuracy of the employee
 * the chain of command, or responsibilities, which is related to the hierarchical structure of the
   company.
 
-Management of staff
+Management of Staff
 -------------------
 
-To define a new employee in Open ERP, use the menu :menuselection:`Human Resources --> Employees`.
+To define a new employee in OpenERP, use the menu :menuselection:`Human Resources --> Employees`.
 
 .. figure::  images/service_employee_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Form describing an employee*
 
-Start by entering the employee's name in :guilabel:`Employee` and the company that this employee works for
-in :guilabel:`Company`. You can then create a new user of the Open ERP system linked to this
+Start by entering the employee's name in :guilabel:`Name` and the company that this employee works for
+in :guilabel:`Company`. You can then create a new user of the OpenERP system linked to this
 employee by filling in a new :guilabel:`User` form through the :guilabel:`User` field.
 
 Even if the employee is not a user, it is best if you
@@ -50,7 +50,7 @@ the outset (and you can do that through this field if you need to).
 
 .. tip:: Employee and User link.
 
-	If the employee has a user account on the system you always link his or her user
+	If the employee has a user account on the system, you always link his or her user
 	account to the employee form.
 
 	Creating this link enables automatic completion to be done on the :guilabel:`Employee` field in the
@@ -60,13 +60,15 @@ Then enter the employee's address.
 
 .. todo:: We need to give better guidance about Partners vs Employees just here.
 
-This appears in the partner contact form in Open ERP. Since
-employees are people that have contacts with your company, it is logical that they have entries
+This appears in the partner contact form in OpenERP. Since
+employees are people that have contracts with your company, it is logical that they have entries
 like any other partner in your database. So enter the name of the employee as a new partner Name and
-the address in the Contact form. Then all of the functions that apply to a partner can also be
+the address in the Partner Contact section of the General tab.
+Then all of the functions that apply to a partner can also be
 applied to an employee. This is particularly useful for tracking debits and credits in
 the accounts – so you can track salary payments, for example.
 
+To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by selecting :guilabel:`Timesheets` in the :guilabel:`Reconfigure` wizard.
 You can then set both an analytic journal and a linked product to this employee
 in the :guilabel:`Timesheets` tab. If
 you do it that way, then this information can be used to track services. For now, just complete the
@@ -84,15 +86,15 @@ If you install the :mod:`hr_contract` module you can link contract details to th
 The configuration wizard to install this module is shown below.
 
 .. figure::  images/config_wiz_contract.png
-   :scale: 50
+   :scale: 75
    :align: center
 
-   *configuration wizard to install hr_contract*
+   *Configuration wizard to install hr_contract*
 
 Using :menuselection:`Human Resources --> Human Resources --> Contracts` you can create and edit new contract.
 
 .. figure::  images/service_hr_contract.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of a working contract for a given employee*
@@ -109,16 +111,16 @@ You can enter information about the employment contract for the employee, such a
 
 *  :guilabel:`End Date`
 
-*  :guilabel:`Wage Type` like :guilabel:`Monthly Gross` or :guilabel:`Monthly Net` or or :guilabel:`Monthly Basic`
+*  :guilabel:`Wage Type` like ``Monthly Gross Wage`` or ``Monthly Net Wage``. You get an additional option, ``Monthly Basic Wage``, if you install :mod:`hr_payroll` through the :guilabel:`Reconfigure` wizard by selecting :guilabel:`Payroll`.
 
 .. index::
    single: employee; sign in / sign out
 
-Sign in and out
+Sign In and Out
 ---------------
 
 In some companies, staff have to sign in when they arrive at work and sign out again at the end of
-the day. If each employee has been linked to a system user, then they can sign in on Open ERP by
+the day. If each employee has been linked to a system user, then they can sign in on OpenERP by
 using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Sign out`.
 
 If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually
@@ -128,7 +130,7 @@ of managing forgotten sign-outs.
 Find employee attendance details from their forms in
 :menuselection:`Human Resources --> Employees`.
 
-To get the detail of attendances from an employee's form in Open ERP you can use the three
+To get the detail of attendances from an employee's form in OpenERP, you can use the two
 available reports:
 
 *  :guilabel:`Print Attendance Error Report`
@@ -139,7 +141,7 @@ The first report highlights errors in attendance data entry.
 It shows you whether an employee has entered the time of
 entry or exit manually and the differences between the actual and expected sign out time and the time.
 
-The second report shows the attendance data recorded.
+The second report shows the attendance data for the selected month.
 
 .. Copyright © Open Object Press. All rights reserved.
 
