@@ -11,14 +11,10 @@ In OpenERP, the Invoicing Workflow is very simple. You can see it in the followi
    *Invoicing workflow*
 
 An invoice can be generated form various other documents like a `Sales Order`, a `Purchase Order` and also
-at the time of confirmation of a shipment. 
+at the time of confirmation of a shipment.
 
-The Invoicing system in OpenERP allows you to keep track of your accounting, even when you are not an accountant. 
+The Invoicing system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
 It provides an easy way to follow up your suppliers and customers.
-
-# So the systematic treatment of Invoicing Workflow is very important. Whenever an
-# invoice is generated, it will be created in `Draft` state with no impact on your
-# `Accounting System`. For instance, an invoice status can be changed to `Open` by an accountant after review or to `Pro-forma` status by any other user. The next step in the workflow will be the `Paid` status for the invoice. An invoice can be cancelled if it is not paid.
 
 
 Customer Receipts / Supplier Vouchers
@@ -70,6 +66,7 @@ The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form ca
    :align: center
 
    *Supplier Voucher*
+
 
 Keep Track of your Payments
 ---------------------------
