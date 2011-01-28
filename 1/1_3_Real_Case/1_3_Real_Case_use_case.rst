@@ -141,6 +141,7 @@ For that, the configuration wizard should be like this:
 
    *Configuration wizard used to install the required applications when you select the Simplified view option*
 
+:guilabel:`Skip` the step that asks you to :guilabel:`Configure Your Accounting Chart`.
 After you follow through the complete wizard, you can have a system that can perform all the required functionality.
 
 .. _fig-oech03cfgexample:
