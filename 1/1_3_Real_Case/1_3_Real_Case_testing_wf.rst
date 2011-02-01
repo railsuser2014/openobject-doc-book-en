@@ -217,7 +217,7 @@ menu :menuselection:`Sales --> Sales --> Sales Orders` and click on `New` button
 	   :guilabel:`Delivery Lead Time`, and :guilabel:`Taxes`.
 
 	#. Change the :guilabel:`Quantity (UoM)` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\.
-	   Then click :guilabel:`Save` and the line appears on the quotation form.
+	   Then click :guilabel:`Save & Close` and the line appears on the quotation form.
 
 	#. On the :guilabel:`Other Information` tab of this Sales Order, select a
 	   :guilabel:`Picking Policy` of ``Complete Delivery`` and
