@@ -412,7 +412,7 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 #. Search for a recent version of PostgreSQL (such as \ ``postgresql-8.4``\   then select it for
    installation along with its dependencies.
 
-#. Select all of OpenERP's dependences, an up-to-date list of which should be
+#. Select all of OpenERP's dependencies, an up-to-date list of which should be
    found in the installation documents on OpenERP's website,
    then click :guilabel:`Apply` to install them.
 

@@ -52,16 +52,9 @@ Open or Pro Forma Invoices
 --------------------------
 
 You can approve (or validate) an invoice in the \ ``Open``\   or \ ``Pro Forma``\   state.
-A Pro Forma invoice does not yet have an invoice number, but the accounting entries on the invoice
-that is created correspond to the amounts that OpenERP will record as the customer's payables.
-
-.. tip:: Pro Forma invoices
-
-	In some countries, you are not allowed to generate accounting entries from pro forma invoices.
-	You create instead a report from the purchase order, which prints a pro forma invoice
-	that has no accounting consequences within the system.
-
-	You can use the module described in :ref:`ch-config` to create this report.
+A Pro Forma invoice does not have an invoice number yet, nor accounting entries.
+A pro forma invoice is commonly used as a preliminary invoice or for customs purposes.
+It is more formal than a draft invoice and a pro forma invoice can later be converted to an open invoice.
 
 An open invoice has a unique invoice number. The invoice is sent to the customer and is marked on
 the system as awaiting payment.
