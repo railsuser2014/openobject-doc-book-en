@@ -2,10 +2,6 @@
 .. index::
    single: Invoice to Payment
 
-***********************
-From Invoice to Payment
-***********************
-
 .. raw:: html
 
     <div class="all-toctree">
@@ -20,6 +16,9 @@ From Invoice to Payment
 
     </div>
 
+***********************
+From Invoice to Payment
+***********************
 
  *This chapter traces the basic accounting workflow in OpenERP, from entering an invoice to
  registering payments. The various operations are described, from the entry of accounting receipts to
@@ -32,10 +31,10 @@ can and should have a major decision-making role.
 
 In most companies, accounting is limited to producing statutory reports and satisfying the
 directors' curiosity about certain strategic decisions, and to printing the balance sheet and the
-income statement several times a year. Even then there is often several weeks of delay between
+income statement several times a year. Even then, there is often several weeks of delay between
 reality and the report.
 
-.. note:: Valueing your accounting function
+.. note:: Valuing your Accounting Function
 
 	In many small companies, the accounting function is poorly treated.
 
@@ -47,7 +46,7 @@ reality and the report.
 
 	* reduce data entry effort – you only need to do it once,
 
-	* run your processes with the benefit of financial vision: for example in managing projects,
+	* run your processes with the benefit of financial vision: for example, in managing projects,
 	  negotiating contracts, and forecasting cash flow,
 
 	* easily get hold of useful information when you need it, such as a customer's credit position.
@@ -59,10 +58,10 @@ is necessary in all of your company's processes for you to be effective, for exa
 * for preparing quotations it is important to know the precise financial position of the client, and
   to see a history of any delays in payment,
 
-* if a given customer has exceeded its credit limit, accounting can automatically stop further
+* if a given customer has exceeded his credit limit, accounting can automatically stop further
   deliveries to the customer,
 
-* if a project budget is 80% consumed but the project is only 20% complete you could renegotiate
+* if a project budget is 80% consumed, but the project is only 20% complete, you could renegotiate
   with the client, or review and rein in the objectives of the project,
 
 * if you need to improve your company's cash flow then you could plan your service projects on the
@@ -96,7 +95,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 	  credited to one account and debited from another.
 
 	* Analytical accounting (or management accounting, or cost accounting) is an independent accounting
-	  system which reflects the general accounts but is structured along axes that represent the
+	  system, which reflects the general accounts but is structured along axes that represent the
 	  company's management needs.
 
 	* Auxiliary accounting reflects the accounts of customers and/or suppliers.
@@ -124,7 +123,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 	  module.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
-double entry of data into accounting documents. So in OpenERP an Order automatically generates an
+double entry of data into accounting documents. So in OpenERP, an Order automatically generates an
 Invoice, and the Invoice automatically generates the accounting entries. These in turn generate tax
 submissions, customer reminders, and so on. Such strong integration enables you to:
 
@@ -140,19 +139,19 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 .. index::
    single: accountant
 
-.. tip:: For accountants
+.. tip:: For Accountants
 
 	You can configure the Accounting application using the information given in the configuration wizard.
 
 	.. figure::  images/config_wiz_account.png
-   	   :scale: 50
+   	   :scale: 65
 
 
 	With appropriate rights management, this allows trustees to
 	provide customers with real-time access to their data. It also gives them the opportunity to work
 	on certain documents that have no direct accounting impact, such as budgets.
 
-	This can provide an added-value service that greatly improves the interaction between trustees and
+	This can provide a value-added service that greatly improves the interaction between trustees and
 	their clients.
 
 All the accounts are held in the default currency (which is specified in the company definition),
