@@ -100,7 +100,7 @@ You must install PostgreSQL before the OpenERP server, and you must also set it 
 and password so that the OpenERP server can connect to it. OpenERP's web-based documentation gives
 full and current details.
 
-Connecting users on other PCs to the OpenERP server
+Connecting Users on Other PCs to the OpenERP Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To connect other computers to the OpenERP server you must set the server up so that it is
@@ -115,7 +115,7 @@ visible to the other PCs, and install a GTK client on each of those PCs:
 #. Install the OpenERP client (:program:`openerp-client-6.X.exe`), which you can download in the
    same way as you downloaded the other OpenERP software, onto the other PCs.
 
-.. tip:: Version matching
+.. tip:: Version Matching
 
 	You must make sure that the version of the client matches that of the server. The version number is
 	given as part of the name of the downloaded file. Although it is possible that some different
@@ -154,7 +154,7 @@ you have **successfully connected** to an OpenERP server containing, as yet, no 
    single: XML-RPC
    single: NET-RPC
 
-.. note:: Connection modes
+.. note:: Connection Modes
 
 	In its default configuration at the time of writing, 
 	the OpenERP client connects to port 8069 on the server using the
@@ -163,7 +163,7 @@ you have **successfully connected** to an OpenERP server containing, as yet, no 
 	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
 	OpenERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
-Resolving errors with a Windows installation
+Resolving Errors with a Windows Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you cannot get OpenERP to work after installing your Windows system you will find some ideas for
@@ -241,7 +241,7 @@ more up to date instructions for the Ubuntu distribution as well.
 
 .. _installation-ubuntu-9.04:
 
-Technical procedure: Initial installation and configuration
+Technical Procedure: Initial Installation and Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Upgrade of Ubuntu packages and installation of OpenERP and pgadmin::
@@ -379,7 +379,7 @@ Although this installation method is simple and therefore an attractive option, 
 install OpenERP using a version downloaded from http://openerp.com. The downloaded revision is
 likely to be far more up to date than that available from a Linux distribution.
 
-.. note:: Package versions
+.. note:: Package Versions
 
 	Maintaining packages is a process of development, testing and publication that takes time. The
 	releases in OpenERP packages are therefore not always the latest available. Check
@@ -389,7 +389,7 @@ likely to be far more up to date than that available from a Linux distribution.
 	and the latest version.
 	
 	
-Manual installation of the OpenERP server
+Manual Installation of the OpenERP Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this section you will see how to install OpenERP by downloading it from the site
@@ -419,7 +419,7 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 .. index::
    single: Python
 
-.. note::  Python programming language
+.. note::  Python Programming Language
 
 	Python is the programming language that has been used to develop OpenERP. It is a dynamic, non-typed
 	language that is object-oriented, procedural and functional. It comes with numerous libraries that
@@ -447,7 +447,7 @@ seconds or so, which indicates that the server is waiting for a client to connec
    single: client; GTK
    single: installation; GTK client
 
-Manual installation of OpenERP GTK clients
+Manual Installation of OpenERP GTK Clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install an OpenERP GTK client, follow the steps outlined in the website installation document for
@@ -465,7 +465,7 @@ just work without needing any change. The message :guilabel:`No database found, 
 one!`  shows you that the connection to the server has been successful and you need to create a
 database on the server.
 
-Creating the database
+Creating the Database
 ^^^^^^^^^^^^^^^^^^^^^
 
 You can connect other GTK clients over the network to your Linux server. Before you leave your
@@ -509,7 +509,7 @@ If your Linux server is protected by a firewall you will have to provide access 
    single: installation; eTiny web server
    single: installation; OpenERP client-web server
 
-Installation of an OpenERP web server
+Installation of an OpenERP Web Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just as you installed a GTK client on a Linux server, you can also install the OpenERP client-web
@@ -525,7 +525,7 @@ the next stages.
 
 To install client-web follow the up-to-date instructions in the installation document on the website.
 
-.. note:: Ez tool
+.. note:: Ez Tool
 
 	Ez is the packaging system used by Python. It enables the installation of programs as required just
 	like the packages used by a Linux distribution. The software is downloaded across the network and
@@ -556,7 +556,7 @@ You can also test this from
 another computer connected to the same network if you know the name or IP address of the server over
 the network – your browser should be set to http://<server_address>:8080 for this.
 
-Verifying your Linux installation
+Verifying your Linux Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index::

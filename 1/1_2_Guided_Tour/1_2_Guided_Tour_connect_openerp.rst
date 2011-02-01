@@ -1,16 +1,17 @@
-To connect to OpenERP
+To Connect to OpenERP
 =====================
 
-Since this is the first time you have connected to OpenERP you will be given the opportunity
+Since this is the first time you have connected to OpenERP, you will be given the opportunity
 to configure the system. You may choose to either :guilabel:`Skip Configuration Wizards`
 or :guilabel:`Start Configuration`. We shall proceed with system configuration by clicking
 :guilabel:`Start Configuration`.
-Configuration consists of a set of wizards that help you through options for the installed modules.
-Hardly anything is installed so this is a very simple process at the moment.
-   
-    #.  :guilabel:`Configure Your Interface` : select :guilabel:`Simplified` and click :guilabel:`Next`.
 
-    #.  At the :guilabel:`Company Configuration` step you should select your own :guilabel:`Company Name` and 
+Configuration consists of a set of wizards that help you through options for the installed modules.
+Hardly anything is installed, so this is a very simple process at the moment.
+   
+    #.  :guilabel:`Configure Your Interface` : select ``Simplified`` and click :guilabel:`Next`.
+
+    #.  At the :guilabel:`Company Configuration` step, you should select your own :guilabel:`Company Name` and 
 	:guilabel:`Currency`. You may add your company address, contact and other details and a logo,
 	if you have one, that appears on reports. Then, click :guilabel:`Next`.
 
@@ -22,7 +23,7 @@ Hardly anything is installed so this is a very simple process at the moment.
 .. index::
    single:  administrator
 
-Once you are displaying the main menu you are able to see the following screen items, 
+Once you are displaying the main menu, you are able to see the following screen items, 
 as shown in screenshot :ref:`fig-oech2-main`:
 
 * the name of the database you are logged into and, just below it, the current user name,
@@ -34,14 +35,14 @@ as shown in screenshot :ref:`fig-oech2-main`:
   :guilabel:`REQUESTS` system, :guilabel:`EDIT PREFERENCES` page, :guilabel:`ABOUT`, :guilabel:`HELP`
   and :guilabel:`LOGOUT` button,
 
-* just below you will find shortcuts (which the user can customize) and links to the menu items of installed applications,
+* just below, you will find shortcuts (which the user can customize) and links to the menu items of installed applications,
 
 * a collection of interesting and useful widgets are available on the right of the home page beside the main menu.
 
 .. _fig-oech2-main:
 
 .. figure:: images/main_window_openerp_ch02.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *The Main Menu of the openerp_ch02 database*
@@ -55,10 +56,10 @@ Two menus are available at the moment:
 .. index::
    single: Preferences
 
-Preferences toolbar
+Preferences Toolbar
 -------------------
 
-When you are connected to Open ERP the topmost toolbar indicates which user you are connected as.
+When you are connected to OpenERP, the topmost toolbar indicates which user you are connected as.
 So it should currently be showing :guilabel:`Administrator` (unless you logged in as another
 user and it is reflecting the name of that user instead).
 
@@ -74,13 +75,13 @@ assign dashboards to different users in a later chapter, :ref:`ch-config`.
 .. index::
    single: timezone
 
-.. tip::  Multi-nationals and time zones
+.. tip::  Multi-nationals and Time Zones
 
 	If you have users in different countries, they can configure their own timezone. Timestamp displays
 	are then adjusted by reference to the user's own localization setting.
 
 	So if you have a team in India and a team in England, the times will automatically be converted. If
-	an Indian employee sets her working hours from 9 to 6 that will be converted and saved in the
+	an Indian employee sets her working hours from 9 to 6, that will be converted and saved in the
 	server's timezone. When the English users want to set up a meeting with an Indian user, the Indian
 	user's available time will be converted to English time.
 
@@ -88,7 +89,7 @@ The :guilabel:`REQUESTS` link is found beside the :guilabel:`HOME` link. It is o
 a database. If your database is new it will show number of requests as 0. You can click on that link
 to look at requests that have been sent to you at any time.
 
-The next element in the toolbar is a link to :guilabel:`EDIT PREFERENCES`. By clicking that link you
+The next element in the toolbar is a link to :guilabel:`EDIT PREFERENCES`. By clicking that link, you
 get a dialog box where the current user can set his interface in the :guilabel:`Current Activity` tab;
 and in the :guilabel:`Preferences` tab, set his password, a timezone, a working language,
 e-mail and a signature:
@@ -96,11 +97,11 @@ e-mail and a signature:
 * The :guilabel:`Interface` field in the :guilabel:`Current Activity` tab allows the user to switch
   between the \ ``Simplified`` \ and \ ``Extended`` \ interfaces.
 
-* The :guilabel:`Language` field enables the user's working language to be changed. But first the
+* The :guilabel:`Language` field enables the user's working language to be changed. But first, the
   system must be loaded with other languages for the user to be able to choose an alternative, which
   is described in the next subsection of this chapter. This is a mandatory field.
 
-* The :guilabel:`Timezone` setting indicates the user's location to Open ERP. This can be different
+* The :guilabel:`Timezone` setting indicates the user's location to OpenERP. This can be different
   from that of the server. All of the dates in the system are converted to the user's timezone
   automatically.
 
@@ -115,10 +116,10 @@ e-mail and a signature:
 * The :guilabel:`Signature` field gives the user a place for the signature attached to messages sent
   from within OpenERP. 
 
-The :guilabel:`ABOUT` link gives information about the development of the Open ERP software and 
+The :guilabel:`ABOUT` link gives information about the development of the OpenERP software and 
 various links to other information.
 
-The :guilabel:`HELP` link directs the user to the online documentation of OpenERP where extensive help is available on a host of topics.
+The :guilabel:`HELP` link directs the user to the online documentation of OpenERP, where extensive help is available on a host of topics.
 
 The :guilabel:`LOGOUT` link enables you to logout and return to the original login page. You can
 then login to another database, or to the same database as another user. This page also gives you
@@ -127,7 +128,7 @@ access to the super-administrator functions for managing databases on this serve
 .. index::
    single: installation; language
 
-Installing a new language
+Installing a New Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each user of the system can work in his or her own language. More than twenty languages are
@@ -135,15 +136,15 @@ currently available besides English. Users select their working language using t
 You can also assign a language to a partner (customer or supplier), in which case all the documents
 sent to that partner will be automatically translated into that language.
 
-.. attention:: More information about languages
+.. attention:: More about Languages
 
-	The base version of Open ERP is translated into the following languages: English, German, Chinese,
+	The base version of OpenERP is translated into the following languages: English, German, Chinese,
 	Spanish, Italian, Hungarian, Dutch, Portuguese, Romanian, Swedish and Czech.
 
 	But other languages are also available: Arabic, Afghan,
 	Austrian, Bulgarian, Indonesian, Finnish, Thai, Turkish and Vietnamese..
 
-As administrator you can install a new main working language into the system.
+As administrator, you can install a new main working language into the system.
 
 	#. Select :menuselection:`Administration` in the Menu Toolbar and click
 	   :menuselection:`Translations --> Load an Official Translation` in the main menu window,
@@ -153,15 +154,15 @@ As administrator you can install a new main working language into the system.
 	#. The system will intimate you when the selected language has been successfully installed.
 	   Click :guilabel:`Close` to return to the menu.
 
-To see the effects of this installation change the preferences of your user to change the working
+To see the effects of this installation, change the preferences of your user to change the working
 language (you may first need to ensure that you have explicitly selected English as your language,
 rather than keep the default, before you are given the French option). 
 You may have to reload the page to see the effects. The main menu is immediately translated in
 the selected language. If you are using the GTK
-client you will first have to close the menu then open a new main menu to start seeing things in the
+client, you will first have to close the menu then open a new main menu to start seeing things in the
 new language.
 
-.. note:: Navigating the menu
+.. note:: Navigating the Menu
 
    From this point in the book navigation from the main menu is written as a series of menu entries
    connected by the :menuselection:`-->` character. Instead of seeing “Select Administration in
@@ -170,22 +171,22 @@ new language.
 
 .. index:: requests
 
-Requests as a mechanism for internal communication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Requests as a Mechanism for Internal Communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Requests are a powerful communication mechanism between users of the system. They are also used by
-Open ERP itself to send system messages to users.
+OpenERP itself to send system messages to users.
 
 They have distinct advantages over traditional emails:
 
-* requests are linked to other Open ERP documents,
+* requests are linked to other OpenERP documents,
 
 * an event's history is attached to the request,
 
 * you can monitor events effectively from the messages they have sent.
 
-Open ERP uses this mechanism to inform users about certain system events. For example if there is a
-problem concerning the procurement of a product a request is sent by Open ERP to the production
+OpenERP uses this mechanism to inform users about certain system events. For example, if there is a
+problem concerning the procurement of a product, a request is sent by OpenERP to the production
 manager.
 
 Send a request to get an understanding of its functionality:
@@ -230,7 +231,7 @@ To check your requests:
 
 .. note:: Requests vs. Email
 
-	The advantage of an Open ERP request compared with a set of emails about one thread of discussion
+	The advantage of an OpenERP request compared with a set of emails about one thread of discussion
 	is that a request contains all of the conversation in one place. You can easily monitor a whole
 	discussion with the appropriate documents attached, and quickly review a list of incomplete
 	discussions with the history within each request.
@@ -239,7 +240,7 @@ To look at the request history (the user needs to set the interface as \ ``Exten
 to use this feature), and close the request:
 
 	#. Click on the :guilabel:`History` tab in the :guilabel:`Request` form to see the
-	   original request and all of the responses. By clicking on each line you could get more information
+	   original request and all of the responses. By clicking on each line, you could get more information
 	   on each element.
 
 	#. Return to the first tab, :guilabel:`Request` and click :guilabel:`Close` to set it to \
@@ -258,7 +259,7 @@ Configuring Users
 -----------------
 
 The database you created contains minimal functionality but can be extended to include all of the
-potential functionality available to Open ERP. About the only functions actually available in this
+potential functionality available to OpenERP. About the only functions actually available in this
 minimal database are Customers and Currencies – and these only because the definition of your main
 company required this. And because you chose to include demonstration data, both Customers and
 Currencies were installed with some samples.
@@ -294,8 +295,8 @@ group by clicking its name in the list, the first tab :guilabel:`Users` gives yo
 all the users who belong to this group.
 
 You can also see in the :guilabel:`Menus` tab, the list of menus reserved for this group. By convention,
-the \ ``Administration / Configuration`` \ in Open ERP has rights of access to
-the :menuselection:`Configuration`  menu in each section. So \ ``Sales / Configuration`` \ is
+the \ ``Administration / Configuration`` \ in OpenERP has rights of access to
+the :menuselection:`Configuration` menu in each section. So \ ``Sales / Configuration`` \ is
 found in the list of access rights but \ ``Sales`` \ is not found there because it is accessible
 to all users. Click the :guilabel:`Access Rights` tab and it gives you details of the access rights
 for that group. These are detailed later in :ref:`ch-config`. 
@@ -304,7 +305,7 @@ You can create some new users to integrate them into the system. Assign them to 
 grant them certain access rights. Then try their access rights when you login as these users.
 Management defines these access rights as described in :ref:`ch-config`.
 
-.. note::  Changes to default access rights
+.. note::  Changes to Default Access Rights
 
 	New versions of OpenERP differ from earlier versions of OpenERP and Tiny ERP in this area:
 	many groups have been predefined and access to many of the menus and objects are keyed to these
@@ -315,14 +316,14 @@ Management defines these access rights as described in :ref:`ch-config`.
 .. index::
    single: partner; managing
 
-Managing partners
--------------------
+Managing Partners
+-----------------
 
-In Open ERP, a partner represents an entity that you do business with. That can be a prospect, a
+In OpenERP, a partner represents an entity that you do business with. That can be a prospect, a
 customer, a supplier, or even an employee of your company.
 
 List of Partners
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 Click :menuselection:`Sales --> Address Book --> Customers` in the main menu to open the list of partners who are customers. Then click the name of the first partner to get hold of the details – a form appears with 
 information about the company, such as its corporate name, its primary language, its reference and whether it is a
@@ -365,7 +366,7 @@ them to get a feel for their use.
 	system drop-down selection boxes. They, too, need to be set correctly.
 
 Partner Categories
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 You can list your partners by category using the menu :menuselection:`Sales --> Configuration -->
 Address Book --> Partners Categories`. Click a category to obtain a list of partners in that category.
@@ -395,7 +396,7 @@ You may add exiting partners to this new category using the :guilabel:`Add` butt
 
 .. tip:: Required Fields
 
-	Fields colored blue are required. If you try to save the form while any of these fields are empty
+	Fields colored blue are required. If you try to save the form while any of these fields are empty,
 	the field turns red to indicate that there is a problem. It is impossible to save the form until
 	you have completed every required field.
 
@@ -408,28 +409,28 @@ You should see the new structure of \ ``Prospects / My Prospects``\   there.
 
    *Creating a new partner category*
 
-To create a new partner and link it to this new category open a new partner form to modify it.
+To create a new partner and link it to this new category, open a new partner form to modify it.
 
 	#. Type \ ``New Partner``\  into the :guilabel:`Name` field.
 
 	#. In the :guilabel:`General` tab, click the :guilabel:`Add` button under the
 	   :guilabel:`Categories` section and select your
-	   new category from the list that appears: \ ``Prospect / My Prospects``\
+	   new category from the list that appears: \ ``Prospect / My Prospects`` \.
 
-	#. Then save your partner by clicking :guilabel:`Save`  The partner now belongs in the category 
-	   \ ``Prospect / My Prospects.``\
+	#. Then save your partner by clicking :guilabel:`Save`. The partner now belongs in the category 
+	   \ ``Prospect / My Prospects`` \.
 
 	#. Monitor your modification in the menu :menuselection:`Sales --> Configuration --> Address Book -->
 	   Partners Categories`. Select the category :guilabel:`Prospect / My Prospects`. The list of partners opens
 	   and you will find your new partner there in that list.
 
-.. tip:: Searching for documents
+.. tip:: Searching for Documents
 
-	If you need to search through a long list of partners it is best to use the available search
+	If you need to search through a long list of partners, it is best to use the available search
 	criteria rather than scroll through the whole partner list. It is a habit that will save you a lot of
 	time in the long run as you search for all kinds of documents.
 
-.. note::  Example Categories of partners
+.. note::  Example Categories of Partners
 
 	A partner can be assigned to several categories. These enable you to create alternative
 	classifications as necessary, usually in a hierarchical form.

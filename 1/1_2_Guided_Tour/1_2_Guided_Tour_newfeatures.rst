@@ -1,5 +1,5 @@
 *********************
-What's new in OpenERP
+What's New in OpenERP
 *********************
 
 .. index::
@@ -11,7 +11,7 @@ General Features
 
 * OpenERP has been structured as Business Applications and its menu has been changed to match this,
 
-* Great Improvements as to Useability, not in the least in the Web version,
+* Great Improvements as to Usability, not in the least in the Web version,
 
 * Simplified versus Extended view,
 
@@ -37,7 +37,7 @@ General Features
 
 * Create your own e-mail templates for use throughout OpenERP,
 
-* Use the Scheduler for other objects than Manufacturing,
+* Use the Scheduler for objects other than Manufacturing too,
 
 * Click the `star` in the web version to quickly create a shortcut for a screen you often use,
 
@@ -70,23 +70,23 @@ Business Application-related Features
 
 * Push & Pull rules for stock locations have been extended and integrated with multicompany,
 
-* Configure units of measure by reference unit, bigger then / smaller then reference unit,
+* Configure units of measure by reference unit, bigger than / smaller then reference unit,
 
 * Update stock level from the Product form and automatically create a physical inventory for it.
 
 *Accounting & Financial Management*
 
-* By default, only one Entry Sequence available for a journal. If you want to have two sequences to be used for your journal numbering, please install the :mod:`account_sequence` module,
+* By default, only one Entry Sequence is available for a journal. If you want to have two sequences to be used for your journal numbering, please install the :mod:`account_sequence` module,
 
-* Separate numbering now also available for Bank Journals,
+* Separate numbering is now also available for Bank Journals,
 
 * Quickly enter Journal Entries from List View from the Journal Items menu. Configure your journal with default debit & credit accounts, select the journal in the Journal Items List View, click New and start creating new entries,
 
 * Chart of Accounts and Chart of Taxes can be displayed for a selected period,
 
-* OpenERP added a flexible, easy Invoicing module allowing you to keep track of your accounting, even when you are not an accountant. If you install the Invoicing module, in Simplified view, you will only have the Invoicing items. You shouldn't use both Invoicing and Accounting,
+* OpenERP has added a flexible, easy Invoicing module allowing you to keep track of your accounting, even when you are not an accountant. If you install the Invoicing module, in Simplified view, you will only have the Invoicing items. You should not use both Invoicing and Accounting,
 
-* Use the Financial Management Configuration Wizard to easily select features you want to use.
+* Use the Financial Management Configuration Wizard to easily select features you want to use,
 
 * On installation of a predefined Chart of Accounts, the wizard also proposes default bank and cash accounts, and default Sales and Purchase taxes,
 

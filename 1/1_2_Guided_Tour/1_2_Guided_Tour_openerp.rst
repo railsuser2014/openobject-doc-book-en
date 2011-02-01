@@ -1,17 +1,17 @@
 ****************************
-Getting started with OpenERP
+Getting Started with OpenERP
 ****************************
 
 You will now explore the database \ ``openerp_ch02``\   with these profile modules installed to give
-you an insight into the coverage of the core Open ERP software.
+you an insight into the coverage of the core OpenERP software.
 
-.. tip:: Translating new modules
+.. tip:: Translating New Modules
 
-	When you have installed a new module and are using additional languages to English you have to reload
+	When you have installed a new module and are using additional languages to English, you have to reload
 	the translation file. New terms introduced in these modules are not translated by default. To do
 	this use :menuselection:`Administration --> Translations --> Load an Official Translation`.
 
-Depending on the user you are connected as the page appears differently.
+Depending on the user you are connected as, the page appears differently.
 Using the installation sequence above, certain dashboards may be assigned as various
 users' home pages. They show a summary of the information required to start the day effectively. A
 project dashboard might contain:
@@ -30,28 +30,28 @@ project dashboard might contain:
 
 * a graph of Open Issues by Creation Date.
 
-Each of the lists can be reordered simply by clicking the heading of a column – first in ascending then in descending order as you click repeatedly. To get more information about any particular entry click on the name in the first column, or if you want to show a particular panel click :guilabel:`Zoom` above it.
+Each of the lists can be reordered simply by clicking the heading of a column – first in ascending, then in descending order as you click repeatedly. To get more information about any particular entry, click on the name in the first column, or if you want to show a particular panel, click :guilabel:`Zoom` above it.
 
 .. figure:: images/admin_project_dashboard.png
    :align: center
-   :scale: 75
+   :scale: 65
 
    *Project Dashboard*
 
 A user's home page is automatically reassigned during the creation or upgrading of a database. It is
-custom to assign a dashboard to someone's home page but any OpenERP screen can be assigned to the
+customary to assign a dashboard to someone's home page, but any OpenERP screen can be assigned to the
 home page of any user.
 
 .. index::
    single: shortcut
 
-.. tip:: Creating shortcuts
+.. tip:: Creating Shortcuts
 
 	Each user has access to many menu items from the menu. But in
-	general an employee uses only a small part of the system's functions.
+	general, an employee uses only a small part of the system's functions.
 
 	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut just click the '*' of the header of the view in web client.
+	create a new shortcut, just click the '*' of the header of the view in web client.
 
 	To remove a shortcut just click the link and again click '*' of the header of the view.
 
@@ -76,12 +76,12 @@ automatically loaded when you created the database with :guilabel:`Load Demonstr
 .. index::
    single: partner; search
 
-Search for a partner
+Search for a Partner
 ^^^^^^^^^^^^^^^^^^^^
 
 Above the partner list you will see a search form that enables you to quickly filter the partners.
 
-The \ ``Customers`` \ filter is enabled by default showing partners who are customers. If you have applied no filter, the list shows every partner in the system. For space reasons this list shows only the first few partners. If you want to display other records you can search for them or navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
+The \ ``Customers`` \ filter is enabled by default showing partners who are customers. If you have applied no filter, the list shows every partner in the system. For space reasons, this list shows only the first few partners. If you want to display other records, you can search for them or navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
 
 .. figure:: images/partner_search_tab.png
    :scale: 75
@@ -89,28 +89,28 @@ The \ ``Customers`` \ filter is enabled by default showing partners who are cust
 
    *Standard partner search*
 
-.. note:: List limits
+.. note:: List Limits
 
-	By default the list in the GTK client shows only the first 80 records, to avoid overloading the
+	By default, the list in the GTK client shows only the first 80 records, to avoid overloading the
 	network and the server.
 
 	But you can change that limit by clicking the selection widget (showing 80 by default) to the
 	right of the search criteria.
 
-	Similarly the list in the web client shows only the first 20, 50, 100, 500 or unlimited records.
+	Similarly, the list in the web client shows only the first 20, 50, 100, 500 or unlimited records.
 
 	The actual number can be switched by clicking the link between the PREVIOUS and NEXT buttons
 	and selecting one of the other limits.
 
 In the web version, if you click the name of a partner, the form view corresponding to that partner opens in Read-Only
 mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode.
-Once you have a form you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
+Once you have a form, you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
 Edit mode and :guilabel:`Edit` when in Read-Only mode.
 
 .. index::
    single: partner; view form
 
-Partner form
+Partner Form
 ^^^^^^^^^^^^
 
 The partner form contains several tabs, all referring to the current record:
@@ -162,17 +162,17 @@ toolbar:
 .. index::
    single: buttons; reports, actions, links
 
-.. tip:: Reports, Actions and Links in the GTK client
+.. tip:: Reports, Actions and Links in the GTK Client
 
 	When you are viewing a form in the GTK client, the buttons to the right of the form are shortcuts to
 	the same Reports, Actions and Links as described in the text. When you are viewing a list (such as
-	the partner list) those buttons are not available to you. Instead, you can reach Reports and Actions
+	the partner list), those buttons are not available to you. Instead, you can reach Reports and Actions
 	through two of the buttons in the toolbar at the top of the list – Print and Action.
 
 Partners are used throughout the OpenERP system in other documents. For example, the menu
 :menuselection:`Sales --> Sales Orders` brings up all the Sales Orders in list view. Open an order in form view and click the name of a partner, even when the form is read-only. The Partner form will open.
 
-.. tip:: Right-clicks and shortcuts
+.. tip:: Right-clicks and Shortcuts
 
 	In the GTK client you do not get hyperlinks to other document types. Instead, you can right-click in
 	a list view to show the linked fields (that is fields having a link to other forms) on that line.
@@ -189,7 +189,7 @@ Partners are used throughout the OpenERP system in other documents. For example,
 	both read-only and in edit mode, or with the GTK client.
 
 .. figure:: images/familiarization_sale_partner.png
-   :scale: 75
+   :scale: 85
    :align: center
 
    *Links for a partner appear in an order form*
@@ -204,7 +204,7 @@ Products
 In OpenERP, `product` is used to define a raw material, a stockable product, a consumable or a service. You can
 work with whole products or with templates that separate the definition of products and variants (*extra module*).
 
-For example if you sell t-shirts in different sizes and colors:
+For example, if you sell t-shirts in different sizes and colors:
 
 * the product template is the “T-shirt” which contains information common to all sizes and all
   colors,
@@ -212,12 +212,12 @@ For example if you sell t-shirts in different sizes and colors:
 * the variants are “Size:S” and “Color:Red”, which define the parameters for that size and
   color,
 
-* the final product is thus the combination of the two – t-shirt in size S and color Red.
+* the final product is thus the combination of the two – T-shirt in size S and color Red.
 
-The value of this approach for some sectors is that you can just define a template in detail and all
-of its available variants briefly rather than every item as an entire product.
+The value of this approach, for some sectors, is that you can just define a template in detail and all
+of its available variants briefly, rather than every item as an entire product.
 
-	.. note::  *Example Product templates and variants*
+	.. note::  *Example Product Templates and Variants*
 
 			A product can be defined as a whole or as a product template and several variants. The variants
 			can be in one or several dimensions, depending on the installed modules.
@@ -238,7 +238,7 @@ of its available variants briefly rather than every item as an entire product.
 			This separation of variant types requires the optional module :mod:`product_variant_multi`.
 			Using it
 			means that you can avoid an explosion in the number of products to manage in the database. If you
-			take the example above it is easier to manage a template with 15 variants in four different types
+			take the example above, it is easier to manage a template with 15 variants in four different types
 			than 160 completely different products. This module is available in ``extra-addons``.
 
 The :menuselection:`Sales --> Products` menu gives you access to the definition of products and their templates and variants.
@@ -248,12 +248,12 @@ The :menuselection:`Sales --> Products` menu gives you access to the definition 
 
 .. tip::  Consumables
 
-	In OpenERP a consumable is a physical product which is treated like a stockable product, with the exception
+	In OpenERP, a consumable is a physical product which is treated like a stockable product, with the exception
 	that stock management is not taken into account by the system. You could buy it, deliver it or
 	produce it but OpenERP will always assume that there is enough of it in stock. It never triggers a
 	procurement exception.
 
-Open a product form to see the information that describes it. The demeonstration data show several types of products, which gives quite a good overview of the options.
+Open a product form to see the information that describes it. The demonstration data show several types of products, which gives quite a good overview of the options.
 
 Price lists (:menuselection:`Sales --> Configuration --> Pricelists`) determine the purchase and selling prices and
 adjustments derived from the use of different currencies. The :menuselection:`Default Purchase
@@ -364,7 +364,7 @@ Manage your Books
 =================
 
 The chapters in :ref:`part-genacct` in this book are dedicated to general and analytic accounting.
-A brief overview of the functions to introduce you to this Business Application.
+Following is a  brief overview of the functions to introduce you to this Business Application.
 
 Accounting is totally integrated into all of the company's functions, whether it is general,
 analytic, budgetary or auxiliary accounting. OpenERP's accounting function is double-entry and
@@ -376,9 +376,9 @@ of entering accounting data, because most of the entries are generated automatic
 documents are being processed. You can avoid entering data twice in OpenERP, which is commonly a
 source of errors and delays.
 
-So OpenERP's accounting is not just for financial reporting – it is also the anchorpoint for many
-of a company's management processes. For example if one of your accountants puts a customer on
-credit hold then that will immediately block any other action related to that company's credit (such
+So OpenERP's accounting is not just for financial reporting – it is also the anchor-point for many
+of the company's management processes. For example, if one of your accountants puts a customer on
+credit hold, then that will immediately block any other action related to that company's credit (such
 as sales or delivery).
 
 OpenERP also provides integrated analytical accounting, which enables management by business
@@ -386,7 +386,7 @@ activity or project and provides very detailed levels of analysis. You can contr
 based on business management needs, rather than on the charts of accounts that generally meet only
 statutory requirements.
 
-OpenERP added a flexible, easy **Invoicing** module allowing you to keep track of your documents and payments, even when you are not an accountant. This will allow smaller business to keep track of their payments without having to implement a complete accounting system.
+OpenERP has added a flexible, easy **Invoicing** module allowing you to keep track of your documents and payments, even when you are not an accountant. This will allow smaller businesses to keep track of their payments without having to implement a complete accounting system.
 
 Keep track of your Cash Moves by using the new OpenERP Cash Box.
 
@@ -397,7 +397,7 @@ Keep track of your Cash Moves by using the new OpenERP Cash Box.
 Lead & Inspire your People
 ==========================
 
-OpenERP's Human Resources Management Business Application provides functionality such as:
+OpenERP's Human Resources Management Business Application provides functionalities such as:
 
 * Manage your Employees, Contracts & Staff Performance,
 
@@ -415,7 +415,7 @@ OpenERP's Human Resources Management Business Application provides functionality
    single: modules; hr_
    single: module; hr
 
-Most of these functions are provided from optional modules whose name starts with \ ``hr_``\
+Most of these functions are provided from optional modules whose name starts with \ ``hr_`` \
 rather than the core :mod:`hr` module, but they are all loaded into the main :menuselection:`Human
 Resources` menu.
 
@@ -434,7 +434,7 @@ OpenERP's project management tools enable you to define tasks and specify requir
 All projects are hierarchically structured. You can review all of the projects from the menu :menuselection:`Project --> Projects`. Then select :guilabel:`Gantt view` to obtain a graphical representation of the project.
 
 .. figure:: images/project_gantt.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Project Planning*
@@ -513,7 +513,7 @@ double-entry system gives you big advantages when you come to audit stock becaus
 has a counterpart somewhere.
 
 Most stock management software is limited to generating lists of products in warehouses. Because of
-its double-entry system OpenERP automatically manages customer and suppliers stocks as well, which
+its double-entry system, OpenERP automatically manages customer and suppliers stocks as well, which
 has many advantages: complete traceability from supplier to customer, management of consigned stock,
 and analysis of counterpart stock moves.
 
@@ -525,16 +525,16 @@ various levels of detail.
    single: Production Management
    single: Manufacturing
 
-Get Manufacturing done
+Get Manufacturing Done
 ======================
 
-OpenERP's production management capabilities enable companies to plan, automate and track manufacturing and product assembly. OpenERP supports multi-level bills of materials and lets you substitute subassemblies dynamically, at the time of sales ordering. You can create virtual subassemblies for re-use on several products with phantom bills of materials.
+OpenERP's production management capabilities enable companies to plan, automate and track manufacturing and product assembly. OpenERP supports multi-level bills of materials and lets you substitute sub-assemblies dynamically, at the time of sales ordering. You can create virtual sub-assemblies for re-use on several products with phantom bills of materials.
 
 .. index::
    single: bill of materials
    single: BOM
 
-.. note:: BOMs, routing, workcenters
+.. note:: BOMs, Routing, Workcenters
 
 	These documents describe the materials that make up a larger assembly. They are commonly called
 	Bills of Materials or BOMs.
@@ -581,23 +581,23 @@ The Knowledge system is also well-integrated with e-mail clients such as Thunder
 Measure your Business Performance
 =================================
 
-To measure your business performance OpenERP provides two interesting features:
+To measure your business performance OpenERP, provides two interesting features:
 
 * Dashboards
 * Statistical Reports
 
 On a single page, Dashboards give you an overview of all the information that is important to you.
-In OpenERP each application has its own dashboard which opens by default when you select the specific application.
-As for example `Administration Dashboard` will open when you click the :menuselection:`Administration` menu.
+In OpenERP, each application has its own dashboard which opens by default when you select the specific application.
+As for example, `Administration Dashboard` will open when you click the :menuselection:`Administration` menu.
 
 .. note:: Dashboards
 
-	Unlike most other ERP systems and classic statistically-based systems,
+	Unlike most other ERP systems and classic statistic-based systems,
 	OpenERP can provide dashboards for all system users, and not just managers and accountants.
 
 	Each user can have his own dashboard, adapted to his needs,
 	enabling him to manage his own work effectively.
-	For example a developer using the :guilabel:`Project Dashboard` can see information such
+	For example, a developer using the :guilabel:`Project Dashboard` can see information such
 	as a list of open tasks, tasks delegated to him and an analysis of the progress of
 	the relevant projects.
 
@@ -607,13 +607,13 @@ click any element of the list to get detailed statistics on the selected element
 
 Dashboards can be customized to fit the needs of each user and each company.
 
-.. note:: Creating or customizing dashboards
+.. note:: Creating or Customizing Dashboards
 
 	OpenERP contains a Dashboard Editor. Create your own dashboard to fit your
 	specific needs in only a few clicks. Go to the :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition` menu to define your own dashboard.
 
-The `Statistical Analysis` is one of the crucial thing for decision making process in any business. The OpenERP provides
-Statistical Reports for each application. As for example you can access the statistical analysis of Sales-related information
+The `Statistical Analysis` is one of the crucial thing for decision making process in any business. OpenERP provides
+Statistical Reports for each application. As for example, you can access the statistical analysis of Sales-related information
 from the menu :menuselection:`Sales --> Reporting --> Sales Analysis`. You can search and group the data using this
 `Statistical Report`.
 
@@ -625,7 +625,7 @@ Take a document that could be expected to have a workflow, such as a Sales Order
 then click the :guilabel:`?` button above its form to see the full process.
 
 .. figure:: images/guided_tour_process.png
-   :scale: 50
+   :scale: 55
    :align: center
 
    *Process for a Sales Order*
@@ -641,7 +641,7 @@ web client from a process node, and the GTK client from the
 the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
 
 .. figure:: images/purchase_workflow.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Workflow for a Purchase Order*
@@ -649,7 +649,7 @@ the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` o
 Alongside the document management system, the process visualization features make OpenERP
 far better for documentation than similar systems.
 
-Need more?
+Need More?
 ==========
 
 You have been guided through a brisk, brief overview of many of the main functional areas of OpenERP.
@@ -723,7 +723,7 @@ Overview of Shortcut Keys
    Ctrl+Esc      Close window without Saving
    ============  ===============================
 
-* Shortcuts in relation field
+* Shortcuts in a relation field
 
 .. table::
 
@@ -769,7 +769,7 @@ The statistical report for project tasks is `Task Analysis` which can be display
 menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have installed the `Project Management` module.
 
 .. figure:: images/filter_task_analysis.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Task Analysis*
@@ -778,13 +778,13 @@ You can see the `Advanced Search View` in the light green shaded area.
 
 You can filter the information of a task according to the Group by features.
 
-Click for instance the `Stage` button in Group by, and then click Task to analyse your tasks by stage and then by task.
+Click, for instance, the `Stage` button in Group by, and then click `Task` to analyse your tasks by stage and then by task.
 
 This `Advanced Search View` can also be attached to any `List View` of an object and hence increase the
 search facility when a user looks up the record in list view.
 
 .. figure:: images/filter_task_list_view.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Search the Tasks which are `In Progress` with Group by Project and State*

@@ -1,9 +1,9 @@
-Database creation
+Database Creation
 =================
 
 Use the technique outlined in :ref:`ch-inst` to create a new database, \ ``openerp_ch02``\  . This
 database will contain the demonstration data provided with OpenERP and a large proportion of the
-core Open ERP functionality. You will need to know your super administrator password for this – or
+core OpenERP functionality. You will need to know your super administrator password for this – or
 you will have to find somebody who does have it to create this seed database.
 
 Start the database creation process from the :guilabel:`Login` page by clicking

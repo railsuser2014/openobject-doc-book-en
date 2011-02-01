@@ -8,7 +8,7 @@
 Database Creation
 =================
 
-Use the technique outlined in this section to create a new database, \ ``openerp_ch01``\  . This
+Use the technique outlined in this section to create a new database, \ ``openerp_ch01`` \. This
 database will contain the demonstration data provided with OpenERP and a large proportion of the
 core OpenERP functionality. You will need to know your super administrator password for this – or
 you will have to find somebody who does have it to create this database.
@@ -17,14 +17,14 @@ you will have to find somebody who does have it to create this database.
    single: password; super-administrator
    single: password; superadmin
 
-.. note:: The super-administrator password
+.. note:: The Super-administrator Password
 
    Anyone who knows the super-administrator password has complete access to the data on the server
    – able to read, change and delete any of the data in any of the databases there.
 
    After first installation, the password is ``admin``. This is the hard-coded default, and
    is used if there is no accessible server configuration file. If your system has been 
-   set up so that the server configuration file can be written to by the server then
+   set up so that the server configuration file can be written to by the server, then
    you can change the password through the client. Or you could deliberately make the 
    configuration file read-only so that there is no prospect of changing it from the client.
    Either way, a server systems administrator can change it if you forget it.
@@ -38,14 +38,14 @@ you will have to find somebody who does have it to create this database.
    the ``--config`` command line option.
 
 .. figure:: images/change_superadmin_pwd.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Changing the super-administrator password through the web client*
 
 .. _sect-creatingdb:
 
-Creating the database
+Creating the Database
 ---------------------
 
 If you are using the GTK client, choose :menuselection:`File --> Databases --> New database`  in
@@ -62,10 +62,10 @@ If you are using the web client, click :guilabel:`Databases` on the login screen
 :guilabel:`Create` on the database management page. Enter the super-administrator password, and the
 name of the new database you are creating.
   
-In both cases you will see a checkbox that determines whether you load demonstration data or not.
+In both cases, you will see a checkbox that determines whether you load demonstration data or not.
 The consequences of checking this box or not affect the **whole use** of this database.
 
-In both cases you will also see that you can choose the Administrator password. This makes your 
+In both cases, you will also see that you can choose the Administrator password. This makes your 
 database quite secure because you can ensure that it is unique from the outset.
 (In fact many people find it hard to resist ``admin`` as their password!)
 
@@ -77,7 +77,7 @@ Database openerp_ch01
 
 Wait for the message showing that the database has been successfully created, along with the user
 accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now that you have created this
-database you can extend it without having to know the super-administrator password.
+database, you can extend it without having to know the super-administrator password.
 
 .. index::
    single: access; LDAP
@@ -93,21 +93,21 @@ database you can extend it without having to know the super-administrator passwo
  	.. index::
 	   single: module; users_ldap
 
-	Alternatively you can install the :mod:`users_ldap` module, which manages the authentication of users
+	Alternatively, you can install the :mod:`users_ldap` module, which manages the authentication of users
 	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
 	OpenERP databases. Using this, many databases can share the same user account details.
 
-.. note::  Failure to create a database
+.. note::  Failure to Create a Database
 
 	How do you know if you have successfully created your new database?
 	You are told if the database creation has been unsuccessful.
-	If you have entered a database name using prohibited characters (or no name, or too short a name)
+	If you have entered a database name using prohibited characters (or no name, or too short a name),
 	you will be alerted by the dialog box :guilabel:`Bad database name!` explaining how to correct the error.
 	If you have entered the wrong super-administrator password or a name already in use
 	(some names can be reserved without your knowledge), you will be alerted by the dialog box
 	:guilabel:`Error during database creation!`.
 
-Since this is the first time you have connected to this database you will be asked a series of questions to
+Since this is the first time you have connected to this database, you will be asked a series of questions to
 define the database parameters. You may choose to :guilabel:`Skip Configuration Wizards` or
 :guilabel:`Start Configuration`. If you choose to configure your application, you may proceed with the
 following steps:
@@ -122,7 +122,7 @@ following steps:
 	#.  :guilabel:`Install Applications` : check the applications you need and then click :guilabel:`Install`.
 	    For now, do not install any application.
 
-Once configuration is complete you are connected to your OpenERP system. Its functionality is very
+Once configuration is complete, you are connected to your OpenERP system. Its functionality is very
 limited because you have selected a :guilabel:`Simplified` interface with no application installed,
 but this is sufficient to demonstrate that your installation is working.
 
@@ -138,7 +138,7 @@ but this is sufficient to demonstrate that your installation is working.
 Managing Databases
 ------------------
 
-As a super-administrator you do not only have rights to create new databases, but also to:
+As a super-administrator, you do not only have rights to create new databases, but also to:
 
 * delete databases,
 
@@ -153,7 +153,7 @@ in the GTK client, or from the :guilabel:`Databases` button in the web client's
 .. index::
    single: database; duplicate
 
-.. tip::   Duplicating a database
+.. tip::   Duplicating a Database
 
 	To duplicate a database you can:
 
@@ -173,7 +173,7 @@ so that your security is enhanced in normal production use.
 You are now ready to use databases from your installation to familiarize yourself with the
 administration and use of OpenERP.
 
-New OpenERP functionality
+New OpenERP Functionality
 =========================
 
 The database you have created and managed so far is based on the core OpenERP functionality that you
@@ -194,8 +194,8 @@ What if you want to update what is there, or extend what is there with additiona
 In both cases you will need to be a \ ``root`` \ user or \ ``Administrator`` \ of your
 OpenERP application server.
 
-Extending Open ERP
-------------------
+Extending OpenERP
+-----------------
 
 To extend OpenERP you will need to copy modules into the \ ``addons`` \ directory. That is in
 your server's \ ``openerp-server`` \ directory (which differs between Windows, Mac and some of the
@@ -226,7 +226,7 @@ server by the server software).
 .. index::
    pair:  filesystem; permissions
 
-.. tip:: Changing permissions
+.. tip:: Changing Permissions
 
 	A very simple way of changing permissions on the Linux system you are using to develop an OpenERP
 	application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is

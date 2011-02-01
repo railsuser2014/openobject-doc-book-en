@@ -28,8 +28,8 @@ some demonstration data to test the installation.
 
 .. note:: Renaming from Tiny ERP to OpenERP
 
-   Tiny ERP was renamed to OpenERP early in 2008 so somebody who has already used Tiny ERP should be
-   equally at home with Open ERP. The two names refer to the same software, so there is no
+   Tiny ERP was renamed to OpenERP early in 2008, so somebody who has already used Tiny ERP should be
+   equally at home with OpenERP. The two names refer to the same software, so there is no
    functional difference between versions 4.2.X of OpenERP and 4.2.X of Tiny ERP. This book
    applies to versions of OpenERP from 6.0.0 onwards, with references to earlier versions from
    time to time.

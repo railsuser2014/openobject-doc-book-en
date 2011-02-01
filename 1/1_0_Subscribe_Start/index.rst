@@ -4,9 +4,9 @@
 
 .. _ch-ss:
 
-******************
+*****************
 Subscribe & Start
-******************
+*****************
 
 We want to make it very easy for you to test OpenERP or put it into full production. You have at least three starting
 points:

@@ -2,7 +2,7 @@
 .. index::
    single: architecture; OpenERP
 
-The architecture of OpenERP
+The Architecture of OpenERP
 ===========================
 
 To access OpenERP you can:
@@ -27,14 +27,14 @@ responsive, so more satisfying to use.
    single: client; web (thin) and GTK (thick)
    single: client; caching
 
-.. note::   Web client and GTK client
+.. note::   Web Client and GTK Client
 
     There is little functional difference between the two OpenERP clients - the 
     web client and the GTK client at present. 
-    The web client offers more functionality for instance for Calendar view, Gantt view, .
+    The web client offers more functionality, for instance, the Corporate Intelligence feature, and the Gantt view.
     
     When you are changing the structure of your OpenERP installation (adding and
-    removing modules, perhaps changing labels) you might find the web client to be
+    removing modules, perhaps changing labels), you might find the web client to be
     irritating because of its use of **caching**. 
     
     Caching speeds it all up by keeping a copy of data somewhere between the server 
@@ -64,7 +64,7 @@ An OpenERP system is formed from three main components:
    
    *The architecture of OpenERP*
 
-.. note::   Terminology: client-web – server or client?
+.. note::   Terminology: Client-web – Server or Client?
 
     The client-web component can be thought of as a server or a client depending on
     your viewpoint.
@@ -97,11 +97,11 @@ An OpenERP system is formed from three main components:
     Mac OS X, Solaris, SunOS and BSD.
 
 These three components can be installed on the same server or can be
-distributed onto separate computer servers if performance considerations
+distributed onto separate computer servers, if performance considerations
 require it.
 
-If you choose to run only with GTK clients you will not need the third component –
-the client-web server – at all. In this case OpenERP's GTK client must be installed
+If you choose to run only with GTK clients, you will not need the third component –
+the client-web server – at all. In this case, OpenERP's GTK client must be installed
 on the workstation of each OpenERP user in the company.
 
 

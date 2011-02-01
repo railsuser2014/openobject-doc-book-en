@@ -8,27 +8,27 @@ Managing your Potential Customer Contacts
 The standard way of representing partners and contacts throughout OpenERP
 and many other enterprise systems (such as phone contact applications)
 is a partner with multiple contacts.
-*Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ... In other CRM applications, a partner is also referred to as Account. The example below illustrates OpenERP default way of handling Partners and their Contacts.
+*Partner* is the word for any entity that you do business with - a supplier, a customer, a prospect, ... In other CRM applications, a partner is also referred to as Account. The example below illustrates OpenERP's default way of handling Partners and their Contacts.
 
 .. _fig-crmcono:
 
 .. figure:: images/crm_contact_without.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Default Partner & Contacts Relationship*
 
-According to your Business, the standard way of linking several contacts to one partner may not be flexible enough for you. Of course, OpenERP provides an alternative, the :mod:`base_contact` module. This allows you to share the same contact, holding different positions, with several partners. You only need to enter the contact once and link it to the partners concerned. Any changes to contact information only need to be applied once.
+According to your business, the standard way of linking several contacts to one partner may not be flexible enough for you. Of course, OpenERP provides an alternative, the :mod:`base_contact` module. This allows you to share the same contact, holding different positions, with several partners. You only need to enter the contact once and link it to the partners concerned. Any changes to contact information only need to be applied once.
 
 The two figures :ref:`fig-crmcono` and :ref:`fig-crmconw` show
-the structure of partners and contacts in the form of UML classes both
+the structure of partners and contacts in the form of UML classes, both
 without and with the :mod:`base_contact` module.
 This is a clear way to illustrate the complexities that may be accomplished.
 
 .. _fig-crmconw:
 
 .. figure:: images/crm_contact_with_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Base_contact module installed*
@@ -58,16 +58,16 @@ According to your Configuration, OpenERP provides three menus to access the same
 
 * List of Addresses: :menuselection:`Sales --> Address Book --> Addresses`,
 
-* List of contacts: :menuselection:`Sales --> Address Book --> Contacts`,
+* List of contacts: :menuselection:`Sales --> Address Book --> Contacts`.
 
 If you correct or change a contact name in the contact form, the changes will be applied to all the posts occupied in the different companies.
 
 The screen below represents a partner form. You can see several possible addresses there and a list of
-contacts below each address. For each contact you see a name, a function, a phone number and an
+contacts below each address. For each contact, you see a name, a function, a phone number and an
 email.
 
 .. figure:: images/crm_partner_contact.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *A partner form with the base_contact module installed*
@@ -75,36 +75,36 @@ email.
 If you click the line, you can get more details about the function (such as start date, end date and fax) or enter into the contact form (such as personal phone, different posts occupied, and personal blog). You can also add a photo to your contact form.
 
 .. figure:: images/crm_partner_poste.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *Detail of a job post occupied by a contact at a partner*
 
 .. figure:: images/crm_partner_contacts.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *Detail of a partner form with several contacts*
 
 Partner management is included in the OpenERP base modules. To manage partner relations you have to install the Sales Management module. Then configure the system to meet your needs.
 
-For this chapter you should create a new database with demo data through the Configuration Wizard. Select Customer Relationship Management and configure the CRM according to your needs by selecting the appropriate modules.
+For this chapter, you should create a new database with demo data through the Configuration Wizard. Select Customer Relationship Management and configure the CRM according to your needs by selecting the appropriate modules.
 OpenERP's modularity enables you to install only the CRM module if your requirements are limited to customer relationships.
 
 .. figure:: images/crm_db_init.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Creating a new database*
 
 When creating the new database, OpenERP suggests that you configure it using a series of questions:
 
-* Simplified or Extended mode: select simplified and click :guilabel:`OK`,
+* Simplified or Extended mode: select ``Simplified`` and click :guilabel:`OK`,
 
 * Select the Customer Relationship Management functionality to install.
 
 .. figure:: images/ crm_db_select.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *Selecting the CRM functionality to install*
@@ -117,7 +117,7 @@ OpenERP proposes a selection from preconfigured functions for CRM:
 
 * managing meetings and the company calendar,
 
-* managing presales,
+* managing pre-sales,
 
 * managing phone calls,
 
@@ -149,7 +149,7 @@ The figure :ref:`fig-crmconwiz` shows the CRM module configuration screen that a
 .. _fig-crmconwiz:
 
 .. figure:: images/crm_configuration_wizard.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *Selecting parameters for CRM modules for the reader of this chapter*
@@ -158,7 +158,7 @@ If you have installed the management of prospects and opportunities, OpenERP imp
 following workflow for the *qualification of prospects* and future opportunities.
 
 .. figure:: images/crm_flux.png
-   :scale: 50
+   :scale: 80
    :align: center
 
    *Process of converting a prospect into a customer or opportunity*

@@ -2,7 +2,7 @@
 Lead Management
 ***************
 
-A lead represents a possible business or sales. Usually it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
+A lead represents a possible business or sales. Usually, it is the first step in your sales cycle, and therefore it contains valuable information. However, the most common mistake is that this information too often gets lost because it is registered nowhere, or such key information is not accessible when you need it.
 
 Often leads are not registered centrally, which makes it very difficult to find the appropriate information.
 
@@ -26,28 +26,28 @@ The following events could result in the creation of one or several leads, eithe
 * A form completed on your website directly integrated into OpenERP. Before converting the form
   into a sales proposition or opportunity, you should read and handle the person's request.
 
-     .. note:: Separation of sales services
+     .. note:: Separation of Sales Services
 
-        Some companies will have a presales and a sales department.
-        The role of the presales department is to acquire and qualify new leads,
+        Some companies will have a pre-sales and a sales department.
+        The role of the pre-sales department is to acquire and qualify new leads,
         and the role of the sales department is to crystallize the sales opportunities or work with
         existing customers.
 
-Employees in the presales department will usually work on leads. Once these leads are converted into customers or sales opportunities the sales department pays individual attention to each opportunity.
+Employees in the pre-sales department will usually work on leads. Once these leads are converted into customers or sales opportunities, the sales department pays individual attention to each opportunity.
 
-Storing your Business Cards effectively
+Storing your Business Cards Effectively
 =======================================
 
 New prospects are usually entered as a lead in the system. This means that you do not create a
 partner form or sales opportunity until you have qualified whether the lead is interesting or not.
-If the new contact is indeed interesting you then enter the data on into a partner form and,
+If the new contact is indeed interesting, you then enter the data into a partner form and,
 eventually, a sales opportunity.
 
-To enter a lead manually use the menu :menuselection:`Sales --> Sales --> Leads` and click the `New` button. A
+To enter a lead manually, use the menu :menuselection:`Sales --> Sales --> Leads` and click the `New` button. A
 form opens to let you enter data about this new contact.
 
 .. figure:: images/crm_lead_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Creating a new lead*
@@ -61,7 +61,7 @@ Leads have a status that depends on the qualification work that has been carried
 
 * ``Closed`` : the lead has been converted into a partner and/or a sales opportunity,
 
-* ``Waiting`` : the lead is waiting for a response from the customer,
+* ``Pending`` : the lead is waiting for a response from the customer,
 
 * ``Cancelled`` : the lead has been cancelled because the salesperson has decided that it is not worth
   following up.
@@ -76,34 +76,34 @@ Importing a Leads Database
 You can also import a huge list of leads. That may be useful if you have bought a database of
 potential prospects and you want to load them all into the system to handle them all at the same time.
 
-To do that you should start with a list of leads in CSV format. If your prospects are provided in
+To do that, you should start with a list of leads in CSV format. If your prospects are provided in
 another format it is easy to convert them to the CSV format using Microsoft Excel or OpenOffice Calc.
 Open the leads list using the menu :menuselection:`Sales --> Sales --> Leads`. At
 the bottom of the list click on the :guilabel:`Import` link. OpenERP opens a form for importing the
 data.
 
 .. figure:: images/crm_lead_import.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Importing leads into the system*
 
 You then define which columns are present in your CSV file in the correct order. Select your file
-and click on :guilabel:`Import`. Check in the chapter about system administration, :ref:`ch-config`, for more
+and click :guilabel:`Import`. Check the chapter about system administration, :ref:`ch-config`, for more
 information on import and export.
 
 .. tip:: Various Imports
 
-    Importing and Exporting data in OpenERP is a generic function available to all resources.
+    Importing and exporting data in OpenERP is a generic function available to all resources.
     So you can import and export such lists as partners, sales opportunities, accounting entries,
     products and price lists.
 
 There are other methods of generating leads automatically or semi-automatically:
 
-* through a Contact Form on your Website;
+* Through a Contact Form on your Website,
 
 * Using the Outlook or Thunderbird plugin to insert new leads directly from an e-mail client when a
-  salesperson sees promising e-mails ,
+  salesperson sees promising e-mails,
 
 * Using the e-mail gateway for each incoming e-mail from a certain address (such as
   info@mycompany.com) which allows you to create a lead automatically from the contents of the e-mail,
@@ -112,27 +112,27 @@ There are other methods of generating leads automatically or semi-automatically:
 
 These different methods are described later in this book.
 
-Organizing leads
+Organizing Leads
 ================
 
 To help the users organize and handle leads efficiently, OpenERP provides several menus in the CRM
-system that can be used depending on the needs of each:
+system that can be used depending on the needs of each.
 
 The :menuselection:`Sales --> Sales --> Leads` can be used for several things:
 
-* Click New to start creating a new lead.
+* Click :guilabel:`New` to start creating a new lead.
 
-* This view displays a list of all the leads (both open and not) which you are linked to,
+* This view displays a list of all the leads (both open and not) which you are linked to.
 
-* You can display a list of all your leads that you still need to handle (your open, draft and pending leads),
+* You can display a list of all your leads that you still need to handle (your open, draft and pending leads).
 
-* You can display a list of all your leads that are still waiting for a customer response (usually in Pending status). This enables you to check periodically on your work to do,
+* You can display a list of all your leads that are still waiting for a customer response (usually in ``Pending`` status). This enables you to check periodically your work to do.
 
 * You can display a list of all the leads assigned to different salespeople.
   This menu (as those beneath it) are used by managers to check each person's work.
 
 .. figure:: images/crm_leads_list.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of leads to be handled*
@@ -142,18 +142,18 @@ form to describe the lead. At this stage, they contact the suspected customer by
 result of the contact on the lead form.
 
 They can then change the status of the lead to a state that depends on the response from the
-suspect:
+prospect:
 
 * ``Cancelled`` : not to be followed as a lead,
 
-* ``Waiting`` : waiting for a response from the suspect.
+* ``Pending`` : waiting for a response from the prospect.
 
 Converting Leads into Customers or Opportunities
 ================================================
 
 If a lead is interesting, you convert it into a partner / opportunity in the system.
 
-You can do this in one step (convert to opportunity, and if partner does not exist, OpenERP will create it or merge it) or in two steps (first create partner, then convert to opportunity).
+You can do this in one step (convert to opportunity, and if partner does not exist, OpenERP will create it or merge it), or in two steps (first create partner, then convert to opportunity).
 
 Click the button :guilabel:`Create` next to the :guilabel:`Customer` field to create a new partner or link to an existing partner. 
 
@@ -185,7 +185,7 @@ OpenERP then opens a window with the title of the opportunity (lead description)
 Fill out the estimated revenue and the success rate of converting to a sale.
 
 .. figure:: images/crm_lead_convert.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Converting a lead into a sales opportunity*
@@ -194,7 +194,7 @@ Some companies have more advanced processes for the qualification of a lead. The
 several steps, such as first call, renewing contact, waiting for a verbal agreement. 
 You can easily configure this by creating your own stages through :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Stages`. Use the sequence number to determine the order of the stages, i.e. 10 for First Call, 20 for Renewing Contact and so on.
 
-You can then use your own stages through the :guilabel:`Stage` field that is found up to the right of the lead definition. To move it
+You can then use your own stages through the :guilabel:`Stage` field that is found to the right of the lead definition. To move it
 automatically to the next step, you can use the button that looks like a right arrow.
 
 .. Copyright © Open Object Press. All rights reserved.
