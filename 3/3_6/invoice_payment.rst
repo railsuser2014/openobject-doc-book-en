@@ -2,25 +2,25 @@
 Invoicing Workflow
 ==================
 
-In OpenERP, the Invoicing Workflow is very simple. You can see it in the following figure.
+In OpenERP, the invoicing workflow is very simple. You can see it in the following figure:
 
 .. figure::  images/account_invoice_workflow.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Invoicing workflow*
 
-An invoice can be generated form various other documents like a `Sales Order`, a `Purchase Order` and also
+An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also
 at the time of confirmation of a shipment.
 
-The Invoicing system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
+The invoicing system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
 It provides an easy way to follow up your suppliers and customers.
 
 
 Customer Receipts / Supplier Vouchers
 -------------------------------------
 
-When you sell products to a customer, you can give him an invoice or a `Sales Receipt` which is also called `Customer Receipt`.
+When you sell products to a customer, you can give him an invoice or a `Sales Receipt`, which is also called `Customer Receipt`.
 Sales Receipts are merely a kind of sales ticket and not a real invoice.
 
 When the sales receipt is confirmed, it creates journal items automatically and you can record the customer payment related
@@ -34,15 +34,15 @@ You can create and modify the sales receipt using the menu :menuselection:`Accou
 
    *Defining a Customer Receipt*
 
-When you create a new `Sales Receipt` you have to enter the `Customer` for which you want to create a voucher. You can also define `Sales lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
-At the bottom of the form you can have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
+When you create a new `Sales Receipt`, you have to enter the `Customer` for which you want to create a voucher. You can also define `Sales Lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
+At the bottom of the form, you can have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
 You have to enter `Account` in the case of the `Pay Directly` option. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
 
 After validating the sales receipt, you can print the voucher by clicking the `Voucher Print` action at the
 upper right side. The voucher will be printed as follows.
 
 .. figure::  images/account_sale_voucher.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Sales Voucher*
@@ -59,10 +59,10 @@ You can create and modify the supplier voucher through the menu :menuselection:`
 
    *Definition of Supplier Voucher*
 
-The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form carefully select the journal. After validating the `Supplier Voucher` you can print it using the `Voucher Print` action.
+The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form, carefully select the journal. After validating the `Supplier Voucher`, you can print it using the `Voucher Print` action.
 
 .. figure::  images/account_purchase_voucher.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Supplier Voucher*
@@ -73,22 +73,22 @@ Keep Track of your Payments
 
 You should efficiently keep track of payments of your customers and suppliers.
 
-``Sales Payment`` allows you to register the payments you receive from your customers.
-In order to record a payment, you have enter the customer, the payment method (= the journal)
-and the payment amount. OpenERP will propose to you automatically the reconciliation of this
-payment with the open invoices or sales receipts.
+:guilabel:`Customer Payment` allows you to register the payments you receive from your customers.
+In order to record a payment, you have to enter the customer, the payment method (= the journal)
+and the payment amount. OpenERP will automatically propose the reconciliation of this
+payment with open invoices or sales receipts.
 
 You can do this in OpenERP using the menu :menuselection:`Accounting --> Customers --> Customer Payment`.
 
 .. figure::  images/account_customer_payment.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Customer Payment Form*
 
 To create a new `Customer Payment`, select the customer and `Payment Method`. You can add invoices and other transactions in
 the `Payment Information` tab. Now select the proper `Payment Difference`, i.e. `Keep Open` and
-`Reconcile with Write-Off`. In the case of `Reconcile with Write-Off` the write-off amount will come automatically
+`Reconcile with Write-Off`. In the case of `Reconcile with Write-Off`, the write-off amount will come automatically
 but you have to enter the `Write-Off account` so that accounting entries can be generated by OpenERP.
 
 The supplier payment form allows you to track the payment you do to your suppliers.
@@ -99,7 +99,7 @@ Through the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`,
 create a new `Supplier Payment`.
 
 .. figure::  images/account_supplier_payment.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Supplier Payment Form*
