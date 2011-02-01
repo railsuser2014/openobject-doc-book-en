@@ -151,9 +151,15 @@ prospect:
 Converting Leads into Customers or Opportunities
 ================================================
 
-If a lead is interesting, you convert it into a partner / opportunity in the system.
+If a lead is interesting, and you want to take it further in your sales process, you convert it into a partner / opportunity in the system.
 
-You can do this in one step (convert to opportunity, and if partner does not exist, OpenERP will create it or merge it), or in two steps (first create partner, then convert to opportunity).
+Clicking the `Convert to Opportunity` button offers several possibilities:
+
+* You can decide to just create the opportunity and keep the contact data from the lead without creating a partner,
+ 
+* You can convert to an opportunity, and create a new partner if it does not exist yet, or merge the contact with an existing partner,
+
+* You first create partner, and later you convert to an opportunity.
 
 Click the button :guilabel:`Create` next to the :guilabel:`Customer` field to create a new partner or link to an existing partner. 
 
