@@ -11,12 +11,12 @@ Chart of Accounts
    single: module; l10n_fr
 
 You view active charts of accounts using the menu :menuselection:`Accounting --> Charts
---> Charts of Accounts`, and :guilabel:`Open Charts` for the selected year and account moves.
+--> Chart of Accounts`, and :guilabel:`Open Charts` for the selected year and account moves.
 
-.. note:: Hierarchical charts
+.. note:: Hierarchical Charts
 
 	Most accounting software packages represent their charts of accounts in the form of a list. You can
-	do this in Open ERP as well if you want to, but its tree view offers several advantages:
+	do this in OpenERP as well if you want to, but its tree view offers several advantages:
 
 	* it lets you show and calculate only the accounts that interest you,
 
@@ -33,18 +33,18 @@ You can develop a set of account views to contain only those elements that inter
 
 To get the detail of the account entries that are important to you, all you need to do is click the
 account's :guilabel:`Code` (if you have no codes, you can select the line, then click :guilabel:`Switch`
-to get the acount definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar).
+to get the account definition, then click the :guilabel:`Entries` in the :guilabel:`LINKS` part of the toolbar).
 
-Displaying the chart of accounts can take several seconds because Open ERP calculates the debits,
+Displaying the chart of accounts can take several seconds, because OpenERP calculates the debits,
 credits and balance for each account in real time.
 
 Using a Preconfigured Chart of Accounts
 ---------------------------------------
 
 On installation, the software is given a default chart of accounts that is the same regardless of
-your country. To install the chart of accounts and tax definitions for your own country install the
-module :mod:`l10n_XX` where XX represents your country code in two letters. For example to get the
-chart of accounts for France install the module :mod:`l10n_fr`.
+your country. To install the chart of accounts and tax definitions for your own country, install the
+module :mod:`l10n_XX` where XX represents your country code in two letters. For example, to get the
+chart of accounts for France, install the module :mod:`l10n_fr`.
 
 Some of these pre-built modules are comprehensive and accurate, others have rather more tentative
 status and are simply indicators of the possibilities. You can modify these, or build your own
@@ -58,7 +58,7 @@ To add, modify or delete existing accounts, use the menu :menuselection:`Account
 Configuration --> Financial Accounting --> Accounts --> Accounts`.
 
 .. figure::  images/account_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Definition of an account*
@@ -66,9 +66,9 @@ Configuration --> Financial Accounting --> Accounts --> Accounts`.
 .. index::
    single: multi-lingual
 
-.. tip:: Multi-lingual fields
+.. tip:: Multi-lingual Fields
 
-	In Open ERP multi-lingual fields are marked by a small flag to their right.
+	In OpenERP, multi-lingual fields are marked by a small flag to their right.
 	Click on the flag to get a translation of the value of the field in the different installed
 	languages.
 	You can also edit the translation.
@@ -79,30 +79,30 @@ Configuration --> Financial Accounting --> Accounts --> Accounts`.
 
 The main account fields are:
 
-*  :guilabel:`Name` : Gives the account a name.
+*  :guilabel:`Name` : gives the account a name.
 
 *  :guilabel:`Account Type` : account types determine an account's use in each journal.
-   By default the following types are available
-   :guilabel:`View`, :guilabel:`Receivable`, :guilabel:`Payable`, :guilabel:`Income`,
-   :guilabel:`Expense`, :guilabel:`Tax`, :guilabel:`Cash`, :guilabel:`Asset`, :guilabel:`Equity`.
+   By default, the following types are available:
+   ``View``, ``Receivable``, ``Payable``, ``Income``,
+   ``Expense``, ``Tax``, ``Cash``, ``Asset``, ``Equity``.
    You can add new types through the menu
    :menuselection:`Accounting -->
    Configuration --> Financial Accounting --> Accounts --> Account Types`.
    Use the :guilabel:`View` type for accounts that make up the structure of the charts and have no
    account data inputs of their own.
 
-*  :guilabel:`Internal Type` : internal types has special effects in OpenERP.
-   By default the following types are available
-   :guilabel:`View`, :guilabel:`Regular`, :guilabel:`Receivable`, :guilabel:`Payable`,
-   :guilabel:`Liquidity`, :guilabel:`Consolidation`, :guilabel:`Closed`.
+*  :guilabel:`Internal Type` : internal types have special effects in OpenERP.
+   By default, the following types are available:
+   ``View``, ``Regular``, ``Receivable``, ``Payable``,
+   ``Liquidity``, ``Consolidation``, ``Closed``.
 
 .. index::
    pair: account; type
 
-.. note:: Type of account
+.. note:: Type of Account
 
-	The account types are mainly used as an informative title.
-	The only two types that have any particular effect are :guilabel:`Receivables` and :guilabel:`Payables`.
+	Account types are mainly used as informative titles.
+	The only two types that have any particular effect are ``Receivable`` and ``Payable``.
 
 	These two types are used by reports on partner credits and debits.
 	They are calculated from the list of unreconciled entries in the accounts of one of these two types.
@@ -113,9 +113,9 @@ The main account fields are:
 *  :guilabel:`Secondary Currency` : forces all the moves for this account to have this secondary currency.
 
 *  :guilabel:`Reconcile` : determines if you can reconcile the entries in this account. Activate this field
-   for partner accounts and for chequing (checking) accounts.
+   for partner accounts and for chequeing (checking) accounts.
 
-*  :guilabel:`Parents` : determines which account is the parent of this one, to create the tree structure of
+*  :guilabel:`Parent` : determines which account is the parent of this one, to create the tree structure of
    the chart of accounts.
 
 *  :guilabel:`Default Taxes` : this is the default tax applied to purchases or sales using this account. It
@@ -133,23 +133,23 @@ Virtual Charts of Accounts
 --------------------------
 
 The structure of a chart of accounts is imposed by the legislation in effect in the country of
-concern. Unfortunately that structure does not always correspond to the view that a company's CEO
+concern. Unfortunately, that structure does not always correspond to the view that a company's CEO
 needs.
 
-In Open ERP you can use the concept of virtual charts of accounts to manage several different
+In OpenERP, you can use the concept of virtual charts of accounts to manage several different
 representations of the same accounts simultaneously. These representations can be shown in real time
 with no additional data entry.
 
 So your general chart of accounts can be the one imposed by the statutes of your country, and your
 CEO can then have other virtual charts as necessary, based on the accounts in the general chart. For
-example the CEO can create a view per department, a cash-flow and liquidity view, or consolidated
+example, the CEO can create a view per department, a cash-flow and liquidity view, or consolidated
 accounts for different companies.
 
 The most interesting thing about virtual charts of accounts is that they can be used in the same way
-as the default chart of accounts for the whole organization. For example you can establish budgets
+as the default chart of accounts for the whole organization. For example, you can establish budgets
 from your consolidated accounts or from the accounts from one of your companies.
 
-.. tip:: Virtual accounts
+.. tip:: Virtual Accounts
 
 	Virtual accounts enable you to provide different representations of one or several existing charts
 	of accounts.
@@ -157,7 +157,7 @@ from your consolidated accounts or from the accounts from one of your companies.
 	You can then use the virtual charts with no risk of altering the general chart of accounts or
 	future accounting entries.
 
-	Because they are used only to get different representation of the same entries they are very useful
+	Because they are used only to get different representation of the same entries, they are very useful
 	for:
 
 	* consolidating several companies in real time,
@@ -180,17 +180,17 @@ you can choose your structure by creating other accounts of :guilabel:`Type` \ `
 Check your virtual structure using the menu :menuselection:`Financial Management --> Charts -->
 Charts of Accounts`.
 
-You have to set Internal Type = Consolidation and set Consolidated Children Accounts to make Account Consolidate.
+You have to set :guilabel:`Internal Type` as ``Consolidation`` and set :guilabel:`Consolidated Children` accounts to make accounts consolidate.
 
 Finally, when you have got your structure, you must make the general accounts and virtual accounts
-match. For that search the general accounts and ensure that each non-\ ``View``\   account there
-also has a virtual account in the field :guilabel:`Parents`.
+match. For that, search the general accounts and ensure that each non-\ ``View``\   account there
+also has a virtual account in the field :guilabel:`Parent`.
 
 You can then check through your general chart of accounts as well as your virtual charts which give
 you another representation of the company. All the actions and states in your general account are
 also available in the virtual accounts.
 
-Finally you can also make virtual charts of accounts from other virtual charts. That can give an
+Finally, you can also make virtual charts of accounts from other virtual charts. That can give an
 additional dimension for financial analysis.
 
 .. Copyright © Open Object Press. All rights reserved.

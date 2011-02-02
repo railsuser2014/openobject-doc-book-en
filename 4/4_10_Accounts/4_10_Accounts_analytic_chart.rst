@@ -1,7 +1,7 @@
 .. index::
    pair: chart of accounts; analytic
 
-To each enterprise its own Analytic Chart of Accounts
+To Each Enterprise its own Analytic Chart of Accounts
 =====================================================
 
 To illustrate analytic accounts clearly, you will follow three use cases, each in one of three
@@ -14,16 +14,16 @@ different types of company:
 	#. IT Services Company.
 
 Case 1: Industrial Manufacturing Enterprise
-----------------------------------------------
+-------------------------------------------
 
 In industry, you will often find analytic charts of accounts structured into the departments and
 products that the company itself is built on.
 
 So the objective is to examine the costs, sales and margins by department and by product. The first
-level of the structure comprises the different departments and the lower levels represent the
+level of the structure comprises the different departments, and the lower levels represent the
 product ranges that the company makes and sells.
 
-	.. note::  Analytic chart of accounts for an industrial manufacturing company
+	.. note::  Analytic Chart of Accounts for an Industrial Manufacturing Company
 
 		#. Marketing Department
 
@@ -42,10 +42,10 @@ product ranges that the company makes and sells.
 .. index::
    pair: cost; allocation
 
-In daily use it is useful to mark the analytic account on each purchase invoice. The analytic account
-is the one to which the costs of that purchase should be allocated. When the invoice is approved it
+In daily use, it is useful to mark the analytic account on each purchase invoice. The analytic account
+is the one to which the costs of that purchase should be allocated. When the invoice is approved, it
 will automatically generate the entries for both the general and the corresponding analytic
-accounts. So, for each entry on the general accounts there is at least one analytic entry that
+accounts. So, for each entry on the general accounts, there is at least one analytic entry that
 allocates costs to the department that incurred them.
 
 Here is a possible breakdown of some general accounting entries for the example above, allocated to
@@ -71,7 +71,7 @@ various analytic accounts:
 The analytic representation by department enables you to investigate the costs allocated to each
 department in the company.
 
-So the analytic chart of accounts shows the distribution of the company's costs using the example
+So, the analytic chart of accounts shows the distribution of the company's costs using the example
 above:
 
 .. csv-table::  Analytic chart of accounts (Case 1)
@@ -85,7 +85,7 @@ above:
    "Product Range 1","-3 750"
    "Product Range 2","-2 450"
 
-In this example of a hierarchical structure in Open ERP you can analyze not only the costs of each
+In this example of a hierarchical structure in OpenERP, you can analyze not only the costs of each
 product range but also the costs of the whole of production. The balance of a summary account (
 *Production* ) is the sum of the balances of the child accounts.
 
@@ -107,7 +107,7 @@ The examples above are based on a breakdown of the costs of the company. Analyti
 just as effective for sales. That gives you the profitability (sales - costs) of different
 departments.
 
-.. note::  Representation by unique product range
+.. note::  Representation by Unique Product Range
 
 	This analytic representation by department and by product range is usually used by trading
 	companies and industries.
@@ -117,16 +117,16 @@ departments.
 	This will give you an analysis of the profitability of each product range.
 
 	Choosing one over the other depends on how you look at your marketing effort.
-	Is it a global cost allocated in some general way or does each product range have responsibility
+	Is it a global cost allocated in some general way, or does each product range have responsibility
 	for its own marketing costs?
 
 Case 2:  Law Firm
-------------------
+-----------------
 
-Law firms generally adopt management by case where each case represents a current client file. All
+Law firms generally adopt management by case, where each case represents a current client file. All
 of the expenses and products are then attached to a given file.
 
-A principal preoccupation of law firms is the invoicing of hours worked and the profitability by
+A principal preoccupation of law firms is the invoicing of hours worked, and the profitability by
 case and by employee.
 
 Mechanisms used for encoding the hours worked will be covered in detail in the following chapter, :ref:`ch-hr`.
@@ -141,7 +141,7 @@ the employee's salary.
 So a law firm will opt for an analytic representation which reflects the management of the time that
 employees work on the different client cases.
 
-	.. note::  *Example Representation of an analytic chart of accounts for a law firm*
+	.. note::  *Example Representation of an Analytic Chart of Accounts for a Law Firm*
 
 		#. Absences
 
@@ -155,7 +155,7 @@ employees work on the different client cases.
 
 			* Others
 
-		#. Client cases
+		#. Client Cases
 
 			* Client 1
 
@@ -199,7 +199,7 @@ analytic account:
    "Staff salaries","","","","6201 – Salaries","","3 000"
 
 You will see that it allows you to make a detailed study of the profitability of different
-transactions. In this example the cost of Case 1.1 is 95.00 (the sum of the analytic costs of
+transactions. In this example, the cost of Case 1.1 is 95.00 (the sum of the analytic costs of
 studying the files, searching for information and service charges), but has been invoiced for
 280.00, which gives you a gross profit of 185.00.
 
@@ -207,27 +207,27 @@ But an interest in analytical accounts is not limited to a simple analysis of th
 different cases.
 
 This same data can be used for automatic recharging of the services to the client at the end of the
-month. To invoice clients just take the analytic costs in that month and apply a selling price
+month. To invoice clients, just take the analytic costs in that month and apply a selling price
 factor to generate the invoice. Invoicing mechanisms for this are explained in greater detail in
 :ref:`ch-services`. If the client requires details of the services used on the case, you can then print the
 service entries in the analytic account for this case.
 
-.. tip:: Invoicing analytic costs
+.. tip:: Invoicing Analytic Costs
 
 	Most software that manages billing enables you to recharge for hours worked.
-	In Open ERP these services are automatically represented by analytic costs.
-	But many other Open ERP documents can also generate analytic costs, such as credit notes and
+	In OpenERP, these services are automatically represented by analytic costs.
+	But many other OpenERP documents can also generate analytic costs, such as credit notes and
 	purchases of goods.
 
-	So when you invoice the client at the end of the month it is possible for you to include all the
+	So when you invoice the client at the end of the month, it is possible for you to include all the
 	analytic costs,
-	not just the hours worked. So, for example you can easily recharge the whole cost of your journeys
+	not just the hours worked. So, for example, you can easily recharge the whole cost of your journeys
 	to the client.
 
-Case 3 : IT Services Company
--------------------------------
+Case 3: IT Services Company
+---------------------------
 
-Most IT services companies face the following problems:
+Most IT service companies face the following problems:
 
 * project planning,
 
@@ -235,10 +235,10 @@ Most IT services companies face the following problems:
 
 * managing support contracts.
 
-To deal with these problems you would use an analytic chart of accounts structured by project and by
-contract. A representation of that is given in the following example.
+To deal with these problems, you would use an analytic chart of accounts structured by project and by
+contract. A representation of that is given in the following example:
 
-	.. note::  *Example Analytic representation of a chart of accounts for an IT Services company*
+	.. note::  *Example Analytic Representation of a Chart of Accounts for an IT Services Company*
 
 		#. Internal Projects
 
@@ -271,10 +271,10 @@ Invoicing and the study of profitability are also similar.
 
 But now look at support contracts. These contracts are usually limited to a prepaid number of hours.
 Each service posted in the analytic accounts shows the remaining available hours of support. For the
-management of support contracts you would use the quantities and not the amounts in the analytic
+management of support contracts, you would use the quantities and not the amounts in the analytic
 entries.
 
-In Open ERP each analytic line lists the number of units sold or used, as well as what you would
+In OpenERP, each analytic line lists the number of units sold or used, as well as what you would
 usually find there – the amount in currency units (USD or GBP, or whatever other choice you make).
 So you can sum the quantities sold and used on each analytic account to determine whether any hours
 of the support contract remain.
@@ -282,7 +282,7 @@ of the support contract remain.
 .. index::
    pair: cost; allocation
 
-To differentiate services from other costs in the analytic account you use the concept of the
+To differentiate services from other costs in the analytic account, you use the concept of the
 analytic journal. Analytic entries are then allocated into the different journals:
 
 * service journal,
@@ -293,15 +293,15 @@ analytic journal. Analytic entries are then allocated into the different journal
 
 * purchase journal.
 
-So to obtain the detailed breakdown of a support contract you only have to look at the service
+So to obtain the detailed breakdown of a support contract, you only have to look at the service
 journal for the analytic account corresponding to the contract in question.
 
 Finally, the analytic account can be used to forecast future needs. For example, monthly planning of
 staff on different projects can be seen as an analytic budget limited to the service journal.
-Accounting entries are expressed in quantities (such as number of hours, and numbers of products)
+Accounting entries are expressed in quantities (such as number of hours, and numbers of products),
 and in amounts in units of currency (USD or GBP perhaps).
 
-So you can set up planning on the basis just of quantities. Analyzing the analytic budget enables
+So you can set up planning on just the basis of quantities. Analyzing the analytic budget enables
 you to compare the budget (that is, your plan) to the services actually carried out by month end.
 
 .. tip:: Cash Budgets

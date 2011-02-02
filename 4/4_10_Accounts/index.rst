@@ -2,23 +2,23 @@
 .. index::
    single: Analytic Accounts
 
-.. _ch-accts:
+.. _k-accts:
 
 *****************
 Analytic Accounts
 *****************
 
  *Sitting at the heart of your company's processes, analytic accounts (or cost accounts) are
- indispensable tools for managing your operations well. Unlike your financial accounts they are for
+ indispensable tools for managing your operations well. Unlike your financial accounts, they are for
  more than accountants - they are for general managers and project managers, too.*
 
 You need a common way of referring to each user, service, or document to integrate all your
 company's processes effectively. Such a common basis is provided by analytic accounts (or management
-accounts, or cost accounts, as they are also called) in Open ERP.
+accounts, or cost accounts, as they are also called) in OpenERP.
 
 Analytic accounts are often presented as a foundation for strategic enterprise decisions. But
-because of all the information they pull together, Open ERP's analytic accounts can be a useful
-management tool, at the center of most system processes
+because of all the information they pull together, OpenERP's analytic accounts can be a useful
+management tool, at the center of most system processes.
 
 There are several reasons for this:
 
@@ -27,12 +27,12 @@ There are several reasons for this:
 * unlike the general accounts, the structure of the analytic accounts is not regulated by legal
   obligations, so each company can adapt it to its needs.
 
-.. note:: Independence from general accounts
+.. note:: Independence from General Accounts
 
 	In some software packages, analytic accounts are managed as an extension of general accounts –
 	for example, by using the two last digits of the account code to represent analytic accounts.
 
-	In Open ERP, analytic accounts are linked to general accounts but are treated totally
+	In OpenERP, analytic accounts are linked to general accounts but are treated totally
 	independently.
 	So you can enter various different analytic operations that have no counterpart in the general
 	financial accounts.
@@ -54,12 +54,12 @@ here are some of those advantages:
 
 * you can avoid an explosion in the number of general accounts,
 
-* even those companies that do not use Open ERP's general accounts can use the analytic accounts for
+* even those companies that do not use OpenERP's general accounts can use the analytic accounts for
   management.
 
-.. tip:: Who benefits from analytic accounts?
+.. tip:: Who Benefits from Analytic Accounts?
 
-	Unlike general accounts, analytic accounts in Open ERP are not so much an accounting tool for Accounts as a
+	Unlike general accounts, analytic accounts in OpenERP are not so much an accounting tool for Accounts as a
 	management tool for everyone in the company. (That is why they are also called management accounts.)
 
 	The main users of analytic accounts should be the directors, general managers and project managers.
@@ -67,8 +67,8 @@ here are some of those advantages:
 Analytic accounts make up a powerful tool that can be used in different ways. The trick is to create
 your own analytic structure for a chart of accounts that closely matches your company's needs.
 
-For this chapter you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed and no particular chart of accounts configured.
+For this chapter, you should start with a fresh database that includes demo data,
+with :mod:`sale` and its dependencies installed, and no particular chart of accounts configured.
 
 .. raw:: html
 

@@ -24,19 +24,19 @@ Management Indicators
 	Indicators, sometimes called financial ratios, are tools for analyzing a company's finances.
 	They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
 	and loss account, in the form of a ratio.
-	They also let you measure the financial health of a company and make comparisons from one year to
+	They also let you measure the financial health of a company, and make comparisons from one year to
 	the next or against those of other companies.
 
 .. index::
    single: module; account_report
 
-To define financial indicators in Open ERP you should install the module :mod:`account_report`.
-When installing the module the usual financial indicators are registered in Open ERP.
+To define financial indicators in OpenERP, you should install the module :mod:`account_report` (from ``extra-addons``).
+When installing the module, the usual financial indicators are registered in OpenERP.
 
 You can consult your indicators, calculated in real time, from the menu :menuselection:`Financial
 Management --> Reporting --> Custom Reports`.
 
-Indicators defined by default in Open ERP are the following:
+Indicators defined by default in OpenERP are the following:
 
 *  :guilabel:`Indicators of Working Capital` : determines if the company can pay its short term debts in
    normal conditions. It is calculated from \ ``(Stocks + Cash + Current Assets) / Current
@@ -49,15 +49,15 @@ Indicators defined by default in Open ERP are the following:
    owners' capital and in the second place by all of the long term liabilities. Ideally this indicator
    will be greater than 1.
 
-.. tip:: Calculation of indicators
+.. tip:: Calculation of Indicators
 
-	Calculating indicators can take quite a while in Open ERP because you have to analyse the whole
+	Calculating indicators can take quite a while in OpenERP, because you have to analyse the whole
 	company's accounting entries.
 
 	So it is best not to calculate all of the indicators at once, but just a small selection to keep
 	calculation time within limits.
 
-Time analysis of indicators
+Time Analysis of Indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can analyze the financial indicators along two axes. You must have a figure calculated at a
@@ -69,25 +69,25 @@ the company.
    single: module; account_report
 
 To do a temporal analysis of your indicators, you must install the module
-:mod:`account_report` from the set of modules in addons-extra.
+:mod:`account_report` from the set of modules in ``addons-extra``.
 
 Once this module is installed, you can click on a financial indicator to get a graph of its
 evolution in time.
 
 .. figure::  images/account_report_history.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *History of an accounting indicator*
 
-Defining your own indicators
+Defining your Own Indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can define your own indicators in Open ERP using the menu
+You can define your own indicators in OpenERP using the menu
 :menuselection:`Accounting --> Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
 
 .. figure::  images/account_indicator_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Defining a new indicator*
@@ -120,15 +120,15 @@ that is the balance in accounts 4 and 5 divided by the balance in account 1.
 Good Management Budgeting
 -------------------------
 
-Open ERP manages its budgets using both General and Analytic Accounts. You will see how to do this
+OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this
 here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts.
 Install :mod:`account_budget` to be able to do this.
 
 Use the menu :menuselection:`Accounting --> Budgets --> Budgets`
-to define a new budget by clicking on `New` button.
+to define a new budget by clicking the `New` button.
 
 .. figure::  images/account_budget_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Budget form*
@@ -146,29 +146,29 @@ to define a new budget by clicking on `New` button.
 	company from revision to revision.
 
 Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`,
-and a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
+a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
 Then you can define the budgeted amounts within that period, one by one. For each, you define:
 
 * an :guilabel:`Analytic Account`
 
-* a :guilabel:`Budgetary Position` : for example :guilabel:`Sales` or :guilabel:`Purchases`,
+* a :guilabel:`Budgetary Position` : for example ``Sales`` or ``Purchases``,
 
 * a :guilabel:`Start Date` and :guilabel:`End Date` for the use of the budget,
 
 * a :guilabel:`Planned Amount` in the default currency of the chart of accounts.
 
-Once it is completed you can save your budget.
+Once it is completed, you can save your budget.
 
-To print a budget and make calculations of expenditure to budget use the menu
-:menuselection:`Accounting --> Budgets --> Budgets` Open ERP then gives you a
+To print a budget and make calculations of expenditure through budget, use the menu
+:menuselection:`Accounting --> Budgets --> Budgets`. OpenERP then gives you a
 list of available budgets. Select one or more budgets and then click :guilabel:`Print Budgets` to create
-the report for each in a date range of your choosing.
-The figure :ref:`fig-accbudg` gives an example of a budget produced by Open ERP.
+the report for each, in a date range of your choice.
+The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 
 .. _fig-accbudg:
 
 .. figure::  images/account_budget.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Printing a budget*
@@ -179,10 +179,10 @@ This gives a budgetary analysis report for each budget line.
 The Accounting Dashboard
 ------------------------
 
-You can open the `Accounting Dashboard` using the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting dashboard`.
+You can open the `Accounting Dashboard` using the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
 
 .. figure::  images/account_board.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Accounting Dashboard*
@@ -190,23 +190,23 @@ You can open the `Accounting Dashboard` using the menu :menuselection:`Accountin
 .. index::
    single: module; board_account
 
-Open ERP gives you an accounting dashboard
+OpenERP gives you an accounting dashboard
 that can be presented to your accounting staff as they sign into the system (if you have set it as
 their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
 
-The description of the different parts of the dashboard, from top to bottom then from left
-to right is as follows:
+The description of the different parts of the dashboard, from top to bottom, then from left
+to right, is as follows:
 
 *  :guilabel:`Customer Invoices to Approve` : gives the list of invoices waiting to be approved by an accountant.
 
-*  :guilabel:`Company Analysis` : gives the credit,debit and balance of all account type.
+*  :guilabel:`Company Analysis` : gives the credit, debit and balance of all account types.
 
 *  :guilabel:`Treasury` : shows balance per Account
 
-*  :guilabel:`Aged receivables` : gives a weekly graph of the receivables that haven't yet been
+*  :guilabel:`Aged receivables` : gives a weekly graph of the receivables that have not yet been
    reconciled.
 
-In each panel of the `Accounting Dashboard` you can click the :guilabel:`Zoom` button at the top
+In each panel of the `Accounting Dashboard`, you can click the :guilabel:`Zoom` button at the top
 right to investigate the detail of your financial indicators.
 
 The `Accounting Dashboard` is dynamically integrated, which means that you can navigate easily through

@@ -8,12 +8,12 @@ Effective Management of Operations
  Your company is a closely interlinked jumble of people and processes that form the whole system.
  If you want it to be efficient, and to be able manage it effectively, you have to organize it,
  make it systematic, and optimize its major operations. 
- Isolated spots of poor management can disturb the whole added value chain.
+ Isolated spots of poor management can disturb the whole value-added chain.
 
  This part presents an approach to greater efficiency, showing concrete solutions by applying
- Open ERP to different problems in a services company.
- For each enterprise function, Open ERP enables you to automate the recurring tasks, systematize
- complex processes, simplify the transmission of information, and control all your operations.
+ OpenERP to different problems in a services company.
+ For each enterprise function, OpenERP enables you to automate the recurring tasks, systematize
+ complex processes, simplify the transmission of information and control all your operations.
 
 .. toctree::
     :maxdepth: 1

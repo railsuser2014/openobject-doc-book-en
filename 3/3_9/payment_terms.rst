@@ -4,7 +4,7 @@
 Payment Terms
 =============
 
-You can define whatever payment terms you need in Open ERP. Payment terms determine the due dates
+You can define whatever payment terms you need in OpenERP. Payment terms determine the due dates
 for paying an invoice.
 
 To define new payment terms, use the menu :menuselection:`Accounting -->
@@ -14,13 +14,13 @@ The figure below represents the following payment term: 5000 within 5 days, 50% 
 Remaining on 15th of next month.
 
 .. figure::  images/account_payment_term.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuring payment terms*
 
-To configure new conditions start by giving a name to the :guilabel:`Payment Term` field. Text that
-you put in the field :guilabel:`Description` is used on invoices, so enter a clear description of
+To configure new conditions, start by giving a name to the :guilabel:`Payment Term` field. Text that
+you put in the field :guilabel:`Description on invoices`, is used on invoices, so enter a clear description of
 the payment terms there.
 
 Then create individual lines for calculating the terms in the section :guilabel:`Payment Term`. You
@@ -30,23 +30,23 @@ the rules are evaluated.
 
 The :guilabel:`Valuation` field enables you to calculate the amount to pay for each line:
 
-* :guilabel:`Percent` : the line corresponds to a percentage of the total amount, the factor being
-  given in :guilabel:`Value Amount`. The number indicated in the Amount must take a value between 0 and 1.
+* ``Percent`` : the line corresponds to a percentage of the total amount, the factor being
+  given in :guilabel:`Value Amount`. The number indicated in :guilabel:`Value Amount` must take a value between 0 and 1.
 
-* :guilabel:`Fixed Amount` : this is a fixed value given by the :guilabel:`Value Amount` box.
+* ``Fixed Amount`` : this is a fixed value given by the :guilabel:`Value Amount` box.
 
-* :guilabel:`Balance` : indicates the balance remaining after accounting for the other lines.
+* ``Balance`` : indicates the balance remaining after accounting for the other lines.
 
-Think carefully about setting the last line of the calculation to \ ``Balance``\   to avoid rounding
+Think carefully about setting the last line of the calculation to \ ``Balance`` \, to avoid rounding
 errors. The highest sequence number is evaluated last.
 
 The two last fields, :guilabel:`Number of Days` and :guilabel:`Day of the Month`, enable the calculation of
-the delay in payment for each line, The delay :guilabel:`Day of the Month` can be set to \ ``-1``\,\ ``0``\
-or \ ``Any Positive Number``\  . For example today is 20 December 2010, if you want to set payment terms like this.
+the delay in payment for each line. The delay :guilabel:`Day of the Month` can be set to \ ``-1`` \, \ ``0`` \
+or any positive number. For example, if today is 20th December 2010, and if you want to set payment terms like this:
 
-* :guilabel:`5000 within 5 days` then set `Valuation` is Fixed Amount, `Number of Days` 5 and  `Day of the Month` is 0 that creates journal entry for date 25th December 2010.
-* :guilabel:`50% payment at the last day of current month` then set `Valuation` Percent, `Number of Days` 0 and  `Day of the Month` is -1 that creates journal entry for date 31th December 2010.
-* :guilabel:`Remaining on 15th of next month` then set `Valuation` Balance, `Number of Days` 0 and  `Day of the Month` is 15 that creates journal entry for date 15th January 2011.
+* :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` and `Day of the Month` ``0``. That creates journal entry for date 25th December 2010.
+* :guilabel:`50% payment at the last day of current month`: set `Valuation` ``Percent``, `Number of Days` ``0`` and  `Day of the Month` ``-1``. That creates journal entry for date 31st December 2010.
+* :guilabel:`Remaining on 15th of next month`: set `Valuation` ``Balance``, `Number of Days` ``0`` and  `Day of the Month` ``15``. That creates journal entry for date 15th January 2011.
 
 You can then add payment terms to a Partner through the tab :guilabel:`Accounting` on the partner form.
 
