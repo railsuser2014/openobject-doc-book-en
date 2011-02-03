@@ -4,10 +4,10 @@
 Warehouses
 ==========
 
-Warehouses are designed for physical locations from which you can deliver to the customer and to
-which you receive raw materials. When you buy products from a supplier you should take account
+Warehouses are designed for physical locations from which you can deliver to the customer, and to
+which you receive raw materials. When you buy products from a supplier, you should take account
 of the Warehouse you use for this purchase. This also enables the end user to not have to choose
-from a list of locations but simply a real warehouse.
+from a list of locations, but simply a real warehouse.
 
 Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses`, then click
 :guilabel:`New` to configure a new warehouse.
@@ -56,13 +56,13 @@ Several methods of automatically procuring products can be carried out by OpenER
 The last two methods are described below.
 
 .. index::
-   single: stock; orderpoint
+   single: stock; order-point
    single: minimum stock rule
 
 Minimum Stock Rules
 -------------------
 
-To automatically make stock replenishment proposals, you can use minimum stock rules. To do this use
+To automatically make stock replenishment proposals, you can use minimum stock rules. To do this, use
 the menu :menuselection:`Warehouse --> Automatic Procurements --> Minimum Stock Rules`.
 
 The rule is the following: if the virtual stock for the given location is lower than the minimum stock
@@ -78,7 +78,7 @@ of virtual stock to the maximum level given in the rule.
 .. tip:: Conflict Resolution
 
    You may find draft production or procurement orders to be created although they should not exist.
-   That can happen if the system is badly configured (for example if you have forgotten to set the
+   That can happen if the system is badly configured (for example, if you have forgotten to set the
    supplier on a product).
 
    To check this, look at the list of procurements in the exception state in the menu
@@ -94,7 +94,7 @@ Take the following example:
 
 * Products ordered but not delivered: 5
 
-* Products in manfacturing: 2
+* Products in manufacturing: 2
 
 The rules defined are:
 
@@ -108,14 +108,14 @@ Requests for Quotation`.
 
 .. note::
    Note that the procurement does not require that you buy from a supplier. If the product has a
-   :guilabel:`Supply method` ``Produce`` the scheduler will generate a Manufacturing order instead of a
+   :guilabel:`Supply Method` ``Produce``, the scheduler will generate a Manufacturing order instead of a
    supplier order.
 
 You can also set multiple quantities in the minimum stock rules. If you set a multiple quantity of 3
-the system will propose procurement of 15 pieces, and not the 13 it really needs. In this case it
+the system will propose procurement of 15 pieces, and not the 13 it really needs. In this case, it
 automatically rounds the quantity upwards.
 
-In a minimum stock rule, when you indicate a warehouse it suggests a stock location by default in
+In a minimum stock rule, when you indicate a warehouse, it suggests a stock location by default in
 that warehouse. You can change that location by default when the scheduler completes, by location
 and not by warehouse.
 

@@ -33,14 +33,14 @@ are available. You can filter on the various fields to retrieve the operations a
 or a production activity, or a source location, or any given destination.
 
 .. figure:: images/stock_move_tree.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *History of Stock Movements*
 
 Each stock move is in a given state. The different possible states are:
 
-* ``Draft`` : the move so far had no effect in the system. The transaction has not yet been confirmed,
+* ``Draft`` : the move so far has no effect in the system. The transaction has not yet been confirmed,
 
 * ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
   you do not know whether it will be done without problem because the products have been reserved for
@@ -83,15 +83,15 @@ and outgoing deliveries.
 
    *Entering a Line for Production Receipt*
 
-To enter the lot number in an operation you can use an existing lot number or create a new pack. A
+To enter the lot number in an operation, you can use an existing lot number or create a new pack. A
 production lot (batch number) is used for a single product. A tracking number can be
 used several times for different products, so you can mix different products on a pallet or in a box.
 
 .. note:: Simplified View
 
-    In the ``Simplified View`` the tracking numbers cannot be seen: the field is hidden.
-    To get to ``Extended View`` mode, assign the group
-    :guilabel:`Usability – Extended View` to the current user.
+    In the ``Simplified`` view, the tracking numbers cannot be seen: the field is hidden.
+    To get to ``Extended`` view mode, assign the group
+    :guilabel:`Useability / Extended View` to the current user.
 
 You can also specify on the product form the operations in which a lot number is
 required. You can then compel the user to set a lot number for manufacturing operations, goods
@@ -114,7 +114,7 @@ might correspond to a set of pre-printed barcodes that you stick on each product
 Traceability
 ------------
 
-If you key in the lot numbers for stock moves as described above you can investigate the traceability of any
+If you key in the lot numbers for stock moves as described above, you can investigate the traceability of any
 given lot number. Go to the menu :menuselection:`Warehouse --> Traceability -->
 Production Lots`, or :menuselection:`Warehouse --> Traceability --> Packs`.
 

@@ -1,9 +1,9 @@
 
-Management of production
+Management of Production
 ========================
 
 Production Orders describe the operations that need to be carried out and the raw materials usage
-for each stage of production, You use specifications (bills of materials)
+for each stage of production. You use specifications (bills of materials)
 to work out the raw material requirements
 and the manufacturing orders needed for the finished products.
 
@@ -22,13 +22,13 @@ Manufacturing has the following results:
 .. index:: bill of materials
 
 Bills of Materials
-===================
+==================
 
 Use of Bills of Materials
----------------------------
+-------------------------
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
-product. To illustrate the concept of specification you are going to work on a cabinet where the
+product. To illustrate the concept of specification, you are going to work on a cabinet where the
 manufacturing plan is given by the figure :ref:`fig-mrparm`.
 
 .. _fig-mrparm:
@@ -134,7 +134,7 @@ calculate what will be consumed:
    Master Data --> Bill of Materials` then select the product and click on action `Bill of Materials Structures`.
 
 .. figure:: images/mrp_bom_tree.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Bill of Materials structure*
@@ -142,13 +142,13 @@ calculate what will be consumed:
 Use the menu :menuselection:`Manufacturing --> Master Data --> Bill of Materials`
 and click on `New` button to define a new bill of materials.
 
-.. tip::The different views
+.. tip::The Different Views
 
     To change the view in the bill of materials you can:
 
     * From the list, select a bill of materials name and then click :guilabel:`Other View`,
 
-    * From a product form use the menu :guilabel:`Product BoM Structure` to the right.
+    * From a product form, use the menu :guilabel:`Product BoM Structure` to the right.
 
 .. figure:: images/mrp_bom.png
    :scale: 75
@@ -156,15 +156,15 @@ and click on `New` button to define a new bill of materials.
 
    *Screen defining a Bill of Materials*
 
-In the area below the bill of materials you should set the finished product, which will be
+In the area below the bill of materials, you should set the finished product, which will be
 manufactured or assembled. Once the product has been selected, OpenERP automatically completes the
 name of the bill of materials and the default Unit of Measure for this product.
 
-The type of BoM (:guilabel:`BoM Type` : Phantom or Normal) and
+The type of BoM (:guilabel:`BoM Type` : ``Phantom`` or ``Normal``) and
 the :guilabel:`Routing` field will be described in
 more detail later in the chapter.
 
-After this you can select the raw materials that are used in the manufacture of the finished
+After this, you can select the raw materials that are used in the manufacture of the finished
 product. The quantities are set out in a report based on the quantities of finished product and
 the quantities needed to produce them from the bill of materials.
 
@@ -177,8 +177,8 @@ change you can specify a revision number and some notes on the modifications you
 
 .. note:: Simplified View
 
-   The Revisions tab is only visible if the user works in the Extended View mode
-   (which means that the user must belong to the group ``Usability / Extended View`` .
+   The `Revisions` tab is only visible if the user works in the ``Extended`` view mode
+   (which means that the user must belong to the group ``Useability / Extended View`` .
 
 .. figure:: images/mrp_bom_revision.png
    :scale: 75
@@ -207,9 +207,9 @@ processes. These will be detailed further on in the chapter in the section on co
    single: multi-level BoM
 
 Multi-level Bills of Materials
-===============================
+==============================
 
-In OpenERP each line of a bill of materials may itself be a bill of materials. So you can
+In OpenERP, each line of a bill of materials may itself be a bill of materials. So you can
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
 :ref:`fig-mrparm` you could define the single bill of materials below:
 
@@ -317,7 +317,7 @@ following production order:
    pair: phantom; bill of materials
 
 Phantom Bills of Materials
-----------------------------
+--------------------------
 
 If a finished product is defined using intermediate products that are themselves defined using other
 BoMs, OpenERP will then propose the manufacture of each intermediate product. This will give
@@ -328,23 +328,23 @@ Sometimes, however, it is useful to define the intermediate product separately a
 multi-level assembly even if you do not want separate production orders for intermediate
 products.
 
-In the example, the intermediate product ETA100 is used in the manufacture of several different
+In the example, the intermediate product ``ETA100`` is used in the manufacture of several different
 cabinets. So you would want to define a unique BoM for it even if you did not want any
 instances of this product to be built, nor wanted to re-write these elements in a series of
 different multi-level BoMs.
 
 If you only want a single production order for the complete cabinet, and not one for the BoM itself, you
-can define the BoM line corresponding to product ETA100 in the cabinet's BoM as type :guilabel:`Phantom`. Then
-it will automatically put ETA100's BoM contents into the cabinet's production order even though
+can define the BoM line corresponding to product ``ETA100`` in the cabinet's BoM as type :guilabel:`Phantom`. Then
+it will automatically put ``ETA100``'s BoM contents into the cabinet's production order even though
 it is been defined as multi-level.
 
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ARM100 cabinet in the way shown by the table below,
+If you define the BoM for the ``ARM100`` cabinet in the way shown by the table below,
 you will get two production orders when the order is confirmed, as shown in the tables below that.
 
-.. table:: Definition and use of phantom BoMs
+.. table:: Definition and use of Phantom BoMs
 
    ============  ========  ===============  ===========
    Product Code  Quantity  Unit of Measure  Type of BoM
@@ -356,7 +356,7 @@ you will get two production orders when the order is confirmed, as shown in the 
    ETA100        3         Unit             phantom
    ============  ========  ===============  ===========
 
-.. table:: Production Order from phantom BoMs
+.. table:: Production Order from Phantom BoMs
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -369,7 +369,7 @@ you will get two production orders when the order is confirmed, as shown in the 
    TAQ000        12        Unit
    ============  ========  ===============
 
-.. table:: Production Order from normal BoM
+.. table:: Production Order from Normal BoM
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -379,25 +379,25 @@ you will get two production orders when the order is confirmed, as shown in the 
    ============  ========  ===============
 
 Assembly Bills of Materials
------------------------------
+---------------------------
 
 .. note:: Sales Bills of Materials
 
-    In some software this is named a Sales Bill of Materials.
-    In OpenERP the term assembly is used because the effect of the bill of materials is visible not
-    only in sales but also elsewhere, for example in the intermediate manufactured products.
+    In some software, this is named a Sales Bill of Materials.
+    In OpenERP, the term assembly is used because the effect of the bill of materials is visible not
+    only in sales but also elsewhere, for example, in the intermediate manufactured products.
 
 Assembly bills of materials enable you to define assemblies that will be sold directly. These
 could also be used in deliveries and stock management rather than just sold in isolation.
-For example if you deliver the cabinet in pieces for self-assembly, set the ARM100 BoM to type
+For example if you deliver the cabinet in pieces for self-assembly, set the ``ARM100`` BoM to type
 ``Assembly`` .
 
-When a salesperson creates an order for an ARM100 product, OpenERP automatically changes the ARM100
+When a salesperson creates an order for an ``ARM100`` product, OpenERP automatically changes the ``ARM100``
 from a set of components into an identifiable package for sending to a customer.
-Then it asks the storesperson to pack 2 PANLAT, 1 PANA100, 4 PROFIL, 3 ETA100.
-This is described as an ARM100 not just the individual delivered products.
+Then it asks the storesperson to pack 2 ``PANLAT``, 1 ``PANA100``, 4 ``PROFIL``, 3 ``ETA100``.
+This is described as an ``ARM100``, not just the individual delivered products.
 
-Example: Large distributor
+Example: Large Distributor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As an example of using these assemblies, take the case of a supermarket. In a supermarket, you can
@@ -405,7 +405,7 @@ buy bottles of cola individually or in a pack of 6 bottles. The pack and the bot
 different products and the barcodes used are also different.
 
 But customers have the right to open a pack and extract some bottles to take them
-individually to the checkout. The supermarket can not track its stock in packs and bottles any more, but
+individually to the checkout. The supermarket cannot track its stock in packs and bottles any more, but
 only individually in bottles.
 
 So you can define a bill of materials for sale which defines a pack as an assembly of 6 bottles.
@@ -424,15 +424,15 @@ transformation is done directly between the order and the set.
    number of bottles at goods in reception.
 
 Configurable Bills of Materials
---------------------------------
+-------------------------------
 
-In OpenERP you can define several bills of materials for the same product. In fact you can have
+In OpenERP, you can define several bills of materials for the same product. In fact, you can have
 several manufacturing methods or several approved raw materials for a given product. You will see in
 the following section that the manufacturing procedure (the routing) is attached to the Bill of
 Materials, so the choice of bill of materials implicitly includes the operations to make it.
 
-Once several bills of materials have been defined for a particular product you need to have a
-system to enable OpenERP to select one of them for use. By default the bill of materials with the
+Once several bills of materials have been defined for a particular product, you need to have a
+system to enable OpenERP to select one of them for use. By default, the bill of materials with the
 lowest sequence number is selected by the system.
 
 To gain more control over the process during the sale or procurement, you can use **properties**.
@@ -448,7 +448,7 @@ bill of materials when you have a choice of BoMs.
    non-technical language and the choices decided on by the technicians who define Bills
    of Materials.
 
-For example you can define the properties and the following groups:
+For example, you can define the properties and the following groups:
 
 .. table:: Properties
 
@@ -461,13 +461,13 @@ For example you can define the properties and the following groups:
    Method of Manufacture  Batch
    =====================  ============
 
-Once the bills of materials have been defined you could associate the corresponding properties to them. Then
+Once the bills of materials have been defined, you could associate the corresponding properties to them. Then
 when the salesperson goes to encode a product line he can attach the properties there. If the
 product must be manufactured, OpenERP will automatically choose the bill of materials that matches
 the defined properties in the order most closely.
 
-Note the properties are only visible in the Bills of Materials and Sales Management if you are
-working in the Extended View mode. If you can not see it on your screen add the group ``Useability /
+Note that the properties are only visible in the Bills of Materials and Sales Management if you are
+working in the ``Extended`` view mode. If you cannot see it on your screen, add the group ``Useability /
 Extended View`` to your user.
 
 .. figure:: images/sale_line_property.png
@@ -476,29 +476,29 @@ Extended View`` to your user.
 
    *Properties on a customer order line*
 
-Example: Manufacturing in a batch or on a production line
+Example: Manufacturing in a Batch or on a Production Line
 
 As an example, take the manufacture of the cabinet presented above. You can imagine that the company
 has two methods of manufacturing this cabinet:
 
 * Manually: staff assemble the cabinets one by one and cut the wood plank by plank. This approach is
-  usually used to assembly prototypes. It gets you very rapid production, but at a high cost and
+  usually used to assemble prototypes. It gets you very rapid production, but at a high cost and
   only in small quantities.
 
 * On a production line: staff use machines that are capable of cutting wood by bandsaw. This method
   is used for production runs of at least 50 items because the lead times using this method are quite
-  lengthy. The delay to the start of production is much longer, yet the cost per unit is much lower
+  lengthy. The delay of the start of production is much longer, yet the cost per unit is much lower
   in this volume.
 
 You define two bills of materials for the same cabinet. To distinguish between them, you will define
-to properties in the same group: ``manual assembly`` and ``production line assembly`` . On the quotation, the
+two properties in the same group: ``manual assembly`` and ``production line assembly`` . On the quotation, the
 salesperson can set the method of manufacture he wants on each order line,
 depending on the quantities and the lead time requested by the customer.
 
 .. index::
    single: BoM, substitute products
 
-.. note:: bills of materials and substitute products
+.. note:: Bills of Materials and Substitute Products
 
     In some software, you use the term ``substitute`` for this principle of configurable properties in
     a bill of materials.
@@ -522,26 +522,26 @@ described in the preceding chapter:
 
 * Using the Production plan.
 
-Clearly it is also possible to start production manually. To do this you can use the menu
+Clearly, it is also possible to start production manually. To do this you can use the menu
 :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
 .. figure:: images/mrp_auto.png
    :scale: 75
    :align: center
 
-   *Menufacturing Order*
+   *Manufacturing Order*
 
 .. index::
    single: module; mrp_jit
 
 If you have not installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
 using OpenERP to schedule the Production Orders automatically using the
-various system rules. To do this use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+various system rules. To do this, use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 
-Workflow for complete production
-=================================
+Workflow for Complete Production
+================================
 
-To understand the usefulness and the functioning of the system you should test a complete workflow
+To understand the usefulness and the functioning of the system, you should test a complete workflow
 on the new database installed with the demonstration data. In the order you can see:
 
 * The creation of a customer order,
@@ -556,7 +556,7 @@ on the new database installed with the demonstration data. In the order you can 
 
 * Traceability for after-sales service.
 
-.. tip:: Demonstration data
+.. tip:: Demonstration Data
 
     To follow the workflow shown below exactly, you should keep the same quantities as in the
     example and start from a new database. Then you will not run into exceptions that would result
@@ -565,7 +565,7 @@ on the new database installed with the demonstration data. In the order you can 
 This more advanced case of handling problems in procurement, will be sorted out later in the
 chapter.
 
-The customer order
+The Customer Order
 ------------------
 
 .. index:: quotation
@@ -573,22 +573,22 @@ The customer order
 Begin by encoding a customer order. To do this, use the menu :menuselection:`Sales -->
 Sales --> Sales Order`. Enter the following information:
 
-* :guilabel:`Customer` : Agrolait,
+* :guilabel:`Customer` : ``Agrolait``,
 
-* :guilabel:`Shipping Policy` : Invoice from Delivery(second tab),
+* :guilabel:`Shipping Policy` : ``Invoice from Delivery`` (second tab),
 
 * :guilabel:`Order Line` :
 
-  * :guilabel:`Product` : PC2 – Basic PC (assemble on demand),
+  * :guilabel:`Product` : ``PC2 – Basic PC (assemble on demand)``,
 
-  * :guilabel:`Quantity (UoM)` : 1,
+  * :guilabel:`Quantity (UoM)` : ``1``,
 
-  * :guilabel:`Product UoM` : PCE,
+  * :guilabel:`Product UoM` : ``PCE``,
 
-  * :guilabel:`Procure method` : Make To Order.
+  * :guilabel:`Procure method` : ``Make To Order``.
 
 Once the quotation has been entered you can confirm it immediately by clicking the button
-:guilabel:`Confirm Order` at the bottom to the right, the manufacturing order automatically generated.
+:guilabel:`Confirm Order` at the bottom to the right. The manufacturing order is then automatically generated.
 
 .. figure:: images/mrp_auto_generate.png
    :scale: 75
@@ -613,7 +613,7 @@ Start the requirements calculation using the menu :menuselection:`Warehouse --> 
    single: semi-finished product
 
 Producing an Intermediate Product
------------------------------------
+---------------------------------
 
 To understand the implications of requirements calculation, you must know the configuration of the
 sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of
@@ -623,7 +623,7 @@ of the selected product.
 .. _fig-mrpbomtree:
 
 .. figure:: images/mrp_product_bom_tree.png
-   :scale: 75
+   :scale: 70
    :align: center
 
    *Structure of BoM for product PC2*
@@ -644,7 +644,7 @@ list of orders to start and the estimated start date to meet the ordered custome
 
    *List of manufacturing orders*
 
-You will see the production order for PC2 (MO/00034) and also CPU_GEN(MO/00034) because PC2 depends on an
+You will see the production order for PC2 (MO/00034) and also CPU_GEN (MO/00034) because PC2 depends on an
 intermediate product CPU_GEN. Return to the production order for CPU_GEN. If there are
 several of them, select the one corresponding to your order using the reference that contains your
 order number (in this example ``SO007:MO/00034`` ).
@@ -663,7 +663,7 @@ Start of production: consumption of raw materials,
 End of production: manufacture of finished product.
 
 At this stage, you should click to edit the line for the product MB1 to enter a lot number for it.
-The lot number is usually shown the parent chart, so you should just copy that over. To do that put
+The lot number is usually shown in the parent chart, so you should just copy that over. To do that, put
 the cursor in the field :guilabel:`Production Lot` and press :kbd:`<F1>` to create a new lot. Set a lot
 reference, for example: ``MO:PL/0000001`` . The system may then show you a warning because this lot is not in
 stock, but you can ignore this message.
@@ -678,8 +678,8 @@ The production order must be in the closed state as shown in the figure :ref:`fi
 
    *Production order after the different stages*
 
-Manufacture of finished product
---------------------------------
+Manufacture of Finished Product
+-------------------------------
 
 Having manufactured the intermediate product CPU_GEN, OpenERP then automatically proposes the
 manufacture of the computer PC2 using the order created earlier. So return to the menu for
@@ -716,16 +716,16 @@ consumed and taken out of stock.
 
     * automatically creating analytical accounting entries.
 
-Delivery of product to the customer
---------------------------------------
+Delivery of Product to the Customer
+-----------------------------------
 
 .. index::
    single: picking
    single: packing
 
 When the products have been manufactured, the storesperson automatically finds the order in his
-list of items to do. To see the items waiting for picking, use the menu :menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`.
-You will find lists of packing to be done, there, as shown in the figure :ref:`fig-mrppacko`.
+list of items to do. To see the items awaiting picking, use the menu :menuselection:`Warehouse --> Warehouse Management --> Delivery Orders`.
+You will find lists of pickings to be done, as shown in the figure :ref:`fig-mrppacko`.
 
 .. _fig-mrppacko:
 
@@ -733,16 +733,16 @@ You will find lists of packing to be done, there, as shown in the figure :ref:`f
    :scale: 75
    :align: center
 
-   *List of packing operations to be done*
+   *List of picking operations to be done*
 
-The packing orders are presented in priority order of despatch
+The picking orders are presented in priority order of despatch
 so the storesperson must begin with the orders
-at the top of the list. Confirm that your packing list has been created by looking for the customer
+at the top of the list. Confirm that your picking list has been created by looking for the customer
 name ( ``Agrolait`` ) or by its reference ( ``SO007`` ).
 
-.. tip:: Packing and Delivery
+.. tip:: Picking and Delivery
 
-    Depending on whether you work in the simplified or extended mode you may need a further
+    Depending on whether you work in the ``Simplified`` or ``Extended`` mode you may need a further
     step to make a delivery to your customer, so you would have to carry out the two steps:
 
     * picking list,
@@ -752,17 +752,17 @@ name ( ``Agrolait`` ) or by its reference ( ``SO007`` ).
 .. index::
    single: invoicing; at delivery
 
-Invoicing at delivery
-----------------------
+Invoicing at Delivery
+---------------------
 
 Periodically the administrator or an accountant can send invoices based on the deliveries that have
 been carried out. To do that, you can use the menu :menuselection:`Warehouse --> Warehouse Management --> Outgoing Deliveries`.
 You then get a list of all the deliveries that have been made but
 have not yet been invoiced.
 
-So select some or all of the deliveries. Click on the action :guilabel:`Create Invoice`. OpenERP asks
+So select some or all of the deliveries. Click the action :guilabel:`Create Invoice`. OpenERP asks
 if you want to group the deliveries from the same partner into a single invoice or if you would prefer to
-invoice for each delivery individually.
+invoice each delivery individually.
 
 .. figure:: images/mrp_picking_invoice_form.png
    :scale: 75
@@ -771,10 +771,10 @@ invoice for each delivery individually.
    *Invoicing of deliveries*
 
 Invoices are generated automatically in the ``Draft`` state by OpenERP.
-You can modify invoices before approving them finally.
+You can modify invoices before finally approving them.
 
 .. figure:: images/mrp_invoice_list.png
-   :scale: 75
+   :scale: 70
    :align: center
 
    *List of invoices generated by the system based on deliveries*
@@ -784,7 +784,7 @@ or all at once by using the available actions. Then print the invoices using the
 option and send them to your customers by post.
 
 Traceability
--------------
+------------
 
 Now suppose that the customer phones you to tell you about a production fault in a delivered
 product. You can consult the traceability through the whole manufacturing chain using the
@@ -800,8 +800,8 @@ traceability as described in the section :ref:`sect-lotmgt` in the :ref:`ch-stoc
    single: order; manufacturing
    single: order; production
 
-Production order in detail
-===========================
+Production Order in Detail
+==========================
 
 To open a Production Order, use the menu
 :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click on `New` button.
@@ -838,7 +838,7 @@ The location for depositing the finished products.
 For simplicity, put the ``Stock`` location in both places. The field :guilabel:`Bill of Materials` will
 automatically be completed by OpenERP when you select the product.  You
 can then overwrite it with another BoM to specify something else to use for this specific
-manufacture then Click the button :guilabel:`Compute Data`.
+manufacture, then click the button :guilabel:`Compute Data`.
 
 The tabs :guilabel:`Scheduled Products` and :guilabel:`Work Orders` are also completed automatically when you click
 :guilabel:`Compute Data`. You will find the raw materials there that are required for
@@ -854,14 +854,14 @@ The information in the :guilabel:`Consumed Products` tab can be changed if:
 
 * you want to change the quantities consumed (lost during production).
 
-For traceability you can set lot numbers on the raw materials used, or on the finished
+For traceability, you can set lot numbers on the raw materials used, or on the finished
 products.
 Note the :guilabel:`Production Lot` and :guilabel:`Pack` numbers.
 
 Once the order is confirmed, you should force the reservation of materials
 using the :guilabel:`Force Reservation` button. This means that you do not have
 to wait for the scheduler to assign and reserve the raw materials from your stock for this
-production run. This shortcuts the procurement process.
+production run. This shortens the procurement process.
 
 If you do not want to change the priorities, just
 leave the production order in this state and the scheduler will create a plan based on the priority
@@ -880,7 +880,7 @@ then moved into stock.
    single: requirements planning
 
 Scheduling
-===========
+==========
 
 The requirements scheduler is the calculation engine which plans and prioritises production
 and purchasing automatically from the rules defined on these products. It is started once
@@ -899,13 +899,13 @@ You can set the starting time by modifying the corresponding action in the menu
 
    *Configuring the start time for calculating requirements*
 
-.. tip::  Calculating requirements / scheduling
+.. tip::  Calculating Requirements / Scheduling
 
-    Scheduling only validates procurement confirmed but not started. These procurement reservations
+    Scheduling only validates procurements that are confirmed but not yet started. These procurement reservations
     will themselves start production, tasks or purchases depending on the configuration of the
     requested product.
 
-You take account of the priority of operations in starting reservations and procurement.
+You take account of the priority of operations in starting reservations and procurements.
 The urgent requests, or those with a date in the past, or those with a date earlier than the others will be
 started first so that if there are not enough products in stock to satisfy all the requests, the
 most urgent will be produced first.

@@ -4,14 +4,14 @@ Stocks
 .. index::
    single: virtual; stock
 
-In the product form you can find the Stock by Location action that will give you the stock levels of the various
+In the product form you can find the `Stock by Location` action that will give you the stock levels of the various
 different products in any selected location. If you have not selected any location, OpenERP
-calculates stocks for all of the physical locations. When you are in the Stock by Location view, click the Print button to print the Location Content or the Location Inventory Overview reports.
+calculates stocks for all of the physical locations. When you are in the Stock by Location view, click the `Print` button to print the `Location Content` or the `Location Inventory Overview` reports.
 
-.. note::  Availability of stock
+.. note::  Availability of Stock
 
-    Depending on whether you look at the product from a customer order or from the menu of a product
-    form you can get different values for stock availability. If you use the product menu you get
+    Depending on whether you look at the product from a customer order, or from the menu of a product
+    form, you can get different values for stock availability. If you use the product menu, you get
     the stock in all of the physical stock locations. Looking at the product from the order you will
     only see the report of the warehouse selected in the order.
 
@@ -27,7 +27,7 @@ In this respect, two important fields in the product form are:
     real stock, this means products will be coming in. If virtual stock is smaller than real stock, certain products are
     reserved for other sales orders or work orders.
 
-.. tip:: Detail of future stock
+.. tip:: Detail of Future Stock
 
    To get more details about future stock, you can click :guilabel:`Stock Level Forecast` to the right of the product form
    to get the report :ref:`fig-stfore` below.
@@ -44,8 +44,8 @@ In this respect, two important fields in the product form are:
 
 .. tip:: Filter on Stock by Location 
 
-   By default in Product list view, the columns Real Stock and Virtual Stock show the stock figures for all stock locations
-   where a product is stored. Use the Extended Filters to enter a specific stock location if you want to see the stock in a
+   By default, in Product list view, the columns `Real Stock` and `Virtual Stock` show the stock figures for all stock locations
+   where a product is stored. Use the `Extended Filters` to enter a specific stock location if you want to see the stock in a
    specific location.
 
 Lead Times and Locations
@@ -97,7 +97,7 @@ into the system by location for the products in stock. Use the menu :menuselecti
 --> Inventory Control --> Physical Inventories` to do your initial inventory.
 
 .. figure:: images/stock_inventory_new.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Defining a new inventory operation*
@@ -109,7 +109,7 @@ You have three ways of doing an inventory.
 
 * Click the Import inventory action and select the location concerned. You can choose to include child locations and set the inventory to zero (especially useful to ensure the count is done correctly).
 
-* You can update the inventory from the Product form. Go to the `Information` tab, Stocks and click the Update button. On confirmation, OpenERP will create a Physical Inventory.
+* You can update the inventory from the Product form. Go to the `Information` tab, `Stocks` section, and click the `Update` button. On confirmation, OpenERP will create a Physical Inventory.
 
 * You can manually add inventory lines. You can then enter data about the quantities available for each product by location.
   Start by entering the location, for example ``Stock`` , and then select the product. OpenERP
@@ -155,7 +155,7 @@ Receipt of a Supplier Order by Purchase Order
 Incoming Shipments forms are automatically prepared by OpenERP from the purchase management
 process. You will find a list of all the awaited receipts in the menu :menuselection:`Warehouse
 --> Warehouse Management --> Incoming Shipments`. Use the order number or the supplier name to find the
-right goods receipt form for confirmation of a goods in. This approach enables you to control
+right goods receipt form for confirmation of a goods-in. This approach enables you to control
 quantities received by referring to the quantities ordered.
 
 .. figure:: images/stock_picking_in_tree.png
@@ -172,12 +172,12 @@ should then enter data about the products received in the lines.
 
 The source location is already completed by default because of your supplier selection. You should
 then give the destination location where you will place the products. For example, enter ``Stock``.
-At this stage you can set a lot number for traceability (this function will be described later in
+At this stage, you can set a lot number for traceability (this function will be described later in
 this chapter, so leave this field empty for the moment).
 
 Once the form has been completed you can confirm the receipt of all the products at the same time
 using the :guilabel:`Process Now` button. If you want to enter data for a goods receipt that you are still
-waiting for click the button :guilabel:`Process Later`.
+waiting for, click the button :guilabel:`Process Later`.
 
 .. figure:: images/stock_picking_in_form.png
    :scale: 75
@@ -188,7 +188,7 @@ waiting for click the button :guilabel:`Process Later`.
 The products then arrive in stock and should reflect the quantities shown on the product form.
 
 In the `Incoming Shipments` form, the field :guilabel:`Invoicing Control` lets you influence the way you
-send invoices to suppliers. If this is set to ``To be invoiced`` a supplier invoice will now be
+send invoices to suppliers. If this is set to ``To be invoiced``, a supplier invoice will now be
 generated automatically in the draft state, based on the goods received. Your accountant then has to
 confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that
 the invoiced quantities correspond to the quantities received.
@@ -198,7 +198,7 @@ Receipt of a Supplier Order by Product
 
 From this version on, you can also handle receptions by product, even from List view. Go to :menuselection:`Warehouse --> Products Moves --> Receive Products`.
 
-Filters allow you to easily select receipts to be done, and so on. One way to quickly receive products is to Group by Supplier and select To Do. 
+Filters allow you to easily select receipts to be done, and so on. One way to quickly receive products is to Group by `Supplier` and select `To Do`. 
 
 This is very useful functionality when your supplier sends the goods for several purchase orders at a time. You can now just receive the products, regardless of the purchase order they come from.
 
@@ -213,23 +213,25 @@ Customer Delivery
    single: module; sale
 
 Everything about goods receipt can also be done manually for a customer delivery. But this time, use
-the automated product delivery processes based on customer orders. Install the :mod:`sale` module so
+the automated product delivery processes based on customer orders. Install the :mod:`sale` module (`Reconfigure` wizard, `Sales Management`), so
 that you can proceed further in this section of the chapter.
 
 Now create a new customer order from the menu :menuselection:`Sales --> Sales --> Sales Orders`.
 Enter the following data in this order:
 
-* :guilabel:`Shop` : OpenERP S.A.
+* :guilabel:`Shop` : ``OpenERP S.A.``
 
-* :guilabel:`Customer` : Agrolait
+* :guilabel:`Customer` : ``Agrolait``
 
-* :guilabel:`Order Line` :
+* :guilabel:`Sale order lines` :
 
-  * :guilabel:`Product` : Basic+ PC (assembly on order),
+  * :guilabel:`Product` : ``[PC2] Basic+ PC (assembly on order)``,
 
-  * :guilabel:`Quantity` : 3 PCE
+  * :guilabel:`Quantity (UoM)` : ``3``,
 
-  * :guilabel:`Procurement Method` : from stock.
+  * :guilabel:`Product UoM` : ``PCE``,
+
+  * :guilabel:`Procurement Method` : ``from stock``.
 
 You have already seen that OpenERP shows you the available product stock when you have selected list
 mode. The real stock is equal to the virtual stock because you have nothing to deliver to customers
@@ -237,7 +239,7 @@ and you are not waiting for any of these products to be received into stock. The
 all the information needed to take orders efficiently.
 
 .. figure:: images/stock_sale_form.png
-   :scale: 75
+   :scale: 70
    :align: center
 
    *Entering an order for three computers*
@@ -280,12 +282,12 @@ the items proposed by OpenERP.
 
 You can also confirm a customer delivery using the :guilabel:`Confirm Order` button in the `Sales Order`.
 When you click the :guilabel:`Process` button of `Outgoing Deliveries`, a window opens where you can
-enter the quantities actually delivered. If you enter a value less than the forecasted one, OpenERP
+enter the quantities actually delivered. If you enter a value less than the forecast one, OpenERP
 automatically generates a partial delivery note and a new order for the remaining items. For this
 exercise, just confirm all the products.
 
-If you return to the list of current orders you will see that your order has now been marked as
-delivered (done). A progress indicator from 0% to 100% is shown by each order so that the
+If you return to the list of current orders, you will see that your order has now been marked as
+delivered (``Done``). A progress indicator from 0% to 100% is shown by each order so that the
 salesperson can follow the progress of his orders at a glance.
 
 .. figure:: images/stock_sale_tree.png
@@ -300,9 +302,9 @@ salesperson can follow the progress of his orders at a glance.
 .. note:: Negative Stock
 
     Stock Management is very flexible so that it can be more effective.
-    For example if you forget to enter products at goods in, this will not prevent you from sending
+    For example, if you forget to enter products at goods-in, this will not prevent you from sending
     them to customers.
-    In OpenERP you can force all operations manually using the button :guilabel:`Force Assignment`.
+    In OpenERP, you can force all operations manually using the button :guilabel:`Force Availability`.
     In this case, your stocks risk becoming negative. You should monitor all stocks for negative
     levels and carry out an inventory correction when that happens.
 
@@ -314,11 +316,11 @@ Customer Delivery by Product
 
 From this version on, you can also handle deliveries by product, even from List view. Go to :menuselection:`Warehouse --> Products Moves --> Deliver Products`.
 
-Filters allow you to easily select deliveries to be done, available deliveries and so on. One way to quickly deliver products is to Group by Customer and select either To Do or Available.
+Filters allow you to easily select deliveries to be done, available deliveries and so on. One way to quickly deliver products is to Group by `Customer` and select either `To Do` or `Available`.
  
-This is very useful functionality when you send the goods to your customer for several sales orders at a time. You can now just deliver the products, regardless of the sales order they come from.
+This is very a useful functionality when you send the goods to your customer for several sales orders at a time. You can now just deliver the products, regardless of the sales order they come from.
 
-The List view offers great flexibility and allows you to rapidly deliver products by keeping full functionality! Of course, you can handle both partial and complete deliveries and you can add information about the production lots and packs.
+The List view offers great flexibility and allows you to rapidly deliver products by keeping full functionality! Of course, you can handle both partial and complete deliveries, and you can add information about the production lots and packs.
 
 Of course, you can also accomplish this from Form view.
 
@@ -347,9 +349,9 @@ If you want more information, you can use the actions to the right of the form. 
 report :guilabel:`Stock Level Forecast`, OpenERP opens a graphical view of the stock levels for
 the selected products changing with time over the days and weeks to come.
 
-To get the stock levels by location use the button :guilabel:`Stock by Location`.  OpenERP then
+To get the stock levels by location, use the button :guilabel:`Stock by Location`. OpenERP then
 gives you the stock of this product for all its possible locations. If you only want to
-see the physical locations in your company just filter this list using the Location Type :guilabel:`Internal`. By default, physical locations are already in red to better distinguish them from the other locations.
+see the physical locations in your company, just filter this list using the `Location Type` ``Internal``. By default, physical locations are already in red to better distinguish them from the other locations.
 Consolidated (or View) locations (the sum of several locations, following the hierarchical structure) are
 displayed in blue.
 
@@ -364,7 +366,7 @@ from a source location to a destination location. Everything that influences sto
 corresponds to a stock move.
 
 You could also look at the stocks available in a location using the menu :menuselection:`Inventory
-Control --> Locations Structure`. You can select the locations for which you want to see the hierarchy by clicking the drop-down list. Click a location to look at the stocks by product (a wizard appears)). A location
+Control --> Locations Structure`. You can select the locations for which you want to see the hierarchy by clicking the drop-down list. Click a location to look at the stocks by product (a wizard appears). A location
 containing child locations shows the consolidated contents for all of its child locations.
 
 You should now check the product quantities for various locations to familiarize yourself with this
@@ -387,8 +389,8 @@ supplier location:
   quantities expected from these suppliers). It is the same scheme for customer locations and
   production locations.
 
-From the :menuselection:`Reporting` have a look at the Dashboard and the Analysis Reports, such as Inventory Analysis and Moves Analysis.
-The filters allow you to see for instance the current and future stock, for all locations or for a given location. You can use Extended Filters and the Group by functionality to create your own reporting.
+From the :menuselection:`Warehouse --> Reporting` menu have a look at the Dashboard and the Analysis Reports, such as `Inventory Analysis` and `Moves Analysis`.
+The filters allow you to see for instance the current and future stock, for all locations or for a given location. You can use Extended Filters and the Group by functionality to create your own report.
 
 .. Copyright © Open Object Press. All rights reserved.
 

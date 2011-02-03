@@ -19,7 +19,7 @@ same time.
 .. index::
    single: stock; journal
 
-The different journals
+The Different Journals
 ----------------------
 
 .. index::
@@ -34,10 +34,10 @@ Install the Reconfigure option `Invoicing Journals` for Sales Management or the 
 * Delivery journals.
 
 Invoicing journals (:menuselection:`Sales --> Configuration --> Sales --> Invoice Types`) are used to assign purchase orders and/or delivery orders to a given invoicing journal. Everything in the journal can be invoiced in one go, and you can control the amounts by
-journal. For example you can create the following journals: daily invoicing, end-of-week invoicing
+journal. For example, you can create the following journals: daily invoicing, end-of-week invoicing
 and monthly invoicing. It is also possible to show the invoicing journal by default in the
 partner form.
-Set the Invoicing Method to Grouped (one invoice per customer) or Non Grouped (individual invoices) according to your needs.
+Set the `Invoicing Method` to ``Grouped`` (one invoice per customer) or ``Non Grouped`` (individual invoices) according to your needs.
 
 Order journals look like orders and are automatically transferred to orders for the corresponding
 items. These enable you to classify the orders in various ways, such as by department, by
@@ -49,12 +49,12 @@ easily see the work on current items compared with her own orders.
    To enter all the orders in their own order journal, a salesperson can use the default values that
    are entered in the fields when creating orders.
 
-Finally the delivery journals are used to post each item into a delivery journal. For example you
+Finally, the delivery journals are used to post each item into a delivery journal. For example, you
 can create journals dated according to customer delivery dates (such as Monday's deliveries, or
 afternoon deliveries) or these journals could represent the day's work for delivery vehicles (such
 as truck1, truck2).
 
-Using the journals
+Using the Journals
 ------------------
 
 You will now see how to use the journals to organize your stock management in practice. After
@@ -79,9 +79,9 @@ should be grouped or not after you have generated them in the journal. Create a 
 
 Then enter the data for some orders for these two partners. After entering these order data, the
 field :guilabel:`Invoicing Mode` is completed automatically from the partner settings. Put these
-orders into the Invoicing Mode based on items in the second tab.
+orders into the `Invoicing Mode` based on items in the second tab.
 
-Look at the `History` tab of the Sales order to the Picking List that has been created. The field :guilabel:`Invoicing Mode` is
+Look at the `History` tab of the Sales order, and observe the `Picking List` that has been created. The field :guilabel:`Invoicing Mode` is
 automatically shown there. Confirm the different orders in the list.
 
 At the end of the day, the invoicing supervisor can display the list by journal. Go to the
@@ -104,7 +104,7 @@ You can also enter a journal to confirm / cancel all the orders in one go. Then 
 quotations, assign them to a journal and confirm or cancel them at once.
 
 .. figure:: images/stock_journal_form.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *View of an Order Journal*

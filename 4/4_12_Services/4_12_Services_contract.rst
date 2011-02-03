@@ -13,7 +13,7 @@ several distinct types of service contracts, such as:
 
 * fixed-price contracts, invoiced monthly as services are carried out.
 
-.. tip:: Contract quotations
+.. tip:: Contract Quotations
 
 	Some companies commit to contracts on the basis of a requested volume at a certain price for a
 	defined period.
@@ -24,7 +24,7 @@ several distinct types of service contracts, such as:
 	(depending on whether it is a purchase or sales agreement).
 	OpenERP automatically selects the price based on this agreed pricelist.
 
-Fixed Price contracts
+Fixed Price Contracts
 ---------------------
 
 Fixed price contracts for the sale of services are represented in OpenERP by a Sales Order. In
@@ -37,7 +37,7 @@ accounting impact on the system until it is confirmed. When you confirm the orde
 moves into the state \ ``Manual In Progress`` \.
 
 .. figure::  images/service_sale_workflow.png
-   :scale: 50
+   :scale: 55
    :align: center
 
    *Process for handling a Sales Order*
@@ -61,18 +61,18 @@ Policy` on the order's second tab :guilabel:`Other Information`:
 
 .. index:: delivery
 
-.. note:: Delivery of an order
+.. note:: Delivery of an Order
 
 	The term 'delivery' should be taken in the broadest sense in OpenERP.
 	The effect of a delivery depends on the configuration of the sold product.
 
-	If its type is either Stockable Product or Consumable, OpenERP will make a request for it to be
+	If its type is either ``Stockable Product`` or ``Consumable``, OpenERP will make a request for it to be
 	sent for picking.
-	If the product's type is Service, OpenERP's scheduler will create a task in the project management
+	If the product's type is ``Service``, OpenERP's scheduler will create a task in the project management
 	system,
-	or create a subcontract purchase order if the product's Procurement Method is Make to Order.
+	or create a subcontract purchase order if the product's `Procurement Method` is ``Make to Order``.
 
-	Invoicing after delivery does as it says: invoicing for the services when the tasks have been
+	``Invoicing after delivery`` does as it says: invoicing for the services when the tasks have been
 	closed.
 
 When you sign a new contract, you can just enter the order into the system and OpenERP will track
@@ -96,7 +96,7 @@ In this case you should create several invoices for the one Sales Order. You hav
   Invoices` section. When you create an invoice from the order, OpenERP deducts the amounts of the
   invoices already linked to the order to calculate the proposed invoice value.
 
-Cost-reimbursement contracts
+Cost-reimbursement Contracts
 ----------------------------
 
 Some contracts are not invoiced from a price fixed on the order but from the cost of the services
@@ -126,7 +126,7 @@ services, purchase of raw materials, and expense reimbursements.
    single: pricelist
 ..
 
-.. note:: Pricelists and billing rates
+.. note:: Pricelists and Billing Rates
 
 	You can select a pricelist on the analytic account without having to use it to specify billing
 	rates.
@@ -147,7 +147,7 @@ list and click the appropriate action button to generate the corresponding invoi
 the level of detail which is reported on the invoice, such as the date and details of the services.
 
 .. figure::  images/service_timesheet_invoice.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Screen for invoicing services*
@@ -155,7 +155,7 @@ the level of detail which is reported on the invoice, such as the date and detai
 .. index::
    single: module; account_analytic_analysis
 
-.. note:: Project Management and analytic accounts
+.. note:: Project Management and Analytic Accounts
 
 	:guilabel:`Analytic Accounts` is only available once you have
 	installed the module :mod:`account_analytic_analysis`.
@@ -164,7 +164,7 @@ the level of detail which is reported on the invoice, such as the date and detai
 Select an entry and click :guilabel:`Invoice analytic lines` link on the right of the form.
 You can then invoice the selected entry by clicking :guilabel:`Create Invoices`.
 
-Fixed-price contracts invoiced as services are worked
+Fixed-price Contracts Invoiced as Services are Worked
 -----------------------------------------------------
 
 For large-valued projects, fixed-price invoicing based on the sales order is not always appropriate.
@@ -236,7 +236,7 @@ for fixed-price contracts:
 	In contract negotiation, invoicing conditions are often neglected by the client.
 	So it can often be straightforward to apply this method of invoicing.
 
-Contracts limited to a quantity
+Contracts Limited to a Quantity
 -------------------------------
 
 .. index::

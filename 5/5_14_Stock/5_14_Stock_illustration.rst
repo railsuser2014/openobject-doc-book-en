@@ -34,7 +34,7 @@ receipt of the products:
    Physical Locations > OpenERP S.A. > Stock          +30 bicycles
    ================================================== =============
 
-If you deliver 2 bicycles to a European customer you will get the following transactions for the
+If you deliver 2 bicycles to a European customer, you will get the following transactions for the
 delivery:
 
 .. table:: Stock Move Operation from Stock to European Customers
@@ -63,7 +63,7 @@ zero. In accounting you would say that the sum of the debits is equal to the sum
 
 Partner locations (customers and suppliers) are not located under your company in the hierarchical
 structure, so their contents are not considered as part of your own stock. So if you just look at
-the physical locations inside your own company those two bicycles are no longer in your company.
+the physical locations inside your own company, those two bicycles are no longer in your company.
 They are no longer in your own physical stock, but it is still very useful to see them in your customer's
 stock because that helps when you carry out detailed stock management analysis.
 
@@ -79,7 +79,7 @@ stock because that helps when you carry out detailed stock management analysis.
 
 You can make a comparison with accounting, where you will easily find an error because you can look
 for an anomaly in an account or in the counterparts: if there is not enough in a bank account then that is
-probably because someone hass forgotten to enter a customer's invoice payment. You always know that the
+probably because someone has forgotten to enter a customer's invoice payment. You always know that the
 sum of debits must equal the sum of the credits in both accounting and OpenERP's stock management.
 
 In accounting, all documents lead to accounting entries that form the basis of management
@@ -149,14 +149,14 @@ moving products out of and into physical stock. The stock operations for this ar
 So now you have got the outcome you need from the consumption of raw materials and the manufacturing of
 finished products.
 
-.. note::  Assessing created value
+.. note::  Assessing Created Value
 
     You might already have noticed a useful effect of this approach:
     if you do a stock valuation in the ``Virtual Locations > Production`` location you get
     a statement of value created by your company (as a negative amount).
     Stock valuation in any given location is calculated by multiplying quantities of products in
     stock by their cost.
-    In this case the raw material value is deducted from the finished product value.
+    In this case, the raw material value is deducted from the finished product value.
 
 .. Copyright © Open Object Press. All rights reserved.
 

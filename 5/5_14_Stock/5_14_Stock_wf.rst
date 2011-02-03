@@ -58,9 +58,9 @@ procurement. The three distinct product types are:
 
 * :guilabel:`Consumable`: This product is handled in stock management, you can receive it, deliver it and produce it.
   However, its stock level is not managed by the system. OpenERP assumes that you have got sufficient levels
-  in stock at all time, so it does not restock it automatically. Example: nails.
+  in stock at all times, so it does not restock it automatically. Example: nails.
 
-* :guilabel:`Service`: It does not appear in the various stock operations. Example, a consulting
+* :guilabel:`Service`: It does not appear in the various stock operations. Example: a consulting
   service.
 
 Procurement Methods – Make to Stock and Make to Order
@@ -82,12 +82,12 @@ enabling the salesperson to choose the best mode for fulfilling a particular ord
 sales order parameters as needed.
 
 The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
-managed Make to Order and another managed Make to Stock. The two figures are taken from OpenERP's :guilabel:`Stock Level Forecast` report, available from the product form.
+managed as `Make to Order` and another managed as `Make to Stock`. The two figures are taken from OpenERP's :guilabel:`Stock Level Forecast` report, available from the product form.
 
 .. _fig-stfrst:
 
 .. figure:: images/stock_from_stock.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Change in stock for a product managed as Make to Stock*
@@ -95,7 +95,7 @@ managed Make to Order and another managed Make to Stock. The two figures are tak
 .. _fig-stfrord:
 
 .. figure:: images/stock_from_order.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Change in stock for a product managed as Make to Order*
@@ -132,7 +132,7 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
-   :scale: 90
+   :scale: 55
    :align: center
 
    *Workflow for automatic procurement, depending on the configuration of the product*
@@ -167,11 +167,11 @@ Units of Measure
 ----------------
 
 OpenERP supports several units of measure. Quantities of the same product can be expressed in
-several units of measure at once. For example you can buy grain by the tonne and resell it by kg.
+several units of measure at once. For example, you can buy grain by the tonne and resell it by kg.
 You just have to make sure that all the units of measure used for a product are in the same units of
 measure category.
 
-.. note:: Categories of units of measure
+.. note:: Categories of Units of Measure
 
    All units of measure in the same category are convertible from one unit to another.
 
@@ -193,7 +193,7 @@ convert from one unit of measure to another as long as they are in the same cate
    100 Items Unit           0.01
    ========= ============ ====== =========
 
-Depending on the table above you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
+Depending on the table above, you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
 category could be expressed in Kg, Tonnes or Grammes. You cannot express it in hours or pieces.
 
 Use the menu :menuselection:`Warehouse --> Configuration --> Products -->  Units of Measure --> Units of Measure`
@@ -216,14 +216,14 @@ gives rounding to one hundredth.
 To activate the management options for double units of measure, assign the group :guilabel:`Useability /
 Product UoS View` to your user.
 
-In this case the same product can be expressed in two units of measure belonging to different
+In this case, the same product can be expressed in two units of measure belonging to different
 categories. You can then distinguish between the unit of stock management (the piece) and the unit
 of invoicing or sale (kg).
 
 In the product form you can then set one unit of measure for sales and stock management, and one
 unit of measure for purchases.
 
-These units are given suggested titles. For each operation on a product you can use another unit of
+These units are given suggested titles. For each operation on a product, you can use another unit of
 measure, as long as it can be found in the same category as the two units already defined. If you
 use another unit of measure, OpenERP automatically handles the conversion of prices and quantities.
 

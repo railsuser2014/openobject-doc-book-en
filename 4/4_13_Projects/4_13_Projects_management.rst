@@ -195,7 +195,7 @@ find the list of uninvoiced task works.
 Click the action :guilabel:`Invoice analytic lines` when you want to create an invoice for this task work.
 
 .. figure::  images/project_invoice_from_task_work.png
-   :scale: 65
+   :scale: 70
    :align: center
 
    *Form to Create Invoice from Tasks Work*
@@ -248,7 +248,7 @@ calculates a project plan for earliest delivery using task ordering and the work
 	You can then delete, create or modify tasks using drag and drop (only in web).
 
 	.. figure::  images/service_task_calendar.png
-	   :scale: 50
+	   :scale: 65
 	   :align: center
 
 	*Calendar View of the System Tasks*

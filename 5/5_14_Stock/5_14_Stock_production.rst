@@ -17,7 +17,7 @@ by the logistics manager.
    and Procurement is either one or both of those. So it would be better to call the
    MPS the Master Procurement Schedule. Which OpenERP does!
 
-.. tip:: Product trading
+.. tip:: Product Trading
 
     Also called the Production Plan, this tool is also very useful for traded products which are not
     manufactured.
@@ -42,7 +42,7 @@ Some companies plan daily, others weekly or monthly.
    production cycle. You generally work daily, weekly or monthly.
 
    If it takes several days to assemble your products, you most likely will define a weekly plan. If your
-   manufacturing cycles take several months you can work with a monthly plan.
+   manufacturing cycles take several months, you can work with a monthly plan.
 
 Go to the menu :menuselection:`Sales --> Configuration --> Stock and Sales Periods -->
 Stock and Sales Periods`. A window appears enabling you to automatically define the next periods that will be
@@ -56,7 +56,7 @@ provided for stock management.
 
 Salespeople can then enter their sales forecasts by product and by period using the menu
 :menuselection:`Sales --> Sales Forecasts --> Sales Forecasts`. The forecasts can be
-made by quantity or by value. For a forecast by amount OpenERP automatically calculates for you the
+made by quantity or by value. For a forecast by amount, OpenERP automatically calculates for you the
 quantity equivalent to the estimated amount. This can be modified manually as needed before
 completion.
 
@@ -101,16 +101,16 @@ For each period and product, OpenERP gives you the following information:
 
    *The Master Production Schedule (MPS)*
 
-The production plan enables the logistics manager to play with the forecasted receipts and
+The production plan enables the logistics manager to play with the forecast receipts and
 outgoings and test the impact on the future stock for the product concerned. It enables
-you for example to check that the stock does not fall below a certain level for that product.
+you, for example, to check that the stock does not fall below a certain level for that product.
 
-You can also open the production plan for past periods. In this case OpenERP shows you the real
+You can also open the production plan for past periods. In this case, OpenERP shows you the real
 stock moves, by period for forecast reports.
 
-If you do not have automated procurement rules for a product you can start procurement at any time
+If you do not have automated procurement rules for a product, you can start procurement at any time
 based on the estimates of the production plan.
-To do this press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on
+To do this, press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on
 the :guilabel:`Master Procurement Schedule`.
 OpenERP plans procurement for an amount equal to the entries forecast.
 

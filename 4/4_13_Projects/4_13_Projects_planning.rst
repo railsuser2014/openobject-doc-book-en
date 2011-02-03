@@ -30,7 +30,7 @@ The planning function covers several objectives which will be described in this 
 
 * passing the high-level objectives to lower levels in the company's hierarchy.
 
-.. tip:: The social role of planning
+.. tip:: The Social Role of Planning
 
 	Some project managers think that they can manage planning on their own.
 	They are commonly overworked and think that meetings are a waste of time.
@@ -51,7 +51,7 @@ The planning function covers several objectives which will be described in this 
 .. index::
    single: tasks
 
-Planning by time or by tasks?
+Planning by Time or by Tasks?
 -----------------------------
 
 There are two major approaches to enterprise planning: planning by task and planning by time. You
@@ -84,7 +84,7 @@ In this time-focused planning approach, clients' priorities do not feature in th
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
-	.. note:: Comparing the two planning methods
+	.. note:: Comparing the Two Planning Methods
 
 			To illustrate the difference between planning by time and planning by task, take the case of an
 			IT project that is estimated to be around six months of work. This project is managed by iterative
@@ -185,7 +185,7 @@ the real time worked.
 You can also study several of your project's figures from the menus in :menuselection:`Project
 --> Reporting`.
 
-Planning at all levels of the Hierarchy
+Planning at all Levels of the Hierarchy
 ---------------------------------------
 
 .. index::

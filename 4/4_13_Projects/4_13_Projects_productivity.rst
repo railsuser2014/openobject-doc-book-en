@@ -32,7 +32,7 @@ time management:
   organizations on the use of these practices, and reports on the productivity improvements in the
   organization that result.
 
-  .. note:: Managing time efficiently
+  .. note:: Managing Time Efficiently
 
      David Allen, Getting Things Done, Penguin Books, New York, 2001, 267 pages. (ISBN :
      978-0142000281). Also see the site: http://davidco.com
@@ -40,7 +40,7 @@ time management:
      Stephen R. Covey, The 7 Habits of Highly Effective People, Free Press, 1989, 15th Anniversary
      Edition : 2004, 384 pages. (ISBN : 978-0743269513).
 
-  .. tip:: De-stress yourself !
+  .. tip:: De-stress Yourself!
 
 	 Clear the tasks that clutter your thoughts by registering them in an organized system.
 	 This immediately helps you to de-stress yourself and organize your work in the best possible way.
@@ -58,7 +58,7 @@ time management:
 The objective in this detour is not to detail the whole methodology, but to describe the supporting
 tools provided by OpenERP's :mod:`project_gtd` module.
 
-Not everything that is urgent is necessarily important
+Not Everything that is Urgent is Necessarily Important
 ------------------------------------------------------
 
 The first modification brought by the module to the basic OpenERP system is a separation of the
@@ -223,7 +223,7 @@ to the weekly timebox to sit in amongst the tasks that will be planned next morn
 Do the same each week and each month using the same principles, but just using the appropriate
 timeboxes for those periods.
 
-Some convincing results
+Some Convincing Results
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 After a few days of carefully practising this method, users have reported the following

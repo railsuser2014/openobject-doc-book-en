@@ -2,7 +2,7 @@
 .. _part-phys:
 
 #####################################################
-Manage your Warehouse and Get your Manufacturing done
+Manage your Warehouse and Get your Manufacturing Done
 #####################################################
 
  This part of the book concentrates on physical materials - the handling of stock and
@@ -13,7 +13,7 @@ Manage your Warehouse and Get your Manufacturing done
  sets and individually. They have a size, a weight, and a cost.
  OpenERP manages all of this in some rather useful and unique ways.
 
- Manufacture is the transformation of materials and components, perhaps using measurable
+ Manufacturing is the transformation of materials and components, perhaps using measurable
  resources, into other products and services, adding value to your company on the way.
 
 .. toctree::
