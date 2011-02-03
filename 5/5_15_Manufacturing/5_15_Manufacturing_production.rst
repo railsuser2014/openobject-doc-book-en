@@ -43,50 +43,59 @@ The cabinet is assembled from raw materials and intermediate assemblies:
 
 .. table:: Product Definitions before defining Bills of Materials
 
-   ================ =========================
-   Product Code     Description
-   ================ =========================
-   ARM100           Cabinet
-   PANLAT           Wooden Side Panel
-   PANA100          Rear Panel
-   PROFIL           Metal Strut
-   ETA100           Shelf
-   PLET100          Shelf Panel
-   BOIS002          Wood Panel
-   BOIS010          Wood Panel
-   TAQ000           Panel Pins
-   LIN040           Lintel
-   ================ =========================
+   ========== ================= =========================
+   Image Code Product Reference Description
+   ========== ================= =========================
+   ARM100     SHE100            Cabinet
+   PANLAT     SIDEPAN           Side Panel
+   PANA100    RPAN100           Rear Panel SHE100
+   PROFIL     PROFIL            Assembly Section
+   ETA100     RCK100            Rack 100cm
+   BOIS002    WOOD002           Wood 2mm
+   TAQ000     METC000           Metal Cleats
+   LIN40      LIN40             Wood Lintel 4m
+   ========== ================= =========================
+
+.. table:: New Products to be created before defining Bill of Materials
+
+   ========== ================= =========================
+   Image Code Product Reference Description
+   ========== ================= =========================
+   PLET100    SPAN100           Shelf Panel
+   BOIS010    WOOD010           Wood 10mm
+   ========== ================= =========================
+
+.. tip:: To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm.
 
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
-product and for the final cabinet assembly. These are given by the table below.
+product and for the final cabinet assembly. These are given by the table below. You can start from the demo data and complete them according to the specifications below.
 
-.. table:: Bill of Materials for 1 ARM100 Unit
+.. table:: Bill of Materials for 1 SHE100 Unit
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PANLAT        2         Unit
-   PANA100       1         Unit
+   SIDEPAN       2         Unit
+   RPAN100       1         Unit
    PROFIL        4         Unit
-   ETA100        3         Unit
+   RCK100        3         Unit
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 ETA100 Unit
-
-   ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
-   ============  ========  ===============
-   PLET100       1         Unit
-   TAQ000        4         Unit
-   ============  ========  ===============
-
-.. table:: Bill of Materials for 1 PLET100 Unit
+.. table:: Bill of Materials for 1 RCK100 Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   BOIS010       0.083     m2
+   SPAN100       1         Unit
+   METC000       4         Unit
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 SPAN100 Unit
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   WOOD010       0.083     m2
    ============  ========  ===============
 
 .. table:: Bill of Materials for 1 PROFIL Unit
@@ -97,20 +106,20 @@ product and for the final cabinet assembly. These are given by the table below.
    LIN40         0.25      m
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 PANA100 Unit
+.. table:: Bill of Materials for 1 RPAN100 Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   BOIS002       0.25      m2
+   WOOD002       0.25      m2
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 PANLAT Unit
+.. table:: Bill of Materials for 1 SIDEPAN Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   BOIS002       0.083     m2
+   WOOD002       0.083     m2
    ============  ========  ===============
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
@@ -122,10 +131,10 @@ calculate what will be consumed:
    ============  ========================  ===============
    Product Code  Quantity                  Unit of Measure
    ============  ========================  ===============
-   BOIS002       0.416 (2 * 0.083 + 0.25)   m2
-   LIN040        1 (4 * 0.25)               m
-   BOIS010       0.249 (0.083 * 3)          m2
-   TAQ000        12 (3 * 4)                 Unit
+   WOOD002       0.416 (2 * 0.083 + 0.25)   m2
+   LIN40         1 (4 * 0.25)               m
+   WOOD010       0.249 (0.083 * 3)          m2
+   METC000       12 (3 * 4)                 Unit
    ============  ========================  ===============
 
 .. tip:: Bill of Materials
@@ -213,22 +222,22 @@ In OpenERP, each line of a bill of materials may itself be a bill of materials. 
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
 :ref:`fig-mrparm` you could define the single bill of materials below:
 
-.. table:: Single Bill of Materials for 1 ARM100 Unit
+.. table:: Single Bill of Materials for 1 SHE100 Unit
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
-   PANLAT        2         Unit
-   BOIS002       0.166     m2
-   PANA100       1         Unit
-   BOIS002       0.25      m2
+   SHE100        1         Unit
+   SIDEPAN       2         Unit
+   WOOD002       0.166     m2
+   RPAN100       1         Unit
+   WOOD002       0.25      m2
    PROFIL        4         Unit
-   LIN040        1         m
-   ETA100        3         Unit
-   PLET100       3         Unit
-   BOIS010       0.249     m2
-   TAQ000        12        Unit
+   LIN40         1         m
+   RCK100        3         Unit
+   SPAN100       3         Unit
+   WOOD010       0.249     m2
+   METC000       12        Unit
    ============  ========  ===============
 
 OpenERP behaves differently depending on whether the bill of materials is defined in several small
@@ -241,59 +250,59 @@ manufacture a cabinet, you would create 6 production orders:
 .. table:: Production Order
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PLET100       3         Unit
-   BOIS010       0.249     m2
-   ============  ========  ===============
-
-.. table:: Production Order
-
-   ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
-   ============  ========  ===============
-   ETA100        3         Unit
-   PLET100       3         Unit
-   TAQ000        12        Unit
+   SPAN100       3         Unit
+   WOOD010       0.249     m2
    ============  ========  ===============
 
 .. table:: Production Order
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
+   ============  ========  ===============
+   RCK100        3         Unit
+   SPAN100       3         Unit
+   METC000       12        Unit
+   ============  ========  ===============
+
+.. table:: Production Order
+
+   ============  ========  ===============
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
    PROFIL        4         Unit
-   LIN040        1         m
+   LIN40         1         m
    ============  ========  ===============
 
 .. table:: Production Order
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PANA100       1         Unit
-   BOIS002       0.25      m2
+   RPAN100       1         Unit
+   WOOD002       0.25      m2
    ============  ========  ===============
 
 .. table:: Production Order
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
    PANLAT        2         Unit
-   BOIS002       0.17      m2
+   WOOD002       0.17      m2
    ============  ========  ===============
 
 .. table:: Production Order
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
-   PANLAT        2         Unit
-   PANA100       1         Unit
+   SHE100        1         Unit
+   SIDEPAN       2         Unit
+   RPAN100       1         Unit
    PROFIL        4         Unit
-   ETA100        3         Unit
+   RCK100        3         Unit
    ============  ========  ===============
 
 In the case where a single bill of materials is defined in multiple levels, a single manufacturing
@@ -303,14 +312,14 @@ following production order:
 .. table:: Single manufacture from a tree-structured BoM
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
-   BOIS002       0.17      m2
-   BOIS002       0.25      m2
-   LIN040        1         m
-   BOIS010       0.249     m2
-   TAQ000        12        Unit
+   SHE100        1         Unit
+   WOOD002       0.17      m2
+   WOOD002       0.25      m2
+   LIN40         1         m
+   WOOD010       0.249     m2
+   METC000       12        Unit
    ============  ========  ===============
 
 .. index::
@@ -328,74 +337,74 @@ Sometimes, however, it is useful to define the intermediate product separately a
 multi-level assembly even if you do not want separate production orders for intermediate
 products.
 
-In the example, the intermediate product ``ETA100`` is used in the manufacture of several different
+In the example, the intermediate product ``RCK100`` is used in the manufacturing of several different
 cabinets. So you would want to define a unique BoM for it even if you did not want any
 instances of this product to be built, nor wanted to re-write these elements in a series of
 different multi-level BoMs.
 
 If you only want a single production order for the complete cabinet, and not one for the BoM itself, you
-can define the BoM line corresponding to product ``ETA100`` in the cabinet's BoM as type :guilabel:`Phantom`. Then
-it will automatically put ``ETA100``'s BoM contents into the cabinet's production order even though
+can define the BoM line corresponding to product ``RCK100`` in the cabinet's BoM as type :guilabel:`Phantom`. Then
+it will automatically put ``RCK100``'s BoM contents into the cabinet's production order even though
 it is been defined as multi-level.
 
 This way of representing the assembly is very useful because it allows you to define reusable
 elements of the assembly and keep them isolated.
 
-If you define the BoM for the ``ARM100`` cabinet in the way shown by the table below,
+If you define the BoM for the ``SHE100`` cabinet in the way shown by the table below,
 you will get two production orders when the order is confirmed, as shown in the tables below that.
 
 .. table:: Definition and use of Phantom BoMs
 
    ============  ========  ===============  ===========
-   Product Code  Quantity  Unit of Measure  Type of BoM
+   Product Ref.  Quantity  Unit of Measure  Type of BoM
    ============  ========  ===============  ===========
-   ARM100        1         Unit             normal
-   PANLAT        2         Unit             normal
-   PANA100       1         Unit             phantom
+   SHE100        1         Unit             normal
+   SIDEPAN       2         Unit             normal
+   RPAN100       1         Unit             phantom
    PROFIL        4         Unit             phantom
-   ETA100        3         Unit             phantom
+   RCK100        3         Unit             phantom
    ============  ========  ===============  ===========
 
 .. table:: Production Order from Phantom BoMs
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   ARM100        1         Unit
-   PANLAT        2         Unit
-   BOIS002       0.25      m2
-   LIN040        1         m
-   BOIS010       0.249     m2
-   TAQ000        12        Unit
+   SHE100        1         Unit
+   SIDEPAN       2         Unit
+   WOOD002       0.25      m2
+   LIN40         1         m
+   WOOD010       0.249     m2
+   METC000       12        Unit
    ============  ========  ===============
 
 .. table:: Production Order from Normal BoM
 
    ============  ========  ===============
-   Product Code  Quantity  Unit of Measure
+   Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PANLAT        2         Unit
-   BOIS002       0.17      m2
+   SIDEPAN       2         Unit
+   WOOD002       0.17      m2
    ============  ========  ===============
 
-Assembly Bills of Materials
----------------------------
+Bills of Materials for Kits/Sets
+--------------------------------
 
 .. note:: Sales Bills of Materials
 
-    In some software, this is named a Sales Bill of Materials.
+    In other software, this is sometimes named a Sales Bill of Materials.
     In OpenERP, the term assembly is used because the effect of the bill of materials is visible not
     only in sales but also elsewhere, for example, in the intermediate manufactured products.
 
-Assembly bills of materials enable you to define assemblies that will be sold directly. These
+Kits/Sets bills of materials enable you to define assemblies that will be sold directly. These
 could also be used in deliveries and stock management rather than just sold in isolation.
-For example if you deliver the cabinet in pieces for self-assembly, set the ``ARM100`` BoM to type
-``Assembly`` .
+For example if you deliver the cabinet in pieces for self-assembly, set the ``SHE100`` BoM to type
+``Sets / Phantom`` .
 
-When a salesperson creates an order for an ``ARM100`` product, OpenERP automatically changes the ``ARM100``
+When a salesperson creates an order for a ``SHE100`` product, OpenERP automatically changes the ``SHE100``
 from a set of components into an identifiable package for sending to a customer.
-Then it asks the storesperson to pack 2 ``PANLAT``, 1 ``PANA100``, 4 ``PROFIL``, 3 ``ETA100``.
-This is described as an ``ARM100``, not just the individual delivered products.
+Then it asks the storesperson to pack 2 ``SIDEPAN``, 1 ``RPAN100``, 4 ``PROFIL``, 3 ``RCK100``.
+This is described as a ``SHE100``, not just the individual delivered products.
 
 Example: Large Distributor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -409,7 +418,7 @@ individually to the checkout. The supermarket cannot track its stock in packs an
 only individually in bottles.
 
 So you can define a bill of materials for sale which defines a pack as an assembly of 6 bottles.
-Then when you have sold a pack, you can find a pack on the invoice or bill of sale but the associated
+Then when you have sold a pack, you can find a pack on the invoice or bill of sales but the associated
 stock operation will still be 6 bottles.
 
 In the case of this assembly, this is not a production order to transform the product. The
@@ -575,7 +584,7 @@ Sales --> Sales Order`. Enter the following information:
 
 * :guilabel:`Customer` : ``Agrolait``,
 
-* :guilabel:`Shipping Policy` : ``Invoice from Delivery`` (second tab),
+* :guilabel:`Shipping Policy` : ``Invoice from the Picking`` (second tab),
 
 * :guilabel:`Order Line` :
 
@@ -585,9 +594,9 @@ Sales --> Sales Order`. Enter the following information:
 
   * :guilabel:`Product UoM` : ``PCE``,
 
-  * :guilabel:`Procure method` : ``Make To Order``.
+  * :guilabel:`Procurement method` : ``On Order``.
 
-Once the quotation has been entered you can confirm it immediately by clicking the button
+Once the quotation has been entered, you can confirm it immediately by clicking the button
 :guilabel:`Confirm Order` at the bottom to the right. The manufacturing order is then automatically generated.
 
 .. figure:: images/mrp_auto_generate.png
@@ -596,7 +605,7 @@ Once the quotation has been entered you can confirm it immediately by clicking t
 
    *Automatically generated manufacturing orders from sale order*
 
-Keep note of the order reference because this follows all through the process.
+Keep note of the order reference because it will be used throughout the process.
 Usually, in a new database, this will be ``SO007`` . At this stage
 you can look at the process linked to your order using the :guilabel:`Process` button above and to the right
 of the form.
@@ -678,11 +687,11 @@ The production order must be in the closed state as shown in the figure :ref:`fi
 
    *Production order after the different stages*
 
-Manufacture of Finished Product
--------------------------------
+Manufacturing a Finished Product
+--------------------------------
 
-Having manufactured the intermediate product CPU_GEN, OpenERP then automatically proposes the
-manufacture of the computer PC2 using the order created earlier. So return to the menu for
+Having manufactured the intermediate product CPU_GEN, OpenERP automatically proposes the
+manufacturing of the computer PC2 using the order created earlier. So return to the menu for
 production orders to start :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
 You will find computer PC2 which has been sold to the customer,
