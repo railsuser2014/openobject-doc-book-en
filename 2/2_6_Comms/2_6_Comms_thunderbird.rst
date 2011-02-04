@@ -125,7 +125,7 @@ To archive an e-mail in OpenERP from Thunderbird, select the e-mail and click th
 
 In the ``Link to an Existing Document`` section, select an object to which you like to add to your email and its attachments. You
 can select any object you defined in the ``Document Settings`` section and attach the selected mail to the selected record.
-The plugin also allows you to select several documents at once, simply by selecting a document and pressing the :kbd:`Ctrl: key when selecting the next document.
+The plugin also allows you to select several documents at once, simply by selecting a document and pressing the :kbd:`Ctrl`: key when selecting the next document.
 
 Do not forget to click the ``Search`` button to refresh the Documents list when you have selected a different document type.    
 

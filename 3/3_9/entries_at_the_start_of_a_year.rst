@@ -16,17 +16,16 @@ from other accounting software.
 
 Example Steps:
 
-1. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Year` : Create a fiscal year with monthly periods
+1. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Year`: Create a fiscal year with monthly periods
 
-.. not sure about below, but it is working
-2. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts` : Create an account ``Opening Balance Account`` (`Account Type`: ``Equity``, `Reconcile`: ``No``)
+2. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`: Create an account ``Opening Balance Account`` (`Account Type`: ``Equity``, `Reconcile`: ``No``)
 
 3. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals` : Create a new journal ``Opening Bal Journal`` (`Type`: ``Opening/Closing Situation``, `View`: ``Journal View``, `Entry Sequence`: ``Account Journal``, `Default Debit Account`: ``Opening Balance Account``, `Default Credit Account`: ``Opening Balance Account``, `Centralized Counterpart`: ``Yes``)
 
-4. It is best to create a csv-file with the first line:
+4. It is best to create a csv file with the first line:
 	"Account","Effective date","Journal","Name","Period","Debit","Credit"
    And the data-lines like this:
-	"1000","2008-01-16","Opening Bal Journal","Opening Balance Entry","01/01 - 31/01",0,53828
+	"1000","2011-01-16","Opening Bal Journal","Opening Balance Entry","01/01 - 01/01",0,53828
 
 5. :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals` : Choose ``Opening Bal Journal``
 
