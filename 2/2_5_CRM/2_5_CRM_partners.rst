@@ -22,7 +22,7 @@ because a partner can correspond to one type or a combination of several of thes
 double data-entry and provides greater flexibility in the features available.
 
 So a partner can be both your supplier and your customer at the same time. This feature is
-particularly important when you have subsidiaries or franchises since transactions between the
+particularly important when you have subsidiaries or franchises, since transactions between the
 parent and its subsidiaries in these cases will generally be two-way.
 
 Creating and Updating Partners
@@ -34,12 +34,12 @@ To create a new customer or get a list of customers using demonstration data, us
 Address Book --> Customers`.
 
 .. figure::  images/crm_partner.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *A customer form*
 
-To create a new partner in OpenERP (a company, customer, supplier, ...) you should at least enter the company's :guilabel:`Name` in the partner form.
+To create a new partner in OpenERP (a company, customer, supplier, ...), you should at least enter the company's :guilabel:`Name` in the partner form.
 
 Documentation to be completed.
 
@@ -48,7 +48,7 @@ Documentation to be completed.
 Customizing Partner Fields
 --------------------------
 
-In the web version, click Manage Views if you want to customize the Partner view to your needs. You can add fields, delete fields or change the order of fields.
+In the web version, click `Manage Views` if you want to customize the Partner view to your needs. You can add fields, delete fields or change the order of fields.
 
 Performing Actions on Partners
 ------------------------------
@@ -58,15 +58,15 @@ Performing Actions on Partners
    single: opportunity
    single: reminder
 
-To the right of the customer form you will find all of the actions, reports and shortcuts available for the selected partner. 
+To the right of the customer form, you will find all of the actions, reports and shortcuts available for the selected partner. 
 
-Print a reminder letter from the Action bar, or create a new opportunity for a customer.
+Print a reminder letter from the `Action` bar, or create a new opportunity for a customer.
 
 Another Action enables you to quickly send an SMS message. 
 
-.. tip::  Send an SMS message
+.. tip::  Send an SMS Message
 
-	To send an SMS message from standard Open ERP you will have to place an order with the bulk SMS
+	To send an SMS message from standard OpenERP you will have to place an order with the bulk SMS
 	gateway operator Clickatell™ http://clickatell.com.
 
 	You will then receive an API number, a login and a password which you can use in OpenERP to send
@@ -84,7 +84,7 @@ then click the :guilabel:`Send SMS` Action icon.
 Filtering your Partners
 -----------------------
 
-Open the Customer list view to discover the search options allowing you to easily filter your partners. You can group by Salesman to see which customers have already been assigned to a salesman or not. Click the button at the right (the icon of the person) to see the customers you are responsible for.
+Open the Customer list view to discover the search options allowing you to easily filter your partners. You can group by `Salesman` to see which customers have already been assigned to a salesman or not. Click the button at the right (the icon of the person) to see the customers you are responsible for.
 
 These filters also allow you to quickly set lists of customers for which you want to do specific actions.
 
@@ -105,10 +105,10 @@ Address Book --> Addresses` menu.
 
 You can search for a subset of Partners and Contacts using the search view.
 
-.. note:: Independent partners or physical people
+.. note:: Independent Partners or Physical People
 
 	If you want to represent a physical person rather than a company, in OpenERP, that person's name
-	can be typed directly into the :guilabel:`Name` field on the Partner form. In this case do not put
+	can be typed directly into the :guilabel:`Name` field on the Partner form. In this case, do not put
 	in any Contact Name.
 
 .. index::
@@ -121,7 +121,7 @@ Partner Categories
 OpenERP uses hierarchical categories to organize all of its partners. To reach the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
 
 .. figure::  images/crm_partner_category_big.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *List of Partner Category*

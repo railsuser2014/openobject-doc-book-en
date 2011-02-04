@@ -79,7 +79,7 @@ Using Outlook and Thunderbird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure::  images/document_attachment_outlook.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Sending an attachment that is in the document management system from Outlook*
@@ -100,7 +100,7 @@ The first lets you track the changes to documents by month, by customer and by t
 could also quickly assess the use that is made of the system by the various users.
 
 .. figure::  images/document_board1.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Dashboard for the document management system manager*
@@ -111,7 +111,7 @@ management system the least. That tells you something about your user training
 and whether you need to do something about changing work methods.
 
 .. figure::  images/document_board2.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Dashboard for the document management system analyzed by user*
@@ -135,7 +135,7 @@ activate that functionality on another type of report, modify this in the menu
 To be able to access this menu, the user should be added to the group :guilabel:`Useability / No One`.
 
 .. figure::  images/document_report_modif.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Modifying the definition of a report*

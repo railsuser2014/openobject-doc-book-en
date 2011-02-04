@@ -30,7 +30,7 @@ Then in each project (represented by analytic accounts) you will get this substr
 organizing your documents efficiently.
 
 .. figure::  images/document_shared_structure.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Substructure common to all projects*

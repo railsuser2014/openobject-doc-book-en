@@ -44,7 +44,7 @@ As the module installation proceeds, the system automatically proposes that you
 configure the FTP server.
 
 .. figure::  images/document_config.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Screen for configuring document management*
@@ -52,7 +52,7 @@ configure the FTP server.
 Once the module has been installed, you will see a new entry in the main menu called :menuselection:`Knowledge`.
 
 .. figure::  images/document_menu.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *The Knowledge menu*

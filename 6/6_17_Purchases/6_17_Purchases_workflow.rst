@@ -88,7 +88,7 @@ When you have selected the product, OpenERP automatically completes the other fi
 * :guilabel:`Taxes`, taken from the information on the product form and partner form,
   depending on the rules seen in :ref:`Financial Analysis <ch-financial>`.
 
-.. tip:: Product wording and code
+.. tip:: Product Wording and Code
 
    When you enter supplier names on the product form, you can set a name and a product code for each
    individual supplier.
@@ -365,7 +365,7 @@ energy.
 In this case, you would want OpenERP to automatically set the price in response to each goods receipt movement
 into the warehouse. The deliveries (exit from stock) have no impact on the product price.
 
-.. tip:: Calculating the price
+.. tip:: Calculating the Price
 
    At each goods receipt, the product price is recalculated using the following accounting formula:
    NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:

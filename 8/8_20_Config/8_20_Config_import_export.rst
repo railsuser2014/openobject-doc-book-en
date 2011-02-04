@@ -22,7 +22,7 @@ the field in the form. All the subsequent lines are data, aligned in their respe
 .. index::
    pair: data; CSV export
 
-Exporting OpenERP data to CSV
+Exporting OpenERP Data to CSV
 -----------------------------
 
 Start exploring OpenERP's use of the CSV format by exporting a modestly complex set of data,
@@ -65,7 +65,7 @@ that list!
 .. index::
    pair: data; CSV import
 
-Importing CSV data to OpenERP
+Importing CSV Data to OpenERP
 -----------------------------
 
 Use this export file as a template for an import file by deleting all of the data,
@@ -97,7 +97,7 @@ see the new partners and partner addresses when you refresh the list on-screen.
 .. index::
    pair: data; CSV structured
 
-The CSV format for complex database structures
+The CSV Format for Complex Database Structures
 ----------------------------------------------
 
 When you import data, you have to overcome the problem of representing a database structure in \
@@ -179,7 +179,7 @@ All of the other fields are coded in the CSV file as just one text string in eac
 .. index:: 
    pair: relation; field
 
-Many-to-one fields
+Many-to-one Fields
 ^^^^^^^^^^^^^^^^^^
 
 Many-to-one fields represent a relationship between the foreground table and another table in the
@@ -202,7 +202,7 @@ the new record in the foreground table with the field in the other table by matc
    You just create a linking ``id`` column for each table that you are importing
    that contains the identifier used in the first table.
 
-Many-to-many fields
+Many-to-many Fields
 ^^^^^^^^^^^^^^^^^^^
 
 Many-to-many fields are handled just like many-to-one fields in trying to recreate the relationship
@@ -211,7 +211,7 @@ between tables: either by searching for names or by using identifiers.
 There are several possible values in a single many-to-many field. Therefore a partner can be given
 several associated categories. You must separate the different values with a comma.
 
-One-to-many fields
+One-to-many Fields
 ^^^^^^^^^^^^^^^^^^
 
 One-to-many fields are a bit different. Take as an example the :guilabel:`Partner Contacts` field in
@@ -237,7 +237,7 @@ many/field_linked-object`` \. The partner data you imported earlier took that fo
 .. index::
    single: data; import example
 
-Another example of a CSV import file
+Another Example of a CSV Import File
 ------------------------------------
 
 To illustrate data importing, you can see another example below. First import partner
@@ -246,7 +246,7 @@ just created. Although you can create new contacts at the same time as creating 
 you can do this for *one-to-many* relations), you cannot create new categories this way (because they
 use *many-to-many* relations). You must create new categories in a separate step.
 
-Partner categories
+Partner Categories
 ^^^^^^^^^^^^^^^^^^
 Start by creating partner categories in a CSV file:
 
@@ -291,7 +291,7 @@ Start by creating partner categories in a CSV file:
 #. Refresh the :guilabel:`Partner Categories` list to view the tree of categories,
    including the new \ ``Quality`` \ branch and its child branches that you loaded.
 
-New partners
+New Partners
 ^^^^^^^^^^^^
 
 Here is how to create new partners with more than one contact, as you did before, and how to link them to these new categories:
@@ -322,7 +322,7 @@ Here is how to create new partners with more than one contact, as you did before
 .. index::
    single: data, export in other forms
    
-Exporting data in other forms
+Exporting Data in Other Forms
 -----------------------------
 
 OpenERP's generic export mechanism lets you easily export any of your data to any location on your
@@ -333,7 +333,7 @@ You can use this to export your data into spreadsheets or into other systems, su
 accounts packages. The export format is usually in the CSV format, but you can also connect directly
 to Microsoft Excel using Microsoft's COM mechanism.
 
-.. tip:: Access to the database
+.. tip:: Access to the Database
 
 	Developers can also use other techniques to automatically access the OpenERP database. The two
 	most useful are:

@@ -64,7 +64,7 @@ OpenERP opens a graphical view of the workflow for the selected document type.
 If you want to edit a workflow in a text-based editor, you can use the menus under
 :menuselection:`Administration --> Customization --> Workflows`.
 
-Using processes effectively
+Using Processes Effectively
 ---------------------------
 
 Regardless of which OpenERP screen you are in you can call up a process on the
@@ -107,7 +107,7 @@ handled.
 .. index::
    single: process; defining
 
-Defining your own user processes
+Defining your Own User Processes
 --------------------------------
 
 Use the menus under :menuselection:`Administration --> Customization --> Enterprise Process` to

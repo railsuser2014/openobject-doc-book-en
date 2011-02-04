@@ -95,8 +95,8 @@ agricultural products, textiles, public auctions, IT, and trade associations.
 
 Last but not least, such software has arisen from the blend of high code quality, well-judged architecture and
 use of free technologies. In fact, you may be surprised (if you are an IT person) to find that the
-download size of OpenERP is only around 6 MB. When that is expanded during installation its size is mostly 
-attributable to all the official translations that are packaged with it, not the operating code. 
+download size of OpenERP is only around 6 MB. When that is expanded during installation its size is mostly
+attributable to all the official translations that are packaged with it, not the operating code.
 We've moved a long way from
 the days when the only people who could be expected to benefit from ERP were the owners of a widget
 factory on some remote industrial estate.
@@ -145,12 +145,12 @@ performance.
 Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
 enterprise.
 
-Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management: 
+Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management:
 Human Resources for managing projects,
 through financial analyses supplied by analytic (or cost) accounts. You will see how using OpenERP
 can help you optimize your leadership of an enterprise.
 
-Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacturing 
+Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacturing
 (the transformation or products and services into other products).
 
 Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
@@ -188,7 +188,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			he is the author of numerous articles dealing with free software in the management of the
 			enterprise.
 
-			Follow Fabien on his blog http://fptiny.blogspot.com/ or on twitter fpopenerp. 
+			Follow Fabien on his blog http://fptiny.blogspot.com/ or on twitter fpopenerp.
 
 
                         **Geoff Gardiner**
@@ -199,10 +199,10 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			where he focused on innovation processes.
 
 			He founded Seath Solutions Ltd (http://www.seathsolutions.com/) to provide services
-			in the use of Open Source software, particularly Open ERP, for business management.
+			in the use of Open Source software, particularly OpenERP, for business management.
 
 			Author of articles and books focusing on the processes and technology of innovation,
-			Geoff is also an active contributor to the Open ERP project.
+			Geoff is also an active contributor to the OpenERP project.
 			He holds an MBA from Cranfield School of Management and
 			an MA in Engineering and Electrical Sciences from Trinity Hall, Cambridge.
 			He is a member of the Institution of Engineering and Technology and of the Society of Authors.
@@ -222,8 +222,8 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 
 			As such, the world of OpenSource software became more and more attractive.
 			She started working with OpenERP software in her free time and doing so, Els really wanted to
-			meet Fabien Pinckaers to share thoughts about documentation and training strategy. 
-			At a Partner Meeting she heard Fabien was looking for someone to manage the trainings & documentation.	
+			meet Fabien Pinckaers to share thoughts about documentation and training strategy.
+			At a Partner Meeting she heard Fabien was looking for someone to manage the trainings & documentation.
 			This was absolutely an opportunity to be qualified, and now Els is the OpenERP Training Program Manager
 			and in this job responsible for the worldwide training and certification program of OpenERP.
 
@@ -231,7 +231,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of a job,
 			but Els finds great pleasure in doing it!
 
-			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel. 
+			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel.
 
 
 Dedication

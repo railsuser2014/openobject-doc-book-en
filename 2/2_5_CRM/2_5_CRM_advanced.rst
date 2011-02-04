@@ -18,10 +18,10 @@ Fetchmail
 ---------
 
 The *Fetchmail* functionality lets you interface the CRM with incoming and outgoing e-mails.
-You can install this feature when you configure the CRM or by installing the :mod:`fetchmail` module.
+You can install this feature when you configure the CRM or by installing the :mod:`fetchmail` module (`Reconfigure` wizard, `Fetch Emails`).
 It also allows you to create an object in OpenERP from an e-mail you receive.
-Simply define the generic mail address you want to use, such as sales@openerp.com, and link it to the crm.lead object.
-Every mail that is sent to this address, will automatically created as a lead for you to qualify.
+Simply define the generic mail address you want to use, such as sales@openerp.com, and link it to the ``crm.lead`` object.
+Every mail that is sent to this address, will automatically be created as a lead for you to qualify.
 
 .. index::
    single: module; outlook, thunderbird
@@ -43,10 +43,10 @@ menu :menuselection:`Sales --> Configuration --> Automated Actions --> Automated
 Profiling
 ---------
 
-The segmentation tools let you create partner groups and act on each segment differently according to questionnaires.
-For example you could create pricelists for each of the segments, or start phone marketing campaigns
-by segment. To enable the management of segmentation you should install the module
-:mod:`crm_profiling`, which can also be achieved from the Configuration Wizard.
+Segmentation tools let you create partner groups and act on each segment differently, according to questionnaires.
+For example, you could create pricelists for each of the segments, or start phone marketing campaigns
+by segment. To enable the management of segmentation, you should install the module
+:mod:`crm_profiling`.
 
 .. index::
    single: module; base_report_designer
@@ -54,7 +54,7 @@ by segment. To enable the management of segmentation you should install the modu
 Report Designer
 ---------------
 
-The :mod:`base_report_designer` module enables you to create letter templates in OpenOffice and automate
+The :mod:`base_report_designer` module (`Reconfigure` wizard, `OpenOffice Report Designer`) enables you to create letter templates in OpenOffice and automate
 letters for different prospects. OpenERP also has e-mail templates to simplify the creation of
 mass mailing.
 

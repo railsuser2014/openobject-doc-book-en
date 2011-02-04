@@ -24,7 +24,7 @@ needed to create and modify technical workflows and cross-company processes.
 .. _fig-sflow:
 
 .. figure::  images/sales_workflow.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Workflow for order SO005*

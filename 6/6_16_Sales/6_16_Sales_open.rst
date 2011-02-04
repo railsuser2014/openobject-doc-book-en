@@ -32,7 +32,7 @@ order, OpenERP no longer generates a single delivery order but plans scheduled d
 
 .. tip:: Invoicing Mode
 
-   If you work with Open Orders, you should set :guilabel:`Invoice Control` to the mode :guilabel:`Shipped Quantities`.
+   If you work with Open Orders, you should set :guilabel:`Invoice Control` to the mode ``Shipped Quantities``.
    Then the storesperson will be able to re-plan and change the quantities of the forecast deliveries
    in the system.
 

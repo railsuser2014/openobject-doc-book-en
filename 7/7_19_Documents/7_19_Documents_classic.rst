@@ -1,5 +1,5 @@
 
-Classic document management solutions
+Classic Document Management Solutions
 =====================================
 
 Faced with the need to organize documents, companies have looked at a number of document management
@@ -33,7 +33,7 @@ This is obviously a lot of operations just to handle a simple order confirmation
 why many companies hardly use their document management system even if they have gone to the cost and
 effort of purchasing and installing one.
 
-.. tip::  Free document management systems
+.. tip::  Free Document Management Systems
 
     A number of free document management applications exist. The most well known are:
 

@@ -19,7 +19,7 @@ Three fields determine the future behaviour of an order:
 
 * :guilabel:`Invoice on` : ``Ordered Quantities`` or ``Shipped Quantities``.
 
-  .. tip::  Configuring your interface
+  .. tip::  Configuring your Interface
 
      If you work in the ``Simplified`` view mode, only the :guilabel:`Shipping Policy` field is visible
      in the second tab on the order.

@@ -12,17 +12,17 @@ Using Call Center Features
 --------------------------
 
 You can manually encode calls that happen or you can pass them into OpenERP. But for mass
-campaigns, you can import a list of phone calls to make. To do this, click the import link at the
-bottom of the list of phone calls. On the GTK client use the toolbar button :menuselection:`Form -->
+campaigns, you can import a list of phone calls to make. To do this, click the `Import` link at the
+bottom of the list of phone calls. On the GTK client, use the toolbar button :menuselection:`Form -->
 Import data...` at the top.
 
-The different operators can be assigned calls and
+The different operators can be assigned calls, and
 handle them one by one using the menu :menuselection:`Sales --> Phone Calls --> Outbound`.
 
 The operator can open the calls one by one. For each call, after having contacted the customer, the
 operator can click on one of the following buttons:
 
-* :guilabel:`Cancel`: you cancel the call. For example you could cancel the call if you have tried to call them
+* :guilabel:`Cancel`: you cancel the call. For example, you could cancel the call if you have tried to call them
   more than three times.
 
 * :guilabel:`Held`: you have spoken to the customer by phone. In this case the operator can change the case
@@ -32,18 +32,18 @@ operator can click on one of the following buttons:
 * :guilabel:`Not Held`: the customer has not been called, you will try to call him again later.
 
 
-Establishing the profiles of prospects
+Establishing the Profiles of Prospects
 --------------------------------------
 
-During presales activities it is useful to qualify your prospects quickly. You can pose a series of
+During pre-sales activities, it is useful to qualify your prospects quickly. You can pose a series of
 questions to find out what product to offer to the customer, or how quickly you should handle the
 request.
 
 .. tip:: Profiling
 
-	This method of rapidly qualifying prospects is often used by companies who carry out presales by
+	This method of rapidly qualifying prospects is often used by companies who carry out pre-sales by
 	phone.
-	A prospect list is imported into the Open ERP system as a set of partners and the operators then
+	A prospect list is imported into the OpenERP system as a set of partners and the operators then
 	pose a series of questions to each prospect by phone.
 
 	Responses to these questions enable each prospect to be qualified automatically which leads to
@@ -55,9 +55,9 @@ days. It is important to handle each request quickly and efficiently.
 
 The products offered by OpenERP at these exhibitions are:
 
-* training on OpenERP – for independent people or small companies,
+* Training on OpenERP – for independent people or small companies,
 
-* partner contract – for IT companies that intend to offer an OpenERP service,
+* Partner Contract – for IT companies that intend to offer an OpenERP service,
 
 * OpenERP as SaaS – for small companies,
 
@@ -70,24 +70,24 @@ questions posed to prospects. These are given in the following figure :ref:`fig-
 .. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Example of profiling customer prospects by the OpenERP company*
 
-The sales person starts by asking the questions mentioned above and then with a couple of minutes of
-work can decide what to propose to the prospective customer.
+The sales person starts by asking the questions mentioned above, and then, with a couple of minutes of
+work, can decide what to propose to the prospective customer.
 
-At the end of the exhibition prospects' details and their responses to the questionnaire are entered
+At the end of the exhibition, the prospects' details and their responses to the questionnaire are entered
 into OpenERP. The profiling system automatically classifies the prospects into appropriate partner
 categories.
 
-This enables your sales people to follow prospects up efficiently and adapt their approach based on
+This enables your sales people to follow up prospects efficiently and adapt their approach based on
 each prospect's profile. For example, they can send a letter based on a template developed for a
-specific partner category. They would use Open ERP's report editor and generator for their sales
+specific partner category. They would use OpenERP's report editor and generator for their sales
 proposition, such as an invitation to a training session a week after the show.
 
-Using profiles effectively
+Using Profiles Effectively
 --------------------------
 
 .. index::
@@ -95,14 +95,14 @@ Using profiles effectively
 
 To use the profiling system you will need to install OpenERP's :mod:`crm_profiling` module. It is
 part of the core OpenERP system in version 6.0.0 so you do not have to download it separately from
-``addons-extra``.
+``extra-addons``.
 
-You can also use the Reconfiguration Wizard and add Profiling.
- 
-Once the module is installed you can create a list of questions and the possible responses through
+You can also use the `Reconfigure` wizard and add `Profiling`.
+
+Once the module is installed, you can create a list of questions and the possible responses through
 the menu :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Questions`.
 
-To obtain the scheme presented earlier you can create the following questions and responses:
+To obtain the scheme presented earlier, you can create the following questions and responses:
 
 
 .. csv-table::  Questionnaire for defining profiles

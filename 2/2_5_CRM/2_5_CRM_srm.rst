@@ -1,5 +1,5 @@
 
-Supplier relationship management
+Supplier Relationship Management
 ================================
 
 .. index::
@@ -19,7 +19,7 @@ during configuration. OpenERP will then create a menu in your working database f
 
    *Selection of the management of complaints in the CRM installation*
 
-Once the module is installed you can use the menu :menuselection:`Sales --> After-Sales Services
+Once the module is installed, you can use the menu :menuselection:`Sales --> After-Sales Services
 --> Claims`.
 
 .. figure:: images/crm_complaints.png

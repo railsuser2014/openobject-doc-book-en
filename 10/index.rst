@@ -30,12 +30,12 @@ they can concentrate on higher value-added work.
 We frequently receive the gratitude of senior management who get better results from their
 business because they have adopted OpenERP.
 
-You are not alone
+You are Not Alone
 =================
 
 Many resources are at hand to accompany you on your OpenERP adventure.
 
-Bypass the technical difficulties by using the SaaS offer
+Bypass the Technical Difficulties by using the SaaS Offer
 ---------------------------------------------------------
 
 .. index::
@@ -55,7 +55,7 @@ migrations, minimal support load by training customers well, and a strict limit 
 modules offered. So you cannot use your own modules, and are limited to the standard modules that are
 included in various package levels.
 
-Consult the available resources
+Consult the Available Resources
 -------------------------------
 
 Larger companies often prefer a more classic implementation path. Even though OpenERP's simplicity
@@ -71,7 +71,7 @@ out:
 
 * the main project developers, Tiny, themselves.
 
-The community of users and developers
+The Community of Users and Developers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The community, supported by Tiny, hosts a set of communication tools which can help you in your
@@ -105,7 +105,7 @@ The most recent communication tool is the launchpad system, which now hosts all 
 source code (using the *bzr* source code control system) and is used for reporting faults. It is
 become the central location for OpenERP technology.
 
-OpenERP partners
+OpenERP Partners
 ^^^^^^^^^^^^^^^^
 
 If you need contract-backed guarantees for implementing and maintaining OpenERP, you can contact an
@@ -113,7 +113,7 @@ official OpenERP partner. OpenERP partners offer various services such as user t
 prototype installations, and change management services. The complete list of partners by country
 and by type can be found on the official OpenERP site: http://openerp.com/partners
 
-The main developer, Tiny
+The Main Developer, Tiny
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Finally you can call the main project developers, Tiny, who can help you in your OpenERP project.

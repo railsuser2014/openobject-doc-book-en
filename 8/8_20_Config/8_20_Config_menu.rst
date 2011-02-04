@@ -56,7 +56,7 @@ then reload the page to see the results.
 .. index:: 
    single: welcome page
    
-Personalizing the Welcome Page for each user
+Personalizing the Welcome Page for Each User
 --------------------------------------------
 
 The administrator can change both the welcome page and the main menu page individually for each user
@@ -186,7 +186,7 @@ and the :guilabel:`value` field contains a translation into another conventional
 specialist technical phrase. If there is nothing at all in the :guilabel:`value` field then the
 English translation will automatically be used on the the form you see.
 
-.. tip:: Where should you modify the text?
+.. tip:: Where Should you Modify the Text?
 
    Most of the time, you will find the text that you want to modify in several lines of the CSV
    file.

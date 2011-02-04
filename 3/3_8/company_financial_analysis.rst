@@ -69,7 +69,7 @@ the company.
    single: module; account_report
 
 To do a temporal analysis of your indicators, you must install the module
-:mod:`account_report` from the set of modules in ``addons-extra``.
+:mod:`account_report` from the set of modules in ``extra-addons``.
 
 Once this module is installed, you can click on a financial indicator to get a graph of its
 evolution in time.

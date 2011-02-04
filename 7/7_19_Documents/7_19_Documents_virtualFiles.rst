@@ -36,7 +36,7 @@ You can then find a virtual file for each report associated with an order.
 .. _fig-docvirt:
 
 .. figure::  images/document_virtual_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Virtual files for Sales Orders in OpenERP*
@@ -47,7 +47,7 @@ can then just click the file :guilabel:`SO003_print.pdf` to get a printout of Or
 You can attach it to an email or put it on your desktop.
 
 .. figure::  images/document_virtual_ftp.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Virtual files for Sales Orders through FTP*

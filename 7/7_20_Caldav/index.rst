@@ -1,7 +1,7 @@
 Synchronizing your Calendars (CalDAV)
 =====================================
 
-As from OpenERP Version 6.0, document_webdav v2.2, the iPhone has been thoroughly
+As from OpenERP Version 6.0, :mod:`document_webdav` v2.2, the iPhone has been thoroughly
 tested and is now supported as a Calendaring client for the OpenERP CalDAV module.
 The same applies to the Android phones, of course.
 
@@ -14,12 +14,12 @@ OpenERP Server Setup
 --------------------
 Some modules need to be installed on the OpenERP server. These are:
 
-    - caldav: Required, has the reference setup and the necessary
+    - :mod:`caldav`: Required, has the reference setup and the necessary
             underlying code. Will also cause document & document_webdav
             to be installed.
-    - crm_caldav: Optional, will export the CRM Meetings as a calendar.
-    - project_caldav: Optional, will export project tasks as a calendar.
-    - http_well_known: Optional, experimental. Will ease bootstrapping,
+    - :mod:`crm_caldav`: Optional, will export the CRM Meetings as a calendar.
+    - :mod:`project_caldav`: Optional, will export project tasks as a calendar.
+    - :mod:`http_well_known`: Optional, experimental. Will ease bootstrapping,
             but only when a DNS srv record is also used.
 
 When you install the above module(s), a ready-to-go reference setup of the folders is provided.
@@ -45,29 +45,32 @@ Calendars on iPhone
 To set up the calendars, proceed as follows:
 
 1. Click ``Settings`` and go to the ``Mail, Contacts, Calendars`` page.
-2. Go to ``Add account...``.
+
+2. Go to ``Add account...``
+
 3. Click ``Other``.
+
 4. From the ``Calendars`` group, select ``Add CalDAV Account``.
 
 5. Enter the host name.
-   (E.g. if the url is http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com is the host)
+   (e.g. if the URL is http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com is the host)
 
-.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Iphone. Then the Caldav server will be shown.
+   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Iphone``. Then the Caldav
+   server will be shown.)
 
 6. In ``Username`` and ``Password``, type your OpenERP login and password.
 
 7. As a description, you can either leave the server's name or
    something like "OpenERP calendars".
 
-8. If you are not using a SSL server, you'll get an error, do not worry and push "Continue"
+8. If you are not using a SSL server, you will get an error, do not worry and push "Continue"
 
-9. Then click "Advanced Settings" to specify the correct
-    ports and paths. 
+9. Then click "Advanced Settings" to specify the correct ports and paths. 
     
 10. Specify the port for the OpenERP server: 8071 for SSL, 8069 without SSL.
 
 11. Set the ``Account URL`` to the right path of the OpenERP webdav:
-    the url given by the wizard (e.g. http://my.server.ip:8069/webdav/dbname/calendars/ )
+    the URL given by the wizard (e.g. http://my.server.ip:8069/webdav/dbname/calendars/ )
 
 12. Click ``Done``. The phone will connect to the OpenERP server
     and verify whether the account can be used.
@@ -81,59 +84,58 @@ To set up the calendars, proceed as follows:
 If you need *SSL* (and your certificate is not a verified one),
 you will first need to let the iPhone trust the certificate. Follow these steps:
 
-    s1. Open Safari and enter the https location of the OpenERP server:
-      https://my.server.ip:8071/
-      (assuming you have the server at "my.server.ip" and the HTTPS port
-      is the default 8071)
-    s2. Safari will try to connect and issue a warning about the certificate
-      used. Inspect the certificate and click "Accept" so that iPhone
-      now trusts it.
+1. Open Safari and enter the HTTPS location of the OpenERP server:
+   https://my.server.ip:8071/
+   (assuming you have the server at "my.server.ip" and the HTTPS port is the default 8071)
+
+2. Safari will try to connect and issue a warning about the certificate used. Inspect the certificate
+   and click "Accept" so that iPhone now trusts it.
 
 Calendars on Android
 --------------------
 
 Prerequisites
 *************
-There is no built-in way to synchronize calendars with caldav.
+There is no built-in way to synchronize calendars with CalDAV.
 So you need to install a third party software: Calendar (CalDav) Sync BETA 
-from Hypermatrix Software (for now it is the only one).
+from Hypermatrix Software (for now, it is the only one).
 
-How to configure?
+How to Configure?
 *****************
 
 1. Open the ``Calendar Sync`` application.
    You get an interface with 2 tabs.
    
-2. On the Connection tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
+2. On the `Connection` tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
 
-.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Android. Then the Caldav server will be shown.
+   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav
+   server will be shown.)
 
-3. Type your OpenERP username and password
+3. Type your OpenERP username and password.
 
 4. If your server does not use SSL, you will get a warning. Answer ``Yes``.
 
-5. Then you can synchronize manually or customize the settings (Sync tab) to synchronize every x minutes.
+5. Then you can synchronize manually or customize the settings (`Sync` tab) to synchronize every X minutes.
 
 Calendars in Evolution
 ----------------------
 
-1. Go to Calendar View
+1. Go to Calendar View.
 
-2. File -> New -> Calendar
+2. :menuselection:`File --> New --> Calendar`.
 
 3. Enter the data in the form:
  
-    - type : CalDav
-    - name : Whatever you want (e.g. Meeting)
-    - url : http://HOST:PORT/webdav/DB_NAME/calendars/users/USER/c/Meetings (e.g.
+    - Type : CalDav
+    - Name : Whatever you want (e.g. Meeting)
+    - URL : http://HOST:PORT/webdav/DB_NAME/calendars/users/USER/c/Meetings (e.g.
       http://localhost:8069/webdav/db_1/calendars/users/demo/c/Meetings) 
       the one given on top of this window
-    - uncheck "User SSL"
+    - Uncheck "User SSL"
     - Username : Your username (e.g. Demo)
     - Refresh : every time you want Evolution to synchronize the data with the server
 
-.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Evolution. Then the Caldav server will be shown.
-
+   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Evolution``. Then the Caldav server will be shown.)
 
 4. Click OK and enter your OpenERP password.
 
@@ -150,20 +152,20 @@ http://www.mozilla.org/projects/calendar/lightning/
 Configuration
 *************
 
-1. Go to Calendar View
+1. Go to Calendar View.
 
-2. File -> New Calendar
+2. :menuselection:`File --> New Calendar`.
 
-3. Choose "On the Network"
+3. Choose ``On the Network``.
 
 4. As a format, select CalDav
-   and as a location type the url (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings)
- 
-.. tip: Go to Sales --> Meetings --> Synchronize this Calendar and select Sunbird/Lightning. Then the Caldav server will be shown.
+   and as a location type the URL (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings).
+
+   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Sunbird/Lightning``. Then the Caldav server will be shown.)
   
 5. Choose a name and a colour for the Calendar, and we advice you to uncheck "alarm".
 
-6. Enter your Openerp login and password (to give the password only once, check the box "Use Password Manager to remember this password").
+6. Enter your OpenERP login and password (to give the password only once, check the box ``Use Password Manager to remember this password``).
 
 7. Then click Finish; your meetings should now appear in your Calendar view.
 

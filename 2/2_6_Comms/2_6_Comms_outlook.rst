@@ -1,6 +1,6 @@
 .. index:: Outlook (Microsoft)
 
-Microsoft Outlook interface
+Microsoft Outlook Interface
 ===========================
 
 The Microsoft Outlook plugin enables you to carry out a series of OpenERP operations directly
@@ -14,17 +14,17 @@ from the Outlook e-mail client:
 
 This might be useful for sending documents about a customer project to the corresponding project in OpenERP, attaching documents to an order (such as proof of payment and order receipts), attaching documents to an employee file (such as a CV or annual appraisal).
 
-.. tip:: Outlook versions
+.. tip:: Outlook Versions
 
 	The Microsoft Outlook plugin works with Microsoft Outlook 2003 and 2007 but not with Outlook
-	Express
+	Express.
 
-Installing the Outlook plugin
+Installing the Outlook Plugin
 -----------------------------
 
-* Step 1: install the Outlook plugin in OpenERP
+* Step 1: Install the Outlook plugin in OpenERP
 
-Use the OpenERP Configuration Wizard and install the ``Customer Relationship Management`` application. In the *CRM Application Configuration* dialog under Plug-In, select MS-Outlook.
+Use the OpenERP Configuration Wizard and install the ``Customer Relationship Management`` application. In the *CRM Application Configuration* dialog under Plug-In, select `MS-Outlook`.
 Then the *Outlook Plug-In* wizard appears. Next to the ``Outlook Plug-in`` field, click the ``Save As`` button to save the plugin to your desktop (or any other location on your computer).
 
 You can also download the installation manual by clicking the green arrow next to ``Installation Manual``.  
@@ -62,12 +62,12 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
 |   4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration
 |   Data Objects 1.2.1 (CDO 1.21)" from
 |   http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en.
-|   Double-click Exchange Cdo to install it.
+|   Double-click Exchange CDO to install it.
 |
-|   5. If you are using MS Outlook 2003, be sure to install the builtin Cdo component.
+|   5. If you are using MS Outlook 2003, be sure to install the built-in CDO component.
 
 
-* Step 3: install the OpenERP extension in Outlook.
+* Step 3: Install the OpenERP extension in Outlook.
 
 	#. Double-click the file \``OpenERP-Outlook-addin.exe``\ that you saved on your desktop. Confirm the default settings.
 
@@ -75,7 +75,7 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
 
 	#. Start Outlook.
 
-Configuring the Outlook plugin
+Configuring the Outlook Plugin
 ------------------------------
 
 When you have executed Installation Step 1, Step 2 and Step 3, the first thing to do is connect Outlook to OpenERP.
@@ -88,13 +88,13 @@ A little configuration needs to be done.
 A configuration window appears enabling you to enter configuration data about your OpenERP server.
 
 .. figure::  images/outlook_menu2.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *How to Connect to the Server*
 
 	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the `Change` button
-	   and type your server settings and xml-rpc port, e.g. ``http://127.0.0.1:8069``,
+	   and type your server settings and XML-RPC port, e.g. ``http://127.0.0.1:8069``,
 
 	#. Select the database you want to connect to, and type the user and the password required to log in to the database,
 
@@ -109,9 +109,9 @@ When your connection has succeeded, you would typically want to configure Outloo
 
 To define extra document types, go to the `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
 
-Here is an example of how to configure extra document types. Suppose you would like to link mails to a meeting.
+Here is an example of how to configure extra document types. Suppose you would like to link mails to a meeting:
 
-	#. In the `Title`, type Meeting,
+	#. In the `Title`, type ``Meeting``,
 
 	#. In the `Document`, type the object from OpenERP, in this example ``crm.meeting``,
 
@@ -121,7 +121,7 @@ Here is an example of how to configure extra document types. Suppose you would l
 
 .. note:: To find the object you need in OpenERP, go to the menu :menuselection:`Administration --> Customization --> Database Structure --> Objects`. OpenERP will only show objects for which the corresponding Business Applications / Modules have been installed. You can only add objects to Outlook that are available in the selected database.
 
-Using the Outlook plugin
+Using the Outlook Plugin
 ------------------------
 
 You can use the menu :menuselection:`Tools` for several things.
@@ -135,16 +135,16 @@ With `Document`, you can open the document concerned in OpenERP. Make sure you a
 * Link a mail to an existing document in OpenERP
 
 .. figure::  images/outlook_config2.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *How to Access OpenERP from Outlook?*
 
-To archive an e-mail in OpenERP from Outlook, select the e-mail and click the `Push` button. Alternatively you can open the menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` screen will open.
+To archive an e-mail in OpenERP from Outlook, select the e-mail and click the `Push` button. Alternatively, you can open the menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` screen will open.
 
-In the ``Link to an Existing Document`` section, select an object to which you like to add to your email and its attachments. You
+In the ``Link to an Existing Document`` section, select an object which you would like to add to your email and its attachments. You
 can select any object you defined in the ``Document Settings`` section and attach the selected mail to the selected record.
-The plugin also allows you to select several documents at once, simply by selecting a document and pressing the ``ctrl`` button when selecting the next document.
+The plugin also allows you to select several documents at once, simply by selecting a document and pressing the :kbd:`Ctrl` key when selecting the next document.
 
 Do not forget to click the ``Search`` button to refresh the Documents list when you have selected a different document type.    
 
@@ -172,7 +172,7 @@ either you just create a contact (address), or you create a partner with the con
 	  and select the corresponding partner from the list. Then complete the contact data and click the ``Save`` button.
 
 .. figure::  images/outlook_creation.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Creating a contact on the fly from Outlook*
@@ -186,16 +186,16 @@ To access archived data from different documents in OpenERP you can use the menu
 	The Outlook plugin is compatible with OpenERP's Knowledge (i.e. Document) Management. If you install the
 	Knowledge application you will be able to:
 
-	* search through the content of your company's documents (those that have the type .doc, .pdf, .sxw
-	  and .odt) and also in archived emails,
+	* search through the content of your company's documents (those that have the type ``.doc``, ``.pdf``, ``.sxw``
+	  and ``.odt``) and also in archived emails,
 
 	* have a shared file system that is connected to various OpenERP documents to share information and
-	  access it with your favorite browser,
+	  access it with your favourite browser,
 
 	* organize and structure your documents (such as projects, partners and users) in OpenERP's
 	  system.
 
-.. note:: Testing the Outlook adapter
+.. note:: Testing the Outlook Adapter
 
 	If you have installed the Outlook adapter as described,
 	explore its functionality with the database as described in this section.

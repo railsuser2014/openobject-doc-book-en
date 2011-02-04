@@ -35,7 +35,7 @@ two processes:
 .. index::
    single: process; customer order
 
-Following a customer sales order
+Following a Customer Sales Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The example :ref:`fig-procquot` shows the process for handling a customer sales order. Use
@@ -78,7 +78,7 @@ links or icons on it:
 .. index::
    single: process; new employee
 
-New employee induction
+New Employee Induction
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Open the employee form for Fabien Pinckaers from the menu

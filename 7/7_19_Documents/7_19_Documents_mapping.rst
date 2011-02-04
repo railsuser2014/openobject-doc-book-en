@@ -19,13 +19,13 @@ For example, you can look at the directory shown in :menuselection:`Documents --
 created automatically by the system.
 
 .. figure::  images/document_sale.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Orders in OpenERP*
 
 .. figure::  images/document_ftp_sale.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Directories representing all the orders in the document management system*
@@ -46,7 +46,7 @@ define the directory itself:
 * :guilabel:`Tree Structure` : to show the resources hierarchically
 
 .. figure::  images/document_dir_form.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Configuration of the directory containing All Sales Orders*

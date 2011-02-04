@@ -1,5 +1,5 @@
 
-The importance of good document management
+The Importance of Good Document Management
 ==========================================
 
 Globalization means that workplaces are ever more geographically dispersed. This means that

@@ -254,7 +254,7 @@ Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
 
             * If all of them are checked, then all the access modes would be applied
 
-        But at least one access mode has to be checked, all of them can not be unchecked. If all of them are unchecked, it would raise an exception.
+        But at least one access mode has to be checked, all of them cannot be unchecked. If all of them are unchecked, it would raise an exception.
 
 .. .. figure:: images/security_rule.png
 ..    :scale: 75

@@ -30,7 +30,7 @@ based on simple and generic rules. You can develop both sales pricelists and pur
 products capable of accommodating conditions such as the date period, the quantity requested and the
 type of product.
 
-.. tip:: Do not confuse the different price specifications
+.. tip:: Do not confuse the Different Price Specifications
 
    Do not confuse the sale price with the base price of the product.
    In OpenERP's basic configuration, the sale price is the list price set on the product form
@@ -105,7 +105,7 @@ optional: if you do not set any dates the version will be permanently active. On
 may be active at any one point, so bear this in mind when creating them.
 Use the :guilabel:`Active` field in the versions to activate or disable a pricelist version.
 
-.. note:: Automatically updating the sale pricelist
+.. note:: Automatically Updating the Sale Pricelist
 
    You can make any sale pricelist depend on one of the other pricelists.
    So you could make your sale pricelist depend on your supplier's purchase pricelist, to
@@ -174,7 +174,7 @@ Then you can specify a rounding method. The rounding calculation is carried out 
 number. For example if you set 0.05 in this example, a price of 45.66 will be rounded to 45.65, and
 14,567 rounded to 100 will give a price of 14,600.
 
-.. note:: Swiss special situation
+.. note:: Swiss Special Situation
 
    In Switzerland, the smallest monetary unit is 5 cents.
    There are not any 1 or 2 cent coins.

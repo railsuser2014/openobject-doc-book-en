@@ -5,7 +5,7 @@
 .. _ch-crm:
 
 ****************************************
-Keep track of your Customers & Suppliers
+Keep Track of your Customers & Suppliers
 ****************************************
 
  *It is often said that the customer is king. You would treat all your customers as royalty,
@@ -51,7 +51,7 @@ Finally, at the end of this chapter you will see an efficient method of qualifyi
 customers that enables you to offer a service tailored to the potential value of different
 prospects.
 
-For this chapter you should start with a fresh database that includes demo data,
+For this chapter, you should start with a fresh database that includes demo data,
 install the :guilabel:`Customer Relationship Management` application.
 
 .. raw:: html

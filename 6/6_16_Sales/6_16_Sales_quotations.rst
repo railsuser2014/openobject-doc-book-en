@@ -29,7 +29,7 @@ Some information is automatically specified by the system:
 * the pricelist for the current sales order.
 
 You can modify any of that information before validating the quotation. The customer
-reference is shown in the header of the order. This optional field is for the customer's own reference – 
+reference is shown in the header of the order. This optional field is for the customer's own reference –
 if the customer does not supply one then just leave it empty.
 
 You then enter all the data about the order in the :guilabel:`Sales Order` tab. Start by entering
@@ -93,7 +93,7 @@ useful information in the list of products to help you during your sale:
 
 * :guilabel:`Pricelist` : (may not be shown, depending on the installed modules) depends on the conditions attached to the customer, calculated on the
   list price. This is the price that is proposed by default in the customer quotation, unless it has been
-  modified by the salesperson. 
+  modified by the salesperson.
 
 * :guilabel:`Public Price` : the base sale price for the given product. It provides a base for the
   salesperson to be able to judge whether to offer a discount to the customer, and how much the
@@ -118,16 +118,16 @@ the product form.
 
 .. tip:: Visible Discount
 
-   If a discounted price is taken from a price list, then by default that figure is shown as the 
-   sale price to the customer. He will see a discount of 0% along with unit price that is different 
+   If a discounted price is taken from a price list, then by default that figure is shown as the
+   sale price to the customer. He will see a discount of 0% along with unit price that is different
    from the list price.
-   If you install the module :mod:`product_visible_discount` from addons-extra
+   If you install the module :mod:`product_visible_discount` from ``extra-addons``
    you can configure whether you want to make the discount
-   explicitly visible on an order form as a percentage difference from the list price, 
+   explicitly visible on an order form as a percentage difference from the list price,
    or just show a reduced unit price as it does by default.
 
 In the form, the selected product is presented in the language of the user so that he can see
-what he is selling. The description of the product sold can also be expressed in the customer's language. 
+what he is selling. The description of the product sold can also be expressed in the customer's language.
 The translation to the customer's language is used on the quotation or order when it is printed.
 
 .. figure:: images/sale_line_translation.png
@@ -145,7 +145,7 @@ The translation to the customer's language is used on the quotation or order whe
    In this case OpenERP will not generate a delivery note because the product is not held in stock.
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do
-this, click on the link :guilabel:`Quotation / Order` in the :guilabel:`Reports` section to the right. 
+this, click on the link :guilabel:`Quotation / Order` in the :guilabel:`Reports` section to the right.
 OpenERP opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png

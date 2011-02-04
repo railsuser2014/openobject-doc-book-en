@@ -13,7 +13,7 @@ document set. You can use the structure automatically proposed by OpenERP from t
 :menuselection:`Knowledge --> Configuration --> Document Management --> Directories' Structure`.
 
 .. figure::  images/document_structure.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Structure of directories when the document module has been installed*
@@ -46,13 +46,13 @@ management system. Once you enter that directory you find a structure that match
 defined in OpenERP.
 
 .. figure::  images/document_ftp_structure_root.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Root of the database directory seen through FTP*
 
 .. figure::  images/document_ftp_structure_tree.png
-   :scale: 50
+   :scale: 75
    :align: center
 
    *Structure of the directories in the document management system*

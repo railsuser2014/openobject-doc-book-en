@@ -25,7 +25,7 @@ Managing Statistical Reports
 Many reports are configured in advance in OpenERP. You can find them in the :menuselection:`Reporting` sub-menus
 under each main menu entry.
 
-Modelling a new report
+Modelling a New Report
 ^^^^^^^^^^^^^^^^^^^^^^
 
 .. index::
@@ -107,7 +107,7 @@ the right of the form on the :guilabel:`General Configuration` tab to get the re
    single: dashboard
 ..
 
-Configuring the dashboards
+Configuring the Dashboards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A dashboard is a selection of reports previously defined in OpenERP. You can choose from hundreds
@@ -177,7 +177,7 @@ The personalized reports are stored in the OpenERP database and are accessible t
 rights to use your database without any need for the installation of OpenOffice.org on their own
 computers. The document modifications are applied to a single database.
 
-Installing the OpenOffice.org module
+Installing the OpenOffice.org Module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You should install two components before using the report editor:
@@ -196,7 +196,7 @@ the OpenERP Report Designer Configuration. Check that OpenOffice.org is properly
 computer and that you have administration rights for installation.
 
 .. figure::  images/tinyreport.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Menu OpenERP Report in OpenOffice.org Writer*
@@ -220,7 +220,7 @@ appears if you have made a successful connection.
 .. index::
    single: report; modify
 
-Modifying a report
+Modifying a Report
 ^^^^^^^^^^^^^^^^^^
 
 The report editor lets you:
@@ -234,7 +234,7 @@ Choose the report :guilabel:`Purchase Order - Request for Quotation` in the :gui
 dialog box, and then click :guilabel:`Open Report`.
 
 .. figure::  images/openoffice_quotation.png
-   :scale: 50
+   :scale: 65
    :align: center
 
    *Modifying a document template*
@@ -248,7 +248,7 @@ to translate to another language for you. So you only need to modify the templat
 system uses other languages – but you will need to add translations as described earlier in this
 chapter if you add fields or change the content of the existing ones.
 
-.. tip:: Older reports
+.. tip:: Older Reports
 
 	The older reports may not all have been converted into the new form supported by OpenERP.
 	Data expressions in the old format are shown within double brackets and not in OpenOffice.org
@@ -296,7 +296,7 @@ for Quotation`.
    single: report; new
 ..
 
-Creating a new report
+Creating a New Report
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. todo:: Another specification?
@@ -323,7 +323,7 @@ or \ ``HTML`` \ in the field :guilabel:`Select Rpt. Type`.
 .. index::
    single; report; common headers
 
-Creating common headers for reports
+Creating Common Headers for Reports
 -----------------------------------
 
 When saving new reports and reports that you have modified, you are given the option to select a

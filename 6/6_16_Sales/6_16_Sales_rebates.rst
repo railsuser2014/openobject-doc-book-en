@@ -27,7 +27,7 @@ to generate rebates at the end of the campaign. Once
 the modules have been installed you can configure your campaign using the menu :menuselection:`Sales
 --> Configuration --> Sales --> Discount Campaigns`.
 
-.. note:: Year-end rebate
+.. note:: Year-end Rebate
 
    Most companies use the term *year-end rebate*, where rebates are applied at the end of the year.
    But if you are using rebates at the end of a campaign,

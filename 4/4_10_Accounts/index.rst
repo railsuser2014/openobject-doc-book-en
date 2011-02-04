@@ -2,7 +2,7 @@
 .. index::
    single: Analytic Accounts
 
-.. _k-accts:
+.. _ch-accts:
 
 *****************
 Analytic Accounts
