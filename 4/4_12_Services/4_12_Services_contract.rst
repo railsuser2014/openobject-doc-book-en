@@ -57,7 +57,7 @@ Policy` on the order's second tab :guilabel:`Other Information`:
 *  :guilabel:`Shipping & Manual Invoice` : OpenERP starts the delivery from the confirmation of
    the order, and adds a button which you manually click when you are ready to create an invoice.
 
-*  :guilabel:`Invoice from Delivery` : invoices are created from the picking stage.
+*  :guilabel:`Invoice From The Picking` : invoices are created from the picking stage.
 
 .. index:: delivery
 
@@ -106,7 +106,7 @@ carried out. That is usually what happens in the building sector or in large pro
    single: module; hr_timesheet_invoice
 
 The approach you use for this is totally different because instead of using the sales order as the
-basis of the invoice you use the analytic accounts. For this you have to install the module 
+basis of the invoice you use the analytic accounts. For this you have to install the module
 :mod:`hr_timesheet_invoice`.
 
 An analytic account is created for each new contract. The following fields must be completed in this
