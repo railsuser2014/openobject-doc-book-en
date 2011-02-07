@@ -491,7 +491,7 @@ Make a Backup of the Database
 -----------------------------
 
 If you know the super-administrator password, make a backup of your database using the procedure
-described at the very end of :ref:`ch-inst`. Then restore it to a new database: \ ``testing``\  .
+described in :ref:`sect-dbmanage`. Then restore it to a new database: \ ``testing``\  .
 
 This operation enables you to test the new configuration on \ ``testing``\   so that you can be sure
 everything works as designed. Then if the tests are successful, you can make a new database from \

@@ -135,14 +135,16 @@ but this is sufficient to demonstrate that your installation is working.
 .. index::
    single: database; manage
 
+.. _sect-dbmanage:
+
 Managing Databases
 ------------------
 
 As a super-administrator, you do not only have rights to create new databases, but also to:
 
-* delete databases,
-
 * backup databases,
+
+* delete databases,
 
 * restore databases.
 
@@ -151,15 +153,44 @@ in the GTK client, or from the :guilabel:`Databases` button in the web client's
 :guilabel:`Login` screen.
 
 .. index::
+   single: database; backup
+
+.. tip:: Backup (copy) a Database
+
+        To make a copy of a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
+        Then click the :guilabel:`Backup` button, select the database you want to copy and enter the super-administrator
+	password. Click the :guilabel:`Backup` button to confirm that you want to copy the database.
+
+.. index::
+   single: database; drop
+
+.. tip:: Drop (delete) a Database
+
+        To delete a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
+        Then click the :guilabel:`Drop` button, select the database you want to delete and enter the super-administrator
+	password. Click the :guilabel:`Drop` button to confirm that you want to delete the database.
+
+.. index::
+   single: database; restore
+
+.. tip:: Restore a Database
+
+        To restore a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
+        Then click the :guilabel:`Restore` button, click the :guilabel:`Choose File` button to select the database
+        you want to restore. Give the database a name and enter the super-administrator	password.
+	Click the :guilabel:`Restore` button to confirm that you want to install a new copy of the selected database.
+	To restore a database, you need to have an existing copy, of course.
+
+.. index::
    single: database; duplicate
 
 .. tip::   Duplicating a Database
 
-	To duplicate a database you can:
+	To duplicate a database, you can:
 
         #. make a backup file on your PC from this database.
 
-        #. restore this database from the backup file on your PC, giving it a new name as you do so.
+        #. restore this database from the backup file on your PC, and give it a new name.
 
 	This can be a useful way of making a test database from a production database. You can try out the
 	operation of a new configuration, new modules, or just the import of new data.
