@@ -86,7 +86,7 @@ good chance of receiving some form of response to your questions within twenty-f
 
 The OpenObject wiki is used to manage activities around OpenERP.
 
-You'll find informations about:
+You'll find information about:
 
   * Shared Funding Projects
   * IRC Meetings
@@ -94,7 +94,7 @@ You'll find informations about:
   * Business Intelligence
   * Open Report (eg. OpenReport, OpenOffice Plugin)
 
-* **Database of Open ERP modules** http://doc.openerp.com/modindex.html
+* **Database of Open ERP modules** http://doc.openerp.com/py-modindex.html
 
 A database of all the modules available for use gives you free access to most of the known Open ERP
 extensions.
