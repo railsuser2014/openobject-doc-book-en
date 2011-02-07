@@ -33,8 +33,8 @@ Management Indicators
 To define financial indicators in OpenERP, you should install the module :mod:`account_report` (from ``extra-addons``).
 When installing the module, the usual financial indicators are registered in OpenERP.
 
-You can consult your indicators, calculated in real time, from the menu :menuselection:`Financial
-Management --> Reporting --> Custom Reports`.
+You can consult your indicators, calculated in real time, from the menu :menuselection:`Accounting -->
+Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
 
 Indicators defined by default in OpenERP are the following:
 
@@ -46,7 +46,7 @@ Indicators defined by default in OpenERP are the following:
    \ ``( Current Assets – Stocks) / Current Liabilities``\  .
 
 *  :guilabel:`Fixed Assets` : in a going concern, the value of fixed assets are covered in the first place by
-   owners' capital and in the second place by all of the long term liabilities. Ideally this indicator
+   owners' capital and in the second place by all of the long term liabilities. Ideally, this indicator
    will be greater than 1.
 
 .. tip:: Calculation of Indicators

@@ -167,11 +167,9 @@ Let us give the example of a purchase invoice. Note, however, that these entries
 
 Click the :guilabel:`New` button. Fill these fields manually in the following order:
 
-*  :guilabel:`Journal Entry`: leave this field empty so that OpenERP can fill it in automatically from the next sequence number (first draft, then validated) for the journal,
+*  :guilabel:`Reference`: reference from the invoice or entry,
 
-*  :guilabel:`Ref.`: reference from the invoice or entry,
-
-*  :guilabel:`Date`: effective date of the entry, will be preset with today's date
+*  :guilabel:`Effective date`: effective date of the entry, will be preset with today's date
 
 *  :guilabel:`Period`: financial period, will be preset with the current period
 
@@ -203,9 +201,9 @@ entries to you, based on the credit entries.
 
 .. tip:: Completing a Balancing Entry
 
-	When an accounting entry is matched, OpenERP moves it to the Valid state automatically and
+	When an accounting entry is matched, OpenERP moves it to the ``Valid`` state automatically and
 	prepares to enter the next data. Do not forget to definitely post the valid entries by clicking the Action
-        button and selecting Post Journal Entries.
+        button and selecting `Post Journal Entries`.
 
 	If you want to add some other balancing lines you can enter the number of the entry on the new line
 	that you are entering.

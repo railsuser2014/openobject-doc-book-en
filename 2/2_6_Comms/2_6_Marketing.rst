@@ -66,13 +66,17 @@ Defining a Marketing Campaign in OpenERP
 Please notice that it requires some technical knowledge to configure Marketing Campaigns.
 To be able to see, create, edit campaign, users need to be in the Marketing / User group.
 
-0. Introduction
+Introduction
+^^^^^^^^^^^^
 
 A campaign defines a workflow of activities that items/objects entering the campaign will go through. Items are selected by segments. Segments are automatically processed every few hours and inject new items into the campaign, according to a given set of criteria.
 It is possible to watch the campaign as it is running, by following the campaign "workitems". A workitem represents a given object/item passing through a given campaign activity. Workitems are left behind when the item proceeds to the next activities. This allows an easy analysis and reporting on the running campaign.
 Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted; if the condition is met, the action is executed, the workitem is marked as ``Done``, and propagated to the next activities.
 
-1. Campaigns (:menuselection:`Marketing --> Campaigns --> Campaigns`)
+Campaigns
+^^^^^^^^^
+
+Campaigns can be defined through the menu :menuselection:`Marketing --> Campaigns --> Campaigns`.
 
 Campaign
   Each campaign is made of activities and transitions, and must be defined on any specific object the system knows about
@@ -119,7 +123,7 @@ Activities that have the Start flag set will receive a new workitem correspondin
 Each condition is the criterion that decides whether the activity is going to be activated for a given workitem, or just cancelled.
 It is an arbitrary expression composed of simple tests on attributes of the object, possibly combined using *or*, *and* & *not* operators.
 
-See section 6.1 at bottom for reference on Comparators.
+See section :ref:`sec-compopr` at bottom for reference on Comparators.
 
 The individual tests can use the "object" name to refer to the object/resource it originates from (e.g the lead), using a "dot notation" to refer to its attributes. Some examples on a CRM Lead resource:
 
@@ -158,7 +162,10 @@ Guidelines for Creating a Campaign
 
  * Put a stop condition on each subsequent activity in the campaign, to get items out of the campaign as soon as the goal is achieved (e.g. every activity has a partial condition on the state of the item, if CRM Leads stops being Pending, the campaign ends for that case).
 
-2. Email Templates (:menuselection:`Marketing --> Configuration --> Email Template --> Templates`)
+Email Templates
+^^^^^^^^^^^^^^^
+
+Email templates can be defined using the menu :menuselection:`Marketing --> Configuration --> Email Template --> Templates`.
 
 Email templates are composed of the following information:
 
@@ -171,7 +178,8 @@ Email templates are composed of the following information:
 Headers and bodies can contain place-holders for dynamic contents that will be replaced in the final email with the actual content.
 
 
-3. Campaign Segments
+Campaign Segments
+^^^^^^^^^^^^^^^^^
 
 Segments are processed automatically according to a predefined schedule set in the menu :menuselection:`Administration --> Configuration --> Scheduled Actions`. It could be set to process every 4 hours or every minute, for example.
 This is the only entry point in a campaign at the moment.
@@ -180,7 +188,7 @@ This is the only entry point in a campaign at the moment.
 
 Segments select resources via filters, exactly the same kind of filter that can be used in advanced search views on any list in OpenERP. You can actually create them easily by saving your advanced search criteria as new filters.
 Filters mainly consist of a domain expressing the criteria of selection on a model (the resource).
-See the section 10.3 at the bottom for more information on the syntax for these filters.
+See the section :ref:`sec-filtdom` at the bottom for more information on the syntax for these filters.
 
 For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for sell: False" specified in the body:
 |    [  ('type','=','lead'), 
@@ -206,9 +214,13 @@ For Leads, the following filter would select draft Leads from any European count
 |            ('description', 'ilike', 'Plan for sell: False')
 |      ]
 
-6. Miscellaneous References, examples:
+Miscellaneous References and Examples
+-------------------------------------
 
-6.1 Reference of Comparison Operators:
+.. _sec-compopr:
+
+Reference of Comparison Operators
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  * ==: Equal
 
@@ -224,7 +236,8 @@ For Leads, the following filter would select draft Leads from any European count
 
  * in: to check that a given text is included somewhere in another text. e.g "a" in "dabc" is True
 
-6.2 Reference of Pattern/Wildcard characters
+Reference of Pattern/Wildcard Characters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  * `.` (dot) represents any character (but just one)
 
@@ -240,7 +253,10 @@ For Leads, the following filter would select draft Leads from any European count
 
  * `5?` would represent an optional 5 character
 
-6.3 Reference of filter domains
+.. _sec-filtdom:
+
+Reference of Filter Domains
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Generic format is:  [ (criterion_1), (criterion_2) ] to filter for resources matching both criteria.
 It is possible to combine criteria differently with the following operators:

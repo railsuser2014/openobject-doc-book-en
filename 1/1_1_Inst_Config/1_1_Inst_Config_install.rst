@@ -1,5 +1,5 @@
 
-The installation of OpenERP
+The Installation of OpenERP
 ===========================
 
 Whether you are from a small company investigating how OpenERP works, or you are part of the IT staff of a
@@ -36,7 +36,7 @@ into production we strongly advise you to choose the stable version.
 .. index::
    single: stable versions
 
-.. note::  Stable versions and development versions
+.. note::  Stable Versions and Development Versions
 
 	OpenERP development proceeds in two parallel tracks: stable versions and development versions.
 
@@ -68,7 +68,7 @@ To download the version of OpenERP for Windows, follow these steps:
 .. index::
    single:  installation; administrator
 
-To install OpenERP and its database you must be signed in as an Administrator on your PC. Double-
+To install OpenERP and its database, you must be signed in as an Administrator on your PC. Double-
 click the installer file to install it and accept the default parameters on each dialog box as you go. 
 
 If you had previously tried to install the all-in-one version of OpenERP, you will have to uninstall
@@ -92,7 +92,7 @@ or Python that is installed automatically, or you may already have PostgreSQL in
 you are using, or you may want to install the database server, application server and web server on
 separate hardware units.
 
-For this situation you can get separate installers for the OpenERP server and client from the same
+For this situation, you can get separate installers for the OpenERP server and client from the same
 location as the all-in-one auto-installer. You will also have to download and install a suitable
 version of PostgreSQL independently.
 
@@ -103,7 +103,7 @@ full and current details.
 Connecting Users on Other PCs to the OpenERP Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To connect other computers to the OpenERP server you must set the server up so that it is
+To connect other computers to the OpenERP server, you must set the server up so that it is
 visible to the other PCs, and install a GTK client on each of those PCs:
 
 #. Make your OpenERP server visible to other PCs by opening the Windows Firewall in the Control
@@ -226,7 +226,7 @@ This section guides you through installing the OpenERP server and client on Ubun
 most popular Linux distributions. It assumes that you are using a recent release of Desktop Ubuntu
 with its graphical user interface on a desktop or laptop PC.
 
-.. note:: Other Linux distributions
+.. note:: Other Linux Distributions
 
 	Installation on other distributions of Linux is fairly similar to installation on Ubuntu. Read this
 	section of the book so that you understand the principles, then use the online documentation and
@@ -475,7 +475,7 @@ server, make sure you know its network address – either by its name (such as \
 .. index::
    single: port (network)
 
-.. note:: Different networks
+.. note:: Different Networks
 
 	Communications between an OpenERP client and server are based on standard protocols. You can
 	connect Windows clients to a Linux server, or vice versa, without problems. It is the same for Mac
@@ -624,7 +624,7 @@ the following points provide some indicators about how you can set up your insta
 #.	The web server uses the NET-RPC protocol. If a GTK client works but the web server does not, then the
 	problem is either with the NET-RPC port or with the web server itself, and not with the OpenERP server.
 
-.. 	hint:: One server for several companies
+.. 	hint:: One Server for Several Companies
 
 	You can start several OpenERP application servers on one physical computer server by using
 	different ports. If you have defined multiple database roles in PostgreSQL, each connected through
