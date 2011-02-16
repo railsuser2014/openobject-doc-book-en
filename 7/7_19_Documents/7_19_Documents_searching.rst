@@ -78,11 +78,19 @@ Integration with Emails
 Using Outlook and Thunderbird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure::  images/document_attachment_outlook.png
+OpenERP's document management system is well-integrated with popular email clients like Microsoft Outlook and Mozilla Thunderbird. For this, you can install the required plugins available in OpenERP, usually made available when you install and configure :mod:`crm`. Or you may install :mod:`outlook` or :mod:`thunderbird` module according to your requirement, and take advantage of its compatibility with OpenERP's documents. For more on this, refer :ref:`ch-commtools`.
+
+.. figure::  images/create_contact_outlook.png
    :scale: 65
    :align: center
 
-   *Sending an attachment that is in the document management system from Outlook*
+   *Creating a new contact through the Document Management System from Outlook*
+
+.. figure::  images/document_attachment_thunderbird.png
+   :scale: 65
+   :align: center
+
+   *Pushing an attachment in the Document Management System from Thunderbird*
 
 Working with Users' Changes
 ---------------------------

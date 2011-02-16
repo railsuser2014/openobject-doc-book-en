@@ -1,6 +1,8 @@
 .. index::
    single: Communication Tools
 
+.. _ch-commtools:
+
 *******************
 Communication Tools
 *******************

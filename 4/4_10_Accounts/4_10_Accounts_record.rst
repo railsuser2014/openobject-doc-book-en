@@ -137,8 +137,8 @@ the distribution of either your expenses while creating supplier invoice, or rev
 
    *Definition of Distribution Models*
 
-As for example, when you create the invoice (suppose 1000 EUR) for the product ``Client Project`` with analytic distribution that
-we defied as above.
+For example, when you create the invoice (suppose 1000 EUR) for the product ``Client Project`` with analytic distribution that
+we defined as above.
 
 When the invoice has been validated, you can find the Analytic Journal Entries with distributed amount among the analytic accounts using the menu
 :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items.`

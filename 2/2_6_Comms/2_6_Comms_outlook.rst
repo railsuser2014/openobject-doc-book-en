@@ -59,7 +59,7 @@ Another way to use the Outlook plugin, is by installing the OpenERP module \
 |     click Edit and add ;C:\Python26.
 |     See also http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx
 |
-|   4. If you are using MS Outlook 2007 than you are required to install "Microsoft Exchange Server MAPI Client and Collaboration
+|   4. If you are using MS Outlook 2007 then you are required to install "Microsoft Exchange Server MAPI Client and Collaboration
 |   Data Objects 1.2.1 (CDO 1.21)" from
 |   http://www.microsoft.com/downloads/en/details.aspx?FamilyId=2714320D-C997-4DE1-986F-24F081725D36&displaylang=en.
 |   Double-click Exchange CDO to install it.

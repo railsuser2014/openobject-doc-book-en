@@ -80,9 +80,9 @@ Here are the main advantages of an OpenERP SaaS solution:
 
 So this server is recommended for small companies with fewer than about fifteen employees.
 
-.. index:: 
+.. index::
    single: hosting
-   
+
 Hosting by a Supplier
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -136,9 +136,9 @@ Calling such suppliers can be a good solution if you are willing to entrust all 
 specifications for the functioning of OpenERP to them, especially if you need to use customized or
 extension modules that are not in the stable version released by Tiny.
 
-.. index:: 
+.. index::
    single: internal installation
-   
+
 Internal Installation
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -156,7 +156,7 @@ an intermediate solution which consists of:
        quite a lot more convenient for them to be able to modify the database tables, forms, templates and
        workflows internally than routinely depend on a supplier.
 
-An internal installation will probably prove more costly than an SaaS package or hosted service.
+An internal installation will probably prove more costly than a SaaS package or hosted service.
 Even if you put yourself in charge of it all, you will take quite a bit of time learning how to manage
 the implementation unless the team already has an experience of OpenERP. This represents a
 significant risk.

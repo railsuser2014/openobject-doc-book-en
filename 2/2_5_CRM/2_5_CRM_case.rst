@@ -49,7 +49,7 @@ the performance of your teams in many ways.
 
 You can use menu :menuselection:`Sales --> Reporting` to view different statistical reports.
 
-As for example, statistical analysis of HelpDesk can be seen using the menu  :menuselection:`Sales --> Reporting -->
+For example, statistical analysis of HelpDesk can be seen using the menu :menuselection:`Sales --> Reporting -->
 Helpdesk Analysis` and switching to `Graph` view.
 
 .. _fig-crmgrp:
@@ -334,7 +334,7 @@ Enter the Server Information, check SSL if necessary, i.e. imap.googlemail.com a
 
 You can also choose to send an automatic reply on receipt of the mail. You can configure the mail here from the ``Email Server Action`` field.
 
-Assign the ``Model`` to use when a new e-mail arrives, i.e. choose Helpdesk (``crm.helpdesk``) if you want every new e-mail that arrives to be created as a helpdesk case. 
+Assign the ``Model`` to use when a new e-mail arrives, i.e. choose Helpdesk (``crm.helpdesk``) if you want every new e-mail that arrives to be created as a helpdesk case.
 
 Click `Confirm` to confirm the account settings.
 
