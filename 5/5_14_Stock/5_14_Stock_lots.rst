@@ -43,8 +43,8 @@ Each stock move is in a given state. The different possible states are:
 * ``Draft`` : the move so far has no effect in the system. The transaction has not yet been confirmed,
 
 * ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
-  you do not know whether it will be done without problem because the products have been reserved for
-  the move,
+  you do not know whether it will be done without problems because the products 
+  have not yet been reserved for the move,
 
 * ``Validated`` : the move will be done and the necessary raw materials have been reserved for the
   transaction,

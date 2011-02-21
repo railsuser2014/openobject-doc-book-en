@@ -70,7 +70,7 @@ is necessary in all of your company's processes for you to be effective, for exa
 
 OpenERP's general accounting and analytic accounting handle these needs well because of the close
 integration between all of the application modules. Furthermore, the transactions, the actions and
-the financial analyses happen in real time, so that you can not only monitor the situation but also
+the financial analyses happen in real time, so that you cannot only monitor the situation but also
 manage it effectively.
 
 .. index::
@@ -120,7 +120,7 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 	   single: module; base_synchro
 
 	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
-	  module.
+	  module, which is a shared-funding module rather than a module in the standard open repositories.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in OpenERP, an Order automatically generates an
