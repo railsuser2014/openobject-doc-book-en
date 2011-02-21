@@ -86,7 +86,7 @@ good chance of receiving some form of response to your questions within twenty-f
 
 The OpenObject wiki is used to manage activities around OpenERP.
 
-You will find informations about:
+You will find information about:
 
   * Shared Funding Projects
   * IRC Meetings
