@@ -98,7 +98,7 @@ Prerequisites
 *************
 There is no built-in way to synchronize calendars with CalDAV.
 So you need to install a third party software: Calendar (CalDav) Sync BETA 
-from Hypermatrix Software (for now, it is the only one).
+from Hypermatix Software (for now, it is the only one).
 
 How to Configure?
 *****************
