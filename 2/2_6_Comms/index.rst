@@ -44,6 +44,7 @@ You will also need to have administrator access to your Windows PC to install th
 
     2_6_Comms_outlook
     2_6_Comms_thunderbird
+    2_6_Comms_msword
     2_6_Marketing
 
 .. raw:: html
