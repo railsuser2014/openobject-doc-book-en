@@ -79,15 +79,15 @@ is also possible to configure these factors in the company. These factors are th
 company, whatever is the product concerned. In the description of the company, on the
 :guilabel:`Configuration` tab, you find the following parameters:
 
-* `Security Days` : number of days to deduct from a system order to cope with any problems of
-  procurement,
+* `Scheduler Range Days` : all the requests which are for procuring for a later date to
+  the number of days which are not calculated in the scheduler.
+  
+* `Manufacturing Lead Time` : number of additional days needed for manufacturing,
 
 * `Purchase Lead Time` : additional days to include for all purchase orders with this supplier,
 
-* `Manufacturing Lead Time` : number of additional days needed for manufacturing,
-
-* `Scheduler Range Days` : all the requests which are for procuring for a later date to
-  the number of days which are not calculated in the scheduler.
+* `Security Days` : number of days to deduct from a system order to cope with any problems of
+  procurement,
 
 .. note:: Purchase Lead Time
 
@@ -97,11 +97,11 @@ company, whatever is the product concerned. In the description of the company, o
 
 Take for example the following configuration:
 
-* `Security Days` : 2,
+* `Manufacturing Lead Time` : 1,
 
 * `Purchase Lead Time` : 3,
 
-* `Manufacturing Lead Time` : 1.
+* `Security Days` : 2.
 
 The example above will then be given the following lead times:
 
@@ -122,10 +122,10 @@ Operations
 
 In the first part of this chapter, manufacturing management was handled in terms of products and
 materials. This section focuses on manufacturing operations. To manufacture or assemble products, as
-well as using raw materials and finished product, you must also handle operations such as assembly,
+well as using raw materials and finished products, you must also handle operations such as assembly,
 drilling wood, and cutting timber.
 
-The different operations will have different impacts on the costs of manufacture and planning depending
+The various operations will have different impacts on the costs of manufacture and planning depending
 on the available workload.
 
 Definition of Concepts
@@ -150,7 +150,7 @@ distinguish two types of workcenters: machines and human resources.
 
 .. note:: Workcenter
 
-    Workcenters are units of manufacture consisting of one or several people and/or machines
+    Workcenters are units of manufacturing consisting of one or several people and/or machines
     that can be considered as a unit for the purposes of forecasting capacity and planning.
 
 Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers` to define a new
@@ -164,7 +164,12 @@ workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
 
    *Definition of a workcenter*
 
-A workcenter must have a name and a code. You then assign a type: machine, human resource, tool, and
+.. tip:: Missing fields
+	
+	If some fields such as :guilabel:`Analytic Journal, General Account` in the view are missing, you have
+	to install the module `analytic_account`.
+
+A workcenter must have a name. You then assign a type: machine, human resource, tool, and
 a description of operating hours or functionality. The figure :ref:`fig-mrpwkc` represents the hours from Monday
 to Friday, from 08:00 to 18:00 with a break of an hour from 12:00.
 
@@ -187,23 +192,23 @@ time.
     For example, for a printing workcenter, a cycle will be the printing of 1 page or of 1000 pages
     depending on the printer.
 
-To define the capacity properly it is necessary to know, for each workcenter, what will be the
+To define the capacity properly, it is necessary to know, for each workcenter, what will be the
 reference operation which determines the cycle. You can then define the data relative
 to the capacity.
 
-`Capacity per Cycle` (CA) : determine the number of operations that can be done in parallel during a
+`Capacity per Cycle` (CA): determine the number of operations that can be done in parallel during a
 cycle. Generally, the number defines the number of identical machines or people defined by the
 workcenter.
 
-`Time for 1 cycle (hour)` (TC) : give the duration in hours for that or the operations defined by a cycle.
+`Time for 1 cycle (hour)` (TC): give the duration in hours for that or the operations defined by a cycle.
 
-`Time before production` (TS) : give the wait in hours to initialise production operations. Generally,
+`Time before production` (TS): give the waiting time in hours to initialise production operations. Generally,
 this represents the machine setup time.
 
-`Time after production` (TN) : give the delay in hours after the end of a production operation.
+`Time after production` (TN): give the delay in hours after the end of a production operation.
 Generally, this represents the cleaning time necessary after an operation.
 
-`Efficiency factor`  (ET) : is a factor that is applied to the three times above to determine the real
+`Efficiency factor`  (ET): is a factor that is applied to the three times above to determine the real
 production time. This factor enables you to readjust the different times progressively and as a
 measure of machine utilization. You cannot readjust the other times because generally they are taken
 from the machine's data sheet.
@@ -221,7 +226,7 @@ capacity per cycle is 6, it takes 3 cycles to realize 15 operations.
    You can select the routing on each level of a bill of materials.
    The levels are then linked to hierarchies of bills of materials.
 
-The `Hour Account` and `Cycle Account` lets you define the links to analytical account to report the
+The `Hour Account` and `Cycle Account` let you define the links to analytical accounts to report the
 costs of the workcenter operations. If you leave the different fields empty, it will not have any
 effect on the analytic accounts.
 
@@ -234,9 +239,9 @@ effect on the analytic accounts.
 Routing
 ~~~~~~~
 
-Routings define the assembly operations to be done in workcenters for manufacturing a certain
+Routings define the assembly operations to be done in workcenters to manufacture a certain
 product. They are usually attached to bills of materials which will define the assembly of products
-required for manufacture or for finished products.
+required for manufacturing or for finished products.
 
 A routing can be defined directly in a bill of materials or through the menu
 :menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Routings`. A routing has a name, a code and a
@@ -255,14 +260,14 @@ location. That enables you to indicate where assembly takes place.
     for the customer or the supplier.
     You do this after you have subcontracted the assembly of a product to a supplier, for example.
 
-In the routing you must show the list of operations that must be done. Each operation must be done
-at a workcenter and possess a number of hours and/or cycles be done.
+In the routing, you have to show the list of operations that has to be done. Each operation has to be done
+at a workcenter and should include a number of hours and/or cycles to be done.
 
 Impact on the Production Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The routings are then attached to the bills of materials which are then also used to generate
-product order. On a production order you will find assembly operations for manufacture on the
+The routings are then attached to the bills of materials which are also used to generate
+production orders. On a production order you will find assembly operations for manufacture on the
 :guilabel:`Work Orders` tab.
 
 .. figure:: images/mrp_production_workorder.png
@@ -276,7 +281,7 @@ theoretical data. The user can change the values to reflect reality for manufact
 
 So if you use routings, OpenERP automatically calculates the operations required for the production
 order. If the workcenters are linked to analytic accounts, at the end of production, OpenERP will
-generate the analytic accounts representing the costs of manufacture. This will allow you to work
+generate the analytic accounts representing the manufacturing costs. This will allow you to work
 out profitability per workcenter or manufacturing unit through analytic accounting.
 
 But the routings also enable you to manage your production capacity. You will be able to leave the
@@ -284,7 +289,7 @@ demand charts for the days / weeks / months ahead to validate that you do not fo
 are capable of producing.
 
 To see a demand chart, list the workcenters using the menu :menuselection:`Manufacturing -->
-Configuration --> Resources --> Workcenters`. Then select one or several workcenters and click on the action
+Configuration --> Resources --> Workcenters`. Then select one or several workcenters and click the action
 :guilabel:`Workcenter Load`. OpenERP then asks you if you work in cycles or in hours and your
 interval is calculated (by day, week or month).
 
@@ -292,7 +297,7 @@ interval is calculated (by day, week or month).
    :scale: 65
    :align: center
 
-   *Charge by workcenter*
+   *Charge by Workcenter*
 
 .. tip:: Theoretical Times
 
@@ -309,7 +314,7 @@ Work Operations
 ~~~~~~~~~~~~~~~
 
 A production order defines the use of the products defined in the Bills of Materials, and the
-operations defined in the routing. You have seen how to handle manufacturing production as a top-level process,
+operations defined in the routing. You have seen how to handle manufacturing as a top-level process,
 but some companies prefer to have finer-grained control of operations, where instead of
 specifying just the production process itself, they enter data on each constituent production operation.
 
@@ -330,23 +335,22 @@ is installed you will find a new menu called :menuselection:`Manufacturing --> M
    :scale: 75
    :align: center
 
-   *Work Order definition*
+   *Defining Work Orders*
 
-The assembly workers must then encode each step operation by
-operation and, for each step, its real working time.
+The assembly worker then has to encode each step, operation by operation, and for each step, his real working time.
 OpenERP supports the editable workflow through the menu :menuselection:`Administration --> Customization --> Workflows --> Workflows`.
-You can find the operation workflow and edit according to necessity.
+You can find the operation workflow here and edit it according to your needs.
 
 .. figure:: images/mrp_operations_tree.png
    :scale: 75
    :align: center
 
-   *List of operations to be carried out*
+   *List of Operations to be Carried out*
 
-Operations must then be carried out one by one. On each operation, the operator can click the
-:guilabel:`Start` button. The time is then worked out
-automatically on the operation between the two changes of status. The operator can also put the
-operation on hold and start again later.
+Operations have to be carried out one by one. On each operation, the operator can click the
+:guilabel:`Start` button. The time is worked out
+automatically on the operation between the two status changes. The operator can also put the
+operation on hold and start it again later.
 
 The following process is attached to each operation.
 
@@ -354,13 +358,13 @@ The following process is attached to each operation.
    :scale: 75
    :align: center
 
-   *Process for handling an operation*
+   *Process for Handling an Operation*
 
-Thanks to this use by operation, the real working time is recorded on the production order.
+Thanks to this use by operation, the real working time is recorded in the production order.
 
 The production order is automatically put into the state ``In Production`` once the first operation has been
 started. That consumes some raw materials. Similarly, the production order is closed automatically
-once the last operation is completed. The finished products are then made.
+once the last operation has been completed. The finished products will then be made.
 
 .. index:: barcode
 
@@ -368,7 +372,7 @@ Events and Barcodes
 ===================
 
 If the company wants to work with barcodes in manufacturing, you can work on each operation using
-events. Here are some examples of events for an operations:
+events. Here are some examples of events for an operation:
 
 * Starting an operation,
 
@@ -380,38 +384,37 @@ events. Here are some examples of events for an operations:
 
 * Cancelling an operation.
 
-You can print barcodes for the
-workcenters using the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers`.
-Click on the report action `Work Centers Barcode` to generate the barcodes for that work center.
+You can print barcodes for the work centers using the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers`.
+Click the report action `Work Centers Barcode` to generate the barcodes for that work center.
 
 .. figure:: images/mrp_operation.png
    :scale: 75
    :align: center
 
-   *Capturing events for work orders*
+   *Capturing Events for Work Orders*
 
 OpenERP then applies the events to the relevant operation.
 
-Subcontracting Manufacture
---------------------------
+Subcontracting Manufacturing
+----------------------------
 
 In OpenERP it is possible to subcontract production operations (for example, painting and item
-assembly) at a supplier's. To do this you must indicate on the relevant routing document a supplier
+assembly) at a supplier's. On the relevant routing document, you have to indicate a supplier
 location for stock management.
 
-You must then configure a location dedicated to this supplier with the following data:
+You then have to configure a location dedicated to this supplier with the following data:
 
-* :guilabel:`Location Type` : Supplier,
+* :guilabel:`Location Type`: Supplier,
 
-* :guilabel:`Location Address` : Select an address of the subcontractor partner,
+* :guilabel:`Location Address`: Select an address of the subcontractor partner,
 
-* :guilabel:`Chained Location Type` : Fixed,
+* :guilabel:`Chained Location Type`: Fixed,
 
-* :guilabel:`Chained Location If Fixed` : your Stock,
+* :guilabel:`Chained Location If Fixed`: your Stock,
 
-* :guilabel:`Chaining Lead Time` : number of days before receipt of the finished product.
+* :guilabel:`Chaining Lead Time`: number of days before receipt of the finished product.
 
-Then once the manufacture has been planned for the product in question, OpenERP will generate the
+Once the manufacturing has been planned for the product concerned, OpenERP will generate the
 following steps:
 
 * Delivery of raw materials to the stores for the supplier,
@@ -425,8 +428,8 @@ stock at the supplier's stores.
 
 Once the delivery of raw materials has been confirmed, OpenERP activates the production order. The
 supplier uses the raw materials sent to produce the finished goods which will automatically be put
-in your own stores. The confirmation of this manufacture is made when you receive the products from
-your supplier. It is then that you indicate the quantities consumed by your supplier.
+in your own stores. The confirmation of this manufacturing is made when you receive the products from
+your supplier. At that point, you indicate the quantities consumed by your supplier.
 
 .. tip:: Subcontract Without Routing
 
