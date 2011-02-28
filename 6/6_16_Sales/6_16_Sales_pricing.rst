@@ -192,6 +192,32 @@ Once the pricelist is defined, you can assign it to a partner. To do this, find 
 its :guilabel:`Sales & Purchases` tab. You can then change the :guilabel:`Purchase Pricelist` and the
 :guilabel:`Sale Pricelist` that is loaded by default for the partner.
 
+
+.. _decimal_accuracy:
+
+Decimal Accuracy
+^^^^^^^^^^^^^^^^
+There are several configuration settings related to the decimal accuracy of 
+prices, or the number of decimal places to hold with each price field. To change
+the accuracy of a field, follow these steps:
+
+1. Make sure you have the extended user interface. The setting is on your user 
+   screen.
+   
+2. From the Administration menu, choose Customization: Database Structure: 
+   Decimal Accuracy.
+   
+3. Open the entry you want to change. Purchase Price and Sale Price are the 
+   most common ones related to prices, but some fields are controlled by the 
+   Account entry.
+   
+4. Type a new value in the digits field, and save the entry. Don't change the
+   Usage field, or it will stop working.
+   
+5. Close the screen where you were editing prices and reopen it. The price field 
+   should now have the number of digits you asked for.
+
+
 Example
 -------
 
