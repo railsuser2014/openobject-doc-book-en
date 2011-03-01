@@ -201,18 +201,18 @@ There are several configuration settings related to the decimal accuracy of
 prices, or the number of decimal places to hold with each price field. To change
 the accuracy of a field, follow these steps:
 
-1. Make sure you have the extended user interface. The setting is on your user 
-   screen.
+1. Make sure you have the `Extended` user interface. The setting is in your user 
+   preferences.
    
-2. From the Administration menu, choose Customization: Database Structure: 
-   Decimal Accuracy.
+2. Go to :menuselection:`Administration --> Customization --> Database Structure --> 
+   Decimal Accuracy`. This list contains a number of predefined elements.
    
-3. Open the entry you want to change. Purchase Price and Sale Price are the 
+3. Open the entry you want to change. `Purchase Price` and `Sale Price` are the 
    most common ones related to prices, but some fields are controlled by the 
-   Account entry.
+   `Account` entry.
    
-4. Type a new value in the digits field, and save the entry. Don't change the
-   Usage field, or it will stop working.
+4. Type a new value in the digits field, and save the entry. Do not change the description in the
+   `Usage` field, or it will stop working.
    
 5. Close the screen where you were editing prices and reopen it. The price field 
    should now have the number of digits you asked for.
@@ -272,8 +272,8 @@ Default Price Lists
 
    *Default pricelist after installing OpenERP*
 
-When you install the software two pricelists are created by default: one for sales and one for
-purchases. These each contain only one pricelist version and only one line in that version.
+When you install the software, two pricelists are created by default: one for sales and one for
+purchases. Each of them contains only one pricelist version and only one line in that version.
 
 The price for sales defined in the Default Public Pricelist is set by default to
 the Public Price of the product in the product file, which is the Sale Price in the Product file.
@@ -378,12 +378,12 @@ The sale price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
 
                 *  :guilabel:`Priority` : \ ``2``\  .
 
-Once this list has been entered you should look for the partner form for TinAtwo again. Click the
+Once this list has been entered, you should look for the partner form of TinAtwo again. Click the
 :guilabel:`Sales & Purchases` tab to set the :guilabel:`Sale Pricelist` field to *TinAtwo Contract*. If
 the contract is only valid for one year, do not forget to set the :guilabel:`Start Date` and
 :guilabel:`End Date` fields in the :guilabel:`Pricelist Version`.
 
-Then when salespeople prepare an estimate for TinAtwo the prices proposed will automatically be
+Then when salespeople prepare an estimate for TinAtwo, the prices proposed will automatically be
 calculated from the contract conditions.
 
 Pricelists and Managing Currencies
