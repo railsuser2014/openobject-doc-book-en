@@ -1,17 +1,38 @@
 
-.. _part-qual:
+.. index::
+   single: Management System
 
-###############################
-Process and Document Management
-###############################
+*****************
+Management System
+*****************
+
+ *Management system has become a major strategic factor in companies' development.
+ Management system provides a way for companies to organize their information, in all its
+ forms, in one place.*
+
+The objectives of document management include easier archiving, access and reference, intelligent
+classification and distribution of documents and the information they contain. It concerns sets of
+all sorts of company documents such as work procedures, meeting reports, documents received from
+customers and suppliers, documents sent to customers, faxes, sales presentations and product
+datasheets.
+
+For this chapter you should start with a fresh database that includes demo data,
+with :mod:`mgmtsystem_quality`, or :mod:`mgmsystem_environment` and their dependencies installed.
+
+.. raw:: html
+
+    <div class="all-toctree">
 
 .. toctree::
-    :maxdepth: 1
 
-    7_18_Process/index
-    7_19_Documents/index
-    7_23_Managementsystem/index
-    7_20_Caldav/index
+   7_23_Managementsystem_manual
+   7_23_Managementsystem_audit
+   7_23_Managementsystem_nonconformity
+   7_23_Managementsystem_action
+
+.. raw:: html
+
+    </div>
 
 .. Copyright © Open Object Press. All rights reserved.
 

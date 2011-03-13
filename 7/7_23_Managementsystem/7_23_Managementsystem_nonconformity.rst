@@ -1,17 +1,29 @@
 
-.. _part-qual:
+.. index:: Nonconformities
 
-###############################
-Process and Document Management
-###############################
+Nonconformities
+===============
 
-.. toctree::
-    :maxdepth: 1
+.. index::
+   single: nonconformity
+   single: module; mgmtsystem_nonconformity
 
-    7_18_Process/index
-    7_19_Documents/index
-    7_23_Managementsystem/index
-    7_20_Caldav/index
+Prior to create a nonconformity, you need to create the list of origins (how you discovered your nonconformities) and causes (the root causes) of your nonconformities from the menu :menuselection:`Management System --> Configuration --> Nonconformities`.
+
+Then you can create nonconformities directly from the audit or from the menu :menuselection:`Management System --> Management System --> Nonconformities`. You set the partner involved by the nonconformity, an identifier to what it is related to and the employee responsible for the nonconformity, with his manager.
+
+.. figure::  images/mgmtsystem_nonconformity.png
+   :scale: 75
+   :align: center
+
+   *Structure of the quality manual*
+
+You then choose the origins of the nonconformity and the procedure involed. In the description, you explain and detail the nonconformity with facts and evidences. 
+
+You choose the cause and then analyze why the nonconformity happened in order to suggest immediate, corrective and preventive actions.
+
+Once all the actions have proven to be completed and efficient, you can close the nonconformity.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

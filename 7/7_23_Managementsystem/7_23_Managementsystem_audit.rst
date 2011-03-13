@@ -1,17 +1,30 @@
 
-.. _part-qual:
+.. index:: Audits
 
-###############################
-Process and Document Management
-###############################
+Audits
+======
 
-.. toctree::
-    :maxdepth: 1
+.. index::
+   single: audit
+   single: module; mgmtsystem_audit
 
-    7_18_Process/index
-    7_19_Documents/index
-    7_23_Managementsystem/index
-    7_20_Caldav/index
+You can then plan your audit calendar by creating audits from the menu :menuselection:`Management System --> Management System --> Audits`.
+You give it a name, and a date and time. You can then assign the auditors and the auditees.
+
+.. figure:: images/mgmtsystem_audit.png
+   :scale: 75
+   :align: center
+
+The auditor can then fill in the verification list with questions based on the manual, the procedure (or the environmental aspects) and the work instructions. He will be able to print the verification list (report) and carry out his audit. 
+
+.. figure:: images/mgmtsystem_verification.png
+   :scale: 75
+   :align: center
+
+At the end of the audit, he will add the answers to his questions in the verification list stating if it is conformed or not. He will provide feedbacks to the auditees with the strong points and points to improve. The auditor will be suggesting improvement opportunities and explaining the nonconformities he discovered.
+
+Once completed, the auditor can close the audit and generate his audit report.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
