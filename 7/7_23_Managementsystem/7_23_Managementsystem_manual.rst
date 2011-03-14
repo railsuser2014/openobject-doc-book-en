@@ -9,14 +9,16 @@ Manuals
    single: module; wiki_quality_manual
    single: module; wiki_environment_manual
 
-Each management system starts with a manual reflecting the structure of the corresponding ISO standards.
+Each management system starts with a manual reflecting the structure of the corresponding ISO standards. 
 You can fill in the blanks in the structure of the wiki page from the menu :menuselection:`Knowledge --> Collaborative Content --> Wiki pages`.
+
 
 .. figure::  images/mgmtsystem_manual.png
    :scale: 75
    :align: center
 
-   *Structure of the quality manual*
+   *Quality manual*
+
 
 Procedures and Environmental Aspects
 ====================================
@@ -27,12 +29,14 @@ Procedures and Environmental Aspects
    single: module; wiki_procedure
    single: module; wiki_environmental_aspect
 
-Once you have created your manual, you will have to complete it with procedures or environemental aspects.
+Once you have created your manual, you will have to complete it with procedures or environmental aspects. 
 They are both managed through wiki pages in the same menu as the manual and the structure is already provided.
+
 
 .. figure:: images/mgmtsystem_procedure.png
    :scale: 75
    :align: center
+
 
 You can also detail your procedures with work instructions by creating new wiki pages.
 

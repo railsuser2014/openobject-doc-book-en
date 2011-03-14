@@ -11,15 +11,22 @@ Audits
 You can then plan your audit calendar by creating audits from the menu :menuselection:`Management System --> Management System --> Audits`.
 You give it a name, and a date and time. You can then assign the auditors and the auditees.
 
+
 .. figure:: images/mgmtsystem_audit.png
    :scale: 75
    :align: center
 
+   *Management system audit*
+
 The auditor can then fill in the verification list with questions based on the manual, the procedure (or the environmental aspects) and the work instructions. He will be able to print the verification list (report) and carry out his audit. 
+
 
 .. figure:: images/mgmtsystem_verification.png
    :scale: 75
    :align: center
+
+   *Verification line*
+
 
 At the end of the audit, he will add the answers to his questions in the verification list stating if it is conformed or not. He will provide feedbacks to the auditees with the strong points and points to improve. The auditor will be suggesting improvement opportunities and explaining the nonconformities he discovered.
 
