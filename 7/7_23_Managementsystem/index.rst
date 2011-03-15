@@ -6,18 +6,15 @@
 Management System
 *****************
 
- *Management system has become a major strategic factor in companies' development.
- Management system provides a way for companies to organize their information, in all its
- forms, in one place.*
+ *A management system is the framework of processes and procedures used to ensure that an 
+  organization can fulfill all tasks required to achieve its objectives.*
 
-The objectives of document management include easier archiving, access and reference, intelligent
-classification and distribution of documents and the information they contain. It concerns sets of
-all sorts of company documents such as work procedures, meeting reports, documents received from
-customers and suppliers, documents sent to customers, faxes, sales presentations and product
-datasheets.
+The objective of management system is to provide all the required applications to manage your
+manuals, procedures, environmental aspects, work instructions, audits, nonconformities, 
+improvement opportunities, immediate, corrective and preventive actions.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`mgmtsystem_quality`, or :mod:`mgmsystem_environment` and their dependencies installed.
+with :mod:`mgmtsystem_quality`, or :mod:`mgmtsystem_environment` and their dependencies installed.
 
 .. raw:: html
 

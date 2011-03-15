@@ -25,9 +25,9 @@ out the action and a type:
  * immediate action: an action that can be quickly closed (in less than a day).
  * corrective action: an action to solve the nonconformity.
  * preventive action: an action which makes sure you will not face the same 
-nonconformity once again in the future.
+   nonconformity once again in the future.
  * improvement opportunity: an action that might be relevant for you to implement. 
-You have to evaluate if it makes sense for your business.
+   You have to evaluate if it makes sense for your business.
 
 The person in charge of the action can then detail his different steps as internal 
 note or email. Once the action has proven to be completed and efficient, the action 
