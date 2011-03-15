@@ -7,7 +7,7 @@ Management System
 *****************
 
  *A management system is the framework of processes and procedures used to ensure that an 
-  organization can fulfill all tasks required to achieve its objectives.*
+ organization can fulfill all tasks required to achieve its objectives.*
 
 The objective of management system is to provide all the required applications to manage your
 manuals, procedures, environmental aspects, work instructions, audits, nonconformities, 
