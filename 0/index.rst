@@ -214,7 +214,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 	                **Els Van Vossel**
 
 			Els Van Vossel always had a dedication to both written and spoken word.
-			Clear and explicite communication is crucial.
+			Clear and explicit communication is crucial.
 
 			Educated as a Professional Translator in Antwerp, she worked as an independent translator
 			on the localization of major ERP softwares. Els acquired ERP knowledge and decided
