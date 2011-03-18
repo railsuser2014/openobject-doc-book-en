@@ -4,11 +4,11 @@ Microsoft Outlook Interface
 ===========================
 
 The Microsoft Outlook plugin enables you to carry out a series of OpenERP operations directly
-from the Outlook e-mail client:
+from the Outlook email client:
 
-* create a contact or partner from an e-mail,
+* create a contact or partner from an email,
 
-* save an e-mail and its attachments in OpenERP,
+* save an email and its attachments in OpenERP,
 
 * send any attachment to an OpenERP document (such as proposals, projects, and tasks).
 
@@ -126,9 +126,9 @@ Using the Outlook Plugin
 
 You can use the menu :menuselection:`Tools` for several things.
 
-The `Push` option allows you to archive e-mails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
+The `Push` option allows you to archive emails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
 
-The `Partner` allows you to open the Partner in OpenERP according to the e-mail (i.e. contact e-mail address) selected. 
+The `Partner` allows you to open the Partner in OpenERP according to the email (i.e. contact email address) selected. 
 
 With `Document`, you can open the document concerned in OpenERP. Make sure you are logged in to the web version to use this functionality. 
 
@@ -140,7 +140,7 @@ With `Document`, you can open the document concerned in OpenERP. Make sure you a
 
    *How to Access OpenERP from Outlook?*
 
-To archive an e-mail in OpenERP from Outlook, select the e-mail and click the `Push` button. Alternatively, you can open the menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` screen will open.
+To archive an email in OpenERP from Outlook, select the email and click the `Push` button. Alternatively, you can open the menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` screen will open.
 
 In the ``Link to an Existing Document`` section, select an object which you would like to add to your email and its attachments. You
 can select any object you defined in the ``Document Settings`` section and attach the selected mail to the selected record.
@@ -151,14 +151,14 @@ Do not forget to click the ``Search`` button to refresh the Documents list when 
 * Create a New Document
 
 This feature can be used to create any of the configured document types in the ``Document Settings`` tab.
-Suppose you would like to create a new lead from an e-mail. In the ``Create a New Document`` section, select ``CRM Lead``, then click the ``Create`` button. A new lead will be created in OpenERP from the selected e-mail.
+Suppose you would like to create a new lead from an email. In the ``Create a New Document`` section, select ``CRM Lead``, then click the ``Create`` button. A new lead will be created in OpenERP from the selected email.
 
 * Create a New Contact / Partner
 
-If you cannot find a partner or contact for your e-mail in OpenERP, the Outlook plugin allows you to
-create one on the fly simply by using the information contained in the e-mail.
+If you cannot find a partner or contact for your email in OpenERP, the Outlook plugin allows you to
+create one on the fly simply by using the information contained in the email.
 
-Select the e-mail from which you want to create a new contact, then click the ``Push`` button.
+Select the email from which you want to create a new contact, then click the ``Push`` button.
 In the ``Create a New Contact`` section, click the ``New Contact`` button. This option offers two possibilities:
 either you just create a contact (address), or you create a partner with the contact linked to it.
 
@@ -179,7 +179,7 @@ either you just create a contact (address), or you create a partner with the con
 
 * Open the Document created in OpenERP
 
-To access archived data from different documents in OpenERP you can use the menu :menuselection:`Tools --> Document` which allows you to access the document in OpenERP directly from your e-mail.
+To access archived data from different documents in OpenERP you can use the menu :menuselection:`Tools --> Document` which allows you to access the document in OpenERP directly from your email.
 
 .. tip:: Knowledge Management
 

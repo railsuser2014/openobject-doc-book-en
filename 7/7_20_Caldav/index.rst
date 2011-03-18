@@ -25,9 +25,9 @@ Some modules need to be installed on the OpenERP server. These are:
 When you install the above module(s), a ready-to-go reference setup of the folders is provided.
 The OpenERP administrator can add more calendars and (re)structure if needed.
 
-DNS Server Setup
-----------------
-To be documented.
+.. DNS Server Setup
+.. ----------------
+.. To be documented.
 
 SSL Setup
 ---------
@@ -108,8 +108,8 @@ How to Configure?
    
 2. On the `Connection` tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
 
-   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav
-   server will be shown.)
+   .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav
+   server link will be shown. Make sure to use the correct XML-RPC port, it may differ from 8069.
 
 3. Type your OpenERP username and password.
 
