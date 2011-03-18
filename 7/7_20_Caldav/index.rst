@@ -1,3 +1,5 @@
+.. _ch-sync:
+
 Synchronizing your Calendars (CalDAV)
 =====================================
 
