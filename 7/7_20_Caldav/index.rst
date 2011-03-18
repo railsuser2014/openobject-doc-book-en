@@ -55,8 +55,7 @@ To set up the calendars, proceed as follows:
 5. Enter the host name.
    (e.g. if the URL is http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com is the host)
 
-   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Iphone``. Then the Caldav
-   server will be shown.)
+      .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Iphone``. Then the Caldav server will be shown.
 
 6. In ``Username`` and ``Password``, type your OpenERP login and password.
 
@@ -108,8 +107,7 @@ How to Configure?
    
 2. On the `Connection` tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
 
-   .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav
-   server link will be shown. Make sure to use the correct XML-RPC port, it may differ from 8069.
+   .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav server link will be shown. Make sure to use the correct XML-RPC port, it may differ from 8069.
 
 3. Type your OpenERP username and password.
 
@@ -135,7 +133,7 @@ Calendars in Evolution
     - Username : Your username (e.g. Demo)
     - Refresh : every time you want Evolution to synchronize the data with the server
 
-   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Evolution``. Then the Caldav server will be shown.)
+      .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Evolution``. Then the Caldav server will be shown.
 
 4. Click OK and enter your OpenERP password.
 
@@ -161,7 +159,7 @@ Configuration
 4. As a format, select CalDav
    and as a location type the URL (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings).
 
-   (**Tip:** Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Sunbird/Lightning``. Then the Caldav server will be shown.)
+      .. tip:: Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Sunbird/Lightning``. Then the Caldav server will be shown.)
   
 5. Choose a name and a colour for the Calendar, and we advice you to uncheck "alarm".
 
