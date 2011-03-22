@@ -11,7 +11,7 @@ To manage alerts on products or partners, you can install the :mod:`warning` mod
 installed, you will be able to configure a series of alerts on the partners or products by
 setting parameters in the new :guilabel:`Warnings` tab on each of the forms.
 
-You can select any of the following types of warnings and create different warnings for purchase and for sales:
+You can select any of the following types of warnings and create different warnings for purchases and for sales:
 
 * :guilabel:`No Message`: This option will not display a message.
 
@@ -39,7 +39,7 @@ The available warnings in the partner form are:
 * Create a warning when invoicing a partner.
 
 For example, if you enter an alert for the invoicing of a customer, for an accountant entering an
-invoice for that customer, the alert message will be attached as shown in the figure :ref:`fig-warnsmp`:
+invoice for that customer, the alert message will be attached as shown in the figure :ref:`fig-warnsmp`.
 
 .. _fig-warnsmp:
 
@@ -47,13 +47,13 @@ invoice for that customer, the alert message will be attached as shown in the fi
    :scale: 75
    :align: center
 
-   *Alert from invoicing a customer*
+   *Alert from Invoicing a Customer*
 
 .. figure:: images/warning_product.png
    :scale: 75
    :align: center
 
-   *Management of alerts on products*
+   *Management of Alerts on Products*
 
 The alerts that can be configured on a product form are related to:
 
