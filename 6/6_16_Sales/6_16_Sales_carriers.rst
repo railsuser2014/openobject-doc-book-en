@@ -8,7 +8,7 @@ Management of Carriers
    single: module; delivery
    single: module; profile_manfuacturing
 
-To manage deliveries in OpenERP, install the :mod:`delivery` module.
+To manage deliveries in OpenERP, you can install the :mod:`delivery` module.
 To do that, use the :guilabel:`Reconfigure` wizard and select :guilabel:`Delivery Costs` under the :guilabel:`Sales Application Configuration` section for installation.
 
 This module enables you to manage:
@@ -47,7 +47,7 @@ Let's give you an example:
    ================    ===============   ==========================
 
 Information about the invoicing of transport (such as accounts, applicable taxes) is entered in the
-product linked to the delivery mode. Ideally the product should be configured as 
+product linked to the delivery mode. Ideally the product should be configured with 
 :guilabel:`Product Type` ``Service`` and :guilabel:`Procurement Method` ``Make to Stock``.
 
 You can use the same product for several delivery modes. This simplifies the
