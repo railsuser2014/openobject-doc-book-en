@@ -1,5 +1,7 @@
 .. index:: Outlook (Microsoft)
 
+.. _outlook:
+
 Microsoft Outlook Interface
 ===========================
 

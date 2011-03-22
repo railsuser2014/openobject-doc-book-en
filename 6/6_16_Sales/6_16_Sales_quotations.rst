@@ -4,25 +4,25 @@ Sales Quotations
 
 In OpenERP, a quotation and an order are handled by the same underlying object, but in different states. You
 can consider an order to be a quotation that has evolved because it has been confirmed by the
-customer. Or, conversely, that a quotation is an order that has not yet been validated or cancelled.
+customer. Or, conversely, that a quotation is an order that has not been validated or cancelled yet.
 All of the orders and quotations in the system can be reached using the menu :menuselection:`Sales
 --> Sales --> Sales Orders`.
 
 To enter details of a new quotation, you can use the menu :menuselection:`Sales -->
-Sales --> Sales Orders` and then select :guilabel:`New`. OpenERP then opens a new window
-so that you can enter data into a new blank quotation form.
+Sales --> Sales Orders` and then select :guilabel:`New`. OpenERP opens a new window
+allowing you to enter data into a new blank quotation form.
 
 .. figure:: images/sale_quotation_new.png
    :scale: 75
    :align: center
 
-   *Data entry for a new quotation*
+   *Data Entry for a New Quotation*
 
 Some information is automatically specified by the system:
 
 * an internal reference for the quotation or order,
 
-* the sale point that the order will be delivered from,
+* the sales point that the order will be delivered from,
 
 * the order date,
 
@@ -30,7 +30,7 @@ Some information is automatically specified by the system:
 
 You can modify any of that information before validating the quotation. The customer
 reference is shown in the header of the order. This optional field is for the customer's own reference –
-if the customer does not supply one then just leave it empty.
+if the customer does not supply one, just leave it empty.
 
 You then enter all the data about the order in the :guilabel:`Sales Order` tab. Start by entering
 the customer name, selecting the correct customer from the list of customers in the system. You can
@@ -43,13 +43,13 @@ automatically, based on the configuration of the partner form for that customer:
 * :guilabel:`Ordering Contact` : person handling the order at the customer end. By default, OpenERP
   proposes the Ordering Contact at the selected partner.
 
-* :guilabel:`Shipping Address` : address used on the delivery order. By default, OpenERP proposes
-  the shipping address from the partner form. If nothing is defined in that slot, it uses the default
-  address instead.
+* :guilabel:`Delivery Address` : address used on the delivery order. By default, OpenERP proposes
+  the delivery address from the partner form. If no specific delivery address is defined, the default
+  address will be used instead.
 
 * :guilabel:`Invoice Address` : address used to send the invoice to the customer. By default, OpenERP
-  proposes the address labelled :guilabel:`Invoice` from the partner form. If nothing is defined there,
-  it uses the default address instead.
+  proposes the address labelled :guilabel:`Invoice` from the partner form. If no specific delivery address is defined, the default
+  address will be used instead.
 
 * :guilabel:`Pricelist` : will determine both the currency of the quotation and the price that will
   be used for each product.
@@ -67,11 +67,11 @@ for assigning revenues to the project or case specified by this order.
 
    If you are managing by task, the analytic account to be selected is the one that corresponds to
    the project for the order.
-   The sale carried out by the order can be allocated to the project so that profitability
+   The sales carried out by the order can be allocated to the project so that profitability
    calculations can be made.
 
 Once the information has been entered, you can enter data for the order lines. To do that, create a
-new order line as shown in the figure :ref:`fig-slinf`:
+new order line as shown in the figure :ref:`fig-slinf`.
 
 .. _fig-slinf:
 
@@ -79,36 +79,34 @@ new order line as shown in the figure :ref:`fig-slinf`:
    :scale: 75
    :align: center
 
-   *Entering a new sales order line*
+   *Entering a New Sales Order Line*
 
 First of all, select the product that is to be sold to the customer. OpenERP shows some
-useful information in the list of products to help you during your sale:
+useful information in the list of products to help you making a sales quotation:
 
-* :guilabel:`Real Stock` : physically present in your warehouses. This value depends on the sale
-  point selected in the order header. Different sale points can be linked to different warehouses,
+* :guilabel:`Real Stock` : physically present in your warehouses. This value depends on the Shop (sales
+  point) selected in the order header. Different shops can be linked to different warehouses,
   giving different stock levels, or can use the same warehouse.
 
 * :guilabel:`Virtual Stock` : shows a salesperson the quantity that can be sold, taking into account
   both stock reserved for other orders and amounts that could arrive in the short term.
 
-* :guilabel:`Pricelist` : (may not be shown, depending on the installed modules) depends on the conditions attached to the customer, calculated on the
-  list price. This is the price that is proposed by default in the customer quotation, unless it has been
-  modified by the salesperson.
-
-* :guilabel:`Public Price` : the base sale price for the given product. It provides a base for the
+* :guilabel:`Public Price` : the basic sales price for the given product. It provides a basis for the
   salesperson to be able to judge whether to offer a discount to the customer, and how much the
   discount should be.
 
+* :guilabel:`Pricelist` : (may not be shown, depending on the installed modules) depends on the pricing conditions attached to the customer, calculated on the list price. This is the price that is proposed by default in the customer quotation, unless it has been modified by the salesperson.
+
 * :guilabel:`Cost Price` : shows the cost price of the product. If the salesperson sells at less
-  than this amount, then the company incurs a loss.
+  than this amount, the company incurs a loss.
 
 .. figure:: images/sale_product_list.png
    :scale: 75
    :align: center
 
-   *Selecting a product in a Sales Order Line*
+   *Selecting a Product in a Sales Order Line*
 
-When the product that is to be sold to the customer has been selected, OpenERP automatically
+Once the product to be sold to the customer has been selected, OpenERP automatically
 completes all the other required fields: quantity, unit of measure, description, unit price,
 discount, procurement method, lead times and applicable taxes. All of this information comes from
 the product form.
@@ -117,14 +115,13 @@ the product form.
    single: module; product_visible_discount
 
 .. tip:: Visible Discount
-
-   If a discounted price is taken from a price list, then by default that figure is shown as the
-   sale price to the customer. He will see a discount of 0% along with unit price that is different
+   If a discounted price is taken from a price list, by default that figure is shown as the
+   sales price to the customer. He will see a discount of 0% along with the unit price that is different
    from the list price.
-   If you install the module :mod:`product_visible_discount` from ``extra-addons``
+   If you install the module :mod:`product_visible_discount` from ``extra-addons``,
    you can configure whether you want to make the discount
-   explicitly visible on an order form as a percentage difference from the list price,
-   or just show a reduced unit price as it does by default.
+   explicitly visible in an order form as a percentage difference from the list price,
+   or just show a reduced unit price as in the default configuration.
 
 In the form, the selected product is presented in the language of the user so that he can see
 what he is selling. The description of the product sold can also be expressed in the customer's language.
@@ -134,28 +131,27 @@ The translation to the customer's language is used on the quotation or order whe
    :scale: 75
    :align: center
 
-   *Sale of a product in a partner language that differs from the user language*
+   *Selling a Product in a Partner Language that differs from the User Language*
 
 .. note:: One-off Sales
 
-   If a product is sold to a customer only once, you do not have to enter data into a complete new
+   If a product is sold to a customer only once, you do not have to enter data into a completely new
    product form just for that sale.
-   You can manually complete all the information in the order without putting it into a product:
+   You can manually complete all the information in the order without actually creating a product:
    description, price, quantity, lead time, taxes.
-   In this case OpenERP will not generate a delivery note because the product is not held in stock.
+   In this case OpenERP will not generate a delivery note because the "product" is not held in stock.
 
 When all of the products are entered, you can print the quotation and send it to the customer. To do
-this, click on the link :guilabel:`Quotation / Order` in the :guilabel:`Reports` section to the right.
+this, click the :guilabel:`Quotation / Order` link in the :guilabel:`Reports` section to the right.
 OpenERP opens the quotation in PDF to enable to you to see it before printing.
 
 .. figure:: images/sale_print.png
    :scale: 75
    :align: center
 
-   *Printing a sales quotation*
+   *Printing a Sales Quotation*
 
-You can then confirm the quotation to move it on to an order if the order is confirmed by the
-customer, or just cancel the window without confirming the order to leave it in quotation state. To
+When the order is confirmed by the customer, you can confirm the quotation to turn in into an order. You can also just cancel the window without confirming the order to leave it in quotation state. To
 find all of the current quotations, you can use the menu :menuselection:`Sales --> Sales
 --> Sales Orders` and click the :guilabel:`Quotations` filter button.
 
@@ -167,7 +163,7 @@ look at :ref:`ch-process`.
    :scale: 75
    :align: center
 
-   *Process view from following a sales order*
+   *Process View for a Sales order*
 
 .. Copyright © Open Object Press. All rights reserved.
 

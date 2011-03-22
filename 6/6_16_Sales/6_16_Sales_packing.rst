@@ -2,7 +2,7 @@
 Packaging
 =========
 
-Products can be managed in several different packaged forms. For example, if you sell
+Products can be managed in several packaged forms. For example, if you sell
 batteries you can define the following packages for a given battery product:
 
 * Piece: a battery,
@@ -18,7 +18,7 @@ salesperson could sell separately, one battery or a palette of batteries. In the
 select the default packaging type as a function of the quantities ordered.
 
 For example, if the customer wants to buy 30,000 batteries, the salesperson can select the package
-``palette``. OpenERP will then propose the sale of 32,000 batteries, which corresponds to two
+``palette``. OpenERP will then propose to sell 32,000 batteries, which corresponds to two
 palettes. Or the salesperson can select 75 packs.
 
 The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
@@ -32,15 +32,15 @@ quantities do not correspond to the proposed packages. The quantity must be a mu
    :scale: 75
    :align: center
 
-   *Alert on the quantities sold compared with the packaging*
+   *Alert on the Quantities sold compared to the Packaging*
 
 Do not confuse the management of packaging with the management of multiple units of measure. The
-Units of Measure is used to manage the stock differently in its different units. 
+Unit of Measure is used to manage the stock differently according to the various units. 
 With packages, the stock is always managed by individual items, but information about the package to use is supplied
 to the storesperson along with that item.
 
 Even if the effects are the same, the printed documents will be different. The two following
-operations have the same effect on stock movement levels but will be printed differently
+operations have the same effect on stock movement levels, but will be printed differently
 on the sales order and the packing order:
 
 * 32,000 batteries, delivered on two palettes,
@@ -48,7 +48,7 @@ on the sales order and the packing order:
 * 2 palettes of batteries, with no information about packaging.
 
 If the customer wants to order a palette and 10 packs, the salesperson can put two order
-lines on the sales order using the same product but different units of measure.
+lines on the sales order using the same product with different units of measure.
 
 It is sometimes more useful to define different products than to define several possible packages for
 the same product. A case of beer in a supermarket is a good example. A case holds 24 bottles, plus
@@ -56,7 +56,7 @@ the empty case itself. The customer can buy bottles by the piece or a case of 24
 
 You could define two packages for the product ``Bottle of beer`` : ``PCE`` and ``case`` . But this
 representation does not let you manage the stock and price of empty cases. So you might instead
-prefer a Bill of Materials for the sale, defining and using three different products:
+prefer a Bill of Materials, defining and using three different products:
 
 * the empty case for the beer,
 
@@ -75,7 +75,7 @@ You also define the bill of materials below which determines the make-up of the 
 Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of
 beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, 
 if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the
-other for the 24 individual bottles of beer. For more information on bills of material for sale,
+other for the 24 individual bottles of beer. For more information on bills of materials,
 see chapter :ref:`ch-mnf`.
 
 .. Copyright © Open Object Press. All rights reserved.
