@@ -9,8 +9,7 @@ Order Configuration
    pair: control; delivery
    pair: control; invoicing
 
-Depending on the configuration of the order, several different possible consequences can follow.
-Three fields determine the future behaviour of an order:
+The way the order is configured will determine its future behaviour:
 
 * :guilabel:`Picking Policy` : ``Partial Delivery`` or ``Complete Delivery``,
 
@@ -22,16 +21,15 @@ Three fields determine the future behaviour of an order:
   .. tip::  Configuring your Interface
 
      If you work in the ``Simplified`` view mode, only the :guilabel:`Shipping Policy` field is visible
-     in the second tab on the order.
-     To get to the ``Extended`` view mode, use the :guilabel:`Reconfigure` wizard and configure
-     your interface as :guilabel:`Extended`, or assign the group
-     :guilabel:`Usability – Extended View` to the current user. You can also alternate between these modes
-     through the :guilabel:`EDIT PREFERENCES` link and selecting the interface of your choice. 
+     in the second order tab.
+     To get to the ``Extended`` view mode, go to the :guilabel:`Edit Preferences` link and select the interface of your choice.
+     You can also use the :guilabel:`Reconfigure` wizard and configure your interface as :guilabel:`Extended`, or assign the group
+     :guilabel:`Usability – Extended View` to the current user.
 
 Picking Mode
 ------------
 
-The picking mode determines the way that the storesperson will do the picking. If the order is put
+The picking mode determines the way the storesperson will do the picking. If the order is put
 into :guilabel:`Partial Delivery` mode, the picking order will appear in the list of things for the
 storesperson to do as soon as any of the products on the order is available. To get the list of
 items to be done, you can use the menu :menuselection:`Warehouse --> Outgoing Deliveries`.
@@ -41,15 +39,15 @@ The storesperson will then be able to make a partial delivery of the quantities 
 and do a second picking operation later when the remaining products are available in stock.
 
 If the picking mode is :guilabel:`Complete Delivery`, the picking order will not appear in the list of
-pickings to do until all of the products are available in stock. This way there will only be a
-single delivery for any given order.
+pickings to do until all of the products are available in stock. This way, there will only be a
+single delivery for any such order.
 
-If the storesperson wants, the delivery mode can be modified on each picking list even after the
+If the storesperson wants to do so, the delivery mode can be modified on each picking list even after the
 order has been confirmed.
 
-In the case of invoicing on the basis of picking, the cost of delivering the products will be
+In the case of invoicing from picking, the cost of delivering the products will be
 calculated on the basis of multiple deliveries. This risks incurring a higher cost because of
-each delivery. If invoicing is on the basis of the orders, the customer will only be invoiced
+the separate deliveries. If invoicing is done from the order, the customer will only be invoiced
 once for the whole delivery, even if the delivery of several items has already been made.
 
 .. Copyright © Open Object Press. All rights reserved.
