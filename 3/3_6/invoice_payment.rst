@@ -5,7 +5,7 @@ Invoicing Workflow
 In OpenERP, the invoicing workflow is very simple. You can see it in the following figure:
 
 .. figure::  images/account_invoice_workflow.png
-   :scale: 75
+   :width: 100%
    :align: center
 
    *Invoicing workflow*
