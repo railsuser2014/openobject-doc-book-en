@@ -115,10 +115,11 @@ the product form.
    single: module; product_visible_discount
 
 .. tip:: Visible Discount
+
    If a discounted price is taken from a price list, by default that figure is shown as the
    sales price to the customer. He will see a discount of 0% along with the unit price that is different
    from the list price.
-   If you install the module :mod:`product_visible_discount` from ``extra-addons``,
+   If you install the module :mod:`product_visible_discount`,
    you can configure whether you want to make the discount
    explicitly visible in an order form as a percentage difference from the list price,
    or just show a reduced unit price as in the default configuration.
