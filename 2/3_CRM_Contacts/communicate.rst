@@ -385,6 +385,10 @@ From your mailbox, simply by clicking an email, you can directly access the corr
 
 	* have a shared file system that is connected to various OpenERP documents to share information and
 	  access it with your favorite browser,
+	  
+        * organize and structure your documents (such as projects, partners and users) in OpenERP's
+	  system.
+
 
 * Step 1: Install the Thunderbird plugin in OpenERP
 
@@ -471,8 +475,6 @@ Here is an example of how to configure extra document types. Suppose you would l
    :align: center
 
    *How to Add Extra OpenERP Document Types to Thunderbird?*
-	* organize and structure your documents (such as projects, partners and users) in OpenERP's
-	  system.
 
 .. _ch-sync:
 
