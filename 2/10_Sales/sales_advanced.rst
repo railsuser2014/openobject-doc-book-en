@@ -565,7 +565,7 @@ PriceList Versions
 ^^^^^^^^^^^^^^^^^^
 
 Once the pricelist is defined you have to link at least one version. You can create a new version directly from the pricelist or from the
-:menuselection:`Sales --> Configuration --> Pricelists --> Pricelist Versions` emnu. The version contains all of the
+:menuselection:`Sales --> Configuration --> Pricelists --> Pricelist Versions` menu. The version contains all of the
 rules that enable you to calculate a price for a product and a given quantity.
 
 Start by setting the :guilabel:`Name` of this associated version. If the list only has a single version, you

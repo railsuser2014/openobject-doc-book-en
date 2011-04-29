@@ -32,18 +32,19 @@ type of product.
 
 .. tip:: Do not confuse the Different Price Specifications
 
-   Do not confuse the sale price with the base price of the product.
-   In OpenERP's basic configuration, the sale price is the list price set on the product form
-   but a customer can be given a different sale price depending on the conditions.
+   Do not confuse the sales price with the basic price of the product.
+   In OpenERP's basic configuration, the sales price is the list price specified in the product form,
+   but a customer can have a different sales price depending on the conditions.
 
-   It is the same for purchase price and standard cost. Purchase price is your suppliers' selling price,
+   The same applies to the purchase price and standard cost. Purchase price is your suppliers' selling price,
    which changes in response to different criteria such as quantities, dates, and supplier. This is
-   automatically set by the accounting system. You will find that the two prices have been set by default to the
-   same for all products with the demonstration data, which can be a source of confusion.
+   automatically set by the accounting system.
+   You will find that the two prices have been set by default to the same for all products with the demonstration data,
+   which can be a source of confusion.
    You are free to set the standard cost to something different.
 
 Each pricelist is calculated from defined policies, so you will have as many sales pricelists as
-active sales policies in the company. For example a company that sells products through three sales
+active sales policies in the company. For example, a company that sells products through three sales
 channels could create the following price lists:
 
  #. Main distribution:
@@ -63,7 +64,7 @@ pricelist for walk-in customers could have five different versions, for example:
 that change with the seasons.
 
 Each pricelist is expressed in a single currency. If your company sells products in several
-currencies you will have to create as many pricelists as you have currencies.
+currencies, you will have to create as many pricelists as you have currencies.
 
 The prices on a pricelist can depend on another list, which means that you do not have to repeat the
 definition of all conditions for each product. So a pricelist in USD can be based on a pricelist in
@@ -76,7 +77,7 @@ rates can be **automatically** adjusted.
 Creating Price Lists
 --------------------
 
-To define a pricelist use the menu :menuselection:`Sales --> Configuration --> Pricelists --> Pricelists` .
+You can define a pricelist from the menu :menuselection:`Sales --> Configuration --> Pricelists --> Pricelists`.
 
 For each list you should define:
 
@@ -92,23 +93,23 @@ For each list you should define:
 Price List Versions
 ^^^^^^^^^^^^^^^^^^^
 
-Once the list is defined you must provide it with at least one version. To do that use the menu
-:menuselection:`Sales --> Configuration --> Pricelists --> Pricelist Versions`. The version contains all of the
+Once the pricelist is defined you have to link at least one version. You can create a new version directly from the pricelist or from the
+:menuselection:`Sales --> Configuration --> Pricelists --> Pricelist Versions` menu. The version contains all of the
 rules that enable you to calculate a price for a product and a given quantity.
 
-So set the :guilabel:`Name` of this associated version. If the list only has a single version you
-can use the same name for the pricelist and the version. In the :guilabel:`Price List` field select
-the pricelist you created.
+Start by setting the :guilabel:`Name` of this associated version. If the list only has a single version, you
+can use the same name for the pricelist and the version. In the :guilabel:`Price List` field, select
+the pricelist you created (this is not necessary if you create the version directly from the pricelist).
 
 Then set the :guilabel:`Start Date` and :guilabel:`End Date` of this version. The fields are both
 optional: if you do not set any dates the version will be permanently active. Only one version
 may be active at any one point, so bear this in mind when creating them.
 Use the :guilabel:`Active` field in the versions to activate or disable a pricelist version.
 
-.. note:: Automatically Updating the Sale Pricelist
+.. note:: Automatically Updating the Sales Pricelist
 
-   You can make any sale pricelist depend on one of the other pricelists.
-   So you could make your sale pricelist depend on your supplier's purchase pricelist, to
+   Any sales pricelist can be set to depend on one of the other pricelists.
+   So you could create your sales pricelist based on the supplier's purchase pricelist, to
    which you add a margin.
    The prices are automatically calculated as a function of the purchase price and need no further
    manual adjustment.
@@ -118,24 +119,23 @@ Use the :guilabel:`Active` field in the versions to activate or disable a pricel
 Calculation Rules
 ^^^^^^^^^^^^^^^^^
 
-A pricelist version is made up of a set of rules that apply to the product base prices.
+A pricelist version is made up of a set of rules that apply to the basic product prices.
 
 .. figure:: images/service_pricelist_line.png
    :scale: 75
    :align: center
 
-   *Detail of a rule in a pricelist version*
+   *Rule in a Pricelist Version*
 
-You define the conditions for a rule in the first part of the definition screen labelled :guilabel:`Rules Test
+You define the conditions for a rule in the first part of the screen labelled :guilabel:`Rules Test
 Match`. The rule applies to the :guilabel:`Product` or :guilabel:`Product Template` and/or the named :guilabel:`Product
-Category`. If a rule is applied to a category then it is automatically applied to all of its
+Category`. If a rule is applied to a category, then it is automatically applied to all of its
 subcategories too (using the tree structure for product categories).
 
-If you set a minimum quantity in :guilabel:`Min. Quantity`, the rule will only apply to a quantity the same
-as or larger than that set. This lets you set reduced rates in steps that depend on the quantities ordered.
+If you set a minimum quantity in :guilabel:`Min. Quantity`, the rule will only apply to a quantity equal to or larger than the quantity set. This way, you can define reduced rates in steps according to the quantities ordered.
 
-Several rules can be applied to an order. OpenERP evaluates these rules in sequence to select
-which to apply to the specified price calculation. If several rules are valid, only the first in
+Several rules can be applied to an order. OpenERP evaluates these rules by sequence number, to determine
+which rule(s) to apply to the specified price calculation. If several rules are valid, only the first in
 sequence is used for the calculation. The :guilabel:`Sequence` field determines the order, starting with the
 lowest number and working up.
 
@@ -143,8 +143,7 @@ Once a rule has been selected, the system has to determine how to calculate the 
 This operation is based on the criteria set out in the lower part of the form, labelled :guilabel:`Price
 Computation`.
 
-The first field you have to complete is labelled :guilabel:`Based on`. Set the mode for
-partner price calculation, choosing between:
+The first field to complete is :guilabel:`Based on`. Set the way in which the partner price will be calculated, choosing between:
 
 * the :guilabel:`Public Price` set in the product file,
 
@@ -158,13 +157,13 @@ partner price calculation, choosing between:
 Several other criteria can be considered and added to the list, as you will see in the following
 section.
 
-Next, various operations can be applied to the base price to calculate the sales or purchase price
-for the partner at the specified quantities. To calculate it you apply the formula shown on the
+Next, various operations can be applied to the basic price to calculate the sales or purchase price
+for the partner, according to the specified quantities. To calculate it, you apply the formula shown on the
 form: ``Price = Base Price x (1 + Field1) + Field2`` .
 
 The first field, :guilabel:`Field1`, defines a discount. Set it to 0.20 for a discount of 20% from
-the base price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift
-compared with the standard costs.
+the basic price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift
+compared to the standard costs.
 
 :guilabel:`Field2` sets a fixed supplement to the price, expressed in the currency of the pricelist.
 This amount is just added (or subtracted, if negative) to the amount calculated with the
@@ -188,7 +187,7 @@ Minimum and Maximum margins enable you to guarantee a given margin over the base
 10 USD enables you to stop the discount from returning less than that margin. If you put 0 into this
 field, no effect is taken into account.
 
-Once the pricelist is defined, you can assign it to a partner. To do this, find a Partner and select
+Once the pricelist is defined, you can assign it to a partner. Go to the Partner form and select
 its :guilabel:`Sales & Purchases` tab. You can then change the :guilabel:`Purchase Pricelist` and the
 :guilabel:`Sale Pricelist` that is loaded by default for the partner.
 
@@ -218,8 +217,8 @@ the accuracy of a field, follow these steps:
    should now have the number of digits you asked for.
 
 
-Example
--------
+Example of a Pricelist
+----------------------
 
 Take the case of an IT systems trading company, for which the following product categories have
 been configured:
@@ -276,10 +275,10 @@ When you install the software, two pricelists are created by default: one for sa
 purchases. Each of them contains only one pricelist version and only one line in that version.
 
 The price for sales defined in the Default Public Pricelist is set by default to
-the Public Price of the product in the product file, which is the Sale Price in the Product file.
+the Public Price of the product, which is the Sales Price in the Product form.
 
 The price for purchases defined in the Default Purchase Pricelist is set by default in the same way to
-the Cost Price of the product in the product file.
+the Cost Price of the product.
 
 .. index::
    single: trading company
@@ -287,15 +286,15 @@ the Cost Price of the product in the product file.
 Trading Company
 ^^^^^^^^^^^^^^^
 
-Take the case of a trading company, where the sale price for resellers can be defined like this:
+Take the case of a trading company, where the sales price for resellers can be defined like this:
 
 * For portable computers, the sale price is calculated from the list price of the supplier Acclo,
   with a supplement of 23% on the cost of purchase.
 
-* For all other products the sale price is given by the standard cost in the product file, on which
-  31% is added. The price must end in ``.99`` .
+* For all other products the sales price is given by the standard cost in the product file, to which
+  31% is added. The price should end in ``.99`` .
 
-* The sale price of Berrel keyboards is fixed at 60 for a minimum quantity of 5 keyboards purchased.
+* The sales price of Berrel keyboards is fixed at 60 for a minimum quantity of 5 keyboards purchased.
   Otherwise it uses the rule above.
 
 * Assume that the Acclo pricelist is defined in OpenERP. The pricelist for resellers and the
@@ -338,7 +337,7 @@ Take the case of a trading company, where the sale price for resellers can be de
                 *  :guilabel:`Priority` :  \ ``3``\ .
 
 It is important that the priority of the second rule is set below the priority of the third in this
-example. If it were the other way round the third rule would always be applied because a quantity of
+example. If it were the other way around, the third rule would always be applied, because a quantity of
 5 is always greater than a quantity of 1 for all products.
 
 Also note that to fix a price of 60 for the 5 Berrel Keyboards, the formula \ ``Price = Base Price x
@@ -354,7 +353,7 @@ might have signed a valid contract with the following conditions:
 
 * For all other products, the resale conditions are unchanged.
 
-The sale price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
+The sales price for TinAtwo, called ``TinAtwo contract``, contains two rules:
 
        #. \ ``Toshibishi portable``\  :
 
@@ -378,7 +377,7 @@ The sale price for TinAtwo, called ``TinAtwo contract`` , contains two rules:
 
                 *  :guilabel:`Priority` : \ ``2``\  .
 
-Once this list has been entered, you should look for the partner form of TinAtwo again. Click the
+Once this list has been entered, you should look up the partner form of TinAtwo again. Click the
 :guilabel:`Sales & Purchases` tab to set the :guilabel:`Sale Pricelist` field to *TinAtwo Contract*. If
 the contract is only valid for one year, do not forget to set the :guilabel:`Start Date` and
 :guilabel:`End Date` fields in the :guilabel:`Pricelist Version`.
@@ -396,7 +395,7 @@ several ways:
   separately,
 
 * Create a field in the product form for this new currency and make the new pricelist depend on this
-  field: prices are then maintained separately but in the product file,
+  field: prices are then maintained separately, but in the product file,
 
 * Create a new pricelist for the second currency and make it depend on another pricelist or on the
   product price: the conversion between the currencies will then be done automatically at the
