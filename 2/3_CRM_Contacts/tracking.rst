@@ -1,7 +1,5 @@
 
 .. _part2-crm-tracking:
-
-.. _ch-process:
  
 ####################################
 Keeping Track of your Communications
