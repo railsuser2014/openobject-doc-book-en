@@ -1,6 +1,6 @@
 
-Sales Quotations
-================
+Managing your Sales Quotations
+==============================
 
 In OpenERP, a quotation and an order are handled in the same form (a Sales Order), but in different states. You
 can consider an order to be a quotation that has evolved, because it has been confirmed by the
@@ -16,7 +16,7 @@ allowing you to enter data into a new blank quotation form. You can also create 
    :scale: 75
    :align: center
 
-   *Data Entry for a New Quotation*
+   *New Quotation*
 
 Some information is automatically specified by the system:
 
