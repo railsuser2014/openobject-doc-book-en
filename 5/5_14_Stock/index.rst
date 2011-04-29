@@ -43,7 +43,7 @@ Inventory locations are counterparts of the stock operations that represent your
 and loss in terms of your stocks.
 
 The figure :ref:`fig-stloctree` shows the initial configuration of the locations when the software is
-installed.
+installed. (:menuselection:`Warehouse --> Warehouse Management --> Locations`)
 
 .. _fig-stloctree:
 
@@ -70,6 +70,23 @@ installed.
 For this chapter you should start with a fresh database that includes demo data,
 with Warehouse Management and its dependencies installed and no particular chart of accounts configured.
 
+In this chapter, the following modules will be used:
+
+.. table:: List of modules
+
+   ==================================== ===================================================================
+   Name                                 Description
+   ==================================== ===================================================================
+   :mod:`stock`                         to handle the stock functions
+   :mod:`stock_planning`                to define planification on products
+   :mod:`stock_location`                to define pull and push flows
+   :mod:`delivery`                      to define delivery methods and costs
+   :mod:`account_anglo_saxon`           to illustrate the valuation according to the anglo-saxon principles
+   :mod:`sale_journal`                  to handle stock by journal
+   :mod:`mrp_jit`                       to illustrate the just-in-time functionnality
+   :mod:`sale_supplier_direct_delivery` to directly deliver the product from the supplier to the customer
+   ==================================== ===================================================================
+
 .. raw:: html
 
     <div class="all-toctree">
@@ -77,16 +94,15 @@ with Warehouse Management and its dependencies installed and no particular chart
 .. toctree::
 
     5_14_Stock_illustration
-    5_14_Stock_wf
-    5_14_Stock_stocks
-    5_14_Stock_logistic
-    5_14_Stock_muti_company.rst
+    5_14_Stock_inv
+    5_14_Stock_mvts
+    5_14_Stock_production
+    5_14_Stock_traceability
+    5_14_Stock_financial
+    5_14_Stock_journals
+    5_14_Stock_delivery_date
     5_14_Stock_import
-    5_14_Stock_warehouses
-    5_14_Stock_production.rst
-    5_14_Stock_lots.rst
-    5_14_Stock_journals.rst
-    5_14_Stock_advanced.rst
+    5_14_Stock_Location_Ex
 
 .. raw:: html
 

@@ -60,8 +60,10 @@ with :mod:`mrp` and its dependencies installed and no particular chart of accoun
 
 .. toctree::
 
-   5_15_Manufacturing_production
-   5_15_Manufacturing_lead
+   5_15_Master_data
+   5_15_Manufacturing
+   5_15_Manufacturing_logistic
+   5_15_Manufacturing_forecasting
 
 .. raw:: html
 

@@ -1,6 +1,6 @@
 
 .. index::
-   single: stock; double-entry
+   single: Stock; Double-Entry
 
 Understanding Double-Entry Stock Management
 ===========================================
@@ -93,8 +93,8 @@ less obvious – a stock inventory operation, for example. An inventory operatio
 when you compare the stock shown in software with real stock numbers counted in the stores.
 
 .. index::
-   single: stock; inventory operation
-   single: stock; stock check
+   single: Stock; Inventory operation
+   single: Stock; Stock check
 
 In OpenERP, with its double-entry stock management, you would use stock moves for this inventory
 operation. That helps you manage your stock traceability. Suppose there are 26 bicycles in real stock but
@@ -125,8 +125,8 @@ The product stock under consideration then becomes:
    ================================================== =============
 
 This example shows one of the great advantages of this approach in terms of performance analysis.
-After a few months, you can just make a stock valuation of the location ``Virtual Locations >
-Inventory Loss`` to give you the value of the company's stock losses in the given period.
+After a few months, you can just make a stock valuation of the location :menuselection:`Inventory Control --> Location Structure 
+--> Virtual Locations --> Inventory Loss` to give you the value of the company's stock losses in the given period.
 
 Now see how the following manufacturing operation is structured in OpenERP. To make a bicycle you
 need two wheels and a frame. This means that there should be a reduction of two wheels and a frame
@@ -138,10 +138,10 @@ moving products out of and into physical stock. The stock operations for this ar
    ========================================= =========== ================================
    Location                                  Products    Step
    ========================================= =========== ================================
-   Virtual Locations > Production            +2 Wheels   Consumption of raw materials
    Physical Locations > OpenERP S.A. > Stock -2 Wheels   Consumption of raw materials
-   Virtual Locations > Production            +1 Frame    Consumption of raw materials
+   Virtual Locations > Production            +2 Wheels   Consumption of raw materials
    Physical Locations > OpenERP S.A. > Stock -1 Frame    Consumption of raw materials
+   Virtual Locations > Production            +1 Frame    Consumption of raw materials
    Virtual Locations > Production            -1 Bicycle  Manufacture of finished products
    Physical Locations > OpenERP S.A. > Stock +1 Bicycle  Manufacture of finished products
    ========================================= =========== ================================
