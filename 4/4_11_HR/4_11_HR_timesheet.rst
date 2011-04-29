@@ -1,10 +1,11 @@
 
 .. index::
+   single: attendance
    single: timesheet
 ..
 
-Timesheets
-==========
+Attendances and Timesheet Management
+====================================
 
 In most service companies where OpenERP has been integrated, service sheets, or timesheets, have
 revolutionized management practices. These service sheets are produced by each employee as they work
@@ -64,8 +65,7 @@ Amongst the many uses of such a timesheet system for a company, here are some of
 * knowing the costs needed to run the company, such as the marketing costs, the training costs for a
   new employee, and the invoicing rates for a client.
 
-Timesheet Categories
---------------------
+**Timesheet Categories**
 
 You will need to install the :guilabel:`Manufacturing` application (:mod:`mrp`) in order to access timesheet categories.
 The different timesheet categories (working time sessions) can be defined through the menu
@@ -78,82 +78,12 @@ one of the groups there such as :guilabel:`38 Hours/Week`.
 
    *Timesheet category for full time 38 hours per week*
 
-.. index::
-   single: employee; configuring
-..
-
-Employee Configuration
-----------------------
-
-To be able to use the timesheets at all, you must first define those employees who are system users.
-The employee definition forms contain the information necessary to use that sheet, such as the job
-title, and hourly costs.
-
-Two fields will be of particular interest to you for managing timesheets: the :guilabel:`Analytic
-Journal` and the :guilabel:`Product`.
-
-In the analytic journal will be stored all the analytic entries about the costs of service times.
-These enable you to isolate the cost of service from other company costs, such as the purchase of raw
-materials, expenses receipts and subcontracting. You can use different journals for each employee to
-separate costs by department or by function.
-
-The employee is also associated with a product in your database in OpenERP. An employee is linked
-with a product, so they can be 'bought' (subcontracting) or 'invoiced' (project management). You have
-to create a product for each job type in your company.
-
-The following information is important in the product form:
-
-*  :guilabel:`Name` : \ ``Secretary`` \,  \ ``Salesperson`` \ or \ ``Project Manager``\
-
-*  :guilabel:`Product Type` : \ ``Service``\
-
-*  :guilabel:`Unit of Measure` : \ ``Hour`` \ or \ ``Day``\
-
-*  :guilabel:`Cost Price`
-
-*  :guilabel:`Sale Price`
-
-*  :guilabel:`Costing Method` : either \ ``Standard Price``\  or  \ ``Average Price``\
-
-.. index::
-   single: module; product_index
-
-.. tip:: Price Indexation
-
-	When the `Costing Method` is `Average Price` in the `Product` form, you can have a button :guilabel:`Update`, beside the `Cost Price` field, that opens up a wizard for changing the cost price.
-
-In summary, each company employee corresponds, in most cases, to:
-
-* a :guilabel:`Partner`
-
-* an :guilabel:`Employee` form,
-
-* a :guilabel:`System User`.
-
-And each company job position corresponds to a :guilabel:`Product`.
-
-.. index::
-   single: module; hr_contract
-
-.. note:: Time Charge Rates
-
-	By default, the hourly cost of an employee is given by the standard cost of the product linked to
-	that employee.
-	But if you install the :mod:`hr_contract` module, it is possible to manage contracts differently.
-	The hourly cost of the employee is then automatically calculated from their employment contract
-	when they enter their timesheet data.
-
-	To do this, the software uses a factor defined in the contract type
-	(for example, the gross monthly salary, calculated per day).
-	Ideally, this factor should take into account the salary costs, and the taxes, insurances and other
-	overheads associated with pay.
 
 .. index::
    single: timesheet; entering data
 ..
 
-Entering Timesheet Data
------------------------
+**Entering Timesheet Data**
 
 .. index::
    single: module; hr_timesheet
@@ -243,11 +173,10 @@ The data making up these list views can be varied using the filters available in
 screen. If you want to see more detail, switch to the graph view.
 
 .. index::
-   single: timesheets; evaluation
+   single: timesheet; evaluation
 ..
 
-Evaluation of Service Costs
----------------------------
+**Evaluation of Service Costs**
 
 You already know that timesheets are closely linked with analytic accounts. The different projects
 reported on the timesheets correspond to analytic accounts. The timesheet entries themselves are
@@ -318,10 +247,42 @@ The analyses of profitability by project and by employee are available from the 
 They take all of the invoices into account, and also take into account the cost of the time spent on
 each project.
 
-.. index:: department
+.. index::
+   single: attendance; sign in / sign out
 
-Managing by Department
-----------------------
+Manage attendance through Sign in / Sign out
+--------------------------------------------
+
+In some companies, staff have to sign in when they arrive at work and sign out again at the end of
+the day. If each employee has been linked to a system user, then they can sign in on OpenERP by
+using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Sign out`.
+
+If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually
+and type in the time that they left when they come in again the next day. This gives you a simple way
+of managing forgotten sign-outs.
+
+Find employee attendance details from their forms in
+:menuselection:`Human Resources --> Employees`.
+
+To get the detail of attendance from an employee's form in OpenERP, you can use the
+available reports:
+
+*  :guilabel:`Attendances By Month`
+
+*  :guilabel:`Attendances By Week`
+
+*  :guilabel:`Attendance Error Report`
+
+The last report highlights errors in attendance data entry.
+It shows you whether an employee has entered the time of
+entry or exit manually and the differences between the actual and expected sign out time and the time.
+
+
+.. index::
+   single: attendance; differences
+
+Keep track of differences between timesheets and attendance
+-----------------------------------------------------------
 
 When they are used properly, timesheets can be a good control tool for project managers and can
 provide awareness of costs and times.
@@ -369,11 +330,11 @@ it is not a true management control system.
 
 The area to the bottom of the screen represents a sheet of the employee's time entries for the
 selected day. In total, this should comprise the number of hours worked in the company each day.
-This provides a simple verification that the whole day's attendance time has been coded in properly.
+This provides a simple verification that the whole day's attendance time has been entered properly.
 
 The second tab of the timesheet, :guilabel:`By Day`, gives the number of hours worked on the different
 projects. When there is a gap between the attendance and the timesheet entries, you can use the
-second tab to detect the days or the entries that have not been correctly coded in.
+second tab to detect the days or the entries that have not been correctly entered.
 
 .. figure::  images/timesheet_sheet_hours.png
    :scale: 75

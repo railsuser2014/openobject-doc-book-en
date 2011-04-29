@@ -1,4 +1,8 @@
 
+.. index::
+   single: expense
+..
+
 Keeping Track of Expenses
 =========================
 
@@ -11,9 +15,6 @@ expenses to the employee. The receipts encountered most frequently are:
 
 * other purchases, such as stationery and books, destined for the company but carried out by the
   employee.
-
-An Integrated Process
----------------------
 
 .. figure::  images/service_expense_workflow.png
    :scale: 75
@@ -36,7 +37,7 @@ approved.
 
 You often need to invoice expenses to a customer, depending on the precise contract that has been
 negotiated. Travelling and subsistence expenses are generally handled this way. These can be
-charged to the customer at the the end of the month if the contract price has been negotiated inclusive of
+charged to the customer at the end of the month if the contract price has been negotiated inclusive of
 expenses.
 
 If you have to go through many steps to reclaim expenses, it can all quickly become too cumbersome,
@@ -49,8 +50,11 @@ sales effectively. In fixed-price contracts, expense reimbursements are usually 
 the actual expense. It is in your interest to systematize their treatment, and automate the process
 to the maximum, to recharge as much as you are contractually able.
 
-Employee Expenses
------------------
+.. index::
+   single: expense; entered by employee
+
+Allow employees to enter professional expenses
+----------------------------------------------
 
 .. index::
    single: module; hr_expense
@@ -90,6 +94,12 @@ The employee keeps his expenses sheet in the \ ``Draft``\   state while completi
 period. At the end of the period (week or month), the employee can confirm his expense form using the
 :guilabel:`Confirm` button on the form. This puts it into the state \ ``Waiting Approval``\  .
 
+.. index::
+   single: expense; approval
+
+Track the approval management process
+-------------------------------------
+
 At the end of the period, the department manager can access the list of expense forms awaiting
 approval using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
 
@@ -98,6 +108,12 @@ in the employee's name so that the employee can be reimbursed. An analytic accou
 each line of the invoice. When the invoice is confirmed, general and analytic accounting entries are
 automatically generated as they would be with any other invoice.
 
+.. index::
+   single: expense; rebill customers
+
+Rebill customers through analytical accounts
+--------------------------------------------
+
 If you base your invoicing on service time or analytic costs, the expense will
 automatically be charged to the customer when the customer invoice is generated for services
 associated with the project.
@@ -105,7 +121,7 @@ associated with the project.
 Invoicing from timesheets allows you to prepare all your invoices, both
 expenses and timesheets for a project's customer.
 
-You can view the statistical analysis of expenses using menu  :menuselection:`Human Resources --> Reporting --> Expenses Analysis`.
+You can view the statistical analysis of expenses using menu :menuselection:`Human Resources --> Reporting --> Expenses Analysis`.
 
 .. Copyright © Open Object Press. All rights reserved.
 

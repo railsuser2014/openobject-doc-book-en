@@ -4,9 +4,9 @@
 
 .. _ch-hr:
 
-**************************
-Lead & Inspire your People
-**************************
+***************
+Key Features HR
+***************
 
  *This chapter describes OpenERP's main Human Resources and Employee Services features.
  Most of the solutions discussed after this chapter concern management by
@@ -34,10 +34,11 @@ following configuration wizard.
 .. toctree::
 
     4_11_HR_manage
+    4_11_HR_hire_new_people
+    4_11_HR_holidays
+    4_11_HR_motivate_your_people
     4_11_HR_timesheet
     4_11_HR_expenses
-    4_11_HR_hire_new_people
-    4_11_HR_motivate_your_people
 
 .. raw:: html
 
