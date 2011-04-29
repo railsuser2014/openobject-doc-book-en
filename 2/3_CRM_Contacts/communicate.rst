@@ -476,7 +476,7 @@ Here is an example of how to configure extra document types. Suppose you would l
 
    *How to Add Extra OpenERP Document Types to Thunderbird?*
 
-.. _ch-sync:
+.. _ch-sync1:
 
 Synchronizing your CRM with Mobile Devices
 ------------------------------------------
