@@ -30,11 +30,11 @@ In this respect, two important fields in the product form are:
 .. tip:: Detail of Future Stock
 
    To get more details about future stock, you can click :guilabel:`Stock Level Forecast` to the right of the product form
-   to get the report :ref:`fig-stfore` below.
+   to get the report :ref:`fig-stforest` below.
    OpenERP shows a graph of the change of stock in the days to come, varying as a function of
    purchase orders, confirmed production and sales orders.
 
-   .. _fig-stfore:
+   .. _fig-stforest:
 
    .. figure:: images/stock_forecast_report.png
       :scale: 50
