@@ -142,7 +142,7 @@ This can be also accomplished from Form view.
 Internal stock moves
 --------------------
 
---> Example picking zone!
+.. todo:: --> Example picking zone!
 
 You should install the stock_location module (Reconfigure wizard, Advanced Routes) if routing products to
 customers, from suppliers or in your warehouse is determined by the identity of the product itself.
@@ -593,10 +593,11 @@ Procurement Methods – Make to Stock and Make to Order
 
 The procurement method determines how the product will be replenished:
 
-* :guilabel:`Make to Stock`: your customers are supplied from available stock. You procure a
-  set quantity of each product when its stock is too low (according to minimum stock rules). Example: a classic distributor.
+* :guilabel:`Make to Stock`: your customers are supplied from available stock. If the quantities in stock are
+  too low to fulfil the order, a Purchase Order (according the minimum stock rules) will be generated in order 
+  to get the products required. Example: a classic distributor.
 
-* :guilabel:`Make to Order`: when a customer order is confirmed, you then procure or manufacture
+* :guilabel:`Make to Order`: when a customer order is confirmed, you procure or manufacture
   the products for this order. A customer order 'Make to Order' will not modify stock in the medium term
   because you restock with the exact amount that was ordered. Example: computers from a large supplier
   assembled on demand.
@@ -607,7 +608,8 @@ enabling the salesperson to choose the best mode for fulfilling a particular ord
 sales order parameters as needed.
 
 The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
-managed as `Make to Order` and another managed as `Make to Stock`. The two figures are taken from OpenERP's :guilabel:`Stock Level Forecast` report, available from the product form.
+managed as `Make to Order` and another managed as `Make to Stock`. The two figures are taken from OpenERP's 
+:guilabel:`Stock Level Forecast` report, available from the product form.
 
 .. _fig-stfrst:
 
@@ -615,7 +617,7 @@ managed as `Make to Order` and another managed as `Make to Stock`. The two figur
    :scale: 65
    :align: center
 
-   *Change in stock for a product managed as Make to Stock*
+   *Change in Stock for a  Make to Stock Product*
 
 .. _fig-stfrord:
 
@@ -623,7 +625,7 @@ managed as `Make to Order` and another managed as `Make to Stock`. The two figur
    :scale: 65
    :align: center
 
-   *Change in stock for a product managed as Make to Order*
+   *Change in Stock for a Make to Order Product*
 
 .. note:: Logistical Methods
 
@@ -632,8 +634,8 @@ managed as `Make to Order` and another managed as `Make to Stock`. The two figur
    The :guilabel:`Make to Order` approach is used for products that are measured, or very expensive to
    stock or have a short restocking time.
 
-Supply Methods
---------------
+Choosing Supply Methods
+-----------------------
 
 OpenERP supports two supply methods:
 
@@ -657,10 +659,10 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
 .. _fig-stflow:
 
 .. figure:: images/stock_flow.png
-   :scale: 100
+   :scale: 80
    :align: center
 
-   *Workflow for automatic procurement, depending on the configuration of the product*
+   *Workflow for Automatic Procurement, depending on the Product Configuration*
 
 The table below shows all possible cases for the figure :ref:`fig-stflow`.
 
@@ -698,7 +700,7 @@ measure category.
 
    All units of measure in the same category are convertible from one unit to another.
 
-The table below shows some examples of units of measure and their category. The ratio is used to
+The table below shows some examples of units of measure and their category. The factor is used to
 convert from one unit of measure to another as long as they are in the same category.
 
 .. table:: Example Units of Measure
@@ -717,7 +719,7 @@ convert from one unit of measure to another as long as they are in the same cate
    ========= ============ ====== =========
 
 Depending on the table above, you have 1Kg = 1000g = 0.001 Tonnes. A product in the ``Weight``
-category could be expressed in Kg, Tonnes or Grammes. You cannot express it in hours or pieces.
+category could be expressed in Kg, Tonnes or Grammes. You cannot express it in hours or pieces, for example.
 
 Use the menu :menuselection:`Warehouse --> Configuration --> Products -->  Units of Measure --> Units of Measure`
 to define a new unit of measure.
@@ -729,8 +731,8 @@ gives rounding to one hundredth.
 .. note::  Secondary Units
 
    OpenERP supports double units of measure.
-   When you use this, the whole of the stock management system is encoded in two units that do not
-   have a real link between them.
+   Notice however that the default unit of measure and the purchase unit of measure have to be in the same category.
+   Only the sales unit of measure may be in a different category.
 
    This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice
    by the Kg.
@@ -740,8 +742,8 @@ To activate the management options for double units of measure, assign the group
 Product UoS View` to your user.
 
 In this case, the same product can be expressed in two units of measure belonging to different
-categories. You can then distinguish between the unit of stock management (the piece) and the unit
-of invoicing or sale (kg).
+categories for sales and stock/purchase. You can then distinguish between the unit of stock management (the piece) and the unit
+of invoicing or sales (kg).
 
 .. figure:: images/UOM_UOS.png
 	:scale: 100
@@ -752,13 +754,13 @@ of invoicing or sale (kg).
 In the product form you can then set one unit of measure for sales and stock management, and one
 unit of measure for purchases.
 
-These units are given suggested titles. For each operation on a product, you can use another unit of
+For each operation on a product, you can use another unit of
 measure, as long as it can be found in the same category as the two units already defined. If you
 use another unit of measure, OpenERP automatically handles the conversion of prices and quantities.
 
 So if you have 430 Kg of carrots at 5.30 EUR/Kg, OpenERP will automatically make the conversion if
 you want to sell in tonnes – 0.43 tonnes at 5300 EUR / tonne. If you had set a rounding factor of
-0.1 for the :guilabel:`tonne` unit of measure then OpenERP will tell you that you have only 0.4 tonnes
+0.1 for the :guilabel:`tonne` unit of measure, OpenERP will tell you that you have only 0.4 tonnes
 available.
 
 Packaging
