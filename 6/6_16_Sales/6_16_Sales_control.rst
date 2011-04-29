@@ -2,8 +2,8 @@
 Control Deliveries and Invoicing
 ================================
 
-Order Configuration
--------------------
+Configuring Orders
+------------------
 
 .. index:: 
    pair: control; delivery
@@ -33,7 +33,7 @@ The picking mode determines the way the storesperson will do the picking. If the
 into :guilabel:`Partial Delivery` mode, the picking order will appear in the list of things for the
 storesperson to do as soon as any of the products on the order is available. To get the list of
 items to be done, you can use the menu :menuselection:`Warehouse --> Outgoing Deliveries`.
-By default, the :guilabel:`Available` filter button is selected, hence this is the list of available pickings.
+By default, the :guilabel:`Available` filter button is selected, so you immediately see the list of available pickings.
 
 The storesperson will then be able to make a partial delivery of the quantities actually available
 and do a second picking operation later when the remaining products are available in stock.
@@ -46,7 +46,7 @@ If the storesperson wants to do so, the delivery mode can be modified on each pi
 order has been confirmed.
 
 In the case of invoicing from picking, the cost of delivering the products will be
-calculated on the basis of multiple deliveries. This risks incurring a higher cost because of
+calculated according to multiple deliveries. This risks incurring a higher cost because of
 the separate deliveries. If invoicing is done from the order, the customer will only be invoiced
 once for the whole delivery, even if the delivery of several items has already been made.
 
