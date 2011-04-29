@@ -1,6 +1,6 @@
 
-Open Orders
-===========
+Keeping Track of Open Orders
+============================
 
 .. index::
    single: module; sale_delivery
@@ -13,9 +13,8 @@ OpenERP handles open orders easily. An open order is an order for a
 certain quantity of products but whose deliveries are planned for various dates over a period of
 time.
 
-To do that, you must install the :mod:`sale_delivery` module (in ``extra-addons`` at the time of writing). 
-A Sales Order is entered as a normal order
-but you also set the total quantity that will be delivered on each order line.
+To do that, you should install the :mod:`sale_delivery` module (in ``extra-addons`` at the time of writing). 
+A Sales Order is entered as a normal order, but you also set the total quantity that will be delivered on each order line.
 
 Then you can use the new tab :guilabel:`Deliveries` on the order to plan the quantities sold and enter your
 delivery planning there.
@@ -24,11 +23,10 @@ delivery planning there.
    :scale: 75
    :align: center
 
-   *Managing open orders, planning forecasts*
+   *Managing Open Orders, Planning Forecasts*
 
-In the order lines, OpenERP shows you the quantity planned in addition to the quantity sold so you
-can verify that the quantities sold equal the quantities to be delivered. When you confirm the
-order, OpenERP no longer generates a single delivery order but plans scheduled despatches.
+In the order lines, OpenERP shows you the quantity planned in addition to the quantity sold. This way, you
+can verify whether the quantities sold equal the quantities to be delivered. On confirmation of the sales order, OpenERP no longer generates a single delivery order, but plans scheduled dispatches.
 
 .. tip:: Invoicing Mode
 
