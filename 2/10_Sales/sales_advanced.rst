@@ -867,8 +867,7 @@ several ways:
 Rebates at the End of a Campaign
 --------------------------------
 
-If you want to provide discounts on an order, you can use the pricelist system in OpenERP. But we would not be writing about end-of-campaign rebates if no other solution was available. You can also work with end-of-campaign rebates or year-end rebates. The customer pays a certain
-price during the whole of the campaign or the year, and he will receive a rebate at the end of the campaign according to the sales made throughout the year.
+If you want to provide discounts on an order, you can use the pricelist system in OpenERP. But we would not be writing about end-of-campaign rebates if no other solution was available. You can also work with end-of-campaign rebates or year-end rebates. The customer pays a certain price during the whole of the campaign or the year, and he will receive a rebate at the end of the campaign according to the sales made throughout the year.
 
 Take the case of contract negotiations with a wholesaler. To get the best selling price, the
 wholesaler will ask you for a good deal and will sign up to a certain volume of orders over

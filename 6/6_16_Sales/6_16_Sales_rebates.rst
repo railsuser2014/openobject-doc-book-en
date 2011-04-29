@@ -2,45 +2,38 @@
 Rebates at the End of a Campaign
 ================================
 
-If you want to provide discounts on an order, use the pricelist system in OpenERP. But it is better
-to work with end-of-campaign rebates or year-end rebates. In this case, the customer pays a certain
-price for the whole of the campaign or the year and a rebate is returned to him at the end of the
-campaign that depends on the sales he has made throughout the year.
+If you want to provide discounts on an order, you can use the pricelist system in OpenERP. But we would not be writing about end-of-campaign rebates if no other solution was available. You can also work with end-of-campaign rebates or year-end rebates. The customer pays a certain price during the whole of the campaign or the year, and he will receive a rebate at the end of the campaign according to the sales made throughout the year.
 
-Take the case of a contract negotiations with a wholesaler. To get the best selling price, the
+Take the case of contract negotiations with a wholesaler. To get the best selling price, the
 wholesaler will ask you for a good deal and will sign up to a certain volume of orders over
 the year.
 
 You can then propose a price based on the volume that the wholesaler agrees to sell. But then you
 do not have any control over his orders. If at the end of the year the wholesaler has not taken the
-agreed volumes then you can do nothing. At most you can review his terms for the following year.
+agreed volumes, you can do nothing. At most you can review his terms for the following year.
 
 Rebates at the end of a campaign can help you avoid this sort of problem. You can propose a contract
-where the price is dependent on the usual wholesaler's terms. You can propose a rebate grid which
+where the price depends on the usual wholesaler's terms. You can propose a rebate grid which
 will be assigned at the end of the year as a function of the actual sales made.
 
 .. index::
    single: module; discount_campaign
 
 Install the :mod:`discount_campaign` module (in ``extra-addons`` at the time of writing)
-to generate rebates at the end of the campaign. Once
-the modules have been installed you can configure your campaign using the menu :menuselection:`Sales
---> Configuration --> Sales --> Discount Campaigns`.
+to generate rebates at the end of the campaign. Once the modules have been installed, you can configure your campaign using the menu :menuselection:`Sales --> Configuration --> Sales --> Discount Campaigns`.
 
 .. note:: Year-end Rebate
 
    Most companies use the term *year-end rebate*, where rebates are applied at the end of the year.
-   But if you are using rebates at the end of a campaign,
-   this would only actually be the case if the campaign lasts exactly one year.
+   But of course you can also define rebates for a campaign that lasts less than or more than one year.
 
 .. figure:: images/discount_campaign_RFA.png
    :scale: 75
    :align: center
 
-   *Configuring a year-end rebate*
+   *Configuring a Campaign Rebate*
 
-A campaign must have a name, a refund journal, a start date, and an end date. After entering this information, you
-should describe the lines of the campaign. Each line can be applied to a product or a category of
+A campaign should have a name, a refund journal (to create the credit notes at the end of the campaign), a start date, and an end date. After entering this information, you should describe the lines of the campaign. Each line can be applied to a product or a category of
 products. Then set the quantity of products sold from which the discount is applied, and the amount
 of the rebate as a percentage of the actual sales volume.
 
@@ -54,18 +47,18 @@ the sales volume.
    :scale: 75
    :align: center
 
-   *Configuring a discount campaign for computers*
+   *Configuring a Discount Campaign for Computers*
 
 Once the campaign has been defined and activated, you can assign it to various partners. To do that
 set a :guilabel:`Discount Campaign` in the second tab :guilabel:`Sales & Purchases` of the partner form.
 
 Finally, at the end of the campaign, you should close it and OpenERP will automatically generate
 invoices or credit notes for your partner associated with this campaign. OpenERP opens credit
-notes in the ``Draft`` state that you can modify before validating them. To calculate the amount on the
-credit note, OpenERP uses all of the invoices sent out during the period of the campaign as its
+notes in the ``Draft`` state so you can modify them before validation. To calculate the amount on the
+credit note, OpenERP uses all of the invoices sent out during the period of the campaign as a
 basis.
 
-You can also reach all of the draft credit notes using the menu :menuselection:`Accounting
+You can also get an overview of all draft credit notes using the menu :menuselection:`Accounting
 --> Customers --> Customer Refunds`.
 
 .. Copyright © Open Object Press. All rights reserved.
