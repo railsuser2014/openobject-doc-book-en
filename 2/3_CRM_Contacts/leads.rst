@@ -16,17 +16,17 @@ Storing leads information in a central place such as OpenERP will release you of
 
 So when would you create a lead in OpenERP, either manually or automatically? The following events could be a trigger:
 
-* An inquiry email sent to one of your company's generic email addresses, such as sales@mycompany.com,
+* An inquiry email sent to one of your company's generic email addresses, such as sales@mycompany.com, from the mailgateway,
 
 * A business card from a prospective customer met briefly at an exhibition: you have to contact him
-  again to qualify the lead and to know if there is any possibility of a sales opportunity,
+  again to qualify the lead and to know if there is any possibility of a sales opportunity; registered manually,
 
-* A database of potential customers in a given sector and region. The potential customers have to be
+* A database of potential customers in a given sector and region imported through a CSV file. The potential customers have to be
   contacted again individually or through a mass mailing to determine which contacts require further follow-up,
 
 * An interesting contact that you met during a business networking event. You have to qualify it before assigning a salesperson to the contact,
 
-* A form completed on your website directly integrated into OpenERP. Before converting the form
+* A form completed on your website directly integrated into OpenERP using our webservice. Before converting the form
   into a sales proposition or opportunity, you should read and handle the person's request.
 
 Employees in the marketing or presales department will usually work on leads. Once these leads will be converted into customers and/or sales opportunities, the sales department pays individual attention to each opportunity. Of course, before converting a lead into an opportunity, some qualification work has to be done.
@@ -40,13 +40,19 @@ Leads can be assigned to a *Sales Team* for easy follow-up (see  :ref:`ch-team`)
 .. note:: Leads or Opportunities
 
        Companies may decide to not use leads, but instead to keep all information directly in an opportunity. For some companies, leads are
-       merely an extra step in the sales process. You could call this extended (start from lead) versus simplified (start from opportunity) 
-       customer relationship management.
+       merely an extra step in the sales process. You could call this extended (start from lead) versus simplified (start from
+       opportunity) customer relationship management.
        OpenERP perfectly allows for either one of these approaches to be chosen. If your company handles its sales from
        opportunities directly, feel free to move on to chapter :ref:`part2-crm-opport`, although most of the features explained below
        also apply to opportunities.
 
 In the next sections we will explain in more detail some examples of what `Leads` in OpenERP can be used for.
+
+.. tip:: Leads Menu is not displayed
+
+        In  ``Simplified`` view, ``Leads`` will not be displayed. To see not also opportunities, but also leads, you should switch
+        to the ``Extended`` view. You can easily switch from `Simplified` to `Extended` view by changing your `User Preferences` through
+        the `Edit Preferences´ button.
 
 Storing your Business Cards effectively
 ---------------------------------------

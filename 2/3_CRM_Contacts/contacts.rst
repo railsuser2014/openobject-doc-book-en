@@ -252,7 +252,7 @@ If you correct or change a contact name in the contact form, the changes will be
 The screen below represents a partner form. You can add several addresses, such as Invoice & Delivery, and a list of
 contacts per address. Each contact has its own data, such as name, function, phone number and email.
 
-.. figure:: images/crm_partner_contact.png
+.. figure:: images/crm_base_contacts.png
    :scale: 80
    :align: center
 
