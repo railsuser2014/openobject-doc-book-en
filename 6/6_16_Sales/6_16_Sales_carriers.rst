@@ -22,8 +22,8 @@ This module enables you to manage:
 * the transport methods and their tariffs.
 
 Once the :mod:`delivery` module has been installed, the first thing to do is to configure the different
-modes of delivery accepted by your company. To do that, use the menu :menuselection:`Warehouse
---> Configuration --> Delivery --> Delivery Method`.
+modes of delivery accepted by your company. Go to the menu :menuselection:`Warehouse
+--> Configuration --> Delivery --> Delivery Method` to create your company's delivery modes.
 
 For each delivery mode, you should define the following elements:
 
@@ -63,9 +63,9 @@ Each grid is used for a given region/destination.
 For example, for the postal tariffs for Priority Courier, you generally define the three tariff grids
 for Mail Office:
 
-* Courier National,
+* National Courier,
 
-* Courier Europe,
+* Courier in Europe,
 
 * Courier Outside Europe.
 
@@ -80,16 +80,16 @@ region for which the tariffs in the grid will apply in the second tab
 
 * A range of postal codes (for Paris you might have 75000 – 75900).
 
-You must then set the rules for calculating the transport price in the first tab :guilabel:`Grid definition`.
-A rule must first of all have a name. Then set the condition for which this rule is applicable, for
+Then you have to set the rules for calculating the transport price in the first tab :guilabel:`Grid definition`.
+First of all, give the rule a name. Then set the condition for which this rule is applicable, for
 example ``Weight < 0.5kg``.
 
 .. note:: Weights
 
-   Weights are expressed in kilograms. You can define a number with a decimal point or comma, so
+   Weights are always expressed in kilograms. You can define a number with a decimal point or comma, so
    to set 500g you would put 0.5 in the weight rule.
 
-Next you can set the sale price and the cost price. Prices can be expressed in various ways:
+Next you can set the sales price and the cost price. Prices can be expressed in various ways:
 
 * a fixed price,
 
@@ -132,17 +132,15 @@ There are two methods for doing that in OpenERP.
 Delivery based on Ordered Quantities
 ------------------------------------
 
-To add the delivery charges to the quotation, use the button :guilabel:`Delivery Costs` available on the Sales Order tab
-of the form. A dialog box opens, asking you to select a delivery mode from one of the preconfigured available
-ones.
+To add the delivery charges (or transport costs) to the quotation, use the button :guilabel:`Delivery Costs` available on the `Sales Order` tab of the form. A dialog box opens, asking you to select a delivery mode from the list available.
 
 .. figure:: images/sale_delivery.png
    :scale: 75
    :align: center
 
-   *Adding a delivery charge to an order*
+   *Adding Transport Costs to an Order*
 
-Once the delivery mode has been selected, OpenERP automatically adds a line to the draft order with
+Once the delivery mode has been selected, OpenERP automatically adds a line to the quotation with
 the amount calculated by the delivery function. This technique enables you to calculate the
 delivery charge based on the order and then, separately, how the products will really be delivered
 to the customer.
@@ -154,17 +152,15 @@ Delivery based on Shipped Quantities
 ------------------------------------
 
 To invoice the delivery according to the items shipped, you set the delivery mode in the
-:guilabel:`Delivery Method` field on the second tab of the order, :guilabel:`Other Information`. 
-Do not add delivery lines to the Sales Order but to the Invoices after they have been
-generated for the delivered items.
+:guilabel:`Delivery Method` field on the second tab of the order, :guilabel:`Other Information`, to :guilabel:`Invoice from Delivery`. 
 
-For this to work properly, your order must be set to the state 
-:guilabel:`Invoice from Delivery`.
-You can then confirm the order and validate the delivery.
+You can then confirm the order, and when the goods are available you can also validate the delivery order.
 
+The transport costs will not be added to the sales order, but only to the invoice.
 When the manager has generated the invoices corresponding to the deliveries carried out,
 OpenERP automatically adds a line on each invoice corresponding to the delivery charge, calculated
 on the basis of the items actually sent.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
