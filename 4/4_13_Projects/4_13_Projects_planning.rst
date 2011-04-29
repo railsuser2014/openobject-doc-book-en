@@ -84,53 +84,55 @@ In this time-focused planning approach, clients' priorities do not feature in th
 but are explicit in the task list instead. So this approach helps you separate the planning of human
 resources on projects from the task prioritization within a project.
 
-	.. note:: Comparing the Two Planning Methods
+.. note:: Comparing the Two Planning Methods
 
-			To illustrate the difference between planning by time and planning by task, take the case of an
-			IT project that is estimated to be around six months of work. This project is managed by iterative
-			cycles of development of around a month, and a presentation is made to the client at the end of
-			each cycle to track the progress of the project. At this meeting, you plan what must be carried
-			out for the following month. At the end of the month, the account manager for the project invoices
-			the client for the work done on the project.
+    To illustrate the difference between planning by time and planning by task, take the case of an
+    IT project that is estimated to be around six months of work. This project is managed by iterative
+    cycles of development of around a month, and a presentation is made to the client at the end of
+    each cycle to track the progress of the project. At this meeting, you plan what must be carried
+    out for the following month. At the end of the month, the account manager for the project invoices
+    the client for the work done on the project.
 
-			Suppose that the project encounters a delay because it is more complex than expected. There are
-			two ways of resolving the delay if you have no further resources: you can be
-			
-			* late in your delivery of the planned functions, or 
-			
-			* on time, but with fewer functions than planned.
+    Suppose that the project encounters a delay because it is more complex than expected. There are
+    two ways of resolving the delay if you have no further resources: you can be
 
-			If your planning is based on phases and tasks you will report at the client meeting that it will
-			take several weeks to complete everything that was planned for the current phase. Conversely, if
-			you are planning by time you will keep the meeting with the client to close the present development
-			phase and plan the new one, but only be able to present part of the planned functionality.
+    * late in your delivery of the planned functions, or 
 
-			If the client is sensitive to delay, the first approach will cause acute unhappiness. You will have
-			to re-plan the project and all of its future phases to take account of that delay. Some problems
-			are also likely to occur later with invoicing, because it will be difficult for you to invoice
-			any work that has been completed late but has not yet been shown to the client.
+    * on time, but with fewer functions than planned.
 
-			The second approach will require you to report on the functions that have not been completed, and
-			on how they would fit into a future planning phase. That will not involve a break in the
-			working time allocated to the project, however. 
-			You would then generate two different lists: a staffing plan
-			for the different projects, and the list of tasks prioritized for the client's project. This
-			approach offers a number of advantages over the first one:
+    If your planning is based on phases and tasks you will report at the client meeting that it will
+    take several weeks to complete everything that was planned for the current phase. Conversely, if
+    you are planning by time you will keep the meeting with the client to close the present development
+    phase and plan the new one, but only be able to present part of the planned functionality.
 
-			* The client will have the choice of delaying the end of the project by planning an extra phase,
-			  or letting go of some minor functions to be able to deliver a final system more rapidly,
+    If the client is sensitive to delay, the first approach will cause acute unhappiness. You will have
+    to re-plan the project and all of its future phases to take account of that delay. Some problems
+    are also likely to occur later with invoicing, because it will be difficult for you to invoice
+    any work that has been completed late but has not yet been shown to the client.
 
-			* The client may re-plan the functions taking the new delay into account.
+.. note:: Comparing the Two Planning Methods
 
-			* You will be able to make the client gradually aware of the fact that project progress has come
-			  under pressure and that work is perhaps more complex than had been estimated at the outset.
+    The second approach will require you to report on the functions that have not been completed, and
+    on how they would fit into a future planning phase. That will not involve a break in the
+    working time allocated to the project, however. 
+    You would then generate two different lists: a staffing plan
+    for the different projects, and the list of tasks prioritized for the client's project. This
+    approach offers a number of advantages over the first one:
 
-			* A delay in the delivery of several of the functions will not necessarily affect either monthly
-			  invoicing or project planning.
+    * The client will have the choice of delaying the end of the project by planning an extra phase,
+      or letting go of some minor functions to be able to deliver a final system more rapidly,
 
-			Being able to separate human resource planning from task prioritization simplifies your
-			management of complex issues, such as adjusting for employee holidays or handling the constantly
-			changing priorities within projects.
+    * The client may re-plan the functions taking the new delay into account.
+
+    * You will be able to make the client gradually aware of the fact that project progress has come
+      under pressure and that work is perhaps more complex than had been estimated at the outset.
+
+    * A delay in the delivery of several of the functions will not necessarily affect either monthly
+      invoicing or project planning.
+
+    Being able to separate human resource planning from task prioritization simplifies your
+    management of complex issues, such as adjusting for employee holidays or handling the constantly
+    changing priorities within projects.
 
 .. index::
    single: planning; create plan

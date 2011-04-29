@@ -70,16 +70,16 @@ Many managers with a heavy workload use urgency as their sole method of prioriti
 difficulty is then in working out how to plan for substantive tasks (like medium term objectives).
 These are not urgent but are nevertheless very important.
 
-	.. note:: Example Distinction between Urgency and Importance
+.. note:: Example Distinction between Urgency and Importance
 
-			If you are very well organized, urgent tasks can (and should often) be given lower precedence than
-			important tasks. Take an example from daily life as an illustration: the case of having some time
-			with your children.
+    If you are very well organized, urgent tasks can (and should often) be given lower precedence than
+    important tasks. Take an example from daily life as an illustration: the case of having some time
+    with your children.
 
-			For most people, this task is important. But if you have a busy professional life, the days and
-			weeks flow on with endless urgent tasks to be resolved. Even if you manage your time well, you
-			could let several months pass without spending time with your children because the task of seeing
-			them is never as urgent as your other work, despite its importance.
+    For most people, this task is important. But if you have a busy professional life, the days and
+    weeks flow on with endless urgent tasks to be resolved. Even if you manage your time well, you
+    could let several months pass without spending time with your children because the task of seeing
+    them is never as urgent as your other work, despite its importance.
 
 In OpenERP, urgency is given by the :guilabel:`Deadline` of the task, and importance by the :guilabel:`Priority`.
 The classification of the tasks then results from the product of the two factors. The most important
