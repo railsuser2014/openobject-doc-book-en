@@ -61,6 +61,10 @@ The alerts that can be configured on a product form are related to:
 
 * The purchase of that product.
 
+A practical example:
+
+Now when could you use such an alert? Suppose that your customer asks you to never make any deliveries on Tuesday morning, because the street is blocked due to a weekly market. You surely would like your transporter to be aware of this, so it could be useful to have a kind of message printed by default on each delivery order for this customer.
+To do this, you could create a Warning on the Picking in the **Customer** form of the partner concerned, saying that no deliveries are allowed on Tuesday morning.
 
 .. Copyright © Open Object Press. All rights reserved.
 
