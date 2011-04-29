@@ -17,9 +17,7 @@ OpenERP's package management enables you to sell the same product in several dif
 salesperson could sell separately, one battery or a palette of batteries. In the order, you can
 select the default packaging type as a function of the quantities ordered.
 
-For example, if the customer wants to buy 30,000 batteries, the salesperson can select the package
-``palette``. OpenERP will then propose to sell 32,000 batteries, which corresponds to two
-palettes. Or the salesperson can select 75 packs.
+For example, if the customer wants to buy 30,000 batteries, the salesperson can select the ``palette`` package. OpenERP will then propose to sell 32,000 batteries, which corresponds to two palettes. Or the salesperson can select 75 packs.
 
 The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
 list is the one that will be used by default.
@@ -41,7 +39,7 @@ to the storesperson along with that item.
 
 Even if the effects are the same, the printed documents will be different. The two following
 operations have the same effect on stock movement levels, but will be printed differently
-on the sales order and the packing order:
+on the sales order and the packing order as where quantities are concerned:
 
 * 32,000 batteries, delivered on two palettes,
 
@@ -54,7 +52,7 @@ It is sometimes more useful to define different products than to define several 
 the same product. A case of beer in a supermarket is a good example. A case holds 24 bottles, plus
 the empty case itself. The customer can buy bottles by the piece or a case of 24 bottles at one go.
 
-You could define two packages for the product ``Bottle of beer`` : ``PCE`` and ``case`` . But this
+You could define two packages for the ``Bottle of beer`` : ``PCE`` and ``case`` . But this
 representation does not let you manage the stock and price of empty cases. So you might instead
 prefer a Bill of Materials, defining and using three different products:
 
@@ -72,10 +70,7 @@ You also define the bill of materials below which determines the make-up of the 
 
 * Empty case of beer: 1 unit.
 
-Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of
-beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, 
-if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the
-other for the 24 individual bottles of beer. For more information on bills of materials,
+Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the other for the 24 individual bottles of beer. For more information on bills of materials,
 see chapter :ref:`ch-mnf`.
 
 .. Copyright © Open Object Press. All rights reserved.

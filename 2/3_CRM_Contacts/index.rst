@@ -1,9 +1,21 @@
 
+.. _part2-beg:
+
+#############################
+Managing Customer Acquisition
+#############################
+
 .. toctree::
     :maxdepth: 2
 
-    3_CRM_Contacts/index
-    9_Marketing/index
+    contacts
+    leads
+    opport
+    communicate
+    channel
+    tracking
+    reporting
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
