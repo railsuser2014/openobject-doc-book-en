@@ -181,7 +181,7 @@ In OpenERP, there are many ways to handle scrap products.
 
 #. :menuselection:`Warehouse --> Warehouse Management --> Delivery Orders`
 
-   .. figure:: images/delivery_scrap.png
+.. figure:: images/delivery_scrap.png
 	  :scale: 75
 	  :align: center
 	
