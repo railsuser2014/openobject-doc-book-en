@@ -1,12 +1,11 @@
 
-Layout Templates
-================
+Changing Order Layout
+=====================
 
 .. index::
    single: module; sale_layout
 
-Install the :mod:`sale_layout` module by selecting :guilabel:`Sales Order Layout Improvement` and clicking :guilabel:`Configure` in the :guilabel:`Reconfigure` wizard. It enables you to have a more
-elaborate template than the standard order forms. 
+Install the :mod:`sale_layout` module by selecting :guilabel:`Sales Order Layout Improvement` and clicking :guilabel:`Configure` in the :guilabel:`Reconfigure` wizard. It enables you to have a more flexible template than the standard order forms. 
 
 For example, you could put the following in the order lines:
 
@@ -36,7 +35,7 @@ and the resulting printed invoice.
    :scale: 75
    :align: center
 
-   *Invoice line using improved layout*
+   *Invoice using Customizable Layout*
 
 .. _fig-invlayprin:
 
@@ -44,7 +43,7 @@ and the resulting printed invoice.
    :scale: 75
    :align: center
 
-   *Printed invoice*
+   *Printed Invoice*
 
 .. Copyright © Open Object Press. All rights reserved.
 
