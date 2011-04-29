@@ -8,53 +8,69 @@
 Subscribe & Start
 *****************
 
-We want to make it very easy for you to test OpenERP or put it into full production. You have at least three starting
+Whether you want to test OpenERP or put it into full production, you have at least two possible starting
 points:
 
-* no need to install OpenERP, you can test it through http://demo.openerp.com,
+* you can use OpenERP Online by subscribing to http://www.openerp.com/online/;
 
-* evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
-  http://www.openerp.com/online, or the equivalent service at any of OpenERP's partner companies,
+* you can install the solution on your own computers to test it in your company's system environment.
 
-* install it on your own computers to test it in your company's system environment.
+In this chapter, the easy-to-use *OpenERP Online* solution will be briefly explained. For more information about installing OpenERP on your computer, please refer to the chapter :ref:`part5-crm-install`.
 
-Before installing OpenERP, you may like to test the features and performance of the system according to your
-company's needs. In such a scenario, you are recommended to use the OpenERP Online Free Trial Subscription.
-You can get a month's free trial on OpenERP's http://www.openerp.com/online, which enables you to get
-started quickly without incurring costs for integration or for buying computer systems.
+.. note:: Some Interesting Websites from OpenERP
 
-You will be required to enter some basic details during the registration process which will enable you to get
-started as well as receive support. After successful registration, you will be able to configure and use
-OpenERP online. 
+   * Main Site: http://www.openerp.com,
 
-Many of OpenERP's partner companies will access this, and some may offer their own similar service.
-This service should be particularly useful to small companies that just want to get going quickly and at low cost.
+   * OpenERP Online Site: http://www.openerp.com/online,
+   
+   * Online demo at http://demo.openerp.com,
 
-OpenERP Online always uses the latest official stable version of OpenERP. The OpenERP Online offer includes several
-services: hosting, database management, stable security update, backups, maintenance, bug fixing and migrations.
+   * Documentation site: http://doc.openerp.com/,
 
-After the free trial expires, you may choose to continue using OpenERP Online, especially if you would
-like to bypass technical difficulties.
-This server is also recommended for small companies with fewer than about fifteen employees.
-It is provided in the form of a monthly subscription with a fixed price per user. You can find the
-details of current pricing and payment options at http://www.openerp.com/online.
+   * Community discussion forum where you can often receive assistance: http://www.openerp.com/forum/.
 
-For every subscription, the following hardware resources are provided:
+.. tip:: Current documentation
 
-    #. One application server for OpenERP, with web and GTK access
-    #. Two incremental backup servers
-    #. An access to the control center, backup and monitoring system
+   The procedure for installing OpenERP and its web server are likely to change and improve with
+   each new version, so you should always check each release's documentation on the website for the latest installation procedures.
 
-It also includes the following services:
+Use OpenERP Online
+------------------
 
-    * Maintenance services:
-          * bug fixes analyzed within 3 open days
-          * migrations to each new version
-          * security updates.
-    * Hosting at high bandwidth in our Europe or U.S. data-centers
-    * Maintenance and 24/7 monitoring of your servers
+.. index::
+   single: OpenERP Online
 
-Using the online offer, you may also take benefit of services at an extra fee on OpenERP Online: support, trainings, help to customize or configure, data importation, etc. You can also contact an OpenERP partner; most of them provide services on OpenERP Online as well.
+Nothing is easier for you to discover OpenERP than subscribing to the OpenERP Online offer. You just need a web browser to get started.
+
+The Online service can be particularly useful to small companies, that just want to get going quickly at low cost.
+You have immediate access to OpenERP's Integrated Management System built on the type of enterprise architecture used in many organizations.
+
+OpenERP's Online offer includes several services: hosting at high bandwidth, database management, stable security update, backups, maintenance (24/7 server monitoring), bug fixing and migrations.
+
+OpenERP guarantees that the software running on OpenERP Online is exactly the same as the Open Source official
+version of OpenERP. Any improvement made on OpenERP will be available online. This allows you to easily switch from the online version to the local version anytime.
+
+So even if the OpenERP Online solution might be the best solution to suit your needs today, you can easily switch to an installation on your own servers according to your company's changing requirements or growth. You are also able to change your service provider
+anytime, while continuing to use the exact same system. Hence, you do not depend on your host. In addition, OpenERP works with standard and open formats and programming languages which allow
+you to export your data and use them in any other software.
+
+These advantages give you total control over your data, your software, your platform.
+
+.. figure:: images/start_saas.jpeg
+   :align: center
+   :scale: 90
+
+   *Subscribe and Start with OpenERP Online*
+
+If you want to start working with the online platform, you can navigate to http://www.openerp.com/online. After successful registration, you will be able to configure and use OpenERP online. To log in to your OpenERP Online account, you will receive a username and password. You can build the software to fit your needs, at your own pace! 
+
+OpenERP Online - Software as a Service - is hosted by OpenERP and paid in the form of a monthly subscription. The pricing model is extremely simple. OpenERP charges a fixed fee per month per user. You will get an invoice each month according to the number of users registered in the system at that time. If you add new users during the next 30 days, they will only be charged with the next invoice.
+You can find the details of current pricing and payment options at http://www.openerp.com/online.
+
+.. tip:: Free Trial
+
+       For a month's free trial, check out OpenERP's http://www.openerp.com/online, which enables you to get started quickly without incurring costs for integration or for buying computer systems. After the free trial expires, you can easily continue using OpenERP Online.
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

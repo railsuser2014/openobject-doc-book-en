@@ -1,4 +1,6 @@
 
+.. _part2-crm:
+
 .. toctree::
     :maxdepth: 2
 
