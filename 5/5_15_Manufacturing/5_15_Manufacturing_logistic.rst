@@ -102,9 +102,9 @@ Entering Data for a New Repair
 ++++++++++++++++++++++++++++++
 
 Use the menu :menuselection:`Manufacturing --> Manufacturing --> Repair Orders` to enter a new repair into
-the system. You will see a blank form for the repair data, as shown in the figure :ref:`fig-mrprepnew` below.
+the system. You will see a blank form for the repair data, as shown in the figure :ref:`fig-mrprepnew2` below.
 
-.. _fig-mrprepnew:
+.. _fig-mrprepnew2:
 
 .. figure:: images/mrp_repair_new.png
    :scale: 75
@@ -165,9 +165,9 @@ Repair Workflow
 +++++++++++++++
 
 A defined process handles a repair order – both the repair itself and invoicing the client. The
-figure :ref:`fig-mrprepflow` shows this repair process.
+figure :ref:`fig-mrprepflow2` shows this repair process.
 
-.. _fig-mrprepflow:
+.. _fig-mrprepflow2:
 
 .. figure:: images/mrp_repair_workflow.png
    :scale: 65
@@ -221,9 +221,9 @@ customer delivery order when the repair has been completed. This also lets you m
 of the repaired products.
 
 For example, take the case of the cabinet that was produced at the start of this chapter. If you
-have to replace the shelf PANLAT, you must enter data for the repair as shown in figure :ref:`fig-mrpreppan`.
+have to replace the shelf PANLAT, you must enter data for the repair as shown in figure :ref:`fig-mrpreppan2`.
 
-.. _fig-mrpreppan:
+.. _fig-mrpreppan2:
 
 .. figure:: images/mrp_repair_panlat.png
    :scale: 75

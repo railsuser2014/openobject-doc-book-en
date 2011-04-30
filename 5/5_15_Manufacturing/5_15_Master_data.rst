@@ -9,9 +9,9 @@ Use of Bills of Materials
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
 product. To illustrate the concept of specification, you are going to work on a cabinet where the
-manufacturing plan is given by the figure :ref:`fig-mrparm`.
+manufacturing plan is given by the figure :ref:`fig-mrparm2`.
 
-.. _fig-mrparm:
+.. _fig-mrparm2:
 
 .. figure:: images/mrp_armoire.png
    :scale: 75
@@ -206,7 +206,7 @@ Multi-level Bills of Materials
 
 In OpenERP, each line of a bill of materials may itself be a bill of materials. So you can
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
-:ref:`fig-mrparm` you could define the single bill of materials below:
+:ref:`fig-mrparm2` you could define the single bill of materials below:
 
 .. table:: Single Bill of Materials for 1 SHE100 Unit
 
@@ -404,9 +404,9 @@ distinguish two types of workcenters: machines and human resources.
     that can be considered as a unit for the purposes of forecasting capacity and planning.
 
 Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers` to define a new
-workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
+workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc2`.
 
-.. _fig-mrpwkc:
+.. _fig-mrpwkc2:
 
 .. figure:: images/mrp_workcenter.png
    :scale: 75
@@ -420,7 +420,7 @@ workcenter. You get a form as shown in the figure :ref:`fig-mrpwkc`.
 	to install the module `analytic_account`
 
 A workcenter must have a name. You then assign a type: machine, human resource, tool, a code and
-a description of operating hours or functionality. The figure :ref:`fig-mrpwkc` represents the hours from Monday
+a description of operating hours or functionality. The figure :ref:`fig-mrpwkc2` represents the hours from Monday
 to Friday, from 08:00 to 18:00 with a break of an hour from 12:00.
 
 You should show a description of the workcenter and its operations.

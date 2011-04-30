@@ -52,7 +52,7 @@ In the next sections we will explain in more detail some examples of what `Leads
 
         In  ``Simplified`` view, ``Leads`` will not be displayed. To see not also opportunities, but also leads, you should switch
         to the ``Extended`` view. You can easily switch from `Simplified` to `Extended` view by changing your `User Preferences` through
-        the `Edit Preferences´ button.
+        the `Edit Preferences` button.
 
 Storing your Business Cards effectively
 ---------------------------------------

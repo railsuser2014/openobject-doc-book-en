@@ -77,9 +77,9 @@ Production orders
 
 To open a Production Order, use the menu
 :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click on `New` button.
-You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
+You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew2`.
 
-.. _fig-mrpprdnew:
+.. _fig-mrpprdnew2:
 
 .. figure:: images/mrp_production_new.png
    :scale: 75
@@ -87,9 +87,9 @@ You get a blank form for entering a new production order as shown in the figure 
 
    *New production order*
 
-The production order follows the process given by the figure :ref:`fig-mrpprdproc`.
+The production order follows the process given by the figure :ref:`fig-mrpprdproc2`.
 
-.. _fig-mrpprdproc:
+.. _fig-mrpprdproc2:
 
 .. figure:: images/mrp_production_processus.png
    :scale: 75

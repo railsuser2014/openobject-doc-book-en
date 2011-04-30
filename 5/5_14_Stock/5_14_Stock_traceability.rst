@@ -187,10 +187,10 @@ In OpenERP, there are many ways to handle scrap products.
 	
 	  *Scrapping from a Delivery Order*	
 
-When you decide to scrap some products, they are transferred to the :guilabel:`Scapped` location.
-To display the content of this :guilabel:`Virtual Location`, go to :menuselection:`Warehouse -->
-Inventory Control --> Location Structure`, then select the virtual locations and display the
-:guilabel:`Scrapped`location.
+When you decide to scrap some products, they are transferred to the :guilabel:`Scrap` location.
+To display the content of this :guilabel:`Virtual Location`, go to :menuselection:
+`Warehouse --> Inventory Control --> Location Structure`, then select the virtual locations and display the
+:guilabel:`Scrap` location.
 
 If you want to transfer the products in another location, you can create a new one and check the 
 :guilabel:`Scrap Location` in the additional information.

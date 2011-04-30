@@ -607,11 +607,11 @@ industries. The procurement method shown on the product form is a default value 
 enabling the salesperson to choose the best mode for fulfilling a particular order by varying the
 sales order parameters as needed.
 
-The figures :ref:`fig-stfrst` and :ref:`fig-stfrord` show the change of stock levels for one product
+The figures :ref:`fig-stfrst2` and :ref:`fig-stfrord2` show the change of stock levels for one product
 managed as `Make to Order` and another managed as `Make to Stock`. The two figures are taken from OpenERP's 
 :guilabel:`Stock Level Forecast` report, available from the product form.
 
-.. _fig-stfrst:
+.. _fig-stfrst2:
 
 .. figure:: images/stock_from_stock.png
    :scale: 65
@@ -619,7 +619,7 @@ managed as `Make to Order` and another managed as `Make to Stock`. The two figur
 
    *Change in Stock for a  Make to Stock Product*
 
-.. _fig-stfrord:
+.. _fig-stfrord2:
 
 .. figure:: images/stock_from_order.png
    :scale: 65
@@ -654,9 +654,9 @@ price quotation to a supplier or a manufacturing order.
 OpenERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
+Figure :ref:`fig-stflow2` illustrates different cases for automatic procurement.
 
-.. _fig-stflow:
+.. _fig-stflow2:
 
 .. figure:: images/stock_flow.png
    :scale: 80
@@ -664,7 +664,7 @@ Figure :ref:`fig-stflow` illustrates different cases for automatic procurement.
 
    *Workflow for Automatic Procurement, depending on the Product Configuration*
 
-The table below shows all possible cases for the figure :ref:`fig-stflow`.
+The table below shows all possible cases for the figure :ref:`fig-stflow2`.
 
 .. table:: Consequences of Procurement Methods Make to Stock (MTS) and Make To Order (MTO)
 
