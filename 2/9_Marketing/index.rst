@@ -261,10 +261,10 @@ For Leads, the following filter would select draft Leads from any European count
        'Portugal',
        'Ireland',
        ]),
-        '|', 
-            ('description', 'ilike', 'Plan for use: True'), 
-            ('description', 'ilike', 'Plan for buy: False')
-      ]
+       '|', 
+       ('description', 'ilike', 'Plan for use: True'), 
+       ('description', 'ilike', 'Plan for buy: False')
+       ]
 
 6. Miscellaneous References, Examples
 
@@ -347,7 +347,7 @@ Segments allow you to keep good track of the results of a marketing campaign. Yo
 
 Thanks to good insights in the way your respondents answer to your campaign, you can continuously improve your marketing results!
 
-.. figure::  images/camp_analysis.jpeg
+.. figure::  images/camp_analysis.png
    :scale: 75
    :align: center
 
