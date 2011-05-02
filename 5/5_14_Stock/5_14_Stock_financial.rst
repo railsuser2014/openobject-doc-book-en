@@ -34,17 +34,16 @@ You use this system for managing consigned stocks:
 How to Configure Accounting Valuation?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* In the Product form, go to the Accounting tab and select the Real Time (automated) option for Inventory
-Valuation,
+In the Product form, go to the ``Accounting`` tab and select the ``Real Time`` (automated) option for Inventory Valuation,
 
 To define your accounts, you have two options. Set them on the product category, or on the product.
 
-* From the Accounting Stock Properties section, for the Product Category, set the Stock Input Account, the
-Stock Output Account and the Stock Variation Account,
+* From the ``Accounting Stock Properties`` section, for the Product Category, set the ``Stock Input Account``, the
+``Stock Output Account`` and the ``Stock Variation Account``,
 
 OR
 
-* From the Accounting tab, for the Product, set the Stock Input Account and the Stock Output Account.
+* From the ``Accounting`` tab, for the Product, set the ``Stock Input Account`` and the ``Stock Output Account.
 
 You can also overwrite the accounts from the Product or the Product Category by defining Stock Input Account
 and Stock Output Account for a Location.
