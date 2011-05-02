@@ -26,15 +26,15 @@ Lead Automation with Marketing Campaigns
 ========================================
 
 OpenERP offers a set of modules allowing you to easily create and track your Marketing Campaigns.
-With the **Marketing** application, you define your direct marketing campaigns, allowing you to automate your lead acquisition. You can install the module through the Reconfigure wizard, then select Marketing.
+With the **Marketing** application, you define your direct marketing campaigns, allowing you to automate your lead communication. You can install the module through the Reconfigure wizard, then select Marketing.
 
-Campaigns can be displayed in List or Diagram view (process). The Diagram view allows you to clearly see the marketing actions (represented by a node) and the applied conditions (represented by an arrow).
+Campaigns can be displayed in List or Diagram view. The Diagram view allows you to clearly see the marketing actions (represented by a node) and the applied conditions (represented by an arrow).
 
 .. figure::  images/market_diagram.jpeg
    :scale: 100
    :align: center
 
-   *Diagram (Process) View of a Campaign*
+   *Diagram View of a Campaign*
 
 A marketing campaign is an event or an activity that will help you manage and reach your partners with specific messages. A campaign can have many activities that will be triggered from a specific situation, for instance a response from a contact to an email you sent. The result of such a response (action) could be the sending of an email, for which a template has previously been created in OpenERP.
 
@@ -66,6 +66,10 @@ According to the replies we receive from the leads, we send an email catering th
 See it as a flowchart allowing us to trigger a respective activity for every possible cue. The chances of leads going unattended become very low, and for every lead, we have a predefined method of handling it.
 
 Moreover, we can measure the method according to our goals. Based on the goals we can evaluate the effectiveness of our campaign and analyze whether there is room for improvement.
+
+.. tip:: Campaign Example
+
+        To a get an example of a complete campaign in OpenERP, you can install the :mod:`marketing_campaign_crm_demo` module.
 
 Designing your Campaigns
 ------------------------
@@ -113,6 +117,12 @@ For each email template, you can have OpenERP generate a Wizard Action / Button 
 
 Setting up your Marketing Campaigns
 -----------------------------------
+
+.. figure::  images/crm_market_campaign.png
+   :scale: 75
+   :align: center
+
+   *Marketing Campaign*
 
 0. Introduction
 
@@ -233,28 +243,28 @@ Filters mainly consist in a domain expressing the criteria of selection on a mod
 See section 10.3 for more information on the syntax for these filters.
 
 For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for buy: False" specified in the body:
-|    [  ('type','=','lead'), 
-|       ('state', '=', 'draft'),
-|       ('country_id.name', 'in', ['Belgium',
-|       'Netherlands',
-|       'Luxembourg',
-|       'United Kingdom',
-|       'France',
-|       'Germany',
-|       'Finland',
-|       'Denmark',
-|       'Norway',
-|       'Austria',
-|       'Switzerland',
-|       'Italy',
-|       'Spain',
-|       'Portugal',
-|       'Ireland',
-|       ]),
-|        '|', 
-|            ('description', 'ilike', 'Plan for use: True'), 
-|            ('description', 'ilike', 'Plan for buy: False')
-|      ]
+    [  ('type','=','lead'), 
+       ('state', '=', 'draft'),
+       ('country_id.name', 'in', ['Belgium',
+       'Netherlands',
+       'Luxembourg',
+       'United Kingdom',
+       'France',
+       'Germany',
+       'Finland',
+       'Denmark',
+       'Norway',
+       'Austria',
+       'Switzerland',
+       'Italy',
+       'Spain',
+       'Portugal',
+       'Ireland',
+       ]),
+        '|', 
+            ('description', 'ilike', 'Plan for use: True'), 
+            ('description', 'ilike', 'Plan for buy: False')
+      ]
 
 6. Miscellaneous References, Examples
 
@@ -337,6 +347,12 @@ Segments allow you to keep good track of the results of a marketing campaign. Yo
 
 Thanks to good insights in the way your respondents answer to your campaign, you can continuously improve your marketing results!
 
+.. figure::  images/camp_analysis.jpeg
+   :scale: 75
+   :align: center
+
+   *Campaign Analysis*
+
 .. _contform:
 
 Automating your Lead Acquisition
@@ -361,10 +377,64 @@ All data entered in this form are linked to the **Lead** form in the CRM. Each t
 
 Such a system is a very easy yet flexible way of keeping track of your leads and automatically launch your marketing campaigns. 
 
+How to Link a Web Contact Form to OpenERP?
+------------------------------------------
+
+OpenERP is accessible through XML-RPC interfaces, for which libraries exist in many languages.
+
+*Python example*
+
+        import xmlrpclib
+        # ... define HOST, PORT, DB, USER, PASS
+        url = 'http://%s:%d/xmlrpc/common' % (HOST,PORT)
+        sock = xmlrpclib.ServerProxy(url)
+        uid = sock.login(DB,USER,PASS)
+        print "Logged in as %s (uid:%d)" % (USER,uid)
+        # Create a new lead
+        url = 'http://%s:%d/xmlrpc/object' % (HOST,PORT)
+        sock = xmlrpclib.ServerProxy(url)
+        args = {
+        'name' : 'A New Lead',
+        'description' : 'This is a new lead from the web contact form',
+        'inventor_id': uid,
+        }
+        lead_id = sock.execute(DB,uid,PASS,'crm.lead','create',args)
+
+
+*PHP Example*
+
+        <?
+        include('xmlrpc.inc'); // Use phpxmlrpc library, available on sourceforge
+        // ... define $HOST, $PORT, $DB, $USER, $PASS
+        $client = new xmlrpc_client("http://$HOST:$PORT/xmlrpc/common");
+        $msg = new xmlrpcmsg("login");
+        $msg->addParam(new xmlrpcval($DB, "string"));
+        $msg->addParam(new xmlrpcval($USER, "string"));
+        $msg->addParam(new xmlrpcval($PASS, "string"));
+        resp = $client->send($msg);
+        uid = $resp->value()->scalarval()
+        echo "Logged in as $USER (uid:$uid)"
+
+        // Create a new lead
+        $arrayVal = array(
+        'name'=>new xmlrpcval("A New Lead", "string") ,
+        'description'=>new xmlrpcval("This is a new lead from the web contact form" , "string"),
+        'inventor_id'=>new xmlrpcval($uid, "int"),
+        );
+
+        $msg = new xmlrpcmsg('execute');
+        $msg->addParam(new xmlrpcval($DB, "string"));
+        $msg->addParam(new xmlrpcval($uid, "int"));
+        $msg->addParam(new xmlrpcval($PASS, "string"));
+        $msg->addParam(new xmlrpcval("crm.lead", "string"));
+        $msg->addParam(new xmlrpcval("create", "string"));
+        $msg->addParam(new xmlrpcval($arrayVal, "struct"));
+        $resp = $client->send($msg);
+        ?>
 
 .. tip:: How to Link a Web Contact Form to OpenERP?
 
-       For technical information about how to link a web contact form to OpenERP, please refer to the Technical Memento that you can download from http://www.openerp.com/community. In the chapter about WebServices – XML-RPC you will find a similar example. 
+       For technical information about how to link a web contact form to OpenERP, please also refer to the Technical Memento that you can download from http://www.openerp.com/community, the chapter about WebServices – XML-RPC. 
 
 .. index::
    single: Profiling

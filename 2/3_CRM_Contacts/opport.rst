@@ -17,8 +17,11 @@ Opportunities can be connected to the email gateway: new emails may create oppor
 
 .. tip:: Attachments
 
-      By default, you can keep attachments in OpenERP to make sure all linked documents are directly accessible. If you also want those
-      documents to be indexed (not for pictures), you should install the Knowledge Application.
+      By default, you can keep attachments in OpenERP to make sure all linked documents are directly accessible. At the right side
+      of the screen, under ``Attachments``, click the *Add* button to start linking documents to your opportunity. With the *Browse*
+      button, you can search for the file to be attached in your directories. You can add attachments in the same way for leads,
+      for instance.
+      If you also want those documents to be indexed (not for pictures), you should install the Knowledge Application.
 
 Converting Leads into Customers or Opportunities
 ------------------------------------------------
@@ -269,7 +272,7 @@ You can change the Calendar view for meetings and return to the list, form or ga
 
       When you hover your mouse cursor over a meeting in Calendar view, the related partner and the sales team will be displayed.
 
-Of course, you can access this OpenERP calendar from your smartphone. For more information about this feature, please refer to chapter :ref:`ch-sync`.
+Of course, you can access this OpenERP calendar from your smartphone. For more information about this feature, please refer to chapter :ref:`ch-sync1`.
 
 OpenERP also allows you to manage incoming (`inbound`) and outgoing (`outbound`) calls. Even from the **Phone Calls** list view, you can directly edit a call (change the status, convert it to an opportunity or schedule a meeting). For every call, you can enter notes about the outcome. While on the phone with your prospect or customer, you can directly schedule a meeting, schedule another call or convert your call to an opportunity. There is no need for you to scroll to several menus to do what you have to: plan an action as a result of your call.
 

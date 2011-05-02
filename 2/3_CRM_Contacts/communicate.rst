@@ -14,7 +14,7 @@ Connecting with your Email and Accessing from your Mobile Device
  that you can keep using your normal communication tools by interfacing them with OpenERP, 
  and that you are not limited just to OpenERP's interface.*
 
-OpenERP can do most things you need to pursue your business opportunities. Often your sales persons are already used to working with standard email clients to manage their business. OpenERP allows you to perfectly integrate their knowledge with the use of OpenERP. 
+Often your sales persons are already used to working with standard email clients to manage their business. OpenERP allows you to perfectly integrate their knowledge with the use of OpenERP. 
 
 OpenERP offers this flexibility to those who need to continue using their traditional email programs to maintain their
 efficiency: OpenERP can be connected to Outlook and Thunderbird. Your users can participate in many OpenERP-maintained processes without ever leaving their familiar environment, and can avoid double data entry, yet easily link information to OpenERP's database automatically.
@@ -22,6 +22,10 @@ efficiency: OpenERP can be connected to Outlook and Thunderbird. Your users can 
 With the Outlook and Thunderbird plug-ins, you can create and/or open contacts directly from your email client in OpenERP without effort.
 You can also link emails (with attachments) to OpenERP, to avoid information getting lost.
 Both plug-ins enable you for instance to create leads based on exchanges you have with the customer.
+
+The email gateway functionality enables you to use Open ERP’s CRM without necessarily using the OpenERP interface. Up-to-date leads can automatically be stored in OpenERP just by sending and receiving emails through a specific email address. You can even answer such mails from your own mailbox.
+
+And of course, you can link the OpenERP meeting calendar to your mobile device.
 
 .. _ch-crm-fetchmail:
 
@@ -366,7 +370,7 @@ either you just create a contact (address), or you create a partner with the con
 	  and select the corresponding partner from the list. Then complete the contact data and click the ``Save`` button.
 
 .. figure::  images/thunderbird_creation.png
-   :scale: 100
+   :scale: 75
    :align: center
 
    *Creating a Contact on the Fly from Thunderbird*
@@ -385,10 +389,6 @@ From your mailbox, simply by clicking an email, you can directly access the corr
 
 	* have a shared file system that is connected to various OpenERP documents to share information and
 	  access it with your favorite browser,
-	  
-        * organize and structure your documents (such as projects, partners and users) in OpenERP's
-	  system.
-
 
 * Step 1: Install the Thunderbird plugin in OpenERP
 
@@ -475,8 +475,9 @@ Here is an example of how to configure extra document types. Suppose you would l
    :align: center
 
    *How to Add Extra OpenERP Document Types to Thunderbird?*
+   * organize and structure your documents (such as projects, partners and users) in OpenERP's system.
 
-.. _ch-sync1:
+.. _ch-sync:
 
 Synchronizing your CRM with Mobile Devices
 ------------------------------------------
