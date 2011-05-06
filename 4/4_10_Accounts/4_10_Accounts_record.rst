@@ -72,14 +72,13 @@ as a positive amount.
 	GTK client, if you enter just the day of the month OpenERP automatically completes the month and
 	year when you press the :kbd:`Tab` key.
 
-	.. note:: Example Cost Redistribution
+.. note:: Example Cost Redistribution
+	One of the uses of manual data entry for analytic operations is reallocation of costs. For
+	example, if a development has been done for a given project but can be used again for another
+	project, you can reallocate part of the cost to the other project.
 
-		One of the uses of manual data entry for analytic operations is reallocation of costs. For
-		example, if a development has been done for a given project but can be used again for another
-		project, you can reallocate part of the cost to the other project.
-
-		In this case, make a positive entry on the first account and a negative entry for the same
-		amount on the account of the second project.
+	In this case, make a positive entry on the first account and a negative entry for the same
+	amount on the account of the second project.
 
 Automated Entries
 ^^^^^^^^^^^^^^^^^
