@@ -174,29 +174,121 @@ Take for example the following configuration:
 
 The example above will then be given the following lead times:
 
-* Delivery ARM100: 29 January (=1st January + 30 days – 2 days),
+* Delivery ARM100: 29 January (= 1st January + 30 days – 2 days),
 
-* Manufacture ARM100: 23 January (=29 January – 5 days – 1 day),
+* Manufacture ARM100: 23 January (= 29 January – 5 days – 1 day),
 
-* Manufacture PANLAT: 12 January (=26 January – 10 days – 1 day),
+* Manufacture PANLAT: 12 January (= 26 January – 10 days – 1 day),
 
-* Purchase BOIS02 (for ARM100): 15 January (=26 January – 5 days – 3 days),
+* Purchase BOIS02 (for ARM100): 15 January (= 26 January – 5 days – 3 days),
 
-* Purchase BOIS02 (for PANLAT): 4 January (=12 January – 5 days – 3 days).
+* Purchase BOIS02 (for PANLAT): 4 January (= 12 January – 5 days – 3 days).
 
 Procurement
 +++++++++++
 
---> Automating purchasing and replenishment
+In normal system use, you do not need to worry about procurement orders because they are automatically generated
+by OpenERP and the user will usually work on the results of a procurement: a production order, a purchase order,
+a sale order and a task.
 
-    --> MTS: Minimum Stock Rules
-    --> MTO: Supplier defined
+But if there are configuration problems, the system can remain blocked by a procurement without generating a
+corresponding document.
 
---> Exception management (Scheduler)
+Automating purchasing and replenishment
+---------------------------------------
 
-    --> No BoM defined
-    --> No Minimum rules
-    --> No enough stock
+In the product form view, you can select between two procurement methods:
+
+    * Make To Stock (MTS)
+    * Make To Order (MTO)
+
+These two ways will impact the way you have to configure your automatic purchasing and replenishment. For the MTS method, you will
+have to define Minimum Stock Rules to order products when the minimum treshold and a supplier to define where to order the products. 
+For the MTO method, you must define a supplier for the product in order to buy new products when a sale order or a manufacturing 
+order is confirmed.
+
+Exception management (Scheduler)
+--------------------------------
+
+In OpenERP, you can have different procurement exceptions. An exception appears in the procurement exception view when the 
+system does not know what to do with an object such as a Manufacturing Order or a Purchase Order.
+
+You can find four types of exceptions:
+
+    * No bill of materials defined for production: in this case you have got to create one or indicate that the
+    product can be purchased instead.
+
+    * No supplier available for a purchase: it is then necessary to define a supplier in the tab Supplier of the
+    product form.
+
+    * No address defined on the supplier partner: you must complete an address for the supplier by default for the
+    product in consideration.
+
+    * No quantity available in stock: you must create a rule for automatic procurement (for example, a minimum
+    stock rule) and put it in the order, or manually procure it.
+
+.. figure:: images/procurement_exception.png
+    :align: center
+    :scale: 75
+    
+    *Procurement exceptions*
+    
+Some problems are just those of timing and can be automatically corrected by the system.
+
+If a product must be ‘in stock’ but is not available in your stores, OpenERP will make the exception in
+‘temporary’ or ‘to be corrected’. The exception is temporary if the system can procure it automatically, for
+example, if a procurement rule is defined for minimum stock.
+
+When an exception is raised, you can check the configuration of your product in order to correct the misconfiguration. Then you
+can choose to relaunch the scheduler or to retry to execute the action by selecting the line, click on :guilabel:`Retry` and then
+on :guilabel:`Run procurement`.
+
+.. figure:: images/procurement_fix.png
+    :scale: 75
+    :align: center
+    
+    *Correct a procurement exception*
+
+The exception related to the BoM definition comes from the fact that a product with a supply method set as *Produce* has no
+Bill Of Materials. The system does not know how to produce this product and then raise an exception.    
+
+Manual Procurement
+------------------
+
+To procure internally, you can create a procurement order manually. Use the menu :menuselection:`Warehouse --> Schedulers -->
+Procurement Exceptions` and click the New button to do this.
+
+.. figure:: images/mrp_procurement.png
+    :scale: 75
+    :align: center
+    
+    *Manual Procurement*
+
+The procurement order will then be responsible for calculating a proposal for automatic procurement for the
+product concerned. This procurement will start a task, a purchase order for the supplier or a production
+depending on the product configuration.
+
+.. figure:: images/mrp_procurement_flow.png
+    :scale: 75
+    :align: center
+    
+    *Procurement flow*
+
+It is better to encode a procurement order rather than direct purchasing or production. This method has the
+following advantages:
+
+The form is simpler because OpenERP calculates the different values from other values and defined rules: purchase date 
+calculated from order date, default supplier, raw materials needs, selection of the most suitable bill of
+materials, etc.
+
+The calculation of requirements prioritises the procurements. If you encode a purchase directly, you short-circuit
+the planning of different procurements.
+
+.. tip:: Shortcuts
+
+    On the product form you have an **action** shortcut button :guilabel:`Procurement Request` that lets you quickly 
+    create a new procurement order.
+        
 
 Subcontracting management
 =========================
@@ -393,10 +485,6 @@ If you go to :menuselection:`Project --> Project --> Task`, you will find a new 
     :align: center
     
     *A Product linked to a Task and a Project*    
-
-Optimizing resources planning
-=============================
-
 
 
 .. Copyright © Open Object Press. All rights reserved.
