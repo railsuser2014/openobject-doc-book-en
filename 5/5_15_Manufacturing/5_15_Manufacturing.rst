@@ -40,8 +40,78 @@ Raw material consumption
 Finished product manufacturing
 ++++++++++++++++++++++++++++++
 
+Having manufactured the intermediate product CPU_GEN, OpenERP automatically proposes the manufacturing
+of the computer PC2 using the order created earlier. So return to the menu for production orders to start 
+:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+
+You will find computer PC2 which has been sold to the customer, as shown in the figure hereafter.
+
+.. figure:: images/mrp_production_list_end.png
+    :scale: 75
+    :align: center
+    
+    *Complete the production for PC2*
+
+Now that the production has been completed, the product sold to the customer has now been manufactured and the raw materials
+have been consumed and taken out of stock.
+ 
+.. tip:: Automatic Actions
+
+    As well as managing the use of materials and the production of stocks, manufacturing can have the following
+    automatic effects which are detailed further on in the chapter:
+    
+    * adding value to stock,
+    * generating operations for assembly staff,
+    * automatically creating analytical accounting entries.
+
+    
+
 Subproduct production
 +++++++++++++++++++++
+
+For the management of subproduct, you must install the module :mod:`mrp_subproduct` (Reconfigure wizard, MRP Sub-
+products). The normal behaviour of manufacture in OpenERP enables you to manufacture several units of the
+same finished product from raw materials (A + B > C). With subproduct management, the result of a manufacture can
+be to have both finished products and secondary products (A + B > C + D).
+
+.. note:: Subproduct Material
+
+    In OpenERP, subproduct material corresponds to secondary products that are a by-product of the main manufacturing
+    process. For example, cutting planks of timber will produce other planks but these bits of timber are too small 
+    (or the offcuts may have value for the company if they can be used elsewhere).
+
+If the module :mod:`mrp_subproduct` has been installed, you get a new tab Sub products in the Bill of Material
+that lets you set secondary products resulting from the manufacture of the finished product.
+
+.. figure:: images/mrp_bom_subproduct.png
+    :scale: 75
+    :align: center
+    
+    *Definition of Subproducts*
+
+When OpenERP generates a production order based on a bill of materials that uses a secondary product, you pick
+up the list of all products in the the second tab of the production order ``Finished Products``.
+    
+.. figure:: images/mrp_production.png
+    :scale: 75
+    :align: center
+    
+    *A production order producing several finished products*
+
+Secondary products enable you to generate several types of products from the same raw materials and manufac-
+turing methods - only these are not used in the calculation of requirements. Then, if you need the secondary
+products, OpenERP will not ask you to manufacture another product to use the waste products and secondary
+products of this manufacture. In this case, you should enter another production order for the secondary product.
+
+..note: Services in Manufacturing
+
+    Unlike most software for production management, OpenERP manages services as well as stockable products. So
+    it is possible to put products of type Service in a bill of materials. These do not appear in the production 
+    order but their requirements will be taken into account.
+    
+    If they are defined as Make to Order, OpenERP will generate a task for the manufacture or a subcontract
+    order for the operations. The behaviour will depend on the Supply Method configured on the product form: Buy
+    or Produce.
 
 Scrapping
 +++++++++
@@ -77,9 +147,9 @@ Production orders
 
 To open a Production Order, use the menu
 :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click on `New` button.
-You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew2`.
+You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
 
-.. _fig-mrpprdnew2:
+.. _fig-mrpprdnew:
 
 .. figure:: images/mrp_production_new.png
    :scale: 75
@@ -87,9 +157,9 @@ You get a blank form for entering a new production order as shown in the figure 
 
    *New production order*
 
-The production order follows the process given by the figure :ref:`fig-mrpprdproc2`.
+The production order follows the process given by the figure :ref:`fig-mrpprdproc`.
 
-.. _fig-mrpprdproc2:
+.. _fig-mrpprdproc:
 
 .. figure:: images/mrp_production_processus.png
    :scale: 75
