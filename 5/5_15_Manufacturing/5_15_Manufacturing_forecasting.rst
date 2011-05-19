@@ -215,17 +215,13 @@ system does not know what to do with an object such as a Manufacturing Order or 
 
 You can find four types of exceptions:
 
-    * No bill of materials defined for production: in this case you have got to create one or indicate that the
-    product can be purchased instead.
+    * No bill of materials defined for production: in this case you have got to create one or indicate that the product can be purchased instead.
 
-    * No supplier available for a purchase: it is then necessary to define a supplier in the tab Supplier of the
-    product form.
+    * No supplier available for a purchase: it is then necessary to define a supplier in the tab Supplier of the product form.
 
-    * No address defined on the supplier partner: you must complete an address for the supplier by default for the
-    product in consideration.
+    * No address defined on the supplier partner: you must complete an address for the supplier by default for the product in consideration.
 
-    * No quantity available in stock: you must create a rule for automatic procurement (for example, a minimum
-    stock rule) and put it in the order, or manually procure it.
+    * No quantity available in stock: you must create a rule for automatic procurement (for example, a minimum stock rule) and put it in the order, or manually procure it.
 
 .. figure:: images/procurement_exception.png
     :align: center
