@@ -69,8 +69,8 @@ stock moves that are traced due to the Bill Of Materials attached to the product
     *Downstream Traceability*        
 
 In this window, you only see the move for the finished product. It is due to the definition of the 
-concept of Downstream Traceability. It only show the flow from the customer to the supplier of raw
-materials. In this case, [TO COMPLETE]   
+concept of Downstream Traceability. It only shows the flow from the customer to the supplier of raw
+materials.
 
 Managing repairs
 ================
@@ -245,11 +245,6 @@ When the repair is ready to be confirmed, OpenERP will generate the following st
 
 If you analyze the traceability of this lot number, you will see all the repair operations in the
 upstream and downstream traceability lists of the products concerned.
-
-Controlling your production costs
-=================================
-
---> Analytic analysis
 
 
 .. Copyright © Open Object Press. All rights reserved.
