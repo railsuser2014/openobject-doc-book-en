@@ -408,6 +408,8 @@ Now create a new product through the :menuselection:`Warehouse` or :menuselectio
 .. index::
    single: stock; location
 
+.. _log-loc:
+
 Stock Locations
 ---------------
 
