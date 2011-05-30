@@ -10,34 +10,30 @@ How does it apply to your Business?
 
  *Now that you have discovered some of the many possibilities of OpenERP from a tour of the
  demonstration database, you will develop a real case. An empty database provides the starting point
- for testing a classic workflow from product purchase to sale,
- completing your guided tour and your familiarization with OpenERP.*
+ for testing a classic workflow from product sales to purchase,
+ completing your guided tour and your getting familiar with OpenERP.*
 
-A database loaded with demonstration data is very useful for understanding OpenERP's general
+A database loaded with demonstration data is very useful to understand OpenERP's general
 capabilities. But to explore OpenERP through a lens of your own company's needs, you should start
 with an empty database. You will work in this chapter on a minimal database containing no
-demonstration data, so that there is no confusion about what you created. And you will keep the
-database you have created, so that you can build on it throughout the rest of this book
+demonstration data, so that there is no confusion about what you created. You will keep the
+database you have created, to allow you to build on it throughout the rest of this book
 if you want to.
 
 You will develop a real case through the following phases:
 
-	#. Specify a real case.
+	#. Specify a real case;
 
-	#. Describe the functional needs.
+	#. Describe the functional needs;
 
-	#. Configure the system with the essential modules.
+	#. Configure the system with the essential modules;
 
-	#. Carry out the necessary data loading.
+	#. Carry out the necessary data loading;
 
 	#. Test the system with your database.
 
-The case is deliberately extremely simple to provide you with a foundation for the more complex
-situations you will handle in reality. Throughout this chapter it is assumed that you are accessing
-OpenERP through its web interface. And it is also assumed (as in the rest of this book) that
-you are using the latest download of OpenERP version 6,
-the stable production version at the time of writing
-(not the trunk version, which is likely to have new and potentially unstable features).
+The case is deliberately simple to provide you with a foundation for the more complex
+situations you might have to handle in your company. Throughout this chapter, we assume that you access OpenERP through its web interface. And it is also assumed (as in the rest of this book) that you are using the latest download of OpenERP version 6, the stable production version at the time of writing (not the trunk version, which is likely to have new and potentially unstable features).
 
 .. raw:: html
 
