@@ -83,7 +83,20 @@ Then click :guilabel:`Create` to create the database and move to the setup scree
 After a short delay you are connected to the new \ ``openerp_ch03``\   database as user \ ``admin`` \
 with the password you gave it. You will have to go through the Setup wizard in steps. You have two options:
 
-1. When you click the button `Skip Configuration Wizards`, you can have the screen as shown in screenshot :ref:`fig-oech03st`. Then you
+1. If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
+Then OpenERP helps you to install various applications with different functionalities through the following wizard as shown in figure :ref:`fig-oech03cfg` :
+
+.. _fig-oech03cfg:
+
+.. figure::  images/openerp_ch03_config.png
+   :scale: 75
+   :align: center
+
+   *Configuring a database with other applications and functionality when you select Extended view option*
+
+- OR -
+
+2. When you click the button `Skip Configuration Wizards`, you can have the screen as shown in screenshot :ref:`fig-oech03st`. Then you
 can start working with this minimal database (we will not use this option here).
 
 .. _fig-oech03st:
@@ -94,24 +107,11 @@ can start working with this minimal database (we will not use this option here).
 
    *Starting the minimal database*
 
-2. If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
-Then OpenERP helps you to install various applications
-with different functionalities through the following wizard as shown in figure :ref:`fig-oech03cfg` :
-
-.. _fig-oech03cfg:
-
-.. figure::  images/openerp_ch03_config.png
-   :scale: 75
-   :align: center
-
-   *Configuring a database with other applications and functionality when you select Extended view option*
-
-
 
 Fit your Needs
 ==============
 
-All of the functional needs are provided by core modules from OpenERP. You just have to decide which functionality
+Functional needs can be provided by core modules from OpenERP. You just have to decide which functionality
 you want in your system. Click the `Check Box` of the corresponding application in the :ref:`fig-oech03cfsimp`.
 
 .. index::
@@ -131,7 +131,7 @@ For this instance, we need the following applications:
 
 * Sales Management (the :mod:`sale` module).
 
-For that, the configuration wizard should look like this:
+To get OpenERP to install these business applications, the Configuration Wizard should look as follows:
 
 .. _fig-oech03cfsimp:
 
@@ -139,10 +139,9 @@ For that, the configuration wizard should look like this:
    :scale: 75
    :align: center
 
-   *Configuration wizard used to install the required applications when you select the Simplified view option*
+   *Configuration Wizard with the Simplified view option*
 
-:guilabel:`Skip` the step that asks you to :guilabel:`Configure Your Accounting Chart`.
-After you follow through the complete wizard, you can have a system that can perform all the required functionality.
+:guilabel:`Skip` the step that asks you to configure your Accounting Chart. OpenERP will now display the opening screen with all selected business applications installed.
 
 .. _fig-oech03cfgexample:
 
