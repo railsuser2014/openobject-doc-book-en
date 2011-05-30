@@ -1,7 +1,7 @@
 Business Example
 ================
 
-Configure a system that enables you to:
+In this example, you will configure a system that enables you to:
 
 * buy products from a supplier,
 
@@ -15,19 +15,19 @@ customers.
 Basic Settings
 ==============
 
-For working out the business case you will have to model:
+For this business case, you will have to model:
 
-* the suppliers,
+* the suppliers and a supplier category,
 
-* the customers,
+* the customers and a customer category,
 
-* some products,
+* some products and a product category,
 
-* inventory for dispatch,
+* an inventory,
 
 * a purchase order,
 
-* a sale order,
+* a sales order,
 
 * invoices,
 
@@ -36,8 +36,8 @@ For working out the business case you will have to model:
 To test the system, you will need at least one supplier, one customer, one product, a warehouse, a
 minimal chart of accounts and a bank account.
 
-Get your Database Up and Running with Demo Data
-===============================================
+Get your Database Up and Running without Demo Data
+==================================================
 
 Use the technique outlined in :ref:`sect-dbcreate` to create a new database, \ ``openerp_ch03``\  . This
 database will be free of data and contain the least possible amount of functionality as a starting
@@ -81,10 +81,10 @@ Then click :guilabel:`Create` to create the database and move to the setup scree
    *Setting up a blank database - first screen*
 
 After a short delay you are connected to the new \ ``openerp_ch03``\   database as user \ ``admin`` \
-with the password you gave it. You will have to go through the Setup wizard in steps:
+with the password you gave it. You will have to go through the Setup wizard in steps. You have two options:
 
-When you click on the button `Skip Configuration Wizards`, you can have the following screen. Then you
-can start working with this minimal database.
+1. When you click the button `Skip Configuration Wizards`, you can have the screen as shown in screenshot :ref:`fig-oech03st`. Then you
+can start working with this minimal database (we will not use this option here).
 
 .. _fig-oech03st:
 
@@ -94,9 +94,9 @@ can start working with this minimal database.
 
    *Starting the minimal database*
 
-If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
+2. If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
 Then OpenERP helps you to install various applications
-with different functionalities through the following wizard:
+with different functionalities through the following wizard as shown in figure :ref:`fig-oech03cfg` :
 
 .. _fig-oech03cfg:
 
@@ -111,8 +111,8 @@ with different functionalities through the following wizard:
 Fit your Needs
 ==============
 
-All of the functional needs are provided by core modules from OpenERP. You need to just decide which functionality
-you want in your system. Click on the `Check Box` of the corresponding application in the wizard :ref:`fig-oech03cfsimp`.
+All of the functional needs are provided by core modules from OpenERP. You just have to decide which functionality
+you want in your system. Click the `Check Box` of the corresponding application in the :ref:`fig-oech03cfsimp`.
 
 .. index::
    single: module; product
@@ -131,7 +131,7 @@ For this instance, we need the following applications:
 
 * Sales Management (the :mod:`sale` module).
 
-For that, the configuration wizard should be like this:
+For that, the configuration wizard should look like this:
 
 .. _fig-oech03cfsimp:
 
@@ -152,7 +152,7 @@ After you follow through the complete wizard, you can have a system that can per
 
    *Database with all required functionality for this example*
 
-If you want to reconfigure your system, then click on the `Reconfigure` link that appears in the header of :ref:`fig-oech03cfgexample`.
+If you want to reconfigure your system, then click the `Reconfigure` link that appears in the header of :ref:`fig-oech03cfgexample`.
 
 
 .. Copyright © Open Object Press. All rights reserved.
