@@ -324,6 +324,8 @@ and click on each category in turn to see the companies in the category.
    single: product
    pair: product; category
 
+.. _log-product:
+
 Creating Products and their Categories
 --------------------------------------
 
