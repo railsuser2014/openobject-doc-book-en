@@ -42,7 +42,7 @@ When re-invoicing based on costs you would get the following workflow:
    If you want several analysis plans, you should install the module :mod:`purchase_analytic_plans`.
    These let you split a line on a supplier purchase order into several accounts and analytic
    plans.
-   Look back at :ref:`ch-accts` for more information on the use of analytic accounts.
+   Look at :ref:`ch-accts` for more information on the use of analytic accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 
