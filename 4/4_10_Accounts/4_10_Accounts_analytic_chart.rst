@@ -23,7 +23,7 @@ So the objective is to examine the costs, sales and margins by department and by
 level of the structure comprises the different departments, and the lower levels represent the
 product ranges that the company makes and sells.
 
-	.. note::  Analytic Chart of Accounts for an Industrial Manufacturing Company
+.. note::  Analytic Chart of Accounts for an Industrial Manufacturing Company
 
 		#. Marketing Department
 
@@ -141,7 +141,7 @@ the employee's salary.
 So a law firm will opt for an analytic representation which reflects the management of the time that
 employees work on the different client cases.
 
-	.. note::  *Example Representation of an Analytic Chart of Accounts for a Law Firm*
+.. note::  *Example Representation of an Analytic Chart of Accounts for a Law Firm*
 
 		#. Absences
 
@@ -238,7 +238,7 @@ Most IT service companies face the following problems:
 To deal with these problems, you would use an analytic chart of accounts structured by project and by
 contract. A representation of that is given in the following example:
 
-	.. note::  *Example Analytic Representation of a Chart of Accounts for an IT Services Company*
+.. note::  *Example Analytic Representation of a Chart of Accounts for an IT Services Company*
 
 		#. Internal Projects
 
