@@ -586,7 +586,7 @@ Destination Locations.
 
 A pull flow is related to how the procurement process runs in order to find products to increase or decrease inventory.
 
-
+.. _log-methods:
 
 Procurement Methods – Make to Stock and Make to Order
 -----------------------------------------------------
