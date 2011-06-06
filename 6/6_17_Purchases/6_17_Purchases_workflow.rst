@@ -33,10 +33,7 @@ Price Request from the Supplier
 
 To enter data for a new supplier price request, use the menu :menuselection:`Purchases --> Purchase Management -->
 Request for Quotation`. On clicking :guilabel:`New`, OpenERP opens a blank request for quotation
-form that you use for requesting prices from a
-supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement
-created by OpenERP, you will find a reference to the document that
-generated the request in the :guilabel:`Origin` field.
+form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
 
 .. _fig-pfrm:
 
@@ -44,7 +41,7 @@ generated the request in the :guilabel:`Origin` field.
    :scale: 75
    :align: center
 
-   *Data entry for a supplier order*
+   *Data Entry for a Purchase Order*
 
 .. index::
    single: module; warning
@@ -55,7 +52,7 @@ generated the request in the :guilabel:`Origin` field.
    purchaser enters a price request or order. You can set alerts on the product and on the supplier.
 
 The internal reference, the date, and the warehouse that the products should be delivered to are
-completed automatically by OpenERP but you can change these values if you need. Next, when you select a
+completed automatically by OpenERP, but you can change these values if needed. Next, when you select a
 supplier, OpenERP automatically completes the contact
 address for the supplier. The pricelist is also automatically completed. This should
 bring in all of the conditions that you have negotiated with the supplier for a given period.
@@ -73,26 +70,26 @@ Once the main body of the purchase order has been completed, you can enter the p
    :scale: 75
    :align: center
 
-   *Order line on a supplier order*
+   *Purchase Order Line*
 
-When you have selected the product, OpenERP automatically completes the other fields on the form:
+When you have selected the product, OpenERP automatically completes the other fields in the form:
 
-* :guilabel:`Product UoM`, taken from the :guilabel:`Purchase Unit of Measure` field on the product form,
+* :guilabel:`Product UoM`, taken from the :guilabel:`Purchase Unit of Measure` field in the product form,
 
 * The :guilabel:`Description` of the product in the supplier's language,
 
-* :guilabel:`Scheduled Date`, calculated from the order date and the lead time
+* :guilabel:`Scheduled Date`, calculated from the order date and the lead time,
 
-* :guilabel:`Unit Price`, provided by the supplier pricelist,
+* :guilabel:`Unit Price`, taken from the supplier's pricelist,
 
 * :guilabel:`Taxes`, taken from the information on the product form and partner form,
   depending on the rules seen in :ref:`Financial Analysis <ch-financial>`.
 
 .. tip:: Product Wording and Code
 
-   When you enter supplier names on the product form, you can set a name and a product code for each
+   When you enter supplier names in the product form, you can set a name and a product code for each
    individual supplier.
-   If you do that, OpenERP will then use those details in place of your own internal product names
+   If you do that, OpenERP will then use those details instead of your own internal product names
    for that selected supplier.
 
 If you work with management by case, you can also set the analytic account that should be used to
@@ -114,9 +111,9 @@ invoice.
    single: module; account_analytic_default
    single: module; purchase_analytic_plans
 
-So that the analytic account is automatically selected as a function of the partner, the date, the
+To make sure that the analytic account is automatically selected according to the partner, the date, the
 products or the user, you can install the module :mod:`account_analytic_default` (which is installed
-automatically as a dependency of :mod:`purchase_analytic_plans`, since the latter depends on it).
+automatically as a dependency of :mod:`purchase_analytic_plans`).
 
 In the :guilabel:`Notes` tab of the product line, you can enter a note that will be attached when the order
 confirmation or price quotation is printed. This note can be predefined on the product form to
@@ -130,7 +127,7 @@ the supplier. You can set a note for the attention of the supplier in the form's
    :scale: 75
    :align: center
 
-   *Printing the supplier price quotation*
+   *Printing the Supplier Price Quotation*
 
 Then leave the document in the ``Request for Quotation`` state. When you receive a response from the supplier, use the menu
 :menuselection:`Purchases --> Purchase Management --> Requests for Quotation`. Select the
@@ -144,7 +141,7 @@ No further changes are possible.
    :scale: 75
    :align: center
 
-   *Supplier order process*
+   *Purchase Order Process*
 
 Goods Receipt
 -------------
@@ -162,7 +159,7 @@ Select the document that corresponds to the item that you are receiving. Usually
 note is found by making a search on the order reference or the supplier name. You can then confirm
 the receipt of the products.
 
-As you saw in :ref:`ch-stocks`, if you receive only part of the order, OpenERP
+As described in :ref:`ch-stocks`, if you receive only part of the order, OpenERP
 manages the remainder of that order.
 A second receipt note is then automatically created for the goods not received.
 You can cancel it if you think that you will never receive the remaining products.
@@ -174,7 +171,7 @@ receipt and invoicing if you return to the list of orders.
    :scale: 75
    :align: center
 
-   *List of open orders, and their receipt and invoice status*
+   *List of Open Orders, and their Receipt and Invoice Status*
 
 Control of Invoicing
 --------------------
@@ -195,7 +192,7 @@ The mode of invoicing control is set in the second tab of the purchase order in 
    :scale: 75
    :align: center
 
-   *Supplier order, invoice control*
+   *Purchase Order, Invoice Control*
 
 .. tip:: Default Value
 
@@ -216,8 +213,7 @@ generated by the system. Do not forget to check the price and the quantities. Wh
 confirmed, the accounting entries represent the cost of purchase and are automatically entered into
 the system.
 
-The supplier order is then automatically set as ``Paid`` when you pay the supplier
-invoice.
+The supplier order is automatically set as ``Paid`` when you pay the supplier invoice.
 
 This method of controlling invoices is often used in service companies, because the invoiced amounts
 correspond to the ordered amounts. In logistics, by contrast, you most often work with invoicing
@@ -242,7 +238,7 @@ Usually, invoices are sent by post some days later. In this case, the storespers
 unchanged without generating an invoice. Then, once per day or once per week the accountant will
 create the draft invoices based on all the receipts for the day. To do that, he uses the menu
 :menuselection:`Purchases --> Invoice Control --> Purchase Lines Not Invoiced`. 
-He clicks on the action :guilabel:`Create invoices` to generate all draft invoices from
+He clicks the action :guilabel:`Create invoices` to generate all draft invoices from
 the list of receipts that have not yet been invoiced.
 
 .. index::
@@ -285,7 +281,7 @@ a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases -
    :scale: 75
    :align: center
 
-   *Defining a tender*
+   *Defining a Tender*
 
 To enter data for a new tender, use the menu :menuselection:`Purchases --> Purchase Management -->
 Purchase Requisitions` and select :guilabel:`New`. OpenERP then opens a new blank tender form. The reference number
@@ -297,7 +293,7 @@ If you want to revise a supplier price in response to negotiations, edit any
 appropriate purchase order that you have left in the draft state and link that to the tender. 
 
 When one of the orders about a tender is confirmed, all of the other orders are automatically
-cancelled by OpenERP. That enables you to accept just one order for a particular tender.
+cancelled by OpenERP if you selected the Purchase Requisition (exclusive) type. That enables you to accept just one order for a particular tender. If you select Multiple requisitions, you can approve several purchase orders without cancelling other orders from this tender.
 
 Price Revisions
 ---------------
@@ -390,7 +386,7 @@ delivery to the various received products, for example.
    :scale: 75
    :align: center
 
-   *Goods receipt of products managed in weighted average*
+   *Goods Receipt of Products managed in Weighted Average*
 
 Once the receipt has been confirmed, the price is automatically recalculated and entered on the
 product form.
