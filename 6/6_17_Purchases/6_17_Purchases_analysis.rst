@@ -11,13 +11,13 @@ Elementary Statistics
 OpenERP enables you to perform analysis of purchases by period (current year, current month,
 previous month), by state (quotations, orders), supplier, user, product, category, warehouse
 and so on. This is made possible through a search view accessed through the
-menu :menuselection:`Purchases --> Reporting --> Purchase Analysis`
+menu :menuselection:`Purchases --> Reporting --> Purchase Analysis`.
 
 .. figure:: images/purchase_report.png
    :scale: 75
    :align: center
 
-   *Analysis of purchases over the month by product*
+   *Analysis of Purchases over the Month by Product*
 
 This analysis is carried out on supplier orders and not on invoices or the quantities actually
 received. To get an analysis by product, use the module :mod:`product_margin`. The function of this
