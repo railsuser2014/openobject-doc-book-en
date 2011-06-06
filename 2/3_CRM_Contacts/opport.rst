@@ -143,7 +143,7 @@ As an example, to track your opportunities, you can assign the following stages 
     * Identify what the prospect wants to achieve,
     * Identify the decision-maker.
 
-3. Proposition – Discuss some solutions to determine the customer’s preferences, recommend specific solutions to anwers the customer's needs.
+3. Proposition – Discuss some solutions to determine the customer’s preferences, recommend specific solutions to answer the customer's needs.
 
    What is the expected result?
     * Demo and/or Proposal given,
