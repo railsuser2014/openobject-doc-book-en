@@ -161,8 +161,8 @@ Next, various operations can be applied to the basic price to calculate the sale
 for the partner, according to the specified quantities. To calculate it, you apply the formula shown on the
 form: ``Price = Base Price x (1 + Field1) + Field2`` .
 
-The first field, :guilabel:`Field1`, defines a discount. Set it to 0.20 for a discount of 20% from
-the basic price. If your price is based on standard cost, you can set -0.15 to get a 15% price uplift
+The first field, :guilabel:`Field1`, defines a discount or a supplement. Set it to -0.20 for a discount of 20% from
+the basic price. If your price is based on standard cost, you can set 0.15 to get a 15% price uplift
 compared to the standard costs.
 
 :guilabel:`Field2` sets a fixed supplement to the price, expressed in the currency of the pricelist.
