@@ -308,7 +308,7 @@ Take the case of a trading company, where the sales price for resellers can be d
 
                 *  :guilabel:`Pricelist if other` : \ ``Acclo pricelist``\  ,
 
-                *  :guilabel:`Field1` : \ ``-0.23``\  ,
+                *  :guilabel:`Field1` : \ ``0.23``\  ,
 
                 *  :guilabel:`Priority` : \ ``1``\  .
 
@@ -328,7 +328,7 @@ Take the case of a trading company, where the sales price for resellers can be d
 
                 *  :guilabel:`Based on:` \ ``Standard Price``\  ,
 
-                *  :guilabel:`Field1` : \ ``-0.31``\  ,
+                *  :guilabel:`Field1` : \ ``0.31``\  ,
 
                 *  :guilabel:`Field2` : \ ``-0.01``\  ,
 
