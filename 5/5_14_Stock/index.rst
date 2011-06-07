@@ -83,7 +83,7 @@ In this chapter, the following modules will be used:
    :mod:`delivery`                      to define delivery methods and costs
    :mod:`account_anglo_saxon`           to illustrate the valuation according to the anglo-saxon principles
    :mod:`sale_journal`                  to handle stock by journal
-   :mod:`mrp_jit`                       to illustrate the just-in-time functionnality
+   :mod:`mrp_jit`                       to illustrate the just-in-time functionality
    :mod:`sale_supplier_direct_delivery` to directly deliver the product from the supplier to the customer
    ==================================== ===================================================================
 
