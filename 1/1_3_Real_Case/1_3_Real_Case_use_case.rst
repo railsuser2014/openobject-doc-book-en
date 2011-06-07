@@ -84,7 +84,7 @@ After a short delay you are connected to the new \ ``openerp_ch03``\   database 
 with the password you gave it. You will have to go through the Setup wizard in steps. You have two options:
 
 1. If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
-Then OpenERP helps you to install various applications with different functionalities through the following wizard as shown in figure :ref:`fig-oech03cfg` :
+Then OpenERP helps you to install various applications with different functionality through the following wizard as shown in figure :ref:`fig-oech03cfg` :
 
 .. _fig-oech03cfg:
 

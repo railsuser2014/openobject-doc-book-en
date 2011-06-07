@@ -397,7 +397,7 @@ Keep track of your Cash Moves by using the new OpenERP Cash Box.
 Lead & Inspire your People
 ==========================
 
-OpenERP's Human Resources Management Business Application provides functionalities such as:
+OpenERP's Human Resources Management Business Application provides functionality such as:
 
 * Manage your Employees, Contracts & Staff Performance,
 
