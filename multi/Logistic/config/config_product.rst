@@ -4,26 +4,25 @@ Product
 Definition
 ^^^^^^^^^^
 
-Now that we have define the different actors, we can define our product that will be stored in Belgium and proposed to sell in
-France. Go to :menuselection:`Sales --> Products --> Products` and create a new one with the following specifications:
+Now that we have defined the different actors, we can define our product that will be stored in Belgium and proposed to sell in
+France. Go to :menuselection:`Sales --> Products --> Products` and create a new product with the following specifications:
 
 .. figure:: images/product.png
    :scale: 75
    :align: center
    
-   *Product definition*
+   *Defining Products*
    
-In the tab ``Suppliers``, you can select your supplier defined above. In the tab ``Logistical Flows``, we will define 
-the different flows in order to share the different objects between the companies. In order to order the 
-product in Belgium from a sale order made in France, we will define a `Pull flow`.
+In the ``Suppliers`` tab, you can select the supplier defined above. In the tab ``Logistical Flows``, we will define 
+the different flows in order to share the different objects between the companies. To order the product in Belgium from a sales order made in France, we will define a `Pull flow`.
 
 Flows
 ^^^^^
 
-In our process, we have to create a pull flow because the process begins by a need of OpenERP France. OpenERP France needs some 
+In our process, we have to create a pull flow, because the process begins with a need from OpenERP France. OpenERP France needs some 
 products ordered by the customers.
 
-The flow will go through our two child companies. The starting point is in OpenERP Belgium that will supply OpenERP France to 
+The flow will go through our two child companies. The starting point is OpenERP Belgium that will supply OpenERP France that will 
 supply the goods to the customer.
 
 We can draw the process like this: Customer <-- [OpenERP France] <-- [OpenERP Belgium] <-- Supplier
@@ -32,7 +31,7 @@ We can draw the process like this: Customer <-- [OpenERP France] <-- [OpenERP Be
    :scale: 75
    :align: center
    
-   *Pull flow definition*
+   *Pull Flow Definition*
 
 
 
