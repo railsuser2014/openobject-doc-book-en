@@ -5,9 +5,8 @@
 Multi-Company Environment
 #########################
 
-This part of the book concentrates on the multi-company environment of OpenERP. From the sixth version of OpenERP, you do not have to
-install any additional modules to enable the multi-company environment. All components are included in the base
-modules.
+This part of the book concentrates on the multi-company environment of OpenERP. From version 6.0 of OpenERP, you do not have to
+install any additional modules to enable the multi-company environment. All components are included in the base modules. All you have to do to work in a multi-company environment, is add the Useability/Multi-Companies group to your user.
 
 The multi-company environment allows you to manage operations from different companies with different warehouses, customers and suppliers, products, ...
 
@@ -20,7 +19,7 @@ In order to achieve this, we will follow the schema define hereunder.
    :scale: 100
    :align: center
    
-   *Flow schema*
+   *Flow Schema*
 
 To be able to manage the process, please install the following modules:
 	* :mod:`sale`
