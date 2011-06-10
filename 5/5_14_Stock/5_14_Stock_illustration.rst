@@ -84,7 +84,7 @@ probably because someone has forgotten to enter a customer's invoice payment. Yo
 sum of debits must equal the sum of the credits in both accounting and OpenERP's stock management.
 
 In accounting, all documents lead to accounting entries that form the basis of management
-accounting. If you create invoices or code in statements of account, for example, the results of the
+accounting. If you create invoices or enter statements of account, for example, the results of the
 operations are accounting entries on accounts. And it is the same for stock management in OpenERP.
 All stock operations are carried out as simple stock moves. Whether you pack items, or manufacture
 them, or carry out a stock inventory operation, stock moves are carried out every time.
@@ -98,7 +98,7 @@ when you compare the stock shown in software with real stock numbers counted in 
    single: Stock; Stock check
 
 In OpenERP, with its double-entry stock management, you would use stock moves for this inventory
-operation. That helps you manage your stock traceability. Suppose there are 26 bicycles in real stock but
+operation. That helps you manage your stock traceability. Suppose there are 26 bicycles in real stock, but
 OpenERP shows 28 in the system. You then have to reduce the number in OpenERP to 26. This
 reduction of 2 units is considered as a loss or destruction of products and the correction is
 carried out as in the following operation:
