@@ -1,4 +1,4 @@
-Companies structure
+Companies Structure
 -------------------
 
 Companies
@@ -6,30 +6,30 @@ Companies
 
 Three companies have to be defined. One mother company (OpenERP) and two children (OpenERP Belgium and OpenERP France). 
 
-On one hand, the two child companies will be used to support the flow of goods. On the other hand, the mother company 
+On the one hand, the two child companies will be used to support the flow of goods. On the other hand, the mother company 
 will be used to aggregate the different information from OpenERP France and OpenERP Belgium.
 
 .. figure:: images/company_structure.png
    :scale: 75
    :align: center
    
-   *Companies structure*
+   *Companies Structure*
    
-.. tip::
+.. tip:: User Group
 
 	To view the companies' structure, you have to add the group  :guilabel:`Useability/Multi Companies` to your user. 
    
-Here are the different configurations for the mother and the children companies (for the children companies, do not 
+Here are the different configurations for the mother and the child companies (for the child companies, do not 
 forget to add a parent company):
 
 .. figure:: images/child_company.png
    :scale: 75
    :align: center
    
-   *Companies configuration*
+   *Companies Configuration*
    
-Accounting charts
-^^^^^^^^^^^^^^^^^
+Charts of Accounts
+^^^^^^^^^^^^^^^^^^
 
 For each company, you have to define an accounting setting. To do this, go to the :menuselection:`Accounting --> 
 Configuration --> Financial Accounting --> New company Financial Setting`. 
@@ -38,20 +38,20 @@ Configuration --> Financial Accounting --> New company Financial Setting`.
    :scale: 75
    :align: center
    
-   *Creating accounting charts*
+   *Creating Charts of Accounts*
 
-.. note:: Accounting plan
+.. note:: Accounting Plan
 
-	Each of your companies can have a specific accounting plan.
+	Each of your companies can have its own specific chart of accounts.
 
-Users, suppliers & customers
+Users, Suppliers & Customers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The users are used to log in into the system and to give the appropriate right access to each person. This concept is different 
+The users are used to log in to the system and to give the appropriate access rights to each person. This concept is different 
 from the employee who is created through the Human Resources module.
 
-Each company needs an user in order to manage the different operations to complete the flow. You can create one user for each 
-company without forgetting to select the appropriate company in the ``Contact`` section in the User form after have added the 
+Each company needs a user to manage the different operations to complete the flow. You can create one user for each 
+company, but do not forget to select the appropriate company in the ``Contact`` section of the User form after have added the 
 company in the ``Companies`` tab.
 
 
@@ -59,34 +59,34 @@ company in the ``Companies`` tab.
    :scale: 50
    :align: center
    
-   *User definition*
+   *Defining Users part 1*
    
 .. figure:: images/user_2tab.png
    :scale: 75
    :align: center
    
-   *User definition*
+   *Defining Users part 2*
 
-In addition to the user, the companies need suppliers and customers. For OpenERP France, you can define one customer  who will 
-order the product that will be defined after, and for OpenERP Belgium, you can define one supplier who will deliver the product to 
+In addition to the user, the companies need suppliers and customers. For OpenERP France, you can define one customer who will 
+order the product that will be defined later, and for OpenERP Belgium, you can define one supplier who will deliver the product to 
 the company.
 
 The customers and suppliers go in the same object called `Partners` which can be classified in three ways: customer, supplier and
-customer and supplier.
+customer and supplier. This has the advantage that you have to update address data only once.
 
-	* Customer: log in with the user of OpenERP France, then go to :menuselection:`Sales --> Address Book --> Customer`
+	* Customer: log in with the user of OpenERP France, then go to :menuselection:`Sales --> Address Book --> Customers`
 	
 .. figure:: images/customer_1tab.png
    :scale: 75
    :align: center
    
-   *Customer definition*
+   *Defining Customers part 1*
 
 .. figure:: images/customer_2tab.png
    :scale: 75
    :align: center
    
-   *Customer definition*
+   *Defining Customers part 2*
    
 	* Supplier: log in with the user of OpenERP Belgium, then go to :menuselection:`Purchases --> Address Book --> Suppliers`
 
@@ -94,13 +94,13 @@ customer and supplier.
    :scale: 75
    :align: center
    
-   *Supplier definition*
+   *Defining Suppliers part 1*
 
 .. figure:: images/supplier_2tab.png
    :scale: 75
    :align: center
    
-   *Supplier definition*
+   *Defining Suppliers part 2*
    
 
 

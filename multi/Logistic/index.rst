@@ -3,9 +3,9 @@
 
 .. _ch-multilogistic:
 
-#####################################
-Logistic in Multi Company environment
-#####################################
+########################################
+Logistics in a Multi-Company Environment
+########################################
 
 
 .. toctree::

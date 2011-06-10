@@ -1,11 +1,11 @@
 Configuration
 =============
 
-Let us start by the configuration of the different components that we need. In the next sections, we will define:
+Let us start by configuring the different components we need. In the next sections, we will define:
 
 	* The companies' structure
 		* Companies
-		* Accounting charts
+		* Charts of Accounts
 		* Storage
 		
 	* Users, suppliers & customers
