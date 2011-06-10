@@ -1,30 +1,29 @@
-Sale Order
-----------
+Sales Order
+-----------
 
-At this point, you have to log in with a user of OpenERP France in order to make a Sale Order coming from a customer 
+At this point, you have to log in with a user of OpenERP France in order to make a Sales Order coming from a customer 
 of this company.
 
 .. figure:: images/sales_order_1tab.png
    :scale: 75
    :align: center
    
-   *Sale Order definition*
+   *Defining a Sales Order*
 
 You should not forget to set the correct parameters in the second tab `Other Information` to select the good shipping 
 and picking policies. Here we select the `Invoice From the Picking` as ``Shipping Policy``. 
 
-Now the Sale Order is confirmed, you have to run the `Scheduler` (:menuselection:`Warehouses --> Schedulers --> Compute 
+Confirm the Sales Order, then run the `Scheduler` (:menuselection:`Warehouses --> Schedulers --> Compute 
 Schedulers`) and run the Procurement from each company (OpenERP France, OpenERP and OpenERP Belgium).
 
 At this time, a `Purchase Order` and a `Delivery Order` have been generated. The Purchase Order is in the ``Request For 
-Quotation`` state and you have to convert it into a Purchase Order. The Delivery Order is in ``Not Available`` state because 
-you have to buy the products before.
+Quotation`` state and you have to convert it into a Purchase Order to confirm the purchase. The Delivery Order is in ``Not Available`` state because you have to buy the products before delivery.
 
 .. figure:: images/request_quotation.png
    :scale: 75
    :align: center
    
-   *Sale Order definition*
+   *Purchase Order*
 
 Once the purchase order has been confirmed and the reception is completed, we can process the delivery order.
 
@@ -33,31 +32,31 @@ Delivery Order
 Once the delivery order is processed, the products are sent to the customer and we can invoice the order from OpenERP 
 France on the delivered quantities.
 
-The delivery order will be processed from OpenERP Belgium. OpenERP Belgium is the company that manage the stock of products. 
+The delivery order will be processed from OpenERP Belgium. OpenERP Belgium is the company that manages the stock of products. 
 This company is responsible for the delivery of the products to the final customers. However, the invoicing process will be 
-handled by OpenERP France because it is the company that received the order from the customer.
+handled by OpenERP France, because it is the company that received the order from the customer.
 
 .. figure:: images/delivery_order.png
    :scale: 75
    :align: center
    
-   *Deliver the products*
+   *Deliver the Products*
    
 From the user of OpenERP France, we can create the invoice for the order (:menuselection:`Sales --> Invoicing --> Lines 
-to Invoice`) to pass the invoice from the Draft state to the Open state. To finalize the invoicing process, you have to 
+to Invoice`), then pass the invoice from the Draft state to the Open state. To finalize the invoicing process, you have to 
 go to :menuselection:`Accounting --> Customers --> Customers Invoices` to execute the payment process.
 
 .. figure:: images/delivery_order_fr.png
    :scale: 75
    :align: center
    
-   *Create the invoice*
+   *Create the Invoice*
    
 .. figure:: images/customer_invoice.png
    :scale: 75
    :align: center
    
-   *Validate the invoice*
+   *Validate the Invoice*
 
 
 

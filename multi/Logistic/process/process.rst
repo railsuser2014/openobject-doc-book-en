@@ -1,11 +1,11 @@
-Process: Sales and purchase
-===========================
+Process: Sales and Purchases
+============================
 
 At this point, we have defined everything that we need, we can now execute the process.
 
-The following example will be structured as follow: 
+The following example will be structured as follows: 
 
-First, we will make a sale order for one unit of our product (Basic PC) in the company 
+First, we will make a sales order for one unit of our product (Basic PC) in the company 
 OpenERP France for the customer NotSoTiny. Then this will be sent to the company OpenERP 
 Belgium that stocks the Basic PCs. An order of one unit will be sent to OpenERP Belgium 
 from OpenERP France. OpenERP will purchase the product from its supplier (in this case, 
