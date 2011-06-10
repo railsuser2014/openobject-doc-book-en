@@ -1,13 +1,13 @@
-Managing stock movements
+Managing Stock Movements
 ========================
 
-Reception of the goods
+Reception of the Goods
 ----------------------
 
 In OpenERP, you have the choice between three ways to receive goods from suppliers. 
 
 The first method is to manually enter the information in the incoming shipment. To receive the products
-by this method, you have to go to :guilabel:`Incoming Shipments` section in the :guilabel:`Warehouse 
+through this method, you have to go to :guilabel:`Incoming Shipments` section in the :guilabel:`Warehouse 
 Management` submenu, click on New and then you enter the information about the reception.
 
 .. figure:: images/stock_getting.png

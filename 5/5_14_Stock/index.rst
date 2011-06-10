@@ -68,7 +68,7 @@ installed (:menuselection:`Warehouse --> Warehouse Management --> Locations`).
     counterparts.
 
 For this chapter you can continue using the database with demo data from a previous chapter or start with a fresh database that includes demo data,
-with Warehouse Management and its dependencies installed and no particular chart of accounts configured.
+with Warehouse Management and its dependencies installed and any chart of accounts configured.
 
 In this chapter, the following modules will be used:
 
