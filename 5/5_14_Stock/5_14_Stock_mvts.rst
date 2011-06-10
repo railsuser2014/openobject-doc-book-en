@@ -8,7 +8,7 @@ In OpenERP, you have the choice between three ways to receive goods from supplie
 
 The first method is to manually enter the information in the incoming shipment. To receive the products
 through this method, you have to go to :guilabel:`Incoming Shipments` section in the :guilabel:`Warehouse 
-Management` submenu, click on New and then you enter the information about the reception.
+Management` submenu, click New and then you enter the information about the receipt.
 
 .. figure:: images/stock_getting.png
 	:scale: 75
@@ -18,11 +18,11 @@ Management` submenu, click on New and then you enter the information about the r
 
 The second method is to receive products from a generated incoming shipment. To achieve the reception 
 using this method, you have to go to :guilabel:`Incoming Shipments` section in the :guilabel:`Warehouse 
-Management` submenu. You will find there the list of waiting incoming shipments.
+Management` submenu. You will find the list of waiting incoming shipments.
 
 The third method is to receive products by waiting products without looking at the shipment document.
 You can validate the reception by products in :guilabel:`Receive Products` section in the :guilabel:`
-Product Moves` submenu. With this method, you will be able to receive one product regardless the
+Product Moves` submenu. With this method, you will be able to receive one product, regardless of the
 document which is attached to this product.
 
 
@@ -43,29 +43,28 @@ quantities received by referring to the quantities ordered.
    :scale: 75
    :align: center
 
-   *List of items waiting*
+   *List of Items Waiting*
 
-You can also do goods-in data entry manually if there is no order, using the same menu by clicking on `New` button.
+You can also do goods-in data entry manually if there is no order, using the same menu by clicking the `New` button.
 
-A new goods-in data entry form then opens. Enter the supplier data in the :guilabel:`Address` field
-and you can type in the reference number from your supplier in the field :guilabel:`Origin`. You
-should then enter data about the products received in the lines.
+A new goods-in data entry form opens. Enter the supplier data in the :guilabel:`Address` field
+and type the reference number from your supplier in the field :guilabel:`Origin`. You should then enter data about the products received in the lines.
 
 The source location is already completed by default because of your supplier selection. You should
 then give the destination location where you will place the products. For example, enter ``Stock``.
 At this stage, you can set a lot number for traceability (this function will be described later in
 this chapter, so leave this field empty for the moment).
 
-Once the form has been completed you can confirm the receipt of all the products at the same time
+Once the form has been completed, you can confirm the receipt of all the products at the same time
 using the :guilabel:`Process Now` button. If you want to enter data for a goods receipt that you are still
 waiting for, click the button :guilabel:`Process Later`.
 
-.. note:: Partial or Complete reception
+.. note:: Partial or Complete Reception
 
 	When you process the incoming shipment, you can choose between partial or complete.
 	
-	If you have to validate a partial incoming shipment, click on ``Process now`` and change the number of item
-	according the quantity received. 
+	If you have to validate a partial incoming shipment, click ``Process now`` and change the number of items
+	according to the quantity received. 
 	
 	.. figure:: images/product_to_process.png
 		:scale: 60
@@ -80,15 +79,15 @@ waiting for, click the button :guilabel:`Process Later`.
 		:scale: 75
 		:align: center
 		
-		*Process a partial incoming shipment*
+		*Process a Partial Incoming Shipment*
 	
-	Once the rest of the order arrived and processed, both orders will be merged.
+	Once the rest of the order has arrived and has been processed, both orders will be merged.
 
 .. figure:: images/stock_picking_in_form.png
    :scale: 75
    :align: center
 
-   *Form for entering goods received from a supplier order*
+   *Form for Entering Goods received from a Supplier Order*
 
 The products then arrive in stock and should reflect the quantities shown on the product form.
 
@@ -98,23 +97,23 @@ generated automatically in the draft state, based on the goods received. Your ac
 confirm this pre-invoicing once the supplier's invoice is received. This enables you to verify that
 the invoiced quantities correspond to the quantities received.
 
-.. tip:: Print the packing list
+.. tip:: Print the Packing List
 
 	In order to print the packing list of an incoming shipment, select the incoming shipment of which you need
-	the details and click on ``Packing List`` in the panel on the right of the screen.
+	the details and click ``Packing List`` in the panel at the right side of the screen.
 	
 	This link is available in the ``Internal Moves`` and ``Delivery Orders`` sections.
 	
 In case you received damaged or wrong products, you can return them to the supplier. In the ``Incoming shipment``
-form, click on the ``Return Products`` button. A window will open that let you choose between the invoicing
-process to follow. Once you have clicked on ``Process``, a stock move is generated with the same reference number
+form, click the ``Return Products`` button. A window will open that lets you choose the invoicing
+process to follow. Once you click ``Process``, a stock move is generated with the same reference number
 and `return` to specify that this is a return move.
 
 .. figure:: images/return_product_stock_move.png
 	:scale: 75
 	:align: center
 	
-	*Stock move for returned products*
+	*Stock Move for Returned Products*
 
 Receipt of a Supplier Order by Product
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -127,9 +126,9 @@ From this version on, you can also handle receptions by product, even from List 
 
 Filters allow you to easily select receipts to be done, and so on. One way to quickly receive products is to Group by `Supplier` and select `To Do`. 
 
-This is very useful functionality when your supplier sends the goods for several purchase orders at a time. You can now just receive the products, regardless of the purchase order they come from by simply clicking the green arrow on the right of the screen.
+This is very useful functionality when your supplier sends the goods for several purchase orders at a time. You can now just receive the products, regardless of the purchase order they come from, simply by clicking the green arrow at the right side of the screen.
 
-The List view offers great flexibility and allows you to rapidly receive products by keeping full functionality! Of course, you can handle both partial and complete receptions and you can add information about the production lots and packs.
+The List view offers great flexibility and allows you to rapidly receive products by keeping full functionality! Of course, you can handle both partial and complete receptions, and you can add information about the production lots and packs.
 
 .. figure:: images/receive_products.png
    :scale: 75
@@ -139,13 +138,10 @@ The List view offers great flexibility and allows you to rapidly receive product
 
 This can be also accomplished from Form view.
     
-Internal stock moves
+Internal Stock Moves
 --------------------
 
-.. todo:: --> Example picking zone!
-
-You should install the stock_location module (Reconfigure wizard, Advanced Routes) if routing products to
-customers, from suppliers or in your warehouse is determined by the identity of the product itself.
+You should install the :mod:`stock_location` module (from the list of modules, or through Reconfigure wizard, Advanced Routes) if routing products to customers, from suppliers or in your warehouse is determined by the identity of the product itself.
 
 .. figure:: images/product_location.png
 	:scale: 75
@@ -154,8 +150,8 @@ customers, from suppliers or in your warehouse is determined by the identity of 
 	*Managing the Paths from one Location to Another in a Product Form*
 
 This will let you configure logistics rules individually for each product. For example, when a specific product
-arrives in stores it can automatically be sent to quality control. In this case it must be configured as a Push Flow
-with rules on the product form. The fields that make up those rules are:
+arrives in stores, it can automatically be sent to quality control. In this case, it has to be configured as a Push Flow
+with rules in the Product form. The fields that make up those rules are:
 
 * **Source Location**: the rule only applies if a product comes from this location,
 * **Destination Location**: the rule only applies if a product ends up in this location,
@@ -168,12 +164,12 @@ There are two main logistic flows:
 * **Pushed Flows**
 * **Pulled Flows**
 
-Push flows are useful when the arrival of certain products in a given location should always be followed by a 
+`Push` flows are useful when the arrival of certain products in a given location should always be followed by a 
 corresponding move to another location, optionally after a certain delay. The original Warehouse application already
 supports such Push flow specifications on the Locations themselves, but these cannot be refined per product.
-Pull flows are a bit different from Push flows, in the sense that they are not related to the processing of product
+`Pull` flows are a bit different from Push flows, in the sense that they are not related to the processing of product
 moves, but rather to the processing of procurement orders. What is being pulled is a need, not directly products.
-You will now see some examples of using these locations and logistics by product by using Pushed Flows for:
+You will now see some examples of using these locations and logistics by product through Pushed Flows for:
 
 * A rentable product,
 * A product bought in China, following its freight by ship from port to port,
@@ -185,7 +181,7 @@ You can configure the system to put a given product in the Quality Control bay a
 your company. To do that, you just configure a rule for the product to be placed in the Quality Control location
 rather than the Input location when the product is received from the supplier.
 
-.. table:: Rule to move products manually from Input to Quality Control
+.. table:: Rule to Move Products manually from Input to Quality Control
 
 	==================== ================
 	Field                Value
@@ -193,14 +189,14 @@ rather than the Input location when the product is received from the supplier.
 	Source location      Stock
 	Destination location Quality Control
 	Automatic Move       Manual Operation
-	Shipping Type		 Getting Goods
+	Shipping Type        Getting Goods
 	Delay (days)         0
 	Operation            Quality Control
 	==================== ================
 
-Once this product has been received, OpenERP will then automatically manage the request for an internal movement 
+Once this product has been received, OpenERP will automatically manage the request for an internal movement 
 to send it to the Quality Control location. If you want to do this automatically without having to 
-confirm it, you can select for the ``Automatic Move`` field `Automatic Move` or `Automatic No Step Added`.
+confirm it, in the ``Automatic Move`` field, select `Automatic Move` or `Automatic No Step Added`.
 
 With the configuration described in the table above, you will have to confirm the stock move manually once you 
 have received the goods.
@@ -211,7 +207,7 @@ have received the goods.
 	
 	*Manual Stock Move to Quality Control*
 
-If you do not want to confirm the stock move manually but you want to see the move `Suppliers --> Stock` then
+If you do not want to confirm the stock move manually, but you want to see the move `Suppliers --> Stock` then
 `Stock --> Quality Control`, change the ``Automatic Move`` field and select `Automatic Move`. With this 
 configuration, you will see the two stock moves. 
 
@@ -229,30 +225,30 @@ If you select ``Automatic Move No Step Added``, you will only see one stock move
 	
 	*Automatic Stock Move to Quality Control (No Step Added)*
 
-Shipping of goods
+Shipping of Goods
 -----------------
  
-In the same way as deliver goods, you can ship goods in three different ways:
+In the same way as delivering goods, you can ship goods in three different ways:
 
 * manually enter data,
-* delivering goods according to a sale order,
-* delivery goods by products.
+* deliver goods according to a sales order,
+* deliver goods by product.
 
 .. index::
    single: Module; Sale
 
-Everything about goods receipt can also be done manually for a customer delivery. But this time, use
+Everything about goods receipt can also be done manually in the same way for a customer delivery. This time, use
 the automated product delivery processes based on customer orders. Install the :mod:`sale` module 
 (`Reconfigure` wizard, `Sales Management`), so that you can proceed further in this section of the chapter.
 
-Now create a new customer order from the menu :menuselection:`Sales --> Sales --> Sales Orders`.
+Now create a new sales order from the menu :menuselection:`Sales --> Sales --> Sales Orders`.
 Enter the following data in this order:
 
 * :guilabel:`Shop` : ``OpenERP S.A.``
 
 * :guilabel:`Customer` : ``Agrolait``
 
-* :guilabel:`Sale order lines` :
+* :guilabel:`Sales order lines` :
 
   * :guilabel:`Product` : ``[PC2] Basic+ PC (assembly on order)``,
 
@@ -262,24 +258,22 @@ Enter the following data in this order:
 
   * :guilabel:`Procurement Method` : ``from stock``.
 
-You have already seen that OpenERP shows you the available product stock when you have selected list
-mode. The real stock is equal to the virtual stock because you have nothing to deliver to customers
-and you are not waiting for any of these products to be received into stock. The salesperson then has
+You have already seen that OpenERP shows the available product stock in list view. The real stock is equal to the virtual stock because you have nothing to deliver to customers and you are not waiting for any of these products to be received into stock. The salesperson then has
 all the information needed to take orders efficiently.
 
 .. figure:: images/stock_sale_form.png
    :scale: 70
    :align: center
 
-   *Entering an order for three computers*
+   *Entering an Order for Three Computers*
 
 Then confirm the quotation to convert it to an order. If you return to the product form, you will see
-the virtual stock is now smaller than the real stock. Indeed, three products have been
-reserved by the order that you created, so they cannot be sold to another customer.
+the virtual stock is now smaller than the real stock. 
 
 Start the scheduler through the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`. Its
 functionality will be detailed in :ref:`ch-mnf`. This manages the reservation of products and places orders 
 based on the dates promised to customers, and the various internal lead times and priorities.
+Three products will be reserved in the order that you created, so they cannot be sold to another customer.
 
 .. index::
    single: Module; mrp_jit
@@ -308,13 +302,13 @@ the items proposed by OpenERP.
     An item is **Assigned** when it is available in stock and the storesperson reserves it:
     the necessary products have been reserved for this specific operation.
 
-You can also confirm a customer delivery using the :guilabel:`Confirm Order` button in the `Sales Order`.
+You can also confirm a customer delivery from a confirmed Sales Order.
 When you click the :guilabel:`Process` button of `Outgoing Deliveries`, a window opens where you can
-enter the quantities actually delivered. If you enter a value less than the forecast one, OpenERP
+enter the quantities actually delivered. If you enter a value less than the forecasted one, OpenERP
 automatically generates a partial delivery note and a new order for the remaining items. For this
 exercise, just confirm all the products.
 
-However if you want to look at a partial shipping, an example will be developed at the end of this section.
+However, if you want to look at a partial shipping, an example will be developed at the end of this section.
 
 If you return to the list of current orders, you will see that your order has now been marked as
 delivered (``Done``). A progress indicator from 0% to 100% is shown by each order so that the
@@ -331,18 +325,18 @@ salesperson can follow the progress of his orders at a glance.
 
 .. note:: Negative Stock
 
-    Stock Management is very flexible so that it can be more effective.
+    Stock Management is very flexible to be more effective.
     For example, if you forget to enter products at goods-in, this will not prevent you from sending
     them to customers.
     In OpenERP, you can force all operations manually using the button :guilabel:`Force Availability`.
-    In this case, your stocks risk becoming negative. You should monitor all stocks for negative
+    In this case, your stocks risk to become negative. You should monitor all stocks for negative
     levels and carry out an inventory correction when that happens.
 
-Partial shipping
+Partial Shipping
 ^^^^^^^^^^^^^^^^
 
-In the case of you have to process a partial delivery, you can go to :menuselection:`Warehouse --> 
-Warehouse Management --> Delivery Orders`, select the order to process it. In the new window, change
+Should you have to process a partial delivery, you can go to :menuselection:`Warehouse --> 
+Warehouse Management --> Delivery Orders`, then select the order to process it. In the new window, change
 the quantity to ship and then confirm it.
 
 If you go back to the list view, you will now see a new delivery order with a ``back order`` number
@@ -352,10 +346,10 @@ equal to the just confirmed order. This is illustrated in the following figure.
 	:scale: 100
 	:align: center
 	
-	*Partial shipping*
+	*Partial Shipping*
 
-In the stock moves, you will see that there are two moves. The first is the remaining quantities to
-ship and the second is for the shipped goods. There will be more stock moves if you process partial
+In the stock moves, you will see that there are two moves. The first move is for the remaining quantities to
+ship and the second one is for the shipped goods. There will be more stock moves if you process partial
 shipping in more than two times.
 
 .. figure:: images/stock_move_partial.png
@@ -364,13 +358,13 @@ shipping in more than two times.
 	
 	*Stock Moves in Partial Shipping*
 
-Return products from Customers
+Return Products from Customers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a customer send you back damaged or wrong delivered products, you can enter this information in OpenERP
+If a customer returns damaged or wrongly delivered products, you can enter this information in OpenERP
 via :menuselection:`Warehouse --> Warehouse Management --> Delivery Orders`. 
 
-You have to select the order related to the returned products and click on the :guilabel:`Return Products`.
+You have to select the order related to the returned products and click the :guilabel:`Return Products`.
 A new window will open and will let you choose the invoicing method.
 
 .. figure:: images/return_picking.png
@@ -386,14 +380,14 @@ When the product is returned, it will go back to your stock and you will see a s
 	:scale: 75
 	:align: center
 	
-	*Stock Move for a returned product*
+	*Stock Move for a Returned Product*
 
 Just In Time
 ^^^^^^^^^^^^
 
 By default, scheduling starts automatically once a day. You should make this
 scheduling execute overnight to ensure that the system does not slow down under a heavy load of scheduling when
-you are also trying to use it interactively yourselves.
+you are also trying to use it interactively.
 
 To set the start time for the scheduler, go to the menu
 :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Select the rule
@@ -402,12 +396,11 @@ called 'Run mrp scheduler' and modify the date and time of the next execution.
 .. index::
    single: module; mrp_jit
 
-Some companies want to plan orders progressively as they are entered so they do not wait until
-procurement orders are planned the next day. Install the module :mod:`mrp_jit` (`Reconfigure` wizard, `Just In Time Scheduling`) to handle this. Once
-it is installed, each requirement (that could result in a Production or Purchase Order)
+Some companies want to plan orders progressively as they are entered, so they do not wait until
+procurement orders are planned the next day. Install the module :mod:`mrp_jit` (`Reconfigure` wizard, `Just In Time Scheduling`) to handle this. Once the module is installed, each requirement (that could result in a Production or Purchase Order)
 will be planned in real time as soon as it has been confirmed.
 
-Then if you make a customer order with a product that is ``Make To Order`` the quotation request to a
+Then if you make a sales order with a product that is ``Make To Order``, the quotation request to a
 supplier will immediately be generated.
 
 .. index::
@@ -417,17 +410,16 @@ supplier will immediately be generated.
 
     The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
     the supplier to the customer. At the time of writing, this module is in ``extra-addons``.
-    The logic that the product follows is configured individually for each product and affects only those
+    The logic that the product follows is configured individually for each product and affects only
     products marked ``Make to Order``.
 
-This mode is not always sensible. Each order is processed immediately when confirmed. So if an order
-is to be delivered in three months the scheduler will reserve goods in stock for each order once
+This mode does not always makes sense. Each order is processed immediately when confirmed. So if an order
+is to be delivered in three months, the scheduler will reserve goods in stock for each order once
 it has been confirmed. It would have been more sensible to leave these products available for other
 orders.
 
 If a Purchase Order's :guilabel:`Invoicing Control` is configured ``From Order``,
-the scheduler will immediately create the corresponding
-supplier quotation request. It would have been preferable to delay for several weeks if
+the scheduler will immediately create the corresponding supplier quotation request. It might have been better to delay it for several weeks, if
 you could have used the lead time to group the purchase with other future orders.
 
 So the negative effects of working with the Just in Time module are:
@@ -441,7 +433,9 @@ Logistics Configuration in a Multi-Company Environment
 ------------------------------------------------------
 
 To configure your logistics in multi-company environment, you need to install :mod:`stock_location` module 
-(`Reconfigure` wizard, `Advanced Routes`). A complete scenario will be developed at the end of this chapter.
+(`Reconfigure` wizard, `Advanced Routes`) as explained before. A complete scenario will be developed at the end of this chapter.
+
+Go to :menuselection:`Administration --> Users --> Users` and add the :guilabel:`Useability / Multi Companies` group to your user, to be able to use OpenERP in a multi-company environment.
 
 This module supplements the Warehouse application by adding support for location paths per product,
 effectively implementing Push and Pull inventory flows.
@@ -461,17 +455,18 @@ Typically this could be used to:
 Once this module is installed, an additional `Logistics Flows` tab appears in the product form, where you can add
 Push and Pull flow specifications.
 
-Push flow
+Push Flow
 ^^^^^^^^^
 
 Push flows are useful when the arrival of certain products in a given location should always
 be followed by a corresponding move to another location, optionally after a certain delay.
 
-.. note::
+.. note:: Product
+
    The core Warehouse application already supports such Push Flow specifications on the
    Locations, but these cannot be refined per product.
 
-A push flow specification indicates what location is chained with another location, as well as the parameters used. As soon as a given quantity of products is moved in the source location, a chained move is automatically foreseen according to the parameters set on the flow specification (destination location, delay, type of move, journal, etc.) The new move may be automatically processed, or may require a manual confirmation, depending on the parameters.
+A push flow specification indicates what location is chained with another location, as well as the parameters used. As soon as a given quantity of products is moved in the source location, a chained move is automatically foreseen according to the parameters set on the flow specification (destination location, delay, type of move, journal, etc.) The new move may be processed automatically, or may require a manual confirmation, depending on the parameters.
 
 Suppose whenever the product ``CPU3`` enters the `Stock` location, it first has to be moved to the `Quality Control` location in order to
 maintain the quality.
@@ -495,7 +490,7 @@ To have OpenERP accomplish this, configure the push flow as follows:
 
 A push flow is related to how stock moves should be generated in order to increase or decrease inventory.
 
-Pull flow
+Pull Flow
 ^^^^^^^^^
 
 Pull flows are a bit different from Push flows, in the sense that they are not related to
@@ -617,7 +612,7 @@ managed as `Make to Order` and another managed as `Make to Stock`. The two figur
    :scale: 65
    :align: center
 
-   *Change in Stock for a  Make to Stock Product*
+   *Change in Stock for a Make to Stock Product*
 
 .. _fig-stfrord2:
 
@@ -672,7 +667,7 @@ The table below shows all possible cases for the figure :ref:`fig-stflow2`.
    Procurement Method Produce               Buy
    ================== ===================== =====================
    MTS                Wait for availability Wait for availability
-   MTO                Production Order      Supplier Order
+   MTO                Production Order      Purchase Order
    ================== ===================== =====================
 
 .. table:: Consequences of Procurement Methods when using Services
@@ -685,8 +680,8 @@ The table below shows all possible cases for the figure :ref:`fig-stflow2`.
    ================== ===================== =====================
 
  
-Packaging with various logistics unit measures
-----------------------------------------------
+Packaging with Various Logistics Units of Measure
+-------------------------------------------------
 
 Units of Measure
 ^^^^^^^^^^^^^^^^
@@ -734,7 +729,7 @@ gives rounding to one hundredth.
    Notice however that the default unit of measure and the purchase unit of measure have to be in the same category.
    Only the sales unit of measure may be in a different category.
 
-   This is very useful in the agro-food industry, for example: you sell ham by the piece but invoice
+   This is very useful in the agro-food industry, for example: you sell ham by the piece, but invoice
    by the Kg.
    A weighing operation is needed before invoicing the customer.
 
@@ -751,7 +746,7 @@ of invoicing or sales (kg).
 	
 	*Secondary Unit of Measure*
 
-In the product form you can then set one unit of measure for sales and stock management, and one
+In the product form you can set one unit of measure for sales and stock management, and one
 unit of measure for purchases.
 
 For each operation on a product, you can use another unit of
@@ -769,8 +764,8 @@ Packaging
 The packaging allows you to ship products in several ways. For example, you can ship goods by boxes or by
 pallets.
 
-At first, you have to define the different possible packaging. To define the packaging, go to :menuselection:
-`Warehouse --> Configuration --> Product --> Packaging` and click on :guilabel:`New`.
+At first, you have to define possible packaging. To define the packaging, go to :menuselection:
+`Warehouse --> Configuration --> Product --> Packaging` and click :guilabel:`New`.
 
 .. figure:: images/packaging.png
 	:scale: 75
@@ -782,14 +777,14 @@ To complete the creation of a new packaging, you have to give it a name and a ty
 available in OpenERP: :guilabel:`Box`, :guilabel:`Pack`, :guilabel:`Pallet` and :guilabel:`Unit`.
 
 
-Once all packaging are defined, you can attach the packaging to your products through the following menu: 
-:menuselection:`Warehouse --> Configuration --> Product --> Packaging`
+Once all packaging is defined, you can attach the packaging to your products through the following menu: 
+:menuselection:`Warehouse --> Configuration --> Product --> Packaging`.
 
 .. figure:: images/product_packaging.png
 	:scale: 75
 	:align: center
 	
-	*Definition of the packaging on the product*
+	*Defining the Packaging for the Product*
 
 
 .. Copyright © Open Object Press. All rights reserved.
