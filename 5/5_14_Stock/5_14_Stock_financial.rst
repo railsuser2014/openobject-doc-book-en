@@ -1,6 +1,8 @@
 Financial Management of Inventories  
 ===================================
 
+.. todo:: give example
+
 Manual and Real-time Stock Valuation
 ------------------------------------
 If you have experience of managing with traditional software, you will know the problem of getting useful 
