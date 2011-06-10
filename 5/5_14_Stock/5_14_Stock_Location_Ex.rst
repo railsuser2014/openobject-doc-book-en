@@ -4,7 +4,7 @@ Stock Location Example
 In this section, we will develop a more detailed example that includes different concepts seen
 in the previous sections. 
 
-The following example will use the *Stock Location types*, the *Logisitc Flows* and the *Bill Of
+The following example will use the *Stock Location types*, the *Logistic Flows* and the *Bill Of
 Materials*.
 
 We have two companies: OpenERP SA and OpenERP US.
@@ -21,7 +21,7 @@ To make one unit of Product A, we need the Product B and the Product C. So we wi
    =========== ==========
    Field       Value
    =========== ==========
-   Product     Produit A
+   Product     Product A
    Product Qty 1
    Name        Product A
    BoM Type    Normal
@@ -47,7 +47,7 @@ and one unit of Product C.
    ======================== ==== ========= ======================================================
    Name                     Type Product   Goal of the flow
    ======================== ==== ========= ======================================================
-   Ask for Production       Pull Product A OpenERP SA asks to OpenERP US to produce the Product A
+   Ask for Production       Pull Product A OpenERP SA asks OpenERP US to produce the Product A
    Launch Production        Pull Product A OpenERP US launches the production of the Product A
    Send Product to Transit  Pull Product C OpenERP US asks for the Product C to OpenERP SA
    Get Product from Transit Pull Product C OpenERP US receives the Product C
@@ -79,14 +79,14 @@ Here are the details of the different flows:
 	
 	*Get Product from Transit*
 
-With this configuration, when a Sale Order for 3 units of Product A is confirmed and the scheduler has been launched,
-you will have the following [WHAT?]:
+With this configuration, when a Sales Order for 3 units of Product A is confirmed and the scheduler has been launched,
+you will have the following procurements:
 
 .. figure:: images/procurement.png
 	:scale: 90
 	:align: center
 	
-	*[WHAT?]*
+	*Procurements View*
 	
 And the following stock moves have been generated:
 
@@ -94,9 +94,9 @@ And the following stock moves have been generated:
 	:scale: 90
 	:align: center
 	
-	*Stock moves*
+	*Stock Moves*
 
-Because we are using two different companies, different stock moves have been generated. The products have to move 
+Because we are working in two different companies, different stock moves have been generated. The products have to move 
 from OpenERP SA to OpenERP US for the products C. After the manufacturing process, the products A have to move from
 OpenERP US to OpenERP SA to be sold to the customer.
 
@@ -107,10 +107,35 @@ status. So you can run the production of the three units of Product A.
 	:scale: 75
 	:align: center
 	
-	*Launch the production*
+	*Launch the Production*
 
-Once again due to the use of two companies, you have to confirm different delivery. One to deliver the product 
+Once again due to the use of two companies, you have to confirm different deliveries. One to deliver the product 
 from OpenERP US to OpenERP SA and another to deliver the product from OpenERP SA to the customer.
 Now you have to confirm the delivery of the three units from OpenERP US to OpenERP SA, then to confirm the 
 reception of the products in OpenERP SA and finally, deliver the products to you final customer.	
-   
+
+.. Copyright © Open Object Press. All rights reserved.
+
+.. You may take electronic copy of this publication and distribute it if you don't
+.. change the content. You can also print a copy to be read by yourself only.
+
+.. We have contracts with different publishers in different countries to sell and
+.. distribute paper or electronic based versions of this book (translated or not)
+.. in bookstores. This helps to distribute and promote the OpenERP product. It
+.. also helps us to create incentives to pay contributors and authors using author
+.. rights of these sales.
+
+.. Due to this, grants to translate, modify or sell this book are strictly
+.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
+.. written authorisation for this.
+
+.. Many of the designations used by manufacturers and suppliers to distinguish their
+.. products are claimed as trademarks. Where those designations appear in this book,
+.. and Open Object Press was aware of a trademark claim, the designations have been
+.. printed in initial capitals.
+
+.. While every precaution has been taken in the preparation of this book, the publisher
+.. and the authors assume no responsibility for errors or omissions, or for damages
+.. resulting from the use of the information contained herein.
+
+.. Published by Open Object Press, Grand Rosière, Belgium   
