@@ -18,13 +18,13 @@ Your Warehouse
 Just as in accounting, the OpenERP system manages counterparts to each of its main operations such as
 receipts from suppliers, deliveries to customers, profit and loss from inventory, and consumption
 of raw materials. Stock movements are always made from one location to another. To satisfy the need
-for a counterpart to each stock movement, the software supports different types of stock location:
+for a counterpart to each stock movement, the software supports different types of stock locations:
 
 * Physical stock locations,
 
 * Partner locations,
 
-* Virtual counterparts such as production and inventory.
+* Virtual locations as counterparts for procurement, production and inventory.
 
 Physical locations represent warehouses and their hierarchical structure. These are generally the
 locations that are managed by traditional stock management systems.
@@ -35,7 +35,7 @@ by the movement of goods from a partner location to a physical location in your 
 see, supplier locations usually show negative stocks and customer locations usually show positive
 stocks.
 
-Virtual counterparts for production are used in manufacturing operations. Manufacturing is
+Virtual locations as counterparts for production are used in manufacturing operations. Manufacturing is
 characterized by the consumption of raw materials and the production of finished products. Virtual
 locations are used for the counterparts of these two operations.
 
@@ -43,7 +43,7 @@ Inventory locations are counterparts of the stock operations that represent your
 and loss in terms of your stocks.
 
 The figure :ref:`fig-stloctree` shows the initial configuration of the locations when the software is
-installed. (:menuselection:`Warehouse --> Warehouse Management --> Locations`)
+installed (:menuselection:`Warehouse --> Warehouse Management --> Locations`).
 
 .. _fig-stloctree:
 
@@ -51,9 +51,9 @@ installed. (:menuselection:`Warehouse --> Warehouse Management --> Locations`)
    :scale: 75
    :align: center
 
-   *Location structure when OpenERP has just been installed*
+   *Location Structure when OpenERP has just been installed*
 
-.. note::  Hierarchical stock locations
+.. note::  Hierarchical Stock Locations
 
     In OpenERP, locations are structured hierarchically.
     You can structure your locations as a tree, dependent on a parent-child relationship.
@@ -62,30 +62,30 @@ installed. (:menuselection:`Warehouse --> Warehouse Management --> Locations`)
 
 .. tip:: Locations and Warehouses
 
-    In OpenERP a **Warehouse** represents your places of physical stock.
+    In OpenERP a **Warehouse** represents the place where your physical stock is stored.
     A warehouse can be structured into several locations at multiple levels.
-    Locations are used to manage all types of storage place, such as at the customer and production
+    Locations are used to manage all types of storage places, such as at the customer and production
     counterparts.
 
-For this chapter you should start with a fresh database that includes demo data,
+For this chapter you can continue using the database with demo data from a previous chapter or start with a fresh database that includes demo data,
 with Warehouse Management and its dependencies installed and no particular chart of accounts configured.
 
 In this chapter, the following modules will be used:
 
 .. table:: List of modules
 
-   ==================================== ===================================================================
-   Name                                 Description
-   ==================================== ===================================================================
-   :mod:`stock`                         to handle the stock functions
-   :mod:`stock_planning`                to define planification on products
-   :mod:`stock_location`                to define pull and push flows
-   :mod:`delivery`                      to define delivery methods and costs
-   :mod:`account_anglo_saxon`           to illustrate the valuation according to the anglo-saxon principles
-   :mod:`sale_journal`                  to handle stock by journal
-   :mod:`mrp_jit`                       to illustrate the just-in-time functionality
-   :mod:`sale_supplier_direct_delivery` to directly deliver the product from the supplier to the customer
-   ==================================== ===================================================================
+   ===================================== ===================================================================
+   Name                                  Description
+   ===================================== ===================================================================
+   :mod:`stock`                          to handle the stock functions
+   :mod:`stock_planning`                 to define planification on products
+   :mod:`stock_location`                 to define pull and push flows
+   :mod:`delivery`                       to define delivery methods and costs
+   :mod:`account_anglo_saxon`            to illustrate the valuation according to the anglo-saxon principles
+   :mod:`sale_journal`                   to handle stock by journal
+   :mod:`mrp_jit`                        to illustrate the just-in-time functionality
+   :mod:`sale_supplier_direct_delivery`  to directly deliver the product from the supplier to the customer
+   ===================================== ===================================================================
 
 .. raw:: html
 
