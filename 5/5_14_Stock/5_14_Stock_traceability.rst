@@ -37,7 +37,7 @@ or a production activity, or a source location, or any given destination.
 
    *History of Stock Movements*
 
-Each stock move is in a given state. The different possible states are:
+Each stock move is in a given state. The various states are:
 
 * ``Draft`` : the move so far has no effect in the system. The transaction has not yet been confirmed,
 
@@ -53,7 +53,7 @@ Each stock move is in a given state. The different possible states are:
 * ``Waiting`` : in the case of transactions ``From Order``, this state shows that the stock move is blocked
   waiting for the end of another move,
 
-* ``Cancelled`` : the stock move was not carried out, so there is no accounting for it in either real stock or
+* ``Cancelled`` : the stock move was not carried out, so it is not taken into account in either real stock or
   virtual stock.
 
 Delivery orders, goods receipts and internal picking lists are just documents that group a set of
@@ -90,13 +90,13 @@ used several times for different products, so you can mix different products on 
 
     In the ``Simplified`` view, the tracking numbers cannot be seen: the field is hidden.
     To get to ``Extended`` view mode, assign the group
-    :guilabel:`Useability / Extended View` to the current user.
+    :guilabel:`Useability / Extended View` to the current user, or change the User Preferences.
 
 You can also specify on the product form the operations in which a lot number is
 required. You can then compel the user to set a lot number for manufacturing operations, goods
 receipt, or customer packing.
 
-You do not have to encode the lot number one by one to assign a unique lot number to a set of several items.
+You do not have to encode the lot numbers one by one to assign a unique lot number to a set of several items.
 You only need to take a stock move for several products line and click the button
 :guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and OpenERP will
 complete the prefix in the wizard with a continuing sequence number. This sequence number
@@ -115,7 +115,7 @@ Traceability
 
 If you key in the lot numbers for stock moves as described above, you can investigate the traceability of any
 given lot number. Go to the menu :menuselection:`Warehouse --> Traceability -->
-Production Lots`, or :menuselection:`Warehouse --> Traceability --> Packs`.
+Production Lots` or :menuselection:`Warehouse --> Traceability --> Packs`.
 
 .. tip:: Product Shortcuts
 
@@ -154,7 +154,7 @@ Finally, on a lot, you can enter data on all the operations that have been done 
 keeps a useful history of the pre-sales operations.
 
 
-Tracking inventory scrap
+Tracking Inventory Scrap
 ========================
 
 In OpenERP, there are many ways to handle scrap products. 
@@ -192,13 +192,13 @@ To display the content of this :guilabel:`Virtual Location`, go to :menuselectio
 `Warehouse --> Inventory Control --> Location Structure`, then select the virtual locations and display the
 :guilabel:`Scrap` location.
 
-If you want to transfer the products in another location, you can create a new one and check the 
+If you want to transfer the products to another location, you can create a new one and check the 
 :guilabel:`Scrap Location` in the additional information.
 
-Identification of products and location with code bars and RFID devices
-=======================================================================
+Identification of Products and Location with Barcodes and RFID devices
+======================================================================
 
-You can enter the code bars in the product form in the field :guilabel:`EAN13`.
+You can the barcode in the product form in the field :guilabel:`EAN13`.
 
 
 .. Copyright © Open Object Press. All rights reserved.
