@@ -1,7 +1,7 @@
-Financial management of inventories  
+Financial Management of Inventories  
 ===================================
 
-Manual and real time stock valuation
+Manual and Real-time Stock Valuation
 ------------------------------------
 If you have experience of managing with traditional software, you will know the problem of getting useful 
 indicators. If you ask your accountant for a stock valuation or the value added by production, he will give you 
@@ -10,7 +10,7 @@ a figure.
 If you ask for the same figure from your stores manager, you will get an entirely different amount. You have no
 idea who is right!
 
-In OpenERP, the management of stock is completely integrated with the accounts, to give strong coherence between 
+In OpenERP, stock management is completely integrated with the accounts, to give strong coherence between 
 the two systems. The double-entry structure of locations enables a very precise correspondence between
 stocks and accounts.
 
@@ -44,7 +44,8 @@ To define your accounts, you have two options. Set them on the product category,
 You can also overwrite the accounts from the Product or the Product Category by defining Stock Input Account
 and Stock Output Account for a Location.
 
-.. note:: 
+.. note:: account_anglo_saxon 
+	
 	You can also install the account_anglo_saxon module (Reconfigure wizard, Anglo-Saxon Accounting) to value
 	your stock according to Anglo-saxon principles.
     
@@ -52,15 +53,15 @@ The figure below shows the various accounts that can be used, with and without t
 module installed.
 
 .. figure:: images/account_anglo_saxon.png
-	:scale: 75
+	:scale: 80
 	:align: center
 	
 	*Setting up Stock Valuation Accounts*
     
-Management of transportation costs
-----------------------------------
+Managing Transportation Costs
+-----------------------------
 
-In OpenERP, you can handle the delivery methods when installing the module `delivery`.
+In OpenERP, you can handle the delivery methods when installing the :mod:`delivery` module.
 
 This module will allow you:
 
@@ -70,7 +71,7 @@ This module will allow you:
 	:scale: 75
 	:align: center
 	
-	*Define the delivery method*
+	*Define the Delivery Method*
 	
 * To define the delivery pricelist according to the price, the weight or the volume.
 
@@ -78,23 +79,23 @@ This module will allow you:
 	:scale: 75
 	:align: center
 	
-	*Define the delivery costs*
+	*Define the Delivery Costs*
 
 Now, in each :guilabel:`Delivery Order`, two new fields are available to enter the right 
-value to deliver the products to the customer. You can also find a new field in the :guilabel:`Sale Order`
+value to deliver the products to the customer. You can also find a new field in the :guilabel:`Sales Order`
 form that enables you to select a delivery method.
 
 .. figure:: images/delivery_order_delivcost.png
 	:scale: 75
 	:align: center
 	
-	*Delivery cost in the delivery orders*
+	*Delivery Cost in the Delivery Orders*
 
 .. figure:: images/sale_order_delivcost.png	
 	:scale: 75
 	:align: center
 	
-	*Delivery method in the sale orders*
+	*Delivery Method in the Sales Orders*
 
 .. Copyright © Open Object Press. All rights reserved.
 
