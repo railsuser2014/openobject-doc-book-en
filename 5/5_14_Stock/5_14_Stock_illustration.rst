@@ -22,8 +22,7 @@ operations:
 The structure of stock locations is shown by the figure :ref:`fig-stloctree`. Stocks are assumed to be totally
 empty and no operation is in progress nor planned.
 
-If you order '30 bicycles' from a supplier, OpenERP will do the following operations after the
-receipt of the products:
+If you order '30 bicycles' from a supplier, OpenERP will do the following operations on receipt of the products:
 
 .. table:: Stock Move Operation from Suppliers to Stock
 
@@ -64,17 +63,19 @@ zero. In accounting you would say that the sum of the debits is equal to the sum
 Partner locations (customers and suppliers) are not located under your company in the hierarchical
 structure, so their contents are not considered as part of your own stock. So if you just look at
 the physical locations inside your own company, those two bicycles are no longer in your company.
-They are no longer in your own physical stock, but it is still very useful to see them in your customer's
-stock because that helps when you carry out detailed stock management analysis.
+Although they are no longer in your own physical stock, it is still very useful to see them in your customer's
+stock, because that will help when you carry out detailed stock management analysis.
 
-.. tip:: For Consignment Stock, you need to define the location for the consignment customer or supplier concerned as part of your own stock.
+.. tip:: Consignment Stock
+
+        To manage Consignment Stock, you need to define the location for the consignment customer or supplier as part of your own stock and not as a partner location.
 
 .. note:: Accounts
 
      In managing stock, a gap between the data in the software and real quantities in stock is
      difficult to avoid.
      Double-entry stock management gives twice as many opportunities to find an error.
-     If you forget two items of stock this error will automatically be reflected in the
+     If you forget two items of stock, this error will automatically be reflected in the
      counterpart's location.
 
 You can make a comparison with accounting, where you will easily find an error because you can look
