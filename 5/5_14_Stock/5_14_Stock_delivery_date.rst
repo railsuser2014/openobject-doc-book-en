@@ -1,7 +1,7 @@
-Estimating delivery dates
+Estimating Delivery Dates
 =========================
 
-Define standard delivery time
+Define Standard Delivery Time
 -----------------------------
 
 In order to define the delivery time, you have to know three things:
@@ -22,7 +22,7 @@ In order to define the delivery time, you have to know three things:
   
 * Delivery Lead Time :
 
-  This is the time your supplier needs to deliver the goods. This delay can be define in the product form
+  This is the time your supplier needs to deliver the goods. This delay can be defined in the product form
   in the :guilabel:`Suppliers` tab.
   
 For example, if we have to deliver some products to a customer in a month (in 30 days). You promise to deliver
@@ -31,17 +31,16 @@ the raw materials within 3 days.
 
 According to those numbers, we will have to start the process in 23 days if we have to order raw materials.
     
-Schedule logistic flows according to MRP1 rules 
+Schedule Logistic Flows according to MRP1 Rules 
 -----------------------------------------------
 
-MRP is a software based production, planning and inventory control system used to manage the 
-manufacturing process.
+MRP is a software-based production, planning and inventory control system used to manage themanufacturing process.
 
-It is a computer based system in which the given Master Schedule is exploded with Bills Of 
+It is a computer-based system in which the given Master Schedule is exploded with Bills Of 
 Material, into the required amount of raw material, parts and subassemblies needed to produce 
 the final products in each period.
 
-Incoming and Outgoing products planning
+Incoming and Outgoing Products Planning
 ========================================
 
 To be able to plan incoming and outgoing shipments of products, you have to install the module
@@ -56,7 +55,7 @@ To be able to plan incoming and outgoing shipments of products, you have to inst
 Thanks to this module, you will be able to calculate a planning of the stock for a product.
 
 Planned dates on a packing order are put in each stock move line. If you have a packing order 
-containing several products not all of the lines necessarily need to be delivered the same day. 
+containing several products, not all of the lines necessarily need to be delivered the same day. 
 The minimum and maximum dates in a packing order show the earliest and latest dates on the stock 
 move lines for the packing.
 
@@ -64,12 +63,12 @@ If you move a packing order in the calendar view, the planned date in the stock 
 automatically be moved as a result.
 
 
-Managing inventory reconciliation
+Managing Inventory Reconciliation
 =================================
 
 Inventory reconciliation involves two steps: physical and accounting.
 
-Physical inventory steps including taking a written inventory record and comparing it to the actual 
+Physical inventory steps include taking a written inventory record and comparing it to the actual 
 goods in the company’s warehouses. Counting obsolete and damaged products is also a reconciliation 
 activity. 
 
@@ -78,7 +77,7 @@ posted, entering adjustments from the physical count and analysing the dollar di
 Inventory reconciliation frequency depends on the size, location, and type of inventory in a company’s 
 operations.
 
-Building reports to track activity 
+Building Reports to Track Activity 
 ==================================
 
 With OpenERP, you can build your own reports in order to track the different activities in your warehouses.
@@ -89,32 +88,32 @@ submenu in :menuselection:`Administration --> Customization --> Reporting`.
 	:scale: 75
 	:align: center
 	
-	*Create your own reports*
+	*Create your Own Reports*
 
 This newly added section allows you to define for your new report:
 
 * The general configuration:
 
-  This aim of this tab is to choose on which models your report will rely on.
+  The aim of this tab is to choose the models your report will rely on.
 
 * The view parameters
   
-  This tab will define the display of your report. You can choose between the traditionnal available view
+  This tab will define the display of your report. You can choose between the traditional available views
   (Tree/List, Form, Graph and Calendar) and you can define three different ways to display your report.
 
 * The fields to display
 
-  The fields available to display will depend on the models choose in the :guilabel:`General Configuration`
+  The fields available to display will depend on the models you choose in the :guilabel:`General Configuration`
   tab.
   
-  When you add a new field to your report, different fields have to be filled in:
+  When you add a new field to your report, different fields have to be specified:
   
-  * Sequence - it will define the order in which the fields will be display in the report
-  * Field - it is the information you want to display in your report
-  * Grouping method - it will affect the way the field is displayed. You can choose between *Grouped*, *Sum*,
+  * Sequence - defines the order in which the fields will be displayed in the report
+  * Field - the information you want to display in your report
+  * Grouping method - affects the way the field is displayed. You can choose between *Grouped*, *Sum*,
     *Minimum*, *Count*, *Maximum* and *Average*
-  * Graph mode - it will define which axe of the graph the field will represent
-  * Calendar mode - it will define the meaning of the field for the calendar (*Starting or Ending date*,
+  * Graph mode - defines which axe of the graph the field will represent
+  * Calendar mode - defines the meaning of the field for the calendar (*Starting or Ending date*,
     *Delay*, *End Date*, *Unique Colours*)
 
 * The filters on fields
@@ -124,25 +123,25 @@ This newly added section allows you to define for your new report:
 
 * The security
   
-  The security tab is used to select the group that are able to display the report.
+  The security tab is used to select the groups that are able to display the report.
   
-.. tip:: Create report with OpenOffice.org
+.. tip:: Create Report with OpenOffice
    
-   You can also create or edit report with OpenOffice.org by using the :guilabel:`base_report_designer`
+   You can also create or edit reports with OpenOffice using the :guilabel:`base_report_designer`
    module.
    
-   In order to add the extension to OpenOffice.org, load this module and start the configuration. A new 
+   In order to add the extension to OpenOffice, load this module and start the configuration. A new 
    window will ask you to *Save As* a file that contains the extension. 
    
-   Once you have saved the file, open OpenOffice.org and go to :menuselection:`Tools --> Extension Manager`, 
-   then click on add and select the previously saved file. Restart OpenOffice.org and now you have the
+   Once you have saved the file, start OpenOffice and go to :menuselection:`Tools --> Extension Manager`, 
+   then click Add and select the previously saved file. Restart OpenOffice.org and now you have the
    extension installed.
    
    .. figure:: images/report_creator_openoffice.png
    		:scale: 50
    		:align: center
    		
-   		*Extension to create report on OpenOffice.org*
+   		*Extension to Create a Report in OpenOffice*
    		
 
 .. Copyright © Open Object Press. All rights reserved.
