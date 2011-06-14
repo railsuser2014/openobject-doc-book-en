@@ -78,7 +78,7 @@ In this chapter, the following modules will be used:
    Name                                  Description
    ===================================== ===================================================================
    :mod:`stock`                          to handle the stock functions
-   :mod:`stock_planning`                 to define planification on products
+   :mod:`stock_planning`                 to define planning on products
    :mod:`stock_location`                 to define pull and push flows
    :mod:`delivery`                       to define delivery methods and costs
    :mod:`account_anglo_saxon`            to illustrate the valuation according to the anglo-saxon principles
