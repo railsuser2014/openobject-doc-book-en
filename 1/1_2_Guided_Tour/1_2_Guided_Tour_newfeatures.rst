@@ -11,7 +11,7 @@ General Features
 
 * OpenERP has been structured as Business Applications and its menu has been changed to match this,
 
-* Great Improvements as to Usability, not in the least in the Web version,
+* Major improvements in usability, especially in the Web version,
 
 * Simplified versus Extended view,
 
