@@ -6,7 +6,7 @@ Management of Carriers
    single: delivery grid
    single: carriers
    single: module; delivery
-   single: module; profile_manfuacturing
+   single: module; profile_manufacturing
 
 To manage deliveries in OpenERP, you can install the :mod:`delivery` module.
 To do that, use the :guilabel:`Reconfigure` wizard and select :guilabel:`Delivery Costs` under the :guilabel:`Sales Application Configuration` section for installation.
