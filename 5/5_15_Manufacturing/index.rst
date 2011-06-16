@@ -52,7 +52,7 @@ operations management is related to routing and workcenters.
     * Building: Plans.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`mrp` and its dependencies installed and no particular chart of accounts configured.
+with :mod:`mrp` (``Manufacturing``) and its dependencies installed and no particular chart of accounts configured.
 
 .. raw:: html
 
