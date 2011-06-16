@@ -17,9 +17,9 @@ manufacturing plan is given by the figure :ref:`fig-mrparm2`.
    :scale: 75
    :align: center
 
-   *Plan of construction of a cabinet*
+   *Plan of Construction of a Cabinet*
 
-The cabinet is assembled from raw materials and intermediate assemblies:
+The cabinet is assembled from raw materials and intermediate assemblies. The Image Code refers to the picture, the Product Reference is the corresponding code in OpenERP.
 
 .. table:: Product Definitions before defining Bills of Materials (already defined)
 
@@ -45,7 +45,9 @@ The cabinet is assembled from raw materials and intermediate assemblies:
    BOIS010    WOOD010           Wood 10mm
    ========== ================= =========================
 
-.. tip:: To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm.
+.. tip:: Copy
+
+        To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm.
 
 To describe how to assemble this cabinet, you define a bill of materials for each intermediate
 product and for the final cabinet assembly. These are given by the table below. You can start from the demo data and complete them according to the specifications below.
