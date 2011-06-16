@@ -108,7 +108,7 @@ The bills of materials are then used by the software to calculate the raw materi
 requirements of the finished products. Then if you want to manufacture 10 cabinets, the system can
 calculate what will be consumed:
 
-.. table:: Total Quantities per cabinet
+.. table:: Total Quantities per Cabinet
 
    ============  ========================  ===============
    Product Code  Quantity                  Unit of Measure
@@ -131,9 +131,9 @@ calculate what will be consumed:
    *Bill of Materials structure*
 
 Use the menu :menuselection:`Manufacturing --> Master Data --> Bill of Materials`
-and click on `New` button to define a new bill of materials.
+and click the `New` button to define a new bill of materials.
 
-.. tip::The Different Views
+.. tip:: The Different Views
 
     To change the view in the bill of materials you can:
 
@@ -145,17 +145,16 @@ and click on `New` button to define a new bill of materials.
    :scale: 75
    :align: center
 
-   *Screen defining a Bill of Materials (Simplified view)*
+   *Defining a Bill of Materials (Simplified view)*
 
 In the area below the bill of materials, you should set the finished product, which will be
 manufactured or assembled. Once the product has been selected, OpenERP automatically completes the
 name of the bill of materials and the default Unit of Measure for this product.
 
 The type of BoM (:guilabel:`BoM Type` : ``Phantom`` or ``Normal``) and
-the :guilabel:`Routing` field will be described in
-more detail later in the chapter.
+the :guilabel:`Routing` field will be described in more detail later in the chapter.
 
-After this, you can select the raw materials that are used in the manufacture of the finished
+After this, you can select the raw materials that are used to manufacture the finished
 product. The quantities are set out in a report based on the quantities of finished product and
 the quantities needed to produce them from the bill of materials.
 
@@ -163,13 +162,12 @@ the quantities needed to produce them from the bill of materials.
    single: BoM; revisions
 
 The second tab, :guilabel:`Revisions`, is used to set down all the changes made to the
-bill of materials. After each
-change you can specify a revision number and some notes on the modifications you carried out.
+bill of materials. After each change you can specify a revision number and some notes on the modifications you carried out.
 
 .. note:: Simplified View
 
    The `Revisions` tab is only visible if the user works in the ``Extended`` view mode
-   (which means that the user must belong to the group ``Useability / Extended View`` .
+   (which means that the user should belong to the group ``Useability / Extended View`` .
 
 .. figure:: images/mrp_bom_revision.png
    :scale: 75
@@ -178,8 +176,7 @@ change you can specify a revision number and some notes on the modifications you
    *Revisions of a Bill of Materials (Extended view)*
 
 In the third tab, :guilabel:`Properties`, you can put a free text reference to a plan,
-a sequence number that is
-used to determine the priorities between bills of materials, dates between which a bill of materials
+a sequence number that is used to determine the priorities between bills of materials, dates between which a bill of materials
 is valid, and values for rounding and product efficiency.
 
 .. figure:: images/mrp_bom_properties.png
@@ -189,15 +186,10 @@ is valid, and values for rounding and product efficiency.
    *Properties of a Bill of Materials*
 
 :guilabel:`Rounding` is used to set the smallest :guilabel:`Unit of Measure`
-for expressing the quantities of the selected
-product. So if you set the rounding to 1.00 you will not be able to manufacture half a piece. The
-:guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacture. This loss
-can be set for the finished product or for each raw materials line. The impact of this efficiency
-figure is to reserve more raw materials for manufacture than you would otherwise use just from the Bill
-of Materials calculations.
+in which the quantities of the selected product can be expressed. So if you set the rounding to 1.00, you will not be able to manufacture half a piece. The :guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacture. This loss
+can be defined for the finished product or for each raw materials line. The impact of this efficiency figure is to reserve more raw materials for manufacturing than you would otherwise use just from the Bill of Materials calculations.
 
-The final part of the third tab lets you set some properties for the product's manufacturing
-processes. These will be detailed further on in the chapter in the section on configurable products.
+The final part of the third tab lets you set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in the section about configurable products.
 
 .. index::
    single: BoM; multi-level
@@ -208,7 +200,7 @@ Multi-level Bills of Materials
 
 In OpenERP, each line of a bill of materials may itself be a bill of materials. So you can
 define BoMs with several levels. Instead of defining several BoMs for the cabinet in the figure
-:ref:`fig-mrparm2` you could define the single bill of materials below:
+:ref:`fig-mrparm2`, you could define the single bill of materials below:
 
 .. table:: Single Bill of Materials for 1 SHE100 Unit
 
@@ -232,7 +224,7 @@ OpenERP behaves differently depending on whether the bill of materials is define
 BoMs each on a single level or in one BoM tree-structured on several levels.
 
 So if you select a BoM using intermediate products that automatically generates production orders
-based on calculated requirements, OpenERP will propose manufacturing an intermediate product. To
+based on calculated requirements, OpenERP will propose to manufacture an intermediate product. To
 manufacture a cabinet, you would create 6 production orders:
 
 .. table:: Production Order
@@ -297,7 +289,7 @@ In the case where a single bill of materials is defined in multiple levels, a si
 order will be generated for each cabinet, including all of the sub-BoMs. You would then get the
 following production order:
 
-.. table:: Single manufacture from a tree-structured BoM
+.. table:: Single production from a tree-structured BoM
 
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
