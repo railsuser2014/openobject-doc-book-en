@@ -15,15 +15,15 @@ Manufacturing
  It also discusses consumption and production of products, as well as the necessary operations on
  machinery, tools or human resources.*
 
-The management of manufacturing in OpenERP is based on its stock management and, like it, is very
-flexible in both its operations and its financial control. It benefits particularly from the use of
+Manufacturing management in OpenERP is based on its stock management and equally very
+flexible in both its operations and its financial control. It particularly benefits from the use of
 double-entry stock management for production orders.
 
 .. index::
    single: module; mrp
 
-Manufacturing management is implemented by the :mod:`mrp` module. It is used for transforming all
-types of products:
+Manufacturing management is implemented by the :mod:`mrp` module. It is used to transform all
+kinds of products:
 
 * Assemblies of parts: composite products, soldered or welded products, assemblies, packs,
 
@@ -33,9 +33,9 @@ types of products:
 
 * Mixtures: mixing, chemical processes, distillation.
 
-You will work in two areas: on products in the first part of this chapter, and on operations in the
+You will work in two areas: with products in the first part of this chapter, and with operations in the
 second part. The management of products depends on the concept of classifications while the
-management of operations depends on routing and workcenters.
+operations management is related to routing and workcenters.
 
 .. index::
    single: bill of materials
