@@ -96,12 +96,9 @@ a production depending on the product configuration.
 It is better to encode a procurement order rather than direct purchasing or production. This method
 has the following advantages:
 
-* The form is simpler because OpenERP calculates the different values from other values and defined
-rules: purchase date calculated from order date, default supplier, raw materials needs, selection of
-the most suitable bill of materials, etc.
+* The form is simpler because OpenERP calculates the different values from other values and defined rules: purchase date calculated from order date, default supplier, raw materials needs, selection of the most suitable bill of materials, etc.
 
-* The calculation of requirements prioritises the procurements. If you encode a purchase directly, you
-short-circuit the planning of different procurements.
+* The calculation of requirements prioritises the procurements. If you encode a purchase directly, you short-circuit the planning of different procurements.
 
 .. tip:: Shortcuts
 
