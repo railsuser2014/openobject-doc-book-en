@@ -28,7 +28,7 @@ The auditor can then fill in the verification list with questions based on the m
    *Verification line*
 
 
-At the end of the audit, he will add the answers to his questions in the verification list stating if it is conformed or not. He will provide feedbacks to the auditees with the strong points and points to improve. The auditor will be suggesting improvement opportunities and explaining the nonconformities he discovered.
+At the end of the audit, he will add the answers to his questions in the verification list stating if it has conformed or not. He will provide feedback to the auditees with the strong points and points to improve. The auditor will be suggesting improvement opportunities and explaining the nonconformities he discovered.
 
 Once completed, the auditor can close the audit and generate his audit report.
 
