@@ -1,22 +1,19 @@
 Manufacturing
 =============
 
-Once the bills of materials have been defined, OpenERP becomes capable of automatically deciding on
-the manufacturing route depending on the needs of the company.
+Once the bills of materials have been defined, OpenERP is capable of automatically deciding on the manufacturing route according to the needs of the company.
 
-Production orders can be proposed automatically by the system depending on several criteria
-described in the preceding chapter:
+Production orders can be proposed automatically by the system depending on several criteria described in the preceding chapter:
 
 * Using the ``Make to Order`` rules,
 
-* Using the ``Order Point`` rules,
+* Using the ``Order Point`` (Minimum Stock) rules,
 
 * Using the Production plan.
 
-Clearly, it is also possible to start production manually. To do this you can use the button :guilabel:`New` in 
-the menu :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+Of course, you can also start production manually by clicking the button :guilabel:`New` in the menu :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
-.. figure:: images/mrp_auto.png
+.. figure:: images/mrp_manual.png
    :scale: 75
    :align: center
 
