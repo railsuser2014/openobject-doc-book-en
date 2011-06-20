@@ -122,7 +122,7 @@ list of orders to start (``Ready to Produce``) and the estimated start date (``S
 
    *List of Manufacturing Orders*
 
-You will see the production order for CPU_GEN, but not the one for PC2 because it depends on an intermediate product. Return to the production order for CPU_GEN and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO007`` ).
+You will see the production order for CPU_GEN, but not the one for PC2 because it depends on an intermediate product that has to be produced first. Return to the production order for CPU_GEN and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO007`` ).
 
 .. figure:: images/mrp_production_form_new.png
    :scale: 75
@@ -132,44 +132,39 @@ You will see the production order for CPU_GEN, but not the one for PC2 because i
 
 The system shows you that you have to manufacture product CPU_GEN using the components: MB1, CPU1, FAN, RAM. You can then confirm the production twice:
 
-Start of production: consumption of raw materials,
+Start production: consumption of raw materials,
 
-End of production: manufacture of finished product.
+Produce: manufacturing of finished product.
 
-At this stage, you should click to edit the line for the product MB1 to enter a lot number for it.
-The lot number is usually shown the parent chart, so you should just copy that over. To do that put
-the cursor in the field :guilabel:`Production Lot` and press :kbd:`<F1>` to create a new lot. Set a lot
-reference, for example: ``MB1345678`` . The system may then show you a warning because this lot is not in
-stock, but you can ignore this message.
+Click the ``Start Production`` button, then click the ``Edit`` button, and edit the line for the product MB1. Enter a lot number for it by putting the cursor in the field :guilabel:`Production Lot` and pressing :kbd:`<F1>` to create a new lot. Enter an internal reference, for example: ``MB1345678``. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
 
-The production order must be in the closed state as shown in the figure :ref:`fig-mrpprdfrm`.
+Click the ``Produce`` button to manufacture the finished product.
+
+The production order has to be in the closed state as shown in the figure :ref:`fig-mrpprdfrm`.
 
 .. _fig-mrpprdfrm:
 
-.. figure:: images/mrp_production_form_end.png
+.. figure:: images/mrp_production_form_end_new.png
    :scale: 75
    :align: center
 
-   *Production order after the different stages*
-
+   *Production Order after the Different Stages*
 
 Finished Product Manufacturing
 ++++++++++++++++++++++++++++++
 
 Having manufactured the intermediate product CPU_GEN, OpenERP automatically proposes the manufacturing
-of the computer PC2 using the order created earlier. So return to the menu for production orders to start 
-:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+of the computer PC2 using the order created earlier. Return to the Manufacturing Orders menu and look at the orders Ready to Produce through  :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
-You will find computer PC2 which has been sold to the customer, as shown in the figure hereafter.
+You will find computer PC2 which has been sold to the customer (source document SO007), as shown in the figure hereafter.
 
-.. figure:: images/mrp_production_list_end.png
+.. figure:: images/mrp_production_list_end_new.png
     :scale: 75
     :align: center
     
-    *Complete the production for PC2*
+    *Completed Production for PC2*
 
-Now that the production has been completed, the product sold to the customer has now been manufactured and the raw materials
-have been consumed and taken out of stock.
+Now that the production has been completed, the product sold to the customer has been manufactured and the raw materials have been consumed and taken out of stock.
  
 .. tip:: Automatic Actions
 
@@ -180,15 +175,12 @@ have been consumed and taken out of stock.
     * generating operations for assembly staff,
     * automatically creating analytical accounting entries.
 
-    
-
-Subproduct production
+Subproduct Production
 +++++++++++++++++++++
 
-For the management of subproduct, you must install the module :mod:`mrp_subproduct` (Reconfigure wizard, MRP Sub-
-products). The normal behaviour of manufacture in OpenERP enables you to manufacture several units of the
-same finished product from raw materials (A + B > C). With subproduct management, the result of a manufacture can
-be to have both finished products and secondary products (A + B > C + D).
+If you need to manage subproducts, you should install the module :mod:`mrp_subproduct` (Reconfigure wizard, MRP Sub-
+products). The normal behaviour of manufacturing in OpenERP enables you to manufacture several units of the
+same finished product from raw materials (A + B > C). With Subproduct management, the manufacturing result can be to have both finished products and secondary products (A + B > C + D).
 
 .. note:: Subproduct Material
 
