@@ -1,10 +1,10 @@
 Logistics and Manufacturing
 ===========================
 
-Manufacturing stock locations
+Manufacturing Stock Locations
 +++++++++++++++++++++++++++++
 
-Stock moves linked to manufacturing processes
+Stock Moves linked to Manufacturing Processes
 +++++++++++++++++++++++++++++++++++++++++++++
 
 `Stock --> Production --> Stock`
