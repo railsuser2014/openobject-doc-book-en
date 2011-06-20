@@ -395,7 +395,7 @@ Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> W
 .. tip:: Missing fields
 
         If some fields such as :guilabel:`Analytic Journal, General Account` in the view are missing, you have
-        to add the user group ``Useability / Analytic Accounting.
+        to add the user group ``Useability / Analytic Accounting``.
 
 A work center should have a name. You then assign a type: Machine or Human, a code and
 the operating hours, i.e. ``Working Period``. The Working Time(s) can be defined through the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Working Time`. The figure :ref:`fig-mrpwkc2` represents the hours from Monday
