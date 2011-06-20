@@ -1,7 +1,7 @@
 Master Data
 ===========
 
-Bill Of Materials and Components
+Bill of Materials and Components
 ++++++++++++++++++++++++++++++++
 
 Use of Bills of Materials

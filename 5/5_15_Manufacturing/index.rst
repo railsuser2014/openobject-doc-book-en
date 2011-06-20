@@ -34,8 +34,7 @@ kinds of products:
 * Mixtures: mixing, chemical processes, distillation.
 
 You will work in two areas: with products in the first part of this chapter, and with operations in the
-second part. The management of products depends on the concept of classifications while the
-operations management is related to routing and workcenters.
+second part. The management of products depends on the concept of classifications while operations management is related to routing and workcenters.
 
 .. index::
    single: bill of materials
